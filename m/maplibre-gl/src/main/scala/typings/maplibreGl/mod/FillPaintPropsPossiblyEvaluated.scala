@@ -44,7 +44,8 @@ object FillPaintPropsPossiblyEvaluated {
     __obj.asInstanceOf[FillPaintPropsPossiblyEvaluated]
   }
   
-  extension [Self <: FillPaintPropsPossiblyEvaluated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillPaintPropsPossiblyEvaluated] (val x: Self) extends AnyVal {
     
     inline def `setFill-antialias`(value: Boolean): Self = StObject.set(x, "fill-antialias", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object EqlGetStatusResponse {
     __obj.asInstanceOf[EqlGetStatusResponse]
   }
   
-  extension [Self <: EqlGetStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EqlGetStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setCompletion_status(value: integer): Self = StObject.set(x, "completion_status", value.asInstanceOf[js.Any])
     

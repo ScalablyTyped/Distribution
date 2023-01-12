@@ -39,7 +39,8 @@ object FieldsToEvaluate {
     __obj.asInstanceOf[FieldsToEvaluate]
   }
   
-  extension [Self <: FieldsToEvaluate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldsToEvaluate] (val x: Self) extends AnyVal {
     
     inline def setFieldUpdates(value: StringDictionary[Any]): Self = StObject.set(x, "fieldUpdates", value.asInstanceOf[js.Any])
     

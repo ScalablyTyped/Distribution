@@ -23,7 +23,8 @@ object appCompatMod {
       __obj.asInstanceOf[FirebaseApp]
     }
     
-    extension [Self <: FirebaseApp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseApp] (val x: Self) extends AnyVal {
       
       inline def setMessaging(value: () => MessagingCompat): Self = StObject.set(x, "messaging", js.Any.fromFunction0(value))
     }
@@ -43,7 +44,8 @@ object appCompatMod {
       __obj.asInstanceOf[FirebaseNamespace]
     }
     
-    extension [Self <: FirebaseNamespace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseNamespace] (val x: Self) extends AnyVal {
       
       inline def setMessaging(value: Call): Self = StObject.set(x, "messaging", value.asInstanceOf[js.Any])
     }

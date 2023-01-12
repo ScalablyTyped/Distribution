@@ -34,7 +34,8 @@ object CapabilityStatementRestSecurity {
     __obj.asInstanceOf[CapabilityStatementRestSecurity]
   }
   
-  extension [Self <: CapabilityStatementRestSecurity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapabilityStatementRestSecurity] (val x: Self) extends AnyVal {
     
     inline def setCors(value: Boolean): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object DescribeReportCreationOutput {
     __obj.asInstanceOf[DescribeReportCreationOutput]
   }
   
-  extension [Self <: DescribeReportCreationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeReportCreationOutput] (val x: Self) extends AnyVal {
     
     inline def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     

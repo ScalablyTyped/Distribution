@@ -208,7 +208,8 @@ object sapUiCoreDndDragDropBaseMod {
       __obj.asInstanceOf[DragDropBaseSettings]
     }
     
-    extension [Self <: DragDropBaseSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragDropBaseSettings] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       

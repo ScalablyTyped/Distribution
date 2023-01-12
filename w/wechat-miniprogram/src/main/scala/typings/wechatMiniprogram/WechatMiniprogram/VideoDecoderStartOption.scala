@@ -19,7 +19,8 @@ object VideoDecoderStartOption {
     __obj.asInstanceOf[VideoDecoderStartOption]
   }
   
-  extension [Self <: VideoDecoderStartOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoDecoderStartOption] (val x: Self) extends AnyVal {
     
     inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

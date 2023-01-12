@@ -25,7 +25,8 @@ object GoogleCloudHealthcareV1ConsentPolicy {
     __obj.asInstanceOf[GoogleCloudHealthcareV1ConsentPolicy]
   }
   
-  extension [Self <: GoogleCloudHealthcareV1ConsentPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudHealthcareV1ConsentPolicy] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationRule(value: Expr): Self = StObject.set(x, "authorizationRule", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBodyParser(value: `false` | (OptionsJson & OptionsText & OptionsUrlencoded)): Self = StObject.set(x, "bodyParser", value.asInstanceOf[js.Any])
       
@@ -170,7 +171,8 @@ object mod {
       __obj.asInstanceOf[TestServer]
     }
     
-    extension [Self <: TestServer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestServer] (val x: Self) extends AnyVal {
       
       inline def setCaCert(value: String): Self = StObject.set(x, "caCert", value.asInstanceOf[js.Any])
       

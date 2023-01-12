@@ -27,7 +27,8 @@ object ingestunknownformatFormat {
     __obj.asInstanceOf[ingestunknownformatFormat]
   }
   
-  extension [Self <: ingestunknownformatFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ingestunknownformatFormat] (val x: Self) extends AnyVal {
     
     inline def set$format(value: Format): Self = StObject.set(x, "$format", value.asInstanceOf[js.Any])
     

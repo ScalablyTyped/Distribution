@@ -28,7 +28,8 @@ object ExportFilter {
     __obj.asInstanceOf[ExportFilter]
   }
   
-  extension [Self <: ExportFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: ExportFilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

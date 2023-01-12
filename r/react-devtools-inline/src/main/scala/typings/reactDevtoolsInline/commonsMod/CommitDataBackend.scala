@@ -41,7 +41,8 @@ object CommitDataBackend {
     __obj.asInstanceOf[CommitDataBackend]
   }
   
-  extension [Self <: CommitDataBackend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommitDataBackend] (val x: Self) extends AnyVal {
     
     inline def setChangeDescriptions(value: js.Array[js.Tuple2[Double, ChangeDescription]]): Self = StObject.set(x, "changeDescriptions", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object libTokenSsoTokenProviderMod {
       __obj.asInstanceOf[SSOTokenProviderOptions]
     }
     
-    extension [Self <: SSOTokenProviderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SSOTokenProviderOptions] (val x: Self) extends AnyVal {
       
       inline def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       

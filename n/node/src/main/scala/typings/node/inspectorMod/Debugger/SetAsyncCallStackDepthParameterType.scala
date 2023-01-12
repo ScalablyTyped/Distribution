@@ -18,7 +18,8 @@ object SetAsyncCallStackDepthParameterType {
     __obj.asInstanceOf[SetAsyncCallStackDepthParameterType]
   }
   
-  extension [Self <: SetAsyncCallStackDepthParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetAsyncCallStackDepthParameterType] (val x: Self) extends AnyVal {
     
     inline def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
   }

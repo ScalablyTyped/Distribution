@@ -19,7 +19,8 @@ object ScrollParams {
     __obj.asInstanceOf[ScrollParams]
   }
   
-  extension [Self <: ScrollParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollParams] (val x: Self) extends AnyVal {
     
     inline def setScroll(value: TimeSpan): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     

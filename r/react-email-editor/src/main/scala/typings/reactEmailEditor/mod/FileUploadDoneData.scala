@@ -17,7 +17,8 @@ object FileUploadDoneData {
     __obj.asInstanceOf[FileUploadDoneData]
   }
   
-  extension [Self <: FileUploadDoneData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileUploadDoneData] (val x: Self) extends AnyVal {
     
     inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     

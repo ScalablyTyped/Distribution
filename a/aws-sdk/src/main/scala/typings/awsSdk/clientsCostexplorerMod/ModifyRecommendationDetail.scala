@@ -18,7 +18,8 @@ object ModifyRecommendationDetail {
     __obj.asInstanceOf[ModifyRecommendationDetail]
   }
   
-  extension [Self <: ModifyRecommendationDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyRecommendationDetail] (val x: Self) extends AnyVal {
     
     inline def setTargetInstances(value: TargetInstancesList): Self = StObject.set(x, "TargetInstances", value.asInstanceOf[js.Any])
     

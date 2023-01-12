@@ -99,7 +99,8 @@ object libMinifyMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCss(value: typings.cleanCss.mod.Options): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       

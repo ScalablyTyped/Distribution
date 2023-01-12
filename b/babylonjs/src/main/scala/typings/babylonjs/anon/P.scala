@@ -32,7 +32,8 @@ object P {
     __obj.asInstanceOf[P]
   }
   
-  extension [Self <: P](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: P] (val x: Self) extends AnyVal {
     
     inline def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
     

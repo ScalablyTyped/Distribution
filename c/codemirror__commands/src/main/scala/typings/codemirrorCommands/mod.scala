@@ -858,7 +858,8 @@ object mod {
       __obj.asInstanceOf[CommentTokens]
     }
     
-    extension [Self <: CommentTokens](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommentTokens] (val x: Self) extends AnyVal {
       
       inline def setBlock(value: Close): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
@@ -890,7 +891,8 @@ object mod {
       __obj.asInstanceOf[HistoryConfig]
     }
     
-    extension [Self <: HistoryConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HistoryConfig] (val x: Self) extends AnyVal {
       
       inline def setMinDepth(value: Double): Self = StObject.set(x, "minDepth", value.asInstanceOf[js.Any])
       

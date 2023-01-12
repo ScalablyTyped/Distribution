@@ -21,7 +21,8 @@ object ReportInstanceInfoRequest {
     __obj.asInstanceOf[ReportInstanceInfoRequest]
   }
   
-  extension [Self <: ReportInstanceInfoRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportInstanceInfoRequest] (val x: Self) extends AnyVal {
     
     inline def setMetadata(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

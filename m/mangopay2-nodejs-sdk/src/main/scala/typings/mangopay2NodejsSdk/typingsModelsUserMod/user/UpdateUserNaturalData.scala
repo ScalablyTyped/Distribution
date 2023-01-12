@@ -17,7 +17,8 @@ object UpdateUserNaturalData {
     __obj.asInstanceOf[UpdateUserNaturalData]
   }
   
-  extension [Self <: UpdateUserNaturalData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateUserNaturalData] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }

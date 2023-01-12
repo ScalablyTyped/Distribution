@@ -23,7 +23,8 @@ object DescribeInstanceStatusResult {
     __obj.asInstanceOf[DescribeInstanceStatusResult]
   }
   
-  extension [Self <: DescribeInstanceStatusResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInstanceStatusResult] (val x: Self) extends AnyVal {
     
     inline def setInstanceStatuses(value: InstanceStatusList): Self = StObject.set(x, "InstanceStatuses", value.asInstanceOf[js.Any])
     

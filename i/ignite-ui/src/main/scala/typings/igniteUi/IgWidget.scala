@@ -37,7 +37,8 @@ object IgWidget {
     __obj.asInstanceOf[IgWidget]
   }
   
-  extension [Self <: IgWidget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgWidget] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

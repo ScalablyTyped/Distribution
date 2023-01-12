@@ -39,7 +39,8 @@ object JSONFileConfig {
     __obj.asInstanceOf[JSONFileConfig]
   }
   
-  extension [Self <: JSONFileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONFileConfig] (val x: Self) extends AnyVal {
     
     inline def setDataKey(value: String): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     

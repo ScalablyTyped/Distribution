@@ -15,7 +15,8 @@ object WebServerModule {
     __obj.asInstanceOf[WebServerModule]
   }
   
-  extension [Self <: WebServerModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebServerModule] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: () => WebServer): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
   }

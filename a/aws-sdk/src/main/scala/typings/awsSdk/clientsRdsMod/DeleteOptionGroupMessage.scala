@@ -18,7 +18,8 @@ object DeleteOptionGroupMessage {
     __obj.asInstanceOf[DeleteOptionGroupMessage]
   }
   
-  extension [Self <: DeleteOptionGroupMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteOptionGroupMessage] (val x: Self) extends AnyVal {
     
     inline def setOptionGroupName(value: String): Self = StObject.set(x, "OptionGroupName", value.asInstanceOf[js.Any])
   }

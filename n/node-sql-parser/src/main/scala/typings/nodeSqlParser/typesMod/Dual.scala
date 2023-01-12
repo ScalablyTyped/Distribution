@@ -17,7 +17,8 @@ object Dual {
     __obj.asInstanceOf[Dual]
   }
   
-  extension [Self <: Dual](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dual] (val x: Self) extends AnyVal {
     
     inline def setType(value: dual): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

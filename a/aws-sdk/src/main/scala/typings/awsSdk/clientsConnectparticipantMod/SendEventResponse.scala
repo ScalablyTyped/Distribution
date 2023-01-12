@@ -23,7 +23,8 @@ object SendEventResponse {
     __obj.asInstanceOf[SendEventResponse]
   }
   
-  extension [Self <: SendEventResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendEventResponse] (val x: Self) extends AnyVal {
     
     inline def setAbsoluteTime(value: Instant): Self = StObject.set(x, "AbsoluteTime", value.asInstanceOf[js.Any])
     

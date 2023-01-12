@@ -23,7 +23,8 @@ object KinesisFirehoseOutputUpdate {
     __obj.asInstanceOf[KinesisFirehoseOutputUpdate]
   }
   
-  extension [Self <: KinesisFirehoseOutputUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KinesisFirehoseOutputUpdate] (val x: Self) extends AnyVal {
     
     inline def setResourceARNUpdate(value: ResourceARN): Self = StObject.set(x, "ResourceARNUpdate", value.asInstanceOf[js.Any])
     

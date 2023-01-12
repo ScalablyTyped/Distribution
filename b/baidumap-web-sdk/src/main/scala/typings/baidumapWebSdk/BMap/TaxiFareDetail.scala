@@ -19,7 +19,8 @@ object TaxiFareDetail {
     __obj.asInstanceOf[TaxiFareDetail]
   }
   
-  extension [Self <: TaxiFareDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaxiFareDetail] (val x: Self) extends AnyVal {
     
     inline def setInitialFare(value: Double): Self = StObject.set(x, "initialFare", value.asInstanceOf[js.Any])
     

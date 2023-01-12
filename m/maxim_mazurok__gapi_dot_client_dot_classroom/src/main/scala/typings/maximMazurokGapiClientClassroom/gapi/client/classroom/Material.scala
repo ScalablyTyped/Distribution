@@ -25,7 +25,8 @@ object Material {
     __obj.asInstanceOf[Material]
   }
   
-  extension [Self <: Material](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Material] (val x: Self) extends AnyVal {
     
     inline def setDriveFile(value: SharedDriveFile): Self = StObject.set(x, "driveFile", value.asInstanceOf[js.Any])
     

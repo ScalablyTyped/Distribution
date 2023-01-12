@@ -56,7 +56,8 @@ object libPaneMod {
       __obj.asInstanceOf[IsPaneResizable]
     }
     
-    extension [Self <: IsPaneResizable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsPaneResizable] (val x: Self) extends AnyVal {
       
       inline def setX(value: Boolean): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -107,7 +108,8 @@ object libPaneMod {
       __obj.asInstanceOf[PaneProps]
     }
     
-    extension [Self <: PaneProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaneProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: String | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

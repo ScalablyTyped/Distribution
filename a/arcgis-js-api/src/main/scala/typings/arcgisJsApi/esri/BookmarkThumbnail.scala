@@ -20,7 +20,8 @@ object BookmarkThumbnail {
     __obj.asInstanceOf[BookmarkThumbnail]
   }
   
-  extension [Self <: BookmarkThumbnail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BookmarkThumbnail] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

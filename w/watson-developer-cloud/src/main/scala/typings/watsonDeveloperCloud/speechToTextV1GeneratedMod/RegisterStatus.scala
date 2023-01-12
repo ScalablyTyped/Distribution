@@ -20,7 +20,8 @@ object RegisterStatus {
     __obj.asInstanceOf[RegisterStatus]
   }
   
-  extension [Self <: RegisterStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterStatus] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

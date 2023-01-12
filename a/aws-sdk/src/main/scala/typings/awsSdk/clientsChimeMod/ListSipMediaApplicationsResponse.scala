@@ -23,7 +23,8 @@ object ListSipMediaApplicationsResponse {
     __obj.asInstanceOf[ListSipMediaApplicationsResponse]
   }
   
-  extension [Self <: ListSipMediaApplicationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSipMediaApplicationsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object srcNgtscShimsApiMod {
       __obj.asInstanceOf[FactoryInfo]
     }
     
-    extension [Self <: FactoryInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FactoryInfo] (val x: Self) extends AnyVal {
       
       inline def setModuleSymbols(value: Map[String, ModuleInfo]): Self = StObject.set(x, "moduleSymbols", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object srcNgtscShimsApiMod {
       __obj.asInstanceOf[FactoryTracker]
     }
     
-    extension [Self <: FactoryTracker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FactoryTracker] (val x: Self) extends AnyVal {
       
       inline def setSourceInfo(value: Map[String, FactoryInfo]): Self = StObject.set(x, "sourceInfo", value.asInstanceOf[js.Any])
       
@@ -62,7 +64,8 @@ object srcNgtscShimsApiMod {
       __obj.asInstanceOf[ModuleInfo]
     }
     
-    extension [Self <: ModuleInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleInfo] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -111,7 +114,8 @@ object srcNgtscShimsApiMod {
       __obj.asInstanceOf[TopLevelShimGenerator]
     }
     
-    extension [Self <: TopLevelShimGenerator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopLevelShimGenerator] (val x: Self) extends AnyVal {
       
       inline def setMakeTopLevelShim(value: () => SourceFile): Self = StObject.set(x, "makeTopLevelShim", js.Any.fromFunction0(value))
       

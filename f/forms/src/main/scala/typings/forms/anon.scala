@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Empty[Fields, Data]]
     }
     
-    extension [Self <: Empty[?, ?], Fields /* <: FormFields */, Data /* <: IncomingMessage | (Partial[FormData[Fields]] & StringDictionary[Any]) */](x: Self & (Empty[Fields, Data])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Empty[?, ?], Fields /* <: FormFields */, Data /* <: IncomingMessage | (Partial[FormData[Fields]] & StringDictionary[Any]) */] (val x: Self & (Empty[Fields, Data])) extends AnyVal {
       
       inline def setEmpty(
         value: /* form */ FormBound[
@@ -72,7 +73,8 @@ object anon {
       __obj.asInstanceOf[Field]
     }
     
-    extension [Self <: Field](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
       
       inline def setField(value: js.Array[String]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -100,7 +102,8 @@ object anon {
       __obj.asInstanceOf[ValidatePastFirstError]
     }
     
-    extension [Self <: ValidatePastFirstError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidatePastFirstError] (val x: Self) extends AnyVal {
       
       inline def setValidatePastFirstError(value: Boolean): Self = StObject.set(x, "validatePastFirstError", value.asInstanceOf[js.Any])
       
@@ -131,7 +134,8 @@ object anon {
       __obj.asInstanceOf[WidgetParametersrowsnumbe]
     }
     
-    extension [Self <: WidgetParametersrowsnumbe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WidgetParametersrowsnumbe] (val x: Self) extends AnyVal {
       
       inline def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       

@@ -29,7 +29,8 @@ object BytesizeBaseIconsProps {
     __obj.asInstanceOf[BytesizeBaseIconsProps]
   }
   
-  extension [Self <: BytesizeBaseIconsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BytesizeBaseIconsProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

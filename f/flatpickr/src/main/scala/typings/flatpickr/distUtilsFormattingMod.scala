@@ -162,7 +162,8 @@ object distUtilsFormattingMod {
       __obj.asInstanceOf[Formats_]
     }
     
-    extension [Self <: Formats_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Formats_] (val x: Self) extends AnyVal {
       
       inline def setD(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "D", js.Any.fromFunction3(value))
       
@@ -280,7 +281,8 @@ object distUtilsFormattingMod {
       __obj.asInstanceOf[TokenRegex_]
     }
     
-    extension [Self <: TokenRegex_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenRegex_] (val x: Self) extends AnyVal {
       
       inline def setD(value: String): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
       

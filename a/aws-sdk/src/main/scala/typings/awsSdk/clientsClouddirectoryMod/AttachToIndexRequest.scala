@@ -28,7 +28,8 @@ object AttachToIndexRequest {
     __obj.asInstanceOf[AttachToIndexRequest]
   }
   
-  extension [Self <: AttachToIndexRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachToIndexRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     

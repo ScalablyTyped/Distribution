@@ -33,7 +33,8 @@ object StartPipelineReprocessingRequest {
     __obj.asInstanceOf[StartPipelineReprocessingRequest]
   }
   
-  extension [Self <: StartPipelineReprocessingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartPipelineReprocessingRequest] (val x: Self) extends AnyVal {
     
     inline def setChannelMessages(value: ChannelMessages): Self = StObject.set(x, "channelMessages", value.asInstanceOf[js.Any])
     

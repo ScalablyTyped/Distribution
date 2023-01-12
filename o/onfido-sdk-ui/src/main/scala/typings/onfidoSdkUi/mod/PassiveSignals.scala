@@ -15,7 +15,8 @@ object PassiveSignals {
     __obj.asInstanceOf[PassiveSignals]
   }
   
-  extension [Self <: PassiveSignals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PassiveSignals] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }

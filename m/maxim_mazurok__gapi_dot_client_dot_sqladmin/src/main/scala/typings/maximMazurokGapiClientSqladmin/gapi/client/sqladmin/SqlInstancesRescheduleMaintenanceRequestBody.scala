@@ -16,7 +16,8 @@ object SqlInstancesRescheduleMaintenanceRequestBody {
     __obj.asInstanceOf[SqlInstancesRescheduleMaintenanceRequestBody]
   }
   
-  extension [Self <: SqlInstancesRescheduleMaintenanceRequestBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlInstancesRescheduleMaintenanceRequestBody] (val x: Self) extends AnyVal {
     
     inline def setReschedule(value: Reschedule): Self = StObject.set(x, "reschedule", value.asInstanceOf[js.Any])
     

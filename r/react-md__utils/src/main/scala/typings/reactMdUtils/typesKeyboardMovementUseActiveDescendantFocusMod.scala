@@ -38,7 +38,8 @@ object typesKeyboardMovementUseActiveDescendantFocusMod {
       __obj.asInstanceOf[ActiveDescendantFocusHookOptions[E]]
     }
     
-    extension [Self <: ActiveDescendantFocusHookOptions[?], E /* <: HTMLElement */](x: Self & ActiveDescendantFocusHookOptions[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveDescendantFocusHookOptions[?], E /* <: HTMLElement */] (val x: Self & ActiveDescendantFocusHookOptions[E]) extends AnyVal {
       
       inline def setDefaultActiveId(value: String): Self = StObject.set(x, "defaultActiveId", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object typesKeyboardMovementUseActiveDescendantFocusMod {
       __obj.asInstanceOf[ActiveDescendantFocusHookReturnValue[E]]
     }
     
-    extension [Self <: ActiveDescendantFocusHookReturnValue[?], E /* <: HTMLElement */](x: Self & ActiveDescendantFocusHookReturnValue[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveDescendantFocusHookReturnValue[?], E /* <: HTMLElement */] (val x: Self & ActiveDescendantFocusHookReturnValue[E]) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       

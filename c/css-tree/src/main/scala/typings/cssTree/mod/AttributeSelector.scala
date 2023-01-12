@@ -29,7 +29,8 @@ object AttributeSelector {
     __obj.asInstanceOf[AttributeSelector]
   }
   
-  extension [Self <: AttributeSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeSelector] (val x: Self) extends AnyVal {
     
     inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     

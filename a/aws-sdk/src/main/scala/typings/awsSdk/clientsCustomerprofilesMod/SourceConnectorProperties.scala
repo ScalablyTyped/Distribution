@@ -38,7 +38,8 @@ object SourceConnectorProperties {
     __obj.asInstanceOf[SourceConnectorProperties]
   }
   
-  extension [Self <: SourceConnectorProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceConnectorProperties] (val x: Self) extends AnyVal {
     
     inline def setMarketo(value: MarketoSourceProperties): Self = StObject.set(x, "Marketo", value.asInstanceOf[js.Any])
     

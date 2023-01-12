@@ -18,7 +18,8 @@ object CheckDomainAvailabilityResponse {
     __obj.asInstanceOf[CheckDomainAvailabilityResponse]
   }
   
-  extension [Self <: CheckDomainAvailabilityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckDomainAvailabilityResponse] (val x: Self) extends AnyVal {
     
     inline def setAvailability(value: DomainAvailability): Self = StObject.set(x, "Availability", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object ISortInfo {
     __obj.asInstanceOf[ISortInfo]
   }
   
-  extension [Self <: ISortInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISortInfo] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

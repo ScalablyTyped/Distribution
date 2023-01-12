@@ -23,7 +23,8 @@ object Threshold {
     __obj.asInstanceOf[Threshold]
   }
   
-  extension [Self <: Threshold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Threshold] (val x: Self) extends AnyVal {
     
     inline def setComparison(value: Comparison): Self = StObject.set(x, "Comparison", value.asInstanceOf[js.Any])
     

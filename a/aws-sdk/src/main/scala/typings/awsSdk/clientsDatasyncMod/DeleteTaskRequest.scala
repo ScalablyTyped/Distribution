@@ -18,7 +18,8 @@ object DeleteTaskRequest {
     __obj.asInstanceOf[DeleteTaskRequest]
   }
   
-  extension [Self <: DeleteTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setTaskArn(value: TaskArn): Self = StObject.set(x, "TaskArn", value.asInstanceOf[js.Any])
   }

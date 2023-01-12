@@ -18,7 +18,8 @@ object MarkAsArchivedRequest {
     __obj.asInstanceOf[MarkAsArchivedRequest]
   }
   
-  extension [Self <: MarkAsArchivedRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkAsArchivedRequest] (val x: Self) extends AnyVal {
     
     inline def setSourceServerID(value: SourceServerID): Self = StObject.set(x, "sourceServerID", value.asInstanceOf[js.Any])
   }

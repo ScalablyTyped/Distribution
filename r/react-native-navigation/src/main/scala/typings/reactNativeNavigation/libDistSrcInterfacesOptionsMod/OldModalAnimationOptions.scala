@@ -25,7 +25,8 @@ object OldModalAnimationOptions {
     __obj.asInstanceOf[OldModalAnimationOptions]
   }
   
-  extension [Self <: OldModalAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OldModalAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setElementTransitions(value: js.Array[ElementTransition]): Self = StObject.set(x, "elementTransitions", value.asInstanceOf[js.Any])
     

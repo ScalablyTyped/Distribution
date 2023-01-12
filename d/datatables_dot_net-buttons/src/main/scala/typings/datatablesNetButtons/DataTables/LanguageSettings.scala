@@ -15,7 +15,8 @@ object LanguageSettings {
     __obj.asInstanceOf[LanguageSettings]
   }
   
-  extension [Self <: LanguageSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageSettings] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: js.Object): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

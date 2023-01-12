@@ -69,7 +69,8 @@ object AzureRestApiRequestModel {
     __obj.asInstanceOf[AzureRestApiRequestModel]
   }
   
-  extension [Self <: AzureRestApiRequestModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AzureRestApiRequestModel] (val x: Self) extends AnyVal {
     
     inline def setAssetDetails(value: AssetDetails): Self = StObject.set(x, "assetDetails", value.asInstanceOf[js.Any])
     

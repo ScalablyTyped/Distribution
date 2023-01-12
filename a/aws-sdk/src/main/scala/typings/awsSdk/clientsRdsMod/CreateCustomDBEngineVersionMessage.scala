@@ -56,7 +56,8 @@ object CreateCustomDBEngineVersionMessage {
     __obj.asInstanceOf[CreateCustomDBEngineVersionMessage]
   }
   
-  extension [Self <: CreateCustomDBEngineVersionMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCustomDBEngineVersionMessage] (val x: Self) extends AnyVal {
     
     inline def setDatabaseInstallationFilesS3BucketName(value: BucketName): Self = StObject.set(x, "DatabaseInstallationFilesS3BucketName", value.asInstanceOf[js.Any])
     

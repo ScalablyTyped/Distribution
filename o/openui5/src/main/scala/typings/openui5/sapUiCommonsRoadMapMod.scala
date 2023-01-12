@@ -557,7 +557,8 @@ object sapUiCommonsRoadMapMod {
       __obj.asInstanceOf[RoadMapSettings]
     }
     
-    extension [Self <: RoadMapSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoadMapSettings] (val x: Self) extends AnyVal {
       
       inline def setFirstVisibleStep(value: String | PropertyBindingInfo): Self = StObject.set(x, "firstVisibleStep", value.asInstanceOf[js.Any])
       

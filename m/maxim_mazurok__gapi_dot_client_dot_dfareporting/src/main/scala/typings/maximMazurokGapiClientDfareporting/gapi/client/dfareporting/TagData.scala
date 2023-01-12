@@ -28,7 +28,8 @@ object TagData {
     __obj.asInstanceOf[TagData]
   }
   
-  extension [Self <: TagData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagData] (val x: Self) extends AnyVal {
     
     inline def setAdId(value: String): Self = StObject.set(x, "adId", value.asInstanceOf[js.Any])
     

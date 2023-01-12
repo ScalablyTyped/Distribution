@@ -38,7 +38,8 @@ object ListGroupResourcesInput {
     __obj.asInstanceOf[ListGroupResourcesInput]
   }
   
-  extension [Self <: ListGroupResourcesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGroupResourcesInput] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: ResourceFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

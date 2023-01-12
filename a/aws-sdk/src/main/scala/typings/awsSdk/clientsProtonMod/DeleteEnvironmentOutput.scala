@@ -18,7 +18,8 @@ object DeleteEnvironmentOutput {
     __obj.asInstanceOf[DeleteEnvironmentOutput]
   }
   
-  extension [Self <: DeleteEnvironmentOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEnvironmentOutput] (val x: Self) extends AnyVal {
     
     inline def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     

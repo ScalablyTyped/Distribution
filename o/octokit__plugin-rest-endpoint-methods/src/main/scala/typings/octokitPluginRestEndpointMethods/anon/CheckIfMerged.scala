@@ -638,7 +638,8 @@ object CheckIfMerged {
     __obj.asInstanceOf[CheckIfMerged]
   }
   
-  extension [Self <: CheckIfMerged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckIfMerged] (val x: Self) extends AnyVal {
     
     inline def setCheckIfMerged(value: `481`): Self = StObject.set(x, "checkIfMerged", value.asInstanceOf[js.Any])
     

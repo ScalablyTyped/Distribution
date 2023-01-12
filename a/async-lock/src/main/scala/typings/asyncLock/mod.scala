@@ -203,7 +203,8 @@ object mod {
       __obj.asInstanceOf[AsyncLockOptions]
     }
     
-    extension [Self <: AsyncLockOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncLockOptions] (val x: Self) extends AnyVal {
       
       inline def setDomainReentrant(value: Boolean): Self = StObject.set(x, "domainReentrant", value.asInstanceOf[js.Any])
       

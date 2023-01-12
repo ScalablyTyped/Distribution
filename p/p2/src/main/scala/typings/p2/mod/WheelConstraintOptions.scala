@@ -19,7 +19,8 @@ object WheelConstraintOptions {
     __obj.asInstanceOf[WheelConstraintOptions]
   }
   
-  extension [Self <: WheelConstraintOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WheelConstraintOptions] (val x: Self) extends AnyVal {
     
     inline def setLocalForwardVector(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localForwardVector", value.asInstanceOf[js.Any])
     

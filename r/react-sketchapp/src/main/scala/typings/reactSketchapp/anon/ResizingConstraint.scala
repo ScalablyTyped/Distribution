@@ -35,7 +35,8 @@ object ResizingConstraint {
     __obj.asInstanceOf[ResizingConstraint]
   }
   
-  extension [Self <: ResizingConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResizingConstraint] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: Requireable[ReactNodeLike]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

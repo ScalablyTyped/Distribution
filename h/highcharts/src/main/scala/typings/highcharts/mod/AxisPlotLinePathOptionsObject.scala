@@ -53,7 +53,8 @@ object AxisPlotLinePathOptionsObject {
     __obj.asInstanceOf[AxisPlotLinePathOptionsObject]
   }
   
-  extension [Self <: AxisPlotLinePathOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisPlotLinePathOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setAcrossPanes(value: Boolean): Self = StObject.set(x, "acrossPanes", value.asInstanceOf[js.Any])
     

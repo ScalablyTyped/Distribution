@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setClipDirection(value: backward | forward | closest): Self = StObject.set(x, "clipDirection", value.asInstanceOf[js.Any])
     }
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[ClipDirection]
     }
     
-    extension [Self <: ClipDirection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClipDirection] (val x: Self) extends AnyVal {
       
       inline def setClipDirection(value: backward | forward | closest): Self = StObject.set(x, "clipDirection", value.asInstanceOf[js.Any])
       
@@ -79,7 +81,8 @@ object anon {
       __obj.asInstanceOf[ClipDirectionExclusive]
     }
     
-    extension [Self <: ClipDirectionExclusive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClipDirectionExclusive] (val x: Self) extends AnyVal {
       
       inline def setClipDirection(value: backward | forward | closest): Self = StObject.set(x, "clipDirection", value.asInstanceOf[js.Any])
       
@@ -114,7 +117,8 @@ object anon {
       __obj.asInstanceOf[ClipDirectionExclusiveInvalidate]
     }
     
-    extension [Self <: ClipDirectionExclusiveInvalidate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClipDirectionExclusiveInvalidate] (val x: Self) extends AnyVal {
       
       inline def setClipDirection(value: backward | forward | closest): Self = StObject.set(x, "clipDirection", value.asInstanceOf[js.Any])
       
@@ -143,7 +147,8 @@ object anon {
       __obj.asInstanceOf[Exclusive]
     }
     
-    extension [Self <: Exclusive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exclusive] (val x: Self) extends AnyVal {
       
       inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
       
@@ -168,7 +173,8 @@ object anon {
       __obj.asInstanceOf[ExclusiveInvalidate]
     }
     
-    extension [Self <: ExclusiveInvalidate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExclusiveInvalidate] (val x: Self) extends AnyVal {
       
       inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
       
@@ -195,7 +201,8 @@ object anon {
       __obj.asInstanceOf[Invalidate]
     }
     
-    extension [Self <: Invalidate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Invalidate] (val x: Self) extends AnyVal {
       
       inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
       
@@ -224,7 +231,8 @@ object anon {
       __obj.asInstanceOf[MaintainHistory]
     }
     
-    extension [Self <: MaintainHistory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaintainHistory] (val x: Self) extends AnyVal {
       
       inline def setMaintainHistory(value: Boolean): Self = StObject.set(x, "maintainHistory", value.asInstanceOf[js.Any])
       
@@ -257,7 +265,8 @@ object anon {
       __obj.asInstanceOf[NewExtent]
     }
     
-    extension [Self <: NewExtent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewExtent] (val x: Self) extends AnyVal {
       
       inline def setNewExtent(value: Point): Self = StObject.set(x, "newExtent", value.asInstanceOf[js.Any])
       
@@ -282,7 +291,8 @@ object anon {
       __obj.asInstanceOf[NormalizeLineEndings]
     }
     
-    extension [Self <: NormalizeLineEndings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizeLineEndings] (val x: Self) extends AnyVal {
       
       inline def setNormalizeLineEndings(value: Boolean): Self = StObject.set(x, "normalizeLineEndings", value.asInstanceOf[js.Any])
       
@@ -350,7 +360,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyPoint]
     }
     
-    extension [Self <: ReadonlyPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyPoint] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -446,7 +457,8 @@ object anon {
       __obj.asInstanceOf[Reversed]
     }
     
-    extension [Self <: Reversed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reversed] (val x: Self) extends AnyVal {
       
       inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     }
@@ -470,7 +482,8 @@ object anon {
       __obj.asInstanceOf[ShouldDestroyOnFileDelete]
     }
     
-    extension [Self <: ShouldDestroyOnFileDelete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShouldDestroyOnFileDelete] (val x: Self) extends AnyVal {
       
       inline def setShouldDestroyOnFileDelete(value: () => Boolean): Self = StObject.set(x, "shouldDestroyOnFileDelete", js.Any.fromFunction0(value))
       

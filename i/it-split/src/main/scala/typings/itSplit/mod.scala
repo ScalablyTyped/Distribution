@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[SplitOptions]
     }
     
-    extension [Self <: SplitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitOptions] (val x: Self) extends AnyVal {
       
       inline def setDelimiter(value: js.typedarray.Uint8Array): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object AnalysisCustomNormalizer {
     __obj.asInstanceOf[AnalysisCustomNormalizer]
   }
   
-  extension [Self <: AnalysisCustomNormalizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisCustomNormalizer] (val x: Self) extends AnyVal {
     
     inline def setChar_filter(value: js.Array[String]): Self = StObject.set(x, "char_filter", value.asInstanceOf[js.Any])
     

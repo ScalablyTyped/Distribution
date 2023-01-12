@@ -17,7 +17,8 @@ object Constraint {
     __obj.asInstanceOf[Constraint]
   }
   
-  extension [Self <: Constraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Constraint] (val x: Self) extends AnyVal {
     
     inline def setConstraint(value: Operator): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     

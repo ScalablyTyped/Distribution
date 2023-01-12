@@ -449,7 +449,8 @@ object libCommandMod {
       __obj.asInstanceOf[ICommandName]
     }
     
-    extension [Self <: ICommandName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICommandName] (val x: Self) extends AnyVal {
       
       inline def setACCEPT_ALERT(value: String): Self = StObject.set(x, "ACCEPT_ALERT", value.asInstanceOf[js.Any])
       

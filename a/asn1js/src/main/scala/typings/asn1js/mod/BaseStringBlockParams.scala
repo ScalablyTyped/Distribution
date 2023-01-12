@@ -21,7 +21,8 @@ object BaseStringBlockParams {
     __obj.asInstanceOf[BaseStringBlockParams]
   }
   
-  extension [Self <: BaseStringBlockParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseStringBlockParams] (val x: Self) extends AnyVal {
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

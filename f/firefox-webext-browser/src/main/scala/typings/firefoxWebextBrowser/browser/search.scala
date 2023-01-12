@@ -32,7 +32,8 @@ object search {
       __obj.asInstanceOf[SearchEngine]
     }
     
-    extension [Self <: SearchEngine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchEngine] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object search {
       __obj.asInstanceOf[SearchSearchProperties]
     }
     
-    extension [Self <: SearchSearchProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchSearchProperties] (val x: Self) extends AnyVal {
       
       inline def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
       

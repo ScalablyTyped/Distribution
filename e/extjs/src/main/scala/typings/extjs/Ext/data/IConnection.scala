@@ -95,7 +95,8 @@ object IConnection {
     __obj.asInstanceOf[IConnection]
   }
   
-  extension [Self <: IConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConnection] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: /* request */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
     

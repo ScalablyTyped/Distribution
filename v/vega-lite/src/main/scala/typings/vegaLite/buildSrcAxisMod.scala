@@ -634,7 +634,8 @@ object buildSrcAxisMod {
       __obj.asInstanceOf[Axis[ES]]
     }
     
-    extension [Self <: Axis[?], ES /* <: ExprRef | SignalRef */](x: Self & Axis[ES]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Axis[?], ES /* <: ExprRef | SignalRef */] (val x: Self & Axis[ES]) extends AnyVal {
       
       inline def setEncoding(value: AxisEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -962,7 +963,8 @@ object buildSrcAxisMod {
       __obj.asInstanceOf[AxisConfig[ES]]
     }
     
-    extension [Self <: AxisConfig[?], ES /* <: ExprRef | SignalRef */](x: Self & AxisConfig[ES]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisConfig[?], ES /* <: ExprRef | SignalRef */] (val x: Self & AxisConfig[ES]) extends AnyVal {
       
       inline def setAria(
         value: /* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends boolean | undefined ? std.Exclude<boolean | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | ES : std.Exclude<boolean | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any
@@ -1684,7 +1686,8 @@ object buildSrcAxisMod {
       __obj.asInstanceOf[AxisConfigBaseWithConditionalAndSignal[ES]]
     }
     
-    extension [Self <: AxisConfigBaseWithConditionalAndSignal[?], ES /* <: ExprRef | SignalRef */](x: Self & AxisConfigBaseWithConditionalAndSignal[ES]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisConfigBaseWithConditionalAndSignal[?], ES /* <: ExprRef | SignalRef */] (val x: Self & AxisConfigBaseWithConditionalAndSignal[ES]) extends AnyVal {
       
       inline def setAria(
         value: /* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends boolean | undefined ? std.Exclude<boolean | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | ES : std.Exclude<boolean | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any
@@ -2235,7 +2238,8 @@ object buildSrcAxisMod {
       __obj.asInstanceOf[AxisConfigMixins[ES]]
     }
     
-    extension [Self <: AxisConfigMixins[?], ES /* <: ExprRef | SignalRef */](x: Self & AxisConfigMixins[ES]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisConfigMixins[?], ES /* <: ExprRef | SignalRef */] (val x: Self & AxisConfigMixins[ES]) extends AnyVal {
       
       inline def setAxis(value: AxisConfig[ES]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -2366,7 +2370,8 @@ object buildSrcAxisMod {
       __obj.asInstanceOf[AxisEncoding]
     }
     
-    extension [Self <: AxisEncoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisEncoding] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: GuideEncodingEntry): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -2513,7 +2518,8 @@ object buildSrcAxisMod {
       __obj.asInstanceOf[AxisOverrideMixins[ES]]
     }
     
-    extension [Self <: AxisOverrideMixins[?], ES /* <: ExprRef | SignalRef */](x: Self & AxisOverrideMixins[ES]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisOverrideMixins[?], ES /* <: ExprRef | SignalRef */] (val x: Self & AxisOverrideMixins[ES]) extends AnyVal {
       
       inline def setDomain(value: Boolean): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -2688,7 +2694,8 @@ object buildSrcAxisMod {
       __obj.asInstanceOf[AxisPropsWithCondition[ES]]
     }
     
-    extension [Self <: AxisPropsWithCondition[?], ES /* <: ExprRef | SignalRef */](x: Self & AxisPropsWithCondition[ES]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisPropsWithCondition[?], ES /* <: ExprRef | SignalRef */] (val x: Self & AxisPropsWithCondition[ES]) extends AnyVal {
       
       inline def setGridColor(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.ColorValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.ColorValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | ES : std.Exclude<vega-typings.vega-typings/types/spec/values.ColorValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisColor[ES]
@@ -3197,7 +3204,8 @@ object buildSrcAxisMod {
       __obj.asInstanceOf[BaseAxisNoValueRefs[ES]]
     }
     
-    extension [Self <: BaseAxisNoValueRefs[?], ES /* <: ExprRef | SignalRef */](x: Self & BaseAxisNoValueRefs[ES]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseAxisNoValueRefs[?], ES /* <: ExprRef | SignalRef */] (val x: Self & BaseAxisNoValueRefs[ES]) extends AnyVal {
       
       inline def setAria(
         value: /* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends boolean | undefined ? std.Exclude<boolean | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | ES : std.Exclude<boolean | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any
@@ -3732,7 +3740,8 @@ object buildSrcAxisMod {
       __obj.asInstanceOf[VLOnlyAxisMixins]
     }
     
-    extension [Self <: VLOnlyAxisMixins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VLOnlyAxisMixins] (val x: Self) extends AnyVal {
       
       inline def setLabelExpr(value: String): Self = StObject.set(x, "labelExpr", value.asInstanceOf[js.Any])
       

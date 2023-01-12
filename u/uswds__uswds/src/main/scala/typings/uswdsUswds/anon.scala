@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[ApQueryFilter]
     }
     
-    extension [Self <: ApQueryFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApQueryFilter] (val x: Self) extends AnyVal {
       
       inline def setApQueryFilter(value: String): Self = StObject.set(x, "apQueryFilter", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object anon {
       __obj.asInstanceOf[CalendarDate]
     }
     
-    extension [Self <: CalendarDate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarDate] (val x: Self) extends AnyVal {
       
       inline def setCalendarDate(value: js.Date): Self = StObject.set(x, "calendarDate", value.asInstanceOf[js.Any])
       
@@ -159,7 +161,8 @@ object anon {
       __obj.asInstanceOf[ClearInputBtnEl]
     }
     
-    extension [Self <: ClearInputBtnEl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClearInputBtnEl] (val x: Self) extends AnyVal {
       
       inline def setClearInputBtnEl(value: HTMLButtonElement): Self = StObject.set(x, "clearInputBtnEl", value.asInstanceOf[js.Any])
       
@@ -198,7 +201,8 @@ object anon {
       __obj.asInstanceOf[DropZoneEl]
     }
     
-    extension [Self <: DropZoneEl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropZoneEl] (val x: Self) extends AnyVal {
       
       inline def setDropZoneEl(value: HTMLDivElement): Self = StObject.set(x, "dropZoneEl", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object ResourceHeaderProps {
     __obj.asInstanceOf[ResourceHeaderProps[TResource]]
   }
   
-  extension [Self <: ResourceHeaderProps[?], TResource /* <: js.Object */](x: Self & ResourceHeaderProps[TResource]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceHeaderProps[?], TResource /* <: js.Object */] (val x: Self & ResourceHeaderProps[TResource]) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

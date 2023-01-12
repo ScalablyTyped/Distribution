@@ -20,7 +20,8 @@ object ColumnProperties {
     __obj.asInstanceOf[ColumnProperties]
   }
   
-  extension [Self <: ColumnProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnProperties] (val x: Self) extends AnyVal {
     
     inline def setWidth(value: Size): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

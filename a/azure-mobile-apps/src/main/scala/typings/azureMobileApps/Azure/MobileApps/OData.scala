@@ -29,7 +29,8 @@ object OData {
     __obj.asInstanceOf[OData]
   }
   
-  extension [Self <: OData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OData] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: String): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

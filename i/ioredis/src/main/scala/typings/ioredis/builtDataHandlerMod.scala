@@ -59,7 +59,8 @@ object builtDataHandlerMod {
       __obj.asInstanceOf[Condition]
     }
     
-    extension [Self <: Condition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object builtDataHandlerMod {
       __obj.asInstanceOf[DataHandler]
     }
     
-    extension [Self <: DataHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataHandler] (val x: Self) extends AnyVal {
       
       inline def setHandleMonitorReply(value: Any): Self = StObject.set(x, "handleMonitorReply", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object builtDataHandlerMod {
       __obj.asInstanceOf[ParserOptions]
     }
     
-    extension [Self <: ParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
       
       inline def setStringNumbers(value: Boolean): Self = StObject.set(x, "stringNumbers", value.asInstanceOf[js.Any])
     }

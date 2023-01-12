@@ -85,7 +85,8 @@ object libDsvDataVisualizationMod {
       __obj.asInstanceOf[DataVisualization]
     }
     
-    extension [Self <: DataVisualization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataVisualization] (val x: Self) extends AnyVal {
       
       inline def setCreateMap_(value: js.Array[Any] => StringDictionary[Any]): Self = StObject.set(x, "createMap_", js.Any.fromFunction1(value))
       

@@ -33,7 +33,8 @@ object PeeringTgwInfo {
     __obj.asInstanceOf[PeeringTgwInfo]
   }
   
-  extension [Self <: PeeringTgwInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeeringTgwInfo] (val x: Self) extends AnyVal {
     
     inline def setCoreNetworkId(value: String): Self = StObject.set(x, "CoreNetworkId", value.asInstanceOf[js.Any])
     

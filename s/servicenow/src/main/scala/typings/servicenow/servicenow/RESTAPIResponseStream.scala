@@ -17,7 +17,8 @@ object RESTAPIResponseStream {
     __obj.asInstanceOf[RESTAPIResponseStream]
   }
   
-  extension [Self <: RESTAPIResponseStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RESTAPIResponseStream] (val x: Self) extends AnyVal {
     
     inline def setWriteStream(value: js.Object => Unit): Self = StObject.set(x, "writeStream", js.Any.fromFunction1(value))
     

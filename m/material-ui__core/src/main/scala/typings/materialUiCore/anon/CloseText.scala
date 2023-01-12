@@ -15,7 +15,8 @@ object CloseText {
     __obj.asInstanceOf[CloseText]
   }
   
-  extension [Self <: CloseText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseText] (val x: Self) extends AnyVal {
     
     inline def setCloseText(value: String): Self = StObject.set(x, "closeText", value.asInstanceOf[js.Any])
     

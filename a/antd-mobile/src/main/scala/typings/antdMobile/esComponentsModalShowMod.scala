@@ -78,7 +78,8 @@ object esComponentsModalShowMod {
       __obj.asInstanceOf[ModalShowHandler]
     }
     
-    extension [Self <: ModalShowHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalShowHandler] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     }
@@ -236,7 +237,8 @@ object esComponentsModalShowMod {
       __obj.asInstanceOf[ModalShowProps]
     }
     
-    extension [Self <: ModalShowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalShowProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

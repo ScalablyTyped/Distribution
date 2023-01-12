@@ -17,7 +17,8 @@ object TimerClass {
     __obj.asInstanceOf[TimerClass]
   }
   
-  extension [Self <: TimerClass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimerClass] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: (String, TimerCreateOptions, CbCallback) => Unit): Self = StObject.set(x, "Create", js.Any.fromFunction3(value))
     

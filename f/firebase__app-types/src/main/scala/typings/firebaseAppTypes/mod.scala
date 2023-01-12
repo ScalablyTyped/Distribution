@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[FirebaseAppConfig]
     }
     
-    extension [Self <: FirebaseAppConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseAppConfig] (val x: Self) extends AnyVal {
       
       inline def setAutomaticDataCollectionEnabled(value: Boolean): Self = StObject.set(x, "automaticDataCollectionEnabled", value.asInstanceOf[js.Any])
       
@@ -135,7 +136,8 @@ object mod {
       __obj.asInstanceOf[FirebaseOptions]
     }
     
-    extension [Self <: FirebaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseOptions] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -184,7 +186,8 @@ object mod {
       __obj.asInstanceOf[VersionService]
     }
     
-    extension [Self <: VersionService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VersionService] (val x: Self) extends AnyVal {
       
       inline def setLibrary(value: String): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
       
@@ -210,7 +213,8 @@ object mod {
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      extension [Self <: NameServiceMapping](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
         
         inline def `setApp-version`(value: VersionService): Self = StObject.set(x, "app-version", value.asInstanceOf[js.Any])
         

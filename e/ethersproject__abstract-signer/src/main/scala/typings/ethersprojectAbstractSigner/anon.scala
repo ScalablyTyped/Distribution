@@ -49,7 +49,8 @@ object anon {
       __obj.asInstanceOf[DeferrableTransactionRequ]
     }
     
-    extension [Self <: DeferrableTransactionRequ](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeferrableTransactionRequ] (val x: Self) extends AnyVal {
       
       inline def setAccessList(value: AccessListish | js.Promise[js.UndefOr[AccessListish]]): Self = StObject.set(x, "accessList", value.asInstanceOf[js.Any])
       

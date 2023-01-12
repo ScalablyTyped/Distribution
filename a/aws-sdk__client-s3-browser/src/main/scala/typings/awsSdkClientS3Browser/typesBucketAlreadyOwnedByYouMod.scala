@@ -21,7 +21,8 @@ object typesBucketAlreadyOwnedByYouMod {
       __obj.asInstanceOf[BucketAlreadyOwnedByYou]
     }
     
-    extension [Self <: BucketAlreadyOwnedByYou](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BucketAlreadyOwnedByYou] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.BucketAlreadyOwnedByYou): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

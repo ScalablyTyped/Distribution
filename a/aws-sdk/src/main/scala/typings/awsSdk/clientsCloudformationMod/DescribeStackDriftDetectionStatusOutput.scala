@@ -53,7 +53,8 @@ object DescribeStackDriftDetectionStatusOutput {
     __obj.asInstanceOf[DescribeStackDriftDetectionStatusOutput]
   }
   
-  extension [Self <: DescribeStackDriftDetectionStatusOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeStackDriftDetectionStatusOutput] (val x: Self) extends AnyVal {
     
     inline def setDetectionStatus(value: StackDriftDetectionStatus): Self = StObject.set(x, "DetectionStatus", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object CreateCommit {
     __obj.asInstanceOf[CreateCommit]
   }
   
-  extension [Self <: CreateCommit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCommit] (val x: Self) extends AnyVal {
     
     inline def setCreateBlob(value: `1074`): Self = StObject.set(x, "createBlob", value.asInstanceOf[js.Any])
     

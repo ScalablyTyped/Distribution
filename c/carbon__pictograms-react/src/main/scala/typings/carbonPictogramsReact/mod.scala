@@ -4761,7 +4761,8 @@ object mod {
       __obj.asInstanceOf[CarbonPictogramProps]
     }
     
-    extension [Self <: CarbonPictogramProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarbonPictogramProps] (val x: Self) extends AnyVal {
       
       inline def setAccentHeight(value: Double | String): Self = StObject.set(x, "accentHeight", value.asInstanceOf[js.Any])
       

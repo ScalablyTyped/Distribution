@@ -23,7 +23,8 @@ object BatchCreateAttendeeRequest {
     __obj.asInstanceOf[BatchCreateAttendeeRequest]
   }
   
-  extension [Self <: BatchCreateAttendeeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCreateAttendeeRequest] (val x: Self) extends AnyVal {
     
     inline def setAttendees(value: CreateAttendeeRequestItemList): Self = StObject.set(x, "Attendees", value.asInstanceOf[js.Any])
     

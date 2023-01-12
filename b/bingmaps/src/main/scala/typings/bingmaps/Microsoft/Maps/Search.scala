@@ -102,7 +102,8 @@ object Search {
       __obj.asInstanceOf[IGeocodeLocation]
     }
     
-    extension [Self <: IGeocodeLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGeocodeLocation] (val x: Self) extends AnyVal {
       
       inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
@@ -161,7 +162,8 @@ object Search {
       __obj.asInstanceOf[IGeocodeRequestOptions]
     }
     
-    extension [Self <: IGeocodeRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGeocodeRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: LocationRect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -209,7 +211,8 @@ object Search {
       __obj.asInstanceOf[IGeocodeResult]
     }
     
-    extension [Self <: IGeocodeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGeocodeResult] (val x: Self) extends AnyVal {
       
       inline def setResults(value: js.Array[IPlaceResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
@@ -259,7 +262,8 @@ object Search {
       __obj.asInstanceOf[IPlaceResult]
     }
     
-    extension [Self <: IPlaceResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPlaceResult] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: IAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -336,7 +340,8 @@ object Search {
       __obj.asInstanceOf[ReverseGeocodeRequestOptions]
     }
     
-    extension [Self <: ReverseGeocodeRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReverseGeocodeRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: (IPlaceResult, Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
@@ -394,7 +399,8 @@ object Search {
       __obj.asInstanceOf[SearchManager]
     }
     
-    extension [Self <: SearchManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchManager] (val x: Self) extends AnyVal {
       
       inline def setGeocode(value: IGeocodeRequestOptions => Unit): Self = StObject.set(x, "geocode", js.Any.fromFunction1(value))
       

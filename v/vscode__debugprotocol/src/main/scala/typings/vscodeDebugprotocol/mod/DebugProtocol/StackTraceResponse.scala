@@ -31,7 +31,8 @@ object StackTraceResponse {
     __obj.asInstanceOf[StackTraceResponse]
   }
   
-  extension [Self <: StackTraceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackTraceResponse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: StackFrames): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

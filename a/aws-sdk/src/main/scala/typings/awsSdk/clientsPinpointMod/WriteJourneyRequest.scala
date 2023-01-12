@@ -103,7 +103,8 @@ object WriteJourneyRequest {
     __obj.asInstanceOf[WriteJourneyRequest]
   }
   
-  extension [Self <: WriteJourneyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteJourneyRequest] (val x: Self) extends AnyVal {
     
     inline def setActivities(value: MapOfActivity): Self = StObject.set(x, "Activities", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object CreateEmailIdentityResponse {
     __obj.asInstanceOf[CreateEmailIdentityResponse]
   }
   
-  extension [Self <: CreateEmailIdentityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEmailIdentityResponse] (val x: Self) extends AnyVal {
     
     inline def setDkimAttributes(value: DkimAttributes): Self = StObject.set(x, "DkimAttributes", value.asInstanceOf[js.Any])
     

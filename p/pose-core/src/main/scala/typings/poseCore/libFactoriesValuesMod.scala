@@ -83,7 +83,8 @@ object libFactoriesValuesMod {
       __obj.asInstanceOf[ValueFactoryProps[V, A, TD]]
     }
     
-    extension [Self <: ValueFactoryProps[?, ?, ?], V, A, TD](x: Self & (ValueFactoryProps[V, A, TD])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueFactoryProps[?, ?, ?], V, A, TD] (val x: Self & (ValueFactoryProps[V, A, TD])) extends AnyVal {
       
       inline def setActivePoses(value: ActivePoses): Self = StObject.set(x, "activePoses", value.asInstanceOf[js.Any])
       

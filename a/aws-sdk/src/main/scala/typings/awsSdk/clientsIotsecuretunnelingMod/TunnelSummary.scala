@@ -43,7 +43,8 @@ object TunnelSummary {
     __obj.asInstanceOf[TunnelSummary]
   }
   
-  extension [Self <: TunnelSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TunnelSummary] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

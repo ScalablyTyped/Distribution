@@ -44,7 +44,8 @@ object SinonFakeServerOptions {
     __obj.asInstanceOf[SinonFakeServerOptions]
   }
   
-  extension [Self <: SinonFakeServerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SinonFakeServerOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoRespond(value: Boolean): Self = StObject.set(x, "autoRespond", value.asInstanceOf[js.Any])
     

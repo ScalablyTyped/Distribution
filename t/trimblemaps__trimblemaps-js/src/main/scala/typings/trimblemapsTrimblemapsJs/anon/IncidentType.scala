@@ -17,7 +17,8 @@ object IncidentType {
     __obj.asInstanceOf[IncidentType]
   }
   
-  extension [Self <: IncidentType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncidentType] (val x: Self) extends AnyVal {
     
     inline def setIncidentType(value: String): Self = StObject.set(x, "incidentType", value.asInstanceOf[js.Any])
     

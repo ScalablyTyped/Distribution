@@ -53,7 +53,8 @@ object ListTestGridSessionsRequest {
     __obj.asInstanceOf[ListTestGridSessionsRequest]
   }
   
-  extension [Self <: ListTestGridSessionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTestGridSessionsRequest] (val x: Self) extends AnyVal {
     
     inline def setCreationTimeAfter(value: js.Date): Self = StObject.set(x, "creationTimeAfter", value.asInstanceOf[js.Any])
     

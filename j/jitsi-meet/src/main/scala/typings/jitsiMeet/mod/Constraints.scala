@@ -15,7 +15,8 @@ object Constraints {
     __obj.asInstanceOf[Constraints]
   }
   
-  extension [Self <: Constraints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Constraints] (val x: Self) extends AnyVal {
     
     inline def setVideo(value: DimensionConstraints): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
   }

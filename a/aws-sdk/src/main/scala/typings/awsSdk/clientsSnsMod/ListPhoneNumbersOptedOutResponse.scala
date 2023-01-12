@@ -23,7 +23,8 @@ object ListPhoneNumbersOptedOutResponse {
     __obj.asInstanceOf[ListPhoneNumbersOptedOutResponse]
   }
   
-  extension [Self <: ListPhoneNumbersOptedOutResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPhoneNumbersOptedOutResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: java.lang.String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

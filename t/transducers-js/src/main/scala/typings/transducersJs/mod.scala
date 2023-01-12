@@ -437,7 +437,8 @@ object mod {
       __obj.asInstanceOf[CompletingTransformer[TResult, TCompleteResult, TInput]]
     }
     
-    extension [Self <: CompletingTransformer[?, ?, ?], TResult, TCompleteResult, TInput](x: Self & (CompletingTransformer[TResult, TCompleteResult, TInput])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompletingTransformer[?, ?, ?], TResult, TCompleteResult, TInput] (val x: Self & (CompletingTransformer[TResult, TCompleteResult, TInput])) extends AnyVal {
       
       inline def `set@@transducerSlashinit`(value: () => TResult | Unit): Self = StObject.set(x, "@@transducer/init", js.Any.fromFunction0(value))
       
@@ -464,7 +465,8 @@ object mod {
       __obj.asInstanceOf[Reduced_[TResult]]
     }
     
-    extension [Self <: Reduced_[?], TResult](x: Self & Reduced_[TResult]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reduced_[?], TResult] (val x: Self & Reduced_[TResult]) extends AnyVal {
       
       inline def `set@@transducerSlashreduced`(value: Boolean): Self = StObject.set(x, "@@transducer/reduced", value.asInstanceOf[js.Any])
       

@@ -37,7 +37,8 @@ object InlineCompletionsProvider {
     __obj.asInstanceOf[InlineCompletionsProvider[T]]
   }
   
-  extension [Self <: InlineCompletionsProvider[?], T /* <: InlineCompletions[InlineCompletion] */](x: Self & InlineCompletionsProvider[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineCompletionsProvider[?], T /* <: InlineCompletions[InlineCompletion] */] (val x: Self & InlineCompletionsProvider[T]) extends AnyVal {
     
     inline def setFreeInlineCompletions(value: T => Unit): Self = StObject.set(x, "freeInlineCompletions", js.Any.fromFunction1(value))
     

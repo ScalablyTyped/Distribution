@@ -17,7 +17,8 @@ object Auth0LockAdditionalSignUpFieldOption {
     __obj.asInstanceOf[Auth0LockAdditionalSignUpFieldOption]
   }
   
-  extension [Self <: Auth0LockAdditionalSignUpFieldOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Auth0LockAdditionalSignUpFieldOption] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

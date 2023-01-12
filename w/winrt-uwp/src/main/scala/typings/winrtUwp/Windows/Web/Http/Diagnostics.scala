@@ -185,7 +185,8 @@ object Diagnostics {
       __obj.asInstanceOf[HttpDiagnosticProviderRequestResponseCompletedEventArgs]
     }
     
-    extension [Self <: HttpDiagnosticProviderRequestResponseCompletedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpDiagnosticProviderRequestResponseCompletedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setActivityId(value: String): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
       
@@ -250,7 +251,8 @@ object Diagnostics {
       __obj.asInstanceOf[HttpDiagnosticProviderRequestResponseTimestamps]
     }
     
-    extension [Self <: HttpDiagnosticProviderRequestResponseTimestamps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpDiagnosticProviderRequestResponseTimestamps] (val x: Self) extends AnyVal {
       
       inline def setCacheCheckedTimestamp(value: js.Date): Self = StObject.set(x, "cacheCheckedTimestamp", value.asInstanceOf[js.Any])
       
@@ -311,7 +313,8 @@ object Diagnostics {
       __obj.asInstanceOf[HttpDiagnosticProviderRequestSentEventArgs]
     }
     
-    extension [Self <: HttpDiagnosticProviderRequestSentEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpDiagnosticProviderRequestSentEventArgs] (val x: Self) extends AnyVal {
       
       inline def setActivityId(value: String): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
       
@@ -348,7 +351,8 @@ object Diagnostics {
       __obj.asInstanceOf[HttpDiagnosticProviderResponseReceivedEventArgs]
     }
     
-    extension [Self <: HttpDiagnosticProviderResponseReceivedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpDiagnosticProviderResponseReceivedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setActivityId(value: String): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
       
@@ -377,7 +381,8 @@ object Diagnostics {
       __obj.asInstanceOf[HttpDiagnosticSourceLocation]
     }
     
-    extension [Self <: HttpDiagnosticSourceLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpDiagnosticSourceLocation] (val x: Self) extends AnyVal {
       
       inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
       

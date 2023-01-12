@@ -34,7 +34,8 @@ object TextDocumentContentProvider {
     __obj.asInstanceOf[TextDocumentContentProvider]
   }
   
-  extension [Self <: TextDocumentContentProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextDocumentContentProvider] (val x: Self) extends AnyVal {
     
     inline def setOnDidChange(
       value: (/* listener */ js.Function1[Uri, Any], /* thisArgs */ js.UndefOr[Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable

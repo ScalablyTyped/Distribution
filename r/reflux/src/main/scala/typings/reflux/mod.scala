@@ -122,7 +122,8 @@ object mod {
       __obj.asInstanceOf[ActionDefinition]
     }
     
-    extension [Self <: ActionDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionDefinition] (val x: Self) extends AnyVal {
       
       inline def setActionName(value: String): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
       
@@ -151,7 +152,8 @@ object mod {
       __obj.asInstanceOf[ActionParameters]
     }
     
-    extension [Self <: ActionParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionParameters] (val x: Self) extends AnyVal {
       
       inline def setAsyncResult(value: Boolean): Self = StObject.set(x, "asyncResult", value.asInstanceOf[js.Any])
       
@@ -200,7 +202,8 @@ object mod {
       __obj.asInstanceOf[Listenable]
     }
     
-    extension [Self <: Listenable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Listenable] (val x: Self) extends AnyVal {
       
       inline def setListen(value: ListenFn): Self = StObject.set(x, "listen", value.asInstanceOf[js.Any])
     }
@@ -223,7 +226,8 @@ object mod {
       __obj.asInstanceOf[StoreDefinition]
     }
     
-    extension [Self <: StoreDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoreDefinition] (val x: Self) extends AnyVal {
       
       inline def setGetInitialState(value: js.Function): Self = StObject.set(x, "getInitialState", value.asInstanceOf[js.Any])
       
@@ -254,7 +258,8 @@ object mod {
       __obj.asInstanceOf[Subscription]
     }
     
-    extension [Self <: Subscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
       
       inline def setListenable(value: Listenable): Self = StObject.set(x, "listenable", value.asInstanceOf[js.Any])
       

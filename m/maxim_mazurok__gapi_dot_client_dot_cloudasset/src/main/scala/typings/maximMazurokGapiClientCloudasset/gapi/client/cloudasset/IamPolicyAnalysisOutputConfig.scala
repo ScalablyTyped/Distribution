@@ -19,7 +19,8 @@ object IamPolicyAnalysisOutputConfig {
     __obj.asInstanceOf[IamPolicyAnalysisOutputConfig]
   }
   
-  extension [Self <: IamPolicyAnalysisOutputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IamPolicyAnalysisOutputConfig] (val x: Self) extends AnyVal {
     
     inline def setBigqueryDestination(value: GoogleCloudAssetV1BigQueryDestination): Self = StObject.set(x, "bigqueryDestination", value.asInstanceOf[js.Any])
     

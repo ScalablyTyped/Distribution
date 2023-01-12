@@ -64,7 +64,8 @@ object b2DistanceJointDef {
     __obj.asInstanceOf[b2DistanceJointDef]
   }
   
-  extension [Self <: b2DistanceJointDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2DistanceJointDef] (val x: Self) extends AnyVal {
     
     inline def setDampingRatio(value: Double): Self = StObject.set(x, "dampingRatio", value.asInstanceOf[js.Any])
     

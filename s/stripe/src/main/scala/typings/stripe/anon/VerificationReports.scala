@@ -22,7 +22,8 @@ object VerificationReports {
     __obj.asInstanceOf[VerificationReports]
   }
   
-  extension [Self <: VerificationReports](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerificationReports] (val x: Self) extends AnyVal {
     
     inline def setVerificationReports(value: VerificationReportsResource): Self = StObject.set(x, "verificationReports", value.asInstanceOf[js.Any])
     

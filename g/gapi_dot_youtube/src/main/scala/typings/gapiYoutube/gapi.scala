@@ -50,7 +50,8 @@ object gapi {
           __obj.asInstanceOf[activities]
         }
         
-        extension [Self <: activities](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: activities] (val x: Self) extends AnyVal {
           
           inline def setInsert(value: Part => HttpRequest[GoogleApiYouTubeActivityResource]): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
           
@@ -72,7 +73,8 @@ object gapi {
           __obj.asInstanceOf[channelBanners]
         }
         
-        extension [Self <: channelBanners](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: channelBanners] (val x: Self) extends AnyVal {
           
           inline def setInsert(value: OnBehalfOfContentOwner => HttpRequest[GoogleApiYouTubeChannelBannerResource]): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
         }
@@ -100,7 +102,8 @@ object gapi {
           __obj.asInstanceOf[channels]
         }
         
-        extension [Self <: channels](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: channels] (val x: Self) extends AnyVal {
           
           inline def setList(value: ForUsername => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeChannelResource]]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
           
@@ -122,7 +125,8 @@ object gapi {
           __obj.asInstanceOf[guideCategories]
         }
         
-        extension [Self <: guideCategories](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: guideCategories] (val x: Self) extends AnyVal {
           
           inline def setList(value: Hl => HttpRequest[GoogleApiYouTubePageInfo[GoogleApiYouTubeGuideCategoryResource]]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
         }
@@ -162,7 +166,8 @@ object gapi {
           __obj.asInstanceOf[playlistItems]
         }
         
-        extension [Self <: playlistItems](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: playlistItems] (val x: Self) extends AnyVal {
           
           inline def setDelete(value: Id => HttpRequest[GoogleApiYouTubePlaylistItemResource]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
           
@@ -210,7 +215,8 @@ object gapi {
           __obj.asInstanceOf[playlists]
         }
         
-        extension [Self <: playlists](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: playlists] (val x: Self) extends AnyVal {
           
           inline def setDelete(value: Id => HttpRequest[GoogleApiYouTubePlaylistResource]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
           
@@ -236,7 +242,8 @@ object gapi {
           __obj.asInstanceOf[search]
         }
         
-        extension [Self <: search](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: search] (val x: Self) extends AnyVal {
           
           inline def setList(value: ChannelType => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeSearchResource]]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
         }
@@ -270,7 +277,8 @@ object gapi {
           __obj.asInstanceOf[subscriptions]
         }
         
-        extension [Self <: subscriptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: subscriptions] (val x: Self) extends AnyVal {
           
           inline def setDelete(value: Id => HttpRequest[GoogleApiYouTubeSubscriptionResource]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
           
@@ -296,7 +304,8 @@ object gapi {
           __obj.asInstanceOf[thumbnails]
         }
         
-        extension [Self <: thumbnails](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: thumbnails] (val x: Self) extends AnyVal {
           
           inline def setSet(value: VideoId => HttpRequest[GoogleApiYouTubePageInfo[GoogleApiYouTubeThumbnailResource]]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
         }
@@ -316,7 +325,8 @@ object gapi {
           __obj.asInstanceOf[videoCategories]
         }
         
-        extension [Self <: videoCategories](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: videoCategories] (val x: Self) extends AnyVal {
           
           inline def setList(value: Hl => HttpRequest[GoogleApiYouTubePageInfo[GoogleApiYouTubeVideoCategoryResource]]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
         }
@@ -368,7 +378,8 @@ object gapi {
           __obj.asInstanceOf[videos]
         }
         
-        extension [Self <: videos](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: videos] (val x: Self) extends AnyVal {
           
           inline def setDelete(value: IdOnBehalfOfContentOwner => HttpRequest[GoogleApiYouTubeVideoResource]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
           

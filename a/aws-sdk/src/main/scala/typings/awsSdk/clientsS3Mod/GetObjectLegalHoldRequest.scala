@@ -35,7 +35,8 @@ object GetObjectLegalHoldRequest {
     __obj.asInstanceOf[GetObjectLegalHoldRequest]
   }
   
-  extension [Self <: GetObjectLegalHoldRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectLegalHoldRequest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

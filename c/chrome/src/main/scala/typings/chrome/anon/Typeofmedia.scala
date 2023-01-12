@@ -169,7 +169,8 @@ object Typeofmedia {
     __obj.asInstanceOf[Typeofmedia]
   }
   
-  extension [Self <: Typeofmedia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofmedia] (val x: Self) extends AnyVal {
     
     inline def setDEFAULT_MEDIA_RECEIVER_APP_ID(value: String): Self = StObject.set(x, "DEFAULT_MEDIA_RECEIVER_APP_ID", value.asInstanceOf[js.Any])
     

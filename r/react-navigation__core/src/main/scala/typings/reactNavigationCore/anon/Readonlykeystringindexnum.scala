@@ -36,7 +36,8 @@ object Readonlykeystringindexnum {
     __obj.asInstanceOf[Readonlykeystringindexnum]
   }
   
-  extension [Self <: Readonlykeystringindexnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlykeystringindexnum] (val x: Self) extends AnyVal {
     
     inline def setHistory(value: js.Array[Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     

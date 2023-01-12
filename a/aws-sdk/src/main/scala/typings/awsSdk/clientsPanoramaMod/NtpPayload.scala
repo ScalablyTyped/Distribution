@@ -18,7 +18,8 @@ object NtpPayload {
     __obj.asInstanceOf[NtpPayload]
   }
   
-  extension [Self <: NtpPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NtpPayload] (val x: Self) extends AnyVal {
     
     inline def setNtpServers(value: NtpServerList): Self = StObject.set(x, "NtpServers", value.asInstanceOf[js.Any])
     

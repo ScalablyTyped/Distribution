@@ -46,7 +46,8 @@ object InterpreterOptions {
     __obj.asInstanceOf[InterpreterOptions]
   }
   
-  extension [Self <: InterpreterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterpreterOptions] (val x: Self) extends AnyVal {
     
     inline def setClock(value: Clock): Self = StObject.set(x, "clock", value.asInstanceOf[js.Any])
     

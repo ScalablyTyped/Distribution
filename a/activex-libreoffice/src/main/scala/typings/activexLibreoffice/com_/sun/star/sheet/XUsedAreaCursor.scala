@@ -42,7 +42,8 @@ object XUsedAreaCursor {
     __obj.asInstanceOf[XUsedAreaCursor]
   }
   
-  extension [Self <: XUsedAreaCursor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUsedAreaCursor] (val x: Self) extends AnyVal {
     
     inline def setGotoEndOfUsedArea(value: Boolean => Unit): Self = StObject.set(x, "gotoEndOfUsedArea", js.Any.fromFunction1(value))
     

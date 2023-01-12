@@ -16,7 +16,8 @@ object GoogleCloudRecommendationengineV1beta1FeatureMapFloatList {
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1FeatureMapFloatList]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1beta1FeatureMapFloatList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1FeatureMapFloatList] (val x: Self) extends AnyVal {
     
     inline def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

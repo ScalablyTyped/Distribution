@@ -18,7 +18,8 @@ object ConfigureAccessPointResponse {
     __obj.asInstanceOf[ConfigureAccessPointResponse]
   }
   
-  extension [Self <: ConfigureAccessPointResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigureAccessPointResponse] (val x: Self) extends AnyVal {
     
     inline def setAccessPoint(value: NetworkResource): Self = StObject.set(x, "accessPoint", value.asInstanceOf[js.Any])
   }

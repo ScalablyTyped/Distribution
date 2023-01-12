@@ -467,7 +467,8 @@ object typesMenuBarWidgetMod {
       __obj.asInstanceOf[BaseMenuBarWidgetProps]
     }
     
-    extension [Self <: BaseMenuBarWidgetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseMenuBarWidgetProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

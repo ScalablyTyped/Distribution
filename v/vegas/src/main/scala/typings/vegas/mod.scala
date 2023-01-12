@@ -267,7 +267,8 @@ object mod {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: AlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -472,7 +473,8 @@ object mod {
       __obj.asInstanceOf[Slide]
     }
     
-    extension [Self <: Slide](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Slide] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: AlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -539,7 +541,8 @@ object mod {
       __obj.asInstanceOf[Support]
     }
     
-    extension [Self <: Support](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Support] (val x: Self) extends AnyVal {
       
       inline def setObjectFit(value: Boolean): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
       
@@ -679,7 +682,8 @@ object mod {
       __obj.asInstanceOf[Video]
     }
     
-    extension [Self <: Video](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Video] (val x: Self) extends AnyVal {
       
       inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
@@ -744,7 +748,8 @@ object mod {
         __obj.asInstanceOf[JQueryStatic]
       }
       
-      extension [Self <: JQueryStatic](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
         
         inline def setVegas(value: JQueryExtension): Self = StObject.set(x, "vegas", value.asInstanceOf[js.Any])
       }

@@ -33,7 +33,8 @@ object UpdateFirewallDescriptionResponse {
     __obj.asInstanceOf[UpdateFirewallDescriptionResponse]
   }
   
-  extension [Self <: UpdateFirewallDescriptionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFirewallDescriptionResponse] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

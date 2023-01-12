@@ -18,7 +18,8 @@ object ComponentRow {
     __obj.asInstanceOf[ComponentRow[TRowData, TKey]]
   }
   
-  extension [Self <: ComponentRow[?, ?], TRowData, TKey](x: Self & (ComponentRow[TRowData, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentRow[?, ?], TRowData, TKey] (val x: Self & (ComponentRow[TRowData, TKey])) extends AnyVal {
     
     inline def setComponent(value: dxDataGrid[TRowData, TKey]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

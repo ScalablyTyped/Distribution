@@ -52,7 +52,8 @@ object LiveBroadcastSnippet {
     __obj.asInstanceOf[LiveBroadcastSnippet]
   }
   
-  extension [Self <: LiveBroadcastSnippet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveBroadcastSnippet] (val x: Self) extends AnyVal {
     
     inline def setActualEndTime(value: String): Self = StObject.set(x, "actualEndTime", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ResourceScanMetadata {
     __obj.asInstanceOf[ResourceScanMetadata]
   }
   
-  extension [Self <: ResourceScanMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceScanMetadata] (val x: Self) extends AnyVal {
     
     inline def setEc2(value: Ec2Metadata): Self = StObject.set(x, "ec2", value.asInstanceOf[js.Any])
     

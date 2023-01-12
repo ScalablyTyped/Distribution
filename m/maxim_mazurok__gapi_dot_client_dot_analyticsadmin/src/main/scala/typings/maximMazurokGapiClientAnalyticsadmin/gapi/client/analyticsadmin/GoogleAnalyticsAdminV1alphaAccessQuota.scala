@@ -25,7 +25,8 @@ object GoogleAnalyticsAdminV1alphaAccessQuota {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaAccessQuota]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaAccessQuota](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAccessQuota] (val x: Self) extends AnyVal {
     
     inline def setConcurrentRequests(value: GoogleAnalyticsAdminV1alphaAccessQuotaStatus): Self = StObject.set(x, "concurrentRequests", value.asInstanceOf[js.Any])
     

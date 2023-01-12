@@ -48,7 +48,8 @@ object distListboxSrcListboxContextMod {
       __obj.asInstanceOf[ListboxContextType]
     }
     
-    extension [Self <: ListboxContextType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListboxContextType] (val x: Self) extends AnyVal {
       
       inline def setFocusManager(value: FocusManager): Self = StObject.set(x, "focusManager", value.asInstanceOf[js.Any])
       

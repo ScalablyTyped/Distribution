@@ -52,7 +52,8 @@ object GetTaskResult {
     __obj.asInstanceOf[GetTaskResult]
   }
   
-  extension [Self <: GetTaskResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTaskResult] (val x: Self) extends AnyVal {
     
     inline def setEstimatedCompletionTime(value: Double): Self = StObject.set(x, "estimatedCompletionTime", value.asInstanceOf[js.Any])
     

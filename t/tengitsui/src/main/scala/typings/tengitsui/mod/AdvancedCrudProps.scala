@@ -19,7 +19,8 @@ object AdvancedCrudProps {
     __obj.asInstanceOf[AdvancedCrudProps]
   }
   
-  extension [Self <: AdvancedCrudProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvancedCrudProps] (val x: Self) extends AnyVal {
     
     inline def setApi(value: AdvancedApi): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     

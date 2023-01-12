@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Color1]
     }
     
-    extension [Self <: Color1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color1] (val x: Self) extends AnyVal {
       
       inline def setColor1(value: String): Self = StObject.set(x, "color1", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object anon {
       __obj.asInstanceOf[Lx]
     }
     
-    extension [Self <: Lx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lx] (val x: Self) extends AnyVal {
       
       inline def setLx(value: Double): Self = StObject.set(x, "lx", value.asInstanceOf[js.Any])
       
@@ -81,7 +83,8 @@ object anon {
       __obj.asInstanceOf[Vx]
     }
     
-    extension [Self <: Vx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vx] (val x: Self) extends AnyVal {
       
       inline def setVx(value: Double): Self = StObject.set(x, "vx", value.asInstanceOf[js.Any])
       

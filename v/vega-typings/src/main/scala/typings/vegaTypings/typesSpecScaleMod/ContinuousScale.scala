@@ -26,7 +26,8 @@ object ContinuousScale {
     __obj.asInstanceOf[ContinuousScale]
   }
   
-  extension [Self <: ContinuousScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinuousScale] (val x: Self) extends AnyVal {
     
     inline def setBins(value: ScaleBins): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
     

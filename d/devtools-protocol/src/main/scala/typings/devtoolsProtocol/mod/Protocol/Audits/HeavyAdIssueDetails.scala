@@ -28,7 +28,8 @@ object HeavyAdIssueDetails {
     __obj.asInstanceOf[HeavyAdIssueDetails]
   }
   
-  extension [Self <: HeavyAdIssueDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeavyAdIssueDetails] (val x: Self) extends AnyVal {
     
     inline def setFrame(value: AffectedFrame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     

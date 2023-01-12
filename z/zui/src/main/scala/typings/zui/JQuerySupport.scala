@@ -15,7 +15,8 @@ object JQuerySupport {
     __obj.asInstanceOf[JQuerySupport]
   }
   
-  extension [Self <: JQuerySupport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQuerySupport] (val x: Self) extends AnyVal {
     
     inline def setTransition(value: Boolean | TransitionEventNames): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
   }

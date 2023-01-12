@@ -26,7 +26,8 @@ object LegendBackgroundCfg {
     __obj.asInstanceOf[LegendBackgroundCfg]
   }
   
-  extension [Self <: LegendBackgroundCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendBackgroundCfg] (val x: Self) extends AnyVal {
     
     inline def setPadding(value: Double | js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     

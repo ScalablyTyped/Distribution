@@ -80,7 +80,8 @@ object MouseTrackerOptions {
     __obj.asInstanceOf[MouseTrackerOptions]
   }
   
-  extension [Self <: MouseTrackerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouseTrackerOptions] (val x: Self) extends AnyVal {
     
     inline def setBlurHandler(value: MouseTrackerEvent[Event] => Unit): Self = StObject.set(x, "blurHandler", js.Any.fromFunction1(value))
     

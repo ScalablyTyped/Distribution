@@ -77,7 +77,8 @@ object libComponentsKeytipLayerIkeytiptreenodeMod {
       __obj.asInstanceOf[IKeytipTreeNode]
     }
     
-    extension [Self <: IKeytipTreeNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKeytipTreeNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

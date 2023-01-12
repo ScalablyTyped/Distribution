@@ -18,7 +18,8 @@ object MinWidth {
     __obj.asInstanceOf[MinWidth]
   }
   
-  extension [Self <: MinWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinWidth] (val x: Self) extends AnyVal {
     
     inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object XModuleManager {
     __obj.asInstanceOf[XModuleManager]
   }
   
-  extension [Self <: XModuleManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XModuleManager] (val x: Self) extends AnyVal {
     
     inline def setIdentify(value: XInterface => String): Self = StObject.set(x, "identify", js.Any.fromFunction1(value))
   }

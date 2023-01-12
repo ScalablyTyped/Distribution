@@ -19,7 +19,8 @@ object LocalinventoryCustomBatchResponse {
     __obj.asInstanceOf[LocalinventoryCustomBatchResponse]
   }
   
-  extension [Self <: LocalinventoryCustomBatchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalinventoryCustomBatchResponse] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: js.Array[LocalinventoryCustomBatchResponseEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

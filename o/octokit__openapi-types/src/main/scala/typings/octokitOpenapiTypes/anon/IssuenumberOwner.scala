@@ -30,7 +30,8 @@ object IssuenumberOwner {
     __obj.asInstanceOf[IssuenumberOwner]
   }
   
-  extension [Self <: IssuenumberOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssuenumberOwner] (val x: Self) extends AnyVal {
     
     inline def setIssue_number(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['issue-number'] */ js.Any

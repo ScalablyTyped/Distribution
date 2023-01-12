@@ -53,7 +53,8 @@ object IVaultManagementOperations {
     __obj.asInstanceOf[IVaultManagementOperations]
   }
   
-  extension [Self <: IVaultManagementOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultManagementOperations] (val x: Self) extends AnyVal {
     
     inline def setArchiveOldVersions(value: IArchiveOldVersionsJob => Unit): Self = StObject.set(x, "ArchiveOldVersions", js.Any.fromFunction1(value))
     

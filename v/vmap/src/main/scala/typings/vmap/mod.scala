@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[VMAP]
     }
     
-    extension [Self <: VMAP](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VMAP] (val x: Self) extends AnyVal {
       
       inline def setAdBreaks(value: js.Array[VMAPAdBreak]): Self = StObject.set(x, "adBreaks", value.asInstanceOf[js.Any])
       
@@ -181,7 +182,8 @@ object mod {
       __obj.asInstanceOf[VMAPAdSource]
     }
     
-    extension [Self <: VMAPAdSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VMAPAdSource] (val x: Self) extends AnyVal {
       
       inline def setAdTagURI(value: String): Self = StObject.set(x, "adTagURI", value.asInstanceOf[js.Any])
       
@@ -224,7 +226,8 @@ object mod {
       __obj.asInstanceOf[VMAPExtension]
     }
     
-    extension [Self <: VMAPExtension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VMAPExtension] (val x: Self) extends AnyVal {
       
       inline def setAttribute(value: Any): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
@@ -256,7 +259,8 @@ object mod {
       __obj.asInstanceOf[VMAPTrackingEvent]
     }
     
-    extension [Self <: VMAPTrackingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VMAPTrackingEvent] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: breakStart | breakEnd | error): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       

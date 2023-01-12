@@ -32,7 +32,8 @@ object XSupportedLanguages {
     __obj.asInstanceOf[XSupportedLanguages]
   }
   
-  extension [Self <: XSupportedLanguages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSupportedLanguages] (val x: Self) extends AnyVal {
     
     inline def setGetLanguages(value: () => SafeArray[Double]): Self = StObject.set(x, "getLanguages", js.Any.fromFunction0(value))
     

@@ -17,7 +17,8 @@ object PickCardStylebody {
     __obj.asInstanceOf[PickCardStylebody]
   }
   
-  extension [Self <: PickCardStylebody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickCardStylebody] (val x: Self) extends AnyVal {
     
     inline def setBody(value: ViewStyle): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

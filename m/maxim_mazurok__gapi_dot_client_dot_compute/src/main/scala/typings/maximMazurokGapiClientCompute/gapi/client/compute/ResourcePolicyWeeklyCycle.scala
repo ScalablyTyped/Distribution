@@ -16,7 +16,8 @@ object ResourcePolicyWeeklyCycle {
     __obj.asInstanceOf[ResourcePolicyWeeklyCycle]
   }
   
-  extension [Self <: ResourcePolicyWeeklyCycle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourcePolicyWeeklyCycle] (val x: Self) extends AnyVal {
     
     inline def setDayOfWeeks(value: js.Array[ResourcePolicyWeeklyCycleDayOfWeek]): Self = StObject.set(x, "dayOfWeeks", value.asInstanceOf[js.Any])
     

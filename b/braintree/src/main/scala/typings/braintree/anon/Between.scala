@@ -22,7 +22,8 @@ object Between {
     __obj.asInstanceOf[Between[T]]
   }
   
-  extension [Self <: Between[?], T](x: Self & Between[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Between[?], T] (val x: Self & Between[T]) extends AnyVal {
     
     inline def setBetween(value: (T, T) => Unit): Self = StObject.set(x, "between", js.Any.fromFunction2(value))
     

@@ -24,7 +24,8 @@ object XpackUsageCcr {
     __obj.asInstanceOf[XpackUsageCcr]
   }
   
-  extension [Self <: XpackUsageCcr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageCcr] (val x: Self) extends AnyVal {
     
     inline def setAuto_follow_patterns_count(value: integer): Self = StObject.set(x, "auto_follow_patterns_count", value.asInstanceOf[js.Any])
     

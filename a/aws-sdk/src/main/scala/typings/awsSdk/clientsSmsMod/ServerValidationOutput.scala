@@ -15,7 +15,8 @@ object ServerValidationOutput {
     __obj.asInstanceOf[ServerValidationOutput]
   }
   
-  extension [Self <: ServerValidationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerValidationOutput] (val x: Self) extends AnyVal {
     
     inline def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     

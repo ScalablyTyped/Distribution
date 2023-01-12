@@ -77,7 +77,8 @@ object AncestorsOfGroup {
     __obj.asInstanceOf[AncestorsOfGroup]
   }
   
-  extension [Self <: AncestorsOfGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AncestorsOfGroup] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object WorkerMessage {
     __obj.asInstanceOf[WorkerMessage]
   }
   
-  extension [Self <: WorkerMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerMessage] (val x: Self) extends AnyVal {
     
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

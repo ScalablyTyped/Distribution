@@ -25,7 +25,8 @@ object WritableSpecification {
     __obj.asInstanceOf[WritableSpecification]
   }
   
-  extension [Self <: WritableSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WritableSpecification] (val x: Self) extends AnyVal {
     
     inline def setDb(value: Database): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     

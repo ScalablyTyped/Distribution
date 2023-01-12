@@ -35,7 +35,8 @@ object NormalizationLinkedHandle {
     __obj.asInstanceOf[NormalizationLinkedHandle]
   }
   
-  extension [Self <: NormalizationLinkedHandle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizationLinkedHandle] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

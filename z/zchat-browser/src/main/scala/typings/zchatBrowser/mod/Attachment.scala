@@ -23,7 +23,8 @@ object Attachment {
     __obj.asInstanceOf[Attachment]
   }
   
-  extension [Self <: Attachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: AttachmentMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

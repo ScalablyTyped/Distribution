@@ -15,7 +15,8 @@ object PlotVennClusterStatesOptions {
     __obj.asInstanceOf[PlotVennClusterStatesOptions]
   }
   
-  extension [Self <: PlotVennClusterStatesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotVennClusterStatesOptions] (val x: Self) extends AnyVal {
     
     inline def setHover(value: PlotVennClusterStatesHoverOptions): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     

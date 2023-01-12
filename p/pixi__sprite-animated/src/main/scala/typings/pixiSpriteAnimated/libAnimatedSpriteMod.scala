@@ -186,7 +186,8 @@ object libAnimatedSpriteMod {
       __obj.asInstanceOf[FrameObject]
     }
     
-    extension [Self <: FrameObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrameObject] (val x: Self) extends AnyVal {
       
       inline def setTexture(value: Texture[Resource]): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
       

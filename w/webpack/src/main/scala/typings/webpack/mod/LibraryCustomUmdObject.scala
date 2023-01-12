@@ -31,7 +31,8 @@ object LibraryCustomUmdObject {
     __obj.asInstanceOf[LibraryCustomUmdObject]
   }
   
-  extension [Self <: LibraryCustomUmdObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LibraryCustomUmdObject] (val x: Self) extends AnyVal {
     
     inline def setAmd(value: String): Self = StObject.set(x, "amd", value.asInstanceOf[js.Any])
     

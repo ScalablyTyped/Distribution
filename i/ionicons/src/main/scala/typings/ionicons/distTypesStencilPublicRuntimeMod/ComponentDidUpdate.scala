@@ -24,7 +24,8 @@ object ComponentDidUpdate {
     __obj.asInstanceOf[ComponentDidUpdate]
   }
   
-  extension [Self <: ComponentDidUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentDidUpdate] (val x: Self) extends AnyVal {
     
     inline def setComponentDidUpdate(value: () => Unit): Self = StObject.set(x, "componentDidUpdate", js.Any.fromFunction0(value))
   }

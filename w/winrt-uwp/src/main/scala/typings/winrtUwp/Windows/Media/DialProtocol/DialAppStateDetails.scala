@@ -20,7 +20,8 @@ object DialAppStateDetails {
     __obj.asInstanceOf[DialAppStateDetails]
   }
   
-  extension [Self <: DialAppStateDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialAppStateDetails] (val x: Self) extends AnyVal {
     
     inline def setFullXml(value: String): Self = StObject.set(x, "fullXml", value.asInstanceOf[js.Any])
     

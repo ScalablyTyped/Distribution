@@ -70,7 +70,8 @@ object libComponentsPickersSuggestionsSuggestionsDottypesMod {
       __obj.asInstanceOf[ISuggestionModel[T]]
     }
     
-    extension [Self <: ISuggestionModel[?], T](x: Self & ISuggestionModel[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISuggestionModel[?], T] (val x: Self & ISuggestionModel[T]) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object libComponentsPickersSuggestionsSuggestionsDottypesMod {
       __obj.asInstanceOf[ISuggestions[T]]
     }
     
-    extension [Self <: ISuggestions[?], T](x: Self & ISuggestions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISuggestions[?], T] (val x: Self & ISuggestions[T]) extends AnyVal {
       
       inline def setExecuteSelectedAction(value: () => Unit): Self = StObject.set(x, "executeSelectedAction", js.Any.fromFunction0(value))
       
@@ -368,7 +370,8 @@ object libComponentsPickersSuggestionsSuggestionsDottypesMod {
       __obj.asInstanceOf[ISuggestionsStyleProps]
     }
     
-    extension [Self <: ISuggestionsStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISuggestionsStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -423,7 +426,8 @@ object libComponentsPickersSuggestionsSuggestionsDottypesMod {
       __obj.asInstanceOf[ISuggestionsStyles]
     }
     
-    extension [Self <: ISuggestionsStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISuggestionsStyles] (val x: Self) extends AnyVal {
       
       inline def setForceResolveButton(value: IStyle): Self = StObject.set(x, "forceResolveButton", value.asInstanceOf[js.Any])
       
@@ -483,7 +487,8 @@ object libComponentsPickersSuggestionsSuggestionsDottypesMod {
       __obj.asInstanceOf[ISuggestionsSubComponentStyles]
     }
     
-    extension [Self <: ISuggestionsSubComponentStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISuggestionsSubComponentStyles] (val x: Self) extends AnyVal {
       
       inline def setSpinner(value: IStyleFunctionOrObject[ISpinnerStyleProps, Any]): Self = StObject.set(x, "spinner", value.asInstanceOf[js.Any])
       

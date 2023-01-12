@@ -20,7 +20,8 @@ object BaseClass {
     __obj.asInstanceOf[BaseClass]
   }
   
-  extension [Self <: BaseClass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseClass] (val x: Self) extends AnyVal {
     
     inline def setBody(value: ClassBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

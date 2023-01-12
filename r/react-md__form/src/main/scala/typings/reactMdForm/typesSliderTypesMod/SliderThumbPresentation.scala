@@ -44,7 +44,8 @@ object SliderThumbPresentation {
     __obj.asInstanceOf[SliderThumbPresentation]
   }
   
-  extension [Self <: SliderThumbPresentation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderThumbPresentation] (val x: Self) extends AnyVal {
     
     inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ParallelConfig {
     __obj.asInstanceOf[ParallelConfig]
   }
   
-  extension [Self <: ParallelConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParallelConfig] (val x: Self) extends AnyVal {
     
     inline def setStopTogether(value: Boolean): Self = StObject.set(x, "stopTogether", value.asInstanceOf[js.Any])
     

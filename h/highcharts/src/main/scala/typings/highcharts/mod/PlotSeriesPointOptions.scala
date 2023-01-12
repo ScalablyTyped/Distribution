@@ -18,7 +18,8 @@ object PlotSeriesPointOptions {
     __obj.asInstanceOf[PlotSeriesPointOptions]
   }
   
-  extension [Self <: PlotSeriesPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSeriesPointOptions] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: PointEventsOptionsObject): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

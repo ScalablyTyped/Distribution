@@ -18,7 +18,8 @@ object GetRelationalDatabasesRequest {
     __obj.asInstanceOf[GetRelationalDatabasesRequest]
   }
   
-  extension [Self <: GetRelationalDatabasesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRelationalDatabasesRequest] (val x: Self) extends AnyVal {
     
     inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     

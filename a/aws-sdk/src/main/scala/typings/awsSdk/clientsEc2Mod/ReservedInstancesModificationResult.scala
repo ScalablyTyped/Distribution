@@ -23,7 +23,8 @@ object ReservedInstancesModificationResult {
     __obj.asInstanceOf[ReservedInstancesModificationResult]
   }
   
-  extension [Self <: ReservedInstancesModificationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservedInstancesModificationResult] (val x: Self) extends AnyVal {
     
     inline def setReservedInstancesId(value: String): Self = StObject.set(x, "ReservedInstancesId", value.asInstanceOf[js.Any])
     

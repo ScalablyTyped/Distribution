@@ -30,7 +30,8 @@ object TypeofRadioControlRegistr {
     __obj.asInstanceOf[TypeofRadioControlRegistr]
   }
   
-  extension [Self <: TypeofRadioControlRegistr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofRadioControlRegistr] (val x: Self) extends AnyVal {
     
     inline def setƟfac(value: ɵɵFactoryDeclaration[RadioControlRegistryModule, scala.Nothing]): Self = StObject.set(x, "\u0275fac", value.asInstanceOf[js.Any])
     

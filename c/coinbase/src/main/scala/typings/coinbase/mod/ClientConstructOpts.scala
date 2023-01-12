@@ -43,7 +43,8 @@ object ClientConstructOpts {
     __obj.asInstanceOf[ClientConstructOpts]
   }
   
-  extension [Self <: ClientConstructOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientConstructOpts] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     

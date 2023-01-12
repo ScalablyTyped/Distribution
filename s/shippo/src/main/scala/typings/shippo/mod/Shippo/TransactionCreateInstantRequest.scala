@@ -27,7 +27,8 @@ object TransactionCreateInstantRequest {
     __obj.asInstanceOf[TransactionCreateInstantRequest]
   }
   
-  extension [Self <: TransactionCreateInstantRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionCreateInstantRequest] (val x: Self) extends AnyVal {
     
     inline def setCarrier_account(value: String): Self = StObject.set(x, "carrier_account", value.asInstanceOf[js.Any])
     

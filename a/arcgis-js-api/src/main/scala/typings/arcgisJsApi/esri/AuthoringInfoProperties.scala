@@ -196,7 +196,8 @@ object AuthoringInfoProperties {
     __obj.asInstanceOf[AuthoringInfoProperties]
   }
   
-  extension [Self <: AuthoringInfoProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthoringInfoProperties] (val x: Self) extends AnyVal {
     
     inline def setClassificationMethod(
       value: `equal-interval` | `defined-interval` | manual | `natural-breaks` | quantile | `standard-deviation`

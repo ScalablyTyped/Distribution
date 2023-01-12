@@ -23,7 +23,8 @@ object DescribeGroupRequest {
     __obj.asInstanceOf[DescribeGroupRequest]
   }
   
-  extension [Self <: DescribeGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: WorkMailIdentifier): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     

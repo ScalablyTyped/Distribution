@@ -15,7 +15,8 @@ object RequestInit {
     __obj.asInstanceOf[RequestInit]
   }
   
-  extension [Self <: RequestInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestInit] (val x: Self) extends AnyVal {
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

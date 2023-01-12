@@ -34,7 +34,8 @@ object mimeMod {
       __obj.asInstanceOf[Charsets_]
     }
     
-    extension [Self <: Charsets_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Charsets_] (val x: Self) extends AnyVal {
       
       inline def setLookup(value: String => String): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
     }

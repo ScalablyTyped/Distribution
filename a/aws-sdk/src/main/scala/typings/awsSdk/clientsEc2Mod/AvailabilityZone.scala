@@ -68,7 +68,8 @@ object AvailabilityZone {
     __obj.asInstanceOf[AvailabilityZone]
   }
   
-  extension [Self <: AvailabilityZone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvailabilityZone] (val x: Self) extends AnyVal {
     
     inline def setGroupName(value: String): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     

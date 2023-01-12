@@ -52,7 +52,8 @@ object distComponentsFileIconFileIconMod {
       __obj.asInstanceOf[FileIconProps]
     }
     
-    extension [Self <: FileIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileIconProps] (val x: Self) extends AnyVal {
       
       inline def setBig(value: Boolean): Self = StObject.set(x, "big", value.asInstanceOf[js.Any])
       

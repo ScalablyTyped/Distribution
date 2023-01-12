@@ -53,7 +53,8 @@ object IPicker {
     __obj.asInstanceOf[IPicker]
   }
   
-  extension [Self <: IPicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPicker] (val x: Self) extends AnyVal {
     
     inline def setAlignPicker(value: () => Unit): Self = StObject.set(x, "alignPicker", js.Any.fromFunction0(value))
     

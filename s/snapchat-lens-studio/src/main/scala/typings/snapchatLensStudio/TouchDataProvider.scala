@@ -41,7 +41,8 @@ object TouchDataProvider {
     __obj.asInstanceOf[TouchDataProvider]
   }
   
-  extension [Self <: TouchDataProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchDataProvider] (val x: Self) extends AnyVal {
     
     inline def setComposeTouchBlockingExceptionMask(value: (Double, TouchTypeException) => Double): Self = StObject.set(x, "composeTouchBlockingExceptionMask", js.Any.fromFunction2(value))
     

@@ -738,7 +738,8 @@ object distSocketMod {
       __obj.asInstanceOf[Handshake]
     }
     
-    extension [Self <: Handshake](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Handshake] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -781,7 +782,8 @@ object distSocketMod {
       __obj.asInstanceOf[SocketReservedEventsMap]
     }
     
-    extension [Self <: SocketReservedEventsMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketReservedEventsMap] (val x: Self) extends AnyVal {
       
       inline def setDisconnect(value: DisconnectReason => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction1(value))
       

@@ -22,7 +22,8 @@ object AnalysisUniqueTokenFilter {
     __obj.asInstanceOf[AnalysisUniqueTokenFilter]
   }
   
-  extension [Self <: AnalysisUniqueTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisUniqueTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setOnly_on_same_position(value: Boolean): Self = StObject.set(x, "only_on_same_position", value.asInstanceOf[js.Any])
     

@@ -221,7 +221,8 @@ object libTracesOhclMod {
       __obj.asInstanceOf[OhclData]
     }
     
-    extension [Self <: OhclData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OhclData] (val x: Self) extends AnyVal {
       
       inline def setClose(value: js.Array[Double]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object DataDriver {
   @js.native
   val ^ : DataDriver = js.native
   
-  extension [Self <: DataDriver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataDriver] (val x: Self) extends AnyVal {
     
     inline def setCsv(value: obj): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
     

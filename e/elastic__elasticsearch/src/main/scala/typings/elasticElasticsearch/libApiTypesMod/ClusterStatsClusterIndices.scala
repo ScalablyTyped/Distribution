@@ -46,7 +46,8 @@ object ClusterStatsClusterIndices {
     __obj.asInstanceOf[ClusterStatsClusterIndices]
   }
   
-  extension [Self <: ClusterStatsClusterIndices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatsClusterIndices] (val x: Self) extends AnyVal {
     
     inline def setAnalysis(value: ClusterStatsCharFilterTypes): Self = StObject.set(x, "analysis", value.asInstanceOf[js.Any])
     

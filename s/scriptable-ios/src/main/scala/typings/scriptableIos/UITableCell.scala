@@ -111,7 +111,8 @@ object UITableCell {
     __obj.asInstanceOf[UITableCell]
   }
   
-  extension [Self <: UITableCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UITableCell] (val x: Self) extends AnyVal {
     
     inline def setCenterAligned(value: () => Unit): Self = StObject.set(x, "centerAligned", js.Any.fromFunction0(value))
     

@@ -176,7 +176,8 @@ object RequiredGossipOptions {
     __obj.asInstanceOf[RequiredGossipOptions]
   }
   
-  extension [Self <: RequiredGossipOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredGossipOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowPublishToZeroPeers(value: Boolean): Self = StObject.set(x, "allowPublishToZeroPeers", value.asInstanceOf[js.Any])
     

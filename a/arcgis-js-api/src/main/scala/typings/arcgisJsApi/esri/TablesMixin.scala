@@ -27,7 +27,8 @@ object TablesMixin {
     __obj.asInstanceOf[TablesMixin]
   }
   
-  extension [Self <: TablesMixin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TablesMixin] (val x: Self) extends AnyVal {
     
     inline def setFindTableById(value: String => Layer): Self = StObject.set(x, "findTableById", js.Any.fromFunction1(value))
     

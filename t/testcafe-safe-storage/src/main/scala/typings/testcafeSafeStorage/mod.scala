@@ -88,7 +88,8 @@ object mod {
       __obj.asInstanceOf[TryLoadOptions[T]]
     }
     
-    extension [Self <: TryLoadOptions[?], T](x: Self & TryLoadOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TryLoadOptions[?], T] (val x: Self & TryLoadOptions[T]) extends AnyVal {
       
       inline def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       

@@ -42,7 +42,8 @@ object esPanelsDecadePanelDecadeBodyMod {
       __obj.asInstanceOf[YearBodyProps[DateType]]
     }
     
-    extension [Self <: YearBodyProps[?], DateType](x: Self & YearBodyProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YearBodyProps[?], DateType] (val x: Self & YearBodyProps[DateType]) extends AnyVal {
       
       inline def setDisabledDate(value: /* date */ DateType => Boolean): Self = StObject.set(x, "disabledDate", js.Any.fromFunction1(value))
       

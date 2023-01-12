@@ -30,7 +30,8 @@ object RStudioServerProDomainSettings {
     __obj.asInstanceOf[RStudioServerProDomainSettings]
   }
   
-  extension [Self <: RStudioServerProDomainSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RStudioServerProDomainSettings] (val x: Self) extends AnyVal {
     
     inline def setDefaultResourceSpec(value: ResourceSpec): Self = StObject.set(x, "DefaultResourceSpec", value.asInstanceOf[js.Any])
     

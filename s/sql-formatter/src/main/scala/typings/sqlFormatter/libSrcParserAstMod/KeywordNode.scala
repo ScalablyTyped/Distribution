@@ -27,7 +27,8 @@ object KeywordNode {
     __obj.asInstanceOf[KeywordNode]
   }
   
-  extension [Self <: KeywordNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeywordNode] (val x: Self) extends AnyVal {
     
     inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     

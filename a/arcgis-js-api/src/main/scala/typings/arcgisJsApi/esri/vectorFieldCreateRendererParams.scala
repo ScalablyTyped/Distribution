@@ -73,7 +73,8 @@ object vectorFieldCreateRendererParams {
     __obj.asInstanceOf[vectorFieldCreateRendererParams]
   }
   
-  extension [Self <: vectorFieldCreateRendererParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: vectorFieldCreateRendererParams] (val x: Self) extends AnyVal {
     
     inline def setFlowRepresentation(value: `flow-from` | `flow-to`): Self = StObject.set(x, "flowRepresentation", value.asInstanceOf[js.Any])
     

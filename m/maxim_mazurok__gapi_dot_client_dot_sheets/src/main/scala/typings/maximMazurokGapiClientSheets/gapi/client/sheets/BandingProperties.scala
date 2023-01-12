@@ -51,7 +51,8 @@ object BandingProperties {
     __obj.asInstanceOf[BandingProperties]
   }
   
-  extension [Self <: BandingProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BandingProperties] (val x: Self) extends AnyVal {
     
     inline def setFirstBandColor(value: Color): Self = StObject.set(x, "firstBandColor", value.asInstanceOf[js.Any])
     

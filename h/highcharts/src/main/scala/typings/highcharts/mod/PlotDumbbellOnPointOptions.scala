@@ -35,7 +35,8 @@ object PlotDumbbellOnPointOptions {
     __obj.asInstanceOf[PlotDumbbellOnPointOptions]
   }
   
-  extension [Self <: PlotDumbbellOnPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotDumbbellOnPointOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectorOptions(value: PlotDumbbellOnPointConnectorOptions | SVGAttributes): Self = StObject.set(x, "connectorOptions", value.asInstanceOf[js.Any])
     

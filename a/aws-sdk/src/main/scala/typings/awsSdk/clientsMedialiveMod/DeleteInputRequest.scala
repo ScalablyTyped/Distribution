@@ -18,7 +18,8 @@ object DeleteInputRequest {
     __obj.asInstanceOf[DeleteInputRequest]
   }
   
-  extension [Self <: DeleteInputRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteInputRequest] (val x: Self) extends AnyVal {
     
     inline def setInputId(value: string): Self = StObject.set(x, "InputId", value.asInstanceOf[js.Any])
   }

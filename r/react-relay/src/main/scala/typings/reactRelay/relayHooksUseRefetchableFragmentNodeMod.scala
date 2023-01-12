@@ -61,7 +61,8 @@ object relayHooksUseRefetchableFragmentNodeMod {
       __obj.asInstanceOf[DebugIDandTypename]
     }
     
-    extension [Self <: DebugIDandTypename](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebugIDandTypename] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object relayHooksUseRefetchableFragmentNodeMod {
       __obj.asInstanceOf[InternalOptions]
     }
     
-    extension [Self <: InternalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalOptions] (val x: Self) extends AnyVal {
       
       inline def set__environment(value: Environment): Self = StObject.set(x, "__environment", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object relayHooksUseRefetchableFragmentNodeMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFetchPolicy(value: FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
       
@@ -164,7 +167,8 @@ object relayHooksUseRefetchableFragmentNodeMod {
       __obj.asInstanceOf[RefetchState]
     }
     
-    extension [Self <: RefetchState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefetchState] (val x: Self) extends AnyVal {
       
       inline def setFetchPolicy(value: FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
       
@@ -223,7 +227,8 @@ object relayHooksUseRefetchableFragmentNodeMod {
       __obj.asInstanceOf[ReturnTypeNode[TQuery, TKey, TOptions]]
     }
     
-    extension [Self <: ReturnTypeNode[?, ?, ?], TQuery /* <: OperationType */, TKey /* <: KeyType[Any] | Null */, TOptions](x: Self & (ReturnTypeNode[TQuery, TKey, TOptions])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReturnTypeNode[?, ?, ?], TQuery /* <: OperationType */, TKey /* <: KeyType[Any] | Null */, TOptions] (val x: Self & (ReturnTypeNode[TQuery, TKey, TOptions])) extends AnyVal {
       
       inline def setDisableStoreUpdates(value: () => Unit): Self = StObject.set(x, "disableStoreUpdates", js.Any.fromFunction0(value))
       

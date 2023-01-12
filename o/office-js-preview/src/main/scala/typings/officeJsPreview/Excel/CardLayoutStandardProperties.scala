@@ -51,7 +51,8 @@ object CardLayoutStandardProperties {
     __obj.asInstanceOf[CardLayoutStandardProperties]
   }
   
-  extension [Self <: CardLayoutStandardProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardLayoutStandardProperties] (val x: Self) extends AnyVal {
     
     inline def setMainImage(value: CardLayoutPropertyReference): Self = StObject.set(x, "mainImage", value.asInstanceOf[js.Any])
     

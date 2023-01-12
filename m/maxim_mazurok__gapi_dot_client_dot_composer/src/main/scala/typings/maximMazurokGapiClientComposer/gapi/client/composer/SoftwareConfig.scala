@@ -65,7 +65,8 @@ object SoftwareConfig {
     __obj.asInstanceOf[SoftwareConfig]
   }
   
-  extension [Self <: SoftwareConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoftwareConfig] (val x: Self) extends AnyVal {
     
     inline def setAirflowConfigOverrides(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

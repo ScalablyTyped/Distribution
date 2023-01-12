@@ -67,7 +67,8 @@ object mod {
       __obj.asInstanceOf[DataCountParams]
     }
     
-    extension [Self <: DataCountParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataCountParams] (val x: Self) extends AnyVal {
       
       inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     }
@@ -92,7 +93,8 @@ object mod {
       __obj.asInstanceOf[DataDecrementParams]
     }
     
-    extension [Self <: DataDecrementParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataDecrementParams] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object mod {
       __obj.asInstanceOf[DataDecrementResult]
     }
     
-    extension [Self <: DataDecrementResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataDecrementResult] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -144,7 +147,8 @@ object mod {
       __obj.asInstanceOf[DataDestroySingleParams]
     }
     
-    extension [Self <: DataDestroySingleParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataDestroySingleParams] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -172,7 +176,8 @@ object mod {
       __obj.asInstanceOf[DataGetEntireTableParams]
     }
     
-    extension [Self <: DataGetEntireTableParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataGetEntireTableParams] (val x: Self) extends AnyVal {
       
       inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
@@ -259,7 +264,8 @@ object mod {
       __obj.asInstanceOf[DataGetSingleParams]
     }
     
-    extension [Self <: DataGetSingleParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataGetSingleParams] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -295,7 +301,8 @@ object mod {
       __obj.asInstanceOf[DataIncrementParams]
     }
     
-    extension [Self <: DataIncrementParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataIncrementParams] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -320,7 +327,8 @@ object mod {
       __obj.asInstanceOf[DataIncrementResult]
     }
     
-    extension [Self <: DataIncrementResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataIncrementResult] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -341,7 +349,8 @@ object mod {
       __obj.asInstanceOf[DataPageParams]
     }
     
-    extension [Self <: DataPageParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataPageParams] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -418,7 +427,8 @@ object mod {
       __obj.asInstanceOf[DataSetSingleParams]
     }
     
-    extension [Self <: DataSetSingleParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSetSingleParams] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -451,7 +461,8 @@ object mod {
       __obj.asInstanceOf[DataSetSingleResult]
     }
     
-    extension [Self <: DataSetSingleResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSetSingleResult] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

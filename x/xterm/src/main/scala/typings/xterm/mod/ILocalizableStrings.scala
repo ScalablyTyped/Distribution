@@ -24,7 +24,8 @@ object ILocalizableStrings {
     __obj.asInstanceOf[ILocalizableStrings]
   }
   
-  extension [Self <: ILocalizableStrings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILocalizableStrings] (val x: Self) extends AnyVal {
     
     inline def setPromptLabel(value: String): Self = StObject.set(x, "promptLabel", value.asInstanceOf[js.Any])
     

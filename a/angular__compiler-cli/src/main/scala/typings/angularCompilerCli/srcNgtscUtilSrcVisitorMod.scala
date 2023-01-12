@@ -61,7 +61,8 @@ object srcNgtscUtilSrcVisitorMod {
       __obj.asInstanceOf[VisitListEntryResult[B, T]]
     }
     
-    extension [Self <: VisitListEntryResult[?, ?], B /* <: Node */, T /* <: B */](x: Self & (VisitListEntryResult[B, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisitListEntryResult[?, ?], B /* <: Node */, T /* <: B */] (val x: Self & (VisitListEntryResult[B, T])) extends AnyVal {
       
       inline def setAfter(value: js.Array[B]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       

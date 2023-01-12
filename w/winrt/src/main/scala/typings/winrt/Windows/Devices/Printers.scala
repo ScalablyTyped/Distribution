@@ -19,7 +19,8 @@ object Printers {
         __obj.asInstanceOf[IPrintExtensionContextStatic]
       }
       
-      extension [Self <: IPrintExtensionContextStatic](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IPrintExtensionContextStatic] (val x: Self) extends AnyVal {
         
         inline def setFromDeviceId(value: String => Any): Self = StObject.set(x, "fromDeviceId", js.Any.fromFunction1(value))
       }
@@ -38,7 +39,8 @@ object Printers {
         __obj.asInstanceOf[IPrintNotificationEventDetails]
       }
       
-      extension [Self <: IPrintNotificationEventDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IPrintNotificationEventDetails] (val x: Self) extends AnyVal {
         
         inline def setEventData(value: String): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
         
@@ -59,7 +61,8 @@ object Printers {
         __obj.asInstanceOf[IPrintTaskConfiguration]
       }
       
-      extension [Self <: IPrintTaskConfiguration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IPrintTaskConfiguration] (val x: Self) extends AnyVal {
         
         inline def setOnsaverequested(value: Any): Self = StObject.set(x, "onsaverequested", value.asInstanceOf[js.Any])
         
@@ -89,7 +92,8 @@ object Printers {
         __obj.asInstanceOf[IPrintTaskConfigurationSaveRequest]
       }
       
-      extension [Self <: IPrintTaskConfigurationSaveRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IPrintTaskConfigurationSaveRequest] (val x: Self) extends AnyVal {
         
         inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
         
@@ -112,7 +116,8 @@ object Printers {
         __obj.asInstanceOf[IPrintTaskConfigurationSaveRequestedDeferral]
       }
       
-      extension [Self <: IPrintTaskConfigurationSaveRequestedDeferral](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IPrintTaskConfigurationSaveRequestedDeferral] (val x: Self) extends AnyVal {
         
         inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       }
@@ -129,7 +134,8 @@ object Printers {
         __obj.asInstanceOf[IPrintTaskConfigurationSaveRequestedEventArgs]
       }
       
-      extension [Self <: IPrintTaskConfigurationSaveRequestedEventArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IPrintTaskConfigurationSaveRequestedEventArgs] (val x: Self) extends AnyVal {
         
         inline def setRequest(value: PrintTaskConfigurationSaveRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       }

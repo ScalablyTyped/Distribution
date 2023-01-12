@@ -61,7 +61,8 @@ object Options {
     __obj.asInstanceOf[Options]
   }
   
-  extension [Self <: Options](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     inline def setHttpAuthScheme(value: String): Self = StObject.set(x, "httpAuthScheme", value.asInstanceOf[js.Any])
     

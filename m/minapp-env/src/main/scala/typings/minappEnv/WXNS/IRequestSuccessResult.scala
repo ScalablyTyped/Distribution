@@ -20,7 +20,8 @@ object IRequestSuccessResult {
     __obj.asInstanceOf[IRequestSuccessResult]
   }
   
-  extension [Self <: IRequestSuccessResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRequestSuccessResult] (val x: Self) extends AnyVal {
     
     inline def setData(value: AnyObject | String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

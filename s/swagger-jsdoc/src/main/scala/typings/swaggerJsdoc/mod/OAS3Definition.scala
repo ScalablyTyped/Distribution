@@ -35,7 +35,8 @@ object OAS3Definition {
     __obj.asInstanceOf[OAS3Definition]
   }
   
-  extension [Self <: OAS3Definition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAS3Definition] (val x: Self) extends AnyVal {
     
     inline def setComponents(value: Components): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     

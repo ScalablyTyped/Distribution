@@ -24,7 +24,8 @@ object FooterSectionProps {
     __obj.asInstanceOf[FooterSectionProps]
   }
   
-  extension [Self <: FooterSectionProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FooterSectionProps] (val x: Self) extends AnyVal {
     
     inline def setLogo(value: ReactNode): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     

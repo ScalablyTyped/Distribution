@@ -63,7 +63,8 @@ object DeleteDBClusterEndpointOutput {
     __obj.asInstanceOf[DeleteDBClusterEndpointOutput]
   }
   
-  extension [Self <: DeleteDBClusterEndpointOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDBClusterEndpointOutput] (val x: Self) extends AnyVal {
     
     inline def setCustomEndpointType(value: String): Self = StObject.set(x, "CustomEndpointType", value.asInstanceOf[js.Any])
     

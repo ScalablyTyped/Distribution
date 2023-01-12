@@ -15,7 +15,8 @@ object AccelerometerGeneralOption {
     __obj.asInstanceOf[AccelerometerGeneralOption]
   }
   
-  extension [Self <: AccelerometerGeneralOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccelerometerGeneralOption] (val x: Self) extends AnyVal {
     
     inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     

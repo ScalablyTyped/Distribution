@@ -31,7 +31,8 @@ object IFolderListingUIState {
     __obj.asInstanceOf[IFolderListingUIState]
   }
   
-  extension [Self <: IFolderListingUIState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFolderListingUIState] (val x: Self) extends AnyVal {
     
     inline def setColumnSortings(value: IFolderListingColumnSortings): Self = StObject.set(x, "ColumnSortings", value.asInstanceOf[js.Any])
     

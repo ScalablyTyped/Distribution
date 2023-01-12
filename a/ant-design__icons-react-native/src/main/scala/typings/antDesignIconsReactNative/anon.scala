@@ -778,7 +778,8 @@ object anon {
       __obj.asInstanceOf[Accountbook]
     }
     
-    extension [Self <: Accountbook](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accountbook] (val x: Self) extends AnyVal {
       
       inline def `setAccount-book`(value: Double): Self = StObject.set(x, "account-book", value.asInstanceOf[js.Any])
       
@@ -2444,7 +2445,8 @@ object anon {
       __obj.asInstanceOf[Aim]
     }
     
-    extension [Self <: Aim](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Aim] (val x: Self) extends AnyVal {
       
       inline def `setAccount-book`(value: Double): Self = StObject.set(x, "account-book", value.asInstanceOf[js.Any])
       

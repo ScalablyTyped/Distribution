@@ -24,7 +24,8 @@ object ElementStackItem {
     __obj.asInstanceOf[ElementStackItem]
   }
   
-  extension [Self <: ElementStackItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementStackItem] (val x: Self) extends AnyVal {
     
     inline def setElementName(value: String): Self = StObject.set(x, "elementName", value.asInstanceOf[js.Any])
     

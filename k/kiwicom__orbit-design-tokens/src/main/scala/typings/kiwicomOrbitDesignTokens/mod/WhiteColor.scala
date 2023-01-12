@@ -19,7 +19,8 @@ object WhiteColor {
     __obj.asInstanceOf[WhiteColor]
   }
   
-  extension [Self <: WhiteColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WhiteColor] (val x: Self) extends AnyVal {
     
     inline def setNormal(value: String): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     

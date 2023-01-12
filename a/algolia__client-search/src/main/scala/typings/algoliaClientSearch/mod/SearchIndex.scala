@@ -29,7 +29,8 @@ object SearchIndex {
     __obj.asInstanceOf[SearchIndex]
   }
   
-  extension [Self <: SearchIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchIndex] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

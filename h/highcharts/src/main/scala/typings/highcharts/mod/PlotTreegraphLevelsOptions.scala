@@ -73,7 +73,8 @@ object PlotTreegraphLevelsOptions {
     __obj.asInstanceOf[PlotTreegraphLevelsOptions]
   }
   
-  extension [Self <: PlotTreegraphLevelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTreegraphLevelsOptions] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: ColorString): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

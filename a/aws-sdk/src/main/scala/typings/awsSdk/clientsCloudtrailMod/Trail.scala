@@ -93,7 +93,8 @@ object Trail {
     __obj.asInstanceOf[Trail]
   }
   
-  extension [Self <: Trail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Trail] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchLogsLogGroupArn(value: String): Self = StObject.set(x, "CloudWatchLogsLogGroupArn", value.asInstanceOf[js.Any])
     

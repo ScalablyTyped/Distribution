@@ -19,7 +19,8 @@ object ListDynamicSlotIterator {
     __obj.asInstanceOf[ListDynamicSlotIterator]
   }
   
-  extension [Self <: ListDynamicSlotIterator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDynamicSlotIterator] (val x: Self) extends AnyVal {
     
     inline def setReturns(value: DynamicSlotNode): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
   }

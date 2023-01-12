@@ -18,7 +18,8 @@ object UserSignaturesInformation {
     __obj.asInstanceOf[UserSignaturesInformation]
   }
   
-  extension [Self <: UserSignaturesInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserSignaturesInformation] (val x: Self) extends AnyVal {
     
     inline def setUserSignatures(value: js.Array[UserSignature]): Self = StObject.set(x, "userSignatures", value.asInstanceOf[js.Any])
     

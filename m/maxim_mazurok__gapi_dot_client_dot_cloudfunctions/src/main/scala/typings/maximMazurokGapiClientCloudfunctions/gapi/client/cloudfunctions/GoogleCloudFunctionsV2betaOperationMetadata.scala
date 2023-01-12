@@ -45,7 +45,8 @@ object GoogleCloudFunctionsV2betaOperationMetadata {
     __obj.asInstanceOf[GoogleCloudFunctionsV2betaOperationMetadata]
   }
   
-  extension [Self <: GoogleCloudFunctionsV2betaOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudFunctionsV2betaOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     

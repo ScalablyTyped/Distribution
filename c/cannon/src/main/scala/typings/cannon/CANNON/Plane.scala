@@ -36,7 +36,8 @@ object Plane {
     __obj.asInstanceOf[Plane]
   }
   
-  extension [Self <: Plane](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Plane] (val x: Self) extends AnyVal {
     
     inline def setCalculateWorldAABB(value: (Vec3, Quaternion, Double, Double) => Unit): Self = StObject.set(x, "calculateWorldAABB", js.Any.fromFunction4(value))
     

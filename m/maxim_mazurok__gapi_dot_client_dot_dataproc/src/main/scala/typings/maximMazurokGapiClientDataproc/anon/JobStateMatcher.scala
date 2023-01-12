@@ -72,7 +72,8 @@ object JobStateMatcher {
     __obj.asInstanceOf[JobStateMatcher]
   }
   
-  extension [Self <: JobStateMatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobStateMatcher] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

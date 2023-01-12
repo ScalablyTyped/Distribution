@@ -19,7 +19,8 @@ object ItemBulmaComponent {
     __obj.asInstanceOf[ItemBulmaComponent]
   }
   
-  extension [Self <: ItemBulmaComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemBulmaComponent] (val x: Self) extends AnyVal {
     
     inline def setItem(value: /* props */ js.Object & (ElementProps[js.Object, div]) => ReactElement): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }

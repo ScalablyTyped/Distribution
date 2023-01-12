@@ -64,7 +64,8 @@ object GraphicProperties {
     __obj.asInstanceOf[GraphicProperties]
   }
   
-  extension [Self <: GraphicProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphicProperties] (val x: Self) extends AnyVal {
     
     inline def setAggregateGeometries(value: Any): Self = StObject.set(x, "aggregateGeometries", value.asInstanceOf[js.Any])
     

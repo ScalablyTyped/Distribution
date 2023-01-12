@@ -152,7 +152,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AosOptions]
     }
     
-    extension [Self <: AosOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AosOptions] (val x: Self) extends AnyVal {
       
       inline def setAnchorPlacement(value: anchorPlacementOptions): Self = StObject.set(x, "anchorPlacement", value.asInstanceOf[js.Any])
       

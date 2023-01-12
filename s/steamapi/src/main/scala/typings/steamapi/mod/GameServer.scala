@@ -47,7 +47,8 @@ object GameServer {
     __obj.asInstanceOf[GameServer]
   }
   
-  extension [Self <: GameServer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GameServer] (val x: Self) extends AnyVal {
     
     inline def setActor(value: String): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

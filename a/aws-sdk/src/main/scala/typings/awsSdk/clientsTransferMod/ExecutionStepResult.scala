@@ -28,7 +28,8 @@ object ExecutionStepResult {
     __obj.asInstanceOf[ExecutionStepResult]
   }
   
-  extension [Self <: ExecutionStepResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionStepResult] (val x: Self) extends AnyVal {
     
     inline def setError(value: ExecutionError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     

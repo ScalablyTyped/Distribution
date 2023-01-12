@@ -50,7 +50,8 @@ object DocumentReferenceContext {
     __obj.asInstanceOf[DocumentReferenceContext]
   }
   
-  extension [Self <: DocumentReferenceContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentReferenceContext] (val x: Self) extends AnyVal {
     
     inline def setEncounter(value: Reference): Self = StObject.set(x, "encounter", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object IVaultsOnServer {
     __obj.asInstanceOf[IVaultsOnServer]
   }
   
-  extension [Self <: IVaultsOnServer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultsOnServer] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

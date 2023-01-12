@@ -28,7 +28,8 @@ object ListRulesOutput {
     __obj.asInstanceOf[ListRulesOutput]
   }
   
-  extension [Self <: ListRulesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRulesOutput] (val x: Self) extends AnyVal {
     
     inline def setResourceType(value: stringMax64): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     

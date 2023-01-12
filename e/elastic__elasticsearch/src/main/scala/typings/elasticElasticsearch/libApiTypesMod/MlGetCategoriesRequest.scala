@@ -27,7 +27,8 @@ object MlGetCategoriesRequest {
     __obj.asInstanceOf[MlGetCategoriesRequest]
   }
   
-  extension [Self <: MlGetCategoriesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlGetCategoriesRequest] (val x: Self) extends AnyVal {
     
     inline def setCategory_id(value: CategoryId): Self = StObject.set(x, "category_id", value.asInstanceOf[js.Any])
     

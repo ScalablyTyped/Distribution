@@ -21,7 +21,8 @@ object ListBoxReorderEvent {
     __obj.asInstanceOf[ListBoxReorderEvent]
   }
   
-  extension [Self <: ListBoxReorderEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBoxReorderEvent] (val x: Self) extends AnyVal {
     
     inline def setDataItems(value: Any): Self = StObject.set(x, "dataItems", value.asInstanceOf[js.Any])
     

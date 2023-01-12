@@ -22,7 +22,8 @@ object IQConfig {
     __obj.asInstanceOf[IQConfig]
   }
   
-  extension [Self <: IQConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IQConfig] (val x: Self) extends AnyVal {
     
     inline def setQFeatures(value: QIsDesktop): Self = StObject.set(x, "qFeatures", value.asInstanceOf[js.Any])
     

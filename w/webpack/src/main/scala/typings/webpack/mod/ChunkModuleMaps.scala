@@ -18,7 +18,8 @@ object ChunkModuleMaps {
     __obj.asInstanceOf[ChunkModuleMaps]
   }
   
-  extension [Self <: ChunkModuleMaps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChunkModuleMaps] (val x: Self) extends AnyVal {
     
     inline def setHash(value: Record[String | Double, String]): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

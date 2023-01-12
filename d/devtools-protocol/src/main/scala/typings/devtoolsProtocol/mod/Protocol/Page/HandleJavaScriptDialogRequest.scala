@@ -24,7 +24,8 @@ object HandleJavaScriptDialogRequest {
     __obj.asInstanceOf[HandleJavaScriptDialogRequest]
   }
   
-  extension [Self <: HandleJavaScriptDialogRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandleJavaScriptDialogRequest] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: Boolean): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object Timetrack {
     __obj.asInstanceOf[Timetrack]
   }
   
-  extension [Self <: Timetrack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Timetrack] (val x: Self) extends AnyVal {
     
     inline def setTimetrack(value: Double): Self = StObject.set(x, "timetrack", value.asInstanceOf[js.Any])
   }

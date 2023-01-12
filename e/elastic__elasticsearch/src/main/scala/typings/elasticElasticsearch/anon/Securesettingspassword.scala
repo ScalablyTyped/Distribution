@@ -15,7 +15,8 @@ object Securesettingspassword {
     __obj.asInstanceOf[Securesettingspassword]
   }
   
-  extension [Self <: Securesettingspassword](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Securesettingspassword] (val x: Self) extends AnyVal {
     
     inline def setSecure_settings_password(value: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Password): Self = StObject.set(x, "secure_settings_password", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetGroupVersionRequest {
     __obj.asInstanceOf[GetGroupVersionRequest]
   }
   
-  extension [Self <: GetGroupVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGroupVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     

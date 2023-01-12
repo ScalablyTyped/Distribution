@@ -86,7 +86,8 @@ object buildPluginsIconsWithAndroidIconsMod {
       __obj.asInstanceOf[dpiMap]
     }
     
-    extension [Self <: dpiMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: dpiMap] (val x: Self) extends AnyVal {
       
       inline def setHdpi(value: FolderName): Self = StObject.set(x, "hdpi", value.asInstanceOf[js.Any])
       

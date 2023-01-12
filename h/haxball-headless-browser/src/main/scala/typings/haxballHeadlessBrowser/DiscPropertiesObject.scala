@@ -53,7 +53,8 @@ object DiscPropertiesObject {
     __obj.asInstanceOf[DiscPropertiesObject]
   }
   
-  extension [Self <: DiscPropertiesObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiscPropertiesObject] (val x: Self) extends AnyVal {
     
     inline def setBCoeff(value: Double): Self = StObject.set(x, "bCoeff", value.asInstanceOf[js.Any])
     

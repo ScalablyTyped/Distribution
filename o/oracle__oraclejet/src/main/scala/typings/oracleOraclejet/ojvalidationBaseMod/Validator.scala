@@ -17,7 +17,8 @@ object Validator {
     __obj.asInstanceOf[Validator[V]]
   }
   
-  extension [Self <: Validator[?], V](x: Self & Validator[V]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Validator[?], V] (val x: Self & Validator[V]) extends AnyVal {
     
     inline def setGetHint(value: () => String | Null): Self = StObject.set(x, "getHint", js.Any.fromFunction0(value))
     

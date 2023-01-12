@@ -123,7 +123,8 @@ object RecommendationsOptionsObject {
     __obj.asInstanceOf[RecommendationsOptionsObject]
   }
   
-  extension [Self <: RecommendationsOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendationsOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

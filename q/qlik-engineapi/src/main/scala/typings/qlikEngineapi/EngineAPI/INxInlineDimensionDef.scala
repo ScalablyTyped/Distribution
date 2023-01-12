@@ -61,7 +61,8 @@ object INxInlineDimensionDef {
     __obj.asInstanceOf[INxInlineDimensionDef]
   }
   
-  extension [Self <: INxInlineDimensionDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxInlineDimensionDef] (val x: Self) extends AnyVal {
     
     inline def setQActiveField(value: Double): Self = StObject.set(x, "qActiveField", value.asInstanceOf[js.Any])
     

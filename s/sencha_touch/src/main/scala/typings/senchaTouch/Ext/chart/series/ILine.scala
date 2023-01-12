@@ -77,7 +77,8 @@ object ILine {
     __obj.asInstanceOf[ILine]
   }
   
-  extension [Self <: ILine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILine] (val x: Self) extends AnyVal {
     
     inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

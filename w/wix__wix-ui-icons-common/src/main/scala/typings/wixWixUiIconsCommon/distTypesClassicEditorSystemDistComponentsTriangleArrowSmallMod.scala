@@ -27,7 +27,8 @@ object distTypesClassicEditorSystemDistComponentsTriangleArrowSmallMod extends S
       __obj.asInstanceOf[TriangleArrowSmallProps]
     }
     
-    extension [Self <: TriangleArrowSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TriangleArrowSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

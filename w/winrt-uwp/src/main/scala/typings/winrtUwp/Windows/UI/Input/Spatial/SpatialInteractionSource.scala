@@ -18,7 +18,8 @@ object SpatialInteractionSource {
     __obj.asInstanceOf[SpatialInteractionSource]
   }
   
-  extension [Self <: SpatialInteractionSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialInteractionSource] (val x: Self) extends AnyVal {
     
     inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

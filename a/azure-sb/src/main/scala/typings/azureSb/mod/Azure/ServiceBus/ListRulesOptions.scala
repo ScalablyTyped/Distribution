@@ -18,7 +18,8 @@ object ListRulesOptions {
     __obj.asInstanceOf[ListRulesOptions]
   }
   
-  extension [Self <: ListRulesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRulesOptions] (val x: Self) extends AnyVal {
     
     inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     

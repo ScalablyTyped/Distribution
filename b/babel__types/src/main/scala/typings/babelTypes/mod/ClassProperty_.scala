@@ -61,7 +61,8 @@ object ClassProperty_ {
     __obj.asInstanceOf[ClassProperty_]
   }
   
-  extension [Self <: ClassProperty_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassProperty_] (val x: Self) extends AnyVal {
     
     inline def setAbstract(value: Boolean): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
     

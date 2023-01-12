@@ -76,7 +76,8 @@ object PropertyPool {
     __obj.asInstanceOf[PropertyPool]
   }
   
-  extension [Self <: PropertyPool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyPool] (val x: Self) extends AnyVal {
     
     inline def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
   }

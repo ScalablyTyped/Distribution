@@ -26,7 +26,8 @@ object HtmlElmsVariant {
     __obj.asInstanceOf[HtmlElmsVariant]
   }
   
-  extension [Self <: HtmlElmsVariant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HtmlElmsVariant] (val x: Self) extends AnyVal {
     
     inline def setAllowedRoles(value: Boolean | js.Array[String]): Self = StObject.set(x, "allowedRoles", value.asInstanceOf[js.Any])
     

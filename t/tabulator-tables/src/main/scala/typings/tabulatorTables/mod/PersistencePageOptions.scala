@@ -17,7 +17,8 @@ object PersistencePageOptions {
     __obj.asInstanceOf[PersistencePageOptions]
   }
   
-  extension [Self <: PersistencePageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersistencePageOptions] (val x: Self) extends AnyVal {
     
     inline def setPage(value: Boolean): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     

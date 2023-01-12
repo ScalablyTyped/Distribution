@@ -20,7 +20,8 @@ object EmailMailboxCreateFolderResult {
     __obj.asInstanceOf[EmailMailboxCreateFolderResult]
   }
   
-  extension [Self <: EmailMailboxCreateFolderResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailMailboxCreateFolderResult] (val x: Self) extends AnyVal {
     
     inline def setFolder(value: EmailFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     

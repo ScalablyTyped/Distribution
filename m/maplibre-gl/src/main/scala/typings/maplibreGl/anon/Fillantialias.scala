@@ -43,7 +43,8 @@ object Fillantialias {
     __obj.asInstanceOf[Fillantialias]
   }
   
-  extension [Self <: Fillantialias](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fillantialias] (val x: Self) extends AnyVal {
     
     inline def `setFill-antialias`(value: PropertyValueSpecification[Boolean]): Self = StObject.set(x, "fill-antialias", value.asInstanceOf[js.Any])
     

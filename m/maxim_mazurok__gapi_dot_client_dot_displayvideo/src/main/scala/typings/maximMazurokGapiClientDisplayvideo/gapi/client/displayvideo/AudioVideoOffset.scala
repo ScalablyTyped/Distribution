@@ -19,7 +19,8 @@ object AudioVideoOffset {
     __obj.asInstanceOf[AudioVideoOffset]
   }
   
-  extension [Self <: AudioVideoOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioVideoOffset] (val x: Self) extends AnyVal {
     
     inline def setPercentage(value: String): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
     

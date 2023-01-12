@@ -40,7 +40,8 @@ object GoogleActionsOrdersV3VerticalsPurchasePurchaseError {
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchasePurchaseError]
   }
   
-  extension [Self <: GoogleActionsOrdersV3VerticalsPurchasePurchaseError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsOrdersV3VerticalsPurchasePurchaseError] (val x: Self) extends AnyVal {
     
     inline def setAvailableQuantity(value: Double): Self = StObject.set(x, "availableQuantity", value.asInstanceOf[js.Any])
     

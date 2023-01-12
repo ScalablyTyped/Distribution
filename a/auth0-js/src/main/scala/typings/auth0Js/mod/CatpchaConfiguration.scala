@@ -24,7 +24,8 @@ object CatpchaConfiguration {
     __obj.asInstanceOf[CatpchaConfiguration]
   }
   
-  extension [Self <: CatpchaConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatpchaConfiguration] (val x: Self) extends AnyVal {
     
     inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     

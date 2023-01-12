@@ -52,7 +52,8 @@ object GitItem {
     __obj.asInstanceOf[GitItem]
   }
   
-  extension [Self <: GitItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitItem] (val x: Self) extends AnyVal {
     
     inline def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     

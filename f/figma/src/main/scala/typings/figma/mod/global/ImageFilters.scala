@@ -27,7 +27,8 @@ object ImageFilters {
     __obj.asInstanceOf[ImageFilters]
   }
   
-  extension [Self <: ImageFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageFilters] (val x: Self) extends AnyVal {
     
     inline def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
     

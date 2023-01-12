@@ -21,7 +21,8 @@ object LttbDecimationOptions {
     __obj.asInstanceOf[LttbDecimationOptions]
   }
   
-  extension [Self <: LttbDecimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LttbDecimationOptions] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: lttb): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

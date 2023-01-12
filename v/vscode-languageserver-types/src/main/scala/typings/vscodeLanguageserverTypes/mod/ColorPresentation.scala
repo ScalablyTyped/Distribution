@@ -50,7 +50,8 @@ object ColorPresentation {
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.ColorPresentation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.ColorPresentation */ Boolean]
   
-  extension [Self <: ColorPresentation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorPresentation] (val x: Self) extends AnyVal {
     
     inline def setAdditionalTextEdits(value: js.Array[TextEdit]): Self = StObject.set(x, "additionalTextEdits", value.asInstanceOf[js.Any])
     

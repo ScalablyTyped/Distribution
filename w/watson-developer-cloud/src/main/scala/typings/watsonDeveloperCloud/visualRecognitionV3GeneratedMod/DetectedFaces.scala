@@ -23,7 +23,8 @@ object DetectedFaces {
     __obj.asInstanceOf[DetectedFaces]
   }
   
-  extension [Self <: DetectedFaces](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectedFaces] (val x: Self) extends AnyVal {
     
     inline def setImages(value: js.Array[ImageWithFaces]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     

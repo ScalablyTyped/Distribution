@@ -150,7 +150,8 @@ object sizeCreateAgeRendererParams {
     __obj.asInstanceOf[sizeCreateAgeRendererParams]
   }
   
-  extension [Self <: sizeCreateAgeRendererParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: sizeCreateAgeRendererParams] (val x: Self) extends AnyVal {
     
     inline def setDefaultSymbolEnabled(value: Boolean): Self = StObject.set(x, "defaultSymbolEnabled", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object ATVScreenSaverFilter {
     __obj.asInstanceOf[ATVScreenSaverFilter]
   }
   
-  extension [Self <: ATVScreenSaverFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATVScreenSaverFilter] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     

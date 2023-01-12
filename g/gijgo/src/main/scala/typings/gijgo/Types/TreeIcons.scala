@@ -18,7 +18,8 @@ object TreeIcons {
     __obj.asInstanceOf[TreeIcons]
   }
   
-  extension [Self <: TreeIcons](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeIcons] (val x: Self) extends AnyVal {
     
     inline def setCollapse(value: String): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
     

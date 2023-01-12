@@ -36,7 +36,8 @@ object BeforeTabItemTap {
     __obj.asInstanceOf[BeforeTabItemTap]
   }
   
-  extension [Self <: BeforeTabItemTap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeforeTabItemTap] (val x: Self) extends AnyVal {
     
     inline def setBeforeTabItemTap(value: () => Unit): Self = StObject.set(x, "beforeTabItemTap", js.Any.fromFunction0(value))
     

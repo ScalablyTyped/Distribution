@@ -33,7 +33,8 @@ object materialsTexturesBaseTextureDotpolynomialMod {
         __obj.asInstanceOf[BaseTexture]
       }
       
-      extension [Self <: BaseTexture](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BaseTexture] (val x: Self) extends AnyVal {
         
         inline def setForceSphericalPolynomialsRecompute(value: () => Unit): Self = StObject.set(x, "forceSphericalPolynomialsRecompute", js.Any.fromFunction0(value))
         

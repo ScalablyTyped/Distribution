@@ -15,7 +15,8 @@ object NearestCopyProps {
     __obj.asInstanceOf[NearestCopyProps]
   }
   
-  extension [Self <: NearestCopyProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NearestCopyProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

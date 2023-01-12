@@ -22,7 +22,8 @@ object InteractiveNetworkResolveNameException {
     __obj.asInstanceOf[InteractiveNetworkResolveNameException]
   }
   
-  extension [Self <: InteractiveNetworkResolveNameException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractiveNetworkResolveNameException] (val x: Self) extends AnyVal {
     
     inline def setServer(value: String): Self = StObject.set(x, "Server", value.asInstanceOf[js.Any])
   }

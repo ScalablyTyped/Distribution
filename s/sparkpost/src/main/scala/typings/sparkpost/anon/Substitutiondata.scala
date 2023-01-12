@@ -17,7 +17,8 @@ object Substitutiondata {
     __obj.asInstanceOf[Substitutiondata]
   }
   
-  extension [Self <: Substitutiondata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Substitutiondata] (val x: Self) extends AnyVal {
     
     inline def setDraft(value: Boolean): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
     

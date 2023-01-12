@@ -21,7 +21,8 @@ object Pair {
     __obj.asInstanceOf[Pair]
   }
   
-  extension [Self <: Pair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pair] (val x: Self) extends AnyVal {
     
     inline def setGap(value: Row): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     

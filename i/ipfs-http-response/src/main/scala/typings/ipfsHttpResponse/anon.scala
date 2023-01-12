@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Cid]
     }
     
-    extension [Self <: Cid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cid] (val x: Self) extends AnyVal {
       
       inline def setCid(value: Any): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     }
@@ -37,7 +38,8 @@ object anon {
       __obj.asInstanceOf[ContentType]
     }
     
-    extension [Self <: ContentType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentType] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
@@ -60,7 +62,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
@@ -79,7 +82,8 @@ object anon {
       __obj.asInstanceOf[NameAny]
     }
     
-    extension [Self <: NameAny](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameAny] (val x: Self) extends AnyVal {
       
       inline def setName(value: Any): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     }

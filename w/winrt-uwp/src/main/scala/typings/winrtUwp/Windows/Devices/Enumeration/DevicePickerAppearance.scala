@@ -44,7 +44,8 @@ object DevicePickerAppearance {
     __obj.asInstanceOf[DevicePickerAppearance]
   }
   
-  extension [Self <: DevicePickerAppearance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DevicePickerAppearance] (val x: Self) extends AnyVal {
     
     inline def setAccentColor(value: Color): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
     

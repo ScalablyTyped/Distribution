@@ -33,7 +33,8 @@ object Return {
     __obj.asInstanceOf[Return]
   }
   
-  extension [Self <: Return](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Return] (val x: Self) extends AnyVal {
     
     inline def setExpr(value: Expression): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
   }

@@ -89,7 +89,8 @@ object mod {
       __obj.asInstanceOf[PeerIdInit]
     }
     
-    extension [Self <: PeerIdInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeerIdInit] (val x: Self) extends AnyVal {
       
       inline def setMultihash(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MultihashDigest */ Any

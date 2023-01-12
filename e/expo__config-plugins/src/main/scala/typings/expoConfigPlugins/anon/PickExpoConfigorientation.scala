@@ -19,7 +19,8 @@ object PickExpoConfigorientation {
     __obj.asInstanceOf[PickExpoConfigorientation]
   }
   
-  extension [Self <: PickExpoConfigorientation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickExpoConfigorientation] (val x: Self) extends AnyVal {
     
     inline def setOrientation(value: default | portrait | landscape): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     

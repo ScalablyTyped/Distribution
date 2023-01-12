@@ -155,7 +155,8 @@ object distTypescriptPermissionsDotandroidMod {
       __obj.asInstanceOf[AndroidPermissionMap]
     }
     
-    extension [Self <: AndroidPermissionMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AndroidPermissionMap] (val x: Self) extends AnyVal {
       
       inline def setACCEPT_HANDOVER(value: androidDotpermissionDotACCEPT_HANDOVER): Self = StObject.set(x, "ACCEPT_HANDOVER", value.asInstanceOf[js.Any])
       

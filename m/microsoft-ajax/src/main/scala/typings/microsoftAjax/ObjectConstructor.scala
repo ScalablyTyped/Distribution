@@ -23,7 +23,8 @@ object ObjectConstructor {
     __obj.asInstanceOf[ObjectConstructor]
   }
   
-  extension [Self <: ObjectConstructor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectConstructor] (val x: Self) extends AnyVal {
     
     inline def setGetType(value: Any => Type): Self = StObject.set(x, "getType", js.Any.fromFunction1(value))
     

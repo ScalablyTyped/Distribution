@@ -16,7 +16,8 @@ object ProductPurchasesAcknowledgeRequest {
     __obj.asInstanceOf[ProductPurchasesAcknowledgeRequest]
   }
   
-  extension [Self <: ProductPurchasesAcknowledgeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductPurchasesAcknowledgeRequest] (val x: Self) extends AnyVal {
     
     inline def setDeveloperPayload(value: String): Self = StObject.set(x, "developerPayload", value.asInstanceOf[js.Any])
     

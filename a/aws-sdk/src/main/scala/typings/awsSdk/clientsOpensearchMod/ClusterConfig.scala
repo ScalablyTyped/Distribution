@@ -68,7 +68,8 @@ object ClusterConfig {
     __obj.asInstanceOf[ClusterConfig]
   }
   
-  extension [Self <: ClusterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterConfig] (val x: Self) extends AnyVal {
     
     inline def setColdStorageOptions(value: ColdStorageOptions): Self = StObject.set(x, "ColdStorageOptions", value.asInstanceOf[js.Any])
     

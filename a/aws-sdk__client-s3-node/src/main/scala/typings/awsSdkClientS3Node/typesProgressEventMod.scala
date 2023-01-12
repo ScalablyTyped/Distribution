@@ -22,7 +22,8 @@ object typesProgressEventMod {
       __obj.asInstanceOf[ProgressEvent]
     }
     
-    extension [Self <: ProgressEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressEvent] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: Progress): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object typesProgressEventMod {
       __obj.asInstanceOf[UnmarshalledProgressEvent]
     }
     
-    extension [Self <: UnmarshalledProgressEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledProgressEvent] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: UnmarshalledProgress): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
       

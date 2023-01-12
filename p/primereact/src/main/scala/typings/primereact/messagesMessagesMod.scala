@@ -144,7 +144,8 @@ object messagesMessagesMod {
       __obj.asInstanceOf[MessagesMessage]
     }
     
-    extension [Self <: MessagesMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessagesMessage] (val x: Self) extends AnyVal {
       
       inline def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
       
@@ -558,7 +559,8 @@ object messagesMessagesMod {
       __obj.asInstanceOf[MessagesProps]
     }
     
-    extension [Self <: MessagesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessagesProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

@@ -35,7 +35,8 @@ object ContractTermSecurityLabel {
     __obj.asInstanceOf[ContractTermSecurityLabel]
   }
   
-  extension [Self <: ContractTermSecurityLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContractTermSecurityLabel] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: js.Array[Coding]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object IPrimaryExpressionSyntax {
     __obj.asInstanceOf[IPrimaryExpressionSyntax]
   }
   
-  extension [Self <: IPrimaryExpressionSyntax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPrimaryExpressionSyntax] (val x: Self) extends AnyVal {
     
     inline def setIsPrimaryExpression(value: () => Boolean): Self = StObject.set(x, "isPrimaryExpression", js.Any.fromFunction0(value))
   }

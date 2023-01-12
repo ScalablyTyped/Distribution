@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[DeclareJestObjGetterIdentifier]
     }
     
-    extension [Self <: DeclareJestObjGetterIdentifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeclareJestObjGetterIdentifier] (val x: Self) extends AnyVal {
       
       inline def setDeclareJestObjGetterIdentifier(value: () => Identifier_): Self = StObject.set(x, "declareJestObjGetterIdentifier", js.Any.fromFunction0(value))
       

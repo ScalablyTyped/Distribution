@@ -45,7 +45,8 @@ object typesDescribeVaultOutputMod_ {
       __obj.asInstanceOf[DescribeVaultOutput]
     }
     
-    extension [Self <: DescribeVaultOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeVaultOutput] (val x: Self) extends AnyVal {
       
       inline def setCreationDate(value: String): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
       

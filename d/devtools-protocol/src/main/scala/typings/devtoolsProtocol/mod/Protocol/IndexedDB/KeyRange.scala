@@ -33,7 +33,8 @@ object KeyRange {
     __obj.asInstanceOf[KeyRange]
   }
   
-  extension [Self <: KeyRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyRange] (val x: Self) extends AnyVal {
     
     inline def setLower(value: Key): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
     

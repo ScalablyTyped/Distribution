@@ -18,7 +18,8 @@ object Partialgivennamestringsur {
     __obj.asInstanceOf[Partialgivennamestringsur]
   }
   
-  extension [Self <: Partialgivennamestringsur](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialgivennamestringsur] (val x: Self) extends AnyVal {
     
     inline def setGiven_name(value: String): Self = StObject.set(x, "given_name", value.asInstanceOf[js.Any])
     

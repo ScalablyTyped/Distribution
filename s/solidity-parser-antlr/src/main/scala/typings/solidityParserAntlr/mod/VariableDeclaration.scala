@@ -40,7 +40,8 @@ object VariableDeclaration {
     __obj.asInstanceOf[VariableDeclaration]
   }
   
-  extension [Self <: VariableDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariableDeclaration] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

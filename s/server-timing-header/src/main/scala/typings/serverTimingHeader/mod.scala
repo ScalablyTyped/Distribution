@@ -249,7 +249,8 @@ object mod {
       __obj.asInstanceOf[Metric]
     }
     
-    extension [Self <: Metric](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metric] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -286,7 +287,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setSendHeaders(value: Boolean): Self = StObject.set(x, "sendHeaders", value.asInstanceOf[js.Any])
       
@@ -308,7 +310,8 @@ object mod {
         __obj.asInstanceOf[Request]
       }
       
-      extension [Self <: Request](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
         
         inline def setServerTiming(value: ServerTiming): Self = StObject.set(x, "serverTiming", value.asInstanceOf[js.Any])
       }

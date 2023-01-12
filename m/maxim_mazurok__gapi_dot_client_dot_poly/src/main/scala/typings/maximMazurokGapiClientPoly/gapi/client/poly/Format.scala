@@ -28,7 +28,8 @@ object Format {
     __obj.asInstanceOf[Format]
   }
   
-  extension [Self <: Format](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
     
     inline def setFormatComplexity(value: FormatComplexity): Self = StObject.set(x, "formatComplexity", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object SafeBags {
     __obj.asInstanceOf[SafeBags]
   }
   
-  extension [Self <: SafeBags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SafeBags] (val x: Self) extends AnyVal {
     
     inline def setSafeBags(value: String): Self = StObject.set(x, "safeBags", value.asInstanceOf[js.Any])
     

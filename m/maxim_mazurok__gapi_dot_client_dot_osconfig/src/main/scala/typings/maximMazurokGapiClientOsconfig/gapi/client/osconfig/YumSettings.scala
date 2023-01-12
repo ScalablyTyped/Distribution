@@ -28,7 +28,8 @@ object YumSettings {
     __obj.asInstanceOf[YumSettings]
   }
   
-  extension [Self <: YumSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YumSettings] (val x: Self) extends AnyVal {
     
     inline def setExcludes(value: js.Array[String]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
     

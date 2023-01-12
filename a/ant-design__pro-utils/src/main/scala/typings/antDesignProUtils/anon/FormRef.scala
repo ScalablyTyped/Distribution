@@ -19,7 +19,8 @@ object FormRef {
     __obj.asInstanceOf[FormRef[DataType]]
   }
   
-  extension [Self <: FormRef[?], DataType](x: Self & FormRef[DataType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormRef[?], DataType] (val x: Self & FormRef[DataType]) extends AnyVal {
     
     inline def setFormRef(value: Ref[js.UndefOr[FormInstance[Any]]]): Self = StObject.set(x, "formRef", value.asInstanceOf[js.Any])
     

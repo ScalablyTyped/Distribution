@@ -45,7 +45,8 @@ object LabelTransform {
     __obj.asInstanceOf[LabelTransform]
   }
   
-  extension [Self <: LabelTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelTransform] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: js.Array[LabelAnchor] | LabelAnchor | SignalRef): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object RemoveSubTappConfig {
     __obj.asInstanceOf[RemoveSubTappConfig]
   }
   
-  extension [Self <: RemoveSubTappConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveSubTappConfig] (val x: Self) extends AnyVal {
     
     inline def setClose(value: Boolean): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object SignBlobResponse {
     __obj.asInstanceOf[SignBlobResponse]
   }
   
-  extension [Self <: SignBlobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignBlobResponse] (val x: Self) extends AnyVal {
     
     inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     

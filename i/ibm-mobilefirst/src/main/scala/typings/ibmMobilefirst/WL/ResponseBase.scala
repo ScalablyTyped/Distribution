@@ -50,7 +50,8 @@ object ResponseBase {
     __obj.asInstanceOf[ResponseBase]
   }
   
-  extension [Self <: ResponseBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseBase] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

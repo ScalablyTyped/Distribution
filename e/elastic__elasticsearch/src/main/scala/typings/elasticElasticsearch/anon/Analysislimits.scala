@@ -47,7 +47,8 @@ object Analysislimits {
     __obj.asInstanceOf[Analysislimits]
   }
   
-  extension [Self <: Analysislimits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Analysislimits] (val x: Self) extends AnyVal {
     
     inline def setAllow_lazy_open(value: Boolean): Self = StObject.set(x, "allow_lazy_open", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object IConversionOptions {
     __obj.asInstanceOf[IConversionOptions]
   }
   
-  extension [Self <: IConversionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConversionOptions] (val x: Self) extends AnyVal {
     
     inline def setArrays(value: Boolean): Self = StObject.set(x, "arrays", value.asInstanceOf[js.Any])
     

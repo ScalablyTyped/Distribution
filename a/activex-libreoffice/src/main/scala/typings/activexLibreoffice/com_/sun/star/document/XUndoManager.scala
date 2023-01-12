@@ -277,7 +277,8 @@ object XUndoManager {
     __obj.asInstanceOf[XUndoManager]
   }
   
-  extension [Self <: XUndoManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUndoManager] (val x: Self) extends AnyVal {
     
     inline def setAddUndoAction(value: XUndoAction => Unit): Self = StObject.set(x, "addUndoAction", js.Any.fromFunction1(value))
     

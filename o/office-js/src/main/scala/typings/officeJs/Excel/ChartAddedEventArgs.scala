@@ -55,7 +55,8 @@ object ChartAddedEventArgs {
     __obj.asInstanceOf[ChartAddedEventArgs]
   }
   
-  extension [Self <: ChartAddedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartAddedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setChartId(value: String): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
     

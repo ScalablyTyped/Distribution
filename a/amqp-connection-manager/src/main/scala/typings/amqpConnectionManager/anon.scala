@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[Cancel]
     }
     
-    extension [Self <: Cancel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[Connection]
     }
     
-    extension [Self <: Connection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: typings.amqplib.mod.Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object anon {
       __obj.asInstanceOf[ConnectionOptions]
     }
     
-    extension [Self <: ConnectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
       
       inline def setConnectionOptions(value: AmqpConnectionOptions): Self = StObject.set(x, "connectionOptions", value.asInstanceOf[js.Any])
       
@@ -379,7 +382,8 @@ object anon {
       __obj.asInstanceOf[ConnectionOptionsnoDelayb]
     }
     
-    extension [Self <: ConnectionOptionsnoDelayb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionOptionsnoDelayb] (val x: Self) extends AnyVal {
       
       inline def setALPNProtocols(value: (js.Array[String | js.typedarray.Uint8Array]) | js.typedarray.Uint8Array): Self = StObject.set(x, "ALPNProtocols", value.asInstanceOf[js.Any])
       
@@ -584,7 +588,8 @@ object anon {
       __obj.asInstanceOf[Err]
     }
     
-    extension [Self <: Err](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Err] (val x: Self) extends AnyVal {
       
       inline def setErr(value: js.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
@@ -605,7 +610,8 @@ object anon {
       __obj.asInstanceOf[ErrError]
     }
     
-    extension [Self <: ErrError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrError] (val x: Self) extends AnyVal {
       
       inline def setErr(value: js.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
     }
@@ -628,7 +634,8 @@ object anon {
       __obj.asInstanceOf[Mechanism]
     }
     
-    extension [Self <: Mechanism](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mechanism] (val x: Self) extends AnyVal {
       
       inline def setMechanism(value: String): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
       
@@ -651,7 +658,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -668,7 +676,8 @@ object anon {
       __obj.asInstanceOf[Reason]
     }
     
-    extension [Self <: Reason](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reason] (val x: Self) extends AnyVal {
       
       inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     }
@@ -687,7 +696,8 @@ object anon {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setMechanism(value: String): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
       
@@ -742,7 +752,8 @@ object anon {
       __obj.asInstanceOf[TcpSocketConnectOptsnoDel]
     }
     
-    extension [Self <: TcpSocketConnectOptsnoDel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TcpSocketConnectOptsnoDel] (val x: Self) extends AnyVal {
       
       inline def setClientProperties(value: Any): Self = StObject.set(x, "clientProperties", value.asInstanceOf[js.Any])
       
@@ -817,7 +828,8 @@ object anon {
       __obj.asInstanceOf[Timeout]
     }
     
-    extension [Self <: Timeout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Timeout] (val x: Self) extends AnyVal {
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

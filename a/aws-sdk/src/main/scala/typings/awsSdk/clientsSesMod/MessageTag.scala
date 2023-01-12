@@ -23,7 +23,8 @@ object MessageTag {
     __obj.asInstanceOf[MessageTag]
   }
   
-  extension [Self <: MessageTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageTag] (val x: Self) extends AnyVal {
     
     inline def setName(value: MessageTagName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

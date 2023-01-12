@@ -49,7 +49,8 @@ object libPlotsPlotAdapterMod extends Shortcut {
       __obj.asInstanceOf[IAdapterProps]
     }
     
-    extension [Self <: IAdapterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAdapterProps] (val x: Self) extends AnyVal {
       
       inline def setAdapter(value: /* IOptions */ Any => IPlotCfg): Self = StObject.set(x, "adapter", js.Any.fromFunction1(value))
       
@@ -76,7 +77,8 @@ object libPlotsPlotAdapterMod extends Shortcut {
       __obj.asInstanceOf[IPlotCfg]
     }
     
-    extension [Self <: IPlotCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPlotCfg] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: IOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

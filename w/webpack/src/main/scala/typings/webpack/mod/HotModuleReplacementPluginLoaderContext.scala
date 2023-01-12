@@ -18,7 +18,8 @@ object HotModuleReplacementPluginLoaderContext {
     __obj.asInstanceOf[HotModuleReplacementPluginLoaderContext]
   }
   
-  extension [Self <: HotModuleReplacementPluginLoaderContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HotModuleReplacementPluginLoaderContext] (val x: Self) extends AnyVal {
     
     inline def setHot(value: Boolean): Self = StObject.set(x, "hot", value.asInstanceOf[js.Any])
     

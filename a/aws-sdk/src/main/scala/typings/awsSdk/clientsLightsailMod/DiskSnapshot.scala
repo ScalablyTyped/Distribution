@@ -88,7 +88,8 @@ object DiskSnapshot {
     __obj.asInstanceOf[DiskSnapshot]
   }
   
-  extension [Self <: DiskSnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiskSnapshot] (val x: Self) extends AnyVal {
     
     inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

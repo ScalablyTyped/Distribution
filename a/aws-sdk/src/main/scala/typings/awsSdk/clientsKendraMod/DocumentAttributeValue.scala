@@ -33,7 +33,8 @@ object DocumentAttributeValue {
     __obj.asInstanceOf[DocumentAttributeValue]
   }
   
-  extension [Self <: DocumentAttributeValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentAttributeValue] (val x: Self) extends AnyVal {
     
     inline def setDateValue(value: js.Date): Self = StObject.set(x, "DateValue", value.asInstanceOf[js.Any])
     

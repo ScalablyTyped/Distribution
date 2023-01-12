@@ -30,7 +30,8 @@ object AdverseEventSuspectEntityCausality {
     __obj.asInstanceOf[AdverseEventSuspectEntityCausality]
   }
   
-  extension [Self <: AdverseEventSuspectEntityCausality](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdverseEventSuspectEntityCausality] (val x: Self) extends AnyVal {
     
     inline def setAssessmentMethod(value: CodeableConcept): Self = StObject.set(x, "assessmentMethod", value.asInstanceOf[js.Any])
     

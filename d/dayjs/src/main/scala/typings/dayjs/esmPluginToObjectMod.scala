@@ -43,7 +43,8 @@ object esmPluginToObjectMod extends Shortcut {
       __obj.asInstanceOf[DayjsObject]
     }
     
-    extension [Self <: DayjsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DayjsObject] (val x: Self) extends AnyVal {
       
       inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object esmPluginToObjectMod extends Shortcut {
         __obj.asInstanceOf[Dayjs]
       }
       
-      extension [Self <: Dayjs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Dayjs] (val x: Self) extends AnyVal {
         
         inline def setToObject(value: () => DayjsObject): Self = StObject.set(x, "toObject", js.Any.fromFunction0(value))
       }

@@ -30,7 +30,8 @@ object distCommonjsCollectionsTableTableHeaderCellMod extends Shortcut {
       __obj.asInstanceOf[StrictTableHeaderCellProps]
     }
     
-    extension [Self <: StrictTableHeaderCellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictTableHeaderCellProps] (val x: Self) extends AnyVal {
       
       inline def setSorted(value: ascending | descending): Self = StObject.set(x, "sorted", value.asInstanceOf[js.Any])
       

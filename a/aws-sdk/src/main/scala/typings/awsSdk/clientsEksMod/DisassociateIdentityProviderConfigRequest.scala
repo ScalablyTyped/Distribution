@@ -28,7 +28,8 @@ object DisassociateIdentityProviderConfigRequest {
     __obj.asInstanceOf[DisassociateIdentityProviderConfigRequest]
   }
   
-  extension [Self <: DisassociateIdentityProviderConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateIdentityProviderConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: String): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     

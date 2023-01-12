@@ -129,7 +129,8 @@ object CapabilityStatementRestResource {
     __obj.asInstanceOf[CapabilityStatementRestResource]
   }
   
-  extension [Self <: CapabilityStatementRestResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapabilityStatementRestResource] (val x: Self) extends AnyVal {
     
     inline def setConditionalCreate(value: Boolean): Self = StObject.set(x, "conditionalCreate", value.asInstanceOf[js.Any])
     

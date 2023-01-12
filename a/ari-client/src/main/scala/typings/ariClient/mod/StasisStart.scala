@@ -37,7 +37,8 @@ object StasisStart {
     __obj.asInstanceOf[StasisStart]
   }
   
-  extension [Self <: StasisStart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StasisStart] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: String | js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

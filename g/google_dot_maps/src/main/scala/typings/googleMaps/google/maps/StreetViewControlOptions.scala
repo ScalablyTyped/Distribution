@@ -26,7 +26,8 @@ object StreetViewControlOptions {
     __obj.asInstanceOf[StreetViewControlOptions]
   }
   
-  extension [Self <: StreetViewControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreetViewControlOptions] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: ControlPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

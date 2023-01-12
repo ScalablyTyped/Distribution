@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsVideoTransparentMod extends Sh
       __obj.asInstanceOf[VideoTransparentProps]
     }
     
-    extension [Self <: VideoTransparentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoTransparentProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

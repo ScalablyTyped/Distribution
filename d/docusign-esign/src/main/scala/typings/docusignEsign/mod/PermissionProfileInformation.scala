@@ -22,7 +22,8 @@ object PermissionProfileInformation {
     __obj.asInstanceOf[PermissionProfileInformation]
   }
   
-  extension [Self <: PermissionProfileInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionProfileInformation] (val x: Self) extends AnyVal {
     
     inline def setPermissionProfiles(
       value: js.Array[

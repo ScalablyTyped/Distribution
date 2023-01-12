@@ -48,7 +48,8 @@ object CreateEntityRequest {
     __obj.asInstanceOf[CreateEntityRequest]
   }
   
-  extension [Self <: CreateEntityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEntityRequest] (val x: Self) extends AnyVal {
     
     inline def setComponents(value: ComponentsMapRequest): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     

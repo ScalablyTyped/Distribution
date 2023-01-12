@@ -15,7 +15,8 @@ object RoundingMethod {
     __obj.asInstanceOf[RoundingMethod]
   }
   
-  extension [Self <: RoundingMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoundingMethod] (val x: Self) extends AnyVal {
     
     inline def setRoundingMethod(value: String): Self = StObject.set(x, "roundingMethod", value.asInstanceOf[js.Any])
     

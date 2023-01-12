@@ -16,7 +16,8 @@ object DatasvdroptargetmatrixrowString {
     __obj.asInstanceOf[DatasvdroptargetmatrixrowString]
   }
   
-  extension [Self <: DatasvdroptargetmatrixrowString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasvdroptargetmatrixrowString] (val x: Self) extends AnyVal {
     
     inline def `setData-sv-drop-target-matrix-row`(value: String): Self = StObject.set(x, "data-sv-drop-target-matrix-row", value.asInstanceOf[js.Any])
   }

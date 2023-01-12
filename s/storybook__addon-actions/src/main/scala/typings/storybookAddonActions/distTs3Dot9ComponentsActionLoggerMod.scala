@@ -34,7 +34,8 @@ object distTs3Dot9ComponentsActionLoggerMod {
       __obj.asInstanceOf[ActionLoggerProps]
     }
     
-    extension [Self <: ActionLoggerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionLoggerProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[ActionDisplay]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

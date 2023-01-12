@@ -80,7 +80,8 @@ object XSQLData {
     __obj.asInstanceOf[XSQLData]
   }
   
-  extension [Self <: XSQLData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSQLData] (val x: Self) extends AnyVal {
     
     inline def setGetSQLTypeName(value: () => String): Self = StObject.set(x, "getSQLTypeName", js.Any.fromFunction0(value))
     

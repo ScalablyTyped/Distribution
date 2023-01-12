@@ -44,7 +44,8 @@ object env {
       __obj.asInstanceOf[typings.senchaTouch.Ext.env.IBrowser]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.env.IBrowser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.env.IBrowser] (val x: Self) extends AnyVal {
       
       inline def setEngineName(value: java.lang.String): Self = StObject.set(x, "engineName", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object env {
       __obj.asInstanceOf[IOS]
     }
     
-    extension [Self <: IOS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOS] (val x: Self) extends AnyVal {
       
       inline def setIs(value: /* value */ js.UndefOr[java.lang.String] => Boolean): Self = StObject.set(x, "is", js.Any.fromFunction1(value))
       

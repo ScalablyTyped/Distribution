@@ -38,7 +38,8 @@ object ListUpdatesRequest {
     __obj.asInstanceOf[ListUpdatesRequest]
   }
   
-  extension [Self <: ListUpdatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListUpdatesRequest] (val x: Self) extends AnyVal {
     
     inline def setAddonName(value: String): Self = StObject.set(x, "addonName", value.asInstanceOf[js.Any])
     

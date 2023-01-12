@@ -23,7 +23,8 @@ object DescribeWorkspacesConnectionStatusRequest {
     __obj.asInstanceOf[DescribeWorkspacesConnectionStatusRequest]
   }
   
-  extension [Self <: DescribeWorkspacesConnectionStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeWorkspacesConnectionStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

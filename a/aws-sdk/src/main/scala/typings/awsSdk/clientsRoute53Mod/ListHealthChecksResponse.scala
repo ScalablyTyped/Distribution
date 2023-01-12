@@ -38,7 +38,8 @@ object ListHealthChecksResponse {
     __obj.asInstanceOf[ListHealthChecksResponse]
   }
   
-  extension [Self <: ListHealthChecksResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListHealthChecksResponse] (val x: Self) extends AnyVal {
     
     inline def setHealthChecks(value: HealthChecks): Self = StObject.set(x, "HealthChecks", value.asInstanceOf[js.Any])
     

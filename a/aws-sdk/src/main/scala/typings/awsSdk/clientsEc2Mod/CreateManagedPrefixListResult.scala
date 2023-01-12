@@ -18,7 +18,8 @@ object CreateManagedPrefixListResult {
     __obj.asInstanceOf[CreateManagedPrefixListResult]
   }
   
-  extension [Self <: CreateManagedPrefixListResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateManagedPrefixListResult] (val x: Self) extends AnyVal {
     
     inline def setPrefixList(value: ManagedPrefixList): Self = StObject.set(x, "PrefixList", value.asInstanceOf[js.Any])
     

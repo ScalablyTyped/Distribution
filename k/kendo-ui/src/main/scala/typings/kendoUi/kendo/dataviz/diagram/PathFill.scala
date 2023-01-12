@@ -19,7 +19,8 @@ object PathFill {
     __obj.asInstanceOf[PathFill]
   }
   
-  extension [Self <: PathFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathFill] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

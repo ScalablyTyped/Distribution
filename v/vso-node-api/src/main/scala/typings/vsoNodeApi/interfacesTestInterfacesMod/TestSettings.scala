@@ -56,7 +56,8 @@ object TestSettings {
     __obj.asInstanceOf[TestSettings]
   }
   
-  extension [Self <: TestSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestSettings] (val x: Self) extends AnyVal {
     
     inline def setAreaPath(value: String): Self = StObject.set(x, "areaPath", value.asInstanceOf[js.Any])
     

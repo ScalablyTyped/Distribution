@@ -37,7 +37,8 @@ object libCommonEncodingMod {
       __obj.asInstanceOf[ContentTypeDecoderOptions]
     }
     
-    extension [Self <: ContentTypeDecoderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentTypeDecoderOptions] (val x: Self) extends AnyVal {
       
       inline def setCharset(value: MessageBufferEncoding): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     }
@@ -56,7 +57,8 @@ object libCommonEncodingMod {
       __obj.asInstanceOf[ContentTypeEncoderOptions]
     }
     
-    extension [Self <: ContentTypeEncoderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentTypeEncoderOptions] (val x: Self) extends AnyVal {
       
       inline def setCharset(value: MessageBufferEncoding): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     }
@@ -75,7 +77,8 @@ object libCommonEncodingMod {
       __obj.asInstanceOf[FunctionContentDecoder]
     }
     
-    extension [Self <: FunctionContentDecoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionContentDecoder] (val x: Self) extends AnyVal {
       
       inline def setDecode(value: js.typedarray.Uint8Array => js.Promise[js.typedarray.Uint8Array]): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       
@@ -96,7 +99,8 @@ object libCommonEncodingMod {
       __obj.asInstanceOf[FunctionContentEncoder]
     }
     
-    extension [Self <: FunctionContentEncoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionContentEncoder] (val x: Self) extends AnyVal {
       
       inline def setEncode(value: js.typedarray.Uint8Array => js.Promise[js.typedarray.Uint8Array]): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
       
@@ -117,7 +121,8 @@ object libCommonEncodingMod {
       __obj.asInstanceOf[FunctionContentTypeDecoder]
     }
     
-    extension [Self <: FunctionContentTypeDecoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionContentTypeDecoder] (val x: Self) extends AnyVal {
       
       inline def setDecode(value: (js.typedarray.Uint8Array, ContentTypeDecoderOptions) => js.Promise[Message]): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
       
@@ -138,7 +143,8 @@ object libCommonEncodingMod {
       __obj.asInstanceOf[FunctionContentTypeEncoder]
     }
     
-    extension [Self <: FunctionContentTypeEncoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionContentTypeEncoder] (val x: Self) extends AnyVal {
       
       inline def setEncode(value: (Message, ContentTypeEncoderOptions) => js.Promise[js.typedarray.Uint8Array]): Self = StObject.set(x, "encode", js.Any.fromFunction2(value))
       
@@ -157,7 +163,8 @@ object libCommonEncodingMod {
       __obj.asInstanceOf[Named]
     }
     
-    extension [Self <: Named](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Named] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -176,7 +183,8 @@ object libCommonEncodingMod {
       __obj.asInstanceOf[StreamContentDecoder]
     }
     
-    extension [Self <: StreamContentDecoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamContentDecoder] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: () => WritableStream): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
       
@@ -197,7 +205,8 @@ object libCommonEncodingMod {
       __obj.asInstanceOf[StreamContentEncoder]
     }
     
-    extension [Self <: StreamContentEncoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamContentEncoder] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: () => WritableStream): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
       
@@ -218,7 +227,8 @@ object libCommonEncodingMod {
       __obj.asInstanceOf[StreamContentTypeDecoder]
     }
     
-    extension [Self <: StreamContentTypeDecoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamContentTypeDecoder] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: ContentTypeDecoderOptions => WritableStream): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
@@ -239,7 +249,8 @@ object libCommonEncodingMod {
       __obj.asInstanceOf[StreamContentTypeEncoder]
     }
     
-    extension [Self <: StreamContentTypeEncoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamContentTypeEncoder] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: ContentTypeEncoderOptions => WritableStream): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       

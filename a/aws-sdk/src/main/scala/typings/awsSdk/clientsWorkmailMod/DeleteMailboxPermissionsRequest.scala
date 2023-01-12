@@ -28,7 +28,8 @@ object DeleteMailboxPermissionsRequest {
     __obj.asInstanceOf[DeleteMailboxPermissionsRequest]
   }
   
-  extension [Self <: DeleteMailboxPermissionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteMailboxPermissionsRequest] (val x: Self) extends AnyVal {
     
     inline def setEntityId(value: WorkMailIdentifier): Self = StObject.set(x, "EntityId", value.asInstanceOf[js.Any])
     

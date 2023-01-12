@@ -18,7 +18,8 @@ object CanActivateChild {
     __obj.asInstanceOf[CanActivateChild]
   }
   
-  extension [Self <: CanActivateChild](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanActivateChild] (val x: Self) extends AnyVal {
     
     inline def setCanActivateChild(
       value: (ActivatedRouteSnapshot, RouterStateSnapshot) => (Observable_[Boolean | UrlTree]) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree

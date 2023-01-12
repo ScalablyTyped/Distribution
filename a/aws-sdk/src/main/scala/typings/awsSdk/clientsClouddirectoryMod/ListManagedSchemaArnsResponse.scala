@@ -23,7 +23,8 @@ object ListManagedSchemaArnsResponse {
     __obj.asInstanceOf[ListManagedSchemaArnsResponse]
   }
   
-  extension [Self <: ListManagedSchemaArnsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListManagedSchemaArnsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

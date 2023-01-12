@@ -81,7 +81,8 @@ object PlusVideoVideoPlayerEvents {
     __obj.asInstanceOf[PlusVideoVideoPlayerEvents]
   }
   
-  extension [Self <: PlusVideoVideoPlayerEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusVideoVideoPlayerEvents] (val x: Self) extends AnyVal {
     
     inline def setEnded(value: String): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
     

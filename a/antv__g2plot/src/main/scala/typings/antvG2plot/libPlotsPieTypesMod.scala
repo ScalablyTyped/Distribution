@@ -64,7 +64,8 @@ object libPlotsPieTypesMod {
       __obj.asInstanceOf[PieOptions]
     }
     
-    extension [Self <: PieOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PieOptions] (val x: Self) extends AnyVal {
       
       inline def setAngleField(value: String): Self = StObject.set(x, "angleField", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object libPlotsPieTypesMod {
       __obj.asInstanceOf[StatisticData]
     }
     
-    extension [Self <: StatisticData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatisticData] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

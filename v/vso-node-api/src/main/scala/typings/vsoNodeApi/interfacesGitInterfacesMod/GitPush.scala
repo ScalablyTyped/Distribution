@@ -32,7 +32,8 @@ object GitPush {
     __obj.asInstanceOf[GitPush]
   }
   
-  extension [Self <: GitPush](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitPush] (val x: Self) extends AnyVal {
     
     inline def setCommits(value: js.Array[GitCommitRef]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
     

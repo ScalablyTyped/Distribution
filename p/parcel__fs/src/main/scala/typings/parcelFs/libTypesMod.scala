@@ -49,7 +49,8 @@ object libTypesMod {
       __obj.asInstanceOf[Dirent]
     }
     
-    extension [Self <: Dirent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dirent] (val x: Self) extends AnyVal {
       
       inline def setIsBlockDevice(value: () => Boolean): Self = StObject.set(x, "isBlockDevice", js.Any.fromFunction0(value))
       
@@ -116,7 +117,8 @@ object libTypesMod {
       __obj.asInstanceOf[FileOptions]
     }
     
-    extension [Self <: FileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileOptions] (val x: Self) extends AnyVal {
       
       inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -299,7 +301,8 @@ object libTypesMod {
       __obj.asInstanceOf[Stats]
     }
     
-    extension [Self <: Stats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
       
       inline def setAtime(value: js.Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
       

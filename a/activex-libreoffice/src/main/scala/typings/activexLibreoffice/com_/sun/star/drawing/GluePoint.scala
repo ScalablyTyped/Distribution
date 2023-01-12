@@ -33,7 +33,8 @@ object GluePoint {
     __obj.asInstanceOf[GluePoint]
   }
   
-  extension [Self <: GluePoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GluePoint] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: Double): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     

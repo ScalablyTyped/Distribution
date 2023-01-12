@@ -45,7 +45,8 @@ object FileSaveBinaryInformation {
     __obj.asInstanceOf[FileSaveBinaryInformation]
   }
   
-  extension [Self <: FileSaveBinaryInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSaveBinaryInformation] (val x: Self) extends AnyVal {
     
     inline def setGet_checkRequiredFields(value: () => Boolean): Self = StObject.set(x, "get_checkRequiredFields", js.Any.fromFunction0(value))
     

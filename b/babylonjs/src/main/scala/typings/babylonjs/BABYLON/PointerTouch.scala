@@ -34,7 +34,8 @@ object PointerTouch {
     __obj.asInstanceOf[PointerTouch]
   }
   
-  extension [Self <: PointerTouch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerTouch] (val x: Self) extends AnyVal {
     
     inline def setPointerId(value: Double): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object CreatePublicDnsNamespaceResponse {
     __obj.asInstanceOf[CreatePublicDnsNamespaceResponse]
   }
   
-  extension [Self <: CreatePublicDnsNamespaceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePublicDnsNamespaceResponse] (val x: Self) extends AnyVal {
     
     inline def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
     

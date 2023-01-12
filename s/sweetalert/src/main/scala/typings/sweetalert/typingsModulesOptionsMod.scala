@@ -57,7 +57,8 @@ object typingsModulesOptionsMod {
       __obj.asInstanceOf[SwalOptions]
     }
     
-    extension [Self <: SwalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwalOptions] (val x: Self) extends AnyVal {
       
       inline def setButtons(value: ButtonList | (js.Array[String | Boolean])): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       

@@ -90,7 +90,8 @@ object IAttributeDefinition {
     __obj.asInstanceOf[IAttributeDefinition]
   }
   
-  extension [Self <: IAttributeDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAttributeDefinition] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: Any): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     

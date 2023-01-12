@@ -16,7 +16,8 @@ object MetricMatrix {
     __obj.asInstanceOf[MetricMatrix]
   }
   
-  extension [Self <: MetricMatrix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricMatrix] (val x: Self) extends AnyVal {
     
     inline def setRows(value: js.Array[MetricMatrixRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     

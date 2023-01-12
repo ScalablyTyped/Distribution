@@ -26,7 +26,8 @@ object SelectMultipleContextValue {
     __obj.asInstanceOf[SelectMultipleContextValue]
   }
   
-  extension [Self <: SelectMultipleContextValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectMultipleContextValue] (val x: Self) extends AnyVal {
     
     inline def setModifiers(value: SelectMultipleModifiers): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     

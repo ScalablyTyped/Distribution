@@ -21,7 +21,8 @@ object Spacing {
     __obj.asInstanceOf[Spacing]
   }
   
-  extension [Self <: Spacing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Spacing] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: left | centerX | stretchX | right): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

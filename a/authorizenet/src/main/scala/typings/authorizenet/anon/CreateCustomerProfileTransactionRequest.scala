@@ -17,7 +17,8 @@ object CreateCustomerProfileTransactionRequest {
     __obj.asInstanceOf[CreateCustomerProfileTransactionRequest]
   }
   
-  extension [Self <: CreateCustomerProfileTransactionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCustomerProfileTransactionRequest] (val x: Self) extends AnyVal {
     
     inline def setCreateCustomerProfileTransactionRequest(value: typings.authorizenet.mod.APIContracts.CreateCustomerProfileTransactionRequest): Self = StObject.set(x, "createCustomerProfileTransactionRequest", value.asInstanceOf[js.Any])
   }

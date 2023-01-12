@@ -16,7 +16,8 @@ object SlashCommand {
     __obj.asInstanceOf[SlashCommand]
   }
   
-  extension [Self <: SlashCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlashCommand] (val x: Self) extends AnyVal {
     
     inline def setCommandId(value: String): Self = StObject.set(x, "commandId", value.asInstanceOf[js.Any])
     

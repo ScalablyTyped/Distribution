@@ -19,7 +19,8 @@ object Isolines {
     __obj.asInstanceOf[Isolines]
   }
   
-  extension [Self <: Isolines](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Isolines] (val x: Self) extends AnyVal {
     
     inline def setIsolines(value: js.Array[Any]): Self = StObject.set(x, "isolines", value.asInstanceOf[js.Any])
     

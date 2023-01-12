@@ -29,7 +29,8 @@ object distIoptionsMod {
       __obj.asInstanceOf[ICustomTransformer]
     }
     
-    extension [Self <: ICustomTransformer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICustomTransformer] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: /* context */ TransformationContext => Transformer[SourceFile]): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
       
@@ -105,7 +106,8 @@ object distIoptionsMod {
       __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: IOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
       
       inline def setAbortOnError(value: Boolean): Self = StObject.set(x, "abortOnError", value.asInstanceOf[js.Any])
       

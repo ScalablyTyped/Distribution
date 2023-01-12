@@ -72,7 +72,8 @@ object ojLedGaugeSettablePropertiesLenient {
     __obj.asInstanceOf[ojLedGaugeSettablePropertiesLenient]
   }
   
-  extension [Self <: ojLedGaugeSettablePropertiesLenient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojLedGaugeSettablePropertiesLenient] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

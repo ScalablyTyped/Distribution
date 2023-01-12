@@ -23,7 +23,8 @@ object PutContainerPolicyInput {
     __obj.asInstanceOf[PutContainerPolicyInput]
   }
   
-  extension [Self <: PutContainerPolicyInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutContainerPolicyInput] (val x: Self) extends AnyVal {
     
     inline def setContainerName(value: ContainerName): Self = StObject.set(x, "ContainerName", value.asInstanceOf[js.Any])
     

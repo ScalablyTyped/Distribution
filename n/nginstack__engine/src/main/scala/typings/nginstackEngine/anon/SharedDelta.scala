@@ -15,7 +15,8 @@ object SharedDelta {
     __obj.asInstanceOf[SharedDelta]
   }
   
-  extension [Self <: SharedDelta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedDelta] (val x: Self) extends AnyVal {
     
     inline def setSharedDelta(value: Boolean): Self = StObject.set(x, "sharedDelta", value.asInstanceOf[js.Any])
   }

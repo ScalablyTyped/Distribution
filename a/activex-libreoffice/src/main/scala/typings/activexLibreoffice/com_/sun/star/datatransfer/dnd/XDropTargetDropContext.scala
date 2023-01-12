@@ -56,7 +56,8 @@ object XDropTargetDropContext {
     __obj.asInstanceOf[XDropTargetDropContext]
   }
   
-  extension [Self <: XDropTargetDropContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDropTargetDropContext] (val x: Self) extends AnyVal {
     
     inline def setAcceptDrop(value: Double => Unit): Self = StObject.set(x, "acceptDrop", js.Any.fromFunction1(value))
     

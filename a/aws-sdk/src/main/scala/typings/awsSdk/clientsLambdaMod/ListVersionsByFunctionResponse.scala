@@ -23,7 +23,8 @@ object ListVersionsByFunctionResponse {
     __obj.asInstanceOf[ListVersionsByFunctionResponse]
   }
   
-  extension [Self <: ListVersionsByFunctionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListVersionsByFunctionResponse] (val x: Self) extends AnyVal {
     
     inline def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

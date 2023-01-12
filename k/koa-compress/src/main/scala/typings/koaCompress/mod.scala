@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[CompressOptions]
     }
     
-    extension [Self <: CompressOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompressOptions] (val x: Self) extends AnyVal {
       
       inline def setBr(value: BrotliOptions | `false`): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
       

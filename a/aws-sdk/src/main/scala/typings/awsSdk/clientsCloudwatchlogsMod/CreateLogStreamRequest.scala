@@ -23,7 +23,8 @@ object CreateLogStreamRequest {
     __obj.asInstanceOf[CreateLogStreamRequest]
   }
   
-  extension [Self <: CreateLogStreamRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLogStreamRequest] (val x: Self) extends AnyVal {
     
     inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     

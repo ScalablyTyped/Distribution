@@ -19,7 +19,8 @@ object DropDownTreeCheckboxes {
     __obj.asInstanceOf[DropDownTreeCheckboxes]
   }
   
-  extension [Self <: DropDownTreeCheckboxes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropDownTreeCheckboxes] (val x: Self) extends AnyVal {
     
     inline def setCheckChildren(value: Boolean): Self = StObject.set(x, "checkChildren", value.asInstanceOf[js.Any])
     

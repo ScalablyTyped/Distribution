@@ -18,7 +18,8 @@ object GetQueryStateRequest {
     __obj.asInstanceOf[GetQueryStateRequest]
   }
   
-  extension [Self <: GetQueryStateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetQueryStateRequest] (val x: Self) extends AnyVal {
     
     inline def setQueryId(value: GetQueryStateRequestQueryIdString): Self = StObject.set(x, "QueryId", value.asInstanceOf[js.Any])
   }

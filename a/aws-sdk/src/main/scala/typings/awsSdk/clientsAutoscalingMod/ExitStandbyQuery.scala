@@ -23,7 +23,8 @@ object ExitStandbyQuery {
     __obj.asInstanceOf[ExitStandbyQuery]
   }
   
-  extension [Self <: ExitStandbyQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExitStandbyQuery] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     

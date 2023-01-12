@@ -18,7 +18,8 @@ object DisassociateDRTLogBucketRequest {
     __obj.asInstanceOf[DisassociateDRTLogBucketRequest]
   }
   
-  extension [Self <: DisassociateDRTLogBucketRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateDRTLogBucketRequest] (val x: Self) extends AnyVal {
     
     inline def setLogBucket(value: LogBucket): Self = StObject.set(x, "LogBucket", value.asInstanceOf[js.Any])
   }

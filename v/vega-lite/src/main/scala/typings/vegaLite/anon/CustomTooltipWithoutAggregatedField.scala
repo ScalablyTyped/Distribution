@@ -23,7 +23,8 @@ object CustomTooltipWithoutAggregatedField {
     __obj.asInstanceOf[CustomTooltipWithoutAggregatedField[F]]
   }
   
-  extension [Self <: CustomTooltipWithoutAggregatedField[?], F /* <: typings.vegaLite.buildSrcChanneldefMod.Field */](x: Self & CustomTooltipWithoutAggregatedField[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomTooltipWithoutAggregatedField[?], F /* <: typings.vegaLite.buildSrcChanneldefMod.Field */] (val x: Self & CustomTooltipWithoutAggregatedField[F]) extends AnyVal {
     
     inline def setCustomTooltipWithoutAggregatedField(
       value: StringFieldDefWithCondition[F] | (StringValueDefWithCondition[F, StandardType]) | js.Array[StringFieldDef[F]]

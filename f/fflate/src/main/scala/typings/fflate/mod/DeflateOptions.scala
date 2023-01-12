@@ -54,7 +54,8 @@ object DeflateOptions {
     __obj.asInstanceOf[DeflateOptions]
   }
   
-  extension [Self <: DeflateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeflateOptions] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

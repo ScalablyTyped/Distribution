@@ -19,7 +19,8 @@ object GoogleCloudDatalabelingV1beta1ListInstructionsResponse {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1ListInstructionsResponse]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1ListInstructionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ListInstructionsResponse] (val x: Self) extends AnyVal {
     
     inline def setInstructions(value: js.Array[GoogleCloudDatalabelingV1beta1Instruction]): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object RecordSourceProxy {
     __obj.asInstanceOf[RecordSourceProxy]
   }
   
-  extension [Self <: RecordSourceProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordSourceProxy] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: (DataID, String) => RecordProxy[js.Object]): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     

@@ -18,7 +18,8 @@ object SimpleBindingData {
     __obj.asInstanceOf[SimpleBindingData[Scope]]
   }
   
-  extension [Self <: SimpleBindingData[?], Scope](x: Self & SimpleBindingData[Scope]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleBindingData[?], Scope] (val x: Self & SimpleBindingData[Scope]) extends AnyVal {
     
     inline def setExpressions(value: js.Array[ExpressionData[Scope]]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     

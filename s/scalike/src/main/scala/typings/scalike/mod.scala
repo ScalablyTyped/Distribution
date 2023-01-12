@@ -87,7 +87,8 @@ object mod {
     
     inline def unit(): Future[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unit")().asInstanceOf[Future[Unit]]
     
-    extension [Self <: Future[?], A](x: Self & Future[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Future[?], A] (val x: Self & Future[A]) extends AnyVal {
       
       inline def setAndThen(value: js.Function1[/* t */ Try[A], Any] => Future[A]): Self = StObject.set(x, "andThen", js.Any.fromFunction1(value))
       
@@ -295,7 +296,8 @@ object mod {
     @js.native
     def apply[A](a: A): Optional[A] = js.native
     
-    extension [Self <: Optional[?], A](x: Self & Optional[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optional[?], A] (val x: Self & Optional[A]) extends AnyVal {
       
       inline def setApply1(value: (Optional[Any], js.Function2[/* a */ A, Any, Any]) => Optional[Any]): Self = StObject.set(x, "apply1", js.Any.fromFunction2(value))
       
@@ -504,7 +506,8 @@ object mod {
     @js.native
     def apply[A](f: js.Function0[A]): Try[A] = js.native
     
-    extension [Self <: Try[?], A](x: Self & Try[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Try[?], A] (val x: Self & Try[A]) extends AnyVal {
       
       inline def setApply1(value: (Try[Any], js.Function2[/* a */ A, Any, Any]) => Try[Any]): Self = StObject.set(x, "apply1", js.Any.fromFunction2(value))
       
@@ -663,7 +666,8 @@ object mod {
       __obj.asInstanceOf[Either[A, B]]
     }
     
-    extension [Self <: Either[?, ?], A, B](x: Self & (Either[A, B])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Either[?, ?], A, B] (val x: Self & (Either[A, B])) extends AnyVal {
       
       inline def setFold(value: (js.Function1[/* a */ A, Any], js.Function1[/* b */ B, Any]) => Any): Self = StObject.set(x, "fold", js.Any.fromFunction2(value))
       

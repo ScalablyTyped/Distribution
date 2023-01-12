@@ -52,7 +52,8 @@ object ImportKeyOptions {
     __obj.asInstanceOf[ImportKeyOptions]
   }
   
-  extension [Self <: ImportKeyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportKeyOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

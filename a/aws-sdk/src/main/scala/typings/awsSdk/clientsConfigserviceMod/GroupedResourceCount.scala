@@ -23,7 +23,8 @@ object GroupedResourceCount {
     __obj.asInstanceOf[GroupedResourceCount]
   }
   
-  extension [Self <: GroupedResourceCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupedResourceCount] (val x: Self) extends AnyVal {
     
     inline def setGroupName(value: StringWithCharLimit256): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     

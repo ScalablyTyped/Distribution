@@ -17,7 +17,8 @@ object OnLoadOptions {
     __obj.asInstanceOf[OnLoadOptions]
   }
   
-  extension [Self <: OnLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnLoadOptions] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: js.RegExp): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

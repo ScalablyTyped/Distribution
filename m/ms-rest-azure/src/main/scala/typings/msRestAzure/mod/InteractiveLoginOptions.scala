@@ -20,7 +20,8 @@ object InteractiveLoginOptions {
     __obj.asInstanceOf[InteractiveLoginOptions]
   }
   
-  extension [Self <: InteractiveLoginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractiveLoginOptions] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

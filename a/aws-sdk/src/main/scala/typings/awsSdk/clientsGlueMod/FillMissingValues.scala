@@ -33,7 +33,8 @@ object FillMissingValues {
     __obj.asInstanceOf[FillMissingValues]
   }
   
-  extension [Self <: FillMissingValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillMissingValues] (val x: Self) extends AnyVal {
     
     inline def setFilledPath(value: EnclosedInStringProperty): Self = StObject.set(x, "FilledPath", value.asInstanceOf[js.Any])
     

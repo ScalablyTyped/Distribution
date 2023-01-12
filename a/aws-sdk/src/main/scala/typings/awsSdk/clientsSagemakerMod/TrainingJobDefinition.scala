@@ -46,7 +46,8 @@ object TrainingJobDefinition {
     __obj.asInstanceOf[TrainingJobDefinition]
   }
   
-  extension [Self <: TrainingJobDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrainingJobDefinition] (val x: Self) extends AnyVal {
     
     inline def setHyperParameters(value: HyperParameters): Self = StObject.set(x, "HyperParameters", value.asInstanceOf[js.Any])
     

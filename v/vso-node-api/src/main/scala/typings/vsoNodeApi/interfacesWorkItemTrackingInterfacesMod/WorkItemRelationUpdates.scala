@@ -32,7 +32,8 @@ object WorkItemRelationUpdates {
     __obj.asInstanceOf[WorkItemRelationUpdates]
   }
   
-  extension [Self <: WorkItemRelationUpdates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemRelationUpdates] (val x: Self) extends AnyVal {
     
     inline def setAdded(value: js.Array[WorkItemRelation]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     

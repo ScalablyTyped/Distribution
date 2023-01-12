@@ -32,7 +32,8 @@ object DoneReturns {
     __obj.asInstanceOf[DoneReturns]
   }
   
-  extension [Self <: DoneReturns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoneReturns] (val x: Self) extends AnyVal {
     
     inline def setDoneReturns(value: Any): Self = StObject.set(x, "doneReturns", value.asInstanceOf[js.Any])
     

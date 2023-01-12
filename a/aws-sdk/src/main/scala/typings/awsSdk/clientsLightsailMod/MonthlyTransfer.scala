@@ -18,7 +18,8 @@ object MonthlyTransfer {
     __obj.asInstanceOf[MonthlyTransfer]
   }
   
-  extension [Self <: MonthlyTransfer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonthlyTransfer] (val x: Self) extends AnyVal {
     
     inline def setGbPerMonthAllocated(value: integer): Self = StObject.set(x, "gbPerMonthAllocated", value.asInstanceOf[js.Any])
     

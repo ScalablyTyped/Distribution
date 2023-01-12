@@ -38,7 +38,8 @@ object VmServer {
     __obj.asInstanceOf[VmServer]
   }
   
-  extension [Self <: VmServer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VmServer] (val x: Self) extends AnyVal {
     
     inline def setVmManagerName(value: VmManagerName): Self = StObject.set(x, "vmManagerName", value.asInstanceOf[js.Any])
     

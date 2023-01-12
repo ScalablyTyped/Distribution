@@ -87,7 +87,8 @@ object XInternalDataProvider {
     __obj.asInstanceOf[XInternalDataProvider]
   }
   
-  extension [Self <: XInternalDataProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInternalDataProvider] (val x: Self) extends AnyVal {
     
     inline def setAppendSequence(value: () => Unit): Self = StObject.set(x, "appendSequence", js.Any.fromFunction0(value))
     

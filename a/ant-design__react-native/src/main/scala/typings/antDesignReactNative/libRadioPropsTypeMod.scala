@@ -22,7 +22,8 @@ object libRadioPropsTypeMod {
       __obj.asInstanceOf[OnGroupChangeParams]
     }
     
-    extension [Self <: OnGroupChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnGroupChangeParams] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: ValueRadioValue): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
@@ -45,7 +46,8 @@ object libRadioPropsTypeMod {
       __obj.asInstanceOf[RadioGroupContextProps]
     }
     
-    extension [Self <: RadioGroupContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioGroupContextProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -80,7 +82,8 @@ object libRadioPropsTypeMod {
       __obj.asInstanceOf[RadioGroupPropsType]
     }
     
-    extension [Self <: RadioGroupPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioGroupPropsType] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -125,7 +128,8 @@ object libRadioPropsTypeMod {
       __obj.asInstanceOf[RadioItemPropsType]
     }
     
-    extension [Self <: RadioItemPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioItemPropsType] (val x: Self) extends AnyVal {
       
       inline def setValue(value: RadioValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -148,7 +152,8 @@ object libRadioPropsTypeMod {
       __obj.asInstanceOf[RadioOptionType]
     }
     
-    extension [Self <: RadioOptionType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioOptionType] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -177,7 +182,8 @@ object libRadioPropsTypeMod {
       __obj.asInstanceOf[RadioPropsType]
     }
     
-    extension [Self <: RadioPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioPropsType] (val x: Self) extends AnyVal {
       
       inline def setValue(value: RadioValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

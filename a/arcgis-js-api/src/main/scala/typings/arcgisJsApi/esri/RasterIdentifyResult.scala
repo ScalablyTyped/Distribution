@@ -34,7 +34,8 @@ object RasterIdentifyResult {
     __obj.asInstanceOf[RasterIdentifyResult]
   }
   
-  extension [Self <: RasterIdentifyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RasterIdentifyResult] (val x: Self) extends AnyVal {
     
     inline def setDataSeries(value: js.Array[RasterSliceValue]): Self = StObject.set(x, "dataSeries", value.asInstanceOf[js.Any])
     

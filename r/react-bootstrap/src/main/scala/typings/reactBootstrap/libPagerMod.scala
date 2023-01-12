@@ -47,7 +47,8 @@ object libPagerMod {
       __obj.asInstanceOf[PagerProps]
     }
     
-    extension [Self <: PagerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PagerProps] (val x: Self) extends AnyVal {
       
       inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       

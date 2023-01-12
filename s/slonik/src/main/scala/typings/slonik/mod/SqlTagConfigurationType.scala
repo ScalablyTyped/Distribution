@@ -15,7 +15,8 @@ object SqlTagConfigurationType {
     __obj.asInstanceOf[SqlTagConfigurationType]
   }
   
-  extension [Self <: SqlTagConfigurationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlTagConfigurationType] (val x: Self) extends AnyVal {
     
     inline def setNormalizeIdentifier(value: /* identifierName */ String => String): Self = StObject.set(x, "normalizeIdentifier", js.Any.fromFunction1(value))
     

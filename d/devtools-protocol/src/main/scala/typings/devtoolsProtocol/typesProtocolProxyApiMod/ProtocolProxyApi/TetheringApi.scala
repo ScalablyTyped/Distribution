@@ -37,7 +37,8 @@ object TetheringApi {
     __obj.asInstanceOf[TetheringApi]
   }
   
-  extension [Self <: TetheringApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TetheringApi] (val x: Self) extends AnyVal {
     
     inline def setBind(value: BindRequest => js.Promise[Unit]): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
     

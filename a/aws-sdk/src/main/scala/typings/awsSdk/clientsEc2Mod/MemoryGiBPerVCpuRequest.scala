@@ -23,7 +23,8 @@ object MemoryGiBPerVCpuRequest {
     __obj.asInstanceOf[MemoryGiBPerVCpuRequest]
   }
   
-  extension [Self <: MemoryGiBPerVCpuRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemoryGiBPerVCpuRequest] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     

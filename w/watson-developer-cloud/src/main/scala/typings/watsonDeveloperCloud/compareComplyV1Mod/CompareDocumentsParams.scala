@@ -45,7 +45,8 @@ object CompareDocumentsParams {
     __obj.asInstanceOf[CompareDocumentsParams]
   }
   
-  extension [Self <: CompareDocumentsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompareDocumentsParams] (val x: Self) extends AnyVal {
     
     inline def setFile_1(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "file_1", value.asInstanceOf[js.Any])
     

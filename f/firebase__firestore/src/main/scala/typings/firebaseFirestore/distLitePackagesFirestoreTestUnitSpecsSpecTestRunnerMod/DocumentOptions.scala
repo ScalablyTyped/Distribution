@@ -17,7 +17,8 @@ object DocumentOptions {
     __obj.asInstanceOf[DocumentOptions]
   }
   
-  extension [Self <: DocumentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentOptions] (val x: Self) extends AnyVal {
     
     inline def setHasCommittedMutations(value: Boolean): Self = StObject.set(x, "hasCommittedMutations", value.asInstanceOf[js.Any])
     

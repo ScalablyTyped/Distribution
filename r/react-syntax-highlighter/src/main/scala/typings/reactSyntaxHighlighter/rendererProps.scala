@@ -25,7 +25,8 @@ object rendererProps {
     __obj.asInstanceOf[rendererProps]
   }
   
-  extension [Self <: rendererProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: rendererProps] (val x: Self) extends AnyVal {
     
     inline def setRows(value: js.Array[rendererNode]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object IntegerRectangle2D {
     __obj.asInstanceOf[IntegerRectangle2D]
   }
   
-  extension [Self <: IntegerRectangle2D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegerRectangle2D] (val x: Self) extends AnyVal {
     
     inline def setX1(value: Double): Self = StObject.set(x, "X1", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object SimpleFormatElement {
     __obj.asInstanceOf[SimpleFormatElement[T, S]]
   }
   
-  extension [Self <: SimpleFormatElement[?, ?], T /* <: TYPE */, S /* <: Skeleton */](x: Self & (SimpleFormatElement[T, S])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleFormatElement[?, ?], T /* <: TYPE */, S /* <: Skeleton */] (val x: Self & (SimpleFormatElement[T, S])) extends AnyVal {
     
     inline def setStyle(value: String | S): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

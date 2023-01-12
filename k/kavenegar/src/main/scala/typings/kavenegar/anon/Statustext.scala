@@ -21,7 +21,8 @@ object Statustext {
     __obj.asInstanceOf[Statustext]
   }
   
-  extension [Self <: Statustext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Statustext] (val x: Self) extends AnyVal {
     
     inline def setLocalid(value: String): Self = StObject.set(x, "localid", value.asInstanceOf[js.Any])
     

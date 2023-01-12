@@ -47,7 +47,8 @@ object PanResponderStatic {
     __obj.asInstanceOf[PanResponderStatic]
   }
   
-  extension [Self <: PanResponderStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PanResponderStatic] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: PanResponderCallbacks => PanResponderInstance): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }

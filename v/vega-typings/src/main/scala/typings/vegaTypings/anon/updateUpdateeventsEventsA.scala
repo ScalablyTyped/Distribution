@@ -26,7 +26,8 @@ object updateUpdateeventsEventsA {
     __obj.asInstanceOf[updateUpdateeventsEventsA]
   }
   
-  extension [Self <: updateUpdateeventsEventsA](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: updateUpdateeventsEventsA] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: Events | js.Array[EventListener]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

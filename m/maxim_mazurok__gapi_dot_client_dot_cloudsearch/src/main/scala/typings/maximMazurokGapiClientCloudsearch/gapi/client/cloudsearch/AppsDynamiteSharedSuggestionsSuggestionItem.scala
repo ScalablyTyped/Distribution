@@ -15,7 +15,8 @@ object AppsDynamiteSharedSuggestionsSuggestionItem {
     __obj.asInstanceOf[AppsDynamiteSharedSuggestionsSuggestionItem]
   }
   
-  extension [Self <: AppsDynamiteSharedSuggestionsSuggestionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedSuggestionsSuggestionItem] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

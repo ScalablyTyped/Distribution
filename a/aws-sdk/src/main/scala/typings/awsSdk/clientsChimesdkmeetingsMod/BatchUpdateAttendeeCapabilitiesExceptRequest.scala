@@ -28,7 +28,8 @@ object BatchUpdateAttendeeCapabilitiesExceptRequest {
     __obj.asInstanceOf[BatchUpdateAttendeeCapabilitiesExceptRequest]
   }
   
-  extension [Self <: BatchUpdateAttendeeCapabilitiesExceptRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdateAttendeeCapabilitiesExceptRequest] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: AttendeeCapabilities): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     

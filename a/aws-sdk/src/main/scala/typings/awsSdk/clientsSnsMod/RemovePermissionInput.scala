@@ -23,7 +23,8 @@ object RemovePermissionInput {
     __obj.asInstanceOf[RemovePermissionInput]
   }
   
-  extension [Self <: RemovePermissionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemovePermissionInput] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: label): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     

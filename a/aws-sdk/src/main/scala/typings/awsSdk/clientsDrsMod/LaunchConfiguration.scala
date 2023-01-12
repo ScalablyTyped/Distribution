@@ -53,7 +53,8 @@ object LaunchConfiguration {
     __obj.asInstanceOf[LaunchConfiguration]
   }
   
-  extension [Self <: LaunchConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCopyPrivateIp(value: Boolean): Self = StObject.set(x, "copyPrivateIp", value.asInstanceOf[js.Any])
     

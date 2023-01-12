@@ -263,7 +263,8 @@ object IgVideoPlayer {
     __obj.asInstanceOf[IgVideoPlayer]
   }
   
-  extension [Self <: IgVideoPlayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgVideoPlayer] (val x: Self) extends AnyVal {
     
     inline def setAutohide(value: Boolean): Self = StObject.set(x, "autohide", value.asInstanceOf[js.Any])
     

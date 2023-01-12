@@ -17,7 +17,8 @@ object SparklineExportImageOptions {
     __obj.asInstanceOf[SparklineExportImageOptions]
   }
   
-  extension [Self <: SparklineExportImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparklineExportImageOptions] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

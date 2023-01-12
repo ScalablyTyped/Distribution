@@ -38,7 +38,8 @@ object View2D {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: LocationValue): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       

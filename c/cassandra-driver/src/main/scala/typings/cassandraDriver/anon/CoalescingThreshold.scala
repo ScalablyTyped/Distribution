@@ -27,7 +27,8 @@ object CoalescingThreshold {
     __obj.asInstanceOf[CoalescingThreshold]
   }
   
-  extension [Self <: CoalescingThreshold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoalescingThreshold] (val x: Self) extends AnyVal {
     
     inline def setCoalescingThreshold(value: Double): Self = StObject.set(x, "coalescingThreshold", value.asInstanceOf[js.Any])
     

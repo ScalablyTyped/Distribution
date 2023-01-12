@@ -23,7 +23,8 @@ object ImportTerminologyResponse {
     __obj.asInstanceOf[ImportTerminologyResponse]
   }
   
-  extension [Self <: ImportTerminologyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportTerminologyResponse] (val x: Self) extends AnyVal {
     
     inline def setAuxiliaryDataLocation(value: TerminologyDataLocation): Self = StObject.set(x, "AuxiliaryDataLocation", value.asInstanceOf[js.Any])
     

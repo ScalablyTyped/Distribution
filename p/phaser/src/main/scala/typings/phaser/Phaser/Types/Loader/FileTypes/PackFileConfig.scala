@@ -39,7 +39,8 @@ object PackFileConfig {
     __obj.asInstanceOf[PackFileConfig]
   }
   
-  extension [Self <: PackFileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackFileConfig] (val x: Self) extends AnyVal {
     
     inline def setDataKey(value: String): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     

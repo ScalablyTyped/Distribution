@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordFeatureFlagN]
     }
     
-    extension [Self <: PartialRecordFeatureFlagN](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordFeatureFlagN] (val x: Self) extends AnyVal {
       
       inline def `setEnable-css-custom-properties`(value: Boolean): Self = StObject.set(x, "enable-css-custom-properties", value.asInstanceOf[js.Any])
       

@@ -154,7 +154,8 @@ object mod {
       __obj.asInstanceOf[PNG]
     }
     
-    extension [Self <: PNG](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PNG] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -250,7 +251,8 @@ object mod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

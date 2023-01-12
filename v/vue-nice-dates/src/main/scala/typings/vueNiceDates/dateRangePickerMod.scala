@@ -27,7 +27,8 @@ object dateRangePickerMod {
     @js.native
     val ^ : DateRangePicker = js.native
     
-    extension [Self <: DateRangePicker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateRangePicker] (val x: Self) extends AnyVal {
       
       inline def setDate(value: () => HasTouchedEndDate): Self = StObject.set(x, "date", js.Any.fromFunction0(value))
       

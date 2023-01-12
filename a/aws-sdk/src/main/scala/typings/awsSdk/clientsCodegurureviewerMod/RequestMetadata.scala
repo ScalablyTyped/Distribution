@@ -33,7 +33,8 @@ object RequestMetadata {
     __obj.asInstanceOf[RequestMetadata]
   }
   
-  extension [Self <: RequestMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestMetadata] (val x: Self) extends AnyVal {
     
     inline def setEventInfo(value: EventInfo): Self = StObject.set(x, "EventInfo", value.asInstanceOf[js.Any])
     

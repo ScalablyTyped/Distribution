@@ -18,7 +18,8 @@ object PickDatepickergotoDate {
     __obj.asInstanceOf[PickDatepickergotoDate]
   }
   
-  extension [Self <: PickDatepickergotoDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickDatepickergotoDate] (val x: Self) extends AnyVal {
     
     inline def setGotoDate(value: /* date */ js.Date => Unit): Self = StObject.set(x, "gotoDate", js.Any.fromFunction1(value))
   }

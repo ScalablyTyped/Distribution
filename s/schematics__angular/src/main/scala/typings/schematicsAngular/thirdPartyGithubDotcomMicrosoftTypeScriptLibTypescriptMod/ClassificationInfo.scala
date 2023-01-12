@@ -17,7 +17,8 @@ object ClassificationInfo {
     __obj.asInstanceOf[ClassificationInfo]
   }
   
-  extension [Self <: ClassificationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassificationInfo] (val x: Self) extends AnyVal {
     
     inline def setClassification(value: TokenClass): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     

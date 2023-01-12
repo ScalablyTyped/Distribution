@@ -15,7 +15,8 @@ object PiiTokenOptions {
     __obj.asInstanceOf[PiiTokenOptions]
   }
   
-  extension [Self <: PiiTokenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PiiTokenOptions] (val x: Self) extends AnyVal {
     
     inline def setPersonal_id_number(value: String): Self = StObject.set(x, "personal_id_number", value.asInstanceOf[js.Any])
   }

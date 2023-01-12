@@ -21,7 +21,8 @@ object ShippingAddress {
     __obj.asInstanceOf[ShippingAddress]
   }
   
-  extension [Self <: ShippingAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShippingAddress] (val x: Self) extends AnyVal {
     
     inline def setShippingAddress(value: typings.stripeV3.stripe.paymentRequest.ShippingAddress): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
     

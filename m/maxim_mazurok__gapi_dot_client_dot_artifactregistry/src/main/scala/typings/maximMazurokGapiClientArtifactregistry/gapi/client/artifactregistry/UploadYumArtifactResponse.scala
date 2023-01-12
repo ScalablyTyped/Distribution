@@ -16,7 +16,8 @@ object UploadYumArtifactResponse {
     __obj.asInstanceOf[UploadYumArtifactResponse]
   }
   
-  extension [Self <: UploadYumArtifactResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadYumArtifactResponse] (val x: Self) extends AnyVal {
     
     inline def setYumArtifacts(value: js.Array[YumArtifact]): Self = StObject.set(x, "yumArtifacts", value.asInstanceOf[js.Any])
     

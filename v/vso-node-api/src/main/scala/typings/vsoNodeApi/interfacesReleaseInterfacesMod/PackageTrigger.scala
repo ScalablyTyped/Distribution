@@ -17,7 +17,8 @@ object PackageTrigger {
     __obj.asInstanceOf[PackageTrigger]
   }
   
-  extension [Self <: PackageTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageTrigger] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
   }

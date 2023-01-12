@@ -35,7 +35,8 @@ object PieDatasetConfig {
     __obj.asInstanceOf[PieDatasetConfig]
   }
   
-  extension [Self <: PieDatasetConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PieDatasetConfig] (val x: Self) extends AnyVal {
     
     inline def setSelectionShift(value: Double): Self = StObject.set(x, "selectionShift", value.asInstanceOf[js.Any])
     

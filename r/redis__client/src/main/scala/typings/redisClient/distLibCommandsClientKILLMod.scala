@@ -86,7 +86,8 @@ object distLibCommandsClientKILLMod {
       __obj.asInstanceOf[KillAddress]
     }
     
-    extension [Self <: KillAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KillAddress] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: /* template literal string: ${string}:${number} */ String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     }
@@ -103,7 +104,8 @@ object distLibCommandsClientKILLMod {
       __obj.asInstanceOf[KillFilter[T]]
     }
     
-    extension [Self <: KillFilter[?], T /* <: ClientKillFilters */](x: Self & KillFilter[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KillFilter[?], T /* <: ClientKillFilters */] (val x: Self & KillFilter[T]) extends AnyVal {
       
       inline def setFilter(value: T): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     }
@@ -133,7 +135,8 @@ object distLibCommandsClientKILLMod {
       __obj.asInstanceOf[KillId]
     }
     
-    extension [Self <: KillId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KillId] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double | (/* template literal string: ${number} */ String)): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -153,7 +156,8 @@ object distLibCommandsClientKILLMod {
       __obj.asInstanceOf[KillLocalAddress]
     }
     
-    extension [Self <: KillLocalAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KillLocalAddress] (val x: Self) extends AnyVal {
       
       inline def setLocalAddress(value: /* template literal string: ${string}:${number} */ String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
     }
@@ -182,7 +186,8 @@ object distLibCommandsClientKILLMod {
       __obj.asInstanceOf[KillType]
     }
     
-    extension [Self <: KillType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KillType] (val x: Self) extends AnyVal {
       
       inline def setType(value: normal | master | replica | pubsub): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -202,7 +207,8 @@ object distLibCommandsClientKILLMod {
       __obj.asInstanceOf[KillUser]
     }
     
-    extension [Self <: KillUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KillUser] (val x: Self) extends AnyVal {
       
       inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }

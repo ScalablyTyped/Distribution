@@ -29,7 +29,8 @@ object ASPxClientCustomizeMenuActionsEventArgs {
     __obj.asInstanceOf[ASPxClientCustomizeMenuActionsEventArgs]
   }
   
-  extension [Self <: ASPxClientCustomizeMenuActionsEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCustomizeMenuActionsEventArgs] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[ASPxClientMenuAction]): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object EnableWasmLoadingPlugin {
     __obj.asInstanceOf[EnableWasmLoadingPlugin]
   }
   
-  extension [Self <: EnableWasmLoadingPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableWasmLoadingPlugin] (val x: Self) extends AnyVal {
     
     inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     

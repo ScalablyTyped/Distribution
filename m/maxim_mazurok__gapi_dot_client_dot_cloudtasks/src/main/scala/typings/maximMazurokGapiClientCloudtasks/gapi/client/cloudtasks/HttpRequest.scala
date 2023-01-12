@@ -50,7 +50,8 @@ object HttpRequest {
     __obj.asInstanceOf[HttpRequest]
   }
   
-  extension [Self <: HttpRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

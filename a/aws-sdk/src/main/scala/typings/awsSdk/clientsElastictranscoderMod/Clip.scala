@@ -18,7 +18,8 @@ object Clip {
     __obj.asInstanceOf[Clip]
   }
   
-  extension [Self <: Clip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Clip] (val x: Self) extends AnyVal {
     
     inline def setTimeSpan(value: TimeSpan): Self = StObject.set(x, "TimeSpan", value.asInstanceOf[js.Any])
     

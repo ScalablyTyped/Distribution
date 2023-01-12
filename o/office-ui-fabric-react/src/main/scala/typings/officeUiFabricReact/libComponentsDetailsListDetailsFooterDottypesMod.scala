@@ -42,7 +42,8 @@ object libComponentsDetailsListDetailsFooterDottypesMod {
       __obj.asInstanceOf[IDetailsFooterProps]
     }
     
-    extension [Self <: IDetailsFooterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsFooterProps] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[IColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       

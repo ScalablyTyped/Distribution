@@ -103,7 +103,8 @@ object IgGridCellMerging {
     __obj.asInstanceOf[IgGridCellMerging]
   }
   
-  extension [Self <: IgGridCellMerging](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridCellMerging] (val x: Self) extends AnyVal {
     
     inline def setCellsMerged(value: (/* event */ Event, /* ui */ CellsMergedEventUIParam) => Unit): Self = StObject.set(x, "cellsMerged", js.Any.fromFunction2(value))
     

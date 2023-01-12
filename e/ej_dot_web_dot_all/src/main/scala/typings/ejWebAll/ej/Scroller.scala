@@ -80,7 +80,8 @@ object Scroller {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object Scroller {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -236,7 +238,8 @@ object Scroller {
       __obj.asInstanceOf[typings.ejWebAll.ej.Scroller.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Scroller.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Scroller.Model] (val x: Self) extends AnyVal {
       
       inline def setAnimationSpeed(value: Double): Self = StObject.set(x, "animationSpeed", value.asInstanceOf[js.Any])
       
@@ -357,7 +360,8 @@ object Scroller {
       __obj.asInstanceOf[ThumbEndEventArgs]
     }
     
-    extension [Self <: ThumbEndEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThumbEndEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -410,7 +414,8 @@ object Scroller {
       __obj.asInstanceOf[ThumbMoveEventArgs]
     }
     
-    extension [Self <: ThumbMoveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThumbMoveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -463,7 +468,8 @@ object Scroller {
       __obj.asInstanceOf[ThumbStartEventArgs]
     }
     
-    extension [Self <: ThumbStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThumbStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -508,7 +514,8 @@ object Scroller {
       __obj.asInstanceOf[WheelMoveEventArgs]
     }
     
-    extension [Self <: WheelMoveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WheelMoveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -553,7 +560,8 @@ object Scroller {
       __obj.asInstanceOf[WheelStartEventArgs]
     }
     
-    extension [Self <: WheelStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WheelStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -602,7 +610,8 @@ object Scroller {
       __obj.asInstanceOf[WheelStopEventArgs]
     }
     
-    extension [Self <: WheelStopEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WheelStopEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

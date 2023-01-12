@@ -23,7 +23,8 @@ object StockChartSeriesItemHighlight {
     __obj.asInstanceOf[StockChartSeriesItemHighlight]
   }
   
-  extension [Self <: StockChartSeriesItemHighlight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockChartSeriesItemHighlight] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: StockChartSeriesItemHighlightBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

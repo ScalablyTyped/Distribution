@@ -15,7 +15,8 @@ object UdpContainerSettings {
     __obj.asInstanceOf[UdpContainerSettings]
   }
   
-  extension [Self <: UdpContainerSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UdpContainerSettings] (val x: Self) extends AnyVal {
     
     inline def setM2tsSettings(value: M2tsSettings): Self = StObject.set(x, "M2tsSettings", value.asInstanceOf[js.Any])
     

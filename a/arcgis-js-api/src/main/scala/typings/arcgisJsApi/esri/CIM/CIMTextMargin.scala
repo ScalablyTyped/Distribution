@@ -36,7 +36,8 @@ object CIMTextMargin {
     __obj.asInstanceOf[CIMTextMargin]
   }
   
-  extension [Self <: CIMTextMargin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMTextMargin] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

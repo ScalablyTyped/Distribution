@@ -20,7 +20,8 @@ object TypeofTooltip {
     __obj.asInstanceOf[TypeofTooltip]
   }
   
-  extension [Self <: TypeofTooltip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTooltip] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => Tooltip): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

@@ -71,7 +71,8 @@ object esComponentsCascaderViewCascaderViewMod {
       __obj.asInstanceOf[CascaderOption]
     }
     
-    extension [Self <: CascaderOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CascaderOption] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[CascaderOption]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object esComponentsCascaderViewCascaderViewMod {
       __obj.asInstanceOf[CascaderValueExtend]
     }
     
-    extension [Self <: CascaderValueExtend](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CascaderValueExtend] (val x: Self) extends AnyVal {
       
       inline def setIsLeaf(value: Boolean): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
       
@@ -380,7 +382,8 @@ object esComponentsCascaderViewCascaderViewMod {
       __obj.asInstanceOf[CascaderViewProps]
     }
     
-    extension [Self <: CascaderViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CascaderViewProps] (val x: Self) extends AnyVal {
       
       inline def setActiveIcon(value: ReactNode): Self = StObject.set(x, "activeIcon", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object DealTermsRubiconNonGuaranteedTerms {
     __obj.asInstanceOf[DealTermsRubiconNonGuaranteedTerms]
   }
   
-  extension [Self <: DealTermsRubiconNonGuaranteedTerms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DealTermsRubiconNonGuaranteedTerms] (val x: Self) extends AnyVal {
     
     inline def setPriorityPrice(value: Price): Self = StObject.set(x, "priorityPrice", value.asInstanceOf[js.Any])
     

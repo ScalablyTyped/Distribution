@@ -22,7 +22,8 @@ object PerpageProtected {
     __obj.asInstanceOf[PerpageProtected]
   }
   
-  extension [Self <: PerpageProtected](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerpageProtected] (val x: Self) extends AnyVal {
     
     inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     

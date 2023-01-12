@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[ReaddirSync]
     }
     
-    extension [Self <: ReaddirSync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReaddirSync] (val x: Self) extends AnyVal {
       
       inline def setReaddirSync(value: String => js.Array[String]): Self = StObject.set(x, "readdirSync", js.Any.fromFunction1(value))
       

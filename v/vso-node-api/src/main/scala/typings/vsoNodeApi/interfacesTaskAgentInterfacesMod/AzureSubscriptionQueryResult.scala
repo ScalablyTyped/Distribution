@@ -17,7 +17,8 @@ object AzureSubscriptionQueryResult {
     __obj.asInstanceOf[AzureSubscriptionQueryResult]
   }
   
-  extension [Self <: AzureSubscriptionQueryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AzureSubscriptionQueryResult] (val x: Self) extends AnyVal {
     
     inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object GoogleActionsTransactionsV3CompletePurchaseValueSpec {
     __obj.asInstanceOf[GoogleActionsTransactionsV3CompletePurchaseValueSpec]
   }
   
-  extension [Self <: GoogleActionsTransactionsV3CompletePurchaseValueSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsTransactionsV3CompletePurchaseValueSpec] (val x: Self) extends AnyVal {
     
     inline def setDeveloperPayload(value: String): Self = StObject.set(x, "developerPayload", value.asInstanceOf[js.Any])
     

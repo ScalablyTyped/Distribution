@@ -30,7 +30,8 @@ object RoutingOptions {
     __obj.asInstanceOf[RoutingOptions]
   }
   
-  extension [Self <: RoutingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoutingOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowUTurns(value: Boolean): Self = StObject.set(x, "allowUTurns", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object ImageScannerResolution {
     __obj.asInstanceOf[ImageScannerResolution]
   }
   
-  extension [Self <: ImageScannerResolution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageScannerResolution] (val x: Self) extends AnyVal {
     
     inline def setDpiX(value: Double): Self = StObject.set(x, "dpiX", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DescribePlacementGroupsResult {
     __obj.asInstanceOf[DescribePlacementGroupsResult]
   }
   
-  extension [Self <: DescribePlacementGroupsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePlacementGroupsResult] (val x: Self) extends AnyVal {
     
     inline def setPlacementGroups(value: PlacementGroupList): Self = StObject.set(x, "PlacementGroups", value.asInstanceOf[js.Any])
     

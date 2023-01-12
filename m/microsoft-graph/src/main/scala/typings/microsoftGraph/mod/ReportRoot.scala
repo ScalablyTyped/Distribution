@@ -23,7 +23,8 @@ object ReportRoot {
     __obj.asInstanceOf[ReportRoot]
   }
   
-  extension [Self <: ReportRoot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportRoot] (val x: Self) extends AnyVal {
     
     inline def setDailyPrintUsageByPrinter(value: NullableOption[js.Array[PrintUsageByPrinter]]): Self = StObject.set(x, "dailyPrintUsageByPrinter", value.asInstanceOf[js.Any])
     

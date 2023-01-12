@@ -18,7 +18,8 @@ object AllowMessagesFromCommunityOptions {
     __obj.asInstanceOf[AllowMessagesFromCommunityOptions]
   }
   
-  extension [Self <: AllowMessagesFromCommunityOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowMessagesFromCommunityOptions] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: `22` | `24` | `30`): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object BatchUndeleteAlertsResponse {
     __obj.asInstanceOf[BatchUndeleteAlertsResponse]
   }
   
-  extension [Self <: BatchUndeleteAlertsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUndeleteAlertsResponse] (val x: Self) extends AnyVal {
     
     inline def setFailedAlertStatus(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.alertcenter.gapi.client.alertcenter.Status} */ js.Any

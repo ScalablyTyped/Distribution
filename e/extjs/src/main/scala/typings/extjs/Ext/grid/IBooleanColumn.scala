@@ -24,7 +24,8 @@ object IBooleanColumn {
     __obj.asInstanceOf[IBooleanColumn]
   }
   
-  extension [Self <: IBooleanColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBooleanColumn] (val x: Self) extends AnyVal {
     
     inline def setFalseText(value: String): Self = StObject.set(x, "falseText", value.asInstanceOf[js.Any])
     

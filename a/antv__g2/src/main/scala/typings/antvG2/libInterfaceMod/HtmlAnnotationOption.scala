@@ -45,7 +45,8 @@ object HtmlAnnotationOption {
     __obj.asInstanceOf[HtmlAnnotationOption]
   }
   
-  extension [Self <: HtmlAnnotationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HtmlAnnotationOption] (val x: Self) extends AnyVal {
     
     inline def setAlignX(value: left | middle | right): Self = StObject.set(x, "alignX", value.asInstanceOf[js.Any])
     

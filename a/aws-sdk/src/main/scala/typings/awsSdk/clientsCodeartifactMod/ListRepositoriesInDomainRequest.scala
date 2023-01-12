@@ -43,7 +43,8 @@ object ListRepositoriesInDomainRequest {
     __obj.asInstanceOf[ListRepositoriesInDomainRequest]
   }
   
-  extension [Self <: ListRepositoriesInDomainRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRepositoriesInDomainRequest] (val x: Self) extends AnyVal {
     
     inline def setAdministratorAccount(value: AccountId): Self = StObject.set(x, "administratorAccount", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object MoveBack {
     __obj.asInstanceOf[MoveBack]
   }
   
-  extension [Self <: MoveBack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveBack] (val x: Self) extends AnyVal {
     
     inline def setMoveBack(value: String): Self = StObject.set(x, "moveBack", value.asInstanceOf[js.Any])
     

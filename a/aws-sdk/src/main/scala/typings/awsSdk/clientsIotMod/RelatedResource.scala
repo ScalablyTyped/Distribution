@@ -28,7 +28,8 @@ object RelatedResource {
     __obj.asInstanceOf[RelatedResource]
   }
   
-  extension [Self <: RelatedResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelatedResource] (val x: Self) extends AnyVal {
     
     inline def setAdditionalInfo(value: StringMap): Self = StObject.set(x, "additionalInfo", value.asInstanceOf[js.Any])
     

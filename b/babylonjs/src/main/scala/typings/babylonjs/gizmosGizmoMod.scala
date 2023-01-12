@@ -249,7 +249,8 @@ object gizmosGizmoMod {
       __obj.asInstanceOf[GizmoAxisCache]
     }
     
-    extension [Self <: GizmoAxisCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GizmoAxisCache] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -340,7 +341,8 @@ object gizmosGizmoMod {
       __obj.asInstanceOf[IGizmo]
     }
     
-    extension [Self <: IGizmo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGizmo] (val x: Self) extends AnyVal {
       
       inline def setAttachedMesh(value: Nullable[AbstractMesh]): Self = StObject.set(x, "attachedMesh", value.asInstanceOf[js.Any])
       

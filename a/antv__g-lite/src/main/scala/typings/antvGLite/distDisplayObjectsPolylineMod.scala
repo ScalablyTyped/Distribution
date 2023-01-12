@@ -53,7 +53,8 @@ object distDisplayObjectsPolylineMod {
       __obj.asInstanceOf[ParsedPolylineStyleProps]
     }
     
-    extension [Self <: ParsedPolylineStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedPolylineStyleProps] (val x: Self) extends AnyVal {
       
       inline def setMarkerEnd(value: DisplayObject[Any, Any]): Self = StObject.set(x, "markerEnd", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object distDisplayObjectsPolylineMod {
       __obj.asInstanceOf[PolylineStyleProps]
     }
     
-    extension [Self <: PolylineStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolylineStyleProps] (val x: Self) extends AnyVal {
       
       inline def setMarkerEnd(value: DisplayObject[Any, Any]): Self = StObject.set(x, "markerEnd", value.asInstanceOf[js.Any])
       

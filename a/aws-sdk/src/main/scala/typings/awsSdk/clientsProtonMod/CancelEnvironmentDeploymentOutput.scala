@@ -18,7 +18,8 @@ object CancelEnvironmentDeploymentOutput {
     __obj.asInstanceOf[CancelEnvironmentDeploymentOutput]
   }
   
-  extension [Self <: CancelEnvironmentDeploymentOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelEnvironmentDeploymentOutput] (val x: Self) extends AnyVal {
     
     inline def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
   }

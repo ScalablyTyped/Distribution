@@ -33,7 +33,8 @@ object IEventWorkflowController {
     __obj.asInstanceOf[IEventWorkflowController]
   }
   
-  extension [Self <: IEventWorkflowController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEventWorkflowController] (val x: Self) extends AnyVal {
     
     inline def setOnAfterEventFiring(
       value: (/* events */ IEventManager[js.Object], /* type */ String, /* event */ js.UndefOr[IEvent[js.Object, js.Object]]) => Unit

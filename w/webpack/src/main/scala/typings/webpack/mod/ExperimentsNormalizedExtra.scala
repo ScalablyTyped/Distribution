@@ -32,7 +32,8 @@ object ExperimentsNormalizedExtra {
     __obj.asInstanceOf[ExperimentsNormalizedExtra]
   }
   
-  extension [Self <: ExperimentsNormalizedExtra](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExperimentsNormalizedExtra] (val x: Self) extends AnyVal {
     
     inline def setBuildHttp(value: HttpUriOptions): Self = StObject.set(x, "buildHttp", value.asInstanceOf[js.Any])
     

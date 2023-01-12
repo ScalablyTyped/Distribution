@@ -34,7 +34,8 @@ object libCheckboxCheckboxMod extends Shortcut {
       __obj.asInstanceOf[CheckboxProps]
     }
     
-    extension [Self <: CheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object libCheckboxCheckboxMod extends Shortcut {
       __obj.asInstanceOf[RefCheckboxProps]
     }
     
-    extension [Self <: RefCheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefCheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     }

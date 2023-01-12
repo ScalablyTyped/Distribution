@@ -30,7 +30,8 @@ object ZeptoStatic {
     __obj.asInstanceOf[ZeptoStatic]
   }
   
-  extension [Self <: ZeptoStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZeptoStatic] (val x: Self) extends AnyVal {
     
     inline def setPgwModal(value: PgwModalMethod): Self = StObject.set(x, "pgwModal", value.asInstanceOf[js.Any])
   }

@@ -34,7 +34,8 @@ object CreativeSize {
     __obj.asInstanceOf[CreativeSize]
   }
   
-  extension [Self <: CreativeSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreativeSize] (val x: Self) extends AnyVal {
     
     inline def setAllowedFormats(value: js.Array[String]): Self = StObject.set(x, "allowedFormats", value.asInstanceOf[js.Any])
     

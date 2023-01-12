@@ -42,7 +42,8 @@ object Point {
     __obj.asInstanceOf[Point]
   }
   
-  extension [Self <: Point](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

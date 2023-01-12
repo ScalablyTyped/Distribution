@@ -23,7 +23,8 @@ object BubbleNodeSearchProps {
     __obj.asInstanceOf[BubbleNodeSearchProps]
   }
   
-  extension [Self <: BubbleNodeSearchProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BubbleNodeSearchProps] (val x: Self) extends AnyVal {
     
     inline def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     

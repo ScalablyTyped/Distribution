@@ -47,7 +47,8 @@ object typesMenuItemLinkMod {
       __obj.asInstanceOf[MenuItemLinkProps]
     }
     
-    extension [Self <: MenuItemLinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemLinkProps] (val x: Self) extends AnyVal {
       
       inline def setLiProps(value: ReadonlyHTMLAttributesHTM): Self = StObject.set(x, "liProps", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object typesMenuItemLinkMod {
       __obj.asInstanceOf[MenuItemLinkWithComponentProps]
     }
     
-    extension [Self <: MenuItemLinkWithComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemLinkWithComponentProps] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: ElementType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     }

@@ -19,7 +19,8 @@ object SqlQuerySpec {
     __obj.asInstanceOf[SqlQuerySpec]
   }
   
-  extension [Self <: SqlQuerySpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlQuerySpec] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: js.Array[SqlParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

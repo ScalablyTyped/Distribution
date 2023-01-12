@@ -802,7 +802,8 @@ object esmNumberPickerMod {
       __obj.asInstanceOf[NumberPickerProps]
     }
     
-    extension [Self <: NumberPickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberPickerProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

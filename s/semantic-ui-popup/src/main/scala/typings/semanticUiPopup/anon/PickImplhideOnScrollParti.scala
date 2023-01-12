@@ -125,7 +125,8 @@ object PickImplhideOnScrollParti {
     __obj.asInstanceOf[PickImplhideOnScrollParti]
   }
   
-  extension [Self <: PickImplhideOnScrollParti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplhideOnScrollParti] (val x: Self) extends AnyVal {
     
     inline def setAddTouchEvents(value: Boolean): Self = StObject.set(x, "addTouchEvents", value.asInstanceOf[js.Any])
     

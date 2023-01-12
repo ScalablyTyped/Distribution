@@ -59,7 +59,8 @@ object TestEntry {
     __obj.asInstanceOf[TestEntry]
   }
   
-  extension [Self <: TestEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestEntry] (val x: Self) extends AnyVal {
     
     inline def setAsyncError(value: Exception): Self = StObject.set(x, "asyncError", value.asInstanceOf[js.Any])
     

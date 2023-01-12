@@ -22,7 +22,8 @@ object CurationImportState {
     __obj.asInstanceOf[CurationImportState]
   }
   
-  extension [Self <: CurationImportState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurationImportState] (val x: Self) extends AnyVal {
     
     inline def setContentToMove(value: js.Array[js.Array[String]]): Self = StObject.set(x, "contentToMove", value.asInstanceOf[js.Any])
     

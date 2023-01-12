@@ -23,7 +23,8 @@ object Compliance {
     __obj.asInstanceOf[Compliance]
   }
   
-  extension [Self <: Compliance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Compliance] (val x: Self) extends AnyVal {
     
     inline def setComplianceContributorCount(value: ComplianceContributorCount): Self = StObject.set(x, "ComplianceContributorCount", value.asInstanceOf[js.Any])
     

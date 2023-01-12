@@ -38,7 +38,8 @@ object XFilterGroupManager {
     __obj.asInstanceOf[XFilterGroupManager]
   }
   
-  extension [Self <: XFilterGroupManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFilterGroupManager] (val x: Self) extends AnyVal {
     
     inline def setAppendFilterGroup(value: (String, SeqEquiv[StringPair]) => Unit): Self = StObject.set(x, "appendFilterGroup", js.Any.fromFunction2(value))
   }

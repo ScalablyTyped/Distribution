@@ -32,7 +32,8 @@ object libRematchMod {
       __obj.asInstanceOf[BestMatch]
     }
     
-    extension [Self <: BestMatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BestMatch] (val x: Self) extends AnyVal {
       
       inline def setIndexA(value: Double): Self = StObject.set(x, "indexA", value.asInstanceOf[js.Any])
       

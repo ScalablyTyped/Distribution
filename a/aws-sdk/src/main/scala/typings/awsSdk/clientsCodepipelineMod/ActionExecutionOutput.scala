@@ -28,7 +28,8 @@ object ActionExecutionOutput {
     __obj.asInstanceOf[ActionExecutionOutput]
   }
   
-  extension [Self <: ActionExecutionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionExecutionOutput] (val x: Self) extends AnyVal {
     
     inline def setExecutionResult(value: ActionExecutionResult): Self = StObject.set(x, "executionResult", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object HttpOperationResponse {
     __obj.asInstanceOf[HttpOperationResponse[T]]
   }
   
-  extension [Self <: HttpOperationResponse[?], T](x: Self & HttpOperationResponse[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpOperationResponse[?], T] (val x: Self & HttpOperationResponse[T]) extends AnyVal {
     
     inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

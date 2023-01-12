@@ -21,7 +21,8 @@ object DateRangePickerInputPhrases {
     __obj.asInstanceOf[DateRangePickerInputPhrases]
   }
   
-  extension [Self <: DateRangePickerInputPhrases](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateRangePickerInputPhrases] (val x: Self) extends AnyVal {
     
     inline def setClearDates(value: String): Self = StObject.set(x, "clearDates", value.asInstanceOf[js.Any])
     

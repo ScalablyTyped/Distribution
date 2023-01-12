@@ -22,7 +22,8 @@ object GoogleAnalyticsAdminV1alphaAccessOrderBy {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaAccessOrderBy]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaAccessOrderBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAccessOrderBy] (val x: Self) extends AnyVal {
     
     inline def setDesc(value: Boolean): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     

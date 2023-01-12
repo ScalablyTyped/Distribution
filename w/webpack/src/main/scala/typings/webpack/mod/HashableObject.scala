@@ -15,7 +15,8 @@ object HashableObject {
     __obj.asInstanceOf[HashableObject]
   }
   
-  extension [Self <: HashableObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HashableObject] (val x: Self) extends AnyVal {
     
     inline def setUpdateHash(value: Hash => Unit): Self = StObject.set(x, "updateHash", js.Any.fromFunction1(value))
   }

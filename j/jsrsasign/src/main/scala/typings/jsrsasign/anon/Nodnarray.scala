@@ -17,7 +17,8 @@ object Nodnarray {
     __obj.asInstanceOf[Nodnarray]
   }
   
-  extension [Self <: Nodnarray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Nodnarray] (val x: Self) extends AnyVal {
     
     inline def setNodnarray(value: Boolean): Self = StObject.set(x, "nodnarray", value.asInstanceOf[js.Any])
     

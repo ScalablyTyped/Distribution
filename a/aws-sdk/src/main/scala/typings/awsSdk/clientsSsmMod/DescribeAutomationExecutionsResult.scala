@@ -23,7 +23,8 @@ object DescribeAutomationExecutionsResult {
     __obj.asInstanceOf[DescribeAutomationExecutionsResult]
   }
   
-  extension [Self <: DescribeAutomationExecutionsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAutomationExecutionsResult] (val x: Self) extends AnyVal {
     
     inline def setAutomationExecutionMetadataList(value: AutomationExecutionMetadataList): Self = StObject.set(x, "AutomationExecutionMetadataList", value.asInstanceOf[js.Any])
     

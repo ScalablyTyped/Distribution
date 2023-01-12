@@ -51,7 +51,8 @@ object Microsoft {
         __obj.asInstanceOf[InvokeApiOptions]
       }
       
-      extension [Self <: InvokeApiOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InvokeApiOptions] (val x: Self) extends AnyVal {
         
         inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
@@ -258,7 +259,8 @@ object Microsoft {
         __obj.asInstanceOf[User]
       }
       
-      extension [Self <: User](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
         
         inline def setAccessTokens(value: Any): Self = StObject.set(x, "accessTokens", value.asInstanceOf[js.Any])
         
@@ -283,7 +285,8 @@ object Microsoft {
         __obj.asInstanceOf[WindowsAzureStatic]
       }
       
-      extension [Self <: WindowsAzureStatic](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WindowsAzureStatic] (val x: Self) extends AnyVal {
         
         inline def setMobileServiceClient(value: MobileServiceClient): Self = StObject.set(x, "MobileServiceClient", value.asInstanceOf[js.Any])
       }

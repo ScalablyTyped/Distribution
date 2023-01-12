@@ -1336,7 +1336,8 @@ object mod {
       __obj.asInstanceOf[components]
     }
     
-    extension [Self <: components](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: components] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Xcommonmarkerversion): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -8838,7 +8839,8 @@ object mod {
       __obj.asInstanceOf[operations]
     }
     
-    extension [Self <: operations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: operations] (val x: Self) extends AnyVal {
       
       inline def `setActionsSlashadd-custom-labels-to-self-hosted-runner-for-org`(value: ParametersPathOrgStringRunneridNumberRequestBodyContentApplicationjsonLabels): Self = StObject.set(x, "actions/add-custom-labels-to-self-hosted-runner-for-org", value.asInstanceOf[js.Any])
       
@@ -12761,7 +12763,8 @@ object mod {
       __obj.asInstanceOf[paths]
     }
     
-    extension [Self <: paths](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: paths] (val x: Self) extends AnyVal {
       
       inline def setSlash(value: Get): Self = StObject.set(x, "/", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object PointerId {
     __obj.asInstanceOf[PointerId]
   }
   
-  extension [Self <: PointerId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerId] (val x: Self) extends AnyVal {
     
     inline def setDragPlanePoint(value: Vector3): Self = StObject.set(x, "dragPlanePoint", value.asInstanceOf[js.Any])
     

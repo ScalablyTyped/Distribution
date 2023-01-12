@@ -58,7 +58,8 @@ object ISpriteMapOptions {
     __obj.asInstanceOf[ISpriteMapOptions]
   }
   
-  extension [Self <: ISpriteMapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISpriteMapOptions] (val x: Self) extends AnyVal {
     
     inline def setBaseTile(value: Double): Self = StObject.set(x, "baseTile", value.asInstanceOf[js.Any])
     

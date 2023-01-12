@@ -22,7 +22,8 @@ object ConversionsBatchUpdateResponse {
     __obj.asInstanceOf[ConversionsBatchUpdateResponse]
   }
   
-  extension [Self <: ConversionsBatchUpdateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConversionsBatchUpdateResponse] (val x: Self) extends AnyVal {
     
     inline def setHasFailures(value: Boolean): Self = StObject.set(x, "hasFailures", value.asInstanceOf[js.Any])
     

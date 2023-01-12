@@ -17,7 +17,8 @@ object QueryDslRankFeatureFunctionSigmoid {
     __obj.asInstanceOf[QueryDslRankFeatureFunctionSigmoid]
   }
   
-  extension [Self <: QueryDslRankFeatureFunctionSigmoid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslRankFeatureFunctionSigmoid] (val x: Self) extends AnyVal {
     
     inline def setExponent(value: float): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
     

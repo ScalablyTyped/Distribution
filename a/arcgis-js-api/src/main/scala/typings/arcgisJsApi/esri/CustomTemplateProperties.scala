@@ -30,7 +30,8 @@ object CustomTemplateProperties {
     __obj.asInstanceOf[CustomTemplateProperties]
   }
   
-  extension [Self <: CustomTemplateProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomTemplateProperties] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: pdf | png32 | png8 | jpg | gif | eps | svg | svgz): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

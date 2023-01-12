@@ -95,7 +95,8 @@ object ProcessResponse {
     __obj.asInstanceOf[ProcessResponse]
   }
   
-  extension [Self <: ProcessResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessResponse] (val x: Self) extends AnyVal {
     
     inline def setCommunicationRequest(value: js.Array[Reference]): Self = StObject.set(x, "communicationRequest", value.asInstanceOf[js.Any])
     

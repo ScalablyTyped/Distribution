@@ -26,7 +26,8 @@ object MessageViewToolbarButtonDescriptor {
     __obj.asInstanceOf[MessageViewToolbarButtonDescriptor]
   }
   
-  extension [Self <: MessageViewToolbarButtonDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageViewToolbarButtonDescriptor] (val x: Self) extends AnyVal {
     
     inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     

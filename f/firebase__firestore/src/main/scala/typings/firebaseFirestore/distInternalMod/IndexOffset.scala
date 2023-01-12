@@ -31,7 +31,8 @@ object IndexOffset {
     __obj.asInstanceOf[IndexOffset]
   }
   
-  extension [Self <: IndexOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexOffset] (val x: Self) extends AnyVal {
     
     inline def setDocumentKey(value: DocumentKey): Self = StObject.set(x, "documentKey", value.asInstanceOf[js.Any])
     

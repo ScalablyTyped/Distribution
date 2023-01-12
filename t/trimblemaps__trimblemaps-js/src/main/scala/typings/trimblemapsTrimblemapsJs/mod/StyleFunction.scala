@@ -32,7 +32,8 @@ object StyleFunction {
     __obj.asInstanceOf[StyleFunction]
   }
   
-  extension [Self <: StyleFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleFunction] (val x: Self) extends AnyVal {
     
     inline def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object buildEs5HocMod {
       __obj.asInstanceOf[IHOCDefaultNoThemeProps]
     }
     
-    extension [Self <: IHOCDefaultNoThemeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHOCDefaultNoThemeProps] (val x: Self) extends AnyVal {
       
       inline def setT(value: IStaticFnReturn): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     }
@@ -46,7 +47,8 @@ object buildEs5HocMod {
       __obj.asInstanceOf[IHOCDefaultProps]
     }
     
-    extension [Self <: IHOCDefaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHOCDefaultProps] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
@@ -71,7 +73,8 @@ object buildEs5HocMod {
       __obj.asInstanceOf[IThemeDecoratorArgs]
     }
     
-    extension [Self <: IThemeDecoratorArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IThemeDecoratorArgs] (val x: Self) extends AnyVal {
       
       inline def setContextPath(value: String | js.Array[String]): Self = StObject.set(x, "contextPath", value.asInstanceOf[js.Any])
       

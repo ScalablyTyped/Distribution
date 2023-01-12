@@ -124,7 +124,8 @@ object BlockSupports {
     __obj.asInstanceOf[BlockSupports]
   }
   
-  extension [Self <: BlockSupports](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockSupports] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: Boolean | js.Array[BlockAlignment]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

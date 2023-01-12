@@ -53,7 +53,8 @@ object SyncDeploymentJobResponse {
     __obj.asInstanceOf[SyncDeploymentJobResponse]
   }
   
-  extension [Self <: SyncDeploymentJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncDeploymentJobResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

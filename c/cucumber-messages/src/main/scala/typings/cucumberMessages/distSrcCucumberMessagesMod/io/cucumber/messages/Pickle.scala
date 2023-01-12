@@ -414,7 +414,8 @@ object Pickle {
       __obj.asInstanceOf[IPickleStep]
     }
     
-    extension [Self <: IPickleStep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPickleStep] (val x: Self) extends AnyVal {
       
       inline def setArgument(value: IPickleStepArgument): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
       
@@ -460,7 +461,8 @@ object Pickle {
       __obj.asInstanceOf[IPickleTag]
     }
     
-    extension [Self <: IPickleTag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPickleTag] (val x: Self) extends AnyVal {
       
       inline def setAstNodeId(value: String): Self = StObject.set(x, "astNodeId", value.asInstanceOf[js.Any])
       

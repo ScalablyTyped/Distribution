@@ -67,7 +67,8 @@ object XWizardPage {
     __obj.asInstanceOf[XWizardPage]
   }
   
-  extension [Self <: XWizardPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XWizardPage] (val x: Self) extends AnyVal {
     
     inline def setActivatePage(value: () => Unit): Self = StObject.set(x, "activatePage", js.Any.fromFunction0(value))
     

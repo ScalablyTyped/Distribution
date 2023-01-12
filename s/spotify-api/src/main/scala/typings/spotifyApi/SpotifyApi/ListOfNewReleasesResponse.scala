@@ -23,7 +23,8 @@ object ListOfNewReleasesResponse {
     __obj.asInstanceOf[ListOfNewReleasesResponse]
   }
   
-  extension [Self <: ListOfNewReleasesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListOfNewReleasesResponse] (val x: Self) extends AnyVal {
     
     inline def setAlbums(value: PagingObject[AlbumObjectSimplified]): Self = StObject.set(x, "albums", value.asInstanceOf[js.Any])
     

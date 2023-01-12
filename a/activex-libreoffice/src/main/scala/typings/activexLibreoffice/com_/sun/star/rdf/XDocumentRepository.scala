@@ -113,7 +113,8 @@ object XDocumentRepository {
     __obj.asInstanceOf[XDocumentRepository]
   }
   
-  extension [Self <: XDocumentRepository](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDocumentRepository] (val x: Self) extends AnyVal {
     
     inline def setGetStatementRDFa(value: XMetadatable => Pair[SafeArray[Statement], Boolean]): Self = StObject.set(x, "getStatementRDFa", js.Any.fromFunction1(value))
     

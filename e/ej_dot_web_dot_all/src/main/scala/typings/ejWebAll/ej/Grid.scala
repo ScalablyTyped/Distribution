@@ -1372,7 +1372,8 @@ object Grid {
       __obj.asInstanceOf[ActionBeginEventArgs]
     }
     
-    extension [Self <: ActionBeginEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionBeginEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1609,7 +1610,8 @@ object Grid {
       __obj.asInstanceOf[ActionCompleteEventArgs]
     }
     
-    extension [Self <: ActionCompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionCompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1834,7 +1836,8 @@ object Grid {
       __obj.asInstanceOf[ActionFailureEventArgs]
     }
     
-    extension [Self <: ActionFailureEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionFailureEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1983,7 +1986,8 @@ object Grid {
       __obj.asInstanceOf[BatchAddEventArgs]
     }
     
-    extension [Self <: BatchAddEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchAddEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2056,7 +2060,8 @@ object Grid {
       __obj.asInstanceOf[BatchDeleteEventArgs]
     }
     
-    extension [Self <: BatchDeleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchDeleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2113,7 +2118,8 @@ object Grid {
       __obj.asInstanceOf[BeforeBatchAddEventArgs]
     }
     
-    extension [Self <: BeforeBatchAddEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeBatchAddEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2170,7 +2176,8 @@ object Grid {
       __obj.asInstanceOf[BeforeBatchDeleteEventArgs]
     }
     
-    extension [Self <: BeforeBatchDeleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeBatchDeleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -2219,7 +2226,8 @@ object Grid {
       __obj.asInstanceOf[BeforeBatchSaveEventArgs]
     }
     
-    extension [Self <: BeforeBatchSaveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeBatchSaveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setBatchChanges(value: Any): Self = StObject.set(x, "batchChanges", value.asInstanceOf[js.Any])
       
@@ -2260,7 +2268,8 @@ object Grid {
       __obj.asInstanceOf[BeforePrintEventArgs]
     }
     
-    extension [Self <: BeforePrintEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforePrintEventArgs] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -2309,7 +2318,8 @@ object Grid {
       __obj.asInstanceOf[BeforeRowDropEventArgs]
     }
     
-    extension [Self <: BeforeRowDropEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeRowDropEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2370,7 +2380,8 @@ object Grid {
       __obj.asInstanceOf[BeginEditEventArgs]
     }
     
-    extension [Self <: BeginEditEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeginEditEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2435,7 +2446,8 @@ object Grid {
       __obj.asInstanceOf[CellDeselectedEventArgs]
     }
     
-    extension [Self <: CellDeselectedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellDeselectedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCellIndex(value: Double): Self = StObject.set(x, "cellIndex", value.asInstanceOf[js.Any])
       
@@ -2504,7 +2516,8 @@ object Grid {
       __obj.asInstanceOf[CellDeselectingEventArgs]
     }
     
-    extension [Self <: CellDeselectingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellDeselectingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCellIndex(value: Double): Self = StObject.set(x, "cellIndex", value.asInstanceOf[js.Any])
       
@@ -2589,7 +2602,8 @@ object Grid {
       __obj.asInstanceOf[CellEditEventArgs]
     }
     
-    extension [Self <: CellEditEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellEditEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
@@ -2678,7 +2692,8 @@ object Grid {
       __obj.asInstanceOf[CellSaveEventArgs]
     }
     
-    extension [Self <: CellSaveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellSaveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
@@ -2767,7 +2782,8 @@ object Grid {
       __obj.asInstanceOf[CellSelectedEventArgs]
     }
     
-    extension [Self <: CellSelectedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellSelectedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2866,7 +2882,8 @@ object Grid {
       __obj.asInstanceOf[CellSelectingEventArgs]
     }
     
-    extension [Self <: CellSelectingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellSelectingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3108,7 +3125,8 @@ object Grid {
       __obj.asInstanceOf[Column]
     }
     
-    extension [Self <: Column](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
       
       inline def setAllowEditing(value: Boolean): Self = StObject.set(x, "allowEditing", value.asInstanceOf[js.Any])
       
@@ -3299,7 +3317,8 @@ object Grid {
       __obj.asInstanceOf[ColumnDeselectedEventArgs]
     }
     
-    extension [Self <: ColumnDeselectedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnDeselectedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -3360,7 +3379,8 @@ object Grid {
       __obj.asInstanceOf[ColumnDeselectingEventArgs]
     }
     
-    extension [Self <: ColumnDeselectingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnDeselectingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -3425,7 +3445,8 @@ object Grid {
       __obj.asInstanceOf[ColumnDragEventArgs]
     }
     
-    extension [Self <: ColumnDragEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnDragEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3486,7 +3507,8 @@ object Grid {
       __obj.asInstanceOf[ColumnDragStartEventArgs]
     }
     
-    extension [Self <: ColumnDragStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnDragStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3547,7 +3569,8 @@ object Grid {
       __obj.asInstanceOf[ColumnDropEventArgs]
     }
     
-    extension [Self <: ColumnDropEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnDropEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3620,7 +3643,8 @@ object Grid {
       __obj.asInstanceOf[ColumnSelectedEventArgs]
     }
     
-    extension [Self <: ColumnSelectedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnSelectedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3707,7 +3731,8 @@ object Grid {
       __obj.asInstanceOf[ColumnSelectingEventArgs]
     }
     
-    extension [Self <: ColumnSelectingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnSelectingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -3764,7 +3789,8 @@ object Grid {
       __obj.asInstanceOf[ColumnsCommand]
     }
     
-    extension [Self <: ColumnsCommand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnsCommand] (val x: Self) extends AnyVal {
       
       inline def setButtonOptions(value: Any): Self = StObject.set(x, "buttonOptions", value.asInstanceOf[js.Any])
       
@@ -3809,7 +3835,8 @@ object Grid {
       __obj.asInstanceOf[ContextClickEventArgs]
     }
     
-    extension [Self <: ContextClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3871,7 +3898,8 @@ object Grid {
       __obj.asInstanceOf[ContextMenuSettings]
     }
     
-    extension [Self <: ContextMenuSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuSettings] (val x: Self) extends AnyVal {
       
       inline def setContextMenuItems(value: js.Array[Any]): Self = StObject.set(x, "contextMenuItems", value.asInstanceOf[js.Any])
       
@@ -3925,7 +3953,8 @@ object Grid {
       __obj.asInstanceOf[ContextMenuSettingsSubContextMenu]
     }
     
-    extension [Self <: ContextMenuSettingsSubContextMenu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuSettingsSubContextMenu] (val x: Self) extends AnyVal {
       
       inline def setContextMenuItem(value: String): Self = StObject.set(x, "contextMenuItem", value.asInstanceOf[js.Any])
       
@@ -3976,7 +4005,8 @@ object Grid {
       __obj.asInstanceOf[ContextOpenEventArgs]
     }
     
-    extension [Self <: ContextOpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextOpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4025,7 +4055,8 @@ object Grid {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4062,7 +4093,8 @@ object Grid {
       __obj.asInstanceOf[DataBoundEventArgs]
     }
     
-    extension [Self <: DataBoundEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataBoundEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4095,7 +4127,8 @@ object Grid {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -4144,7 +4177,8 @@ object Grid {
       __obj.asInstanceOf[DetailsCollapseEventArgs]
     }
     
-    extension [Self <: DetailsCollapseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailsCollapseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4209,7 +4243,8 @@ object Grid {
       __obj.asInstanceOf[DetailsDataBoundEventArgs]
     }
     
-    extension [Self <: DetailsDataBoundEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailsDataBoundEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4274,7 +4309,8 @@ object Grid {
       __obj.asInstanceOf[DetailsExpandEventArgs]
     }
     
-    extension [Self <: DetailsExpandEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailsExpandEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4385,7 +4421,8 @@ object Grid {
       __obj.asInstanceOf[EditSettings]
     }
     
-    extension [Self <: EditSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditSettings] (val x: Self) extends AnyVal {
       
       inline def setAllowAdding(value: Boolean): Self = StObject.set(x, "allowAdding", value.asInstanceOf[js.Any])
       
@@ -4470,7 +4507,8 @@ object Grid {
       __obj.asInstanceOf[EndAddEventArgs]
     }
     
-    extension [Self <: EndAddEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndAddEventArgs] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -4515,7 +4553,8 @@ object Grid {
       __obj.asInstanceOf[EndDeleteEventArgs]
     }
     
-    extension [Self <: EndDeleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndDeleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -4560,7 +4599,8 @@ object Grid {
       __obj.asInstanceOf[EndEditEventArgs]
     }
     
-    extension [Self <: EndEditEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndEditEventArgs] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -4634,7 +4674,8 @@ object Grid {
       __obj.asInstanceOf[FilterSettings]
     }
     
-    extension [Self <: FilterSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterSettings] (val x: Self) extends AnyVal {
       
       inline def setEnableCaseSensitivity(value: Boolean): Self = StObject.set(x, "enableCaseSensitivity", value.asInstanceOf[js.Any])
       
@@ -4705,7 +4746,8 @@ object Grid {
       __obj.asInstanceOf[FilterSettingsFilteredColumn]
     }
     
-    extension [Self <: FilterSettingsFilteredColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterSettingsFilteredColumn] (val x: Self) extends AnyVal {
       
       inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -4775,7 +4817,8 @@ object Grid {
       __obj.asInstanceOf[GroupSettings]
     }
     
-    extension [Self <: GroupSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupSettings] (val x: Self) extends AnyVal {
       
       inline def setCaptionFormat(value: String): Self = StObject.set(x, "captionFormat", value.asInstanceOf[js.Any])
       
@@ -4830,7 +4873,8 @@ object Grid {
       __obj.asInstanceOf[LoadEventArgs]
     }
     
-    extension [Self <: LoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4899,7 +4943,8 @@ object Grid {
       __obj.asInstanceOf[MergeCellInfoEventArgs]
     }
     
-    extension [Self <: MergeCellInfoEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeCellInfoEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4968,7 +5013,8 @@ object Grid {
       __obj.asInstanceOf[MergeHeaderCellInfoEventArgs]
     }
     
-    extension [Self <: MergeHeaderCellInfoEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeHeaderCellInfoEventArgs] (val x: Self) extends AnyVal {
       
       inline def setColumnHeaders(value: Any): Self = StObject.set(x, "columnHeaders", value.asInstanceOf[js.Any])
       
@@ -5529,7 +5575,8 @@ object Grid {
       __obj.asInstanceOf[typings.ejWebAll.ej.Grid.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Grid.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Grid.Model] (val x: Self) extends AnyVal {
       
       inline def setActionBegin(value: /* e */ ActionBeginEventArgs => Unit): Self = StObject.set(x, "actionBegin", js.Any.fromFunction1(value))
       
@@ -6087,7 +6134,8 @@ object Grid {
       __obj.asInstanceOf[PageSettings]
     }
     
-    extension [Self <: PageSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageSettings] (val x: Self) extends AnyVal {
       
       inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
       
@@ -6182,7 +6230,8 @@ object Grid {
       __obj.asInstanceOf[QueryCellInfoEventArgs]
     }
     
-    extension [Self <: QueryCellInfoEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryCellInfoEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -6275,7 +6324,8 @@ object Grid {
       __obj.asInstanceOf[RecordClickEventArgs]
     }
     
-    extension [Self <: RecordClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -6376,7 +6426,8 @@ object Grid {
       __obj.asInstanceOf[RecordDoubleClickEventArgs]
     }
     
-    extension [Self <: RecordDoubleClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordDoubleClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -6465,7 +6516,8 @@ object Grid {
       __obj.asInstanceOf[ResizeEndEventArgs]
     }
     
-    extension [Self <: ResizeEndEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeEndEventArgs] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -6515,7 +6567,8 @@ object Grid {
       __obj.asInstanceOf[ResizeSettings]
     }
     
-    extension [Self <: ResizeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeSettings] (val x: Self) extends AnyVal {
       
       inline def setResizeMode(value: ResizeMode | String): Self = StObject.set(x, "resizeMode", value.asInstanceOf[js.Any])
       
@@ -6556,7 +6609,8 @@ object Grid {
       __obj.asInstanceOf[ResizeStartEventArgs]
     }
     
-    extension [Self <: ResizeStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -6625,7 +6679,8 @@ object Grid {
       __obj.asInstanceOf[ResizedEventArgs]
     }
     
-    extension [Self <: ResizedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -6714,7 +6769,8 @@ object Grid {
       __obj.asInstanceOf[RightClickEventArgs]
     }
     
-    extension [Self <: RightClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RightClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -6799,7 +6855,8 @@ object Grid {
       __obj.asInstanceOf[RowDataBoundEventArgs]
     }
     
-    extension [Self <: RowDataBoundEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDataBoundEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -6864,7 +6921,8 @@ object Grid {
       __obj.asInstanceOf[RowDeselectedEventArgs]
     }
     
-    extension [Self <: RowDeselectedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDeselectedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -6933,7 +6991,8 @@ object Grid {
       __obj.asInstanceOf[RowDeselectingEventArgs]
     }
     
-    extension [Self <: RowDeselectingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDeselectingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -7010,7 +7069,8 @@ object Grid {
       __obj.asInstanceOf[RowDragEventArgs]
     }
     
-    extension [Self <: RowDragEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDragEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -7087,7 +7147,8 @@ object Grid {
       __obj.asInstanceOf[RowDragStartEventArgs]
     }
     
-    extension [Self <: RowDragStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDragStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -7164,7 +7225,8 @@ object Grid {
       __obj.asInstanceOf[RowDropEventArgs]
     }
     
-    extension [Self <: RowDropEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDropEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -7229,7 +7291,8 @@ object Grid {
       __obj.asInstanceOf[RowDropSettings]
     }
     
-    extension [Self <: RowDropSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDropSettings] (val x: Self) extends AnyVal {
       
       inline def setDragBehavior(value: DragBehavior | String): Self = StObject.set(x, "dragBehavior", value.asInstanceOf[js.Any])
       
@@ -7274,7 +7337,8 @@ object Grid {
       __obj.asInstanceOf[RowHoverEventArgs]
     }
     
-    extension [Self <: RowHoverEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowHoverEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
@@ -7343,7 +7407,8 @@ object Grid {
       __obj.asInstanceOf[RowSelectedEventArgs]
     }
     
-    extension [Self <: RowSelectedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowSelectedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -7432,7 +7497,8 @@ object Grid {
       __obj.asInstanceOf[RowSelectingEventArgs]
     }
     
-    extension [Self <: RowSelectingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowSelectingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -7541,7 +7607,8 @@ object Grid {
       __obj.asInstanceOf[ScrollSettings]
     }
     
-    extension [Self <: ScrollSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollSettings] (val x: Self) extends AnyVal {
       
       inline def setAllowVirtualScrolling(value: Boolean): Self = StObject.set(x, "allowVirtualScrolling", value.asInstanceOf[js.Any])
       
@@ -7621,7 +7688,8 @@ object Grid {
       __obj.asInstanceOf[SearchSettings]
     }
     
-    extension [Self <: SearchSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchSettings] (val x: Self) extends AnyVal {
       
       inline def setFields(value: Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -7670,7 +7738,8 @@ object Grid {
       __obj.asInstanceOf[SelectionSettings]
     }
     
-    extension [Self <: SelectionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionSettings] (val x: Self) extends AnyVal {
       
       inline def setAllowDragSelection(value: Boolean): Self = StObject.set(x, "allowDragSelection", value.asInstanceOf[js.Any])
       
@@ -7705,7 +7774,8 @@ object Grid {
       __obj.asInstanceOf[SortSettings]
     }
     
-    extension [Self <: SortSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortSettings] (val x: Self) extends AnyVal {
       
       inline def setSortedColumns(value: js.Array[SortSettingsSortedColumn]): Self = StObject.set(x, "sortedColumns", value.asInstanceOf[js.Any])
       
@@ -7732,7 +7802,8 @@ object Grid {
       __obj.asInstanceOf[SortSettingsSortedColumn]
     }
     
-    extension [Self <: SortSettingsSortedColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortSettingsSortedColumn] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -7758,7 +7829,8 @@ object Grid {
       __obj.asInstanceOf[StackedHeaderRow]
     }
     
-    extension [Self <: StackedHeaderRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackedHeaderRow] (val x: Self) extends AnyVal {
       
       inline def setStackedHeaderColumns(value: js.Array[StackedHeaderRowsStackedHeaderColumn]): Self = StObject.set(x, "stackedHeaderColumns", value.asInstanceOf[js.Any])
       
@@ -7802,7 +7874,8 @@ object Grid {
       __obj.asInstanceOf[StackedHeaderRowsStackedHeaderColumn]
     }
     
-    extension [Self <: StackedHeaderRowsStackedHeaderColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackedHeaderRowsStackedHeaderColumn] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -7864,7 +7937,8 @@ object Grid {
       __obj.asInstanceOf[SummaryRow]
     }
     
-    extension [Self <: SummaryRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SummaryRow] (val x: Self) extends AnyVal {
       
       inline def setShowCaptionSummary(value: Boolean): Self = StObject.set(x, "showCaptionSummary", value.asInstanceOf[js.Any])
       
@@ -7943,7 +8017,8 @@ object Grid {
       __obj.asInstanceOf[SummaryRowsSummaryColumn]
     }
     
-    extension [Self <: SummaryRowsSummaryColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SummaryRowsSummaryColumn] (val x: Self) extends AnyVal {
       
       inline def setCustomSummaryValue(value: String): Self = StObject.set(x, "customSummaryValue", value.asInstanceOf[js.Any])
       
@@ -8020,7 +8095,8 @@ object Grid {
       __obj.asInstanceOf[TemplateRefreshEventArgs]
     }
     
-    extension [Self <: TemplateRefreshEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateRefreshEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -8070,7 +8146,8 @@ object Grid {
       __obj.asInstanceOf[TextWrapSettings]
     }
     
-    extension [Self <: TextWrapSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextWrapSettings] (val x: Self) extends AnyVal {
       
       inline def setWrapMode(value: WrapMode | String): Self = StObject.set(x, "wrapMode", value.asInstanceOf[js.Any])
       
@@ -8131,7 +8208,8 @@ object Grid {
       __obj.asInstanceOf[ToolbarClickEventArgs]
     }
     
-    extension [Self <: ToolbarClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -8203,7 +8281,8 @@ object Grid {
       __obj.asInstanceOf[ToolbarSettings]
     }
     
-    extension [Self <: ToolbarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarSettings] (val x: Self) extends AnyVal {
       
       inline def setCustomToolbarItems(value: js.Array[ToolbarSettingsCustomToolbarItem]): Self = StObject.set(x, "customToolbarItems", value.asInstanceOf[js.Any])
       
@@ -8240,7 +8319,8 @@ object Grid {
       __obj.asInstanceOf[ToolbarSettingsCustomToolbarItem]
     }
     
-    extension [Self <: ToolbarSettingsCustomToolbarItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarSettingsCustomToolbarItem] (val x: Self) extends AnyVal {
       
       inline def setTemplateID(value: String): Self = StObject.set(x, "templateID", value.asInstanceOf[js.Any])
       

@@ -44,7 +44,8 @@ object TMT {
     __obj.asInstanceOf[TMT]
   }
   
-  extension [Self <: TMT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TMT] (val x: Self) extends AnyVal {
     
     inline def setBYN(value: js.Array[String]): Self = StObject.set(x, "BYN", value.asInstanceOf[js.Any])
     

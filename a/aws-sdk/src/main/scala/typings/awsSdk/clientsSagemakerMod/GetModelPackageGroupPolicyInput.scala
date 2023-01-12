@@ -18,7 +18,8 @@ object GetModelPackageGroupPolicyInput {
     __obj.asInstanceOf[GetModelPackageGroupPolicyInput]
   }
   
-  extension [Self <: GetModelPackageGroupPolicyInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetModelPackageGroupPolicyInput] (val x: Self) extends AnyVal {
     
     inline def setModelPackageGroupName(value: EntityName): Self = StObject.set(x, "ModelPackageGroupName", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object RegisterMailDomainRequest {
     __obj.asInstanceOf[RegisterMailDomainRequest]
   }
   
-  extension [Self <: RegisterMailDomainRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterMailDomainRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: IdempotencyClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

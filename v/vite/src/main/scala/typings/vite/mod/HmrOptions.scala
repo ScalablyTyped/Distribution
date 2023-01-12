@@ -42,7 +42,8 @@ object HmrOptions {
     __obj.asInstanceOf[HmrOptions]
   }
   
-  extension [Self <: HmrOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HmrOptions] (val x: Self) extends AnyVal {
     
     inline def setClientPort(value: Double): Self = StObject.set(x, "clientPort", value.asInstanceOf[js.Any])
     

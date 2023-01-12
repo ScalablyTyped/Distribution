@@ -19,7 +19,8 @@ object ClusterStatistics {
     __obj.asInstanceOf[ClusterStatistics]
   }
   
-  extension [Self <: ClusterStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatistics] (val x: Self) extends AnyVal {
     
     inline def setSkipped(value: integer): Self = StObject.set(x, "skipped", value.asInstanceOf[js.Any])
     

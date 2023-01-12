@@ -27,7 +27,8 @@ object PartialBoxPlotMarkerColor {
     __obj.asInstanceOf[PartialBoxPlotMarkerColor]
   }
   
-  extension [Self <: PartialBoxPlotMarkerColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialBoxPlotMarkerColor] (val x: Self) extends AnyVal {
     
     inline def setColor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

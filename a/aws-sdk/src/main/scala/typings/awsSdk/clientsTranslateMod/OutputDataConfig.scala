@@ -20,7 +20,8 @@ object OutputDataConfig {
     __obj.asInstanceOf[OutputDataConfig]
   }
   
-  extension [Self <: OutputDataConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputDataConfig] (val x: Self) extends AnyVal {
     
     inline def setEncryptionKey(value: EncryptionKey): Self = StObject.set(x, "EncryptionKey", value.asInstanceOf[js.Any])
     

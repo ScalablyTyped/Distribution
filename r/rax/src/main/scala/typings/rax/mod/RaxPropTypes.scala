@@ -169,7 +169,8 @@ object RaxPropTypes {
     __obj.asInstanceOf[RaxPropTypes]
   }
   
-  extension [Self <: RaxPropTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaxPropTypes] (val x: Self) extends AnyVal {
     
     inline def setAny(value: typings.propTypes.mod.Requireable[Any]): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
     

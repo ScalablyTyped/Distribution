@@ -29,7 +29,8 @@ object esComponentsPageContainerStyleMod {
       __obj.asInstanceOf[PageContainerToken_]
     }
     
-    extension [Self <: PageContainerToken_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageContainerToken_] (val x: Self) extends AnyVal {
       
       inline def setComponentCls(value: String): Self = StObject.set(x, "componentCls", value.asInstanceOf[js.Any])
     }
@@ -48,7 +49,8 @@ object esComponentsPageContainerStyleMod {
       __obj.asInstanceOf[pageContainerToken]
     }
     
-    extension [Self <: pageContainerToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: pageContainerToken] (val x: Self) extends AnyVal {
       
       inline def setPaddingBlockPageContainerContent(value: Double): Self = StObject.set(x, "paddingBlockPageContainerContent", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,8 @@ object GlideEmailOutbound {
     __obj.asInstanceOf[GlideEmailOutbound]
   }
   
-  extension [Self <: GlideEmailOutbound](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlideEmailOutbound] (val x: Self) extends AnyVal {
     
     inline def setAddAddress(value: (String, String, String) => Unit): Self = StObject.set(x, "addAddress", js.Any.fromFunction3(value))
     

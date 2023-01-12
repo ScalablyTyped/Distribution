@@ -30,7 +30,8 @@ object ratingTypesMod {
       __obj.asInstanceOf[EmoticonRatingProps]
     }
     
-    extension [Self <: EmoticonRatingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmoticonRatingProps] (val x: Self) extends AnyVal {
       
       inline def setOnChange(value: /* a */ ValueNumber => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
@@ -67,7 +68,8 @@ object ratingTypesMod {
       __obj.asInstanceOf[RatingOverrides]
     }
     
-    extension [Self <: RatingOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatingOverrides] (val x: Self) extends AnyVal {
       
       inline def setItem(value: Override[Any]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object ratingTypesMod {
       __obj.asInstanceOf[RatingState]
     }
     
-    extension [Self <: RatingState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatingState] (val x: Self) extends AnyVal {
       
       inline def setIsFocusVisible(value: Boolean): Self = StObject.set(x, "isFocusVisible", value.asInstanceOf[js.Any])
       
@@ -128,7 +131,8 @@ object ratingTypesMod {
       __obj.asInstanceOf[StarRatingProps]
     }
     
-    extension [Self <: StarRatingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StarRatingProps] (val x: Self) extends AnyVal {
       
       inline def setNumItems(value: Double): Self = StObject.set(x, "numItems", value.asInstanceOf[js.Any])
       
@@ -196,7 +200,8 @@ object ratingTypesMod {
       __obj.asInstanceOf[StyledRatingItemProps]
     }
     
-    extension [Self <: StyledRatingItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledRatingItemProps] (val x: Self) extends AnyVal {
       
       inline def set$index(value: Double): Self = StObject.set(x, "$index", value.asInstanceOf[js.Any])
       
@@ -228,7 +233,8 @@ object ratingTypesMod {
       __obj.asInstanceOf[StyledRootProps]
     }
     
-    extension [Self <: StyledRootProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledRootProps] (val x: Self) extends AnyVal {
       
       inline def set$theme(value: Theme): Self = StObject.set(x, "$theme", value.asInstanceOf[js.Any])
     }

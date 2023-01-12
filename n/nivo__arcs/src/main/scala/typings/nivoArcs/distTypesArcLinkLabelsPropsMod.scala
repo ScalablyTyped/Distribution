@@ -52,7 +52,8 @@ object distTypesArcLinkLabelsPropsMod {
       __obj.asInstanceOf[ArcLinkLabelsProps[Datum]]
     }
     
-    extension [Self <: ArcLinkLabelsProps[?], Datum /* <: DatumWithArcAndColor */](x: Self & ArcLinkLabelsProps[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcLinkLabelsProps[?], Datum /* <: DatumWithArcAndColor */] (val x: Self & ArcLinkLabelsProps[Datum]) extends AnyVal {
       
       inline def setArcLinkLabel(value: PropertyAccessor[Datum, String]): Self = StObject.set(x, "arcLinkLabel", value.asInstanceOf[js.Any])
       

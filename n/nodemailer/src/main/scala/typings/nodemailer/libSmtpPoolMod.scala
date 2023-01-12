@@ -56,7 +56,8 @@ object libSmtpPoolMod {
       __obj.asInstanceOf[MailOptions]
     }
     
-    extension [Self <: MailOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MailOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: AuthenticationType): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -165,7 +166,8 @@ object libSmtpPoolMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAuthMethod(value: String): Self = StObject.set(x, "authMethod", value.asInstanceOf[js.Any])
       
@@ -358,7 +360,8 @@ object libSmtpPoolMod {
       __obj.asInstanceOf[SentMessageInfo]
     }
     
-    extension [Self <: SentMessageInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SentMessageInfo] (val x: Self) extends AnyVal {
       
       inline def setEnvelope(value: Envelope): Self = StObject.set(x, "envelope", value.asInstanceOf[js.Any])
       

@@ -54,7 +54,8 @@ object examplesJsmObjectsRefractorMod {
       __obj.asInstanceOf[RefractorOptions]
     }
     
-    extension [Self <: RefractorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefractorOptions] (val x: Self) extends AnyVal {
       
       inline def setClipBias(value: Double): Self = StObject.set(x, "clipBias", value.asInstanceOf[js.Any])
       

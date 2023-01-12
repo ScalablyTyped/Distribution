@@ -19,7 +19,8 @@ object ConsumeMessage {
     __obj.asInstanceOf[ConsumeMessage]
   }
   
-  extension [Self <: ConsumeMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsumeMessage] (val x: Self) extends AnyVal {
     
     inline def setFields(value: ConsumeMessageFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
   }

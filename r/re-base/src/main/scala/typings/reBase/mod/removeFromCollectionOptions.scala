@@ -20,7 +20,8 @@ object removeFromCollectionOptions {
     __obj.asInstanceOf[removeFromCollectionOptions]
   }
   
-  extension [Self <: removeFromCollectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: removeFromCollectionOptions] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: () => Unit): Self = StObject.set(x, "query", js.Any.fromFunction0(value))
     

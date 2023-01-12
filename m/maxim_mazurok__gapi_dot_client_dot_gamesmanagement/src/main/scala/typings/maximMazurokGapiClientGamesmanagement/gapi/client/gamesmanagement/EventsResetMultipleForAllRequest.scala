@@ -19,7 +19,8 @@ object EventsResetMultipleForAllRequest {
     __obj.asInstanceOf[EventsResetMultipleForAllRequest]
   }
   
-  extension [Self <: EventsResetMultipleForAllRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventsResetMultipleForAllRequest] (val x: Self) extends AnyVal {
     
     inline def setEvent_ids(value: js.Array[String]): Self = StObject.set(x, "event_ids", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object revertMod {
       __obj.asInstanceOf[RevertOptions]
     }
     
-    extension [Self <: RevertOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RevertOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckoutOpts(value: CheckoutOptions): Self = StObject.set(x, "checkoutOpts", value.asInstanceOf[js.Any])
       

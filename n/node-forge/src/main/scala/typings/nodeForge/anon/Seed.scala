@@ -16,7 +16,8 @@ object Seed {
     __obj.asInstanceOf[Seed]
   }
   
-  extension [Self <: Seed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Seed] (val x: Self) extends AnyVal {
     
     inline def setSeed(value: NativeBuffer | String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     

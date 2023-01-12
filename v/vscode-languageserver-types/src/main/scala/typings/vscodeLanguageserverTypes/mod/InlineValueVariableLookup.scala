@@ -44,7 +44,8 @@ object InlineValueVariableLookup {
   inline def is(): /* is vscode-languageserver-types.vscode-languageserver-types.InlineValueVariableLookup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")().asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.InlineValueVariableLookup */ Boolean]
   inline def is(value: InlineValue): /* is vscode-languageserver-types.vscode-languageserver-types.InlineValueVariableLookup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.InlineValueVariableLookup */ Boolean]
   
-  extension [Self <: InlineValueVariableLookup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineValueVariableLookup] (val x: Self) extends AnyVal {
     
     inline def setCaseSensitiveLookup(value: Boolean): Self = StObject.set(x, "caseSensitiveLookup", value.asInstanceOf[js.Any])
     

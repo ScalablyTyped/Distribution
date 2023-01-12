@@ -94,7 +94,8 @@ object mod {
       __obj.asInstanceOf[ReactWOWProps]
     }
     
-    extension [Self <: ReactWOWProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactWOWProps] (val x: Self) extends AnyVal {
       
       inline def setAnimateClass(value: String): Self = StObject.set(x, "animateClass", value.asInstanceOf[js.Any])
       

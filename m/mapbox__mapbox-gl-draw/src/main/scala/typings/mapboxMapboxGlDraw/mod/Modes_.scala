@@ -29,7 +29,8 @@ object Modes_ {
     __obj.asInstanceOf[Modes_]
   }
   
-  extension [Self <: Modes_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Modes_] (val x: Self) extends AnyVal {
     
     inline def setDirect_select(value: DrawCustomMode[Any, Any]): Self = StObject.set(x, "direct_select", value.asInstanceOf[js.Any])
     

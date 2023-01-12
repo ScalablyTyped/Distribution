@@ -17,7 +17,8 @@ object RowK {
     __obj.asInstanceOf[RowK[K]]
   }
   
-  extension [Self <: RowK[?], K](x: Self & RowK[K]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowK[?], K] (val x: Self & RowK[K]) extends AnyVal {
     
     inline def setColumn(value: K): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

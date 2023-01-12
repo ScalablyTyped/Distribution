@@ -38,7 +38,8 @@ object EventTopic {
     __obj.asInstanceOf[EventTopic]
   }
   
-  extension [Self <: EventTopic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventTopic] (val x: Self) extends AnyVal {
     
     inline def setCreatedDateTime(value: js.Date): Self = StObject.set(x, "CreatedDateTime", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object anon {
       __obj.asInstanceOf[TypeofCastContext]
     }
     
-    extension [Self <: TypeofCastContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofCastContext] (val x: Self) extends AnyVal {
       
       inline def setGetInstance(value: () => CastContext): Self = StObject.set(x, "getInstance", js.Any.fromFunction0(value))
     }
@@ -68,7 +69,8 @@ object anon {
       __obj.asInstanceOf[Typeofcast]
     }
     
-    extension [Self <: Typeofcast](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofcast] (val x: Self) extends AnyVal {
       
       inline def setFramework(value: Typeofframework): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
     }
@@ -181,7 +183,8 @@ object anon {
       __obj.asInstanceOf[Typeofframework]
     }
     
-    extension [Self <: Typeofframework](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofframework] (val x: Self) extends AnyVal {
       
       inline def setActiveInputStateEventData(value: Instantiable1[/* activeInputState */ ActiveInputState, ActiveInputStateEventData]): Self = StObject.set(x, "ActiveInputStateEventData", value.asInstanceOf[js.Any])
       

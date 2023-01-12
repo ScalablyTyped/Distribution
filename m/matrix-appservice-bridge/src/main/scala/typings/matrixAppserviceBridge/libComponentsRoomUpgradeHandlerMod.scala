@@ -106,7 +106,8 @@ object libComponentsRoomUpgradeHandlerMod {
       __obj.asInstanceOf[RoomUpgradeHandlerOpts]
     }
     
-    extension [Self <: RoomUpgradeHandlerOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoomUpgradeHandlerOpts] (val x: Self) extends AnyVal {
       
       inline def setConsumeEvent(value: Boolean): Self = StObject.set(x, "consumeEvent", value.asInstanceOf[js.Any])
       

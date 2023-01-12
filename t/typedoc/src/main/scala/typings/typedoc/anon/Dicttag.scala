@@ -24,7 +24,8 @@ object Dicttag {
     __obj.asInstanceOf[Dicttag]
   }
   
-  extension [Self <: Dicttag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dicttag] (val x: Self) extends AnyVal {
     
     inline def setExternal(value: Boolean): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     

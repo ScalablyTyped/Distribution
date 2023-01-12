@@ -40,7 +40,8 @@ object RevisionId {
     __obj.asInstanceOf[RevisionId]
   }
   
-  extension [Self <: RevisionId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevisionId] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

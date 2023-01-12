@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[ExtensionAPI]
     }
     
-    extension [Self <: ExtensionAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtensionAPI] (val x: Self) extends AnyVal {
       
       inline def setGetOption(value: String => Any | Null): Self = StObject.set(x, "getOption", js.Any.fromFunction1(value))
       
@@ -86,7 +87,8 @@ object mod {
       __obj.asInstanceOf[LintData]
     }
     
-    extension [Self <: LintData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LintData] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[LintError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -172,7 +174,8 @@ object mod {
       __obj.asInstanceOf[LintError]
     }
     
-    extension [Self <: LintError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LintError] (val x: Self) extends AnyVal {
       
       inline def setA(value: Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -239,7 +242,8 @@ object mod {
       __obj.asInstanceOf[LintFunction]
     }
     
-    extension [Self <: LintFunction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LintFunction] (val x: Self) extends AnyVal {
       
       inline def setCharacter(value: Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
       
@@ -274,7 +278,8 @@ object mod {
       __obj.asInstanceOf[LintUnused]
     }
     
-    extension [Self <: LintUnused](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LintUnused] (val x: Self) extends AnyVal {
       
       inline def setCharacter(value: Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
       

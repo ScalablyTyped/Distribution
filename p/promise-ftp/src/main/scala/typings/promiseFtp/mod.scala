@@ -72,7 +72,8 @@ object mod {
     @js.native
     val ^ : ERROR_CODES = js.native
     
-    extension [Self <: ERROR_CODES](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ERROR_CODES] (val x: Self) extends AnyVal {
       
       inline def set421(value: `Service not availableComma closing control connection`): Self = StObject.set(x, "421", value.asInstanceOf[js.Any])
       

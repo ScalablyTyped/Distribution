@@ -35,7 +35,8 @@ object univariateColorSize {
     __obj.asInstanceOf[univariateColorSize]
   }
   
-  extension [Self <: univariateColorSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: univariateColorSize] (val x: Self) extends AnyVal {
     
     inline def setCreateContinuousRenderer(
       value: univariateColorSizeCreateContinuousRendererParams => js.Promise[univariateColorSizeContinuousRendererResult]

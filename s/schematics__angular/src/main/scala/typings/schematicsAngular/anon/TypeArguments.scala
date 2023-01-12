@@ -17,7 +17,8 @@ object TypeArguments {
     __obj.asInstanceOf[TypeArguments]
   }
   
-  extension [Self <: TypeArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeArguments] (val x: Self) extends AnyVal {
     
     inline def setTypeArguments(value: NodeArray[TypeNode]): Self = StObject.set(x, "typeArguments", value.asInstanceOf[js.Any])
     

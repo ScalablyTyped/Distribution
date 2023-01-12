@@ -15,7 +15,8 @@ object X509Certificate {
     __obj.asInstanceOf[X509Certificate]
   }
   
-  extension [Self <: X509Certificate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X509Certificate] (val x: Self) extends AnyVal {
     
     inline def setX509Certificate(value: String): Self = StObject.set(x, "x509Certificate", value.asInstanceOf[js.Any])
   }

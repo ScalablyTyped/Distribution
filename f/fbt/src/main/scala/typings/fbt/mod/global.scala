@@ -59,7 +59,8 @@ object global {
         __obj.asInstanceOf[IntrinsicElements]
       }
       
-      extension [Self <: IntrinsicElements](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
         
         inline def setFbt(value: PropsWithChildrenFbtProps): Self = StObject.set(x, "fbt", value.asInstanceOf[js.Any])
         

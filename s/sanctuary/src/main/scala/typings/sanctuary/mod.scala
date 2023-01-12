@@ -62,7 +62,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Either[A, B]]
     }
     
-    extension [Self <: Either[?, ?], A, B](x: Self & (Either[A, B])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Either[?, ?], A, B] (val x: Self & (Either[A, B])) extends AnyVal {
       
       inline def `set@@type`(value: sanctuarySlashEither): Self = StObject.set(x, "@@type", value.asInstanceOf[js.Any])
     }
@@ -128,7 +129,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MatchObj]
     }
     
-    extension [Self <: MatchObj](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchObj] (val x: Self) extends AnyVal {
       
       inline def setGroups(value: js.Array[Maybe[String]]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
@@ -150,7 +152,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Maybe[A]]
     }
     
-    extension [Self <: Maybe[?], A](x: Self & Maybe[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Maybe[?], A] (val x: Self & Maybe[A]) extends AnyVal {
       
       inline def `set@@type`(value: sanctuarySlashMaybe): Self = StObject.set(x, "@@type", value.asInstanceOf[js.Any])
     }
@@ -182,7 +185,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Pair[A, B]]
     }
     
-    extension [Self <: Pair[?, ?], A, B](x: Self & (Pair[A, B])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pair[?, ?], A, B] (val x: Self & (Pair[A, B])) extends AnyVal {
       
       inline def `set@@type`(value: sanctuarySlashPair): Self = StObject.set(x, "@@type", value.asInstanceOf[js.Any])
     }

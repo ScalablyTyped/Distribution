@@ -74,7 +74,8 @@ object R3DeclareDirectiveMetadata {
     __obj.asInstanceOf[R3DeclareDirectiveMetadata]
   }
   
-  extension [Self <: R3DeclareDirectiveMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3DeclareDirectiveMetadata] (val x: Self) extends AnyVal {
     
     inline def setExportAs(value: js.Array[String]): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
     

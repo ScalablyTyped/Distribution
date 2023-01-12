@@ -66,7 +66,8 @@ object distPackagesFirestoreSrcLocalSharedClientStateSchemaMod {
       __obj.asInstanceOf[ClientStateSchema]
     }
     
-    extension [Self <: ClientStateSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientStateSchema] (val x: Self) extends AnyVal {
       
       inline def setActiveTargetIds(value: js.Array[Double]): Self = StObject.set(x, "activeTargetIds", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object distPackagesFirestoreSrcLocalSharedClientStateSchemaMod {
       __obj.asInstanceOf[MutationMetadataSchema]
     }
     
-    extension [Self <: MutationMetadataSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MutationMetadataSchema] (val x: Self) extends AnyVal {
       
       inline def setError(value: Code): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object distPackagesFirestoreSrcLocalSharedClientStateSchemaMod {
       __obj.asInstanceOf[QueryTargetStateSchema]
     }
     
-    extension [Self <: QueryTargetStateSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryTargetStateSchema] (val x: Self) extends AnyVal {
       
       inline def setError(value: Code): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -148,7 +151,8 @@ object distPackagesFirestoreSrcLocalSharedClientStateSchemaMod {
       __obj.asInstanceOf[SharedOnlineStateSchema]
     }
     
-    extension [Self <: SharedOnlineStateSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedOnlineStateSchema] (val x: Self) extends AnyVal {
       
       inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       

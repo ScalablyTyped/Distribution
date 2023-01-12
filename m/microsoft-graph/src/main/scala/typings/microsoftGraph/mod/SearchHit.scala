@@ -36,7 +36,8 @@ object SearchHit {
     __obj.asInstanceOf[SearchHit]
   }
   
-  extension [Self <: SearchHit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchHit] (val x: Self) extends AnyVal {
     
     inline def setContentSource(value: NullableOption[String]): Self = StObject.set(x, "contentSource", value.asInstanceOf[js.Any])
     

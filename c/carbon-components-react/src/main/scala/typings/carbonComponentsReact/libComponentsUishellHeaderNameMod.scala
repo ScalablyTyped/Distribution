@@ -36,7 +36,8 @@ object libComponentsUishellHeaderNameMod {
       __obj.asInstanceOf[HeaderNamePropsBase]
     }
     
-    extension [Self <: HeaderNamePropsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderNamePropsBase] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

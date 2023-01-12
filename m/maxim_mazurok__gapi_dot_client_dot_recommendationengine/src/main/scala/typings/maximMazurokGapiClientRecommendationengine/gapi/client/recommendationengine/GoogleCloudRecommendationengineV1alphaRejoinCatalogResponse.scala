@@ -16,7 +16,8 @@ object GoogleCloudRecommendationengineV1alphaRejoinCatalogResponse {
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1alphaRejoinCatalogResponse]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1alphaRejoinCatalogResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1alphaRejoinCatalogResponse] (val x: Self) extends AnyVal {
     
     inline def setRejoinedUserEventsCount(value: String): Self = StObject.set(x, "rejoinedUserEventsCount", value.asInstanceOf[js.Any])
     

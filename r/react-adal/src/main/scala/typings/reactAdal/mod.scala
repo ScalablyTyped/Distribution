@@ -370,7 +370,8 @@ object mod {
       __obj.asInstanceOf[AdalConfig]
     }
     
-    extension [Self <: AdalConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdalConfig] (val x: Self) extends AnyVal {
       
       inline def setAnonymousEndpoints(value: js.Array[String]): Self = StObject.set(x, "anonymousEndpoints", value.asInstanceOf[js.Any])
       
@@ -489,7 +490,8 @@ object mod {
       __obj.asInstanceOf[Constants]
     }
     
-    extension [Self <: Constants](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constants] (val x: Self) extends AnyVal {
       
       inline def setACCESS_TOKEN(value: access_token): Self = StObject.set(x, "ACCESS_TOKEN", value.asInstanceOf[js.Any])
       
@@ -581,7 +583,8 @@ object mod {
       __obj.asInstanceOf[RequestInfo]
     }
     
-    extension [Self <: RequestInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestInfo] (val x: Self) extends AnyVal {
       
       inline def setParameters(value: Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
@@ -645,7 +648,8 @@ object mod {
       __obj.asInstanceOf[UserInfo]
     }
     
-    extension [Self <: UserInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserInfo] (val x: Self) extends AnyVal {
       
       inline def setProfile(value: Any): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       

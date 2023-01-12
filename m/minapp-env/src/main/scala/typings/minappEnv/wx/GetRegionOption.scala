@@ -22,7 +22,8 @@ object GetRegionOption {
     __obj.asInstanceOf[GetRegionOption]
   }
   
-  extension [Self <: GetRegionOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRegionOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

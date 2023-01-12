@@ -15,7 +15,8 @@ object Localid {
     __obj.asInstanceOf[Localid]
   }
   
-  extension [Self <: Localid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Localid] (val x: Self) extends AnyVal {
     
     inline def setLocalid(value: String | js.Array[String]): Self = StObject.set(x, "localid", value.asInstanceOf[js.Any])
     

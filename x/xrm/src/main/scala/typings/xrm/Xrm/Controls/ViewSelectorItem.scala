@@ -24,7 +24,8 @@ object ViewSelectorItem {
     __obj.asInstanceOf[ViewSelectorItem]
   }
   
-  extension [Self <: ViewSelectorItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewSelectorItem] (val x: Self) extends AnyVal {
     
     inline def setGetEntityReference(value: () => LookupValue): Self = StObject.set(x, "getEntityReference", js.Any.fromFunction0(value))
   }

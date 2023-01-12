@@ -38,7 +38,8 @@ object ListGatewayRoutesInput {
     __obj.asInstanceOf[ListGatewayRoutesInput]
   }
   
-  extension [Self <: ListGatewayRoutesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGatewayRoutesInput] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: ListGatewayRoutesLimit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

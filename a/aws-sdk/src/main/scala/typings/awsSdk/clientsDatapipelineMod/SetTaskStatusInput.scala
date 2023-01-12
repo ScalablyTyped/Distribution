@@ -38,7 +38,8 @@ object SetTaskStatusInput {
     __obj.asInstanceOf[SetTaskStatusInput]
   }
   
-  extension [Self <: SetTaskStatusInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetTaskStatusInput] (val x: Self) extends AnyVal {
     
     inline def setErrorId(value: String): Self = StObject.set(x, "errorId", value.asInstanceOf[js.Any])
     

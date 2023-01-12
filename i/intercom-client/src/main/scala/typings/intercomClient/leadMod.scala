@@ -83,7 +83,8 @@ object leadMod {
       __obj.asInstanceOf[Lead]
     }
     
-    extension [Self <: Lead](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lead] (val x: Self) extends AnyVal {
       
       inline def setAvatar(value: Avatar): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       
@@ -158,7 +159,8 @@ object leadMod {
       __obj.asInstanceOf[LeadIdIdentifier]
     }
     
-    extension [Self <: LeadIdIdentifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LeadIdIdentifier] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -200,7 +202,8 @@ object leadMod {
       __obj.asInstanceOf[typings.intercomClient.leadMod.List]
     }
     
-    extension [Self <: typings.intercomClient.leadMod.List](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.intercomClient.leadMod.List] (val x: Self) extends AnyVal {
       
       inline def setContacts(value: js.Array[Lead]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
       

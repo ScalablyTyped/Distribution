@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[ICaBuffer]
     }
     
-    extension [Self <: ICaBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICaBuffer] (val x: Self) extends AnyVal {
       
       inline def setCa(value: Buffer): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
     }
@@ -55,7 +56,8 @@ object mod {
       __obj.asInstanceOf[ICaPath]
     }
     
-    extension [Self <: ICaPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICaPath] (val x: Self) extends AnyVal {
       
       inline def setCaPath(value: String): Self = StObject.set(x, "caPath", value.asInstanceOf[js.Any])
     }
@@ -74,7 +76,8 @@ object mod {
       __obj.asInstanceOf[IDomainData]
     }
     
-    extension [Self <: IDomainData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDomainData] (val x: Self) extends AnyVal {
       
       inline def setCert(value: Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
@@ -126,7 +129,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setGetCaBuffer(value: Boolean): Self = StObject.set(x, "getCaBuffer", value.asInstanceOf[js.Any])
       

@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[Recorder]
     }
     
-    extension [Self <: Recorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Recorder] (val x: Self) extends AnyVal {
       
       inline def setInit(value: MediaStream => js.Promise[Unit]): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
@@ -75,7 +76,8 @@ object mod {
       __obj.asInstanceOf[RecorderConfig]
     }
     
-    extension [Self <: RecorderConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecorderConfig] (val x: Self) extends AnyVal {
       
       inline def setOnAnalysed(value: (/* data */ js.Array[Double], /* lastNonZero */ Double) => Unit): Self = StObject.set(x, "onAnalysed", js.Any.fromFunction2(value))
       
@@ -96,7 +98,8 @@ object mod {
       __obj.asInstanceOf[RecorderResult]
     }
     
-    extension [Self <: RecorderResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecorderResult] (val x: Self) extends AnyVal {
       
       inline def setBlob(value: Blob): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
       

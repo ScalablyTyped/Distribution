@@ -20,7 +20,8 @@ object IMouseTargetOutsideEditor {
     __obj.asInstanceOf[IMouseTargetOutsideEditor]
   }
   
-  extension [Self <: IMouseTargetOutsideEditor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMouseTargetOutsideEditor] (val x: Self) extends AnyVal {
     
     inline def setType(value: OUTSIDE_EDITOR): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object DeleteImportedKeyMaterialRequest {
     __obj.asInstanceOf[DeleteImportedKeyMaterialRequest]
   }
   
-  extension [Self <: DeleteImportedKeyMaterialRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteImportedKeyMaterialRequest] (val x: Self) extends AnyVal {
     
     inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
   }

@@ -29,7 +29,8 @@ object CopyToRequest {
     __obj.asInstanceOf[CopyToRequest]
   }
   
-  extension [Self <: CopyToRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyToRequest] (val x: Self) extends AnyVal {
     
     inline def setInsertBeforeNodeId(value: NodeId): Self = StObject.set(x, "insertBeforeNodeId", value.asInstanceOf[js.Any])
     

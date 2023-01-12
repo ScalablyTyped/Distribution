@@ -22,7 +22,8 @@ object GraticuleGenerator {
     __obj.asInstanceOf[GraticuleGenerator]
   }
   
-  extension [Self <: GraticuleGenerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraticuleGenerator] (val x: Self) extends AnyVal {
     
     inline def setGraticule(value: `true` | GraticuleParams): Self = StObject.set(x, "graticule", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object BatchUpdateScheduleRequest {
     __obj.asInstanceOf[BatchUpdateScheduleRequest]
   }
   
-  extension [Self <: BatchUpdateScheduleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdateScheduleRequest] (val x: Self) extends AnyVal {
     
     inline def setChannelId(value: string): Self = StObject.set(x, "ChannelId", value.asInstanceOf[js.Any])
     

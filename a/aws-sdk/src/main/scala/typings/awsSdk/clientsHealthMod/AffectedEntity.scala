@@ -53,7 +53,8 @@ object AffectedEntity {
     __obj.asInstanceOf[AffectedEntity]
   }
   
-  extension [Self <: AffectedEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AffectedEntity] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: accountId): Self = StObject.set(x, "awsAccountId", value.asInstanceOf[js.Any])
     

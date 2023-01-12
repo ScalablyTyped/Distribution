@@ -19,7 +19,8 @@ object GetRemarketingTagResponse {
     __obj.asInstanceOf[GetRemarketingTagResponse]
   }
   
-  extension [Self <: GetRemarketingTagResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRemarketingTagResponse] (val x: Self) extends AnyVal {
     
     inline def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     

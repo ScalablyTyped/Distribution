@@ -33,7 +33,8 @@ object ScheduleAdBreak {
     __obj.asInstanceOf[ScheduleAdBreak]
   }
   
-  extension [Self <: ScheduleAdBreak](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduleAdBreak] (val x: Self) extends AnyVal {
     
     inline def setApproximateDurationSeconds(value: long): Self = StObject.set(x, "ApproximateDurationSeconds", value.asInstanceOf[js.Any])
     

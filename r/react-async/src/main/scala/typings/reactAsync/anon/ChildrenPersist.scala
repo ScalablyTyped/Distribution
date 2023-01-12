@@ -28,7 +28,8 @@ object ChildrenPersist {
     __obj.asInstanceOf[ChildrenPersist[T]]
   }
   
-  extension [Self <: ChildrenPersist[?], T /* <: js.Object */](x: Self & ChildrenPersist[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildrenPersist[?], T /* <: js.Object */] (val x: Self & ChildrenPersist[T]) extends AnyVal {
     
     inline def setChildren(value: RejectedChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -77,7 +77,8 @@ object SeriesIkhOptions {
     __obj.asInstanceOf[SeriesIkhOptions]
   }
   
-  extension [Self <: SeriesIkhOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesIkhOptions] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

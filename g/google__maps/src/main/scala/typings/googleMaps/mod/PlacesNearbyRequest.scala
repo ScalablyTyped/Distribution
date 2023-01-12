@@ -84,7 +84,8 @@ object PlacesNearbyRequest {
     __obj.asInstanceOf[PlacesNearbyRequest]
   }
   
-  extension [Self <: PlacesNearbyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlacesNearbyRequest] (val x: Self) extends AnyVal {
     
     inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
     

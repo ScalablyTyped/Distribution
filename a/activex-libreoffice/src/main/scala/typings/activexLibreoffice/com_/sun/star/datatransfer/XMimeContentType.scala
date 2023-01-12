@@ -100,7 +100,8 @@ object XMimeContentType {
     __obj.asInstanceOf[XMimeContentType]
   }
   
-  extension [Self <: XMimeContentType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMimeContentType] (val x: Self) extends AnyVal {
     
     inline def setFullMediaType(value: String): Self = StObject.set(x, "FullMediaType", value.asInstanceOf[js.Any])
     

@@ -207,7 +207,8 @@ object mod {
       __obj.asInstanceOf[ArgumentGroupOptions]
     }
     
-    extension [Self <: ArgumentGroupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgumentGroupOptions] (val x: Self) extends AnyVal {
       
       inline def setArgument_default(value: Any): Self = StObject.set(x, "argument_default", value.asInstanceOf[js.Any])
       
@@ -262,7 +263,8 @@ object mod {
       __obj.asInstanceOf[ArgumentOptions]
     }
     
-    extension [Self <: ArgumentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgumentOptions] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String | InstantiableAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -349,7 +351,8 @@ object mod {
       __obj.asInstanceOf[ArgumentParserOptions]
     }
     
-    extension [Self <: ArgumentParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgumentParserOptions] (val x: Self) extends AnyVal {
       
       inline def setAdd_help(value: Boolean): Self = StObject.set(x, "add_help", value.asInstanceOf[js.Any])
       
@@ -410,7 +413,8 @@ object mod {
       __obj.asInstanceOf[SubArgumentParserOptions]
     }
     
-    extension [Self <: SubArgumentParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubArgumentParserOptions] (val x: Self) extends AnyVal {
       
       inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
@@ -451,7 +455,8 @@ object mod {
       __obj.asInstanceOf[SubparserOptions]
     }
     
-    extension [Self <: SubparserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubparserOptions] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

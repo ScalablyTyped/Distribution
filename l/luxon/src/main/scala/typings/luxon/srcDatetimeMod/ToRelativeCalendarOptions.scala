@@ -34,7 +34,8 @@ object ToRelativeCalendarOptions {
     __obj.asInstanceOf[ToRelativeCalendarOptions]
   }
   
-  extension [Self <: ToRelativeCalendarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToRelativeCalendarOptions] (val x: Self) extends AnyVal {
     
     inline def setBase(value: DateTime): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

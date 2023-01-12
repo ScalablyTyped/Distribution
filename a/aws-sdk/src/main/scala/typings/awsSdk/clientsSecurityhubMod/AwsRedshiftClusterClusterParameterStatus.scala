@@ -28,7 +28,8 @@ object AwsRedshiftClusterClusterParameterStatus {
     __obj.asInstanceOf[AwsRedshiftClusterClusterParameterStatus]
   }
   
-  extension [Self <: AwsRedshiftClusterClusterParameterStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRedshiftClusterClusterParameterStatus] (val x: Self) extends AnyVal {
     
     inline def setParameterApplyErrorDescription(value: NonEmptyString): Self = StObject.set(x, "ParameterApplyErrorDescription", value.asInstanceOf[js.Any])
     

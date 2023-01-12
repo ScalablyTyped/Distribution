@@ -19,7 +19,8 @@ object IsFuture {
     __obj.asInstanceOf[IsFuture]
   }
   
-  extension [Self <: IsFuture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsFuture] (val x: Self) extends AnyVal {
     
     inline def setIsFuture(value: Boolean): Self = StObject.set(x, "isFuture", value.asInstanceOf[js.Any])
     

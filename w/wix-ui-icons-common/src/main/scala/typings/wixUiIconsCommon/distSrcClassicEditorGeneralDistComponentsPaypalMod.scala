@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsPaypalMod extends Shortcut {
       __obj.asInstanceOf[PaypalProps]
     }
     
-    extension [Self <: PaypalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaypalProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -31,7 +31,8 @@ object BudgetSummary {
     __obj.asInstanceOf[BudgetSummary]
   }
   
-  extension [Self <: BudgetSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BudgetSummary] (val x: Self) extends AnyVal {
     
     inline def setExternalBudgetId(value: String): Self = StObject.set(x, "externalBudgetId", value.asInstanceOf[js.Any])
     

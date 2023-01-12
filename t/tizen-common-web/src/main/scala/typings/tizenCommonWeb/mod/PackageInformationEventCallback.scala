@@ -38,7 +38,8 @@ object PackageInformationEventCallback {
     __obj.asInstanceOf[PackageInformationEventCallback]
   }
   
-  extension [Self <: PackageInformationEventCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageInformationEventCallback] (val x: Self) extends AnyVal {
     
     inline def setOninstalled(value: PackageInformation => Unit): Self = StObject.set(x, "oninstalled", js.Any.fromFunction1(value))
     

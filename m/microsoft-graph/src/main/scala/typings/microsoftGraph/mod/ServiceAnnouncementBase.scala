@@ -30,7 +30,8 @@ object ServiceAnnouncementBase {
     __obj.asInstanceOf[ServiceAnnouncementBase]
   }
   
-  extension [Self <: ServiceAnnouncementBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceAnnouncementBase] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: NullableOption[js.Array[KeyValuePair]]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

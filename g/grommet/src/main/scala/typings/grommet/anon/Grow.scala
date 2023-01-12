@@ -17,7 +17,8 @@ object Grow {
     __obj.asInstanceOf[Grow]
   }
   
-  extension [Self <: Grow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Grow] (val x: Self) extends AnyVal {
     
     inline def setGrow(value: Double): Self = StObject.set(x, "grow", value.asInstanceOf[js.Any])
     

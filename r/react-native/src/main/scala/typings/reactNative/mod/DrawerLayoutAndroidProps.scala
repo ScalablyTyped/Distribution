@@ -114,7 +114,8 @@ object DrawerLayoutAndroidProps {
     __obj.asInstanceOf[DrawerLayoutAndroidProps]
   }
   
-  extension [Self <: DrawerLayoutAndroidProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawerLayoutAndroidProps] (val x: Self) extends AnyVal {
     
     inline def setDrawerBackgroundColor(value: ColorValue): Self = StObject.set(x, "drawerBackgroundColor", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object BindToStateOptions {
     __obj.asInstanceOf[BindToStateOptions]
   }
   
-  extension [Self <: BindToStateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindToStateOptions] (val x: Self) extends AnyVal {
     
     inline def setAsArray(value: Boolean): Self = StObject.set(x, "asArray", value.asInstanceOf[js.Any])
     

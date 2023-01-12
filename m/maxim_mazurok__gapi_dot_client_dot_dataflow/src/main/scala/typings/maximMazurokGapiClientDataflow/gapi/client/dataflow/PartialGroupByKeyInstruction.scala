@@ -35,7 +35,8 @@ object PartialGroupByKeyInstruction {
     __obj.asInstanceOf[PartialGroupByKeyInstruction]
   }
   
-  extension [Self <: PartialGroupByKeyInstruction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialGroupByKeyInstruction] (val x: Self) extends AnyVal {
     
     inline def setInput(value: InstructionInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

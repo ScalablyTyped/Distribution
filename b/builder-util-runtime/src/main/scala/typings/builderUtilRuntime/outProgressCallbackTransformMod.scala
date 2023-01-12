@@ -55,7 +55,8 @@ object outProgressCallbackTransformMod {
       __obj.asInstanceOf[ProgressInfo]
     }
     
-    extension [Self <: ProgressInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressInfo] (val x: Self) extends AnyVal {
       
       inline def setBytesPerSecond(value: Double): Self = StObject.set(x, "bytesPerSecond", value.asInstanceOf[js.Any])
       

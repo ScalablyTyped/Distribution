@@ -33,7 +33,8 @@ object DescribeDBSecurityGroupsMessage {
     __obj.asInstanceOf[DescribeDBSecurityGroupsMessage]
   }
   
-  extension [Self <: DescribeDBSecurityGroupsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDBSecurityGroupsMessage] (val x: Self) extends AnyVal {
     
     inline def setDBSecurityGroupName(value: String): Self = StObject.set(x, "DBSecurityGroupName", value.asInstanceOf[js.Any])
     

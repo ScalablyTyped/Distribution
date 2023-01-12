@@ -92,7 +92,8 @@ object buildCommandsGeckoMod {
       __obj.asInstanceOf[GeckoCommands]
     }
     
-    extension [Self <: GeckoCommands](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeckoCommands] (val x: Self) extends AnyVal {
       
       inline def setFullPageScreenshot(value: () => String): Self = StObject.set(x, "fullPageScreenshot", js.Any.fromFunction0(value))
       

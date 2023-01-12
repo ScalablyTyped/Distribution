@@ -62,7 +62,8 @@ object ClientOperationId {
     __obj.asInstanceOf[ClientOperationId]
   }
   
-  extension [Self <: ClientOperationId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientOperationId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

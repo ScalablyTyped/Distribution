@@ -37,7 +37,8 @@ object AppProcessInfo {
     __obj.asInstanceOf[AppProcessInfo]
   }
   
-  extension [Self <: AppProcessInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppProcessInfo] (val x: Self) extends AnyVal {
     
     inline def setApkSha256Hash(value: String): Self = StObject.set(x, "apkSha256Hash", value.asInstanceOf[js.Any])
     

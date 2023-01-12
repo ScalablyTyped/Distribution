@@ -38,7 +38,8 @@ object BlockContentMap {
     __obj.asInstanceOf[BlockContentMap]
   }
   
-  extension [Self <: BlockContentMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockContentMap] (val x: Self) extends AnyVal {
     
     inline def setBlockquote(value: Blockquote): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
     

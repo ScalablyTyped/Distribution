@@ -23,7 +23,8 @@ object CopyOptions {
     __obj.asInstanceOf[CopyOptions]
   }
   
-  extension [Self <: CopyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyOptions] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: (/* source */ String, /* destination */ String) => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
     

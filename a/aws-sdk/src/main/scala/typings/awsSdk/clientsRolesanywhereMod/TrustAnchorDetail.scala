@@ -48,7 +48,8 @@ object TrustAnchorDetail {
     __obj.asInstanceOf[TrustAnchorDetail]
   }
   
-  extension [Self <: TrustAnchorDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrustAnchorDetail] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

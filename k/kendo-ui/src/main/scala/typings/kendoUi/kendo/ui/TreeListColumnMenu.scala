@@ -21,7 +21,8 @@ object TreeListColumnMenu {
     __obj.asInstanceOf[TreeListColumnMenu]
   }
   
-  extension [Self <: TreeListColumnMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListColumnMenu] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: Boolean): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCompareLoadersBuild(value: LoaderBuild): Self = StObject.set(x, "compareLoadersBuild", value.asInstanceOf[js.Any])
       
@@ -150,7 +151,8 @@ object mod {
       __obj.asInstanceOf[SpeedMeasurePlugin]
     }
     
-    extension [Self <: SpeedMeasurePlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpeedMeasurePlugin] (val x: Self) extends AnyVal {
       
       inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       

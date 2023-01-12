@@ -116,7 +116,8 @@ object XGroup {
     __obj.asInstanceOf[XGroup]
   }
   
-  extension [Self <: XGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGroup] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: String): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
     

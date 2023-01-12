@@ -17,7 +17,8 @@ object CollisionGroup {
     __obj.asInstanceOf[CollisionGroup]
   }
   
-  extension [Self <: CollisionGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollisionGroup] (val x: Self) extends AnyVal {
     
     inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ListEnvironmentsRequest {
     __obj.asInstanceOf[ListEnvironmentsRequest]
   }
   
-  extension [Self <: ListEnvironmentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEnvironmentsRequest] (val x: Self) extends AnyVal {
     
     inline def setEngineType(value: EngineType): Self = StObject.set(x, "engineType", value.asInstanceOf[js.Any])
     

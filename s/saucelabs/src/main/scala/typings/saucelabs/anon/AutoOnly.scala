@@ -33,7 +33,8 @@ object AutoOnly {
     __obj.asInstanceOf[AutoOnly]
   }
   
-  extension [Self <: AutoOnly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoOnly] (val x: Self) extends AnyVal {
     
     inline def setAutoOnly(value: Boolean): Self = StObject.set(x, "autoOnly", value.asInstanceOf[js.Any])
     

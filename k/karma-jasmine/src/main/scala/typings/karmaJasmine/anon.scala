@@ -92,7 +92,8 @@ object anon {
       __obj.asInstanceOf[ConfigurationtimeoutInter]
     }
     
-    extension [Self <: ConfigurationtimeoutInter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigurationtimeoutInter] (val x: Self) extends AnyVal {
       
       inline def setAutoCleanClosures(value: Boolean): Self = StObject.set(x, "autoCleanClosures", value.asInstanceOf[js.Any])
       

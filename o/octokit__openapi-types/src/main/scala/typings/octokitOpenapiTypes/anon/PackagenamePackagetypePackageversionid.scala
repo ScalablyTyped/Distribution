@@ -30,7 +30,8 @@ object PackagenamePackagetypePackageversionid {
     __obj.asInstanceOf[PackagenamePackagetypePackageversionid]
   }
   
-  extension [Self <: PackagenamePackagetypePackageversionid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackagenamePackagetypePackageversionid] (val x: Self) extends AnyVal {
     
     inline def setPackage_name(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['package-name'] */ js.Any

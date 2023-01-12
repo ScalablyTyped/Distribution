@@ -26,7 +26,8 @@ object ManifestErrorEvent {
     __obj.asInstanceOf[ManifestErrorEvent]
   }
   
-  extension [Self <: ManifestErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setError(value: manifestError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

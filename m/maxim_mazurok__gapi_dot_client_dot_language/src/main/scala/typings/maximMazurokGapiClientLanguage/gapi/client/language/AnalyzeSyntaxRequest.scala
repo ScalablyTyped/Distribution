@@ -19,7 +19,8 @@ object AnalyzeSyntaxRequest {
     __obj.asInstanceOf[AnalyzeSyntaxRequest]
   }
   
-  extension [Self <: AnalyzeSyntaxRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyzeSyntaxRequest] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

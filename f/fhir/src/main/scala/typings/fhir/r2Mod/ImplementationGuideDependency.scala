@@ -32,7 +32,8 @@ object ImplementationGuideDependency {
     __obj.asInstanceOf[ImplementationGuideDependency]
   }
   
-  extension [Self <: ImplementationGuideDependency](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImplementationGuideDependency] (val x: Self) extends AnyVal {
     
     inline def setType(value: reference | inclusion): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

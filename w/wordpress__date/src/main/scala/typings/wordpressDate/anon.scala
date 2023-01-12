@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[AM]
     }
     
-    extension [Self <: AM](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AM] (val x: Self) extends AnyVal {
       
       inline def setAM(value: String): Self = StObject.set(x, "AM", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Date]
     }
     
-    extension [Self <: Date](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
       
       inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -73,7 +75,8 @@ object anon {
       __obj.asInstanceOf[Future]
     }
     
-    extension [Self <: Future](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Future] (val x: Self) extends AnyVal {
       
       inline def setFuture(value: String): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
       
@@ -112,7 +115,8 @@ object anon {
       __obj.asInstanceOf[Locale]
     }
     
-    extension [Self <: Locale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
@@ -151,7 +155,8 @@ object anon {
       __obj.asInstanceOf[Offset]
     }
     
-    extension [Self <: Offset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object GkeService {
     __obj.asInstanceOf[GkeService]
   }
   
-  extension [Self <: GkeService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GkeService] (val x: Self) extends AnyVal {
     
     inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     

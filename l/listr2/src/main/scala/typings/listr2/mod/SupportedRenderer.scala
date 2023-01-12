@@ -18,7 +18,8 @@ object SupportedRenderer {
     __obj.asInstanceOf[SupportedRenderer]
   }
   
-  extension [Self <: SupportedRenderer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupportedRenderer] (val x: Self) extends AnyVal {
     
     inline def setNonTTY(value: Boolean): Self = StObject.set(x, "nonTTY", value.asInstanceOf[js.Any])
     

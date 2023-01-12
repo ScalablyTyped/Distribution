@@ -47,7 +47,8 @@ object ExternalTfsBuild {
     __obj.asInstanceOf[ExternalTfsBuild]
   }
   
-  extension [Self <: ExternalTfsBuild](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalTfsBuild] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: scala.Double): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

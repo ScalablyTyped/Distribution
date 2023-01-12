@@ -17,7 +17,8 @@ object DenominatorUnits {
     __obj.asInstanceOf[DenominatorUnits]
   }
   
-  extension [Self <: DenominatorUnits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DenominatorUnits] (val x: Self) extends AnyVal {
     
     inline def setDenominatorUnits(value: js.Array[String] | typings.immutable.mod.List[String]): Self = StObject.set(x, "denominatorUnits", value.asInstanceOf[js.Any])
     

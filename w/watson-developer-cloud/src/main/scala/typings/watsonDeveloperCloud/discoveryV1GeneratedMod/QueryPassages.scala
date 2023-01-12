@@ -32,7 +32,8 @@ object QueryPassages {
     __obj.asInstanceOf[QueryPassages]
   }
   
-  extension [Self <: QueryPassages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryPassages] (val x: Self) extends AnyVal {
     
     inline def setDocument_id(value: String): Self = StObject.set(x, "document_id", value.asInstanceOf[js.Any])
     

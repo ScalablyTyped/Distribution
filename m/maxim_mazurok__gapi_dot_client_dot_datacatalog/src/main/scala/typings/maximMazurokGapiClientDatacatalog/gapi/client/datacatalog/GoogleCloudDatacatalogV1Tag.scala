@@ -39,7 +39,8 @@ object GoogleCloudDatacatalogV1Tag {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1Tag]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1Tag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1Tag] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

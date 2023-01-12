@@ -29,7 +29,8 @@ object StationaryLocation {
     __obj.asInstanceOf[StationaryLocation]
   }
   
-  extension [Self <: StationaryLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StationaryLocation] (val x: Self) extends AnyVal {
     
     inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
   }

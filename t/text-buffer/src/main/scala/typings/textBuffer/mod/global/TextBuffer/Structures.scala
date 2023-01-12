@@ -43,7 +43,8 @@ object Structures {
       __obj.asInstanceOf[BufferScanResult]
     }
     
-    extension [Self <: BufferScanResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferScanResult] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: typings.textBuffer.mod.global.TextBuffer.TextBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object Structures {
       __obj.asInstanceOf[ContextualBufferScanResult]
     }
     
-    extension [Self <: ContextualBufferScanResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextualBufferScanResult] (val x: Self) extends AnyVal {
       
       inline def setLeadingContextLines(value: js.Array[String]): Self = StObject.set(x, "leadingContextLines", value.asInstanceOf[js.Any])
       
@@ -133,7 +135,8 @@ object Structures {
       __obj.asInstanceOf[TextChange]
     }
     
-    extension [Self <: TextChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextChange] (val x: Self) extends AnyVal {
       
       inline def setNewExtent(value: Point): Self = StObject.set(x, "newExtent", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object LatitudeBands {
     __obj.asInstanceOf[LatitudeBands]
   }
   
-  extension [Self <: LatitudeBands](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LatitudeBands] (val x: Self) extends AnyVal {
     
     inline def setCalculateTangents(value: Boolean): Self = StObject.set(x, "calculateTangents", value.asInstanceOf[js.Any])
     

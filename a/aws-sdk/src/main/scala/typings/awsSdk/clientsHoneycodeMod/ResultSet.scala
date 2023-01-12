@@ -23,7 +23,8 @@ object ResultSet {
     __obj.asInstanceOf[ResultSet]
   }
   
-  extension [Self <: ResultSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultSet] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: ResultHeader): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

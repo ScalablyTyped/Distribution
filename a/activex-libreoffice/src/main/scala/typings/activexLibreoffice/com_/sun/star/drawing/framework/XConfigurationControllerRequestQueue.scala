@@ -34,7 +34,8 @@ object XConfigurationControllerRequestQueue {
     __obj.asInstanceOf[XConfigurationControllerRequestQueue]
   }
   
-  extension [Self <: XConfigurationControllerRequestQueue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XConfigurationControllerRequestQueue] (val x: Self) extends AnyVal {
     
     inline def setHasPendingRequests(value: () => Boolean): Self = StObject.set(x, "hasPendingRequests", js.Any.fromFunction0(value))
     

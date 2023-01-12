@@ -24,7 +24,8 @@ object EducationOutcome {
     __obj.asInstanceOf[EducationOutcome]
   }
   
-  extension [Self <: EducationOutcome](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EducationOutcome] (val x: Self) extends AnyVal {
     
     inline def setLastModifiedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object Mask {
     __obj.asInstanceOf[Mask]
   }
   
-  extension [Self <: Mask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mask] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

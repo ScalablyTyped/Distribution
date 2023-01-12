@@ -28,7 +28,8 @@ object OfflineOptions {
     __obj.asInstanceOf[OfflineOptions]
   }
   
-  extension [Self <: OfflineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OfflineOptions] (val x: Self) extends AnyVal {
     
     inline def setCheckOnLoad(value: Boolean): Self = StObject.set(x, "checkOnLoad", value.asInstanceOf[js.Any])
     

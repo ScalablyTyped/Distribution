@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[DecodeOptions]
     }
     
-    extension [Self <: DecodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodeOptions] (val x: Self) extends AnyVal {
       
       inline def setIsAttributeValue(value: Boolean): Self = StObject.set(x, "isAttributeValue", value.asInstanceOf[js.Any])
       
@@ -145,7 +146,8 @@ object mod {
       __obj.asInstanceOf[EncodeOptions]
     }
     
-    extension [Self <: EncodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodeOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowUnsafeSymbols(value: Boolean): Self = StObject.set(x, "allowUnsafeSymbols", value.asInstanceOf[js.Any])
       

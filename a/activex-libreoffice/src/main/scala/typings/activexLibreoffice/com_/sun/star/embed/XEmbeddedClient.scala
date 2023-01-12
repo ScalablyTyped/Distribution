@@ -40,7 +40,8 @@ object XEmbeddedClient {
     __obj.asInstanceOf[XEmbeddedClient]
   }
   
-  extension [Self <: XEmbeddedClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEmbeddedClient] (val x: Self) extends AnyVal {
     
     inline def setSaveObject(value: () => Unit): Self = StObject.set(x, "saveObject", js.Any.fromFunction0(value))
     

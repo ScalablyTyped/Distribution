@@ -52,7 +52,8 @@ object AllowBrowserExecution {
     __obj.asInstanceOf[AllowBrowserExecution]
   }
   
-  extension [Self <: AllowBrowserExecution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowBrowserExecution] (val x: Self) extends AnyVal {
     
     inline def setAllowBrowserExecution(value: Boolean): Self = StObject.set(x, "allowBrowserExecution", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object DeleteAddonResponse {
     __obj.asInstanceOf[DeleteAddonResponse]
   }
   
-  extension [Self <: DeleteAddonResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAddonResponse] (val x: Self) extends AnyVal {
     
     inline def setAddon(value: Addon): Self = StObject.set(x, "addon", value.asInstanceOf[js.Any])
     

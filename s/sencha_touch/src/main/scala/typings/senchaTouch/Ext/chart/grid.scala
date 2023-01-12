@@ -38,7 +38,8 @@ object grid {
       __obj.asInstanceOf[IHorizontalGrid]
     }
     
-    extension [Self <: IHorizontalGrid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHorizontalGrid] (val x: Self) extends AnyVal {
       
       inline def setRender(
         value: (/* surface */ js.UndefOr[Any], /* ctx */ js.UndefOr[Any], /* clipRegion */ js.UndefOr[Any]) => Any
@@ -72,7 +73,8 @@ object grid {
       __obj.asInstanceOf[IRadialGrid]
     }
     
-    extension [Self <: IRadialGrid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRadialGrid] (val x: Self) extends AnyVal {
       
       inline def setRender(value: () => Any): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
       
@@ -111,7 +113,8 @@ object grid {
       __obj.asInstanceOf[IVerticalGrid]
     }
     
-    extension [Self <: IVerticalGrid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IVerticalGrid] (val x: Self) extends AnyVal {
       
       inline def setRender(
         value: (/* surface */ js.UndefOr[Any], /* ctx */ js.UndefOr[Any], /* clipRegion */ js.UndefOr[Any]) => Any

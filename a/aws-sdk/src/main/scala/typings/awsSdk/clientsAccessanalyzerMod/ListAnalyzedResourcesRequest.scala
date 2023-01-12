@@ -33,7 +33,8 @@ object ListAnalyzedResourcesRequest {
     __obj.asInstanceOf[ListAnalyzedResourcesRequest]
   }
   
-  extension [Self <: ListAnalyzedResourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAnalyzedResourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setAnalyzerArn(value: AnalyzerArn): Self = StObject.set(x, "analyzerArn", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ScheduledSplitsLaunchDefinition {
     __obj.asInstanceOf[ScheduledSplitsLaunchDefinition]
   }
   
-  extension [Self <: ScheduledSplitsLaunchDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduledSplitsLaunchDefinition] (val x: Self) extends AnyVal {
     
     inline def setSteps(value: ScheduledStepList): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     

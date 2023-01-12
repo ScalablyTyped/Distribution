@@ -20,7 +20,8 @@ object IBUDDY_VARIABLES_UPDATE {
     __obj.asInstanceOf[IBUDDY_VARIABLES_UPDATE]
   }
   
-  extension [Self <: IBUDDY_VARIABLES_UPDATE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBUDDY_VARIABLES_UPDATE] (val x: Self) extends AnyVal {
     
     inline def setBuddy(value: SFSBuddy): Self = StObject.set(x, "buddy", value.asInstanceOf[js.Any])
     

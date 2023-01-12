@@ -25,7 +25,8 @@ object SceneConstructorOptions {
     __obj.asInstanceOf[SceneConstructorOptions]
   }
   
-  extension [Self <: SceneConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: (js.Function0[Double | String]) | Double | String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

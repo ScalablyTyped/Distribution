@@ -47,7 +47,8 @@ object tabbedViewMod {
       __obj.asInstanceOf[TabProps]
     }
     
-    extension [Self <: TabProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabProps] (val x: Self) extends AnyVal {
       
       inline def setBadge(value: ReactNode): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object tabbedViewMod {
       __obj.asInstanceOf[TabbedViewProps]
     }
     
-    extension [Self <: TabbedViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabbedViewProps] (val x: Self) extends AnyVal {
       
       inline def setActiveTab(value: String): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
       

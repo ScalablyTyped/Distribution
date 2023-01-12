@@ -18,7 +18,8 @@ object RuntimeConfiguration {
     __obj.asInstanceOf[RuntimeConfiguration]
   }
   
-  extension [Self <: RuntimeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setTelemetryConfiguration(value: TelemetryConfiguration): Self = StObject.set(x, "TelemetryConfiguration", value.asInstanceOf[js.Any])
     

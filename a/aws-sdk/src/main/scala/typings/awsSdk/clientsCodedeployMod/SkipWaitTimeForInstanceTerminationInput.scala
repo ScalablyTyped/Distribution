@@ -18,7 +18,8 @@ object SkipWaitTimeForInstanceTerminationInput {
     __obj.asInstanceOf[SkipWaitTimeForInstanceTerminationInput]
   }
   
-  extension [Self <: SkipWaitTimeForInstanceTerminationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkipWaitTimeForInstanceTerminationInput] (val x: Self) extends AnyVal {
     
     inline def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     

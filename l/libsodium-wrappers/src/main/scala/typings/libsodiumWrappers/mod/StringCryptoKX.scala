@@ -17,7 +17,8 @@ object StringCryptoKX {
     __obj.asInstanceOf[StringCryptoKX]
   }
   
-  extension [Self <: StringCryptoKX](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringCryptoKX] (val x: Self) extends AnyVal {
     
     inline def setSharedRx(value: String): Self = StObject.set(x, "sharedRx", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object distRequestCommonSilentFlowRequestMod {
       __obj.asInstanceOf[CommonSilentFlowRequest]
     }
     
-    extension [Self <: CommonSilentFlowRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSilentFlowRequest] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: AccountInfo): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       

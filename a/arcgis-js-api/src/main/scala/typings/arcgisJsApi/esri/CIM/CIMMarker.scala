@@ -87,7 +87,8 @@ object CIMMarker {
     __obj.asInstanceOf[CIMMarker]
   }
   
-  extension [Self <: CIMMarker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMMarker] (val x: Self) extends AnyVal {
     
     inline def setAnchorPoint(value: ExternalReferencePoint): Self = StObject.set(x, "anchorPoint", value.asInstanceOf[js.Any])
     

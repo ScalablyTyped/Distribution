@@ -23,7 +23,8 @@ object RadarDataset {
     __obj.asInstanceOf[RadarDataset]
   }
   
-  extension [Self <: RadarDataset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadarDataset] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: RadarDatasetConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

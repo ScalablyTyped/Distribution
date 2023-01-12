@@ -18,7 +18,8 @@ object CreateDefaultVpcResult {
     __obj.asInstanceOf[CreateDefaultVpcResult]
   }
   
-  extension [Self <: CreateDefaultVpcResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDefaultVpcResult] (val x: Self) extends AnyVal {
     
     inline def setVpc(value: Vpc): Self = StObject.set(x, "Vpc", value.asInstanceOf[js.Any])
     

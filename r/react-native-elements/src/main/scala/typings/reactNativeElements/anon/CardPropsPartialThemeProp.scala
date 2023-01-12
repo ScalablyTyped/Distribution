@@ -26,7 +26,8 @@ object CardPropsPartialThemeProp {
     __obj.asInstanceOf[CardPropsPartialThemeProp]
   }
   
-  extension [Self <: CardPropsPartialThemeProp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardPropsPartialThemeProp] (val x: Self) extends AnyVal {
     
     inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     

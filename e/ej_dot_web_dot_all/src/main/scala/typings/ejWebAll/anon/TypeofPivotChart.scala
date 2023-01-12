@@ -20,7 +20,8 @@ object TypeofPivotChart {
     __obj.asInstanceOf[TypeofPivotChart]
   }
   
-  extension [Self <: TypeofPivotChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPivotChart] (val x: Self) extends AnyVal {
     
     inline def setFn(value: PivotChart): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

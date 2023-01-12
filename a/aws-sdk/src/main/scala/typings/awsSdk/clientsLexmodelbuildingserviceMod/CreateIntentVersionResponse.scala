@@ -103,7 +103,8 @@ object CreateIntentVersionResponse {
     __obj.asInstanceOf[CreateIntentVersionResponse]
   }
   
-  extension [Self <: CreateIntentVersionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateIntentVersionResponse] (val x: Self) extends AnyVal {
     
     inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     

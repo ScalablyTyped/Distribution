@@ -28,7 +28,8 @@ object ListPoliciesRequest {
     __obj.asInstanceOf[ListPoliciesRequest]
   }
   
-  extension [Self <: ListPoliciesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPoliciesRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: PolicyType): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

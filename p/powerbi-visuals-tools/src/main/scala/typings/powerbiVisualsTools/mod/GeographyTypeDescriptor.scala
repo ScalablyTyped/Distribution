@@ -35,7 +35,8 @@ object GeographyTypeDescriptor {
     __obj.asInstanceOf[GeographyTypeDescriptor]
   }
   
-  extension [Self <: GeographyTypeDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeographyTypeDescriptor] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: Boolean): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

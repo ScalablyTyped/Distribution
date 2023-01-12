@@ -117,7 +117,8 @@ object mod {
       __obj.asInstanceOf[GcInfo]
     }
     
-    extension [Self <: GcInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GcInfo] (val x: Self) extends AnyVal {
       
       inline def setDiff(value: GcStats): Self = StObject.set(x, "diff", value.asInstanceOf[js.Any])
       
@@ -214,7 +215,8 @@ object mod {
       __obj.asInstanceOf[GcStats]
     }
     
-    extension [Self <: GcStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GcStats] (val x: Self) extends AnyVal {
       
       inline def setExternalMemory(value: Double): Self = StObject.set(x, "externalMemory", value.asInstanceOf[js.Any])
       

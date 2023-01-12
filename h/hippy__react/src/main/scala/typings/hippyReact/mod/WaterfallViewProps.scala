@@ -137,7 +137,8 @@ object WaterfallViewProps {
     __obj.asInstanceOf[WaterfallViewProps]
   }
   
-  extension [Self <: WaterfallViewProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WaterfallViewProps] (val x: Self) extends AnyVal {
     
     inline def setColumnSpacing(value: Double): Self = StObject.set(x, "columnSpacing", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object MacAlgorithmProvider {
     __obj.asInstanceOf[MacAlgorithmProvider]
   }
   
-  extension [Self <: MacAlgorithmProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MacAlgorithmProvider] (val x: Self) extends AnyVal {
     
     inline def setAlgorithmName(value: String): Self = StObject.set(x, "algorithmName", value.asInstanceOf[js.Any])
     

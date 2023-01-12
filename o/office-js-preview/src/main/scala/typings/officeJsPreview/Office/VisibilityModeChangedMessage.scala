@@ -21,7 +21,8 @@ object VisibilityModeChangedMessage {
     __obj.asInstanceOf[VisibilityModeChangedMessage]
   }
   
-  extension [Self <: VisibilityModeChangedMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisibilityModeChangedMessage] (val x: Self) extends AnyVal {
     
     inline def setVisibilityMode(value: VisibilityMode): Self = StObject.set(x, "visibilityMode", value.asInstanceOf[js.Any])
   }

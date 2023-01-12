@@ -23,7 +23,8 @@ object ListSizeConstraintSetsRequest {
     __obj.asInstanceOf[ListSizeConstraintSetsRequest]
   }
   
-  extension [Self <: ListSizeConstraintSetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSizeConstraintSetsRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: PaginationLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

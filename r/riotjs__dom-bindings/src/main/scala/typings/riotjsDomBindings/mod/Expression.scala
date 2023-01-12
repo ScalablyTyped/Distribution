@@ -34,7 +34,8 @@ object Expression {
     __obj.asInstanceOf[Expression[Scope]]
   }
   
-  extension [Self <: Expression[?], Scope](x: Self & Expression[Scope]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Expression[?], Scope] (val x: Self & Expression[Scope]) extends AnyVal {
     
     inline def setMount(value: Scope => Expression[Scope]): Self = StObject.set(x, "mount", js.Any.fromFunction1(value))
     

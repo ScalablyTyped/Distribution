@@ -410,7 +410,8 @@ object Radio {
     __obj.asInstanceOf[Radio]
   }
   
-  extension [Self <: Radio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Radio] (val x: Self) extends AnyVal {
     
     inline def setAnchorAllowWhiteSpaceInCharacters(value: String): Self = StObject.set(x, "anchorAllowWhiteSpaceInCharacters", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object GoogleCloudSecuritycenterV1ExternalSystem {
     __obj.asInstanceOf[GoogleCloudSecuritycenterV1ExternalSystem]
   }
   
-  extension [Self <: GoogleCloudSecuritycenterV1ExternalSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudSecuritycenterV1ExternalSystem] (val x: Self) extends AnyVal {
     
     inline def setAssignees(value: js.Array[String]): Self = StObject.set(x, "assignees", value.asInstanceOf[js.Any])
     

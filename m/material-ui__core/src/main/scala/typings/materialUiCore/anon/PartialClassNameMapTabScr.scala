@@ -20,7 +20,8 @@ object PartialClassNameMapTabScr {
     __obj.asInstanceOf[PartialClassNameMapTabScr]
   }
   
-  extension [Self <: PartialClassNameMapTabScr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapTabScr] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

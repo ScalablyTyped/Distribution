@@ -44,7 +44,8 @@ object OfflineController {
     __obj.asInstanceOf[OfflineController]
   }
   
-  extension [Self <: OfflineController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OfflineController] (val x: Self) extends AnyVal {
     
     inline def setCreateRecord(value: String => js.Promise[String]): Self = StObject.set(x, "createRecord", js.Any.fromFunction1(value))
     

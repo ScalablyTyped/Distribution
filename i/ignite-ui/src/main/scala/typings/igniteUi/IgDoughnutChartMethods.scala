@@ -76,7 +76,8 @@ object IgDoughnutChartMethods {
     __obj.asInstanceOf[IgDoughnutChartMethods]
   }
   
-  extension [Self <: IgDoughnutChartMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgDoughnutChartMethods] (val x: Self) extends AnyVal {
     
     inline def setAddSeries(value: js.Object => Unit): Self = StObject.set(x, "addSeries", js.Any.fromFunction1(value))
     

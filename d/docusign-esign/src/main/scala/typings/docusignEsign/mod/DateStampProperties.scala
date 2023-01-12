@@ -33,7 +33,8 @@ object DateStampProperties {
     __obj.asInstanceOf[DateStampProperties]
   }
   
-  extension [Self <: DateStampProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateStampProperties] (val x: Self) extends AnyVal {
     
     inline def setDateAreaHeight(value: String): Self = StObject.set(x, "dateAreaHeight", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object Modals {
     __obj.asInstanceOf[Modals]
   }
   
-  extension [Self <: Modals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Modals] (val x: Self) extends AnyVal {
     
     inline def setModals(value: js.Array[Any]): Self = StObject.set(x, "modals", value.asInstanceOf[js.Any])
     

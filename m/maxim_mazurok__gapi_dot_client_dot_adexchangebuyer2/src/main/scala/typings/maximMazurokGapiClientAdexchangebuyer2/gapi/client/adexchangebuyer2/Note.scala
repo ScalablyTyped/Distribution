@@ -31,7 +31,8 @@ object Note {
     __obj.asInstanceOf[Note]
   }
   
-  extension [Self <: Note](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Note] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Conditions]
     }
     
-    extension [Self <: Conditions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Conditions] (val x: Self) extends AnyVal {
       
       inline def setConditions(value: js.Array[String]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Format]
     }
     
-    extension [Self <: Format](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[ParentURL]
     }
     
-    extension [Self <: ParentURL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParentURL] (val x: Self) extends AnyVal {
       
       inline def setParentURL(value: String): Self = StObject.set(x, "parentURL", value.asInstanceOf[js.Any])
     }

@@ -33,7 +33,8 @@ object distLibCommandsHelloMod {
       __obj.asInstanceOf[HelloOptions]
     }
     
-    extension [Self <: HelloOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelloOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: RequiredAuthOptions): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object distLibCommandsHelloMod {
       __obj.asInstanceOf[HelloTransformedReply]
     }
     
-    extension [Self <: HelloTransformedReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelloTransformedReply] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

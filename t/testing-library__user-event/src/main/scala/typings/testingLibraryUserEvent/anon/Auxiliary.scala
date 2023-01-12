@@ -32,7 +32,8 @@ object Auxiliary {
     __obj.asInstanceOf[Auxiliary]
   }
   
-  extension [Self <: Auxiliary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Auxiliary] (val x: Self) extends AnyVal {
     
     inline def setAuxiliary(value: `2`): Self = StObject.set(x, "auxiliary", value.asInstanceOf[js.Any])
     

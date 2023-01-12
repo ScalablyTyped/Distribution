@@ -95,7 +95,8 @@ object SFSBuddy {
     __obj.asInstanceOf[SFSBuddy]
   }
   
-  extension [Self <: SFSBuddy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SFSBuddy] (val x: Self) extends AnyVal {
     
     inline def setContainsVariable(value: String => Boolean): Self = StObject.set(x, "containsVariable", js.Any.fromFunction1(value))
     

@@ -28,7 +28,8 @@ object ASPxSeparatePaneIndicator {
     __obj.asInstanceOf[ASPxSeparatePaneIndicator]
   }
   
-  extension [Self <: ASPxSeparatePaneIndicator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxSeparatePaneIndicator] (val x: Self) extends AnyVal {
     
     inline def setAxisY(value: String): Self = StObject.set(x, "axisY", value.asInstanceOf[js.Any])
     

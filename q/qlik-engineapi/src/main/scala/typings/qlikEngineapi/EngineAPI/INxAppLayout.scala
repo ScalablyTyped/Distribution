@@ -90,7 +90,8 @@ object INxAppLayout {
     __obj.asInstanceOf[INxAppLayout]
   }
   
-  extension [Self <: INxAppLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxAppLayout] (val x: Self) extends AnyVal {
     
     inline def setQFileName(value: String): Self = StObject.set(x, "qFileName", value.asInstanceOf[js.Any])
     

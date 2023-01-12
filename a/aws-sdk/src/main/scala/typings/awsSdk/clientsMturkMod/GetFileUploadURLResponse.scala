@@ -18,7 +18,8 @@ object GetFileUploadURLResponse {
     __obj.asInstanceOf[GetFileUploadURLResponse]
   }
   
-  extension [Self <: GetFileUploadURLResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFileUploadURLResponse] (val x: Self) extends AnyVal {
     
     inline def setFileUploadURL(value: String): Self = StObject.set(x, "FileUploadURL", value.asInstanceOf[js.Any])
     

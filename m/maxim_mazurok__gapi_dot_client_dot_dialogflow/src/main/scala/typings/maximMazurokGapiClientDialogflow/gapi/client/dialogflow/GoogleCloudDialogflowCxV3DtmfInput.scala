@@ -19,7 +19,8 @@ object GoogleCloudDialogflowCxV3DtmfInput {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3DtmfInput]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3DtmfInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3DtmfInput] (val x: Self) extends AnyVal {
     
     inline def setDigits(value: String): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
     

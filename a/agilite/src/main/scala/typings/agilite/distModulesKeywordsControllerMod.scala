@@ -192,7 +192,8 @@ object distModulesKeywordsControllerMod {
       __obj.asInstanceOf[OutputFormat]
     }
     
-    extension [Self <: OutputFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputFormat] (val x: Self) extends AnyVal {
       
       inline def setJSON(value: String): Self = StObject.set(x, "JSON", value.asInstanceOf[js.Any])
       
@@ -217,7 +218,8 @@ object distModulesKeywordsControllerMod {
       __obj.asInstanceOf[Sort]
     }
     
-    extension [Self <: Sort](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sort] (val x: Self) extends AnyVal {
       
       inline def setASC(value: String): Self = StObject.set(x, "ASC", value.asInstanceOf[js.Any])
       
@@ -242,7 +244,8 @@ object distModulesKeywordsControllerMod {
       __obj.asInstanceOf[Values]
     }
     
-    extension [Self <: Values](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Values] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

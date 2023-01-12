@@ -21,7 +21,8 @@ object LineScatterCandleRadarConfig {
     __obj.asInstanceOf[LineScatterCandleRadarConfig]
   }
   
-  extension [Self <: LineScatterCandleRadarConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineScatterCandleRadarConfig] (val x: Self) extends AnyVal {
     
     inline def setDrawHighlightIndicators(value: Boolean): Self = StObject.set(x, "drawHighlightIndicators", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object FileLoadError {
     __obj.asInstanceOf[FileLoadError]
   }
   
-  extension [Self <: FileLoadError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileLoadError] (val x: Self) extends AnyVal {
     
     inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }

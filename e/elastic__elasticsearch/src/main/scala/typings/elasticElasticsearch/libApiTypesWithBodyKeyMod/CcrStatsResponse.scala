@@ -17,7 +17,8 @@ object CcrStatsResponse {
     __obj.asInstanceOf[CcrStatsResponse]
   }
   
-  extension [Self <: CcrStatsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CcrStatsResponse] (val x: Self) extends AnyVal {
     
     inline def setAuto_follow_stats(value: CcrStatsAutoFollowStats): Self = StObject.set(x, "auto_follow_stats", value.asInstanceOf[js.Any])
     

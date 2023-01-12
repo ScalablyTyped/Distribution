@@ -34,7 +34,8 @@ object ImClient {
     __obj.asInstanceOf[ImClient]
   }
   
-  extension [Self <: ImClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImClient] (val x: Self) extends AnyVal {
     
     inline def setFormattedProtocol(value: String): Self = StObject.set(x, "formattedProtocol", value.asInstanceOf[js.Any])
     

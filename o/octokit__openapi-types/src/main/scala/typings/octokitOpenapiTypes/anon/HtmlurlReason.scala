@@ -19,7 +19,8 @@ object HtmlurlReason {
     __obj.asInstanceOf[HtmlurlReason]
   }
   
-  extension [Self <: HtmlurlReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HtmlurlReason] (val x: Self) extends AnyVal {
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     

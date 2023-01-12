@@ -22,7 +22,8 @@ object GeneralCallbackResultPart {
     __obj.asInstanceOf[GeneralCallbackResultPart]
   }
   
-  extension [Self <: GeneralCallbackResultPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneralCallbackResultPart] (val x: Self) extends AnyVal {
     
     inline def setCloudID(value: String): Self = StObject.set(x, "cloudID", value.asInstanceOf[js.Any])
     

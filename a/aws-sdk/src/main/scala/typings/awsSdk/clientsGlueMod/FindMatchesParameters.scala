@@ -33,7 +33,8 @@ object FindMatchesParameters {
     __obj.asInstanceOf[FindMatchesParameters]
   }
   
-  extension [Self <: FindMatchesParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindMatchesParameters] (val x: Self) extends AnyVal {
     
     inline def setAccuracyCostTradeoff(value: GenericBoundedDouble): Self = StObject.set(x, "AccuracyCostTradeoff", value.asInstanceOf[js.Any])
     

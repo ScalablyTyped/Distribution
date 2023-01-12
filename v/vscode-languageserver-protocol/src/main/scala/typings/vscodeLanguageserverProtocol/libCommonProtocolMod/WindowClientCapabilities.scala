@@ -41,7 +41,8 @@ object WindowClientCapabilities {
     __obj.asInstanceOf[WindowClientCapabilities]
   }
   
-  extension [Self <: WindowClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setShowDocument(value: ShowDocumentClientCapabilities): Self = StObject.set(x, "showDocument", value.asInstanceOf[js.Any])
     

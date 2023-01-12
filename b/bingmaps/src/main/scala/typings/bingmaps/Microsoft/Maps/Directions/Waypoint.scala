@@ -47,7 +47,8 @@ object Waypoint {
     __obj.asInstanceOf[Waypoint]
   }
   
-  extension [Self <: Waypoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Waypoint] (val x: Self) extends AnyVal {
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     

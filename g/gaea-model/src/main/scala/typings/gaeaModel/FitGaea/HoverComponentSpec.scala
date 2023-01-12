@@ -23,7 +23,8 @@ object HoverComponentSpec {
     __obj.asInstanceOf[HoverComponentSpec]
   }
   
-  extension [Self <: HoverComponentSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoverComponentSpec] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object RightTappedEventArgs {
     __obj.asInstanceOf[RightTappedEventArgs]
   }
   
-  extension [Self <: RightTappedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RightTappedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setPointerDeviceType(value: PointerDeviceType): Self = StObject.set(x, "pointerDeviceType", value.asInstanceOf[js.Any])
     

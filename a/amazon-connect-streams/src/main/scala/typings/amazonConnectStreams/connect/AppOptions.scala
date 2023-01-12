@@ -19,7 +19,8 @@ object AppOptions {
     __obj.asInstanceOf[AppOptions]
   }
   
-  extension [Self <: AppOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppOptions] (val x: Self) extends AnyVal {
     
     inline def setCcpParams(value: OptionalInitCCPOptions): Self = StObject.set(x, "ccpParams", value.asInstanceOf[js.Any])
     

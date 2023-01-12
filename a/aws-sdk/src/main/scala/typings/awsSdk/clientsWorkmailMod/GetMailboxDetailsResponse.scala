@@ -23,7 +23,8 @@ object GetMailboxDetailsResponse {
     __obj.asInstanceOf[GetMailboxDetailsResponse]
   }
   
-  extension [Self <: GetMailboxDetailsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMailboxDetailsResponse] (val x: Self) extends AnyVal {
     
     inline def setMailboxQuota(value: MailboxQuota): Self = StObject.set(x, "MailboxQuota", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object AggregationsTermsPartition {
     __obj.asInstanceOf[AggregationsTermsPartition]
   }
   
-  extension [Self <: AggregationsTermsPartition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsTermsPartition] (val x: Self) extends AnyVal {
     
     inline def setNum_partitions(value: long): Self = StObject.set(x, "num_partitions", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object DeploymentStrategy {
     __obj.asInstanceOf[DeploymentStrategy]
   }
   
-  extension [Self <: DeploymentStrategy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentStrategy] (val x: Self) extends AnyVal {
     
     inline def setDeploymentDurationInMinutes(value: MinutesBetween0And24Hours): Self = StObject.set(x, "DeploymentDurationInMinutes", value.asInstanceOf[js.Any])
     

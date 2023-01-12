@@ -67,7 +67,8 @@ object Section {
     __obj.asInstanceOf[Section]
   }
   
-  extension [Self <: Section](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Section] (val x: Self) extends AnyVal {
     
     inline def setGetRow(value: Double => Row): Self = StObject.set(x, "getRow", js.Any.fromFunction1(value))
     

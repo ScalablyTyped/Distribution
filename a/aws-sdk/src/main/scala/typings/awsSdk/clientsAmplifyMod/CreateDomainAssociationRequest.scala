@@ -43,7 +43,8 @@ object CreateDomainAssociationRequest {
     __obj.asInstanceOf[CreateDomainAssociationRequest]
   }
   
-  extension [Self <: CreateDomainAssociationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDomainAssociationRequest] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

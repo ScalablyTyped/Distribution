@@ -68,7 +68,8 @@ object QuestionMap {
     __obj.asInstanceOf[QuestionMap[T]]
   }
   
-  extension [Self <: QuestionMap[?], T /* <: Answers */](x: Self & QuestionMap[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuestionMap[?], T /* <: Answers */] (val x: Self & QuestionMap[T]) extends AnyVal {
     
     inline def setCheckbox(value: CheckboxQuestion[T]): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
     

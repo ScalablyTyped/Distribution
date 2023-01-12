@@ -29,7 +29,8 @@ object InProgress_ {
     __obj.asInstanceOf[InProgress_]
   }
   
-  extension [Self <: InProgress_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InProgress_] (val x: Self) extends AnyVal {
     
     inline def setAbandoned(value: scala.Double): Self = StObject.set(x, "abandoned", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[PluginOptions]
     }
     
-    extension [Self <: PluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
       
       inline def setBasename_as_entry_name(value: Boolean): Self = StObject.set(x, "basename_as_entry_name", value.asInstanceOf[js.Any])
       

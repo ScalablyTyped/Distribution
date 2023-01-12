@@ -27,7 +27,8 @@ object distTypesOnStageGeneralDistComponentsExternalLinkSmallMod extends Shortcu
       __obj.asInstanceOf[ExternalLinkSmallProps]
     }
     
-    extension [Self <: ExternalLinkSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExternalLinkSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

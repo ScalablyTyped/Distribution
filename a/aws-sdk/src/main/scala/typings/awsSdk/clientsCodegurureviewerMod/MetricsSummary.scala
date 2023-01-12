@@ -28,7 +28,8 @@ object MetricsSummary {
     __obj.asInstanceOf[MetricsSummary]
   }
   
-  extension [Self <: MetricsSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricsSummary] (val x: Self) extends AnyVal {
     
     inline def setFindingsCount(value: FindingsCount): Self = StObject.set(x, "FindingsCount", value.asInstanceOf[js.Any])
     

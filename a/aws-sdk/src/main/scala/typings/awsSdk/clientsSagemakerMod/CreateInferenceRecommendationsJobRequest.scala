@@ -58,7 +58,8 @@ object CreateInferenceRecommendationsJobRequest {
     __obj.asInstanceOf[CreateInferenceRecommendationsJobRequest]
   }
   
-  extension [Self <: CreateInferenceRecommendationsJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateInferenceRecommendationsJobRequest] (val x: Self) extends AnyVal {
     
     inline def setInputConfig(value: RecommendationJobInputConfig): Self = StObject.set(x, "InputConfig", value.asInstanceOf[js.Any])
     

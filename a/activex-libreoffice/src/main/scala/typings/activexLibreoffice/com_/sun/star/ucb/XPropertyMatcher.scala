@@ -34,7 +34,8 @@ object XPropertyMatcher {
     __obj.asInstanceOf[XPropertyMatcher]
   }
   
-  extension [Self <: XPropertyMatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPropertyMatcher] (val x: Self) extends AnyVal {
     
     inline def setMatches(value: (XCommandProcessor, XCommandEnvironment) => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction2(value))
   }

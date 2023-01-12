@@ -15,7 +15,8 @@ object InAppBrowserEventListenerObject {
     __obj.asInstanceOf[InAppBrowserEventListenerObject]
   }
   
-  extension [Self <: InAppBrowserEventListenerObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InAppBrowserEventListenerObject] (val x: Self) extends AnyVal {
     
     inline def setHandleEvent(value: InAppBrowserEvent => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
   }

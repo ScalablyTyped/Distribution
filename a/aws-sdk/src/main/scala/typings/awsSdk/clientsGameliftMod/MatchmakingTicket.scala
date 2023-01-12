@@ -68,7 +68,8 @@ object MatchmakingTicket {
     __obj.asInstanceOf[MatchmakingTicket]
   }
   
-  extension [Self <: MatchmakingTicket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchmakingTicket] (val x: Self) extends AnyVal {
     
     inline def setConfigurationArn(value: MatchmakingConfigurationArn): Self = StObject.set(x, "ConfigurationArn", value.asInstanceOf[js.Any])
     

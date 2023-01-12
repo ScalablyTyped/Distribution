@@ -153,7 +153,8 @@ object libTypesMod {
       __obj.asInstanceOf[IAceOptions]
     }
     
-    extension [Self <: IAceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAceOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimatedScroll(value: Boolean): Self = StObject.set(x, "animatedScroll", value.asInstanceOf[js.Any])
       
@@ -375,7 +376,8 @@ object libTypesMod {
       __obj.asInstanceOf[IAnnotation]
     }
     
-    extension [Self <: IAnnotation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAnnotation] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -402,7 +404,8 @@ object libTypesMod {
       __obj.asInstanceOf[ICommand]
     }
     
-    extension [Self <: ICommand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICommand] (val x: Self) extends AnyVal {
       
       inline def setBindKey(value: ICommandBindKey): Self = StObject.set(x, "bindKey", value.asInstanceOf[js.Any])
       
@@ -427,7 +430,8 @@ object libTypesMod {
       __obj.asInstanceOf[ICommandBindKey]
     }
     
-    extension [Self <: ICommandBindKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICommandBindKey] (val x: Self) extends AnyVal {
       
       inline def setMac(value: String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
       
@@ -467,7 +471,8 @@ object libTypesMod {
       __obj.asInstanceOf[ICommandManager]
     }
     
-    extension [Self <: ICommandManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICommandManager] (val x: Self) extends AnyVal {
       
       inline def setAddCommand(value: Any => Unit): Self = StObject.set(x, "addCommand", js.Any.fromFunction1(value))
       
@@ -576,7 +581,8 @@ object libTypesMod {
       __obj.asInstanceOf[IEditorProps]
     }
     
-    extension [Self <: IEditorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEditorProps] (val x: Self) extends AnyVal {
       
       inline def set$blockScrolling(value: Double | Boolean): Self = StObject.set(x, "$blockScrolling", value.asInstanceOf[js.Any])
       
@@ -715,7 +721,8 @@ object libTypesMod {
       __obj.asInstanceOf[IMarker]
     }
     
-    extension [Self <: IMarker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMarker] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

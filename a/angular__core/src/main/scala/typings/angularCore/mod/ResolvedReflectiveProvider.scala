@@ -28,7 +28,8 @@ object ResolvedReflectiveProvider {
     __obj.asInstanceOf[ResolvedReflectiveProvider]
   }
   
-  extension [Self <: ResolvedReflectiveProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedReflectiveProvider] (val x: Self) extends AnyVal {
     
     inline def setKey(value: ReflectiveKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

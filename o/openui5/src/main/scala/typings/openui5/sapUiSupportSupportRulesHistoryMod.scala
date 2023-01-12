@@ -59,7 +59,8 @@ object sapUiSupportSupportRulesHistoryMod {
       __obj.asInstanceOf[AnalysisResult]
     }
     
-    extension [Self <: AnalysisResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalysisResult] (val x: Self) extends AnyVal {
       
       inline def setAnalysisInfo(value: js.Object): Self = StObject.set(x, "analysisInfo", value.asInstanceOf[js.Any])
       

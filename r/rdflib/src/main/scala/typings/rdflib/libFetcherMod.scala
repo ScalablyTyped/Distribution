@@ -120,7 +120,8 @@ object libFetcherMod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setPanes(value: Any): Self = StObject.set(x, "panes", value.asInstanceOf[js.Any])
         
@@ -227,7 +228,8 @@ object libFetcherMod {
       __obj.asInstanceOf[AutoInitOptions]
     }
     
-    extension [Self <: AutoInitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoInitOptions] (val x: Self) extends AnyVal {
       
       inline def setActualProxyURI(value: String): Self = StObject.set(x, "actualProxyURI", value.asInstanceOf[js.Any])
       
@@ -336,7 +338,8 @@ object libFetcherMod {
       __obj.asInstanceOf[CallbackifyInterface]
     }
     
-    extension [Self <: CallbackifyInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackifyInterface] (val x: Self) extends AnyVal {
       
       inline def setFireCallbacks(value: js.Function): Self = StObject.set(x, "fireCallbacks", value.asInstanceOf[js.Any])
     }
@@ -381,7 +384,8 @@ object libFetcherMod {
       __obj.asInstanceOf[ExtendedResponse]
     }
     
-    extension [Self <: ExtendedResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendedResponse] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -431,7 +435,8 @@ object libFetcherMod {
       __obj.asInstanceOf[FetchError]
     }
     
-    extension [Self <: FetchError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchError] (val x: Self) extends AnyVal {
       
       inline def setResponse(value: ExtendedResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
@@ -844,7 +849,8 @@ object libFetcherMod {
       __obj.asInstanceOf[Handler]
     }
     
-    extension [Self <: Handler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Handler] (val x: Self) extends AnyVal {
       
       inline def setDom(value: Document): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
       
@@ -930,7 +936,8 @@ object libFetcherMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setActualProxyURI(value: String): Self = StObject.set(x, "actualProxyURI", value.asInstanceOf[js.Any])
       

@@ -53,7 +53,8 @@ object Handshake {
     __obj.asInstanceOf[Handshake]
   }
   
-  extension [Self <: Handshake](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Handshake] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ActionType): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

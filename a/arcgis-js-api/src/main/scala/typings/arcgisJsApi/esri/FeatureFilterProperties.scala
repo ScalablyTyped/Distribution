@@ -74,7 +74,8 @@ object FeatureFilterProperties {
     __obj.asInstanceOf[FeatureFilterProperties]
   }
   
-  extension [Self <: FeatureFilterProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureFilterProperties] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

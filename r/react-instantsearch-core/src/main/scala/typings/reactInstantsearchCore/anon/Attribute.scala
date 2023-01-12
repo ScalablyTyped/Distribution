@@ -24,7 +24,8 @@ object Attribute {
     __obj.asInstanceOf[Attribute[TDoc]]
   }
   
-  extension [Self <: Attribute[?], TDoc](x: Self & Attribute[TDoc]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Attribute[?], TDoc] (val x: Self & Attribute[TDoc]) extends AnyVal {
     
     inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

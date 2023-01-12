@@ -17,7 +17,8 @@ object ClusterStatsFieldTypesMappings {
     __obj.asInstanceOf[ClusterStatsFieldTypesMappings]
   }
   
-  extension [Self <: ClusterStatsFieldTypesMappings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatsFieldTypesMappings] (val x: Self) extends AnyVal {
     
     inline def setField_types(value: js.Array[ClusterStatsFieldTypes]): Self = StObject.set(x, "field_types", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object JQueryStatic {
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  extension [Self <: JQueryStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
     
     inline def setUniform(value: Uniform): Self = StObject.set(x, "uniform", value.asInstanceOf[js.Any])
   }

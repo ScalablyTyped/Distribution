@@ -21,7 +21,8 @@ object adapterMod {
       __obj.asInstanceOf[MDCSwitchAdapter]
     }
     
-    extension [Self <: MDCSwitchAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCSwitchAdapter] (val x: Self) extends AnyVal {
       
       inline def setState(value: MDCSwitchState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
@@ -83,7 +84,8 @@ object adapterMod {
       __obj.asInstanceOf[MDCSwitchRenderAdapter]
     }
     
-    extension [Self <: MDCSwitchRenderAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCSwitchRenderAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: CssClasses => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
@@ -124,7 +126,8 @@ object adapterMod {
       __obj.asInstanceOf[MDCSwitchState]
     }
     
-    extension [Self <: MDCSwitchState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCSwitchState] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[BaseOptions]
     }
     
-    extension [Self <: BaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object mod {
       __obj.asInstanceOf[RepoUrlOptions]
     }
     
-    extension [Self <: RepoUrlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RepoUrlOptions] (val x: Self) extends AnyVal {
       
       inline def setRepoUrl(value: String): Self = StObject.set(x, "repoUrl", value.asInstanceOf[js.Any])
     }
@@ -119,7 +121,8 @@ object mod {
       __obj.asInstanceOf[UserRepoOptions]
     }
     
-    extension [Self <: UserRepoOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserRepoOptions] (val x: Self) extends AnyVal {
       
       inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
       

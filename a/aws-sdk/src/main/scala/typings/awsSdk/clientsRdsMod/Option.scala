@@ -58,7 +58,8 @@ object Option {
     __obj.asInstanceOf[Option]
   }
   
-  extension [Self <: Option](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
     
     inline def setDBSecurityGroupMemberships(value: DBSecurityGroupMembershipList): Self = StObject.set(x, "DBSecurityGroupMemberships", value.asInstanceOf[js.Any])
     

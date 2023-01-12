@@ -28,7 +28,8 @@ object PerformanceTimeline {
       __obj.asInstanceOf[EnableRequest]
     }
     
-    extension [Self <: EnableRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnableRequest] (val x: Self) extends AnyVal {
       
       inline def setEventTypes(value: js.Array[String]): Self = StObject.set(x, "eventTypes", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object PerformanceTimeline {
       __obj.asInstanceOf[LargestContentfulPaint]
     }
     
-    extension [Self <: LargestContentfulPaint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LargestContentfulPaint] (val x: Self) extends AnyVal {
       
       inline def setElementId(value: String): Self = StObject.set(x, "elementId", value.asInstanceOf[js.Any])
       
@@ -113,7 +115,8 @@ object PerformanceTimeline {
       __obj.asInstanceOf[LayoutShift]
     }
     
-    extension [Self <: LayoutShift](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutShift] (val x: Self) extends AnyVal {
       
       inline def setHadRecentInput(value: Boolean): Self = StObject.set(x, "hadRecentInput", value.asInstanceOf[js.Any])
       
@@ -142,7 +145,8 @@ object PerformanceTimeline {
       __obj.asInstanceOf[LayoutShiftAttribution]
     }
     
-    extension [Self <: LayoutShiftAttribution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutShiftAttribution] (val x: Self) extends AnyVal {
       
       inline def setCurrentRect(value: Rect): Self = StObject.set(x, "currentRect", value.asInstanceOf[js.Any])
       
@@ -194,7 +198,8 @@ object PerformanceTimeline {
       __obj.asInstanceOf[TimelineEvent]
     }
     
-    extension [Self <: TimelineEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimelineEvent] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -229,7 +234,8 @@ object PerformanceTimeline {
       __obj.asInstanceOf[TimelineEventAddedEvent]
     }
     
-    extension [Self <: TimelineEventAddedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimelineEventAddedEvent] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: TimelineEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     }

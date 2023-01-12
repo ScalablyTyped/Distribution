@@ -18,7 +18,8 @@ object MultiModelConfig {
     __obj.asInstanceOf[MultiModelConfig]
   }
   
-  extension [Self <: MultiModelConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiModelConfig] (val x: Self) extends AnyVal {
     
     inline def setModelCacheSetting(value: ModelCacheSetting): Self = StObject.set(x, "ModelCacheSetting", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object TaskMediaInfo {
     __obj.asInstanceOf[TaskMediaInfo]
   }
   
-  extension [Self <: TaskMediaInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskMediaInfo] (val x: Self) extends AnyVal {
     
     inline def setContactId(value: String): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
     

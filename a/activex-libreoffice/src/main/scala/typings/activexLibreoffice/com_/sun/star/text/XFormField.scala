@@ -38,7 +38,8 @@ object XFormField {
     __obj.asInstanceOf[XFormField]
   }
   
-  extension [Self <: XFormField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFormField] (val x: Self) extends AnyVal {
     
     inline def setFieldType(value: String): Self = StObject.set(x, "FieldType", value.asInstanceOf[js.Any])
     

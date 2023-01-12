@@ -98,7 +98,8 @@ object WeakValidationMapVictoryC {
     __obj.asInstanceOf[WeakValidationMapVictoryC]
   }
   
-  extension [Self <: WeakValidationMapVictoryC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapVictoryC] (val x: Self) extends AnyVal {
     
     inline def setAnimate(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | victory-core.victory-core/lib/types/prop-types.AnimatePropTypeInterface | undefined ? react.react.Validator<boolean | victory-core.victory-core/lib/types/prop-types.AnimatePropTypeInterface | undefined | null | undefined> : undefined extends boolean | victory-core.victory-core/lib/types/prop-types.AnimatePropTypeInterface | undefined ? react.react.Validator<boolean | victory-core.victory-core/lib/types/prop-types.AnimatePropTypeInterface | undefined | null | undefined> : react.react.Validator<boolean | victory-core.victory-core/lib/types/prop-types.AnimatePropTypeInterface | undefined> */ js.Any

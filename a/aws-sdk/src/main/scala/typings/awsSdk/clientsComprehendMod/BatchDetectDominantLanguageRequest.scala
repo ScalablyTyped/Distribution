@@ -18,7 +18,8 @@ object BatchDetectDominantLanguageRequest {
     __obj.asInstanceOf[BatchDetectDominantLanguageRequest]
   }
   
-  extension [Self <: BatchDetectDominantLanguageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDetectDominantLanguageRequest] (val x: Self) extends AnyVal {
     
     inline def setTextList(value: CustomerInputStringList): Self = StObject.set(x, "TextList", value.asInstanceOf[js.Any])
     

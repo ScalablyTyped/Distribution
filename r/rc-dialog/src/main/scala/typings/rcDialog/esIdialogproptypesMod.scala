@@ -95,7 +95,8 @@ object esIdialogproptypesMod {
       __obj.asInstanceOf[IDialogPropTypes]
     }
     
-    extension [Self <: IDialogPropTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDialogPropTypes] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: () => Any): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       

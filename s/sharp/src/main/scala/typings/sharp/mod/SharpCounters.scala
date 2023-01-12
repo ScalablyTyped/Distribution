@@ -19,7 +19,8 @@ object SharpCounters {
     __obj.asInstanceOf[SharpCounters]
   }
   
-  extension [Self <: SharpCounters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharpCounters] (val x: Self) extends AnyVal {
     
     inline def setProcess(value: Double): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
     

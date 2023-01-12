@@ -85,7 +85,8 @@ object Fields {
     __obj.asInstanceOf[Fields]
   }
   
-  extension [Self <: Fields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

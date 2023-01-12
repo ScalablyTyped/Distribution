@@ -34,7 +34,8 @@ object ListQuestionOptionsBase {
     __obj.asInstanceOf[ListQuestionOptionsBase[T, TChoiceMap]]
   }
   
-  extension [Self <: ListQuestionOptionsBase[?, ?], T /* <: Answers */, TChoiceMap](x: Self & (ListQuestionOptionsBase[T, TChoiceMap])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListQuestionOptionsBase[?, ?], T /* <: Answers */, TChoiceMap] (val x: Self & (ListQuestionOptionsBase[T, TChoiceMap])) extends AnyVal {
     
     inline def setChoices(value: AsyncDynamicQuestionProperty[js.Array[DistinctChoice[T, TChoiceMap]], T]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
     

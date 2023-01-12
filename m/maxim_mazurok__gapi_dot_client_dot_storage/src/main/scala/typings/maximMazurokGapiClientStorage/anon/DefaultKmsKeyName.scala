@@ -16,7 +16,8 @@ object DefaultKmsKeyName {
     __obj.asInstanceOf[DefaultKmsKeyName]
   }
   
-  extension [Self <: DefaultKmsKeyName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultKmsKeyName] (val x: Self) extends AnyVal {
     
     inline def setDefaultKmsKeyName(value: String): Self = StObject.set(x, "defaultKmsKeyName", value.asInstanceOf[js.Any])
     

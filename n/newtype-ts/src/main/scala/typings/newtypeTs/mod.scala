@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[Newtype[URI, A]]
     }
     
-    extension [Self <: Newtype[?, ?], URI, A](x: Self & (Newtype[URI, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Newtype[?, ?], URI, A] (val x: Self & (Newtype[URI, A])) extends AnyVal {
       
       inline def set_A(value: A): Self = StObject.set(x, "_A", value.asInstanceOf[js.Any])
       

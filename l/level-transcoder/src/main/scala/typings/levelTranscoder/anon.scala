@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[TextDecoder]
     }
     
-    extension [Self <: TextDecoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextDecoder] (val x: Self) extends AnyVal {
       
       inline def setTextDecoder(value: typings.std.TextDecoder): Self = StObject.set(x, "textDecoder", value.asInstanceOf[js.Any])
       

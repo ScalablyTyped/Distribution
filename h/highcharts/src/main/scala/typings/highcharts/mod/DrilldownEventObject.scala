@@ -58,7 +58,8 @@ object DrilldownEventObject {
     __obj.asInstanceOf[DrilldownEventObject]
   }
   
-  extension [Self <: DrilldownEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrilldownEventObject] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: Double): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object RestingPaintToken {
     __obj.asInstanceOf[RestingPaintToken]
   }
   
-  extension [Self <: RestingPaintToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestingPaintToken] (val x: Self) extends AnyVal {
     
     inline def setPressed(value: PaintToken[BaseToken]): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object UploadEntityDefinitionsRequest {
     __obj.asInstanceOf[UploadEntityDefinitionsRequest]
   }
   
-  extension [Self <: UploadEntityDefinitionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadEntityDefinitionsRequest] (val x: Self) extends AnyVal {
     
     inline def setDeprecateExistingEntities(value: DeprecateExistingEntities): Self = StObject.set(x, "deprecateExistingEntities", value.asInstanceOf[js.Any])
     

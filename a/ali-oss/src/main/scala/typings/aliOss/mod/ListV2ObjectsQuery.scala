@@ -39,7 +39,8 @@ object ListV2ObjectsQuery {
     __obj.asInstanceOf[ListV2ObjectsQuery]
   }
   
-  extension [Self <: ListV2ObjectsQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListV2ObjectsQuery] (val x: Self) extends AnyVal {
     
     inline def `setContinuation-token`(value: String): Self = StObject.set(x, "continuation-token", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object OnHighlightChangedSelectInfo {
     __obj.asInstanceOf[OnHighlightChangedSelectInfo]
   }
   
-  extension [Self <: OnHighlightChangedSelectInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnHighlightChangedSelectInfo] (val x: Self) extends AnyVal {
     
     inline def setTabIds(value: js.Array[Double]): Self = StObject.set(x, "tabIds", value.asInstanceOf[js.Any])
     

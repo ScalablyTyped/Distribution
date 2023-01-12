@@ -30,7 +30,8 @@ object DowngradRequestBillingInfoResponse {
     __obj.asInstanceOf[DowngradRequestBillingInfoResponse]
   }
   
-  extension [Self <: DowngradRequestBillingInfoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DowngradRequestBillingInfoResponse] (val x: Self) extends AnyVal {
     
     inline def setDowngradePlanInformation(value: DowngradePlanUpdateResponse): Self = StObject.set(x, "downgradePlanInformation", value.asInstanceOf[js.Any])
     

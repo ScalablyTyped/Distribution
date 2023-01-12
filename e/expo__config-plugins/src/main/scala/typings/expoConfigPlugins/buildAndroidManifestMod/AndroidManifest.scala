@@ -16,7 +16,8 @@ object AndroidManifest {
     __obj.asInstanceOf[AndroidManifest]
   }
   
-  extension [Self <: AndroidManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidManifest] (val x: Self) extends AnyVal {
     
     inline def setManifest(value: _empty): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
   }

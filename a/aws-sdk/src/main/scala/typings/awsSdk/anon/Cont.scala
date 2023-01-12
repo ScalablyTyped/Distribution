@@ -28,7 +28,8 @@ object Cont {
     __obj.asInstanceOf[Cont]
   }
   
-  extension [Self <: Cont](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cont] (val x: Self) extends AnyVal {
     
     inline def setCont(value: ContinuationEvent): Self = StObject.set(x, "Cont", value.asInstanceOf[js.Any])
     

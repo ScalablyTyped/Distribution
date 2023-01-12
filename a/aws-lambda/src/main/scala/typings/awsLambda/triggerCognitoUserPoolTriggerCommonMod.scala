@@ -37,7 +37,8 @@ object triggerCognitoUserPoolTriggerCommonMod {
       __obj.asInstanceOf[BaseTriggerEvent[T]]
     }
     
-    extension [Self <: BaseTriggerEvent[?], T /* <: String */](x: Self & BaseTriggerEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseTriggerEvent[?], T /* <: String */] (val x: Self & BaseTriggerEvent[T]) extends AnyVal {
       
       inline def setCallerContext(value: AwsSdkVersion): Self = StObject.set(x, "callerContext", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object triggerCognitoUserPoolTriggerCommonMod {
       __obj.asInstanceOf[ChallengeResult]
     }
     
-    extension [Self <: ChallengeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChallengeResult] (val x: Self) extends AnyVal {
       
       inline def setChallengeMetadata(value: Unit): Self = StObject.set(x, "challengeMetadata", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object triggerCognitoUserPoolTriggerCommonMod {
       __obj.asInstanceOf[CustomChallengeResult]
     }
     
-    extension [Self <: CustomChallengeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomChallengeResult] (val x: Self) extends AnyVal {
       
       inline def setChallengeMetadata(value: String): Self = StObject.set(x, "challengeMetadata", value.asInstanceOf[js.Any])
       

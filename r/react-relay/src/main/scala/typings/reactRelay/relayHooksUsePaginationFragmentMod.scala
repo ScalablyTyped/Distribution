@@ -60,7 +60,8 @@ object relayHooksUsePaginationFragmentMod {
       __obj.asInstanceOf[usePaginationFragmentHookType[TQuery, TKey, TFragmentData]]
     }
     
-    extension [Self <: usePaginationFragmentHookType[?, ?, ?], TQuery /* <: OperationType */, TKey /* <: KeyType[Any] | Null */, TFragmentData](x: Self & (usePaginationFragmentHookType[TQuery, TKey, TFragmentData])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: usePaginationFragmentHookType[?, ?, ?], TQuery /* <: OperationType */, TKey /* <: KeyType[Any] | Null */, TFragmentData] (val x: Self & (usePaginationFragmentHookType[TQuery, TKey, TFragmentData])) extends AnyVal {
       
       inline def setData(value: TFragmentData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

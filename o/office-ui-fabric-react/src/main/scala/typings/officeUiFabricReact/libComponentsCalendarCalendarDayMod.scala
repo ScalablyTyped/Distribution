@@ -103,7 +103,8 @@ object libComponentsCalendarCalendarDayMod {
       __obj.asInstanceOf[ICalendarDay]
     }
     
-    extension [Self <: ICalendarDay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalendarDay] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
@@ -175,7 +176,8 @@ object libComponentsCalendarCalendarDayMod {
       __obj.asInstanceOf[ICalendarDayState]
     }
     
-    extension [Self <: ICalendarDayState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalendarDayState] (val x: Self) extends AnyVal {
       
       inline def setActiveDescendantId(value: String): Self = StObject.set(x, "activeDescendantId", value.asInstanceOf[js.Any])
       
@@ -223,7 +225,8 @@ object libComponentsCalendarCalendarDayMod {
       __obj.asInstanceOf[IDayInfo]
     }
     
-    extension [Self <: IDayInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDayInfo] (val x: Self) extends AnyVal {
       
       inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       

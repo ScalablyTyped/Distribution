@@ -53,7 +53,8 @@ object ScheduledTriggerProperties {
     __obj.asInstanceOf[ScheduledTriggerProperties]
   }
   
-  extension [Self <: ScheduledTriggerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduledTriggerProperties] (val x: Self) extends AnyVal {
     
     inline def setDataPullMode(value: DataPullMode): Self = StObject.set(x, "dataPullMode", value.asInstanceOf[js.Any])
     

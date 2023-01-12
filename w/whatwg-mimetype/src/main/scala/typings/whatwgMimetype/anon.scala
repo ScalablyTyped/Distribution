@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[ProhibitParameters]
     }
     
-    extension [Self <: ProhibitParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProhibitParameters] (val x: Self) extends AnyVal {
       
       inline def setProhibitParameters(value: Boolean): Self = StObject.set(x, "prohibitParameters", value.asInstanceOf[js.Any])
       

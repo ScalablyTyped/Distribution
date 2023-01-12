@@ -22,7 +22,8 @@ object CAPICOM_ENCODING_TYPE {
     __obj.asInstanceOf[CAPICOM_ENCODING_TYPE]
   }
   
-  extension [Self <: CAPICOM_ENCODING_TYPE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CAPICOM_ENCODING_TYPE] (val x: Self) extends AnyVal {
     
     inline def setCAPICOM_ENCODE_ANY(value: `-1`): Self = StObject.set(x, "CAPICOM_ENCODE_ANY", value.asInstanceOf[js.Any])
     

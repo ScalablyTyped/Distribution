@@ -21,7 +21,8 @@ object EthereumTxRequest {
     __obj.asInstanceOf[EthereumTxRequest]
   }
   
-  extension [Self <: EthereumTxRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EthereumTxRequest] (val x: Self) extends AnyVal {
     
     inline def setData_length(value: Double): Self = StObject.set(x, "data_length", value.asInstanceOf[js.Any])
     

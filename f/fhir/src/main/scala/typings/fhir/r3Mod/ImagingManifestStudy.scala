@@ -37,7 +37,8 @@ object ImagingManifestStudy {
     __obj.asInstanceOf[ImagingManifestStudy]
   }
   
-  extension [Self <: ImagingManifestStudy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagingManifestStudy] (val x: Self) extends AnyVal {
     
     inline def setEndpoint(value: js.Array[Reference]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     

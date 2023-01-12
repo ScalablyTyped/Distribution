@@ -57,7 +57,8 @@ object fileUploaderLocaleMod {
       __obj.asInstanceOf[FileUploaderLocale]
     }
     
-    extension [Self <: FileUploaderLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploaderLocale] (val x: Self) extends AnyVal {
       
       inline def setBrowseFiles(value: String): Self = StObject.set(x, "browseFiles", value.asInstanceOf[js.Any])
       

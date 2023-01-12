@@ -19,7 +19,8 @@ object Fresh {
     __obj.asInstanceOf[Fresh]
   }
   
-  extension [Self <: Fresh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fresh] (val x: Self) extends AnyVal {
     
     inline def setFresh(value: Boolean): Self = StObject.set(x, "fresh", value.asInstanceOf[js.Any])
     

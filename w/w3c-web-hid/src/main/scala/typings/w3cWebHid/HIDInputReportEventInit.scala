@@ -23,7 +23,8 @@ object HIDInputReportEventInit {
     __obj.asInstanceOf[HIDInputReportEventInit]
   }
   
-  extension [Self <: HIDInputReportEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HIDInputReportEventInit] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.typedarray.DataView): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

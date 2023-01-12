@@ -23,7 +23,8 @@ object SingleMasterChannelEndpointConfiguration {
     __obj.asInstanceOf[SingleMasterChannelEndpointConfiguration]
   }
   
-  extension [Self <: SingleMasterChannelEndpointConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleMasterChannelEndpointConfiguration] (val x: Self) extends AnyVal {
     
     inline def setProtocols(value: ListOfProtocols): Self = StObject.set(x, "Protocols", value.asInstanceOf[js.Any])
     

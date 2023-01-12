@@ -101,7 +101,8 @@ object mod {
       __obj.asInstanceOf[Transaction]
     }
     
-    extension [Self <: Transaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
       
       inline def setAccessList(value: AccessList): Self = StObject.set(x, "accessList", value.asInstanceOf[js.Any])
       
@@ -194,7 +195,8 @@ object mod {
       __obj.asInstanceOf[UnsignedTransaction]
     }
     
-    extension [Self <: UnsignedTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnsignedTransaction] (val x: Self) extends AnyVal {
       
       inline def setAccessList(value: AccessListish): Self = StObject.set(x, "accessList", value.asInstanceOf[js.Any])
       

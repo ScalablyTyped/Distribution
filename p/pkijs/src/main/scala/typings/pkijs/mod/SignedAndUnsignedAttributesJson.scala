@@ -18,7 +18,8 @@ object SignedAndUnsignedAttributesJson {
     __obj.asInstanceOf[SignedAndUnsignedAttributesJson]
   }
   
-  extension [Self <: SignedAndUnsignedAttributesJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignedAndUnsignedAttributesJson] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: js.Array[AttributeJson]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

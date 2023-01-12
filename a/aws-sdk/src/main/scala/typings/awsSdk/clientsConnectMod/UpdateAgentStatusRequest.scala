@@ -48,7 +48,8 @@ object UpdateAgentStatusRequest {
     __obj.asInstanceOf[UpdateAgentStatusRequest]
   }
   
-  extension [Self <: UpdateAgentStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAgentStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setAgentStatusId(value: AgentStatusId): Self = StObject.set(x, "AgentStatusId", value.asInstanceOf[js.Any])
     

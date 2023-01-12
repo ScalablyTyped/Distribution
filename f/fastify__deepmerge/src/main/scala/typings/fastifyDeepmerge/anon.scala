@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Optionsalltrue]
     }
     
-    extension [Self <: Optionsalltrue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsalltrue] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       

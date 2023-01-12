@@ -26,7 +26,8 @@ object SavingsStepCredentials {
     __obj.asInstanceOf[SavingsStepCredentials]
   }
   
-  extension [Self <: SavingsStepCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavingsStepCredentials] (val x: Self) extends AnyVal {
     
     inline def setIsFamilyNameEnabled(value: Boolean): Self = StObject.set(x, "isFamilyNameEnabled", value.asInstanceOf[js.Any])
     

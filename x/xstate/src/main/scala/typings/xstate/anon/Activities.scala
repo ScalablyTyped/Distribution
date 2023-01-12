@@ -21,7 +21,8 @@ object Activities {
     __obj.asInstanceOf[Activities[TContext, TEvent]]
   }
   
-  extension [Self <: Activities[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (Activities[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Activities[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (Activities[TContext, TEvent])) extends AnyVal {
     
     inline def setActivities(value: Record[String, ActivityConfig[TContext, TEvent]]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     

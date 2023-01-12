@@ -30,7 +30,8 @@ object distComponentsAntdIconMod extends Shortcut {
       __obj.asInstanceOf[AntdIconProps]
     }
     
-    extension [Self <: AntdIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AntdIconProps] (val x: Self) extends AnyVal {
       
       inline def setTwoToneColor(value: TwoToneColor): Self = StObject.set(x, "twoToneColor", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object distComponentsAntdIconMod extends Shortcut {
       __obj.asInstanceOf[IconComponentProps]
     }
     
-    extension [Self <: IconComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconComponentProps] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: IconDefinition): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     }

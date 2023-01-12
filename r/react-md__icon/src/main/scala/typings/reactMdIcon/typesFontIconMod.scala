@@ -48,7 +48,8 @@ object typesFontIconMod {
       __obj.asInstanceOf[FontIconProps]
     }
     
-    extension [Self <: FontIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontIconProps] (val x: Self) extends AnyVal {
       
       inline def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
       

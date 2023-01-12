@@ -23,7 +23,8 @@ object AddOnUpdateRequest {
     __obj.asInstanceOf[AddOnUpdateRequest]
   }
   
-  extension [Self <: AddOnUpdateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddOnUpdateRequest] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

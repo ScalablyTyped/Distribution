@@ -58,7 +58,8 @@ object ExportTask {
     __obj.asInstanceOf[ExportTask]
   }
   
-  extension [Self <: ExportTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportTask] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: ExportDestinationBucket): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object Apk {
     __obj.asInstanceOf[Apk]
   }
   
-  extension [Self <: Apk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Apk] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: FileReference): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

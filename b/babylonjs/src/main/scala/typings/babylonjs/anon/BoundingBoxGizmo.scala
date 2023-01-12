@@ -26,7 +26,8 @@ object BoundingBoxGizmo {
     __obj.asInstanceOf[BoundingBoxGizmo]
   }
   
-  extension [Self <: BoundingBoxGizmo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoundingBoxGizmo] (val x: Self) extends AnyVal {
     
     inline def setBoundingBoxGizmo(value: Nullable[IBoundingBoxGizmo]): Self = StObject.set(x, "boundingBoxGizmo", value.asInstanceOf[js.Any])
     

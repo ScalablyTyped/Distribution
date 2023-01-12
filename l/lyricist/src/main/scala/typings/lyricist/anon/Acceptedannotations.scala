@@ -38,7 +38,8 @@ object Acceptedannotations {
     __obj.asInstanceOf[Acceptedannotations]
   }
   
-  extension [Self <: Acceptedannotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Acceptedannotations] (val x: Self) extends AnyVal {
     
     inline def setAccepted_annotations(value: Double): Self = StObject.set(x, "accepted_annotations", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object mod {
     @js.native
     val ^ : XMLSerializerStatic = js.native
     
-    extension [Self <: XMLSerializer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XMLSerializer] (val x: Self) extends AnyVal {
       
       inline def setSerializeToString(value: Node => String): Self = StObject.set(x, "serializeToString", js.Any.fromFunction1(value))
     }
@@ -101,7 +102,8 @@ object mod {
       __obj.asInstanceOf[ErrorHandlerObject]
     }
     
-    extension [Self <: ErrorHandlerObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorHandlerObject] (val x: Self) extends AnyVal {
       
       inline def setError(value: /* msg */ Any => Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
@@ -130,7 +132,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setErrorHandler(value: ErrorHandlerFunction | ErrorHandlerObject): Self = StObject.set(x, "errorHandler", value.asInstanceOf[js.Any])
       

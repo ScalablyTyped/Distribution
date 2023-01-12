@@ -26,7 +26,8 @@ object CustomProperyMedia {
     __obj.asInstanceOf[CustomProperyMedia]
   }
   
-  extension [Self <: CustomProperyMedia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomProperyMedia] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: media): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

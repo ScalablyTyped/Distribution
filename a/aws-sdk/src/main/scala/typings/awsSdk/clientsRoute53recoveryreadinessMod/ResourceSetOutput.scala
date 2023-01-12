@@ -40,7 +40,8 @@ object ResourceSetOutput {
     __obj.asInstanceOf[ResourceSetOutput]
   }
   
-  extension [Self <: ResourceSetOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceSetOutput] (val x: Self) extends AnyVal {
     
     inline def setResourceSetArn(value: stringMax256): Self = StObject.set(x, "ResourceSetArn", value.asInstanceOf[js.Any])
     

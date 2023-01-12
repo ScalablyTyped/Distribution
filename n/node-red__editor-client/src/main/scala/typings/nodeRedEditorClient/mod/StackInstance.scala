@@ -27,7 +27,8 @@ object StackInstance {
     __obj.asInstanceOf[StackInstance]
   }
   
-  extension [Self <: StackInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackInstance] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: Collapsible => StackInstanceEntry): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

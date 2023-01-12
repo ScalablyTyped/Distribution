@@ -36,7 +36,8 @@ object BuildCompletedEvent {
     __obj.asInstanceOf[BuildCompletedEvent]
   }
   
-  extension [Self <: BuildCompletedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildCompletedEvent] (val x: Self) extends AnyVal {
     
     inline def setBuildErrors(value: js.Array[BuildRequestValidationResult]): Self = StObject.set(x, "buildErrors", value.asInstanceOf[js.Any])
     

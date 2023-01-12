@@ -15,7 +15,8 @@ object DeleteCustomerProfileRequest {
     __obj.asInstanceOf[DeleteCustomerProfileRequest]
   }
   
-  extension [Self <: DeleteCustomerProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCustomerProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setDeleteCustomerProfileRequest(value: typings.authorizenet.mod.APIContracts.DeleteCustomerProfileRequest): Self = StObject.set(x, "deleteCustomerProfileRequest", value.asInstanceOf[js.Any])
   }

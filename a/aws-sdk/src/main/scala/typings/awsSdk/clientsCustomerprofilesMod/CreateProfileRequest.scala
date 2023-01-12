@@ -123,7 +123,8 @@ object CreateProfileRequest {
     __obj.asInstanceOf[CreateProfileRequest]
   }
   
-  extension [Self <: CreateProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountNumber(value: string1To255): Self = StObject.set(x, "AccountNumber", value.asInstanceOf[js.Any])
     

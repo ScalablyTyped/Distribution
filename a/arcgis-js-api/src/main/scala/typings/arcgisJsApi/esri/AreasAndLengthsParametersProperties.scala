@@ -59,7 +59,8 @@ object AreasAndLengthsParametersProperties {
     __obj.asInstanceOf[AreasAndLengthsParametersProperties]
   }
   
-  extension [Self <: AreasAndLengthsParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreasAndLengthsParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setAreaUnit(
       value: acres | hectares | `square-miles` | `square-kilometers` | `square-meters` | `square-feet` | `square-yards`

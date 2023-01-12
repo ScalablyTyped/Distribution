@@ -57,7 +57,8 @@ object CameraProjectionMatrix {
     __obj.asInstanceOf[CameraProjectionMatrix]
   }
   
-  extension [Self <: CameraProjectionMatrix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraProjectionMatrix] (val x: Self) extends AnyVal {
     
     inline def setCameraFar(value: IUniform[Double]): Self = StObject.set(x, "cameraFar", value.asInstanceOf[js.Any])
     

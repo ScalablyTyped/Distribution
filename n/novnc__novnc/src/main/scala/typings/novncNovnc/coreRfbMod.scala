@@ -237,7 +237,8 @@ object coreRfbMod {
       __obj.asInstanceOf[NoVncCredentials]
     }
     
-    extension [Self <: NoVncCredentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoVncCredentials] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
@@ -409,7 +410,8 @@ object coreRfbMod {
       __obj.asInstanceOf[NoVncEvents]
     }
     
-    extension [Self <: NoVncEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoVncEvents] (val x: Self) extends AnyVal {
       
       inline def setBell(value: CustomEvent[Record[String, scala.Nothing]]): Self = StObject.set(x, "bell", value.asInstanceOf[js.Any])
       
@@ -463,7 +465,8 @@ object coreRfbMod {
       __obj.asInstanceOf[NoVncOptions]
     }
     
-    extension [Self <: NoVncOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoVncOptions] (val x: Self) extends AnyVal {
       
       inline def setCredentials(value: NoVncCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       

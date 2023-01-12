@@ -1435,7 +1435,8 @@ object typesEventsMod {
       __obj.asInstanceOf[CreateObject]
     }
     
-    extension [Self <: CreateObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateObject] (val x: Self) extends AnyVal {
       
       inline def setAbort(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
@@ -3463,7 +3464,8 @@ object typesEventsMod {
       __obj.asInstanceOf[FireObject]
     }
     
-    extension [Self <: FireObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FireObject] (val x: Self) extends AnyVal {
       
       inline def setAbort(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean

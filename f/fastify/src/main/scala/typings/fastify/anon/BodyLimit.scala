@@ -15,7 +15,8 @@ object BodyLimit {
     __obj.asInstanceOf[BodyLimit]
   }
   
-  extension [Self <: BodyLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BodyLimit] (val x: Self) extends AnyVal {
     
     inline def setBodyLimit(value: Double): Self = StObject.set(x, "bodyLimit", value.asInstanceOf[js.Any])
     

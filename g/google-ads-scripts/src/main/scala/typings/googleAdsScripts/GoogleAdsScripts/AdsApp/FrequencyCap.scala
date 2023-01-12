@@ -35,7 +35,8 @@ object FrequencyCap {
     __obj.asInstanceOf[FrequencyCap]
   }
   
-  extension [Self <: FrequencyCap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrequencyCap] (val x: Self) extends AnyVal {
     
     inline def setGetEntityType(value: () => String): Self = StObject.set(x, "getEntityType", js.Any.fromFunction0(value))
     

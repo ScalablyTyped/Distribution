@@ -15,7 +15,8 @@ object GetNetworkAnalyzerConfigurationRequest {
     __obj.asInstanceOf[GetNetworkAnalyzerConfigurationRequest]
   }
   
-  extension [Self <: GetNetworkAnalyzerConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNetworkAnalyzerConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationName(value: NetworkAnalyzerConfigurationName): Self = StObject.set(x, "ConfigurationName", value.asInstanceOf[js.Any])
   }

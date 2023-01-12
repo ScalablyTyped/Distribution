@@ -18,7 +18,8 @@ object TensorBoardAppSettings {
     __obj.asInstanceOf[TensorBoardAppSettings]
   }
   
-  extension [Self <: TensorBoardAppSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TensorBoardAppSettings] (val x: Self) extends AnyVal {
     
     inline def setDefaultResourceSpec(value: ResourceSpec): Self = StObject.set(x, "DefaultResourceSpec", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object AbstractRecoilValueReadonly {
     __obj.asInstanceOf[AbstractRecoilValueReadonly[T]]
   }
   
-  extension [Self <: AbstractRecoilValueReadonly[?], T](x: Self & AbstractRecoilValueReadonly[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractRecoilValueReadonly[?], T] (val x: Self & AbstractRecoilValueReadonly[T]) extends AnyVal {
     
     inline def setKey(value: NodeKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

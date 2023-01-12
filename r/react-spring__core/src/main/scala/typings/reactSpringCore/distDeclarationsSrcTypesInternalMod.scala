@@ -26,7 +26,8 @@ object distDeclarationsSrcTypesInternalMod {
       __obj.asInstanceOf[AnimationRange[T]]
     }
     
-    extension [Self <: AnimationRange[?], T](x: Self & AnimationRange[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationRange[?], T] (val x: Self & AnimationRange[T]) extends AnyVal {
       
       inline def setFrom(
         value: T | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FluidValue<T> */ Any)
@@ -61,7 +62,8 @@ object distDeclarationsSrcTypesInternalMod {
       __obj.asInstanceOf[AnimationTarget[T]]
     }
     
-    extension [Self <: AnimationTarget[?], T](x: Self & AnimationTarget[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationTarget[?], T] (val x: Self & AnimationTarget[T]) extends AnyVal {
       
       inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object distDeclarationsSrcTypesInternalMod {
       __obj.asInstanceOf[Readable[T]]
     }
     
-    extension [Self <: Readable[?], T](x: Self & Readable[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Readable[?], T] (val x: Self & Readable[T]) extends AnyVal {
       
       inline def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     }

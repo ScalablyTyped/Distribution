@@ -32,7 +32,8 @@ object RenderExpandIconProps {
     __obj.asInstanceOf[RenderExpandIconProps[RecordType]]
   }
   
-  extension [Self <: RenderExpandIconProps[?], RecordType](x: Self & RenderExpandIconProps[RecordType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderExpandIconProps[?], RecordType] (val x: Self & RenderExpandIconProps[RecordType]) extends AnyVal {
     
     inline def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
     

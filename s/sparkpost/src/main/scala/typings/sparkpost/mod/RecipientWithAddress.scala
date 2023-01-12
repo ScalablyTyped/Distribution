@@ -16,7 +16,8 @@ object RecipientWithAddress {
     __obj.asInstanceOf[RecipientWithAddress]
   }
   
-  extension [Self <: RecipientWithAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientWithAddress] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: Address | String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
   }

@@ -34,7 +34,8 @@ object IconCriterion {
     __obj.asInstanceOf[IconCriterion]
   }
   
-  extension [Self <: IconCriterion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconCriterion] (val x: Self) extends AnyVal {
     
     inline def setExcelDotIconCriterion_typekey(value: IconCriterion): Self = StObject.set(x, "Excel.IconCriterion_typekey", value.asInstanceOf[js.Any])
     

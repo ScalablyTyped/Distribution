@@ -16,7 +16,8 @@ object TypeofAccessToken {
     __obj.asInstanceOf[TypeofAccessToken]
   }
   
-  extension [Self <: TypeofAccessToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofAccessToken] (val x: Self) extends AnyVal {
     
     inline def setRevokeByGrantId(value: String => js.Promise[Unit]): Self = StObject.set(x, "revokeByGrantId", js.Any.fromFunction1(value))
   }

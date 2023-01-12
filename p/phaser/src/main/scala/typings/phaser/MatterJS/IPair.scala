@@ -56,7 +56,8 @@ object IPair {
     __obj.asInstanceOf[IPair]
   }
   
-  extension [Self <: IPair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPair] (val x: Self) extends AnyVal {
     
     inline def setActiveContacts(value: Any): Self = StObject.set(x, "activeContacts", value.asInstanceOf[js.Any])
     

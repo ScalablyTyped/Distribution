@@ -46,7 +46,8 @@ object jasmine {
       __obj.asInstanceOf[Matchers[T]]
     }
     
-    extension [Self <: Matchers[?], T](x: Self & Matchers[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Matchers[?], T] (val x: Self & Matchers[T]) extends AnyVal {
       
       inline def setToBePromise(value: () => Boolean): Self = StObject.set(x, "toBePromise", js.Any.fromFunction0(value))
       

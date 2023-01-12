@@ -51,7 +51,8 @@ object SensorRotationMatrix {
     __obj.asInstanceOf[SensorRotationMatrix]
   }
   
-  extension [Self <: SensorRotationMatrix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SensorRotationMatrix] (val x: Self) extends AnyVal {
     
     inline def setM11(value: Double): Self = StObject.set(x, "m11", value.asInstanceOf[js.Any])
     

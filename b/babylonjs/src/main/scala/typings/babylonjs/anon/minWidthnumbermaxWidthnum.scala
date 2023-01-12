@@ -75,7 +75,8 @@ object minWidthnumbermaxWidthnum {
     __obj.asInstanceOf[minWidthnumbermaxWidthnum]
   }
   
-  extension [Self <: minWidthnumbermaxWidthnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: minWidthnumbermaxWidthnum] (val x: Self) extends AnyVal {
     
     inline def setAdvanced(value: js.Array[MediaTrackConstraintSet]): Self = StObject.set(x, "advanced", value.asInstanceOf[js.Any])
     

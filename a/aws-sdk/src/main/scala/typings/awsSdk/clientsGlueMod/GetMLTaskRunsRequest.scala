@@ -38,7 +38,8 @@ object GetMLTaskRunsRequest {
     __obj.asInstanceOf[GetMLTaskRunsRequest]
   }
   
-  extension [Self <: GetMLTaskRunsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMLTaskRunsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: TaskRunFilterCriteria): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

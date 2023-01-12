@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsImageEffectBoldMod extends Short
       __obj.asInstanceOf[ImageEffectBoldProps]
     }
     
-    extension [Self <: ImageEffectBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageEffectBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

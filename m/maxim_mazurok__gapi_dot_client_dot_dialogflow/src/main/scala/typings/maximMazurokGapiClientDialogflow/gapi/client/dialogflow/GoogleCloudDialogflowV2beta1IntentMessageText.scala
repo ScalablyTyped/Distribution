@@ -16,7 +16,8 @@ object GoogleCloudDialogflowV2beta1IntentMessageText {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageText]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageText] (val x: Self) extends AnyVal {
     
     inline def setText(value: js.Array[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

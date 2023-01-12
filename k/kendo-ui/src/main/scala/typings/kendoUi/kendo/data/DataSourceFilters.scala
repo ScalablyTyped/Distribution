@@ -19,7 +19,8 @@ object DataSourceFilters {
     __obj.asInstanceOf[DataSourceFilters]
   }
   
-  extension [Self <: DataSourceFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceFilters] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: js.Array[DataSourceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

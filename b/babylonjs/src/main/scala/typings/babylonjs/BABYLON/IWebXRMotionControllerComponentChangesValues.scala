@@ -23,7 +23,8 @@ object IWebXRMotionControllerComponentChangesValues {
     __obj.asInstanceOf[IWebXRMotionControllerComponentChangesValues[T]]
   }
   
-  extension [Self <: IWebXRMotionControllerComponentChangesValues[?], T](x: Self & IWebXRMotionControllerComponentChangesValues[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebXRMotionControllerComponentChangesValues[?], T] (val x: Self & IWebXRMotionControllerComponentChangesValues[T]) extends AnyVal {
     
     inline def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

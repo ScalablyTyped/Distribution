@@ -140,7 +140,8 @@ object EventParams {
     __obj.asInstanceOf[EventParams]
   }
   
-  extension [Self <: EventParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventParams] (val x: Self) extends AnyVal {
     
     inline def setAdClick(value: AdProgressParam): Self = StObject.set(x, "adClick", value.asInstanceOf[js.Any])
     

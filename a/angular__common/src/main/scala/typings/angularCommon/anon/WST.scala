@@ -19,7 +19,8 @@ object WST {
     __obj.asInstanceOf[WST]
   }
   
-  extension [Self <: WST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WST] (val x: Self) extends AnyVal {
     
     inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ModuleImport]
     }
     
-    extension [Self <: ModuleImport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleImport] (val x: Self) extends AnyVal {
       
       inline def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ModuleLengths]
     }
     
-    extension [Self <: ModuleLengths](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleLengths] (val x: Self) extends AnyVal {
       
       inline def setBrotliLength(value: Double): Self = StObject.set(x, "brotliLength", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ModuleMeta]
     }
     
-    extension [Self <: ModuleMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleMeta] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -129,7 +132,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ModulePart]
     }
     
-    extension [Self <: ModulePart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModulePart] (val x: Self) extends AnyVal {
       
       inline def setMainUid(value: ModuleUID): Self = StObject.set(x, "mainUid", value.asInstanceOf[js.Any])
     }
@@ -148,7 +152,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ModuleTree]
     }
     
-    extension [Self <: ModuleTree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleTree] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ModuleTree | ModuleTreeLeaf]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -171,7 +176,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ModuleTreeLeaf]
     }
     
-    extension [Self <: ModuleTreeLeaf](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleTreeLeaf] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -224,7 +230,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[VisualizerData]
     }
     
-    extension [Self <: VisualizerData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisualizerData] (val x: Self) extends AnyVal {
       
       inline def setEnv(value: StringDictionary[Any]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       

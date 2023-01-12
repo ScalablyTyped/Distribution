@@ -41,7 +41,8 @@ object BorderProps {
     __obj.asInstanceOf[BorderProps[ThemeType, TVal]]
   }
   
-  extension [Self <: BorderProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (BorderProps[ThemeType, TVal])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BorderProps[ThemeType, TVal])) extends AnyVal {
     
     inline def setBorder(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

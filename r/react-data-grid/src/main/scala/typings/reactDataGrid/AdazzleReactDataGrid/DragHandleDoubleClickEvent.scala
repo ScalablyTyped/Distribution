@@ -39,7 +39,8 @@ object DragHandleDoubleClickEvent {
     __obj.asInstanceOf[DragHandleDoubleClickEvent[T]]
   }
   
-  extension [Self <: DragHandleDoubleClickEvent[?], T](x: Self & DragHandleDoubleClickEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragHandleDoubleClickEvent[?], T] (val x: Self & DragHandleDoubleClickEvent[T]) extends AnyVal {
     
     inline def setE(value: SyntheticEvent[Any, Event]): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AddRequestDataToEventOpti {
     __obj.asInstanceOf[AddRequestDataToEventOpti]
   }
   
-  extension [Self <: AddRequestDataToEventOpti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddRequestDataToEventOpti] (val x: Self) extends AnyVal {
     
     inline def setDeps(value: Cookie): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     

@@ -120,7 +120,8 @@ object ThemeBottomSheetProps {
     __obj.asInstanceOf[ThemeBottomSheetProps]
   }
   
-  extension [Self <: ThemeBottomSheetProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeBottomSheetProps] (val x: Self) extends AnyVal {
     
     inline def setAirbnbRating(value: PartialSwipeRatingProps): Self = StObject.set(x, "AirbnbRating", value.asInstanceOf[js.Any])
     

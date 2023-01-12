@@ -27,7 +27,8 @@ object srcCollectionsMod {
       __obj.asInstanceOf[AsyncLoadable]
     }
     
-    extension [Self <: AsyncLoadable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncLoadable] (val x: Self) extends AnyVal {
       
       inline def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object srcCollectionsMod {
       __obj.asInstanceOf[CollectionBase[T]]
     }
     
-    extension [Self <: CollectionBase[?], T](x: Self & CollectionBase[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollectionBase[?], T] (val x: Self & CollectionBase[T]) extends AnyVal {
       
       inline def setChildren(value: CollectionChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -127,7 +129,8 @@ object srcCollectionsMod {
       __obj.asInstanceOf[Expandable]
     }
     
-    extension [Self <: Expandable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Expandable] (val x: Self) extends AnyVal {
       
       inline def setDefaultExpandedKeys(value: js.Iterable[Key]): Self = StObject.set(x, "defaultExpandedKeys", value.asInstanceOf[js.Any])
       
@@ -173,7 +176,8 @@ object srcCollectionsMod {
       __obj.asInstanceOf[ItemProps[T]]
     }
     
-    extension [Self <: ItemProps[?], T](x: Self & ItemProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemProps[?], T] (val x: Self & ItemProps[T]) extends AnyVal {
       
       inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
@@ -243,7 +247,8 @@ object srcCollectionsMod {
       __obj.asInstanceOf[KeyboardDelegate]
     }
     
-    extension [Self <: KeyboardDelegate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardDelegate] (val x: Self) extends AnyVal {
       
       inline def setGetFirstKey(value: (/* key */ js.UndefOr[Key], /* global */ js.UndefOr[Boolean]) => Key | Null): Self = StObject.set(x, "getFirstKey", js.Any.fromFunction2(value))
       
@@ -373,7 +378,8 @@ object srcCollectionsMod {
       __obj.asInstanceOf[Node[T]]
     }
     
-    extension [Self <: Node[?], T](x: Self & Node[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node[?], T] (val x: Self & Node[T]) extends AnyVal {
       
       inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
@@ -450,7 +456,8 @@ object srcCollectionsMod {
       __obj.asInstanceOf[SectionProps[T]]
     }
     
-    extension [Self <: SectionProps[?], T](x: Self & SectionProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SectionProps[?], T] (val x: Self & SectionProps[T]) extends AnyVal {
       
       inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
@@ -487,7 +494,8 @@ object srcCollectionsMod {
       __obj.asInstanceOf[SortDescriptor]
     }
     
-    extension [Self <: SortDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortDescriptor] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Key): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -526,7 +534,8 @@ object srcCollectionsMod {
       __obj.asInstanceOf[Sortable]
     }
     
-    extension [Self <: Sortable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sortable] (val x: Self) extends AnyVal {
       
       inline def setOnSortChange(value: /* descriptor */ SortDescriptor => Any): Self = StObject.set(x, "onSortChange", js.Any.fromFunction1(value))
       

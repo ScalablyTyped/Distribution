@@ -80,7 +80,8 @@ object typesMod {
       __obj.asInstanceOf[CronFields]
     }
     
-    extension [Self <: CronFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CronFields] (val x: Self) extends AnyVal {
       
       inline def setDayOfMonth(value: js.Array[DayOfTheMonthRange]): Self = StObject.set(x, "dayOfMonth", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object ExtensionParam {
     __obj.asInstanceOf[ExtensionParam]
   }
   
-  extension [Self <: ExtensionParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionParam] (val x: Self) extends AnyVal {
     
     inline def setAccessLocation(value: UriParam): Self = StObject.set(x, "accessLocation", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object distUtilsMod {
       __obj.asInstanceOf[Deferred[T]]
     }
     
-    extension [Self <: Deferred[?], T](x: Self & Deferred[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Deferred[?], T] (val x: Self & Deferred[T]) extends AnyVal {
       
       inline def setPromise(value: js.Promise[T]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object TimeNormalizedObject {
     __obj.asInstanceOf[TimeNormalizedObject]
   }
   
-  extension [Self <: TimeNormalizedObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeNormalizedObject] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

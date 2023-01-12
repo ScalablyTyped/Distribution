@@ -17,7 +17,8 @@ object AND {
     __obj.asInstanceOf[AND]
   }
   
-  extension [Self <: AND](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AND] (val x: Self) extends AnyVal {
     
     inline def setAND(value: js.Array[Token]): Self = StObject.set(x, "AND", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object XKeysSupplier {
     __obj.asInstanceOf[XKeysSupplier]
   }
   
-  extension [Self <: XKeysSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XKeysSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetKeys(value: () => XIndexAccess): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
     

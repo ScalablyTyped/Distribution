@@ -322,7 +322,8 @@ object libModelMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
         
@@ -392,7 +393,8 @@ object libModelMod {
         __obj.asInstanceOf[typings.jupyterlabFilebrowser.libModelMod.FilterFileBrowserModel.IOptions]
       }
       
-      extension [Self <: typings.jupyterlabFilebrowser.libModelMod.FilterFileBrowserModel.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabFilebrowser.libModelMod.FilterFileBrowserModel.IOptions] (val x: Self) extends AnyVal {
         
         inline def setFilter(value: /* value */ IModel => Boolean | PartialIScore | Null): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
         
@@ -442,7 +444,8 @@ object libModelMod {
         __obj.asInstanceOf[typings.jupyterlabFilebrowser.libModelMod.TogglableHiddenFileBrowserModel.IOptions]
       }
       
-      extension [Self <: typings.jupyterlabFilebrowser.libModelMod.TogglableHiddenFileBrowserModel.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabFilebrowser.libModelMod.TogglableHiddenFileBrowserModel.IOptions] (val x: Self) extends AnyVal {
         
         inline def setIncludeHiddenFiles(value: Boolean): Self = StObject.set(x, "includeHiddenFiles", value.asInstanceOf[js.Any])
         
@@ -467,7 +470,8 @@ object libModelMod {
       __obj.asInstanceOf[IUploadModel]
     }
     
-    extension [Self <: IUploadModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUploadModel] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object BuildingGroupSublayerProperties {
     __obj.asInstanceOf[BuildingGroupSublayerProperties]
   }
   
-  extension [Self <: BuildingGroupSublayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildingGroupSublayerProperties] (val x: Self) extends AnyVal {
     
     inline def setListMode(value: show | hide | `hide-children`): Self = StObject.set(x, "listMode", value.asInstanceOf[js.Any])
     

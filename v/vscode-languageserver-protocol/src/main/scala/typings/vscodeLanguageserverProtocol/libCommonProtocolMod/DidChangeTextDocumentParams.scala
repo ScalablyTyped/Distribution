@@ -39,7 +39,8 @@ object DidChangeTextDocumentParams {
     __obj.asInstanceOf[DidChangeTextDocumentParams]
   }
   
-  extension [Self <: DidChangeTextDocumentParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DidChangeTextDocumentParams] (val x: Self) extends AnyVal {
     
     inline def setContentChanges(value: js.Array[TextDocumentContentChangeEvent]): Self = StObject.set(x, "contentChanges", value.asInstanceOf[js.Any])
     

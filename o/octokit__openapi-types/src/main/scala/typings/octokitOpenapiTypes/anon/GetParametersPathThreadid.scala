@@ -17,7 +17,8 @@ object GetParametersPathThreadid {
     __obj.asInstanceOf[GetParametersPathThreadid]
   }
   
-  extension [Self <: GetParametersPathThreadid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersPathThreadid] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersPathThreadid): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     

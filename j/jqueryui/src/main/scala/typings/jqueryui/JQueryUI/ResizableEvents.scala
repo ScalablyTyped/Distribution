@@ -22,7 +22,8 @@ object ResizableEvents {
     __obj.asInstanceOf[ResizableEvents]
   }
   
-  extension [Self <: ResizableEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResizableEvents] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     

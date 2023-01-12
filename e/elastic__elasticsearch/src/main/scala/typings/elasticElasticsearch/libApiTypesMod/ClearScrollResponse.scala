@@ -17,7 +17,8 @@ object ClearScrollResponse {
     __obj.asInstanceOf[ClearScrollResponse]
   }
   
-  extension [Self <: ClearScrollResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearScrollResponse] (val x: Self) extends AnyVal {
     
     inline def setNum_freed(value: integer): Self = StObject.set(x, "num_freed", value.asInstanceOf[js.Any])
     

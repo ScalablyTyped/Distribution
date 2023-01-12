@@ -33,7 +33,8 @@ object libMagmaMod {
       __obj.asInstanceOf[Magma[A]]
     }
     
-    extension [Self <: Magma[?], A](x: Self & Magma[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Magma[?], A] (val x: Self & Magma[A]) extends AnyVal {
       
       inline def setConcat(value: (A, A) => A): Self = StObject.set(x, "concat", js.Any.fromFunction2(value))
     }

@@ -29,7 +29,8 @@ object Tuning {
     __obj.asInstanceOf[Tuning]
   }
   
-  extension [Self <: Tuning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tuning] (val x: Self) extends AnyVal {
     
     inline def setGetNoteForFret(value: (String, String) => String): Self = StObject.set(x, "getNoteForFret", js.Any.fromFunction2(value))
     

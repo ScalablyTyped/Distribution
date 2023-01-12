@@ -26,7 +26,8 @@ object buildSrcToproto3jsonMod {
       __obj.asInstanceOf[ToProto3JSONOptions]
     }
     
-    extension [Self <: ToProto3JSONOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToProto3JSONOptions] (val x: Self) extends AnyVal {
       
       inline def setNumericEnums(value: Boolean): Self = StObject.set(x, "numericEnums", value.asInstanceOf[js.Any])
     }

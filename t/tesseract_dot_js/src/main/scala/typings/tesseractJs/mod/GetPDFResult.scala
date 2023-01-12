@@ -17,7 +17,8 @@ object GetPDFResult {
     __obj.asInstanceOf[GetPDFResult]
   }
   
-  extension [Self <: GetPDFResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPDFResult] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

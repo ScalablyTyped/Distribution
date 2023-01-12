@@ -16,7 +16,8 @@ object InstancesSetMachineTypeRequest {
     __obj.asInstanceOf[InstancesSetMachineTypeRequest]
   }
   
-  extension [Self <: InstancesSetMachineTypeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstancesSetMachineTypeRequest] (val x: Self) extends AnyVal {
     
     inline def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
     

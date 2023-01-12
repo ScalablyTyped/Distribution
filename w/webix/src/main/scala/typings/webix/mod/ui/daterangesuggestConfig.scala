@@ -104,7 +104,8 @@ object daterangesuggestConfig {
     __obj.asInstanceOf[daterangesuggestConfig]
   }
   
-  extension [Self <: daterangesuggestConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: daterangesuggestConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

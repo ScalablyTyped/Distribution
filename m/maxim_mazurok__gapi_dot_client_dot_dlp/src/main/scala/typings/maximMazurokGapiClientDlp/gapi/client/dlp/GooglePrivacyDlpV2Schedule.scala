@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2Schedule {
     __obj.asInstanceOf[GooglePrivacyDlpV2Schedule]
   }
   
-  extension [Self <: GooglePrivacyDlpV2Schedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2Schedule] (val x: Self) extends AnyVal {
     
     inline def setRecurrencePeriodDuration(value: String): Self = StObject.set(x, "recurrencePeriodDuration", value.asInstanceOf[js.Any])
     

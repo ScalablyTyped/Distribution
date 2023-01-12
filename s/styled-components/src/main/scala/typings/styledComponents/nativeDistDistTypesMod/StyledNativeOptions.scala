@@ -19,7 +19,8 @@ object StyledNativeOptions {
     __obj.asInstanceOf[StyledNativeOptions[Props]]
   }
   
-  extension [Self <: StyledNativeOptions[?], Props](x: Self & StyledNativeOptions[Props]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyledNativeOptions[?], Props] (val x: Self & StyledNativeOptions[Props]) extends AnyVal {
     
     inline def setAttrs(value: js.Array[Attrs[Props]]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

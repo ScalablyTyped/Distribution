@@ -33,7 +33,8 @@ object PerpageQString {
     __obj.asInstanceOf[PerpageQString]
   }
   
-  extension [Self <: PerpageQString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerpageQString] (val x: Self) extends AnyVal {
     
     inline def setOrder(value: desc | asc): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     

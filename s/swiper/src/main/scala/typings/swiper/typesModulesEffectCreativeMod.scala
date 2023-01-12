@@ -103,7 +103,8 @@ object typesModulesEffectCreativeMod {
       __obj.asInstanceOf[CreativeEffectOptions]
     }
     
-    extension [Self <: CreativeEffectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreativeEffectOptions] (val x: Self) extends AnyVal {
       
       inline def setLimitProgress(value: Double): Self = StObject.set(x, "limitProgress", value.asInstanceOf[js.Any])
       
@@ -156,7 +157,8 @@ object typesModulesEffectCreativeMod {
       __obj.asInstanceOf[CreativeEffectTransform]
     }
     
-    extension [Self <: CreativeEffectTransform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreativeEffectTransform] (val x: Self) extends AnyVal {
       
       inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       

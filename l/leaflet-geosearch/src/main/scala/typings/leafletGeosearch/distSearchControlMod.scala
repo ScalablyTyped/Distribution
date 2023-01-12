@@ -145,7 +145,8 @@ object distSearchControlMod {
       __obj.asInstanceOf[SearchControlOptions]
     }
     
-    extension [Self <: SearchControlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchControlOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimateZoom(value: Boolean): Self = StObject.set(x, "animateZoom", value.asInstanceOf[js.Any])
       
@@ -326,7 +327,8 @@ object distSearchControlMod {
       __obj.asInstanceOf[SearchControlProps]
     }
     
-    extension [Self <: SearchControlProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchControlProps] (val x: Self) extends AnyVal {
       
       inline def setAnimateZoom(value: Boolean): Self = StObject.set(x, "animateZoom", value.asInstanceOf[js.Any])
       
@@ -389,7 +391,8 @@ object distSearchControlMod {
       __obj.asInstanceOf[Selection]
     }
     
-    extension [Self <: Selection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Selection] (val x: Self) extends AnyVal {
       
       inline def setData(value: SearchResult[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

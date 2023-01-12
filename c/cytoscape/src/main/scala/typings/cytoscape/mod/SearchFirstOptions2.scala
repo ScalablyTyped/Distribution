@@ -21,7 +21,8 @@ object SearchFirstOptions2 {
     __obj.asInstanceOf[SearchFirstOptions2]
   }
   
-  extension [Self <: SearchFirstOptions2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchFirstOptions2] (val x: Self) extends AnyVal {
     
     inline def setRoots(value: Selector | CollectionArgument): Self = StObject.set(x, "roots", value.asInstanceOf[js.Any])
   }

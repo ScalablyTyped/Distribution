@@ -25,7 +25,8 @@ object GetSecurityInfoOptionsType {
     __obj.asInstanceOf[GetSecurityInfoOptionsType]
   }
   
-  extension [Self <: GetSecurityInfoOptionsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSecurityInfoOptionsType] (val x: Self) extends AnyVal {
     
     inline def setCertificateChain(value: Boolean): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
     

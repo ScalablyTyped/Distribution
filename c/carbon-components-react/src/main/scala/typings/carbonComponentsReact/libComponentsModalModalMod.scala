@@ -553,7 +553,8 @@ object libComponentsModalModalMod {
       __obj.asInstanceOf[ModalProps]
     }
     
-    extension [Self <: ModalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1360,7 +1361,8 @@ object libComponentsModalModalMod {
       __obj.asInstanceOf[ModalSecondaryButtonConfig]
     }
     
-    extension [Self <: ModalSecondaryButtonConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalSecondaryButtonConfig] (val x: Self) extends AnyVal {
       
       inline def setButtonText(value: NonNullable[ReactNode]): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
       

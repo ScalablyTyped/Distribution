@@ -68,7 +68,8 @@ object QueryExecution {
     __obj.asInstanceOf[QueryExecution]
   }
   
-  extension [Self <: QueryExecution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryExecution] (val x: Self) extends AnyVal {
     
     inline def setEngineVersion(value: EngineVersion): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object MeetingSetting {
     __obj.asInstanceOf[MeetingSetting]
   }
   
-  extension [Self <: MeetingSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeetingSetting] (val x: Self) extends AnyVal {
     
     inline def setRequirePin(value: RequirePin): Self = StObject.set(x, "RequirePin", value.asInstanceOf[js.Any])
   }

@@ -21,7 +21,8 @@ object ISlidingWindowSource {
     __obj.asInstanceOf[ISlidingWindowSource]
   }
   
-  extension [Self <: ISlidingWindowSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISlidingWindowSource] (val x: Self) extends AnyVal {
     
     inline def setFetchMoreItems(value: (Any, Double, js.Array[Any], Double, Double) => Double): Self = StObject.set(x, "fetchMoreItems", js.Any.fromFunction5(value))
   }

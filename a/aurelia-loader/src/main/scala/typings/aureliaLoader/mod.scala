@@ -181,7 +181,8 @@ object mod {
       __obj.asInstanceOf[LoaderPlugin]
     }
     
-    extension [Self <: LoaderPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoaderPlugin] (val x: Self) extends AnyVal {
       
       inline def setFetch(value: String => js.Promise[Any]): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
     }

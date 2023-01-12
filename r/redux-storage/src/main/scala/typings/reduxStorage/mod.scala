@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[StorageEngine]
     }
     
-    extension [Self <: StorageEngine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageEngine] (val x: Self) extends AnyVal {
       
       inline def setLoad(value: () => PromiseLike[Any]): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
       

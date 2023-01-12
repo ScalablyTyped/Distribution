@@ -121,7 +121,8 @@ object libMod {
       __obj.asInstanceOf[CompileDataFields]
     }
     
-    extension [Self <: CompileDataFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompileDataFields] (val x: Self) extends AnyVal {
       
       inline def setAtHardBreak(value: Boolean): Self = StObject.set(x, "atHardBreak", value.asInstanceOf[js.Any])
       
@@ -179,7 +180,8 @@ object libMod {
       __obj.asInstanceOf[Fragment]
     }
     
-    extension [Self <: Fragment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fragment] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[PhrasingContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -200,7 +202,8 @@ object libMod {
       __obj.asInstanceOf[FromMarkdownOptions]
     }
     
-    extension [Self <: FromMarkdownOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromMarkdownOptions] (val x: Self) extends AnyVal {
       
       inline def setMdastExtensions(value: js.Array[Extension | js.Array[Extension]]): Self = StObject.set(x, "mdastExtensions", value.asInstanceOf[js.Any])
       

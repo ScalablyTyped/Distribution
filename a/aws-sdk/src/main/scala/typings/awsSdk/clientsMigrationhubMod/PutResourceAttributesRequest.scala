@@ -37,7 +37,8 @@ object PutResourceAttributesRequest {
     __obj.asInstanceOf[PutResourceAttributesRequest]
   }
   
-  extension [Self <: PutResourceAttributesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutResourceAttributesRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: DryRun): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[GetFirstConsistentlyInteractiveOpts]
     }
     
-    extension [Self <: GetFirstConsistentlyInteractiveOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetFirstConsistentlyInteractiveOpts] (val x: Self) extends AnyVal {
       
       inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
       

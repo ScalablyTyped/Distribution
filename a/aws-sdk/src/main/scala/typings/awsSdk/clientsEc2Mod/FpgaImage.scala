@@ -88,7 +88,8 @@ object FpgaImage {
     __obj.asInstanceOf[FpgaImage]
   }
   
-  extension [Self <: FpgaImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FpgaImage] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     

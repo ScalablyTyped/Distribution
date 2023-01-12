@@ -40,7 +40,8 @@ object CreateArtifactRequest {
     __obj.asInstanceOf[CreateArtifactRequest]
   }
   
-  extension [Self <: CreateArtifactRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateArtifactRequest] (val x: Self) extends AnyVal {
     
     inline def setArtifactName(value: ExperimentEntityName): Self = StObject.set(x, "ArtifactName", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object KnownStatsFactoryContext {
     __obj.asInstanceOf[KnownStatsFactoryContext]
   }
   
-  extension [Self <: KnownStatsFactoryContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnownStatsFactoryContext] (val x: Self) extends AnyVal {
     
     inline def setCachedGetErrors(value: /* arg0 */ Compilation => js.Array[WebpackError]): Self = StObject.set(x, "cachedGetErrors", js.Any.fromFunction1(value))
     

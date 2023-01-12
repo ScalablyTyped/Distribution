@@ -17,7 +17,8 @@ object MediaPlayerMedia {
     __obj.asInstanceOf[MediaPlayerMedia]
   }
   
-  extension [Self <: MediaPlayerMedia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaPlayerMedia] (val x: Self) extends AnyVal {
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

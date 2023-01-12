@@ -21,7 +21,8 @@ object ISCEProvider {
     __obj.asInstanceOf[ISCEProvider]
   }
   
-  extension [Self <: ISCEProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISCEProvider] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean => Unit): Self = StObject.set(x, "enabled", js.Any.fromFunction1(value))
   }

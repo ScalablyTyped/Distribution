@@ -44,7 +44,8 @@ object distOpsScatterNdUtilMod {
       __obj.asInstanceOf[ScatterShapeInfo]
     }
     
-    extension [Self <: ScatterShapeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScatterShapeInfo] (val x: Self) extends AnyVal {
       
       inline def setNumUpdates(value: Double): Self = StObject.set(x, "numUpdates", value.asInstanceOf[js.Any])
       

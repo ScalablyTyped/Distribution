@@ -28,7 +28,8 @@ object VpnStaticRoute {
     __obj.asInstanceOf[VpnStaticRoute]
   }
   
-  extension [Self <: VpnStaticRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpnStaticRoute] (val x: Self) extends AnyVal {
     
     inline def setDestinationCidrBlock(value: String): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
     

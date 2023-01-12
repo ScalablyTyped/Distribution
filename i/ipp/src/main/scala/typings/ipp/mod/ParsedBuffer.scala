@@ -23,7 +23,8 @@ object ParsedBuffer {
     __obj.asInstanceOf[ParsedBuffer]
   }
   
-  extension [Self <: ParsedBuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsedBuffer] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

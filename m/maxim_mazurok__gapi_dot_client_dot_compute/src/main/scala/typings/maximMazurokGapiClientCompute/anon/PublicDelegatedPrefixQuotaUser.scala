@@ -72,7 +72,8 @@ object PublicDelegatedPrefixQuotaUser {
     __obj.asInstanceOf[PublicDelegatedPrefixQuotaUser]
   }
   
-  extension [Self <: PublicDelegatedPrefixQuotaUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicDelegatedPrefixQuotaUser] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object RestoreTableFromClusterSnapshotResult {
     __obj.asInstanceOf[RestoreTableFromClusterSnapshotResult]
   }
   
-  extension [Self <: RestoreTableFromClusterSnapshotResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreTableFromClusterSnapshotResult] (val x: Self) extends AnyVal {
     
     inline def setTableRestoreStatus(value: TableRestoreStatus): Self = StObject.set(x, "TableRestoreStatus", value.asInstanceOf[js.Any])
     

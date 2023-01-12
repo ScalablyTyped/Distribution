@@ -47,7 +47,8 @@ object CreateReportPlanInput {
     __obj.asInstanceOf[CreateReportPlanInput]
   }
   
-  extension [Self <: CreateReportPlanInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateReportPlanInput] (val x: Self) extends AnyVal {
     
     inline def setIdempotencyToken(value: String): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
     

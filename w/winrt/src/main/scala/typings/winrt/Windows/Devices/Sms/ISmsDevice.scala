@@ -38,7 +38,8 @@ object ISmsDevice {
     __obj.asInstanceOf[ISmsDevice]
   }
   
-  extension [Self <: ISmsDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISmsDevice] (val x: Self) extends AnyVal {
     
     inline def setAccountPhoneNumber(value: String): Self = StObject.set(x, "accountPhoneNumber", value.asInstanceOf[js.Any])
     

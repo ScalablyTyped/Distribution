@@ -22,7 +22,8 @@ object AchievementDefinitionsListResponse {
     __obj.asInstanceOf[AchievementDefinitionsListResponse]
   }
   
-  extension [Self <: AchievementDefinitionsListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AchievementDefinitionsListResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[AchievementDefinition]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

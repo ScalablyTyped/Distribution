@@ -18,7 +18,8 @@ object DeleteFirewallManagerRuleGroupsResponse {
     __obj.asInstanceOf[DeleteFirewallManagerRuleGroupsResponse]
   }
   
-  extension [Self <: DeleteFirewallManagerRuleGroupsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFirewallManagerRuleGroupsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextWebACLLockToken(value: LockToken): Self = StObject.set(x, "NextWebACLLockToken", value.asInstanceOf[js.Any])
     

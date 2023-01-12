@@ -38,7 +38,8 @@ object ResponsiveModifiersonlyBo {
     __obj.asInstanceOf[ResponsiveModifiersonlyBo]
   }
   
-  extension [Self <: ResponsiveModifiersonlyBo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponsiveModifiersonlyBo] (val x: Self) extends AnyVal {
     
     inline def setDisplay(value: DisplayModifier): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     

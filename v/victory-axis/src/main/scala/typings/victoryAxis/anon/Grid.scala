@@ -41,7 +41,8 @@ object Grid {
     __obj.asInstanceOf[Grid]
   }
   
-  extension [Self <: Grid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Grid] (val x: Self) extends AnyVal {
     
     inline def setAxis(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_victory-core.VictoryStyleObject */ Any

@@ -44,7 +44,8 @@ object distSrcDrawContentMod {
       __obj.asInstanceOf[DrawContentParameters]
     }
     
-    extension [Self <: DrawContentParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawContentParameters] (val x: Self) extends AnyVal {
       
       inline def setContents(value: js.Array[String]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       

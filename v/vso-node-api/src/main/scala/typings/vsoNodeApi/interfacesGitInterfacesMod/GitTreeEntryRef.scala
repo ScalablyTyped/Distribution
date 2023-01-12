@@ -50,7 +50,8 @@ object GitTreeEntryRef {
     __obj.asInstanceOf[GitTreeEntryRef]
   }
   
-  extension [Self <: GitTreeEntryRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitTreeEntryRef] (val x: Self) extends AnyVal {
     
     inline def setGitObjectType(value: GitObjectType): Self = StObject.set(x, "gitObjectType", value.asInstanceOf[js.Any])
     

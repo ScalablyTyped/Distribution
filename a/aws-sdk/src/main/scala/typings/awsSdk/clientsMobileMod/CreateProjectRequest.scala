@@ -33,7 +33,8 @@ object CreateProjectRequest {
     __obj.asInstanceOf[CreateProjectRequest]
   }
   
-  extension [Self <: CreateProjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateProjectRequest] (val x: Self) extends AnyVal {
     
     inline def setContents(value: Contents): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

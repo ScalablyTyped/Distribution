@@ -30,7 +30,8 @@ object privateUtilsMod {
       __obj.asInstanceOf[CallOrApply[This, Args, Return]]
     }
     
-    extension [Self <: CallOrApply[?, ?, ?], This, Args, Return](x: Self & (CallOrApply[This, Args, Return])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallOrApply[?, ?, ?], This, Args, Return] (val x: Self & (CallOrApply[This, Args, Return])) extends AnyVal {
       
       inline def setApply(
         value: (This, /* import warning: importer.ImportType#apply Failed type conversion: Args extends undefined ? std.Array<any> : Args | std.IArguments */ js.Any) => Return

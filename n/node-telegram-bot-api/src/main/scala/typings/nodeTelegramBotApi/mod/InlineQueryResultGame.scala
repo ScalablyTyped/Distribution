@@ -22,7 +22,8 @@ object InlineQueryResultGame {
     __obj.asInstanceOf[InlineQueryResultGame]
   }
   
-  extension [Self <: InlineQueryResultGame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineQueryResultGame] (val x: Self) extends AnyVal {
     
     inline def setGame_short_name(value: String): Self = StObject.set(x, "game_short_name", value.asInstanceOf[js.Any])
     

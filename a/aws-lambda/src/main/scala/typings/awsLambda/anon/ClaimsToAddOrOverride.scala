@@ -20,7 +20,8 @@ object ClaimsToAddOrOverride {
     __obj.asInstanceOf[ClaimsToAddOrOverride]
   }
   
-  extension [Self <: ClaimsToAddOrOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClaimsToAddOrOverride] (val x: Self) extends AnyVal {
     
     inline def setClaimsToAddOrOverride(value: StringDictionary[String]): Self = StObject.set(x, "claimsToAddOrOverride", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object Assignterms {
     __obj.asInstanceOf[Assignterms]
   }
   
-  extension [Self <: Assignterms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Assignterms] (val x: Self) extends AnyVal {
     
     inline def setAssign_terms(value: String): Self = StObject.set(x, "assign_terms", value.asInstanceOf[js.Any])
     

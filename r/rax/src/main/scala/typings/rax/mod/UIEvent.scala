@@ -39,7 +39,8 @@ object UIEvent {
     __obj.asInstanceOf[UIEvent[T]]
   }
   
-  extension [Self <: UIEvent[?], T](x: Self & UIEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIEvent[?], T] (val x: Self & UIEvent[T]) extends AnyVal {
     
     inline def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     

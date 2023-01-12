@@ -42,7 +42,8 @@ object LocationProviderStatus {
     __obj.asInstanceOf[LocationProviderStatus]
   }
   
-  extension [Self <: LocationProviderStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationProviderStatus] (val x: Self) extends AnyVal {
     
     inline def setBackgroundModeEnabled(value: Boolean): Self = StObject.set(x, "backgroundModeEnabled", value.asInstanceOf[js.Any])
     

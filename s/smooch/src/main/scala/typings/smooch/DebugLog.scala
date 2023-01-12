@@ -20,7 +20,8 @@ object DebugLog {
     __obj.asInstanceOf[DebugLog]
   }
   
-  extension [Self <: DebugLog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugLog] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

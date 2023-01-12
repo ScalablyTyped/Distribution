@@ -33,7 +33,8 @@ object Book {
     __obj.asInstanceOf[Book[Type]]
   }
   
-  extension [Self <: Book[?], Type](x: Self & Book[Type]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Book[?], Type] (val x: Self & Book[Type]) extends AnyVal {
     
     inline def setDelete(value: PeerId => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     

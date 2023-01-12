@@ -18,7 +18,8 @@ object ContainsKeysResults {
     __obj.asInstanceOf[ContainsKeysResults[K]]
   }
   
-  extension [Self <: ContainsKeysResults[?], K](x: Self & ContainsKeysResults[K]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainsKeysResults[?], K] (val x: Self & ContainsKeysResults[K]) extends AnyVal {
     
     inline def setContainsParameters(value: FetchByKeysParameters[K]): Self = StObject.set(x, "containsParameters", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[PartialRouteOptions]
     }
     
-    extension [Self <: PartialRouteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRouteOptions] (val x: Self) extends AnyVal {
       
       inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object anon {
       __obj.asInstanceOf[PartialRouterOptions]
     }
     
-    extension [Self <: PartialRouterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRouterOptions] (val x: Self) extends AnyVal {
       
       inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       

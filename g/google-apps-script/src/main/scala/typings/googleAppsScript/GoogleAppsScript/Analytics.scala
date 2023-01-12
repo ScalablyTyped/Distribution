@@ -427,7 +427,8 @@ object Analytics {
         __obj.asInstanceOf[DataCollection]
       }
       
-      extension [Self <: DataCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DataCollection] (val x: Self) extends AnyVal {
         
         inline def setGa(value: GaCollection): Self = StObject.set(x, "Ga", value.asInstanceOf[js.Any])
         
@@ -493,7 +494,8 @@ object Analytics {
           __obj.asInstanceOf[ClientIdCollection]
         }
         
-        extension [Self <: ClientIdCollection](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ClientIdCollection] (val x: Self) extends AnyVal {
           
           inline def setHashClientId(value: HashClientIdRequest => HashClientIdResponse): Self = StObject.set(x, "hashClientId", js.Any.fromFunction1(value))
         }
@@ -956,7 +958,8 @@ object Analytics {
         __obj.asInstanceOf[ManagementCollection]
       }
       
-      extension [Self <: ManagementCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ManagementCollection] (val x: Self) extends AnyVal {
         
         inline def setAccountSummaries(value: AccountSummariesCollection): Self = StObject.set(x, "AccountSummaries", value.asInstanceOf[js.Any])
         
@@ -1054,7 +1057,8 @@ object Analytics {
           __obj.asInstanceOf[ColumnsCollection]
         }
         
-        extension [Self <: ColumnsCollection](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ColumnsCollection] (val x: Self) extends AnyVal {
           
           inline def setList(value: String => Columns): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
         }
@@ -1072,7 +1076,8 @@ object Analytics {
         __obj.asInstanceOf[MetadataCollection]
       }
       
-      extension [Self <: MetadataCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MetadataCollection] (val x: Self) extends AnyVal {
         
         inline def setColumns(value: ColumnsCollection): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
         
@@ -1098,7 +1103,8 @@ object Analytics {
         __obj.asInstanceOf[ProvisioningCollection]
       }
       
-      extension [Self <: ProvisioningCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProvisioningCollection] (val x: Self) extends AnyVal {
         
         inline def setCreateAccountTicket(value: AccountTicket => AccountTicket): Self = StObject.set(x, "createAccountTicket", js.Any.fromFunction1(value))
         
@@ -1120,7 +1126,8 @@ object Analytics {
           __obj.asInstanceOf[UserDeletionRequestCollection]
         }
         
-        extension [Self <: UserDeletionRequestCollection](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: UserDeletionRequestCollection] (val x: Self) extends AnyVal {
           
           inline def setUpsert(value: UserDeletionRequest => UserDeletionRequest): Self = StObject.set(x, "upsert", js.Any.fromFunction1(value))
         }
@@ -1138,7 +1145,8 @@ object Analytics {
         __obj.asInstanceOf[UserDeletionCollection]
       }
       
-      extension [Self <: UserDeletionCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserDeletionCollection] (val x: Self) extends AnyVal {
         
         inline def setUserDeletionRequest(value: UserDeletionRequestCollection): Self = StObject.set(x, "UserDeletionRequest", value.asInstanceOf[js.Any])
         
@@ -1147,7 +1155,8 @@ object Analytics {
     }
   }
   
-  extension [Self <: Analytics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Analytics] (val x: Self) extends AnyVal {
     
     inline def setData(value: DataCollection): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
@@ -1319,7 +1328,8 @@ object Analytics {
         __obj.asInstanceOf[Account]
       }
       
-      extension [Self <: Account](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
         
         inline def setChildLink(value: AccountChildLink): Self = StObject.set(x, "childLink", value.asInstanceOf[js.Any])
         
@@ -1372,7 +1382,8 @@ object Analytics {
         __obj.asInstanceOf[AccountChildLink]
       }
       
-      extension [Self <: AccountChildLink](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountChildLink] (val x: Self) extends AnyVal {
         
         inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
         
@@ -1395,7 +1406,8 @@ object Analytics {
         __obj.asInstanceOf[AccountPermissions]
       }
       
-      extension [Self <: AccountPermissions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountPermissions] (val x: Self) extends AnyVal {
         
         inline def setEffective(value: js.Array[String]): Self = StObject.set(x, "effective", value.asInstanceOf[js.Any])
         
@@ -1422,7 +1434,8 @@ object Analytics {
         __obj.asInstanceOf[AccountRef]
       }
       
-      extension [Self <: AccountRef](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountRef] (val x: Self) extends AnyVal {
         
         inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
         
@@ -1467,7 +1480,8 @@ object Analytics {
         __obj.asInstanceOf[AccountSummaries]
       }
       
-      extension [Self <: AccountSummaries](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountSummaries] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[AccountSummary]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -1524,7 +1538,8 @@ object Analytics {
         __obj.asInstanceOf[AccountSummary]
       }
       
-      extension [Self <: AccountSummary](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountSummary] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -1571,7 +1586,8 @@ object Analytics {
         __obj.asInstanceOf[AccountTicket]
       }
       
-      extension [Self <: AccountTicket](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountTicket] (val x: Self) extends AnyVal {
         
         inline def setAccount(value: Account): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
         
@@ -1620,7 +1636,8 @@ object Analytics {
         __obj.asInstanceOf[AccountTreeRequest]
       }
       
-      extension [Self <: AccountTreeRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountTreeRequest] (val x: Self) extends AnyVal {
         
         inline def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
         
@@ -1665,7 +1682,8 @@ object Analytics {
         __obj.asInstanceOf[AccountTreeResponse]
       }
       
-      extension [Self <: AccountTreeResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountTreeResponse] (val x: Self) extends AnyVal {
         
         inline def setAccount(value: Account): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
         
@@ -1710,7 +1728,8 @@ object Analytics {
         __obj.asInstanceOf[Accounts]
       }
       
-      extension [Self <: Accounts](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Accounts] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[Account]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -1763,7 +1782,8 @@ object Analytics {
         __obj.asInstanceOf[AdWordsAccount]
       }
       
-      extension [Self <: AdWordsAccount](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AdWordsAccount] (val x: Self) extends AnyVal {
         
         inline def setAutoTaggingEnabled(value: Boolean): Self = StObject.set(x, "autoTaggingEnabled", value.asInstanceOf[js.Any])
         
@@ -1790,7 +1810,8 @@ object Analytics {
         __obj.asInstanceOf[AnalyticsDataimportDeleteUploadDataRequest]
       }
       
-      extension [Self <: AnalyticsDataimportDeleteUploadDataRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AnalyticsDataimportDeleteUploadDataRequest] (val x: Self) extends AnyVal {
         
         inline def setCustomDataImportUids(value: js.Array[String]): Self = StObject.set(x, "customDataImportUids", value.asInstanceOf[js.Any])
         
@@ -1815,7 +1836,8 @@ object Analytics {
         __obj.asInstanceOf[Column]
       }
       
-      extension [Self <: Column](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
         
         inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
         
@@ -1850,7 +1872,8 @@ object Analytics {
         __obj.asInstanceOf[Columns]
       }
       
-      extension [Self <: Columns](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Columns] (val x: Self) extends AnyVal {
         
         inline def setAttributeNames(value: js.Array[String]): Self = StObject.set(x, "attributeNames", value.asInstanceOf[js.Any])
         
@@ -1919,7 +1942,8 @@ object Analytics {
         __obj.asInstanceOf[CustomDataSource]
       }
       
-      extension [Self <: CustomDataSource](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomDataSource] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -2004,7 +2028,8 @@ object Analytics {
         __obj.asInstanceOf[CustomDataSourceChildLink]
       }
       
-      extension [Self <: CustomDataSourceChildLink](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomDataSourceChildLink] (val x: Self) extends AnyVal {
         
         inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
         
@@ -2029,7 +2054,8 @@ object Analytics {
         __obj.asInstanceOf[CustomDataSourceParentLink]
       }
       
-      extension [Self <: CustomDataSourceParentLink](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomDataSourceParentLink] (val x: Self) extends AnyVal {
         
         inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
         
@@ -2066,7 +2092,8 @@ object Analytics {
         __obj.asInstanceOf[CustomDataSources]
       }
       
-      extension [Self <: CustomDataSources](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomDataSources] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[CustomDataSource]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -2137,7 +2164,8 @@ object Analytics {
         __obj.asInstanceOf[CustomDimension]
       }
       
-      extension [Self <: CustomDimension](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomDimension] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -2202,7 +2230,8 @@ object Analytics {
         __obj.asInstanceOf[CustomDimensionParentLink]
       }
       
-      extension [Self <: CustomDimensionParentLink](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomDimensionParentLink] (val x: Self) extends AnyVal {
         
         inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
         
@@ -2239,7 +2268,8 @@ object Analytics {
         __obj.asInstanceOf[CustomDimensions]
       }
       
-      extension [Self <: CustomDimensions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomDimensions] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[CustomDimension]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -2316,7 +2346,8 @@ object Analytics {
         __obj.asInstanceOf[CustomMetric]
       }
       
-      extension [Self <: CustomMetric](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomMetric] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -2393,7 +2424,8 @@ object Analytics {
         __obj.asInstanceOf[CustomMetricParentLink]
       }
       
-      extension [Self <: CustomMetricParentLink](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomMetricParentLink] (val x: Self) extends AnyVal {
         
         inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
         
@@ -2430,7 +2462,8 @@ object Analytics {
         __obj.asInstanceOf[CustomMetrics]
       }
       
-      extension [Self <: CustomMetrics](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomMetrics] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[CustomMetric]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -2491,7 +2524,8 @@ object Analytics {
         __obj.asInstanceOf[EntityAdWordsLink]
       }
       
-      extension [Self <: EntityAdWordsLink](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EntityAdWordsLink] (val x: Self) extends AnyVal {
         
         inline def setAdWordsAccounts(value: js.Array[AdWordsAccount]): Self = StObject.set(x, "adWordsAccounts", value.asInstanceOf[js.Any])
         
@@ -2538,7 +2572,8 @@ object Analytics {
         __obj.asInstanceOf[EntityAdWordsLinkEntity]
       }
       
-      extension [Self <: EntityAdWordsLinkEntity](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EntityAdWordsLinkEntity] (val x: Self) extends AnyVal {
         
         inline def setWebPropertyRef(value: WebPropertyRef): Self = StObject.set(x, "webPropertyRef", value.asInstanceOf[js.Any])
         
@@ -2569,7 +2604,8 @@ object Analytics {
         __obj.asInstanceOf[EntityAdWordsLinks]
       }
       
-      extension [Self <: EntityAdWordsLinks](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EntityAdWordsLinks] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[EntityAdWordsLink]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -2624,7 +2660,8 @@ object Analytics {
         __obj.asInstanceOf[EntityUserLink]
       }
       
-      extension [Self <: EntityUserLink](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EntityUserLink] (val x: Self) extends AnyVal {
         
         inline def setEntity(value: EntityUserLinkEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
         
@@ -2667,7 +2704,8 @@ object Analytics {
         __obj.asInstanceOf[EntityUserLinkEntity]
       }
       
-      extension [Self <: EntityUserLinkEntity](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EntityUserLinkEntity] (val x: Self) extends AnyVal {
         
         inline def setAccountRef(value: AccountRef): Self = StObject.set(x, "accountRef", value.asInstanceOf[js.Any])
         
@@ -2696,7 +2734,8 @@ object Analytics {
         __obj.asInstanceOf[EntityUserLinkPermissions]
       }
       
-      extension [Self <: EntityUserLinkPermissions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EntityUserLinkPermissions] (val x: Self) extends AnyVal {
         
         inline def setEffective(value: js.Array[String]): Self = StObject.set(x, "effective", value.asInstanceOf[js.Any])
         
@@ -2735,7 +2774,8 @@ object Analytics {
         __obj.asInstanceOf[EntityUserLinks]
       }
       
-      extension [Self <: EntityUserLinks](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EntityUserLinks] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[EntityUserLink]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -2834,7 +2874,8 @@ object Analytics {
         __obj.asInstanceOf[Experiment]
       }
       
-      extension [Self <: Experiment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Experiment] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -2965,7 +3006,8 @@ object Analytics {
         __obj.asInstanceOf[ExperimentParentLink]
       }
       
-      extension [Self <: ExperimentParentLink](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExperimentParentLink] (val x: Self) extends AnyVal {
         
         inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
         
@@ -2996,7 +3038,8 @@ object Analytics {
         __obj.asInstanceOf[ExperimentVariations]
       }
       
-      extension [Self <: ExperimentVariations](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExperimentVariations] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -3045,7 +3088,8 @@ object Analytics {
         __obj.asInstanceOf[Experiments]
       }
       
-      extension [Self <: Experiments](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Experiments] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[Experiment]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -3122,7 +3166,8 @@ object Analytics {
         __obj.asInstanceOf[Filter]
       }
       
-      extension [Self <: Filter](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -3221,7 +3266,8 @@ object Analytics {
         __obj.asInstanceOf[FilterAdvancedDetails]
       }
       
-      extension [Self <: FilterAdvancedDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FilterAdvancedDetails] (val x: Self) extends AnyVal {
         
         inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
         
@@ -3298,7 +3344,8 @@ object Analytics {
         __obj.asInstanceOf[FilterExpression]
       }
       
-      extension [Self <: FilterExpression](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FilterExpression] (val x: Self) extends AnyVal {
         
         inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
         
@@ -3339,7 +3386,8 @@ object Analytics {
         __obj.asInstanceOf[FilterLowercaseDetails]
       }
       
-      extension [Self <: FilterLowercaseDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FilterLowercaseDetails] (val x: Self) extends AnyVal {
         
         inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
         
@@ -3364,7 +3412,8 @@ object Analytics {
         __obj.asInstanceOf[FilterParentLink]
       }
       
-      extension [Self <: FilterParentLink](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FilterParentLink] (val x: Self) extends AnyVal {
         
         inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
         
@@ -3395,7 +3444,8 @@ object Analytics {
         __obj.asInstanceOf[FilterRef]
       }
       
-      extension [Self <: FilterRef](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FilterRef] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -3438,7 +3488,8 @@ object Analytics {
         __obj.asInstanceOf[FilterSearchAndReplaceDetails]
       }
       
-      extension [Self <: FilterSearchAndReplaceDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FilterSearchAndReplaceDetails] (val x: Self) extends AnyVal {
         
         inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
         
@@ -3475,7 +3526,8 @@ object Analytics {
         __obj.asInstanceOf[FilterUppercaseDetails]
       }
       
-      extension [Self <: FilterUppercaseDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FilterUppercaseDetails] (val x: Self) extends AnyVal {
         
         inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
         
@@ -3512,7 +3564,8 @@ object Analytics {
         __obj.asInstanceOf[Filters]
       }
       
-      extension [Self <: Filters](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Filters] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[Filter]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -3593,7 +3646,8 @@ object Analytics {
         __obj.asInstanceOf[GaData]
       }
       
-      extension [Self <: GaData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GaData] (val x: Self) extends AnyVal {
         
         inline def setColumnHeaders(value: js.Array[GaDataColumnHeaders]): Self = StObject.set(x, "columnHeaders", value.asInstanceOf[js.Any])
         
@@ -3684,7 +3738,8 @@ object Analytics {
         __obj.asInstanceOf[GaDataColumnHeaders]
       }
       
-      extension [Self <: GaDataColumnHeaders](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GaDataColumnHeaders] (val x: Self) extends AnyVal {
         
         inline def setColumnType(value: String): Self = StObject.set(x, "columnType", value.asInstanceOf[js.Any])
         
@@ -3713,7 +3768,8 @@ object Analytics {
         __obj.asInstanceOf[GaDataDataTable]
       }
       
-      extension [Self <: GaDataDataTable](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GaDataDataTable] (val x: Self) extends AnyVal {
         
         inline def setCols(value: js.Array[GaDataDataTableCols]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
         
@@ -3744,7 +3800,8 @@ object Analytics {
         __obj.asInstanceOf[GaDataDataTableCols]
       }
       
-      extension [Self <: GaDataDataTableCols](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GaDataDataTableCols] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -3771,7 +3828,8 @@ object Analytics {
         __obj.asInstanceOf[GaDataDataTableRows]
       }
       
-      extension [Self <: GaDataDataTableRows](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GaDataDataTableRows] (val x: Self) extends AnyVal {
         
         inline def setC(value: js.Array[GaDataDataTableRowsC]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
         
@@ -3792,7 +3850,8 @@ object Analytics {
         __obj.asInstanceOf[GaDataDataTableRowsC]
       }
       
-      extension [Self <: GaDataDataTableRowsC](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GaDataDataTableRowsC] (val x: Self) extends AnyVal {
         
         inline def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
         
@@ -3821,7 +3880,8 @@ object Analytics {
         __obj.asInstanceOf[GaDataProfileInfo]
       }
       
-      extension [Self <: GaDataProfileInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GaDataProfileInfo] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -3896,7 +3956,8 @@ object Analytics {
         __obj.asInstanceOf[GaDataQuery]
       }
       
-      extension [Self <: GaDataQuery](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GaDataQuery] (val x: Self) extends AnyVal {
         
         inline def setDimensions(value: String): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
         
@@ -3989,7 +4050,8 @@ object Analytics {
         __obj.asInstanceOf[Goal]
       }
       
-      extension [Self <: Goal](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Goal] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -4078,7 +4140,8 @@ object Analytics {
         __obj.asInstanceOf[GoalEventDetails]
       }
       
-      extension [Self <: GoalEventDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GoalEventDetails] (val x: Self) extends AnyVal {
         
         inline def setEventConditions(value: js.Array[GoalEventDetailsEventConditions]): Self = StObject.set(x, "eventConditions", value.asInstanceOf[js.Any])
         
@@ -4111,7 +4174,8 @@ object Analytics {
         __obj.asInstanceOf[GoalEventDetailsEventConditions]
       }
       
-      extension [Self <: GoalEventDetailsEventConditions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GoalEventDetailsEventConditions] (val x: Self) extends AnyVal {
         
         inline def setComparisonType(value: String): Self = StObject.set(x, "comparisonType", value.asInstanceOf[js.Any])
         
@@ -4148,7 +4212,8 @@ object Analytics {
         __obj.asInstanceOf[GoalParentLink]
       }
       
-      extension [Self <: GoalParentLink](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GoalParentLink] (val x: Self) extends AnyVal {
         
         inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
         
@@ -4179,7 +4244,8 @@ object Analytics {
         __obj.asInstanceOf[GoalUrlDestinationDetails]
       }
       
-      extension [Self <: GoalUrlDestinationDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GoalUrlDestinationDetails] (val x: Self) extends AnyVal {
         
         inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
         
@@ -4220,7 +4286,8 @@ object Analytics {
         __obj.asInstanceOf[GoalUrlDestinationDetailsSteps]
       }
       
-      extension [Self <: GoalUrlDestinationDetailsSteps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GoalUrlDestinationDetailsSteps] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -4249,7 +4316,8 @@ object Analytics {
         __obj.asInstanceOf[GoalVisitNumPagesDetails]
       }
       
-      extension [Self <: GoalVisitNumPagesDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GoalVisitNumPagesDetails] (val x: Self) extends AnyVal {
         
         inline def setComparisonType(value: String): Self = StObject.set(x, "comparisonType", value.asInstanceOf[js.Any])
         
@@ -4274,7 +4342,8 @@ object Analytics {
         __obj.asInstanceOf[GoalVisitTimeOnSiteDetails]
       }
       
-      extension [Self <: GoalVisitTimeOnSiteDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GoalVisitTimeOnSiteDetails] (val x: Self) extends AnyVal {
         
         inline def setComparisonType(value: String): Self = StObject.set(x, "comparisonType", value.asInstanceOf[js.Any])
         
@@ -4311,7 +4380,8 @@ object Analytics {
         __obj.asInstanceOf[Goals]
       }
       
-      extension [Self <: Goals](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Goals] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[Goal]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -4364,7 +4434,8 @@ object Analytics {
         __obj.asInstanceOf[HashClientIdRequest]
       }
       
-      extension [Self <: HashClientIdRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HashClientIdRequest] (val x: Self) extends AnyVal {
         
         inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
         
@@ -4397,7 +4468,8 @@ object Analytics {
         __obj.asInstanceOf[HashClientIdResponse]
       }
       
-      extension [Self <: HashClientIdResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HashClientIdResponse] (val x: Self) extends AnyVal {
         
         inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
         
@@ -4436,7 +4508,8 @@ object Analytics {
         __obj.asInstanceOf[IncludeConditions]
       }
       
-      extension [Self <: IncludeConditions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IncludeConditions] (val x: Self) extends AnyVal {
         
         inline def setDaysToLookBack(value: Double): Self = StObject.set(x, "daysToLookBack", value.asInstanceOf[js.Any])
         
@@ -4489,7 +4562,8 @@ object Analytics {
         __obj.asInstanceOf[LinkedForeignAccount]
       }
       
-      extension [Self <: LinkedForeignAccount](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LinkedForeignAccount] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -4572,7 +4646,8 @@ object Analytics {
         __obj.asInstanceOf[McfData]
       }
       
-      extension [Self <: McfData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: McfData] (val x: Self) extends AnyVal {
         
         inline def setColumnHeaders(value: js.Array[McfDataColumnHeaders]): Self = StObject.set(x, "columnHeaders", value.asInstanceOf[js.Any])
         
@@ -4655,7 +4730,8 @@ object Analytics {
         __obj.asInstanceOf[McfDataColumnHeaders]
       }
       
-      extension [Self <: McfDataColumnHeaders](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: McfDataColumnHeaders] (val x: Self) extends AnyVal {
         
         inline def setColumnType(value: String): Self = StObject.set(x, "columnType", value.asInstanceOf[js.Any])
         
@@ -4692,7 +4768,8 @@ object Analytics {
         __obj.asInstanceOf[McfDataProfileInfo]
       }
       
-      extension [Self <: McfDataProfileInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: McfDataProfileInfo] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -4751,7 +4828,8 @@ object Analytics {
         __obj.asInstanceOf[McfDataQuery]
       }
       
-      extension [Self <: McfDataQuery](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: McfDataQuery] (val x: Self) extends AnyVal {
         
         inline def setDimensions(value: String): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
         
@@ -4816,7 +4894,8 @@ object Analytics {
         __obj.asInstanceOf[McfDataRows]
       }
       
-      extension [Self <: McfDataRows](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: McfDataRows] (val x: Self) extends AnyVal {
         
         inline def setConversionPathValue(value: js.Array[McfDataRowsConversionPathValue]): Self = StObject.set(x, "conversionPathValue", value.asInstanceOf[js.Any])
         
@@ -4843,7 +4922,8 @@ object Analytics {
         __obj.asInstanceOf[McfDataRowsConversionPathValue]
       }
       
-      extension [Self <: McfDataRowsConversionPathValue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: McfDataRowsConversionPathValue] (val x: Self) extends AnyVal {
         
         inline def setInteractionType(value: String): Self = StObject.set(x, "interactionType", value.asInstanceOf[js.Any])
         
@@ -4916,7 +4996,8 @@ object Analytics {
         __obj.asInstanceOf[Profile]
       }
       
-      extension [Self <: Profile](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -5037,7 +5118,8 @@ object Analytics {
         __obj.asInstanceOf[ProfileChildLink]
       }
       
-      extension [Self <: ProfileChildLink](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProfileChildLink] (val x: Self) extends AnyVal {
         
         inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
         
@@ -5070,7 +5152,8 @@ object Analytics {
         __obj.asInstanceOf[ProfileFilterLink]
       }
       
-      extension [Self <: ProfileFilterLink](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProfileFilterLink] (val x: Self) extends AnyVal {
         
         inline def setFilterRef(value: FilterRef): Self = StObject.set(x, "filterRef", value.asInstanceOf[js.Any])
         
@@ -5123,7 +5206,8 @@ object Analytics {
         __obj.asInstanceOf[ProfileFilterLinks]
       }
       
-      extension [Self <: ProfileFilterLinks](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProfileFilterLinks] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[ProfileFilterLink]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -5174,7 +5258,8 @@ object Analytics {
         __obj.asInstanceOf[ProfileParentLink]
       }
       
-      extension [Self <: ProfileParentLink](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProfileParentLink] (val x: Self) extends AnyVal {
         
         inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
         
@@ -5197,7 +5282,8 @@ object Analytics {
         __obj.asInstanceOf[ProfilePermissions]
       }
       
-      extension [Self <: ProfilePermissions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProfilePermissions] (val x: Self) extends AnyVal {
         
         inline def setEffective(value: js.Array[String]): Self = StObject.set(x, "effective", value.asInstanceOf[js.Any])
         
@@ -5230,7 +5316,8 @@ object Analytics {
         __obj.asInstanceOf[ProfileRef]
       }
       
-      extension [Self <: ProfileRef](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProfileRef] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -5281,7 +5368,8 @@ object Analytics {
         __obj.asInstanceOf[ProfileSummary]
       }
       
-      extension [Self <: ProfileSummary](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProfileSummary] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -5330,7 +5418,8 @@ object Analytics {
         __obj.asInstanceOf[Profiles]
       }
       
-      extension [Self <: Profiles](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Profiles] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[Profile]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -5395,7 +5484,8 @@ object Analytics {
         __obj.asInstanceOf[RealtimeData]
       }
       
-      extension [Self <: RealtimeData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RealtimeData] (val x: Self) extends AnyVal {
         
         inline def setColumnHeaders(value: js.Array[RealtimeDataColumnHeaders]): Self = StObject.set(x, "columnHeaders", value.asInstanceOf[js.Any])
         
@@ -5454,7 +5544,8 @@ object Analytics {
         __obj.asInstanceOf[RealtimeDataColumnHeaders]
       }
       
-      extension [Self <: RealtimeDataColumnHeaders](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RealtimeDataColumnHeaders] (val x: Self) extends AnyVal {
         
         inline def setColumnType(value: String): Self = StObject.set(x, "columnType", value.asInstanceOf[js.Any])
         
@@ -5491,7 +5582,8 @@ object Analytics {
         __obj.asInstanceOf[RealtimeDataProfileInfo]
       }
       
-      extension [Self <: RealtimeDataProfileInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RealtimeDataProfileInfo] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -5540,7 +5632,8 @@ object Analytics {
         __obj.asInstanceOf[RealtimeDataQuery]
       }
       
-      extension [Self <: RealtimeDataQuery](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RealtimeDataQuery] (val x: Self) extends AnyVal {
         
         inline def setDimensions(value: String): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
         
@@ -5609,7 +5702,8 @@ object Analytics {
         __obj.asInstanceOf[RemarketingAudience]
       }
       
-      extension [Self <: RemarketingAudience](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RemarketingAudience] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -5684,7 +5778,8 @@ object Analytics {
         __obj.asInstanceOf[RemarketingAudienceAudienceDefinition]
       }
       
-      extension [Self <: RemarketingAudienceAudienceDefinition](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RemarketingAudienceAudienceDefinition] (val x: Self) extends AnyVal {
         
         inline def setIncludeConditions(value: IncludeConditions): Self = StObject.set(x, "includeConditions", value.asInstanceOf[js.Any])
         
@@ -5705,7 +5800,8 @@ object Analytics {
         __obj.asInstanceOf[RemarketingAudienceStateBasedAudienceDefinition]
       }
       
-      extension [Self <: RemarketingAudienceStateBasedAudienceDefinition](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RemarketingAudienceStateBasedAudienceDefinition] (val x: Self) extends AnyVal {
         
         inline def setExcludeConditions(value: RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions): Self = StObject.set(x, "excludeConditions", value.asInstanceOf[js.Any])
         
@@ -5730,7 +5826,8 @@ object Analytics {
         __obj.asInstanceOf[RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions]
       }
       
-      extension [Self <: RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions] (val x: Self) extends AnyVal {
         
         inline def setExclusionDuration(value: String): Self = StObject.set(x, "exclusionDuration", value.asInstanceOf[js.Any])
         
@@ -5767,7 +5864,8 @@ object Analytics {
         __obj.asInstanceOf[RemarketingAudiences]
       }
       
-      extension [Self <: RemarketingAudiences](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RemarketingAudiences] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[RemarketingAudience]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -5832,7 +5930,8 @@ object Analytics {
         __obj.asInstanceOf[Segment]
       }
       
-      extension [Self <: Segment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Segment] (val x: Self) extends AnyVal {
         
         inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
         
@@ -5897,7 +5996,8 @@ object Analytics {
         __obj.asInstanceOf[Segments]
       }
       
-      extension [Self <: Segments](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Segments] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[Segment]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -5982,7 +6082,8 @@ object Analytics {
         __obj.asInstanceOf[UnsampledReport]
       }
       
-      extension [Self <: UnsampledReport](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UnsampledReport] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -6075,7 +6176,8 @@ object Analytics {
         __obj.asInstanceOf[UnsampledReportCloudStorageDownloadDetails]
       }
       
-      extension [Self <: UnsampledReportCloudStorageDownloadDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UnsampledReportCloudStorageDownloadDetails] (val x: Self) extends AnyVal {
         
         inline def setBucketId(value: String): Self = StObject.set(x, "bucketId", value.asInstanceOf[js.Any])
         
@@ -6098,7 +6200,8 @@ object Analytics {
         __obj.asInstanceOf[UnsampledReportDriveDownloadDetails]
       }
       
-      extension [Self <: UnsampledReportDriveDownloadDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UnsampledReportDriveDownloadDetails] (val x: Self) extends AnyVal {
         
         inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
         
@@ -6131,7 +6234,8 @@ object Analytics {
         __obj.asInstanceOf[UnsampledReports]
       }
       
-      extension [Self <: UnsampledReports](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UnsampledReports] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[UnsampledReport]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -6192,7 +6296,8 @@ object Analytics {
         __obj.asInstanceOf[Upload]
       }
       
-      extension [Self <: Upload](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Upload] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -6249,7 +6354,8 @@ object Analytics {
         __obj.asInstanceOf[Uploads]
       }
       
-      extension [Self <: Uploads](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Uploads] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[Upload]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -6302,7 +6408,8 @@ object Analytics {
         __obj.asInstanceOf[UserDeletionRequest]
       }
       
-      extension [Self <: UserDeletionRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserDeletionRequest] (val x: Self) extends AnyVal {
         
         inline def setDeletionRequestTime(value: String): Self = StObject.set(x, "deletionRequestTime", value.asInstanceOf[js.Any])
         
@@ -6339,7 +6446,8 @@ object Analytics {
         __obj.asInstanceOf[UserDeletionRequestId]
       }
       
-      extension [Self <: UserDeletionRequestId](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserDeletionRequestId] (val x: Self) extends AnyVal {
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
@@ -6366,7 +6474,8 @@ object Analytics {
         __obj.asInstanceOf[UserRef]
       }
       
-      extension [Self <: UserRef](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserRef] (val x: Self) extends AnyVal {
         
         inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
         
@@ -6403,7 +6512,8 @@ object Analytics {
         __obj.asInstanceOf[WebPropertyRef]
       }
       
-      extension [Self <: WebPropertyRef](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WebPropertyRef] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -6456,7 +6566,8 @@ object Analytics {
         __obj.asInstanceOf[WebPropertySummary]
       }
       
-      extension [Self <: WebPropertySummary](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WebPropertySummary] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -6519,7 +6630,8 @@ object Analytics {
         __obj.asInstanceOf[Webproperties]
       }
       
-      extension [Self <: Webproperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Webproperties] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[Webproperty]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -6604,7 +6716,8 @@ object Analytics {
         __obj.asInstanceOf[Webproperty]
       }
       
-      extension [Self <: Webproperty](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Webproperty] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -6697,7 +6810,8 @@ object Analytics {
         __obj.asInstanceOf[WebpropertyChildLink]
       }
       
-      extension [Self <: WebpropertyChildLink](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WebpropertyChildLink] (val x: Self) extends AnyVal {
         
         inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
         
@@ -6722,7 +6836,8 @@ object Analytics {
         __obj.asInstanceOf[WebpropertyParentLink]
       }
       
-      extension [Self <: WebpropertyParentLink](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WebpropertyParentLink] (val x: Self) extends AnyVal {
         
         inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
         
@@ -6745,7 +6860,8 @@ object Analytics {
         __obj.asInstanceOf[WebpropertyPermissions]
       }
       
-      extension [Self <: WebpropertyPermissions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WebpropertyPermissions] (val x: Self) extends AnyVal {
         
         inline def setEffective(value: js.Array[String]): Self = StObject.set(x, "effective", value.asInstanceOf[js.Any])
         

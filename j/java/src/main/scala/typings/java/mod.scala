@@ -29,7 +29,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AsyncOptions]
     }
     
-    extension [Self <: AsyncOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncOptions] (val x: Self) extends AnyVal {
       
       inline def setAsyncSuffix(value: String): Self = StObject.set(x, "asyncSuffix", value.asInstanceOf[js.Any])
       

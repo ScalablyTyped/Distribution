@@ -29,7 +29,8 @@ object ListLensesInput {
     __obj.asInstanceOf[ListLensesInput]
   }
   
-  extension [Self <: ListLensesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLensesInput] (val x: Self) extends AnyVal {
     
     inline def setLensName(value: LensName): Self = StObject.set(x, "LensName", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[CacheEvents[TValue]]
     }
     
-    extension [Self <: CacheEvents[?], TValue](x: Self & CacheEvents[TValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheEvents[?], TValue] (val x: Self & CacheEvents[TValue]) extends AnyVal {
       
       inline def setMiss(value: TValue => ReadonlyPromiseany): Self = StObject.set(x, "miss", js.Any.fromFunction1(value))
     }
@@ -79,7 +80,8 @@ object mod {
       __obj.asInstanceOf[FallbackableCacheOptions]
     }
     
-    extension [Self <: FallbackableCacheOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FallbackableCacheOptions] (val x: Self) extends AnyVal {
       
       inline def setCaches(value: js.Array[Cache]): Self = StObject.set(x, "caches", value.asInstanceOf[js.Any])
       

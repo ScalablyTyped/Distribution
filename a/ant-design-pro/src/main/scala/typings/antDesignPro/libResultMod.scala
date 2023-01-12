@@ -41,7 +41,8 @@ object libResultMod {
       __obj.asInstanceOf[ResultProps]
     }
     
-    extension [Self <: ResultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: ReactNode): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

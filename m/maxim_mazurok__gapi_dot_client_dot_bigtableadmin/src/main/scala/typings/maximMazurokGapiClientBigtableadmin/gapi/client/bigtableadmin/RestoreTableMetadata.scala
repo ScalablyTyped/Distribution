@@ -31,7 +31,8 @@ object RestoreTableMetadata {
     __obj.asInstanceOf[RestoreTableMetadata]
   }
   
-  extension [Self <: RestoreTableMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreTableMetadata] (val x: Self) extends AnyVal {
     
     inline def setBackupInfo(value: BackupInfo): Self = StObject.set(x, "backupInfo", value.asInstanceOf[js.Any])
     

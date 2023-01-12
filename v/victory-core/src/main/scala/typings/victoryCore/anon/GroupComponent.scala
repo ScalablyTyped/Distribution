@@ -20,7 +20,8 @@ object GroupComponent {
     __obj.asInstanceOf[GroupComponent]
   }
   
-  extension [Self <: GroupComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupComponent] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: Requireable[ReactNodeLike]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

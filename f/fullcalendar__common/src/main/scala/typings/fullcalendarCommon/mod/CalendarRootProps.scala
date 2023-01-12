@@ -26,7 +26,8 @@ object CalendarRootProps {
     __obj.asInstanceOf[CalendarRootProps]
   }
   
-  extension [Self <: CalendarRootProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarRootProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: (js.Array[String], CssDimValue, Boolean, Boolean) => Any): Self = StObject.set(x, "children", js.Any.fromFunction4(value))
     

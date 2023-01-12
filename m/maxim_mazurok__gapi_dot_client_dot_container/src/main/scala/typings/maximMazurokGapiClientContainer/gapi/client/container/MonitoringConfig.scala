@@ -19,7 +19,8 @@ object MonitoringConfig {
     __obj.asInstanceOf[MonitoringConfig]
   }
   
-  extension [Self <: MonitoringConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoringConfig] (val x: Self) extends AnyVal {
     
     inline def setComponentConfig(value: MonitoringComponentConfig): Self = StObject.set(x, "componentConfig", value.asInstanceOf[js.Any])
     

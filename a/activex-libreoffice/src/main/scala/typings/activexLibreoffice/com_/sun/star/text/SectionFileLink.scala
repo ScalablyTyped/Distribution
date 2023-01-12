@@ -30,7 +30,8 @@ object SectionFileLink {
     __obj.asInstanceOf[SectionFileLink]
   }
   
-  extension [Self <: SectionFileLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SectionFileLink] (val x: Self) extends AnyVal {
     
     inline def setFileURL(value: String): Self = StObject.set(x, "FileURL", value.asInstanceOf[js.Any])
     

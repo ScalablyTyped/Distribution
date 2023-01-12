@@ -62,7 +62,8 @@ object Playlists {
       __obj.asInstanceOf[IPlaylistStatics]
     }
     
-    extension [Self <: IPlaylistStatics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPlaylistStatics] (val x: Self) extends AnyVal {
       
       inline def setLoadAsync(value: IStorageFile => IAsyncOperation[Playlist]): Self = StObject.set(x, "loadAsync", js.Any.fromFunction1(value))
     }

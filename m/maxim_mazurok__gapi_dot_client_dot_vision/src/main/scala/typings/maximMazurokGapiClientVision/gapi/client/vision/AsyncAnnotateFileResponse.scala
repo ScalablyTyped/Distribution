@@ -16,7 +16,8 @@ object AsyncAnnotateFileResponse {
     __obj.asInstanceOf[AsyncAnnotateFileResponse]
   }
   
-  extension [Self <: AsyncAnnotateFileResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncAnnotateFileResponse] (val x: Self) extends AnyVal {
     
     inline def setOutputConfig(value: OutputConfig): Self = StObject.set(x, "outputConfig", value.asInstanceOf[js.Any])
     

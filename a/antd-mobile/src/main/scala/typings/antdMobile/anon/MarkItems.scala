@@ -17,7 +17,8 @@ object MarkItems {
     __obj.asInstanceOf[MarkItems]
   }
   
-  extension [Self <: MarkItems](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkItems] (val x: Self) extends AnyVal {
     
     inline def setMarkItems(value: js.Array[String]): Self = StObject.set(x, "markItems", value.asInstanceOf[js.Any])
     

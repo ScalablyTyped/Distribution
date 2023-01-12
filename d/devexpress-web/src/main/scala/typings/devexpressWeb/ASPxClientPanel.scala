@@ -80,7 +80,8 @@ object ASPxClientPanel {
     __obj.asInstanceOf[ASPxClientPanel]
   }
   
-  extension [Self <: ASPxClientPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientPanel] (val x: Self) extends AnyVal {
     
     inline def setCollapse(value: () => Unit): Self = StObject.set(x, "Collapse", js.Any.fromFunction0(value))
     

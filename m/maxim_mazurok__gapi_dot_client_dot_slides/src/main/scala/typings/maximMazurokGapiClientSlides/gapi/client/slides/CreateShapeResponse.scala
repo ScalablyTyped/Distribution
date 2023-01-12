@@ -16,7 +16,8 @@ object CreateShapeResponse {
     __obj.asInstanceOf[CreateShapeResponse]
   }
   
-  extension [Self <: CreateShapeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateShapeResponse] (val x: Self) extends AnyVal {
     
     inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     

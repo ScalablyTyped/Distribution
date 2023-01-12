@@ -1899,7 +1899,8 @@ object CSSPropertiesWithMultiValues {
     __obj.asInstanceOf[CSSPropertiesWithMultiValues]
   }
   
-  extension [Self <: CSSPropertiesWithMultiValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesWithMultiValues] (val x: Self) extends AnyVal {
     
     inline def setAccentColor(value: AccentColor): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
     

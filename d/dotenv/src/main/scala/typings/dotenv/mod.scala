@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[DotenvConfigOptions]
     }
     
-    extension [Self <: DotenvConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DotenvConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object mod {
       __obj.asInstanceOf[DotenvConfigOutput]
     }
     
-    extension [Self <: DotenvConfigOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DotenvConfigOutput] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

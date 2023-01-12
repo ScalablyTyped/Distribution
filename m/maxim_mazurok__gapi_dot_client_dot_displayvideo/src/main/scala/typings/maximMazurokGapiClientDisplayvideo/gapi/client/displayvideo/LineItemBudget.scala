@@ -30,7 +30,8 @@ object LineItemBudget {
     __obj.asInstanceOf[LineItemBudget]
   }
   
-  extension [Self <: LineItemBudget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineItemBudget] (val x: Self) extends AnyVal {
     
     inline def setBudgetAllocationType(value: String): Self = StObject.set(x, "budgetAllocationType", value.asInstanceOf[js.Any])
     

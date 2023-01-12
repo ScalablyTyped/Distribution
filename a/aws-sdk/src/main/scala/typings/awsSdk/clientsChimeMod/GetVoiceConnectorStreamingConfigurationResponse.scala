@@ -18,7 +18,8 @@ object GetVoiceConnectorStreamingConfigurationResponse {
     __obj.asInstanceOf[GetVoiceConnectorStreamingConfigurationResponse]
   }
   
-  extension [Self <: GetVoiceConnectorStreamingConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVoiceConnectorStreamingConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setStreamingConfiguration(value: StreamingConfiguration): Self = StObject.set(x, "StreamingConfiguration", value.asInstanceOf[js.Any])
     

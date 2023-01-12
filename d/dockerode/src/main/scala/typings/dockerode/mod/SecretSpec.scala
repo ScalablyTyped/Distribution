@@ -21,7 +21,8 @@ object SecretSpec {
     __obj.asInstanceOf[SecretSpec]
   }
   
-  extension [Self <: SecretSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecretSpec] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object IStateConditions {
     __obj.asInstanceOf[IStateConditions]
   }
   
-  extension [Self <: IStateConditions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStateConditions] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IStateConditions): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

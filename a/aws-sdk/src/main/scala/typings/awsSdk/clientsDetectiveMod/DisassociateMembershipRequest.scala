@@ -18,7 +18,8 @@ object DisassociateMembershipRequest {
     __obj.asInstanceOf[DisassociateMembershipRequest]
   }
   
-  extension [Self <: DisassociateMembershipRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateMembershipRequest] (val x: Self) extends AnyVal {
     
     inline def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
   }

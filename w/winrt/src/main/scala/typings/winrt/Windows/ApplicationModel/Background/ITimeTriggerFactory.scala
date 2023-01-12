@@ -15,7 +15,8 @@ object ITimeTriggerFactory {
     __obj.asInstanceOf[ITimeTriggerFactory]
   }
   
-  extension [Self <: ITimeTriggerFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITimeTriggerFactory] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: (Double, Boolean) => TimeTrigger): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
   }

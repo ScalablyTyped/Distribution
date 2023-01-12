@@ -274,7 +274,8 @@ object NodeJS {
       __obj.asInstanceOf[ProcessVersions]
     }
     
-    extension [Self <: ProcessVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessVersions] (val x: Self) extends AnyVal {
       
       inline def setChrome(value: String): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
       

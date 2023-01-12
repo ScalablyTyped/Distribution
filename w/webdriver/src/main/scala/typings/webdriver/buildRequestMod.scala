@@ -106,7 +106,8 @@ object buildRequestMod {
       __obj.asInstanceOf[RequestOptions]
     }
     
-    extension [Self <: RequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Http): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -246,7 +247,8 @@ object buildRequestMod {
       __obj.asInstanceOf[WebDriverResponse]
     }
     
-    extension [Self <: WebDriverResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebDriverResponse] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

@@ -44,7 +44,8 @@ object EwmaBandWidthEstimator {
     __obj.asInstanceOf[EwmaBandWidthEstimator]
   }
   
-  extension [Self <: EwmaBandWidthEstimator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EwmaBandWidthEstimator] (val x: Self) extends AnyVal {
     
     inline def setCanEstimate(value: () => Boolean): Self = StObject.set(x, "canEstimate", js.Any.fromFunction0(value))
     

@@ -65,7 +65,8 @@ object CodegenOptions {
     __obj.asInstanceOf[CodegenOptions]
   }
   
-  extension [Self <: CodegenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodegenOptions] (val x: Self) extends AnyVal {
     
     inline def setMode(value: module | function): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

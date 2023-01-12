@@ -22,7 +22,8 @@ object MemoryDumpProcess {
     __obj.asInstanceOf[MemoryDumpProcess]
   }
   
-  extension [Self <: MemoryDumpProcess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemoryDumpProcess] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

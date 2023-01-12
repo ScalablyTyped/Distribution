@@ -22,7 +22,8 @@ object RedoOption {
     __obj.asInstanceOf[RedoOption]
   }
   
-  extension [Self <: RedoOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedoOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

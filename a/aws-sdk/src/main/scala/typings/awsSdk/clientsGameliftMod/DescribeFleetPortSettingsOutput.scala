@@ -38,7 +38,8 @@ object DescribeFleetPortSettingsOutput {
     __obj.asInstanceOf[DescribeFleetPortSettingsOutput]
   }
   
-  extension [Self <: DescribeFleetPortSettingsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFleetPortSettingsOutput] (val x: Self) extends AnyVal {
     
     inline def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
     

@@ -110,7 +110,8 @@ object libTypescriptWebToolsPointerTrackerMod {
       __obj.asInstanceOf[TrackerElement]
     }
     
-    extension [Self <: TrackerElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackerElement] (val x: Self) extends AnyVal {
       
       inline def setLastX(value: Double): Self = StObject.set(x, "lastX", value.asInstanceOf[js.Any])
       

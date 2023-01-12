@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[NvFBU]
     }
     
-    extension [Self <: NvFBU](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NvFBU] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: Double): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -143,7 +144,8 @@ object mod {
       __obj.asInstanceOf[NvRFBDefaults]
     }
     
-    extension [Self <: NvRFBDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NvRFBDefaults] (val x: Self) extends AnyVal {
       
       inline def setDisconnectTimeout(value: Double): Self = StObject.set(x, "disconnectTimeout", value.asInstanceOf[js.Any])
       

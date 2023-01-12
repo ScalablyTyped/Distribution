@@ -38,7 +38,8 @@ object Attachments {
       __obj.asInstanceOf[Attachment]
     }
     
-    extension [Self <: Attachment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
       
       inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object Attachments {
       __obj.asInstanceOf[Model]
     }
     
-    extension [Self <: Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Model] (val x: Self) extends AnyVal {
       
       inline def setThumbnails(value: js.Array[Attachment]): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
       
@@ -121,7 +123,8 @@ object Attachments {
       __obj.asInstanceOf[ShowResponseModel]
     }
     
-    extension [Self <: ShowResponseModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShowResponseModel] (val x: Self) extends AnyVal {
       
       inline def setAttachment(value: Attachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     }
@@ -138,7 +141,8 @@ object Attachments {
       __obj.asInstanceOf[UploadResponseModel]
     }
     
-    extension [Self <: UploadResponseModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadResponseModel] (val x: Self) extends AnyVal {
       
       inline def setUpload(value: typings.nodeZendesk.anon.Attachment): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
     }

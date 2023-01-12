@@ -34,7 +34,8 @@ object DateTimeType {
     __obj.asInstanceOf[DateTimeType]
   }
   
-  extension [Self <: DateTimeType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTimeType] (val x: Self) extends AnyVal {
     
     inline def setCalendarDate(value: String): Self = StObject.set(x, "calendarDate", value.asInstanceOf[js.Any])
     

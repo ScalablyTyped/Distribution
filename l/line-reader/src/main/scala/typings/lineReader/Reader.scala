@@ -33,7 +33,8 @@ object Reader {
     __obj.asInstanceOf[Reader]
   }
   
-  extension [Self <: Reader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reader] (val x: Self) extends AnyVal {
     
     inline def setClose(value: js.Function1[/* err */ js.Error, Unit] => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     

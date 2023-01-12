@@ -43,7 +43,8 @@ object TestSpecification {
     __obj.asInstanceOf[TestSpecification]
   }
   
-  extension [Self <: TestSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestSpecification] (val x: Self) extends AnyVal {
     
     inline def setAndroidInstrumentationTest(value: AndroidInstrumentationTest): Self = StObject.set(x, "androidInstrumentationTest", value.asInstanceOf[js.Any])
     

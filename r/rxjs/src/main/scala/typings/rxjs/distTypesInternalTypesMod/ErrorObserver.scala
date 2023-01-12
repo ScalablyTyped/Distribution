@@ -23,7 +23,8 @@ object ErrorObserver {
     __obj.asInstanceOf[ErrorObserver[T]]
   }
   
-  extension [Self <: ErrorObserver[?], T](x: Self & ErrorObserver[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorObserver[?], T] (val x: Self & ErrorObserver[T]) extends AnyVal {
     
     inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object LabelOption {
     __obj.asInstanceOf[LabelOption]
   }
   
-  extension [Self <: LabelOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelOption] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: LabelCallback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     

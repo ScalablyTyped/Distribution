@@ -16,7 +16,8 @@ object GooglePrivacyDlpV2KindExpression {
     __obj.asInstanceOf[GooglePrivacyDlpV2KindExpression]
   }
   
-  extension [Self <: GooglePrivacyDlpV2KindExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2KindExpression] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object typesClientMod {
       __obj.asInstanceOf[BaseBrowserOptions]
     }
     
-    extension [Self <: BaseBrowserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseBrowserOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowUrls(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "allowUrls", value.asInstanceOf[js.Any])
       

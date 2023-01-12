@@ -28,7 +28,8 @@ object RouteMatrixEntry {
     __obj.asInstanceOf[RouteMatrixEntry]
   }
   
-  extension [Self <: RouteMatrixEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteMatrixEntry] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: RouteMatrixEntryDistanceDouble): Self = StObject.set(x, "Distance", value.asInstanceOf[js.Any])
     

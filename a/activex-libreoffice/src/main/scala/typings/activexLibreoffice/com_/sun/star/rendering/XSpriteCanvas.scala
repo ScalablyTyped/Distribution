@@ -99,7 +99,8 @@ object XSpriteCanvas {
     __obj.asInstanceOf[XSpriteCanvas]
   }
   
-  extension [Self <: XSpriteCanvas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSpriteCanvas] (val x: Self) extends AnyVal {
     
     inline def setCreateClonedSprite(value: XSprite => XSprite): Self = StObject.set(x, "createClonedSprite", js.Any.fromFunction1(value))
     

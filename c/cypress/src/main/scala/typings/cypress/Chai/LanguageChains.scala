@@ -105,7 +105,8 @@ object LanguageChains {
     __obj.asInstanceOf[LanguageChains]
   }
   
-  extension [Self <: LanguageChains](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageChains] (val x: Self) extends AnyVal {
     
     inline def setAnd(value: Assertion): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
     

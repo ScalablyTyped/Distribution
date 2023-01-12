@@ -19,7 +19,8 @@ object ObservableObjectSetEvent {
     __obj.asInstanceOf[ObservableObjectSetEvent]
   }
   
-  extension [Self <: ObservableObjectSetEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObservableObjectSetEvent] (val x: Self) extends AnyVal {
     
     inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     

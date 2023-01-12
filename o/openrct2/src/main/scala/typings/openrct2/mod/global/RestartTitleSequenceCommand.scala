@@ -19,7 +19,8 @@ object RestartTitleSequenceCommand {
     __obj.asInstanceOf[RestartTitleSequenceCommand]
   }
   
-  extension [Self <: RestartTitleSequenceCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestartTitleSequenceCommand] (val x: Self) extends AnyVal {
     
     inline def setType(value: restart): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

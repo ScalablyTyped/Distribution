@@ -18,7 +18,8 @@ object ExportEntitiesOptions {
     __obj.asInstanceOf[ExportEntitiesOptions]
   }
   
-  extension [Self <: ExportEntitiesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportEntitiesOptions] (val x: Self) extends AnyVal {
     
     inline def setAsString(value: Boolean): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
     

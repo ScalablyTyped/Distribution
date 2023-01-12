@@ -25,7 +25,8 @@ object TransformSettings {
     __obj.asInstanceOf[TransformSettings]
   }
   
-  extension [Self <: TransformSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformSettings] (val x: Self) extends AnyVal {
     
     inline def setAlign_checkpoints(value: Boolean): Self = StObject.set(x, "align_checkpoints", value.asInstanceOf[js.Any])
     

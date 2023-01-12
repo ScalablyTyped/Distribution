@@ -34,7 +34,8 @@ object distMod {
       __obj.asInstanceOf[AccessorPropertyDescriptor[T]]
     }
     
-    extension [Self <: AccessorPropertyDescriptor[?], T](x: Self & AccessorPropertyDescriptor[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccessorPropertyDescriptor[?], T] (val x: Self & AccessorPropertyDescriptor[T]) extends AnyVal {
       
       inline def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
       
@@ -371,7 +372,8 @@ object distMod {
       __obj.asInstanceOf[MethodPropertyDescriptor[T]]
     }
     
-    extension [Self <: MethodPropertyDescriptor[?], T /* <: js.Function1[/* repeated */ Any, Any] */](x: Self & MethodPropertyDescriptor[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MethodPropertyDescriptor[?], T /* <: js.Function1[/* repeated */ Any, Any] */] (val x: Self & MethodPropertyDescriptor[T]) extends AnyVal {
       
       inline def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
       

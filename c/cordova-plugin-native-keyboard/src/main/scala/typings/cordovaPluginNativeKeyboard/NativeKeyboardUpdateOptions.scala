@@ -28,7 +28,8 @@ object NativeKeyboardUpdateOptions {
     __obj.asInstanceOf[NativeKeyboardUpdateOptions]
   }
   
-  extension [Self <: NativeKeyboardUpdateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeKeyboardUpdateOptions] (val x: Self) extends AnyVal {
     
     inline def setCaretIndex(value: Double): Self = StObject.set(x, "caretIndex", value.asInstanceOf[js.Any])
     

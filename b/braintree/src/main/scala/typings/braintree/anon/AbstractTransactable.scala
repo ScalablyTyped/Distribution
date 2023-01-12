@@ -185,7 +185,8 @@ object AbstractTransactable {
     __obj.asInstanceOf[AbstractTransactable]
   }
   
-  extension [Self <: AbstractTransactable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractTransactable] (val x: Self) extends AnyVal {
     
     inline def setAbstractTransactable(value: String): Self = StObject.set(x, "AbstractTransactable", value.asInstanceOf[js.Any])
     

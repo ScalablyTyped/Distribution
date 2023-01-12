@@ -44,7 +44,8 @@ object Hooks {
     __obj.asInstanceOf[Hooks[T]]
   }
   
-  extension [Self <: Hooks[?], T /* <: BaseTagData */](x: Self & Hooks[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hooks[?], T /* <: BaseTagData */] (val x: Self & Hooks[T]) extends AnyVal {
     
     inline def setBeforePaste(
       value: (/* event */ ClipboardEvent, /* data */ BeforePasteData[T]) => js.Promise[js.UndefOr[String]]

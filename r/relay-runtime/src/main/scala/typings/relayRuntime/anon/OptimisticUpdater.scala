@@ -36,7 +36,8 @@ object OptimisticUpdater {
     __obj.asInstanceOf[OptimisticUpdater]
   }
   
-  extension [Self <: OptimisticUpdater](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptimisticUpdater] (val x: Self) extends AnyVal {
     
     inline def setOptimisticUpdater(value: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit): Self = StObject.set(x, "optimisticUpdater", js.Any.fromFunction2(value))
     

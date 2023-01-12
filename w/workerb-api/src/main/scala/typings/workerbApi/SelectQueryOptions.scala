@@ -31,7 +31,8 @@ object SelectQueryOptions {
     __obj.asInstanceOf[SelectQueryOptions]
   }
   
-  extension [Self <: SelectQueryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectQueryOptions] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: clickQueryMethods): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

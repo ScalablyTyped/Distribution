@@ -26,7 +26,8 @@ object Applicative {
     __obj.asInstanceOf[Applicative[F]]
   }
   
-  extension [Self <: Applicative[?], F](x: Self & Applicative[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Applicative[?], F] (val x: Self & Applicative[F]) extends AnyVal {
     
     inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
   }

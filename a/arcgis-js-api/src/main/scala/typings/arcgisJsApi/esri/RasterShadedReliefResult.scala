@@ -20,7 +20,8 @@ object RasterShadedReliefResult {
     __obj.asInstanceOf[RasterShadedReliefResult]
   }
   
-  extension [Self <: RasterShadedReliefResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RasterShadedReliefResult] (val x: Self) extends AnyVal {
     
     inline def setRenderer(value: RasterShadedReliefRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
   }

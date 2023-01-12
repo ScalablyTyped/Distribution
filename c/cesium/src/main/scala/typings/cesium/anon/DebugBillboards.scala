@@ -23,7 +23,8 @@ object DebugBillboards {
     __obj.asInstanceOf[DebugBillboards]
   }
   
-  extension [Self <: DebugBillboards](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugBillboards] (val x: Self) extends AnyVal {
     
     inline def setDebugBillboards(value: Boolean): Self = StObject.set(x, "debugBillboards", value.asInstanceOf[js.Any])
     

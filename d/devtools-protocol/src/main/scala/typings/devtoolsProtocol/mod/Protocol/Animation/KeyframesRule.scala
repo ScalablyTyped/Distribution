@@ -23,7 +23,8 @@ object KeyframesRule {
     __obj.asInstanceOf[KeyframesRule]
   }
   
-  extension [Self <: KeyframesRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyframesRule] (val x: Self) extends AnyVal {
     
     inline def setKeyframes(value: js.Array[KeyframeStyle]): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
     

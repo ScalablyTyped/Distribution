@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Hash[P, S, H]]
     }
     
-    extension [Self <: Hash[?, ?, ?], P /* <: typings.history.mod.Pathname */, S /* <: Search */, H /* <: typings.history.mod.Hash */](x: Self & (Hash[P, S, H])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hash[?, ?, ?], P /* <: typings.history.mod.Pathname */, S /* <: Search */, H /* <: typings.history.mod.Hash */] (val x: Self & (Hash[P, S, H])) extends AnyVal {
       
       inline def setHash(value: H): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[Pathname[P, S, H]]
     }
     
-    extension [Self <: Pathname[?, ?, ?], P /* <: typings.history.mod.Pathname */, S /* <: Search */, H /* <: typings.history.mod.Hash */](x: Self & (Pathname[P, S, H])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pathname[?, ?, ?], P /* <: typings.history.mod.Pathname */, S /* <: Search */, H /* <: typings.history.mod.Hash */] (val x: Self & (Pathname[P, S, H])) extends AnyVal {
       
       inline def setHash(value: H): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       

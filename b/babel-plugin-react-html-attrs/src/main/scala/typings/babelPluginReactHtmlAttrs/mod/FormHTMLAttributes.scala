@@ -39,7 +39,8 @@ object FormHTMLAttributes {
     __obj.asInstanceOf[FormHTMLAttributes[T]]
   }
   
-  extension [Self <: FormHTMLAttributes[?], T](x: Self & FormHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormHTMLAttributes[?], T] (val x: Self & FormHTMLAttributes[T]) extends AnyVal {
     
     inline def `setAccept-charset`(value: String): Self = StObject.set(x, "accept-charset", value.asInstanceOf[js.Any])
     

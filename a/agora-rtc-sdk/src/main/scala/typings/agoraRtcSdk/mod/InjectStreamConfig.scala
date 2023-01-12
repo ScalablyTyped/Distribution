@@ -103,7 +103,8 @@ object InjectStreamConfig {
     __obj.asInstanceOf[InjectStreamConfig]
   }
   
-  extension [Self <: InjectStreamConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InjectStreamConfig] (val x: Self) extends AnyVal {
     
     inline def setAudioBitrate(value: Double): Self = StObject.set(x, "audioBitrate", value.asInstanceOf[js.Any])
     

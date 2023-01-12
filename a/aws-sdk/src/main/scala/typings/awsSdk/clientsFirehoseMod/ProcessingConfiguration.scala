@@ -23,7 +23,8 @@ object ProcessingConfiguration {
     __obj.asInstanceOf[ProcessingConfiguration]
   }
   
-  extension [Self <: ProcessingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: BooleanObject): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

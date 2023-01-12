@@ -33,7 +33,8 @@ object ExecutionResult {
     __obj.asInstanceOf[ExecutionResult]
   }
   
-  extension [Self <: ExecutionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionResult] (val x: Self) extends AnyVal {
     
     inline def setBytesProcessed(value: Long): Self = StObject.set(x, "bytesProcessed", value.asInstanceOf[js.Any])
     

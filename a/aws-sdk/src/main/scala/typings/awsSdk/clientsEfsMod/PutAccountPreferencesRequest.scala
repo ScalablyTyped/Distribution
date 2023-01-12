@@ -18,7 +18,8 @@ object PutAccountPreferencesRequest {
     __obj.asInstanceOf[PutAccountPreferencesRequest]
   }
   
-  extension [Self <: PutAccountPreferencesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutAccountPreferencesRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceIdType(value: ResourceIdType): Self = StObject.set(x, "ResourceIdType", value.asInstanceOf[js.Any])
   }

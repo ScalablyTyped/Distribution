@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[PartialPresenceInfo]
     }
     
-    extension [Self <: PartialPresenceInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPresenceInfo] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       

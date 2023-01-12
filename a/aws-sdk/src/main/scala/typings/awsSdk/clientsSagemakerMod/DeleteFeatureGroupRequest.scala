@@ -18,7 +18,8 @@ object DeleteFeatureGroupRequest {
     __obj.asInstanceOf[DeleteFeatureGroupRequest]
   }
   
-  extension [Self <: DeleteFeatureGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFeatureGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setFeatureGroupName(value: FeatureGroupName): Self = StObject.set(x, "FeatureGroupName", value.asInstanceOf[js.Any])
   }

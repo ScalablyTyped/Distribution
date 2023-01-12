@@ -80,7 +80,8 @@ object mod {
       __obj.asInstanceOf[Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload]]
     }
     
-    extension [Self <: Action[?, ?, ?, ?, ?], TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload](x: Self & (Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action[?, ?, ?, ?, ?], TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload] (val x: Self & (Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload])) extends AnyVal {
       
       inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -133,7 +134,8 @@ object mod {
       __obj.asInstanceOf[ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload]]
     }
     
-    extension [Self <: ActionMeta[?, ?, ?, ?], TFullState, TSuccessPayload, TErrorPayload, TStartPayload](x: Self & (ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionMeta[?, ?, ?, ?], TFullState, TSuccessPayload, TErrorPayload, TStartPayload] (val x: Self & (ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload])) extends AnyVal {
       
       inline def setOnFailure(value: (/* error */ TErrorPayload, /* getState */ GetState[TFullState]) => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction2(value))
       
@@ -186,7 +188,8 @@ object mod {
       __obj.asInstanceOf[Handlers[S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload]]
     }
     
-    extension [Self <: Handlers[?, ?, ?, ?, ?], S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload](x: Self & (Handlers[S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Handlers[?, ?, ?, ?, ?], S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload] (val x: Self & (Handlers[S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload])) extends AnyVal {
       
       inline def setAlways(value: (S, typings.redux.mod.Action[Any]) => S): Self = StObject.set(x, "always", js.Any.fromFunction2(value))
       
@@ -243,7 +246,8 @@ object mod {
       __obj.asInstanceOf[PackActionPayload[Payload, M]]
     }
     
-    extension [Self <: PackActionPayload[?, ?], Payload, M](x: Self & (PackActionPayload[Payload, M])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackActionPayload[?, ?], Payload, M] (val x: Self & (PackActionPayload[Payload, M])) extends AnyVal {
       
       inline def setMeta(value: MetaPayload[M]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
@@ -264,7 +268,8 @@ object mod {
       __obj.asInstanceOf[PackError]
     }
     
-    extension [Self <: PackError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackError] (val x: Self) extends AnyVal {
       
       inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

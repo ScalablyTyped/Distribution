@@ -77,7 +77,8 @@ object SeriesLinearregressionOptions {
     __obj.asInstanceOf[SeriesLinearregressionOptions]
   }
   
-  extension [Self <: SeriesLinearregressionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesLinearregressionOptions] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

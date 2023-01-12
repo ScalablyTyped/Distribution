@@ -33,7 +33,8 @@ object INxGetObjectOptions {
     __obj.asInstanceOf[INxGetObjectOptions]
   }
   
-  extension [Self <: INxGetObjectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxGetObjectOptions] (val x: Self) extends AnyVal {
     
     inline def setQData(value: Any): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
     

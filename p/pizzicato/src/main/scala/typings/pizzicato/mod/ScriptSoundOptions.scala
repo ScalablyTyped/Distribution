@@ -22,7 +22,8 @@ object ScriptSoundOptions {
     __obj.asInstanceOf[ScriptSoundOptions]
   }
   
-  extension [Self <: ScriptSoundOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptSoundOptions] (val x: Self) extends AnyVal {
     
     inline def setAudioFunction(value: /* e */ AudioProcessingEvent => Unit): Self = StObject.set(x, "audioFunction", js.Any.fromFunction1(value))
     

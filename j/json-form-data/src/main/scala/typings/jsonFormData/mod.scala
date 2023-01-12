@@ -116,7 +116,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FormatOptions]
     }
     
-    extension [Self <: FormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
       
       inline def setIncludeNullValues(value: Boolean): Self = StObject.set(x, "includeNullValues", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[InitialFormData]
     }
     
-    extension [Self <: InitialFormData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitialFormData] (val x: Self) extends AnyVal {
       
       inline def setAppend(value: FnCall): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     }

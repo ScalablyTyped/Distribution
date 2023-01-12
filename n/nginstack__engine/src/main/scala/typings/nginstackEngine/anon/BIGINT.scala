@@ -44,7 +44,8 @@ object BIGINT {
     __obj.asInstanceOf[BIGINT]
   }
   
-  extension [Self <: BIGINT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BIGINT] (val x: Self) extends AnyVal {
     
     inline def setBIGINT(value: String): Self = StObject.set(x, "BIGINT", value.asInstanceOf[js.Any])
     

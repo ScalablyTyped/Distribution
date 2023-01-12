@@ -28,7 +28,8 @@ object ListSchemaVersionsInput {
     __obj.asInstanceOf[ListSchemaVersionsInput]
   }
   
-  extension [Self <: ListSchemaVersionsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSchemaVersionsInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResultsNumber): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

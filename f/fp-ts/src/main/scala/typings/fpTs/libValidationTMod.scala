@@ -44,7 +44,8 @@ object libValidationTMod {
       __obj.asInstanceOf[ValidationM[M, E]]
     }
     
-    extension [Self <: ValidationM[?, ?], M, E](x: Self & (ValidationM[M, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationM[?, ?], M, E] (val x: Self & (ValidationM[M, E])) extends AnyVal {
       
       inline def setAlt(value: (ValidationT[M, E, Any], Lazy[ValidationT[M, E, Any]]) => ValidationT[M, E, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
@@ -75,7 +76,8 @@ object libValidationTMod {
       __obj.asInstanceOf[ValidationM1[M, E]]
     }
     
-    extension [Self <: ValidationM1[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, E](x: Self & (ValidationM1[M, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationM1[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, E] (val x: Self & (ValidationM1[M, E])) extends AnyVal {
       
       inline def setAlt(value: (ValidationT1[M, E, Any], Lazy[ValidationT1[M, E, Any]]) => ValidationT1[M, E, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
@@ -106,7 +108,8 @@ object libValidationTMod {
       __obj.asInstanceOf[ValidationM2[M, E]]
     }
     
-    extension [Self <: ValidationM2[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (ValidationM2[M, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationM2[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (ValidationM2[M, E])) extends AnyVal {
       
       inline def setAlt(
         value: (ValidationT2[M, Any, E, Any], Lazy[ValidationT2[M, Any, E, Any]]) => ValidationT2[M, Any, E, Any]

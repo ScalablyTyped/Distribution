@@ -31,7 +31,8 @@ object ExportOptions {
     __obj.asInstanceOf[ExportOptions]
   }
   
-  extension [Self <: ExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportOptions] (val x: Self) extends AnyVal {
     
     inline def setExportFormats(value: js.Array[ExportFormat]): Self = StObject.set(x, "exportFormats", value.asInstanceOf[js.Any])
     

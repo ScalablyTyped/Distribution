@@ -4755,7 +4755,8 @@ object mod {
       __obj.asInstanceOf[BabelFileMetadata]
     }
     
-    extension [Self <: BabelFileMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BabelFileMetadata] (val x: Self) extends AnyVal {
       
       inline def setMarked(value: js.Array[Loc]): Self = StObject.set(x, "marked", value.asInstanceOf[js.Any])
       
@@ -4782,7 +4783,8 @@ object mod {
       __obj.asInstanceOf[BabelFileModulesMetadata]
     }
     
-    extension [Self <: BabelFileModulesMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BabelFileModulesMetadata] (val x: Self) extends AnyVal {
       
       inline def setExports(value: Exported): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
       
@@ -4811,7 +4813,8 @@ object mod {
       __obj.asInstanceOf[BabelFileResult]
     }
     
-    extension [Self <: BabelFileResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BabelFileResult] (val x: Self) extends AnyVal {
       
       inline def setAst(value: Node): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
       
@@ -4858,7 +4861,8 @@ object mod {
       __obj.asInstanceOf[PluginObj[S]]
     }
     
-    extension [Self <: PluginObj[?], S](x: Self & PluginObj[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginObj[?], S] (val x: Self & PluginObj[S]) extends AnyVal {
       
       inline def setInherits(value: Any): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
       
@@ -5026,7 +5030,8 @@ object mod {
       __obj.asInstanceOf[TransformOptions]
     }
     
-    extension [Self <: TransformOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformOptions] (val x: Self) extends AnyVal {
       
       inline def setAst(value: Boolean): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
       

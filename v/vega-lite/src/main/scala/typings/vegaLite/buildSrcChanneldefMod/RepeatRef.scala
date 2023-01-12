@@ -19,7 +19,8 @@ object RepeatRef {
     __obj.asInstanceOf[RepeatRef]
   }
   
-  extension [Self <: RepeatRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepeatRef] (val x: Self) extends AnyVal {
     
     inline def setRepeat(value: row | column | repeat | layer): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
   }

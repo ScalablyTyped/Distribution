@@ -26,7 +26,8 @@ object ISourcesConfig {
     __obj.asInstanceOf[ISourcesConfig]
   }
   
-  extension [Self <: ISourcesConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISourcesConfig] (val x: Self) extends AnyVal {
     
     inline def setAbsolutePaths(value: js.Array[String]): Self = StObject.set(x, "absolutePaths", value.asInstanceOf[js.Any])
     

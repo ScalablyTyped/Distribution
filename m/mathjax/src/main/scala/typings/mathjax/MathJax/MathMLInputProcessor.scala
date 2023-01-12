@@ -16,7 +16,8 @@ object MathMLInputProcessor {
     __obj.asInstanceOf[MathMLInputProcessor]
   }
   
-  extension [Self <: MathMLInputProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MathMLInputProcessor] (val x: Self) extends AnyVal {
     
     inline def setUseMathMLspacing(value: Boolean): Self = StObject.set(x, "useMathMLspacing", value.asInstanceOf[js.Any])
     

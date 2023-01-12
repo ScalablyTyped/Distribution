@@ -23,7 +23,8 @@ object VerifyResult {
     __obj.asInstanceOf[VerifyResult]
   }
   
-  extension [Self <: VerifyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyResult] (val x: Self) extends AnyVal {
     
     inline def setKeyID(value: String): Self = StObject.set(x, "keyID", value.asInstanceOf[js.Any])
     

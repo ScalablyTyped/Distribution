@@ -28,7 +28,8 @@ object GitImportTfvcSource {
     __obj.asInstanceOf[GitImportTfvcSource]
   }
   
-  extension [Self <: GitImportTfvcSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitImportTfvcSource] (val x: Self) extends AnyVal {
     
     inline def setImportHistory(value: Boolean): Self = StObject.set(x, "importHistory", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PartialCreateAnimationOpt {
     __obj.asInstanceOf[PartialCreateAnimationOpt]
   }
   
-  extension [Self <: PartialCreateAnimationOpt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCreateAnimationOpt] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

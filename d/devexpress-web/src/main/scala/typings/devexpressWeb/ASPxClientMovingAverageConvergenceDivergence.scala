@@ -42,7 +42,8 @@ object ASPxClientMovingAverageConvergenceDivergence {
     __obj.asInstanceOf[ASPxClientMovingAverageConvergenceDivergence]
   }
   
-  extension [Self <: ASPxClientMovingAverageConvergenceDivergence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientMovingAverageConvergenceDivergence] (val x: Self) extends AnyVal {
     
     inline def setLongPeriod(value: Double): Self = StObject.set(x, "longPeriod", value.asInstanceOf[js.Any])
     

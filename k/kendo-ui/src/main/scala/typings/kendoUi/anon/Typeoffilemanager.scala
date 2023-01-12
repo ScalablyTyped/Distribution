@@ -19,7 +19,8 @@ object Typeoffilemanager {
     __obj.asInstanceOf[Typeoffilemanager]
   }
   
-  extension [Self <: Typeoffilemanager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeoffilemanager] (val x: Self) extends AnyVal {
     
     inline def setCommands(value: Typeofcommands): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     

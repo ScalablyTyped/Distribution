@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[DictpropName]
     }
     
-    extension [Self <: DictpropName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DictpropName] (val x: Self) extends AnyVal {
       
       inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     }
@@ -37,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Verified]
     }
     
-    extension [Self <: Verified](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Verified] (val x: Self) extends AnyVal {
       
       inline def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
       

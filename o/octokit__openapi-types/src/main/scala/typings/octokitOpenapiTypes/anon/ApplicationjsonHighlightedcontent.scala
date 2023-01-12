@@ -17,7 +17,8 @@ object ApplicationjsonHighlightedcontent {
     __obj.asInstanceOf[ApplicationjsonHighlightedcontent]
   }
   
-  extension [Self <: ApplicationjsonHighlightedcontent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonHighlightedcontent] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: Highlightedcontent): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

@@ -43,7 +43,8 @@ object ListInventoryEntriesResult {
     __obj.asInstanceOf[ListInventoryEntriesResult]
   }
   
-  extension [Self <: ListInventoryEntriesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInventoryEntriesResult] (val x: Self) extends AnyVal {
     
     inline def setCaptureTime(value: InventoryItemCaptureTime): Self = StObject.set(x, "CaptureTime", value.asInstanceOf[js.Any])
     

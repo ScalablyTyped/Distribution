@@ -31,7 +31,8 @@ object ConversationAssociation {
     __obj.asInstanceOf[ConversationAssociation]
   }
   
-  extension [Self <: ConversationAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConversationAssociation] (val x: Self) extends AnyVal {
     
     inline def setInnerConversationNodeRef(value: ConversationNode): Self = StObject.set(x, "innerConversationNodeRef", value.asInstanceOf[js.Any])
     

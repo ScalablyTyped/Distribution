@@ -80,7 +80,8 @@ object FindParametersProperties {
     __obj.asInstanceOf[FindParametersProperties]
   }
   
-  extension [Self <: FindParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setContains(value: Boolean): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object distLoaderFidgetSpinnerMod {
       __obj.asInstanceOf[FidgetSpinnerProps]
     }
     
-    extension [Self <: FidgetSpinnerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FidgetSpinnerProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       

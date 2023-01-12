@@ -77,7 +77,8 @@ object `@reactNavigationRoutersDrawerRouterMod` {
       __obj.asInstanceOf[DrawerActionHelpers[ParamList]]
     }
     
-    extension [Self <: DrawerActionHelpers[?], ParamList /* <: ParamListBase */](x: Self & DrawerActionHelpers[ParamList]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerActionHelpers[?], ParamList /* <: ParamListBase */] (val x: Self & DrawerActionHelpers[ParamList]) extends AnyVal {
       
       inline def setCloseDrawer(value: () => Unit): Self = StObject.set(x, "closeDrawer", js.Any.fromFunction0(value))
       
@@ -145,7 +146,8 @@ object `@reactNavigationRoutersDrawerRouterMod` {
       __obj.asInstanceOf[DrawerNavigationState[ParamList]]
     }
     
-    extension [Self <: DrawerNavigationState[?], ParamList /* <: ParamListBase */](x: Self & DrawerNavigationState[ParamList]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerNavigationState[?], ParamList /* <: ParamListBase */] (val x: Self & DrawerNavigationState[ParamList]) extends AnyVal {
       
       inline def setHistory(value: js.Array[KeyType | `6`]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
@@ -182,7 +184,8 @@ object `@reactNavigationRoutersDrawerRouterMod` {
       __obj.asInstanceOf[DrawerRouterOptions]
     }
     
-    extension [Self <: DrawerRouterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerRouterOptions] (val x: Self) extends AnyVal {
       
       inline def setOpenByDefault(value: Boolean): Self = StObject.set(x, "openByDefault", value.asInstanceOf[js.Any])
       

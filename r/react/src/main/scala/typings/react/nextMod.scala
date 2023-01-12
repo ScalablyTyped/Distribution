@@ -38,7 +38,8 @@ object nextMod {
         __obj.asInstanceOf[FulfilledThenable[T]]
       }
       
-      extension [Self <: FulfilledThenable[?], T](x: Self & FulfilledThenable[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FulfilledThenable[?], T] (val x: Self & FulfilledThenable[T]) extends AnyVal {
         
         inline def setStatus(value: fulfilled): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
@@ -62,7 +63,8 @@ object nextMod {
         __obj.asInstanceOf[PendingThenable[T]]
       }
       
-      extension [Self <: PendingThenable[?], T](x: Self & PendingThenable[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PendingThenable[?], T] (val x: Self & PendingThenable[T]) extends AnyVal {
         
         inline def setStatus(value: pending): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       }
@@ -89,7 +91,8 @@ object nextMod {
         __obj.asInstanceOf[RejectedThenable[T]]
       }
       
-      extension [Self <: RejectedThenable[?], T](x: Self & RejectedThenable[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RejectedThenable[?], T] (val x: Self & RejectedThenable[T]) extends AnyVal {
         
         inline def setReason(value: Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
         
@@ -108,7 +111,8 @@ object nextMod {
         __obj.asInstanceOf[ServerContext[T]]
       }
       
-      extension [Self <: ServerContext[?], T /* <: ServerContextJSONValue */](x: Self & ServerContext[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ServerContext[?], T /* <: ServerContextJSONValue */] (val x: Self & ServerContext[T]) extends AnyVal {
         
         inline def setProvider(value: Provider[T]): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
       }
@@ -198,7 +202,8 @@ object nextMod {
         __obj.asInstanceOf[ThenableImpl[T]]
       }
       
-      extension [Self <: ThenableImpl[?], T](x: Self & ThenableImpl[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ThenableImpl[?], T] (val x: Self & ThenableImpl[T]) extends AnyVal {
         
         inline def setThen(
           value: (js.Function1[/* value */ T, Any], js.Function1[/* error */ Any, Any]) => Unit | PromiseLike[Any]
@@ -222,7 +227,8 @@ object nextMod {
         __obj.asInstanceOf[UntrackedThenable[T]]
       }
       
-      extension [Self <: UntrackedThenable[?], T](x: Self & UntrackedThenable[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UntrackedThenable[?], T] (val x: Self & UntrackedThenable[T]) extends AnyVal {
         
         inline def setStatus(value: Unit): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         

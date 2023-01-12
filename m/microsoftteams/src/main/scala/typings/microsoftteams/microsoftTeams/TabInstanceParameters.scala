@@ -26,7 +26,8 @@ object TabInstanceParameters {
     __obj.asInstanceOf[TabInstanceParameters]
   }
   
-  extension [Self <: TabInstanceParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabInstanceParameters] (val x: Self) extends AnyVal {
     
     inline def setFavoriteChannelsOnly(value: Boolean): Self = StObject.set(x, "favoriteChannelsOnly", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object LaunchTemplateAndOverridesResponse {
     __obj.asInstanceOf[LaunchTemplateAndOverridesResponse]
   }
   
-  extension [Self <: LaunchTemplateAndOverridesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchTemplateAndOverridesResponse] (val x: Self) extends AnyVal {
     
     inline def setLaunchTemplateSpecification(value: FleetLaunchTemplateSpecification): Self = StObject.set(x, "LaunchTemplateSpecification", value.asInstanceOf[js.Any])
     

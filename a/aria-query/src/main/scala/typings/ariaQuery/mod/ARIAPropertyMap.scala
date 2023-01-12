@@ -111,7 +111,8 @@ object ARIAPropertyMap {
     __obj.asInstanceOf[ARIAPropertyMap]
   }
   
-  extension [Self <: ARIAPropertyMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ARIAPropertyMap] (val x: Self) extends AnyVal {
     
     inline def `setAria-activedescendant`(value: Any): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
     

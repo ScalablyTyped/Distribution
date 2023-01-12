@@ -33,7 +33,8 @@ object UpdateRecoveryGroupResponse {
     __obj.asInstanceOf[UpdateRecoveryGroupResponse]
   }
   
-  extension [Self <: UpdateRecoveryGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRecoveryGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setCells(value: listOfString): Self = StObject.set(x, "Cells", value.asInstanceOf[js.Any])
     

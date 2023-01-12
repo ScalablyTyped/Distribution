@@ -70,7 +70,8 @@ object anon {
       __obj.asInstanceOf[Android]
     }
     
-    extension [Self <: Android](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Android] (val x: Self) extends AnyVal {
       
       inline def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -164,7 +166,8 @@ object anon {
       __obj.asInstanceOf[CssPrefix]
     }
     
-    extension [Self <: CssPrefix](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CssPrefix] (val x: Self) extends AnyVal {
       
       inline def setCssPrefix(value: String): Self = StObject.set(x, "cssPrefix", value.asInstanceOf[js.Any])
       

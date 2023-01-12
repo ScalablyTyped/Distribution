@@ -28,7 +28,8 @@ object ListContentsRequest {
     __obj.asInstanceOf[ListContentsRequest]
   }
   
-  extension [Self <: ListContentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListContentsRequest] (val x: Self) extends AnyVal {
     
     inline def setKnowledgeBaseId(value: UuidOrArn): Self = StObject.set(x, "knowledgeBaseId", value.asInstanceOf[js.Any])
     

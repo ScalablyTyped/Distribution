@@ -38,7 +38,8 @@ object GetExecutionHistoryInput {
     __obj.asInstanceOf[GetExecutionHistoryInput]
   }
   
-  extension [Self <: GetExecutionHistoryInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetExecutionHistoryInput] (val x: Self) extends AnyVal {
     
     inline def setExecutionArn(value: Arn): Self = StObject.set(x, "executionArn", value.asInstanceOf[js.Any])
     

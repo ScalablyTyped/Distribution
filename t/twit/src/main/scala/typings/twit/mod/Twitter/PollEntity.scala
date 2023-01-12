@@ -19,7 +19,8 @@ object PollEntity {
     __obj.asInstanceOf[PollEntity]
   }
   
-  extension [Self <: PollEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PollEntity] (val x: Self) extends AnyVal {
     
     inline def setDuration_minutes(value: String): Self = StObject.set(x, "duration_minutes", value.asInstanceOf[js.Any])
     

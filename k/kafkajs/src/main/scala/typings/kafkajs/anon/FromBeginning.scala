@@ -15,7 +15,8 @@ object FromBeginning {
     __obj.asInstanceOf[FromBeginning]
   }
   
-  extension [Self <: FromBeginning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FromBeginning] (val x: Self) extends AnyVal {
     
     inline def setFromBeginning(value: Boolean): Self = StObject.set(x, "fromBeginning", value.asInstanceOf[js.Any])
   }

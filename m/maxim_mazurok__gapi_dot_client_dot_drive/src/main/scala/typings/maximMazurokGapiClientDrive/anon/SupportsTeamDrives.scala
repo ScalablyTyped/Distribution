@@ -56,7 +56,8 @@ object SupportsTeamDrives {
     __obj.asInstanceOf[SupportsTeamDrives]
   }
   
-  extension [Self <: SupportsTeamDrives](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupportsTeamDrives] (val x: Self) extends AnyVal {
     
     inline def setAcknowledgeAbuse(value: Boolean): Self = StObject.set(x, "acknowledgeAbuse", value.asInstanceOf[js.Any])
     

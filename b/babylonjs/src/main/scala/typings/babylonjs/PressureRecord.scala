@@ -21,7 +21,8 @@ object PressureRecord {
     __obj.asInstanceOf[PressureRecord]
   }
   
-  extension [Self <: PressureRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PressureRecord] (val x: Self) extends AnyVal {
     
     inline def setFactors(value: js.Array[PressureFactor]): Self = StObject.set(x, "factors", value.asInstanceOf[js.Any])
     

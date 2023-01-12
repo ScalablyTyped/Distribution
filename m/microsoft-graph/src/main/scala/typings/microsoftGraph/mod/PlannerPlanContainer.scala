@@ -26,7 +26,8 @@ object PlannerPlanContainer {
     __obj.asInstanceOf[PlannerPlanContainer]
   }
   
-  extension [Self <: PlannerPlanContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlannerPlanContainer] (val x: Self) extends AnyVal {
     
     inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     

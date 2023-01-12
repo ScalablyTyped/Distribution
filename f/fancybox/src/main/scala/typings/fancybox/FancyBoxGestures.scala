@@ -78,7 +78,8 @@ object FancyBoxGestures {
     __obj.asInstanceOf[FancyBoxGestures]
   }
   
-  extension [Self <: FancyBoxGestures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FancyBoxGestures] (val x: Self) extends AnyVal {
     
     inline def set$bg(value: JQuery): Self = StObject.set(x, "$bg", value.asInstanceOf[js.Any])
     

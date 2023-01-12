@@ -23,7 +23,8 @@ object ParagraphToken {
     __obj.asInstanceOf[ParagraphToken]
   }
   
-  extension [Self <: ParagraphToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParagraphToken] (val x: Self) extends AnyVal {
     
     inline def setTight(value: Boolean): Self = StObject.set(x, "tight", value.asInstanceOf[js.Any])
   }

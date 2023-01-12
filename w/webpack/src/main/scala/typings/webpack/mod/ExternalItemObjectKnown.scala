@@ -24,7 +24,8 @@ object ExternalItemObjectKnown {
     __obj.asInstanceOf[ExternalItemObjectKnown]
   }
   
-  extension [Self <: ExternalItemObjectKnown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalItemObjectKnown] (val x: Self) extends AnyVal {
     
     inline def setByLayer(value: StringDictionary[ExternalItem] | (js.Function1[/* layer */ Null | String, ExternalItem])): Self = StObject.set(x, "byLayer", value.asInstanceOf[js.Any])
     

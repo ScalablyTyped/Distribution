@@ -19,7 +19,8 @@ object HandlerName {
     __obj.asInstanceOf[HandlerName]
   }
   
-  extension [Self <: HandlerName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandlerName] (val x: Self) extends AnyVal {
     
     inline def setHandler(value: /* e */ FocusEvent => Any): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
     

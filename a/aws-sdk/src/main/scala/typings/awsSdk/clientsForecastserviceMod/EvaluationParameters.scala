@@ -23,7 +23,8 @@ object EvaluationParameters {
     __obj.asInstanceOf[EvaluationParameters]
   }
   
-  extension [Self <: EvaluationParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluationParameters] (val x: Self) extends AnyVal {
     
     inline def setBackTestWindowOffset(value: Integer): Self = StObject.set(x, "BackTestWindowOffset", value.asInstanceOf[js.Any])
     

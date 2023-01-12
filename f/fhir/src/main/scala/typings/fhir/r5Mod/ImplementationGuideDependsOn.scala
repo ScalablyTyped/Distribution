@@ -36,7 +36,8 @@ object ImplementationGuideDependsOn {
     __obj.asInstanceOf[ImplementationGuideDependsOn]
   }
   
-  extension [Self <: ImplementationGuideDependsOn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImplementationGuideDependsOn] (val x: Self) extends AnyVal {
     
     inline def setPackageId(value: String): Self = StObject.set(x, "packageId", value.asInstanceOf[js.Any])
     

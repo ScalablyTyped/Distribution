@@ -19,7 +19,8 @@ object IUSER_EXIT_ROOM {
     __obj.asInstanceOf[IUSER_EXIT_ROOM]
   }
   
-  extension [Self <: IUSER_EXIT_ROOM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUSER_EXIT_ROOM] (val x: Self) extends AnyVal {
     
     inline def setRoom(value: SFSRoom): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
     

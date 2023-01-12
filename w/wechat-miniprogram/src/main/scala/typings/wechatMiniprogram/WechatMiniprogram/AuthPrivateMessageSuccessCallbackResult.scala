@@ -25,7 +25,8 @@ object AuthPrivateMessageSuccessCallbackResult {
     __obj.asInstanceOf[AuthPrivateMessageSuccessCallbackResult]
   }
   
-  extension [Self <: AuthPrivateMessageSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthPrivateMessageSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
     

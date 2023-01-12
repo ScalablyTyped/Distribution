@@ -57,7 +57,8 @@ object srcNgtscTypecheckExtendedApiApiMod {
       __obj.asInstanceOf[TemplateCheck[Code]]
     }
     
-    extension [Self <: TemplateCheck[?], Code /* <: ErrorCode */](x: Self & TemplateCheck[Code]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateCheck[?], Code /* <: ErrorCode */] (val x: Self & TemplateCheck[Code]) extends AnyVal {
       
       inline def setCode(value: Code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object srcNgtscTypecheckExtendedApiApiMod {
       __obj.asInstanceOf[TemplateCheckFactory[Code, Name]]
     }
     
-    extension [Self <: TemplateCheckFactory[?, ?], Code /* <: ErrorCode */, Name /* <: ExtendedTemplateDiagnosticName */](x: Self & (TemplateCheckFactory[Code, Name])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateCheckFactory[?, ?], Code /* <: ErrorCode */, Name /* <: ExtendedTemplateDiagnosticName */] (val x: Self & (TemplateCheckFactory[Code, Name])) extends AnyVal {
       
       inline def setCode(value: Code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

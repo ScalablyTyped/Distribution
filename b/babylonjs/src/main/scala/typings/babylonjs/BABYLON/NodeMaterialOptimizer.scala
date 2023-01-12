@@ -20,7 +20,8 @@ object NodeMaterialOptimizer {
     __obj.asInstanceOf[NodeMaterialOptimizer]
   }
   
-  extension [Self <: NodeMaterialOptimizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeMaterialOptimizer] (val x: Self) extends AnyVal {
     
     inline def setOptimize(value: (js.Array[NodeMaterialBlock], js.Array[NodeMaterialBlock]) => Unit): Self = StObject.set(x, "optimize", js.Any.fromFunction2(value))
   }

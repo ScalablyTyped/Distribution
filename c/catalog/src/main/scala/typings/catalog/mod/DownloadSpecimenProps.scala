@@ -21,7 +21,8 @@ object DownloadSpecimenProps {
     __obj.asInstanceOf[DownloadSpecimenProps]
   }
   
-  extension [Self <: DownloadSpecimenProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadSpecimenProps] (val x: Self) extends AnyVal {
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     

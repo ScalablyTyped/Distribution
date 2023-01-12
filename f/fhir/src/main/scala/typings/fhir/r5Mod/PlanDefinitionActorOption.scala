@@ -44,7 +44,8 @@ object PlanDefinitionActorOption {
     __obj.asInstanceOf[PlanDefinitionActorOption]
   }
   
-  extension [Self <: PlanDefinitionActorOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlanDefinitionActorOption] (val x: Self) extends AnyVal {
     
     inline def setRole(value: CodeableConcept): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DescribeRobotApplicationRequest {
     __obj.asInstanceOf[DescribeRobotApplicationRequest]
   }
   
-  extension [Self <: DescribeRobotApplicationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRobotApplicationRequest] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Arn): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     

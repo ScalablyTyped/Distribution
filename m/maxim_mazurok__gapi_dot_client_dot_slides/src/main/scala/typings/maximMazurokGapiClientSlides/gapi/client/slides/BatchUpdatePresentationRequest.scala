@@ -19,7 +19,8 @@ object BatchUpdatePresentationRequest {
     __obj.asInstanceOf[BatchUpdatePresentationRequest]
   }
   
-  extension [Self <: BatchUpdatePresentationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdatePresentationRequest] (val x: Self) extends AnyVal {
     
     inline def setRequests(value: js.Array[Request]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     

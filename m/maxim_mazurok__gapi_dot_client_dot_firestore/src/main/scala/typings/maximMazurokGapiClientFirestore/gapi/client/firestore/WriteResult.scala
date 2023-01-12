@@ -19,7 +19,8 @@ object WriteResult {
     __obj.asInstanceOf[WriteResult]
   }
   
-  extension [Self <: WriteResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteResult] (val x: Self) extends AnyVal {
     
     inline def setTransformResults(value: js.Array[Value]): Self = StObject.set(x, "transformResults", value.asInstanceOf[js.Any])
     

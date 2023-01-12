@@ -35,7 +35,8 @@ object libComponentsTeachingBubbleTeachingBubbleDottypesMod {
       __obj.asInstanceOf[ITeachingBubble]
     }
     
-    extension [Self <: ITeachingBubble](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITeachingBubble] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
@@ -158,7 +159,8 @@ object libComponentsTeachingBubbleTeachingBubbleDottypesMod {
       __obj.asInstanceOf[ITeachingBubbleProps]
     }
     
-    extension [Self <: ITeachingBubbleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITeachingBubbleProps] (val x: Self) extends AnyVal {
       
       inline def setAriaDescribedBy(value: String): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
       
@@ -281,7 +283,8 @@ object libComponentsTeachingBubbleTeachingBubbleDottypesMod {
       __obj.asInstanceOf[ITeachingBubbleStyleProps]
     }
     
-    extension [Self <: ITeachingBubbleStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITeachingBubbleStyleProps] (val x: Self) extends AnyVal {
       
       inline def setCalloutProps(value: ICalloutContentStyleProps): Self = StObject.set(x, "calloutProps", value.asInstanceOf[js.Any])
       
@@ -354,7 +357,8 @@ object libComponentsTeachingBubbleTeachingBubbleDottypesMod {
       __obj.asInstanceOf[ITeachingBubbleStyles]
     }
     
-    extension [Self <: ITeachingBubbleStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITeachingBubbleStyles] (val x: Self) extends AnyVal {
       
       inline def setBody(value: IStyle): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -446,7 +450,8 @@ object libComponentsTeachingBubbleTeachingBubbleDottypesMod {
       __obj.asInstanceOf[ITeachingBubbleSubComponentStyles]
     }
     
-    extension [Self <: ITeachingBubbleSubComponentStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITeachingBubbleSubComponentStyles] (val x: Self) extends AnyVal {
       
       inline def setCallout(value: IStyleFunctionOrObject[Any, Any]): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
       

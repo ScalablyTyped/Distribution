@@ -26,7 +26,8 @@ object IDragTool {
     __obj.asInstanceOf[IDragTool]
   }
   
-  extension [Self <: IDragTool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDragTool] (val x: Self) extends AnyVal {
     
     inline def setSeries(value: ISeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
   }

@@ -43,7 +43,8 @@ object SegmentImportResource {
     __obj.asInstanceOf[SegmentImportResource]
   }
   
-  extension [Self <: SegmentImportResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentImportResource] (val x: Self) extends AnyVal {
     
     inline def setChannelCounts(value: MapOfInteger): Self = StObject.set(x, "ChannelCounts", value.asInstanceOf[js.Any])
     

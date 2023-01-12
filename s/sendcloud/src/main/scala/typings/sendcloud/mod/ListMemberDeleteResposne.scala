@@ -18,7 +18,8 @@ object ListMemberDeleteResposne {
     __obj.asInstanceOf[ListMemberDeleteResposne]
   }
   
-  extension [Self <: ListMemberDeleteResposne](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMemberDeleteResposne] (val x: Self) extends AnyVal {
     
     inline def setDel_count(value: Double): Self = StObject.set(x, "del_count", value.asInstanceOf[js.Any])
     

@@ -131,7 +131,8 @@ object PlusShareShareMessage {
     __obj.asInstanceOf[PlusShareShareMessage]
   }
   
-  extension [Self <: PlusShareShareMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusShareShareMessage] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

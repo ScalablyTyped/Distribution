@@ -43,7 +43,8 @@ object IsNavigationArrow {
     __obj.asInstanceOf[IsNavigationArrow]
   }
   
-  extension [Self <: IsNavigationArrow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsNavigationArrow] (val x: Self) extends AnyVal {
     
     inline def setIsNavigationArrow(value: Boolean): Self = StObject.set(x, "isNavigationArrow", value.asInstanceOf[js.Any])
     

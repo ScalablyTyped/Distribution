@@ -32,7 +32,8 @@ object HyperParameterTuningInstanceConfig {
     __obj.asInstanceOf[HyperParameterTuningInstanceConfig]
   }
   
-  extension [Self <: HyperParameterTuningInstanceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HyperParameterTuningInstanceConfig] (val x: Self) extends AnyVal {
     
     inline def setInstanceCount(value: TrainingInstanceCount): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     

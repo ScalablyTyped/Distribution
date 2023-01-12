@@ -19,7 +19,8 @@ object GoogleCloudRecommendationengineV1beta1ListPredictionApiKeyRegistrationsRe
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1ListPredictionApiKeyRegistrationsResponse]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1beta1ListPredictionApiKeyRegistrationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1ListPredictionApiKeyRegistrationsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

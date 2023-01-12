@@ -36,7 +36,8 @@ object baseHelpersOverflowMod {
       __obj.asInstanceOf[OverflowHelpersProps]
     }
     
-    extension [Self <: OverflowHelpersProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverflowHelpersProps] (val x: Self) extends AnyVal {
       
       inline def setClipped(value: Boolean): Self = StObject.set(x, "clipped", value.asInstanceOf[js.Any])
       

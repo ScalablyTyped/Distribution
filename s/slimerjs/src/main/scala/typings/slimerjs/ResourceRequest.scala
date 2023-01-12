@@ -24,7 +24,8 @@ object ResourceRequest {
     __obj.asInstanceOf[ResourceRequest]
   }
   
-  extension [Self <: ResourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceRequest] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

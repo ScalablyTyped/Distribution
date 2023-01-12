@@ -40,7 +40,8 @@ object DayCellContentProps {
     __obj.asInstanceOf[DayCellContentProps]
   }
   
-  extension [Self <: DayCellContentProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DayCellContentProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Ref<any> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentChildren */ Any) => Any

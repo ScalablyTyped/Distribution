@@ -16,7 +16,8 @@ object DeviceMakeModelTargetingOptionDetails {
     __obj.asInstanceOf[DeviceMakeModelTargetingOptionDetails]
   }
   
-  extension [Self <: DeviceMakeModelTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceMakeModelTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListTaskDefinitionFamiliesResponse {
     __obj.asInstanceOf[ListTaskDefinitionFamiliesResponse]
   }
   
-  extension [Self <: ListTaskDefinitionFamiliesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTaskDefinitionFamiliesResponse] (val x: Self) extends AnyVal {
     
     inline def setFamilies(value: StringList): Self = StObject.set(x, "families", value.asInstanceOf[js.Any])
     

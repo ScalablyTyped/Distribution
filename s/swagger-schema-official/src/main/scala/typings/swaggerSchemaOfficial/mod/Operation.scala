@@ -38,7 +38,8 @@ object Operation {
     __obj.asInstanceOf[Operation]
   }
   
-  extension [Self <: Operation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
     
     inline def setConsumes(value: js.Array[String]): Self = StObject.set(x, "consumes", value.asInstanceOf[js.Any])
     

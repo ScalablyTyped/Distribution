@@ -17,7 +17,8 @@ object BuildArtifactAddedEvent {
     __obj.asInstanceOf[BuildArtifactAddedEvent]
   }
   
-  extension [Self <: BuildArtifactAddedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildArtifactAddedEvent] (val x: Self) extends AnyVal {
     
     inline def setArtifact(value: BuildArtifact): Self = StObject.set(x, "artifact", value.asInstanceOf[js.Any])
   }

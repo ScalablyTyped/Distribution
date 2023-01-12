@@ -42,7 +42,8 @@ object PropertyChanged {
     __obj.asInstanceOf[PropertyChanged]
   }
   
-  extension [Self <: PropertyChanged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyChanged] (val x: Self) extends AnyVal {
     
     inline def setChangeKey(value: IChangeKey): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
     

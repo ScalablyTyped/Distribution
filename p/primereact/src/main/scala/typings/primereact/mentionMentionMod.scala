@@ -135,7 +135,8 @@ object mentionMentionMod {
       __obj.asInstanceOf[MentionItemTemplateOptions]
     }
     
-    extension [Self <: MentionItemTemplateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MentionItemTemplateOptions] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -579,7 +580,8 @@ object mentionMentionMod {
       __obj.asInstanceOf[MentionProps]
     }
     
-    extension [Self <: MentionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MentionProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1464,7 +1466,8 @@ object mentionMentionMod {
       __obj.asInstanceOf[MentionSearchParams]
     }
     
-    extension [Self <: MentionSearchParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MentionSearchParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -1487,7 +1490,8 @@ object mentionMentionMod {
       __obj.asInstanceOf[MentionSelectParams]
     }
     
-    extension [Self <: MentionSelectParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MentionSelectParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       

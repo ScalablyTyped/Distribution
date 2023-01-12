@@ -33,7 +33,8 @@ object WeightedIdentifierMangler {
     __obj.asInstanceOf[WeightedIdentifierMangler]
   }
   
-  extension [Self <: WeightedIdentifierMangler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeightedIdentifierMangler] (val x: Self) extends AnyVal {
     
     inline def setConsider(value: (String, Double) => Double): Self = StObject.set(x, "consider", js.Any.fromFunction2(value))
     

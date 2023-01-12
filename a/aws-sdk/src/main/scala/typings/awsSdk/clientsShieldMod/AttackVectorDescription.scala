@@ -18,7 +18,8 @@ object AttackVectorDescription {
     __obj.asInstanceOf[AttackVectorDescription]
   }
   
-  extension [Self <: AttackVectorDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttackVectorDescription] (val x: Self) extends AnyVal {
     
     inline def setVectorType(value: String): Self = StObject.set(x, "VectorType", value.asInstanceOf[js.Any])
   }

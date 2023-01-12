@@ -29,7 +29,8 @@ object PartialHoverLabelAlign {
     __obj.asInstanceOf[PartialHoverLabelAlign]
   }
   
-  extension [Self <: PartialHoverLabelAlign](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialHoverLabelAlign] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: left | right | auto): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

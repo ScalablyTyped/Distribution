@@ -61,7 +61,8 @@ object IBalloonOptions {
     __obj.asInstanceOf[IBalloonOptions]
   }
   
-  extension [Self <: IBalloonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBalloonOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoPan(value: Boolean): Self = StObject.set(x, "autoPan", value.asInstanceOf[js.Any])
     

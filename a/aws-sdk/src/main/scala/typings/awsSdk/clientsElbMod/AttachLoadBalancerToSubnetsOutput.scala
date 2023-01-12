@@ -18,7 +18,8 @@ object AttachLoadBalancerToSubnetsOutput {
     __obj.asInstanceOf[AttachLoadBalancerToSubnetsOutput]
   }
   
-  extension [Self <: AttachLoadBalancerToSubnetsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachLoadBalancerToSubnetsOutput] (val x: Self) extends AnyVal {
     
     inline def setSubnets(value: Subnets): Self = StObject.set(x, "Subnets", value.asInstanceOf[js.Any])
     

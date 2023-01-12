@@ -23,7 +23,8 @@ object ParagraphPropertiesAsian {
     __obj.asInstanceOf[ParagraphPropertiesAsian]
   }
   
-  extension [Self <: ParagraphPropertiesAsian](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParagraphPropertiesAsian] (val x: Self) extends AnyVal {
     
     inline def setParaIsCharacterDistance(value: Boolean): Self = StObject.set(x, "ParaIsCharacterDistance", value.asInstanceOf[js.Any])
     

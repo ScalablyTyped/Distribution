@@ -715,7 +715,8 @@ object mod {
         __obj.asInstanceOf[ComposerParameters[S̤t̤a̤m̤p̤]]
       }
       
-      extension [Self <: ComposerParameters[?], S̤t̤a̤m̤p̤ /* <: StampSignature */](x: Self & ComposerParameters[S̤t̤a̤m̤p̤]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ComposerParameters[?], S̤t̤a̤m̤p̤ /* <: StampSignature */] (val x: Self & ComposerParameters[S̤t̤a̤m̤p̤]) extends AnyVal {
         
         inline def setComposables(value: js.Array[Composable]): Self = StObject.set(x, "composables", value.asInstanceOf[js.Any])
         
@@ -772,7 +773,8 @@ object mod {
         __obj.asInstanceOf[Descriptor[Obj, S̤t̤a̤m̤p̤]]
       }
       
-      extension [Self <: Descriptor[?, ?], Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](x: Self & (Descriptor[Obj, S̤t̤a̤m̤p̤])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Descriptor[?, ?], Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */] (val x: Self & (Descriptor[Obj, S̤t̤a̤m̤p̤])) extends AnyVal {
         
         inline def setComposers(value: js.Array[Composer[S̤t̤a̤m̤p̤]]): Self = StObject.set(x, "composers", value.asInstanceOf[js.Any])
         
@@ -864,7 +866,8 @@ object mod {
         __obj.asInstanceOf[ExtendedDescriptor[Obj, S̤t̤a̤m̤p̤]]
       }
       
-      extension [Self <: ExtendedDescriptor[?, ?], Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](x: Self & (ExtendedDescriptor[Obj, S̤t̤a̤m̤p̤])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExtendedDescriptor[?, ?], Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */] (val x: Self & (ExtendedDescriptor[Obj, S̤t̤a̤m̤p̤])) extends AnyVal {
         
         inline def setConf(value: PropertyMap): Self = StObject.set(x, "conf", value.asInstanceOf[js.Any])
         
@@ -938,7 +941,8 @@ object mod {
         __obj.asInstanceOf[InitializerContext[Obj, S̤t̤a̤m̤p̤]]
       }
       
-      extension [Self <: InitializerContext[?, ?], Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](x: Self & (InitializerContext[Obj, S̤t̤a̤m̤p̤])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InitializerContext[?, ?], Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */] (val x: Self & (InitializerContext[Obj, S̤t̤a̤m̤p̤])) extends AnyVal {
         
         inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         

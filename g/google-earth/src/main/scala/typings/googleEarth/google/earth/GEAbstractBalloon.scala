@@ -106,7 +106,8 @@ object GEAbstractBalloon {
     __obj.asInstanceOf[GEAbstractBalloon]
   }
   
-  extension [Self <: GEAbstractBalloon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GEAbstractBalloon] (val x: Self) extends AnyVal {
     
     inline def setGetCloseButtonEnabled(value: () => Boolean): Self = StObject.set(x, "getCloseButtonEnabled", js.Any.fromFunction0(value))
     

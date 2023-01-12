@@ -23,7 +23,8 @@ object Readonlytypestringpayload {
     __obj.asInstanceOf[Readonlytypestringpayload]
   }
   
-  extension [Self <: Readonlytypestringpayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlytypestringpayload] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: js.Object): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

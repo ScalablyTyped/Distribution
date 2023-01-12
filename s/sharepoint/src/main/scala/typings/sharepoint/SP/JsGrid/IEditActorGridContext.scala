@@ -37,7 +37,8 @@ object IEditActorGridContext {
     __obj.asInstanceOf[IEditActorGridContext]
   }
   
-  extension [Self <: IEditActorGridContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEditActorGridContext] (val x: Self) extends AnyVal {
     
     inline def setBLightFocus(value: Boolean): Self = StObject.set(x, "bLightFocus", value.asInstanceOf[js.Any])
     

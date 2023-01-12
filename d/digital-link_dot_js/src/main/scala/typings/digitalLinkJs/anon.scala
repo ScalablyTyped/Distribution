@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Match]
     }
     
-    extension [Self <: Match](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Match] (val x: Self) extends AnyVal {
       
       inline def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object anon {
       __obj.asInstanceOf[RecordRuleNamestring]
     }
     
-    extension [Self <: RecordRuleNamestring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordRuleNamestring] (val x: Self) extends AnyVal {
       
       inline def setBillTo(value: String): Self = StObject.set(x, "billTo", value.asInstanceOf[js.Any])
       

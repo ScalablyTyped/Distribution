@@ -86,7 +86,8 @@ object BaseLayerViewGL2DTile {
     __obj.asInstanceOf[BaseLayerViewGL2DTile]
   }
   
-  extension [Self <: BaseLayerViewGL2DTile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseLayerViewGL2DTile] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

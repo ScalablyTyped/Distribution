@@ -52,7 +52,8 @@ object XExternalDocLinks {
     __obj.asInstanceOf[XExternalDocLinks]
   }
   
-  extension [Self <: XExternalDocLinks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XExternalDocLinks] (val x: Self) extends AnyVal {
     
     inline def setAddDocLink(value: String => XExternalDocLink): Self = StObject.set(x, "addDocLink", js.Any.fromFunction1(value))
   }

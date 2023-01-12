@@ -18,7 +18,8 @@ object DescribeJournalKinesisStreamResponse {
     __obj.asInstanceOf[DescribeJournalKinesisStreamResponse]
   }
   
-  extension [Self <: DescribeJournalKinesisStreamResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeJournalKinesisStreamResponse] (val x: Self) extends AnyVal {
     
     inline def setStream(value: JournalKinesisStreamDescription): Self = StObject.set(x, "Stream", value.asInstanceOf[js.Any])
     

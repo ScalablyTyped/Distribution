@@ -20,7 +20,8 @@ object ICustomHttpPattern {
     __obj.asInstanceOf[ICustomHttpPattern]
   }
   
-  extension [Self <: ICustomHttpPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICustomHttpPattern] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

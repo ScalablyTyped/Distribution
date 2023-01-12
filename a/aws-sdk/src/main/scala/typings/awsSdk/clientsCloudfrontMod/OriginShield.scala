@@ -23,7 +23,8 @@ object OriginShield {
     __obj.asInstanceOf[OriginShield]
   }
   
-  extension [Self <: OriginShield](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginShield] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

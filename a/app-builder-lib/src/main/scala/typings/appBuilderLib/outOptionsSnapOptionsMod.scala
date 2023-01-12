@@ -167,7 +167,8 @@ object outOptionsSnapOptionsMod {
       __obj.asInstanceOf[SnapOptions]
     }
     
-    extension [Self <: SnapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnapOptions] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       

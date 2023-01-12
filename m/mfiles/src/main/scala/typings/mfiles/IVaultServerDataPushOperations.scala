@@ -32,7 +32,8 @@ object IVaultServerDataPushOperations {
     __obj.asInstanceOf[IVaultServerDataPushOperations]
   }
   
-  extension [Self <: IVaultServerDataPushOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultServerDataPushOperations] (val x: Self) extends AnyVal {
     
     inline def setCloneVaultForServerDataPush(value: IServerDataPushSink => IVault): Self = StObject.set(x, "CloneVaultForServerDataPush", js.Any.fromFunction1(value))
     

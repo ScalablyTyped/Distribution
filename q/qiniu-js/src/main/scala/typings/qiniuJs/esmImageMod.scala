@@ -48,7 +48,8 @@ object esmImageMod {
       __obj.asInstanceOf[Entry]
     }
     
-    extension [Self <: Entry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object esmImageMod {
       __obj.asInstanceOf[ImageMogr2_]
     }
     
-    extension [Self <: ImageMogr2_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageMogr2_] (val x: Self) extends AnyVal {
       
       inline def `setAuto-orient`(value: Boolean): Self = StObject.set(x, "auto-orient", value.asInstanceOf[js.Any])
       
@@ -142,7 +144,8 @@ object esmImageMod {
       __obj.asInstanceOf[ImageViewOptions]
     }
     
-    extension [Self <: ImageViewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageViewOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -193,7 +196,8 @@ object esmImageMod {
       __obj.asInstanceOf[ImageWatermark]
     }
     
-    extension [Self <: ImageWatermark](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageWatermark] (val x: Self) extends AnyVal {
       
       inline def setDissolve(value: Double): Self = StObject.set(x, "dissolve", value.asInstanceOf[js.Any])
       

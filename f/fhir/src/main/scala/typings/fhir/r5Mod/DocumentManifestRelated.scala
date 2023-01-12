@@ -25,7 +25,8 @@ object DocumentManifestRelated {
     __obj.asInstanceOf[DocumentManifestRelated]
   }
   
-  extension [Self <: DocumentManifestRelated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentManifestRelated] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

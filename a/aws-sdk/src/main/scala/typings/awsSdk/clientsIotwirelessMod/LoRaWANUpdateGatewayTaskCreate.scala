@@ -33,7 +33,8 @@ object LoRaWANUpdateGatewayTaskCreate {
     __obj.asInstanceOf[LoRaWANUpdateGatewayTaskCreate]
   }
   
-  extension [Self <: LoRaWANUpdateGatewayTaskCreate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoRaWANUpdateGatewayTaskCreate] (val x: Self) extends AnyVal {
     
     inline def setCurrentVersion(value: LoRaWANGatewayVersion): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     

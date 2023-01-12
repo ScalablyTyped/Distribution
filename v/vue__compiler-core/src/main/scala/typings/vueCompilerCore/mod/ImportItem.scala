@@ -17,7 +17,8 @@ object ImportItem {
     __obj.asInstanceOf[ImportItem]
   }
   
-  extension [Self <: ImportItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportItem] (val x: Self) extends AnyVal {
     
     inline def setExp(value: String | ExpressionNode): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
     

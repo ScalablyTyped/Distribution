@@ -28,7 +28,8 @@ object DeleteEnvironmentTemplateVersionInput {
     __obj.asInstanceOf[DeleteEnvironmentTemplateVersionInput]
   }
   
-  extension [Self <: DeleteEnvironmentTemplateVersionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEnvironmentTemplateVersionInput] (val x: Self) extends AnyVal {
     
     inline def setMajorVersion(value: TemplateVersionPart): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
     

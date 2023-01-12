@@ -217,7 +217,8 @@ object libComponentsListListMod {
       __obj.asInstanceOf[IListState[T]]
     }
     
-    extension [Self <: IListState[?], T](x: Self & IListState[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IListState[?], T] (val x: Self & IListState[T]) extends AnyVal {
       
       inline def setGetDerivedStateFromProps(value: (IListProps[T], IListState[T]) => IListState[T]): Self = StObject.set(x, "getDerivedStateFromProps", js.Any.fromFunction2(value))
       

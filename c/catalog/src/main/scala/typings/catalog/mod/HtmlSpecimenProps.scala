@@ -29,7 +29,8 @@ object HtmlSpecimenProps {
     __obj.asInstanceOf[HtmlSpecimenProps]
   }
   
-  extension [Self <: HtmlSpecimenProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HtmlSpecimenProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

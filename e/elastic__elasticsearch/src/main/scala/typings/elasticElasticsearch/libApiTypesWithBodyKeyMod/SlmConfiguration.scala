@@ -25,7 +25,8 @@ object SlmConfiguration {
     __obj.asInstanceOf[SlmConfiguration]
   }
   
-  extension [Self <: SlmConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlmConfiguration] (val x: Self) extends AnyVal {
     
     inline def setFeature_states(value: js.Array[String]): Self = StObject.set(x, "feature_states", value.asInstanceOf[js.Any])
     

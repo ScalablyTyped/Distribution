@@ -19,7 +19,8 @@ object TargetTypeEnum {
     __obj.asInstanceOf[TargetTypeEnum]
   }
   
-  extension [Self <: TargetTypeEnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetTypeEnum] (val x: Self) extends AnyVal {
     
     inline def setClassProperty(value: TargetType): Self = StObject.set(x, "ClassProperty", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object HDRInfo {
     __obj.asInstanceOf[HDRInfo]
   }
   
-  extension [Self <: HDRInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HDRInfo] (val x: Self) extends AnyVal {
     
     inline def setDataPosition(value: Double): Self = StObject.set(x, "dataPosition", value.asInstanceOf[js.Any])
     

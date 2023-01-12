@@ -17,7 +17,8 @@ object IlmRetryRequest {
     __obj.asInstanceOf[IlmRetryRequest]
   }
   
-  extension [Self <: IlmRetryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IlmRetryRequest] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: IndexName): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }

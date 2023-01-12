@@ -18,7 +18,8 @@ object DescribeDraftAppVersionResourcesImportStatusRequest {
     __obj.asInstanceOf[DescribeDraftAppVersionResourcesImportStatusRequest]
   }
   
-  extension [Self <: DescribeDraftAppVersionResourcesImportStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDraftAppVersionResourcesImportStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setAppArn(value: Arn): Self = StObject.set(x, "appArn", value.asInstanceOf[js.Any])
   }

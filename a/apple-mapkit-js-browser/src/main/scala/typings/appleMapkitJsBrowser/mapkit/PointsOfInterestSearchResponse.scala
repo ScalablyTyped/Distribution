@@ -21,7 +21,8 @@ object PointsOfInterestSearchResponse {
     __obj.asInstanceOf[PointsOfInterestSearchResponse]
   }
   
-  extension [Self <: PointsOfInterestSearchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointsOfInterestSearchResponse] (val x: Self) extends AnyVal {
     
     inline def setPlaces(value: js.Array[Place]): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
     

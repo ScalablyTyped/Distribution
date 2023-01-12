@@ -18,7 +18,8 @@ object JobExecutionStatusDetails {
     __obj.asInstanceOf[JobExecutionStatusDetails]
   }
   
-  extension [Self <: JobExecutionStatusDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobExecutionStatusDetails] (val x: Self) extends AnyVal {
     
     inline def setDetailsMap(value: DetailsMap): Self = StObject.set(x, "detailsMap", value.asInstanceOf[js.Any])
     

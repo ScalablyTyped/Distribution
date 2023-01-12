@@ -26,7 +26,8 @@ object UnsupportedOverwriteRequest {
     __obj.asInstanceOf[UnsupportedOverwriteRequest]
   }
   
-  extension [Self <: UnsupportedOverwriteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnsupportedOverwriteRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

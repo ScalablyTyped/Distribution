@@ -38,7 +38,8 @@ object VTLDevice {
     __obj.asInstanceOf[VTLDevice]
   }
   
-  extension [Self <: VTLDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VTLDevice] (val x: Self) extends AnyVal {
     
     inline def setDeviceiSCSIAttributes(value: DeviceiSCSIAttributes): Self = StObject.set(x, "DeviceiSCSIAttributes", value.asInstanceOf[js.Any])
     

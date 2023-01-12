@@ -361,7 +361,8 @@ object axis {
       __obj.asInstanceOf[IAxis]
     }
     
-    extension [Self <: IAxis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAxis] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: Any): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -698,7 +699,8 @@ object axis {
       __obj.asInstanceOf[ICategory]
     }
     
-    extension [Self <: ICategory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICategory] (val x: Self) extends AnyVal {
       
       inline def setGetLayout(value: () => String): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
       
@@ -763,7 +765,8 @@ object axis {
       __obj.asInstanceOf[INumeric]
     }
     
-    extension [Self <: INumeric](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INumeric] (val x: Self) extends AnyVal {
       
       inline def setGetAggregator(value: () => String): Self = StObject.set(x, "getAggregator", js.Any.fromFunction0(value))
       
@@ -874,7 +877,8 @@ object axis {
       __obj.asInstanceOf[ITime]
     }
     
-    extension [Self <: ITime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITime] (val x: Self) extends AnyVal {
       
       inline def setCalculateByLabelSize(value: Boolean): Self = StObject.set(x, "calculateByLabelSize", value.asInstanceOf[js.Any])
       
@@ -994,7 +998,8 @@ object axis {
         __obj.asInstanceOf[IContinuous]
       }
       
-      extension [Self <: IContinuous](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IContinuous] (val x: Self) extends AnyVal {
         
         inline def setGetAdjustMaximumByMajorUnit(value: () => Boolean): Self = StObject.set(x, "getAdjustMaximumByMajorUnit", js.Any.fromFunction0(value))
         
@@ -1069,7 +1074,8 @@ object axis {
         __obj.asInstanceOf[IDiscrete]
       }
       
-      extension [Self <: IDiscrete](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IDiscrete] (val x: Self) extends AnyVal {
         
         inline def setProcessData(value: () => Unit): Self = StObject.set(x, "processData", js.Any.fromFunction0(value))
         
@@ -1166,7 +1172,8 @@ object axis {
         __obj.asInstanceOf[ILayout]
       }
       
-      extension [Self <: ILayout](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ILayout] (val x: Self) extends AnyVal {
         
         inline def setAxis(value: IAxis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
         
@@ -1273,7 +1280,8 @@ object axis {
         __obj.asInstanceOf[INames]
       }
       
-      extension [Self <: INames](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: INames] (val x: Self) extends AnyVal {
         
         inline def setAdd(
           value: (/* value */ js.UndefOr[Any], /* step */ js.UndefOr[Any], /* unit */ js.UndefOr[Any]) => Unit
@@ -1346,7 +1354,8 @@ object axis {
         __obj.asInstanceOf[typings.senchaTouch.Ext.chart.axis.segmenter.INumeric]
       }
       
-      extension [Self <: typings.senchaTouch.Ext.chart.axis.segmenter.INumeric](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.chart.axis.segmenter.INumeric] (val x: Self) extends AnyVal {
         
         inline def setAdd(
           value: (/* value */ js.UndefOr[Any], /* step */ js.UndefOr[Any], /* unit */ js.UndefOr[Any]) => Unit
@@ -1456,7 +1465,8 @@ object axis {
         __obj.asInstanceOf[ISegmenter]
       }
       
-      extension [Self <: ISegmenter](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISegmenter] (val x: Self) extends AnyVal {
         
         inline def setAdd(
           value: (/* value */ js.UndefOr[Any], /* step */ js.UndefOr[Double], /* unit */ js.UndefOr[Any]) => Unit
@@ -1557,7 +1567,8 @@ object axis {
         __obj.asInstanceOf[typings.senchaTouch.Ext.chart.axis.segmenter.ITime]
       }
       
-      extension [Self <: typings.senchaTouch.Ext.chart.axis.segmenter.ITime](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.chart.axis.segmenter.ITime] (val x: Self) extends AnyVal {
         
         inline def setAdd(
           value: (/* value */ js.UndefOr[Any], /* step */ js.UndefOr[Any], /* unit */ js.UndefOr[Any]) => Unit
@@ -1751,7 +1762,8 @@ object axis {
         __obj.asInstanceOf[typings.senchaTouch.Ext.chart.axis.sprite.IAxis]
       }
       
-      extension [Self <: typings.senchaTouch.Ext.chart.axis.sprite.IAxis](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.chart.axis.sprite.IAxis] (val x: Self) extends AnyVal {
         
         inline def setAxis(value: typings.senchaTouch.Ext.chart.axis.IAxis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
         

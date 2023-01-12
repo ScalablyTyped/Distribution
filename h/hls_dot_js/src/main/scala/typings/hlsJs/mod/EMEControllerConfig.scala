@@ -30,7 +30,8 @@ object EMEControllerConfig {
     __obj.asInstanceOf[EMEControllerConfig]
   }
   
-  extension [Self <: EMEControllerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EMEControllerConfig] (val x: Self) extends AnyVal {
     
     inline def setDrmSystemOptions(value: DRMSystemOptions): Self = StObject.set(x, "drmSystemOptions", value.asInstanceOf[js.Any])
     

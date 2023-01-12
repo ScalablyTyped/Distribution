@@ -22,7 +22,8 @@ object RepoWorkflowid {
     __obj.asInstanceOf[RepoWorkflowid]
   }
   
-  extension [Self <: RepoWorkflowid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepoWorkflowid] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object ProgressbarEvents {
     __obj.asInstanceOf[ProgressbarEvents]
   }
   
-  extension [Self <: ProgressbarEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressbarEvents] (val x: Self) extends AnyVal {
     
     inline def setChange(value: (/* event */ JQueryEventObject, /* ui */ ProgressbarUIParams) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
     

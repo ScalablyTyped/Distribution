@@ -43,7 +43,8 @@ object ASPxClientHtmlEditorTableRowPropertiesDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorTableRowPropertiesDialog]
   }
   
-  extension [Self <: ASPxClientHtmlEditorTableRowPropertiesDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorTableRowPropertiesDialog] (val x: Self) extends AnyVal {
     
     inline def setGetHeightTypeComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetHeightTypeComboBox", js.Any.fromFunction0(value))
     

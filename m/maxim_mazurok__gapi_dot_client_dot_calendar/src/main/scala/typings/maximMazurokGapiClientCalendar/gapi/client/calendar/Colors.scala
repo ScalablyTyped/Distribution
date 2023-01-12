@@ -29,7 +29,8 @@ object Colors {
     __obj.asInstanceOf[Colors]
   }
   
-  extension [Self <: Colors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Colors] (val x: Self) extends AnyVal {
     
     inline def setCalendar(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.ColorDefinition} */ js.Any

@@ -30,7 +30,8 @@ object libToggleButtonMod {
       __obj.asInstanceOf[ToggleButtonProps]
     }
     
-    extension [Self <: ToggleButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleButtonProps] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

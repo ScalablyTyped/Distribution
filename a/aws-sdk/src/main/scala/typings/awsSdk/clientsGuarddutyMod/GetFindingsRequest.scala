@@ -28,7 +28,8 @@ object GetFindingsRequest {
     __obj.asInstanceOf[GetFindingsRequest]
   }
   
-  extension [Self <: GetFindingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFindingsRequest] (val x: Self) extends AnyVal {
     
     inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     

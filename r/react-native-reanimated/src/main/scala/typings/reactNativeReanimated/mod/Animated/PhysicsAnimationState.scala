@@ -22,7 +22,8 @@ object PhysicsAnimationState {
     __obj.asInstanceOf[PhysicsAnimationState]
   }
   
-  extension [Self <: PhysicsAnimationState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhysicsAnimationState] (val x: Self) extends AnyVal {
     
     inline def setVelocity(value: AnimatedValue[Double]): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
   }

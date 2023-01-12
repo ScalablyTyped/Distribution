@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[Contact]
     }
     
-    extension [Self <: Contact](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Contact] (val x: Self) extends AnyVal {
       
       inline def setAddress1(value: String): Self = StObject.set(x, "address1", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object mod {
       __obj.asInstanceOf[Pet]
     }
     
-    extension [Self <: Pet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pet] (val x: Self) extends AnyVal {
       
       inline def setAge(value: String): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
       
@@ -211,7 +213,8 @@ object mod {
       __obj.asInstanceOf[PetFinder]
     }
     
-    extension [Self <: PetFinder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PetFinder] (val x: Self) extends AnyVal {
       
       inline def setFindPet(value: (Any, js.Function2[/* error */ Any, /* pets */ js.Array[Pet], Unit]) => Unit): Self = StObject.set(x, "findPet", js.Any.fromFunction2(value))
       
@@ -284,7 +287,8 @@ object mod {
       __obj.asInstanceOf[Shelter]
     }
     
-    extension [Self <: Shelter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Shelter] (val x: Self) extends AnyVal {
       
       inline def setAddress1(value: String): Self = StObject.set(x, "address1", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object UpdateOn {
     __obj.asInstanceOf[UpdateOn]
   }
   
-  extension [Self <: UpdateOn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateOn] (val x: Self) extends AnyVal {
     
     inline def setUpdateOn(value: FormHooks): Self = StObject.set(x, "updateOn", value.asInstanceOf[js.Any])
     

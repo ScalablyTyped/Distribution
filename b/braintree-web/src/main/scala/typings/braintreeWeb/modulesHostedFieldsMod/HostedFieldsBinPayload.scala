@@ -15,7 +15,8 @@ object HostedFieldsBinPayload {
     __obj.asInstanceOf[HostedFieldsBinPayload]
   }
   
-  extension [Self <: HostedFieldsBinPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostedFieldsBinPayload] (val x: Self) extends AnyVal {
     
     inline def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
   }

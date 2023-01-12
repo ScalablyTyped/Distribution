@@ -17,7 +17,8 @@ object XpackUsageFrozenIndices {
     __obj.asInstanceOf[XpackUsageFrozenIndices]
   }
   
-  extension [Self <: XpackUsageFrozenIndices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageFrozenIndices] (val x: Self) extends AnyVal {
     
     inline def setIndices_count(value: long): Self = StObject.set(x, "indices_count", value.asInstanceOf[js.Any])
   }

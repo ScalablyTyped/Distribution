@@ -23,7 +23,8 @@ object ClickFeedback {
     __obj.asInstanceOf[ClickFeedback]
   }
   
-  extension [Self <: ClickFeedback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClickFeedback] (val x: Self) extends AnyVal {
     
     inline def setClickTime(value: js.Date): Self = StObject.set(x, "ClickTime", value.asInstanceOf[js.Any])
     

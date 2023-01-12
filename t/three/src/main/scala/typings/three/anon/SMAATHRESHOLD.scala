@@ -15,7 +15,8 @@ object SMAATHRESHOLD {
     __obj.asInstanceOf[SMAATHRESHOLD]
   }
   
-  extension [Self <: SMAATHRESHOLD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SMAATHRESHOLD] (val x: Self) extends AnyVal {
     
     inline def setSMAA_THRESHOLD(value: String): Self = StObject.set(x, "SMAA_THRESHOLD", value.asInstanceOf[js.Any])
   }

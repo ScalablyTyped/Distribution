@@ -18,7 +18,8 @@ object BaseExpression {
     __obj.asInstanceOf[BaseExpression]
   }
   
-  extension [Self <: BaseExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseExpression] (val x: Self) extends AnyVal {
     
     inline def setDistinct(value: Boolean): Self = StObject.set(x, "distinct", value.asInstanceOf[js.Any])
     

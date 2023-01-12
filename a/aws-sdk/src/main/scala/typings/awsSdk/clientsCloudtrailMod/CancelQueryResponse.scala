@@ -23,7 +23,8 @@ object CancelQueryResponse {
     __obj.asInstanceOf[CancelQueryResponse]
   }
   
-  extension [Self <: CancelQueryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelQueryResponse] (val x: Self) extends AnyVal {
     
     inline def setQueryId(value: UUID): Self = StObject.set(x, "QueryId", value.asInstanceOf[js.Any])
     

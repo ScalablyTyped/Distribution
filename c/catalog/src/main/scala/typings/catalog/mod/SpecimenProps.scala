@@ -25,7 +25,8 @@ object SpecimenProps {
     __obj.asInstanceOf[SpecimenProps]
   }
   
-  extension [Self <: SpecimenProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecimenProps] (val x: Self) extends AnyVal {
     
     inline def setRawBody(value: String): Self = StObject.set(x, "rawBody", value.asInstanceOf[js.Any])
     

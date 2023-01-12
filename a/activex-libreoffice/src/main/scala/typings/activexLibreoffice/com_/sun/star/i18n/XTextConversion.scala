@@ -80,7 +80,8 @@ object XTextConversion {
     __obj.asInstanceOf[XTextConversion]
   }
   
-  extension [Self <: XTextConversion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextConversion] (val x: Self) extends AnyVal {
     
     inline def setGetConversion(value: (String, Double, Double, Locale, Double, Double) => String): Self = StObject.set(x, "getConversion", js.Any.fromFunction6(value))
     

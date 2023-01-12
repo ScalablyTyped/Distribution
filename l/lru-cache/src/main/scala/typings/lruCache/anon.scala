@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[MaxEntrySize[K, V]]
     }
     
-    extension [Self <: MaxEntrySize[?, ?], K, V](x: Self & (MaxEntrySize[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxEntrySize[?, ?], K, V] (val x: Self & (MaxEntrySize[K, V])) extends AnyVal {
       
       inline def setMaxEntrySize(value: Double): Self = StObject.set(x, "maxEntrySize", value.asInstanceOf[js.Any])
       

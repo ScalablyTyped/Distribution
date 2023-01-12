@@ -28,7 +28,8 @@ object ASPxClientCalendarCustomDisabledDateEventArgs {
     __obj.asInstanceOf[ASPxClientCalendarCustomDisabledDateEventArgs]
   }
   
-  extension [Self <: ASPxClientCalendarCustomDisabledDateEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCalendarCustomDisabledDateEventArgs] (val x: Self) extends AnyVal {
     
     inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

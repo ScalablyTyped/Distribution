@@ -19,7 +19,8 @@ object PendingChangeKeyInitiallyComplete {
     __obj.asInstanceOf[PendingChangeKeyInitiallyComplete]
   }
   
-  extension [Self <: PendingChangeKeyInitiallyComplete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PendingChangeKeyInitiallyComplete] (val x: Self) extends AnyVal {
     
     inline def setChangeKey(value: IChangeKey): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
   }

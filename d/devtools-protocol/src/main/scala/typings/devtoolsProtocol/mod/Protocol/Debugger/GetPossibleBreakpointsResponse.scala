@@ -18,7 +18,8 @@ object GetPossibleBreakpointsResponse {
     __obj.asInstanceOf[GetPossibleBreakpointsResponse]
   }
   
-  extension [Self <: GetPossibleBreakpointsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPossibleBreakpointsResponse] (val x: Self) extends AnyVal {
     
     inline def setLocations(value: js.Array[BreakLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     

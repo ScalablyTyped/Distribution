@@ -18,7 +18,8 @@ object TargetDestination {
     __obj.asInstanceOf[TargetDestination]
   }
   
-  extension [Self <: TargetDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetDestination] (val x: Self) extends AnyVal {
     
     inline def setTimestreamDestination(value: TimestreamDestination): Self = StObject.set(x, "TimestreamDestination", value.asInstanceOf[js.Any])
     

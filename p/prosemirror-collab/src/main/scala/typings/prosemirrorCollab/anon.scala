@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[ClientID]
     }
     
-    extension [Self <: ClientID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientID] (val x: Self) extends AnyVal {
       
       inline def setClientID(value: Double | String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object anon {
       __obj.asInstanceOf[MapSelectionBackward]
     }
     
-    extension [Self <: MapSelectionBackward](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapSelectionBackward] (val x: Self) extends AnyVal {
       
       inline def setMapSelectionBackward(value: Boolean): Self = StObject.set(x, "mapSelectionBackward", value.asInstanceOf[js.Any])
       

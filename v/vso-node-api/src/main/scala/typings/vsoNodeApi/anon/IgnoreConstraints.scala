@@ -32,7 +32,8 @@ object IgnoreConstraints {
     __obj.asInstanceOf[IgnoreConstraints]
   }
   
-  extension [Self <: IgnoreConstraints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnoreConstraints] (val x: Self) extends AnyVal {
     
     inline def setIgnoreConstraints(value: scala.Double): Self = StObject.set(x, "ignoreConstraints", value.asInstanceOf[js.Any])
     

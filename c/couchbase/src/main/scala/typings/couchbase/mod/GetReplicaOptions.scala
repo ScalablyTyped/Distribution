@@ -18,7 +18,8 @@ object GetReplicaOptions {
     __obj.asInstanceOf[GetReplicaOptions]
   }
   
-  extension [Self <: GetReplicaOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetReplicaOptions] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

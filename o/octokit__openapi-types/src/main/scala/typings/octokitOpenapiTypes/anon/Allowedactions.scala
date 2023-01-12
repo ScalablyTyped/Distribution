@@ -21,7 +21,8 @@ object Allowedactions {
     __obj.asInstanceOf[Allowedactions]
   }
   
-  extension [Self <: Allowedactions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Allowedactions] (val x: Self) extends AnyVal {
     
     inline def setAllowed_actions(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['allowed-actions'] */ js.Any

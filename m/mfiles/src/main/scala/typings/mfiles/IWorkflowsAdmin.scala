@@ -26,7 +26,8 @@ object IWorkflowsAdmin {
     __obj.asInstanceOf[IWorkflowsAdmin]
   }
   
-  extension [Self <: IWorkflowsAdmin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWorkflowsAdmin] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, IWorkflowAdmin) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

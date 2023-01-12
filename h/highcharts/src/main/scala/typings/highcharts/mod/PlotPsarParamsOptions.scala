@@ -51,7 +51,8 @@ object PlotPsarParamsOptions {
     __obj.asInstanceOf[PlotPsarParamsOptions]
   }
   
-  extension [Self <: PlotPsarParamsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPsarParamsOptions] (val x: Self) extends AnyVal {
     
     inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
     

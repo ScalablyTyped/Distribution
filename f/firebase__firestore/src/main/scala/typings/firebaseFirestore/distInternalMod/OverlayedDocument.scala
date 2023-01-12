@@ -25,7 +25,8 @@ object OverlayedDocument {
     __obj.asInstanceOf[OverlayedDocument]
   }
   
-  extension [Self <: OverlayedDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverlayedDocument] (val x: Self) extends AnyVal {
     
     inline def setMutatedFields(value: FieldMask): Self = StObject.set(x, "mutatedFields", value.asInstanceOf[js.Any])
     

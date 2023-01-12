@@ -42,7 +42,8 @@ object NodeGroupNode {
     __obj.asInstanceOf[NodeGroupNode]
   }
   
-  extension [Self <: NodeGroupNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeGroupNode] (val x: Self) extends AnyVal {
     
     inline def setAccelerators(value: js.Array[AcceleratorConfig]): Self = StObject.set(x, "accelerators", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ReturnTypePushNodesByBackendIdsToFrontendResponse {
     __obj.asInstanceOf[ReturnTypePushNodesByBackendIdsToFrontendResponse]
   }
   
-  extension [Self <: ReturnTypePushNodesByBackendIdsToFrontendResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypePushNodesByBackendIdsToFrontendResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[PushNodesByBackendIdsToFrontendRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

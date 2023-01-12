@@ -67,7 +67,8 @@ object LiveClientHandshake {
     __obj.asInstanceOf[LiveClientHandshake]
   }
   
-  extension [Self <: LiveClientHandshake](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveClientHandshake] (val x: Self) extends AnyVal {
     
     inline def setLiveClientHandshake(
       value: Instantiable3[

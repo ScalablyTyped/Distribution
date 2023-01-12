@@ -179,7 +179,8 @@ object FollowedItem {
     __obj.asInstanceOf[FollowedItem]
   }
   
-  extension [Self <: FollowedItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FollowedItem] (val x: Self) extends AnyVal {
     
     inline def setGet_data(value: () => StringDictionary[Any]): Self = StObject.set(x, "get_data", js.Any.fromFunction0(value))
     

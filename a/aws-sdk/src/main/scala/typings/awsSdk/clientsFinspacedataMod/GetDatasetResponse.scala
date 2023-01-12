@@ -63,7 +63,8 @@ object GetDatasetResponse {
     __obj.asInstanceOf[GetDatasetResponse]
   }
   
-  extension [Self <: GetDatasetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDatasetResponse] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: AliasString): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

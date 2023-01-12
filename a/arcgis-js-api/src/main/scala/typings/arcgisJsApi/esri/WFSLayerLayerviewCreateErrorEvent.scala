@@ -17,7 +17,8 @@ object WFSLayerLayerviewCreateErrorEvent {
     __obj.asInstanceOf[WFSLayerLayerviewCreateErrorEvent]
   }
   
-  extension [Self <: WFSLayerLayerviewCreateErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WFSLayerLayerviewCreateErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ExportedEnvironmentVariable {
     __obj.asInstanceOf[ExportedEnvironmentVariable]
   }
   
-  extension [Self <: ExportedEnvironmentVariable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportedEnvironmentVariable] (val x: Self) extends AnyVal {
     
     inline def setName(value: NonEmptyString): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

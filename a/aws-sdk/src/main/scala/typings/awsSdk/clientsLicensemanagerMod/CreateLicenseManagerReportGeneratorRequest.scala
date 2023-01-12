@@ -54,7 +54,8 @@ object CreateLicenseManagerReportGeneratorRequest {
     __obj.asInstanceOf[CreateLicenseManagerReportGeneratorRequest]
   }
   
-  extension [Self <: CreateLicenseManagerReportGeneratorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLicenseManagerReportGeneratorRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientRequestToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ManagedAppPolicyDeploymentSummaryPerApp {
     __obj.asInstanceOf[ManagedAppPolicyDeploymentSummaryPerApp]
   }
   
-  extension [Self <: ManagedAppPolicyDeploymentSummaryPerApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedAppPolicyDeploymentSummaryPerApp] (val x: Self) extends AnyVal {
     
     inline def setConfigurationAppliedUserCount(value: Double): Self = StObject.set(x, "configurationAppliedUserCount", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object ColorConverter {
       __obj.asInstanceOf[ConverterOptions]
     }
     
-    extension [Self <: ConverterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConverterOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: rgb | hsl | hsv | hex | hex3): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

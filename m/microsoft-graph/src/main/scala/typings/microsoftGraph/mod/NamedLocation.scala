@@ -30,7 +30,8 @@ object NamedLocation {
     __obj.asInstanceOf[NamedLocation]
   }
   
-  extension [Self <: NamedLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamedLocation] (val x: Self) extends AnyVal {
     
     inline def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     

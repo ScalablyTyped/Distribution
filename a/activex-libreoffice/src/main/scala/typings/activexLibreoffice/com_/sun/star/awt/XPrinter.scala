@@ -80,7 +80,8 @@ object XPrinter {
     __obj.asInstanceOf[XPrinter]
   }
   
-  extension [Self <: XPrinter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPrinter] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     

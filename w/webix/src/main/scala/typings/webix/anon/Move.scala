@@ -26,7 +26,8 @@ object Move {
     __obj.asInstanceOf[Move]
   }
   
-  extension [Self <: Move](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Move] (val x: Self) extends AnyVal {
     
     inline def setContext(value: Event => EnvContext): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
     

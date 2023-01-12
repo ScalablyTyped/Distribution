@@ -28,7 +28,8 @@ object RegisterSlackWorkspaceForOrganizationResult {
     __obj.asInstanceOf[RegisterSlackWorkspaceForOrganizationResult]
   }
   
-  extension [Self <: RegisterSlackWorkspaceForOrganizationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterSlackWorkspaceForOrganizationResult] (val x: Self) extends AnyVal {
     
     inline def setAccountType(value: AccountType): Self = StObject.set(x, "accountType", value.asInstanceOf[js.Any])
     

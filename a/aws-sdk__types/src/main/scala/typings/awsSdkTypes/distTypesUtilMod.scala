@@ -42,7 +42,8 @@ object distTypesUtilMod {
       __obj.asInstanceOf[RegionInfo]
     }
     
-    extension [Self <: RegionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegionInfo] (val x: Self) extends AnyVal {
       
       inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object distTypesUtilMod {
       __obj.asInstanceOf[RegionInfoProviderOptions]
     }
     
-    extension [Self <: RegionInfoProviderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegionInfoProviderOptions] (val x: Self) extends AnyVal {
       
       inline def setUseDualstackEndpoint(value: Boolean): Self = StObject.set(x, "useDualstackEndpoint", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,8 @@ object distTypesUtilMod {
       __obj.asInstanceOf[RetryStrategy]
     }
     
-    extension [Self <: RetryStrategy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryStrategy] (val x: Self) extends AnyVal {
       
       inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       

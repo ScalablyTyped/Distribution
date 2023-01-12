@@ -67,7 +67,8 @@ object PolygonBatcher {
     __obj.asInstanceOf[PolygonBatcher]
   }
   
-  extension [Self <: PolygonBatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolygonBatcher] (val x: Self) extends AnyVal {
     
     inline def setBegin(value: Shader => Unit): Self = StObject.set(x, "begin", js.Any.fromFunction1(value))
     

@@ -23,7 +23,8 @@ object NielsenConfiguration {
     __obj.asInstanceOf[NielsenConfiguration]
   }
   
-  extension [Self <: NielsenConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NielsenConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDistributorId(value: string): Self = StObject.set(x, "DistributorId", value.asInstanceOf[js.Any])
     

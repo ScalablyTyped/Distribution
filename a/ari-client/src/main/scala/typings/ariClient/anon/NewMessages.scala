@@ -19,7 +19,8 @@ object NewMessages {
     __obj.asInstanceOf[NewMessages]
   }
   
-  extension [Self <: NewMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewMessages] (val x: Self) extends AnyVal {
     
     inline def setMailboxName(value: String): Self = StObject.set(x, "mailboxName", value.asInstanceOf[js.Any])
     

@@ -165,7 +165,8 @@ object BuildingSceneLayerPropert {
     __obj.asInstanceOf[BuildingSceneLayerPropert]
   }
   
-  extension [Self <: BuildingSceneLayerPropert](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildingSceneLayerPropert] (val x: Self) extends AnyVal {
     
     inline def setActiveFilterId(value: String): Self = StObject.set(x, "activeFilterId", value.asInstanceOf[js.Any])
     

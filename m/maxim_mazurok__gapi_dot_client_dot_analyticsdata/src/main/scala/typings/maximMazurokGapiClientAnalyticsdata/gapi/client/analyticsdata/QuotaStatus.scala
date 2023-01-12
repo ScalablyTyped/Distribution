@@ -19,7 +19,8 @@ object QuotaStatus {
     __obj.asInstanceOf[QuotaStatus]
   }
   
-  extension [Self <: QuotaStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuotaStatus] (val x: Self) extends AnyVal {
     
     inline def setConsumed(value: Double): Self = StObject.set(x, "consumed", value.asInstanceOf[js.Any])
     

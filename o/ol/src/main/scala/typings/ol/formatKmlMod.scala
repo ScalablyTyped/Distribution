@@ -48,7 +48,8 @@ object formatKmlMod {
       __obj.asInstanceOf[GxTrackObject]
     }
     
-    extension [Self <: GxTrackObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GxTrackObject] (val x: Self) extends AnyVal {
       
       inline def setFlatCoordinates(value: js.Array[Double]): Self = StObject.set(x, "flatCoordinates", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object formatKmlMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
@@ -172,7 +174,8 @@ object formatKmlMod {
       __obj.asInstanceOf[Vec2]
     }
     
-    extension [Self <: Vec2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vec2] (val x: Self) extends AnyVal {
       
       inline def setOrigin(value: IconOrigin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       

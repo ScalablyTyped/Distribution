@@ -27,7 +27,8 @@ object libSrcParserGrammarMod extends Shortcut {
       __obj.asInstanceOf[Grammar]
     }
     
-    extension [Self <: Grammar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Grammar] (val x: Self) extends AnyVal {
       
       inline def setLexer(value: NearleyLexer): Self = StObject.set(x, "Lexer", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object libSrcParserGrammarMod extends Shortcut {
       __obj.asInstanceOf[NearleyLexer]
     }
     
-    extension [Self <: NearleyLexer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NearleyLexer] (val x: Self) extends AnyVal {
       
       inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
@@ -99,7 +101,8 @@ object libSrcParserGrammarMod extends Shortcut {
       __obj.asInstanceOf[NearleyRule]
     }
     
-    extension [Self <: NearleyRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NearleyRule] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -135,7 +138,8 @@ object libSrcParserGrammarMod extends Shortcut {
       __obj.asInstanceOf[NearleyToken]
     }
     
-    extension [Self <: NearleyToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NearleyToken] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

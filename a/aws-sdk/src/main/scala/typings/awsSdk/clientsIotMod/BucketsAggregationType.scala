@@ -18,7 +18,8 @@ object BucketsAggregationType {
     __obj.asInstanceOf[BucketsAggregationType]
   }
   
-  extension [Self <: BucketsAggregationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketsAggregationType] (val x: Self) extends AnyVal {
     
     inline def setTermsAggregation(value: TermsAggregation): Self = StObject.set(x, "termsAggregation", value.asInstanceOf[js.Any])
     

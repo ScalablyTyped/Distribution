@@ -31,7 +31,8 @@ object TypeofTopologyType {
     __obj.asInstanceOf[TypeofTopologyType]
   }
   
-  extension [Self <: TypeofTopologyType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTopologyType] (val x: Self) extends AnyVal {
     
     inline def setLoadBalanced(value: LoadBalanced): Self = StObject.set(x, "LoadBalanced", value.asInstanceOf[js.Any])
     

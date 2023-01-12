@@ -33,7 +33,8 @@ object GetParametersForImportResponse {
     __obj.asInstanceOf[GetParametersForImportResponse]
   }
   
-  extension [Self <: GetParametersForImportResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersForImportResponse] (val x: Self) extends AnyVal {
     
     inline def setImportToken(value: CiphertextType): Self = StObject.set(x, "ImportToken", value.asInstanceOf[js.Any])
     

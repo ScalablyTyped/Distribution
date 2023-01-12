@@ -23,7 +23,8 @@ object InstanceGroupManagerAutoHealingPolicy {
     __obj.asInstanceOf[InstanceGroupManagerAutoHealingPolicy]
   }
   
-  extension [Self <: InstanceGroupManagerAutoHealingPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceGroupManagerAutoHealingPolicy] (val x: Self) extends AnyVal {
     
     inline def setHealthCheck(value: String): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
     

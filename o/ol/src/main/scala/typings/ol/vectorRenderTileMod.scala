@@ -56,7 +56,8 @@ object vectorRenderTileMod {
       __obj.asInstanceOf[ReplayState]
     }
     
-    extension [Self <: ReplayState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplayState] (val x: Self) extends AnyVal {
       
       inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       

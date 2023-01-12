@@ -17,7 +17,8 @@ object DrawerMini {
     __obj.asInstanceOf[DrawerMini]
   }
   
-  extension [Self <: DrawerMini](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawerMini] (val x: Self) extends AnyVal {
     
     inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     

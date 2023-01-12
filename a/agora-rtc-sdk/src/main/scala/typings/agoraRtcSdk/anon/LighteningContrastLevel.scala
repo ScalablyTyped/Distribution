@@ -39,7 +39,8 @@ object LighteningContrastLevel {
     __obj.asInstanceOf[LighteningContrastLevel]
   }
   
-  extension [Self <: LighteningContrastLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LighteningContrastLevel] (val x: Self) extends AnyVal {
     
     inline def setLighteningContrastLevel(value: Double): Self = StObject.set(x, "lighteningContrastLevel", value.asInstanceOf[js.Any])
     

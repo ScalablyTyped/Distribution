@@ -33,7 +33,8 @@ object PlotCandlestickOnPointOptions {
     __obj.asInstanceOf[PlotCandlestickOnPointOptions]
   }
   
-  extension [Self <: PlotCandlestickOnPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotCandlestickOnPointOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectorOptions(value: PlotCandlestickOnPointConnectorOptions | SVGAttributes): Self = StObject.set(x, "connectorOptions", value.asInstanceOf[js.Any])
     

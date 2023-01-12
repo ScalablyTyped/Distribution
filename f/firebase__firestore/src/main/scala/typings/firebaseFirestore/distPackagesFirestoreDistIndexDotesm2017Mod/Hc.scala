@@ -50,7 +50,8 @@ object Hc {
     __obj.asInstanceOf[Hc]
   }
   
-  extension [Self <: Hc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hc] (val x: Self) extends AnyVal {
     
     inline def setCacheSizeBytes(value: Any): Self = StObject.set(x, "cacheSizeBytes", value.asInstanceOf[js.Any])
     

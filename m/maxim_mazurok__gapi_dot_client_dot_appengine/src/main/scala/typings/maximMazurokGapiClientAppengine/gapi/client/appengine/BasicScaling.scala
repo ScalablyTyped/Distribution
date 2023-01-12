@@ -19,7 +19,8 @@ object BasicScaling {
     __obj.asInstanceOf[BasicScaling]
   }
   
-  extension [Self <: BasicScaling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicScaling] (val x: Self) extends AnyVal {
     
     inline def setIdleTimeout(value: String): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
     

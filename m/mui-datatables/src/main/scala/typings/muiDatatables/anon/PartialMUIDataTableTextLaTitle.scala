@@ -18,7 +18,8 @@ object PartialMUIDataTableTextLaTitle {
     __obj.asInstanceOf[PartialMUIDataTableTextLaTitle]
   }
   
-  extension [Self <: PartialMUIDataTableTextLaTitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMUIDataTableTextLaTitle] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

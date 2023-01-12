@@ -105,7 +105,8 @@ object SharedGestureStateeventunEventHoveringLockedMetaKeyMovingPinchingPressedS
     __obj.asInstanceOf[SharedGestureStateeventunEventHoveringLockedMetaKeyMovingPinchingPressedScrollingShiftKeyTouchesWheeling]
   }
   
-  extension [Self <: SharedGestureStateeventunEventHoveringLockedMetaKeyMovingPinchingPressedScrollingShiftKeyTouchesWheeling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedGestureStateeventunEventHoveringLockedMetaKeyMovingPinchingPressedScrollingShiftKeyTouchesWheeling] (val x: Self) extends AnyVal {
     
     inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
     

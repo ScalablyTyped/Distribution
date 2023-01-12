@@ -31,7 +31,8 @@ object INxContainerEntry {
     __obj.asInstanceOf[INxContainerEntry[T]]
   }
   
-  extension [Self <: INxContainerEntry[?], T](x: Self & INxContainerEntry[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxContainerEntry[?], T] (val x: Self & INxContainerEntry[T]) extends AnyVal {
     
     inline def setQData(value: T): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
     

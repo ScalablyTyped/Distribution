@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[TLRE]
     }
     
-    extension [Self <: TLRE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TLRE] (val x: Self) extends AnyVal {
       
       inline def setMatch(value: (js.RegExp, String) => js.Promise[RegExpMatchArray | Null]): Self = StObject.set(x, "match", js.Any.fromFunction2(value))
     }

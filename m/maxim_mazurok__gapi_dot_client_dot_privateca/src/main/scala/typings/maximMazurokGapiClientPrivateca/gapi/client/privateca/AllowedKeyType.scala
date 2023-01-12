@@ -19,7 +19,8 @@ object AllowedKeyType {
     __obj.asInstanceOf[AllowedKeyType]
   }
   
-  extension [Self <: AllowedKeyType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowedKeyType] (val x: Self) extends AnyVal {
     
     inline def setEllipticCurve(value: EcKeyType): Self = StObject.set(x, "ellipticCurve", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object InsertOneResult {
     __obj.asInstanceOf[InsertOneResult[TSchema]]
   }
   
-  extension [Self <: InsertOneResult[?], TSchema](x: Self & InsertOneResult[TSchema]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertOneResult[?], TSchema] (val x: Self & InsertOneResult[TSchema]) extends AnyVal {
     
     inline def setAcknowledged(value: Boolean): Self = StObject.set(x, "acknowledged", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object Dictkey {
     __obj.asInstanceOf[Dictkey]
   }
   
-  extension [Self <: Dictkey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: ValueMatch): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
   }

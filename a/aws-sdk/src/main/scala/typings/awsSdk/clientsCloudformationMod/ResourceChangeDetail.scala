@@ -33,7 +33,8 @@ object ResourceChangeDetail {
     __obj.asInstanceOf[ResourceChangeDetail]
   }
   
-  extension [Self <: ResourceChangeDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceChangeDetail] (val x: Self) extends AnyVal {
     
     inline def setCausingEntity(value: CausingEntity): Self = StObject.set(x, "CausingEntity", value.asInstanceOf[js.Any])
     

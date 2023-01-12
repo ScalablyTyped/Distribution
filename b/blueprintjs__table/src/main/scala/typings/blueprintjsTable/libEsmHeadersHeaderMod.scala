@@ -161,7 +161,8 @@ object libEsmHeadersHeaderMod {
       __obj.asInstanceOf[IHeaderState]
     }
     
-    extension [Self <: IHeaderState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHeaderState] (val x: Self) extends AnyVal {
       
       inline def setHasValidSelection(value: Boolean): Self = StObject.set(x, "hasValidSelection", value.asInstanceOf[js.Any])
     }

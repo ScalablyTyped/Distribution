@@ -16,7 +16,8 @@ object FullscreenOptions {
     __obj.asInstanceOf[FullscreenOptions]
   }
   
-  extension [Self <: FullscreenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullscreenOptions] (val x: Self) extends AnyVal {
     
     inline def setNavigationUI(value: FullscreenNavigationUI): Self = StObject.set(x, "navigationUI", value.asInstanceOf[js.Any])
     

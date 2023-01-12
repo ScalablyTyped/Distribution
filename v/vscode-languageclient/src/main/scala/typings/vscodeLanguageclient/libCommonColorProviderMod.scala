@@ -64,7 +64,8 @@ object libCommonColorProviderMod {
       __obj.asInstanceOf[ColorProviderMiddleware]
     }
     
-    extension [Self <: ColorProviderMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorProviderMiddleware] (val x: Self) extends AnyVal {
       
       inline def setProvideColorPresentations(
         value: js.ThisFunction4[

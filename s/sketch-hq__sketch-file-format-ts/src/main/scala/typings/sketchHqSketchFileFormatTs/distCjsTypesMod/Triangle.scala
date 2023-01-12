@@ -100,7 +100,8 @@ object Triangle {
     __obj.asInstanceOf[Triangle]
   }
   
-  extension [Self <: Triangle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Triangle] (val x: Self) extends AnyVal {
     
     inline def setBooleanOperation(value: BooleanOperation): Self = StObject.set(x, "booleanOperation", value.asInstanceOf[js.Any])
     

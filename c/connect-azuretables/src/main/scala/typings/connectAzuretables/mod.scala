@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[AzureTableStoreFactory]
     }
     
-    extension [Self <: AzureTableStoreFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AzureTableStoreFactory] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: AzureTableStoreOptions => AzureTableStore): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     }
@@ -88,7 +89,8 @@ object mod {
       __obj.asInstanceOf[AzureTableStoreOptions]
     }
     
-    extension [Self <: AzureTableStoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AzureTableStoreOptions] (val x: Self) extends AnyVal {
       
       inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       

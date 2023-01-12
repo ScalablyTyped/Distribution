@@ -78,7 +78,8 @@ object PickImplonEmbedPartialPic {
     __obj.asInstanceOf[PickImplonEmbedPartialPic]
   }
   
-  extension [Self <: PickImplonEmbedPartialPic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplonEmbedPartialPic] (val x: Self) extends AnyVal {
     
     inline def setAutoplay(value: auto | Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     

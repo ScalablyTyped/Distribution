@@ -23,7 +23,8 @@ object BatchWriteRequest {
     __obj.asInstanceOf[BatchWriteRequest]
   }
   
-  extension [Self <: BatchWriteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchWriteRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     

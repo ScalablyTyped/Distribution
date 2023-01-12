@@ -105,7 +105,8 @@ object KmlLatLonBox {
     __obj.asInstanceOf[KmlLatLonBox]
   }
   
-  extension [Self <: KmlLatLonBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlLatLonBox] (val x: Self) extends AnyVal {
     
     inline def setGetEast(value: () => Double): Self = StObject.set(x, "getEast", js.Any.fromFunction0(value))
     

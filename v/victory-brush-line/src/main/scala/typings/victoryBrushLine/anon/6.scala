@@ -15,7 +15,8 @@ object `6` {
     __obj.asInstanceOf[`6`]
   }
   
-  extension [Self <: `6`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `6`] (val x: Self) extends AnyVal {
     
     inline def setMutation(value: () => ActiveBrushesActiveHandle): Self = StObject.set(x, "mutation", js.Any.fromFunction0(value))
   }

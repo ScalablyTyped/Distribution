@@ -38,7 +38,8 @@ object RouterRegistryRadix {
     __obj.asInstanceOf[RouterRegistryRadix]
   }
   
-  extension [Self <: RouterRegistryRadix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterRegistryRadix] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: Route => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

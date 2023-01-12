@@ -53,7 +53,8 @@ object announceMod {
       __obj.asInstanceOf[AnnouncerMessageOptions]
     }
     
-    extension [Self <: AnnouncerMessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnouncerMessageOptions] (val x: Self) extends AnyVal {
       
       inline def setOwnerDocument(value: Document): Self = StObject.set(x, "ownerDocument", value.asInstanceOf[js.Any])
       

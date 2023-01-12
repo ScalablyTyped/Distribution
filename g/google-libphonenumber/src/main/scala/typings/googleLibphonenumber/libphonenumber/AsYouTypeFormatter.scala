@@ -17,7 +17,8 @@ object AsYouTypeFormatter {
     __obj.asInstanceOf[AsYouTypeFormatter]
   }
   
-  extension [Self <: AsYouTypeFormatter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsYouTypeFormatter] (val x: Self) extends AnyVal {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

@@ -37,7 +37,8 @@ object ChartOptions {
     __obj.asInstanceOf[ChartOptions]
   }
   
-  extension [Self <: ChartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartOptions] (val x: Self) extends AnyVal {
     
     inline def setChartOptions(value: BarControllerChartOptions): Self = StObject.set(x, "chartOptions", value.asInstanceOf[js.Any])
     

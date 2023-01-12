@@ -19,7 +19,8 @@ object LUT {
     __obj.asInstanceOf[LUT]
   }
   
-  extension [Self <: LUT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LUT] (val x: Self) extends AnyVal {
     
     inline def setFirstValueMapped(value: Double): Self = StObject.set(x, "firstValueMapped", value.asInstanceOf[js.Any])
     

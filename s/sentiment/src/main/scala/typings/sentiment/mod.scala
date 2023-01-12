@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[AnalysisOptions]
     }
     
-    extension [Self <: AnalysisOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalysisOptions] (val x: Self) extends AnyVal {
       
       inline def setExtras(value: StringDictionary[Double]): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object mod {
       __obj.asInstanceOf[AnalysisResult]
     }
     
-    extension [Self <: AnalysisResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalysisResult] (val x: Self) extends AnyVal {
       
       inline def setCalculation(value: js.Array[StringDictionary[Double]]): Self = StObject.set(x, "calculation", value.asInstanceOf[js.Any])
       
@@ -113,7 +115,8 @@ object mod {
       __obj.asInstanceOf[LanguageModule]
     }
     
-    extension [Self <: LanguageModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LanguageModule] (val x: Self) extends AnyVal {
       
       inline def setLabels(value: StringDictionary[Double]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       

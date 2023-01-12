@@ -23,7 +23,8 @@ object Cur {
     __obj.asInstanceOf[Cur]
   }
   
-  extension [Self <: Cur](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cur] (val x: Self) extends AnyVal {
     
     inline def setCur(value: Client): Self = StObject.set(x, "cur", value.asInstanceOf[js.Any])
     

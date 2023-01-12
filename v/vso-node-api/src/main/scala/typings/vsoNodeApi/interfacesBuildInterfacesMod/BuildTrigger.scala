@@ -18,7 +18,8 @@ object BuildTrigger {
     __obj.asInstanceOf[BuildTrigger]
   }
   
-  extension [Self <: BuildTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildTrigger] (val x: Self) extends AnyVal {
     
     inline def setTriggerType(value: DefinitionTriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
   }

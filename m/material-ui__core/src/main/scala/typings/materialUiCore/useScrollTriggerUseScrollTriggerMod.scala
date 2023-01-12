@@ -30,7 +30,8 @@ object useScrollTriggerUseScrollTriggerMod {
       __obj.asInstanceOf[UseScrollTriggerOptions]
     }
     
-    extension [Self <: UseScrollTriggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseScrollTriggerOptions] (val x: Self) extends AnyVal {
       
       inline def setDisableHysteresis(value: Boolean): Self = StObject.set(x, "disableHysteresis", value.asInstanceOf[js.Any])
       

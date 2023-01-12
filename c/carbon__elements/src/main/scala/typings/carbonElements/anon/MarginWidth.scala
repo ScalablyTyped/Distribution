@@ -21,7 +21,8 @@ object MarginWidth {
     __obj.asInstanceOf[MarginWidth]
   }
   
-  extension [Self <: MarginWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarginWidth] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: typings.carbonElements.carbonElementsInts.`16`): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

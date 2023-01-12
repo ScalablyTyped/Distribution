@@ -29,7 +29,8 @@ object BuilderProgramHost {
     __obj.asInstanceOf[BuilderProgramHost]
   }
   
-  extension [Self <: BuilderProgramHost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuilderProgramHost] (val x: Self) extends AnyVal {
     
     inline def setCreateHash(value: /* data */ java.lang.String => java.lang.String): Self = StObject.set(x, "createHash", js.Any.fromFunction1(value))
     

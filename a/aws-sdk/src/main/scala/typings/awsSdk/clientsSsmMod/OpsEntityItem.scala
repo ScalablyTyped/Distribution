@@ -23,7 +23,8 @@ object OpsEntityItem {
     __obj.asInstanceOf[OpsEntityItem]
   }
   
-  extension [Self <: OpsEntityItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpsEntityItem] (val x: Self) extends AnyVal {
     
     inline def setCaptureTime(value: OpsEntityItemCaptureTime): Self = StObject.set(x, "CaptureTime", value.asInstanceOf[js.Any])
     

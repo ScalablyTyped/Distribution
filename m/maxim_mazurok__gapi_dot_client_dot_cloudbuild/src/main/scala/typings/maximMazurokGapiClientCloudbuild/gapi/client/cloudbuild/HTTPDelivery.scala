@@ -16,7 +16,8 @@ object HTTPDelivery {
     __obj.asInstanceOf[HTTPDelivery]
   }
   
-  extension [Self <: HTTPDelivery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTTPDelivery] (val x: Self) extends AnyVal {
     
     inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     

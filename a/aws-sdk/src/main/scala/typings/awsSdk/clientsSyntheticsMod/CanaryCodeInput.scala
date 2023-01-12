@@ -38,7 +38,8 @@ object CanaryCodeInput {
     __obj.asInstanceOf[CanaryCodeInput]
   }
   
-  extension [Self <: CanaryCodeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanaryCodeInput] (val x: Self) extends AnyVal {
     
     inline def setHandler(value: CodeHandler): Self = StObject.set(x, "Handler", value.asInstanceOf[js.Any])
     

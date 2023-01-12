@@ -37,7 +37,8 @@ object dom {
       __obj.asInstanceOf[bookmark]
     }
     
-    extension [Self <: bookmark](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: bookmark] (val x: Self) extends AnyVal {
       
       inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object dom {
       __obj.asInstanceOf[bookmark2]
     }
     
-    extension [Self <: bookmark2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: bookmark2] (val x: Self) extends AnyVal {
       
       inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
@@ -600,7 +602,8 @@ object dom {
       __obj.asInstanceOf[nodeList]
     }
     
-    extension [Self <: nodeList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: nodeList] (val x: Self) extends AnyVal {
       
       inline def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
       
@@ -623,7 +626,8 @@ object dom {
       __obj.asInstanceOf[position]
     }
     
-    extension [Self <: position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: position] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -900,7 +904,8 @@ object dom {
       __obj.asInstanceOf[shrinkOptions]
     }
     
-    extension [Self <: shrinkOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: shrinkOptions] (val x: Self) extends AnyVal {
       
       inline def setShrinkOnBlockBoundary(value: Boolean): Self = StObject.set(x, "shrinkOnBlockBoundary", value.asInstanceOf[js.Any])
       
@@ -970,7 +975,8 @@ object dom {
       __obj.asInstanceOf[widthAndHeight]
     }
     
-    extension [Self <: widthAndHeight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: widthAndHeight] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

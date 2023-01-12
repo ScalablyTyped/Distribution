@@ -20,7 +20,8 @@ object TypeofRating {
     __obj.asInstanceOf[TypeofRating]
   }
   
-  extension [Self <: TypeofRating](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofRating] (val x: Self) extends AnyVal {
     
     inline def setFn(value: Rating): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

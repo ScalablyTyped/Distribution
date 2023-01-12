@@ -23,7 +23,8 @@ object Definition {
     __obj.asInstanceOf[Definition]
   }
   
-  extension [Self <: Definition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Definition] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: accordion): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

@@ -127,7 +127,8 @@ object libCommonUtilsAsyncMod {
       __obj.asInstanceOf[YieldOptions]
     }
     
-    extension [Self <: YieldOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YieldOptions] (val x: Self) extends AnyVal {
       
       inline def setYieldAfter(value: Double): Self = StObject.set(x, "yieldAfter", value.asInstanceOf[js.Any])
       

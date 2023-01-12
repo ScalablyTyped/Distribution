@@ -26,7 +26,8 @@ object BatchUpdateFindingsResponse {
     __obj.asInstanceOf[BatchUpdateFindingsResponse]
   }
   
-  extension [Self <: BatchUpdateFindingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdateFindingsResponse] (val x: Self) extends AnyVal {
     
     inline def setProcessedFindings(value: AwsSecurityFindingIdentifierList): Self = StObject.set(x, "ProcessedFindings", value.asInstanceOf[js.Any])
     

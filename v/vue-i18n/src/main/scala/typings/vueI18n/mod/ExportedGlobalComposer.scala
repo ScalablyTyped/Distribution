@@ -39,7 +39,8 @@ object ExportedGlobalComposer {
     __obj.asInstanceOf[ExportedGlobalComposer]
   }
   
-  extension [Self <: ExportedGlobalComposer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportedGlobalComposer] (val x: Self) extends AnyVal {
     
     inline def setAvailableLocales(value: js.Array[Locale]): Self = StObject.set(x, "availableLocales", value.asInstanceOf[js.Any])
     

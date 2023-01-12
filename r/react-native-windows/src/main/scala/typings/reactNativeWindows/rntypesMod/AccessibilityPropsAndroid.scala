@@ -41,7 +41,8 @@ object AccessibilityPropsAndroid {
     __obj.asInstanceOf[AccessibilityPropsAndroid]
   }
   
-  extension [Self <: AccessibilityPropsAndroid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessibilityPropsAndroid] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     

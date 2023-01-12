@@ -50,7 +50,8 @@ object TaskDefinitionEndpoint {
     __obj.asInstanceOf[TaskDefinitionEndpoint]
   }
   
-  extension [Self <: TaskDefinitionEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskDefinitionEndpoint] (val x: Self) extends AnyVal {
     
     inline def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     

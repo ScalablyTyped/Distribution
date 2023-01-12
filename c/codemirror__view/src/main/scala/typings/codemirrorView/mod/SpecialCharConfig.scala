@@ -50,7 +50,8 @@ object SpecialCharConfig {
     __obj.asInstanceOf[SpecialCharConfig]
   }
   
-  extension [Self <: SpecialCharConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecialCharConfig] (val x: Self) extends AnyVal {
     
     inline def setAddSpecialChars(value: js.RegExp): Self = StObject.set(x, "addSpecialChars", value.asInstanceOf[js.Any])
     

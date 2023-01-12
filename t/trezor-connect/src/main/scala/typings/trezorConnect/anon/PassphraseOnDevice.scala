@@ -19,7 +19,8 @@ object PassphraseOnDevice {
     __obj.asInstanceOf[PassphraseOnDevice]
   }
   
-  extension [Self <: PassphraseOnDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PassphraseOnDevice] (val x: Self) extends AnyVal {
     
     inline def setPassphraseOnDevice(value: Boolean): Self = StObject.set(x, "passphraseOnDevice", value.asInstanceOf[js.Any])
     

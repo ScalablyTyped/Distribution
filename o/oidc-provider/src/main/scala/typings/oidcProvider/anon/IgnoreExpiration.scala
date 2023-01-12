@@ -15,7 +15,8 @@ object IgnoreExpiration {
     __obj.asInstanceOf[IgnoreExpiration]
   }
   
-  extension [Self <: IgnoreExpiration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnoreExpiration] (val x: Self) extends AnyVal {
     
     inline def setIgnoreExpiration(value: Boolean): Self = StObject.set(x, "ignoreExpiration", value.asInstanceOf[js.Any])
     

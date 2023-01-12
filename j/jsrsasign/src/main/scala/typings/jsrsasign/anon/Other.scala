@@ -19,7 +19,8 @@ object Other {
     __obj.asInstanceOf[Other]
   }
   
-  extension [Self <: Other](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Other] (val x: Self) extends AnyVal {
     
     inline def setOther(value: ASN1HEXParseResult): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     

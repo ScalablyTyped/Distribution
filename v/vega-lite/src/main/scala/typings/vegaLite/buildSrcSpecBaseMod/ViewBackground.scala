@@ -25,7 +25,8 @@ object ViewBackground {
     __obj.asInstanceOf[ViewBackground[ES]]
   }
   
-  extension [Self <: ViewBackground[?], ES /* <: ExprRef | SignalRef */](x: Self & ViewBackground[ES]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewBackground[?], ES /* <: ExprRef | SignalRef */] (val x: Self & ViewBackground[ES]) extends AnyVal {
     
     inline def setStyle(value: String | js.Array[String]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

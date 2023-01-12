@@ -78,7 +78,8 @@ object EligibilityResponse {
     __obj.asInstanceOf[EligibilityResponse]
   }
   
-  extension [Self <: EligibilityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EligibilityResponse] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     

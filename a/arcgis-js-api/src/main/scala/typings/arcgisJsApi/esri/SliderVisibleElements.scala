@@ -27,7 +27,8 @@ object SliderVisibleElements {
     __obj.asInstanceOf[SliderVisibleElements]
   }
   
-  extension [Self <: SliderVisibleElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderVisibleElements] (val x: Self) extends AnyVal {
     
     inline def setLabels(value: Boolean): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     

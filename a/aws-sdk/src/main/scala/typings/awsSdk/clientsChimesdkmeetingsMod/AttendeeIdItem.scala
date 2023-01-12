@@ -18,7 +18,8 @@ object AttendeeIdItem {
     __obj.asInstanceOf[AttendeeIdItem]
   }
   
-  extension [Self <: AttendeeIdItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttendeeIdItem] (val x: Self) extends AnyVal {
     
     inline def setAttendeeId(value: GuidString): Self = StObject.set(x, "AttendeeId", value.asInstanceOf[js.Any])
   }

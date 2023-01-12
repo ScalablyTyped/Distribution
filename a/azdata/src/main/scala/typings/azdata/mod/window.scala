@@ -283,7 +283,8 @@ object window {
       __obj.asInstanceOf[DialogMessage]
     }
     
-    extension [Self <: DialogMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogMessage] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -378,7 +379,8 @@ object window {
       __obj.asInstanceOf[IDialogProperties]
     }
     
-    extension [Self <: IDialogProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDialogProperties] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -433,7 +435,8 @@ object window {
       __obj.asInstanceOf[ModelViewDashboard]
     }
     
-    extension [Self <: ModelViewDashboard](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelViewDashboard] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Thenable[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -680,7 +683,8 @@ object window {
       __obj.asInstanceOf[WizardPageChangeInfo]
     }
     
-    extension [Self <: WizardPageChangeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WizardPageChangeInfo] (val x: Self) extends AnyVal {
       
       inline def setLastPage(value: Double): Self = StObject.set(x, "lastPage", value.asInstanceOf[js.Any])
       

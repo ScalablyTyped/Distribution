@@ -55,7 +55,8 @@ object ASPxClientRichEditFloatingObjectMovedEventArgs {
     __obj.asInstanceOf[ASPxClientRichEditFloatingObjectMovedEventArgs]
   }
   
-  extension [Self <: ASPxClientRichEditFloatingObjectMovedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRichEditFloatingObjectMovedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setNewPosition(value: Double): Self = StObject.set(x, "newPosition", value.asInstanceOf[js.Any])
     

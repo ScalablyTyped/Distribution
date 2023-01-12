@@ -15,7 +15,8 @@ object NativeObjectWrapper {
     __obj.asInstanceOf[NativeObjectWrapper]
   }
   
-  extension [Self <: NativeObjectWrapper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeObjectWrapper] (val x: Self) extends AnyVal {
     
     inline def setObjectId(value: Any): Self = StObject.set(x, "ObjectId", value.asInstanceOf[js.Any])
   }

@@ -50,7 +50,8 @@ object libTextareaItemPropsTypeMod {
       __obj.asInstanceOf[TextAreaItemPropsType]
     }
     
-    extension [Self <: TextAreaItemPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextAreaItemPropsType] (val x: Self) extends AnyVal {
       
       inline def setAutoHeight(value: Boolean): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
       

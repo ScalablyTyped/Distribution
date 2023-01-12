@@ -34,7 +34,8 @@ object Error {
     __obj.asInstanceOf[Error]
   }
   
-  extension [Self <: Error](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
     
     inline def setDAODotError_typekey(value: Error): Self = StObject.set(x, "DAO.Error_typekey", value.asInstanceOf[js.Any])
     

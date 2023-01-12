@@ -44,7 +44,8 @@ object UnionOrIntersectionType {
     __obj.asInstanceOf[UnionOrIntersectionType]
   }
   
-  extension [Self <: UnionOrIntersectionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnionOrIntersectionType] (val x: Self) extends AnyVal {
     
     inline def setTypes(value: js.Array[Type]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     

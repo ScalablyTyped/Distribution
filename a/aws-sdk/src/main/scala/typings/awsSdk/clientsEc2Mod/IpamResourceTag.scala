@@ -23,7 +23,8 @@ object IpamResourceTag {
     __obj.asInstanceOf[IpamResourceTag]
   }
   
-  extension [Self <: IpamResourceTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpamResourceTag] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

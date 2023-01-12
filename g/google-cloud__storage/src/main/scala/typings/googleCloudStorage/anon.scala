@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Callback[T, U]]
     }
     
-    extension [Self <: Callback[?, ?], T, U](x: Self & (Callback[T, U])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Callback[?, ?], T, U] (val x: Self & (Callback[T, U])) extends AnyVal {
       
       inline def setCallback(value: U): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[ContentType]
     }
     
-    extension [Self <: ContentType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentType] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
@@ -70,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Max]
     }
     
-    extension [Self <: Max](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -97,7 +100,8 @@ object anon {
       __obj.asInstanceOf[OWNERROLE]
     }
     
-    extension [Self <: OWNERROLE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OWNERROLE] (val x: Self) extends AnyVal {
       
       inline def setOWNER_ROLE(value: String): Self = StObject.set(x, "OWNER_ROLE", value.asInstanceOf[js.Any])
       
@@ -132,7 +136,8 @@ object anon {
       __obj.asInstanceOf[PartialHashStreamValidato]
     }
     
-    extension [Self <: PartialHashStreamValidato](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialHashStreamValidato] (val x: Self) extends AnyVal {
       
       inline def setCrc32c(value: Boolean): Self = StObject.set(x, "crc32c", value.asInstanceOf[js.Any])
       
@@ -159,7 +164,8 @@ object anon {
       __obj.asInstanceOf[ReqOpts]
     }
     
-    extension [Self <: ReqOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReqOpts] (val x: Self) extends AnyVal {
       
       inline def setReqOpts(value: CoreOptions): Self = StObject.set(x, "reqOpts", value.asInstanceOf[js.Any])
       
@@ -178,7 +184,8 @@ object anon {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: GaxiosOptions => js.Promise[GaxiosResponse[Any]] | GaxiosPromise[Any]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     }
@@ -195,7 +202,8 @@ object anon {
       __obj.asInstanceOf[Scopes]
     }
     
-    extension [Self <: Scopes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scopes] (val x: Self) extends AnyVal {
       
       inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
@@ -219,7 +227,8 @@ object anon {
       __obj.asInstanceOf[StorageClass]
     }
     
-    extension [Self <: StorageClass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageClass] (val x: Self) extends AnyVal {
       
       inline def setStorageClass(value: String): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
       
@@ -263,7 +272,8 @@ object anon {
       __obj.asInstanceOf[UserAgent]
     }
     
-    extension [Self <: UserAgent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserAgent] (val x: Self) extends AnyVal {
       
       inline def `setUser-Agent`(value: String): Self = StObject.set(x, "User-Agent", value.asInstanceOf[js.Any])
       

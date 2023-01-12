@@ -18,7 +18,8 @@ object JsonLogicAnd {
     __obj.asInstanceOf[JsonLogicAnd[AddOps]]
   }
   
-  extension [Self <: JsonLogicAnd[?], AddOps /* <: AdditionalOperation */](x: Self & JsonLogicAnd[AddOps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicAnd[?], AddOps /* <: AdditionalOperation */] (val x: Self & JsonLogicAnd[AddOps]) extends AnyVal {
     
     inline def setAnd(value: js.Array[RulesLogic[AddOps]]): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
     

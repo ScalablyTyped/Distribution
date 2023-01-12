@@ -28,7 +28,8 @@ object DescribeSuggestersRequest {
     __obj.asInstanceOf[DescribeSuggestersRequest]
   }
   
-  extension [Self <: DescribeSuggestersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSuggestersRequest] (val x: Self) extends AnyVal {
     
     inline def setDeployed(value: Boolean): Self = StObject.set(x, "Deployed", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object Responses201ContentApplicationjsonMergeable {
     __obj.asInstanceOf[Responses201ContentApplicationjsonMergeable]
   }
   
-  extension [Self <: Responses201ContentApplicationjsonMergeable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responses201ContentApplicationjsonMergeable] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: `472`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

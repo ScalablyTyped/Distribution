@@ -68,7 +68,8 @@ object VBE {
     __obj.asInstanceOf[VBE]
   }
   
-  extension [Self <: VBE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VBE] (val x: Self) extends AnyVal {
     
     inline def setActiveCodePane(value: CodePane): Self = StObject.set(x, "ActiveCodePane", value.asInstanceOf[js.Any])
     

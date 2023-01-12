@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[SensorConfiguration]
     }
     
-    extension [Self <: SensorConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SensorConfiguration] (val x: Self) extends AnyVal {
       
       inline def setLoop(value: Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       

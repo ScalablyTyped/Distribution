@@ -43,7 +43,8 @@ object ListInferenceExecutionsRequest {
     __obj.asInstanceOf[ListInferenceExecutionsRequest]
   }
   
-  extension [Self <: ListInferenceExecutionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInferenceExecutionsRequest] (val x: Self) extends AnyVal {
     
     inline def setDataEndTimeBefore(value: js.Date): Self = StObject.set(x, "DataEndTimeBefore", value.asInstanceOf[js.Any])
     

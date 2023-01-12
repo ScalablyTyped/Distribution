@@ -88,7 +88,8 @@ object SVGLineElement {
     __obj.asInstanceOf[SVGLineElement]
   }
   
-  extension [Self <: SVGLineElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGLineElement] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: SVGAnimatedString): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

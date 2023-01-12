@@ -38,7 +38,8 @@ object ILookupFieldExpression {
     __obj.asInstanceOf[ILookupFieldExpression]
   }
   
-  extension [Self <: ILookupFieldExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILookupFieldExpression] (val x: Self) extends AnyVal {
     
     inline def setId(value: () => INumberFieldExpression): Self = StObject.set(x, "Id", js.Any.fromFunction0(value))
     

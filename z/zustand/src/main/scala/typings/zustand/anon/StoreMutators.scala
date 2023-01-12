@@ -17,7 +17,8 @@ object StoreMutators {
     __obj.asInstanceOf[StoreMutators[Mos]]
   }
   
-  extension [Self <: StoreMutators[?], Mos /* <: js.Array[js.Tuple2[StoreMutatorIdentifier, Any]] */](x: Self & StoreMutators[Mos]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreMutators[?], Mos /* <: js.Array[js.Tuple2[StoreMutatorIdentifier, Any]] */] (val x: Self & StoreMutators[Mos]) extends AnyVal {
     
     inline def setDollarDollarstoreMutators(value: Mos): Self = StObject.set(x, "$$storeMutators", value.asInstanceOf[js.Any])
     

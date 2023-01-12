@@ -58,7 +58,8 @@ object ScheduleRunConfiguration {
     __obj.asInstanceOf[ScheduleRunConfiguration]
   }
   
-  extension [Self <: ScheduleRunConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduleRunConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAuxiliaryApps(value: AmazonResourceNames): Self = StObject.set(x, "auxiliaryApps", value.asInstanceOf[js.Any])
     

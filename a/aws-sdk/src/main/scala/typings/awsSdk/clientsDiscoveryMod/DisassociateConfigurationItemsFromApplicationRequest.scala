@@ -23,7 +23,8 @@ object DisassociateConfigurationItemsFromApplicationRequest {
     __obj.asInstanceOf[DisassociateConfigurationItemsFromApplicationRequest]
   }
   
-  extension [Self <: DisassociateConfigurationItemsFromApplicationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateConfigurationItemsFromApplicationRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationConfigurationId(value: ApplicationId): Self = StObject.set(x, "applicationConfigurationId", value.asInstanceOf[js.Any])
     

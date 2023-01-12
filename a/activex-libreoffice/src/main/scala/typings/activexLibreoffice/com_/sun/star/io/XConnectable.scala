@@ -54,7 +54,8 @@ object XConnectable {
     __obj.asInstanceOf[XConnectable]
   }
   
-  extension [Self <: XConnectable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XConnectable] (val x: Self) extends AnyVal {
     
     inline def setGetPredecessor(value: () => XConnectable): Self = StObject.set(x, "getPredecessor", js.Any.fromFunction0(value))
     

@@ -39,7 +39,8 @@ object SystemMediaProperties {
     __obj.asInstanceOf[SystemMediaProperties]
   }
   
-  extension [Self <: SystemMediaProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemMediaProperties] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

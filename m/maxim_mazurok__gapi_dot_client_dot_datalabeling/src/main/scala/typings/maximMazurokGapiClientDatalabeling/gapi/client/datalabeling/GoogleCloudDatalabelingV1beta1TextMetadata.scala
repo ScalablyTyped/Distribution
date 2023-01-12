@@ -16,7 +16,8 @@ object GoogleCloudDatalabelingV1beta1TextMetadata {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1TextMetadata]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1TextMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1TextMetadata] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     

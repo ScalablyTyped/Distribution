@@ -35,7 +35,8 @@ object EmailMailboxChangeReader {
     __obj.asInstanceOf[EmailMailboxChangeReader]
   }
   
-  extension [Self <: EmailMailboxChangeReader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailMailboxChangeReader] (val x: Self) extends AnyVal {
     
     inline def setAcceptChanges(value: () => Unit): Self = StObject.set(x, "acceptChanges", js.Any.fromFunction0(value))
     

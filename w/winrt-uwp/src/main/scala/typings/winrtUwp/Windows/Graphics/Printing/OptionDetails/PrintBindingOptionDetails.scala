@@ -48,7 +48,8 @@ object PrintBindingOptionDetails {
     __obj.asInstanceOf[PrintBindingOptionDetails]
   }
   
-  extension [Self <: PrintBindingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintBindingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     

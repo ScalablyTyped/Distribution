@@ -17,7 +17,8 @@ object FontSizePadding {
     __obj.asInstanceOf[FontSizePadding]
   }
   
-  extension [Self <: FontSizePadding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontSizePadding] (val x: Self) extends AnyVal {
     
     inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     

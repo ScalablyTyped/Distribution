@@ -34,7 +34,8 @@ object EnUS {
     __obj.asInstanceOf[EnUS]
   }
   
-  extension [Self <: EnUS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnUS] (val x: Self) extends AnyVal {
     
     inline def `setEn-US`(value: Appsettingcontentwidthfluid): Self = StObject.set(x, "en-US", value.asInstanceOf[js.Any])
     

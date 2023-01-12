@@ -39,7 +39,8 @@ object DayCellRootProps {
     __obj.asInstanceOf[DayCellRootProps]
   }
   
-  extension [Self <: DayCellRootProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DayCellRootProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Ref<any> */ Any, js.Array[String], Any, Boolean) => Any

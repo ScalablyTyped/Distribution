@@ -50,7 +50,8 @@ object BitMatrix {
     __obj.asInstanceOf[BitMatrix]
   }
   
-  extension [Self <: BitMatrix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BitMatrix] (val x: Self) extends AnyVal {
     
     inline def setBits(value: js.Array[Double]): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object typesReplicaGlobalSecondaryIndexSettingsDescriptionMod {
       __obj.asInstanceOf[ReplicaGlobalSecondaryIndexSettingsDescription]
     }
     
-    extension [Self <: ReplicaGlobalSecondaryIndexSettingsDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplicaGlobalSecondaryIndexSettingsDescription] (val x: Self) extends AnyVal {
       
       inline def setIndexName(value: String): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object typesReplicaGlobalSecondaryIndexSettingsDescriptionMod {
       __obj.asInstanceOf[UnmarshalledReplicaGlobalSecondaryIndexSettingsDescription]
     }
     
-    extension [Self <: UnmarshalledReplicaGlobalSecondaryIndexSettingsDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledReplicaGlobalSecondaryIndexSettingsDescription] (val x: Self) extends AnyVal {
       
       inline def setProvisionedReadCapacityAutoScalingSettings(value: UnmarshalledAutoScalingSettingsDescription): Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
       

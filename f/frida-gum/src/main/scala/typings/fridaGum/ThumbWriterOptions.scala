@@ -22,7 +22,8 @@ object ThumbWriterOptions {
     __obj.asInstanceOf[ThumbWriterOptions]
   }
   
-  extension [Self <: ThumbWriterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThumbWriterOptions] (val x: Self) extends AnyVal {
     
     inline def setPc(value: NativePointer): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
     

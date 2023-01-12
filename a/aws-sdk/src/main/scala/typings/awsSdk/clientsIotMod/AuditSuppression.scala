@@ -32,7 +32,8 @@ object AuditSuppression {
     __obj.asInstanceOf[AuditSuppression]
   }
   
-  extension [Self <: AuditSuppression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuditSuppression] (val x: Self) extends AnyVal {
     
     inline def setCheckName(value: AuditCheckName): Self = StObject.set(x, "checkName", value.asInstanceOf[js.Any])
     

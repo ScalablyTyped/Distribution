@@ -55,7 +55,8 @@ object SymbolQuad {
     __obj.asInstanceOf[SymbolQuad]
   }
   
-  extension [Self <: SymbolQuad](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolQuad] (val x: Self) extends AnyVal {
     
     inline def setBl(value: ^): Self = StObject.set(x, "bl", value.asInstanceOf[js.Any])
     

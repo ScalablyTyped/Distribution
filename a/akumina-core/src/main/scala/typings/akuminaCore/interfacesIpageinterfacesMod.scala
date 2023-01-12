@@ -27,7 +27,8 @@ object interfacesIpageinterfacesMod {
       __obj.asInstanceOf[IPageVersion]
     }
     
-    extension [Self <: IPageVersion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPageVersion] (val x: Self) extends AnyVal {
       
       inline def setPageWidgets(value: js.Array[Any]): Self = StObject.set(x, "pageWidgets", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object interfacesIpageinterfacesMod {
       __obj.asInstanceOf[IPageVersionPriorityGroup]
     }
     
-    extension [Self <: IPageVersionPriorityGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPageVersionPriorityGroup] (val x: Self) extends AnyVal {
       
       inline def setPageVersionId(value: String): Self = StObject.set(x, "pageVersionId", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object interfacesIpageinterfacesMod {
       __obj.asInstanceOf[IPageVersionProperties]
     }
     
-    extension [Self <: IPageVersionProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPageVersionProperties] (val x: Self) extends AnyVal {
       
       inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       

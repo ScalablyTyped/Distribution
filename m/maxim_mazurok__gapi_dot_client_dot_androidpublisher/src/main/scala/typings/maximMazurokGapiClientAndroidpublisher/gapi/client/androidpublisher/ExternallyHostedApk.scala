@@ -58,7 +58,8 @@ object ExternallyHostedApk {
     __obj.asInstanceOf[ExternallyHostedApk]
   }
   
-  extension [Self <: ExternallyHostedApk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternallyHostedApk] (val x: Self) extends AnyVal {
     
     inline def setApplicationLabel(value: String): Self = StObject.set(x, "applicationLabel", value.asInstanceOf[js.Any])
     

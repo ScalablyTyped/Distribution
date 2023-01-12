@@ -23,7 +23,8 @@ object GetUsageForecastResponse {
     __obj.asInstanceOf[GetUsageForecastResponse]
   }
   
-  extension [Self <: GetUsageForecastResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUsageForecastResponse] (val x: Self) extends AnyVal {
     
     inline def setForecastResultsByTime(value: ForecastResultsByTime): Self = StObject.set(x, "ForecastResultsByTime", value.asInstanceOf[js.Any])
     

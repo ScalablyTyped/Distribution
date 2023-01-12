@@ -53,7 +53,8 @@ object ForStatement {
     __obj.asInstanceOf[ForStatement]
   }
   
-  extension [Self <: ForStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForStatement] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: AST): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

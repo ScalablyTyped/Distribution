@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Comparison]
     }
     
-    extension [Self <: Comparison](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comparison] (val x: Self) extends AnyVal {
       
       inline def setComparison(value: typings.ajvFormats.distLimitMod.Comparison): Self = StObject.set(x, "comparison", value.asInstanceOf[js.Any])
       

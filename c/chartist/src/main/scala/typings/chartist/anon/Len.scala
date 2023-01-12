@@ -31,7 +31,8 @@ object Len {
     __obj.asInstanceOf[Len]
   }
   
-  extension [Self <: Len](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Len] (val x: Self) extends AnyVal {
     
     inline def setDir(value: vertical): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     

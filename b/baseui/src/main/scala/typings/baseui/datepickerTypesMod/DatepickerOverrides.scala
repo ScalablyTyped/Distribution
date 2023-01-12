@@ -80,7 +80,8 @@ object DatepickerOverrides {
     __obj.asInstanceOf[DatepickerOverrides]
   }
   
-  extension [Self <: DatepickerOverrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatepickerOverrides] (val x: Self) extends AnyVal {
     
     inline def setCalendarContainer(value: Override[Any]): Self = StObject.set(x, "CalendarContainer", value.asInstanceOf[js.Any])
     

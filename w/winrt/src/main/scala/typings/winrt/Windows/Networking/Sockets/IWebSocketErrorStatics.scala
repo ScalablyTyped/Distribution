@@ -16,7 +16,8 @@ object IWebSocketErrorStatics {
     __obj.asInstanceOf[IWebSocketErrorStatics]
   }
   
-  extension [Self <: IWebSocketErrorStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebSocketErrorStatics] (val x: Self) extends AnyVal {
     
     inline def setGetStatus(value: Double => WebErrorStatus): Self = StObject.set(x, "getStatus", js.Any.fromFunction1(value))
   }

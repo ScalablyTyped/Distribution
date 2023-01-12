@@ -47,7 +47,8 @@ object WANConfig {
     __obj.asInstanceOf[WANConfig]
   }
   
-  extension [Self <: WANConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WANConfig] (val x: Self) extends AnyVal {
     
     inline def setNewAddressingType(value: String): Self = StObject.set(x, "NewAddressingType", value.asInstanceOf[js.Any])
     

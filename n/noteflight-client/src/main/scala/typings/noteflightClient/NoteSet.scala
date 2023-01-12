@@ -40,7 +40,8 @@ object NoteSet {
     __obj.asInstanceOf[NoteSet]
   }
   
-  extension [Self <: NoteSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoteSet] (val x: Self) extends AnyVal {
     
     inline def setBeam(value: Boolean): Self = StObject.set(x, "beam", value.asInstanceOf[js.Any])
     

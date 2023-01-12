@@ -65,7 +65,8 @@ object CapabilityStatement2RestResource {
     __obj.asInstanceOf[CapabilityStatement2RestResource]
   }
   
-  extension [Self <: CapabilityStatement2RestResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapabilityStatement2RestResource] (val x: Self) extends AnyVal {
     
     inline def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     

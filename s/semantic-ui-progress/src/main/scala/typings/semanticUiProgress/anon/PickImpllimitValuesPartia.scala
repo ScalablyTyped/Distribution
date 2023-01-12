@@ -86,7 +86,8 @@ object PickImpllimitValuesPartia {
     __obj.asInstanceOf[PickImpllimitValuesPartia]
   }
   
-  extension [Self <: PickImpllimitValuesPartia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImpllimitValuesPartia] (val x: Self) extends AnyVal {
     
     inline def setAutoSuccess(value: Boolean): Self = StObject.set(x, "autoSuccess", value.asInstanceOf[js.Any])
     

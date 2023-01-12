@@ -35,7 +35,8 @@ object MakeRequestConfig {
     __obj.asInstanceOf[MakeRequestConfig]
   }
   
-  extension [Self <: MakeRequestConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MakeRequestConfig] (val x: Self) extends AnyVal {
     
     inline def setAutoRetry(value: Boolean): Self = StObject.set(x, "autoRetry", value.asInstanceOf[js.Any])
     

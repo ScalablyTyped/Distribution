@@ -44,7 +44,8 @@ object EventData {
     __obj.asInstanceOf[EventData]
   }
   
-  extension [Self <: EventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
     
     inline def setIsImmediatePropagationStopped(value: () => Boolean): Self = StObject.set(x, "isImmediatePropagationStopped", js.Any.fromFunction0(value))
     

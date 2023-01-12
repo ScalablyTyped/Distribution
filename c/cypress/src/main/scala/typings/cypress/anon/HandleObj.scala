@@ -16,7 +16,8 @@ object HandleObj {
     __obj.asInstanceOf[HandleObj[TTarget, TData]]
   }
   
-  extension [Self <: HandleObj[?, ?], TTarget, TData](x: Self & (HandleObj[TTarget, TData])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandleObj[?, ?], TTarget, TData] (val x: Self & (HandleObj[TTarget, TData])) extends AnyVal {
     
     inline def setHandleObj(value: HandleObject[TTarget, TData]): Self = StObject.set(x, "handleObj", value.asInstanceOf[js.Any])
   }

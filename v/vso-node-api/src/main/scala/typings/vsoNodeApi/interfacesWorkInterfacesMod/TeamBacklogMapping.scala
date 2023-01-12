@@ -17,7 +17,8 @@ object TeamBacklogMapping {
     __obj.asInstanceOf[TeamBacklogMapping]
   }
   
-  extension [Self <: TeamBacklogMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamBacklogMapping] (val x: Self) extends AnyVal {
     
     inline def setCategoryReferenceName(value: String): Self = StObject.set(x, "categoryReferenceName", value.asInstanceOf[js.Any])
     

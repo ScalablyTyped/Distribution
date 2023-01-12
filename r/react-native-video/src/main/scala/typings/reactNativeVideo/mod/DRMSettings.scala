@@ -29,7 +29,8 @@ object DRMSettings {
     __obj.asInstanceOf[DRMSettings]
   }
   
-  extension [Self <: DRMSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DRMSettings] (val x: Self) extends AnyVal {
     
     inline def setBase64Certificate(value: Boolean): Self = StObject.set(x, "base64Certificate", value.asInstanceOf[js.Any])
     

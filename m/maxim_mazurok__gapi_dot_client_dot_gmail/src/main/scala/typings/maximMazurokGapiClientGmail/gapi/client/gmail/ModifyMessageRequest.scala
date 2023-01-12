@@ -19,7 +19,8 @@ object ModifyMessageRequest {
     __obj.asInstanceOf[ModifyMessageRequest]
   }
   
-  extension [Self <: ModifyMessageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyMessageRequest] (val x: Self) extends AnyVal {
     
     inline def setAddLabelIds(value: js.Array[String]): Self = StObject.set(x, "addLabelIds", value.asInstanceOf[js.Any])
     

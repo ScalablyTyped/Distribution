@@ -20,7 +20,8 @@ object EntityKey {
     __obj.asInstanceOf[EntityKey]
   }
   
-  extension [Self <: EntityKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityKey] (val x: Self) extends AnyVal {
     
     inline def setEntityType(value: EntityType): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     

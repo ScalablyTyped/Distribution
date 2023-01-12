@@ -18,7 +18,8 @@ object DeleteLogGroupRequest {
     __obj.asInstanceOf[DeleteLogGroupRequest]
   }
   
-  extension [Self <: DeleteLogGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLogGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
   }

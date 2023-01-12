@@ -35,7 +35,8 @@ object FormatValue {
     __obj.asInstanceOf[FormatValue[RawDatum]]
   }
   
-  extension [Self <: FormatValue[?], RawDatum /* <: BarDatum */](x: Self & FormatValue[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatValue[?], RawDatum /* <: BarDatum */] (val x: Self & FormatValue[RawDatum]) extends AnyVal {
     
     inline def setFormatValue(value: Double => String): Self = StObject.set(x, "formatValue", js.Any.fromFunction1(value))
     

@@ -18,7 +18,8 @@ object FrameCaptureS3Settings {
     __obj.asInstanceOf[FrameCaptureS3Settings]
   }
   
-  extension [Self <: FrameCaptureS3Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameCaptureS3Settings] (val x: Self) extends AnyVal {
     
     inline def setCannedAcl(value: S3CannedAcl): Self = StObject.set(x, "CannedAcl", value.asInstanceOf[js.Any])
     

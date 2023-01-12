@@ -68,7 +68,8 @@ object mod {
       __obj.asInstanceOf[SDObject]
     }
     
-    extension [Self <: SDObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SDObject] (val x: Self) extends AnyVal {
       
       inline def setGetOption(value: /* key */ String => Any): Self = StObject.set(x, "getOption", js.Any.fromFunction1(value))
       
@@ -122,7 +123,8 @@ object mod {
       __obj.asInstanceOf[ShowdownProvider]
     }
     
-    extension [Self <: ShowdownProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShowdownProvider] (val x: Self) extends AnyVal {
       
       inline def set$get(value: () => SDObject): Self = StObject.set(x, "$get", js.Any.fromFunction0(value))
       

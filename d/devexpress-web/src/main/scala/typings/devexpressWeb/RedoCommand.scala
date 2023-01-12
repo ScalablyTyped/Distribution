@@ -23,7 +23,8 @@ object RedoCommand {
     __obj.asInstanceOf[RedoCommand]
   }
   
-  extension [Self <: RedoCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedoCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

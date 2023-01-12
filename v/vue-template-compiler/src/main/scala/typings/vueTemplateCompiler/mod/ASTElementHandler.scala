@@ -19,7 +19,8 @@ object ASTElementHandler {
     __obj.asInstanceOf[ASTElementHandler]
   }
   
-  extension [Self <: ASTElementHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASTElementHandler] (val x: Self) extends AnyVal {
     
     inline def setModifiers(value: ASTModifiers): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     

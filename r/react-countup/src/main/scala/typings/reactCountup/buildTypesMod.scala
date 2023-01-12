@@ -29,7 +29,8 @@ object buildTypesMod {
       __obj.asInstanceOf[CallbackProps]
     }
     
-    extension [Self <: CallbackProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackProps] (val x: Self) extends AnyVal {
       
       inline def setOnEnd(value: /* args */ OnEndArgs => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
       
@@ -66,7 +67,8 @@ object buildTypesMod {
       __obj.asInstanceOf[CommonProps]
     }
     
-    extension [Self <: CommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonProps] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object buildTypesMod {
       __obj.asInstanceOf[CountUpApi]
     }
     
-    extension [Self <: CountUpApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CountUpApi] (val x: Self) extends AnyVal {
       
       inline def setGetCountUp(value: /* recreate */ js.UndefOr[Boolean] => CountUp): Self = StObject.set(x, "getCountUp", js.Any.fromFunction1(value))
       
@@ -132,7 +135,8 @@ object buildTypesMod {
       __obj.asInstanceOf[CountUpInstanceProps]
     }
     
-    extension [Self <: CountUpInstanceProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CountUpInstanceProps] (val x: Self) extends AnyVal {
       
       inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
       
@@ -170,7 +174,8 @@ object buildTypesMod {
       __obj.asInstanceOf[OnEndArgs]
     }
     
-    extension [Self <: OnEndArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnEndArgs] (val x: Self) extends AnyVal {
       
       inline def setPauseResume(value: () => Unit): Self = StObject.set(x, "pauseResume", js.Any.fromFunction0(value))
       
@@ -199,7 +204,8 @@ object buildTypesMod {
       __obj.asInstanceOf[OnPauseResumeArgs]
     }
     
-    extension [Self <: OnPauseResumeArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnPauseResumeArgs] (val x: Self) extends AnyVal {
       
       inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
@@ -226,7 +232,8 @@ object buildTypesMod {
       __obj.asInstanceOf[OnResetArgs]
     }
     
-    extension [Self <: OnResetArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnResetArgs] (val x: Self) extends AnyVal {
       
       inline def setPauseResume(value: () => Unit): Self = StObject.set(x, "pauseResume", js.Any.fromFunction0(value))
       
@@ -253,7 +260,8 @@ object buildTypesMod {
       __obj.asInstanceOf[OnStartArgs]
     }
     
-    extension [Self <: OnStartArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnStartArgs] (val x: Self) extends AnyVal {
       
       inline def setPauseResume(value: () => Unit): Self = StObject.set(x, "pauseResume", js.Any.fromFunction0(value))
       
@@ -280,7 +288,8 @@ object buildTypesMod {
       __obj.asInstanceOf[OnUpdateArgs]
     }
     
-    extension [Self <: OnUpdateArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnUpdateArgs] (val x: Self) extends AnyVal {
       
       inline def setPauseResume(value: () => Unit): Self = StObject.set(x, "pauseResume", js.Any.fromFunction0(value))
       
@@ -312,7 +321,8 @@ object buildTypesMod {
       __obj.asInstanceOf[RenderCounterProps]
     }
     
-    extension [Self <: RenderCounterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderCounterProps] (val x: Self) extends AnyVal {
       
       inline def setCountUpRef(value: RefObject[HTMLElement]): Self = StObject.set(x, "countUpRef", value.asInstanceOf[js.Any])
     }

@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[InvalidNames]
     }
     
-    extension [Self <: InvalidNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidNames] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object mod {
       __obj.asInstanceOf[LegacyNames]
     }
     
-    extension [Self <: LegacyNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacyNames] (val x: Self) extends AnyVal {
       
       inline def setValidForNewPackages(value: `false`): Self = StObject.set(x, "validForNewPackages", value.asInstanceOf[js.Any])
       
@@ -95,7 +97,8 @@ object mod {
       __obj.asInstanceOf[Results]
     }
     
-    extension [Self <: Results](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -132,7 +135,8 @@ object mod {
       __obj.asInstanceOf[ValidNames]
     }
     
-    extension [Self <: ValidNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidNames] (val x: Self) extends AnyVal {
       
       inline def setValidForNewPackages(value: `true`): Self = StObject.set(x, "validForNewPackages", value.asInstanceOf[js.Any])
       

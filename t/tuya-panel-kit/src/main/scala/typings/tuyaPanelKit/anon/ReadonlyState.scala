@@ -45,7 +45,8 @@ object ReadonlyState {
     __obj.asInstanceOf[ReadonlyState]
   }
   
-  extension [Self <: ReadonlyState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyState] (val x: Self) extends AnyVal {
     
     inline def setClosingRouteKeys(value: js.Array[String]): Self = StObject.set(x, "closingRouteKeys", value.asInstanceOf[js.Any])
     

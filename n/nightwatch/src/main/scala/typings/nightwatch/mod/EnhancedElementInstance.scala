@@ -35,7 +35,8 @@ object EnhancedElementInstance {
     __obj.asInstanceOf[EnhancedElementInstance[T]]
   }
   
-  extension [Self <: EnhancedElementInstance[?], T](x: Self & EnhancedElementInstance[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnhancedElementInstance[?], T] (val x: Self & EnhancedElementInstance[T]) extends AnyVal {
     
     inline def setLocateStrategy(value: LocateStrategy): Self = StObject.set(x, "locateStrategy", value.asInstanceOf[js.Any])
     

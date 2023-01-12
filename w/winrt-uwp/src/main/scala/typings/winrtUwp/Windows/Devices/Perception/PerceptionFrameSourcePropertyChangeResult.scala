@@ -20,7 +20,8 @@ object PerceptionFrameSourcePropertyChangeResult {
     __obj.asInstanceOf[PerceptionFrameSourcePropertyChangeResult]
   }
   
-  extension [Self <: PerceptionFrameSourcePropertyChangeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerceptionFrameSourcePropertyChangeResult] (val x: Self) extends AnyVal {
     
     inline def setNewValue(value: Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     

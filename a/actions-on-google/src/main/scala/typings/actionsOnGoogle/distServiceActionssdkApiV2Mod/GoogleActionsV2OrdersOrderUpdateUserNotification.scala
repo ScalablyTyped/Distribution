@@ -23,7 +23,8 @@ object GoogleActionsV2OrdersOrderUpdateUserNotification {
     __obj.asInstanceOf[GoogleActionsV2OrdersOrderUpdateUserNotification]
   }
   
-  extension [Self <: GoogleActionsV2OrdersOrderUpdateUserNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2OrdersOrderUpdateUserNotification] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

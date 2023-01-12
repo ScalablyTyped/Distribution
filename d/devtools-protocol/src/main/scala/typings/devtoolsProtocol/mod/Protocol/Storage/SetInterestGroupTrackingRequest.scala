@@ -15,7 +15,8 @@ object SetInterestGroupTrackingRequest {
     __obj.asInstanceOf[SetInterestGroupTrackingRequest]
   }
   
-  extension [Self <: SetInterestGroupTrackingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetInterestGroupTrackingRequest] (val x: Self) extends AnyVal {
     
     inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
   }

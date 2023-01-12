@@ -36,7 +36,8 @@ object StatefulContainerProps {
     __obj.asInstanceOf[StatefulContainerProps[Props, T]]
   }
   
-  extension [Self <: StatefulContainerProps[?, ?], Props, T](x: Self & (StatefulContainerProps[Props, T])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatefulContainerProps[?, ?], Props, T] (val x: Self & (StatefulContainerProps[Props, T])) extends AnyVal {
     
     inline def setAdapter(value: DateIOAdapter[T]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     

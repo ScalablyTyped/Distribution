@@ -52,7 +52,8 @@ object BaselineOverride {
     __obj.asInstanceOf[BaselineOverride]
   }
   
-  extension [Self <: BaselineOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaselineOverride] (val x: Self) extends AnyVal {
     
     inline def setApprovalRules(value: PatchRuleGroup): Self = StObject.set(x, "ApprovalRules", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object PartitionCursor {
     __obj.asInstanceOf[PartitionCursor]
   }
   
-  extension [Self <: PartitionCursor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartitionCursor] (val x: Self) extends AnyVal {
     
     inline def setCursor(value: Cursor): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     

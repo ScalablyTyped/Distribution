@@ -41,7 +41,8 @@ object pluginsCustomBordersCustomBordersMod {
       __obj.asInstanceOf[BorderOptions]
     }
     
-    extension [Self <: BorderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BorderOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object pluginsCustomBordersCustomBordersMod {
       __obj.asInstanceOf[BorderRange]
     }
     
-    extension [Self <: BorderRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BorderRange] (val x: Self) extends AnyVal {
       
       inline def setRange(value: From): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     }
@@ -109,7 +111,8 @@ object pluginsCustomBordersCustomBordersMod {
       __obj.asInstanceOf[RangeType]
     }
     
-    extension [Self <: RangeType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeType] (val x: Self) extends AnyVal {
       
       inline def setEndCol(value: Double): Self = StObject.set(x, "endCol", value.asInstanceOf[js.Any])
       

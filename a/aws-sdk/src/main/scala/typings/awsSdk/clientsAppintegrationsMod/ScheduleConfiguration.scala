@@ -28,7 +28,8 @@ object ScheduleConfiguration {
     __obj.asInstanceOf[ScheduleConfiguration]
   }
   
-  extension [Self <: ScheduleConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduleConfiguration] (val x: Self) extends AnyVal {
     
     inline def setFirstExecutionFrom(value: NonBlankString): Self = StObject.set(x, "FirstExecutionFrom", value.asInstanceOf[js.Any])
     

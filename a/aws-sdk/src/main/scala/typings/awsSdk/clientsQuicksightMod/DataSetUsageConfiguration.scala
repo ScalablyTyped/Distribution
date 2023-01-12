@@ -23,7 +23,8 @@ object DataSetUsageConfiguration {
     __obj.asInstanceOf[DataSetUsageConfiguration]
   }
   
-  extension [Self <: DataSetUsageConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSetUsageConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDisableUseAsDirectQuerySource(value: Boolean): Self = StObject.set(x, "DisableUseAsDirectQuerySource", value.asInstanceOf[js.Any])
     

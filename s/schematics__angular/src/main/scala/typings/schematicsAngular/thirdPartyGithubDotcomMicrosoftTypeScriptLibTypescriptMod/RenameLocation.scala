@@ -19,7 +19,8 @@ object RenameLocation {
     __obj.asInstanceOf[RenameLocation]
   }
   
-  extension [Self <: RenameLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenameLocation] (val x: Self) extends AnyVal {
     
     inline def setPrefixText(value: java.lang.String): Self = StObject.set(x, "prefixText", value.asInstanceOf[js.Any])
     

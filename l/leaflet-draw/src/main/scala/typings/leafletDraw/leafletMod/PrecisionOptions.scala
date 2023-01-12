@@ -29,7 +29,8 @@ object PrecisionOptions {
     __obj.asInstanceOf[PrecisionOptions]
   }
   
-  extension [Self <: PrecisionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrecisionOptions] (val x: Self) extends AnyVal {
     
     inline def setAc(value: Double): Self = StObject.set(x, "ac", value.asInstanceOf[js.Any])
     

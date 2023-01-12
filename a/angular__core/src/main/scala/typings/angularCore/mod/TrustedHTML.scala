@@ -33,7 +33,8 @@ object TrustedHTML {
     __obj.asInstanceOf[TrustedHTML]
   }
   
-  extension [Self <: TrustedHTML](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrustedHTML] (val x: Self) extends AnyVal {
     
     inline def set__brand__(value: typings.angularCore.angularCoreStrings.TrustedHTML): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
   }

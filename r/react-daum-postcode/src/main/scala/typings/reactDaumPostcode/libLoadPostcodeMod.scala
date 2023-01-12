@@ -140,7 +140,8 @@ object libLoadPostcodeMod {
       __obj.asInstanceOf[Address]
     }
     
-    extension [Self <: Address](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -227,7 +228,8 @@ object libLoadPostcodeMod {
       __obj.asInstanceOf[EmbedOptions]
     }
     
-    extension [Self <: EmbedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmbedOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       
@@ -260,7 +262,8 @@ object libLoadPostcodeMod {
       __obj.asInstanceOf[OpenOptions]
     }
     
-    extension [Self <: OpenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       
@@ -360,7 +363,8 @@ object libLoadPostcodeMod {
       __obj.asInstanceOf[PostcodeOptions]
     }
     
-    extension [Self <: PostcodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostcodeOptions] (val x: Self) extends AnyVal {
       
       inline def setAlwaysShowEngAddr(value: Boolean): Self = StObject.set(x, "alwaysShowEngAddr", value.asInstanceOf[js.Any])
       
@@ -473,7 +477,8 @@ object libLoadPostcodeMod {
       __obj.asInstanceOf[Search]
     }
     
-    extension [Self <: Search](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Search] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -494,7 +499,8 @@ object libLoadPostcodeMod {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -541,7 +547,8 @@ object libLoadPostcodeMod {
       __obj.asInstanceOf[Theme]
     }
     
-    extension [Self <: Theme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
       
       inline def setBgColor(value: String): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
       
@@ -594,7 +601,8 @@ object libLoadPostcodeMod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setDaum(value: typings.reactDaumPostcode.anon.Postcode): Self = StObject.set(x, "daum", value.asInstanceOf[js.Any])
         

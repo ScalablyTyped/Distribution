@@ -15,7 +15,8 @@ object GanttColumnSortable {
     __obj.asInstanceOf[GanttColumnSortable]
   }
   
-  extension [Self <: GanttColumnSortable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttColumnSortable] (val x: Self) extends AnyVal {
     
     inline def setCompare(value: js.Function): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     

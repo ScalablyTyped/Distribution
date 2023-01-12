@@ -26,7 +26,8 @@ object AutoscalingTargets {
     __obj.asInstanceOf[AutoscalingTargets]
   }
   
-  extension [Self <: AutoscalingTargets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoscalingTargets] (val x: Self) extends AnyVal {
     
     inline def setCpuUtilizationPercent(value: Double): Self = StObject.set(x, "cpuUtilizationPercent", value.asInstanceOf[js.Any])
     

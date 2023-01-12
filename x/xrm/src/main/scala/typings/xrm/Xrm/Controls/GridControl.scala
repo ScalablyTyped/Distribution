@@ -90,7 +90,8 @@ object GridControl {
     __obj.asInstanceOf[GridControl]
   }
   
-  extension [Self <: GridControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridControl] (val x: Self) extends AnyVal {
     
     inline def setAddOnLoad(value: LoadEventHandler => Unit): Self = StObject.set(x, "addOnLoad", js.Any.fromFunction1(value))
     

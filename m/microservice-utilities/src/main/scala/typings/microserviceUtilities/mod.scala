@@ -90,7 +90,8 @@ object mod {
       __obj.asInstanceOf[AuthorizerConfiguration]
     }
     
-    extension [Self <: AuthorizerConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizerConfiguration] (val x: Self) extends AnyVal {
       
       inline def setAuthorizerContextResolver(value: String): Self = StObject.set(x, "authorizerContextResolver", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object mod {
       __obj.asInstanceOf[AuthorizerPolicy]
     }
     
-    extension [Self <: AuthorizerPolicy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizerPolicy] (val x: Self) extends AnyVal {
       
       inline def setPolicyDocument(value: js.Object): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
       
@@ -132,7 +134,8 @@ object mod {
       __obj.asInstanceOf[PlatformClientConfiguration]
     }
     
-    extension [Self <: PlatformClientConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlatformClientConfiguration] (val x: Self) extends AnyVal {
       
       inline def setClient(value: js.Object): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }
@@ -159,7 +162,8 @@ object mod {
       __obj.asInstanceOf[PlatformClientResponse[T]]
     }
     
-    extension [Self <: PlatformClientResponse[?], T](x: Self & PlatformClientResponse[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlatformClientResponse[?], T] (val x: Self & PlatformClientResponse[T]) extends AnyVal {
       
       inline def setConfig(value: js.Object): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -194,7 +198,8 @@ object mod {
       __obj.asInstanceOf[RequestLoggerConfiguration]
     }
     
-    extension [Self <: RequestLoggerConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestLoggerConfiguration] (val x: Self) extends AnyVal {
       
       inline def setExtendErrorObjects(value: Boolean): Self = StObject.set(x, "extendErrorObjects", value.asInstanceOf[js.Any])
       
@@ -227,7 +232,8 @@ object mod {
       __obj.asInstanceOf[ServiceTokenProviderConfiguration]
     }
     
-    extension [Self <: ServiceTokenProviderConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceTokenProviderConfiguration] (val x: Self) extends AnyVal {
       
       inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       

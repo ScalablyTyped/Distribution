@@ -23,7 +23,8 @@ object RebootInputDeviceRequest {
     __obj.asInstanceOf[RebootInputDeviceRequest]
   }
   
-  extension [Self <: RebootInputDeviceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RebootInputDeviceRequest] (val x: Self) extends AnyVal {
     
     inline def setForce(value: RebootInputDeviceForce): Self = StObject.set(x, "Force", value.asInstanceOf[js.Any])
     

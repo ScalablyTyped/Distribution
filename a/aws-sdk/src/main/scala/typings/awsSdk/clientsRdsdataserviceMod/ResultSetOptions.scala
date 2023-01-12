@@ -23,7 +23,8 @@ object ResultSetOptions {
     __obj.asInstanceOf[ResultSetOptions]
   }
   
-  extension [Self <: ResultSetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultSetOptions] (val x: Self) extends AnyVal {
     
     inline def setDecimalReturnType(value: DecimalReturnType): Self = StObject.set(x, "decimalReturnType", value.asInstanceOf[js.Any])
     

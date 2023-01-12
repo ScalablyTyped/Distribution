@@ -72,7 +72,8 @@ object TYSectionListProps {
     __obj.asInstanceOf[TYSectionListProps]
   }
   
-  extension [Self <: TYSectionListProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TYSectionListProps] (val x: Self) extends AnyVal {
     
     inline def setHeaderStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
     

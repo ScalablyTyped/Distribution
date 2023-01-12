@@ -17,7 +17,8 @@ object AggregationsTermsBucketBase {
     __obj.asInstanceOf[AggregationsTermsBucketBase]
   }
   
-  extension [Self <: AggregationsTermsBucketBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsTermsBucketBase] (val x: Self) extends AnyVal {
     
     inline def setDoc_count_error(value: long): Self = StObject.set(x, "doc_count_error", value.asInstanceOf[js.Any])
     

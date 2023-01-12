@@ -170,7 +170,8 @@ object JQueryNiceScroll {
       __obj.asInstanceOf[NiceScrollOptions]
     }
     
-    extension [Self <: NiceScrollOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NiceScrollOptions] (val x: Self) extends AnyVal {
       
       inline def setAutohidemode(value: leave | scroll | cursor | hidden | Boolean): Self = StObject.set(x, "autohidemode", value.asInstanceOf[js.Any])
       
@@ -411,7 +412,8 @@ object JQueryNiceScroll {
       __obj.asInstanceOf[NiceScrollPage]
     }
     
-    extension [Self <: NiceScrollPage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NiceScrollPage] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       

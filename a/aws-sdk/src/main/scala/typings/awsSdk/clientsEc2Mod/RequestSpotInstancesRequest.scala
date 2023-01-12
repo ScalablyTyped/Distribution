@@ -78,7 +78,8 @@ object RequestSpotInstancesRequest {
     __obj.asInstanceOf[RequestSpotInstancesRequest]
   }
   
-  extension [Self <: RequestSpotInstancesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestSpotInstancesRequest] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZoneGroup(value: String): Self = StObject.set(x, "AvailabilityZoneGroup", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object enumArraystringnullablebo {
     __obj.asInstanceOf[enumArraystringnullablebo]
   }
   
-  extension [Self <: enumArraystringnullablebo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: enumArraystringnullablebo] (val x: Self) extends AnyVal {
     
     inline def setDefinitions(value: Record[String, SomeJTDSchemaType]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
     

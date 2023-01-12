@@ -20,7 +20,8 @@ object IQueryParam {
     __obj.asInstanceOf[IQueryParam]
   }
   
-  extension [Self <: IQueryParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IQueryParam] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

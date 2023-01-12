@@ -23,7 +23,8 @@ object Options {
     __obj.asInstanceOf[Options]
   }
   
-  extension [Self <: Options](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     inline def setApp_only_auth(value: Boolean): Self = StObject.set(x, "app_only_auth", value.asInstanceOf[js.Any])
     

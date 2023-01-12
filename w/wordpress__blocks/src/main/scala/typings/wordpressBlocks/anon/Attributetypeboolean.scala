@@ -25,7 +25,8 @@ object Attributetypeboolean {
     __obj.asInstanceOf[Attributetypeboolean]
   }
   
-  extension [Self <: Attributetypeboolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Attributetypeboolean] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

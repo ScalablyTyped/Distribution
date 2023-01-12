@@ -30,7 +30,8 @@ object PartialHideOptionsDetectO {
     __obj.asInstanceOf[PartialHideOptionsDetectO]
   }
   
-  extension [Self <: PartialHideOptionsDetectO](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialHideOptionsDetectO] (val x: Self) extends AnyVal {
     
     inline def setAltBoundary(value: Boolean): Self = StObject.set(x, "altBoundary", value.asInstanceOf[js.Any])
     

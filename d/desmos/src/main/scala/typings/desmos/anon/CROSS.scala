@@ -30,7 +30,8 @@ object CROSS {
     __obj.asInstanceOf[CROSS]
   }
   
-  extension [Self <: CROSS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CROSS] (val x: Self) extends AnyVal {
     
     inline def setCROSS(value: typings.desmos.desmosStrings.CROSS): Self = StObject.set(x, "CROSS", value.asInstanceOf[js.Any])
     

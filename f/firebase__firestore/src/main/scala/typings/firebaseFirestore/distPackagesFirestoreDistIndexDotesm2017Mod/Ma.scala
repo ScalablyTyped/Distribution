@@ -73,7 +73,8 @@ object Ma {
     __obj.asInstanceOf[Ma]
   }
   
-  extension [Self <: Ma](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ma] (val x: Self) extends AnyVal {
     
     inline def setCatch(value: Any => js.Promise[Any]): Self = StObject.set(x, "catch", js.Any.fromFunction1(value))
     

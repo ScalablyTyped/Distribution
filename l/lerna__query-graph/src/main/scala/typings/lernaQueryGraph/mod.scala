@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[QueryGraphConfig]
     }
     
-    extension [Self <: QueryGraphConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryGraphConfig] (val x: Self) extends AnyVal {
       
       inline def setGraphType(value: allDependencies | dependencies): Self = StObject.set(x, "graphType", value.asInstanceOf[js.Any])
       

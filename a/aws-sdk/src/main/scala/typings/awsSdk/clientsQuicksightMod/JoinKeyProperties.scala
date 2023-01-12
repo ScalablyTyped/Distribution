@@ -18,7 +18,8 @@ object JoinKeyProperties {
     __obj.asInstanceOf[JoinKeyProperties]
   }
   
-  extension [Self <: JoinKeyProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JoinKeyProperties] (val x: Self) extends AnyVal {
     
     inline def setUniqueKey(value: Boolean): Self = StObject.set(x, "UniqueKey", value.asInstanceOf[js.Any])
     

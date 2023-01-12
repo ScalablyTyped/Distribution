@@ -18,7 +18,8 @@ object ManualEvidence {
     __obj.asInstanceOf[ManualEvidence]
   }
   
-  extension [Self <: ManualEvidence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManualEvidence] (val x: Self) extends AnyVal {
     
     inline def setS3ResourcePath(value: S3Url): Self = StObject.set(x, "s3ResourcePath", value.asInstanceOf[js.Any])
     

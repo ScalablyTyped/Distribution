@@ -23,7 +23,8 @@ object NetworkConfiguration {
     __obj.asInstanceOf[NetworkConfiguration]
   }
   
-  extension [Self <: NetworkConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEgressConfiguration(value: EgressConfiguration): Self = StObject.set(x, "EgressConfiguration", value.asInstanceOf[js.Any])
     

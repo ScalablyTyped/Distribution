@@ -43,7 +43,8 @@ object anon {
       __obj.asInstanceOf[C192]
     }
     
-    extension [Self <: C192](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: C192] (val x: Self) extends AnyVal {
       
       inline def setC192(value: SjclEllipticalCurve): Self = StObject.set(x, "c192", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: BitArray_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -131,7 +133,8 @@ object anon {
       __obj.asInstanceOf[P127]
     }
     
-    extension [Self <: P127](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: P127] (val x: Self) extends AnyVal {
       
       inline def setP127(value: PseudoMersennePrimeStatic): Self = StObject.set(x, "p127", value.asInstanceOf[js.Any])
       
@@ -168,7 +171,8 @@ object anon {
       __obj.asInstanceOf[Tag]
     }
     
-    extension [Self <: Tag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
       
       inline def setKey(value: BitArray_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

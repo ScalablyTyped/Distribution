@@ -120,7 +120,8 @@ object distFirestoreSrcRemoteConnectionMod {
       __obj.asInstanceOf[Stream[I, O]]
     }
     
-    extension [Self <: Stream[?, ?], I, O](x: Self & (Stream[I, O])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stream[?, ?], I, O] (val x: Self & (Stream[I, O])) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       

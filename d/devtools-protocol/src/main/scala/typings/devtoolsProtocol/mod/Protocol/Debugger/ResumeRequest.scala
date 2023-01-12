@@ -22,7 +22,8 @@ object ResumeRequest {
     __obj.asInstanceOf[ResumeRequest]
   }
   
-  extension [Self <: ResumeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResumeRequest] (val x: Self) extends AnyVal {
     
     inline def setTerminateOnResume(value: Boolean): Self = StObject.set(x, "terminateOnResume", value.asInstanceOf[js.Any])
     

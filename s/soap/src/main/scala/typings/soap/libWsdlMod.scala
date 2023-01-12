@@ -273,7 +273,8 @@ object libWsdlMod {
       __obj.asInstanceOf[IInitializedOptions]
     }
     
-    extension [Self <: IInitializedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInitializedOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoredNamespaces(value: js.Array[String]): Self = StObject.set(x, "ignoredNamespaces", value.asInstanceOf[js.Any])
       

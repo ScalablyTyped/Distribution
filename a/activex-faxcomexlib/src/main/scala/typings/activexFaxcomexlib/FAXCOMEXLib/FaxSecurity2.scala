@@ -40,7 +40,8 @@ object FaxSecurity2 {
     __obj.asInstanceOf[FaxSecurity2]
   }
   
-  extension [Self <: FaxSecurity2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaxSecurity2] (val x: Self) extends AnyVal {
     
     inline def setDescriptor(value: Any): Self = StObject.set(x, "Descriptor", value.asInstanceOf[js.Any])
     

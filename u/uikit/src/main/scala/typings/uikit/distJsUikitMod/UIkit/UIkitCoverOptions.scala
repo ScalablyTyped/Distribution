@@ -19,7 +19,8 @@ object UIkitCoverOptions {
     __obj.asInstanceOf[UIkitCoverOptions]
   }
   
-  extension [Self <: UIkitCoverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitCoverOptions] (val x: Self) extends AnyVal {
     
     inline def setAutomute(value: Boolean): Self = StObject.set(x, "automute", value.asInstanceOf[js.Any])
     

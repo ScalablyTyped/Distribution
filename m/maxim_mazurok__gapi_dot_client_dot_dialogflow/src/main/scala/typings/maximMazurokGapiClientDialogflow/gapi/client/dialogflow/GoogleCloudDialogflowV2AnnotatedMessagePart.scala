@@ -28,7 +28,8 @@ object GoogleCloudDialogflowV2AnnotatedMessagePart {
     __obj.asInstanceOf[GoogleCloudDialogflowV2AnnotatedMessagePart]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2AnnotatedMessagePart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2AnnotatedMessagePart] (val x: Self) extends AnyVal {
     
     inline def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     

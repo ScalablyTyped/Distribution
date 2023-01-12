@@ -42,7 +42,8 @@ object OwnedStructure {
     __obj.asInstanceOf[OwnedStructure[T]]
   }
   
-  extension [Self <: OwnedStructure[?], T /* <: StructureConstant */](x: Self & OwnedStructure[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OwnedStructure[?], T /* <: StructureConstant */] (val x: Self & OwnedStructure[T]) extends AnyVal {
     
     inline def setMy(value: Boolean): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
     

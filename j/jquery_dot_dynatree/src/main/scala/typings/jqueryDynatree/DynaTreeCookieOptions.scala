@@ -15,7 +15,8 @@ object DynaTreeCookieOptions {
     __obj.asInstanceOf[DynaTreeCookieOptions]
   }
   
-  extension [Self <: DynaTreeCookieOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynaTreeCookieOptions] (val x: Self) extends AnyVal {
     
     inline def setExpires(value: Any): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
   }

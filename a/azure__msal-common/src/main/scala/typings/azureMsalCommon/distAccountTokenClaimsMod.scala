@@ -96,7 +96,8 @@ object distAccountTokenClaimsMod {
       __obj.asInstanceOf[TokenClaims]
     }
     
-    extension [Self <: TokenClaims](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenClaims] (val x: Self) extends AnyVal {
       
       inline def setAmr(value: js.Array[String]): Self = StObject.set(x, "amr", value.asInstanceOf[js.Any])
       

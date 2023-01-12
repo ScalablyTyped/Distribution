@@ -23,7 +23,8 @@ object ListDataCellsFilterResponse {
     __obj.asInstanceOf[ListDataCellsFilterResponse]
   }
   
-  extension [Self <: ListDataCellsFilterResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDataCellsFilterResponse] (val x: Self) extends AnyVal {
     
     inline def setDataCellsFilters(value: DataCellsFilterList): Self = StObject.set(x, "DataCellsFilters", value.asInstanceOf[js.Any])
     

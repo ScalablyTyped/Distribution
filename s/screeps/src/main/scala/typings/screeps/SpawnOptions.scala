@@ -38,7 +38,8 @@ object SpawnOptions {
     __obj.asInstanceOf[SpawnOptions]
   }
   
-  extension [Self <: SpawnOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpawnOptions] (val x: Self) extends AnyVal {
     
     inline def setDirections(value: js.Array[DirectionConstant]): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object StrokeWidth {
     __obj.asInstanceOf[StrokeWidth]
   }
   
-  extension [Self <: StrokeWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StrokeWidth] (val x: Self) extends AnyVal {
     
     inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     

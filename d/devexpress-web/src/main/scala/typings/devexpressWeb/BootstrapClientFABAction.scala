@@ -64,7 +64,8 @@ object BootstrapClientFABAction {
     __obj.asInstanceOf[BootstrapClientFABAction]
   }
   
-  extension [Self <: BootstrapClientFABAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapClientFABAction] (val x: Self) extends AnyVal {
     
     inline def setGetActionIconCssClass(value: () => String): Self = StObject.set(x, "GetActionIconCssClass", js.Any.fromFunction0(value))
     

@@ -31,7 +31,8 @@ object ExportSettingsSVG {
     __obj.asInstanceOf[ExportSettingsSVG]
   }
   
-  extension [Self <: ExportSettingsSVG](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportSettingsSVG] (val x: Self) extends AnyVal {
     
     inline def setContentsOnly(value: Boolean): Self = StObject.set(x, "contentsOnly", value.asInstanceOf[js.Any])
     

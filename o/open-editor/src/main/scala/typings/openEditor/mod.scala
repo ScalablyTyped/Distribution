@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[EditorInfo]
     }
     
-    extension [Self <: EditorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorInfo] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setEditor(value: String): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
       

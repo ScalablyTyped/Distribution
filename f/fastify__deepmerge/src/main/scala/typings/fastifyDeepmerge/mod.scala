@@ -93,7 +93,8 @@ object mod {
       __obj.asInstanceOf[MergeArrayFnOptions]
     }
     
-    extension [Self <: MergeArrayFnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeArrayFnOptions] (val x: Self) extends AnyVal {
       
       inline def setClone_(value: Any => Any): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
       
@@ -129,7 +130,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       

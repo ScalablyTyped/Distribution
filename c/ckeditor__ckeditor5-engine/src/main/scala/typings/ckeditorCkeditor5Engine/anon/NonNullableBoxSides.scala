@@ -22,7 +22,8 @@ object NonNullableBoxSides {
     __obj.asInstanceOf[NonNullableBoxSides]
   }
   
-  extension [Self <: NonNullableBoxSides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonNullableBoxSides] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

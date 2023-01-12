@@ -257,7 +257,8 @@ object CodeGenConfigurationNode {
     __obj.asInstanceOf[CodeGenConfigurationNode]
   }
   
-  extension [Self <: CodeGenConfigurationNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeGenConfigurationNode] (val x: Self) extends AnyVal {
     
     inline def setAggregate(value: Aggregate): Self = StObject.set(x, "Aggregate", value.asInstanceOf[js.Any])
     

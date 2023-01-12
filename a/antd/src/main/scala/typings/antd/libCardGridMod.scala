@@ -29,7 +29,8 @@ object libCardGridMod extends Shortcut {
       __obj.asInstanceOf[CardGridProps]
     }
     
-    extension [Self <: CardGridProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardGridProps] (val x: Self) extends AnyVal {
       
       inline def setHoverable(value: Boolean): Self = StObject.set(x, "hoverable", value.asInstanceOf[js.Any])
       

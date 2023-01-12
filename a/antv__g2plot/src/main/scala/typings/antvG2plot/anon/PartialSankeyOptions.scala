@@ -138,7 +138,8 @@ object PartialSankeyOptions {
     __obj.asInstanceOf[PartialSankeyOptions]
   }
   
-  extension [Self <: PartialSankeyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSankeyOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

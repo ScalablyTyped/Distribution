@@ -20,7 +20,8 @@ object InlineQueryResultLocation {
     __obj.asInstanceOf[InlineQueryResultLocation]
   }
   
-  extension [Self <: InlineQueryResultLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineQueryResultLocation] (val x: Self) extends AnyVal {
     
     inline def setType(value: location): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

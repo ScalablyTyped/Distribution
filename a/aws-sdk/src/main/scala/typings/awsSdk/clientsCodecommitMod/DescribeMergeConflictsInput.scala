@@ -64,7 +64,8 @@ object DescribeMergeConflictsInput {
     __obj.asInstanceOf[DescribeMergeConflictsInput]
   }
   
-  extension [Self <: DescribeMergeConflictsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMergeConflictsInput] (val x: Self) extends AnyVal {
     
     inline def setConflictDetailLevel(value: ConflictDetailLevelTypeEnum): Self = StObject.set(x, "conflictDetailLevel", value.asInstanceOf[js.Any])
     

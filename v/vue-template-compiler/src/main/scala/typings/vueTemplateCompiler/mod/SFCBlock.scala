@@ -33,7 +33,8 @@ object SFCBlock {
     __obj.asInstanceOf[SFCBlock]
   }
   
-  extension [Self <: SFCBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SFCBlock] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: Record[String, String]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

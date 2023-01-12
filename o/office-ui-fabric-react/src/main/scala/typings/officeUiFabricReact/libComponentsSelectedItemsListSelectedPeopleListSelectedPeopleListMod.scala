@@ -70,7 +70,8 @@ object libComponentsSelectedItemsListSelectedPeopleListSelectedPeopleListMod {
       __obj.asInstanceOf[IExtendedPersonaProps]
     }
     
-    extension [Self <: IExtendedPersonaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IExtendedPersonaProps] (val x: Self) extends AnyVal {
       
       inline def setBlockRecipientRemoval(value: Boolean): Self = StObject.set(x, "blockRecipientRemoval", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object libComponentsSelectedItemsListSelectedPeopleListSelectedPeopleListMod {
       __obj.asInstanceOf[ISelectedPeopleItemProps]
     }
     
-    extension [Self <: ISelectedPeopleItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISelectedPeopleItemProps] (val x: Self) extends AnyVal {
       
       inline def setOnExpandItem(value: () => Unit): Self = StObject.set(x, "onExpandItem", js.Any.fromFunction0(value))
       
@@ -159,7 +161,8 @@ object libComponentsSelectedItemsListSelectedPeopleListSelectedPeopleListMod {
       __obj.asInstanceOf[ISelectedPeopleProps]
     }
     
-    extension [Self <: ISelectedPeopleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISelectedPeopleProps] (val x: Self) extends AnyVal {
       
       inline def setCopyMenuItemText(value: String): Self = StObject.set(x, "copyMenuItemText", value.asInstanceOf[js.Any])
       

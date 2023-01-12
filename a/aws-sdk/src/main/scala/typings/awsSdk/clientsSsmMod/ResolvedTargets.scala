@@ -23,7 +23,8 @@ object ResolvedTargets {
     __obj.asInstanceOf[ResolvedTargets]
   }
   
-  extension [Self <: ResolvedTargets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedTargets] (val x: Self) extends AnyVal {
     
     inline def setParameterValues(value: TargetParameterList): Self = StObject.set(x, "ParameterValues", value.asInstanceOf[js.Any])
     

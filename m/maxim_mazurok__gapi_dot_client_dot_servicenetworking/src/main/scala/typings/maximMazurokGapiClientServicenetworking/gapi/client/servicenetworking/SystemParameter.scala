@@ -22,7 +22,8 @@ object SystemParameter {
     __obj.asInstanceOf[SystemParameter]
   }
   
-  extension [Self <: SystemParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemParameter] (val x: Self) extends AnyVal {
     
     inline def setHttpHeader(value: String): Self = StObject.set(x, "httpHeader", value.asInstanceOf[js.Any])
     

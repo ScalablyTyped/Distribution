@@ -20,7 +20,8 @@ object DecomposeOptions {
     __obj.asInstanceOf[DecomposeOptions]
   }
   
-  extension [Self <: DecomposeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecomposeOptions] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: js.Array[String] | AnyObject[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

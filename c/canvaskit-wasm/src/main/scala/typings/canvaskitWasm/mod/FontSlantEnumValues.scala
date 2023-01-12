@@ -21,7 +21,8 @@ object FontSlantEnumValues {
     __obj.asInstanceOf[FontSlantEnumValues]
   }
   
-  extension [Self <: FontSlantEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontSlantEnumValues] (val x: Self) extends AnyVal {
     
     inline def setItalic(value: FontSlant): Self = StObject.set(x, "Italic", value.asInstanceOf[js.Any])
     

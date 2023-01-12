@@ -135,7 +135,8 @@ object ContractTermAction {
     __obj.asInstanceOf[ContractTermAction]
   }
   
-  extension [Self <: ContractTermAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContractTermAction] (val x: Self) extends AnyVal {
     
     inline def setContext(value: Reference): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

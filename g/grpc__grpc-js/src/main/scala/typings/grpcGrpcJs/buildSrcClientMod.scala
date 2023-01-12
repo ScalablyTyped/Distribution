@@ -186,7 +186,8 @@ object buildSrcClientMod {
       __obj.asInstanceOf[CallOptions]
     }
     
-    extension [Self <: CallOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallOptions] (val x: Self) extends AnyVal {
       
       inline def setCredentials(value: CallCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
@@ -253,7 +254,8 @@ object buildSrcClientMod {
       __obj.asInstanceOf[CallProperties[RequestType, ResponseType]]
     }
     
-    extension [Self <: CallProperties[?, ?], RequestType, ResponseType](x: Self & (CallProperties[RequestType, ResponseType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallProperties[?, ?], RequestType, ResponseType] (val x: Self & (CallProperties[RequestType, ResponseType])) extends AnyVal {
       
       inline def setArgument(value: RequestType): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
       
@@ -365,7 +367,8 @@ object buildSrcClientMod {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setCallInvocationTransformer(value: /* callProperties */ CallProperties[Any, Any] => CallProperties[Any, Any]): Self = StObject.set(x, "callInvocationTransformer", js.Any.fromFunction1(value))
       

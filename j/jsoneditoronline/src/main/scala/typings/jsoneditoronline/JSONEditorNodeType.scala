@@ -19,7 +19,8 @@ object JSONEditorNodeType {
     __obj.asInstanceOf[JSONEditorNodeType]
   }
   
-  extension [Self <: JSONEditorNodeType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONEditorNodeType] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

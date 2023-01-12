@@ -49,7 +49,8 @@ object typesLibToastHeaderMod {
       __obj.asInstanceOf[ToastHeaderProps]
     }
     
-    extension [Self <: ToastHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setClose(value: ReactNode): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       

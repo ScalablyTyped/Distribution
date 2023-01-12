@@ -17,7 +17,8 @@ object SimpleColumnAddress_ {
     __obj.asInstanceOf[SimpleColumnAddress_]
   }
   
-  extension [Self <: SimpleColumnAddress_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleColumnAddress_] (val x: Self) extends AnyVal {
     
     inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     

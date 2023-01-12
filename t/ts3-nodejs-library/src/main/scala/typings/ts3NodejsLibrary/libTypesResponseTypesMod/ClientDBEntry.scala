@@ -47,7 +47,8 @@ object ClientDBEntry {
     __obj.asInstanceOf[ClientDBEntry]
   }
   
-  extension [Self <: ClientDBEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientDBEntry] (val x: Self) extends AnyVal {
     
     inline def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
     

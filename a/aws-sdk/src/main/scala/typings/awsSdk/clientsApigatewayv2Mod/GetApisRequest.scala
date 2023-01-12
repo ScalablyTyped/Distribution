@@ -23,7 +23,8 @@ object GetApisRequest {
     __obj.asInstanceOf[GetApisRequest]
   }
   
-  extension [Self <: GetApisRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetApisRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: string): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

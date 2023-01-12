@@ -21,7 +21,8 @@ object ClassKeyExpansionPanelSummaryClassKey {
     __obj.asInstanceOf[ClassKeyExpansionPanelSummaryClassKey[P, D]]
   }
   
-  extension [Self <: ClassKeyExpansionPanelSummaryClassKey[?, ?], P, D /* <: ElementType[Any] */](x: Self & (ClassKeyExpansionPanelSummaryClassKey[P, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassKeyExpansionPanelSummaryClassKey[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (ClassKeyExpansionPanelSummaryClassKey[P, D])) extends AnyVal {
     
     inline def setClassKey(value: ExpansionPanelSummaryClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
     

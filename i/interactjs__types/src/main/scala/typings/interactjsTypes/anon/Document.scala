@@ -22,7 +22,8 @@ object Document {
     __obj.asInstanceOf[Document[T]]
   }
   
-  extension [Self <: Document[?], T /* <: typings.interactjsTypes.coreTypesMod.Target */](x: Self & Document[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Document[?], T /* <: typings.interactjsTypes.coreTypesMod.Target */] (val x: Self & Document[T]) extends AnyVal {
     
     inline def setDocument(value: typings.std.Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

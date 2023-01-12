@@ -20,7 +20,8 @@ object PropertyOptions {
     __obj.asInstanceOf[PropertyOptions]
   }
   
-  extension [Self <: PropertyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyOptions] (val x: Self) extends AnyVal {
     
     inline def setIgnoreHidden(value: Boolean): Self = StObject.set(x, "ignoreHidden", value.asInstanceOf[js.Any])
     

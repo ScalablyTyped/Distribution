@@ -24,7 +24,8 @@ object TextSymbol3DLayerMaterial {
     __obj.asInstanceOf[TextSymbol3DLayerMaterial]
   }
   
-  extension [Self <: TextSymbol3DLayerMaterial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextSymbol3DLayerMaterial] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

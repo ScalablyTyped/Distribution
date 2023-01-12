@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Encoding]
     }
     
-    extension [Self <: Encoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: java.lang.String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object anon {
       __obj.asInstanceOf[NData]
     }
     
-    extension [Self <: NData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NData] (val x: Self) extends AnyVal {
       
       inline def setNData(value: java.lang.String): Self = StObject.set(x, "nData", value.asInstanceOf[js.Any])
       
@@ -82,7 +84,8 @@ object anon {
       __obj.asInstanceOf[PubID]
     }
     
-    extension [Self <: PubID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PubID] (val x: Self) extends AnyVal {
       
       inline def setPubID(value: java.lang.String): Self = StObject.set(x, "pubID", value.asInstanceOf[js.Any])
       
@@ -105,7 +108,8 @@ object anon {
       __obj.asInstanceOf[String]
     }
     
-    extension [Self <: String](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: String] (val x: Self) extends AnyVal {
       
       inline def setString(value: XMLAttribute): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     }

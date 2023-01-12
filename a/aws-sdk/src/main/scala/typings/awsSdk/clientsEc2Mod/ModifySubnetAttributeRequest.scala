@@ -68,7 +68,8 @@ object ModifySubnetAttributeRequest {
     __obj.asInstanceOf[ModifySubnetAttributeRequest]
   }
   
-  extension [Self <: ModifySubnetAttributeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifySubnetAttributeRequest] (val x: Self) extends AnyVal {
     
     inline def setAssignIpv6AddressOnCreation(value: AttributeBooleanValue): Self = StObject.set(x, "AssignIpv6AddressOnCreation", value.asInstanceOf[js.Any])
     

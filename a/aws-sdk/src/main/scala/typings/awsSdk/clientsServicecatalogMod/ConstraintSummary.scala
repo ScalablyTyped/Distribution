@@ -23,7 +23,8 @@ object ConstraintSummary {
     __obj.asInstanceOf[ConstraintSummary]
   }
   
-  extension [Self <: ConstraintSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstraintSummary] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: ConstraintDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

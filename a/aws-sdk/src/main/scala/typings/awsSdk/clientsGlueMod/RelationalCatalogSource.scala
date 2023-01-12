@@ -28,7 +28,8 @@ object RelationalCatalogSource {
     __obj.asInstanceOf[RelationalCatalogSource]
   }
   
-  extension [Self <: RelationalCatalogSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationalCatalogSource] (val x: Self) extends AnyVal {
     
     inline def setDatabase(value: EnclosedInStringProperty): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     

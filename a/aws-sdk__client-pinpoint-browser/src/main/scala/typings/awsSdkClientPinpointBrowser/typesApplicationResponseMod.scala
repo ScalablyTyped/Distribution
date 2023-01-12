@@ -25,7 +25,8 @@ object typesApplicationResponseMod {
       __obj.asInstanceOf[ApplicationResponse]
     }
     
-    extension [Self <: ApplicationResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplicationResponse] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       

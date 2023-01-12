@@ -21,7 +21,8 @@ object typesFileNameConflictsWithDirectoryNameExceptionMod {
       __obj.asInstanceOf[FileNameConflictsWithDirectoryNameException]
     }
     
-    extension [Self <: FileNameConflictsWithDirectoryNameException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileNameConflictsWithDirectoryNameException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.FileNameConflictsWithDirectoryNameException

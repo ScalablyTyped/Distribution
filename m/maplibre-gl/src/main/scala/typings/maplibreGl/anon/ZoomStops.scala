@@ -29,7 +29,8 @@ object ZoomStops {
     __obj.asInstanceOf[ZoomStops]
   }
   
-  extension [Self <: ZoomStops](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoomStops] (val x: Self) extends AnyVal {
     
     inline def setEvaluate(value: (Any, Any) => Any): Self = StObject.set(x, "evaluate", js.Any.fromFunction2(value))
     

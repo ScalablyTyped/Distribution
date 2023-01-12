@@ -17,7 +17,8 @@ object ParticipantJoiningNotification {
     __obj.asInstanceOf[ParticipantJoiningNotification]
   }
   
-  extension [Self <: ParticipantJoiningNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticipantJoiningNotification] (val x: Self) extends AnyVal {
     
     inline def setCall(value: NullableOption[Call]): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
     

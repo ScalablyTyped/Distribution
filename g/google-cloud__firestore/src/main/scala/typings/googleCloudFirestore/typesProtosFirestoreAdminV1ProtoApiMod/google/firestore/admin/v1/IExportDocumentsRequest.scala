@@ -23,7 +23,8 @@ object IExportDocumentsRequest {
     __obj.asInstanceOf[IExportDocumentsRequest]
   }
   
-  extension [Self <: IExportDocumentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExportDocumentsRequest] (val x: Self) extends AnyVal {
     
     inline def setCollectionIds(value: js.Array[String]): Self = StObject.set(x, "collectionIds", value.asInstanceOf[js.Any])
     

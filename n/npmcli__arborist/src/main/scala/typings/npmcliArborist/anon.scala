@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[All]
     }
     
-    extension [Self <: All](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: All] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object anon {
       __obj.asInstanceOf[AuditReportVersion]
     }
     
-    extension [Self <: AuditReportVersion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuditReportVersion] (val x: Self) extends AnyVal {
       
       inline def setAuditReportVersion(value: Double): Self = StObject.set(x, "auditReportVersion", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object anon {
       __obj.asInstanceOf[BuildIdealTreeOptionsfixb]
     }
     
-    extension [Self <: BuildIdealTreeOptionsfixb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuildIdealTreeOptionsfixb] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: js.Array[String]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
       
@@ -174,7 +177,8 @@ object anon {
       __obj.asInstanceOf[BuildIdealTreeOptionsfixf]
     }
     
-    extension [Self <: BuildIdealTreeOptionsfixf](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuildIdealTreeOptionsfixf] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: js.Array[String]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
       
@@ -252,7 +256,8 @@ object anon {
       __obj.asInstanceOf[BuildIdealTreeOptionsfixt]
     }
     
-    extension [Self <: BuildIdealTreeOptionsfixt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuildIdealTreeOptionsfixt] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: js.Array[String]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
       
@@ -319,7 +324,8 @@ object anon {
       __obj.asInstanceOf[Critical]
     }
     
-    extension [Self <: Critical](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Critical] (val x: Self) extends AnyVal {
       
       inline def setCritical(value: Double): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
       
@@ -348,7 +354,8 @@ object anon {
       __obj.asInstanceOf[Dependencies]
     }
     
-    extension [Self <: Dependencies](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dependencies] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: Dev): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
@@ -377,7 +384,8 @@ object anon {
       __obj.asInstanceOf[Dev]
     }
     
-    extension [Self <: Dev](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dev] (val x: Self) extends AnyVal {
       
       inline def setDev(value: Double): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
       
@@ -423,7 +431,8 @@ object anon {
       __obj.asInstanceOf[OmitReifyOptionspreferDed]
     }
     
-    extension [Self <: OmitReifyOptionspreferDed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitReifyOptionspreferDed] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: js.Array[String]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
       
@@ -492,7 +501,8 @@ object anon {
       __obj.asInstanceOf[PickEdgefromtypenamespec]
     }
     
-    extension [Self <: PickEdgefromtypenamespec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickEdgefromtypenamespec] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Node): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -515,7 +525,8 @@ object anon {
       __obj.asInstanceOf[Workspaces]
     }
     
-    extension [Self <: Workspaces](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Workspaces] (val x: Self) extends AnyVal {
       
       inline def setWorkspaces(value: js.Array[String]): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
       

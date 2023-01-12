@@ -28,7 +28,8 @@ object QueryFieldType {
     __obj.asInstanceOf[QueryFieldType]
   }
   
-  extension [Self <: QueryFieldType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryFieldType] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

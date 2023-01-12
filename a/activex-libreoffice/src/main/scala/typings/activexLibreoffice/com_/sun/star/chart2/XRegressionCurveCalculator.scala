@@ -123,7 +123,8 @@ object XRegressionCurveCalculator {
     __obj.asInstanceOf[XRegressionCurveCalculator]
   }
   
-  extension [Self <: XRegressionCurveCalculator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRegressionCurveCalculator] (val x: Self) extends AnyVal {
     
     inline def setCorrelationCoefficient(value: Double): Self = StObject.set(x, "CorrelationCoefficient", value.asInstanceOf[js.Any])
     

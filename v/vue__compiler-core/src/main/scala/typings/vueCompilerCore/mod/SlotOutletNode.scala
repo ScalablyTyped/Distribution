@@ -32,7 +32,8 @@ object SlotOutletNode {
     __obj.asInstanceOf[SlotOutletNode]
   }
   
-  extension [Self <: SlotOutletNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotOutletNode] (val x: Self) extends AnyVal {
     
     inline def setCodegenNode(value: RenderSlotCall | CacheExpression): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
     

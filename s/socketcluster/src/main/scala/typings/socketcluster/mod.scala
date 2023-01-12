@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[BrokerExitInfo]
     }
     
-    extension [Self <: BrokerExitInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrokerExitInfo] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object mod {
       __obj.asInstanceOf[BrokerStartInfo]
     }
     
-    extension [Self <: BrokerStartInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrokerStartInfo] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object mod {
       __obj.asInstanceOf[KillWorkersOptions]
     }
     
-    extension [Self <: KillWorkersOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KillWorkersOptions] (val x: Self) extends AnyVal {
       
       inline def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
       
@@ -233,7 +236,8 @@ object mod {
       __obj.asInstanceOf[WorkerClusterExitInfo]
     }
     
-    extension [Self <: WorkerClusterExitInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerClusterExitInfo] (val x: Self) extends AnyVal {
       
       inline def setChildProcess(value: ChildProcess): Self = StObject.set(x, "childProcess", value.asInstanceOf[js.Any])
       
@@ -258,7 +262,8 @@ object mod {
       __obj.asInstanceOf[WorkerClusterReadyInfo]
     }
     
-    extension [Self <: WorkerClusterReadyInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerClusterReadyInfo] (val x: Self) extends AnyVal {
       
       inline def setChildProcess(value: ChildProcess): Self = StObject.set(x, "childProcess", value.asInstanceOf[js.Any])
       
@@ -279,7 +284,8 @@ object mod {
       __obj.asInstanceOf[WorkerClusterStartInfo]
     }
     
-    extension [Self <: WorkerClusterStartInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerClusterStartInfo] (val x: Self) extends AnyVal {
       
       inline def setChildProcess(value: ChildProcess): Self = StObject.set(x, "childProcess", value.asInstanceOf[js.Any])
       
@@ -304,7 +310,8 @@ object mod {
       __obj.asInstanceOf[WorkerExitInfo]
     }
     
-    extension [Self <: WorkerExitInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerExitInfo] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -331,7 +338,8 @@ object mod {
       __obj.asInstanceOf[WorkerStartInfo]
     }
     
-    extension [Self <: WorkerStartInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerStartInfo] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

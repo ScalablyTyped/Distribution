@@ -18,7 +18,8 @@ object CreateVpcPeeringAuthorizationOutput {
     __obj.asInstanceOf[CreateVpcPeeringAuthorizationOutput]
   }
   
-  extension [Self <: CreateVpcPeeringAuthorizationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVpcPeeringAuthorizationOutput] (val x: Self) extends AnyVal {
     
     inline def setVpcPeeringAuthorization(value: VpcPeeringAuthorization): Self = StObject.set(x, "VpcPeeringAuthorization", value.asInstanceOf[js.Any])
     

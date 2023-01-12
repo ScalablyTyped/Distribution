@@ -16,7 +16,8 @@ object GoogleCloudVideointelligenceV1beta2FaceSegment {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta2FaceSegment]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1beta2FaceSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1beta2FaceSegment] (val x: Self) extends AnyVal {
     
     inline def setSegment(value: GoogleCloudVideointelligenceV1beta2VideoSegment): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     

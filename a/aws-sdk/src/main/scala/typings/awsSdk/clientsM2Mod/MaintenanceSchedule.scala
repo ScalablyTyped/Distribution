@@ -23,7 +23,8 @@ object MaintenanceSchedule {
     __obj.asInstanceOf[MaintenanceSchedule]
   }
   
-  extension [Self <: MaintenanceSchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaintenanceSchedule] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

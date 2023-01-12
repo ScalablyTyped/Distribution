@@ -28,7 +28,8 @@ object ExtensionAuditLog {
     __obj.asInstanceOf[ExtensionAuditLog]
   }
   
-  extension [Self <: ExtensionAuditLog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionAuditLog] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: js.Array[ExtensionAuditLogEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

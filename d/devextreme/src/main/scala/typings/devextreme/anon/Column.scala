@@ -20,7 +20,8 @@ object Column {
     __obj.asInstanceOf[Column[TRowData, TKey]]
   }
   
-  extension [Self <: Column[?, ?], TRowData, TKey](x: Self & (Column[TRowData, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Column[?, ?], TRowData, TKey] (val x: Self & (Column[TRowData, TKey])) extends AnyVal {
     
     inline def setColumn(value: typings.devextreme.mod.DevExpress.ui.dxDataGrid.Column[TRowData, TKey]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

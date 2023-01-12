@@ -50,7 +50,8 @@ object ResultEvent {
     __obj.asInstanceOf[ResultEvent]
   }
   
-  extension [Self <: ResultEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultEvent] (val x: Self) extends AnyVal {
     
     inline def setDownload(value: DownloadUploadData): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     

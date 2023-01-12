@@ -45,7 +45,8 @@ object CSSFontPaletteValuesRule {
     __obj.asInstanceOf[CSSFontPaletteValuesRule]
   }
   
-  extension [Self <: CSSFontPaletteValuesRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSFontPaletteValuesRule] (val x: Self) extends AnyVal {
     
     inline def setBasePalette(value: java.lang.String): Self = StObject.set(x, "basePalette", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object Page {
     __obj.asInstanceOf[Page[TLength, TTime]]
   }
   
-  extension [Self <: Page[?, ?], TLength, TTime](x: Self & (Page[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Page[?, ?], TLength, TTime] (val x: Self & (Page[TLength, TTime])) extends AnyVal {
     
     inline def setBleed(value: Bleed[TLength]): Self = StObject.set(x, "bleed", value.asInstanceOf[js.Any])
     

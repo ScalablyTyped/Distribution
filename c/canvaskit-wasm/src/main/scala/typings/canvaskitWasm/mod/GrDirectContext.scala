@@ -32,7 +32,8 @@ object GrDirectContext {
     __obj.asInstanceOf[GrDirectContext]
   }
   
-  extension [Self <: GrDirectContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrDirectContext] (val x: Self) extends AnyVal {
     
     inline def setGetResourceCacheLimitBytes(value: () => Double): Self = StObject.set(x, "getResourceCacheLimitBytes", js.Any.fromFunction0(value))
     

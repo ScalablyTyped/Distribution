@@ -64,7 +64,8 @@ object inspection {
       __obj.asInstanceOf[DefaultComponentInspectorModel]
     }
     
-    extension [Self <: DefaultComponentInspectorModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultComponentInspectorModel] (val x: Self) extends AnyVal {
       
       inline def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
       

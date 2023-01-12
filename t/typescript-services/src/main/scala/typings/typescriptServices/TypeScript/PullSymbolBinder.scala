@@ -131,7 +131,8 @@ object PullSymbolBinder {
     __obj.asInstanceOf[PullSymbolBinder]
   }
   
-  extension [Self <: PullSymbolBinder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullSymbolBinder] (val x: Self) extends AnyVal {
     
     inline def setBindAllDeclsToPullSymbol(value: Any => Any): Self = StObject.set(x, "bindAllDeclsToPullSymbol", js.Any.fromFunction1(value))
     

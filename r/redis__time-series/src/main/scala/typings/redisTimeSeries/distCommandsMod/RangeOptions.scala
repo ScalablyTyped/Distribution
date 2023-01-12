@@ -27,7 +27,8 @@ object RangeOptions {
     __obj.asInstanceOf[RangeOptions]
   }
   
-  extension [Self <: RangeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeOptions] (val x: Self) extends AnyVal {
     
     inline def setAGGREGATION(value: BUCKETTIMESTAMP): Self = StObject.set(x, "AGGREGATION", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object typesDeleteQueueOutputMod {
       __obj.asInstanceOf[DeleteQueueOutput]
     }
     
-    extension [Self <: DeleteQueueOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteQueueOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }

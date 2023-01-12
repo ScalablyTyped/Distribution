@@ -33,7 +33,8 @@ object SnapshotSummary {
     __obj.asInstanceOf[SnapshotSummary]
   }
   
-  extension [Self <: SnapshotSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotSummary] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: js.Date): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     

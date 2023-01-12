@@ -280,7 +280,8 @@ object WizHook {
     __obj.asInstanceOf[WizHook]
   }
   
-  extension [Self <: WizHook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WizHook] (val x: Self) extends AnyVal {
     
     inline def setAccessDotWizHook_typekey(value: WizHook): Self = StObject.set(x, "Access.WizHook_typekey", value.asInstanceOf[js.Any])
     

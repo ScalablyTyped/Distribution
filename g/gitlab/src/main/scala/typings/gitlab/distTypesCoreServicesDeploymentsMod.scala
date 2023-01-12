@@ -73,7 +73,8 @@ object distTypesCoreServicesDeploymentsMod {
       __obj.asInstanceOf[Deployable]
     }
     
-    extension [Self <: Deployable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Deployable] (val x: Self) extends AnyVal {
       
       inline def setCommit(value: CommitSchema): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
       
@@ -144,7 +145,8 @@ object distTypesCoreServicesDeploymentsMod {
       __obj.asInstanceOf[DeploymentSchema]
     }
     
-    extension [Self <: DeploymentSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeploymentSchema] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

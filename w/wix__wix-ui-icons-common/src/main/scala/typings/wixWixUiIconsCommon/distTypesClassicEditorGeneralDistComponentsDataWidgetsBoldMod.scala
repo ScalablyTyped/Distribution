@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsDataWidgetsBoldMod extends Sho
       __obj.asInstanceOf[DataWidgetsBoldProps]
     }
     
-    extension [Self <: DataWidgetsBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataWidgetsBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

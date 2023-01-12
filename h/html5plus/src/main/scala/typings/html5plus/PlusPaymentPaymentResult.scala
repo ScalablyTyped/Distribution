@@ -67,7 +67,8 @@ object PlusPaymentPaymentResult {
     __obj.asInstanceOf[PlusPaymentPaymentResult]
   }
   
-  extension [Self <: PlusPaymentPaymentResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusPaymentPaymentResult] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: PlusPaymentPaymentChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

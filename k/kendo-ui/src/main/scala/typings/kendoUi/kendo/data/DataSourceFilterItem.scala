@@ -21,7 +21,8 @@ object DataSourceFilterItem {
     __obj.asInstanceOf[DataSourceFilterItem]
   }
   
-  extension [Self <: DataSourceFilterItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceFilterItem] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

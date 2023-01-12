@@ -23,7 +23,8 @@ object GetAccessKeyLastUsedResponse {
     __obj.asInstanceOf[GetAccessKeyLastUsedResponse]
   }
   
-  extension [Self <: GetAccessKeyLastUsedResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAccessKeyLastUsedResponse] (val x: Self) extends AnyVal {
     
     inline def setAccessKeyLastUsed(value: AccessKeyLastUsed): Self = StObject.set(x, "AccessKeyLastUsed", value.asInstanceOf[js.Any])
     

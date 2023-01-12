@@ -19,7 +19,8 @@ object FilterGroup {
     __obj.asInstanceOf[FilterGroup]
   }
   
-  extension [Self <: FilterGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterGroup] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object SortableStartEvent {
     __obj.asInstanceOf[SortableStartEvent]
   }
   
-  extension [Self <: SortableStartEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortableStartEvent] (val x: Self) extends AnyVal {
     
     inline def setDraggableEvent(value: Any): Self = StObject.set(x, "draggableEvent", value.asInstanceOf[js.Any])
     

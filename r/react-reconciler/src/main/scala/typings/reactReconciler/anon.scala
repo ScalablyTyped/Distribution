@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Children[T]]
     }
     
-    extension [Self <: Children[?], T](x: Self & Children[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children[?], T] (val x: Self & Children[T]) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Disconnect]
     }
     
-    extension [Self <: Disconnect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Disconnect] (val x: Self) extends AnyVal {
       
       inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
     }
@@ -66,7 +68,8 @@ object anon {
       __obj.asInstanceOf[EndTime]
     }
     
-    extension [Self <: EndTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndTime] (val x: Self) extends AnyVal {
       
       inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
@@ -93,7 +96,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -114,7 +118,8 @@ object anon {
       __obj.asInstanceOf[Ratio]
     }
     
-    extension [Self <: Ratio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ratio] (val x: Self) extends AnyVal {
       
       inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
       
@@ -133,7 +138,8 @@ object anon {
       __obj.asInstanceOf[StringRef]
     }
     
-    extension [Self <: StringRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringRef] (val x: Self) extends AnyVal {
       
       inline def set_stringRef(value: String): Self = StObject.set(x, "_stringRef", value.asInstanceOf[js.Any])
       
@@ -156,7 +162,8 @@ object anon {
       __obj.asInstanceOf[UnstableobservedBits[T]]
     }
     
-    extension [Self <: UnstableobservedBits[?], T](x: Self & UnstableobservedBits[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnstableobservedBits[?], T] (val x: Self & UnstableobservedBits[T]) extends AnyVal {
       
       inline def setChildren(value: T => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       

@@ -21,7 +21,8 @@ object WorkItemRelationType {
     __obj.asInstanceOf[WorkItemRelationType]
   }
   
-  extension [Self <: WorkItemRelationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemRelationType] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: StringDictionary[Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
   }

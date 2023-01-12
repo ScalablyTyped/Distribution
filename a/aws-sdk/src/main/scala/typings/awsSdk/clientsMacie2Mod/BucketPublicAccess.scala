@@ -23,7 +23,8 @@ object BucketPublicAccess {
     __obj.asInstanceOf[BucketPublicAccess]
   }
   
-  extension [Self <: BucketPublicAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketPublicAccess] (val x: Self) extends AnyVal {
     
     inline def setEffectivePermission(value: EffectivePermission): Self = StObject.set(x, "effectivePermission", value.asInstanceOf[js.Any])
     

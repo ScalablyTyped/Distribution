@@ -71,7 +71,8 @@ object BuildDefinitionReference {
     __obj.asInstanceOf[BuildDefinitionReference]
   }
   
-  extension [Self <: BuildDefinitionReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildDefinitionReference] (val x: Self) extends AnyVal {
     
     inline def setAuthoredBy(value: IdentityRef): Self = StObject.set(x, "authoredBy", value.asInstanceOf[js.Any])
     

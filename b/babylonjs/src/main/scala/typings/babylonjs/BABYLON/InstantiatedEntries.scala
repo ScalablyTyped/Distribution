@@ -32,7 +32,8 @@ object InstantiatedEntries {
     __obj.asInstanceOf[InstantiatedEntries]
   }
   
-  extension [Self <: InstantiatedEntries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstantiatedEntries] (val x: Self) extends AnyVal {
     
     inline def setAnimationGroups(value: js.Array[AnimationGroup]): Self = StObject.set(x, "animationGroups", value.asInstanceOf[js.Any])
     

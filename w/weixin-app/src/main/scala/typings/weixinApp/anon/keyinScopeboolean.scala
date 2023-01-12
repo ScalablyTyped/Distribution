@@ -65,7 +65,8 @@ object keyinScopeboolean {
     __obj.asInstanceOf[keyinScopeboolean]
   }
   
-  extension [Self <: keyinScopeboolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: keyinScopeboolean] (val x: Self) extends AnyVal {
     
     inline def setScopeDotaddress(value: Boolean): Self = StObject.set(x, "scope.address", value.asInstanceOf[js.Any])
     

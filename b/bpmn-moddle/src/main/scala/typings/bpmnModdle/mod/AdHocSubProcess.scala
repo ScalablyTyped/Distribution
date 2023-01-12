@@ -51,7 +51,8 @@ object AdHocSubProcess {
     __obj.asInstanceOf[AdHocSubProcess]
   }
   
-  extension [Self <: AdHocSubProcess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdHocSubProcess] (val x: Self) extends AnyVal {
     
     inline def setCancelRemainingInstances(value: Boolean): Self = StObject.set(x, "cancelRemainingInstances", value.asInstanceOf[js.Any])
     

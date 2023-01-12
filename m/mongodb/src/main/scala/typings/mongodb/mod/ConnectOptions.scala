@@ -15,7 +15,8 @@ object ConnectOptions {
     __obj.asInstanceOf[ConnectOptions]
   }
   
-  extension [Self <: ConnectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectOptions] (val x: Self) extends AnyVal {
     
     inline def setReadPreference(value: ReadPreference): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object DescribeProvisioningParametersOutput {
     __obj.asInstanceOf[DescribeProvisioningParametersOutput]
   }
   
-  extension [Self <: DescribeProvisioningParametersOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeProvisioningParametersOutput] (val x: Self) extends AnyVal {
     
     inline def setConstraintSummaries(value: ConstraintSummaries): Self = StObject.set(x, "ConstraintSummaries", value.asInstanceOf[js.Any])
     

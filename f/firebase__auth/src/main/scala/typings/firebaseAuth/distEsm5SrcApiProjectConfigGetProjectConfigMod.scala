@@ -27,7 +27,8 @@ object distEsm5SrcApiProjectConfigGetProjectConfigMod {
       __obj.asInstanceOf[GetProjectConfigRequest]
     }
     
-    extension [Self <: GetProjectConfigRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetProjectConfigRequest] (val x: Self) extends AnyVal {
       
       inline def setAndroidPackageName(value: String): Self = StObject.set(x, "androidPackageName", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object distEsm5SrcApiProjectConfigGetProjectConfigMod {
       __obj.asInstanceOf[GetProjectConfigResponse]
     }
     
-    extension [Self <: GetProjectConfigResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetProjectConfigResponse] (val x: Self) extends AnyVal {
       
       inline def setAuthorizedDomains(value: js.Array[String]): Self = StObject.set(x, "authorizedDomains", value.asInstanceOf[js.Any])
       

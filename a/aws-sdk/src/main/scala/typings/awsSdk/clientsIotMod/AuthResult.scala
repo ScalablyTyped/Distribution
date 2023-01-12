@@ -38,7 +38,8 @@ object AuthResult {
     __obj.asInstanceOf[AuthResult]
   }
   
-  extension [Self <: AuthResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthResult] (val x: Self) extends AnyVal {
     
     inline def setAllowed(value: Allowed): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
     

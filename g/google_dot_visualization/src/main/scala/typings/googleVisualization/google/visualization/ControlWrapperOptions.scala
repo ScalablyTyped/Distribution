@@ -21,7 +21,8 @@ object ControlWrapperOptions {
     __obj.asInstanceOf[ControlWrapperOptions]
   }
   
-  extension [Self <: ControlWrapperOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlWrapperOptions] (val x: Self) extends AnyVal {
     
     inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object Graphics {
       __obj.asInstanceOf[FillStyle]
     }
     
-    extension [Self <: FillStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FillStyle] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object Graphics {
       __obj.asInstanceOf[LineStyle]
     }
     
-    extension [Self <: LineStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineStyle] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -107,7 +109,8 @@ object Graphics {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -148,7 +151,8 @@ object Graphics {
       __obj.asInstanceOf[RoundedRectRadius]
     }
     
-    extension [Self <: RoundedRectRadius](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoundedRectRadius] (val x: Self) extends AnyVal {
       
       inline def setBl(value: Double): Self = StObject.set(x, "bl", value.asInstanceOf[js.Any])
       
@@ -190,7 +194,8 @@ object Graphics {
       __obj.asInstanceOf[Styles]
     }
     
-    extension [Self <: Styles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Styles] (val x: Self) extends AnyVal {
       
       inline def setFillStyle(value: FillStyle): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
       

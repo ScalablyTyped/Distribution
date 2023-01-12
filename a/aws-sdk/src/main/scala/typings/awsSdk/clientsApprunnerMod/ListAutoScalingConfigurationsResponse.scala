@@ -23,7 +23,8 @@ object ListAutoScalingConfigurationsResponse {
     __obj.asInstanceOf[ListAutoScalingConfigurationsResponse]
   }
   
-  extension [Self <: ListAutoScalingConfigurationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAutoScalingConfigurationsResponse] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingConfigurationSummaryList(value: AutoScalingConfigurationSummaryList): Self = StObject.set(x, "AutoScalingConfigurationSummaryList", value.asInstanceOf[js.Any])
     

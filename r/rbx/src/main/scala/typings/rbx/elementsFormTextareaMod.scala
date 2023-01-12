@@ -93,7 +93,8 @@ object elementsFormTextareaMod {
       __obj.asInstanceOf[TextareaModifierProps]
     }
     
-    extension [Self <: TextareaModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextareaModifierProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -207,7 +208,8 @@ object elementsFormTextareaMod {
       __obj.asInstanceOf[TextareaProps]
     }
     
-    extension [Self <: TextareaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextareaProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
@@ -377,7 +379,8 @@ object elementsFormTextareaMod {
       __obj.asInstanceOf[TextareaVariables]
     }
     
-    extension [Self <: TextareaVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextareaVariables] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: small | medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
@@ -398,7 +401,8 @@ object elementsFormTextareaMod {
       __obj.asInstanceOf[TextareaVariablesDefaults]
     }
     
-    extension [Self <: TextareaVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextareaVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: small | medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       

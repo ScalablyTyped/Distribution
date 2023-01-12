@@ -24,7 +24,8 @@ object BytesCid {
     __obj.asInstanceOf[BytesCid[T, Code, Alg, V]]
   }
   
-  extension [Self <: BytesCid[?, ?, ?, ?], T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */](x: Self & (BytesCid[T, Code, Alg, V])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BytesCid[?, ?, ?, ?], T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */] (val x: Self & (BytesCid[T, Code, Alg, V])) extends AnyVal {
     
     inline def setBytes(value: ByteView[T]): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[AddBaseLayer]
     }
     
-    extension [Self <: AddBaseLayer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddBaseLayer] (val x: Self) extends AnyVal {
       
       inline def setAddBaseLayer(value: (/* layer */ Layer, /* name */ String, /* checked */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "addBaseLayer", js.Any.fromFunction3(value))
       
@@ -59,7 +60,8 @@ object anon {
       __obj.asInstanceOf[ClassName]
     }
     
-    extension [Self <: ClassName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -82,7 +84,8 @@ object anon {
       __obj.asInstanceOf[Popup[E]]
     }
     
-    extension [Self <: Popup[?], E /* <: Popup_ */](x: Self & Popup[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Popup[?], E /* <: Popup_ */] (val x: Self & Popup[E]) extends AnyVal {
       
       inline def setPopup(value: E): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     }
@@ -99,7 +102,8 @@ object anon {
       __obj.asInstanceOf[PopupContainer[E]]
     }
     
-    extension [Self <: PopupContainer[?], E /* <: Path */](x: Self & PopupContainer[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupContainer[?], E /* <: Path */] (val x: Self & PopupContainer[E]) extends AnyVal {
       
       inline def setPopupContainer(value: E): Self = StObject.set(x, "popupContainer", value.asInstanceOf[js.Any])
     }
@@ -116,7 +120,8 @@ object anon {
       __obj.asInstanceOf[Tooltip[E]]
     }
     
-    extension [Self <: Tooltip[?], E /* <: Tooltip_ */](x: Self & Tooltip[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tooltip[?], E /* <: Tooltip_ */] (val x: Self & Tooltip[E]) extends AnyVal {
       
       inline def setTooltip(value: E): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     }

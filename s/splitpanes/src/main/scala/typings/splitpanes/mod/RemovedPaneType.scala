@@ -18,7 +18,8 @@ object RemovedPaneType {
     __obj.asInstanceOf[RemovedPaneType]
   }
   
-  extension [Self <: RemovedPaneType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemovedPaneType] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }

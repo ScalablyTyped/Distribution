@@ -91,7 +91,8 @@ object mod {
       __obj.asInstanceOf[Converter[TConv]]
     }
     
-    extension [Self <: Converter[?], TConv](x: Self & Converter[TConv]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Converter[?], TConv] (val x: Self & Converter[TConv]) extends AnyVal {
       
       inline def setRead(value: (/* value */ String, /* name */ String) => String | TConv): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
       
@@ -149,7 +150,8 @@ object mod {
       __obj.asInstanceOf[CookieAttributes]
     }
     
-    extension [Self <: CookieAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieAttributes] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       

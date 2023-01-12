@@ -19,7 +19,8 @@ object RunOptions {
     __obj.asInstanceOf[RunOptions]
   }
   
-  extension [Self <: RunOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunOptions] (val x: Self) extends AnyVal {
     
     inline def setRepeatView(value: Boolean): Self = StObject.set(x, "repeatView", value.asInstanceOf[js.Any])
     

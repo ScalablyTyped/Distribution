@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[MicrosoftStrategyOptions]
     }
     
-    extension [Self <: MicrosoftStrategyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MicrosoftStrategyOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthorizationURL(value: String): Self = StObject.set(x, "authorizationURL", value.asInstanceOf[js.Any])
       
@@ -164,7 +165,8 @@ object mod {
       __obj.asInstanceOf[MicrosoftStrategyOptionsWithRequest]
     }
     
-    extension [Self <: MicrosoftStrategyOptionsWithRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MicrosoftStrategyOptionsWithRequest] (val x: Self) extends AnyVal {
       
       inline def setAuthorizationURL(value: String): Self = StObject.set(x, "authorizationURL", value.asInstanceOf[js.Any])
       

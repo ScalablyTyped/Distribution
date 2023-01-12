@@ -432,7 +432,8 @@ object sapUiCommonsToolbarMod {
       __obj.asInstanceOf[ToolbarSettings]
     }
     
-    extension [Self <: ToolbarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarSettings] (val x: Self) extends AnyVal {
       
       inline def setDesign(
         value: ToolbarDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ToolbarDesign * / any */ String) | PropertyBindingInfo

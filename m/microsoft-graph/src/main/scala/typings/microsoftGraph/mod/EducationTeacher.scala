@@ -19,7 +19,8 @@ object EducationTeacher {
     __obj.asInstanceOf[EducationTeacher]
   }
   
-  extension [Self <: EducationTeacher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EducationTeacher] (val x: Self) extends AnyVal {
     
     inline def setExternalId(value: NullableOption[String]): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     

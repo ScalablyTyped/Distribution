@@ -19,7 +19,8 @@ object RawOutput {
     __obj.asInstanceOf[RawOutput]
   }
   
-  extension [Self <: RawOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RawOutput] (val x: Self) extends AnyVal {
     
     inline def setType(value: raw): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

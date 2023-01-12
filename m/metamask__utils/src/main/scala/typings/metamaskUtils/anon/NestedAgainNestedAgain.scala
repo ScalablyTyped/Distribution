@@ -15,7 +15,8 @@ object NestedAgainNestedAgain {
     __obj.asInstanceOf[NestedAgainNestedAgain]
   }
   
-  extension [Self <: NestedAgainNestedAgain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NestedAgainNestedAgain] (val x: Self) extends AnyVal {
     
     inline def setNestedAgain(value: NestedAgain): Self = StObject.set(x, "nestedAgain", value.asInstanceOf[js.Any])
   }

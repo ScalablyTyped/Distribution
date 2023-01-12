@@ -65,7 +65,8 @@ object buildSrcTemporalMod {
       __obj.asInstanceOf[DurationLike]
     }
     
-    extension [Self <: DurationLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DurationLike] (val x: Self) extends AnyVal {
       
       inline def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object AssociateDeviceWithRoomRequest {
     __obj.asInstanceOf[AssociateDeviceWithRoomRequest]
   }
   
-  extension [Self <: AssociateDeviceWithRoomRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateDeviceWithRoomRequest] (val x: Self) extends AnyVal {
     
     inline def setDeviceArn(value: Arn): Self = StObject.set(x, "DeviceArn", value.asInstanceOf[js.Any])
     

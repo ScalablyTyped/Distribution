@@ -35,7 +35,8 @@ object IAxisTitle {
     __obj.asInstanceOf[IAxisTitle]
   }
   
-  extension [Self <: IAxisTitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAxisTitle] (val x: Self) extends AnyVal {
     
     inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
   }

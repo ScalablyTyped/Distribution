@@ -56,7 +56,8 @@ object tabLinkMod {
       __obj.asInstanceOf[TabLinkProps]
     }
     
-    extension [Self <: TabLinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabLinkProps] (val x: Self) extends AnyVal {
       
       inline def setActiveClassName(value: String): Self = StObject.set(x, "activeClassName", value.asInstanceOf[js.Any])
       

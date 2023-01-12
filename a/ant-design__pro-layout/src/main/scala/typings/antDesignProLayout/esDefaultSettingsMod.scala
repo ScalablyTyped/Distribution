@@ -122,7 +122,8 @@ object esDefaultSettingsMod {
       __obj.asInstanceOf[PureSettings]
     }
     
-    extension [Self <: PureSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PureSettings] (val x: Self) extends AnyVal {
       
       inline def setColorPrimary(value: String): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
       
@@ -191,7 +192,8 @@ object esDefaultSettingsMod {
       __obj.asInstanceOf[RenderSetting]
     }
     
-    extension [Self <: RenderSetting](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderSetting] (val x: Self) extends AnyVal {
       
       inline def setFooterRender(value: `false`): Self = StObject.set(x, "footerRender", value.asInstanceOf[js.Any])
       

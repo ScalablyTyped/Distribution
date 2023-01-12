@@ -27,7 +27,8 @@ object ExcludeComponents {
     __obj.asInstanceOf[ExcludeComponents]
   }
   
-  extension [Self <: ExcludeComponents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExcludeComponents] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

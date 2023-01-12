@@ -43,7 +43,8 @@ object InAppMessageContent {
     __obj.asInstanceOf[InAppMessageContent]
   }
   
-  extension [Self <: InAppMessageContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InAppMessageContent] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: string): Self = StObject.set(x, "BackgroundColor", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PartialaddGlobalClassbool {
     __obj.asInstanceOf[PartialaddGlobalClassbool]
   }
   
-  extension [Self <: PartialaddGlobalClassbool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialaddGlobalClassbool] (val x: Self) extends AnyVal {
     
     inline def setAddGlobalClass(value: Boolean): Self = StObject.set(x, "addGlobalClass", value.asInstanceOf[js.Any])
     

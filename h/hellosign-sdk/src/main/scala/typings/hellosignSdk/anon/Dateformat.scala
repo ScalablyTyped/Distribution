@@ -23,7 +23,8 @@ object Dateformat {
     __obj.asInstanceOf[Dateformat]
   }
   
-  extension [Self <: Dateformat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dateformat] (val x: Self) extends AnyVal {
     
     inline def setDate_format(
       value: (`MM Slash DD Slash YYYY`) | (`MM - DD - YYYY`) | (`DD Slash MM Slash YYYY`) | (`DD - MM - YYYY`) | (`YYYY Slash MM Slash DD`) | (`YYYY - MM - DD`)

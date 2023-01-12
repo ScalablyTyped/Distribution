@@ -33,7 +33,8 @@ object PartialSystemany {
     __obj.asInstanceOf[PartialSystemany]
   }
   
-  extension [Self <: PartialSystemany](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSystemany] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

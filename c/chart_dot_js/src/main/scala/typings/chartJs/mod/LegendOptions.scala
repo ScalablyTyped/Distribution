@@ -101,7 +101,8 @@ object LegendOptions {
     __obj.asInstanceOf[LegendOptions[TType]]
   }
   
-  extension [Self <: LegendOptions[?], TType /* <: ChartType */](x: Self & LegendOptions[TType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendOptions[?], TType /* <: ChartType */] (val x: Self & LegendOptions[TType]) extends AnyVal {
     
     inline def setAlign(value: Align): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

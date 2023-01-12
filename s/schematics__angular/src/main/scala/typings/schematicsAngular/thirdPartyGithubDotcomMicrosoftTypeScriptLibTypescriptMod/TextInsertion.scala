@@ -18,7 +18,8 @@ object TextInsertion {
     __obj.asInstanceOf[TextInsertion]
   }
   
-  extension [Self <: TextInsertion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextInsertion] (val x: Self) extends AnyVal {
     
     inline def setCaretOffset(value: Double): Self = StObject.set(x, "caretOffset", value.asInstanceOf[js.Any])
     

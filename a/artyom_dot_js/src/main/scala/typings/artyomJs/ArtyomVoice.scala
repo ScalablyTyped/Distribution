@@ -23,7 +23,8 @@ object ArtyomVoice {
     __obj.asInstanceOf[ArtyomVoice]
   }
   
-  extension [Self <: ArtyomVoice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtyomVoice] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object EmphasisItemStyle {
     __obj.asInstanceOf[EmphasisItemStyle]
   }
   
-  extension [Self <: EmphasisItemStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmphasisItemStyle] (val x: Self) extends AnyVal {
     
     inline def setEmphasis(value: `9`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
     

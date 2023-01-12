@@ -31,7 +31,8 @@ object IdFilter {
     __obj.asInstanceOf[IdFilter]
   }
   
-  extension [Self <: IdFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdFilter] (val x: Self) extends AnyVal {
     
     inline def setAdGroupAdIds(value: js.Array[String]): Self = StObject.set(x, "adGroupAdIds", value.asInstanceOf[js.Any])
     

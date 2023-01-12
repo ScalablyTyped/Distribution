@@ -34,7 +34,8 @@ object XIndexReplace {
     __obj.asInstanceOf[XIndexReplace]
   }
   
-  extension [Self <: XIndexReplace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIndexReplace] (val x: Self) extends AnyVal {
     
     inline def setReplaceByIndex(value: (Double, Any) => Unit): Self = StObject.set(x, "replaceByIndex", js.Any.fromFunction2(value))
   }

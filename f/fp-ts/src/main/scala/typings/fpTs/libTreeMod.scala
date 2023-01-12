@@ -421,7 +421,8 @@ object libTreeMod {
       __obj.asInstanceOf[Tree_[A]]
     }
     
-    extension [Self <: Tree_[?], A](x: Self & Tree_[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tree_[?], A] (val x: Self & Tree_[A]) extends AnyVal {
       
       inline def setForest(value: Forest[A]): Self = StObject.set(x, "forest", value.asInstanceOf[js.Any])
       

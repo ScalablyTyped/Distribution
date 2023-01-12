@@ -35,7 +35,8 @@ object GetFilesOptions {
     __obj.asInstanceOf[GetFilesOptions]
   }
   
-  extension [Self <: GetFilesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFilesOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoPaginate(value: Boolean): Self = StObject.set(x, "autoPaginate", value.asInstanceOf[js.Any])
     

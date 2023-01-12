@@ -51,7 +51,8 @@ object Polyline {
     __obj.asInstanceOf[Polyline]
   }
   
-  extension [Self <: Polyline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Polyline] (val x: Self) extends AnyVal {
     
     inline def setGetBounds(value: () => Bounds): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
     

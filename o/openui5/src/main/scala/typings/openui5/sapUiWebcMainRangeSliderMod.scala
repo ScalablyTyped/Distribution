@@ -750,7 +750,8 @@ object sapUiWebcMainRangeSliderMod {
       __obj.asInstanceOf[RangeSliderSettings]
     }
     
-    extension [Self <: RangeSliderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeSliderSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibleName(value: String | PropertyBindingInfo): Self = StObject.set(x, "accessibleName", value.asInstanceOf[js.Any])
       

@@ -96,7 +96,8 @@ object distWithFormikMod {
       __obj.asInstanceOf[WithFormikConfig[Props, Values, DeprecatedPayload]]
     }
     
-    extension [Self <: WithFormikConfig[?, ?, ?], Props, Values /* <: FormikValues */, DeprecatedPayload](x: Self & (WithFormikConfig[Props, Values, DeprecatedPayload])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithFormikConfig[?, ?, ?], Props, Values /* <: FormikValues */, DeprecatedPayload] (val x: Self & (WithFormikConfig[Props, Values, DeprecatedPayload])) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       

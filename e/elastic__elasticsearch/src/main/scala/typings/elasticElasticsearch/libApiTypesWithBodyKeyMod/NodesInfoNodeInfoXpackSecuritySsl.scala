@@ -16,7 +16,8 @@ object NodesInfoNodeInfoXpackSecuritySsl {
     __obj.asInstanceOf[NodesInfoNodeInfoXpackSecuritySsl]
   }
   
-  extension [Self <: NodesInfoNodeInfoXpackSecuritySsl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoXpackSecuritySsl] (val x: Self) extends AnyVal {
     
     inline def setSsl(value: Record[String, String]): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
   }

@@ -46,7 +46,8 @@ object componentsNumberInputNumberInputMod {
       __obj.asInstanceOf[NumberInput]
     }
     
-    extension [Self <: NumberInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberInput] (val x: Self) extends AnyVal {
       
       inline def set_handleClick(value: MouseEvent => Unit): Self = StObject.set(x, "_handleClick", js.Any.fromFunction1(value))
     }
@@ -65,7 +66,8 @@ object componentsNumberInputNumberInputMod {
       __obj.asInstanceOf[NumberInputOptions]
     }
     
-    extension [Self <: NumberInputOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberInputOptions] (val x: Self) extends AnyVal {
       
       inline def setSelectorInit(value: String): Self = StObject.set(x, "selectorInit", value.asInstanceOf[js.Any])
       

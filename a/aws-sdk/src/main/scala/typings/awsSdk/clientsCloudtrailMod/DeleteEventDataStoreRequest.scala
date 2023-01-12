@@ -18,7 +18,8 @@ object DeleteEventDataStoreRequest {
     __obj.asInstanceOf[DeleteEventDataStoreRequest]
   }
   
-  extension [Self <: DeleteEventDataStoreRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEventDataStoreRequest] (val x: Self) extends AnyVal {
     
     inline def setEventDataStore(value: EventDataStoreArn): Self = StObject.set(x, "EventDataStore", value.asInstanceOf[js.Any])
   }

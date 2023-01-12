@@ -19,7 +19,8 @@ object BundleProgress {
     __obj.asInstanceOf[BundleProgress[R]]
   }
   
-  extension [Self <: BundleProgress[?], R](x: Self & BundleProgress[R]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BundleProgress[?], R] (val x: Self & BundleProgress[R]) extends AnyVal {
     
     inline def setPayload(value: Progress[R]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object HemisphericParticleEmitter {
     __obj.asInstanceOf[HemisphericParticleEmitter]
   }
   
-  extension [Self <: HemisphericParticleEmitter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HemisphericParticleEmitter] (val x: Self) extends AnyVal {
     
     inline def setDirectionRandomizer(value: Double): Self = StObject.set(x, "directionRandomizer", value.asInstanceOf[js.Any])
     

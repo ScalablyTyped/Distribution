@@ -23,7 +23,8 @@ object PseudoSelector {
     __obj.asInstanceOf[PseudoSelector]
   }
   
-  extension [Self <: PseudoSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PseudoSelector] (val x: Self) extends AnyVal {
     
     inline def setData(value: DataType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

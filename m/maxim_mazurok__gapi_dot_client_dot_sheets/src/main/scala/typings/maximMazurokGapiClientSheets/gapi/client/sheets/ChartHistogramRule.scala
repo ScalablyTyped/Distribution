@@ -25,7 +25,8 @@ object ChartHistogramRule {
     __obj.asInstanceOf[ChartHistogramRule]
   }
   
-  extension [Self <: ChartHistogramRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartHistogramRule] (val x: Self) extends AnyVal {
     
     inline def setIntervalSize(value: Double): Self = StObject.set(x, "intervalSize", value.asInstanceOf[js.Any])
     

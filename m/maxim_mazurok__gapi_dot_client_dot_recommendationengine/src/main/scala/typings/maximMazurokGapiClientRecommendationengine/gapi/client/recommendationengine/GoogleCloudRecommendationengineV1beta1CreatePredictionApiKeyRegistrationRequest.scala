@@ -16,7 +16,8 @@ object GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationR
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationRequest]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationRequest] (val x: Self) extends AnyVal {
     
     inline def setPredictionApiKeyRegistration(value: GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration): Self = StObject.set(x, "predictionApiKeyRegistration", value.asInstanceOf[js.Any])
     

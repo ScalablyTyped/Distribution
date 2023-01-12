@@ -39,7 +39,8 @@ object PackFileSection {
     __obj.asInstanceOf[PackFileSection]
   }
   
-  extension [Self <: PackFileSection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackFileSection] (val x: Self) extends AnyVal {
     
     inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
     

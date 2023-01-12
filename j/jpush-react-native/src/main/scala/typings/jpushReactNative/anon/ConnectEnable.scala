@@ -15,7 +15,8 @@ object ConnectEnable {
     __obj.asInstanceOf[ConnectEnable]
   }
   
-  extension [Self <: ConnectEnable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectEnable] (val x: Self) extends AnyVal {
     
     inline def setConnectEnable(value: Boolean): Self = StObject.set(x, "connectEnable", value.asInstanceOf[js.Any])
   }

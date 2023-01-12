@@ -35,7 +35,8 @@ object NavigationBreadcrumbsPositionOptions {
     __obj.asInstanceOf[NavigationBreadcrumbsPositionOptions]
   }
   
-  extension [Self <: NavigationBreadcrumbsPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationBreadcrumbsPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object DroppableCollectionReorderEvent {
     __obj.asInstanceOf[DroppableCollectionReorderEvent]
   }
   
-  extension [Self <: DroppableCollectionReorderEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DroppableCollectionReorderEvent] (val x: Self) extends AnyVal {
     
     inline def setDropOperation(value: DropOperation): Self = StObject.set(x, "dropOperation", value.asInstanceOf[js.Any])
     

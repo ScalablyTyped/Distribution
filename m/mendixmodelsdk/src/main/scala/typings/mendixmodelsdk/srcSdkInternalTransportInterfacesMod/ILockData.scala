@@ -23,7 +23,8 @@ object ILockData {
     __obj.asInstanceOf[ILockData]
   }
   
-  extension [Self <: ILockData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILockData] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

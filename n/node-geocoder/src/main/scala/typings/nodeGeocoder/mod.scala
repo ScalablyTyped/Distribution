@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[AgolOptions]
     }
     
-    extension [Self <: AgolOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AgolOptions] (val x: Self) extends AnyVal {
       
       inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object mod {
       __obj.asInstanceOf[BaseOptions]
     }
     
-    extension [Self <: BaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
       
       inline def setFormatter(value: Any): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
       
@@ -125,7 +127,8 @@ object mod {
       __obj.asInstanceOf[BatchResult]
     }
     
-    extension [Self <: BatchResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchResult] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -178,7 +181,8 @@ object mod {
       __obj.asInstanceOf[Entry]
     }
     
-    extension [Self <: Entry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
       
       inline def setAdministrativeLevels(value: Level1long): Self = StObject.set(x, "administrativeLevels", value.asInstanceOf[js.Any])
       
@@ -267,7 +271,8 @@ object mod {
       __obj.asInstanceOf[GenericOptions]
     }
     
-    extension [Self <: GenericOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericOptions] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -308,7 +313,8 @@ object mod {
       __obj.asInstanceOf[GoogleOptions]
     }
     
-    extension [Self <: GoogleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GoogleOptions] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -365,7 +371,8 @@ object mod {
       __obj.asInstanceOf[HereOptions]
     }
     
-    extension [Self <: HereOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HereOptions] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -412,7 +419,8 @@ object mod {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
       
@@ -437,7 +445,8 @@ object mod {
       __obj.asInstanceOf[OpenDataFranceOptions]
     }
     
-    extension [Self <: OpenDataFranceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenDataFranceOptions] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -474,7 +483,8 @@ object mod {
       __obj.asInstanceOf[OpenStreetMapOptions]
     }
     
-    extension [Self <: OpenStreetMapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenStreetMapOptions] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -564,7 +574,8 @@ object mod {
       __obj.asInstanceOf[Query]
     }
     
-    extension [Self <: Query](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -607,7 +618,8 @@ object mod {
       __obj.asInstanceOf[SmartyStreetsOptions]
     }
     
-    extension [Self <: SmartyStreetsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SmartyStreetsOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth_id(value: String): Self = StObject.set(x, "auth_id", value.asInstanceOf[js.Any])
       

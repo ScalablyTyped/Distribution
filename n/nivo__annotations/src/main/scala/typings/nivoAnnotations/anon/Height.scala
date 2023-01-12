@@ -61,7 +61,8 @@ object Height {
     __obj.asInstanceOf[Height[Datum]]
   }
   
-  extension [Self <: Height[?], Datum](x: Self & Height[Datum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Height[?], Datum] (val x: Self & Height[Datum]) extends AnyVal {
     
     inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     

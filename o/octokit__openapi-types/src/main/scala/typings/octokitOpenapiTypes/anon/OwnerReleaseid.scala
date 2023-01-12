@@ -22,7 +22,8 @@ object OwnerReleaseid {
     __obj.asInstanceOf[OwnerReleaseid]
   }
   
-  extension [Self <: OwnerReleaseid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OwnerReleaseid] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object TypeofRLP {
     __obj.asInstanceOf[TypeofRLP]
   }
   
-  extension [Self <: TypeofRLP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofRLP] (val x: Self) extends AnyVal {
     
     inline def setDecode(value: BytesLike => Any): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     

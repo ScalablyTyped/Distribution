@@ -30,7 +30,8 @@ object SearchHitsContainer {
     __obj.asInstanceOf[SearchHitsContainer]
   }
   
-  extension [Self <: SearchHitsContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchHitsContainer] (val x: Self) extends AnyVal {
     
     inline def setAggregations(value: NullableOption[js.Array[SearchAggregation]]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
     

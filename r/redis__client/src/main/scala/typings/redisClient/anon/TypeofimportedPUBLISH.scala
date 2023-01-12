@@ -22,7 +22,8 @@ object TypeofimportedPUBLISH {
     __obj.asInstanceOf[TypeofimportedPUBLISH]
   }
   
-  extension [Self <: TypeofimportedPUBLISH](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofimportedPUBLISH] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: (RedisCommandArgument, RedisCommandArgument) => RedisCommandArguments): Self = StObject.set(x, "transformArguments", js.Any.fromFunction2(value))
     

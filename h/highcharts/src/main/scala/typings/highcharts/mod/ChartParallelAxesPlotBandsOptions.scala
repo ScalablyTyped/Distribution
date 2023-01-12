@@ -104,7 +104,8 @@ object ChartParallelAxesPlotBandsOptions {
     __obj.asInstanceOf[ChartParallelAxesPlotBandsOptions]
   }
   
-  extension [Self <: ChartParallelAxesPlotBandsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartParallelAxesPlotBandsOptions] (val x: Self) extends AnyVal {
     
     inline def setAcrossPanes(value: Boolean): Self = StObject.set(x, "acrossPanes", value.asInstanceOf[js.Any])
     

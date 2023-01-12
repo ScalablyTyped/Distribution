@@ -68,7 +68,8 @@ object CoinsFetchDataTicker {
     __obj.asInstanceOf[CoinsFetchDataTicker]
   }
   
-  extension [Self <: CoinsFetchDataTicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoinsFetchDataTicker] (val x: Self) extends AnyVal {
     
     inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

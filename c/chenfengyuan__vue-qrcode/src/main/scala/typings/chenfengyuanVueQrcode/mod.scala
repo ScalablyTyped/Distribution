@@ -28,7 +28,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[QrCodeConstructor]
     }
     
-    extension [Self <: QrCodeConstructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QrCodeConstructor] (val x: Self) extends AnyVal {
       
       inline def setMethods(value: QrCodeMethods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[QrCodeMethods]
     }
     
-    extension [Self <: QrCodeMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QrCodeMethods] (val x: Self) extends AnyVal {
       
       inline def setGenerate(value: () => Unit): Self = StObject.set(x, "generate", js.Any.fromFunction0(value))
     }
@@ -74,7 +76,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[QrCodePorps]
     }
     
-    extension [Self <: QrCodePorps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QrCodePorps] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Color): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -98,7 +101,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[QrCodeWatch]
     }
     
-    extension [Self <: QrCodeWatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QrCodeWatch] (val x: Self) extends AnyVal {
       
       inline def set$props(value: Any => Unit): Self = StObject.set(x, "$props", js.Any.fromFunction1(value))
     }

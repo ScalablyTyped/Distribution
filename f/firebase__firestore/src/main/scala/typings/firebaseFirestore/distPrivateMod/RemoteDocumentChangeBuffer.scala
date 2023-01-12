@@ -115,7 +115,8 @@ object RemoteDocumentChangeBuffer {
     __obj.asInstanceOf[RemoteDocumentChangeBuffer]
   }
   
-  extension [Self <: RemoteDocumentChangeBuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteDocumentChangeBuffer] (val x: Self) extends AnyVal {
     
     inline def setAddEntry(value: MutableDocument => Unit): Self = StObject.set(x, "addEntry", js.Any.fromFunction1(value))
     

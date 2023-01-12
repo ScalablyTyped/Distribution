@@ -23,7 +23,8 @@ object CustomAuthCredentials {
     __obj.asInstanceOf[CustomAuthCredentials]
   }
   
-  extension [Self <: CustomAuthCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomAuthCredentials] (val x: Self) extends AnyVal {
     
     inline def setCredentialsMap(value: CredentialsMap): Self = StObject.set(x, "credentialsMap", value.asInstanceOf[js.Any])
     

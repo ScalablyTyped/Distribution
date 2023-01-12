@@ -9975,7 +9975,8 @@ object CSSPropertiesPartialRecorActivecolor {
     __obj.asInstanceOf[CSSPropertiesPartialRecorActivecolor]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorActivecolor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorActivecolor] (val x: Self) extends AnyVal {
     
     inline def `set--active-color`(value: String): Self = StObject.set(x, "--active-color", value.asInstanceOf[js.Any])
     

@@ -79,7 +79,8 @@ object CommentContentRangeLoadOptions {
     __obj.asInstanceOf[CommentContentRangeLoadOptions]
   }
   
-  extension [Self <: CommentContentRangeLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentContentRangeLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

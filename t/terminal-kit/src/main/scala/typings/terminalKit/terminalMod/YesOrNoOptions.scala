@@ -21,7 +21,8 @@ object YesOrNoOptions {
     __obj.asInstanceOf[YesOrNoOptions]
   }
   
-  extension [Self <: YesOrNoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YesOrNoOptions] (val x: Self) extends AnyVal {
     
     inline def setEchoNo(value: String): Self = StObject.set(x, "echoNo", value.asInstanceOf[js.Any])
     

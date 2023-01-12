@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setHandleEvent(value: js.Object => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
     }
@@ -34,7 +35,8 @@ object anon {
       __obj.asInstanceOf[HandleEvent]
     }
     
-    extension [Self <: HandleEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandleEvent] (val x: Self) extends AnyVal {
       
       inline def setHandleEvent(value: js.Object => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
     }

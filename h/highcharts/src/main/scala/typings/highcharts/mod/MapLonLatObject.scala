@@ -26,7 +26,8 @@ object MapLonLatObject {
     __obj.asInstanceOf[MapLonLatObject]
   }
   
-  extension [Self <: MapLonLatObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapLonLatObject] (val x: Self) extends AnyVal {
     
     inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
     

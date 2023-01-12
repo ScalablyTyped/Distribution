@@ -23,7 +23,8 @@ object Any {
     __obj.asInstanceOf[Any]
   }
   
-  extension [Self <: Any](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Any] (val x: Self) extends AnyVal {
     
     inline def setAny(value: js.RegExp): Self = StObject.set(x, "Any", value.asInstanceOf[js.Any])
     

@@ -76,7 +76,8 @@ object mod {
       __obj.asInstanceOf[CommonConfig]
     }
     
-    extension [Self <: CommonConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonConfig] (val x: Self) extends AnyVal {
       
       inline def setNetworks(value: StringDictionary[NetworkConfigEntry]): Self = StObject.set(x, "networks", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object mod {
       __obj.asInstanceOf[EthersSpecificConfig]
     }
     
-    extension [Self <: EthersSpecificConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EthersSpecificConfig] (val x: Self) extends AnyVal {
       
       inline def setEthers(value: Typeofethers): Self = StObject.set(x, "ethers", value.asInstanceOf[js.Any])
       
@@ -130,7 +132,8 @@ object mod {
       __obj.asInstanceOf[NetworkConfigEntry]
     }
     
-    extension [Self <: NetworkConfigEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkConfigEntry] (val x: Self) extends AnyVal {
       
       inline def setFallbackHandlerAddress(value: String): Self = StObject.set(x, "fallbackHandlerAddress", value.asInstanceOf[js.Any])
       
@@ -164,7 +167,8 @@ object mod {
       __obj.asInstanceOf[Transaction]
     }
     
-    extension [Self <: Transaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -193,7 +197,8 @@ object mod {
       __obj.asInstanceOf[TransactionResult]
     }
     
-    extension [Self <: TransactionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionResult] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -223,7 +228,8 @@ object mod {
       __obj.asInstanceOf[Web3SpecificConfig]
     }
     
-    extension [Self <: Web3SpecificConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Web3SpecificConfig] (val x: Self) extends AnyVal {
       
       inline def setOwnerAccount(value: String): Self = StObject.set(x, "ownerAccount", value.asInstanceOf[js.Any])
       

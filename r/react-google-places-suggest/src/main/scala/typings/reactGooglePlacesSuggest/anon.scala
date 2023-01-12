@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Typeofgeometry]
     }
     
-    extension [Self <: Typeofgeometry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofgeometry] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: Any): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object anon {
       __obj.asInstanceOf[Typeofmaps]
     }
     
-    extension [Self <: Typeofmaps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofmaps] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       

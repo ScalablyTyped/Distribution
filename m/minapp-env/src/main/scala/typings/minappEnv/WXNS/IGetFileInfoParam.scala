@@ -19,7 +19,8 @@ object IGetFileInfoParam {
     __obj.asInstanceOf[IGetFileInfoParam]
   }
   
-  extension [Self <: IGetFileInfoParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGetFileInfoParam] (val x: Self) extends AnyVal {
     
     inline def setDigestAlgorithm(value: String): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
     

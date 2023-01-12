@@ -18,7 +18,8 @@ object DestinationOptions {
     __obj.asInstanceOf[DestinationOptions]
   }
   
-  extension [Self <: DestinationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DestinationOptions] (val x: Self) extends AnyVal {
     
     inline def setColumnMap(value: ImportColumnMap): Self = StObject.set(x, "columnMap", value.asInstanceOf[js.Any])
     

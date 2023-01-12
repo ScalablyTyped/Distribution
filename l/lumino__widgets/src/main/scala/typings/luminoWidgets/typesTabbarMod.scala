@@ -581,7 +581,8 @@ object typesTabbarMod {
         __obj.asInstanceOf[ICurrentChangedArgs[T]]
       }
       
-      extension [Self <: ICurrentChangedArgs[?], T](x: Self & ICurrentChangedArgs[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICurrentChangedArgs[?], T] (val x: Self & ICurrentChangedArgs[T]) extends AnyVal {
         
         inline def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
         
@@ -679,7 +680,8 @@ object typesTabbarMod {
         __obj.asInstanceOf[IOptions[T]]
       }
       
-      extension [Self <: IOptions[?], T](x: Self & IOptions[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions[?], T] (val x: Self & IOptions[T]) extends AnyVal {
         
         inline def setAddButtonEnabled(value: Boolean): Self = StObject.set(x, "addButtonEnabled", value.asInstanceOf[js.Any])
         
@@ -750,7 +752,8 @@ object typesTabbarMod {
         __obj.asInstanceOf[IRenderData[T]]
       }
       
-      extension [Self <: IRenderData[?], T](x: Self & IRenderData[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRenderData[?], T] (val x: Self & IRenderData[T]) extends AnyVal {
         
         inline def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
         
@@ -786,7 +789,8 @@ object typesTabbarMod {
         __obj.asInstanceOf[IRenderer[T]]
       }
       
-      extension [Self <: IRenderer[?], T](x: Self & IRenderer[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRenderer[?], T] (val x: Self & IRenderer[T]) extends AnyVal {
         
         inline def setCloseIconSelector(value: String): Self = StObject.set(x, "closeIconSelector", value.asInstanceOf[js.Any])
         
@@ -816,7 +820,8 @@ object typesTabbarMod {
         __obj.asInstanceOf[ITabActivateRequestedArgs[T]]
       }
       
-      extension [Self <: ITabActivateRequestedArgs[?], T](x: Self & ITabActivateRequestedArgs[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ITabActivateRequestedArgs[?], T] (val x: Self & ITabActivateRequestedArgs[T]) extends AnyVal {
         
         inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
@@ -846,7 +851,8 @@ object typesTabbarMod {
         __obj.asInstanceOf[ITabCloseRequestedArgs[T]]
       }
       
-      extension [Self <: ITabCloseRequestedArgs[?], T](x: Self & ITabCloseRequestedArgs[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ITabCloseRequestedArgs[?], T] (val x: Self & ITabCloseRequestedArgs[T]) extends AnyVal {
         
         inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
@@ -891,7 +897,8 @@ object typesTabbarMod {
         __obj.asInstanceOf[ITabDetachRequestedArgs[T]]
       }
       
-      extension [Self <: ITabDetachRequestedArgs[?], T](x: Self & ITabDetachRequestedArgs[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ITabDetachRequestedArgs[?], T] (val x: Self & ITabDetachRequestedArgs[T]) extends AnyVal {
         
         inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
         
@@ -932,7 +939,8 @@ object typesTabbarMod {
         __obj.asInstanceOf[ITabMovedArgs[T]]
       }
       
-      extension [Self <: ITabMovedArgs[?], T](x: Self & ITabMovedArgs[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ITabMovedArgs[?], T] (val x: Self & ITabMovedArgs[T]) extends AnyVal {
         
         inline def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
         

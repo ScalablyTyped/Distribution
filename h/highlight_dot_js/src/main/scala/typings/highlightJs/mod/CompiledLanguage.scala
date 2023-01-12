@@ -110,7 +110,8 @@ object CompiledLanguage {
     __obj.asInstanceOf[CompiledLanguage]
   }
   
-  extension [Self <: CompiledLanguage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompiledLanguage] (val x: Self) extends AnyVal {
     
     inline def setBegin(value: js.RegExp | String | (js.Array[js.RegExp | String])): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
     

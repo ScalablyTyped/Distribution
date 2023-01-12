@@ -19,7 +19,8 @@ object TSTypeParameterInstantiation {
   @js.native
   def apply(params: js.Array[TSType]): TSTypeParameterInstantiation = js.native
   
-  extension [Self <: TSTypeParameterInstantiation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSTypeParameterInstantiation] (val x: Self) extends AnyVal {
     
     inline def setParams(value: js.Array[TSType]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     

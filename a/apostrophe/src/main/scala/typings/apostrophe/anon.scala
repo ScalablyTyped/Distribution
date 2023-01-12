@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[Form]
     }
     
-    extension [Self <: Form](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Form] (val x: Self) extends AnyVal {
       
       inline def setForm(value: (Any, Any, String, AposObject, Any, js.Function0[Any]) => Unit): Self = StObject.set(x, "form", js.Any.fromFunction6(value))
       
@@ -75,7 +77,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -98,7 +101,8 @@ object anon {
       __obj.asInstanceOf[Projection]
     }
     
-    extension [Self <: Projection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Projection] (val x: Self) extends AnyVal {
       
       inline def setProjection(value: StringDictionary[Double]): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object Penalty {
     __obj.asInstanceOf[Penalty]
   }
   
-  extension [Self <: Penalty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Penalty] (val x: Self) extends AnyVal {
     
     inline def setPenalty(value: ScorePenalty): Self = StObject.set(x, "penalty", value.asInstanceOf[js.Any])
   }

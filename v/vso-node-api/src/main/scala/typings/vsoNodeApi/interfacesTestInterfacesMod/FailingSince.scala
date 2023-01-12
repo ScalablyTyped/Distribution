@@ -19,7 +19,8 @@ object FailingSince {
     __obj.asInstanceOf[FailingSince]
   }
   
-  extension [Self <: FailingSince](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailingSince] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: BuildReference): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object MetricDatapoint {
     __obj.asInstanceOf[MetricDatapoint]
   }
   
-  extension [Self <: MetricDatapoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricDatapoint] (val x: Self) extends AnyVal {
     
     inline def setAverage(value: double): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
     

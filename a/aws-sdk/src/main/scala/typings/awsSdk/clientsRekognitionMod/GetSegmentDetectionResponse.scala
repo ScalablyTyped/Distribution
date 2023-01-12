@@ -48,7 +48,8 @@ object GetSegmentDetectionResponse {
     __obj.asInstanceOf[GetSegmentDetectionResponse]
   }
   
-  extension [Self <: GetSegmentDetectionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSegmentDetectionResponse] (val x: Self) extends AnyVal {
     
     inline def setAudioMetadata(value: AudioMetadataList): Self = StObject.set(x, "AudioMetadata", value.asInstanceOf[js.Any])
     

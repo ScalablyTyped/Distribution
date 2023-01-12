@@ -64,7 +64,8 @@ object IBoxLayout {
     __obj.asInstanceOf[IBoxLayout]
   }
   
-  extension [Self <: IBoxLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBoxLayout] (val x: Self) extends AnyVal {
     
     inline def setCacheFlexes(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "cacheFlexes", js.Any.fromFunction1(value))
     

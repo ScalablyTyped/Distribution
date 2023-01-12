@@ -63,7 +63,8 @@ object Groupbuy {
     __obj.asInstanceOf[Groupbuy]
   }
   
-  extension [Self <: Groupbuy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Groupbuy] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

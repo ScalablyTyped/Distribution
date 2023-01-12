@@ -37,7 +37,8 @@ object BatchGetAssetPropertyAggregatesResponse {
     __obj.asInstanceOf[BatchGetAssetPropertyAggregatesResponse]
   }
   
-  extension [Self <: BatchGetAssetPropertyAggregatesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetAssetPropertyAggregatesResponse] (val x: Self) extends AnyVal {
     
     inline def setErrorEntries(value: BatchGetAssetPropertyAggregatesErrorEntries): Self = StObject.set(x, "errorEntries", value.asInstanceOf[js.Any])
     

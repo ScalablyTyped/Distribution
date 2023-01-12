@@ -20,7 +20,8 @@ object DomainString {
     __obj.asInstanceOf[DomainString]
   }
   
-  extension [Self <: DomainString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainString] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

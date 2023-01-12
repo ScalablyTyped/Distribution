@@ -30,7 +30,8 @@ object ClientPattern {
     __obj.asInstanceOf[ClientPattern]
   }
   
-  extension [Self <: ClientPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientPattern] (val x: Self) extends AnyVal {
     
     inline def setExpectedMessages$(value: Double): Self = StObject.set(x, "expectedMessages$", value.asInstanceOf[js.Any])
     

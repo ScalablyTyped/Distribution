@@ -50,7 +50,8 @@ object GetRestrictionsForOrg {
     __obj.asInstanceOf[GetRestrictionsForOrg]
   }
   
-  extension [Self <: GetRestrictionsForOrg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRestrictionsForOrg] (val x: Self) extends AnyVal {
     
     inline def setGetRestrictionsForAuthenticatedUser(value: `1089`): Self = StObject.set(x, "getRestrictionsForAuthenticatedUser", value.asInstanceOf[js.Any])
     

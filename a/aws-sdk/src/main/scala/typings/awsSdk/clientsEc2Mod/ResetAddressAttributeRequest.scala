@@ -28,7 +28,8 @@ object ResetAddressAttributeRequest {
     __obj.asInstanceOf[ResetAddressAttributeRequest]
   }
   
-  extension [Self <: ResetAddressAttributeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetAddressAttributeRequest] (val x: Self) extends AnyVal {
     
     inline def setAllocationId(value: AllocationId): Self = StObject.set(x, "AllocationId", value.asInstanceOf[js.Any])
     

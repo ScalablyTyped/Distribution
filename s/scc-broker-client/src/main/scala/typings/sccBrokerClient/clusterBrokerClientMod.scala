@@ -115,7 +115,8 @@ object clusterBrokerClientMod {
       __obj.asInstanceOf[MessageData]
     }
     
-    extension [Self <: MessageData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageData] (val x: Self) extends AnyVal {
       
       inline def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object clusterBrokerClientMod {
       __obj.asInstanceOf[UpdateBrokersData]
     }
     
-    extension [Self <: UpdateBrokersData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateBrokersData] (val x: Self) extends AnyVal {
       
       inline def setBrokerURIs(value: js.Array[String]): Self = StObject.set(x, "brokerURIs", value.asInstanceOf[js.Any])
       
@@ -155,7 +157,8 @@ object clusterBrokerClientMod {
       __obj.asInstanceOf[UpdateWorkersData]
     }
     
-    extension [Self <: UpdateWorkersData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateWorkersData] (val x: Self) extends AnyVal {
       
       inline def setSourceWorkerURI(value: String): Self = StObject.set(x, "sourceWorkerURI", value.asInstanceOf[js.Any])
       

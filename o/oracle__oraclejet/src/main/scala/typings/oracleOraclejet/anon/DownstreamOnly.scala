@@ -17,7 +17,8 @@ object DownstreamOnly {
     __obj.asInstanceOf[DownstreamOnly]
   }
   
-  extension [Self <: DownstreamOnly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownstreamOnly] (val x: Self) extends AnyVal {
     
     inline def setDownstreamOnly(value: Boolean): Self = StObject.set(x, "downstreamOnly", value.asInstanceOf[js.Any])
     

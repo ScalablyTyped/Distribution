@@ -43,7 +43,8 @@ object StyleSpecification {
     __obj.asInstanceOf[StyleSpecification]
   }
   
-  extension [Self <: StyleSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleSpecification] (val x: Self) extends AnyVal {
     
     inline def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
     

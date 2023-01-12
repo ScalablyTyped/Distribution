@@ -273,7 +273,8 @@ object app {
       __obj.asInstanceOf[BoundsSpecification]
     }
     
-    extension [Self <: BoundsSpecification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoundsSpecification] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -378,7 +379,8 @@ object app {
       __obj.asInstanceOf[ContentBounds]
     }
     
-    extension [Self <: ContentBounds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentBounds] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -566,7 +568,8 @@ object app {
       __obj.asInstanceOf[CreateWindowOptions]
     }
     
-    extension [Self <: CreateWindowOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateWindowOptions] (val x: Self) extends AnyVal {
       
       inline def setAlphaEnabled(value: Boolean): Self = StObject.set(x, "alphaEnabled", value.asInstanceOf[js.Any])
       
@@ -686,7 +689,8 @@ object app {
       __obj.asInstanceOf[FrameOptions]
     }
     
-    extension [Self <: FrameOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrameOptions] (val x: Self) extends AnyVal {
       
       inline def setAlphaEnabled(value: Boolean): Self = StObject.set(x, "alphaEnabled", value.asInstanceOf[js.Any])
       
@@ -734,7 +738,8 @@ object app {
       __obj.asInstanceOf[FrameOptionsChrome]
     }
     
-    extension [Self <: FrameOptionsChrome](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrameOptionsChrome] (val x: Self) extends AnyVal {
       
       inline def setActiveColor(value: String): Self = StObject.set(x, "activeColor", value.asInstanceOf[js.Any])
       
@@ -848,7 +853,8 @@ object app {
         __obj.asInstanceOf[LaunchData]
       }
       
-      extension [Self <: LaunchData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LaunchData] (val x: Self) extends AnyVal {
         
         inline def setActionData(
           value: ToStringLiteral[
@@ -917,7 +923,8 @@ object app {
         __obj.asInstanceOf[LaunchDataItem]
       }
       
-      extension [Self <: LaunchDataItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LaunchDataItem] (val x: Self) extends AnyVal {
         
         inline def setEntry(value: FileEntry): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
         

@@ -17,7 +17,8 @@ object TfvcPolicyOverrideInfo {
     __obj.asInstanceOf[TfvcPolicyOverrideInfo]
   }
   
-  extension [Self <: TfvcPolicyOverrideInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TfvcPolicyOverrideInfo] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

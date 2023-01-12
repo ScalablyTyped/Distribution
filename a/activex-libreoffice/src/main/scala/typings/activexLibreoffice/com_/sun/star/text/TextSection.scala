@@ -216,7 +216,8 @@ object TextSection {
     __obj.asInstanceOf[TextSection]
   }
   
-  extension [Self <: TextSection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextSection] (val x: Self) extends AnyVal {
     
     inline def setBackGraphicFilter(value: String): Self = StObject.set(x, "BackGraphicFilter", value.asInstanceOf[js.Any])
     

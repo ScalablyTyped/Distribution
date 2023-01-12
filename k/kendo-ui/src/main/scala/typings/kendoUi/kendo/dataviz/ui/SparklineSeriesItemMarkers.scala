@@ -25,7 +25,8 @@ object SparklineSeriesItemMarkers {
     __obj.asInstanceOf[SparklineSeriesItemMarkers]
   }
   
-  extension [Self <: SparklineSeriesItemMarkers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparklineSeriesItemMarkers] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: String | js.Function): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

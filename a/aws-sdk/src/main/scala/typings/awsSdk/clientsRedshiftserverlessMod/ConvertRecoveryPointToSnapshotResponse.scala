@@ -18,7 +18,8 @@ object ConvertRecoveryPointToSnapshotResponse {
     __obj.asInstanceOf[ConvertRecoveryPointToSnapshotResponse]
   }
   
-  extension [Self <: ConvertRecoveryPointToSnapshotResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConvertRecoveryPointToSnapshotResponse] (val x: Self) extends AnyVal {
     
     inline def setSnapshot(value: Snapshot): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     

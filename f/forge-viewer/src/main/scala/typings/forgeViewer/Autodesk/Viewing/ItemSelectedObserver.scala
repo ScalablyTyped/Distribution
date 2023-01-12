@@ -15,7 +15,8 @@ object ItemSelectedObserver {
     __obj.asInstanceOf[ItemSelectedObserver]
   }
   
-  extension [Self <: ItemSelectedObserver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemSelectedObserver] (val x: Self) extends AnyVal {
     
     inline def setOnItemSelected(value: Viewer3D => Unit): Self = StObject.set(x, "onItemSelected", js.Any.fromFunction1(value))
   }

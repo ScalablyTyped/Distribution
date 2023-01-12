@@ -50,7 +50,8 @@ object typesLatestSrcPoliciesRedirectPolicyMod {
       __obj.asInstanceOf[RedirectOptions]
     }
     
-    extension [Self <: RedirectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedirectOptions] (val x: Self) extends AnyVal {
       
       inline def setHandleRedirects(value: Boolean): Self = StObject.set(x, "handleRedirects", value.asInstanceOf[js.Any])
       

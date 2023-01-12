@@ -287,7 +287,8 @@ object typesOptionsMod {
       __obj.asInstanceOf[ClientOptions[TO]]
     }
     
-    extension [Self <: ClientOptions[?], TO /* <: BaseTransportOptions */](x: Self & ClientOptions[TO]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions[?], TO /* <: BaseTransportOptions */] (val x: Self & ClientOptions[TO]) extends AnyVal {
       
       inline def setAttachStacktrace(value: Boolean): Self = StObject.set(x, "attachStacktrace", value.asInstanceOf[js.Any])
       
@@ -519,7 +520,8 @@ object typesOptionsMod {
       __obj.asInstanceOf[Options[TO]]
     }
     
-    extension [Self <: Options[?], TO /* <: BaseTransportOptions */](x: Self & Options[TO]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], TO /* <: BaseTransportOptions */] (val x: Self & Options[TO]) extends AnyVal {
       
       inline def setAttachStacktrace(value: Boolean): Self = StObject.set(x, "attachStacktrace", value.asInstanceOf[js.Any])
       

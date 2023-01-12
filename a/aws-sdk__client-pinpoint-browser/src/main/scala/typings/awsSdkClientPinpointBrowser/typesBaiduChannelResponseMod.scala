@@ -70,7 +70,8 @@ object typesBaiduChannelResponseMod {
       __obj.asInstanceOf[BaiduChannelResponse]
     }
     
-    extension [Self <: BaiduChannelResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaiduChannelResponse] (val x: Self) extends AnyVal {
       
       inline def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
       

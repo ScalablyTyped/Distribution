@@ -37,7 +37,8 @@ object XExtendedInputSequenceChecker {
     __obj.asInstanceOf[XExtendedInputSequenceChecker]
   }
   
-  extension [Self <: XExtendedInputSequenceChecker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XExtendedInputSequenceChecker] (val x: Self) extends AnyVal {
     
     inline def setCorrectInputSequence(value: (js.Array[String], Double, String, Double) => Double): Self = StObject.set(x, "correctInputSequence", js.Any.fromFunction4(value))
   }

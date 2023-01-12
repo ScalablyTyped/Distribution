@@ -18,7 +18,8 @@ object JQueryStatic {
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  extension [Self <: JQueryStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
     
     inline def setGrowl(value: growl): Self = StObject.set(x, "growl", value.asInstanceOf[js.Any])
   }

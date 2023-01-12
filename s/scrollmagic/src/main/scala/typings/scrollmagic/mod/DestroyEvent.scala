@@ -26,7 +26,8 @@ object DestroyEvent {
     __obj.asInstanceOf[DestroyEvent]
   }
   
-  extension [Self <: DestroyEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DestroyEvent] (val x: Self) extends AnyVal {
     
     inline def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
   }

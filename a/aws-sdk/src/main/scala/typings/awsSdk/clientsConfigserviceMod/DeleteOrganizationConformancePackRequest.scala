@@ -18,7 +18,8 @@ object DeleteOrganizationConformancePackRequest {
     __obj.asInstanceOf[DeleteOrganizationConformancePackRequest]
   }
   
-  extension [Self <: DeleteOrganizationConformancePackRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteOrganizationConformancePackRequest] (val x: Self) extends AnyVal {
     
     inline def setOrganizationConformancePackName(value: OrganizationConformancePackName): Self = StObject.set(x, "OrganizationConformancePackName", value.asInstanceOf[js.Any])
   }

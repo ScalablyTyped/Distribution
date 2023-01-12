@@ -20,7 +20,8 @@ object InterchangeOptions {
     __obj.asInstanceOf[InterchangeOptions]
   }
   
-  extension [Self <: InterchangeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterchangeOptions] (val x: Self) extends AnyVal {
     
     inline def setDirectives(value: js.Object): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     

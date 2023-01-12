@@ -38,7 +38,8 @@ object IBooleanFieldExpression {
     __obj.asInstanceOf[IBooleanFieldExpression]
   }
   
-  extension [Self <: IBooleanFieldExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBooleanFieldExpression] (val x: Self) extends AnyVal {
     
     inline def setEqualTo(value: Boolean => IExpression): Self = StObject.set(x, "EqualTo", js.Any.fromFunction1(value))
     

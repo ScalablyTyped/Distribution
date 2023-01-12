@@ -50,7 +50,8 @@ object PickImplfireOnInitPartial {
     __obj.asInstanceOf[PickImplfireOnInitPartial]
   }
   
-  extension [Self <: PickImplfireOnInitPartial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplfireOnInitPartial] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

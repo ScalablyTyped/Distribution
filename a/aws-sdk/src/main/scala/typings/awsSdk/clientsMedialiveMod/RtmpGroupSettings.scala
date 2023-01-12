@@ -50,7 +50,8 @@ object RtmpGroupSettings {
     __obj.asInstanceOf[RtmpGroupSettings]
   }
   
-  extension [Self <: RtmpGroupSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RtmpGroupSettings] (val x: Self) extends AnyVal {
     
     inline def setAdMarkers(value: listOfRtmpAdMarkers): Self = StObject.set(x, "AdMarkers", value.asInstanceOf[js.Any])
     

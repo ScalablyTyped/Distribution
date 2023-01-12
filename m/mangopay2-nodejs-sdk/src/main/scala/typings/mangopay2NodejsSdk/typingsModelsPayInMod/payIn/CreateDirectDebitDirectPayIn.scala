@@ -40,7 +40,8 @@ object CreateDirectDebitDirectPayIn {
     __obj.asInstanceOf[CreateDirectDebitDirectPayIn]
   }
   
-  extension [Self <: CreateDirectDebitDirectPayIn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDirectDebitDirectPayIn] (val x: Self) extends AnyVal {
     
     inline def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
     

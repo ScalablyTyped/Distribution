@@ -32,7 +32,8 @@ object ldap {
       __obj.asInstanceOf[LdapGenericException]
     }
     
-    extension [Self <: LdapGenericException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LdapGenericException] (val x: Self) extends AnyVal {
       
       inline def setErrorCode(value: Double): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     }

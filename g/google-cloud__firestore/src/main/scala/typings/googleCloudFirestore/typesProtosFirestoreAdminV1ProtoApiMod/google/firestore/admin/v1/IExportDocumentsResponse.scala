@@ -17,7 +17,8 @@ object IExportDocumentsResponse {
     __obj.asInstanceOf[IExportDocumentsResponse]
   }
   
-  extension [Self <: IExportDocumentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExportDocumentsResponse] (val x: Self) extends AnyVal {
     
     inline def setOutputUriPrefix(value: String): Self = StObject.set(x, "outputUriPrefix", value.asInstanceOf[js.Any])
     

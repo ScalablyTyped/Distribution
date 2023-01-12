@@ -37,7 +37,8 @@ object EdiscoveryEstimateOperation {
     __obj.asInstanceOf[EdiscoveryEstimateOperation]
   }
   
-  extension [Self <: EdiscoveryEstimateOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdiscoveryEstimateOperation] (val x: Self) extends AnyVal {
     
     inline def setIndexedItemCount(value: NullableOption[Double]): Self = StObject.set(x, "indexedItemCount", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object DeserializationPolicyOptions {
     __obj.asInstanceOf[DeserializationPolicyOptions]
   }
   
-  extension [Self <: DeserializationPolicyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeserializationPolicyOptions] (val x: Self) extends AnyVal {
     
     inline def setExpectedContentTypes(value: DeserializationContentTypes): Self = StObject.set(x, "expectedContentTypes", value.asInstanceOf[js.Any])
     

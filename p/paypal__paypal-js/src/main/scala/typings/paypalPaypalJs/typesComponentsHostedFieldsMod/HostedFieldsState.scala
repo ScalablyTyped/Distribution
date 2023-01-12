@@ -17,7 +17,8 @@ object HostedFieldsState {
     __obj.asInstanceOf[HostedFieldsState]
   }
   
-  extension [Self <: HostedFieldsState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostedFieldsState] (val x: Self) extends AnyVal {
     
     inline def setCards(value: js.Array[HostedFieldsHostedFieldsCard]): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
     

@@ -98,7 +98,8 @@ object LokiPartitioningAdapter {
     __obj.asInstanceOf[LokiPartitioningAdapter]
   }
   
-  extension [Self <: LokiPartitioningAdapter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LokiPartitioningAdapter] (val x: Self) extends AnyVal {
     
     inline def setAdapter(value: LokiPersistenceAdapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     

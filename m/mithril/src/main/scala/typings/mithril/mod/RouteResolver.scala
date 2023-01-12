@@ -29,7 +29,8 @@ object RouteResolver {
     __obj.asInstanceOf[RouteResolver[Attrs, State]]
   }
   
-  extension [Self <: RouteResolver[?, ?], Attrs, State](x: Self & (RouteResolver[Attrs, State])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteResolver[?, ?], Attrs, State] (val x: Self & (RouteResolver[Attrs, State])) extends AnyVal {
     
     inline def setOnmatch(
       value: js.ThisFunction3[

@@ -25,7 +25,8 @@ object CancelIsRefresh {
     __obj.asInstanceOf[CancelIsRefresh]
   }
   
-  extension [Self <: CancelIsRefresh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelIsRefresh] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     

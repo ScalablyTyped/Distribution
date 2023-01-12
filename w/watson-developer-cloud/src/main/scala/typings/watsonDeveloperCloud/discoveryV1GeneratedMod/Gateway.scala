@@ -29,7 +29,8 @@ object Gateway {
     __obj.asInstanceOf[Gateway]
   }
   
-  extension [Self <: Gateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gateway] (val x: Self) extends AnyVal {
     
     inline def setGateway_id(value: String): Self = StObject.set(x, "gateway_id", value.asInstanceOf[js.Any])
     

@@ -92,7 +92,8 @@ object DownloadOperation {
     __obj.asInstanceOf[DownloadOperation]
   }
   
-  extension [Self <: DownloadOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadOperation] (val x: Self) extends AnyVal {
     
     inline def setAttachAsync(value: () => IPromiseWithIAsyncOperationWithProgress[DownloadOperation, DownloadOperation]): Self = StObject.set(x, "attachAsync", js.Any.fromFunction0(value))
     

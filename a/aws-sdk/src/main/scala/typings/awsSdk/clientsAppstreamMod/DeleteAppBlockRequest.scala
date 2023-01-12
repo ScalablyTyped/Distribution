@@ -18,7 +18,8 @@ object DeleteAppBlockRequest {
     __obj.asInstanceOf[DeleteAppBlockRequest]
   }
   
-  extension [Self <: DeleteAppBlockRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAppBlockRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

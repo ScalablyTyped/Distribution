@@ -49,7 +49,8 @@ object XShapeArranger {
     __obj.asInstanceOf[XShapeArranger]
   }
   
-  extension [Self <: XShapeArranger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XShapeArranger] (val x: Self) extends AnyVal {
     
     inline def setArrange(value: (XShapes, Arrangement) => Unit): Self = StObject.set(x, "arrange", js.Any.fromFunction2(value))
     

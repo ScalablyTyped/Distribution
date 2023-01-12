@@ -47,7 +47,8 @@ object distRouteRecognizerDslMod {
       __obj.asInstanceOf[Delegate]
     }
     
-    extension [Self <: Delegate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delegate] (val x: Self) extends AnyVal {
       
       inline def setContextEntered(value: (/* context */ String, /* route */ MatchDSL) => Unit): Self = StObject.set(x, "contextEntered", js.Any.fromFunction2(value))
       
@@ -85,7 +86,8 @@ object distRouteRecognizerDslMod {
       __obj.asInstanceOf[Route]
     }
     
-    extension [Self <: Route](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
       
       inline def setHandler(value: Opaque): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object distRouteRecognizerDslMod {
       __obj.asInstanceOf[RouteRecognizer]
     }
     
-    extension [Self <: RouteRecognizer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteRecognizer] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: js.Array[Route] => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

@@ -53,7 +53,8 @@ object VirtualInterfaceTestHistory {
     __obj.asInstanceOf[VirtualInterfaceTestHistory]
   }
   
-  extension [Self <: VirtualInterfaceTestHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualInterfaceTestHistory] (val x: Self) extends AnyVal {
     
     inline def setBgpPeers(value: BGPPeerIdList): Self = StObject.set(x, "bgpPeers", value.asInstanceOf[js.Any])
     

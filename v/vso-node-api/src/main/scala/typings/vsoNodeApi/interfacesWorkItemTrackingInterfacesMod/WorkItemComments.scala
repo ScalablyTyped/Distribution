@@ -33,7 +33,8 @@ object WorkItemComments {
     __obj.asInstanceOf[WorkItemComments]
   }
   
-  extension [Self <: WorkItemComments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemComments] (val x: Self) extends AnyVal {
     
     inline def setComments(value: js.Array[WorkItemComment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     

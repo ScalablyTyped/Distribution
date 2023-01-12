@@ -23,7 +23,8 @@ object GraphQLSchemaConfig {
     __obj.asInstanceOf[GraphQLSchemaConfig]
   }
   
-  extension [Self <: GraphQLSchemaConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphQLSchemaConfig] (val x: Self) extends AnyVal {
     
     inline def setDirectives(value: js.Array[GraphQLDirective]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     

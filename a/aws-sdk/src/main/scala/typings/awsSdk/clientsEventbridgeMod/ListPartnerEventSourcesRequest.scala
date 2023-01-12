@@ -28,7 +28,8 @@ object ListPartnerEventSourcesRequest {
     __obj.asInstanceOf[ListPartnerEventSourcesRequest]
   }
   
-  extension [Self <: ListPartnerEventSourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPartnerEventSourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: LimitMax100): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

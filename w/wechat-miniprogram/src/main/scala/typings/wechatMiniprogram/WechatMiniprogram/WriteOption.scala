@@ -66,7 +66,8 @@ object WriteOption {
     __obj.asInstanceOf[WriteOption]
   }
   
-  extension [Self <: WriteOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

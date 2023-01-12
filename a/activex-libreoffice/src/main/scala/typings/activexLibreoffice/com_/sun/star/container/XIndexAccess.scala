@@ -45,7 +45,8 @@ object XIndexAccess {
     __obj.asInstanceOf[XIndexAccess]
   }
   
-  extension [Self <: XIndexAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIndexAccess] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

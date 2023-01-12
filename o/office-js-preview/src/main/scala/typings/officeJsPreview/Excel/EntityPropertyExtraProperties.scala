@@ -27,7 +27,8 @@ object EntityPropertyExtraProperties {
     __obj.asInstanceOf[EntityPropertyExtraProperties]
   }
   
-  extension [Self <: EntityPropertyExtraProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityPropertyExtraProperties] (val x: Self) extends AnyVal {
     
     inline def setPropertyMetadata(value: CellValuePropertyMetadata): Self = StObject.set(x, "propertyMetadata", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object clientsForecastqueryserviceMod {
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    extension [Self <: ClientApiVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object clientsForecastqueryserviceMod {
       __obj.asInstanceOf[DataPoint]
     }
     
-    extension [Self <: DataPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataPoint] (val x: Self) extends AnyVal {
       
       inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
       
@@ -107,7 +109,8 @@ object clientsForecastqueryserviceMod {
       __obj.asInstanceOf[Forecast]
     }
     
-    extension [Self <: Forecast](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Forecast] (val x: Self) extends AnyVal {
       
       inline def setPredictions(value: Predictions): Self = StObject.set(x, "Predictions", value.asInstanceOf[js.Any])
       
@@ -190,7 +193,8 @@ object clientsForecastqueryserviceMod {
       __obj.asInstanceOf[QueryForecastRequest]
     }
     
-    extension [Self <: QueryForecastRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryForecastRequest] (val x: Self) extends AnyVal {
       
       inline def setEndDate(value: DateTime): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
       
@@ -224,7 +228,8 @@ object clientsForecastqueryserviceMod {
       __obj.asInstanceOf[QueryForecastResponse]
     }
     
-    extension [Self <: QueryForecastResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryForecastResponse] (val x: Self) extends AnyVal {
       
       inline def setForecast(value: Forecast): Self = StObject.set(x, "Forecast", value.asInstanceOf[js.Any])
       
@@ -266,7 +271,8 @@ object clientsForecastqueryserviceMod {
       __obj.asInstanceOf[QueryWhatIfForecastRequest]
     }
     
-    extension [Self <: QueryWhatIfForecastRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryWhatIfForecastRequest] (val x: Self) extends AnyVal {
       
       inline def setEndDate(value: DateTime): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
       
@@ -297,7 +303,8 @@ object clientsForecastqueryserviceMod {
       __obj.asInstanceOf[QueryWhatIfForecastResponse]
     }
     
-    extension [Self <: QueryWhatIfForecastResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryWhatIfForecastResponse] (val x: Self) extends AnyVal {
       
       inline def setForecast(value: Forecast): Self = StObject.set(x, "Forecast", value.asInstanceOf[js.Any])
       

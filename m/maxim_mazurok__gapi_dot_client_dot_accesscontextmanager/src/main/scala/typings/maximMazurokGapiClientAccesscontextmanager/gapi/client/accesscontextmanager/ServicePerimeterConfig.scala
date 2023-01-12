@@ -44,7 +44,8 @@ object ServicePerimeterConfig {
     __obj.asInstanceOf[ServicePerimeterConfig]
   }
   
-  extension [Self <: ServicePerimeterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServicePerimeterConfig] (val x: Self) extends AnyVal {
     
     inline def setAccessLevels(value: js.Array[String]): Self = StObject.set(x, "accessLevels", value.asInstanceOf[js.Any])
     

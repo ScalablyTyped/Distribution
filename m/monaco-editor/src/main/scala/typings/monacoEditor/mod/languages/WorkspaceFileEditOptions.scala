@@ -29,7 +29,8 @@ object WorkspaceFileEditOptions {
     __obj.asInstanceOf[WorkspaceFileEditOptions]
   }
   
-  extension [Self <: WorkspaceFileEditOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceFileEditOptions] (val x: Self) extends AnyVal {
     
     inline def setCopy(value: Boolean): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
     

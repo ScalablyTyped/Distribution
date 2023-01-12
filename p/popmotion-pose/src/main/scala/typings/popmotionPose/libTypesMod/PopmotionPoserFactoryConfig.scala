@@ -118,7 +118,8 @@ object PopmotionPoserFactoryConfig {
     __obj.asInstanceOf[PopmotionPoserFactoryConfig[P, TD]]
   }
   
-  extension [Self <: PopmotionPoserFactoryConfig[?, ?], P, TD](x: Self & (PopmotionPoserFactoryConfig[P, TD])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopmotionPoserFactoryConfig[?, ?], P, TD] (val x: Self & (PopmotionPoserFactoryConfig[P, TD])) extends AnyVal {
     
     inline def setAddListenerToValue(
       value: (String, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Styler */ Any) => js.Function1[/* v */ Any, Unit]

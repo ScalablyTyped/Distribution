@@ -24,7 +24,8 @@ object StateVariableDeclaration {
     __obj.asInstanceOf[StateVariableDeclaration]
   }
   
-  extension [Self <: StateVariableDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateVariableDeclaration] (val x: Self) extends AnyVal {
     
     inline def setInitialValue(value: Expression): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
     

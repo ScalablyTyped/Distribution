@@ -24,7 +24,8 @@ object ModifyHeaderInfo {
     __obj.asInstanceOf[ModifyHeaderInfo]
   }
   
-  extension [Self <: ModifyHeaderInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyHeaderInfo] (val x: Self) extends AnyVal {
     
     inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     

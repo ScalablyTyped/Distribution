@@ -38,7 +38,8 @@ object PartialStatus {
     __obj.asInstanceOf[PartialStatus]
   }
   
-  extension [Self <: PartialStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStatus] (val x: Self) extends AnyVal {
     
     inline def setAnimateEnable(value: Boolean): Self = StObject.set(x, "animateEnable", value.asInstanceOf[js.Any])
     

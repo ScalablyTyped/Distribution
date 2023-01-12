@@ -17,7 +17,8 @@ object UpdatableData {
     __obj.asInstanceOf[UpdatableData[TKey, TData]]
   }
   
-  extension [Self <: UpdatableData[?, ?], TKey /* <: HasUpdatableSpread[TData] */, TData](x: Self & (UpdatableData[TKey, TData])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatableData[?, ?], TKey /* <: HasUpdatableSpread[TData] */, TData] (val x: Self & (UpdatableData[TKey, TData])) extends AnyVal {
     
     inline def setUpdatableData(
       value: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<TKey>[' $data'] */ js.Any

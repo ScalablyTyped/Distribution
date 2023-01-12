@@ -123,7 +123,8 @@ object angularMod {
         __obj.asInstanceOf[IScrollDatasource[T]]
       }
       
-      extension [Self <: IScrollDatasource[?], T](x: Self & IScrollDatasource[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IScrollDatasource[?], T] (val x: Self & IScrollDatasource[T]) extends AnyVal {
         
         inline def setGet(value: (Double, Double, js.Function1[/* results */ js.Array[T], Any]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
       }

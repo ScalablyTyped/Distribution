@@ -23,7 +23,8 @@ object ListManagedEndpointsResponse {
     __obj.asInstanceOf[ListManagedEndpointsResponse]
   }
   
-  extension [Self <: ListManagedEndpointsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListManagedEndpointsResponse] (val x: Self) extends AnyVal {
     
     inline def setEndpoints(value: Endpoints): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object CallHierarchyOutgoingCall {
     __obj.asInstanceOf[CallHierarchyOutgoingCall]
   }
   
-  extension [Self <: CallHierarchyOutgoingCall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallHierarchyOutgoingCall] (val x: Self) extends AnyVal {
     
     inline def setFromSpans(value: js.Array[TextSpan]): Self = StObject.set(x, "fromSpans", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object ASPxClientMenuAction {
     __obj.asInstanceOf[ASPxClientMenuAction]
   }
   
-  extension [Self <: ASPxClientMenuAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientMenuAction] (val x: Self) extends AnyVal {
     
     inline def setClickAction(value: js.Function): Self = StObject.set(x, "clickAction", value.asInstanceOf[js.Any])
     

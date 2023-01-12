@@ -250,7 +250,8 @@ object dependenciesTextBufferSrcDisplayMarkerMod {
       __obj.asInstanceOf[DisplayMarkerChangedEvent]
     }
     
-    extension [Self <: DisplayMarkerChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayMarkerChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setHadTail(value: Boolean): Self = StObject.set(x, "hadTail", value.asInstanceOf[js.Any])
       

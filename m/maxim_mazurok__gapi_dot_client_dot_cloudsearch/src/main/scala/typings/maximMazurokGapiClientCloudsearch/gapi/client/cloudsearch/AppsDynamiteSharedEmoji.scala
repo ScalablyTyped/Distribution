@@ -19,7 +19,8 @@ object AppsDynamiteSharedEmoji {
     __obj.asInstanceOf[AppsDynamiteSharedEmoji]
   }
   
-  extension [Self <: AppsDynamiteSharedEmoji](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedEmoji] (val x: Self) extends AnyVal {
     
     inline def setCustomEmoji(value: AppsDynamiteSharedCustomEmoji): Self = StObject.set(x, "customEmoji", value.asInstanceOf[js.Any])
     

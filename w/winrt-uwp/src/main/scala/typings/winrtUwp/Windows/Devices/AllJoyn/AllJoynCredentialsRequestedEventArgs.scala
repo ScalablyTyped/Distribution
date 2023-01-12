@@ -39,7 +39,8 @@ object AllJoynCredentialsRequestedEventArgs {
     __obj.asInstanceOf[AllJoynCredentialsRequestedEventArgs]
   }
   
-  extension [Self <: AllJoynCredentialsRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllJoynCredentialsRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAttemptCount(value: Double): Self = StObject.set(x, "attemptCount", value.asInstanceOf[js.Any])
     

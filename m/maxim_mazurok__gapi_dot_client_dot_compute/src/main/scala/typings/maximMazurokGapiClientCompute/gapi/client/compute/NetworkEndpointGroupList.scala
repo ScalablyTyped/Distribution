@@ -35,7 +35,8 @@ object NetworkEndpointGroupList {
     __obj.asInstanceOf[NetworkEndpointGroupList]
   }
   
-  extension [Self <: NetworkEndpointGroupList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkEndpointGroupList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

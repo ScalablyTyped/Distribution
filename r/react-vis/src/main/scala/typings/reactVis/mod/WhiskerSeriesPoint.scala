@@ -31,7 +31,8 @@ object WhiskerSeriesPoint {
     __obj.asInstanceOf[WhiskerSeriesPoint]
   }
   
-  extension [Self <: WhiskerSeriesPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WhiskerSeriesPoint] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

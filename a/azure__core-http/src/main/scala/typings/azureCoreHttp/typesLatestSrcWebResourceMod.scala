@@ -163,7 +163,8 @@ object typesLatestSrcWebResourceMod {
       __obj.asInstanceOf[ParameterValue]
     }
     
-    extension [Self <: ParameterValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParameterValue] (val x: Self) extends AnyVal {
       
       inline def setSkipUrlEncoding(value: Boolean): Self = StObject.set(x, "skipUrlEncoding", value.asInstanceOf[js.Any])
       
@@ -229,7 +230,8 @@ object typesLatestSrcWebResourceMod {
       __obj.asInstanceOf[RequestOptionsBase]
     }
     
-    extension [Self <: RequestOptionsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptionsBase] (val x: Self) extends AnyVal {
       
       inline def setAbortSignal(value: AbortSignalLike): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
       
@@ -409,7 +411,8 @@ object typesLatestSrcWebResourceMod {
       __obj.asInstanceOf[RequestPrepareOptions]
     }
     
-    extension [Self <: RequestPrepareOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestPrepareOptions] (val x: Self) extends AnyVal {
       
       inline def setAbortSignal(value: AbortSignalLike): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
       
@@ -509,7 +512,8 @@ object typesLatestSrcWebResourceMod {
       __obj.asInstanceOf[TransferProgressEvent]
     }
     
-    extension [Self <: TransferProgressEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferProgressEvent] (val x: Self) extends AnyVal {
       
       inline def setLoadedBytes(value: Double): Self = StObject.set(x, "loadedBytes", value.asInstanceOf[js.Any])
     }
@@ -661,7 +665,8 @@ object typesLatestSrcWebResourceMod {
       __obj.asInstanceOf[WebResourceLike]
     }
     
-    extension [Self <: WebResourceLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebResourceLike] (val x: Self) extends AnyVal {
       
       inline def setAbortSignal(value: AbortSignalLike): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[CustomizeArray]
     }
     
-    extension [Self <: CustomizeArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomizeArray] (val x: Self) extends AnyVal {
       
       inline def setCustomizeArray(value: (/* a */ Any, /* b */ Any, /* key */ Key) => Any): Self = StObject.set(x, "customizeArray", js.Any.fromFunction3(value))
       

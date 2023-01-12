@@ -19,7 +19,8 @@ object MapLoadEvent {
     __obj.asInstanceOf[MapLoadEvent]
   }
   
-  extension [Self <: MapLoadEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapLoadEvent] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: Map): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object IEventHandler {
     __obj.asInstanceOf[IEventHandler]
   }
   
-  extension [Self <: IEventHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEventHandler] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     

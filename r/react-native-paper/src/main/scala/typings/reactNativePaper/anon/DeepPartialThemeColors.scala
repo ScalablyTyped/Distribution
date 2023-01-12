@@ -37,7 +37,8 @@ object DeepPartialThemeColors {
     __obj.asInstanceOf[DeepPartialThemeColors]
   }
   
-  extension [Self <: DeepPartialThemeColors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeepPartialThemeColors] (val x: Self) extends AnyVal {
     
     inline def setAccent(value: DeepPartial[String]): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
     

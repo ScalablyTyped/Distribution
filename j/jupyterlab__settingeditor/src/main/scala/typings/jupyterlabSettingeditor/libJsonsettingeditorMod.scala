@@ -144,7 +144,8 @@ object libJsonsettingeditorMod {
         __obj.asInstanceOf[ILayoutState]
       }
       
-      extension [Self <: ILayoutState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ILayoutState] (val x: Self) extends AnyVal {
         
         inline def setContainer(value: IPluginLayout): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
         
@@ -212,7 +213,8 @@ object libJsonsettingeditorMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setCommands(value: Registry): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
         
@@ -261,7 +263,8 @@ object libJsonsettingeditorMod {
         __obj.asInstanceOf[IPluginLayout]
       }
       
-      extension [Self <: IPluginLayout](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IPluginLayout] (val x: Self) extends AnyVal {
         
         inline def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
         

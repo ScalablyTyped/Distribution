@@ -19,7 +19,8 @@ object TagFrameFlags {
     __obj.asInstanceOf[TagFrameFlags]
   }
   
-  extension [Self <: TagFrameFlags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagFrameFlags] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: Compression): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

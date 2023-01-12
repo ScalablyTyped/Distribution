@@ -20,7 +20,8 @@ object UpdateOne {
     __obj.asInstanceOf[UpdateOne[TSchema]]
   }
   
-  extension [Self <: UpdateOne[?], TSchema /* <: Document */](x: Self & UpdateOne[TSchema]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateOne[?], TSchema /* <: Document */] (val x: Self & UpdateOne[TSchema]) extends AnyVal {
     
     inline def setUpdateOne(value: UpdateOneModel[TSchema]): Self = StObject.set(x, "updateOne", value.asInstanceOf[js.Any])
   }

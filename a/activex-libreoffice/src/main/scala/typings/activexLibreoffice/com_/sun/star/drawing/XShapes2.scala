@@ -31,7 +31,8 @@ object XShapes2 {
     __obj.asInstanceOf[XShapes2]
   }
   
-  extension [Self <: XShapes2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XShapes2] (val x: Self) extends AnyVal {
     
     inline def setAddBottom(value: XShape => Unit): Self = StObject.set(x, "addBottom", js.Any.fromFunction1(value))
     

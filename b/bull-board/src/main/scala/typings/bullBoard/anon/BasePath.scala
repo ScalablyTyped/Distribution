@@ -15,7 +15,8 @@ object BasePath {
     __obj.asInstanceOf[BasePath]
   }
   
-  extension [Self <: BasePath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasePath] (val x: Self) extends AnyVal {
     
     inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
   }

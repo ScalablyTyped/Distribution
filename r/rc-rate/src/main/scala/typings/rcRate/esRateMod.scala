@@ -179,7 +179,8 @@ object esRateMod {
       __obj.asInstanceOf[RateProps]
     }
     
-    extension [Self <: RateProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RateProps] (val x: Self) extends AnyVal {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       
@@ -278,7 +279,8 @@ object esRateMod {
       __obj.asInstanceOf[RateState]
     }
     
-    extension [Self <: RateState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RateState] (val x: Self) extends AnyVal {
       
       inline def setCleanedValue(value: Double): Self = StObject.set(x, "cleanedValue", value.asInstanceOf[js.Any])
       

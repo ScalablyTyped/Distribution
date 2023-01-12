@@ -70,7 +70,8 @@ object XAnimateMotion {
     __obj.asInstanceOf[XAnimateMotion]
   }
   
-  extension [Self <: XAnimateMotion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAnimateMotion] (val x: Self) extends AnyVal {
     
     inline def setOrigin(value: Any): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PutResolverQueryLogConfigPolicyResponse {
     __obj.asInstanceOf[PutResolverQueryLogConfigPolicyResponse]
   }
   
-  extension [Self <: PutResolverQueryLogConfigPolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutResolverQueryLogConfigPolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setReturnValue(value: Boolean): Self = StObject.set(x, "ReturnValue", value.asInstanceOf[js.Any])
     

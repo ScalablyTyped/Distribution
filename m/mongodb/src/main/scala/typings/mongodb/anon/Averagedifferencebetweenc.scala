@@ -90,7 +90,8 @@ object Averagedifferencebetweenc {
     __obj.asInstanceOf[Averagedifferencebetweenc]
   }
   
-  extension [Self <: Averagedifferencebetweenc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Averagedifferencebetweenc] (val x: Self) extends AnyVal {
     
     inline def `setAverage difference between current eviction generation when the page was last considered`(value: Double): Self = StObject.set(x, "Average difference between current eviction generation when the page was last considered", value.asInstanceOf[js.Any])
     

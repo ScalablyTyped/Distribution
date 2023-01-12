@@ -21,7 +21,8 @@ object IngestBytesProcessor {
     __obj.asInstanceOf[IngestBytesProcessor]
   }
   
-  extension [Self <: IngestBytesProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestBytesProcessor] (val x: Self) extends AnyVal {
     
     inline def setField(value: Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

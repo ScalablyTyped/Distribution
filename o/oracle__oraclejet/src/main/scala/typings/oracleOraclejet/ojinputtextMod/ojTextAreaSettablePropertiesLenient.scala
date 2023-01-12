@@ -75,7 +75,8 @@ object ojTextAreaSettablePropertiesLenient {
     __obj.asInstanceOf[ojTextAreaSettablePropertiesLenient]
   }
   
-  extension [Self <: ojTextAreaSettablePropertiesLenient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojTextAreaSettablePropertiesLenient] (val x: Self) extends AnyVal {
     
     inline def setAsyncValidators(value: js.Array[AsyncValidator[Any]]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
     

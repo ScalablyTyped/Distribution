@@ -49,7 +49,8 @@ object TileInfoCreateOptions {
     __obj.asInstanceOf[TileInfoCreateOptions]
   }
   
-  extension [Self <: TileInfoCreateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileInfoCreateOptions] (val x: Self) extends AnyVal {
     
     inline def setNumLODs(value: Double): Self = StObject.set(x, "numLODs", value.asInstanceOf[js.Any])
     

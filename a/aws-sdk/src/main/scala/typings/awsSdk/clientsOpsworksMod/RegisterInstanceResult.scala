@@ -18,7 +18,8 @@ object RegisterInstanceResult {
     __obj.asInstanceOf[RegisterInstanceResult]
   }
   
-  extension [Self <: RegisterInstanceResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterInstanceResult] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

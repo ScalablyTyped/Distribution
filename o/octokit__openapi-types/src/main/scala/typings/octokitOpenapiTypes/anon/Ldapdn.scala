@@ -87,7 +87,8 @@ object Ldapdn {
     __obj.asInstanceOf[Ldapdn]
   }
   
-  extension [Self <: Ldapdn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ldapdn] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object OnMouseEnter {
     __obj.asInstanceOf[OnMouseEnter]
   }
   
-  extension [Self <: OnMouseEnter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnMouseEnter] (val x: Self) extends AnyVal {
     
     inline def setOnMouseEnter(value: MouseEvent[HTMLSpanElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
     

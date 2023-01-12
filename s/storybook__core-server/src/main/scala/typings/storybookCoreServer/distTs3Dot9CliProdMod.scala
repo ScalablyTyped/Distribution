@@ -49,7 +49,8 @@ object distTs3Dot9CliProdMod {
       __obj.asInstanceOf[ProdCliOptions]
     }
     
-    extension [Self <: ProdCliOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProdCliOptions] (val x: Self) extends AnyVal {
       
       inline def setConfigDir(value: String): Self = StObject.set(x, "configDir", value.asInstanceOf[js.Any])
       

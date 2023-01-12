@@ -48,7 +48,8 @@ object distCommonjsCollectionsMessageMessageHeaderMod extends Shortcut {
       __obj.asInstanceOf[StrictMessageHeaderProps]
     }
     
-    extension [Self <: StrictMessageHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictMessageHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

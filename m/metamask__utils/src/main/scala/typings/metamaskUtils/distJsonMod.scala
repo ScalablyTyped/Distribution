@@ -176,7 +176,8 @@ object distJsonMod {
       __obj.asInstanceOf[JsonRpcValidatorOptions]
     }
     
-    extension [Self <: JsonRpcValidatorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonRpcValidatorOptions] (val x: Self) extends AnyVal {
       
       inline def setPermitEmptyString(value: Boolean): Self = StObject.set(x, "permitEmptyString", value.asInstanceOf[js.Any])
       

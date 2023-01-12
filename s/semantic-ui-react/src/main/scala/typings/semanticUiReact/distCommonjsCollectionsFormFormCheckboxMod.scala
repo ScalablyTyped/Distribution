@@ -519,7 +519,8 @@ object distCommonjsCollectionsFormFormCheckboxMod extends Shortcut {
       __obj.asInstanceOf[StrictFormCheckboxProps]
     }
     
-    extension [Self <: StrictFormCheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictFormCheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

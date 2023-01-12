@@ -17,7 +17,8 @@ object AdvancedPhotoCaptureSettings {
     __obj.asInstanceOf[AdvancedPhotoCaptureSettings]
   }
   
-  extension [Self <: AdvancedPhotoCaptureSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvancedPhotoCaptureSettings] (val x: Self) extends AnyVal {
     
     inline def setMode(value: AdvancedPhotoMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }

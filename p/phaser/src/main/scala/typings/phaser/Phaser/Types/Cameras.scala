@@ -75,7 +75,8 @@ object Cameras {
         __obj.asInstanceOf[FixedKeyControlConfig]
       }
       
-      extension [Self <: FixedKeyControlConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FixedKeyControlConfig] (val x: Self) extends AnyVal {
         
         inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
         
@@ -197,7 +198,8 @@ object Cameras {
         __obj.asInstanceOf[SmoothedKeyControlConfig]
       }
       
-      extension [Self <: SmoothedKeyControlConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SmoothedKeyControlConfig] (val x: Self) extends AnyVal {
         
         inline def setAcceleration(value: Double | js.Object): Self = StObject.set(x, "acceleration", value.asInstanceOf[js.Any])
         
@@ -349,7 +351,8 @@ object Cameras {
         __obj.asInstanceOf[CameraConfig]
       }
       
-      extension [Self <: CameraConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CameraConfig] (val x: Self) extends AnyVal {
         
         inline def setBackgroundColor(value: `false` | String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
         
@@ -508,7 +511,8 @@ object Cameras {
         __obj.asInstanceOf[JSONCamera]
       }
       
-      extension [Self <: JSONCamera](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JSONCamera] (val x: Self) extends AnyVal {
         
         inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
         
@@ -567,7 +571,8 @@ object Cameras {
         __obj.asInstanceOf[JSONCameraBounds]
       }
       
-      extension [Self <: JSONCameraBounds](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JSONCameraBounds] (val x: Self) extends AnyVal {
         
         inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         

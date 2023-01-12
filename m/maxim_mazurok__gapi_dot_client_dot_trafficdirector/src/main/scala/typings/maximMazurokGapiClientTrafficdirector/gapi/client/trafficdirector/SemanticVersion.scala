@@ -19,7 +19,8 @@ object SemanticVersion {
     __obj.asInstanceOf[SemanticVersion]
   }
   
-  extension [Self <: SemanticVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SemanticVersion] (val x: Self) extends AnyVal {
     
     inline def setMajorNumber(value: Double): Self = StObject.set(x, "majorNumber", value.asInstanceOf[js.Any])
     

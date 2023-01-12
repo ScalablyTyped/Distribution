@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[ActionID]
     }
     
-    extension [Self <: ActionID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionID] (val x: Self) extends AnyVal {
       
       inline def setActionID(value: String): Self = StObject.set(x, "actionID", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Authorized]
     }
     
-    extension [Self <: Authorized](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Authorized] (val x: Self) extends AnyVal {
       
       inline def setAuthorized(value: `1`): Self = StObject.set(x, "Authorized", value.asInstanceOf[js.Any])
       
@@ -78,7 +80,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: OSEmailSubscriptionState): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -99,7 +102,8 @@ object anon {
       __obj.asInstanceOf[FromTo]
     }
     
-    extension [Self <: FromTo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromTo] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: OSSubscriptionState): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -122,7 +126,8 @@ object anon {
       __obj.asInstanceOf[InAppAlert]
     }
     
-    extension [Self <: InAppAlert](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InAppAlert] (val x: Self) extends AnyVal {
       
       inline def setInAppAlert(value: `1`): Self = StObject.set(x, "InAppAlert", value.asInstanceOf[js.Any])
       
@@ -145,7 +150,8 @@ object anon {
       __obj.asInstanceOf[KOSSettingsKeyAutoPrompt]
     }
     
-    extension [Self <: KOSSettingsKeyAutoPrompt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KOSSettingsKeyAutoPrompt] (val x: Self) extends AnyVal {
       
       inline def setKOSSettingsKeyAutoPrompt(value: Boolean): Self = StObject.set(x, "kOSSettingsKeyAutoPrompt", value.asInstanceOf[js.Any])
       
@@ -166,7 +172,8 @@ object anon {
       __obj.asInstanceOf[LogLevel]
     }
     
-    extension [Self <: LogLevel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogLevel] (val x: Self) extends AnyVal {
       
       inline def setLogLevel(value: OSLogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
@@ -316,7 +323,8 @@ object anon {
       __obj.asInstanceOf[PartialOSNotification]
     }
     
-    extension [Self <: PartialOSNotification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOSNotification] (val x: Self) extends AnyVal {
       
       inline def setAdm_big_picture(value: String): Self = StObject.set(x, "adm_big_picture", value.asInstanceOf[js.Any])
       
@@ -623,7 +631,8 @@ object anon {
       __obj.asInstanceOf[PushToken]
     }
     
-    extension [Self <: PushToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PushToken] (val x: Self) extends AnyVal {
       
       inline def setPushToken(value: String): Self = StObject.set(x, "pushToken", value.asInstanceOf[js.Any])
       
@@ -644,7 +653,8 @@ object anon {
       __obj.asInstanceOf[To]
     }
     
-    extension [Self <: To](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: To] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: OSPermissionState): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

@@ -35,7 +35,8 @@ object Achievement {
     __obj.asInstanceOf[Achievement]
   }
   
-  extension [Self <: Achievement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Achievement] (val x: Self) extends AnyVal {
     
     inline def setAchieved(value: Boolean): Self = StObject.set(x, "achieved", value.asInstanceOf[js.Any])
     

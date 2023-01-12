@@ -18,7 +18,8 @@ object ContainerState {
     __obj.asInstanceOf[ContainerState[T]]
   }
   
-  extension [Self <: ContainerState[?], T](x: Self & ContainerState[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerState[?], T] (val x: Self & ContainerState[T]) extends AnyVal {
     
     inline def setHighlightedDate(value: T): Self = StObject.set(x, "highlightedDate", value.asInstanceOf[js.Any])
     

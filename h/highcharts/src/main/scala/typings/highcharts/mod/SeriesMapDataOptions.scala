@@ -102,7 +102,8 @@ object SeriesMapDataOptions {
     __obj.asInstanceOf[SeriesMapDataOptions]
   }
   
-  extension [Self <: SeriesMapDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesMapDataOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

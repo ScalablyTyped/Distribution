@@ -82,7 +82,8 @@ object typesInternalSourceMod {
       __obj.asInstanceOf[Event[V]]
     }
     
-    extension [Self <: Event[?], V](x: Self & Event[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event[?], V] (val x: Self & Event[V]) extends AnyVal {
       
       inline def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

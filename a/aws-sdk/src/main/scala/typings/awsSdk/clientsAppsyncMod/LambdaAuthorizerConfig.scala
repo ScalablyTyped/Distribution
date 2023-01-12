@@ -28,7 +28,8 @@ object LambdaAuthorizerConfig {
     __obj.asInstanceOf[LambdaAuthorizerConfig]
   }
   
-  extension [Self <: LambdaAuthorizerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaAuthorizerConfig] (val x: Self) extends AnyVal {
     
     inline def setAuthorizerResultTtlInSeconds(value: TTL): Self = StObject.set(x, "authorizerResultTtlInSeconds", value.asInstanceOf[js.Any])
     

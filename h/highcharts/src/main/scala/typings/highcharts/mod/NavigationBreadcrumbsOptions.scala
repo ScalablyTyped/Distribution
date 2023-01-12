@@ -101,7 +101,8 @@ object NavigationBreadcrumbsOptions {
     __obj.asInstanceOf[NavigationBreadcrumbsOptions]
   }
   
-  extension [Self <: NavigationBreadcrumbsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationBreadcrumbsOptions] (val x: Self) extends AnyVal {
     
     inline def setButtonSpacing(value: Double): Self = StObject.set(x, "buttonSpacing", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object Camera {
     __obj.asInstanceOf[Camera]
   }
   
-  extension [Self <: Camera](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Camera] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

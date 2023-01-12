@@ -43,7 +43,8 @@ object GetParametersByPathRequest {
     __obj.asInstanceOf[GetParametersByPathRequest]
   }
   
-  extension [Self <: GetParametersByPathRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersByPathRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: GetParametersByPathMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

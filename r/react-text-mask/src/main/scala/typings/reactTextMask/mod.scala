@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[ConformToMaskConfig]
     }
     
-    extension [Self <: ConformToMaskConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConformToMaskConfig] (val x: Self) extends AnyVal {
       
       inline def setCurrentCaretPosition(value: Double): Self = StObject.set(x, "currentCaretPosition", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[ConformToMaskResult]
     }
     
-    extension [Self <: ConformToMaskResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConformToMaskResult] (val x: Self) extends AnyVal {
       
       inline def setConformedValue(value: String): Self = StObject.set(x, "conformedValue", value.asInstanceOf[js.Any])
       
@@ -144,7 +146,8 @@ object mod {
       __obj.asInstanceOf[MaskedInputProps]
     }
     
-    extension [Self <: MaskedInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaskedInputProps] (val x: Self) extends AnyVal {
       
       inline def setGuide(value: Boolean): Self = StObject.set(x, "guide", value.asInstanceOf[js.Any])
       
@@ -211,7 +214,8 @@ object mod {
       __obj.asInstanceOf[PipeConfig]
     }
     
-    extension [Self <: PipeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PipeConfig] (val x: Self) extends AnyVal {
       
       inline def setCurrentCaretPosition(value: Double): Self = StObject.set(x, "currentCaretPosition", value.asInstanceOf[js.Any])
       

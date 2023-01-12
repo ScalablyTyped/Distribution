@@ -28,7 +28,8 @@ object TimecodeBurnin {
     __obj.asInstanceOf[TimecodeBurnin]
   }
   
-  extension [Self <: TimecodeBurnin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimecodeBurnin] (val x: Self) extends AnyVal {
     
     inline def setFontSize(value: integerMin10Max48): Self = StObject.set(x, "FontSize", value.asInstanceOf[js.Any])
     

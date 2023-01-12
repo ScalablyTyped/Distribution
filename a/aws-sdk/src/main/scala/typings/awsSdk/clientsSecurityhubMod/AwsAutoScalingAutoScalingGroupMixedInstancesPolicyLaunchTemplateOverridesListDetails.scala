@@ -23,7 +23,8 @@ object AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateOverrides
     __obj.asInstanceOf[AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateOverridesListDetails]
   }
   
-  extension [Self <: AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateOverridesListDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateOverridesListDetails] (val x: Self) extends AnyVal {
     
     inline def setInstanceType(value: NonEmptyString): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     

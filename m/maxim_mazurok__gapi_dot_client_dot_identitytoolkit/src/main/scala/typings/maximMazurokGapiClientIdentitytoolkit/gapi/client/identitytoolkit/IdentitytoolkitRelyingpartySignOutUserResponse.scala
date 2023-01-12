@@ -16,7 +16,8 @@ object IdentitytoolkitRelyingpartySignOutUserResponse {
     __obj.asInstanceOf[IdentitytoolkitRelyingpartySignOutUserResponse]
   }
   
-  extension [Self <: IdentitytoolkitRelyingpartySignOutUserResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentitytoolkitRelyingpartySignOutUserResponse] (val x: Self) extends AnyVal {
     
     inline def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
     

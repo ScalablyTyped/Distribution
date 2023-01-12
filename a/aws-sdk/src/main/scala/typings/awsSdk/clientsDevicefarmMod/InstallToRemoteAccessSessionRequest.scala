@@ -23,7 +23,8 @@ object InstallToRemoteAccessSessionRequest {
     __obj.asInstanceOf[InstallToRemoteAccessSessionRequest]
   }
   
-  extension [Self <: InstallToRemoteAccessSessionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstallToRemoteAccessSessionRequest] (val x: Self) extends AnyVal {
     
     inline def setAppArn(value: AmazonResourceName): Self = StObject.set(x, "appArn", value.asInstanceOf[js.Any])
     

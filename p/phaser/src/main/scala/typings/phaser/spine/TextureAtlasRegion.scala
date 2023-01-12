@@ -49,7 +49,8 @@ object TextureAtlasRegion {
     __obj.asInstanceOf[TextureAtlasRegion]
   }
   
-  extension [Self <: TextureAtlasRegion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextureAtlasRegion] (val x: Self) extends AnyVal {
     
     inline def setDegrees(value: Double): Self = StObject.set(x, "degrees", value.asInstanceOf[js.Any])
     

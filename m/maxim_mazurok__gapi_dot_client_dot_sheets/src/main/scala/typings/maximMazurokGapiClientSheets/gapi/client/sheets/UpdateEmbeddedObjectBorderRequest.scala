@@ -25,7 +25,8 @@ object UpdateEmbeddedObjectBorderRequest {
     __obj.asInstanceOf[UpdateEmbeddedObjectBorderRequest]
   }
   
-  extension [Self <: UpdateEmbeddedObjectBorderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateEmbeddedObjectBorderRequest] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: EmbeddedObjectBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

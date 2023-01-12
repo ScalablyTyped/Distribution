@@ -15,7 +15,8 @@ object ResolverError {
     __obj.asInstanceOf[ResolverError]
   }
   
-  extension [Self <: ResolverError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolverError] (val x: Self) extends AnyVal {
     
     inline def set_resolverError(value: js.Error): Self = StObject.set(x, "_resolverError", value.asInstanceOf[js.Any])
   }

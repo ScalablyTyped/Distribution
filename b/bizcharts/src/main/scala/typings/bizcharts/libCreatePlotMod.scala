@@ -61,7 +61,8 @@ object libCreatePlotMod {
       __obj.asInstanceOf[BasePlotOptions]
     }
     
-    extension [Self <: BasePlotOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasePlotOptions] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: ReactNode | VisibleText): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object libCreatePlotMod {
       __obj.asInstanceOf[VisibleText]
     }
     
-    extension [Self <: VisibleText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisibleText] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       

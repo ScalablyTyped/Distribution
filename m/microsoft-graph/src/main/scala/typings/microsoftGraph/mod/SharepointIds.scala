@@ -34,7 +34,8 @@ object SharepointIds {
     __obj.asInstanceOf[SharepointIds]
   }
   
-  extension [Self <: SharepointIds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharepointIds] (val x: Self) extends AnyVal {
     
     inline def setListId(value: NullableOption[String]): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
     

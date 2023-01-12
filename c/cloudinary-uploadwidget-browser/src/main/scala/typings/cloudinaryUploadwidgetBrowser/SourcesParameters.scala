@@ -27,7 +27,8 @@ object SourcesParameters {
     __obj.asInstanceOf[SourcesParameters]
   }
   
-  extension [Self <: SourcesParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourcesParameters] (val x: Self) extends AnyVal {
     
     inline def setDropboxAppKey(value: String): Self = StObject.set(x, "dropboxAppKey", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object esResizableTextAreaMod extends Shortcut {
       __obj.asInstanceOf[AutoSizeType]
     }
     
-    extension [Self <: AutoSizeType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoSizeType] (val x: Self) extends AnyVal {
       
       inline def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object esResizableTextAreaMod extends Shortcut {
       __obj.asInstanceOf[ResizableTextAreaRef]
     }
     
-    extension [Self <: ResizableTextAreaRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizableTextAreaRef] (val x: Self) extends AnyVal {
       
       inline def setTextArea(value: HTMLTextAreaElement): Self = StObject.set(x, "textArea", value.asInstanceOf[js.Any])
     }

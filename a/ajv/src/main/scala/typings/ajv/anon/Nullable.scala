@@ -18,7 +18,8 @@ object Nullable {
     __obj.asInstanceOf[Nullable[T]]
   }
   
-  extension [Self <: Nullable[?], T /* <: String */](x: Self & Nullable[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Nullable[?], T /* <: String */] (val x: Self & Nullable[T]) extends AnyVal {
     
     inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
     

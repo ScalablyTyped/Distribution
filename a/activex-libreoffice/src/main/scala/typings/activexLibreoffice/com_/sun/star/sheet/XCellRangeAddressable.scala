@@ -39,7 +39,8 @@ object XCellRangeAddressable {
     __obj.asInstanceOf[XCellRangeAddressable]
   }
   
-  extension [Self <: XCellRangeAddressable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCellRangeAddressable] (val x: Self) extends AnyVal {
     
     inline def setGetRangeAddress(value: () => CellRangeAddress): Self = StObject.set(x, "getRangeAddress", js.Any.fromFunction0(value))
     

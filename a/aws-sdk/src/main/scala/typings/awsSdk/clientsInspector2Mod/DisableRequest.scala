@@ -23,7 +23,8 @@ object DisableRequest {
     __obj.asInstanceOf[DisableRequest]
   }
   
-  extension [Self <: DisableRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountIds(value: AccountIdSet): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
     

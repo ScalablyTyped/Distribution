@@ -23,7 +23,8 @@ object ListTagsForResourceMessage {
     __obj.asInstanceOf[ListTagsForResourceMessage]
   }
   
-  extension [Self <: ListTagsForResourceMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTagsForResourceMessage] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

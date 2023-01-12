@@ -39,7 +39,8 @@ object MjmlHeroProps {
     __obj.asInstanceOf[MjmlHeroProps]
   }
   
-  extension [Self <: MjmlHeroProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MjmlHeroProps] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: BackgroundColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

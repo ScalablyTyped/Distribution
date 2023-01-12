@@ -37,7 +37,8 @@ object MySqlConnectionProfile {
     __obj.asInstanceOf[MySqlConnectionProfile]
   }
   
-  extension [Self <: MySqlConnectionProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MySqlConnectionProfile] (val x: Self) extends AnyVal {
     
     inline def setCloudSqlId(value: String): Self = StObject.set(x, "cloudSqlId", value.asInstanceOf[js.Any])
     

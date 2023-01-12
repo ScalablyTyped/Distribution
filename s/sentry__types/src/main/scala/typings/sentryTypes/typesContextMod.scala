@@ -31,7 +31,8 @@ object typesContextMod {
       __obj.asInstanceOf[AppContext]
     }
     
-    extension [Self <: AppContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppContext] (val x: Self) extends AnyVal {
       
       inline def setApp_identifier(value: String): Self = StObject.set(x, "app_identifier", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object typesContextMod {
       __obj.asInstanceOf[Contexts]
     }
     
-    extension [Self <: Contexts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Contexts] (val x: Self) extends AnyVal {
       
       inline def setApp(value: AppContext): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -119,7 +121,8 @@ object typesContextMod {
       __obj.asInstanceOf[CultureContext]
     }
     
-    extension [Self <: CultureContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CultureContext] (val x: Self) extends AnyVal {
       
       inline def setCalendar(value: String): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
       
@@ -227,7 +230,8 @@ object typesContextMod {
       __obj.asInstanceOf[DeviceContext]
     }
     
-    extension [Self <: DeviceContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceContext] (val x: Self) extends AnyVal {
       
       inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
@@ -397,7 +401,8 @@ object typesContextMod {
       __obj.asInstanceOf[OsContext]
     }
     
-    extension [Self <: OsContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OsContext] (val x: Self) extends AnyVal {
       
       inline def setBuild(value: String): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
       

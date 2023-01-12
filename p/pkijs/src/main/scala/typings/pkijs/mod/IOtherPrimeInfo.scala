@@ -20,7 +20,8 @@ object IOtherPrimeInfo {
     __obj.asInstanceOf[IOtherPrimeInfo]
   }
   
-  extension [Self <: IOtherPrimeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOtherPrimeInfo] (val x: Self) extends AnyVal {
     
     inline def setCoefficient(value: Integer): Self = StObject.set(x, "coefficient", value.asInstanceOf[js.Any])
     

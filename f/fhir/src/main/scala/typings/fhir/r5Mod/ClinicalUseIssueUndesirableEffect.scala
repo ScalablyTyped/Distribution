@@ -30,7 +30,8 @@ object ClinicalUseIssueUndesirableEffect {
     __obj.asInstanceOf[ClinicalUseIssueUndesirableEffect]
   }
   
-  extension [Self <: ClinicalUseIssueUndesirableEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClinicalUseIssueUndesirableEffect] (val x: Self) extends AnyVal {
     
     inline def setClassification(value: CodeableConcept): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     

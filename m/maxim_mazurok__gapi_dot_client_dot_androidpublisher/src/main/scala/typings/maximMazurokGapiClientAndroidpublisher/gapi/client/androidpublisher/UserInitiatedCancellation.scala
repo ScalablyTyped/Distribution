@@ -22,7 +22,8 @@ object UserInitiatedCancellation {
     __obj.asInstanceOf[UserInitiatedCancellation]
   }
   
-  extension [Self <: UserInitiatedCancellation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserInitiatedCancellation] (val x: Self) extends AnyVal {
     
     inline def setCancelSurveyResult(value: CancelSurveyResult): Self = StObject.set(x, "cancelSurveyResult", value.asInstanceOf[js.Any])
     

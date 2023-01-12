@@ -53,7 +53,8 @@ object Resource {
     __obj.asInstanceOf[Resource]
   }
   
-  extension [Self <: Resource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
     
     inline def setCatalog(value: CatalogResource): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
     

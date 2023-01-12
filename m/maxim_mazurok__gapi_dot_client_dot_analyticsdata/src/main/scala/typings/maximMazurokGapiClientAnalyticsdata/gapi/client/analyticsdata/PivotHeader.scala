@@ -19,7 +19,8 @@ object PivotHeader {
     __obj.asInstanceOf[PivotHeader]
   }
   
-  extension [Self <: PivotHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotHeader] (val x: Self) extends AnyVal {
     
     inline def setPivotDimensionHeaders(value: js.Array[PivotDimensionHeader]): Self = StObject.set(x, "pivotDimensionHeaders", value.asInstanceOf[js.Any])
     

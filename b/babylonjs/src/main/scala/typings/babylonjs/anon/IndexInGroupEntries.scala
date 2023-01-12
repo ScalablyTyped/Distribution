@@ -22,7 +22,8 @@ object IndexInGroupEntries {
     __obj.asInstanceOf[IndexInGroupEntries]
   }
   
-  extension [Self <: IndexInGroupEntries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexInGroupEntries] (val x: Self) extends AnyVal {
     
     inline def setIndexInGroupEntries(value: Double): Self = StObject.set(x, "indexInGroupEntries", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[ManipulateOptions]
     }
     
-    extension [Self <: ManipulateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManipulateOptions] (val x: Self) extends AnyVal {
       
       inline def setManipulateOptions(value: (Any, Plugins) => Unit): Self = StObject.set(x, "manipulateOptions", js.Any.fromFunction2(value))
     }
@@ -34,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Plugins]
     }
     
-    extension [Self <: Plugins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
       
       inline def setPlugins(value: js.Array[String]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       

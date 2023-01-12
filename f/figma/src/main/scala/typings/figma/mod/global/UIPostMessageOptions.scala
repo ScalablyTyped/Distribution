@@ -15,7 +15,8 @@ object UIPostMessageOptions {
     __obj.asInstanceOf[UIPostMessageOptions]
   }
   
-  extension [Self <: UIPostMessageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIPostMessageOptions] (val x: Self) extends AnyVal {
     
     inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     

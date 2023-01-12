@@ -38,7 +38,8 @@ object MouseInputConfig {
     __obj.asInstanceOf[MouseInputConfig]
   }
   
-  extension [Self <: MouseInputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouseInputConfig] (val x: Self) extends AnyVal {
     
     inline def setPreventDefaultDown(value: Boolean): Self = StObject.set(x, "preventDefaultDown", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object RESTDataSourceSettingsRestSettingsRemove {
     __obj.asInstanceOf[RESTDataSourceSettingsRestSettingsRemove]
   }
   
-  extension [Self <: RESTDataSourceSettingsRestSettingsRemove](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RESTDataSourceSettingsRestSettingsRemove] (val x: Self) extends AnyVal {
     
     inline def setBatch(value: Boolean): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     

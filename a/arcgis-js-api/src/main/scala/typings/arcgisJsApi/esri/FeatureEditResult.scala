@@ -34,7 +34,8 @@ object FeatureEditResult {
     __obj.asInstanceOf[FeatureEditResult]
   }
   
-  extension [Self <: FeatureEditResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureEditResult] (val x: Self) extends AnyVal {
     
     inline def setError(value: FeatureEditResultError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

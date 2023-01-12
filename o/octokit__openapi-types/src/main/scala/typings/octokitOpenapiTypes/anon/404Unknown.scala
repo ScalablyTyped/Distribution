@@ -17,7 +17,8 @@ object `404Unknown` {
     __obj.asInstanceOf[`404Unknown`]
   }
   
-  extension [Self <: `404Unknown`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `404Unknown`] (val x: Self) extends AnyVal {
     
     inline def set404(value: Any): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
   }

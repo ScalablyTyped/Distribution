@@ -49,7 +49,8 @@ object TextareaHTMLAttributes {
     __obj.asInstanceOf[TextareaHTMLAttributes[T]]
   }
   
-  extension [Self <: TextareaHTMLAttributes[?], T](x: Self & TextareaHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextareaHTMLAttributes[?], T] (val x: Self & TextareaHTMLAttributes[T]) extends AnyVal {
     
     inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     

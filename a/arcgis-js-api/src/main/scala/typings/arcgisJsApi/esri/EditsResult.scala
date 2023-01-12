@@ -76,7 +76,8 @@ object EditsResult {
     __obj.asInstanceOf[EditsResult]
   }
   
-  extension [Self <: EditsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditsResult] (val x: Self) extends AnyVal {
     
     inline def setAddAttachmentResults(value: js.Array[FeatureEditResult]): Self = StObject.set(x, "addAttachmentResults", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object examplesJsmExportersColladaExporterMod {
       __obj.asInstanceOf[ColladaExporterOptions]
     }
     
-    extension [Self <: ColladaExporterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColladaExporterOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object examplesJsmExportersColladaExporterMod {
       __obj.asInstanceOf[ColladaExporterResult]
     }
     
-    extension [Self <: ColladaExporterResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColladaExporterResult] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

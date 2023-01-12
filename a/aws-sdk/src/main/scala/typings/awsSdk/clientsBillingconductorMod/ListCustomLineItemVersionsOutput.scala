@@ -23,7 +23,8 @@ object ListCustomLineItemVersionsOutput {
     __obj.asInstanceOf[ListCustomLineItemVersionsOutput]
   }
   
-  extension [Self <: ListCustomLineItemVersionsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCustomLineItemVersionsOutput] (val x: Self) extends AnyVal {
     
     inline def setCustomLineItemVersions(value: CustomLineItemVersionList): Self = StObject.set(x, "CustomLineItemVersions", value.asInstanceOf[js.Any])
     

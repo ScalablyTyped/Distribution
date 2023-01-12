@@ -57,7 +57,8 @@ object AppDelegate {
     __obj.asInstanceOf[AppDelegate]
   }
   
-  extension [Self <: AppDelegate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppDelegate] (val x: Self) extends AnyVal {
     
     inline def setAppDelegate(value: Mod[AppDelegateProjectFile]): Self = StObject.set(x, "appDelegate", value.asInstanceOf[js.Any])
     

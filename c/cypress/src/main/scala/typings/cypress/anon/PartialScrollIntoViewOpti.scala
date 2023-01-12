@@ -29,7 +29,8 @@ object PartialScrollIntoViewOpti {
     __obj.asInstanceOf[PartialScrollIntoViewOpti]
   }
   
-  extension [Self <: PartialScrollIntoViewOpti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialScrollIntoViewOpti] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

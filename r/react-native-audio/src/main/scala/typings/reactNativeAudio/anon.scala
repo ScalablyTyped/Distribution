@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[AudioFileURL]
     }
     
-    extension [Self <: AudioFileURL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AudioFileURL] (val x: Self) extends AnyVal {
       
       inline def setAudioFileURL(value: String): Self = StObject.set(x, "audioFileURL", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[CurrentTime]
     }
     
-    extension [Self <: CurrentTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentTime] (val x: Self) extends AnyVal {
       
       inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     }

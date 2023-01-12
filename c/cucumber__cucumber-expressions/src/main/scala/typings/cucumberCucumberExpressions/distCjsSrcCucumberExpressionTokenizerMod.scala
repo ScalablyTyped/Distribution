@@ -28,7 +28,8 @@ object distCjsSrcCucumberExpressionTokenizerMod {
       __obj.asInstanceOf[CucumberExpressionTokenizer]
     }
     
-    extension [Self <: CucumberExpressionTokenizer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CucumberExpressionTokenizer] (val x: Self) extends AnyVal {
       
       inline def setTokenize(value: String => js.Array[Token]): Self = StObject.set(x, "tokenize", js.Any.fromFunction1(value))
     }

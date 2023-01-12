@@ -33,7 +33,8 @@ object MeshData {
     __obj.asInstanceOf[MeshData]
   }
   
-  extension [Self <: MeshData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshData] (val x: Self) extends AnyVal {
     
     inline def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
     

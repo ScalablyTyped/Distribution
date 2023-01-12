@@ -17,7 +17,8 @@ object LineInput {
     __obj.asInstanceOf[LineInput]
   }
   
-  extension [Self <: LineInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineInput] (val x: Self) extends AnyVal {
     
     inline def setFunctionId(value: Numeric): Self = StObject.set(x, "functionId", value.asInstanceOf[js.Any])
     

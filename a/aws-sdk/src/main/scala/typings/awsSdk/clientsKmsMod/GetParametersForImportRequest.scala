@@ -28,7 +28,8 @@ object GetParametersForImportRequest {
     __obj.asInstanceOf[GetParametersForImportRequest]
   }
   
-  extension [Self <: GetParametersForImportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersForImportRequest] (val x: Self) extends AnyVal {
     
     inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     

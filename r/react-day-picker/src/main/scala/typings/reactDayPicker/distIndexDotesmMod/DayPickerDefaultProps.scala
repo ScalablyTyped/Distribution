@@ -20,7 +20,8 @@ object DayPickerDefaultProps {
     __obj.asInstanceOf[DayPickerDefaultProps]
   }
   
-  extension [Self <: DayPickerDefaultProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DayPickerDefaultProps] (val x: Self) extends AnyVal {
     
     inline def setMode(value: default): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

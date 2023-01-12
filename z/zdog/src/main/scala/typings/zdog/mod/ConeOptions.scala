@@ -18,7 +18,8 @@ object ConeOptions {
     __obj.asInstanceOf[ConeOptions]
   }
   
-  extension [Self <: ConeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConeOptions] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

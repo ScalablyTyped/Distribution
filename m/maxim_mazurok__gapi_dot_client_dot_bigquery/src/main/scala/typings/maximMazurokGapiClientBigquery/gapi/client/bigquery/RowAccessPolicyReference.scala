@@ -25,7 +25,8 @@ object RowAccessPolicyReference {
     __obj.asInstanceOf[RowAccessPolicyReference]
   }
   
-  extension [Self <: RowAccessPolicyReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowAccessPolicyReference] (val x: Self) extends AnyVal {
     
     inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object CreateTemplateRequest {
     __obj.asInstanceOf[CreateTemplateRequest]
   }
   
-  extension [Self <: CreateTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     

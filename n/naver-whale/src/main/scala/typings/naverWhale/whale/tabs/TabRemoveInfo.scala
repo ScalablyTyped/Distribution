@@ -22,7 +22,8 @@ object TabRemoveInfo {
     __obj.asInstanceOf[TabRemoveInfo]
   }
   
-  extension [Self <: TabRemoveInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabRemoveInfo] (val x: Self) extends AnyVal {
     
     inline def setIsWindowClosing(value: Boolean): Self = StObject.set(x, "isWindowClosing", value.asInstanceOf[js.Any])
     

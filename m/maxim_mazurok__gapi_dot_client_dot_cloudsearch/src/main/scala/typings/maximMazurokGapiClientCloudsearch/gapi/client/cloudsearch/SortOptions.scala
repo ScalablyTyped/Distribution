@@ -19,7 +19,8 @@ object SortOptions {
     __obj.asInstanceOf[SortOptions]
   }
   
-  extension [Self <: SortOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortOptions] (val x: Self) extends AnyVal {
     
     inline def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     

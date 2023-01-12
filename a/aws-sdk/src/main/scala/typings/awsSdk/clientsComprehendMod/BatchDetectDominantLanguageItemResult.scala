@@ -23,7 +23,8 @@ object BatchDetectDominantLanguageItemResult {
     __obj.asInstanceOf[BatchDetectDominantLanguageItemResult]
   }
   
-  extension [Self <: BatchDetectDominantLanguageItemResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDetectDominantLanguageItemResult] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Integer): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     

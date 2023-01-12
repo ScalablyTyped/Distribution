@@ -18,7 +18,8 @@ object IndexField {
     __obj.asInstanceOf[IndexField]
   }
   
-  extension [Self <: IndexField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexField] (val x: Self) extends AnyVal {
     
     inline def setFieldPath(value: String): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
     

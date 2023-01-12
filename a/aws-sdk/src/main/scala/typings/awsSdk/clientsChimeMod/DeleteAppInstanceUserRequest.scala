@@ -18,7 +18,8 @@ object DeleteAppInstanceUserRequest {
     __obj.asInstanceOf[DeleteAppInstanceUserRequest]
   }
   
-  extension [Self <: DeleteAppInstanceUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAppInstanceUserRequest] (val x: Self) extends AnyVal {
     
     inline def setAppInstanceUserArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceUserArn", value.asInstanceOf[js.Any])
   }

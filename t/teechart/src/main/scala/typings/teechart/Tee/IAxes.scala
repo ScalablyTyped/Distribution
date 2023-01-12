@@ -38,7 +38,8 @@ object IAxes {
     __obj.asInstanceOf[IAxes]
   }
   
-  extension [Self <: IAxes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAxes] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Boolean, Boolean) => IAxis): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

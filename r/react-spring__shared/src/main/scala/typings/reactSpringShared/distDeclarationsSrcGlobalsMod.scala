@@ -98,7 +98,8 @@ object distDeclarationsSrcGlobalsMod {
       __obj.asInstanceOf[AnimatedGlobals]
     }
     
-    extension [Self <: AnimatedGlobals](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimatedGlobals] (val x: Self) extends AnyVal {
       
       inline def setBatchedUpdates(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof raf.batchedUpdates */ Any

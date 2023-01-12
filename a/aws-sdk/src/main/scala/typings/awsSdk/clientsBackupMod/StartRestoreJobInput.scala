@@ -38,7 +38,8 @@ object StartRestoreJobInput {
     __obj.asInstanceOf[StartRestoreJobInput]
   }
   
-  extension [Self <: StartRestoreJobInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartRestoreJobInput] (val x: Self) extends AnyVal {
     
     inline def setIamRoleArn(value: IAMRoleArn): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
     

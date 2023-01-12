@@ -16,7 +16,8 @@ object TenantProjectPolicy {
     __obj.asInstanceOf[TenantProjectPolicy]
   }
   
-  extension [Self <: TenantProjectPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TenantProjectPolicy] (val x: Self) extends AnyVal {
     
     inline def setPolicyBindings(value: js.Array[PolicyBinding]): Self = StObject.set(x, "policyBindings", value.asInstanceOf[js.Any])
     

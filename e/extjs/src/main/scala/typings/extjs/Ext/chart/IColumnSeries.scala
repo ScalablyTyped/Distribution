@@ -20,7 +20,8 @@ object IColumnSeries {
     __obj.asInstanceOf[IColumnSeries]
   }
   
-  extension [Self <: IColumnSeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IColumnSeries] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

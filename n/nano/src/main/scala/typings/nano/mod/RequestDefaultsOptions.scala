@@ -24,7 +24,8 @@ object RequestDefaultsOptions {
     __obj.asInstanceOf[RequestDefaultsOptions]
   }
   
-  extension [Self <: RequestDefaultsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestDefaultsOptions] (val x: Self) extends AnyVal {
     
     inline def setAgent(value: Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object JQueryStatic {
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  extension [Self <: JQueryStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
     
     inline def setGQ(value: GameQuery): Self = StObject.set(x, "gQ", value.asInstanceOf[js.Any])
     

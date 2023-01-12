@@ -877,7 +877,8 @@ object materialsEffectMod {
       __obj.asInstanceOf[IEffectCreationOptions]
     }
     
-    extension [Self <: IEffectCreationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEffectCreationOptions] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object Scte35TimeSignalApos {
     __obj.asInstanceOf[Scte35TimeSignalApos]
   }
   
-  extension [Self <: Scte35TimeSignalApos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scte35TimeSignalApos] (val x: Self) extends AnyVal {
     
     inline def setAdAvailOffset(value: integerMinNegative1000Max1000): Self = StObject.set(x, "AdAvailOffset", value.asInstanceOf[js.Any])
     

@@ -89,7 +89,8 @@ object mod {
       __obj.asInstanceOf[QueryRawColumn]
     }
     
-    extension [Self <: QueryRawColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryRawColumn] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object mod {
       __obj.asInstanceOf[QueryRawResult]
     }
     
-    extension [Self <: QueryRawResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryRawResult] (val x: Self) extends AnyVal {
       
       inline def setMeta(value: js.Array[QueryRawColumn]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       

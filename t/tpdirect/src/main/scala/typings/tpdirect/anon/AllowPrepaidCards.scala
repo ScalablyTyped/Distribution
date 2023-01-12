@@ -43,7 +43,8 @@ object AllowPrepaidCards {
     __obj.asInstanceOf[AllowPrepaidCards]
   }
   
-  extension [Self <: AllowPrepaidCards](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowPrepaidCards] (val x: Self) extends AnyVal {
     
     inline def setAllowPrepaidCards(value: Boolean): Self = StObject.set(x, "allowPrepaidCards", value.asInstanceOf[js.Any])
     

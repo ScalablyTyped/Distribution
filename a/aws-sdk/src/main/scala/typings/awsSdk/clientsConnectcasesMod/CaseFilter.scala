@@ -25,7 +25,8 @@ object CaseFilter {
     __obj.asInstanceOf[CaseFilter]
   }
   
-  extension [Self <: CaseFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaseFilter] (val x: Self) extends AnyVal {
     
     inline def setAndAll(value: CaseFilterAndAllList): Self = StObject.set(x, "andAll", value.asInstanceOf[js.Any])
     

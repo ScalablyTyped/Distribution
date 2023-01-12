@@ -65,7 +65,8 @@ object ASPxClientHtmlEditorFlashDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorFlashDialog]
   }
   
-  extension [Self <: ASPxClientHtmlEditorFlashDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorFlashDialog] (val x: Self) extends AnyVal {
     
     inline def setGetAllowFullscreenCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetAllowFullscreenCheckBox", js.Any.fromFunction0(value))
     

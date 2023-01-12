@@ -19,7 +19,8 @@ object ListAccessLevelsResponse {
     __obj.asInstanceOf[ListAccessLevelsResponse]
   }
   
-  extension [Self <: ListAccessLevelsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAccessLevelsResponse] (val x: Self) extends AnyVal {
     
     inline def setAccessLevels(value: js.Array[AccessLevel]): Self = StObject.set(x, "accessLevels", value.asInstanceOf[js.Any])
     

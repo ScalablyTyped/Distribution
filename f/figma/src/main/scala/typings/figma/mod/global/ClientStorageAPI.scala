@@ -17,7 +17,8 @@ object ClientStorageAPI {
     __obj.asInstanceOf[ClientStorageAPI]
   }
   
-  extension [Self <: ClientStorageAPI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientStorageAPI] (val x: Self) extends AnyVal {
     
     inline def setGetAsync(value: String => js.Promise[Any]): Self = StObject.set(x, "getAsync", js.Any.fromFunction1(value))
     

@@ -23,7 +23,8 @@ object SendMessageBatchRequest {
     __obj.asInstanceOf[SendMessageBatchRequest]
   }
   
-  extension [Self <: SendMessageBatchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendMessageBatchRequest] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: SendMessageBatchRequestEntryList): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     

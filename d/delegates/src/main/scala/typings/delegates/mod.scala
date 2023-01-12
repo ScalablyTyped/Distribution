@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[Delegate]
     }
     
-    extension [Self <: Delegate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delegate] (val x: Self) extends AnyVal {
       
       inline def setAccess(value: String => Delegate): Self = StObject.set(x, "access", js.Any.fromFunction1(value))
       

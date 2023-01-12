@@ -28,7 +28,8 @@ object PostList {
     __obj.asInstanceOf[PostList]
   }
   
-  extension [Self <: PostList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostList] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

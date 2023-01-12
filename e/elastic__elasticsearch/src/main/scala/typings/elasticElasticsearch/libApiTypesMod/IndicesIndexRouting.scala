@@ -17,7 +17,8 @@ object IndicesIndexRouting {
     __obj.asInstanceOf[IndicesIndexRouting]
   }
   
-  extension [Self <: IndicesIndexRouting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesIndexRouting] (val x: Self) extends AnyVal {
     
     inline def setAllocation(value: IndicesIndexRoutingAllocation): Self = StObject.set(x, "allocation", value.asInstanceOf[js.Any])
     

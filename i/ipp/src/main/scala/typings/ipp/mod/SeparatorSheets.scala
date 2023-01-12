@@ -19,7 +19,8 @@ object SeparatorSheets {
     __obj.asInstanceOf[SeparatorSheets]
   }
   
-  extension [Self <: SeparatorSheets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeparatorSheets] (val x: Self) extends AnyVal {
     
     inline def setMedia(value: Media): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     

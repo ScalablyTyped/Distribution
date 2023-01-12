@@ -26,7 +26,8 @@ object TimerInstance {
     __obj.asInstanceOf[TimerInstance]
   }
   
-  extension [Self <: TimerInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimerInstance] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: CbCallback => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction1(value))
     

@@ -68,7 +68,8 @@ object skeletonMod {
       __obj.asInstanceOf[SkeletonButtonProps]
     }
     
-    extension [Self <: SkeletonButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkeletonButtonProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: xsmall | small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object skeletonMod {
       __obj.asInstanceOf[SkeletonProps]
     }
     
-    extension [Self <: SkeletonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkeletonProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -140,7 +142,8 @@ object skeletonMod {
       __obj.asInstanceOf[SkeletonTagProps]
     }
     
-    extension [Self <: SkeletonTagProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkeletonTagProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: xsmall | small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

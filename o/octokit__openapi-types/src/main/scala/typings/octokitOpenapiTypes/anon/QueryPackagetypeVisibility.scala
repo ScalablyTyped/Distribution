@@ -17,7 +17,8 @@ object QueryPackagetypeVisibility {
     __obj.asInstanceOf[QueryPackagetypeVisibility]
   }
   
-  extension [Self <: QueryPackagetypeVisibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryPackagetypeVisibility] (val x: Self) extends AnyVal {
     
     inline def setPath(value: OrgString): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

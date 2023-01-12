@@ -23,7 +23,8 @@ object PlacementBuilder {
     __obj.asInstanceOf[PlacementBuilder[Placement]]
   }
   
-  extension [Self <: PlacementBuilder[?], Placement](x: Self & PlacementBuilder[Placement]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlacementBuilder[?], Placement] (val x: Self & PlacementBuilder[Placement]) extends AnyVal {
     
     inline def setWithUrl(value: String => PlacementBuilder[Placement]): Self = StObject.set(x, "withUrl", js.Any.fromFunction1(value))
   }

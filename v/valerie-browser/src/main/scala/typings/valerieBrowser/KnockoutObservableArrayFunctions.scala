@@ -26,7 +26,8 @@ object KnockoutObservableArrayFunctions {
     __obj.asInstanceOf[KnockoutObservableArrayFunctions[T]]
   }
   
-  extension [Self <: KnockoutObservableArrayFunctions[?], T](x: Self & KnockoutObservableArrayFunctions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutObservableArrayFunctions[?], T] (val x: Self & KnockoutObservableArrayFunctions[T]) extends AnyVal {
     
     inline def setValidateAsModel(value: () => ValidatableModel[KnockoutObservableArray[T]]): Self = StObject.set(x, "validateAsModel", js.Any.fromFunction0(value))
   }

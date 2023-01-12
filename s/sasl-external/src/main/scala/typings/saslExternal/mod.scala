@@ -96,7 +96,8 @@ object mod {
       __obj.asInstanceOf[Credentials]
     }
     
-    extension [Self <: Credentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
       
       inline def setAuthzid(value: String): Self = StObject.set(x, "authzid", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object mod {
       __obj.asInstanceOf[ExternalMechanism]
     }
     
-    extension [Self <: ExternalMechanism](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExternalMechanism] (val x: Self) extends AnyVal {
       
       inline def setClientFirst(value: `true`): Self = StObject.set(x, "clientFirst", value.asInstanceOf[js.Any])
       

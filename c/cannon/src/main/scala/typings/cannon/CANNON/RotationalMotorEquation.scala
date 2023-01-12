@@ -51,7 +51,8 @@ object RotationalMotorEquation {
     __obj.asInstanceOf[RotationalMotorEquation]
   }
   
-  extension [Self <: RotationalMotorEquation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RotationalMotorEquation] (val x: Self) extends AnyVal {
     
     inline def setAxisA(value: Vec3): Self = StObject.set(x, "axisA", value.asInstanceOf[js.Any])
     

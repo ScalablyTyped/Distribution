@@ -82,7 +82,8 @@ object XIeeeDoubleReadOnlyBitmap {
     __obj.asInstanceOf[XIeeeDoubleReadOnlyBitmap]
   }
   
-  extension [Self <: XIeeeDoubleReadOnlyBitmap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIeeeDoubleReadOnlyBitmap] (val x: Self) extends AnyVal {
     
     inline def setGetData(value: (js.Array[FloatingPointBitmapLayout], IntegerRectangle2D) => SafeArray[Double]): Self = StObject.set(x, "getData", js.Any.fromFunction2(value))
     

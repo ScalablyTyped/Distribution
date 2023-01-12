@@ -44,7 +44,8 @@ object CaseSwitchClause {
     __obj.asInstanceOf[CaseSwitchClause]
   }
   
-  extension [Self <: CaseSwitchClause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaseSwitchClause] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

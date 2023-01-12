@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[FormatResult]
     }
     
-    extension [Self <: FormatResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatResult] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object mod {
       __obj.asInstanceOf[FormatterOptions]
     }
     
-    extension [Self <: FormatterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatterOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -157,7 +159,8 @@ object mod {
       __obj.asInstanceOf[LocalesOptions]
     }
     
-    extension [Self <: LocalesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalesOptions] (val x: Self) extends AnyVal {
       
       inline def setDays(value: js.Array[String]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       

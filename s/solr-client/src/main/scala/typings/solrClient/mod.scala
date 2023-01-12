@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[AddRemoteResourceOptions]
     }
     
-    extension [Self <: AddRemoteResourceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddRemoteResourceOptions] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
@@ -323,7 +324,8 @@ object mod {
       __obj.asInstanceOf[FacetOptions]
     }
     
-    extension [Self <: FacetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FacetOptions] (val x: Self) extends AnyVal {
       
       inline def setField(value: String | js.Array[String]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -402,7 +404,8 @@ object mod {
       __obj.asInstanceOf[GroupOptions]
     }
     
-    extension [Self <: GroupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Double): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -505,7 +508,8 @@ object mod {
       __obj.asInstanceOf[HighlightOptions]
     }
     
-    extension [Self <: HighlightOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HighlightOptions] (val x: Self) extends AnyVal {
       
       inline def setAlternateField(value: String): Self = StObject.set(x, "alternateField", value.asInstanceOf[js.Any])
       
@@ -638,7 +642,8 @@ object mod {
       __obj.asInstanceOf[MoreLikeThisOptions]
     }
     
-    extension [Self <: MoreLikeThisOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MoreLikeThisOptions] (val x: Self) extends AnyVal {
       
       inline def setBoost(value: Boolean): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
       
@@ -711,7 +716,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: String): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -836,7 +842,8 @@ object mod {
       __obj.asInstanceOf[RangeFilterOption]
     }
     
-    extension [Self <: RangeFilterOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeFilterOption] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: String | Double | js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

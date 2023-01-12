@@ -552,7 +552,8 @@ object circularProgressCircularProgressMod {
       __obj.asInstanceOf[CircularProgressProps]
     }
     
-    extension [Self <: CircularProgressProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CircularProgressProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

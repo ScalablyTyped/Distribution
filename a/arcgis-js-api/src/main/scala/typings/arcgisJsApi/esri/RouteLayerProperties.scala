@@ -60,7 +60,8 @@ object RouteLayerProperties {
     __obj.asInstanceOf[RouteLayerProperties]
   }
   
-  extension [Self <: RouteLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setDefaultSymbols(value: RouteSymbolsProperties): Self = StObject.set(x, "defaultSymbols", value.asInstanceOf[js.Any])
     

@@ -71,7 +71,8 @@ object AttachStdin {
     __obj.asInstanceOf[AttachStdin]
   }
   
-  extension [Self <: AttachStdin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachStdin] (val x: Self) extends AnyVal {
     
     inline def setArgsEscaped(value: Boolean): Self = StObject.set(x, "ArgsEscaped", value.asInstanceOf[js.Any])
     

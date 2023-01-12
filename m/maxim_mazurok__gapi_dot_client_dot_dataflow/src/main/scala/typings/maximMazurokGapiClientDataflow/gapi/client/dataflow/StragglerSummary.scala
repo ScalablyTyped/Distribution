@@ -21,7 +21,8 @@ object StragglerSummary {
     __obj.asInstanceOf[StragglerSummary]
   }
   
-  extension [Self <: StragglerSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StragglerSummary] (val x: Self) extends AnyVal {
     
     inline def setStragglerCauseCount(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

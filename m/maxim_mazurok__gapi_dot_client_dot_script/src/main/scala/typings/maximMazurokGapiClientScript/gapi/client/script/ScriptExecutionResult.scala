@@ -16,7 +16,8 @@ object ScriptExecutionResult {
     __obj.asInstanceOf[ScriptExecutionResult]
   }
   
-  extension [Self <: ScriptExecutionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptExecutionResult] (val x: Self) extends AnyVal {
     
     inline def setReturnValue(value: Value): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
     

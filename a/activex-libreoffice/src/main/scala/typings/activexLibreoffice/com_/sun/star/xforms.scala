@@ -96,7 +96,8 @@ object xforms {
       __obj.asInstanceOf[Binding]
     }
     
-    extension [Self <: Binding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Binding] (val x: Self) extends AnyVal {
       
       inline def setBindingNamespaces(value: XNameContainer): Self = StObject.set(x, "BindingNamespaces", value.asInstanceOf[js.Any])
     }
@@ -169,7 +170,8 @@ object xforms {
       __obj.asInstanceOf[XDataTypeRepository]
     }
     
-    extension [Self <: XDataTypeRepository](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XDataTypeRepository] (val x: Self) extends AnyVal {
       
       inline def setCloneDataType(value: (String, String) => XDataType): Self = StObject.set(x, "cloneDataType", js.Any.fromFunction2(value))
       
@@ -219,7 +221,8 @@ object xforms {
       __obj.asInstanceOf[XFormsEvent]
     }
     
-    extension [Self <: XFormsEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XFormsEvent] (val x: Self) extends AnyVal {
       
       inline def setInitXFormsEvent(value: (String, Boolean, Boolean) => Unit): Self = StObject.set(x, "initXFormsEvent", js.Any.fromFunction3(value))
     }
@@ -255,7 +258,8 @@ object xforms {
       __obj.asInstanceOf[XFormsSupplier]
     }
     
-    extension [Self <: XFormsSupplier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XFormsSupplier] (val x: Self) extends AnyVal {
       
       inline def setGetXForms(value: () => XNameContainer): Self = StObject.set(x, "getXForms", js.Any.fromFunction0(value))
       
@@ -347,7 +351,8 @@ object xforms {
       __obj.asInstanceOf[XFormsUIHelper1]
     }
     
-    extension [Self <: XFormsUIHelper1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XFormsUIHelper1] (val x: Self) extends AnyVal {
       
       inline def setCloneBindingAsGhost(value: XPropertySet => XPropertySet): Self = StObject.set(x, "cloneBindingAsGhost", js.Any.fromFunction1(value))
       
@@ -567,7 +572,8 @@ object xforms {
       __obj.asInstanceOf[XModel]
     }
     
-    extension [Self <: XModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XModel] (val x: Self) extends AnyVal {
       
       inline def setBindings(value: XSet): Self = StObject.set(x, "Bindings", value.asInstanceOf[js.Any])
       

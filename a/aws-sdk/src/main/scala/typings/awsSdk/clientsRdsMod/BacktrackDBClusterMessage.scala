@@ -33,7 +33,8 @@ object BacktrackDBClusterMessage {
     __obj.asInstanceOf[BacktrackDBClusterMessage]
   }
   
-  extension [Self <: BacktrackDBClusterMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BacktrackDBClusterMessage] (val x: Self) extends AnyVal {
     
     inline def setBacktrackTo(value: js.Date): Self = StObject.set(x, "BacktrackTo", value.asInstanceOf[js.Any])
     

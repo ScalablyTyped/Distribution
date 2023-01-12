@@ -24,7 +24,8 @@ object ClientPositions {
     __obj.asInstanceOf[ClientPositions]
   }
   
-  extension [Self <: ClientPositions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientPositions] (val x: Self) extends AnyVal {
     
     inline def setBorderBoxCenter(value: Position): Self = StObject.set(x, "borderBoxCenter", value.asInstanceOf[js.Any])
     

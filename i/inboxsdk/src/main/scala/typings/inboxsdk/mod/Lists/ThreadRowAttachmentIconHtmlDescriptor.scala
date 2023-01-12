@@ -18,7 +18,8 @@ object ThreadRowAttachmentIconHtmlDescriptor {
     __obj.asInstanceOf[ThreadRowAttachmentIconHtmlDescriptor]
   }
   
-  extension [Self <: ThreadRowAttachmentIconHtmlDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreadRowAttachmentIconHtmlDescriptor] (val x: Self) extends AnyVal {
     
     inline def setIconHtml(value: String): Self = StObject.set(x, "iconHtml", value.asInstanceOf[js.Any])
   }

@@ -25,7 +25,8 @@ object kernel {
     __obj.asInstanceOf[kernel]
   }
   
-  extension [Self <: kernel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: kernel] (val x: Self) extends AnyVal {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }

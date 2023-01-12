@@ -38,7 +38,8 @@ object NavigateRequest {
     __obj.asInstanceOf[NavigateRequest]
   }
   
-  extension [Self <: NavigateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigateRequest] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object GhostStore {
     __obj.asInstanceOf[GhostStore[T]]
   }
   
-  extension [Self <: GhostStore[?], T](x: Self & GhostStore[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GhostStore[?], T] (val x: Self & GhostStore[T]) extends AnyVal {
     
     inline def setEachGhost(value: js.Function1[/* ghost */ Ghost[T], Unit] => Unit): Self = StObject.set(x, "eachGhost", js.Any.fromFunction1(value))
     

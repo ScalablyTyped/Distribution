@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Client]
     }
     
-    extension [Self <: Client](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
       
       inline def setClient(value: Double): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object anon {
       __obj.asInstanceOf[CloseIcon]
     }
     
-    extension [Self <: CloseIcon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseIcon] (val x: Self) extends AnyVal {
       
       inline def setCloseIcon(value: String): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
     }
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[EndDate]
     }
     
-    extension [Self <: EndDate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndDate] (val x: Self) extends AnyVal {
       
       inline def setEndDate(value: js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
@@ -102,7 +105,8 @@ object anon {
       __obj.asInstanceOf[FirstDate]
     }
     
-    extension [Self <: FirstDate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirstDate] (val x: Self) extends AnyVal {
       
       inline def setFirstDate(value: js.Date): Self = StObject.set(x, "firstDate", value.asInstanceOf[js.Any])
       
@@ -135,7 +139,8 @@ object anon {
       __obj.asInstanceOf[OnFinish]
     }
     
-    extension [Self <: OnFinish](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnFinish] (val x: Self) extends AnyVal {
       
       inline def setOnFinish(value: () => Unit): Self = StObject.set(x, "onFinish", js.Any.fromFunction0(value))
       
@@ -228,7 +233,8 @@ object anon {
       __obj.asInstanceOf[ReadonlychildrenReactNode]
     }
     
-    extension [Self <: ReadonlychildrenReactNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlychildrenReactNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -369,7 +375,8 @@ object anon {
       __obj.asInstanceOf[WeekComponents]
     }
     
-    extension [Self <: WeekComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WeekComponents] (val x: Self) extends AnyVal {
       
       inline def setWeekComponents(value: js.Array[ReactNode]): Self = StObject.set(x, "weekComponents", value.asInstanceOf[js.Any])
       

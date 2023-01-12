@@ -21,7 +21,8 @@ object RangeException {
     __obj.asInstanceOf[RangeException]
   }
   
-  extension [Self <: RangeException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeException] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

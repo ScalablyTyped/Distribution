@@ -15,7 +15,8 @@ object DesignTagConfig {
     __obj.asInstanceOf[DesignTagConfig]
   }
   
-  extension [Self <: DesignTagConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DesignTagConfig] (val x: Self) extends AnyVal {
     
     inline def setDelimiter(value: js.Tuple2[String, String]): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
   }

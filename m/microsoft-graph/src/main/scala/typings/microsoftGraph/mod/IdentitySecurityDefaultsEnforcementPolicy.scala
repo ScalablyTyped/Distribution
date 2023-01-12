@@ -18,7 +18,8 @@ object IdentitySecurityDefaultsEnforcementPolicy {
     __obj.asInstanceOf[IdentitySecurityDefaultsEnforcementPolicy]
   }
   
-  extension [Self <: IdentitySecurityDefaultsEnforcementPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentitySecurityDefaultsEnforcementPolicy] (val x: Self) extends AnyVal {
     
     inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     

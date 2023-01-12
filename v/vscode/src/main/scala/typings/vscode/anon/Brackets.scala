@@ -28,7 +28,8 @@ object Brackets {
     __obj.asInstanceOf[Brackets]
   }
   
-  extension [Self <: Brackets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Brackets] (val x: Self) extends AnyVal {
     
     inline def setBrackets(value: Any): Self = StObject.set(x, "brackets", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object Codec {
     __obj.asInstanceOf[Codec[V_1, C_1, A_1]]
   }
   
-  extension [Self <: Codec[?, ?, ?], V_1 /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */, C_1 /* <: Double */, A_1 /* <: Double */](x: Self & (Codec[V_1, C_1, A_1])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Codec[?, ?, ?], V_1 /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */, C_1 /* <: Double */, A_1 /* <: Double */] (val x: Self & (Codec[V_1, C_1, A_1])) extends AnyVal {
     
     inline def setCodec(value: C_1): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     

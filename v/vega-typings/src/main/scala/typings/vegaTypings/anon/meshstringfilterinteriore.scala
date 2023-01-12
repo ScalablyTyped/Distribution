@@ -29,7 +29,8 @@ object meshstringfilterinteriore {
     __obj.asInstanceOf[meshstringfilterinteriore]
   }
   
-  extension [Self <: meshstringfilterinteriore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: meshstringfilterinteriore] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: interior | exterior): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

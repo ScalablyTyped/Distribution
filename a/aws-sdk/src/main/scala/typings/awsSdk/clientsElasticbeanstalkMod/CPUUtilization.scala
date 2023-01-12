@@ -53,7 +53,8 @@ object CPUUtilization {
     __obj.asInstanceOf[CPUUtilization]
   }
   
-  extension [Self <: CPUUtilization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CPUUtilization] (val x: Self) extends AnyVal {
     
     inline def setIOWait(value: NullableDouble): Self = StObject.set(x, "IOWait", value.asInstanceOf[js.Any])
     

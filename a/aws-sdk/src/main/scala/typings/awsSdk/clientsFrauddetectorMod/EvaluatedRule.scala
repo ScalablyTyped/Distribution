@@ -48,7 +48,8 @@ object EvaluatedRule {
     __obj.asInstanceOf[EvaluatedRule]
   }
   
-  extension [Self <: EvaluatedRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluatedRule] (val x: Self) extends AnyVal {
     
     inline def setEvaluated(value: Boolean): Self = StObject.set(x, "evaluated", value.asInstanceOf[js.Any])
     

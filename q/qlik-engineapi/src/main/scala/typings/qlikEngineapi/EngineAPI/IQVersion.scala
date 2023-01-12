@@ -15,7 +15,8 @@ object IQVersion {
     __obj.asInstanceOf[IQVersion]
   }
   
-  extension [Self <: IQVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IQVersion] (val x: Self) extends AnyVal {
     
     inline def setQComponentVersion(value: String): Self = StObject.set(x, "qComponentVersion", value.asInstanceOf[js.Any])
   }

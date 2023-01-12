@@ -40,7 +40,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[PromiseConstructor]
       }
       
-      extension [Self <: PromiseConstructor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PromiseConstructor] (val x: Self) extends AnyVal {
         
         inline def setHash(
           value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof any ]: std.PromiseLike<any[P]> | any[P]} */ /* promiseHash */ js.Any => js.Promise[Any]

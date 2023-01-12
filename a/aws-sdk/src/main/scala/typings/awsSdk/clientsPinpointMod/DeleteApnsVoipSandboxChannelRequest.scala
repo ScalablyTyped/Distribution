@@ -18,7 +18,8 @@ object DeleteApnsVoipSandboxChannelRequest {
     __obj.asInstanceOf[DeleteApnsVoipSandboxChannelRequest]
   }
   
-  extension [Self <: DeleteApnsVoipSandboxChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteApnsVoipSandboxChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
   }

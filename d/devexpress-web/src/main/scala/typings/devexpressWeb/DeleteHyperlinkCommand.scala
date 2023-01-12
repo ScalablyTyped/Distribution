@@ -23,7 +23,8 @@ object DeleteHyperlinkCommand {
     __obj.asInstanceOf[DeleteHyperlinkCommand]
   }
   
-  extension [Self <: DeleteHyperlinkCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteHyperlinkCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

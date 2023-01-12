@@ -53,7 +53,8 @@ object OnenotePage {
     __obj.asInstanceOf[OnenotePage]
   }
   
-  extension [Self <: OnenotePage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnenotePage] (val x: Self) extends AnyVal {
     
     inline def setContent(value: NullableOption[Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

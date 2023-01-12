@@ -157,7 +157,8 @@ object componentsBreadcrumbsMod {
       __obj.asInstanceOf[BreadcrumbItemProps]
     }
     
-    extension [Self <: BreadcrumbItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbItemProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -461,7 +462,8 @@ object componentsBreadcrumbsMod {
       __obj.asInstanceOf[BreadcrumbsProps]
     }
     
-    extension [Self <: BreadcrumbsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbsProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

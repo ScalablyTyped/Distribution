@@ -23,7 +23,8 @@ object BreakpointResolvedEventDataType {
     __obj.asInstanceOf[BreakpointResolvedEventDataType]
   }
   
-  extension [Self <: BreakpointResolvedEventDataType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BreakpointResolvedEventDataType] (val x: Self) extends AnyVal {
     
     inline def setBreakpointId(value: BreakpointId): Self = StObject.set(x, "breakpointId", value.asInstanceOf[js.Any])
     

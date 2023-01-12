@@ -21,7 +21,8 @@ object Ebills {
     __obj.asInstanceOf[Ebills]
   }
   
-  extension [Self <: Ebills](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ebills] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: EbillsCreateRequest => js.Promise[AxiosResponse[EbillsCreateResponse, Any]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     

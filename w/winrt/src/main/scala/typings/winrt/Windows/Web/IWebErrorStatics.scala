@@ -15,7 +15,8 @@ object IWebErrorStatics {
     __obj.asInstanceOf[IWebErrorStatics]
   }
   
-  extension [Self <: IWebErrorStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebErrorStatics] (val x: Self) extends AnyVal {
     
     inline def setGetStatus(value: Double => WebErrorStatus): Self = StObject.set(x, "getStatus", js.Any.fromFunction1(value))
   }

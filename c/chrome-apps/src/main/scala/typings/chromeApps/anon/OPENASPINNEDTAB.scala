@@ -25,7 +25,8 @@ object OPENASPINNEDTAB {
     __obj.asInstanceOf[OPENASPINNEDTAB]
   }
   
-  extension [Self <: OPENASPINNEDTAB](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OPENASPINNEDTAB] (val x: Self) extends AnyVal {
     
     inline def setOPEN_AS_PINNED_TAB(value: OPEN_AS_PINNED_TAB): Self = StObject.set(x, "OPEN_AS_PINNED_TAB", value.asInstanceOf[js.Any])
     

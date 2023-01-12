@@ -15,7 +15,8 @@ object EnumValuesHourly {
     __obj.asInstanceOf[EnumValuesHourly]
   }
   
-  extension [Self <: EnumValuesHourly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesHourly] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: Hourly): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

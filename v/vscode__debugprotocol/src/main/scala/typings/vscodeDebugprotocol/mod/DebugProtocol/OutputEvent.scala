@@ -27,7 +27,8 @@ object OutputEvent {
     __obj.asInstanceOf[OutputEvent]
   }
   
-  extension [Self <: OutputEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputEvent] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Category): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

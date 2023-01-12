@@ -56,7 +56,8 @@ object AccountLimits {
     __obj.asInstanceOf[AccountLimits]
   }
   
-  extension [Self <: AccountLimits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountLimits] (val x: Self) extends AnyVal {
     
     inline def setAccountLimits(value: typings.evernote.mod.Types.AccountLimits): Self = StObject.set(x, "accountLimits", value.asInstanceOf[js.Any])
     

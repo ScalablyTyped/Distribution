@@ -23,7 +23,8 @@ object MlTotalFeatureImportance {
     __obj.asInstanceOf[MlTotalFeatureImportance]
   }
   
-  extension [Self <: MlTotalFeatureImportance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlTotalFeatureImportance] (val x: Self) extends AnyVal {
     
     inline def setClasses(value: js.Array[MlTotalFeatureImportanceClass]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     

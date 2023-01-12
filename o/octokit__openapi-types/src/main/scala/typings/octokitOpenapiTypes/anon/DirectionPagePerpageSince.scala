@@ -32,7 +32,8 @@ object DirectionPagePerpageSince {
     __obj.asInstanceOf[DirectionPagePerpageSince]
   }
   
-  extension [Self <: DirectionPagePerpageSince](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionPagePerpageSince] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

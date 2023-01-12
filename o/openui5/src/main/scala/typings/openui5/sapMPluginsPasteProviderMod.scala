@@ -282,7 +282,8 @@ object sapMPluginsPasteProviderMod {
       __obj.asInstanceOf[PasteProviderSettings]
     }
     
-    extension [Self <: PasteProviderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PasteProviderSettings] (val x: Self) extends AnyVal {
       
       inline def setPaste(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "paste", js.Any.fromFunction1(value))
       

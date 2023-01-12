@@ -35,7 +35,8 @@ object GoogleCloudRunV2SecretVolumeSource {
     __obj.asInstanceOf[GoogleCloudRunV2SecretVolumeSource]
   }
   
-  extension [Self <: GoogleCloudRunV2SecretVolumeSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRunV2SecretVolumeSource] (val x: Self) extends AnyVal {
     
     inline def setDefaultMode(value: Double): Self = StObject.set(x, "defaultMode", value.asInstanceOf[js.Any])
     

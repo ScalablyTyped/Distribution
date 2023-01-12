@@ -17,7 +17,8 @@ object Print3DTaskSourceChangedEventArgs {
     __obj.asInstanceOf[Print3DTaskSourceChangedEventArgs]
   }
   
-  extension [Self <: Print3DTaskSourceChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Print3DTaskSourceChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setSource(value: Printing3D3MFPackage): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }

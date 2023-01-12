@@ -111,7 +111,8 @@ object Circle {
       __obj.asInstanceOf[EventMap[I]]
     }
     
-    extension [Self <: EventMap[?], I](x: Self & EventMap[I]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventMap[?], I] (val x: Self & EventMap[I]) extends AnyVal {
       
       inline def setSetCenter(value: Event_[setCenter, Unit]): Self = StObject.set(x, "setCenter", value.asInstanceOf[js.Any])
       
@@ -223,7 +224,8 @@ object Circle {
       __obj.asInstanceOf[GetOptionsResult[ExtraData]]
     }
     
-    extension [Self <: GetOptionsResult[?], ExtraData](x: Self & GetOptionsResult[ExtraData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetOptionsResult[?], ExtraData] (val x: Self & GetOptionsResult[ExtraData]) extends AnyVal {
       
       inline def setBubble(value: Boolean): Self = StObject.set(x, "bubble", value.asInstanceOf[js.Any])
       
@@ -307,7 +309,8 @@ object Circle {
       __obj.asInstanceOf[Options[ExtraData]]
     }
     
-    extension [Self <: Options[?], ExtraData](x: Self & Options[ExtraData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], ExtraData] (val x: Self & Options[ExtraData]) extends AnyVal {
       
       inline def setBubble(value: Boolean): Self = StObject.set(x, "bubble", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object StandardDiagramCreationParameters {
     __obj.asInstanceOf[StandardDiagramCreationParameters]
   }
   
-  extension [Self <: StandardDiagramCreationParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardDiagramCreationParameters] (val x: Self) extends AnyVal {
     
     inline def setHasCategories(value: Boolean): Self = StObject.set(x, "HasCategories", value.asInstanceOf[js.Any])
     

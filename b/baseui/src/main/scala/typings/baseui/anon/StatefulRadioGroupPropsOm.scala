@@ -66,7 +66,8 @@ object StatefulRadioGroupPropsOm {
     __obj.asInstanceOf[StatefulRadioGroupPropsOm]
   }
   
-  extension [Self <: StatefulRadioGroupPropsOm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatefulRadioGroupPropsOm] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: typings.baseui.radioTypesMod.Align): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

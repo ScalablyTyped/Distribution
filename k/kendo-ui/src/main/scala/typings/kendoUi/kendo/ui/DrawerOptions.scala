@@ -33,7 +33,8 @@ object DrawerOptions {
     __obj.asInstanceOf[DrawerOptions]
   }
   
-  extension [Self <: DrawerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawerOptions] (val x: Self) extends AnyVal {
     
     inline def setHide(value: /* e */ DrawerHideEvent => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
     

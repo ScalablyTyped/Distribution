@@ -45,7 +45,8 @@ object MediaHTMLAttributes {
     __obj.asInstanceOf[MediaHTMLAttributes[T]]
   }
   
-  extension [Self <: MediaHTMLAttributes[?], T](x: Self & MediaHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaHTMLAttributes[?], T] (val x: Self & MediaHTMLAttributes[T]) extends AnyVal {
     
     inline def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
     

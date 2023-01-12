@@ -33,7 +33,8 @@ object MarkerOptions {
     __obj.asInstanceOf[MarkerOptions]
   }
   
-  extension [Self <: MarkerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerOptions] (val x: Self) extends AnyVal {
     
     inline def setDraggingCursor(value: String): Self = StObject.set(x, "draggingCursor", value.asInstanceOf[js.Any])
     

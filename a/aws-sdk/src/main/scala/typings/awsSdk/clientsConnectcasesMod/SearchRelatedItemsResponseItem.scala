@@ -44,7 +44,8 @@ object SearchRelatedItemsResponseItem {
     __obj.asInstanceOf[SearchRelatedItemsResponseItem]
   }
   
-  extension [Self <: SearchRelatedItemsResponseItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchRelatedItemsResponseItem] (val x: Self) extends AnyVal {
     
     inline def setAssociationTime(value: js.Date): Self = StObject.set(x, "associationTime", value.asInstanceOf[js.Any])
     

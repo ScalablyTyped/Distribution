@@ -28,7 +28,8 @@ object ListVpcIngressConnectionsRequest {
     __obj.asInstanceOf[ListVpcIngressConnectionsRequest]
   }
   
-  extension [Self <: ListVpcIngressConnectionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListVpcIngressConnectionsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: ListVpcIngressConnectionsFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

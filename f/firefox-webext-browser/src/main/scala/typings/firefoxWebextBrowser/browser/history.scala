@@ -35,7 +35,8 @@ object history {
       __obj.asInstanceOf[AddUrlDetails]
     }
     
-    extension [Self <: AddUrlDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddUrlDetails] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object history {
       __obj.asInstanceOf[DeleteRangeRange]
     }
     
-    extension [Self <: DeleteRangeRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteRangeRange] (val x: Self) extends AnyVal {
       
       inline def setEndTime(value: Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object history {
       __obj.asInstanceOf[DeleteUrlDetails]
     }
     
-    extension [Self <: DeleteUrlDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteUrlDetails] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
@@ -108,7 +111,8 @@ object history {
       __obj.asInstanceOf[GetVisitsDetails]
     }
     
-    extension [Self <: GetVisitsDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetVisitsDetails] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
@@ -142,7 +146,8 @@ object history {
       __obj.asInstanceOf[HistoryItem]
     }
     
-    extension [Self <: HistoryItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HistoryItem] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -183,7 +188,8 @@ object history {
       __obj.asInstanceOf[OnTitleChangedChanged]
     }
     
-    extension [Self <: OnTitleChangedChanged](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnTitleChangedChanged] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -205,7 +211,8 @@ object history {
       __obj.asInstanceOf[OnVisitRemovedRemoved]
     }
     
-    extension [Self <: OnVisitRemovedRemoved](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnVisitRemovedRemoved] (val x: Self) extends AnyVal {
       
       inline def setAllHistory(value: Boolean): Self = StObject.set(x, "allHistory", value.asInstanceOf[js.Any])
       
@@ -238,7 +245,8 @@ object history {
       __obj.asInstanceOf[SearchQuery]
     }
     
-    extension [Self <: SearchQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchQuery] (val x: Self) extends AnyVal {
       
       inline def setEndTime(value: Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
@@ -322,7 +330,8 @@ object history {
       __obj.asInstanceOf[VisitItem]
     }
     
-    extension [Self <: VisitItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisitItem] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

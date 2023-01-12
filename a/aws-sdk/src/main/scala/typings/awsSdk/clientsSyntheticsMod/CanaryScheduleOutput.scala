@@ -23,7 +23,8 @@ object CanaryScheduleOutput {
     __obj.asInstanceOf[CanaryScheduleOutput]
   }
   
-  extension [Self <: CanaryScheduleOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanaryScheduleOutput] (val x: Self) extends AnyVal {
     
     inline def setDurationInSeconds(value: MaxOneYearInSeconds): Self = StObject.set(x, "DurationInSeconds", value.asInstanceOf[js.Any])
     

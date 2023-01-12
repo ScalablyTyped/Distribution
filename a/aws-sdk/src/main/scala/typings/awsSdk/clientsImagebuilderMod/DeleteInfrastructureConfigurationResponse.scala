@@ -23,7 +23,8 @@ object DeleteInfrastructureConfigurationResponse {
     __obj.asInstanceOf[DeleteInfrastructureConfigurationResponse]
   }
   
-  extension [Self <: DeleteInfrastructureConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteInfrastructureConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setInfrastructureConfigurationArn(value: InfrastructureConfigurationArn): Self = StObject.set(x, "infrastructureConfigurationArn", value.asInstanceOf[js.Any])
     

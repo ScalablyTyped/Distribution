@@ -33,7 +33,8 @@ object DescribeProvisionedProductPlanInput {
     __obj.asInstanceOf[DescribeProvisionedProductPlanInput]
   }
   
-  extension [Self <: DescribeProvisionedProductPlanInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeProvisionedProductPlanInput] (val x: Self) extends AnyVal {
     
     inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     

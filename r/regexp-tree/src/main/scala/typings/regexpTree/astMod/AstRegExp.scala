@@ -21,7 +21,8 @@ object AstRegExp {
     __obj.asInstanceOf[AstRegExp]
   }
   
-  extension [Self <: AstRegExp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AstRegExp] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Expression): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

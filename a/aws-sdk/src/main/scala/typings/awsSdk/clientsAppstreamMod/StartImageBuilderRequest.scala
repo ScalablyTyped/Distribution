@@ -23,7 +23,8 @@ object StartImageBuilderRequest {
     __obj.asInstanceOf[StartImageBuilderRequest]
   }
   
-  extension [Self <: StartImageBuilderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartImageBuilderRequest] (val x: Self) extends AnyVal {
     
     inline def setAppstreamAgentVersion(value: AppstreamAgentVersion): Self = StObject.set(x, "AppstreamAgentVersion", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ContentSourceConfiguration {
     __obj.asInstanceOf[ContentSourceConfiguration]
   }
   
-  extension [Self <: ContentSourceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentSourceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDataSourceIds(value: DataSourceIdList): Self = StObject.set(x, "DataSourceIds", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object PluralOrSelectOption {
     __obj.asInstanceOf[PluralOrSelectOption]
   }
   
-  extension [Self <: PluralOrSelectOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluralOrSelectOption] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

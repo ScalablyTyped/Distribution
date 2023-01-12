@@ -18,7 +18,8 @@ object ResumeToken {
     __obj.asInstanceOf[ResumeToken]
   }
   
-  extension [Self <: ResumeToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResumeToken] (val x: Self) extends AnyVal {
     
     inline def setReadTime(value: TestSnapshotVersion): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListImportsOutput {
     __obj.asInstanceOf[ListImportsOutput]
   }
   
-  extension [Self <: ListImportsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListImportsOutput] (val x: Self) extends AnyVal {
     
     inline def setImportSummaryList(value: ImportSummaryList): Self = StObject.set(x, "ImportSummaryList", value.asInstanceOf[js.Any])
     

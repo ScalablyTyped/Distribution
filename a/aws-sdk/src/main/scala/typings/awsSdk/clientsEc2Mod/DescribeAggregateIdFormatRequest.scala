@@ -18,7 +18,8 @@ object DescribeAggregateIdFormatRequest {
     __obj.asInstanceOf[DescribeAggregateIdFormatRequest]
   }
   
-  extension [Self <: DescribeAggregateIdFormatRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAggregateIdFormatRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

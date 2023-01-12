@@ -262,7 +262,8 @@ object IPositionable {
     __obj.asInstanceOf[IPositionable]
   }
   
-  extension [Self <: IPositionable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPositionable] (val x: Self) extends AnyVal {
     
     inline def setAlignTo(
       value: (/* element */ js.UndefOr[Any], /* position */ js.UndefOr[String], /* offsets */ js.UndefOr[Array], /* animate */ js.UndefOr[Any]) => IPositionable

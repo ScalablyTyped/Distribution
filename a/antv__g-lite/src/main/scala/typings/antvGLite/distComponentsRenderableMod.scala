@@ -53,7 +53,8 @@ object distComponentsRenderableMod {
       __obj.asInstanceOf[Renderable]
     }
     
-    extension [Self <: Renderable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Renderable] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: AABB): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       

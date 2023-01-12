@@ -82,7 +82,8 @@ object distSocialSocialIconMod extends Shortcut {
       __obj.asInstanceOf[SocialIconProps]
     }
     
-    extension [Self <: SocialIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocialIconProps] (val x: Self) extends AnyVal {
       
       inline def setActivityIndicatorStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "activityIndicatorStyle", value.asInstanceOf[js.Any])
       

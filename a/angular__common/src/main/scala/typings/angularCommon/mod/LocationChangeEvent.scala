@@ -18,7 +18,8 @@ object LocationChangeEvent {
     __obj.asInstanceOf[LocationChangeEvent]
   }
   
-  extension [Self <: LocationChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

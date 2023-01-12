@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsUserFormBoldMod extends Shortc
       __obj.asInstanceOf[UserFormBoldProps]
     }
     
-    extension [Self <: UserFormBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserFormBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

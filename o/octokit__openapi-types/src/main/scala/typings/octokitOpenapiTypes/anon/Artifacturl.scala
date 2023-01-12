@@ -31,7 +31,8 @@ object Artifacturl {
     __obj.asInstanceOf[Artifacturl]
   }
   
-  extension [Self <: Artifacturl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Artifacturl] (val x: Self) extends AnyVal {
     
     inline def setArtifact_url(value: String): Self = StObject.set(x, "artifact_url", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object WindowEventMap {
     __obj.asInstanceOf[WindowEventMap]
   }
   
-  extension [Self <: WindowEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowEventMap] (val x: Self) extends AnyVal {
     
     inline def setAppinstalled(value: Event): Self = StObject.set(x, "appinstalled", value.asInstanceOf[js.Any])
     

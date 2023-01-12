@@ -19,7 +19,8 @@ object IClientSortControls {
     __obj.asInstanceOf[IClientSortControls]
   }
   
-  extension [Self <: IClientSortControls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClientSortControls] (val x: Self) extends AnyVal {
     
     inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     

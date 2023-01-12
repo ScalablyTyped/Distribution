@@ -62,7 +62,8 @@ object sourceMod {
       __obj.asInstanceOf[Acceptance]
     }
     
-    extension [Self <: Acceptance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Acceptance] (val x: Self) extends AnyVal {
       
       inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object sourceMod {
       __obj.asInstanceOf[CodeVerification]
     }
     
-    extension [Self <: CodeVerification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeVerification] (val x: Self) extends AnyVal {
       
       inline def setAttempts_remaining(value: Double): Self = StObject.set(x, "attempts_remaining", value.asInstanceOf[js.Any])
       
@@ -121,7 +123,8 @@ object sourceMod {
       __obj.asInstanceOf[Mandate]
     }
     
-    extension [Self <: Mandate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mandate] (val x: Self) extends AnyVal {
       
       inline def setAcceptance(value: Acceptance): Self = StObject.set(x, "acceptance", value.asInstanceOf[js.Any])
       
@@ -165,7 +168,8 @@ object sourceMod {
       __obj.asInstanceOf[Receiver]
     }
     
-    extension [Self <: Receiver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Receiver] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -212,7 +216,8 @@ object sourceMod {
       __obj.asInstanceOf[Redirect]
     }
     
-    extension [Self <: Redirect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Redirect] (val x: Self) extends AnyVal {
       
       inline def setFailure_reason(value: user_abort | declined | processing_error): Self = StObject.set(x, "failure_reason", value.asInstanceOf[js.Any])
       
@@ -351,7 +356,8 @@ object sourceMod {
       __obj.asInstanceOf[Source]
     }
     
-    extension [Self <: Source](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -477,7 +483,8 @@ object sourceMod {
       __obj.asInstanceOf[SourceData]
     }
     
-    extension [Self <: SourceData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceData] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -542,7 +549,8 @@ object sourceMod {
       __obj.asInstanceOf[SourceResult]
     }
     
-    extension [Self <: SourceResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceResult] (val x: Self) extends AnyVal {
       
       inline def setError(value: StripeError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

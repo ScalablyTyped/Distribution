@@ -20,7 +20,8 @@ object IGenericMeasureProperties {
     __obj.asInstanceOf[IGenericMeasureProperties]
   }
   
-  extension [Self <: IGenericMeasureProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericMeasureProperties] (val x: Self) extends AnyVal {
     
     inline def setQMeasure(value: INxLibraryMeasureDef): Self = StObject.set(x, "qMeasure", value.asInstanceOf[js.Any])
   }

@@ -20,7 +20,8 @@ object VerifyOTPMessageRequest {
     __obj.asInstanceOf[VerifyOTPMessageRequest]
   }
   
-  extension [Self <: VerifyOTPMessageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyOTPMessageRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

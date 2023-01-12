@@ -23,7 +23,8 @@ object AwsElbLbCookieStickinessPolicy {
     __obj.asInstanceOf[AwsElbLbCookieStickinessPolicy]
   }
   
-  extension [Self <: AwsElbLbCookieStickinessPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsElbLbCookieStickinessPolicy] (val x: Self) extends AnyVal {
     
     inline def setCookieExpirationPeriod(value: Long): Self = StObject.set(x, "CookieExpirationPeriod", value.asInstanceOf[js.Any])
     

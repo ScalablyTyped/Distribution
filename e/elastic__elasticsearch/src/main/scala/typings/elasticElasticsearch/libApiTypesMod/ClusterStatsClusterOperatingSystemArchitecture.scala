@@ -17,7 +17,8 @@ object ClusterStatsClusterOperatingSystemArchitecture {
     __obj.asInstanceOf[ClusterStatsClusterOperatingSystemArchitecture]
   }
   
-  extension [Self <: ClusterStatsClusterOperatingSystemArchitecture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatsClusterOperatingSystemArchitecture] (val x: Self) extends AnyVal {
     
     inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
     

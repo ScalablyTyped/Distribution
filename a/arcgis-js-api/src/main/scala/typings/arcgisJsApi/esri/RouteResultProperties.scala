@@ -76,7 +76,8 @@ object RouteResultProperties {
     __obj.asInstanceOf[RouteResultProperties]
   }
   
-  extension [Self <: RouteResultProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteResultProperties] (val x: Self) extends AnyVal {
     
     inline def setDirectionLines(value: FeatureSetProperties): Self = StObject.set(x, "directionLines", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object PropertyChangedEventArgs {
     __obj.asInstanceOf[PropertyChangedEventArgs]
   }
   
-  extension [Self <: PropertyChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setPropertyName(value: () => String): Self = StObject.set(x, "propertyName", js.Any.fromFunction0(value))
   }

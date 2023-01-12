@@ -20,7 +20,8 @@ object UseRowStateOptions {
     __obj.asInstanceOf[UseRowStateOptions[D]]
   }
   
-  extension [Self <: UseRowStateOptions[?], D /* <: js.Object */](x: Self & UseRowStateOptions[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseRowStateOptions[?], D /* <: js.Object */] (val x: Self & UseRowStateOptions[D]) extends AnyVal {
     
     inline def setAutoResetRowState(value: Boolean): Self = StObject.set(x, "autoResetRowState", value.asInstanceOf[js.Any])
     

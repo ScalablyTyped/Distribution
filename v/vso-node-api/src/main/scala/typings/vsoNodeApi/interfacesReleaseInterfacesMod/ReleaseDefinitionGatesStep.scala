@@ -19,7 +19,8 @@ object ReleaseDefinitionGatesStep {
     __obj.asInstanceOf[ReleaseDefinitionGatesStep]
   }
   
-  extension [Self <: ReleaseDefinitionGatesStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseDefinitionGatesStep] (val x: Self) extends AnyVal {
     
     inline def setGates(value: js.Array[ReleaseDefinitionGate]): Self = StObject.set(x, "gates", value.asInstanceOf[js.Any])
     

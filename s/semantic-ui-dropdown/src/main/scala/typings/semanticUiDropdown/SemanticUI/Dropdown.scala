@@ -338,7 +338,8 @@ object Dropdown {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
@@ -533,7 +534,8 @@ object Dropdown {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setHide(value: Double): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
         
@@ -613,7 +615,8 @@ object Dropdown {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         
@@ -704,7 +707,8 @@ object Dropdown {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -826,7 +830,8 @@ object Dropdown {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setBackspace(value: Double): Self = StObject.set(x, "backspace", value.asInstanceOf[js.Any])
         
@@ -952,7 +957,8 @@ object Dropdown {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
         
@@ -1019,7 +1025,8 @@ object Dropdown {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setAddResult(value: String): Self = StObject.set(x, "addResult", value.asInstanceOf[js.Any])
         
@@ -1099,7 +1106,8 @@ object Dropdown {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setDefaultText(value: String): Self = StObject.set(x, "defaultText", value.asInstanceOf[js.Any])
         
@@ -1177,13 +1185,15 @@ object Dropdown {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setEscape(value: js.RegExp): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
       }
     }
     
-    extension [Self <: RegExpSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegExpSettings] (val x: Self) extends AnyVal {
       
       inline def setEscape(value: js.RegExp): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
     }
@@ -1200,7 +1210,8 @@ object Dropdown {
         __obj.asInstanceOf[typings.semanticUiDropdown.SemanticUI.Dropdown.RegExpSettings.Param]
       }
       
-      extension [Self <: typings.semanticUiDropdown.SemanticUI.Dropdown.RegExpSettings.Param](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.semanticUiDropdown.SemanticUI.Dropdown.RegExpSettings.Param] (val x: Self) extends AnyVal {
         
         inline def setEscape(value: js.RegExp): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
       }
@@ -1297,7 +1308,8 @@ object Dropdown {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setAddition(value: String): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
         

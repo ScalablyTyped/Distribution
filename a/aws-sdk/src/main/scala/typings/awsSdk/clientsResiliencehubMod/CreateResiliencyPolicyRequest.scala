@@ -48,7 +48,8 @@ object CreateResiliencyPolicyRequest {
     __obj.asInstanceOf[CreateResiliencyPolicyRequest]
   }
   
-  extension [Self <: CreateResiliencyPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateResiliencyPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ToggleParagraphAlignmentCenterCommand {
     __obj.asInstanceOf[ToggleParagraphAlignmentCenterCommand]
   }
   
-  extension [Self <: ToggleParagraphAlignmentCenterCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToggleParagraphAlignmentCenterCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

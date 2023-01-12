@@ -54,7 +54,8 @@ object libAdminApisMod {
       __obj.asInstanceOf[WhoisConnectionInfo]
     }
     
-    extension [Self <: WhoisConnectionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WhoisConnectionInfo] (val x: Self) extends AnyVal {
       
       inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object libAdminApisMod {
       __obj.asInstanceOf[WhoisInfo]
     }
     
-    extension [Self <: WhoisInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WhoisInfo] (val x: Self) extends AnyVal {
       
       inline def setDevices(value: StringDictionary[Sessions]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
       

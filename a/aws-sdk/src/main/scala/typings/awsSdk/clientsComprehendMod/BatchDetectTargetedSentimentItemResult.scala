@@ -23,7 +23,8 @@ object BatchDetectTargetedSentimentItemResult {
     __obj.asInstanceOf[BatchDetectTargetedSentimentItemResult]
   }
   
-  extension [Self <: BatchDetectTargetedSentimentItemResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDetectTargetedSentimentItemResult] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: ListOfTargetedSentimentEntities): Self = StObject.set(x, "Entities", value.asInstanceOf[js.Any])
     

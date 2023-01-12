@@ -79,7 +79,8 @@ object distDdGridstackMod {
       __obj.asInstanceOf[DDDropOpt]
     }
     
-    extension [Self <: DDDropOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DDDropOpt] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: /* el */ GridItemHTMLElement => Boolean): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
       

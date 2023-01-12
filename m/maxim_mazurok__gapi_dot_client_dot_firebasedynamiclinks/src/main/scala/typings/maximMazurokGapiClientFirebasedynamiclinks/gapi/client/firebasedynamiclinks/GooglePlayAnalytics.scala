@@ -31,7 +31,8 @@ object GooglePlayAnalytics {
     __obj.asInstanceOf[GooglePlayAnalytics]
   }
   
-  extension [Self <: GooglePlayAnalytics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePlayAnalytics] (val x: Self) extends AnyVal {
     
     inline def setGclid(value: String): Self = StObject.set(x, "gclid", value.asInstanceOf[js.Any])
     

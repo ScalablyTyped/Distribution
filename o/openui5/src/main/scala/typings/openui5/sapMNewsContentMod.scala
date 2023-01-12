@@ -345,7 +345,8 @@ object sapMNewsContentMod {
       __obj.asInstanceOf[NewsContentSettings]
     }
     
-    extension [Self <: NewsContentSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewsContentSettings] (val x: Self) extends AnyVal {
       
       inline def setContentText(value: String | PropertyBindingInfo): Self = StObject.set(x, "contentText", value.asInstanceOf[js.Any])
       

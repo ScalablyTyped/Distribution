@@ -18,7 +18,8 @@ object PlotSlowstochasticSmoothedLineOptions {
     __obj.asInstanceOf[PlotSlowstochasticSmoothedLineOptions]
   }
   
-  extension [Self <: PlotSlowstochasticSmoothedLineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSlowstochasticSmoothedLineOptions] (val x: Self) extends AnyVal {
     
     inline def setStyles(value: PlotSlowstochasticSmoothedLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     

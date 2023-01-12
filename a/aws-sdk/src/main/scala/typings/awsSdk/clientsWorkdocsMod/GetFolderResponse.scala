@@ -23,7 +23,8 @@ object GetFolderResponse {
     __obj.asInstanceOf[GetFolderResponse]
   }
   
-  extension [Self <: GetFolderResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFolderResponse] (val x: Self) extends AnyVal {
     
     inline def setCustomMetadata(value: CustomMetadataMap): Self = StObject.set(x, "CustomMetadata", value.asInstanceOf[js.Any])
     

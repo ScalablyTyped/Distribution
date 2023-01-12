@@ -25,7 +25,8 @@ object AnnotateFileResponse {
     __obj.asInstanceOf[AnnotateFileResponse]
   }
   
-  extension [Self <: AnnotateFileResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotateFileResponse] (val x: Self) extends AnyVal {
     
     inline def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

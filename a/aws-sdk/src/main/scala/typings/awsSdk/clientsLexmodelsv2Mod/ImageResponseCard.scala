@@ -33,7 +33,8 @@ object ImageResponseCard {
     __obj.asInstanceOf[ImageResponseCard]
   }
   
-  extension [Self <: ImageResponseCard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageResponseCard] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: ButtonsList): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

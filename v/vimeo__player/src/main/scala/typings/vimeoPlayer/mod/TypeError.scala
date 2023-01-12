@@ -18,7 +18,8 @@ object TypeError {
     __obj.asInstanceOf[TypeError]
   }
   
-  extension [Self <: TypeError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeError] (val x: Self) extends AnyVal {
     
     inline def setName(value: typings.vimeoPlayer.vimeoPlayerStrings.TypeError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

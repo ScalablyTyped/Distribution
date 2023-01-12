@@ -522,7 +522,8 @@ object rs {
       __obj.asInstanceOf[ListPrefixOptions]
     }
     
-    extension [Self <: ListPrefixOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListPrefixOptions] (val x: Self) extends AnyVal {
       
       inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
@@ -595,7 +596,8 @@ object rs {
       __obj.asInstanceOf[PutPolicyOptions]
     }
     
-    extension [Self <: PutPolicyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutPolicyOptions] (val x: Self) extends AnyVal {
       
       inline def setCallbackBody(value: String): Self = StObject.set(x, "callbackBody", value.asInstanceOf[js.Any])
       

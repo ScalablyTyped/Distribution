@@ -23,7 +23,8 @@ object CreateGroupCertificateAuthorityRequest {
     __obj.asInstanceOf[CreateGroupCertificateAuthorityRequest]
   }
   
-  extension [Self <: CreateGroupCertificateAuthorityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateGroupCertificateAuthorityRequest] (val x: Self) extends AnyVal {
     
     inline def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
     

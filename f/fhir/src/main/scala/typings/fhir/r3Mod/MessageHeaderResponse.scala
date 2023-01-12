@@ -37,7 +37,8 @@ object MessageHeaderResponse {
     __obj.asInstanceOf[MessageHeaderResponse]
   }
   
-  extension [Self <: MessageHeaderResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageHeaderResponse] (val x: Self) extends AnyVal {
     
     inline def setCode(value: ok | `transient-error` | `fatal-error`): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

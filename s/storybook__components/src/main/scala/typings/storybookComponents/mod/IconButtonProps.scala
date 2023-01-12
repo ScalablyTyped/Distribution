@@ -17,7 +17,8 @@ object IconButtonProps {
     __obj.asInstanceOf[IconButtonProps]
   }
   
-  extension [Self <: IconButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconButtonProps] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

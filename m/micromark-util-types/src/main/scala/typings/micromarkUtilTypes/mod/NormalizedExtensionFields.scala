@@ -45,7 +45,8 @@ object NormalizedExtensionFields {
     __obj.asInstanceOf[NormalizedExtensionFields]
   }
   
-  extension [Self <: NormalizedExtensionFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizedExtensionFields] (val x: Self) extends AnyVal {
     
     inline def setAttentionMarkers(value: `3`): Self = StObject.set(x, "attentionMarkers", value.asInstanceOf[js.Any])
     

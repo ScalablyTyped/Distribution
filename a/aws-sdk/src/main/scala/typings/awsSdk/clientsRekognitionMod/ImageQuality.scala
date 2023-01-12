@@ -23,7 +23,8 @@ object ImageQuality {
     __obj.asInstanceOf[ImageQuality]
   }
   
-  extension [Self <: ImageQuality](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageQuality] (val x: Self) extends AnyVal {
     
     inline def setBrightness(value: Float): Self = StObject.set(x, "Brightness", value.asInstanceOf[js.Any])
     

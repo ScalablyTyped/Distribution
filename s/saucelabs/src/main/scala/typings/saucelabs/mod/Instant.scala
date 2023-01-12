@@ -20,7 +20,8 @@ object Instant {
     __obj.asInstanceOf[Instant]
   }
   
-  extension [Self <: Instant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Instant] (val x: Self) extends AnyVal {
     
     inline def setEpochSecond(value: Double): Self = StObject.set(x, "epochSecond", value.asInstanceOf[js.Any])
     

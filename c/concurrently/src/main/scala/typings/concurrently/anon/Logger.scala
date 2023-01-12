@@ -15,7 +15,8 @@ object Logger {
     __obj.asInstanceOf[Logger]
   }
   
-  extension [Self <: Logger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
     
     inline def setLogger(value: typings.concurrently.distSrcLoggerMod.Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
   }

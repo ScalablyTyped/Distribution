@@ -51,7 +51,8 @@ object JpegOptions {
     __obj.asInstanceOf[JpegOptions]
   }
   
-  extension [Self <: JpegOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JpegOptions] (val x: Self) extends AnyVal {
     
     inline def setChromaSubsampling(value: String): Self = StObject.set(x, "chromaSubsampling", value.asInstanceOf[js.Any])
     

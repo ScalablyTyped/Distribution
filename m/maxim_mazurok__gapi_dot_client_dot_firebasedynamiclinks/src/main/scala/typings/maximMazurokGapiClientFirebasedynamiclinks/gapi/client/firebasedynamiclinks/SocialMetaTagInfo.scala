@@ -22,7 +22,8 @@ object SocialMetaTagInfo {
     __obj.asInstanceOf[SocialMetaTagInfo]
   }
   
-  extension [Self <: SocialMetaTagInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocialMetaTagInfo] (val x: Self) extends AnyVal {
     
     inline def setSocialDescription(value: String): Self = StObject.set(x, "socialDescription", value.asInstanceOf[js.Any])
     

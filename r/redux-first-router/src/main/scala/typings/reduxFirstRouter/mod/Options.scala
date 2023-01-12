@@ -127,7 +127,8 @@ object Options {
     __obj.asInstanceOf[Options[TKeys, TState]]
   }
   
-  extension [Self <: Options[?, ?], TKeys, TState](x: Self & (Options[TKeys, TState])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Options[?, ?], TKeys, TState] (val x: Self & (Options[TKeys, TState])) extends AnyVal {
     
     inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
     

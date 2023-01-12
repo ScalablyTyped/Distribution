@@ -42,7 +42,8 @@ object CountryOfIssuance {
     __obj.asInstanceOf[CountryOfIssuance]
   }
   
-  extension [Self <: CountryOfIssuance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountryOfIssuance] (val x: Self) extends AnyVal {
     
     inline def setCommercial(value: GooglePaymentTokenizeValues): Self = StObject.set(x, "commercial", value.asInstanceOf[js.Any])
     

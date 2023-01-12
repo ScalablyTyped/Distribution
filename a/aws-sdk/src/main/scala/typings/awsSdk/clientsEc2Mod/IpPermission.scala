@@ -48,7 +48,8 @@ object IpPermission {
     __obj.asInstanceOf[IpPermission]
   }
   
-  extension [Self <: IpPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpPermission] (val x: Self) extends AnyVal {
     
     inline def setFromPort(value: Integer): Self = StObject.set(x, "FromPort", value.asInstanceOf[js.Any])
     

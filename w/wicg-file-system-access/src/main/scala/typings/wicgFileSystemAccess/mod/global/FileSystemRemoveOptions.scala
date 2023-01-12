@@ -15,7 +15,8 @@ object FileSystemRemoveOptions {
     __obj.asInstanceOf[FileSystemRemoveOptions]
   }
   
-  extension [Self <: FileSystemRemoveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemRemoveOptions] (val x: Self) extends AnyVal {
     
     inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     

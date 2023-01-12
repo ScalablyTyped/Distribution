@@ -22,7 +22,8 @@ object PickCardStylefooterConten {
     __obj.asInstanceOf[PickCardStylefooterConten]
   }
   
-  extension [Self <: PickCardStylefooterConten](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickCardStylefooterConten] (val x: Self) extends AnyVal {
     
     inline def setFooterContent(value: TextStyle): Self = StObject.set(x, "footerContent", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object CreateKeyOpts {
     __obj.asInstanceOf[CreateKeyOpts]
   }
   
-  extension [Self <: CreateKeyOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateKeyOpts] (val x: Self) extends AnyVal {
     
     inline def setBucketId(value: String): Self = StObject.set(x, "bucketId", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object PartialPayer {
     __obj.asInstanceOf[PartialPayer]
   }
   
-  extension [Self <: PartialPayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPayer] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: typings.paypalPaypalJs.typesApisCommonsMod.Address): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

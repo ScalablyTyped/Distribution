@@ -18,7 +18,8 @@ object DescribeSignalingChannelOutput {
     __obj.asInstanceOf[DescribeSignalingChannelOutput]
   }
   
-  extension [Self <: DescribeSignalingChannelOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSignalingChannelOutput] (val x: Self) extends AnyVal {
     
     inline def setChannelInfo(value: ChannelInfo): Self = StObject.set(x, "ChannelInfo", value.asInstanceOf[js.Any])
     

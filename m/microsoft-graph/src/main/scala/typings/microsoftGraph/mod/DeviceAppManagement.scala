@@ -75,7 +75,8 @@ object DeviceAppManagement {
     __obj.asInstanceOf[DeviceAppManagement]
   }
   
-  extension [Self <: DeviceAppManagement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceAppManagement] (val x: Self) extends AnyVal {
     
     inline def setAndroidManagedAppProtections(value: NullableOption[js.Array[AndroidManagedAppProtection]]): Self = StObject.set(x, "androidManagedAppProtections", value.asInstanceOf[js.Any])
     

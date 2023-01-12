@@ -49,7 +49,8 @@ object XDispatchHelper {
     __obj.asInstanceOf[XDispatchHelper]
   }
   
-  extension [Self <: XDispatchHelper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDispatchHelper] (val x: Self) extends AnyVal {
     
     inline def setExecuteDispatch(value: (XDispatchProvider, String, String, Double, SeqEquiv[PropertyValue]) => Any): Self = StObject.set(x, "executeDispatch", js.Any.fromFunction5(value))
   }

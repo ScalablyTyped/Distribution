@@ -17,7 +17,8 @@ object IAnchorScrollProvider {
     __obj.asInstanceOf[IAnchorScrollProvider]
   }
   
-  extension [Self <: IAnchorScrollProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAnchorScrollProvider] (val x: Self) extends AnyVal {
     
     inline def setDisableAutoScrolling(value: () => Unit): Self = StObject.set(x, "disableAutoScrolling", js.Any.fromFunction0(value))
   }

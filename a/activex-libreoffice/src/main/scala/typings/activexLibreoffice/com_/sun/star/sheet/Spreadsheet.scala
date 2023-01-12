@@ -117,7 +117,8 @@ object Spreadsheet {
     __obj.asInstanceOf[Spreadsheet]
   }
   
-  extension [Self <: Spreadsheet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Spreadsheet] (val x: Self) extends AnyVal {
     
     inline def setAutomaticPrintArea(value: Boolean): Self = StObject.set(x, "AutomaticPrintArea", value.asInstanceOf[js.Any])
     

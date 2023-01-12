@@ -45,7 +45,8 @@ object typesSpecMod {
       __obj.asInstanceOf[Spec]
     }
     
-    extension [Self <: Spec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Spec] (val x: Self) extends AnyVal {
       
       inline def set$schema(value: String): Self = StObject.set(x, "$schema", value.asInstanceOf[js.Any])
       

@@ -67,7 +67,8 @@ object mod {
       __obj.asInstanceOf[JadeOptions]
     }
     
-    extension [Self <: JadeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JadeOptions] (val x: Self) extends AnyVal {
       
       inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       

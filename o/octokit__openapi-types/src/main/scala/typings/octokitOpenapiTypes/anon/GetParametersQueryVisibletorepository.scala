@@ -34,7 +34,8 @@ object GetParametersQueryVisibletorepository {
     __obj.asInstanceOf[GetParametersQueryVisibletorepository]
   }
   
-  extension [Self <: GetParametersQueryVisibletorepository](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersQueryVisibletorepository] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersQueryVisibletorepository): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     

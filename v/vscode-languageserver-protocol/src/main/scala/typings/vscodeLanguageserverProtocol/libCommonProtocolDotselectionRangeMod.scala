@@ -57,7 +57,8 @@ object libCommonProtocolDotselectionRangeMod {
       __obj.asInstanceOf[SelectionRangeClientCapabilities]
     }
     
-    extension [Self <: SelectionRangeClientCapabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionRangeClientCapabilities] (val x: Self) extends AnyVal {
       
       inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object libCommonProtocolDotselectionRangeMod {
       __obj.asInstanceOf[SelectionRangeParams]
     }
     
-    extension [Self <: SelectionRangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionRangeParams] (val x: Self) extends AnyVal {
       
       inline def setPositions(value: js.Array[Position]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
       

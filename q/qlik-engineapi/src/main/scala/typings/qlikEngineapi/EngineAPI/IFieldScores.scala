@@ -42,7 +42,8 @@ object IFieldScores {
     __obj.asInstanceOf[IFieldScores]
   }
   
-  extension [Self <: IFieldScores](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFieldScores] (val x: Self) extends AnyVal {
     
     inline def setQCardinalRatio(value: Double): Self = StObject.set(x, "qCardinalRatio", value.asInstanceOf[js.Any])
     

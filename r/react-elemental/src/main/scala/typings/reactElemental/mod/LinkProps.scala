@@ -24,7 +24,8 @@ object LinkProps {
     __obj.asInstanceOf[LinkProps]
   }
   
-  extension [Self <: LinkProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
     
     inline def setActiveColor(value: String): Self = StObject.set(x, "activeColor", value.asInstanceOf[js.Any])
     

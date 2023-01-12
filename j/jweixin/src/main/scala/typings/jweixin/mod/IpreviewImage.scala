@@ -20,7 +20,8 @@ object IpreviewImage {
     __obj.asInstanceOf[IpreviewImage]
   }
   
-  extension [Self <: IpreviewImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpreviewImage] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object LaunchUriResult {
     __obj.asInstanceOf[LaunchUriResult]
   }
   
-  extension [Self <: LaunchUriResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchUriResult] (val x: Self) extends AnyVal {
     
     inline def setResult(value: ValueSet): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

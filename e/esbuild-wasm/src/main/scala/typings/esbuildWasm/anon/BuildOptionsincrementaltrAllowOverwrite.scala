@@ -228,7 +228,8 @@ object BuildOptionsincrementaltrAllowOverwrite {
     __obj.asInstanceOf[BuildOptionsincrementaltrAllowOverwrite]
   }
   
-  extension [Self <: BuildOptionsincrementaltrAllowOverwrite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildOptionsincrementaltrAllowOverwrite] (val x: Self) extends AnyVal {
     
     inline def setAbsWorkingDir(value: String): Self = StObject.set(x, "absWorkingDir", value.asInstanceOf[js.Any])
     

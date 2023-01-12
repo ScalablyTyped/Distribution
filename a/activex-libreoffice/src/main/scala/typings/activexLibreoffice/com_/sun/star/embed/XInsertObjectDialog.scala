@@ -40,7 +40,8 @@ object XInsertObjectDialog {
     __obj.asInstanceOf[XInsertObjectDialog]
   }
   
-  extension [Self <: XInsertObjectDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInsertObjectDialog] (val x: Self) extends AnyVal {
     
     inline def setCreateInstanceByDialog(value: (XStorage, String, SeqEquiv[PropertyValue]) => InsertedObjectInfo): Self = StObject.set(x, "createInstanceByDialog", js.Any.fromFunction3(value))
   }

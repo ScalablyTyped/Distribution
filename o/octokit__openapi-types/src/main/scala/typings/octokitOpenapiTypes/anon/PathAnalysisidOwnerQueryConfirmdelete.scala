@@ -17,7 +17,8 @@ object PathAnalysisidOwnerQueryConfirmdelete {
     __obj.asInstanceOf[PathAnalysisidOwnerQueryConfirmdelete]
   }
   
-  extension [Self <: PathAnalysisidOwnerQueryConfirmdelete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathAnalysisidOwnerQueryConfirmdelete] (val x: Self) extends AnyVal {
     
     inline def setPath(value: AnalysisidOwner): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

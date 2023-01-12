@@ -32,7 +32,8 @@ object IGradient {
     __obj.asInstanceOf[IGradient]
   }
   
-  extension [Self <: IGradient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGradient] (val x: Self) extends AnyVal {
     
     inline def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     

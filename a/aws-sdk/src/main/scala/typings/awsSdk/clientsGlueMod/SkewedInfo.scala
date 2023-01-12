@@ -28,7 +28,8 @@ object SkewedInfo {
     __obj.asInstanceOf[SkewedInfo]
   }
   
-  extension [Self <: SkewedInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkewedInfo] (val x: Self) extends AnyVal {
     
     inline def setSkewedColumnNames(value: NameStringList): Self = StObject.set(x, "SkewedColumnNames", value.asInstanceOf[js.Any])
     

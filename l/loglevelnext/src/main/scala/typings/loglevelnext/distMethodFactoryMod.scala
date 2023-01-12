@@ -75,7 +75,8 @@ object distMethodFactoryMod {
       __obj.asInstanceOf[UnknownFactoryLevels]
     }
     
-    extension [Self <: UnknownFactoryLevels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnknownFactoryLevels] (val x: Self) extends AnyVal {
       
       inline def setSILENT(value: Double): Self = StObject.set(x, "SILENT", value.asInstanceOf[js.Any])
     }

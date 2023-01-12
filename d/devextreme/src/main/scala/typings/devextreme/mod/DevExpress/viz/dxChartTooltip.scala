@@ -21,7 +21,8 @@ object dxChartTooltip {
     __obj.asInstanceOf[dxChartTooltip]
   }
   
-  extension [Self <: dxChartTooltip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartTooltip] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: ChartTooltipLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

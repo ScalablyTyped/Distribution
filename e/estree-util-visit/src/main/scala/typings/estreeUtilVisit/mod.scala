@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[Visitors]
     }
     
-    extension [Self <: Visitors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Visitors] (val x: Self) extends AnyVal {
       
       inline def setEnter(
         value: (/* node */ Node, /* key */ String | Null, /* index */ Double | Null, /* ancestors */ js.Array[Node]) => js.UndefOr[Null | Action | Index | ActionTuple | Unit]

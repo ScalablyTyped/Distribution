@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[RequestOptions]
     }
     
-    extension [Self <: RequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object mod {
       __obj.asInstanceOf[ResponseObject]
     }
     
-    extension [Self <: ResponseObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseObject] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

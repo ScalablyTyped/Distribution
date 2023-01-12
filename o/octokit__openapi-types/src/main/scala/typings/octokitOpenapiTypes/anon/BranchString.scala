@@ -16,7 +16,8 @@ object BranchString {
     __obj.asInstanceOf[BranchString]
   }
   
-  extension [Self <: BranchString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BranchString] (val x: Self) extends AnyVal {
     
     inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
   }

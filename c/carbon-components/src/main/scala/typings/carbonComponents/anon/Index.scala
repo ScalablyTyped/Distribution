@@ -18,7 +18,8 @@ object Index {
     __obj.asInstanceOf[Index]
   }
   
-  extension [Self <: Index](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
     
     inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

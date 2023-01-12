@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[FinalScriptSig]
     }
     
-    extension [Self <: FinalScriptSig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FinalScriptSig] (val x: Self) extends AnyVal {
       
       inline def setFinalScriptSig(value: Buffer): Self = StObject.set(x, "finalScriptSig", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Number]
     }
     
-    extension [Self <: Number](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Number] (val x: Self) extends AnyVal {
       
       inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
@@ -70,7 +72,8 @@ object anon {
       __obj.asInstanceOf[R]
     }
     
-    extension [Self <: R](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: R] (val x: Self) extends AnyVal {
       
       inline def setR(value: Buffer): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       

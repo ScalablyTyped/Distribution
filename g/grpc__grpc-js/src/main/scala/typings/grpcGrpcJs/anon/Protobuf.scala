@@ -15,7 +15,8 @@ object Protobuf {
     __obj.asInstanceOf[Protobuf]
   }
   
-  extension [Self <: Protobuf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Protobuf] (val x: Self) extends AnyVal {
     
     inline def setProtobuf(value: Any): Self = StObject.set(x, "protobuf", value.asInstanceOf[js.Any])
   }

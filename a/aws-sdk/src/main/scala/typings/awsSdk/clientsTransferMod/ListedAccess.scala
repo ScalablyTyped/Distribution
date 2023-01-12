@@ -33,7 +33,8 @@ object ListedAccess {
     __obj.asInstanceOf[ListedAccess]
   }
   
-  extension [Self <: ListedAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListedAccess] (val x: Self) extends AnyVal {
     
     inline def setExternalId(value: ExternalId): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
     

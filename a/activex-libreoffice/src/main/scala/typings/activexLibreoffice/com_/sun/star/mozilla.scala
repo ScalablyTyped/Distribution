@@ -63,7 +63,8 @@ object mozilla {
       __obj.asInstanceOf[MenuMultipleChange]
     }
     
-    extension [Self <: MenuMultipleChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuMultipleChange] (val x: Self) extends AnyVal {
       
       inline def setGroupID(value: Double): Self = StObject.set(x, "GroupID", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object mozilla {
       __obj.asInstanceOf[MenuSingleChange]
     }
     
-    extension [Self <: MenuSingleChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuSingleChange] (val x: Self) extends AnyVal {
       
       inline def setChange(value: Any): Self = StObject.set(x, "Change", value.asInstanceOf[js.Any])
       
@@ -172,7 +174,8 @@ object mozilla {
       __obj.asInstanceOf[XCloseSessionListener]
     }
     
-    extension [Self <: XCloseSessionListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XCloseSessionListener] (val x: Self) extends AnyVal {
       
       inline def setSessionClosed(value: Any => Unit): Self = StObject.set(x, "sessionClosed", js.Any.fromFunction1(value))
     }
@@ -219,7 +222,8 @@ object mozilla {
       __obj.asInstanceOf[XCodeProxy]
     }
     
-    extension [Self <: XCodeProxy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XCodeProxy] (val x: Self) extends AnyVal {
       
       inline def setGetProductType(value: () => MozillaProductType): Self = StObject.set(x, "getProductType", js.Any.fromFunction0(value))
       
@@ -273,7 +277,8 @@ object mozilla {
       __obj.asInstanceOf[XMenuProxy]
     }
     
-    extension [Self <: XMenuProxy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XMenuProxy] (val x: Self) extends AnyVal {
       
       inline def setAddMenuProxyListener(value: XMenuProxyListener => Unit): Self = StObject.set(x, "addMenuProxyListener", js.Any.fromFunction1(value))
       
@@ -314,7 +319,8 @@ object mozilla {
       __obj.asInstanceOf[XMenuProxyListener]
     }
     
-    extension [Self <: XMenuProxyListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XMenuProxyListener] (val x: Self) extends AnyVal {
       
       inline def setMenuChangedMultiple(value: SeqEquiv[MenuMultipleChange] => Unit): Self = StObject.set(x, "menuChangedMultiple", js.Any.fromFunction1(value))
       
@@ -434,7 +440,8 @@ object mozilla {
       __obj.asInstanceOf[XProfileDiscover]
     }
     
-    extension [Self <: XProfileDiscover](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XProfileDiscover] (val x: Self) extends AnyVal {
       
       inline def setGetDefaultProfile(value: MozillaProductType => String): Self = StObject.set(x, "getDefaultProfile", js.Any.fromFunction1(value))
       
@@ -531,7 +538,8 @@ object mozilla {
       __obj.asInstanceOf[XProfileManager]
     }
     
-    extension [Self <: XProfileManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XProfileManager] (val x: Self) extends AnyVal {
       
       inline def setBootupProfile(value: (MozillaProductType, String) => Double): Self = StObject.set(x, "bootupProfile", js.Any.fromFunction2(value))
       
@@ -574,7 +582,8 @@ object mozilla {
       __obj.asInstanceOf[XProxyRunner]
     }
     
-    extension [Self <: XProxyRunner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XProxyRunner] (val x: Self) extends AnyVal {
       
       inline def setRun(value: XCodeProxy => Double): Self = StObject.set(x, "Run", js.Any.fromFunction1(value))
     }

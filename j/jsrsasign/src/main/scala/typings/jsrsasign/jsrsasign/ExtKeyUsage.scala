@@ -22,7 +22,8 @@ object ExtKeyUsage {
     __obj.asInstanceOf[ExtKeyUsage]
   }
   
-  extension [Self <: ExtKeyUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtKeyUsage] (val x: Self) extends AnyVal {
     
     inline def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
     

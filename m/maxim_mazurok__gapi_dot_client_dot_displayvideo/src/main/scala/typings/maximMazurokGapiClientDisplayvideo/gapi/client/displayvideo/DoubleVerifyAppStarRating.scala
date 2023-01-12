@@ -19,7 +19,8 @@ object DoubleVerifyAppStarRating {
     __obj.asInstanceOf[DoubleVerifyAppStarRating]
   }
   
-  extension [Self <: DoubleVerifyAppStarRating](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoubleVerifyAppStarRating] (val x: Self) extends AnyVal {
     
     inline def setAvoidInsufficientStarRating(value: Boolean): Self = StObject.set(x, "avoidInsufficientStarRating", value.asInstanceOf[js.Any])
     

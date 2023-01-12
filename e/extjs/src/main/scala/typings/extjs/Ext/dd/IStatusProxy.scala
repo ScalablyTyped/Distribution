@@ -65,7 +65,8 @@ object IStatusProxy {
     __obj.asInstanceOf[IStatusProxy]
   }
   
-  extension [Self <: IStatusProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStatusProxy] (val x: Self) extends AnyVal {
     
     inline def setDropAllowed(value: String): Self = StObject.set(x, "dropAllowed", value.asInstanceOf[js.Any])
     

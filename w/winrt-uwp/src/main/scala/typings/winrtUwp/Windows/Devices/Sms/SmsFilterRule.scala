@@ -68,7 +68,8 @@ object SmsFilterRule {
     __obj.asInstanceOf[SmsFilterRule]
   }
   
-  extension [Self <: SmsFilterRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmsFilterRule] (val x: Self) extends AnyVal {
     
     inline def setBroadcastChannels(value: IVector[Double]): Self = StObject.set(x, "broadcastChannels", value.asInstanceOf[js.Any])
     

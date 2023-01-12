@@ -48,7 +48,8 @@ object outTargetsNsisNsisOptionsMod {
       __obj.asInstanceOf[CommonNsisOptions]
     }
     
-    extension [Self <: CommonNsisOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonNsisOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomNsisBinary(value: CustomNsisBinary): Self = StObject.set(x, "customNsisBinary", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object outTargetsNsisNsisOptionsMod {
       __obj.asInstanceOf[CustomNsisBinary]
     }
     
-    extension [Self <: CustomNsisBinary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomNsisBinary] (val x: Self) extends AnyVal {
       
       inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
       
@@ -271,7 +273,8 @@ object outTargetsNsisNsisOptionsMod {
       __obj.asInstanceOf[NsisOptions]
     }
     
-    extension [Self <: NsisOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NsisOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowElevation(value: Boolean): Self = StObject.set(x, "allowElevation", value.asInstanceOf[js.Any])
       
@@ -408,7 +411,8 @@ object outTargetsNsisNsisOptionsMod {
       __obj.asInstanceOf[NsisWebOptions]
     }
     
-    extension [Self <: NsisWebOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NsisWebOptions] (val x: Self) extends AnyVal {
       
       inline def setAppPackageUrl(value: String): Self = StObject.set(x, "appPackageUrl", value.asInstanceOf[js.Any])
       
@@ -451,7 +455,8 @@ object outTargetsNsisNsisOptionsMod {
       __obj.asInstanceOf[PortableOptions]
     }
     
-    extension [Self <: PortableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortableOptions] (val x: Self) extends AnyVal {
       
       inline def setRequestExecutionLevel(value: user | highest | admin): Self = StObject.set(x, "requestExecutionLevel", value.asInstanceOf[js.Any])
       

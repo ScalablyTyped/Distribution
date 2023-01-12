@@ -17,7 +17,8 @@ object AgentAlertsResult {
     __obj.asInstanceOf[AgentAlertsResult]
   }
   
-  extension [Self <: AgentAlertsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentAlertsResult] (val x: Self) extends AnyVal {
     
     inline def setAlerts(value: js.Array[AgentAlertInfo]): Self = StObject.set(x, "alerts", value.asInstanceOf[js.Any])
     

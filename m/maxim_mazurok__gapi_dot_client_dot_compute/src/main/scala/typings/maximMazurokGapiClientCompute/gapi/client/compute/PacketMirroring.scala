@@ -68,7 +68,8 @@ object PacketMirroring {
     __obj.asInstanceOf[PacketMirroring]
   }
   
-  extension [Self <: PacketMirroring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PacketMirroring] (val x: Self) extends AnyVal {
     
     inline def setCollectorIlb(value: PacketMirroringForwardingRuleInfo): Self = StObject.set(x, "collectorIlb", value.asInstanceOf[js.Any])
     

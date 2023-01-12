@@ -58,7 +58,8 @@ object distSrcModulesPlaybackEngineOutputNativeAdaptersTypesMod {
       __obj.asInstanceOf[IAdapterDebugInfo]
     }
     
-    extension [Self <: IAdapterDebugInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAdapterDebugInfo] (val x: Self) extends AnyVal {
       
       inline def setBitrates(value: js.Array[String]): Self = StObject.set(x, "bitrates", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object distSrcModulesPlaybackEngineOutputNativeAdaptersTypesMod {
       __obj.asInstanceOf[IPlaybackAdapter]
     }
     
-    extension [Self <: IPlaybackAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPlaybackAdapter] (val x: Self) extends AnyVal {
       
       inline def setAttach(value: HTMLVideoElement => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
       

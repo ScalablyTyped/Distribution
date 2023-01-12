@@ -74,7 +74,8 @@ object LdapServerMetadataOutput {
     __obj.asInstanceOf[LdapServerMetadataOutput]
   }
   
-  extension [Self <: LdapServerMetadataOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LdapServerMetadataOutput] (val x: Self) extends AnyVal {
     
     inline def setHosts(value: listOfString): Self = StObject.set(x, "Hosts", value.asInstanceOf[js.Any])
     

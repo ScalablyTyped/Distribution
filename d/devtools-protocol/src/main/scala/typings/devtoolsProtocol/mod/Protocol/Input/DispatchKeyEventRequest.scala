@@ -101,7 +101,8 @@ object DispatchKeyEventRequest {
     __obj.asInstanceOf[DispatchKeyEventRequest]
   }
   
-  extension [Self <: DispatchKeyEventRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DispatchKeyEventRequest] (val x: Self) extends AnyVal {
     
     inline def setAutoRepeat(value: Boolean): Self = StObject.set(x, "autoRepeat", value.asInstanceOf[js.Any])
     

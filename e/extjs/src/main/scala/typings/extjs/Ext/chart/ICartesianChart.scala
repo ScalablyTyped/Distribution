@@ -61,7 +61,8 @@ object ICartesianChart {
     __obj.asInstanceOf[ICartesianChart]
   }
   
-  extension [Self <: ICartesianChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICartesianChart] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: Any): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

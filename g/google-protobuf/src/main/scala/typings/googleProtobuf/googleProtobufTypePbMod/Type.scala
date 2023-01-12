@@ -116,7 +116,8 @@ object Type {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setFieldsList(value: js.Array[typings.googleProtobuf.googleProtobufTypePbMod.Field.AsObject]): Self = StObject.set(x, "fieldsList", value.asInstanceOf[js.Any])
       

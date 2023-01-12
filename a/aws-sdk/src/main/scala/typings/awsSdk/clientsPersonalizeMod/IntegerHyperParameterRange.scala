@@ -28,7 +28,8 @@ object IntegerHyperParameterRange {
     __obj.asInstanceOf[IntegerHyperParameterRange]
   }
   
-  extension [Self <: IntegerHyperParameterRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegerHyperParameterRange] (val x: Self) extends AnyVal {
     
     inline def setMaxValue(value: IntegerMaxValue): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     

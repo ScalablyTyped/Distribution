@@ -40,7 +40,8 @@ object IDOMNodeIterator {
     __obj.asInstanceOf[IDOMNodeIterator]
   }
   
-  extension [Self <: IDOMNodeIterator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDOMNodeIterator] (val x: Self) extends AnyVal {
     
     inline def setDetach(value: () => Unit): Self = StObject.set(x, "Detach", js.Any.fromFunction0(value))
     

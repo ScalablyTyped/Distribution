@@ -48,7 +48,8 @@ object Freetrialendson {
     __obj.asInstanceOf[Freetrialendson]
   }
   
-  extension [Self <: Freetrialendson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Freetrialendson] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: Organizationbillingemail): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     

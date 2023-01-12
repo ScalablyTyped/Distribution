@@ -54,7 +54,8 @@ object declarationReactiveInlineReactiveMod {
       __obj.asInstanceOf[ConvertValue[Object]]
     }
     
-    extension [Self <: ConvertValue[?], Object /* <: Record[String, Any] */](x: Self & ConvertValue[Object]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvertValue[?], Object /* <: Record[String, Any] */] (val x: Self & ConvertValue[Object]) extends AnyVal {
       
       inline def setConstructor(
         value: /* import warning: importer.ImportType#apply Failed type conversion: std.Function extends @cfcs/core.@cfcs/core/declaration/reactive/Observer.Observer<infer Type> ? Type : std.Function */ js.Any

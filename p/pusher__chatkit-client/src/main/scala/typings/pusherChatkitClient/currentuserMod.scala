@@ -38,7 +38,8 @@ object currentuserMod {
       __obj.asInstanceOf[CreateRoomParams]
     }
     
-    extension [Self <: CreateRoomParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateRoomParams] (val x: Self) extends AnyVal {
       
       inline def setAddUserIds(value: js.Array[String]): Self = StObject.set(x, "addUserIds", value.asInstanceOf[js.Any])
       
@@ -132,7 +133,8 @@ object currentuserMod {
       __obj.asInstanceOf[CurrentUser]
     }
     
-    extension [Self <: CurrentUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentUser] (val x: Self) extends AnyVal {
       
       inline def setAddUserToRoom(value: UserAndRoomParams => js.Promise[Unit]): Self = StObject.set(x, "addUserToRoom", js.Any.fromFunction1(value))
       
@@ -197,7 +199,8 @@ object currentuserMod {
       __obj.asInstanceOf[FetchMultipartMessagesParams]
     }
     
-    extension [Self <: FetchMultipartMessagesParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchMultipartMessagesParams] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: older | newer): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -228,7 +231,8 @@ object currentuserMod {
       __obj.asInstanceOf[ReadCursorParams]
     }
     
-    extension [Self <: ReadCursorParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadCursorParams] (val x: Self) extends AnyVal {
       
       inline def setRoomId(value: String): Self = StObject.set(x, "roomId", value.asInstanceOf[js.Any])
       
@@ -247,7 +251,8 @@ object currentuserMod {
       __obj.asInstanceOf[RoomIdParams]
     }
     
-    extension [Self <: RoomIdParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoomIdParams] (val x: Self) extends AnyVal {
       
       inline def setRoomId(value: String): Self = StObject.set(x, "roomId", value.asInstanceOf[js.Any])
     }
@@ -270,7 +275,8 @@ object currentuserMod {
       __obj.asInstanceOf[RoomSubcriptionParams]
     }
     
-    extension [Self <: RoomSubcriptionParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoomSubcriptionParams] (val x: Self) extends AnyVal {
       
       inline def setDisableCursors(value: Boolean): Self = StObject.set(x, "disableCursors", value.asInstanceOf[js.Any])
       
@@ -307,7 +313,8 @@ object currentuserMod {
       __obj.asInstanceOf[RoomSubscription]
     }
     
-    extension [Self <: RoomSubscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoomSubscription] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => js.Promise[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
@@ -348,7 +355,8 @@ object currentuserMod {
       __obj.asInstanceOf[RoomSubscriptionHooks]
     }
     
-    extension [Self <: RoomSubscriptionHooks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoomSubscriptionHooks] (val x: Self) extends AnyVal {
       
       inline def setOnMessage(value: /* message */ PusherMessage => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
       
@@ -399,7 +407,8 @@ object currentuserMod {
       __obj.asInstanceOf[SendMultipartMessageParams]
     }
     
-    extension [Self <: SendMultipartMessageParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendMultipartMessageParams] (val x: Self) extends AnyVal {
       
       inline def setParts(value: js.Array[SendMessagePayload]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       
@@ -422,7 +431,8 @@ object currentuserMod {
       __obj.asInstanceOf[SendSimpleMessageParams]
     }
     
-    extension [Self <: SendSimpleMessageParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendSimpleMessageParams] (val x: Self) extends AnyVal {
       
       inline def setRoomId(value: String): Self = StObject.set(x, "roomId", value.asInstanceOf[js.Any])
       
@@ -443,7 +453,8 @@ object currentuserMod {
       __obj.asInstanceOf[SetReadCursorParams]
     }
     
-    extension [Self <: SetReadCursorParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetReadCursorParams] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
@@ -468,7 +479,8 @@ object currentuserMod {
       __obj.asInstanceOf[UpdateRoomParams]
     }
     
-    extension [Self <: UpdateRoomParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateRoomParams] (val x: Self) extends AnyVal {
       
       inline def setCustomData(value: Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
       

@@ -68,7 +68,8 @@ object GameServer {
     __obj.asInstanceOf[GameServer]
   }
   
-  extension [Self <: GameServer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GameServer] (val x: Self) extends AnyVal {
     
     inline def setClaimStatus(value: GameServerClaimStatus): Self = StObject.set(x, "ClaimStatus", value.asInstanceOf[js.Any])
     

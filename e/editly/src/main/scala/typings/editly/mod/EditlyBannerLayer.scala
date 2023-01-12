@@ -27,7 +27,8 @@ object EditlyBannerLayer {
     __obj.asInstanceOf[EditlyBannerLayer]
   }
   
-  extension [Self <: EditlyBannerLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditlyBannerLayer] (val x: Self) extends AnyVal {
     
     inline def setType(value: `editly-banner`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

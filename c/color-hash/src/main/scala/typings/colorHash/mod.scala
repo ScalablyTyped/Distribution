@@ -78,7 +78,8 @@ object mod {
       __obj.asInstanceOf[ColorHash]
     }
     
-    extension [Self <: ColorHash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorHash] (val x: Self) extends AnyVal {
       
       inline def setHex(value: String => String): Self = StObject.set(x, "hex", js.Any.fromFunction1(value))
       
@@ -105,7 +106,8 @@ object mod {
       __obj.asInstanceOf[ColorHashOptions]
     }
     
-    extension [Self <: ColorHashOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorHashOptions] (val x: Self) extends AnyVal {
       
       inline def setHash(value: /* input */ String => Double): Self = StObject.set(x, "hash", js.Any.fromFunction1(value))
       
@@ -150,7 +152,8 @@ object mod {
       __obj.asInstanceOf[HueObject]
     }
     
-    extension [Self <: HueObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HueObject] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       

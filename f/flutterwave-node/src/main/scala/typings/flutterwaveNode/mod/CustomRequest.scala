@@ -16,7 +16,8 @@ object CustomRequest {
     __obj.asInstanceOf[CustomRequest]
   }
   
-  extension [Self <: CustomRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomRequest] (val x: Self) extends AnyVal {
     
     inline def setCustom(value: (String, Any) => js.Promise[AxiosResponse[Any, Any]]): Self = StObject.set(x, "custom", js.Any.fromFunction2(value))
   }

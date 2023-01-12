@@ -252,7 +252,8 @@ object MultipleTokenIndenter {
     __obj.asInstanceOf[MultipleTokenIndenter]
   }
   
-  extension [Self <: MultipleTokenIndenter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipleTokenIndenter] (val x: Self) extends AnyVal {
     
     inline def setEdits(value: () => js.Array[TextEditInfo]): Self = StObject.set(x, "edits", js.Any.fromFunction0(value))
     

@@ -18,7 +18,8 @@ object IoTJobTimeoutConfig {
     __obj.asInstanceOf[IoTJobTimeoutConfig]
   }
   
-  extension [Self <: IoTJobTimeoutConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IoTJobTimeoutConfig] (val x: Self) extends AnyVal {
     
     inline def setInProgressTimeoutInMinutes(value: IoTJobInProgressTimeoutInMinutes): Self = StObject.set(x, "inProgressTimeoutInMinutes", value.asInstanceOf[js.Any])
     

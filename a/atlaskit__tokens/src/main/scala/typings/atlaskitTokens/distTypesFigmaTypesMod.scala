@@ -37,7 +37,8 @@ object distTypesFigmaTypesMod {
       __obj.asInstanceOf[FigmaEffect]
     }
     
-    extension [Self <: FigmaEffect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FigmaEffect] (val x: Self) extends AnyVal {
       
       inline def setBlendMode(value: NORMAL): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object distTypesFigmaTypesMod {
       __obj.asInstanceOf[FigmaEffectStyle]
     }
     
-    extension [Self <: FigmaEffectStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FigmaEffectStyle] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object distTypesFigmaTypesMod {
       __obj.asInstanceOf[FigmaPaint]
     }
     
-    extension [Self <: FigmaPaint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FigmaPaint] (val x: Self) extends AnyVal {
       
       inline def setBlendMode(value: NORMAL): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
       
@@ -139,7 +142,8 @@ object distTypesFigmaTypesMod {
       __obj.asInstanceOf[FigmaPaintStyle]
     }
     
-    extension [Self <: FigmaPaintStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FigmaPaintStyle] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

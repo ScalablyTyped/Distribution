@@ -15,7 +15,8 @@ object IGetActivationFactory {
     __obj.asInstanceOf[IGetActivationFactory]
   }
   
-  extension [Self <: IGetActivationFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGetActivationFactory] (val x: Self) extends AnyVal {
     
     inline def setGetActivationFactory(value: String => Any): Self = StObject.set(x, "getActivationFactory", js.Any.fromFunction1(value))
   }

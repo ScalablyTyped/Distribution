@@ -24,7 +24,8 @@ object ForceYScrollbars {
     __obj.asInstanceOf[ForceYScrollbars]
   }
   
-  extension [Self <: ForceYScrollbars](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForceYScrollbars] (val x: Self) extends AnyVal {
     
     inline def setForceYScrollbars(value: Boolean): Self = StObject.set(x, "forceYScrollbars", value.asInstanceOf[js.Any])
     

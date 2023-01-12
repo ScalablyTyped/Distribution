@@ -17,7 +17,8 @@ object JPYRUB {
     __obj.asInstanceOf[JPYRUB]
   }
   
-  extension [Self <: JPYRUB](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JPYRUB] (val x: Self) extends AnyVal {
     
     inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     

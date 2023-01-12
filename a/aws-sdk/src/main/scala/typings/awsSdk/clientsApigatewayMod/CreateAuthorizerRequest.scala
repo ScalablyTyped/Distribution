@@ -64,7 +64,8 @@ object CreateAuthorizerRequest {
     __obj.asInstanceOf[CreateAuthorizerRequest]
   }
   
-  extension [Self <: CreateAuthorizerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAuthorizerRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
     

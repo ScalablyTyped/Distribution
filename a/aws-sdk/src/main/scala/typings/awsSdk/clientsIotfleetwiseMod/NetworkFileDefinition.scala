@@ -18,7 +18,8 @@ object NetworkFileDefinition {
     __obj.asInstanceOf[NetworkFileDefinition]
   }
   
-  extension [Self <: NetworkFileDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkFileDefinition] (val x: Self) extends AnyVal {
     
     inline def setCanDbc(value: CanDbcDefinition): Self = StObject.set(x, "canDbc", value.asInstanceOf[js.Any])
     

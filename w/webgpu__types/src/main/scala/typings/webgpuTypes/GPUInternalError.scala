@@ -22,7 +22,8 @@ object GPUInternalError {
     __obj.asInstanceOf[GPUInternalError]
   }
   
-  extension [Self <: GPUInternalError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUInternalError] (val x: Self) extends AnyVal {
     
     inline def set__brand(value: typings.webgpuTypes.webgpuTypesStrings.GPUInternalError): Self = StObject.set(x, "__brand", value.asInstanceOf[js.Any])
   }

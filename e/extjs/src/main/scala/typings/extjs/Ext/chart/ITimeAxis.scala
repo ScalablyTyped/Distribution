@@ -29,7 +29,8 @@ object ITimeAxis {
     __obj.asInstanceOf[ITimeAxis]
   }
   
-  extension [Self <: ITimeAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITimeAxis] (val x: Self) extends AnyVal {
     
     inline def setDateFormat(value: Any): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     

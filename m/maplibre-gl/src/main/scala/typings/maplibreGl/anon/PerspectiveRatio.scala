@@ -18,7 +18,8 @@ object PerspectiveRatio {
     __obj.asInstanceOf[PerspectiveRatio]
   }
   
-  extension [Self <: PerspectiveRatio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerspectiveRatio] (val x: Self) extends AnyVal {
     
     inline def setPerspectiveRatio(value: Double): Self = StObject.set(x, "perspectiveRatio", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object NodesHotThreadsHotThread {
     __obj.asInstanceOf[NodesHotThreadsHotThread]
   }
   
-  extension [Self <: NodesHotThreadsHotThread](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesHotThreadsHotThread] (val x: Self) extends AnyVal {
     
     inline def setHosts(value: js.Array[Host]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
     

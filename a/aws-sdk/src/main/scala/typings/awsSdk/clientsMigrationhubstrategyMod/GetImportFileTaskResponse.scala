@@ -68,7 +68,8 @@ object GetImportFileTaskResponse {
     __obj.asInstanceOf[GetImportFileTaskResponse]
   }
   
-  extension [Self <: GetImportFileTaskResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetImportFileTaskResponse] (val x: Self) extends AnyVal {
     
     inline def setCompletionTime(value: js.Date): Self = StObject.set(x, "completionTime", value.asInstanceOf[js.Any])
     

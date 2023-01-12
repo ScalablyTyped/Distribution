@@ -91,7 +91,8 @@ object OnResponseStartedDetails {
     __obj.asInstanceOf[OnResponseStartedDetails]
   }
   
-  extension [Self <: OnResponseStartedDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnResponseStartedDetails] (val x: Self) extends AnyVal {
     
     inline def setCookieStoreId(value: String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
     

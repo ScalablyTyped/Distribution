@@ -78,7 +78,8 @@ object MakeAuthenticatedRequestFactoryConfig {
     __obj.asInstanceOf[MakeAuthenticatedRequestFactoryConfig]
   }
   
-  extension [Self <: MakeAuthenticatedRequestFactoryConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MakeAuthenticatedRequestFactoryConfig] (val x: Self) extends AnyVal {
     
     inline def setAuthClient(value: AuthClient | GoogleAuth[JSONClient]): Self = StObject.set(x, "authClient", value.asInstanceOf[js.Any])
     

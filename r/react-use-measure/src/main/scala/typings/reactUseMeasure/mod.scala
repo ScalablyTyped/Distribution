@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDebounce(value: Double | Resize): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object mod {
       __obj.asInstanceOf[RectReadOnly]
     }
     
-    extension [Self <: RectReadOnly](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RectReadOnly] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

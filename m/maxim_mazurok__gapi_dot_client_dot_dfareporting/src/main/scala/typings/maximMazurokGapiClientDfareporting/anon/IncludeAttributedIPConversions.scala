@@ -28,7 +28,8 @@ object IncludeAttributedIPConversions {
     __obj.asInstanceOf[IncludeAttributedIPConversions]
   }
   
-  extension [Self <: IncludeAttributedIPConversions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeAttributedIPConversions] (val x: Self) extends AnyVal {
     
     inline def setIncludeAttributedIPConversions(value: Boolean): Self = StObject.set(x, "includeAttributedIPConversions", value.asInstanceOf[js.Any])
     

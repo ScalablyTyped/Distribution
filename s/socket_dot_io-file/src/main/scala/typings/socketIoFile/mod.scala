@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[FileInfo]
     }
     
-    extension [Self <: FileInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileInfo] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAccepts(value: js.Array[String]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
       
@@ -158,7 +160,8 @@ object mod {
       __obj.asInstanceOf[SocketIOFile]
     }
     
-    extension [Self <: SocketIOFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketIOFile] (val x: Self) extends AnyVal {
       
       inline def setOn(value: (String, js.Function1[/* fileInfo */ FileInfo, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     }

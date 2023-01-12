@@ -18,7 +18,8 @@ object EbillsCreateResponse {
     __obj.asInstanceOf[EbillsCreateResponse]
   }
   
-  extension [Self <: EbillsCreateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EbillsCreateResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: ChargeResponseMessage): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

@@ -58,7 +58,8 @@ object Language {
     __obj.asInstanceOf[Language]
   }
   
-  extension [Self <: Language](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Language] (val x: Self) extends AnyVal {
     
     inline def setActiveGrammarDictionary(value: Dictionary): Self = StObject.set(x, "ActiveGrammarDictionary", value.asInstanceOf[js.Any])
     

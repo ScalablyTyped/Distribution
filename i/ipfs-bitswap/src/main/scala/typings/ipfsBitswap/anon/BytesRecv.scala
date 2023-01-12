@@ -17,7 +17,8 @@ object BytesRecv {
     __obj.asInstanceOf[BytesRecv]
   }
   
-  extension [Self <: BytesRecv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BytesRecv] (val x: Self) extends AnyVal {
     
     inline def setBytesRecv(value: Double): Self = StObject.set(x, "bytesRecv", value.asInstanceOf[js.Any])
     

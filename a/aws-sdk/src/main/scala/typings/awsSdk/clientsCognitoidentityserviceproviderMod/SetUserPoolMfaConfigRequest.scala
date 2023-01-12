@@ -33,7 +33,8 @@ object SetUserPoolMfaConfigRequest {
     __obj.asInstanceOf[SetUserPoolMfaConfigRequest]
   }
   
-  extension [Self <: SetUserPoolMfaConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetUserPoolMfaConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setMfaConfiguration(value: UserPoolMfaType): Self = StObject.set(x, "MfaConfiguration", value.asInstanceOf[js.Any])
     

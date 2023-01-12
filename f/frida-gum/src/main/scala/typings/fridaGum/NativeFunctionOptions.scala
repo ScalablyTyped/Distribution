@@ -21,7 +21,8 @@ object NativeFunctionOptions {
     __obj.asInstanceOf[NativeFunctionOptions]
   }
   
-  extension [Self <: NativeFunctionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeFunctionOptions] (val x: Self) extends AnyVal {
     
     inline def setAbi(value: NativeABI): Self = StObject.set(x, "abi", value.asInstanceOf[js.Any])
     

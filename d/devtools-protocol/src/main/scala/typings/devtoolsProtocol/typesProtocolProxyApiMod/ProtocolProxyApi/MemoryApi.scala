@@ -78,7 +78,8 @@ object MemoryApi {
     __obj.asInstanceOf[MemoryApi]
   }
   
-  extension [Self <: MemoryApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemoryApi] (val x: Self) extends AnyVal {
     
     inline def setForciblyPurgeJavaScriptMemory(value: () => js.Promise[Unit]): Self = StObject.set(x, "forciblyPurgeJavaScriptMemory", js.Any.fromFunction0(value))
     

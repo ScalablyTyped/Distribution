@@ -35,7 +35,8 @@ object LAK {
     __obj.asInstanceOf[LAK]
   }
   
-  extension [Self <: LAK](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LAK] (val x: Self) extends AnyVal {
     
     inline def setBYN(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "BYN", value.asInstanceOf[js.Any])
     

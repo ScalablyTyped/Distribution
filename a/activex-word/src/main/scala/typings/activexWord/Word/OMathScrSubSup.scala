@@ -49,7 +49,8 @@ object OMathScrSubSup {
     __obj.asInstanceOf[OMathScrSubSup]
   }
   
-  extension [Self <: OMathScrSubSup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OMathScrSubSup] (val x: Self) extends AnyVal {
     
     inline def setAlignScripts(value: Boolean): Self = StObject.set(x, "AlignScripts", value.asInstanceOf[js.Any])
     

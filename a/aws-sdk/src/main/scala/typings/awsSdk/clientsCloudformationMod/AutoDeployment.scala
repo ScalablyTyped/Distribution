@@ -23,7 +23,8 @@ object AutoDeployment {
     __obj.asInstanceOf[AutoDeployment]
   }
   
-  extension [Self <: AutoDeployment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoDeployment] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: AutoDeploymentNullable): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

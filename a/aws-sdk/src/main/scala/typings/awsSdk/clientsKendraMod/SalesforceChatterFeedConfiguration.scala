@@ -33,7 +33,8 @@ object SalesforceChatterFeedConfiguration {
     __obj.asInstanceOf[SalesforceChatterFeedConfiguration]
   }
   
-  extension [Self <: SalesforceChatterFeedConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SalesforceChatterFeedConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDocumentDataFieldName(value: DataSourceFieldName): Self = StObject.set(x, "DocumentDataFieldName", value.asInstanceOf[js.Any])
     

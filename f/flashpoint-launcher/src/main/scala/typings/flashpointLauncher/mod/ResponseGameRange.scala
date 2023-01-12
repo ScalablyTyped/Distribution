@@ -25,7 +25,8 @@ object ResponseGameRange {
     __obj.asInstanceOf[ResponseGameRange[T]]
   }
   
-  extension [Self <: ResponseGameRange[?], T /* <: Boolean */](x: Self & ResponseGameRange[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseGameRange[?], T /* <: Boolean */] (val x: Self & ResponseGameRange[T]) extends AnyVal {
     
     inline def setGames(
       value: /* import warning: importer.ImportType#apply Failed type conversion: T extends true ? std.Array<flashpoint-launcher.flashpoint-launcher.ViewGame> : std.Array<flashpoint-launcher.flashpoint-launcher.Game> */ js.Any

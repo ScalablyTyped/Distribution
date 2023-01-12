@@ -17,7 +17,8 @@ object UIkitHeightMatchOptions {
     __obj.asInstanceOf[UIkitHeightMatchOptions]
   }
   
-  extension [Self <: UIkitHeightMatchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitHeightMatchOptions] (val x: Self) extends AnyVal {
     
     inline def setRow(value: Boolean): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     

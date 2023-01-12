@@ -128,7 +128,8 @@ object Nodegroup {
     __obj.asInstanceOf[Nodegroup]
   }
   
-  extension [Self <: Nodegroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Nodegroup] (val x: Self) extends AnyVal {
     
     inline def setAmiType(value: AMITypes): Self = StObject.set(x, "amiType", value.asInstanceOf[js.Any])
     

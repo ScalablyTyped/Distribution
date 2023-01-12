@@ -19,7 +19,8 @@ object UseMouse {
     __obj.asInstanceOf[UseMouse]
   }
   
-  extension [Self <: UseMouse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseMouse] (val x: Self) extends AnyVal {
     
     inline def setUseMouse(value: Boolean): Self = StObject.set(x, "useMouse", value.asInstanceOf[js.Any])
     

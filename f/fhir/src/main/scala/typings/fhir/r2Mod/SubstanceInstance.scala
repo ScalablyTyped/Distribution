@@ -32,7 +32,8 @@ object SubstanceInstance {
     __obj.asInstanceOf[SubstanceInstance]
   }
   
-  extension [Self <: SubstanceInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstanceInstance] (val x: Self) extends AnyVal {
     
     inline def setExpiry(value: String): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
     

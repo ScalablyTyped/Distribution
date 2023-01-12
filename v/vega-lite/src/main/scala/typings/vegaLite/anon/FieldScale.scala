@@ -20,7 +20,8 @@ object FieldScale {
     __obj.asInstanceOf[FieldScale]
   }
   
-  extension [Self <: FieldScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldScale] (val x: Self) extends AnyVal {
     
     inline def setField(value: typings.vegaTypings.typesSpecEncodeMod.Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

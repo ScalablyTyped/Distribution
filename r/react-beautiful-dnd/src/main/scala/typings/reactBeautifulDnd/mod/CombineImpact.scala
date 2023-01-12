@@ -21,7 +21,8 @@ object CombineImpact {
     __obj.asInstanceOf[CombineImpact]
   }
   
-  extension [Self <: CombineImpact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CombineImpact] (val x: Self) extends AnyVal {
     
     inline def setCombine(value: Combine): Self = StObject.set(x, "combine", value.asInstanceOf[js.Any])
     

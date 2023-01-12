@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[CustomClass]
     }
     
-    extension [Self <: CustomClass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomClass] (val x: Self) extends AnyVal {
       
       inline def setCustomClass(value: String): Self = StObject.set(x, "customClass", value.asInstanceOf[js.Any])
     }

@@ -27,7 +27,8 @@ object distSrcMoveContainerMod {
       __obj.asInstanceOf[HeightData]
     }
     
-    extension [Self <: HeightData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeightData] (val x: Self) extends AnyVal {
       
       inline def setDrag(value: Double): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object distSrcMoveContainerMod {
       __obj.asInstanceOf[Props[I, C, T]]
     }
     
-    extension [Self <: Props[?, ?, ?], I, C, T](x: Self & (Props[I, C, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props[?, ?, ?], I, C, T] (val x: Self & (Props[I, C, T])) extends AnyVal {
       
       inline def setAnySelected(value: Double): Self = StObject.set(x, "anySelected", value.asInstanceOf[js.Any])
       

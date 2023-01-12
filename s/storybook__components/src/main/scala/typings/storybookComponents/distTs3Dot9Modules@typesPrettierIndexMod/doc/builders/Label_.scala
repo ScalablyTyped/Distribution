@@ -18,7 +18,8 @@ object Label_ {
     __obj.asInstanceOf[Label_]
   }
   
-  extension [Self <: Label_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Label_] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.storybookComponents.storybookComponentsStrings.label): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -31,7 +31,8 @@ object Actionsrunnerregistration {
     __obj.asInstanceOf[Actionsrunnerregistration]
   }
   
-  extension [Self <: Actionsrunnerregistration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Actionsrunnerregistration] (val x: Self) extends AnyVal {
     
     inline def setActions_runner_registration(value: Remaining): Self = StObject.set(x, "actions_runner_registration", value.asInstanceOf[js.Any])
     

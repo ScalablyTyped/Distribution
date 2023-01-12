@@ -33,7 +33,8 @@ object AdminListGroupsForUserRequest {
     __obj.asInstanceOf[AdminListGroupsForUserRequest]
   }
   
-  extension [Self <: AdminListGroupsForUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminListGroupsForUserRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: QueryLimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

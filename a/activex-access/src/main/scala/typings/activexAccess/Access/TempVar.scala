@@ -31,7 +31,8 @@ object TempVar {
     __obj.asInstanceOf[TempVar]
   }
   
-  extension [Self <: TempVar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TempVar] (val x: Self) extends AnyVal {
     
     inline def setAccessDotTempVar_typekey(value: TempVar): Self = StObject.set(x, "Access.TempVar_typekey", value.asInstanceOf[js.Any])
     

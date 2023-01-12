@@ -135,7 +135,8 @@ object mod {
       __obj.asInstanceOf[DiskStorageOptions]
     }
     
-    extension [Self <: DiskStorageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiskStorageOptions] (val x: Self) extends AnyVal {
       
       inline def setDestination(
         value: String | (js.Function3[
@@ -224,7 +225,8 @@ object mod {
       __obj.asInstanceOf[Field]
     }
     
-    extension [Self <: Field](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
       
       inline def setMaxCount(value: Double): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
       
@@ -401,7 +403,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       
@@ -509,7 +512,8 @@ object mod {
       __obj.asInstanceOf[StorageEngine]
     }
     
-    extension [Self <: StorageEngine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageEngine] (val x: Self) extends AnyVal {
       
       inline def set_handleFile(
         value: (Request_[
@@ -597,7 +601,8 @@ object mod {
             __obj.asInstanceOf[File]
           }
           
-          extension [Self <: File](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
             
             inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
             
@@ -640,7 +645,8 @@ object mod {
           __obj.asInstanceOf[Request]
         }
         
-        extension [Self <: Request](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
           
           inline def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
           

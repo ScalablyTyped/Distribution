@@ -25,7 +25,8 @@ object CompensateEventDefinition {
     __obj.asInstanceOf[CompensateEventDefinition]
   }
   
-  extension [Self <: CompensateEventDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompensateEventDefinition] (val x: Self) extends AnyVal {
     
     inline def setActivityRef(value: Activity): Self = StObject.set(x, "activityRef", value.asInstanceOf[js.Any])
     

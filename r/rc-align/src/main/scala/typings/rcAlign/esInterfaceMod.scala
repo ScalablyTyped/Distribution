@@ -33,7 +33,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[AlignResult]
     }
     
-    extension [Self <: AlignResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlignResult] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[AlignType]
     }
     
-    extension [Self <: AlignType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlignType] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -155,7 +157,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[TargetPoint]
     }
     
-    extension [Self <: TargetPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetPoint] (val x: Self) extends AnyVal {
       
       inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       

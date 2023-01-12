@@ -23,7 +23,8 @@ object ChangedIdentitiesContext {
     __obj.asInstanceOf[ChangedIdentitiesContext]
   }
   
-  extension [Self <: ChangedIdentitiesContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangedIdentitiesContext] (val x: Self) extends AnyVal {
     
     inline def setGroupSequenceId(value: Double): Self = StObject.set(x, "groupSequenceId", value.asInstanceOf[js.Any])
     

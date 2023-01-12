@@ -54,7 +54,8 @@ object Aps {
     __obj.asInstanceOf[Aps]
   }
   
-  extension [Self <: Aps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Aps] (val x: Self) extends AnyVal {
     
     inline def setAlert(value: String | ApsAlert): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
     

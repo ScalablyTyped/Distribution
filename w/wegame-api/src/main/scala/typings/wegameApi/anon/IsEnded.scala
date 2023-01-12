@@ -15,7 +15,8 @@ object IsEnded {
     __obj.asInstanceOf[IsEnded]
   }
   
-  extension [Self <: IsEnded](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsEnded] (val x: Self) extends AnyVal {
     
     inline def setIsEnded(value: Boolean): Self = StObject.set(x, "isEnded", value.asInstanceOf[js.Any])
   }

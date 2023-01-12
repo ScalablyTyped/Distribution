@@ -131,7 +131,8 @@ object Arialabelledby {
     __obj.asInstanceOf[Arialabelledby]
   }
   
-  extension [Self <: Arialabelledby](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Arialabelledby] (val x: Self) extends AnyVal {
     
     inline def setAction(value: typings.react.mod.Ref[TabsActions]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

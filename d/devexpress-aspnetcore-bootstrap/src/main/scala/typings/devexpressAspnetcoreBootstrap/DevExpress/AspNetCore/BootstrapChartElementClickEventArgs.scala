@@ -17,7 +17,8 @@ object BootstrapChartElementClickEventArgs {
     __obj.asInstanceOf[BootstrapChartElementClickEventArgs]
   }
   
-  extension [Self <: BootstrapChartElementClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapChartElementClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setJQueryEvent(value: Any): Self = StObject.set(x, "jQueryEvent", value.asInstanceOf[js.Any])
   }

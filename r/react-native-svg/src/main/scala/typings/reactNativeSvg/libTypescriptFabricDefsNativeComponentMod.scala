@@ -63,7 +63,8 @@ object libTypescriptFabricDefsNativeComponentMod extends Shortcut {
       __obj.asInstanceOf[SvgNodeCommonProps]
     }
     
-    extension [Self <: SvgNodeCommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SvgNodeCommonProps] (val x: Self) extends AnyVal {
       
       inline def setClipPath(value: String): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
       

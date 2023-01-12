@@ -23,7 +23,8 @@ object GetUICustomizationRequest {
     __obj.asInstanceOf[GetUICustomizationRequest]
   }
   
-  extension [Self <: GetUICustomizationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUICustomizationRequest] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object CardActionProps {
     __obj.asInstanceOf[CardActionProps]
   }
   
-  extension [Self <: CardActionProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardActionProps] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

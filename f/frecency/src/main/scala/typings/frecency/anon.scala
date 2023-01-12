@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[ExactQueryMatchWeight]
     }
     
-    extension [Self <: ExactQueryMatchWeight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExactQueryMatchWeight] (val x: Self) extends AnyVal {
       
       inline def setExactQueryMatchWeight(value: Double): Self = StObject.set(x, "exactQueryMatchWeight", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object anon {
       __obj.asInstanceOf[FrecencyScore]
     }
     
-    extension [Self <: FrecencyScore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrecencyScore] (val x: Self) extends AnyVal {
       
       inline def set_frecencyScore(value: Double): Self = StObject.set(x, "_frecencyScore", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object anon {
       __obj.asInstanceOf[KeepScores[T]]
     }
     
-    extension [Self <: KeepScores[?], T](x: Self & KeepScores[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeepScores[?], T] (val x: Self & KeepScores[T]) extends AnyVal {
       
       inline def setKeepScores(value: Boolean): Self = StObject.set(x, "keepScores", value.asInstanceOf[js.Any])
       
@@ -129,7 +132,8 @@ object anon {
       __obj.asInstanceOf[Results[T]]
     }
     
-    extension [Self <: Results[?], T](x: Self & Results[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Results[?], T] (val x: Self & Results[T]) extends AnyVal {
       
       inline def setResults(value: js.Array[T]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
@@ -152,7 +156,8 @@ object anon {
       __obj.asInstanceOf[SearchQuery[T]]
     }
     
-    extension [Self <: SearchQuery[?], T](x: Self & SearchQuery[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchQuery[?], T] (val x: Self & SearchQuery[T]) extends AnyVal {
       
       inline def setSearchQuery(value: T): Self = StObject.set(x, "searchQuery", value.asInstanceOf[js.Any])
       

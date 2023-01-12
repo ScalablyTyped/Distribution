@@ -19,7 +19,8 @@ object AppsDynamiteMessageInfo {
     __obj.asInstanceOf[AppsDynamiteMessageInfo]
   }
   
-  extension [Self <: AppsDynamiteMessageInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteMessageInfo] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: AppsDynamiteMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

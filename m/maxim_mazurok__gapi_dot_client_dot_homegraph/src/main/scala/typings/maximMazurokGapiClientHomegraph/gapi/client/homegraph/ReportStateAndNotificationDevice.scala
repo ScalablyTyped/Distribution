@@ -23,7 +23,8 @@ object ReportStateAndNotificationDevice {
     __obj.asInstanceOf[ReportStateAndNotificationDevice]
   }
   
-  extension [Self <: ReportStateAndNotificationDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportStateAndNotificationDevice] (val x: Self) extends AnyVal {
     
     inline def setNotifications(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

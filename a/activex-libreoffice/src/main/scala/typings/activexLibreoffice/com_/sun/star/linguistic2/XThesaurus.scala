@@ -44,7 +44,8 @@ object XThesaurus {
     __obj.asInstanceOf[XThesaurus]
   }
   
-  extension [Self <: XThesaurus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XThesaurus] (val x: Self) extends AnyVal {
     
     inline def setQueryMeanings(value: (String, Locale, PropertyValues) => SafeArray[XMeaning]): Self = StObject.set(x, "queryMeanings", js.Any.fromFunction3(value))
   }

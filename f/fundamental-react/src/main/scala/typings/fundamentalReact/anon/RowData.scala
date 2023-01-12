@@ -16,7 +16,8 @@ object RowData {
     __obj.asInstanceOf[RowData]
   }
   
-  extension [Self <: RowData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowData] (val x: Self) extends AnyVal {
     
     inline def setRowData(value: js.Array[String | ReactNode]): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
     

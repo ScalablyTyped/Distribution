@@ -23,7 +23,8 @@ object ModelClientConfig {
     __obj.asInstanceOf[ModelClientConfig]
   }
   
-  extension [Self <: ModelClientConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelClientConfig] (val x: Self) extends AnyVal {
     
     inline def setInvocationsMaxRetries(value: InvocationsMaxRetries): Self = StObject.set(x, "InvocationsMaxRetries", value.asInstanceOf[js.Any])
     

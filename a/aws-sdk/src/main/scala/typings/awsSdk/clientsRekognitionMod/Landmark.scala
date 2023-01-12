@@ -28,7 +28,8 @@ object Landmark {
     __obj.asInstanceOf[Landmark]
   }
   
-  extension [Self <: Landmark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Landmark] (val x: Self) extends AnyVal {
     
     inline def setType(value: LandmarkType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

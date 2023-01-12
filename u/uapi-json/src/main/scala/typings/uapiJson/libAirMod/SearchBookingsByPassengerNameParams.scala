@@ -15,7 +15,8 @@ object SearchBookingsByPassengerNameParams {
     __obj.asInstanceOf[SearchBookingsByPassengerNameParams]
   }
   
-  extension [Self <: SearchBookingsByPassengerNameParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchBookingsByPassengerNameParams] (val x: Self) extends AnyVal {
     
     inline def setSearchPhrase(value: String): Self = StObject.set(x, "searchPhrase", value.asInstanceOf[js.Any])
   }

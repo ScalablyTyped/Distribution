@@ -17,7 +17,8 @@ object ShimBase {
     __obj.asInstanceOf[ShimBase]
   }
   
-  extension [Self <: ShimBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShimBase] (val x: Self) extends AnyVal {
     
     inline def setFactory(value: Any): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
   }

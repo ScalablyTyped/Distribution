@@ -23,7 +23,8 @@ object RecipientEvent {
     __obj.asInstanceOf[RecipientEvent]
   }
   
-  extension [Self <: RecipientEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientEvent] (val x: Self) extends AnyVal {
     
     inline def setIncludeDocuments(value: String): Self = StObject.set(x, "includeDocuments", value.asInstanceOf[js.Any])
     

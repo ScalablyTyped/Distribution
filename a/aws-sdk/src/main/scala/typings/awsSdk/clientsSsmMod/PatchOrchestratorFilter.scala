@@ -23,7 +23,8 @@ object PatchOrchestratorFilter {
     __obj.asInstanceOf[PatchOrchestratorFilter]
   }
   
-  extension [Self <: PatchOrchestratorFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchOrchestratorFilter] (val x: Self) extends AnyVal {
     
     inline def setKey(value: PatchOrchestratorFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

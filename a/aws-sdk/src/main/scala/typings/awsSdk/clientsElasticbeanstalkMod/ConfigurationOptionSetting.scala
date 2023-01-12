@@ -33,7 +33,8 @@ object ConfigurationOptionSetting {
     __obj.asInstanceOf[ConfigurationOptionSetting]
   }
   
-  extension [Self <: ConfigurationOptionSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationOptionSetting] (val x: Self) extends AnyVal {
     
     inline def setNamespace(value: OptionNamespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     

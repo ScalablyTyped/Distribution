@@ -28,7 +28,8 @@ object ChallengeAbstract {
     __obj.asInstanceOf[ChallengeAbstract]
   }
   
-  extension [Self <: ChallengeAbstract](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChallengeAbstract] (val x: Self) extends AnyVal {
     
     inline def setError(value: js.Object): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

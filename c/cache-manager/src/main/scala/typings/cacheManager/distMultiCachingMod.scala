@@ -58,7 +58,8 @@ object distMultiCachingMod {
       __obj.asInstanceOf[MultiCache]
     }
     
-    extension [Self <: MultiCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiCache] (val x: Self) extends AnyVal {
       
       inline def setDel(value: /* key */ String => js.Promise[Unit]): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
       

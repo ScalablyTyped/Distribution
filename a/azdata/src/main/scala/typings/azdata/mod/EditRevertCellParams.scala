@@ -17,7 +17,8 @@ object EditRevertCellParams {
     __obj.asInstanceOf[EditRevertCellParams]
   }
   
-  extension [Self <: EditRevertCellParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditRevertCellParams] (val x: Self) extends AnyVal {
     
     inline def setColumnId(value: Double): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
   }

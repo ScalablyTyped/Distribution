@@ -69,7 +69,8 @@ object DisableInlineStyles {
     __obj.asInstanceOf[DisableInlineStyles]
   }
   
-  extension [Self <: DisableInlineStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableInlineStyles] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

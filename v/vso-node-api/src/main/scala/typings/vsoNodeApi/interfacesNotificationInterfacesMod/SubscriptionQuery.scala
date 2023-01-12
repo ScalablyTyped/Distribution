@@ -23,7 +23,8 @@ object SubscriptionQuery {
     __obj.asInstanceOf[SubscriptionQuery]
   }
   
-  extension [Self <: SubscriptionQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionQuery] (val x: Self) extends AnyVal {
     
     inline def setConditions(value: js.Array[SubscriptionQueryCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     

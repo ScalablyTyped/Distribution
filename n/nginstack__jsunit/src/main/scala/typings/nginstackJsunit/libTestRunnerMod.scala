@@ -79,7 +79,8 @@ object libTestRunnerMod {
       __obj.asInstanceOf[TestRunner]
     }
     
-    extension [Self <: TestRunner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestRunner] (val x: Self) extends AnyVal {
       
       inline def setClear_(value: Any): Self = StObject.set(x, "clear_", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object libTokensMod {
     @js.native
     val ^ : Token[ICodeMirror] = js.native
     
-    extension [Self <: ICodeMirror](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICodeMirror] (val x: Self) extends AnyVal {
       
       inline def setCodeMirror(value: TypeofCodeMirror): Self = StObject.set(x, "CodeMirror", value.asInstanceOf[js.Any])
       

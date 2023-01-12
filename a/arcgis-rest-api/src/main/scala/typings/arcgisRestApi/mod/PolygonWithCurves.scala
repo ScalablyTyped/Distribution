@@ -18,7 +18,8 @@ object PolygonWithCurves {
     __obj.asInstanceOf[PolygonWithCurves]
   }
   
-  extension [Self <: PolygonWithCurves](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolygonWithCurves] (val x: Self) extends AnyVal {
     
     inline def setCurveRings(value: js.Array[js.Array[Position | JsonCurve]]): Self = StObject.set(x, "curveRings", value.asInstanceOf[js.Any])
     

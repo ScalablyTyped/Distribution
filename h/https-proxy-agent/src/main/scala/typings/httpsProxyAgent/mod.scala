@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[BaseHttpsProxyAgentOptions]
     }
     
-    extension [Self <: BaseHttpsProxyAgentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseHttpsProxyAgentOptions] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

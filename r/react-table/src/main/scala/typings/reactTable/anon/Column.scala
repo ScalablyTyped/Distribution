@@ -16,7 +16,8 @@ object Column {
     __obj.asInstanceOf[Column[D]]
   }
   
-  extension [Self <: Column[?], D /* <: js.Object */](x: Self & Column[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Column[?], D /* <: js.Object */] (val x: Self & Column[D]) extends AnyVal {
     
     inline def setColumn(value: HeaderGroup[D]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
   }

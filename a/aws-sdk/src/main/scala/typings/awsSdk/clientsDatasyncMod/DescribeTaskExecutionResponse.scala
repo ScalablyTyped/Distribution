@@ -75,7 +75,8 @@ object DescribeTaskExecutionResponse {
     __obj.asInstanceOf[DescribeTaskExecutionResponse]
   }
   
-  extension [Self <: DescribeTaskExecutionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTaskExecutionResponse] (val x: Self) extends AnyVal {
     
     inline def setBytesCompressed(value: long): Self = StObject.set(x, "BytesCompressed", value.asInstanceOf[js.Any])
     

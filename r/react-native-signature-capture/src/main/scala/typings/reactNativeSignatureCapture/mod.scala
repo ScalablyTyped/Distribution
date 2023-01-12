@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[SaveEventParams]
     }
     
-    extension [Self <: SaveEventParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SaveEventParams] (val x: Self) extends AnyVal {
       
       inline def setEncoded(value: String): Self = StObject.set(x, "encoded", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object mod {
       __obj.asInstanceOf[SignatureCaptureProps]
     }
     
-    extension [Self <: SignatureCaptureProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignatureCaptureProps] (val x: Self) extends AnyVal {
       
       inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       

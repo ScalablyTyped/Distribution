@@ -50,7 +50,8 @@ object AdministrableProductDefinitionRouteOfAdministration {
     __obj.asInstanceOf[AdministrableProductDefinitionRouteOfAdministration]
   }
   
-  extension [Self <: AdministrableProductDefinitionRouteOfAdministration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdministrableProductDefinitionRouteOfAdministration] (val x: Self) extends AnyVal {
     
     inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

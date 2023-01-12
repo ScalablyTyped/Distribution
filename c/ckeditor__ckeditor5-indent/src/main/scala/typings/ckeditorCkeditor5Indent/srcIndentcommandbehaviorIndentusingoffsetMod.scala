@@ -54,7 +54,8 @@ object srcIndentcommandbehaviorIndentusingoffsetMod {
       __obj.asInstanceOf[IndentUsingOffset]
     }
     
-    extension [Self <: IndentUsingOffset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndentUsingOffset] (val x: Self) extends AnyVal {
       
       inline def setIsForward(value: Boolean): Self = StObject.set(x, "isForward", value.asInstanceOf[js.Any])
       

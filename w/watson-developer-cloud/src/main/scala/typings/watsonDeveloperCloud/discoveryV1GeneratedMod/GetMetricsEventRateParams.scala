@@ -28,7 +28,8 @@ object GetMetricsEventRateParams {
     __obj.asInstanceOf[GetMetricsEventRateParams]
   }
   
-  extension [Self <: GetMetricsEventRateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMetricsEventRateParams] (val x: Self) extends AnyVal {
     
     inline def setEnd_time(value: String): Self = StObject.set(x, "end_time", value.asInstanceOf[js.Any])
     

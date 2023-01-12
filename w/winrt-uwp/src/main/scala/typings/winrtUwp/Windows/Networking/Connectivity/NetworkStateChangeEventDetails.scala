@@ -47,7 +47,8 @@ object NetworkStateChangeEventDetails {
     __obj.asInstanceOf[NetworkStateChangeEventDetails]
   }
   
-  extension [Self <: NetworkStateChangeEventDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkStateChangeEventDetails] (val x: Self) extends AnyVal {
     
     inline def setHasNewConnectionCost(value: Boolean): Self = StObject.set(x, "hasNewConnectionCost", value.asInstanceOf[js.Any])
     

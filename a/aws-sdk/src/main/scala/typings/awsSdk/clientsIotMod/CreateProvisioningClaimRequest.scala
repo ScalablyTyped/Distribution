@@ -18,7 +18,8 @@ object CreateProvisioningClaimRequest {
     __obj.asInstanceOf[CreateProvisioningClaimRequest]
   }
   
-  extension [Self <: CreateProvisioningClaimRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateProvisioningClaimRequest] (val x: Self) extends AnyVal {
     
     inline def setTemplateName(value: TemplateName): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
   }

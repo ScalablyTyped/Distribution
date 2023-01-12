@@ -22,7 +22,8 @@ object AutolinkidOwner {
     __obj.asInstanceOf[AutolinkidOwner]
   }
   
-  extension [Self <: AutolinkidOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutolinkidOwner] (val x: Self) extends AnyVal {
     
     inline def setAutolink_id(value: Double): Self = StObject.set(x, "autolink_id", value.asInstanceOf[js.Any])
     

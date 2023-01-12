@@ -462,7 +462,8 @@ object PartialAccordionDetailsPr {
     __obj.asInstanceOf[PartialAccordionDetailsPr]
   }
   
-  extension [Self <: PartialAccordionDetailsPr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAccordionDetailsPr] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

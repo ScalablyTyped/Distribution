@@ -33,7 +33,8 @@ object RecommendationItem {
     __obj.asInstanceOf[RecommendationItem]
   }
   
-  extension [Self <: RecommendationItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendationItem] (val x: Self) extends AnyVal {
     
     inline def setAlreadyImplemented(value: BooleanOptional): Self = StObject.set(x, "alreadyImplemented", value.asInstanceOf[js.Any])
     

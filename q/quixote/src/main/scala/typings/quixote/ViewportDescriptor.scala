@@ -47,7 +47,8 @@ object ViewportDescriptor {
     __obj.asInstanceOf[ViewportDescriptor]
   }
   
-  extension [Self <: ViewportDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewportDescriptor] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: PositionDescriptor): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

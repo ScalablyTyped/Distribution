@@ -43,7 +43,8 @@ object ControlPointsGeoreferenceProperties {
     __obj.asInstanceOf[ControlPointsGeoreferenceProperties]
   }
   
-  extension [Self <: ControlPointsGeoreferenceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlPointsGeoreferenceProperties] (val x: Self) extends AnyVal {
     
     inline def setControlPoints(value: js.Array[ControlPoint]): Self = StObject.set(x, "controlPoints", value.asInstanceOf[js.Any])
     

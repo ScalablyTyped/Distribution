@@ -17,7 +17,8 @@ object IsPopoverOpen {
     __obj.asInstanceOf[IsPopoverOpen]
   }
   
-  extension [Self <: IsPopoverOpen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsPopoverOpen] (val x: Self) extends AnyVal {
     
     inline def setIsPopoverOpen(value: Boolean): Self = StObject.set(x, "isPopoverOpen", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object MotionTrackingControlOptions {
     __obj.asInstanceOf[MotionTrackingControlOptions]
   }
   
-  extension [Self <: MotionTrackingControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MotionTrackingControlOptions] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: ControlPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

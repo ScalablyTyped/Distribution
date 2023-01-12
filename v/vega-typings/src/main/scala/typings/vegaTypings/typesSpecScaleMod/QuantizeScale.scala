@@ -29,7 +29,8 @@ object QuantizeScale {
     __obj.asInstanceOf[QuantizeScale]
   }
   
-  extension [Self <: QuantizeScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuantizeScale] (val x: Self) extends AnyVal {
     
     inline def setNice(value: Boolean | Double | SignalRef): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
     

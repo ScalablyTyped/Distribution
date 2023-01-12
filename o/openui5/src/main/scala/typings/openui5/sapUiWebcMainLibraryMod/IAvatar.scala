@@ -15,7 +15,8 @@ object IAvatar {
     __obj.asInstanceOf[IAvatar]
   }
   
-  extension [Self <: IAvatar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAvatar] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_webc_main_IAvatar(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_webc_main_IAvatar", value.asInstanceOf[js.Any])
   }

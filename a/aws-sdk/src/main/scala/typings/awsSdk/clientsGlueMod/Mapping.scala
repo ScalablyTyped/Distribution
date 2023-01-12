@@ -43,7 +43,8 @@ object Mapping {
     __obj.asInstanceOf[Mapping]
   }
   
-  extension [Self <: Mapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mapping] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: Mappings): Self = StObject.set(x, "Children", value.asInstanceOf[js.Any])
     

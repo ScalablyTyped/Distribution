@@ -17,7 +17,8 @@ object ErrorEventDefinition {
     __obj.asInstanceOf[ErrorEventDefinition]
   }
   
-  extension [Self <: ErrorEventDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorEventDefinition] (val x: Self) extends AnyVal {
     
     inline def setErrorRef(value: ErrorElement): Self = StObject.set(x, "errorRef", value.asInstanceOf[js.Any])
   }

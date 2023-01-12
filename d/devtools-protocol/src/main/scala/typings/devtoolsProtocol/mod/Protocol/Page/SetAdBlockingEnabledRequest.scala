@@ -18,7 +18,8 @@ object SetAdBlockingEnabledRequest {
     __obj.asInstanceOf[SetAdBlockingEnabledRequest]
   }
   
-  extension [Self <: SetAdBlockingEnabledRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetAdBlockingEnabledRequest] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }

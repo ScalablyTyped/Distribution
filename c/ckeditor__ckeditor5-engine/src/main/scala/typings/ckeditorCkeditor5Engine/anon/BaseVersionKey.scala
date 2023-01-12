@@ -23,7 +23,8 @@ object BaseVersionKey {
     __obj.asInstanceOf[BaseVersionKey]
   }
   
-  extension [Self <: BaseVersionKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseVersionKey] (val x: Self) extends AnyVal {
     
     inline def setBaseVersion(value: Double): Self = StObject.set(x, "baseVersion", value.asInstanceOf[js.Any])
     

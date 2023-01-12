@@ -33,7 +33,8 @@ object ItemSelectedEventUIParam {
     __obj.asInstanceOf[ItemSelectedEventUIParam]
   }
   
-  extension [Self <: ItemSelectedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemSelectedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setCalendar(value: Any): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     

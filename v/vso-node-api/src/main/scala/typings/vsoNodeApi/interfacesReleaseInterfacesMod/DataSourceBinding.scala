@@ -36,7 +36,8 @@ object DataSourceBinding {
     __obj.asInstanceOf[DataSourceBinding]
   }
   
-  extension [Self <: DataSourceBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceBinding] (val x: Self) extends AnyVal {
     
     inline def setDataSourceName(value: String): Self = StObject.set(x, "dataSourceName", value.asInstanceOf[js.Any])
     

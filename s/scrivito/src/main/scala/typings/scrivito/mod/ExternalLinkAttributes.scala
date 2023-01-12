@@ -21,7 +21,8 @@ object ExternalLinkAttributes {
     __obj.asInstanceOf[ExternalLinkAttributes]
   }
   
-  extension [Self <: ExternalLinkAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalLinkAttributes] (val x: Self) extends AnyVal {
     
     inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
     

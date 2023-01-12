@@ -29,7 +29,8 @@ object IFolderDefs {
     __obj.asInstanceOf[IFolderDefs]
   }
   
-  extension [Self <: IFolderDefs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFolderDefs] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, IFolderDef) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

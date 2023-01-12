@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[PartialIIconOptions]
     }
     
-    extension [Self <: PartialIIconOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIIconOptions] (val x: Self) extends AnyVal {
       
       inline def setDisableWarnings(value: Boolean): Self = StObject.set(x, "disableWarnings", value.asInstanceOf[js.Any])
       

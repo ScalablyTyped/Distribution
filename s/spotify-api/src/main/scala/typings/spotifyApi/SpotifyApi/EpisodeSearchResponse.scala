@@ -21,7 +21,8 @@ object EpisodeSearchResponse {
     __obj.asInstanceOf[EpisodeSearchResponse]
   }
   
-  extension [Self <: EpisodeSearchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EpisodeSearchResponse] (val x: Self) extends AnyVal {
     
     inline def setEpisodes(value: PagingObject[EpisodeObjectSimplified]): Self = StObject.set(x, "episodes", value.asInstanceOf[js.Any])
   }

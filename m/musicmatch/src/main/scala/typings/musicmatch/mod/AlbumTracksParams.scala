@@ -19,7 +19,8 @@ object AlbumTracksParams {
     __obj.asInstanceOf[AlbumTracksParams]
   }
   
-  extension [Self <: AlbumTracksParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlbumTracksParams] (val x: Self) extends AnyVal {
     
     inline def setAlbum_id(value: Double): Self = StObject.set(x, "album_id", value.asInstanceOf[js.Any])
     

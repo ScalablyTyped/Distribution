@@ -54,7 +54,8 @@ object BankingScheduledPaymentRecurrence {
     __obj.asInstanceOf[BankingScheduledPaymentRecurrence]
   }
   
-  extension [Self <: BankingScheduledPaymentRecurrence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BankingScheduledPaymentRecurrence] (val x: Self) extends AnyVal {
     
     inline def setEventBased(value: DictkDescription): Self = StObject.set(x, "eventBased", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object SelectableOption {
     __obj.asInstanceOf[SelectableOption]
   }
   
-  extension [Self <: SelectableOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectableOption] (val x: Self) extends AnyVal {
     
     inline def setClickBehavior(value: String): Self = StObject.set(x, "clickBehavior", value.asInstanceOf[js.Any])
     

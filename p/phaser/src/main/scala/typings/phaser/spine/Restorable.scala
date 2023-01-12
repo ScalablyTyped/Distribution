@@ -15,7 +15,8 @@ object Restorable {
     __obj.asInstanceOf[Restorable]
   }
   
-  extension [Self <: Restorable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Restorable] (val x: Self) extends AnyVal {
     
     inline def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
   }

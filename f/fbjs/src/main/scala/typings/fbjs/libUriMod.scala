@@ -28,7 +28,8 @@ object libUriMod {
       __obj.asInstanceOf[URI]
     }
     
-    extension [Self <: URI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URI] (val x: Self) extends AnyVal {
       
       inline def set_uri(value: String): Self = StObject.set(x, "_uri", value.asInstanceOf[js.Any])
     }

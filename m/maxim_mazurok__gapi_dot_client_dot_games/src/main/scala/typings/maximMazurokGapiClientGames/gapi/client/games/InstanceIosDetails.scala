@@ -34,7 +34,8 @@ object InstanceIosDetails {
     __obj.asInstanceOf[InstanceIosDetails]
   }
   
-  extension [Self <: InstanceIosDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceIosDetails] (val x: Self) extends AnyVal {
     
     inline def setBundleIdentifier(value: String): Self = StObject.set(x, "bundleIdentifier", value.asInstanceOf[js.Any])
     

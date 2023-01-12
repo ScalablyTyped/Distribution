@@ -208,7 +208,8 @@ object Plugin2 {
     __obj.asInstanceOf[Plugin2]
   }
   
-  extension [Self <: Plugin2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Plugin2] (val x: Self) extends AnyVal {
     
     inline def setApply(
       value: serve | typings.vite.viteStrings.build | (js.ThisFunction2[/* this */ Unit, /* config */ UserConfig, /* env */ ConfigEnv, Boolean])

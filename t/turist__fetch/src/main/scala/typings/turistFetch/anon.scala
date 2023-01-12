@@ -194,7 +194,8 @@ object anon {
       __obj.asInstanceOf[Typeofdns]
     }
     
-    extension [Self <: Typeofdns](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofdns] (val x: Self) extends AnyVal {
       
       inline def setADDRCONFIG(value: Double): Self = StObject.set(x, "ADDRCONFIG", value.asInstanceOf[js.Any])
       

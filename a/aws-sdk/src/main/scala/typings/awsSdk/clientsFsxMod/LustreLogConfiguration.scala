@@ -23,7 +23,8 @@ object LustreLogConfiguration {
     __obj.asInstanceOf[LustreLogConfiguration]
   }
   
-  extension [Self <: LustreLogConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LustreLogConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: GeneralARN): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     

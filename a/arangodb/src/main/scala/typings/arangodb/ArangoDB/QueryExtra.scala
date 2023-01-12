@@ -18,7 +18,8 @@ object QueryExtra {
     __obj.asInstanceOf[QueryExtra]
   }
   
-  extension [Self <: QueryExtra](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryExtra] (val x: Self) extends AnyVal {
     
     inline def setStats(value: ExecutionTime): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     

@@ -78,7 +78,8 @@ object NetworkInterface {
     __obj.asInstanceOf[NetworkInterface]
   }
   
-  extension [Self <: NetworkInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkInterface] (val x: Self) extends AnyVal {
     
     inline def setAccessConfigs(value: js.Array[AccessConfig]): Self = StObject.set(x, "accessConfigs", value.asInstanceOf[js.Any])
     

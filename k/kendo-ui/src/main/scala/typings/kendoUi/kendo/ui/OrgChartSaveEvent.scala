@@ -17,7 +17,8 @@ object OrgChartSaveEvent {
     __obj.asInstanceOf[OrgChartSaveEvent]
   }
   
-  extension [Self <: OrgChartSaveEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrgChartSaveEvent] (val x: Self) extends AnyVal {
     
     inline def setDataItem(value: Any): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
     

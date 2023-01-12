@@ -78,7 +78,8 @@ object esComponentsDialogShowMod {
       __obj.asInstanceOf[DialogShowHandler]
     }
     
-    extension [Self <: DialogShowHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogShowHandler] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     }
@@ -234,7 +235,8 @@ object esComponentsDialogShowMod {
       __obj.asInstanceOf[DialogShowProps]
     }
     
-    extension [Self <: DialogShowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogShowProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[Action | js.Array[Action]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

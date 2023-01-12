@@ -21,7 +21,8 @@ object forkedFromIdnumberundefin {
     __obj.asInstanceOf[forkedFromIdnumberundefin]
   }
   
-  extension [Self <: forkedFromIdnumberundefin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: forkedFromIdnumberundefin] (val x: Self) extends AnyVal {
     
     inline def setForkedFromId(value: Double): Self = StObject.set(x, "forkedFromId", value.asInstanceOf[js.Any])
     

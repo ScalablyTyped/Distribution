@@ -21,7 +21,8 @@ object FlyToInterpolatorProps {
     __obj.asInstanceOf[FlyToInterpolatorProps]
   }
   
-  extension [Self <: FlyToInterpolatorProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlyToInterpolatorProps] (val x: Self) extends AnyVal {
     
     inline def setCurve(value: Double): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     

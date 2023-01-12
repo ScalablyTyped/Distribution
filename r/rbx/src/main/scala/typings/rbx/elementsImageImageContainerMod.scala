@@ -144,7 +144,8 @@ object elementsImageImageContainerMod {
       __obj.asInstanceOf[ImageContainerModifierProps]
     }
     
-    extension [Self <: ImageContainerModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageContainerModifierProps] (val x: Self) extends AnyVal {
       
       inline def setSize(
         value: `16` | `24` | `32` | `48` | `64` | `96` | `128` | `16by9` | `1by1` | `1by2` | `1by3` | `2by1` | `2by3` | `3by1` | `3by2` | `3by4` | `3by5` | `4by3` | `4by5` | `5by3` | `5by4` | `9by16` | square
@@ -242,7 +243,8 @@ object elementsImageImageContainerMod {
       __obj.asInstanceOf[ImageContainerProps]
     }
     
-    extension [Self <: ImageContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageContainerProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
@@ -402,7 +404,8 @@ object elementsImageImageContainerMod {
       __obj.asInstanceOf[ImageContainerVariables]
     }
     
-    extension [Self <: ImageContainerVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageContainerVariables] (val x: Self) extends AnyVal {
       
       inline def setSizes(
         value: `16` | `24` | `32` | `48` | `64` | `96` | `128` | `16by9` | `1by1` | `1by2` | `1by3` | `2by1` | `2by3` | `3by1` | `3by2` | `3by4` | `3by5` | `4by3` | `4by5` | `5by3` | `5by4` | `9by16` | square
@@ -423,7 +426,8 @@ object elementsImageImageContainerMod {
       __obj.asInstanceOf[ImageContainerVariablesDefaults]
     }
     
-    extension [Self <: ImageContainerVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageContainerVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setSizes(
         value: `16` | `24` | `32` | `48` | `64` | `96` | `128` | `16by9` | `1by1` | `1by2` | `1by3` | `2by1` | `2by3` | `3by1` | `3by2` | `3by4` | `3by5` | `4by3` | `4by5` | `5by3` | `5by4` | `9by16` | square

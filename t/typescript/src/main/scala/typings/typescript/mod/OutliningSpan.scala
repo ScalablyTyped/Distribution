@@ -39,7 +39,8 @@ object OutliningSpan {
     __obj.asInstanceOf[OutliningSpan]
   }
   
-  extension [Self <: OutliningSpan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutliningSpan] (val x: Self) extends AnyVal {
     
     inline def setAutoCollapse(value: Boolean): Self = StObject.set(x, "autoCollapse", value.asInstanceOf[js.Any])
     

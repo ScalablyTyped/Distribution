@@ -23,7 +23,8 @@ object PcpFields {
     __obj.asInstanceOf[PcpFields]
   }
   
-  extension [Self <: PcpFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PcpFields] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

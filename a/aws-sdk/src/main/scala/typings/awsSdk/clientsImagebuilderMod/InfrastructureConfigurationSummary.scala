@@ -58,7 +58,8 @@ object InfrastructureConfigurationSummary {
     __obj.asInstanceOf[InfrastructureConfigurationSummary]
   }
   
-  extension [Self <: InfrastructureConfigurationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfrastructureConfigurationSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ImageBuilderArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

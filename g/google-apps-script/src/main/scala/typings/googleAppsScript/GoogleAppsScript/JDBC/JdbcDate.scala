@@ -49,7 +49,8 @@ object JdbcDate {
     __obj.asInstanceOf[JdbcDate]
   }
   
-  extension [Self <: JdbcDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JdbcDate] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: JdbcDate => Boolean): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
     

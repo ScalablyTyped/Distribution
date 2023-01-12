@@ -43,7 +43,8 @@ object ChangeStreamDocumentCommon {
     __obj.asInstanceOf[ChangeStreamDocumentCommon]
   }
   
-  extension [Self <: ChangeStreamDocumentCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeStreamDocumentCommon] (val x: Self) extends AnyVal {
     
     inline def setClusterTime(value: typings.bson.mod.Timestamp): Self = StObject.set(x, "clusterTime", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object GroupEncodeEntry {
     __obj.asInstanceOf[GroupEncodeEntry]
   }
   
-  extension [Self <: GroupEncodeEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupEncodeEntry] (val x: Self) extends AnyVal {
     
     inline def setClip(value: ProductionRule[BooleanValueRef]): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     

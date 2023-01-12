@@ -38,7 +38,8 @@ object BeakWidth {
     __obj.asInstanceOf[BeakWidth]
   }
   
-  extension [Self <: BeakWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeakWidth] (val x: Self) extends AnyVal {
     
     inline def setBeakWidth(value: Double): Self = StObject.set(x, "beakWidth", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsUnlinkPropertiesSmallMod exten
       __obj.asInstanceOf[UnlinkPropertiesSmallProps]
     }
     
-    extension [Self <: UnlinkPropertiesSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnlinkPropertiesSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object AppConsentRequest {
     __obj.asInstanceOf[AppConsentRequest]
   }
   
-  extension [Self <: AppConsentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppConsentRequest] (val x: Self) extends AnyVal {
     
     inline def setAppDisplayName(value: NullableOption[String]): Self = StObject.set(x, "appDisplayName", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object EnableAutofillOnKeyPress {
     __obj.asInstanceOf[EnableAutofillOnKeyPress]
   }
   
-  extension [Self <: EnableAutofillOnKeyPress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableAutofillOnKeyPress] (val x: Self) extends AnyVal {
     
     inline def setEnableAutofillOnKeyPress(value: js.Array[Double]): Self = StObject.set(x, "enableAutofillOnKeyPress", value.asInstanceOf[js.Any])
     

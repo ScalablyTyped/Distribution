@@ -23,7 +23,8 @@ object JsonFormatRef {
     __obj.asInstanceOf[JsonFormatRef]
   }
   
-  extension [Self <: JsonFormatRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonFormatRef] (val x: Self) extends AnyVal {
     
     inline def setKey(value: JsonKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

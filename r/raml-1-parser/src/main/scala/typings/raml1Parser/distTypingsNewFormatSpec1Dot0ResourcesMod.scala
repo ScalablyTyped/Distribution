@@ -66,7 +66,8 @@ object distTypingsNewFormatSpec1Dot0ResourcesMod {
       __obj.asInstanceOf[Resource10]
     }
     
-    extension [Self <: Resource10](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resource10] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteParentUri(value: String): Self = StObject.set(x, "absoluteParentUri", value.asInstanceOf[js.Any])
       
@@ -140,7 +141,8 @@ object distTypingsNewFormatSpec1Dot0ResourcesMod {
       __obj.asInstanceOf[ResourceBase10]
     }
     
-    extension [Self <: ResourceBase10](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceBase10] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -201,7 +203,8 @@ object distTypingsNewFormatSpec1Dot0ResourcesMod {
       __obj.asInstanceOf[ResourceType10]
     }
     
-    extension [Self <: ResourceType10](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceType10] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -227,7 +230,8 @@ object distTypingsNewFormatSpec1Dot0ResourcesMod {
       __obj.asInstanceOf[ResourceTypeFragment]
     }
     
-    extension [Self <: ResourceTypeFragment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceTypeFragment] (val x: Self) extends AnyVal {
       
       inline def setUses(value: js.Array[UsesDeclaration]): Self = StObject.set(x, "uses", value.asInstanceOf[js.Any])
       

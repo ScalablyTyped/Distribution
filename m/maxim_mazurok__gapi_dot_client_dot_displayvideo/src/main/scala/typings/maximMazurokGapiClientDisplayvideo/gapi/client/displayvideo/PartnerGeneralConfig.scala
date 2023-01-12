@@ -19,7 +19,8 @@ object PartnerGeneralConfig {
     __obj.asInstanceOf[PartnerGeneralConfig]
   }
   
-  extension [Self <: PartnerGeneralConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartnerGeneralConfig] (val x: Self) extends AnyVal {
     
     inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     

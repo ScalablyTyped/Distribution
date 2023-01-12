@@ -22,7 +22,8 @@ object IAsyncPropertyValidator {
     __obj.asInstanceOf[IAsyncPropertyValidator]
   }
   
-  extension [Self <: IAsyncPropertyValidator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAsyncPropertyValidator] (val x: Self) extends AnyVal {
     
     inline def setCustomMessage(value: (/* config */ Any, /* args */ Any) => String): Self = StObject.set(x, "customMessage", js.Any.fromFunction2(value))
     

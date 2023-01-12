@@ -78,7 +78,8 @@ object Permission {
     __obj.asInstanceOf[Permission]
   }
   
-  extension [Self <: Permission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Permission] (val x: Self) extends AnyVal {
     
     inline def setAsserter(value: Reference): Self = StObject.set(x, "asserter", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object SubstanceReferenceInformationGeneElement {
     __obj.asInstanceOf[SubstanceReferenceInformationGeneElement]
   }
   
-  extension [Self <: SubstanceReferenceInformationGeneElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstanceReferenceInformationGeneElement] (val x: Self) extends AnyVal {
     
     inline def setElement(value: Identifier): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

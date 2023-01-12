@@ -15,7 +15,8 @@ object PutObjectLegalHoldOutput {
     __obj.asInstanceOf[PutObjectLegalHoldOutput]
   }
   
-  extension [Self <: PutObjectLegalHoldOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutObjectLegalHoldOutput] (val x: Self) extends AnyVal {
     
     inline def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object EgressFilter {
     __obj.asInstanceOf[EgressFilter]
   }
   
-  extension [Self <: EgressFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EgressFilter] (val x: Self) extends AnyVal {
     
     inline def setType(value: EgressFilterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

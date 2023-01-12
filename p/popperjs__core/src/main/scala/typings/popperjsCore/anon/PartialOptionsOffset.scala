@@ -17,7 +17,8 @@ object PartialOptionsOffset {
     __obj.asInstanceOf[PartialOptionsOffset]
   }
   
-  extension [Self <: PartialOptionsOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOptionsOffset] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: Offset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

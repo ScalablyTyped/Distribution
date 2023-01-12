@@ -35,7 +35,8 @@ object Annotations {
     __obj.asInstanceOf[Annotations[Args, StoryFnReturnType]]
   }
   
-  extension [Self <: Annotations[?, ?], Args, StoryFnReturnType](x: Self & (Annotations[Args, StoryFnReturnType])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Annotations[?, ?], Args, StoryFnReturnType] (val x: Self & (Annotations[Args, StoryFnReturnType])) extends AnyVal {
     
     inline def setExcludeStories(value: js.Array[String] | js.RegExp): Self = StObject.set(x, "excludeStories", value.asInstanceOf[js.Any])
     

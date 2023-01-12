@@ -73,7 +73,8 @@ object IgBulletGraphRange {
     __obj.asInstanceOf[IgBulletGraphRange]
   }
   
-  extension [Self <: IgBulletGraphRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgBulletGraphRange] (val x: Self) extends AnyVal {
     
     inline def setBrush(value: String): Self = StObject.set(x, "brush", value.asInstanceOf[js.Any])
     

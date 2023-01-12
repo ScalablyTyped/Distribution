@@ -23,7 +23,8 @@ object AccountMyWorkResult {
     __obj.asInstanceOf[AccountMyWorkResult]
   }
   
-  extension [Self <: AccountMyWorkResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountMyWorkResult] (val x: Self) extends AnyVal {
     
     inline def setQuerySizeLimitExceeded(value: Boolean): Self = StObject.set(x, "querySizeLimitExceeded", value.asInstanceOf[js.Any])
     

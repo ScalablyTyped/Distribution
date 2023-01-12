@@ -29,7 +29,8 @@ object ChangeTextBoxResizeShapeToFitTextCommand {
     __obj.asInstanceOf[ChangeTextBoxResizeShapeToFitTextCommand]
   }
   
-  extension [Self <: ChangeTextBoxResizeShapeToFitTextCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeTextBoxResizeShapeToFitTextCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: Boolean => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     

@@ -43,7 +43,8 @@ object S3GlueParquetTarget {
     __obj.asInstanceOf[S3GlueParquetTarget]
   }
   
-  extension [Self <: S3GlueParquetTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3GlueParquetTarget] (val x: Self) extends AnyVal {
     
     inline def setCompression(value: ParquetCompressionType): Self = StObject.set(x, "Compression", value.asInstanceOf[js.Any])
     

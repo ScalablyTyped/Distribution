@@ -18,7 +18,8 @@ object CreateReturnShippingLabelResult {
     __obj.asInstanceOf[CreateReturnShippingLabelResult]
   }
   
-  extension [Self <: CreateReturnShippingLabelResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateReturnShippingLabelResult] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: ShippingLabelStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

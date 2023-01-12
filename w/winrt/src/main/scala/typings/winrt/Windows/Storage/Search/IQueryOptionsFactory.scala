@@ -21,7 +21,8 @@ object IQueryOptionsFactory {
     __obj.asInstanceOf[IQueryOptionsFactory]
   }
   
-  extension [Self <: IQueryOptionsFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IQueryOptionsFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateCommonFileQuery(value: (CommonFileQuery, IIterable[String]) => QueryOptions): Self = StObject.set(x, "createCommonFileQuery", js.Any.fromFunction2(value))
     

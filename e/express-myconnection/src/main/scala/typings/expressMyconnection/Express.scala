@@ -24,7 +24,8 @@ object Express {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setGetConnection(
         value: /* callback */ js.Function2[/* err */ MysqlError, /* connection */ Connection, Unit] => Unit

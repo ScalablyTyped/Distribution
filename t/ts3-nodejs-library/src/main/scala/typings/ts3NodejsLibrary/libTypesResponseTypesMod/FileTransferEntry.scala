@@ -53,7 +53,8 @@ object FileTransferEntry {
     __obj.asInstanceOf[FileTransferEntry]
   }
   
-  extension [Self <: FileTransferEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileTransferEntry] (val x: Self) extends AnyVal {
     
     inline def setAverageSpeed(value: Double): Self = StObject.set(x, "averageSpeed", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object SessionStateInfo {
     __obj.asInstanceOf[SessionStateInfo]
   }
   
-  extension [Self <: SessionStateInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionStateInfo] (val x: Self) extends AnyVal {
     
     inline def setAckInfo(value: AckInfo): Self = StObject.set(x, "ackInfo", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object FileSystemGetFileOptions {
     __obj.asInstanceOf[FileSystemGetFileOptions]
   }
   
-  extension [Self <: FileSystemGetFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemGetFileOptions] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     

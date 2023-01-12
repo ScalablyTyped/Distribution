@@ -68,7 +68,8 @@ object GetIdentityResolutionJobResponse {
     __obj.asInstanceOf[GetIdentityResolutionJobResponse]
   }
   
-  extension [Self <: GetIdentityResolutionJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIdentityResolutionJobResponse] (val x: Self) extends AnyVal {
     
     inline def setAutoMerging(value: AutoMerging): Self = StObject.set(x, "AutoMerging", value.asInstanceOf[js.Any])
     

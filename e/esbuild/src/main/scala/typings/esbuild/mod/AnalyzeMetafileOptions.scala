@@ -17,7 +17,8 @@ object AnalyzeMetafileOptions {
     __obj.asInstanceOf[AnalyzeMetafileOptions]
   }
   
-  extension [Self <: AnalyzeMetafileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyzeMetafileOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

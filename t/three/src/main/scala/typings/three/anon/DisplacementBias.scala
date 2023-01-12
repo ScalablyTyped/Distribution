@@ -20,7 +20,8 @@ object DisplacementBias {
     __obj.asInstanceOf[DisplacementBias]
   }
   
-  extension [Self <: DisplacementBias](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplacementBias] (val x: Self) extends AnyVal {
     
     inline def setDisplacementBias(value: IUniform[Any]): Self = StObject.set(x, "displacementBias", value.asInstanceOf[js.Any])
     

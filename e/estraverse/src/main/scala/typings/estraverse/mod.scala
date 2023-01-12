@@ -223,7 +223,8 @@ object mod {
     @js.native
     val ^ : Syntax = js.native
     
-    extension [Self <: Syntax](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Syntax] (val x: Self) extends AnyVal {
       
       inline def setArrayExpression(value: NodeType): Self = StObject.set(x, "ArrayExpression", value.asInstanceOf[js.Any])
       
@@ -524,7 +525,8 @@ object mod {
     @js.native
     val ^ : VisitorKeys = js.native
     
-    extension [Self <: VisitorKeys](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisitorKeys] (val x: Self) extends AnyVal {
       
       inline def setArrayExpression(value: js.Array[String]): Self = StObject.set(x, "ArrayExpression", value.asInstanceOf[js.Any])
       
@@ -1107,7 +1109,8 @@ object mod {
       __obj.asInstanceOf[Visitor]
     }
     
-    extension [Self <: Visitor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Visitor] (val x: Self) extends AnyVal {
       
       inline def setEnter(
         value: js.ThisFunction2[

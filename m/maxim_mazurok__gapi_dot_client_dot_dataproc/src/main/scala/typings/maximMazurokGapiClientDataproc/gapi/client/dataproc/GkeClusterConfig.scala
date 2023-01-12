@@ -28,7 +28,8 @@ object GkeClusterConfig {
     __obj.asInstanceOf[GkeClusterConfig]
   }
   
-  extension [Self <: GkeClusterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GkeClusterConfig] (val x: Self) extends AnyVal {
     
     inline def setGkeClusterTarget(value: String): Self = StObject.set(x, "gkeClusterTarget", value.asInstanceOf[js.Any])
     

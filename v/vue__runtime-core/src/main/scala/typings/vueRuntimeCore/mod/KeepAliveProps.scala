@@ -19,7 +19,8 @@ object KeepAliveProps {
     __obj.asInstanceOf[KeepAliveProps]
   }
   
-  extension [Self <: KeepAliveProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeepAliveProps] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: MatchPattern): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     

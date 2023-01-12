@@ -218,7 +218,8 @@ object PartialDialogProps {
     __obj.asInstanceOf[PartialDialogProps]
   }
   
-  extension [Self <: PartialDialogProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDialogProps] (val x: Self) extends AnyVal {
     
     inline def setActions(
       value: js.Array[

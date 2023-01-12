@@ -15,7 +15,8 @@ object IColorPaletteItem {
     __obj.asInstanceOf[IColorPaletteItem]
   }
   
-  extension [Self <: IColorPaletteItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IColorPaletteItem] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_webc_main_IColorPaletteItem(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_webc_main_IColorPaletteItem", value.asInstanceOf[js.Any])
   }

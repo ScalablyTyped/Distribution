@@ -35,7 +35,8 @@ object BuildOptions {
     __obj.asInstanceOf[BuildOptions]
   }
   
-  extension [Self <: BuildOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildOptions] (val x: Self) extends AnyVal {
     
     inline def setAttachToDOM(value: Boolean): Self = StObject.set(x, "attachToDOM", value.asInstanceOf[js.Any])
     

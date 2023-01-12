@@ -33,7 +33,8 @@ object distCommandsSpellcheckMod {
       __obj.asInstanceOf[SpellCheckOptions]
     }
     
-    extension [Self <: SpellCheckOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpellCheckOptions] (val x: Self) extends AnyVal {
       
       inline def setDIALECT(value: Double): Self = StObject.set(x, "DIALECT", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object distCommandsSpellcheckMod {
       __obj.asInstanceOf[SpellCheckTerms]
     }
     
-    extension [Self <: SpellCheckTerms](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpellCheckTerms] (val x: Self) extends AnyVal {
       
       inline def setDictionary(value: String): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
       

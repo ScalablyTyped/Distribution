@@ -124,7 +124,8 @@ object ASPxClientTextEdit {
     __obj.asInstanceOf[ASPxClientTextEdit]
   }
   
-  extension [Self <: ASPxClientTextEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTextEdit] (val x: Self) extends AnyVal {
     
     inline def setGetCaretPosition(value: () => Double): Self = StObject.set(x, "GetCaretPosition", js.Any.fromFunction0(value))
     

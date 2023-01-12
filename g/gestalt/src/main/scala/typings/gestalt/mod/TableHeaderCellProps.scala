@@ -21,7 +21,8 @@ object TableHeaderCellProps {
     __obj.asInstanceOf[TableHeaderCellProps]
   }
   
-  extension [Self <: TableHeaderCellProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableHeaderCellProps] (val x: Self) extends AnyVal {
     
     inline def setScope(value: col | row | colgroup | rowgroup): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     

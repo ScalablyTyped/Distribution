@@ -15,7 +15,8 @@ object Easing {
     __obj.asInstanceOf[Easing]
   }
   
-  extension [Self <: Easing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Easing] (val x: Self) extends AnyVal {
     
     inline def setRubber(value: String): Self = StObject.set(x, "rubber", value.asInstanceOf[js.Any])
   }

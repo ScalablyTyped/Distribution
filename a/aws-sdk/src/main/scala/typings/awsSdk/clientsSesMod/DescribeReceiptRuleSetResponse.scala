@@ -23,7 +23,8 @@ object DescribeReceiptRuleSetResponse {
     __obj.asInstanceOf[DescribeReceiptRuleSetResponse]
   }
   
-  extension [Self <: DescribeReceiptRuleSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeReceiptRuleSetResponse] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: ReceiptRuleSetMetadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     

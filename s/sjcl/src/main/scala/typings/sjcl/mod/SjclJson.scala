@@ -94,7 +94,8 @@ object SjclJson {
     __obj.asInstanceOf[SjclJson]
   }
   
-  extension [Self <: SjclJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SjclJson] (val x: Self) extends AnyVal {
     
     inline def setDecode(value: String => js.Object): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     

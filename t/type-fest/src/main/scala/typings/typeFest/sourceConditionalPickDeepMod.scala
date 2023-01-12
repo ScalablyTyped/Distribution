@@ -51,7 +51,8 @@ object sourceConditionalPickDeepMod {
       __obj.asInstanceOf[ConditionalPickDeepOptions]
     }
     
-    extension [Self <: ConditionalPickDeepOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConditionalPickDeepOptions] (val x: Self) extends AnyVal {
       
       inline def setCondition(value: `extends` | equality): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object ArgumentTypePassSubtype {
     __obj.asInstanceOf[ArgumentTypePassSubtype]
   }
   
-  extension [Self <: ArgumentTypePassSubtype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArgumentTypePassSubtype] (val x: Self) extends AnyVal {
     
     inline def setArgumentType(value: ArgumentTypes): Self = StObject.set(x, "argumentType", value.asInstanceOf[js.Any])
     

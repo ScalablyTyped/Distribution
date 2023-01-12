@@ -38,7 +38,8 @@ object GlobalizationNumberPattern {
     __obj.asInstanceOf[GlobalizationNumberPattern]
   }
   
-  extension [Self <: GlobalizationNumberPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalizationNumberPattern] (val x: Self) extends AnyVal {
     
     inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
     

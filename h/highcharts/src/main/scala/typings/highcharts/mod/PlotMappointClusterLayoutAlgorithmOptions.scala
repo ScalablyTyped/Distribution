@@ -92,7 +92,8 @@ object PlotMappointClusterLayoutAlgorithmOptions {
     __obj.asInstanceOf[PlotMappointClusterLayoutAlgorithmOptions]
   }
   
-  extension [Self <: PlotMappointClusterLayoutAlgorithmOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotMappointClusterLayoutAlgorithmOptions] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double | String): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object Loop {
     __obj.asInstanceOf[Loop]
   }
   
-  extension [Self <: Loop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Loop] (val x: Self) extends AnyVal {
     
     inline def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
     

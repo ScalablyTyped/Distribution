@@ -48,7 +48,8 @@ object GetUploadStatusResponse {
     __obj.asInstanceOf[GetUploadStatusResponse]
   }
   
-  extension [Self <: GetUploadStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUploadStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     

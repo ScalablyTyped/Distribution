@@ -17,7 +17,8 @@ object PopulateParameters {
     __obj.asInstanceOf[PopulateParameters]
   }
   
-  extension [Self <: PopulateParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopulateParameters] (val x: Self) extends AnyVal {
     
     inline def setAvailableImages(value: js.Array[String]): Self = StObject.set(x, "availableImages", value.asInstanceOf[js.Any])
     

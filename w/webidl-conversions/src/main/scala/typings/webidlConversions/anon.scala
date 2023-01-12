@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[BufferSourceOptionsallowS]
     }
     
-    extension [Self <: BufferSourceOptionsallowS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferSourceOptionsallowS] (val x: Self) extends AnyVal {
       
       inline def setAllowShared(value: Boolean): Self = StObject.set(x, "allowShared", value.asInstanceOf[js.Any])
       

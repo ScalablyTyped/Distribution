@@ -21,7 +21,8 @@ object GlobalTypes {
     __obj.asInstanceOf[GlobalTypes]
   }
   
-  extension [Self <: GlobalTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalTypes] (val x: Self) extends AnyVal {
     
     inline def setGlobalTypes(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobalTypes */ Any

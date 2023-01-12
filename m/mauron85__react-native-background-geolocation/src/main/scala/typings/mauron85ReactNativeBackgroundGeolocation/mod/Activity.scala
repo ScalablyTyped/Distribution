@@ -25,7 +25,8 @@ object Activity {
     __obj.asInstanceOf[Activity]
   }
   
-  extension [Self <: Activity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Activity] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     

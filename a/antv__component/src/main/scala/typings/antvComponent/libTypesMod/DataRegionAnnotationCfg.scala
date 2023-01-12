@@ -28,7 +28,8 @@ object DataRegionAnnotationCfg {
     __obj.asInstanceOf[DataRegionAnnotationCfg]
   }
   
-  extension [Self <: DataRegionAnnotationCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataRegionAnnotationCfg] (val x: Self) extends AnyVal {
     
     inline def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     

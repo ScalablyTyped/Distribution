@@ -40,7 +40,8 @@ object ParallelInstruction {
     __obj.asInstanceOf[ParallelInstruction]
   }
   
-  extension [Self <: ParallelInstruction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParallelInstruction] (val x: Self) extends AnyVal {
     
     inline def setFlatten(value: FlattenInstruction): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object angular {
         __obj.asInstanceOf[CookieOptions]
       }
       
-      extension [Self <: CookieOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CookieOptions] (val x: Self) extends AnyVal {
         
         inline def setDecode(value: /* value */ Any => Any): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
         

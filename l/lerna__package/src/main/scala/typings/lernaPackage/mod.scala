@@ -209,7 +209,8 @@ object mod {
       __obj.asInstanceOf[RawManifest]
     }
     
-    extension [Self <: RawManifest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawManifest] (val x: Self) extends AnyVal {
       
       inline def setBin(value: (Record[String, String]) | String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
       

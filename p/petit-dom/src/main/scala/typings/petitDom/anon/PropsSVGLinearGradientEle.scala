@@ -660,7 +660,8 @@ object PropsSVGLinearGradientEle {
     __obj.asInstanceOf[PropsSVGLinearGradientEle]
   }
   
-  extension [Self <: PropsSVGLinearGradientEle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsSVGLinearGradientEle] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

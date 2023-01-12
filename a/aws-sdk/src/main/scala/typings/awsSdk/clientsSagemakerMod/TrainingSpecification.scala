@@ -57,7 +57,8 @@ object TrainingSpecification {
     __obj.asInstanceOf[TrainingSpecification]
   }
   
-  extension [Self <: TrainingSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrainingSpecification] (val x: Self) extends AnyVal {
     
     inline def setMetricDefinitions(value: MetricDefinitionList): Self = StObject.set(x, "MetricDefinitions", value.asInstanceOf[js.Any])
     

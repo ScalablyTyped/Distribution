@@ -73,7 +73,8 @@ object Problem {
     __obj.asInstanceOf[Problem]
   }
   
-  extension [Self <: Problem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Problem] (val x: Self) extends AnyVal {
     
     inline def setAffectedResource(value: AffectedResource): Self = StObject.set(x, "AffectedResource", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object RaxElement {
     __obj.asInstanceOf[RaxElement[P, T]]
   }
   
-  extension [Self <: RaxElement[?, ?], P, T /* <: String | JSXElementConstructor[Any] */](x: Self & (RaxElement[P, T])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaxElement[?, ?], P, T /* <: String | JSXElementConstructor[Any] */] (val x: Self & (RaxElement[P, T])) extends AnyVal {
     
     inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

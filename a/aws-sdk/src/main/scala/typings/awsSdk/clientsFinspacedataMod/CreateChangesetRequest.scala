@@ -43,7 +43,8 @@ object CreateChangesetRequest {
     __obj.asInstanceOf[CreateChangesetRequest]
   }
   
-  extension [Self <: CreateChangesetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateChangesetRequest] (val x: Self) extends AnyVal {
     
     inline def setChangeType(value: ChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     

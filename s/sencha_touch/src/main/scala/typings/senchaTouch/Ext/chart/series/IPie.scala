@@ -94,7 +94,8 @@ object IPie {
     __obj.asInstanceOf[IPie]
   }
   
-  extension [Self <: IPie](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPie] (val x: Self) extends AnyVal {
     
     inline def setAllows(value: Double): Self = StObject.set(x, "Allows", value.asInstanceOf[js.Any])
     

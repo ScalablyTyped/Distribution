@@ -19,7 +19,8 @@ object IDirectionsEventArgs {
     __obj.asInstanceOf[IDirectionsEventArgs]
   }
   
-  extension [Self <: IDirectionsEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDirectionsEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRoute(value: js.Array[IRoute]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     

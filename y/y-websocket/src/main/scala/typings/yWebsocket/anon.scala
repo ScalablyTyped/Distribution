@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[Awareness]
     }
     
-    extension [Self <: Awareness](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Awareness] (val x: Self) extends AnyVal {
       
       inline def setAwareness(value: typings.yProtocols.awarenessMod.Awareness): Self = StObject.set(x, "awareness", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object anon {
       __obj.asInstanceOf[TypeofWebSocket]
     }
     
-    extension [Self <: TypeofWebSocket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofWebSocket] (val x: Self) extends AnyVal {
       
       inline def setCLOSED(value: Double): Self = StObject.set(x, "CLOSED", value.asInstanceOf[js.Any])
       

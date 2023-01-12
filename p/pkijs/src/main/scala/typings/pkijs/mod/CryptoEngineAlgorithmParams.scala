@@ -28,7 +28,8 @@ object CryptoEngineAlgorithmParams {
     __obj.asInstanceOf[CryptoEngineAlgorithmParams]
   }
   
-  extension [Self <: CryptoEngineAlgorithmParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CryptoEngineAlgorithmParams] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: Algorithm | js.Object): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

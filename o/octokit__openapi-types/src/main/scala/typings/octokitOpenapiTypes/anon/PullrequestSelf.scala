@@ -23,7 +23,8 @@ object PullrequestSelf {
     __obj.asInstanceOf[PullrequestSelf]
   }
   
-  extension [Self <: PullrequestSelf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullrequestSelf] (val x: Self) extends AnyVal {
     
     inline def setHtml(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['link'] */ js.Any

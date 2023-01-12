@@ -93,7 +93,8 @@ object DOMMSManipulationEvent {
     __obj.asInstanceOf[DOMMSManipulationEvent]
   }
   
-  extension [Self <: DOMMSManipulationEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMMSManipulationEvent] (val x: Self) extends AnyVal {
     
     inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     

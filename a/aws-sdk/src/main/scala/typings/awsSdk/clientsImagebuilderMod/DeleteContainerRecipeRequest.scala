@@ -18,7 +18,8 @@ object DeleteContainerRecipeRequest {
     __obj.asInstanceOf[DeleteContainerRecipeRequest]
   }
   
-  extension [Self <: DeleteContainerRecipeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteContainerRecipeRequest] (val x: Self) extends AnyVal {
     
     inline def setContainerRecipeArn(value: ContainerRecipeArn): Self = StObject.set(x, "containerRecipeArn", value.asInstanceOf[js.Any])
   }

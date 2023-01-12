@@ -41,7 +41,8 @@ object NetworkQueryNamedTraceConfigurationsQuery {
     __obj.asInstanceOf[NetworkQueryNamedTraceConfigurationsQuery]
   }
   
-  extension [Self <: NetworkQueryNamedTraceConfigurationsQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkQueryNamedTraceConfigurationsQuery] (val x: Self) extends AnyVal {
     
     inline def setCreators(value: js.Array[String]): Self = StObject.set(x, "creators", value.asInstanceOf[js.Any])
     

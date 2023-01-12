@@ -33,7 +33,8 @@ object ListResolversRequest {
     __obj.asInstanceOf[ListResolversRequest]
   }
   
-  extension [Self <: ListResolversRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResolversRequest] (val x: Self) extends AnyVal {
     
     inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
     

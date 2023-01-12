@@ -163,7 +163,8 @@ object mod {
       __obj.asInstanceOf[FontOptions]
     }
     
-    extension [Self <: FontOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontOptions] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: Anchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -225,7 +226,8 @@ object mod {
       __obj.asInstanceOf[GenerationOptions]
     }
     
-    extension [Self <: GenerationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerationOptions] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -268,7 +270,8 @@ object mod {
       __obj.asInstanceOf[Metrics]
     }
     
-    extension [Self <: Metrics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metrics] (val x: Self) extends AnyVal {
       
       inline def setAscender(value: Double): Self = StObject.set(x, "ascender", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object LocalIntegerValueBlockJson {
     __obj.asInstanceOf[LocalIntegerValueBlockJson]
   }
   
-  extension [Self <: LocalIntegerValueBlockJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalIntegerValueBlockJson] (val x: Self) extends AnyVal {
     
     inline def setValueDec(value: Double): Self = StObject.set(x, "valueDec", value.asInstanceOf[js.Any])
   }

@@ -62,7 +62,8 @@ object MenuSettings {
     __obj.asInstanceOf[MenuSettings]
   }
   
-  extension [Self <: MenuSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuSettings] (val x: Self) extends AnyVal {
     
     inline def setALT(value: Boolean): Self = StObject.set(x, "ALT", value.asInstanceOf[js.Any])
     

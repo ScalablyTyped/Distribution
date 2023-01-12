@@ -159,7 +159,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ChartObject]
     }
     
-    extension [Self <: ChartObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChartObject] (val x: Self) extends AnyVal {
       
       inline def setBaseChartMessageColor(value: String): Self = StObject.set(x, "baseChartMessageColor", value.asInstanceOf[js.Any])
       
@@ -465,7 +466,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DatetimeUnits]
     }
     
-    extension [Self <: DatetimeUnits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatetimeUnits] (val x: Self) extends AnyVal {
       
       inline def setDay(value: Any): Self = StObject.set(x, "Day", value.asInstanceOf[js.Any])
       
@@ -517,7 +519,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Duration]
     }
     
-    extension [Self <: Duration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
       
       inline def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
       
@@ -565,7 +568,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[EventObject]
     }
     
-    extension [Self <: EventObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventObject] (val x: Self) extends AnyVal {
       
       inline def setCancelled(value: Boolean): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
       
@@ -1101,7 +1105,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Weekdays]
     }
     
-    extension [Self <: Weekdays](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Weekdays] (val x: Self) extends AnyVal {
       
       inline def setFriday(value: Any): Self = StObject.set(x, "Friday", value.asInstanceOf[js.Any])
       

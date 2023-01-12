@@ -27,7 +27,8 @@ object PointLocationCfg {
     __obj.asInstanceOf[PointLocationCfg]
   }
   
-  extension [Self <: PointLocationCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointLocationCfg] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

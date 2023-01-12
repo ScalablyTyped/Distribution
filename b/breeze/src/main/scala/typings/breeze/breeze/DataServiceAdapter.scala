@@ -49,7 +49,8 @@ object DataServiceAdapter {
     __obj.asInstanceOf[DataServiceAdapter]
   }
   
-  extension [Self <: DataServiceAdapter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataServiceAdapter] (val x: Self) extends AnyVal {
     
     inline def setChangeRequestInterceptor(value: Done): Self = StObject.set(x, "changeRequestInterceptor", value.asInstanceOf[js.Any])
     

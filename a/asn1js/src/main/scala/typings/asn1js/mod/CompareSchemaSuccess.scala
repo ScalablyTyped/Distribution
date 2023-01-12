@@ -21,7 +21,8 @@ object CompareSchemaSuccess {
     __obj.asInstanceOf[CompareSchemaSuccess]
   }
   
-  extension [Self <: CompareSchemaSuccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompareSchemaSuccess] (val x: Self) extends AnyVal {
     
     inline def setResult(value: AsnType & StringDictionary[scala.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

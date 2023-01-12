@@ -73,7 +73,8 @@ object libStoreRelayModernEnvironmentMod {
       __obj.asInstanceOf[EnvironmentConfig]
     }
     
-    extension [Self <: EnvironmentConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnvironmentConfig] (val x: Self) extends AnyVal {
       
       inline def setConfigName(value: String): Self = StObject.set(x, "configName", value.asInstanceOf[js.Any])
       

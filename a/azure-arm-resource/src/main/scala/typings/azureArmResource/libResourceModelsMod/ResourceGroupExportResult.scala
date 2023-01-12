@@ -23,7 +23,8 @@ object ResourceGroupExportResult {
     __obj.asInstanceOf[ResourceGroupExportResult]
   }
   
-  extension [Self <: ResourceGroupExportResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceGroupExportResult] (val x: Self) extends AnyVal {
     
     inline def setError(value: ResourceManagementErrorWithDetails): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

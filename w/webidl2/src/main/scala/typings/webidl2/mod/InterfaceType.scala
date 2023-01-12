@@ -36,7 +36,8 @@ object InterfaceType {
     __obj.asInstanceOf[InterfaceType]
   }
   
-  extension [Self <: InterfaceType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterfaceType] (val x: Self) extends AnyVal {
     
     inline def setInheritance(value: String): Self = StObject.set(x, "inheritance", value.asInstanceOf[js.Any])
     

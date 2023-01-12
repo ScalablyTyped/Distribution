@@ -19,7 +19,8 @@ object BindingChildContextOptions {
     __obj.asInstanceOf[BindingChildContextOptions[T]]
   }
   
-  extension [Self <: BindingChildContextOptions[?], T](x: Self & BindingChildContextOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindingChildContextOptions[?], T] (val x: Self & BindingChildContextOptions[T]) extends AnyVal {
     
     inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

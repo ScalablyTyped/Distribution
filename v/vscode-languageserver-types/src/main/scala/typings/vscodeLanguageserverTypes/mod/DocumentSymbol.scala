@@ -99,7 +99,8 @@ object DocumentSymbol {
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.DocumentSymbol */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.DocumentSymbol */ Boolean]
   
-  extension [Self <: DocumentSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentSymbol] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[DocumentSymbol]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setJson(value: `true`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     }
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Der]
     }
     
-    extension [Self <: Der](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Der] (val x: Self) extends AnyVal {
       
       inline def setDer(value: js.typedarray.Uint8Array): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[DerJson]
     }
     
-    extension [Self <: DerJson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DerJson] (val x: Self) extends AnyVal {
       
       inline def setDer(value: js.typedarray.Uint8Array): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
       
@@ -92,7 +95,8 @@ object anon {
       __obj.asInstanceOf[Json]
     }
     
-    extension [Self <: Json](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Json] (val x: Self) extends AnyVal {
       
       inline def setJson(value: `false`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
@@ -115,7 +119,8 @@ object anon {
       __obj.asInstanceOf[JsonVerbose]
     }
     
-    extension [Self <: JsonVerbose](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonVerbose] (val x: Self) extends AnyVal {
       
       inline def setDer(value: js.typedarray.Uint8Array): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
       
@@ -140,7 +145,8 @@ object anon {
       __obj.asInstanceOf[Verbose]
     }
     
-    extension [Self <: Verbose](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Verbose] (val x: Self) extends AnyVal {
       
       inline def setDer(value: js.typedarray.Uint8Array): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
       

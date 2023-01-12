@@ -58,7 +58,8 @@ object libVictoryPrimitivesTypesMod {
       __obj.asInstanceOf[VictoryPrimitiveShapeProps]
     }
     
-    extension [Self <: VictoryPrimitiveShapeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryPrimitiveShapeProps] (val x: Self) extends AnyVal {
       
       inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
       

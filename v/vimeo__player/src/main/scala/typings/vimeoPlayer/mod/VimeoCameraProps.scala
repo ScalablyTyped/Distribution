@@ -21,7 +21,8 @@ object VimeoCameraProps {
     __obj.asInstanceOf[VimeoCameraProps]
   }
   
-  extension [Self <: VimeoCameraProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VimeoCameraProps] (val x: Self) extends AnyVal {
     
     inline def setFov(value: Double): Self = StObject.set(x, "fov", value.asInstanceOf[js.Any])
     

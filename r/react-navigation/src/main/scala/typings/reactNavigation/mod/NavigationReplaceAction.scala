@@ -27,7 +27,8 @@ object NavigationReplaceAction {
     __obj.asInstanceOf[NavigationReplaceAction]
   }
   
-  extension [Self <: NavigationReplaceAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationReplaceAction] (val x: Self) extends AnyVal {
     
     inline def setAction(value: NavigationAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

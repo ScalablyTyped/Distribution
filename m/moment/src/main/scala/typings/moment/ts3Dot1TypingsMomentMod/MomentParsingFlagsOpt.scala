@@ -37,7 +37,8 @@ object MomentParsingFlagsOpt {
     __obj.asInstanceOf[MomentParsingFlagsOpt]
   }
   
-  extension [Self <: MomentParsingFlagsOpt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MomentParsingFlagsOpt] (val x: Self) extends AnyVal {
     
     inline def setCharsLeftOver(value: Double): Self = StObject.set(x, "charsLeftOver", value.asInstanceOf[js.Any])
     

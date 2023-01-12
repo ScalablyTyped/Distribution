@@ -71,7 +71,8 @@ object LibraryItem {
     __obj.asInstanceOf[LibraryItem]
   }
   
-  extension [Self <: LibraryItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LibraryItem] (val x: Self) extends AnyVal {
     
     inline def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object IExecuteCommandParameters {
     __obj.asInstanceOf[IExecuteCommandParameters]
   }
   
-  extension [Self <: IExecuteCommandParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExecuteCommandParameters] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
   }

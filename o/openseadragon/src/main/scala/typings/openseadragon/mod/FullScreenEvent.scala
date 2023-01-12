@@ -17,7 +17,8 @@ object FullScreenEvent {
     __obj.asInstanceOf[FullScreenEvent]
   }
   
-  extension [Self <: FullScreenEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullScreenEvent] (val x: Self) extends AnyVal {
     
     inline def setFullScreen(value: Boolean): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
   }

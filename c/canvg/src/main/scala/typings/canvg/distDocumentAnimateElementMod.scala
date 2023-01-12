@@ -60,7 +60,8 @@ object distDocumentAnimateElementMod {
       __obj.asInstanceOf[IProgress]
     }
     
-    extension [Self <: IProgress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProgress] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Property[Any]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

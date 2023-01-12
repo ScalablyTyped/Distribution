@@ -53,7 +53,8 @@ object srcBaseMod {
       __obj.asInstanceOf[FieldInstance]
     }
     
-    extension [Self <: FieldInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldInstance] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object srcBaseMod {
       __obj.asInstanceOf[Meta]
     }
     
-    extension [Self <: Meta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
@@ -146,7 +148,8 @@ object srcBaseMod {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

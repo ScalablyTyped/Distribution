@@ -48,7 +48,8 @@ object RendererType2 {
     __obj.asInstanceOf[RendererType2]
   }
   
-  extension [Self <: RendererType2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RendererType2] (val x: Self) extends AnyVal {
     
     inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

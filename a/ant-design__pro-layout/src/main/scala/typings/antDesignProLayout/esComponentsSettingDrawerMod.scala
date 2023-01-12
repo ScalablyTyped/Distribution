@@ -74,7 +74,8 @@ object esComponentsSettingDrawerMod {
       __obj.asInstanceOf[SettingDrawerProps]
     }
     
-    extension [Self <: SettingDrawerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SettingDrawerProps] (val x: Self) extends AnyVal {
       
       inline def setCollapse(value: Boolean): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
       
@@ -182,7 +183,8 @@ object esComponentsSettingDrawerMod {
       __obj.asInstanceOf[SettingDrawerState]
     }
     
-    extension [Self <: SettingDrawerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SettingDrawerState] (val x: Self) extends AnyVal {
       
       inline def setCollapse(value: Boolean): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
       
@@ -275,7 +277,8 @@ object esComponentsSettingDrawerMod {
       __obj.asInstanceOf[SettingItemProps]
     }
     
-    extension [Self <: SettingItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SettingItemProps] (val x: Self) extends AnyVal {
       
       inline def setAction(value: ReactElement): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

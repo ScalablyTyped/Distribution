@@ -42,7 +42,8 @@ object NumberDeclarationOption {
     __obj.asInstanceOf[NumberDeclarationOption]
   }
   
-  extension [Self <: NumberDeclarationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberDeclarationOption] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

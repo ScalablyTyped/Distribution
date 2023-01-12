@@ -15,7 +15,8 @@ object WorkspaceProviderFeature {
     __obj.asInstanceOf[WorkspaceProviderFeature[PR]]
   }
   
-  extension [Self <: WorkspaceProviderFeature[?], PR](x: Self & WorkspaceProviderFeature[PR]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceProviderFeature[?], PR] (val x: Self & WorkspaceProviderFeature[PR]) extends AnyVal {
     
     inline def setGetProviders(value: () => js.UndefOr[js.Array[PR]]): Self = StObject.set(x, "getProviders", js.Any.fromFunction0(value))
   }

@@ -233,7 +233,8 @@ object libEsmCommonGridMod {
       __obj.asInstanceOf[ColumnIndices]
     }
     
-    extension [Self <: ColumnIndices](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnIndices] (val x: Self) extends AnyVal {
       
       inline def setColumnIndexEnd(value: Double): Self = StObject.set(x, "columnIndexEnd", value.asInstanceOf[js.Any])
       
@@ -261,7 +262,8 @@ object libEsmCommonGridMod {
       __obj.asInstanceOf[GetRowIndicesInRectOptions]
     }
     
-    extension [Self <: GetRowIndicesInRectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetRowIndicesInRectOptions] (val x: Self) extends AnyVal {
       
       inline def setColumnHeaderHeight(value: Double): Self = StObject.set(x, "columnHeaderHeight", value.asInstanceOf[js.Any])
       
@@ -298,7 +300,8 @@ object libEsmCommonGridMod {
       __obj.asInstanceOf[RowIndices]
     }
     
-    extension [Self <: RowIndices](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowIndices] (val x: Self) extends AnyVal {
       
       inline def setRowIndexEnd(value: Double): Self = StObject.set(x, "rowIndexEnd", value.asInstanceOf[js.Any])
       

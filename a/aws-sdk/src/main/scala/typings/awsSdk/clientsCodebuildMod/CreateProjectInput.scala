@@ -124,7 +124,8 @@ object CreateProjectInput {
     __obj.asInstanceOf[CreateProjectInput]
   }
   
-  extension [Self <: CreateProjectInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateProjectInput] (val x: Self) extends AnyVal {
     
     inline def setArtifacts(value: ProjectArtifacts): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     

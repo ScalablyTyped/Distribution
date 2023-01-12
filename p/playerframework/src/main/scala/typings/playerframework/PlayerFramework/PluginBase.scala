@@ -39,7 +39,8 @@ object PluginBase {
     __obj.asInstanceOf[PluginBase]
   }
   
-  extension [Self <: PluginBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginBase] (val x: Self) extends AnyVal {
     
     inline def setCurrentMediaSource(value: MediaSource): Self = StObject.set(x, "currentMediaSource", value.asInstanceOf[js.Any])
     

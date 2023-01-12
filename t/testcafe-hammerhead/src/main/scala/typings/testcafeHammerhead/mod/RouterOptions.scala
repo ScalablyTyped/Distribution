@@ -15,7 +15,8 @@ object RouterOptions {
     __obj.asInstanceOf[RouterOptions]
   }
   
-  extension [Self <: RouterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterOptions] (val x: Self) extends AnyVal {
     
     inline def setStaticContentCaching(value: js.Object): Self = StObject.set(x, "staticContentCaching", value.asInstanceOf[js.Any])
     

@@ -65,7 +65,8 @@ object Dialog {
     __obj.asInstanceOf[Dialog]
   }
   
-  extension [Self <: Dialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dialog] (val x: Self) extends AnyVal {
     
     inline def setAutoSize(value: () => Unit): Self = StObject.set(x, "autoSize", js.Any.fromFunction0(value))
     

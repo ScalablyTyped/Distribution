@@ -18,7 +18,8 @@ object R3Reference {
     __obj.asInstanceOf[R3Reference]
   }
   
-  extension [Self <: R3Reference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3Reference] (val x: Self) extends AnyVal {
     
     inline def setType(value: Expression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

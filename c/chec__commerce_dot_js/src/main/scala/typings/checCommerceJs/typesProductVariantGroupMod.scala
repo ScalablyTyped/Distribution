@@ -28,7 +28,8 @@ object typesProductVariantGroupMod {
       __obj.asInstanceOf[ProductVariantGroup]
     }
     
-    extension [Self <: ProductVariantGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProductVariantGroup] (val x: Self) extends AnyVal {
       
       inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object typesProductVariantGroupMod {
       __obj.asInstanceOf[ProductVariantOption]
     }
     
-    extension [Self <: ProductVariantOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProductVariantOption] (val x: Self) extends AnyVal {
       
       inline def setAssets(value: js.Array[String]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       

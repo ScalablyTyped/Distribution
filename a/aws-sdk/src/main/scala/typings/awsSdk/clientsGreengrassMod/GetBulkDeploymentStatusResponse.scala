@@ -43,7 +43,8 @@ object GetBulkDeploymentStatusResponse {
     __obj.asInstanceOf[GetBulkDeploymentStatusResponse]
   }
   
-  extension [Self <: GetBulkDeploymentStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBulkDeploymentStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setBulkDeploymentMetrics(value: BulkDeploymentMetrics): Self = StObject.set(x, "BulkDeploymentMetrics", value.asInstanceOf[js.Any])
     

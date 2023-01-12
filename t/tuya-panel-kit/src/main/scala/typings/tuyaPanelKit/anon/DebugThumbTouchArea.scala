@@ -25,7 +25,8 @@ object DebugThumbTouchArea {
     __obj.asInstanceOf[DebugThumbTouchArea]
   }
   
-  extension [Self <: DebugThumbTouchArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugThumbTouchArea] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: StyleProp[ViewStyle]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object GetVpnConnectionDeviceSampleConfigurationRequest {
     __obj.asInstanceOf[GetVpnConnectionDeviceSampleConfigurationRequest]
   }
   
-  extension [Self <: GetVpnConnectionDeviceSampleConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVpnConnectionDeviceSampleConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object svg {
       __obj.asInstanceOf[XSVGPrinter]
     }
     
-    extension [Self <: XSVGPrinter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XSVGPrinter] (val x: Self) extends AnyVal {
       
       inline def setEndJob(value: () => Unit): Self = StObject.set(x, "endJob", js.Any.fromFunction0(value))
       
@@ -70,7 +71,8 @@ object svg {
       __obj.asInstanceOf[XSVGWriter]
     }
     
-    extension [Self <: XSVGWriter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XSVGWriter] (val x: Self) extends AnyVal {
       
       inline def setWrite(value: (XDocumentHandler, SeqEquiv[Double]) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction2(value))
     }

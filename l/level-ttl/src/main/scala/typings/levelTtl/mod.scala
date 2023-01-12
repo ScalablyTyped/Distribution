@@ -89,7 +89,8 @@ object mod {
       __obj.asInstanceOf[LevelTTLOptions]
     }
     
-    extension [Self <: LevelTTLOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LevelTTLOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckFrequency(value: Double): Self = StObject.set(x, "checkFrequency", value.asInstanceOf[js.Any])
       

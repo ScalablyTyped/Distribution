@@ -22,7 +22,8 @@ object EncryptedKeystoreV3Json {
     __obj.asInstanceOf[EncryptedKeystoreV3Json]
   }
   
-  extension [Self <: EncryptedKeystoreV3Json](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncryptedKeystoreV3Json] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

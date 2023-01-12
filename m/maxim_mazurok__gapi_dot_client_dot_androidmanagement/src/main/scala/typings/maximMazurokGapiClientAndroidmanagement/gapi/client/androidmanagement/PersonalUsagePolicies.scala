@@ -31,7 +31,8 @@ object PersonalUsagePolicies {
     __obj.asInstanceOf[PersonalUsagePolicies]
   }
   
-  extension [Self <: PersonalUsagePolicies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersonalUsagePolicies] (val x: Self) extends AnyVal {
     
     inline def setAccountTypesWithManagementDisabled(value: js.Array[String]): Self = StObject.set(x, "accountTypesWithManagementDisabled", value.asInstanceOf[js.Any])
     

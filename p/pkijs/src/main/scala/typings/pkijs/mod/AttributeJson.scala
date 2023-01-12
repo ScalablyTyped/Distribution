@@ -18,7 +18,8 @@ object AttributeJson {
     __obj.asInstanceOf[AttributeJson]
   }
   
-  extension [Self <: AttributeJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeJson] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

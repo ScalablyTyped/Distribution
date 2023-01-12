@@ -39,7 +39,8 @@ object InfoWindowOptions {
     __obj.asInstanceOf[InfoWindowOptions]
   }
   
-  extension [Self <: InfoWindowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfoWindowOptions] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String | Node): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

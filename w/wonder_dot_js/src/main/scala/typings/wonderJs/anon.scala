@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Alpha]
     }
     
-    extension [Self <: Alpha](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alpha] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object anon {
       __obj.asInstanceOf[CanvasId]
     }
     
-    extension [Self <: CanvasId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasId] (val x: Self) extends AnyVal {
       
       inline def setContextConfig(value: Options): Self = StObject.set(x, "contextConfig", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,8 @@ object anon {
       __obj.asInstanceOf[Faces]
     }
     
-    extension [Self <: Faces](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Faces] (val x: Self) extends AnyVal {
       
       inline def setFaces(value: js.Array[Face3]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
       
@@ -129,7 +132,8 @@ object anon {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Alpha): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
@@ -158,7 +162,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -179,7 +184,8 @@ object anon {
       __obj.asInstanceOf[Y]
     }
     
-    extension [Self <: Y](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Y] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

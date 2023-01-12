@@ -16,7 +16,8 @@ object IdleRequestOptions {
     __obj.asInstanceOf[IdleRequestOptions]
   }
   
-  extension [Self <: IdleRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdleRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

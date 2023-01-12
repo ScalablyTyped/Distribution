@@ -36,7 +36,8 @@ object Typeofwidget {
     __obj.asInstanceOf[Typeofwidget]
   }
   
-  extension [Self <: Typeofwidget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofwidget] (val x: Self) extends AnyVal {
     
     inline def setAutoInit(value: Boolean): Self = StObject.set(x, "autoInit", value.asInstanceOf[js.Any])
     

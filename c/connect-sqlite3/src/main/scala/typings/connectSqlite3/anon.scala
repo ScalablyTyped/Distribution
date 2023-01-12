@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Session]
     }
     
-    extension [Self <: Session](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
       
       inline def setSession(value: Store): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     }
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Store]
     }
     
-    extension [Self <: Store](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Store] (val x: Self) extends AnyVal {
       
       inline def setStore(value: Instantiable0[typings.connectSqlite3.mod.connect.Store]): Self = StObject.set(x, "Store", value.asInstanceOf[js.Any])
     }

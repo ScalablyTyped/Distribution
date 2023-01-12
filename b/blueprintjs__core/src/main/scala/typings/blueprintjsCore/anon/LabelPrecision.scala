@@ -15,7 +15,8 @@ object LabelPrecision {
     __obj.asInstanceOf[LabelPrecision]
   }
   
-  extension [Self <: LabelPrecision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelPrecision] (val x: Self) extends AnyVal {
     
     inline def setLabelPrecision(value: Double): Self = StObject.set(x, "labelPrecision", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object BuiltInIntentSortBy {
     __obj.asInstanceOf[BuiltInIntentSortBy]
   }
   
-  extension [Self <: BuiltInIntentSortBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuiltInIntentSortBy] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: BuiltInIntentSortAttribute): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

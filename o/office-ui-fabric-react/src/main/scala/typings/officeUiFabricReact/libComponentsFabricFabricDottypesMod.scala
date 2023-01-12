@@ -62,7 +62,8 @@ object libComponentsFabricFabricDottypesMod {
       __obj.asInstanceOf[IFabricProps]
     }
     
-    extension [Self <: IFabricProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFabricProps] (val x: Self) extends AnyVal {
       
       inline def setApplyTheme(value: Boolean): Self = StObject.set(x, "applyTheme", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object libComponentsFabricFabricDottypesMod {
       __obj.asInstanceOf[IFabricStyleProps]
     }
     
-    extension [Self <: IFabricStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFabricStyleProps] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
@@ -131,7 +133,8 @@ object libComponentsFabricFabricDottypesMod {
       __obj.asInstanceOf[IFabricStyles]
     }
     
-    extension [Self <: IFabricStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFabricStyles] (val x: Self) extends AnyVal {
       
       inline def setBodyThemed(value: IStyle): Self = StObject.set(x, "bodyThemed", value.asInstanceOf[js.Any])
       

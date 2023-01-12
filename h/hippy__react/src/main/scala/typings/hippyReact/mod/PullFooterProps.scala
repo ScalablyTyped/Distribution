@@ -33,7 +33,8 @@ object PullFooterProps {
     __obj.asInstanceOf[PullFooterProps]
   }
   
-  extension [Self <: PullFooterProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullFooterProps] (val x: Self) extends AnyVal {
     
     inline def setOnFooterPulling(value: /* evt */ PullingEvent => Unit): Self = StObject.set(x, "onFooterPulling", js.Any.fromFunction1(value))
     

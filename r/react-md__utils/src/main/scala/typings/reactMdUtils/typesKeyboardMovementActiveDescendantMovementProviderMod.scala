@@ -29,7 +29,8 @@ object typesKeyboardMovementActiveDescendantMovementProviderMod {
       __obj.asInstanceOf[ActiveDescendantMovementProviderProps]
     }
     
-    extension [Self <: ActiveDescendantMovementProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveDescendantMovementProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

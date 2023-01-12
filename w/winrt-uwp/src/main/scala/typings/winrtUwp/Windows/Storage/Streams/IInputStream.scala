@@ -30,7 +30,8 @@ object IInputStream {
     __obj.asInstanceOf[IInputStream]
   }
   
-  extension [Self <: IInputStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInputStream] (val x: Self) extends AnyVal {
     
     inline def setReadAsync(
       value: (IBuffer, Double, InputStreamOptions) => IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]

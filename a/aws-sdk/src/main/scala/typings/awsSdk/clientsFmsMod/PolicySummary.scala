@@ -48,7 +48,8 @@ object PolicySummary {
     __obj.asInstanceOf[PolicySummary]
   }
   
-  extension [Self <: PolicySummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicySummary] (val x: Self) extends AnyVal {
     
     inline def setDeleteUnusedFMManagedResources(value: Boolean): Self = StObject.set(x, "DeleteUnusedFMManagedResources", value.asInstanceOf[js.Any])
     

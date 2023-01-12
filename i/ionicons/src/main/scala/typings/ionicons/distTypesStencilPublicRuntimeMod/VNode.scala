@@ -48,7 +48,8 @@ object VNode {
     __obj.asInstanceOf[VNode]
   }
   
-  extension [Self <: VNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VNode] (val x: Self) extends AnyVal {
     
     inline def setDollarattrsDollar(value: Any): Self = StObject.set(x, "$attrs$", value.asInstanceOf[js.Any])
     

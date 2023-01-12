@@ -63,7 +63,8 @@ object MediaControllerMode360Info {
     __obj.asInstanceOf[MediaControllerMode360Info]
   }
   
-  extension [Self <: MediaControllerMode360Info](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaControllerMode360Info] (val x: Self) extends AnyVal {
     
     inline def setAddModeChangeListener(value: MediaControllerEnabledChangeCallback => Double): Self = StObject.set(x, "addModeChangeListener", js.Any.fromFunction1(value))
     

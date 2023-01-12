@@ -18,7 +18,8 @@ object DeleteAppValidationConfigurationRequest {
     __obj.asInstanceOf[DeleteAppValidationConfigurationRequest]
   }
   
-  extension [Self <: DeleteAppValidationConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAppValidationConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: AppIdWithValidation): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
   }

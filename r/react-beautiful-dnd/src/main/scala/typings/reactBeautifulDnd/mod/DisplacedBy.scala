@@ -17,7 +17,8 @@ object DisplacedBy {
     __obj.asInstanceOf[DisplacedBy]
   }
   
-  extension [Self <: DisplacedBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplacedBy] (val x: Self) extends AnyVal {
     
     inline def setPoint(value: Position): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     

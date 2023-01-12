@@ -32,7 +32,8 @@ object GetBucketSignedUrlConfig {
     __obj.asInstanceOf[GetBucketSignedUrlConfig]
   }
   
-  extension [Self <: GetBucketSignedUrlConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBucketSignedUrlConfig] (val x: Self) extends AnyVal {
     
     inline def setAction(value: list): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

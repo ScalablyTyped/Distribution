@@ -37,7 +37,8 @@ object SpatialLocation {
     __obj.asInstanceOf[SpatialLocation]
   }
   
-  extension [Self <: SpatialLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialLocation] (val x: Self) extends AnyVal {
     
     inline def setAbsoluteAngularAcceleration(value: Any): Self = StObject.set(x, "absoluteAngularAcceleration", value.asInstanceOf[js.Any])
     

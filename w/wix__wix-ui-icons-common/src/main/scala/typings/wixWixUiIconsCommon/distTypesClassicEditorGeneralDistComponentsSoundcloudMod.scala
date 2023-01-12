@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsSoundcloudMod extends Shortcut
       __obj.asInstanceOf[SoundcloudProps]
     }
     
-    extension [Self <: SoundcloudProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SoundcloudProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

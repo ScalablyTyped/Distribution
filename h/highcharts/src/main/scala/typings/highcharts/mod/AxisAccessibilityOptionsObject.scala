@@ -32,7 +32,8 @@ object AxisAccessibilityOptionsObject {
     __obj.asInstanceOf[AxisAccessibilityOptionsObject]
   }
   
-  extension [Self <: AxisAccessibilityOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisAccessibilityOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object MarginTopWidth {
     __obj.asInstanceOf[MarginTopWidth]
   }
   
-  extension [Self <: MarginTopWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarginTopWidth] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

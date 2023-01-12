@@ -23,7 +23,8 @@ object PublishMetricsInput {
     __obj.asInstanceOf[PublishMetricsInput]
   }
   
-  extension [Self <: PublishMetricsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublishMetricsInput] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
     

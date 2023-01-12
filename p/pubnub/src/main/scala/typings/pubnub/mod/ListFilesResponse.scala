@@ -22,7 +22,8 @@ object ListFilesResponse {
     __obj.asInstanceOf[ListFilesResponse]
   }
   
-  extension [Self <: ListFilesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFilesResponse] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

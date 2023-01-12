@@ -23,7 +23,8 @@ object Count {
     __obj.asInstanceOf[Count]
   }
   
-  extension [Self <: Count](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
     
     inline def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     

@@ -177,7 +177,8 @@ object meshesMeshSimplificationMod {
       __obj.asInstanceOf[ISimplificationSettings]
     }
     
-    extension [Self <: ISimplificationSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISimplificationSettings] (val x: Self) extends AnyVal {
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
@@ -228,7 +229,8 @@ object meshesMeshSimplificationMod {
       __obj.asInstanceOf[ISimplificationTask]
     }
     
-    extension [Self <: ISimplificationTask](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISimplificationTask] (val x: Self) extends AnyVal {
       
       inline def setMesh(value: Mesh): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
       

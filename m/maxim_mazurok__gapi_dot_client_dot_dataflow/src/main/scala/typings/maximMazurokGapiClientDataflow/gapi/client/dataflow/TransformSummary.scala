@@ -31,7 +31,8 @@ object TransformSummary {
     __obj.asInstanceOf[TransformSummary]
   }
   
-  extension [Self <: TransformSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformSummary] (val x: Self) extends AnyVal {
     
     inline def setDisplayData(value: js.Array[DisplayData]): Self = StObject.set(x, "displayData", value.asInstanceOf[js.Any])
     

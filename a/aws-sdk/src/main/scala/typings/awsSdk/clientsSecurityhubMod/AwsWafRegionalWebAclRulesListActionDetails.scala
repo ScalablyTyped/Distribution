@@ -18,7 +18,8 @@ object AwsWafRegionalWebAclRulesListActionDetails {
     __obj.asInstanceOf[AwsWafRegionalWebAclRulesListActionDetails]
   }
   
-  extension [Self <: AwsWafRegionalWebAclRulesListActionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsWafRegionalWebAclRulesListActionDetails] (val x: Self) extends AnyVal {
     
     inline def setType(value: NonEmptyString): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

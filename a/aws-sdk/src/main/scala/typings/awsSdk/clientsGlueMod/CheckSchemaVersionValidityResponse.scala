@@ -23,7 +23,8 @@ object CheckSchemaVersionValidityResponse {
     __obj.asInstanceOf[CheckSchemaVersionValidityResponse]
   }
   
-  extension [Self <: CheckSchemaVersionValidityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckSchemaVersionValidityResponse] (val x: Self) extends AnyVal {
     
     inline def setError(value: SchemaValidationError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     

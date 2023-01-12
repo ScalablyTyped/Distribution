@@ -16,7 +16,8 @@ object SoftmaxInputs {
     __obj.asInstanceOf[SoftmaxInputs]
   }
   
-  extension [Self <: SoftmaxInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoftmaxInputs] (val x: Self) extends AnyVal {
     
     inline def setLogits(value: scala.Any): Self = StObject.set(x, "logits", value.asInstanceOf[js.Any])
     

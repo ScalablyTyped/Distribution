@@ -38,7 +38,8 @@ object App {
     __obj.asInstanceOf[App]
   }
   
-  extension [Self <: App](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: App] (val x: Self) extends AnyVal {
     
     inline def setCheckForUpdate(value: () => DOMRequest[Any]): Self = StObject.set(x, "checkForUpdate", js.Any.fromFunction0(value))
     

@@ -31,7 +31,8 @@ object SinonMatcher {
     __obj.asInstanceOf[SinonMatcher]
   }
   
-  extension [Self <: SinonMatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SinonMatcher] (val x: Self) extends AnyVal {
     
     inline def setAnd(value: SinonMatcher => SinonMatcher): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
     

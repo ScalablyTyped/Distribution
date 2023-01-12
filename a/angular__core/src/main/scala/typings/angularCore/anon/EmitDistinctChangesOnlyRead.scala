@@ -17,7 +17,8 @@ object EmitDistinctChangesOnlyRead {
     __obj.asInstanceOf[EmitDistinctChangesOnlyRead]
   }
   
-  extension [Self <: EmitDistinctChangesOnlyRead](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmitDistinctChangesOnlyRead] (val x: Self) extends AnyVal {
     
     inline def setEmitDistinctChangesOnly(value: Boolean): Self = StObject.set(x, "emitDistinctChangesOnly", value.asInstanceOf[js.Any])
     

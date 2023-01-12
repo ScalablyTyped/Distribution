@@ -34,7 +34,8 @@ object ModelConfiguration {
     __obj.asInstanceOf[ModelConfiguration]
   }
   
-  extension [Self <: ModelConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: Boolean | String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

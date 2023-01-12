@@ -19,7 +19,8 @@ object ResponseURL {
     __obj.asInstanceOf[ResponseURL]
   }
   
-  extension [Self <: ResponseURL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseURL] (val x: Self) extends AnyVal {
     
     inline def setResponseURL(value: String): Self = StObject.set(x, "ResponseURL", value.asInstanceOf[js.Any])
   }

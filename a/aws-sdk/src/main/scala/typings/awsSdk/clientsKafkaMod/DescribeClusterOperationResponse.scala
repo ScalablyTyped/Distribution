@@ -20,7 +20,8 @@ object DescribeClusterOperationResponse {
     __obj.asInstanceOf[DescribeClusterOperationResponse]
   }
   
-  extension [Self <: DescribeClusterOperationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeClusterOperationResponse] (val x: Self) extends AnyVal {
     
     inline def setClusterOperationInfo(value: ClusterOperationInfo): Self = StObject.set(x, "ClusterOperationInfo", value.asInstanceOf[js.Any])
     

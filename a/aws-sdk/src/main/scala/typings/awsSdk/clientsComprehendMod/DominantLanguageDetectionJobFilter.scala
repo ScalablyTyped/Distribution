@@ -33,7 +33,8 @@ object DominantLanguageDetectionJobFilter {
     __obj.asInstanceOf[DominantLanguageDetectionJobFilter]
   }
   
-  extension [Self <: DominantLanguageDetectionJobFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DominantLanguageDetectionJobFilter] (val x: Self) extends AnyVal {
     
     inline def setJobName(value: JobName): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     

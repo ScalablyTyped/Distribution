@@ -318,7 +318,8 @@ object sapUiLayoutBlockLayoutMod {
       __obj.asInstanceOf[BlockLayoutSettings]
     }
     
-    extension [Self <: BlockLayoutSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockLayoutSettings] (val x: Self) extends AnyVal {
       
       inline def setBackground(
         value: BlockBackgroundType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BlockBackgroundType * / any */ String) | PropertyBindingInfo

@@ -17,7 +17,8 @@ object Province {
     __obj.asInstanceOf[Province]
   }
   
-  extension [Self <: Province](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Province] (val x: Self) extends AnyVal {
     
     inline def setIsoCode(value: String): Self = StObject.set(x, "isoCode", value.asInstanceOf[js.Any])
     

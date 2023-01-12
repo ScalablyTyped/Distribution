@@ -45,7 +45,8 @@ object ServiceEvent {
     __obj.asInstanceOf[ServiceEvent]
   }
   
-  extension [Self <: ServiceEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceEvent] (val x: Self) extends AnyVal {
     
     inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     

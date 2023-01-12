@@ -27,7 +27,8 @@ object distCjsTypesMod {
       __obj.asInstanceOf[BackendEntry]
     }
     
-    extension [Self <: BackendEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackendEntry] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object distCjsTypesMod {
       __obj.asInstanceOf[PreviewList]
     }
     
-    extension [Self <: PreviewList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviewList] (val x: Self) extends AnyVal {
       
       inline def setBackendChanged(value: MultiBackendSwitcher => Unit): Self = StObject.set(x, "backendChanged", js.Any.fromFunction1(value))
       
@@ -95,7 +97,8 @@ object distCjsTypesMod {
       __obj.asInstanceOf[PreviewListener]
     }
     
-    extension [Self <: PreviewListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviewListener] (val x: Self) extends AnyVal {
       
       inline def setBackendChanged(value: MultiBackendSwitcher => Unit): Self = StObject.set(x, "backendChanged", js.Any.fromFunction1(value))
     }
@@ -114,7 +117,8 @@ object distCjsTypesMod {
       __obj.asInstanceOf[Transition]
     }
     
-    extension [Self <: Transition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transition] (val x: Self) extends AnyVal {
       
       inline def setCheck(value: Event => Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
       

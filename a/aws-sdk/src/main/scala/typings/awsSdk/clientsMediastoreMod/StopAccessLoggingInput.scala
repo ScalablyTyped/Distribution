@@ -18,7 +18,8 @@ object StopAccessLoggingInput {
     __obj.asInstanceOf[StopAccessLoggingInput]
   }
   
-  extension [Self <: StopAccessLoggingInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopAccessLoggingInput] (val x: Self) extends AnyVal {
     
     inline def setContainerName(value: ContainerName): Self = StObject.set(x, "ContainerName", value.asInstanceOf[js.Any])
   }

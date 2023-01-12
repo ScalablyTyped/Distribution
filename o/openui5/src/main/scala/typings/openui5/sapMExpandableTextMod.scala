@@ -489,7 +489,8 @@ object sapMExpandableTextMod {
       __obj.asInstanceOf[ExpandableTextSettings]
     }
     
-    extension [Self <: ExpandableTextSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpandableTextSettings] (val x: Self) extends AnyVal {
       
       inline def setEmptyIndicatorMode(
         value: EmptyIndicatorMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EmptyIndicatorMode * / any */ String) | PropertyBindingInfo

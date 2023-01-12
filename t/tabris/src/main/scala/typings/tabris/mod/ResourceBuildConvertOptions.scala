@@ -19,7 +19,8 @@ object ResourceBuildConvertOptions {
     __obj.asInstanceOf[ResourceBuildConvertOptions[ResourceType, RawType]]
   }
   
-  extension [Self <: ResourceBuildConvertOptions[?, ?], ResourceType, RawType](x: Self & (ResourceBuildConvertOptions[ResourceType, RawType])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceBuildConvertOptions[?, ?], ResourceType, RawType] (val x: Self & (ResourceBuildConvertOptions[ResourceType, RawType])) extends AnyVal {
     
     inline def setConverter(value: RawType => ResourceType): Self = StObject.set(x, "converter", js.Any.fromFunction1(value))
     

@@ -70,7 +70,8 @@ object AccountProvider {
     __obj.asInstanceOf[AccountProvider]
   }
   
-  extension [Self <: AccountProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountProvider] (val x: Self) extends AnyVal {
     
     inline def setAutoOAuthCancelled(value: () => Thenable[Unit]): Self = StObject.set(x, "autoOAuthCancelled", js.Any.fromFunction0(value))
     

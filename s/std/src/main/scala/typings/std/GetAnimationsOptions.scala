@@ -16,7 +16,8 @@ object GetAnimationsOptions {
     __obj.asInstanceOf[GetAnimationsOptions]
   }
   
-  extension [Self <: GetAnimationsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAnimationsOptions] (val x: Self) extends AnyVal {
     
     inline def setSubtree(value: scala.Boolean): Self = StObject.set(x, "subtree", value.asInstanceOf[js.Any])
     

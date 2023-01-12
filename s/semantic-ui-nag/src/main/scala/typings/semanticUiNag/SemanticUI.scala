@@ -65,7 +65,8 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setHide(value: String): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
           
@@ -114,7 +115,8 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
           
@@ -168,7 +170,8 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
           
@@ -230,13 +233,15 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
         }
       }
       
-      extension [Self <: SelectorSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SelectorSettings] (val x: Self) extends AnyVal {
         
         inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       }
@@ -253,7 +258,8 @@ object SemanticUI {
           __obj.asInstanceOf[typings.semanticUiNag.SemanticUI.Nag.SelectorSettings.Param]
         }
         
-        extension [Self <: typings.semanticUiNag.SemanticUI.Nag.SelectorSettings.Param](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.semanticUiNag.SemanticUI.Nag.SelectorSettings.Param] (val x: Self) extends AnyVal {
           
           inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
         }
@@ -414,7 +420,8 @@ object SemanticUI {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setAnimation(value: AnimationSettings): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
         

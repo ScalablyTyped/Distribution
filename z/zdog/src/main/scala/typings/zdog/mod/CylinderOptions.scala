@@ -23,7 +23,8 @@ object CylinderOptions {
     __obj.asInstanceOf[CylinderOptions]
   }
   
-  extension [Self <: CylinderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CylinderOptions] (val x: Self) extends AnyVal {
     
     inline def setDiameter(value: Double): Self = StObject.set(x, "diameter", value.asInstanceOf[js.Any])
     

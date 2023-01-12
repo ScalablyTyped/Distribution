@@ -58,7 +58,8 @@ object cellNav {
       __obj.asInstanceOf[ICellNavApi[TEntity]]
     }
     
-    extension [Self <: ICellNavApi[?], TEntity](x: Self & ICellNavApi[TEntity]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICellNavApi[?], TEntity] (val x: Self & ICellNavApi[TEntity]) extends AnyVal {
       
       inline def setGetCurrentSelection(value: () => js.Array[IRowCol[TEntity]]): Self = StObject.set(x, "getCurrentSelection", js.Any.fromFunction0(value))
       
@@ -88,7 +89,8 @@ object cellNav {
       __obj.asInstanceOf[typings.uiGrid.mod.cellNav.IColumnDef]
     }
     
-    extension [Self <: typings.uiGrid.mod.cellNav.IColumnDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.cellNav.IColumnDef] (val x: Self) extends AnyVal {
       
       inline def setAllowCellFocus(value: Boolean): Self = StObject.set(x, "allowCellFocus", value.asInstanceOf[js.Any])
       
@@ -112,7 +114,8 @@ object cellNav {
       __obj.asInstanceOf[typings.uiGrid.mod.cellNav.IGridOptions]
     }
     
-    extension [Self <: typings.uiGrid.mod.cellNav.IGridOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.cellNav.IGridOptions] (val x: Self) extends AnyVal {
       
       inline def setModifierKeysToMultiSelectCells(value: Boolean): Self = StObject.set(x, "modifierKeysToMultiSelectCells", value.asInstanceOf[js.Any])
       
@@ -136,7 +139,8 @@ object cellNav {
       __obj.asInstanceOf[typings.uiGrid.mod.cellNav.IGridRow]
     }
     
-    extension [Self <: typings.uiGrid.mod.cellNav.IGridRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.cellNav.IGridRow] (val x: Self) extends AnyVal {
       
       inline def setAllowCellFocus(value: Boolean): Self = StObject.set(x, "allowCellFocus", value.asInstanceOf[js.Any])
       
@@ -176,7 +180,8 @@ object cellNav {
       __obj.asInstanceOf[IRowCol[TEntity]]
     }
     
-    extension [Self <: IRowCol[?], TEntity](x: Self & IRowCol[TEntity]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRowCol[?], TEntity] (val x: Self & IRowCol[TEntity]) extends AnyVal {
       
       inline def setCol(value: IGridColumnOf[TEntity]): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
@@ -210,7 +215,8 @@ object cellNav {
       __obj.asInstanceOf[IUiGridCellNavConstants]
     }
     
-    extension [Self <: IUiGridCellNavConstants](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUiGridCellNavConstants] (val x: Self) extends AnyVal {
       
       inline def setCELL_NAV_EVENT(value: String): Self = StObject.set(x, "CELL_NAV_EVENT", value.asInstanceOf[js.Any])
       

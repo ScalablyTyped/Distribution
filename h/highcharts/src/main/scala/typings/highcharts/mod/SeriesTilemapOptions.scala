@@ -108,7 +108,8 @@ object SeriesTilemapOptions {
     __obj.asInstanceOf[SeriesTilemapOptions]
   }
   
-  extension [Self <: SeriesTilemapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesTilemapOptions] (val x: Self) extends AnyVal {
     
     inline def setData(
       value: js.Array[

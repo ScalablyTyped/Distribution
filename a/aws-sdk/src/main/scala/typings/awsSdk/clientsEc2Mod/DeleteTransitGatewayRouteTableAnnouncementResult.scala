@@ -18,7 +18,8 @@ object DeleteTransitGatewayRouteTableAnnouncementResult {
     __obj.asInstanceOf[DeleteTransitGatewayRouteTableAnnouncementResult]
   }
   
-  extension [Self <: DeleteTransitGatewayRouteTableAnnouncementResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTransitGatewayRouteTableAnnouncementResult] (val x: Self) extends AnyVal {
     
     inline def setTransitGatewayRouteTableAnnouncement(value: TransitGatewayRouteTableAnnouncement): Self = StObject.set(x, "TransitGatewayRouteTableAnnouncement", value.asInstanceOf[js.Any])
     

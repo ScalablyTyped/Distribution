@@ -55,7 +55,8 @@ object Typeofcommands {
     __obj.asInstanceOf[Typeofcommands]
   }
   
-  extension [Self <: Typeofcommands](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofcommands] (val x: Self) extends AnyVal {
     
     inline def setChangeViewCommand(value: Instantiable0[ChangeViewCommand]): Self = StObject.set(x, "ChangeViewCommand", value.asInstanceOf[js.Any])
     

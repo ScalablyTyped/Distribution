@@ -19,7 +19,8 @@ object RQDeleteFileParam {
     __obj.asInstanceOf[RQDeleteFileParam]
   }
   
-  extension [Self <: RQDeleteFileParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RQDeleteFileParam] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: ICloudConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

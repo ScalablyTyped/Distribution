@@ -21,7 +21,8 @@ object Dismissalcommitid {
     __obj.asInstanceOf[Dismissalcommitid]
   }
   
-  extension [Self <: Dismissalcommitid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dismissalcommitid] (val x: Self) extends AnyVal {
     
     inline def setDismissal_commit_id(value: String): Self = StObject.set(x, "dismissal_commit_id", value.asInstanceOf[js.Any])
     

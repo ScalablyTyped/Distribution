@@ -351,7 +351,8 @@ object buildSrcScaleMod {
       __obj.asInstanceOf[DomainUnionWith]
     }
     
-    extension [Self <: DomainUnionWith](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomainUnionWith] (val x: Self) extends AnyVal {
       
       inline def setUnionWith(value: js.Array[Boolean | DateTime | Double | String]): Self = StObject.set(x, "unionWith", value.asInstanceOf[js.Any])
       
@@ -370,7 +371,8 @@ object buildSrcScaleMod {
       __obj.asInstanceOf[FieldRange]
     }
     
-    extension [Self <: FieldRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldRange] (val x: Self) extends AnyVal {
       
       inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     }
@@ -590,7 +592,8 @@ object buildSrcScaleMod {
       __obj.asInstanceOf[Scale[ES]]
     }
     
-    extension [Self <: Scale[?], ES /* <: ExprRef | SignalRef */](x: Self & Scale[ES]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scale[?], ES /* <: ExprRef | SignalRef */] (val x: Self & Scale[ES]) extends AnyVal {
       
       inline def setAlign(value: Double | ES): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -941,7 +944,8 @@ object buildSrcScaleMod {
       __obj.asInstanceOf[ScaleConfig[ES]]
     }
     
-    extension [Self <: ScaleConfig[?], ES /* <: ExprRef | SignalRef */](x: Self & ScaleConfig[ES]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScaleConfig[?], ES /* <: ExprRef | SignalRef */] (val x: Self & ScaleConfig[ES]) extends AnyVal {
       
       inline def setBandPaddingInner(value: Double | ES): Self = StObject.set(x, "bandPaddingInner", value.asInstanceOf[js.Any])
       
@@ -1081,7 +1085,8 @@ object buildSrcScaleMod {
       __obj.asInstanceOf[SchemeParams]
     }
     
-    extension [Self <: SchemeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemeParams] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double | SignalRef): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object GridLayoutGrid {
     __obj.asInstanceOf[GridLayoutGrid]
   }
   
-  extension [Self <: GridLayoutGrid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridLayoutGrid] (val x: Self) extends AnyVal {
     
     inline def setColor(value: RGBA): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

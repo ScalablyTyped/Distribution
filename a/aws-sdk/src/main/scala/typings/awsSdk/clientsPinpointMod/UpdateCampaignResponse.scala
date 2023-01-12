@@ -15,7 +15,8 @@ object UpdateCampaignResponse {
     __obj.asInstanceOf[UpdateCampaignResponse]
   }
   
-  extension [Self <: UpdateCampaignResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCampaignResponse] (val x: Self) extends AnyVal {
     
     inline def setCampaignResponse(value: CampaignResponse): Self = StObject.set(x, "CampaignResponse", value.asInstanceOf[js.Any])
   }

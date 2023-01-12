@@ -105,7 +105,8 @@ object typesCyMinimatchMod {
       __obj.asInstanceOf[MinimatchOptions]
     }
     
-    extension [Self <: MinimatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinimatchOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       

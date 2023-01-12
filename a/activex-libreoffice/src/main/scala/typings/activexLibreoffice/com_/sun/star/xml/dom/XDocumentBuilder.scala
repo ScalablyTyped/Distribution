@@ -61,7 +61,8 @@ object XDocumentBuilder {
     __obj.asInstanceOf[XDocumentBuilder]
   }
   
-  extension [Self <: XDocumentBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDocumentBuilder] (val x: Self) extends AnyVal {
     
     inline def setDOMImplementation(value: XDOMImplementation): Self = StObject.set(x, "DOMImplementation", value.asInstanceOf[js.Any])
     

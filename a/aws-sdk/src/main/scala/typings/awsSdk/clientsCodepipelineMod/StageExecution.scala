@@ -23,7 +23,8 @@ object StageExecution {
     __obj.asInstanceOf[StageExecution]
   }
   
-  extension [Self <: StageExecution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StageExecution] (val x: Self) extends AnyVal {
     
     inline def setPipelineExecutionId(value: PipelineExecutionId): Self = StObject.set(x, "pipelineExecutionId", value.asInstanceOf[js.Any])
     

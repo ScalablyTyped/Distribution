@@ -30,7 +30,8 @@ object MetadataProvider {
     __obj.asInstanceOf[MetadataProvider]
   }
   
-  extension [Self <: MetadataProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetadataProvider] (val x: Self) extends AnyVal {
     
     inline def setGetDatabases(value: String => Thenable[js.Array[DatabaseInfo | String]]): Self = StObject.set(x, "getDatabases", js.Any.fromFunction1(value))
     

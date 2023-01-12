@@ -34,7 +34,8 @@ object ProxyEventCallbacks {
     __obj.asInstanceOf[ProxyEventCallbacks[D, T, S]]
   }
   
-  extension [Self <: ProxyEventCallbacks[?, ?, ?], D, T, S](x: Self & (ProxyEventCallbacks[D, T, S])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProxyEventCallbacks[?, ?, ?], D, T, S] (val x: Self & (ProxyEventCallbacks[D, T, S])) extends AnyVal {
     
     inline def setDealloc(value: js.ThisFunction0[/* this */ UserMethodInvocation[D, T, S], Unit]): Self = StObject.set(x, "dealloc", value.asInstanceOf[js.Any])
     

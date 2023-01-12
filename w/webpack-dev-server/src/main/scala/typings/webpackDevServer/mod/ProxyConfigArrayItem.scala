@@ -22,7 +22,8 @@ object ProxyConfigArrayItem {
     __obj.asInstanceOf[ProxyConfigArrayItem]
   }
   
-  extension [Self <: ProxyConfigArrayItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProxyConfigArrayItem] (val x: Self) extends AnyVal {
     
     inline def setBypass(
       value: (/* req */ typings.std.Request, /* res */ typings.std.Response, /* proxyConfig */ ProxyConfigArrayItem) => Any

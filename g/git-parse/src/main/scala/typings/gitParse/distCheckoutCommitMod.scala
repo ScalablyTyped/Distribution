@@ -25,7 +25,8 @@ object distCheckoutCommitMod {
       __obj.asInstanceOf[CheckoutCommmitOptions]
     }
     
-    extension [Self <: CheckoutCommmitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckoutCommmitOptions] (val x: Self) extends AnyVal {
       
       inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       

@@ -144,7 +144,8 @@ object behavior {
       __obj.asInstanceOf[IDblClickZoomOptions]
     }
     
-    extension [Self <: IDblClickZoomOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDblClickZoomOptions] (val x: Self) extends AnyVal {
       
       inline def setCentering(value: Boolean): Self = StObject.set(x, "centering", value.asInstanceOf[js.Any])
       
@@ -175,7 +176,8 @@ object behavior {
       __obj.asInstanceOf[IDragOptions]
     }
     
-    extension [Self <: IDragOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDragOptions] (val x: Self) extends AnyVal {
       
       inline def setActionCursor(value: String): Self = StObject.set(x, "actionCursor", value.asInstanceOf[js.Any])
       
@@ -214,7 +216,8 @@ object behavior {
       __obj.asInstanceOf[ILeftMouseButtonMagnifierOptions]
     }
     
-    extension [Self <: ILeftMouseButtonMagnifierOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILeftMouseButtonMagnifierOptions] (val x: Self) extends AnyVal {
       
       inline def setActionCursor(value: String): Self = StObject.set(x, "actionCursor", value.asInstanceOf[js.Any])
       
@@ -241,7 +244,8 @@ object behavior {
       __obj.asInstanceOf[IMultiTouchOptions]
     }
     
-    extension [Self <: IMultiTouchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMultiTouchOptions] (val x: Self) extends AnyVal {
       
       inline def setTremor(value: Double): Self = StObject.set(x, "tremor", value.asInstanceOf[js.Any])
       
@@ -262,7 +266,8 @@ object behavior {
       __obj.asInstanceOf[IRightMouseButtonMagnifierOptions]
     }
     
-    extension [Self <: IRightMouseButtonMagnifierOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRightMouseButtonMagnifierOptions] (val x: Self) extends AnyVal {
       
       inline def setActionCursor(value: String): Self = StObject.set(x, "actionCursor", value.asInstanceOf[js.Any])
       
@@ -285,7 +290,8 @@ object behavior {
       __obj.asInstanceOf[IRulerOptions]
     }
     
-    extension [Self <: IRulerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRulerOptions] (val x: Self) extends AnyVal {
       
       inline def setBalloonAutoPan(value: Boolean): Self = StObject.set(x, "balloonAutoPan", value.asInstanceOf[js.Any])
       
@@ -306,7 +312,8 @@ object behavior {
       __obj.asInstanceOf[IScrollZoomOptions]
     }
     
-    extension [Self <: IScrollZoomOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScrollZoomOptions] (val x: Self) extends AnyVal {
       
       inline def setMaximumDelta(value: Double): Self = StObject.set(x, "maximumDelta", value.asInstanceOf[js.Any])
       

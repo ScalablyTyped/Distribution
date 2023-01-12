@@ -33,7 +33,8 @@ object DescribeObjectsInput {
     __obj.asInstanceOf[DescribeObjectsInput]
   }
   
-  extension [Self <: DescribeObjectsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeObjectsInput] (val x: Self) extends AnyVal {
     
     inline def setEvaluateExpressions(value: Boolean): Self = StObject.set(x, "evaluateExpressions", value.asInstanceOf[js.Any])
     

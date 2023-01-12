@@ -65,7 +65,8 @@ object polymer {
       __obj.asInstanceOf[Element]
     }
     
-    extension [Self <: Element](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
       
       inline def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
       
@@ -128,7 +129,8 @@ object polymer {
       __obj.asInstanceOf[FireOptions]
     }
     
-    extension [Self <: FireOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FireOptions] (val x: Self) extends AnyVal {
       
       inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
       
@@ -310,7 +312,8 @@ object polymer {
       __obj.asInstanceOf[PolymerTSElement]
     }
     
-    extension [Self <: PolymerTSElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolymerTSElement] (val x: Self) extends AnyVal {
       
       inline def set$custom_cons(value: FunctionConstructor): Self = StObject.set(x, "$custom_cons", value.asInstanceOf[js.Any])
       
@@ -358,7 +361,8 @@ object polymer {
       __obj.asInstanceOf[Property]
     }
     
-    extension [Self <: Property](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Property] (val x: Self) extends AnyVal {
       
       inline def setComputed(value: String): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
       

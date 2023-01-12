@@ -32,7 +32,8 @@ object LineGradient {
     __obj.asInstanceOf[LineGradient]
   }
   
-  extension [Self <: LineGradient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineGradient] (val x: Self) extends AnyVal {
     
     inline def setAddColorStop(value: (Double, String) => Unit): Self = StObject.set(x, "addColorStop", js.Any.fromFunction2(value))
     

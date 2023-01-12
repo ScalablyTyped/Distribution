@@ -23,7 +23,8 @@ object LockScreenCallEndRequestedEventArgs {
     __obj.asInstanceOf[LockScreenCallEndRequestedEventArgs]
   }
   
-  extension [Self <: LockScreenCallEndRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LockScreenCallEndRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     

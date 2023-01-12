@@ -31,7 +31,8 @@ object pushOptionsMod {
       __obj.asInstanceOf[PushOptions]
     }
     
-    extension [Self <: PushOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PushOptions] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: RemoteCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       

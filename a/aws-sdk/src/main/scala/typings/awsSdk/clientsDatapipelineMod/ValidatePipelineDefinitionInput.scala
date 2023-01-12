@@ -33,7 +33,8 @@ object ValidatePipelineDefinitionInput {
     __obj.asInstanceOf[ValidatePipelineDefinitionInput]
   }
   
-  extension [Self <: ValidatePipelineDefinitionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidatePipelineDefinitionInput] (val x: Self) extends AnyVal {
     
     inline def setParameterObjects(value: ParameterObjectList): Self = StObject.set(x, "parameterObjects", value.asInstanceOf[js.Any])
     

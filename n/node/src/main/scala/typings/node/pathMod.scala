@@ -57,7 +57,8 @@ object pathMod extends Shortcut {
       __obj.asInstanceOf[FormatInputPathObject]
     }
     
-    extension [Self <: FormatInputPathObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatInputPathObject] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object pathMod extends Shortcut {
       __obj.asInstanceOf[ParsedPath]
     }
     
-    extension [Self <: ParsedPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedPath] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       

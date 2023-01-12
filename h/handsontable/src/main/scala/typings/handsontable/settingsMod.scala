@@ -73,7 +73,8 @@ object settingsMod {
       __obj.asInstanceOf[CellMeta]
     }
     
-    extension [Self <: CellMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellMeta] (val x: Self) extends AnyVal {
       
       inline def setComment(value: CommentObject): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -127,7 +128,8 @@ object settingsMod {
       __obj.asInstanceOf[CellProperties]
     }
     
-    extension [Self <: CellProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellProperties] (val x: Self) extends AnyVal {
       
       inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
@@ -158,7 +160,8 @@ object settingsMod {
       __obj.asInstanceOf[CellSettings]
     }
     
-    extension [Self <: CellSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellSettings] (val x: Self) extends AnyVal {
       
       inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
@@ -183,7 +186,8 @@ object settingsMod {
       __obj.asInstanceOf[ColumnSettings]
     }
     
-    extension [Self <: ColumnSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnSettings] (val x: Self) extends AnyVal {
       
       inline def setData(value: String | Double | ColumnDataGetterSetterFunction): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -486,7 +490,8 @@ object settingsMod {
       __obj.asInstanceOf[GridSettings]
     }
     
-    extension [Self <: GridSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridSettings] (val x: Self) extends AnyVal {
       
       inline def setActiveHeaderClassName(value: String): Self = StObject.set(x, "activeHeaderClassName", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object Program_ {
     __obj.asInstanceOf[Program_]
   }
   
-  extension [Self <: Program_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Program_] (val x: Self) extends AnyVal {
     
     inline def setBody(value: js.Array[Statement | ModuleDeclaration]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

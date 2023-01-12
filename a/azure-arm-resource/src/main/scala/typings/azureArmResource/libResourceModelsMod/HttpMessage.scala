@@ -18,7 +18,8 @@ object HttpMessage {
     __obj.asInstanceOf[HttpMessage]
   }
   
-  extension [Self <: HttpMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpMessage] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

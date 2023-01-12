@@ -154,7 +154,8 @@ object AgendaProps {
     __obj.asInstanceOf[AgendaProps[TItem]]
   }
   
-  extension [Self <: AgendaProps[?], TItem](x: Self & AgendaProps[TItem]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgendaProps[?], TItem] (val x: Self & AgendaProps[TItem]) extends AnyVal {
     
     inline def setDisplayLoadingIndicator(value: Boolean): Self = StObject.set(x, "displayLoadingIndicator", value.asInstanceOf[js.Any])
     

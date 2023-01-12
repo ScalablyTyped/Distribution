@@ -21,7 +21,8 @@ object IntRect {
     __obj.asInstanceOf[IntRect]
   }
   
-  extension [Self <: IntRect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntRect] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

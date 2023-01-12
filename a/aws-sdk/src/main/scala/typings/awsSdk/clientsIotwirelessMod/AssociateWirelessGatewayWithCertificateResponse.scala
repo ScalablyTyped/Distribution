@@ -18,7 +18,8 @@ object AssociateWirelessGatewayWithCertificateResponse {
     __obj.asInstanceOf[AssociateWirelessGatewayWithCertificateResponse]
   }
   
-  extension [Self <: AssociateWirelessGatewayWithCertificateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateWirelessGatewayWithCertificateResponse] (val x: Self) extends AnyVal {
     
     inline def setIotCertificateId(value: IotCertificateId): Self = StObject.set(x, "IotCertificateId", value.asInstanceOf[js.Any])
     

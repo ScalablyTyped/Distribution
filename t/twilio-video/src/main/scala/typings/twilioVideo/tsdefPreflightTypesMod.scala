@@ -25,7 +25,8 @@ object tsdefPreflightTypesMod {
       __obj.asInstanceOf[NetworkTiming]
     }
     
-    extension [Self <: NetworkTiming](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkTiming] (val x: Self) extends AnyVal {
       
       inline def setConnect(value: TimeMeasurement): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object tsdefPreflightTypesMod {
       __obj.asInstanceOf[PreflightOptions]
     }
     
-    extension [Self <: PreflightOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreflightOptions] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -89,7 +91,8 @@ object tsdefPreflightTypesMod {
       __obj.asInstanceOf[PreflightReportStats]
     }
     
-    extension [Self <: PreflightReportStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreflightReportStats] (val x: Self) extends AnyVal {
       
       inline def setJitter(value: Stats): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
       
@@ -132,7 +135,8 @@ object tsdefPreflightTypesMod {
       __obj.asInstanceOf[PreflightTestReport]
     }
     
-    extension [Self <: PreflightTestReport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreflightTestReport] (val x: Self) extends AnyVal {
       
       inline def setIceCandidateStats(value: js.Array[RTCIceCandidateStats]): Self = StObject.set(x, "iceCandidateStats", value.asInstanceOf[js.Any])
       
@@ -167,7 +171,8 @@ object tsdefPreflightTypesMod {
       __obj.asInstanceOf[ProgressEvent]
     }
     
-    extension [Self <: ProgressEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressEvent] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -200,7 +205,8 @@ object tsdefPreflightTypesMod {
       __obj.asInstanceOf[RTCIceCandidateStats]
     }
     
-    extension [Self <: RTCIceCandidateStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RTCIceCandidateStats] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -249,7 +255,8 @@ object tsdefPreflightTypesMod {
       __obj.asInstanceOf[SelectedIceCandidatePairStats]
     }
     
-    extension [Self <: SelectedIceCandidatePairStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectedIceCandidatePairStats] (val x: Self) extends AnyVal {
       
       inline def setLocalCandidate(value: RTCIceCandidateStats): Self = StObject.set(x, "localCandidate", value.asInstanceOf[js.Any])
       
@@ -272,7 +279,8 @@ object tsdefPreflightTypesMod {
       __obj.asInstanceOf[Stats]
     }
     
-    extension [Self <: Stats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
       
       inline def setAverage(value: Double): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
       
@@ -297,7 +305,8 @@ object tsdefPreflightTypesMod {
       __obj.asInstanceOf[TimeMeasurement]
     }
     
-    extension [Self <: TimeMeasurement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeMeasurement] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       

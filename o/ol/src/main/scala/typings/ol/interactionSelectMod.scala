@@ -100,7 +100,8 @@ object interactionSelectMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAddCondition(value: Condition): Self = StObject.set(x, "addCondition", value.asInstanceOf[js.Any])
       

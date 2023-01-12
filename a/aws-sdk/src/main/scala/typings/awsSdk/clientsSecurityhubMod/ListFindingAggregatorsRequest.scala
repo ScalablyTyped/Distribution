@@ -23,7 +23,8 @@ object ListFindingAggregatorsRequest {
     __obj.asInstanceOf[ListFindingAggregatorsRequest]
   }
   
-  extension [Self <: ListFindingAggregatorsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFindingAggregatorsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object ASPxClientUploadControlFile {
     __obj.asInstanceOf[ASPxClientUploadControlFile]
   }
   
-  extension [Self <: ASPxClientUploadControlFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientUploadControlFile] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

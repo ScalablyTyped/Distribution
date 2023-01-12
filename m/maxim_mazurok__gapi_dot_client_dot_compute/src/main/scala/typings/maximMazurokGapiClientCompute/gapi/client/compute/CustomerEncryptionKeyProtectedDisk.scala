@@ -19,7 +19,8 @@ object CustomerEncryptionKeyProtectedDisk {
     __obj.asInstanceOf[CustomerEncryptionKeyProtectedDisk]
   }
   
-  extension [Self <: CustomerEncryptionKeyProtectedDisk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerEncryptionKeyProtectedDisk] (val x: Self) extends AnyVal {
     
     inline def setDiskEncryptionKey(value: CustomerEncryptionKey): Self = StObject.set(x, "diskEncryptionKey", value.asInstanceOf[js.Any])
     

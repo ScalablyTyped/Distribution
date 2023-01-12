@@ -20,7 +20,8 @@ object EncryptedPrivateKey {
     __obj.asInstanceOf[EncryptedPrivateKey]
   }
   
-  extension [Self <: EncryptedPrivateKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncryptedPrivateKey] (val x: Self) extends AnyVal {
     
     inline def setKey(value: ParsedKey | Buffer | String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

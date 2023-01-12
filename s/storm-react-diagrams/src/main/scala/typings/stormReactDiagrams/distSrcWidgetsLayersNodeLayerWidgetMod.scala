@@ -33,7 +33,8 @@ object distSrcWidgetsLayersNodeLayerWidgetMod {
       __obj.asInstanceOf[NodeLayerProps]
     }
     
-    extension [Self <: NodeLayerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeLayerProps] (val x: Self) extends AnyVal {
       
       inline def setDiagramEngine(value: DiagramEngine): Self = StObject.set(x, "diagramEngine", value.asInstanceOf[js.Any])
     }

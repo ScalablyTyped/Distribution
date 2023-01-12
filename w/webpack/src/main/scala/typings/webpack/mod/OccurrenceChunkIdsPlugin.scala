@@ -21,7 +21,8 @@ object OccurrenceChunkIdsPlugin {
     __obj.asInstanceOf[OccurrenceChunkIdsPlugin]
   }
   
-  extension [Self <: OccurrenceChunkIdsPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OccurrenceChunkIdsPlugin] (val x: Self) extends AnyVal {
     
     inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     

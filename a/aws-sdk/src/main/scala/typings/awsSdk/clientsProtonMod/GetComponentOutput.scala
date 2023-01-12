@@ -18,7 +18,8 @@ object GetComponentOutput {
     __obj.asInstanceOf[GetComponentOutput]
   }
   
-  extension [Self <: GetComponentOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetComponentOutput] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: Component): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

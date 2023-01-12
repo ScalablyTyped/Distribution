@@ -39,7 +39,8 @@ object IBANData {
     __obj.asInstanceOf[IBANData]
   }
   
-  extension [Self <: IBANData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBANData] (val x: Self) extends AnyVal {
     
     inline def setBIC(value: String): Self = StObject.set(x, "BIC", value.asInstanceOf[js.Any])
     

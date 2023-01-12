@@ -21,7 +21,8 @@ object CDC {
     __obj.asInstanceOf[CDC]
   }
   
-  extension [Self <: CDC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CDC] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.cssTree.cssTreeStrings.CDC): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

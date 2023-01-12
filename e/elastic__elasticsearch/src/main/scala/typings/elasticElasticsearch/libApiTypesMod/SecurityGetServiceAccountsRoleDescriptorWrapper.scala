@@ -15,7 +15,8 @@ object SecurityGetServiceAccountsRoleDescriptorWrapper {
     __obj.asInstanceOf[SecurityGetServiceAccountsRoleDescriptorWrapper]
   }
   
-  extension [Self <: SecurityGetServiceAccountsRoleDescriptorWrapper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityGetServiceAccountsRoleDescriptorWrapper] (val x: Self) extends AnyVal {
     
     inline def setRole_descriptor(value: SecurityRoleDescriptorRead): Self = StObject.set(x, "role_descriptor", value.asInstanceOf[js.Any])
   }

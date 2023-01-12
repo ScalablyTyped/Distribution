@@ -28,7 +28,8 @@ object SendQuota {
     __obj.asInstanceOf[SendQuota]
   }
   
-  extension [Self <: SendQuota](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendQuota] (val x: Self) extends AnyVal {
     
     inline def setMax24HourSend(value: Max24HourSend): Self = StObject.set(x, "Max24HourSend", value.asInstanceOf[js.Any])
     

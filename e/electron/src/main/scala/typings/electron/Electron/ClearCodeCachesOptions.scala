@@ -20,7 +20,8 @@ object ClearCodeCachesOptions {
     __obj.asInstanceOf[ClearCodeCachesOptions]
   }
   
-  extension [Self <: ClearCodeCachesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearCodeCachesOptions] (val x: Self) extends AnyVal {
     
     inline def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     

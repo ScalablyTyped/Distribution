@@ -23,7 +23,8 @@ object Base64Options {
     __obj.asInstanceOf[Base64Options]
   }
   
-  extension [Self <: Base64Options](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Base64Options] (val x: Self) extends AnyVal {
     
     inline def setPaddingRequired(value: Boolean): Self = StObject.set(x, "paddingRequired", value.asInstanceOf[js.Any])
     

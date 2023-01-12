@@ -23,7 +23,8 @@ object BufferingEventUIParam {
     __obj.asInstanceOf[BufferingEventUIParam]
   }
   
-  extension [Self <: BufferingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BufferingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setBuffered(value: Double): Self = StObject.set(x, "buffered", value.asInstanceOf[js.Any])
     

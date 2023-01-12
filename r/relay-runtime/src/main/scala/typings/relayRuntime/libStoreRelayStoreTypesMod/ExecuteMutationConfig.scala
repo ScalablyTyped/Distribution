@@ -34,7 +34,8 @@ object ExecuteMutationConfig {
     __obj.asInstanceOf[ExecuteMutationConfig[TMutation]]
   }
   
-  extension [Self <: ExecuteMutationConfig[?], TMutation /* <: MutationParameters */](x: Self & ExecuteMutationConfig[TMutation]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteMutationConfig[?], TMutation /* <: MutationParameters */] (val x: Self & ExecuteMutationConfig[TMutation]) extends AnyVal {
     
     inline def setOperation(value: OperationDescriptor): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     

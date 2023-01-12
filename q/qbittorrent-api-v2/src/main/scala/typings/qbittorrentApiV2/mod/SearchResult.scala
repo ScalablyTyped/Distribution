@@ -35,7 +35,8 @@ object SearchResult {
     __obj.asInstanceOf[SearchResult]
   }
   
-  extension [Self <: SearchResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
     
     inline def setDescrLink(value: String): Self = StObject.set(x, "descrLink", value.asInstanceOf[js.Any])
     

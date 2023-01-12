@@ -24,7 +24,8 @@ object BooleanConstructor {
     __obj.asInstanceOf[BooleanConstructor]
   }
   
-  extension [Self <: BooleanConstructor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BooleanConstructor] (val x: Self) extends AnyVal {
     
     inline def setParse(value: java.lang.String => Boolean): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
   }

@@ -38,7 +38,8 @@ object BuildResourceUsage {
     __obj.asInstanceOf[BuildResourceUsage]
   }
   
-  extension [Self <: BuildResourceUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildResourceUsage] (val x: Self) extends AnyVal {
     
     inline def setDistributedTaskAgents(value: Double): Self = StObject.set(x, "distributedTaskAgents", value.asInstanceOf[js.Any])
     

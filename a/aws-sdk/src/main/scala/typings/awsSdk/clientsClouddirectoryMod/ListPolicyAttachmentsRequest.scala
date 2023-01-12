@@ -38,7 +38,8 @@ object ListPolicyAttachmentsRequest {
     __obj.asInstanceOf[ListPolicyAttachmentsRequest]
   }
   
-  extension [Self <: ListPolicyAttachmentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPolicyAttachmentsRequest] (val x: Self) extends AnyVal {
     
     inline def setConsistencyLevel(value: ConsistencyLevel): Self = StObject.set(x, "ConsistencyLevel", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,8 @@ object WebAppInitData {
     __obj.asInstanceOf[WebAppInitData]
   }
   
-  extension [Self <: WebAppInitData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebAppInitData] (val x: Self) extends AnyVal {
     
     inline def setAuth_date(value: Double): Self = StObject.set(x, "auth_date", value.asInstanceOf[js.Any])
     

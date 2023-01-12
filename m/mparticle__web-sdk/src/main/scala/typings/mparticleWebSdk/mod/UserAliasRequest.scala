@@ -23,7 +23,8 @@ object UserAliasRequest {
     __obj.asInstanceOf[UserAliasRequest]
   }
   
-  extension [Self <: UserAliasRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserAliasRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationMpid(value: String): Self = StObject.set(x, "destinationMpid", value.asInstanceOf[js.Any])
     

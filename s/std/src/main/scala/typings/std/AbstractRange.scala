@@ -39,7 +39,8 @@ object AbstractRange {
     __obj.asInstanceOf[AbstractRange]
   }
   
-  extension [Self <: AbstractRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractRange] (val x: Self) extends AnyVal {
     
     inline def setCollapsed(value: scala.Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     

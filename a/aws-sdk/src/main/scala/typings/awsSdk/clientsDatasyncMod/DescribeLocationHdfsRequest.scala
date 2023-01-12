@@ -18,7 +18,8 @@ object DescribeLocationHdfsRequest {
     __obj.asInstanceOf[DescribeLocationHdfsRequest]
   }
   
-  extension [Self <: DescribeLocationHdfsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLocationHdfsRequest] (val x: Self) extends AnyVal {
     
     inline def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
   }

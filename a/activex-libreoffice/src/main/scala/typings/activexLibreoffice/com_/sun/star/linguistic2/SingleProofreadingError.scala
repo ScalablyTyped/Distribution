@@ -44,7 +44,8 @@ object SingleProofreadingError {
     __obj.asInstanceOf[SingleProofreadingError]
   }
   
-  extension [Self <: SingleProofreadingError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleProofreadingError] (val x: Self) extends AnyVal {
     
     inline def setAFullComment(value: String): Self = StObject.set(x, "aFullComment", value.asInstanceOf[js.Any])
     

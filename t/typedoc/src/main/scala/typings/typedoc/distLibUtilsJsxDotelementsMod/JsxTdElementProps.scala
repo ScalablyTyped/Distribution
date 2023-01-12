@@ -21,7 +21,8 @@ object JsxTdElementProps {
     __obj.asInstanceOf[JsxTdElementProps]
   }
   
-  extension [Self <: JsxTdElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxTdElementProps] (val x: Self) extends AnyVal {
     
     inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
     

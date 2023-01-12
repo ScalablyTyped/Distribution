@@ -48,7 +48,8 @@ object RecipientDsnFields {
     __obj.asInstanceOf[RecipientDsnFields]
   }
   
-  extension [Self <: RecipientDsnFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientDsnFields] (val x: Self) extends AnyVal {
     
     inline def setAction(value: DsnAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

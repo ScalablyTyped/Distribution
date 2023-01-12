@@ -23,7 +23,8 @@ object DescribeNodeRequest {
     __obj.asInstanceOf[DescribeNodeRequest]
   }
   
-  extension [Self <: DescribeNodeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNodeRequest] (val x: Self) extends AnyVal {
     
     inline def setNodeId(value: NodeId): Self = StObject.set(x, "NodeId", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object EkmConnection {
     __obj.asInstanceOf[EkmConnection]
   }
   
-  extension [Self <: EkmConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EkmConnection] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

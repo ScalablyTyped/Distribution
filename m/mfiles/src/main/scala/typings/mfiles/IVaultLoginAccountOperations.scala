@@ -41,7 +41,8 @@ object IVaultLoginAccountOperations {
     __obj.asInstanceOf[IVaultLoginAccountOperations]
   }
   
-  extension [Self <: IVaultLoginAccountOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultLoginAccountOperations] (val x: Self) extends AnyVal {
     
     inline def setAddLoginAccount(value: (ILoginAccount, String) => Unit): Self = StObject.set(x, "AddLoginAccount", js.Any.fromFunction2(value))
     

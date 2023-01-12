@@ -15,7 +15,8 @@ object PaneMethods {
     __obj.asInstanceOf[PaneMethods]
   }
   
-  extension [Self <: PaneMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaneMethods] (val x: Self) extends AnyVal {
     
     inline def setUpdate(value: Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }

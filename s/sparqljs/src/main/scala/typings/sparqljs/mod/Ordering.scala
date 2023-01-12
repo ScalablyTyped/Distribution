@@ -17,7 +17,8 @@ object Ordering {
     __obj.asInstanceOf[Ordering]
   }
   
-  extension [Self <: Ordering](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ordering] (val x: Self) extends AnyVal {
     
     inline def setDescending(value: Boolean): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
     

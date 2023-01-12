@@ -43,7 +43,8 @@ object SharePointListAdapterRWObject {
     __obj.asInstanceOf[SharePointListAdapterRWObject]
   }
   
-  extension [Self <: SharePointListAdapterRWObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharePointListAdapterRWObject] (val x: Self) extends AnyVal {
     
     inline def setContentTypeId(value: String): Self = StObject.set(x, "ContentTypeId", value.asInstanceOf[js.Any])
     

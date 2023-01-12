@@ -77,7 +77,8 @@ object TableBorder {
     __obj.asInstanceOf[TableBorder]
   }
   
-  extension [Self <: TableBorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableBorder] (val x: Self) extends AnyVal {
     
     inline def setBottomLine(value: BorderLine): Self = StObject.set(x, "BottomLine", value.asInstanceOf[js.Any])
     

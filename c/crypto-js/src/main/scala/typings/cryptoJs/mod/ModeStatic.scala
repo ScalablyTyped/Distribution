@@ -25,7 +25,8 @@ object ModeStatic {
     __obj.asInstanceOf[ModeStatic]
   }
   
-  extension [Self <: ModeStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModeStatic] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: (Cipher, js.Array[Double]) => Mode_): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
   }

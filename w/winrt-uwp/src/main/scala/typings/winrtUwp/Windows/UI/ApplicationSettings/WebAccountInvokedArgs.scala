@@ -17,7 +17,8 @@ object WebAccountInvokedArgs {
     __obj.asInstanceOf[WebAccountInvokedArgs]
   }
   
-  extension [Self <: WebAccountInvokedArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebAccountInvokedArgs] (val x: Self) extends AnyVal {
     
     inline def setAction(value: WebAccountAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }

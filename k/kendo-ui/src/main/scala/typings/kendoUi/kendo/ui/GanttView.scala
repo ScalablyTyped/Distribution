@@ -35,7 +35,8 @@ object GanttView {
     __obj.asInstanceOf[GanttView]
   }
   
-  extension [Self <: GanttView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttView] (val x: Self) extends AnyVal {
     
     inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

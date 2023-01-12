@@ -23,7 +23,8 @@ object DescribeDomainEndpointOptionsRequest {
     __obj.asInstanceOf[DescribeDomainEndpointOptionsRequest]
   }
   
-  extension [Self <: DescribeDomainEndpointOptionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDomainEndpointOptionsRequest] (val x: Self) extends AnyVal {
     
     inline def setDeployed(value: Boolean): Self = StObject.set(x, "Deployed", value.asInstanceOf[js.Any])
     

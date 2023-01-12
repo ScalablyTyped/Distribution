@@ -21,7 +21,8 @@ object NormalizedLandmark {
     __obj.asInstanceOf[NormalizedLandmark]
   }
   
-  extension [Self <: NormalizedLandmark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizedLandmark] (val x: Self) extends AnyVal {
     
     inline def setVisibility(value: Double): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     

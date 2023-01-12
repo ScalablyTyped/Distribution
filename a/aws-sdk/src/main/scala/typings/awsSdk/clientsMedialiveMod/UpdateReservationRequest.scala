@@ -28,7 +28,8 @@ object UpdateReservationRequest {
     __obj.asInstanceOf[UpdateReservationRequest]
   }
   
-  extension [Self <: UpdateReservationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateReservationRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

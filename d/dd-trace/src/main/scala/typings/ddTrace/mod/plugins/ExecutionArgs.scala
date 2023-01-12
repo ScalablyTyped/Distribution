@@ -30,7 +30,8 @@ object ExecutionArgs {
     __obj.asInstanceOf[ExecutionArgs]
   }
   
-  extension [Self <: ExecutionArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionArgs] (val x: Self) extends AnyVal {
     
     inline def setContextValue(value: Any): Self = StObject.set(x, "contextValue", value.asInstanceOf[js.Any])
     

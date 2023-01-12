@@ -15,7 +15,8 @@ object Contrast {
     __obj.asInstanceOf[Contrast]
   }
   
-  extension [Self <: Contrast](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Contrast] (val x: Self) extends AnyVal {
     
     inline def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
     

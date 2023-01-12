@@ -26,7 +26,8 @@ object ButtonIconsInput {
     __obj.asInstanceOf[ButtonIconsInput]
   }
   
-  extension [Self <: ButtonIconsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonIconsInput] (val x: Self) extends AnyVal {
     
     inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     

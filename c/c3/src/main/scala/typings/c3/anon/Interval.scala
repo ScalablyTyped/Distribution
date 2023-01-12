@@ -17,7 +17,8 @@ object Interval {
     __obj.asInstanceOf[Interval]
   }
   
-  extension [Self <: Interval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Interval] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: Any): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object Admin {
     __obj.asInstanceOf[Admin]
   }
   
-  extension [Self <: Admin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Admin] (val x: Self) extends AnyVal {
     
     inline def setServiceAnnouncement(value: NullableOption[ServiceAnnouncement]): Self = StObject.set(x, "serviceAnnouncement", value.asInstanceOf[js.Any])
     

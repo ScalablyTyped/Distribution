@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[LeafObject]
     }
     
-    extension [Self <: LeafObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LeafObject] (val x: Self) extends AnyVal {
       
       inline def setChangeFreq(value: String): Self = StObject.set(x, "changeFreq", value.asInstanceOf[js.Any])
       

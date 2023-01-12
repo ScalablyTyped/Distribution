@@ -1135,7 +1135,8 @@ object sapMInputBaseMod {
       __obj.asInstanceOf[InputBaseSettings]
     }
     
-    extension [Self <: InputBaseSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputBaseSettings] (val x: Self) extends AnyVal {
       
       inline def setAriaDescribedBy(value: js.Array[typings.openui5.sapUiCoreControlMod.default | String]): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
       

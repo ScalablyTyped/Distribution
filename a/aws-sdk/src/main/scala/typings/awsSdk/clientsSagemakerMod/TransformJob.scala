@@ -100,7 +100,8 @@ object TransformJob {
     __obj.asInstanceOf[TransformJob]
   }
   
-  extension [Self <: TransformJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformJob] (val x: Self) extends AnyVal {
     
     inline def setAutoMLJobArn(value: AutoMLJobArn): Self = StObject.set(x, "AutoMLJobArn", value.asInstanceOf[js.Any])
     

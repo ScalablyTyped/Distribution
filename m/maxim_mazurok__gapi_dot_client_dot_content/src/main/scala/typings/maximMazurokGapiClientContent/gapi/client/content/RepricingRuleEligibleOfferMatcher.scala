@@ -28,7 +28,8 @@ object RepricingRuleEligibleOfferMatcher {
     __obj.asInstanceOf[RepricingRuleEligibleOfferMatcher]
   }
   
-  extension [Self <: RepricingRuleEligibleOfferMatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepricingRuleEligibleOfferMatcher] (val x: Self) extends AnyVal {
     
     inline def setBrandMatcher(value: RepricingRuleEligibleOfferMatcherStringMatcher): Self = StObject.set(x, "brandMatcher", value.asInstanceOf[js.Any])
     

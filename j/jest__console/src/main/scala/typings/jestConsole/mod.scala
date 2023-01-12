@@ -207,7 +207,8 @@ object mod {
       __obj.asInstanceOf[LogEntry]
     }
     
-    extension [Self <: LogEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogEntry] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: LogMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

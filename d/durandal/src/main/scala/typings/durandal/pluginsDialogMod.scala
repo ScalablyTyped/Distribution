@@ -118,7 +118,8 @@ object pluginsDialogMod {
       __obj.asInstanceOf[Box]
     }
     
-    extension [Self <: Box](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Box] (val x: Self) extends AnyVal {
       
       inline def setGetView(value: () => HTMLElement): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
       
@@ -154,7 +155,8 @@ object pluginsDialogMod {
       __obj.asInstanceOf[Dialog]
     }
     
-    extension [Self <: Dialog](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dialog] (val x: Self) extends AnyVal {
       
       inline def setActivator(value: DurandalActivator[Any]): Self = StObject.set(x, "activator", value.asInstanceOf[js.Any])
       
@@ -208,7 +210,8 @@ object pluginsDialogMod {
       __obj.asInstanceOf[DialogContext]
     }
     
-    extension [Self <: DialogContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogContext] (val x: Self) extends AnyVal {
       
       inline def setAddHost(value: Dialog => Unit): Self = StObject.set(x, "addHost", js.Any.fromFunction1(value))
       

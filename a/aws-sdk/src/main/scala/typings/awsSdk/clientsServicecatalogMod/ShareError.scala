@@ -28,7 +28,8 @@ object ShareError {
     __obj.asInstanceOf[ShareError]
   }
   
-  extension [Self <: ShareError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareError] (val x: Self) extends AnyVal {
     
     inline def setAccounts(value: Namespaces): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
     

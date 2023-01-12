@@ -58,7 +58,8 @@ object libVictoryUtilAddEventsMod {
       __obj.asInstanceOf[EventMixinCalculatedValues]
     }
     
-    extension [Self <: EventMixinCalculatedValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventMixinCalculatedValues] (val x: Self) extends AnyVal {
       
       inline def setBaseProps(value: Record[String, js.Object]): Self = StObject.set(x, "baseProps", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object libVictoryUtilAddEventsMod {
       __obj.asInstanceOf[EventMixinCommonProps]
     }
     
-    extension [Self <: EventMixinCommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventMixinCommonProps] (val x: Self) extends AnyVal {
       
       inline def setCategories(value: CategoryPropType): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
@@ -213,7 +215,8 @@ object libVictoryUtilAddEventsMod {
       __obj.asInstanceOf[MixinOptions]
     }
     
-    extension [Self <: MixinOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MixinOptions] (val x: Self) extends AnyVal {
       
       inline def setComponents(value: js.Array[Index]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
@@ -282,7 +285,8 @@ object libVictoryUtilAddEventsMod {
       __obj.asInstanceOf[VictoryComponentConfiguration[TProps]]
     }
     
-    extension [Self <: VictoryComponentConfiguration[?], TProps](x: Self & VictoryComponentConfiguration[TProps]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryComponentConfiguration[?], TProps] (val x: Self & VictoryComponentConfiguration[TProps]) extends AnyVal {
       
       inline def setAnimationWhitelist(value: js.Array[/* keyof TProps */ String]): Self = StObject.set(x, "animationWhitelist", value.asInstanceOf[js.Any])
       

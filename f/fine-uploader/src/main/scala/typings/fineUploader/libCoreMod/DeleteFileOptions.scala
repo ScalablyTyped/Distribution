@@ -50,7 +50,8 @@ object DeleteFileOptions {
     __obj.asInstanceOf[DeleteFileOptions]
   }
   
-  extension [Self <: DeleteFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFileOptions] (val x: Self) extends AnyVal {
     
     inline def setCustomHeaders(value: Any): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object AssertionLocation {
     __obj.asInstanceOf[AssertionLocation]
   }
   
-  extension [Self <: AssertionLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssertionLocation] (val x: Self) extends AnyVal {
     
     inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     

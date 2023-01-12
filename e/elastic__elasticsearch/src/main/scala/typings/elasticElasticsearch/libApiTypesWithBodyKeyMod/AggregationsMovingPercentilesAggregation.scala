@@ -21,7 +21,8 @@ object AggregationsMovingPercentilesAggregation {
     __obj.asInstanceOf[AggregationsMovingPercentilesAggregation]
   }
   
-  extension [Self <: AggregationsMovingPercentilesAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsMovingPercentilesAggregation] (val x: Self) extends AnyVal {
     
     inline def setKeyed(value: Boolean): Self = StObject.set(x, "keyed", value.asInstanceOf[js.Any])
     

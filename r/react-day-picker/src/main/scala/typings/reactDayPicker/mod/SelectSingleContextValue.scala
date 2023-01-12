@@ -23,7 +23,8 @@ object SelectSingleContextValue {
     __obj.asInstanceOf[SelectSingleContextValue]
   }
   
-  extension [Self <: SelectSingleContextValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectSingleContextValue] (val x: Self) extends AnyVal {
     
     inline def setOnDayClick(
       value: (/* day */ js.Date, /* activeModifiers */ ActiveModifiers, /* e */ MouseEvent[Element, NativeMouseEvent]) => Unit

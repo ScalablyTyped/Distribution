@@ -70,7 +70,8 @@ object XExtendedCalendar {
     __obj.asInstanceOf[XExtendedCalendar]
   }
   
-  extension [Self <: XExtendedCalendar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XExtendedCalendar] (val x: Self) extends AnyVal {
     
     inline def setGetDisplayString(value: (Double, Double) => String): Self = StObject.set(x, "getDisplayString", js.Any.fromFunction2(value))
   }

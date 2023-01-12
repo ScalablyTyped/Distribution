@@ -150,7 +150,8 @@ object PlusWebviewWebviewEvent {
     __obj.asInstanceOf[PlusWebviewWebviewEvent]
   }
   
-  extension [Self <: PlusWebviewWebviewEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusWebviewWebviewEvent] (val x: Self) extends AnyVal {
     
     inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     

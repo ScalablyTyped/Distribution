@@ -58,7 +58,8 @@ object ClearOldDataAtStartUp {
     __obj.asInstanceOf[ClearOldDataAtStartUp]
   }
   
-  extension [Self <: ClearOldDataAtStartUp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearOldDataAtStartUp] (val x: Self) extends AnyVal {
     
     inline def setClearOldDataAtStartUp(value: Boolean): Self = StObject.set(x, "clearOldDataAtStartUp", value.asInstanceOf[js.Any])
     

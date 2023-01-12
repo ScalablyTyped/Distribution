@@ -35,7 +35,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[typings.detectHover.mod.detectHover]
     }
     
-    extension [Self <: typings.detectHover.mod.detectHover](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.detectHover.mod.detectHover] (val x: Self) extends AnyVal {
       
       inline def setAnyHover(value: Boolean): Self = StObject.set(x, "anyHover", value.asInstanceOf[js.Any])
       

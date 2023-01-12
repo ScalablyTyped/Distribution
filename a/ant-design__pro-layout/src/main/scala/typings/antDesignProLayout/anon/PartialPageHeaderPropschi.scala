@@ -60,7 +60,8 @@ object PartialPageHeaderPropschi {
     __obj.asInstanceOf[PartialPageHeaderPropschi]
   }
   
-  extension [Self <: PartialPageHeaderPropschi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPageHeaderPropschi] (val x: Self) extends AnyVal {
     
     inline def setAvatar(value: AvatarProps): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
     

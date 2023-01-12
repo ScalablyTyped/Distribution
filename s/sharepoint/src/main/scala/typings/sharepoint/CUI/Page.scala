@@ -17,7 +17,8 @@ object Page {
       __obj.asInstanceOf[CommandDispatcher]
     }
     
-    extension [Self <: CommandDispatcher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandDispatcher] (val x: Self) extends AnyVal {
       
       inline def setExecuteCommand(value: (String, Any) => Any): Self = StObject.set(x, "executeCommand", js.Any.fromFunction2(value))
     }
@@ -51,7 +52,8 @@ object Page {
       __obj.asInstanceOf[FocusManager]
     }
     
-    extension [Self <: FocusManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusManager] (val x: Self) extends AnyVal {
       
       inline def setGetFocusedComponents(value: () => js.Array[Component]): Self = StObject.set(x, "getFocusedComponents", js.Any.fromFunction0(value))
       
@@ -76,7 +78,8 @@ object Page {
       __obj.asInstanceOf[ICommandHandler]
     }
     
-    extension [Self <: ICommandHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICommandHandler] (val x: Self) extends AnyVal {
       
       inline def setCanHandleCommand(value: String => Boolean): Self = StObject.set(x, "canHandleCommand", js.Any.fromFunction1(value))
       
@@ -119,7 +122,8 @@ object Page {
       __obj.asInstanceOf[PageComponent]
     }
     
-    extension [Self <: PageComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageComponent] (val x: Self) extends AnyVal {
       
       inline def setGetFocusedCommands(value: () => js.Array[String]): Self = StObject.set(x, "getFocusedCommands", js.Any.fromFunction0(value))
       
@@ -165,7 +169,8 @@ object Page {
       __obj.asInstanceOf[PageManager]
     }
     
-    extension [Self <: PageManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageManager] (val x: Self) extends AnyVal {
       
       inline def setAdd_ribbonInited(value: js.Function0[scala.Unit] => Any): Self = StObject.set(x, "add_ribbonInited", js.Any.fromFunction1(value))
       

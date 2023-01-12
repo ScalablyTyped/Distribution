@@ -29,7 +29,8 @@ object XFormulaTokens {
     __obj.asInstanceOf[XFormulaTokens]
   }
   
-  extension [Self <: XFormulaTokens](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFormulaTokens] (val x: Self) extends AnyVal {
     
     inline def setGetTokens(value: () => SafeArray[FormulaToken]): Self = StObject.set(x, "getTokens", js.Any.fromFunction0(value))
     

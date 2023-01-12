@@ -15,7 +15,8 @@ object NavigationUriActionPayload {
     __obj.asInstanceOf[NavigationUriActionPayload]
   }
   
-  extension [Self <: NavigationUriActionPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationUriActionPayload] (val x: Self) extends AnyVal {
     
     inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }

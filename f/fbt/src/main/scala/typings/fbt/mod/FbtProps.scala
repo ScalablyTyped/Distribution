@@ -17,7 +17,8 @@ object FbtProps {
     __obj.asInstanceOf[FbtProps]
   }
   
-  extension [Self <: FbtProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FbtProps] (val x: Self) extends AnyVal {
     
     inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
   }

@@ -113,7 +113,8 @@ object elementsFormInputMod {
       __obj.asInstanceOf[InputModifierProps]
     }
     
-    extension [Self <: InputModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputModifierProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -245,7 +246,8 @@ object elementsFormInputMod {
       __obj.asInstanceOf[InputProps]
     }
     
-    extension [Self <: InputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
@@ -433,7 +435,8 @@ object elementsFormInputMod {
       __obj.asInstanceOf[InputVariables]
     }
     
-    extension [Self <: InputVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputVariables] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: small | medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
@@ -462,7 +465,8 @@ object elementsFormInputMod {
       __obj.asInstanceOf[InputVariablesDefaults]
     }
     
-    extension [Self <: InputVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: small | medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       

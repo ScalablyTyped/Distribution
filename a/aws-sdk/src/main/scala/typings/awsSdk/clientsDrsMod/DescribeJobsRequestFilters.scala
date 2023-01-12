@@ -28,7 +28,8 @@ object DescribeJobsRequestFilters {
     __obj.asInstanceOf[DescribeJobsRequestFilters]
   }
   
-  extension [Self <: DescribeJobsRequestFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeJobsRequestFilters] (val x: Self) extends AnyVal {
     
     inline def setFromDate(value: ISO8601DatetimeString): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
     

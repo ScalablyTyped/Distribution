@@ -16,7 +16,8 @@ object MediaDevicesEventMap {
     __obj.asInstanceOf[MediaDevicesEventMap]
   }
   
-  extension [Self <: MediaDevicesEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaDevicesEventMap] (val x: Self) extends AnyVal {
     
     inline def setDevicechange(value: Event): Self = StObject.set(x, "devicechange", value.asInstanceOf[js.Any])
   }

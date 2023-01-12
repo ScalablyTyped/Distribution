@@ -48,7 +48,8 @@ object RestoreRequest {
     __obj.asInstanceOf[RestoreRequest]
   }
   
-  extension [Self <: RestoreRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreRequest] (val x: Self) extends AnyVal {
     
     inline def setDays(value: Days): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object inbooleanappearbooleanund {
     __obj.asInstanceOf[inbooleanappearbooleanund]
   }
   
-  extension [Self <: inbooleanappearbooleanund](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: inbooleanappearbooleanund] (val x: Self) extends AnyVal {
     
     inline def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
     

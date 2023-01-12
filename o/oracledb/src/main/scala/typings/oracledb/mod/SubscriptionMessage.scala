@@ -44,7 +44,8 @@ object SubscriptionMessage {
     __obj.asInstanceOf[SubscriptionMessage]
   }
   
-  extension [Self <: SubscriptionMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionMessage] (val x: Self) extends AnyVal {
     
     inline def setDbName(value: String): Self = StObject.set(x, "dbName", value.asInstanceOf[js.Any])
     

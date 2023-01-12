@@ -60,7 +60,8 @@ object outProvidersMatchersMatcherMod {
       __obj.asInstanceOf[DynamicPatternSegment]
     }
     
-    extension [Self <: DynamicPatternSegment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamicPatternSegment] (val x: Self) extends AnyVal {
       
       inline def setDynamic(value: `true`): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object outProvidersMatchersMatcherMod {
       __obj.asInstanceOf[Matcher]
     }
     
-    extension [Self <: Matcher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Matcher] (val x: Self) extends AnyVal {
       
       inline def set_fillStorage(value: Any): Self = StObject.set(x, "_fillStorage", value.asInstanceOf[js.Any])
       
@@ -146,7 +148,8 @@ object outProvidersMatchersMatcherMod {
       __obj.asInstanceOf[PatternInfo]
     }
     
-    extension [Self <: PatternInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatternInfo] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
@@ -197,7 +200,8 @@ object outProvidersMatchersMatcherMod {
       __obj.asInstanceOf[StaticPatternSegment]
     }
     
-    extension [Self <: StaticPatternSegment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticPatternSegment] (val x: Self) extends AnyVal {
       
       inline def setDynamic(value: `false`): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
       

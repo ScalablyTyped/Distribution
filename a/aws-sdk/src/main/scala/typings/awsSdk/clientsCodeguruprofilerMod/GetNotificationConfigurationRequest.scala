@@ -18,7 +18,8 @@ object GetNotificationConfigurationRequest {
     __obj.asInstanceOf[GetNotificationConfigurationRequest]
   }
   
-  extension [Self <: GetNotificationConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNotificationConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
   }

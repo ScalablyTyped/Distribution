@@ -19,7 +19,8 @@ object ArrayParamUriParamcritica {
     __obj.asInstanceOf[ArrayParamUriParamcritica]
   }
   
-  extension [Self <: ArrayParamUriParamcritica](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayParamUriParamcritica] (val x: Self) extends AnyVal {
     
     inline def setArray(value: js.Array[UriParam]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     

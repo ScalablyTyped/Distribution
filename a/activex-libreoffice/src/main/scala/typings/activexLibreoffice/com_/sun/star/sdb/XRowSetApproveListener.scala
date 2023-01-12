@@ -48,7 +48,8 @@ object XRowSetApproveListener {
     __obj.asInstanceOf[XRowSetApproveListener]
   }
   
-  extension [Self <: XRowSetApproveListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRowSetApproveListener] (val x: Self) extends AnyVal {
     
     inline def setApproveCursorMove(value: EventObject => Boolean): Self = StObject.set(x, "approveCursorMove", js.Any.fromFunction1(value))
     

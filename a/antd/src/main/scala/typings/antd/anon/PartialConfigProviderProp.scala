@@ -59,7 +59,8 @@ object PartialConfigProviderProp {
     __obj.asInstanceOf[PartialConfigProviderProp]
   }
   
-  extension [Self <: PartialConfigProviderProp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialConfigProviderProp] (val x: Self) extends AnyVal {
     
     inline def setAutoInsertSpaceInButton(value: Boolean): Self = StObject.set(x, "autoInsertSpaceInButton", value.asInstanceOf[js.Any])
     

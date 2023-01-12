@@ -19,7 +19,8 @@ object ListEditCustomHighlightingEventArgs {
     __obj.asInstanceOf[ListEditCustomHighlightingEventArgs]
   }
   
-  extension [Self <: ListEditCustomHighlightingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEditCustomHighlightingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

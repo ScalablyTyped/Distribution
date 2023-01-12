@@ -41,7 +41,8 @@ object MlHyperparameters {
     __obj.asInstanceOf[MlHyperparameters]
   }
   
-  extension [Self <: MlHyperparameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlHyperparameters] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

@@ -67,7 +67,8 @@ object CacheKey {
     __obj.asInstanceOf[CacheKey]
   }
   
-  extension [Self <: CacheKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheKey] (val x: Self) extends AnyVal {
     
     inline def setExcludeQueryString(value: () => Unit): Self = StObject.set(x, "excludeQueryString", js.Any.fromFunction0(value))
     

@@ -46,7 +46,8 @@ object ReactContext {
     __obj.asInstanceOf[ReactContext[T]]
   }
   
-  extension [Self <: ReactContext[?], T](x: Self & ReactContext[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactContext[?], T] (val x: Self & ReactContext[T]) extends AnyVal {
     
     inline def setConsumer(value: ReactContext[T]): Self = StObject.set(x, "Consumer", value.asInstanceOf[js.Any])
     

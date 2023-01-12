@@ -20,7 +20,8 @@ object OmitTimingAnimationConfig {
     __obj.asInstanceOf[OmitTimingAnimationConfig]
   }
   
-  extension [Self <: OmitTimingAnimationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitTimingAnimationConfig] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

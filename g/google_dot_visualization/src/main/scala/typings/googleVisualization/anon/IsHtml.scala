@@ -22,7 +22,8 @@ object IsHtml {
     __obj.asInstanceOf[IsHtml]
   }
   
-  extension [Self <: IsHtml](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsHtml] (val x: Self) extends AnyVal {
     
     inline def setIsHtml(value: Boolean): Self = StObject.set(x, "isHtml", value.asInstanceOf[js.Any])
     

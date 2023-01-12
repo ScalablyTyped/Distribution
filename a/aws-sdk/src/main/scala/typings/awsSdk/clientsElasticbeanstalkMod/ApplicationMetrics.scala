@@ -33,7 +33,8 @@ object ApplicationMetrics {
     __obj.asInstanceOf[ApplicationMetrics]
   }
   
-  extension [Self <: ApplicationMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationMetrics] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: NullableInteger): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     

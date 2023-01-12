@@ -198,7 +198,8 @@ object sapUiUnifiedDateRangeMod {
       __obj.asInstanceOf[DateRangeSettings]
     }
     
-    extension [Self <: DateRangeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateRangeSettings] (val x: Self) extends AnyVal {
       
       inline def setEndDate(value: js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       

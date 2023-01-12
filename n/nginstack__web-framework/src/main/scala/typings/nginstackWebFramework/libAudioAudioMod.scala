@@ -95,7 +95,8 @@ object libAudioAudioMod {
       __obj.asInstanceOf[Audio]
     }
     
-    extension [Self <: Audio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Audio] (val x: Self) extends AnyVal {
       
       inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       

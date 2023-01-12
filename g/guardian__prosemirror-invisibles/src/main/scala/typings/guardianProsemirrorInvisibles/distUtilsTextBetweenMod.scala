@@ -26,7 +26,8 @@ object distUtilsTextBetweenMod {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
       

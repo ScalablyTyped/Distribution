@@ -54,7 +54,8 @@ object notification {
     __obj.asInstanceOf[notification]
   }
   
-  extension [Self <: notification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: notification] (val x: Self) extends AnyVal {
     
     inline def setArea(value: area): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
@@ -106,7 +107,8 @@ object notification {
       __obj.asInstanceOf[area]
     }
     
-    extension [Self <: area](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: area] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: notification => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -135,7 +137,8 @@ object notification {
       __obj.asInstanceOf[options]
     }
     
-    extension [Self <: options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: options] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
@@ -156,7 +159,8 @@ object notification {
       __obj.asInstanceOf[optionsBase]
     }
     
-    extension [Self <: optionsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: optionsBase] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -205,7 +209,8 @@ object notification {
       __obj.asInstanceOf[updateOptions]
     }
     
-    extension [Self <: updateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: updateOptions] (val x: Self) extends AnyVal {
       
       inline def setImportant(value: Boolean): Self = StObject.set(x, "important", value.asInstanceOf[js.Any])
       

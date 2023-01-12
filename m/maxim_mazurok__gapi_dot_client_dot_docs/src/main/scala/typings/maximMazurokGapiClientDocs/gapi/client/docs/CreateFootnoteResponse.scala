@@ -16,7 +16,8 @@ object CreateFootnoteResponse {
     __obj.asInstanceOf[CreateFootnoteResponse]
   }
   
-  extension [Self <: CreateFootnoteResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFootnoteResponse] (val x: Self) extends AnyVal {
     
     inline def setFootnoteId(value: String): Self = StObject.set(x, "footnoteId", value.asInstanceOf[js.Any])
     

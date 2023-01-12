@@ -54,7 +54,8 @@ object distServiceActionssdkConversationHelperPermissionPermissionMod {
       __obj.asInstanceOf[PermissionOptions]
     }
     
-    extension [Self <: PermissionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PermissionOptions] (val x: Self) extends AnyVal {
       
       inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

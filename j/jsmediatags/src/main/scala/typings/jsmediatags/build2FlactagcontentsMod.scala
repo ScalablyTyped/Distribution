@@ -65,7 +65,8 @@ object build2FlactagcontentsMod {
       __obj.asInstanceOf[FLACTagContents]
     }
     
-    extension [Self <: FLACTagContents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FLACTagContents] (val x: Self) extends AnyVal {
       
       inline def setBlocks(value: js.Array[MetadataBlock]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object Collator {
     __obj.asInstanceOf[Collator]
   }
   
-  extension [Self <: Collator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Collator] (val x: Self) extends AnyVal {
     
     inline def setCollator(value: IntlCollator): Self = StObject.set(x, "collator", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object distTypesMod {
       __obj.asInstanceOf[MenuDataItem]
     }
     
-    extension [Self <: MenuDataItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuDataItem] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[MenuDataItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object distTypesMod {
       __obj.asInstanceOf[MessageDescriptor]
     }
     
-    extension [Self <: MessageDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageDescriptor] (val x: Self) extends AnyVal {
       
       inline def setDefaultMessage(value: String): Self = StObject.set(x, "defaultMessage", value.asInstanceOf[js.Any])
       
@@ -131,7 +133,8 @@ object distTypesMod {
       __obj.asInstanceOf[Route]
     }
     
-    extension [Self <: Route](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
       
       inline def setRoutes(value: js.Array[Route]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       

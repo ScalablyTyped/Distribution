@@ -34,7 +34,8 @@ object CommandEffect {
     __obj.asInstanceOf[CommandEffect]
   }
   
-  extension [Self <: CommandEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandEffect] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

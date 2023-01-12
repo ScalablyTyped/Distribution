@@ -108,7 +108,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setAppRoot(value: String): Self = StObject.set(x, "appRoot", value.asInstanceOf[js.Any])
       
@@ -176,7 +177,8 @@ object mod {
       __obj.asInstanceOf[ConfigInternal]
     }
     
-    extension [Self <: ConfigInternal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigInternal] (val x: Self) extends AnyVal {
       
       inline def setSwagger(value: Config): Self = StObject.set(x, "swagger", value.asInstanceOf[js.Any])
       
@@ -204,7 +206,8 @@ object mod {
       __obj.asInstanceOf[ConnectMiddleware]
     }
     
-    extension [Self <: ConnectMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectMiddleware] (val x: Self) extends AnyVal {
       
       inline def setMiddleware(value: () => js.Function3[/* req */ Request, /* res */ Response, /* next */ NextFunction, Unit]): Self = StObject.set(x, "middleware", js.Any.fromFunction0(value))
       
@@ -231,7 +234,8 @@ object mod {
       __obj.asInstanceOf[HapiMiddleware]
     }
     
-    extension [Self <: HapiMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HapiMiddleware] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: ConfigInternal): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -251,7 +255,8 @@ object mod {
       __obj.asInstanceOf[Middleware]
     }
     
-    extension [Self <: Middleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Middleware] (val x: Self) extends AnyVal {
       
       inline def setRunner(value: Runner): Self = StObject.set(x, "runner", value.asInstanceOf[js.Any])
     }
@@ -271,7 +276,8 @@ object mod {
       __obj.asInstanceOf[RestifyMiddleware]
     }
     
-    extension [Self <: RestifyMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestifyMiddleware] (val x: Self) extends AnyVal {
       
       inline def setRegister(value: Server => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
     }
@@ -343,7 +349,8 @@ object mod {
       __obj.asInstanceOf[SailsMiddleware]
     }
     
-    extension [Self <: SailsMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SailsMiddleware] (val x: Self) extends AnyVal {
       
       inline def setChain(value: () => js.Function3[/* req */ Request, /* res */ Response, /* next */ NextFunction, Unit]): Self = StObject.set(x, "chain", js.Any.fromFunction0(value))
     }
@@ -382,7 +389,8 @@ object mod {
       __obj.asInstanceOf[SwaggerToolsSecurityHandlerCallbackError]
     }
     
-    extension [Self <: SwaggerToolsSecurityHandlerCallbackError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwaggerToolsSecurityHandlerCallbackError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

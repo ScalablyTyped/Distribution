@@ -84,7 +84,8 @@ object distCommonjsViewsAdvertisementAdvertisementMod extends Shortcut {
       __obj.asInstanceOf[StrictAdvertisementProps]
     }
     
-    extension [Self <: StrictAdvertisementProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictAdvertisementProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object ProduceRequest {
     __obj.asInstanceOf[ProduceRequest]
   }
   
-  extension [Self <: ProduceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProduceRequest] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Double): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

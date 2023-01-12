@@ -22,7 +22,8 @@ object Maxdocs {
     __obj.asInstanceOf[Maxdocs]
   }
   
-  extension [Self <: Maxdocs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Maxdocs] (val x: Self) extends AnyVal {
     
     inline def setMax_docs(value: long): Self = StObject.set(x, "max_docs", value.asInstanceOf[js.Any])
     

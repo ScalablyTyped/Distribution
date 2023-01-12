@@ -265,7 +265,8 @@ object DOMAttributes {
     __obj.asInstanceOf[DOMAttributes[T]]
   }
   
-  extension [Self <: DOMAttributes[?], T](x: Self & DOMAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMAttributes[?], T] (val x: Self & DOMAttributes[T]) extends AnyVal {
     
     inline def setExportparts(value: String): Self = StObject.set(x, "exportparts", value.asInstanceOf[js.Any])
     

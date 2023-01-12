@@ -16,7 +16,8 @@ object FilesQueryResult {
     __obj.asInstanceOf[FilesQueryResult]
   }
   
-  extension [Self <: FilesQueryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilesQueryResult] (val x: Self) extends AnyVal {
     
     inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     

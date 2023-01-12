@@ -21,7 +21,8 @@ object PeerConnectOption {
     __obj.asInstanceOf[PeerConnectOption]
   }
   
-  extension [Self <: PeerConnectOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeerConnectOption] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

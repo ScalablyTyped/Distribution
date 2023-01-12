@@ -17,7 +17,8 @@ object IdleTime {
     __obj.asInstanceOf[IdleTime]
   }
   
-  extension [Self <: IdleTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdleTime] (val x: Self) extends AnyVal {
     
     inline def setIdleTime(value: Double): Self = StObject.set(x, "idleTime", value.asInstanceOf[js.Any])
     

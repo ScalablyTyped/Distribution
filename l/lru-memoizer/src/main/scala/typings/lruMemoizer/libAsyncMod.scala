@@ -180,7 +180,8 @@ object libAsyncMod {
       __obj.asInstanceOf[AsyncParams[T1, T2, T3, T4, T5, T6, TResult]]
     }
     
-    extension [Self <: AsyncParams[?, ?, ?, ?, ?, ?, ?], T1, T2, T3, T4, T5, T6, TResult](x: Self & (AsyncParams[T1, T2, T3, T4, T5, T6, TResult])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncParams[?, ?, ?, ?, ?, ?, ?], T1, T2, T3, T4, T5, T6, TResult] (val x: Self & (AsyncParams[T1, T2, T3, T4, T5, T6, TResult])) extends AnyVal {
       
       inline def setBypass(value: IBypassFunction[T1, T2, T3, T4, T5, T6]): Self = StObject.set(x, "bypass", value.asInstanceOf[js.Any])
       

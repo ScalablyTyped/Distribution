@@ -23,7 +23,8 @@ object RouteTableIdentifier {
     __obj.asInstanceOf[RouteTableIdentifier]
   }
   
-  extension [Self <: RouteTableIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteTableIdentifier] (val x: Self) extends AnyVal {
     
     inline def setCoreNetworkSegmentEdge(value: CoreNetworkSegmentEdgeIdentifier): Self = StObject.set(x, "CoreNetworkSegmentEdge", value.asInstanceOf[js.Any])
     

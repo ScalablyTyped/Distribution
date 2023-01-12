@@ -747,7 +747,8 @@ object gaugeAxisMod {
       __obj.asInstanceOf[GaugeAxis]
     }
     
-    extension [Self <: GaugeAxis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GaugeAxis] (val x: Self) extends AnyVal {
       
       inline def setAddListener(value: (String, Any) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       

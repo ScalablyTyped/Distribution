@@ -248,7 +248,8 @@ object OwlCarousel {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAnimateIn(value: String | Boolean): Self = StObject.set(x, "animateIn", value.asInstanceOf[js.Any])
       

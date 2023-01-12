@@ -23,7 +23,8 @@ object ResourceLocation {
     __obj.asInstanceOf[ResourceLocation]
   }
   
-  extension [Self <: ResourceLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceLocation] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
     

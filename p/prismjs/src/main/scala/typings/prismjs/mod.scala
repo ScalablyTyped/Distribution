@@ -274,7 +274,8 @@ object mod {
         __obj.asInstanceOf[HookEnvironmentMap]
       }
       
-      extension [Self <: HookEnvironmentMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HookEnvironmentMap] (val x: Self) extends AnyVal {
         
         inline def `setAfter-highlight`(value: ElementHighlightedEnvironment): Self = StObject.set(x, "after-highlight", value.asInstanceOf[js.Any])
         
@@ -371,7 +372,8 @@ object mod {
         __obj.asInstanceOf[Identifier]
       }
       
-      extension [Self <: Identifier](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Identifier] (val x: Self) extends AnyVal {
         
         inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
@@ -412,7 +414,8 @@ object mod {
       __obj.asInstanceOf[Environment]
     }
     
-    extension [Self <: Environment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -514,7 +517,8 @@ object mod {
       __obj.asInstanceOf[GrammarRest]
     }
     
-    extension [Self <: GrammarRest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GrammarRest] (val x: Self) extends AnyVal {
       
       inline def setAtrule(value: GrammarValue): Self = StObject.set(x, "atrule", value.asInstanceOf[js.Any])
       
@@ -715,7 +719,8 @@ object mod {
       __obj.asInstanceOf[TokenObject]
     }
     
-    extension [Self <: TokenObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenObject] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String | js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       

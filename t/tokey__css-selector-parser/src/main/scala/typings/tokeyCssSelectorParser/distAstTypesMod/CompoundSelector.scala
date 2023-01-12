@@ -43,7 +43,8 @@ object CompoundSelector {
     __obj.asInstanceOf[CompoundSelector]
   }
   
-  extension [Self <: CompoundSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompoundSelector] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

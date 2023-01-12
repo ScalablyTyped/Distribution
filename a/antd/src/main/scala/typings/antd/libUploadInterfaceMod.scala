@@ -64,7 +64,8 @@ object libUploadInterfaceMod {
       __obj.asInstanceOf[InternalUploadFile[T]]
     }
     
-    extension [Self <: InternalUploadFile[?], T](x: Self & InternalUploadFile[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalUploadFile[?], T] (val x: Self & InternalUploadFile[T]) extends AnyVal {
       
       inline def setOriginFileObj(value: RcFile): Self = StObject.set(x, "originFileObj", value.asInstanceOf[js.Any])
     }
@@ -109,7 +110,8 @@ object libUploadInterfaceMod {
       __obj.asInstanceOf[ShowUploadListInterface]
     }
     
-    extension [Self <: ShowUploadListInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShowUploadListInterface] (val x: Self) extends AnyVal {
       
       inline def setDownloadIcon(value: ReactNode | (js.Function1[/* file */ UploadFile[Any], ReactNode])): Self = StObject.set(x, "downloadIcon", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object libUploadInterfaceMod {
       __obj.asInstanceOf[UploadChangeParam[T]]
     }
     
-    extension [Self <: UploadChangeParam[?], T](x: Self & UploadChangeParam[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadChangeParam[?], T] (val x: Self & UploadChangeParam[T]) extends AnyVal {
       
       inline def setEvent(value: PercentNumber): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -219,7 +222,8 @@ object libUploadInterfaceMod {
       __obj.asInstanceOf[UploadFile[T]]
     }
     
-    extension [Self <: UploadFile[?], T](x: Self & UploadFile[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadFile[?], T] (val x: Self & UploadFile[T]) extends AnyVal {
       
       inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
@@ -360,7 +364,8 @@ object libUploadInterfaceMod {
       __obj.asInstanceOf[UploadListProgressProps]
     }
     
-    extension [Self <: UploadListProgressProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadListProgressProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -489,7 +494,8 @@ object libUploadInterfaceMod {
       __obj.asInstanceOf[UploadListProps[T]]
     }
     
-    extension [Self <: UploadListProps[?], T](x: Self & UploadListProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadListProps[?], T] (val x: Self & UploadListProps[T]) extends AnyVal {
       
       inline def setAppendAction(value: ReactNode): Self = StObject.set(x, "appendAction", value.asInstanceOf[js.Any])
       
@@ -615,7 +621,8 @@ object libUploadInterfaceMod {
       __obj.asInstanceOf[UploadLocale]
     }
     
-    extension [Self <: UploadLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadLocale] (val x: Self) extends AnyVal {
       
       inline def setDownloadFile(value: String): Self = StObject.set(x, "downloadFile", value.asInstanceOf[js.Any])
       
@@ -742,7 +749,8 @@ object libUploadInterfaceMod {
       __obj.asInstanceOf[UploadProps[T]]
     }
     
-    extension [Self <: UploadProps[?], T](x: Self & UploadProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadProps[?], T] (val x: Self & UploadProps[T]) extends AnyVal {
       
       inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
@@ -928,7 +936,8 @@ object libUploadInterfaceMod {
       __obj.asInstanceOf[UploadState[T]]
     }
     
-    extension [Self <: UploadState[?], T](x: Self & UploadState[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadState[?], T] (val x: Self & UploadState[T]) extends AnyVal {
       
       inline def setDragState(value: String): Self = StObject.set(x, "dragState", value.asInstanceOf[js.Any])
       

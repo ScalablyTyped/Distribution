@@ -32,7 +32,8 @@ object XPackageManagerFactory {
     __obj.asInstanceOf[XPackageManagerFactory]
   }
   
-  extension [Self <: XPackageManagerFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPackageManagerFactory] (val x: Self) extends AnyVal {
     
     inline def setGetPackageManager(value: String => XPackageManager): Self = StObject.set(x, "getPackageManager", js.Any.fromFunction1(value))
   }

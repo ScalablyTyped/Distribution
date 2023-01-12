@@ -58,7 +58,8 @@ object helpersOverridesMod {
       __obj.asInstanceOf[OverrideObject]
     }
     
-    extension [Self <: OverrideObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverrideObject] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: ComponentType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

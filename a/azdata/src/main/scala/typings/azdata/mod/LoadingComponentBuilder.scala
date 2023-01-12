@@ -28,7 +28,8 @@ object LoadingComponentBuilder {
     __obj.asInstanceOf[LoadingComponentBuilder]
   }
   
-  extension [Self <: LoadingComponentBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadingComponentBuilder] (val x: Self) extends AnyVal {
     
     inline def setWithItem(value: Component => LoadingComponentBuilder): Self = StObject.set(x, "withItem", js.Any.fromFunction1(value))
   }

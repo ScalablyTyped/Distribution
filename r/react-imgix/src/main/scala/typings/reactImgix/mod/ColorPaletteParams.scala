@@ -19,7 +19,8 @@ object ColorPaletteParams {
     __obj.asInstanceOf[ColorPaletteParams]
   }
   
-  extension [Self <: ColorPaletteParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorPaletteParams] (val x: Self) extends AnyVal {
     
     inline def setColors(value: ImgixParamType): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

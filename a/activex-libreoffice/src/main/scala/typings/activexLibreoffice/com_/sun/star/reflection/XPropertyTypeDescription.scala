@@ -47,7 +47,8 @@ object XPropertyTypeDescription {
     __obj.asInstanceOf[XPropertyTypeDescription]
   }
   
-  extension [Self <: XPropertyTypeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPropertyTypeDescription] (val x: Self) extends AnyVal {
     
     inline def setGetPropertyFlags(value: () => Double): Self = StObject.set(x, "getPropertyFlags", js.Any.fromFunction0(value))
     

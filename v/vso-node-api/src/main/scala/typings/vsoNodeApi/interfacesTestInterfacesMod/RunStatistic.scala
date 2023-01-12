@@ -21,7 +21,8 @@ object RunStatistic {
     __obj.asInstanceOf[RunStatistic]
   }
   
-  extension [Self <: RunStatistic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunStatistic] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

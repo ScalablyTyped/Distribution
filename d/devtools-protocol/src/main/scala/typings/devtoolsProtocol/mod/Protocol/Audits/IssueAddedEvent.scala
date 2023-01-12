@@ -15,7 +15,8 @@ object IssueAddedEvent {
     __obj.asInstanceOf[IssueAddedEvent]
   }
   
-  extension [Self <: IssueAddedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssueAddedEvent] (val x: Self) extends AnyVal {
     
     inline def setIssue(value: InspectorIssue): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
   }

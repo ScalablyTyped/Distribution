@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[OpenOpts]
     }
     
-    extension [Self <: OpenOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenOpts] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Max): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

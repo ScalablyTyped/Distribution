@@ -26,7 +26,8 @@ object IPathIntersectionBaseOptions {
     __obj.asInstanceOf[IPathIntersectionBaseOptions]
   }
   
-  extension [Self <: IPathIntersectionBaseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPathIntersectionBaseOptions] (val x: Self) extends AnyVal {
     
     inline def setExcludeTangents(value: Boolean): Self = StObject.set(x, "excludeTangents", value.asInstanceOf[js.Any])
     

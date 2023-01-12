@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[ExtractCommentsObject]
     }
     
-    extension [Self <: ExtractCommentsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtractCommentsObject] (val x: Self) extends AnyVal {
       
       inline def setBanner(value: Boolean | String | FileNameFunction): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCache(value: String | Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

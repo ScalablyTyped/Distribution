@@ -19,7 +19,8 @@ object AvroOptions {
     __obj.asInstanceOf[AvroOptions]
   }
   
-  extension [Self <: AvroOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvroOptions] (val x: Self) extends AnyVal {
     
     inline def setUseAvroLogicalTypes(value: Boolean): Self = StObject.set(x, "useAvroLogicalTypes", value.asInstanceOf[js.Any])
     

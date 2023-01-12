@@ -28,7 +28,8 @@ object SchemaGeneratedEventUIParam {
     __obj.asInstanceOf[SchemaGeneratedEventUIParam]
   }
   
-  extension [Self <: SchemaGeneratedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaGeneratedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

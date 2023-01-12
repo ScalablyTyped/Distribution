@@ -71,7 +71,8 @@ object DashboardImageExportOptions {
     __obj.asInstanceOf[DashboardImageExportOptions]
   }
   
-  extension [Self <: DashboardImageExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashboardImageExportOptions] (val x: Self) extends AnyVal {
     
     inline def setExportFilters(value: Boolean): Self = StObject.set(x, "ExportFilters", value.asInstanceOf[js.Any])
     

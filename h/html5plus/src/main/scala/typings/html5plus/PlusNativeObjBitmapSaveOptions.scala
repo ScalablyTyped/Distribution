@@ -58,7 +58,8 @@ object PlusNativeObjBitmapSaveOptions {
     __obj.asInstanceOf[PlusNativeObjBitmapSaveOptions]
   }
   
-  extension [Self <: PlusNativeObjBitmapSaveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusNativeObjBitmapSaveOptions] (val x: Self) extends AnyVal {
     
     inline def setClip(value: PlusNativeObjRect): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     

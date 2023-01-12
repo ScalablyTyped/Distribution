@@ -40,7 +40,8 @@ object libEventListenerMod {
       __obj.asInstanceOf[Listener]
     }
     
-    extension [Self <: Listener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
       
       inline def setHandleEvent(value: Any => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
       

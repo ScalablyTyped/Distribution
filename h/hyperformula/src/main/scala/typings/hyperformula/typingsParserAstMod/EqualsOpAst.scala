@@ -20,7 +20,8 @@ object EqualsOpAst {
     __obj.asInstanceOf[EqualsOpAst]
   }
   
-  extension [Self <: EqualsOpAst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EqualsOpAst] (val x: Self) extends AnyVal {
     
     inline def setType(value: EQUALS_OP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

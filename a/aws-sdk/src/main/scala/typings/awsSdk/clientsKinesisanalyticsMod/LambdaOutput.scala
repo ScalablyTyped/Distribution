@@ -23,7 +23,8 @@ object LambdaOutput {
     __obj.asInstanceOf[LambdaOutput]
   }
   
-  extension [Self <: LambdaOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaOutput] (val x: Self) extends AnyVal {
     
     inline def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
     

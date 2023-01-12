@@ -74,7 +74,8 @@ object mod {
       __obj.asInstanceOf[ExtensionReference]
     }
     
-    extension [Self <: ExtensionReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtensionReference] (val x: Self) extends AnyVal {
       
       inline def setElectron(value: String): Self = StObject.set(x, "electron", value.asInstanceOf[js.Any])
       

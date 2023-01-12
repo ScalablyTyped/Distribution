@@ -127,7 +127,8 @@ object typesLibAccordionMod {
       __obj.asInstanceOf[AccordionProps]
     }
     
-    extension [Self <: AccordionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       
@@ -529,7 +530,8 @@ object typesLibAccordionMod {
       __obj.asInstanceOf[UncontrolledAccordionProps]
     }
     
-    extension [Self <: UncontrolledAccordionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UncontrolledAccordionProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

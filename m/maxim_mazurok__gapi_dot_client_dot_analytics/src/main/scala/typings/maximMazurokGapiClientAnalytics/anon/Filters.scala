@@ -31,7 +31,8 @@ object Filters {
     __obj.asInstanceOf[Filters]
   }
   
-  extension [Self <: Filters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Filters] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: String): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     

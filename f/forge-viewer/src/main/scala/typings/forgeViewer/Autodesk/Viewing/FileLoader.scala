@@ -25,7 +25,8 @@ object FileLoader {
     __obj.asInstanceOf[FileLoader]
   }
   
-  extension [Self <: FileLoader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileLoader] (val x: Self) extends AnyVal {
     
     inline def setIs3d(value: () => Boolean): Self = StObject.set(x, "is3d", js.Any.fromFunction0(value))
     

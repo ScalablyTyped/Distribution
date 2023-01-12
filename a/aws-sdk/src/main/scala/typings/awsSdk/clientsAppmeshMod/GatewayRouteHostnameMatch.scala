@@ -23,7 +23,8 @@ object GatewayRouteHostnameMatch {
     __obj.asInstanceOf[GatewayRouteHostnameMatch]
   }
   
-  extension [Self <: GatewayRouteHostnameMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GatewayRouteHostnameMatch] (val x: Self) extends AnyVal {
     
     inline def setExact(value: ExactHostName): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     

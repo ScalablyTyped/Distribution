@@ -33,7 +33,8 @@ object ModifyDBProxyTargetGroupRequest {
     __obj.asInstanceOf[ModifyDBProxyTargetGroupRequest]
   }
   
-  extension [Self <: ModifyDBProxyTargetGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyDBProxyTargetGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectionPoolConfig(value: ConnectionPoolConfiguration): Self = StObject.set(x, "ConnectionPoolConfig", value.asInstanceOf[js.Any])
     

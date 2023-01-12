@@ -61,7 +61,8 @@ object TreeMapOptions {
     __obj.asInstanceOf[TreeMapOptions]
   }
   
-  extension [Self <: TreeMapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeMapOptions] (val x: Self) extends AnyVal {
     
     inline def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     

@@ -241,7 +241,8 @@ object mod {
       __obj.asInstanceOf[AbortSignalLike]
     }
     
-    extension [Self <: AbortSignalLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbortSignalLike] (val x: Self) extends AnyVal {
       
       inline def setAddEventListener(value: (abort, js.ThisFunction1[AbortSignalLike, /* event */ Any, Any]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     }
@@ -268,7 +269,8 @@ object mod {
       __obj.asInstanceOf[BaseReadableOptions[TStream, TType, TMapType, TByteType]]
     }
     
-    extension [Self <: BaseReadableOptions[?, ?, ?, ?], TStream /* <: Readable[TType, TMapType, TByteType, Any, Any, ReadableEvents[TMapType]] */, TType, TMapType, TByteType](x: Self & (BaseReadableOptions[TStream, TType, TMapType, TByteType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseReadableOptions[?, ?, ?, ?], TStream /* <: Readable[TType, TMapType, TByteType, Any, Any, ReadableEvents[TMapType]] */, TType, TMapType, TByteType] (val x: Self & (BaseReadableOptions[TStream, TType, TMapType, TByteType])) extends AnyVal {
       
       inline def setByteLengthReadable(value: ByteLengthFunction[TStream, TByteType]): Self = StObject.set(x, "byteLengthReadable", value.asInstanceOf[js.Any])
       
@@ -305,7 +307,8 @@ object mod {
       __obj.asInstanceOf[BaseWritableOptions[TStream, TType, TMapType, TByteType]]
     }
     
-    extension [Self <: BaseWritableOptions[?, ?, ?, ?], TStream /* <: Writable[TType, TMapType, TByteType, Any, Any, WritableEvents[TType]] */, TType, TMapType, TByteType](x: Self & (BaseWritableOptions[TStream, TType, TMapType, TByteType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseWritableOptions[?, ?, ?, ?], TStream /* <: Writable[TType, TMapType, TByteType, Any, Any, WritableEvents[TType]] */, TType, TMapType, TByteType] (val x: Self & (BaseWritableOptions[TStream, TType, TMapType, TByteType])) extends AnyVal {
       
       inline def setByteLengthWritable(value: ByteLengthFunction[TStream, TByteType]): Self = StObject.set(x, "byteLengthWritable", value.asInstanceOf[js.Any])
       
@@ -401,7 +404,8 @@ object mod {
       __obj.asInstanceOf[DuplexOptions[TStream, TWriteType, TReadType, TInternal, TByteType, TReadable, TWritable]]
     }
     
-    extension [Self <: DuplexOptions[?, ?, ?, ?, ?, ?, ?], TStream /* <: Duplex[
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DuplexOptions[?, ?, ?, ?, ?, ?, ?], TStream /* <: Duplex[
         TWriteType, 
         TReadType, 
         TInternal, 
@@ -409,7 +413,7 @@ object mod {
         TReadable, 
         TWritable, 
         DuplexEvents[TWriteType, TReadType]
-      ] */, TWriteType, TReadType, TInternal, TByteType, TReadable /* <: Boolean */, TWritable /* <: Boolean */](x: Self & (DuplexOptions[TStream, TWriteType, TReadType, TInternal, TByteType, TReadable, TWritable])) {
+      ] */, TWriteType, TReadType, TInternal, TByteType, TReadable /* <: Boolean */, TWritable /* <: Boolean */] (val x: Self & (DuplexOptions[TStream, TWriteType, TReadType, TInternal, TByteType, TReadable, TWritable])) extends AnyVal {
       
       inline def setByteLengthWritable(value: ByteLengthFunction[TStream, TInternal]): Self = StObject.set(x, "byteLengthWritable", value.asInstanceOf[js.Any])
       
@@ -507,7 +511,8 @@ object mod {
       __obj.asInstanceOf[ReadableEvents[TMapType]]
     }
     
-    extension [Self <: ReadableEvents[?], TMapType](x: Self & ReadableEvents[TMapType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadableEvents[?], TMapType] (val x: Self & ReadableEvents[TMapType]) extends AnyVal {
       
       inline def setData(value: TMapType => Unit): Self = StObject.set(x, "data", js.Any.fromFunction1(value))
       
@@ -538,7 +543,8 @@ object mod {
       __obj.asInstanceOf[StreamEvents]
     }
     
-    extension [Self <: StreamEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamEvents] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -569,7 +575,8 @@ object mod {
       __obj.asInstanceOf[StreamOptions[TStream, TByteType]]
     }
     
-    extension [Self <: StreamOptions[?, ?], TStream /* <: Stream[TByteType, `false`, `false`, StreamEvents] */, TByteType](x: Self & (StreamOptions[TStream, TByteType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamOptions[?, ?], TStream /* <: Stream[TByteType, `false`, `false`, StreamEvents] */, TByteType] (val x: Self & (StreamOptions[TStream, TByteType])) extends AnyVal {
       
       inline def setByteLength(value: ByteLengthFunction[TStream, TByteType]): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
       
@@ -616,7 +623,8 @@ object mod {
       __obj.asInstanceOf[TransformOptions[TStream, TWriteType, TReadType, TInternal, TByteType, TReadable, TWritable]]
     }
     
-    extension [Self <: TransformOptions[?, ?, ?, ?, ?, ?, ?], TStream /* <: Transform[TWriteType, TReadType, TInternal, TByteType, TReadable, TWritable] */, TWriteType, TReadType, TInternal, TByteType, TReadable /* <: Boolean */, TWritable /* <: Boolean */](x: Self & (TransformOptions[TStream, TWriteType, TReadType, TInternal, TByteType, TReadable, TWritable])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformOptions[?, ?, ?, ?, ?, ?, ?], TStream /* <: Transform[TWriteType, TReadType, TInternal, TByteType, TReadable, TWritable] */, TWriteType, TReadType, TInternal, TByteType, TReadable /* <: Boolean */, TWritable /* <: Boolean */] (val x: Self & (TransformOptions[TStream, TWriteType, TReadType, TInternal, TByteType, TReadable, TWritable])) extends AnyVal {
       
       inline def setFlush(value: js.ThisFunction1[/* this */ TStream, /* cb */ Callback, Unit]): Self = StObject.set(x, "flush", value.asInstanceOf[js.Any])
       
@@ -655,7 +663,8 @@ object mod {
       __obj.asInstanceOf[WritableEvents[TType]]
     }
     
-    extension [Self <: WritableEvents[?], TType](x: Self & WritableEvents[TType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WritableEvents[?], TType] (val x: Self & WritableEvents[TType]) extends AnyVal {
       
       inline def setDrain(value: () => Unit): Self = StObject.set(x, "drain", js.Any.fromFunction0(value))
       

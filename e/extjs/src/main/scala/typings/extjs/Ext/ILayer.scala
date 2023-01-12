@@ -187,7 +187,8 @@ object ILayer {
     __obj.asInstanceOf[ILayer]
   }
   
-  extension [Self <: ILayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILayer] (val x: Self) extends AnyVal {
     
     inline def setCls(value: java.lang.String): Self = StObject.set(x, "cls", value.asInstanceOf[js.Any])
     

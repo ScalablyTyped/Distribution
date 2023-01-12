@@ -27,7 +27,8 @@ object GeographicDivision {
     __obj.asInstanceOf[GeographicDivision]
   }
   
-  extension [Self <: GeographicDivision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeographicDivision] (val x: Self) extends AnyVal {
     
     inline def setAlsoKnownAs(value: js.Array[String]): Self = StObject.set(x, "alsoKnownAs", value.asInstanceOf[js.Any])
     

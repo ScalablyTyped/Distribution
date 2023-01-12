@@ -23,7 +23,8 @@ object AwsEcsTaskDefinitionContainerDefinitionsSystemControlsDetails {
     __obj.asInstanceOf[AwsEcsTaskDefinitionContainerDefinitionsSystemControlsDetails]
   }
   
-  extension [Self <: AwsEcsTaskDefinitionContainerDefinitionsSystemControlsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsTaskDefinitionContainerDefinitionsSystemControlsDetails] (val x: Self) extends AnyVal {
     
     inline def setNamespace(value: NonEmptyString): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     

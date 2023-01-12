@@ -397,7 +397,8 @@ object CanvasGauges {
       __obj.asInstanceOf[GenericOptions]
     }
     
-    extension [Self <: GenericOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimateOnInit(value: Boolean): Self = StObject.set(x, "animateOnInit", value.asInstanceOf[js.Any])
       
@@ -780,7 +781,8 @@ object CanvasGauges {
       __obj.asInstanceOf[Highlight]
     }
     
-    extension [Self <: Highlight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Highlight] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -835,7 +837,8 @@ object CanvasGauges {
       __obj.asInstanceOf[LinearGaugeOptions]
     }
     
-    extension [Self <: LinearGaugeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinearGaugeOptions] (val x: Self) extends AnyVal {
       
       inline def setBarBeginCircle(value: Double): Self = StObject.set(x, "barBeginCircle", value.asInstanceOf[js.Any])
       
@@ -930,7 +933,8 @@ object CanvasGauges {
       __obj.asInstanceOf[RadialGaugeOptions]
     }
     
-    extension [Self <: RadialGaugeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadialGaugeOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimationTarget(value: String): Self = StObject.set(x, "animationTarget", value.asInstanceOf[js.Any])
       
@@ -1041,7 +1045,8 @@ object CanvasGauges {
       __obj.asInstanceOf[SmartCanvas]
     }
     
-    extension [Self <: SmartCanvas](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SmartCanvas] (val x: Self) extends AnyVal {
       
       inline def setCommit(value: () => SmartCanvas): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
       
@@ -1144,7 +1149,8 @@ object CanvasGauges {
       __obj.asInstanceOf[rules]
     }
     
-    extension [Self <: rules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: rules] (val x: Self) extends AnyVal {
       
       inline def setBounce(value: /* percent */ Double => Double): Self = StObject.set(x, "bounce", js.Any.fromFunction1(value))
       

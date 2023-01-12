@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Dest]
     }
     
-    extension [Self <: Dest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dest] (val x: Self) extends AnyVal {
       
       inline def setDest(value: String | (js.Function1[/* code */ String, StringDictionary[String]])): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       

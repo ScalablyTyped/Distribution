@@ -54,7 +54,8 @@ object distLibCommandsXreadgroupMod {
       __obj.asInstanceOf[XReadGroupOptions]
     }
     
-    extension [Self <: XReadGroupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XReadGroupOptions] (val x: Self) extends AnyVal {
       
       inline def setBLOCK(value: Double): Self = StObject.set(x, "BLOCK", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object distLibCommandsXreadgroupMod {
       __obj.asInstanceOf[XReadGroupStream]
     }
     
-    extension [Self <: XReadGroupStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XReadGroupStream] (val x: Self) extends AnyVal {
       
       inline def setId(value: RedisCommandArgument): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

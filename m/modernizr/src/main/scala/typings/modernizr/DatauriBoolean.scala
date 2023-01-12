@@ -18,7 +18,8 @@ object DatauriBoolean {
     __obj.asInstanceOf[DatauriBoolean]
   }
   
-  extension [Self <: DatauriBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatauriBoolean] (val x: Self) extends AnyVal {
     
     inline def setOver32kb(value: scala.Boolean): Self = StObject.set(x, "over32kb", value.asInstanceOf[js.Any])
   }

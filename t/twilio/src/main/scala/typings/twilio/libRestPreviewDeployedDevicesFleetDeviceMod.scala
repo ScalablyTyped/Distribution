@@ -219,7 +219,8 @@ object libRestPreviewDeployedDevicesFleetDeviceMod {
       __obj.asInstanceOf[DeviceInstanceUpdateOptions]
     }
     
-    extension [Self <: DeviceInstanceUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceInstanceUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setDeploymentSid(value: String): Self = StObject.set(x, "deploymentSid", value.asInstanceOf[js.Any])
       
@@ -400,7 +401,8 @@ object libRestPreviewDeployedDevicesFleetDeviceMod {
       __obj.asInstanceOf[DeviceListInstanceCreateOptions]
     }
     
-    extension [Self <: DeviceListInstanceCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceListInstanceCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setDeploymentSid(value: String): Self = StObject.set(x, "deploymentSid", value.asInstanceOf[js.Any])
       
@@ -468,7 +470,8 @@ object libRestPreviewDeployedDevicesFleetDeviceMod {
       __obj.asInstanceOf[DeviceListInstanceEachOptions]
     }
     
-    extension [Self <: DeviceListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ DeviceInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -524,7 +527,8 @@ object libRestPreviewDeployedDevicesFleetDeviceMod {
       __obj.asInstanceOf[DeviceListInstanceOptions]
     }
     
-    extension [Self <: DeviceListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setDeploymentSid(value: String): Self = StObject.set(x, "deploymentSid", value.asInstanceOf[js.Any])
       
@@ -565,7 +569,8 @@ object libRestPreviewDeployedDevicesFleetDeviceMod {
       __obj.asInstanceOf[DeviceListInstancePageOptions]
     }
     
-    extension [Self <: DeviceListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setDeploymentSid(value: String): Self = StObject.set(x, "deploymentSid", value.asInstanceOf[js.Any])
       
@@ -662,7 +667,8 @@ object libRestPreviewDeployedDevicesFleetDeviceMod {
       __obj.asInstanceOf[DeviceResource]
     }
     
-    extension [Self <: DeviceResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -701,7 +707,8 @@ object libRestPreviewDeployedDevicesFleetDeviceMod {
       __obj.asInstanceOf[DeviceSolution]
     }
     
-    extension [Self <: DeviceSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceSolution] (val x: Self) extends AnyVal {
       
       inline def setFleetSid(value: String): Self = StObject.set(x, "fleetSid", value.asInstanceOf[js.Any])
       

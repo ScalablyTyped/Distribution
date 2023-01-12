@@ -38,7 +38,8 @@ object S3CatalogSource {
     __obj.asInstanceOf[S3CatalogSource]
   }
   
-  extension [Self <: S3CatalogSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3CatalogSource] (val x: Self) extends AnyVal {
     
     inline def setAdditionalOptions(value: S3SourceAdditionalOptions): Self = StObject.set(x, "AdditionalOptions", value.asInstanceOf[js.Any])
     

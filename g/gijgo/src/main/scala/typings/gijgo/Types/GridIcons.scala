@@ -21,7 +21,8 @@ object GridIcons {
     __obj.asInstanceOf[GridIcons]
   }
   
-  extension [Self <: GridIcons](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridIcons] (val x: Self) extends AnyVal {
     
     inline def setCollapseGroup(value: String): Self = StObject.set(x, "collapseGroup", value.asInstanceOf[js.Any])
     

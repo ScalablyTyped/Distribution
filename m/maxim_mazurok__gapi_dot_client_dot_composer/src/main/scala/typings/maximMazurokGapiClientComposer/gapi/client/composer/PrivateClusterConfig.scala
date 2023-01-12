@@ -25,7 +25,8 @@ object PrivateClusterConfig {
     __obj.asInstanceOf[PrivateClusterConfig]
   }
   
-  extension [Self <: PrivateClusterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivateClusterConfig] (val x: Self) extends AnyVal {
     
     inline def setEnablePrivateEndpoint(value: Boolean): Self = StObject.set(x, "enablePrivateEndpoint", value.asInstanceOf[js.Any])
     

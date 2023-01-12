@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsCropRotateMod extends Shortcut {
       __obj.asInstanceOf[CropRotateProps]
     }
     
-    extension [Self <: CropRotateProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CropRotateProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

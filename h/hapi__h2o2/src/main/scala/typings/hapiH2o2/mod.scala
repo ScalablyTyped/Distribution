@@ -106,7 +106,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ProxyHandlerOptions]
     }
     
-    extension [Self <: ProxyHandlerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxyHandlerOptions] (val x: Self) extends AnyVal {
       
       inline def setAcceptEncoding(value: Boolean): Self = StObject.set(x, "acceptEncoding", value.asInstanceOf[js.Any])
       
@@ -202,7 +203,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ProxyTarget]
     }
     
-    extension [Self <: ProxyTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxyTarget] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -234,7 +236,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[HandlerDecorations]
       }
       
-      extension [Self <: HandlerDecorations](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HandlerDecorations] (val x: Self) extends AnyVal {
         
         inline def setProxy(value: ProxyHandlerOptions): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
         
@@ -256,7 +259,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[typings.hapiH2o2.mod.hapiHapiAugmentingMod.ResponseToolkit]
       }
       
-      extension [Self <: typings.hapiH2o2.mod.hapiHapiAugmentingMod.ResponseToolkit](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.hapiH2o2.mod.hapiHapiAugmentingMod.ResponseToolkit] (val x: Self) extends AnyVal {
         
         inline def setProxy(value: ProxyHandlerOptions => js.Promise[ResponseObject]): Self = StObject.set(x, "proxy", js.Any.fromFunction1(value))
       }

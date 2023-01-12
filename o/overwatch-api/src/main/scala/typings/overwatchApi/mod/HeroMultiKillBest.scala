@@ -17,7 +17,8 @@ object HeroMultiKillBest {
     __obj.asInstanceOf[HeroMultiKillBest]
   }
   
-  extension [Self <: HeroMultiKillBest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeroMultiKillBest] (val x: Self) extends AnyVal {
     
     inline def setMultikill_best(value: String): Self = StObject.set(x, "multikill_best", value.asInstanceOf[js.Any])
   }

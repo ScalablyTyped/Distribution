@@ -46,7 +46,8 @@ object PageToken {
     __obj.asInstanceOf[PageToken]
   }
   
-  extension [Self <: PageToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageToken] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

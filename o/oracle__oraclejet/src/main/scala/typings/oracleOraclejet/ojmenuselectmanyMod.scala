@@ -1145,7 +1145,8 @@ object ojmenuselectmanyMod {
         __obj.asInstanceOf[Option]
       }
       
-      extension [Self <: Option](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
         
         inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
         
@@ -1284,7 +1285,8 @@ object ojmenuselectmanyMod {
       __obj.asInstanceOf[ojMenuSelectManyEventMap]
     }
     
-    extension [Self <: ojMenuSelectManyEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojMenuSelectManyEventMap] (val x: Self) extends AnyVal {
       
       inline def setDisabledChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "disabledChanged", value.asInstanceOf[js.Any])
       
@@ -1311,7 +1313,8 @@ object ojmenuselectmanyMod {
       __obj.asInstanceOf[ojMenuSelectManySettableProperties]
     }
     
-    extension [Self <: ojMenuSelectManySettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojMenuSelectManySettableProperties] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -1345,7 +1348,8 @@ object ojmenuselectmanyMod {
       __obj.asInstanceOf[ojMenuSelectManySettablePropertiesLenient]
     }
     
-    extension [Self <: ojMenuSelectManySettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojMenuSelectManySettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

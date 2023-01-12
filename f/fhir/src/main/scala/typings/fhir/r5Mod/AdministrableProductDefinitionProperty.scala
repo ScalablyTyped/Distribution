@@ -55,7 +55,8 @@ object AdministrableProductDefinitionProperty {
     __obj.asInstanceOf[AdministrableProductDefinitionProperty]
   }
   
-  extension [Self <: AdministrableProductDefinitionProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdministrableProductDefinitionProperty] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: CodeableConcept): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

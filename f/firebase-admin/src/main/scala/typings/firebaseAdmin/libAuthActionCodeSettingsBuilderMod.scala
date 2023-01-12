@@ -65,7 +65,8 @@ object libAuthActionCodeSettingsBuilderMod {
       __obj.asInstanceOf[ActionCodeSettings]
     }
     
-    extension [Self <: ActionCodeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionCodeSettings] (val x: Self) extends AnyVal {
       
       inline def setAndroid(value: InstallApp): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       

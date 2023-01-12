@@ -190,7 +190,8 @@ object libComponentsFloatingPickerBaseFloatingPickerDottypesMod {
       __obj.asInstanceOf[IBaseFloatingPickerSuggestionProps]
     }
     
-    extension [Self <: IBaseFloatingPickerSuggestionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBaseFloatingPickerSuggestionProps] (val x: Self) extends AnyVal {
       
       inline def setFooterItemsProps(value: js.Array[ISuggestionsHeaderFooterProps]): Self = StObject.set(x, "footerItemsProps", value.asInstanceOf[js.Any])
       

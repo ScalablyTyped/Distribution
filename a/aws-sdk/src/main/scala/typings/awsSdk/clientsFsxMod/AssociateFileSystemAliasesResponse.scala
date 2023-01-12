@@ -18,7 +18,8 @@ object AssociateFileSystemAliasesResponse {
     __obj.asInstanceOf[AssociateFileSystemAliasesResponse]
   }
   
-  extension [Self <: AssociateFileSystemAliasesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateFileSystemAliasesResponse] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: Aliases): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
     

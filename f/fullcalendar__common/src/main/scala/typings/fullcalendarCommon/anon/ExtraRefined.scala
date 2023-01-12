@@ -20,7 +20,8 @@ object ExtraRefined {
     __obj.asInstanceOf[ExtraRefined[Refiners]]
   }
   
-  extension [Self <: ExtraRefined[?], Refiners /* <: GenericRefiners */](x: Self & ExtraRefined[Refiners]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtraRefined[?], Refiners /* <: GenericRefiners */] (val x: Self & ExtraRefined[Refiners]) extends AnyVal {
     
     inline def setExtra(value: Dictionary): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     

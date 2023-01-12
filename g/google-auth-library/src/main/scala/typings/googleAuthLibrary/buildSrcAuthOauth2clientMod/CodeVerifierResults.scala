@@ -25,7 +25,8 @@ object CodeVerifierResults {
     __obj.asInstanceOf[CodeVerifierResults]
   }
   
-  extension [Self <: CodeVerifierResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeVerifierResults] (val x: Self) extends AnyVal {
     
     inline def setCodeChallenge(value: String): Self = StObject.set(x, "codeChallenge", value.asInstanceOf[js.Any])
     

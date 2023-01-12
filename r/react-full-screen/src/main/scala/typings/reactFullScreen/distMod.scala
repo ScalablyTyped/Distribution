@@ -41,7 +41,8 @@ object distMod {
       __obj.asInstanceOf[FullScreenHandle]
     }
     
-    extension [Self <: FullScreenHandle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullScreenHandle] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object distMod {
       __obj.asInstanceOf[FullScreenProps]
     }
     
-    extension [Self <: FullScreenProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullScreenProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

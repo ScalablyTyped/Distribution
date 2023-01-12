@@ -16,7 +16,8 @@ object PartialWaitForOptions {
     __obj.asInstanceOf[PartialWaitForOptions]
   }
   
-  extension [Self <: PartialWaitForOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialWaitForOptions] (val x: Self) extends AnyVal {
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

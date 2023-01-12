@@ -62,7 +62,8 @@ object BindGroupFormat {
     __obj.asInstanceOf[BindGroupFormat]
   }
   
-  extension [Self <: BindGroupFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindGroupFormat] (val x: Self) extends AnyVal {
     
     inline def setBufferFormats(value: js.Array[BindBufferFormat]): Self = StObject.set(x, "bufferFormats", value.asInstanceOf[js.Any])
     

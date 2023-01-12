@@ -22,7 +22,8 @@ object RW {
     __obj.asInstanceOf[RW[Path, A]]
   }
   
-  extension [Self <: RW[?, ?], Path /* <: typings.tsToolbelt.outListListMod.List[Key] */, A](x: Self & (RW[Path, A])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RW[?, ?], Path /* <: typings.tsToolbelt.outListListMod.List[Key] */, A] (val x: Self & (RW[Path, A])) extends AnyVal {
     
     inline def setExclamationmark(value: R[Path, A]): Self = StObject.set(x, "!", value.asInstanceOf[js.Any])
     

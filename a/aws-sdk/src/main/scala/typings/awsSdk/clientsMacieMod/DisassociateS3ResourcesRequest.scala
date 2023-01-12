@@ -23,7 +23,8 @@ object DisassociateS3ResourcesRequest {
     __obj.asInstanceOf[DisassociateS3ResourcesRequest]
   }
   
-  extension [Self <: DisassociateS3ResourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateS3ResourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setAssociatedS3Resources(value: S3Resources): Self = StObject.set(x, "associatedS3Resources", value.asInstanceOf[js.Any])
     

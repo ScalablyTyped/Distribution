@@ -18,7 +18,8 @@ object ResponseHeadersPolicyContentTypeOptions {
     __obj.asInstanceOf[ResponseHeadersPolicyContentTypeOptions]
   }
   
-  extension [Self <: ResponseHeadersPolicyContentTypeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseHeadersPolicyContentTypeOptions] (val x: Self) extends AnyVal {
     
     inline def setOverride(value: Boolean): Self = StObject.set(x, "Override", value.asInstanceOf[js.Any])
   }

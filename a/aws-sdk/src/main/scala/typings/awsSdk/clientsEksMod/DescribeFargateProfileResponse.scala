@@ -18,7 +18,8 @@ object DescribeFargateProfileResponse {
     __obj.asInstanceOf[DescribeFargateProfileResponse]
   }
   
-  extension [Self <: DescribeFargateProfileResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFargateProfileResponse] (val x: Self) extends AnyVal {
     
     inline def setFargateProfile(value: FargateProfile): Self = StObject.set(x, "fargateProfile", value.asInstanceOf[js.Any])
     

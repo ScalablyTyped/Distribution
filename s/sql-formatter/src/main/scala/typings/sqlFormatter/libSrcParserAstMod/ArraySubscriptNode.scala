@@ -24,7 +24,8 @@ object ArraySubscriptNode {
     __obj.asInstanceOf[ArraySubscriptNode]
   }
   
-  extension [Self <: ArraySubscriptNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArraySubscriptNode] (val x: Self) extends AnyVal {
     
     inline def setArray(value: IdentifierNode | KeywordNode): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     

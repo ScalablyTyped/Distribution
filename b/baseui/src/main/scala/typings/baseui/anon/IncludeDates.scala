@@ -17,7 +17,8 @@ object IncludeDates {
     __obj.asInstanceOf[IncludeDates[T]]
   }
   
-  extension [Self <: IncludeDates[?], T](x: Self & IncludeDates[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeDates[?], T] (val x: Self & IncludeDates[T]) extends AnyVal {
     
     inline def setIncludeDates(value: js.Array[T]): Self = StObject.set(x, "includeDates", value.asInstanceOf[js.Any])
     

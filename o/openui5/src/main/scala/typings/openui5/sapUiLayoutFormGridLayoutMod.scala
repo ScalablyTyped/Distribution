@@ -180,7 +180,8 @@ object sapUiLayoutFormGridLayoutMod {
       __obj.asInstanceOf[GridLayoutSettings]
     }
     
-    extension [Self <: GridLayoutSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridLayoutSettings] (val x: Self) extends AnyVal {
       
       inline def setSingleColumn(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "singleColumn", value.asInstanceOf[js.Any])
       

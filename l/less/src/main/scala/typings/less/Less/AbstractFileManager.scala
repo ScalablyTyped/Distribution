@@ -60,7 +60,8 @@ object AbstractFileManager {
     __obj.asInstanceOf[AbstractFileManager]
   }
   
-  extension [Self <: AbstractFileManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractFileManager] (val x: Self) extends AnyVal {
     
     inline def setAlwaysMakePathsAbsolute(value: () => Boolean): Self = StObject.set(x, "alwaysMakePathsAbsolute", js.Any.fromFunction0(value))
     

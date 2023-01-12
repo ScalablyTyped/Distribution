@@ -18,7 +18,8 @@ object DeleteTrialComponentResponse {
     __obj.asInstanceOf[DeleteTrialComponentResponse]
   }
   
-  extension [Self <: DeleteTrialComponentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTrialComponentResponse] (val x: Self) extends AnyVal {
     
     inline def setTrialComponentArn(value: TrialComponentArn): Self = StObject.set(x, "TrialComponentArn", value.asInstanceOf[js.Any])
     

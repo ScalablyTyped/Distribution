@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[ExpectedMessages]
     }
     
-    extension [Self <: ExpectedMessages](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpectedMessages] (val x: Self) extends AnyVal {
       
       inline def setExpectedMessages(value: Double): Self = StObject.set(x, "expectedMessages", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[MaxMessages]
     }
     
-    extension [Self <: MaxMessages](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxMessages] (val x: Self) extends AnyVal {
       
       inline def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
       

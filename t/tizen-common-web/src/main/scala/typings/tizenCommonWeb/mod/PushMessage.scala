@@ -66,7 +66,8 @@ object PushMessage {
     __obj.asInstanceOf[PushMessage]
   }
   
-  extension [Self <: PushMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushMessage] (val x: Self) extends AnyVal {
     
     inline def setAlertMessage(value: String): Self = StObject.set(x, "alertMessage", value.asInstanceOf[js.Any])
     

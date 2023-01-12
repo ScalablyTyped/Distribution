@@ -24,7 +24,8 @@ object PxfObject {
     __obj.asInstanceOf[PxfObject]
   }
   
-  extension [Self <: PxfObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PxfObject] (val x: Self) extends AnyVal {
     
     inline def setBuf(value: String | Buffer): Self = StObject.set(x, "buf", value.asInstanceOf[js.Any])
     

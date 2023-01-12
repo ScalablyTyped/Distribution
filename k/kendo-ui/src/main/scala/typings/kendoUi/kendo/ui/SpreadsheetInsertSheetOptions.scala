@@ -30,7 +30,8 @@ object SpreadsheetInsertSheetOptions {
     __obj.asInstanceOf[SpreadsheetInsertSheetOptions]
   }
   
-  extension [Self <: SpreadsheetInsertSheetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetInsertSheetOptions] (val x: Self) extends AnyVal {
     
     inline def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object InputMediaPhoto {
     __obj.asInstanceOf[InputMediaPhoto]
   }
   
-  extension [Self <: InputMediaPhoto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputMediaPhoto] (val x: Self) extends AnyVal {
     
     inline def setType(value: photo): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

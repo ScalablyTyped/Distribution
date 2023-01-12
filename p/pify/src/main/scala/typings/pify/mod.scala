@@ -67,7 +67,8 @@ object mod {
       __obj.asInstanceOf[InternalOptions[Includes, Excludes, MultiArgs, ErrorFirst]]
     }
     
-    extension [Self <: InternalOptions[?, ?, ?, ?], Includes /* <: js.Array[Any] */, Excludes /* <: js.Array[Any] */, MultiArgs /* <: Boolean */, ErrorFirst /* <: Boolean */](x: Self & (InternalOptions[Includes, Excludes, MultiArgs, ErrorFirst])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalOptions[?, ?, ?, ?], Includes /* <: js.Array[Any] */, Excludes /* <: js.Array[Any] */, MultiArgs /* <: Boolean */, ErrorFirst /* <: Boolean */] (val x: Self & (InternalOptions[Includes, Excludes, MultiArgs, ErrorFirst])) extends AnyVal {
       
       inline def setErrorFirst(value: ErrorFirst): Self = StObject.set(x, "errorFirst", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object mod {
       __obj.asInstanceOf[Options[Includes, Excludes, MultiArgs, ErrorFirst, ExcludeMain]]
     }
     
-    extension [Self <: Options[?, ?, ?, ?, ?], Includes /* <: js.Array[Any] */, Excludes /* <: js.Array[Any] */, MultiArgs /* <: Boolean */, ErrorFirst /* <: Boolean */, ExcludeMain /* <: Boolean */](x: Self & (Options[Includes, Excludes, MultiArgs, ErrorFirst, ExcludeMain])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?, ?, ?, ?, ?], Includes /* <: js.Array[Any] */, Excludes /* <: js.Array[Any] */, MultiArgs /* <: Boolean */, ErrorFirst /* <: Boolean */, ExcludeMain /* <: Boolean */] (val x: Self & (Options[Includes, Excludes, MultiArgs, ErrorFirst, ExcludeMain])) extends AnyVal {
       
       inline def setErrorFirst(value: ErrorFirst): Self = StObject.set(x, "errorFirst", value.asInstanceOf[js.Any])
       

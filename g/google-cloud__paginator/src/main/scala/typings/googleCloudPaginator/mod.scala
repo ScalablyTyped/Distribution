@@ -138,7 +138,8 @@ object mod {
       __obj.asInstanceOf[ParsedArguments]
     }
     
-    extension [Self <: ParsedArguments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedArguments] (val x: Self) extends AnyVal {
       
       inline def setAutoPaginate(value: Boolean): Self = StObject.set(x, "autoPaginate", value.asInstanceOf[js.Any])
       

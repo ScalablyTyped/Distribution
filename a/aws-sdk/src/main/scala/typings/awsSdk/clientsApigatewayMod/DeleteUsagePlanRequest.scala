@@ -18,7 +18,8 @@ object DeleteUsagePlanRequest {
     __obj.asInstanceOf[DeleteUsagePlanRequest]
   }
   
-  extension [Self <: DeleteUsagePlanRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteUsagePlanRequest] (val x: Self) extends AnyVal {
     
     inline def setUsagePlanId(value: String): Self = StObject.set(x, "usagePlanId", value.asInstanceOf[js.Any])
   }

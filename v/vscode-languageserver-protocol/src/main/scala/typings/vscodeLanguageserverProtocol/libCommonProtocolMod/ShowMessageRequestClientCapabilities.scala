@@ -19,7 +19,8 @@ object ShowMessageRequestClientCapabilities {
     __obj.asInstanceOf[ShowMessageRequestClientCapabilities]
   }
   
-  extension [Self <: ShowMessageRequestClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowMessageRequestClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setMessageActionItem(value: AdditionalPropertiesSupport): Self = StObject.set(x, "messageActionItem", value.asInstanceOf[js.Any])
     

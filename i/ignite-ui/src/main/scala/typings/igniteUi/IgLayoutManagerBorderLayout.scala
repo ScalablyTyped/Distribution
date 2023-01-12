@@ -55,7 +55,8 @@ object IgLayoutManagerBorderLayout {
     __obj.asInstanceOf[IgLayoutManagerBorderLayout]
   }
   
-  extension [Self <: IgLayoutManagerBorderLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgLayoutManagerBorderLayout] (val x: Self) extends AnyVal {
     
     inline def setLeftWidth(value: String): Self = StObject.set(x, "leftWidth", value.asInstanceOf[js.Any])
     

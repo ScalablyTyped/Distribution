@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[FileSystemFlags]
     }
     
-    extension [Self <: FileSystemFlags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSystemFlags] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object mod {
         __obj.asInstanceOf[DataTransferItem]
       }
       
-      extension [Self <: DataTransferItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DataTransferItem] (val x: Self) extends AnyVal {
         
         inline def setWebkitGetAsEntry(value: () => FileSystemEntry | Null): Self = StObject.set(x, "webkitGetAsEntry", js.Any.fromFunction0(value))
       }
@@ -72,7 +74,8 @@ object mod {
         __obj.asInstanceOf[File]
       }
       
-      extension [Self <: File](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
         
         inline def setWebkitRelativePath(value: String): Self = StObject.set(x, "webkitRelativePath", value.asInstanceOf[js.Any])
       }
@@ -91,7 +94,8 @@ object mod {
         __obj.asInstanceOf[FileSystem]
       }
       
-      extension [Self <: FileSystem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FileSystem] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -219,7 +223,8 @@ object mod {
         __obj.asInstanceOf[HTMLInputElement]
       }
       
-      extension [Self <: HTMLInputElement](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HTMLInputElement] (val x: Self) extends AnyVal {
         
         inline def setWebkitEntries(value: js.Array[FileSystemEntry]): Self = StObject.set(x, "webkitEntries", value.asInstanceOf[js.Any])
         

@@ -30,7 +30,8 @@ object Repo {
     __obj.asInstanceOf[Repo]
   }
   
-  extension [Self <: Repo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Repo] (val x: Self) extends AnyVal {
     
     inline def setMirrorConfig(value: MirrorConfig): Self = StObject.set(x, "mirrorConfig", value.asInstanceOf[js.Any])
     

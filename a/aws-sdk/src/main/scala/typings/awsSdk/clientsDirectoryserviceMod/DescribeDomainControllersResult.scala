@@ -23,7 +23,8 @@ object DescribeDomainControllersResult {
     __obj.asInstanceOf[DescribeDomainControllersResult]
   }
   
-  extension [Self <: DescribeDomainControllersResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDomainControllersResult] (val x: Self) extends AnyVal {
     
     inline def setDomainControllers(value: DomainControllers): Self = StObject.set(x, "DomainControllers", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object PeerPublicKeyChangeData {
     __obj.asInstanceOf[PeerPublicKeyChangeData]
   }
   
-  extension [Self <: PeerPublicKeyChangeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeerPublicKeyChangeData] (val x: Self) extends AnyVal {
     
     inline def setOldPublicKey(value: js.typedarray.Uint8Array): Self = StObject.set(x, "oldPublicKey", value.asInstanceOf[js.Any])
     

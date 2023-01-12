@@ -34,7 +34,8 @@ object ListResult {
     __obj.asInstanceOf[ListResult]
   }
   
-  extension [Self <: ListResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResult] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[StorageReference]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

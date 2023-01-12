@@ -56,7 +56,8 @@ object typesDescribeJobInputMod {
       __obj.asInstanceOf[DescribeJobInput]
     }
     
-    extension [Self <: DescribeJobInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeJobInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object TextResourceData {
     __obj.asInstanceOf[TextResourceData[Resources]]
   }
   
-  extension [Self <: TextResourceData[?], Resources /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof Resources ]: string} */ js.Any */](x: Self & TextResourceData[Resources]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextResourceData[?], Resources /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof Resources ]: string} */ js.Any */] (val x: Self & TextResourceData[Resources]) extends AnyVal {
     
     inline def setBuild(value: Selectable[String]): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

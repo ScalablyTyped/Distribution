@@ -23,7 +23,8 @@ object Latestreleases {
     __obj.asInstanceOf[Latestreleases]
   }
   
-  extension [Self <: Latestreleases](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Latestreleases] (val x: Self) extends AnyVal {
     
     inline def `setLatest-releases`(value: View[typings.musickitJs.MusicKit.Albums]): Self = StObject.set(x, "latest-releases", value.asInstanceOf[js.Any])
     

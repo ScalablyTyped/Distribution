@@ -43,7 +43,8 @@ object ClassificationResult {
     __obj.asInstanceOf[ClassificationResult]
   }
   
-  extension [Self <: ClassificationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassificationResult] (val x: Self) extends AnyVal {
     
     inline def setAdditionalOccurrences(value: boolean): Self = StObject.set(x, "additionalOccurrences", value.asInstanceOf[js.Any])
     

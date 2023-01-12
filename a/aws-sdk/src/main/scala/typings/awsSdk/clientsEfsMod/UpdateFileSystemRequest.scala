@@ -28,7 +28,8 @@ object UpdateFileSystemRequest {
     __obj.asInstanceOf[UpdateFileSystemRequest]
   }
   
-  extension [Self <: UpdateFileSystemRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFileSystemRequest] (val x: Self) extends AnyVal {
     
     inline def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
     

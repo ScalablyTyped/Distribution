@@ -18,7 +18,8 @@ object CommentingRangeProvider {
     __obj.asInstanceOf[CommentingRangeProvider]
   }
   
-  extension [Self <: CommentingRangeProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentingRangeProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideCommentingRanges(value: (TextDocument, CancellationToken) => ProviderResult[js.Array[Range]]): Self = StObject.set(x, "provideCommentingRanges", js.Any.fromFunction2(value))
   }

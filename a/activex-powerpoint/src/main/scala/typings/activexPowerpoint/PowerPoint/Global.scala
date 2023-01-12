@@ -71,7 +71,8 @@ object Global {
     __obj.asInstanceOf[Global]
   }
   
-  extension [Self <: Global](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
     
     inline def setActivePresentation(value: Presentation): Self = StObject.set(x, "ActivePresentation", value.asInstanceOf[js.Any])
     

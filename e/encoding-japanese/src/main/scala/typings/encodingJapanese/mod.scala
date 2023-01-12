@@ -101,7 +101,8 @@ object mod {
       __obj.asInstanceOf[ConvertArrayBufferOptions]
     }
     
-    extension [Self <: ConvertArrayBufferOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvertArrayBufferOptions] (val x: Self) extends AnyVal {
       
       inline def setBom(value: Boolean | String): Self = StObject.set(x, "bom", value.asInstanceOf[js.Any])
       
@@ -143,7 +144,8 @@ object mod {
       __obj.asInstanceOf[ConvertArrayOptions]
     }
     
-    extension [Self <: ConvertArrayOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvertArrayOptions] (val x: Self) extends AnyVal {
       
       inline def setBom(value: Boolean | String): Self = StObject.set(x, "bom", value.asInstanceOf[js.Any])
       
@@ -218,7 +220,8 @@ object mod {
       __obj.asInstanceOf[ConvertStringOptions]
     }
     
-    extension [Self <: ConvertStringOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvertStringOptions] (val x: Self) extends AnyVal {
       
       inline def setBom(value: Boolean | String): Self = StObject.set(x, "bom", value.asInstanceOf[js.Any])
       
@@ -257,7 +260,8 @@ object mod {
       __obj.asInstanceOf[ConvertUnknownOptions]
     }
     
-    extension [Self <: ConvertUnknownOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvertUnknownOptions] (val x: Self) extends AnyVal {
       
       inline def setBom(value: Boolean | String): Self = StObject.set(x, "bom", value.asInstanceOf[js.Any])
       

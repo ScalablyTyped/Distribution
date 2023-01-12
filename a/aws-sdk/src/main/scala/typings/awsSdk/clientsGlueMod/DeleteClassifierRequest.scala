@@ -18,7 +18,8 @@ object DeleteClassifierRequest {
     __obj.asInstanceOf[DeleteClassifierRequest]
   }
   
-  extension [Self <: DeleteClassifierRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteClassifierRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

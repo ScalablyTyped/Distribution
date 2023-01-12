@@ -23,7 +23,8 @@ object MetadataRemovingEventUIParam {
     __obj.asInstanceOf[MetadataRemovingEventUIParam]
   }
   
-  extension [Self <: MetadataRemovingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetadataRemovingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

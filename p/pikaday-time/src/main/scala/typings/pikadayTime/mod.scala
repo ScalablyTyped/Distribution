@@ -167,7 +167,8 @@ object mod {
       __obj.asInstanceOf[PikadayI18nConfig]
     }
     
-    extension [Self <: PikadayI18nConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PikadayI18nConfig] (val x: Self) extends AnyVal {
       
       inline def setMonths(value: js.Array[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       
@@ -396,7 +397,8 @@ object mod {
       __obj.asInstanceOf[PikadayOptions]
     }
     
-    extension [Self <: PikadayOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PikadayOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       

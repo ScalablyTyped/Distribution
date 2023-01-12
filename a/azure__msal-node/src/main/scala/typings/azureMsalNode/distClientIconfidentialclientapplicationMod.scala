@@ -75,7 +75,8 @@ object distClientIconfidentialclientapplicationMod {
       __obj.asInstanceOf[IConfidentialClientApplication]
     }
     
-    extension [Self <: IConfidentialClientApplication](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConfidentialClientApplication] (val x: Self) extends AnyVal {
       
       inline def setAcquireTokenByClientCredential(value: ClientCredentialRequest => js.Promise[AuthenticationResult | Null]): Self = StObject.set(x, "acquireTokenByClientCredential", js.Any.fromFunction1(value))
       

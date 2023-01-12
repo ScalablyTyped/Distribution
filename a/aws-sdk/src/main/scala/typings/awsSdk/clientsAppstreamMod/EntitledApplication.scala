@@ -18,7 +18,8 @@ object EntitledApplication {
     __obj.asInstanceOf[EntitledApplication]
   }
   
-  extension [Self <: EntitledApplication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntitledApplication] (val x: Self) extends AnyVal {
     
     inline def setApplicationIdentifier(value: String): Self = StObject.set(x, "ApplicationIdentifier", value.asInstanceOf[js.Any])
   }

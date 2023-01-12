@@ -19,7 +19,8 @@ object datapoints {
     __obj.asInstanceOf[datapoints]
   }
   
-  extension [Self <: datapoints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: datapoints] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: js.Array[datapointFormat]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object Sod {
     __obj.asInstanceOf[Sod]
   }
   
-  extension [Self <: Sod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sod] (val x: Self) extends AnyVal {
     
     inline def setDepkeys(value: js.Array[String]): Self = StObject.set(x, "depkeys", value.asInstanceOf[js.Any])
     

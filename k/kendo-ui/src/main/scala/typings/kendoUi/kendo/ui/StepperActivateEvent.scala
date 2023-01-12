@@ -20,7 +20,8 @@ object StepperActivateEvent {
     __obj.asInstanceOf[StepperActivateEvent]
   }
   
-  extension [Self <: StepperActivateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepperActivateEvent] (val x: Self) extends AnyVal {
     
     inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     

@@ -609,7 +609,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[C4Config]
     }
     
-    extension [Self <: C4Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: C4Config] (val x: Self) extends AnyVal {
       
       inline def setBoundaryFontFamily(value: String): Self = StObject.set(x, "boundaryFontFamily", value.asInstanceOf[js.Any])
       
@@ -1058,7 +1059,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setArrowMarkerAbsolute(value: Boolean): Self = StObject.set(x, "arrowMarkerAbsolute", value.asInstanceOf[js.Any])
       
@@ -1216,7 +1218,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ERConfig]
     }
     
-    extension [Self <: ERConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ERConfig] (val x: Self) extends AnyVal {
       
       inline def setDiagramPadding(value: Double): Self = StObject.set(x, "diagramPadding", value.asInstanceOf[js.Any])
       
@@ -1320,7 +1323,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FlowChartConfig]
     }
     
-    extension [Self <: FlowChartConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlowChartConfig] (val x: Self) extends AnyVal {
       
       inline def setCurve(value: basis | cardinal | linear): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
       
@@ -1454,7 +1458,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[GanttConfig]
     }
     
-    extension [Self <: GanttConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GanttConfig] (val x: Self) extends AnyVal {
       
       inline def setAxisFormat(value: String): Self = StObject.set(x, "axisFormat", value.asInstanceOf[js.Any])
       
@@ -1621,7 +1626,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[JourneyConfig]
     }
     
-    extension [Self <: JourneyConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JourneyConfig] (val x: Self) extends AnyVal {
       
       inline def setActorMargin(value: Double): Self = StObject.set(x, "actorMargin", value.asInstanceOf[js.Any])
       
@@ -1789,7 +1795,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Mermaid]
     }
     
-    extension [Self <: Mermaid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mermaid] (val x: Self) extends AnyVal {
       
       inline def setContentLoaded(value: js.Function): Self = StObject.set(x, "contentLoaded", value.asInstanceOf[js.Any])
       
@@ -1950,7 +1957,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[PieConfig]
     }
     
-    extension [Self <: PieConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PieConfig] (val x: Self) extends AnyVal {
       
       inline def setUseMaxWidth(value: Boolean): Self = StObject.set(x, "useMaxWidth", value.asInstanceOf[js.Any])
       
@@ -1974,7 +1982,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RequirementConfig]
     }
     
-    extension [Self <: RequirementConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequirementConfig] (val x: Self) extends AnyVal {
       
       inline def setUseMaxWidth(value: Boolean): Self = StObject.set(x, "useMaxWidth", value.asInstanceOf[js.Any])
       
@@ -2212,7 +2221,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SequenceConfig]
     }
     
-    extension [Self <: SequenceConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SequenceConfig] (val x: Self) extends AnyVal {
       
       inline def setActivationWidth(value: Double): Self = StObject.set(x, "activationWidth", value.asInstanceOf[js.Any])
       

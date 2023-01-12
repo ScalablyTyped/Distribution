@@ -19,7 +19,8 @@ object SchedulerViewEditable {
     __obj.asInstanceOf[SchedulerViewEditable]
   }
   
-  extension [Self <: SchedulerViewEditable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerViewEditable] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     

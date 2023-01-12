@@ -27,7 +27,8 @@ object TileLayerEvents {
     __obj.asInstanceOf[TileLayerEvents]
   }
   
-  extension [Self <: TileLayerEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileLayerEvents] (val x: Self) extends AnyVal {
     
     inline def setOnload(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "onload", js.Any.fromFunction1(value))
     

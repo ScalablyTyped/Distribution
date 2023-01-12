@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[AuthParams]
     }
     
-    extension [Self <: AuthParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthParams] (val x: Self) extends AnyVal {
       
       inline def setAuth_uri(value: String): Self = StObject.set(x, "auth_uri", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object mod {
       __obj.asInstanceOf[AuthResult]
     }
     
-    extension [Self <: AuthResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthResult] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -103,7 +105,8 @@ object mod {
       __obj.asInstanceOf[AuthState]
     }
     
-    extension [Self <: AuthState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthState] (val x: Self) extends AnyVal {
       
       inline def setOriginalUrl(value: String): Self = StObject.set(x, "originalUrl", value.asInstanceOf[js.Any])
     }

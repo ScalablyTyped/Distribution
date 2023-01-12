@@ -25,7 +25,8 @@ object typesGcmchannelrequestMod {
       __obj.asInstanceOf[GCMChannelRequest]
     }
     
-    extension [Self <: GCMChannelRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GCMChannelRequest] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "ApiKey", value.asInstanceOf[js.Any])
       

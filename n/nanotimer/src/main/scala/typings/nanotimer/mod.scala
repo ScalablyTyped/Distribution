@@ -102,7 +102,8 @@ object mod {
       __obj.asInstanceOf[TimeoutResults]
     }
     
-    extension [Self <: TimeoutResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeoutResults] (val x: Self) extends AnyVal {
       
       inline def setWaitTime(value: Double): Self = StObject.set(x, "waitTime", value.asInstanceOf[js.Any])
     }

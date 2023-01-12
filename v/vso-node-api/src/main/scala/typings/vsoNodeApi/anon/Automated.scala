@@ -21,7 +21,8 @@ object Automated {
     __obj.asInstanceOf[Automated]
   }
   
-  extension [Self <: Automated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Automated] (val x: Self) extends AnyVal {
     
     inline def setAutomated(value: scala.Double): Self = StObject.set(x, "automated", value.asInstanceOf[js.Any])
     

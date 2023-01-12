@@ -16,7 +16,8 @@ object HitsProvided {
     __obj.asInstanceOf[HitsProvided[THit]]
   }
   
-  extension [Self <: HitsProvided[?], THit](x: Self & HitsProvided[THit]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HitsProvided[?], THit] (val x: Self & HitsProvided[THit]) extends AnyVal {
     
     inline def setHits(value: js.Array[Hit[THit]]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     

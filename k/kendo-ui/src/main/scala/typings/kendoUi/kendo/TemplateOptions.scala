@@ -17,7 +17,8 @@ object TemplateOptions {
     __obj.asInstanceOf[TemplateOptions]
   }
   
-  extension [Self <: TemplateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateOptions] (val x: Self) extends AnyVal {
     
     inline def setParamName(value: String): Self = StObject.set(x, "paramName", value.asInstanceOf[js.Any])
     

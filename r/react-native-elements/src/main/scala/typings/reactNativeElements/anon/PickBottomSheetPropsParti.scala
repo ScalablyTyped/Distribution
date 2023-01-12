@@ -23,7 +23,8 @@ object PickBottomSheetPropsParti {
     __obj.asInstanceOf[PickBottomSheetPropsParti]
   }
   
-  extension [Self <: PickBottomSheetPropsParti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickBottomSheetPropsParti] (val x: Self) extends AnyVal {
     
     inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     

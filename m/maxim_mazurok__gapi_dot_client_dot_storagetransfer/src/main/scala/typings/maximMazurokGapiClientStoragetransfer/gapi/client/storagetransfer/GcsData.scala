@@ -22,7 +22,8 @@ object GcsData {
     __obj.asInstanceOf[GcsData]
   }
   
-  extension [Self <: GcsData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GcsData] (val x: Self) extends AnyVal {
     
     inline def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     

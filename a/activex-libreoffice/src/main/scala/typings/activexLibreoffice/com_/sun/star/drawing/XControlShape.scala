@@ -57,7 +57,8 @@ object XControlShape {
     __obj.asInstanceOf[XControlShape]
   }
   
-  extension [Self <: XControlShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XControlShape] (val x: Self) extends AnyVal {
     
     inline def setControl(value: XControlModel): Self = StObject.set(x, "Control", value.asInstanceOf[js.Any])
     

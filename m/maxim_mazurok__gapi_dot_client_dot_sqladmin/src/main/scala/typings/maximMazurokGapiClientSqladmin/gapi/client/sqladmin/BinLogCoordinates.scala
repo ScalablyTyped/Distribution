@@ -22,7 +22,8 @@ object BinLogCoordinates {
     __obj.asInstanceOf[BinLogCoordinates]
   }
   
-  extension [Self <: BinLogCoordinates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinLogCoordinates] (val x: Self) extends AnyVal {
     
     inline def setBinLogFileName(value: String): Self = StObject.set(x, "binLogFileName", value.asInstanceOf[js.Any])
     

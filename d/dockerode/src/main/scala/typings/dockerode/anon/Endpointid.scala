@@ -43,7 +43,8 @@ object Endpointid {
     __obj.asInstanceOf[Endpointid]
   }
   
-  extension [Self <: Endpointid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Endpointid] (val x: Self) extends AnyVal {
     
     inline def setEndpoint_id(value: String): Self = StObject.set(x, "endpoint_id", value.asInstanceOf[js.Any])
     

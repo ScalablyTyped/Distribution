@@ -33,7 +33,8 @@ object TestHypervisorConfigurationInput {
     __obj.asInstanceOf[TestHypervisorConfigurationInput]
   }
   
-  extension [Self <: TestHypervisorConfigurationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestHypervisorConfigurationInput] (val x: Self) extends AnyVal {
     
     inline def setGatewayArn(value: GatewayArn): Self = StObject.set(x, "GatewayArn", value.asInstanceOf[js.Any])
     

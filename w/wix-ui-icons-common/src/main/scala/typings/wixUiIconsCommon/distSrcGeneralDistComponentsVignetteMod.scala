@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsVignetteMod extends Shortcut {
       __obj.asInstanceOf[VignetteProps]
     }
     
-    extension [Self <: VignetteProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VignetteProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

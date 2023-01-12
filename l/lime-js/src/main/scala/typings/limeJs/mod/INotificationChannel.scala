@@ -17,7 +17,8 @@ object INotificationChannel {
     __obj.asInstanceOf[INotificationChannel]
   }
   
-  extension [Self <: INotificationChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INotificationChannel] (val x: Self) extends AnyVal {
     
     inline def setOnNotification(value: Notification => Any): Self = StObject.set(x, "onNotification", js.Any.fromFunction1(value))
     

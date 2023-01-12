@@ -15,7 +15,8 @@ object GetWorkloadInput {
     __obj.asInstanceOf[GetWorkloadInput]
   }
   
-  extension [Self <: GetWorkloadInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWorkloadInput] (val x: Self) extends AnyVal {
     
     inline def setWorkloadId(value: WorkloadId): Self = StObject.set(x, "WorkloadId", value.asInstanceOf[js.Any])
   }

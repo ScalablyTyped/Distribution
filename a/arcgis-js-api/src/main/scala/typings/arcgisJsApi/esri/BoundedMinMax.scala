@@ -83,7 +83,8 @@ object BoundedMinMax {
     __obj.asInstanceOf[BoundedMinMax]
   }
   
-  extension [Self <: BoundedMinMax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoundedMinMax] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object DomainMetadataResult {
     __obj.asInstanceOf[DomainMetadataResult]
   }
   
-  extension [Self <: DomainMetadataResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainMetadataResult] (val x: Self) extends AnyVal {
     
     inline def setAttributeNameCount(value: Integer): Self = StObject.set(x, "AttributeNameCount", value.asInstanceOf[js.Any])
     

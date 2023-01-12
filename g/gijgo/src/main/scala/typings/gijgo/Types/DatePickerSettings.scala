@@ -66,7 +66,8 @@ object DatePickerSettings {
     __obj.asInstanceOf[DatePickerSettings]
   }
   
-  extension [Self <: DatePickerSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatePickerSettings] (val x: Self) extends AnyVal {
     
     inline def setCalendarWeeks(value: Boolean): Self = StObject.set(x, "calendarWeeks", value.asInstanceOf[js.Any])
     

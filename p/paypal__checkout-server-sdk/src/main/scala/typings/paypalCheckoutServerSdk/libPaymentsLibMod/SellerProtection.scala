@@ -17,7 +17,8 @@ object SellerProtection {
     __obj.asInstanceOf[SellerProtection]
   }
   
-  extension [Self <: SellerProtection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SellerProtection] (val x: Self) extends AnyVal {
     
     inline def setDispute_categories(value: js.Array[DisputeCategory]): Self = StObject.set(x, "dispute_categories", value.asInstanceOf[js.Any])
     

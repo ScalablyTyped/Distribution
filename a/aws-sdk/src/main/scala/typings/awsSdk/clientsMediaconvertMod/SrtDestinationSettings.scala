@@ -18,7 +18,8 @@ object SrtDestinationSettings {
     __obj.asInstanceOf[SrtDestinationSettings]
   }
   
-  extension [Self <: SrtDestinationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SrtDestinationSettings] (val x: Self) extends AnyVal {
     
     inline def setStylePassthrough(value: SrtStylePassthrough): Self = StObject.set(x, "StylePassthrough", value.asInstanceOf[js.Any])
     

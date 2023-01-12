@@ -19,7 +19,8 @@ object MenuButtonDefault {
     __obj.asInstanceOf[MenuButtonDefault]
   }
   
-  extension [Self <: MenuButtonDefault](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuButtonDefault] (val x: Self) extends AnyVal {
     
     inline def setType(value: default): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

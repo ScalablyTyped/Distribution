@@ -18,7 +18,8 @@ object NonArraySchemaObject {
     __obj.asInstanceOf[NonArraySchemaObject]
   }
   
-  extension [Self <: NonArraySchemaObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonArraySchemaObject] (val x: Self) extends AnyVal {
     
     inline def setType(value: NonArraySchemaObjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

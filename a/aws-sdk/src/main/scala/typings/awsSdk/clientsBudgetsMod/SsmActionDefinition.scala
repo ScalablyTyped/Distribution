@@ -28,7 +28,8 @@ object SsmActionDefinition {
     __obj.asInstanceOf[SsmActionDefinition]
   }
   
-  extension [Self <: SsmActionDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SsmActionDefinition] (val x: Self) extends AnyVal {
     
     inline def setActionSubType(value: ActionSubType): Self = StObject.set(x, "ActionSubType", value.asInstanceOf[js.Any])
     

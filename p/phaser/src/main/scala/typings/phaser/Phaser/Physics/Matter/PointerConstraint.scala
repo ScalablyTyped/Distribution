@@ -148,7 +148,8 @@ object PointerConstraint {
     __obj.asInstanceOf[PointerConstraint]
   }
   
-  extension [Self <: PointerConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerConstraint] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

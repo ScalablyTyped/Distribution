@@ -24,7 +24,8 @@ object ServerDeploymentInput {
     __obj.asInstanceOf[ServerDeploymentInput]
   }
   
-  extension [Self <: ServerDeploymentInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerDeploymentInput] (val x: Self) extends AnyVal {
     
     inline def setParallelExecution(value: ExecutionInput): Self = StObject.set(x, "parallelExecution", value.asInstanceOf[js.Any])
   }

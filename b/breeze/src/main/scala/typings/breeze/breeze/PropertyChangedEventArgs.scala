@@ -32,7 +32,8 @@ object PropertyChangedEventArgs {
     __obj.asInstanceOf[PropertyChangedEventArgs]
   }
   
-  extension [Self <: PropertyChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     

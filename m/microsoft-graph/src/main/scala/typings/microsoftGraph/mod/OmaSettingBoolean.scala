@@ -18,7 +18,8 @@ object OmaSettingBoolean {
     __obj.asInstanceOf[OmaSettingBoolean]
   }
   
-  extension [Self <: OmaSettingBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmaSettingBoolean] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

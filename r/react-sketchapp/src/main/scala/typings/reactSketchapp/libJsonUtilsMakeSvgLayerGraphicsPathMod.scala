@@ -38,7 +38,8 @@ object libJsonUtilsMakeSvgLayerGraphicsPathMod {
       __obj.asInstanceOf[Path]
     }
     
-    extension [Self <: Path](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
       
       inline def setIsClosed(value: Any): Self = StObject.set(x, "isClosed", value.asInstanceOf[js.Any])
       

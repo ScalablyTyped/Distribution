@@ -28,7 +28,8 @@ object RxNormConcept {
     __obj.asInstanceOf[RxNormConcept]
   }
   
-  extension [Self <: RxNormConcept](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RxNormConcept] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

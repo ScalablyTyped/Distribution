@@ -33,7 +33,8 @@ object AwsApiGatewayCanarySettings {
     __obj.asInstanceOf[AwsApiGatewayCanarySettings]
   }
   
-  extension [Self <: AwsApiGatewayCanarySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsApiGatewayCanarySettings] (val x: Self) extends AnyVal {
     
     inline def setDeploymentId(value: NonEmptyString): Self = StObject.set(x, "DeploymentId", value.asInstanceOf[js.Any])
     

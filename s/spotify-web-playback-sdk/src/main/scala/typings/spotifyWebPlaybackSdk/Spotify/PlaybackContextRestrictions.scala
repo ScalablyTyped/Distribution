@@ -44,7 +44,8 @@ object PlaybackContextRestrictions {
     __obj.asInstanceOf[PlaybackContextRestrictions]
   }
   
-  extension [Self <: PlaybackContextRestrictions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaybackContextRestrictions] (val x: Self) extends AnyVal {
     
     inline def setPause(value: js.Array[String]): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
     

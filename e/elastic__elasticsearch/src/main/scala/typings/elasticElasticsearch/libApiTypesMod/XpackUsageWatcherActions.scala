@@ -16,7 +16,8 @@ object XpackUsageWatcherActions {
     __obj.asInstanceOf[XpackUsageWatcherActions]
   }
   
-  extension [Self <: XpackUsageWatcherActions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageWatcherActions] (val x: Self) extends AnyVal {
     
     inline def setActions(value: Record[Name, XpackUsageWatcherActionTotals]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
   }

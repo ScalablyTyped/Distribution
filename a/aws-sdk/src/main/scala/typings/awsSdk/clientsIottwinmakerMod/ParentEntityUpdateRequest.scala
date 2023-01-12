@@ -23,7 +23,8 @@ object ParentEntityUpdateRequest {
     __obj.asInstanceOf[ParentEntityUpdateRequest]
   }
   
-  extension [Self <: ParentEntityUpdateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParentEntityUpdateRequest] (val x: Self) extends AnyVal {
     
     inline def setParentEntityId(value: ParentEntityId): Self = StObject.set(x, "parentEntityId", value.asInstanceOf[js.Any])
     

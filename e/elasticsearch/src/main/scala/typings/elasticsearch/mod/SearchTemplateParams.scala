@@ -38,7 +38,8 @@ object SearchTemplateParams {
     __obj.asInstanceOf[SearchTemplateParams]
   }
   
-  extension [Self <: SearchTemplateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchTemplateParams] (val x: Self) extends AnyVal {
     
     inline def setAllowNoIndices(value: Boolean): Self = StObject.set(x, "allowNoIndices", value.asInstanceOf[js.Any])
     

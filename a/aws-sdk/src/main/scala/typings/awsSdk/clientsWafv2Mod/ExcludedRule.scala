@@ -18,7 +18,8 @@ object ExcludedRule {
     __obj.asInstanceOf[ExcludedRule]
   }
   
-  extension [Self <: ExcludedRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExcludedRule] (val x: Self) extends AnyVal {
     
     inline def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

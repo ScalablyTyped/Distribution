@@ -21,7 +21,8 @@ object ReportsRequestOptions {
     __obj.asInstanceOf[ReportsRequestOptions]
   }
   
-  extension [Self <: ReportsRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportsRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setEnd_date(value: String): Self = StObject.set(x, "end_date", value.asInstanceOf[js.Any])
     

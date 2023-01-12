@@ -29,7 +29,8 @@ object CoverageEntry {
     __obj.asInstanceOf[CoverageEntry]
   }
   
-  extension [Self <: CoverageEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoverageEntry] (val x: Self) extends AnyVal {
     
     inline def setRanges(value: js.Array[End]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     

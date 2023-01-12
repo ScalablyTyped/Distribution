@@ -16,7 +16,8 @@ object UndeleteRoleRequest {
     __obj.asInstanceOf[UndeleteRoleRequest]
   }
   
-  extension [Self <: UndeleteRoleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UndeleteRoleRequest] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

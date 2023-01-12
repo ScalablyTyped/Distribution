@@ -28,7 +28,8 @@ object AutoscalingPolicyCpuUtilization {
     __obj.asInstanceOf[AutoscalingPolicyCpuUtilization]
   }
   
-  extension [Self <: AutoscalingPolicyCpuUtilization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoscalingPolicyCpuUtilization] (val x: Self) extends AnyVal {
     
     inline def setPredictiveMethod(value: String): Self = StObject.set(x, "predictiveMethod", value.asInstanceOf[js.Any])
     

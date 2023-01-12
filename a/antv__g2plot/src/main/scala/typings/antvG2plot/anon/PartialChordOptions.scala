@@ -109,7 +109,8 @@ object PartialChordOptions {
     __obj.asInstanceOf[PartialChordOptions]
   }
   
-  extension [Self <: PartialChordOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialChordOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

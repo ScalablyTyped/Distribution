@@ -39,7 +39,8 @@ object typesUseIndeterminateCheckedMod {
       __obj.asInstanceOf[BaseIndeterminateCheckedHookReturnValue[V]]
     }
     
-    extension [Self <: BaseIndeterminateCheckedHookReturnValue[?], V /* <: String */](x: Self & BaseIndeterminateCheckedHookReturnValue[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseIndeterminateCheckedHookReturnValue[?], V /* <: String */] (val x: Self & BaseIndeterminateCheckedHookReturnValue[V]) extends AnyVal {
       
       inline def setCheckedValues(value: js.Array[V]): Self = StObject.set(x, "checkedValues", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object typesUseIndeterminateCheckedMod {
       __obj.asInstanceOf[BaseProvidedIndeterminateCheckboxProps]
     }
     
-    extension [Self <: BaseProvidedIndeterminateCheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseProvidedIndeterminateCheckboxProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-checked`(value: mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,8 @@ object typesUseIndeterminateCheckedMod {
       __obj.asInstanceOf[BaseProvidedIndeterminateControlledCheckboxProps[V]]
     }
     
-    extension [Self <: BaseProvidedIndeterminateControlledCheckboxProps[?], V /* <: String */](x: Self & BaseProvidedIndeterminateControlledCheckboxProps[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseProvidedIndeterminateControlledCheckboxProps[?], V /* <: String */] (val x: Self & BaseProvidedIndeterminateControlledCheckboxProps[V]) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -134,7 +137,8 @@ object typesUseIndeterminateCheckedMod {
       __obj.asInstanceOf[CombinedIndeterminateCheckedHookReturnValue[V]]
     }
     
-    extension [Self <: CombinedIndeterminateCheckedHookReturnValue[?], V /* <: String */](x: Self & CombinedIndeterminateCheckedHookReturnValue[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CombinedIndeterminateCheckedHookReturnValue[?], V /* <: String */] (val x: Self & CombinedIndeterminateCheckedHookReturnValue[V]) extends AnyVal {
       
       inline def setGetProps(value: V => ProvidedCombinedIndeterminateControlledProps[V]): Self = StObject.set(x, "getProps", js.Any.fromFunction1(value))
       
@@ -172,7 +176,8 @@ object typesUseIndeterminateCheckedMod {
       __obj.asInstanceOf[IndeterminateCheckedHookOptions[V]]
     }
     
-    extension [Self <: IndeterminateCheckedHookOptions[?], V /* <: String */](x: Self & IndeterminateCheckedHookOptions[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndeterminateCheckedHookOptions[?], V /* <: String */] (val x: Self & IndeterminateCheckedHookOptions[V]) extends AnyVal {
       
       inline def setDefaultCheckedValues(value: Initializer[V]): Self = StObject.set(x, "defaultCheckedValues", value.asInstanceOf[js.Any])
       
@@ -233,7 +238,8 @@ object typesUseIndeterminateCheckedMod {
       __obj.asInstanceOf[OnChangeReturnValue[V]]
     }
     
-    extension [Self <: OnChangeReturnValue[?], V /* <: String */](x: Self & OnChangeReturnValue[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnChangeReturnValue[?], V /* <: String */] (val x: Self & OnChangeReturnValue[V]) extends AnyVal {
       
       inline def setGetProps(value: V => ProvidedIndeterminateControlledCheckboxProps[V]): Self = StObject.set(x, "getProps", js.Any.fromFunction1(value))
       
@@ -266,7 +272,8 @@ object typesUseIndeterminateCheckedMod {
       __obj.asInstanceOf[OnCheckedChangeReturnValue[V]]
     }
     
-    extension [Self <: OnCheckedChangeReturnValue[?], V /* <: String */](x: Self & OnCheckedChangeReturnValue[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnCheckedChangeReturnValue[?], V /* <: String */] (val x: Self & OnCheckedChangeReturnValue[V]) extends AnyVal {
       
       inline def setGetProps(value: V => ProvidedIndeterminateControlledMenuItemCheckboxProps[V]): Self = StObject.set(x, "getProps", js.Any.fromFunction1(value))
       
@@ -294,7 +301,8 @@ object typesUseIndeterminateCheckedMod {
       __obj.asInstanceOf[ProvidedCombinedIndeterminateControlledProps[V]]
     }
     
-    extension [Self <: ProvidedCombinedIndeterminateControlledProps[?], V /* <: String */](x: Self & ProvidedCombinedIndeterminateControlledProps[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvidedCombinedIndeterminateControlledProps[?], V /* <: String */] (val x: Self & ProvidedCombinedIndeterminateControlledProps[V]) extends AnyVal {
       
       inline def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
       
@@ -325,7 +333,8 @@ object typesUseIndeterminateCheckedMod {
       __obj.asInstanceOf[ProvidedCombinedIndeterminateProps]
     }
     
-    extension [Self <: ProvidedCombinedIndeterminateProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvidedCombinedIndeterminateProps] (val x: Self) extends AnyVal {
       
       inline def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
       
@@ -350,7 +359,8 @@ object typesUseIndeterminateCheckedMod {
       __obj.asInstanceOf[ProvidedIndeterminateCheckboxProps]
     }
     
-    extension [Self <: ProvidedIndeterminateCheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvidedIndeterminateCheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
     }
@@ -369,7 +379,8 @@ object typesUseIndeterminateCheckedMod {
       __obj.asInstanceOf[ProvidedIndeterminateControlledCheckboxProps[V]]
     }
     
-    extension [Self <: ProvidedIndeterminateControlledCheckboxProps[?], V /* <: String */](x: Self & ProvidedIndeterminateControlledCheckboxProps[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvidedIndeterminateControlledCheckboxProps[?], V /* <: String */] (val x: Self & ProvidedIndeterminateControlledCheckboxProps[V]) extends AnyVal {
       
       inline def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
     }
@@ -388,7 +399,8 @@ object typesUseIndeterminateCheckedMod {
       __obj.asInstanceOf[ProvidedIndeterminateControlledMenuItemCheckboxProps[V]]
     }
     
-    extension [Self <: ProvidedIndeterminateControlledMenuItemCheckboxProps[?], V /* <: String */](x: Self & ProvidedIndeterminateControlledMenuItemCheckboxProps[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvidedIndeterminateControlledMenuItemCheckboxProps[?], V /* <: String */] (val x: Self & ProvidedIndeterminateControlledMenuItemCheckboxProps[V]) extends AnyVal {
       
       inline def setOnCheckedChange(value: () => Unit): Self = StObject.set(x, "onCheckedChange", js.Any.fromFunction0(value))
     }
@@ -407,7 +419,8 @@ object typesUseIndeterminateCheckedMod {
       __obj.asInstanceOf[ProvidedIndeterminateMenuItemCheckboxProps]
     }
     
-    extension [Self <: ProvidedIndeterminateMenuItemCheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvidedIndeterminateMenuItemCheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setOnCheckedChange(value: () => Unit): Self = StObject.set(x, "onCheckedChange", js.Any.fromFunction0(value))
     }

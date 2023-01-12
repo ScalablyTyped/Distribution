@@ -15,7 +15,8 @@ object ColumnGroupInterface {
     __obj.asInstanceOf[ColumnGroupInterface[D]]
   }
   
-  extension [Self <: ColumnGroupInterface[?], D /* <: js.Object */](x: Self & ColumnGroupInterface[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnGroupInterface[?], D /* <: js.Object */] (val x: Self & ColumnGroupInterface[D]) extends AnyVal {
     
     inline def setColumns(value: js.Array[Column[D]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object CumsumAttrs {
     __obj.asInstanceOf[CumsumAttrs]
   }
   
-  extension [Self <: CumsumAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CumsumAttrs] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

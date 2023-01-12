@@ -33,7 +33,8 @@ object ListActionExecutionsInput {
     __obj.asInstanceOf[ListActionExecutionsInput]
   }
   
-  extension [Self <: ListActionExecutionsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListActionExecutionsInput] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: ActionExecutionFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

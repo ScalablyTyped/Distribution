@@ -23,7 +23,8 @@ object GetDistributionsRequest {
     __obj.asInstanceOf[GetDistributionsRequest]
   }
   
-  extension [Self <: GetDistributionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDistributionsRequest] (val x: Self) extends AnyVal {
     
     inline def setDistributionName(value: ResourceName): Self = StObject.set(x, "distributionName", value.asInstanceOf[js.Any])
     

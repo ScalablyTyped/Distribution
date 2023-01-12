@@ -28,7 +28,8 @@ object ConnectionHttpParameters {
     __obj.asInstanceOf[ConnectionHttpParameters]
   }
   
-  extension [Self <: ConnectionHttpParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionHttpParameters] (val x: Self) extends AnyVal {
     
     inline def setBodyParameters(value: ConnectionBodyParametersList): Self = StObject.set(x, "BodyParameters", value.asInstanceOf[js.Any])
     

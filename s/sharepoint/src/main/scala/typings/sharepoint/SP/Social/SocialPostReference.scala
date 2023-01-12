@@ -41,7 +41,8 @@ object SocialPostReference {
     __obj.asInstanceOf[SocialPostReference]
   }
   
-  extension [Self <: SocialPostReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocialPostReference] (val x: Self) extends AnyVal {
     
     inline def setGet_digest(value: () => SocialThread): Self = StObject.set(x, "get_digest", js.Any.fromFunction0(value))
     

@@ -21,7 +21,8 @@ object FancyBoxImageOption {
     __obj.asInstanceOf[FancyBoxImageOption]
   }
   
-  extension [Self <: FancyBoxImageOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FancyBoxImageOption] (val x: Self) extends AnyVal {
     
     inline def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
   }

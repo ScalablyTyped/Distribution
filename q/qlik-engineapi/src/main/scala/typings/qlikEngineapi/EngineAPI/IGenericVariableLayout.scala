@@ -33,7 +33,8 @@ object IGenericVariableLayout {
     __obj.asInstanceOf[IGenericVariableLayout]
   }
   
-  extension [Self <: IGenericVariableLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericVariableLayout] (val x: Self) extends AnyVal {
     
     inline def setQIsScriptCreated(value: Boolean): Self = StObject.set(x, "qIsScriptCreated", value.asInstanceOf[js.Any])
     

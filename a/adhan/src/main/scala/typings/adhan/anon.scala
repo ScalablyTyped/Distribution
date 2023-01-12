@@ -41,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Abyad]
     }
     
-    extension [Self <: Abyad](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Abyad] (val x: Self) extends AnyVal {
       
       inline def setAbyad(value: abyad): Self = StObject.set(x, "Abyad", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object anon {
       __obj.asInstanceOf[AqrabBalad]
     }
     
-    extension [Self <: AqrabBalad](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AqrabBalad] (val x: Self) extends AnyVal {
       
       inline def setAqrabBalad(value: typings.adhan.adhanStrings.AqrabBalad): Self = StObject.set(x, "AqrabBalad", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object anon {
       __obj.asInstanceOf[Asr]
     }
     
-    extension [Self <: Asr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Asr] (val x: Self) extends AnyVal {
       
       inline def setAsr(value: Double): Self = StObject.set(x, "asr", value.asInstanceOf[js.Any])
       
@@ -138,7 +141,8 @@ object anon {
       __obj.asInstanceOf[Coordinates]
     }
     
-    extension [Self <: Coordinates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Coordinates] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: default): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
@@ -175,7 +179,8 @@ object anon {
       __obj.asInstanceOf[Dhuhr]
     }
     
-    extension [Self <: Dhuhr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dhuhr] (val x: Self) extends AnyVal {
       
       inline def setAsr(value: asr): Self = StObject.set(x, "Asr", value.asInstanceOf[js.Any])
       
@@ -242,7 +247,8 @@ object anon {
       __obj.asInstanceOf[Dubai]
     }
     
-    extension [Self <: Dubai](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dubai] (val x: Self) extends AnyVal {
       
       inline def setDubai(value: () => typings.adhan.libTypesCalculationParametersMod.default): Self = StObject.set(x, "Dubai", js.Any.fromFunction0(value))
       
@@ -285,7 +291,8 @@ object anon {
       __obj.asInstanceOf[Fajr]
     }
     
-    extension [Self <: Fajr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fajr] (val x: Self) extends AnyVal {
       
       inline def setFajr(value: Double): Self = StObject.set(x, "fajr", value.asInstanceOf[js.Any])
       
@@ -306,7 +313,8 @@ object anon {
       __obj.asInstanceOf[Hanafi]
     }
     
-    extension [Self <: Hanafi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hanafi] (val x: Self) extends AnyVal {
       
       inline def setHanafi(value: hanafi): Self = StObject.set(x, "Hanafi", value.asInstanceOf[js.Any])
       
@@ -331,7 +339,8 @@ object anon {
       __obj.asInstanceOf[MiddleOfTheNight]
     }
     
-    extension [Self <: MiddleOfTheNight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MiddleOfTheNight] (val x: Self) extends AnyVal {
       
       inline def setMiddleOfTheNight(value: middleofthenight): Self = StObject.set(x, "MiddleOfTheNight", value.asInstanceOf[js.Any])
       
@@ -358,7 +367,8 @@ object anon {
       __obj.asInstanceOf[Nearest]
     }
     
-    extension [Self <: Nearest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Nearest] (val x: Self) extends AnyVal {
       
       inline def setNearest(value: nearest): Self = StObject.set(x, "Nearest", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object ReferenceResolutionResult {
     __obj.asInstanceOf[ReferenceResolutionResult]
   }
   
-  extension [Self <: ReferenceResolutionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferenceResolutionResult] (val x: Self) extends AnyVal {
     
     inline def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     

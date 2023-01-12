@@ -32,7 +32,8 @@ object ComponentsObject {
     __obj.asInstanceOf[ComponentsObject]
   }
   
-  extension [Self <: ComponentsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentsObject] (val x: Self) extends AnyVal {
     
     inline def setCallbacks(value: StringDictionary[ReferenceObject | CallbackObject]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
     

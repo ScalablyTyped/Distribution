@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Clear]
     }
     
-    extension [Self <: Clear](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Clear] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     }
@@ -58,7 +59,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordDefaultBreak]
     }
     
-    extension [Self <: PartialRecordDefaultBreak](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordDefaultBreak] (val x: Self) extends AnyVal {
       
       inline def setLg(value: BreakpointDirection): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       

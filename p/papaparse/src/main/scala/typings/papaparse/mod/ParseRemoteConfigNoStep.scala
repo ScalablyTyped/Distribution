@@ -20,7 +20,8 @@ object ParseRemoteConfigNoStep {
     __obj.asInstanceOf[ParseRemoteConfigNoStep[T]]
   }
   
-  extension [Self <: ParseRemoteConfigNoStep[?], T](x: Self & ParseRemoteConfigNoStep[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParseRemoteConfigNoStep[?], T] (val x: Self & ParseRemoteConfigNoStep[T]) extends AnyVal {
     
     inline def setComplete(value: (ParseResult[T], String) => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction2(value))
   }

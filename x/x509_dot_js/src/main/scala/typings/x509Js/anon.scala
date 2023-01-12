@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[CommonName]
     }
     
-    extension [Self <: CommonName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonName] (val x: Self) extends AnyVal {
       
       inline def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[CountryName]
     }
     
-    extension [Self <: CountryName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CountryName] (val x: Self) extends AnyVal {
       
       inline def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
       

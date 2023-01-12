@@ -23,7 +23,8 @@ object ListAssociatedAttributeGroupsResponse {
     __obj.asInstanceOf[ListAssociatedAttributeGroupsResponse]
   }
   
-  extension [Self <: ListAssociatedAttributeGroupsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAssociatedAttributeGroupsResponse] (val x: Self) extends AnyVal {
     
     inline def setAttributeGroups(value: AttributeGroupIds): Self = StObject.set(x, "attributeGroups", value.asInstanceOf[js.Any])
     

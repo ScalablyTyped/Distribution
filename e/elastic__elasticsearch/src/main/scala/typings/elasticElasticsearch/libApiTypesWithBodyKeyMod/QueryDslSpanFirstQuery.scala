@@ -20,7 +20,8 @@ object QueryDslSpanFirstQuery {
     __obj.asInstanceOf[QueryDslSpanFirstQuery]
   }
   
-  extension [Self <: QueryDslSpanFirstQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslSpanFirstQuery] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: integer): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

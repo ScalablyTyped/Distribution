@@ -21,7 +21,8 @@ object DictkUrn {
     __obj.asInstanceOf[DictkUrn]
   }
   
-  extension [Self <: DictkUrn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictkUrn] (val x: Self) extends AnyVal {
     
     inline def setUrn(value: String): Self = StObject.set(x, "urn", value.asInstanceOf[js.Any])
     

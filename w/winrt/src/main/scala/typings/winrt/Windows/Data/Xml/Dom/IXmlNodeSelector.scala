@@ -26,7 +26,8 @@ object IXmlNodeSelector {
     __obj.asInstanceOf[IXmlNodeSelector]
   }
   
-  extension [Self <: IXmlNodeSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IXmlNodeSelector] (val x: Self) extends AnyVal {
     
     inline def setSelectNodes(value: String => XmlNodeList): Self = StObject.set(x, "selectNodes", js.Any.fromFunction1(value))
     

@@ -46,7 +46,8 @@ object libVanillaInterfaceMod {
       __obj.asInstanceOf[LocationLike]
     }
     
-    extension [Self <: LocationLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocationLike] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       

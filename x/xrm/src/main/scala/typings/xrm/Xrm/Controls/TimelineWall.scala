@@ -32,7 +32,8 @@ object TimelineWall {
     __obj.asInstanceOf[TimelineWall]
   }
   
-  extension [Self <: TimelineWall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineWall] (val x: Self) extends AnyVal {
     
     inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
   }

@@ -29,7 +29,8 @@ object NotebookCellExecutionSummary {
     __obj.asInstanceOf[NotebookCellExecutionSummary]
   }
   
-  extension [Self <: NotebookCellExecutionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookCellExecutionSummary] (val x: Self) extends AnyVal {
     
     inline def setExecutionOrder(value: Double): Self = StObject.set(x, "executionOrder", value.asInstanceOf[js.Any])
     

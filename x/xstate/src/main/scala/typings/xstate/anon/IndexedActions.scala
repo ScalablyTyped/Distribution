@@ -40,7 +40,8 @@ object IndexedActions {
     __obj.asInstanceOf[IndexedActions[TAction, TEvent, TServiceMap, TTypesMeta]]
   }
   
-  extension [Self <: IndexedActions[?, ?, ?, ?], TAction /* <: BaseActionObject */, TEvent /* <: EventObject */, TServiceMap /* <: ServiceMap */, TTypesMeta /* <: TypegenConstraint */](x: Self & (IndexedActions[TAction, TEvent, TServiceMap, TTypesMeta])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexedActions[?, ?, ?, ?], TAction /* <: BaseActionObject */, TEvent /* <: EventObject */, TServiceMap /* <: ServiceMap */, TTypesMeta /* <: TypegenConstraint */] (val x: Self & (IndexedActions[TAction, TEvent, TServiceMap, TTypesMeta])) extends AnyVal {
     
     inline def setIndexedActions(value: IndexByType[TAction]): Self = StObject.set(x, "indexedActions", value.asInstanceOf[js.Any])
     

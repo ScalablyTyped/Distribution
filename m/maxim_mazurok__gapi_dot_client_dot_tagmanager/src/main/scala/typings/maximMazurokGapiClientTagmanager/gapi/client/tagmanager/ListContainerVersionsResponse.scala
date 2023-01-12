@@ -19,7 +19,8 @@ object ListContainerVersionsResponse {
     __obj.asInstanceOf[ListContainerVersionsResponse]
   }
   
-  extension [Self <: ListContainerVersionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListContainerVersionsResponse] (val x: Self) extends AnyVal {
     
     inline def setContainerVersionHeader(value: js.Array[ContainerVersionHeader]): Self = StObject.set(x, "containerVersionHeader", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object TextDetectionParams {
     __obj.asInstanceOf[TextDetectionParams]
   }
   
-  extension [Self <: TextDetectionParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextDetectionParams] (val x: Self) extends AnyVal {
     
     inline def setAdvancedOcrOptions(value: js.Array[String]): Self = StObject.set(x, "advancedOcrOptions", value.asInstanceOf[js.Any])
     

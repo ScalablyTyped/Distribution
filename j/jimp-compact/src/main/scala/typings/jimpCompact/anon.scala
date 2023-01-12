@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Decoders]
     }
     
-    extension [Self <: Decoders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Decoders] (val x: Self) extends AnyVal {
       
       inline def setDecoders(value: IntersectedPluginDecoders): Self = StObject.set(x, "decoders", value.asInstanceOf[js.Any])
       

@@ -53,7 +53,8 @@ object LoggingStatus {
     __obj.asInstanceOf[LoggingStatus]
   }
   
-  extension [Self <: LoggingStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoggingStatus] (val x: Self) extends AnyVal {
     
     inline def setBucketName(value: String): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
     

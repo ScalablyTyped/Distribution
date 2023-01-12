@@ -29,7 +29,8 @@ object PartialStyleRulesButtonBa {
     __obj.asInstanceOf[PartialStyleRulesButtonBa]
   }
   
-  extension [Self <: PartialStyleRulesButtonBa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesButtonBa] (val x: Self) extends AnyVal {
     
     inline def setDisabled(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

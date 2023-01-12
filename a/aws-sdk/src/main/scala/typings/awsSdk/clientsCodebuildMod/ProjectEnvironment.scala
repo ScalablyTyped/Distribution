@@ -54,7 +54,8 @@ object ProjectEnvironment {
     __obj.asInstanceOf[ProjectEnvironment]
   }
   
-  extension [Self <: ProjectEnvironment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectEnvironment] (val x: Self) extends AnyVal {
     
     inline def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     

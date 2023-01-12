@@ -19,7 +19,8 @@ object IncludeAccount {
     __obj.asInstanceOf[IncludeAccount]
   }
   
-  extension [Self <: IncludeAccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeAccount] (val x: Self) extends AnyVal {
     
     inline def setIncludeAccount(value: Boolean): Self = StObject.set(x, "includeAccount", value.asInstanceOf[js.Any])
     

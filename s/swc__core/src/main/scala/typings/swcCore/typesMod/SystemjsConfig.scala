@@ -21,7 +21,8 @@ object SystemjsConfig {
     __obj.asInstanceOf[SystemjsConfig]
   }
   
-  extension [Self <: SystemjsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemjsConfig] (val x: Self) extends AnyVal {
     
     inline def setAllowTopLevelThis(value: Boolean): Self = StObject.set(x, "allowTopLevelThis", value.asInstanceOf[js.Any])
     

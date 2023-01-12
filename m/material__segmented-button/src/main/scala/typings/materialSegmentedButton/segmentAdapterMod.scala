@@ -78,7 +78,8 @@ object segmentAdapterMod {
       __obj.asInstanceOf[MDCSegmentedButtonSegmentAdapter]
     }
     
-    extension [Self <: MDCSegmentedButtonSegmentAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCSegmentedButtonSegmentAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

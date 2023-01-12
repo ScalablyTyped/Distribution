@@ -33,7 +33,8 @@ object CreateDataSetRequest {
     __obj.asInstanceOf[CreateDataSetRequest]
   }
   
-  extension [Self <: CreateDataSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDataSetRequest] (val x: Self) extends AnyVal {
     
     inline def setAssetType(value: AssetType): Self = StObject.set(x, "AssetType", value.asInstanceOf[js.Any])
     

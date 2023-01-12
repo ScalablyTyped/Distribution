@@ -82,7 +82,8 @@ object distCommonjsAddonsPaginationPaginationItemMod {
       __obj.asInstanceOf[StrictPaginationItemProps]
     }
     
-    extension [Self <: StrictPaginationItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictPaginationItemProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

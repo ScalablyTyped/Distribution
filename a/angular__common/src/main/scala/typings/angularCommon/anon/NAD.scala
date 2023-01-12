@@ -19,7 +19,8 @@ object NAD {
     __obj.asInstanceOf[NAD]
   }
   
-  extension [Self <: NAD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NAD] (val x: Self) extends AnyVal {
     
     inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     

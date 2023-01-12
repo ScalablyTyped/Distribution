@@ -524,7 +524,8 @@ object srcMathVector2Mod {
       __obj.asInstanceOf[Vector]
     }
     
-    extension [Self <: Vector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vector] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: Vector => Vector): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

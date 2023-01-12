@@ -44,7 +44,8 @@ object MediaBlock {
     __obj.asInstanceOf[MediaBlock]
   }
   
-  extension [Self <: MediaBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaBlock] (val x: Self) extends AnyVal {
     
     inline def setClass(value: Media): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     

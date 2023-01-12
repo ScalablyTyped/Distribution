@@ -23,7 +23,8 @@ object StartCostEstimationRequest {
     __obj.asInstanceOf[StartCostEstimationRequest]
   }
   
-  extension [Self <: StartCostEstimationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartCostEstimationRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[PasswdEntry]
     }
     
-    extension [Self <: PasswdEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PasswdEntry] (val x: Self) extends AnyVal {
       
       inline def setGecos(value: String): Self = StObject.set(x, "gecos", value.asInstanceOf[js.Any])
       

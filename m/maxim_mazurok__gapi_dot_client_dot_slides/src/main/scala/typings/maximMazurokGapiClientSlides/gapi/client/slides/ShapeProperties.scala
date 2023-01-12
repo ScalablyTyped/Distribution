@@ -43,7 +43,8 @@ object ShapeProperties {
     __obj.asInstanceOf[ShapeProperties]
   }
   
-  extension [Self <: ShapeProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeProperties] (val x: Self) extends AnyVal {
     
     inline def setAutofit(value: Autofit): Self = StObject.set(x, "autofit", value.asInstanceOf[js.Any])
     

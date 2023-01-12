@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[TextElements]
     }
     
-    extension [Self <: TextElements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextElements] (val x: Self) extends AnyVal {
       
       inline def setCharacters(value: js.Array[SVGGElement]): Self = StObject.set(x, "characters", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object mod {
       __obj.asInstanceOf[TextProperties]
     }
     
-    extension [Self <: TextProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextProperties] (val x: Self) extends AnyVal {
       
       inline def setAutoAnimation(value: Boolean): Self = StObject.set(x, "autoAnimation", value.asInstanceOf[js.Any])
       
@@ -189,7 +191,8 @@ object mod {
       __obj.asInstanceOf[TextStep]
     }
     
-    extension [Self <: TextStep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextStep] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       

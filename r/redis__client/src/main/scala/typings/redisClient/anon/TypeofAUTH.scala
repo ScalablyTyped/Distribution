@@ -23,7 +23,8 @@ object TypeofAUTH {
     __obj.asInstanceOf[TypeofAUTH]
   }
   
-  extension [Self <: TypeofAUTH](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofAUTH] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: AuthOptions => RedisCommandArguments): Self = StObject.set(x, "transformArguments", js.Any.fromFunction1(value))
     

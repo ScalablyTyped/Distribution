@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[ContainerHeight]
     }
     
-    extension [Self <: ContainerHeight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerHeight] (val x: Self) extends AnyVal {
       
       inline def setContainerHeight(value: Double): Self = StObject.set(x, "containerHeight", value.asInstanceOf[js.Any])
       

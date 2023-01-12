@@ -15,7 +15,8 @@ object PluginResponse {
     __obj.asInstanceOf[PluginResponse]
   }
   
-  extension [Self <: PluginResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginResponse] (val x: Self) extends AnyVal {
     
     inline def setScanResults(value: js.Array[ScanResult]): Self = StObject.set(x, "scanResults", value.asInstanceOf[js.Any])
     

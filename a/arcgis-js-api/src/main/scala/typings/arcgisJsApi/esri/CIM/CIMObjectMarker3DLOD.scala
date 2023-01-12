@@ -26,7 +26,8 @@ object CIMObjectMarker3DLOD {
     __obj.asInstanceOf[CIMObjectMarker3DLOD]
   }
   
-  extension [Self <: CIMObjectMarker3DLOD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMObjectMarker3DLOD] (val x: Self) extends AnyVal {
     
     inline def setFaceCount(value: Double): Self = StObject.set(x, "faceCount", value.asInstanceOf[js.Any])
     

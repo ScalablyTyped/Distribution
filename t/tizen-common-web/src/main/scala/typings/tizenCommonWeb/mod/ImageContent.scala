@@ -54,7 +54,8 @@ object ImageContent {
     __obj.asInstanceOf[ImageContent]
   }
   
-  extension [Self <: ImageContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageContent] (val x: Self) extends AnyVal {
     
     inline def setGeolocation(value: SimpleCoordinates): Self = StObject.set(x, "geolocation", value.asInstanceOf[js.Any])
     

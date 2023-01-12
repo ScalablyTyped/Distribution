@@ -47,7 +47,8 @@ object Common_ {
     __obj.asInstanceOf[Common_]
   }
   
-  extension [Self <: Common_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Common_] (val x: Self) extends AnyVal {
     
     inline def setBase64Regex(value: String): Self = StObject.set(x, "base64Regex", value.asInstanceOf[js.Any])
     

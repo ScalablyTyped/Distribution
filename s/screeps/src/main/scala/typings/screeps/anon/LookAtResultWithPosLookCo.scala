@@ -68,7 +68,8 @@ object LookAtResultWithPosLookCo {
     __obj.asInstanceOf[LookAtResultWithPosLookCo]
   }
   
-  extension [Self <: LookAtResultWithPosLookCo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LookAtResultWithPosLookCo] (val x: Self) extends AnyVal {
     
     inline def setConstructionSite(value: ConstructionSite[BuildableStructureConstant]): Self = StObject.set(x, "constructionSite", value.asInstanceOf[js.Any])
     

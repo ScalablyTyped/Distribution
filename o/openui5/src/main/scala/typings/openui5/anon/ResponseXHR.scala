@@ -35,7 +35,8 @@ object ResponseXHR {
     __obj.asInstanceOf[ResponseXHR]
   }
   
-  extension [Self <: ResponseXHR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseXHR] (val x: Self) extends AnyVal {
     
     inline def setItem(value: default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

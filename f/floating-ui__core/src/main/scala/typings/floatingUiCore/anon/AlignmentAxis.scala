@@ -34,7 +34,8 @@ object AlignmentAxis {
     __obj.asInstanceOf[AlignmentAxis]
   }
   
-  extension [Self <: AlignmentAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlignmentAxis] (val x: Self) extends AnyVal {
     
     inline def setAlignmentAxis(value: Double): Self = StObject.set(x, "alignmentAxis", value.asInstanceOf[js.Any])
     

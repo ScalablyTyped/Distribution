@@ -27,7 +27,8 @@ object Attributes {
     __obj.asInstanceOf[Attributes]
   }
   
-  extension [Self <: Attributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
     
     inline def setAttributeMap(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.cloudtrace.gapi.client.cloudtrace.AttributeValue} */ js.Any

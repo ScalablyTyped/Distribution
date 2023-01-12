@@ -33,7 +33,8 @@ object CommonOrganisationDetailV2 {
     __obj.asInstanceOf[CommonOrganisationDetailV2]
   }
   
-  extension [Self <: CommonOrganisationDetailV2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonOrganisationDetailV2] (val x: Self) extends AnyVal {
     
     inline def setPhysicalAddresses(value: js.Array[Paf]): Self = StObject.set(x, "physicalAddresses", value.asInstanceOf[js.Any])
     

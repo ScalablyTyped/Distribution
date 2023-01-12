@@ -97,7 +97,8 @@ object MapOptions {
     __obj.asInstanceOf[MapOptions]
   }
   
-  extension [Self <: MapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
     
     inline def setAttributionControl(value: Boolean): Self = StObject.set(x, "attributionControl", value.asInstanceOf[js.Any])
     

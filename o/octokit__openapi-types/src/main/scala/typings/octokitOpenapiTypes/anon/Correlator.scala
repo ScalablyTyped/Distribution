@@ -31,7 +31,8 @@ object Correlator {
     __obj.asInstanceOf[Correlator]
   }
   
-  extension [Self <: Correlator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Correlator] (val x: Self) extends AnyVal {
     
     inline def setCorrelator(value: String): Self = StObject.set(x, "correlator", value.asInstanceOf[js.Any])
     

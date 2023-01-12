@@ -50,7 +50,8 @@ object distTypesMiddlewaresCrossOriginResourcePolicyMod {
       __obj.asInstanceOf[CrossOriginResourcePolicyOptions]
     }
     
-    extension [Self <: CrossOriginResourcePolicyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrossOriginResourcePolicyOptions] (val x: Self) extends AnyVal {
       
       inline def setPolicy(value: `same-origin` | `same-site` | `cross-origin`): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       

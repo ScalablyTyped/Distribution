@@ -19,7 +19,8 @@ object PlaybackTrackWindow {
     __obj.asInstanceOf[PlaybackTrackWindow]
   }
   
-  extension [Self <: PlaybackTrackWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaybackTrackWindow] (val x: Self) extends AnyVal {
     
     inline def setCurrent_track(value: Track): Self = StObject.set(x, "current_track", value.asInstanceOf[js.Any])
     

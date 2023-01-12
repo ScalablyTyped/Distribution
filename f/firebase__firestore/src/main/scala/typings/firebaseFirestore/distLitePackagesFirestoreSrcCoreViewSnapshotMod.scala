@@ -111,7 +111,8 @@ object distLitePackagesFirestoreSrcCoreViewSnapshotMod {
       __obj.asInstanceOf[DocumentViewChange]
     }
     
-    extension [Self <: DocumentViewChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentViewChange] (val x: Self) extends AnyVal {
       
       inline def setDoc(value: Document): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
       

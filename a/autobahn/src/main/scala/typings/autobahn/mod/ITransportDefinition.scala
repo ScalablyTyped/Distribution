@@ -20,7 +20,8 @@ object ITransportDefinition {
     __obj.asInstanceOf[ITransportDefinition]
   }
   
-  extension [Self <: ITransportDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITransportDefinition] (val x: Self) extends AnyVal {
     
     inline def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
     

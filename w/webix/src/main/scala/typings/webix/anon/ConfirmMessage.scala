@@ -32,7 +32,8 @@ object ConfirmMessage {
     __obj.asInstanceOf[ConfirmMessage]
   }
   
-  extension [Self <: ConfirmMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmMessage] (val x: Self) extends AnyVal {
     
     inline def setConfirmMessage(value: String): Self = StObject.set(x, "confirmMessage", value.asInstanceOf[js.Any])
     

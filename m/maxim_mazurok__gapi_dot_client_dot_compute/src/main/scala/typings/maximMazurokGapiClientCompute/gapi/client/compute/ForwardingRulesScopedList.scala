@@ -20,7 +20,8 @@ object ForwardingRulesScopedList {
     __obj.asInstanceOf[ForwardingRulesScopedList]
   }
   
-  extension [Self <: ForwardingRulesScopedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForwardingRulesScopedList] (val x: Self) extends AnyVal {
     
     inline def setForwardingRules(value: js.Array[ForwardingRule]): Self = StObject.set(x, "forwardingRules", value.asInstanceOf[js.Any])
     

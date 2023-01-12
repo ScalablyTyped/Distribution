@@ -64,7 +64,8 @@ object distTypesCoreInfrastructureBaseServiceMod {
       __obj.asInstanceOf[BaseServiceOptions]
     }
     
-    extension [Self <: BaseServiceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseServiceOptions] (val x: Self) extends AnyVal {
       
       inline def setCamelize(value: Boolean): Self = StObject.set(x, "camelize", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object distTypesCoreInfrastructureBaseServiceMod {
       __obj.asInstanceOf[Requester]
     }
     
-    extension [Self <: Requester](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Requester] (val x: Self) extends AnyVal {
       
       inline def setDelete(value: js.Function): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
       

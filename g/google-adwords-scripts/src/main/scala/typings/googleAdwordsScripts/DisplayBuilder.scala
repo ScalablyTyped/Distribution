@@ -27,7 +27,8 @@ object DisplayBuilder {
     __obj.asInstanceOf[DisplayBuilder[T]]
   }
   
-  extension [Self <: DisplayBuilder[?], T](x: Self & DisplayBuilder[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayBuilder[?], T] (val x: Self & DisplayBuilder[T]) extends AnyVal {
     
     inline def setExclude(value: () => AdWordsOperation[T]): Self = StObject.set(x, "exclude", js.Any.fromFunction0(value))
     

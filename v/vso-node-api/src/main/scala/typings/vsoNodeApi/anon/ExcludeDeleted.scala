@@ -19,7 +19,8 @@ object ExcludeDeleted {
     __obj.asInstanceOf[ExcludeDeleted]
   }
   
-  extension [Self <: ExcludeDeleted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExcludeDeleted] (val x: Self) extends AnyVal {
     
     inline def setExcludeDeleted(value: scala.Double): Self = StObject.set(x, "excludeDeleted", value.asInstanceOf[js.Any])
     

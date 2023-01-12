@@ -18,7 +18,8 @@ object GetAssetPropertyValueResponse {
     __obj.asInstanceOf[GetAssetPropertyValueResponse]
   }
   
-  extension [Self <: GetAssetPropertyValueResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAssetPropertyValueResponse] (val x: Self) extends AnyVal {
     
     inline def setPropertyValue(value: AssetPropertyValue): Self = StObject.set(x, "propertyValue", value.asInstanceOf[js.Any])
     

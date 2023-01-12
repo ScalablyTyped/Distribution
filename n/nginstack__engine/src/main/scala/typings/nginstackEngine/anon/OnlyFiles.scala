@@ -17,7 +17,8 @@ object OnlyFiles {
     __obj.asInstanceOf[OnlyFiles]
   }
   
-  extension [Self <: OnlyFiles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnlyFiles] (val x: Self) extends AnyVal {
     
     inline def setOnlyFiles(value: Boolean): Self = StObject.set(x, "onlyFiles", value.asInstanceOf[js.Any])
     

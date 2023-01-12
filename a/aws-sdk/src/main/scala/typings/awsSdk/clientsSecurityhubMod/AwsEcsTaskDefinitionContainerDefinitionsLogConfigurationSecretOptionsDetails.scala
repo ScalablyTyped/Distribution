@@ -23,7 +23,8 @@ object AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDeta
     __obj.asInstanceOf[AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetails]
   }
   
-  extension [Self <: AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetails] (val x: Self) extends AnyVal {
     
     inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

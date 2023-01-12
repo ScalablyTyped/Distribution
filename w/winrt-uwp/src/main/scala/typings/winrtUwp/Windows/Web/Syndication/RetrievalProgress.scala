@@ -20,7 +20,8 @@ object RetrievalProgress {
     __obj.asInstanceOf[RetrievalProgress]
   }
   
-  extension [Self <: RetrievalProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetrievalProgress] (val x: Self) extends AnyVal {
     
     inline def setBytesRetrieved(value: Double): Self = StObject.set(x, "bytesRetrieved", value.asInstanceOf[js.Any])
     

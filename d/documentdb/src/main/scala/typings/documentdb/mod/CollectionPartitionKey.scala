@@ -27,7 +27,8 @@ object CollectionPartitionKey {
     __obj.asInstanceOf[CollectionPartitionKey]
   }
   
-  extension [Self <: CollectionPartitionKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionPartitionKey] (val x: Self) extends AnyVal {
     
     inline def setKind(value: PartitionKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

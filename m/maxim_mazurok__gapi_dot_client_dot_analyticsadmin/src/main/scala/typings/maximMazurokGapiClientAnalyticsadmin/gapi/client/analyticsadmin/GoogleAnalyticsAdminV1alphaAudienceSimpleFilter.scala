@@ -19,7 +19,8 @@ object GoogleAnalyticsAdminV1alphaAudienceSimpleFilter {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaAudienceSimpleFilter]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaAudienceSimpleFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAudienceSimpleFilter] (val x: Self) extends AnyVal {
     
     inline def setFilterExpression(value: GoogleAnalyticsAdminV1alphaAudienceFilterExpression): Self = StObject.set(x, "filterExpression", value.asInstanceOf[js.Any])
     

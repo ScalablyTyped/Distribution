@@ -24,7 +24,8 @@ object FourTrafficLightsSet {
     __obj.asInstanceOf[FourTrafficLightsSet]
   }
   
-  extension [Self <: FourTrafficLightsSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FourTrafficLightsSet] (val x: Self) extends AnyVal {
     
     inline def setBlackCircleWithBorder(value: Icon): Self = StObject.set(x, "blackCircleWithBorder", value.asInstanceOf[js.Any])
     

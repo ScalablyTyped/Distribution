@@ -18,7 +18,8 @@ object MultiplexMediaConnectOutputDestinationSettings {
     __obj.asInstanceOf[MultiplexMediaConnectOutputDestinationSettings]
   }
   
-  extension [Self <: MultiplexMediaConnectOutputDestinationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiplexMediaConnectOutputDestinationSettings] (val x: Self) extends AnyVal {
     
     inline def setEntitlementArn(value: stringMin1): Self = StObject.set(x, "EntitlementArn", value.asInstanceOf[js.Any])
     

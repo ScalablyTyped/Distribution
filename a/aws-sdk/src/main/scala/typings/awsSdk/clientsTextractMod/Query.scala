@@ -28,7 +28,8 @@ object Query {
     __obj.asInstanceOf[Query]
   }
   
-  extension [Self <: Query](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: QueryInput): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
     

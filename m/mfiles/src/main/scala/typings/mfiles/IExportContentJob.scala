@@ -57,7 +57,8 @@ object IExportContentJob {
     __obj.asInstanceOf[IExportContentJob]
   }
   
-  extension [Self <: IExportContentJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExportContentJob] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IExportContentJob): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

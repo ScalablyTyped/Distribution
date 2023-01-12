@@ -24,7 +24,8 @@ object Url {
     __obj.asInstanceOf[Url]
   }
   
-  extension [Self <: Url](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
     
     inline def setBinaryAttachment(value: `false`): Self = StObject.set(x, "binaryAttachment", value.asInstanceOf[js.Any])
     

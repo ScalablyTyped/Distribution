@@ -16,7 +16,8 @@ object RegisterDebuggeeRequest {
     __obj.asInstanceOf[RegisterDebuggeeRequest]
   }
   
-  extension [Self <: RegisterDebuggeeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterDebuggeeRequest] (val x: Self) extends AnyVal {
     
     inline def setDebuggee(value: Debuggee): Self = StObject.set(x, "debuggee", value.asInstanceOf[js.Any])
     

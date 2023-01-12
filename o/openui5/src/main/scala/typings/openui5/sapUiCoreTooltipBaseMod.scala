@@ -553,7 +553,8 @@ object sapUiCoreTooltipBaseMod {
       __obj.asInstanceOf[TooltipBaseSettings]
     }
     
-    extension [Self <: TooltipBaseSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipBaseSettings] (val x: Self) extends AnyVal {
       
       inline def setAtPosition(value: Dock | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "atPosition", value.asInstanceOf[js.Any])
       

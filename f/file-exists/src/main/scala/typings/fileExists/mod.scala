@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[FalsyRoot]
     }
     
-    extension [Self <: FalsyRoot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FalsyRoot] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: _empty): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       

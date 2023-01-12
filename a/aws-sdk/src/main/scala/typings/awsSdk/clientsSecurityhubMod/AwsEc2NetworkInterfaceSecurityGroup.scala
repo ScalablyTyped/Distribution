@@ -23,7 +23,8 @@ object AwsEc2NetworkInterfaceSecurityGroup {
     __obj.asInstanceOf[AwsEc2NetworkInterfaceSecurityGroup]
   }
   
-  extension [Self <: AwsEc2NetworkInterfaceSecurityGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2NetworkInterfaceSecurityGroup] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: NonEmptyString): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     

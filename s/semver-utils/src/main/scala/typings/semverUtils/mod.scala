@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[SemVer]
     }
     
-    extension [Self <: SemVer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemVer] (val x: Self) extends AnyVal {
       
       inline def setBuild(value: String): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
       

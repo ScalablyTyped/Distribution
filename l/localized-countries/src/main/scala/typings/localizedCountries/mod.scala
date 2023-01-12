@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[LocalizedCountries]
     }
     
-    extension [Self <: LocalizedCountries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalizedCountries] (val x: Self) extends AnyVal {
       
       inline def setArray(value: () => js.Array[Code]): Self = StObject.set(x, "array", js.Any.fromFunction0(value))
       

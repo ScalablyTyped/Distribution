@@ -29,7 +29,8 @@ object srcComponentsMessageMod extends Shortcut {
       __obj.asInstanceOf[MessageProps]
     }
     
-    extension [Self <: MessageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

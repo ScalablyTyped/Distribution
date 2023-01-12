@@ -108,7 +108,8 @@ object ModifyVpnTunnelOptionsSpecification {
     __obj.asInstanceOf[ModifyVpnTunnelOptionsSpecification]
   }
   
-  extension [Self <: ModifyVpnTunnelOptionsSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyVpnTunnelOptionsSpecification] (val x: Self) extends AnyVal {
     
     inline def setDPDTimeoutAction(value: String): Self = StObject.set(x, "DPDTimeoutAction", value.asInstanceOf[js.Any])
     

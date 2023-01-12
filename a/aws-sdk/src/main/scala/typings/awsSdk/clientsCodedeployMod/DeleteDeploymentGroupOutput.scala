@@ -18,7 +18,8 @@ object DeleteDeploymentGroupOutput {
     __obj.asInstanceOf[DeleteDeploymentGroupOutput]
   }
   
-  extension [Self <: DeleteDeploymentGroupOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDeploymentGroupOutput] (val x: Self) extends AnyVal {
     
     inline def setHooksNotCleanedUp(value: AutoScalingGroupList): Self = StObject.set(x, "hooksNotCleanedUp", value.asInstanceOf[js.Any])
     

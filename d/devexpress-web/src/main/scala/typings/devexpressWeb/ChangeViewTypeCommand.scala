@@ -24,7 +24,8 @@ object ChangeViewTypeCommand {
     __obj.asInstanceOf[ChangeViewTypeCommand]
   }
   
-  extension [Self <: ChangeViewTypeCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeViewTypeCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: ViewType => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
   }

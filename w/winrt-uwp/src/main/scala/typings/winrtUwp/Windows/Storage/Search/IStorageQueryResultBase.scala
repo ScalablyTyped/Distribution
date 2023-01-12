@@ -50,7 +50,8 @@ object IStorageQueryResultBase {
     __obj.asInstanceOf[IStorageQueryResultBase]
   }
   
-  extension [Self <: IStorageQueryResultBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStorageQueryResultBase] (val x: Self) extends AnyVal {
     
     inline def setApplyNewQueryOptions(value: QueryOptions => Unit): Self = StObject.set(x, "applyNewQueryOptions", js.Any.fromFunction1(value))
     

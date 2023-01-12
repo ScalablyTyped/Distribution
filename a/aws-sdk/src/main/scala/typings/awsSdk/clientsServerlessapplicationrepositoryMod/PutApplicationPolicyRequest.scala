@@ -23,7 +23,8 @@ object PutApplicationPolicyRequest {
     __obj.asInstanceOf[PutApplicationPolicyRequest]
   }
   
-  extension [Self <: PutApplicationPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutApplicationPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

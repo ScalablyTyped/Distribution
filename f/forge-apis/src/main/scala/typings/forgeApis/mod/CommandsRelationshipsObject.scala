@@ -15,7 +15,8 @@ object CommandsRelationshipsObject {
     __obj.asInstanceOf[CommandsRelationshipsObject]
   }
   
-  extension [Self <: CommandsRelationshipsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandsRelationshipsObject] (val x: Self) extends AnyVal {
     
     inline def setResources(value: CommandsRelationshipsResourceObject): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
   }

@@ -193,7 +193,8 @@ object distCjsSrcAstMod {
       __obj.asInstanceOf[Located]
     }
     
-    extension [Self <: Located](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Located] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

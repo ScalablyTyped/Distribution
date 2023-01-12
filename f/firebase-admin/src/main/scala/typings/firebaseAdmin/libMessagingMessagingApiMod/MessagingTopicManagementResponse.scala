@@ -32,7 +32,8 @@ object MessagingTopicManagementResponse {
     __obj.asInstanceOf[MessagingTopicManagementResponse]
   }
   
-  extension [Self <: MessagingTopicManagementResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagingTopicManagementResponse] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: js.Array[FirebaseArrayIndexError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

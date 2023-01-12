@@ -31,7 +31,8 @@ object IgHierarchicalGridLocale {
     __obj.asInstanceOf[IgHierarchicalGridLocale]
   }
   
-  extension [Self <: IgHierarchicalGridLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgHierarchicalGridLocale] (val x: Self) extends AnyVal {
     
     inline def setCollapseTooltip(value: String): Self = StObject.set(x, "collapseTooltip", value.asInstanceOf[js.Any])
     

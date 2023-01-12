@@ -18,7 +18,8 @@ object GetSelectionTextSuccessCallbackResult {
     __obj.asInstanceOf[GetSelectionTextSuccessCallbackResult]
   }
   
-  extension [Self <: GetSelectionTextSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSelectionTextSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

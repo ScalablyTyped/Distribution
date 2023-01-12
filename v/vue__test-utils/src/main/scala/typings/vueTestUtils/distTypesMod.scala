@@ -428,7 +428,8 @@ object distTypesMod {
       __obj.asInstanceOf[GlobalMountOptions]
     }
     
-    extension [Self <: GlobalMountOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalMountOptions] (val x: Self) extends AnyVal {
       
       inline def setComponents(value: Record[String, (Component[Any, Any, Any, ComputedOptions, MethodOptions]) | js.Object]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
@@ -537,7 +538,8 @@ object distTypesMod {
       __obj.asInstanceOf[MountingOptions[Props, Data]]
     }
     
-    extension [Self <: MountingOptions[?, ?], Props, Data](x: Self & (MountingOptions[Props, Data])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MountingOptions[?, ?], Props, Data] (val x: Self & (MountingOptions[Props, Data])) extends AnyVal {
       
       inline def setAttachTo(value: HTMLElement | String): Self = StObject.set(x, "attachTo", value.asInstanceOf[js.Any])
       
@@ -590,7 +592,8 @@ object distTypesMod {
       __obj.asInstanceOf[NameSelector]
     }
     
-    extension [Self <: NameSelector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameSelector] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -609,7 +612,8 @@ object distTypesMod {
       __obj.asInstanceOf[RefSelector]
     }
     
-    extension [Self <: RefSelector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefSelector] (val x: Self) extends AnyVal {
       
       inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }

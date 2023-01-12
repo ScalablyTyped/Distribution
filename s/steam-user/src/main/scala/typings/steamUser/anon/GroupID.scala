@@ -15,7 +15,8 @@ object GroupID {
     __obj.asInstanceOf[GroupID]
   }
   
-  extension [Self <: GroupID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupID] (val x: Self) extends AnyVal {
     
     inline def setGroupID(value: Double): Self = StObject.set(x, "groupID", value.asInstanceOf[js.Any])
   }

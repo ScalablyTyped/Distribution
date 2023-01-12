@@ -22,7 +22,8 @@ object Package {
     __obj.asInstanceOf[Package]
   }
   
-  extension [Self <: Package](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Package] (val x: Self) extends AnyVal {
     
     inline def setFirst_patched_version(value: `390`): Self = StObject.set(x, "first_patched_version", value.asInstanceOf[js.Any])
     

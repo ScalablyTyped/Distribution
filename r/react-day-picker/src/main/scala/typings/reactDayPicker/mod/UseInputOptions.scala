@@ -40,7 +40,8 @@ object UseInputOptions {
     __obj.asInstanceOf[UseInputOptions]
   }
   
-  extension [Self <: UseInputOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseInputOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultSelected(value: js.Date): Self = StObject.set(x, "defaultSelected", value.asInstanceOf[js.Any])
     

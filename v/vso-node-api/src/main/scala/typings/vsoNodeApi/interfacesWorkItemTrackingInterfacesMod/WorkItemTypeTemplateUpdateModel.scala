@@ -38,7 +38,8 @@ object WorkItemTypeTemplateUpdateModel {
     __obj.asInstanceOf[WorkItemTypeTemplateUpdateModel]
   }
   
-  extension [Self <: WorkItemTypeTemplateUpdateModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemTypeTemplateUpdateModel] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: ProvisioningActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     

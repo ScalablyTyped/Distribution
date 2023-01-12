@@ -49,7 +49,8 @@ object distSrcCryptoMod {
       __obj.asInstanceOf[ICryptoInterface]
     }
     
-    extension [Self <: ICryptoInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICryptoInterface] (val x: Self) extends AnyVal {
       
       inline def setChaCha20Poly1305Decrypt(
         value: (js.typedarray.Uint8Array, js.typedarray.Uint8Array, js.typedarray.Uint8Array, js.typedarray.Uint8Array) => js.typedarray.Uint8Array | Null

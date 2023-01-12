@@ -22,7 +22,8 @@ object SuggestedParagraphStyle {
     __obj.asInstanceOf[SuggestedParagraphStyle]
   }
   
-  extension [Self <: SuggestedParagraphStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestedParagraphStyle] (val x: Self) extends AnyVal {
     
     inline def setParagraphStyle(value: ParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
     

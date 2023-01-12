@@ -30,7 +30,8 @@ object InvoiceItem {
     __obj.asInstanceOf[InvoiceItem]
   }
   
-  extension [Self <: InvoiceItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvoiceItem] (val x: Self) extends AnyVal {
     
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object OngoingPartitionReassignment {
     __obj.asInstanceOf[OngoingPartitionReassignment]
   }
   
-  extension [Self <: OngoingPartitionReassignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OngoingPartitionReassignment] (val x: Self) extends AnyVal {
     
     inline def setAddingReplicas(value: js.Array[Double]): Self = StObject.set(x, "addingReplicas", value.asInstanceOf[js.Any])
     

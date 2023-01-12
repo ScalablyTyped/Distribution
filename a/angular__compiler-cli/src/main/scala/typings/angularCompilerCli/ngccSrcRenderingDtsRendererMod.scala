@@ -67,7 +67,8 @@ object ngccSrcRenderingDtsRendererMod {
       __obj.asInstanceOf[DtsClassInfo]
     }
     
-    extension [Self <: DtsClassInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DtsClassInfo] (val x: Self) extends AnyVal {
       
       inline def setCompilation(value: js.Array[CompileResult]): Self = StObject.set(x, "compilation", value.asInstanceOf[js.Any])
       
@@ -107,7 +108,8 @@ object ngccSrcRenderingDtsRendererMod {
       __obj.asInstanceOf[DtsRenderInfo]
     }
     
-    extension [Self <: DtsRenderInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DtsRenderInfo] (val x: Self) extends AnyVal {
       
       inline def setClassInfo(value: js.Array[DtsClassInfo]): Self = StObject.set(x, "classInfo", value.asInstanceOf[js.Any])
       

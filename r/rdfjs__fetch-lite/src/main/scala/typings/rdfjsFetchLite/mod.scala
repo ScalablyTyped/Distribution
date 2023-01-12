@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[DatasetResponse[D, OutQuad, InQuad]]
     }
     
-    extension [Self <: DatasetResponse[?, ?, ?], D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */](x: Self & (DatasetResponse[D, OutQuad, InQuad])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatasetResponse[?, ?, ?], D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */] (val x: Self & (DatasetResponse[D, OutQuad, InQuad])) extends AnyVal {
       
       inline def setDataset(value: () => js.Promise[D]): Self = StObject.set(x, "dataset", js.Any.fromFunction0(value))
     }
@@ -78,7 +79,8 @@ object mod {
       __obj.asInstanceOf[FactoryInit[D, OutQuad, InQuad]]
     }
     
-    extension [Self <: FactoryInit[?, ?, ?], D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */](x: Self & (FactoryInit[D, OutQuad, InQuad])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FactoryInit[?, ?, ?], D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */] (val x: Self & (FactoryInit[D, OutQuad, InQuad])) extends AnyVal {
       
       inline def setFactory(value: DatasetCoreFactory[OutQuad, InQuad, D]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
     }
@@ -99,7 +101,8 @@ object mod {
       __obj.asInstanceOf[FormatsInit]
     }
     
-    extension [Self <: FormatsInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatsInit] (val x: Self) extends AnyVal {
       
       inline def setFetch(value: FnCall): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       
@@ -138,7 +141,8 @@ object mod {
       __obj.asInstanceOf[RdfFetchResponse[Q]]
     }
     
-    extension [Self <: RdfFetchResponse[?], Q /* <: BaseQuad */](x: Self & RdfFetchResponse[Q]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RdfFetchResponse[?], Q /* <: BaseQuad */] (val x: Self & RdfFetchResponse[Q]) extends AnyVal {
       
       inline def setQuadStream(value: () => js.Promise[Stream[Q]]): Self = StObject.set(x, "quadStream", js.Any.fromFunction0(value))
     }

@@ -397,7 +397,8 @@ object ProjectsModule {
     __obj.asInstanceOf[ProjectsModule]
   }
   
-  extension [Self <: ProjectsModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectsModule] (val x: Self) extends AnyVal {
     
     inline def setAbortMerge(value: ReqUser => js.Promise[js.Object]): Self = StObject.set(x, "abortMerge", js.Any.fromFunction1(value))
     

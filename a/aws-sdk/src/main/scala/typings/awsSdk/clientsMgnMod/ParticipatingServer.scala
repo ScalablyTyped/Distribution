@@ -33,7 +33,8 @@ object ParticipatingServer {
     __obj.asInstanceOf[ParticipatingServer]
   }
   
-  extension [Self <: ParticipatingServer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticipatingServer] (val x: Self) extends AnyVal {
     
     inline def setLaunchStatus(value: LaunchStatus): Self = StObject.set(x, "launchStatus", value.asInstanceOf[js.Any])
     

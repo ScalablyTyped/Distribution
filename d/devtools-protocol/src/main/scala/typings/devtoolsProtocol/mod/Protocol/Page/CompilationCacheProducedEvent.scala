@@ -20,7 +20,8 @@ object CompilationCacheProducedEvent {
     __obj.asInstanceOf[CompilationCacheProducedEvent]
   }
   
-  extension [Self <: CompilationCacheProducedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompilationCacheProducedEvent] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

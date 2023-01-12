@@ -34,7 +34,8 @@ object cssBaselineCssBaselineMod {
       __obj.asInstanceOf[CssBaselineProps]
     }
     
-    extension [Self <: CssBaselineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CssBaselineProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

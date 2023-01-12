@@ -49,7 +49,8 @@ object libModelsSessionMod {
       __obj.asInstanceOf[Session]
     }
     
-    extension [Self <: Session](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
       
       inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object libModelsSessionMod {
       __obj.asInstanceOf[SessionObj]
     }
     
-    extension [Self <: SessionObj](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionObj] (val x: Self) extends AnyVal {
       
       inline def `setCreated-date`(value: Double): Self = StObject.set(x, "created-date", value.asInstanceOf[js.Any])
       

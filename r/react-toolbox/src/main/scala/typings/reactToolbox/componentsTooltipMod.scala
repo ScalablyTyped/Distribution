@@ -59,7 +59,8 @@ object componentsTooltipMod {
       __obj.asInstanceOf[TooltipOptions]
     }
     
-    extension [Self <: TooltipOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipOptions] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -155,7 +156,8 @@ object componentsTooltipMod {
       __obj.asInstanceOf[TooltipProps]
     }
     
-    extension [Self <: TooltipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -223,7 +225,8 @@ object componentsTooltipMod {
       __obj.asInstanceOf[TooltipTheme]
     }
     
-    extension [Self <: TooltipTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipTheme] (val x: Self) extends AnyVal {
       
       inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       

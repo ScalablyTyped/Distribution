@@ -17,7 +17,8 @@ object FolderName {
     __obj.asInstanceOf[FolderName]
   }
   
-  extension [Self <: FolderName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FolderName] (val x: Self) extends AnyVal {
     
     inline def setFolderName(value: String): Self = StObject.set(x, "folderName", value.asInstanceOf[js.Any])
     

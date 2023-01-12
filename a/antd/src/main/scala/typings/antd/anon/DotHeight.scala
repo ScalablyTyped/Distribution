@@ -19,7 +19,8 @@ object DotHeight {
     __obj.asInstanceOf[DotHeight]
   }
   
-  extension [Self <: DotHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DotHeight] (val x: Self) extends AnyVal {
     
     inline def setDotHeight(value: Double): Self = StObject.set(x, "dotHeight", value.asInstanceOf[js.Any])
     

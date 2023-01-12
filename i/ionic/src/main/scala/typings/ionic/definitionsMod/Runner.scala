@@ -15,7 +15,8 @@ object Runner {
     __obj.asInstanceOf[Runner[T, U]]
   }
   
-  extension [Self <: Runner[?, ?], T /* <: js.Object */, U](x: Self & (Runner[T, U])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Runner[?, ?], T /* <: js.Object */, U] (val x: Self & (Runner[T, U])) extends AnyVal {
     
     inline def setRun(value: T => js.Promise[U]): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
   }

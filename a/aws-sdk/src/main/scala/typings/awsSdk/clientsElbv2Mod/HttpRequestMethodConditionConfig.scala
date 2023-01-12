@@ -18,7 +18,8 @@ object HttpRequestMethodConditionConfig {
     __obj.asInstanceOf[HttpRequestMethodConditionConfig]
   }
   
-  extension [Self <: HttpRequestMethodConditionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpRequestMethodConditionConfig] (val x: Self) extends AnyVal {
     
     inline def setValues(value: ListOfString): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DescribeMLModelsOutput {
     __obj.asInstanceOf[DescribeMLModelsOutput]
   }
   
-  extension [Self <: DescribeMLModelsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMLModelsOutput] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: StringType): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

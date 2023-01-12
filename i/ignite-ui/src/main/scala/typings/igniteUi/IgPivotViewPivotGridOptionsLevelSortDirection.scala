@@ -30,7 +30,8 @@ object IgPivotViewPivotGridOptionsLevelSortDirection {
     __obj.asInstanceOf[IgPivotViewPivotGridOptionsLevelSortDirection]
   }
   
-  extension [Self <: IgPivotViewPivotGridOptionsLevelSortDirection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgPivotViewPivotGridOptionsLevelSortDirection] (val x: Self) extends AnyVal {
     
     inline def setLevelUniqueName(value: String): Self = StObject.set(x, "levelUniqueName", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object libUtilBufferSplitMod {
       __obj.asInstanceOf[FirstIndex[N]]
     }
     
-    extension [Self <: FirstIndex[?], N](x: Self & FirstIndex[N]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirstIndex[?], N] (val x: Self & FirstIndex[N]) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

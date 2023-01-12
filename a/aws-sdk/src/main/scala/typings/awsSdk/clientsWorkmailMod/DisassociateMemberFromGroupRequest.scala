@@ -28,7 +28,8 @@ object DisassociateMemberFromGroupRequest {
     __obj.asInstanceOf[DisassociateMemberFromGroupRequest]
   }
   
-  extension [Self <: DisassociateMemberFromGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateMemberFromGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: WorkMailIdentifier): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     

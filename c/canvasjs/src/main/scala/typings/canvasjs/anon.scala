@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Axis]
     }
     
-    extension [Self <: Axis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Axis] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: ChartAxisYOptions): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object anon {
       __obj.asInstanceOf[Chart]
     }
     
-    extension [Self <: Chart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chart] (val x: Self) extends AnyVal {
       
       inline def setChart(value: typings.canvasjs.mod.Chart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
@@ -83,7 +85,8 @@ object anon {
       __obj.asInstanceOf[DataPoint]
     }
     
-    extension [Self <: DataPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataPoint] (val x: Self) extends AnyVal {
       
       inline def setDataPoint(value: ChartDataPoint): Self = StObject.set(x, "dataPoint", value.asInstanceOf[js.Any])
       
@@ -112,7 +115,8 @@ object anon {
       __obj.asInstanceOf[DataSeries]
     }
     
-    extension [Self <: DataSeries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSeries] (val x: Self) extends AnyVal {
       
       inline def setChart(value: typings.canvasjs.mod.Chart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
@@ -149,7 +153,8 @@ object anon {
       __obj.asInstanceOf[Entries]
     }
     
-    extension [Self <: Entries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entries] (val x: Self) extends AnyVal {
       
       inline def setChart(value: typings.canvasjs.mod.Chart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
@@ -176,7 +181,8 @@ object anon {
       __obj.asInstanceOf[FileName]
     }
     
-    extension [Self <: FileName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileName] (val x: Self) extends AnyVal {
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
@@ -207,7 +213,8 @@ object anon {
       __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: ChartAxisYOptions): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -236,7 +243,8 @@ object anon {
       __obj.asInstanceOf[X1]
     }
     
-    extension [Self <: X1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X1] (val x: Self) extends AnyVal {
       
       inline def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
       

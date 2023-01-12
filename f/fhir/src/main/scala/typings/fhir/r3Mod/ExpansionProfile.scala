@@ -172,7 +172,8 @@ object ExpansionProfile {
     __obj.asInstanceOf[ExpansionProfile]
   }
   
-  extension [Self <: ExpansionProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpansionProfile] (val x: Self) extends AnyVal {
     
     inline def setActiveOnly(value: Boolean): Self = StObject.set(x, "activeOnly", value.asInstanceOf[js.Any])
     

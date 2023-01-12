@@ -24,7 +24,8 @@ object ProfilingDataFrontend {
     __obj.asInstanceOf[ProfilingDataFrontend]
   }
   
-  extension [Self <: ProfilingDataFrontend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfilingDataFrontend] (val x: Self) extends AnyVal {
     
     inline def setDataForRoots(value: Map[Double, ProfilingDataForRootFrontend]): Self = StObject.set(x, "dataForRoots", value.asInstanceOf[js.Any])
     

@@ -65,7 +65,8 @@ object typesCreateEventSourceMappingOutputMod {
       __obj.asInstanceOf[CreateEventSourceMappingOutput]
     }
     
-    extension [Self <: CreateEventSourceMappingOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventSourceMappingOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

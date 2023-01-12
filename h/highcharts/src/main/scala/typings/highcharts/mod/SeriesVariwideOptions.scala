@@ -106,7 +106,8 @@ object SeriesVariwideOptions {
     __obj.asInstanceOf[SeriesVariwideOptions]
   }
   
-  extension [Self <: SeriesVariwideOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesVariwideOptions] (val x: Self) extends AnyVal {
     
     inline def setData(
       value: js.Array[

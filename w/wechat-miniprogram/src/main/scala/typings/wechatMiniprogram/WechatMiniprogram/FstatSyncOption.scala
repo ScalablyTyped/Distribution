@@ -16,7 +16,8 @@ object FstatSyncOption {
     __obj.asInstanceOf[FstatSyncOption]
   }
   
-  extension [Self <: FstatSyncOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FstatSyncOption] (val x: Self) extends AnyVal {
     
     inline def setFd(value: String): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
   }

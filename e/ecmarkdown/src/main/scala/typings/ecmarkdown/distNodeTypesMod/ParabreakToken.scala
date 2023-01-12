@@ -22,7 +22,8 @@ object ParabreakToken {
     __obj.asInstanceOf[ParabreakToken]
   }
   
-  extension [Self <: ParabreakToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParabreakToken] (val x: Self) extends AnyVal {
     
     inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

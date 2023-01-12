@@ -32,7 +32,8 @@ object BreadthFirstSearch {
     __obj.asInstanceOf[BreadthFirstSearch]
   }
   
-  extension [Self <: BreadthFirstSearch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BreadthFirstSearch] (val x: Self) extends AnyVal {
     
     inline def setEdgeTo(value: Any): Self = StObject.set(x, "edgeTo", value.asInstanceOf[js.Any])
     

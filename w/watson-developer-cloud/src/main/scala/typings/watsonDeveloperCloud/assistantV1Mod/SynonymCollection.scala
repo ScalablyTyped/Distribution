@@ -20,7 +20,8 @@ object SynonymCollection {
     __obj.asInstanceOf[SynonymCollection]
   }
   
-  extension [Self <: SynonymCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SynonymCollection] (val x: Self) extends AnyVal {
     
     inline def setPagination(value: Pagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     

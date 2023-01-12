@@ -46,7 +46,8 @@ object anon {
       __obj.asInstanceOf[AllTime]
     }
     
-    extension [Self <: AllTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllTime] (val x: Self) extends AnyVal {
       
       inline def setAllTime(value: GoogleApiUrlShortenerUrlResourceAnalyticsObject): Self = StObject.set(x, "allTime", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object anon {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object anon {
       __obj.asInstanceOf[Projection]
     }
     
-    extension [Self <: Projection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Projection] (val x: Self) extends AnyVal {
       
       inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -157,7 +160,8 @@ object anon {
       __obj.asInstanceOf[RequestBody]
     }
     
-    extension [Self <: RequestBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestBody] (val x: Self) extends AnyVal {
       
       inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       

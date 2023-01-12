@@ -23,7 +23,8 @@ object DescribeNotificationConfigurationsAnswer {
     __obj.asInstanceOf[DescribeNotificationConfigurationsAnswer]
   }
   
-  extension [Self <: DescribeNotificationConfigurationsAnswer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNotificationConfigurationsAnswer] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

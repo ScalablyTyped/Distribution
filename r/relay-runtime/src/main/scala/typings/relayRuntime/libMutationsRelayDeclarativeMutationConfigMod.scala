@@ -102,7 +102,8 @@ object libMutationsRelayDeclarativeMutationConfigMod {
       __obj.asInstanceOf[NodeDeleteConfig]
     }
     
-    extension [Self <: NodeDeleteConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeDeleteConfig] (val x: Self) extends AnyVal {
       
       inline def setConnectionName(value: String): Self = StObject.set(x, "connectionName", value.asInstanceOf[js.Any])
       
@@ -148,7 +149,8 @@ object libMutationsRelayDeclarativeMutationConfigMod {
       __obj.asInstanceOf[RangeAddConfig]
     }
     
-    extension [Self <: RangeAddConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeAddConfig] (val x: Self) extends AnyVal {
       
       inline def setConnectionInfo(value: js.Array[Filters]): Self = StObject.set(x, "connectionInfo", value.asInstanceOf[js.Any])
       
@@ -212,7 +214,8 @@ object libMutationsRelayDeclarativeMutationConfigMod {
       __obj.asInstanceOf[RangeDeleteConfig]
     }
     
-    extension [Self <: RangeDeleteConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeDeleteConfig] (val x: Self) extends AnyVal {
       
       inline def setConnectionKeys(value: js.Array[Key]): Self = StObject.set(x, "connectionKeys", value.asInstanceOf[js.Any])
       

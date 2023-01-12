@@ -157,7 +157,8 @@ object mod {
       __obj.asInstanceOf[Comment]
     }
     
-    extension [Self <: Comment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
@@ -183,7 +184,8 @@ object mod {
       __obj.asInstanceOf[Doctype]
     }
     
-    extension [Self <: Doctype](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Doctype] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -213,7 +215,8 @@ object mod {
       __obj.asInstanceOf[EndTag]
     }
     
-    extension [Self <: EndTag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndTag] (val x: Self) extends AnyVal {
       
       inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     }
@@ -235,7 +238,8 @@ object mod {
       __obj.asInstanceOf[SAXParserOptions]
     }
     
-    extension [Self <: SAXParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SAXParserOptions] (val x: Self) extends AnyVal {
       
       inline def setSourceCodeLocationInfo(value: Boolean): Self = StObject.set(x, "sourceCodeLocationInfo", value.asInstanceOf[js.Any])
       
@@ -255,7 +259,8 @@ object mod {
       __obj.asInstanceOf[SaxToken]
     }
     
-    extension [Self <: SaxToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SaxToken] (val x: Self) extends AnyVal {
       
       inline def setSourceCodeLocation(value: Location): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
       
@@ -285,7 +290,8 @@ object mod {
       __obj.asInstanceOf[StartTag]
     }
     
-    extension [Self <: StartTag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartTag] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: js.Array[Attribute]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -311,7 +317,8 @@ object mod {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }

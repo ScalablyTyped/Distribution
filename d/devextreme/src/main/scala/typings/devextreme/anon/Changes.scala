@@ -15,7 +15,8 @@ object Changes {
     __obj.asInstanceOf[Changes[TMappedItem]]
   }
   
-  extension [Self <: Changes[?], TMappedItem](x: Self & Changes[TMappedItem]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Changes[?], TMappedItem] (val x: Self & Changes[TMappedItem]) extends AnyVal {
     
     inline def setChanges(value: js.Array[TMappedItem]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     

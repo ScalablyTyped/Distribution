@@ -19,7 +19,8 @@ object MaterialPluginPrepareDefines {
     __obj.asInstanceOf[MaterialPluginPrepareDefines]
   }
   
-  extension [Self <: MaterialPluginPrepareDefines](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaterialPluginPrepareDefines] (val x: Self) extends AnyVal {
     
     inline def setDefines(value: MaterialDefines): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
     

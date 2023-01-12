@@ -17,7 +17,8 @@ object NewDhcpConfiguration {
     __obj.asInstanceOf[NewDhcpConfiguration]
   }
   
-  extension [Self <: NewDhcpConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewDhcpConfiguration] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

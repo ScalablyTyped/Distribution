@@ -69,7 +69,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[EdgeHandlesInstance]
     }
     
-    extension [Self <: EdgeHandlesInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EdgeHandlesInstance] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -155,7 +156,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[EdgeHandlesOptions]
     }
     
-    extension [Self <: EdgeHandlesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EdgeHandlesOptions] (val x: Self) extends AnyVal {
       
       inline def setCanConnect(value: (/* source */ NodeSingular, /* target */ NodeSingular) => Boolean): Self = StObject.set(x, "canConnect", js.Any.fromFunction2(value))
       

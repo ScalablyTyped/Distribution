@@ -31,7 +31,8 @@ object TargetPosition {
     __obj.asInstanceOf[TargetPosition]
   }
   
-  extension [Self <: TargetPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetPosition] (val x: Self) extends AnyVal {
     
     inline def setHowMany(value: Double): Self = StObject.set(x, "howMany", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object RecordPointerTypenumber {
     __obj.asInstanceOf[RecordPointerTypenumber]
   }
   
-  extension [Self <: RecordPointerTypenumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordPointerTypenumber] (val x: Self) extends AnyVal {
     
     inline def setMouse(value: Double): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
     

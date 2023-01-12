@@ -180,7 +180,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Builder]
       }
       
-      extension [Self <: Builder](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Builder] (val x: Self) extends AnyVal {
         
         inline def setAddRequestOptions(value: Any => Builder): Self = StObject.set(x, "addRequestOptions", js.Any.fromFunction1(value))
         
@@ -301,7 +302,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[InAction]
       }
       
-      extension [Self <: InAction](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InAction] (val x: Self) extends AnyVal {
         
         inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       }
@@ -318,7 +320,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Json]
       }
       
-      extension [Self <: Json](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Json] (val x: Self) extends AnyVal {
         
         inline def setParseJson(value: () => Any): Self = StObject.set(x, "parseJson", js.Any.fromFunction0(value))
       }
@@ -335,7 +338,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Traversal]
       }
       
-      extension [Self <: Traversal](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Traversal] (val x: Self) extends AnyVal {
         
         inline def setContinue(value: () => Builder): Self = StObject.set(x, "continue", js.Any.fromFunction0(value))
       }
@@ -372,7 +376,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[TraversonMethods]
       }
       
-      extension [Self <: TraversonMethods](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TraversonMethods] (val x: Self) extends AnyVal {
         
         inline def setErrors(value: () => TraversonMethods): Self = StObject.set(x, "errors", js.Any.fromFunction0(value))
         

@@ -63,7 +63,8 @@ object ValidatedResponse {
     __obj.asInstanceOf[ValidatedResponse[T]]
   }
   
-  extension [Self <: ValidatedResponse[?], T](x: Self & ValidatedResponse[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidatedResponse[?], T] (val x: Self & ValidatedResponse[T]) extends AnyVal {
     
     inline def setAddress(
       value: /* import warning: importer.ImportType#apply Failed type conversion: T extends braintree.braintree.Address ? braintree.braintree.Address : never */ js.Any

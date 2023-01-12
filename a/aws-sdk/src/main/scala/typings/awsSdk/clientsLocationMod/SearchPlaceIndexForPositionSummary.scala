@@ -33,7 +33,8 @@ object SearchPlaceIndexForPositionSummary {
     __obj.asInstanceOf[SearchPlaceIndexForPositionSummary]
   }
   
-  extension [Self <: SearchPlaceIndexForPositionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchPlaceIndexForPositionSummary] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: String): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
     

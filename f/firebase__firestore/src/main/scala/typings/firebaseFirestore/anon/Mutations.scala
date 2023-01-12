@@ -17,7 +17,8 @@ object Mutations {
     __obj.asInstanceOf[Mutations]
   }
   
-  extension [Self <: Mutations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mutations] (val x: Self) extends AnyVal {
     
     inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     

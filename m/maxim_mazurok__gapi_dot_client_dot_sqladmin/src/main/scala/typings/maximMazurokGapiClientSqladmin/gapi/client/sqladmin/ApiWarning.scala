@@ -22,7 +22,8 @@ object ApiWarning {
     __obj.asInstanceOf[ApiWarning]
   }
   
-  extension [Self <: ApiWarning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiWarning] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

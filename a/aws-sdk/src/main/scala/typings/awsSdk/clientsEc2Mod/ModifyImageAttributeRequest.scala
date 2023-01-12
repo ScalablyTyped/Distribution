@@ -73,7 +73,8 @@ object ModifyImageAttributeRequest {
     __obj.asInstanceOf[ModifyImageAttributeRequest]
   }
   
-  extension [Self <: ModifyImageAttributeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyImageAttributeRequest] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: String): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     

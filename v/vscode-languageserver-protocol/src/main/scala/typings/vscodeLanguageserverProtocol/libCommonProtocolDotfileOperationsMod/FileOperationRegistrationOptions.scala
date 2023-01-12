@@ -18,7 +18,8 @@ object FileOperationRegistrationOptions {
     __obj.asInstanceOf[FileOperationRegistrationOptions]
   }
   
-  extension [Self <: FileOperationRegistrationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileOperationRegistrationOptions] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: js.Array[FileOperationFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

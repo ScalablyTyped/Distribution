@@ -17,7 +17,8 @@ object IgValidatorValueRule {
     __obj.asInstanceOf[IgValidatorValueRule]
   }
   
-  extension [Self <: IgValidatorValueRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgValidatorValueRule] (val x: Self) extends AnyVal {
     
     inline def setGetMessageType(value: () => Unit): Self = StObject.set(x, "getMessageType", js.Any.fromFunction0(value))
     

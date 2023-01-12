@@ -159,7 +159,8 @@ object mod {
       __obj.asInstanceOf[OptionInputObject]
     }
     
-    extension [Self <: OptionInputObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionInputObject] (val x: Self) extends AnyVal {
       
       inline def setAlwaysFakeOptionals(value: Any): Self = StObject.set(x, "alwaysFakeOptionals", value.asInstanceOf[js.Any])
       

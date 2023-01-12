@@ -19,7 +19,8 @@ object BeginDragOptions {
     __obj.asInstanceOf[BeginDragOptions]
   }
   
-  extension [Self <: BeginDragOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeginDragOptions] (val x: Self) extends AnyVal {
     
     inline def setClientOffset(value: XYCoord): Self = StObject.set(x, "clientOffset", value.asInstanceOf[js.Any])
     

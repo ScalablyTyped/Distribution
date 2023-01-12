@@ -38,7 +38,8 @@ object QueryExecutionStatus {
     __obj.asInstanceOf[QueryExecutionStatus]
   }
   
-  extension [Self <: QueryExecutionStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryExecutionStatus] (val x: Self) extends AnyVal {
     
     inline def setAthenaError(value: AthenaError): Self = StObject.set(x, "AthenaError", value.asInstanceOf[js.Any])
     

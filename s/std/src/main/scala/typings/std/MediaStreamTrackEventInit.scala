@@ -18,7 +18,8 @@ object MediaStreamTrackEventInit {
     __obj.asInstanceOf[MediaStreamTrackEventInit]
   }
   
-  extension [Self <: MediaStreamTrackEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaStreamTrackEventInit] (val x: Self) extends AnyVal {
     
     inline def setTrack(value: MediaStreamTrack): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
   }

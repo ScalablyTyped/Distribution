@@ -19,7 +19,8 @@ object PersistenceOptions {
     __obj.asInstanceOf[PersistenceOptions]
   }
   
-  extension [Self <: PersistenceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersistenceOptions] (val x: Self) extends AnyVal {
     
     inline def setFile(value: `0`): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
     

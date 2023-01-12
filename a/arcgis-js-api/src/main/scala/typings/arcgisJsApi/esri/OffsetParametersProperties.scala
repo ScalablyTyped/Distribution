@@ -57,7 +57,8 @@ object OffsetParametersProperties {
     __obj.asInstanceOf[OffsetParametersProperties]
   }
   
-  extension [Self <: OffsetParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OffsetParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setBevelRatio(value: Double): Self = StObject.set(x, "bevelRatio", value.asInstanceOf[js.Any])
     

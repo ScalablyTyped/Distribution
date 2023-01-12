@@ -125,7 +125,8 @@ object libCardStyleIndexDotnativeMod {
       __obj.asInstanceOf[ICardStyle]
     }
     
-    extension [Self <: ICardStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICardStyle] (val x: Self) extends AnyVal {
       
       inline def setBody(value: ViewStyle): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

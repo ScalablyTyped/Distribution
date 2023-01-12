@@ -53,7 +53,8 @@ object PipeableApply3C {
     __obj.asInstanceOf[PipeableApply3C[F, E]]
   }
   
-  extension [Self <: PipeableApply3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (PipeableApply3C[F, E])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeableApply3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (PipeableApply3C[F, E])) extends AnyVal {
     
     inline def setAp(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any => js.Function1[

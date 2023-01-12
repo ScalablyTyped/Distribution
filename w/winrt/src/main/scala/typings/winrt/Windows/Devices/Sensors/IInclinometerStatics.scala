@@ -15,7 +15,8 @@ object IInclinometerStatics {
     __obj.asInstanceOf[IInclinometerStatics]
   }
   
-  extension [Self <: IInclinometerStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInclinometerStatics] (val x: Self) extends AnyVal {
     
     inline def setGetDefault(value: () => Inclinometer): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
   }

@@ -44,7 +44,8 @@ object AnimationObject {
     __obj.asInstanceOf[AnimationObject]
   }
   
-  extension [Self <: AnimationObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationObject] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: (/* finished */ js.UndefOr[Boolean], /* current */ js.UndefOr[AnimatableValue]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     

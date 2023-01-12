@@ -46,7 +46,8 @@ object InitialParams {
     __obj.asInstanceOf[InitialParams[RouteName, ScreenOptions, ParamList, State, EventMap]]
   }
   
-  extension [Self <: InitialParams[?, ?, ?, ?, ?], RouteName /* <: /* keyof ParamList */ String */, ScreenOptions /* <: js.Object */, ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, EventMap /* <: EventMapBase */](x: Self & (InitialParams[RouteName, ScreenOptions, ParamList, State, EventMap])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitialParams[?, ?, ?, ?, ?], RouteName /* <: /* keyof ParamList */ String */, ScreenOptions /* <: js.Object */, ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, EventMap /* <: EventMapBase */] (val x: Self & (InitialParams[RouteName, ScreenOptions, ParamList, State, EventMap])) extends AnyVal {
     
     inline def setInitialParams(
       value: Partial[

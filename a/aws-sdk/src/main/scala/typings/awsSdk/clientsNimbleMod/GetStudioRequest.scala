@@ -18,7 +18,8 @@ object GetStudioRequest {
     __obj.asInstanceOf[GetStudioRequest]
   }
   
-  extension [Self <: GetStudioRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStudioRequest] (val x: Self) extends AnyVal {
     
     inline def setStudioId(value: String): Self = StObject.set(x, "studioId", value.asInstanceOf[js.Any])
   }

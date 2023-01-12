@@ -18,7 +18,8 @@ object RestoreEventDataStoreRequest {
     __obj.asInstanceOf[RestoreEventDataStoreRequest]
   }
   
-  extension [Self <: RestoreEventDataStoreRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreEventDataStoreRequest] (val x: Self) extends AnyVal {
     
     inline def setEventDataStore(value: EventDataStoreArn): Self = StObject.set(x, "EventDataStore", value.asInstanceOf[js.Any])
   }

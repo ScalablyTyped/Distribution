@@ -76,7 +76,8 @@ object AnalyzedResource {
     __obj.asInstanceOf[AnalyzedResource]
   }
   
-  extension [Self <: AnalyzedResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyzedResource] (val x: Self) extends AnyVal {
     
     inline def setActions(value: ActionList): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object GetAllZoomLevelsForPage {
     __obj.asInstanceOf[GetAllZoomLevelsForPage]
   }
   
-  extension [Self <: GetAllZoomLevelsForPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAllZoomLevelsForPage] (val x: Self) extends AnyVal {
     
     inline def setGetAllZoomLevelsForPage(value: Double | js.Array[SourceProvider]): Self = StObject.set(x, "getAllZoomLevelsForPage", value.asInstanceOf[js.Any])
     

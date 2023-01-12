@@ -80,7 +80,8 @@ object ExecutionTemplate {
     __obj.asInstanceOf[ExecutionTemplate]
   }
   
-  extension [Self <: ExecutionTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionTemplate] (val x: Self) extends AnyVal {
     
     inline def setAcceleratorConfig(value: SchedulerAcceleratorConfig): Self = StObject.set(x, "acceleratorConfig", value.asInstanceOf[js.Any])
     

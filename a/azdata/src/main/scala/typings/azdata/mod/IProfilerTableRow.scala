@@ -19,7 +19,8 @@ object IProfilerTableRow {
     __obj.asInstanceOf[IProfilerTableRow]
   }
   
-  extension [Self <: IProfilerTableRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IProfilerTableRow] (val x: Self) extends AnyVal {
     
     inline def setEventClass(value: String): Self = StObject.set(x, "EventClass", value.asInstanceOf[js.Any])
   }

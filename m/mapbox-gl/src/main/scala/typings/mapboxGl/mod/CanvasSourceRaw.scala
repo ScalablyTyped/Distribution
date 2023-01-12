@@ -23,7 +23,8 @@ object CanvasSourceRaw {
     __obj.asInstanceOf[CanvasSourceRaw]
   }
   
-  extension [Self <: CanvasSourceRaw](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasSourceRaw] (val x: Self) extends AnyVal {
     
     inline def setType(value: canvas): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

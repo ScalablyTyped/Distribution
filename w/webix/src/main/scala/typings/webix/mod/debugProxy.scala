@@ -20,7 +20,8 @@ object debugProxy {
     __obj.asInstanceOf[debugProxy]
   }
   
-  extension [Self <: debugProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: debugProxy] (val x: Self) extends AnyVal {
     
     inline def set$proxy(value: Boolean): Self = StObject.set(x, "$proxy", value.asInstanceOf[js.Any])
     

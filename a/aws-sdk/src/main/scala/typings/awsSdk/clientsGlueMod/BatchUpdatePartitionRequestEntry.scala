@@ -23,7 +23,8 @@ object BatchUpdatePartitionRequestEntry {
     __obj.asInstanceOf[BatchUpdatePartitionRequestEntry]
   }
   
-  extension [Self <: BatchUpdatePartitionRequestEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdatePartitionRequestEntry] (val x: Self) extends AnyVal {
     
     inline def setPartitionInput(value: PartitionInput): Self = StObject.set(x, "PartitionInput", value.asInstanceOf[js.Any])
     

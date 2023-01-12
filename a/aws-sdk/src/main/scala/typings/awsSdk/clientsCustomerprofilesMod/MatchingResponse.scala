@@ -33,7 +33,8 @@ object MatchingResponse {
     __obj.asInstanceOf[MatchingResponse]
   }
   
-  extension [Self <: MatchingResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchingResponse] (val x: Self) extends AnyVal {
     
     inline def setAutoMerging(value: AutoMerging): Self = StObject.set(x, "AutoMerging", value.asInstanceOf[js.Any])
     

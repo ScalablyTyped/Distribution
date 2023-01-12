@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[EyesOptions]
     }
     
-    extension [Self <: EyesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EyesOptions] (val x: Self) extends AnyVal {
       
       inline def setHideFunctions(value: Boolean): Self = StObject.set(x, "hideFunctions", value.asInstanceOf[js.Any])
       

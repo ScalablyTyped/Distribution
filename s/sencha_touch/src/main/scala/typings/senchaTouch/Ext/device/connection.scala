@@ -64,7 +64,8 @@ object connection {
       __obj.asInstanceOf[IAbstract]
     }
     
-    extension [Self <: IAbstract](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
       
       inline def setCELL_2G(value: String): Self = StObject.set(x, "CELL_2G", value.asInstanceOf[js.Any])
       

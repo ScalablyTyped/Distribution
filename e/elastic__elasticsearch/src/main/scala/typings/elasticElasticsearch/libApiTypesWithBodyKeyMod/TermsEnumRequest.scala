@@ -21,7 +21,8 @@ object TermsEnumRequest {
     __obj.asInstanceOf[TermsEnumRequest]
   }
   
-  extension [Self <: TermsEnumRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TermsEnumRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Caseinsensitive): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

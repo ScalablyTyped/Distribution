@@ -147,7 +147,8 @@ object distObjectSorterMod {
       __obj.asInstanceOf[CoerceOptions]
     }
     
-    extension [Self <: CoerceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoerceOptions] (val x: Self) extends AnyVal {
       
       inline def setBigint(value: Boolean): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
       
@@ -233,7 +234,8 @@ object distObjectSorterMod {
       __obj.asInstanceOf[SortOptions]
     }
     
-    extension [Self <: SortOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortOptions] (val x: Self) extends AnyVal {
       
       inline def setArray(value: Boolean): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
@@ -294,7 +296,8 @@ object distObjectSorterMod {
       __obj.asInstanceOf[SorterOptions]
     }
     
-    extension [Self <: SorterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SorterOptions] (val x: Self) extends AnyVal {
       
       inline def setCoerce(value: Boolean | CoerceOptions): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
       
@@ -334,7 +337,8 @@ object distObjectSorterMod {
       __obj.asInstanceOf[TrimOptions]
     }
     
-    extension [Self <: TrimOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrimOptions] (val x: Self) extends AnyVal {
       
       inline def setFunction(value: Boolean): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object NodeDoubleClickEventUIParam {
     __obj.asInstanceOf[NodeDoubleClickEventUIParam]
   }
   
-  extension [Self <: NodeDoubleClickEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeDoubleClickEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setBinding(value: Any): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object EdgeSourceJSON {
     __obj.asInstanceOf[EdgeSourceJSON]
   }
   
-  extension [Self <: EdgeSourceJSON](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeSourceJSON] (val x: Self) extends AnyVal {
     
     inline def setAssetGroups(value: js.Array[AssetGroupJSON]): Self = StObject.set(x, "assetGroups", value.asInstanceOf[js.Any])
     

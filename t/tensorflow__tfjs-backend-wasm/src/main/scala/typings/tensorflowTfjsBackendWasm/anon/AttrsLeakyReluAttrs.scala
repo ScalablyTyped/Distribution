@@ -22,7 +22,8 @@ object AttrsLeakyReluAttrs {
     __obj.asInstanceOf[AttrsLeakyReluAttrs]
   }
   
-  extension [Self <: AttrsLeakyReluAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsLeakyReluAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: LeakyReluAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

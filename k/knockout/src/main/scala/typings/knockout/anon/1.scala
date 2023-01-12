@@ -17,7 +17,8 @@ object `1` {
     __obj.asInstanceOf[`1`]
   }
   
-  extension [Self <: `1`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
     
     inline def setUpdate(value: (HTMLElement, js.Function0[MaybeSubscribable[String | js.Object]]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
   }

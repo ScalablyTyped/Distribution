@@ -100,7 +100,8 @@ object mod {
       __obj.asInstanceOf[BaseOptions]
     }
     
-    extension [Self <: BaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
       
       inline def setQname(value: String): Self = StObject.set(x, "qname", value.asInstanceOf[js.Any])
     }
@@ -136,7 +137,8 @@ object mod {
       __obj.asInstanceOf[ChangeMessageVisibilityOptions]
     }
     
-    extension [Self <: ChangeMessageVisibilityOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeMessageVisibilityOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -171,7 +173,8 @@ object mod {
       __obj.asInstanceOf[ConstructorOptions]
     }
     
-    extension [Self <: ConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setClient(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RedisClient */ Any
@@ -249,7 +252,8 @@ object mod {
       __obj.asInstanceOf[CreateQueueOptions]
     }
     
-    extension [Self <: CreateQueueOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateQueueOptions] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -284,7 +288,8 @@ object mod {
       __obj.asInstanceOf[DeleteMessageOptions]
     }
     
-    extension [Self <: DeleteMessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteMessageOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -388,7 +393,8 @@ object mod {
       __obj.asInstanceOf[QueueAttributes]
     }
     
-    extension [Self <: QueueAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueAttributes] (val x: Self) extends AnyVal {
       
       inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
@@ -459,7 +465,8 @@ object mod {
       __obj.asInstanceOf[QueueMessage]
     }
     
-    extension [Self <: QueueMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueMessage] (val x: Self) extends AnyVal {
       
       inline def setFr(value: Double): Self = StObject.set(x, "fr", value.asInstanceOf[js.Any])
       
@@ -494,7 +501,8 @@ object mod {
       __obj.asInstanceOf[ReceiveMessageOptions]
     }
     
-    extension [Self <: ReceiveMessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReceiveMessageOptions] (val x: Self) extends AnyVal {
       
       inline def setVt(value: Double): Self = StObject.set(x, "vt", value.asInstanceOf[js.Any])
       
@@ -578,7 +586,8 @@ object mod {
       __obj.asInstanceOf[RedisSMQ]
     }
     
-    extension [Self <: RedisSMQ](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisSMQ] (val x: Self) extends AnyVal {
       
       inline def setChangeMessageVisibility(value: (ChangeMessageVisibilityOptions, Callback[`0` | `1`]) => Unit): Self = StObject.set(x, "changeMessageVisibility", js.Any.fromFunction2(value))
       
@@ -653,7 +662,8 @@ object mod {
       __obj.asInstanceOf[SendMessageOptions]
     }
     
-    extension [Self <: SendMessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendMessageOptions] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -703,7 +713,8 @@ object mod {
       __obj.asInstanceOf[SetQueueAttributesOptions]
     }
     
-    extension [Self <: SetQueueAttributesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetQueueAttributesOptions] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       

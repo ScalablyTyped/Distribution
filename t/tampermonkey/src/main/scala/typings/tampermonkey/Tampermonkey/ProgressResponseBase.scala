@@ -32,7 +32,8 @@ object ProgressResponseBase {
     __obj.asInstanceOf[ProgressResponseBase]
   }
   
-  extension [Self <: ProgressResponseBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressResponseBase] (val x: Self) extends AnyVal {
     
     inline def setDone(value: Double): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     

@@ -110,7 +110,8 @@ object mod {
       __obj.asInstanceOf[Instance]
     }
     
-    extension [Self <: Instance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
       
       inline def setApp(value: Application): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -133,7 +134,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setLeaveRouterUntouched(value: Boolean): Self = StObject.set(x, "leaveRouterUntouched", value.asInstanceOf[js.Any])
       
@@ -170,7 +172,8 @@ object mod {
       __obj.asInstanceOf[RouterLike]
     }
     
-    extension [Self <: RouterLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouterLike] (val x: Self) extends AnyVal {
       
       inline def setGet(value: IRouterMatcher[RouterLike]): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     }
@@ -208,7 +211,8 @@ object mod {
       __obj.asInstanceOf[WithWebsocketMethod]
     }
     
-    extension [Self <: WithWebsocketMethod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithWebsocketMethod] (val x: Self) extends AnyVal {
       
       inline def setWs(value: WebsocketMethod[WithWebsocketMethod]): Self = StObject.set(x, "ws", value.asInstanceOf[js.Any])
     }

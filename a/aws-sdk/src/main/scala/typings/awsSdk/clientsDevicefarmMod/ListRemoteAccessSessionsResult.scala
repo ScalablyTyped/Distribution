@@ -23,7 +23,8 @@ object ListRemoteAccessSessionsResult {
     __obj.asInstanceOf[ListRemoteAccessSessionsResult]
   }
   
-  extension [Self <: ListRemoteAccessSessionsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRemoteAccessSessionsResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

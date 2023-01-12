@@ -21,7 +21,8 @@ object sidebarAction {
       __obj.asInstanceOf[BadgeBackgroundColorDetails]
     }
     
-    extension [Self <: BadgeBackgroundColorDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadgeBackgroundColorDetails] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String | ColorArray): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     }
@@ -43,7 +44,8 @@ object sidebarAction {
       __obj.asInstanceOf[SidebarBadgeDetail]
     }
     
-    extension [Self <: SidebarBadgeDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SidebarBadgeDetail] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
@@ -61,7 +63,8 @@ object sidebarAction {
       __obj.asInstanceOf[SidebarDockDetail]
     }
     
-    extension [Self <: SidebarDockDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SidebarDockDetail] (val x: Self) extends AnyVal {
       
       inline def setTargetWindowId(value: Double): Self = StObject.set(x, "targetWindowId", value.asInstanceOf[js.Any])
       
@@ -83,7 +86,8 @@ object sidebarAction {
       __obj.asInstanceOf[SidebarIconDetail]
     }
     
-    extension [Self <: SidebarIconDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SidebarIconDetail] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: ImageData): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     }
@@ -101,7 +105,8 @@ object sidebarAction {
       __obj.asInstanceOf[SidebarPageDetail]
     }
     
-    extension [Self <: SidebarPageDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SidebarPageDetail] (val x: Self) extends AnyVal {
       
       inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     }
@@ -125,7 +130,8 @@ object sidebarAction {
       __obj.asInstanceOf[SidebarShowDetail]
     }
     
-    extension [Self <: SidebarShowDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SidebarShowDetail] (val x: Self) extends AnyVal {
       
       inline def setReload(value: Boolean): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
       
@@ -148,7 +154,8 @@ object sidebarAction {
       __obj.asInstanceOf[SidebarTitleDetail]
     }
     
-    extension [Self <: SidebarTitleDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SidebarTitleDetail] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }

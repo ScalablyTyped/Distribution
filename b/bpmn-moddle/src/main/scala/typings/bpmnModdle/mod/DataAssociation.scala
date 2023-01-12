@@ -31,7 +31,8 @@ object DataAssociation {
     __obj.asInstanceOf[DataAssociation]
   }
   
-  extension [Self <: DataAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataAssociation] (val x: Self) extends AnyVal {
     
     inline def setAssignment(value: Assignment): Self = StObject.set(x, "assignment", value.asInstanceOf[js.Any])
     

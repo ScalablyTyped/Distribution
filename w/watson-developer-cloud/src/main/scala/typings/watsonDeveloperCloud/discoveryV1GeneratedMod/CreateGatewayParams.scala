@@ -24,7 +24,8 @@ object CreateGatewayParams {
     __obj.asInstanceOf[CreateGatewayParams]
   }
   
-  extension [Self <: CreateGatewayParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateGatewayParams] (val x: Self) extends AnyVal {
     
     inline def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
     

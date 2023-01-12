@@ -106,7 +106,8 @@ object mod {
       __obj.asInstanceOf[LogMessage]
     }
     
-    extension [Self <: LogMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogMessage] (val x: Self) extends AnyVal {
       
       inline def setColour(value: String): Self = StObject.set(x, "colour", value.asInstanceOf[js.Any])
       
@@ -248,7 +249,8 @@ object mod {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

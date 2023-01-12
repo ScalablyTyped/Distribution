@@ -76,7 +76,8 @@ object PlayReadyDomainLeaveServiceRequest {
     __obj.asInstanceOf[PlayReadyDomainLeaveServiceRequest]
   }
   
-  extension [Self <: PlayReadyDomainLeaveServiceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayReadyDomainLeaveServiceRequest] (val x: Self) extends AnyVal {
     
     inline def setBeginServiceRequest(value: () => IAsyncAction): Self = StObject.set(x, "beginServiceRequest", js.Any.fromFunction0(value))
     

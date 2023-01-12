@@ -25,7 +25,8 @@ object ExecuteActionRequestedOptions {
     __obj.asInstanceOf[ExecuteActionRequestedOptions]
   }
   
-  extension [Self <: ExecuteActionRequestedOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteActionRequestedOptions] (val x: Self) extends AnyVal {
     
     inline def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     

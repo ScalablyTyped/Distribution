@@ -61,7 +61,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Province]
       }
       
-      extension [Self <: Province](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Province] (val x: Self) extends AnyVal {
         
         inline def setAlt(value: js.Array[String]): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
         

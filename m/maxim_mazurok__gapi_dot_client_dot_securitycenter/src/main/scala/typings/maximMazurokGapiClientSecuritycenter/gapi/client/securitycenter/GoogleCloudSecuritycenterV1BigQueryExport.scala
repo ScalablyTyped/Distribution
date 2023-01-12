@@ -49,7 +49,8 @@ object GoogleCloudSecuritycenterV1BigQueryExport {
     __obj.asInstanceOf[GoogleCloudSecuritycenterV1BigQueryExport]
   }
   
-  extension [Self <: GoogleCloudSecuritycenterV1BigQueryExport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudSecuritycenterV1BigQueryExport] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

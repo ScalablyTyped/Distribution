@@ -76,7 +76,8 @@ object RequestMatcherFields {
     __obj.asInstanceOf[RequestMatcherFields]
   }
   
-  extension [Self <: RequestMatcherFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestMatcherFields] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: js.Array[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

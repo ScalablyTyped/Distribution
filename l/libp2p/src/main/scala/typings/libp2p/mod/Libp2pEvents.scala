@@ -19,7 +19,8 @@ object Libp2pEvents {
     __obj.asInstanceOf[Libp2pEvents]
   }
   
-  extension [Self <: Libp2pEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Libp2pEvents] (val x: Self) extends AnyVal {
     
     inline def setPeerColondiscovery(value: CustomEvent[PeerInfo]): Self = StObject.set(x, "peer:discovery", value.asInstanceOf[js.Any])
   }

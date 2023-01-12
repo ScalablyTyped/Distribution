@@ -30,7 +30,8 @@ object RecordBatchEntry {
     __obj.asInstanceOf[RecordBatchEntry]
   }
   
-  extension [Self <: RecordBatchEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordBatchEntry] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Double): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

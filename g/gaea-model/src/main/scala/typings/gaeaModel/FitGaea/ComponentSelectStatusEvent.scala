@@ -17,7 +17,8 @@ object ComponentSelectStatusEvent {
     __obj.asInstanceOf[ComponentSelectStatusEvent]
   }
   
-  extension [Self <: ComponentSelectStatusEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentSelectStatusEvent] (val x: Self) extends AnyVal {
     
     inline def setMapUniqueKey(value: String): Self = StObject.set(x, "mapUniqueKey", value.asInstanceOf[js.Any])
     

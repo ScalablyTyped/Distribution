@@ -32,7 +32,8 @@ object MultiPathOptions {
     __obj.asInstanceOf[MultiPathOptions]
   }
   
-  extension [Self <: MultiPathOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiPathOptions] (val x: Self) extends AnyVal {
     
     inline def setClip(value: typings.kendoUi.kendo.drawing.Path): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object ChooseInvoiceTitleSuccessCallbackResult {
     __obj.asInstanceOf[ChooseInvoiceTitleSuccessCallbackResult]
   }
   
-  extension [Self <: ChooseInvoiceTitleSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChooseInvoiceTitleSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setBankAccount(value: String): Self = StObject.set(x, "bankAccount", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Title {
     __obj.asInstanceOf[Title]
   }
   
-  extension [Self <: Title](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Title] (val x: Self) extends AnyVal {
     
     inline def setMetrics(value: typings.puppeteerCore.libEsmPuppeteerApiPageMod.Metrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     

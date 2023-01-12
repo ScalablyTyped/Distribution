@@ -42,7 +42,8 @@ object libHttpVerbModelMod {
       __obj.asInstanceOf[HttpVerbModel]
     }
     
-    extension [Self <: HttpVerbModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpVerbModel] (val x: Self) extends AnyVal {
       
       inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
       

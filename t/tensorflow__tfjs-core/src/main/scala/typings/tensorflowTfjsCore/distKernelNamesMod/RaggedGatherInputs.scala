@@ -21,7 +21,8 @@ object RaggedGatherInputs {
     __obj.asInstanceOf[RaggedGatherInputs]
   }
   
-  extension [Self <: RaggedGatherInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaggedGatherInputs] (val x: Self) extends AnyVal {
     
     inline def setIndices(value: scala.Any): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     

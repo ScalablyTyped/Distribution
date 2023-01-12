@@ -18,7 +18,8 @@ object UpdateOrganizationConfigurationResponse {
     __obj.asInstanceOf[UpdateOrganizationConfigurationResponse]
   }
   
-  extension [Self <: UpdateOrganizationConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateOrganizationConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setAutoEnable(value: AutoEnable): Self = StObject.set(x, "autoEnable", value.asInstanceOf[js.Any])
   }

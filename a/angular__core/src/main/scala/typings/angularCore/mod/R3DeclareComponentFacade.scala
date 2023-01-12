@@ -43,7 +43,8 @@ object R3DeclareComponentFacade {
     __obj.asInstanceOf[R3DeclareComponentFacade]
   }
   
-  extension [Self <: R3DeclareComponentFacade](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3DeclareComponentFacade] (val x: Self) extends AnyVal {
     
     inline def setAnimations(value: OpaqueValue): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     

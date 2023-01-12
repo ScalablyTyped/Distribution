@@ -28,7 +28,8 @@ object ResumeSessionResponse {
     __obj.asInstanceOf[ResumeSessionResponse]
   }
   
-  extension [Self <: ResumeSessionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResumeSessionResponse] (val x: Self) extends AnyVal {
     
     inline def setSessionId(value: SessionId): Self = StObject.set(x, "SessionId", value.asInstanceOf[js.Any])
     

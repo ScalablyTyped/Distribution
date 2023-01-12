@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[PMRMessage]
     }
     
-    extension [Self <: PMRMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PMRMessage] (val x: Self) extends AnyVal {
       
       inline def setCanceledQuantity(value: Double): Self = StObject.set(x, "canceledQuantity", value.asInstanceOf[js.Any])
       

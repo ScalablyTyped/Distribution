@@ -16,7 +16,8 @@ object CohortReportSettings {
     __obj.asInstanceOf[CohortReportSettings]
   }
   
-  extension [Self <: CohortReportSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CohortReportSettings] (val x: Self) extends AnyVal {
     
     inline def setAccumulate(value: Boolean): Self = StObject.set(x, "accumulate", value.asInstanceOf[js.Any])
     

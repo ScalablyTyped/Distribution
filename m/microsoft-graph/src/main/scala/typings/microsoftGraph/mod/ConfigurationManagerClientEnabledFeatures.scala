@@ -31,7 +31,8 @@ object ConfigurationManagerClientEnabledFeatures {
     __obj.asInstanceOf[ConfigurationManagerClientEnabledFeatures]
   }
   
-  extension [Self <: ConfigurationManagerClientEnabledFeatures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationManagerClientEnabledFeatures] (val x: Self) extends AnyVal {
     
     inline def setCompliancePolicy(value: Boolean): Self = StObject.set(x, "compliancePolicy", value.asInstanceOf[js.Any])
     

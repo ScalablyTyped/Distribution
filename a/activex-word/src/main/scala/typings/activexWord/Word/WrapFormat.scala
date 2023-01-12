@@ -49,7 +49,8 @@ object WrapFormat {
     __obj.asInstanceOf[WrapFormat]
   }
   
-  extension [Self <: WrapFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WrapFormat] (val x: Self) extends AnyVal {
     
     inline def setAllowOverlap(value: Double): Self = StObject.set(x, "AllowOverlap", value.asInstanceOf[js.Any])
     

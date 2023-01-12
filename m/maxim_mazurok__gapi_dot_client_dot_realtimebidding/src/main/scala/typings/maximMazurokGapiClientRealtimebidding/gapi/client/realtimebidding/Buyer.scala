@@ -41,7 +41,8 @@ object Buyer {
     __obj.asInstanceOf[Buyer]
   }
   
-  extension [Self <: Buyer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Buyer] (val x: Self) extends AnyVal {
     
     inline def setActiveCreativeCount(value: String): Self = StObject.set(x, "activeCreativeCount", value.asInstanceOf[js.Any])
     

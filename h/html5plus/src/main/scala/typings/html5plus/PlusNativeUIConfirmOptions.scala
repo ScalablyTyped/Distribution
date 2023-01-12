@@ -46,7 +46,8 @@ object PlusNativeUIConfirmOptions {
     __obj.asInstanceOf[PlusNativeUIConfirmOptions]
   }
   
-  extension [Self <: PlusNativeUIConfirmOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusNativeUIConfirmOptions] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: js.Array[Any]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

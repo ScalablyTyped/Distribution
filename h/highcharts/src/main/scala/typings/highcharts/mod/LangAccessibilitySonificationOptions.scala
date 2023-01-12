@@ -17,7 +17,8 @@ object LangAccessibilitySonificationOptions {
     __obj.asInstanceOf[LangAccessibilitySonificationOptions]
   }
   
-  extension [Self <: LangAccessibilitySonificationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LangAccessibilitySonificationOptions] (val x: Self) extends AnyVal {
     
     inline def setPlayAsSoundButtonText(value: String): Self = StObject.set(x, "playAsSoundButtonText", value.asInstanceOf[js.Any])
     

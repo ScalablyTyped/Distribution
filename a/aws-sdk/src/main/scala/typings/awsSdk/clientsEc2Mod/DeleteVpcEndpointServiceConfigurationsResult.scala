@@ -18,7 +18,8 @@ object DeleteVpcEndpointServiceConfigurationsResult {
     __obj.asInstanceOf[DeleteVpcEndpointServiceConfigurationsResult]
   }
   
-  extension [Self <: DeleteVpcEndpointServiceConfigurationsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteVpcEndpointServiceConfigurationsResult] (val x: Self) extends AnyVal {
     
     inline def setUnsuccessful(value: UnsuccessfulItemSet): Self = StObject.set(x, "Unsuccessful", value.asInstanceOf[js.Any])
     

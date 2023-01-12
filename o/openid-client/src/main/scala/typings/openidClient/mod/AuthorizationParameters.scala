@@ -63,7 +63,8 @@ object AuthorizationParameters {
     __obj.asInstanceOf[AuthorizationParameters]
   }
   
-  extension [Self <: AuthorizationParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizationParameters] (val x: Self) extends AnyVal {
     
     inline def setAcr_values(value: String): Self = StObject.set(x, "acr_values", value.asInstanceOf[js.Any])
     

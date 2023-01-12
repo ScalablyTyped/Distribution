@@ -111,7 +111,8 @@ object mod {
       __obj.asInstanceOf[PreinitOptions]
     }
     
-    extension [Self <: PreinitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreinitOptions] (val x: Self) extends AnyVal {
       
       inline def setAs(value: typings.reactDom.nextMod.reactDomAugmentingMod.PreinitAs): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -159,7 +160,8 @@ object mod {
       __obj.asInstanceOf[PreloadOptions]
     }
     
-    extension [Self <: PreloadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreloadOptions] (val x: Self) extends AnyVal {
       
       inline def setAs(value: typings.reactDom.nextMod.reactDomAugmentingMod.PreloadAs): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

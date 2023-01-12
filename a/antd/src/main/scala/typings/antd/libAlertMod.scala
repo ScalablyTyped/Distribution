@@ -104,7 +104,8 @@ object libAlertMod {
       __obj.asInstanceOf[AlertProps]
     }
     
-    extension [Self <: AlertProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlertProps] (val x: Self) extends AnyVal {
       
       inline def setAction(value: ReactNode): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

@@ -53,7 +53,8 @@ object CreateKnowledgeBaseRequest {
     __obj.asInstanceOf[CreateKnowledgeBaseRequest]
   }
   
-  extension [Self <: CreateKnowledgeBaseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateKnowledgeBaseRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: NonEmptyString): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

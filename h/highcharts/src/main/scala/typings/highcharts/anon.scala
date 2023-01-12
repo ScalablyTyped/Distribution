@@ -103,7 +103,8 @@ object anon {
       __obj.asInstanceOf[PartialAnimationOptionsOb]
     }
     
-    extension [Self <: PartialAnimationOptionsOb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialAnimationOptionsOb] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: js.Function): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object anon {
       __obj.asInstanceOf[PartialAnnotationControlP]
     }
     
-    extension [Self <: PartialAnnotationControlP](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialAnnotationControlP] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: Dictionary[js.Function]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
@@ -241,7 +243,8 @@ object anon {
       __obj.asInstanceOf[PartialAnnotationsOptions]
     }
     
-    extension [Self <: PartialAnnotationsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialAnnotationsOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Boolean | AnnotationsAnimationOptions | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -361,7 +364,8 @@ object anon {
       __obj.asInstanceOf[PartialMapViewOptions]
     }
     
-    extension [Self <: PartialMapViewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMapViewOptions] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: LonLatArray): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
@@ -441,7 +445,8 @@ object anon {
       __obj.asInstanceOf[ReadonlySVGAttributes]
     }
     
-    extension [Self <: ReadonlySVGAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlySVGAttributes] (val x: Self) extends AnyVal {
       
       inline def setD(value: String | SVGPathArray): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       

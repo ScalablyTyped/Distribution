@@ -43,7 +43,8 @@ object INDStreamParser {
     __obj.asInstanceOf[INDStreamParser]
   }
   
-  extension [Self <: INDStreamParser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INDStreamParser] (val x: Self) extends AnyVal {
     
     inline def setBeginOfStream(value: () => Unit): Self = StObject.set(x, "beginOfStream", js.Any.fromFunction0(value))
     

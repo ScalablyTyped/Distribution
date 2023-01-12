@@ -42,7 +42,8 @@ object ClassPropertyBase {
     __obj.asInstanceOf[ClassPropertyBase]
   }
   
-  extension [Self <: ClassPropertyBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassPropertyBase] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: Accessibility): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object VectorFieldRendererResult {
     __obj.asInstanceOf[VectorFieldRendererResult]
   }
   
-  extension [Self <: VectorFieldRendererResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VectorFieldRendererResult] (val x: Self) extends AnyVal {
     
     inline def setRenderer(value: VectorFieldRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
   }

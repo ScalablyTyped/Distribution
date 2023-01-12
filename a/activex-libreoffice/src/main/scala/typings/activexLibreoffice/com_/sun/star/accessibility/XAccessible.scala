@@ -60,7 +60,8 @@ object XAccessible {
     __obj.asInstanceOf[XAccessible]
   }
   
-  extension [Self <: XAccessible](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccessible] (val x: Self) extends AnyVal {
     
     inline def setAccessibleContext(value: XAccessibleContext): Self = StObject.set(x, "AccessibleContext", value.asInstanceOf[js.Any])
     

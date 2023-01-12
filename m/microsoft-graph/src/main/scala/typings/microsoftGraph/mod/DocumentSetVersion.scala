@@ -33,7 +33,8 @@ object DocumentSetVersion {
     __obj.asInstanceOf[DocumentSetVersion]
   }
   
-  extension [Self <: DocumentSetVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentSetVersion] (val x: Self) extends AnyVal {
     
     inline def setComment(value: NullableOption[String]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

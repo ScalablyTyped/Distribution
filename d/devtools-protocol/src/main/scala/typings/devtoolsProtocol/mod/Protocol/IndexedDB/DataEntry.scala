@@ -29,7 +29,8 @@ object DataEntry {
     __obj.asInstanceOf[DataEntry]
   }
   
-  extension [Self <: DataEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataEntry] (val x: Self) extends AnyVal {
     
     inline def setKey(value: RemoteObject): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

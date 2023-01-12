@@ -69,7 +69,8 @@ object PickPropsstylenavigationS {
     __obj.asInstanceOf[PickPropsstylenavigationS]
   }
   
-  extension [Self <: PickPropsstylenavigationS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickPropsstylenavigationS] (val x: Self) extends AnyVal {
     
     inline def setActiveColor(value: String): Self = StObject.set(x, "activeColor", value.asInstanceOf[js.Any])
     

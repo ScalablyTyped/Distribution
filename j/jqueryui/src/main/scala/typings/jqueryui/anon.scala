@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[Attribute]
     }
     
-    extension [Self <: Attribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
       
       inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object anon {
       __obj.asInstanceOf[Expression]
     }
     
-    extension [Self <: Expression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Expression] (val x: Self) extends AnyVal {
       
       inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
@@ -127,7 +129,8 @@ object anon {
       __obj.asInstanceOf[Left]
     }
     
-    extension [Self <: Left](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -146,7 +149,8 @@ object anon {
       __obj.asInstanceOf[Selected]
     }
     
-    extension [Self <: Selected](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Selected] (val x: Self) extends AnyVal {
       
       inline def setSelected(value: Element): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
@@ -165,7 +169,8 @@ object anon {
       __obj.asInstanceOf[Selecting]
     }
     
-    extension [Self <: Selecting](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Selecting] (val x: Self) extends AnyVal {
       
       inline def setSelecting(value: Element): Self = StObject.set(x, "selecting", value.asInstanceOf[js.Any])
       
@@ -184,7 +189,8 @@ object anon {
       __obj.asInstanceOf[Unselected]
     }
     
-    extension [Self <: Unselected](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unselected] (val x: Self) extends AnyVal {
       
       inline def setUnselected(value: Element): Self = StObject.set(x, "unselected", value.asInstanceOf[js.Any])
     }
@@ -201,7 +207,8 @@ object anon {
       __obj.asInstanceOf[Unselecting]
     }
     
-    extension [Self <: Unselecting](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unselecting] (val x: Self) extends AnyVal {
       
       inline def setUnselecting(value: Element): Self = StObject.set(x, "unselecting", value.asInstanceOf[js.Any])
     }

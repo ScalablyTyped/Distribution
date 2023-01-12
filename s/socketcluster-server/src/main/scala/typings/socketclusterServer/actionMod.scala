@@ -130,7 +130,8 @@ object actionMod {
       __obj.asInstanceOf[AGAction]
     }
     
-    extension [Self <: AGAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AGAction] (val x: Self) extends AnyVal {
       
       inline def setAUTHENTICATE(value: /* "authenticate" */ String): Self = StObject.set(x, "AUTHENTICATE", value.asInstanceOf[js.Any])
       

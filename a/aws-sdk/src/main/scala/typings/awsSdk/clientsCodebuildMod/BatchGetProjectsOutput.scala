@@ -23,7 +23,8 @@ object BatchGetProjectsOutput {
     __obj.asInstanceOf[BatchGetProjectsOutput]
   }
   
-  extension [Self <: BatchGetProjectsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetProjectsOutput] (val x: Self) extends AnyVal {
     
     inline def setProjects(value: Projects): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object DownloadDefaultKeyPairResult {
     __obj.asInstanceOf[DownloadDefaultKeyPairResult]
   }
   
-  extension [Self <: DownloadDefaultKeyPairResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadDefaultKeyPairResult] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

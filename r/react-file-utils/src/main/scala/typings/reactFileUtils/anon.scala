@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Alt]
     }
     
-    extension [Self <: Alt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alt] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: Record[SupportedMimeType | GeneralType | fallback, ComponentType[IconPropsV1]]): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[Dictx]
     }
     
-    extension [Self <: Dictx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictx] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -139,7 +142,8 @@ object anon {
       __obj.asInstanceOf[LastModified]
     }
     
-    extension [Self <: LastModified](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LastModified] (val x: Self) extends AnyVal {
       
       inline def setLastModified(value: Double): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
       
@@ -178,7 +182,8 @@ object anon {
       __obj.asInstanceOf[OnFileChange]
     }
     
-    extension [Self <: OnFileChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnFileChange] (val x: Self) extends AnyVal {
       
       inline def setOnFileChange(value: js.Array[File] => Unit): Self = StObject.set(x, "onFileChange", js.Any.fromFunction1(value))
       
@@ -201,7 +206,8 @@ object anon {
       __obj.asInstanceOf[Standard]
     }
     
-    extension [Self <: Standard](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Standard] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: Record[SupportedMimeType | GeneralType | fallback, ComponentType[IconPropsV2]]): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       

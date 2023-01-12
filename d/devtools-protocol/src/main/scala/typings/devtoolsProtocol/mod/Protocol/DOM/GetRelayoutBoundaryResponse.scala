@@ -18,7 +18,8 @@ object GetRelayoutBoundaryResponse {
     __obj.asInstanceOf[GetRelayoutBoundaryResponse]
   }
   
-  extension [Self <: GetRelayoutBoundaryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRelayoutBoundaryResponse] (val x: Self) extends AnyVal {
     
     inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }

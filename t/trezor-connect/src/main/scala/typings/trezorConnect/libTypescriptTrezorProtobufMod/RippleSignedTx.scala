@@ -17,7 +17,8 @@ object RippleSignedTx {
     __obj.asInstanceOf[RippleSignedTx]
   }
   
-  extension [Self <: RippleSignedTx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RippleSignedTx] (val x: Self) extends AnyVal {
     
     inline def setSerialized_tx(value: String): Self = StObject.set(x, "serialized_tx", value.asInstanceOf[js.Any])
     

@@ -738,7 +738,8 @@ object OmitPagesetAbsoluteBounds {
     __obj.asInstanceOf[OmitPagesetAbsoluteBounds]
   }
   
-  extension [Self <: OmitPagesetAbsoluteBounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitPagesetAbsoluteBounds] (val x: Self) extends AnyVal {
     
     inline def set$children(value: js.Array[Widget[Any]]): Self = StObject.set(x, "$children", value.asInstanceOf[js.Any])
     

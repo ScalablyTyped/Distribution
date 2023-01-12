@@ -48,7 +48,8 @@ object DatabaseResponse {
     __obj.asInstanceOf[DatabaseResponse]
   }
   
-  extension [Self <: DatabaseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseResponse] (val x: Self) extends AnyVal {
     
     inline def setCollectors(value: CollectorsList): Self = StObject.set(x, "Collectors", value.asInstanceOf[js.Any])
     

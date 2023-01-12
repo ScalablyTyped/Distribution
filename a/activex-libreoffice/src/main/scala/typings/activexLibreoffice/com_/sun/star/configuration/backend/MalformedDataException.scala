@@ -48,7 +48,8 @@ object MalformedDataException {
     __obj.asInstanceOf[MalformedDataException]
   }
   
-  extension [Self <: MalformedDataException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MalformedDataException] (val x: Self) extends AnyVal {
     
     inline def setErrorDetails(value: Any): Self = StObject.set(x, "ErrorDetails", value.asInstanceOf[js.Any])
   }

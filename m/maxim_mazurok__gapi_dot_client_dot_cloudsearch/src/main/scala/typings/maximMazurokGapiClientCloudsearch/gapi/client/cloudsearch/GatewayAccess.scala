@@ -16,7 +16,8 @@ object GatewayAccess {
     __obj.asInstanceOf[GatewayAccess]
   }
   
-  extension [Self <: GatewayAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GatewayAccess] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

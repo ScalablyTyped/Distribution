@@ -103,7 +103,8 @@ object mod {
       __obj.asInstanceOf[ArgumentConfig]
     }
     
-    extension [Self <: ArgumentConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgumentConfig] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -159,7 +160,8 @@ object mod {
       __obj.asInstanceOf[CompositionOptions]
     }
     
-    extension [Self <: CompositionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompositionOptions] (val x: Self) extends AnyVal {
       
       inline def setGenerator(value: GeneratorConstructor): Self = StObject.set(x, "Generator", value.asInstanceOf[js.Any])
       
@@ -1288,7 +1290,8 @@ object mod {
       __obj.asInstanceOf[GeneratorFeatures]
     }
     
-    extension [Self <: GeneratorFeatures](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeneratorFeatures] (val x: Self) extends AnyVal {
       
       inline def setCustomCommitTask(value: Boolean): Self = StObject.set(x, "customCommitTask", value.asInstanceOf[js.Any])
       
@@ -1367,7 +1370,8 @@ object mod {
       __obj.asInstanceOf[GeneratorOptions]
     }
     
-    extension [Self <: GeneratorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeneratorOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomPriorities(value: js.Array[Priority]): Self = StObject.set(x, "customPriorities", value.asInstanceOf[js.Any])
       
@@ -1423,7 +1427,8 @@ object mod {
       __obj.asInstanceOf[InstallOptions]
     }
     
-    extension [Self <: InstallOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstallOptions] (val x: Self) extends AnyVal {
       
       inline def setBower(value: Boolean | js.Object): Self = StObject.set(x, "bower", value.asInstanceOf[js.Any])
       
@@ -1488,7 +1493,8 @@ object mod {
       __obj.asInstanceOf[OptionConfig]
     }
     
-    extension [Self <: OptionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionConfig] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -1545,7 +1551,8 @@ object mod {
       __obj.asInstanceOf[Priority]
     }
     
-    extension [Self <: Priority](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Priority] (val x: Self) extends AnyVal {
       
       inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
@@ -1599,7 +1606,8 @@ object mod {
       __obj.asInstanceOf[QueueOptions]
     }
     
-    extension [Self <: QueueOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueOptions] (val x: Self) extends AnyVal {
       
       inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
       
@@ -1641,7 +1649,8 @@ object mod {
       __obj.asInstanceOf[Task]
     }
     
-    extension [Self <: Task](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: Any => Any): Self = StObject.set(x, "method", js.Any.fromFunction1(value))
       
@@ -1668,7 +1677,8 @@ object mod {
       __obj.asInstanceOf[TaskOptions]
     }
     
-    extension [Self <: TaskOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskOptions] (val x: Self) extends AnyVal {
       
       inline def setReject(value: /* err */ Any => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
       
@@ -1713,7 +1723,8 @@ object mod {
       __obj.asInstanceOf[TemplateRenderOptions[T]]
     }
     
-    extension [Self <: TemplateRenderOptions[?], T /* <: Generator[Any] */](x: Self & TemplateRenderOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateRenderOptions[?], T /* <: Generator[Any] */] (val x: Self & TemplateRenderOptions[T]) extends AnyVal {
       
       inline def setCopyOptions(value: CopyOptions): Self = StObject.set(x, "copyOptions", value.asInstanceOf[js.Any])
       

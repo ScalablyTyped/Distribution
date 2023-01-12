@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Format]
     }
     
-    extension [Self <: Format](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[StripComments]
     }
     
-    extension [Self <: StripComments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StripComments] (val x: Self) extends AnyVal {
       
       inline def setStripComments(value: Boolean): Self = StObject.set(x, "stripComments", value.asInstanceOf[js.Any])
       

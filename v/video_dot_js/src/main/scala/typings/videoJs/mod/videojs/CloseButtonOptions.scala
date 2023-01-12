@@ -17,7 +17,8 @@ object CloseButtonOptions {
     __obj.asInstanceOf[CloseButtonOptions]
   }
   
-  extension [Self <: CloseButtonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseButtonOptions] (val x: Self) extends AnyVal {
     
     inline def setControlText(value: String): Self = StObject.set(x, "controlText", value.asInstanceOf[js.Any])
     

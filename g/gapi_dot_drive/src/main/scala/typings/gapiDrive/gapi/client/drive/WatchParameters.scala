@@ -21,7 +21,8 @@ object WatchParameters {
     __obj.asInstanceOf[WatchParameters]
   }
   
-  extension [Self <: WatchParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchParameters] (val x: Self) extends AnyVal {
     
     inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     

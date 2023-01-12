@@ -66,7 +66,8 @@ object XDataInputStream {
     __obj.asInstanceOf[XDataInputStream]
   }
   
-  extension [Self <: XDataInputStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataInputStream] (val x: Self) extends AnyVal {
     
     inline def setReadBoolean(value: () => Double): Self = StObject.set(x, "readBoolean", js.Any.fromFunction0(value))
     

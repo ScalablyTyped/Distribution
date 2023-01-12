@@ -160,7 +160,8 @@ object distTypesTypesExternalMod {
       __obj.asInstanceOf[Patch]
     }
     
-    extension [Self <: Patch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Patch] (val x: Self) extends AnyVal {
       
       inline def setOp(value: replace | remove | add): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
       

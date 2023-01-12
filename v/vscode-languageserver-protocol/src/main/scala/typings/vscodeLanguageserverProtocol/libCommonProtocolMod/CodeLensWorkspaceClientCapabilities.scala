@@ -24,7 +24,8 @@ object CodeLensWorkspaceClientCapabilities {
     __obj.asInstanceOf[CodeLensWorkspaceClientCapabilities]
   }
   
-  extension [Self <: CodeLensWorkspaceClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeLensWorkspaceClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setRefreshSupport(value: Boolean): Self = StObject.set(x, "refreshSupport", value.asInstanceOf[js.Any])
     

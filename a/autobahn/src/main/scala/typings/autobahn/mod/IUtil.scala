@@ -15,7 +15,8 @@ object IUtil {
     __obj.asInstanceOf[IUtil]
   }
   
-  extension [Self <: IUtil](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUtil] (val x: Self) extends AnyVal {
     
     inline def setAssert(value: (Boolean, String) => Unit): Self = StObject.set(x, "assert", js.Any.fromFunction2(value))
   }

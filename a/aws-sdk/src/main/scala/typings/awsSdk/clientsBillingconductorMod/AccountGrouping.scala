@@ -18,7 +18,8 @@ object AccountGrouping {
     __obj.asInstanceOf[AccountGrouping]
   }
   
-  extension [Self <: AccountGrouping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountGrouping] (val x: Self) extends AnyVal {
     
     inline def setLinkedAccountIds(value: AccountIdList): Self = StObject.set(x, "LinkedAccountIds", value.asInstanceOf[js.Any])
     

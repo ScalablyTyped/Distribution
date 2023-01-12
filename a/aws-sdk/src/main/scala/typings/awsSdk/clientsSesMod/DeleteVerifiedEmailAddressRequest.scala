@@ -18,7 +18,8 @@ object DeleteVerifiedEmailAddressRequest {
     __obj.asInstanceOf[DeleteVerifiedEmailAddressRequest]
   }
   
-  extension [Self <: DeleteVerifiedEmailAddressRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteVerifiedEmailAddressRequest] (val x: Self) extends AnyVal {
     
     inline def setEmailAddress(value: Address): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
   }

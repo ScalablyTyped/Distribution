@@ -86,7 +86,8 @@ object ReleaseDefinitionEnvironment {
     __obj.asInstanceOf[ReleaseDefinitionEnvironment]
   }
   
-  extension [Self <: ReleaseDefinitionEnvironment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseDefinitionEnvironment] (val x: Self) extends AnyVal {
     
     inline def setBadgeUrl(value: String): Self = StObject.set(x, "badgeUrl", value.asInstanceOf[js.Any])
     

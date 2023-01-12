@@ -65,7 +65,8 @@ object XPropertyWithState {
     __obj.asInstanceOf[XPropertyWithState]
   }
   
-  extension [Self <: XPropertyWithState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPropertyWithState] (val x: Self) extends AnyVal {
     
     inline def setDefaultAsProperty(value: XInterface): Self = StObject.set(x, "DefaultAsProperty", value.asInstanceOf[js.Any])
     

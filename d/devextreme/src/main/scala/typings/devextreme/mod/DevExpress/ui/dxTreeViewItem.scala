@@ -52,7 +52,8 @@ object dxTreeViewItem {
     __obj.asInstanceOf[dxTreeViewItem]
   }
   
-  extension [Self <: dxTreeViewItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxTreeViewItem] (val x: Self) extends AnyVal {
     
     inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     

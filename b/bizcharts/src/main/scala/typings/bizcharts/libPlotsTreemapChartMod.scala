@@ -29,7 +29,8 @@ object libPlotsTreemapChartMod extends Shortcut {
       __obj.asInstanceOf[TreemapOptions]
     }
     
-    extension [Self <: TreemapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreemapOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxLevel(value: Double): Self = StObject.set(x, "maxLevel", value.asInstanceOf[js.Any])
       

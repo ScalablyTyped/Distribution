@@ -28,7 +28,8 @@ object PropertyValue {
     __obj.asInstanceOf[PropertyValue]
   }
   
-  extension [Self <: PropertyValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyValue] (val x: Self) extends AnyVal {
     
     inline def setTime(value: Time): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     

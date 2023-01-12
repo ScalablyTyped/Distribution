@@ -62,7 +62,8 @@ object libHeaderHeaderRowMod {
       __obj.asInstanceOf[RowProps[RecordType]]
     }
     
-    extension [Self <: RowProps[?], RecordType](x: Self & RowProps[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowProps[?], RecordType] (val x: Self & RowProps[RecordType]) extends AnyVal {
       
       inline def setCellComponent(value: CustomizeComponent): Self = StObject.set(x, "cellComponent", value.asInstanceOf[js.Any])
       

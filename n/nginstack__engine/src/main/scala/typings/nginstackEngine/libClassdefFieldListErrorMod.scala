@@ -61,7 +61,8 @@ object libClassdefFieldListErrorMod {
       __obj.asInstanceOf[FieldListError]
     }
     
-    extension [Self <: FieldListError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldListError] (val x: Self) extends AnyVal {
       
       inline def set_name(value: Any): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     }

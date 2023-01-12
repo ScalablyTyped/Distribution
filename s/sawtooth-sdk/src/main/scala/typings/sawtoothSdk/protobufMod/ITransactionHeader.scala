@@ -40,7 +40,8 @@ object ITransactionHeader {
     __obj.asInstanceOf[ITransactionHeader]
   }
   
-  extension [Self <: ITransactionHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITransactionHeader] (val x: Self) extends AnyVal {
     
     inline def setBatcherPublicKey(value: String): Self = StObject.set(x, "batcherPublicKey", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object IReadyObject {
     __obj.asInstanceOf[IReadyObject]
   }
   
-  extension [Self <: IReadyObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IReadyObject] (val x: Self) extends AnyVal {
     
     inline def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

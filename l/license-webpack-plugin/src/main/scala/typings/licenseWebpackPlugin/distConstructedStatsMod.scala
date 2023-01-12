@@ -19,7 +19,8 @@ object distConstructedStatsMod {
       __obj.asInstanceOf[ConstructedStats]
     }
     
-    extension [Self <: ConstructedStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstructedStats] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: Boolean): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       

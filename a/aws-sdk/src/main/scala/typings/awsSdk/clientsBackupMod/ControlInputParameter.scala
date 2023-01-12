@@ -23,7 +23,8 @@ object ControlInputParameter {
     __obj.asInstanceOf[ControlInputParameter]
   }
   
-  extension [Self <: ControlInputParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlInputParameter] (val x: Self) extends AnyVal {
     
     inline def setParameterName(value: ParameterName): Self = StObject.set(x, "ParameterName", value.asInstanceOf[js.Any])
     

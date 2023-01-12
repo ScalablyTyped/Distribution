@@ -30,7 +30,8 @@ object StartLoggingOptions {
     __obj.asInstanceOf[StartLoggingOptions]
   }
   
-  extension [Self <: StartLoggingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartLoggingOptions] (val x: Self) extends AnyVal {
     
     inline def setCaptureMode(value: default | includeSensitive | everything): Self = StObject.set(x, "captureMode", value.asInstanceOf[js.Any])
     

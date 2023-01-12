@@ -195,7 +195,8 @@ object typesMessageQueueContextMod {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setDisableAutohide(value: Boolean): Self = StObject.set(x, "disableAutohide", value.asInstanceOf[js.Any])
       
@@ -257,7 +258,8 @@ object typesMessageQueueContextMod {
       __obj.asInstanceOf[MessageQueueActions[M]]
     }
     
-    extension [Self <: MessageQueueActions[?], M /* <: Message */](x: Self & MessageQueueActions[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageQueueActions[?], M /* <: Message */] (val x: Self & MessageQueueActions[M]) extends AnyVal {
       
       inline def setHideMessage(value: () => Unit): Self = StObject.set(x, "hideMessage", js.Any.fromFunction0(value))
       
@@ -713,7 +715,8 @@ object typesMessageQueueContextMod {
       __obj.asInstanceOf[ToastMessage]
     }
     
-    extension [Self <: ToastMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastMessage] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object IGeneratedCodeInfo {
     __obj.asInstanceOf[IGeneratedCodeInfo]
   }
   
-  extension [Self <: IGeneratedCodeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeneratedCodeInfo] (val x: Self) extends AnyVal {
     
     inline def setAnnotation(value: js.Array[IAnnotation]): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     

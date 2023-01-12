@@ -22,7 +22,8 @@ object ZIndexProps {
     __obj.asInstanceOf[ZIndexProps[ThemeType]]
   }
   
-  extension [Self <: ZIndexProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & ZIndexProps[ThemeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZIndexProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & ZIndexProps[ThemeType]) extends AnyVal {
     
     inline def setZIndex(value: ResponsiveValue[ZIndex, ThemeType]): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     

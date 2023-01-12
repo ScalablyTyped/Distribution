@@ -18,7 +18,8 @@ object UpdateEvaluationOutput {
     __obj.asInstanceOf[UpdateEvaluationOutput]
   }
   
-  extension [Self <: UpdateEvaluationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateEvaluationOutput] (val x: Self) extends AnyVal {
     
     inline def setEvaluationId(value: EntityId): Self = StObject.set(x, "EvaluationId", value.asInstanceOf[js.Any])
     

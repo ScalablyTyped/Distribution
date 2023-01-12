@@ -109,7 +109,8 @@ object RunCreateModel {
     __obj.asInstanceOf[RunCreateModel]
   }
   
-  extension [Self <: RunCreateModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunCreateModel] (val x: Self) extends AnyVal {
     
     inline def setAutomated(value: Boolean): Self = StObject.set(x, "automated", value.asInstanceOf[js.Any])
     

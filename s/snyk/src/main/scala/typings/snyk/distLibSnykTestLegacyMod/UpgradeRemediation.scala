@@ -17,7 +17,8 @@ object UpgradeRemediation {
     __obj.asInstanceOf[UpgradeRemediation]
   }
   
-  extension [Self <: UpgradeRemediation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpgradeRemediation] (val x: Self) extends AnyVal {
     
     inline def setUpgrades(value: js.Array[String]): Self = StObject.set(x, "upgrades", value.asInstanceOf[js.Any])
     

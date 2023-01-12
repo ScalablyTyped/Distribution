@@ -52,7 +52,8 @@ object DisplayApplianceEnvelope {
     __obj.asInstanceOf[DisplayApplianceEnvelope]
   }
   
-  extension [Self <: DisplayApplianceEnvelope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayApplianceEnvelope] (val x: Self) extends AnyVal {
     
     inline def setAddDemoStamp(value: Boolean): Self = StObject.set(x, "addDemoStamp", value.asInstanceOf[js.Any])
     

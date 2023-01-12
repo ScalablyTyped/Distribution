@@ -18,7 +18,8 @@ object DataLakePrincipal {
     __obj.asInstanceOf[DataLakePrincipal]
   }
   
-  extension [Self <: DataLakePrincipal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataLakePrincipal] (val x: Self) extends AnyVal {
     
     inline def setDataLakePrincipalIdentifier(value: DataLakePrincipalString): Self = StObject.set(x, "DataLakePrincipalIdentifier", value.asInstanceOf[js.Any])
     

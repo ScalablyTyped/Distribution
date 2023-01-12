@@ -32,7 +32,8 @@ object QuizFeedback {
     __obj.asInstanceOf[QuizFeedback]
   }
   
-  extension [Self <: QuizFeedback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuizFeedback] (val x: Self) extends AnyVal {
     
     inline def setGetLinkUrls(value: () => js.Array[String]): Self = StObject.set(x, "getLinkUrls", js.Any.fromFunction0(value))
     

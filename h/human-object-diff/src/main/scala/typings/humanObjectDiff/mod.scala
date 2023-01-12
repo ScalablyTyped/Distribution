@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[DiffEngine]
     }
     
-    extension [Self <: DiffEngine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffEngine] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: RequiredOptions): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
       

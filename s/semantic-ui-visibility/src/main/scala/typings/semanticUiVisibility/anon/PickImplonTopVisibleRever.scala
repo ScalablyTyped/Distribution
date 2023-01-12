@@ -110,7 +110,8 @@ object PickImplonTopVisibleRever {
     __obj.asInstanceOf[PickImplonTopVisibleRever]
   }
   
-  extension [Self <: PickImplonTopVisibleRever](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplonTopVisibleRever] (val x: Self) extends AnyVal {
     
     inline def setCheckOnRefresh(value: Boolean): Self = StObject.set(x, "checkOnRefresh", value.asInstanceOf[js.Any])
     

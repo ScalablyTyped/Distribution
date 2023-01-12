@@ -16,7 +16,8 @@ object GoogleCloudDatalabelingV1p2alpha1LabelImageBoundingBoxOperationMetadata {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1p2alpha1LabelImageBoundingBoxOperationMetadata]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1p2alpha1LabelImageBoundingBoxOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1p2alpha1LabelImageBoundingBoxOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setBasicConfig(value: GoogleCloudDatalabelingV1p2alpha1HumanAnnotationConfig): Self = StObject.set(x, "basicConfig", value.asInstanceOf[js.Any])
     

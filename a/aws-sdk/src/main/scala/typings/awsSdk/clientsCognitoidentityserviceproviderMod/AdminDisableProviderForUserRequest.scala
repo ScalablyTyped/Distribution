@@ -23,7 +23,8 @@ object AdminDisableProviderForUserRequest {
     __obj.asInstanceOf[AdminDisableProviderForUserRequest]
   }
   
-  extension [Self <: AdminDisableProviderForUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminDisableProviderForUserRequest] (val x: Self) extends AnyVal {
     
     inline def setUser(value: ProviderUserIdentifierType): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     

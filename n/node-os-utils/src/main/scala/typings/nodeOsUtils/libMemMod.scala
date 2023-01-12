@@ -47,7 +47,8 @@ object libMemMod {
       __obj.asInstanceOf[Mem]
     }
     
-    extension [Self <: Mem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mem] (val x: Self) extends AnyVal {
       
       inline def setFree(value: () => js.Promise[MemFreeInfo]): Self = StObject.set(x, "free", js.Any.fromFunction0(value))
       
@@ -72,7 +73,8 @@ object libMemMod {
       __obj.asInstanceOf[MemFreeInfo]
     }
     
-    extension [Self <: MemFreeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemFreeInfo] (val x: Self) extends AnyVal {
       
       inline def setFreeMemMb(value: Double): Self = StObject.set(x, "freeMemMb", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object libMemMod {
       __obj.asInstanceOf[MemInfo]
     }
     
-    extension [Self <: MemInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemInfo] (val x: Self) extends AnyVal {
       
       inline def setFreeMemPercentage(value: Double): Self = StObject.set(x, "freeMemPercentage", value.asInstanceOf[js.Any])
       
@@ -127,7 +130,8 @@ object libMemMod {
       __obj.asInstanceOf[MemUsedInfo]
     }
     
-    extension [Self <: MemUsedInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemUsedInfo] (val x: Self) extends AnyVal {
       
       inline def setTotalMemMb(value: Double): Self = StObject.set(x, "totalMemMb", value.asInstanceOf[js.Any])
       

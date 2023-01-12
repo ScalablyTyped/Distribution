@@ -168,7 +168,8 @@ object mod {
       __obj.asInstanceOf[MJMLJsonSelfClosingTag]
     }
     
-    extension [Self <: MJMLJsonSelfClosingTag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MJMLJsonSelfClosingTag] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -193,7 +194,8 @@ object mod {
       __obj.asInstanceOf[MJMLJsonWithChildren]
     }
     
-    extension [Self <: MJMLJsonWithChildren](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MJMLJsonWithChildren] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -222,7 +224,8 @@ object mod {
       __obj.asInstanceOf[MJMLJsonWithContent]
     }
     
-    extension [Self <: MJMLJsonWithContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MJMLJsonWithContent] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -247,7 +250,8 @@ object mod {
       __obj.asInstanceOf[MJMLMinifyOptions]
     }
     
-    extension [Self <: MJMLMinifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MJMLMinifyOptions] (val x: Self) extends AnyVal {
       
       inline def setCollapseWhitespace(value: Boolean): Self = StObject.set(x, "collapseWhitespace", value.asInstanceOf[js.Any])
       
@@ -280,7 +284,8 @@ object mod {
       __obj.asInstanceOf[MJMLParseError]
     }
     
-    extension [Self <: MJMLParseError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MJMLParseError] (val x: Self) extends AnyVal {
       
       inline def setFormattedMessage(value: String): Self = StObject.set(x, "formattedMessage", value.asInstanceOf[js.Any])
       
@@ -307,7 +312,8 @@ object mod {
       __obj.asInstanceOf[MJMLParseResults]
     }
     
-    extension [Self <: MJMLParseResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MJMLParseResults] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[MJMLParseError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -427,7 +433,8 @@ object mod {
       __obj.asInstanceOf[MJMLParsingOptions]
     }
     
-    extension [Self <: MJMLParsingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MJMLParsingOptions] (val x: Self) extends AnyVal {
       
       inline def setActualPath(value: String): Self = StObject.set(x, "actualPath", value.asInstanceOf[js.Any])
       

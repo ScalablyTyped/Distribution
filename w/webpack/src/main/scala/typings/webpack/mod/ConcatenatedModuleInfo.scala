@@ -32,7 +32,8 @@ object ConcatenatedModuleInfo {
     __obj.asInstanceOf[ConcatenatedModuleInfo]
   }
   
-  extension [Self <: ConcatenatedModuleInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConcatenatedModuleInfo] (val x: Self) extends AnyVal {
     
     inline def setExportMap(value: Map[String, String]): Self = StObject.set(x, "exportMap", value.asInstanceOf[js.Any])
     

@@ -97,7 +97,8 @@ object SheetFilterDescriptor {
     __obj.asInstanceOf[SheetFilterDescriptor]
   }
   
-  extension [Self <: SheetFilterDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SheetFilterDescriptor] (val x: Self) extends AnyVal {
     
     inline def setContainsHeader(value: Boolean): Self = StObject.set(x, "ContainsHeader", value.asInstanceOf[js.Any])
     

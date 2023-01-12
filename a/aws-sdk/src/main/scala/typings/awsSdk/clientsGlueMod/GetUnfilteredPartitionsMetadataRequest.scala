@@ -36,7 +36,8 @@ object GetUnfilteredPartitionsMetadataRequest {
     __obj.asInstanceOf[GetUnfilteredPartitionsMetadataRequest]
   }
   
-  extension [Self <: GetUnfilteredPartitionsMetadataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUnfilteredPartitionsMetadataRequest] (val x: Self) extends AnyVal {
     
     inline def setAuditContext(value: AuditContext): Self = StObject.set(x, "AuditContext", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object HeadersOptions {
     __obj.asInstanceOf[HeadersOptions]
   }
   
-  extension [Self <: HeadersOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeadersOptions] (val x: Self) extends AnyVal {
     
     inline def setBody(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify fhir.Bundle */ Any) & `1`

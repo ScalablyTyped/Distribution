@@ -19,7 +19,8 @@ object SubscriptionDeferralInfo {
     __obj.asInstanceOf[SubscriptionDeferralInfo]
   }
   
-  extension [Self <: SubscriptionDeferralInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionDeferralInfo] (val x: Self) extends AnyVal {
     
     inline def setDesiredExpiryTimeMillis(value: String): Self = StObject.set(x, "desiredExpiryTimeMillis", value.asInstanceOf[js.Any])
     

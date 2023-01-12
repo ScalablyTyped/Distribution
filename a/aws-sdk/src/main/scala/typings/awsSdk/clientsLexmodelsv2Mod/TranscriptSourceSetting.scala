@@ -18,7 +18,8 @@ object TranscriptSourceSetting {
     __obj.asInstanceOf[TranscriptSourceSetting]
   }
   
-  extension [Self <: TranscriptSourceSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranscriptSourceSetting] (val x: Self) extends AnyVal {
     
     inline def setS3BucketTranscriptSource(value: S3BucketTranscriptSource): Self = StObject.set(x, "s3BucketTranscriptSource", value.asInstanceOf[js.Any])
     

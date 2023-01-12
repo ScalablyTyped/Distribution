@@ -18,7 +18,8 @@ object AwsElbLoadBalancerInstance {
     __obj.asInstanceOf[AwsElbLoadBalancerInstance]
   }
   
-  extension [Self <: AwsElbLoadBalancerInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsElbLoadBalancerInstance] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: NonEmptyString): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

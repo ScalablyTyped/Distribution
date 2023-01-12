@@ -51,7 +51,8 @@ object distWindowSizeWindowSizeMod {
       __obj.asInstanceOf[WindowSizeConfig]
     }
     
-    extension [Self <: WindowSizeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WindowSizeConfig] (val x: Self) extends AnyVal {
       
       inline def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object distWindowSizeWindowSizeMod {
       __obj.asInstanceOf[WindowSizeProps]
     }
     
-    extension [Self <: WindowSizeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WindowSizeProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

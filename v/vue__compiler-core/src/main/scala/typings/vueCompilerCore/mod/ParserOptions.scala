@@ -76,7 +76,8 @@ object ParserOptions {
     __obj.asInstanceOf[ParserOptions]
   }
   
-  extension [Self <: ParserOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
     
     inline def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     

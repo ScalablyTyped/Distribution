@@ -53,7 +53,8 @@ object TableBorderDistances {
     __obj.asInstanceOf[TableBorderDistances]
   }
   
-  extension [Self <: TableBorderDistances](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableBorderDistances] (val x: Self) extends AnyVal {
     
     inline def setBottomDistance(value: Double): Self = StObject.set(x, "BottomDistance", value.asInstanceOf[js.Any])
     

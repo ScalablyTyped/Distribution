@@ -23,7 +23,8 @@ object Sheet {
     __obj.asInstanceOf[Sheet]
   }
   
-  extension [Self <: Sheet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sheet] (val x: Self) extends AnyVal {
     
     inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

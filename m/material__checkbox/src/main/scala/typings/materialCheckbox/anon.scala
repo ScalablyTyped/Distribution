@@ -67,7 +67,8 @@ object anon {
       __obj.asInstanceOf[ANIMCHECKEDINDETERMINATE]
     }
     
-    extension [Self <: ANIMCHECKEDINDETERMINATE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ANIMCHECKEDINDETERMINATE] (val x: Self) extends AnyVal {
       
       inline def setANIM_CHECKED_INDETERMINATE(value: String): Self = StObject.set(x, "ANIM_CHECKED_INDETERMINATE", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object anon {
       __obj.asInstanceOf[ANIMENDLATCHMS]
     }
     
-    extension [Self <: ANIMENDLATCHMS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ANIMENDLATCHMS] (val x: Self) extends AnyVal {
       
       inline def setANIM_END_LATCH_MS(value: Double): Self = StObject.set(x, "ANIM_END_LATCH_MS", value.asInstanceOf[js.Any])
     }
@@ -156,7 +158,8 @@ object anon {
       __obj.asInstanceOf[ARIACHECKEDATTR]
     }
     
-    extension [Self <: ARIACHECKEDATTR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ARIACHECKEDATTR] (val x: Self) extends AnyVal {
       
       inline def setARIA_CHECKED_ATTR(value: String): Self = StObject.set(x, "ARIA_CHECKED_ATTR", value.asInstanceOf[js.Any])
       
@@ -206,7 +209,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCCheckboxAdapter]
     }
     
-    extension [Self <: PartialMDCCheckboxAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCCheckboxAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

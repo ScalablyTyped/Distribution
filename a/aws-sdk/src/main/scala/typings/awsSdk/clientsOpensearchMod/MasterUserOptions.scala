@@ -28,7 +28,8 @@ object MasterUserOptions {
     __obj.asInstanceOf[MasterUserOptions]
   }
   
-  extension [Self <: MasterUserOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MasterUserOptions] (val x: Self) extends AnyVal {
     
     inline def setMasterUserARN(value: ARN): Self = StObject.set(x, "MasterUserARN", value.asInstanceOf[js.Any])
     

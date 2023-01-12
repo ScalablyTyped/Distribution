@@ -43,7 +43,8 @@ object EnableFastLaunchRequest {
     __obj.asInstanceOf[EnableFastLaunchRequest]
   }
   
-  extension [Self <: EnableFastLaunchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableFastLaunchRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

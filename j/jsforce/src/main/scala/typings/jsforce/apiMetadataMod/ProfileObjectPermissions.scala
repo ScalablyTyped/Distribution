@@ -28,7 +28,8 @@ object ProfileObjectPermissions {
     __obj.asInstanceOf[ProfileObjectPermissions]
   }
   
-  extension [Self <: ProfileObjectPermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfileObjectPermissions] (val x: Self) extends AnyVal {
     
     inline def setAllowCreate(value: Boolean): Self = StObject.set(x, "allowCreate", value.asInstanceOf[js.Any])
     

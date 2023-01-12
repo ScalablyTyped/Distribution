@@ -28,7 +28,8 @@ object ReservationPurchaseRecommendationSummary {
     __obj.asInstanceOf[ReservationPurchaseRecommendationSummary]
   }
   
-  extension [Self <: ReservationPurchaseRecommendationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservationPurchaseRecommendationSummary] (val x: Self) extends AnyVal {
     
     inline def setCurrencyCode(value: GenericString): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object UpdateBackendAuthIdentityPoolConfig {
     __obj.asInstanceOf[UpdateBackendAuthIdentityPoolConfig]
   }
   
-  extension [Self <: UpdateBackendAuthIdentityPoolConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateBackendAuthIdentityPoolConfig] (val x: Self) extends AnyVal {
     
     inline def setUnauthenticatedLogin(value: boolean): Self = StObject.set(x, "UnauthenticatedLogin", value.asInstanceOf[js.Any])
     

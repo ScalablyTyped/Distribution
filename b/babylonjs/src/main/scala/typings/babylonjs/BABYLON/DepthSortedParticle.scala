@@ -38,7 +38,8 @@ object DepthSortedParticle {
     __obj.asInstanceOf[DepthSortedParticle]
   }
   
-  extension [Self <: DepthSortedParticle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DepthSortedParticle] (val x: Self) extends AnyVal {
     
     inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
     

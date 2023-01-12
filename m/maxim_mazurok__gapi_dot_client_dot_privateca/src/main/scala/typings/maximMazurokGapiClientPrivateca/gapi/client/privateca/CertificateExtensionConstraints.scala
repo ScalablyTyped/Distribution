@@ -19,7 +19,8 @@ object CertificateExtensionConstraints {
     __obj.asInstanceOf[CertificateExtensionConstraints]
   }
   
-  extension [Self <: CertificateExtensionConstraints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateExtensionConstraints] (val x: Self) extends AnyVal {
     
     inline def setAdditionalExtensions(value: js.Array[ObjectId]): Self = StObject.set(x, "additionalExtensions", value.asInstanceOf[js.Any])
     

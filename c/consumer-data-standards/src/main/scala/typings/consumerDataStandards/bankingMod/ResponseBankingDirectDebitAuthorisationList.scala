@@ -25,7 +25,8 @@ object ResponseBankingDirectDebitAuthorisationList {
     __obj.asInstanceOf[ResponseBankingDirectDebitAuthorisationList]
   }
   
-  extension [Self <: ResponseBankingDirectDebitAuthorisationList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseBankingDirectDebitAuthorisationList] (val x: Self) extends AnyVal {
     
     inline def setData(value: DirectDebitAuthorisations): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

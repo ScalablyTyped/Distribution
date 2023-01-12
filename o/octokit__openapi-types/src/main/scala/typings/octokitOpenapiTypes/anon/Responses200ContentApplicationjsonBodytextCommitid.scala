@@ -23,7 +23,8 @@ object Responses200ContentApplicationjsonBodytextCommitid {
     __obj.asInstanceOf[Responses200ContentApplicationjsonBodytextCommitid]
   }
   
-  extension [Self <: Responses200ContentApplicationjsonBodytextCommitid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responses200ContentApplicationjsonBodytextCommitid] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathPullnumberRepo): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

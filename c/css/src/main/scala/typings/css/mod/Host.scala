@@ -19,7 +19,8 @@ object Host {
     __obj.asInstanceOf[Host]
   }
   
-  extension [Self <: Host](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
     
     inline def setRules(value: js.Array[Rule | Comment | AtRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     

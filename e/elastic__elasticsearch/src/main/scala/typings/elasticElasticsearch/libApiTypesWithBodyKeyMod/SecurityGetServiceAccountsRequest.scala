@@ -19,7 +19,8 @@ object SecurityGetServiceAccountsRequest {
     __obj.asInstanceOf[SecurityGetServiceAccountsRequest]
   }
   
-  extension [Self <: SecurityGetServiceAccountsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityGetServiceAccountsRequest] (val x: Self) extends AnyVal {
     
     inline def setNamespace(value: Namespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     

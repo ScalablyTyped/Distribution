@@ -32,7 +32,8 @@ object distSharedSrcUseFocusWithinMod {
       __obj.asInstanceOf[UseFocusWithinOptions]
     }
     
-    extension [Self <: UseFocusWithinOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseFocusWithinOptions] (val x: Self) extends AnyVal {
       
       inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       

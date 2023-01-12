@@ -28,7 +28,8 @@ object RowAddedEventUIParam {
     __obj.asInstanceOf[RowAddedEventUIParam]
   }
   
-  extension [Self <: RowAddedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowAddedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setOldValues(value: Any): Self = StObject.set(x, "oldValues", value.asInstanceOf[js.Any])
     

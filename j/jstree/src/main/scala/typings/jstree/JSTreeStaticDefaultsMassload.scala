@@ -37,7 +37,8 @@ object JSTreeStaticDefaultsMassload {
     __obj.asInstanceOf[JSTreeStaticDefaultsMassload]
   }
   
-  extension [Self <: JSTreeStaticDefaultsMassload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSTreeStaticDefaultsMassload] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

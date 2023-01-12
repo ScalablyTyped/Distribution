@@ -53,7 +53,8 @@ object OptionGroup {
     __obj.asInstanceOf[OptionGroup]
   }
   
-  extension [Self <: OptionGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionGroup] (val x: Self) extends AnyVal {
     
     inline def setAllowsVpcAndNonVpcInstanceMemberships(value: Boolean): Self = StObject.set(x, "AllowsVpcAndNonVpcInstanceMemberships", value.asInstanceOf[js.Any])
     

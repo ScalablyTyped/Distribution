@@ -19,7 +19,8 @@ object ScrollerScrollEvent {
     __obj.asInstanceOf[ScrollerScrollEvent]
   }
   
-  extension [Self <: ScrollerScrollEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollerScrollEvent] (val x: Self) extends AnyVal {
     
     inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
     

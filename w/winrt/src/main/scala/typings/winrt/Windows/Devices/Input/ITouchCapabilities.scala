@@ -17,7 +17,8 @@ object ITouchCapabilities {
     __obj.asInstanceOf[ITouchCapabilities]
   }
   
-  extension [Self <: ITouchCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITouchCapabilities] (val x: Self) extends AnyVal {
     
     inline def setContacts(value: Double): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
     

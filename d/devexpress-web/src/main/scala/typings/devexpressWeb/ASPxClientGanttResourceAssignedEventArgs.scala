@@ -28,7 +28,8 @@ object ASPxClientGanttResourceAssignedEventArgs {
     __obj.asInstanceOf[ASPxClientGanttResourceAssignedEventArgs]
   }
   
-  extension [Self <: ASPxClientGanttResourceAssignedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGanttResourceAssignedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

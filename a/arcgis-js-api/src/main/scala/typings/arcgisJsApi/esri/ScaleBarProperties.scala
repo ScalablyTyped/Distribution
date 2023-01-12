@@ -50,7 +50,8 @@ object ScaleBarProperties {
     __obj.asInstanceOf[ScaleBarProperties]
   }
   
-  extension [Self <: ScaleBarProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleBarProperties] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: ruler | line): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

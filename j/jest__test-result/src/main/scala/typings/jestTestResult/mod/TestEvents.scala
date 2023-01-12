@@ -30,7 +30,8 @@ object TestEvents {
     __obj.asInstanceOf[TestEvents]
   }
   
-  extension [Self <: TestEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestEvents] (val x: Self) extends AnyVal {
     
     inline def `setTest-case-result`(value: js.Tuple2[String, AssertionResult]): Self = StObject.set(x, "test-case-result", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object DescribeBandwidthRateLimitScheduleOutput {
     __obj.asInstanceOf[DescribeBandwidthRateLimitScheduleOutput]
   }
   
-  extension [Self <: DescribeBandwidthRateLimitScheduleOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBandwidthRateLimitScheduleOutput] (val x: Self) extends AnyVal {
     
     inline def setBandwidthRateLimitIntervals(value: BandwidthRateLimitIntervals): Self = StObject.set(x, "BandwidthRateLimitIntervals", value.asInstanceOf[js.Any])
     

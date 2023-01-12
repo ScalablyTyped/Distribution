@@ -39,7 +39,8 @@ object StorePackageUpdateStatus {
     __obj.asInstanceOf[StorePackageUpdateStatus]
   }
   
-  extension [Self <: StorePackageUpdateStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorePackageUpdateStatus] (val x: Self) extends AnyVal {
     
     inline def setPackageBytesDownloaded(value: Double): Self = StObject.set(x, "packageBytesDownloaded", value.asInstanceOf[js.Any])
     

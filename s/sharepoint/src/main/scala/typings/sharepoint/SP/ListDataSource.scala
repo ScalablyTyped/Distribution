@@ -24,7 +24,8 @@ object ListDataSource {
     __obj.asInstanceOf[ListDataSource]
   }
   
-  extension [Self <: ListDataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDataSource] (val x: Self) extends AnyVal {
     
     inline def setGet_properties(value: () => Any): Self = StObject.set(x, "get_properties", js.Any.fromFunction0(value))
   }

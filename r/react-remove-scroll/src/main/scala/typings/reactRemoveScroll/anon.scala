@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[Coords]
     }
     
-    extension [Self <: Coords](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Coords] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -64,7 +66,8 @@ object anon {
       __obj.asInstanceOf[FullWidth]
     }
     
-    extension [Self <: FullWidth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullWidth] (val x: Self) extends AnyVal {
       
       inline def setFullWidth(value: String): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
       
@@ -83,7 +86,8 @@ object anon {
       __obj.asInstanceOf[Passive]
     }
     
-    extension [Self <: Passive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Passive] (val x: Self) extends AnyVal {
       
       inline def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
     }
@@ -100,7 +104,8 @@ object anon {
       __obj.asInstanceOf[SideCar]
     }
     
-    extension [Self <: SideCar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideCar] (val x: Self) extends AnyVal {
       
       inline def setSideCar(value: FC[Any]): Self = StObject.set(x, "sideCar", value.asInstanceOf[js.Any])
     }

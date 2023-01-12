@@ -19,7 +19,8 @@ object BuildHandlerOptions {
     __obj.asInstanceOf[BuildHandlerOptions]
   }
   
-  extension [Self <: BuildHandlerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildHandlerOptions] (val x: Self) extends AnyVal {
     
     inline def setStep(value: build): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }

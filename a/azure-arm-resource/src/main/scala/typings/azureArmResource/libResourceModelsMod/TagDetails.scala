@@ -34,7 +34,8 @@ object TagDetails {
     __obj.asInstanceOf[TagDetails]
   }
   
-  extension [Self <: TagDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagDetails] (val x: Self) extends AnyVal {
     
     inline def setCount(value: TagCount): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

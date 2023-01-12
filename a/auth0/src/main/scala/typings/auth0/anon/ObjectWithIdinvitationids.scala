@@ -22,7 +22,8 @@ object ObjectWithIdinvitationids {
     __obj.asInstanceOf[ObjectWithIdinvitationids]
   }
   
-  extension [Self <: ObjectWithIdinvitationids](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectWithIdinvitationids] (val x: Self) extends AnyVal {
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object PartialIIconStyles {
     __obj.asInstanceOf[PartialIIconStyles]
   }
   
-  extension [Self <: PartialIIconStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIIconStyles] (val x: Self) extends AnyVal {
     
     inline def setImageContainer(value: IStyle): Self = StObject.set(x, "imageContainer", value.asInstanceOf[js.Any])
     

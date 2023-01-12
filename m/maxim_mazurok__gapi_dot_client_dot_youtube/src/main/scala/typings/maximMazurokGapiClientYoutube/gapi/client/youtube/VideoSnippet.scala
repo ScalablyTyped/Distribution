@@ -52,7 +52,8 @@ object VideoSnippet {
     __obj.asInstanceOf[VideoSnippet]
   }
   
-  extension [Self <: VideoSnippet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoSnippet] (val x: Self) extends AnyVal {
     
     inline def setCategoryId(value: String): Self = StObject.set(x, "categoryId", value.asInstanceOf[js.Any])
     

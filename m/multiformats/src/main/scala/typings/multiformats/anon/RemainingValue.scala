@@ -24,7 +24,8 @@ object RemainingValue {
     __obj.asInstanceOf[RemainingValue]
   }
   
-  extension [Self <: RemainingValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemainingValue] (val x: Self) extends AnyVal {
     
     inline def setRemaining(value: String): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
     

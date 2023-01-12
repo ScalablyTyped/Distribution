@@ -21,7 +21,8 @@ object Mask {
     __obj.asInstanceOf[Mask]
   }
   
-  extension [Self <: Mask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mask] (val x: Self) extends AnyVal {
     
     inline def setFunc(value: GLenum): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     

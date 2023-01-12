@@ -39,7 +39,8 @@ object TSPropertySignature_ {
     __obj.asInstanceOf[TSPropertySignature_]
   }
   
-  extension [Self <: TSPropertySignature_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSPropertySignature_] (val x: Self) extends AnyVal {
     
     inline def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
     

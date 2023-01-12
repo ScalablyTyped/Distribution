@@ -22,7 +22,8 @@ object AccordionUIParams {
     __obj.asInstanceOf[AccordionUIParams]
   }
   
-  extension [Self <: AccordionUIParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccordionUIParams] (val x: Self) extends AnyVal {
     
     inline def setNewHeader(value: JQuery): Self = StObject.set(x, "newHeader", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object GetShareInfoSuccessCallbackResult {
     __obj.asInstanceOf[GetShareInfoSuccessCallbackResult]
   }
   
-  extension [Self <: GetShareInfoSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetShareInfoSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
     

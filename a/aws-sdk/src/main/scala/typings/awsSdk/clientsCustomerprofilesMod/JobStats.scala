@@ -28,7 +28,8 @@ object JobStats {
     __obj.asInstanceOf[JobStats]
   }
   
-  extension [Self <: JobStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobStats] (val x: Self) extends AnyVal {
     
     inline def setNumberOfMatchesFound(value: long): Self = StObject.set(x, "NumberOfMatchesFound", value.asInstanceOf[js.Any])
     

@@ -84,7 +84,8 @@ object distCommonjsCollectionsBreadcrumbBreadcrumbSectionMod extends Shortcut {
       __obj.asInstanceOf[StrictBreadcrumbSectionProps]
     }
     
-    extension [Self <: StrictBreadcrumbSectionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictBreadcrumbSectionProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

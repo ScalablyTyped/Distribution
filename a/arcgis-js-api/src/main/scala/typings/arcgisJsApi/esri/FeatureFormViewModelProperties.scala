@@ -50,7 +50,8 @@ object FeatureFormViewModelProperties {
     __obj.asInstanceOf[FeatureFormViewModelProperties]
   }
   
-  extension [Self <: FeatureFormViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureFormViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setFeature(value: GraphicProperties): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     

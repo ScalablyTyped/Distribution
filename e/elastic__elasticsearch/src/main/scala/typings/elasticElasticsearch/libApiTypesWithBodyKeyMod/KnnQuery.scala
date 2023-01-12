@@ -25,7 +25,8 @@ object KnnQuery {
     __obj.asInstanceOf[KnnQuery]
   }
   
-  extension [Self <: KnnQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnnQuery] (val x: Self) extends AnyVal {
     
     inline def setBoost(value: float): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
     

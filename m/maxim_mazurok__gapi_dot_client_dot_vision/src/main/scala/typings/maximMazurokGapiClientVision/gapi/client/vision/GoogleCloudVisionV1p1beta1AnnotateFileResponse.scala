@@ -25,7 +25,8 @@ object GoogleCloudVisionV1p1beta1AnnotateFileResponse {
     __obj.asInstanceOf[GoogleCloudVisionV1p1beta1AnnotateFileResponse]
   }
   
-  extension [Self <: GoogleCloudVisionV1p1beta1AnnotateFileResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p1beta1AnnotateFileResponse] (val x: Self) extends AnyVal {
     
     inline def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

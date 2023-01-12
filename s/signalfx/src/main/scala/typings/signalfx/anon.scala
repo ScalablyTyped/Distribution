@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Args]
     }
     
-    extension [Self <: Args](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Object): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[CONTROL]
     }
     
-    extension [Self <: CONTROL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CONTROL] (val x: Self) extends AnyVal {
       
       inline def setCONTROL(value: String): Self = StObject.set(x, "CONTROL", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -92,7 +95,8 @@ object anon {
       __obj.asInstanceOf[IncidentId]
     }
     
-    extension [Self <: IncidentId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncidentId] (val x: Self) extends AnyVal {
       
       inline def setIncidentId(value: String): Self = StObject.set(x, "incidentId", value.asInstanceOf[js.Any])
       
@@ -135,7 +139,8 @@ object anon {
       __obj.asInstanceOf[JobId]
     }
     
-    extension [Self <: JobId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JobId] (val x: Self) extends AnyVal {
       
       inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
       
@@ -166,7 +171,8 @@ object anon {
       __obj.asInstanceOf[Matcher]
     }
     
-    extension [Self <: Matcher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Matcher] (val x: Self) extends AnyVal {
       
       inline def setMatcher(value: Params): Self = StObject.set(x, "matcher", value.asInstanceOf[js.Any])
     }
@@ -183,7 +189,8 @@ object anon {
       __obj.asInstanceOf[Params]
     }
     
-    extension [Self <: Params](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
       
       inline def setParams(value: Args): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     }
@@ -200,7 +207,8 @@ object anon {
       __obj.asInstanceOf[Rate]
     }
     
-    extension [Self <: Rate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rate] (val x: Self) extends AnyVal {
       
       inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     }
@@ -219,7 +227,8 @@ object anon {
       __obj.asInstanceOf[SfjobabortReason]
     }
     
-    extension [Self <: SfjobabortReason](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SfjobabortReason] (val x: Self) extends AnyVal {
       
       inline def setSf_job_abortReason(value: String): Self = StObject.set(x, "sf_job_abortReason", value.asInstanceOf[js.Any])
       
@@ -240,7 +249,8 @@ object anon {
       __obj.asInstanceOf[TsId]
     }
     
-    extension [Self <: TsId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TsId] (val x: Self) extends AnyVal {
       
       inline def setTsId(value: String): Self = StObject.set(x, "tsId", value.asInstanceOf[js.Any])
       

@@ -61,7 +61,8 @@ object CustomReporter {
     __obj.asInstanceOf[CustomReporter]
   }
   
-  extension [Self <: CustomReporter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomReporter] (val x: Self) extends AnyVal {
     
     inline def setJasmineDone(
       value: (/* runDetails */ JasmineDoneInfo, /* done */ js.UndefOr[js.Function0[Unit]]) => Unit | js.Promise[Unit]

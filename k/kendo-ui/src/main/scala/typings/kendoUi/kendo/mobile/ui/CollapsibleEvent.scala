@@ -19,7 +19,8 @@ object CollapsibleEvent {
     __obj.asInstanceOf[CollapsibleEvent]
   }
   
-  extension [Self <: CollapsibleEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollapsibleEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

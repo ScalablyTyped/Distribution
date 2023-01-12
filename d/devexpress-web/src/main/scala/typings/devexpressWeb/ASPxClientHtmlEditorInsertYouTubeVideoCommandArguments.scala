@@ -55,7 +55,8 @@ object ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments {
     __obj.asInstanceOf[ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments]
   }
   
-  extension [Self <: ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments] (val x: Self) extends AnyVal {
     
     inline def setAllowFullscreen(value: Boolean): Self = StObject.set(x, "allowFullscreen", value.asInstanceOf[js.Any])
     

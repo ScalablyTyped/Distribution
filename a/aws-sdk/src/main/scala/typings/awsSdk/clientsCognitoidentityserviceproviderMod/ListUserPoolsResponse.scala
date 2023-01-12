@@ -23,7 +23,8 @@ object ListUserPoolsResponse {
     __obj.asInstanceOf[ListUserPoolsResponse]
   }
   
-  extension [Self <: ListUserPoolsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListUserPoolsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: PaginationKeyType): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

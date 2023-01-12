@@ -28,7 +28,8 @@ object libPlatformWebSessionManagerManagedSessionMod {
       __obj.asInstanceOf[ManagedSession]
     }
     
-    extension [Self <: ManagedSession](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManagedSession] (val x: Self) extends AnyVal {
       
       inline def setHeld(value: Boolean): Self = StObject.set(x, "held", value.asInstanceOf[js.Any])
       

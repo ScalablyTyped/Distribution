@@ -23,7 +23,8 @@ object FunctionAssociations {
     __obj.asInstanceOf[FunctionAssociations]
   }
   
-  extension [Self <: FunctionAssociations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionAssociations] (val x: Self) extends AnyVal {
     
     inline def setItems(value: FunctionAssociationList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

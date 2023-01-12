@@ -147,7 +147,8 @@ object typesRatelimiterMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setEdge(value: leading | trailing): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
         

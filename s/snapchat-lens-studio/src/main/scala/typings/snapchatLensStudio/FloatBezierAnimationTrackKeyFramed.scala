@@ -31,7 +31,8 @@ object FloatBezierAnimationTrackKeyFramed {
     __obj.asInstanceOf[FloatBezierAnimationTrackKeyFramed]
   }
   
-  extension [Self <: FloatBezierAnimationTrackKeyFramed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloatBezierAnimationTrackKeyFramed] (val x: Self) extends AnyVal {
     
     inline def setAddKey(value: (Double, vec3) => Unit): Self = StObject.set(x, "addKey", js.Any.fromFunction2(value))
     

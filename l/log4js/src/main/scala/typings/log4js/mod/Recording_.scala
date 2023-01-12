@@ -29,7 +29,8 @@ object Recording_ {
     __obj.asInstanceOf[Recording_]
   }
   
-  extension [Self <: Recording_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Recording_] (val x: Self) extends AnyVal {
     
     inline def setConfigure(value: () => AppenderFunction): Self = StObject.set(x, "configure", js.Any.fromFunction0(value))
     

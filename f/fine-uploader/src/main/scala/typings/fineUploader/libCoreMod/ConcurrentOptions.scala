@@ -20,7 +20,8 @@ object ConcurrentOptions {
     __obj.asInstanceOf[ConcurrentOptions]
   }
   
-  extension [Self <: ConcurrentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConcurrentOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

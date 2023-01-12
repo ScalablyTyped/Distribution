@@ -15,7 +15,8 @@ object RootTag {
     __obj.asInstanceOf[RootTag]
   }
   
-  extension [Self <: RootTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RootTag] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }

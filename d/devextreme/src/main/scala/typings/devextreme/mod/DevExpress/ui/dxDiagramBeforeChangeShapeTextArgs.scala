@@ -18,7 +18,8 @@ object dxDiagramBeforeChangeShapeTextArgs {
     __obj.asInstanceOf[dxDiagramBeforeChangeShapeTextArgs]
   }
   
-  extension [Self <: dxDiagramBeforeChangeShapeTextArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxDiagramBeforeChangeShapeTextArgs] (val x: Self) extends AnyVal {
     
     inline def setShape(value: dxDiagramShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object ImplementationGuideManifestResource {
     __obj.asInstanceOf[ImplementationGuideManifestResource]
   }
   
-  extension [Self <: ImplementationGuideManifestResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImplementationGuideManifestResource] (val x: Self) extends AnyVal {
     
     inline def setExampleBoolean(value: Boolean): Self = StObject.set(x, "exampleBoolean", value.asInstanceOf[js.Any])
     

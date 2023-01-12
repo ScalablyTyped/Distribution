@@ -28,7 +28,8 @@ object LambdaAction {
     __obj.asInstanceOf[LambdaAction]
   }
   
-  extension [Self <: LambdaAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaAction] (val x: Self) extends AnyVal {
     
     inline def setFunctionArn(value: AmazonResourceName): Self = StObject.set(x, "FunctionArn", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object relayHooksProfilerContextMod {
       __obj.asInstanceOf[ProfilerContextType]
     }
     
-    extension [Self <: ProfilerContextType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProfilerContextType] (val x: Self) extends AnyVal {
       
       inline def setWrapPrepareQueryResource(value: js.Function0[Any] => Any): Self = StObject.set(x, "wrapPrepareQueryResource", js.Any.fromFunction1(value))
     }

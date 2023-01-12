@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[namestring]
     }
     
-    extension [Self <: namestring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: namestring] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[operatorstringvalueTypeAt]
     }
     
-    extension [Self <: operatorstringvalueTypeAt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: operatorstringvalueTypeAt] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object anon {
       __obj.asInstanceOf[valueTypeselectorvalueSel]
     }
     
-    extension [Self <: valueTypeselectorvalueSel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: valueTypeselectorvalueSel] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -112,7 +115,8 @@ object anon {
       __obj.asInstanceOf[valueTypestringsubstitute]
     }
     
-    extension [Self <: valueTypestringsubstitute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: valueTypestringsubstitute] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object UpdateNodeInput {
     __obj.asInstanceOf[UpdateNodeInput]
   }
   
-  extension [Self <: UpdateNodeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateNodeInput] (val x: Self) extends AnyVal {
     
     inline def setLogPublishingConfiguration(value: NodeLogPublishingConfiguration): Self = StObject.set(x, "LogPublishingConfiguration", value.asInstanceOf[js.Any])
     

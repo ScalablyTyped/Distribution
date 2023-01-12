@@ -140,7 +140,8 @@ object CodespaceMachinesForAuthenticatedUser {
     __obj.asInstanceOf[CodespaceMachinesForAuthenticatedUser]
   }
   
-  extension [Self <: CodespaceMachinesForAuthenticatedUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodespaceMachinesForAuthenticatedUser] (val x: Self) extends AnyVal {
     
     inline def setAddRepositoryForSecretForAuthenticatedUser(value: `978`): Self = StObject.set(x, "addRepositoryForSecretForAuthenticatedUser", value.asInstanceOf[js.Any])
     

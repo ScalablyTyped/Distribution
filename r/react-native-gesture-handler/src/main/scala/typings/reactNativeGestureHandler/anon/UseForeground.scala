@@ -19,7 +19,8 @@ object UseForeground {
     __obj.asInstanceOf[UseForeground]
   }
   
-  extension [Self <: UseForeground](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseForeground] (val x: Self) extends AnyVal {
     
     inline def setDelayLongPress(value: Double): Self = StObject.set(x, "delayLongPress", value.asInstanceOf[js.Any])
     

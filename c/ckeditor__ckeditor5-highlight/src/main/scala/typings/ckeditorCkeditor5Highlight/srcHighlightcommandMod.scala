@@ -37,7 +37,8 @@ object srcHighlightcommandMod {
         __obj.asInstanceOf[Commands]
       }
       
-      extension [Self <: Commands](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Commands] (val x: Self) extends AnyVal {
         
         inline def setHighlightCommand(value: HighlightCommand): Self = StObject.set(x, "HighlightCommand", value.asInstanceOf[js.Any])
       }

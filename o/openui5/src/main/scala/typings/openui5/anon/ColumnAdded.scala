@@ -32,7 +32,8 @@ object ColumnAdded {
     __obj.asInstanceOf[ColumnAdded]
   }
   
-  extension [Self <: ColumnAdded](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnAdded] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: default): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

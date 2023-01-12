@@ -24,7 +24,8 @@ object Default {
     __obj.asInstanceOf[Default[TTarget, TData]]
   }
   
-  extension [Self <: Default[?, ?], TTarget, TData](x: Self & (Default[TTarget, TData])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Default[?, ?], TTarget, TData] (val x: Self & (Default[TTarget, TData])) extends AnyVal {
     
     inline def set_default(value: (TriggeredEvent[TTarget, TData, Any, Any], TData) => Unit | `false`): Self = StObject.set(x, "_default", js.Any.fromFunction2(value))
   }

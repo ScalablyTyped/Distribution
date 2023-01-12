@@ -71,7 +71,8 @@ object Label {
     __obj.asInstanceOf[Label]
   }
   
-  extension [Self <: Label](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
     
     inline def setAdGroups(value: () => AdGroupSelector): Self = StObject.set(x, "adGroups", js.Any.fromFunction0(value))
     

@@ -57,7 +57,8 @@ object LinePaint {
     __obj.asInstanceOf[LinePaint]
   }
   
-  extension [Self <: LinePaint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinePaint] (val x: Self) extends AnyVal {
     
     inline def `setLine-blur`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "line-blur", value.asInstanceOf[js.Any])
     

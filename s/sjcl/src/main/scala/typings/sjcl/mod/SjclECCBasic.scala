@@ -23,7 +23,8 @@ object SjclECCBasic {
     __obj.asInstanceOf[SjclECCBasic]
   }
   
-  extension [Self <: SjclECCBasic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SjclECCBasic] (val x: Self) extends AnyVal {
     
     inline def setGenerateKeys(value: String => SjclKeysGenerator[SjclECCPublicKey, SjclECCSecretKey]): Self = StObject.set(x, "generateKeys", js.Any.fromFunction1(value))
     

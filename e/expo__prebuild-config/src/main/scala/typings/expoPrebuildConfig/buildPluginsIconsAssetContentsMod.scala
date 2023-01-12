@@ -31,7 +31,8 @@ object buildPluginsIconsAssetContentsMod {
       __obj.asInstanceOf[ContentsJson]
     }
     
-    extension [Self <: ContentsJson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentsJson] (val x: Self) extends AnyVal {
       
       inline def setImages(value: js.Array[ContentsJsonImage]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object buildPluginsIconsAssetContentsMod {
       __obj.asInstanceOf[ContentsJsonImage]
     }
     
-    extension [Self <: ContentsJsonImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentsJsonImage] (val x: Self) extends AnyVal {
       
       inline def setAppearances(value: js.Array[ContentsJsonImageAppearance]): Self = StObject.set(x, "appearances", value.asInstanceOf[js.Any])
       
@@ -95,7 +97,8 @@ object buildPluginsIconsAssetContentsMod {
       __obj.asInstanceOf[ContentsJsonImageAppearance]
     }
     
-    extension [Self <: ContentsJsonImageAppearance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentsJsonImageAppearance] (val x: Self) extends AnyVal {
       
       inline def setAppearance(value: luminosity): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
       

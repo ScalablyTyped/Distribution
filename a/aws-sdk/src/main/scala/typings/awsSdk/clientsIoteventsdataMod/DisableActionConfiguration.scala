@@ -18,7 +18,8 @@ object DisableActionConfiguration {
     __obj.asInstanceOf[DisableActionConfiguration]
   }
   
-  extension [Self <: DisableActionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableActionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setNote(value: Note): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     

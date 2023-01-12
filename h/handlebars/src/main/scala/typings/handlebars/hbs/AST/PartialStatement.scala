@@ -36,7 +36,8 @@ object PartialStatement {
     __obj.asInstanceOf[PartialStatement]
   }
   
-  extension [Self <: PartialStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStatement] (val x: Self) extends AnyVal {
     
     inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Download]
     }
     
-    extension [Self <: Download](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Download] (val x: Self) extends AnyVal {
       
       inline def setDownload(value: `false`): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Worker]
     }
     
-    extension [Self <: Worker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Worker] (val x: Self) extends AnyVal {
       
       inline def setDownload(value: `false`): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object PivotManualFilter {
     __obj.asInstanceOf[PivotManualFilter]
   }
   
-  extension [Self <: PivotManualFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotManualFilter] (val x: Self) extends AnyVal {
     
     inline def setSelectedItems(value: js.Array[String | PivotItem]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     

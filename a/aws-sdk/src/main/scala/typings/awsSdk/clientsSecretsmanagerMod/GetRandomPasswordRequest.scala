@@ -53,7 +53,8 @@ object GetRandomPasswordRequest {
     __obj.asInstanceOf[GetRandomPasswordRequest]
   }
   
-  extension [Self <: GetRandomPasswordRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRandomPasswordRequest] (val x: Self) extends AnyVal {
     
     inline def setExcludeCharacters(value: ExcludeCharactersType): Self = StObject.set(x, "ExcludeCharacters", value.asInstanceOf[js.Any])
     

@@ -257,7 +257,8 @@ object CytoscapeOptions {
     __obj.asInstanceOf[CytoscapeOptions]
   }
   
-  extension [Self <: CytoscapeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CytoscapeOptions] (val x: Self) extends AnyVal {
     
     inline def setAutolock(value: Boolean): Self = StObject.set(x, "autolock", value.asInstanceOf[js.Any])
     

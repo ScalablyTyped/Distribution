@@ -60,7 +60,8 @@ object libStyleMod {
       __obj.asInstanceOf[Style_]
     }
     
-    extension [Self <: Style_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Style_] (val x: Self) extends AnyVal {
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       

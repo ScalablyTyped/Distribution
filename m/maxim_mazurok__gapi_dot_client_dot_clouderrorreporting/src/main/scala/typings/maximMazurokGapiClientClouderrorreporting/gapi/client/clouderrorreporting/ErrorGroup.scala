@@ -25,7 +25,8 @@ object ErrorGroup {
     __obj.asInstanceOf[ErrorGroup]
   }
   
-  extension [Self <: ErrorGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorGroup] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     

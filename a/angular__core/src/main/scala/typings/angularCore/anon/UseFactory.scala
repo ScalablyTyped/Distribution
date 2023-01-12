@@ -19,7 +19,8 @@ object UseFactory {
     __obj.asInstanceOf[UseFactory]
   }
   
-  extension [Self <: UseFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseFactory] (val x: Self) extends AnyVal {
     
     inline def setDeps(value: js.Array[Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     

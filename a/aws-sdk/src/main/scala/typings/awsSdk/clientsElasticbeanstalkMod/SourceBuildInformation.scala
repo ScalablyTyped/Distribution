@@ -28,7 +28,8 @@ object SourceBuildInformation {
     __obj.asInstanceOf[SourceBuildInformation]
   }
   
-  extension [Self <: SourceBuildInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceBuildInformation] (val x: Self) extends AnyVal {
     
     inline def setSourceLocation(value: SourceLocation): Self = StObject.set(x, "SourceLocation", value.asInstanceOf[js.Any])
     

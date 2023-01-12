@@ -217,7 +217,8 @@ object libClientMod {
       __obj.asInstanceOf[SendOptions]
     }
     
-    extension [Self <: SendOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendOptions] (val x: Self) extends AnyVal {
       
       inline def setOnError(value: js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       

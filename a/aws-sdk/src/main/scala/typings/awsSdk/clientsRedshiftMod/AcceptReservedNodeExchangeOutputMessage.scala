@@ -18,7 +18,8 @@ object AcceptReservedNodeExchangeOutputMessage {
     __obj.asInstanceOf[AcceptReservedNodeExchangeOutputMessage]
   }
   
-  extension [Self <: AcceptReservedNodeExchangeOutputMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceptReservedNodeExchangeOutputMessage] (val x: Self) extends AnyVal {
     
     inline def setExchangedReservedNode(value: ReservedNode): Self = StObject.set(x, "ExchangedReservedNode", value.asInstanceOf[js.Any])
     

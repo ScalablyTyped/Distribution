@@ -29,7 +29,8 @@ object AnalysisLanguageAnalyzer {
     __obj.asInstanceOf[AnalysisLanguageAnalyzer]
   }
   
-  extension [Self <: AnalysisLanguageAnalyzer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisLanguageAnalyzer] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: AnalysisLanguage): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

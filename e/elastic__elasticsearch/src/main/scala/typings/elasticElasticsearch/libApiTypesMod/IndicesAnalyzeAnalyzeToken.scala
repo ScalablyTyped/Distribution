@@ -26,7 +26,8 @@ object IndicesAnalyzeAnalyzeToken {
     __obj.asInstanceOf[IndicesAnalyzeAnalyzeToken]
   }
   
-  extension [Self <: IndicesAnalyzeAnalyzeToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesAnalyzeAnalyzeToken] (val x: Self) extends AnyVal {
     
     inline def setEnd_offset(value: long): Self = StObject.set(x, "end_offset", value.asInstanceOf[js.Any])
     

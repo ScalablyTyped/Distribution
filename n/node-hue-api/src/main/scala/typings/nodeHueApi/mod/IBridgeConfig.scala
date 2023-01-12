@@ -93,7 +93,8 @@ object IBridgeConfig {
     __obj.asInstanceOf[IBridgeConfig]
   }
   
-  extension [Self <: IBridgeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBridgeConfig] (val x: Self) extends AnyVal {
     
     inline def setApiversion(value: String): Self = StObject.set(x, "apiversion", value.asInstanceOf[js.Any])
     

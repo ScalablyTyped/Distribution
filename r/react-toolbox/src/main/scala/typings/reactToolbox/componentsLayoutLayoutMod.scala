@@ -42,7 +42,8 @@ object componentsLayoutLayoutMod {
       __obj.asInstanceOf[LayoutProps]
     }
     
-    extension [Self <: LayoutProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Element | js.Array[Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object componentsLayoutLayoutMod {
       __obj.asInstanceOf[LayoutTheme]
     }
     
-    extension [Self <: LayoutTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutTheme] (val x: Self) extends AnyVal {
       
       inline def setAppbarFixed(value: String): Self = StObject.set(x, "appbarFixed", value.asInstanceOf[js.Any])
       

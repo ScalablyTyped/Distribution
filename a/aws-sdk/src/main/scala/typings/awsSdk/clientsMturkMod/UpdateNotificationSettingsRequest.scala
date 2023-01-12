@@ -28,7 +28,8 @@ object UpdateNotificationSettingsRequest {
     __obj.asInstanceOf[UpdateNotificationSettingsRequest]
   }
   
-  extension [Self <: UpdateNotificationSettingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateNotificationSettingsRequest] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     

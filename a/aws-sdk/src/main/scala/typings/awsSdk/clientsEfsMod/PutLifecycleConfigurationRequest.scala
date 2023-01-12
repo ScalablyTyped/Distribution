@@ -23,7 +23,8 @@ object PutLifecycleConfigurationRequest {
     __obj.asInstanceOf[PutLifecycleConfigurationRequest]
   }
   
-  extension [Self <: PutLifecycleConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutLifecycleConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
     

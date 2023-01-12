@@ -112,7 +112,8 @@ object XStarBasicLibraryInfo {
     __obj.asInstanceOf[XStarBasicLibraryInfo]
   }
   
-  extension [Self <: XStarBasicLibraryInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStarBasicLibraryInfo] (val x: Self) extends AnyVal {
     
     inline def setDialogContainer(value: XNameContainer): Self = StObject.set(x, "DialogContainer", value.asInstanceOf[js.Any])
     

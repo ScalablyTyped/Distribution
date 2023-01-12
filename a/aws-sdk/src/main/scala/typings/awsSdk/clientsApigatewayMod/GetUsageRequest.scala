@@ -43,7 +43,8 @@ object GetUsageRequest {
     __obj.asInstanceOf[GetUsageRequest]
   }
   
-  extension [Self <: GetUsageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUsageRequest] (val x: Self) extends AnyVal {
     
     inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     

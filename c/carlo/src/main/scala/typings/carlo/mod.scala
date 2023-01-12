@@ -167,7 +167,8 @@ object mod {
       __obj.asInstanceOf[Bounds]
     }
     
-    extension [Self <: Bounds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bounds] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -253,7 +254,8 @@ object mod {
       __obj.asInstanceOf[HttpRequest]
     }
     
-    extension [Self <: HttpRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpRequest] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: () => js.Promise[Unit]): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
@@ -322,7 +324,8 @@ object mod {
       __obj.asInstanceOf[LaunchOptions]
     }
     
-    extension [Self <: LaunchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LaunchOptions] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -505,7 +508,8 @@ object mod {
       __obj.asInstanceOf[WindowOptions]
     }
     
-    extension [Self <: WindowOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WindowOptions] (val x: Self) extends AnyVal {
       
       inline def setBgcolor(value: String): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
       

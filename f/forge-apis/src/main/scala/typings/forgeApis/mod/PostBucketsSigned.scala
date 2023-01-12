@@ -15,7 +15,8 @@ object PostBucketsSigned {
     __obj.asInstanceOf[PostBucketsSigned]
   }
   
-  extension [Self <: PostBucketsSigned](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostBucketsSigned] (val x: Self) extends AnyVal {
     
     inline def setMinutesExpiration(value: Double): Self = StObject.set(x, "minutesExpiration", value.asInstanceOf[js.Any])
   }

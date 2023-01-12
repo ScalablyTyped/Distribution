@@ -31,7 +31,8 @@ object AwsS3CompatibleData {
     __obj.asInstanceOf[AwsS3CompatibleData]
   }
   
-  extension [Self <: AwsS3CompatibleData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsS3CompatibleData] (val x: Self) extends AnyVal {
     
     inline def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     

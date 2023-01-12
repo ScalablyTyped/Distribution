@@ -90,7 +90,8 @@ object PartialVgTitle {
     __obj.asInstanceOf[PartialVgTitle]
   }
   
-  extension [Self <: PartialVgTitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialVgTitle] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

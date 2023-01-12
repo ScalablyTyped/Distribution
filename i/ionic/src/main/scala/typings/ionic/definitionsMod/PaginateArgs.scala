@@ -28,7 +28,8 @@ object PaginateArgs {
     __obj.asInstanceOf[PaginateArgs[T]]
   }
   
-  extension [Self <: PaginateArgs[?], T /* <: Response[js.Array[js.Object]] */](x: Self & PaginateArgs[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaginateArgs[?], T /* <: Response[js.Array[js.Object]] */] (val x: Self & PaginateArgs[T]) extends AnyVal {
     
     inline def setGuard(value: /* res */ APIResponseSuccess => /* is T */ Boolean): Self = StObject.set(x, "guard", js.Any.fromFunction1(value))
     

@@ -33,7 +33,8 @@ object TemplateParameter {
     __obj.asInstanceOf[TemplateParameter]
   }
   
-  extension [Self <: TemplateParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateParameter] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: ParameterValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     

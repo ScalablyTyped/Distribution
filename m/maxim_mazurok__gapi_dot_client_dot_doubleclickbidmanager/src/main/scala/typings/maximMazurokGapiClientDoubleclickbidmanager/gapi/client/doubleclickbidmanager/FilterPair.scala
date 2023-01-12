@@ -19,7 +19,8 @@ object FilterPair {
     __obj.asInstanceOf[FilterPair]
   }
   
-  extension [Self <: FilterPair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterPair] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

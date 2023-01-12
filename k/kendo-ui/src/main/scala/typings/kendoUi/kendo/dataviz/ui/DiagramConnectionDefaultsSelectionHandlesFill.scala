@@ -15,7 +15,8 @@ object DiagramConnectionDefaultsSelectionHandlesFill {
     __obj.asInstanceOf[DiagramConnectionDefaultsSelectionHandlesFill]
   }
   
-  extension [Self <: DiagramConnectionDefaultsSelectionHandlesFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramConnectionDefaultsSelectionHandlesFill] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

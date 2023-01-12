@@ -16,7 +16,8 @@ object PositionProps {
     __obj.asInstanceOf[PositionProps]
   }
   
-  extension [Self <: PositionProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionProps] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: ResponsiveValue[Position]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

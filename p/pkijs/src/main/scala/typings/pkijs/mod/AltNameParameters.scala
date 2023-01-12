@@ -18,7 +18,8 @@ object AltNameParameters {
     __obj.asInstanceOf[AltNameParameters]
   }
   
-  extension [Self <: AltNameParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AltNameParameters] (val x: Self) extends AnyVal {
     
     inline def setAltNames(value: js.Array[GeneralName]): Self = StObject.set(x, "altNames", value.asInstanceOf[js.Any])
     

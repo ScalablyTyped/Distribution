@@ -41,7 +41,8 @@ object XComponentSupplier {
     __obj.asInstanceOf[XComponentSupplier]
   }
   
-  extension [Self <: XComponentSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XComponentSupplier] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: XCloseable): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object distNodesToJSMod {
       __obj.asInstanceOf[AnchorData]
     }
     
-    extension [Self <: AnchorData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnchorData] (val x: Self) extends AnyVal {
       
       inline def setAliasCount(value: Double): Self = StObject.set(x, "aliasCount", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object distNodesToJSMod {
       __obj.asInstanceOf[ToJSContext]
     }
     
-    extension [Self <: ToJSContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToJSContext] (val x: Self) extends AnyVal {
       
       inline def setAnchors(value: Map[Node[Any], AnchorData]): Self = StObject.set(x, "anchors", value.asInstanceOf[js.Any])
       

@@ -43,7 +43,8 @@ object anon {
       __obj.asInstanceOf[ResourceclownfacePromiseG]
     }
     
-    extension [Self <: ResourceclownfacePromiseG](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceclownfacePromiseG] (val x: Self) extends AnyVal {
       
       inline def setClownface(value: () => js.Promise[GraphPointer[NamedNode[String], ^]]): Self = StObject.set(x, "clownface", js.Any.fromFunction0(value))
       
@@ -70,7 +71,8 @@ object anon {
       __obj.asInstanceOf[Store]
     }
     
-    extension [Self <: Store](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Store] (val x: Self) extends AnyVal {
       
       inline def setStore(value: typings.rdfjsTypes.streamMod.Store[Quad]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     }

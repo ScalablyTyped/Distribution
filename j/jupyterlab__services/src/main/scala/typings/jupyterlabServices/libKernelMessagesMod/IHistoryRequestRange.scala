@@ -26,7 +26,8 @@ object IHistoryRequestRange {
     __obj.asInstanceOf[IHistoryRequestRange]
   }
   
-  extension [Self <: IHistoryRequestRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHistoryRequestRange] (val x: Self) extends AnyVal {
     
     inline def setHist_access_type(value: range): Self = StObject.set(x, "hist_access_type", value.asInstanceOf[js.Any])
     

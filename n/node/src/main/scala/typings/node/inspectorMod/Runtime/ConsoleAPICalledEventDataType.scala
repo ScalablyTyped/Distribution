@@ -50,7 +50,8 @@ object ConsoleAPICalledEventDataType {
     __obj.asInstanceOf[ConsoleAPICalledEventDataType]
   }
   
-  extension [Self <: ConsoleAPICalledEventDataType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsoleAPICalledEventDataType] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[RemoteObject]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

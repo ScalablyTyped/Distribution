@@ -19,7 +19,8 @@ object BulletRectComputedRect {
     __obj.asInstanceOf[BulletRectComputedRect]
   }
   
-  extension [Self <: BulletRectComputedRect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulletRectComputedRect] (val x: Self) extends AnyVal {
     
     inline def setData(value: ComputedRangeDatum): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

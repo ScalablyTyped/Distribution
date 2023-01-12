@@ -28,7 +28,8 @@ object TypeofimportedGETRANGE {
     __obj.asInstanceOf[TypeofimportedGETRANGE]
   }
   
-  extension [Self <: TypeofimportedGETRANGE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofimportedGETRANGE] (val x: Self) extends AnyVal {
     
     inline def setFIRST_KEY_INDEX(value: /* 1 */ Double): Self = StObject.set(x, "FIRST_KEY_INDEX", value.asInstanceOf[js.Any])
     

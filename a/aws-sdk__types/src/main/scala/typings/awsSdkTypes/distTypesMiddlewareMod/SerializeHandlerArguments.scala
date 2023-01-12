@@ -25,7 +25,8 @@ object SerializeHandlerArguments {
     __obj.asInstanceOf[SerializeHandlerArguments[Input]]
   }
   
-  extension [Self <: SerializeHandlerArguments[?], Input /* <: js.Object */](x: Self & SerializeHandlerArguments[Input]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerializeHandlerArguments[?], Input /* <: js.Object */] (val x: Self & SerializeHandlerArguments[Input]) extends AnyVal {
     
     inline def setRequest(value: Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     

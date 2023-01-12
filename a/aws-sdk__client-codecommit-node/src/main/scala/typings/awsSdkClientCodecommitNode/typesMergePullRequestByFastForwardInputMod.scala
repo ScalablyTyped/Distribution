@@ -56,7 +56,8 @@ object typesMergePullRequestByFastForwardInputMod {
       __obj.asInstanceOf[MergePullRequestByFastForwardInput]
     }
     
-    extension [Self <: MergePullRequestByFastForwardInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergePullRequestByFastForwardInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

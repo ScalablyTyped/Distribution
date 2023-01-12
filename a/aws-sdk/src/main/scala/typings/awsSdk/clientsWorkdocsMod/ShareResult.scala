@@ -43,7 +43,8 @@ object ShareResult {
     __obj.asInstanceOf[ShareResult]
   }
   
-  extension [Self <: ShareResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareResult] (val x: Self) extends AnyVal {
     
     inline def setInviteePrincipalId(value: IdType): Self = StObject.set(x, "InviteePrincipalId", value.asInstanceOf[js.Any])
     

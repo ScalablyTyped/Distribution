@@ -23,7 +23,8 @@ object NielsenNaesIiNw {
     __obj.asInstanceOf[NielsenNaesIiNw]
   }
   
-  extension [Self <: NielsenNaesIiNw](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NielsenNaesIiNw] (val x: Self) extends AnyVal {
     
     inline def setCheckDigitString(value: stringMin2Max2): Self = StObject.set(x, "CheckDigitString", value.asInstanceOf[js.Any])
     

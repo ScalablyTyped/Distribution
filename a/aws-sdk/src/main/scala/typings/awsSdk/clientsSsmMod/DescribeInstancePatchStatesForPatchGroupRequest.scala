@@ -33,7 +33,8 @@ object DescribeInstancePatchStatesForPatchGroupRequest {
     __obj.asInstanceOf[DescribeInstancePatchStatesForPatchGroupRequest]
   }
   
-  extension [Self <: DescribeInstancePatchStatesForPatchGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInstancePatchStatesForPatchGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: InstancePatchStateFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

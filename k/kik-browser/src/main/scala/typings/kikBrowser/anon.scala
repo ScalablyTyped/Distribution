@@ -52,7 +52,8 @@ object anon {
       __obj.asInstanceOf[Browser]
     }
     
-    extension [Self <: Browser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: Name): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object anon {
       __obj.asInstanceOf[Hide]
     }
     
-    extension [Self <: Hide](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hide] (val x: Self) extends AnyVal {
       
       inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
@@ -131,7 +133,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -150,7 +153,8 @@ object anon {
       __obj.asInstanceOf[Platform]
     }
     
-    extension [Self <: Platform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Platform] (val x: Self) extends AnyVal {
       
       inline def setPlatform(value: Browser): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     }
@@ -167,7 +171,8 @@ object anon {
       __obj.asInstanceOf[Username]
     }
     
-    extension [Self <: Username](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Username] (val x: Self) extends AnyVal {
       
       inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }

@@ -132,7 +132,8 @@ object DirectOptionskeyboardStat {
     __obj.asInstanceOf[DirectOptionskeyboardStat]
   }
   
-  extension [Self <: DirectOptionskeyboardStat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectOptionskeyboardStat] (val x: Self) extends AnyVal {
     
     inline def setAdvanceTimers(value: /* delay */ Double => js.Promise[Unit] | Unit): Self = StObject.set(x, "advanceTimers", js.Any.fromFunction1(value))
     

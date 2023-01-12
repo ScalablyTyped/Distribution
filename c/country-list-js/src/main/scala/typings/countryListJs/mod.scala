@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[Cache_]
     }
     
-    extension [Self <: Cache_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cache_] (val x: Self) extends AnyVal {
       
       inline def setCapital(value: CountriesMap): Self = StObject.set(x, "capital", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object mod {
       __obj.asInstanceOf[Country]
     }
     
-    extension [Self <: Country](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Country] (val x: Self) extends AnyVal {
       
       inline def setCapital(value: String): Self = StObject.set(x, "capital", value.asInstanceOf[js.Any])
       
@@ -155,7 +157,8 @@ object mod {
       __obj.asInstanceOf[CountryCode]
     }
     
-    extension [Self <: CountryCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CountryCode] (val x: Self) extends AnyVal {
       
       inline def setIso2(value: String): Self = StObject.set(x, "iso2", value.asInstanceOf[js.Any])
       
@@ -208,7 +211,8 @@ object mod {
       __obj.asInstanceOf[Currency]
     }
     
-    extension [Self <: Currency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Currency] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -235,7 +239,8 @@ object mod {
       __obj.asInstanceOf[Province]
     }
     
-    extension [Self <: Province](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Province] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       

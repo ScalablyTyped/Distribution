@@ -37,7 +37,8 @@ object affixReactNodetestIDstrin {
     __obj.asInstanceOf[affixReactNodetestIDstrin]
   }
   
-  extension [Self <: affixReactNodetestIDstrin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: affixReactNodetestIDstrin] (val x: Self) extends AnyVal {
     
     inline def setAffix(value: ReactNode): Self = StObject.set(x, "affix", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object DictshardKey {
     __obj.asInstanceOf[DictshardKey[TSchema]]
   }
   
-  extension [Self <: DictshardKey[?], TSchema /* <: Document */](x: Self & DictshardKey[TSchema]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictshardKey[?], TSchema /* <: Document */] (val x: Self & DictshardKey[TSchema]) extends AnyVal {
     
     inline def set_id(value: InferIdType[TSchema]): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
   }

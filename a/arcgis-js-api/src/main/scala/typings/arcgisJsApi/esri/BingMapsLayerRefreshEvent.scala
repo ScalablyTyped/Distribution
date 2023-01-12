@@ -15,7 +15,8 @@ object BingMapsLayerRefreshEvent {
     __obj.asInstanceOf[BingMapsLayerRefreshEvent]
   }
   
-  extension [Self <: BingMapsLayerRefreshEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BingMapsLayerRefreshEvent] (val x: Self) extends AnyVal {
     
     inline def setDataChanged(value: Boolean): Self = StObject.set(x, "dataChanged", value.asInstanceOf[js.Any])
   }

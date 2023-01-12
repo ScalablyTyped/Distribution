@@ -22,7 +22,8 @@ object UpdateDimensionGroupRequest {
     __obj.asInstanceOf[UpdateDimensionGroupRequest]
   }
   
-  extension [Self <: UpdateDimensionGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDimensionGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setDimensionGroup(value: DimensionGroup): Self = StObject.set(x, "dimensionGroup", value.asInstanceOf[js.Any])
     

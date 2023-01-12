@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[Through2ConcurrentOptions]
     }
     
-    extension [Self <: Through2ConcurrentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Through2ConcurrentOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxConcurrency(value: Double): Self = StObject.set(x, "maxConcurrency", value.asInstanceOf[js.Any])
       

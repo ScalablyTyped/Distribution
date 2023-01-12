@@ -152,7 +152,8 @@ object mod {
       __obj.asInstanceOf[Reference]
     }
     
-    extension [Self <: Reference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
       
       inline def setDigestAlgorithm(value: String): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
       

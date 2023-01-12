@@ -18,7 +18,8 @@ object VerifyDomainDkimResponse {
     __obj.asInstanceOf[VerifyDomainDkimResponse]
   }
   
-  extension [Self <: VerifyDomainDkimResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyDomainDkimResponse] (val x: Self) extends AnyVal {
     
     inline def setDkimTokens(value: VerificationTokenList): Self = StObject.set(x, "DkimTokens", value.asInstanceOf[js.Any])
     

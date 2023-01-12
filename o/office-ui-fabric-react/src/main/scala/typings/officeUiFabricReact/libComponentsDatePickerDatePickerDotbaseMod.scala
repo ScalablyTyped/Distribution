@@ -109,7 +109,8 @@ object libComponentsDatePickerDatePickerDotbaseMod {
       __obj.asInstanceOf[IDatePickerState]
     }
     
-    extension [Self <: IDatePickerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDatePickerState] (val x: Self) extends AnyVal {
       
       inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object TextInputOptions {
     __obj.asInstanceOf[TextInputOptions]
   }
   
-  extension [Self <: TextInputOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextInputOptions] (val x: Self) extends AnyVal {
     
     inline def setClearBtn(value: Boolean): Self = StObject.set(x, "clearBtn", value.asInstanceOf[js.Any])
     

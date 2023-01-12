@@ -46,7 +46,8 @@ object meshesBuildersGoldbergBuilderMod {
       __obj.asInstanceOf[GoldbergCreationOption]
     }
     
-    extension [Self <: GoldbergCreationOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GoldbergCreationOption] (val x: Self) extends AnyVal {
       
       inline def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object meshesBuildersGoldbergBuilderMod {
       __obj.asInstanceOf[GoldbergVertexDataOption]
     }
     
-    extension [Self <: GoldbergVertexDataOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GoldbergVertexDataOption] (val x: Self) extends AnyVal {
       
       inline def setSideOrientation(value: Double): Self = StObject.set(x, "sideOrientation", value.asInstanceOf[js.Any])
       

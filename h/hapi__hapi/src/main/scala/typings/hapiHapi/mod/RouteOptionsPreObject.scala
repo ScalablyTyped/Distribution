@@ -41,7 +41,8 @@ object RouteOptionsPreObject {
     __obj.asInstanceOf[RouteOptionsPreObject[Refs]]
   }
   
-  extension [Self <: RouteOptionsPreObject[?], Refs /* <: ReqRef */](x: Self & RouteOptionsPreObject[Refs]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteOptionsPreObject[?], Refs /* <: ReqRef */] (val x: Self & RouteOptionsPreObject[Refs]) extends AnyVal {
     
     inline def setAssign(
       value: /* import warning: importer.ImportType#apply Failed type conversion: keyof Refs['Pres'] */ js.Any

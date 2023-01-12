@@ -38,7 +38,8 @@ object TestIdentityProviderRequest {
     __obj.asInstanceOf[TestIdentityProviderRequest]
   }
   
-  extension [Self <: TestIdentityProviderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestIdentityProviderRequest] (val x: Self) extends AnyVal {
     
     inline def setServerId(value: ServerId): Self = StObject.set(x, "ServerId", value.asInstanceOf[js.Any])
     

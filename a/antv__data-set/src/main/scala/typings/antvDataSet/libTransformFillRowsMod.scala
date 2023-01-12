@@ -23,7 +23,8 @@ object libTransformFillRowsMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFillBy(value: group | order): Self = StObject.set(x, "fillBy", value.asInstanceOf[js.Any])
       

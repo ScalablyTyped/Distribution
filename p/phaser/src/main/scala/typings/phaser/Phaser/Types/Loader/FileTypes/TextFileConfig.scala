@@ -34,7 +34,8 @@ object TextFileConfig {
     __obj.asInstanceOf[TextFileConfig]
   }
   
-  extension [Self <: TextFileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextFileConfig] (val x: Self) extends AnyVal {
     
     inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     

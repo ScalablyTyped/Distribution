@@ -110,7 +110,8 @@ object ChargeResource {
     __obj.asInstanceOf[ChargeResource]
   }
   
-  extension [Self <: ChargeResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChargeResource] (val x: Self) extends AnyVal {
     
     inline def setAddresses(value: PartialRecordCryptoNamest): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     

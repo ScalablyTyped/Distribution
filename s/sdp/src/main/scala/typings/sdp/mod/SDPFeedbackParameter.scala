@@ -18,7 +18,8 @@ object SDPFeedbackParameter {
     __obj.asInstanceOf[SDPFeedbackParameter]
   }
   
-  extension [Self <: SDPFeedbackParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SDPFeedbackParameter] (val x: Self) extends AnyVal {
     
     inline def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     

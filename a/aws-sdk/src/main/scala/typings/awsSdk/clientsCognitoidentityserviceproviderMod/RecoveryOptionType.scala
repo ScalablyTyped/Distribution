@@ -23,7 +23,8 @@ object RecoveryOptionType {
     __obj.asInstanceOf[RecoveryOptionType]
   }
   
-  extension [Self <: RecoveryOptionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecoveryOptionType] (val x: Self) extends AnyVal {
     
     inline def setName(value: RecoveryOptionNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

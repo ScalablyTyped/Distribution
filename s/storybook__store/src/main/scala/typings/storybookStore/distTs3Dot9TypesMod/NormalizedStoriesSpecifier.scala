@@ -17,7 +17,8 @@ object NormalizedStoriesSpecifier {
     __obj.asInstanceOf[NormalizedStoriesSpecifier]
   }
   
-  extension [Self <: NormalizedStoriesSpecifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizedStoriesSpecifier] (val x: Self) extends AnyVal {
     
     inline def setGlob(value: String): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
     

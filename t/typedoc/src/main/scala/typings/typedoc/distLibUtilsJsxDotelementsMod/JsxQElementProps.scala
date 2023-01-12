@@ -17,7 +17,8 @@ object JsxQElementProps {
     __obj.asInstanceOf[JsxQElementProps]
   }
   
-  extension [Self <: JsxQElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxQElementProps] (val x: Self) extends AnyVal {
     
     inline def setCite(value: String): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
     

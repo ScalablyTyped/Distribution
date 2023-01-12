@@ -54,7 +54,8 @@ object LegendOptions {
     __obj.asInstanceOf[LegendOptions]
   }
   
-  extension [Self <: LegendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendOptions] (val x: Self) extends AnyVal {
     
     inline def setEqually(value: Boolean): Self = StObject.set(x, "equally", value.asInstanceOf[js.Any])
     

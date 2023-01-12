@@ -52,7 +52,8 @@ object BadgePropsPartialThemePro {
     __obj.asInstanceOf[BadgePropsPartialThemePro]
   }
   
-  extension [Self <: BadgePropsPartialThemePro](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BadgePropsPartialThemePro] (val x: Self) extends AnyVal {
     
     inline def setBadgeStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "badgeStyle", value.asInstanceOf[js.Any])
     

@@ -241,7 +241,8 @@ object sapUiWebcMainBadgeMod {
       __obj.asInstanceOf[BadgeSettings]
     }
     
-    extension [Self <: BadgeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadgeSettings] (val x: Self) extends AnyVal {
       
       inline def setColorScheme(value: String | PropertyBindingInfo): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
       

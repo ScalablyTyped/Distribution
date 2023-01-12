@@ -23,7 +23,8 @@ object AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetails {
     __obj.asInstanceOf[AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetails]
   }
   
-  extension [Self <: AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetails] (val x: Self) extends AnyVal {
     
     inline def setInstancesDistribution(value: AwsAutoScalingAutoScalingGroupMixedInstancesPolicyInstancesDistributionDetails): Self = StObject.set(x, "InstancesDistribution", value.asInstanceOf[js.Any])
     

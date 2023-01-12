@@ -18,7 +18,8 @@ object ReturnContent {
     __obj.asInstanceOf[ReturnContent]
   }
   
-  extension [Self <: ReturnContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnContent] (val x: Self) extends AnyVal {
     
     inline def setReturnColumns(value: js.Array[String]): Self = StObject.set(x, "returnColumns", value.asInstanceOf[js.Any])
     

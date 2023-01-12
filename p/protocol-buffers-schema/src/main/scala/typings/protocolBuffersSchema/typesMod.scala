@@ -27,7 +27,8 @@ object typesMod {
       __obj.asInstanceOf[Enum]
     }
     
-    extension [Self <: Enum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enum] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object typesMod {
       __obj.asInstanceOf[Extend]
     }
     
-    extension [Self <: Extend](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extend] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -71,7 +73,8 @@ object typesMod {
       __obj.asInstanceOf[Extension]
     }
     
-    extension [Self <: Extension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extension] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -113,7 +116,8 @@ object typesMod {
       __obj.asInstanceOf[Field]
     }
     
-    extension [Self <: Field](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
       
       inline def setMap(value: From): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
@@ -169,7 +173,8 @@ object typesMod {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setEnums(value: js.Array[Enum]): Self = StObject.set(x, "enums", value.asInstanceOf[js.Any])
       
@@ -225,7 +230,8 @@ object typesMod {
       __obj.asInstanceOf[Method]
     }
     
-    extension [Self <: Method](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Method] (val x: Self) extends AnyVal {
       
       inline def setClient_streaming(value: Boolean): Self = StObject.set(x, "client_streaming", value.asInstanceOf[js.Any])
       
@@ -280,7 +286,8 @@ object typesMod {
       __obj.asInstanceOf[Schema]
     }
     
-    extension [Self <: Schema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
       
       inline def setEnums(value: js.Array[Enum]): Self = StObject.set(x, "enums", value.asInstanceOf[js.Any])
       
@@ -329,7 +336,8 @@ object typesMod {
       __obj.asInstanceOf[Service]
     }
     
-    extension [Self <: Service](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
       
       inline def setMethods(value: js.Array[Method]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       

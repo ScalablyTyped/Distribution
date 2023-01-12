@@ -29,7 +29,8 @@ object LANConfig {
     __obj.asInstanceOf[LANConfig]
   }
   
-  extension [Self <: LANConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LANConfig] (val x: Self) extends AnyVal {
     
     inline def setNewDHCPEnabled(value: String): Self = StObject.set(x, "NewDHCPEnabled", value.asInstanceOf[js.Any])
     

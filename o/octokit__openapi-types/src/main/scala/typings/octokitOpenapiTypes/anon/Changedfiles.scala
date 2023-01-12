@@ -241,7 +241,8 @@ object Changedfiles {
     __obj.asInstanceOf[Changedfiles]
   }
   
-  extension [Self <: Changedfiles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Changedfiles] (val x: Self) extends AnyVal {
     
     inline def setActive_lock_reason(value: String): Self = StObject.set(x, "active_lock_reason", value.asInstanceOf[js.Any])
     

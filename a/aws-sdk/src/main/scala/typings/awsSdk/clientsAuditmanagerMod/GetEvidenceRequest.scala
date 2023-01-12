@@ -33,7 +33,8 @@ object GetEvidenceRequest {
     __obj.asInstanceOf[GetEvidenceRequest]
   }
   
-  extension [Self <: GetEvidenceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEvidenceRequest] (val x: Self) extends AnyVal {
     
     inline def setAssessmentId(value: UUID): Self = StObject.set(x, "assessmentId", value.asInstanceOf[js.Any])
     

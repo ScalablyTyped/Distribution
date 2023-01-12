@@ -23,7 +23,8 @@ object DeferredPaymentRequest {
     __obj.asInstanceOf[DeferredPaymentRequest]
   }
   
-  extension [Self <: DeferredPaymentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeferredPaymentRequest] (val x: Self) extends AnyVal {
     
     inline def setIsAmountPending(value: Boolean): Self = StObject.set(x, "isAmountPending", value.asInstanceOf[js.Any])
     

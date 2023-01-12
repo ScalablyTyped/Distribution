@@ -72,7 +72,8 @@ object TypeSchemeForPoint {
     __obj.asInstanceOf[TypeSchemeForPoint]
   }
   
-  extension [Self <: TypeSchemeForPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeSchemeForPoint] (val x: Self) extends AnyVal {
     
     inline def setColors(value: js.Array[Color_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

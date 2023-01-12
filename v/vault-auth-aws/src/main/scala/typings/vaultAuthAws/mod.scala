@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object mod {
       __obj.asInstanceOf[Creds]
     }
     
-    extension [Self <: Creds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Creds] (val x: Self) extends AnyVal {
       
       inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
       
@@ -136,7 +138,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -163,7 +166,8 @@ object mod {
       __obj.asInstanceOf[typings.vaultAuthAws.mod.vaultAuthAws]
     }
     
-    extension [Self <: typings.vaultAuthAws.mod.vaultAuthAws](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.vaultAuthAws.mod.vaultAuthAws] (val x: Self) extends AnyVal {
       
       inline def setAuthenticate(value: () => js.Promise[Any]): Self = StObject.set(x, "authenticate", js.Any.fromFunction0(value))
       

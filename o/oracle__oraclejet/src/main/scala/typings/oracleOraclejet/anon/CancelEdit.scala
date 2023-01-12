@@ -23,7 +23,8 @@ object CancelEdit {
     __obj.asInstanceOf[CancelEdit[K, D]]
   }
   
-  extension [Self <: CancelEdit[?, ?], K, D](x: Self & (CancelEdit[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelEdit[?, ?], K, D] (val x: Self & (CancelEdit[K, D])) extends AnyVal {
     
     inline def setCancelEdit(value: Boolean): Self = StObject.set(x, "cancelEdit", value.asInstanceOf[js.Any])
     

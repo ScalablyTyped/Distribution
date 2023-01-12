@@ -27,7 +27,8 @@ object CreateReadStreamOptions {
     __obj.asInstanceOf[CreateReadStreamOptions]
   }
   
-  extension [Self <: CreateReadStreamOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateReadStreamOptions] (val x: Self) extends AnyVal {
     
     inline def setDecompress(value: Boolean): Self = StObject.set(x, "decompress", value.asInstanceOf[js.Any])
     

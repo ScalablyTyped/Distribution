@@ -96,7 +96,8 @@ object AutoEllipsis {
     __obj.asInstanceOf[AutoEllipsis]
   }
   
-  extension [Self <: AutoEllipsis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoEllipsis] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object CustomRichMediaEvents {
     __obj.asInstanceOf[CustomRichMediaEvents]
   }
   
-  extension [Self <: CustomRichMediaEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomRichMediaEvents] (val x: Self) extends AnyVal {
     
     inline def setCustomRichMediaEvents(value: js.Array[DimensionValue]): Self = StObject.set(x, "customRichMediaEvents", value.asInstanceOf[js.Any])
     

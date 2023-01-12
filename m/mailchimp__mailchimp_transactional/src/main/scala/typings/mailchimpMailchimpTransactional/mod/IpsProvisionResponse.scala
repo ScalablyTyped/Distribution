@@ -16,7 +16,8 @@ object IpsProvisionResponse {
     __obj.asInstanceOf[IpsProvisionResponse]
   }
   
-  extension [Self <: IpsProvisionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpsProvisionResponse] (val x: Self) extends AnyVal {
     
     inline def setRequested_at(value: String): Self = StObject.set(x, "requested_at", value.asInstanceOf[js.Any])
   }

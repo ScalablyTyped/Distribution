@@ -19,7 +19,8 @@ object StreetLayerOptions {
     __obj.asInstanceOf[StreetLayerOptions]
   }
   
-  extension [Self <: StreetLayerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreetLayerOptions] (val x: Self) extends AnyVal {
     
     inline def setOverlayMap(value: Boolean): Self = StObject.set(x, "overlayMap", value.asInstanceOf[js.Any])
     

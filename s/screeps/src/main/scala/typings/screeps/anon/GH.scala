@@ -39,7 +39,8 @@ object GH {
     __obj.asInstanceOf[GH]
   }
   
-  extension [Self <: GH](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GH] (val x: Self) extends AnyVal {
     
     inline def setGH(value: typings.screeps.screepsStrings.GH2O): Self = StObject.set(x, "GH", value.asInstanceOf[js.Any])
     

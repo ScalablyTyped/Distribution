@@ -17,7 +17,8 @@ object IHtmlFormatHelperStatics {
     __obj.asInstanceOf[IHtmlFormatHelperStatics]
   }
   
-  extension [Self <: IHtmlFormatHelperStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHtmlFormatHelperStatics] (val x: Self) extends AnyVal {
     
     inline def setCreateHtmlFormat(value: String => String): Self = StObject.set(x, "createHtmlFormat", js.Any.fromFunction1(value))
     

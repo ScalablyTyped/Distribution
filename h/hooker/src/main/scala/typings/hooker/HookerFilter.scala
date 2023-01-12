@@ -19,7 +19,8 @@ object HookerFilter {
     __obj.asInstanceOf[HookerFilter]
   }
   
-  extension [Self <: HookerFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HookerFilter] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object JMD {
     __obj.asInstanceOf[JMD]
   }
   
-  extension [Self <: JMD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JMD] (val x: Self) extends AnyVal {
     
     inline def setJMD(value: js.Array[String]): Self = StObject.set(x, "JMD", value.asInstanceOf[js.Any])
     

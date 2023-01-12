@@ -18,7 +18,8 @@ object Chunks {
     __obj.asInstanceOf[Chunks]
   }
   
-  extension [Self <: Chunks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Chunks] (val x: Self) extends AnyVal {
     
     inline def setChunks(value: Set[typings.webpack.mod.Chunk]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
     

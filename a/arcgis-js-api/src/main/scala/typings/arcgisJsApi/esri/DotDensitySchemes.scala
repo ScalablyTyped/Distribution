@@ -46,7 +46,8 @@ object DotDensitySchemes {
     __obj.asInstanceOf[DotDensitySchemes]
   }
   
-  extension [Self <: DotDensitySchemes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DotDensitySchemes] (val x: Self) extends AnyVal {
     
     inline def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
     

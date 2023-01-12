@@ -32,7 +32,8 @@ object DERAbstractStructured {
     __obj.asInstanceOf[DERAbstractStructured]
   }
   
-  extension [Self <: DERAbstractStructured](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DERAbstractStructured] (val x: Self) extends AnyVal {
     
     inline def setAppendASN1Object(value: ASN1Object => Unit): Self = StObject.set(x, "appendASN1Object", js.Any.fromFunction1(value))
     

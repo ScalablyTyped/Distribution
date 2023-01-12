@@ -34,7 +34,8 @@ object XPresentation {
     __obj.asInstanceOf[XPresentation]
   }
   
-  extension [Self <: XPresentation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPresentation] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "kapsule"
-version := "1.13.8-ef9ab5"
+version := "1.13.8-53331c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

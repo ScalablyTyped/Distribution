@@ -22,7 +22,8 @@ object LoaderModule {
     __obj.asInstanceOf[LoaderModule[OptionsType, ContextAdditions]]
   }
   
-  extension [Self <: LoaderModule[?, ?], OptionsType, ContextAdditions](x: Self & (LoaderModule[OptionsType, ContextAdditions])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoaderModule[?, ?], OptionsType, ContextAdditions] (val x: Self & (LoaderModule[OptionsType, ContextAdditions])) extends AnyVal {
     
     inline def setDefault(
       value: (RawLoaderDefinitionFunction[OptionsType, ContextAdditions]) | (LoaderDefinitionFunction[OptionsType, ContextAdditions])

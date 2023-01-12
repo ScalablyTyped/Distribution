@@ -34,7 +34,8 @@ object ResultOption {
     __obj.asInstanceOf[ResultOption]
   }
   
-  extension [Self <: ResultOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultOption] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

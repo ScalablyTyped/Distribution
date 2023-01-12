@@ -24,7 +24,8 @@ object UpdateHashContextGenerator {
     __obj.asInstanceOf[UpdateHashContextGenerator]
   }
   
-  extension [Self <: UpdateHashContextGenerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateHashContextGenerator] (val x: Self) extends AnyVal {
     
     inline def setChunkGraph(value: ChunkGraph): Self = StObject.set(x, "chunkGraph", value.asInstanceOf[js.Any])
     

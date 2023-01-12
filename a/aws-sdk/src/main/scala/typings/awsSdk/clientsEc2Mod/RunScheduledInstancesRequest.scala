@@ -41,7 +41,8 @@ object RunScheduledInstancesRequest {
     __obj.asInstanceOf[RunScheduledInstancesRequest]
   }
   
-  extension [Self <: RunScheduledInstancesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunScheduledInstancesRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

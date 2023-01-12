@@ -23,7 +23,8 @@ object MetricPolicy {
     __obj.asInstanceOf[MetricPolicy]
   }
   
-  extension [Self <: MetricPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricPolicy] (val x: Self) extends AnyVal {
     
     inline def setContainerLevelMetrics(value: ContainerLevelMetrics): Self = StObject.set(x, "ContainerLevelMetrics", value.asInstanceOf[js.Any])
     

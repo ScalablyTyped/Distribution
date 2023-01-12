@@ -31,7 +31,8 @@ object OSPolicyResourceExecResourceExec {
     __obj.asInstanceOf[OSPolicyResourceExecResourceExec]
   }
   
-  extension [Self <: OSPolicyResourceExecResourceExec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSPolicyResourceExecResourceExec] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

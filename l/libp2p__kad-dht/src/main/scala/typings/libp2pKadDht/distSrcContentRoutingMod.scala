@@ -94,7 +94,8 @@ object distSrcContentRoutingMod {
       __obj.asInstanceOf[ContentRoutingInit]
     }
     
-    extension [Self <: ContentRoutingInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentRoutingInit] (val x: Self) extends AnyVal {
       
       inline def setLan(value: Boolean): Self = StObject.set(x, "lan", value.asInstanceOf[js.Any])
       

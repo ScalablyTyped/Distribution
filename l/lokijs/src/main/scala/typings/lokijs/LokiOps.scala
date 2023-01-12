@@ -153,7 +153,8 @@ object LokiOps {
     __obj.asInstanceOf[LokiOps]
   }
   
-  extension [Self <: LokiOps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LokiOps] (val x: Self) extends AnyVal {
     
     inline def set$aeq(value: (Any, Any) => Boolean): Self = StObject.set(x, "$aeq", js.Any.fromFunction2(value))
     

@@ -18,7 +18,8 @@ object LogicalXorInputs {
     __obj.asInstanceOf[LogicalXorInputs]
   }
   
-  extension [Self <: LogicalXorInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogicalXorInputs] (val x: Self) extends AnyVal {
     
     inline def setA(value: scala.Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object TextMetrics {
     __obj.asInstanceOf[TextMetrics]
   }
   
-  extension [Self <: TextMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextMetrics] (val x: Self) extends AnyVal {
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }

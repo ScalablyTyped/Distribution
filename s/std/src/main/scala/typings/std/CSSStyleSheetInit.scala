@@ -22,7 +22,8 @@ object CSSStyleSheetInit {
     __obj.asInstanceOf[CSSStyleSheetInit]
   }
   
-  extension [Self <: CSSStyleSheetInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSStyleSheetInit] (val x: Self) extends AnyVal {
     
     inline def setBaseURL(value: java.lang.String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
     

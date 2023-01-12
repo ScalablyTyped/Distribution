@@ -33,7 +33,8 @@ object Face {
     __obj.asInstanceOf[Face]
   }
   
-  extension [Self <: Face](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Face] (val x: Self) extends AnyVal {
     
     inline def setIsCounterClockwise(value: Boolean): Self = StObject.set(x, "isCounterClockwise", value.asInstanceOf[js.Any])
     

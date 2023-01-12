@@ -16,7 +16,8 @@ object SectionCollectionUpdateData {
     __obj.asInstanceOf[SectionCollectionUpdateData]
   }
   
-  extension [Self <: SectionCollectionUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SectionCollectionUpdateData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[SectionData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

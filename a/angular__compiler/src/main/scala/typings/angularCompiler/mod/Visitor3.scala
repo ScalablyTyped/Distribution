@@ -49,7 +49,8 @@ object Visitor3 {
     __obj.asInstanceOf[Visitor3[Result]]
   }
   
-  extension [Self <: Visitor3[?], Result](x: Self & Visitor3[Result]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Visitor3[?], Result] (val x: Self & Visitor3[Result]) extends AnyVal {
     
     inline def setVisit(value: /* node */ TmplAstNode => Result): Self = StObject.set(x, "visit", js.Any.fromFunction1(value))
     

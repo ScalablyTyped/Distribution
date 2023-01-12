@@ -46,7 +46,8 @@ object SuperExpression {
     __obj.asInstanceOf[SuperExpression]
   }
   
-  extension [Self <: SuperExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuperExpression] (val x: Self) extends AnyVal {
     
     inline def setStructuralEquals(value: (ParenthesizedExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     

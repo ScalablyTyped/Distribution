@@ -77,7 +77,8 @@ object layerGraticuleMod {
       __obj.asInstanceOf[GraticuleLabelDataType]
     }
     
-    extension [Self <: GraticuleLabelDataType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraticuleLabelDataType] (val x: Self) extends AnyVal {
       
       inline def setGeom(value: typings.ol.geomPointMod.default): Self = StObject.set(x, "geom", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object layerGraticuleMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

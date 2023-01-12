@@ -41,7 +41,8 @@ object EllipseOptions {
     __obj.asInstanceOf[EllipseOptions]
   }
   
-  extension [Self <: EllipseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EllipseOptions] (val x: Self) extends AnyVal {
     
     inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     

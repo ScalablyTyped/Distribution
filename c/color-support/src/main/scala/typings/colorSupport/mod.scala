@@ -63,7 +63,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ColorSupportOptions]
     }
     
-    extension [Self <: ColorSupportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorSupportOptions] (val x: Self) extends AnyVal {
       
       inline def setAlwaysReturn(value: Boolean): Self = StObject.set(x, "alwaysReturn", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ColorSupportResult]
     }
     
-    extension [Self <: ColorSupportResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorSupportResult] (val x: Self) extends AnyVal {
       
       inline def setHas16m(value: Boolean): Self = StObject.set(x, "has16m", value.asInstanceOf[js.Any])
       

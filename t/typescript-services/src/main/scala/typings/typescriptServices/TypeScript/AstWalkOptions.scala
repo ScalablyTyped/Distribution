@@ -17,7 +17,8 @@ object AstWalkOptions {
     __obj.asInstanceOf[AstWalkOptions]
   }
   
-  extension [Self <: AstWalkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AstWalkOptions] (val x: Self) extends AnyVal {
     
     inline def setGoChildren(value: Boolean): Self = StObject.set(x, "goChildren", value.asInstanceOf[js.Any])
     

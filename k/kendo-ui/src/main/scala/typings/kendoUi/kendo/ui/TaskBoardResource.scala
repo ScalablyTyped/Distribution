@@ -32,7 +32,8 @@ object TaskBoardResource {
     __obj.asInstanceOf[TaskBoardResource]
   }
   
-  extension [Self <: TaskBoardResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskBoardResource] (val x: Self) extends AnyVal {
     
     inline def setDataColorField(value: String): Self = StObject.set(x, "dataColorField", value.asInstanceOf[js.Any])
     

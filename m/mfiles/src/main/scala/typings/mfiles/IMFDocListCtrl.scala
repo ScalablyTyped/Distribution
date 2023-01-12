@@ -15,7 +15,8 @@ object IMFDocListCtrl {
     __obj.asInstanceOf[IMFDocListCtrl]
   }
   
-  extension [Self <: IMFDocListCtrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMFDocListCtrl] (val x: Self) extends AnyVal {
     
     inline def setAttachToListingWindow(value: Any => Unit): Self = StObject.set(x, "AttachToListingWindow", js.Any.fromFunction1(value))
   }

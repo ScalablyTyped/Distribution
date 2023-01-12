@@ -66,7 +66,8 @@ object mod {
       __obj.asInstanceOf[Area]
     }
     
-    extension [Self <: Area](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Area] (val x: Self) extends AnyVal {
       
       inline def setSets(value: js.Array[String]): Self = StObject.set(x, "sets", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[Circle]
     }
     
-    extension [Self <: Circle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Circle] (val x: Self) extends AnyVal {
       
       inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object mod {
       __obj.asInstanceOf[LayoutParameter]
     }
     
-    extension [Self <: LayoutParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutParameter] (val x: Self) extends AnyVal {
       
       inline def setLossFunction(value: (/* sets */ StringDictionary[Circle], /* overlaps */ js.Array[Overlap]) => Double): Self = StObject.set(x, "lossFunction", js.Any.fromFunction2(value))
       
@@ -143,7 +146,8 @@ object mod {
       __obj.asInstanceOf[Overlap]
     }
     
-    extension [Self <: Overlap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Overlap] (val x: Self) extends AnyVal {
       
       inline def setSets(value: js.Array[String]): Self = StObject.set(x, "sets", value.asInstanceOf[js.Any])
       
@@ -170,7 +174,8 @@ object mod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

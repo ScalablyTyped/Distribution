@@ -66,7 +66,8 @@ object MPConfiguration {
     __obj.asInstanceOf[MPConfiguration]
   }
   
-  extension [Self <: MPConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MPConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     

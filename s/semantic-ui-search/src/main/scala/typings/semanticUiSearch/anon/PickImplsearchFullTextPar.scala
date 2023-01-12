@@ -97,7 +97,8 @@ object PickImplsearchFullTextPar {
     __obj.asInstanceOf[PickImplsearchFullTextPar]
   }
   
-  extension [Self <: PickImplsearchFullTextPar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplsearchFullTextPar] (val x: Self) extends AnyVal {
     
     inline def setApiSettings(value: ApiSettings): Self = StObject.set(x, "apiSettings", value.asInstanceOf[js.Any])
     

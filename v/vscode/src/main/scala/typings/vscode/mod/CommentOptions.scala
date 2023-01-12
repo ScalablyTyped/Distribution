@@ -23,7 +23,8 @@ object CommentOptions {
     __obj.asInstanceOf[CommentOptions]
   }
   
-  extension [Self <: CommentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentOptions] (val x: Self) extends AnyVal {
     
     inline def setPlaceHolder(value: String): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object ChildIterator {
     __obj.asInstanceOf[ChildIterator]
   }
   
-  extension [Self <: ChildIterator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildIterator] (val x: Self) extends AnyVal {
     
     inline def setChildIterators(value: js.Array[ChildIterator]): Self = StObject.set(x, "childIterators", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GoogleCloudRunV2ListExecutionsResponse {
     __obj.asInstanceOf[GoogleCloudRunV2ListExecutionsResponse]
   }
   
-  extension [Self <: GoogleCloudRunV2ListExecutionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRunV2ListExecutionsResponse] (val x: Self) extends AnyVal {
     
     inline def setExecutions(value: js.Array[GoogleCloudRunV2Execution]): Self = StObject.set(x, "executions", value.asInstanceOf[js.Any])
     

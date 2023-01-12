@@ -19,7 +19,8 @@ object SyncWorkspaceResponse {
     __obj.asInstanceOf[SyncWorkspaceResponse]
   }
   
-  extension [Self <: SyncWorkspaceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncWorkspaceResponse] (val x: Self) extends AnyVal {
     
     inline def setMergeConflict(value: js.Array[MergeConflict]): Self = StObject.set(x, "mergeConflict", value.asInstanceOf[js.Any])
     

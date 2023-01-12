@@ -25,7 +25,8 @@ object LineControllerChartOptions {
     __obj.asInstanceOf[LineControllerChartOptions]
   }
   
-  extension [Self <: LineControllerChartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineControllerChartOptions] (val x: Self) extends AnyVal {
     
     inline def setShowLine(value: Boolean): Self = StObject.set(x, "showLine", value.asInstanceOf[js.Any])
     

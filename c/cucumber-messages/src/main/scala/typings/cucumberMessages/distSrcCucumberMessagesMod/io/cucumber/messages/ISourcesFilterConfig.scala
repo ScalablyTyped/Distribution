@@ -23,7 +23,8 @@ object ISourcesFilterConfig {
     __obj.asInstanceOf[ISourcesFilterConfig]
   }
   
-  extension [Self <: ISourcesFilterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISourcesFilterConfig] (val x: Self) extends AnyVal {
     
     inline def setNameRegularExpressions(value: js.Array[String]): Self = StObject.set(x, "nameRegularExpressions", value.asInstanceOf[js.Any])
     

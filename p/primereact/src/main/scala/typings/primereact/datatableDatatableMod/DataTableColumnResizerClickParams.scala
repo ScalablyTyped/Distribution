@@ -26,7 +26,8 @@ object DataTableColumnResizerClickParams {
     __obj.asInstanceOf[DataTableColumnResizerClickParams]
   }
   
-  extension [Self <: DataTableColumnResizerClickParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableColumnResizerClickParams] (val x: Self) extends AnyVal {
     
     inline def setColumn(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Column */ Any

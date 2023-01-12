@@ -17,7 +17,8 @@ object AttributesReplacement {
     __obj.asInstanceOf[AttributesReplacement]
   }
   
-  extension [Self <: AttributesReplacement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributesReplacement] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Replacement): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

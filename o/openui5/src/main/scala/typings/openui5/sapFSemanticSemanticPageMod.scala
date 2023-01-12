@@ -2592,7 +2592,8 @@ object sapFSemanticSemanticPageMod {
       __obj.asInstanceOf[SemanticPageSettings]
     }
     
-    extension [Self <: SemanticPageSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemanticPageSettings] (val x: Self) extends AnyVal {
       
       inline def setAddAction(value: typings.openui5.sapFSemanticAddActionMod.default): Self = StObject.set(x, "addAction", value.asInstanceOf[js.Any])
       

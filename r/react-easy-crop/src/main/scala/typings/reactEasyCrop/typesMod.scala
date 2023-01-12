@@ -23,7 +23,8 @@ object typesMod {
       __obj.asInstanceOf[Area]
     }
     
-    extension [Self <: Area](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Area] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object typesMod {
       __obj.asInstanceOf[MediaSize]
     }
     
-    extension [Self <: MediaSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object typesMod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -98,7 +101,8 @@ object typesMod {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -119,7 +123,8 @@ object typesMod {
       __obj.asInstanceOf[VideoSrc]
     }
     
-    extension [Self <: VideoSrc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoSrc] (val x: Self) extends AnyVal {
       
       inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       

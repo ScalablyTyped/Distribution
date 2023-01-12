@@ -75,7 +75,8 @@ object Cluster {
     __obj.asInstanceOf[Cluster]
   }
   
-  extension [Self <: Cluster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cluster] (val x: Self) extends AnyVal {
     
     inline def setAddMultipleTargetTopics(value: js.Array[String] => js.Promise[Unit]): Self = StObject.set(x, "addMultipleTargetTopics", js.Any.fromFunction1(value))
     

@@ -45,7 +45,8 @@ object ResolvedPluralRulesOptions {
     __obj.asInstanceOf[ResolvedPluralRulesOptions]
   }
   
-  extension [Self <: ResolvedPluralRulesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedPluralRulesOptions] (val x: Self) extends AnyVal {
     
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

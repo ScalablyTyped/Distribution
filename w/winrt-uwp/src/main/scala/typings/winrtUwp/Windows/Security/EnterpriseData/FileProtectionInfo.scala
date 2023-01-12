@@ -23,7 +23,8 @@ object FileProtectionInfo {
     __obj.asInstanceOf[FileProtectionInfo]
   }
   
-  extension [Self <: FileProtectionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileProtectionInfo] (val x: Self) extends AnyVal {
     
     inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     

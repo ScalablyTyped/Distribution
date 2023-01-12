@@ -44,7 +44,8 @@ object anon {
       __obj.asInstanceOf[Datatype]
     }
     
-    extension [Self <: Datatype](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Datatype] (val x: Self) extends AnyVal {
       
       inline def setDatatype(value: TermTypeValue): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object anon {
       __obj.asInstanceOf[Graph]
     }
     
-    extension [Self <: Graph](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Graph] (val x: Self) extends AnyVal {
       
       inline def setGraph(value: ReturnType[PropType[PropType[QuadExt, graph], toJSON]]): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object anon {
       __obj.asInstanceOf[TermType]
     }
     
-    extension [Self <: TermType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TermType] (val x: Self) extends AnyVal {
       
       inline def setTermType(value: PropType[BlankNode, termType]): Self = StObject.set(x, "termType", value.asInstanceOf[js.Any])
       
@@ -125,7 +128,8 @@ object anon {
       __obj.asInstanceOf[TermTypePropType]
     }
     
-    extension [Self <: TermTypePropType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TermTypePropType] (val x: Self) extends AnyVal {
       
       inline def setTermType(value: PropType[Variable, termType]): Self = StObject.set(x, "termType", value.asInstanceOf[js.Any])
       
@@ -146,7 +150,8 @@ object anon {
       __obj.asInstanceOf[TermTypeValue]
     }
     
-    extension [Self <: TermTypeValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TermTypeValue] (val x: Self) extends AnyVal {
       
       inline def setTermType(value: PropType[NamedNode[String], termType]): Self = StObject.set(x, "termType", value.asInstanceOf[js.Any])
       
@@ -167,7 +172,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setTermType(value: PropType[DefaultGraph, termType]): Self = StObject.set(x, "termType", value.asInstanceOf[js.Any])
       

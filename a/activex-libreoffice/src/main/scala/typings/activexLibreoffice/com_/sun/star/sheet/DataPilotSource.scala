@@ -82,7 +82,8 @@ object DataPilotSource {
     __obj.asInstanceOf[DataPilotSource]
   }
   
-  extension [Self <: DataPilotSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPilotSource] (val x: Self) extends AnyVal {
     
     inline def setColumnFieldCount(value: Double): Self = StObject.set(x, "ColumnFieldCount", value.asInstanceOf[js.Any])
     

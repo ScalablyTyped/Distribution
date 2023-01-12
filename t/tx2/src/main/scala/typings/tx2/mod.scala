@@ -29,7 +29,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Counter]
     }
     
-    extension [Self <: Counter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Counter] (val x: Self) extends AnyVal {
       
       inline def setDec(value: Double => Unit): Self = StObject.set(x, "dec", js.Any.fromFunction1(value))
       
@@ -54,7 +55,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CounterOptions]
     }
     
-    extension [Self <: CounterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CounterOptions] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ErrorObject]
     }
     
-    extension [Self <: ErrorObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorObject] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -97,7 +100,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Metric[T]]
     }
     
-    extension [Self <: Metric[?], T](x: Self & Metric[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metric[?], T] (val x: Self & Metric[T]) extends AnyVal {
       
       inline def setSet(value: T => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
       
@@ -120,7 +124,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MetricOptions[T]]
     }
     
-    extension [Self <: MetricOptions[?], T](x: Self & MetricOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetricOptions[?], T] (val x: Self & MetricOptions[T]) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

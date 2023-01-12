@@ -86,7 +86,8 @@ object IXTemplateCompiler {
     __obj.asInstanceOf[IXTemplateCompiler]
   }
   
-  extension [Self <: IXTemplateCompiler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IXTemplateCompiler] (val x: Self) extends AnyVal {
     
     inline def setDoCase(value: /* action */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "doCase", js.Any.fromFunction1(value))
     

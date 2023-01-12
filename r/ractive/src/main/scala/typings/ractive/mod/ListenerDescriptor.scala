@@ -28,7 +28,8 @@ object ListenerDescriptor {
     __obj.asInstanceOf[ListenerDescriptor[T]]
   }
   
-  extension [Self <: ListenerDescriptor[?], T /* <: Ractive[T] */](x: Self & ListenerDescriptor[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListenerDescriptor[?], T /* <: Ractive[T] */] (val x: Self & ListenerDescriptor[T]) extends AnyVal {
     
     inline def setHandler(value: ListenerCallback[T]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     

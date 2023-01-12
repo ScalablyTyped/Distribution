@@ -62,7 +62,8 @@ object PlotArcdiagramLevelsOptions {
     __obj.asInstanceOf[PlotArcdiagramLevelsOptions]
   }
   
-  extension [Self <: PlotArcdiagramLevelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotArcdiagramLevelsOptions] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: ColorString): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

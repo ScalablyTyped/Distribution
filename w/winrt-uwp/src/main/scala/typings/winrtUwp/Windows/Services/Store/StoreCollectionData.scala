@@ -47,7 +47,8 @@ object StoreCollectionData {
     __obj.asInstanceOf[StoreCollectionData]
   }
   
-  extension [Self <: StoreCollectionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreCollectionData] (val x: Self) extends AnyVal {
     
     inline def setAcquiredDate(value: js.Date): Self = StObject.set(x, "acquiredDate", value.asInstanceOf[js.Any])
     

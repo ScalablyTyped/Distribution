@@ -27,7 +27,8 @@ object PredictionTerm {
     __obj.asInstanceOf[PredictionTerm]
   }
   
-  extension [Self <: PredictionTerm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredictionTerm] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[MergeIntoFile]
     }
     
-    extension [Self <: MergeIntoFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeIntoFile] (val x: Self) extends AnyVal {
       
       inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
@@ -114,7 +115,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setChunks(value: js.Array[String]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
       

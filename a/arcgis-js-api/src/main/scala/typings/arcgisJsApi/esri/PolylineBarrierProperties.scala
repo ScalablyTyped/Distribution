@@ -36,7 +36,8 @@ object PolylineBarrierProperties {
     __obj.asInstanceOf[PolylineBarrierProperties]
   }
   
-  extension [Self <: PolylineBarrierProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolylineBarrierProperties] (val x: Self) extends AnyVal {
     
     inline def setBarrierType(value: restriction | `added-cost`): Self = StObject.set(x, "barrierType", value.asInstanceOf[js.Any])
     

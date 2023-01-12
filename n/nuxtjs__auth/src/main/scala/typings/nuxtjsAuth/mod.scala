@@ -133,7 +133,8 @@ object mod {
         __obj.asInstanceOf[Context]
       }
       
-      extension [Self <: Context](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
         
         inline def set$auth(value: Auth[Any]): Self = StObject.set(x, "$auth", value.asInstanceOf[js.Any])
       }
@@ -155,7 +156,8 @@ object mod {
         __obj.asInstanceOf[Context]
       }
       
-      extension [Self <: Context](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
         
         inline def set$auth(value: Auth[Any]): Self = StObject.set(x, "$auth", value.asInstanceOf[js.Any])
       }
@@ -176,7 +178,8 @@ object mod {
         __obj.asInstanceOf[ComponentOptions[V]]
       }
       
-      extension [Self <: ComponentOptions[?], V /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any */](x: Self & ComponentOptions[V]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ComponentOptions[?], V /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any */] (val x: Self & ComponentOptions[V]) extends AnyVal {
         
         inline def setAuth(value: Boolean | String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
@@ -200,7 +203,8 @@ object mod {
         __obj.asInstanceOf[Vue]
       }
       
-      extension [Self <: Vue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Vue] (val x: Self) extends AnyVal {
         
         inline def set$auth(value: Auth[Any]): Self = StObject.set(x, "$auth", value.asInstanceOf[js.Any])
       }
@@ -222,7 +226,8 @@ object mod {
         __obj.asInstanceOf[Store[S]]
       }
       
-      extension [Self <: Store[?], S](x: Self & Store[S]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Store[?], S] (val x: Self & Store[S]) extends AnyVal {
         
         inline def set$auth(value: Auth[Any]): Self = StObject.set(x, "$auth", value.asInstanceOf[js.Any])
       }

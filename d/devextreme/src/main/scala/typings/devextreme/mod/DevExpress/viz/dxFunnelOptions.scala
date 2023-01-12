@@ -144,7 +144,8 @@ object dxFunnelOptions {
     __obj.asInstanceOf[dxFunnelOptions]
   }
   
-  extension [Self <: dxFunnelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxFunnelOptions] (val x: Self) extends AnyVal {
     
     inline def setAdaptiveLayout(value: KeepLabels): Self = StObject.set(x, "adaptiveLayout", value.asInstanceOf[js.Any])
     

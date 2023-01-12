@@ -17,7 +17,8 @@ object NativeScrollVelocity {
     __obj.asInstanceOf[NativeScrollVelocity]
   }
   
-  extension [Self <: NativeScrollVelocity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeScrollVelocity] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

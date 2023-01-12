@@ -58,7 +58,8 @@ object IDataURLOptions {
     __obj.asInstanceOf[IDataURLOptions]
   }
   
-  extension [Self <: IDataURLOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDataURLOptions] (val x: Self) extends AnyVal {
     
     inline def setEnableRetinaScaling(value: Boolean): Self = StObject.set(x, "enableRetinaScaling", value.asInstanceOf[js.Any])
     

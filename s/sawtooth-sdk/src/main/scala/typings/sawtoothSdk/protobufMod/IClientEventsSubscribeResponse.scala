@@ -20,7 +20,8 @@ object IClientEventsSubscribeResponse {
     __obj.asInstanceOf[IClientEventsSubscribeResponse]
   }
   
-  extension [Self <: IClientEventsSubscribeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClientEventsSubscribeResponse] (val x: Self) extends AnyVal {
     
     inline def setResponseMessage(value: String): Self = StObject.set(x, "responseMessage", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object CastAttrs {
     __obj.asInstanceOf[CastAttrs]
   }
   
-  extension [Self <: CastAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CastAttrs] (val x: Self) extends AnyVal {
     
     inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
   }

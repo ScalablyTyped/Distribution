@@ -588,7 +588,8 @@ object sapUiWebcMainTabMod {
       __obj.asInstanceOf[TabSettings]
     }
     
-    extension [Self <: TabSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabSettings] (val x: Self) extends AnyVal {
       
       inline def setAdditionalText(value: String | PropertyBindingInfo): Self = StObject.set(x, "additionalText", value.asInstanceOf[js.Any])
       

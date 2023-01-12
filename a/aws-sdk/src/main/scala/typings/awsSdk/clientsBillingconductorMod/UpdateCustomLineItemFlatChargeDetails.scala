@@ -18,7 +18,8 @@ object UpdateCustomLineItemFlatChargeDetails {
     __obj.asInstanceOf[UpdateCustomLineItemFlatChargeDetails]
   }
   
-  extension [Self <: UpdateCustomLineItemFlatChargeDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCustomLineItemFlatChargeDetails] (val x: Self) extends AnyVal {
     
     inline def setChargeValue(value: CustomLineItemChargeValue): Self = StObject.set(x, "ChargeValue", value.asInstanceOf[js.Any])
   }

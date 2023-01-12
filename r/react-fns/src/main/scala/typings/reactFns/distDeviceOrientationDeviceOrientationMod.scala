@@ -45,7 +45,8 @@ object distDeviceOrientationDeviceOrientationMod {
       __obj.asInstanceOf[DeviceOrientationProps]
     }
     
-    extension [Self <: DeviceOrientationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceOrientationProps] (val x: Self) extends AnyVal {
       
       inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       

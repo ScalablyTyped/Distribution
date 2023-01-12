@@ -24,7 +24,8 @@ object TestResultsDetailsForGroup {
     __obj.asInstanceOf[TestResultsDetailsForGroup]
   }
   
-  extension [Self <: TestResultsDetailsForGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestResultsDetailsForGroup] (val x: Self) extends AnyVal {
     
     inline def setGroupByValue(value: Any): Self = StObject.set(x, "groupByValue", value.asInstanceOf[js.Any])
     

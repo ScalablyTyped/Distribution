@@ -82,7 +82,8 @@ object BuildBazelRemoteExecutionV2Command {
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2Command]
   }
   
-  extension [Self <: BuildBazelRemoteExecutionV2Command](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildBazelRemoteExecutionV2Command] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

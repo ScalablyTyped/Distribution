@@ -38,7 +38,8 @@ object DescribePortfolioShareStatusOutput {
     __obj.asInstanceOf[DescribePortfolioShareStatusOutput]
   }
   
-  extension [Self <: DescribePortfolioShareStatusOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePortfolioShareStatusOutput] (val x: Self) extends AnyVal {
     
     inline def setOrganizationNodeValue(value: OrganizationNodeValue): Self = StObject.set(x, "OrganizationNodeValue", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object MetricDatum {
     __obj.asInstanceOf[MetricDatum]
   }
   
-  extension [Self <: MetricDatum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricDatum] (val x: Self) extends AnyVal {
     
     inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     

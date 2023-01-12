@@ -102,7 +102,8 @@ object distRenderPlaygroundPageMod {
       __obj.asInstanceOf[EditorColours]
     }
     
-    extension [Self <: EditorColours](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorColours] (val x: Self) extends AnyVal {
       
       inline def setAtom(value: String): Self = StObject.set(x, "atom", value.asInstanceOf[js.Any])
       
@@ -193,7 +194,8 @@ object distRenderPlaygroundPageMod {
       __obj.asInstanceOf[ISettings]
     }
     
-    extension [Self <: ISettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISettings] (val x: Self) extends AnyVal {
       
       inline def setEditorDotcursorShape(value: CursorShape): Self = StObject.set(x, "editor.cursorShape", value.asInstanceOf[js.Any])
       
@@ -256,7 +258,8 @@ object distRenderPlaygroundPageMod {
       __obj.asInstanceOf[IntrospectionResult]
     }
     
-    extension [Self <: IntrospectionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntrospectionResult] (val x: Self) extends AnyVal {
       
       inline def set__schema(value: Any): Self = StObject.set(x, "__schema", value.asInstanceOf[js.Any])
     }
@@ -289,7 +292,8 @@ object distRenderPlaygroundPageMod {
       __obj.asInstanceOf[MiddlewareOptions]
     }
     
-    extension [Self <: MiddlewareOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MiddlewareOptions] (val x: Self) extends AnyVal {
       
       inline def setCodeTheme(value: EditorColours): Self = StObject.set(x, "codeTheme", value.asInstanceOf[js.Any])
       
@@ -350,7 +354,8 @@ object distRenderPlaygroundPageMod {
       __obj.asInstanceOf[RenderPageOptions]
     }
     
-    extension [Self <: RenderPageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderPageOptions] (val x: Self) extends AnyVal {
       
       inline def setCdnUrl(value: String): Self = StObject.set(x, "cdnUrl", value.asInstanceOf[js.Any])
       
@@ -393,7 +398,8 @@ object distRenderPlaygroundPageMod {
       __obj.asInstanceOf[Tab]
     }
     
-    extension [Self <: Tab](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tab] (val x: Self) extends AnyVal {
       
       inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       

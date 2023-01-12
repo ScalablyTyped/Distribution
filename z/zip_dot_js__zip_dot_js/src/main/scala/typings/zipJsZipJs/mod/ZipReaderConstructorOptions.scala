@@ -34,7 +34,8 @@ object ZipReaderConstructorOptions {
     __obj.asInstanceOf[ZipReaderConstructorOptions]
   }
   
-  extension [Self <: ZipReaderConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZipReaderConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setExtractAppendedData(value: Boolean): Self = StObject.set(x, "extractAppendedData", value.asInstanceOf[js.Any])
     

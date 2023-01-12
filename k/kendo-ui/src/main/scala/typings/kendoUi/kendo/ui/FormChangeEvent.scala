@@ -19,7 +19,8 @@ object FormChangeEvent {
     __obj.asInstanceOf[FormChangeEvent]
   }
   
-  extension [Self <: FormChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

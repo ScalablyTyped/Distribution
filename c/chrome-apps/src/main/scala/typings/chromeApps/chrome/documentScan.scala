@@ -41,7 +41,8 @@ object documentScan {
       __obj.asInstanceOf[DocumentScanCallbackArg]
     }
     
-    extension [Self <: DocumentScanCallbackArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentScanCallbackArg] (val x: Self) extends AnyVal {
       
       inline def setDataUrls(value: js.Array[String]): Self = StObject.set(x, "dataUrls", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object documentScan {
       __obj.asInstanceOf[DocumentScanOptions]
     }
     
-    extension [Self <: DocumentScanOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentScanOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxImages(value: integer): Self = StObject.set(x, "maxImages", value.asInstanceOf[js.Any])
       

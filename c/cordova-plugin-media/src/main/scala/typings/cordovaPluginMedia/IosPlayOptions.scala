@@ -21,7 +21,8 @@ object IosPlayOptions {
     __obj.asInstanceOf[IosPlayOptions]
   }
   
-  extension [Self <: IosPlayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosPlayOptions] (val x: Self) extends AnyVal {
     
     inline def setNumberOfLoops(value: Double): Self = StObject.set(x, "numberOfLoops", value.asInstanceOf[js.Any])
     

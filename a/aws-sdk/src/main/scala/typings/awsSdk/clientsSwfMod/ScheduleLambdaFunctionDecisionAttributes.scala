@@ -38,7 +38,8 @@ object ScheduleLambdaFunctionDecisionAttributes {
     __obj.asInstanceOf[ScheduleLambdaFunctionDecisionAttributes]
   }
   
-  extension [Self <: ScheduleLambdaFunctionDecisionAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduleLambdaFunctionDecisionAttributes] (val x: Self) extends AnyVal {
     
     inline def setControl(value: Data): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     

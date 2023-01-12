@@ -18,7 +18,8 @@ object CreateParameterGroupResponse {
     __obj.asInstanceOf[CreateParameterGroupResponse]
   }
   
-  extension [Self <: CreateParameterGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateParameterGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setParameterGroup(value: ParameterGroup): Self = StObject.set(x, "ParameterGroup", value.asInstanceOf[js.Any])
     

@@ -209,7 +209,8 @@ object UnoControlListBoxModel {
     __obj.asInstanceOf[UnoControlListBoxModel]
   }
   
-  extension [Self <: UnoControlListBoxModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnoControlListBoxModel] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: Double): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object PickModPropsInfoPlistproj {
     __obj.asInstanceOf[PickModPropsInfoPlistproj]
   }
   
-  extension [Self <: PickModPropsInfoPlistproj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickModPropsInfoPlistproj] (val x: Self) extends AnyVal {
     
     inline def setProjectRoot(value: String): Self = StObject.set(x, "projectRoot", value.asInstanceOf[js.Any])
   }

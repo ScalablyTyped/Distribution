@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Circular]
     }
     
-    extension [Self <: Circular](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Circular] (val x: Self) extends AnyVal {
       
       inline def setCircular(value: Boolean | ignore): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setJson(value: ParserOptions | Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
@@ -89,7 +91,8 @@ object anon {
       __obj.asInstanceOf[External]
     }
     
-    extension [Self <: External](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: External] (val x: Self) extends AnyVal {
       
       inline def setExternal(value: Boolean): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
       
@@ -140,7 +143,8 @@ object anon {
       __obj.asInstanceOf[ParserOptionsencodingstri]
     }
     
-    extension [Self <: ParserOptionsencodingstri](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserOptionsencodingstri] (val x: Self) extends AnyVal {
       
       inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
       
@@ -190,7 +194,8 @@ object anon {
       __obj.asInstanceOf[PartialResolverOptions]
     }
     
-    extension [Self <: PartialResolverOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialResolverOptions] (val x: Self) extends AnyVal {
       
       inline def setCanRead(
         value: Boolean | js.RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])
@@ -233,7 +238,8 @@ object anon {
       __obj.asInstanceOf[Schema]
     }
     
-    extension [Self <: Schema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
       
       inline def setSchema(value: Boolean): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       

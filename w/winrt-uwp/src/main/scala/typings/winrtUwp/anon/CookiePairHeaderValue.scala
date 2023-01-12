@@ -18,7 +18,8 @@ object CookiePairHeaderValue {
     __obj.asInstanceOf[CookiePairHeaderValue]
   }
   
-  extension [Self <: CookiePairHeaderValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CookiePairHeaderValue] (val x: Self) extends AnyVal {
     
     inline def setCookiePairHeaderValue(value: HttpCookiePairHeaderValue): Self = StObject.set(x, "cookiePairHeaderValue", value.asInstanceOf[js.Any])
     

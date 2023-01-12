@@ -23,7 +23,8 @@ object googlePayCreateOptions {
     __obj.asInstanceOf[googlePayCreateOptions]
   }
   
-  extension [Self <: googlePayCreateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: googlePayCreateOptions] (val x: Self) extends AnyVal {
     
     inline def setButton(value: ButtonOptions): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

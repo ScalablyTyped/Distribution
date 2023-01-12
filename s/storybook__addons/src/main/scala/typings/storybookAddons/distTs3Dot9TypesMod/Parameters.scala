@@ -29,7 +29,8 @@ object Parameters {
     __obj.asInstanceOf[Parameters]
   }
   
-  extension [Self <: Parameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Parameters] (val x: Self) extends AnyVal {
     
     inline def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
     

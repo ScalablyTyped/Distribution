@@ -47,7 +47,8 @@ object KnockoutBindingHandler {
     __obj.asInstanceOf[KnockoutBindingHandler]
   }
   
-  extension [Self <: KnockoutBindingHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutBindingHandler] (val x: Self) extends AnyVal {
     
     inline def setInit(
       value: (/* element */ Any, /* valueAccessor */ js.Function0[Any], /* allBindingsAccessor */ js.UndefOr[KnockoutAllBindingsAccessor], /* viewModel */ js.UndefOr[Any], /* bindingContext */ js.UndefOr[KnockoutBindingContext]) => Unit | ControlsDescendantBindings

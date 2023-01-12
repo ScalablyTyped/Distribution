@@ -28,7 +28,8 @@ object InputConfiguration {
     __obj.asInstanceOf[InputConfiguration]
   }
   
-  extension [Self <: InputConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputConfiguration] (val x: Self) extends AnyVal {
     
     inline def setInputIp(value: string): Self = StObject.set(x, "InputIp", value.asInstanceOf[js.Any])
     

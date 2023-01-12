@@ -23,7 +23,8 @@ object MessagePlaceholder {
     __obj.asInstanceOf[MessagePlaceholder]
   }
   
-  extension [Self <: MessagePlaceholder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagePlaceholder] (val x: Self) extends AnyVal {
     
     inline def setSourceSpan(value: ParseSourceSpan): Self = StObject.set(x, "sourceSpan", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object distFeedsubMod {
       __obj.asInstanceOf[DefaultOptions]
     }
     
-    extension [Self <: DefaultOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
       
@@ -184,7 +185,8 @@ object distFeedsubMod {
       __obj.asInstanceOf[FeedSubEvents]
     }
     
-    extension [Self <: FeedSubEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedSubEvents] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
@@ -235,7 +237,8 @@ object distFeedsubMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
       

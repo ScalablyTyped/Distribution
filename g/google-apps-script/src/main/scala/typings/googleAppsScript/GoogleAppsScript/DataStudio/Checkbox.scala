@@ -39,7 +39,8 @@ object Checkbox {
     __obj.asInstanceOf[Checkbox]
   }
   
-  extension [Self <: Checkbox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Checkbox] (val x: Self) extends AnyVal {
     
     inline def setSetAllowOverride(value: Boolean => Checkbox): Self = StObject.set(x, "setAllowOverride", js.Any.fromFunction1(value))
     

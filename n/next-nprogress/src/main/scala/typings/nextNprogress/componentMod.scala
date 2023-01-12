@@ -32,7 +32,8 @@ object componentMod {
       __obj.asInstanceOf[NProgressProps]
     }
     
-    extension [Self <: NProgressProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NProgressProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

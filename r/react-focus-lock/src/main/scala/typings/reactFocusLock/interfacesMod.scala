@@ -30,7 +30,8 @@ object interfacesMod {
       __obj.asInstanceOf[AutoFocusProps]
     }
     
-    extension [Self <: AutoFocusProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoFocusProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object interfacesMod {
       __obj.asInstanceOf[FreeFocusProps]
     }
     
-    extension [Self <: FreeFocusProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FreeFocusProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -82,7 +84,8 @@ object interfacesMod {
       __obj.asInstanceOf[InFocusGuardProps]
     }
     
-    extension [Self <: InFocusGuardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InFocusGuardProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -209,7 +212,8 @@ object interfacesMod {
       __obj.asInstanceOf[ReactFocusLockProps[ChildrenType, LockProps]]
     }
     
-    extension [Self <: ReactFocusLockProps[?, ?], ChildrenType, LockProps](x: Self & (ReactFocusLockProps[ChildrenType, LockProps])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactFocusLockProps[?, ?], ChildrenType, LockProps] (val x: Self & (ReactFocusLockProps[ChildrenType, LockProps])) extends AnyVal {
       
       inline def setAllowTextSelection(value: Boolean): Self = StObject.set(x, "allowTextSelection", value.asInstanceOf[js.Any])
       

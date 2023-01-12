@@ -24,7 +24,8 @@ object IndicesSimulateTemplateTemplate {
     __obj.asInstanceOf[IndicesSimulateTemplateTemplate]
   }
   
-  extension [Self <: IndicesSimulateTemplateTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesSimulateTemplateTemplate] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: Record[IndexName, IndicesAlias]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     

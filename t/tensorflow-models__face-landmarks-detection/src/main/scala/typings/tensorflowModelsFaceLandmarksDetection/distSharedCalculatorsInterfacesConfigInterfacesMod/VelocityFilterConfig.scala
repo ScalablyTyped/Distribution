@@ -21,7 +21,8 @@ object VelocityFilterConfig {
     __obj.asInstanceOf[VelocityFilterConfig]
   }
   
-  extension [Self <: VelocityFilterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VelocityFilterConfig] (val x: Self) extends AnyVal {
     
     inline def setDisableValueScaling(value: Boolean): Self = StObject.set(x, "disableValueScaling", value.asInstanceOf[js.Any])
     

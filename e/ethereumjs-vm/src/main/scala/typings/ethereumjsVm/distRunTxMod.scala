@@ -45,7 +45,8 @@ object distRunTxMod {
       __obj.asInstanceOf[RunTxOpts]
     }
     
-    extension [Self <: RunTxOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunTxOpts] (val x: Self) extends AnyVal {
       
       inline def setBlock(value: Any): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object distRunTxMod {
       __obj.asInstanceOf[RunTxResult]
     }
     
-    extension [Self <: RunTxResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunTxResult] (val x: Self) extends AnyVal {
       
       inline def setAmountSpent(value: typings.bnJs.mod.^): Self = StObject.set(x, "amountSpent", value.asInstanceOf[js.Any])
       

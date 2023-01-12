@@ -63,7 +63,8 @@ object typesMod {
       __obj.asInstanceOf[MDCSliderChangeEventDetail]
     }
     
-    extension [Self <: MDCSliderChangeEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCSliderChangeEventDetail] (val x: Self) extends AnyVal {
       
       inline def setThumb(value: Thumb): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
       

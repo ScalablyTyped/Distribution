@@ -66,7 +66,8 @@ object NDStreamParserNotifier {
     __obj.asInstanceOf[NDStreamParserNotifier]
   }
   
-  extension [Self <: NDStreamParserNotifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NDStreamParserNotifier] (val x: Self) extends AnyVal {
     
     inline def setOnBeginSetupDecryptor(value: (IMediaStreamDescriptor, String, js.Array[Double]) => Unit): Self = StObject.set(x, "onBeginSetupDecryptor", js.Any.fromFunction3(value))
     

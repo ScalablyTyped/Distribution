@@ -23,7 +23,8 @@ object ColumnChooserButtonResetClickEventUIParam {
     __obj.asInstanceOf[ColumnChooserButtonResetClickEventUIParam]
   }
   
-  extension [Self <: ColumnChooserButtonResetClickEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnChooserButtonResetClickEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setColumnChooserElement(value: String): Self = StObject.set(x, "columnChooserElement", value.asInstanceOf[js.Any])
     

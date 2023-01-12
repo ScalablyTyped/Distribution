@@ -34,7 +34,8 @@ object SearchDegreeCentralityNormalizedOptions {
     __obj.asInstanceOf[SearchDegreeCentralityNormalizedOptions]
   }
   
-  extension [Self <: SearchDegreeCentralityNormalizedOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchDegreeCentralityNormalizedOptions] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Parameters]
     }
     
-    extension [Self <: Parameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parameters] (val x: Self) extends AnyVal {
       
       inline def setParameters(value: js.Array[Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[Pickanyscaleprecision]
     }
     
-    extension [Self <: Pickanyscaleprecision](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pickanyscaleprecision] (val x: Self) extends AnyVal {
       
       inline def setPrecision(value: Any): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       

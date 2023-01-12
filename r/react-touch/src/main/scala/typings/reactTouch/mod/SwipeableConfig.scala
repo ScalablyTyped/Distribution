@@ -26,7 +26,8 @@ object SwipeableConfig {
     __obj.asInstanceOf[SwipeableConfig]
   }
   
-  extension [Self <: SwipeableConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwipeableConfig] (val x: Self) extends AnyVal {
     
     inline def setOnSwipeDown(value: (Double, Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "onSwipeDown", js.Any.fromFunction3(value))
     

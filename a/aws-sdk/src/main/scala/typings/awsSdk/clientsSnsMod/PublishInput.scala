@@ -58,7 +58,8 @@ object PublishInput {
     __obj.asInstanceOf[PublishInput]
   }
   
-  extension [Self <: PublishInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublishInput] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

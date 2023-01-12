@@ -18,7 +18,8 @@ object GetStackPolicyOutput {
     __obj.asInstanceOf[GetStackPolicyOutput]
   }
   
-  extension [Self <: GetStackPolicyOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStackPolicyOutput] (val x: Self) extends AnyVal {
     
     inline def setStackPolicyBody(value: StackPolicyBody): Self = StObject.set(x, "StackPolicyBody", value.asInstanceOf[js.Any])
     

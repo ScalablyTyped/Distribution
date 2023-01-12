@@ -78,7 +78,8 @@ object Core {
       __obj.asInstanceOf[SearchSuggestion]
     }
     
-    extension [Self <: SearchSuggestion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchSuggestion] (val x: Self) extends AnyVal {
       
       inline def setDetailText(value: String): Self = StObject.set(x, "detailText", value.asInstanceOf[js.Any])
       
@@ -211,7 +212,8 @@ object Core {
       __obj.asInstanceOf[SearchSuggestionsRequestedEventArgs]
     }
     
-    extension [Self <: SearchSuggestionsRequestedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchSuggestionsRequestedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       

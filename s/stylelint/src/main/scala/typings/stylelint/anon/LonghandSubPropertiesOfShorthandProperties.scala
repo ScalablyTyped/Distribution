@@ -17,7 +17,8 @@ object LonghandSubPropertiesOfShorthandProperties {
     __obj.asInstanceOf[LonghandSubPropertiesOfShorthandProperties]
   }
   
-  extension [Self <: LonghandSubPropertiesOfShorthandProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LonghandSubPropertiesOfShorthandProperties] (val x: Self) extends AnyVal {
     
     inline def setLonghandSubPropertiesOfShorthandProperties(value: typings.stylelint.mod.LonghandSubPropertiesOfShorthandProperties): Self = StObject.set(x, "longhandSubPropertiesOfShorthandProperties", value.asInstanceOf[js.Any])
   }

@@ -27,7 +27,8 @@ object ResponsivePanelOptions {
     __obj.asInstanceOf[ResponsivePanelOptions]
   }
   
-  extension [Self <: ResponsivePanelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponsivePanelOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
     

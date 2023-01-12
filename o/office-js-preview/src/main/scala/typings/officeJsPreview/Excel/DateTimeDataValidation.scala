@@ -58,7 +58,8 @@ object DateTimeDataValidation {
     __obj.asInstanceOf[DateTimeDataValidation]
   }
   
-  extension [Self <: DateTimeDataValidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTimeDataValidation] (val x: Self) extends AnyVal {
     
     inline def setFormula1(value: String | js.Date | Range): Self = StObject.set(x, "formula1", value.asInstanceOf[js.Any])
     

@@ -246,7 +246,8 @@ object sapFGridListItemMod {
       __obj.asInstanceOf[GridListItemSettings]
     }
     
-    extension [Self <: GridListItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridListItemSettings] (val x: Self) extends AnyVal {
       
       inline def setContent(
         value: js.Array[typings.openui5.sapUiCoreControlMod.default] | typings.openui5.sapUiCoreControlMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

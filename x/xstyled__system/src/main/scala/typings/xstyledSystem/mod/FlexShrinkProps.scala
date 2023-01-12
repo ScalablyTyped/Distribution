@@ -16,7 +16,8 @@ object FlexShrinkProps {
     __obj.asInstanceOf[FlexShrinkProps]
   }
   
-  extension [Self <: FlexShrinkProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexShrinkProps] (val x: Self) extends AnyVal {
     
     inline def setFlexShrink(value: ResponsiveValue[FlexShrink]): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object srcUtilitiesPackageMetadataMod {
       __obj.asInstanceOf[NgPackageManifestProperties]
     }
     
-    extension [Self <: NgPackageManifestProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NgPackageManifestProperties] (val x: Self) extends AnyVal {
       
       inline def `setNg-add`(value: Save): Self = StObject.set(x, "ng-add", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object srcUtilitiesPackageMetadataMod {
       __obj.asInstanceOf[NpmRepositoryPackageJson]
     }
     
-    extension [Self <: NpmRepositoryPackageJson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NpmRepositoryPackageJson] (val x: Self) extends AnyVal {
       
       inline def setRequestedName(value: String): Self = StObject.set(x, "requestedName", value.asInstanceOf[js.Any])
       
@@ -130,7 +132,8 @@ object srcUtilitiesPackageMetadataMod {
       __obj.asInstanceOf[PackageIdentifier]
     }
     
-    extension [Self <: PackageIdentifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageIdentifier] (val x: Self) extends AnyVal {
       
       inline def setFetchSpec(value: String): Self = StObject.set(x, "fetchSpec", value.asInstanceOf[js.Any])
       
@@ -173,7 +176,8 @@ object srcUtilitiesPackageMetadataMod {
       __obj.asInstanceOf[PackageManifest]
     }
     
-    extension [Self <: PackageManifest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageManifest] (val x: Self) extends AnyVal {
       
       inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
       
@@ -206,7 +210,8 @@ object srcUtilitiesPackageMetadataMod {
       __obj.asInstanceOf[PackageMetadata]
     }
     
-    extension [Self <: PackageMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageMetadata] (val x: Self) extends AnyVal {
       
       inline def setTags(value: Record[String, PackageManifest]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       

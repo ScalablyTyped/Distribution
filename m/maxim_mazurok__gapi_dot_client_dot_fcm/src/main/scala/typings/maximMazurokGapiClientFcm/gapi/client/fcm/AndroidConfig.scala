@@ -50,7 +50,8 @@ object AndroidConfig {
     __obj.asInstanceOf[AndroidConfig]
   }
   
-  extension [Self <: AndroidConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidConfig] (val x: Self) extends AnyVal {
     
     inline def setCollapseKey(value: String): Self = StObject.set(x, "collapseKey", value.asInstanceOf[js.Any])
     

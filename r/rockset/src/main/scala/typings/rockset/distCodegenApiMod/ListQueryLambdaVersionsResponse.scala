@@ -20,7 +20,8 @@ object ListQueryLambdaVersionsResponse {
     __obj.asInstanceOf[ListQueryLambdaVersionsResponse]
   }
   
-  extension [Self <: ListQueryLambdaVersionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListQueryLambdaVersionsResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[QueryLambdaVersion]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

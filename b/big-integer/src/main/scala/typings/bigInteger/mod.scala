@@ -25,7 +25,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BaseArray]
     }
     
-    extension [Self <: BaseArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseArray] (val x: Self) extends AnyVal {
       
       inline def setIsNegative(value: Boolean): Self = StObject.set(x, "isNegative", value.asInstanceOf[js.Any])
       

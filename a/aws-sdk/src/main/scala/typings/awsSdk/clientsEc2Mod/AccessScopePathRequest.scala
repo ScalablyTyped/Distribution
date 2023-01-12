@@ -28,7 +28,8 @@ object AccessScopePathRequest {
     __obj.asInstanceOf[AccessScopePathRequest]
   }
   
-  extension [Self <: AccessScopePathRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessScopePathRequest] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: PathStatementRequest): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     

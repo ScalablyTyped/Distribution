@@ -23,7 +23,8 @@ object RequestBodyContentApplicationjsonDismissedreason {
     __obj.asInstanceOf[RequestBodyContentApplicationjsonDismissedreason]
   }
   
-  extension [Self <: RequestBodyContentApplicationjsonDismissedreason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonDismissedreason] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathAlertnumberOwner): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

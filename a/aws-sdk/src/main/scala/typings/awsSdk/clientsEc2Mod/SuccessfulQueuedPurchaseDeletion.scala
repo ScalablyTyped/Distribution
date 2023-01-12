@@ -18,7 +18,8 @@ object SuccessfulQueuedPurchaseDeletion {
     __obj.asInstanceOf[SuccessfulQueuedPurchaseDeletion]
   }
   
-  extension [Self <: SuccessfulQueuedPurchaseDeletion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuccessfulQueuedPurchaseDeletion] (val x: Self) extends AnyVal {
     
     inline def setReservedInstancesId(value: String): Self = StObject.set(x, "ReservedInstancesId", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object IComputedEditorOptions {
     __obj.asInstanceOf[IComputedEditorOptions]
   }
   
-  extension [Self <: IComputedEditorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IComputedEditorOptions] (val x: Self) extends AnyVal {
     
     inline def setGet(value: Any => FindComputedEditorOptionValueById[Any]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }

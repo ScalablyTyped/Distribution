@@ -32,7 +32,8 @@ object libComponentsFileUploaderFilenameMod extends Shortcut {
       __obj.asInstanceOf[FilenameIconProps]
     }
     
-    extension [Self <: FilenameIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilenameIconProps] (val x: Self) extends AnyVal {
       
       inline def setIconDescription(value: String): Self = StObject.set(x, "iconDescription", value.asInstanceOf[js.Any])
       

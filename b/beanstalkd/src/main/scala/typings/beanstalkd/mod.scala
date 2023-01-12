@@ -88,7 +88,8 @@ object mod {
       __obj.asInstanceOf[BasicReader]
     }
     
-    extension [Self <: BasicReader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicReader] (val x: Self) extends AnyVal {
       
       inline def setHandle(
         value: (BeanstalkdProtocol, Any, js.Function1[/* data */ js.UndefOr[Any], Unit], js.Function1[/* err */ js.UndefOr[Any], Any]) => Buffer
@@ -111,7 +112,8 @@ object mod {
       __obj.asInstanceOf[BasicWriter]
     }
     
-    extension [Self <: BasicWriter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicWriter] (val x: Self) extends AnyVal {
       
       inline def setHandle(value: (BeanstalkdProtocol, Socket, /* repeated */ Any) => js.Promise[Any]): Self = StObject.set(x, "handle", js.Any.fromFunction3(value))
     }
@@ -152,7 +154,8 @@ object mod {
       __obj.asInstanceOf[BeanstalkdCaller]
     }
     
-    extension [Self <: BeanstalkdCaller](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeanstalkdCaller] (val x: Self) extends AnyVal {
       
       inline def setCall(
         value: (Any, ArgsType[
@@ -548,7 +551,8 @@ object mod {
       __obj.asInstanceOf[BeanstalkdJobStats]
     }
     
-    extension [Self <: BeanstalkdJobStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeanstalkdJobStats] (val x: Self) extends AnyVal {
       
       inline def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
       
@@ -626,7 +630,8 @@ object mod {
       __obj.asInstanceOf[BeanstalkdProtocol]
     }
     
-    extension [Self <: BeanstalkdProtocol](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeanstalkdProtocol] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: (String, String) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
@@ -669,7 +674,8 @@ object mod {
       __obj.asInstanceOf[BeanstalkdProtocolCommand]
     }
     
-    extension [Self <: BeanstalkdProtocolCommand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeanstalkdProtocolCommand] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -692,7 +698,8 @@ object mod {
       __obj.asInstanceOf[BeanstalkdProtocolReply]
     }
     
-    extension [Self <: BeanstalkdProtocolReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeanstalkdProtocolReply] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -949,7 +956,8 @@ object mod {
       __obj.asInstanceOf[BeanstalkdStats]
     }
     
-    extension [Self <: BeanstalkdStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeanstalkdStats] (val x: Self) extends AnyVal {
       
       inline def `setBinlog-current-index`(value: Double): Self = StObject.set(x, "binlog-current-index", value.asInstanceOf[js.Any])
       
@@ -1129,7 +1137,8 @@ object mod {
       __obj.asInstanceOf[BeanstalkdTubeStats]
     }
     
-    extension [Self <: BeanstalkdTubeStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeanstalkdTubeStats] (val x: Self) extends AnyVal {
       
       inline def `setCmd-delete`(value: Double): Self = StObject.set(x, "cmd-delete", value.asInstanceOf[js.Any])
       
@@ -1185,7 +1194,8 @@ object mod {
       __obj.asInstanceOf[Writer]
     }
     
-    extension [Self <: Writer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Writer] (val x: Self) extends AnyVal {
       
       inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     }

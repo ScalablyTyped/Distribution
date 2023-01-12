@@ -52,7 +52,8 @@ object GetPostPut {
     __obj.asInstanceOf[GetPostPut]
   }
   
-  extension [Self <: GetPostPut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPostPut] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: ParametersPathOwnerRepoResponses66): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     

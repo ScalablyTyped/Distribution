@@ -131,7 +131,8 @@ object distSrcContentFetchingMod {
       __obj.asInstanceOf[ContentFetchingInit]
     }
     
-    extension [Self <: ContentFetchingInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentFetchingInit] (val x: Self) extends AnyVal {
       
       inline def setLan(value: Boolean): Self = StObject.set(x, "lan", value.asInstanceOf[js.Any])
       

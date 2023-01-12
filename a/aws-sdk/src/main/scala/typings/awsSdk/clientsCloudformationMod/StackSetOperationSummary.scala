@@ -50,7 +50,8 @@ object StackSetOperationSummary {
     __obj.asInstanceOf[StackSetOperationSummary]
   }
   
-  extension [Self <: StackSetOperationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackSetOperationSummary] (val x: Self) extends AnyVal {
     
     inline def setAction(value: StackSetOperationAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

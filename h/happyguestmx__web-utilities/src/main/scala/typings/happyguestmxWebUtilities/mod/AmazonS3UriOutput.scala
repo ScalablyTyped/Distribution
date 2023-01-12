@@ -19,7 +19,8 @@ object AmazonS3UriOutput {
     __obj.asInstanceOf[AmazonS3UriOutput]
   }
   
-  extension [Self <: AmazonS3UriOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmazonS3UriOutput] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     

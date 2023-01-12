@@ -68,7 +68,8 @@ object ObservationDefinitionQualifiedInterval {
     __obj.asInstanceOf[ObservationDefinitionQualifiedInterval]
   }
   
-  extension [Self <: ObservationDefinitionQualifiedInterval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObservationDefinitionQualifiedInterval] (val x: Self) extends AnyVal {
     
     inline def setAge(value: Range): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object ExchangesAllParams {
     __obj.asInstanceOf[ExchangesAllParams]
   }
   
-  extension [Self <: ExchangesAllParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExchangesAllParams] (val x: Self) extends AnyVal {
     
     inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     

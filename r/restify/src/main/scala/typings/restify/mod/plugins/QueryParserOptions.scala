@@ -59,7 +59,8 @@ object QueryParserOptions {
     __obj.asInstanceOf[QueryParserOptions]
   }
   
-  extension [Self <: QueryParserOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryParserOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowDots(value: Boolean): Self = StObject.set(x, "allowDots", value.asInstanceOf[js.Any])
     

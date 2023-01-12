@@ -157,7 +157,8 @@ object mod {
       __obj.asInstanceOf[RunServerOptions]
     }
     
-    extension [Self <: RunServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunServerOptions] (val x: Self) extends AnyVal {
       
       inline def setHasReducedPerformance(value: Boolean): Self = StObject.set(x, "hasReducedPerformance", value.asInstanceOf[js.Any])
       

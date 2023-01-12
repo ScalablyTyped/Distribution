@@ -19,7 +19,8 @@ object ParametersPathRepoSha {
     __obj.asInstanceOf[ParametersPathRepoSha]
   }
   
-  extension [Self <: ParametersPathRepoSha](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersPathRepoSha] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathRepoSha): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

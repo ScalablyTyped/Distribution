@@ -23,7 +23,8 @@ object PlotIkhSenkouSpanAStylesOptions {
     __obj.asInstanceOf[PlotIkhSenkouSpanAStylesOptions]
   }
   
-  extension [Self <: PlotIkhSenkouSpanAStylesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotIkhSenkouSpanAStylesOptions] (val x: Self) extends AnyVal {
     
     inline def setLineColor(value: ColorString): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     

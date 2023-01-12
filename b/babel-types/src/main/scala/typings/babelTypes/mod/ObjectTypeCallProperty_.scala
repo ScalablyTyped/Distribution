@@ -24,7 +24,8 @@ object ObjectTypeCallProperty_ {
     __obj.asInstanceOf[ObjectTypeCallProperty_]
   }
   
-  extension [Self <: ObjectTypeCallProperty_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectTypeCallProperty_] (val x: Self) extends AnyVal {
     
     inline def setType(value: ObjectTypeCallProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object SessionOptions {
     __obj.asInstanceOf[SessionOptions]
   }
   
-  extension [Self <: SessionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowMultipleWindows(value: Boolean): Self = StObject.set(x, "allowMultipleWindows", value.asInstanceOf[js.Any])
     

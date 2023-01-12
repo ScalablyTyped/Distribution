@@ -21,7 +21,8 @@ object RemoveStorageParams {
     __obj.asInstanceOf[RemoveStorageParams]
   }
   
-  extension [Self <: RemoveStorageParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveStorageParams] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

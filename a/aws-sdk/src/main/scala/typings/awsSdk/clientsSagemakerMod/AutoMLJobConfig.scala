@@ -38,7 +38,8 @@ object AutoMLJobConfig {
     __obj.asInstanceOf[AutoMLJobConfig]
   }
   
-  extension [Self <: AutoMLJobConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoMLJobConfig] (val x: Self) extends AnyVal {
     
     inline def setCandidateGenerationConfig(value: AutoMLCandidateGenerationConfig): Self = StObject.set(x, "CandidateGenerationConfig", value.asInstanceOf[js.Any])
     

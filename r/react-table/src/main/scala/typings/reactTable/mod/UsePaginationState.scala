@@ -17,7 +17,8 @@ object UsePaginationState {
     __obj.asInstanceOf[UsePaginationState[D]]
   }
   
-  extension [Self <: UsePaginationState[?], D /* <: js.Object */](x: Self & UsePaginationState[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsePaginationState[?], D /* <: js.Object */] (val x: Self & UsePaginationState[D]) extends AnyVal {
     
     inline def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[HeaderProps]
     }
     
-    extension [Self <: HeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderProps] (val x: Self) extends AnyVal {
       
       inline def setHeaderNumberOfLines(value: Double): Self = StObject.set(x, "headerNumberOfLines", value.asInstanceOf[js.Any])
       
@@ -201,7 +202,8 @@ object mod {
       __obj.asInstanceOf[ItemProps]
     }
     
-    extension [Self <: ItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemProps] (val x: Self) extends AnyVal {
       
       inline def setArrowIcon(value: ReactNode): Self = StObject.set(x, "arrowIcon", value.asInstanceOf[js.Any])
       
@@ -379,7 +381,8 @@ object mod {
       __obj.asInstanceOf[SettingsListProps]
     }
     
-    extension [Self <: SettingsListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SettingsListProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       

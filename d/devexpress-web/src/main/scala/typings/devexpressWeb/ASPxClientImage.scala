@@ -55,7 +55,8 @@ object ASPxClientImage {
     __obj.asInstanceOf[ASPxClientImage]
   }
   
-  extension [Self <: ASPxClientImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientImage] (val x: Self) extends AnyVal {
     
     inline def setGetImageUrl(value: () => String): Self = StObject.set(x, "GetImageUrl", js.Any.fromFunction0(value))
     

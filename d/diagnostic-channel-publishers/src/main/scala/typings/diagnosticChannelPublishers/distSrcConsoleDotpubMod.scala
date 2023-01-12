@@ -30,7 +30,8 @@ object distSrcConsoleDotpubMod {
       __obj.asInstanceOf[IConsoleData]
     }
     
-    extension [Self <: IConsoleData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConsoleData] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

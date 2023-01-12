@@ -49,7 +49,8 @@ object parsingParsedCellMod {
       __obj.asInstanceOf[ParsedCell]
     }
     
-    extension [Self <: ParsedCell](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedCell] (val x: Self) extends AnyVal {
       
       inline def set$cell(value: JQuery[HTMLElement]): Self = StObject.set(x, "$cell", value.asInstanceOf[js.Any])
       

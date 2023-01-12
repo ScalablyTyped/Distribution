@@ -28,7 +28,8 @@ object PredicateCondition {
     __obj.asInstanceOf[PredicateCondition]
   }
   
-  extension [Self <: PredicateCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredicateCondition] (val x: Self) extends AnyVal {
     
     inline def setPredicate(value: () => Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction0(value))
   }

@@ -22,7 +22,8 @@ object helpersTypesMod {
       __obj.asInstanceOf[BaseProviderOverrides]
     }
     
-    extension [Self <: BaseProviderOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseProviderOverrides] (val x: Self) extends AnyVal {
       
       inline def setAppContainer(value: Override[Any]): Self = StObject.set(x, "AppContainer", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object helpersTypesMod {
       __obj.asInstanceOf[BaseProviderProps]
     }
     
-    extension [Self <: BaseProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

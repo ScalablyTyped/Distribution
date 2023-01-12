@@ -20,7 +20,8 @@ object IListContextsResponse {
     __obj.asInstanceOf[IListContextsResponse]
   }
   
-  extension [Self <: IListContextsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IListContextsResponse] (val x: Self) extends AnyVal {
     
     inline def setContexts(value: js.Array[IContext]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
     

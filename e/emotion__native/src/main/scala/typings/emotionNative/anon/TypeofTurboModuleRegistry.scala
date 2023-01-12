@@ -18,7 +18,8 @@ object TypeofTurboModuleRegistry {
     __obj.asInstanceOf[TypeofTurboModuleRegistry]
   }
   
-  extension [Self <: TypeofTurboModuleRegistry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTurboModuleRegistry] (val x: Self) extends AnyVal {
     
     inline def setGet(value: String => Any | Null): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     

@@ -16,7 +16,8 @@ object ISqlType {
     __obj.asInstanceOf[ISqlType]
   }
   
-  extension [Self <: ISqlType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISqlType] (val x: Self) extends AnyVal {
     
     inline def setType(value: ISqlTypeFactory): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

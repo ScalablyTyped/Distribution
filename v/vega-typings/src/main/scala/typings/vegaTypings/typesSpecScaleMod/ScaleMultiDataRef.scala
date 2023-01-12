@@ -16,7 +16,8 @@ object ScaleMultiDataRef {
     __obj.asInstanceOf[ScaleMultiDataRef]
   }
   
-  extension [Self <: ScaleMultiDataRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleMultiDataRef] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[(js.Array[String | Double | Boolean]) | ScaleDataRef | SignalRef]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

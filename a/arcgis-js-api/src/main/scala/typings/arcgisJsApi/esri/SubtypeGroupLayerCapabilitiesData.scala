@@ -41,7 +41,8 @@ object SubtypeGroupLayerCapabilitiesData {
     __obj.asInstanceOf[SubtypeGroupLayerCapabilitiesData]
   }
   
-  extension [Self <: SubtypeGroupLayerCapabilitiesData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubtypeGroupLayerCapabilitiesData] (val x: Self) extends AnyVal {
     
     inline def setIsVersioned(value: Boolean): Self = StObject.set(x, "isVersioned", value.asInstanceOf[js.Any])
     

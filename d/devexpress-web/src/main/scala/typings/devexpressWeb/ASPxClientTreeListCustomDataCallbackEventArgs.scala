@@ -28,7 +28,8 @@ object ASPxClientTreeListCustomDataCallbackEventArgs {
     __obj.asInstanceOf[ASPxClientTreeListCustomDataCallbackEventArgs]
   }
   
-  extension [Self <: ASPxClientTreeListCustomDataCallbackEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTreeListCustomDataCallbackEventArgs] (val x: Self) extends AnyVal {
     
     inline def setArg(value: String): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
     

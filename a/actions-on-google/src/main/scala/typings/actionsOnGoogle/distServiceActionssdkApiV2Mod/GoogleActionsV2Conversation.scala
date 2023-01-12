@@ -32,7 +32,8 @@ object GoogleActionsV2Conversation {
     __obj.asInstanceOf[GoogleActionsV2Conversation]
   }
   
-  extension [Self <: GoogleActionsV2Conversation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2Conversation] (val x: Self) extends AnyVal {
     
     inline def setConversationId(value: String): Self = StObject.set(x, "conversationId", value.asInstanceOf[js.Any])
     

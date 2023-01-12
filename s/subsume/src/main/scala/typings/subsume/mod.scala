@@ -123,7 +123,8 @@ object mod {
       __obj.asInstanceOf[ParseResult]
     }
     
-    extension [Self <: ParseResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseResult] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -146,7 +147,8 @@ object mod {
       __obj.asInstanceOf[ParseResults]
     }
     
-    extension [Self <: ParseResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseResults] (val x: Self) extends AnyVal {
       
       inline def setData(value: Map[String, String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -201,7 +203,8 @@ object mod {
       __obj.asInstanceOf[Subsume]
     }
     
-    extension [Self <: Subsume](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subsume] (val x: Self) extends AnyVal {
       
       inline def setCompose(value: String => String): Self = StObject.set(x, "compose", js.Any.fromFunction1(value))
       

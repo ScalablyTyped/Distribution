@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[PageSettings]
     }
     
-    extension [Self <: PageSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageSettings] (val x: Self) extends AnyVal {
       
       inline def setContinuationToken(value: String): Self = StObject.set(x, "continuationToken", value.asInstanceOf[js.Any])
       

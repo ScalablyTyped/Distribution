@@ -18,7 +18,8 @@ object StandardsStatusReason {
     __obj.asInstanceOf[StandardsStatusReason]
   }
   
-  extension [Self <: StandardsStatusReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardsStatusReason] (val x: Self) extends AnyVal {
     
     inline def setStatusReasonCode(value: StatusReasonCode): Self = StObject.set(x, "StatusReasonCode", value.asInstanceOf[js.Any])
   }

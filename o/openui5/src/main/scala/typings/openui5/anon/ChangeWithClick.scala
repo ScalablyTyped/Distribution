@@ -29,7 +29,8 @@ object ChangeWithClick {
     __obj.asInstanceOf[ChangeWithClick]
   }
   
-  extension [Self <: ChangeWithClick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeWithClick] (val x: Self) extends AnyVal {
     
     inline def setChangeWithClick(value: Boolean): Self = StObject.set(x, "changeWithClick", value.asInstanceOf[js.Any])
     

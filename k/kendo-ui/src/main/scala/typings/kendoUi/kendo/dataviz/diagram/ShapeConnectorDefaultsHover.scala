@@ -17,7 +17,8 @@ object ShapeConnectorDefaultsHover {
     __obj.asInstanceOf[ShapeConnectorDefaultsHover]
   }
   
-  extension [Self <: ShapeConnectorDefaultsHover](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeConnectorDefaultsHover] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String | ShapeConnectorDefaultsHoverFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

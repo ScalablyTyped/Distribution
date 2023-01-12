@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsAdminAccessBoldMod extends Sho
       __obj.asInstanceOf[AdminAccessBoldProps]
     }
     
-    extension [Self <: AdminAccessBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdminAccessBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

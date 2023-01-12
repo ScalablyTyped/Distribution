@@ -39,7 +39,8 @@ object BinaryFileConfig {
     __obj.asInstanceOf[BinaryFileConfig]
   }
   
-  extension [Self <: BinaryFileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinaryFileConfig] (val x: Self) extends AnyVal {
     
     inline def setDataType(value: Any): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     

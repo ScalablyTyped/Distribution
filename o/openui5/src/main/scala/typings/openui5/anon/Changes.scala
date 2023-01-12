@@ -27,7 +27,8 @@ object Changes {
     __obj.asInstanceOf[Changes]
   }
   
-  extension [Self <: Changes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Changes] (val x: Self) extends AnyVal {
     
     inline def setChanges(value: js.Object): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     

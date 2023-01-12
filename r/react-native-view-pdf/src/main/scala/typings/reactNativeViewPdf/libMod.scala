@@ -174,7 +174,8 @@ object libMod {
       __obj.asInstanceOf[PDFViewProps]
     }
     
-    extension [Self <: PDFViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PDFViewProps] (val x: Self) extends AnyVal {
       
       inline def setEnableAnnotations(value: Boolean): Self = StObject.set(x, "enableAnnotations", value.asInstanceOf[js.Any])
       
@@ -253,7 +254,8 @@ object libMod {
       __obj.asInstanceOf[PDFViewUrlProps]
     }
     
-    extension [Self <: PDFViewUrlProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PDFViewUrlProps] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -296,7 +298,8 @@ object libMod {
       __obj.asInstanceOf[UrlPropsType]
     }
     
-    extension [Self <: UrlPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlPropsType] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

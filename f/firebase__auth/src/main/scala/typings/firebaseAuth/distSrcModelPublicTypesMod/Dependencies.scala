@@ -37,7 +37,8 @@ object Dependencies {
     __obj.asInstanceOf[Dependencies]
   }
   
-  extension [Self <: Dependencies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dependencies] (val x: Self) extends AnyVal {
     
     inline def setErrorMap(value: AuthErrorMap): Self = StObject.set(x, "errorMap", value.asInstanceOf[js.Any])
     

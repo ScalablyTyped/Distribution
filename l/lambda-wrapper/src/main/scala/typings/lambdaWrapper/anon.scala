@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Handler[THandlerName]]
     }
     
-    extension [Self <: Handler[?], THandlerName /* <: String */](x: Self & Handler[THandlerName]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Handler[?], THandlerName /* <: String */] (val x: Self & Handler[THandlerName]) extends AnyVal {
       
       inline def setHandler(value: THandlerName): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[LambdaFunction]
     }
     
-    extension [Self <: LambdaFunction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LambdaFunction] (val x: Self) extends AnyVal {
       
       inline def setLambdaFunction(value: String): Self = StObject.set(x, "lambdaFunction", value.asInstanceOf[js.Any])
       
@@ -86,7 +88,8 @@ object anon {
       __obj.asInstanceOf[PartialContext]
     }
     
-    extension [Self <: PartialContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialContext] (val x: Self) extends AnyVal {
       
       inline def setAwsRequestId(value: String): Self = StObject.set(x, "awsRequestId", value.asInstanceOf[js.Any])
       

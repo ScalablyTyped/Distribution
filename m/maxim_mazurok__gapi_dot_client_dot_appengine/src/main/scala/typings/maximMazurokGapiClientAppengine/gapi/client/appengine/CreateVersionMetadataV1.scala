@@ -16,7 +16,8 @@ object CreateVersionMetadataV1 {
     __obj.asInstanceOf[CreateVersionMetadataV1]
   }
   
-  extension [Self <: CreateVersionMetadataV1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVersionMetadataV1] (val x: Self) extends AnyVal {
     
     inline def setCloudBuildId(value: String): Self = StObject.set(x, "cloudBuildId", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object IntegrationAddHandlers {
     __obj.asInstanceOf[IntegrationAddHandlers]
   }
   
-  extension [Self <: IntegrationAddHandlers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegrationAddHandlers] (val x: Self) extends AnyVal {
     
     inline def setConflictHandler(value: (/* f */ String, /* stats */ Stats) => js.Promise[Boolean]): Self = StObject.set(x, "conflictHandler", js.Any.fromFunction2(value))
     

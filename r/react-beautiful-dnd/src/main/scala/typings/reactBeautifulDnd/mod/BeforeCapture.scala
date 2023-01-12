@@ -17,7 +17,8 @@ object BeforeCapture {
     __obj.asInstanceOf[BeforeCapture]
   }
   
-  extension [Self <: BeforeCapture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeforeCapture] (val x: Self) extends AnyVal {
     
     inline def setDraggableId(value: DraggableId): Self = StObject.set(x, "draggableId", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object HparamTuningTrial {
     __obj.asInstanceOf[HparamTuningTrial]
   }
   
-  extension [Self <: HparamTuningTrial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HparamTuningTrial] (val x: Self) extends AnyVal {
     
     inline def setEndTimeMs(value: String): Self = StObject.set(x, "endTimeMs", value.asInstanceOf[js.Any])
     

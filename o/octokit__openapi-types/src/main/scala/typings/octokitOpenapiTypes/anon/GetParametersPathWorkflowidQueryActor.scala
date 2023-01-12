@@ -20,7 +20,8 @@ object GetParametersPathWorkflowidQueryActor {
     __obj.asInstanceOf[GetParametersPathWorkflowidQueryActor]
   }
   
-  extension [Self <: GetParametersPathWorkflowidQueryActor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersPathWorkflowidQueryActor] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersPathWorkflowidQueryActor): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }

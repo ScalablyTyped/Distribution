@@ -24,7 +24,8 @@ object libModelsOpenIDConnectMod {
       __obj.asInstanceOf[OpenIDConnectToken]
     }
     
-    extension [Self <: OpenIDConnectToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenIDConnectToken] (val x: Self) extends AnyVal {
       
       inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       

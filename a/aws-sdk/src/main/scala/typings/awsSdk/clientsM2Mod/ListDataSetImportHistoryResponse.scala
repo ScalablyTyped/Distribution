@@ -23,7 +23,8 @@ object ListDataSetImportHistoryResponse {
     __obj.asInstanceOf[ListDataSetImportHistoryResponse]
   }
   
-  extension [Self <: ListDataSetImportHistoryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDataSetImportHistoryResponse] (val x: Self) extends AnyVal {
     
     inline def setDataSetImportTasks(value: DataSetImportTaskList): Self = StObject.set(x, "dataSetImportTasks", value.asInstanceOf[js.Any])
     

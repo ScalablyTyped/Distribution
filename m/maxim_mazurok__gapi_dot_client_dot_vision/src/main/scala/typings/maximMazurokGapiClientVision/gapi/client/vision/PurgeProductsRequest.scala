@@ -22,7 +22,8 @@ object PurgeProductsRequest {
     __obj.asInstanceOf[PurgeProductsRequest]
   }
   
-  extension [Self <: PurgeProductsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PurgeProductsRequest] (val x: Self) extends AnyVal {
     
     inline def setDeleteOrphanProducts(value: Boolean): Self = StObject.set(x, "deleteOrphanProducts", value.asInstanceOf[js.Any])
     

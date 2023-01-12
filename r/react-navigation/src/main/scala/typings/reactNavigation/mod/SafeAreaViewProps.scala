@@ -19,7 +19,8 @@ object SafeAreaViewProps {
     __obj.asInstanceOf[SafeAreaViewProps]
   }
   
-  extension [Self <: SafeAreaViewProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SafeAreaViewProps] (val x: Self) extends AnyVal {
     
     inline def setForceInset(value: Bottom): Self = StObject.set(x, "forceInset", value.asInstanceOf[js.Any])
     

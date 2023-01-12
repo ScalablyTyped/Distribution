@@ -253,7 +253,8 @@ object mod {
       __obj.asInstanceOf[JwtHeaderOptions]
     }
     
-    extension [Self <: JwtHeaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JwtHeaderOptions] (val x: Self) extends AnyVal {
       
       inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       

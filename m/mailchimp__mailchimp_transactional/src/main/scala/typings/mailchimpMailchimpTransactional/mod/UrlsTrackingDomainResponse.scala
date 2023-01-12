@@ -34,7 +34,8 @@ object UrlsTrackingDomainResponse {
     __obj.asInstanceOf[UrlsTrackingDomainResponse]
   }
   
-  extension [Self <: UrlsTrackingDomainResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlsTrackingDomainResponse] (val x: Self) extends AnyVal {
     
     inline def setCname(value: UrlsTrackingDomainsCname): Self = StObject.set(x, "cname", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object UpdateFleetPortSettingsInput {
     __obj.asInstanceOf[UpdateFleetPortSettingsInput]
   }
   
-  extension [Self <: UpdateFleetPortSettingsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFleetPortSettingsInput] (val x: Self) extends AnyVal {
     
     inline def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     

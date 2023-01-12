@@ -18,7 +18,8 @@ object CreatePresignedDomainUrlResponse {
     __obj.asInstanceOf[CreatePresignedDomainUrlResponse]
   }
   
-  extension [Self <: CreatePresignedDomainUrlResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePresignedDomainUrlResponse] (val x: Self) extends AnyVal {
     
     inline def setAuthorizedUrl(value: PresignedDomainUrl): Self = StObject.set(x, "AuthorizedUrl", value.asInstanceOf[js.Any])
     

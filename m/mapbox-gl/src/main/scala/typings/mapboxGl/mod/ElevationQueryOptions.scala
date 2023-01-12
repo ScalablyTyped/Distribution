@@ -15,7 +15,8 @@ object ElevationQueryOptions {
     __obj.asInstanceOf[ElevationQueryOptions]
   }
   
-  extension [Self <: ElevationQueryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElevationQueryOptions] (val x: Self) extends AnyVal {
     
     inline def setExaggerated(value: Boolean): Self = StObject.set(x, "exaggerated", value.asInstanceOf[js.Any])
   }

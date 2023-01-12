@@ -21,7 +21,8 @@ object EBMLStringValueTagSchema {
     __obj.asInstanceOf[EBMLStringValueTagSchema]
   }
   
-  extension [Self <: EBMLStringValueTagSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EBMLStringValueTagSchema] (val x: Self) extends AnyVal {
     
     inline def setType(value: s): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

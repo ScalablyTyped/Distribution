@@ -17,7 +17,8 @@ object SourceBucketName {
     __obj.asInstanceOf[SourceBucketName]
   }
   
-  extension [Self <: SourceBucketName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceBucketName] (val x: Self) extends AnyVal {
     
     inline def setSourceBucketName(value: String): Self = StObject.set(x, "sourceBucketName", value.asInstanceOf[js.Any])
     

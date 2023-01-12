@@ -28,7 +28,8 @@ object Assigner {
     __obj.asInstanceOf[Assigner]
   }
   
-  extension [Self <: Assigner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Assigner] (val x: Self) extends AnyVal {
     
     inline def setAssign(value: Members => js.Promise[js.Array[GroupMemberAssignment]]): Self = StObject.set(x, "assign", js.Any.fromFunction1(value))
     

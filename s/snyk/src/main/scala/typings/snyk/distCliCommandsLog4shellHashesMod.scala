@@ -24,7 +24,8 @@ object distCliCommandsLog4shellHashesMod {
       __obj.asInstanceOf[FileSignatureDetails]
     }
     
-    extension [Self <: FileSignatureDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSignatureDetails] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       

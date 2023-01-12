@@ -18,7 +18,8 @@ object CommonArgs {
     __obj.asInstanceOf[CommonArgs]
   }
   
-  extension [Self <: CommonArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonArgs] (val x: Self) extends AnyVal {
     
     inline def setAxios(value: Record[String, Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
     

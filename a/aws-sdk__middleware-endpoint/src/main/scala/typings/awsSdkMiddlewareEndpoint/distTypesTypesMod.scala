@@ -25,7 +25,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[BuiltInParamInstruction]
     }
     
-    extension [Self <: BuiltInParamInstruction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuiltInParamInstruction] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ClientContextParamInstruction]
     }
     
-    extension [Self <: ClientContextParamInstruction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientContextParamInstruction] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ContextParamInstruction]
     }
     
-    extension [Self <: ContextParamInstruction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextParamInstruction] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -95,7 +98,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[StaticContextParamInstruction]
     }
     
-    extension [Self <: StaticContextParamInstruction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticContextParamInstruction] (val x: Self) extends AnyVal {
       
       inline def setType(value: staticContextParams): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

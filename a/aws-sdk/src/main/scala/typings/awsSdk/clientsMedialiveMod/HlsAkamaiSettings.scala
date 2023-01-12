@@ -48,7 +48,8 @@ object HlsAkamaiSettings {
     __obj.asInstanceOf[HlsAkamaiSettings]
   }
   
-  extension [Self <: HlsAkamaiSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsAkamaiSettings] (val x: Self) extends AnyVal {
     
     inline def setConnectionRetryInterval(value: integerMin0): Self = StObject.set(x, "ConnectionRetryInterval", value.asInstanceOf[js.Any])
     

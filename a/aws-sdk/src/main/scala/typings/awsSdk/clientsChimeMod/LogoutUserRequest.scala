@@ -23,7 +23,8 @@ object LogoutUserRequest {
     __obj.asInstanceOf[LogoutUserRequest]
   }
   
-  extension [Self <: LogoutUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogoutUserRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

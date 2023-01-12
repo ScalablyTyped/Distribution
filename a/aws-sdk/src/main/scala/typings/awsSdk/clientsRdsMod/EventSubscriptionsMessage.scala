@@ -23,7 +23,8 @@ object EventSubscriptionsMessage {
     __obj.asInstanceOf[EventSubscriptionsMessage]
   }
   
-  extension [Self <: EventSubscriptionsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventSubscriptionsMessage] (val x: Self) extends AnyVal {
     
     inline def setEventSubscriptionsList(value: EventSubscriptionsList): Self = StObject.set(x, "EventSubscriptionsList", value.asInstanceOf[js.Any])
     

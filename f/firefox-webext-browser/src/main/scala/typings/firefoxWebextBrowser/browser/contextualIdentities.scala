@@ -49,7 +49,8 @@ object contextualIdentities {
       __obj.asInstanceOf[ContextualIdentity]
     }
     
-    extension [Self <: ContextualIdentity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextualIdentity] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object contextualIdentities {
       __obj.asInstanceOf[CreateDetails]
     }
     
-    extension [Self <: CreateDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateDetails] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,8 @@ object contextualIdentities {
       __obj.asInstanceOf[OnCreatedChangeInfo]
     }
     
-    extension [Self <: OnCreatedChangeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnCreatedChangeInfo] (val x: Self) extends AnyVal {
       
       inline def setContextualIdentity(value: ContextualIdentity): Self = StObject.set(x, "contextualIdentity", value.asInstanceOf[js.Any])
     }
@@ -124,7 +127,8 @@ object contextualIdentities {
       __obj.asInstanceOf[OnRemovedChangeInfo]
     }
     
-    extension [Self <: OnRemovedChangeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnRemovedChangeInfo] (val x: Self) extends AnyVal {
       
       inline def setContextualIdentity(value: ContextualIdentity): Self = StObject.set(x, "contextualIdentity", value.asInstanceOf[js.Any])
     }
@@ -142,7 +146,8 @@ object contextualIdentities {
       __obj.asInstanceOf[OnUpdatedChangeInfo]
     }
     
-    extension [Self <: OnUpdatedChangeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnUpdatedChangeInfo] (val x: Self) extends AnyVal {
       
       inline def setContextualIdentity(value: ContextualIdentity): Self = StObject.set(x, "contextualIdentity", value.asInstanceOf[js.Any])
     }
@@ -161,7 +166,8 @@ object contextualIdentities {
       __obj.asInstanceOf[QueryDetails]
     }
     
-    extension [Self <: QueryDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryDetails] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -188,7 +194,8 @@ object contextualIdentities {
       __obj.asInstanceOf[UpdateDetails]
     }
     
-    extension [Self <: UpdateDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateDetails] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

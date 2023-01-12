@@ -32,7 +32,8 @@ object Receiver {
     __obj.asInstanceOf[Receiver]
   }
   
-  extension [Self <: Receiver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Receiver] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: js.Array[Capability]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     

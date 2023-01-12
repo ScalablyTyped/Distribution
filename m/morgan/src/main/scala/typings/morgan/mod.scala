@@ -242,7 +242,8 @@ object mod {
       __obj.asInstanceOf[Options[Request, Response]]
     }
     
-    extension [Self <: Options[?, ?], Request /* <: IncomingMessage */, Response /* <: ServerResponse[IncomingMessage] */](x: Self & (Options[Request, Response])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?, ?], Request /* <: IncomingMessage */, Response /* <: ServerResponse[IncomingMessage] */] (val x: Self & (Options[Request, Response])) extends AnyVal {
       
       inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -276,7 +277,8 @@ object mod {
       __obj.asInstanceOf[StreamOptions]
     }
     
-    extension [Self <: StreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamOptions] (val x: Self) extends AnyVal {
       
       inline def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }

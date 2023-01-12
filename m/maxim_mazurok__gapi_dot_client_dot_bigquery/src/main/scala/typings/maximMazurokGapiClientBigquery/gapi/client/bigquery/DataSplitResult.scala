@@ -22,7 +22,8 @@ object DataSplitResult {
     __obj.asInstanceOf[DataSplitResult]
   }
   
-  extension [Self <: DataSplitResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSplitResult] (val x: Self) extends AnyVal {
     
     inline def setEvaluationTable(value: TableReference): Self = StObject.set(x, "evaluationTable", value.asInstanceOf[js.Any])
     

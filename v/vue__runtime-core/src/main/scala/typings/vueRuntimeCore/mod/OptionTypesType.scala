@@ -25,7 +25,8 @@ object OptionTypesType {
     __obj.asInstanceOf[OptionTypesType[P, B, D, C, M, Defaults]]
   }
   
-  extension [Self <: OptionTypesType[?, ?, ?, ?, ?, ?], P, B, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Defaults](x: Self & (OptionTypesType[P, B, D, C, M, Defaults])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionTypesType[?, ?, ?, ?, ?, ?], P, B, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Defaults] (val x: Self & (OptionTypesType[P, B, D, C, M, Defaults])) extends AnyVal {
     
     inline def setB(value: B): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
     

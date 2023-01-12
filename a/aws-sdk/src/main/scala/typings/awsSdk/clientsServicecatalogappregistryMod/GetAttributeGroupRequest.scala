@@ -18,7 +18,8 @@ object GetAttributeGroupRequest {
     __obj.asInstanceOf[GetAttributeGroupRequest]
   }
   
-  extension [Self <: GetAttributeGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAttributeGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setAttributeGroup(value: AttributeGroupSpecifier): Self = StObject.set(x, "attributeGroup", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object GetComponentVersionArtifactResponse {
     __obj.asInstanceOf[GetComponentVersionArtifactResponse]
   }
   
-  extension [Self <: GetComponentVersionArtifactResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetComponentVersionArtifactResponse] (val x: Self) extends AnyVal {
     
     inline def setPreSignedUrl(value: NonEmptyString): Self = StObject.set(x, "preSignedUrl", value.asInstanceOf[js.Any])
   }

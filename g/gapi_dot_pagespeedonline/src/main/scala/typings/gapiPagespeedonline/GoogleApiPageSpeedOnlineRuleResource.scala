@@ -34,7 +34,8 @@ object GoogleApiPageSpeedOnlineRuleResource {
     __obj.asInstanceOf[GoogleApiPageSpeedOnlineRuleResource]
   }
   
-  extension [Self <: GoogleApiPageSpeedOnlineRuleResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleApiPageSpeedOnlineRuleResource] (val x: Self) extends AnyVal {
     
     inline def setLocalizedRuleName(value: String): Self = StObject.set(x, "localizedRuleName", value.asInstanceOf[js.Any])
     

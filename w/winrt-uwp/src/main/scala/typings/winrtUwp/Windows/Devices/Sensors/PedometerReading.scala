@@ -31,7 +31,8 @@ object PedometerReading {
     __obj.asInstanceOf[PedometerReading]
   }
   
-  extension [Self <: PedometerReading](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PedometerReading] (val x: Self) extends AnyVal {
     
     inline def setCumulativeSteps(value: Double): Self = StObject.set(x, "cumulativeSteps", value.asInstanceOf[js.Any])
     

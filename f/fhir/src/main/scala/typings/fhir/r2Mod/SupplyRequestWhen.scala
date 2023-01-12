@@ -25,7 +25,8 @@ object SupplyRequestWhen {
     __obj.asInstanceOf[SupplyRequestWhen]
   }
   
-  extension [Self <: SupplyRequestWhen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupplyRequestWhen] (val x: Self) extends AnyVal {
     
     inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

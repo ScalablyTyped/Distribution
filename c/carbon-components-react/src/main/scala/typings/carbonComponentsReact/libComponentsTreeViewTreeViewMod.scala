@@ -507,7 +507,8 @@ object libComponentsTreeViewTreeViewMod extends Shortcut {
       __obj.asInstanceOf[TreeViewProps]
     }
     
-    extension [Self <: TreeViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeViewProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

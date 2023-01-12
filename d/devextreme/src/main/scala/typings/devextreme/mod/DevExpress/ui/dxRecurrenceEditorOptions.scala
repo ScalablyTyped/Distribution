@@ -21,7 +21,8 @@ object dxRecurrenceEditorOptions {
     __obj.asInstanceOf[dxRecurrenceEditorOptions]
   }
   
-  extension [Self <: dxRecurrenceEditorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxRecurrenceEditorOptions] (val x: Self) extends AnyVal {
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

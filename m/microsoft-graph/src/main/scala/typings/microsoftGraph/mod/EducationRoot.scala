@@ -21,7 +21,8 @@ object EducationRoot {
     __obj.asInstanceOf[EducationRoot]
   }
   
-  extension [Self <: EducationRoot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EducationRoot] (val x: Self) extends AnyVal {
     
     inline def setClasses(value: NullableOption[js.Array[EducationClass]]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     

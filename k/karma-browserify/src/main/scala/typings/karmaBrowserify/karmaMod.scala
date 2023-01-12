@@ -27,7 +27,8 @@ object karmaMod {
       __obj.asInstanceOf[BrowserifyOptions]
     }
     
-    extension [Self <: BrowserifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserifyOptions] (val x: Self) extends AnyVal {
       
       inline def setConfigure(value: /* bundle */ BrowserifyObject => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
       
@@ -56,7 +57,8 @@ object karmaMod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setBrowserify(value: BrowserifyOptions): Self = StObject.set(x, "browserify", value.asInstanceOf[js.Any])
       

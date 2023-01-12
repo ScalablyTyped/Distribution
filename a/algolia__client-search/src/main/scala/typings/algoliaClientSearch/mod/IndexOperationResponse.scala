@@ -18,7 +18,8 @@ object IndexOperationResponse {
     __obj.asInstanceOf[IndexOperationResponse]
   }
   
-  extension [Self <: IndexOperationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexOperationResponse] (val x: Self) extends AnyVal {
     
     inline def setTaskID(value: Double): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
   }

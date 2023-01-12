@@ -36,7 +36,8 @@ object IDelayedTask {
     __obj.asInstanceOf[IDelayedTask]
   }
   
-  extension [Self <: IDelayedTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDelayedTask] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     

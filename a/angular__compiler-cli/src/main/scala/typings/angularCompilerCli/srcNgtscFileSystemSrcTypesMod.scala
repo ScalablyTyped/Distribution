@@ -31,7 +31,8 @@ object srcNgtscFileSystemSrcTypesMod {
       __obj.asInstanceOf[FileStats]
     }
     
-    extension [Self <: FileStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileStats] (val x: Self) extends AnyVal {
       
       inline def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
       

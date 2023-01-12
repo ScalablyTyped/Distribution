@@ -20,7 +20,8 @@ object InstanceGroupManagersScopedList {
     __obj.asInstanceOf[InstanceGroupManagersScopedList]
   }
   
-  extension [Self <: InstanceGroupManagersScopedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceGroupManagersScopedList] (val x: Self) extends AnyVal {
     
     inline def setInstanceGroupManagers(value: js.Array[InstanceGroupManager]): Self = StObject.set(x, "instanceGroupManagers", value.asInstanceOf[js.Any])
     

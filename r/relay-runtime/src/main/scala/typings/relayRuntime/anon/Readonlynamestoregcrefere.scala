@@ -23,7 +23,8 @@ object Readonlynamestoregcrefere {
     __obj.asInstanceOf[Readonlynamestoregcrefere]
   }
   
-  extension [Self <: Readonlynamestoregcrefere](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlynamestoregcrefere] (val x: Self) extends AnyVal {
     
     inline def setName(value: storeDotgc): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object DropDownSettings {
     __obj.asInstanceOf[DropDownSettings[T]]
   }
   
-  extension [Self <: DropDownSettings[?], T /* <: BaseTagData */](x: Self & DropDownSettings[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropDownSettings[?], T /* <: BaseTagData */] (val x: Self & DropDownSettings[T]) extends AnyVal {
     
     inline def setAccentedSearch(value: Boolean): Self = StObject.set(x, "accentedSearch", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ChunkSizeOptions {
     __obj.asInstanceOf[ChunkSizeOptions]
   }
   
-  extension [Self <: ChunkSizeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChunkSizeOptions] (val x: Self) extends AnyVal {
     
     inline def setChunkOverhead(value: Double): Self = StObject.set(x, "chunkOverhead", value.asInstanceOf[js.Any])
     

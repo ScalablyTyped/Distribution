@@ -27,7 +27,8 @@ object distTypesResponsiveEditorSystemDistComponentsCustomGridMod extends Shortc
       __obj.asInstanceOf[CustomGridProps]
     }
     
-    extension [Self <: CustomGridProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomGridProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

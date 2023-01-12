@@ -92,7 +92,8 @@ object XAccessibleHypertext {
     __obj.asInstanceOf[XAccessibleHypertext]
   }
   
-  extension [Self <: XAccessibleHypertext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccessibleHypertext] (val x: Self) extends AnyVal {
     
     inline def setGetHyperLink(value: Double => XAccessibleHyperlink): Self = StObject.set(x, "getHyperLink", js.Any.fromFunction1(value))
     

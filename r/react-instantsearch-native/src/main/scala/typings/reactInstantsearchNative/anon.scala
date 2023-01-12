@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyIndexProps]
     }
     
-    extension [Self <: ReadonlyIndexProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyIndexProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyInstantSearchProp]
     }
     
-    extension [Self <: ReadonlyInstantSearchProp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyInstantSearchProp] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

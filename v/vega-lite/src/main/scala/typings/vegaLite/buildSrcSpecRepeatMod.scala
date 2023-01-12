@@ -37,7 +37,8 @@ object buildSrcSpecRepeatMod {
       __obj.asInstanceOf[LayerRepeatMapping]
     }
     
-    extension [Self <: LayerRepeatMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerRepeatMapping] (val x: Self) extends AnyVal {
       
       inline def setLayer(value: js.Array[String]): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object buildSrcSpecRepeatMod {
       __obj.asInstanceOf[LayerRepeatSpec]
     }
     
-    extension [Self <: LayerRepeatSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerRepeatSpec] (val x: Self) extends AnyVal {
       
       inline def setRepeat(value: LayerRepeatMapping): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object buildSrcSpecRepeatMod {
       __obj.asInstanceOf[NonLayerRepeatSpec]
     }
     
-    extension [Self <: NonLayerRepeatSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NonLayerRepeatSpec] (val x: Self) extends AnyVal {
       
       inline def setRepeat(value: js.Array[String] | RepeatMapping): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
@@ -134,7 +137,8 @@ object buildSrcSpecRepeatMod {
       __obj.asInstanceOf[RepeatMapping]
     }
     
-    extension [Self <: RepeatMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RepeatMapping] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: js.Array[String]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       

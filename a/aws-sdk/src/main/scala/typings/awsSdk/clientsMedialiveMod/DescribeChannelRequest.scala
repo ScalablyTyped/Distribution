@@ -18,7 +18,8 @@ object DescribeChannelRequest {
     __obj.asInstanceOf[DescribeChannelRequest]
   }
   
-  extension [Self <: DescribeChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setChannelId(value: string): Self = StObject.set(x, "ChannelId", value.asInstanceOf[js.Any])
   }

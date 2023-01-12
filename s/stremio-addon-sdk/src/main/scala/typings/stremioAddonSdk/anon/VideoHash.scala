@@ -23,7 +23,8 @@ object VideoHash {
     __obj.asInstanceOf[VideoHash]
   }
   
-  extension [Self <: VideoHash](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoHash] (val x: Self) extends AnyVal {
     
     inline def setVideoHash(value: String): Self = StObject.set(x, "videoHash", value.asInstanceOf[js.Any])
     

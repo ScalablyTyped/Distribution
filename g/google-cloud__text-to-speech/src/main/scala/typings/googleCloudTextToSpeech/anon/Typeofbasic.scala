@@ -59,7 +59,8 @@ object Typeofbasic {
     __obj.asInstanceOf[Typeofbasic]
   }
   
-  extension [Self <: Typeofbasic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofbasic] (val x: Self) extends AnyVal {
     
     inline def setBool(value: Double): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
     

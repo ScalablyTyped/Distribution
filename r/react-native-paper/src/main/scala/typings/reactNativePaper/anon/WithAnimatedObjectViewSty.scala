@@ -248,7 +248,8 @@ object WithAnimatedObjectViewSty {
     __obj.asInstanceOf[WithAnimatedObjectViewSty]
   }
   
-  extension [Self <: WithAnimatedObjectViewSty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WithAnimatedObjectViewSty] (val x: Self) extends AnyVal {
     
     inline def setAlignContent(
       value: WithAnimatedValue[

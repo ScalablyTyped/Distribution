@@ -16,7 +16,8 @@ object PendingContentUpdate {
     __obj.asInstanceOf[PendingContentUpdate]
   }
   
-  extension [Self <: PendingContentUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PendingContentUpdate] (val x: Self) extends AnyVal {
     
     inline def setQueuedDateTime(value: NullableOption[String]): Self = StObject.set(x, "queuedDateTime", value.asInstanceOf[js.Any])
     

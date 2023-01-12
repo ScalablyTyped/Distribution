@@ -16,7 +16,8 @@ object SectionDropdownClickEvent {
     __obj.asInstanceOf[SectionDropdownClickEvent]
   }
   
-  extension [Self <: SectionDropdownClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SectionDropdownClickEvent] (val x: Self) extends AnyVal {
     
     inline def setDropdown(value: DropdownView): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
   }

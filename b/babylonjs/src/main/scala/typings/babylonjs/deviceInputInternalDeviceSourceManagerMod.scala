@@ -75,7 +75,8 @@ object deviceInputInternalDeviceSourceManagerMod {
       __obj.asInstanceOf[IObservableManager]
     }
     
-    extension [Self <: IObservableManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IObservableManager] (val x: Self) extends AnyVal {
       
       inline def setOnDeviceConnectedObservable(value: Observable[DeviceSourceType]): Self = StObject.set(x, "onDeviceConnectedObservable", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object deviceInputInternalDeviceSourceManagerMod {
         __obj.asInstanceOf[typings.babylonjs.deviceInputInternalDeviceSourceManagerMod.babylonjsEnginesEngineAugmentingMod.Engine]
       }
       
-      extension [Self <: typings.babylonjs.deviceInputInternalDeviceSourceManagerMod.babylonjsEnginesEngineAugmentingMod.Engine](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.babylonjs.deviceInputInternalDeviceSourceManagerMod.babylonjsEnginesEngineAugmentingMod.Engine] (val x: Self) extends AnyVal {
         
         inline def set_deviceSourceManager(value: InternalDeviceSourceManager): Self = StObject.set(x, "_deviceSourceManager", value.asInstanceOf[js.Any])
         

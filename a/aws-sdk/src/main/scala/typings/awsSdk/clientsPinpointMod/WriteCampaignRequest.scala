@@ -98,7 +98,8 @@ object WriteCampaignRequest {
     __obj.asInstanceOf[WriteCampaignRequest]
   }
   
-  extension [Self <: WriteCampaignRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteCampaignRequest] (val x: Self) extends AnyVal {
     
     inline def setAdditionalTreatments(value: ListOfWriteTreatmentResource): Self = StObject.set(x, "AdditionalTreatments", value.asInstanceOf[js.Any])
     

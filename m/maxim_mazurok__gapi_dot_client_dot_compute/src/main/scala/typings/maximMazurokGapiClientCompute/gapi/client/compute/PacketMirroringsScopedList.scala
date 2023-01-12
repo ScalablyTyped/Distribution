@@ -20,7 +20,8 @@ object PacketMirroringsScopedList {
     __obj.asInstanceOf[PacketMirroringsScopedList]
   }
   
-  extension [Self <: PacketMirroringsScopedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PacketMirroringsScopedList] (val x: Self) extends AnyVal {
     
     inline def setPacketMirrorings(value: js.Array[PacketMirroring]): Self = StObject.set(x, "packetMirrorings", value.asInstanceOf[js.Any])
     

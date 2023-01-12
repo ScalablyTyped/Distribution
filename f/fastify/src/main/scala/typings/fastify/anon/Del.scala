@@ -26,7 +26,8 @@ object Del {
     __obj.asInstanceOf[Del]
   }
   
-  extension [Self <: Del](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Del] (val x: Self) extends AnyVal {
     
     inline def setDel(value: String => Unit): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
     

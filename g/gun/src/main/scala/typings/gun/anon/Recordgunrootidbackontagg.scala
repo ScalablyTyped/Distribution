@@ -49,7 +49,8 @@ object Recordgunrootidbackontagg {
     __obj.asInstanceOf[Recordgunrootidbackontagg]
   }
   
-  extension [Self <: Recordgunrootidbackontagg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Recordgunrootidbackontagg] (val x: Self) extends AnyVal {
     
     inline def set$(value: Any): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
     

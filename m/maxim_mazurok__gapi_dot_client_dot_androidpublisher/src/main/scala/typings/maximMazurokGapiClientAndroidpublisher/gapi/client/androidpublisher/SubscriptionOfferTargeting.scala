@@ -19,7 +19,8 @@ object SubscriptionOfferTargeting {
     __obj.asInstanceOf[SubscriptionOfferTargeting]
   }
   
-  extension [Self <: SubscriptionOfferTargeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionOfferTargeting] (val x: Self) extends AnyVal {
     
     inline def setAcquisitionRule(value: AcquisitionTargetingRule): Self = StObject.set(x, "acquisitionRule", value.asInstanceOf[js.Any])
     

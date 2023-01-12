@@ -172,7 +172,8 @@ object Math {
     __obj.asInstanceOf[Math]
   }
   
-  extension [Self <: Math](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Math] (val x: Self) extends AnyVal {
     
     inline def setAbs(value: Double => Double): Self = StObject.set(x, "abs", js.Any.fromFunction1(value))
     

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Download]
     }
     
-    extension [Self <: Download](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Download] (val x: Self) extends AnyVal {
       
       inline def setDownload(value: IsScalingEnabled): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Dynamic]
     }
     
-    extension [Self <: Dynamic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dynamic] (val x: Self) extends AnyVal {
       
       inline def setDynamic(value: Download): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
       
@@ -61,7 +63,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -82,7 +85,8 @@ object anon {
       __obj.asInstanceOf[IsClientPrimaryMeasureMethod]
     }
     
-    extension [Self <: IsClientPrimaryMeasureMethod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsClientPrimaryMeasureMethod] (val x: Self) extends AnyVal {
       
       inline def setIsClientPrimaryMeasureMethod(value: Boolean): Self = StObject.set(x, "isClientPrimaryMeasureMethod", value.asInstanceOf[js.Any])
       
@@ -101,7 +105,8 @@ object anon {
       __obj.asInstanceOf[IsEnabled]
     }
     
-    extension [Self <: IsEnabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsEnabled] (val x: Self) extends AnyVal {
       
       inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     }
@@ -120,7 +125,8 @@ object anon {
       __obj.asInstanceOf[IsScalingEnabled]
     }
     
-    extension [Self <: IsScalingEnabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsScalingEnabled] (val x: Self) extends AnyVal {
       
       inline def setIsScalingEnabled(value: Boolean): Self = StObject.set(x, "isScalingEnabled", value.asInstanceOf[js.Any])
       
@@ -145,7 +151,8 @@ object anon {
       __obj.asInstanceOf[IsUploadFirst]
     }
     
-    extension [Self <: IsUploadFirst](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsUploadFirst] (val x: Self) extends AnyVal {
       
       inline def setIsUploadFirst(value: Boolean): Self = StObject.set(x, "isUploadFirst", value.asInstanceOf[js.Any])
       
@@ -170,7 +177,8 @@ object anon {
       __obj.asInstanceOf[Latency]
     }
     
-    extension [Self <: Latency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Latency] (val x: Self) extends AnyVal {
       
       inline def setLatency(value: PingCount): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
       
@@ -191,7 +199,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -210,7 +219,8 @@ object anon {
       __obj.asInstanceOf[PingCount]
     }
     
-    extension [Self <: PingCount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PingCount] (val x: Self) extends AnyVal {
       
       inline def setPingCount(value: Double): Self = StObject.set(x, "pingCount", value.asInstanceOf[js.Any])
     }

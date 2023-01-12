@@ -32,7 +32,8 @@ object DialogProvider {
     __obj.asInstanceOf[DialogProvider]
   }
   
-  extension [Self <: DialogProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogProvider] (val x: Self) extends AnyVal {
     
     inline def setCreateWithModel(value: XModel => Unit): Self = StObject.set(x, "createWithModel", js.Any.fromFunction1(value))
     

@@ -18,7 +18,8 @@ object ElementAnimateOptionPos {
     __obj.asInstanceOf[ElementAnimateOptionPos]
   }
   
-  extension [Self <: ElementAnimateOptionPos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementAnimateOptionPos] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

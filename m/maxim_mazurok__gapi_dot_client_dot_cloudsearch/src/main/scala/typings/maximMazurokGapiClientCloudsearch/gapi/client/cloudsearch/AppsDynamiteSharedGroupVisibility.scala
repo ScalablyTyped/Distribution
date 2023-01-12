@@ -15,7 +15,8 @@ object AppsDynamiteSharedGroupVisibility {
     __obj.asInstanceOf[AppsDynamiteSharedGroupVisibility]
   }
   
-  extension [Self <: AppsDynamiteSharedGroupVisibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedGroupVisibility] (val x: Self) extends AnyVal {
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Challenge]
     }
     
-    extension [Self <: Challenge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Challenge] (val x: Self) extends AnyVal {
       
       inline def setChallenge(value: Any): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
       

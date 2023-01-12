@@ -35,7 +35,8 @@ object RouteGroupConfig {
     __obj.asInstanceOf[RouteGroupConfig[ParamList, ScreenOptions]]
   }
   
-  extension [Self <: RouteGroupConfig[?, ?], ParamList /* <: ParamListBase */, ScreenOptions /* <: js.Object */](x: Self & (RouteGroupConfig[ParamList, ScreenOptions])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteGroupConfig[?, ?], ParamList /* <: ParamListBase */, ScreenOptions /* <: js.Object */] (val x: Self & (RouteGroupConfig[ParamList, ScreenOptions])) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

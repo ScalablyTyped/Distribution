@@ -22,7 +22,8 @@ object ResourceLimit {
     __obj.asInstanceOf[ResourceLimit]
   }
   
-  extension [Self <: ResourceLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceLimit] (val x: Self) extends AnyVal {
     
     inline def setMaximum(value: String): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     

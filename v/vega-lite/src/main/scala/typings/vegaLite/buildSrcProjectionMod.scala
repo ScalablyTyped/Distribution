@@ -151,7 +151,8 @@ object buildSrcProjectionMod {
       __obj.asInstanceOf[Projection[ES]]
     }
     
-    extension [Self <: Projection[?], ES /* <: ExprRef | SignalRef */](x: Self & Projection[ES]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Projection[?], ES /* <: ExprRef | SignalRef */] (val x: Self & Projection[ES]) extends AnyVal {
       
       inline def setCenter(
         value: /* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/util.Vector2<number | vega-typings.vega-typings/types/spec/signal.SignalRef> | vega-typings.vega-typings/types/spec/signal.SignalRef | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/util.Vector2<number | vega-typings.vega-typings/types/spec/signal.SignalRef> | vega-typings.vega-typings/types/spec/signal.SignalRef | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | ES : std.Exclude<vega-typings.vega-typings/types/spec/util.Vector2<number | vega-typings.vega-typings/types/spec/signal.SignalRef> | vega-typings.vega-typings/types/spec/signal.SignalRef | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any

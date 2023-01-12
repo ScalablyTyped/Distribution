@@ -33,7 +33,8 @@ object CustomSql {
     __obj.asInstanceOf[CustomSql]
   }
   
-  extension [Self <: CustomSql](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomSql] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: InputColumnList): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     

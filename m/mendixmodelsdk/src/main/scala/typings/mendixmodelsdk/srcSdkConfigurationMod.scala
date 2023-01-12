@@ -54,7 +54,8 @@ object srcSdkConfigurationMod {
         __obj.asInstanceOf[IBackendCredentials]
       }
       
-      extension [Self <: IBackendCredentials](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IBackendCredentials] (val x: Self) extends AnyVal {
         
         inline def setOpenid(value: String): Self = StObject.set(x, "openid", value.asInstanceOf[js.Any])
         
@@ -85,7 +86,8 @@ object srcSdkConfigurationMod {
         __obj.asInstanceOf[ICreateWorkingCopyFromTeamServerParameters]
       }
       
-      extension [Self <: ICreateWorkingCopyFromTeamServerParameters](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICreateWorkingCopyFromTeamServerParameters] (val x: Self) extends AnyVal {
         
         inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
         
@@ -113,7 +115,8 @@ object srcSdkConfigurationMod {
         __obj.asInstanceOf[ICreateWorkingCopyParameters]
       }
       
-      extension [Self <: ICreateWorkingCopyParameters](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICreateWorkingCopyParameters] (val x: Self) extends AnyVal {
         
         inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       }
@@ -184,7 +187,8 @@ object srcSdkConfigurationMod {
         __obj.asInstanceOf[ICreateWorkingCopyParametersBase]
       }
       
-      extension [Self <: ICreateWorkingCopyParametersBase](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICreateWorkingCopyParametersBase] (val x: Self) extends AnyVal {
         
         inline def setAvatarUrl(value: String): Self = StObject.set(x, "avatarUrl", value.asInstanceOf[js.Any])
         
@@ -245,7 +249,8 @@ object srcSdkConfigurationMod {
         __obj.asInstanceOf[IPATCredentials]
       }
       
-      extension [Self <: IPATCredentials](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IPATCredentials] (val x: Self) extends AnyVal {
         
         inline def setPersonalAccessToken(value: String): Self = StObject.set(x, "personalAccessToken", value.asInstanceOf[js.Any])
       }
@@ -268,7 +273,8 @@ object srcSdkConfigurationMod {
         __obj.asInstanceOf[ISdkConfig]
       }
       
-      extension [Self <: ISdkConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISdkConfig] (val x: Self) extends AnyVal {
         
         inline def setClient(value: IModelServerClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
         
@@ -301,7 +307,8 @@ object srcSdkConfigurationMod {
         __obj.asInstanceOf[ISdkCredentials]
       }
       
-      extension [Self <: ISdkCredentials](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISdkCredentials] (val x: Self) extends AnyVal {
         
         inline def setApikey(value: String): Self = StObject.set(x, "apikey", value.asInstanceOf[js.Any])
         

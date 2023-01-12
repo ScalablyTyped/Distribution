@@ -37,7 +37,8 @@ object typesSsedescriptionMod {
       __obj.asInstanceOf[SSEDescription]
     }
     
-    extension [Self <: SSEDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SSEDescription] (val x: Self) extends AnyVal {
       
       inline def setKMSMasterKeyArn(value: String): Self = StObject.set(x, "KMSMasterKeyArn", value.asInstanceOf[js.Any])
       

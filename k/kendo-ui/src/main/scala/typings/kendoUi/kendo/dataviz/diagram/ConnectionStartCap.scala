@@ -19,7 +19,8 @@ object ConnectionStartCap {
     __obj.asInstanceOf[ConnectionStartCap]
   }
   
-  extension [Self <: ConnectionStartCap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionStartCap] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String | ConnectionStartCapFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

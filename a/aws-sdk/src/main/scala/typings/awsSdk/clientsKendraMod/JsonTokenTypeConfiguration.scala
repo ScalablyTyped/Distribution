@@ -23,7 +23,8 @@ object JsonTokenTypeConfiguration {
     __obj.asInstanceOf[JsonTokenTypeConfiguration]
   }
   
-  extension [Self <: JsonTokenTypeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonTokenTypeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setGroupAttributeField(value: String): Self = StObject.set(x, "GroupAttributeField", value.asInstanceOf[js.Any])
     

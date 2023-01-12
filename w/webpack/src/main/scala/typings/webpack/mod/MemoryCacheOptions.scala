@@ -35,7 +35,8 @@ object MemoryCacheOptions {
     __obj.asInstanceOf[MemoryCacheOptions]
   }
   
-  extension [Self <: MemoryCacheOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemoryCacheOptions] (val x: Self) extends AnyVal {
     
     inline def setCacheUnaffected(value: Boolean): Self = StObject.set(x, "cacheUnaffected", value.asInstanceOf[js.Any])
     

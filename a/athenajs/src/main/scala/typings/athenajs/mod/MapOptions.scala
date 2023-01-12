@@ -29,7 +29,8 @@ object MapOptions {
     __obj.asInstanceOf[MapOptions]
   }
   
-  extension [Self <: MapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

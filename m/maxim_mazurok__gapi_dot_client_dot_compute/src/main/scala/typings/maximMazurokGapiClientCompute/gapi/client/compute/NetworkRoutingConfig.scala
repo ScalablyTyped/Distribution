@@ -19,7 +19,8 @@ object NetworkRoutingConfig {
     __obj.asInstanceOf[NetworkRoutingConfig]
   }
   
-  extension [Self <: NetworkRoutingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkRoutingConfig] (val x: Self) extends AnyVal {
     
     inline def setRoutingMode(value: String): Self = StObject.set(x, "routingMode", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ComponentOption {
     __obj.asInstanceOf[ComponentOption]
   }
   
-  extension [Self <: ComponentOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentOption] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: GroupComponent[GroupComponentCfg] | HtmlComponent[HtmlComponentCfg]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

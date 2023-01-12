@@ -31,7 +31,8 @@ object CallConversation {
     __obj.asInstanceOf[CallConversation]
   }
   
-  extension [Self <: CallConversation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallConversation] (val x: Self) extends AnyVal {
     
     inline def setCalledCollaborationRef(value: Collaboration): Self = StObject.set(x, "calledCollaborationRef", value.asInstanceOf[js.Any])
     

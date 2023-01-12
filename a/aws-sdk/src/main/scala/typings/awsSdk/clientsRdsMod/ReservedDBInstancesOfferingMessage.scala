@@ -23,7 +23,8 @@ object ReservedDBInstancesOfferingMessage {
     __obj.asInstanceOf[ReservedDBInstancesOfferingMessage]
   }
   
-  extension [Self <: ReservedDBInstancesOfferingMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservedDBInstancesOfferingMessage] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

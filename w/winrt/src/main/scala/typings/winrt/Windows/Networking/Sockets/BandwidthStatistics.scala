@@ -32,7 +32,8 @@ object BandwidthStatistics {
     __obj.asInstanceOf[BandwidthStatistics]
   }
   
-  extension [Self <: BandwidthStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BandwidthStatistics] (val x: Self) extends AnyVal {
     
     inline def setInboundBandwidthPeaked(value: Boolean): Self = StObject.set(x, "inboundBandwidthPeaked", value.asInstanceOf[js.Any])
     

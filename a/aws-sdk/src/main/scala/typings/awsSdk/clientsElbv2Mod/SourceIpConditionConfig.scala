@@ -18,7 +18,8 @@ object SourceIpConditionConfig {
     __obj.asInstanceOf[SourceIpConditionConfig]
   }
   
-  extension [Self <: SourceIpConditionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceIpConditionConfig] (val x: Self) extends AnyVal {
     
     inline def setValues(value: ListOfString): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     

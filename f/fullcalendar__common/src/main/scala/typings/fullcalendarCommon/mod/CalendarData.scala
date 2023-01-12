@@ -54,7 +54,8 @@ object CalendarData {
     __obj.asInstanceOf[CalendarData]
   }
   
-  extension [Self <: CalendarData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarData] (val x: Self) extends AnyVal {
     
     inline def setCalendarApi(value: CalendarApi): Self = StObject.set(x, "calendarApi", value.asInstanceOf[js.Any])
     

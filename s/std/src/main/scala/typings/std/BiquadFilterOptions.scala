@@ -30,7 +30,8 @@ object BiquadFilterOptions {
     __obj.asInstanceOf[BiquadFilterOptions]
   }
   
-  extension [Self <: BiquadFilterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BiquadFilterOptions] (val x: Self) extends AnyVal {
     
     inline def setDetune(value: Double): Self = StObject.set(x, "detune", value.asInstanceOf[js.Any])
     

@@ -123,7 +123,8 @@ object libTokensMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setAutoFit(value: Boolean): Self = StObject.set(x, "autoFit", value.asInstanceOf[js.Any])
         
@@ -269,7 +270,8 @@ object libTokensMod {
         __obj.asInstanceOf[IThemeObject]
       }
       
-      extension [Self <: IThemeObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IThemeObject] (val x: Self) extends AnyVal {
         
         inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
         

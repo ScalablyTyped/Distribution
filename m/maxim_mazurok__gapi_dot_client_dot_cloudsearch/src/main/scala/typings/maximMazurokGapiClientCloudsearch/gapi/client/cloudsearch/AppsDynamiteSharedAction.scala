@@ -23,7 +23,8 @@ object AppsDynamiteSharedAction {
     __obj.asInstanceOf[AppsDynamiteSharedAction]
   }
   
-  extension [Self <: AppsDynamiteSharedAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedAction] (val x: Self) extends AnyVal {
     
     inline def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     

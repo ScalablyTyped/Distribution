@@ -31,7 +31,8 @@ object PieTransform {
     __obj.asInstanceOf[PieTransform]
   }
   
-  extension [Self <: PieTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PieTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: (Vector2[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

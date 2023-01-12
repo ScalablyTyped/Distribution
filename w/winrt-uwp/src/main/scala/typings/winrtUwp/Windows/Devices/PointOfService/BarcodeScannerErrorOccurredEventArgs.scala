@@ -23,7 +23,8 @@ object BarcodeScannerErrorOccurredEventArgs {
     __obj.asInstanceOf[BarcodeScannerErrorOccurredEventArgs]
   }
   
-  extension [Self <: BarcodeScannerErrorOccurredEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarcodeScannerErrorOccurredEventArgs] (val x: Self) extends AnyVal {
     
     inline def setErrorData(value: UnifiedPosErrorData): Self = StObject.set(x, "errorData", value.asInstanceOf[js.Any])
     

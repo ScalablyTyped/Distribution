@@ -33,7 +33,8 @@ object UpdateDomainContactPrivacyRequest {
     __obj.asInstanceOf[UpdateDomainContactPrivacyRequest]
   }
   
-  extension [Self <: UpdateDomainContactPrivacyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDomainContactPrivacyRequest] (val x: Self) extends AnyVal {
     
     inline def setAdminPrivacy(value: Boolean): Self = StObject.set(x, "AdminPrivacy", value.asInstanceOf[js.Any])
     

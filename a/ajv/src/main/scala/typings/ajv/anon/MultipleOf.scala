@@ -15,7 +15,8 @@ object MultipleOf {
     __obj.asInstanceOf[MultipleOf]
   }
   
-  extension [Self <: MultipleOf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipleOf] (val x: Self) extends AnyVal {
     
     inline def setMultipleOf(value: Double): Self = StObject.set(x, "multipleOf", value.asInstanceOf[js.Any])
   }

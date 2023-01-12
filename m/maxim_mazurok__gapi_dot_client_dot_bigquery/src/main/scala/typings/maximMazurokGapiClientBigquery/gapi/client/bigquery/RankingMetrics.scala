@@ -28,7 +28,8 @@ object RankingMetrics {
     __obj.asInstanceOf[RankingMetrics]
   }
   
-  extension [Self <: RankingMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RankingMetrics] (val x: Self) extends AnyVal {
     
     inline def setAverageRank(value: Double): Self = StObject.set(x, "averageRank", value.asInstanceOf[js.Any])
     

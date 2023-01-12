@@ -16,7 +16,8 @@ object UIkitCountdownOptions {
     __obj.asInstanceOf[UIkitCountdownOptions]
   }
   
-  extension [Self <: UIkitCountdownOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitCountdownOptions] (val x: Self) extends AnyVal {
     
     inline def setDate(value: String | Boolean): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

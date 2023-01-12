@@ -21,7 +21,8 @@ object PropertyHyphenFallback {
     __obj.asInstanceOf[PropertyHyphenFallback[TLength, TTime]]
   }
   
-  extension [Self <: PropertyHyphenFallback[?, ?], TLength, TTime](x: Self & (PropertyHyphenFallback[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyHyphenFallback[?, ?], TLength, TTime] (val x: Self & (PropertyHyphenFallback[TLength, TTime])) extends AnyVal {
     
     inline def setInherits(value: Inherits | js.Array[NonNullable[js.UndefOr[Inherits]]]): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
     

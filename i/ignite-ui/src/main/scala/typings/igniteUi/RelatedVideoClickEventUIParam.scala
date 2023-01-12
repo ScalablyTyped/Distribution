@@ -23,7 +23,8 @@ object RelatedVideoClickEventUIParam {
     __obj.asInstanceOf[RelatedVideoClickEventUIParam]
   }
   
-  extension [Self <: RelatedVideoClickEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelatedVideoClickEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setRelatedVideo(value: Any): Self = StObject.set(x, "relatedVideo", value.asInstanceOf[js.Any])
     

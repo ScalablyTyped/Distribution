@@ -15,7 +15,8 @@ object Configure {
     __obj.asInstanceOf[Configure]
   }
   
-  extension [Self <: Configure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Configure] (val x: Self) extends AnyVal {
     
     inline def setConfigure(value: HitsPerPage): Self = StObject.set(x, "configure", value.asInstanceOf[js.Any])
   }

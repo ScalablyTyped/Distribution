@@ -102,7 +102,8 @@ object buildGlviewDotwebMod {
       __obj.asInstanceOf[GLViewProps]
     }
     
-    extension [Self <: GLViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GLViewProps] (val x: Self) extends AnyVal {
       
       inline def setMsaaSamples(value: Double): Self = StObject.set(x, "msaaSamples", value.asInstanceOf[js.Any])
       

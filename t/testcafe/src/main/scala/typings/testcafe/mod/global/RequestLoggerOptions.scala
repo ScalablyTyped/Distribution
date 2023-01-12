@@ -45,7 +45,8 @@ object RequestLoggerOptions {
     __obj.asInstanceOf[RequestLoggerOptions]
   }
   
-  extension [Self <: RequestLoggerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestLoggerOptions] (val x: Self) extends AnyVal {
     
     inline def setLogRequestBody(value: Boolean): Self = StObject.set(x, "logRequestBody", value.asInstanceOf[js.Any])
     

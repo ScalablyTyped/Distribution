@@ -31,7 +31,8 @@ object UUIDMetadataObject {
     __obj.asInstanceOf[UUIDMetadataObject[Custom]]
   }
   
-  extension [Self <: UUIDMetadataObject[?], Custom /* <: ObjectCustom */](x: Self & UUIDMetadataObject[Custom]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UUIDMetadataObject[?], Custom /* <: ObjectCustom */] (val x: Self & UUIDMetadataObject[Custom]) extends AnyVal {
     
     inline def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     

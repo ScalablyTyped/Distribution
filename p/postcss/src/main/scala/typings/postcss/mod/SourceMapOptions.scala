@@ -69,7 +69,8 @@ object SourceMapOptions {
     __obj.asInstanceOf[SourceMapOptions]
   }
   
-  extension [Self <: SourceMapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceMapOptions] (val x: Self) extends AnyVal {
     
     inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object TrackEventInit {
     __obj.asInstanceOf[TrackEventInit]
   }
   
-  extension [Self <: TrackEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackEventInit] (val x: Self) extends AnyVal {
     
     inline def setTrack(value: TextTrack): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     

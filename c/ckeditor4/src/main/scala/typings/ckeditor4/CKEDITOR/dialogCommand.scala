@@ -15,7 +15,8 @@ object dialogCommand {
     __obj.asInstanceOf[dialogCommand]
   }
   
-  extension [Self <: dialogCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dialogCommand] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

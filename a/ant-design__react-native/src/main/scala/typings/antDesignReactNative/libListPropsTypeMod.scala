@@ -37,7 +37,8 @@ object libListPropsTypeMod {
       __obj.asInstanceOf[BriefProps]
     }
     
-    extension [Self <: BriefProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BriefProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object libListPropsTypeMod {
       __obj.asInstanceOf[ListItemPropsType]
     }
     
-    extension [Self <: ListItemPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemPropsType] (val x: Self) extends AnyVal {
       
       inline def setActiveStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "activeStyle", value.asInstanceOf[js.Any])
       
@@ -161,7 +163,8 @@ object libListPropsTypeMod {
       __obj.asInstanceOf[ListPropsType]
     }
     
-    extension [Self <: ListPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListPropsType] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: `false` | ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

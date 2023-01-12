@@ -1243,7 +1243,8 @@ object ojavatarMod {
       __obj.asInstanceOf[ojAvatarEventMap]
     }
     
-    extension [Self <: ojAvatarEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojAvatarEventMap] (val x: Self) extends AnyVal {
       
       inline def setInitialsChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "initialsChanged", value.asInstanceOf[js.Any])
       
@@ -1270,7 +1271,8 @@ object ojavatarMod {
       __obj.asInstanceOf[ojAvatarSettableProperties]
     }
     
-    extension [Self <: ojAvatarSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojAvatarSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setInitials(value: String): Self = StObject.set(x, "initials", value.asInstanceOf[js.Any])
       
@@ -1298,7 +1300,8 @@ object ojavatarMod {
       __obj.asInstanceOf[ojAvatarSettablePropertiesLenient]
     }
     
-    extension [Self <: ojAvatarSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojAvatarSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setInitials(value: String): Self = StObject.set(x, "initials", value.asInstanceOf[js.Any])
       

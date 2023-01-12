@@ -19,7 +19,8 @@ object IacFileData {
     __obj.asInstanceOf[IacFileData]
   }
   
-  extension [Self <: IacFileData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IacFileData] (val x: Self) extends AnyVal {
     
     inline def setFileContent(value: String): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
   }

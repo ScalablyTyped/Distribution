@@ -41,7 +41,8 @@ object WebPageSettings {
     __obj.asInstanceOf[WebPageSettings]
   }
   
-  extension [Self <: WebPageSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebPageSettings] (val x: Self) extends AnyVal {
     
     inline def setJavascriptEnabled(value: Boolean): Self = StObject.set(x, "javascriptEnabled", value.asInstanceOf[js.Any])
     

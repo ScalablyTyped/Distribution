@@ -33,7 +33,8 @@ object XToolkitRobot {
     __obj.asInstanceOf[XToolkitRobot]
   }
   
-  extension [Self <: XToolkitRobot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XToolkitRobot] (val x: Self) extends AnyVal {
     
     inline def setKeyPress(value: KeyEvent => Unit): Self = StObject.set(x, "keyPress", js.Any.fromFunction1(value))
     

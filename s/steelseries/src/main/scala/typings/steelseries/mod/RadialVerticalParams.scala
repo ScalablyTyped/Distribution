@@ -25,7 +25,8 @@ object RadialVerticalParams {
     __obj.asInstanceOf[RadialVerticalParams]
   }
   
-  extension [Self <: RadialVerticalParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadialVerticalParams] (val x: Self) extends AnyVal {
     
     inline def setArea(value: js.Array[Section]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     

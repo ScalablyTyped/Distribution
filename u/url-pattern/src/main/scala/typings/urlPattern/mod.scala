@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[UrlPatternOptions]
     }
     
-    extension [Self <: UrlPatternOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlPatternOptions] (val x: Self) extends AnyVal {
       
       inline def setEscapeChar(value: String): Self = StObject.set(x, "escapeChar", value.asInstanceOf[js.Any])
       

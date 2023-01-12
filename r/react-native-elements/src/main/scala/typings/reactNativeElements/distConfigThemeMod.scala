@@ -208,7 +208,8 @@ object distConfigThemeMod {
       __obj.asInstanceOf[FullTheme]
     }
     
-    extension [Self <: FullTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullTheme] (val x: Self) extends AnyVal {
       
       inline def setAirbnbRating(value: PartialSwipeRatingProps): Self = StObject.set(x, "AirbnbRating", value.asInstanceOf[js.Any])
       

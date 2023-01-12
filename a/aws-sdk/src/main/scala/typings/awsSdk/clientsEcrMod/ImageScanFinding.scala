@@ -38,7 +38,8 @@ object ImageScanFinding {
     __obj.asInstanceOf[ImageScanFinding]
   }
   
-  extension [Self <: ImageScanFinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageScanFinding] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: AttributeList): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object Ify {
     __obj.asInstanceOf[Ify]
   }
   
-  extension [Self <: Ify](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ify] (val x: Self) extends AnyVal {
     
     inline def setIfy(value: Any => Any): Self = StObject.set(x, "ify", js.Any.fromFunction1(value))
     

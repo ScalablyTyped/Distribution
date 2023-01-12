@@ -32,7 +32,8 @@ object InlayHintsContext {
     __obj.asInstanceOf[InlayHintsContext]
   }
   
-  extension [Self <: InlayHintsContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlayHintsContext] (val x: Self) extends AnyVal {
     
     inline def setCancellationToken(value: CancellationToken): Self = StObject.set(x, "cancellationToken", value.asInstanceOf[js.Any])
     

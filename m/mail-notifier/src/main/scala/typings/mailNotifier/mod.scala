@@ -83,7 +83,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setBox(value: String): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object mod {
       __obj.asInstanceOf[EmailAddress]
     }
     
-    extension [Self <: EmailAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmailAddress] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -165,7 +167,8 @@ object mod {
       __obj.asInstanceOf[EmailAttachment]
     }
     
-    extension [Self <: EmailAttachment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmailAttachment] (val x: Self) extends AnyVal {
       
       inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
       
@@ -255,7 +258,8 @@ object mod {
       __obj.asInstanceOf[EmailContent]
     }
     
-    extension [Self <: EmailContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmailContent] (val x: Self) extends AnyVal {
       
       inline def setAttachments(value: js.Array[EmailAttachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
@@ -370,7 +374,8 @@ object mod {
       __obj.asInstanceOf[EmailHeaders]
     }
     
-    extension [Self <: EmailHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmailHeaders] (val x: Self) extends AnyVal {
       
       inline def `setArc-authentication-results`(value: String): Self = StObject.set(x, "arc-authentication-results", value.asInstanceOf[js.Any])
       
@@ -533,7 +538,8 @@ object mod {
       __obj.asInstanceOf[NotifierEvents]
     }
     
-    extension [Self <: NotifierEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotifierEvents] (val x: Self) extends AnyVal {
       
       inline def setConnected(value: () => Unit): Self = StObject.set(x, "connected", js.Any.fromFunction0(value))
       

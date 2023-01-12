@@ -32,7 +32,8 @@ object AdminLinkProviderForUserRequest {
     __obj.asInstanceOf[AdminLinkProviderForUserRequest]
   }
   
-  extension [Self <: AdminLinkProviderForUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminLinkProviderForUserRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationUser(value: ProviderUserIdentifierType): Self = StObject.set(x, "DestinationUser", value.asInstanceOf[js.Any])
     

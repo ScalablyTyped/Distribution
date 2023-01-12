@@ -111,7 +111,8 @@ object mod {
       __obj.asInstanceOf[CometSubscription]
     }
     
-    extension [Self <: CometSubscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CometSubscription] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
@@ -199,7 +200,8 @@ object mod {
       __obj.asInstanceOf[StatusResult]
     }
     
-    extension [Self <: StatusResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatusResult] (val x: Self) extends AnyVal {
       
       inline def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
       
@@ -261,7 +263,8 @@ object mod {
       __obj.asInstanceOf[StreamingExtension]
     }
     
-    extension [Self <: StreamingExtension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamingExtension] (val x: Self) extends AnyVal {
       
       inline def setIncoming(value: (/* message */ Message, /* callback */ Callback[Any]) => Unit): Self = StObject.set(x, "incoming", js.Any.fromFunction2(value))
       

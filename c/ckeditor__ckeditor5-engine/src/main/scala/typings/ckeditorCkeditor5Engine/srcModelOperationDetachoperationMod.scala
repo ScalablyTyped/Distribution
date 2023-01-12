@@ -100,7 +100,8 @@ object srcModelOperationDetachoperationMod {
       __obj.asInstanceOf[DetachOperation]
     }
     
-    extension [Self <: DetachOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetachOperation] (val x: Self) extends AnyVal {
       
       inline def setHowMany(value: Double): Self = StObject.set(x, "howMany", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object SearchStatus {
     __obj.asInstanceOf[SearchStatus]
   }
   
-  extension [Self <: SearchStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchStatus] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

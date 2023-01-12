@@ -48,7 +48,8 @@ object ExtendedPlugin {
     __obj.asInstanceOf[ExtendedPlugin[TType, O, Model]]
   }
   
-  extension [Self <: ExtendedPlugin[?, ?, ?], TType /* <: ChartType */, O, Model](x: Self & (ExtendedPlugin[TType, O, Model])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtendedPlugin[?, ?, ?], TType /* <: ChartType */, O, Model] (val x: Self & (ExtendedPlugin[TType, O, Model])) extends AnyVal {
     
     inline def setAfterTooltipDraw(
       value: (/* chart */ Chart[ChartType, DefaultDataPoint[ChartType], Any], /* args */ typings.chartJs.anon.Tooltip[Model], /* options */ O) => Unit

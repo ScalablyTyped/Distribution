@@ -22,7 +22,8 @@ object AlertButton {
     __obj.asInstanceOf[AlertButton]
   }
   
-  extension [Self <: AlertButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlertButton] (val x: Self) extends AnyVal {
     
     inline def setOnPress(value: /* value */ js.UndefOr[String] => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
     

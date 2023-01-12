@@ -166,7 +166,8 @@ object SPAnimation {
       __obj.asInstanceOf[Object]
     }
     
-    extension [Self <: Object](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Object] (val x: Self) extends AnyVal {
       
       inline def setRunAnimation(value: () => Unit): Self = StObject.set(x, "RunAnimation", js.Any.fromFunction0(value))
     }
@@ -193,7 +194,8 @@ object SPAnimation {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setGetAttribute(value: Attribute => Double): Self = StObject.set(x, "GetAttribute", js.Any.fromFunction1(value))
       

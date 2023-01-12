@@ -17,7 +17,8 @@ object EosAuthorizationAccount {
     __obj.asInstanceOf[EosAuthorizationAccount]
   }
   
-  extension [Self <: EosAuthorizationAccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EosAuthorizationAccount] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: EosPermissionLevel): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     

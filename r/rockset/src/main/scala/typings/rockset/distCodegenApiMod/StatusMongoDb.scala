@@ -123,7 +123,8 @@ object StatusMongoDb {
     /* 1 */ val SCANNINGTABLE: typings.rockset.distCodegenApiMod.StatusMongoDb.StateEnum.SCANNINGTABLE & Double = js.native
   }
   
-  extension [Self <: StatusMongoDb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusMongoDb] (val x: Self) extends AnyVal {
     
     inline def setScan_end_time(value: String): Self = StObject.set(x, "scan_end_time", value.asInstanceOf[js.Any])
     

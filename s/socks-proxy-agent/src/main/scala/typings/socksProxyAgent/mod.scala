@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[BaseSocksProxyAgentOptions]
     }
     
-    extension [Self <: BaseSocksProxyAgentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseSocksProxyAgentOptions] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object mod {
       __obj.asInstanceOf[SocksProxyAgentOptionsExtra]
     }
     
-    extension [Self <: SocksProxyAgentOptionsExtra](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocksProxyAgentOptionsExtra] (val x: Self) extends AnyVal {
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

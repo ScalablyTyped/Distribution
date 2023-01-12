@@ -21,7 +21,8 @@ object G2LegendTitleCfg {
     __obj.asInstanceOf[G2LegendTitleCfg]
   }
   
-  extension [Self <: G2LegendTitleCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: G2LegendTitleCfg] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

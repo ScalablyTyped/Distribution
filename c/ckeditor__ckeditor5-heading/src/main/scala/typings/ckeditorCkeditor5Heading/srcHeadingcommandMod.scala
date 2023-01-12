@@ -38,7 +38,8 @@ object srcHeadingcommandMod {
       __obj.asInstanceOf[HeadingCommand]
     }
     
-    extension [Self <: HeadingCommand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeadingCommand] (val x: Self) extends AnyVal {
       
       inline def setExecute(value: Value => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
       
@@ -60,7 +61,8 @@ object srcHeadingcommandMod {
         __obj.asInstanceOf[Commands]
       }
       
-      extension [Self <: Commands](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Commands] (val x: Self) extends AnyVal {
         
         inline def setHeadingCommand(value: HeadingCommand): Self = StObject.set(x, "HeadingCommand", value.asInstanceOf[js.Any])
       }

@@ -53,7 +53,8 @@ object SendApiAssetRequest {
     __obj.asInstanceOf[SendApiAssetRequest]
   }
   
-  extension [Self <: SendApiAssetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendApiAssetRequest] (val x: Self) extends AnyVal {
     
     inline def setAssetId(value: string): Self = StObject.set(x, "AssetId", value.asInstanceOf[js.Any])
     

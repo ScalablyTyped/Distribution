@@ -37,7 +37,8 @@ object shortcutsContextMod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setAddShortcut(value: Shortcut => Unit): Self = StObject.set(x, "addShortcut", js.Any.fromFunction1(value))
       
@@ -80,7 +81,8 @@ object shortcutsContextMod {
       __obj.asInstanceOf[Shortcut]
     }
     
-    extension [Self <: Shortcut](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Shortcut] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: Event => Boolean | Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       

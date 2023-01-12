@@ -28,7 +28,8 @@ object DiffRemove {
     __obj.asInstanceOf[DiffRemove]
   }
   
-  extension [Self <: DiffRemove](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiffRemove] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object srcLocalNotificationRepeatTypeMod {
       __obj.asInstanceOf[RepeatType]
     }
     
-    extension [Self <: RepeatType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RepeatType] (val x: Self) extends AnyVal {
       
       inline def setCustomTime(value: custom_time): Self = StObject.set(x, "customTime", value.asInstanceOf[js.Any])
       

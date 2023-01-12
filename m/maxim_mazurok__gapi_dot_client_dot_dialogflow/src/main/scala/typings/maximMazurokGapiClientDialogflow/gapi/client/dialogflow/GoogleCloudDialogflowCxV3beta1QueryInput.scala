@@ -34,7 +34,8 @@ object GoogleCloudDialogflowCxV3beta1QueryInput {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1QueryInput]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3beta1QueryInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1QueryInput] (val x: Self) extends AnyVal {
     
     inline def setAudio(value: GoogleCloudDialogflowCxV3beta1AudioInput): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     

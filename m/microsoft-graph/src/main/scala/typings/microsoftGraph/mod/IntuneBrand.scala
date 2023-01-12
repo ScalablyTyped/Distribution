@@ -55,7 +55,8 @@ object IntuneBrand {
     __obj.asInstanceOf[IntuneBrand]
   }
   
-  extension [Self <: IntuneBrand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntuneBrand] (val x: Self) extends AnyVal {
     
     inline def setContactITEmailAddress(value: NullableOption[String]): Self = StObject.set(x, "contactITEmailAddress", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object ObserveResponse {
     __obj.asInstanceOf[ObserveResponse]
   }
   
-  extension [Self <: ObserveResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObserveResponse] (val x: Self) extends AnyVal {
     
     inline def setBoundingClientRect(value: RectArea): Self = StObject.set(x, "boundingClientRect", value.asInstanceOf[js.Any])
     

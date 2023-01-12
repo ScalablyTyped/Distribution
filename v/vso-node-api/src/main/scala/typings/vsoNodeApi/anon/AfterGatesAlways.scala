@@ -19,7 +19,8 @@ object AfterGatesAlways {
     __obj.asInstanceOf[AfterGatesAlways]
   }
   
-  extension [Self <: AfterGatesAlways](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AfterGatesAlways] (val x: Self) extends AnyVal {
     
     inline def setAfterGatesAlways(value: scala.Double): Self = StObject.set(x, "afterGatesAlways", value.asInstanceOf[js.Any])
     

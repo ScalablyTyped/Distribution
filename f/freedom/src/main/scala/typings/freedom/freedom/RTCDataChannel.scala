@@ -27,7 +27,8 @@ object RTCDataChannel {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setBinary(value: Blob): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       

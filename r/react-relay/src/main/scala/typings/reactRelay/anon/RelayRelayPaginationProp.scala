@@ -16,7 +16,8 @@ object RelayRelayPaginationProp {
     __obj.asInstanceOf[RelayRelayPaginationProp]
   }
   
-  extension [Self <: RelayRelayPaginationProp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelayRelayPaginationProp] (val x: Self) extends AnyVal {
     
     inline def setRelay(value: RelayPaginationProp): Self = StObject.set(x, "relay", value.asInstanceOf[js.Any])
   }

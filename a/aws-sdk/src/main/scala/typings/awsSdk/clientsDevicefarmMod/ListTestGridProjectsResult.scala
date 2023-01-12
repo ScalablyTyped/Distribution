@@ -23,7 +23,8 @@ object ListTestGridProjectsResult {
     __obj.asInstanceOf[ListTestGridProjectsResult]
   }
   
-  extension [Self <: ListTestGridProjectsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTestGridProjectsResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

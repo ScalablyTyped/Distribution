@@ -82,7 +82,8 @@ object typesTooManyRequestsExceptionMod {
       __obj.asInstanceOf[TooManyRequestsException]
     }
     
-    extension [Self <: TooManyRequestsException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooManyRequestsException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.TooManyRequestsException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -119,7 +120,8 @@ object typesTooManyRequestsExceptionMod {
       __obj.asInstanceOf[TooManyRequestsExceptionDetails]
     }
     
-    extension [Self <: TooManyRequestsExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooManyRequestsExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object AddApplicationInputResponse {
     __obj.asInstanceOf[AddApplicationInputResponse]
   }
   
-  extension [Self <: AddApplicationInputResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddApplicationInputResponse] (val x: Self) extends AnyVal {
     
     inline def setApplicationARN(value: ResourceARN): Self = StObject.set(x, "ApplicationARN", value.asInstanceOf[js.Any])
     

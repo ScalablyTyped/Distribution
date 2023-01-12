@@ -22,7 +22,8 @@ object LocalMediaElementSourceProperties {
     __obj.asInstanceOf[LocalMediaElementSourceProperties]
   }
   
-  extension [Self <: LocalMediaElementSourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalMediaElementSourceProperties] (val x: Self) extends AnyVal {
     
     inline def setElements(value: CollectionProperties[ImageElementPropertiestyp | VideoElementPropertiestyp]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     

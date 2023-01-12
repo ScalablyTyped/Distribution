@@ -365,7 +365,8 @@ object sapFGridContainerSettingsMod {
       __obj.asInstanceOf[GridContainerSettingsSettings]
     }
     
-    extension [Self <: GridContainerSettingsSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridContainerSettingsSettings] (val x: Self) extends AnyVal {
       
       inline def setColumnSize(value: CSSSize | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "columnSize", value.asInstanceOf[js.Any])
       

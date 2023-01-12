@@ -101,7 +101,8 @@ object CreateContainerRecipeRequest {
     __obj.asInstanceOf[CreateContainerRecipeRequest]
   }
   
-  extension [Self <: CreateContainerRecipeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateContainerRecipeRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

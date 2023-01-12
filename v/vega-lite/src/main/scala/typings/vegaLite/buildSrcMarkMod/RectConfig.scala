@@ -34,7 +34,8 @@ object RectConfig {
     __obj.asInstanceOf[RectConfig[ES]]
   }
   
-  extension [Self <: RectConfig[?], ES /* <: ExprRef | SignalRef */](x: Self & RectConfig[ES]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RectConfig[?], ES /* <: ExprRef | SignalRef */] (val x: Self & RectConfig[ES]) extends AnyVal {
     
     inline def setContinuousBandSize(value: Double): Self = StObject.set(x, "continuousBandSize", value.asInstanceOf[js.Any])
     

@@ -83,7 +83,8 @@ object google {
         __obj.asInstanceOf[RunnerFunctions]
       }
       
-      extension [Self <: RunnerFunctions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RunnerFunctions] (val x: Self) extends AnyVal {
         
         inline def setWithFailureHandler(
           value: js.Function2[/* error */ js.Error, /* object */ js.UndefOr[Any], Unit] => RunnerFunctions & PublicEndpoints
@@ -124,7 +125,8 @@ object google {
         __obj.asInstanceOf[UrlLocation]
       }
       
-      extension [Self <: UrlLocation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UrlLocation] (val x: Self) extends AnyVal {
         
         inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
         
@@ -156,7 +158,8 @@ object google {
           __obj.asInstanceOf[HistoryChangeEvent]
         }
         
-        extension [Self <: HistoryChangeEvent](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: HistoryChangeEvent] (val x: Self) extends AnyVal {
           
           inline def setLocation(value: UrlLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
           

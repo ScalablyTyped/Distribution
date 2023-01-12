@@ -21,7 +21,8 @@ object ArtifactProvider {
     __obj.asInstanceOf[ArtifactProvider]
   }
   
-  extension [Self <: ArtifactProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactProvider] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object TableCloseToken {
     __obj.asInstanceOf[TableCloseToken]
   }
   
-  extension [Self <: TableCloseToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableCloseToken] (val x: Self) extends AnyVal {
     
     inline def setType(value: table_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

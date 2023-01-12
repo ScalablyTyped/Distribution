@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Prompt]
     }
     
-    extension [Self <: Prompt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Prompt] (val x: Self) extends AnyVal {
       
       inline def setPrompt(
         value: (/* questions */ QuestionCollection[Answers], /* initialAnswers */ js.UndefOr[Partial[Answers]]) => js.Promise[Answers]

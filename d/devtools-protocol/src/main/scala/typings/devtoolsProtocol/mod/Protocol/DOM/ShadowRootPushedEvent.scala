@@ -23,7 +23,8 @@ object ShadowRootPushedEvent {
     __obj.asInstanceOf[ShadowRootPushedEvent]
   }
   
-  extension [Self <: ShadowRootPushedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShadowRootPushedEvent] (val x: Self) extends AnyVal {
     
     inline def setHostId(value: NodeId): Self = StObject.set(x, "hostId", value.asInstanceOf[js.Any])
     

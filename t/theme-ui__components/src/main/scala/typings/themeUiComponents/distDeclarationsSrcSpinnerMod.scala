@@ -33,7 +33,8 @@ object distDeclarationsSrcSpinnerMod {
       __obj.asInstanceOf[SpinnerProps]
     }
     
-    extension [Self <: SpinnerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpinnerProps] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       

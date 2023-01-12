@@ -80,7 +80,8 @@ object mod {
       __obj.asInstanceOf[RollupBabelCustomInputPlugin]
     }
     
-    extension [Self <: RollupBabelCustomInputPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RollupBabelCustomInputPlugin] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: RollupBabelCustomInputPluginConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -129,7 +130,8 @@ object mod {
       __obj.asInstanceOf[RollupBabelCustomOutputPlugin]
     }
     
-    extension [Self <: RollupBabelCustomOutputPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RollupBabelCustomOutputPlugin] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: RollupBabelCustomOutputPluginConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -179,7 +181,8 @@ object mod {
       __obj.asInstanceOf[RollupBabelCustomPluginConfigOptions]
     }
     
-    extension [Self <: RollupBabelCustomPluginConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RollupBabelCustomPluginConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -209,7 +212,8 @@ object mod {
       __obj.asInstanceOf[RollupBabelCustomPluginResultOptions]
     }
     
-    extension [Self <: RollupBabelCustomPluginResultOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RollupBabelCustomPluginResultOptions] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -367,7 +371,8 @@ object mod {
       __obj.asInstanceOf[RollupBabelInputPluginOptions]
     }
     
-    extension [Self <: RollupBabelInputPluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RollupBabelInputPluginOptions] (val x: Self) extends AnyVal {
       
       inline def setAssumptions(value: StringDictionary[Boolean]): Self = StObject.set(x, "assumptions", value.asInstanceOf[js.Any])
       
@@ -790,7 +795,8 @@ object mod {
       __obj.asInstanceOf[RollupBabelOutputPluginOptions]
     }
     
-    extension [Self <: RollupBabelOutputPluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RollupBabelOutputPluginOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowAllFormats(value: Boolean): Self = StObject.set(x, "allowAllFormats", value.asInstanceOf[js.Any])
       

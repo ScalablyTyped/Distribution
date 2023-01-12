@@ -24,7 +24,8 @@ object SupToken {
     __obj.asInstanceOf[SupToken]
   }
   
-  extension [Self <: SupToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupToken] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

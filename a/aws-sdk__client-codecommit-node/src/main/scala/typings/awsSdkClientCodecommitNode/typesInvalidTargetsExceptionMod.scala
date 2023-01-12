@@ -21,7 +21,8 @@ object typesInvalidTargetsExceptionMod {
       __obj.asInstanceOf[InvalidTargetsException]
     }
     
-    extension [Self <: InvalidTargetsException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidTargetsException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidTargetsException

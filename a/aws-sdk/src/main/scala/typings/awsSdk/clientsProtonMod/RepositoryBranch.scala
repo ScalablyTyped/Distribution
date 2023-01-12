@@ -33,7 +33,8 @@ object RepositoryBranch {
     __obj.asInstanceOf[RepositoryBranch]
   }
   
-  extension [Self <: RepositoryBranch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepositoryBranch] (val x: Self) extends AnyVal {
     
     inline def setArn(value: RepositoryArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

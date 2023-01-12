@@ -67,7 +67,8 @@ object IgGridScrollSettings {
     __obj.asInstanceOf[IgGridScrollSettings]
   }
   
-  extension [Self <: IgGridScrollSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridScrollSettings] (val x: Self) extends AnyVal {
     
     inline def setInertiaDuration(value: Double): Self = StObject.set(x, "inertiaDuration", value.asInstanceOf[js.Any])
     

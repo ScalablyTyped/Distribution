@@ -19,7 +19,8 @@ object PatternBase {
     __obj.asInstanceOf[PatternBase]
   }
   
-  extension [Self <: PatternBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatternBase] (val x: Self) extends AnyVal {
     
     inline def setTypeAnnotation(value: TsTypeAnnotation): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     

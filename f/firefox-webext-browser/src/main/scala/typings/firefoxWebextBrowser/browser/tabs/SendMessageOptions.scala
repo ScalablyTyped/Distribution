@@ -16,7 +16,8 @@ object SendMessageOptions {
     __obj.asInstanceOf[SendMessageOptions]
   }
   
-  extension [Self <: SendMessageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendMessageOptions] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

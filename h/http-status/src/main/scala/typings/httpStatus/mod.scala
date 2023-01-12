@@ -1122,7 +1122,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HttpStatus]
     }
     
-    extension [Self <: HttpStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpStatus] (val x: Self) extends AnyVal {
       
       inline def set100(value: String): Self = StObject.set(x, "100", value.asInstanceOf[js.Any])
       
@@ -1817,7 +1818,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HttpStatusClasses]
     }
     
-    extension [Self <: HttpStatusClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpStatusClasses] (val x: Self) extends AnyVal {
       
       inline def set1xx(value: String): Self = StObject.set(x, "1xx", value.asInstanceOf[js.Any])
       
@@ -2023,7 +2025,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HttpStatusCloudfare]
     }
     
-    extension [Self <: HttpStatusCloudfare](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpStatusCloudfare] (val x: Self) extends AnyVal {
       
       inline def set520(value: String): Self = StObject.set(x, "520", value.asInstanceOf[js.Any])
       
@@ -2129,7 +2132,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HttpStatusExtra]
     }
     
-    extension [Self <: HttpStatusExtra](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpStatusExtra] (val x: Self) extends AnyVal {
       
       inline def setCloudflare(value: HttpStatusCloudfare): Self = StObject.set(x, "cloudflare", value.asInstanceOf[js.Any])
       
@@ -2210,7 +2214,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HttpStatusIis]
     }
     
-    extension [Self <: HttpStatusIis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpStatusIis] (val x: Self) extends AnyVal {
       
       inline def set440(value: String): Self = StObject.set(x, "440", value.asInstanceOf[js.Any])
       
@@ -2370,7 +2375,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HttpStatusNginx]
     }
     
-    extension [Self <: HttpStatusNginx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpStatusNginx] (val x: Self) extends AnyVal {
       
       inline def set444(value: String): Self = StObject.set(x, "444", value.asInstanceOf[js.Any])
       
@@ -2598,7 +2604,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HttpStatusUnofficial]
     }
     
-    extension [Self <: HttpStatusUnofficial](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpStatusUnofficial] (val x: Self) extends AnyVal {
       
       inline def set103(value: String): Self = StObject.set(x, "103", value.asInstanceOf[js.Any])
       

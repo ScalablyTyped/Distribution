@@ -23,7 +23,8 @@ object GetPrefetchScheduleRequest {
     __obj.asInstanceOf[GetPrefetchScheduleRequest]
   }
   
-  extension [Self <: GetPrefetchScheduleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPrefetchScheduleRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: _String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

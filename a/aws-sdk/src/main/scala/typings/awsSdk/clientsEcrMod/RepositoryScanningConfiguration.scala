@@ -38,7 +38,8 @@ object RepositoryScanningConfiguration {
     __obj.asInstanceOf[RepositoryScanningConfiguration]
   }
   
-  extension [Self <: RepositoryScanningConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepositoryScanningConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAppliedScanFilters(value: ScanningRepositoryFilterList): Self = StObject.set(x, "appliedScanFilters", value.asInstanceOf[js.Any])
     

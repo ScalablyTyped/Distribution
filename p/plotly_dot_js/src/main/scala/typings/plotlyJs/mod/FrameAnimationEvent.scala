@@ -19,7 +19,8 @@ object FrameAnimationEvent {
     __obj.asInstanceOf[FrameAnimationEvent]
   }
   
-  extension [Self <: FrameAnimationEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameAnimationEvent] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: typings.plotlyJs.anon.Frame): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

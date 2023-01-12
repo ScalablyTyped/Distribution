@@ -28,7 +28,8 @@ object UserExtensionPolicy {
     __obj.asInstanceOf[UserExtensionPolicy]
   }
   
-  extension [Self <: UserExtensionPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserExtensionPolicy] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

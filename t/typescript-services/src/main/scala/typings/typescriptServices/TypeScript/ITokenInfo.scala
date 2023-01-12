@@ -19,7 +19,8 @@ object ITokenInfo {
     __obj.asInstanceOf[ITokenInfo]
   }
   
-  extension [Self <: ITokenInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITokenInfo] (val x: Self) extends AnyVal {
     
     inline def setLeadingTrivia(value: js.Array[ISyntaxTrivia]): Self = StObject.set(x, "leadingTrivia", value.asInstanceOf[js.Any])
     

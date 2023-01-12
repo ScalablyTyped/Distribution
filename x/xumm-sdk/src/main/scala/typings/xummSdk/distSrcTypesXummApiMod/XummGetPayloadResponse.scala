@@ -32,7 +32,8 @@ object XummGetPayloadResponse {
     __obj.asInstanceOf[XummGetPayloadResponse]
   }
   
-  extension [Self <: XummGetPayloadResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XummGetPayloadResponse] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Description): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     

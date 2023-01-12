@@ -16,7 +16,8 @@ object SimpleSecretHolderProto {
     __obj.asInstanceOf[SimpleSecretHolderProto]
   }
   
-  extension [Self <: SimpleSecretHolderProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleSecretHolderProto] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: SimpleSecretLabelProto): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

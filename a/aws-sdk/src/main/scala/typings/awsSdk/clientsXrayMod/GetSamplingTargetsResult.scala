@@ -28,7 +28,8 @@ object GetSamplingTargetsResult {
     __obj.asInstanceOf[GetSamplingTargetsResult]
   }
   
-  extension [Self <: GetSamplingTargetsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSamplingTargetsResult] (val x: Self) extends AnyVal {
     
     inline def setLastRuleModification(value: js.Date): Self = StObject.set(x, "LastRuleModification", value.asInstanceOf[js.Any])
     

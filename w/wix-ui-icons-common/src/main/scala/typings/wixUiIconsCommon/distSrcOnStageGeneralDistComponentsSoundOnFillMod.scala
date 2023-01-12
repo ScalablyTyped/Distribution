@@ -27,7 +27,8 @@ object distSrcOnStageGeneralDistComponentsSoundOnFillMod extends Shortcut {
       __obj.asInstanceOf[SoundOnFillProps]
     }
     
-    extension [Self <: SoundOnFillProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SoundOnFillProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

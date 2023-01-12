@@ -32,7 +32,8 @@ object resourcesOrganizationMod {
       __obj.asInstanceOf[Delegatee]
     }
     
-    extension [Self <: Delegatee](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delegatee] (val x: Self) extends AnyVal {
       
       inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object resourcesOrganizationMod {
       __obj.asInstanceOf[OnfleetOrganization]
     }
     
-    extension [Self <: OnfleetOrganization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnfleetOrganization] (val x: Self) extends AnyVal {
       
       inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       

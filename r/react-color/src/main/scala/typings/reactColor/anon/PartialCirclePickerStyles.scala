@@ -17,7 +17,8 @@ object PartialCirclePickerStyles {
     __obj.asInstanceOf[PartialCirclePickerStyles]
   }
   
-  extension [Self <: PartialCirclePickerStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCirclePickerStyles] (val x: Self) extends AnyVal {
     
     inline def setCard(value: CSSProperties): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     

@@ -273,7 +273,8 @@ object mod {
       __obj.asInstanceOf[FrisbyResponse]
     }
     
-    extension [Self <: FrisbyResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrisbyResponse] (val x: Self) extends AnyVal {
       
       inline def setBody(value: ReadableStream): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

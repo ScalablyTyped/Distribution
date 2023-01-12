@@ -36,7 +36,8 @@ object tip {
       __obj.asInstanceOf[typings.extjs.Ext.tip.IQuickTip]
     }
     
-    extension [Self <: typings.extjs.Ext.tip.IQuickTip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.tip.IQuickTip] (val x: Self) extends AnyVal {
       
       inline def setCancelShow(value: /* el */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "cancelShow", js.Any.fromFunction1(value))
       
@@ -72,7 +73,8 @@ object tip {
       __obj.asInstanceOf[typings.extjs.Ext.tip.ITip]
     }
     
-    extension [Self <: typings.extjs.Ext.tip.ITip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.tip.ITip] (val x: Self) extends AnyVal {
       
       inline def setConstrainPosition(value: Boolean): Self = StObject.set(x, "constrainPosition", value.asInstanceOf[js.Any])
       
@@ -132,7 +134,8 @@ object tip {
       __obj.asInstanceOf[typings.extjs.Ext.tip.IToolTip]
     }
     
-    extension [Self <: typings.extjs.Ext.tip.IToolTip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.tip.IToolTip] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: java.lang.String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object FilterMenuOperatorsString {
     __obj.asInstanceOf[FilterMenuOperatorsString]
   }
   
-  extension [Self <: FilterMenuOperatorsString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterMenuOperatorsString] (val x: Self) extends AnyVal {
     
     inline def setContains(value: String): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     

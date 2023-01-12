@@ -32,7 +32,8 @@ object WebAssembly {
       __obj.asInstanceOf[Global]
     }
     
-    extension [Self <: Global](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -53,7 +54,8 @@ object WebAssembly {
       __obj.asInstanceOf[GlobalDescriptor]
     }
     
-    extension [Self <: GlobalDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalDescriptor] (val x: Self) extends AnyVal {
       
       inline def setMutable(value: scala.Boolean): Self = StObject.set(x, "mutable", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object WebAssembly {
       __obj.asInstanceOf[Instance]
     }
     
-    extension [Self <: Instance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
       
       inline def setExports(value: Exports): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     }
@@ -122,7 +125,8 @@ object WebAssembly {
       __obj.asInstanceOf[Memory]
     }
     
-    extension [Self <: Memory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Memory] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -148,7 +152,8 @@ object WebAssembly {
       __obj.asInstanceOf[MemoryDescriptor]
     }
     
-    extension [Self <: MemoryDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemoryDescriptor] (val x: Self) extends AnyVal {
       
       inline def setInitial(value: Double): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
       
@@ -179,7 +184,8 @@ object WebAssembly {
       __obj.asInstanceOf[ModuleExportDescriptor]
     }
     
-    extension [Self <: ModuleExportDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleExportDescriptor] (val x: Self) extends AnyVal {
       
       inline def setKind(value: ImportExportKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -205,7 +211,8 @@ object WebAssembly {
       __obj.asInstanceOf[ModuleImportDescriptor]
     }
     
-    extension [Self <: ModuleImportDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleImportDescriptor] (val x: Self) extends AnyVal {
       
       inline def setKind(value: ImportExportKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -257,7 +264,8 @@ object WebAssembly {
       __obj.asInstanceOf[TableDescriptor]
     }
     
-    extension [Self <: TableDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableDescriptor] (val x: Self) extends AnyVal {
       
       inline def setElement(value: TableKind): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -323,7 +331,8 @@ object WebAssembly {
       __obj.asInstanceOf[WebAssemblyInstantiatedSource]
     }
     
-    extension [Self <: WebAssemblyInstantiatedSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebAssemblyInstantiatedSource] (val x: Self) extends AnyVal {
       
       inline def setInstance(value: Instance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       

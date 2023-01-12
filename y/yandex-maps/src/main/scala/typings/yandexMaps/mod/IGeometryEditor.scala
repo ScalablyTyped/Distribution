@@ -30,7 +30,8 @@ object IGeometryEditor {
     __obj.asInstanceOf[IGeometryEditor]
   }
   
-  extension [Self <: IGeometryEditor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeometryEditor] (val x: Self) extends AnyVal {
     
     inline def setGeometry(value: IGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     

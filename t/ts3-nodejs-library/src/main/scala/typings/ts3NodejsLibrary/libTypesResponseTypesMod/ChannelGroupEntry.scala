@@ -48,7 +48,8 @@ object ChannelGroupEntry {
     __obj.asInstanceOf[ChannelGroupEntry]
   }
   
-  extension [Self <: ChannelGroupEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelGroupEntry] (val x: Self) extends AnyVal {
     
     inline def setCgid(value: String): Self = StObject.set(x, "cgid", value.asInstanceOf[js.Any])
     

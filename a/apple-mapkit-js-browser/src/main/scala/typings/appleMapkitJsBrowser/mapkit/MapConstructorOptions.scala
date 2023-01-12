@@ -149,7 +149,8 @@ object MapConstructorOptions {
     __obj.asInstanceOf[MapConstructorOptions]
   }
   
-  extension [Self <: MapConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setAnnotationForCluster(value: /* annotation */ Annotation => Unit): Self = StObject.set(x, "annotationForCluster", js.Any.fromFunction1(value))
     

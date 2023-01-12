@@ -22,7 +22,8 @@ object GooglePrivacyDlpV2RecordLocation {
     __obj.asInstanceOf[GooglePrivacyDlpV2RecordLocation]
   }
   
-  extension [Self <: GooglePrivacyDlpV2RecordLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2RecordLocation] (val x: Self) extends AnyVal {
     
     inline def setFieldId(value: GooglePrivacyDlpV2FieldId): Self = StObject.set(x, "fieldId", value.asInstanceOf[js.Any])
     

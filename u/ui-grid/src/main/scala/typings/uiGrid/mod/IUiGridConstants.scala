@@ -93,7 +93,8 @@ object IUiGridConstants {
     __obj.asInstanceOf[IUiGridConstants]
   }
   
-  extension [Self <: IUiGridConstants](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUiGridConstants] (val x: Self) extends AnyVal {
     
     inline def setAPOS_REGEXP(value: js.RegExp): Self = StObject.set(x, "APOS_REGEXP", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object StreamingComputationConfig {
     __obj.asInstanceOf[StreamingComputationConfig]
   }
   
-  extension [Self <: StreamingComputationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamingComputationConfig] (val x: Self) extends AnyVal {
     
     inline def setComputationId(value: String): Self = StObject.set(x, "computationId", value.asInstanceOf[js.Any])
     

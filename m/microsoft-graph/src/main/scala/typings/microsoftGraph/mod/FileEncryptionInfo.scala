@@ -34,7 +34,8 @@ object FileEncryptionInfo {
     __obj.asInstanceOf[FileEncryptionInfo]
   }
   
-  extension [Self <: FileEncryptionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileEncryptionInfo] (val x: Self) extends AnyVal {
     
     inline def setEncryptionKey(value: NullableOption[String]): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
     

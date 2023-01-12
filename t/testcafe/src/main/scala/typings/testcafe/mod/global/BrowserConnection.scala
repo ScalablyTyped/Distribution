@@ -27,7 +27,8 @@ object BrowserConnection {
     __obj.asInstanceOf[BrowserConnection]
   }
   
-  extension [Self <: BrowserConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserConnection] (val x: Self) extends AnyVal {
     
     inline def setOnce(value: (ready, js.Function) => Unit): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
     

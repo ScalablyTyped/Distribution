@@ -19,7 +19,8 @@ object BasePaymentHeaders {
     __obj.asInstanceOf[BasePaymentHeaders]
   }
   
-  extension [Self <: BasePaymentHeaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasePaymentHeaders] (val x: Self) extends AnyVal {
     
     inline def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
     

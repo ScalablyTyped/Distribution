@@ -120,7 +120,8 @@ object CoreOptions {
     __obj.asInstanceOf[CoreOptions]
   }
   
-  extension [Self <: CoreOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreOptions] (val x: Self) extends AnyVal {
     
     inline def setAgent(value: Agent | typings.node.httpsMod.Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     

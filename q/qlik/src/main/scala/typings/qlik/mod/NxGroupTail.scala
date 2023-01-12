@@ -17,7 +17,8 @@ object NxGroupTail {
     __obj.asInstanceOf[NxGroupTail]
   }
   
-  extension [Self <: NxGroupTail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NxGroupTail] (val x: Self) extends AnyVal {
     
     inline def setQDown(value: Double): Self = StObject.set(x, "qDown", value.asInstanceOf[js.Any])
     

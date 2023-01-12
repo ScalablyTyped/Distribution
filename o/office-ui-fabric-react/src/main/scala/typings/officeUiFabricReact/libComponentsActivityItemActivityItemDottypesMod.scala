@@ -112,7 +112,8 @@ object libComponentsActivityItemActivityItemDottypesMod {
       __obj.asInstanceOf[IActivityItemProps]
     }
     
-    extension [Self <: IActivityItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IActivityItemProps] (val x: Self) extends AnyVal {
       
       inline def setActivityDescription(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "activityDescription", value.asInstanceOf[js.Any])
       
@@ -286,7 +287,8 @@ object libComponentsActivityItemActivityItemDottypesMod {
       __obj.asInstanceOf[IActivityItemStyles]
     }
     
-    extension [Self <: IActivityItemStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IActivityItemStyles] (val x: Self) extends AnyVal {
       
       inline def setActivityContent(value: IStyle): Self = StObject.set(x, "activityContent", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[ScriptMatchingPatternHash]
     }
     
-    extension [Self <: ScriptMatchingPatternHash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScriptMatchingPatternHash] (val x: Self) extends AnyVal {
       
       inline def setChunks(value: initial | async | all): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
       

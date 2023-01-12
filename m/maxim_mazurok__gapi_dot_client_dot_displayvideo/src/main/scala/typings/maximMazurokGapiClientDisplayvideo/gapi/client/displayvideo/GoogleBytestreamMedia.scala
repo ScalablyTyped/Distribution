@@ -16,7 +16,8 @@ object GoogleBytestreamMedia {
     __obj.asInstanceOf[GoogleBytestreamMedia]
   }
   
-  extension [Self <: GoogleBytestreamMedia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleBytestreamMedia] (val x: Self) extends AnyVal {
     
     inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     

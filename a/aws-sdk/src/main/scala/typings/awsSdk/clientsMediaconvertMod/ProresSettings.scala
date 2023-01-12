@@ -78,7 +78,8 @@ object ProresSettings {
     __obj.asInstanceOf[ProresSettings]
   }
   
-  extension [Self <: ProresSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProresSettings] (val x: Self) extends AnyVal {
     
     inline def setChromaSampling(value: ProresChromaSampling): Self = StObject.set(x, "ChromaSampling", value.asInstanceOf[js.Any])
     

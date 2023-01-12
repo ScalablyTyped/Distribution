@@ -17,7 +17,8 @@ object Elapsed {
     __obj.asInstanceOf[Elapsed]
   }
   
-  extension [Self <: Elapsed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Elapsed] (val x: Self) extends AnyVal {
     
     inline def setElapsed(value: Double): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
     

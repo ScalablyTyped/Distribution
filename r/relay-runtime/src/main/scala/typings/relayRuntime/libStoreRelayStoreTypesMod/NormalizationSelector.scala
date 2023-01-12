@@ -22,7 +22,8 @@ object NormalizationSelector {
     __obj.asInstanceOf[NormalizationSelector]
   }
   
-  extension [Self <: NormalizationSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizationSelector] (val x: Self) extends AnyVal {
     
     inline def setDataID(value: DataID): Self = StObject.set(x, "dataID", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object ListSmimeInfoResponse {
     __obj.asInstanceOf[ListSmimeInfoResponse]
   }
   
-  extension [Self <: ListSmimeInfoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSmimeInfoResponse] (val x: Self) extends AnyVal {
     
     inline def setSmimeInfo(value: js.Array[SmimeInfo]): Self = StObject.set(x, "smimeInfo", value.asInstanceOf[js.Any])
     

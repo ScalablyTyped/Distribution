@@ -20,7 +20,8 @@ object UpdateResourceCollectionRequest {
     __obj.asInstanceOf[UpdateResourceCollectionRequest]
   }
   
-  extension [Self <: UpdateResourceCollectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateResourceCollectionRequest] (val x: Self) extends AnyVal {
     
     inline def setAction(value: UpdateResourceCollectionAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object TakeResponseBodyAsStreamRequest {
     __obj.asInstanceOf[TakeResponseBodyAsStreamRequest]
   }
   
-  extension [Self <: TakeResponseBodyAsStreamRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TakeResponseBodyAsStreamRequest] (val x: Self) extends AnyVal {
     
     inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }

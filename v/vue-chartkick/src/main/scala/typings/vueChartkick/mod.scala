@@ -25,7 +25,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueChartkickPlugin]
     }
     
-    extension [Self <: VueChartkickPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueChartkickPlugin] (val x: Self) extends AnyVal {
       
       inline def setAddAdapter(value: Any => Unit): Self = StObject.set(x, "addAdapter", js.Any.fromFunction1(value))
       

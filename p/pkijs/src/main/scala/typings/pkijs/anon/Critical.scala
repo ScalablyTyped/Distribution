@@ -19,7 +19,8 @@ object Critical {
     __obj.asInstanceOf[Critical]
   }
   
-  extension [Self <: Critical](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Critical] (val x: Self) extends AnyVal {
     
     inline def setCritical(value: String): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
     

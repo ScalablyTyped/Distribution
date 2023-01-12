@@ -26,7 +26,8 @@ object ScriptReferenceHost {
     __obj.asInstanceOf[ScriptReferenceHost]
   }
   
-  extension [Self <: ScriptReferenceHost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptReferenceHost] (val x: Self) extends AnyVal {
     
     inline def setGetCompilerOptions(value: () => CompilerOptions): Self = StObject.set(x, "getCompilerOptions", js.Any.fromFunction0(value))
     

@@ -43,7 +43,8 @@ object ListAuditTasksRequest {
     __obj.asInstanceOf[ListAuditTasksRequest]
   }
   
-  extension [Self <: ListAuditTasksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAuditTasksRequest] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

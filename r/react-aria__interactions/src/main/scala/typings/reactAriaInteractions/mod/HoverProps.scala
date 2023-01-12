@@ -19,7 +19,8 @@ object HoverProps {
     __obj.asInstanceOf[HoverProps]
   }
   
-  extension [Self <: HoverProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoverProps] (val x: Self) extends AnyVal {
     
     inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
     

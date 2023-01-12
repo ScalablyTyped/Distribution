@@ -29,7 +29,8 @@ object IncludeEventTypeInformation {
     __obj.asInstanceOf[IncludeEventTypeInformation]
   }
   
-  extension [Self <: IncludeEventTypeInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeEventTypeInformation] (val x: Self) extends AnyVal {
     
     inline def setIncludeEventTypeInformation(value: scala.Double): Self = StObject.set(x, "includeEventTypeInformation", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ObserverBaseOpts {
     __obj.asInstanceOf[ObserverBaseOpts]
   }
   
-  extension [Self <: ObserverBaseOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObserverBaseOpts] (val x: Self) extends AnyVal {
     
     inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

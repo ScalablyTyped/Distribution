@@ -21,7 +21,8 @@ object ShareOptions {
     __obj.asInstanceOf[ShareOptions]
   }
   
-  extension [Self <: ShareOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareOptions] (val x: Self) extends AnyVal {
     
     inline def setDialogTitle(value: String): Self = StObject.set(x, "dialogTitle", value.asInstanceOf[js.Any])
     

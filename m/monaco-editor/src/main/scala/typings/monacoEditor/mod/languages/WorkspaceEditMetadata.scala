@@ -19,7 +19,8 @@ object WorkspaceEditMetadata {
     __obj.asInstanceOf[WorkspaceEditMetadata]
   }
   
-  extension [Self <: WorkspaceEditMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceEditMetadata] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

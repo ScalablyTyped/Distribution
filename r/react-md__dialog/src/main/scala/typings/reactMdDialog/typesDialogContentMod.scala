@@ -33,7 +33,8 @@ object typesDialogContentMod {
       __obj.asInstanceOf[DialogContentProps]
     }
     
-    extension [Self <: DialogContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogContentProps] (val x: Self) extends AnyVal {
       
       inline def setDisablePadding(value: Boolean): Self = StObject.set(x, "disablePadding", value.asInstanceOf[js.Any])
       

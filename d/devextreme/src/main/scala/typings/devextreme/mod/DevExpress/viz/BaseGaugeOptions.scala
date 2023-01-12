@@ -69,7 +69,8 @@ object BaseGaugeOptions {
     __obj.asInstanceOf[BaseGaugeOptions[TComponent]]
   }
   
-  extension [Self <: BaseGaugeOptions[?], TComponent](x: Self & BaseGaugeOptions[TComponent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseGaugeOptions[?], TComponent] (val x: Self & BaseGaugeOptions[TComponent]) extends AnyVal {
     
     inline def setAnimation(value: BaseGaugeAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

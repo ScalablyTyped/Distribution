@@ -90,7 +90,8 @@ object distComponentsTypesRadioMod {
       __obj.asInstanceOf[RadiosTypeKnob]
     }
     
-    extension [Self <: RadiosTypeKnob](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadiosTypeKnob] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: RadiosTypeOptionsProp[RadiosTypeKnobValue]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
@@ -115,7 +116,8 @@ object distComponentsTypesRadioMod {
       __obj.asInstanceOf[RadiosTypeProps]
     }
     
-    extension [Self <: RadiosTypeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadiosTypeProps] (val x: Self) extends AnyVal {
       
       inline def setKnob(value: RadiosTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     }
@@ -132,7 +134,8 @@ object distComponentsTypesRadioMod {
       __obj.asInstanceOf[RadiosWrapperProps]
     }
     
-    extension [Self <: RadiosWrapperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadiosWrapperProps] (val x: Self) extends AnyVal {
       
       inline def setIsInline(value: Boolean): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
     }

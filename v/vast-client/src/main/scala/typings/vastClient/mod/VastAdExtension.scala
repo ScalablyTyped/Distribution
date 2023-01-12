@@ -21,7 +21,8 @@ object VastAdExtension {
     __obj.asInstanceOf[VastAdExtension]
   }
   
-  extension [Self <: VastAdExtension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VastAdExtension] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: VastAdAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

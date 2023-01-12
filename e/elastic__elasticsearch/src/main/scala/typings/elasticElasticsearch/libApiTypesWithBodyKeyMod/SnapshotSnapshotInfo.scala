@@ -56,7 +56,8 @@ object SnapshotSnapshotInfo {
     __obj.asInstanceOf[SnapshotSnapshotInfo]
   }
   
-  extension [Self <: SnapshotSnapshotInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotSnapshotInfo] (val x: Self) extends AnyVal {
     
     inline def setData_streams(value: js.Array[String]): Self = StObject.set(x, "data_streams", value.asInstanceOf[js.Any])
     

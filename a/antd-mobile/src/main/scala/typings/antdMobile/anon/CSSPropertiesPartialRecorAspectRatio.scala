@@ -9971,7 +9971,8 @@ object CSSPropertiesPartialRecorAspectRatio {
     __obj.asInstanceOf[CSSPropertiesPartialRecorAspectRatio]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorAspectRatio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorAspectRatio] (val x: Self) extends AnyVal {
     
     inline def `set--sticky-offset-top`(value: String): Self = StObject.set(x, "--sticky-offset-top", value.asInstanceOf[js.Any])
     

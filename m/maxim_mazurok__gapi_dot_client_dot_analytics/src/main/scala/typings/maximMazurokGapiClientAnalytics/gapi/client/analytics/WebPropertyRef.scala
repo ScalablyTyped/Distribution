@@ -31,7 +31,8 @@ object WebPropertyRef {
     __obj.asInstanceOf[WebPropertyRef]
   }
   
-  extension [Self <: WebPropertyRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebPropertyRef] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

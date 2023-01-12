@@ -26,7 +26,8 @@ object R3DeclareInjectorMetadata {
     __obj.asInstanceOf[R3DeclareInjectorMetadata]
   }
   
-  extension [Self <: R3DeclareInjectorMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3DeclareInjectorMetadata] (val x: Self) extends AnyVal {
     
     inline def setImports(value: js.Array[Expression]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     

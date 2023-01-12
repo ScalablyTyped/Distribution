@@ -18,7 +18,8 @@ object AnimationTimer {
     __obj.asInstanceOf[AnimationTimer]
   }
   
-  extension [Self <: AnimationTimer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationTimer] (val x: Self) extends AnyVal {
     
     inline def setAnimationTimer(value: default): Self = StObject.set(x, "animationTimer", value.asInstanceOf[js.Any])
     

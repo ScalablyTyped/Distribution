@@ -25,7 +25,8 @@ object AdWordsReport {
     __obj.asInstanceOf[AdWordsReport]
   }
   
-  extension [Self <: AdWordsReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdWordsReport] (val x: Self) extends AnyVal {
     
     inline def setExportToSheet(value: Sheet => Unit): Self = StObject.set(x, "exportToSheet", js.Any.fromFunction1(value))
     

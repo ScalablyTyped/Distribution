@@ -173,7 +173,8 @@ object Bloodhound {
       __obj.asInstanceOf[BloodhoundOptions[T]]
     }
     
-    extension [Self <: BloodhoundOptions[?], T](x: Self & BloodhoundOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BloodhoundOptions[?], T] (val x: Self & BloodhoundOptions[T]) extends AnyVal {
       
       inline def setDatumTokenizer(value: T => js.Array[String]): Self = StObject.set(x, "datumTokenizer", js.Any.fromFunction1(value))
       
@@ -299,7 +300,8 @@ object Bloodhound {
       __obj.asInstanceOf[PrefetchOptions[T]]
     }
     
-    extension [Self <: PrefetchOptions[?], T](x: Self & PrefetchOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrefetchOptions[?], T] (val x: Self & PrefetchOptions[T]) extends AnyVal {
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -397,7 +399,8 @@ object Bloodhound {
       __obj.asInstanceOf[RemoteOptions[T]]
     }
     
-    extension [Self <: RemoteOptions[?], T](x: Self & RemoteOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteOptions[?], T] (val x: Self & RemoteOptions[T]) extends AnyVal {
       
       inline def setFilter(value: /* response */ T => T): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
@@ -454,7 +457,8 @@ object Bloodhound {
       __obj.asInstanceOf[Tokenizers]
     }
     
-    extension [Self <: Tokenizers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tokenizers] (val x: Self) extends AnyVal {
       
       inline def setNonword(value: String => js.Array[String]): Self = StObject.set(x, "nonword", js.Any.fromFunction1(value))
       

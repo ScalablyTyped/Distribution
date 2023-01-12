@@ -27,7 +27,8 @@ object AutoRefresh {
     __obj.asInstanceOf[AutoRefresh]
   }
   
-  extension [Self <: AutoRefresh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoRefresh] (val x: Self) extends AnyVal {
     
     inline def setAutoRefresh(value: Boolean): Self = StObject.set(x, "autoRefresh", value.asInstanceOf[js.Any])
     

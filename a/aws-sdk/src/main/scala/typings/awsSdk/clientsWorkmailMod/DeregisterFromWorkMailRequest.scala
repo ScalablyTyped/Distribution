@@ -23,7 +23,8 @@ object DeregisterFromWorkMailRequest {
     __obj.asInstanceOf[DeregisterFromWorkMailRequest]
   }
   
-  extension [Self <: DeregisterFromWorkMailRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterFromWorkMailRequest] (val x: Self) extends AnyVal {
     
     inline def setEntityId(value: WorkMailIdentifier): Self = StObject.set(x, "EntityId", value.asInstanceOf[js.Any])
     

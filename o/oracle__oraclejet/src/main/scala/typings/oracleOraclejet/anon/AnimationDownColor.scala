@@ -174,7 +174,8 @@ object AnimationDownColor {
     __obj.asInstanceOf[AnimationDownColor]
   }
   
-  extension [Self <: AnimationDownColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationDownColor] (val x: Self) extends AnyVal {
     
     inline def setAnimationDownColor(value: String): Self = StObject.set(x, "animationDownColor", value.asInstanceOf[js.Any])
     

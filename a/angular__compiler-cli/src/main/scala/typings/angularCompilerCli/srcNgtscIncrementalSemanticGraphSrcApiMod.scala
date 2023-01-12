@@ -113,7 +113,8 @@ object srcNgtscIncrementalSemanticGraphSrcApiMod {
       __obj.asInstanceOf[SemanticReference]
     }
     
-    extension [Self <: SemanticReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemanticReference] (val x: Self) extends AnyVal {
       
       inline def setImportPath(value: String): Self = StObject.set(x, "importPath", value.asInstanceOf[js.Any])
       

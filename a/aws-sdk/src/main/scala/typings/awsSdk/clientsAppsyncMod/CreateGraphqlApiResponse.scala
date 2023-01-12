@@ -18,7 +18,8 @@ object CreateGraphqlApiResponse {
     __obj.asInstanceOf[CreateGraphqlApiResponse]
   }
   
-  extension [Self <: CreateGraphqlApiResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateGraphqlApiResponse] (val x: Self) extends AnyVal {
     
     inline def setGraphqlApi(value: GraphqlApi): Self = StObject.set(x, "graphqlApi", value.asInstanceOf[js.Any])
     

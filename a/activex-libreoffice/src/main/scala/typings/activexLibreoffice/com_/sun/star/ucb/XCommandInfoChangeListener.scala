@@ -37,7 +37,8 @@ object XCommandInfoChangeListener {
     __obj.asInstanceOf[XCommandInfoChangeListener]
   }
   
-  extension [Self <: XCommandInfoChangeListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCommandInfoChangeListener] (val x: Self) extends AnyVal {
     
     inline def setCommandInfoChange(value: CommandInfoChangeEvent => Unit): Self = StObject.set(x, "commandInfoChange", js.Any.fromFunction1(value))
   }

@@ -21,7 +21,8 @@ object LinkCloseToken {
     __obj.asInstanceOf[LinkCloseToken]
   }
   
-  extension [Self <: LinkCloseToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkCloseToken] (val x: Self) extends AnyVal {
     
     inline def setType(value: link_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

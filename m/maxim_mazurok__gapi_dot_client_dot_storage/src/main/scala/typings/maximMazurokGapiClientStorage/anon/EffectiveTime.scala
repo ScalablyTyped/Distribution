@@ -25,7 +25,8 @@ object EffectiveTime {
     __obj.asInstanceOf[EffectiveTime]
   }
   
-  extension [Self <: EffectiveTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EffectiveTime] (val x: Self) extends AnyVal {
     
     inline def setEffectiveTime(value: String): Self = StObject.set(x, "effectiveTime", value.asInstanceOf[js.Any])
     

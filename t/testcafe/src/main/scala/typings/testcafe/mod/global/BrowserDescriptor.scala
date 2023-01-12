@@ -19,7 +19,8 @@ object BrowserDescriptor {
     __obj.asInstanceOf[BrowserDescriptor]
   }
   
-  extension [Self <: BrowserDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserDescriptor] (val x: Self) extends AnyVal {
     
     inline def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     

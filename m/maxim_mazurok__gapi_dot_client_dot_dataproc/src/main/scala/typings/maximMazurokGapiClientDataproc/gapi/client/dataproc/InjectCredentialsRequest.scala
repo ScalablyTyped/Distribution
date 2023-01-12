@@ -22,7 +22,8 @@ object InjectCredentialsRequest {
     __obj.asInstanceOf[InjectCredentialsRequest]
   }
   
-  extension [Self <: InjectCredentialsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InjectCredentialsRequest] (val x: Self) extends AnyVal {
     
     inline def setClusterUuid(value: String): Self = StObject.set(x, "clusterUuid", value.asInstanceOf[js.Any])
     

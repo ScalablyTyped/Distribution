@@ -28,7 +28,8 @@ object ISceneLoaderProgressEvent {
     __obj.asInstanceOf[ISceneLoaderProgressEvent]
   }
   
-  extension [Self <: ISceneLoaderProgressEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISceneLoaderProgressEvent] (val x: Self) extends AnyVal {
     
     inline def setLengthComputable(value: Boolean): Self = StObject.set(x, "lengthComputable", value.asInstanceOf[js.Any])
     

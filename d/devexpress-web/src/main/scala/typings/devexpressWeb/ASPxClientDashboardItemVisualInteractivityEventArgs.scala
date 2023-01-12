@@ -77,7 +77,8 @@ object ASPxClientDashboardItemVisualInteractivityEventArgs {
     __obj.asInstanceOf[ASPxClientDashboardItemVisualInteractivityEventArgs]
   }
   
-  extension [Self <: ASPxClientDashboardItemVisualInteractivityEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDashboardItemVisualInteractivityEventArgs] (val x: Self) extends AnyVal {
     
     inline def setEnableHighlighting(value: Boolean => Unit): Self = StObject.set(x, "EnableHighlighting", js.Any.fromFunction1(value))
     

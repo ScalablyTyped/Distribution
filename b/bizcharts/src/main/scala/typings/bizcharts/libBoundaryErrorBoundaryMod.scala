@@ -68,7 +68,8 @@ object libBoundaryErrorBoundaryMod {
       __obj.asInstanceOf[ErrorBoundaryProps]
     }
     
-    extension [Self <: ErrorBoundaryProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorBoundaryProps] (val x: Self) extends AnyVal {
       
       inline def setFallback(value: ReactElement): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       

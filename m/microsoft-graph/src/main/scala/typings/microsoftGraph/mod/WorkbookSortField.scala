@@ -34,7 +34,8 @@ object WorkbookSortField {
     __obj.asInstanceOf[WorkbookSortField]
   }
   
-  extension [Self <: WorkbookSortField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookSortField] (val x: Self) extends AnyVal {
     
     inline def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     

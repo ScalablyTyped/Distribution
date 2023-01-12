@@ -17,7 +17,8 @@ object RuleColorStopGeneric {
     __obj.asInstanceOf[RuleColorStopGeneric[TColor, TValue]]
   }
   
-  extension [Self <: RuleColorStopGeneric[?, ?], TColor, TValue](x: Self & (RuleColorStopGeneric[TColor, TValue])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleColorStopGeneric[?, ?], TColor, TValue] (val x: Self & (RuleColorStopGeneric[TColor, TValue])) extends AnyVal {
     
     inline def setColor(value: TColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

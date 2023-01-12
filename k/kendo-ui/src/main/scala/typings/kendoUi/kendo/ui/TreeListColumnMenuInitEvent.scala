@@ -20,7 +20,8 @@ object TreeListColumnMenuInitEvent {
     __obj.asInstanceOf[TreeListColumnMenuInitEvent]
   }
   
-  extension [Self <: TreeListColumnMenuInitEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListColumnMenuInitEvent] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

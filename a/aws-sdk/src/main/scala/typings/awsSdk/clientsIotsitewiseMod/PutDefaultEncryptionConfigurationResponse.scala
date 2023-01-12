@@ -28,7 +28,8 @@ object PutDefaultEncryptionConfigurationResponse {
     __obj.asInstanceOf[PutDefaultEncryptionConfigurationResponse]
   }
   
-  extension [Self <: PutDefaultEncryptionConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutDefaultEncryptionConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setConfigurationStatus(value: ConfigurationStatus): Self = StObject.set(x, "configurationStatus", value.asInstanceOf[js.Any])
     

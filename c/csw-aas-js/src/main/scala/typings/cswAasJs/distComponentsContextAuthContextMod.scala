@@ -51,7 +51,8 @@ object distComponentsContextAuthContextMod {
       __obj.asInstanceOf[AuthContextType]
     }
     
-    extension [Self <: AuthContextType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthContextType] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       

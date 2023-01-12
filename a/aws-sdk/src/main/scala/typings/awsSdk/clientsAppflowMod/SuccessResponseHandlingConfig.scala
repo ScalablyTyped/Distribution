@@ -23,7 +23,8 @@ object SuccessResponseHandlingConfig {
     __obj.asInstanceOf[SuccessResponseHandlingConfig]
   }
   
-  extension [Self <: SuccessResponseHandlingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuccessResponseHandlingConfig] (val x: Self) extends AnyVal {
     
     inline def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     

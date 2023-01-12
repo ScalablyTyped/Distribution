@@ -148,7 +148,8 @@ object distTypesMod {
     @js.native
     val ^ : DefinedToken = js.native
     
-    extension [Self <: CanvasConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasConfig] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: ColorType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -501,7 +502,8 @@ object distTypesMod {
       __obj.asInstanceOf[BaseStyleProps]
     }
     
-    extension [Self <: BaseStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseStyleProps] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: vec2 | vec3 | String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -990,7 +992,8 @@ object distTypesMod {
       __obj.asInstanceOf[EventPosition]
     }
     
-    extension [Self <: EventPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventPosition] (val x: Self) extends AnyVal {
       
       inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       
@@ -1122,7 +1125,8 @@ object distTypesMod {
       __obj.asInstanceOf[ParsedBaseStyleProps]
     }
     
-    extension [Self <: ParsedBaseStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedBaseStyleProps] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -1368,7 +1372,8 @@ object distTypesMod {
       __obj.asInstanceOf[RendererConfig]
     }
     
-    extension [Self <: RendererConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RendererConfig] (val x: Self) extends AnyVal {
       
       inline def setEnableAutoRendering(value: Boolean): Self = StObject.set(x, "enableAutoRendering", value.asInstanceOf[js.Any])
       

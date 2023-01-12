@@ -81,7 +81,8 @@ object Versioncount {
     __obj.asInstanceOf[Versioncount]
   }
   
-  extension [Self <: Versioncount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Versioncount] (val x: Self) extends AnyVal {
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object InspectionResult {
     __obj.asInstanceOf[InspectionResult]
   }
   
-  extension [Self <: InspectionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InspectionResult] (val x: Self) extends AnyVal {
     
     inline def setAst(value: Any): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     

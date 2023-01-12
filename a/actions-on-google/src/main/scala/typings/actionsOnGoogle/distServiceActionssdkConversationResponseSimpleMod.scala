@@ -43,7 +43,8 @@ object distServiceActionssdkConversationResponseSimpleMod {
       __obj.asInstanceOf[SimpleResponseOptions]
     }
     
-    extension [Self <: SimpleResponseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleResponseOptions] (val x: Self) extends AnyVal {
       
       inline def setSpeech(value: String): Self = StObject.set(x, "speech", value.asInstanceOf[js.Any])
       

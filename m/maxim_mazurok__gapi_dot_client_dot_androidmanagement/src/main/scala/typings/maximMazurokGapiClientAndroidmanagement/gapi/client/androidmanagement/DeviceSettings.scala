@@ -34,7 +34,8 @@ object DeviceSettings {
     __obj.asInstanceOf[DeviceSettings]
   }
   
-  extension [Self <: DeviceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceSettings] (val x: Self) extends AnyVal {
     
     inline def setAdbEnabled(value: Boolean): Self = StObject.set(x, "adbEnabled", value.asInstanceOf[js.Any])
     

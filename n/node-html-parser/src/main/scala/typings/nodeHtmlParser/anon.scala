@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[ClosingSlash]
     }
     
-    extension [Self <: ClosingSlash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClosingSlash] (val x: Self) extends AnyVal {
       
       inline def setClosingSlash(value: Boolean): Self = StObject.set(x, "closingSlash", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setBlockTextElements(value: StringDictionary[Boolean]): Self = StObject.set(x, "blockTextElements", value.asInstanceOf[js.Any])
       

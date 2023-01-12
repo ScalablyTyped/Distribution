@@ -21,7 +21,8 @@ object UIkitGridOptions {
     __obj.asInstanceOf[UIkitGridOptions]
   }
   
-  extension [Self <: UIkitGridOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitGridOptions] (val x: Self) extends AnyVal {
     
     inline def `setFirst-column`(value: String): Self = StObject.set(x, "first-column", value.asInstanceOf[js.Any])
     

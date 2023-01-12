@@ -23,7 +23,8 @@ object BatchAssociateAssessmentReportEvidenceResponse {
     __obj.asInstanceOf[BatchAssociateAssessmentReportEvidenceResponse]
   }
   
-  extension [Self <: BatchAssociateAssessmentReportEvidenceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchAssociateAssessmentReportEvidenceResponse] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: AssessmentReportEvidenceErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

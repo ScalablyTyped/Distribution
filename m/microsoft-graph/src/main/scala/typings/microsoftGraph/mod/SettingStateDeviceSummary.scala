@@ -42,7 +42,8 @@ object SettingStateDeviceSummary {
     __obj.asInstanceOf[SettingStateDeviceSummary]
   }
   
-  extension [Self <: SettingStateDeviceSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettingStateDeviceSummary] (val x: Self) extends AnyVal {
     
     inline def setCompliantDeviceCount(value: Double): Self = StObject.set(x, "compliantDeviceCount", value.asInstanceOf[js.Any])
     

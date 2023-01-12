@@ -49,7 +49,8 @@ object distCoreActionContextMod {
       __obj.asInstanceOf[IActionContext]
     }
     
-    extension [Self <: IActionContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IActionContext] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

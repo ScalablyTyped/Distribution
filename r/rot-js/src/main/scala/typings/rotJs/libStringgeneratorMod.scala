@@ -110,7 +110,8 @@ object libStringgeneratorMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
@@ -204,7 +205,8 @@ object libStringgeneratorMod {
       __obj.asInstanceOf[StringGenerator]
     }
     
-    extension [Self <: StringGenerator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringGenerator] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       

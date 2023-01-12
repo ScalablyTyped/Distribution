@@ -43,7 +43,8 @@ object AuthParameter {
     __obj.asInstanceOf[AuthParameter]
   }
   
-  extension [Self <: AuthParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthParameter] (val x: Self) extends AnyVal {
     
     inline def setConnectorSuppliedValues(value: ConnectorSuppliedValueList): Self = StObject.set(x, "connectorSuppliedValues", value.asInstanceOf[js.Any])
     

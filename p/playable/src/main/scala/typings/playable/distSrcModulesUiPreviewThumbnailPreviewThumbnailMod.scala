@@ -98,7 +98,8 @@ object distSrcModulesUiPreviewThumbnailPreviewThumbnailMod {
       __obj.asInstanceOf[PreviewThumbnail]
     }
     
-    extension [Self <: PreviewThumbnail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviewThumbnail] (val x: Self) extends AnyVal {
       
       inline def setView(value: typings.playable.distSrcModulesUiPreviewThumbnailPreviewThumbnailDotviewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       

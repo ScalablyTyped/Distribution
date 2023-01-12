@@ -68,7 +68,8 @@ object ReactConfig {
     __obj.asInstanceOf[ReactConfig]
   }
   
-  extension [Self <: ReactConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactConfig] (val x: Self) extends AnyVal {
     
     inline def setDevelopment(value: Boolean): Self = StObject.set(x, "development", value.asInstanceOf[js.Any])
     

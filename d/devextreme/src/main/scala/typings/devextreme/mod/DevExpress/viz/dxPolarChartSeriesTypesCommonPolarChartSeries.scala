@@ -139,7 +139,8 @@ object dxPolarChartSeriesTypesCommonPolarChartSeries {
     __obj.asInstanceOf[dxPolarChartSeriesTypesCommonPolarChartSeries]
   }
   
-  extension [Self <: dxPolarChartSeriesTypesCommonPolarChartSeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxPolarChartSeriesTypesCommonPolarChartSeries] (val x: Self) extends AnyVal {
     
     inline def setArgumentField(value: String): Self = StObject.set(x, "argumentField", value.asInstanceOf[js.Any])
     

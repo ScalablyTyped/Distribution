@@ -19,7 +19,8 @@ object ITlsConfiguration {
     __obj.asInstanceOf[ITlsConfiguration]
   }
   
-  extension [Self <: ITlsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITlsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCa(value: String): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
     

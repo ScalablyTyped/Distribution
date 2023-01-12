@@ -22,7 +22,8 @@ object ResourceUsageExportConfig {
     __obj.asInstanceOf[ResourceUsageExportConfig]
   }
   
-  extension [Self <: ResourceUsageExportConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceUsageExportConfig] (val x: Self) extends AnyVal {
     
     inline def setBigqueryDestination(value: BigQueryDestination): Self = StObject.set(x, "bigqueryDestination", value.asInstanceOf[js.Any])
     

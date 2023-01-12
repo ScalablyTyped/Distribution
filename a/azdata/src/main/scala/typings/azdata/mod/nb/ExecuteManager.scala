@@ -26,7 +26,8 @@ object ExecuteManager {
     __obj.asInstanceOf[ExecuteManager]
   }
   
-  extension [Self <: ExecuteManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteManager] (val x: Self) extends AnyVal {
     
     inline def setServerManager(value: ServerManager): Self = StObject.set(x, "serverManager", value.asInstanceOf[js.Any])
     

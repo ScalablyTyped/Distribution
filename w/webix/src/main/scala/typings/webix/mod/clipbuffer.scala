@@ -20,7 +20,8 @@ object clipbuffer {
   @js.native
   val ^ : typings.webix.webix.clipbuffer = js.native
   
-  extension [Self <: clipbuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: clipbuffer] (val x: Self) extends AnyVal {
     
     inline def setDestructor(value: () => Unit): Self = StObject.set(x, "destructor", js.Any.fromFunction0(value))
     

@@ -19,7 +19,8 @@ object DestinationStatus {
     __obj.asInstanceOf[DestinationStatus]
   }
   
-  extension [Self <: DestinationStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DestinationStatus] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

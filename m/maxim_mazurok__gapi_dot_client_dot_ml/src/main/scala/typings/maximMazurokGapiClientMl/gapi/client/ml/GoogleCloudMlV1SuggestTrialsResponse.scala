@@ -25,7 +25,8 @@ object GoogleCloudMlV1SuggestTrialsResponse {
     __obj.asInstanceOf[GoogleCloudMlV1SuggestTrialsResponse]
   }
   
-  extension [Self <: GoogleCloudMlV1SuggestTrialsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1SuggestTrialsResponse] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

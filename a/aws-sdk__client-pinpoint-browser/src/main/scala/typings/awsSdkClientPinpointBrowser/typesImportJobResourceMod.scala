@@ -60,7 +60,8 @@ object typesImportJobResourceMod {
       __obj.asInstanceOf[ImportJobResource]
     }
     
-    extension [Self <: ImportJobResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportJobResource] (val x: Self) extends AnyVal {
       
       inline def setDefineSegment(value: Boolean): Self = StObject.set(x, "DefineSegment", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object nextMod {
         __obj.asInstanceOf[PreinitOptions]
       }
       
-      extension [Self <: PreinitOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PreinitOptions] (val x: Self) extends AnyVal {
         
         inline def setAs(value: PreinitAs): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
         
@@ -86,7 +87,8 @@ object nextMod {
         __obj.asInstanceOf[PreloadOptions]
       }
       
-      extension [Self <: PreloadOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PreloadOptions] (val x: Self) extends AnyVal {
         
         inline def setAs(value: PreloadAs): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
         

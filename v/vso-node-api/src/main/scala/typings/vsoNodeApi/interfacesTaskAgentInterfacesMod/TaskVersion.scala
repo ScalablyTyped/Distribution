@@ -21,7 +21,8 @@ object TaskVersion {
     __obj.asInstanceOf[TaskVersion]
   }
   
-  extension [Self <: TaskVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskVersion] (val x: Self) extends AnyVal {
     
     inline def setIsTest(value: Boolean): Self = StObject.set(x, "isTest", value.asInstanceOf[js.Any])
     

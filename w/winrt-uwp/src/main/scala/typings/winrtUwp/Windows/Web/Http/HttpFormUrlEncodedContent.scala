@@ -71,7 +71,8 @@ object HttpFormUrlEncodedContent {
     __obj.asInstanceOf[HttpFormUrlEncodedContent]
   }
   
-  extension [Self <: HttpFormUrlEncodedContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpFormUrlEncodedContent] (val x: Self) extends AnyVal {
     
     inline def setBufferAllAsync(value: () => IPromiseWithIAsyncOperationWithProgress[Double, Double]): Self = StObject.set(x, "bufferAllAsync", js.Any.fromFunction0(value))
     

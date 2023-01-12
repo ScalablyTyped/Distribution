@@ -28,7 +28,8 @@ object GetWebACLResponse {
     __obj.asInstanceOf[GetWebACLResponse]
   }
   
-  extension [Self <: GetWebACLResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWebACLResponse] (val x: Self) extends AnyVal {
     
     inline def setApplicationIntegrationURL(value: OutputUrl): Self = StObject.set(x, "ApplicationIntegrationURL", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object OMathBreak {
     __obj.asInstanceOf[OMathBreak]
   }
   
-  extension [Self <: OMathBreak](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OMathBreak] (val x: Self) extends AnyVal {
     
     inline def setAlignAt(value: Double): Self = StObject.set(x, "AlignAt", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object AttendeeBase {
     __obj.asInstanceOf[AttendeeBase]
   }
   
-  extension [Self <: AttendeeBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttendeeBase] (val x: Self) extends AnyVal {
     
     inline def setType(value: NullableOption[AttendeeType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object StopProjectVersionRequest {
     __obj.asInstanceOf[StopProjectVersionRequest]
   }
   
-  extension [Self <: StopProjectVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopProjectVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setProjectVersionArn(value: ProjectVersionArn): Self = StObject.set(x, "ProjectVersionArn", value.asInstanceOf[js.Any])
   }

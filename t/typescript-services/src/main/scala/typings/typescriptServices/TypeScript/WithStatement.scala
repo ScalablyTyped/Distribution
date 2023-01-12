@@ -44,7 +44,8 @@ object WithStatement {
     __obj.asInstanceOf[WithStatement]
   }
   
-  extension [Self <: WithStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WithStatement] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: AST): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

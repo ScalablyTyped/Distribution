@@ -43,7 +43,8 @@ object SsmAutomation {
     __obj.asInstanceOf[SsmAutomation]
   }
   
-  extension [Self <: SsmAutomation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SsmAutomation] (val x: Self) extends AnyVal {
     
     inline def setDocumentName(value: SsmAutomationDocumentNameString): Self = StObject.set(x, "documentName", value.asInstanceOf[js.Any])
     

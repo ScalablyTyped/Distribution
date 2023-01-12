@@ -33,7 +33,8 @@ object UpdateDirectorySetupRequest {
     __obj.asInstanceOf[UpdateDirectorySetupRequest]
   }
   
-  extension [Self <: UpdateDirectorySetupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDirectorySetupRequest] (val x: Self) extends AnyVal {
     
     inline def setCreateSnapshotBeforeUpdate(value: CreateSnapshotBeforeUpdate): Self = StObject.set(x, "CreateSnapshotBeforeUpdate", value.asInstanceOf[js.Any])
     

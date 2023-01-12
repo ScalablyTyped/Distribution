@@ -98,7 +98,8 @@ object reqBlankNoderesourceQuadS {
     __obj.asInstanceOf[reqBlankNoderesourceQuadS]
   }
   
-  extension [Self <: reqBlankNoderesourceQuadS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: reqBlankNoderesourceQuadS] (val x: Self) extends AnyVal {
     
     inline def setActualProxyURI(value: String): Self = StObject.set(x, "actualProxyURI", value.asInstanceOf[js.Any])
     

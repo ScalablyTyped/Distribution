@@ -28,7 +28,8 @@ object AwaitPromiseRequest {
     __obj.asInstanceOf[AwaitPromiseRequest]
   }
   
-  extension [Self <: AwaitPromiseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwaitPromiseRequest] (val x: Self) extends AnyVal {
     
     inline def setGeneratePreview(value: Boolean): Self = StObject.set(x, "generatePreview", value.asInstanceOf[js.Any])
     

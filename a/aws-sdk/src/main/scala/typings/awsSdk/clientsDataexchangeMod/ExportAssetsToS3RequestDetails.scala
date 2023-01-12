@@ -33,7 +33,8 @@ object ExportAssetsToS3RequestDetails {
     __obj.asInstanceOf[ExportAssetsToS3RequestDetails]
   }
   
-  extension [Self <: ExportAssetsToS3RequestDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportAssetsToS3RequestDetails] (val x: Self) extends AnyVal {
     
     inline def setAssetDestinations(value: ListOfAssetDestinationEntry): Self = StObject.set(x, "AssetDestinations", value.asInstanceOf[js.Any])
     

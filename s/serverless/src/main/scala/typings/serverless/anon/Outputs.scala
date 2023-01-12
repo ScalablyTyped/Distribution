@@ -18,7 +18,8 @@ object Outputs {
     __obj.asInstanceOf[Outputs]
   }
   
-  extension [Self <: Outputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Outputs] (val x: Self) extends AnyVal {
     
     inline def setOutputs(value: StringDictionary[Any]): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
     

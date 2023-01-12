@@ -16,7 +16,8 @@ object UseRowSelectState {
     __obj.asInstanceOf[UseRowSelectState[D]]
   }
   
-  extension [Self <: UseRowSelectState[?], D /* <: js.Object */](x: Self & UseRowSelectState[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseRowSelectState[?], D /* <: js.Object */] (val x: Self & UseRowSelectState[D]) extends AnyVal {
     
     inline def setSelectedRowIds(value: Record[IdType[D], Boolean]): Self = StObject.set(x, "selectedRowIds", value.asInstanceOf[js.Any])
   }

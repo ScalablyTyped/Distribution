@@ -17,7 +17,8 @@ object IColumnSetOptions {
     __obj.asInstanceOf[IColumnSetOptions]
   }
   
-  extension [Self <: IColumnSetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IColumnSetOptions] (val x: Self) extends AnyVal {
     
     inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
     

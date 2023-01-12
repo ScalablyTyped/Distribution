@@ -54,7 +54,8 @@ object distPreviewComponentsOnDeviceUIMod {
       __obj.asInstanceOf[OnDeviceUIProps]
     }
     
-    extension [Self <: OnDeviceUIProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnDeviceUIProps] (val x: Self) extends AnyVal {
       
       inline def setIsUIHidden(value: Boolean): Self = StObject.set(x, "isUIHidden", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object distPreviewComponentsOnDeviceUIMod {
       __obj.asInstanceOf[OnDeviceUIState]
     }
     
-    extension [Self <: OnDeviceUIState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnDeviceUIState] (val x: Self) extends AnyVal {
       
       inline def setPreviewHeight(value: Double): Self = StObject.set(x, "previewHeight", value.asInstanceOf[js.Any])
       

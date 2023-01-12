@@ -43,7 +43,8 @@ object GetClusterCredentialsMessage {
     __obj.asInstanceOf[GetClusterCredentialsMessage]
   }
   
-  extension [Self <: GetClusterCredentialsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetClusterCredentialsMessage] (val x: Self) extends AnyVal {
     
     inline def setAutoCreate(value: BooleanOptional): Self = StObject.set(x, "AutoCreate", value.asInstanceOf[js.Any])
     

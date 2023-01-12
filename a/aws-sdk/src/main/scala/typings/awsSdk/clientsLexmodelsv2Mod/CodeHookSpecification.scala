@@ -15,7 +15,8 @@ object CodeHookSpecification {
     __obj.asInstanceOf[CodeHookSpecification]
   }
   
-  extension [Self <: CodeHookSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeHookSpecification] (val x: Self) extends AnyVal {
     
     inline def setLambdaCodeHook(value: LambdaCodeHook): Self = StObject.set(x, "lambdaCodeHook", value.asInstanceOf[js.Any])
   }

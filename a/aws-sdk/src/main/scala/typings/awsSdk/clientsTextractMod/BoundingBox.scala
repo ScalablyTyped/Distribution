@@ -33,7 +33,8 @@ object BoundingBox {
     __obj.asInstanceOf[BoundingBox]
   }
   
-  extension [Self <: BoundingBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoundingBox] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Float): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     

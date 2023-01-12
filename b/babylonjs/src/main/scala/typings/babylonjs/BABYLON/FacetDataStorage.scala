@@ -71,7 +71,8 @@ object FacetDataStorage {
     __obj.asInstanceOf[FacetDataStorage]
   }
   
-  extension [Self <: FacetDataStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FacetDataStorage] (val x: Self) extends AnyVal {
     
     inline def setBbSize(value: Vector3): Self = StObject.set(x, "bbSize", value.asInstanceOf[js.Any])
     

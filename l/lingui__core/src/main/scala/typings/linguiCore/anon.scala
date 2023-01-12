@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Plurals]
     }
     
-    extension [Self <: Plurals](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plurals] (val x: Self) extends AnyVal {
       
       inline def setPlurals(value: Any): Self = StObject.set(x, "plurals", value.asInstanceOf[js.Any])
     }

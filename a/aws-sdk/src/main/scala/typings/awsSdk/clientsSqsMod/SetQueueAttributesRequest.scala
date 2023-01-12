@@ -23,7 +23,8 @@ object SetQueueAttributesRequest {
     __obj.asInstanceOf[SetQueueAttributesRequest]
   }
   
-  extension [Self <: SetQueueAttributesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetQueueAttributesRequest] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: QueueAttributeMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     

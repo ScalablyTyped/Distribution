@@ -89,7 +89,8 @@ object distContainerMod {
       __obj.asInstanceOf[KTX2BasicFormatSample]
     }
     
-    extension [Self <: KTX2BasicFormatSample](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KTX2BasicFormatSample] (val x: Self) extends AnyVal {
       
       inline def setBitLength(value: Double): Self = StObject.set(x, "bitLength", value.asInstanceOf[js.Any])
       
@@ -155,7 +156,8 @@ object distContainerMod {
       __obj.asInstanceOf[KTX2DataFormatDescriptorBasicFormat]
     }
     
-    extension [Self <: KTX2DataFormatDescriptorBasicFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KTX2DataFormatDescriptorBasicFormat] (val x: Self) extends AnyVal {
       
       inline def setBytesPlane(value: js.Tuple8[Double, Double, Double, Double, Double, Double, Double, Double]): Self = StObject.set(x, "bytesPlane", value.asInstanceOf[js.Any])
       
@@ -214,7 +216,8 @@ object distContainerMod {
       __obj.asInstanceOf[KTX2GlobalDataBasisLZ]
     }
     
-    extension [Self <: KTX2GlobalDataBasisLZ](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KTX2GlobalDataBasisLZ] (val x: Self) extends AnyVal {
       
       inline def setEndpointCount(value: Double): Self = StObject.set(x, "endpointCount", value.asInstanceOf[js.Any])
       
@@ -259,7 +262,8 @@ object distContainerMod {
       __obj.asInstanceOf[KTX2GlobalDataBasisLZImageDesc]
     }
     
-    extension [Self <: KTX2GlobalDataBasisLZImageDesc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KTX2GlobalDataBasisLZImageDesc] (val x: Self) extends AnyVal {
       
       inline def setAlphaSliceByteLength(value: Double): Self = StObject.set(x, "alphaSliceByteLength", value.asInstanceOf[js.Any])
       
@@ -297,7 +301,8 @@ object distContainerMod {
       __obj.asInstanceOf[KTX2Level]
     }
     
-    extension [Self <: KTX2Level](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KTX2Level] (val x: Self) extends AnyVal {
       
       inline def setLevelData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "levelData", value.asInstanceOf[js.Any])
       

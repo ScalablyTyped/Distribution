@@ -37,7 +37,8 @@ object PickReadonlykeystringinde {
     __obj.asInstanceOf[PickReadonlykeystringinde]
   }
   
-  extension [Self <: PickReadonlykeystringinde](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickReadonlykeystringinde] (val x: Self) extends AnyVal {
     
     inline def setHistory(value: js.Array[Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object CardElementOptionsselecto {
     __obj.asInstanceOf[CardElementOptionsselecto]
   }
   
-  extension [Self <: CardElementOptionsselecto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardElementOptionsselecto] (val x: Self) extends AnyVal {
     
     inline def setDisplayIcon(value: Boolean): Self = StObject.set(x, "displayIcon", value.asInstanceOf[js.Any])
     

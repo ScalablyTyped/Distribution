@@ -48,7 +48,8 @@ object StartQueryExecutionInput {
     __obj.asInstanceOf[StartQueryExecutionInput]
   }
   
-  extension [Self <: StartQueryExecutionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartQueryExecutionInput] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: IdempotencyToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

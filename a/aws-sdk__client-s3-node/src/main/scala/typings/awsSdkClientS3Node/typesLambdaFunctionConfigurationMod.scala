@@ -57,7 +57,8 @@ object typesLambdaFunctionConfigurationMod {
       __obj.asInstanceOf[LambdaFunctionConfiguration]
     }
     
-    extension [Self <: LambdaFunctionConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LambdaFunctionConfiguration] (val x: Self) extends AnyVal {
       
       inline def setEvents(
         value: (js.Array[
@@ -113,7 +114,8 @@ object typesLambdaFunctionConfigurationMod {
       __obj.asInstanceOf[UnmarshalledLambdaFunctionConfiguration]
     }
     
-    extension [Self <: UnmarshalledLambdaFunctionConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledLambdaFunctionConfiguration] (val x: Self) extends AnyVal {
       
       inline def setEvents(
         value: js.Array[

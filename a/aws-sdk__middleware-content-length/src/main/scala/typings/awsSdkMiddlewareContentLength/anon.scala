@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[BodyLengthChecker]
     }
     
-    extension [Self <: BodyLengthChecker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BodyLengthChecker] (val x: Self) extends AnyVal {
       
       inline def setBodyLengthChecker(value: /* body */ Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
     }

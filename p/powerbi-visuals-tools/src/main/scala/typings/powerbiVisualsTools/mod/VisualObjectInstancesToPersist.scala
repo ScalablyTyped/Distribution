@@ -25,7 +25,8 @@ object VisualObjectInstancesToPersist {
     __obj.asInstanceOf[VisualObjectInstancesToPersist]
   }
   
-  extension [Self <: VisualObjectInstancesToPersist](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisualObjectInstancesToPersist] (val x: Self) extends AnyVal {
     
     inline def setMerge(value: js.Array[VisualObjectInstance]): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     

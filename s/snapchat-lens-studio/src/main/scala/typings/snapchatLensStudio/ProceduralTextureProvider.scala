@@ -36,7 +36,8 @@ object ProceduralTextureProvider {
     __obj.asInstanceOf[ProceduralTextureProvider]
   }
   
-  extension [Self <: ProceduralTextureProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProceduralTextureProvider] (val x: Self) extends AnyVal {
     
     inline def setGetPixels(value: (Double, Double, Double, Double, js.typedarray.Uint8Array) => Unit): Self = StObject.set(x, "getPixels", js.Any.fromFunction5(value))
     

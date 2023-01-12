@@ -95,7 +95,8 @@ object TransformOptions {
     __obj.asInstanceOf[TransformOptions]
   }
   
-  extension [Self <: TransformOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformOptions] (val x: Self) extends AnyVal {
     
     inline def setCacheHandlers(value: Boolean): Self = StObject.set(x, "cacheHandlers", value.asInstanceOf[js.Any])
     

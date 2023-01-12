@@ -71,7 +71,8 @@ object ScreenshotOptions {
     __obj.asInstanceOf[ScreenshotOptions]
   }
   
-  extension [Self <: ScreenshotOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScreenshotOptions] (val x: Self) extends AnyVal {
     
     inline def setCaptureBeyondViewport(value: Boolean): Self = StObject.set(x, "captureBeyondViewport", value.asInstanceOf[js.Any])
     

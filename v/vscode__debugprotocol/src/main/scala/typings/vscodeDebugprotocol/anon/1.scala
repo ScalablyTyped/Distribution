@@ -16,7 +16,8 @@ object `1` {
     __obj.asInstanceOf[`1`]
   }
   
-  extension [Self <: `1`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
     
     inline def setAllThreadsContinued(value: Boolean): Self = StObject.set(x, "allThreadsContinued", value.asInstanceOf[js.Any])
     

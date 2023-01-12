@@ -43,7 +43,8 @@ object Artifact {
     __obj.asInstanceOf[Artifact]
   }
   
-  extension [Self <: Artifact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Artifact] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

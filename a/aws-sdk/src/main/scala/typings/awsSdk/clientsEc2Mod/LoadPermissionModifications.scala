@@ -23,7 +23,8 @@ object LoadPermissionModifications {
     __obj.asInstanceOf[LoadPermissionModifications]
   }
   
-  extension [Self <: LoadPermissionModifications](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadPermissionModifications] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: LoadPermissionListRequest): Self = StObject.set(x, "Add", value.asInstanceOf[js.Any])
     

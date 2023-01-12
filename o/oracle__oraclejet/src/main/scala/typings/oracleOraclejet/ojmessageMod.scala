@@ -1211,7 +1211,8 @@ object ojmessageMod {
         __obj.asInstanceOf[DisplayOptions]
       }
       
-      extension [Self <: DisplayOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DisplayOptions] (val x: Self) extends AnyVal {
         
         inline def setCategory(value: header | none | auto): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
         
@@ -1247,7 +1248,8 @@ object ojmessageMod {
         __obj.asInstanceOf[Message]
       }
       
-      extension [Self <: Message](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
         
         inline def setAutoTimeout(value: Double): Self = StObject.set(x, "autoTimeout", value.asInstanceOf[js.Any])
         
@@ -1425,7 +1427,8 @@ object ojmessageMod {
       __obj.asInstanceOf[ojMessageEventMap]
     }
     
-    extension [Self <: ojMessageEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojMessageEventMap] (val x: Self) extends AnyVal {
       
       inline def setDisplayOptionsChanged(value: JetElementCustomEvent[DisplayOptions]): Self = StObject.set(x, "displayOptionsChanged", value.asInstanceOf[js.Any])
       
@@ -1458,7 +1461,8 @@ object ojmessageMod {
       __obj.asInstanceOf[ojMessageSettableProperties]
     }
     
-    extension [Self <: ojMessageSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojMessageSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setDisplayOptions(value: DisplayOptions): Self = StObject.set(x, "displayOptions", value.asInstanceOf[js.Any])
       
@@ -1486,7 +1490,8 @@ object ojmessageMod {
       __obj.asInstanceOf[ojMessageSettablePropertiesLenient]
     }
     
-    extension [Self <: ojMessageSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojMessageSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setDisplayOptions(value: DisplayOptions): Self = StObject.set(x, "displayOptions", value.asInstanceOf[js.Any])
       

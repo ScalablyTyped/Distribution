@@ -126,7 +126,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[pluginOptions]
     }
     
-    extension [Self <: pluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: pluginOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoprefixer(value: Boolean | Options): Self = StObject.set(x, "autoprefixer", value.asInstanceOf[js.Any])
       
@@ -246,7 +247,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[features]
       }
       
-      extension [Self <: features](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: features] (val x: Self) extends AnyVal {
         
         inline def `setAll-property`(value: Boolean | js.Object): Self = StObject.set(x, "all-property", value.asInstanceOf[js.Any])
         

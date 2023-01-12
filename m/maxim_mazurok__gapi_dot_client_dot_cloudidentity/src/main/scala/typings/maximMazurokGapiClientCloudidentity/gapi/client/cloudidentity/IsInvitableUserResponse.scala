@@ -16,7 +16,8 @@ object IsInvitableUserResponse {
     __obj.asInstanceOf[IsInvitableUserResponse]
   }
   
-  extension [Self <: IsInvitableUserResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsInvitableUserResponse] (val x: Self) extends AnyVal {
     
     inline def setIsInvitableUser(value: Boolean): Self = StObject.set(x, "isInvitableUser", value.asInstanceOf[js.Any])
     

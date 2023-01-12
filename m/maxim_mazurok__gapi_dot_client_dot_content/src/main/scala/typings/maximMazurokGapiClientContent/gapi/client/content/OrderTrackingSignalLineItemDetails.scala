@@ -43,7 +43,8 @@ object OrderTrackingSignalLineItemDetails {
     __obj.asInstanceOf[OrderTrackingSignalLineItemDetails]
   }
   
-  extension [Self <: OrderTrackingSignalLineItemDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderTrackingSignalLineItemDetails] (val x: Self) extends AnyVal {
     
     inline def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     

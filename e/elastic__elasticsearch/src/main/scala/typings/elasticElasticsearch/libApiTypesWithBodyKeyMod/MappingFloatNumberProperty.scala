@@ -21,7 +21,8 @@ object MappingFloatNumberProperty {
     __obj.asInstanceOf[MappingFloatNumberProperty]
   }
   
-  extension [Self <: MappingFloatNumberProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingFloatNumberProperty] (val x: Self) extends AnyVal {
     
     inline def setNull_value(value: float): Self = StObject.set(x, "null_value", value.asInstanceOf[js.Any])
     

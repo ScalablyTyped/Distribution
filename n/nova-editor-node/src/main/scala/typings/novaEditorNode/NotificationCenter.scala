@@ -18,7 +18,8 @@ object NotificationCenter {
     __obj.asInstanceOf[NotificationCenter]
   }
   
-  extension [Self <: NotificationCenter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationCenter] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: NotificationRequest => js.Promise[NotificationResponse]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

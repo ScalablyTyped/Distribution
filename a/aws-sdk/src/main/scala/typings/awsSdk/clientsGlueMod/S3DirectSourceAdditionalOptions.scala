@@ -33,7 +33,8 @@ object S3DirectSourceAdditionalOptions {
     __obj.asInstanceOf[S3DirectSourceAdditionalOptions]
   }
   
-  extension [Self <: S3DirectSourceAdditionalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3DirectSourceAdditionalOptions] (val x: Self) extends AnyVal {
     
     inline def setBoundedFiles(value: BoxedLong): Self = StObject.set(x, "BoundedFiles", value.asInstanceOf[js.Any])
     

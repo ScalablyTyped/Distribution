@@ -83,7 +83,8 @@ object leafletMod {
       __obj.asInstanceOf[TextPathOptions]
     }
     
-    extension [Self <: TextPathOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextPathOptions] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

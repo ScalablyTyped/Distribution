@@ -37,7 +37,8 @@ object IBackgroundTransferOperation {
     __obj.asInstanceOf[IBackgroundTransferOperation]
   }
   
-  extension [Self <: IBackgroundTransferOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBackgroundTransferOperation] (val x: Self) extends AnyVal {
     
     inline def setCostPolicy(value: BackgroundTransferCostPolicy): Self = StObject.set(x, "costPolicy", value.asInstanceOf[js.Any])
     

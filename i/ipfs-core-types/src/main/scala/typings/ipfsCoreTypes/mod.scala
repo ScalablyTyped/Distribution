@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[Bases]
     }
     
-    extension [Self <: Bases](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bases] (val x: Self) extends AnyVal {
       
       inline def setGetBase(
         value: String => js.Promise[

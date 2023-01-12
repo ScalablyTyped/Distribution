@@ -60,7 +60,8 @@ object RTCIceCandidate {
     __obj.asInstanceOf[RTCIceCandidate]
   }
   
-  extension [Self <: RTCIceCandidate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCIceCandidate] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: java.lang.String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

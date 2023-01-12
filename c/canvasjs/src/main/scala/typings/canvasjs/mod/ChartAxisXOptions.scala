@@ -226,7 +226,8 @@ object ChartAxisXOptions {
     __obj.asInstanceOf[ChartAxisXOptions]
   }
   
-  extension [Self <: ChartAxisXOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartAxisXOptions] (val x: Self) extends AnyVal {
     
     inline def setGridColor(value: String): Self = StObject.set(x, "gridColor", value.asInstanceOf[js.Any])
     

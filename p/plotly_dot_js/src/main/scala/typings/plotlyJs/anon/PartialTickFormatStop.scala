@@ -25,7 +25,8 @@ object PartialTickFormatStop {
     __obj.asInstanceOf[PartialTickFormatStop]
   }
   
-  extension [Self <: PartialTickFormatStop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTickFormatStop] (val x: Self) extends AnyVal {
     
     inline def setDtickrange(value: js.Tuple2[DTickValue | Null, DTickValue | Null]): Self = StObject.set(x, "dtickrange", value.asInstanceOf[js.Any])
     

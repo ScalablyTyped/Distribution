@@ -38,7 +38,8 @@ object CreateInstanceProfileRequest {
     __obj.asInstanceOf[CreateInstanceProfileRequest]
   }
   
-  extension [Self <: CreateInstanceProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateInstanceProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

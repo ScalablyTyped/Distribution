@@ -26,7 +26,8 @@ object namespacesOmniboxMod {
         __obj.asInstanceOf[DefaultSuggestResult]
       }
       
-      extension [Self <: DefaultSuggestResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DefaultSuggestResult] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       }
@@ -136,7 +137,8 @@ object namespacesOmniboxMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setOnInputCancelled(value: Event[js.Function0[Unit]]): Self = StObject.set(x, "onInputCancelled", value.asInstanceOf[js.Any])
         
@@ -187,7 +189,8 @@ object namespacesOmniboxMod {
         __obj.asInstanceOf[SuggestResult]
       }
       
-      extension [Self <: SuggestResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SuggestResult] (val x: Self) extends AnyVal {
         
         inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         

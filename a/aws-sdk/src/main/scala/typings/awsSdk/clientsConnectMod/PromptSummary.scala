@@ -28,7 +28,8 @@ object PromptSummary {
     __obj.asInstanceOf[PromptSummary]
   }
   
-  extension [Self <: PromptSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromptSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ARN): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

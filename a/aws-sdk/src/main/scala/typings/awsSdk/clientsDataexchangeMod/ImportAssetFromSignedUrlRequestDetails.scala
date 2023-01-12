@@ -38,7 +38,8 @@ object ImportAssetFromSignedUrlRequestDetails {
     __obj.asInstanceOf[ImportAssetFromSignedUrlRequestDetails]
   }
   
-  extension [Self <: ImportAssetFromSignedUrlRequestDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportAssetFromSignedUrlRequestDetails] (val x: Self) extends AnyVal {
     
     inline def setAssetName(value: AssetName): Self = StObject.set(x, "AssetName", value.asInstanceOf[js.Any])
     

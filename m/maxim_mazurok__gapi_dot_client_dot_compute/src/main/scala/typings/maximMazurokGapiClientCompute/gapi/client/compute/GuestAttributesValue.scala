@@ -15,7 +15,8 @@ object GuestAttributesValue {
     __obj.asInstanceOf[GuestAttributesValue]
   }
   
-  extension [Self <: GuestAttributesValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GuestAttributesValue] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[GuestAttributesEntry]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

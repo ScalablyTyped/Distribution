@@ -62,7 +62,8 @@ object WirelessDeviceStatistics {
     __obj.asInstanceOf[WirelessDeviceStatistics]
   }
   
-  extension [Self <: WirelessDeviceStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WirelessDeviceStatistics] (val x: Self) extends AnyVal {
     
     inline def setArn(value: WirelessDeviceArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object distCompileTemplateMod {
       __obj.asInstanceOf[TemplateCompileOptions]
     }
     
-    extension [Self <: TemplateCompileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateCompileOptions] (val x: Self) extends AnyVal {
       
       inline def setCompiler(value: VueTemplateCompiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object distCompileTemplateMod {
       __obj.asInstanceOf[TemplateCompileResult]
     }
     
-    extension [Self <: TemplateCompileResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateCompileResult] (val x: Self) extends AnyVal {
       
       inline def setAst(value: js.Object): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
       

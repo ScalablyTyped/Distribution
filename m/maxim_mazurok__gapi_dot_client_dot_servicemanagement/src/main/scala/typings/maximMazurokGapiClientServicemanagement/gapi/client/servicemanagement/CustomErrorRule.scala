@@ -19,7 +19,8 @@ object CustomErrorRule {
     __obj.asInstanceOf[CustomErrorRule]
   }
   
-  extension [Self <: CustomErrorRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomErrorRule] (val x: Self) extends AnyVal {
     
     inline def setIsErrorType(value: Boolean): Self = StObject.set(x, "isErrorType", value.asInstanceOf[js.Any])
     

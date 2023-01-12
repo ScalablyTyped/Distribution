@@ -37,7 +37,8 @@ object typesDeleteObjectOutputMod {
       __obj.asInstanceOf[DeleteObjectOutput]
     }
     
-    extension [Self <: DeleteObjectOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteObjectOutput] (val x: Self) extends AnyVal {
       
       inline def setDeleteMarker(value: Boolean): Self = StObject.set(x, "DeleteMarker", value.asInstanceOf[js.Any])
       

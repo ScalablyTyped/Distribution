@@ -51,7 +51,8 @@ object PlanDefinitionActionRelatedAction {
     __obj.asInstanceOf[PlanDefinitionActionRelatedAction]
   }
   
-  extension [Self <: PlanDefinitionActionRelatedAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlanDefinitionActionRelatedAction] (val x: Self) extends AnyVal {
     
     inline def setOffsetDuration(value: Duration): Self = StObject.set(x, "offsetDuration", value.asInstanceOf[js.Any])
     

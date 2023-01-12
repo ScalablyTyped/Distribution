@@ -15,7 +15,8 @@ object MultipleQueriesOptions {
     __obj.asInstanceOf[MultipleQueriesOptions]
   }
   
-  extension [Self <: MultipleQueriesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipleQueriesOptions] (val x: Self) extends AnyVal {
     
     inline def setStrategy(value: StrategyType): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     

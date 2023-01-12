@@ -37,7 +37,8 @@ object ResearchStudyAssociatedParty {
     __obj.asInstanceOf[ResearchStudyAssociatedParty]
   }
   
-  extension [Self <: ResearchStudyAssociatedParty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResearchStudyAssociatedParty] (val x: Self) extends AnyVal {
     
     inline def setClassifier(value: js.Array[CodeableConcept]): Self = StObject.set(x, "classifier", value.asInstanceOf[js.Any])
     

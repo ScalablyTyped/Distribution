@@ -34,7 +34,8 @@ object FaceImagePickerTextureProvider {
     __obj.asInstanceOf[FaceImagePickerTextureProvider]
   }
   
-  extension [Self <: FaceImagePickerTextureProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaceImagePickerTextureProvider] (val x: Self) extends AnyVal {
     
     inline def setCropToFace(value: Boolean): Self = StObject.set(x, "cropToFace", value.asInstanceOf[js.Any])
     

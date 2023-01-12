@@ -22,7 +22,8 @@ object NormalizationFragmentSpread {
     __obj.asInstanceOf[NormalizationFragmentSpread]
   }
   
-  extension [Self <: NormalizationFragmentSpread](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizationFragmentSpread] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[NormalizationArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

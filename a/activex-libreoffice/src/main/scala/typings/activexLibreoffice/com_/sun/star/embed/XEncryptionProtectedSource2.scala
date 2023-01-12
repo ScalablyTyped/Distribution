@@ -43,7 +43,8 @@ object XEncryptionProtectedSource2 {
     __obj.asInstanceOf[XEncryptionProtectedSource2]
   }
   
-  extension [Self <: XEncryptionProtectedSource2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEncryptionProtectedSource2] (val x: Self) extends AnyVal {
     
     inline def setHasEncryptionData(value: () => Boolean): Self = StObject.set(x, "hasEncryptionData", js.Any.fromFunction0(value))
     

@@ -26,7 +26,8 @@ object Readonlynameexecuteflight {
     __obj.asInstanceOf[Readonlynameexecuteflight]
   }
   
-  extension [Self <: Readonlynameexecuteflight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlynameexecuteflight] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

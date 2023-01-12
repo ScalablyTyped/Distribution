@@ -15,7 +15,8 @@ object CollectionOptionsWithCollection {
     __obj.asInstanceOf[CollectionOptionsWithCollection]
   }
   
-  extension [Self <: CollectionOptionsWithCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionOptionsWithCollection] (val x: Self) extends AnyVal {
     
     inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
   }

@@ -94,7 +94,8 @@ object IgPivotView {
     __obj.asInstanceOf[IgPivotView]
   }
   
-  extension [Self <: IgPivotView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgPivotView] (val x: Self) extends AnyVal {
     
     inline def setDataSelectorOptions(value: IgPivotViewDataSelectorOptions): Self = StObject.set(x, "dataSelectorOptions", value.asInstanceOf[js.Any])
     

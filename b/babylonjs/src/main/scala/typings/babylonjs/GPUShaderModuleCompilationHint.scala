@@ -15,7 +15,8 @@ object GPUShaderModuleCompilationHint {
     __obj.asInstanceOf[GPUShaderModuleCompilationHint]
   }
   
-  extension [Self <: GPUShaderModuleCompilationHint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUShaderModuleCompilationHint] (val x: Self) extends AnyVal {
     
     inline def setLayout(value: GPUPipelineLayout | GPUAutoLayoutMode): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
   }

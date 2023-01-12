@@ -19,7 +19,8 @@ object IceCandidate {
     __obj.asInstanceOf[IceCandidate]
   }
   
-  extension [Self <: IceCandidate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IceCandidate] (val x: Self) extends AnyVal {
     
     inline def setCandidate(value: String): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
     

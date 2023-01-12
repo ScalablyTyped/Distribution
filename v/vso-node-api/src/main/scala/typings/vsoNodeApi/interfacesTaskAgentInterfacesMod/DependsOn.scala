@@ -17,7 +17,8 @@ object DependsOn {
     __obj.asInstanceOf[DependsOn]
   }
   
-  extension [Self <: DependsOn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DependsOn] (val x: Self) extends AnyVal {
     
     inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

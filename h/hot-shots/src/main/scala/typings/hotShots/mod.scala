@@ -659,7 +659,8 @@ object mod {
       __obj.asInstanceOf[CheckOptions]
     }
     
-    extension [Self <: CheckOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckOptions] (val x: Self) extends AnyVal {
       
       inline def setDate_happened(value: js.Date): Self = StObject.set(x, "date_happened", value.asInstanceOf[js.Any])
       
@@ -690,7 +691,8 @@ object mod {
       __obj.asInstanceOf[ChildClientOptions]
     }
     
-    extension [Self <: ChildClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChildClientOptions] (val x: Self) extends AnyVal {
       
       inline def setGlobalTags(value: Tags): Self = StObject.set(x, "globalTags", value.asInstanceOf[js.Any])
       
@@ -775,7 +777,8 @@ object mod {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setBufferFlushInterval(value: Double): Self = StObject.set(x, "bufferFlushInterval", value.asInstanceOf[js.Any])
       
@@ -914,7 +917,8 @@ object mod {
       __obj.asInstanceOf[DatadogChecks]
     }
     
-    extension [Self <: DatadogChecks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatadogChecks] (val x: Self) extends AnyVal {
       
       inline def setCRITICAL(value: `2`): Self = StObject.set(x, "CRITICAL", value.asInstanceOf[js.Any])
       
@@ -966,7 +970,8 @@ object mod {
       __obj.asInstanceOf[EventOptions]
     }
     
-    extension [Self <: EventOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventOptions] (val x: Self) extends AnyVal {
       
       inline def setAggregation_key(value: String): Self = StObject.set(x, "aggregation_key", value.asInstanceOf[js.Any])
       

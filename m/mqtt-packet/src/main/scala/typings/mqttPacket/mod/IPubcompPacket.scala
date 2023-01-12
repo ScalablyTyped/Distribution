@@ -24,7 +24,8 @@ object IPubcompPacket {
     __obj.asInstanceOf[IPubcompPacket]
   }
   
-  extension [Self <: IPubcompPacket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPubcompPacket] (val x: Self) extends AnyVal {
     
     inline def setCmd(value: pubcomp): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     

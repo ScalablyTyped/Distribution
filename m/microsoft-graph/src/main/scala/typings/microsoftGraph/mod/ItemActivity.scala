@@ -27,7 +27,8 @@ object ItemActivity {
     __obj.asInstanceOf[ItemActivity]
   }
   
-  extension [Self <: ItemActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemActivity] (val x: Self) extends AnyVal {
     
     inline def setAccess(value: NullableOption[AccessAction]): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     

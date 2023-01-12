@@ -57,7 +57,8 @@ object CreateServiceTemplateVersionInput {
     __obj.asInstanceOf[CreateServiceTemplateVersionInput]
   }
   
-  extension [Self <: CreateServiceTemplateVersionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateServiceTemplateVersionInput] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

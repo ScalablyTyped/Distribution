@@ -20,7 +20,8 @@ object DateFilterData {
     __obj.asInstanceOf[DateFilterData]
   }
   
-  extension [Self <: DateFilterData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateFilterData] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.reactBootstrapTable.reactBootstrapTableStrings.DateFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

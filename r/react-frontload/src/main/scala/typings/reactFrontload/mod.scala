@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[FrontloadData]
     }
     
-    extension [Self <: FrontloadData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrontloadData] (val x: Self) extends AnyVal {
       
       inline def setFn(value: /* context */ Any => js.Promise[Any]): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
       
@@ -79,7 +80,8 @@ object mod {
       __obj.asInstanceOf[FrontloadMeta]
     }
     
-    extension [Self <: FrontloadMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrontloadMeta] (val x: Self) extends AnyVal {
       
       inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,8 @@ object mod {
       __obj.asInstanceOf[FrontloadProps[T]]
     }
     
-    extension [Self <: FrontloadProps[?], T](x: Self & FrontloadProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrontloadProps[?], T] (val x: Self & FrontloadProps[T]) extends AnyVal {
       
       inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -169,7 +172,8 @@ object mod {
       __obj.asInstanceOf[FrontloadStatePrivate]
     }
     
-    extension [Self <: FrontloadStatePrivate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrontloadStatePrivate] (val x: Self) extends AnyVal {
       
       inline def setClientRender(value: Any): Self = StObject.set(x, "clientRender", value.asInstanceOf[js.Any])
       

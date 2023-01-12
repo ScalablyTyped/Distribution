@@ -223,7 +223,8 @@ object IgUploadLocale {
     __obj.asInstanceOf[IgUploadLocale]
   }
   
-  extension [Self <: IgUploadLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgUploadLocale] (val x: Self) extends AnyVal {
     
     inline def setErrorMessageAJAXRequestFileSize(value: String): Self = StObject.set(x, "errorMessageAJAXRequestFileSize", value.asInstanceOf[js.Any])
     

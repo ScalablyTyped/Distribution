@@ -155,7 +155,8 @@ object XElement {
     __obj.asInstanceOf[XElement]
   }
   
-  extension [Self <: XElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XElement] (val x: Self) extends AnyVal {
     
     inline def setGetAttribute(value: String => String): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
     

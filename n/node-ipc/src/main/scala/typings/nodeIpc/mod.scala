@@ -453,7 +453,8 @@ object mod {
         __obj.asInstanceOf[Config]
       }
       
-      extension [Self <: Config](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
         
         inline def setAppspace(value: String): Self = StObject.set(x, "appspace", value.asInstanceOf[js.Any])
         
@@ -705,7 +706,8 @@ object mod {
         __obj.asInstanceOf[SocketConfig]
       }
       
-      extension [Self <: SocketConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SocketConfig] (val x: Self) extends AnyVal {
         
         inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         

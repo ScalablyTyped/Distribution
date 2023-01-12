@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[DamerauLevenshteinResponse]
     }
     
-    extension [Self <: DamerauLevenshteinResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DamerauLevenshteinResponse] (val x: Self) extends AnyVal {
       
       inline def setRelative(value: Double): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       

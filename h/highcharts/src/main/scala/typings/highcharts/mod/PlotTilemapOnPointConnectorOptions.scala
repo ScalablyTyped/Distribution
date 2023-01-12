@@ -30,7 +30,8 @@ object PlotTilemapOnPointConnectorOptions {
     __obj.asInstanceOf[PlotTilemapOnPointConnectorOptions]
   }
   
-  extension [Self <: PlotTilemapOnPointConnectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTilemapOnPointConnectorOptions] (val x: Self) extends AnyVal {
     
     inline def setDashstyle(value: String): Self = StObject.set(x, "dashstyle", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListJobsSortCriteria {
     __obj.asInstanceOf[ListJobsSortCriteria]
   }
   
-  extension [Self <: ListJobsSortCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListJobsSortCriteria] (val x: Self) extends AnyVal {
     
     inline def setAttributeName(value: ListJobsSortAttributeName): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     

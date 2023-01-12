@@ -52,7 +52,8 @@ object ApplicationConfigurationUpdate {
     __obj.asInstanceOf[ApplicationConfigurationUpdate]
   }
   
-  extension [Self <: ApplicationConfigurationUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationConfigurationUpdate] (val x: Self) extends AnyVal {
     
     inline def setApplicationCodeConfigurationUpdate(value: ApplicationCodeConfigurationUpdate): Self = StObject.set(x, "ApplicationCodeConfigurationUpdate", value.asInstanceOf[js.Any])
     

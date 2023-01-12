@@ -16,7 +16,8 @@ object KeyLike {
     __obj.asInstanceOf[KeyLike]
   }
   
-  extension [Self <: KeyLike](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyLike] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

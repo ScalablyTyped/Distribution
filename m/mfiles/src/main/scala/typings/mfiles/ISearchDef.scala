@@ -36,7 +36,8 @@ object ISearchDef {
     __obj.asInstanceOf[ISearchDef]
   }
   
-  extension [Self <: ISearchDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchDef] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => ISearchDef): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

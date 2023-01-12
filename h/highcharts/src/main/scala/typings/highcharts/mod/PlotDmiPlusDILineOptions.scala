@@ -18,7 +18,8 @@ object PlotDmiPlusDILineOptions {
     __obj.asInstanceOf[PlotDmiPlusDILineOptions]
   }
   
-  extension [Self <: PlotDmiPlusDILineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotDmiPlusDILineOptions] (val x: Self) extends AnyVal {
     
     inline def setStyles(value: PlotDmiPlusDILineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     

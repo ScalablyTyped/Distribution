@@ -33,7 +33,8 @@ object DescribeFleetLocationAttributesOutput {
     __obj.asInstanceOf[DescribeFleetLocationAttributesOutput]
   }
   
-  extension [Self <: DescribeFleetLocationAttributesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFleetLocationAttributesOutput] (val x: Self) extends AnyVal {
     
     inline def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ItemStyle {
     __obj.asInstanceOf[ItemStyle]
   }
   
-  extension [Self <: ItemStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemStyle] (val x: Self) extends AnyVal {
     
     inline def setItemStyle(value: BarBorderWidth): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object GridLineOptionsWithAxis {
     __obj.asInstanceOf[GridLineOptionsWithAxis]
   }
   
-  extension [Self <: GridLineOptionsWithAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridLineOptionsWithAxis] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: AxisName): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

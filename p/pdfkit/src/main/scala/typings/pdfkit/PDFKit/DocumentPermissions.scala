@@ -29,7 +29,8 @@ object DocumentPermissions {
     __obj.asInstanceOf[DocumentPermissions]
   }
   
-  extension [Self <: DocumentPermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentPermissions] (val x: Self) extends AnyVal {
     
     inline def setAnnotating(value: Boolean): Self = StObject.set(x, "annotating", value.asInstanceOf[js.Any])
     

@@ -96,7 +96,8 @@ object AreaStyle {
     __obj.asInstanceOf[AreaStyle]
   }
   
-  extension [Self <: AreaStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreaStyle] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

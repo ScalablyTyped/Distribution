@@ -17,7 +17,8 @@ object QuerySerializer {
     __obj.asInstanceOf[QuerySerializer]
   }
   
-  extension [Self <: QuerySerializer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuerySerializer] (val x: Self) extends AnyVal {
     
     inline def setParse(value: String => js.Object): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     

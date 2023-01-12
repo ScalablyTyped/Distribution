@@ -42,7 +42,8 @@ object libTableHooksUseFilterFilterSearchMod {
       __obj.asInstanceOf[FilterSearchProps[RecordType]]
     }
     
-    extension [Self <: FilterSearchProps[?], RecordType](x: Self & FilterSearchProps[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterSearchProps[?], RecordType] (val x: Self & FilterSearchProps[RecordType]) extends AnyVal {
       
       inline def setFilterSearch(value: FilterSearchType[RecordType]): Self = StObject.set(x, "filterSearch", value.asInstanceOf[js.Any])
       

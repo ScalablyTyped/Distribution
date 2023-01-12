@@ -41,7 +41,8 @@ object modelsPreapprovalCreatePayloadDotmodelMod {
       __obj.asInstanceOf[AutoRecurring]
     }
     
-    extension [Self <: AutoRecurring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoRecurring] (val x: Self) extends AnyVal {
       
       inline def setCurrency_id(value: Currency): Self = StObject.set(x, "currency_id", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object modelsPreapprovalCreatePayloadDotmodelMod {
       __obj.asInstanceOf[CreatePreApprovalPayload]
     }
     
-    extension [Self <: CreatePreApprovalPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreatePreApprovalPayload] (val x: Self) extends AnyVal {
       
       inline def setAuto_recurring(value: AutoRecurring): Self = StObject.set(x, "auto_recurring", value.asInstanceOf[js.Any])
       

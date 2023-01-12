@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[Erd]
     }
     
-    extension [Self <: Erd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Erd] (val x: Self) extends AnyVal {
       
       inline def setListenTo(value: (HTMLElement, js.Function1[/* elem */ HTMLElement, Unit]) => Unit): Self = StObject.set(x, "listenTo", js.Any.fromFunction2(value))
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[ErdmOptions]
     }
     
-    extension [Self <: ErdmOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErdmOptions] (val x: Self) extends AnyVal {
       
       inline def setCallOnAdd(value: Boolean): Self = StObject.set(x, "callOnAdd", value.asInstanceOf[js.Any])
       
@@ -128,7 +130,8 @@ object mod {
       __obj.asInstanceOf[IdHandlerProps]
     }
     
-    extension [Self <: IdHandlerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdHandlerProps] (val x: Self) extends AnyVal {
       
       inline def setGet(value: (HTMLElement, Boolean) => String): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
       

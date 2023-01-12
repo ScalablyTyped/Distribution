@@ -22,7 +22,8 @@ object PlaybackErrorEvent {
     __obj.asInstanceOf[PlaybackErrorEvent]
   }
   
-  extension [Self <: PlaybackErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaybackErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

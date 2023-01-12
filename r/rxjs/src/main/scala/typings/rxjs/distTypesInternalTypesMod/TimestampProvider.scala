@@ -21,7 +21,8 @@ object TimestampProvider {
     __obj.asInstanceOf[TimestampProvider]
   }
   
-  extension [Self <: TimestampProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimestampProvider] (val x: Self) extends AnyVal {
     
     inline def setNow(value: () => Double): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
   }

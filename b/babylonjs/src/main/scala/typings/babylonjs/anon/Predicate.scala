@@ -18,7 +18,8 @@ object Predicate {
     __obj.asInstanceOf[Predicate]
   }
   
-  extension [Self <: Predicate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Predicate] (val x: Self) extends AnyVal {
     
     inline def setDoNotInstantiate(value: Boolean | (js.Function1[/* node */ TransformNode, Boolean])): Self = StObject.set(x, "doNotInstantiate", value.asInstanceOf[js.Any])
     

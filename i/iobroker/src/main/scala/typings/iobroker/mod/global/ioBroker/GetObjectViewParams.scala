@@ -23,7 +23,8 @@ object GetObjectViewParams {
     __obj.asInstanceOf[GetObjectViewParams]
   }
   
-  extension [Self <: GetObjectViewParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectViewParams] (val x: Self) extends AnyVal {
     
     inline def setEndkey(value: String): Self = StObject.set(x, "endkey", value.asInstanceOf[js.Any])
     

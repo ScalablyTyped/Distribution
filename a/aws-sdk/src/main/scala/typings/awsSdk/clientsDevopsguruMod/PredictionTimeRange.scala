@@ -23,7 +23,8 @@ object PredictionTimeRange {
     __obj.asInstanceOf[PredictionTimeRange]
   }
   
-  extension [Self <: PredictionTimeRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredictionTimeRange] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     

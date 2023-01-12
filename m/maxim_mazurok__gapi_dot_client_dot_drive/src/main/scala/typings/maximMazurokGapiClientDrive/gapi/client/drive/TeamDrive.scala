@@ -56,7 +56,8 @@ object TeamDrive {
     __obj.asInstanceOf[TeamDrive]
   }
   
-  extension [Self <: TeamDrive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamDrive] (val x: Self) extends AnyVal {
     
     inline def setBackgroundImageFile(value: Id): Self = StObject.set(x, "backgroundImageFile", value.asInstanceOf[js.Any])
     

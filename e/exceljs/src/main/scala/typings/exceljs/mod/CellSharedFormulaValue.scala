@@ -24,7 +24,8 @@ object CellSharedFormulaValue {
     __obj.asInstanceOf[CellSharedFormulaValue]
   }
   
-  extension [Self <: CellSharedFormulaValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellSharedFormulaValue] (val x: Self) extends AnyVal {
     
     inline def setDate1904(value: Boolean): Self = StObject.set(x, "date1904", value.asInstanceOf[js.Any])
     

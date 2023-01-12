@@ -20,7 +20,8 @@ object GooglePrivacyDlpV2KMapEstimationResult {
     __obj.asInstanceOf[GooglePrivacyDlpV2KMapEstimationResult]
   }
   
-  extension [Self <: GooglePrivacyDlpV2KMapEstimationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2KMapEstimationResult] (val x: Self) extends AnyVal {
     
     inline def setKMapEstimationHistogram(value: js.Array[GooglePrivacyDlpV2KMapEstimationHistogramBucket]): Self = StObject.set(x, "kMapEstimationHistogram", value.asInstanceOf[js.Any])
     

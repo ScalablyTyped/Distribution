@@ -23,7 +23,8 @@ object ASPxClientTreeListStartDragNodeEventArgs {
     __obj.asInstanceOf[ASPxClientTreeListStartDragNodeEventArgs]
   }
   
-  extension [Self <: ASPxClientTreeListStartDragNodeEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTreeListStartDragNodeEventArgs] (val x: Self) extends AnyVal {
     
     inline def setTargets(value: js.Array[Any]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     

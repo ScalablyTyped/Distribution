@@ -19,7 +19,8 @@ object BuildBazelRemoteExecutionV2Digest {
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2Digest]
   }
   
-  extension [Self <: BuildBazelRemoteExecutionV2Digest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildBazelRemoteExecutionV2Digest] (val x: Self) extends AnyVal {
     
     inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

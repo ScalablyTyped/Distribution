@@ -29,7 +29,8 @@ object GetClientsOptions {
     __obj.asInstanceOf[GetClientsOptions]
   }
   
-  extension [Self <: GetClientsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetClientsOptions] (val x: Self) extends AnyVal {
     
     inline def setApp_type(value: js.Array[ClientAppType]): Self = StObject.set(x, "app_type", value.asInstanceOf[js.Any])
     

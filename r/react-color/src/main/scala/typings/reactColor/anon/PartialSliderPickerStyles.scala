@@ -19,7 +19,8 @@ object PartialSliderPickerStyles {
     __obj.asInstanceOf[PartialSliderPickerStyles]
   }
   
-  extension [Self <: PartialSliderPickerStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSliderPickerStyles] (val x: Self) extends AnyVal {
     
     inline def setHue(value: CSSProperties): Self = StObject.set(x, "Hue", value.asInstanceOf[js.Any])
     

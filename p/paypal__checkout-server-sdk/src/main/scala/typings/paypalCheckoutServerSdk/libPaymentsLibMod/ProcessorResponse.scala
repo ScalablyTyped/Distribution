@@ -26,7 +26,8 @@ object ProcessorResponse {
     __obj.asInstanceOf[ProcessorResponse]
   }
   
-  extension [Self <: ProcessorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessorResponse] (val x: Self) extends AnyVal {
     
     inline def setAvs_code(value: AVSCode): Self = StObject.set(x, "avs_code", value.asInstanceOf[js.Any])
     

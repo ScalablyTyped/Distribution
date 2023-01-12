@@ -19,7 +19,8 @@ object ReindexRethrottleParams {
     __obj.asInstanceOf[ReindexRethrottleParams]
   }
   
-  extension [Self <: ReindexRethrottleParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReindexRethrottleParams] (val x: Self) extends AnyVal {
     
     inline def setRequestsPerSecond(value: Double): Self = StObject.set(x, "requestsPerSecond", value.asInstanceOf[js.Any])
     

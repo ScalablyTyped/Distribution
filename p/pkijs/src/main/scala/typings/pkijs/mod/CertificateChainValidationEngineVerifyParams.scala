@@ -29,7 +29,8 @@ object CertificateChainValidationEngineVerifyParams {
     __obj.asInstanceOf[CertificateChainValidationEngineVerifyParams]
   }
   
-  extension [Self <: CertificateChainValidationEngineVerifyParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateChainValidationEngineVerifyParams] (val x: Self) extends AnyVal {
     
     inline def setInitialExcludedSubtreesSet(value: js.Array[GeneralSubtree]): Self = StObject.set(x, "initialExcludedSubtreesSet", value.asInstanceOf[js.Any])
     

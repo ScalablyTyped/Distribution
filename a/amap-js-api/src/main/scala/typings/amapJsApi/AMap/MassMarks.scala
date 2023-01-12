@@ -67,7 +67,8 @@ object MassMarks {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setLnglat(value: LocationValue): Self = StObject.set(x, "lnglat", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object MassMarks {
       __obj.asInstanceOf[EventMap[I]]
     }
     
-    extension [Self <: EventMap[?], I](x: Self & EventMap[I]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventMap[?], I] (val x: Self & EventMap[I]) extends AnyVal {
       
       inline def setClick(value: UIEvent[click, I]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
       
@@ -162,7 +164,8 @@ object MassMarks {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAlwayRender(value: Boolean): Self = StObject.set(x, "alwayRender", value.asInstanceOf[js.Any])
       
@@ -211,7 +214,8 @@ object MassMarks {
       __obj.asInstanceOf[Style]
     }
     
-    extension [Self <: Style](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: Pixel): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       

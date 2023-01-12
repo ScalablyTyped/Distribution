@@ -17,7 +17,8 @@ object IndicesGetIndexTemplateIndexTemplateItem {
     __obj.asInstanceOf[IndicesGetIndexTemplateIndexTemplateItem]
   }
   
-  extension [Self <: IndicesGetIndexTemplateIndexTemplateItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesGetIndexTemplateIndexTemplateItem] (val x: Self) extends AnyVal {
     
     inline def setIndex_template(value: IndicesIndexTemplate): Self = StObject.set(x, "index_template", value.asInstanceOf[js.Any])
     

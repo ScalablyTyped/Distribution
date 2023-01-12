@@ -30,7 +30,8 @@ object Xrstandardsqueeze {
     __obj.asInstanceOf[Xrstandardsqueeze]
   }
   
-  extension [Self <: Xrstandardsqueeze](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Xrstandardsqueeze] (val x: Self) extends AnyVal {
     
     inline def `setXr-standard-squeeze`(value: RootNodeName): Self = StObject.set(x, "xr-standard-squeeze", value.asInstanceOf[js.Any])
     

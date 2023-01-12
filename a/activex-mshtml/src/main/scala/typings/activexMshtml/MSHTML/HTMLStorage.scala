@@ -46,7 +46,8 @@ object HTMLStorage {
     __obj.asInstanceOf[HTMLStorage]
   }
   
-  extension [Self <: HTMLStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLStorage] (val x: Self) extends AnyVal {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

@@ -18,7 +18,8 @@ object InputRange {
     __obj.asInstanceOf[InputRange[T]]
   }
   
-  extension [Self <: InputRange[?], T /* <: String | Double */](x: Self & InputRange[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputRange[?], T /* <: String | Double */] (val x: Self & InputRange[T]) extends AnyVal {
     
     inline def setInputRange(value: js.Array[Adaptable[Double]]): Self = StObject.set(x, "inputRange", value.asInstanceOf[js.Any])
     

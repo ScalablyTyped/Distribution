@@ -19,7 +19,8 @@ object MlFilter {
     __obj.asInstanceOf[MlFilter]
   }
   
-  extension [Self <: MlFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlFilter] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

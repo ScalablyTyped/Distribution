@@ -22,7 +22,8 @@ object ProcessingOptions {
     __obj.asInstanceOf[ProcessingOptions]
   }
   
-  extension [Self <: ProcessingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessingOptions] (val x: Self) extends AnyVal {
     
     inline def setDisableStreetAddressResolution(value: Boolean): Self = StObject.set(x, "disableStreetAddressResolution", value.asInstanceOf[js.Any])
     

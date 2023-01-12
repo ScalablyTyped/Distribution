@@ -174,7 +174,8 @@ object libGeometryElementMod {
       __obj.asInstanceOf[ElementCfg]
     }
     
-    extension [Self <: ElementCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementCfg] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: IGroup): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

@@ -47,7 +47,8 @@ object QueryString {
     __obj.asInstanceOf[QueryString]
   }
   
-  extension [Self <: QueryString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryString] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: NameString): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

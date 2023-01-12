@@ -18,7 +18,8 @@ object GetDataCatalogEncryptionSettingsResponse {
     __obj.asInstanceOf[GetDataCatalogEncryptionSettingsResponse]
   }
   
-  extension [Self <: GetDataCatalogEncryptionSettingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDataCatalogEncryptionSettingsResponse] (val x: Self) extends AnyVal {
     
     inline def setDataCatalogEncryptionSettings(value: DataCatalogEncryptionSettings): Self = StObject.set(x, "DataCatalogEncryptionSettings", value.asInstanceOf[js.Any])
     

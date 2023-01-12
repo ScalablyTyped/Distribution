@@ -17,7 +17,8 @@ object CatHealthParams {
     __obj.asInstanceOf[CatHealthParams]
   }
   
-  extension [Self <: CatHealthParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatHealthParams] (val x: Self) extends AnyVal {
     
     inline def setTs(value: Boolean): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
     

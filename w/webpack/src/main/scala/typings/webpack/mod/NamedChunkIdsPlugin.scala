@@ -23,7 +23,8 @@ object NamedChunkIdsPlugin {
     __obj.asInstanceOf[NamedChunkIdsPlugin]
   }
   
-  extension [Self <: NamedChunkIdsPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamedChunkIdsPlugin] (val x: Self) extends AnyVal {
     
     inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     

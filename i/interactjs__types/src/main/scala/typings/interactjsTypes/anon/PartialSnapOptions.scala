@@ -39,7 +39,8 @@ object PartialSnapOptions {
     __obj.asInstanceOf[PartialSnapOptions]
   }
   
-  extension [Self <: PartialSnapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSnapOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

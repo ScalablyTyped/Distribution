@@ -19,7 +19,8 @@ object SetReturnValueRequest {
     __obj.asInstanceOf[SetReturnValueRequest]
   }
   
-  extension [Self <: SetReturnValueRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetReturnValueRequest] (val x: Self) extends AnyVal {
     
     inline def setNewValue(value: CallArgument): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
   }

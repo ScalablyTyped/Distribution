@@ -40,7 +40,8 @@ object AnchorsComponent {
     __obj.asInstanceOf[AnchorsComponent]
   }
   
-  extension [Self <: AnchorsComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnchorsComponent] (val x: Self) extends AnyVal {
     
     inline def setAttach(value: () => AnchorsComponent): Self = StObject.set(x, "attach", js.Any.fromFunction0(value))
     

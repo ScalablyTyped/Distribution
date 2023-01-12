@@ -49,7 +49,8 @@ object StartReplayRequest {
     __obj.asInstanceOf[StartReplayRequest]
   }
   
-  extension [Self <: StartReplayRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartReplayRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: ReplayDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

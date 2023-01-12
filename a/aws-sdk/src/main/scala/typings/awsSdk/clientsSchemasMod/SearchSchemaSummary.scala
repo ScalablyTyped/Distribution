@@ -33,7 +33,8 @@ object SearchSchemaSummary {
     __obj.asInstanceOf[SearchSchemaSummary]
   }
   
-  extension [Self <: SearchSchemaSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchSchemaSummary] (val x: Self) extends AnyVal {
     
     inline def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object StructType {
     __obj.asInstanceOf[StructType]
   }
   
-  extension [Self <: StructType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructType] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

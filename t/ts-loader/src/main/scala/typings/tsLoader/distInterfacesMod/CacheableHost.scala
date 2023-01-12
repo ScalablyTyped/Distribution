@@ -24,7 +24,8 @@ object CacheableHost {
     __obj.asInstanceOf[CacheableHost]
   }
   
-  extension [Self <: CacheableHost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheableHost] (val x: Self) extends AnyVal {
     
     inline def setDirectoryExists(value: /* directoryName */ String => Boolean): Self = StObject.set(x, "directoryExists", js.Any.fromFunction1(value))
     

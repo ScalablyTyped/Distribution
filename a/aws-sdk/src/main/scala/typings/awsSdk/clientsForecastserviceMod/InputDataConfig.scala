@@ -23,7 +23,8 @@ object InputDataConfig {
     __obj.asInstanceOf[InputDataConfig]
   }
   
-  extension [Self <: InputDataConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputDataConfig] (val x: Self) extends AnyVal {
     
     inline def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "DatasetGroupArn", value.asInstanceOf[js.Any])
     

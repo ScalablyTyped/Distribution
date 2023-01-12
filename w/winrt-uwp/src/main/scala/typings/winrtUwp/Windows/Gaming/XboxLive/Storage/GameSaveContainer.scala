@@ -72,7 +72,8 @@ object GameSaveContainer {
     __obj.asInstanceOf[GameSaveContainer]
   }
   
-  extension [Self <: GameSaveContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GameSaveContainer] (val x: Self) extends AnyVal {
     
     inline def setCreateBlobInfoQuery(value: String => GameSaveBlobInfoQuery): Self = StObject.set(x, "createBlobInfoQuery", js.Any.fromFunction1(value))
     

@@ -36,7 +36,8 @@ object BoardColumn {
     __obj.asInstanceOf[BoardColumn]
   }
   
-  extension [Self <: BoardColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoardColumn] (val x: Self) extends AnyVal {
     
     inline def setColumnType(value: BoardColumnType): Self = StObject.set(x, "columnType", value.asInstanceOf[js.Any])
     

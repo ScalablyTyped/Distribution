@@ -33,7 +33,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AutoBreadcrumbOptions]
     }
     
-    extension [Self <: AutoBreadcrumbOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoBreadcrumbOptions] (val x: Self) extends AnyVal {
       
       inline def setConsole(value: Boolean): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Breadcrumb]
     }
     
-    extension [Self <: Breadcrumb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Breadcrumb] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
@@ -156,7 +158,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RavenInstrumentationOptions]
     }
     
-    extension [Self <: RavenInstrumentationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RavenInstrumentationOptions] (val x: Self) extends AnyVal {
       
       inline def setTryCatch(value: Boolean): Self = StObject.set(x, "tryCatch", value.asInstanceOf[js.Any])
       
@@ -270,7 +273,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RavenOptions]
     }
     
-    extension [Self <: RavenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RavenOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowDuplicates(value: Boolean): Self = StObject.set(x, "allowDuplicates", value.asInstanceOf[js.Any])
       
@@ -615,7 +619,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RavenTransportOptions]
     }
     
-    extension [Self <: RavenTransportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RavenTransportOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: Sentryclient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       

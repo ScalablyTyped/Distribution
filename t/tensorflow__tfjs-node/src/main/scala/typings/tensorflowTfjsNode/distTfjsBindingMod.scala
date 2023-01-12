@@ -126,7 +126,8 @@ object distTfjsBindingMod {
       __obj.asInstanceOf[TFJSBinding]
     }
     
-    extension [Self <: TFJSBinding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TFJSBinding] (val x: Self) extends AnyVal {
       
       inline def setCreateTensor(value: (js.Array[Double], Double, BackendValues) => Double): Self = StObject.set(x, "createTensor", js.Any.fromFunction3(value))
       

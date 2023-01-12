@@ -20,7 +20,8 @@ object UseRowStateInstanceProps {
     __obj.asInstanceOf[UseRowStateInstanceProps[D]]
   }
   
-  extension [Self <: UseRowStateInstanceProps[?], D /* <: js.Object */](x: Self & UseRowStateInstanceProps[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseRowStateInstanceProps[?], D /* <: js.Object */] (val x: Self & UseRowStateInstanceProps[D]) extends AnyVal {
     
     inline def setSetCellState(value: (js.Array[String], IdType[D], UseRowUpdater[Any]) => Unit): Self = StObject.set(x, "setCellState", js.Any.fromFunction3(value))
     

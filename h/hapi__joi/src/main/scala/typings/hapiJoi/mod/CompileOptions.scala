@@ -19,7 +19,8 @@ object CompileOptions {
     __obj.asInstanceOf[CompileOptions]
   }
   
-  extension [Self <: CompileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompileOptions] (val x: Self) extends AnyVal {
     
     inline def setLegacy(value: Boolean): Self = StObject.set(x, "legacy", value.asInstanceOf[js.Any])
   }

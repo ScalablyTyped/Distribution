@@ -38,7 +38,8 @@ object IPFSGetResult {
     __obj.asInstanceOf[IPFSGetResult]
   }
   
-  extension [Self <: IPFSGetResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPFSGetResult] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Buffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

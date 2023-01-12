@@ -66,7 +66,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Constants]
     }
     
-    extension [Self <: Constants](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constants] (val x: Self) extends AnyVal {
       
       inline def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
       
@@ -148,7 +149,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CryptoInstance]
     }
     
-    extension [Self <: CryptoInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CryptoInstance] (val x: Self) extends AnyVal {
       
       inline def setCreateCipheriv(value: FnCall): Self = StObject.set(x, "createCipheriv", value.asInstanceOf[js.Any])
       
@@ -183,7 +185,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CryptoOptions]
     }
     
-    extension [Self <: CryptoOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CryptoOptions] (val x: Self) extends AnyVal {
       
       inline def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
     }
@@ -204,7 +207,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[EncryptOptions]
     }
     
-    extension [Self <: EncryptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncryptOptions] (val x: Self) extends AnyVal {
       
       inline def setIvBytes(value: Double): Self = StObject.set(x, "ivBytes", value.asInstanceOf[js.Any])
       
@@ -363,7 +367,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[CryptoParams]
       }
       
-      extension [Self <: CryptoParams](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CryptoParams] (val x: Self) extends AnyVal {
         
         inline def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
         
@@ -391,7 +396,8 @@ object mod extends Shortcut {
       }
     }
     
-    extension [Self <: KeyStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyStore] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -417,7 +423,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[PBKDF2Params]
       }
       
-      extension [Self <: PBKDF2Params](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PBKDF2Params] (val x: Self) extends AnyVal {
         
         inline def setKdf(value: pbkdf2): Self = StObject.set(x, "kdf", value.asInstanceOf[js.Any])
         
@@ -440,7 +447,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[SCryptParams]
       }
       
-      extension [Self <: SCryptParams](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SCryptParams] (val x: Self) extends AnyVal {
         
         inline def setKdf(value: scrypt): Self = StObject.set(x, "kdf", value.asInstanceOf[js.Any])
         
@@ -465,7 +473,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Type]
       }
       
-      extension [Self <: Type](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
         
         inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         

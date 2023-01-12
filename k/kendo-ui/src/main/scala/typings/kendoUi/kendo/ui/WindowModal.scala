@@ -15,7 +15,8 @@ object WindowModal {
     __obj.asInstanceOf[WindowModal]
   }
   
-  extension [Self <: WindowModal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowModal] (val x: Self) extends AnyVal {
     
     inline def setPreventScroll(value: Boolean): Self = StObject.set(x, "preventScroll", value.asInstanceOf[js.Any])
     

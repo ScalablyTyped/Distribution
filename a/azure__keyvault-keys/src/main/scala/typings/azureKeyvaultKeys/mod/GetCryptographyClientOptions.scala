@@ -20,7 +20,8 @@ object GetCryptographyClientOptions {
     __obj.asInstanceOf[GetCryptographyClientOptions]
   }
   
-  extension [Self <: GetCryptographyClientOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCryptographyClientOptions] (val x: Self) extends AnyVal {
     
     inline def setKeyVersion(value: String): Self = StObject.set(x, "keyVersion", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DivItemLayout {
     __obj.asInstanceOf[DivItemLayout]
   }
   
-  extension [Self <: DivItemLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DivItemLayout] (val x: Self) extends AnyVal {
     
     inline def setCSSStyles(value: CssStyles): Self = StObject.set(x, "CSSStyles", value.asInstanceOf[js.Any])
     

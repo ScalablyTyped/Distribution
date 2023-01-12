@@ -19,7 +19,8 @@ object ReturnTypeNavigateResponse {
     __obj.asInstanceOf[ReturnTypeNavigateResponse]
   }
   
-  extension [Self <: ReturnTypeNavigateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeNavigateResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[NavigateRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object PointerOptions {
     __obj.asInstanceOf[PointerOptions]
   }
   
-  extension [Self <: PointerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerOptions] (val x: Self) extends AnyVal {
     
     inline def setHandleDownEvent(value: /* event */ MapBrowserPointerEvent => Boolean): Self = StObject.set(x, "handleDownEvent", js.Any.fromFunction1(value))
     

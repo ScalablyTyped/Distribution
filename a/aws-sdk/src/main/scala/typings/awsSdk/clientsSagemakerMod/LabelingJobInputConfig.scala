@@ -23,7 +23,8 @@ object LabelingJobInputConfig {
     __obj.asInstanceOf[LabelingJobInputConfig]
   }
   
-  extension [Self <: LabelingJobInputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelingJobInputConfig] (val x: Self) extends AnyVal {
     
     inline def setDataAttributes(value: LabelingJobDataAttributes): Self = StObject.set(x, "DataAttributes", value.asInstanceOf[js.Any])
     

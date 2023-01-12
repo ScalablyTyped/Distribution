@@ -28,7 +28,8 @@ object GetModelRequest {
     __obj.asInstanceOf[GetModelRequest]
   }
   
-  extension [Self <: GetModelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetModelRequest] (val x: Self) extends AnyVal {
     
     inline def setFlatten(value: Boolean): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
     

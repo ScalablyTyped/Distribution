@@ -22,7 +22,8 @@ object CanvasAction {
     __obj.asInstanceOf[CanvasAction]
   }
   
-  extension [Self <: CanvasAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasAction] (val x: Self) extends AnyVal {
     
     inline def setAddColorStop(value: (Double, Color) => Unit): Self = StObject.set(x, "addColorStop", js.Any.fromFunction2(value))
   }

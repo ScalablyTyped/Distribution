@@ -37,7 +37,8 @@ object CcrResumeFollowRequest {
     __obj.asInstanceOf[CcrResumeFollowRequest]
   }
   
-  extension [Self <: CcrResumeFollowRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CcrResumeFollowRequest] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: IndexName): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

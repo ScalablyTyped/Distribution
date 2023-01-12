@@ -28,7 +28,8 @@ object useImageMod {
       __obj.asInstanceOf[useImageProps]
     }
     
-    extension [Self <: useImageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: useImageProps] (val x: Self) extends AnyVal {
       
       inline def setImgPromise(value: /* repeated */ Any => js.Promise[Unit]): Self = StObject.set(x, "imgPromise", js.Any.fromFunction1(value))
       

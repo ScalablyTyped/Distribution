@@ -46,7 +46,8 @@ object XRegressionCurveContainer {
     __obj.asInstanceOf[XRegressionCurveContainer]
   }
   
-  extension [Self <: XRegressionCurveContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRegressionCurveContainer] (val x: Self) extends AnyVal {
     
     inline def setAddRegressionCurve(value: XRegressionCurve => Unit): Self = StObject.set(x, "addRegressionCurve", js.Any.fromFunction1(value))
     

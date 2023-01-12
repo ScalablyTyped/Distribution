@@ -18,7 +18,8 @@ object ExecuteSqlResponse {
     __obj.asInstanceOf[ExecuteSqlResponse]
   }
   
-  extension [Self <: ExecuteSqlResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteSqlResponse] (val x: Self) extends AnyVal {
     
     inline def setSqlStatementResults(value: SqlStatementResults): Self = StObject.set(x, "sqlStatementResults", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object TileMinimizingEventUIParam {
     __obj.asInstanceOf[TileMinimizingEventUIParam]
   }
   
-  extension [Self <: TileMinimizingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileMinimizingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setMaximizingTile(value: Any): Self = StObject.set(x, "maximizingTile", value.asInstanceOf[js.Any])
     

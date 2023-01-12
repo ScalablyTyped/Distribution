@@ -168,7 +168,8 @@ object libShapesTextMod {
       __obj.asInstanceOf[TextConfig]
     }
     
-    extension [Self <: TextConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextConfig] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

@@ -163,7 +163,8 @@ object CreateCacheClusterMessage {
     __obj.asInstanceOf[CreateCacheClusterMessage]
   }
   
-  extension [Self <: CreateCacheClusterMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCacheClusterMessage] (val x: Self) extends AnyVal {
     
     inline def setAZMode(value: AZMode): Self = StObject.set(x, "AZMode", value.asInstanceOf[js.Any])
     

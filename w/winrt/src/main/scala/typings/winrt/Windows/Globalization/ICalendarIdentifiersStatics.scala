@@ -41,7 +41,8 @@ object ICalendarIdentifiersStatics {
     __obj.asInstanceOf[ICalendarIdentifiersStatics]
   }
   
-  extension [Self <: ICalendarIdentifiersStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICalendarIdentifiersStatics] (val x: Self) extends AnyVal {
     
     inline def setGregorian(value: String): Self = StObject.set(x, "gregorian", value.asInstanceOf[js.Any])
     

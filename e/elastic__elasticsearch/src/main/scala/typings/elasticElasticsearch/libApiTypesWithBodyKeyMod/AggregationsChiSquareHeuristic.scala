@@ -17,7 +17,8 @@ object AggregationsChiSquareHeuristic {
     __obj.asInstanceOf[AggregationsChiSquareHeuristic]
   }
   
-  extension [Self <: AggregationsChiSquareHeuristic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsChiSquareHeuristic] (val x: Self) extends AnyVal {
     
     inline def setBackground_is_superset(value: Boolean): Self = StObject.set(x, "background_is_superset", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object IValueExpr {
     __obj.asInstanceOf[IValueExpr]
   }
   
-  extension [Self <: IValueExpr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IValueExpr] (val x: Self) extends AnyVal {
     
     inline def setQv(value: String): Self = StObject.set(x, "qv", value.asInstanceOf[js.Any])
   }

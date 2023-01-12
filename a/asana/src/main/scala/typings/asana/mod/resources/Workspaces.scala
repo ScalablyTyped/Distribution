@@ -215,7 +215,8 @@ object Workspaces extends Shortcut {
       __obj.asInstanceOf[ShortType]
     }
     
-    extension [Self <: ShortType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShortType] (val x: Self) extends AnyVal {
       
       inline def setIs_organization(value: Boolean): Self = StObject.set(x, "is_organization", value.asInstanceOf[js.Any])
       
@@ -244,7 +245,8 @@ object Workspaces extends Shortcut {
       __obj.asInstanceOf[typings.asana.mod.resources.Workspaces.Type]
     }
     
-    extension [Self <: typings.asana.mod.resources.Workspaces.Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.asana.mod.resources.Workspaces.Type] (val x: Self) extends AnyVal {
       
       inline def setEmail_domains(value: js.Array[String]): Self = StObject.set(x, "email_domains", value.asInstanceOf[js.Any])
       
@@ -270,7 +272,8 @@ object Workspaces extends Shortcut {
       __obj.asInstanceOf[TypeaheadParams]
     }
     
-    extension [Self <: TypeaheadParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeaheadParams] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

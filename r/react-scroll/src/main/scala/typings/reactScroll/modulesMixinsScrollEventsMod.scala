@@ -32,7 +32,8 @@ object modulesMixinsScrollEventsMod {
         __obj.asInstanceOf[ScrollEvent]
       }
       
-      extension [Self <: ScrollEvent](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ScrollEvent] (val x: Self) extends AnyVal {
         
         inline def setRegister(value: (String, js.Function2[/* to */ String, /* element */ Any, Unit]) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
         

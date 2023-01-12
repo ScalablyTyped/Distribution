@@ -23,7 +23,8 @@ object ConsumptionPreferences {
     __obj.asInstanceOf[ConsumptionPreferences]
   }
   
-  extension [Self <: ConsumptionPreferences](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsumptionPreferences] (val x: Self) extends AnyVal {
     
     inline def setConsumption_preference_id(value: String): Self = StObject.set(x, "consumption_preference_id", value.asInstanceOf[js.Any])
     

@@ -112,7 +112,8 @@ object SyntaxNodeInvariantsChecker {
     __obj.asInstanceOf[SyntaxNodeInvariantsChecker]
   }
   
-  extension [Self <: SyntaxNodeInvariantsChecker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyntaxNodeInvariantsChecker] (val x: Self) extends AnyVal {
     
     inline def setTokenTable(value: Any): Self = StObject.set(x, "tokenTable", value.asInstanceOf[js.Any])
   }

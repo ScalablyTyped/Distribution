@@ -38,7 +38,8 @@ object ListAttacksRequest {
     __obj.asInstanceOf[ListAttacksRequest]
   }
   
-  extension [Self <: ListAttacksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAttacksRequest] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: TimeRange): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object MediaKeyMessageEventInit {
     __obj.asInstanceOf[MediaKeyMessageEventInit]
   }
   
-  extension [Self <: MediaKeyMessageEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaKeyMessageEventInit] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

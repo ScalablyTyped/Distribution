@@ -28,7 +28,8 @@ object BooleanColumnStatisticsData {
     __obj.asInstanceOf[BooleanColumnStatisticsData]
   }
   
-  extension [Self <: BooleanColumnStatisticsData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BooleanColumnStatisticsData] (val x: Self) extends AnyVal {
     
     inline def setNumberOfFalses(value: NonNegativeLong): Self = StObject.set(x, "NumberOfFalses", value.asInstanceOf[js.Any])
     

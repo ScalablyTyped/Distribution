@@ -15,7 +15,8 @@ object EventTriggerEvent {
     __obj.asInstanceOf[EventTriggerEvent]
   }
   
-  extension [Self <: EventTriggerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventTriggerEvent] (val x: Self) extends AnyVal {
     
     inline def setListen(value: String): Self = StObject.set(x, "listen", value.asInstanceOf[js.Any])
     

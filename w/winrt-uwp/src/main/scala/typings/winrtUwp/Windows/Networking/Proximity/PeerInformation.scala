@@ -31,7 +31,8 @@ object PeerInformation {
     __obj.asInstanceOf[PeerInformation]
   }
   
-  extension [Self <: PeerInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeerInformation] (val x: Self) extends AnyVal {
     
     inline def setDiscoveryData(value: IBuffer): Self = StObject.set(x, "discoveryData", value.asInstanceOf[js.Any])
     

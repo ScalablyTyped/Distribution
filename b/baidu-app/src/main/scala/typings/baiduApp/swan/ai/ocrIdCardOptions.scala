@@ -34,7 +34,8 @@ object ocrIdCardOptions {
     __obj.asInstanceOf[ocrIdCardOptions]
   }
   
-  extension [Self <: ocrIdCardOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ocrIdCardOptions] (val x: Self) extends AnyVal {
     
     inline def setDetect_direction(value: Boolean): Self = StObject.set(x, "detect_direction", value.asInstanceOf[js.Any])
     

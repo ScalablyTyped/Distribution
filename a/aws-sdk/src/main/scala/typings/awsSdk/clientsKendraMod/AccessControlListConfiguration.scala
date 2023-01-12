@@ -18,7 +18,8 @@ object AccessControlListConfiguration {
     __obj.asInstanceOf[AccessControlListConfiguration]
   }
   
-  extension [Self <: AccessControlListConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessControlListConfiguration] (val x: Self) extends AnyVal {
     
     inline def setKeyPath(value: S3ObjectKey): Self = StObject.set(x, "KeyPath", value.asInstanceOf[js.Any])
     

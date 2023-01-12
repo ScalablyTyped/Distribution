@@ -32,7 +32,8 @@ object EditInitializeParams {
     __obj.asInstanceOf[EditInitializeParams]
   }
   
-  extension [Self <: EditInitializeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditInitializeParams] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: EditInitializeFiltering): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

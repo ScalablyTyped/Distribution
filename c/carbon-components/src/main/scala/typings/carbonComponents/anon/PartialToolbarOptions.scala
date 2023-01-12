@@ -24,7 +24,8 @@ object PartialToolbarOptions {
     __obj.asInstanceOf[PartialToolbarOptions]
   }
   
-  extension [Self <: PartialToolbarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialToolbarOptions] (val x: Self) extends AnyVal {
     
     inline def setClassSearchActive(value: String): Self = StObject.set(x, "classSearchActive", value.asInstanceOf[js.Any])
     

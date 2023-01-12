@@ -122,7 +122,8 @@ object XDocumentTemplates {
     __obj.asInstanceOf[XDocumentTemplates]
   }
   
-  extension [Self <: XDocumentTemplates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDocumentTemplates] (val x: Self) extends AnyVal {
     
     inline def setAddGroup(value: String => Boolean): Self = StObject.set(x, "addGroup", js.Any.fromFunction1(value))
     

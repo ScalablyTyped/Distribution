@@ -38,7 +38,8 @@ object DTMFSpecification {
     __obj.asInstanceOf[DTMFSpecification]
   }
   
-  extension [Self <: DTMFSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DTMFSpecification] (val x: Self) extends AnyVal {
     
     inline def setDeletionCharacter(value: DTMFCharacter): Self = StObject.set(x, "deletionCharacter", value.asInstanceOf[js.Any])
     

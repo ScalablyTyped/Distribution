@@ -23,7 +23,8 @@ object DescribeWorkspaceSnapshotsResult {
     __obj.asInstanceOf[DescribeWorkspaceSnapshotsResult]
   }
   
-  extension [Self <: DescribeWorkspaceSnapshotsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeWorkspaceSnapshotsResult] (val x: Self) extends AnyVal {
     
     inline def setRebuildSnapshots(value: SnapshotList): Self = StObject.set(x, "RebuildSnapshots", value.asInstanceOf[js.Any])
     

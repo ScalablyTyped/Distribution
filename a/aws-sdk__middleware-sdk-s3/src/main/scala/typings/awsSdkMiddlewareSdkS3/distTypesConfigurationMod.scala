@@ -37,7 +37,8 @@ object distTypesConfigurationMod {
       __obj.asInstanceOf[S3InputConfig]
     }
     
-    extension [Self <: S3InputConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3InputConfig] (val x: Self) extends AnyVal {
       
       inline def setDisableMultiregionAccessPoints(value: Boolean): Self = StObject.set(x, "disableMultiregionAccessPoints", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object distTypesConfigurationMod {
       __obj.asInstanceOf[S3ResolvedConfig]
     }
     
-    extension [Self <: S3ResolvedConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3ResolvedConfig] (val x: Self) extends AnyVal {
       
       inline def setDisableMultiregionAccessPoints(value: Boolean): Self = StObject.set(x, "disableMultiregionAccessPoints", value.asInstanceOf[js.Any])
       

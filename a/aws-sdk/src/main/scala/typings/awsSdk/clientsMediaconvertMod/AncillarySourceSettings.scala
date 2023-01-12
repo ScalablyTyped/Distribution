@@ -28,7 +28,8 @@ object AncillarySourceSettings {
     __obj.asInstanceOf[AncillarySourceSettings]
   }
   
-  extension [Self <: AncillarySourceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AncillarySourceSettings] (val x: Self) extends AnyVal {
     
     inline def setConvert608To708(value: AncillaryConvert608To708): Self = StObject.set(x, "Convert608To708", value.asInstanceOf[js.Any])
     

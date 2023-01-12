@@ -40,7 +40,8 @@ object Bri {
     __obj.asInstanceOf[Bri]
   }
   
-  extension [Self <: Bri](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bri] (val x: Self) extends AnyVal {
     
     inline def setBri(value: Double): Self = StObject.set(x, "bri", value.asInstanceOf[js.Any])
     

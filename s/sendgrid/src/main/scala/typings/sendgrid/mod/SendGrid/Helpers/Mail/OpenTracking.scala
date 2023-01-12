@@ -30,7 +30,8 @@ object OpenTracking {
     __obj.asInstanceOf[OpenTracking]
   }
   
-  extension [Self <: OpenTracking](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenTracking] (val x: Self) extends AnyVal {
     
     inline def setGetEnable(value: () => Boolean): Self = StObject.set(x, "getEnable", js.Any.fromFunction0(value))
     

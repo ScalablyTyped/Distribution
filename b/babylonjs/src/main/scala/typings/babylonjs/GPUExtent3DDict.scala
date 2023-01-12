@@ -19,7 +19,8 @@ object GPUExtent3DDict {
     __obj.asInstanceOf[GPUExtent3DDict]
   }
   
-  extension [Self <: GPUExtent3DDict](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUExtent3DDict] (val x: Self) extends AnyVal {
     
     inline def setDepthOrArrayLayers(value: GPUIntegerCoordinate): Self = StObject.set(x, "depthOrArrayLayers", value.asInstanceOf[js.Any])
     

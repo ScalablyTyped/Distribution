@@ -24,7 +24,8 @@ object PointOfViewValidationAcceptor {
     __obj.asInstanceOf[PointOfViewValidationAcceptor]
   }
   
-  extension [Self <: PointOfViewValidationAcceptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointOfViewValidationAcceptor] (val x: Self) extends AnyVal {
     
     inline def setGetPrimaryUnit(value: () => ICompilationUnit): Self = StObject.set(x, "getPrimaryUnit", js.Any.fromFunction0(value))
   }

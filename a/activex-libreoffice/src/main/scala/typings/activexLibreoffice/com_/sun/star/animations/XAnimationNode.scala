@@ -165,7 +165,8 @@ object XAnimationNode {
     __obj.asInstanceOf[XAnimationNode]
   }
   
-  extension [Self <: XAnimationNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAnimationNode] (val x: Self) extends AnyVal {
     
     inline def setAcceleration(value: Double): Self = StObject.set(x, "Acceleration", value.asInstanceOf[js.Any])
     

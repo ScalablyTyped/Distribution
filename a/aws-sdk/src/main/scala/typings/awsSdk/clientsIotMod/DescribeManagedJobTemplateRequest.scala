@@ -23,7 +23,8 @@ object DescribeManagedJobTemplateRequest {
     __obj.asInstanceOf[DescribeManagedJobTemplateRequest]
   }
   
-  extension [Self <: DescribeManagedJobTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeManagedJobTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setTemplateName(value: ManagedJobTemplateName): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
     

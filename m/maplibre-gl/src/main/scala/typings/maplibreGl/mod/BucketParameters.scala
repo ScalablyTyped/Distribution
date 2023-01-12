@@ -38,7 +38,8 @@ object BucketParameters {
     __obj.asInstanceOf[BucketParameters[Layer]]
   }
   
-  extension [Self <: BucketParameters[?], Layer /* <: TypedStyleLayer */](x: Self & BucketParameters[Layer]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketParameters[?], Layer /* <: TypedStyleLayer */] (val x: Self & BucketParameters[Layer]) extends AnyVal {
     
     inline def setCollisionBoxArray(value: CollisionBoxArray): Self = StObject.set(x, "collisionBoxArray", value.asInstanceOf[js.Any])
     

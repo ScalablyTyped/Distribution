@@ -45,7 +45,8 @@ object ElasticsearchAction {
     __obj.asInstanceOf[ElasticsearchAction]
   }
   
-  extension [Self <: ElasticsearchAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElasticsearchAction] (val x: Self) extends AnyVal {
     
     inline def setEndpoint(value: ElasticsearchEndpoint): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[Inspector]
     }
     
-    extension [Self <: Inspector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Inspector] (val x: Self) extends AnyVal {
       
       inline def setOutput(value: Output): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setIsTTY(value: Boolean): Self = StObject.set(x, "isTTY", value.asInstanceOf[js.Any])
       

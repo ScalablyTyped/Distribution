@@ -22,7 +22,8 @@ object AttributionViewModelProperties {
     __obj.asInstanceOf[AttributionViewModelProperties]
   }
   
-  extension [Self <: AttributionViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributionViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

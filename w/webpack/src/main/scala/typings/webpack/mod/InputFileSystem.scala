@@ -104,7 +104,8 @@ object InputFileSystem {
     __obj.asInstanceOf[InputFileSystem]
   }
   
-  extension [Self <: InputFileSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputFileSystem] (val x: Self) extends AnyVal {
     
     inline def setDirname(value: /* arg0 */ String => String): Self = StObject.set(x, "dirname", js.Any.fromFunction1(value))
     

@@ -36,7 +36,8 @@ object GooglePrivacyDlpV2Deidentify {
     __obj.asInstanceOf[GooglePrivacyDlpV2Deidentify]
   }
   
-  extension [Self <: GooglePrivacyDlpV2Deidentify](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2Deidentify] (val x: Self) extends AnyVal {
     
     inline def setCloudStorageOutput(value: String): Self = StObject.set(x, "cloudStorageOutput", value.asInstanceOf[js.Any])
     

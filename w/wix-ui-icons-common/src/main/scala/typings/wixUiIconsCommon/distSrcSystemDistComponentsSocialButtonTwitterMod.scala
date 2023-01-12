@@ -27,7 +27,8 @@ object distSrcSystemDistComponentsSocialButtonTwitterMod extends Shortcut {
       __obj.asInstanceOf[SocialButtonTwitterProps]
     }
     
-    extension [Self <: SocialButtonTwitterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocialButtonTwitterProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -209,7 +209,8 @@ object CoordinatesStateeventEvenArgs {
     __obj.asInstanceOf[CoordinatesStateeventEvenArgs]
   }
   
-  extension [Self <: CoordinatesStateeventEvenArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoordinatesStateeventEvenArgs] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

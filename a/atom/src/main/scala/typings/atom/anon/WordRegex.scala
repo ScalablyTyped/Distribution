@@ -15,7 +15,8 @@ object WordRegex {
     __obj.asInstanceOf[WordRegex]
   }
   
-  extension [Self <: WordRegex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WordRegex] (val x: Self) extends AnyVal {
     
     inline def setWordRegex(value: js.RegExp): Self = StObject.set(x, "wordRegex", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object BuildValidator {
     __obj.asInstanceOf[BuildValidator]
   }
   
-  extension [Self <: BuildValidator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildValidator] (val x: Self) extends AnyVal {
     
     inline def setBuildSerializer(
       value: (/* externalSchemas */ Any, /* serializerOptsServerOption */ js.UndefOr[Options | (Record[String, Any])]) => FastifySerializerCompiler[Any]

@@ -22,7 +22,8 @@ object MoveEvents {
     __obj.asInstanceOf[MoveEvents]
   }
   
-  extension [Self <: MoveEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveEvents] (val x: Self) extends AnyVal {
     
     inline def setOnMove(value: /* e */ MoveMoveEvent => Unit): Self = StObject.set(x, "onMove", js.Any.fromFunction1(value))
     

@@ -27,7 +27,8 @@ object ReadonlyICustomizerProps {
     __obj.asInstanceOf[ReadonlyICustomizerProps]
   }
   
-  extension [Self <: ReadonlyICustomizerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyICustomizerProps] (val x: Self) extends AnyVal {
     
     inline def setComponentRef(value: IRefObject[Any]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
     

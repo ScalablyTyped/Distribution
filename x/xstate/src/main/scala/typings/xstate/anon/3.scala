@@ -17,7 +17,8 @@ object `3` {
     __obj.asInstanceOf[`3`[TEventType, TEvent]]
   }
   
-  extension [Self <: `3`[?, ?], TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */, TEvent /* <: EventObject */](x: Self & (`3`[TEventType, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `3`[?, ?], TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */, TEvent /* <: EventObject */] (val x: Self & (`3`[TEventType, TEvent])) extends AnyVal {
     
     inline def setType(value: TEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

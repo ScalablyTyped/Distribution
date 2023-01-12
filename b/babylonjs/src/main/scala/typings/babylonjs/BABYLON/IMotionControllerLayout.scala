@@ -53,7 +53,8 @@ object IMotionControllerLayout {
     __obj.asInstanceOf[IMotionControllerLayout]
   }
   
-  extension [Self <: IMotionControllerLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMotionControllerLayout] (val x: Self) extends AnyVal {
     
     inline def setAssetPath(value: String): Self = StObject.set(x, "assetPath", value.asInstanceOf[js.Any])
     

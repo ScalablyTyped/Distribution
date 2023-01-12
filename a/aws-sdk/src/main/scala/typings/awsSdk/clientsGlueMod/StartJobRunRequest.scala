@@ -68,7 +68,8 @@ object StartJobRunRequest {
     __obj.asInstanceOf[StartJobRunRequest]
   }
   
-  extension [Self <: StartJobRunRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartJobRunRequest] (val x: Self) extends AnyVal {
     
     inline def setAllocatedCapacity(value: IntegerValue): Self = StObject.set(x, "AllocatedCapacity", value.asInstanceOf[js.Any])
     

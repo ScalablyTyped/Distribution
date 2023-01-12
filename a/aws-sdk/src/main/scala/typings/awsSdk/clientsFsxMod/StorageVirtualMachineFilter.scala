@@ -23,7 +23,8 @@ object StorageVirtualMachineFilter {
     __obj.asInstanceOf[StorageVirtualMachineFilter]
   }
   
-  extension [Self <: StorageVirtualMachineFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageVirtualMachineFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: StorageVirtualMachineFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object EXPECTEXIST {
     __obj.asInstanceOf[EXPECTEXIST]
   }
   
-  extension [Self <: EXPECTEXIST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EXPECTEXIST] (val x: Self) extends AnyVal {
     
     inline def setEXPECT_EXIST(value: `1`): Self = StObject.set(x, "EXPECT_EXIST", value.asInstanceOf[js.Any])
     

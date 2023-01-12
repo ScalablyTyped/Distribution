@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[IsBase64Options]
     }
     
-    extension [Self <: IsBase64Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsBase64Options] (val x: Self) extends AnyVal {
       
       inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
       

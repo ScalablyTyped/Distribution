@@ -64,7 +64,8 @@ object OptCodes {
     __obj.asInstanceOf[OptCodes]
   }
   
-  extension [Self <: OptCodes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptCodes] (val x: Self) extends AnyVal {
     
     inline def setCHAIN(value: `13`): Self = StObject.set(x, "CHAIN", value.asInstanceOf[js.Any])
     

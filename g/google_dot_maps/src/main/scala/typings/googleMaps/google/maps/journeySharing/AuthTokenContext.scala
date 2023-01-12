@@ -47,7 +47,8 @@ object AuthTokenContext {
     __obj.asInstanceOf[AuthTokenContext]
   }
   
-  extension [Self <: AuthTokenContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthTokenContext] (val x: Self) extends AnyVal {
     
     inline def setDeliveryVehicleId(value: String): Self = StObject.set(x, "deliveryVehicleId", value.asInstanceOf[js.Any])
     

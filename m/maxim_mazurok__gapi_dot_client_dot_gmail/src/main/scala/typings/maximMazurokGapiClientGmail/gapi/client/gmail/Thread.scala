@@ -25,7 +25,8 @@ object Thread {
     __obj.asInstanceOf[Thread]
   }
   
-  extension [Self <: Thread](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Thread] (val x: Self) extends AnyVal {
     
     inline def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
     

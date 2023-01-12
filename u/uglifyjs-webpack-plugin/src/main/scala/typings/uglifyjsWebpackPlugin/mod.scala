@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[ExtractCommentsOptions]
     }
     
-    extension [Self <: ExtractCommentsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtractCommentsOptions] (val x: Self) extends AnyVal {
       
       inline def setBanner(value: Boolean | String | (js.Function1[/* fileName */ String, String])): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object mod {
       __obj.asInstanceOf[UglifyJsOptions]
     }
     
-    extension [Self <: UglifyJsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UglifyJsOptions] (val x: Self) extends AnyVal {
       
       inline def setCompress(value: Boolean | js.Object): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
@@ -167,7 +169,8 @@ object mod {
       __obj.asInstanceOf[UglifyJsPluginOptions]
     }
     
-    extension [Self <: UglifyJsPluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UglifyJsPluginOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean | String): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

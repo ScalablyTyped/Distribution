@@ -17,7 +17,8 @@ object NodesIoStats {
     __obj.asInstanceOf[NodesIoStats]
   }
   
-  extension [Self <: NodesIoStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesIoStats] (val x: Self) extends AnyVal {
     
     inline def setDevices(value: js.Array[NodesIoStatDevice]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     

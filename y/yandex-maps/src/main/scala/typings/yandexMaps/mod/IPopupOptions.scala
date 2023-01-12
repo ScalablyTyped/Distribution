@@ -25,7 +25,8 @@ object IPopupOptions {
     __obj.asInstanceOf[IPopupOptions]
   }
   
-  extension [Self <: IPopupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPopupOptions] (val x: Self) extends AnyVal {
     
     inline def setCloseTimeout(value: Double): Self = StObject.set(x, "closeTimeout", value.asInstanceOf[js.Any])
     

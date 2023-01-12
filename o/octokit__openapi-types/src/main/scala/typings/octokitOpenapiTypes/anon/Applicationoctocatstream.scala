@@ -17,7 +17,8 @@ object Applicationoctocatstream {
     __obj.asInstanceOf[Applicationoctocatstream]
   }
   
-  extension [Self <: Applicationoctocatstream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Applicationoctocatstream] (val x: Self) extends AnyVal {
     
     inline def `setApplicationSlashoctocat-stream`(value: String): Self = StObject.set(x, "application/octocat-stream", value.asInstanceOf[js.Any])
   }

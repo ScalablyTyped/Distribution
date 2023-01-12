@@ -102,7 +102,8 @@ object distSrcModulesPlaybackEngineOutputNativeNativeEventsBroadcasterMod {
       __obj.asInstanceOf[NativeEventsBroadcaster]
     }
     
-    extension [Self <: NativeEventsBroadcaster](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeEventsBroadcaster] (val x: Self) extends AnyVal {
       
       inline def setCheckVolumeChangeAfterLoadStart(value: () => Unit): Self = StObject.set(x, "checkVolumeChangeAfterLoadStart", js.Any.fromFunction0(value))
       

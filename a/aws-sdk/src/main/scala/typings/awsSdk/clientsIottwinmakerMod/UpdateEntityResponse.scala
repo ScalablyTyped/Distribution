@@ -23,7 +23,8 @@ object UpdateEntityResponse {
     __obj.asInstanceOf[UpdateEntityResponse]
   }
   
-  extension [Self <: UpdateEntityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateEntityResponse] (val x: Self) extends AnyVal {
     
     inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

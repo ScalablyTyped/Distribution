@@ -28,7 +28,8 @@ object ExecutionEngineConfig {
     __obj.asInstanceOf[ExecutionEngineConfig]
   }
   
-  extension [Self <: ExecutionEngineConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionEngineConfig] (val x: Self) extends AnyVal {
     
     inline def setId(value: XmlStringMaxLen256): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

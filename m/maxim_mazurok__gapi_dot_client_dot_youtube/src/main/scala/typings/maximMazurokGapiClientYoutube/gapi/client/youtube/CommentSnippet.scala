@@ -63,7 +63,8 @@ object CommentSnippet {
     __obj.asInstanceOf[CommentSnippet]
   }
   
-  extension [Self <: CommentSnippet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentSnippet] (val x: Self) extends AnyVal {
     
     inline def setAuthorChannelId(value: CommentSnippetAuthorChannelId): Self = StObject.set(x, "authorChannelId", value.asInstanceOf[js.Any])
     

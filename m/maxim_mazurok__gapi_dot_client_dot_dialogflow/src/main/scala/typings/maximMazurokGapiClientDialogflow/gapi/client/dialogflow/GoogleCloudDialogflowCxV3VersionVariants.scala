@@ -16,7 +16,8 @@ object GoogleCloudDialogflowCxV3VersionVariants {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3VersionVariants]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3VersionVariants](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3VersionVariants] (val x: Self) extends AnyVal {
     
     inline def setVariants(value: js.Array[GoogleCloudDialogflowCxV3VersionVariantsVariant]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     

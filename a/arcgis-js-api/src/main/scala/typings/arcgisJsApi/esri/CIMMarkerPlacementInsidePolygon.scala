@@ -105,7 +105,8 @@ object CIMMarkerPlacementInsidePolygon {
     __obj.asInstanceOf[CIMMarkerPlacementInsidePolygon]
   }
   
-  extension [Self <: CIMMarkerPlacementInsidePolygon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMMarkerPlacementInsidePolygon] (val x: Self) extends AnyVal {
     
     inline def setClipping(value: ClipAtBoundary): Self = StObject.set(x, "clipping", value.asInstanceOf[js.Any])
     

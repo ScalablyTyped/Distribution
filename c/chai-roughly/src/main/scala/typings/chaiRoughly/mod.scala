@@ -41,7 +41,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[Assert]
         }
         
-        extension [Self <: Assert](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Assert] (val x: Self) extends AnyVal {
           
           inline def setRoughly(value: Roughly): Self = StObject.set(x, "roughly", value.asInstanceOf[js.Any])
         }

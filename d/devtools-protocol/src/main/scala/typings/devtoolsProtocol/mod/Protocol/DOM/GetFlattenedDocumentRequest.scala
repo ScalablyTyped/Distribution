@@ -26,7 +26,8 @@ object GetFlattenedDocumentRequest {
     __obj.asInstanceOf[GetFlattenedDocumentRequest]
   }
   
-  extension [Self <: GetFlattenedDocumentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFlattenedDocumentRequest] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: integer): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

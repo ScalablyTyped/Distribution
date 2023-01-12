@@ -41,7 +41,8 @@ object libNativePickerDotandroidMod {
       __obj.asInstanceOf[IPickerProp]
     }
     
-    extension [Self <: IPickerProp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPickerProp] (val x: Self) extends AnyVal {
       
       inline def setDoScrollingComplete(value: /* repeated */ Any => Unit): Self = StObject.set(x, "doScrollingComplete", js.Any.fromFunction1(value))
       

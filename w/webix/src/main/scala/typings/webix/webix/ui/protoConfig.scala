@@ -81,7 +81,8 @@ object protoConfig {
     __obj.asInstanceOf[protoConfig]
   }
   
-  extension [Self <: protoConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: protoConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

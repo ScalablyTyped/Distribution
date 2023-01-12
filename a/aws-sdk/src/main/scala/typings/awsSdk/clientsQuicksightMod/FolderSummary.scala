@@ -43,7 +43,8 @@ object FolderSummary {
     __obj.asInstanceOf[FolderSummary]
   }
   
-  extension [Self <: FolderSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FolderSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object TypeofRadioButton {
     __obj.asInstanceOf[TypeofRadioButton]
   }
   
-  extension [Self <: TypeofRadioButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofRadioButton] (val x: Self) extends AnyVal {
     
     inline def setFn(value: RadioButton): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

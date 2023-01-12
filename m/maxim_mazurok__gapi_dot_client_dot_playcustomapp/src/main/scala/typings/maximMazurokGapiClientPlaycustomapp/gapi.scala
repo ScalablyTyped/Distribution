@@ -24,7 +24,8 @@ object gapi {
           __obj.asInstanceOf[AccountsResource]
         }
         
-        extension [Self <: AccountsResource](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: AccountsResource] (val x: Self) extends AnyVal {
           
           inline def setCustomApps(value: CustomAppsResource): Self = StObject.set(x, "customApps", value.asInstanceOf[js.Any])
         }
@@ -55,7 +56,8 @@ object gapi {
           __obj.asInstanceOf[CustomApp]
         }
         
-        extension [Self <: CustomApp](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: CustomApp] (val x: Self) extends AnyVal {
           
           inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
           
@@ -100,7 +102,8 @@ object gapi {
           __obj.asInstanceOf[Organization]
         }
         
-        extension [Self <: Organization](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Organization] (val x: Self) extends AnyVal {
           
           inline def setOrganizationId(value: String): Self = StObject.set(x, "organizationId", value.asInstanceOf[js.Any])
           

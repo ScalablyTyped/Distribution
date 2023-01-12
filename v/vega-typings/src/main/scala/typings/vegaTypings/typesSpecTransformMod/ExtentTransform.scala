@@ -23,7 +23,8 @@ object ExtentTransform {
     __obj.asInstanceOf[ExtentTransform]
   }
   
-  extension [Self <: ExtentTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtentTransform] (val x: Self) extends AnyVal {
     
     inline def setField(value: FieldRef): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

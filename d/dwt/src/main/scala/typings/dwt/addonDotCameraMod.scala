@@ -107,7 +107,8 @@ object addonDotCameraMod {
       __obj.asInstanceOf[DeviceInfo]
     }
     
-    extension [Self <: DeviceInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceInfo] (val x: Self) extends AnyVal {
       
       inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object addonDotCameraMod {
       __obj.asInstanceOf[Resolution]
     }
     
-    extension [Self <: Resolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resolution] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

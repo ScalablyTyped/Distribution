@@ -43,7 +43,8 @@ object DeleteFile {
   
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.DeleteFile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.DeleteFile */ Boolean]
   
-  extension [Self <: DeleteFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFile] (val x: Self) extends AnyVal {
     
     inline def setKind(value: delete): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

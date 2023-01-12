@@ -28,7 +28,8 @@ object XItemListener {
     __obj.asInstanceOf[XItemListener]
   }
   
-  extension [Self <: XItemListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XItemListener] (val x: Self) extends AnyVal {
     
     inline def setItemStateChanged(value: ItemEvent => Unit): Self = StObject.set(x, "itemStateChanged", js.Any.fromFunction1(value))
   }

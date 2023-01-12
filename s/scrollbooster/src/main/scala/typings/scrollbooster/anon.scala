@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Boolean): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object anon {
       __obj.asInstanceOf[PartialScrollBoosterOptio]
     }
     
-    extension [Self <: PartialScrollBoosterOptio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialScrollBoosterOptio] (val x: Self) extends AnyVal {
       
       inline def setBounce(value: Boolean): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
       
@@ -161,7 +163,8 @@ object anon {
       __obj.asInstanceOf[RequiredPosition]
     }
     
-    extension [Self <: RequiredPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredPosition] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -182,7 +185,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

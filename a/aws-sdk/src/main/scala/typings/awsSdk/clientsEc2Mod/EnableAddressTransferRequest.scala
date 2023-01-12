@@ -28,7 +28,8 @@ object EnableAddressTransferRequest {
     __obj.asInstanceOf[EnableAddressTransferRequest]
   }
   
-  extension [Self <: EnableAddressTransferRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableAddressTransferRequest] (val x: Self) extends AnyVal {
     
     inline def setAllocationId(value: AllocationId): Self = StObject.set(x, "AllocationId", value.asInstanceOf[js.Any])
     

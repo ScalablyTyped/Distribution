@@ -17,7 +17,8 @@ object Location {
     __obj.asInstanceOf[Location]
   }
   
-  extension [Self <: Location](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: LocationDetails): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

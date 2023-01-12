@@ -49,7 +49,8 @@ object distTypesMiddlewaresCrossOriginEmbedderPolicyMod {
       __obj.asInstanceOf[CrossOriginEmbedderPolicyOptions]
     }
     
-    extension [Self <: CrossOriginEmbedderPolicyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrossOriginEmbedderPolicyOptions] (val x: Self) extends AnyVal {
       
       inline def setPolicy(value: `require-corp` | credentialless): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object GetVehicleRequest {
     __obj.asInstanceOf[GetVehicleRequest]
   }
   
-  extension [Self <: GetVehicleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVehicleRequest] (val x: Self) extends AnyVal {
     
     inline def setVehicleName(value: vehicleName): Self = StObject.set(x, "vehicleName", value.asInstanceOf[js.Any])
   }

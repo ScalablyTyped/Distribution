@@ -20,7 +20,8 @@ object LowFrameRateMessage {
     __obj.asInstanceOf[LowFrameRateMessage]
   }
   
-  extension [Self <: LowFrameRateMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LowFrameRateMessage] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: Element | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

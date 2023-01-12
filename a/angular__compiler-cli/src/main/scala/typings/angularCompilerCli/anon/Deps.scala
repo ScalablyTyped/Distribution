@@ -19,7 +19,8 @@ object Deps {
     __obj.asInstanceOf[Deps]
   }
   
-  extension [Self <: Deps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Deps] (val x: Self) extends AnyVal {
     
     inline def setDeps(value: js.Array[R3DependencyMetadata]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     

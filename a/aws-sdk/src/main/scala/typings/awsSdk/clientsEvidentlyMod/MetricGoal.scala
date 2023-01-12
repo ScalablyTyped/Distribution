@@ -23,7 +23,8 @@ object MetricGoal {
     __obj.asInstanceOf[MetricGoal]
   }
   
-  extension [Self <: MetricGoal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricGoal] (val x: Self) extends AnyVal {
     
     inline def setDesiredChange(value: ChangeDirectionEnum): Self = StObject.set(x, "desiredChange", value.asInstanceOf[js.Any])
     

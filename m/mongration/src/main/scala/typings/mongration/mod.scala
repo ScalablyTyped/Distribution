@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[DbConfig]
     }
     
-    extension [Self <: DbConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DbConfig] (val x: Self) extends AnyVal {
       
       inline def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object mod {
       __obj.asInstanceOf[MigrationResponse]
     }
     
-    extension [Self <: MigrationResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MigrationResponse] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -119,7 +121,8 @@ object mod {
       __obj.asInstanceOf[MigrationStep]
     }
     
-    extension [Self <: MigrationStep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MigrationStep] (val x: Self) extends AnyVal {
       
       inline def setDown(value: (/* db */ Db, /* cb */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit): Self = StObject.set(x, "down", js.Any.fromFunction2(value))
       

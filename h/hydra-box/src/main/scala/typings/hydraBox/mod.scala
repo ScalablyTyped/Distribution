@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[HydraBox]
     }
     
-    extension [Self <: HydraBox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HydraBox] (val x: Self) extends AnyVal {
       
       inline def setApi(value: Api[DatasetCore[Quad, Quad]]): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[PotentialOperation]
     }
     
-    extension [Self <: PotentialOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PotentialOperation] (val x: Self) extends AnyVal {
       
       inline def setOperation(value: GraphPointer[Term, DatasetCore[Quad, Quad]]): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object mod {
       __obj.asInstanceOf[PropertyResource]
     }
     
-    extension [Self <: PropertyResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropertyResource] (val x: Self) extends AnyVal {
       
       inline def setObject(value: NamedNode[String]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
@@ -156,7 +159,8 @@ object mod {
       __obj.asInstanceOf[Resource]
     }
     
-    extension [Self <: Resource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
       
       inline def setDataset(value: () => js.Promise[DatasetCore[Quad, Quad]]): Self = StObject.set(x, "dataset", js.Any.fromFunction0(value))
       
@@ -216,7 +220,8 @@ object mod {
       __obj.asInstanceOf[ResourceLoader]
     }
     
-    extension [Self <: ResourceLoader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceLoader] (val x: Self) extends AnyVal {
       
       inline def setForClassOperation(
         value: (NamedNode[String], Request_[
@@ -254,7 +259,8 @@ object mod {
         __obj.asInstanceOf[Request]
       }
       
-      extension [Self <: Request](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
         
         inline def setHydra(value: HydraBox): Self = StObject.set(x, "hydra", value.asInstanceOf[js.Any])
       }

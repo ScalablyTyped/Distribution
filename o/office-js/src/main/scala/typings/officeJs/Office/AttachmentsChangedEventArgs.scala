@@ -41,7 +41,8 @@ object AttachmentsChangedEventArgs {
     __obj.asInstanceOf[AttachmentsChangedEventArgs]
   }
   
-  extension [Self <: AttachmentsChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachmentsChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAttachmentDetails(value: js.Array[js.Object]): Self = StObject.set(x, "attachmentDetails", value.asInstanceOf[js.Any])
     

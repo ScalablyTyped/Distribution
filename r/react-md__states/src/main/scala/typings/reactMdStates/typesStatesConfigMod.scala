@@ -63,7 +63,8 @@ object typesStatesConfigMod {
       __obj.asInstanceOf[StatesConfigContextType]
     }
     
-    extension [Self <: StatesConfigContextType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatesConfigContextType] (val x: Self) extends AnyVal {
       
       inline def setDisableProgrammaticRipple(value: Boolean): Self = StObject.set(x, "disableProgrammaticRipple", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object typesStatesConfigMod {
       __obj.asInstanceOf[StatesConfigProps]
     }
     
-    extension [Self <: StatesConfigProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatesConfigProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

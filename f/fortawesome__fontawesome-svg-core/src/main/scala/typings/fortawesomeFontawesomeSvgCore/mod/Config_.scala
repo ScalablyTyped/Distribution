@@ -58,7 +58,8 @@ object Config_ {
     __obj.asInstanceOf[Config_]
   }
   
-  extension [Self <: Config_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Config_] (val x: Self) extends AnyVal {
     
     inline def setAutoA11y(value: Boolean): Self = StObject.set(x, "autoA11y", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ObjectConstructor {
     __obj.asInstanceOf[ObjectConstructor]
   }
   
-  extension [Self <: ObjectConstructor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectConstructor] (val x: Self) extends AnyVal {
     
     inline def setLike(value: Any => ObjectConstructor): Self = StObject.set(x, "like", js.Any.fromFunction1(value))
     

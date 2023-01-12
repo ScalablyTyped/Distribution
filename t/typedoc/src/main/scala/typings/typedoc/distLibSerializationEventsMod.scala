@@ -49,7 +49,8 @@ object distLibSerializationEventsMod {
       __obj.asInstanceOf[SerializeEventData]
     }
     
-    extension [Self <: SerializeEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializeEventData] (val x: Self) extends AnyVal {
       
       inline def setOutputDirectory(value: String): Self = StObject.set(x, "outputDirectory", value.asInstanceOf[js.Any])
       

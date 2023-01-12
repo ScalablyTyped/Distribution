@@ -53,7 +53,8 @@ object connectConfig {
     __obj.asInstanceOf[connectConfig]
   }
   
-  extension [Self <: connectConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: connectConfig] (val x: Self) extends AnyVal {
     
     inline def setOnComplete(value: /* args */ connectCompleteArgs => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
     

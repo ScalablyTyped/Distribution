@@ -454,7 +454,8 @@ object ReadonlySectionListPropsa {
     __obj.asInstanceOf[ReadonlySectionListPropsa]
   }
   
-  extension [Self <: ReadonlySectionListPropsa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlySectionListPropsa] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

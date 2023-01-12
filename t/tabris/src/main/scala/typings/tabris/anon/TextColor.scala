@@ -21,7 +21,8 @@ object TextColor {
     __obj.asInstanceOf[TextColor]
   }
   
-  extension [Self <: TextColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextColor] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: String | js.Array[String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

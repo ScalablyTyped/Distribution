@@ -16,7 +16,8 @@ object Explicit {
     __obj.asInstanceOf[Explicit]
   }
   
-  extension [Self <: Explicit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Explicit] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

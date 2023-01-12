@@ -33,7 +33,8 @@ object DeleteTaskSetRequest {
     __obj.asInstanceOf[DeleteTaskSetRequest]
   }
   
-  extension [Self <: DeleteTaskSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTaskSetRequest] (val x: Self) extends AnyVal {
     
     inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     

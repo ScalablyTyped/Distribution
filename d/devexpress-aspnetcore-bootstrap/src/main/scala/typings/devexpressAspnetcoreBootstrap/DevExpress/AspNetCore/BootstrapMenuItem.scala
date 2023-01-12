@@ -93,7 +93,8 @@ object BootstrapMenuItem {
     __obj.asInstanceOf[BootstrapMenuItem]
   }
   
-  extension [Self <: BootstrapMenuItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapMenuItem] (val x: Self) extends AnyVal {
     
     inline def setGetBadgeIconCssClass(value: () => String): Self = StObject.set(x, "getBadgeIconCssClass", js.Any.fromFunction0(value))
     

@@ -17,7 +17,8 @@ object BlacklistValidatorConfig {
     __obj.asInstanceOf[BlacklistValidatorConfig[T]]
   }
   
-  extension [Self <: BlacklistValidatorConfig[?], T /* <: js.Object */](x: Self & BlacklistValidatorConfig[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlacklistValidatorConfig[?], T /* <: js.Object */] (val x: Self & BlacklistValidatorConfig[T]) extends AnyVal {
     
     inline def setBlacklist(value: js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
     

@@ -81,7 +81,8 @@ object RouteMatcherOptionsGeneric {
     __obj.asInstanceOf[RouteMatcherOptionsGeneric[S]]
   }
   
-  extension [Self <: RouteMatcherOptionsGeneric[?], S](x: Self & RouteMatcherOptionsGeneric[S]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteMatcherOptionsGeneric[?], S] (val x: Self & RouteMatcherOptionsGeneric[S]) extends AnyVal {
     
     inline def setAuth(value: Username[S]): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

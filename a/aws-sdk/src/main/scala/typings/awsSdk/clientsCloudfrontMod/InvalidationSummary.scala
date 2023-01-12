@@ -28,7 +28,8 @@ object InvalidationSummary {
     __obj.asInstanceOf[InvalidationSummary]
   }
   
-  extension [Self <: InvalidationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidationSummary] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     

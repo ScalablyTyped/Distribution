@@ -19,7 +19,8 @@ object Abusive {
     __obj.asInstanceOf[Abusive]
   }
   
-  extension [Self <: Abusive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Abusive] (val x: Self) extends AnyVal {
     
     inline def setAbusive(value: scala.Double): Self = StObject.set(x, "abusive", value.asInstanceOf[js.Any])
     

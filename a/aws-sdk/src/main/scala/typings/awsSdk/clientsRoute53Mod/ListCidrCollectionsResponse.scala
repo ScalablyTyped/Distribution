@@ -23,7 +23,8 @@ object ListCidrCollectionsResponse {
     __obj.asInstanceOf[ListCidrCollectionsResponse]
   }
   
-  extension [Self <: ListCidrCollectionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCidrCollectionsResponse] (val x: Self) extends AnyVal {
     
     inline def setCidrCollections(value: CollectionSummaries): Self = StObject.set(x, "CidrCollections", value.asInstanceOf[js.Any])
     

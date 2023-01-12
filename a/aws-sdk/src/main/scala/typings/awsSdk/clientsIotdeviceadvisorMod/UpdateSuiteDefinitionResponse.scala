@@ -43,7 +43,8 @@ object UpdateSuiteDefinitionResponse {
     __obj.asInstanceOf[UpdateSuiteDefinitionResponse]
   }
   
-  extension [Self <: UpdateSuiteDefinitionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSuiteDefinitionResponse] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

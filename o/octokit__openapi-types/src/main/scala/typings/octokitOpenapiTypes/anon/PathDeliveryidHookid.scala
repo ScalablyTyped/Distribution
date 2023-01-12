@@ -15,7 +15,8 @@ object PathDeliveryidHookid {
     __obj.asInstanceOf[PathDeliveryidHookid]
   }
   
-  extension [Self <: PathDeliveryidHookid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathDeliveryidHookid] (val x: Self) extends AnyVal {
     
     inline def setPath(value: DeliveryidHookid): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

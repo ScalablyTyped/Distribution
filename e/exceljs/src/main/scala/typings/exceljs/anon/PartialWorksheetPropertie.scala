@@ -28,7 +28,8 @@ object PartialWorksheetPropertie {
     __obj.asInstanceOf[PartialWorksheetPropertie]
   }
   
-  extension [Self <: PartialWorksheetPropertie](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialWorksheetPropertie] (val x: Self) extends AnyVal {
     
     inline def setDefaultColWidth(value: Double): Self = StObject.set(x, "defaultColWidth", value.asInstanceOf[js.Any])
     

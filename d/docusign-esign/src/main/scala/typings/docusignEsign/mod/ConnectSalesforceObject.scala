@@ -67,7 +67,8 @@ object ConnectSalesforceObject {
     __obj.asInstanceOf[ConnectSalesforceObject]
   }
   
-  extension [Self <: ConnectSalesforceObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectSalesforceObject] (val x: Self) extends AnyVal {
     
     inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

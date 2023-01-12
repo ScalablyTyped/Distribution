@@ -23,7 +23,8 @@ object DataChangedEventUIParam {
     __obj.asInstanceOf[DataChangedEventUIParam]
   }
   
-  extension [Self <: DataChangedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataChangedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setNewData(value: Any): Self = StObject.set(x, "newData", value.asInstanceOf[js.Any])
     

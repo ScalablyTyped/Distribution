@@ -77,7 +77,8 @@ object StartSyncExecutionOutput {
     __obj.asInstanceOf[StartSyncExecutionOutput]
   }
   
-  extension [Self <: StartSyncExecutionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartSyncExecutionOutput] (val x: Self) extends AnyVal {
     
     inline def setBillingDetails(value: BillingDetails): Self = StObject.set(x, "billingDetails", value.asInstanceOf[js.Any])
     

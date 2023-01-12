@@ -37,7 +37,8 @@ object Property {
     __obj.asInstanceOf[Property]
   }
   
-  extension [Self <: Property](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Property] (val x: Self) extends AnyVal {
     
     inline def setDAODotProperty_typekey(value: Property): Self = StObject.set(x, "DAO.Property_typekey", value.asInstanceOf[js.Any])
     

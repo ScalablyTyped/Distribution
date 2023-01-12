@@ -60,7 +60,8 @@ object namespacesExtensionTypesMod {
         __obj.asInstanceOf[ExtensionFileOrCodeC1Type]
       }
       
-      extension [Self <: ExtensionFileOrCodeC1Type](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExtensionFileOrCodeC1Type] (val x: Self) extends AnyVal {
         
         inline def setFile(value: ExtensionURL): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       }
@@ -79,7 +80,8 @@ object namespacesExtensionTypesMod {
         __obj.asInstanceOf[ExtensionFileOrCodeC2Type]
       }
       
-      extension [Self <: ExtensionFileOrCodeC2Type](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExtensionFileOrCodeC2Type] (val x: Self) extends AnyVal {
         
         inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       }
@@ -129,7 +131,8 @@ object namespacesExtensionTypesMod {
         __obj.asInstanceOf[ImageDetails]
       }
       
-      extension [Self <: ImageDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ImageDetails] (val x: Self) extends AnyVal {
         
         inline def setFormat(value: ImageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
         
@@ -173,7 +176,8 @@ object namespacesExtensionTypesMod {
         __obj.asInstanceOf[ImageDetailsRectType]
       }
       
-      extension [Self <: ImageDetailsRectType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ImageDetailsRectType] (val x: Self) extends AnyVal {
         
         inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
@@ -259,7 +263,8 @@ object namespacesExtensionTypesMod {
         __obj.asInstanceOf[InjectDetails]
       }
       
-      extension [Self <: InjectDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InjectDetails] (val x: Self) extends AnyVal {
         
         inline def setAllFrames(value: Boolean): Self = StObject.set(x, "allFrames", value.asInstanceOf[js.Any])
         

@@ -24,7 +24,8 @@ object PolyPolygonShape3D {
     __obj.asInstanceOf[PolyPolygonShape3D]
   }
   
-  extension [Self <: PolyPolygonShape3D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolyPolygonShape3D] (val x: Self) extends AnyVal {
     
     inline def setSequenceX(value: DoubleSequenceSequence): Self = StObject.set(x, "SequenceX", value.asInstanceOf[js.Any])
     

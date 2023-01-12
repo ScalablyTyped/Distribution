@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[AssetsWebpackPlugin]
     }
     
-    extension [Self <: AssetsWebpackPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssetsWebpackPlugin] (val x: Self) extends AnyVal {
       
       inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
@@ -186,7 +187,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setEntrypoints(value: Boolean): Self = StObject.set(x, "entrypoints", value.asInstanceOf[js.Any])
       

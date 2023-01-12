@@ -41,7 +41,8 @@ object distLibCommandsHscanMod {
       __obj.asInstanceOf[HScanReply]
     }
     
-    extension [Self <: HScanReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HScanReply] (val x: Self) extends AnyVal {
       
       inline def setCursor(value: Double): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object distLibCommandsHscanMod {
       __obj.asInstanceOf[HScanTuple]
     }
     
-    extension [Self <: HScanTuple](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HScanTuple] (val x: Self) extends AnyVal {
       
       inline def setField(value: RedisCommandArgument): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       

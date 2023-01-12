@@ -65,7 +65,8 @@ object BeforeDocumentCloseNotification {
     __obj.asInstanceOf[BeforeDocumentCloseNotification]
   }
   
-  extension [Self <: BeforeDocumentCloseNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeforeDocumentCloseNotification] (val x: Self) extends AnyVal {
     
     inline def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     

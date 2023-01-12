@@ -72,7 +72,8 @@ object mod {
       __obj.asInstanceOf[AffixOptions]
     }
     
-    extension [Self <: AffixOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AffixOptions] (val x: Self) extends AnyVal {
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object mod {
       __obj.asInstanceOf[OpenFile]
     }
     
-    extension [Self <: OpenFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenFile] (val x: Self) extends AnyVal {
       
       inline def setFd(value: Double): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object mod {
       __obj.asInstanceOf[Stats]
     }
     
-    extension [Self <: Stats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
       
       inline def setDirs(value: Double): Self = StObject.set(x, "dirs", value.asInstanceOf[js.Any])
       

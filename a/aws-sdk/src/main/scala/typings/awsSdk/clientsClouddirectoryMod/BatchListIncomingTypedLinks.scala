@@ -38,7 +38,8 @@ object BatchListIncomingTypedLinks {
     __obj.asInstanceOf[BatchListIncomingTypedLinks]
   }
   
-  extension [Self <: BatchListIncomingTypedLinks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchListIncomingTypedLinks] (val x: Self) extends AnyVal {
     
     inline def setFilterAttributeRanges(value: TypedLinkAttributeRangeList): Self = StObject.set(x, "FilterAttributeRanges", value.asInstanceOf[js.Any])
     

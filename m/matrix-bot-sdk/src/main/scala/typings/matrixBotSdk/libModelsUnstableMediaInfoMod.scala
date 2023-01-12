@@ -28,7 +28,8 @@ object libModelsUnstableMediaInfoMod {
       __obj.asInstanceOf[MSC2380MediaInfo]
     }
     
-    extension [Self <: MSC2380MediaInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MSC2380MediaInfo] (val x: Self) extends AnyVal {
       
       inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
       

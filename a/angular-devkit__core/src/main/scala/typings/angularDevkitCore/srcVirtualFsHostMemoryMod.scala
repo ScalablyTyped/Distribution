@@ -102,7 +102,8 @@ object srcVirtualFsHostMemoryMod {
       __obj.asInstanceOf[SimpleMemoryHostStats]
     }
     
-    extension [Self <: SimpleMemoryHostStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleMemoryHostStats] (val x: Self) extends AnyVal {
       
       inline def setContent(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

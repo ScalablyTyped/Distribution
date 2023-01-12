@@ -102,7 +102,8 @@ object libMimemodelMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setCallback(value: /* options */ ISetDataOptions => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
         

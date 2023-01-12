@@ -43,7 +43,8 @@ object XSheetFilterDescriptor3 {
     __obj.asInstanceOf[XSheetFilterDescriptor3]
   }
   
-  extension [Self <: XSheetFilterDescriptor3](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSheetFilterDescriptor3] (val x: Self) extends AnyVal {
     
     inline def setFilterFields3(value: SafeArray[TableFilterField3]): Self = StObject.set(x, "FilterFields3", value.asInstanceOf[js.Any])
     

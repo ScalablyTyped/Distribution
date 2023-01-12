@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Done]
     }
     
-    extension [Self <: Done](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Done] (val x: Self) extends AnyVal {
       
       inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Next]
     }
     
-    extension [Self <: Next](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Next] (val x: Self) extends AnyVal {
       
       inline def setNext(value: () => Done | Value): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     }
@@ -57,7 +59,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       

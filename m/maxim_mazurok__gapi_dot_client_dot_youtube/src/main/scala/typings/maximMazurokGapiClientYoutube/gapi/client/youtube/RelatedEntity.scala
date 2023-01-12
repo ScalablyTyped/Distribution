@@ -15,7 +15,8 @@ object RelatedEntity {
     __obj.asInstanceOf[RelatedEntity]
   }
   
-  extension [Self <: RelatedEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelatedEntity] (val x: Self) extends AnyVal {
     
     inline def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     

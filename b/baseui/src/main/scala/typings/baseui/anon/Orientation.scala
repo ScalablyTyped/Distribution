@@ -18,7 +18,8 @@ object Orientation {
     __obj.asInstanceOf[Orientation]
   }
   
-  extension [Self <: Orientation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Orientation] (val x: Self) extends AnyVal {
     
     inline def set$orientation(
       value: /* import warning: importer.ImportType#apply Failed type conversion: baseui.anon.Readonlyreadonlyhorizonta[keyof baseui.anon.Readonlyreadonlyhorizonta] */ js.Any

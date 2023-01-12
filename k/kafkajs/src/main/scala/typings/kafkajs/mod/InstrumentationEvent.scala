@@ -22,7 +22,8 @@ object InstrumentationEvent {
     __obj.asInstanceOf[InstrumentationEvent[T]]
   }
   
-  extension [Self <: InstrumentationEvent[?], T](x: Self & InstrumentationEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstrumentationEvent[?], T] (val x: Self & InstrumentationEvent[T]) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

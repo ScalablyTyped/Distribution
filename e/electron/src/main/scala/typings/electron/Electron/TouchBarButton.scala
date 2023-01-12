@@ -57,7 +57,8 @@ object TouchBarButton {
     __obj.asInstanceOf[TouchBarButton]
   }
   
-  extension [Self <: TouchBarButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchBarButton] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     

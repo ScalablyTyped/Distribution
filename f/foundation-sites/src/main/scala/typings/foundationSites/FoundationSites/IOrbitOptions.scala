@@ -49,7 +49,8 @@ object IOrbitOptions {
     __obj.asInstanceOf[IOrbitOptions]
   }
   
-  extension [Self <: IOrbitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOrbitOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessible(value: Boolean): Self = StObject.set(x, "accessible", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Description]
     }
     
-    extension [Self <: Description](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     }
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Fragment]
     }
     
-    extension [Self <: Fragment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fragment] (val x: Self) extends AnyVal {
       
       inline def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
     }
@@ -61,7 +63,8 @@ object anon {
       __obj.asInstanceOf[Oauth2]
     }
     
-    extension [Self <: Oauth2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Oauth2] (val x: Self) extends AnyVal {
       
       inline def setOauth2(value: Scopes): Self = StObject.set(x, "oauth2", value.asInstanceOf[js.Any])
     }
@@ -78,7 +81,8 @@ object anon {
       __obj.asInstanceOf[Path]
     }
     
-    extension [Self <: Path](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
@@ -95,7 +99,8 @@ object anon {
       __obj.asInstanceOf[Protocols]
     }
     
-    extension [Self <: Protocols](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Protocols] (val x: Self) extends AnyVal {
       
       inline def setProtocols(value: Simple): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
     }
@@ -113,7 +118,8 @@ object anon {
       __obj.asInstanceOf[Ref]
     }
     
-    extension [Self <: Ref](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ref] (val x: Self) extends AnyVal {
       
       inline def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
     }
@@ -130,7 +136,8 @@ object anon {
       __obj.asInstanceOf[Scopes]
     }
     
-    extension [Self <: Scopes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scopes] (val x: Self) extends AnyVal {
       
       inline def setScopes(value: StringDictionary[Description]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     }
@@ -147,7 +154,8 @@ object anon {
       __obj.asInstanceOf[Simple]
     }
     
-    extension [Self <: Simple](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Simple] (val x: Self) extends AnyVal {
       
       inline def setSimple(value: Path): Self = StObject.set(x, "simple", value.asInstanceOf[js.Any])
     }
@@ -255,7 +263,8 @@ object anon {
       __obj.asInstanceOf[Url]
     }
     
-    extension [Self <: Url](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
@@ -276,7 +285,8 @@ object anon {
       __obj.asInstanceOf[X16]
     }
     
-    extension [Self <: X16](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X16] (val x: Self) extends AnyVal {
       
       inline def setX16(value: String): Self = StObject.set(x, "x16", value.asInstanceOf[js.Any])
       

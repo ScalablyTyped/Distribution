@@ -18,7 +18,8 @@ object OnResultReceived {
     __obj.asInstanceOf[OnResultReceived]
   }
   
-  extension [Self <: OnResultReceived](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnResultReceived] (val x: Self) extends AnyVal {
     
     inline def setOnResultReceived(value: js.Function): Self = StObject.set(x, "onResultReceived", value.asInstanceOf[js.Any])
     

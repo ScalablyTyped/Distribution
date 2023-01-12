@@ -350,7 +350,8 @@ object sugarjs {
       __obj.asInstanceOf[ExtendOptions]
     }
     
-    extension [Self <: ExtendOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendOptions] (val x: Self) extends AnyVal {
       
       inline def setEnhance(value: Boolean): Self = StObject.set(x, "enhance", value.asInstanceOf[js.Any])
       
@@ -459,7 +460,8 @@ object sugarjs {
         __obj.asInstanceOf[ChainableBase[RawValue]]
       }
       
-      extension [Self <: ChainableBase[?], RawValue](x: Self & ChainableBase[RawValue]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChainableBase[?], RawValue] (val x: Self & ChainableBase[RawValue]) extends AnyVal {
         
         inline def setRaw(value: RawValue): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       }
@@ -503,7 +505,8 @@ object sugarjs {
         __obj.asInstanceOf[ChainableBase[RawValue]]
       }
       
-      extension [Self <: ChainableBase[?], RawValue](x: Self & ChainableBase[RawValue]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChainableBase[?], RawValue] (val x: Self & ChainableBase[RawValue]) extends AnyVal {
         
         inline def setExec(value: String => SugarDefaultChainable[RegExpExecArray | Null]): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
         

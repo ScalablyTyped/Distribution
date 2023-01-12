@@ -24,7 +24,8 @@ object DataDateFormatObject {
     __obj.asInstanceOf[DataDateFormatObject]
   }
   
-  extension [Self <: DataDateFormatObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataDateFormatObject] (val x: Self) extends AnyVal {
     
     inline def setAlternative(value: String): Self = StObject.set(x, "alternative", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Agent]
     }
     
-    extension [Self <: Agent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Agent] (val x: Self) extends AnyVal {
       
       inline def setAgent(
         value: typings.zipkinTransportHttp.mod.Agent | (js.Function1[/* url */ URL_, typings.zipkinTransportHttp.mod.Agent])

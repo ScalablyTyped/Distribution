@@ -403,7 +403,8 @@ object titlestringReactElementun {
     __obj.asInstanceOf[titlestringReactElementun]
   }
   
-  extension [Self <: titlestringReactElementun](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: titlestringReactElementun] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

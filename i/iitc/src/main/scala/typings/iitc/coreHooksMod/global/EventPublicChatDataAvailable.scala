@@ -20,7 +20,8 @@ object EventPublicChatDataAvailable {
     __obj.asInstanceOf[EventPublicChatDataAvailable]
   }
   
-  extension [Self <: EventPublicChatDataAvailable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventPublicChatDataAvailable] (val x: Self) extends AnyVal {
     
     inline def setProcessed(value: Any): Self = StObject.set(x, "processed", value.asInstanceOf[js.Any])
     

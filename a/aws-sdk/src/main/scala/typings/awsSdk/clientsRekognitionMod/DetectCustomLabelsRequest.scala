@@ -30,7 +30,8 @@ object DetectCustomLabelsRequest {
     __obj.asInstanceOf[DetectCustomLabelsRequest]
   }
   
-  extension [Self <: DetectCustomLabelsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectCustomLabelsRequest] (val x: Self) extends AnyVal {
     
     inline def setImage(value: Image): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     

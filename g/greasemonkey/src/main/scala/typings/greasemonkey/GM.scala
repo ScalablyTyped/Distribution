@@ -57,7 +57,8 @@ object GM {
       __obj.asInstanceOf[ProgressResponse[TContext]]
     }
     
-    extension [Self <: ProgressResponse[?], TContext](x: Self & ProgressResponse[TContext]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressResponse[?], TContext] (val x: Self & ProgressResponse[TContext]) extends AnyVal {
       
       inline def setLengthComputable(value: Boolean): Self = StObject.set(x, "lengthComputable", value.asInstanceOf[js.Any])
       
@@ -163,7 +164,8 @@ object GM {
       __obj.asInstanceOf[Request[TContext]]
     }
     
-    extension [Self <: Request[?], TContext](x: Self & Request[TContext]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request[?], TContext] (val x: Self & Request[TContext]) extends AnyVal {
       
       inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
@@ -276,7 +278,8 @@ object GM {
       __obj.asInstanceOf[Response[TContext]]
     }
     
-    extension [Self <: Response[?], TContext](x: Self & Response[TContext]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response[?], TContext] (val x: Self & Response[TContext]) extends AnyVal {
       
       inline def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -349,7 +352,8 @@ object GM {
       __obj.asInstanceOf[ScriptInfo]
     }
     
-    extension [Self <: ScriptInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScriptInfo] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

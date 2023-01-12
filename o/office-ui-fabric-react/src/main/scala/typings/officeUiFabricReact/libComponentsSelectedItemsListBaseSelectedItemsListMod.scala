@@ -92,7 +92,8 @@ object libComponentsSelectedItemsListBaseSelectedItemsListMod {
       __obj.asInstanceOf[IBaseSelectedItemsListState[T]]
     }
     
-    extension [Self <: IBaseSelectedItemsListState[?], T](x: Self & IBaseSelectedItemsListState[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBaseSelectedItemsListState[?], T] (val x: Self & IBaseSelectedItemsListState[T]) extends AnyVal {
       
       inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       

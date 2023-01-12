@@ -16,7 +16,8 @@ object RadioGroupSubCompnents {
     __obj.asInstanceOf[RadioGroupSubCompnents]
   }
   
-  extension [Self <: RadioGroupSubCompnents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadioGroupSubCompnents] (val x: Self) extends AnyVal {
     
     inline def setRadioButton(value: ReactForwardRef[HTMLInputElement, RadioButtonProps]): Self = StObject.set(x, "RadioButton", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object NearestTo {
     __obj.asInstanceOf[NearestTo]
   }
   
-  extension [Self <: NearestTo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NearestTo] (val x: Self) extends AnyVal {
     
     inline def setNearestTo(value: Double): Self = StObject.set(x, "nearestTo", value.asInstanceOf[js.Any])
     

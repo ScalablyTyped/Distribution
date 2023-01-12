@@ -38,7 +38,8 @@ object OnError {
     __obj.asInstanceOf[OnError]
   }
   
-  extension [Self <: OnError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnError] (val x: Self) extends AnyVal {
     
     inline def setFormats(value: CustomFormats): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Clientemail]
     }
     
-    extension [Self <: Clientemail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Clientemail] (val x: Self) extends AnyVal {
       
       inline def setClient_email(value: String): Self = StObject.set(x, "client_email", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[PartialKeyRing]
     }
     
-    extension [Self <: PartialKeyRing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialKeyRing] (val x: Self) extends AnyVal {
       
       inline def setCreateTime(value: AsObject): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
       
@@ -87,7 +89,8 @@ object anon {
       __obj.asInstanceOf[PartialOmitCryptoKeypurpo]
     }
     
-    extension [Self <: PartialOmitCryptoKeypurpo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOmitCryptoKeypurpo] (val x: Self) extends AnyVal {
       
       inline def setCreateTime(value: AsObject): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
       

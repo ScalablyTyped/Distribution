@@ -25,7 +25,8 @@ object Bounds {
     __obj.asInstanceOf[Bounds]
   }
   
-  extension [Self <: Bounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bounds] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: Rect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

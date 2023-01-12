@@ -107,7 +107,8 @@ object mod {
       __obj.asInstanceOf[App]
     }
     
-    extension [Self <: App](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: App] (val x: Self) extends AnyVal {
       
       inline def setAll(value: (String, HttpHandler) => Unit): Self = StObject.set(x, "all", js.Any.fromFunction2(value))
       
@@ -187,7 +188,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setErrorHandler(value: (/* err */ js.Error, /* req */ ServerRequest, /* res */ ServerResponse) => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction3(value))
       

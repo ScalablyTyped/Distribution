@@ -25,7 +25,8 @@ object CAPICOM_EKU {
     __obj.asInstanceOf[CAPICOM_EKU]
   }
   
-  extension [Self <: CAPICOM_EKU](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CAPICOM_EKU] (val x: Self) extends AnyVal {
     
     inline def setCAPICOM_EKU_CODE_SIGNING(value: `3`): Self = StObject.set(x, "CAPICOM_EKU_CODE_SIGNING", value.asInstanceOf[js.Any])
     

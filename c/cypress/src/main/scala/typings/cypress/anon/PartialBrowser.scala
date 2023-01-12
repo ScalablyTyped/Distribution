@@ -46,7 +46,8 @@ object PartialBrowser {
     __obj.asInstanceOf[PartialBrowser]
   }
   
-  extension [Self <: PartialBrowser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialBrowser] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: BrowserChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

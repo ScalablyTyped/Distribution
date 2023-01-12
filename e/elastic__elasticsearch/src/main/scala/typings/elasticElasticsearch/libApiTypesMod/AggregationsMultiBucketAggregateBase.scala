@@ -17,7 +17,8 @@ object AggregationsMultiBucketAggregateBase {
     __obj.asInstanceOf[AggregationsMultiBucketAggregateBase[TBucket]]
   }
   
-  extension [Self <: AggregationsMultiBucketAggregateBase[?], TBucket](x: Self & AggregationsMultiBucketAggregateBase[TBucket]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsMultiBucketAggregateBase[?], TBucket] (val x: Self & AggregationsMultiBucketAggregateBase[TBucket]) extends AnyVal {
     
     inline def setBuckets(value: AggregationsBuckets[TBucket]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     

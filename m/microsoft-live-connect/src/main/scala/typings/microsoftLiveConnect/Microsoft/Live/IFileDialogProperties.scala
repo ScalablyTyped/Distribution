@@ -38,7 +38,8 @@ object IFileDialogProperties {
     __obj.asInstanceOf[IFileDialogProperties]
   }
   
-  extension [Self <: IFileDialogProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFileDialogProperties] (val x: Self) extends AnyVal {
     
     inline def setLightbox(value: String): Self = StObject.set(x, "lightbox", value.asInstanceOf[js.Any])
     

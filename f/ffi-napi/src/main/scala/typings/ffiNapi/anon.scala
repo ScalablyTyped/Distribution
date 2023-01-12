@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[Alignment]
     }
     
-    extension [Self <: Alignment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alignment] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: Type[Double]): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Elements]
     }
     
-    extension [Self <: Elements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Elements] (val x: Self) extends AnyVal {
       
       inline def setElements(value: Type[Pointer[PFFI_TYPE]]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     }

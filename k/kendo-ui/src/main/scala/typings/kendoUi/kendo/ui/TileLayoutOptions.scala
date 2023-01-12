@@ -41,7 +41,8 @@ object TileLayoutOptions {
     __obj.asInstanceOf[TileLayoutOptions]
   }
   
-  extension [Self <: TileLayoutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileLayoutOptions] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

@@ -127,7 +127,8 @@ object DictunknownPropertyBorderColor {
     __obj.asInstanceOf[DictunknownPropertyBorderColor]
   }
   
-  extension [Self <: DictunknownPropertyBorderColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictunknownPropertyBorderColor] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: typings.echarts.echarts.EChartOption.Color): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

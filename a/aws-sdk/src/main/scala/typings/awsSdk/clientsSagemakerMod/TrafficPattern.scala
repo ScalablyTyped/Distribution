@@ -23,7 +23,8 @@ object TrafficPattern {
     __obj.asInstanceOf[TrafficPattern]
   }
   
-  extension [Self <: TrafficPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrafficPattern] (val x: Self) extends AnyVal {
     
     inline def setPhases(value: Phases): Self = StObject.set(x, "Phases", value.asInstanceOf[js.Any])
     

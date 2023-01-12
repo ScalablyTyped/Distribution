@@ -27,7 +27,8 @@ object colorRampsByTagParams {
     __obj.asInstanceOf[colorRampsByTagParams]
   }
   
-  extension [Self <: colorRampsByTagParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: colorRampsByTagParams] (val x: Self) extends AnyVal {
     
     inline def setExcludedTags(value: js.Array[String]): Self = StObject.set(x, "excludedTags", value.asInstanceOf[js.Any])
     

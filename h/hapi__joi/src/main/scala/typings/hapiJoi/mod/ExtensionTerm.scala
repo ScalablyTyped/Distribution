@@ -22,7 +22,8 @@ object ExtensionTerm {
     __obj.asInstanceOf[ExtensionTerm]
   }
   
-  extension [Self <: ExtensionTerm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionTerm] (val x: Self) extends AnyVal {
     
     inline def setInit(value: js.Array[Any]): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     

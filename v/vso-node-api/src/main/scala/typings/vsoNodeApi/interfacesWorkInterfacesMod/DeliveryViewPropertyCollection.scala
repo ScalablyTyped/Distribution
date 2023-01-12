@@ -40,7 +40,8 @@ object DeliveryViewPropertyCollection {
     __obj.asInstanceOf[DeliveryViewPropertyCollection]
   }
   
-  extension [Self <: DeliveryViewPropertyCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeliveryViewPropertyCollection] (val x: Self) extends AnyVal {
     
     inline def setCardSettings(value: CardSettings): Self = StObject.set(x, "cardSettings", value.asInstanceOf[js.Any])
     

@@ -220,7 +220,8 @@ object mod {
       __obj.asInstanceOf[AndroidVersion]
     }
     
-    extension [Self <: AndroidVersion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AndroidVersion] (val x: Self) extends AnyVal {
       
       inline def setApi(value: Double): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
@@ -344,7 +345,8 @@ object mod {
       __obj.asInstanceOf[MapVersionSupport]
     }
     
-    extension [Self <: MapVersionSupport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapVersionSupport] (val x: Self) extends AnyVal {
       
       inline def setBASE(value: AndroidVersion): Self = StObject.set(x, "BASE", value.asInstanceOf[js.Any])
       

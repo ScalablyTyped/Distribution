@@ -60,7 +60,8 @@ object BackgroundService {
       __obj.asInstanceOf[BackgroundServiceEvent]
     }
     
-    extension [Self <: BackgroundServiceEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackgroundServiceEvent] (val x: Self) extends AnyVal {
       
       inline def setEventMetadata(value: js.Array[EventMetadata]): Self = StObject.set(x, "eventMetadata", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object BackgroundService {
       __obj.asInstanceOf[BackgroundServiceEventReceivedEvent]
     }
     
-    extension [Self <: BackgroundServiceEventReceivedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackgroundServiceEventReceivedEvent] (val x: Self) extends AnyVal {
       
       inline def setBackgroundServiceEvent(value: BackgroundServiceEvent): Self = StObject.set(x, "backgroundServiceEvent", value.asInstanceOf[js.Any])
     }
@@ -108,7 +110,8 @@ object BackgroundService {
       __obj.asInstanceOf[ClearEventsRequest]
     }
     
-    extension [Self <: ClearEventsRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClearEventsRequest] (val x: Self) extends AnyVal {
       
       inline def setService(value: ServiceName): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     }
@@ -127,7 +130,8 @@ object BackgroundService {
       __obj.asInstanceOf[EventMetadata]
     }
     
-    extension [Self <: EventMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventMetadata] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -148,7 +152,8 @@ object BackgroundService {
       __obj.asInstanceOf[RecordingStateChangedEvent]
     }
     
-    extension [Self <: RecordingStateChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordingStateChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setIsRecording(value: Boolean): Self = StObject.set(x, "isRecording", value.asInstanceOf[js.Any])
       
@@ -193,7 +198,8 @@ object BackgroundService {
       __obj.asInstanceOf[SetRecordingRequest]
     }
     
-    extension [Self <: SetRecordingRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetRecordingRequest] (val x: Self) extends AnyVal {
       
       inline def setService(value: ServiceName): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
@@ -212,7 +218,8 @@ object BackgroundService {
       __obj.asInstanceOf[StartObservingRequest]
     }
     
-    extension [Self <: StartObservingRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartObservingRequest] (val x: Self) extends AnyVal {
       
       inline def setService(value: ServiceName): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     }
@@ -229,7 +236,8 @@ object BackgroundService {
       __obj.asInstanceOf[StopObservingRequest]
     }
     
-    extension [Self <: StopObservingRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StopObservingRequest] (val x: Self) extends AnyVal {
       
       inline def setService(value: ServiceName): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     }

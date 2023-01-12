@@ -64,7 +64,8 @@ object SslPolicy {
     __obj.asInstanceOf[SslPolicy]
   }
   
-  extension [Self <: SslPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SslPolicy] (val x: Self) extends AnyVal {
     
     inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     

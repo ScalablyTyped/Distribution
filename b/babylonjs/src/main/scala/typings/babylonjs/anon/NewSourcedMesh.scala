@@ -18,7 +18,8 @@ object NewSourcedMesh {
     __obj.asInstanceOf[NewSourcedMesh]
   }
   
-  extension [Self <: NewSourcedMesh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewSourcedMesh] (val x: Self) extends AnyVal {
     
     inline def setDoNotInstantiate(value: Boolean | (js.Function1[/* node */ TransformNode, Boolean])): Self = StObject.set(x, "doNotInstantiate", value.asInstanceOf[js.Any])
     

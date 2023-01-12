@@ -22,7 +22,8 @@ object SchemaSegment {
     __obj.asInstanceOf[SchemaSegment]
   }
   
-  extension [Self <: SchemaSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaSegment] (val x: Self) extends AnyVal {
     
     inline def setMaxOccurs(value: Double): Self = StObject.set(x, "maxOccurs", value.asInstanceOf[js.Any])
     

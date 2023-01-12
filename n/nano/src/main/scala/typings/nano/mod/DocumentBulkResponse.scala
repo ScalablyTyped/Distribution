@@ -27,7 +27,8 @@ object DocumentBulkResponse {
     __obj.asInstanceOf[DocumentBulkResponse]
   }
   
-  extension [Self <: DocumentBulkResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentBulkResponse] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GenerateServiceLastAccessedDetailsRequest {
     __obj.asInstanceOf[GenerateServiceLastAccessedDetailsRequest]
   }
   
-  extension [Self <: GenerateServiceLastAccessedDetailsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateServiceLastAccessedDetailsRequest] (val x: Self) extends AnyVal {
     
     inline def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

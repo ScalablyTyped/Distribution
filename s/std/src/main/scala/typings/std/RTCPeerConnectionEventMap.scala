@@ -50,7 +50,8 @@ object RTCPeerConnectionEventMap {
     __obj.asInstanceOf[RTCPeerConnectionEventMap]
   }
   
-  extension [Self <: RTCPeerConnectionEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCPeerConnectionEventMap] (val x: Self) extends AnyVal {
     
     inline def setConnectionstatechange(value: Event): Self = StObject.set(x, "connectionstatechange", value.asInstanceOf[js.Any])
     

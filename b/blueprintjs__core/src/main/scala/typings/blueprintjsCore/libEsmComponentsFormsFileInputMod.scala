@@ -112,7 +112,8 @@ object libEsmComponentsFormsFileInputMod {
       __obj.asInstanceOf[IFileInputProps]
     }
     
-    extension [Self <: IFileInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFileInputProps] (val x: Self) extends AnyVal {
       
       inline def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
       

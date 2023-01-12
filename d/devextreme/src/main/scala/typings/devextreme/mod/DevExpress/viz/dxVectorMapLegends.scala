@@ -64,7 +64,8 @@ object dxVectorMapLegends {
     __obj.asInstanceOf[dxVectorMapLegends]
   }
   
-  extension [Self <: dxVectorMapLegends](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxVectorMapLegends] (val x: Self) extends AnyVal {
     
     inline def setCustomizeHint(value: /* itemInfo */ Start => String): Self = StObject.set(x, "customizeHint", js.Any.fromFunction1(value))
     

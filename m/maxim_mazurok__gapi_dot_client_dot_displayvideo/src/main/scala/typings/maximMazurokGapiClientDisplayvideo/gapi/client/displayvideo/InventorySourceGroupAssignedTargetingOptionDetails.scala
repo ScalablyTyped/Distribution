@@ -16,7 +16,8 @@ object InventorySourceGroupAssignedTargetingOptionDetails {
     __obj.asInstanceOf[InventorySourceGroupAssignedTargetingOptionDetails]
   }
   
-  extension [Self <: InventorySourceGroupAssignedTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventorySourceGroupAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setInventorySourceGroupId(value: String): Self = StObject.set(x, "inventorySourceGroupId", value.asInstanceOf[js.Any])
     

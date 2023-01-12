@@ -47,7 +47,8 @@ object libJsonMod {
       __obj.asInstanceOf[JSONFunction]
     }
     
-    extension [Self <: JSONFunction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONFunction] (val x: Self) extends AnyVal {
       
       inline def set$function(value: String): Self = StObject.set(x, "$function", value.asInstanceOf[js.Any])
     }
@@ -90,7 +91,8 @@ object libJsonMod {
       __obj.asInstanceOf[StateNodeConfig]
     }
     
-    extension [Self <: StateNodeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateNodeConfig] (val x: Self) extends AnyVal {
       
       inline def setEntry(value: js.Array[ActionObject[Any, Any]]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       
@@ -144,7 +146,8 @@ object libJsonMod {
       __obj.asInstanceOf[TransitionConfig]
     }
     
-    extension [Self <: TransitionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionConfig] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[ActionObject[Any, Any]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

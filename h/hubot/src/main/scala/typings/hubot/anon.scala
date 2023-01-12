@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Listener[A]]
     }
     
-    extension [Self <: Listener[?], A /* <: Adapter */](x: Self & Listener[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Listener[?], A /* <: Adapter */] (val x: Self & Listener[A]) extends AnyVal {
       
       inline def setListener(value: Middleware[A]): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
       

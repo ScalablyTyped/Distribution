@@ -15,7 +15,8 @@ object ColorStyleProps {
     __obj.asInstanceOf[ColorStyleProps[ThemeType]]
   }
   
-  extension [Self <: ColorStyleProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & ColorStyleProps[ThemeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorStyleProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & ColorStyleProps[ThemeType]) extends AnyVal {
     
     inline def setColors(value: ResponsiveValue[String, ThemeType]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

@@ -75,7 +75,8 @@ object TooltipCrosshairs {
     __obj.asInstanceOf[TooltipCrosshairs]
   }
   
-  extension [Self <: TooltipCrosshairs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipCrosshairs] (val x: Self) extends AnyVal {
     
     inline def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
     

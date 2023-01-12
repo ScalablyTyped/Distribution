@@ -33,7 +33,8 @@ object StatusCodes {
     __obj.asInstanceOf[StatusCodes]
   }
   
-  extension [Self <: StatusCodes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusCodes] (val x: Self) extends AnyVal {
     
     inline def setStatus2xx(value: NullableInteger): Self = StObject.set(x, "Status2xx", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object Pose {
     __obj.asInstanceOf[Pose]
   }
   
-  extension [Self <: Pose](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pose] (val x: Self) extends AnyVal {
     
     inline def setAccuracyMeters(value: Double): Self = StObject.set(x, "accuracyMeters", value.asInstanceOf[js.Any])
     

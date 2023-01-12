@@ -15,7 +15,8 @@ object DescribeAssessmentTemplatesRequest {
     __obj.asInstanceOf[DescribeAssessmentTemplatesRequest]
   }
   
-  extension [Self <: DescribeAssessmentTemplatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAssessmentTemplatesRequest] (val x: Self) extends AnyVal {
     
     inline def setAssessmentTemplateArns(value: BatchDescribeArnList): Self = StObject.set(x, "assessmentTemplateArns", value.asInstanceOf[js.Any])
     

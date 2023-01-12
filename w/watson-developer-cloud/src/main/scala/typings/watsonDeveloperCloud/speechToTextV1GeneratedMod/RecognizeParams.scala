@@ -83,7 +83,8 @@ object RecognizeParams {
     __obj.asInstanceOf[RecognizeParams]
   }
   
-  extension [Self <: RecognizeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecognizeParams] (val x: Self) extends AnyVal {
     
     inline def setAcoustic_customization_id(value: String): Self = StObject.set(x, "acoustic_customization_id", value.asInstanceOf[js.Any])
     

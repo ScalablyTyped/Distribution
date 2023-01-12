@@ -29,7 +29,8 @@ object AggregationsRareTermsAggregation {
     __obj.asInstanceOf[AggregationsRareTermsAggregation]
   }
   
-  extension [Self <: AggregationsRareTermsAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsRareTermsAggregation] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: AggregationsTermsExclude): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     

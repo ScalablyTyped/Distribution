@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Attributeskey]
     }
     
-    extension [Self <: Attributeskey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attributeskey] (val x: Self) extends AnyVal {
       
       inline def setAttributes_key(value: String): Self = StObject.set(x, "attributes_key", value.asInstanceOf[js.Any])
       

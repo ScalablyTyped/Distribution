@@ -24,7 +24,8 @@ object typesEtcMod {
       __obj.asInstanceOf[Bitmap]
     }
     
-    extension [Self <: Bitmap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bitmap] (val x: Self) extends AnyVal {
       
       inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object typesEtcMod {
       __obj.asInstanceOf[BlendMode]
     }
     
-    extension [Self <: BlendMode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlendMode] (val x: Self) extends AnyVal {
       
       inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object typesEtcMod {
       __obj.asInstanceOf[Image]
     }
     
-    extension [Self <: Image](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
       
       inline def setBitmap(value: Bitmap): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
     }
@@ -157,7 +160,8 @@ object typesEtcMod {
       __obj.asInstanceOf[RGB]
     }
     
-    extension [Self <: RGB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RGB] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -184,7 +188,8 @@ object typesEtcMod {
       __obj.asInstanceOf[RGBA]
     }
     
-    extension [Self <: RGBA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RGBA] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -211,7 +216,8 @@ object typesEtcMod {
       __obj.asInstanceOf[URLOptions]
     }
     
-    extension [Self <: URLOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URLOptions] (val x: Self) extends AnyVal {
       
       inline def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       

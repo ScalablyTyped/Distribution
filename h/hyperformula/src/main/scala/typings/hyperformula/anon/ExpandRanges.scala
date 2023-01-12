@@ -21,7 +21,8 @@ object ExpandRanges {
     __obj.asInstanceOf[ExpandRanges]
   }
   
-  extension [Self <: ExpandRanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpandRanges] (val x: Self) extends AnyVal {
     
     inline def setExpandRanges(value: Boolean): Self = StObject.set(x, "expandRanges", value.asInstanceOf[js.Any])
     

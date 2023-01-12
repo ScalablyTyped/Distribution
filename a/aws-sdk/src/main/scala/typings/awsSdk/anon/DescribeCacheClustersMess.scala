@@ -46,7 +46,8 @@ object DescribeCacheClustersMess {
     __obj.asInstanceOf[DescribeCacheClustersMess]
   }
   
-  extension [Self <: DescribeCacheClustersMess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCacheClustersMess] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

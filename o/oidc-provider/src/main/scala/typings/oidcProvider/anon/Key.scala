@@ -22,7 +22,8 @@ object Key {
     __obj.asInstanceOf[Key]
   }
   
-  extension [Self <: Key](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
     
     inline def setAlg(value: SymmetricSigningAlgorithm): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
     

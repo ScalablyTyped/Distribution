@@ -28,7 +28,8 @@ object AwsWafRegionalRulePredicateListDetails {
     __obj.asInstanceOf[AwsWafRegionalRulePredicateListDetails]
   }
   
-  extension [Self <: AwsWafRegionalRulePredicateListDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsWafRegionalRulePredicateListDetails] (val x: Self) extends AnyVal {
     
     inline def setDataId(value: NonEmptyString): Self = StObject.set(x, "DataId", value.asInstanceOf[js.Any])
     

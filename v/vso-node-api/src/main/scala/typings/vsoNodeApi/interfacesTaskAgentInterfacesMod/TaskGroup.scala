@@ -74,7 +74,8 @@ object TaskGroup {
     __obj.asInstanceOf[TaskGroup]
   }
   
-  extension [Self <: TaskGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskGroup] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

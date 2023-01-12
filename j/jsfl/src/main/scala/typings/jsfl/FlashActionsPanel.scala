@@ -41,7 +41,8 @@ object FlashActionsPanel {
     __obj.asInstanceOf[FlashActionsPanel]
   }
   
-  extension [Self <: FlashActionsPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashActionsPanel] (val x: Self) extends AnyVal {
     
     inline def setGetClassForObject(value: () => Any): Self = StObject.set(x, "getClassForObject", js.Any.fromFunction0(value))
     

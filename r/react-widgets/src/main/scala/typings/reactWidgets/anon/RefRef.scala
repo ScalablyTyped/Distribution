@@ -16,7 +16,8 @@ object RefRef {
     __obj.asInstanceOf[RefRef]
   }
   
-  extension [Self <: RefRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefRef] (val x: Self) extends AnyVal {
     
     inline def setRef(value: typings.react.mod.Ref[ListHandle]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     

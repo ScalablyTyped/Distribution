@@ -28,7 +28,8 @@ object SelectFields {
     __obj.asInstanceOf[SelectFields]
   }
   
-  extension [Self <: SelectFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectFields] (val x: Self) extends AnyVal {
     
     inline def setInputs(value: OneInput): Self = StObject.set(x, "Inputs", value.asInstanceOf[js.Any])
     

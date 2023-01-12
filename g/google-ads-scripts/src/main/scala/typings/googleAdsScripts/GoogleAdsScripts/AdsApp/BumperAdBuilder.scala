@@ -48,7 +48,8 @@ object BumperAdBuilder {
     __obj.asInstanceOf[BumperAdBuilder]
   }
   
-  extension [Self <: BumperAdBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BumperAdBuilder] (val x: Self) extends AnyVal {
     
     inline def setWithAdName(value: String => BumperAdBuilder): Self = StObject.set(x, "withAdName", js.Any.fromFunction1(value))
     

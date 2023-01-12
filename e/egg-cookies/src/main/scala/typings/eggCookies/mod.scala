@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[CookieGetOptions]
     }
     
-    extension [Self <: CookieGetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieGetOptions] (val x: Self) extends AnyVal {
       
       inline def setEncrypt(value: Boolean): Self = StObject.set(x, "encrypt", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object mod {
       __obj.asInstanceOf[CookieSetOptions]
     }
     
-    extension [Self <: CookieSetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieSetOptions] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       

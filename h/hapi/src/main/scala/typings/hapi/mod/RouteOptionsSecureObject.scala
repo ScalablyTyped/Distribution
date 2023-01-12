@@ -52,7 +52,8 @@ object RouteOptionsSecureObject {
     __obj.asInstanceOf[RouteOptionsSecureObject]
   }
   
-  extension [Self <: RouteOptionsSecureObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteOptionsSecureObject] (val x: Self) extends AnyVal {
     
     inline def setHsts(value: Boolean | Double | IncludeSubdomains): Self = StObject.set(x, "hsts", value.asInstanceOf[js.Any])
     

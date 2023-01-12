@@ -76,7 +76,8 @@ object PickImplcolorPartialPickI {
     __obj.asInstanceOf[PickImplcolorPartialPickI]
   }
   
-  extension [Self <: PickImplcolorPartialPickI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplcolorPartialPickI] (val x: Self) extends AnyVal {
     
     inline def setAutoplay(value: auto | Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     

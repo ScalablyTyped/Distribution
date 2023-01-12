@@ -75,7 +75,8 @@ object filterConfig {
     __obj.asInstanceOf[filterConfig]
   }
   
-  extension [Self <: filterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: filterConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object IQuestionPanelDynamicData {
     __obj.asInstanceOf[IQuestionPanelDynamicData]
   }
   
-  extension [Self <: IQuestionPanelDynamicData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IQuestionPanelDynamicData] (val x: Self) extends AnyVal {
     
     inline def setGetItemIndex(value: ISurveyData => Double): Self = StObject.set(x, "getItemIndex", js.Any.fromFunction1(value))
     

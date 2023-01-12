@@ -68,7 +68,8 @@ object libUtilsNpmMod {
       __obj.asInstanceOf[PkgManagerOptions]
     }
     
-    extension [Self <: PkgManagerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PkgManagerOptions] (val x: Self) extends AnyVal {
       
       inline def setCommand(value: PkgManagerCommand): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       

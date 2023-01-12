@@ -418,7 +418,8 @@ object distNamespaceMod {
       __obj.asInstanceOf[ExtendedError]
     }
     
-    extension [Self <: ExtendedError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendedError] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -442,7 +443,8 @@ object distNamespaceMod {
       __obj.asInstanceOf[NamespaceReservedEventsMap[ListenEvents, EmitEvents, ServerSideEvents, SocketData]]
     }
     
-    extension [Self <: NamespaceReservedEventsMap[?, ?, ?, ?], ListenEvents /* <: EventsMap */, EmitEvents /* <: EventsMap */, ServerSideEvents /* <: EventsMap */, SocketData](x: Self & (NamespaceReservedEventsMap[ListenEvents, EmitEvents, ServerSideEvents, SocketData])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamespaceReservedEventsMap[?, ?, ?, ?], ListenEvents /* <: EventsMap */, EmitEvents /* <: EventsMap */, ServerSideEvents /* <: EventsMap */, SocketData] (val x: Self & (NamespaceReservedEventsMap[ListenEvents, EmitEvents, ServerSideEvents, SocketData])) extends AnyVal {
       
       inline def setConnect(value: Socket[ListenEvents, EmitEvents, ServerSideEvents, SocketData] => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
       
@@ -467,7 +469,8 @@ object distNamespaceMod {
       __obj.asInstanceOf[ServerReservedEventsMap[ListenEvents, EmitEvents, ServerSideEvents, SocketData]]
     }
     
-    extension [Self <: ServerReservedEventsMap[?, ?, ?, ?], ListenEvents /* <: EventsMap */, EmitEvents /* <: EventsMap */, ServerSideEvents /* <: EventsMap */, SocketData](x: Self & (ServerReservedEventsMap[ListenEvents, EmitEvents, ServerSideEvents, SocketData])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerReservedEventsMap[?, ?, ?, ?], ListenEvents /* <: EventsMap */, EmitEvents /* <: EventsMap */, ServerSideEvents /* <: EventsMap */, SocketData] (val x: Self & (ServerReservedEventsMap[ListenEvents, EmitEvents, ServerSideEvents, SocketData])) extends AnyVal {
       
       inline def setNew_namespace(value: Namespace[ListenEvents, EmitEvents, ServerSideEvents, SocketData] => Unit): Self = StObject.set(x, "new_namespace", js.Any.fromFunction1(value))
     }

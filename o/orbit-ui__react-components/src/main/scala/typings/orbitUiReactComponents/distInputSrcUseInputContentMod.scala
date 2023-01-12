@@ -39,7 +39,8 @@ object distInputSrcUseInputContentMod {
       __obj.asInstanceOf[UseInputIconProps]
     }
     
-    extension [Self <: UseInputIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseInputIconProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: `2xs` | xs | sm | md | lg | xl | inherit): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

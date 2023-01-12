@@ -33,7 +33,8 @@ object CreateFleetRequest {
     __obj.asInstanceOf[CreateFleetRequest]
   }
   
-  extension [Self <: CreateFleetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFleetRequest] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: DisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     

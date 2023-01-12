@@ -58,7 +58,8 @@ object FormSelect {
     __obj.asInstanceOf[FormSelect]
   }
   
-  extension [Self <: FormSelect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormSelect] (val x: Self) extends AnyVal {
     
     inline def setDropdown(value: Dropdown): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
     

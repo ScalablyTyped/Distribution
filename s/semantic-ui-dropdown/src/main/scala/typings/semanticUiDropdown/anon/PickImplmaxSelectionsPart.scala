@@ -174,7 +174,8 @@ object PickImplmaxSelectionsPart {
     __obj.asInstanceOf[PickImplmaxSelectionsPart]
   }
   
-  extension [Self <: PickImplmaxSelectionsPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplmaxSelectionsPart] (val x: Self) extends AnyVal {
     
     inline def setAction(
       value: activate | select | combo | nothing | hide | (js.ThisFunction3[

@@ -63,7 +63,8 @@ object PantheonSpirit {
     __obj.asInstanceOf[PantheonSpirit]
   }
   
-  extension [Self <: PantheonSpirit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PantheonSpirit] (val x: Self) extends AnyVal {
     
     inline def setActiveDescFunc(value: () => String): Self = StObject.set(x, "activeDescFunc", js.Any.fromFunction0(value))
     

@@ -46,7 +46,8 @@ object Arcade {
       __obj.asInstanceOf[ArcadeBodyBounds]
     }
     
-    extension [Self <: ArcadeBodyBounds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcadeBodyBounds] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object Arcade {
       __obj.asInstanceOf[ArcadeBodyCollision]
     }
     
-    extension [Self <: ArcadeBodyCollision](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcadeBodyCollision] (val x: Self) extends AnyVal {
       
       inline def setDown(value: Boolean): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
       
@@ -246,7 +248,8 @@ object Arcade {
       __obj.asInstanceOf[ArcadeWorldConfig]
     }
     
-    extension [Self <: ArcadeWorldConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcadeWorldConfig] (val x: Self) extends AnyVal {
       
       inline def setCheckCollision(value: CheckCollisionObject): Self = StObject.set(x, "checkCollision", value.asInstanceOf[js.Any])
       
@@ -388,7 +391,8 @@ object Arcade {
       __obj.asInstanceOf[ArcadeWorldDefaults]
     }
     
-    extension [Self <: ArcadeWorldDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcadeWorldDefaults] (val x: Self) extends AnyVal {
       
       inline def setBodyDebugColor(value: Double): Self = StObject.set(x, "bodyDebugColor", value.asInstanceOf[js.Any])
       
@@ -433,7 +437,8 @@ object Arcade {
       __obj.asInstanceOf[ArcadeWorldTreeMinMax]
     }
     
-    extension [Self <: ArcadeWorldTreeMinMax](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcadeWorldTreeMinMax] (val x: Self) extends AnyVal {
       
       inline def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
       
@@ -474,7 +479,8 @@ object Arcade {
       __obj.asInstanceOf[CheckCollisionObject]
     }
     
-    extension [Self <: CheckCollisionObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckCollisionObject] (val x: Self) extends AnyVal {
       
       inline def setDown(value: Boolean): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
       
@@ -689,7 +695,8 @@ object Arcade {
       __obj.asInstanceOf[PhysicsGroupConfig]
     }
     
-    extension [Self <: PhysicsGroupConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhysicsGroupConfig] (val x: Self) extends AnyVal {
       
       inline def setAccelerationX(value: Double): Self = StObject.set(x, "accelerationX", value.asInstanceOf[js.Any])
       
@@ -941,7 +948,8 @@ object Arcade {
       __obj.asInstanceOf[PhysicsGroupDefaults]
     }
     
-    extension [Self <: PhysicsGroupDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhysicsGroupDefaults] (val x: Self) extends AnyVal {
       
       inline def setSetAccelerationX(value: Double): Self = StObject.set(x, "setAccelerationX", value.asInstanceOf[js.Any])
       

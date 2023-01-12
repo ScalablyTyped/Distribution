@@ -45,7 +45,8 @@ object WebAccountProviderSignOutAccountOperation {
     __obj.asInstanceOf[WebAccountProviderSignOutAccountOperation]
   }
   
-  extension [Self <: WebAccountProviderSignOutAccountOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebAccountProviderSignOutAccountOperation] (val x: Self) extends AnyVal {
     
     inline def setApplicationCallbackUri(value: Uri): Self = StObject.set(x, "applicationCallbackUri", value.asInstanceOf[js.Any])
     

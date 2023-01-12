@@ -29,7 +29,8 @@ object distConfigFactoryMod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Filter): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

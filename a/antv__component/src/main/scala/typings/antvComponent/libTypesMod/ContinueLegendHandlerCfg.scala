@@ -26,7 +26,8 @@ object ContinueLegendHandlerCfg {
     __obj.asInstanceOf[ContinueLegendHandlerCfg]
   }
   
-  extension [Self <: ContinueLegendHandlerCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinueLegendHandlerCfg] (val x: Self) extends AnyVal {
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

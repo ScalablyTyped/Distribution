@@ -25,7 +25,8 @@ object Readonlykeystringnamestri {
     __obj.asInstanceOf[Readonlykeystringnamestri]
   }
   
-  extension [Self <: Readonlykeystringnamestri](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlykeystringnamestri] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

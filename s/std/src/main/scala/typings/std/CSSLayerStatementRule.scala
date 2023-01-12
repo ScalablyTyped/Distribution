@@ -33,7 +33,8 @@ object CSSLayerStatementRule {
     __obj.asInstanceOf[CSSLayerStatementRule]
   }
   
-  extension [Self <: CSSLayerStatementRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSLayerStatementRule] (val x: Self) extends AnyVal {
     
     inline def setNameList(value: js.Array[java.lang.String]): Self = StObject.set(x, "nameList", value.asInstanceOf[js.Any])
     

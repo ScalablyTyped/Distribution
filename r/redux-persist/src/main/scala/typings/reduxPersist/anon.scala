@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Persist]
     }
     
-    extension [Self <: Persist](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Persist] (val x: Self) extends AnyVal {
       
       inline def set_persist(value: PersistState): Self = StObject.set(x, "_persist", value.asInstanceOf[js.Any])
     }

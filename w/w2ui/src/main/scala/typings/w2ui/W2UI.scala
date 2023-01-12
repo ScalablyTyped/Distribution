@@ -58,7 +58,8 @@ object W2UI {
       __obj.asInstanceOf[W2Event]
     }
     
-    extension [Self <: W2Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: W2Event] (val x: Self) extends AnyVal {
       
       inline def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
       
@@ -525,7 +526,8 @@ object W2UI {
       __obj.asInstanceOf[W2Item]
     }
     
-    extension [Self <: W2Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: W2Item] (val x: Self) extends AnyVal {
       
       inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
@@ -681,7 +683,8 @@ object W2UI {
       __obj.asInstanceOf[W2Panel]
     }
     
-    extension [Self <: W2Panel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: W2Panel] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String | JQuery): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -895,7 +898,8 @@ object W2UI {
       __obj.asInstanceOf[W2Tab]
     }
     
-    extension [Self <: W2Tab](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: W2Tab] (val x: Self) extends AnyVal {
       
       inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       

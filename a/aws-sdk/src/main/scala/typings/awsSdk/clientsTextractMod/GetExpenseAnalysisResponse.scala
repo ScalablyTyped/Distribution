@@ -48,7 +48,8 @@ object GetExpenseAnalysisResponse {
     __obj.asInstanceOf[GetExpenseAnalysisResponse]
   }
   
-  extension [Self <: GetExpenseAnalysisResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetExpenseAnalysisResponse] (val x: Self) extends AnyVal {
     
     inline def setAnalyzeExpenseModelVersion(value: String): Self = StObject.set(x, "AnalyzeExpenseModelVersion", value.asInstanceOf[js.Any])
     

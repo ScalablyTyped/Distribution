@@ -27,7 +27,8 @@ object ISynthesizeSpeechRequest {
     __obj.asInstanceOf[ISynthesizeSpeechRequest]
   }
   
-  extension [Self <: ISynthesizeSpeechRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISynthesizeSpeechRequest] (val x: Self) extends AnyVal {
     
     inline def setAudioConfig(value: IAudioConfig): Self = StObject.set(x, "audioConfig", value.asInstanceOf[js.Any])
     

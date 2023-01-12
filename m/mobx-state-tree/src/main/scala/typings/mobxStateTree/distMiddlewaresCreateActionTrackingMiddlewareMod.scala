@@ -41,7 +41,8 @@ object distMiddlewaresCreateActionTrackingMiddlewareMod {
       __obj.asInstanceOf[IActionTrackingMiddlewareHooks[T]]
     }
     
-    extension [Self <: IActionTrackingMiddlewareHooks[?], T](x: Self & IActionTrackingMiddlewareHooks[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IActionTrackingMiddlewareHooks[?], T] (val x: Self & IActionTrackingMiddlewareHooks[T]) extends AnyVal {
       
       inline def setFilter(value: /* call */ IMiddlewareEvent => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       

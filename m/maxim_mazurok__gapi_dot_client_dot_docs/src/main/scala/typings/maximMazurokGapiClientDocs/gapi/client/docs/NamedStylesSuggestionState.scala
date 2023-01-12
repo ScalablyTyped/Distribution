@@ -19,7 +19,8 @@ object NamedStylesSuggestionState {
     __obj.asInstanceOf[NamedStylesSuggestionState]
   }
   
-  extension [Self <: NamedStylesSuggestionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamedStylesSuggestionState] (val x: Self) extends AnyVal {
     
     inline def setStylesSuggestionStates(value: js.Array[NamedStyleSuggestionState]): Self = StObject.set(x, "stylesSuggestionStates", value.asInstanceOf[js.Any])
     

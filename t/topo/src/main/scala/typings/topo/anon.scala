@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[After[TGroup]]
     }
     
-    extension [Self <: After[?], TGroup](x: Self & After[TGroup]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: After[?], TGroup] (val x: Self & After[TGroup]) extends AnyVal {
       
       inline def setAfter(value: TGroup | js.Array[TGroup]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       

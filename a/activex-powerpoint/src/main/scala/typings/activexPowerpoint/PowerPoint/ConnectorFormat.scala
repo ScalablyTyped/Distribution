@@ -63,7 +63,8 @@ object ConnectorFormat {
     __obj.asInstanceOf[ConnectorFormat]
   }
   
-  extension [Self <: ConnectorFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorFormat] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

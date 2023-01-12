@@ -88,7 +88,8 @@ object ASPxClientHtmlEditorLinkDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorLinkDialog]
   }
   
-  extension [Self <: ASPxClientHtmlEditorLinkDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorLinkDialog] (val x: Self) extends AnyVal {
     
     inline def setGetEmailTextBox(value: () => ASPxClientTextBox): Self = StObject.set(x, "GetEmailTextBox", js.Any.fromFunction0(value))
     

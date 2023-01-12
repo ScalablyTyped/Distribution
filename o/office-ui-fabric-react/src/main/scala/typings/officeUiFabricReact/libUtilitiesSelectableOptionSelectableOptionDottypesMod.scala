@@ -98,7 +98,8 @@ object libUtilitiesSelectableOptionSelectableOptionDottypesMod {
       __obj.asInstanceOf[ISelectableOption]
     }
     
-    extension [Self <: ISelectableOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISelectableOption] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       

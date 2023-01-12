@@ -84,7 +84,8 @@ object typesStreamDescriptionMod {
       __obj.asInstanceOf[StreamDescription]
     }
     
-    extension [Self <: StreamDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamDescription] (val x: Self) extends AnyVal {
       
       inline def setEncryptionType(value: NONE | KMS | String): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object typesStreamDescriptionMod {
       __obj.asInstanceOf[UnmarshalledStreamDescription]
     }
     
-    extension [Self <: UnmarshalledStreamDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledStreamDescription] (val x: Self) extends AnyVal {
       
       inline def setEnhancedMonitoring(value: js.Array[UnmarshalledEnhancedMetrics]): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
       

@@ -81,7 +81,8 @@ object clevertapMod {
       __obj.asInstanceOf[EventDetails]
     }
     
-    extension [Self <: EventDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventDetails] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -146,7 +147,8 @@ object clevertapMod {
       __obj.asInstanceOf[NotificationData]
     }
     
-    extension [Self <: NotificationData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationData] (val x: Self) extends AnyVal {
       
       inline def setApnsWebPushId(value: String): Self = StObject.set(x, "apnsWebPushId", value.asInstanceOf[js.Any])
       
@@ -292,7 +294,8 @@ object clevertapMod {
       __obj.asInstanceOf[PrivacyData]
     }
     
-    extension [Self <: PrivacyData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrivacyData] (val x: Self) extends AnyVal {
       
       inline def setOptOut(value: Boolean): Self = StObject.set(x, "optOut", value.asInstanceOf[js.Any])
       
@@ -319,7 +322,8 @@ object clevertapMod {
       __obj.asInstanceOf[ProfileData]
     }
     
-    extension [Self <: ProfileData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProfileData] (val x: Self) extends AnyVal {
       
       inline def setFacebook(value: js.Object): Self = StObject.set(x, "Facebook", value.asInstanceOf[js.Any])
       
@@ -377,7 +381,8 @@ object clevertapMod {
       __obj.asInstanceOf[Session]
     }
     
-    extension [Self <: Session](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
       
       inline def setGetPageCount(value: () => js.UndefOr[Double]): Self = StObject.set(x, "getPageCount", js.Any.fromFunction0(value))
       
@@ -414,7 +419,8 @@ object clevertapMod {
       __obj.asInstanceOf[SiteData]
     }
     
-    extension [Self <: SiteData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SiteData] (val x: Self) extends AnyVal {
       
       inline def setAge(value: String | Double): Self = StObject.set(x, "Age", value.asInstanceOf[js.Any])
       
@@ -467,7 +473,8 @@ object clevertapMod {
       __obj.asInstanceOf[User]
     }
     
-    extension [Self <: User](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
       
       inline def setGetLastVisit(value: () => js.UndefOr[js.Date]): Self = StObject.set(x, "getLastVisit", js.Any.fromFunction0(value))
       

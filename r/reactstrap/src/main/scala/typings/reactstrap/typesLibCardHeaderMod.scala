@@ -35,7 +35,8 @@ object typesLibCardHeaderMod {
       __obj.asInstanceOf[CardHeaderProps]
     }
     
-    extension [Self <: CardHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       

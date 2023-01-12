@@ -19,7 +19,8 @@ object MountedDataDisk {
     __obj.asInstanceOf[MountedDataDisk]
   }
   
-  extension [Self <: MountedDataDisk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MountedDataDisk] (val x: Self) extends AnyVal {
     
     inline def setDataDisk(value: String): Self = StObject.set(x, "dataDisk", value.asInstanceOf[js.Any])
     

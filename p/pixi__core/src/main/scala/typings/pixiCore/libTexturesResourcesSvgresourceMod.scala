@@ -115,7 +115,8 @@ object libTexturesResourcesSvgresourceMod {
       __obj.asInstanceOf[ISVGResourceOptions]
     }
     
-    extension [Self <: ISVGResourceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISVGResourceOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoLoad(value: Boolean): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
       

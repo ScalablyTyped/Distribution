@@ -22,7 +22,8 @@ object ScalarTypeDefinition {
     __obj.asInstanceOf[ScalarTypeDefinition]
   }
   
-  extension [Self <: ScalarTypeDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScalarTypeDefinition] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

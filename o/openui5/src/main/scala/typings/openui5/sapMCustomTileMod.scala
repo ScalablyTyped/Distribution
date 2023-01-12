@@ -161,7 +161,8 @@ object sapMCustomTileMod {
       __obj.asInstanceOf[CustomTileSettings]
     }
     
-    extension [Self <: CustomTileSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomTileSettings] (val x: Self) extends AnyVal {
       
       inline def setContent(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

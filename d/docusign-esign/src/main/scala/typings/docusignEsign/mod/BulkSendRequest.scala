@@ -18,7 +18,8 @@ object BulkSendRequest {
     __obj.asInstanceOf[BulkSendRequest]
   }
   
-  extension [Self <: BulkSendRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkSendRequest] (val x: Self) extends AnyVal {
     
     inline def setEnvelopeOrTemplateId(value: String): Self = StObject.set(x, "envelopeOrTemplateId", value.asInstanceOf[js.Any])
     

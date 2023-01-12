@@ -92,7 +92,8 @@ object Mocha {
       __obj.asInstanceOf[IRunnable]
     }
     
-    extension [Self <: IRunnable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRunnable] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object Mocha {
       __obj.asInstanceOf[ISuite]
     }
     
-    extension [Self <: ISuite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISuite] (val x: Self) extends AnyVal {
       
       inline def setFullTitle(value: () => String): Self = StObject.set(x, "fullTitle", js.Any.fromFunction0(value))
       
@@ -162,7 +164,8 @@ object Mocha {
       __obj.asInstanceOf[ITest]
     }
     
-    extension [Self <: ITest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITest] (val x: Self) extends AnyVal {
       
       inline def setFullTitle(value: () => String): Self = StObject.set(x, "fullTitle", js.Any.fromFunction0(value))
       
@@ -203,7 +206,8 @@ object Mocha {
         __obj.asInstanceOf[Base]
       }
       
-      extension [Self <: Base](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
         
         inline def setStats(value: Failures): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       }

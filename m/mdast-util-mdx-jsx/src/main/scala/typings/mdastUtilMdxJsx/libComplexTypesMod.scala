@@ -37,7 +37,8 @@ object libComplexTypesMod {
       __obj.asInstanceOf[MdxJsxAttribute]
     }
     
-    extension [Self <: MdxJsxAttribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MdxJsxAttribute] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object libComplexTypesMod {
       __obj.asInstanceOf[MdxJsxAttributeValueExpression]
     }
     
-    extension [Self <: MdxJsxAttributeValueExpression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MdxJsxAttributeValueExpression] (val x: Self) extends AnyVal {
       
       inline def setData(value: Estree & js.UndefOr[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object libComplexTypesMod {
       __obj.asInstanceOf[MdxJsxElementFields]
     }
     
-    extension [Self <: MdxJsxElementFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MdxJsxElementFields] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Array[MdxJsxAttribute | MdxJsxExpressionAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -122,7 +125,8 @@ object libComplexTypesMod {
       __obj.asInstanceOf[MdxJsxExpressionAttribute]
     }
     
-    extension [Self <: MdxJsxExpressionAttribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MdxJsxExpressionAttribute] (val x: Self) extends AnyVal {
       
       inline def setData(value: Estree & js.UndefOr[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -154,7 +158,8 @@ object libComplexTypesMod {
       __obj.asInstanceOf[MdxJsxFlowElement]
     }
     
-    extension [Self <: MdxJsxFlowElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MdxJsxFlowElement] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[BlockContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -186,7 +191,8 @@ object libComplexTypesMod {
       __obj.asInstanceOf[MdxJsxTextElement]
     }
     
-    extension [Self <: MdxJsxTextElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MdxJsxTextElement] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[PhrasingContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -212,7 +218,8 @@ object libComplexTypesMod {
         __obj.asInstanceOf[ElementContentMap]
       }
       
-      extension [Self <: ElementContentMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ElementContentMap] (val x: Self) extends AnyVal {
         
         inline def setMdxJsxFlowElement(value: MdxJsxFlowElement): Self = StObject.set(x, "mdxJsxFlowElement", value.asInstanceOf[js.Any])
         
@@ -233,7 +240,8 @@ object libComplexTypesMod {
         __obj.asInstanceOf[RootContentMap]
       }
       
-      extension [Self <: RootContentMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RootContentMap] (val x: Self) extends AnyVal {
         
         inline def setMdxJsxFlowElement(value: MdxJsxFlowElement): Self = StObject.set(x, "mdxJsxFlowElement", value.asInstanceOf[js.Any])
         
@@ -256,7 +264,8 @@ object libComplexTypesMod {
         __obj.asInstanceOf[BlockContentMap]
       }
       
-      extension [Self <: BlockContentMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BlockContentMap] (val x: Self) extends AnyVal {
         
         inline def setMdxJsxFlowElement(value: MdxJsxFlowElement): Self = StObject.set(x, "mdxJsxFlowElement", value.asInstanceOf[js.Any])
       }
@@ -273,7 +282,8 @@ object libComplexTypesMod {
         __obj.asInstanceOf[StaticPhrasingContentMap]
       }
       
-      extension [Self <: StaticPhrasingContentMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StaticPhrasingContentMap] (val x: Self) extends AnyVal {
         
         inline def setMdxJsxTextElement(value: MdxJsxTextElement): Self = StObject.set(x, "mdxJsxTextElement", value.asInstanceOf[js.Any])
       }

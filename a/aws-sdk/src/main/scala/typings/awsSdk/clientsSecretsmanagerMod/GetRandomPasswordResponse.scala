@@ -18,7 +18,8 @@ object GetRandomPasswordResponse {
     __obj.asInstanceOf[GetRandomPasswordResponse]
   }
   
-  extension [Self <: GetRandomPasswordResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRandomPasswordResponse] (val x: Self) extends AnyVal {
     
     inline def setRandomPassword(value: RandomPasswordType): Self = StObject.set(x, "RandomPassword", value.asInstanceOf[js.Any])
     

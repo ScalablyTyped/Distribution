@@ -20,7 +20,8 @@ object ModelConfig {
     __obj.asInstanceOf[ModelConfig]
   }
   
-  extension [Self <: ModelConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelConfig] (val x: Self) extends AnyVal {
     
     inline def setDocClient(value: Any): Self = StObject.set(x, "docClient", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object NewDeviceUsed {
     __obj.asInstanceOf[NewDeviceUsed]
   }
   
-  extension [Self <: NewDeviceUsed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewDeviceUsed] (val x: Self) extends AnyVal {
     
     inline def setClientMetadata(value: StringMap): Self = StObject.set(x, "clientMetadata", value.asInstanceOf[js.Any])
     

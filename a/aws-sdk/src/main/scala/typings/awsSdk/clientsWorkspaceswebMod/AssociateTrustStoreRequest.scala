@@ -23,7 +23,8 @@ object AssociateTrustStoreRequest {
     __obj.asInstanceOf[AssociateTrustStoreRequest]
   }
   
-  extension [Self <: AssociateTrustStoreRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateTrustStoreRequest] (val x: Self) extends AnyVal {
     
     inline def setPortalArn(value: ARN): Self = StObject.set(x, "portalArn", value.asInstanceOf[js.Any])
     

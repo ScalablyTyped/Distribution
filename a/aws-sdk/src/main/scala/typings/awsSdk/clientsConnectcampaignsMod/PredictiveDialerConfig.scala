@@ -15,7 +15,8 @@ object PredictiveDialerConfig {
     __obj.asInstanceOf[PredictiveDialerConfig]
   }
   
-  extension [Self <: PredictiveDialerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredictiveDialerConfig] (val x: Self) extends AnyVal {
     
     inline def setBandwidthAllocation(value: BandwidthAllocation): Self = StObject.set(x, "bandwidthAllocation", value.asInstanceOf[js.Any])
   }

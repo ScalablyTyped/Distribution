@@ -31,7 +31,8 @@ object FeatureLayerSourceProperties {
     __obj.asInstanceOf[FeatureLayerSourceProperties]
   }
   
-  extension [Self <: FeatureLayerSourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureLayerSourceProperties] (val x: Self) extends AnyVal {
     
     inline def setLayerId(value: String): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
     

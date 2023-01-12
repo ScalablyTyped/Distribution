@@ -31,7 +31,8 @@ object XBookmarksSupplier {
     __obj.asInstanceOf[XBookmarksSupplier]
   }
   
-  extension [Self <: XBookmarksSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XBookmarksSupplier] (val x: Self) extends AnyVal {
     
     inline def setBookmarks(value: XNameAccess): Self = StObject.set(x, "Bookmarks", value.asInstanceOf[js.Any])
     

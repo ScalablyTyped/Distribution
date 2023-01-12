@@ -22,7 +22,8 @@ object ValidateConsumerConfigResponse {
     __obj.asInstanceOf[ValidateConsumerConfigResponse]
   }
   
-  extension [Self <: ValidateConsumerConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateConsumerConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setExistingSubnetworkCandidates(value: js.Array[Subnetwork]): Self = StObject.set(x, "existingSubnetworkCandidates", value.asInstanceOf[js.Any])
     

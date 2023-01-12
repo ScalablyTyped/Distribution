@@ -490,7 +490,8 @@ object buildLibConfigParserMod {
       __obj.asInstanceOf[MergeConfig]
     }
     
-    extension [Self <: MergeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeConfig] (val x: Self) extends AnyVal {
       
       inline def setAfter(
         value: (js.Function3[
@@ -1513,7 +1514,8 @@ object buildLibConfigParserMod {
       __obj.asInstanceOf[TestrunnerOptionsWithParameters]
     }
     
-    extension [Self <: TestrunnerOptionsWithParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestrunnerOptionsWithParameters] (val x: Self) extends AnyVal {
       
       inline def setAfter(
         value: (js.Function3[

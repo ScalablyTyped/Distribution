@@ -62,7 +62,8 @@ object sprite {
       __obj.asInstanceOf[IAggregative]
     }
     
-    extension [Self <: IAggregative](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAggregative] (val x: Self) extends AnyVal {
       
       inline def setDataClose(value: Any): Self = StObject.set(x, "dataClose", value.asInstanceOf[js.Any])
       
@@ -127,7 +128,8 @@ object sprite {
       __obj.asInstanceOf[typings.senchaTouch.Ext.chart.series.sprite.IArea]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.chart.series.sprite.IArea](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.chart.series.sprite.IArea] (val x: Self) extends AnyVal {
       
       inline def setRenderClipped(
         value: (/* surface */ js.UndefOr[Any], /* ctx */ js.UndefOr[Any], /* clip */ js.UndefOr[Any], /* clipRegion */ js.UndefOr[Any]) => Unit
@@ -182,7 +184,8 @@ object sprite {
       __obj.asInstanceOf[typings.senchaTouch.Ext.chart.series.sprite.IBar]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.chart.series.sprite.IBar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.chart.series.sprite.IBar] (val x: Self) extends AnyVal {
       
       inline def setInGroupGapWidth(value: Double): Self = StObject.set(x, "inGroupGapWidth", value.asInstanceOf[js.Any])
       
@@ -232,7 +235,8 @@ object sprite {
       __obj.asInstanceOf[typings.senchaTouch.Ext.chart.series.sprite.ICandleStick]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.chart.series.sprite.ICandleStick](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.chart.series.sprite.ICandleStick] (val x: Self) extends AnyVal {
       
       inline def setBarWidth(value: Double): Self = StObject.set(x, "barWidth", value.asInstanceOf[js.Any])
       
@@ -359,7 +363,8 @@ object sprite {
       __obj.asInstanceOf[typings.senchaTouch.Ext.chart.series.sprite.ICartesian]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.chart.series.sprite.ICartesian](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.chart.series.sprite.ICartesian] (val x: Self) extends AnyVal {
       
       inline def setBinarySearch(value: /* key */ js.UndefOr[String] => Any): Self = StObject.set(x, "binarySearch", js.Any.fromFunction1(value))
       
@@ -466,7 +471,8 @@ object sprite {
       __obj.asInstanceOf[typings.senchaTouch.Ext.chart.series.sprite.ILine]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.chart.series.sprite.ILine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.chart.series.sprite.ILine] (val x: Self) extends AnyVal {
       
       inline def setFillArea(value: Boolean): Self = StObject.set(x, "fillArea", value.asInstanceOf[js.Any])
       
@@ -548,7 +554,8 @@ object sprite {
       __obj.asInstanceOf[IPie3DPart]
     }
     
-    extension [Self <: IPie3DPart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPie3DPart] (val x: Self) extends AnyVal {
       
       inline def setBaseColor(value: Any): Self = StObject.set(x, "baseColor", value.asInstanceOf[js.Any])
       
@@ -666,7 +673,8 @@ object sprite {
       __obj.asInstanceOf[IPieSlice]
     }
     
-    extension [Self <: IPieSlice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPieSlice] (val x: Self) extends AnyVal {
       
       inline def setBindMarker(value: (js.UndefOr[String], js.UndefOr[IMarkers]) => Unit): Self = StObject.set(x, "bindMarker", js.Any.fromFunction2(value))
       
@@ -782,7 +790,8 @@ object sprite {
       __obj.asInstanceOf[typings.senchaTouch.Ext.chart.series.sprite.IPolar]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.chart.series.sprite.IPolar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.chart.series.sprite.IPolar] (val x: Self) extends AnyVal {
       
       inline def setBaseRotation(value: Double): Self = StObject.set(x, "baseRotation", value.asInstanceOf[js.Any])
       
@@ -881,7 +890,8 @@ object sprite {
       __obj.asInstanceOf[typings.senchaTouch.Ext.chart.series.sprite.IRadar]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.chart.series.sprite.IRadar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.chart.series.sprite.IRadar] (val x: Self) extends AnyVal {
       
       inline def setRender(value: (/* surface */ js.UndefOr[Any], /* ctx */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
@@ -917,7 +927,8 @@ object sprite {
       __obj.asInstanceOf[typings.senchaTouch.Ext.chart.series.sprite.IScatter]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.chart.series.sprite.IScatter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.chart.series.sprite.IScatter] (val x: Self) extends AnyVal {
       
       inline def setRenderClipped(
         value: (/* surface */ js.UndefOr[Any], /* ctx */ js.UndefOr[Any], /* clip */ js.UndefOr[Any], /* clipRegion */ js.UndefOr[Any]) => Unit
@@ -946,7 +957,8 @@ object sprite {
       __obj.asInstanceOf[typings.senchaTouch.Ext.chart.series.sprite.IStackedCartesian]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.chart.series.sprite.IStackedCartesian](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.chart.series.sprite.IStackedCartesian] (val x: Self) extends AnyVal {
       
       inline def setGetIndexNearPoint(value: (/* x */ js.UndefOr[Any], /* y */ js.UndefOr[Any]) => Double): Self = StObject.set(x, "getIndexNearPoint", js.Any.fromFunction2(value))
       

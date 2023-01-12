@@ -43,7 +43,8 @@ object SettableCellProperties {
     __obj.asInstanceOf[SettableCellProperties]
   }
   
-  extension [Self <: SettableCellProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettableCellProperties] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: CellPropertiesFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

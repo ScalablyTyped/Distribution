@@ -17,7 +17,8 @@ object ISearchPaneQuerySubmittedEventArgs {
     __obj.asInstanceOf[ISearchPaneQuerySubmittedEventArgs]
   }
   
-  extension [Self <: ISearchPaneQuerySubmittedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchPaneQuerySubmittedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

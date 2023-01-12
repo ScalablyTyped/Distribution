@@ -28,7 +28,8 @@ object TypeofReadPreferenceMode {
     __obj.asInstanceOf[TypeofReadPreferenceMode]
   }
   
-  extension [Self <: TypeofReadPreferenceMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofReadPreferenceMode] (val x: Self) extends AnyVal {
     
     inline def setNearest(value: nearest): Self = StObject.set(x, "nearest", value.asInstanceOf[js.Any])
     

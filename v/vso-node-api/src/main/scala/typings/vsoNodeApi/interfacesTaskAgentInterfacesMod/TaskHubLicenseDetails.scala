@@ -41,7 +41,8 @@ object TaskHubLicenseDetails {
     __obj.asInstanceOf[TaskHubLicenseDetails]
   }
   
-  extension [Self <: TaskHubLicenseDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskHubLicenseDetails] (val x: Self) extends AnyVal {
     
     inline def setEnterpriseUsersCount(value: Double): Self = StObject.set(x, "enterpriseUsersCount", value.asInstanceOf[js.Any])
     

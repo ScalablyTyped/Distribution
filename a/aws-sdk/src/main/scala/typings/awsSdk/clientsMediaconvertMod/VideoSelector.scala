@@ -66,7 +66,8 @@ object VideoSelector {
     __obj.asInstanceOf[VideoSelector]
   }
   
-  extension [Self <: VideoSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoSelector] (val x: Self) extends AnyVal {
     
     inline def setAlphaBehavior(value: AlphaBehavior): Self = StObject.set(x, "AlphaBehavior", value.asInstanceOf[js.Any])
     

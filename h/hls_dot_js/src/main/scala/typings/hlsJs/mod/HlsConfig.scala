@@ -162,7 +162,8 @@ object HlsConfig {
     __obj.asInstanceOf[HlsConfig]
   }
   
-  extension [Self <: HlsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsConfig] (val x: Self) extends AnyVal {
     
     inline def setAbrController(value: Instantiable1[/* hls */ Hls, AbrController]): Self = StObject.set(x, "abrController", value.asInstanceOf[js.Any])
     

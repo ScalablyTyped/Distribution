@@ -632,7 +632,8 @@ object sapMMultiInputMod {
       __obj.asInstanceOf[MultiInputSettings]
     }
     
-    extension [Self <: MultiInputSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiInputSettings] (val x: Self) extends AnyVal {
       
       inline def setEnableMultiLineMode(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "enableMultiLineMode", value.asInstanceOf[js.Any])
       

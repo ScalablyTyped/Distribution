@@ -28,7 +28,8 @@ object RoutingProfileQueueConfig {
     __obj.asInstanceOf[RoutingProfileQueueConfig]
   }
   
-  extension [Self <: RoutingProfileQueueConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoutingProfileQueueConfig] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Delay): Self = StObject.set(x, "Delay", value.asInstanceOf[js.Any])
     

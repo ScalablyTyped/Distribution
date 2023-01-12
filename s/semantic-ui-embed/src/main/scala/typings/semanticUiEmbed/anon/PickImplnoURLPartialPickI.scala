@@ -21,7 +21,8 @@ object PickImplnoURLPartialPickI {
     __obj.asInstanceOf[PickImplnoURLPartialPickI]
   }
   
-  extension [Self <: PickImplnoURLPartialPickI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplnoURLPartialPickI] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object VastCreativeLinear {
     __obj.asInstanceOf[VastCreativeLinear]
   }
   
-  extension [Self <: VastCreativeLinear](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VastCreativeLinear] (val x: Self) extends AnyVal {
     
     inline def setAdParameters(value: String): Self = StObject.set(x, "adParameters", value.asInstanceOf[js.Any])
     

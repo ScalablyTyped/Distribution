@@ -147,7 +147,8 @@ object distClientModelsWebhooksWebhookMod {
       __obj.asInstanceOf[BounceWebhookTrigger]
     }
     
-    extension [Self <: BounceWebhookTrigger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BounceWebhookTrigger] (val x: Self) extends AnyVal {
       
       inline def setIncludeContent(value: Boolean): Self = StObject.set(x, "IncludeContent", value.asInstanceOf[js.Any])
       
@@ -168,7 +169,8 @@ object distClientModelsWebhooksWebhookMod {
       __obj.asInstanceOf[HttpAuth]
     }
     
-    extension [Self <: HttpAuth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpAuth] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
       
@@ -189,7 +191,8 @@ object distClientModelsWebhooksWebhookMod {
       __obj.asInstanceOf[OpenWebhookTrigger]
     }
     
-    extension [Self <: OpenWebhookTrigger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenWebhookTrigger] (val x: Self) extends AnyVal {
       
       inline def setPostFirstOpenOnly(value: Boolean): Self = StObject.set(x, "PostFirstOpenOnly", value.asInstanceOf[js.Any])
       
@@ -210,7 +213,8 @@ object distClientModelsWebhooksWebhookMod {
       __obj.asInstanceOf[SpamWebhookTrigger]
     }
     
-    extension [Self <: SpamWebhookTrigger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpamWebhookTrigger] (val x: Self) extends AnyVal {
       
       inline def setIncludeContent(value: Boolean): Self = StObject.set(x, "IncludeContent", value.asInstanceOf[js.Any])
       
@@ -239,7 +243,8 @@ object distClientModelsWebhooksWebhookMod {
       __obj.asInstanceOf[Webhook]
     }
     
-    extension [Self <: Webhook](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Webhook] (val x: Self) extends AnyVal {
       
       inline def setHttpAuth(value: HttpAuth): Self = StObject.set(x, "HttpAuth", value.asInstanceOf[js.Any])
       
@@ -282,7 +287,8 @@ object distClientModelsWebhooksWebhookMod {
       __obj.asInstanceOf[WebhookRequestTriggers]
     }
     
-    extension [Self <: WebhookRequestTriggers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebhookRequestTriggers] (val x: Self) extends AnyVal {
       
       inline def setBounce(value: BounceWebhookTrigger): Self = StObject.set(x, "Bounce", value.asInstanceOf[js.Any])
       
@@ -321,7 +327,8 @@ object distClientModelsWebhooksWebhookMod {
       __obj.asInstanceOf[WebhookTrigger]
     }
     
-    extension [Self <: WebhookTrigger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebhookTrigger] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     }

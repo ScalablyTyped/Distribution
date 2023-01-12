@@ -24,7 +24,8 @@ object IAbsolute {
     __obj.asInstanceOf[IAbsolute]
   }
   
-  extension [Self <: IAbsolute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAbsolute] (val x: Self) extends AnyVal {
     
     inline def setIgnoreOnContentChange(value: Boolean): Self = StObject.set(x, "ignoreOnContentChange", value.asInstanceOf[js.Any])
     

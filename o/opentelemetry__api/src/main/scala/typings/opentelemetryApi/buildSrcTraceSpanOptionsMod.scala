@@ -37,7 +37,8 @@ object buildSrcTraceSpanOptionsMod {
       __obj.asInstanceOf[SpanOptions]
     }
     
-    extension [Self <: SpanOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpanOptions] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: SpanAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

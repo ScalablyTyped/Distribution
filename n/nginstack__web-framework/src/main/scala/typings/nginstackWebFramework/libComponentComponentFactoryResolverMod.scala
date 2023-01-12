@@ -54,7 +54,8 @@ object libComponentComponentFactoryResolverMod {
       __obj.asInstanceOf[ComponentFactoryResolver]
     }
     
-    extension [Self <: ComponentFactoryResolver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentFactoryResolver] (val x: Self) extends AnyVal {
       
       inline def setFactories_(value: Any): Self = StObject.set(x, "factories_", value.asInstanceOf[js.Any])
       

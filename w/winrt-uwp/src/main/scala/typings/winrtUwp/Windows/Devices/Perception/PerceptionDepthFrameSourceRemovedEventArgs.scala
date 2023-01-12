@@ -17,7 +17,8 @@ object PerceptionDepthFrameSourceRemovedEventArgs {
     __obj.asInstanceOf[PerceptionDepthFrameSourceRemovedEventArgs]
   }
   
-  extension [Self <: PerceptionDepthFrameSourceRemovedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerceptionDepthFrameSourceRemovedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setFrameSource(value: PerceptionDepthFrameSource): Self = StObject.set(x, "frameSource", value.asInstanceOf[js.Any])
   }

@@ -15,7 +15,8 @@ object MissingPropertyString {
     __obj.asInstanceOf[MissingPropertyString]
   }
   
-  extension [Self <: MissingPropertyString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MissingPropertyString] (val x: Self) extends AnyVal {
     
     inline def setMissingProperty(value: String): Self = StObject.set(x, "missingProperty", value.asInstanceOf[js.Any])
   }

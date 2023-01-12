@@ -50,7 +50,8 @@ object ObjectIdentifierJson {
     __obj.asInstanceOf[ObjectIdentifierJson]
   }
   
-  extension [Self <: ObjectIdentifierJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectIdentifierJson] (val x: Self) extends AnyVal {
     
     inline def setBlockLength(value: Double): Self = StObject.set(x, "blockLength", value.asInstanceOf[js.Any])
     

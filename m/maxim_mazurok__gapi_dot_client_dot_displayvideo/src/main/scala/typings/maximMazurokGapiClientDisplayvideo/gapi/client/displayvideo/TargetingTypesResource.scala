@@ -20,7 +20,8 @@ object TargetingTypesResource {
     __obj.asInstanceOf[TargetingTypesResource]
   }
   
-  extension [Self <: TargetingTypesResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetingTypesResource] (val x: Self) extends AnyVal {
     
     inline def setAssignedTargetingOptions(value: AssignedTargetingOptionsResource): Self = StObject.set(x, "assignedTargetingOptions", value.asInstanceOf[js.Any])
     

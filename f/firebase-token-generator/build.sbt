@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firebase-token-generator"
-version := "v2.0.0-dt-20220818Z-d9114d"
+version := "v2.0.0-dt-20220818Z-02992a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

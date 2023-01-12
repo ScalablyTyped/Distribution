@@ -985,7 +985,8 @@ object mod {
       __obj.asInstanceOf[Option]
     }
     
-    extension [Self <: Option](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
       
       inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
@@ -1038,7 +1039,8 @@ object mod {
       __obj.asInstanceOf[Stat]
     }
     
-    extension [Self <: Stat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stat] (val x: Self) extends AnyVal {
       
       inline def setAversion(value: Double): Self = StObject.set(x, "aversion", value.asInstanceOf[js.Any])
       

@@ -43,7 +43,8 @@ object EC2ReplaceRouteAction {
     __obj.asInstanceOf[EC2ReplaceRouteAction]
   }
   
-  extension [Self <: EC2ReplaceRouteAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EC2ReplaceRouteAction] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: LengthBoundedString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

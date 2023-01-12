@@ -38,7 +38,8 @@ object ExecutionTime {
     __obj.asInstanceOf[ExecutionTime]
   }
   
-  extension [Self <: ExecutionTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionTime] (val x: Self) extends AnyVal {
     
     inline def setExecutionTime(value: Double): Self = StObject.set(x, "executionTime", value.asInstanceOf[js.Any])
     

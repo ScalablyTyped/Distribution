@@ -23,7 +23,8 @@ object ServiceActionDetail {
     __obj.asInstanceOf[ServiceActionDetail]
   }
   
-  extension [Self <: ServiceActionDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceActionDetail] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: ServiceActionDefinitionMap): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
     

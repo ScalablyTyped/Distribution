@@ -30,7 +30,8 @@ object NormalizationCondition {
     __obj.asInstanceOf[NormalizationCondition]
   }
   
-  extension [Self <: NormalizationCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizationCondition] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

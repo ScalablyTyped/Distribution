@@ -19,7 +19,8 @@ object ReturnTypeGetFrameOwnerResponse {
     __obj.asInstanceOf[ReturnTypeGetFrameOwnerResponse]
   }
   
-  extension [Self <: ReturnTypeGetFrameOwnerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetFrameOwnerResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetFrameOwnerRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

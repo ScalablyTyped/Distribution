@@ -265,7 +265,8 @@ object libCapabilitiesMod {
       __obj.asInstanceOf[IBrowser]
     }
     
-    extension [Self <: IBrowser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBrowser] (val x: Self) extends AnyVal {
       
       inline def setCHROME(value: String): Self = StObject.set(x, "CHROME", value.asInstanceOf[js.Any])
       
@@ -364,7 +365,8 @@ object libCapabilitiesMod {
       __obj.asInstanceOf[ICapability]
     }
     
-    extension [Self <: ICapability](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICapability] (val x: Self) extends AnyVal {
       
       inline def setACCEPT_INSECURE_TLS_CERTS(value: String): Self = StObject.set(x, "ACCEPT_INSECURE_TLS_CERTS", value.asInstanceOf[js.Any])
       
@@ -415,7 +417,8 @@ object libCapabilitiesMod {
       __obj.asInstanceOf[IPageLoadStrategy]
     }
     
-    extension [Self <: IPageLoadStrategy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPageLoadStrategy] (val x: Self) extends AnyVal {
       
       inline def setEAGER(value: String): Self = StObject.set(x, "EAGER", value.asInstanceOf[js.Any])
       
@@ -440,7 +443,8 @@ object libCapabilitiesMod {
       __obj.asInstanceOf[IPlatform]
     }
     
-    extension [Self <: IPlatform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPlatform] (val x: Self) extends AnyVal {
       
       inline def setLINUX(value: String): Self = StObject.set(x, "LINUX", value.asInstanceOf[js.Any])
       
@@ -478,7 +482,8 @@ object libCapabilitiesMod {
       __obj.asInstanceOf[ITimeouts]
     }
     
-    extension [Self <: ITimeouts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimeouts] (val x: Self) extends AnyVal {
       
       inline def setImplicit(value: Double): Self = StObject.set(x, "implicit", value.asInstanceOf[js.Any])
       
@@ -530,7 +535,8 @@ object libCapabilitiesMod {
       __obj.asInstanceOf[IUserPromptHandler]
     }
     
-    extension [Self <: IUserPromptHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUserPromptHandler] (val x: Self) extends AnyVal {
       
       inline def setACCEPT(value: String): Self = StObject.set(x, "ACCEPT", value.asInstanceOf[js.Any])
       

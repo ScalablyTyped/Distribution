@@ -21,7 +21,8 @@ object AttrInputNameOp {
     __obj.asInstanceOf[AttrInputNameOp]
   }
   
-  extension [Self <: AttrInputNameOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrInputNameOp] (val x: Self) extends AnyVal {
     
     inline def setAttr(value: Sharedname): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     

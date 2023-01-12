@@ -41,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Omitdestroy]
     }
     
-    extension [Self <: Omitdestroy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Omitdestroy] (val x: Self) extends AnyVal {
       
       inline def setConstructor(value: (/* selector */ String | HTMLElement, /* options */ CleaveOptions) => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction2(value))
       
@@ -70,7 +71,8 @@ object anon {
       __obj.asInstanceOf[RawValue]
     }
     
-    extension [Self <: RawValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawValue] (val x: Self) extends AnyVal {
       
       inline def setRawValue(value: String): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
     }

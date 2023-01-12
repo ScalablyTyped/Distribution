@@ -23,7 +23,8 @@ object ClientPropertiesResult {
     __obj.asInstanceOf[ClientPropertiesResult]
   }
   
-  extension [Self <: ClientPropertiesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientPropertiesResult] (val x: Self) extends AnyVal {
     
     inline def setClientProperties(value: ClientProperties): Self = StObject.set(x, "ClientProperties", value.asInstanceOf[js.Any])
     

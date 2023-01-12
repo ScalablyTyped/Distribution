@@ -32,7 +32,8 @@ object BgiFrame {
       __obj.asInstanceOf[IBgiframe]
     }
     
-    extension [Self <: IBgiframe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBgiframe] (val x: Self) extends AnyVal {
       
       inline def setCreateIframe(value: () => HTMLElement): Self = StObject.set(x, "createIframe", js.Any.fromFunction0(value))
       
@@ -77,7 +78,8 @@ object BgiFrame {
       __obj.asInstanceOf[ISettings]
     }
     
-    extension [Self <: ISettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISettings] (val x: Self) extends AnyVal {
       
       inline def setConditional(value: Boolean): Self = StObject.set(x, "conditional", value.asInstanceOf[js.Any])
       

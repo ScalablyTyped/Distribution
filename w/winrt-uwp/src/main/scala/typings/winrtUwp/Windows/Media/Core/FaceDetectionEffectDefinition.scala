@@ -32,7 +32,8 @@ object FaceDetectionEffectDefinition {
     __obj.asInstanceOf[FaceDetectionEffectDefinition]
   }
   
-  extension [Self <: FaceDetectionEffectDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaceDetectionEffectDefinition] (val x: Self) extends AnyVal {
     
     inline def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
     

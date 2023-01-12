@@ -54,7 +54,8 @@ object PlusZipClipImageOptions {
     __obj.asInstanceOf[PlusZipClipImageOptions]
   }
   
-  extension [Self <: PlusZipClipImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusZipClipImageOptions] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

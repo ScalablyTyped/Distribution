@@ -54,7 +54,8 @@ object X3DDisplay {
     __obj.asInstanceOf[X3DDisplay]
   }
   
-  extension [Self <: X3DDisplay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X3DDisplay] (val x: Self) extends AnyVal {
     
     inline def setFloor(value: XPropertySet): Self = StObject.set(x, "Floor", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object ConfigurationProfile {
     __obj.asInstanceOf[ConfigurationProfile]
   }
   
-  extension [Self <: ConfigurationProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationProfile] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: Id): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

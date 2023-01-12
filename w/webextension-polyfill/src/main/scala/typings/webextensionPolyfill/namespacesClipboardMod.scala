@@ -41,7 +41,8 @@ object namespacesClipboardMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setSetImageData(value: (js.typedarray.ArrayBuffer, SetImageDataImageTypeEnum) => js.Promise[Unit]): Self = StObject.set(x, "setImageData", js.Any.fromFunction2(value))
       }

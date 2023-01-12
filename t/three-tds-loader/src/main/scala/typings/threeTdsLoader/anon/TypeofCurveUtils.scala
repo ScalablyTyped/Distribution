@@ -26,7 +26,8 @@ object TypeofCurveUtils {
     __obj.asInstanceOf[TypeofCurveUtils]
   }
   
-  extension [Self <: TypeofCurveUtils](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCurveUtils] (val x: Self) extends AnyVal {
     
     inline def setInterpolate(value: (Double, Double, Double, Double, Double) => Double): Self = StObject.set(x, "interpolate", js.Any.fromFunction5(value))
     

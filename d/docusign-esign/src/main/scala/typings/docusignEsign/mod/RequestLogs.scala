@@ -28,7 +28,8 @@ object RequestLogs {
     __obj.asInstanceOf[RequestLogs]
   }
   
-  extension [Self <: RequestLogs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestLogs] (val x: Self) extends AnyVal {
     
     inline def setApiRequestLogMaxEntries(value: String): Self = StObject.set(x, "apiRequestLogMaxEntries", value.asInstanceOf[js.Any])
     

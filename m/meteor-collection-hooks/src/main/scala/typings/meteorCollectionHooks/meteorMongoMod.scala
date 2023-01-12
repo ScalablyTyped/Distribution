@@ -27,7 +27,8 @@ object meteorMongoMod {
         __obj.asInstanceOf[GlobalHookOptions]
       }
       
-      extension [Self <: GlobalHookOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GlobalHookOptions] (val x: Self) extends AnyVal {
         
         inline def setAfter(value: LocalHookOptions): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
         
@@ -54,7 +55,8 @@ object meteorMongoMod {
         __obj.asInstanceOf[HookOptionValue]
       }
       
-      extension [Self <: HookOptionValue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HookOptionValue] (val x: Self) extends AnyVal {
         
         inline def setFetchPrevious(value: Boolean): Self = StObject.set(x, "fetchPrevious", value.asInstanceOf[js.Any])
         
@@ -85,7 +87,8 @@ object meteorMongoMod {
         __obj.asInstanceOf[LocalHookOptions]
       }
       
-      extension [Self <: LocalHookOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LocalHookOptions] (val x: Self) extends AnyVal {
         
         inline def setAll(value: HookOptionValue): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
         
@@ -130,7 +133,8 @@ object meteorMongoMod {
         __obj.asInstanceOf[ModifierOptions]
       }
       
-      extension [Self <: ModifierOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ModifierOptions] (val x: Self) extends AnyVal {
         
         inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
         
@@ -162,7 +166,8 @@ object meteorMongoMod {
         __obj.asInstanceOf[Collection[T]]
       }
       
-      extension [Self <: Collection[?], T](x: Self & Collection[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Collection[?], T] (val x: Self & Collection[T]) extends AnyVal {
         
         inline def setAfter(value: FindOne[T]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
         

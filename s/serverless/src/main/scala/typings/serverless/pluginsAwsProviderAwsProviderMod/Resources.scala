@@ -23,7 +23,8 @@ object Resources {
     __obj.asInstanceOf[Resources]
   }
   
-  extension [Self <: Resources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resources] (val x: Self) extends AnyVal {
     
     inline def setConditions(value: ResourcesConditions): Self = StObject.set(x, "Conditions", value.asInstanceOf[js.Any])
     

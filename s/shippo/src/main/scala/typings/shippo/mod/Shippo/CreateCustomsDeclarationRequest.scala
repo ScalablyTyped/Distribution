@@ -50,7 +50,8 @@ object CreateCustomsDeclarationRequest {
     __obj.asInstanceOf[CreateCustomsDeclarationRequest]
   }
   
-  extension [Self <: CreateCustomsDeclarationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCustomsDeclarationRequest] (val x: Self) extends AnyVal {
     
     inline def setCertify(value: Boolean): Self = StObject.set(x, "certify", value.asInstanceOf[js.Any])
     

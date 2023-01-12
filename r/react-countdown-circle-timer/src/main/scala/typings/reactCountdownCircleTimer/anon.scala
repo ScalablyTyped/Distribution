@@ -1088,7 +1088,8 @@ object anon {
       __obj.asInstanceOf[ElapsedTime]
     }
     
-    extension [Self <: ElapsedTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElapsedTime] (val x: Self) extends AnyVal {
       
       inline def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
       
@@ -1170,7 +1171,8 @@ object anon {
       __obj.asInstanceOf[MultipleColorsdurationnum]
     }
     
-    extension [Self <: MultipleColorsdurationnum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultipleColorsdurationnum] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: /* props */ TimeProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -1292,7 +1294,8 @@ object anon {
       __obj.asInstanceOf[SingleColordurationnumber]
     }
     
-    extension [Self <: SingleColordurationnumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingleColordurationnumber] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: /* props */ TimeProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       

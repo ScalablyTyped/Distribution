@@ -129,7 +129,8 @@ object distButtonSrcButtonMod {
       __obj.asInstanceOf[InnerButtonProps]
     }
     
-    extension [Self <: InnerButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerButtonProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

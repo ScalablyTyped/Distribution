@@ -28,7 +28,8 @@ object IPerfDatasets {
     __obj.asInstanceOf[IPerfDatasets]
   }
   
-  extension [Self <: IPerfDatasets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPerfDatasets] (val x: Self) extends AnyVal {
     
     inline def setData(value: DynamicFloat32Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

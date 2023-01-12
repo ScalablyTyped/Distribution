@@ -23,7 +23,8 @@ object QuerySelectorAllRequest {
     __obj.asInstanceOf[QuerySelectorAllRequest]
   }
   
-  extension [Self <: QuerySelectorAllRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuerySelectorAllRequest] (val x: Self) extends AnyVal {
     
     inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     

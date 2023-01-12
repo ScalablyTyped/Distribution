@@ -24,7 +24,8 @@ object BandScale {
     __obj.asInstanceOf[BandScale]
   }
   
-  extension [Self <: BandScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BandScale] (val x: Self) extends AnyVal {
     
     inline def setPaddingInner(value: Double | SignalRef): Self = StObject.set(x, "paddingInner", value.asInstanceOf[js.Any])
     

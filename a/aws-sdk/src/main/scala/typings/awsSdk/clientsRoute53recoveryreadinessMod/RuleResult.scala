@@ -33,7 +33,8 @@ object RuleResult {
     __obj.asInstanceOf[RuleResult]
   }
   
-  extension [Self <: RuleResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleResult] (val x: Self) extends AnyVal {
     
     inline def setLastCheckedTimestamp(value: js.Date): Self = StObject.set(x, "LastCheckedTimestamp", value.asInstanceOf[js.Any])
     

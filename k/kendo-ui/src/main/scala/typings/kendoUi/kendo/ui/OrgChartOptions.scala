@@ -52,7 +52,8 @@ object OrgChartOptions {
     __obj.asInstanceOf[OrgChartOptions]
   }
   
-  extension [Self <: OrgChartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrgChartOptions] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: /* e */ OrgChartCancelEvent => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     

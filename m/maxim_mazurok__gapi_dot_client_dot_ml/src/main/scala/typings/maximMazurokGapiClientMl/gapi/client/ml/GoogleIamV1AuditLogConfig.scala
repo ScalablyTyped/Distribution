@@ -19,7 +19,8 @@ object GoogleIamV1AuditLogConfig {
     __obj.asInstanceOf[GoogleIamV1AuditLogConfig]
   }
   
-  extension [Self <: GoogleIamV1AuditLogConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleIamV1AuditLogConfig] (val x: Self) extends AnyVal {
     
     inline def setExemptedMembers(value: js.Array[String]): Self = StObject.set(x, "exemptedMembers", value.asInstanceOf[js.Any])
     

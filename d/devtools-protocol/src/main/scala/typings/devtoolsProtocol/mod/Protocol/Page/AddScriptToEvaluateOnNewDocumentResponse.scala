@@ -18,7 +18,8 @@ object AddScriptToEvaluateOnNewDocumentResponse {
     __obj.asInstanceOf[AddScriptToEvaluateOnNewDocumentResponse]
   }
   
-  extension [Self <: AddScriptToEvaluateOnNewDocumentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddScriptToEvaluateOnNewDocumentResponse] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: ScriptIdentifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
   }

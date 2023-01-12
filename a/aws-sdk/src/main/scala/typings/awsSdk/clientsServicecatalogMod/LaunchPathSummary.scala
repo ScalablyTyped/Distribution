@@ -33,7 +33,8 @@ object LaunchPathSummary {
     __obj.asInstanceOf[LaunchPathSummary]
   }
   
-  extension [Self <: LaunchPathSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchPathSummary] (val x: Self) extends AnyVal {
     
     inline def setConstraintSummaries(value: ConstraintSummaries): Self = StObject.set(x, "ConstraintSummaries", value.asInstanceOf[js.Any])
     

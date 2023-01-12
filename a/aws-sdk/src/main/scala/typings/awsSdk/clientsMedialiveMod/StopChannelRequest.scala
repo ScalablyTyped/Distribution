@@ -18,7 +18,8 @@ object StopChannelRequest {
     __obj.asInstanceOf[StopChannelRequest]
   }
   
-  extension [Self <: StopChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setChannelId(value: string): Self = StObject.set(x, "ChannelId", value.asInstanceOf[js.Any])
   }

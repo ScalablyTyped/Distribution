@@ -23,7 +23,8 @@ object EvaluateSessionRequest {
     __obj.asInstanceOf[EvaluateSessionRequest]
   }
   
-  extension [Self <: EvaluateSessionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluateSessionRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainId(value: DomainId): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
     

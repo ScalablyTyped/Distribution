@@ -23,7 +23,8 @@ object NonCompliantSummary {
     __obj.asInstanceOf[NonCompliantSummary]
   }
   
-  extension [Self <: NonCompliantSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonCompliantSummary] (val x: Self) extends AnyVal {
     
     inline def setNonCompliantCount(value: ComplianceSummaryCount): Self = StObject.set(x, "NonCompliantCount", value.asInstanceOf[js.Any])
     

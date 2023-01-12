@@ -230,7 +230,8 @@ object mod {
       __obj.asInstanceOf[ProxyOptions]
     }
     
-    extension [Self <: ProxyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxyOptions] (val x: Self) extends AnyVal {
       
       inline def setFilter(
         value: (/* req */ Request_[

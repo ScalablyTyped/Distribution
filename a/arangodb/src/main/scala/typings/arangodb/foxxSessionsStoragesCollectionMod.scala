@@ -32,7 +32,8 @@ object foxxSessionsStoragesCollectionMod {
       __obj.asInstanceOf[CollectionStorageOptions]
     }
     
-    extension [Self <: CollectionStorageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollectionStorageOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoUpdate(value: Boolean): Self = StObject.set(x, "autoUpdate", value.asInstanceOf[js.Any])
       

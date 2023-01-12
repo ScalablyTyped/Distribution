@@ -48,7 +48,8 @@ object LaunchProfileInitializationActiveDirectory {
     __obj.asInstanceOf[LaunchProfileInitializationActiveDirectory]
   }
   
-  extension [Self <: LaunchProfileInitializationActiveDirectory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchProfileInitializationActiveDirectory] (val x: Self) extends AnyVal {
     
     inline def setComputerAttributes(value: ActiveDirectoryComputerAttributeList): Self = StObject.set(x, "computerAttributes", value.asInstanceOf[js.Any])
     

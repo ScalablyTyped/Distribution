@@ -26,7 +26,8 @@ object SketchMSImageDataReference {
     __obj.asInstanceOf[SketchMSImageDataReference]
   }
   
-  extension [Self <: SketchMSImageDataReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSImageDataReference] (val x: Self) extends AnyVal {
     
     inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

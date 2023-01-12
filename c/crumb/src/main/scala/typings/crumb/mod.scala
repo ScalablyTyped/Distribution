@@ -98,7 +98,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RegisterOptions]
     }
     
-    extension [Self <: RegisterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisterOptions] (val x: Self) extends AnyVal {
       
       inline def setAddToViewContext(value: Boolean): Self = StObject.set(x, "addToViewContext", value.asInstanceOf[js.Any])
       
@@ -165,7 +166,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[PluginSpecificConfiguration]
       }
       
-      extension [Self <: PluginSpecificConfiguration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PluginSpecificConfiguration] (val x: Self) extends AnyVal {
         
         inline def setCrumb(value: Boolean | Key): Self = StObject.set(x, "crumb", value.asInstanceOf[js.Any])
         

@@ -28,7 +28,8 @@ object MapDirectionsOptions {
     __obj.asInstanceOf[MapDirectionsOptions]
   }
   
-  extension [Self <: MapDirectionsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapDirectionsOptions] (val x: Self) extends AnyVal {
     
     inline def setAddListener(value: (String, js.Function) => MapsEventListener): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
   }

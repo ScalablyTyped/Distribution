@@ -22,7 +22,8 @@ object Disjunction {
     __obj.asInstanceOf[Disjunction]
   }
   
-  extension [Self <: Disjunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Disjunction] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.regexpToAst.regexpToAstStrings.Disjunction): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

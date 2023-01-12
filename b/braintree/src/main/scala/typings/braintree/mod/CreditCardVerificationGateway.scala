@@ -16,7 +16,8 @@ object CreditCardVerificationGateway {
     __obj.asInstanceOf[CreditCardVerificationGateway]
   }
   
-  extension [Self <: CreditCardVerificationGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreditCardVerificationGateway] (val x: Self) extends AnyVal {
     
     inline def setSearch(value: Any => Readable): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
   }

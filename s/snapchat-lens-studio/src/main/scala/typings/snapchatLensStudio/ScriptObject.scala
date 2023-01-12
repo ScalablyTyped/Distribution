@@ -20,7 +20,8 @@ object ScriptObject {
     __obj.asInstanceOf[ScriptObject]
   }
   
-  extension [Self <: ScriptObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptObject] (val x: Self) extends AnyVal {
     
     inline def setGetTypeName(value: () => String): Self = StObject.set(x, "getTypeName", js.Any.fromFunction0(value))
     

@@ -454,7 +454,8 @@ object PickClassAttributesHTMLHR {
     __obj.asInstanceOf[PickClassAttributesHTMLHR]
   }
   
-  extension [Self <: PickClassAttributesHTMLHR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickClassAttributesHTMLHR] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

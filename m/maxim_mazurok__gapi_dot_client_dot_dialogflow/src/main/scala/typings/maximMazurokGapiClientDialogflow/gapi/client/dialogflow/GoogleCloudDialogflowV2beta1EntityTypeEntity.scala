@@ -25,7 +25,8 @@ object GoogleCloudDialogflowV2beta1EntityTypeEntity {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1EntityTypeEntity]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1EntityTypeEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1EntityTypeEntity] (val x: Self) extends AnyVal {
     
     inline def setSynonyms(value: js.Array[String]): Self = StObject.set(x, "synonyms", value.asInstanceOf[js.Any])
     

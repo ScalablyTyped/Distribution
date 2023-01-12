@@ -28,7 +28,8 @@ object DisabledRange {
     __obj.asInstanceOf[DisabledRange]
   }
   
-  extension [Self <: DisabledRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisabledRange] (val x: Self) extends AnyVal {
     
     inline def setComment(value: Comment_): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

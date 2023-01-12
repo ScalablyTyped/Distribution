@@ -38,7 +38,8 @@ object BaseSymbolInformation {
     __obj.asInstanceOf[BaseSymbolInformation]
   }
   
-  extension [Self <: BaseSymbolInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseSymbolInformation] (val x: Self) extends AnyVal {
     
     inline def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     

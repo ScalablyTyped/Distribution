@@ -32,7 +32,8 @@ object typesSearchCaseInsensitiveFilterMod {
       __obj.asInstanceOf[CaseInsensitiveOptions[T]]
     }
     
-    extension [Self <: CaseInsensitiveOptions[?], T](x: Self & CaseInsensitiveOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaseInsensitiveOptions[?], T] (val x: Self & CaseInsensitiveOptions[T]) extends AnyVal {
       
       inline def setStartsWith(value: Boolean): Self = StObject.set(x, "startsWith", value.asInstanceOf[js.Any])
       

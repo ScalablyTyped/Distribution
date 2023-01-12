@@ -18,7 +18,8 @@ object CalendarContainer {
     __obj.asInstanceOf[CalendarContainer]
   }
   
-  extension [Self <: CalendarContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarContainer] (val x: Self) extends AnyVal {
     
     inline def setCalendarContainer(value: HTMLElement): Self = StObject.set(x, "calendarContainer", value.asInstanceOf[js.Any])
     

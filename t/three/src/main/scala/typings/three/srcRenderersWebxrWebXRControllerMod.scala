@@ -86,7 +86,8 @@ object srcRenderersWebxrWebXRControllerMod {
       __obj.asInstanceOf[XRHandInputState]
     }
     
-    extension [Self <: XRHandInputState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XRHandInputState] (val x: Self) extends AnyVal {
       
       inline def setPinching(value: Boolean): Self = StObject.set(x, "pinching", value.asInstanceOf[js.Any])
     }
@@ -202,7 +203,8 @@ object srcRenderersWebxrWebXRControllerMod {
       __obj.asInstanceOf[XRHandJoints]
     }
     
-    extension [Self <: XRHandJoints](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XRHandJoints] (val x: Self) extends AnyVal {
       
       inline def `setIndex-finger-metacarpal`(value: Double): Self = StObject.set(x, "index-finger-metacarpal", value.asInstanceOf[js.Any])
       

@@ -42,7 +42,8 @@ object StepOption {
     __obj.asInstanceOf[StepOption]
   }
   
-  extension [Self <: StepOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepOption] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

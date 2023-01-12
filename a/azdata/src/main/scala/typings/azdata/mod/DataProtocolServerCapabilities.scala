@@ -32,7 +32,8 @@ object DataProtocolServerCapabilities {
     __obj.asInstanceOf[DataProtocolServerCapabilities]
   }
   
-  extension [Self <: DataProtocolServerCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataProtocolServerCapabilities] (val x: Self) extends AnyVal {
     
     inline def setAdminServicesProvider(value: AdminServicesOptions): Self = StObject.set(x, "adminServicesProvider", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object HTMLSnippets {
     __obj.asInstanceOf[HTMLSnippets]
   }
   
-  extension [Self <: HTMLSnippets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLSnippets] (val x: Self) extends AnyVal {
     
     inline def setCloseBox(value: String): Self = StObject.set(x, "closeBox", value.asInstanceOf[js.Any])
     

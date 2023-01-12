@@ -23,7 +23,8 @@ object SearchChartResult {
     __obj.asInstanceOf[SearchChartResult[T]]
   }
   
-  extension [Self <: SearchChartResult[?], T](x: Self & SearchChartResult[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchChartResult[?], T] (val x: Self & SearchChartResult[T]) extends AnyVal {
     
     inline def setChart(value: String): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DeleteRealtimeLogConfigRequest {
     __obj.asInstanceOf[DeleteRealtimeLogConfigRequest]
   }
   
-  extension [Self <: DeleteRealtimeLogConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRealtimeLogConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

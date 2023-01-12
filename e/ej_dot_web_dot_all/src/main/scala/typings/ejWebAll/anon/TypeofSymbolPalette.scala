@@ -20,7 +20,8 @@ object TypeofSymbolPalette {
     __obj.asInstanceOf[TypeofSymbolPalette]
   }
   
-  extension [Self <: TypeofSymbolPalette](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSymbolPalette] (val x: Self) extends AnyVal {
     
     inline def setFn(value: SymbolPalette): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

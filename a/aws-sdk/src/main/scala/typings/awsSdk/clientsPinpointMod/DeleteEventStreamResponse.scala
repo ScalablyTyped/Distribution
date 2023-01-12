@@ -15,7 +15,8 @@ object DeleteEventStreamResponse {
     __obj.asInstanceOf[DeleteEventStreamResponse]
   }
   
-  extension [Self <: DeleteEventStreamResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEventStreamResponse] (val x: Self) extends AnyVal {
     
     inline def setEventStream(value: EventStream): Self = StObject.set(x, "EventStream", value.asInstanceOf[js.Any])
   }

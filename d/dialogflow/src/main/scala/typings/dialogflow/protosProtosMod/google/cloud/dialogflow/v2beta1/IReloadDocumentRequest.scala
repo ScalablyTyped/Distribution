@@ -20,7 +20,8 @@ object IReloadDocumentRequest {
     __obj.asInstanceOf[IReloadDocumentRequest]
   }
   
-  extension [Self <: IReloadDocumentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IReloadDocumentRequest] (val x: Self) extends AnyVal {
     
     inline def setGcsSource(value: IGcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
     

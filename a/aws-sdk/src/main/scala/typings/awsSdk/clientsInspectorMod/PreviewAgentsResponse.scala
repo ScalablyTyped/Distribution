@@ -23,7 +23,8 @@ object PreviewAgentsResponse {
     __obj.asInstanceOf[PreviewAgentsResponse]
   }
   
-  extension [Self <: PreviewAgentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreviewAgentsResponse] (val x: Self) extends AnyVal {
     
     inline def setAgentPreviews(value: AgentPreviewList): Self = StObject.set(x, "agentPreviews", value.asInstanceOf[js.Any])
     

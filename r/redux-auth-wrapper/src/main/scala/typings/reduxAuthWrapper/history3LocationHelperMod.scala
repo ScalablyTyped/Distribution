@@ -25,7 +25,8 @@ object history3LocationHelperMod {
       __obj.asInstanceOf[LocationHelper[Props]]
     }
     
-    extension [Self <: LocationHelper[?], Props](x: Self & LocationHelper[Props]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocationHelper[?], Props] (val x: Self & LocationHelper[Props]) extends AnyVal {
       
       inline def setCreateRedirectLoc(value: (Props, String) => Any): Self = StObject.set(x, "createRedirectLoc", js.Any.fromFunction2(value))
       
@@ -51,7 +52,8 @@ object history3LocationHelperMod {
       __obj.asInstanceOf[LocationHelperConfig[Props]]
     }
     
-    extension [Self <: LocationHelperConfig[?], Props](x: Self & LocationHelperConfig[Props]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocationHelperConfig[?], Props] (val x: Self & LocationHelperConfig[Props]) extends AnyVal {
       
       inline def setLocationSelector(
         value: /* props */ Props => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LocationDescriptorObject */ Any

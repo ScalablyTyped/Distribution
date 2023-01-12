@@ -22,7 +22,8 @@ object buildTypesTypesMod {
       __obj.asInstanceOf[IJsonConverter[T, S]]
     }
     
-    extension [Self <: IJsonConverter[?, ?], T, S](x: Self & (IJsonConverter[T, S])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJsonConverter[?, ?], T, S] (val x: Self & (IJsonConverter[T, S])) extends AnyVal {
       
       inline def setFromJSON(value: (S, Any) => T): Self = StObject.set(x, "fromJSON", js.Any.fromFunction2(value))
       
@@ -43,7 +44,8 @@ object buildTypesTypesMod {
       __obj.asInstanceOf[IJsonConvertible[T]]
     }
     
-    extension [Self <: IJsonConvertible[?], T](x: Self & IJsonConvertible[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJsonConvertible[?], T] (val x: Self & IJsonConvertible[T]) extends AnyVal {
       
       inline def setFromJSON(value: T => IJsonConvertible[T]): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
       
@@ -62,7 +64,8 @@ object buildTypesTypesMod {
       __obj.asInstanceOf[IValidation]
     }
     
-    extension [Self <: IValidation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IValidation] (val x: Self) extends AnyVal {
       
       inline def setValidate(value: Any => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     }

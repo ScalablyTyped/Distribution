@@ -26,7 +26,8 @@ object LineBreaks {
     __obj.asInstanceOf[LineBreaks]
   }
   
-  extension [Self <: LineBreaks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineBreaks] (val x: Self) extends AnyVal {
     
     inline def setAutomatic(value: Boolean): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
     

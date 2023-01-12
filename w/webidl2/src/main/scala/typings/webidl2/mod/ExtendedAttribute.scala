@@ -37,7 +37,8 @@ object ExtendedAttribute {
     __obj.asInstanceOf[ExtendedAttribute]
   }
   
-  extension [Self <: ExtendedAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtendedAttribute] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Array[Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

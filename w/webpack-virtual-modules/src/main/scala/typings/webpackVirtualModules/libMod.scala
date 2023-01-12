@@ -58,7 +58,8 @@ object libMod {
       __obj.asInstanceOf[VirtualModulesPlugin]
     }
     
-    extension [Self <: VirtualModulesPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirtualModulesPlugin] (val x: Self) extends AnyVal {
       
       inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       

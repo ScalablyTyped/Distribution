@@ -145,7 +145,8 @@ object typesCoreUtilsMod {
       __obj.asInstanceOf[MutationFilters]
     }
     
-    extension [Self <: MutationFilters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MutationFilters] (val x: Self) extends AnyVal {
       
       inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
       
@@ -211,7 +212,8 @@ object typesCoreUtilsMod {
       __obj.asInstanceOf[QueryFilters]
     }
     
-    extension [Self <: QueryFilters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryFilters] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

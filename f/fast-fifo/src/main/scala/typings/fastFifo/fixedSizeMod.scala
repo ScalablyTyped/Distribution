@@ -71,7 +71,8 @@ object fixedSizeMod {
       __obj.asInstanceOf[FixedFIFO[T]]
     }
     
-    extension [Self <: FixedFIFO[?], T](x: Self & FixedFIFO[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixedFIFO[?], T] (val x: Self & FixedFIFO[T]) extends AnyVal {
       
       inline def setBtm(value: Double): Self = StObject.set(x, "btm", value.asInstanceOf[js.Any])
       

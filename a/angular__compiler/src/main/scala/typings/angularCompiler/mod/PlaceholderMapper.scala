@@ -23,7 +23,8 @@ object PlaceholderMapper {
     __obj.asInstanceOf[PlaceholderMapper]
   }
   
-  extension [Self <: PlaceholderMapper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceholderMapper] (val x: Self) extends AnyVal {
     
     inline def setToInternalName(value: String => String | Null): Self = StObject.set(x, "toInternalName", js.Any.fromFunction1(value))
     

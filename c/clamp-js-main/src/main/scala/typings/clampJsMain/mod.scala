@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[ClampOptions]
     }
     
-    extension [Self <: ClampOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClampOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object mod {
       __obj.asInstanceOf[ClampResponse]
     }
     
-    extension [Self <: ClampResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClampResponse] (val x: Self) extends AnyVal {
       
       inline def setClamped(value: String): Self = StObject.set(x, "clamped", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object AFNJPY {
     __obj.asInstanceOf[AFNJPY]
   }
   
-  extension [Self <: AFNJPY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AFNJPY] (val x: Self) extends AnyVal {
     
     inline def setAFN(value: js.Array[String]): Self = StObject.set(x, "AFN", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object MailboxSettings {
     __obj.asInstanceOf[MailboxSettings]
   }
   
-  extension [Self <: MailboxSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MailboxSettings] (val x: Self) extends AnyVal {
     
     inline def setArchiveFolder(value: NullableOption[String]): Self = StObject.set(x, "archiveFolder", value.asInstanceOf[js.Any])
     

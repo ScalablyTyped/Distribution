@@ -28,7 +28,8 @@ object ModelBiasAppSpecification {
     __obj.asInstanceOf[ModelBiasAppSpecification]
   }
   
-  extension [Self <: ModelBiasAppSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelBiasAppSpecification] (val x: Self) extends AnyVal {
     
     inline def setConfigUri(value: S3Uri): Self = StObject.set(x, "ConfigUri", value.asInstanceOf[js.Any])
     

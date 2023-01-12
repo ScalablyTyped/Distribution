@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setImageSlashpng(value: `true`): Self = StObject.set(x, "image/png", value.asInstanceOf[js.Any])
     }
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[Imagepng]
     }
     
-    extension [Self <: Imagepng](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Imagepng] (val x: Self) extends AnyVal {
       
       inline def setImageSlashpng(value: js.Array[String]): Self = StObject.set(x, "image/png", value.asInstanceOf[js.Any])
       
@@ -73,7 +75,8 @@ object anon {
       __obj.asInstanceOf[ImagepngDecoderFn]
     }
     
-    extension [Self <: ImagepngDecoderFn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImagepngDecoderFn] (val x: Self) extends AnyVal {
       
       inline def setImageSlashpng(value: /* data */ Buffer => Bitmap): Self = StObject.set(x, "image/png", js.Any.fromFunction1(value))
     }
@@ -94,7 +97,8 @@ object anon {
       __obj.asInstanceOf[ImagepngEncoderFn]
     }
     
-    extension [Self <: ImagepngEncoderFn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImagepngEncoderFn] (val x: Self) extends AnyVal {
       
       inline def setImageSlashpng(value: Image => Buffer): Self = StObject.set(x, "image/png", js.Any.fromFunction1(value))
     }
@@ -124,7 +128,8 @@ object anon {
       __obj.asInstanceOf[MIMEPNG]
     }
     
-    extension [Self <: MIMEPNG](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MIMEPNG] (val x: Self) extends AnyVal {
       
       inline def setMIME_PNG(value: imageSlashpng): Self = StObject.set(x, "MIME_PNG", value.asInstanceOf[js.Any])
       

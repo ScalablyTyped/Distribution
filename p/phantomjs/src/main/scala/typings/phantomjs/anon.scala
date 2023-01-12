@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Architecture]
     }
     
-    extension [Self <: Architecture](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Architecture] (val x: Self) extends AnyVal {
       
       inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Charset]
     }
     
-    extension [Self <: Charset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Charset] (val x: Self) extends AnyVal {
       
       inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[Major]
     }
     
-    extension [Self <: Major](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Major] (val x: Self) extends AnyVal {
       
       inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object AttrsReshapeAttrs {
     __obj.asInstanceOf[AttrsReshapeAttrs]
   }
   
-  extension [Self <: AttrsReshapeAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsReshapeAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: ReshapeAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

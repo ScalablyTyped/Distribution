@@ -18,7 +18,8 @@ object DeleteEvaluationResultsRequest {
     __obj.asInstanceOf[DeleteEvaluationResultsRequest]
   }
   
-  extension [Self <: DeleteEvaluationResultsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEvaluationResultsRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigRuleName(value: StringWithCharLimit64): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
   }

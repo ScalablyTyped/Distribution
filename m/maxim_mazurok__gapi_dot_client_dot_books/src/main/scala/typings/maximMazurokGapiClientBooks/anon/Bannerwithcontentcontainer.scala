@@ -26,7 +26,8 @@ object Bannerwithcontentcontainer {
     __obj.asInstanceOf[Bannerwithcontentcontainer]
   }
   
-  extension [Self <: Bannerwithcontentcontainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bannerwithcontentcontainer] (val x: Self) extends AnyVal {
     
     inline def setBanner_with_content_container(value: FillColorArgb): Self = StObject.set(x, "banner_with_content_container", value.asInstanceOf[js.Any])
     

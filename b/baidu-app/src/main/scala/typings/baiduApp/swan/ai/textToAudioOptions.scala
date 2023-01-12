@@ -43,7 +43,8 @@ object textToAudioOptions {
     __obj.asInstanceOf[textToAudioOptions]
   }
   
-  extension [Self <: textToAudioOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: textToAudioOptions] (val x: Self) extends AnyVal {
     
     inline def setCtp(value: String | Double): Self = StObject.set(x, "ctp", value.asInstanceOf[js.Any])
     

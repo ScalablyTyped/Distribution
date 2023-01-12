@@ -29,7 +29,8 @@ object NumberQuery {
     __obj.asInstanceOf[NumberQuery]
   }
   
-  extension [Self <: NumberQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberQuery] (val x: Self) extends AnyVal {
     
     inline def setBetween(value: js.Array[Double]): Self = StObject.set(x, "between", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object SecureLockIcon {
     __obj.asInstanceOf[SecureLockIcon]
   }
   
-  extension [Self <: SecureLockIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecureLockIcon] (val x: Self) extends AnyVal {
     
     inline def setSecureLockIcon(value: Double): Self = StObject.set(x, "SecureLockIcon", value.asInstanceOf[js.Any])
   }

@@ -15,7 +15,8 @@ object DropOptions {
     __obj.asInstanceOf[DropOptions]
   }
   
-  extension [Self <: DropOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropOptions] (val x: Self) extends AnyVal {
     
     inline def setCascade(value: Boolean): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
     

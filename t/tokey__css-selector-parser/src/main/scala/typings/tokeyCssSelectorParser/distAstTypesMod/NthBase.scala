@@ -23,7 +23,8 @@ object NthBase {
     __obj.asInstanceOf[NthBase[PART]]
   }
   
-  extension [Self <: NthBase[?], PART /* <: String */](x: Self & NthBase[PART]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NthBase[?], PART /* <: String */] (val x: Self & NthBase[PART]) extends AnyVal {
     
     inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

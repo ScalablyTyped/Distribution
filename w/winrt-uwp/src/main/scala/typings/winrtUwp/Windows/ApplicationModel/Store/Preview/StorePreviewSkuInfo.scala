@@ -51,7 +51,8 @@ object StorePreviewSkuInfo {
     __obj.asInstanceOf[StorePreviewSkuInfo]
   }
   
-  extension [Self <: StorePreviewSkuInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorePreviewSkuInfo] (val x: Self) extends AnyVal {
     
     inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object DeleteOrderDealsRequest {
     __obj.asInstanceOf[DeleteOrderDealsRequest]
   }
   
-  extension [Self <: DeleteOrderDealsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteOrderDealsRequest] (val x: Self) extends AnyVal {
     
     inline def setDealIds(value: js.Array[String]): Self = StObject.set(x, "dealIds", value.asInstanceOf[js.Any])
     

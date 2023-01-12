@@ -23,7 +23,8 @@ object X86MemOperand {
     __obj.asInstanceOf[X86MemOperand]
   }
   
-  extension [Self <: X86MemOperand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X86MemOperand] (val x: Self) extends AnyVal {
     
     inline def setType(value: mem): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

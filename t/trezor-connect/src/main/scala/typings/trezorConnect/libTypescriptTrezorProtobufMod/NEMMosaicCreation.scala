@@ -19,7 +19,8 @@ object NEMMosaicCreation {
     __obj.asInstanceOf[NEMMosaicCreation]
   }
   
-  extension [Self <: NEMMosaicCreation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NEMMosaicCreation] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: NEMMosaicDefinition): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     

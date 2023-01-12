@@ -31,7 +31,8 @@ object AudioMapping {
     __obj.asInstanceOf[AudioMapping]
   }
   
-  extension [Self <: AudioMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioMapping] (val x: Self) extends AnyVal {
     
     inline def setAtomKey(value: String): Self = StObject.set(x, "atomKey", value.asInstanceOf[js.Any])
     

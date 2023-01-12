@@ -486,7 +486,8 @@ object libGraphicsMod {
       __obj.asInstanceOf[IFillStyleOptions]
     }
     
-    extension [Self <: IFillStyleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFillStyleOptions] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -543,7 +544,8 @@ object libGraphicsMod {
       __obj.asInstanceOf[IGraphicsBatchElement]
     }
     
-    extension [Self <: IGraphicsBatchElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGraphicsBatchElement] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -590,7 +592,8 @@ object libGraphicsMod {
       __obj.asInstanceOf[ILineStyleOptions]
     }
     
-    extension [Self <: ILineStyleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILineStyleOptions] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: Double): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       

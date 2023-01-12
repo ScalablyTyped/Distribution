@@ -106,7 +106,8 @@ object declarationInputTypeMoveKeyInputMod {
       __obj.asInstanceOf[MoveKeyInputOption]
     }
     
-    extension [Self <: MoveKeyInputOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MoveKeyInputOption] (val x: Self) extends AnyVal {
       
       inline def setScale(value: js.Array[Double]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       

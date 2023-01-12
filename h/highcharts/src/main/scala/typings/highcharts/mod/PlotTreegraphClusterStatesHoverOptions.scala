@@ -20,7 +20,8 @@ object PlotTreegraphClusterStatesHoverOptions {
     __obj.asInstanceOf[PlotTreegraphClusterStatesHoverOptions]
   }
   
-  extension [Self <: PlotTreegraphClusterStatesHoverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTreegraphClusterStatesHoverOptions] (val x: Self) extends AnyVal {
     
     inline def setFillColor(value: ColorType): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     

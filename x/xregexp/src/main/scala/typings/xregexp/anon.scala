@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Astral]
     }
     
-    extension [Self <: Astral](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Astral] (val x: Self) extends AnyVal {
       
       inline def setAstral(value: Boolean): Self = StObject.set(x, "astral", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object anon {
       __obj.asInstanceOf[PickRequiredUnicodeCharac]
     }
     
-    extension [Self <: PickRequiredUnicodeCharac](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickRequiredUnicodeCharac] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -159,7 +161,8 @@ object anon {
       __obj.asInstanceOf[PickRequiredUnicodeCharacAlias]
     }
     
-    extension [Self <: PickRequiredUnicodeCharacAlias](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickRequiredUnicodeCharacAlias] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -234,7 +237,8 @@ object anon {
       __obj.asInstanceOf[PickRequiredUnicodeCharacAstral]
     }
     
-    extension [Self <: PickRequiredUnicodeCharacAstral](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickRequiredUnicodeCharacAstral] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       

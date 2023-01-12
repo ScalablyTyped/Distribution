@@ -28,7 +28,8 @@ object distLibProcessImageSetMod {
       __obj.asInstanceOf[imageSetFunction]
     }
     
-    extension [Self <: imageSetFunction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: imageSetFunction] (val x: Self) extends AnyVal {
       
       inline def setImageSetFunction(value: Node): Self = StObject.set(x, "imageSetFunction", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object WeatherVisibleElements {
     __obj.asInstanceOf[WeatherVisibleElements]
   }
   
-  extension [Self <: WeatherVisibleElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeatherVisibleElements] (val x: Self) extends AnyVal {
     
     inline def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     

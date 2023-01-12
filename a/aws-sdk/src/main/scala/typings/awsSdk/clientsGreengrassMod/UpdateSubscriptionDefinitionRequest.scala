@@ -23,7 +23,8 @@ object UpdateSubscriptionDefinitionRequest {
     __obj.asInstanceOf[UpdateSubscriptionDefinitionRequest]
   }
   
-  extension [Self <: UpdateSubscriptionDefinitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSubscriptionDefinitionRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

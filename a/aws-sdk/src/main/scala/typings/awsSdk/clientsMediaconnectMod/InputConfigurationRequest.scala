@@ -23,7 +23,8 @@ object InputConfigurationRequest {
     __obj.asInstanceOf[InputConfigurationRequest]
   }
   
-  extension [Self <: InputConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setInputPort(value: integer): Self = StObject.set(x, "InputPort", value.asInstanceOf[js.Any])
     

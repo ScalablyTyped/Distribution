@@ -22,7 +22,8 @@ object DocumentSetVersionItem {
     __obj.asInstanceOf[DocumentSetVersionItem]
   }
   
-  extension [Self <: DocumentSetVersionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentSetVersionItem] (val x: Self) extends AnyVal {
     
     inline def setItemId(value: NullableOption[String]): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
     

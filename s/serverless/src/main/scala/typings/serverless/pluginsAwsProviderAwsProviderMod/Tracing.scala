@@ -19,7 +19,8 @@ object Tracing {
     __obj.asInstanceOf[Tracing]
   }
   
-  extension [Self <: Tracing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tracing] (val x: Self) extends AnyVal {
     
     inline def setApiGateway(value: Boolean): Self = StObject.set(x, "apiGateway", value.asInstanceOf[js.Any])
     

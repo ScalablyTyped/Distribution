@@ -32,7 +32,8 @@ object TypeofpartialSig {
     __obj.asInstanceOf[TypeofpartialSig]
   }
   
-  extension [Self <: TypeofpartialSig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofpartialSig] (val x: Self) extends AnyVal {
     
     inline def setCanAddToArray(value: (js.Array[PartialSig], PartialSig, Set[String]) => Boolean): Self = StObject.set(x, "canAddToArray", js.Any.fromFunction3(value))
     

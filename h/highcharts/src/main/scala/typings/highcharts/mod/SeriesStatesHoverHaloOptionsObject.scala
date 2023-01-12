@@ -36,7 +36,8 @@ object SeriesStatesHoverHaloOptionsObject {
     __obj.asInstanceOf[SeriesStatesHoverHaloOptionsObject]
   }
   
-  extension [Self <: SeriesStatesHoverHaloOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesStatesHoverHaloOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: PlotTilemapStatesHoverHaloAttributesOptions | SVGAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

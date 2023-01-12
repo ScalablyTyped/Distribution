@@ -29,7 +29,8 @@ object Cache {
     __obj.asInstanceOf[Cache]
   }
   
-  extension [Self <: Cache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

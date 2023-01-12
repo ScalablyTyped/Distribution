@@ -15,7 +15,8 @@ object UpdateWorkloadOutput {
     __obj.asInstanceOf[UpdateWorkloadOutput]
   }
   
-  extension [Self <: UpdateWorkloadOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateWorkloadOutput] (val x: Self) extends AnyVal {
     
     inline def setWorkload(value: Workload): Self = StObject.set(x, "Workload", value.asInstanceOf[js.Any])
     

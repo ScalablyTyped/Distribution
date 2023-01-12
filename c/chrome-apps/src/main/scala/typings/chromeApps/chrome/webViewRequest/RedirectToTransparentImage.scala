@@ -20,7 +20,8 @@ object RedirectToTransparentImage {
     __obj.asInstanceOf[RedirectToTransparentImage]
   }
   
-  extension [Self <: RedirectToTransparentImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedirectToTransparentImage] (val x: Self) extends AnyVal {
     
     inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     

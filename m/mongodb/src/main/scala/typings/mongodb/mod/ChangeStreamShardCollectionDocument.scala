@@ -22,7 +22,8 @@ object ChangeStreamShardCollectionDocument {
     __obj.asInstanceOf[ChangeStreamShardCollectionDocument]
   }
   
-  extension [Self <: ChangeStreamShardCollectionDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeStreamShardCollectionDocument] (val x: Self) extends AnyVal {
     
     inline def setOperationType(value: shardCollection): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
   }

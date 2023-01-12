@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[AliasAuthOptions]
     }
     
-    extension [Self <: AliasAuthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AliasAuthOptions] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object mod {
       __obj.asInstanceOf[AuthOptions]
     }
     
-    extension [Self <: AuthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthOptions] (val x: Self) extends AnyVal {
       
       inline def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: AuthOptions | AliasAuthOptions): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       

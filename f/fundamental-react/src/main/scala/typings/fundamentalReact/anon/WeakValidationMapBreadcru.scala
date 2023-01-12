@@ -718,7 +718,8 @@ object WeakValidationMapBreadcru {
     __obj.asInstanceOf[WeakValidationMapBreadcru]
   }
   
-  extension [Self <: WeakValidationMapBreadcru](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapBreadcru] (val x: Self) extends AnyVal {
     
     inline def setAbout(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any

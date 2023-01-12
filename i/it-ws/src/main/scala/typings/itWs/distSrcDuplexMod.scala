@@ -53,7 +53,8 @@ object distSrcDuplexMod {
       __obj.asInstanceOf[DuplexWebSocket]
     }
     
-    extension [Self <: DuplexWebSocket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DuplexWebSocket] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -92,7 +93,8 @@ object distSrcDuplexMod {
       __obj.asInstanceOf[DuplexWebSocketOptions]
     }
     
-    extension [Self <: DuplexWebSocketOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DuplexWebSocketOptions] (val x: Self) extends AnyVal {
       
       inline def setRemoteAddress(value: String): Self = StObject.set(x, "remoteAddress", value.asInstanceOf[js.Any])
       

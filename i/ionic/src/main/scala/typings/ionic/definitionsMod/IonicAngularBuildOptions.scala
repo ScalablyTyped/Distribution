@@ -40,7 +40,8 @@ object IonicAngularBuildOptions {
     __obj.asInstanceOf[IonicAngularBuildOptions]
   }
   
-  extension [Self <: IonicAngularBuildOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IonicAngularBuildOptions] (val x: Self) extends AnyVal {
     
     inline def setAot(value: Boolean): Self = StObject.set(x, "aot", value.asInstanceOf[js.Any])
     

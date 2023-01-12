@@ -58,7 +58,8 @@ object filesystem {
       __obj.asInstanceOf[IAbstract]
     }
     
-    extension [Self <: IAbstract](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
       
       inline def setGetFileSystemSize(value: () => Double): Self = StObject.set(x, "getFileSystemSize", js.Any.fromFunction0(value))
       
@@ -138,7 +139,8 @@ object filesystem {
       __obj.asInstanceOf[ICordova]
     }
     
-    extension [Self <: ICordova](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICordova] (val x: Self) extends AnyVal {
       
       inline def setDownload(value: /* config */ js.UndefOr[Any] => Any): Self = StObject.set(x, "download", js.Any.fromFunction1(value))
       
@@ -194,7 +196,8 @@ object filesystem {
       __obj.asInstanceOf[IDirectoryEntry]
     }
     
-    extension [Self <: IDirectoryEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDirectoryEntry] (val x: Self) extends AnyVal {
       
       inline def setGetDirectory(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "getDirectory", js.Any.fromFunction1(value))
       
@@ -274,7 +277,8 @@ object filesystem {
       __obj.asInstanceOf[IEntry]
     }
     
-    extension [Self <: IEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEntry] (val x: Self) extends AnyVal {
       
       inline def setCopyTo(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "copyTo", js.Any.fromFunction1(value))
       
@@ -355,7 +359,8 @@ object filesystem {
       __obj.asInstanceOf[IFileEntry]
     }
     
-    extension [Self <: IFileEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFileEntry] (val x: Self) extends AnyVal {
       
       inline def setGetEntry(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "getEntry", js.Any.fromFunction1(value))
       
@@ -399,7 +404,8 @@ object filesystem {
       __obj.asInstanceOf[typings.senchaTouch.Ext.device.filesystem.IFileSystem]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.device.filesystem.IFileSystem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.device.filesystem.IFileSystem] (val x: Self) extends AnyVal {
       
       inline def setGetRoot(value: () => IDirectoryEntry): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
       
@@ -423,7 +429,8 @@ object filesystem {
       __obj.asInstanceOf[IHTML5]
     }
     
-    extension [Self <: IHTML5](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHTML5] (val x: Self) extends AnyVal {
       
       inline def setRequestFileSystem(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "requestFileSystem", js.Any.fromFunction1(value))
       
@@ -464,7 +471,8 @@ object filesystem {
       __obj.asInstanceOf[IPhoneGap]
     }
     
-    extension [Self <: IPhoneGap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPhoneGap] (val x: Self) extends AnyVal {
       
       inline def setDownload(value: /* config */ js.UndefOr[Any] => Any): Self = StObject.set(x, "download", js.Any.fromFunction1(value))
       
@@ -500,7 +508,8 @@ object filesystem {
       __obj.asInstanceOf[ISencha]
     }
     
-    extension [Self <: ISencha](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISencha] (val x: Self) extends AnyVal {
       
       inline def setRequestFileSystem(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "requestFileSystem", js.Any.fromFunction1(value))
       

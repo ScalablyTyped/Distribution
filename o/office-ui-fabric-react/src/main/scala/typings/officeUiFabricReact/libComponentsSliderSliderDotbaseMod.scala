@@ -110,7 +110,8 @@ object libComponentsSliderSliderDotbaseMod {
       __obj.asInstanceOf[ISliderState]
     }
     
-    extension [Self <: ISliderState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISliderState] (val x: Self) extends AnyVal {
       
       inline def setLowerValue(value: Double): Self = StObject.set(x, "lowerValue", value.asInstanceOf[js.Any])
       

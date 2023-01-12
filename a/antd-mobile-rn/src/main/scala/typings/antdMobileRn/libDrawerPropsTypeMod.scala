@@ -29,7 +29,8 @@ object libDrawerPropsTypeMod {
       __obj.asInstanceOf[DrawerProps]
     }
     
-    extension [Self <: DrawerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerProps] (val x: Self) extends AnyVal {
       
       inline def setOnOpenChange(value: /* isOpen */ Boolean => Unit): Self = StObject.set(x, "onOpenChange", js.Any.fromFunction1(value))
       
@@ -82,7 +83,8 @@ object libDrawerPropsTypeMod {
       __obj.asInstanceOf[DrawerWebProps]
     }
     
-    extension [Self <: DrawerWebProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerWebProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

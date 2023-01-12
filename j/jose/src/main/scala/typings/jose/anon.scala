@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[D]
     }
     
-    extension [Self <: D](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: D] (val x: Self) extends AnyVal {
       
       inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[OmitFlattenedJWSInputpayl]
     }
     
-    extension [Self <: OmitFlattenedJWSInputpayl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitFlattenedJWSInputpayl] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: JWSHeaderParameters): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -83,7 +85,8 @@ object anon {
       __obj.asInstanceOf[PickFlattenedJWEencrypted]
     }
     
-    extension [Self <: PickFlattenedJWEencrypted](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickFlattenedJWEencrypted] (val x: Self) extends AnyVal {
       
       inline def setEncrypted_key(value: String): Self = StObject.set(x, "encrypted_key", value.asInstanceOf[js.Any])
       
@@ -117,7 +120,8 @@ object anon {
       __obj.asInstanceOf[PickJWKktycrvxyen]
     }
     
-    extension [Self <: PickJWKktycrvxyen](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickJWKktycrvxyen] (val x: Self) extends AnyVal {
       
       inline def setCrv(value: String): Self = StObject.set(x, "crv", value.asInstanceOf[js.Any])
       

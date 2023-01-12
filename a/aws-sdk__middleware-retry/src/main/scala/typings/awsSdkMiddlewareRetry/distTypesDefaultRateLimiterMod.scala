@@ -104,7 +104,8 @@ object distTypesDefaultRateLimiterMod {
       __obj.asInstanceOf[DefaultRateLimiterOptions]
     }
     
-    extension [Self <: DefaultRateLimiterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultRateLimiterOptions] (val x: Self) extends AnyVal {
       
       inline def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object PolarCoordinates {
     __obj.asInstanceOf[PolarCoordinates]
   }
   
-  extension [Self <: PolarCoordinates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolarCoordinates] (val x: Self) extends AnyVal {
     
     inline def setPhi(value: Double): Self = StObject.set(x, "phi", value.asInstanceOf[js.Any])
     

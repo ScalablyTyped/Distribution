@@ -25,7 +25,8 @@ object IterableChangeRecord {
     __obj.asInstanceOf[IterableChangeRecord[V]]
   }
   
-  extension [Self <: IterableChangeRecord[?], V](x: Self & IterableChangeRecord[V]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IterableChangeRecord[?], V] (val x: Self & IterableChangeRecord[V]) extends AnyVal {
     
     inline def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
     

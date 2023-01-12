@@ -19,7 +19,8 @@ object ForwardingAddress {
     __obj.asInstanceOf[ForwardingAddress]
   }
   
-  extension [Self <: ForwardingAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForwardingAddress] (val x: Self) extends AnyVal {
     
     inline def setForwardingEmail(value: String): Self = StObject.set(x, "forwardingEmail", value.asInstanceOf[js.Any])
     

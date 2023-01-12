@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[TextFitOption]
     }
     
-    extension [Self <: TextFitOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextFitOption] (val x: Self) extends AnyVal {
       
       inline def setAlignHoriz(value: Boolean): Self = StObject.set(x, "alignHoriz", value.asInstanceOf[js.Any])
       

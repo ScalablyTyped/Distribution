@@ -23,7 +23,8 @@ object MomentCreationData {
     __obj.asInstanceOf[MomentCreationData]
   }
   
-  extension [Self <: MomentCreationData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MomentCreationData] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: MomentFormatSpecification): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

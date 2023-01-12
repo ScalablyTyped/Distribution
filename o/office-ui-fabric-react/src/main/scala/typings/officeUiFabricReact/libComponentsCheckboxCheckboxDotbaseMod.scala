@@ -81,7 +81,8 @@ object libComponentsCheckboxCheckboxDotbaseMod {
       __obj.asInstanceOf[ICheckboxState]
     }
     
-    extension [Self <: ICheckboxState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICheckboxState] (val x: Self) extends AnyVal {
       
       inline def setIsChecked(value: Boolean): Self = StObject.set(x, "isChecked", value.asInstanceOf[js.Any])
       

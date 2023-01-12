@@ -22,7 +22,8 @@ object ImportFn {
     __obj.asInstanceOf[ImportFn]
   }
   
-  extension [Self <: ImportFn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportFn] (val x: Self) extends AnyVal {
     
     inline def setImportFn(value: /* path */ Path => PromiseLike[ModuleExports]): Self = StObject.set(x, "importFn", js.Any.fromFunction1(value))
     

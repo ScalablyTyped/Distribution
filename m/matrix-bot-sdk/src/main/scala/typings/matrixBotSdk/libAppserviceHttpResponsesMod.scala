@@ -32,7 +32,8 @@ object libAppserviceHttpResponsesMod {
       __obj.asInstanceOf[IApplicationServiceProtocol]
     }
     
-    extension [Self <: IApplicationServiceProtocol](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IApplicationServiceProtocol] (val x: Self) extends AnyVal {
       
       inline def setField_types(value: StringDictionary[IFieldType]): Self = StObject.set(x, "field_types", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object libAppserviceHttpResponsesMod {
       __obj.asInstanceOf[IFieldType]
     }
     
-    extension [Self <: IFieldType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFieldType] (val x: Self) extends AnyVal {
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object libAppserviceHttpResponsesMod {
       __obj.asInstanceOf[IProtocolInstance]
     }
     
-    extension [Self <: IProtocolInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProtocolInstance] (val x: Self) extends AnyVal {
       
       inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
       

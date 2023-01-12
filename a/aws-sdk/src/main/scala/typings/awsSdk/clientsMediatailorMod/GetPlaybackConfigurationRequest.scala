@@ -18,7 +18,8 @@ object GetPlaybackConfigurationRequest {
     __obj.asInstanceOf[GetPlaybackConfigurationRequest]
   }
   
-  extension [Self <: GetPlaybackConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPlaybackConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: _String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

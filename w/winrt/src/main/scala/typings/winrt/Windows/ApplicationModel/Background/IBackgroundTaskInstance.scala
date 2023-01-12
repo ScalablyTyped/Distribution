@@ -35,7 +35,8 @@ object IBackgroundTaskInstance {
     __obj.asInstanceOf[IBackgroundTaskInstance]
   }
   
-  extension [Self <: IBackgroundTaskInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBackgroundTaskInstance] (val x: Self) extends AnyVal {
     
     inline def setGetDeferral(value: () => BackgroundTaskDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     

@@ -237,7 +237,8 @@ object esComponentsConnectMod {
       __obj.asInstanceOf[ConnectOptions[State, TStateProps, TOwnProps, TMergedProps]]
     }
     
-    extension [Self <: ConnectOptions[?, ?, ?, ?], State, TStateProps, TOwnProps, TMergedProps](x: Self & (ConnectOptions[State, TStateProps, TOwnProps, TMergedProps])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectOptions[?, ?, ?, ?], State, TStateProps, TOwnProps, TMergedProps] (val x: Self & (ConnectOptions[State, TStateProps, TOwnProps, TMergedProps])) extends AnyVal {
       
       inline def setAreMergedPropsEqual(value: (/* nextMergedProps */ TMergedProps, /* prevMergedProps */ TMergedProps) => Boolean): Self = StObject.set(x, "areMergedPropsEqual", js.Any.fromFunction2(value))
       
@@ -280,7 +281,8 @@ object esComponentsConnectMod {
       __obj.asInstanceOf[ConnectProps]
     }
     
-    extension [Self <: ConnectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectProps] (val x: Self) extends AnyVal {
       
       inline def setContext(value: ReactReduxContextInstance): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

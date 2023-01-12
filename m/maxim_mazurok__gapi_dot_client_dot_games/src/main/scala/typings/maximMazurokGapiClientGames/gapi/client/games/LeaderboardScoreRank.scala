@@ -28,7 +28,8 @@ object LeaderboardScoreRank {
     __obj.asInstanceOf[LeaderboardScoreRank]
   }
   
-  extension [Self <: LeaderboardScoreRank](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeaderboardScoreRank] (val x: Self) extends AnyVal {
     
     inline def setFormattedNumScores(value: String): Self = StObject.set(x, "formattedNumScores", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object DbRemoteDocumentGlobal {
     __obj.asInstanceOf[DbRemoteDocumentGlobal]
   }
   
-  extension [Self <: DbRemoteDocumentGlobal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbRemoteDocumentGlobal] (val x: Self) extends AnyVal {
     
     inline def setByteSize(value: Double): Self = StObject.set(x, "byteSize", value.asInstanceOf[js.Any])
   }

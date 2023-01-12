@@ -20,7 +20,8 @@ object Support {
     __obj.asInstanceOf[Support]
   }
   
-  extension [Self <: Support](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Support] (val x: Self) extends AnyVal {
     
     inline def setExport(value: SupportItem): Self = StObject.set(x, "export", value.asInstanceOf[js.Any])
     

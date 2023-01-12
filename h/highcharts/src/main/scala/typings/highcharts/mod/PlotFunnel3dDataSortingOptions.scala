@@ -31,7 +31,8 @@ object PlotFunnel3dDataSortingOptions {
     __obj.asInstanceOf[PlotFunnel3dDataSortingOptions]
   }
   
-  extension [Self <: PlotFunnel3dDataSortingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotFunnel3dDataSortingOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

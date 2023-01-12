@@ -27,7 +27,8 @@ object VisualVariablesResultSize {
     __obj.asInstanceOf[VisualVariablesResultSize]
   }
   
-  extension [Self <: VisualVariablesResultSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisualVariablesResultSize] (val x: Self) extends AnyVal {
     
     inline def setSizeScheme(value: SizeScheme): Self = StObject.set(x, "sizeScheme", value.asInstanceOf[js.Any])
     

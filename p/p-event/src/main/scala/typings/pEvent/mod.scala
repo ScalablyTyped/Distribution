@@ -180,7 +180,8 @@ object mod {
       __obj.asInstanceOf[Emitter[EventName, EmittedType]]
     }
     
-    extension [Self <: Emitter[?, ?], EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[Any] */](x: Self & (Emitter[EventName, EmittedType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Emitter[?, ?], EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[Any] */] (val x: Self & (Emitter[EventName, EmittedType])) extends AnyVal {
       
       inline def setAddEventListener(value: (EventName, /* listener */ js.Function1[EmittedType, Unit]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
@@ -224,7 +225,8 @@ object mod {
       __obj.asInstanceOf[IteratorMultiArgumentsOptions[EmittedType]]
     }
     
-    extension [Self <: IteratorMultiArgumentsOptions[?], EmittedType /* <: js.Array[Any] */](x: Self & IteratorMultiArgumentsOptions[EmittedType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IteratorMultiArgumentsOptions[?], EmittedType /* <: js.Array[Any] */] (val x: Self & IteratorMultiArgumentsOptions[EmittedType]) extends AnyVal {
       
       inline def setMultiArgs(value: `true`): Self = StObject.set(x, "multiArgs", value.asInstanceOf[js.Any])
     }
@@ -253,7 +255,8 @@ object mod {
       __obj.asInstanceOf[IteratorOptions[EmittedType]]
     }
     
-    extension [Self <: IteratorOptions[?], EmittedType /* <: Any | js.Array[Any] */](x: Self & IteratorOptions[EmittedType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IteratorOptions[?], EmittedType /* <: Any | js.Array[Any] */] (val x: Self & IteratorOptions[EmittedType]) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -281,7 +284,8 @@ object mod {
       __obj.asInstanceOf[MultiArgumentsOptions[EmittedType]]
     }
     
-    extension [Self <: MultiArgumentsOptions[?], EmittedType /* <: js.Array[Any] */](x: Self & MultiArgumentsOptions[EmittedType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiArgumentsOptions[?], EmittedType /* <: js.Array[Any] */] (val x: Self & MultiArgumentsOptions[EmittedType]) extends AnyVal {
       
       inline def setMultiArgs(value: `true`): Self = StObject.set(x, "multiArgs", value.asInstanceOf[js.Any])
     }
@@ -301,7 +305,8 @@ object mod {
       __obj.asInstanceOf[MultipleMultiArgumentsOptions[EmittedType]]
     }
     
-    extension [Self <: MultipleMultiArgumentsOptions[?], EmittedType /* <: js.Array[Any] */](x: Self & MultipleMultiArgumentsOptions[EmittedType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultipleMultiArgumentsOptions[?], EmittedType /* <: js.Array[Any] */] (val x: Self & MultipleMultiArgumentsOptions[EmittedType]) extends AnyVal {
       
       inline def setMultiArgs(value: `true`): Self = StObject.set(x, "multiArgs", value.asInstanceOf[js.Any])
     }
@@ -352,7 +357,8 @@ object mod {
       __obj.asInstanceOf[MultipleOptions[EmittedType]]
     }
     
-    extension [Self <: MultipleOptions[?], EmittedType /* <: Any | js.Array[Any] */](x: Self & MultipleOptions[EmittedType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultipleOptions[?], EmittedType /* <: Any | js.Array[Any] */] (val x: Self & MultipleOptions[EmittedType]) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -407,7 +413,8 @@ object mod {
       __obj.asInstanceOf[Options[EmittedType]]
     }
     
-    extension [Self <: Options[?], EmittedType /* <: Any | js.Array[Any] */](x: Self & Options[EmittedType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], EmittedType /* <: Any | js.Array[Any] */] (val x: Self & Options[EmittedType]) extends AnyVal {
       
       inline def setFilter(value: EmittedType => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       

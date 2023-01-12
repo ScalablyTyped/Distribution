@@ -26,7 +26,8 @@ object Milestonenumber {
     __obj.asInstanceOf[Milestonenumber]
   }
   
-  extension [Self <: Milestonenumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Milestonenumber] (val x: Self) extends AnyVal {
     
     inline def setMilestone_number(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['milestone-number'] */ js.Any

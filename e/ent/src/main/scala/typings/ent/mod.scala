@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[EntOpts]
     }
     
-    extension [Self <: EntOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntOpts] (val x: Self) extends AnyVal {
       
       inline def setNamed(value: Boolean): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
       

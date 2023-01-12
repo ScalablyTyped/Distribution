@@ -28,7 +28,8 @@ object CallArgument {
     __obj.asInstanceOf[CallArgument]
   }
   
-  extension [Self <: CallArgument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallArgument] (val x: Self) extends AnyVal {
     
     inline def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     

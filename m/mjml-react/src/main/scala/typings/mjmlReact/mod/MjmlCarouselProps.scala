@@ -45,7 +45,8 @@ object MjmlCarouselProps {
     __obj.asInstanceOf[MjmlCarouselProps]
   }
   
-  extension [Self <: MjmlCarouselProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MjmlCarouselProps] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

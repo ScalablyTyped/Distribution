@@ -15,7 +15,8 @@ object PutObjectAclOutput {
     __obj.asInstanceOf[PutObjectAclOutput]
   }
   
-  extension [Self <: PutObjectAclOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutObjectAclOutput] (val x: Self) extends AnyVal {
     
     inline def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
     

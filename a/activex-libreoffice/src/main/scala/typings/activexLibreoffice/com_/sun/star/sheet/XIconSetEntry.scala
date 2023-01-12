@@ -35,7 +35,8 @@ object XIconSetEntry {
     __obj.asInstanceOf[XIconSetEntry]
   }
   
-  extension [Self <: XIconSetEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIconSetEntry] (val x: Self) extends AnyVal {
     
     inline def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
     

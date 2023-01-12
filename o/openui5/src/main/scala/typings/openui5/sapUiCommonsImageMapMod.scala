@@ -370,7 +370,8 @@ object sapUiCommonsImageMapMod {
       __obj.asInstanceOf[ImageMapSettings]
     }
     
-    extension [Self <: ImageMapSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageMapSettings] (val x: Self) extends AnyVal {
       
       inline def setAreas(
         value: js.Array[typings.openui5.sapUiCommonsAreaMod.default] | typings.openui5.sapUiCommonsAreaMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

@@ -99,7 +99,8 @@ object distSrcRoutingPathFindingMod {
       __obj.asInstanceOf[PathFinding]
     }
     
-    extension [Self <: PathFinding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathFinding] (val x: Self) extends AnyVal {
       
       inline def setCalculateDirectPath(value: (X, X) => js.Array[js.Array[Double]]): Self = StObject.set(x, "calculateDirectPath", js.Any.fromFunction2(value))
       

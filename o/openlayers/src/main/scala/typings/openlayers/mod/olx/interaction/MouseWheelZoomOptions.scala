@@ -21,7 +21,8 @@ object MouseWheelZoomOptions {
     __obj.asInstanceOf[MouseWheelZoomOptions]
   }
   
-  extension [Self <: MouseWheelZoomOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouseWheelZoomOptions] (val x: Self) extends AnyVal {
     
     inline def setConstrainResolution(value: Boolean): Self = StObject.set(x, "constrainResolution", value.asInstanceOf[js.Any])
     

@@ -96,7 +96,8 @@ object ClassBreaksRendererProperties {
     __obj.asInstanceOf[ClassBreaksRendererProperties]
   }
   
-  extension [Self <: ClassBreaksRendererProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassBreaksRendererProperties] (val x: Self) extends AnyVal {
     
     inline def setBackgroundFillSymbol(value: FillSymbolProperties | typings.arcgisJsApi.anon.PolygonSymbol3DProperties): Self = StObject.set(x, "backgroundFillSymbol", value.asInstanceOf[js.Any])
     

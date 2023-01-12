@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[CHAR]
     }
     
-    extension [Self <: CHAR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CHAR] (val x: Self) extends AnyVal {
       
       inline def setCHAR(value: typings.guardianProsemirrorInvisibles.guardianProsemirrorInvisiblesStrings.CHAR): Self = StObject.set(x, "CHAR", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[IsFocused]
     }
     
-    extension [Self <: IsFocused](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsFocused] (val x: Self) extends AnyVal {
       
       inline def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
     }
@@ -61,7 +63,8 @@ object anon {
       __obj.asInstanceOf[Payload]
     }
     
-    extension [Self <: Payload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: ShouldShowInvisibles): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -80,7 +83,8 @@ object anon {
       __obj.asInstanceOf[ShouldShowInvisibles]
     }
     
-    extension [Self <: ShouldShowInvisibles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShouldShowInvisibles] (val x: Self) extends AnyVal {
       
       inline def setShouldShowInvisibles(value: Boolean): Self = StObject.set(x, "shouldShowInvisibles", value.asInstanceOf[js.Any])
     }
@@ -100,7 +104,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: IsFocused): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       

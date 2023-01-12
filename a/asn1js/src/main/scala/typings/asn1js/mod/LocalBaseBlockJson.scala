@@ -25,7 +25,8 @@ object LocalBaseBlockJson {
     __obj.asInstanceOf[LocalBaseBlockJson]
   }
   
-  extension [Self <: LocalBaseBlockJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalBaseBlockJson] (val x: Self) extends AnyVal {
     
     inline def setBlockName(value: String): Self = StObject.set(x, "blockName", value.asInstanceOf[js.Any])
     

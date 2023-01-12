@@ -43,7 +43,8 @@ object SearchFlowExecutionsRequest {
     __obj.asInstanceOf[SearchFlowExecutionsRequest]
   }
   
-  extension [Self <: SearchFlowExecutionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchFlowExecutionsRequest] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

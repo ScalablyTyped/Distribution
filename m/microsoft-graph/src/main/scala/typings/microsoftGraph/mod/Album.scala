@@ -16,7 +16,8 @@ object Album {
     __obj.asInstanceOf[Album]
   }
   
-  extension [Self <: Album](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Album] (val x: Self) extends AnyVal {
     
     inline def setCoverImageItemId(value: NullableOption[String]): Self = StObject.set(x, "coverImageItemId", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object IsScalar {
     __obj.asInstanceOf[IsScalar]
   }
   
-  extension [Self <: IsScalar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsScalar] (val x: Self) extends AnyVal {
     
     inline def setIsScalar(value: Domain): Self = StObject.set(x, "isScalar", value.asInstanceOf[js.Any])
     

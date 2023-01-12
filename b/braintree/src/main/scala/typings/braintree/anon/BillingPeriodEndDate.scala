@@ -17,7 +17,8 @@ object BillingPeriodEndDate {
     __obj.asInstanceOf[BillingPeriodEndDate]
   }
   
-  extension [Self <: BillingPeriodEndDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BillingPeriodEndDate] (val x: Self) extends AnyVal {
     
     inline def setBillingPeriodEndDate(value: js.Date): Self = StObject.set(x, "billingPeriodEndDate", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object ServicesData {
     __obj.asInstanceOf[ServicesData]
   }
   
-  extension [Self <: ServicesData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServicesData] (val x: Self) extends AnyVal {
     
     inline def setCpu(value: Double): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     

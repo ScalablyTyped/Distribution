@@ -23,7 +23,8 @@ object MVCxClientBeginCallbackEventArgs {
     __obj.asInstanceOf[MVCxClientBeginCallbackEventArgs]
   }
   
-  extension [Self <: MVCxClientBeginCallbackEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MVCxClientBeginCallbackEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCustomArgs(value: Any): Self = StObject.set(x, "customArgs", value.asInstanceOf[js.Any])
   }

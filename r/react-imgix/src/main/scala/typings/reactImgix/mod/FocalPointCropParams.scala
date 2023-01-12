@@ -21,7 +21,8 @@ object FocalPointCropParams {
     __obj.asInstanceOf[FocalPointCropParams]
   }
   
-  extension [Self <: FocalPointCropParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FocalPointCropParams] (val x: Self) extends AnyVal {
     
     inline def `setFp-debug`(value: ImgixParamType): Self = StObject.set(x, "fp-debug", value.asInstanceOf[js.Any])
     

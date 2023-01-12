@@ -367,7 +367,8 @@ object esComponentsButtonButtonMod {
       __obj.asInstanceOf[ButtonProps]
     }
     
-    extension [Self <: ButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
@@ -654,7 +655,8 @@ object esComponentsButtonButtonMod {
       __obj.asInstanceOf[ButtonRef]
     }
     
-    extension [Self <: ButtonRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonRef] (val x: Self) extends AnyVal {
       
       inline def setNativeElement(value: HTMLButtonElement): Self = StObject.set(x, "nativeElement", value.asInstanceOf[js.Any])
       

@@ -53,7 +53,8 @@ object AwsEc2NetworkInterfaceDetails {
     __obj.asInstanceOf[AwsEc2NetworkInterfaceDetails]
   }
   
-  extension [Self <: AwsEc2NetworkInterfaceDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2NetworkInterfaceDetails] (val x: Self) extends AnyVal {
     
     inline def setAttachment(value: AwsEc2NetworkInterfaceAttachment): Self = StObject.set(x, "Attachment", value.asInstanceOf[js.Any])
     

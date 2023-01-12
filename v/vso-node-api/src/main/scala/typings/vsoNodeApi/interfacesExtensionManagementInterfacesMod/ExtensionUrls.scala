@@ -23,7 +23,8 @@ object ExtensionUrls {
     __obj.asInstanceOf[ExtensionUrls]
   }
   
-  extension [Self <: ExtensionUrls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionUrls] (val x: Self) extends AnyVal {
     
     inline def setExtensionIcon(value: String): Self = StObject.set(x, "extensionIcon", value.asInstanceOf[js.Any])
     

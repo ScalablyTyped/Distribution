@@ -33,7 +33,8 @@ object ASPxClientCardViewBatchEditStartEditingEventArgs {
     __obj.asInstanceOf[ASPxClientCardViewBatchEditStartEditingEventArgs]
   }
   
-  extension [Self <: ASPxClientCardViewBatchEditStartEditingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCardViewBatchEditStartEditingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCardValues(value: Any): Self = StObject.set(x, "cardValues", value.asInstanceOf[js.Any])
     

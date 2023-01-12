@@ -23,7 +23,8 @@ object TimestampPartition {
     __obj.asInstanceOf[TimestampPartition]
   }
   
-  extension [Self <: TimestampPartition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimestampPartition] (val x: Self) extends AnyVal {
     
     inline def setAttributeName(value: PartitionAttributeName): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object PasswordRequirements {
     __obj.asInstanceOf[PasswordRequirements]
   }
   
-  extension [Self <: PasswordRequirements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordRequirements] (val x: Self) extends AnyVal {
     
     inline def setMaximumFailedPasswordsForWipe(value: Double): Self = StObject.set(x, "maximumFailedPasswordsForWipe", value.asInstanceOf[js.Any])
     

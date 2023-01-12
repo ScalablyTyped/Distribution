@@ -58,7 +58,8 @@ object ListImagesRequest {
     __obj.asInstanceOf[ListImagesRequest]
   }
   
-  extension [Self <: ListImagesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListImagesRequest] (val x: Self) extends AnyVal {
     
     inline def setCreationTimeAfter(value: js.Date): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     

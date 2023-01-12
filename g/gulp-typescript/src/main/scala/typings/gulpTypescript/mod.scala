@@ -132,7 +132,8 @@ object mod {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setAllowNonTsExtensions(value: Boolean): Self = StObject.set(x, "allowNonTsExtensions", value.asInstanceOf[js.Any])
       

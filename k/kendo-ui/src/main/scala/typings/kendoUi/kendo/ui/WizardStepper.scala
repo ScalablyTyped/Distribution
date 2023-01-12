@@ -19,7 +19,8 @@ object WizardStepper {
     __obj.asInstanceOf[WizardStepper]
   }
   
-  extension [Self <: WizardStepper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WizardStepper] (val x: Self) extends AnyVal {
     
     inline def setIndicator(value: Boolean): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
     

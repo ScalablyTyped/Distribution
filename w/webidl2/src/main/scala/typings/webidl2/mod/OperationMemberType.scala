@@ -48,7 +48,8 @@ object OperationMemberType {
     __obj.asInstanceOf[OperationMemberType]
   }
   
-  extension [Self <: OperationMemberType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationMemberType] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Array[Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

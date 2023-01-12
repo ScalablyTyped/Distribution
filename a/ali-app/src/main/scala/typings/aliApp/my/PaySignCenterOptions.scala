@@ -19,7 +19,8 @@ object PaySignCenterOptions {
     __obj.asInstanceOf[PaySignCenterOptions]
   }
   
-  extension [Self <: PaySignCenterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaySignCenterOptions] (val x: Self) extends AnyVal {
     
     inline def setSignStr(value: String): Self = StObject.set(x, "signStr", value.asInstanceOf[js.Any])
   }

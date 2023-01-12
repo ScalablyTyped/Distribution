@@ -23,7 +23,8 @@ object InternetGatewayAttachment {
     __obj.asInstanceOf[InternetGatewayAttachment]
   }
   
-  extension [Self <: InternetGatewayAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InternetGatewayAttachment] (val x: Self) extends AnyVal {
     
     inline def setState(value: AttachmentStatus): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

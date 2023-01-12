@@ -63,7 +63,8 @@ object libCommonTypeDefinitionMod {
       __obj.asInstanceOf[TypeDefinitionMiddleware]
     }
     
-    extension [Self <: TypeDefinitionMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeDefinitionMiddleware] (val x: Self) extends AnyVal {
       
       inline def setProvideTypeDefinition(
         value: js.ThisFunction4[

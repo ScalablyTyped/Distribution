@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[ChunkInfo]
     }
     
-    extension [Self <: ChunkInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChunkInfo] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: BigInteger): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object mod {
       __obj.asInstanceOf[FormatOptions]
     }
     
-    extension [Self <: FormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String | Double | BigInteger): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

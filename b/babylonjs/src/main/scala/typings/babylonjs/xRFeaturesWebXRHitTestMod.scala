@@ -133,7 +133,8 @@ object xRFeaturesWebXRHitTestMod {
       __obj.asInstanceOf[IWebXRHitResult]
     }
     
-    extension [Self <: IWebXRHitResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebXRHitResult] (val x: Self) extends AnyVal {
       
       inline def setInputSource(value: XRInputSource): Self = StObject.set(x, "inputSource", value.asInstanceOf[js.Any])
       
@@ -198,7 +199,8 @@ object xRFeaturesWebXRHitTestMod {
       __obj.asInstanceOf[IWebXRHitTestOptions]
     }
     
-    extension [Self <: IWebXRHitTestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebXRHitTestOptions] (val x: Self) extends AnyVal {
       
       inline def setDisablePermanentHitTest(value: Boolean): Self = StObject.set(x, "disablePermanentHitTest", value.asInstanceOf[js.Any])
       

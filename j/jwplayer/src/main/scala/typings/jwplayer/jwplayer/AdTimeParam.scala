@@ -34,7 +34,8 @@ object AdTimeParam {
     __obj.asInstanceOf[AdTimeParam]
   }
   
-  extension [Self <: AdTimeParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdTimeParam] (val x: Self) extends AnyVal {
     
     inline def setClient(value: vast | googima): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

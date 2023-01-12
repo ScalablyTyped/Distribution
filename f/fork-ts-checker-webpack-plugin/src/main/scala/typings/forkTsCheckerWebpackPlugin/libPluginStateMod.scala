@@ -50,7 +50,8 @@ object libPluginStateMod {
       __obj.asInstanceOf[ForkTsCheckerWebpackPluginState]
     }
     
-    extension [Self <: ForkTsCheckerWebpackPluginState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForkTsCheckerWebpackPluginState] (val x: Self) extends AnyVal {
       
       inline def setAbortController(value: AbortController): Self = StObject.set(x, "abortController", value.asInstanceOf[js.Any])
       

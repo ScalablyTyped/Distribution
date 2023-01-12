@@ -19,7 +19,8 @@ object ICertificateTemplate {
     __obj.asInstanceOf[ICertificateTemplate]
   }
   
-  extension [Self <: ICertificateTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICertificateTemplate] (val x: Self) extends AnyVal {
     
     inline def setTemplateID(value: String): Self = StObject.set(x, "templateID", value.asInstanceOf[js.Any])
     

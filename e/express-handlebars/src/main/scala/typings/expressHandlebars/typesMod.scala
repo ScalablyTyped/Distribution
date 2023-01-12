@@ -44,7 +44,8 @@ object typesMod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setCompilerOptions(value: CompileOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
       
@@ -133,7 +134,8 @@ object typesMod {
       __obj.asInstanceOf[HandlebarsImport]
     }
     
-    extension [Self <: HandlebarsImport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandlebarsImport] (val x: Self) extends AnyVal {
       
       inline def setCompile(value: (/* input */ Any, /* options */ CompileOptions) => TemplateDelegate[Any]): Self = StObject.set(x, "compile", js.Any.fromFunction2(value))
       
@@ -158,7 +160,8 @@ object typesMod {
       __obj.asInstanceOf[PartialTemplateOptions]
     }
     
-    extension [Self <: PartialTemplateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTemplateOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -191,7 +194,8 @@ object typesMod {
       __obj.asInstanceOf[PartialsDirObject]
     }
     
-    extension [Self <: PartialsDirObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialsDirObject] (val x: Self) extends AnyVal {
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -234,7 +238,8 @@ object typesMod {
       __obj.asInstanceOf[RenderOptions]
     }
     
-    extension [Self <: RenderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -280,7 +285,8 @@ object typesMod {
       __obj.asInstanceOf[RenderViewOptions]
     }
     
-    extension [Self <: RenderViewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderViewOptions] (val x: Self) extends AnyVal {
       
       inline def setSettings(value: Views): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       

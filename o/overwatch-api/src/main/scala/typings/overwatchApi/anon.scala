@@ -49,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Assists]
     }
     
-    extension [Self <: Assists](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Assists] (val x: Self) extends AnyVal {
       
       inline def setAssists(value: QuickplayCompetitiveStats): Self = StObject.set(x, "assists", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object anon {
       __obj.asInstanceOf[Competitive]
     }
     
-    extension [Self <: Competitive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Competitive] (val x: Self) extends AnyVal {
       
       inline def setCompetitive(value: Draw): Self = StObject.set(x, "competitive", value.asInstanceOf[js.Any])
       
@@ -103,7 +105,8 @@ object anon {
       __obj.asInstanceOf[CompetitiveQuickplay]
     }
     
-    extension [Self <: CompetitiveQuickplay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompetitiveQuickplay] (val x: Self) extends AnyVal {
       
       inline def setCompetitive(value: Gameswon): Self = StObject.set(x, "competitive", value.asInstanceOf[js.Any])
       
@@ -126,7 +129,8 @@ object anon {
       __obj.asInstanceOf[Damage]
     }
     
-    extension [Self <: Damage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Damage] (val x: Self) extends AnyVal {
       
       inline def setDamage(value: Rank): Self = StObject.set(x, "damage", value.asInstanceOf[js.Any])
       
@@ -155,7 +159,8 @@ object anon {
       __obj.asInstanceOf[Draw]
     }
     
-    extension [Self <: Draw](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Draw] (val x: Self) extends AnyVal {
       
       inline def setDraw(value: Double): Self = StObject.set(x, "draw", value.asInstanceOf[js.Any])
       
@@ -197,7 +202,8 @@ object anon {
       __obj.asInstanceOf[Eliminationsperlife]
     }
     
-    extension [Self <: Eliminationsperlife](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Eliminationsperlife] (val x: Self) extends AnyVal {
       
       inline def setEliminations_per_life(value: js.Array[HeroElimsPerLife]): Self = StObject.set(x, "eliminations_per_life", value.asInstanceOf[js.Any])
       
@@ -253,7 +259,8 @@ object anon {
       __obj.asInstanceOf[Frame]
     }
     
-    extension [Self <: Frame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Frame] (val x: Self) extends AnyVal {
       
       inline def setFrame(value: String): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
@@ -300,7 +307,8 @@ object anon {
       __obj.asInstanceOf[Gameswon]
     }
     
-    extension [Self <: Gameswon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Gameswon] (val x: Self) extends AnyVal {
       
       inline def setEliminations_per_life(value: js.Array[HeroElimsPerLife]): Self = StObject.set(x, "eliminations_per_life", value.asInstanceOf[js.Any])
       
@@ -345,7 +353,8 @@ object anon {
       __obj.asInstanceOf[Played]
     }
     
-    extension [Self <: Played](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Played] (val x: Self) extends AnyVal {
       
       inline def setPlayed(value: Unit): Self = StObject.set(x, "played", value.asInstanceOf[js.Any])
       
@@ -366,7 +375,8 @@ object anon {
       __obj.asInstanceOf[Quickplay]
     }
     
-    extension [Self <: Quickplay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Quickplay] (val x: Self) extends AnyVal {
       
       inline def setCompetitive(value: String): Self = StObject.set(x, "competitive", value.asInstanceOf[js.Any])
       
@@ -387,7 +397,8 @@ object anon {
       __obj.asInstanceOf[Rank]
     }
     
-    extension [Self <: Rank](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rank] (val x: Self) extends AnyVal {
       
       inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
       

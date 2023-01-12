@@ -22,7 +22,8 @@ object R3DeclarePipeFacade {
     __obj.asInstanceOf[R3DeclarePipeFacade]
   }
   
-  extension [Self <: R3DeclarePipeFacade](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3DeclarePipeFacade] (val x: Self) extends AnyVal {
     
     inline def setIsStandalone(value: Boolean): Self = StObject.set(x, "isStandalone", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object CsmSettings {
     __obj.asInstanceOf[CsmSettings]
   }
   
-  extension [Self <: CsmSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CsmSettings] (val x: Self) extends AnyVal {
     
     inline def setRctokenAud(value: String): Self = StObject.set(x, "rctokenAud", value.asInstanceOf[js.Any])
     

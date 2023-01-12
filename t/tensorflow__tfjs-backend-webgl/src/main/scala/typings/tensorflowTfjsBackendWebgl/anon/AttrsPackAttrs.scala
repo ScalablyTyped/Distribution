@@ -23,7 +23,8 @@ object AttrsPackAttrs {
     __obj.asInstanceOf[AttrsPackAttrs]
   }
   
-  extension [Self <: AttrsPackAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsPackAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: PackAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

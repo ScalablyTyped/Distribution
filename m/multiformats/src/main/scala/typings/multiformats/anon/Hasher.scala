@@ -21,7 +21,8 @@ object Hasher {
     __obj.asInstanceOf[Hasher[T, Code, Alg]]
   }
   
-  extension [Self <: Hasher[?, ?, ?], T /* <: Any */, Code /* <: Double */, Alg /* <: Double */](x: Self & (Hasher[T, Code, Alg])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hasher[?, ?, ?], T /* <: Any */, Code /* <: Double */, Alg /* <: Double */] (val x: Self & (Hasher[T, Code, Alg])) extends AnyVal {
     
     inline def setCodec(value: BlockEncoder[Code, T]): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     

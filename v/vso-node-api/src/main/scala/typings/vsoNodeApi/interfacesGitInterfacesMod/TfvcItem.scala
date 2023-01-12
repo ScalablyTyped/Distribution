@@ -49,7 +49,8 @@ object TfvcItem {
     __obj.asInstanceOf[TfvcItem]
   }
   
-  extension [Self <: TfvcItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TfvcItem] (val x: Self) extends AnyVal {
     
     inline def setChangeDate(value: js.Date): Self = StObject.set(x, "changeDate", value.asInstanceOf[js.Any])
     

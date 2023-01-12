@@ -83,7 +83,8 @@ object GEView {
     __obj.asInstanceOf[GEView]
   }
   
-  extension [Self <: GEView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GEView] (val x: Self) extends AnyVal {
     
     inline def setCopyAsCamera(value: KmlAltitudeModeEnum => KmlCamera): Self = StObject.set(x, "copyAsCamera", js.Any.fromFunction1(value))
     

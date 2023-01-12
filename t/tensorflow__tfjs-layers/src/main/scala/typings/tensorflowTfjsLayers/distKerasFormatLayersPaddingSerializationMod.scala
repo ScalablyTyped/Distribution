@@ -36,7 +36,8 @@ object distKerasFormatLayersPaddingSerializationMod {
       __obj.asInstanceOf[ZeroPadding2DLayerConfig]
     }
     
-    extension [Self <: ZeroPadding2DLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZeroPadding2DLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setData_format(value: DataFormatSerialization): Self = StObject.set(x, "data_format", value.asInstanceOf[js.Any])
       

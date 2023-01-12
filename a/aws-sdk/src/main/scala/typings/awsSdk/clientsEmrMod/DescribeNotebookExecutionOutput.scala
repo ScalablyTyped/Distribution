@@ -18,7 +18,8 @@ object DescribeNotebookExecutionOutput {
     __obj.asInstanceOf[DescribeNotebookExecutionOutput]
   }
   
-  extension [Self <: DescribeNotebookExecutionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNotebookExecutionOutput] (val x: Self) extends AnyVal {
     
     inline def setNotebookExecution(value: NotebookExecution): Self = StObject.set(x, "NotebookExecution", value.asInstanceOf[js.Any])
     

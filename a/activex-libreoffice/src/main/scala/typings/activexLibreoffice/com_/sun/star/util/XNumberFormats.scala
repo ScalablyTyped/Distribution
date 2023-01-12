@@ -103,7 +103,8 @@ object XNumberFormats {
     __obj.asInstanceOf[XNumberFormats]
   }
   
-  extension [Self <: XNumberFormats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XNumberFormats] (val x: Self) extends AnyVal {
     
     inline def setAddNew(value: (String, Locale) => Double): Self = StObject.set(x, "addNew", js.Any.fromFunction2(value))
     

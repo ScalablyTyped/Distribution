@@ -40,7 +40,8 @@ object XTextField {
     __obj.asInstanceOf[XTextField]
   }
   
-  extension [Self <: XTextField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextField] (val x: Self) extends AnyVal {
     
     inline def setGetPresentation(value: Boolean => String): Self = StObject.set(x, "getPresentation", js.Any.fromFunction1(value))
   }

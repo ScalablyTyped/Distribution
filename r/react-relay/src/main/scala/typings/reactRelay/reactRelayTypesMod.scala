@@ -46,7 +46,8 @@ object reactRelayTypesMod {
       __obj.asInstanceOf[RefetchOptions]
     }
     
-    extension [Self <: RefetchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefetchOptions] (val x: Self) extends AnyVal {
       
       inline def setFetchPolicy(value: `store-or-network` | `network-only`): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object reactRelayTypesMod {
       __obj.asInstanceOf[RelayProp]
     }
     
-    extension [Self <: RelayProp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelayProp] (val x: Self) extends AnyVal {
       
       inline def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       

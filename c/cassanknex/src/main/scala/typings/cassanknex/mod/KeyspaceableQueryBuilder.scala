@@ -23,7 +23,8 @@ object KeyspaceableQueryBuilder {
     __obj.asInstanceOf[KeyspaceableQueryBuilder]
   }
   
-  extension [Self <: KeyspaceableQueryBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyspaceableQueryBuilder] (val x: Self) extends AnyVal {
     
     inline def setWithDurableWrites(value: Boolean => KeyspaceableQueryBuilder): Self = StObject.set(x, "withDurableWrites", js.Any.fromFunction1(value))
     

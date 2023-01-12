@@ -28,7 +28,8 @@ object DownloadDBLogFilePortionDetails {
     __obj.asInstanceOf[DownloadDBLogFilePortionDetails]
   }
   
-  extension [Self <: DownloadDBLogFilePortionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadDBLogFilePortionDetails] (val x: Self) extends AnyVal {
     
     inline def setAdditionalDataPending(value: Boolean): Self = StObject.set(x, "AdditionalDataPending", value.asInstanceOf[js.Any])
     

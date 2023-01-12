@@ -203,7 +203,8 @@ object mod {
       __obj.asInstanceOf[Datum]
     }
     
-    extension [Self <: Datum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Datum] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -228,7 +229,8 @@ object mod {
       __obj.asInstanceOf[DatumOptions]
     }
     
-    extension [Self <: DatumOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatumOptions] (val x: Self) extends AnyVal {
       
       inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
@@ -255,7 +257,8 @@ object mod {
       __obj.asInstanceOf[DeleteFileResult]
     }
     
-    extension [Self <: DeleteFileResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteFileResult] (val x: Self) extends AnyVal {
       
       inline def setExisted(value: Boolean): Self = StObject.set(x, "existed", value.asInstanceOf[js.Any])
       
@@ -276,7 +279,8 @@ object mod {
       __obj.asInstanceOf[EnsureDirectoryResult]
     }
     
-    extension [Self <: EnsureDirectoryResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnsureDirectoryResult] (val x: Self) extends AnyVal {
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     }
@@ -309,7 +313,8 @@ object mod {
       __obj.asInstanceOf[InitOptions]
     }
     
-    extension [Self <: InitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -362,7 +367,8 @@ object mod {
       __obj.asInstanceOf[WriteFileResult]
     }
     
-    extension [Self <: WriteFileResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteFileResult] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

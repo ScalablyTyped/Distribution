@@ -28,7 +28,8 @@ object ITabBar {
     __obj.asInstanceOf[ITabBar]
   }
   
-  extension [Self <: ITabBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITabBar] (val x: Self) extends AnyVal {
     
     inline def setActiveTab(value: Any): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
     

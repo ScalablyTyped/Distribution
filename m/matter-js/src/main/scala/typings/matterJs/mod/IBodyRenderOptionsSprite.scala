@@ -39,7 +39,8 @@ object IBodyRenderOptionsSprite {
     __obj.asInstanceOf[IBodyRenderOptionsSprite]
   }
   
-  extension [Self <: IBodyRenderOptionsSprite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBodyRenderOptionsSprite] (val x: Self) extends AnyVal {
     
     inline def setTexture(value: String): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
     

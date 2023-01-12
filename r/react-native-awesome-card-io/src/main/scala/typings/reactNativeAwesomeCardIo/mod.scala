@@ -94,7 +94,8 @@ object mod {
       __obj.asInstanceOf[CardDetails]
     }
     
-    extension [Self <: CardDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardDetails] (val x: Self) extends AnyVal {
       
       inline def setCardNumber(value: String): Self = StObject.set(x, "cardNumber", value.asInstanceOf[js.Any])
       
@@ -155,7 +156,8 @@ object mod {
       __obj.asInstanceOf[CardIOCommonProps]
     }
     
-    extension [Self <: CardIOCommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardIOCommonProps] (val x: Self) extends AnyVal {
       
       inline def setAllowFreelyRotatingCardGuide(value: Boolean): Self = StObject.set(x, "allowFreelyRotatingCardGuide", value.asInstanceOf[js.Any])
       
@@ -262,7 +264,8 @@ object mod {
       __obj.asInstanceOf[CardIOModuleProps]
     }
     
-    extension [Self <: CardIOModuleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardIOModuleProps] (val x: Self) extends AnyVal {
       
       inline def setDisableBlurWhenBackgrounding(value: Boolean): Self = StObject.set(x, "disableBlurWhenBackgrounding", value.asInstanceOf[js.Any])
       
@@ -335,7 +338,8 @@ object mod {
       __obj.asInstanceOf[CardIOViewProps]
     }
     
-    extension [Self <: CardIOViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardIOViewProps] (val x: Self) extends AnyVal {
       
       inline def setDidScanCard(value: CardDetails => Unit): Self = StObject.set(x, "didScanCard", js.Any.fromFunction1(value))
       

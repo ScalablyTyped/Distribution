@@ -23,7 +23,8 @@ object DetachLoadBalancersType {
     __obj.asInstanceOf[DetachLoadBalancersType]
   }
   
-  extension [Self <: DetachLoadBalancersType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetachLoadBalancersType] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object CreateVehicleRequest {
     __obj.asInstanceOf[CreateVehicleRequest]
   }
   
-  extension [Self <: CreateVehicleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVehicleRequest] (val x: Self) extends AnyVal {
     
     inline def setAssociationBehavior(value: VehicleAssociationBehavior): Self = StObject.set(x, "associationBehavior", value.asInstanceOf[js.Any])
     

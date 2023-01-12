@@ -20,7 +20,8 @@ object NotebookCounts {
     __obj.asInstanceOf[NotebookCounts]
   }
   
-  extension [Self <: NotebookCounts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookCounts] (val x: Self) extends AnyVal {
     
     inline def setNotebookCounts(value: Record[typings.evernote.mod.Types.Guid, Double]): Self = StObject.set(x, "notebookCounts", value.asInstanceOf[js.Any])
     

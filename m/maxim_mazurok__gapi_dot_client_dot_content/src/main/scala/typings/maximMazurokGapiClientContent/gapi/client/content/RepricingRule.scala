@@ -52,7 +52,8 @@ object RepricingRule {
     __obj.asInstanceOf[RepricingRule]
   }
   
-  extension [Self <: RepricingRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepricingRule] (val x: Self) extends AnyVal {
     
     inline def setCogsBasedRule(value: RepricingRuleCostOfGoodsSaleRule): Self = StObject.set(x, "cogsBasedRule", value.asInstanceOf[js.Any])
     

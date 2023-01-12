@@ -28,7 +28,8 @@ object MergeShardsInput {
     __obj.asInstanceOf[MergeShardsInput]
   }
   
-  extension [Self <: MergeShardsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergeShardsInput] (val x: Self) extends AnyVal {
     
     inline def setAdjacentShardToMerge(value: ShardId): Self = StObject.set(x, "AdjacentShardToMerge", value.asInstanceOf[js.Any])
     

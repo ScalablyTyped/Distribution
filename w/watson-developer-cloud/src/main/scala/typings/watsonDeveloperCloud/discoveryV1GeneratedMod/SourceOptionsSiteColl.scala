@@ -20,7 +20,8 @@ object SourceOptionsSiteColl {
     __obj.asInstanceOf[SourceOptionsSiteColl]
   }
   
-  extension [Self <: SourceOptionsSiteColl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceOptionsSiteColl] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

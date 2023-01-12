@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[Algorithm]
     }
     
-    extension [Self <: Algorithm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Algorithm] (val x: Self) extends AnyVal {
       
       inline def setGetPosition(value: (Double, Double, Double) => Double): Self = StObject.set(x, "getPosition", js.Any.fromFunction3(value))
       
@@ -59,7 +60,8 @@ object mod {
       __obj.asInstanceOf[Events]
     }
     
-    extension [Self <: Events](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
       
       inline def setGetNextHandlePosition(value: (/* handleIdx */ Double, /* percentPosition */ Double) => Double): Self = StObject.set(x, "getNextHandlePosition", js.Any.fromFunction2(value))
       
@@ -148,7 +150,8 @@ object mod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -233,7 +236,8 @@ object mod {
       __obj.asInstanceOf[PublicState]
     }
     
-    extension [Self <: PublicState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublicState] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       

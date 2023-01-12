@@ -28,7 +28,8 @@ object Fn {
     __obj.asInstanceOf[Fn]
   }
   
-  extension [Self <: Fn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fn] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

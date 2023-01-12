@@ -38,7 +38,8 @@ object DenyCustomRoutingTrafficRequest {
     __obj.asInstanceOf[DenyCustomRoutingTrafficRequest]
   }
   
-  extension [Self <: DenyCustomRoutingTrafficRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DenyCustomRoutingTrafficRequest] (val x: Self) extends AnyVal {
     
     inline def setDenyAllTrafficToEndpoint(value: GenericBoolean): Self = StObject.set(x, "DenyAllTrafficToEndpoint", value.asInstanceOf[js.Any])
     

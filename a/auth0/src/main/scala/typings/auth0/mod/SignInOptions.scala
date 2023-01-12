@@ -35,7 +35,8 @@ object SignInOptions {
     __obj.asInstanceOf[SignInOptions]
   }
   
-  extension [Self <: SignInOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignInOptions] (val x: Self) extends AnyVal {
     
     inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     

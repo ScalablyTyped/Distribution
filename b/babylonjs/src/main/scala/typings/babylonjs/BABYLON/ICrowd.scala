@@ -171,7 +171,8 @@ object ICrowd {
     __obj.asInstanceOf[ICrowd]
   }
   
-  extension [Self <: ICrowd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICrowd] (val x: Self) extends AnyVal {
     
     inline def setAddAgent(value: (Vector3, IAgentParameters, TransformNode) => Double): Self = StObject.set(x, "addAgent", js.Any.fromFunction3(value))
     

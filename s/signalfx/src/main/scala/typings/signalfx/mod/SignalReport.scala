@@ -19,7 +19,8 @@ object SignalReport {
     __obj.asInstanceOf[SignalReport]
   }
   
-  extension [Self <: SignalReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignalReport] (val x: Self) extends AnyVal {
     
     inline def setCounters(value: js.Array[SignalMetric]): Self = StObject.set(x, "counters", value.asInstanceOf[js.Any])
     

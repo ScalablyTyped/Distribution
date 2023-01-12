@@ -35,7 +35,8 @@ object FordFulkerson {
     __obj.asInstanceOf[FordFulkerson]
   }
   
-  extension [Self <: FordFulkerson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FordFulkerson] (val x: Self) extends AnyVal {
     
     inline def setEdgeTo(value: Any): Self = StObject.set(x, "edgeTo", value.asInstanceOf[js.Any])
     

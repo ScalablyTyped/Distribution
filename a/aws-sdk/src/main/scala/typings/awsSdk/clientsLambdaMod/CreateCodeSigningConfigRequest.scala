@@ -28,7 +28,8 @@ object CreateCodeSigningConfigRequest {
     __obj.asInstanceOf[CreateCodeSigningConfigRequest]
   }
   
-  extension [Self <: CreateCodeSigningConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCodeSigningConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setAllowedPublishers(value: AllowedPublishers): Self = StObject.set(x, "AllowedPublishers", value.asInstanceOf[js.Any])
     

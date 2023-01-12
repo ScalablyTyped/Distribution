@@ -23,7 +23,8 @@ object CommentsOnly {
     __obj.asInstanceOf[CommentsOnly]
   }
   
-  extension [Self <: CommentsOnly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentsOnly] (val x: Self) extends AnyVal {
     
     inline def setCommentsOnly(value: Boolean): Self = StObject.set(x, "commentsOnly", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object NotebookType {
     __obj.asInstanceOf[NotebookType]
   }
   
-  extension [Self <: NotebookType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookType] (val x: Self) extends AnyVal {
     
     inline def setNotebookType(value: String): Self = StObject.set(x, "notebookType", value.asInstanceOf[js.Any])
     

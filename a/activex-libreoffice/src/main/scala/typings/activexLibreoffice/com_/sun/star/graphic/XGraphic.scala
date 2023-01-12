@@ -47,7 +47,8 @@ object XGraphic {
     __obj.asInstanceOf[XGraphic]
   }
   
-  extension [Self <: XGraphic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGraphic] (val x: Self) extends AnyVal {
     
     inline def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     

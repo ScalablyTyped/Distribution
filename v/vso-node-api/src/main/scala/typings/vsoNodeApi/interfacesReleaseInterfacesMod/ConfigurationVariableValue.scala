@@ -23,7 +23,8 @@ object ConfigurationVariableValue {
     __obj.asInstanceOf[ConfigurationVariableValue]
   }
   
-  extension [Self <: ConfigurationVariableValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationVariableValue] (val x: Self) extends AnyVal {
     
     inline def setIsSecret(value: Boolean): Self = StObject.set(x, "isSecret", value.asInstanceOf[js.Any])
     

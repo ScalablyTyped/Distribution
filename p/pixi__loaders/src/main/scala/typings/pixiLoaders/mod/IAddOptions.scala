@@ -38,7 +38,8 @@ object IAddOptions {
     __obj.asInstanceOf[IAddOptions]
   }
   
-  extension [Self <: IAddOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAddOptions] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: /* resource */ LoaderResource => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     

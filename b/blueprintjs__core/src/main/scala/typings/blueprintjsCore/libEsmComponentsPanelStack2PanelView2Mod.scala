@@ -50,7 +50,8 @@ object libEsmComponentsPanelStack2PanelView2Mod {
       __obj.asInstanceOf[PanelView2Props[T]]
     }
     
-    extension [Self <: PanelView2Props[?], T /* <: Panel[js.Object] */](x: Self & PanelView2Props[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelView2Props[?], T /* <: Panel[js.Object] */] (val x: Self & PanelView2Props[T]) extends AnyVal {
       
       inline def setOnClose(value: T => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       

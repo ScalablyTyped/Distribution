@@ -151,7 +151,8 @@ object EmscriptenModule {
     __obj.asInstanceOf[EmscriptenModule]
   }
   
-  extension [Self <: EmscriptenModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmscriptenModule] (val x: Self) extends AnyVal {
     
     inline def setAddOnExit(value: js.Function0[Any] => Unit): Self = StObject.set(x, "addOnExit", js.Any.fromFunction1(value))
     

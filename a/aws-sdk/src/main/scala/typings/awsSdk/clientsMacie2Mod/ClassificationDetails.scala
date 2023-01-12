@@ -38,7 +38,8 @@ object ClassificationDetails {
     __obj.asInstanceOf[ClassificationDetails]
   }
   
-  extension [Self <: ClassificationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassificationDetails] (val x: Self) extends AnyVal {
     
     inline def setDetailedResultsLocation(value: string): Self = StObject.set(x, "detailedResultsLocation", value.asInstanceOf[js.Any])
     

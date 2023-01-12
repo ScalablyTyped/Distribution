@@ -22,7 +22,8 @@ object BaseheadOwner {
     __obj.asInstanceOf[BaseheadOwner]
   }
   
-  extension [Self <: BaseheadOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseheadOwner] (val x: Self) extends AnyVal {
     
     inline def setBasehead(value: String): Self = StObject.set(x, "basehead", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ContentApplicationjsonExpiryLimit {
     __obj.asInstanceOf[ContentApplicationjsonExpiryLimit]
   }
   
-  extension [Self <: ContentApplicationjsonExpiryLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonExpiryLimit] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonExpiryLimit): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

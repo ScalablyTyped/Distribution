@@ -23,7 +23,8 @@ object JobSample {
     __obj.asInstanceOf[JobSample]
   }
   
-  extension [Self <: JobSample](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobSample] (val x: Self) extends AnyVal {
     
     inline def setMode(value: SampleMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     

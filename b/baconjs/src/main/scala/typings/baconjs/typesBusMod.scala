@@ -90,7 +90,8 @@ object typesBusMod {
       __obj.asInstanceOf[Subscription[V]]
     }
     
-    extension [Self <: Subscription[?], V](x: Self & Subscription[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscription[?], V] (val x: Self & Subscription[V]) extends AnyVal {
       
       inline def setInput(value: typings.baconjs.typesObservableMod.default[V]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       

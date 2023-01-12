@@ -15,7 +15,8 @@ object IWebUIBackgroundTaskInstanceStatics {
     __obj.asInstanceOf[IWebUIBackgroundTaskInstanceStatics]
   }
   
-  extension [Self <: IWebUIBackgroundTaskInstanceStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebUIBackgroundTaskInstanceStatics] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: IWebUIBackgroundTaskInstance): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
   }

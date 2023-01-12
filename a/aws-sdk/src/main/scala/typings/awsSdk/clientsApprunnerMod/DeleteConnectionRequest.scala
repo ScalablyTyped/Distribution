@@ -18,7 +18,8 @@ object DeleteConnectionRequest {
     __obj.asInstanceOf[DeleteConnectionRequest]
   }
   
-  extension [Self <: DeleteConnectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteConnectionRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectionArn(value: AppRunnerResourceArn): Self = StObject.set(x, "ConnectionArn", value.asInstanceOf[js.Any])
   }

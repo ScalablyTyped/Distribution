@@ -57,7 +57,8 @@ object XUrlContainer {
     __obj.asInstanceOf[XUrlContainer]
   }
   
-  extension [Self <: XUrlContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUrlContainer] (val x: Self) extends AnyVal {
     
     inline def setAddUrl(value: (String, Boolean) => Unit): Self = StObject.set(x, "addUrl", js.Any.fromFunction2(value))
     

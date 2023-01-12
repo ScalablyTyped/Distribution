@@ -20,7 +20,8 @@ object TwitterTimelineWidgetCollectionDataSource {
     __obj.asInstanceOf[TwitterTimelineWidgetCollectionDataSource]
   }
   
-  extension [Self <: TwitterTimelineWidgetCollectionDataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TwitterTimelineWidgetCollectionDataSource] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

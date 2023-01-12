@@ -72,7 +72,8 @@ object typesTableCellContentMod {
       __obj.asInstanceOf[TableCellContentProps]
     }
     
-    extension [Self <: TableCellContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableCellContentProps] (val x: Self) extends AnyVal {
       
       inline def setHAlign(value: TableCellHorizontalAlignment): Self = StObject.set(x, "hAlign", value.asInstanceOf[js.Any])
       

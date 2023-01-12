@@ -26,7 +26,8 @@ object ReadonlyrenderManifesttap {
     __obj.asInstanceOf[ReadonlyrenderManifesttap]
   }
   
-  extension [Self <: ReadonlyrenderManifesttap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyrenderManifesttap] (val x: Self) extends AnyVal {
     
     inline def setHash(value: Tap): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

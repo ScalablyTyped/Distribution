@@ -15,7 +15,8 @@ object StartTrackingHeapObjectsParameterType {
     __obj.asInstanceOf[StartTrackingHeapObjectsParameterType]
   }
   
-  extension [Self <: StartTrackingHeapObjectsParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartTrackingHeapObjectsParameterType] (val x: Self) extends AnyVal {
     
     inline def setTrackAllocations(value: Boolean): Self = StObject.set(x, "trackAllocations", value.asInstanceOf[js.Any])
     

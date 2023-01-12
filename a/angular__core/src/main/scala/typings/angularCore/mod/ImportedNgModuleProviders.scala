@@ -15,7 +15,8 @@ object ImportedNgModuleProviders {
     __obj.asInstanceOf[ImportedNgModuleProviders]
   }
   
-  extension [Self <: ImportedNgModuleProviders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportedNgModuleProviders] (val x: Self) extends AnyVal {
     
     inline def setƟproviders(value: js.Array[Provider]): Self = StObject.set(x, "\u0275providers", value.asInstanceOf[js.Any])
     

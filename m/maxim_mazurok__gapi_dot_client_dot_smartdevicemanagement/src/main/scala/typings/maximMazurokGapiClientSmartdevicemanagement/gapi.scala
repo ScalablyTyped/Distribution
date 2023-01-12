@@ -44,7 +44,8 @@ object gapi {
           __obj.asInstanceOf[EnterprisesResource]
         }
         
-        extension [Self <: EnterprisesResource](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: EnterprisesResource] (val x: Self) extends AnyVal {
           
           inline def setDevices(value: DevicesResource): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
           
@@ -78,7 +79,8 @@ object gapi {
           __obj.asInstanceOf[GoogleHomeEnterpriseSdmV1Device]
         }
         
-        extension [Self <: GoogleHomeEnterpriseSdmV1Device](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleHomeEnterpriseSdmV1Device] (val x: Self) extends AnyVal {
           
           inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
@@ -119,7 +121,8 @@ object gapi {
           __obj.asInstanceOf[GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest]
         }
         
-        extension [Self <: GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest] (val x: Self) extends AnyVal {
           
           inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
           
@@ -147,7 +150,8 @@ object gapi {
           __obj.asInstanceOf[GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse]
         }
         
-        extension [Self <: GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse] (val x: Self) extends AnyVal {
           
           inline def setResults(
             value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
@@ -172,7 +176,8 @@ object gapi {
           __obj.asInstanceOf[GoogleHomeEnterpriseSdmV1ListDevicesResponse]
         }
         
-        extension [Self <: GoogleHomeEnterpriseSdmV1ListDevicesResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleHomeEnterpriseSdmV1ListDevicesResponse] (val x: Self) extends AnyVal {
           
           inline def setDevices(value: js.Array[GoogleHomeEnterpriseSdmV1Device]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
           
@@ -201,7 +206,8 @@ object gapi {
           __obj.asInstanceOf[GoogleHomeEnterpriseSdmV1ListRoomsResponse]
         }
         
-        extension [Self <: GoogleHomeEnterpriseSdmV1ListRoomsResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleHomeEnterpriseSdmV1ListRoomsResponse] (val x: Self) extends AnyVal {
           
           inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
@@ -230,7 +236,8 @@ object gapi {
           __obj.asInstanceOf[GoogleHomeEnterpriseSdmV1ListStructuresResponse]
         }
         
-        extension [Self <: GoogleHomeEnterpriseSdmV1ListStructuresResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleHomeEnterpriseSdmV1ListStructuresResponse] (val x: Self) extends AnyVal {
           
           inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
@@ -262,7 +269,8 @@ object gapi {
           __obj.asInstanceOf[GoogleHomeEnterpriseSdmV1ParentRelation]
         }
         
-        extension [Self <: GoogleHomeEnterpriseSdmV1ParentRelation](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleHomeEnterpriseSdmV1ParentRelation] (val x: Self) extends AnyVal {
           
           inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
           
@@ -291,7 +299,8 @@ object gapi {
           __obj.asInstanceOf[GoogleHomeEnterpriseSdmV1Room]
         }
         
-        extension [Self <: GoogleHomeEnterpriseSdmV1Room](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleHomeEnterpriseSdmV1Room] (val x: Self) extends AnyVal {
           
           inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
@@ -322,7 +331,8 @@ object gapi {
           __obj.asInstanceOf[GoogleHomeEnterpriseSdmV1Structure]
         }
         
-        extension [Self <: GoogleHomeEnterpriseSdmV1Structure](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleHomeEnterpriseSdmV1Structure] (val x: Self) extends AnyVal {
           
           inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           

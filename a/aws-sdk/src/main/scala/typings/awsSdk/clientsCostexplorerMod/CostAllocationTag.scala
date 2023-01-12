@@ -28,7 +28,8 @@ object CostAllocationTag {
     __obj.asInstanceOf[CostAllocationTag]
   }
   
-  extension [Self <: CostAllocationTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CostAllocationTag] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: CostAllocationTagStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

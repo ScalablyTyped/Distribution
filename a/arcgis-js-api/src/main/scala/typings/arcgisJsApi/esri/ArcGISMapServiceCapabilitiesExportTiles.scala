@@ -20,7 +20,8 @@ object ArcGISMapServiceCapabilitiesExportTiles {
     __obj.asInstanceOf[ArcGISMapServiceCapabilitiesExportTiles]
   }
   
-  extension [Self <: ArcGISMapServiceCapabilitiesExportTiles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcGISMapServiceCapabilitiesExportTiles] (val x: Self) extends AnyVal {
     
     inline def setMaxExportTilesCount(value: Double): Self = StObject.set(x, "maxExportTilesCount", value.asInstanceOf[js.Any])
   }

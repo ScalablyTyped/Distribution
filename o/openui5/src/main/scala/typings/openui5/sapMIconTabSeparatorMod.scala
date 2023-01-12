@@ -287,7 +287,8 @@ object sapMIconTabSeparatorMod {
       __obj.asInstanceOf[IconTabSeparatorSettings]
     }
     
-    extension [Self <: IconTabSeparatorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconTabSeparatorSettings] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       

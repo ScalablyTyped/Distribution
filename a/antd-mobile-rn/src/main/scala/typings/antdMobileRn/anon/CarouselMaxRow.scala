@@ -34,7 +34,8 @@ object CarouselMaxRow {
     __obj.asInstanceOf[CarouselMaxRow]
   }
   
-  extension [Self <: CarouselMaxRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CarouselMaxRow] (val x: Self) extends AnyVal {
     
     inline def setCarouselMaxRow(value: Double): Self = StObject.set(x, "carouselMaxRow", value.asInstanceOf[js.Any])
     

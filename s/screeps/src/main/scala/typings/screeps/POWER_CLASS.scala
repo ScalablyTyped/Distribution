@@ -16,7 +16,8 @@ object POWER_CLASS {
     __obj.asInstanceOf[POWER_CLASS]
   }
   
-  extension [Self <: POWER_CLASS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: POWER_CLASS] (val x: Self) extends AnyVal {
     
     inline def setOPERATOR(value: operator): Self = StObject.set(x, "OPERATOR", value.asInstanceOf[js.Any])
   }

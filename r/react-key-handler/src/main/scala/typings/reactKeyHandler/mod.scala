@@ -81,7 +81,8 @@ object mod {
       __obj.asInstanceOf[ReactKeyHandlerIntrinsicProps]
     }
     
-    extension [Self <: ReactKeyHandlerIntrinsicProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactKeyHandlerIntrinsicProps] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String | js.Array[String]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object mod {
       __obj.asInstanceOf[ReactKeyHandlerProps]
     }
     
-    extension [Self <: ReactKeyHandlerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactKeyHandlerProps] (val x: Self) extends AnyVal {
       
       inline def setOnKeyHandle(value: typings.react.mod.KeyboardEvent[typings.std.Element] => Unit): Self = StObject.set(x, "onKeyHandle", js.Any.fromFunction1(value))
     }

@@ -23,7 +23,8 @@ object PredictionExplanations {
     __obj.asInstanceOf[PredictionExplanations]
   }
   
-  extension [Self <: PredictionExplanations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredictionExplanations] (val x: Self) extends AnyVal {
     
     inline def setAggregatedVariablesImpactExplanations(value: ListOfAggregatedVariablesImpactExplanations): Self = StObject.set(x, "aggregatedVariablesImpactExplanations", value.asInstanceOf[js.Any])
     

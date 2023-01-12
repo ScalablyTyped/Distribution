@@ -43,7 +43,8 @@ object ImageLayerAggregationResponse {
     __obj.asInstanceOf[ImageLayerAggregationResponse]
   }
   
-  extension [Self <: ImageLayerAggregationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageLayerAggregationResponse] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object LegGeometry {
     __obj.asInstanceOf[LegGeometry]
   }
   
-  extension [Self <: LegGeometry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegGeometry] (val x: Self) extends AnyVal {
     
     inline def setLineString(value: LineString): Self = StObject.set(x, "LineString", value.asInstanceOf[js.Any])
     

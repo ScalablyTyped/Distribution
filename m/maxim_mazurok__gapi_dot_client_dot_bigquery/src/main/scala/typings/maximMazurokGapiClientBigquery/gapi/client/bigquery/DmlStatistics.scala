@@ -22,7 +22,8 @@ object DmlStatistics {
     __obj.asInstanceOf[DmlStatistics]
   }
   
-  extension [Self <: DmlStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DmlStatistics] (val x: Self) extends AnyVal {
     
     inline def setDeletedRowCount(value: String): Self = StObject.set(x, "deletedRowCount", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object IStreamedFileDataRequest {
     __obj.asInstanceOf[IStreamedFileDataRequest]
   }
   
-  extension [Self <: IStreamedFileDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStreamedFileDataRequest] (val x: Self) extends AnyVal {
     
     inline def setFailAndClose(value: StreamedFileFailureMode => Unit): Self = StObject.set(x, "failAndClose", js.Any.fromFunction1(value))
   }

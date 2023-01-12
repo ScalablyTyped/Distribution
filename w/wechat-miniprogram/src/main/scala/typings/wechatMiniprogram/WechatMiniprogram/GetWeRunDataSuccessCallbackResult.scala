@@ -26,7 +26,8 @@ object GetWeRunDataSuccessCallbackResult {
     __obj.asInstanceOf[GetWeRunDataSuccessCallbackResult]
   }
   
-  extension [Self <: GetWeRunDataSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWeRunDataSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setCloudID(value: String): Self = StObject.set(x, "cloudID", value.asInstanceOf[js.Any])
     

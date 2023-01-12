@@ -167,7 +167,8 @@ object CoreChartOptions {
     __obj.asInstanceOf[CoreChartOptions[TType]]
   }
   
-  extension [Self <: CoreChartOptions[?], TType /* <: ChartType */](x: Self & CoreChartOptions[TType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreChartOptions[?], TType /* <: ChartType */] (val x: Self & CoreChartOptions[TType]) extends AnyVal {
     
     inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     

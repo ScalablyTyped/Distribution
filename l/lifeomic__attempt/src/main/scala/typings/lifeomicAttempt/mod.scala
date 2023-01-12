@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[AttemptContext]
     }
     
-    extension [Self <: AttemptContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttemptContext] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
@@ -90,7 +91,8 @@ object mod {
       __obj.asInstanceOf[AttemptOptions[T]]
     }
     
-    extension [Self <: AttemptOptions[?], T](x: Self & AttemptOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttemptOptions[?], T] (val x: Self & AttemptOptions[T]) extends AnyVal {
       
       inline def setBeforeAttempt(value: (/* context */ AttemptContext, /* options */ AttemptOptions[T]) => Unit): Self = StObject.set(x, "beforeAttempt", js.Any.fromFunction2(value))
       
@@ -175,7 +177,8 @@ object mod {
       __obj.asInstanceOf[PartialAttemptOptions[T]]
     }
     
-    extension [Self <: PartialAttemptOptions[?], T](x: Self & PartialAttemptOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialAttemptOptions[?], T] (val x: Self & PartialAttemptOptions[T]) extends AnyVal {
       
       inline def setBeforeAttempt(value: (/* context */ AttemptContext, /* options */ AttemptOptions[T]) => Unit): Self = StObject.set(x, "beforeAttempt", js.Any.fromFunction2(value))
       

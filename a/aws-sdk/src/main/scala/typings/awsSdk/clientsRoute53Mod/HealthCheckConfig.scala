@@ -103,7 +103,8 @@ object HealthCheckConfig {
     __obj.asInstanceOf[HealthCheckConfig]
   }
   
-  extension [Self <: HealthCheckConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HealthCheckConfig] (val x: Self) extends AnyVal {
     
     inline def setAlarmIdentifier(value: AlarmIdentifier): Self = StObject.set(x, "AlarmIdentifier", value.asInstanceOf[js.Any])
     

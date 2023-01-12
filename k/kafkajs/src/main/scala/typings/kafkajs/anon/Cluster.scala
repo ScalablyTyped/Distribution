@@ -20,7 +20,8 @@ object Cluster {
     __obj.asInstanceOf[Cluster]
   }
   
-  extension [Self <: Cluster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cluster] (val x: Self) extends AnyVal {
     
     inline def setCluster(value: typings.kafkajs.mod.Cluster): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     

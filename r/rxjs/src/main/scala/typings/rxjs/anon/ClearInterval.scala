@@ -25,7 +25,8 @@ object ClearInterval {
     __obj.asInstanceOf[ClearInterval]
   }
   
-  extension [Self <: ClearInterval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearInterval] (val x: Self) extends AnyVal {
     
     inline def setClearInterval(value: /* handle */ TimerHandle => Unit): Self = StObject.set(x, "clearInterval", js.Any.fromFunction1(value))
     

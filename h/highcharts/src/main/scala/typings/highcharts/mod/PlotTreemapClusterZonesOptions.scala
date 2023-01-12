@@ -35,7 +35,8 @@ object PlotTreemapClusterZonesOptions {
     __obj.asInstanceOf[PlotTreemapClusterZonesOptions]
   }
   
-  extension [Self <: PlotTreemapClusterZonesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTreemapClusterZonesOptions] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

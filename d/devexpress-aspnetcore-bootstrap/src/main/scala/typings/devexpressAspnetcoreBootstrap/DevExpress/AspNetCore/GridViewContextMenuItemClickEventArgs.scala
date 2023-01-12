@@ -33,7 +33,8 @@ object GridViewContextMenuItemClickEventArgs {
     __obj.asInstanceOf[GridViewContextMenuItemClickEventArgs]
   }
   
-  extension [Self <: GridViewContextMenuItemClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridViewContextMenuItemClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setElementIndex(value: Double): Self = StObject.set(x, "elementIndex", value.asInstanceOf[js.Any])
     

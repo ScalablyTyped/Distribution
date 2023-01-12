@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsLockBoldSmallMod extends Sh
       __obj.asInstanceOf[LockBoldSmallProps]
     }
     
-    extension [Self <: LockBoldSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LockBoldSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

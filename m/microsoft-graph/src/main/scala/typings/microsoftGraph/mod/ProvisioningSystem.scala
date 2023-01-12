@@ -18,7 +18,8 @@ object ProvisioningSystem {
     __obj.asInstanceOf[ProvisioningSystem]
   }
   
-  extension [Self <: ProvisioningSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisioningSystem] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: NullableOption[DetailsInfo]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

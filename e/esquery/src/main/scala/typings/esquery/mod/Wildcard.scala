@@ -25,7 +25,8 @@ object Wildcard {
     __obj.asInstanceOf[Wildcard]
   }
   
-  extension [Self <: Wildcard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Wildcard] (val x: Self) extends AnyVal {
     
     inline def setType(value: wildcard): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

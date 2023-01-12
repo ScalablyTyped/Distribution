@@ -16,7 +16,8 @@ object PrivateKeyBytes {
     __obj.asInstanceOf[PrivateKeyBytes]
   }
   
-  extension [Self <: PrivateKeyBytes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivateKeyBytes] (val x: Self) extends AnyVal {
     
     inline def setPrivateKeyBytes(value: NativeBuffer): Self = StObject.set(x, "privateKeyBytes", value.asInstanceOf[js.Any])
   }

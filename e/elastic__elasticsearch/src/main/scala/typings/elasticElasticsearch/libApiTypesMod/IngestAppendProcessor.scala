@@ -21,7 +21,8 @@ object IngestAppendProcessor {
     __obj.asInstanceOf[IngestAppendProcessor]
   }
   
-  extension [Self <: IngestAppendProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestAppendProcessor] (val x: Self) extends AnyVal {
     
     inline def setAllow_duplicates(value: Boolean): Self = StObject.set(x, "allow_duplicates", value.asInstanceOf[js.Any])
     

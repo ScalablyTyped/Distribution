@@ -18,7 +18,8 @@ object ReturnValueNumber {
     __obj.asInstanceOf[ReturnValueNumber]
   }
   
-  extension [Self <: ReturnValueNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnValueNumber] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[ResourceQualifier]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

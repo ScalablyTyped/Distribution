@@ -15,7 +15,8 @@ object IInputPaneStatics {
     __obj.asInstanceOf[IInputPaneStatics]
   }
   
-  extension [Self <: IInputPaneStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInputPaneStatics] (val x: Self) extends AnyVal {
     
     inline def setGetForCurrentView(value: () => InputPane): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
   }

@@ -17,7 +17,8 @@ object SliderChangeEvent {
     __obj.asInstanceOf[SliderChangeEvent]
   }
   
-  extension [Self <: SliderChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

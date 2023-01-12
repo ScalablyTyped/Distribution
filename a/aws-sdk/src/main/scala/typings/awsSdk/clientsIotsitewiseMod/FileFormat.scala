@@ -18,7 +18,8 @@ object FileFormat {
     __obj.asInstanceOf[FileFormat]
   }
   
-  extension [Self <: FileFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileFormat] (val x: Self) extends AnyVal {
     
     inline def setCsv(value: Csv): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
     

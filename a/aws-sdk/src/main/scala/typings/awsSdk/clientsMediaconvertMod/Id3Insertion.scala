@@ -23,7 +23,8 @@ object Id3Insertion {
     __obj.asInstanceOf[Id3Insertion]
   }
   
-  extension [Self <: Id3Insertion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Id3Insertion] (val x: Self) extends AnyVal {
     
     inline def setId3(value: stringPatternAZaZ0902): Self = StObject.set(x, "Id3", value.asInstanceOf[js.Any])
     

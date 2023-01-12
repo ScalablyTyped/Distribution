@@ -16,7 +16,8 @@ object IUInt64Value {
     __obj.asInstanceOf[IUInt64Value]
   }
   
-  extension [Self <: IUInt64Value](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUInt64Value] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

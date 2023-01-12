@@ -82,7 +82,8 @@ object distPrngMod {
       __obj.asInstanceOf[PRNG]
     }
     
-    extension [Self <: PRNG](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PRNG] (val x: Self) extends AnyVal {
       
       inline def setNext(value: () => Double): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     }

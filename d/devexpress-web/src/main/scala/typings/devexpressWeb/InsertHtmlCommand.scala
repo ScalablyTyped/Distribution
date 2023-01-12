@@ -24,7 +24,8 @@ object InsertHtmlCommand {
     __obj.asInstanceOf[InsertHtmlCommand]
   }
   
-  extension [Self <: InsertHtmlCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertHtmlCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: String => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
   }

@@ -24,7 +24,8 @@ object TsTypeAssertion {
     __obj.asInstanceOf[TsTypeAssertion]
   }
   
-  extension [Self <: TsTypeAssertion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TsTypeAssertion] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

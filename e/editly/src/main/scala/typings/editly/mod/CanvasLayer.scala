@@ -34,7 +34,8 @@ object CanvasLayer {
     __obj.asInstanceOf[CanvasLayer]
   }
   
-  extension [Self <: CanvasLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasLayer] (val x: Self) extends AnyVal {
     
     inline def setFunc(value: /* args */ CustomCanvasFunctionArgs => OptionalPromise[CustomFunctionCallbacks]): Self = StObject.set(x, "func", js.Any.fromFunction1(value))
     

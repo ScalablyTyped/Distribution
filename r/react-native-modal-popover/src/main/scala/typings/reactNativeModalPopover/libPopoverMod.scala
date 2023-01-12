@@ -135,7 +135,8 @@ object libPopoverMod {
       __obj.asInstanceOf[PopoverProps]
     }
     
-    extension [Self <: PopoverProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverProps] (val x: Self) extends AnyVal {
       
       inline def setArrowSize(value: Size): Self = StObject.set(x, "arrowSize", value.asInstanceOf[js.Any])
       
@@ -238,7 +239,8 @@ object libPopoverMod {
       __obj.asInstanceOf[PopoverState]
     }
     
-    extension [Self <: PopoverState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverState] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Value): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

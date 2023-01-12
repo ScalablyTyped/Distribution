@@ -29,7 +29,8 @@ object ReadonlyDepthMode {
     __obj.asInstanceOf[ReadonlyDepthMode]
   }
   
-  extension [Self <: ReadonlyDepthMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyDepthMode] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: Any): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

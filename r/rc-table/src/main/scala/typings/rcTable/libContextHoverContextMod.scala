@@ -27,7 +27,8 @@ object libContextHoverContextMod extends Shortcut {
       __obj.asInstanceOf[HoverContextProps]
     }
     
-    extension [Self <: HoverContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HoverContextProps] (val x: Self) extends AnyVal {
       
       inline def setEndRow(value: Double): Self = StObject.set(x, "endRow", value.asInstanceOf[js.Any])
       

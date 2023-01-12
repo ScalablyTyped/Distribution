@@ -19,7 +19,8 @@ object Detection {
     __obj.asInstanceOf[Detection]
   }
   
-  extension [Self <: Detection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Detection] (val x: Self) extends AnyVal {
     
     inline def setBinary(value: String): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object LayoutInfo {
     __obj.asInstanceOf[LayoutInfo]
   }
   
-  extension [Self <: LayoutInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutInfo] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

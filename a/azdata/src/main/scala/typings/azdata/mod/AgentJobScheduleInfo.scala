@@ -68,7 +68,8 @@ object AgentJobScheduleInfo {
     __obj.asInstanceOf[AgentJobScheduleInfo]
   }
   
-  extension [Self <: AgentJobScheduleInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentJobScheduleInfo] (val x: Self) extends AnyVal {
     
     inline def setActiveEndDate(value: String): Self = StObject.set(x, "activeEndDate", value.asInstanceOf[js.Any])
     

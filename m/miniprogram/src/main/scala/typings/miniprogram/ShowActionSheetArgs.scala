@@ -25,7 +25,8 @@ object ShowActionSheetArgs {
     __obj.asInstanceOf[ShowActionSheetArgs]
   }
   
-  extension [Self <: ShowActionSheetArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowActionSheetArgs] (val x: Self) extends AnyVal {
     
     inline def setBadges(value: js.Array[Badge]): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
     

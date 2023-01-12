@@ -36,7 +36,8 @@ object JSTreeStaticDefaultsUnique {
     __obj.asInstanceOf[JSTreeStaticDefaultsUnique]
   }
   
-  extension [Self <: JSTreeStaticDefaultsUnique](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSTreeStaticDefaultsUnique] (val x: Self) extends AnyVal {
     
     inline def setCase_sensitive(value: Boolean): Self = StObject.set(x, "case_sensitive", value.asInstanceOf[js.Any])
     

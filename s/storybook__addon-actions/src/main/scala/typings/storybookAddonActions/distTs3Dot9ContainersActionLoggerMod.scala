@@ -46,7 +46,8 @@ object distTs3Dot9ContainersActionLoggerMod {
       __obj.asInstanceOf[ActionLoggerProps]
     }
     
-    extension [Self <: ActionLoggerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionLoggerProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object distTs3Dot9ContainersActionLoggerMod {
       __obj.asInstanceOf[ActionLoggerState]
     }
     
-    extension [Self <: ActionLoggerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionLoggerState] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[ActionDisplay]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

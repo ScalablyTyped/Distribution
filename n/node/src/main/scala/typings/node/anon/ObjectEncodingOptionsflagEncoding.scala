@@ -19,7 +19,8 @@ object ObjectEncodingOptionsflagEncoding {
     __obj.asInstanceOf[ObjectEncodingOptionsflagEncoding]
   }
   
-  extension [Self <: ObjectEncodingOptionsflagEncoding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectEncodingOptionsflagEncoding] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

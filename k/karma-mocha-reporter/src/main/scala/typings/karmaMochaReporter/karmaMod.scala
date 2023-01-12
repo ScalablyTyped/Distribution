@@ -26,7 +26,8 @@ object karmaMod {
       __obj.asInstanceOf[ColorOptions]
     }
     
-    extension [Self <: ColorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorOptions] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object karmaMod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setMochaReporter(value: MochaReporterOptions): Self = StObject.set(x, "mochaReporter", value.asInstanceOf[js.Any])
       
@@ -125,7 +127,8 @@ object karmaMod {
       __obj.asInstanceOf[MochaReporterOptions]
     }
     
-    extension [Self <: MochaReporterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MochaReporterOptions] (val x: Self) extends AnyVal {
       
       inline def setColors(value: ColorOptions): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -230,7 +233,8 @@ object karmaMod {
       __obj.asInstanceOf[SymbolOptions]
     }
     
-    extension [Self <: SymbolOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SymbolOptions] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

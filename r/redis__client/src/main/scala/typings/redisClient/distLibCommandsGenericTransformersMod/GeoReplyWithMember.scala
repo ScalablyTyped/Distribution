@@ -22,7 +22,8 @@ object GeoReplyWithMember {
     __obj.asInstanceOf[GeoReplyWithMember]
   }
   
-  extension [Self <: GeoReplyWithMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoReplyWithMember] (val x: Self) extends AnyVal {
     
     inline def setCoordinates(value: Latitude): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     

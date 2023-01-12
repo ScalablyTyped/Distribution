@@ -17,7 +17,8 @@ object PopcornManifest {
     __obj.asInstanceOf[PopcornManifest]
   }
   
-  extension [Self <: PopcornManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopcornManifest] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: PopcornManifestAbout): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

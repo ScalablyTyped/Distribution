@@ -22,7 +22,8 @@ object typesStorageClassAnalysisMod {
       __obj.asInstanceOf[StorageClassAnalysis]
     }
     
-    extension [Self <: StorageClassAnalysis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageClassAnalysis] (val x: Self) extends AnyVal {
       
       inline def setDataExport(value: StorageClassAnalysisDataExport): Self = StObject.set(x, "DataExport", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object typesStorageClassAnalysisMod {
       __obj.asInstanceOf[UnmarshalledStorageClassAnalysis]
     }
     
-    extension [Self <: UnmarshalledStorageClassAnalysis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledStorageClassAnalysis] (val x: Self) extends AnyVal {
       
       inline def setDataExport(value: UnmarshalledStorageClassAnalysisDataExport): Self = StObject.set(x, "DataExport", value.asInstanceOf[js.Any])
       

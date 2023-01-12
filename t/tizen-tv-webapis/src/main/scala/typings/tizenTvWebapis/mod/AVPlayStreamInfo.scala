@@ -20,7 +20,8 @@ object AVPlayStreamInfo {
     __obj.asInstanceOf[AVPlayStreamInfo]
   }
   
-  extension [Self <: AVPlayStreamInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AVPlayStreamInfo] (val x: Self) extends AnyVal {
     
     inline def setExtra_info(value: String): Self = StObject.set(x, "extra_info", value.asInstanceOf[js.Any])
     

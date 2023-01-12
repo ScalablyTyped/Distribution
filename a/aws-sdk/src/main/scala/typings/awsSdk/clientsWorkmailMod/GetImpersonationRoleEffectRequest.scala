@@ -32,7 +32,8 @@ object GetImpersonationRoleEffectRequest {
     __obj.asInstanceOf[GetImpersonationRoleEffectRequest]
   }
   
-  extension [Self <: GetImpersonationRoleEffectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetImpersonationRoleEffectRequest] (val x: Self) extends AnyVal {
     
     inline def setImpersonationRoleId(value: ImpersonationRoleId): Self = StObject.set(x, "ImpersonationRoleId", value.asInstanceOf[js.Any])
     

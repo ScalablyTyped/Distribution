@@ -15,7 +15,8 @@ object DiagramConnectionHoverStroke {
     __obj.asInstanceOf[DiagramConnectionHoverStroke]
   }
   
-  extension [Self <: DiagramConnectionHoverStroke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramConnectionHoverStroke] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListDetectorsResponse {
     __obj.asInstanceOf[ListDetectorsResponse]
   }
   
-  extension [Self <: ListDetectorsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDetectorsResponse] (val x: Self) extends AnyVal {
     
     inline def setDetectorIds(value: DetectorIds): Self = StObject.set(x, "DetectorIds", value.asInstanceOf[js.Any])
     

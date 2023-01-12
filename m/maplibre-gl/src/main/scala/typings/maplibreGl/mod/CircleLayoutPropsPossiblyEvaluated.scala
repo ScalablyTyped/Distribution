@@ -16,7 +16,8 @@ object CircleLayoutPropsPossiblyEvaluated {
     __obj.asInstanceOf[CircleLayoutPropsPossiblyEvaluated]
   }
   
-  extension [Self <: CircleLayoutPropsPossiblyEvaluated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircleLayoutPropsPossiblyEvaluated] (val x: Self) extends AnyVal {
     
     inline def `setCircle-sort-key`(value: PossiblyEvaluatedPropertyValue[Double]): Self = StObject.set(x, "circle-sort-key", value.asInstanceOf[js.Any])
   }

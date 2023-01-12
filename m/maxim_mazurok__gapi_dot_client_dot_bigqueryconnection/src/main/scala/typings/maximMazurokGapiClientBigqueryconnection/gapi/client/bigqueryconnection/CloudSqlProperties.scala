@@ -31,7 +31,8 @@ object CloudSqlProperties {
     __obj.asInstanceOf[CloudSqlProperties]
   }
   
-  extension [Self <: CloudSqlProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudSqlProperties] (val x: Self) extends AnyVal {
     
     inline def setCredential(value: CloudSqlCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     

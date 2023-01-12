@@ -25,7 +25,8 @@ object ExportTemplateRequest {
     __obj.asInstanceOf[ExportTemplateRequest]
   }
   
-  extension [Self <: ExportTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

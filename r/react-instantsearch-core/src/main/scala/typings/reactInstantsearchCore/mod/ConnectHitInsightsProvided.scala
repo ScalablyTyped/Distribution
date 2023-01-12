@@ -22,7 +22,8 @@ object ConnectHitInsightsProvided {
     __obj.asInstanceOf[ConnectHitInsightsProvided]
   }
   
-  extension [Self <: ConnectHitInsightsProvided](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectHitInsightsProvided] (val x: Self) extends AnyVal {
     
     inline def setHit(value: HitBasicDoc): Self = StObject.set(x, "hit", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object PreflightDeviceDataCollector {
     __obj.asInstanceOf[PreflightDeviceDataCollector]
   }
   
-  extension [Self <: PreflightDeviceDataCollector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreflightDeviceDataCollector] (val x: Self) extends AnyVal {
     
     inline def setPreflightDeviceDataCollector(value: Boolean): Self = StObject.set(x, "preflightDeviceDataCollector", value.asInstanceOf[js.Any])
     

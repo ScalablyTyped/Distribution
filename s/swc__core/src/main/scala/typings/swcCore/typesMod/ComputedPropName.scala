@@ -24,7 +24,8 @@ object ComputedPropName {
     __obj.asInstanceOf[ComputedPropName]
   }
   
-  extension [Self <: ComputedPropName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputedPropName] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

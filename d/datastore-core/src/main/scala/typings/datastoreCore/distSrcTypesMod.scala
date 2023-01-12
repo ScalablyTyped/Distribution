@@ -25,7 +25,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[KeyTransform]
     }
     
-    extension [Self <: KeyTransform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyTransform] (val x: Self) extends AnyVal {
       
       inline def setConvert(value: Key => Key): Self = StObject.set(x, "convert", js.Any.fromFunction1(value))
       
@@ -50,7 +51,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[Shard]
     }
     
-    extension [Self <: Shard](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Shard] (val x: Self) extends AnyVal {
       
       inline def setFun(value: String => String): Self = StObject.set(x, "fun", js.Any.fromFunction1(value))
       

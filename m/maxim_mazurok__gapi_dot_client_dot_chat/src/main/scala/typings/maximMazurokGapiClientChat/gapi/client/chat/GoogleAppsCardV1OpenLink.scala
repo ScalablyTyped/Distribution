@@ -22,7 +22,8 @@ object GoogleAppsCardV1OpenLink {
     __obj.asInstanceOf[GoogleAppsCardV1OpenLink]
   }
   
-  extension [Self <: GoogleAppsCardV1OpenLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsCardV1OpenLink] (val x: Self) extends AnyVal {
     
     inline def setOnClose(value: String): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object libGeometryMod {
       __obj.asInstanceOf[IGemo]
     }
     
-    extension [Self <: IGemo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGemo] (val x: Self) extends AnyVal {
       
       inline def setType(value: area | edge | heatmap | interval | line | point | polygon | `line-advance`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

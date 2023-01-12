@@ -21,7 +21,8 @@ object QueryClientConfig {
     __obj.asInstanceOf[QueryClientConfig]
   }
   
-  extension [Self <: QueryClientConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryClientConfig] (val x: Self) extends AnyVal {
     
     inline def setDefaultOptions(value: DefaultOptions[Any]): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
     

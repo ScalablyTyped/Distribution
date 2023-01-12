@@ -23,7 +23,8 @@ object JobManifest {
     __obj.asInstanceOf[JobManifest]
   }
   
-  extension [Self <: JobManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobManifest] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: JobManifestLocation): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     

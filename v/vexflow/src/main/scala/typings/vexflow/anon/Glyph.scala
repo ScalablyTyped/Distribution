@@ -17,7 +17,8 @@ object Glyph {
     __obj.asInstanceOf[Glyph]
   }
   
-  extension [Self <: Glyph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Glyph] (val x: Self) extends AnyVal {
     
     inline def setGlyph(value: typings.vexflow.Vex.Flow.Glyph): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
     

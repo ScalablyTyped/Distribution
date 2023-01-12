@@ -83,7 +83,8 @@ object Rave {
     __obj.asInstanceOf[Rave]
   }
   
-  extension [Self <: Rave](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rave] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: Account): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     

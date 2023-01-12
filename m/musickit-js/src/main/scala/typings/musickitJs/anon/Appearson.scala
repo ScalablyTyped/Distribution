@@ -32,7 +32,8 @@ object Appearson {
     __obj.asInstanceOf[Appearson]
   }
   
-  extension [Self <: Appearson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Appearson] (val x: Self) extends AnyVal {
     
     inline def `setAppears-on`(value: View[typings.musickitJs.MusicKit.Playlists]): Self = StObject.set(x, "appears-on", value.asInstanceOf[js.Any])
     

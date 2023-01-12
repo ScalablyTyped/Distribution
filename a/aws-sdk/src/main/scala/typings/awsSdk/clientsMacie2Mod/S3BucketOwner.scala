@@ -23,7 +23,8 @@ object S3BucketOwner {
     __obj.asInstanceOf[S3BucketOwner]
   }
   
-  extension [Self <: S3BucketOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3BucketOwner] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: string): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object Fields {
       __obj.asInstanceOf[CreateUserField]
     }
     
-    extension [Self <: CreateUserField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateUserField] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
@@ -94,7 +95,8 @@ object Fields {
       __obj.asInstanceOf[UserField]
     }
     
-    extension [Self <: UserField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserField] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

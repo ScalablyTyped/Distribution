@@ -23,7 +23,8 @@ object RelationArgument {
     __obj.asInstanceOf[RelationArgument]
   }
   
-  extension [Self <: RelationArgument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationArgument] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: js.Array[RelationEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     

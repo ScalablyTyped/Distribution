@@ -33,7 +33,8 @@ object typesModulesThumbsMod {
       __obj.asInstanceOf[ThumbsMethods]
     }
     
-    extension [Self <: ThumbsMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThumbsMethods] (val x: Self) extends AnyVal {
       
       inline def setInit(value: () => Boolean): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
       
@@ -87,7 +88,8 @@ object typesModulesThumbsMod {
       __obj.asInstanceOf[ThumbsOptions]
     }
     
-    extension [Self <: ThumbsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThumbsOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoScrollOffset(value: Double): Self = StObject.set(x, "autoScrollOffset", value.asInstanceOf[js.Any])
       

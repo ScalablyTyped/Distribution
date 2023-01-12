@@ -50,7 +50,8 @@ object libStorageIcryptostorageproviderMod {
       __obj.asInstanceOf[ICryptoStorageProvider]
     }
     
-    extension [Self <: ICryptoStorageProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICryptoStorageProvider] (val x: Self) extends AnyVal {
       
       inline def setGetDeviceId(value: () => js.Promise[String]): Self = StObject.set(x, "getDeviceId", js.Any.fromFunction0(value))
       

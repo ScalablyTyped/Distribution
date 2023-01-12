@@ -154,7 +154,8 @@ object XSQLQueryComposer {
     __obj.asInstanceOf[XSQLQueryComposer]
   }
   
-  extension [Self <: XSQLQueryComposer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSQLQueryComposer] (val x: Self) extends AnyVal {
     
     inline def setAppendFilterByColumn(value: XPropertySet => Unit): Self = StObject.set(x, "appendFilterByColumn", js.Any.fromFunction1(value))
     

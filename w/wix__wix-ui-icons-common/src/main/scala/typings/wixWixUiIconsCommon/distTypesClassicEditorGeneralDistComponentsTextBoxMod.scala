@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsTextBoxMod extends Shortcut {
       __obj.asInstanceOf[TextBoxProps]
     }
     
-    extension [Self <: TextBoxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextBoxProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

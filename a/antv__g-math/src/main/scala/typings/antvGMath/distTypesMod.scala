@@ -23,7 +23,8 @@ object distTypesMod {
       __obj.asInstanceOf[BBox]
     }
     
-    extension [Self <: BBox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BBox] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object distTypesMod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -73,7 +75,8 @@ object distTypesMod {
       __obj.asInstanceOf[Segment]
     }
     
-    extension [Self <: Segment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Segment] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: PointTuple): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

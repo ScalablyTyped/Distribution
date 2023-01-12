@@ -57,7 +57,8 @@ object ojGanttTaskSettablePropertiesLenient {
     __obj.asInstanceOf[ojGanttTaskSettablePropertiesLenient]
   }
   
-  extension [Self <: ojGanttTaskSettablePropertiesLenient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojGanttTaskSettablePropertiesLenient] (val x: Self) extends AnyVal {
     
     inline def setBaseline(value: End): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
     

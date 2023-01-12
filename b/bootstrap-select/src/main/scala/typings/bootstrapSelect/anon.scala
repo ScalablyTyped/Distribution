@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[BootstrapVersion]
     }
     
-    extension [Self <: BootstrapVersion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BootstrapVersion] (val x: Self) extends AnyVal {
       
       inline def setBootstrapVersion(value: String): Self = StObject.set(x, "BootstrapVersion", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object anon {
       __obj.asInstanceOf[PartialBootstrapSelectOpt]
     }
     
-    extension [Self <: PartialBootstrapSelectOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialBootstrapSelectOpt] (val x: Self) extends AnyVal {
       
       inline def setActionsBox(value: Boolean): Self = StObject.set(x, "actionsBox", value.asInstanceOf[js.Any])
       

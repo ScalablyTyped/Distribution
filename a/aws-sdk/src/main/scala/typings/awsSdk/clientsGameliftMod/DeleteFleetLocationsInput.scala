@@ -23,7 +23,8 @@ object DeleteFleetLocationsInput {
     __obj.asInstanceOf[DeleteFleetLocationsInput]
   }
   
-  extension [Self <: DeleteFleetLocationsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFleetLocationsInput] (val x: Self) extends AnyVal {
     
     inline def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     

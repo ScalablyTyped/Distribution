@@ -45,7 +45,8 @@ object libProjectIonic1Mod {
       __obj.asInstanceOf[BowerJson]
     }
     
-    extension [Self <: BowerJson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BowerJson] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       

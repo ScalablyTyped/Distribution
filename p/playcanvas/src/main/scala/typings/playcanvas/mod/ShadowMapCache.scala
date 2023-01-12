@@ -33,7 +33,8 @@ object ShadowMapCache {
     __obj.asInstanceOf[ShadowMapCache]
   }
   
-  extension [Self <: ShadowMapCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShadowMapCache] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Any, Any) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

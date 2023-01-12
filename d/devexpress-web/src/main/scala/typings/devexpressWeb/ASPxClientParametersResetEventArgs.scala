@@ -28,7 +28,8 @@ object ASPxClientParametersResetEventArgs {
     __obj.asInstanceOf[ASPxClientParametersResetEventArgs]
   }
   
-  extension [Self <: ASPxClientParametersResetEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientParametersResetEventArgs] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: js.Array[ASPxClientWebDocumentViewerParameter]): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     

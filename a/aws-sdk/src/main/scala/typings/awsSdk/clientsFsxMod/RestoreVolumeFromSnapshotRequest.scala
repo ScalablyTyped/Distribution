@@ -30,7 +30,8 @@ object RestoreVolumeFromSnapshotRequest {
     __obj.asInstanceOf[RestoreVolumeFromSnapshotRequest]
   }
   
-  extension [Self <: RestoreVolumeFromSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreVolumeFromSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

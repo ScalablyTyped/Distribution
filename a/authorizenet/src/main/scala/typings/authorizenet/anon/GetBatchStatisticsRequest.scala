@@ -15,7 +15,8 @@ object GetBatchStatisticsRequest {
     __obj.asInstanceOf[GetBatchStatisticsRequest]
   }
   
-  extension [Self <: GetBatchStatisticsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBatchStatisticsRequest] (val x: Self) extends AnyVal {
     
     inline def setGetBatchStatisticsRequest(value: typings.authorizenet.mod.APIContracts.GetBatchStatisticsRequest): Self = StObject.set(x, "getBatchStatisticsRequest", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object FoldersRequest {
     __obj.asInstanceOf[FoldersRequest]
   }
   
-  extension [Self <: FoldersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FoldersRequest] (val x: Self) extends AnyVal {
     
     inline def setEnvelopeIds(value: js.Array[String]): Self = StObject.set(x, "envelopeIds", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object ScriptProcessorNodeEventMap {
     __obj.asInstanceOf[ScriptProcessorNodeEventMap]
   }
   
-  extension [Self <: ScriptProcessorNodeEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptProcessorNodeEventMap] (val x: Self) extends AnyVal {
     
     inline def setAudioprocess(value: AudioProcessingEvent): Self = StObject.set(x, "audioprocess", value.asInstanceOf[js.Any])
   }

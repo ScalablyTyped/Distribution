@@ -16,7 +16,8 @@ object Subscribe {
     __obj.asInstanceOf[Subscribe]
   }
   
-  extension [Self <: Subscribe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Subscribe] (val x: Self) extends AnyVal {
     
     inline def setSubscribe(value: (Null, js.Function1[/* event */ (Record[String, String]) | Null, Unit]) => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
   }

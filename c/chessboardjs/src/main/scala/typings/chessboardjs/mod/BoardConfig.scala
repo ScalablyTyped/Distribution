@@ -57,7 +57,8 @@ object BoardConfig {
     __obj.asInstanceOf[BoardConfig]
   }
   
-  extension [Self <: BoardConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoardConfig] (val x: Self) extends AnyVal {
     
     inline def setAppearSpeed(value: Double | SpeedType): Self = StObject.set(x, "appearSpeed", value.asInstanceOf[js.Any])
     

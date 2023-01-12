@@ -15,7 +15,8 @@ object LevelFour {
     __obj.asInstanceOf[LevelFour]
   }
   
-  extension [Self <: LevelFour](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LevelFour] (val x: Self) extends AnyVal {
     
     inline def setLevelFour(value: LevelFive): Self = StObject.set(x, "levelFour", value.asInstanceOf[js.Any])
   }

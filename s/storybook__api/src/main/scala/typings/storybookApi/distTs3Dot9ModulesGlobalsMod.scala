@@ -32,7 +32,8 @@ object distTs3Dot9ModulesGlobalsMod {
       __obj.asInstanceOf[SubAPI]
     }
     
-    extension [Self <: SubAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubAPI] (val x: Self) extends AnyVal {
       
       inline def setGetGlobalTypes(value: () => Any): Self = StObject.set(x, "getGlobalTypes", js.Any.fromFunction0(value))
       
@@ -61,7 +62,8 @@ object distTs3Dot9ModulesGlobalsMod {
       __obj.asInstanceOf[SubState]
     }
     
-    extension [Self <: SubState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubState] (val x: Self) extends AnyVal {
       
       inline def setGlobalTypes(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobalTypes */ Any

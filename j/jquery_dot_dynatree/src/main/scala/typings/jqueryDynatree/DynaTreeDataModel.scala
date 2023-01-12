@@ -61,7 +61,8 @@ object DynaTreeDataModel {
     __obj.asInstanceOf[DynaTreeDataModel]
   }
   
-  extension [Self <: DynaTreeDataModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynaTreeDataModel] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: Boolean): Self = StObject.set(x, "activate", value.asInstanceOf[js.Any])
     

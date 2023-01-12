@@ -21,7 +21,8 @@ object typesBlobIdRequiredExceptionMod {
       __obj.asInstanceOf[BlobIdRequiredException]
     }
     
-    extension [Self <: BlobIdRequiredException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlobIdRequiredException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.BlobIdRequiredException

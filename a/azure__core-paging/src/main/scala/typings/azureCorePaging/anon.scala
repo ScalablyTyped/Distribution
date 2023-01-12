@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[NextPageLink[TPage, TLink]]
     }
     
-    extension [Self <: NextPageLink[?, ?], TPage, TLink](x: Self & (NextPageLink[TPage, TLink])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NextPageLink[?, ?], TPage, TLink] (val x: Self & (NextPageLink[TPage, TLink])) extends AnyVal {
       
       inline def setNextPageLink(value: TLink): Self = StObject.set(x, "nextPageLink", value.asInstanceOf[js.Any])
       

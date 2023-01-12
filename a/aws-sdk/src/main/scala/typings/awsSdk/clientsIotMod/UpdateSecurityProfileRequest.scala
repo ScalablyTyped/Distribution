@@ -63,7 +63,8 @@ object UpdateSecurityProfileRequest {
     __obj.asInstanceOf[UpdateSecurityProfileRequest]
   }
   
-  extension [Self <: UpdateSecurityProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSecurityProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setAdditionalMetricsToRetain(value: AdditionalMetricsToRetainList): Self = StObject.set(x, "additionalMetricsToRetain", value.asInstanceOf[js.Any])
     

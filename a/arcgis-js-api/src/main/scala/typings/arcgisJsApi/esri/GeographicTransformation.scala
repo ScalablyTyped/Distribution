@@ -27,7 +27,8 @@ object GeographicTransformation {
     __obj.asInstanceOf[GeographicTransformation]
   }
   
-  extension [Self <: GeographicTransformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeographicTransformation] (val x: Self) extends AnyVal {
     
     inline def setGetInverse(value: () => GeographicTransformation): Self = StObject.set(x, "getInverse", js.Any.fromFunction0(value))
     

@@ -37,7 +37,8 @@ object BuildBazelRemoteExecutionV2CacheCapabilities {
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2CacheCapabilities]
   }
   
-  extension [Self <: BuildBazelRemoteExecutionV2CacheCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildBazelRemoteExecutionV2CacheCapabilities] (val x: Self) extends AnyVal {
     
     inline def setActionCacheUpdateCapabilities(value: BuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities): Self = StObject.set(x, "actionCacheUpdateCapabilities", value.asInstanceOf[js.Any])
     

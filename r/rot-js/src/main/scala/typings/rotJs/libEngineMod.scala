@@ -72,7 +72,8 @@ object libEngineMod {
       __obj.asInstanceOf[Engine]
     }
     
-    extension [Self <: Engine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Engine] (val x: Self) extends AnyVal {
       
       inline def setLock(value: () => Engine): Self = StObject.set(x, "lock", js.Any.fromFunction0(value))
       

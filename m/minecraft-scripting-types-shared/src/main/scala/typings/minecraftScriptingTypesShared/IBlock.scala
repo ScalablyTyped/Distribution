@@ -36,7 +36,8 @@ object IBlock {
     __obj.asInstanceOf[IBlock]
   }
   
-  extension [Self <: IBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBlock] (val x: Self) extends AnyVal {
     
     inline def setBlock_position(value: VectorXYZ): Self = StObject.set(x, "block_position", value.asInstanceOf[js.Any])
     

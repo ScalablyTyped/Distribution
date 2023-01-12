@@ -16,7 +16,8 @@ object DeletePositionedObjectRequest {
     __obj.asInstanceOf[DeletePositionedObjectRequest]
   }
   
-  extension [Self <: DeletePositionedObjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePositionedObjectRequest] (val x: Self) extends AnyVal {
     
     inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     

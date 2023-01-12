@@ -16,7 +16,8 @@ object Boolean {
   @js.native
   val ^ : BooleanConstructor = js.native
   
-  extension [Self <: Boolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Boolean] (val x: Self) extends AnyVal {
     
     inline def setGetValue(value: () => scala.Boolean): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
   }

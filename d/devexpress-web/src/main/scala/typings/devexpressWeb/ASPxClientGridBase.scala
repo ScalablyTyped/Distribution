@@ -60,7 +60,8 @@ object ASPxClientGridBase {
     __obj.asInstanceOf[ASPxClientGridBase]
   }
   
-  extension [Self <: ASPxClientGridBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGridBase] (val x: Self) extends AnyVal {
     
     inline def setBatchEditSummaryDisplayText(value: ASPxClientEvent[ASPxClientGridBatchEditSummaryDisplayTextEventHandler[ASPxClientGridBase]]): Self = StObject.set(x, "BatchEditSummaryDisplayText", value.asInstanceOf[js.Any])
     

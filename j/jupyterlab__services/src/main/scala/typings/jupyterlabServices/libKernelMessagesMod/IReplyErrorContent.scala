@@ -33,7 +33,8 @@ object IReplyErrorContent {
     __obj.asInstanceOf[IReplyErrorContent]
   }
   
-  extension [Self <: IReplyErrorContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IReplyErrorContent] (val x: Self) extends AnyVal {
     
     inline def setEname(value: String): Self = StObject.set(x, "ename", value.asInstanceOf[js.Any])
     

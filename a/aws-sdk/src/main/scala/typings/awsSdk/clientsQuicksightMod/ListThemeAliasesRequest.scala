@@ -33,7 +33,8 @@ object ListThemeAliasesRequest {
     __obj.asInstanceOf[ListThemeAliasesRequest]
   }
   
-  extension [Self <: ListThemeAliasesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListThemeAliasesRequest] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     

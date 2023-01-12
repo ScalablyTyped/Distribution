@@ -74,7 +74,8 @@ object SliderCfg {
     __obj.asInstanceOf[SliderCfg]
   }
   
-  extension [Self <: SliderCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderCfg] (val x: Self) extends AnyVal {
     
     inline def setBackgroundStyle(value: Any): Self = StObject.set(x, "backgroundStyle", value.asInstanceOf[js.Any])
     

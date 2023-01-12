@@ -23,7 +23,8 @@ object ListUsageLimitsResponse {
     __obj.asInstanceOf[ListUsageLimitsResponse]
   }
   
-  extension [Self <: ListUsageLimitsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListUsageLimitsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

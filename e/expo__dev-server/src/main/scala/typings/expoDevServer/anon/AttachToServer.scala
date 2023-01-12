@@ -36,7 +36,8 @@ object AttachToServer {
     __obj.asInstanceOf[AttachToServer]
   }
   
-  extension [Self <: AttachToServer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachToServer] (val x: Self) extends AnyVal {
     
     inline def setAttachToServer(value: Any): Self = StObject.set(x, "attachToServer", value.asInstanceOf[js.Any])
     

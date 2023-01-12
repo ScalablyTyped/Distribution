@@ -20,7 +20,8 @@ object InfernoElement {
     __obj.asInstanceOf[InfernoElement[P]]
   }
   
-  extension [Self <: InfernoElement[?], P](x: Self & InfernoElement[P]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfernoElement[?], P] (val x: Self & InfernoElement[P]) extends AnyVal {
     
     inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

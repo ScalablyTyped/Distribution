@@ -25,7 +25,8 @@ object Stage {
     __obj.asInstanceOf[Stage]
   }
   
-  extension [Self <: Stage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stage] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

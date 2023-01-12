@@ -32,7 +32,8 @@ object DefaultAvailability {
     __obj.asInstanceOf[DefaultAvailability]
   }
   
-  extension [Self <: DefaultAvailability](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultAvailability] (val x: Self) extends AnyVal {
     
     inline def setDefaultAvailability(value: TimeInterval): Self = StObject.set(x, "defaultAvailability", value.asInstanceOf[js.Any])
     

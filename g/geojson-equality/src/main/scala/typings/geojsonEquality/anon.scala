@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Partialprecisionnumberdir]
     }
     
-    extension [Self <: Partialprecisionnumberdir](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Partialprecisionnumberdir] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: Boolean): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       

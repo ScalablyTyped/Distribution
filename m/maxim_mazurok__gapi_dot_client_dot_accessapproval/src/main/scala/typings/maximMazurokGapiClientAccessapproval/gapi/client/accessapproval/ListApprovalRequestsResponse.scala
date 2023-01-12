@@ -19,7 +19,8 @@ object ListApprovalRequestsResponse {
     __obj.asInstanceOf[ListApprovalRequestsResponse]
   }
   
-  extension [Self <: ListApprovalRequestsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListApprovalRequestsResponse] (val x: Self) extends AnyVal {
     
     inline def setApprovalRequests(value: js.Array[ApprovalRequest]): Self = StObject.set(x, "approvalRequests", value.asInstanceOf[js.Any])
     

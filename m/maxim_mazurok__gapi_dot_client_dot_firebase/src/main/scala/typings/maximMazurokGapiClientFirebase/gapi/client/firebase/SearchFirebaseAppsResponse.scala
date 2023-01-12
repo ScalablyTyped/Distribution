@@ -22,7 +22,8 @@ object SearchFirebaseAppsResponse {
     __obj.asInstanceOf[SearchFirebaseAppsResponse]
   }
   
-  extension [Self <: SearchFirebaseAppsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchFirebaseAppsResponse] (val x: Self) extends AnyVal {
     
     inline def setApps(value: js.Array[FirebaseAppInfo]): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object Injectable {
   @js.native
   val ^ : InjectableDecorator = js.native
   
-  extension [Self <: Injectable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Injectable] (val x: Self) extends AnyVal {
     
     inline def setProvidedIn(value: Type[Any] | root | platform | any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AwsElbLoadBalancerSourceSecurityGroup {
     __obj.asInstanceOf[AwsElbLoadBalancerSourceSecurityGroup]
   }
   
-  extension [Self <: AwsElbLoadBalancerSourceSecurityGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsElbLoadBalancerSourceSecurityGroup] (val x: Self) extends AnyVal {
     
     inline def setGroupName(value: NonEmptyString): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     

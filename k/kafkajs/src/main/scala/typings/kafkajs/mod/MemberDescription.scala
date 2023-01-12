@@ -30,7 +30,8 @@ object MemberDescription {
     __obj.asInstanceOf[MemberDescription]
   }
   
-  extension [Self <: MemberDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberDescription] (val x: Self) extends AnyVal {
     
     inline def setClientHost(value: String): Self = StObject.set(x, "clientHost", value.asInstanceOf[js.Any])
     

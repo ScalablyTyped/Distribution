@@ -17,7 +17,8 @@ object distApiInterfacesSearchResultMod {
       __obj.asInstanceOf[SearchResult]
     }
     
-    extension [Self <: SearchResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
       
       inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     }
@@ -38,7 +39,8 @@ object distApiInterfacesSearchResultMod {
       __obj.asInstanceOf[SearchResults[T]]
     }
     
-    extension [Self <: SearchResults[?], T](x: Self & SearchResults[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchResults[?], T] (val x: Self & SearchResults[T]) extends AnyVal {
       
       inline def setIncomplete_results(value: Boolean): Self = StObject.set(x, "incomplete_results", value.asInstanceOf[js.Any])
       

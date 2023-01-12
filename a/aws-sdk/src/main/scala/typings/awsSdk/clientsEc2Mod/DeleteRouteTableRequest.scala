@@ -23,7 +23,8 @@ object DeleteRouteTableRequest {
     __obj.asInstanceOf[DeleteRouteTableRequest]
   }
   
-  extension [Self <: DeleteRouteTableRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRouteTableRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

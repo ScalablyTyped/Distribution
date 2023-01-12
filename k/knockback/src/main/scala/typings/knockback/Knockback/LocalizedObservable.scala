@@ -19,7 +19,8 @@ object LocalizedObservable {
     __obj.asInstanceOf[LocalizedObservable]
   }
   
-  extension [Self <: LocalizedObservable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalizedObservable] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => Any): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     

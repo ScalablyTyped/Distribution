@@ -43,7 +43,8 @@ object IgGridSummariesColumnSetting {
     __obj.asInstanceOf[IgGridSummariesColumnSetting]
   }
   
-  extension [Self <: IgGridSummariesColumnSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridSummariesColumnSetting] (val x: Self) extends AnyVal {
     
     inline def setAllowSummaries(value: Boolean): Self = StObject.set(x, "allowSummaries", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object IntelligentMargin {
     __obj.asInstanceOf[IntelligentMargin]
   }
   
-  extension [Self <: IntelligentMargin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntelligentMargin] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: BackgroundType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

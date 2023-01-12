@@ -43,7 +43,8 @@ object libMessagingMessageBufferMod {
       __obj.asInstanceOf[MessageBuffer]
     }
     
-    extension [Self <: MessageBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageBuffer] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: (String, Any) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       

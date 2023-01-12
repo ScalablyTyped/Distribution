@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Adjacent]
     }
     
-    extension [Self <: Adjacent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Adjacent] (val x: Self) extends AnyVal {
       
       inline def setAdjacent(value: Boolean): Self = StObject.set(x, "adjacent", value.asInstanceOf[js.Any])
       
@@ -63,7 +65,8 @@ object anon {
       __obj.asInstanceOf[ExcludeEnd]
     }
     
-    extension [Self <: ExcludeEnd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExcludeEnd] (val x: Self) extends AnyVal {
       
       inline def setExcludeEnd(value: Boolean): Self = StObject.set(x, "excludeEnd", value.asInstanceOf[js.Any])
       
@@ -88,7 +91,8 @@ object anon {
       __obj.asInstanceOf[ExcludeStart]
     }
     
-    extension [Self <: ExcludeStart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExcludeStart] (val x: Self) extends AnyVal {
       
       inline def setExcludeEnd(value: Boolean): Self = StObject.set(x, "excludeEnd", value.asInstanceOf[js.Any])
       
@@ -113,7 +117,8 @@ object anon {
       __obj.asInstanceOf[Exclusive]
     }
     
-    extension [Self <: Exclusive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exclusive] (val x: Self) extends AnyVal {
       
       inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
       
@@ -214,7 +219,8 @@ object anon {
       __obj.asInstanceOf[Step]
     }
     
-    extension [Self <: Step](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
       
       inline def setExcludeStart(value: Boolean): Self = StObject.set(x, "excludeStart", value.asInstanceOf[js.Any])
       

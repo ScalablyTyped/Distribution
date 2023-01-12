@@ -49,7 +49,8 @@ object libComponentsPickersPickerItemDottypesMod {
       __obj.asInstanceOf[IPickerItemProps[T]]
     }
     
-    extension [Self <: IPickerItemProps[?], T](x: Self & IPickerItemProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPickerItemProps[?], T] (val x: Self & IPickerItemProps[T]) extends AnyVal {
       
       inline def setComponentRef(value: IRefObject[IPickerItem]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object IWorkflow {
     __obj.asInstanceOf[IWorkflow]
   }
   
-  extension [Self <: IWorkflow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWorkflow] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IWorkflow): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

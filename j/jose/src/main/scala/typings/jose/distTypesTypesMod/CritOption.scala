@@ -34,7 +34,8 @@ object CritOption {
     __obj.asInstanceOf[CritOption]
   }
   
-  extension [Self <: CritOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CritOption] (val x: Self) extends AnyVal {
     
     inline def setCrit(value: StringDictionary[Boolean]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
     

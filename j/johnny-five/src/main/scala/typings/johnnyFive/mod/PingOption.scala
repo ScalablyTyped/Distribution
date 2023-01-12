@@ -19,7 +19,8 @@ object PingOption {
     __obj.asInstanceOf[PingOption]
   }
   
-  extension [Self <: PingOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PingOption] (val x: Self) extends AnyVal {
     
     inline def setFreq(value: Double): Self = StObject.set(x, "freq", value.asInstanceOf[js.Any])
     

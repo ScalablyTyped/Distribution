@@ -16,7 +16,8 @@ object RadialScaleTypeRegistry {
     __obj.asInstanceOf[RadialScaleTypeRegistry]
   }
   
-  extension [Self <: RadialScaleTypeRegistry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadialScaleTypeRegistry] (val x: Self) extends AnyVal {
     
     inline def setRadialLinear(value: OptionsRadialLinearScaleOptions): Self = StObject.set(x, "radialLinear", value.asInstanceOf[js.Any])
   }

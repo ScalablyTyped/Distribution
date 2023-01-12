@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[RoleObject]
     }
     
-    extension [Self <: RoleObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoleObject] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

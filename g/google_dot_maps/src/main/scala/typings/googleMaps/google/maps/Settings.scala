@@ -31,7 +31,8 @@ object Settings {
     __obj.asInstanceOf[Settings]
   }
   
-  extension [Self <: Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
     
     inline def setExperienceIds(value: js.Iterable[String]): Self = StObject.set(x, "experienceIds", value.asInstanceOf[js.Any])
   }

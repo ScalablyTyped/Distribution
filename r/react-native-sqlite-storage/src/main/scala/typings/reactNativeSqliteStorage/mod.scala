@@ -102,7 +102,8 @@ object mod {
       __obj.asInstanceOf[DatabaseOptionalParams]
     }
     
-    extension [Self <: DatabaseOptionalParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatabaseOptionalParams] (val x: Self) extends AnyVal {
       
       inline def setCreateFromLocation(value: Double | String): Self = StObject.set(x, "createFromLocation", value.asInstanceOf[js.Any])
       
@@ -150,7 +151,8 @@ object mod {
       __obj.asInstanceOf[DatabaseParamsAndroid]
     }
     
-    extension [Self <: DatabaseParamsAndroid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatabaseParamsAndroid] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -178,7 +180,8 @@ object mod {
       __obj.asInstanceOf[DatabaseParamsIOS]
     }
     
-    extension [Self <: DatabaseParamsIOS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatabaseParamsIOS] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
@@ -219,7 +222,8 @@ object mod {
       __obj.asInstanceOf[ResultSet]
     }
     
-    extension [Self <: ResultSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultSet] (val x: Self) extends AnyVal {
       
       inline def setInsertId(value: Double): Self = StObject.set(x, "insertId", value.asInstanceOf[js.Any])
       
@@ -244,7 +248,8 @@ object mod {
       __obj.asInstanceOf[ResultSetRowList]
     }
     
-    extension [Self <: ResultSetRowList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultSetRowList] (val x: Self) extends AnyVal {
       
       inline def setItem(value: Double => Any): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
       
@@ -267,7 +272,8 @@ object mod {
       __obj.asInstanceOf[SQLError]
     }
     
-    extension [Self <: SQLError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SQLError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object PathLength {
     __obj.asInstanceOf[PathLength]
   }
   
-  extension [Self <: PathLength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathLength] (val x: Self) extends AnyVal {
     
     inline def set$pathLength(value: Double): Self = StObject.set(x, "$pathLength", value.asInstanceOf[js.Any])
     

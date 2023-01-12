@@ -16,7 +16,8 @@ object NodeCallbackResult {
     __obj.asInstanceOf[NodeCallbackResult]
   }
   
-  extension [Self <: NodeCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setNode(value: IAnyObject): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }

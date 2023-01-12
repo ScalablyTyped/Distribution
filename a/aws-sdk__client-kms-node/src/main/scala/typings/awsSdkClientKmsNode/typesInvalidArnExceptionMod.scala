@@ -67,7 +67,8 @@ object typesInvalidArnExceptionMod {
       __obj.asInstanceOf[InvalidArnException]
     }
     
-    extension [Self <: InvalidArnException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidArnException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.InvalidArnException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -87,7 +88,8 @@ object typesInvalidArnExceptionMod {
       __obj.asInstanceOf[InvalidArnExceptionDetails]
     }
     
-    extension [Self <: InvalidArnExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidArnExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

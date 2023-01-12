@@ -64,7 +64,8 @@ object distTypesPointerMod {
       __obj.asInstanceOf[PointerActionPosition]
     }
     
-    extension [Self <: PointerActionPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointerActionPosition] (val x: Self) extends AnyVal {
       
       inline def setCoords(value: PointerCoords): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object distTypesPointerMod {
       __obj.asInstanceOf[PointerMoveAction]
     }
     
-    extension [Self <: PointerMoveAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointerMoveAction] (val x: Self) extends AnyVal {
       
       inline def setPointerName(value: String): Self = StObject.set(x, "pointerName", value.asInstanceOf[js.Any])
       
@@ -126,7 +128,8 @@ object distTypesPointerMod {
       __obj.asInstanceOf[PointerPressAction]
     }
     
-    extension [Self <: PointerPressAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointerPressAction] (val x: Self) extends AnyVal {
       
       inline def setKeyDef(value: pointerKey): Self = StObject.set(x, "keyDef", value.asInstanceOf[js.Any])
       

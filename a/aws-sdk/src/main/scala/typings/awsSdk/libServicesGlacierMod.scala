@@ -40,7 +40,8 @@ object libServicesGlacierMod {
       __obj.asInstanceOf[GlacierComputeChecksumsOutput]
     }
     
-    extension [Self <: GlacierComputeChecksumsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlacierComputeChecksumsOutput] (val x: Self) extends AnyVal {
       
       inline def setLinearHash(value: String): Self = StObject.set(x, "linearHash", value.asInstanceOf[js.Any])
       

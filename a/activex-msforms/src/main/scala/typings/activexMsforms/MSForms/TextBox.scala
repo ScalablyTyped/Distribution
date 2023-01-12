@@ -191,7 +191,8 @@ object TextBox {
     __obj.asInstanceOf[TextBox]
   }
   
-  extension [Self <: TextBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextBox] (val x: Self) extends AnyVal {
     
     inline def setAutoSize(value: Boolean): Self = StObject.set(x, "AutoSize", value.asInstanceOf[js.Any])
     

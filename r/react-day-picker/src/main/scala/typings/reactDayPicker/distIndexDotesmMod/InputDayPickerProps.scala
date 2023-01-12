@@ -35,7 +35,8 @@ object InputDayPickerProps {
     __obj.asInstanceOf[InputDayPickerProps]
   }
   
-  extension [Self <: InputDayPickerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputDayPickerProps] (val x: Self) extends AnyVal {
     
     inline def setFromDate(value: js.Date): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
     

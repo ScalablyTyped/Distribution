@@ -39,7 +39,8 @@ object CIMGeometricEffectDonut {
     __obj.asInstanceOf[CIMGeometricEffectDonut]
   }
   
-  extension [Self <: CIMGeometricEffectDonut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMGeometricEffectDonut] (val x: Self) extends AnyVal {
     
     inline def setMethod(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectDonutMethod * / any */ String

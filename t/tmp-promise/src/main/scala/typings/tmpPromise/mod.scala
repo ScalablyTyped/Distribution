@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[DirectoryResult]
     }
     
-    extension [Self <: DirectoryResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectoryResult] (val x: Self) extends AnyVal {
       
       inline def setCleanup(value: () => js.Promise[Unit]): Self = StObject.set(x, "cleanup", js.Any.fromFunction0(value))
       
@@ -77,7 +78,8 @@ object mod {
       __obj.asInstanceOf[FileResult]
     }
     
-    extension [Self <: FileResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileResult] (val x: Self) extends AnyVal {
       
       inline def setFd(value: Double): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
     }

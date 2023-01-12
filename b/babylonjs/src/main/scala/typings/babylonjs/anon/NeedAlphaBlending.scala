@@ -26,7 +26,8 @@ object NeedAlphaBlending {
     __obj.asInstanceOf[NeedAlphaBlending]
   }
   
-  extension [Self <: NeedAlphaBlending](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NeedAlphaBlending] (val x: Self) extends AnyVal {
     
     inline def setNeedAlphaBlending(value: Boolean): Self = StObject.set(x, "needAlphaBlending", value.asInstanceOf[js.Any])
     

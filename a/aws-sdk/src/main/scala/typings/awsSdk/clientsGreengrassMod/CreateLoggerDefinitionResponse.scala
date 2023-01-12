@@ -48,7 +48,8 @@ object CreateLoggerDefinitionResponse {
     __obj.asInstanceOf[CreateLoggerDefinitionResponse]
   }
   
-  extension [Self <: CreateLoggerDefinitionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLoggerDefinitionResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

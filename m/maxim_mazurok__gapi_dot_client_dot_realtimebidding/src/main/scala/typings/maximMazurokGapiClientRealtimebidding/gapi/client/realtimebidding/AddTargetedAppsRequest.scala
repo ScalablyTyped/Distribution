@@ -25,7 +25,8 @@ object AddTargetedAppsRequest {
     __obj.asInstanceOf[AddTargetedAppsRequest]
   }
   
-  extension [Self <: AddTargetedAppsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddTargetedAppsRequest] (val x: Self) extends AnyVal {
     
     inline def setAppIds(value: js.Array[String]): Self = StObject.set(x, "appIds", value.asInstanceOf[js.Any])
     

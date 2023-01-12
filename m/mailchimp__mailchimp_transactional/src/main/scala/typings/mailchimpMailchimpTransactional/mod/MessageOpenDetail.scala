@@ -25,7 +25,8 @@ object MessageOpenDetail {
     __obj.asInstanceOf[MessageOpenDetail]
   }
   
-  extension [Self <: MessageOpenDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageOpenDetail] (val x: Self) extends AnyVal {
     
     inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     

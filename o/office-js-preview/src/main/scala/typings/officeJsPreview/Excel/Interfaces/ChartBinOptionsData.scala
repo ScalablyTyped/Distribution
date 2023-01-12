@@ -75,7 +75,8 @@ object ChartBinOptionsData {
     __obj.asInstanceOf[ChartBinOptionsData]
   }
   
-  extension [Self <: ChartBinOptionsData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartBinOptionsData] (val x: Self) extends AnyVal {
     
     inline def setAllowOverflow(value: Boolean): Self = StObject.set(x, "allowOverflow", value.asInstanceOf[js.Any])
     

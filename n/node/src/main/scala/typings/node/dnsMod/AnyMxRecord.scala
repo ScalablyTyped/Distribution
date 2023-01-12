@@ -20,7 +20,8 @@ object AnyMxRecord {
     __obj.asInstanceOf[AnyMxRecord]
   }
   
-  extension [Self <: AnyMxRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnyMxRecord] (val x: Self) extends AnyVal {
     
     inline def setType(value: MX): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

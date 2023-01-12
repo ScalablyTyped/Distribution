@@ -18,7 +18,8 @@ object AttackVolumeStatistics {
     __obj.asInstanceOf[AttackVolumeStatistics]
   }
   
-  extension [Self <: AttackVolumeStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttackVolumeStatistics] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
   }

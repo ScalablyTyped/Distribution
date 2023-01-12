@@ -30,7 +30,8 @@ object FlowElement {
     __obj.asInstanceOf[FlowElement]
   }
   
-  extension [Self <: FlowElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlowElement] (val x: Self) extends AnyVal {
     
     inline def setAuditing(value: Auditing): Self = StObject.set(x, "auditing", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object Formatting {
     __obj.asInstanceOf[Formatting]
   }
   
-  extension [Self <: Formatting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Formatting] (val x: Self) extends AnyVal {
     
     inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     

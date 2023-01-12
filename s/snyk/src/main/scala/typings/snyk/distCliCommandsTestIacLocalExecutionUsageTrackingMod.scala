@@ -32,7 +32,8 @@ object distCliCommandsTestIacLocalExecutionUsageTrackingMod {
       __obj.asInstanceOf[TrackableResult]
     }
     
-    extension [Self <: TrackableResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackableResult] (val x: Self) extends AnyVal {
       
       inline def setMeta(value: IsPrivate): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       

@@ -43,7 +43,8 @@ object ThreatIntelIndicator {
     __obj.asInstanceOf[ThreatIntelIndicator]
   }
   
-  extension [Self <: ThreatIntelIndicator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreatIntelIndicator] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: ThreatIntelIndicatorCategory): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     

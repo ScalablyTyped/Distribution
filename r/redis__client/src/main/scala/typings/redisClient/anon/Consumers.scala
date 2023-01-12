@@ -27,7 +27,8 @@ object Consumers {
     __obj.asInstanceOf[Consumers]
   }
   
-  extension [Self <: Consumers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Consumers] (val x: Self) extends AnyVal {
     
     inline def setConsumers(value: Double): Self = StObject.set(x, "consumers", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object TargetGroupTuple {
     __obj.asInstanceOf[TargetGroupTuple]
   }
   
-  extension [Self <: TargetGroupTuple](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetGroupTuple] (val x: Self) extends AnyVal {
     
     inline def setTargetGroupArn(value: TargetGroupArn): Self = StObject.set(x, "TargetGroupArn", value.asInstanceOf[js.Any])
     

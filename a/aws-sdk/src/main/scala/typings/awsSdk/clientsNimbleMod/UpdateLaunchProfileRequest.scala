@@ -53,7 +53,8 @@ object UpdateLaunchProfileRequest {
     __obj.asInstanceOf[UpdateLaunchProfileRequest]
   }
   
-  extension [Self <: UpdateLaunchProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateLaunchProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

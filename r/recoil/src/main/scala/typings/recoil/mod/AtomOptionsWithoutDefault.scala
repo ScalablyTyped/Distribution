@@ -24,7 +24,8 @@ object AtomOptionsWithoutDefault {
     __obj.asInstanceOf[AtomOptionsWithoutDefault[T]]
   }
   
-  extension [Self <: AtomOptionsWithoutDefault[?], T](x: Self & AtomOptionsWithoutDefault[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AtomOptionsWithoutDefault[?], T] (val x: Self & AtomOptionsWithoutDefault[T]) extends AnyVal {
     
     inline def setDangerouslyAllowMutability(value: Boolean): Self = StObject.set(x, "dangerouslyAllowMutability", value.asInstanceOf[js.Any])
     

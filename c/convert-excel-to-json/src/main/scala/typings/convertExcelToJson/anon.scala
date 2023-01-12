@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Rows]
     }
     
-    extension [Self <: Rows](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rows] (val x: Self) extends AnyVal {
       
       inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     }
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[SheetConfignamestring]
     }
     
-    extension [Self <: SheetConfignamestring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SheetConfignamestring] (val x: Self) extends AnyVal {
       
       inline def setColumnToKey(value: StringDictionary[String]): Self = StObject.set(x, "columnToKey", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object anon {
       __obj.asInstanceOf[sourceFilestringsheetsRea]
     }
     
-    extension [Self <: sourceFilestringsheetsRea](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: sourceFilestringsheetsRea] (val x: Self) extends AnyVal {
       
       inline def setColumnToKey(value: StringDictionary[String]): Self = StObject.set(x, "columnToKey", value.asInstanceOf[js.Any])
       
@@ -153,7 +156,8 @@ object anon {
       __obj.asInstanceOf[sourcestringBuffersheetsR]
     }
     
-    extension [Self <: sourcestringBuffersheetsR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: sourcestringBuffersheetsR] (val x: Self) extends AnyVal {
       
       inline def setColumnToKey(value: StringDictionary[String]): Self = StObject.set(x, "columnToKey", value.asInstanceOf[js.Any])
       

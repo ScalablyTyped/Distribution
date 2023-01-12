@@ -21,7 +21,8 @@ object BuildBazelRemoteExecutionV2ExecutionPolicy {
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2ExecutionPolicy]
   }
   
-  extension [Self <: BuildBazelRemoteExecutionV2ExecutionPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildBazelRemoteExecutionV2ExecutionPolicy] (val x: Self) extends AnyVal {
     
     inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     

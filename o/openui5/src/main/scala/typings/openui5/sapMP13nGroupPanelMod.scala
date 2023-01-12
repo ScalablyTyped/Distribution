@@ -175,7 +175,8 @@ object sapMP13nGroupPanelMod {
       __obj.asInstanceOf[GroupItem]
     }
     
-    extension [Self <: GroupItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupItem] (val x: Self) extends AnyVal {
       
       inline def setGrouped(value: Boolean): Self = StObject.set(x, "grouped", value.asInstanceOf[js.Any])
       
@@ -277,7 +278,8 @@ object sapMP13nGroupPanelMod {
       __obj.asInstanceOf[GroupPanelSettings]
     }
     
-    extension [Self <: GroupPanelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupPanelSettings] (val x: Self) extends AnyVal {
       
       inline def setEnableShowField(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "enableShowField", value.asInstanceOf[js.Any])
       

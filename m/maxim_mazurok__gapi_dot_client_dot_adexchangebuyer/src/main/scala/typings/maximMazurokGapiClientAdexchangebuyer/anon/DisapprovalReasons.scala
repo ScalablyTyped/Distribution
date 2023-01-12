@@ -25,7 +25,8 @@ object DisapprovalReasons {
     __obj.asInstanceOf[DisapprovalReasons]
   }
   
-  extension [Self <: DisapprovalReasons](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisapprovalReasons] (val x: Self) extends AnyVal {
     
     inline def setContexts(value: js.Array[AuctionType]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ServerExtEventsObject {
     __obj.asInstanceOf[ServerExtEventsObject]
   }
   
-  extension [Self <: ServerExtEventsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerExtEventsObject] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: ServerExtPointFunction | js.Array[ServerExtPointFunction]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

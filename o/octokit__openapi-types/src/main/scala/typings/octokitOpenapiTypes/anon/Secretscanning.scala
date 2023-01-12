@@ -19,7 +19,8 @@ object Secretscanning {
     __obj.asInstanceOf[Secretscanning]
   }
   
-  extension [Self <: Secretscanning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Secretscanning] (val x: Self) extends AnyVal {
     
     inline def setAdvanced_security(value: `387`): Self = StObject.set(x, "advanced_security", value.asInstanceOf[js.Any])
     

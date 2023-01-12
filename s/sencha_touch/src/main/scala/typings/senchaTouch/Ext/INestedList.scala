@@ -330,7 +330,8 @@ object INestedList {
     __obj.asInstanceOf[INestedList]
   }
   
-  extension [Self <: INestedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INestedList] (val x: Self) extends AnyVal {
     
     inline def setAllowDeselect(value: Boolean): Self = StObject.set(x, "allowDeselect", value.asInstanceOf[js.Any])
     

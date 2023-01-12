@@ -103,7 +103,8 @@ object Contest {
     __obj.asInstanceOf[Contest]
   }
   
-  extension [Self <: Contest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Contest] (val x: Self) extends AnyVal {
     
     inline def setBallotPlacement(value: String): Self = StObject.set(x, "ballotPlacement", value.asInstanceOf[js.Any])
     

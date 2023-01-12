@@ -37,7 +37,8 @@ object MediaBrowserAsset {
     __obj.asInstanceOf[MediaBrowserAsset]
   }
   
-  extension [Self <: MediaBrowserAsset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaBrowserAsset] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

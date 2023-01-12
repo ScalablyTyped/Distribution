@@ -33,7 +33,8 @@ object UpdateAllowListRequest {
     __obj.asInstanceOf[UpdateAllowListRequest]
   }
   
-  extension [Self <: UpdateAllowListRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAllowListRequest] (val x: Self) extends AnyVal {
     
     inline def setCriteria(value: AllowListCriteria): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     

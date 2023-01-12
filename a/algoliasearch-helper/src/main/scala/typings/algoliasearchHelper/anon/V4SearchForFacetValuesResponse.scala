@@ -27,7 +27,8 @@ object V4SearchForFacetValuesResponse {
     __obj.asInstanceOf[V4SearchForFacetValuesResponse]
   }
   
-  extension [Self <: V4SearchForFacetValuesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: V4SearchForFacetValuesResponse] (val x: Self) extends AnyVal {
     
     inline def setV3(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlgoliaSearch.SearchForFacetValues.Response */ Any

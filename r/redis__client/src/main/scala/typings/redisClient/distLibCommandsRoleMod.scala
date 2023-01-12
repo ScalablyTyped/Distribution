@@ -42,7 +42,8 @@ object distLibCommandsRoleMod {
       __obj.asInstanceOf[RoleMasterReply]
     }
     
-    extension [Self <: RoleMasterReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoleMasterReply] (val x: Self) extends AnyVal {
       
       inline def setReplicas(value: js.Array[Ip]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object distLibCommandsRoleMod {
       __obj.asInstanceOf[RoleReplicaReply]
     }
     
-    extension [Self <: RoleReplicaReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoleReplicaReply] (val x: Self) extends AnyVal {
       
       inline def setDataReceived(value: Double): Self = StObject.set(x, "dataReceived", value.asInstanceOf[js.Any])
       
@@ -137,7 +139,8 @@ object distLibCommandsRoleMod {
       __obj.asInstanceOf[RoleReplyInterface[T]]
     }
     
-    extension [Self <: RoleReplyInterface[?], T /* <: String */](x: Self & RoleReplyInterface[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoleReplyInterface[?], T /* <: String */] (val x: Self & RoleReplyInterface[T]) extends AnyVal {
       
       inline def setRole(value: T): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     }
@@ -159,7 +162,8 @@ object distLibCommandsRoleMod {
       __obj.asInstanceOf[RoleSentinelReply]
     }
     
-    extension [Self <: RoleSentinelReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoleSentinelReply] (val x: Self) extends AnyVal {
       
       inline def setMasterNames(value: js.Array[String]): Self = StObject.set(x, "masterNames", value.asInstanceOf[js.Any])
       

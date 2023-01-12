@@ -21,7 +21,8 @@ object APNS2Target {
     __obj.asInstanceOf[APNS2Target]
   }
   
-  extension [Self <: APNS2Target](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: APNS2Target] (val x: Self) extends AnyVal {
     
     inline def setEnvironment(value: development | production): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     

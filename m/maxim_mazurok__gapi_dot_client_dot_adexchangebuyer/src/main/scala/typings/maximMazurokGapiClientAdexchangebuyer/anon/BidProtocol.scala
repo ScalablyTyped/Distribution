@@ -41,7 +41,8 @@ object BidProtocol {
     __obj.asInstanceOf[BidProtocol]
   }
   
-  extension [Self <: BidProtocol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BidProtocol] (val x: Self) extends AnyVal {
     
     inline def setBidProtocol(value: String): Self = StObject.set(x, "bidProtocol", value.asInstanceOf[js.Any])
     

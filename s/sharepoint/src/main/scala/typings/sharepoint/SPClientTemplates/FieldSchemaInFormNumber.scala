@@ -34,7 +34,8 @@ object FieldSchemaInFormNumber {
     __obj.asInstanceOf[FieldSchemaInFormNumber]
   }
   
-  extension [Self <: FieldSchemaInFormNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldSchemaInFormNumber] (val x: Self) extends AnyVal {
     
     inline def setShowAsPercentage(value: Boolean): Self = StObject.set(x, "ShowAsPercentage", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object ICountResult {
     __obj.asInstanceOf[ICountResult]
   }
   
-  extension [Self <: ICountResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICountResult] (val x: Self) extends AnyVal {
     
     inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }

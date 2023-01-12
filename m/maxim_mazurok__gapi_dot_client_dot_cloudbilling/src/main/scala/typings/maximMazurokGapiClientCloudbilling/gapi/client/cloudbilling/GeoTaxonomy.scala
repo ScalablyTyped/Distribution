@@ -19,7 +19,8 @@ object GeoTaxonomy {
     __obj.asInstanceOf[GeoTaxonomy]
   }
   
-  extension [Self <: GeoTaxonomy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoTaxonomy] (val x: Self) extends AnyVal {
     
     inline def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     

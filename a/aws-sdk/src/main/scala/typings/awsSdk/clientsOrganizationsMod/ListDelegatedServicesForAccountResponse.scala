@@ -23,7 +23,8 @@ object ListDelegatedServicesForAccountResponse {
     __obj.asInstanceOf[ListDelegatedServicesForAccountResponse]
   }
   
-  extension [Self <: ListDelegatedServicesForAccountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDelegatedServicesForAccountResponse] (val x: Self) extends AnyVal {
     
     inline def setDelegatedServices(value: DelegatedServices): Self = StObject.set(x, "DelegatedServices", value.asInstanceOf[js.Any])
     

@@ -69,7 +69,8 @@ object typesMessageMod {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setAttributes(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in 'SenderId' | 'SentTimestamp' | 'ApproximateReceiveCount' | 'ApproximateFirstReceiveTimestamp' | 'SequenceNumber' | 'MessageDeduplicationId' | 'MessageGroupId' | string ]: string} */ js.Any) | (js.Iterable[
@@ -135,7 +136,8 @@ object typesMessageMod {
       __obj.asInstanceOf[UnmarshalledMessage]
     }
     
-    extension [Self <: UnmarshalledMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledMessage] (val x: Self) extends AnyVal {
       
       inline def setAttributes(
         value: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in 'SenderId' | 'SentTimestamp' | 'ApproximateReceiveCount' | 'ApproximateFirstReceiveTimestamp' | 'SequenceNumber' | 'MessageDeduplicationId' | 'MessageGroupId' | string ]: string} */ js.Any

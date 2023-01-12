@@ -143,7 +143,8 @@ object compositionMod {
       __obj.asInstanceOf[CompositionContext]
     }
     
-    extension [Self <: CompositionContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompositionContext] (val x: Self) extends AnyVal {
       
       inline def setActivate(value: Boolean): Self = StObject.set(x, "activate", value.asInstanceOf[js.Any])
       
@@ -230,7 +231,8 @@ object compositionMod {
       __obj.asInstanceOf[CompositionTransation]
     }
     
-    extension [Self <: CompositionTransation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompositionTransation] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: js.Function => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     }

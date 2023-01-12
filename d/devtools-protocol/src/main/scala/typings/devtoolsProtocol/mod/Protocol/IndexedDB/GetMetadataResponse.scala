@@ -25,7 +25,8 @@ object GetMetadataResponse {
     __obj.asInstanceOf[GetMetadataResponse]
   }
   
-  extension [Self <: GetMetadataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMetadataResponse] (val x: Self) extends AnyVal {
     
     inline def setEntriesCount(value: Double): Self = StObject.set(x, "entriesCount", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object InferenceAcceleratorInfo {
     __obj.asInstanceOf[InferenceAcceleratorInfo]
   }
   
-  extension [Self <: InferenceAcceleratorInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferenceAcceleratorInfo] (val x: Self) extends AnyVal {
     
     inline def setAccelerators(value: InferenceDeviceInfoList): Self = StObject.set(x, "Accelerators", value.asInstanceOf[js.Any])
     

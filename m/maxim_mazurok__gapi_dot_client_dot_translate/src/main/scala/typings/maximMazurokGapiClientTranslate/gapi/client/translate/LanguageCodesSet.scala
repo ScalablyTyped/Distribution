@@ -19,7 +19,8 @@ object LanguageCodesSet {
     __obj.asInstanceOf[LanguageCodesSet]
   }
   
-  extension [Self <: LanguageCodesSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageCodesSet] (val x: Self) extends AnyVal {
     
     inline def setLanguageCodes(value: js.Array[String]): Self = StObject.set(x, "languageCodes", value.asInstanceOf[js.Any])
     

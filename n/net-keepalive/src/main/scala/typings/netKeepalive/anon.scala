@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Fd]
     }
     
-    extension [Self <: Fd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fd] (val x: Self) extends AnyVal {
       
       inline def set_fd(value: Double): Self = StObject.set(x, "_fd", value.asInstanceOf[js.Any])
     }
@@ -34,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Handle]
     }
     
-    extension [Self <: Handle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Handle] (val x: Self) extends AnyVal {
       
       inline def set_handle(value: Fd): Self = StObject.set(x, "_handle", value.asInstanceOf[js.Any])
     }

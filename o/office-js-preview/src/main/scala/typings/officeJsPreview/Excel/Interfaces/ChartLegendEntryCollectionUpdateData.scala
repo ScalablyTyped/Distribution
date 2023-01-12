@@ -16,7 +16,8 @@ object ChartLegendEntryCollectionUpdateData {
     __obj.asInstanceOf[ChartLegendEntryCollectionUpdateData]
   }
   
-  extension [Self <: ChartLegendEntryCollectionUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartLegendEntryCollectionUpdateData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[ChartLegendEntryData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

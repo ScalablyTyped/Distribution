@@ -15,7 +15,8 @@ object MappableQuery {
     __obj.asInstanceOf[MappableQuery[T]]
   }
   
-  extension [Self <: MappableQuery[?], T](x: Self & MappableQuery[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappableQuery[?], T] (val x: Self & MappableQuery[T]) extends AnyVal {
     
     inline def setMap(value: js.Function1[/* value */ T, Any] => Query[Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
   }

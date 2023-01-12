@@ -95,7 +95,8 @@ object CreateAxiosDefaults {
     __obj.asInstanceOf[CreateAxiosDefaults[D]]
   }
   
-  extension [Self <: CreateAxiosDefaults[?], D](x: Self & CreateAxiosDefaults[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAxiosDefaults[?], D] (val x: Self & CreateAxiosDefaults[D]) extends AnyVal {
     
     inline def setAdapter(value: /* config */ AxiosRequestConfig[Any] => js.Promise[AxiosResponse[Any, Any]]): Self = StObject.set(x, "adapter", js.Any.fromFunction1(value))
     

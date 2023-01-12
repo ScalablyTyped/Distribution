@@ -178,7 +178,8 @@ object libTaskMod {
       __obj.asInstanceOf[TaskMatchProps[T1, T2, T3, A, R]]
     }
     
-    extension [Self <: TaskMatchProps[?, ?, ?, ?, ?], T1, T2, T3, A /* <: js.Array[Any] */, R](x: Self & (TaskMatchProps[T1, T2, T3, A, R])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskMatchProps[?, ?, ?, ?, ?], T1, T2, T3, A /* <: js.Array[Any] */, R] (val x: Self & (TaskMatchProps[T1, T2, T3, A, R])) extends AnyVal {
       
       inline def setPending(value: /* args */ A => T1): Self = StObject.set(x, "pending", js.Any.fromFunction1(value))
       
@@ -233,7 +234,8 @@ object libTaskMod {
       __obj.asInstanceOf[TaskMethods[A, R]]
     }
     
-    extension [Self <: TaskMethods[?, ?], A /* <: js.Array[Any] */, R](x: Self & (TaskMethods[A, R])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskMethods[?, ?], A /* <: js.Array[Any] */, R] (val x: Self & (TaskMethods[A, R])) extends AnyVal {
       
       inline def setMatch(value: TaskMatchProps[Any, Any, Any, A, R] => Any | Any | Any): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
       
@@ -266,7 +268,8 @@ object libTaskMod {
       __obj.asInstanceOf[TaskOptions[A, R]]
     }
     
-    extension [Self <: TaskOptions[?, ?], A /* <: js.Array[Any] */, R](x: Self & (TaskOptions[A, R])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskOptions[?, ?], A /* <: js.Array[Any] */, R] (val x: Self & (TaskOptions[A, R])) extends AnyVal {
       
       inline def setArgs(value: A): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -334,7 +337,8 @@ object libTaskMod {
       __obj.asInstanceOf[TaskState[A, R]]
     }
     
-    extension [Self <: TaskState[?, ?], A /* <: js.Array[Any] */, R](x: Self & (TaskState[A, R])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskState[?, ?], A /* <: js.Array[Any] */, R] (val x: Self & (TaskState[A, R])) extends AnyVal {
       
       inline def setArgs(value: A): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

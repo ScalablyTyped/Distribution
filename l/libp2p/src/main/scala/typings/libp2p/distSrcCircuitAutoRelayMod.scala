@@ -82,7 +82,8 @@ object distSrcCircuitAutoRelayMod {
       __obj.asInstanceOf[AutoRelayInit]
     }
     
-    extension [Self <: AutoRelayInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoRelayInit] (val x: Self) extends AnyVal {
       
       inline def setAddressSorter(value: (/* a */ Address, /* b */ Address) => `-1` | `0` | `1`): Self = StObject.set(x, "addressSorter", js.Any.fromFunction2(value))
       

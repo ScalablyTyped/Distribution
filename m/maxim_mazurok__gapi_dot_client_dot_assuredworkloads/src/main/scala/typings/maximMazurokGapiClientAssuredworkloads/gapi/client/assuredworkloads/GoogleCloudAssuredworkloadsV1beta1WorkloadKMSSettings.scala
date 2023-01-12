@@ -22,7 +22,8 @@ object GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings {
     __obj.asInstanceOf[GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings]
   }
   
-  extension [Self <: GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings] (val x: Self) extends AnyVal {
     
     inline def setNextRotationTime(value: String): Self = StObject.set(x, "nextRotationTime", value.asInstanceOf[js.Any])
     

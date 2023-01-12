@@ -20,7 +20,8 @@ object IfResize {
     __obj.asInstanceOf[IfResize]
   }
   
-  extension [Self <: IfResize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IfResize] (val x: Self) extends AnyVal {
     
     inline def setIfResize(value: Boolean): Self = StObject.set(x, "ifResize", value.asInstanceOf[js.Any])
     

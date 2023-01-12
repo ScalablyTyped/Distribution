@@ -112,7 +112,8 @@ object esNotificationMod {
       __obj.asInstanceOf[NoticeContent]
     }
     
-    extension [Self <: NoticeContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoticeContent] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -221,7 +222,8 @@ object esNotificationMod {
       __obj.asInstanceOf[NotificationInstance]
     }
     
-    extension [Self <: NotificationInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationInstance] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: Notification): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -258,7 +260,8 @@ object esNotificationMod {
       __obj.asInstanceOf[NotificationProps]
     }
     
-    extension [Self <: NotificationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationProps] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: String | js.Object): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -301,7 +304,8 @@ object esNotificationMod {
       __obj.asInstanceOf[NotificationState]
     }
     
-    extension [Self <: NotificationState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationState] (val x: Self) extends AnyVal {
       
       inline def setNotices(value: js.Array[HolderCallback]): Self = StObject.set(x, "notices", value.asInstanceOf[js.Any])
       

@@ -41,7 +41,8 @@ object CPAttributeAsync {
     __obj.asInstanceOf[CPAttributeAsync]
   }
   
-  extension [Self <: CPAttributeAsync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CPAttributeAsync] (val x: Self) extends AnyVal {
     
     inline def setName(
       value: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CADES_Common.ValuesOf<cadesplugin.CAdESCOM.CADESCOM_ATTRIBUTE> extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CADES_Common.ValuesOf<cadesplugin.CAdESCOM.CADESCOM_ATTRIBUTE>> : // tslint:disable-line ban-types

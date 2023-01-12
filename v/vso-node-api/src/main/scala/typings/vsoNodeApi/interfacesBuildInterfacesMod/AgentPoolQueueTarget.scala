@@ -39,7 +39,8 @@ object AgentPoolQueueTarget {
     __obj.asInstanceOf[AgentPoolQueueTarget]
   }
   
-  extension [Self <: AgentPoolQueueTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentPoolQueueTarget] (val x: Self) extends AnyVal {
     
     inline def setAllowScriptsAuthAccessOption(value: Boolean): Self = StObject.set(x, "allowScriptsAuthAccessOption", value.asInstanceOf[js.Any])
     

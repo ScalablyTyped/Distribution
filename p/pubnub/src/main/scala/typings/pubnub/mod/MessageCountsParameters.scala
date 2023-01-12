@@ -17,7 +17,8 @@ object MessageCountsParameters {
     __obj.asInstanceOf[MessageCountsParameters]
   }
   
-  extension [Self <: MessageCountsParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageCountsParameters] (val x: Self) extends AnyVal {
     
     inline def setChannelTimetokens(value: js.Array[Double | String]): Self = StObject.set(x, "channelTimetokens", value.asInstanceOf[js.Any])
     

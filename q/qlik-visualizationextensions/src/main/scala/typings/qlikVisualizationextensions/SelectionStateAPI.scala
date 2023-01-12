@@ -93,7 +93,8 @@ object SelectionStateAPI {
       __obj.asInstanceOf[IQFieldSelections]
     }
     
-    extension [Self <: IQFieldSelections](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IQFieldSelections] (val x: Self) extends AnyVal {
       
       inline def setField(value: IQField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -181,7 +182,8 @@ object SelectionStateAPI {
       __obj.asInstanceOf[IQSelectionState]
     }
     
-    extension [Self <: IQSelectionState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IQSelectionState] (val x: Self) extends AnyVal {
       
       inline def setBackCount(value: Double): Self = StObject.set(x, "backCount", value.asInstanceOf[js.Any])
       

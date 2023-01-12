@@ -66,7 +66,8 @@ object CreateCachediSCSIVolumeInput {
     __obj.asInstanceOf[CreateCachediSCSIVolumeInput]
   }
   
-  extension [Self <: CreateCachediSCSIVolumeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCachediSCSIVolumeInput] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

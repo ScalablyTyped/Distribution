@@ -47,7 +47,8 @@ object FlashText {
     __obj.asInstanceOf[FlashText]
   }
   
-  extension [Self <: FlashText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashText] (val x: Self) extends AnyVal {
     
     inline def setAccName(value: String): Self = StObject.set(x, "accName", value.asInstanceOf[js.Any])
     

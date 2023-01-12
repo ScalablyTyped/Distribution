@@ -20,7 +20,8 @@ object PartialCoordscenterOffset {
     __obj.asInstanceOf[PartialCoordscenterOffset]
   }
   
-  extension [Self <: PartialCoordscenterOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCoordscenterOffset] (val x: Self) extends AnyVal {
     
     inline def setCenterOffset(value: Double): Self = StObject.set(x, "centerOffset", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object IStateTransition {
     __obj.asInstanceOf[IStateTransition]
   }
   
-  extension [Self <: IStateTransition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStateTransition] (val x: Self) extends AnyVal {
     
     inline def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     

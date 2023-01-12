@@ -21,7 +21,8 @@ object IntrospectionEnumValue {
     __obj.asInstanceOf[IntrospectionEnumValue]
   }
   
-  extension [Self <: IntrospectionEnumValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntrospectionEnumValue] (val x: Self) extends AnyVal {
     
     inline def setDeprecationReason(value: String): Self = StObject.set(x, "deprecationReason", value.asInstanceOf[js.Any])
     

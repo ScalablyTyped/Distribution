@@ -22,7 +22,8 @@ object EventStoreEventStore {
     __obj.asInstanceOf[EventStoreEventStore]
   }
   
-  extension [Self <: EventStoreEventStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventStoreEventStore] (val x: Self) extends AnyVal {
     
     inline def setEventStore(value: typings.fullcalendarCommon.mod.EventStore): Self = StObject.set(x, "eventStore", value.asInstanceOf[js.Any])
     

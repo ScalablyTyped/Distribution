@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyInteractionTracki]
     }
     
-    extension [Self <: ReadonlyInteractionTracki](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyInteractionTracki] (val x: Self) extends AnyVal {
       
       inline def setLEFT_DOWN(value: Double): Self = StObject.set(x, "LEFT_DOWN", value.asInstanceOf[js.Any])
       

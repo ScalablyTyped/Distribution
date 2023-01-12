@@ -17,7 +17,8 @@ object Remember {
     __obj.asInstanceOf[Remember]
   }
   
-  extension [Self <: Remember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Remember] (val x: Self) extends AnyVal {
     
     inline def setDevice(value: typings.trezorConnect.libTypescriptTrezorDeviceMod.Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     

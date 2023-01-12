@@ -24,7 +24,8 @@ object WebViewPartition {
     __obj.asInstanceOf[WebViewPartition]
   }
   
-  extension [Self <: WebViewPartition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebViewPartition] (val x: Self) extends AnyVal {
     
     inline def setAccessible_resources(value: js.Array[String]): Self = StObject.set(x, "accessible_resources", value.asInstanceOf[js.Any])
     

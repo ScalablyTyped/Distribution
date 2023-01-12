@@ -41,7 +41,8 @@ object ICertificateRequestProperties {
     __obj.asInstanceOf[ICertificateRequestProperties]
   }
   
-  extension [Self <: ICertificateRequestProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICertificateRequestProperties] (val x: Self) extends AnyVal {
     
     inline def setExportable(value: ExportOption): Self = StObject.set(x, "exportable", value.asInstanceOf[js.Any])
     

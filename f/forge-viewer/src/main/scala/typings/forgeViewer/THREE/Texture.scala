@@ -106,7 +106,8 @@ object Texture {
     __obj.asInstanceOf[Texture]
   }
   
-  extension [Self <: Texture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Texture] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(value: (String, js.Function1[/* event */ Any, Unit]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     

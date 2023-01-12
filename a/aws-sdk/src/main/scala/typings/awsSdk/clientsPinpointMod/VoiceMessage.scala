@@ -38,7 +38,8 @@ object VoiceMessage {
     __obj.asInstanceOf[VoiceMessage]
   }
   
-  extension [Self <: VoiceMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceMessage] (val x: Self) extends AnyVal {
     
     inline def setBody(value: string): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     

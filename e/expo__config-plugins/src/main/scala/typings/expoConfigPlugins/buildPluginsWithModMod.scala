@@ -45,7 +45,8 @@ object buildPluginsWithModMod {
       __obj.asInstanceOf[BaseModOptions]
     }
     
-    extension [Self <: BaseModOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseModOptions] (val x: Self) extends AnyVal {
       
       inline def setIsIntrospective(value: Boolean): Self = StObject.set(x, "isIntrospective", value.asInstanceOf[js.Any])
       

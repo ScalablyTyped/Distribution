@@ -19,7 +19,8 @@ object DeleteFooterRequest {
     __obj.asInstanceOf[DeleteFooterRequest]
   }
   
-  extension [Self <: DeleteFooterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFooterRequest] (val x: Self) extends AnyVal {
     
     inline def setFooterId(value: String): Self = StObject.set(x, "footerId", value.asInstanceOf[js.Any])
     

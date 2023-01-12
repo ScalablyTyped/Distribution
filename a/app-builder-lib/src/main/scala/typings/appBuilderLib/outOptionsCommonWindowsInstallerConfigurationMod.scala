@@ -88,7 +88,8 @@ object outOptionsCommonWindowsInstallerConfigurationMod {
       __obj.asInstanceOf[CommonWindowsInstallerConfiguration]
     }
     
-    extension [Self <: CommonWindowsInstallerConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonWindowsInstallerConfiguration] (val x: Self) extends AnyVal {
       
       inline def setCreateDesktopShortcut(value: Boolean | always): Self = StObject.set(x, "createDesktopShortcut", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object outOptionsCommonWindowsInstallerConfigurationMod {
       __obj.asInstanceOf[FinalCommonWindowsInstallerOptions]
     }
     
-    extension [Self <: FinalCommonWindowsInstallerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FinalCommonWindowsInstallerOptions] (val x: Self) extends AnyVal {
       
       inline def setIsAssisted(value: Boolean): Self = StObject.set(x, "isAssisted", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object AggregationsGeoLinePoint {
     __obj.asInstanceOf[AggregationsGeoLinePoint]
   }
   
-  extension [Self <: AggregationsGeoLinePoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsGeoLinePoint] (val x: Self) extends AnyVal {
     
     inline def setField(value: Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
   }

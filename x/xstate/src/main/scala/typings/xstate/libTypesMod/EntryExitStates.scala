@@ -32,7 +32,8 @@ object EntryExitStates {
     __obj.asInstanceOf[EntryExitStates[TContext]]
   }
   
-  extension [Self <: EntryExitStates[?], TContext](x: Self & EntryExitStates[TContext]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntryExitStates[?], TContext] (val x: Self & EntryExitStates[TContext]) extends AnyVal {
     
     inline def setEntry(
       value: Set[

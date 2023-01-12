@@ -18,7 +18,8 @@ object DeleteReplicationGroupMemberAction {
     __obj.asInstanceOf[DeleteReplicationGroupMemberAction]
   }
   
-  extension [Self <: DeleteReplicationGroupMemberAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteReplicationGroupMemberAction] (val x: Self) extends AnyVal {
     
     inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
   }

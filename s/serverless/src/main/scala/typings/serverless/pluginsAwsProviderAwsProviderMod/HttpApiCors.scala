@@ -25,7 +25,8 @@ object HttpApiCors {
     __obj.asInstanceOf[HttpApiCors]
   }
   
-  extension [Self <: HttpApiCors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpApiCors] (val x: Self) extends AnyVal {
     
     inline def setAllowCredentials(value: Boolean): Self = StObject.set(x, "allowCredentials", value.asInstanceOf[js.Any])
     

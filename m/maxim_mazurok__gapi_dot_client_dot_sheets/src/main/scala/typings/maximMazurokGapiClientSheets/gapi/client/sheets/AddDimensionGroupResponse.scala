@@ -16,7 +16,8 @@ object AddDimensionGroupResponse {
     __obj.asInstanceOf[AddDimensionGroupResponse]
   }
   
-  extension [Self <: AddDimensionGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddDimensionGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setDimensionGroups(value: js.Array[DimensionGroup]): Self = StObject.set(x, "dimensionGroups", value.asInstanceOf[js.Any])
     

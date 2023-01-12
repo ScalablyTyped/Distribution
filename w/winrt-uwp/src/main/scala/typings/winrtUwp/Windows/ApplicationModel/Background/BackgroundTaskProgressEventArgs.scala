@@ -20,7 +20,8 @@ object BackgroundTaskProgressEventArgs {
     __obj.asInstanceOf[BackgroundTaskProgressEventArgs]
   }
   
-  extension [Self <: BackgroundTaskProgressEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundTaskProgressEventArgs] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     

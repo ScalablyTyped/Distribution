@@ -210,7 +210,8 @@ object libRestPreviewDeployedDevicesFleetCertificateMod {
       __obj.asInstanceOf[CertificateInstanceUpdateOptions]
     }
     
-    extension [Self <: CertificateInstanceUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateInstanceUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setDeviceSid(value: String): Self = StObject.set(x, "deviceSid", value.asInstanceOf[js.Any])
       
@@ -380,7 +381,8 @@ object libRestPreviewDeployedDevicesFleetCertificateMod {
       __obj.asInstanceOf[CertificateListInstanceCreateOptions]
     }
     
-    extension [Self <: CertificateListInstanceCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateListInstanceCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setCertificateData(value: String): Self = StObject.set(x, "certificateData", value.asInstanceOf[js.Any])
       
@@ -438,7 +440,8 @@ object libRestPreviewDeployedDevicesFleetCertificateMod {
       __obj.asInstanceOf[CertificateListInstanceEachOptions]
     }
     
-    extension [Self <: CertificateListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ CertificateInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -494,7 +497,8 @@ object libRestPreviewDeployedDevicesFleetCertificateMod {
       __obj.asInstanceOf[CertificateListInstanceOptions]
     }
     
-    extension [Self <: CertificateListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setDeviceSid(value: String): Self = StObject.set(x, "deviceSid", value.asInstanceOf[js.Any])
       
@@ -535,7 +539,8 @@ object libRestPreviewDeployedDevicesFleetCertificateMod {
       __obj.asInstanceOf[CertificateListInstancePageOptions]
     }
     
-    extension [Self <: CertificateListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setDeviceSid(value: String): Self = StObject.set(x, "deviceSid", value.asInstanceOf[js.Any])
       
@@ -620,7 +625,8 @@ object libRestPreviewDeployedDevicesFleetCertificateMod {
       __obj.asInstanceOf[CertificateResource]
     }
     
-    extension [Self <: CertificateResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -653,7 +659,8 @@ object libRestPreviewDeployedDevicesFleetCertificateMod {
       __obj.asInstanceOf[CertificateSolution]
     }
     
-    extension [Self <: CertificateSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateSolution] (val x: Self) extends AnyVal {
       
       inline def setFleetSid(value: String): Self = StObject.set(x, "fleetSid", value.asInstanceOf[js.Any])
       

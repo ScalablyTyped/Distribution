@@ -15,7 +15,8 @@ object ContentApplicationjsonDocumentationurlErrorsMessage {
     __obj.asInstanceOf[ContentApplicationjsonDocumentationurlErrorsMessage]
   }
   
-  extension [Self <: ContentApplicationjsonDocumentationurlErrorsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonDocumentationurlErrorsMessage] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonDocumentationurlErrorsMessage): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

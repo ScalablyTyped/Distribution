@@ -43,7 +43,8 @@ object CreateFile {
   
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.CreateFile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.CreateFile */ Boolean]
   
-  extension [Self <: CreateFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFile] (val x: Self) extends AnyVal {
     
     inline def setKind(value: create): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

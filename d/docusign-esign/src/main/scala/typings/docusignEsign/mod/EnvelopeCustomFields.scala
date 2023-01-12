@@ -31,7 +31,8 @@ object EnvelopeCustomFields {
     __obj.asInstanceOf[EnvelopeCustomFields]
   }
   
-  extension [Self <: EnvelopeCustomFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopeCustomFields] (val x: Self) extends AnyVal {
     
     inline def setListCustomFields(
       value: js.Array[

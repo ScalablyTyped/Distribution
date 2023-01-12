@@ -56,7 +56,8 @@ object Embeddable {
     __obj.asInstanceOf[Embeddable]
   }
   
-  extension [Self <: Embeddable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Embeddable] (val x: Self) extends AnyVal {
     
     inline def setEmbeddable(value: Boolean): Self = StObject.set(x, "embeddable", value.asInstanceOf[js.Any])
     

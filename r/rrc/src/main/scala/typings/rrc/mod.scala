@@ -117,7 +117,8 @@ object mod {
       __obj.asInstanceOf[OnUpdateProps]
     }
     
-    extension [Self <: OnUpdateProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnUpdateProps] (val x: Self) extends AnyVal {
       
       inline def setCall(value: /* location */ Location => Unit): Self = StObject.set(x, "call", js.Any.fromFunction1(value))
       
@@ -146,7 +147,8 @@ object mod {
       __obj.asInstanceOf[ScrollIntoViewProps]
     }
     
-    extension [Self <: ScrollIntoViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollIntoViewProps] (val x: Self) extends AnyVal {
       
       inline def setAlignToTop(value: Boolean): Self = StObject.set(x, "alignToTop", value.asInstanceOf[js.Any])
       
@@ -171,7 +173,8 @@ object mod {
       __obj.asInstanceOf[StatusProps]
     }
     
-    extension [Self <: StatusProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatusProps] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
@@ -193,7 +196,8 @@ object mod {
       __obj.asInstanceOf[SwitchProps]
     }
     
-    extension [Self <: SwitchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitchProps] (val x: Self) extends AnyVal {
       
       inline def setLocation(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationDescriptorObject */ Any) & Pathname
@@ -226,7 +230,8 @@ object mod {
       __obj.asInstanceOf[WhenActiveOptions]
     }
     
-    extension [Self <: WhenActiveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WhenActiveOptions] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -269,7 +274,8 @@ object mod {
       __obj.asInstanceOf[WithScrollOptions]
     }
     
-    extension [Self <: WithScrollOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithScrollOptions] (val x: Self) extends AnyVal {
       
       inline def setAlignToTop(value: Boolean): Self = StObject.set(x, "alignToTop", value.asInstanceOf[js.Any])
       
@@ -297,7 +303,8 @@ object mod {
       __obj.asInstanceOf[WrapSwitchProps[Params]]
     }
     
-    extension [Self <: WrapSwitchProps[?], Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */](x: Self & WrapSwitchProps[Params]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrapSwitchProps[?], Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */] (val x: Self & WrapSwitchProps[Params]) extends AnyVal {
       
       inline def setGetKey(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatchObject<Params> */ /* match */ Any, /* route */ RouteConfiguration, /* location */ Location) => String

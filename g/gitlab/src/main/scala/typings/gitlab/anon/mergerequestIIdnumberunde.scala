@@ -21,7 +21,8 @@ object mergerequestIIdnumberunde {
     __obj.asInstanceOf[mergerequestIIdnumberunde]
   }
   
-  extension [Self <: mergerequestIIdnumberunde](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: mergerequestIIdnumberunde] (val x: Self) extends AnyVal {
     
     inline def setMergerequestIId(value: Double): Self = StObject.set(x, "mergerequestIId", value.asInstanceOf[js.Any])
     

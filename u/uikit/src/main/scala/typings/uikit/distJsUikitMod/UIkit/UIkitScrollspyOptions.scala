@@ -25,7 +25,8 @@ object UIkitScrollspyOptions {
     __obj.asInstanceOf[UIkitScrollspyOptions]
   }
   
-  extension [Self <: UIkitScrollspyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitScrollspyOptions] (val x: Self) extends AnyVal {
     
     inline def setCls(value: String): Self = StObject.set(x, "cls", value.asInstanceOf[js.Any])
     

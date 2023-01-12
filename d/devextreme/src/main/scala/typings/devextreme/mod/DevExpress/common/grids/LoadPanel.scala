@@ -59,7 +59,8 @@ object LoadPanel {
     __obj.asInstanceOf[LoadPanel]
   }
   
-  extension [Self <: LoadPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadPanel] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean | Mode): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object AppStoreProduct {
     __obj.asInstanceOf[AppStoreProduct]
   }
   
-  extension [Self <: AppStoreProduct](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppStoreProduct] (val x: Self) extends AnyVal {
     
     inline def setMarketPlace(value: String): Self = StObject.set(x, "marketPlace", value.asInstanceOf[js.Any])
     

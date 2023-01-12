@@ -26,7 +26,8 @@ object BackgroundStyle {
     __obj.asInstanceOf[BackgroundStyle]
   }
   
-  extension [Self <: BackgroundStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundStyle] (val x: Self) extends AnyVal {
     
     inline def setBackgroundStyle(value: FillStringOpacityNumber): Self = StObject.set(x, "backgroundStyle", value.asInstanceOf[js.Any])
     

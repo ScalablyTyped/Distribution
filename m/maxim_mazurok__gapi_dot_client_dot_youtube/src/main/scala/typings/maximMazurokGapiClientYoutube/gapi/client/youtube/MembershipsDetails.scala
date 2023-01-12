@@ -28,7 +28,8 @@ object MembershipsDetails {
     __obj.asInstanceOf[MembershipsDetails]
   }
   
-  extension [Self <: MembershipsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MembershipsDetails] (val x: Self) extends AnyVal {
     
     inline def setAccessibleLevels(value: js.Array[String]): Self = StObject.set(x, "accessibleLevels", value.asInstanceOf[js.Any])
     

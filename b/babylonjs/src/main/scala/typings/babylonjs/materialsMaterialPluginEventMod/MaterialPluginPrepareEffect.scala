@@ -44,7 +44,8 @@ object MaterialPluginPrepareEffect {
     __obj.asInstanceOf[MaterialPluginPrepareEffect]
   }
   
-  extension [Self <: MaterialPluginPrepareEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaterialPluginPrepareEffect] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

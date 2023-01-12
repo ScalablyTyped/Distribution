@@ -69,7 +69,8 @@ object ojLegendSettablePropertiesLenient {
     __obj.asInstanceOf[ojLegendSettablePropertiesLenient[K, D]]
   }
   
-  extension [Self <: ojLegendSettablePropertiesLenient[?, ?], K, D](x: Self & (ojLegendSettablePropertiesLenient[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojLegendSettablePropertiesLenient[?, ?], K, D] (val x: Self & (ojLegendSettablePropertiesLenient[K, D])) extends AnyVal {
     
     inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

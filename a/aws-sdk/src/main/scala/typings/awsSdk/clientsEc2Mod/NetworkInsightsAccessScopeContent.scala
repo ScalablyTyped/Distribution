@@ -28,7 +28,8 @@ object NetworkInsightsAccessScopeContent {
     __obj.asInstanceOf[NetworkInsightsAccessScopeContent]
   }
   
-  extension [Self <: NetworkInsightsAccessScopeContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkInsightsAccessScopeContent] (val x: Self) extends AnyVal {
     
     inline def setExcludePaths(value: AccessScopePathList): Self = StObject.set(x, "ExcludePaths", value.asInstanceOf[js.Any])
     

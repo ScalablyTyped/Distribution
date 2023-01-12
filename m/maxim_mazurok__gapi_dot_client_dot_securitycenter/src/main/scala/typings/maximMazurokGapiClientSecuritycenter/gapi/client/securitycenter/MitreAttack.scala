@@ -32,7 +32,8 @@ object MitreAttack {
     __obj.asInstanceOf[MitreAttack]
   }
   
-  extension [Self <: MitreAttack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MitreAttack] (val x: Self) extends AnyVal {
     
     inline def setAdditionalTactics(value: js.Array[String]): Self = StObject.set(x, "additionalTactics", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object Window {
     __obj.asInstanceOf[Window]
   }
   
-  extension [Self <: Window](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
     
     inline def setResizeObserver(value: Instantiable): Self = StObject.set(x, "ResizeObserver", value.asInstanceOf[js.Any])
   }

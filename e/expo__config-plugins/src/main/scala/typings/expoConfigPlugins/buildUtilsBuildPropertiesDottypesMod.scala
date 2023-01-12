@@ -25,7 +25,8 @@ object buildUtilsBuildPropertiesDottypesMod {
       __obj.asInstanceOf[ConfigToPropertyRuleType[SourceConfigType]]
     }
     
-    extension [Self <: ConfigToPropertyRuleType[?], SourceConfigType /* <: BuildPropertiesConfig */](x: Self & ConfigToPropertyRuleType[SourceConfigType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigToPropertyRuleType[?], SourceConfigType /* <: BuildPropertiesConfig */] (val x: Self & ConfigToPropertyRuleType[SourceConfigType]) extends AnyVal {
       
       inline def setPropName(value: String): Self = StObject.set(x, "propName", value.asInstanceOf[js.Any])
       

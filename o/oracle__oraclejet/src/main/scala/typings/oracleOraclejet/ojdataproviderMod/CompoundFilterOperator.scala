@@ -30,7 +30,8 @@ object CompoundFilterOperator {
     inline def $or: typings.oracleOraclejet.oracleOraclejetStrings.$or = "$or".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.$or]
   }
   
-  extension [Self <: CompoundFilterOperator[?], D](x: Self & CompoundFilterOperator[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompoundFilterOperator[?], D] (val x: Self & CompoundFilterOperator[D]) extends AnyVal {
     
     inline def setCriteria(value: js.Array[FilterOperator[D]]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CameraPopoverOptions {
     __obj.asInstanceOf[CameraPopoverOptions]
   }
   
-  extension [Self <: CameraPopoverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraPopoverOptions] (val x: Self) extends AnyVal {
     
     inline def setArrowDir(value: Double): Self = StObject.set(x, "arrowDir", value.asInstanceOf[js.Any])
     

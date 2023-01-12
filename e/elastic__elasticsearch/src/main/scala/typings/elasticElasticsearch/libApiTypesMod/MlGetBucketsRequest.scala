@@ -39,7 +39,8 @@ object MlGetBucketsRequest {
     __obj.asInstanceOf[MlGetBucketsRequest]
   }
   
-  extension [Self <: MlGetBucketsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlGetBucketsRequest] (val x: Self) extends AnyVal {
     
     inline def setAnomaly_score(value: double): Self = StObject.set(x, "anomaly_score", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetBucketPolicyRequest {
     __obj.asInstanceOf[GetBucketPolicyRequest]
   }
   
-  extension [Self <: GetBucketPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBucketPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object HtmlElms {
     __obj.asInstanceOf[HtmlElms]
   }
   
-  extension [Self <: HtmlElms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HtmlElms] (val x: Self) extends AnyVal {
     
     inline def setVariant(value: StringDictionary[HtmlElmsVariant]): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     

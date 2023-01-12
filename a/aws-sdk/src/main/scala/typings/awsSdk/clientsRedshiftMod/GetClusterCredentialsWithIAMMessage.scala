@@ -28,7 +28,8 @@ object GetClusterCredentialsWithIAMMessage {
     __obj.asInstanceOf[GetClusterCredentialsWithIAMMessage]
   }
   
-  extension [Self <: GetClusterCredentialsWithIAMMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetClusterCredentialsWithIAMMessage] (val x: Self) extends AnyVal {
     
     inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     

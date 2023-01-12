@@ -26,7 +26,8 @@ object INxSimpleDimValue {
     __obj.asInstanceOf[INxSimpleDimValue]
   }
   
-  extension [Self <: INxSimpleDimValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxSimpleDimValue] (val x: Self) extends AnyVal {
     
     inline def setQElemNo(value: Double): Self = StObject.set(x, "qElemNo", value.asInstanceOf[js.Any])
     

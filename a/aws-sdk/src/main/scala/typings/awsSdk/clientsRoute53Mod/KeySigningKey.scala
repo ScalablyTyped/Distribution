@@ -93,7 +93,8 @@ object KeySigningKey {
     __obj.asInstanceOf[KeySigningKey]
   }
   
-  extension [Self <: KeySigningKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeySigningKey] (val x: Self) extends AnyVal {
     
     inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     

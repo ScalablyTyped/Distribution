@@ -32,7 +32,8 @@ object TerminalLinkProvider {
     __obj.asInstanceOf[TerminalLinkProvider[T]]
   }
   
-  extension [Self <: TerminalLinkProvider[?], T /* <: TerminalLink */](x: Self & TerminalLinkProvider[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminalLinkProvider[?], T /* <: TerminalLink */] (val x: Self & TerminalLinkProvider[T]) extends AnyVal {
     
     inline def setHandleTerminalLink(value: T => ProviderResult[Unit]): Self = StObject.set(x, "handleTerminalLink", js.Any.fromFunction1(value))
     

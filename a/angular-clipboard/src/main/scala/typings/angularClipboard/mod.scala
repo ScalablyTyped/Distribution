@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[ClipboardService]
     }
     
-    extension [Self <: ClipboardService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClipboardService] (val x: Self) extends AnyVal {
       
       inline def setCopyText(value: String => Unit): Self = StObject.set(x, "copyText", js.Any.fromFunction1(value))
       

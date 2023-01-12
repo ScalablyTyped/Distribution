@@ -44,7 +44,8 @@ object SVGStyleElement {
     __obj.asInstanceOf[SVGStyleElement]
   }
   
-  extension [Self <: SVGStyleElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGStyleElement] (val x: Self) extends AnyVal {
     
     inline def setFocusable(value: SVGAnimatedEnumeration): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     

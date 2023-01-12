@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Create]
     }
     
-    extension [Self <: Create](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Create] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: CreateConfig => LinkHandler): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Institutionid]
     }
     
-    extension [Self <: Institutionid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Institutionid] (val x: Self) extends AnyVal {
       
       inline def setInstitution_id(value: String): Self = StObject.set(x, "institution_id", value.asInstanceOf[js.Any])
       

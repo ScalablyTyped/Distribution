@@ -36,7 +36,8 @@ object Bookmark {
     __obj.asInstanceOf[Bookmark]
   }
   
-  extension [Self <: Bookmark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bookmark] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: Interval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     

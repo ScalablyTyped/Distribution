@@ -22,7 +22,8 @@ object keyinAxisNameXAxisTypeYAx {
     __obj.asInstanceOf[keyinAxisNameXAxisTypeYAx]
   }
   
-  extension [Self <: keyinAxisNameXAxisTypeYAx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: keyinAxisNameXAxisTypeYAx] (val x: Self) extends AnyVal {
     
     inline def setX(value: XAxisType | YAxisType): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

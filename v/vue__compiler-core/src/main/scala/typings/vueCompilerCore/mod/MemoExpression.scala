@@ -26,7 +26,8 @@ object MemoExpression {
     __obj.asInstanceOf[MemoExpression]
   }
   
-  extension [Self <: MemoExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemoExpression] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Tuple4[ExpressionNode, MemoFactory, String, String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

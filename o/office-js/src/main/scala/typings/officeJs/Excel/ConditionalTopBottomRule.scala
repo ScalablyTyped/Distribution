@@ -44,7 +44,8 @@ object ConditionalTopBottomRule {
     __obj.asInstanceOf[ConditionalTopBottomRule]
   }
   
-  extension [Self <: ConditionalTopBottomRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalTopBottomRule] (val x: Self) extends AnyVal {
     
     inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     

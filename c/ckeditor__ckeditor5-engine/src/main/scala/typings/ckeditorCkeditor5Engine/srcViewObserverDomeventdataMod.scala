@@ -138,7 +138,8 @@ object srcViewObserverDomeventdataMod {
       __obj.asInstanceOf[DomEventData[V, K, L]]
     }
     
-    extension [Self <: DomEventData[?, ?, ?], V /* <: View */, K /* <: InputEvent | ClipboardEvent | TransitionEvent | AnimationEvent | CompositionEvent | FormDataEvent | WheelEvent | ErrorEvent | DragEvent | KeyboardEvent | MouseEvent | SubmitEvent | UIEvent | PointerEvent | TouchEvent | FocusEvent | Event | ProgressEvent[EventTarget] | SecurityPolicyViolationEvent */, L /* <: /* keyof K */ String */](x: Self & (DomEventData[V, K, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomEventData[?, ?, ?], V /* <: View */, K /* <: InputEvent | ClipboardEvent | TransitionEvent | AnimationEvent | CompositionEvent | FormDataEvent | WheelEvent | ErrorEvent | DragEvent | KeyboardEvent | MouseEvent | SubmitEvent | UIEvent | PointerEvent | TouchEvent | FocusEvent | Event | ProgressEvent[EventTarget] | SecurityPolicyViolationEvent */, L /* <: /* keyof K */ String */] (val x: Self & (DomEventData[V, K, L])) extends AnyVal {
       
       inline def setDocument(value: typings.ckeditorCkeditor5Engine.srcViewDocumentMod.default): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
       

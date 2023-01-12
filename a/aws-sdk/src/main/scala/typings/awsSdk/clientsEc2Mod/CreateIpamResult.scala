@@ -18,7 +18,8 @@ object CreateIpamResult {
     __obj.asInstanceOf[CreateIpamResult]
   }
   
-  extension [Self <: CreateIpamResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateIpamResult] (val x: Self) extends AnyVal {
     
     inline def setIpam(value: Ipam): Self = StObject.set(x, "Ipam", value.asInstanceOf[js.Any])
     

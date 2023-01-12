@@ -27,7 +27,8 @@ object XUpdate {
     __obj.asInstanceOf[XUpdate]
   }
   
-  extension [Self <: XUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUpdate] (val x: Self) extends AnyVal {
     
     inline def setInsertExtensionXcsFile(value: (Boolean, String) => Unit): Self = StObject.set(x, "insertExtensionXcsFile", js.Any.fromFunction2(value))
     

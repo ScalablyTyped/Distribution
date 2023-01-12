@@ -18,7 +18,8 @@ object AccelerateConfiguration {
     __obj.asInstanceOf[AccelerateConfiguration]
   }
   
-  extension [Self <: AccelerateConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccelerateConfiguration] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: BucketAccelerateStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

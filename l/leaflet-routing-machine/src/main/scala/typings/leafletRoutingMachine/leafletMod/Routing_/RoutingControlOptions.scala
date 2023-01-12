@@ -52,7 +52,8 @@ object RoutingControlOptions {
     __obj.asInstanceOf[RoutingControlOptions]
   }
   
-  extension [Self <: RoutingControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoutingControlOptions] (val x: Self) extends AnyVal {
     
     inline def setAddWaypoints(value: Boolean): Self = StObject.set(x, "addWaypoints", value.asInstanceOf[js.Any])
     

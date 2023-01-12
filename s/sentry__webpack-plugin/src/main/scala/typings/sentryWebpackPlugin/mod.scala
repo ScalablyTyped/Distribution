@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[SentryCliPlugin]
     }
     
-    extension [Self <: SentryCliPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SentryCliPlugin] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: SentryCliPluginOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
@@ -187,7 +188,8 @@ object mod {
       __obj.asInstanceOf[SentryCliPluginOptions]
     }
     
-    extension [Self <: SentryCliPluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SentryCliPluginOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthToken(value: String): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
       

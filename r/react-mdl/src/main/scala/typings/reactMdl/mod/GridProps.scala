@@ -20,7 +20,8 @@ object GridProps {
     __obj.asInstanceOf[GridProps]
   }
   
-  extension [Self <: GridProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridProps] (val x: Self) extends AnyVal {
     
     inline def setNoSpacing(value: Boolean): Self = StObject.set(x, "noSpacing", value.asInstanceOf[js.Any])
     

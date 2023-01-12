@@ -41,7 +41,8 @@ object ui {
       __obj.asInstanceOf[LicenseDialog]
     }
     
-    extension [Self <: LicenseDialog](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LicenseDialog] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: (XWindow, String, String) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
     }
@@ -89,7 +90,8 @@ object ui {
       __obj.asInstanceOf[PackageManagerDialog]
     }
     
-    extension [Self <: PackageManagerDialog](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageManagerDialog] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: (XWindow, String) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
       
@@ -124,7 +126,8 @@ object ui {
       __obj.asInstanceOf[UpdateRequiredDialog]
     }
     
-    extension [Self <: UpdateRequiredDialog](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateRequiredDialog] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     }

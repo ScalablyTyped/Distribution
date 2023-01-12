@@ -18,7 +18,8 @@ object GetAdministratorAccountResponse {
     __obj.asInstanceOf[GetAdministratorAccountResponse]
   }
   
-  extension [Self <: GetAdministratorAccountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAdministratorAccountResponse] (val x: Self) extends AnyVal {
     
     inline def setAdministrator(value: Invitation): Self = StObject.set(x, "administrator", value.asInstanceOf[js.Any])
     

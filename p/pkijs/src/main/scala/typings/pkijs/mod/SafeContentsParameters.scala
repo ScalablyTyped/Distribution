@@ -18,7 +18,8 @@ object SafeContentsParameters {
     __obj.asInstanceOf[SafeContentsParameters]
   }
   
-  extension [Self <: SafeContentsParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SafeContentsParameters] (val x: Self) extends AnyVal {
     
     inline def setSafeBags(value: js.Array[SafeBag[BagType]]): Self = StObject.set(x, "safeBags", value.asInstanceOf[js.Any])
     

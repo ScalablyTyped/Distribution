@@ -23,7 +23,8 @@ object DisposePackageVersionsResult {
     __obj.asInstanceOf[DisposePackageVersionsResult]
   }
   
-  extension [Self <: DisposePackageVersionsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisposePackageVersionsResult] (val x: Self) extends AnyVal {
     
     inline def setFailedVersions(value: PackageVersionErrorMap): Self = StObject.set(x, "failedVersions", value.asInstanceOf[js.Any])
     

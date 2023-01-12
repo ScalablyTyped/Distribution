@@ -17,7 +17,8 @@ object SlideEffect {
     __obj.asInstanceOf[SlideEffect]
   }
   
-  extension [Self <: SlideEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideEffect] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

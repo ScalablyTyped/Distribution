@@ -205,7 +205,8 @@ object mod {
       __obj.asInstanceOf[GelfMessage]
     }
     
-    extension [Self <: GelfMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GelfMessage] (val x: Self) extends AnyVal {
       
       inline def setFull_message(value: String | Double): Self = StObject.set(x, "full_message", value.asInstanceOf[js.Any])
       

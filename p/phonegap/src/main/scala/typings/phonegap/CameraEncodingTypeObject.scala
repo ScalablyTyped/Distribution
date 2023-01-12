@@ -17,7 +17,8 @@ object CameraEncodingTypeObject {
     __obj.asInstanceOf[CameraEncodingTypeObject]
   }
   
-  extension [Self <: CameraEncodingTypeObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraEncodingTypeObject] (val x: Self) extends AnyVal {
     
     inline def setJPEG(value: Double): Self = StObject.set(x, "JPEG", value.asInstanceOf[js.Any])
     

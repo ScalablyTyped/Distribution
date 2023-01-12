@@ -43,7 +43,8 @@ object EditorContextInsertImageOptions {
     __obj.asInstanceOf[EditorContextInsertImageOptions]
   }
   
-  extension [Self <: EditorContextInsertImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorContextInsertImageOptions] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

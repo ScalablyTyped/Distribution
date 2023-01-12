@@ -48,7 +48,8 @@ object distTypesInternalAjaxErrorsMod {
     @js.native
     val ^ : AjaxErrorCtor = js.native
     
-    extension [Self <: AjaxError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxError] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: AjaxRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       

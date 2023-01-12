@@ -37,7 +37,8 @@ object DropTargetDragEnterEvent {
     __obj.asInstanceOf[DropTargetDragEnterEvent]
   }
   
-  extension [Self <: DropTargetDragEnterEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropTargetDragEnterEvent] (val x: Self) extends AnyVal {
     
     inline def setSupportedDataFlavors(value: SafeArray[DataFlavor]): Self = StObject.set(x, "SupportedDataFlavors", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[GenerateTestHook]
     }
     
-    extension [Self <: GenerateTestHook](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateTestHook] (val x: Self) extends AnyVal {
       
       inline def setGenerateTestHook(value: TestHookGenerator): Self = StObject.set(x, "generateTestHook", value.asInstanceOf[js.Any])
     }

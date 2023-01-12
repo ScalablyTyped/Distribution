@@ -21,7 +21,8 @@ object MlUpdateDataFrameAnalyticsRequest {
     __obj.asInstanceOf[MlUpdateDataFrameAnalyticsRequest]
   }
   
-  extension [Self <: MlUpdateDataFrameAnalyticsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlUpdateDataFrameAnalyticsRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Maxnumthreads): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

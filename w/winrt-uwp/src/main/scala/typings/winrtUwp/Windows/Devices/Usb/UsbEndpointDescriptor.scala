@@ -43,7 +43,8 @@ object UsbEndpointDescriptor {
     __obj.asInstanceOf[UsbEndpointDescriptor]
   }
   
-  extension [Self <: UsbEndpointDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsbEndpointDescriptor] (val x: Self) extends AnyVal {
     
     inline def setAsBulkInEndpointDescriptor(value: UsbBulkInEndpointDescriptor): Self = StObject.set(x, "asBulkInEndpointDescriptor", value.asInstanceOf[js.Any])
     

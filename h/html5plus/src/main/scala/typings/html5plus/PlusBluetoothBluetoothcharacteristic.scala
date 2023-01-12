@@ -32,7 +32,8 @@ object PlusBluetoothBluetoothcharacteristic {
     __obj.asInstanceOf[PlusBluetoothBluetoothcharacteristic]
   }
   
-  extension [Self <: PlusBluetoothBluetoothcharacteristic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusBluetoothBluetoothcharacteristic] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: PlusBluetoothBluetoothcharacteristicProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object AzurePowerShellCredentialOptions {
     __obj.asInstanceOf[AzurePowerShellCredentialOptions]
   }
   
-  extension [Self <: AzurePowerShellCredentialOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AzurePowerShellCredentialOptions] (val x: Self) extends AnyVal {
     
     inline def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object VASTClientCustomStorage {
     __obj.asInstanceOf[VASTClientCustomStorage]
   }
   
-  extension [Self <: VASTClientCustomStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VASTClientCustomStorage] (val x: Self) extends AnyVal {
     
     inline def setGetItem(value: String => String | Null): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
     

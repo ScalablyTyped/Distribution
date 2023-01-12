@@ -28,7 +28,8 @@ object PostgreSQLCatalogSource {
     __obj.asInstanceOf[PostgreSQLCatalogSource]
   }
   
-  extension [Self <: PostgreSQLCatalogSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostgreSQLCatalogSource] (val x: Self) extends AnyVal {
     
     inline def setDatabase(value: EnclosedInStringProperty): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     

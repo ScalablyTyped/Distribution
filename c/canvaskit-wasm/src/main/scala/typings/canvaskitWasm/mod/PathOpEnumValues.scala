@@ -32,7 +32,8 @@ object PathOpEnumValues {
     __obj.asInstanceOf[PathOpEnumValues]
   }
   
-  extension [Self <: PathOpEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathOpEnumValues] (val x: Self) extends AnyVal {
     
     inline def setDifference(value: PathOp): Self = StObject.set(x, "Difference", value.asInstanceOf[js.Any])
     

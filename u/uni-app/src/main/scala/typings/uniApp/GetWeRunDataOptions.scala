@@ -33,7 +33,8 @@ object GetWeRunDataOptions {
     __obj.asInstanceOf[GetWeRunDataOptions]
   }
   
-  extension [Self <: GetWeRunDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWeRunDataOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

@@ -30,7 +30,8 @@ object Sortable {
     __obj.asInstanceOf[Sortable[K, D]]
   }
   
-  extension [Self <: Sortable[?, ?], K, D](x: Self & (Sortable[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sortable[?, ?], K, D] (val x: Self & (Sortable[K, D])) extends AnyVal {
     
     inline def setClassName(value: (js.Function1[/* context */ HeaderContext[K, D], String | Unit | Null]) | String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

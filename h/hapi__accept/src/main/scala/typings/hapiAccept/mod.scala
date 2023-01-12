@@ -70,7 +70,8 @@ object mod {
         __obj.asInstanceOf[Headers]
       }
       
-      extension [Self <: Headers](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
         
         inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
         
@@ -112,7 +113,8 @@ object mod {
         __obj.asInstanceOf[Result]
       }
       
-      extension [Self <: Result](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
         
         inline def setCharsets(value: js.Array[String]): Self = StObject.set(x, "charsets", value.asInstanceOf[js.Any])
         

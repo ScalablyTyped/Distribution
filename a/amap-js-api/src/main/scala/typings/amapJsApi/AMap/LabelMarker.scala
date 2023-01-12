@@ -127,7 +127,8 @@ object LabelMarker {
       __obj.asInstanceOf[IconOptions]
     }
     
-    extension [Self <: IconOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconOptions] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: Anchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -199,7 +200,8 @@ object LabelMarker {
       __obj.asInstanceOf[Options[ExtraData]]
     }
     
-    extension [Self <: Options[?], ExtraData](x: Self & Options[ExtraData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], ExtraData] (val x: Self & Options[ExtraData]) extends AnyVal {
       
       inline def setIcon(value: IconOptions): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
@@ -275,7 +277,8 @@ object LabelMarker {
       __obj.asInstanceOf[TextOptions]
     }
     
-    extension [Self <: TextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextOptions] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -320,7 +323,8 @@ object LabelMarker {
       __obj.asInstanceOf[TextStyle]
     }
     
-    extension [Self <: TextStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextStyle] (val x: Self) extends AnyVal {
       
       inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
       

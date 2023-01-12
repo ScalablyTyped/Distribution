@@ -64,7 +64,8 @@ object anon {
       __obj.asInstanceOf[ApplicationDirectory]
     }
     
-    extension [Self <: ApplicationDirectory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplicationDirectory] (val x: Self) extends AnyVal {
       
       inline def setApplicationDirectory(value: String): Self = StObject.set(x, "applicationDirectory", value.asInstanceOf[js.Any])
       

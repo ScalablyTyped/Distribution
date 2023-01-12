@@ -20,7 +20,8 @@ object SecurePair {
     __obj.asInstanceOf[SecurePair]
   }
   
-  extension [Self <: SecurePair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurePair] (val x: Self) extends AnyVal {
     
     inline def setCleartext(value: TLSSocket): Self = StObject.set(x, "cleartext", value.asInstanceOf[js.Any])
     

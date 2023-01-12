@@ -35,7 +35,8 @@ object CreateIndexRequest {
     __obj.asInstanceOf[CreateIndexRequest]
   }
   
-  extension [Self <: CreateIndexRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateIndexRequest] (val x: Self) extends AnyVal {
     
     inline def setDdoc(value: String): Self = StObject.set(x, "ddoc", value.asInstanceOf[js.Any])
     

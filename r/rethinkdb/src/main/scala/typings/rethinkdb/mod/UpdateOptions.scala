@@ -21,7 +21,8 @@ object UpdateOptions {
     __obj.asInstanceOf[UpdateOptions]
   }
   
-  extension [Self <: UpdateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateOptions] (val x: Self) extends AnyVal {
     
     inline def setDurability(value: hard | soft): Self = StObject.set(x, "durability", value.asInstanceOf[js.Any])
     

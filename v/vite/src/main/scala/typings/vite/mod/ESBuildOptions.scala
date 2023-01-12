@@ -27,7 +27,8 @@ object ESBuildOptions {
     __obj.asInstanceOf[ESBuildOptions]
   }
   
-  extension [Self <: ESBuildOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ESBuildOptions] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: String | js.RegExp | (js.Array[js.RegExp | String])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     

@@ -671,7 +671,8 @@ object libLocalisationPirateMod extends Shortcut {
       __obj.asInstanceOf[Vocabulary]
     }
     
-    extension [Self <: Vocabulary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vocabulary] (val x: Self) extends AnyVal {
       
       inline def setGiveth(value: String): Self = StObject.set(x, "giveth", value.asInstanceOf[js.Any])
       

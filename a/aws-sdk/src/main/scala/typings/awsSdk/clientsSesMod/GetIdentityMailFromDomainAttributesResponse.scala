@@ -18,7 +18,8 @@ object GetIdentityMailFromDomainAttributesResponse {
     __obj.asInstanceOf[GetIdentityMailFromDomainAttributesResponse]
   }
   
-  extension [Self <: GetIdentityMailFromDomainAttributesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIdentityMailFromDomainAttributesResponse] (val x: Self) extends AnyVal {
     
     inline def setMailFromDomainAttributes(value: MailFromDomainAttributes): Self = StObject.set(x, "MailFromDomainAttributes", value.asInstanceOf[js.Any])
   }

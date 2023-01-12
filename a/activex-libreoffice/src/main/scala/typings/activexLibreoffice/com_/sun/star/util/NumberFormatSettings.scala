@@ -53,7 +53,8 @@ object NumberFormatSettings {
     __obj.asInstanceOf[NumberFormatSettings]
   }
   
-  extension [Self <: NumberFormatSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberFormatSettings] (val x: Self) extends AnyVal {
     
     inline def setNoZero(value: Boolean): Self = StObject.set(x, "NoZero", value.asInstanceOf[js.Any])
     

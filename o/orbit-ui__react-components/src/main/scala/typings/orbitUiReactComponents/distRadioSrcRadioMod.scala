@@ -116,7 +116,8 @@ object distRadioSrcRadioMod {
       __obj.asInstanceOf[InnerRadioProps]
     }
     
-    extension [Self <: InnerRadioProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerRadioProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

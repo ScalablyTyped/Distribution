@@ -43,7 +43,8 @@ object IgComboLocale {
     __obj.asInstanceOf[IgComboLocale]
   }
   
-  extension [Self <: IgComboLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgComboLocale] (val x: Self) extends AnyVal {
     
     inline def setClearButtonTitle(value: Any): Self = StObject.set(x, "clearButtonTitle", value.asInstanceOf[js.Any])
     

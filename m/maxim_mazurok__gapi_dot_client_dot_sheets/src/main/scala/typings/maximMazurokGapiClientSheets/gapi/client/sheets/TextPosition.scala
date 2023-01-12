@@ -16,7 +16,8 @@ object TextPosition {
     __obj.asInstanceOf[TextPosition]
   }
   
-  extension [Self <: TextPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextPosition] (val x: Self) extends AnyVal {
     
     inline def setHorizontalAlignment(value: String): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     

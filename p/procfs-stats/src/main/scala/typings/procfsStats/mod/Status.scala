@@ -131,7 +131,8 @@ object Status {
     __obj.asInstanceOf[Status]
   }
   
-  extension [Self <: Status](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
     
     inline def setCapBnd(value: String): Self = StObject.set(x, "CapBnd", value.asInstanceOf[js.Any])
     

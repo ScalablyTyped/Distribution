@@ -67,7 +67,8 @@ object libLoaderParsersWorkerManagerMod {
       __obj.asInstanceOf[WorkerManagerClass]
     }
     
-    extension [Self <: WorkerManagerClass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerManagerClass] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: Any): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       

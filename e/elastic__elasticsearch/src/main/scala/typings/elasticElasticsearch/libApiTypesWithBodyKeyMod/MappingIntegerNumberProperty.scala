@@ -21,7 +21,8 @@ object MappingIntegerNumberProperty {
     __obj.asInstanceOf[MappingIntegerNumberProperty]
   }
   
-  extension [Self <: MappingIntegerNumberProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingIntegerNumberProperty] (val x: Self) extends AnyVal {
     
     inline def setNull_value(value: integer): Self = StObject.set(x, "null_value", value.asInstanceOf[js.Any])
     

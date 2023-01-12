@@ -18,7 +18,8 @@ object UseSortByHooks {
     __obj.asInstanceOf[UseSortByHooks[D]]
   }
   
-  extension [Self <: UseSortByHooks[?], D /* <: js.Object */](x: Self & UseSortByHooks[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseSortByHooks[?], D /* <: js.Object */] (val x: Self & UseSortByHooks[D]) extends AnyVal {
     
     inline def setGetSortByToggleProps(value: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]]): Self = StObject.set(x, "getSortByToggleProps", value.asInstanceOf[js.Any])
     

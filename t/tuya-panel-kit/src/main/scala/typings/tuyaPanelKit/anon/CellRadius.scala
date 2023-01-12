@@ -41,7 +41,8 @@ object CellRadius {
     __obj.asInstanceOf[CellRadius]
   }
   
-  extension [Self <: CellRadius](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellRadius] (val x: Self) extends AnyVal {
     
     inline def setCellBg(value: String): Self = StObject.set(x, "cellBg", value.asInstanceOf[js.Any])
     

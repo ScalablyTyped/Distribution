@@ -80,7 +80,8 @@ object PlotKeltnerchannelsAccessibilityPointOptions {
     __obj.asInstanceOf[PlotKeltnerchannelsAccessibilityPointOptions]
   }
   
-  extension [Self <: PlotKeltnerchannelsAccessibilityPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotKeltnerchannelsAccessibilityPointOptions] (val x: Self) extends AnyVal {
     
     inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     

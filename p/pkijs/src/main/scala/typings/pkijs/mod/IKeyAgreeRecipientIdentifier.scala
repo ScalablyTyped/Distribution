@@ -17,7 +17,8 @@ object IKeyAgreeRecipientIdentifier {
     __obj.asInstanceOf[IKeyAgreeRecipientIdentifier]
   }
   
-  extension [Self <: IKeyAgreeRecipientIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKeyAgreeRecipientIdentifier] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

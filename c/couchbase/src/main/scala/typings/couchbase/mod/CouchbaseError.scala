@@ -34,7 +34,8 @@ object CouchbaseError {
     __obj.asInstanceOf[CouchbaseError]
   }
   
-  extension [Self <: CouchbaseError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CouchbaseError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: errors): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

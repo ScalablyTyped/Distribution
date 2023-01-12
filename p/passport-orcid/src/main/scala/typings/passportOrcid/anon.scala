@@ -46,7 +46,8 @@ object anon {
       __obj.asInstanceOf[OmitStrategyOptionspassRe]
     }
     
-    extension [Self <: OmitStrategyOptionspassRe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitStrategyOptionspassRe] (val x: Self) extends AnyVal {
       
       inline def setAuthorizationURL(value: String): Self = StObject.set(x, "authorizationURL", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object anon {
       __obj.asInstanceOf[Sandbox]
     }
     
-    extension [Self <: Sandbox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sandbox] (val x: Self) extends AnyVal {
       
       inline def setSandbox(value: Boolean): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
       

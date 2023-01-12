@@ -45,7 +45,8 @@ object ServiceWorkerVersion {
     __obj.asInstanceOf[ServiceWorkerVersion]
   }
   
-  extension [Self <: ServiceWorkerVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceWorkerVersion] (val x: Self) extends AnyVal {
     
     inline def setControlledClients(value: js.Array[TargetID]): Self = StObject.set(x, "controlledClients", value.asInstanceOf[js.Any])
     

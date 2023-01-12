@@ -81,7 +81,8 @@ object mod {
       __obj.asInstanceOf[SharedSessionOptions]
     }
     
-    extension [Self <: SharedSessionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedSessionOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoSave(value: Boolean): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object mod {
         __obj.asInstanceOf[Handshake]
       }
       
-      extension [Self <: Handshake](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Handshake] (val x: Self) extends AnyVal {
         
         inline def setSession(value: SessionPartialSessionData): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
         

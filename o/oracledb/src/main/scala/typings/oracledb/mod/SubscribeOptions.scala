@@ -85,7 +85,8 @@ object SubscribeOptions {
     __obj.asInstanceOf[SubscribeOptions]
   }
   
-  extension [Self <: SubscribeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscribeOptions] (val x: Self) extends AnyVal {
     
     inline def setBinds(value: BindParameters): Self = StObject.set(x, "binds", value.asInstanceOf[js.Any])
     

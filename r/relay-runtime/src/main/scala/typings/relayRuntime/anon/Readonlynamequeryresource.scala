@@ -45,7 +45,8 @@ object Readonlynamequeryresource {
     __obj.asInstanceOf[Readonlynamequeryresource]
   }
   
-  extension [Self <: Readonlynamequeryresource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlynamequeryresource] (val x: Self) extends AnyVal {
     
     inline def setFetchPolicy(value: typings.relayRuntime.libUtilRelayRuntimeTypesMod.FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsDataCollectionMod extends Shortc
       __obj.asInstanceOf[DataCollectionProps]
     }
     
-    extension [Self <: DataCollectionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataCollectionProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

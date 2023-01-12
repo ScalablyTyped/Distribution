@@ -20,7 +20,8 @@ object SpreadsheetUnhideRowEvent {
     __obj.asInstanceOf[SpreadsheetUnhideRowEvent]
   }
   
-  extension [Self <: SpreadsheetUnhideRowEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetUnhideRowEvent] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

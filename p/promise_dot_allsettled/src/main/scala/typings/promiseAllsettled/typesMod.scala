@@ -23,7 +23,8 @@ object typesMod {
       __obj.asInstanceOf[PromiseRejection[E]]
     }
     
-    extension [Self <: PromiseRejection[?], E](x: Self & PromiseRejection[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromiseRejection[?], E] (val x: Self & PromiseRejection[E]) extends AnyVal {
       
       inline def setReason(value: E): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object typesMod {
       __obj.asInstanceOf[PromiseResolution[T]]
     }
     
-    extension [Self <: PromiseResolution[?], T](x: Self & PromiseResolution[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromiseResolution[?], T] (val x: Self & PromiseResolution[T]) extends AnyVal {
       
       inline def setStatus(value: fulfilled): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       

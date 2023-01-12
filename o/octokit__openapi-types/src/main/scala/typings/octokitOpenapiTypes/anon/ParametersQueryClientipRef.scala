@@ -17,7 +17,8 @@ object ParametersQueryClientipRef {
     __obj.asInstanceOf[ParametersQueryClientipRef]
   }
   
-  extension [Self <: ParametersQueryClientipRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersQueryClientipRef] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: QueryClientipRef): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

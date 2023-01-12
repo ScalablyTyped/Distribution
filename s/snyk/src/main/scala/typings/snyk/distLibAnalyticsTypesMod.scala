@@ -51,7 +51,8 @@ object distLibAnalyticsTypesMod {
       __obj.asInstanceOf[StandardAnalyticsData]
     }
     
-    extension [Self <: StandardAnalyticsData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StandardAnalyticsData] (val x: Self) extends AnyVal {
       
       inline def setCi(value: Boolean): Self = StObject.set(x, "ci", value.asInstanceOf[js.Any])
       

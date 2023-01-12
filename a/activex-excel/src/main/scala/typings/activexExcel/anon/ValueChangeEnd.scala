@@ -31,7 +31,8 @@ object ValueChangeEnd {
     __obj.asInstanceOf[ValueChangeEnd]
   }
   
-  extension [Self <: ValueChangeEnd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueChangeEnd] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     

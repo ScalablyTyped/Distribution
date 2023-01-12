@@ -2750,7 +2750,8 @@ object mod {
       __obj.asInstanceOf[CreateID]
     }
     
-    extension [Self <: CreateID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateID] (val x: Self) extends AnyVal {
       
       inline def setAbsflat(value: js.Array[Double]): Self = StObject.set(x, "absflat", value.asInstanceOf[js.Any])
       
@@ -2803,7 +2804,8 @@ object mod {
       __obj.asInstanceOf[CreateOptions]
     }
     
-    extension [Self <: CreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: CreateID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -2822,7 +2824,8 @@ object mod {
       __obj.asInstanceOf[SetupOptions]
     }
     
-    extension [Self <: SetupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetupOptions] (val x: Self) extends AnyVal {
       
       inline def setEV_KEY(value: js.Array[Any]): Self = StObject.set(x, "EV_KEY", value.asInstanceOf[js.Any])
       

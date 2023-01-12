@@ -22,7 +22,8 @@ object Streamingbuffer {
     __obj.asInstanceOf[Streamingbuffer]
   }
   
-  extension [Self <: Streamingbuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Streamingbuffer] (val x: Self) extends AnyVal {
     
     inline def setEstimatedBytes(value: String): Self = StObject.set(x, "estimatedBytes", value.asInstanceOf[js.Any])
     

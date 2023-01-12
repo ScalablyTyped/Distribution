@@ -56,7 +56,8 @@ object distEsmSrcTypesMod {
       __obj.asInstanceOf[DynamicConfig]
     }
     
-    extension [Self <: DynamicConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamicConfig] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object distEsmSrcTypesMod {
       __obj.asInstanceOf[MinimalDynamicConfig]
     }
     
-    extension [Self <: MinimalDynamicConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinimalDynamicConfig] (val x: Self) extends AnyVal {
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
@@ -127,7 +129,8 @@ object distEsmSrcTypesMod {
       __obj.asInstanceOf[ThrottleMetadata]
     }
     
-    extension [Self <: ThrottleMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThrottleMetadata] (val x: Self) extends AnyVal {
       
       inline def setBackoffCount(value: Double): Self = StObject.set(x, "backoffCount", value.asInstanceOf[js.Any])
       

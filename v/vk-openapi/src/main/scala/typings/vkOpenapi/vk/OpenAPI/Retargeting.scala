@@ -46,7 +46,8 @@ object Retargeting {
       __obj.asInstanceOf[Product]
     }
     
-    extension [Self <: Product](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Product] (val x: Self) extends AnyVal {
       
       inline def setGroup_id(value: String): Self = StObject.set(x, "group_id", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object Retargeting {
       __obj.asInstanceOf[ProductEventParams]
     }
     
-    extension [Self <: ProductEventParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProductEventParams] (val x: Self) extends AnyVal {
       
       inline def setBusiness_value(value: Double): Self = StObject.set(x, "business_value", value.asInstanceOf[js.Any])
       

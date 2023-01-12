@@ -41,7 +41,8 @@ object buildSrcSpecConcatMod {
       __obj.asInstanceOf[GenericConcatSpec[S]]
     }
     
-    extension [Self <: GenericConcatSpec[?], S /* <: GenericSpec[Any, Any, Any, Any] */](x: Self & GenericConcatSpec[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericConcatSpec[?], S /* <: GenericSpec[Any, Any, Any, Any] */] (val x: Self & GenericConcatSpec[S]) extends AnyVal {
       
       inline def setConcat(value: js.Array[S]): Self = StObject.set(x, "concat", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object buildSrcSpecConcatMod {
       __obj.asInstanceOf[GenericHConcatSpec[S]]
     }
     
-    extension [Self <: GenericHConcatSpec[?], S /* <: GenericSpec[Any, Any, Any, Any] */](x: Self & GenericHConcatSpec[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericHConcatSpec[?], S /* <: GenericSpec[Any, Any, Any, Any] */] (val x: Self & GenericHConcatSpec[S]) extends AnyVal {
       
       inline def setHconcat(value: js.Array[S]): Self = StObject.set(x, "hconcat", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object buildSrcSpecConcatMod {
       __obj.asInstanceOf[GenericVConcatSpec[S]]
     }
     
-    extension [Self <: GenericVConcatSpec[?], S /* <: GenericSpec[Any, Any, Any, Any] */](x: Self & GenericVConcatSpec[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericVConcatSpec[?], S /* <: GenericSpec[Any, Any, Any, Any] */] (val x: Self & GenericVConcatSpec[S]) extends AnyVal {
       
       inline def setVconcat(value: js.Array[S]): Self = StObject.set(x, "vconcat", value.asInstanceOf[js.Any])
       
@@ -137,7 +140,8 @@ object buildSrcSpecConcatMod {
       __obj.asInstanceOf[OneDirectionalConcatLayout]
     }
     
-    extension [Self <: OneDirectionalConcatLayout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OneDirectionalConcatLayout] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: Boolean): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object RuleMatch {
     __obj.asInstanceOf[RuleMatch]
   }
   
-  extension [Self <: RuleMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleMatch] (val x: Self) extends AnyVal {
     
     inline def setMatchingSelectors(value: js.Array[integer]): Self = StObject.set(x, "matchingSelectors", value.asInstanceOf[js.Any])
     

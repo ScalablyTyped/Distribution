@@ -18,7 +18,8 @@ object CompleteNotification {
     __obj.asInstanceOf[CompleteNotification]
   }
   
-  extension [Self <: CompleteNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompleteNotification] (val x: Self) extends AnyVal {
     
     inline def setKind(value: C): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }

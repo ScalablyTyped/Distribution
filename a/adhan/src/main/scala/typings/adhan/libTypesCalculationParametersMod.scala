@@ -231,7 +231,8 @@ object libTypesCalculationParametersMod {
       __obj.asInstanceOf[CalculationParameters]
     }
     
-    extension [Self <: CalculationParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalculationParameters] (val x: Self) extends AnyVal {
       
       inline def setAdjustments(value: Asr): Self = StObject.set(x, "adjustments", value.asInstanceOf[js.Any])
       

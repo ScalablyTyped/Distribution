@@ -17,7 +17,8 @@ object Nsecs {
     __obj.asInstanceOf[Nsecs]
   }
   
-  extension [Self <: Nsecs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Nsecs] (val x: Self) extends AnyVal {
     
     inline def setNsecs(value: Double): Self = StObject.set(x, "nsecs", value.asInstanceOf[js.Any])
     

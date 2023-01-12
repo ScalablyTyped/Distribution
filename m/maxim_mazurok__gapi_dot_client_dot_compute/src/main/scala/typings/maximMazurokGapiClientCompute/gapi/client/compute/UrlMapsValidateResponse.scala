@@ -15,7 +15,8 @@ object UrlMapsValidateResponse {
     __obj.asInstanceOf[UrlMapsValidateResponse]
   }
   
-  extension [Self <: UrlMapsValidateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlMapsValidateResponse] (val x: Self) extends AnyVal {
     
     inline def setResult(value: UrlMapValidationResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

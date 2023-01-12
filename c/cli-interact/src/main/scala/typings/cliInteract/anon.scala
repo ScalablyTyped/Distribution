@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[ChoiceOptionsreturnNumeri]
     }
     
-    extension [Self <: ChoiceOptionsreturnNumeri](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChoiceOptionsreturnNumeri] (val x: Self) extends AnyVal {
       
       inline def setAllowNoAnswer(value: Boolean): Self = StObject.set(x, "allowNoAnswer", value.asInstanceOf[js.Any])
       

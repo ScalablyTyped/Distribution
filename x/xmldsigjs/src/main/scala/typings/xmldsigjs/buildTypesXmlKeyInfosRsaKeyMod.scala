@@ -88,7 +88,8 @@ object buildTypesXmlKeyInfosRsaKeyMod {
       __obj.asInstanceOf[IJwkRsa]
     }
     
-    extension [Self <: IJwkRsa](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJwkRsa] (val x: Self) extends AnyVal {
       
       inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object buildTypesXmlKeyInfosRsaKeyMod {
       __obj.asInstanceOf[RsaPSSSignParams]
     }
     
-    extension [Self <: RsaPSSSignParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RsaPSSSignParams] (val x: Self) extends AnyVal {
       
       inline def setHash(value: AlgorithmIdentifier): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     }

@@ -20,7 +20,8 @@ object TargetedEmotionResults {
     __obj.asInstanceOf[TargetedEmotionResults]
   }
   
-  extension [Self <: TargetedEmotionResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetedEmotionResults] (val x: Self) extends AnyVal {
     
     inline def setEmotion(value: EmotionScores): Self = StObject.set(x, "emotion", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object UnixSystemFunctionResult {
     __obj.asInstanceOf[UnixSystemFunctionResult[Value]]
   }
   
-  extension [Self <: UnixSystemFunctionResult[?], Value /* <: NativeFunctionReturnValue */](x: Self & UnixSystemFunctionResult[Value]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnixSystemFunctionResult[?], Value /* <: NativeFunctionReturnValue */] (val x: Self & UnixSystemFunctionResult[Value]) extends AnyVal {
     
     inline def setErrno(value: Double): Self = StObject.set(x, "errno", value.asInstanceOf[js.Any])
     

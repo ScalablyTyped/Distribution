@@ -98,7 +98,8 @@ object Studio {
     __obj.asInstanceOf[Studio]
   }
   
-  extension [Self <: Studio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Studio] (val x: Self) extends AnyVal {
     
     inline def setAuthMode(value: AuthMode): Self = StObject.set(x, "AuthMode", value.asInstanceOf[js.Any])
     

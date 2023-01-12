@@ -21,7 +21,8 @@ object PageSize {
     __obj.asInstanceOf[PageSize]
   }
   
-  extension [Self <: PageSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageSize] (val x: Self) extends AnyVal {
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

@@ -228,7 +228,8 @@ object typesTabpanelMod {
         __obj.asInstanceOf[ICurrentChangedArgs]
       }
       
-      extension [Self <: ICurrentChangedArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICurrentChangedArgs] (val x: Self) extends AnyVal {
         
         inline def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
         
@@ -291,7 +292,8 @@ object typesTabpanelMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setAddButtonEnabled(value: Boolean): Self = StObject.set(x, "addButtonEnabled", value.asInstanceOf[js.Any])
         

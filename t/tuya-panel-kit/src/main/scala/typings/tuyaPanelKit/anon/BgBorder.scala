@@ -37,7 +37,8 @@ object BgBorder {
     __obj.asInstanceOf[BgBorder]
   }
   
-  extension [Self <: BgBorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BgBorder] (val x: Self) extends AnyVal {
     
     inline def setBgBorder(value: String): Self = StObject.set(x, "bgBorder", value.asInstanceOf[js.Any])
     

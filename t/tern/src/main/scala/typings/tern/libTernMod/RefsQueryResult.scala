@@ -24,7 +24,8 @@ object RefsQueryResult {
     __obj.asInstanceOf[RefsQueryResult]
   }
   
-  extension [Self <: RefsQueryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefsQueryResult] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

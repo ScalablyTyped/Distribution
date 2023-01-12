@@ -15,7 +15,8 @@ object RollupStopJobResponse {
     __obj.asInstanceOf[RollupStopJobResponse]
   }
   
-  extension [Self <: RollupStopJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollupStopJobResponse] (val x: Self) extends AnyVal {
     
     inline def setStopped(value: Boolean): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
   }

@@ -29,7 +29,8 @@ object CPAuthenticatedAttributes2 {
     __obj.asInstanceOf[CPAuthenticatedAttributes2]
   }
   
-  extension [Self <: CPAuthenticatedAttributes2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CPAuthenticatedAttributes2] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: CPAttribute => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     

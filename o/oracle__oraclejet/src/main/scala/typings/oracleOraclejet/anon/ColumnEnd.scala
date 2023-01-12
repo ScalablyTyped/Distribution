@@ -26,7 +26,8 @@ object ColumnEnd {
     __obj.asInstanceOf[ColumnEnd[K, D]]
   }
   
-  extension [Self <: ColumnEnd[?, ?], K, D](x: Self & (ColumnEnd[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnEnd[?, ?], K, D] (val x: Self & (ColumnEnd[K, D])) extends AnyVal {
     
     inline def setColumn(value: Resizable[K, D]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

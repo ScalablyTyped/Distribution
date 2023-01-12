@@ -52,7 +52,8 @@ object anon {
       __obj.asInstanceOf[AutoplaySpeed]
     }
     
-    extension [Self <: AutoplaySpeed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoplaySpeed] (val x: Self) extends AnyVal {
       
       inline def setAutoplaySpeed(value: Double): Self = StObject.set(x, "autoplaySpeed", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object anon {
       __obj.asInstanceOf[BackgroundColor]
     }
     
-    extension [Self <: BackgroundColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackgroundColor] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -224,7 +226,8 @@ object anon {
       __obj.asInstanceOf[CaptionAlignment]
     }
     
-    extension [Self <: CaptionAlignment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptionAlignment] (val x: Self) extends AnyVal {
       
       inline def setCaptionAlignment(value: String): Self = StObject.set(x, "captionAlignment", value.asInstanceOf[js.Any])
       
@@ -275,7 +278,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -307,7 +311,8 @@ object anon {
       __obj.asInstanceOf[Current]
     }
     
-    extension [Self <: Current](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Current] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Slide): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -334,7 +339,8 @@ object anon {
       __obj.asInstanceOf[FillColor]
     }
     
-    extension [Self <: FillColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FillColor] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -366,7 +372,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyCallbackCountSlid]
     }
     
-    extension [Self <: ReadonlyCallbackCountSlid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyCallbackCountSlid] (val x: Self) extends AnyVal {
       
       inline def setTotalSlide(value: Double): Self = StObject.set(x, "totalSlide", value.asInstanceOf[js.Any])
     }
@@ -386,7 +393,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyCallbackOpen]
     }
     
-    extension [Self <: ReadonlyCallbackOpen](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyCallbackOpen] (val x: Self) extends AnyVal {
       
       inline def setCurrentSlide(value: Slide): Self = StObject.set(x, "currentSlide", value.asInstanceOf[js.Any])
       
@@ -410,7 +418,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyCallbackSlideChan]
     }
     
-    extension [Self <: ReadonlyCallbackSlideChan](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyCallbackSlideChan] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -447,7 +456,8 @@ object anon {
       __obj.asInstanceOf[ShowThumbnails]
     }
     
-    extension [Self <: ShowThumbnails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShowThumbnails] (val x: Self) extends AnyVal {
       
       inline def setShowThumbnails(value: Boolean): Self = StObject.set(x, "showThumbnails", value.asInstanceOf[js.Any])
       
@@ -509,7 +519,8 @@ object anon {
       __obj.asInstanceOf[WrapperWithChildrenoption]
     }
     
-    extension [Self <: WrapperWithChildrenoption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrapperWithChildrenoption] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: Callbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
@@ -545,7 +556,8 @@ object anon {
       __obj.asInstanceOf[WrapperWithElementsoption]
     }
     
-    extension [Self <: WrapperWithElementsoption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrapperWithElementsoption] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: Callbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       

@@ -55,7 +55,8 @@ object distServiceActionssdkConversationHelperNewsurfaceMod {
       __obj.asInstanceOf[NewSurfaceOptions]
     }
     
-    extension [Self <: NewSurfaceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewSurfaceOptions] (val x: Self) extends AnyVal {
       
       inline def setCapabilities(value: SurfaceCapability | js.Array[SurfaceCapability]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       

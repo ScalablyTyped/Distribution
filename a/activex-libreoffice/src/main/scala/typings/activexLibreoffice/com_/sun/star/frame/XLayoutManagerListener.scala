@@ -41,7 +41,8 @@ object XLayoutManagerListener {
     __obj.asInstanceOf[XLayoutManagerListener]
   }
   
-  extension [Self <: XLayoutManagerListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLayoutManagerListener] (val x: Self) extends AnyVal {
     
     inline def setLayoutEvent(value: (EventObject, Double, Any) => Unit): Self = StObject.set(x, "layoutEvent", js.Any.fromFunction3(value))
   }

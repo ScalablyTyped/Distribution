@@ -16,7 +16,8 @@ object KnockoutComputedFunctions {
     __obj.asInstanceOf[KnockoutComputedFunctions[T]]
   }
   
-  extension [Self <: KnockoutComputedFunctions[?], T](x: Self & KnockoutComputedFunctions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutComputedFunctions[?], T] (val x: Self & KnockoutComputedFunctions[T]) extends AnyVal {
     
     inline def setToObservableWithReplyLatest(value: () => Observable[T]): Self = StObject.set(x, "toObservableWithReplyLatest", js.Any.fromFunction0(value))
   }

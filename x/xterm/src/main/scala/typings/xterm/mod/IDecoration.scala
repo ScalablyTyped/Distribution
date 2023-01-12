@@ -50,7 +50,8 @@ object IDecoration {
     __obj.asInstanceOf[IDecoration]
   }
   
-  extension [Self <: IDecoration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDecoration] (val x: Self) extends AnyVal {
     
     inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

@@ -139,7 +139,8 @@ object TextShape {
     __obj.asInstanceOf[TextShape]
   }
   
-  extension [Self <: TextShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextShape] (val x: Self) extends AnyVal {
     
     inline def setCornerRadius(value: Double): Self = StObject.set(x, "CornerRadius", value.asInstanceOf[js.Any])
   }

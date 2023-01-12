@@ -15,7 +15,8 @@ object ContentApplicationjsonRestrictedtoworkflows {
     __obj.asInstanceOf[ContentApplicationjsonRestrictedtoworkflows]
   }
   
-  extension [Self <: ContentApplicationjsonRestrictedtoworkflows](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonRestrictedtoworkflows] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonRestrictedtoworkflows): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

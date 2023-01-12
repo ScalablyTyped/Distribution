@@ -60,7 +60,8 @@ object AccessibilitySeriesOptions {
     __obj.asInstanceOf[AccessibilitySeriesOptions]
   }
   
-  extension [Self <: AccessibilitySeriesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessibilitySeriesOptions] (val x: Self) extends AnyVal {
     
     inline def setDescribeSingleSeries(value: Boolean): Self = StObject.set(x, "describeSingleSeries", value.asInstanceOf[js.Any])
     

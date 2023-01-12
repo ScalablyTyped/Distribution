@@ -155,7 +155,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SignalWrapper[T]]
     }
     
-    extension [Self <: SignalWrapper[?], T](x: Self & SignalWrapper[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignalWrapper[?], T] (val x: Self & SignalWrapper[T]) extends AnyVal {
       
       inline def setSignal(value: Signal[T]): Self = StObject.set(x, "Signal", value.asInstanceOf[js.Any])
     }

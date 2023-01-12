@@ -187,7 +187,8 @@ object ojdvtBaseMod {
       __obj.asInstanceOf[dvtBaseComponentEventMap[SP]]
     }
     
-    extension [Self <: dvtBaseComponentEventMap[?], SP /* <: dvtBaseComponentSettableProperties */](x: Self & dvtBaseComponentEventMap[SP]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: dvtBaseComponentEventMap[?], SP /* <: dvtBaseComponentSettableProperties */] (val x: Self & dvtBaseComponentEventMap[SP]) extends AnyVal {
       
       inline def setTrackResizeChanged(value: JetElementCustomEvent[on | off]): Self = StObject.set(x, "trackResizeChanged", value.asInstanceOf[js.Any])
     }
@@ -209,7 +210,8 @@ object ojdvtBaseMod {
       __obj.asInstanceOf[dvtBaseComponentSettableProperties]
     }
     
-    extension [Self <: dvtBaseComponentSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: dvtBaseComponentSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setTrackResize(value: on | off): Self = StObject.set(x, "trackResize", value.asInstanceOf[js.Any])
       
@@ -233,7 +235,8 @@ object ojdvtBaseMod {
       __obj.asInstanceOf[dvtBaseComponentSettablePropertiesLenient]
     }
     
-    extension [Self <: dvtBaseComponentSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: dvtBaseComponentSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setTrackResize(value: on | off): Self = StObject.set(x, "trackResize", value.asInstanceOf[js.Any])
       

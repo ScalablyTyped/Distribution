@@ -15,7 +15,8 @@ object DiffOptions {
     __obj.asInstanceOf[DiffOptions]
   }
   
-  extension [Self <: DiffOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiffOptions] (val x: Self) extends AnyVal {
     
     inline def setConversionAccuracy(value: ConversionAccuracy): Self = StObject.set(x, "conversionAccuracy", value.asInstanceOf[js.Any])
     

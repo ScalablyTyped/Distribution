@@ -26,7 +26,8 @@ object DescribeMetadataResult {
     __obj.asInstanceOf[DescribeMetadataResult]
   }
   
-  extension [Self <: DescribeMetadataResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMetadataResult] (val x: Self) extends AnyVal {
     
     inline def setMetadataObjects(value: js.Array[MetadataObject]): Self = StObject.set(x, "metadataObjects", value.asInstanceOf[js.Any])
     

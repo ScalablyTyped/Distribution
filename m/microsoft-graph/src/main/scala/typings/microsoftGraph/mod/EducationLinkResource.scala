@@ -18,7 +18,8 @@ object EducationLinkResource {
     __obj.asInstanceOf[EducationLinkResource]
   }
   
-  extension [Self <: EducationLinkResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EducationLinkResource] (val x: Self) extends AnyVal {
     
     inline def setLink(value: NullableOption[String]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     

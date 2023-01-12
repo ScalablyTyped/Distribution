@@ -28,7 +28,8 @@ object Fmp4HlsSettings {
     __obj.asInstanceOf[Fmp4HlsSettings]
   }
   
-  extension [Self <: Fmp4HlsSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fmp4HlsSettings] (val x: Self) extends AnyVal {
     
     inline def setAudioRenditionSets(value: string): Self = StObject.set(x, "AudioRenditionSets", value.asInstanceOf[js.Any])
     

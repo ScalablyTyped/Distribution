@@ -17,7 +17,8 @@ object MappingTextIndexPrefixes {
     __obj.asInstanceOf[MappingTextIndexPrefixes]
   }
   
-  extension [Self <: MappingTextIndexPrefixes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingTextIndexPrefixes] (val x: Self) extends AnyVal {
     
     inline def setMax_chars(value: integer): Self = StObject.set(x, "max_chars", value.asInstanceOf[js.Any])
     

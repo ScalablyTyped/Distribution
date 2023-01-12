@@ -18,7 +18,8 @@ object MoveByoipCidrToIpamResult {
     __obj.asInstanceOf[MoveByoipCidrToIpamResult]
   }
   
-  extension [Self <: MoveByoipCidrToIpamResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveByoipCidrToIpamResult] (val x: Self) extends AnyVal {
     
     inline def setByoipCidr(value: ByoipCidr): Self = StObject.set(x, "ByoipCidr", value.asInstanceOf[js.Any])
     

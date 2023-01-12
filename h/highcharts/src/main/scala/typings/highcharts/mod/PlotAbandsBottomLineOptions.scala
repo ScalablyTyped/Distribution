@@ -15,7 +15,8 @@ object PlotAbandsBottomLineOptions {
     __obj.asInstanceOf[PlotAbandsBottomLineOptions]
   }
   
-  extension [Self <: PlotAbandsBottomLineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotAbandsBottomLineOptions] (val x: Self) extends AnyVal {
     
     inline def setStyles(value: PlotAbandsBottomLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     

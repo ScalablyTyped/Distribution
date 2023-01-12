@@ -18,7 +18,8 @@ object UpdateByteMatchSetResponse {
     __obj.asInstanceOf[UpdateByteMatchSetResponse]
   }
   
-  extension [Self <: UpdateByteMatchSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateByteMatchSetResponse] (val x: Self) extends AnyVal {
     
     inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     

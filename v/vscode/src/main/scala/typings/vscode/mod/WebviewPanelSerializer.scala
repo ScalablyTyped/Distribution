@@ -60,7 +60,8 @@ object WebviewPanelSerializer {
     __obj.asInstanceOf[WebviewPanelSerializer[T]]
   }
   
-  extension [Self <: WebviewPanelSerializer[?], T](x: Self & WebviewPanelSerializer[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebviewPanelSerializer[?], T] (val x: Self & WebviewPanelSerializer[T]) extends AnyVal {
     
     inline def setDeserializeWebviewPanel(value: (WebviewPanel, T) => Thenable[Unit]): Self = StObject.set(x, "deserializeWebviewPanel", js.Any.fromFunction2(value))
   }

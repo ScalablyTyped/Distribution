@@ -35,7 +35,8 @@ object TerraformPlanResourceChange {
     __obj.asInstanceOf[TerraformPlanResourceChange]
   }
   
-  extension [Self <: TerraformPlanResourceChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerraformPlanResourceChange] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

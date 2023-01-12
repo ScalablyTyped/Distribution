@@ -20,7 +20,8 @@ object TypeofWaitingPopup {
     __obj.asInstanceOf[TypeofWaitingPopup]
   }
   
-  extension [Self <: TypeofWaitingPopup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofWaitingPopup] (val x: Self) extends AnyVal {
     
     inline def setFn(value: WaitingPopup): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

@@ -89,7 +89,8 @@ object mod {
       __obj.asInstanceOf[SwaggerUIProps]
     }
     
-    extension [Self <: SwaggerUIProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwaggerUIProps] (val x: Self) extends AnyVal {
       
       inline def setDeepLinking(value: Boolean): Self = StObject.set(x, "deepLinking", value.asInstanceOf[js.Any])
       

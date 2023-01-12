@@ -62,7 +62,8 @@ object TypeofIkConstraintTimelin {
     __obj.asInstanceOf[TypeofIkConstraintTimelin]
   }
   
-  extension [Self <: TypeofIkConstraintTimelin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofIkConstraintTimelin] (val x: Self) extends AnyVal {
     
     inline def setBEND_DIRECTION(value: Double): Self = StObject.set(x, "BEND_DIRECTION", value.asInstanceOf[js.Any])
     

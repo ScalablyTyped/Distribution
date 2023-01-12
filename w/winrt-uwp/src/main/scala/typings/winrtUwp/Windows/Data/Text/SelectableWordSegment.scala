@@ -20,7 +20,8 @@ object SelectableWordSegment {
     __obj.asInstanceOf[SelectableWordSegment]
   }
   
-  extension [Self <: SelectableWordSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectableWordSegment] (val x: Self) extends AnyVal {
     
     inline def setSourceTextSegment(value: TextSegment): Self = StObject.set(x, "sourceTextSegment", value.asInstanceOf[js.Any])
     

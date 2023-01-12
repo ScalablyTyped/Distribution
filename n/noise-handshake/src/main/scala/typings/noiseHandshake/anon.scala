@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[PickKeyPairsecretKey]
     }
     
-    extension [Self <: PickKeyPairsecretKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickKeyPairsecretKey] (val x: Self) extends AnyVal {
       
       inline def setSecretKey(value: Buffer | js.typedarray.Uint8Array): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
     }

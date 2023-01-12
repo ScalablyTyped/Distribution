@@ -23,7 +23,8 @@ object ListImportFileTaskRequest {
     __obj.asInstanceOf[ListImportFileTaskRequest]
   }
   
-  extension [Self <: ListImportFileTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListImportFileTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: Integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

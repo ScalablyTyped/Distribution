@@ -18,7 +18,8 @@ object DescribeTaskExecutionRequest {
     __obj.asInstanceOf[DescribeTaskExecutionRequest]
   }
   
-  extension [Self <: DescribeTaskExecutionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTaskExecutionRequest] (val x: Self) extends AnyVal {
     
     inline def setTaskExecutionArn(value: TaskExecutionArn): Self = StObject.set(x, "TaskExecutionArn", value.asInstanceOf[js.Any])
   }

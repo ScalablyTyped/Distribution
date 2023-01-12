@@ -23,7 +23,8 @@ object AutoScalingGroupProviderUpdate {
     __obj.asInstanceOf[AutoScalingGroupProviderUpdate]
   }
   
-  extension [Self <: AutoScalingGroupProviderUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoScalingGroupProviderUpdate] (val x: Self) extends AnyVal {
     
     inline def setManagedScaling(value: ManagedScaling): Self = StObject.set(x, "managedScaling", value.asInstanceOf[js.Any])
     

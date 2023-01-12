@@ -23,7 +23,8 @@ object ActivityTimedOutEventDetails {
     __obj.asInstanceOf[ActivityTimedOutEventDetails]
   }
   
-  extension [Self <: ActivityTimedOutEventDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityTimedOutEventDetails] (val x: Self) extends AnyVal {
     
     inline def setCause(value: SensitiveCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     

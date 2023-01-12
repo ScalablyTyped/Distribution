@@ -21,7 +21,8 @@ object BackgroundTransferCompletionGroupTriggerDetails {
     __obj.asInstanceOf[BackgroundTransferCompletionGroupTriggerDetails]
   }
   
-  extension [Self <: BackgroundTransferCompletionGroupTriggerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundTransferCompletionGroupTriggerDetails] (val x: Self) extends AnyVal {
     
     inline def setDownloads(value: IVectorView[DownloadOperation]): Self = StObject.set(x, "downloads", value.asInstanceOf[js.Any])
     

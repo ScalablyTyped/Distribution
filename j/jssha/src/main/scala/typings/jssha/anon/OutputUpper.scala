@@ -15,7 +15,8 @@ object OutputUpper {
     __obj.asInstanceOf[OutputUpper]
   }
   
-  extension [Self <: OutputUpper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputUpper] (val x: Self) extends AnyVal {
     
     inline def setOutputUpper(value: Boolean): Self = StObject.set(x, "outputUpper", value.asInstanceOf[js.Any])
     

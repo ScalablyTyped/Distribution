@@ -91,7 +91,8 @@ object ValueErrorCellValue {
     __obj.asInstanceOf[ValueErrorCellValue]
   }
   
-  extension [Self <: ValueErrorCellValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueErrorCellValue] (val x: Self) extends AnyVal {
     
     inline def setBasicType(value: error | Error): Self = StObject.set(x, "basicType", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ListLineItemAssignedTargetingOptionsResponse {
     __obj.asInstanceOf[ListLineItemAssignedTargetingOptionsResponse]
   }
   
-  extension [Self <: ListLineItemAssignedTargetingOptionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLineItemAssignedTargetingOptionsResponse] (val x: Self) extends AnyVal {
     
     inline def setAssignedTargetingOptions(value: js.Array[AssignedTargetingOption]): Self = StObject.set(x, "assignedTargetingOptions", value.asInstanceOf[js.Any])
     

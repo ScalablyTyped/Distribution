@@ -63,7 +63,8 @@ object CreateHITWithHITTypeRequest {
     __obj.asInstanceOf[CreateHITWithHITTypeRequest]
   }
   
-  extension [Self <: CreateHITWithHITTypeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateHITWithHITTypeRequest] (val x: Self) extends AnyVal {
     
     inline def setAssignmentReviewPolicy(value: ReviewPolicy): Self = StObject.set(x, "AssignmentReviewPolicy", value.asInstanceOf[js.Any])
     

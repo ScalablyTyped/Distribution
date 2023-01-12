@@ -33,7 +33,8 @@ object LambdaFunctionMemoryRecommendationOption {
     __obj.asInstanceOf[LambdaFunctionMemoryRecommendationOption]
   }
   
-  extension [Self <: LambdaFunctionMemoryRecommendationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaFunctionMemoryRecommendationOption] (val x: Self) extends AnyVal {
     
     inline def setMemorySize(value: MemorySize): Self = StObject.set(x, "memorySize", value.asInstanceOf[js.Any])
     

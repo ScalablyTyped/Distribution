@@ -48,7 +48,8 @@ object dxDeferRenderingOptions {
     __obj.asInstanceOf[dxDeferRenderingOptions]
   }
   
-  extension [Self <: dxDeferRenderingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxDeferRenderingOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: AnimationConfig): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ExperimentTemplateCloudWatchLogsLogConfiguration {
     __obj.asInstanceOf[ExperimentTemplateCloudWatchLogsLogConfiguration]
   }
   
-  extension [Self <: ExperimentTemplateCloudWatchLogsLogConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExperimentTemplateCloudWatchLogsLogConfiguration] (val x: Self) extends AnyVal {
     
     inline def setLogGroupArn(value: CloudWatchLogGroupArn): Self = StObject.set(x, "logGroupArn", value.asInstanceOf[js.Any])
     

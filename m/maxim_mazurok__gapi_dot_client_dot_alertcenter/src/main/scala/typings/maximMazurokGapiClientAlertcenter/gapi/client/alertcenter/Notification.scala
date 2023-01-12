@@ -16,7 +16,8 @@ object Notification {
     __obj.asInstanceOf[Notification]
   }
   
-  extension [Self <: Notification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
     
     inline def setCloudPubsubTopic(value: CloudPubsubTopic): Self = StObject.set(x, "cloudPubsubTopic", value.asInstanceOf[js.Any])
     

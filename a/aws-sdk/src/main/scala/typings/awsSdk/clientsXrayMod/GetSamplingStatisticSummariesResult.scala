@@ -23,7 +23,8 @@ object GetSamplingStatisticSummariesResult {
     __obj.asInstanceOf[GetSamplingStatisticSummariesResult]
   }
   
-  extension [Self <: GetSamplingStatisticSummariesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSamplingStatisticSummariesResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

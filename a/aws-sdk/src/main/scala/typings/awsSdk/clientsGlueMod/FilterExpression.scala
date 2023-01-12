@@ -28,7 +28,8 @@ object FilterExpression {
     __obj.asInstanceOf[FilterExpression]
   }
   
-  extension [Self <: FilterExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterExpression] (val x: Self) extends AnyVal {
     
     inline def setNegated(value: BoxedBoolean): Self = StObject.set(x, "Negated", value.asInstanceOf[js.Any])
     

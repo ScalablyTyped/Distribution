@@ -21,7 +21,8 @@ object DistrictSearchOptions {
     __obj.asInstanceOf[DistrictSearchOptions]
   }
   
-  extension [Self <: DistrictSearchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistrictSearchOptions] (val x: Self) extends AnyVal {
     
     inline def setExtensions(value: String): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     

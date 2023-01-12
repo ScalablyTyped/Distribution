@@ -15,7 +15,8 @@ object InitialRender {
     __obj.asInstanceOf[InitialRender]
   }
   
-  extension [Self <: InitialRender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitialRender] (val x: Self) extends AnyVal {
     
     inline def setInitialRender(value: Boolean): Self = StObject.set(x, "initialRender", value.asInstanceOf[js.Any])
   }

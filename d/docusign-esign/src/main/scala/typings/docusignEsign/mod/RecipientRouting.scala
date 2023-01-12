@@ -18,7 +18,8 @@ object RecipientRouting {
     __obj.asInstanceOf[RecipientRouting]
   }
   
-  extension [Self <: RecipientRouting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientRouting] (val x: Self) extends AnyVal {
     
     inline def setRules(value: RecipientRules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     

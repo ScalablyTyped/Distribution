@@ -22,7 +22,8 @@ object CacheidOwner {
     __obj.asInstanceOf[CacheidOwner]
   }
   
-  extension [Self <: CacheidOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheidOwner] (val x: Self) extends AnyVal {
     
     inline def setCache_id(value: Double): Self = StObject.set(x, "cache_id", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object ReaderPaginationMetadata {
     __obj.asInstanceOf[ReaderPaginationMetadata]
   }
   
-  extension [Self <: ReaderPaginationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReaderPaginationMetadata] (val x: Self) extends AnyVal {
     
     inline def setBackward(value: Count): Self = StObject.set(x, "backward", value.asInstanceOf[js.Any])
     

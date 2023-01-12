@@ -112,7 +112,8 @@ object distServiceActionssdkActionssdkMod {
       __obj.asInstanceOf[ActionsSdkHandlers[TConvData, TUserStorage, TConversation]]
     }
     
-    extension [Self <: ActionsSdkHandlers[?, ?, ?], TConvData, TUserStorage, TConversation /* <: ActionsSdkConversation[TConvData, TUserStorage] */](x: Self & (ActionsSdkHandlers[TConvData, TUserStorage, TConversation])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionsSdkHandlers[?, ?, ?], TConvData, TUserStorage, TConversation /* <: ActionsSdkConversation[TConvData, TUserStorage] */] (val x: Self & (ActionsSdkHandlers[TConvData, TUserStorage, TConversation])) extends AnyVal {
       
       inline def setCatcher(value: (TConversation, /* error */ js.Error) => js.Promise[Any] | Any): Self = StObject.set(x, "catcher", js.Any.fromFunction2(value))
       
@@ -172,7 +173,8 @@ object distServiceActionssdkActionssdkMod {
       __obj.asInstanceOf[ActionsSdkOptions[TConvData, TUserStorage]]
     }
     
-    extension [Self <: ActionsSdkOptions[?, ?], TConvData, TUserStorage](x: Self & (ActionsSdkOptions[TConvData, TUserStorage])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionsSdkOptions[?, ?], TConvData, TUserStorage] (val x: Self & (ActionsSdkOptions[TConvData, TUserStorage])) extends AnyVal {
       
       inline def setVerification(value: ActionsSdkVerification | String): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
       
@@ -210,7 +212,8 @@ object distServiceActionssdkActionssdkMod {
       __obj.asInstanceOf[ActionsSdkVerification]
     }
     
-    extension [Self <: ActionsSdkVerification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionsSdkVerification] (val x: Self) extends AnyVal {
       
       inline def setError(value: String | (js.Function1[/* error */ String, String])): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

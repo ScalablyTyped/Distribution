@@ -34,7 +34,8 @@ object GoogleActionsV2SimpleResponse {
     __obj.asInstanceOf[GoogleActionsV2SimpleResponse]
   }
   
-  extension [Self <: GoogleActionsV2SimpleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2SimpleResponse] (val x: Self) extends AnyVal {
     
     inline def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
     

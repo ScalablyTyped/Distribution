@@ -18,7 +18,8 @@ object KinesisParameters {
     __obj.asInstanceOf[KinesisParameters]
   }
   
-  extension [Self <: KinesisParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KinesisParameters] (val x: Self) extends AnyVal {
     
     inline def setPartitionKey(value: TargetPartitionKey): Self = StObject.set(x, "PartitionKey", value.asInstanceOf[js.Any])
   }

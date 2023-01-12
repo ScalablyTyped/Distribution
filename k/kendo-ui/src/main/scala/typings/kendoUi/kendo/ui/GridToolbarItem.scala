@@ -21,7 +21,8 @@ object GridToolbarItem {
     __obj.asInstanceOf[GridToolbarItem]
   }
   
-  extension [Self <: GridToolbarItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridToolbarItem] (val x: Self) extends AnyVal {
     
     inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     

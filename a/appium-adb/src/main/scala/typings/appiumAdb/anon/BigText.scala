@@ -29,7 +29,8 @@ object BigText {
     __obj.asInstanceOf[BigText]
   }
   
-  extension [Self <: BigText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BigText] (val x: Self) extends AnyVal {
     
     inline def setBigText(value: String): Self = StObject.set(x, "bigText", value.asInstanceOf[js.Any])
     

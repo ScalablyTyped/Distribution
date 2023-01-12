@@ -57,7 +57,8 @@ object GraphicObjectCount {
     __obj.asInstanceOf[GraphicObjectCount]
   }
   
-  extension [Self <: GraphicObjectCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphicObjectCount] (val x: Self) extends AnyVal {
     
     inline def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
   }

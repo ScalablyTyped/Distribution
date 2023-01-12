@@ -42,7 +42,8 @@ object distRequestOnBehalfOfRequestMod {
       __obj.asInstanceOf[OnBehalfOfRequest]
     }
     
-    extension [Self <: OnBehalfOfRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnBehalfOfRequest] (val x: Self) extends AnyVal {
       
       inline def setAuthenticationScheme(value: AuthenticationScheme): Self = StObject.set(x, "authenticationScheme", value.asInstanceOf[js.Any])
       

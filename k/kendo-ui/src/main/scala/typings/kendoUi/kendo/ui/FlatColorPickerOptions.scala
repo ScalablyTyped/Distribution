@@ -36,7 +36,8 @@ object FlatColorPickerOptions {
     __obj.asInstanceOf[FlatColorPickerOptions]
   }
   
-  extension [Self <: FlatColorPickerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlatColorPickerOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoupdate(value: Boolean): Self = StObject.set(x, "autoupdate", value.asInstanceOf[js.Any])
     

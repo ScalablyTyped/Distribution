@@ -71,7 +71,8 @@ object COLUMN {
     __obj.asInstanceOf[COLUMN]
   }
   
-  extension [Self <: COLUMN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: COLUMN] (val x: Self) extends AnyVal {
     
     inline def setCOLUMN(value: IsDependentOnSheetStructureChange): Self = StObject.set(x, "COLUMN", value.asInstanceOf[js.Any])
     

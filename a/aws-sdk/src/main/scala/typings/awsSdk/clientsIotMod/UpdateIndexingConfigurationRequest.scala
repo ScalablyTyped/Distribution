@@ -23,7 +23,8 @@ object UpdateIndexingConfigurationRequest {
     __obj.asInstanceOf[UpdateIndexingConfigurationRequest]
   }
   
-  extension [Self <: UpdateIndexingConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateIndexingConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setThingGroupIndexingConfiguration(value: ThingGroupIndexingConfiguration): Self = StObject.set(x, "thingGroupIndexingConfiguration", value.asInstanceOf[js.Any])
     

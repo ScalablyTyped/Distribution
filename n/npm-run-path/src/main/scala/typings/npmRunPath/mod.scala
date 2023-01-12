@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[EnvOptions]
     }
     
-    extension [Self <: EnvOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnvOptions] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String | URL): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[RunPathOptions]
     }
     
-    extension [Self <: RunPathOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunPathOptions] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String | URL): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       

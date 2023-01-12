@@ -93,7 +93,8 @@ object distDeclarationsSrcFrameValueMod {
         __obj.asInstanceOf[ChangeEvent[T]]
       }
       
-      extension [Self <: ChangeEvent[?], T](x: Self & ChangeEvent[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChangeEvent[?], T] (val x: Self & ChangeEvent[T]) extends AnyVal {
         
         inline def setIdle(value: Boolean): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
         
@@ -150,7 +151,8 @@ object distDeclarationsSrcFrameValueMod {
         __obj.asInstanceOf[IdleEvent[T]]
       }
       
-      extension [Self <: IdleEvent[?], T](x: Self & IdleEvent[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IdleEvent[?], T] (val x: Self & IdleEvent[T]) extends AnyVal {
         
         inline def setParent(value: FrameValue[T]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
         
@@ -177,7 +179,8 @@ object distDeclarationsSrcFrameValueMod {
         __obj.asInstanceOf[PriorityEvent[T]]
       }
       
-      extension [Self <: PriorityEvent[?], T](x: Self & PriorityEvent[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PriorityEvent[?], T] (val x: Self & PriorityEvent[T]) extends AnyVal {
         
         inline def setParent(value: FrameValue[T]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
         

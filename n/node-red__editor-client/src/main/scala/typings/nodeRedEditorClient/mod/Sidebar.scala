@@ -48,7 +48,8 @@ object Sidebar {
     __obj.asInstanceOf[Sidebar]
   }
   
-  extension [Self <: Sidebar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sidebar] (val x: Self) extends AnyVal {
     
     inline def setAddTab(value: EnableOnEdit => Unit): Self = StObject.set(x, "addTab", js.Any.fromFunction1(value))
     

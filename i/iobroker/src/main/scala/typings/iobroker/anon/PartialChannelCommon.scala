@@ -30,7 +30,8 @@ object PartialChannelCommon {
     __obj.asInstanceOf[PartialChannelCommon]
   }
   
-  extension [Self <: PartialChannelCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialChannelCommon] (val x: Self) extends AnyVal {
     
     inline def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     

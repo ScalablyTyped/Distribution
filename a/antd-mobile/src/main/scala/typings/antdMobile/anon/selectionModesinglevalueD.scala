@@ -340,7 +340,8 @@ object selectionModesinglevalueD {
     __obj.asInstanceOf[selectionModesinglevalueD]
   }
   
-  extension [Self <: selectionModesinglevalueD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: selectionModesinglevalueD] (val x: Self) extends AnyVal {
     
     inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
     

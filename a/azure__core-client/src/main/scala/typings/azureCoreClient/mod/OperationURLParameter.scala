@@ -20,7 +20,8 @@ object OperationURLParameter {
     __obj.asInstanceOf[OperationURLParameter]
   }
   
-  extension [Self <: OperationURLParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationURLParameter] (val x: Self) extends AnyVal {
     
     inline def setSkipEncoding(value: Boolean): Self = StObject.set(x, "skipEncoding", value.asInstanceOf[js.Any])
     

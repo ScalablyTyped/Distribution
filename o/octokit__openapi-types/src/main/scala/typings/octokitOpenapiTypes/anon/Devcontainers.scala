@@ -17,7 +17,8 @@ object Devcontainers {
     __obj.asInstanceOf[Devcontainers]
   }
   
-  extension [Self <: Devcontainers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Devcontainers] (val x: Self) extends AnyVal {
     
     inline def setDevcontainers(value: js.Array[NamePath]): Self = StObject.set(x, "devcontainers", value.asInstanceOf[js.Any])
     

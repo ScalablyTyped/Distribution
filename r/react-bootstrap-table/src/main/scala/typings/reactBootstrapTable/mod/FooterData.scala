@@ -38,7 +38,8 @@ object FooterData {
     __obj.asInstanceOf[FooterData]
   }
   
-  extension [Self <: FooterData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FooterData] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: DataAlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

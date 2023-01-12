@@ -17,7 +17,8 @@ object PivotTransport {
     __obj.asInstanceOf[PivotTransport]
   }
   
-  extension [Self <: PivotTransport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotTransport] (val x: Self) extends AnyVal {
     
     inline def setDiscover(value: Any): Self = StObject.set(x, "discover", value.asInstanceOf[js.Any])
     

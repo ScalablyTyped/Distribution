@@ -82,7 +82,8 @@ object Opacity {
     __obj.asInstanceOf[Opacity]
   }
   
-  extension [Self <: Opacity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Opacity] (val x: Self) extends AnyVal {
     
     inline def setColor(value: typings.echarts.echarts.EChartOption.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

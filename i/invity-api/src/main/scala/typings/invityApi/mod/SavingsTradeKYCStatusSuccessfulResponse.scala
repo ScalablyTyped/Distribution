@@ -15,7 +15,8 @@ object SavingsTradeKYCStatusSuccessfulResponse {
     __obj.asInstanceOf[SavingsTradeKYCStatusSuccessfulResponse]
   }
   
-  extension [Self <: SavingsTradeKYCStatusSuccessfulResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavingsTradeKYCStatusSuccessfulResponse] (val x: Self) extends AnyVal {
     
     inline def setKycStatus(value: SavingsKYCStatus): Self = StObject.set(x, "kycStatus", value.asInstanceOf[js.Any])
     

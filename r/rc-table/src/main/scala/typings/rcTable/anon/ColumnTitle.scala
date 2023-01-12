@@ -64,7 +64,8 @@ object ColumnTitle {
     __obj.asInstanceOf[ColumnTitle[RecordType]]
   }
   
-  extension [Self <: ColumnTitle[?], RecordType](x: Self & ColumnTitle[RecordType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnTitle[?], RecordType] (val x: Self & ColumnTitle[RecordType]) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

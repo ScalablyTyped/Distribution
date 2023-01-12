@@ -29,7 +29,8 @@ object GetBoxModelRequest {
     __obj.asInstanceOf[GetBoxModelRequest]
   }
   
-  extension [Self <: GetBoxModelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBoxModelRequest] (val x: Self) extends AnyVal {
     
     inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     

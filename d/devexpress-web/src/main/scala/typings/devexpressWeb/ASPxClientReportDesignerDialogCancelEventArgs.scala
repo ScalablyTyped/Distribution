@@ -23,7 +23,8 @@ object ASPxClientReportDesignerDialogCancelEventArgs {
     __obj.asInstanceOf[ASPxClientReportDesignerDialogCancelEventArgs]
   }
   
-  extension [Self <: ASPxClientReportDesignerDialogCancelEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientReportDesignerDialogCancelEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
   }

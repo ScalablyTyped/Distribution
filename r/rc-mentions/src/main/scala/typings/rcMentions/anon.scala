@@ -527,7 +527,8 @@ object anon {
       __obj.asInstanceOf[PartialMentionsPropsRefAt]
     }
     
-    extension [Self <: PartialMentionsPropsRefAt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMentionsPropsRefAt] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1376,7 +1377,8 @@ object anon {
       __obj.asInstanceOf[SelectionLocation]
     }
     
-    extension [Self <: SelectionLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionLocation] (val x: Self) extends AnyVal {
       
       inline def setSelectionLocation(value: Double): Self = StObject.set(x, "selectionLocation", value.asInstanceOf[js.Any])
       
@@ -2214,7 +2216,8 @@ object anon {
       __obj.asInstanceOf[WeakValidationMapMentions]
     }
     
-    extension [Self <: WeakValidationMapMentions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WeakValidationMapMentions] (val x: Self) extends AnyVal {
       
       inline def setAbout(
         value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any

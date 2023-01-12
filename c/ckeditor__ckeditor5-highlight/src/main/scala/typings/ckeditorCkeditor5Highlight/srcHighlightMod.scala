@@ -41,7 +41,8 @@ object srcHighlightMod {
       __obj.asInstanceOf[HighlightConfig]
     }
     
-    extension [Self <: HighlightConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HighlightConfig] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: js.Array[HighlightOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object srcHighlightMod {
       __obj.asInstanceOf[HighlightOption]
     }
     
-    extension [Self <: HighlightOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HighlightOption] (val x: Self) extends AnyVal {
       
       inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
@@ -98,7 +100,8 @@ object srcHighlightMod {
         __obj.asInstanceOf[Plugins]
       }
       
-      extension [Self <: Plugins](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
         
         inline def setHighlight(value: Highlight): Self = StObject.set(x, "Highlight", value.asInstanceOf[js.Any])
       }

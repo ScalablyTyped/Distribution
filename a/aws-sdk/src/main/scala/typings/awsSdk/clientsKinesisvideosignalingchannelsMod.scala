@@ -40,7 +40,8 @@ object clientsKinesisvideosignalingchannelsMod {
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    extension [Self <: ClientApiVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object clientsKinesisvideosignalingchannelsMod {
       __obj.asInstanceOf[GetIceServerConfigRequest]
     }
     
-    extension [Self <: GetIceServerConfigRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetIceServerConfigRequest] (val x: Self) extends AnyVal {
       
       inline def setChannelARN(value: ResourceARN): Self = StObject.set(x, "ChannelARN", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object clientsKinesisvideosignalingchannelsMod {
       __obj.asInstanceOf[GetIceServerConfigResponse]
     }
     
-    extension [Self <: GetIceServerConfigResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetIceServerConfigResponse] (val x: Self) extends AnyVal {
       
       inline def setIceServerList(value: IceServerList): Self = StObject.set(x, "IceServerList", value.asInstanceOf[js.Any])
       
@@ -155,7 +158,8 @@ object clientsKinesisvideosignalingchannelsMod {
       __obj.asInstanceOf[IceServer]
     }
     
-    extension [Self <: IceServer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IceServer] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: Password): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
       
@@ -244,7 +248,8 @@ object clientsKinesisvideosignalingchannelsMod {
       __obj.asInstanceOf[SendAlexaOfferToMasterRequest]
     }
     
-    extension [Self <: SendAlexaOfferToMasterRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendAlexaOfferToMasterRequest] (val x: Self) extends AnyVal {
       
       inline def setChannelARN(value: ResourceARN): Self = StObject.set(x, "ChannelARN", value.asInstanceOf[js.Any])
       
@@ -268,7 +273,8 @@ object clientsKinesisvideosignalingchannelsMod {
       __obj.asInstanceOf[SendAlexaOfferToMasterResponse]
     }
     
-    extension [Self <: SendAlexaOfferToMasterResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendAlexaOfferToMasterResponse] (val x: Self) extends AnyVal {
       
       inline def setAnswer(value: Answer): Self = StObject.set(x, "Answer", value.asInstanceOf[js.Any])
       

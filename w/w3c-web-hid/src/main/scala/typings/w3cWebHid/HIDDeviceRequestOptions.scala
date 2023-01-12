@@ -16,7 +16,8 @@ object HIDDeviceRequestOptions {
     __obj.asInstanceOf[HIDDeviceRequestOptions]
   }
   
-  extension [Self <: HIDDeviceRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HIDDeviceRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: js.Array[HIDDeviceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

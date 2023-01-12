@@ -23,7 +23,8 @@ object DefaultRef {
     __obj.asInstanceOf[DefaultRef]
   }
   
-  extension [Self <: DefaultRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultRef] (val x: Self) extends AnyVal {
     
     inline def setDefaultRef(value: VgValueRef): Self = StObject.set(x, "defaultRef", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object UserScript {
     __obj.asInstanceOf[UserScript]
   }
   
-  extension [Self <: UserScript](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserScript] (val x: Self) extends AnyVal {
     
     inline def setPage(value: RequestFilterRule): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     

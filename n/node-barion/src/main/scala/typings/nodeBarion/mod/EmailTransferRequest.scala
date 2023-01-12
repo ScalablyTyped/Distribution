@@ -25,7 +25,8 @@ object EmailTransferRequest {
     __obj.asInstanceOf[EmailTransferRequest]
   }
   
-  extension [Self <: EmailTransferRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailTransferRequest] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: Money): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
     

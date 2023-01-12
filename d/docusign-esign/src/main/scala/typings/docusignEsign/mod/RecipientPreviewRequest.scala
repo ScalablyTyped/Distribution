@@ -95,7 +95,8 @@ object RecipientPreviewRequest {
     __obj.asInstanceOf[RecipientPreviewRequest]
   }
   
-  extension [Self <: RecipientPreviewRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientPreviewRequest] (val x: Self) extends AnyVal {
     
     inline def setAssertionId(value: String): Self = StObject.set(x, "assertionId", value.asInstanceOf[js.Any])
     

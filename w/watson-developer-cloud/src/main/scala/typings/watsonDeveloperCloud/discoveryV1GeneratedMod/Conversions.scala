@@ -29,7 +29,8 @@ object Conversions {
     __obj.asInstanceOf[Conversions]
   }
   
-  extension [Self <: Conversions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Conversions] (val x: Self) extends AnyVal {
     
     inline def setHtml(value: HtmlSettings): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     

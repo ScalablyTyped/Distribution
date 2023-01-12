@@ -18,7 +18,8 @@ object RetrieveDomainAuthCodeResponse {
     __obj.asInstanceOf[RetrieveDomainAuthCodeResponse]
   }
   
-  extension [Self <: RetrieveDomainAuthCodeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetrieveDomainAuthCodeResponse] (val x: Self) extends AnyVal {
     
     inline def setAuthCode(value: DomainAuthCode): Self = StObject.set(x, "AuthCode", value.asInstanceOf[js.Any])
   }

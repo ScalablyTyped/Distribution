@@ -345,7 +345,8 @@ object TextShadowBlur {
     __obj.asInstanceOf[TextShadowBlur]
   }
   
-  extension [Self <: TextShadowBlur](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextShadowBlur] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

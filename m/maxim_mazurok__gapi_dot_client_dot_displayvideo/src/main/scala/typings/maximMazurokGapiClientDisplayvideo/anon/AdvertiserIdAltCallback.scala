@@ -56,7 +56,8 @@ object AdvertiserIdAltCallback {
     __obj.asInstanceOf[AdvertiserIdAltCallback]
   }
   
-  extension [Self <: AdvertiserIdAltCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvertiserIdAltCallback] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ContactFolder {
     __obj.asInstanceOf[ContactFolder]
   }
   
-  extension [Self <: ContactFolder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactFolder] (val x: Self) extends AnyVal {
     
     inline def setChildFolders(value: NullableOption[js.Array[ContactFolder]]): Self = StObject.set(x, "childFolders", value.asInstanceOf[js.Any])
     

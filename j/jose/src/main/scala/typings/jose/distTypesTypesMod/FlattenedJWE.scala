@@ -64,7 +64,8 @@ object FlattenedJWE {
     __obj.asInstanceOf[FlattenedJWE]
   }
   
-  extension [Self <: FlattenedJWE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlattenedJWE] (val x: Self) extends AnyVal {
     
     inline def setAad(value: String): Self = StObject.set(x, "aad", value.asInstanceOf[js.Any])
     

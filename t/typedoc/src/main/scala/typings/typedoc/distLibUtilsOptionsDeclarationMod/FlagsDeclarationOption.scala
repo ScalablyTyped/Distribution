@@ -26,7 +26,8 @@ object FlagsDeclarationOption {
     __obj.asInstanceOf[FlagsDeclarationOption[T]]
   }
   
-  extension [Self <: FlagsDeclarationOption[?], T /* <: Record[String, Boolean] */](x: Self & FlagsDeclarationOption[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlagsDeclarationOption[?], T /* <: Record[String, Boolean] */] (val x: Self & FlagsDeclarationOption[T]) extends AnyVal {
     
     inline def setDefaults(value: T): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     

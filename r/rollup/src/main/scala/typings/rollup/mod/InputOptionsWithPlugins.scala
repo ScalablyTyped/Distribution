@@ -18,7 +18,8 @@ object InputOptionsWithPlugins {
     __obj.asInstanceOf[InputOptionsWithPlugins]
   }
   
-  extension [Self <: InputOptionsWithPlugins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputOptionsWithPlugins] (val x: Self) extends AnyVal {
     
     inline def setPlugins(value: js.Array[Plugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     

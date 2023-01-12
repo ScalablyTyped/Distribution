@@ -27,7 +27,8 @@ object distTypesClassicEditorSystemDistComponentsBackToTopMod extends Shortcut {
       __obj.asInstanceOf[BackToTopProps]
     }
     
-    extension [Self <: BackToTopProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackToTopProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

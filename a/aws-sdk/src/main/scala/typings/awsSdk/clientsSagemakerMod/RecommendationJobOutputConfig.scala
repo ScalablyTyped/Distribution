@@ -23,7 +23,8 @@ object RecommendationJobOutputConfig {
     __obj.asInstanceOf[RecommendationJobOutputConfig]
   }
   
-  extension [Self <: RecommendationJobOutputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendationJobOutputConfig] (val x: Self) extends AnyVal {
     
     inline def setCompiledOutputConfig(value: RecommendationJobCompiledOutputConfig): Self = StObject.set(x, "CompiledOutputConfig", value.asInstanceOf[js.Any])
     

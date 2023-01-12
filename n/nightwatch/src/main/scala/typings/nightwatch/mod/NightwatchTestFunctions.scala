@@ -29,7 +29,8 @@ object NightwatchTestFunctions {
     __obj.asInstanceOf[NightwatchTestFunctions]
   }
   
-  extension [Self <: NightwatchTestFunctions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NightwatchTestFunctions] (val x: Self) extends AnyVal {
     
     inline def `set@disabled`(value: Boolean): Self = StObject.set(x, "@disabled", value.asInstanceOf[js.Any])
     

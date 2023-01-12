@@ -38,7 +38,8 @@ object GetTableVersionsRequest {
     __obj.asInstanceOf[GetTableVersionsRequest]
   }
   
-  extension [Self <: GetTableVersionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTableVersionsRequest] (val x: Self) extends AnyVal {
     
     inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     

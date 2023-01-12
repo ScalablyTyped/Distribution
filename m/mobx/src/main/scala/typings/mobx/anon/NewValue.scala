@@ -27,7 +27,8 @@ object NewValue {
     __obj.asInstanceOf[NewValue[K, V]]
   }
   
-  extension [Self <: NewValue[?, ?], K, V](x: Self & (NewValue[K, V])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewValue[?, ?], K, V] (val x: Self & (NewValue[K, V])) extends AnyVal {
     
     inline def setName(value: K): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

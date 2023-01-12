@@ -37,7 +37,8 @@ object QueryCacheStats {
     __obj.asInstanceOf[QueryCacheStats]
   }
   
-  extension [Self <: QueryCacheStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryCacheStats] (val x: Self) extends AnyVal {
     
     inline def setCache_count(value: integer): Self = StObject.set(x, "cache_count", value.asInstanceOf[js.Any])
     

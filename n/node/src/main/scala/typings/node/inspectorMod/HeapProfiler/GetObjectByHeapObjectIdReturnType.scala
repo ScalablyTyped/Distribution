@@ -19,7 +19,8 @@ object GetObjectByHeapObjectIdReturnType {
     __obj.asInstanceOf[GetObjectByHeapObjectIdReturnType]
   }
   
-  extension [Self <: GetObjectByHeapObjectIdReturnType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectByHeapObjectIdReturnType] (val x: Self) extends AnyVal {
     
     inline def setResult(value: RemoteObject): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }

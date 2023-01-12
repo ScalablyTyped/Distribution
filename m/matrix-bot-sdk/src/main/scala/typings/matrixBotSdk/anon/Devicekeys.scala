@@ -21,7 +21,8 @@ object Devicekeys {
     __obj.asInstanceOf[Devicekeys]
   }
   
-  extension [Self <: Devicekeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Devicekeys] (val x: Self) extends AnyVal {
     
     inline def setDevice_keys(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DeviceKeys */ Any

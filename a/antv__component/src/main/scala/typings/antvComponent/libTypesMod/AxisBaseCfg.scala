@@ -72,7 +72,8 @@ object AxisBaseCfg {
     __obj.asInstanceOf[AxisBaseCfg]
   }
   
-  extension [Self <: AxisBaseCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisBaseCfg] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: AxisLabelCfg): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

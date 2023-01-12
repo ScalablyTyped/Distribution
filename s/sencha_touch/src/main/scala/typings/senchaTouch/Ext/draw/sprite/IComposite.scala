@@ -35,7 +35,8 @@ object IComposite {
     __obj.asInstanceOf[IComposite]
   }
   
-  extension [Self <: IComposite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IComposite] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: /* sprite */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

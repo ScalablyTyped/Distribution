@@ -81,7 +81,8 @@ object typesEncryptionKeyAccessDeniedExceptionMod {
       __obj.asInstanceOf[EncryptionKeyAccessDeniedException]
     }
     
-    extension [Self <: EncryptionKeyAccessDeniedException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncryptionKeyAccessDeniedException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyAccessDeniedException

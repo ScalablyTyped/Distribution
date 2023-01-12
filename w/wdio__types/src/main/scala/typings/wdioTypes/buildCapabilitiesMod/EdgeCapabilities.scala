@@ -22,7 +22,8 @@ object EdgeCapabilities {
     __obj.asInstanceOf[EdgeCapabilities]
   }
   
-  extension [Self <: EdgeCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeCapabilities] (val x: Self) extends AnyVal {
     
     inline def setMsColonextensionPaths(value: js.Array[String]): Self = StObject.set(x, "ms:extensionPaths", value.asInstanceOf[js.Any])
     

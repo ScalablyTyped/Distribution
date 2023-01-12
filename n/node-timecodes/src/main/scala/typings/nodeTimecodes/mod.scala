@@ -68,7 +68,8 @@ object mod {
       __obj.asInstanceOf[TimecodeOptions]
     }
     
-    extension [Self <: TimecodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimecodeOptions] (val x: Self) extends AnyVal {
       
       inline def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
       

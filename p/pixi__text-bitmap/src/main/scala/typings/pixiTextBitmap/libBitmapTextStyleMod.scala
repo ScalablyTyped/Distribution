@@ -20,7 +20,8 @@ object libBitmapTextStyleMod {
       __obj.asInstanceOf[IBitmapTextFontDescriptor]
     }
     
-    extension [Self <: IBitmapTextFontDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBitmapTextFontDescriptor] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object libBitmapTextStyleMod {
       __obj.asInstanceOf[IBitmapTextStyle]
     }
     
-    extension [Self <: IBitmapTextStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBitmapTextStyle] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: TextStyleAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

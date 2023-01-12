@@ -15,7 +15,8 @@ object StatusState {
     __obj.asInstanceOf[StatusState]
   }
   
-  extension [Self <: StatusState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusState] (val x: Self) extends AnyVal {
     
     inline def setDevConsole(value: String): Self = StObject.set(x, "devConsole", value.asInstanceOf[js.Any])
   }

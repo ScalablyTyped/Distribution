@@ -35,7 +35,8 @@ object MochaPhantomJS {
     __obj.asInstanceOf[MochaPhantomJS]
   }
   
-  extension [Self <: MochaPhantomJS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MochaPhantomJS] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

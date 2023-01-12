@@ -19,7 +19,8 @@ object ReturnTypeGetCookiesResponse {
     __obj.asInstanceOf[ReturnTypeGetCookiesResponse]
   }
   
-  extension [Self <: ReturnTypeGetCookiesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetCookiesResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[js.UndefOr[GetCookiesRequest]]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

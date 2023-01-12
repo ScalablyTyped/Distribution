@@ -23,7 +23,8 @@ object DBClusterRole {
     __obj.asInstanceOf[DBClusterRole]
   }
   
-  extension [Self <: DBClusterRole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBClusterRole] (val x: Self) extends AnyVal {
     
     inline def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     

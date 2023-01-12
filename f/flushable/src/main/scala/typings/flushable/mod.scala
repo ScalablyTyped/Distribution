@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[FlushableOperation]
     }
     
-    extension [Self <: FlushableOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlushableOperation] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       

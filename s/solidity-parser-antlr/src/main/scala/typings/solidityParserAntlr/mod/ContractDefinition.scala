@@ -33,7 +33,8 @@ object ContractDefinition {
     __obj.asInstanceOf[ContractDefinition]
   }
   
-  extension [Self <: ContractDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContractDefinition] (val x: Self) extends AnyVal {
     
     inline def setBaseContracts(value: js.Array[InheritanceSpecifier]): Self = StObject.set(x, "baseContracts", value.asInstanceOf[js.Any])
     

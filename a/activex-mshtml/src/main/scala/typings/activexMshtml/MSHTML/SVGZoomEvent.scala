@@ -91,7 +91,8 @@ object SVGZoomEvent {
     __obj.asInstanceOf[SVGZoomEvent]
   }
   
-  extension [Self <: SVGZoomEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGZoomEvent] (val x: Self) extends AnyVal {
     
     inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     

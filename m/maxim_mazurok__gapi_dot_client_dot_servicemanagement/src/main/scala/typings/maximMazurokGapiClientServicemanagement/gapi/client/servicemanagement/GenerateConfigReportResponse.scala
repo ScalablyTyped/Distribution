@@ -25,7 +25,8 @@ object GenerateConfigReportResponse {
     __obj.asInstanceOf[GenerateConfigReportResponse]
   }
   
-  extension [Self <: GenerateConfigReportResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateConfigReportResponse] (val x: Self) extends AnyVal {
     
     inline def setChangeReports(value: js.Array[ChangeReport]): Self = StObject.set(x, "changeReports", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object PartialStyleRulesStepClas {
     __obj.asInstanceOf[PartialStyleRulesStepClas]
   }
   
-  extension [Self <: PartialStyleRulesStepClas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesStepClas] (val x: Self) extends AnyVal {
     
     inline def setAlternativeLabel(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

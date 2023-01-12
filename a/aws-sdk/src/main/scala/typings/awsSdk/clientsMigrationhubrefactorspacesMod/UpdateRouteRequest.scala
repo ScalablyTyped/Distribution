@@ -38,7 +38,8 @@ object UpdateRouteRequest {
     __obj.asInstanceOf[UpdateRouteRequest]
   }
   
-  extension [Self <: UpdateRouteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRouteRequest] (val x: Self) extends AnyVal {
     
     inline def setActivationState(value: RouteActivationState): Self = StObject.set(x, "ActivationState", value.asInstanceOf[js.Any])
     

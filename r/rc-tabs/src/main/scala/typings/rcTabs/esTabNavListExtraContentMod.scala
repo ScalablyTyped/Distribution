@@ -31,7 +31,8 @@ object esTabNavListExtraContentMod extends Shortcut {
       __obj.asInstanceOf[ExtraContentProps]
     }
     
-    extension [Self <: ExtraContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtraContentProps] (val x: Self) extends AnyVal {
       
       inline def setExtra(value: TabBarExtraContent): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       

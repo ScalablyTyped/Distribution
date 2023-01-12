@@ -36,7 +36,8 @@ object GridFSFile {
     __obj.asInstanceOf[GridFSFile]
   }
   
-  extension [Self <: GridFSFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridFSFile] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     

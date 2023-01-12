@@ -19,7 +19,8 @@ object MetricHeader {
     __obj.asInstanceOf[MetricHeader]
   }
   
-  extension [Self <: MetricHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricHeader] (val x: Self) extends AnyVal {
     
     inline def setMetricHeaderEntries(value: js.Array[MetricHeaderEntry]): Self = StObject.set(x, "metricHeaderEntries", value.asInstanceOf[js.Any])
     

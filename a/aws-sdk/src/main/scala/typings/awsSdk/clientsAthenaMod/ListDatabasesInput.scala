@@ -28,7 +28,8 @@ object ListDatabasesInput {
     __obj.asInstanceOf[ListDatabasesInput]
   }
   
-  extension [Self <: ListDatabasesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDatabasesInput] (val x: Self) extends AnyVal {
     
     inline def setCatalogName(value: CatalogNameString): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
     

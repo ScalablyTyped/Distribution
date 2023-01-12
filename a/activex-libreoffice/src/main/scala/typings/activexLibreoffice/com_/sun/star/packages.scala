@@ -302,7 +302,8 @@ object packages {
       __obj.asInstanceOf[XDataSinkEncrSupport]
     }
     
-    extension [Self <: XDataSinkEncrSupport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XDataSinkEncrSupport] (val x: Self) extends AnyVal {
       
       inline def setDataStream(value: XInputStream): Self = StObject.set(x, "DataStream", value.asInstanceOf[js.Any])
       
@@ -351,7 +352,8 @@ object packages {
         __obj.asInstanceOf[XManifestReader]
       }
       
-      extension [Self <: XManifestReader](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: XManifestReader] (val x: Self) extends AnyVal {
         
         inline def setReadManifestSequence(value: XInputStream => SafeArray[SafeArray[PropertyValue]]): Self = StObject.set(x, "readManifestSequence", js.Any.fromFunction1(value))
       }
@@ -380,7 +382,8 @@ object packages {
         __obj.asInstanceOf[XManifestWriter]
       }
       
-      extension [Self <: XManifestWriter](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: XManifestWriter] (val x: Self) extends AnyVal {
         
         inline def setWriteManifestSequence(value: (XOutputStream, SeqEquiv[SeqEquiv[PropertyValue]]) => Unit): Self = StObject.set(x, "writeManifestSequence", js.Any.fromFunction2(value))
       }
@@ -414,7 +417,8 @@ object packages {
         __obj.asInstanceOf[XZipFileAccess]
       }
       
-      extension [Self <: XZipFileAccess](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: XZipFileAccess] (val x: Self) extends AnyVal {
         
         inline def setGetStreamByPattern(value: String => XInputStream): Self = StObject.set(x, "getStreamByPattern", js.Any.fromFunction1(value))
       }
@@ -653,7 +657,8 @@ object packages {
         __obj.asInstanceOf[ZipEntry]
       }
       
-      extension [Self <: ZipEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ZipEntry] (val x: Self) extends AnyVal {
         
         inline def setExtra(value: SafeArray[Double]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
         
@@ -715,7 +720,8 @@ object packages {
         __obj.asInstanceOf[ZipFileAccess]
       }
       
-      extension [Self <: ZipFileAccess](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ZipFileAccess] (val x: Self) extends AnyVal {
         
         inline def setCreateWithURL(value: String => Unit): Self = StObject.set(x, "createWithURL", js.Any.fromFunction1(value))
       }

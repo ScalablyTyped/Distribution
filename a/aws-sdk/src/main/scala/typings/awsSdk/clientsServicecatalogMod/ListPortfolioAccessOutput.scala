@@ -23,7 +23,8 @@ object ListPortfolioAccessOutput {
     __obj.asInstanceOf[ListPortfolioAccessOutput]
   }
   
-  extension [Self <: ListPortfolioAccessOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPortfolioAccessOutput] (val x: Self) extends AnyVal {
     
     inline def setAccountIds(value: AccountIds): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     

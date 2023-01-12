@@ -113,7 +113,8 @@ object StreamingSession {
     __obj.asInstanceOf[StreamingSession]
   }
   
-  extension [Self <: StreamingSession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamingSession] (val x: Self) extends AnyVal {
     
     inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

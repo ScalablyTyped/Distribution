@@ -18,7 +18,8 @@ object NativeEventSubscription {
     __obj.asInstanceOf[NativeEventSubscription]
   }
   
-  extension [Self <: NativeEventSubscription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeEventSubscription] (val x: Self) extends AnyVal {
     
     inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }

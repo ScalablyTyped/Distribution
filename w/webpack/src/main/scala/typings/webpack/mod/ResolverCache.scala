@@ -19,7 +19,8 @@ object ResolverCache {
     __obj.asInstanceOf[ResolverCache]
   }
   
-  extension [Self <: ResolverCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolverCache] (val x: Self) extends AnyVal {
     
     inline def setDirect(value: WeakMap[js.Object, ResolverWithOptions]): Self = StObject.set(x, "direct", value.asInstanceOf[js.Any])
     

@@ -72,7 +72,8 @@ object Intersection {
     __obj.asInstanceOf[Intersection]
   }
   
-  extension [Self <: Intersection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Intersection] (val x: Self) extends AnyVal {
     
     inline def setBearings(value: js.Array[Double]): Self = StObject.set(x, "bearings", value.asInstanceOf[js.Any])
     

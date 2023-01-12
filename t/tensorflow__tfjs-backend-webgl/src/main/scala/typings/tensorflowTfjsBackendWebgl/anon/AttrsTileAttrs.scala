@@ -22,7 +22,8 @@ object AttrsTileAttrs {
     __obj.asInstanceOf[AttrsTileAttrs]
   }
   
-  extension [Self <: AttrsTileAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsTileAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: TileAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

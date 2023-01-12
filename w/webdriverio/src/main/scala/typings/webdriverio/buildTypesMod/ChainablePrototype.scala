@@ -302,7 +302,8 @@ object ChainablePrototype {
     __obj.asInstanceOf[ChainablePrototype]
   }
   
-  extension [Self <: ChainablePrototype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChainablePrototype] (val x: Self) extends AnyVal {
     
     inline def set$(
       value: /* args */ Parameters[

@@ -29,7 +29,8 @@ object ArtifactStore {
     __obj.asInstanceOf[ArtifactStore]
   }
   
-  extension [Self <: ArtifactStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactStore] (val x: Self) extends AnyVal {
     
     inline def setEncryptionKey(value: EncryptionKey): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
     

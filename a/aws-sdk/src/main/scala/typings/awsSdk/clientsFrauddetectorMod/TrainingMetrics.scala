@@ -23,7 +23,8 @@ object TrainingMetrics {
     __obj.asInstanceOf[TrainingMetrics]
   }
   
-  extension [Self <: TrainingMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrainingMetrics] (val x: Self) extends AnyVal {
     
     inline def setAuc(value: float): Self = StObject.set(x, "auc", value.asInstanceOf[js.Any])
     

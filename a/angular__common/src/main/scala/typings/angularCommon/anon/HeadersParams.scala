@@ -32,7 +32,8 @@ object HeadersParams {
     __obj.asInstanceOf[HeadersParams]
   }
   
-  extension [Self <: HeadersParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeadersParams] (val x: Self) extends AnyVal {
     
     inline def setContext(value: HttpContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

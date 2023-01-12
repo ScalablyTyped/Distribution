@@ -18,7 +18,8 @@ object CreateActionResponse {
     __obj.asInstanceOf[CreateActionResponse]
   }
   
-  extension [Self <: CreateActionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateActionResponse] (val x: Self) extends AnyVal {
     
     inline def setActionArn(value: ActionArn): Self = StObject.set(x, "ActionArn", value.asInstanceOf[js.Any])
     

@@ -94,7 +94,8 @@ object WindowsFirewallNetworkProfile {
     __obj.asInstanceOf[WindowsFirewallNetworkProfile]
   }
   
-  extension [Self <: WindowsFirewallNetworkProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsFirewallNetworkProfile] (val x: Self) extends AnyVal {
     
     inline def setAuthorizedApplicationRulesFromGroupPolicyMerged(value: Boolean): Self = StObject.set(x, "authorizedApplicationRulesFromGroupPolicyMerged", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object RepricingRuleReportBuyboxWinningRuleStats {
     __obj.asInstanceOf[RepricingRuleReportBuyboxWinningRuleStats]
   }
   
-  extension [Self <: RepricingRuleReportBuyboxWinningRuleStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepricingRuleReportBuyboxWinningRuleStats] (val x: Self) extends AnyVal {
     
     inline def setBuyboxWonProductCount(value: Double): Self = StObject.set(x, "buyboxWonProductCount", value.asInstanceOf[js.Any])
     

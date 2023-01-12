@@ -22,7 +22,8 @@ object IsNumericOptions {
     __obj.asInstanceOf[IsNumericOptions]
   }
   
-  extension [Self <: IsNumericOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsNumericOptions] (val x: Self) extends AnyVal {
     
     inline def setLocale(value: AlphaLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

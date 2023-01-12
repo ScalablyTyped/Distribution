@@ -26,7 +26,8 @@ object OtherPermission {
     __obj.asInstanceOf[OtherPermission]
   }
   
-  extension [Self <: OtherPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OtherPermission] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: execute | http | sendto): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     

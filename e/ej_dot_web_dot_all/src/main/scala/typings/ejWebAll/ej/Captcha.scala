@@ -109,7 +109,8 @@ object Captcha {
       __obj.asInstanceOf[typings.ejWebAll.ej.Captcha.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Captcha.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Captcha.Model] (val x: Self) extends AnyVal {
       
       inline def setCharacterSet(value: String): Self = StObject.set(x, "characterSet", value.asInstanceOf[js.Any])
       
@@ -218,7 +219,8 @@ object Captcha {
       __obj.asInstanceOf[RefreshBeginEventArgs]
     }
     
-    extension [Self <: RefreshBeginEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefreshBeginEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -255,7 +257,8 @@ object Captcha {
       __obj.asInstanceOf[RefreshCompleteEventArgs]
     }
     
-    extension [Self <: RefreshCompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefreshCompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -292,7 +295,8 @@ object Captcha {
       __obj.asInstanceOf[RefreshFailureEventArgs]
     }
     
-    extension [Self <: RefreshFailureEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefreshFailureEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -329,7 +333,8 @@ object Captcha {
       __obj.asInstanceOf[RefreshSuccessEventArgs]
     }
     
-    extension [Self <: RefreshSuccessEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefreshSuccessEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

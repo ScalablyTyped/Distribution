@@ -38,7 +38,8 @@ object UpdateNotificationRequest {
     __obj.asInstanceOf[UpdateNotificationRequest]
   }
   
-  extension [Self <: UpdateNotificationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateNotificationRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

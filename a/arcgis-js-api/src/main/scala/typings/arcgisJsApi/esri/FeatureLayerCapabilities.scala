@@ -78,7 +78,8 @@ object FeatureLayerCapabilities {
     __obj.asInstanceOf[FeatureLayerCapabilities]
   }
   
-  extension [Self <: FeatureLayerCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureLayerCapabilities] (val x: Self) extends AnyVal {
     
     inline def setAttachment(value: FeatureLayerCapabilitiesAttachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     

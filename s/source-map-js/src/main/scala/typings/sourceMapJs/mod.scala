@@ -130,7 +130,8 @@ object mod {
       __obj.asInstanceOf[CodeWithSourceMap]
     }
     
-    extension [Self <: CodeWithSourceMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeWithSourceMap] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object mod {
       __obj.asInstanceOf[FindPosition]
     }
     
-    extension [Self <: FindPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindPosition] (val x: Self) extends AnyVal {
       
       inline def setBias(value: Double): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
       
@@ -173,7 +175,8 @@ object mod {
       __obj.asInstanceOf[LineRange]
     }
     
-    extension [Self <: LineRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineRange] (val x: Self) extends AnyVal {
       
       inline def setLastColumn(value: Double): Self = StObject.set(x, "lastColumn", value.asInstanceOf[js.Any])
     }
@@ -194,7 +197,8 @@ object mod {
       __obj.asInstanceOf[MappedPosition]
     }
     
-    extension [Self <: MappedPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MappedPosition] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -221,7 +225,8 @@ object mod {
       __obj.asInstanceOf[Mapping]
     }
     
-    extension [Self <: Mapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mapping] (val x: Self) extends AnyVal {
       
       inline def setGenerated(value: Position): Self = StObject.set(x, "generated", value.asInstanceOf[js.Any])
       
@@ -263,7 +268,8 @@ object mod {
       __obj.asInstanceOf[MappingItem]
     }
     
-    extension [Self <: MappingItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MappingItem] (val x: Self) extends AnyVal {
       
       inline def setGeneratedColumn(value: Double): Self = StObject.set(x, "generatedColumn", value.asInstanceOf[js.Any])
       
@@ -292,7 +298,8 @@ object mod {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -321,7 +328,8 @@ object mod {
       __obj.asInstanceOf[RawSourceMap]
     }
     
-    extension [Self <: RawSourceMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawSourceMap] (val x: Self) extends AnyVal {
       
       inline def setMappings(value: String): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
       
@@ -356,7 +364,8 @@ object mod {
       __obj.asInstanceOf[SourceFindPosition]
     }
     
-    extension [Self <: SourceFindPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceFindPosition] (val x: Self) extends AnyVal {
       
       inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
@@ -375,7 +384,8 @@ object mod {
       __obj.asInstanceOf[StartOfSourceMap]
     }
     
-    extension [Self <: StartOfSourceMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartOfSourceMap] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       

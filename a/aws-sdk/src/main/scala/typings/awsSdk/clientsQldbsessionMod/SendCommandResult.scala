@@ -48,7 +48,8 @@ object SendCommandResult {
     __obj.asInstanceOf[SendCommandResult]
   }
   
-  extension [Self <: SendCommandResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendCommandResult] (val x: Self) extends AnyVal {
     
     inline def setAbortTransaction(value: AbortTransactionResult): Self = StObject.set(x, "AbortTransaction", value.asInstanceOf[js.Any])
     

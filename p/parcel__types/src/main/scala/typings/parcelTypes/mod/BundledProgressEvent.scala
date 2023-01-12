@@ -27,7 +27,8 @@ object BundledProgressEvent {
     __obj.asInstanceOf[BundledProgressEvent]
   }
   
-  extension [Self <: BundledProgressEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BundledProgressEvent] (val x: Self) extends AnyVal {
     
     inline def setBundleGraph(value: BundleGraph[NamedBundle]): Self = StObject.set(x, "bundleGraph", value.asInstanceOf[js.Any])
     

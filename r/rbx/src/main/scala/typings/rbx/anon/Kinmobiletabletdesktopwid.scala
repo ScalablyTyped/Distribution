@@ -30,7 +30,8 @@ object Kinmobiletabletdesktopwid {
     __obj.asInstanceOf[Kinmobiletabletdesktopwid]
   }
   
-  extension [Self <: Kinmobiletabletdesktopwid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Kinmobiletabletdesktopwid] (val x: Self) extends AnyVal {
     
     inline def setDesktop(value: top | right | bottom | left): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
     

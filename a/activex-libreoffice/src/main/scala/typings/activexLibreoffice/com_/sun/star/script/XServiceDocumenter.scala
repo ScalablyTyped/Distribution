@@ -35,7 +35,8 @@ object XServiceDocumenter {
     __obj.asInstanceOf[XServiceDocumenter]
   }
   
-  extension [Self <: XServiceDocumenter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XServiceDocumenter] (val x: Self) extends AnyVal {
     
     inline def setCoreBaseUrl(value: String): Self = StObject.set(x, "CoreBaseUrl", value.asInstanceOf[js.Any])
     

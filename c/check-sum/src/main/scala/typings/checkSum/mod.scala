@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[ChecksumError]
     }
     
-    extension [Self <: ChecksumError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChecksumError] (val x: Self) extends AnyVal {
       
       inline def setActual(value: String): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       

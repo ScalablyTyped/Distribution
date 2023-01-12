@@ -18,7 +18,8 @@ object SearchApplicationQueryStats {
     __obj.asInstanceOf[SearchApplicationQueryStats]
   }
   
-  extension [Self <: SearchApplicationQueryStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchApplicationQueryStats] (val x: Self) extends AnyVal {
     
     inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

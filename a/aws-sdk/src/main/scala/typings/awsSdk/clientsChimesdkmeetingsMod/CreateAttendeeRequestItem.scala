@@ -23,7 +23,8 @@ object CreateAttendeeRequestItem {
     __obj.asInstanceOf[CreateAttendeeRequestItem]
   }
   
-  extension [Self <: CreateAttendeeRequestItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAttendeeRequestItem] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: AttendeeCapabilities): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     

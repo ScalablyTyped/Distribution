@@ -255,7 +255,8 @@ object IPanel {
     __obj.asInstanceOf[IPanel]
   }
   
-  extension [Self <: IPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPanel] (val x: Self) extends AnyVal {
     
     inline def setApi(value: Any): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     

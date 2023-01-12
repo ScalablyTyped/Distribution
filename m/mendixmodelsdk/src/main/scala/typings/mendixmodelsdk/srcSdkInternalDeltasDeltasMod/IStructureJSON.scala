@@ -24,7 +24,8 @@ object IStructureJSON {
     __obj.asInstanceOf[IStructureJSON]
   }
   
-  extension [Self <: IStructureJSON](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStructureJSON] (val x: Self) extends AnyVal {
     
     inline def set$ID(value: String): Self = StObject.set(x, "$ID", value.asInstanceOf[js.Any])
     

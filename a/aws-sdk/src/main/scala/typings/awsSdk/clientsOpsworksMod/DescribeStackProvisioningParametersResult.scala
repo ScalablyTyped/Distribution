@@ -23,7 +23,8 @@ object DescribeStackProvisioningParametersResult {
     __obj.asInstanceOf[DescribeStackProvisioningParametersResult]
   }
   
-  extension [Self <: DescribeStackProvisioningParametersResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeStackProvisioningParametersResult] (val x: Self) extends AnyVal {
     
     inline def setAgentInstallerUrl(value: String): Self = StObject.set(x, "AgentInstallerUrl", value.asInstanceOf[js.Any])
     

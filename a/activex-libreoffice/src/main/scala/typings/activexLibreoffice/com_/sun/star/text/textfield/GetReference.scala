@@ -91,7 +91,8 @@ object GetReference {
     __obj.asInstanceOf[GetReference]
   }
   
-  extension [Self <: GetReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetReference] (val x: Self) extends AnyVal {
     
     inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
     

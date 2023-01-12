@@ -15,7 +15,8 @@ object IlmShrinkConfiguration {
     __obj.asInstanceOf[IlmShrinkConfiguration]
   }
   
-  extension [Self <: IlmShrinkConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IlmShrinkConfiguration] (val x: Self) extends AnyVal {
     
     inline def setNumber_of_shards(value: integer): Self = StObject.set(x, "number_of_shards", value.asInstanceOf[js.Any])
   }

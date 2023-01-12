@@ -17,7 +17,8 @@ object Scanbeam {
     __obj.asInstanceOf[Scanbeam]
   }
   
-  extension [Self <: Scanbeam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scanbeam] (val x: Self) extends AnyVal {
     
     inline def setNext(value: TEdge): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     

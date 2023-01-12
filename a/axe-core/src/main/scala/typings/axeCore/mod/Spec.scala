@@ -36,7 +36,8 @@ object Spec {
     __obj.asInstanceOf[Spec]
   }
   
-  extension [Self <: Spec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Spec] (val x: Self) extends AnyVal {
     
     inline def setAllowedOrigins(value: js.Array[String]): Self = StObject.set(x, "allowedOrigins", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object ItemParent {
     __obj.asInstanceOf[ItemParent]
   }
   
-  extension [Self <: ItemParent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemParent] (val x: Self) extends AnyVal {
     
     inline def setItem(value: ResourceItemXML): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

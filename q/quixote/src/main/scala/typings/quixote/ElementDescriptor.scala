@@ -38,7 +38,8 @@ object ElementDescriptor {
     __obj.asInstanceOf[ElementDescriptor]
   }
   
-  extension [Self <: ElementDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementDescriptor] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: PositionDescriptor): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

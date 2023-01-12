@@ -16,7 +16,8 @@ object DimensionalityReductionMetrics {
     __obj.asInstanceOf[DimensionalityReductionMetrics]
   }
   
-  extension [Self <: DimensionalityReductionMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionalityReductionMetrics] (val x: Self) extends AnyVal {
     
     inline def setTotalExplainedVarianceRatio(value: Double): Self = StObject.set(x, "totalExplainedVarianceRatio", value.asInstanceOf[js.Any])
     

@@ -75,7 +75,8 @@ object nativeDistDistModelsServerStyleSheetMod {
       __obj.asInstanceOf[ServerStyleSheet]
     }
     
-    extension [Self <: ServerStyleSheet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerStyleSheet] (val x: Self) extends AnyVal {
       
       inline def setCollectStyles(value: Any => Element): Self = StObject.set(x, "collectStyles", js.Any.fromFunction1(value))
       

@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[BufferMode]
     }
     
-    extension [Self <: BufferMode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferMode] (val x: Self) extends AnyVal {
       
       inline def setBufferMode(value: separate | interleaved): Self = StObject.set(x, "bufferMode", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Fragment]
     }
     
-    extension [Self <: Fragment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fragment] (val x: Self) extends AnyVal {
       
       inline def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -100,7 +103,8 @@ object anon {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -125,7 +129,8 @@ object anon {
       __obj.asInstanceOf[SyncFunc]
     }
     
-    extension [Self <: SyncFunc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncFunc] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

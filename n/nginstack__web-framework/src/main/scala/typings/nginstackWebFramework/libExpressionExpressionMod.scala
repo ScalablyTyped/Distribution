@@ -66,7 +66,8 @@ object libExpressionExpressionMod {
       __obj.asInstanceOf[Expression]
     }
     
-    extension [Self <: Expression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Expression] (val x: Self) extends AnyVal {
       
       inline def setEvaluate(value: StringDictionary[Double] => Double): Self = StObject.set(x, "evaluate", js.Any.fromFunction1(value))
       

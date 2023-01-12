@@ -15,7 +15,8 @@ object SentimentAnalyzer {
     __obj.asInstanceOf[SentimentAnalyzer]
   }
   
-  extension [Self <: SentimentAnalyzer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SentimentAnalyzer] (val x: Self) extends AnyVal {
     
     inline def setGetSentiment(value: js.Array[String] => Double): Self = StObject.set(x, "getSentiment", js.Any.fromFunction1(value))
   }

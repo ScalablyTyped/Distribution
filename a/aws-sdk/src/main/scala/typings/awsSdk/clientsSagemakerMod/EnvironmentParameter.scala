@@ -28,7 +28,8 @@ object EnvironmentParameter {
     __obj.asInstanceOf[EnvironmentParameter]
   }
   
-  extension [Self <: EnvironmentParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentParameter] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

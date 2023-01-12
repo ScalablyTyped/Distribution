@@ -28,7 +28,8 @@ object ReadonlyPromiseArraySearc {
     __obj.asInstanceOf[ReadonlyPromiseArraySearc]
   }
   
-  extension [Self <: ReadonlyPromiseArraySearc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyPromiseArraySearc] (val x: Self) extends AnyVal {
     
     inline def setCatch(value: () => js.Promise[js.Array[SearchForFacetValuesResponse] | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     

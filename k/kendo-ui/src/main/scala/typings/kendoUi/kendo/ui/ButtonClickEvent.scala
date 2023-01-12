@@ -17,7 +17,8 @@ object ButtonClickEvent {
     __obj.asInstanceOf[ButtonClickEvent]
   }
   
-  extension [Self <: ButtonClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonClickEvent] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object LabelLayout {
     __obj.asInstanceOf[LabelLayout]
   }
   
-  extension [Self <: LabelLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelLayout] (val x: Self) extends AnyVal {
     
     inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

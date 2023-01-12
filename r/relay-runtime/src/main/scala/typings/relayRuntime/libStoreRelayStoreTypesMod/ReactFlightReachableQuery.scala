@@ -18,7 +18,8 @@ object ReactFlightReachableQuery {
     __obj.asInstanceOf[ReactFlightReachableQuery]
   }
   
-  extension [Self <: ReactFlightReachableQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactFlightReachableQuery] (val x: Self) extends AnyVal {
     
     inline def setModule(value: Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     

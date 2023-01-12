@@ -57,7 +57,8 @@ object gapi {
           __obj.asInstanceOf[Promotion]
         }
         
-        extension [Self <: Promotion](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Promotion] (val x: Self) extends AnyVal {
           
           inline def setBodyLines(value: js.Array[HtmlTitle]): Self = StObject.set(x, "bodyLines", value.asInstanceOf[js.Any])
           
@@ -143,7 +144,8 @@ object gapi {
           __obj.asInstanceOf[Result]
         }
         
-        extension [Self <: Result](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
           
           inline def setCacheId(value: String): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
           
@@ -252,7 +254,8 @@ object gapi {
           __obj.asInstanceOf[Search]
         }
         
-        extension [Self <: Search](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Search] (val x: Self) extends AnyVal {
           
           inline def setContext(
             value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

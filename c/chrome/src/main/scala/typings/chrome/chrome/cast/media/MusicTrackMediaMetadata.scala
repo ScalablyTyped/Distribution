@@ -61,7 +61,8 @@ object MusicTrackMediaMetadata {
     __obj.asInstanceOf[MusicTrackMediaMetadata]
   }
   
-  extension [Self <: MusicTrackMediaMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MusicTrackMediaMetadata] (val x: Self) extends AnyVal {
     
     inline def setAlbumArtist(value: String): Self = StObject.set(x, "albumArtist", value.asInstanceOf[js.Any])
     

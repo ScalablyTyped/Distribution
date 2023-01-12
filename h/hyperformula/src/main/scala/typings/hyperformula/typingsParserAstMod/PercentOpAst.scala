@@ -22,7 +22,8 @@ object PercentOpAst {
     __obj.asInstanceOf[PercentOpAst]
   }
   
-  extension [Self <: PercentOpAst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PercentOpAst] (val x: Self) extends AnyVal {
     
     inline def setType(value: PERCENT_OP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

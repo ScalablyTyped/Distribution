@@ -23,7 +23,8 @@ object StopInstanceRequest {
     __obj.asInstanceOf[StopInstanceRequest]
   }
   
-  extension [Self <: StopInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     

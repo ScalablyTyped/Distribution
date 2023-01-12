@@ -45,7 +45,8 @@ object IGuidesOptions {
     __obj.asInstanceOf[IGuidesOptions]
   }
   
-  extension [Self <: IGuidesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGuidesOptions] (val x: Self) extends AnyVal {
     
     inline def setBracketPairs(value: Boolean | active): Self = StObject.set(x, "bracketPairs", value.asInstanceOf[js.Any])
     

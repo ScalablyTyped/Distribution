@@ -17,7 +17,8 @@ object FragmentCode {
     __obj.asInstanceOf[FragmentCode]
   }
   
-  extension [Self <: FragmentCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FragmentCode] (val x: Self) extends AnyVal {
     
     inline def setFragmentCode(value: String): Self = StObject.set(x, "fragmentCode", value.asInstanceOf[js.Any])
     

@@ -93,7 +93,8 @@ object mod {
       __obj.asInstanceOf[iDataAPIQueryResult[T]]
     }
     
-    extension [Self <: iDataAPIQueryResult[?], T](x: Self & iDataAPIQueryResult[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: iDataAPIQueryResult[?], T] (val x: Self & iDataAPIQueryResult[T]) extends AnyVal {
       
       inline def setRecords(value: js.Array[T]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
       
@@ -130,7 +131,8 @@ object mod {
       __obj.asInstanceOf[iParams]
     }
     
-    extension [Self <: iParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: iParams] (val x: Self) extends AnyVal {
       
       inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       

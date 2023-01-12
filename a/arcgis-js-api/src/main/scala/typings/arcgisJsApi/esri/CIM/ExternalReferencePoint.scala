@@ -25,7 +25,8 @@ object ExternalReferencePoint {
     __obj.asInstanceOf[ExternalReferencePoint]
   }
   
-  extension [Self <: ExternalReferencePoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalReferencePoint] (val x: Self) extends AnyVal {
     
     inline def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     

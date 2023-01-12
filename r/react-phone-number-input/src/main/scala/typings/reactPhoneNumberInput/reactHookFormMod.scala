@@ -68,7 +68,8 @@ object reactHookFormMod extends Shortcut {
       __obj.asInstanceOf[ReactHookFormComponentProps[FormValues]]
     }
     
-    extension [Self <: ReactHookFormComponentProps[?], FormValues](x: Self & ReactHookFormComponentProps[FormValues]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactHookFormComponentProps[?], FormValues] (val x: Self & ReactHookFormComponentProps[FormValues]) extends AnyVal {
       
       inline def setControl(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Control<FormValues> */ Any

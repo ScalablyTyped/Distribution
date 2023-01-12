@@ -26,7 +26,8 @@ object ChildLoggerOptions {
     __obj.asInstanceOf[ChildLoggerOptions]
   }
   
-  extension [Self <: ChildLoggerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildLoggerOptions] (val x: Self) extends AnyVal {
     
     inline def setCustomLevels(value: StringDictionary[Double]): Self = StObject.set(x, "customLevels", value.asInstanceOf[js.Any])
     

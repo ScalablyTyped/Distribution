@@ -38,7 +38,8 @@ object ListJobTemplatesRequest {
     __obj.asInstanceOf[ListJobTemplatesRequest]
   }
   
-  extension [Self <: ListJobTemplatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListJobTemplatesRequest] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: string): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     

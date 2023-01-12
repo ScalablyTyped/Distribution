@@ -48,7 +48,8 @@ object FleetUtilization {
     __obj.asInstanceOf[FleetUtilization]
   }
   
-  extension [Self <: FleetUtilization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FleetUtilization] (val x: Self) extends AnyVal {
     
     inline def setActiveGameSessionCount(value: WholeNumber): Self = StObject.set(x, "ActiveGameSessionCount", value.asInstanceOf[js.Any])
     

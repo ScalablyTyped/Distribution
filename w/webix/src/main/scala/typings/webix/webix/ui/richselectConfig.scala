@@ -115,7 +115,8 @@ object richselectConfig {
     __obj.asInstanceOf[richselectConfig]
   }
   
-  extension [Self <: richselectConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: richselectConfig] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

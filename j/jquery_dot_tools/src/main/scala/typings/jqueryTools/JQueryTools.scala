@@ -26,7 +26,8 @@ object JQueryTools {
       __obj.asInstanceOf[ToolsStatic]
     }
     
-    extension [Self <: ToolsStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolsStatic] (val x: Self) extends AnyVal {
       
       inline def setOverlay(value: OverlayStatic): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     }
@@ -54,7 +55,8 @@ object JQueryTools {
         __obj.asInstanceOf[MaskOptions]
       }
       
-      extension [Self <: MaskOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MaskOptions] (val x: Self) extends AnyVal {
         
         inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -108,7 +110,8 @@ object JQueryTools {
         __obj.asInstanceOf[Overlay]
       }
       
-      extension [Self <: Overlay](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Overlay] (val x: Self) extends AnyVal {
         
         inline def setClose(value: () => Overlay): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
         
@@ -247,7 +250,8 @@ object JQueryTools {
         __obj.asInstanceOf[OverlayOptions]
       }
       
-      extension [Self <: OverlayOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OverlayOptions] (val x: Self) extends AnyVal {
         
         inline def setClose(value: JQuery): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
         
@@ -336,7 +340,8 @@ object JQueryTools {
         __obj.asInstanceOf[OverlayStatic]
       }
       
-      extension [Self <: OverlayStatic](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OverlayStatic] (val x: Self) extends AnyVal {
         
         inline def setAddEffect(
           value: (String, js.ThisFunction2[/* this */ Overlay, /* position */ CssOptions, /* done */ js.Function0[Unit], Unit], js.ThisFunction1[/* this */ Overlay, /* done */ js.Function0[Unit], Unit]) => Unit

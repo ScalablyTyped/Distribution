@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[DetectOS]
     }
     
-    extension [Self <: DetectOS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetectOS] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object mod {
       __obj.asInstanceOf[PropertyData]
     }
     
-    extension [Self <: PropertyData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropertyData] (val x: Self) extends AnyVal {
       
       inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       

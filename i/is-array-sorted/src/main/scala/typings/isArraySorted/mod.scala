@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[Options[T]]
     }
     
-    extension [Self <: Options[?], T](x: Self & Options[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
       
       inline def setComparator(value: (T, T) => Double): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
     }

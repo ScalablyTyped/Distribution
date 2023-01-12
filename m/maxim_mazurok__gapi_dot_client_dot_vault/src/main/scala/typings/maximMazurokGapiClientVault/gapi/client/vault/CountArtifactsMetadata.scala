@@ -25,7 +25,8 @@ object CountArtifactsMetadata {
     __obj.asInstanceOf[CountArtifactsMetadata]
   }
   
-  extension [Self <: CountArtifactsMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountArtifactsMetadata] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

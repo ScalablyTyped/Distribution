@@ -22,7 +22,8 @@ object XRProjectionLayerInit {
     __obj.asInstanceOf[XRProjectionLayerInit]
   }
   
-  extension [Self <: XRProjectionLayerInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRProjectionLayerInit] (val x: Self) extends AnyVal {
     
     inline def setColorFormat(value: GLenum): Self = StObject.set(x, "colorFormat", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object IResourceMetadata {
     __obj.asInstanceOf[IResourceMetadata]
   }
   
-  extension [Self <: IResourceMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IResourceMetadata] (val x: Self) extends AnyVal {
     
     inline def setImageMetadata(value: IResourceMetadata): Self = StObject.set(x, "imageMetadata", value.asInstanceOf[js.Any])
     

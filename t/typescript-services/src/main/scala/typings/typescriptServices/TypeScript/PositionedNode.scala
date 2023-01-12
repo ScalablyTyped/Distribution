@@ -42,7 +42,8 @@ object PositionedNode {
     __obj.asInstanceOf[PositionedNode]
   }
   
-  extension [Self <: PositionedNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionedNode] (val x: Self) extends AnyVal {
     
     inline def setNode(value: () => SyntaxNode): Self = StObject.set(x, "node", js.Any.fromFunction0(value))
   }

@@ -53,7 +53,8 @@ object BarFormatOptions {
     __obj.asInstanceOf[BarFormatOptions]
   }
   
-  extension [Self <: BarFormatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarFormatOptions] (val x: Self) extends AnyVal {
     
     inline def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

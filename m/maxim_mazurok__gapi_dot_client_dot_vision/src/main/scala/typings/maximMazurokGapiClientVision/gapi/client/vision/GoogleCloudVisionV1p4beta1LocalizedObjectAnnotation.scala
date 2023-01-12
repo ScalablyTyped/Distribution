@@ -28,7 +28,8 @@ object GoogleCloudVisionV1p4beta1LocalizedObjectAnnotation {
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1LocalizedObjectAnnotation]
   }
   
-  extension [Self <: GoogleCloudVisionV1p4beta1LocalizedObjectAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p4beta1LocalizedObjectAnnotation] (val x: Self) extends AnyVal {
     
     inline def setBoundingPoly(value: GoogleCloudVisionV1p4beta1BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
     

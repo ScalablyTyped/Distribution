@@ -18,7 +18,8 @@ object AttachDiskResult {
     __obj.asInstanceOf[AttachDiskResult]
   }
   
-  extension [Self <: AttachDiskResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachDiskResult] (val x: Self) extends AnyVal {
     
     inline def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     

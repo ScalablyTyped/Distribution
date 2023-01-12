@@ -25,7 +25,8 @@ object KeyFrames {
     __obj.asInstanceOf[KeyFrames]
   }
   
-  extension [Self <: KeyFrames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyFrames] (val x: Self) extends AnyVal {
     
     inline def setKeyframes(value: js.Array[KeyFrame | Comment]): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
     

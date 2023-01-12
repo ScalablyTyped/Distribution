@@ -28,7 +28,8 @@ object StartSoterAuthenticationSuccessCallbackResult {
     __obj.asInstanceOf[StartSoterAuthenticationSuccessCallbackResult]
   }
   
-  extension [Self <: StartSoterAuthenticationSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartSoterAuthenticationSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setAuthMode(value: String): Self = StObject.set(x, "authMode", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListStreamProcessorsResponse {
     __obj.asInstanceOf[ListStreamProcessorsResponse]
   }
   
-  extension [Self <: ListStreamProcessorsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStreamProcessorsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

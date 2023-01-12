@@ -81,7 +81,8 @@ object InlayHint {
   
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.InlayHint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.InlayHint */ Boolean]
   
-  extension [Self <: InlayHint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlayHint] (val x: Self) extends AnyVal {
     
     inline def setData(value: LSPAny): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

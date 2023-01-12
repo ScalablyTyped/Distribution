@@ -16,7 +16,8 @@ object RTCRtpCodingParameters {
     __obj.asInstanceOf[RTCRtpCodingParameters]
   }
   
-  extension [Self <: RTCRtpCodingParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCRtpCodingParameters] (val x: Self) extends AnyVal {
     
     inline def setRid(value: java.lang.String): Self = StObject.set(x, "rid", value.asInstanceOf[js.Any])
     

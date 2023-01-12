@@ -45,7 +45,8 @@ object `1000ms` {
     __obj.asInstanceOf[`1000ms`]
   }
   
-  extension [Self <: `1000ms`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `1000ms`] (val x: Self) extends AnyVal {
     
     inline def set1000ms(value: `1s`): Self = StObject.set(x, "1000ms", value.asInstanceOf[js.Any])
     

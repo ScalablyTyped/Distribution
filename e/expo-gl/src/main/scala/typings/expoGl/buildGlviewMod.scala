@@ -98,7 +98,8 @@ object buildGlviewMod {
       __obj.asInstanceOf[GLViewProps]
     }
     
-    extension [Self <: GLViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GLViewProps] (val x: Self) extends AnyVal {
       
       inline def setMsaaSamples(value: Double): Self = StObject.set(x, "msaaSamples", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object buildGlviewMod {
       __obj.asInstanceOf[WebGLObject]
     }
     
-    extension [Self <: WebGLObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebGLObject] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }

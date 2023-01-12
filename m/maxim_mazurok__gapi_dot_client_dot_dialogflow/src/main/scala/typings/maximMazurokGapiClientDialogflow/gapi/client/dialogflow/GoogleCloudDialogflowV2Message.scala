@@ -40,7 +40,8 @@ object GoogleCloudDialogflowV2Message {
     __obj.asInstanceOf[GoogleCloudDialogflowV2Message]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2Message](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2Message] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

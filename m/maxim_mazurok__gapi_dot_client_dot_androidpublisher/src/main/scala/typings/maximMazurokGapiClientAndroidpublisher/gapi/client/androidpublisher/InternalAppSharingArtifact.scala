@@ -22,7 +22,8 @@ object InternalAppSharingArtifact {
     __obj.asInstanceOf[InternalAppSharingArtifact]
   }
   
-  extension [Self <: InternalAppSharingArtifact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InternalAppSharingArtifact] (val x: Self) extends AnyVal {
     
     inline def setCertificateFingerprint(value: String): Self = StObject.set(x, "certificateFingerprint", value.asInstanceOf[js.Any])
     

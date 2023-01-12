@@ -21,7 +21,8 @@ object SketchMSPageReference {
     __obj.asInstanceOf[SketchMSPageReference]
   }
   
-  extension [Self <: SketchMSPageReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSPageReference] (val x: Self) extends AnyVal {
     
     inline def set_class(value: MSJSONFileReference): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
     

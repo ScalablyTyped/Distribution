@@ -22,7 +22,8 @@ object WebpBoolean {
     __obj.asInstanceOf[WebpBoolean]
   }
   
-  extension [Self <: WebpBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebpBoolean] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: scala.Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object CheckpointConfigurationDescription {
     __obj.asInstanceOf[CheckpointConfigurationDescription]
   }
   
-  extension [Self <: CheckpointConfigurationDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckpointConfigurationDescription] (val x: Self) extends AnyVal {
     
     inline def setCheckpointInterval(value: CheckpointInterval): Self = StObject.set(x, "CheckpointInterval", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object LiteralType {
     __obj.asInstanceOf[LiteralType]
   }
   
-  extension [Self <: LiteralType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiteralType] (val x: Self) extends AnyVal {
     
     inline def setFreshType(value: LiteralType): Self = StObject.set(x, "freshType", value.asInstanceOf[js.Any])
     

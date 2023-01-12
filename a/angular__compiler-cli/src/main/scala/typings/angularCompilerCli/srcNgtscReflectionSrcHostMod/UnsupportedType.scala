@@ -21,7 +21,8 @@ object UnsupportedType {
     __obj.asInstanceOf[UnsupportedType]
   }
   
-  extension [Self <: UnsupportedType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnsupportedType] (val x: Self) extends AnyVal {
     
     inline def setKind(value: `5`): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

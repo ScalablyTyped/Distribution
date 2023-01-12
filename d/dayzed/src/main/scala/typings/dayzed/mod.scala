@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[Calendar]
     }
     
-    extension [Self <: Calendar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Calendar] (val x: Self) extends AnyVal {
       
       inline def setFirstDayOfMonth(value: js.Date): Self = StObject.set(x, "firstDayOfMonth", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object mod {
       __obj.asInstanceOf[DateObj]
     }
     
-    extension [Self <: DateObj](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateObj] (val x: Self) extends AnyVal {
       
       inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -137,7 +139,8 @@ object mod {
       __obj.asInstanceOf[GetBackForwardPropsOptions]
     }
     
-    extension [Self <: GetBackForwardPropsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetBackForwardPropsOptions] (val x: Self) extends AnyVal {
       
       inline def setCalendars(value: js.Array[Calendar]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
       
@@ -162,7 +165,8 @@ object mod {
       __obj.asInstanceOf[GetDatePropsOptions]
     }
     
-    extension [Self <: GetDatePropsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetDatePropsOptions] (val x: Self) extends AnyVal {
       
       inline def setDateObj(value: DateObj): Self = StObject.set(x, "dateObj", value.asInstanceOf[js.Any])
     }
@@ -201,7 +205,8 @@ object mod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: /* renderProps */ RenderProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -277,7 +282,8 @@ object mod {
       __obj.asInstanceOf[RenderProps]
     }
     
-    extension [Self <: RenderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderProps] (val x: Self) extends AnyVal {
       
       inline def setCalendars(value: js.Array[Calendar]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
       

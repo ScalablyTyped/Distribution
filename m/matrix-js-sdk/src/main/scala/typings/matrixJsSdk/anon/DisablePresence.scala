@@ -37,7 +37,8 @@ object DisablePresence {
     __obj.asInstanceOf[DisablePresence]
   }
   
-  extension [Self <: DisablePresence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisablePresence] (val x: Self) extends AnyVal {
     
     inline def setDisablePresence(value: Boolean): Self = StObject.set(x, "disablePresence", value.asInstanceOf[js.Any])
     

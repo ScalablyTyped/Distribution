@@ -64,7 +64,8 @@ object componentsTableTableMod {
       __obj.asInstanceOf[TableProps]
     }
     
-    extension [Self <: TableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableProps] (val x: Self) extends AnyVal {
       
       inline def setMultiSelectable(value: Boolean): Self = StObject.set(x, "multiSelectable", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object componentsTableTableMod {
       __obj.asInstanceOf[TableTheme]
     }
     
-    extension [Self <: TableTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableTheme] (val x: Self) extends AnyVal {
       
       inline def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       

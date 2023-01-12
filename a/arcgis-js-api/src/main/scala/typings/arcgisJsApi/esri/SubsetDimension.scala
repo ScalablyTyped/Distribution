@@ -27,7 +27,8 @@ object SubsetDimension {
     __obj.asInstanceOf[SubsetDimension]
   }
   
-  extension [Self <: SubsetDimension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubsetDimension] (val x: Self) extends AnyVal {
     
     inline def setExtent(value: js.Array[Double]): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     

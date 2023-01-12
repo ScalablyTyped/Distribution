@@ -50,7 +50,8 @@ object BaseResultMerchantReferenCard {
     __obj.asInstanceOf[BaseResultMerchantReferenCard]
   }
   
-  extension [Self <: BaseResultMerchantReferenCard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseResultMerchantReferenCard] (val x: Self) extends AnyVal {
     
     inline def setCard(value: Card): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     

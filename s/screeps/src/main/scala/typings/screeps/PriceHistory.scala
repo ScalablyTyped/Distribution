@@ -32,7 +32,8 @@ object PriceHistory {
     __obj.asInstanceOf[PriceHistory]
   }
   
-  extension [Self <: PriceHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PriceHistory] (val x: Self) extends AnyVal {
     
     inline def setAvgPrice(value: Double): Self = StObject.set(x, "avgPrice", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object Screenshot {
     __obj.asInstanceOf[Screenshot]
   }
   
-  extension [Self <: Screenshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Screenshot] (val x: Self) extends AnyVal {
     
     inline def setQuarantineAttempt(value: Double): Self = StObject.set(x, "quarantineAttempt", value.asInstanceOf[js.Any])
     

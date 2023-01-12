@@ -38,7 +38,8 @@ object DetectLabelsRequest {
     __obj.asInstanceOf[DetectLabelsRequest]
   }
   
-  extension [Self <: DetectLabelsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectLabelsRequest] (val x: Self) extends AnyVal {
     
     inline def setFeatures(value: DetectLabelsFeatureList): Self = StObject.set(x, "Features", value.asInstanceOf[js.Any])
     

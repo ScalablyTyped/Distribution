@@ -23,7 +23,8 @@ object Gender {
     __obj.asInstanceOf[Gender]
   }
   
-  extension [Self <: Gender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gender] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     

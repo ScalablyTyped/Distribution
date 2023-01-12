@@ -18,7 +18,8 @@ object ValidateCollectionOptions {
     __obj.asInstanceOf[ValidateCollectionOptions]
   }
   
-  extension [Self <: ValidateCollectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateCollectionOptions] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

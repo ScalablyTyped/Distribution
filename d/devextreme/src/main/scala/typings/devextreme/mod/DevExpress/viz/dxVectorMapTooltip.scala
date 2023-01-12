@@ -36,7 +36,8 @@ object dxVectorMapTooltip {
     __obj.asInstanceOf[dxVectorMapTooltip]
   }
   
-  extension [Self <: dxVectorMapTooltip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxVectorMapTooltip] (val x: Self) extends AnyVal {
     
     inline def setContentTemplate(
       value: template | (js.Function2[

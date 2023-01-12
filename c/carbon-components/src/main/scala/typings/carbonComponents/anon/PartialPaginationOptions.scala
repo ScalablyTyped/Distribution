@@ -30,7 +30,8 @@ object PartialPaginationOptions {
     __obj.asInstanceOf[PartialPaginationOptions]
   }
   
-  extension [Self <: PartialPaginationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPaginationOptions] (val x: Self) extends AnyVal {
     
     inline def setEventItemsPerPage(value: String): Self = StObject.set(x, "eventItemsPerPage", value.asInstanceOf[js.Any])
     

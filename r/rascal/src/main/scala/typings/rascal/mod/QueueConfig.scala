@@ -22,7 +22,8 @@ object QueueConfig {
     __obj.asInstanceOf[QueueConfig]
   }
   
-  extension [Self <: QueueConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueueConfig] (val x: Self) extends AnyVal {
     
     inline def setAssert(value: Boolean): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     

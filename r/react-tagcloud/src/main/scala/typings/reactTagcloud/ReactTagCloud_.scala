@@ -37,7 +37,8 @@ object ReactTagCloud_ {
       __obj.asInstanceOf[DefaultRendererFactoryOptions]
     }
     
-    extension [Self <: DefaultRendererFactoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultRendererFactoryOptions] (val x: Self) extends AnyVal {
       
       inline def setColorOptions(value: Any): Self = StObject.set(x, "colorOptions", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object ReactTagCloud_ {
       __obj.asInstanceOf[TagCloudProps]
     }
     
-    extension [Self <: TagCloudProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagCloudProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

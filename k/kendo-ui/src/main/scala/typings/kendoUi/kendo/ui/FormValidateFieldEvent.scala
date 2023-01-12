@@ -27,7 +27,8 @@ object FormValidateFieldEvent {
     __obj.asInstanceOf[FormValidateFieldEvent]
   }
   
-  extension [Self <: FormValidateFieldEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormValidateFieldEvent] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

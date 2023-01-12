@@ -18,7 +18,8 @@ object IdentityProviderConfigResponse {
     __obj.asInstanceOf[IdentityProviderConfigResponse]
   }
   
-  extension [Self <: IdentityProviderConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityProviderConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setOidc(value: OidcIdentityProviderConfig): Self = StObject.set(x, "oidc", value.asInstanceOf[js.Any])
     

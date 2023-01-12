@@ -26,7 +26,8 @@ object GetParametersPathQuery {
     __obj.asInstanceOf[GetParametersPathQuery]
   }
   
-  extension [Self <: GetParametersPathQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersPathQuery] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersPathQuery): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }

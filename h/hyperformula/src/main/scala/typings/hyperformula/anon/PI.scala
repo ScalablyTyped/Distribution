@@ -17,7 +17,8 @@ object PI {
     __obj.asInstanceOf[PI]
   }
   
-  extension [Self <: PI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PI] (val x: Self) extends AnyVal {
     
     inline def setPI(value: ParametersArray): Self = StObject.set(x, "PI", value.asInstanceOf[js.Any])
     

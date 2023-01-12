@@ -23,7 +23,8 @@ object DeleteOneModel {
     __obj.asInstanceOf[DeleteOneModel[TSchema]]
   }
   
-  extension [Self <: DeleteOneModel[?], TSchema /* <: Document */](x: Self & DeleteOneModel[TSchema]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteOneModel[?], TSchema /* <: Document */] (val x: Self & DeleteOneModel[TSchema]) extends AnyVal {
     
     inline def setCollation(value: CollationOptions): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
     

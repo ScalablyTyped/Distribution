@@ -23,7 +23,8 @@ object GetServiceRoleForAccountResponse {
     __obj.asInstanceOf[GetServiceRoleForAccountResponse]
   }
   
-  extension [Self <: GetServiceRoleForAccountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetServiceRoleForAccountResponse] (val x: Self) extends AnyVal {
     
     inline def setAssociatedAt(value: String): Self = StObject.set(x, "associatedAt", value.asInstanceOf[js.Any])
     

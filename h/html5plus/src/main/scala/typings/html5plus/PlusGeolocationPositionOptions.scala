@@ -85,7 +85,8 @@ object PlusGeolocationPositionOptions {
     __obj.asInstanceOf[PlusGeolocationPositionOptions]
   }
   
-  extension [Self <: PlusGeolocationPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusGeolocationPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setCoordsType(value: String): Self = StObject.set(x, "coordsType", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object KeyboardPanOptions {
     __obj.asInstanceOf[KeyboardPanOptions]
   }
   
-  extension [Self <: KeyboardPanOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyboardPanOptions] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
     

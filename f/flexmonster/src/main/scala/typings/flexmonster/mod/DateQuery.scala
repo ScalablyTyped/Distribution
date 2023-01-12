@@ -35,7 +35,8 @@ object DateQuery {
     __obj.asInstanceOf[DateQuery]
   }
   
-  extension [Self <: DateQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateQuery] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

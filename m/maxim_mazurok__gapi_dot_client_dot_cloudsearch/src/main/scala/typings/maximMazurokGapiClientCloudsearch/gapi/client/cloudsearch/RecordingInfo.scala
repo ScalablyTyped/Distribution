@@ -37,7 +37,8 @@ object RecordingInfo {
     __obj.asInstanceOf[RecordingInfo]
   }
   
-  extension [Self <: RecordingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordingInfo] (val x: Self) extends AnyVal {
     
     inline def setLatestRecordingEvent(value: RecordingEvent): Self = StObject.set(x, "latestRecordingEvent", value.asInstanceOf[js.Any])
     

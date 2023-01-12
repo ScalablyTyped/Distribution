@@ -104,7 +104,8 @@ object PartialViolinData {
     __obj.asInstanceOf[PartialViolinData]
   }
   
-  extension [Self <: PartialViolinData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialViolinData] (val x: Self) extends AnyVal {
     
     inline def setAlignmentgroup(value: String): Self = StObject.set(x, "alignmentgroup", value.asInstanceOf[js.Any])
     

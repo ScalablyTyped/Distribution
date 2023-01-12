@@ -27,7 +27,8 @@ object ResourceAccess {
     __obj.asInstanceOf[ResourceAccess]
   }
   
-  extension [Self <: ResourceAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceAccess] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

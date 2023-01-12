@@ -24,7 +24,8 @@ object DatePickerAndroidDateSetAction {
     __obj.asInstanceOf[DatePickerAndroidDateSetAction]
   }
   
-  extension [Self <: DatePickerAndroidDateSetAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatePickerAndroidDateSetAction] (val x: Self) extends AnyVal {
     
     inline def setAction(value: dateSetAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

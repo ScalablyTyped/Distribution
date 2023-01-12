@@ -127,7 +127,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCharThreshold(value: Double): Self = StObject.set(x, "charThreshold", value.asInstanceOf[js.Any])
       
@@ -199,7 +200,8 @@ object mod {
       __obj.asInstanceOf[ParseResult]
     }
     
-    extension [Self <: ParseResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseResult] (val x: Self) extends AnyVal {
       
       inline def setByline(value: String): Self = StObject.set(x, "byline", value.asInstanceOf[js.Any])
       

@@ -53,7 +53,8 @@ object IEditControl {
     __obj.asInstanceOf[IEditControl]
   }
   
-  extension [Self <: IEditControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEditControl] (val x: Self) extends AnyVal {
     
     inline def setBindToCell(value: IEditControlCellContext => Unit): Self = StObject.set(x, "BindToCell", js.Any.fromFunction1(value))
     

@@ -62,7 +62,8 @@ object typesAddressConfigurationMod {
       __obj.asInstanceOf[AddressConfiguration]
     }
     
-    extension [Self <: AddressConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddressConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBodyOverride(value: String): Self = StObject.set(x, "BodyOverride", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object typesAddressConfigurationMod {
       __obj.asInstanceOf[UnmarshalledAddressConfiguration]
     }
     
-    extension [Self <: UnmarshalledAddressConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledAddressConfiguration] (val x: Self) extends AnyVal {
       
       inline def setContext(value: StringDictionary[String]): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
       

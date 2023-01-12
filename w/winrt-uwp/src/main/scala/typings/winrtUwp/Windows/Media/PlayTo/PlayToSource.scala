@@ -27,7 +27,8 @@ object PlayToSource {
     __obj.asInstanceOf[PlayToSource]
   }
   
-  extension [Self <: PlayToSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayToSource] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: PlayToConnection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

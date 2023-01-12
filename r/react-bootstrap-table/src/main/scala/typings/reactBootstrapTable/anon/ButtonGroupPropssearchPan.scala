@@ -66,7 +66,8 @@ object ButtonGroupPropssearchPan {
     __obj.asInstanceOf[ButtonGroupPropssearchPan]
   }
   
-  extension [Self <: ButtonGroupPropssearchPan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonGroupPropssearchPan] (val x: Self) extends AnyVal {
     
     inline def setBtnGroup(value: ReactElement): Self = StObject.set(x, "btnGroup", value.asInstanceOf[js.Any])
     

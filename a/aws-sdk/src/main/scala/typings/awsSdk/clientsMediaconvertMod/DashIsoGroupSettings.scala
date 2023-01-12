@@ -103,7 +103,8 @@ object DashIsoGroupSettings {
     __obj.asInstanceOf[DashIsoGroupSettings]
   }
   
-  extension [Self <: DashIsoGroupSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashIsoGroupSettings] (val x: Self) extends AnyVal {
     
     inline def setAdditionalManifests(value: listOfDashAdditionalManifest): Self = StObject.set(x, "AdditionalManifests", value.asInstanceOf[js.Any])
     

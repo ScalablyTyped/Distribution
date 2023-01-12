@@ -35,7 +35,8 @@ object XSheetAnnotationShapeSupplier {
     __obj.asInstanceOf[XSheetAnnotationShapeSupplier]
   }
   
-  extension [Self <: XSheetAnnotationShapeSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSheetAnnotationShapeSupplier] (val x: Self) extends AnyVal {
     
     inline def setAnnotationShape(value: XShape): Self = StObject.set(x, "AnnotationShape", value.asInstanceOf[js.Any])
     

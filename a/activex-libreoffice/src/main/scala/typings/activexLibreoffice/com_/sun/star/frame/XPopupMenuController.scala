@@ -47,7 +47,8 @@ object XPopupMenuController {
     __obj.asInstanceOf[XPopupMenuController]
   }
   
-  extension [Self <: XPopupMenuController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPopupMenuController] (val x: Self) extends AnyVal {
     
     inline def setSetPopupMenu(value: XPopupMenu => Unit): Self = StObject.set(x, "setPopupMenu", js.Any.fromFunction1(value))
     

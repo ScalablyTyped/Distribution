@@ -17,7 +17,8 @@ object DracoDecoderModuleProps {
     __obj.asInstanceOf[DracoDecoderModuleProps]
   }
   
-  extension [Self <: DracoDecoderModuleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DracoDecoderModuleProps] (val x: Self) extends AnyVal {
     
     inline def setOnModuleLoaded(value: /* draco */ DecoderModule => Unit): Self = StObject.set(x, "onModuleLoaded", js.Any.fromFunction1(value))
     

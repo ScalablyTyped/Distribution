@@ -20,7 +20,8 @@ object RecurringType {
     __obj.asInstanceOf[RecurringType[RecurringData]]
   }
   
-  extension [Self <: RecurringType[?], RecurringData](x: Self & RecurringType[RecurringData]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecurringType[?], RecurringData] (val x: Self & RecurringType[RecurringData]) extends AnyVal {
     
     inline def setExpand(value: (Any, DateRange, DateEnv) => js.Array[js.Date]): Self = StObject.set(x, "expand", js.Any.fromFunction3(value))
     

@@ -23,7 +23,8 @@ object StopEngagementRequest {
     __obj.asInstanceOf[StopEngagementRequest]
   }
   
-  extension [Self <: StopEngagementRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopEngagementRequest] (val x: Self) extends AnyVal {
     
     inline def setEngagementId(value: SsmContactsArn): Self = StObject.set(x, "EngagementId", value.asInstanceOf[js.Any])
     

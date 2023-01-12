@@ -30,7 +30,8 @@ object typesAnnotationValueMod {
       __obj.asInstanceOf[AnnotationValue]
     }
     
-    extension [Self <: AnnotationValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotationValue] (val x: Self) extends AnyVal {
       
       inline def setBooleanValue(value: Boolean): Self = StObject.set(x, "BooleanValue", value.asInstanceOf[js.Any])
       

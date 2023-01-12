@@ -28,7 +28,8 @@ object GetPortfolioPreferencesResponse {
     __obj.asInstanceOf[GetPortfolioPreferencesResponse]
   }
   
-  extension [Self <: GetPortfolioPreferencesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPortfolioPreferencesResponse] (val x: Self) extends AnyVal {
     
     inline def setApplicationPreferences(value: ApplicationPreferences): Self = StObject.set(x, "applicationPreferences", value.asInstanceOf[js.Any])
     

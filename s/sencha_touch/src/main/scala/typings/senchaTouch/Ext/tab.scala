@@ -30,7 +30,8 @@ object tab {
       __obj.asInstanceOf[IBar]
     }
     
-    extension [Self <: IBar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBar] (val x: Self) extends AnyVal {
       
       inline def setActiveTab(value: Any): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object tab {
       __obj.asInstanceOf[typings.senchaTouch.Ext.tab.IPanel]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.tab.IPanel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.tab.IPanel] (val x: Self) extends AnyVal {
       
       inline def setDoTabChange(value: (/* tabBar */ js.UndefOr[Any], /* newTab */ js.UndefOr[Any]) => Boolean): Self = StObject.set(x, "doTabChange", js.Any.fromFunction2(value))
       
@@ -220,7 +222,8 @@ object tab {
       __obj.asInstanceOf[typings.senchaTouch.Ext.tab.ITab]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.tab.ITab](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.tab.ITab] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

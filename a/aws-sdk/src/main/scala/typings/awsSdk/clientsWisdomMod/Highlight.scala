@@ -23,7 +23,8 @@ object Highlight {
     __obj.asInstanceOf[Highlight]
   }
   
-  extension [Self <: Highlight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Highlight] (val x: Self) extends AnyVal {
     
     inline def setBeginOffsetInclusive(value: HighlightOffset): Self = StObject.set(x, "beginOffsetInclusive", value.asInstanceOf[js.Any])
     

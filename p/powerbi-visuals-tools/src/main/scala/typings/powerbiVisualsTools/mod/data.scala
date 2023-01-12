@@ -58,7 +58,8 @@ object data {
       __obj.asInstanceOf[DataViewRoleWildcard]
     }
     
-    extension [Self <: DataViewRoleWildcard](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataViewRoleWildcard] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object data {
       __obj.asInstanceOf[DataViewScopeTotal]
     }
     
-    extension [Self <: DataViewScopeTotal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataViewScopeTotal] (val x: Self) extends AnyVal {
       
       inline def setExprs(value: js.Array[ISQExpr]): Self = StObject.set(x, "exprs", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object data {
       __obj.asInstanceOf[DataViewScopeWildcard]
     }
     
-    extension [Self <: DataViewScopeWildcard](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataViewScopeWildcard] (val x: Self) extends AnyVal {
       
       inline def setExprs(value: js.Array[ISQExpr]): Self = StObject.set(x, "exprs", value.asInstanceOf[js.Any])
       
@@ -149,7 +152,8 @@ object data {
       __obj.asInstanceOf[ISQConstantExpr]
     }
     
-    extension [Self <: ISQConstantExpr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISQConstantExpr] (val x: Self) extends AnyVal {
       
       inline def setKind(value: Double): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -172,7 +176,8 @@ object data {
       __obj.asInstanceOf[ISQExpr]
     }
     
-    extension [Self <: ISQExpr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISQExpr] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: ISQExpr): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -200,7 +205,8 @@ object data {
       __obj.asInstanceOf[ISemanticFilter]
     }
     
-    extension [Self <: ISemanticFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISemanticFilter] (val x: Self) extends AnyVal {
       
       inline def setWhereItems(value: js.Object): Self = StObject.set(x, "whereItems", value.asInstanceOf[js.Any])
       
@@ -227,7 +233,8 @@ object data {
       __obj.asInstanceOf[Selector]
     }
     
-    extension [Self <: Selector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Selector] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[DataRepetitionSelector]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -256,7 +263,8 @@ object data {
       __obj.asInstanceOf[SelectorsByColumn]
     }
     
-    extension [Self <: SelectorsByColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectorsByColumn] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

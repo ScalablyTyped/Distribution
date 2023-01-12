@@ -21,7 +21,8 @@ object DatetimeAttribute {
     __obj.asInstanceOf[DatetimeAttribute]
   }
   
-  extension [Self <: DatetimeAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatetimeAttribute] (val x: Self) extends AnyVal {
     
     inline def setType(value: datetime): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

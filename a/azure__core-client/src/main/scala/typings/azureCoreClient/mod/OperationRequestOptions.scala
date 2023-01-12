@@ -48,7 +48,8 @@ object OperationRequestOptions {
     __obj.asInstanceOf[OperationRequestOptions]
   }
   
-  extension [Self <: OperationRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowInsecureConnection(value: Boolean): Self = StObject.set(x, "allowInsecureConnection", value.asInstanceOf[js.Any])
     

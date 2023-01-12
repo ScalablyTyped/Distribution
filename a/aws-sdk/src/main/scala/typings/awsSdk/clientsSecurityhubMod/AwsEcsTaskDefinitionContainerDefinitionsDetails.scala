@@ -208,7 +208,8 @@ object AwsEcsTaskDefinitionContainerDefinitionsDetails {
     __obj.asInstanceOf[AwsEcsTaskDefinitionContainerDefinitionsDetails]
   }
   
-  extension [Self <: AwsEcsTaskDefinitionContainerDefinitionsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsTaskDefinitionContainerDefinitionsDetails] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: NonEmptyStringList): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     

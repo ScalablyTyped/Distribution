@@ -26,7 +26,8 @@ object angularMod {
         __obj.asInstanceOf[ILocalForageProvider]
       }
       
-      extension [Self <: ILocalForageProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ILocalForageProvider] (val x: Self) extends AnyVal {
         
         inline def setConfig(value: LocalForageConfig => Unit): Self = StObject.set(x, "config", js.Any.fromFunction1(value))
         
@@ -94,7 +95,8 @@ object angularMod {
         __obj.asInstanceOf[LocalForageConfig]
       }
       
-      extension [Self <: LocalForageConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LocalForageConfig] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         

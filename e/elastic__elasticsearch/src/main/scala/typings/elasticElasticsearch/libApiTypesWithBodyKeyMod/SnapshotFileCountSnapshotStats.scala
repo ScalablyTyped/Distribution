@@ -17,7 +17,8 @@ object SnapshotFileCountSnapshotStats {
     __obj.asInstanceOf[SnapshotFileCountSnapshotStats]
   }
   
-  extension [Self <: SnapshotFileCountSnapshotStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotFileCountSnapshotStats] (val x: Self) extends AnyVal {
     
     inline def setFile_count(value: integer): Self = StObject.set(x, "file_count", value.asInstanceOf[js.Any])
     

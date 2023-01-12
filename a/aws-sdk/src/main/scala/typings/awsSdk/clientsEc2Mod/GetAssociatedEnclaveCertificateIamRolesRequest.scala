@@ -23,7 +23,8 @@ object GetAssociatedEnclaveCertificateIamRolesRequest {
     __obj.asInstanceOf[GetAssociatedEnclaveCertificateIamRolesRequest]
   }
   
-  extension [Self <: GetAssociatedEnclaveCertificateIamRolesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAssociatedEnclaveCertificateIamRolesRequest] (val x: Self) extends AnyVal {
     
     inline def setCertificateArn(value: ResourceArn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     

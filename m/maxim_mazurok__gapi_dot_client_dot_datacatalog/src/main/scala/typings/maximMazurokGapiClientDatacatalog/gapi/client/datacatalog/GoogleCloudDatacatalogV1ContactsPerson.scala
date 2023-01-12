@@ -19,7 +19,8 @@ object GoogleCloudDatacatalogV1ContactsPerson {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1ContactsPerson]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1ContactsPerson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1ContactsPerson] (val x: Self) extends AnyVal {
     
     inline def setDesignation(value: String): Self = StObject.set(x, "designation", value.asInstanceOf[js.Any])
     

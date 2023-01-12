@@ -44,7 +44,8 @@ object UniqueESSymbolType {
     __obj.asInstanceOf[UniqueESSymbolType]
   }
   
-  extension [Self <: UniqueESSymbolType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UniqueESSymbolType] (val x: Self) extends AnyVal {
     
     inline def setEscapedName(value: String): Self = StObject.set(x, "escapedName", value.asInstanceOf[js.Any])
   }

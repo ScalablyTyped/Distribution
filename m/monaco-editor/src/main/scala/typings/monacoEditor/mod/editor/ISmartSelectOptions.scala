@@ -15,7 +15,8 @@ object ISmartSelectOptions {
     __obj.asInstanceOf[ISmartSelectOptions]
   }
   
-  extension [Self <: ISmartSelectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISmartSelectOptions] (val x: Self) extends AnyVal {
     
     inline def setSelectLeadingAndTrailingWhitespace(value: Boolean): Self = StObject.set(x, "selectLeadingAndTrailingWhitespace", value.asInstanceOf[js.Any])
     

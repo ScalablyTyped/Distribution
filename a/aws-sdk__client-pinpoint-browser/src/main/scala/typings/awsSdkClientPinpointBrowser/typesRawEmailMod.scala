@@ -20,7 +20,8 @@ object typesRawEmailMod {
       __obj.asInstanceOf[RawEmail]
     }
     
-    extension [Self <: RawEmail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawEmail] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object typesRawEmailMod {
       __obj.asInstanceOf[UnmarshalledRawEmail]
     }
     
-    extension [Self <: UnmarshalledRawEmail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledRawEmail] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       

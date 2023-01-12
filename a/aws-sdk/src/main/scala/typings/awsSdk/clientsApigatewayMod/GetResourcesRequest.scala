@@ -33,7 +33,8 @@ object GetResourcesRequest {
     __obj.asInstanceOf[GetResourcesRequest]
   }
   
-  extension [Self <: GetResourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setEmbed(value: ListOfString): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
     

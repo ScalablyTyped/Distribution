@@ -23,7 +23,8 @@ object MenuShareQQ {
     __obj.asInstanceOf[MenuShareQQ]
   }
   
-  extension [Self <: MenuShareQQ](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuShareQQ] (val x: Self) extends AnyVal {
     
     inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
   }

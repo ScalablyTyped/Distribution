@@ -19,7 +19,8 @@ object karmaMod {
       __obj.asInstanceOf[CustomLauncher]
     }
     
-    extension [Self <: CustomLauncher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomLauncher] (val x: Self) extends AnyVal {
       
       inline def `setX-ua-compatible`(value: String): Self = StObject.set(x, "x-ua-compatible", value.asInstanceOf[js.Any])
       

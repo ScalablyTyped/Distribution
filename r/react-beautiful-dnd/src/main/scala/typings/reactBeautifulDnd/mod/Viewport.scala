@@ -18,7 +18,8 @@ object Viewport {
     __obj.asInstanceOf[Viewport]
   }
   
-  extension [Self <: Viewport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Viewport] (val x: Self) extends AnyVal {
     
     inline def setFrame(value: Rect): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     

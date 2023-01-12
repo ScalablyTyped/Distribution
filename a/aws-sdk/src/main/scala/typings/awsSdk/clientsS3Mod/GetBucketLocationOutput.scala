@@ -18,7 +18,8 @@ object GetBucketLocationOutput {
     __obj.asInstanceOf[GetBucketLocationOutput]
   }
   
-  extension [Self <: GetBucketLocationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBucketLocationOutput] (val x: Self) extends AnyVal {
     
     inline def setLocationConstraint(value: BucketLocationConstraint): Self = StObject.set(x, "LocationConstraint", value.asInstanceOf[js.Any])
     

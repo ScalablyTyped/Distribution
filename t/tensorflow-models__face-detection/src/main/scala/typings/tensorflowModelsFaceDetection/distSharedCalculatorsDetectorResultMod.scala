@@ -21,7 +21,8 @@ object distSharedCalculatorsDetectorResultMod {
     @js.native
     def apply(detectionResult: Tensor3D): detectorResult = js.native
     
-    extension [Self <: detectorResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: detectorResult] (val x: Self) extends AnyVal {
       
       inline def setBoxes(value: Tensor2D): Self = StObject.set(x, "boxes", value.asInstanceOf[js.Any])
       

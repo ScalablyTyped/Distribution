@@ -47,7 +47,8 @@ object tabsMod {
       __obj.asInstanceOf[TabsProps]
     }
     
-    extension [Self <: TabsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsProps] (val x: Self) extends AnyVal {
       
       inline def setActiveLinkStyle(value: js.Object): Self = StObject.set(x, "activeLinkStyle", value.asInstanceOf[js.Any])
       

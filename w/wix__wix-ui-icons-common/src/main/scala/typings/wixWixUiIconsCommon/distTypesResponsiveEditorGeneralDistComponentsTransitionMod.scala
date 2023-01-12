@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsTransitionMod extends Short
       __obj.asInstanceOf[TransitionProps]
     }
     
-    extension [Self <: TransitionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

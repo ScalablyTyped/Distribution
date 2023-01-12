@@ -34,7 +34,8 @@ object XLayerSupplier {
     __obj.asInstanceOf[XLayerSupplier]
   }
   
-  extension [Self <: XLayerSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLayerSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetLayerManager(value: () => XNameAccess): Self = StObject.set(x, "getLayerManager", js.Any.fromFunction0(value))
     

@@ -27,7 +27,8 @@ object MigrationDeprecationsResponse {
     __obj.asInstanceOf[MigrationDeprecationsResponse]
   }
   
-  extension [Self <: MigrationDeprecationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MigrationDeprecationsResponse] (val x: Self) extends AnyVal {
     
     inline def setCluster_settings(value: js.Array[MigrationDeprecationsDeprecation]): Self = StObject.set(x, "cluster_settings", value.asInstanceOf[js.Any])
     

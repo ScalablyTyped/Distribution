@@ -20,7 +20,8 @@ object SublayerGetFieldDomainOptions {
     __obj.asInstanceOf[SublayerGetFieldDomainOptions]
   }
   
-  extension [Self <: SublayerGetFieldDomainOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SublayerGetFieldDomainOptions] (val x: Self) extends AnyVal {
     
     inline def setFeature(value: Graphic): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
   }

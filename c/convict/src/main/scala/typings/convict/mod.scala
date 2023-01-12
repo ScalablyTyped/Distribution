@@ -118,7 +118,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Format]
     }
     
-    extension [Self <: Format](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
       
       inline def setCoerce(value: /* val */ Any => Any): Self = StObject.set(x, "coerce", js.Any.fromFunction1(value))
       
@@ -147,7 +148,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[InternalSchema[T]]
     }
     
-    extension [Self <: InternalSchema[?], T](x: Self & InternalSchema[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalSchema[?], T] (val x: Self & InternalSchema[T]) extends AnyVal {
       
       inline def setProperties(
         value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends object? convict.convict.InternalSchema<T[K]> : {  default :T[K]}} */ js.Any
@@ -168,7 +170,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -199,7 +202,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Parser]
     }
     
-    extension [Self <: Parser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parser] (val x: Self) extends AnyVal {
       
       inline def setExtension(value: String | js.Array[String]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
@@ -307,7 +311,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SchemaObj[T]]
     }
     
-    extension [Self <: SchemaObj[?], T](x: Self & SchemaObj[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaObj[?], T] (val x: Self & SchemaObj[T]) extends AnyVal {
       
       inline def setArg(value: String): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
       
@@ -376,7 +381,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ValidateOptions]
     }
     
-    extension [Self <: ValidateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidateOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowed(value: ValidationMethod): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
       

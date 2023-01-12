@@ -28,7 +28,8 @@ object UpdateRulesetRequest {
     __obj.asInstanceOf[UpdateRulesetRequest]
   }
   
-  extension [Self <: UpdateRulesetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRulesetRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: RulesetDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[LogAppState]
     }
     
-    extension [Self <: LogAppState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogAppState] (val x: Self) extends AnyVal {
       
       inline def setLogAppState(value: Boolean): Self = StObject.set(x, "logAppState", value.asInstanceOf[js.Any])
       

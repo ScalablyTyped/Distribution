@@ -23,7 +23,8 @@ object WizardErrorEvent {
     __obj.asInstanceOf[WizardErrorEvent]
   }
   
-  extension [Self <: WizardErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WizardErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object ClientMetadata {
     __obj.asInstanceOf[ClientMetadata]
   }
   
-  extension [Self <: ClientMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientMetadata] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: NameString): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     

@@ -158,7 +158,8 @@ object builtLibConfigMod {
       __obj.asInstanceOf[ConfigFile]
     }
     
-    extension [Self <: ConfigFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigFile] (val x: Self) extends AnyVal {
       
       inline def setAndroid(value: String): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       

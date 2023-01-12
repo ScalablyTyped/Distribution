@@ -23,7 +23,8 @@ object ImportNamespaceSpecifier {
     __obj.asInstanceOf[ImportNamespaceSpecifier]
   }
   
-  extension [Self <: ImportNamespaceSpecifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportNamespaceSpecifier] (val x: Self) extends AnyVal {
     
     inline def setLocal(value: Identifier): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     

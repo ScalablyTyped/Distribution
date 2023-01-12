@@ -15,7 +15,8 @@ object PurchaseReservedCacheNodesOfferingResult {
     __obj.asInstanceOf[PurchaseReservedCacheNodesOfferingResult]
   }
   
-  extension [Self <: PurchaseReservedCacheNodesOfferingResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PurchaseReservedCacheNodesOfferingResult] (val x: Self) extends AnyVal {
     
     inline def setReservedCacheNode(value: ReservedCacheNode): Self = StObject.set(x, "ReservedCacheNode", value.asInstanceOf[js.Any])
     

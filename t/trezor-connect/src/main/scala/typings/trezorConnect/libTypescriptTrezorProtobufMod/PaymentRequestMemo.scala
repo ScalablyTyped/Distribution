@@ -19,7 +19,8 @@ object PaymentRequestMemo {
     __obj.asInstanceOf[PaymentRequestMemo]
   }
   
-  extension [Self <: PaymentRequestMemo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaymentRequestMemo] (val x: Self) extends AnyVal {
     
     inline def setCoin_purchase_memo(value: CoinPurchaseMemo): Self = StObject.set(x, "coin_purchase_memo", value.asInstanceOf[js.Any])
     

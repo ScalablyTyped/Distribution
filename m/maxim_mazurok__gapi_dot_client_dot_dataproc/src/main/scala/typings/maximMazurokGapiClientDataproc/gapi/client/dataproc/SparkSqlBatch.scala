@@ -24,7 +24,8 @@ object SparkSqlBatch {
     __obj.asInstanceOf[SparkSqlBatch]
   }
   
-  extension [Self <: SparkSqlBatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparkSqlBatch] (val x: Self) extends AnyVal {
     
     inline def setJarFileUris(value: js.Array[String]): Self = StObject.set(x, "jarFileUris", value.asInstanceOf[js.Any])
     

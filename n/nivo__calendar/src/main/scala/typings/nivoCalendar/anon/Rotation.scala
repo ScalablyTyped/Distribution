@@ -24,7 +24,8 @@ object Rotation {
     __obj.asInstanceOf[Rotation]
   }
   
-  extension [Self <: Rotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rotation] (val x: Self) extends AnyVal {
     
     inline def setBbox(value: BBox): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object DomainVerification {
     __obj.asInstanceOf[DomainVerification]
   }
   
-  extension [Self <: DomainVerification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainVerification] (val x: Self) extends AnyVal {
     
     inline def setCname_api_key(value: String): Self = StObject.set(x, "cname_api_key", value.asInstanceOf[js.Any])
     

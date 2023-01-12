@@ -43,7 +43,8 @@ object MotionImageInserter {
     __obj.asInstanceOf[MotionImageInserter]
   }
   
-  extension [Self <: MotionImageInserter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MotionImageInserter] (val x: Self) extends AnyVal {
     
     inline def setFramerate(value: MotionImageInsertionFramerate): Self = StObject.set(x, "Framerate", value.asInstanceOf[js.Any])
     

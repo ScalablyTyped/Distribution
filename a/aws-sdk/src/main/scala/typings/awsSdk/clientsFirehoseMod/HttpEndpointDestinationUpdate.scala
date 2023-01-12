@@ -49,7 +49,8 @@ object HttpEndpointDestinationUpdate {
     __obj.asInstanceOf[HttpEndpointDestinationUpdate]
   }
   
-  extension [Self <: HttpEndpointDestinationUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpEndpointDestinationUpdate] (val x: Self) extends AnyVal {
     
     inline def setBufferingHints(value: HttpEndpointBufferingHints): Self = StObject.set(x, "BufferingHints", value.asInstanceOf[js.Any])
     

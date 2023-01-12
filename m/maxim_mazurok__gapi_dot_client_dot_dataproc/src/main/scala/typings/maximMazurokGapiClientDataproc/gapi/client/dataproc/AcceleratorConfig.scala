@@ -26,7 +26,8 @@ object AcceleratorConfig {
     __obj.asInstanceOf[AcceleratorConfig]
   }
   
-  extension [Self <: AcceleratorConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceleratorConfig] (val x: Self) extends AnyVal {
     
     inline def setAcceleratorCount(value: Double): Self = StObject.set(x, "acceleratorCount", value.asInstanceOf[js.Any])
     

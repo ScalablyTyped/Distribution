@@ -81,7 +81,8 @@ object NodesInfoNodeInfoSettingsIngest {
     __obj.asInstanceOf[NodesInfoNodeInfoSettingsIngest]
   }
   
-  extension [Self <: NodesInfoNodeInfoSettingsIngest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoSettingsIngest] (val x: Self) extends AnyVal {
     
     inline def setAppend(value: NodesInfoNodeInfoIngestInfo): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     

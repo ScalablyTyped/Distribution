@@ -22,7 +22,8 @@ object InventorySourceGroup {
     __obj.asInstanceOf[InventorySourceGroup]
   }
   
-  extension [Self <: InventorySourceGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventorySourceGroup] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

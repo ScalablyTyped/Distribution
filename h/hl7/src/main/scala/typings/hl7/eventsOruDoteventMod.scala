@@ -54,7 +54,8 @@ object eventsOruDoteventMod {
       __obj.asInstanceOf[ORU]
     }
     
-    extension [Self <: ORU](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ORU] (val x: Self) extends AnyVal {
       
       inline def setCTD(value: Any): Self = StObject.set(x, "CTD", value.asInstanceOf[js.Any])
       

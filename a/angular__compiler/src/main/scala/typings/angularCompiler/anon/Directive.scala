@@ -20,7 +20,8 @@ object Directive {
     __obj.asInstanceOf[Directive[DirectiveT]]
   }
   
-  extension [Self <: Directive[?], DirectiveT /* <: DirectiveMeta */](x: Self & Directive[DirectiveT]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Directive[?], DirectiveT /* <: DirectiveMeta */] (val x: Self & Directive[DirectiveT]) extends AnyVal {
     
     inline def setDirective(value: DirectiveT): Self = StObject.set(x, "directive", value.asInstanceOf[js.Any])
     

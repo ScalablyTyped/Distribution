@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[IgnoreRotation]
     }
     
-    extension [Self <: IgnoreRotation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IgnoreRotation] (val x: Self) extends AnyVal {
       
       inline def setIgnoreRotation(value: Boolean): Self = StObject.set(x, "ignoreRotation", value.asInstanceOf[js.Any])
     }
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[ImageTensor]
     }
     
-    extension [Self <: ImageTensor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageTensor] (val x: Self) extends AnyVal {
       
       inline def setImageTensor(value: Tensor4D): Self = StObject.set(x, "imageTensor", value.asInstanceOf[js.Any])
       
@@ -70,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

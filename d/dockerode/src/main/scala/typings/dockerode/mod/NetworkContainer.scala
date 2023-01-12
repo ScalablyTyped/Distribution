@@ -23,7 +23,8 @@ object NetworkContainer {
     __obj.asInstanceOf[NetworkContainer]
   }
   
-  extension [Self <: NetworkContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkContainer] (val x: Self) extends AnyVal {
     
     inline def setEndpointID(value: String): Self = StObject.set(x, "EndpointID", value.asInstanceOf[js.Any])
     

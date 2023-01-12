@@ -32,7 +32,8 @@ object Typeofcanvas {
     __obj.asInstanceOf[Typeofcanvas]
   }
   
-  extension [Self <: Typeofcanvas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofcanvas] (val x: Self) extends AnyVal {
     
     inline def setAssetManager(value: Instantiable1[/* pathPrefix */ js.UndefOr[String], AssetManager]): Self = StObject.set(x, "AssetManager", value.asInstanceOf[js.Any])
     

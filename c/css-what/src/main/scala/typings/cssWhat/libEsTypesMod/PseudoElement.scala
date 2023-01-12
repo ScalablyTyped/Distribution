@@ -22,7 +22,8 @@ object PseudoElement {
     __obj.asInstanceOf[PseudoElement]
   }
   
-  extension [Self <: PseudoElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PseudoElement] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

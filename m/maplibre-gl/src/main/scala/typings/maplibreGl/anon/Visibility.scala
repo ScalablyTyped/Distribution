@@ -17,7 +17,8 @@ object Visibility {
     __obj.asInstanceOf[Visibility]
   }
   
-  extension [Self <: Visibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Visibility] (val x: Self) extends AnyVal {
     
     inline def setVisibility(value: visible | none): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     

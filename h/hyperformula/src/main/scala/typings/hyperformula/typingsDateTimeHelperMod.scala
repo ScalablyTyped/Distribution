@@ -133,7 +133,8 @@ object typingsDateTimeHelperMod {
       __obj.asInstanceOf[SimpleDate]
     }
     
-    extension [Self <: SimpleDate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleDate] (val x: Self) extends AnyVal {
       
       inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object typingsDateTimeHelperMod {
       __obj.asInstanceOf[SimpleTime]
     }
     
-    extension [Self <: SimpleTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleTime] (val x: Self) extends AnyVal {
       
       inline def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object PiiOutputDataConfig {
     __obj.asInstanceOf[PiiOutputDataConfig]
   }
   
-  extension [Self <: PiiOutputDataConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PiiOutputDataConfig] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     

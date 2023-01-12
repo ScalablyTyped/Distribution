@@ -42,7 +42,8 @@ object XSimpleLogRing {
     __obj.asInstanceOf[XSimpleLogRing]
   }
   
-  extension [Self <: XSimpleLogRing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSimpleLogRing] (val x: Self) extends AnyVal {
     
     inline def setCollectedLog(value: SafeArray[String]): Self = StObject.set(x, "CollectedLog", value.asInstanceOf[js.Any])
     

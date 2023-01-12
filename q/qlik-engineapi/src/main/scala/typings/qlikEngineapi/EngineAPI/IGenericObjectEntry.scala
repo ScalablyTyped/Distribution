@@ -35,7 +35,8 @@ object IGenericObjectEntry {
     __obj.asInstanceOf[IGenericObjectEntry]
   }
   
-  extension [Self <: IGenericObjectEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericObjectEntry] (val x: Self) extends AnyVal {
     
     inline def setQChildren(value: js.Array[IGenericObjectEntry]): Self = StObject.set(x, "qChildren", value.asInstanceOf[js.Any])
     

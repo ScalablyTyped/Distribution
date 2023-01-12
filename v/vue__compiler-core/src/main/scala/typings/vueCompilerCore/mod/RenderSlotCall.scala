@@ -38,7 +38,8 @@ object RenderSlotCall {
     __obj.asInstanceOf[RenderSlotCall]
   }
   
-  extension [Self <: RenderSlotCall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderSlotCall] (val x: Self) extends AnyVal {
     
     inline def setArguments(
       value: (js.Tuple2[String, String | ExpressionNode]) | (js.Tuple3[String, String | ExpressionNode, PropsExpression]) | (js.Tuple4[

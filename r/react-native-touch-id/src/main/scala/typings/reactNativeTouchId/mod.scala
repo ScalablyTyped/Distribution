@@ -82,7 +82,8 @@ object mod {
       __obj.asInstanceOf[AuthenticateConfig]
     }
     
-    extension [Self <: AuthenticateConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticateConfig] (val x: Self) extends AnyVal {
       
       inline def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
       
@@ -183,7 +184,8 @@ object mod {
       __obj.asInstanceOf[AuthenticationError]
     }
     
-    extension [Self <: AuthenticationError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticationError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: AuthenticateErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -227,7 +229,8 @@ object mod {
       __obj.asInstanceOf[IsSupportedConfig]
     }
     
-    extension [Self <: IsSupportedConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsSupportedConfig] (val x: Self) extends AnyVal {
       
       inline def setUnifiedErrors(value: Boolean): Self = StObject.set(x, "unifiedErrors", value.asInstanceOf[js.Any])
       
@@ -252,7 +255,8 @@ object mod {
       __obj.asInstanceOf[IsSupportedError]
     }
     
-    extension [Self <: IsSupportedError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsSupportedError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: IsSupportedErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

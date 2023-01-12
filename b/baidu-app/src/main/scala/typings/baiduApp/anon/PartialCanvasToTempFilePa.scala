@@ -36,7 +36,8 @@ object PartialCanvasToTempFilePa {
     __obj.asInstanceOf[PartialCanvasToTempFilePa]
   }
   
-  extension [Self <: PartialCanvasToTempFilePa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCanvasToTempFilePa] (val x: Self) extends AnyVal {
     
     inline def setCanvasId(value: String): Self = StObject.set(x, "canvasId", value.asInstanceOf[js.Any])
     

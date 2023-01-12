@@ -36,7 +36,8 @@ object ThemeTreeProps {
     __obj.asInstanceOf[ThemeTreeProps[T]]
   }
   
-  extension [Self <: ThemeTreeProps[?], T](x: Self & ThemeTreeProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeTreeProps[?], T] (val x: Self & ThemeTreeProps[T]) extends AnyVal {
     
     inline def setInnerStyle(value: CSSProperties): Self = StObject.set(x, "innerStyle", value.asInstanceOf[js.Any])
     

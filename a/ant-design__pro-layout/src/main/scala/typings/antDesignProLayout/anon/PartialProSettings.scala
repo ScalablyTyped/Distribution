@@ -55,7 +55,8 @@ object PartialProSettings {
     __obj.asInstanceOf[PartialProSettings]
   }
   
-  extension [Self <: PartialProSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialProSettings] (val x: Self) extends AnyVal {
     
     inline def setColorPrimary(value: String): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
     

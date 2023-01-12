@@ -22,7 +22,8 @@ object absoluteUrlOptions {
     __obj.asInstanceOf[absoluteUrlOptions]
   }
   
-  extension [Self <: absoluteUrlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: absoluteUrlOptions] (val x: Self) extends AnyVal {
     
     inline def setReplaceLocalhost(value: Boolean): Self = StObject.set(x, "replaceLocalhost", value.asInstanceOf[js.Any])
     

@@ -73,7 +73,8 @@ object PageLoadOptions {
     __obj.asInstanceOf[PageLoadOptions]
   }
   
-  extension [Self <: PageLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object ViewProps {
     __obj.asInstanceOf[ViewProps]
   }
   
-  extension [Self <: ViewProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewProps] (val x: Self) extends AnyVal {
     
     inline def setBusinessHours(value: EventStore): Self = StObject.set(x, "businessHours", value.asInstanceOf[js.Any])
     

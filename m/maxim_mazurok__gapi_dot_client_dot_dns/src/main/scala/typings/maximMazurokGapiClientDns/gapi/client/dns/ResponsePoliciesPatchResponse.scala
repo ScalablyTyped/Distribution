@@ -17,7 +17,8 @@ object ResponsePoliciesPatchResponse {
     __obj.asInstanceOf[ResponsePoliciesPatchResponse]
   }
   
-  extension [Self <: ResponsePoliciesPatchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponsePoliciesPatchResponse] (val x: Self) extends AnyVal {
     
     inline def setHeader(value: ResponseHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object ProcessOptions {
     __obj.asInstanceOf[ProcessOptions]
   }
   
-  extension [Self <: ProcessOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessOptions] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

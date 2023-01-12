@@ -23,7 +23,8 @@ object ForecastStatistics {
     __obj.asInstanceOf[ForecastStatistics]
   }
   
-  extension [Self <: ForecastStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForecastStatistics] (val x: Self) extends AnyVal {
     
     inline def setFaultCountHigh(value: NullableLong): Self = StObject.set(x, "FaultCountHigh", value.asInstanceOf[js.Any])
     

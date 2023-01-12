@@ -44,7 +44,8 @@ object DAVAdapterObject {
     __obj.asInstanceOf[DAVAdapterObject]
   }
   
-  extension [Self <: DAVAdapterObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DAVAdapterObject] (val x: Self) extends AnyVal {
     
     inline def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
     

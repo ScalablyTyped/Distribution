@@ -39,7 +39,8 @@ object OpenLocationConfig {
     __obj.asInstanceOf[OpenLocationConfig]
   }
   
-  extension [Self <: OpenLocationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenLocationConfig] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

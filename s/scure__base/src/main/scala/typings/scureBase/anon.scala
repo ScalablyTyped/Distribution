@@ -49,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Base16]
     }
     
-    extension [Self <: Base16](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Base16] (val x: Self) extends AnyVal {
       
       inline def setBase16(value: BytesCoder): Self = StObject.set(x, "base16", value.asInstanceOf[js.Any])
       

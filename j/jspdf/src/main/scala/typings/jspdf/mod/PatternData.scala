@@ -23,7 +23,8 @@ object PatternData {
     __obj.asInstanceOf[PatternData]
   }
   
-  extension [Self <: PatternData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatternData] (val x: Self) extends AnyVal {
     
     inline def setBoundingBox(value: js.Array[Double]): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
     

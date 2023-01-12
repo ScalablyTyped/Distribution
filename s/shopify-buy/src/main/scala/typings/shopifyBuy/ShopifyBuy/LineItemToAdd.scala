@@ -19,7 +19,8 @@ object LineItemToAdd {
     __obj.asInstanceOf[LineItemToAdd]
   }
   
-  extension [Self <: LineItemToAdd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineItemToAdd] (val x: Self) extends AnyVal {
     
     inline def setCustomAttributes(value: js.Array[CustomAttribute]): Self = StObject.set(x, "customAttributes", value.asInstanceOf[js.Any])
     

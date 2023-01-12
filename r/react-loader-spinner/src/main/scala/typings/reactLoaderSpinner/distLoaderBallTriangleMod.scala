@@ -26,7 +26,8 @@ object distLoaderBallTriangleMod extends Shortcut {
       __obj.asInstanceOf[BallTriangleProps]
     }
     
-    extension [Self <: BallTriangleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BallTriangleProps] (val x: Self) extends AnyVal {
       
       inline def setRadius(value: String | Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       

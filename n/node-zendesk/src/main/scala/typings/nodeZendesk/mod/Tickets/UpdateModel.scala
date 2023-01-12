@@ -65,7 +65,8 @@ object UpdateModel {
     __obj.asInstanceOf[UpdateModel]
   }
   
-  extension [Self <: UpdateModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateModel] (val x: Self) extends AnyVal {
     
     inline def setAdditional_collaborators(value: js.Array[Any]): Self = StObject.set(x, "additional_collaborators", value.asInstanceOf[js.Any])
     

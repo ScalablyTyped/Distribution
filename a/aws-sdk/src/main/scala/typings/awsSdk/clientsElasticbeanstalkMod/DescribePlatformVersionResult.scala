@@ -18,7 +18,8 @@ object DescribePlatformVersionResult {
     __obj.asInstanceOf[DescribePlatformVersionResult]
   }
   
-  extension [Self <: DescribePlatformVersionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePlatformVersionResult] (val x: Self) extends AnyVal {
     
     inline def setPlatformDescription(value: PlatformDescription): Self = StObject.set(x, "PlatformDescription", value.asInstanceOf[js.Any])
     

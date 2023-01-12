@@ -17,7 +17,8 @@ object Priority {
     __obj.asInstanceOf[Priority]
   }
   
-  extension [Self <: Priority](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Priority] (val x: Self) extends AnyVal {
     
     inline def setPriority(
       value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PriorityString */ Any)

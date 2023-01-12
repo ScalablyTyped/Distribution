@@ -69,7 +69,8 @@ object CellData {
     __obj.asInstanceOf[CellData]
   }
   
-  extension [Self <: CellData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellData] (val x: Self) extends AnyVal {
     
     inline def setDataSourceFormula(value: DataSourceFormula): Self = StObject.set(x, "dataSourceFormula", value.asInstanceOf[js.Any])
     

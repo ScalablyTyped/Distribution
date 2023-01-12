@@ -41,7 +41,8 @@ object CircleCrosshairCfg {
     __obj.asInstanceOf[CircleCrosshairCfg]
   }
   
-  extension [Self <: CircleCrosshairCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircleCrosshairCfg] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Point): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

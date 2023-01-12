@@ -23,7 +23,8 @@ object DescribeInputDeviceThumbnailRequest {
     __obj.asInstanceOf[DescribeInputDeviceThumbnailRequest]
   }
   
-  extension [Self <: DescribeInputDeviceThumbnailRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInputDeviceThumbnailRequest] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: AcceptHeader): Self = StObject.set(x, "Accept", value.asInstanceOf[js.Any])
     

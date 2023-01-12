@@ -17,7 +17,8 @@ object Log_ {
     __obj.asInstanceOf[Log_]
   }
   
-  extension [Self <: Log_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Log_] (val x: Self) extends AnyVal {
     
     inline def setInfo(value: /* repeated */ Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
     

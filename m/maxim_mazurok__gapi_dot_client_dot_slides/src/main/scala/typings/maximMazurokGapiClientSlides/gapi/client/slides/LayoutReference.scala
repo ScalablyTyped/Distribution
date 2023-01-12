@@ -19,7 +19,8 @@ object LayoutReference {
     __obj.asInstanceOf[LayoutReference]
   }
   
-  extension [Self <: LayoutReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutReference] (val x: Self) extends AnyVal {
     
     inline def setLayoutId(value: String): Self = StObject.set(x, "layoutId", value.asInstanceOf[js.Any])
     

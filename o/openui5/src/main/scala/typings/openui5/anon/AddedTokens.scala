@@ -42,7 +42,8 @@ object AddedTokens {
     __obj.asInstanceOf[AddedTokens]
   }
   
-  extension [Self <: AddedTokens](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddedTokens] (val x: Self) extends AnyVal {
     
     inline def setAddedTokens(value: js.Array[default]): Self = StObject.set(x, "addedTokens", value.asInstanceOf[js.Any])
     

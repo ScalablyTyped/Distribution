@@ -19,7 +19,8 @@ object UploadServiceAccountKeyRequest {
     __obj.asInstanceOf[UploadServiceAccountKeyRequest]
   }
   
-  extension [Self <: UploadServiceAccountKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadServiceAccountKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setPublicKeyData(value: String): Self = StObject.set(x, "publicKeyData", value.asInstanceOf[js.Any])
     

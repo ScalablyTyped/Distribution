@@ -20,7 +20,8 @@ object render {
       __obj.asInstanceOf[ToContextOptions]
     }
     
-    extension [Self <: ToContextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToContextOptions] (val x: Self) extends AnyVal {
       
       inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       

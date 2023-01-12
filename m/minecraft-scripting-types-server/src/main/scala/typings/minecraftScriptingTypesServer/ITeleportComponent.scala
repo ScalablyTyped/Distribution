@@ -74,7 +74,8 @@ object ITeleportComponent {
     __obj.asInstanceOf[ITeleportComponent]
   }
   
-  extension [Self <: ITeleportComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITeleportComponent] (val x: Self) extends AnyVal {
     
     inline def setDarkTeleportChance(value: Double): Self = StObject.set(x, "darkTeleportChance", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object distSrcUtilsSafeHrefMod {
       __obj.asInstanceOf[SafeHrefConfigObj]
     }
     
-    extension [Self <: SafeHrefConfigObj](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SafeHrefConfigObj] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object distSrcUtilsSafeHrefMod {
       __obj.asInstanceOf[URLInfo]
     }
     
-    extension [Self <: URLInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URLInfo] (val x: Self) extends AnyVal {
       
       inline def setSameOrigin(value: Boolean): Self = StObject.set(x, "sameOrigin", value.asInstanceOf[js.Any])
       

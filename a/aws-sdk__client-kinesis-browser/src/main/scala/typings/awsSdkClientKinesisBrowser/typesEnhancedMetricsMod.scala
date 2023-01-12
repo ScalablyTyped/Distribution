@@ -34,7 +34,8 @@ object typesEnhancedMetricsMod {
       __obj.asInstanceOf[EnhancedMetrics]
     }
     
-    extension [Self <: EnhancedMetrics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnhancedMetrics] (val x: Self) extends AnyVal {
       
       inline def setShardLevelMetrics(
         value: (js.Array[
@@ -73,7 +74,8 @@ object typesEnhancedMetricsMod {
       __obj.asInstanceOf[UnmarshalledEnhancedMetrics]
     }
     
-    extension [Self <: UnmarshalledEnhancedMetrics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledEnhancedMetrics] (val x: Self) extends AnyVal {
       
       inline def setShardLevelMetrics(
         value: js.Array[

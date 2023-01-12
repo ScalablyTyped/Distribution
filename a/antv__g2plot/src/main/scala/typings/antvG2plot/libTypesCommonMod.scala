@@ -53,7 +53,8 @@ object libTypesCommonMod {
       __obj.asInstanceOf[BBox]
     }
     
-    extension [Self <: BBox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BBox] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -262,7 +263,8 @@ object libTypesCommonMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -417,7 +419,8 @@ object libTypesCommonMod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -448,7 +451,8 @@ object libTypesCommonMod {
       __obj.asInstanceOf[Region]
     }
     
-    extension [Self <: Region](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -471,7 +475,8 @@ object libTypesCommonMod {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -520,7 +525,8 @@ object libTypesCommonMod {
       __obj.asInstanceOf[TextStyle]
     }
     
-    extension [Self <: TextStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextStyle] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       

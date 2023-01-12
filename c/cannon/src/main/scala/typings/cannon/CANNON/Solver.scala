@@ -32,7 +32,8 @@ object Solver {
     __obj.asInstanceOf[Solver]
   }
   
-  extension [Self <: Solver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Solver] (val x: Self) extends AnyVal {
     
     inline def setAddEquation(value: Equation => Unit): Self = StObject.set(x, "addEquation", js.Any.fromFunction1(value))
     

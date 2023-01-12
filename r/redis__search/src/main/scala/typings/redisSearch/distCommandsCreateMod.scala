@@ -61,7 +61,8 @@ object distCommandsCreateMod {
       __obj.asInstanceOf[CreateOptions]
     }
     
-    extension [Self <: CreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateOptions] (val x: Self) extends AnyVal {
       
       inline def setFILTER(value: String): Self = StObject.set(x, "FILTER", value.asInstanceOf[js.Any])
       

@@ -297,7 +297,8 @@ object SeriesArcDiagramDataLabelsOptionsObject {
     __obj.asInstanceOf[SeriesArcDiagramDataLabelsOptionsObject]
   }
   
-  extension [Self <: SeriesArcDiagramDataLabelsOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesArcDiagramDataLabelsOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

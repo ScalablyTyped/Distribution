@@ -19,7 +19,8 @@ object Permissions {
     __obj.asInstanceOf[Permissions]
   }
   
-  extension [Self <: Permissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Permissions] (val x: Self) extends AnyVal {
     
     inline def setPermissions(value: EChatPermission): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     

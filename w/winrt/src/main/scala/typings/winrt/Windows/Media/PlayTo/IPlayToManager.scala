@@ -19,7 +19,8 @@ object IPlayToManager {
     __obj.asInstanceOf[IPlayToManager]
   }
   
-  extension [Self <: IPlayToManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPlayToManager] (val x: Self) extends AnyVal {
     
     inline def setDefaultSourceSelection(value: Boolean): Self = StObject.set(x, "defaultSourceSelection", value.asInstanceOf[js.Any])
     

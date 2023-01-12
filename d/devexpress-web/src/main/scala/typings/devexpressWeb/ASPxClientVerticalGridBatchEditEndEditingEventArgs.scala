@@ -33,7 +33,8 @@ object ASPxClientVerticalGridBatchEditEndEditingEventArgs {
     __obj.asInstanceOf[ASPxClientVerticalGridBatchEditEndEditingEventArgs]
   }
   
-  extension [Self <: ASPxClientVerticalGridBatchEditEndEditingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientVerticalGridBatchEditEndEditingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setFocusedRow(value: ASPxClientVerticalGridRow): Self = StObject.set(x, "focusedRow", value.asInstanceOf[js.Any])
     

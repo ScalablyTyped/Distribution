@@ -94,7 +94,8 @@ object atnAtnsimulatorMod {
       __obj.asInstanceOf[ATNSimulator]
     }
     
-    extension [Self <: ATNSimulator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ATNSimulator] (val x: Self) extends AnyVal {
       
       inline def setAtn(value: typings.antlr4.atnAtnMod.default): Self = StObject.set(x, "atn", value.asInstanceOf[js.Any])
       

@@ -50,7 +50,8 @@ object distCssParserTransformMod {
       __obj.asInstanceOf[ParsedTransform]
     }
     
-    extension [Self <: ParsedTransform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedTransform] (val x: Self) extends AnyVal {
       
       inline def setD(value: js.Array[CSSUnitValue]): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       

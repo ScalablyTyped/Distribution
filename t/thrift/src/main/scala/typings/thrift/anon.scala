@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Client[TClient]]
     }
     
-    extension [Self <: Client[?], TClient](x: Self & Client[TClient]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Client[?], TClient] (val x: Self & Client[TClient]) extends AnyVal {
       
       inline def setClient(value: InstantiableTClient[TClient]): Self = StObject.set(x, "Client", value.asInstanceOf[js.Any])
     }
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Handler[TProcessor, THandler]]
     }
     
-    extension [Self <: Handler[?, ?], TProcessor, THandler](x: Self & (Handler[TProcessor, THandler])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Handler[?, ?], TProcessor, THandler] (val x: Self & (Handler[TProcessor, THandler])) extends AnyVal {
       
       inline def setHandler(value: THandler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
@@ -82,7 +84,8 @@ object anon {
       __obj.asInstanceOf[Processor[THandler, TProcessor]]
     }
     
-    extension [Self <: Processor[?, ?], THandler, TProcessor](x: Self & (Processor[THandler, TProcessor])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Processor[?, ?], THandler, TProcessor] (val x: Self & (Processor[THandler, TProcessor])) extends AnyVal {
       
       inline def setProcessor(value: Instantiable[THandler, TProcessor]): Self = StObject.set(x, "Processor", value.asInstanceOf[js.Any])
     }

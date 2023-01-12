@@ -42,7 +42,8 @@ object componentsAccordionPanelMod {
       __obj.asInstanceOf[AccordionPanelProps]
     }
     
-    extension [Self <: AccordionPanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionPanelProps] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: ReactNode): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       

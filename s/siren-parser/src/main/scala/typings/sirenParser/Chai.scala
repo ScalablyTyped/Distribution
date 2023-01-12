@@ -41,7 +41,8 @@ object Chai {
       __obj.asInstanceOf[Assertion]
     }
     
-    extension [Self <: Assertion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Assertion] (val x: Self) extends AnyVal {
       
       inline def setClasses(value: /* repeated */ String => Unit): Self = StObject.set(x, "classes", js.Any.fromFunction1(value))
       
@@ -73,7 +74,8 @@ object Chai {
       __obj.asInstanceOf[KeyFilter]
     }
     
-    extension [Self <: KeyFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyFilter] (val x: Self) extends AnyVal {
       
       inline def setWith(value: Assertion): Self = StObject.set(x, "with", value.asInstanceOf[js.Any])
     }
@@ -119,7 +121,8 @@ object Chai {
       __obj.asInstanceOf[TypeComparison]
     }
     
-    extension [Self <: TypeComparison](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeComparison] (val x: Self) extends AnyVal {
       
       inline def setSirenAction(value: Assertion): Self = StObject.set(x, "sirenAction", value.asInstanceOf[js.Any])
       

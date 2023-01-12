@@ -95,7 +95,8 @@ object libMonoidMod {
       __obj.asInstanceOf[Monoid[A]]
     }
     
-    extension [Self <: Monoid[?], A](x: Self & Monoid[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Monoid[?], A] (val x: Self & Monoid[A]) extends AnyVal {
       
       inline def setEmpty(value: A): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     }

@@ -17,7 +17,8 @@ object RunResult {
     __obj.asInstanceOf[RunResult]
   }
   
-  extension [Self <: RunResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunResult] (val x: Self) extends AnyVal {
     
     inline def setTestResults(value: TestResults): Self = StObject.set(x, "testResults", value.asInstanceOf[js.Any])
     

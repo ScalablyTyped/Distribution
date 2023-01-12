@@ -116,7 +116,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[GestureResponseDistanceType]
     }
     
-    extension [Self <: GestureResponseDistanceType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GestureResponseDistanceType] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -178,7 +179,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[ScreenContainerProps]
     }
     
-    extension [Self <: ScreenContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScreenContainerProps] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -473,7 +475,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[ScreenProps]
     }
     
-    extension [Self <: ScreenProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScreenProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: `0` | `1` | (AnimatedInterpolation[Double | String])): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -807,7 +810,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[ScreenStackHeaderConfigProps]
     }
     
-    extension [Self <: ScreenStackHeaderConfigProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScreenStackHeaderConfigProps] (val x: Self) extends AnyVal {
       
       inline def setBackButtonInCustomView(value: Boolean): Self = StObject.set(x, "backButtonInCustomView", value.asInstanceOf[js.Any])
       
@@ -939,7 +943,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[ScreenStackProps]
     }
     
-    extension [Self <: ScreenStackProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScreenStackProps] (val x: Self) extends AnyVal {
       
       inline def setOnFinishTransitioning(value: /* e */ NativeSyntheticEvent[TargetedEvent] => Unit): Self = StObject.set(x, "onFinishTransitioning", js.Any.fromFunction1(value))
       
@@ -1093,7 +1098,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[SearchBarProps]
     }
     
-    extension [Self <: SearchBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchBarProps] (val x: Self) extends AnyVal {
       
       inline def setAutoCapitalize(value: none | words | sentences | characters): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
       
@@ -1272,7 +1278,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[TransitionProgressEventType]
     }
     
-    extension [Self <: TransitionProgressEventType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionProgressEventType] (val x: Self) extends AnyVal {
       
       inline def setClosing(value: Double): Self = StObject.set(x, "closing", value.asInstanceOf[js.Any])
       

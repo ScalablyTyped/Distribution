@@ -20,7 +20,8 @@ object BarcodeScannerStatusUpdatedEventArgs {
     __obj.asInstanceOf[BarcodeScannerStatusUpdatedEventArgs]
   }
   
-  extension [Self <: BarcodeScannerStatusUpdatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarcodeScannerStatusUpdatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setExtendedStatus(value: Double): Self = StObject.set(x, "extendedStatus", value.asInstanceOf[js.Any])
     

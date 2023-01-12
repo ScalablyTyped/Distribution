@@ -69,7 +69,8 @@ object WorkItemDeleteReference {
     __obj.asInstanceOf[WorkItemDeleteReference]
   }
   
-  extension [Self <: WorkItemDeleteReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemDeleteReference] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

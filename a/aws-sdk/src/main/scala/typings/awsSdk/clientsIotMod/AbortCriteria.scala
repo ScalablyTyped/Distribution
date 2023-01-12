@@ -38,7 +38,8 @@ object AbortCriteria {
     __obj.asInstanceOf[AbortCriteria]
   }
   
-  extension [Self <: AbortCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbortCriteria] (val x: Self) extends AnyVal {
     
     inline def setAction(value: AbortAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

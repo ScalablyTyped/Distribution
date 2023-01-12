@@ -15,7 +15,8 @@ object DeleteMulticastGroupRequest {
     __obj.asInstanceOf[DeleteMulticastGroupRequest]
   }
   
-  extension [Self <: DeleteMulticastGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteMulticastGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: MulticastGroupId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }

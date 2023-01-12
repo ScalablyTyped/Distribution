@@ -25,7 +25,8 @@ object AdaptorHandle {
     __obj.asInstanceOf[AdaptorHandle]
   }
   
-  extension [Self <: AdaptorHandle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdaptorHandle] (val x: Self) extends AnyVal {
     
     inline def setGet(value: () => Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     

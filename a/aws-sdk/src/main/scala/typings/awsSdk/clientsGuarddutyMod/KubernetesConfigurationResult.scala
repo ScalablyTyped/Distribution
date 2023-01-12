@@ -18,7 +18,8 @@ object KubernetesConfigurationResult {
     __obj.asInstanceOf[KubernetesConfigurationResult]
   }
   
-  extension [Self <: KubernetesConfigurationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KubernetesConfigurationResult] (val x: Self) extends AnyVal {
     
     inline def setAuditLogs(value: KubernetesAuditLogsConfigurationResult): Self = StObject.set(x, "AuditLogs", value.asInstanceOf[js.Any])
   }

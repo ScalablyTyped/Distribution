@@ -39,7 +39,8 @@ object StackFrame {
     __obj.asInstanceOf[StackFrame]
   }
   
-  extension [Self <: StackFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackFrame] (val x: Self) extends AnyVal {
     
     inline def setHost(value: StatelessHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

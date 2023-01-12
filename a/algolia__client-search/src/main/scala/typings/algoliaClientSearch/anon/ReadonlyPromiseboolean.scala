@@ -27,7 +27,8 @@ object ReadonlyPromiseboolean {
     __obj.asInstanceOf[ReadonlyPromiseboolean]
   }
   
-  extension [Self <: ReadonlyPromiseboolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyPromiseboolean] (val x: Self) extends AnyVal {
     
     inline def setCatch(value: () => js.Promise[Boolean | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     

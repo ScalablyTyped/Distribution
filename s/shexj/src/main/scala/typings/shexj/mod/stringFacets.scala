@@ -38,7 +38,8 @@ object stringFacets {
     __obj.asInstanceOf[stringFacets]
   }
   
-  extension [Self <: stringFacets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: stringFacets] (val x: Self) extends AnyVal {
     
     inline def setFlags(value: STRING): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     

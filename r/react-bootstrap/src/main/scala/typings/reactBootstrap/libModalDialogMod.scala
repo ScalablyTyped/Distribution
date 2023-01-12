@@ -46,7 +46,8 @@ object libModalDialogMod {
       __obj.asInstanceOf[ModalDialogProps]
     }
     
-    extension [Self <: ModalDialogProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalDialogProps] (val x: Self) extends AnyVal {
       
       inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       

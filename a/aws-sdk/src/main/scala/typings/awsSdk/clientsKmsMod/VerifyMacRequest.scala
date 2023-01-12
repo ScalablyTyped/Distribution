@@ -38,7 +38,8 @@ object VerifyMacRequest {
     __obj.asInstanceOf[VerifyMacRequest]
   }
   
-  extension [Self <: VerifyMacRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyMacRequest] (val x: Self) extends AnyVal {
     
     inline def setGrantTokens(value: GrantTokenList): Self = StObject.set(x, "GrantTokens", value.asInstanceOf[js.Any])
     

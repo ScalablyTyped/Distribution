@@ -34,7 +34,8 @@ object Gradient {
     __obj.asInstanceOf[Gradient]
   }
   
-  extension [Self <: Gradient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gradient] (val x: Self) extends AnyVal {
     
     inline def setEquals_(value: Gradient => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     

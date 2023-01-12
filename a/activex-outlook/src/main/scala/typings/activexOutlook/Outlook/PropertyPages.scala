@@ -43,7 +43,8 @@ object PropertyPages {
     __obj.asInstanceOf[PropertyPages]
   }
   
-  extension [Self <: PropertyPages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyPages] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Any, String) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

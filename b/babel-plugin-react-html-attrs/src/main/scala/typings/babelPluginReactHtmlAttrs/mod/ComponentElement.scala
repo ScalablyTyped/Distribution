@@ -18,7 +18,8 @@ object ComponentElement {
     __obj.asInstanceOf[ComponentElement[P, T]]
   }
   
-  extension [Self <: ComponentElement[?, ?], P, T /* <: Component[P, ComponentState, Any] */](x: Self & (ComponentElement[P, T])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentElement[?, ?], P, T /* <: Component[P, ComponentState, Any] */] (val x: Self & (ComponentElement[P, T])) extends AnyVal {
     
     inline def setRef(value: LegacyRef[T]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     

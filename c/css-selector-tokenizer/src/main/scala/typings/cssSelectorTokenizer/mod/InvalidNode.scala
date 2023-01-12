@@ -23,7 +23,8 @@ object InvalidNode {
     __obj.asInstanceOf[InvalidNode]
   }
   
-  extension [Self <: InvalidNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidNode] (val x: Self) extends AnyVal {
     
     inline def setType(value: invalid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ISurveyImpl {
     __obj.asInstanceOf[ISurveyImpl]
   }
   
-  extension [Self <: ISurveyImpl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISurveyImpl] (val x: Self) extends AnyVal {
     
     inline def setGetSurvey(value: () => ISurvey): Self = StObject.set(x, "getSurvey", js.Any.fromFunction0(value))
     

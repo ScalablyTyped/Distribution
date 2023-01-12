@@ -46,7 +46,8 @@ object ReplyFormAttachment {
     __obj.asInstanceOf[ReplyFormAttachment]
   }
   
-  extension [Self <: ReplyFormAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplyFormAttachment] (val x: Self) extends AnyVal {
     
     inline def setInLine(value: Boolean): Self = StObject.set(x, "inLine", value.asInstanceOf[js.Any])
     

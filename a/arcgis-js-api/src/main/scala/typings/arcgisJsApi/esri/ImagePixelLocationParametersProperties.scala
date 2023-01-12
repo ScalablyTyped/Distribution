@@ -27,7 +27,8 @@ object ImagePixelLocationParametersProperties {
     __obj.asInstanceOf[ImagePixelLocationParametersProperties]
   }
   
-  extension [Self <: ImagePixelLocationParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagePixelLocationParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setPoint(value: js.Array[PointProperties]): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     

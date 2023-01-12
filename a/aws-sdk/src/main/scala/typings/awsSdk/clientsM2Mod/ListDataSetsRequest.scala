@@ -33,7 +33,8 @@ object ListDataSetsRequest {
     __obj.asInstanceOf[ListDataSetsRequest]
   }
   
-  extension [Self <: ListDataSetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDataSetsRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: Identifier): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     

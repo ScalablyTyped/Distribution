@@ -28,7 +28,8 @@ object PutSkillAuthorizationRequest {
     __obj.asInstanceOf[PutSkillAuthorizationRequest]
   }
   
-  extension [Self <: PutSkillAuthorizationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutSkillAuthorizationRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationResult(value: AuthorizationResult): Self = StObject.set(x, "AuthorizationResult", value.asInstanceOf[js.Any])
     

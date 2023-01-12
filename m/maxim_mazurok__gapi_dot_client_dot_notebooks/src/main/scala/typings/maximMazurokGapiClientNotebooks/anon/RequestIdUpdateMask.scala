@@ -62,7 +62,8 @@ object RequestIdUpdateMask {
     __obj.asInstanceOf[RequestIdUpdateMask]
   }
   
-  extension [Self <: RequestIdUpdateMask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestIdUpdateMask] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

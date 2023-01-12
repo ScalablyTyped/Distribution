@@ -107,7 +107,8 @@ object AfterRender {
     __obj.asInstanceOf[AfterRender]
   }
   
-  extension [Self <: AfterRender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AfterRender] (val x: Self) extends AnyVal {
     
     inline def setAfterRender(value: SyncHook[js.Array[DisplayObject[Any, Any]], Unit, UnsetAdditionalOptions]): Self = StObject.set(x, "afterRender", value.asInstanceOf[js.Any])
     

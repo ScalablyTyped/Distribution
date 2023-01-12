@@ -116,7 +116,8 @@ object mod {
       __obj.asInstanceOf[ExportSpecifier]
     }
     
-    extension [Self <: ExportSpecifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportSpecifier] (val x: Self) extends AnyVal {
       
       inline def setE(value: Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
@@ -209,7 +210,8 @@ object mod {
       __obj.asInstanceOf[ImportSpecifier]
     }
     
-    extension [Self <: ImportSpecifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportSpecifier] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       

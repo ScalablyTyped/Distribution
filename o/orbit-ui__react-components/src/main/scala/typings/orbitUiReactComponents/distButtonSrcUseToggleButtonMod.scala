@@ -50,7 +50,8 @@ object distButtonSrcUseToggleButtonMod {
       __obj.asInstanceOf[UseToggleButtonProps[Shape]]
     }
     
-    extension [Self <: UseToggleButtonProps[?], Shape](x: Self & UseToggleButtonProps[Shape]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseToggleButtonProps[?], Shape] (val x: Self & UseToggleButtonProps[Shape]) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object False {
     __obj.asInstanceOf[False]
   }
   
-  extension [Self <: False](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: False] (val x: Self) extends AnyVal {
     
     inline def setFalse(value: ColorValue): Self = StObject.set(x, "false", value.asInstanceOf[js.Any])
     

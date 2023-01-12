@@ -25,7 +25,8 @@ object subscribersChangeArgs {
     __obj.asInstanceOf[subscribersChangeArgs]
   }
   
-  extension [Self <: subscribersChangeArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: subscribersChangeArgs] (val x: Self) extends AnyVal {
     
     inline def setChange(value: subscribersChange): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     

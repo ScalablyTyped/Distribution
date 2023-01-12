@@ -24,7 +24,8 @@ object PartialLifetimes {
     __obj.asInstanceOf[PartialLifetimes]
   }
   
-  extension [Self <: PartialLifetimes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialLifetimes] (val x: Self) extends AnyVal {
     
     inline def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
     

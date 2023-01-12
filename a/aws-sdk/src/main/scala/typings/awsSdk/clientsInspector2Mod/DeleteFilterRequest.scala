@@ -18,7 +18,8 @@ object DeleteFilterRequest {
     __obj.asInstanceOf[DeleteFilterRequest]
   }
   
-  extension [Self <: DeleteFilterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFilterRequest] (val x: Self) extends AnyVal {
     
     inline def setArn(value: FilterArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }

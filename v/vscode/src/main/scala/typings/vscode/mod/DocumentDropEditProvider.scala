@@ -28,7 +28,8 @@ object DocumentDropEditProvider {
     __obj.asInstanceOf[DocumentDropEditProvider]
   }
   
-  extension [Self <: DocumentDropEditProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentDropEditProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideDocumentDropEdits(
       value: (TextDocument, Position, DataTransfer, CancellationToken) => ProviderResult[DocumentDropEdit]

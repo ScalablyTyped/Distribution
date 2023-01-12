@@ -109,7 +109,8 @@ object WebGPUEngineOptions {
     __obj.asInstanceOf[WebGPUEngineOptions]
   }
   
-  extension [Self <: WebGPUEngineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGPUEngineOptions] (val x: Self) extends AnyVal {
     
     inline def setAdaptToDeviceRatio(value: Boolean): Self = StObject.set(x, "adaptToDeviceRatio", value.asInstanceOf[js.Any])
     

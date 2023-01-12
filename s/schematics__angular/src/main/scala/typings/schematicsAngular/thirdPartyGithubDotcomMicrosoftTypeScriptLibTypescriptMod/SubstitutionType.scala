@@ -50,7 +50,8 @@ object SubstitutionType {
     __obj.asInstanceOf[SubstitutionType]
   }
   
-  extension [Self <: SubstitutionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstitutionType] (val x: Self) extends AnyVal {
     
     inline def setBaseType(value: Type): Self = StObject.set(x, "baseType", value.asInstanceOf[js.Any])
     

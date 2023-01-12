@@ -70,7 +70,8 @@ object MeshMaterialMetallicRoughnessProperties {
     __obj.asInstanceOf[MeshMaterialMetallicRoughnessProperties]
   }
   
-  extension [Self <: MeshMaterialMetallicRoughnessProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshMaterialMetallicRoughnessProperties] (val x: Self) extends AnyVal {
     
     inline def setEmissiveColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "emissiveColor", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ConfirmOrderRequest {
     __obj.asInstanceOf[ConfirmOrderRequest]
   }
   
-  extension [Self <: ConfirmOrderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmOrderRequest] (val x: Self) extends AnyVal {
     
     inline def setApplication_context(value: OrderConfirmApplicationContext): Self = StObject.set(x, "application_context", value.asInstanceOf[js.Any])
     

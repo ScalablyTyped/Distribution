@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[AuthSchemes]
     }
     
-    extension [Self <: AuthSchemes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthSchemes] (val x: Self) extends AnyVal {
       
       inline def setAuthSchemes(value: js.Array[AuthScheme]): Self = StObject.set(x, "authSchemes", value.asInstanceOf[js.Any])
       
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[ForceRefresh]
     }
     
-    extension [Self <: ForceRefresh](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForceRefresh] (val x: Self) extends AnyVal {
       
       inline def setForceRefresh(value: Boolean): Self = StObject.set(x, "forceRefresh", value.asInstanceOf[js.Any])
       

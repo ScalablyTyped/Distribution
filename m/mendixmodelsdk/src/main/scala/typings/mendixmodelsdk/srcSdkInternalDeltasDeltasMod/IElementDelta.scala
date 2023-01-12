@@ -17,7 +17,8 @@ object IElementDelta {
     __obj.asInstanceOf[IElementDelta]
   }
   
-  extension [Self <: IElementDelta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IElementDelta] (val x: Self) extends AnyVal {
     
     inline def setElementId(value: String): Self = StObject.set(x, "elementId", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object GetTranscriptionJobResponse {
     __obj.asInstanceOf[GetTranscriptionJobResponse]
   }
   
-  extension [Self <: GetTranscriptionJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTranscriptionJobResponse] (val x: Self) extends AnyVal {
     
     inline def setTranscriptionJob(value: TranscriptionJob): Self = StObject.set(x, "TranscriptionJob", value.asInstanceOf[js.Any])
     

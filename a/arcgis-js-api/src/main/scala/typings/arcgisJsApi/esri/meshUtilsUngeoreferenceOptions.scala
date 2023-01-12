@@ -40,7 +40,8 @@ object meshUtilsUngeoreferenceOptions {
     __obj.asInstanceOf[meshUtilsUngeoreferenceOptions]
   }
   
-  extension [Self <: meshUtilsUngeoreferenceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: meshUtilsUngeoreferenceOptions] (val x: Self) extends AnyVal {
     
     inline def setGeographic(value: Boolean): Self = StObject.set(x, "geographic", value.asInstanceOf[js.Any])
     

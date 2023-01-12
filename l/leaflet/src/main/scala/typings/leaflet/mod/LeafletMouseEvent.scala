@@ -37,7 +37,8 @@ object LeafletMouseEvent {
     __obj.asInstanceOf[LeafletMouseEvent]
   }
   
-  extension [Self <: LeafletMouseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeafletMouseEvent] (val x: Self) extends AnyVal {
     
     inline def setContainerPoint(value: Point_): Self = StObject.set(x, "containerPoint", value.asInstanceOf[js.Any])
     

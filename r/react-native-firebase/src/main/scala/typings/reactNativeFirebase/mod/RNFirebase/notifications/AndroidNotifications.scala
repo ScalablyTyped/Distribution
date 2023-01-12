@@ -46,7 +46,8 @@ object AndroidNotifications {
     __obj.asInstanceOf[AndroidNotifications]
   }
   
-  extension [Self <: AndroidNotifications](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidNotifications] (val x: Self) extends AnyVal {
     
     inline def setCreateChannel(value: Channel => js.Promise[Unit]): Self = StObject.set(x, "createChannel", js.Any.fromFunction1(value))
     

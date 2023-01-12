@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Direction]
     }
     
-    extension [Self <: Direction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Direction] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: desc | asc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -72,7 +74,8 @@ object anon {
       __obj.asInstanceOf[ErrorPass[Error]]
     }
     
-    extension [Self <: ErrorPass[?], Error](x: Self & ErrorPass[Error]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorPass[?], Error] (val x: Self & ErrorPass[Error]) extends AnyVal {
       
       inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -95,7 +98,8 @@ object anon {
       __obj.asInstanceOf[Errors[TFields]]
     }
     
-    extension [Self <: Errors[?], TFields /* <: FieldSet */](x: Self & Errors[TFields]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Errors[?], TFields /* <: FieldSet */] (val x: Self & Errors[TFields]) extends AnyVal {
       
       inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -122,7 +126,8 @@ object anon {
       __obj.asInstanceOf[Field]
     }
     
-    extension [Self <: Field](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -147,7 +152,8 @@ object anon {
       __obj.asInstanceOf[Full]
     }
     
-    extension [Self <: Full](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Full] (val x: Self) extends AnyVal {
       
       inline def setFull(value: Thumbnail): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
       
@@ -168,7 +174,8 @@ object anon {
       __obj.asInstanceOf[Pass]
     }
     
-    extension [Self <: Pass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pass] (val x: Self) extends AnyVal {
       
       inline def setPass(value: `true`): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
     }
@@ -194,7 +201,8 @@ object anon {
       __obj.asInstanceOf[PickAirtableOptionsapiKey]
     }
     
-    extension [Self <: PickAirtableOptionsapiKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickAirtableOptionsapiKey] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -230,7 +238,8 @@ object anon {
       __obj.asInstanceOf[TypeofAirtableTable]
     }
     
-    extension [Self <: TypeofAirtableTable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofAirtableTable] (val x: Self) extends AnyVal {
       
       inline def set__recordsPerPageForIteration(value: Double): Self = StObject.set(x, "__recordsPerPageForIteration", value.asInstanceOf[js.Any])
     }
@@ -248,7 +257,8 @@ object anon {
       __obj.asInstanceOf[TypeofBase]
     }
     
-    extension [Self <: TypeofBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofBase] (val x: Self) extends AnyVal {
       
       inline def setCreateFunctor(value: (^, String) => AirtableBase): Self = StObject.set(x, "createFunctor", js.Any.fromFunction2(value))
     }

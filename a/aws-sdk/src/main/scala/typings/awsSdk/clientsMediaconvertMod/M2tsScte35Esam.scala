@@ -18,7 +18,8 @@ object M2tsScte35Esam {
     __obj.asInstanceOf[M2tsScte35Esam]
   }
   
-  extension [Self <: M2tsScte35Esam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: M2tsScte35Esam] (val x: Self) extends AnyVal {
     
     inline def setScte35EsamPid(value: integerMin32Max8182): Self = StObject.set(x, "Scte35EsamPid", value.asInstanceOf[js.Any])
     

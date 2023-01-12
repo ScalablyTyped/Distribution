@@ -18,7 +18,8 @@ object SetPauseOnExceptionsParameterType {
     __obj.asInstanceOf[SetPauseOnExceptionsParameterType]
   }
   
-  extension [Self <: SetPauseOnExceptionsParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetPauseOnExceptionsParameterType] (val x: Self) extends AnyVal {
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }

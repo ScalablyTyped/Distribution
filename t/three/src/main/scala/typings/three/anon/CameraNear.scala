@@ -20,7 +20,8 @@ object CameraNear {
     __obj.asInstanceOf[CameraNear]
   }
   
-  extension [Self <: CameraNear](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraNear] (val x: Self) extends AnyVal {
     
     inline def setCameraFar(value: IUniform[Any]): Self = StObject.set(x, "cameraFar", value.asInstanceOf[js.Any])
     

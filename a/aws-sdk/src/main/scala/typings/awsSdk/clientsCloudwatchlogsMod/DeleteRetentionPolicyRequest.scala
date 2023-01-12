@@ -18,7 +18,8 @@ object DeleteRetentionPolicyRequest {
     __obj.asInstanceOf[DeleteRetentionPolicyRequest]
   }
   
-  extension [Self <: DeleteRetentionPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRetentionPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object AwsIamPermissionsBoundary {
     __obj.asInstanceOf[AwsIamPermissionsBoundary]
   }
   
-  extension [Self <: AwsIamPermissionsBoundary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsIamPermissionsBoundary] (val x: Self) extends AnyVal {
     
     inline def setPermissionsBoundaryArn(value: NonEmptyString): Self = StObject.set(x, "PermissionsBoundaryArn", value.asInstanceOf[js.Any])
     

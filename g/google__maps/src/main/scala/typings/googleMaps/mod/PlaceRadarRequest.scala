@@ -66,7 +66,8 @@ object PlaceRadarRequest {
     __obj.asInstanceOf[PlaceRadarRequest]
   }
   
-  extension [Self <: PlaceRadarRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceRadarRequest] (val x: Self) extends AnyVal {
     
     inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
     

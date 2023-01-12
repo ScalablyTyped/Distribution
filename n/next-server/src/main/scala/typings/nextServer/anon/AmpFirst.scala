@@ -19,7 +19,8 @@ object AmpFirst {
     __obj.asInstanceOf[AmpFirst]
   }
   
-  extension [Self <: AmpFirst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmpFirst] (val x: Self) extends AnyVal {
     
     inline def setAmpFirst(value: Boolean): Self = StObject.set(x, "ampFirst", value.asInstanceOf[js.Any])
     

@@ -647,7 +647,8 @@ object sapUiUx3OverlayMod {
       __obj.asInstanceOf[OverlaySettings]
     }
     
-    extension [Self <: OverlaySettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlaySettings] (val x: Self) extends AnyVal {
       
       inline def setClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       

@@ -44,7 +44,8 @@ object anon {
       __obj.asInstanceOf[Binary]
     }
     
-    extension [Self <: Binary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Binary] (val x: Self) extends AnyVal {
       
       inline def setSquarify(value: RatioSquarifyTilingFactory): Self = StObject.set(x, "squarify", value.asInstanceOf[js.Any])
     }
@@ -131,7 +132,8 @@ object anon {
       __obj.asInstanceOf[BorderColor[Datum]]
     }
     
-    extension [Self <: BorderColor[?], Datum /* <: js.Object */](x: Self & BorderColor[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BorderColor[?], Datum /* <: js.Object */] (val x: Self & BorderColor[Datum]) extends AnyVal {
       
       inline def setBorderColor(
         value: InheritedColorConfig[typings.nivoTreemap.distTypesTypesMod.ComputedNodeWithoutStyles[Datum] & Color]
@@ -282,7 +284,8 @@ object anon {
       __obj.asInstanceOf[Color]
     }
     
-    extension [Self <: Color](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     }
@@ -364,7 +367,8 @@ object anon {
       __obj.asInstanceOf[ComputedNodeWithoutStyles]
     }
     
-    extension [Self <: ComputedNodeWithoutStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputedNodeWithoutStyles] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -453,7 +457,8 @@ object anon {
       __obj.asInstanceOf[EnableParentLabel]
     }
     
-    extension [Self <: EnableParentLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnableParentLabel] (val x: Self) extends AnyVal {
       
       inline def setEnableParentLabel(value: Boolean): Self = StObject.set(x, "enableParentLabel", value.asInstanceOf[js.Any])
       
@@ -488,7 +493,8 @@ object anon {
       __obj.asInstanceOf[GetValue[Datum]]
     }
     
-    extension [Self <: GetValue[?], Datum /* <: js.Object */](x: Self & GetValue[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetValue[?], Datum /* <: js.Object */] (val x: Self & GetValue[Datum]) extends AnyVal {
       
       inline def setGetValue(value: Datum => Double): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
       
@@ -515,7 +521,8 @@ object anon {
       __obj.asInstanceOf[Hierarchy[Datum]]
     }
     
-    extension [Self <: Hierarchy[?], Datum /* <: js.Object */](x: Self & Hierarchy[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hierarchy[?], Datum /* <: js.Object */] (val x: Self & Hierarchy[Datum]) extends AnyVal {
       
       inline def setHierarchy(value: HierarchyNode[Datum]): Self = StObject.set(x, "hierarchy", value.asInstanceOf[js.Any])
       
@@ -548,7 +555,8 @@ object anon {
       __obj.asInstanceOf[IsInteractive[Datum]]
     }
     
-    extension [Self <: IsInteractive[?], Datum /* <: js.Object */](x: Self & IsInteractive[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsInteractive[?], Datum /* <: js.Object */] (val x: Self & IsInteractive[Datum]) extends AnyVal {
       
       inline def setIsInteractive(value: Boolean): Self = StObject.set(x, "isInteractive", value.asInstanceOf[js.Any])
       
@@ -642,7 +650,8 @@ object anon {
       __obj.asInstanceOf[OmitComputedNodeWithoutSt]
     }
     
-    extension [Self <: OmitComputedNodeWithoutSt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitComputedNodeWithoutSt] (val x: Self) extends AnyVal {
       
       inline def setData(value: OmitDefaultTreeMapDatumch): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -757,7 +766,8 @@ object anon {
       __obj.asInstanceOf[OmitComputedNodeWithoutStData]
     }
     
-    extension [Self <: OmitComputedNodeWithoutStData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitComputedNodeWithoutStData] (val x: Self) extends AnyVal {
       
       inline def setData(value: OmitDefaultTreeMapDatumch): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -817,7 +827,8 @@ object anon {
       __obj.asInstanceOf[OmitDefaultTreeMapDatumch]
     }
     
-    extension [Self <: OmitDefaultTreeMapDatumch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitDefaultTreeMapDatumch] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -869,7 +880,8 @@ object anon {
       __obj.asInstanceOf[PartialAnimationConfig]
     }
     
-    extension [Self <: PartialAnimationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialAnimationConfig] (val x: Self) extends AnyVal {
       
       inline def setBounce(value: Double): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[JsRenderTemplate]
     }
     
-    extension [Self <: JsRenderTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsRenderTemplate] (val x: Self) extends AnyVal {
       
       inline def setEngine(value: jsrender | String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     }
@@ -50,7 +51,8 @@ object mod {
         __obj.asInstanceOf[TemplateRegistry]
       }
       
-      extension [Self <: TemplateRegistry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TemplateRegistry] (val x: Self) extends AnyVal {
         
         inline def setJsRenderTemplate(value: JsRenderTemplate): Self = StObject.set(x, "JsRenderTemplate", value.asInstanceOf[js.Any])
       }

@@ -85,7 +85,8 @@ object DiscoveryOptions {
     __obj.asInstanceOf[DiscoveryOptions]
   }
   
-  extension [Self <: DiscoveryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiscoveryOptions] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

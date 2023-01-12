@@ -23,7 +23,8 @@ object Frequency {
     __obj.asInstanceOf[Frequency]
   }
   
-  extension [Self <: Frequency](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Frequency] (val x: Self) extends AnyVal {
     
     inline def setUnits(value: FrequencyUnits): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     

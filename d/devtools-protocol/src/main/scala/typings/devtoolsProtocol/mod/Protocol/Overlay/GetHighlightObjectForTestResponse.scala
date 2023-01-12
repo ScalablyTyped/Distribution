@@ -18,7 +18,8 @@ object GetHighlightObjectForTestResponse {
     __obj.asInstanceOf[GetHighlightObjectForTestResponse]
   }
   
-  extension [Self <: GetHighlightObjectForTestResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetHighlightObjectForTestResponse] (val x: Self) extends AnyVal {
     
     inline def setHighlight(value: Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
   }

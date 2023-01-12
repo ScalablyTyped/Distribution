@@ -133,7 +133,8 @@ object mod {
       __obj.asInstanceOf[Notify]
     }
     
-    extension [Self <: Notify](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Notify] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -226,7 +227,8 @@ object mod {
       __obj.asInstanceOf[NotifyOption]
     }
     
-    extension [Self <: NotifyOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotifyOption] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

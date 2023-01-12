@@ -469,7 +469,8 @@ object distLibBstreekvMod {
       __obj.asInstanceOf[BSTreeKV[K, V]]
     }
     
-    extension [Self <: BSTreeKV[?, ?], K, V /* <: K */](x: Self & (BSTreeKV[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BSTreeKV[?, ?], K, V /* <: K */] (val x: Self & (BSTreeKV[K, V])) extends AnyVal {
       
       inline def setAdd(value: V => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

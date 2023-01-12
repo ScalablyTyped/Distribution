@@ -28,7 +28,8 @@ object InclusionProtectionFilters {
     __obj.asInstanceOf[InclusionProtectionFilters]
   }
   
-  extension [Self <: InclusionProtectionFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InclusionProtectionFilters] (val x: Self) extends AnyVal {
     
     inline def setProtectionNames(value: ProtectionNameFilters): Self = StObject.set(x, "ProtectionNames", value.asInstanceOf[js.Any])
     

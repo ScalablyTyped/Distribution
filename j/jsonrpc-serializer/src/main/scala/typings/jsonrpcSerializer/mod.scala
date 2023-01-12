@@ -169,7 +169,8 @@ object mod {
       __obj.asInstanceOf[DeserializeObject_]
     }
     
-    extension [Self <: DeserializeObject_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeserializeObject_] (val x: Self) extends AnyVal {
       
       inline def setPayload(
         value: RequestPayloadObject | NotificationPayloadObject | SuccessPayloadObject | ErrorPayloadObject
@@ -196,7 +197,8 @@ object mod {
       __obj.asInstanceOf[ErrorPayloadObject]
     }
     
-    extension [Self <: ErrorPayloadObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorPayloadObject] (val x: Self) extends AnyVal {
       
       inline def setError(value: SerializerError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -218,7 +220,8 @@ object mod {
       __obj.asInstanceOf[NotificationPayloadObject]
     }
     
-    extension [Self <: NotificationPayloadObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationPayloadObject] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     }
@@ -243,7 +246,8 @@ object mod {
       __obj.asInstanceOf[PayloadObject]
     }
     
-    extension [Self <: PayloadObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayloadObject] (val x: Self) extends AnyVal {
       
       inline def setError(value: SerializerError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -302,7 +306,8 @@ object mod {
       __obj.asInstanceOf[RequestPayloadObject]
     }
     
-    extension [Self <: RequestPayloadObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestPayloadObject] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -325,7 +330,8 @@ object mod {
       __obj.asInstanceOf[SerializerError]
     }
     
-    extension [Self <: SerializerError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializerError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -351,7 +357,8 @@ object mod {
       __obj.asInstanceOf[SuccessPayloadObject]
     }
     
-    extension [Self <: SuccessPayloadObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuccessPayloadObject] (val x: Self) extends AnyVal {
       
       inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }

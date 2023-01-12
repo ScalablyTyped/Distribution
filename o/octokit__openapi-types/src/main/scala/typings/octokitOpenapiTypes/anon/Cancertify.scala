@@ -41,7 +41,8 @@ object Cancertify {
     __obj.asInstanceOf[Cancertify]
   }
   
-  extension [Self <: Cancertify](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cancertify] (val x: Self) extends AnyVal {
     
     inline def setCan_certify(value: Boolean): Self = StObject.set(x, "can_certify", value.asInstanceOf[js.Any])
     

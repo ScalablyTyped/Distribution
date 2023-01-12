@@ -43,7 +43,8 @@ object focalPointPickerMod {
         __obj.asInstanceOf[FocalPoint]
       }
       
-      extension [Self <: FocalPoint](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FocalPoint] (val x: Self) extends AnyVal {
         
         inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         
@@ -77,7 +78,8 @@ object focalPointPickerMod {
         __obj.asInstanceOf[Props]
       }
       
-      extension [Self <: Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
         
         inline def setOnChange(value: FocalPoint => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
         

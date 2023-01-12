@@ -50,7 +50,8 @@ object Results {
     __obj.asInstanceOf[Results[T]]
   }
   
-  extension [Self <: Results[?], T](x: Self & Results[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Results[?], T] (val x: Self & Results[T]) extends AnyVal {
     
     inline def setBatchErrors(value: js.Array[DBError]): Self = StObject.set(x, "batchErrors", value.asInstanceOf[js.Any])
     

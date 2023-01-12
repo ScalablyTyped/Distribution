@@ -19,7 +19,8 @@ object Auth {
     __obj.asInstanceOf[Auth]
   }
   
-  extension [Self <: Auth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Auth] (val x: Self) extends AnyVal {
     
     inline def setDecode(value: String => User): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     

@@ -1066,7 +1066,8 @@ object AccentHeight {
     __obj.asInstanceOf[AccentHeight]
   }
   
-  extension [Self <: AccentHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccentHeight] (val x: Self) extends AnyVal {
     
     inline def setAccentHeight(value: String | Double): Self = StObject.set(x, "accentHeight", value.asInstanceOf[js.Any])
     

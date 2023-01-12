@@ -53,7 +53,8 @@ object ConnectDirectoryRequest {
     __obj.asInstanceOf[ConnectDirectoryRequest]
   }
   
-  extension [Self <: ConnectDirectoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectDirectoryRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectSettings(value: DirectoryConnectSettings): Self = StObject.set(x, "ConnectSettings", value.asInstanceOf[js.Any])
     

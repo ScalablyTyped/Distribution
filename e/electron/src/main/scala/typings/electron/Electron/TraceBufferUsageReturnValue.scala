@@ -17,7 +17,8 @@ object TraceBufferUsageReturnValue {
     __obj.asInstanceOf[TraceBufferUsageReturnValue]
   }
   
-  extension [Self <: TraceBufferUsageReturnValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TraceBufferUsageReturnValue] (val x: Self) extends AnyVal {
     
     inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
     

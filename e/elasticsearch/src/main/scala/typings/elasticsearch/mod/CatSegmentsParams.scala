@@ -25,7 +25,8 @@ object CatSegmentsParams {
     __obj.asInstanceOf[CatSegmentsParams]
   }
   
-  extension [Self <: CatSegmentsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatSegmentsParams] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object DelayPressOut {
     __obj.asInstanceOf[DelayPressOut]
   }
   
-  extension [Self <: DelayPressOut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DelayPressOut] (val x: Self) extends AnyVal {
     
     inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     

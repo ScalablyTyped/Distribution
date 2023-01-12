@@ -18,7 +18,8 @@ object IRemoveDocumentOptions {
     __obj.asInstanceOf[IRemoveDocumentOptions]
   }
   
-  extension [Self <: IRemoveDocumentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRemoveDocumentOptions] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: IQueryCondition): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

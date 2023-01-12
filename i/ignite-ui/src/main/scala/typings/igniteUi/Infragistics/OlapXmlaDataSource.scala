@@ -367,7 +367,8 @@ object OlapXmlaDataSource {
     __obj.asInstanceOf[OlapXmlaDataSource]
   }
   
-  extension [Self <: OlapXmlaDataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlapXmlaDataSource] (val x: Self) extends AnyVal {
     
     inline def setAddColumnItem(value: js.Object => Unit): Self = StObject.set(x, "addColumnItem", js.Any.fromFunction1(value))
     

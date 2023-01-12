@@ -44,7 +44,8 @@ object StructuredQuery {
     __obj.asInstanceOf[StructuredQuery]
   }
   
-  extension [Self <: StructuredQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructuredQuery] (val x: Self) extends AnyVal {
     
     inline def setEndAt(value: Cursor): Self = StObject.set(x, "endAt", value.asInstanceOf[js.Any])
     

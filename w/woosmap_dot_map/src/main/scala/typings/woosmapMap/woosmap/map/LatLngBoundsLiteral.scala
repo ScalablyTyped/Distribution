@@ -21,7 +21,8 @@ object LatLngBoundsLiteral {
     __obj.asInstanceOf[LatLngBoundsLiteral]
   }
   
-  extension [Self <: LatLngBoundsLiteral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LatLngBoundsLiteral] (val x: Self) extends AnyVal {
     
     inline def setEast(value: Double): Self = StObject.set(x, "east", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object InternalDeviceSourceManager {
     __obj.asInstanceOf[InternalDeviceSourceManager]
   }
   
-  extension [Self <: InternalDeviceSourceManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InternalDeviceSourceManager] (val x: Self) extends AnyVal {
     
     inline def setRegisterManager(value: IObservableManager => Unit): Self = StObject.set(x, "registerManager", js.Any.fromFunction1(value))
     

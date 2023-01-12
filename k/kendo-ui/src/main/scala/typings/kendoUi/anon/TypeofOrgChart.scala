@@ -20,7 +20,8 @@ object TypeofOrgChart {
     __obj.asInstanceOf[TypeofOrgChart]
   }
   
-  extension [Self <: TypeofOrgChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofOrgChart] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => OrgChart): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

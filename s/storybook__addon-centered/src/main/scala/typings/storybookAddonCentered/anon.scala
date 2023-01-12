@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[AlignItems]
     }
     
-    extension [Self <: AlignItems](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlignItems] (val x: Self) extends AnyVal {
       
       inline def setAlignItems(value: center): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Margin]
     }
     
-    extension [Self <: Margin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Margin] (val x: Self) extends AnyVal {
       
       inline def setMargin(value: auto): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
@@ -1029,7 +1031,8 @@ object anon {
       __obj.asInstanceOf[PartialCSSStyleDeclaratio]
     }
     
-    extension [Self <: PartialCSSStyleDeclaratio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialCSSStyleDeclaratio] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       

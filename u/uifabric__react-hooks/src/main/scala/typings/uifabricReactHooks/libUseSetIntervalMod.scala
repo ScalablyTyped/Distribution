@@ -25,7 +25,8 @@ object libUseSetIntervalMod {
       __obj.asInstanceOf[UseSetIntervalReturnType]
     }
     
-    extension [Self <: UseSetIntervalReturnType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseSetIntervalReturnType] (val x: Self) extends AnyVal {
       
       inline def setClearInterval(value: Double => Unit): Self = StObject.set(x, "clearInterval", js.Any.fromFunction1(value))
       

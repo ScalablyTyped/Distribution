@@ -106,7 +106,8 @@ object NotificationConstructorOptions {
     __obj.asInstanceOf[NotificationConstructorOptions]
   }
   
-  extension [Self <: NotificationConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[NotificationAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object DataBreakpointInfoArguments {
     __obj.asInstanceOf[DataBreakpointInfoArguments]
   }
   
-  extension [Self <: DataBreakpointInfoArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataBreakpointInfoArguments] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

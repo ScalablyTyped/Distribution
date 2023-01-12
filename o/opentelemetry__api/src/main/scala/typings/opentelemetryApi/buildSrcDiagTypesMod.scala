@@ -79,7 +79,8 @@ object buildSrcDiagTypesMod {
       __obj.asInstanceOf[ComponentLoggerOptions]
     }
     
-    extension [Self <: ComponentLoggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentLoggerOptions] (val x: Self) extends AnyVal {
       
       inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     }
@@ -172,7 +173,8 @@ object buildSrcDiagTypesMod {
       __obj.asInstanceOf[DiagLogger]
     }
     
-    extension [Self <: DiagLogger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiagLogger] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: DiagLogFunction): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -223,7 +225,8 @@ object buildSrcDiagTypesMod {
       __obj.asInstanceOf[LoggerOptions]
     }
     
-    extension [Self <: LoggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggerOptions] (val x: Self) extends AnyVal {
       
       inline def setLogLevel(value: DiagLogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       

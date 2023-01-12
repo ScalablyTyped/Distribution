@@ -27,7 +27,8 @@ object ColorSizeSliderViewModelStopInfo {
     __obj.asInstanceOf[ColorSizeSliderViewModelStopInfo]
   }
   
-  extension [Self <: ColorSizeSliderViewModelStopInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorSizeSliderViewModelStopInfo] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

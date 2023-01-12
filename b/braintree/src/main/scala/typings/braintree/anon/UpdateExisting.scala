@@ -15,7 +15,8 @@ object UpdateExisting {
     __obj.asInstanceOf[UpdateExisting]
   }
   
-  extension [Self <: UpdateExisting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateExisting] (val x: Self) extends AnyVal {
     
     inline def setUpdateExisting(value: Boolean): Self = StObject.set(x, "updateExisting", value.asInstanceOf[js.Any])
     

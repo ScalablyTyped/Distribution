@@ -23,7 +23,8 @@ object TGWOnDeviceServiceConfiguration {
     __obj.asInstanceOf[TGWOnDeviceServiceConfiguration]
   }
   
-  extension [Self <: TGWOnDeviceServiceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TGWOnDeviceServiceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setStorageLimit(value: StorageLimit): Self = StObject.set(x, "StorageLimit", value.asInstanceOf[js.Any])
     

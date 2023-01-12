@@ -23,7 +23,8 @@ object ConceptsResult {
     __obj.asInstanceOf[ConceptsResult]
   }
   
-  extension [Self <: ConceptsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConceptsResult] (val x: Self) extends AnyVal {
     
     inline def setDbpedia_resource(value: String): Self = StObject.set(x, "dbpedia_resource", value.asInstanceOf[js.Any])
     

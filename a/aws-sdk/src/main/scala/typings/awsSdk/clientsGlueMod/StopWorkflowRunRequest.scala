@@ -23,7 +23,8 @@ object StopWorkflowRunRequest {
     __obj.asInstanceOf[StopWorkflowRunRequest]
   }
   
-  extension [Self <: StopWorkflowRunRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopWorkflowRunRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

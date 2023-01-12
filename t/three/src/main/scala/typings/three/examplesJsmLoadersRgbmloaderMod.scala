@@ -99,7 +99,8 @@ object examplesJsmLoadersRgbmloaderMod {
       __obj.asInstanceOf[RGBM]
     }
     
-    extension [Self <: RGBM](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RGBM] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Uint16Array | js.typedarray.Float32Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

@@ -78,7 +78,8 @@ object Dictkey {
     __obj.asInstanceOf[Dictkey]
   }
   
-  extension [Self <: Dictkey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: /* node */ DOMNode => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
     

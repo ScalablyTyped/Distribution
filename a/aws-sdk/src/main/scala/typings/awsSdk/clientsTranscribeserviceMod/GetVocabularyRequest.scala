@@ -18,7 +18,8 @@ object GetVocabularyRequest {
     __obj.asInstanceOf[GetVocabularyRequest]
   }
   
-  extension [Self <: GetVocabularyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVocabularyRequest] (val x: Self) extends AnyVal {
     
     inline def setVocabularyName(value: VocabularyName): Self = StObject.set(x, "VocabularyName", value.asInstanceOf[js.Any])
   }

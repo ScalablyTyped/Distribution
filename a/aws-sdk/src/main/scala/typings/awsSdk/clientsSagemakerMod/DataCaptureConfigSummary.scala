@@ -44,7 +44,8 @@ object DataCaptureConfigSummary {
     __obj.asInstanceOf[DataCaptureConfigSummary]
   }
   
-  extension [Self <: DataCaptureConfigSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataCaptureConfigSummary] (val x: Self) extends AnyVal {
     
     inline def setCaptureStatus(value: CaptureStatus): Self = StObject.set(x, "CaptureStatus", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[HashChange]
     }
     
-    extension [Self <: HashChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashChange] (val x: Self) extends AnyVal {
       
       inline def setHashChange(value: Any): Self = StObject.set(x, "hashChange", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object TypeConfigurationIdentifier {
     __obj.asInstanceOf[TypeConfigurationIdentifier]
   }
   
-  extension [Self <: TypeConfigurationIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeConfigurationIdentifier] (val x: Self) extends AnyVal {
     
     inline def setType(value: ThirdPartyType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

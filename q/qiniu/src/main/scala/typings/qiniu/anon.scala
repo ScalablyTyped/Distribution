@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Accesskey]
     }
     
-    extension [Self <: Accesskey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accesskey] (val x: Self) extends AnyVal {
       
       inline def setAccess_key(value: String): Self = StObject.set(x, "access_key", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object anon {
       __obj.asInstanceOf[Allowedheader]
     }
     
-    extension [Self <: Allowedheader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Allowedheader] (val x: Self) extends AnyVal {
       
       inline def setAllowed_header(value: js.Array[String]): Self = StObject.set(x, "allowed_header", value.asInstanceOf[js.Any])
       
@@ -135,7 +137,8 @@ object anon {
       __obj.asInstanceOf[CallbackUrl]
     }
     
-    extension [Self <: CallbackUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackUrl] (val x: Self) extends AnyVal {
       
       inline def setAccess_key(value: String): Self = StObject.set(x, "access_key", value.asInstanceOf[js.Any])
       
@@ -188,7 +191,8 @@ object anon {
       __obj.asInstanceOf[Cond]
     }
     
-    extension [Self <: Cond](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cond] (val x: Self) extends AnyVal {
       
       inline def setCond(value: Fsize): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
       
@@ -225,7 +229,8 @@ object anon {
       __obj.asInstanceOf[Connection]
     }
     
-    extension [Self <: Connection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: String): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
       
@@ -252,7 +257,8 @@ object anon {
       __obj.asInstanceOf[Content]
     }
     
-    extension [Self <: Content](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -289,7 +295,8 @@ object anon {
       __obj.asInstanceOf[Deleteafterdays]
     }
     
-    extension [Self <: Deleteafterdays](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Deleteafterdays] (val x: Self) extends AnyVal {
       
       inline def setDelete_after_days(value: Double): Self = StObject.set(x, "delete_after_days", value.asInstanceOf[js.Any])
       
@@ -334,7 +341,8 @@ object anon {
       __obj.asInstanceOf[Force]
     }
     
-    extension [Self <: Force](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Force] (val x: Self) extends AnyVal {
       
       inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
@@ -359,7 +367,8 @@ object anon {
       __obj.asInstanceOf[Fsize]
     }
     
-    extension [Self <: Fsize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fsize] (val x: Self) extends AnyVal {
       
       inline def setFsize(value: Double): Self = StObject.set(x, "fsize", value.asInstanceOf[js.Any])
       
@@ -394,7 +403,8 @@ object anon {
       __obj.asInstanceOf[Mobile]
     }
     
-    extension [Self <: Mobile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mobile] (val x: Self) extends AnyVal {
       
       inline def setMobile(value: String): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
       
@@ -421,7 +431,8 @@ object anon {
       __obj.asInstanceOf[Mobiles]
     }
     
-    extension [Self <: Mobiles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mobiles] (val x: Self) extends AnyVal {
       
       inline def setMobiles(value: js.Array[String]): Self = StObject.set(x, "mobiles", value.asInstanceOf[js.Any])
       

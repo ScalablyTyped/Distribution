@@ -23,7 +23,8 @@ object ListBucketIntelligentTieringConfigurationsRequest {
     __obj.asInstanceOf[ListBucketIntelligentTieringConfigurationsRequest]
   }
   
-  extension [Self <: ListBucketIntelligentTieringConfigurationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBucketIntelligentTieringConfigurationsRequest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

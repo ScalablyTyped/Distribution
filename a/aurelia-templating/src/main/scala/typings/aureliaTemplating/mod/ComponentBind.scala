@@ -21,7 +21,8 @@ object ComponentBind {
     __obj.asInstanceOf[ComponentBind]
   }
   
-  extension [Self <: ComponentBind](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentBind] (val x: Self) extends AnyVal {
     
     inline def setBind(value: (Any, Any) => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
   }

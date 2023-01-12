@@ -18,7 +18,8 @@ object UpdateDeviceCertificateParams {
     __obj.asInstanceOf[UpdateDeviceCertificateParams]
   }
   
-  extension [Self <: UpdateDeviceCertificateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDeviceCertificateParams] (val x: Self) extends AnyVal {
     
     inline def setAction(value: DeviceCertificateUpdateAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }

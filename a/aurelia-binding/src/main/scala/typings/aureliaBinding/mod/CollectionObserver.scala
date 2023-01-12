@@ -20,7 +20,8 @@ object CollectionObserver {
     __obj.asInstanceOf[CollectionObserver]
   }
   
-  extension [Self <: CollectionObserver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionObserver] (val x: Self) extends AnyVal {
     
     inline def setSubscribe(
       value: js.Function1[/* changeRecords */ js.Array[ICollectionObserverSplice[Any, Any]], Unit] => Disposable

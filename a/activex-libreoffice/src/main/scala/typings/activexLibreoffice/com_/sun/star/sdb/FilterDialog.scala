@@ -35,7 +35,8 @@ object FilterDialog {
     __obj.asInstanceOf[FilterDialog]
   }
   
-  extension [Self <: FilterDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterDialog] (val x: Self) extends AnyVal {
     
     inline def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
     

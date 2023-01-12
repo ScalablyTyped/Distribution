@@ -52,7 +52,8 @@ object IToolbar {
     __obj.asInstanceOf[IToolbar]
   }
   
-  extension [Self <: IToolbar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IToolbar] (val x: Self) extends AnyVal {
     
     inline def setGetLayout(value: () => Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
     

@@ -18,7 +18,8 @@ object AWSManagedRulesBotControlRuleSet {
     __obj.asInstanceOf[AWSManagedRulesBotControlRuleSet]
   }
   
-  extension [Self <: AWSManagedRulesBotControlRuleSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AWSManagedRulesBotControlRuleSet] (val x: Self) extends AnyVal {
     
     inline def setInspectionLevel(value: InspectionLevel): Self = StObject.set(x, "InspectionLevel", value.asInstanceOf[js.Any])
   }

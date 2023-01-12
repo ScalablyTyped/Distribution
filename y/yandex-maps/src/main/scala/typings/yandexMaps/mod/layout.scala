@@ -73,7 +73,8 @@ object layout {
       __obj.asInstanceOf[IImageOptionsWithIconPrefix]
     }
     
-    extension [Self <: IImageOptionsWithIconPrefix](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IImageOptionsWithIconPrefix] (val x: Self) extends AnyVal {
       
       inline def setIconImageClipRect(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "iconImageClipRect", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object layout {
       __obj.asInstanceOf[IImageWithContentOptionsWithIconPrefix]
     }
     
-    extension [Self <: IImageWithContentOptionsWithIconPrefix](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IImageWithContentOptionsWithIconPrefix] (val x: Self) extends AnyVal {
       
       inline def setIconContentLayout(value: IClassConstructor[ILayout] | String): Self = StObject.set(x, "iconContentLayout", value.asInstanceOf[js.Any])
       
@@ -161,7 +163,8 @@ object layout {
       __obj.asInstanceOf[IPieChartOptionsWithIconPrefix]
     }
     
-    extension [Self <: IPieChartOptionsWithIconPrefix](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPieChartOptionsWithIconPrefix] (val x: Self) extends AnyVal {
       
       inline def setIconPieChartCaptionMaxWidth(value: Double): Self = StObject.set(x, "iconPieChartCaptionMaxWidth", value.asInstanceOf[js.Any])
       

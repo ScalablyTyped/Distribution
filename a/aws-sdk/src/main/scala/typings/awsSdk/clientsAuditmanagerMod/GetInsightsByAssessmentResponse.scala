@@ -18,7 +18,8 @@ object GetInsightsByAssessmentResponse {
     __obj.asInstanceOf[GetInsightsByAssessmentResponse]
   }
   
-  extension [Self <: GetInsightsByAssessmentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInsightsByAssessmentResponse] (val x: Self) extends AnyVal {
     
     inline def setInsights(value: InsightsByAssessment): Self = StObject.set(x, "insights", value.asInstanceOf[js.Any])
     

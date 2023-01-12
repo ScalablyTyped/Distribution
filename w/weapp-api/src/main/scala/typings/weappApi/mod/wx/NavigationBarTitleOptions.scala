@@ -18,7 +18,8 @@ object NavigationBarTitleOptions {
     __obj.asInstanceOf[NavigationBarTitleOptions]
   }
   
-  extension [Self <: NavigationBarTitleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationBarTitleOptions] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }

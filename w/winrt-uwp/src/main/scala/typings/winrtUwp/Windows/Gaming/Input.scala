@@ -213,7 +213,8 @@ object Input {
       __obj.asInstanceOf[GamepadReading]
     }
     
-    extension [Self <: GamepadReading](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GamepadReading] (val x: Self) extends AnyVal {
       
       inline def setButtons(value: GamepadButtons): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
@@ -255,7 +256,8 @@ object Input {
       __obj.asInstanceOf[GamepadVibration]
     }
     
-    extension [Self <: GamepadVibration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GamepadVibration] (val x: Self) extends AnyVal {
       
       inline def setLeftMotor(value: Double): Self = StObject.set(x, "leftMotor", value.asInstanceOf[js.Any])
       
@@ -283,7 +285,8 @@ object Input {
       __obj.asInstanceOf[Headset]
     }
     
-    extension [Self <: Headset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Headset] (val x: Self) extends AnyVal {
       
       inline def setCaptureDeviceId(value: String): Self = StObject.set(x, "captureDeviceId", value.asInstanceOf[js.Any])
       
@@ -310,7 +313,8 @@ object Input {
       __obj.asInstanceOf[IGameController]
     }
     
-    extension [Self <: IGameController](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGameController] (val x: Self) extends AnyVal {
       
       inline def setHeadset(value: Headset): Self = StObject.set(x, "headset", value.asInstanceOf[js.Any])
       

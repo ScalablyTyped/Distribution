@@ -23,7 +23,8 @@ object GroupFilter {
     __obj.asInstanceOf[GroupFilter]
   }
   
-  extension [Self <: GroupFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: GroupFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

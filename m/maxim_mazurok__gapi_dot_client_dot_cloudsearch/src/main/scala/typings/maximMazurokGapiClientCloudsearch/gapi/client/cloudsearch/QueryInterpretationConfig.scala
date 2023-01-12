@@ -27,7 +27,8 @@ object QueryInterpretationConfig {
     __obj.asInstanceOf[QueryInterpretationConfig]
   }
   
-  extension [Self <: QueryInterpretationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryInterpretationConfig] (val x: Self) extends AnyVal {
     
     inline def setForceDisableSupplementalResults(value: Boolean): Self = StObject.set(x, "forceDisableSupplementalResults", value.asInstanceOf[js.Any])
     

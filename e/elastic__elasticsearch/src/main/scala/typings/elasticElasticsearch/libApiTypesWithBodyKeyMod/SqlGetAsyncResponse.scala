@@ -25,7 +25,8 @@ object SqlGetAsyncResponse {
     __obj.asInstanceOf[SqlGetAsyncResponse]
   }
   
-  extension [Self <: SqlGetAsyncResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlGetAsyncResponse] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: js.Array[SqlColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

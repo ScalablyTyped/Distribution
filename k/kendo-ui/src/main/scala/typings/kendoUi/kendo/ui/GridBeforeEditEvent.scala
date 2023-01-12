@@ -18,7 +18,8 @@ object GridBeforeEditEvent {
     __obj.asInstanceOf[GridBeforeEditEvent]
   }
   
-  extension [Self <: GridBeforeEditEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridBeforeEditEvent] (val x: Self) extends AnyVal {
     
     inline def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     

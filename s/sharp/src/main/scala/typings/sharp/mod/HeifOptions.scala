@@ -29,7 +29,8 @@ object HeifOptions {
     __obj.asInstanceOf[HeifOptions]
   }
   
-  extension [Self <: HeifOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeifOptions] (val x: Self) extends AnyVal {
     
     inline def setCompression(value: av1 | hevc): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     

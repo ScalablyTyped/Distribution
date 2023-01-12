@@ -24,7 +24,8 @@ object WatchSellTradeResponse {
     __obj.asInstanceOf[WatchSellTradeResponse]
   }
   
-  extension [Self <: WatchSellTradeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchSellTradeResponse] (val x: Self) extends AnyVal {
     
     inline def setDestinationAddress(value: String): Self = StObject.set(x, "destinationAddress", value.asInstanceOf[js.Any])
     

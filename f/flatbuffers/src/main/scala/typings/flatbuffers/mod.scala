@@ -538,7 +538,8 @@ object mod {
           __obj.asInstanceOf[Table]
         }
         
-        extension [Self <: Table](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
           
           inline def setBb(value: ByteBuffer): Self = StObject.set(x, "bb", value.asInstanceOf[js.Any])
           

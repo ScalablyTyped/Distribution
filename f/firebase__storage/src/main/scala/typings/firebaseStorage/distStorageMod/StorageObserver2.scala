@@ -33,7 +33,8 @@ object StorageObserver2 {
     __obj.asInstanceOf[StorageObserver2[T]]
   }
   
-  extension [Self <: StorageObserver2[?], T](x: Self & StorageObserver2[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageObserver2[?], T] (val x: Self & StorageObserver2[T]) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

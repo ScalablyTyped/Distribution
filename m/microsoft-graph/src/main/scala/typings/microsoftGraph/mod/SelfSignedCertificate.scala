@@ -31,7 +31,8 @@ object SelfSignedCertificate {
     __obj.asInstanceOf[SelfSignedCertificate]
   }
   
-  extension [Self <: SelfSignedCertificate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelfSignedCertificate] (val x: Self) extends AnyVal {
     
     inline def setCustomKeyIdentifier(value: NullableOption[String]): Self = StObject.set(x, "customKeyIdentifier", value.asInstanceOf[js.Any])
     

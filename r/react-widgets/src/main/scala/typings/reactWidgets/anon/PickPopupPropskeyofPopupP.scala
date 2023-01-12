@@ -49,7 +49,8 @@ object PickPopupPropskeyofPopupP {
     __obj.asInstanceOf[PickPopupPropskeyofPopupP]
   }
   
-  extension [Self <: PickPopupPropskeyofPopupP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickPopupPropskeyofPopupP] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

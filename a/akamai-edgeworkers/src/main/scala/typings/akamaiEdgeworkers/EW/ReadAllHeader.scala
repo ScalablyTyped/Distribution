@@ -15,7 +15,8 @@ object ReadAllHeader {
     __obj.asInstanceOf[ReadAllHeader]
   }
   
-  extension [Self <: ReadAllHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadAllHeader] (val x: Self) extends AnyVal {
     
     inline def setGetHeaders(value: () => Headers): Self = StObject.set(x, "getHeaders", js.Any.fromFunction0(value))
   }

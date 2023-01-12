@@ -49,7 +49,8 @@ object typesMediaContainerMod {
       __obj.asInstanceOf[MediaContainerProps]
     }
     
-    extension [Self <: MediaContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaContainerProps] (val x: Self) extends AnyVal {
       
       inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object typesMediaContainerMod {
       __obj.asInstanceOf[MediaContainerWithAspectRatioProps]
     }
     
-    extension [Self <: MediaContainerWithAspectRatioProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaContainerWithAspectRatioProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object AdjustOption {
     __obj.asInstanceOf[AdjustOption]
   }
   
-  extension [Self <: AdjustOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdjustOption] (val x: Self) extends AnyVal {
     
     inline def setDodgeBy(value: String): Self = StObject.set(x, "dodgeBy", value.asInstanceOf[js.Any])
     

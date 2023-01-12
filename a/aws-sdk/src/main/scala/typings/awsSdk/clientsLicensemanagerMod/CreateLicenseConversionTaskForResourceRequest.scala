@@ -32,7 +32,8 @@ object CreateLicenseConversionTaskForResourceRequest {
     __obj.asInstanceOf[CreateLicenseConversionTaskForResourceRequest]
   }
   
-  extension [Self <: CreateLicenseConversionTaskForResourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLicenseConversionTaskForResourceRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationLicenseContext(value: LicenseConversionContext): Self = StObject.set(x, "DestinationLicenseContext", value.asInstanceOf[js.Any])
     

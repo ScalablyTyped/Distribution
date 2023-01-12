@@ -82,7 +82,8 @@ object libActionHeaderMod extends Shortcut {
       __obj.asInstanceOf[ActionHeaderProps]
     }
     
-    extension [Self <: ActionHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       

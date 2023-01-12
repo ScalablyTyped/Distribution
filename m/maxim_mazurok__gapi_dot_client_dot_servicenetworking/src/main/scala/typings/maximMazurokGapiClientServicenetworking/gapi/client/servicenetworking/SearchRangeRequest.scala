@@ -25,7 +25,8 @@ object SearchRangeRequest {
     __obj.asInstanceOf[SearchRangeRequest]
   }
   
-  extension [Self <: SearchRangeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchRangeRequest] (val x: Self) extends AnyVal {
     
     inline def setIpPrefixLength(value: Double): Self = StObject.set(x, "ipPrefixLength", value.asInstanceOf[js.Any])
     

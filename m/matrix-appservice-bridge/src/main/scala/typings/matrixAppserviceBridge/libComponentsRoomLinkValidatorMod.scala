@@ -83,7 +83,8 @@ object libComponentsRoomLinkValidatorMod {
       __obj.asInstanceOf[Rules]
     }
     
-    extension [Self <: Rules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rules] (val x: Self) extends AnyVal {
       
       inline def setUserIds(value: Conflict): Self = StObject.set(x, "userIds", value.asInstanceOf[js.Any])
     }

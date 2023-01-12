@@ -36,7 +36,8 @@ object TemplateOverrides {
     __obj.asInstanceOf[TemplateOverrides]
   }
   
-  extension [Self <: TemplateOverrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateOverrides] (val x: Self) extends AnyVal {
     
     inline def setBody(value: RenderCallback | String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     

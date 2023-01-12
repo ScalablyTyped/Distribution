@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[AppenderOptions]
     }
     
-    extension [Self <: AppenderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppenderOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowDuplicateSections(value: Boolean): Self = StObject.set(x, "allowDuplicateSections", value.asInstanceOf[js.Any])
     }
@@ -50,7 +51,8 @@ object mod {
       __obj.asInstanceOf[FullOptions]
     }
     
-    extension [Self <: FullOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullOptions] (val x: Self) extends AnyVal {
       
       inline def setAppender(value: AppenderOptions): Self = StObject.set(x, "appender", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object mod {
       __obj.asInstanceOf[WriterOptions]
     }
     
-    extension [Self <: WriterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriterOptions] (val x: Self) extends AnyVal {
       
       inline def setSaveSections(value: Boolean): Self = StObject.set(x, "saveSections", value.asInstanceOf[js.Any])
     }

@@ -25,7 +25,8 @@ object JitterEffect {
     __obj.asInstanceOf[JitterEffect]
   }
   
-  extension [Self <: JitterEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JitterEffect] (val x: Self) extends AnyVal {
     
     inline def setJitterX(value: Double): Self = StObject.set(x, "jitterX", value.asInstanceOf[js.Any])
     

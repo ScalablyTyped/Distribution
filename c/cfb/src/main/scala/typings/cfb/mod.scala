@@ -122,7 +122,8 @@ object mod {
       __obj.asInstanceOf[CFBAddOpts]
     }
     
-    extension [Self <: CFBAddOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CFBAddOpts] (val x: Self) extends AnyVal {
       
       inline def setUnsafe(value: Boolean): Self = StObject.set(x, "unsafe", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object mod {
       __obj.asInstanceOf[CFBCommonOptions]
     }
     
-    extension [Self <: CFBCommonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CFBCommonOptions] (val x: Self) extends AnyVal {
       
       inline def setType(value: base64 | binary | buffer | file | array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -177,7 +179,8 @@ object mod {
       __obj.asInstanceOf[CFBContainer]
     }
     
-    extension [Self <: CFBContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CFBContainer] (val x: Self) extends AnyVal {
       
       inline def setFileIndex(value: js.Array[CFBEntry]): Self = StObject.set(x, "FileIndex", value.asInstanceOf[js.Any])
       
@@ -248,7 +251,8 @@ object mod {
       __obj.asInstanceOf[CFBEntry]
     }
     
-    extension [Self <: CFBEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CFBEntry] (val x: Self) extends AnyVal {
       
       inline def setClsid(value: String): Self = StObject.set(x, "clsid", value.asInstanceOf[js.Any])
       
@@ -300,7 +304,8 @@ object mod {
       __obj.asInstanceOf[CFBParsingOptions]
     }
     
-    extension [Self <: CFBParsingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CFBParsingOptions] (val x: Self) extends AnyVal {
       
       inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
@@ -358,7 +363,8 @@ object mod {
       __obj.asInstanceOf[CFBWritingOptions]
     }
     
-    extension [Self <: CFBWritingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CFBWritingOptions] (val x: Self) extends AnyVal {
       
       inline def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       

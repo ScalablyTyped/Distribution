@@ -36,7 +36,8 @@ object SwitchPropsIOS {
     __obj.asInstanceOf[SwitchPropsIOS]
   }
   
-  extension [Self <: SwitchPropsIOS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwitchPropsIOS] (val x: Self) extends AnyVal {
     
     inline def setOnTintColor(value: ColorValue): Self = StObject.set(x, "onTintColor", value.asInstanceOf[js.Any])
     

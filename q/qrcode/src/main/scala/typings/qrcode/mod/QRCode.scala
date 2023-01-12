@@ -43,7 +43,8 @@ object QRCode {
     __obj.asInstanceOf[QRCode]
   }
   
-  extension [Self <: QRCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QRCode] (val x: Self) extends AnyVal {
     
     inline def setErrorCorrectionLevel(value: ErrorCorrectionLevel): Self = StObject.set(x, "errorCorrectionLevel", value.asInstanceOf[js.Any])
     

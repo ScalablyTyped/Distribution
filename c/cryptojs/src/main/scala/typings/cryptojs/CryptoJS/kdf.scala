@@ -27,7 +27,8 @@ object kdf {
       __obj.asInstanceOf[KdfStatic]
     }
     
-    extension [Self <: KdfStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KdfStatic] (val x: Self) extends AnyVal {
       
       inline def setOpenSSL(value: IKdfImpl): Self = StObject.set(x, "OpenSSL", value.asInstanceOf[js.Any])
     }

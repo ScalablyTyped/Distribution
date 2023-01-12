@@ -42,7 +42,8 @@ object builtConnectorsSentinelConnectorMod {
       __obj.asInstanceOf[AddressFromResponse]
     }
     
-    extension [Self <: AddressFromResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddressFromResponse] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object builtConnectorsSentinelConnectorMod {
       __obj.asInstanceOf[SentinelConnectionOptions]
     }
     
-    extension [Self <: SentinelConnectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SentinelConnectionOptions] (val x: Self) extends AnyVal {
       
       inline def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
       

@@ -155,7 +155,8 @@ object RadioGroup {
     __obj.asInstanceOf[RadioGroup]
   }
   
-  extension [Self <: RadioGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadioGroup] (val x: Self) extends AnyVal {
     
     inline def setConditionalParentLabel(value: String): Self = StObject.set(x, "conditionalParentLabel", value.asInstanceOf[js.Any])
     

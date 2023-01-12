@@ -48,7 +48,8 @@ object GroupType {
     __obj.asInstanceOf[GroupType]
   }
   
-  extension [Self <: GroupType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupType] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     

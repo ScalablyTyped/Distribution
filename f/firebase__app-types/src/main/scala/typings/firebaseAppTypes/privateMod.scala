@@ -55,7 +55,8 @@ object privateMod {
       __obj.asInstanceOf[FirebaseAuthTokenData]
     }
     
-    extension [Self <: FirebaseAuthTokenData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseAuthTokenData] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     }
@@ -82,7 +83,8 @@ object privateMod {
       __obj.asInstanceOf[FirebaseService]
     }
     
-    extension [Self <: FirebaseService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseService] (val x: Self) extends AnyVal {
       
       inline def setApp(value: typings.firebaseAppTypes.mod.FirebaseApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -114,7 +116,8 @@ object privateMod {
       __obj.asInstanceOf[FirebaseServiceInternals]
     }
     
-    extension [Self <: FirebaseServiceInternals](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseServiceInternals] (val x: Self) extends AnyVal {
       
       inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
     }
@@ -133,7 +136,8 @@ object privateMod {
       __obj.asInstanceOf[PlatformLoggerService]
     }
     
-    extension [Self <: PlatformLoggerService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlatformLoggerService] (val x: Self) extends AnyVal {
       
       inline def setGetPlatformInfoString(value: () => String): Self = StObject.set(x, "getPlatformInfoString", js.Any.fromFunction0(value))
     }
@@ -154,7 +158,8 @@ object privateMod {
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      extension [Self <: NameServiceMapping](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
         
         inline def `setPlatform-logger`(value: PlatformLoggerService): Self = StObject.set(x, "platform-logger", value.asInstanceOf[js.Any])
       }

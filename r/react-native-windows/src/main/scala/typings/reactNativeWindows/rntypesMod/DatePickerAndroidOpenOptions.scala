@@ -24,7 +24,8 @@ object DatePickerAndroidOpenOptions {
     __obj.asInstanceOf[DatePickerAndroidOpenOptions]
   }
   
-  extension [Self <: DatePickerAndroidOpenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatePickerAndroidOpenOptions] (val x: Self) extends AnyVal {
     
     inline def setDate(value: js.Date | Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

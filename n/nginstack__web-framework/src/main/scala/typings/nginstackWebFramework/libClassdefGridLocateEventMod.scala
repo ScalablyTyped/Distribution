@@ -67,7 +67,8 @@ object libClassdefGridLocateEventMod {
       __obj.asInstanceOf[GridLocateEvent]
     }
     
-    extension [Self <: GridLocateEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridLocateEvent] (val x: Self) extends AnyVal {
       
       inline def setFound(value: Boolean): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
       

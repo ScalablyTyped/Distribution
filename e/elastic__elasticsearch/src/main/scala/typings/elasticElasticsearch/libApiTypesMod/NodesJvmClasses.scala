@@ -19,7 +19,8 @@ object NodesJvmClasses {
     __obj.asInstanceOf[NodesJvmClasses]
   }
   
-  extension [Self <: NodesJvmClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesJvmClasses] (val x: Self) extends AnyVal {
     
     inline def setCurrent_loaded_count(value: long): Self = StObject.set(x, "current_loaded_count", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object CreateDashboardRequest {
     __obj.asInstanceOf[CreateDashboardRequest]
   }
   
-  extension [Self <: CreateDashboardRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDashboardRequest] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     

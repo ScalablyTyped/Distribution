@@ -45,7 +45,8 @@ object RaphaelMatrixTransformInfo {
     __obj.asInstanceOf[RaphaelMatrixTransformInfo]
   }
   
-  extension [Self <: RaphaelMatrixTransformInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaphaelMatrixTransformInfo] (val x: Self) extends AnyVal {
     
     inline def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     

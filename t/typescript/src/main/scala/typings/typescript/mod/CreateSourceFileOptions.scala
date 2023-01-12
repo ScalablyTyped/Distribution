@@ -31,7 +31,8 @@ object CreateSourceFileOptions {
     __obj.asInstanceOf[CreateSourceFileOptions]
   }
   
-  extension [Self <: CreateSourceFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSourceFileOptions] (val x: Self) extends AnyVal {
     
     inline def setImpliedNodeFormat(value: ESNext | CommonJS): Self = StObject.set(x, "impliedNodeFormat", value.asInstanceOf[js.Any])
     

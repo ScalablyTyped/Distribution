@@ -118,7 +118,8 @@ object EnvironmentDescription {
     __obj.asInstanceOf[EnvironmentDescription]
   }
   
-  extension [Self <: EnvironmentDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentDescription] (val x: Self) extends AnyVal {
     
     inline def setAbortableOperationInProgress(value: AbortableOperationInProgress): Self = StObject.set(x, "AbortableOperationInProgress", value.asInstanceOf[js.Any])
     

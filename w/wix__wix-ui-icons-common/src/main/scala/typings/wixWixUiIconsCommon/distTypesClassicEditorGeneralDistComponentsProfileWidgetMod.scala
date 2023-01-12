@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsProfileWidgetMod extends Short
       __obj.asInstanceOf[ProfileWidgetProps]
     }
     
-    extension [Self <: ProfileWidgetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProfileWidgetProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

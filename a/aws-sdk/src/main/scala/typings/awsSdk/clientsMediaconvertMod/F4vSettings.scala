@@ -18,7 +18,8 @@ object F4vSettings {
     __obj.asInstanceOf[F4vSettings]
   }
   
-  extension [Self <: F4vSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: F4vSettings] (val x: Self) extends AnyVal {
     
     inline def setMoovPlacement(value: F4vMoovPlacement): Self = StObject.set(x, "MoovPlacement", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object BatchDeleteWorldsRequest {
     __obj.asInstanceOf[BatchDeleteWorldsRequest]
   }
   
-  extension [Self <: BatchDeleteWorldsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteWorldsRequest] (val x: Self) extends AnyVal {
     
     inline def setWorlds(value: Arns): Self = StObject.set(x, "worlds", value.asInstanceOf[js.Any])
     

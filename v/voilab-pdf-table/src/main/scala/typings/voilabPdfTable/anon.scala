@@ -58,7 +58,8 @@ object anon {
       __obj.asInstanceOf[Align[T]]
     }
     
-    extension [Self <: Align[?], T](x: Self & Align[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Align[?], T] (val x: Self & Align[T]) extends AnyVal {
       
       inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -135,7 +136,8 @@ object anon {
       __obj.asInstanceOf[Cancel]
     }
     
-    extension [Self <: Cancel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     }
@@ -178,7 +180,8 @@ object anon {
       __obj.asInstanceOf[Header[T]]
     }
     
-    extension [Self <: Header[?], T](x: Self & Header[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Header[?], T] (val x: Self & Header[T]) extends AnyVal {
       
       inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -242,7 +245,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

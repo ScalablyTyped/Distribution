@@ -36,7 +36,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BitsRange]
     }
     
-    extension [Self <: BitsRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitsRange] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ContinuedFractionResult]
     }
     
-    extension [Self <: ContinuedFractionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContinuedFractionResult] (val x: Self) extends AnyVal {
       
       inline def setDenominator(value: Double): Self = StObject.set(x, "denominator", value.asInstanceOf[js.Any])
       
@@ -98,7 +100,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ExternalJSQubitsStatic]
     }
     
-    extension [Self <: ExternalJSQubitsStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExternalJSQubitsStatic] (val x: Self) extends AnyVal {
       
       inline def setJsqubits(value: JSQubitsStatic): Self = StObject.set(x, "jsqubits", value.asInstanceOf[js.Any])
     }
@@ -160,7 +163,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[JsqubitsmathStatic]
     }
     
-    extension [Self <: JsqubitsmathStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsqubitsmathStatic] (val x: Self) extends AnyVal {
       
       inline def setContinuedFraction(value: (Double, Double) => ContinuedFractionResult): Self = StObject.set(x, "continuedFraction", js.Any.fromFunction2(value))
       
@@ -278,7 +282,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Measurement]
       }
       
-      extension [Self <: Measurement](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Measurement] (val x: Self) extends AnyVal {
         
         inline def setAsBitString(value: () => String): Self = StObject.set(x, "asBitString", js.Any.fromFunction0(value))
         
@@ -482,7 +487,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[StateWithAmplitude]
       }
       
-      extension [Self <: StateWithAmplitude](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StateWithAmplitude] (val x: Self) extends AnyVal {
         
         inline def setAmplitude(value: Complex): Self = StObject.set(x, "amplitude", value.asInstanceOf[js.Any])
         

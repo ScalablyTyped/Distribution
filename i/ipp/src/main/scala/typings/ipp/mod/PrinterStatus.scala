@@ -127,7 +127,8 @@ object PrinterStatus {
     __obj.asInstanceOf[PrinterStatus]
   }
   
-  extension [Self <: PrinterStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrinterStatus] (val x: Self) extends AnyVal {
     
     inline def `setChamber-humidity-current`(value: Double): Self = StObject.set(x, "chamber-humidity-current", value.asInstanceOf[js.Any])
     

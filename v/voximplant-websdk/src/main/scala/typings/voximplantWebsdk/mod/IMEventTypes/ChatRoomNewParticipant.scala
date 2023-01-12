@@ -34,7 +34,8 @@ object ChatRoomNewParticipant {
     __obj.asInstanceOf[ChatRoomNewParticipant]
   }
   
-  extension [Self <: ChatRoomNewParticipant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatRoomNewParticipant] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

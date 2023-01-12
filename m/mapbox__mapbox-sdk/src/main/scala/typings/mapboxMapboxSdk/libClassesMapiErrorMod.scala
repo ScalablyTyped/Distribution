@@ -43,7 +43,8 @@ object libClassesMapiErrorMod {
       __obj.asInstanceOf[MapiError[T]]
     }
     
-    extension [Self <: MapiError[?], T](x: Self & MapiError[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapiError[?], T] (val x: Self & MapiError[T]) extends AnyVal {
       
       inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

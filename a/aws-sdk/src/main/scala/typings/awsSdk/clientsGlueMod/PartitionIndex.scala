@@ -23,7 +23,8 @@ object PartitionIndex {
     __obj.asInstanceOf[PartitionIndex]
   }
   
-  extension [Self <: PartitionIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartitionIndex] (val x: Self) extends AnyVal {
     
     inline def setIndexName(value: NameString): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object MarkupContent {
     __obj.asInstanceOf[MarkupContent]
   }
   
-  extension [Self <: MarkupContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkupContent] (val x: Self) extends AnyVal {
     
     inline def setKind(value: MarkupKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

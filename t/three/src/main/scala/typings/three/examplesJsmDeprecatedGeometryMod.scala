@@ -374,7 +374,8 @@ object examplesJsmDeprecatedGeometryMod {
       __obj.asInstanceOf[MorphColor]
     }
     
-    extension [Self <: MorphColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MorphColor] (val x: Self) extends AnyVal {
       
       inline def setColors(value: js.Array[Color]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -397,7 +398,8 @@ object examplesJsmDeprecatedGeometryMod {
       __obj.asInstanceOf[MorphNormals]
     }
     
-    extension [Self <: MorphNormals](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MorphNormals] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -420,7 +422,8 @@ object examplesJsmDeprecatedGeometryMod {
       __obj.asInstanceOf[MorphTarget]
     }
     
-    extension [Self <: MorphTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MorphTarget] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

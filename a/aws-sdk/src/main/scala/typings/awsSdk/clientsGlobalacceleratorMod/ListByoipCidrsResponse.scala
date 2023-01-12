@@ -23,7 +23,8 @@ object ListByoipCidrsResponse {
     __obj.asInstanceOf[ListByoipCidrsResponse]
   }
   
-  extension [Self <: ListByoipCidrsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListByoipCidrsResponse] (val x: Self) extends AnyVal {
     
     inline def setByoipCidrs(value: ByoipCidrs): Self = StObject.set(x, "ByoipCidrs", value.asInstanceOf[js.Any])
     

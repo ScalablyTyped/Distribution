@@ -108,7 +108,8 @@ object mod {
         __obj.asInstanceOf[Document]
       }
       
-      extension [Self <: Document](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
         
         inline def setArrive(
           value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
@@ -204,7 +205,8 @@ object mod {
         __obj.asInstanceOf[Element]
       }
       
-      extension [Self <: Element](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
         
         inline def setArrive(
           value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
@@ -300,7 +302,8 @@ object mod {
         __obj.asInstanceOf[HTMLCollectionBase]
       }
       
-      extension [Self <: HTMLCollectionBase](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HTMLCollectionBase] (val x: Self) extends AnyVal {
         
         inline def setArrive(
           value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
@@ -396,7 +399,8 @@ object mod {
         __obj.asInstanceOf[JQuery]
       }
       
-      extension [Self <: JQuery](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
         
         inline def setArrive(
           value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
@@ -492,7 +496,8 @@ object mod {
         __obj.asInstanceOf[NodeList]
       }
       
-      extension [Self <: NodeList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NodeList] (val x: Self) extends AnyVal {
         
         inline def setArrive(
           value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
@@ -588,7 +593,8 @@ object mod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setArrive(
           value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
@@ -638,7 +644,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setExisting(value: Boolean): Self = StObject.set(x, "existing", value.asInstanceOf[js.Any])
       

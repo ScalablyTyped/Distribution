@@ -116,7 +116,8 @@ object libCommonFormattingMod {
       __obj.asInstanceOf[FormattingMiddleware]
     }
     
-    extension [Self <: FormattingMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormattingMiddleware] (val x: Self) extends AnyVal {
       
       inline def setProvideDocumentFormattingEdits(
         value: js.ThisFunction4[

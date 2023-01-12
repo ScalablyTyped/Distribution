@@ -21,7 +21,8 @@ object AuthenticationMethodTarget {
     __obj.asInstanceOf[AuthenticationMethodTarget]
   }
   
-  extension [Self <: AuthenticationMethodTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticationMethodTarget] (val x: Self) extends AnyVal {
     
     inline def setIsRegistrationRequired(value: Boolean): Self = StObject.set(x, "isRegistrationRequired", value.asInstanceOf[js.Any])
     

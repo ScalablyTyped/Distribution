@@ -175,7 +175,8 @@ object libComponentsFloatingPickerSuggestionsSuggestionsControlMod {
       __obj.asInstanceOf[ISuggestionsControlState[T]]
     }
     
-    extension [Self <: ISuggestionsControlState[?], T](x: Self & ISuggestionsControlState[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISuggestionsControlState[?], T] (val x: Self & ISuggestionsControlState[T]) extends AnyVal {
       
       inline def setSelectedFooterIndex(value: Double): Self = StObject.set(x, "selectedFooterIndex", value.asInstanceOf[js.Any])
       

@@ -35,7 +35,8 @@ object JSONPDataSourceSettings {
     __obj.asInstanceOf[JSONPDataSourceSettings]
   }
   
-  extension [Self <: JSONPDataSourceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONPDataSourceSettings] (val x: Self) extends AnyVal {
     
     inline def setJsonp(value: String | Boolean): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
     

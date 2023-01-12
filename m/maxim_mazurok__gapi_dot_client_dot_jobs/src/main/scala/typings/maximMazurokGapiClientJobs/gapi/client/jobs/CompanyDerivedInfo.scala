@@ -16,7 +16,8 @@ object CompanyDerivedInfo {
     __obj.asInstanceOf[CompanyDerivedInfo]
   }
   
-  extension [Self <: CompanyDerivedInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompanyDerivedInfo] (val x: Self) extends AnyVal {
     
     inline def setHeadquartersLocation(value: Location): Self = StObject.set(x, "headquartersLocation", value.asInstanceOf[js.Any])
     

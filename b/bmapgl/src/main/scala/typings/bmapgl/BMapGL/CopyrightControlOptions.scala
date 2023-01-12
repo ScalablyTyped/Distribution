@@ -17,7 +17,8 @@ object CopyrightControlOptions {
     __obj.asInstanceOf[CopyrightControlOptions]
   }
   
-  extension [Self <: CopyrightControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyrightControlOptions] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: ControlAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object FaultRootCauseEntity {
     __obj.asInstanceOf[FaultRootCauseEntity]
   }
   
-  extension [Self <: FaultRootCauseEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaultRootCauseEntity] (val x: Self) extends AnyVal {
     
     inline def setExceptions(value: RootCauseExceptions): Self = StObject.set(x, "Exceptions", value.asInstanceOf[js.Any])
     

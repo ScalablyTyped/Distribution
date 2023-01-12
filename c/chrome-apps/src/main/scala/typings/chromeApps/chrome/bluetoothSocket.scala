@@ -32,7 +32,8 @@ object bluetoothSocket {
       __obj.asInstanceOf[CreateInfo]
     }
     
-    extension [Self <: CreateInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateInfo] (val x: Self) extends AnyVal {
       
       inline def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
     }
@@ -69,7 +70,8 @@ object bluetoothSocket {
       __obj.asInstanceOf[ListenOptions]
     }
     
-    extension [Self <: ListenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListenOptions] (val x: Self) extends AnyVal {
       
       inline def setBacklog(value: integer): Self = StObject.set(x, "backlog", value.asInstanceOf[js.Any])
       
@@ -124,7 +126,8 @@ object bluetoothSocket {
       __obj.asInstanceOf[OnAcceptErrorEventData]
     }
     
-    extension [Self <: OnAcceptErrorEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnAcceptErrorEventData] (val x: Self) extends AnyVal {
       
       inline def setError(value: OnAcceptErrorCode): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -159,7 +162,8 @@ object bluetoothSocket {
       __obj.asInstanceOf[OnAcceptInfoData]
     }
     
-    extension [Self <: OnAcceptInfoData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnAcceptInfoData] (val x: Self) extends AnyVal {
       
       inline def setClientSocketId(value: integer): Self = StObject.set(x, "clientSocketId", value.asInstanceOf[js.Any])
       
@@ -211,7 +215,8 @@ object bluetoothSocket {
       __obj.asInstanceOf[OnReceiveErrorEventData]
     }
     
-    extension [Self <: OnReceiveErrorEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnReceiveErrorEventData] (val x: Self) extends AnyVal {
       
       inline def setError(value: OnAcceptErrorCode): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -238,7 +243,8 @@ object bluetoothSocket {
       __obj.asInstanceOf[OnReceiveEventData]
     }
     
-    extension [Self <: OnReceiveEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnReceiveEventData] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -311,7 +317,8 @@ object bluetoothSocket {
       __obj.asInstanceOf[SocketInfo]
     }
     
-    extension [Self <: SocketInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketInfo] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -367,7 +374,8 @@ object bluetoothSocket {
       __obj.asInstanceOf[SocketProperties]
     }
     
-    extension [Self <: SocketProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketProperties] (val x: Self) extends AnyVal {
       
       inline def setBufferSize(value: integer): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       

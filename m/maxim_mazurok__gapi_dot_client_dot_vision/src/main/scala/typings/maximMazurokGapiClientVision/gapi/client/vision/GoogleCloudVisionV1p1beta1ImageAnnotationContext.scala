@@ -19,7 +19,8 @@ object GoogleCloudVisionV1p1beta1ImageAnnotationContext {
     __obj.asInstanceOf[GoogleCloudVisionV1p1beta1ImageAnnotationContext]
   }
   
-  extension [Self <: GoogleCloudVisionV1p1beta1ImageAnnotationContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p1beta1ImageAnnotationContext] (val x: Self) extends AnyVal {
     
     inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
     

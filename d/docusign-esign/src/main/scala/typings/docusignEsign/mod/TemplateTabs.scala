@@ -370,7 +370,8 @@ object TemplateTabs {
     __obj.asInstanceOf[TemplateTabs]
   }
   
-  extension [Self <: TemplateTabs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateTabs] (val x: Self) extends AnyVal {
     
     inline def setApproveTabs(value: js.Array[Approve]): Self = StObject.set(x, "approveTabs", value.asInstanceOf[js.Any])
     

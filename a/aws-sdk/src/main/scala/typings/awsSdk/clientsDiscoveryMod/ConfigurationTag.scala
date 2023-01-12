@@ -38,7 +38,8 @@ object ConfigurationTag {
     __obj.asInstanceOf[ConfigurationTag]
   }
   
-  extension [Self <: ConfigurationTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationTag] (val x: Self) extends AnyVal {
     
     inline def setConfigurationId(value: ConfigurationId): Self = StObject.set(x, "configurationId", value.asInstanceOf[js.Any])
     

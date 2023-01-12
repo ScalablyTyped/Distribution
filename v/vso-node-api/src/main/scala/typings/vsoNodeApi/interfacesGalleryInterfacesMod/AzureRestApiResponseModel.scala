@@ -32,7 +32,8 @@ object AzureRestApiResponseModel {
     __obj.asInstanceOf[AzureRestApiResponseModel]
   }
   
-  extension [Self <: AzureRestApiResponseModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AzureRestApiResponseModel] (val x: Self) extends AnyVal {
     
     inline def setOperationStatus(value: RestApiResponseStatusModel): Self = StObject.set(x, "operationStatus", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object UH {
     __obj.asInstanceOf[UH]
   }
   
-  extension [Self <: UH](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UH] (val x: Self) extends AnyVal {
     
     inline def setUH(value: Attack): Self = StObject.set(x, "UH", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[AuthOptions]
     }
     
-    extension [Self <: AuthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthOptions] (val x: Self) extends AnyVal {
       
       inline def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
       
@@ -129,7 +130,8 @@ object mod {
       __obj.asInstanceOf[SmtpPoolOptions]
     }
     
-    extension [Self <: SmtpPoolOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SmtpPoolOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: AuthOptions): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       

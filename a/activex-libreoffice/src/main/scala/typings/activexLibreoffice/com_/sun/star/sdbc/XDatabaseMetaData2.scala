@@ -235,7 +235,8 @@ object XDatabaseMetaData2 {
     __obj.asInstanceOf[XDatabaseMetaData2]
   }
   
-  extension [Self <: XDatabaseMetaData2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDatabaseMetaData2] (val x: Self) extends AnyVal {
     
     inline def setConnectionInfo(value: SafeArray[PropertyValue]): Self = StObject.set(x, "ConnectionInfo", value.asInstanceOf[js.Any])
     

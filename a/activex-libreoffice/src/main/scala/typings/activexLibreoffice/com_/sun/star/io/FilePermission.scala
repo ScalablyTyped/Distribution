@@ -31,7 +31,8 @@ object FilePermission {
     __obj.asInstanceOf[FilePermission]
   }
   
-  extension [Self <: FilePermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilePermission] (val x: Self) extends AnyVal {
     
     inline def setActions(value: String): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     

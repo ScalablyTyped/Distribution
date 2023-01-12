@@ -19,7 +19,8 @@ object distCryptoIguidgeneratorMod {
       __obj.asInstanceOf[IGuidGenerator]
     }
     
-    extension [Self <: IGuidGenerator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGuidGenerator] (val x: Self) extends AnyVal {
       
       inline def setGenerateGuid(value: () => String): Self = StObject.set(x, "generateGuid", js.Any.fromFunction0(value))
       

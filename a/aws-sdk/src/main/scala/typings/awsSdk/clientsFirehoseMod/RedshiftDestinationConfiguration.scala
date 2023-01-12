@@ -75,7 +75,8 @@ object RedshiftDestinationConfiguration {
     __obj.asInstanceOf[RedshiftDestinationConfiguration]
   }
   
-  extension [Self <: RedshiftDestinationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedshiftDestinationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchLoggingOptions(value: CloudWatchLoggingOptions): Self = StObject.set(x, "CloudWatchLoggingOptions", value.asInstanceOf[js.Any])
     

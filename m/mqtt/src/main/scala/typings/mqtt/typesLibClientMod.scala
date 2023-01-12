@@ -292,7 +292,8 @@ object typesLibClientMod {
       __obj.asInstanceOf[ISubscriptionGrant]
     }
     
-    extension [Self <: ISubscriptionGrant](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISubscriptionGrant] (val x: Self) extends AnyVal {
       
       inline def setNl(value: Boolean): Self = StObject.set(x, "nl", value.asInstanceOf[js.Any])
       
@@ -351,7 +352,8 @@ object typesLibClientMod {
       __obj.asInstanceOf[ISubscriptionRequest]
     }
     
-    extension [Self <: ISubscriptionRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISubscriptionRequest] (val x: Self) extends AnyVal {
       
       inline def setNl(value: Boolean): Self = StObject.set(x, "nl", value.asInstanceOf[js.Any])
       

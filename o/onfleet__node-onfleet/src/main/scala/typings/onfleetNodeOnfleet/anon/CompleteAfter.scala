@@ -32,7 +32,8 @@ object CompleteAfter {
     __obj.asInstanceOf[CompleteAfter]
   }
   
-  extension [Self <: CompleteAfter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompleteAfter] (val x: Self) extends AnyVal {
     
     inline def setCompleteAfter(value: Double): Self = StObject.set(x, "completeAfter", value.asInstanceOf[js.Any])
     

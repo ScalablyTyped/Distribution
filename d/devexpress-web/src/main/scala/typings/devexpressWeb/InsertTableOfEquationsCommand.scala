@@ -23,7 +23,8 @@ object InsertTableOfEquationsCommand {
     __obj.asInstanceOf[InsertTableOfEquationsCommand]
   }
   
-  extension [Self <: InsertTableOfEquationsCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertTableOfEquationsCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

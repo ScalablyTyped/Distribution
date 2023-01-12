@@ -23,7 +23,8 @@ object RandomSampleReducer {
     __obj.asInstanceOf[RandomSampleReducer]
   }
   
-  extension [Self <: RandomSampleReducer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RandomSampleReducer] (val x: Self) extends AnyVal {
     
     inline def setProperty(value: PropertyName): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     

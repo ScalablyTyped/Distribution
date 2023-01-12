@@ -16,7 +16,8 @@ object BatchCreateConsumerOverridesResponse {
     __obj.asInstanceOf[BatchCreateConsumerOverridesResponse]
   }
   
-  extension [Self <: BatchCreateConsumerOverridesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCreateConsumerOverridesResponse] (val x: Self) extends AnyVal {
     
     inline def setOverrides(value: js.Array[QuotaOverride]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object PictureSourced {
     __obj.asInstanceOf[PictureSourced]
   }
   
-  extension [Self <: PictureSourced](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PictureSourced] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

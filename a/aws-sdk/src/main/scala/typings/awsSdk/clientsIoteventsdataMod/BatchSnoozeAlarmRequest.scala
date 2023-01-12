@@ -18,7 +18,8 @@ object BatchSnoozeAlarmRequest {
     __obj.asInstanceOf[BatchSnoozeAlarmRequest]
   }
   
-  extension [Self <: BatchSnoozeAlarmRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchSnoozeAlarmRequest] (val x: Self) extends AnyVal {
     
     inline def setSnoozeActionRequests(value: SnoozeAlarmActionRequests): Self = StObject.set(x, "snoozeActionRequests", value.asInstanceOf[js.Any])
     

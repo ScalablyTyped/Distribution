@@ -16,7 +16,8 @@ object ListRuntimesResponse {
     __obj.asInstanceOf[ListRuntimesResponse]
   }
   
-  extension [Self <: ListRuntimesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRuntimesResponse] (val x: Self) extends AnyVal {
     
     inline def setRuntimes(value: js.Array[Runtime]): Self = StObject.set(x, "runtimes", value.asInstanceOf[js.Any])
     

@@ -201,7 +201,8 @@ object clustering {
         __obj.asInstanceOf[ClusteringOptions]
       }
       
-      extension [Self <: ClusteringOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClusteringOptions] (val x: Self) extends AnyVal {
         
         inline def setEps(value: Double): Self = StObject.set(x, "eps", value.asInstanceOf[js.Any])
         
@@ -245,7 +246,8 @@ object clustering {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setClusteringOptions(value: ClusteringOptions): Self = StObject.set(x, "clusteringOptions", value.asInstanceOf[js.Any])
         
@@ -294,7 +296,8 @@ object clustering {
       __obj.asInstanceOf[DataPoint]
     }
     
-    extension [Self <: DataPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataPoint] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: Altitude): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -376,7 +379,8 @@ object clustering {
       __obj.asInstanceOf[ICluster]
     }
     
-    extension [Self <: ICluster](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICluster] (val x: Self) extends AnyVal {
       
       inline def setForEachDataPoint(value: js.Function1[/* noise */ INoisePoint, Unit] => Unit): Self = StObject.set(x, "forEachDataPoint", js.Any.fromFunction1(value))
       
@@ -444,7 +448,8 @@ object clustering {
       __obj.asInstanceOf[INoisePoint]
     }
     
-    extension [Self <: INoisePoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INoisePoint] (val x: Self) extends AnyVal {
       
       inline def setGetData(value: () => Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
       
@@ -499,7 +504,8 @@ object clustering {
       __obj.asInstanceOf[IResult]
     }
     
-    extension [Self <: IResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResult] (val x: Self) extends AnyVal {
       
       inline def setGetMinZoom(value: () => Double): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
       
@@ -537,7 +543,8 @@ object clustering {
       __obj.asInstanceOf[ITheme]
     }
     
-    extension [Self <: ITheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITheme] (val x: Self) extends AnyVal {
       
       inline def setGetClusterPresentation(value: ICluster => Object): Self = StObject.set(x, "getClusterPresentation", js.Any.fromFunction1(value))
       

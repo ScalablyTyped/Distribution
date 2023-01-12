@@ -101,7 +101,8 @@ object IVehicleSpec {
     __obj.asInstanceOf[IVehicleSpec]
   }
   
-  extension [Self <: IVehicleSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVehicleSpec] (val x: Self) extends AnyVal {
     
     inline def setDimensionUnit(value: String): Self = StObject.set(x, "dimensionUnit", value.asInstanceOf[js.Any])
     

@@ -75,7 +75,8 @@ object Bloburl {
     __obj.asInstanceOf[Bloburl]
   }
   
-  extension [Self <: Bloburl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bloburl] (val x: Self) extends AnyVal {
     
     inline def setAdditions(value: Double): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
     

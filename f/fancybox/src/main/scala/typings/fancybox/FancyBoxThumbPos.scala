@@ -19,7 +19,8 @@ object FancyBoxThumbPos {
     __obj.asInstanceOf[FancyBoxThumbPos]
   }
   
-  extension [Self <: FancyBoxThumbPos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FancyBoxThumbPos] (val x: Self) extends AnyVal {
     
     inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     

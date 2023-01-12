@@ -15,7 +15,8 @@ object ResponsiveToggle {
     __obj.asInstanceOf[ResponsiveToggle]
   }
   
-  extension [Self <: ResponsiveToggle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponsiveToggle] (val x: Self) extends AnyVal {
     
     inline def setToggleMenu(value: () => Unit): Self = StObject.set(x, "toggleMenu", js.Any.fromFunction0(value))
   }

@@ -25,7 +25,8 @@ object Featured {
     __obj.asInstanceOf[Featured]
   }
   
-  extension [Self <: Featured](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Featured] (val x: Self) extends AnyVal {
     
     inline def setFeatured(value: Boolean): Self = StObject.set(x, "featured", value.asInstanceOf[js.Any])
     

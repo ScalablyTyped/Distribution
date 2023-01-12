@@ -48,7 +48,8 @@ object JSTreeStaticDefaultsCoreKeyboard {
     __obj.asInstanceOf[JSTreeStaticDefaultsCoreKeyboard]
   }
   
-  extension [Self <: JSTreeStaticDefaultsCoreKeyboard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSTreeStaticDefaultsCoreKeyboard] (val x: Self) extends AnyVal {
     
     inline def setAsterisk(value: Event => Unit): Self = StObject.set(x, "*", js.Any.fromFunction1(value))
     

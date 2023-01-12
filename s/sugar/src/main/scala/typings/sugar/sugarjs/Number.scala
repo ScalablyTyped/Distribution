@@ -1162,7 +1162,8 @@ object Number {
       __obj.asInstanceOf[NumberOptions]
     }
     
-    extension [Self <: NumberOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberOptions] (val x: Self) extends AnyVal {
       
       inline def setDecimal(value: java.lang.String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
       

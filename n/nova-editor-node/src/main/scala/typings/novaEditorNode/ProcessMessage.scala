@@ -26,7 +26,8 @@ object ProcessMessage {
     __obj.asInstanceOf[ProcessMessage[P, R, E]]
   }
   
-  extension [Self <: ProcessMessage[?, ?, ?], P, R, E](x: Self & (ProcessMessage[P, R, E])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessMessage[?, ?, ?], P, R, E] (val x: Self & (ProcessMessage[P, R, E])) extends AnyVal {
     
     inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

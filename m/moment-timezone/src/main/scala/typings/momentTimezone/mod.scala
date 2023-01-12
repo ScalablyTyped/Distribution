@@ -297,7 +297,8 @@ object mod {
         __obj.asInstanceOf[MomentZone]
       }
       
-      extension [Self <: MomentZone](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MomentZone] (val x: Self) extends AnyVal {
         
         inline def setAbbr(value: Double => String): Self = StObject.set(x, "abbr", js.Any.fromFunction1(value))
         
@@ -338,7 +339,8 @@ object mod {
         __obj.asInstanceOf[MomentZoneOffset]
       }
       
-      extension [Self <: MomentZoneOffset](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MomentZoneOffset] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         

@@ -44,7 +44,8 @@ object PartitionQueryRequest {
     __obj.asInstanceOf[PartitionQueryRequest]
   }
   
-  extension [Self <: PartitionQueryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartitionQueryRequest] (val x: Self) extends AnyVal {
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

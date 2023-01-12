@@ -22,7 +22,8 @@ object AxePlugin {
     __obj.asInstanceOf[AxePlugin]
   }
   
-  extension [Self <: AxePlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxePlugin] (val x: Self) extends AnyVal {
     
     inline def setCleanup(value: /* callback */ js.Function => Unit): Self = StObject.set(x, "cleanup", js.Any.fromFunction1(value))
     

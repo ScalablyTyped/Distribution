@@ -51,7 +51,8 @@ object MapDisplayEvents {
     __obj.asInstanceOf[MapDisplayEvents[T]]
   }
   
-  extension [Self <: MapDisplayEvents[?], T](x: Self & MapDisplayEvents[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapDisplayEvents[?], T] (val x: Self & MapDisplayEvents[T]) extends AnyVal {
     
     inline def `setMap-type-change`(value: EventBase[T]): Self = StObject.set(x, "map-type-change", value.asInstanceOf[js.Any])
     

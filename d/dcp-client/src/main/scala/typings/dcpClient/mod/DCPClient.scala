@@ -22,7 +22,8 @@ object DCPClient {
     __obj.asInstanceOf[DCPClient]
   }
   
-  extension [Self <: DCPClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DCPClient] (val x: Self) extends AnyVal {
     
     inline def setCompute(value: Compute): Self = StObject.set(x, "compute", value.asInstanceOf[js.Any])
     

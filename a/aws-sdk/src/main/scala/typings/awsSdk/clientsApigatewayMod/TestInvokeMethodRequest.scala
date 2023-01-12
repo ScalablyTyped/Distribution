@@ -58,7 +58,8 @@ object TestInvokeMethodRequest {
     __obj.asInstanceOf[TestInvokeMethodRequest]
   }
   
-  extension [Self <: TestInvokeMethodRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestInvokeMethodRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object CreateInternetGatewayResult {
     __obj.asInstanceOf[CreateInternetGatewayResult]
   }
   
-  extension [Self <: CreateInternetGatewayResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateInternetGatewayResult] (val x: Self) extends AnyVal {
     
     inline def setInternetGateway(value: InternetGateway): Self = StObject.set(x, "InternetGateway", value.asInstanceOf[js.Any])
     

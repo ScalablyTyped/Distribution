@@ -48,7 +48,8 @@ object Energy {
     __obj.asInstanceOf[Energy]
   }
   
-  extension [Self <: Energy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Energy] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: operator): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

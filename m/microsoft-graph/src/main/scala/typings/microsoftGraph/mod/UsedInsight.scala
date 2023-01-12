@@ -30,7 +30,8 @@ object UsedInsight {
     __obj.asInstanceOf[UsedInsight]
   }
   
-  extension [Self <: UsedInsight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsedInsight] (val x: Self) extends AnyVal {
     
     inline def setLastUsed(value: NullableOption[UsageDetails]): Self = StObject.set(x, "lastUsed", value.asInstanceOf[js.Any])
     

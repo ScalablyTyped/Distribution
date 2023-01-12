@@ -19,7 +19,8 @@ object TypeofACLSAVE {
     __obj.asInstanceOf[TypeofACLSAVE]
   }
   
-  extension [Self <: TypeofACLSAVE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofACLSAVE] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: () => RedisCommandArguments): Self = StObject.set(x, "transformArguments", js.Any.fromFunction0(value))
     

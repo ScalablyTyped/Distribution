@@ -15,7 +15,8 @@ object ServerBinding {
     __obj.asInstanceOf[ServerBinding]
   }
   
-  extension [Self <: ServerBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerBinding] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

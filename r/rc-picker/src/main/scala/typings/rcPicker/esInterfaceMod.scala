@@ -32,7 +32,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[Components]
     }
     
-    extension [Self <: Components](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Components] (val x: Self) extends AnyVal {
       
       inline def setButton(value: ComponentType[js.Object] | String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[DisabledTimes]
     }
     
-    extension [Self <: DisabledTimes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisabledTimes] (val x: Self) extends AnyVal {
       
       inline def setDisabledHours(value: () => js.Array[Double]): Self = StObject.set(x, "disabledHours", js.Any.fromFunction0(value))
       
@@ -179,7 +181,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[Locale]
     }
     
-    extension [Self <: Locale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
       
       inline def setBackToToday(value: String): Self = StObject.set(x, "backToToday", value.asInstanceOf[js.Any])
       
@@ -309,7 +312,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[PanelRefProps]
     }
     
-    extension [Self <: PanelRefProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelRefProps] (val x: Self) extends AnyVal {
       
       inline def setOnBlur(value: FocusEvent[HTMLElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       

@@ -38,7 +38,8 @@ object MemLayoutData {
     __obj.asInstanceOf[MemLayoutData]
   }
   
-  extension [Self <: MemLayoutData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemLayoutData] (val x: Self) extends AnyVal {
     
     inline def setBank(value: String): Self = StObject.set(x, "bank", value.asInstanceOf[js.Any])
     

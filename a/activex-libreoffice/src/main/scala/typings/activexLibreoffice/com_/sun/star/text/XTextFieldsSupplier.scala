@@ -44,7 +44,8 @@ object XTextFieldsSupplier {
     __obj.asInstanceOf[XTextFieldsSupplier]
   }
   
-  extension [Self <: XTextFieldsSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextFieldsSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetTextFieldMasters(value: () => XNameAccess): Self = StObject.set(x, "getTextFieldMasters", js.Any.fromFunction0(value))
     

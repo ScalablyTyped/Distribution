@@ -15,7 +15,8 @@ object TypeofChargeUpdateParams {
     __obj.asInstanceOf[TypeofChargeUpdateParams]
   }
   
-  extension [Self <: TypeofChargeUpdateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofChargeUpdateParams] (val x: Self) extends AnyVal {
     
     inline def setFraudDetails(value: Any): Self = StObject.set(x, "FraudDetails", value.asInstanceOf[js.Any])
   }

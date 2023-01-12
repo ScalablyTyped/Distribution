@@ -45,7 +45,8 @@ object libProjectIonic1ServeMod {
       __obj.asInstanceOf[Ionic1ServeRunnerDeps]
     }
     
-    extension [Self <: Ionic1ServeRunnerDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ionic1ServeRunnerDeps] (val x: Self) extends AnyVal {
       
       inline def setProject(value: Ionic1Project): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     }

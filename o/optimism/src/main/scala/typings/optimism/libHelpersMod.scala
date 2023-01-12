@@ -30,7 +30,8 @@ object libHelpersMod {
       __obj.asInstanceOf[Unsubscribable]
     }
     
-    extension [Self <: Unsubscribable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unsubscribable] (val x: Self) extends AnyVal {
       
       inline def setUnsubscribe(value: Unit | js.Function0[Any]): Self = StObject.set(x, "unsubscribe", value.asInstanceOf[js.Any])
       

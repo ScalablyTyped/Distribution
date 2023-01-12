@@ -60,7 +60,8 @@ object libSwitchStyleMod {
       __obj.asInstanceOf[SwitchStyle]
     }
     
-    extension [Self <: SwitchStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitchStyle] (val x: Self) extends AnyVal {
       
       inline def setSwitch(value: ViewStyle): Self = StObject.set(x, "switch", value.asInstanceOf[js.Any])
       

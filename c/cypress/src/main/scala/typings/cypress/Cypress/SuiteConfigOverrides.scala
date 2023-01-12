@@ -68,7 +68,8 @@ object SuiteConfigOverrides {
     __obj.asInstanceOf[SuiteConfigOverrides]
   }
   
-  extension [Self <: SuiteConfigOverrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuiteConfigOverrides] (val x: Self) extends AnyVal {
     
     inline def setAnimationDistanceThreshold(value: Double): Self = StObject.set(x, "animationDistanceThreshold", value.asInstanceOf[js.Any])
     

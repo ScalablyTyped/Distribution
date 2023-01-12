@@ -1493,7 +1493,8 @@ object sapMMessagePopoverMod {
       __obj.asInstanceOf[MessagePopoverSettings]
     }
     
-    extension [Self <: MessagePopoverSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessagePopoverSettings] (val x: Self) extends AnyVal {
       
       inline def setActiveTitlePress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "activeTitlePress", js.Any.fromFunction1(value))
       

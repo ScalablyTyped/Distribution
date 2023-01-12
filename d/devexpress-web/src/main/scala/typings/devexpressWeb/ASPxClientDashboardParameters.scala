@@ -37,7 +37,8 @@ object ASPxClientDashboardParameters {
     __obj.asInstanceOf[ASPxClientDashboardParameters]
   }
   
-  extension [Self <: ASPxClientDashboardParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDashboardParameters] (val x: Self) extends AnyVal {
     
     inline def setGetParameterByIndex(value: Double => ASPxClientDashboardParameter): Self = StObject.set(x, "GetParameterByIndex", js.Any.fromFunction1(value))
     

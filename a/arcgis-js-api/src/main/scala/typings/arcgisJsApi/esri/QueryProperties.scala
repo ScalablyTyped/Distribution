@@ -324,7 +324,8 @@ object QueryProperties {
     __obj.asInstanceOf[QueryProperties]
   }
   
-  extension [Self <: QueryProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryProperties] (val x: Self) extends AnyVal {
     
     inline def setAggregateIds(value: js.Array[Double]): Self = StObject.set(x, "aggregateIds", value.asInstanceOf[js.Any])
     

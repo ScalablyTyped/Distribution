@@ -21,7 +21,8 @@ object ClusterStatsClusterIndicesShards {
     __obj.asInstanceOf[ClusterStatsClusterIndicesShards]
   }
   
-  extension [Self <: ClusterStatsClusterIndicesShards](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatsClusterIndicesShards] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: ClusterStatsClusterIndicesShardsIndex): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

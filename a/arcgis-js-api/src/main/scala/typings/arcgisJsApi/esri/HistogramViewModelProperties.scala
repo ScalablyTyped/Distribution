@@ -48,7 +48,8 @@ object HistogramViewModelProperties {
     __obj.asInstanceOf[HistogramViewModelProperties]
   }
   
-  extension [Self <: HistogramViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistogramViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setAverage(value: Double): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
     

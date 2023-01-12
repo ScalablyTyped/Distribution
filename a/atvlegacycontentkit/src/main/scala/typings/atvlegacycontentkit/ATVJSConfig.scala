@@ -28,7 +28,8 @@ object ATVJSConfig {
     __obj.asInstanceOf[ATVJSConfig]
   }
   
-  extension [Self <: ATVJSConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATVJSConfig] (val x: Self) extends AnyVal {
     
     inline def setDoesJavaScriptLoadRoot(value: Boolean): Self = StObject.set(x, "doesJavaScriptLoadRoot", value.asInstanceOf[js.Any])
     

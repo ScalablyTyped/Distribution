@@ -27,7 +27,8 @@ object TSIndexedAccessType__ {
     __obj.asInstanceOf[TSIndexedAccessType__]
   }
   
-  extension [Self <: TSIndexedAccessType__](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSIndexedAccessType__] (val x: Self) extends AnyVal {
     
     inline def setIndexType(value: TSType): Self = StObject.set(x, "indexType", value.asInstanceOf[js.Any])
     

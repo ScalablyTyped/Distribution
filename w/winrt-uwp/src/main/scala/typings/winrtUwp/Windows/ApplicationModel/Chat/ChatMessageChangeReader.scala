@@ -35,7 +35,8 @@ object ChatMessageChangeReader {
     __obj.asInstanceOf[ChatMessageChangeReader]
   }
   
-  extension [Self <: ChatMessageChangeReader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatMessageChangeReader] (val x: Self) extends AnyVal {
     
     inline def setAcceptChanges(value: () => Unit): Self = StObject.set(x, "acceptChanges", js.Any.fromFunction0(value))
     

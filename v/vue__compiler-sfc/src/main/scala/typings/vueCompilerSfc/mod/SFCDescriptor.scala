@@ -54,7 +54,8 @@ object SFCDescriptor {
     __obj.asInstanceOf[SFCDescriptor]
   }
   
-  extension [Self <: SFCDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SFCDescriptor] (val x: Self) extends AnyVal {
     
     inline def setCssVars(value: js.Array[String]): Self = StObject.set(x, "cssVars", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object NxHighlightRanges {
     __obj.asInstanceOf[NxHighlightRanges]
   }
   
-  extension [Self <: NxHighlightRanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NxHighlightRanges] (val x: Self) extends AnyVal {
     
     inline def setQRanges(value: js.Array[CharRange]): Self = StObject.set(x, "qRanges", value.asInstanceOf[js.Any])
     

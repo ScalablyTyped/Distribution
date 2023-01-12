@@ -23,7 +23,8 @@ object PutLogEventsResponse {
     __obj.asInstanceOf[PutLogEventsResponse]
   }
   
-  extension [Self <: PutLogEventsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutLogEventsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextSequenceToken(value: SequenceToken): Self = StObject.set(x, "nextSequenceToken", value.asInstanceOf[js.Any])
     

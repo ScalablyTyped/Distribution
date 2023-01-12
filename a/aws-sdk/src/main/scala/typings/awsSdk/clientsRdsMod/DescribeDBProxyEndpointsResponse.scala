@@ -23,7 +23,8 @@ object DescribeDBProxyEndpointsResponse {
     __obj.asInstanceOf[DescribeDBProxyEndpointsResponse]
   }
   
-  extension [Self <: DescribeDBProxyEndpointsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDBProxyEndpointsResponse] (val x: Self) extends AnyVal {
     
     inline def setDBProxyEndpoints(value: DBProxyEndpointList): Self = StObject.set(x, "DBProxyEndpoints", value.asInstanceOf[js.Any])
     

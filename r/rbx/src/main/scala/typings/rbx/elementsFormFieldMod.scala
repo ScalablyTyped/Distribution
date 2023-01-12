@@ -194,7 +194,8 @@ object elementsFormFieldMod {
       __obj.asInstanceOf[FieldModifierProps]
     }
     
-    extension [Self <: FieldModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldModifierProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: centered | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -318,7 +319,8 @@ object elementsFormFieldMod {
       __obj.asInstanceOf[FieldProps]
     }
     
-    extension [Self <: FieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: centered | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -496,7 +498,8 @@ object elementsFormFieldMod {
       __obj.asInstanceOf[FieldVariables]
     }
     
-    extension [Self <: FieldVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldVariables] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: centered | right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
       
@@ -517,7 +520,8 @@ object elementsFormFieldMod {
       __obj.asInstanceOf[FieldVariablesDefaults]
     }
     
-    extension [Self <: FieldVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: centered | right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
       

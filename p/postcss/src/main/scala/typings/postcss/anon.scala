@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[Col]
     }
     
-    extension [Self <: Col](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Col] (val x: Self) extends AnyVal {
       
       inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object anon {
       __obj.asInstanceOf[PartialAtRuleProps]
     }
     
-    extension [Self <: PartialAtRuleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialAtRuleProps] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -128,7 +130,8 @@ object anon {
       __obj.asInstanceOf[PartialCommentProps]
     }
     
-    extension [Self <: PartialCommentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialCommentProps] (val x: Self) extends AnyVal {
       
       inline def setRaws(value: CommentRaws): Self = StObject.set(x, "raws", value.asInstanceOf[js.Any])
       
@@ -162,7 +165,8 @@ object anon {
       __obj.asInstanceOf[PartialDeclarationProps]
     }
     
-    extension [Self <: PartialDeclarationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDeclarationProps] (val x: Self) extends AnyVal {
       
       inline def setImportant(value: Boolean): Self = StObject.set(x, "important", value.asInstanceOf[js.Any])
       
@@ -202,7 +206,8 @@ object anon {
       __obj.asInstanceOf[PartialRuleProps]
     }
     
-    extension [Self <: PartialRuleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRuleProps] (val x: Self) extends AnyVal {
       
       inline def setNodes(value: js.Array[ChildNode | ChildProps]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
@@ -244,7 +249,8 @@ object anon {
       __obj.asInstanceOf[PickProcessOptionsmapfrom]
     }
     
-    extension [Self <: PickProcessOptionsmapfrom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickProcessOptionsmapfrom] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -270,7 +276,8 @@ object anon {
       __obj.asInstanceOf[PickWarningOptionswordind]
     }
     
-    extension [Self <: PickWarningOptionswordind](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickWarningOptionswordind] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -298,7 +305,8 @@ object anon {
       __obj.asInstanceOf[PickWarningOptionswordindEndIndex]
     }
     
-    extension [Self <: PickWarningOptionswordindEndIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickWarningOptionswordindEndIndex] (val x: Self) extends AnyVal {
       
       inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
       
@@ -327,7 +335,8 @@ object anon {
       __obj.asInstanceOf[Postcss]
     }
     
-    extension [Self <: Postcss](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Postcss] (val x: Self) extends AnyVal {
       
       inline def setPostcss(value: TransformCallback | typings.postcss.libProcessorMod.default): Self = StObject.set(x, "postcss", value.asInstanceOf[js.Any])
       
@@ -350,7 +359,8 @@ object anon {
       __obj.asInstanceOf[Raw]
     }
     
-    extension [Self <: Raw](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Raw] (val x: Self) extends AnyVal {
       
       inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       

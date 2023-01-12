@@ -55,7 +55,8 @@ object typesLatestSrcPoliciesUserAgentPolicyMod {
       __obj.asInstanceOf[TelemetryInfo]
     }
     
-    extension [Self <: TelemetryInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TelemetryInfo] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object typesLatestSrcPoliciesUserAgentPolicyMod {
       __obj.asInstanceOf[UserAgentOptions]
     }
     
-    extension [Self <: UserAgentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserAgentOptions] (val x: Self) extends AnyVal {
       
       inline def setUserAgentPrefix(value: String): Self = StObject.set(x, "userAgentPrefix", value.asInstanceOf[js.Any])
       

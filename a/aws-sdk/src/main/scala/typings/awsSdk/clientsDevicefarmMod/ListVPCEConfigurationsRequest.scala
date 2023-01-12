@@ -23,7 +23,8 @@ object ListVPCEConfigurationsRequest {
     __obj.asInstanceOf[ListVPCEConfigurationsRequest]
   }
   
-  extension [Self <: ListVPCEConfigurationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListVPCEConfigurationsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: Integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

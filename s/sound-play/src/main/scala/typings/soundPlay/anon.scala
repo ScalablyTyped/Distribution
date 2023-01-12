@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Stdin]
     }
     
-    extension [Self <: Stdin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stdin] (val x: Self) extends AnyVal {
       
       inline def setStdin(value: String | Buffer): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
       

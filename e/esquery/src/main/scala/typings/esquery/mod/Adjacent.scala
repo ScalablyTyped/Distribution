@@ -22,7 +22,8 @@ object Adjacent {
     __obj.asInstanceOf[Adjacent]
   }
   
-  extension [Self <: Adjacent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Adjacent] (val x: Self) extends AnyVal {
     
     inline def setType(value: adjacent): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

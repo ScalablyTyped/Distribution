@@ -22,7 +22,8 @@ object PowerManagementEvent {
     __obj.asInstanceOf[PowerManagementEvent]
   }
   
-  extension [Self <: PowerManagementEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PowerManagementEvent] (val x: Self) extends AnyVal {
     
     inline def setBatteryLevel(value: Double): Self = StObject.set(x, "batteryLevel", value.asInstanceOf[js.Any])
     

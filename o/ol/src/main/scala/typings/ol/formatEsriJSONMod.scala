@@ -59,7 +59,8 @@ object formatEsriJSONMod {
       __obj.asInstanceOf[EsriJSONMultiPolygon]
     }
     
-    extension [Self <: EsriJSONMultiPolygon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EsriJSONMultiPolygon] (val x: Self) extends AnyVal {
       
       inline def setHasM(value: Boolean): Self = StObject.set(x, "hasM", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object formatEsriJSONMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setGeometryName(value: String): Self = StObject.set(x, "geometryName", value.asInstanceOf[js.Any])
       

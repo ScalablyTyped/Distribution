@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyButtonTextCompone]
     }
     
-    extension [Self <: ReadonlyButtonTextCompone](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyButtonTextCompone] (val x: Self) extends AnyVal {
       
       inline def setButtonTextComponent(value: FunctionComponent[RelevantSortComponentProps]): Self = StObject.set(x, "buttonTextComponent", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyDynamicWidgetsPro]
     }
     
-    extension [Self <: ReadonlyDynamicWidgetsPro](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyDynamicWidgetsPro] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactChild): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyHitsPerPageProps]
     }
     
-    extension [Self <: ReadonlyHitsPerPageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyHitsPerPageProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -171,7 +174,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyMenuSelectProps]
     }
     
-    extension [Self <: ReadonlyMenuSelectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyMenuSelectProps] (val x: Self) extends AnyVal {
       
       inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
@@ -243,7 +247,8 @@ object anon {
       __obj.asInstanceOf[ReadonlySearchBoxProps]
     }
     
-    extension [Self <: ReadonlySearchBoxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlySearchBoxProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -339,7 +344,8 @@ object anon {
       __obj.asInstanceOf[ReadonlySortByProps]
     }
     
-    extension [Self <: ReadonlySortByProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlySortByProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -383,7 +389,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyTranslations]
     }
     
-    extension [Self <: ReadonlyTranslations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyTranslations] (val x: Self) extends AnyVal {
       
       inline def setTranslations(
         value: StringDictionary[

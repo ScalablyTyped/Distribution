@@ -28,7 +28,8 @@ object DrawerSectionItem {
     __obj.asInstanceOf[DrawerSectionItem]
   }
   
-  extension [Self <: DrawerSectionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawerSectionItem] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

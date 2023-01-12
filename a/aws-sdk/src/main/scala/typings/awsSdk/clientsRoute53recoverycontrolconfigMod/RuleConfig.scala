@@ -28,7 +28,8 @@ object RuleConfig {
     __obj.asInstanceOf[RuleConfig]
   }
   
-  extension [Self <: RuleConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleConfig] (val x: Self) extends AnyVal {
     
     inline def setInverted(value: boolean): Self = StObject.set(x, "Inverted", value.asInstanceOf[js.Any])
     

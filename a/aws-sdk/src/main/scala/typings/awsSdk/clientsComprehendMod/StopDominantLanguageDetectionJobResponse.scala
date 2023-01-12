@@ -23,7 +23,8 @@ object StopDominantLanguageDetectionJobResponse {
     __obj.asInstanceOf[StopDominantLanguageDetectionJobResponse]
   }
   
-  extension [Self <: StopDominantLanguageDetectionJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopDominantLanguageDetectionJobResponse] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     

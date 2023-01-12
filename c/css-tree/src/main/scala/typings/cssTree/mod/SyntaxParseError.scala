@@ -22,7 +22,8 @@ object SyntaxParseError {
     __obj.asInstanceOf[SyntaxParseError]
   }
   
-  extension [Self <: SyntaxParseError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyntaxParseError] (val x: Self) extends AnyVal {
     
     inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

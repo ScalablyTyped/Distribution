@@ -56,7 +56,8 @@ object GetAnalysis {
     __obj.asInstanceOf[GetAnalysis]
   }
   
-  extension [Self <: GetAnalysis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAnalysis] (val x: Self) extends AnyVal {
     
     inline def setDeleteAnalysis(value: `963`): Self = StObject.set(x, "deleteAnalysis", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PartialYPadding {
     __obj.asInstanceOf[PartialYPadding]
   }
   
-  extension [Self <: PartialYPadding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialYPadding] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

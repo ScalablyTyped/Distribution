@@ -48,7 +48,8 @@ object WhoamiUser {
     __obj.asInstanceOf[WhoamiUser]
   }
   
-  extension [Self <: WhoamiUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WhoamiUser] (val x: Self) extends AnyVal {
     
     inline def setAccess_key(value: String): Self = StObject.set(x, "access_key", value.asInstanceOf[js.Any])
     

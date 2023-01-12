@@ -194,7 +194,8 @@ object mod {
         __obj.asInstanceOf[CriteriaFilterOptionsObject]
       }
       
-      extension [Self <: CriteriaFilterOptionsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CriteriaFilterOptionsObject] (val x: Self) extends AnyVal {
         
         inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
         
@@ -273,7 +274,8 @@ object mod {
         __obj.asInstanceOf[CriteriaInterface[TName]]
       }
       
-      extension [Self <: CriteriaInterface[?], TName /* <: EventName */](x: Self & CriteriaInterface[TName]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CriteriaInterface[?], TName /* <: EventName */] (val x: Self & CriteriaInterface[TName]) extends AnyVal {
         
         inline def setChannels(value: String | js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
         
@@ -333,7 +335,8 @@ object mod {
         __obj.asInstanceOf[EmitCriteriaInterface[TName]]
       }
       
-      extension [Self <: EmitCriteriaInterface[?], TName /* <: EventName */](x: Self & EmitCriteriaInterface[TName]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EmitCriteriaInterface[?], TName /* <: EventName */] (val x: Self & EmitCriteriaInterface[TName]) extends AnyVal {
         
         inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
         
@@ -418,7 +421,8 @@ object mod {
         __obj.asInstanceOf[EventOptionsInterface[TName]]
       }
       
-      extension [Self <: EventOptionsInterface[?], TName /* <: EventName */](x: Self & EventOptionsInterface[TName]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventOptionsInterface[?], TName /* <: EventName */] (val x: Self & EventOptionsInterface[TName]) extends AnyVal {
         
         inline def setChannels(value: String | js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
         
@@ -463,7 +467,8 @@ object mod {
         __obj.asInstanceOf[EventSettings]
       }
       
-      extension [Self <: EventSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventSettings] (val x: Self) extends AnyVal {
         
         inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
         
@@ -537,7 +542,8 @@ object mod {
         __obj.asInstanceOf[FewCriteria[TName]]
       }
       
-      extension [Self <: FewCriteria[?], TName /* <: EventName */](x: Self & FewCriteria[TName]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FewCriteria[?], TName /* <: EventName */] (val x: Self & FewCriteria[TName]) extends AnyVal {
         
         inline def setChannels(value: String | js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
         

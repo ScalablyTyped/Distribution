@@ -36,7 +36,8 @@ object Decimals {
     __obj.asInstanceOf[Decimals]
   }
   
-  extension [Self <: Decimals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Decimals] (val x: Self) extends AnyVal {
     
     inline def setComma(value: String): Self = StObject.set(x, ",", value.asInstanceOf[js.Any])
     

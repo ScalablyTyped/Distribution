@@ -20,7 +20,8 @@ object distTypesSrcImageImageQuantizerYieldValueMod {
       __obj.asInstanceOf[ImageQuantizerYieldValue]
     }
     
-    extension [Self <: ImageQuantizerYieldValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageQuantizerYieldValue] (val x: Self) extends AnyVal {
       
       inline def setPointContainer(value: PointContainer): Self = StObject.set(x, "pointContainer", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object TypeofimportedAPPEND {
     __obj.asInstanceOf[TypeofimportedAPPEND]
   }
   
-  extension [Self <: TypeofimportedAPPEND](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofimportedAPPEND] (val x: Self) extends AnyVal {
     
     inline def setFIRST_KEY_INDEX(value: /* 1 */ Double): Self = StObject.set(x, "FIRST_KEY_INDEX", value.asInstanceOf[js.Any])
     

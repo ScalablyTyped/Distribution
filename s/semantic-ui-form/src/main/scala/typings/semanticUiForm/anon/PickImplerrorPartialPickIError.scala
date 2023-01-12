@@ -24,7 +24,8 @@ object PickImplerrorPartialPickIError {
     __obj.asInstanceOf[PickImplerrorPartialPickIError]
   }
   
-  extension [Self <: PickImplerrorPartialPickIError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplerrorPartialPickIError] (val x: Self) extends AnyVal {
     
     inline def setError(value: /* errors */ js.Array[String] => JQuery): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     

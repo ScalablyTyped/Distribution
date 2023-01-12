@@ -43,7 +43,8 @@ object anon {
       __obj.asInstanceOf[CompressedSize]
     }
     
-    extension [Self <: CompressedSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompressedSize] (val x: Self) extends AnyVal {
       
       inline def setCompressedSize(value: Double): Self = StObject.set(x, "compressedSize", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object anon {
       __obj.asInstanceOf[Disknum]
     }
     
-    extension [Self <: Disknum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Disknum] (val x: Self) extends AnyVal {
       
       inline def setCompressedSize(value: Double): Self = StObject.set(x, "compressedSize", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object anon {
       __obj.asInstanceOf[Path]
     }
     
-    extension [Self <: Path](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
@@ -139,7 +142,8 @@ object anon {
       __obj.asInstanceOf[Promise]
     }
     
-    extension [Self <: Promise](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Promise] (val x: Self) extends AnyVal {
       
       inline def setPromise(value: () => js.Promise[Unit]): Self = StObject.set(x, "promise", js.Any.fromFunction0(value))
     }
@@ -158,7 +162,8 @@ object anon {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setSize(value: () => js.Promise[Double]): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
       

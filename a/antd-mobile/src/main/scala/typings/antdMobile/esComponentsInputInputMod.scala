@@ -91,7 +91,8 @@ object esComponentsInputInputMod {
       __obj.asInstanceOf[AriaProps]
     }
     
-    extension [Self <: AriaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AriaProps] (val x: Self) extends AnyVal {
       
       inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -415,7 +416,8 @@ object esComponentsInputInputMod {
       __obj.asInstanceOf[InputProps]
     }
     
-    extension [Self <: InputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
@@ -774,7 +776,8 @@ object esComponentsInputInputMod {
       __obj.asInstanceOf[InputRef]
     }
     
-    extension [Self <: InputRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputRef] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       

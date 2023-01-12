@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[ValidationError]
     }
     
-    extension [Self <: ValidationError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationError] (val x: Self) extends AnyVal {
       
       inline def setErr(value: Code): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
     }
@@ -160,7 +161,8 @@ object mod {
       __obj.asInstanceOf[X2jOptions]
     }
     
-    extension [Self <: X2jOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X2jOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowBooleanAttributes(value: Boolean): Self = StObject.set(x, "allowBooleanAttributes", value.asInstanceOf[js.Any])
       
@@ -295,7 +297,8 @@ object mod {
       __obj.asInstanceOf[X2jOptionsOptional]
     }
     
-    extension [Self <: X2jOptionsOptional](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X2jOptionsOptional] (val x: Self) extends AnyVal {
       
       inline def setAllowBooleanAttributes(value: Boolean): Self = StObject.set(x, "allowBooleanAttributes", value.asInstanceOf[js.Any])
       
@@ -469,7 +472,8 @@ object mod {
       __obj.asInstanceOf[XmlBuilderOptions]
     }
     
-    extension [Self <: XmlBuilderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlBuilderOptions] (val x: Self) extends AnyVal {
       
       inline def setArrayNodeName(value: String): Self = StObject.set(x, "arrayNodeName", value.asInstanceOf[js.Any])
       
@@ -559,7 +563,8 @@ object mod {
       __obj.asInstanceOf[XmlBuilderOptionsOptional]
     }
     
-    extension [Self <: XmlBuilderOptionsOptional](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlBuilderOptionsOptional] (val x: Self) extends AnyVal {
       
       inline def setArrayNodeName(value: String): Self = StObject.set(x, "arrayNodeName", value.asInstanceOf[js.Any])
       
@@ -654,7 +659,8 @@ object mod {
       __obj.asInstanceOf[strnumOptions]
     }
     
-    extension [Self <: strnumOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: strnumOptions] (val x: Self) extends AnyVal {
       
       inline def setHex(value: Boolean): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
       
@@ -679,7 +685,8 @@ object mod {
       __obj.asInstanceOf[validationOptions]
     }
     
-    extension [Self <: validationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: validationOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowBooleanAttributes(value: Boolean): Self = StObject.set(x, "allowBooleanAttributes", value.asInstanceOf[js.Any])
       
@@ -703,7 +710,8 @@ object mod {
       __obj.asInstanceOf[validationOptionsOptional]
     }
     
-    extension [Self <: validationOptionsOptional](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: validationOptionsOptional] (val x: Self) extends AnyVal {
       
       inline def setAllowBooleanAttributes(value: Boolean): Self = StObject.set(x, "allowBooleanAttributes", value.asInstanceOf[js.Any])
       

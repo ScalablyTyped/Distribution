@@ -38,7 +38,8 @@ object EmailChannelRequest {
     __obj.asInstanceOf[EmailChannelRequest]
   }
   
-  extension [Self <: EmailChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationSet(value: string): Self = StObject.set(x, "ConfigurationSet", value.asInstanceOf[js.Any])
     

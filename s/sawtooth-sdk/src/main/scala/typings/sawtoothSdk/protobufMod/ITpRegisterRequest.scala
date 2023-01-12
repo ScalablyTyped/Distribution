@@ -25,7 +25,8 @@ object ITpRegisterRequest {
     __obj.asInstanceOf[ITpRegisterRequest]
   }
   
-  extension [Self <: ITpRegisterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITpRegisterRequest] (val x: Self) extends AnyVal {
     
     inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     

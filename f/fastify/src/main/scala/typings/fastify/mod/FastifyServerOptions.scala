@@ -182,7 +182,8 @@ object FastifyServerOptions {
     __obj.asInstanceOf[FastifyServerOptions[RawServer, Logger]]
   }
   
-  extension [Self <: FastifyServerOptions[?, ?], RawServer /* <: RawServerBase */, Logger /* <: FastifyBaseLogger */](x: Self & (FastifyServerOptions[RawServer, Logger])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FastifyServerOptions[?, ?], RawServer /* <: RawServerBase */, Logger /* <: FastifyBaseLogger */] (val x: Self & (FastifyServerOptions[RawServer, Logger])) extends AnyVal {
     
     inline def setAjv(value: CustomOptions): Self = StObject.set(x, "ajv", value.asInstanceOf[js.Any])
     

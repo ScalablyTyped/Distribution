@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[RendererOptions]
     }
     
-    extension [Self <: RendererOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RendererOptions] (val x: Self) extends AnyVal {
       
       inline def setDashColor(value: String): Self = StObject.set(x, "dashColor", value.asInstanceOf[js.Any])
       

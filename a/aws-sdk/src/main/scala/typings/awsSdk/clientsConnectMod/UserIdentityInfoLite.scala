@@ -23,7 +23,8 @@ object UserIdentityInfoLite {
     __obj.asInstanceOf[UserIdentityInfoLite]
   }
   
-  extension [Self <: UserIdentityInfoLite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserIdentityInfoLite] (val x: Self) extends AnyVal {
     
     inline def setFirstName(value: AgentFirstName): Self = StObject.set(x, "FirstName", value.asInstanceOf[js.Any])
     

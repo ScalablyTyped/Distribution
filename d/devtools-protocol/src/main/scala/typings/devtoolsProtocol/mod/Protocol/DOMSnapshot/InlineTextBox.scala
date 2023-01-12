@@ -32,7 +32,8 @@ object InlineTextBox {
     __obj.asInstanceOf[InlineTextBox]
   }
   
-  extension [Self <: InlineTextBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineTextBox] (val x: Self) extends AnyVal {
     
     inline def setBoundingBox(value: Rect): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
     

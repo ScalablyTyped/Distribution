@@ -16,7 +16,8 @@ object FetchCertificateAuthorityCsrResponse {
     __obj.asInstanceOf[FetchCertificateAuthorityCsrResponse]
   }
   
-  extension [Self <: FetchCertificateAuthorityCsrResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchCertificateAuthorityCsrResponse] (val x: Self) extends AnyVal {
     
     inline def setPemCsr(value: String): Self = StObject.set(x, "pemCsr", value.asInstanceOf[js.Any])
     

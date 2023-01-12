@@ -1010,7 +1010,8 @@ object sapMTableMod {
       __obj.asInstanceOf[TableSettings]
     }
     
-    extension [Self <: TableSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableSettings] (val x: Self) extends AnyVal {
       
       inline def setAlternateRowColors(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "alternateRowColors", value.asInstanceOf[js.Any])
       

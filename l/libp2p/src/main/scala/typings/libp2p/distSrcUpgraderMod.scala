@@ -99,7 +99,8 @@ object distSrcUpgraderMod {
       __obj.asInstanceOf[CreateConectionOptions]
     }
     
-    extension [Self <: CreateConectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateConectionOptions] (val x: Self) extends AnyVal {
       
       inline def setCryptoProtocol(value: String): Self = StObject.set(x, "cryptoProtocol", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object distSrcUpgraderMod {
       __obj.asInstanceOf[CryptoResult]
     }
     
-    extension [Self <: CryptoResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CryptoResult] (val x: Self) extends AnyVal {
       
       inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     }
@@ -169,7 +171,8 @@ object distSrcUpgraderMod {
       __obj.asInstanceOf[DefaultUpgraderComponents]
     }
     
-    extension [Self <: DefaultUpgraderComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultUpgraderComponents] (val x: Self) extends AnyVal {
       
       inline def setConnectionGater(value: ConnectionGater): Self = StObject.set(x, "connectionGater", value.asInstanceOf[js.Any])
       
@@ -206,7 +209,8 @@ object distSrcUpgraderMod {
       __obj.asInstanceOf[OnStreamOptions]
     }
     
-    extension [Self <: OnStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
@@ -239,7 +243,8 @@ object distSrcUpgraderMod {
       __obj.asInstanceOf[UpgraderInit]
     }
     
-    extension [Self <: UpgraderInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpgraderInit] (val x: Self) extends AnyVal {
       
       inline def setConnectionEncryption(value: js.Array[ConnectionEncrypter[Any]]): Self = StObject.set(x, "connectionEncryption", value.asInstanceOf[js.Any])
       

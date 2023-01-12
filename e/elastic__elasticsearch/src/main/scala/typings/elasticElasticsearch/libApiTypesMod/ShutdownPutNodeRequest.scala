@@ -30,7 +30,8 @@ object ShutdownPutNodeRequest {
     __obj.asInstanceOf[ShutdownPutNodeRequest]
   }
   
-  extension [Self <: ShutdownPutNodeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShutdownPutNodeRequest] (val x: Self) extends AnyVal {
     
     inline def setAllocation_delay(value: String): Self = StObject.set(x, "allocation_delay", value.asInstanceOf[js.Any])
     

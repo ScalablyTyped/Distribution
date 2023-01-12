@@ -28,7 +28,8 @@ object BatchListAttachedIndices {
     __obj.asInstanceOf[BatchListAttachedIndices]
   }
   
-  extension [Self <: BatchListAttachedIndices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchListAttachedIndices] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: NumberResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

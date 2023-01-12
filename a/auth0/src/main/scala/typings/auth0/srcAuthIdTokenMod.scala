@@ -32,7 +32,8 @@ object srcAuthIdTokenMod {
       __obj.asInstanceOf[DecodedToken]
     }
     
-    extension [Self <: DecodedToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodedToken] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object srcAuthIdTokenMod {
       __obj.asInstanceOf[ValidateOptions]
     }
     
-    extension [Self <: ValidateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidateOptions] (val x: Self) extends AnyVal {
       
       inline def setAudience(value: String | js.Array[String]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       

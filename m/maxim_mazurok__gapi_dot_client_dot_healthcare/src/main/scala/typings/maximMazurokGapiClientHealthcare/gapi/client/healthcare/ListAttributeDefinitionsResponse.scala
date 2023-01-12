@@ -19,7 +19,8 @@ object ListAttributeDefinitionsResponse {
     __obj.asInstanceOf[ListAttributeDefinitionsResponse]
   }
   
-  extension [Self <: ListAttributeDefinitionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAttributeDefinitionsResponse] (val x: Self) extends AnyVal {
     
     inline def setAttributeDefinitions(value: js.Array[AttributeDefinition]): Self = StObject.set(x, "attributeDefinitions", value.asInstanceOf[js.Any])
     

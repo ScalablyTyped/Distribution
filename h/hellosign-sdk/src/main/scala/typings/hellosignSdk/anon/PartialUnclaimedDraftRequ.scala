@@ -58,7 +58,8 @@ object PartialUnclaimedDraftRequ {
     __obj.asInstanceOf[PartialUnclaimedDraftRequ]
   }
   
-  extension [Self <: PartialUnclaimedDraftRequ](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialUnclaimedDraftRequ] (val x: Self) extends AnyVal {
     
     inline def setAllow_decline(value: Double): Self = StObject.set(x, "allow_decline", value.asInstanceOf[js.Any])
     

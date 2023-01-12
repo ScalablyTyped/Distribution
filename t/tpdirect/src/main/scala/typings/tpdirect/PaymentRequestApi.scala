@@ -38,7 +38,8 @@ object PaymentRequestApi {
     __obj.asInstanceOf[PaymentRequestApi]
   }
   
-  extension [Self <: PaymentRequestApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaymentRequestApi] (val x: Self) extends AnyVal {
     
     inline def setCheckAvailability(value: () => Boolean): Self = StObject.set(x, "checkAvailability", js.Any.fromFunction0(value))
     

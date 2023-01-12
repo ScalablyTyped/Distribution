@@ -319,7 +319,8 @@ object sapMTreeMod {
       __obj.asInstanceOf[TreeSettings]
     }
     
-    extension [Self <: TreeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeSettings] (val x: Self) extends AnyVal {
       
       inline def setToggleOpenState(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "toggleOpenState", js.Any.fromFunction1(value))
       

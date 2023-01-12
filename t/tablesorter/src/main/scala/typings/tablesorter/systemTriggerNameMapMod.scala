@@ -165,7 +165,8 @@ object systemTriggerNameMapMod {
       __obj.asInstanceOf[TriggerNameMap[TElement]]
     }
     
-    extension [Self <: TriggerNameMap[?], TElement](x: Self & TriggerNameMap[TElement]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TriggerNameMap[?], TElement] (val x: Self & TriggerNameMap[TElement]) extends AnyVal {
       
       inline def setAddRows(
         value: js.Tuple3[JQuery[HTMLElement] | String, Boolean, js.UndefOr[TriggerCallbackHandler[TElement]]]

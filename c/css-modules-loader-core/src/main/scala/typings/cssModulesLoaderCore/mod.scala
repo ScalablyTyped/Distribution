@@ -80,7 +80,8 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setExportTokens(value: ExportTokens): Self = StObject.set(x, "exportTokens", value.asInstanceOf[js.Any])
       

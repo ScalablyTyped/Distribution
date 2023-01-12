@@ -63,7 +63,8 @@ object DomainController {
     __obj.asInstanceOf[DomainController]
   }
   
-  extension [Self <: DomainController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainController] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: AvailabilityZone): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     

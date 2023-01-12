@@ -23,7 +23,8 @@ object SavingsPlanOfferingFilterElement {
     __obj.asInstanceOf[SavingsPlanOfferingFilterElement]
   }
   
-  extension [Self <: SavingsPlanOfferingFilterElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavingsPlanOfferingFilterElement] (val x: Self) extends AnyVal {
     
     inline def setName(value: SavingsPlanOfferingFilterAttribute): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

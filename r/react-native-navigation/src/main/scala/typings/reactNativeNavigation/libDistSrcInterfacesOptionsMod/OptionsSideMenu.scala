@@ -32,7 +32,8 @@ object OptionsSideMenu {
     __obj.asInstanceOf[OptionsSideMenu]
   }
   
-  extension [Self <: OptionsSideMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsSideMenu] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: SideMenuSide): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

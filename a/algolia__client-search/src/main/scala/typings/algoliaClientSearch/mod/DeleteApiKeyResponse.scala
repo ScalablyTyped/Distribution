@@ -18,7 +18,8 @@ object DeleteApiKeyResponse {
     __obj.asInstanceOf[DeleteApiKeyResponse]
   }
   
-  extension [Self <: DeleteApiKeyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteApiKeyResponse] (val x: Self) extends AnyVal {
     
     inline def setDeletedAt(value: String): Self = StObject.set(x, "deletedAt", value.asInstanceOf[js.Any])
   }

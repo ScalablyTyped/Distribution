@@ -109,7 +109,8 @@ object libBasemanagerMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
         
@@ -157,7 +158,8 @@ object libBasemanagerMod {
       __obj.asInstanceOf[IManager]
     }
     
-    extension [Self <: IManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IManager] (val x: Self) extends AnyVal {
       
       inline def setConnectionFailure(value: ISignal[IManager, NetworkError]): Self = StObject.set(x, "connectionFailure", value.asInstanceOf[js.Any])
       

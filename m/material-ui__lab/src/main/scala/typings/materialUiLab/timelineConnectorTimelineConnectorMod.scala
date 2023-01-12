@@ -50,7 +50,8 @@ object timelineConnectorTimelineConnectorMod {
       __obj.asInstanceOf[TimelineConnectorProps]
     }
     
-    extension [Self <: TimelineConnectorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimelineConnectorProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

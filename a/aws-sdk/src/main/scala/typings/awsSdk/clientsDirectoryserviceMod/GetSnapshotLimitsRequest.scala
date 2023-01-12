@@ -18,7 +18,8 @@ object GetSnapshotLimitsRequest {
     __obj.asInstanceOf[GetSnapshotLimitsRequest]
   }
   
-  extension [Self <: GetSnapshotLimitsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSnapshotLimitsRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
   }

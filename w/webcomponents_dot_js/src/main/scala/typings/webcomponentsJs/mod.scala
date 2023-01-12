@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[CustomElementInit]
     }
     
-    extension [Self <: CustomElementInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomElementInit] (val x: Self) extends AnyVal {
       
       inline def setExtends(value: String): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object mod {
       __obj.asInstanceOf[CustomElementsPolyfill]
     }
     
-    extension [Self <: CustomElementsPolyfill](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomElementsPolyfill] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
@@ -95,7 +97,8 @@ object mod {
       __obj.asInstanceOf[HTMLImportsPolyfill]
     }
     
-    extension [Self <: HTMLImportsPolyfill](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTMLImportsPolyfill] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
@@ -124,7 +127,8 @@ object mod {
       __obj.asInstanceOf[Polyfill]
     }
     
-    extension [Self <: Polyfill](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Polyfill] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     }
@@ -154,7 +158,8 @@ object mod {
         __obj.asInstanceOf[Document]
       }
       
-      extension [Self <: Document](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
         
         inline def setRegisterElement(value: (String, CustomElementInit) => CustomElementConstructor): Self = StObject.set(x, "registerElement", js.Any.fromFunction2(value))
       }
@@ -173,7 +178,8 @@ object mod {
         __obj.asInstanceOf[Element]
       }
       
-      extension [Self <: Element](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
         
         inline def setCreateShadowRoot(value: () => ShadowRoot): Self = StObject.set(x, "createShadowRoot", js.Any.fromFunction0(value))
         
@@ -195,7 +201,8 @@ object mod {
         __obj.asInstanceOf[ElementDefinitionOptions]
       }
       
-      extension [Self <: ElementDefinitionOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ElementDefinitionOptions] (val x: Self) extends AnyVal {
         
         inline def setExtends(value: String): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
         
@@ -235,7 +242,8 @@ object mod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setCustomElements(value: CustomElementsPolyfill): Self = StObject.set(x, "CustomElements", value.asInstanceOf[js.Any])
         

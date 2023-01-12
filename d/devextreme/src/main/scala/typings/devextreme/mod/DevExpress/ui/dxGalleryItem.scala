@@ -25,7 +25,8 @@ object dxGalleryItem {
     __obj.asInstanceOf[dxGalleryItem]
   }
   
-  extension [Self <: dxGalleryItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxGalleryItem] (val x: Self) extends AnyVal {
     
     inline def setImageAlt(value: String): Self = StObject.set(x, "imageAlt", value.asInstanceOf[js.Any])
     

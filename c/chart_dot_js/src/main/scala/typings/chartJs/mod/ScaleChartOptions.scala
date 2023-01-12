@@ -26,7 +26,8 @@ object ScaleChartOptions {
     __obj.asInstanceOf[ScaleChartOptions[TType]]
   }
   
-  extension [Self <: ScaleChartOptions[?], TType /* <: ChartType */](x: Self & ScaleChartOptions[TType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleChartOptions[?], TType /* <: ChartType */] (val x: Self & ScaleChartOptions[TType]) extends AnyVal {
     
     inline def setScales(
       value: StringDictionary[

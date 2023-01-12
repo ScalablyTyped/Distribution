@@ -23,7 +23,8 @@ object DeleteTypedLinkFacetRequest {
     __obj.asInstanceOf[DeleteTypedLinkFacetRequest]
   }
   
-  extension [Self <: DeleteTypedLinkFacetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTypedLinkFacetRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: TypedLinkName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

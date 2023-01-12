@@ -33,7 +33,8 @@ object ManagedAgent {
     __obj.asInstanceOf[ManagedAgent]
   }
   
-  extension [Self <: ManagedAgent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedAgent] (val x: Self) extends AnyVal {
     
     inline def setLastStartedAt(value: js.Date): Self = StObject.set(x, "lastStartedAt", value.asInstanceOf[js.Any])
     

@@ -91,7 +91,8 @@ object CaStore {
     __obj.asInstanceOf[CaStore]
   }
   
-  extension [Self <: CaStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaStore] (val x: Self) extends AnyVal {
     
     inline def setCaStore(value: CAStore | js.Array[Certificate]): Self = StObject.set(x, "caStore", value.asInstanceOf[js.Any])
     

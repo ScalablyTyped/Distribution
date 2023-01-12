@@ -69,7 +69,8 @@ object EncoderSettings {
     __obj.asInstanceOf[EncoderSettings]
   }
   
-  extension [Self <: EncoderSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncoderSettings] (val x: Self) extends AnyVal {
     
     inline def setAudioDescriptions(value: listOfAudioDescription): Self = StObject.set(x, "AudioDescriptions", value.asInstanceOf[js.Any])
     

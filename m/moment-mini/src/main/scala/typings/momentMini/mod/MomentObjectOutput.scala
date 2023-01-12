@@ -37,7 +37,8 @@ object MomentObjectOutput {
     __obj.asInstanceOf[MomentObjectOutput]
   }
   
-  extension [Self <: MomentObjectOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MomentObjectOutput] (val x: Self) extends AnyVal {
     
     inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

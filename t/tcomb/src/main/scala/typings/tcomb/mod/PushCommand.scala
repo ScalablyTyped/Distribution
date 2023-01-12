@@ -18,7 +18,8 @@ object PushCommand {
     __obj.asInstanceOf[PushCommand]
   }
   
-  extension [Self <: PushCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushCommand] (val x: Self) extends AnyVal {
     
     inline def set$push(value: js.Array[scala.Any]): Self = StObject.set(x, "$push", value.asInstanceOf[js.Any])
     

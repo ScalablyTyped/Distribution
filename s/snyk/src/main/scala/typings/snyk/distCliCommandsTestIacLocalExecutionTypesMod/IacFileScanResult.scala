@@ -28,7 +28,8 @@ object IacFileScanResult {
     __obj.asInstanceOf[IacFileScanResult]
   }
   
-  extension [Self <: IacFileScanResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IacFileScanResult] (val x: Self) extends AnyVal {
     
     inline def setViolatedPolicies(value: js.Array[PolicyMetadata]): Self = StObject.set(x, "violatedPolicies", value.asInstanceOf[js.Any])
     

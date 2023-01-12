@@ -15,7 +15,8 @@ object GetMediaQueriesResponse {
     __obj.asInstanceOf[GetMediaQueriesResponse]
   }
   
-  extension [Self <: GetMediaQueriesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMediaQueriesResponse] (val x: Self) extends AnyVal {
     
     inline def setMedias(value: js.Array[CSSMedia]): Self = StObject.set(x, "medias", value.asInstanceOf[js.Any])
     

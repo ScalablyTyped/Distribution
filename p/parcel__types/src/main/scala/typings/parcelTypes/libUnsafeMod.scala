@@ -22,7 +22,8 @@ object libUnsafeMod {
       __obj.asInstanceOf[AST]
     }
     
-    extension [Self <: AST](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AST] (val x: Self) extends AnyVal {
       
       inline def setProgram(value: Any): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
       

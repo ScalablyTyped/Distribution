@@ -25,7 +25,8 @@ object ContractTermOfferParty {
     __obj.asInstanceOf[ContractTermOfferParty]
   }
   
-  extension [Self <: ContractTermOfferParty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContractTermOfferParty] (val x: Self) extends AnyVal {
     
     inline def setReference(value: js.Array[Reference]): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     

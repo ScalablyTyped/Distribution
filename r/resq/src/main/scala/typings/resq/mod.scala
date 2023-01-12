@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[RESQNode]
     }
     
-    extension [Self <: RESQNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RESQNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[RESQNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

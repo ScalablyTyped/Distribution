@@ -26,7 +26,8 @@ object HttpBody {
     __obj.asInstanceOf[HttpBody]
   }
   
-  extension [Self <: HttpBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpBody] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

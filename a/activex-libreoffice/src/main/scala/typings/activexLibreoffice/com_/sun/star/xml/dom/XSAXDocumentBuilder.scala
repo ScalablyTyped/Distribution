@@ -49,7 +49,8 @@ object XSAXDocumentBuilder {
     __obj.asInstanceOf[XSAXDocumentBuilder]
   }
   
-  extension [Self <: XSAXDocumentBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSAXDocumentBuilder] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: XDocument): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
     

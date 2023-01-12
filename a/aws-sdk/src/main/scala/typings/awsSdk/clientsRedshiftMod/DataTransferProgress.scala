@@ -43,7 +43,8 @@ object DataTransferProgress {
     __obj.asInstanceOf[DataTransferProgress]
   }
   
-  extension [Self <: DataTransferProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTransferProgress] (val x: Self) extends AnyVal {
     
     inline def setCurrentRateInMegaBytesPerSecond(value: DoubleOptional): Self = StObject.set(x, "CurrentRateInMegaBytesPerSecond", value.asInstanceOf[js.Any])
     

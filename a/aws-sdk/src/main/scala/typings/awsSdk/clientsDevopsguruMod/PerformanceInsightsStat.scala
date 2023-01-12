@@ -23,7 +23,8 @@ object PerformanceInsightsStat {
     __obj.asInstanceOf[PerformanceInsightsStat]
   }
   
-  extension [Self <: PerformanceInsightsStat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceInsightsStat] (val x: Self) extends AnyVal {
     
     inline def setType(value: PerformanceInsightsStatType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

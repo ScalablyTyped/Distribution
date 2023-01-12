@@ -95,7 +95,8 @@ object Custom404 {
     __obj.asInstanceOf[Custom404]
   }
   
-  extension [Self <: Custom404](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Custom404] (val x: Self) extends AnyVal {
     
     inline def setBuild_type(value: legacy | workflow): Self = StObject.set(x, "build_type", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CancelServiceInstanceDeploymentInput {
     __obj.asInstanceOf[CancelServiceInstanceDeploymentInput]
   }
   
-  extension [Self <: CancelServiceInstanceDeploymentInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelServiceInstanceDeploymentInput] (val x: Self) extends AnyVal {
     
     inline def setServiceInstanceName(value: ResourceName): Self = StObject.set(x, "serviceInstanceName", value.asInstanceOf[js.Any])
     

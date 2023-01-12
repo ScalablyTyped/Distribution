@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[CodegenOptions]
     }
     
-    extension [Self <: CodegenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodegenOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowed(value: js.Array[String]): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
       

@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object mod {
       __obj.asInstanceOf[MatchResult[P]]
     }
     
-    extension [Self <: MatchResult[?], P /* <: js.Object */](x: Self & MatchResult[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchResult[?], P /* <: js.Object */] (val x: Self & MatchResult[P]) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object mod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
@@ -152,7 +155,8 @@ object mod {
       __obj.asInstanceOf[RegexpToFunctionOptions]
     }
     
-    extension [Self <: RegexpToFunctionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegexpToFunctionOptions] (val x: Self) extends AnyVal {
       
       inline def setDecode(value: (/* value */ String, /* token */ Key) => String): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
       
@@ -186,7 +190,8 @@ object mod {
       __obj.asInstanceOf[TokensToFunctionOptions]
     }
     
-    extension [Self <: TokensToFunctionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokensToFunctionOptions] (val x: Self) extends AnyVal {
       
       inline def setEncode(value: (/* value */ String, /* token */ Key) => String): Self = StObject.set(x, "encode", js.Any.fromFunction2(value))
       
@@ -246,7 +251,8 @@ object mod {
       __obj.asInstanceOf[TokensToRegexpOptions]
     }
     
-    extension [Self <: TokensToRegexpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokensToRegexpOptions] (val x: Self) extends AnyVal {
       
       inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       

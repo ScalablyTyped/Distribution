@@ -37,7 +37,8 @@ object HeaderFilter {
     __obj.asInstanceOf[HeaderFilter]
   }
   
-  extension [Self <: HeaderFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeaderFilter] (val x: Self) extends AnyVal {
     
     inline def setNameContains(value: String | js.Array[String]): Self = StObject.set(x, "nameContains", value.asInstanceOf[js.Any])
     

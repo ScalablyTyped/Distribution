@@ -26,7 +26,8 @@ object PhotoCapabilities {
     __obj.asInstanceOf[PhotoCapabilities]
   }
   
-  extension [Self <: PhotoCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhotoCapabilities] (val x: Self) extends AnyVal {
     
     inline def setFillLightMode(value: js.Array[FillLightMode]): Self = StObject.set(x, "fillLightMode", value.asInstanceOf[js.Any])
     

@@ -986,7 +986,8 @@ object ngccSrcHostEsm2015HostMod {
       __obj.asInstanceOf[DecoratorCall]
     }
     
-    extension [Self <: DecoratorCall](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecoratorCall] (val x: Self) extends AnyVal {
       
       inline def setDecorator(value: Decorator): Self = StObject.set(x, "decorator", value.asInstanceOf[js.Any])
       
@@ -1027,7 +1028,8 @@ object ngccSrcHostEsm2015HostMod {
       __obj.asInstanceOf[DecoratorInfo]
     }
     
-    extension [Self <: DecoratorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecoratorInfo] (val x: Self) extends AnyVal {
       
       inline def setClassDecorators(value: js.Array[Decorator]): Self = StObject.set(x, "classDecorators", value.asInstanceOf[js.Any])
       
@@ -1160,7 +1162,8 @@ object ngccSrcHostEsm2015HostMod {
       __obj.asInstanceOf[ParamInfo]
     }
     
-    extension [Self <: ParamInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParamInfo] (val x: Self) extends AnyVal {
       
       inline def setDecorators(value: js.Array[Decorator]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
       
@@ -1192,7 +1195,8 @@ object ngccSrcHostEsm2015HostMod {
       __obj.asInstanceOf[ParameterDecorators]
     }
     
-    extension [Self <: ParameterDecorators](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParameterDecorators] (val x: Self) extends AnyVal {
       
       inline def setDecorator(value: Decorator): Self = StObject.set(x, "decorator", value.asInstanceOf[js.Any])
       
@@ -1218,7 +1222,8 @@ object ngccSrcHostEsm2015HostMod {
       __obj.asInstanceOf[ParameterTypes]
     }
     
-    extension [Self <: ParameterTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParameterTypes] (val x: Self) extends AnyVal {
       
       inline def setType(value: params): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

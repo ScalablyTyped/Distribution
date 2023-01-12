@@ -24,7 +24,8 @@ object WebAccountProviderCommand {
     __obj.asInstanceOf[WebAccountProviderCommand]
   }
   
-  extension [Self <: WebAccountProviderCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebAccountProviderCommand] (val x: Self) extends AnyVal {
     
     inline def setInvoked(value: /* command */ WebAccountProviderCommand => Unit): Self = StObject.set(x, "invoked", js.Any.fromFunction1(value))
     

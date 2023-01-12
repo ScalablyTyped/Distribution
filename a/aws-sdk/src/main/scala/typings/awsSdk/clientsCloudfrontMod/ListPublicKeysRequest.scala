@@ -23,7 +23,8 @@ object ListPublicKeysRequest {
     __obj.asInstanceOf[ListPublicKeysRequest]
   }
   
-  extension [Self <: ListPublicKeysRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPublicKeysRequest] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

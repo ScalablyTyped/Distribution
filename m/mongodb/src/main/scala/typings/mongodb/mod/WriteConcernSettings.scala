@@ -32,7 +32,8 @@ object WriteConcernSettings {
     __obj.asInstanceOf[WriteConcernSettings]
   }
   
-  extension [Self <: WriteConcernSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteConcernSettings] (val x: Self) extends AnyVal {
     
     inline def setFsync(value: Boolean | `1`): Self = StObject.set(x, "fsync", value.asInstanceOf[js.Any])
     

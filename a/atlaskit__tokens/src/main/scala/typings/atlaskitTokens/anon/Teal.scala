@@ -38,7 +38,8 @@ object Teal {
     __obj.asInstanceOf[Teal]
   }
   
-  extension [Self <: Teal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Teal] (val x: Self) extends AnyVal {
     
     inline def setBlue(value: BoldPaintTokenDefaultPaintToken): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
     

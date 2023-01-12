@@ -109,7 +109,8 @@ object tlsMod {
       __obj.asInstanceOf[ConnectionOptions]
     }
     
-    extension [Self <: ConnectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
       
       inline def setCa(value: Any): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
@@ -168,7 +169,8 @@ object tlsMod {
       __obj.asInstanceOf[SecureContext]
     }
     
-    extension [Self <: SecureContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SecureContext] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     }
@@ -204,7 +206,8 @@ object tlsMod {
       __obj.asInstanceOf[SecureContextOptions]
     }
     
-    extension [Self <: SecureContextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SecureContextOptions] (val x: Self) extends AnyVal {
       
       inline def setCa(value: Any): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
@@ -253,7 +256,8 @@ object tlsMod {
       __obj.asInstanceOf[SecurePair]
     }
     
-    extension [Self <: SecurePair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SecurePair] (val x: Self) extends AnyVal {
       
       inline def setCleartext(value: Any): Self = StObject.set(x, "cleartext", value.asInstanceOf[js.Any])
       
@@ -309,7 +313,8 @@ object tlsMod {
       __obj.asInstanceOf[TlsOptions]
     }
     
-    extension [Self <: TlsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TlsOptions] (val x: Self) extends AnyVal {
       
       inline def setCa(value: Any): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       

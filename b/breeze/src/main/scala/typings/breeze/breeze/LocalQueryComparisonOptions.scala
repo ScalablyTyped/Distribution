@@ -15,7 +15,8 @@ object LocalQueryComparisonOptions {
     __obj.asInstanceOf[LocalQueryComparisonOptions]
   }
   
-  extension [Self <: LocalQueryComparisonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalQueryComparisonOptions] (val x: Self) extends AnyVal {
     
     inline def setSetAsDefault(value: () => Unit): Self = StObject.set(x, "setAsDefault", js.Any.fromFunction0(value))
   }

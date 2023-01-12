@@ -31,7 +31,8 @@ object CriticalSound {
     __obj.asInstanceOf[CriticalSound]
   }
   
-  extension [Self <: CriticalSound](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CriticalSound] (val x: Self) extends AnyVal {
     
     inline def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
     

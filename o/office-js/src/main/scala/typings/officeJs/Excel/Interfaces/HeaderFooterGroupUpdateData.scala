@@ -75,7 +75,8 @@ object HeaderFooterGroupUpdateData {
     __obj.asInstanceOf[HeaderFooterGroupUpdateData]
   }
   
-  extension [Self <: HeaderFooterGroupUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeaderFooterGroupUpdateData] (val x: Self) extends AnyVal {
     
     inline def setDefaultForAllPages(value: HeaderFooterUpdateData): Self = StObject.set(x, "defaultForAllPages", value.asInstanceOf[js.Any])
     

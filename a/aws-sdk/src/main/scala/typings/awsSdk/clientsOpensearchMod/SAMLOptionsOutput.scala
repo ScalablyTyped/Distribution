@@ -38,7 +38,8 @@ object SAMLOptionsOutput {
     __obj.asInstanceOf[SAMLOptionsOutput]
   }
   
-  extension [Self <: SAMLOptionsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SAMLOptionsOutput] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

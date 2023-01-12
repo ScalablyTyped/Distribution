@@ -75,7 +75,8 @@ object IMouseEventArgs {
     __obj.asInstanceOf[IMouseEventArgs]
   }
   
-  extension [Self <: IMouseEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMouseEventArgs] (val x: Self) extends AnyVal {
     
     inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     

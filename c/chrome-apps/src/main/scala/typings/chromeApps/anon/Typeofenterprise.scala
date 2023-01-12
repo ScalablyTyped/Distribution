@@ -39,7 +39,8 @@ object Typeofenterprise {
     __obj.asInstanceOf[Typeofenterprise]
   }
   
-  extension [Self <: Typeofenterprise](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofenterprise] (val x: Self) extends AnyVal {
     
     inline def setDeviceAttributes(value: TypeofdeviceAttributes): Self = StObject.set(x, "deviceAttributes", value.asInstanceOf[js.Any])
     

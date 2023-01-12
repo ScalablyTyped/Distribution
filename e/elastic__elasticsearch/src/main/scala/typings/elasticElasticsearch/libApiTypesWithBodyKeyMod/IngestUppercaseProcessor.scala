@@ -21,7 +21,8 @@ object IngestUppercaseProcessor {
     __obj.asInstanceOf[IngestUppercaseProcessor]
   }
   
-  extension [Self <: IngestUppercaseProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestUppercaseProcessor] (val x: Self) extends AnyVal {
     
     inline def setField(value: Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object PartialProductSwitcherOpt {
     __obj.asInstanceOf[PartialProductSwitcherOpt]
   }
   
-  extension [Self <: PartialProductSwitcherOpt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialProductSwitcherOpt] (val x: Self) extends AnyVal {
     
     inline def setAttribInitTarget(value: String): Self = StObject.set(x, "attribInitTarget", value.asInstanceOf[js.Any])
     

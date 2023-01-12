@@ -28,7 +28,8 @@ object Typeofpg {
     __obj.asInstanceOf[Typeofpg]
   }
   
-  extension [Self <: Typeofpg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofpg] (val x: Self) extends AnyVal {
     
     inline def setClient(value: Instantiable1[/* config */ String | IConnectionParameters[IClient], IClient]): Self = StObject.set(x, "Client", value.asInstanceOf[js.Any])
     

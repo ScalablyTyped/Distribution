@@ -17,7 +17,8 @@ object IQCStatement {
     __obj.asInstanceOf[IQCStatement]
   }
   
-  extension [Self <: IQCStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IQCStatement] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

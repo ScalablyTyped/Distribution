@@ -18,7 +18,8 @@ object GetQueueUrlResult {
     __obj.asInstanceOf[GetQueueUrlResult]
   }
   
-  extension [Self <: GetQueueUrlResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetQueueUrlResult] (val x: Self) extends AnyVal {
     
     inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
     

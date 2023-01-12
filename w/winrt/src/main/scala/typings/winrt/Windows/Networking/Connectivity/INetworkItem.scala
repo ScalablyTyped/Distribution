@@ -17,7 +17,8 @@ object INetworkItem {
     __obj.asInstanceOf[INetworkItem]
   }
   
-  extension [Self <: INetworkItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INetworkItem] (val x: Self) extends AnyVal {
     
     inline def setGetNetworkTypes(value: () => NetworkTypes): Self = StObject.set(x, "getNetworkTypes", js.Any.fromFunction0(value))
     

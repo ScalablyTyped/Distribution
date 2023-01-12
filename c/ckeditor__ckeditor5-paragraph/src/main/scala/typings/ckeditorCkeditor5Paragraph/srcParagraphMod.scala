@@ -71,7 +71,8 @@ object srcParagraphMod {
         __obj.asInstanceOf[Commands]
       }
       
-      extension [Self <: Commands](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Commands] (val x: Self) extends AnyVal {
         
         inline def setInsertParagraph(value: typings.ckeditorCkeditor5Paragraph.srcInsertparagraphcommandMod.default): Self = StObject.set(x, "insertParagraph", value.asInstanceOf[js.Any])
         
@@ -94,7 +95,8 @@ object srcParagraphMod {
         __obj.asInstanceOf[Plugins]
       }
       
-      extension [Self <: Plugins](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
         
         inline def setParagraph(value: Paragraph): Self = StObject.set(x, "Paragraph", value.asInstanceOf[js.Any])
       }

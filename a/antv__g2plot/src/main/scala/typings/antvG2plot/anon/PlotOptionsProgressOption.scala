@@ -98,7 +98,8 @@ object PlotOptionsProgressOption {
     __obj.asInstanceOf[PlotOptionsProgressOption]
   }
   
-  extension [Self <: PlotOptionsProgressOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotOptionsProgressOption] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

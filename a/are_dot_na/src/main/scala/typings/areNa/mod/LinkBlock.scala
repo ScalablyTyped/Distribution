@@ -44,7 +44,8 @@ object LinkBlock {
     __obj.asInstanceOf[LinkBlock]
   }
   
-  extension [Self <: LinkBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkBlock] (val x: Self) extends AnyVal {
     
     inline def setClass(value: Link): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     

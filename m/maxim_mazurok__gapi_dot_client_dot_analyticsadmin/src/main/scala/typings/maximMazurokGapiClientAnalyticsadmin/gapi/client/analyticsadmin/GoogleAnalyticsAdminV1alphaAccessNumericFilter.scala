@@ -19,7 +19,8 @@ object GoogleAnalyticsAdminV1alphaAccessNumericFilter {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaAccessNumericFilter]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaAccessNumericFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAccessNumericFilter] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     

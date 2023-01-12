@@ -72,7 +72,8 @@ object TargetPool {
     __obj.asInstanceOf[TargetPool]
   }
   
-  extension [Self <: TargetPool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetPool] (val x: Self) extends AnyVal {
     
     inline def setBackupPool(value: String): Self = StObject.set(x, "backupPool", value.asInstanceOf[js.Any])
     

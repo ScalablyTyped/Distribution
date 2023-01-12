@@ -32,7 +32,8 @@ object libReaderWalkerMod {
       __obj.asInstanceOf[Walker]
     }
     
-    extension [Self <: Walker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Walker] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: /* offset */ Double => Double): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
       

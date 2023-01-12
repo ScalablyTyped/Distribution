@@ -113,7 +113,8 @@ object mod {
       __obj.asInstanceOf[BaseErrorLoggerOptions]
     }
     
-    extension [Self <: BaseErrorLoggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseErrorLoggerOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseMeta(value: js.Object): Self = StObject.set(x, "baseMeta", value.asInstanceOf[js.Any])
       
@@ -280,7 +281,8 @@ object mod {
       __obj.asInstanceOf[BaseLoggerOptions]
     }
     
-    extension [Self <: BaseLoggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseLoggerOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowFilterOutWhitelistedRequestBody(value: Boolean): Self = StObject.set(x, "allowFilterOutWhitelistedRequestBody", value.asInstanceOf[js.Any])
       
@@ -496,7 +498,8 @@ object mod {
       __obj.asInstanceOf[ErrorLoggerOptionsWithTransports]
     }
     
-    extension [Self <: ErrorLoggerOptionsWithTransports](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorLoggerOptionsWithTransports] (val x: Self) extends AnyVal {
       
       inline def setTransports(value: js.Array[typings.winstonTransport.mod.^]): Self = StObject.set(x, "transports", value.asInstanceOf[js.Any])
       
@@ -518,7 +521,8 @@ object mod {
       __obj.asInstanceOf[ErrorLoggerOptionsWithWinstonInstance]
     }
     
-    extension [Self <: ErrorLoggerOptionsWithWinstonInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorLoggerOptionsWithWinstonInstance] (val x: Self) extends AnyVal {
       
       inline def setWinstonInstance(value: Logger): Self = StObject.set(x, "winstonInstance", value.asInstanceOf[js.Any])
     }
@@ -591,7 +595,8 @@ object mod {
       __obj.asInstanceOf[LoggerOptionsWithTransports]
     }
     
-    extension [Self <: LoggerOptionsWithTransports](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggerOptionsWithTransports] (val x: Self) extends AnyVal {
       
       inline def setTransports(value: js.Array[typings.winstonTransport.mod.^]): Self = StObject.set(x, "transports", value.asInstanceOf[js.Any])
       
@@ -613,7 +618,8 @@ object mod {
       __obj.asInstanceOf[LoggerOptionsWithWinstonInstance]
     }
     
-    extension [Self <: LoggerOptionsWithWinstonInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggerOptionsWithWinstonInstance] (val x: Self) extends AnyVal {
       
       inline def setWinstonInstance(value: Logger): Self = StObject.set(x, "winstonInstance", value.asInstanceOf[js.Any])
     }
@@ -662,7 +668,8 @@ object mod {
       __obj.asInstanceOf[StatusLevels]
     }
     
-    extension [Self <: StatusLevels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatusLevels] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

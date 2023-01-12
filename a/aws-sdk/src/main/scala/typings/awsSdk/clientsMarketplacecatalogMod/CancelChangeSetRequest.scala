@@ -23,7 +23,8 @@ object CancelChangeSetRequest {
     __obj.asInstanceOf[CancelChangeSetRequest]
   }
   
-  extension [Self <: CancelChangeSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelChangeSetRequest] (val x: Self) extends AnyVal {
     
     inline def setCatalog(value: Catalog): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
     

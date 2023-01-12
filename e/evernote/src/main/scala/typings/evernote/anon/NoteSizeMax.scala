@@ -23,7 +23,8 @@ object NoteSizeMax {
     __obj.asInstanceOf[NoteSizeMax]
   }
   
-  extension [Self <: NoteSizeMax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoteSizeMax] (val x: Self) extends AnyVal {
     
     inline def setNoteResourceCountMax(value: Double): Self = StObject.set(x, "noteResourceCountMax", value.asInstanceOf[js.Any])
     

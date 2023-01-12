@@ -28,7 +28,8 @@ object ListServerCertificateTagsRequest {
     __obj.asInstanceOf[ListServerCertificateTagsRequest]
   }
   
-  extension [Self <: ListServerCertificateTagsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListServerCertificateTagsRequest] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AddSegmentsParams {
     __obj.asInstanceOf[AddSegmentsParams]
   }
   
-  extension [Self <: AddSegmentsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddSegmentsParams] (val x: Self) extends AnyVal {
     
     inline def setPnr(value: String): Self = StObject.set(x, "pnr", value.asInstanceOf[js.Any])
     

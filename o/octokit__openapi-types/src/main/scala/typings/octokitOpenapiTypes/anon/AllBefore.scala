@@ -31,7 +31,8 @@ object AllBefore {
     __obj.asInstanceOf[AllBefore]
   }
   
-  extension [Self <: AllBefore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllBefore] (val x: Self) extends AnyVal {
     
     inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

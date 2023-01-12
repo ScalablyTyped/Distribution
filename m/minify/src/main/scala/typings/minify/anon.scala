@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[MaxSize]
     }
     
-    extension [Self <: MaxSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxSize] (val x: Self) extends AnyVal {
       
       inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[PickOptionscss]
     }
     
-    extension [Self <: PickOptionscss](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickOptionscss] (val x: Self) extends AnyVal {
       
       inline def setCss(value: Options): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
@@ -63,7 +65,8 @@ object anon {
       __obj.asInstanceOf[PickOptionshtml]
     }
     
-    extension [Self <: PickOptionshtml](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickOptionshtml] (val x: Self) extends AnyVal {
       
       inline def setHtml(value: typings.htmlMinifierTerser.mod.Options): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
@@ -83,7 +86,8 @@ object anon {
       __obj.asInstanceOf[PickOptionsimg]
     }
     
-    extension [Self <: PickOptionsimg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickOptionsimg] (val x: Self) extends AnyVal {
       
       inline def setImg(value: MaxSize): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
       
@@ -104,7 +108,8 @@ object anon {
       __obj.asInstanceOf[PickOptionsjs]
     }
     
-    extension [Self <: PickOptionsjs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickOptionsjs] (val x: Self) extends AnyVal {
       
       inline def setJs_(value: MinifyOptions): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
       

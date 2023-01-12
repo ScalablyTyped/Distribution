@@ -23,7 +23,8 @@ object DBClusterBacktrackMessage {
     __obj.asInstanceOf[DBClusterBacktrackMessage]
   }
   
-  extension [Self <: DBClusterBacktrackMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBClusterBacktrackMessage] (val x: Self) extends AnyVal {
     
     inline def setDBClusterBacktracks(value: DBClusterBacktrackList): Self = StObject.set(x, "DBClusterBacktracks", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,8 @@ object buildLaunchBrowserDottypesMod {
       __obj.asInstanceOf[LaunchBrowserImpl]
     }
     
-    extension [Self <: LaunchBrowserImpl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LaunchBrowserImpl] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -87,7 +88,8 @@ object buildLaunchBrowserDottypesMod {
       __obj.asInstanceOf[LaunchBrowserInstance]
     }
     
-    extension [Self <: LaunchBrowserInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LaunchBrowserInstance] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     }

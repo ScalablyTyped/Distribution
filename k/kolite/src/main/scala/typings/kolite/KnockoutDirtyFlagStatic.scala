@@ -17,7 +17,8 @@ object KnockoutDirtyFlagStatic {
     __obj.asInstanceOf[KnockoutDirtyFlagStatic]
   }
   
-  extension [Self <: KnockoutDirtyFlagStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutDirtyFlagStatic] (val x: Self) extends AnyVal {
     
     inline def setDirtyFlag(value: DirtyFlag): Self = StObject.set(x, "DirtyFlag", value.asInstanceOf[js.Any])
   }

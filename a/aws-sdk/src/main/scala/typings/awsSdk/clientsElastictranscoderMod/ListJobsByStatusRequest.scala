@@ -28,7 +28,8 @@ object ListJobsByStatusRequest {
     __obj.asInstanceOf[ListJobsByStatusRequest]
   }
   
-  extension [Self <: ListJobsByStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListJobsByStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setAscending(value: Ascending): Self = StObject.set(x, "Ascending", value.asInstanceOf[js.Any])
     

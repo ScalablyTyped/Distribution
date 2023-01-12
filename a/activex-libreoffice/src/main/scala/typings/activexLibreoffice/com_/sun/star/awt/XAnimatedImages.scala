@@ -99,7 +99,8 @@ object XAnimatedImages {
     __obj.asInstanceOf[XAnimatedImages]
   }
   
-  extension [Self <: XAnimatedImages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAnimatedImages] (val x: Self) extends AnyVal {
     
     inline def setAutoRepeat(value: Boolean): Self = StObject.set(x, "AutoRepeat", value.asInstanceOf[js.Any])
     

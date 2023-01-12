@@ -18,7 +18,8 @@ object Printing3DCompositeMaterial {
     __obj.asInstanceOf[Printing3DCompositeMaterial]
   }
   
-  extension [Self <: Printing3DCompositeMaterial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Printing3DCompositeMaterial] (val x: Self) extends AnyVal {
     
     inline def setValues(value: IVector[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }

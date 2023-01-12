@@ -23,7 +23,8 @@ object DataRepositoryTaskFilter {
     __obj.asInstanceOf[DataRepositoryTaskFilter]
   }
   
-  extension [Self <: DataRepositoryTaskFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataRepositoryTaskFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: DataRepositoryTaskFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

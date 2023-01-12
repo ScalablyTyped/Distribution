@@ -23,7 +23,8 @@ object ClipId {
     __obj.asInstanceOf[ClipId]
   }
   
-  extension [Self <: ClipId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClipId] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: Requireable[String | Double | Boolean | ReactElementLike | ReactNodeArray]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object anon {
       __obj.asInstanceOf[PartialSFCTemplateCompile]
     }
     
-    extension [Self <: PartialSFCTemplateCompile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSFCTemplateCompile] (val x: Self) extends AnyVal {
       
       inline def setCompiler(value: TemplateCompiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       

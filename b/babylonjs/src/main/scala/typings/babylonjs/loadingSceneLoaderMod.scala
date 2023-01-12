@@ -940,7 +940,8 @@ object loadingSceneLoaderMod {
       __obj.asInstanceOf[IRegisteredPlugin]
     }
     
-    extension [Self <: IRegisteredPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRegisteredPlugin] (val x: Self) extends AnyVal {
       
       inline def setIsBinary(value: Boolean): Self = StObject.set(x, "isBinary", value.asInstanceOf[js.Any])
       
@@ -1000,7 +1001,8 @@ object loadingSceneLoaderMod {
       __obj.asInstanceOf[ISceneLoaderAsyncResult]
     }
     
-    extension [Self <: ISceneLoaderAsyncResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISceneLoaderAsyncResult] (val x: Self) extends AnyVal {
       
       inline def setAnimationGroups(value: js.Array[AnimationGroup]): Self = StObject.set(x, "animationGroups", value.asInstanceOf[js.Any])
       
@@ -1256,7 +1258,8 @@ object loadingSceneLoaderMod {
       __obj.asInstanceOf[ISceneLoaderPluginBase]
     }
     
-    extension [Self <: ISceneLoaderPluginBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISceneLoaderPluginBase] (val x: Self) extends AnyVal {
       
       inline def setCanDirectLoad(value: /* data */ String => Boolean): Self = StObject.set(x, "canDirectLoad", js.Any.fromFunction1(value))
       
@@ -1320,7 +1323,8 @@ object loadingSceneLoaderMod {
       __obj.asInstanceOf[ISceneLoaderPluginFactory]
     }
     
-    extension [Self <: ISceneLoaderPluginFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISceneLoaderPluginFactory] (val x: Self) extends AnyVal {
       
       inline def setCanDirectLoad(value: /* data */ String => Boolean): Self = StObject.set(x, "canDirectLoad", js.Any.fromFunction1(value))
       
@@ -1356,7 +1360,8 @@ object loadingSceneLoaderMod {
       __obj.asInstanceOf[ISceneLoaderProgressEvent]
     }
     
-    extension [Self <: ISceneLoaderProgressEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISceneLoaderProgressEvent] (val x: Self) extends AnyVal {
       
       inline def setLengthComputable(value: Boolean): Self = StObject.set(x, "lengthComputable", value.asInstanceOf[js.Any])
       

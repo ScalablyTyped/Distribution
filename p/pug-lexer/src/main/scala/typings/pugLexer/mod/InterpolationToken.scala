@@ -21,7 +21,8 @@ object InterpolationToken {
     __obj.asInstanceOf[InterpolationToken]
   }
   
-  extension [Self <: InterpolationToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterpolationToken] (val x: Self) extends AnyVal {
     
     inline def setVal(value: String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
   }

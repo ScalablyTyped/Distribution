@@ -43,7 +43,8 @@ object EntryDataOnprogressOptions {
     __obj.asInstanceOf[EntryDataOnprogressOptions]
   }
   
-  extension [Self <: EntryDataOnprogressOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntryDataOnprogressOptions] (val x: Self) extends AnyVal {
     
     inline def setOnend(value: /* computedSize */ Double => js.UndefOr[js.Promise[Unit]]): Self = StObject.set(x, "onend", js.Any.fromFunction1(value))
     

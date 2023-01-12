@@ -91,7 +91,8 @@ object anon {
       __obj.asInstanceOf[Amber]
     }
     
-    extension [Self <: Amber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Amber] (val x: Self) extends AnyVal {
       
       inline def setAmber(value: String): Self = StObject.set(x, "Amber", value.asInstanceOf[js.Any])
       
@@ -156,7 +157,8 @@ object anon {
       __obj.asInstanceOf[Checked]
     }
     
-    extension [Self <: Checked](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Checked] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     }
@@ -179,7 +181,8 @@ object anon {
       __obj.asInstanceOf[Color]
     }
     
-    extension [Self <: Color](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -212,7 +215,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -233,7 +237,8 @@ object anon {
       __obj.asInstanceOf[Max]
     }
     
-    extension [Self <: Max](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       

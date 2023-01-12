@@ -23,7 +23,8 @@ object ListBoxEvent {
     __obj.asInstanceOf[ListBoxEvent]
   }
   
-  extension [Self <: ListBoxEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBoxEvent] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

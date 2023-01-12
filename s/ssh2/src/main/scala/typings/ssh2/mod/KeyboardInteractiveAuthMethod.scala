@@ -35,7 +35,8 @@ object KeyboardInteractiveAuthMethod {
     __obj.asInstanceOf[KeyboardInteractiveAuthMethod]
   }
   
-  extension [Self <: KeyboardInteractiveAuthMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyboardInteractiveAuthMethod] (val x: Self) extends AnyVal {
     
     inline def setPrompt(value: (String, String, String, js.Array[Prompt], KeyboardInteractiveCallback) => Unit): Self = StObject.set(x, "prompt", js.Any.fromFunction5(value))
     

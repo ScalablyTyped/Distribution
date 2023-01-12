@@ -197,7 +197,8 @@ object distNodeBackendFolderAdapterMod {
       __obj.asInstanceOf[FolderAdapterOptions]
     }
     
-    extension [Self <: FolderAdapterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FolderAdapterOptions] (val x: Self) extends AnyVal {
       
       inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
       

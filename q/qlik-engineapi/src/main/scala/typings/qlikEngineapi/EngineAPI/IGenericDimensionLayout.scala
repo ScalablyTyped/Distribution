@@ -41,7 +41,8 @@ object IGenericDimensionLayout {
     __obj.asInstanceOf[IGenericDimensionLayout]
   }
   
-  extension [Self <: IGenericDimensionLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericDimensionLayout] (val x: Self) extends AnyVal {
     
     inline def setQDim(value: INxLibraryDimensionDef): Self = StObject.set(x, "qDim", value.asInstanceOf[js.Any])
     

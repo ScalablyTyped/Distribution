@@ -17,7 +17,8 @@ object ForwardedX11 {
     __obj.asInstanceOf[ForwardedX11]
   }
   
-  extension [Self <: ForwardedX11](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForwardedX11] (val x: Self) extends AnyVal {
     
     inline def setOriginAddr(value: String): Self = StObject.set(x, "originAddr", value.asInstanceOf[js.Any])
     

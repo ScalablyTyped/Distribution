@@ -21,7 +21,8 @@ object InteractionItem {
     __obj.asInstanceOf[InteractionItem]
   }
   
-  extension [Self <: InteractionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractionItem] (val x: Self) extends AnyVal {
     
     inline def setDatasetIndex(value: Double): Self = StObject.set(x, "datasetIndex", value.asInstanceOf[js.Any])
     

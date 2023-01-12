@@ -17,7 +17,8 @@ object sdkHotkeysMod {
     @js.native
     def apply(options: Combo): Hotkey = js.native
     
-    extension [Self <: Hotkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hotkey] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     }

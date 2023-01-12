@@ -22,7 +22,8 @@ object UpdatePageElementsZOrderRequest {
     __obj.asInstanceOf[UpdatePageElementsZOrderRequest]
   }
   
-  extension [Self <: UpdatePageElementsZOrderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePageElementsZOrderRequest] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     

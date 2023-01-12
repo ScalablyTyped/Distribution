@@ -93,7 +93,8 @@ object CreateNotebookInstanceInput {
     __obj.asInstanceOf[CreateNotebookInstanceInput]
   }
   
-  extension [Self <: CreateNotebookInstanceInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateNotebookInstanceInput] (val x: Self) extends AnyVal {
     
     inline def setAcceleratorTypes(value: NotebookInstanceAcceleratorTypes): Self = StObject.set(x, "AcceleratorTypes", value.asInstanceOf[js.Any])
     

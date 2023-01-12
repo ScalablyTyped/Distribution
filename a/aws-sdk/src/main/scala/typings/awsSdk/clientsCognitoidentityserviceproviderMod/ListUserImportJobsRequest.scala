@@ -28,7 +28,8 @@ object ListUserImportJobsRequest {
     __obj.asInstanceOf[ListUserImportJobsRequest]
   }
   
-  extension [Self <: ListUserImportJobsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListUserImportJobsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: PoolQueryLimitType): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

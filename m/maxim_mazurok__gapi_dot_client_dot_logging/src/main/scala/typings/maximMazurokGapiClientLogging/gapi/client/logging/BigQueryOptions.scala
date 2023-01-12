@@ -27,7 +27,8 @@ object BigQueryOptions {
     __obj.asInstanceOf[BigQueryOptions]
   }
   
-  extension [Self <: BigQueryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BigQueryOptions] (val x: Self) extends AnyVal {
     
     inline def setUsePartitionedTables(value: Boolean): Self = StObject.set(x, "usePartitionedTables", value.asInstanceOf[js.Any])
     

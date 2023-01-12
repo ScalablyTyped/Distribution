@@ -19,7 +19,8 @@ object ProfilerSessionEvents {
     __obj.asInstanceOf[ProfilerSessionEvents]
   }
   
-  extension [Self <: ProfilerSessionEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfilerSessionEvents] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: js.Array[ProfilerEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

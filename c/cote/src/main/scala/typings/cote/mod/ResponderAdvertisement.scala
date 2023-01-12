@@ -25,7 +25,8 @@ object ResponderAdvertisement {
     __obj.asInstanceOf[ResponderAdvertisement]
   }
   
-  extension [Self <: ResponderAdvertisement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponderAdvertisement] (val x: Self) extends AnyVal {
     
     inline def setRespondsTo(value: js.Array[String]): Self = StObject.set(x, "respondsTo", value.asInstanceOf[js.Any])
     

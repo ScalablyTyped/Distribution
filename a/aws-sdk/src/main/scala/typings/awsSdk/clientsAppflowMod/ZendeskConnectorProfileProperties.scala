@@ -18,7 +18,8 @@ object ZendeskConnectorProfileProperties {
     __obj.asInstanceOf[ZendeskConnectorProfileProperties]
   }
   
-  extension [Self <: ZendeskConnectorProfileProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZendeskConnectorProfileProperties] (val x: Self) extends AnyVal {
     
     inline def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
   }

@@ -15,7 +15,8 @@ object OnenotePagePreviewLinks {
     __obj.asInstanceOf[OnenotePagePreviewLinks]
   }
   
-  extension [Self <: OnenotePagePreviewLinks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnenotePagePreviewLinks] (val x: Self) extends AnyVal {
     
     inline def setPreviewImageUrl(value: NullableOption[ExternalLink]): Self = StObject.set(x, "previewImageUrl", value.asInstanceOf[js.Any])
     

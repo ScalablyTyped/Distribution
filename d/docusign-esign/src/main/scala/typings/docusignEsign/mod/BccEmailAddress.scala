@@ -29,7 +29,8 @@ object BccEmailAddress {
     __obj.asInstanceOf[BccEmailAddress]
   }
   
-  extension [Self <: BccEmailAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BccEmailAddress] (val x: Self) extends AnyVal {
     
     inline def setBccEmailAddressId(value: String): Self = StObject.set(x, "bccEmailAddressId", value.asInstanceOf[js.Any])
     

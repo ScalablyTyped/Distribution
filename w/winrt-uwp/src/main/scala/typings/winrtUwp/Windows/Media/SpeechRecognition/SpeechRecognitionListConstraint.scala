@@ -37,7 +37,8 @@ object SpeechRecognitionListConstraint {
     __obj.asInstanceOf[SpeechRecognitionListConstraint]
   }
   
-  extension [Self <: SpeechRecognitionListConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeechRecognitionListConstraint] (val x: Self) extends AnyVal {
     
     inline def setCommands(value: IVector[String]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     

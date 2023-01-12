@@ -77,7 +77,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BenchResultsType]
     }
     
-    extension [Self <: BenchResultsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BenchResultsType] (val x: Self) extends AnyVal {
       
       inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BenchmarkProps]
     }
     
-    extension [Self <: BenchmarkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BenchmarkProps] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: ComponentType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BenchmarkRef]
     }
     
-    extension [Self <: BenchmarkRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BenchmarkRef] (val x: Self) extends AnyVal {
       
       inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     }
@@ -200,7 +203,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ComputedResult]
     }
     
-    extension [Self <: ComputedResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputedResult] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -237,7 +241,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Sample]
     }
     
-    extension [Self <: Sample](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sample] (val x: Self) extends AnyVal {
       
       inline def setElapsed(value: Double): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
       

@@ -54,7 +54,8 @@ object Index {
     __obj.asInstanceOf[Index]
   }
   
-  extension [Self <: Index](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
     
     inline def setCompare(value: (NamedNode, NamedNode) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
     

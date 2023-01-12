@@ -106,7 +106,8 @@ object EventResponse {
     __obj.asInstanceOf[EventResponse[Response]]
   }
   
-  extension [Self <: EventResponse[?], Response](x: Self & EventResponse[Response]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventResponse[?], Response] (val x: Self & EventResponse[Response]) extends AnyVal {
     
     inline def setAccount(value: Account): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     

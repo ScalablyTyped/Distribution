@@ -344,7 +344,8 @@ object mod {
       __obj.asInstanceOf[IFieldValidationError]
     }
     
-    extension [Self <: IFieldValidationError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFieldValidationError] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -382,7 +383,8 @@ object mod {
       __obj.asInstanceOf[IMessageOpts]
     }
     
-    extension [Self <: IMessageOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMessageOpts] (val x: Self) extends AnyVal {
       
       inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
       
@@ -411,7 +413,8 @@ object mod {
       __obj.asInstanceOf[IValidationResult]
     }
     
-    extension [Self <: IValidationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IValidationResult] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[IFieldValidationError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       

@@ -1134,7 +1134,8 @@ object modulesDrilldownMod {
         __obj.asInstanceOf[BreadcrumbsOptions]
       }
       
-      extension [Self <: BreadcrumbsOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BreadcrumbsOptions] (val x: Self) extends AnyVal {
         
         inline def setButtonTheme(value: SVGAttributes): Self = StObject.set(x, "buttonTheme", value.asInstanceOf[js.Any])
         
@@ -1172,7 +1173,8 @@ object modulesDrilldownMod {
         __obj.asInstanceOf[Chart]
       }
       
-      extension [Self <: Chart](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Chart] (val x: Self) extends AnyVal {
         
         inline def setAddSeriesAsDrilldown(value: (Point, SeriesOptionsType) => Unit): Self = StObject.set(x, "addSeriesAsDrilldown", js.Any.fromFunction2(value))
         
@@ -1198,7 +1200,8 @@ object modulesDrilldownMod {
         __obj.asInstanceOf[Point]
       }
       
-      extension [Self <: Point](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
         
         inline def setDoDrilldown(value: () => Unit): Self = StObject.set(x, "doDrilldown", js.Any.fromFunction0(value))
       }

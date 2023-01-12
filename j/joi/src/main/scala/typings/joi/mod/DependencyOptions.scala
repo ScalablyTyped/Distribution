@@ -22,7 +22,8 @@ object DependencyOptions {
     __obj.asInstanceOf[DependencyOptions]
   }
   
-  extension [Self <: DependencyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DependencyOptions] (val x: Self) extends AnyVal {
     
     inline def setIsPresent(value: /* resolved */ Any => Boolean): Self = StObject.set(x, "isPresent", js.Any.fromFunction1(value))
     

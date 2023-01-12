@@ -28,7 +28,8 @@ object UpdateLongTermPricingRequest {
     __obj.asInstanceOf[UpdateLongTermPricingRequest]
   }
   
-  extension [Self <: UpdateLongTermPricingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateLongTermPricingRequest] (val x: Self) extends AnyVal {
     
     inline def setIsLongTermPricingAutoRenew(value: JavaBoolean): Self = StObject.set(x, "IsLongTermPricingAutoRenew", value.asInstanceOf[js.Any])
     

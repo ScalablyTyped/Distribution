@@ -85,7 +85,8 @@ object StorediSCSIVolume {
     __obj.asInstanceOf[StorediSCSIVolume]
   }
   
-  extension [Self <: StorediSCSIVolume](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorediSCSIVolume] (val x: Self) extends AnyVal {
     
     inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object StatusType {
     __obj.asInstanceOf[StatusType]
   }
   
-  extension [Self <: StatusType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusType] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

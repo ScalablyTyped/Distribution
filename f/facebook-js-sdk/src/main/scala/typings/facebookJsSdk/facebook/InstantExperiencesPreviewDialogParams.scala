@@ -24,7 +24,8 @@ object InstantExperiencesPreviewDialogParams {
     __obj.asInstanceOf[InstantExperiencesPreviewDialogParams]
   }
   
-  extension [Self <: InstantExperiencesPreviewDialogParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstantExperiencesPreviewDialogParams] (val x: Self) extends AnyVal {
     
     inline def setCanvas_id(value: String): Self = StObject.set(x, "canvas_id", value.asInstanceOf[js.Any])
     

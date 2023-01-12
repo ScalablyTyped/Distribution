@@ -20,7 +20,8 @@ object WEBGLDebugRendererInfo {
     __obj.asInstanceOf[WEBGLDebugRendererInfo]
   }
   
-  extension [Self <: WEBGLDebugRendererInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WEBGLDebugRendererInfo] (val x: Self) extends AnyVal {
     
     inline def setUNMASKED_RENDERER_WEBGL(value: GLenum): Self = StObject.set(x, "UNMASKED_RENDERER_WEBGL", value.asInstanceOf[js.Any])
     

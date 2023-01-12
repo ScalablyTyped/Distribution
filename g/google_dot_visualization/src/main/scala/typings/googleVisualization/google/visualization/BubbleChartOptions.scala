@@ -66,7 +66,8 @@ object BubbleChartOptions {
     __obj.asInstanceOf[BubbleChartOptions]
   }
   
-  extension [Self <: BubbleChartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BubbleChartOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: TransitionAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

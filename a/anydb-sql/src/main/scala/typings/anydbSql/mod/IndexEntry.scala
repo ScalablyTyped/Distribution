@@ -50,7 +50,8 @@ object IndexEntry {
     __obj.asInstanceOf[IndexEntry]
   }
   
-  extension [Self <: IndexEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexEntry] (val x: Self) extends AnyVal {
     
     inline def setCardinality(value: Double): Self = StObject.set(x, "Cardinality", value.asInstanceOf[js.Any])
     

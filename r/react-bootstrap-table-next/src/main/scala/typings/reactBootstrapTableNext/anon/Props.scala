@@ -15,7 +15,8 @@ object Props {
     __obj.asInstanceOf[Props[T]]
   }
   
-  extension [Self <: Props[?], T /* <: js.Object */](x: Self & Props[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Props[?], T /* <: js.Object */] (val x: Self & Props[T]) extends AnyVal {
     
     inline def setProps(value: Data[T]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object SendEnrollmentTicketData {
     __obj.asInstanceOf[SendEnrollmentTicketData]
   }
   
-  extension [Self <: SendEnrollmentTicketData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendEnrollmentTicketData] (val x: Self) extends AnyVal {
     
     inline def setSend_mail(value: Boolean): Self = StObject.set(x, "send_mail", value.asInstanceOf[js.Any])
     

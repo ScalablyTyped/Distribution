@@ -21,7 +21,8 @@ object distSrcModulesUiSubtitlesTypesMod {
       __obj.asInstanceOf[ISubtitleConfig]
     }
     
-    extension [Self <: ISubtitleConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISubtitleConfig] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object distSrcModulesUiSubtitlesTypesMod {
       __obj.asInstanceOf[ISubtitlesAPI]
     }
     
-    extension [Self <: ISubtitlesAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISubtitlesAPI] (val x: Self) extends AnyVal {
       
       inline def setHideSubtitles(value: () => Unit): Self = StObject.set(x, "hideSubtitles", js.Any.fromFunction0(value))
       
@@ -123,7 +125,8 @@ object distSrcModulesUiSubtitlesTypesMod {
       __obj.asInstanceOf[ISubtitlesViewStyles]
     }
     
-    extension [Self <: ISubtitlesViewStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISubtitlesViewStyles] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

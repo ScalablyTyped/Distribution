@@ -19,7 +19,8 @@ object RunMobileFriendlyTestRequest {
     __obj.asInstanceOf[RunMobileFriendlyTestRequest]
   }
   
-  extension [Self <: RunMobileFriendlyTestRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunMobileFriendlyTestRequest] (val x: Self) extends AnyVal {
     
     inline def setRequestScreenshot(value: Boolean): Self = StObject.set(x, "requestScreenshot", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object SignedTransaction {
     __obj.asInstanceOf[SignedTransaction]
   }
   
-  extension [Self <: SignedTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignedTransaction] (val x: Self) extends AnyVal {
     
     inline def setMessageHash(value: String): Self = StObject.set(x, "messageHash", value.asInstanceOf[js.Any])
     

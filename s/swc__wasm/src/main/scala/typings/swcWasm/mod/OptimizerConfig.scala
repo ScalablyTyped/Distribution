@@ -23,7 +23,8 @@ object OptimizerConfig {
     __obj.asInstanceOf[OptimizerConfig]
   }
   
-  extension [Self <: OptimizerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptimizerConfig] (val x: Self) extends AnyVal {
     
     inline def setGlobals(value: GlobalPassOption): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
     

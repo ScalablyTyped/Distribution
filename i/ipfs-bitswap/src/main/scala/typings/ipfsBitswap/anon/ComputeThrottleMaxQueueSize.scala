@@ -19,7 +19,8 @@ object ComputeThrottleMaxQueueSize {
     __obj.asInstanceOf[ComputeThrottleMaxQueueSize]
   }
   
-  extension [Self <: ComputeThrottleMaxQueueSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputeThrottleMaxQueueSize] (val x: Self) extends AnyVal {
     
     inline def setComputeThrottleMaxQueueSize(value: Double): Self = StObject.set(x, "computeThrottleMaxQueueSize", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ImageLayerAggregation {
     __obj.asInstanceOf[ImageLayerAggregation]
   }
   
-  extension [Self <: ImageLayerAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageLayerAggregation] (val x: Self) extends AnyVal {
     
     inline def setLayerHashes(value: StringFilterList): Self = StObject.set(x, "layerHashes", value.asInstanceOf[js.Any])
     

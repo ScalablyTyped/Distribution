@@ -38,7 +38,8 @@ object PageUpdateData {
     __obj.asInstanceOf[PageUpdateData]
   }
   
-  extension [Self <: PageUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageUpdateData] (val x: Self) extends AnyVal {
     
     inline def setInkAnalysisOrNull(value: InkAnalysisUpdateData): Self = StObject.set(x, "inkAnalysisOrNull", value.asInstanceOf[js.Any])
     

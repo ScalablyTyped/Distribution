@@ -25,7 +25,8 @@ object SidewalkSendDataToDevice {
     __obj.asInstanceOf[SidewalkSendDataToDevice]
   }
   
-  extension [Self <: SidewalkSendDataToDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SidewalkSendDataToDevice] (val x: Self) extends AnyVal {
     
     inline def setAckModeRetryDurationSecs(value: AckModeRetryDurationSecs): Self = StObject.set(x, "AckModeRetryDurationSecs", value.asInstanceOf[js.Any])
     

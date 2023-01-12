@@ -31,7 +31,8 @@ object libCenteredActionFooterMod extends Shortcut {
       __obj.asInstanceOf[CenteredActionFooterProps]
     }
     
-    extension [Self <: CenteredActionFooterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CenteredActionFooterProps] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: ReactNode): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       

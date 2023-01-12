@@ -33,7 +33,8 @@ object Slot {
     __obj.asInstanceOf[Slot]
   }
   
-  extension [Self <: Slot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Slot] (val x: Self) extends AnyVal {
     
     inline def setShape(value: Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     

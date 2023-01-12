@@ -17,7 +17,8 @@ object ILanguageStatics {
     __obj.asInstanceOf[ILanguageStatics]
   }
   
-  extension [Self <: ILanguageStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILanguageStatics] (val x: Self) extends AnyVal {
     
     inline def setCurrentInputMethodLanguageTag(value: String): Self = StObject.set(x, "currentInputMethodLanguageTag", value.asInstanceOf[js.Any])
     

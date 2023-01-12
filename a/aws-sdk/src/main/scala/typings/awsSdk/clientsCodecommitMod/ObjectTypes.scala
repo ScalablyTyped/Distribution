@@ -28,7 +28,8 @@ object ObjectTypes {
     __obj.asInstanceOf[ObjectTypes]
   }
   
-  extension [Self <: ObjectTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectTypes] (val x: Self) extends AnyVal {
     
     inline def setBase(value: ObjectTypeEnum): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

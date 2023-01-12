@@ -45,7 +45,8 @@ object NotificationSubscriptionCreateParameters {
     __obj.asInstanceOf[NotificationSubscriptionCreateParameters]
   }
   
-  extension [Self <: NotificationSubscriptionCreateParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationSubscriptionCreateParameters] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: ISubscriptionChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

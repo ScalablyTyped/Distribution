@@ -28,7 +28,8 @@ object TemplateAlias {
     __obj.asInstanceOf[TemplateAlias]
   }
   
-  extension [Self <: TemplateAlias](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateAlias] (val x: Self) extends AnyVal {
     
     inline def setAliasName(value: AliasName): Self = StObject.set(x, "AliasName", value.asInstanceOf[js.Any])
     

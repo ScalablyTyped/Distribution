@@ -23,7 +23,8 @@ object ReadBLECharacteristicValueSuccess {
     __obj.asInstanceOf[ReadBLECharacteristicValueSuccess]
   }
   
-  extension [Self <: ReadBLECharacteristicValueSuccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadBLECharacteristicValueSuccess] (val x: Self) extends AnyVal {
     
     inline def setErrCode(value: String): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     

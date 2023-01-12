@@ -39,7 +39,8 @@ object PlaylistListItem {
     __obj.asInstanceOf[PlaylistListItem]
   }
   
-  extension [Self <: PlaylistListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaylistListItem] (val x: Self) extends AnyVal {
     
     inline def setAccessControlled(value: Boolean): Self = StObject.set(x, "accessControlled", value.asInstanceOf[js.Any])
     

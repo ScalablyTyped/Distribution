@@ -35,7 +35,8 @@ object XDocumentIndexesSupplier {
     __obj.asInstanceOf[XDocumentIndexesSupplier]
   }
   
-  extension [Self <: XDocumentIndexesSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDocumentIndexesSupplier] (val x: Self) extends AnyVal {
     
     inline def setDocumentIndexes(value: XIndexAccess): Self = StObject.set(x, "DocumentIndexes", value.asInstanceOf[js.Any])
     

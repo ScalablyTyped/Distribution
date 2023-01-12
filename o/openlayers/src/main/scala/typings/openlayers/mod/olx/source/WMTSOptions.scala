@@ -75,7 +75,8 @@ object WMTSOptions {
     __obj.asInstanceOf[WMTSOptions]
   }
   
-  extension [Self <: WMTSOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WMTSOptions] (val x: Self) extends AnyVal {
     
     inline def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
     

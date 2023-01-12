@@ -38,7 +38,8 @@ object distTypesInternalSchedulerAnimationFrameProviderMod {
       __obj.asInstanceOf[AnimationFrameProvider_]
     }
     
-    extension [Self <: AnimationFrameProvider_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationFrameProvider_] (val x: Self) extends AnyVal {
       
       inline def setCancelAnimationFrame(value: /* handle */ Double => Unit): Self = StObject.set(x, "cancelAnimationFrame", js.Any.fromFunction1(value))
       

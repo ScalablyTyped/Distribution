@@ -56,7 +56,8 @@ object Dialog {
     __obj.asInstanceOf[Dialog]
   }
   
-  extension [Self <: Dialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dialog] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

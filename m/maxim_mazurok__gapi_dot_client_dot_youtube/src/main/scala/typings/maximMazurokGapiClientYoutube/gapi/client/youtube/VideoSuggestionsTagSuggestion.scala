@@ -22,7 +22,8 @@ object VideoSuggestionsTagSuggestion {
     __obj.asInstanceOf[VideoSuggestionsTagSuggestion]
   }
   
-  extension [Self <: VideoSuggestionsTagSuggestion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoSuggestionsTagSuggestion] (val x: Self) extends AnyVal {
     
     inline def setCategoryRestricts(value: js.Array[String]): Self = StObject.set(x, "categoryRestricts", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object IPrintTaskOptionChangedEventArgs {
     __obj.asInstanceOf[IPrintTaskOptionChangedEventArgs]
   }
   
-  extension [Self <: IPrintTaskOptionChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPrintTaskOptionChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setOptionId(value: Any): Self = StObject.set(x, "optionId", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object RaxPortal {
     __obj.asInstanceOf[RaxPortal]
   }
   
-  extension [Self <: RaxPortal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaxPortal] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: RaxNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ParametersPathCommitshaOwnerQuery407 {
     __obj.asInstanceOf[ParametersPathCommitshaOwnerQuery407]
   }
   
-  extension [Self <: ParametersPathCommitshaOwnerQuery407](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersPathCommitshaOwnerQuery407] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathCommitshaOwnerQuery407): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

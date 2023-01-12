@@ -25,7 +25,8 @@ object ArrowHead {
     __obj.asInstanceOf[ArrowHead]
   }
   
-  extension [Self <: ArrowHead](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrowHead] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

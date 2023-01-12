@@ -19,7 +19,8 @@ object LoginOptions {
     __obj.asInstanceOf[LoginOptions]
   }
   
-  extension [Self <: LoginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoginOptions] (val x: Self) extends AnyVal {
     
     inline def setAndroidId(value: String): Self = StObject.set(x, "androidId", value.asInstanceOf[js.Any])
     

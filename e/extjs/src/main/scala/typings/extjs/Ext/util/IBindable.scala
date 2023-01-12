@@ -60,7 +60,8 @@ object IBindable {
     __obj.asInstanceOf[IBindable]
   }
   
-  extension [Self <: IBindable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBindable] (val x: Self) extends AnyVal {
     
     inline def setBindStore(value: /* store */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
     

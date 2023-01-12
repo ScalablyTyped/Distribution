@@ -856,7 +856,8 @@ object typesListItemLinkMod {
       __obj.asInstanceOf[ListItemLinkProps]
     }
     
-    extension [Self <: ListItemLinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemLinkProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1728,7 +1729,8 @@ object typesListItemLinkMod {
       __obj.asInstanceOf[ListItemLinkWithComponentProps]
     }
     
-    extension [Self <: ListItemLinkWithComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemLinkWithComponentProps] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: ElementType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     }

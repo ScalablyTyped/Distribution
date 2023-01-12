@@ -19,7 +19,8 @@ object typesSrcCoreTransportsUrlSchemeMod {
       __obj.asInstanceOf[URLScheme]
     }
     
-    extension [Self <: URLScheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URLScheme] (val x: Self) extends AnyVal {
       
       inline def setGetInitial(value: (String, Any) => String): Self = StObject.set(x, "getInitial", js.Any.fromFunction2(value))
       
@@ -46,7 +47,8 @@ object typesSrcCoreTransportsUrlSchemeMod {
       __obj.asInstanceOf[URLSchemeParams]
     }
     
-    extension [Self <: URLSchemeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URLSchemeParams] (val x: Self) extends AnyVal {
       
       inline def setHostNonTLS(value: String): Self = StObject.set(x, "hostNonTLS", value.asInstanceOf[js.Any])
       

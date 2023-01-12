@@ -244,7 +244,8 @@ object ChartDataCommon {
     __obj.asInstanceOf[ChartDataCommon]
   }
   
-  extension [Self <: ChartDataCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartDataCommon] (val x: Self) extends AnyVal {
     
     inline def setClick(value: /* event */ ChartEvent => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     

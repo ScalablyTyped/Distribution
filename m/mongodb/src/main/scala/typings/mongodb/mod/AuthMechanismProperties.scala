@@ -26,7 +26,8 @@ object AuthMechanismProperties {
     __obj.asInstanceOf[AuthMechanismProperties]
   }
   
-  extension [Self <: AuthMechanismProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthMechanismProperties] (val x: Self) extends AnyVal {
     
     inline def setAWS_SESSION_TOKEN(value: String): Self = StObject.set(x, "AWS_SESSION_TOKEN", value.asInstanceOf[js.Any])
     

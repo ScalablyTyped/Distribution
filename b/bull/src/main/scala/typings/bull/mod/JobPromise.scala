@@ -18,7 +18,8 @@ object JobPromise {
     __obj.asInstanceOf[JobPromise]
   }
   
-  extension [Self <: JobPromise](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobPromise] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
   }

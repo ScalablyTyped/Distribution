@@ -34,7 +34,8 @@ object typesRuntimeActionMod {
       __obj.asInstanceOf[ActionReturn[Parameter, Attributes]]
     }
     
-    extension [Self <: ActionReturn[?, ?], Parameter, Attributes /* <: Record[String, Any] */](x: Self & (ActionReturn[Parameter, Attributes])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionReturn[?, ?], Parameter, Attributes /* <: Record[String, Any] */] (val x: Self & (ActionReturn[Parameter, Attributes])) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

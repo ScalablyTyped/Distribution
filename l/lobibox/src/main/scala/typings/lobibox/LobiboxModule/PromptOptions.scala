@@ -33,7 +33,8 @@ object PromptOptions {
     __obj.asInstanceOf[PromptOptions]
   }
   
-  extension [Self <: PromptOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromptOptions] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: Any): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

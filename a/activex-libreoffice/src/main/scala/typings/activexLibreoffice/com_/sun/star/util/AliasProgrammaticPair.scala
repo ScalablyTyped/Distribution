@@ -23,7 +23,8 @@ object AliasProgrammaticPair {
     __obj.asInstanceOf[AliasProgrammaticPair]
   }
   
-  extension [Self <: AliasProgrammaticPair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AliasProgrammaticPair] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object Advance {
     __obj.asInstanceOf[Advance]
   }
   
-  extension [Self <: Advance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Advance] (val x: Self) extends AnyVal {
     
     inline def setCurrentDJ(value: DJ): Self = StObject.set(x, "currentDJ", value.asInstanceOf[js.Any])
     

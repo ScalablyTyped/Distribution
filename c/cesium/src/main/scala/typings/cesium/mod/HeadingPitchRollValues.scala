@@ -19,7 +19,8 @@ object HeadingPitchRollValues {
     __obj.asInstanceOf[HeadingPitchRollValues]
   }
   
-  extension [Self <: HeadingPitchRollValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeadingPitchRollValues] (val x: Self) extends AnyVal {
     
     inline def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     

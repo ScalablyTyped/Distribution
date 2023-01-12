@@ -82,7 +82,8 @@ object libBaseMod {
       __obj.asInstanceOf[BaseError[T]]
     }
     
-    extension [Self <: BaseError[?], T /* <: typings.eggErrors.libErrorOptionsMod.default */](x: Self & BaseError[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseError[?], T /* <: typings.eggErrors.libErrorOptionsMod.default */] (val x: Self & BaseError[T]) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

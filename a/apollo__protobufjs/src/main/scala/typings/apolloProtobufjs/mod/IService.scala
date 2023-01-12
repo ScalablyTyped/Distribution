@@ -20,7 +20,8 @@ object IService {
     __obj.asInstanceOf[IService]
   }
   
-  extension [Self <: IService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IService] (val x: Self) extends AnyVal {
     
     inline def setMethods(value: StringDictionary[IMethod]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
   }

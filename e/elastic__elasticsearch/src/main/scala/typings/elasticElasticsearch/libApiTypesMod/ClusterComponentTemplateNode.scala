@@ -19,7 +19,8 @@ object ClusterComponentTemplateNode {
     __obj.asInstanceOf[ClusterComponentTemplateNode]
   }
   
-  extension [Self <: ClusterComponentTemplateNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterComponentTemplateNode] (val x: Self) extends AnyVal {
     
     inline def setTemplate(value: ClusterComponentTemplateSummary): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     

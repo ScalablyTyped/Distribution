@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[GlobalTypes]
     }
     
-    extension [Self <: GlobalTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalTypes] (val x: Self) extends AnyVal {
       
       inline def setGlobalTypes(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobalTypes */ Any
@@ -59,7 +60,8 @@ object anon {
       __obj.asInstanceOf[Globals]
     }
     
-    extension [Self <: Globals](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Globals] (val x: Self) extends AnyVal {
       
       inline def setGlobals(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Args */ Any
@@ -78,7 +80,8 @@ object anon {
       __obj.asInstanceOf[ImportFn]
     }
     
-    extension [Self <: ImportFn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportFn] (val x: Self) extends AnyVal {
       
       inline def setImportFn(value: /* path */ Path => PromiseLike[ModuleExports]): Self = StObject.set(x, "importFn", js.Any.fromFunction1(value))
     }
@@ -102,7 +105,8 @@ object anon {
       __obj.asInstanceOf[Kind]
     }
     
-    extension [Self <: Kind](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Kind] (val x: Self) extends AnyVal {
       
       inline def setKind(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryKind */ Any
@@ -127,7 +131,8 @@ object anon {
       __obj.asInstanceOf[Stories]
     }
     
-    extension [Self <: Stories](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stories] (val x: Self) extends AnyVal {
       
       inline def setStories(value: Record[String, StoryIndexEntry]): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
       
@@ -146,7 +151,8 @@ object anon {
       __obj.asInstanceOf[StoryStore[TFramework]]
     }
     
-    extension [Self <: StoryStore[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](x: Self & StoryStore[TFramework]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoryStore[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] (val x: Self & StoryStore[TFramework]) extends AnyVal {
       
       inline def setStoryStore(value: typings.storybookStore.mod.StoryStore[TFramework]): Self = StObject.set(x, "storyStore", value.asInstanceOf[js.Any])
       

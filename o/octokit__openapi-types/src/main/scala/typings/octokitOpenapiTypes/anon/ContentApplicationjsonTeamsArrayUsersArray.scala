@@ -15,7 +15,8 @@ object ContentApplicationjsonTeamsArrayUsersArray {
     __obj.asInstanceOf[ContentApplicationjsonTeamsArrayUsersArray]
   }
   
-  extension [Self <: ContentApplicationjsonTeamsArrayUsersArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonTeamsArrayUsersArray] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonTeamsArrayUsersArray): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

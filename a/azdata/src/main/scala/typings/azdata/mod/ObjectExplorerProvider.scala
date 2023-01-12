@@ -47,7 +47,8 @@ object ObjectExplorerProvider {
     __obj.asInstanceOf[ObjectExplorerProvider]
   }
   
-  extension [Self <: ObjectExplorerProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectExplorerProvider] (val x: Self) extends AnyVal {
     
     inline def setCloseSession(value: ObjectExplorerCloseSessionInfo => Thenable[ObjectExplorerCloseSessionResponse]): Self = StObject.set(x, "closeSession", js.Any.fromFunction1(value))
     

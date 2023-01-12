@@ -23,7 +23,8 @@ object Bail {
     __obj.asInstanceOf[Bail]
   }
   
-  extension [Self <: Bail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bail] (val x: Self) extends AnyVal {
     
     inline def setBail(value: Boolean): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
     

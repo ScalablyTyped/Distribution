@@ -20,7 +20,8 @@ object ReshapeLayerArgs {
     __obj.asInstanceOf[ReshapeLayerArgs]
   }
   
-  extension [Self <: ReshapeLayerArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReshapeLayerArgs] (val x: Self) extends AnyVal {
     
     inline def setTargetShape(value: Shape): Self = StObject.set(x, "targetShape", value.asInstanceOf[js.Any])
     

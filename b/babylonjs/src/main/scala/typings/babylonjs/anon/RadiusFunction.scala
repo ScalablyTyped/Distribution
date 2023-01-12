@@ -39,7 +39,8 @@ object RadiusFunction {
     __obj.asInstanceOf[RadiusFunction]
   }
   
-  extension [Self <: RadiusFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadiusFunction] (val x: Self) extends AnyVal {
     
     inline def setArc(value: Double): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     

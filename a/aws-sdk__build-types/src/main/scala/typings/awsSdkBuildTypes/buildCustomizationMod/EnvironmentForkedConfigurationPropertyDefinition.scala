@@ -44,7 +44,8 @@ object EnvironmentForkedConfigurationPropertyDefinition {
     __obj.asInstanceOf[EnvironmentForkedConfigurationPropertyDefinition]
   }
   
-  extension [Self <: EnvironmentForkedConfigurationPropertyDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentForkedConfigurationPropertyDefinition] (val x: Self) extends AnyVal {
     
     inline def setBrowser(value: ConfigurationPropertyDefinitionRuntimeAttributes & AdditionalDocumentation): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     

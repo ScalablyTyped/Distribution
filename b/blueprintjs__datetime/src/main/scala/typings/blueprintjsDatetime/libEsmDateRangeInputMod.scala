@@ -337,7 +337,8 @@ object libEsmDateRangeInputMod {
       __obj.asInstanceOf[IDateRangeInputState]
     }
     
-    extension [Self <: IDateRangeInputState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDateRangeInputState] (val x: Self) extends AnyVal {
       
       inline def setBoundaryToModify(value: Boundary): Self = StObject.set(x, "boundaryToModify", value.asInstanceOf[js.Any])
       

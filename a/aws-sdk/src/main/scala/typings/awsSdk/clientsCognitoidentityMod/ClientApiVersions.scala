@@ -18,7 +18,8 @@ object ClientApiVersions {
     __obj.asInstanceOf[ClientApiVersions]
   }
   
-  extension [Self <: ClientApiVersions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
     
     inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     

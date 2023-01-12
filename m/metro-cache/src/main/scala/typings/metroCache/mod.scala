@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[MetroCache]
     }
     
-    extension [Self <: MetroCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetroCache] (val x: Self) extends AnyVal {
       
       inline def setAutoCleanFileStore(value: Any): Self = StObject.set(x, "AutoCleanFileStore", value.asInstanceOf[js.Any])
       

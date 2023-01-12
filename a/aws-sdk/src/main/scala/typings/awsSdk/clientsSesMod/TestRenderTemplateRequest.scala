@@ -23,7 +23,8 @@ object TestRenderTemplateRequest {
     __obj.asInstanceOf[TestRenderTemplateRequest]
   }
   
-  extension [Self <: TestRenderTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestRenderTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setTemplateData(value: TemplateData): Self = StObject.set(x, "TemplateData", value.asInstanceOf[js.Any])
     

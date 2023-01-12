@@ -20,7 +20,8 @@ object TypeofSplitter {
     __obj.asInstanceOf[TypeofSplitter]
   }
   
-  extension [Self <: TypeofSplitter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSplitter] (val x: Self) extends AnyVal {
     
     inline def setFn(value: Splitter): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

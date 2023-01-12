@@ -27,7 +27,8 @@ object PointHoverOptions {
     __obj.asInstanceOf[PointHoverOptions]
   }
   
-  extension [Self <: PointHoverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointHoverOptions] (val x: Self) extends AnyVal {
     
     inline def setHoverRadius(value: Double): Self = StObject.set(x, "hoverRadius", value.asInstanceOf[js.Any])
   }

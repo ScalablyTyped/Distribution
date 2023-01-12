@@ -19,7 +19,8 @@ object `354` {
     __obj.asInstanceOf[`354`]
   }
   
-  extension [Self <: `354`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `354`] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['codespaces-secret'] */ js.Any

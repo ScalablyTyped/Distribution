@@ -40,7 +40,8 @@ object Words {
     __obj.asInstanceOf[Words]
   }
   
-  extension [Self <: Words](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Words] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

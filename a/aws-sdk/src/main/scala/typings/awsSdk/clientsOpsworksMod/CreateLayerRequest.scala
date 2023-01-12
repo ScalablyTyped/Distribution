@@ -103,7 +103,8 @@ object CreateLayerRequest {
     __obj.asInstanceOf[CreateLayerRequest]
   }
   
-  extension [Self <: CreateLayerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLayerRequest] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: LayerAttributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     

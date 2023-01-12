@@ -40,7 +40,8 @@ object outCodeSignWindowsCodeSignMod {
       __obj.asInstanceOf[CertificateFromStoreInfo]
     }
     
-    extension [Self <: CertificateFromStoreInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateFromStoreInfo] (val x: Self) extends AnyVal {
       
       inline def setIsLocalMachineStore(value: Boolean): Self = StObject.set(x, "isLocalMachineStore", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object outCodeSignWindowsCodeSignMod {
       __obj.asInstanceOf[CertificateInfo]
     }
     
-    extension [Self <: CertificateInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateInfo] (val x: Self) extends AnyVal {
       
       inline def setBloodyMicrosoftSubjectDn(value: String): Self = StObject.set(x, "bloodyMicrosoftSubjectDn", value.asInstanceOf[js.Any])
       
@@ -98,7 +100,8 @@ object outCodeSignWindowsCodeSignMod {
       __obj.asInstanceOf[CustomWindowsSignTaskConfiguration]
     }
     
-    extension [Self <: CustomWindowsSignTaskConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomWindowsSignTaskConfiguration] (val x: Self) extends AnyVal {
       
       inline def setComputeSignToolArgs(value: Boolean => js.Array[String]): Self = StObject.set(x, "computeSignToolArgs", js.Any.fromFunction1(value))
     }
@@ -117,7 +120,8 @@ object outCodeSignWindowsCodeSignMod {
       __obj.asInstanceOf[FileCodeSigningInfo]
     }
     
-    extension [Self <: FileCodeSigningInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileCodeSigningInfo] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -146,7 +150,8 @@ object outCodeSignWindowsCodeSignMod {
       __obj.asInstanceOf[WindowsSignOptions]
     }
     
-    extension [Self <: WindowsSignOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WindowsSignOptions] (val x: Self) extends AnyVal {
       
       inline def setCscInfo(value: FileCodeSigningInfo | CertificateFromStoreInfo): Self = StObject.set(x, "cscInfo", value.asInstanceOf[js.Any])
       
@@ -189,7 +194,8 @@ object outCodeSignWindowsCodeSignMod {
       __obj.asInstanceOf[WindowsSignTaskConfiguration]
     }
     
-    extension [Self <: WindowsSignTaskConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WindowsSignTaskConfiguration] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       

@@ -39,7 +39,8 @@ object XStyleSupplier {
     __obj.asInstanceOf[XStyleSupplier]
   }
   
-  extension [Self <: XStyleSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStyleSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetStyle(value: () => XStyle): Self = StObject.set(x, "getStyle", js.Any.fromFunction0(value))
     

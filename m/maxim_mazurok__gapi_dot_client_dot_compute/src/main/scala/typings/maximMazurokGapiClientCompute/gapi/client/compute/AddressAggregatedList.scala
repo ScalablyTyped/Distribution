@@ -40,7 +40,8 @@ object AddressAggregatedList {
     __obj.asInstanceOf[AddressAggregatedList]
   }
   
-  extension [Self <: AddressAggregatedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddressAggregatedList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

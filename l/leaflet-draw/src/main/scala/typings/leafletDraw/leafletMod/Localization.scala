@@ -27,7 +27,8 @@ object Localization {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object Localization {
       __obj.asInstanceOf[typings.leafletDraw.leafletMod.Localization.Draw]
     }
     
-    extension [Self <: typings.leafletDraw.leafletMod.Localization.Draw](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.leafletDraw.leafletMod.Localization.Draw] (val x: Self) extends AnyVal {
       
       inline def setHandlers(value: DrawHandlers): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       
@@ -87,7 +89,8 @@ object Localization {
       __obj.asInstanceOf[DrawHandlers]
     }
     
-    extension [Self <: DrawHandlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawHandlers] (val x: Self) extends AnyVal {
       
       inline def setCircle(value: Radius): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
       
@@ -121,7 +124,8 @@ object Localization {
       __obj.asInstanceOf[DrawLocal]
     }
     
-    extension [Self <: DrawLocal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawLocal] (val x: Self) extends AnyVal {
       
       inline def setDraw(value: typings.leafletDraw.leafletMod.Localization.Draw): Self = StObject.set(x, "draw", value.asInstanceOf[js.Any])
       
@@ -146,7 +150,8 @@ object Localization {
       __obj.asInstanceOf[typings.leafletDraw.leafletMod.Localization.DrawToolbar]
     }
     
-    extension [Self <: typings.leafletDraw.leafletMod.Localization.DrawToolbar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.leafletDraw.leafletMod.Localization.DrawToolbar] (val x: Self) extends AnyVal {
       
       inline def setActions(value: Action): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -171,7 +176,8 @@ object Localization {
       __obj.asInstanceOf[typings.leafletDraw.leafletMod.Localization.Edit]
     }
     
-    extension [Self <: typings.leafletDraw.leafletMod.Localization.Edit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.leafletDraw.leafletMod.Localization.Edit] (val x: Self) extends AnyVal {
       
       inline def setHandlers(value: EditHandlers): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       
@@ -192,7 +198,8 @@ object Localization {
       __obj.asInstanceOf[EditHandlers]
     }
     
-    extension [Self <: EditHandlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditHandlers] (val x: Self) extends AnyVal {
       
       inline def setEdit(value: TooltipText): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
       
@@ -213,7 +220,8 @@ object Localization {
       __obj.asInstanceOf[typings.leafletDraw.leafletMod.Localization.EditToolbar]
     }
     
-    extension [Self <: typings.leafletDraw.leafletMod.Localization.EditToolbar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.leafletDraw.leafletMod.Localization.EditToolbar] (val x: Self) extends AnyVal {
       
       inline def setActions(value: Cancel): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -236,7 +244,8 @@ object Localization {
       __obj.asInstanceOf[Tooltip]
     }
     
-    extension [Self <: Tooltip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tooltip] (val x: Self) extends AnyVal {
       
       inline def setCont(value: String): Self = StObject.set(x, "cont", value.asInstanceOf[js.Any])
       

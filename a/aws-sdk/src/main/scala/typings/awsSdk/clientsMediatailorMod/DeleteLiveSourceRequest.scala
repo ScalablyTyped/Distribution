@@ -23,7 +23,8 @@ object DeleteLiveSourceRequest {
     __obj.asInstanceOf[DeleteLiveSourceRequest]
   }
   
-  extension [Self <: DeleteLiveSourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLiveSourceRequest] (val x: Self) extends AnyVal {
     
     inline def setLiveSourceName(value: _String): Self = StObject.set(x, "LiveSourceName", value.asInstanceOf[js.Any])
     

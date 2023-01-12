@@ -33,7 +33,8 @@ object TransitionEvent {
     __obj.asInstanceOf[TransitionEvent]
   }
   
-  extension [Self <: TransitionEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionEvent] (val x: Self) extends AnyVal {
     
     inline def setActions(value: Actions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

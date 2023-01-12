@@ -27,7 +27,8 @@ object TestAvailabilityConfigurationRequest {
     __obj.asInstanceOf[TestAvailabilityConfigurationRequest]
   }
   
-  extension [Self <: TestAvailabilityConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestAvailabilityConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

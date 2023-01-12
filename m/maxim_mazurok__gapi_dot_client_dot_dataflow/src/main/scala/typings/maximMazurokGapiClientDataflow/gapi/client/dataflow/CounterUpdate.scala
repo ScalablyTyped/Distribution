@@ -61,7 +61,8 @@ object CounterUpdate {
     __obj.asInstanceOf[CounterUpdate]
   }
   
-  extension [Self <: CounterUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CounterUpdate] (val x: Self) extends AnyVal {
     
     inline def setBoolean(value: Boolean): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     

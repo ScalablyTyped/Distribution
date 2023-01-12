@@ -23,7 +23,8 @@ object BatchGetChannelResponse {
     __obj.asInstanceOf[BatchGetChannelResponse]
   }
   
-  extension [Self <: BatchGetChannelResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetChannelResponse] (val x: Self) extends AnyVal {
     
     inline def setChannels(value: Channels): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     

@@ -119,7 +119,8 @@ object AnimationPlayer {
     __obj.asInstanceOf[AnimationPlayer]
   }
   
-  extension [Self <: AnimationPlayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationPlayer] (val x: Self) extends AnyVal {
     
     inline def setBeforeDestroy(value: () => Any): Self = StObject.set(x, "beforeDestroy", js.Any.fromFunction0(value))
     

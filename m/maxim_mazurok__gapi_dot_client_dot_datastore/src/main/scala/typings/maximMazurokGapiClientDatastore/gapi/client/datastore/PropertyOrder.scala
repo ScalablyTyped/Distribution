@@ -19,7 +19,8 @@ object PropertyOrder {
     __obj.asInstanceOf[PropertyOrder]
   }
   
-  extension [Self <: PropertyOrder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyOrder] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

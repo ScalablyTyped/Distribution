@@ -23,7 +23,8 @@ object Order {
     __obj.asInstanceOf[Order]
   }
   
-  extension [Self <: Order](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Order] (val x: Self) extends AnyVal {
     
     inline def setField(value: String | ExprRef | SignalRef): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

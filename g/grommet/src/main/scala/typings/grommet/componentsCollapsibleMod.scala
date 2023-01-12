@@ -43,7 +43,8 @@ object componentsCollapsibleMod {
       __obj.asInstanceOf[CollapsibleProps]
     }
     
-    extension [Self <: CollapsibleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapsibleProps] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       

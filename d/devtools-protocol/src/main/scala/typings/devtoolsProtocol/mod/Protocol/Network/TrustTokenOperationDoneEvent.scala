@@ -56,7 +56,8 @@ object TrustTokenOperationDoneEvent {
     __obj.asInstanceOf[TrustTokenOperationDoneEvent]
   }
   
-  extension [Self <: TrustTokenOperationDoneEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrustTokenOperationDoneEvent] (val x: Self) extends AnyVal {
     
     inline def setIssuedTokenCount(value: integer): Self = StObject.set(x, "issuedTokenCount", value.asInstanceOf[js.Any])
     

@@ -94,7 +94,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RangeSliderProps]
     }
     
-    extension [Self <: RangeSliderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeSliderProps] (val x: Self) extends AnyVal {
       
       inline def setBsPrefix(value: String): Self = StObject.set(x, "bsPrefix", value.asInstanceOf[js.Any])
       

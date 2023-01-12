@@ -47,7 +47,8 @@ object networkOnlyMod {
       __obj.asInstanceOf[NetworkOnlyOptions]
     }
     
-    extension [Self <: NetworkOnlyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkOnlyOptions] (val x: Self) extends AnyVal {
       
       inline def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
       

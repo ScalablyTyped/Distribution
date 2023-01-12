@@ -19,7 +19,8 @@ object GoogleCloudDialogflowCxV3SentimentAnalysisResult {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3SentimentAnalysisResult]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3SentimentAnalysisResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3SentimentAnalysisResult] (val x: Self) extends AnyVal {
     
     inline def setMagnitude(value: Double): Self = StObject.set(x, "magnitude", value.asInstanceOf[js.Any])
     

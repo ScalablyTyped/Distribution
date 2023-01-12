@@ -31,7 +31,8 @@ object libThumbnailMod {
       __obj.asInstanceOf[ThumbnailProps]
     }
     
-    extension [Self <: ThumbnailProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThumbnailProps] (val x: Self) extends AnyVal {
       
       inline def setBsSize(value: Sizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
       

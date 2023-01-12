@@ -18,7 +18,8 @@ object VirtualNodeGrpcConnectionPool {
     __obj.asInstanceOf[VirtualNodeGrpcConnectionPool]
   }
   
-  extension [Self <: VirtualNodeGrpcConnectionPool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualNodeGrpcConnectionPool] (val x: Self) extends AnyVal {
     
     inline def setMaxRequests(value: MaxRequests): Self = StObject.set(x, "maxRequests", value.asInstanceOf[js.Any])
   }

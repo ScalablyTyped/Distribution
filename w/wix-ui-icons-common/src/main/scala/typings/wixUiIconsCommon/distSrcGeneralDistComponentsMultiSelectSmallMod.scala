@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsMultiSelectSmallMod extends Shortcut {
       __obj.asInstanceOf[MultiSelectSmallProps]
     }
     
-    extension [Self <: MultiSelectSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiSelectSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

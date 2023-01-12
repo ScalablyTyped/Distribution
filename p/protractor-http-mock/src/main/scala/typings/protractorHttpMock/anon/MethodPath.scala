@@ -20,7 +20,8 @@ object MethodPath {
     __obj.asInstanceOf[MethodPath]
   }
   
-  extension [Self <: MethodPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MethodPath] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

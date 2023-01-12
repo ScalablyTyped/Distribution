@@ -35,7 +35,8 @@ object SpringConfig {
     __obj.asInstanceOf[SpringConfig]
   }
   
-  extension [Self <: SpringConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpringConfig] (val x: Self) extends AnyVal {
     
     inline def setDamping(value: Adaptable[Double]): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
     

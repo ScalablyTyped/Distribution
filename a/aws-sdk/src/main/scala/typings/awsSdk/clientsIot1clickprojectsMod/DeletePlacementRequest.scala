@@ -23,7 +23,8 @@ object DeletePlacementRequest {
     __obj.asInstanceOf[DeletePlacementRequest]
   }
   
-  extension [Self <: DeletePlacementRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePlacementRequest] (val x: Self) extends AnyVal {
     
     inline def setPlacementName(value: PlacementName): Self = StObject.set(x, "placementName", value.asInstanceOf[js.Any])
     

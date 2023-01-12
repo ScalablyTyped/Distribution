@@ -18,7 +18,8 @@ object PrivateDnsDetails {
     __obj.asInstanceOf[PrivateDnsDetails]
   }
   
-  extension [Self <: PrivateDnsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivateDnsDetails] (val x: Self) extends AnyVal {
     
     inline def setPrivateDnsName(value: String): Self = StObject.set(x, "PrivateDnsName", value.asInstanceOf[js.Any])
     

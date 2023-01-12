@@ -16,7 +16,8 @@ object DataGetResultsType {
     __obj.asInstanceOf[DataGetResultsType[T]]
   }
   
-  extension [Self <: DataGetResultsType[?], T](x: Self & DataGetResultsType[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataGetResultsType[?], T] (val x: Self & DataGetResultsType[T]) extends AnyVal {
     
     inline def setData(value: GetResultsType[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

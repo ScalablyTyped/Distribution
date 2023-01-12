@@ -66,7 +66,8 @@ object anon {
       __obj.asInstanceOf[TypeofURL]
     }
     
-    extension [Self <: TypeofURL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofURL] (val x: Self) extends AnyVal {
       
       inline def setCreateObjectURL(value: Blob => String): Self = StObject.set(x, "createObjectURL", js.Any.fromFunction1(value))
       

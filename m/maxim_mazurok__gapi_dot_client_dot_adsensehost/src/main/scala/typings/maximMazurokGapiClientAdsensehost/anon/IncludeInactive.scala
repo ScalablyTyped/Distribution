@@ -49,7 +49,8 @@ object IncludeInactive {
     __obj.asInstanceOf[IncludeInactive]
   }
   
-  extension [Self <: IncludeInactive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeInactive] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

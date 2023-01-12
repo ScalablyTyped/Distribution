@@ -60,7 +60,8 @@ object dxBulletOptions {
     __obj.asInstanceOf[dxBulletOptions]
   }
   
-  extension [Self <: dxBulletOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxBulletOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

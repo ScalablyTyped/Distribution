@@ -136,7 +136,8 @@ object RectangleShape {
     __obj.asInstanceOf[RectangleShape]
   }
   
-  extension [Self <: RectangleShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RectangleShape] (val x: Self) extends AnyVal {
     
     inline def setCornerRadius(value: Double): Self = StObject.set(x, "CornerRadius", value.asInstanceOf[js.Any])
   }

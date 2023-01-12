@@ -18,7 +18,8 @@ object DownloadInfoStats {
     __obj.asInstanceOf[DownloadInfoStats]
   }
   
-  extension [Self <: DownloadInfoStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadInfoStats] (val x: Self) extends AnyVal {
     
     inline def setIsResumed(value: Boolean): Self = StObject.set(x, "isResumed", value.asInstanceOf[js.Any])
   }

@@ -22,7 +22,8 @@ object PivotFilterSpec {
     __obj.asInstanceOf[PivotFilterSpec]
   }
   
-  extension [Self <: PivotFilterSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotFilterSpec] (val x: Self) extends AnyVal {
     
     inline def setColumnOffsetIndex(value: Double): Self = StObject.set(x, "columnOffsetIndex", value.asInstanceOf[js.Any])
     

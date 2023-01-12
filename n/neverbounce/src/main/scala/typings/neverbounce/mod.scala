@@ -141,7 +141,8 @@ object mod {
       __obj.asInstanceOf[Account]
     }
     
-    extension [Self <: Account](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
       
       inline def setInfo(value: () => js.Promise[typings.std.Response]): Self = StObject.set(x, "info", js.Any.fromFunction0(value))
     }
@@ -162,7 +163,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: Any): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -195,7 +197,8 @@ object mod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setAcceptedType(value: String): Self = StObject.set(x, "acceptedType", value.asInstanceOf[js.Any])
       
@@ -281,7 +284,8 @@ object mod {
       __obj.asInstanceOf[NeverBounce]
     }
     
-    extension [Self <: NeverBounce](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NeverBounce] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: Account): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
@@ -314,7 +318,8 @@ object mod {
       __obj.asInstanceOf[Poe]
     }
     
-    extension [Self <: Poe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Poe] (val x: Self) extends AnyVal {
       
       inline def setConfirm(value: (String, String, String, String) => js.Promise[typings.std.Response]): Self = StObject.set(x, "confirm", js.Any.fromFunction4(value))
     }

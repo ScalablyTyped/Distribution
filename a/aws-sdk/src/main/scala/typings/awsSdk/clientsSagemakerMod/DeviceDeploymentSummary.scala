@@ -74,7 +74,8 @@ object DeviceDeploymentSummary {
     __obj.asInstanceOf[DeviceDeploymentSummary]
   }
   
-  extension [Self <: DeviceDeploymentSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceDeploymentSummary] (val x: Self) extends AnyVal {
     
     inline def setDeployedStageName(value: EntityName): Self = StObject.set(x, "DeployedStageName", value.asInstanceOf[js.Any])
     

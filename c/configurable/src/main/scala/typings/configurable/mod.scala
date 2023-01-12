@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[Configurable[T]]
     }
     
-    extension [Self <: Configurable[?], T](x: Self & Configurable[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configurable[?], T] (val x: Self & Configurable[T]) extends AnyVal {
       
       inline def setDisable(value: String => T & Configurable[T]): Self = StObject.set(x, "disable", js.Any.fromFunction1(value))
       

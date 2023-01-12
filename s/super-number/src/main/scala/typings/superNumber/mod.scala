@@ -116,7 +116,8 @@ object mod {
       __obj.asInstanceOf[Integer]
     }
     
-    extension [Self <: Integer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Integer] (val x: Self) extends AnyVal {
       
       inline def setFindNearestInteger(value: Double => Double): Self = StObject.set(x, "findNearestInteger", js.Any.fromFunction1(value))
       

@@ -70,7 +70,8 @@ object componentsFileInputMod {
       __obj.asInstanceOf[FileInputProps]
     }
     
-    extension [Self <: FileInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileInputProps] (val x: Self) extends AnyVal {
       
       inline def setConfirmRemove(value: /* param0 */ OnCancel => ReactElement): Self = StObject.set(x, "confirmRemove", js.Any.fromFunction1(value))
       

@@ -23,7 +23,8 @@ object CustomizeTextFormat {
     __obj.asInstanceOf[CustomizeTextFormat]
   }
   
-  extension [Self <: CustomizeTextFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomizeTextFormat] (val x: Self) extends AnyVal {
     
     inline def setCustomizeText(value: /* markerValue */ `6` => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
     

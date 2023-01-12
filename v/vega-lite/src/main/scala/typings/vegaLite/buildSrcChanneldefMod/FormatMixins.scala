@@ -39,7 +39,8 @@ object FormatMixins {
     __obj.asInstanceOf[FormatMixins]
   }
   
-  extension [Self <: FormatMixins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatMixins] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String | Dict[Any]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

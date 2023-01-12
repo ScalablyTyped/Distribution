@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[CanvasSizeMaxOptionsusePr]
     }
     
-    extension [Self <: CanvasSizeMaxOptionsusePr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasSizeMaxOptionsusePr] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object anon {
       __obj.asInstanceOf[CanvasSizeMaxOptionsusePrMax]
     }
     
-    extension [Self <: CanvasSizeMaxOptionsusePrMax](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasSizeMaxOptionsusePrMax] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       

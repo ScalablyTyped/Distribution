@@ -24,7 +24,8 @@ object IModelChangedEvent {
     __obj.asInstanceOf[IModelChangedEvent]
   }
   
-  extension [Self <: IModelChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IModelChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setNewModelUrl(value: Uri): Self = StObject.set(x, "newModelUrl", value.asInstanceOf[js.Any])
     

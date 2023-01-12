@@ -20,7 +20,8 @@ object CreateCollectionResponse {
     __obj.asInstanceOf[CreateCollectionResponse]
   }
   
-  extension [Self <: CreateCollectionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCollectionResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: Collection): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

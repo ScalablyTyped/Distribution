@@ -71,7 +71,8 @@ object App {
       __obj.asInstanceOf[AppInstance[T]]
     }
     
-    extension [Self <: AppInstance[?], T /* <: AnyObject */](x: Self & AppInstance[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppInstance[?], T /* <: AnyObject */] (val x: Self & AppInstance[T]) extends AnyVal {
       
       inline def setGlobalData(value: AnyObject): Self = StObject.set(x, "globalData", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object App {
       __obj.asInstanceOf[GetAppOption]
     }
     
-    extension [Self <: GetAppOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAppOption] (val x: Self) extends AnyVal {
       
       inline def setAllowDefault(value: Boolean): Self = StObject.set(x, "allowDefault", value.asInstanceOf[js.Any])
     }
@@ -228,7 +230,8 @@ object App {
       __obj.asInstanceOf[LaunchShowOption]
     }
     
-    extension [Self <: LaunchShowOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LaunchShowOption] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -268,7 +271,8 @@ object App {
       __obj.asInstanceOf[PageNotFoundOption]
     }
     
-    extension [Self <: PageNotFoundOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageNotFoundOption] (val x: Self) extends AnyVal {
       
       inline def setIsEntryPage(value: Boolean): Self = StObject.set(x, "isEntryPage", value.asInstanceOf[js.Any])
       
@@ -305,7 +309,8 @@ object App {
       __obj.asInstanceOf[ReferrerInfo]
     }
     
-    extension [Self <: ReferrerInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferrerInfo] (val x: Self) extends AnyVal {
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       

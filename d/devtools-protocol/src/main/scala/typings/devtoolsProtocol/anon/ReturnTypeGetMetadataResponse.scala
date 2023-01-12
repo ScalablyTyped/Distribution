@@ -19,7 +19,8 @@ object ReturnTypeGetMetadataResponse {
     __obj.asInstanceOf[ReturnTypeGetMetadataResponse]
   }
   
-  extension [Self <: ReturnTypeGetMetadataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetMetadataResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetMetadataRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

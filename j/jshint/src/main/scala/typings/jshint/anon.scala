@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Complexity]
     }
     
-    extension [Self <: Complexity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Complexity] (val x: Self) extends AnyVal {
       
       inline def setComplexity(value: Double): Self = StObject.set(x, "complexity", value.asInstanceOf[js.Any])
       

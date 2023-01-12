@@ -63,7 +63,8 @@ object ConformanceMessagingEvent {
     __obj.asInstanceOf[ConformanceMessagingEvent]
   }
   
-  extension [Self <: ConformanceMessagingEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConformanceMessagingEvent] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: Consequence | Currency | Notification): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

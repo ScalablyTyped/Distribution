@@ -18,7 +18,8 @@ object DeregisterManagedInstanceRequest {
     __obj.asInstanceOf[DeregisterManagedInstanceRequest]
   }
   
-  extension [Self <: DeregisterManagedInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterManagedInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: ManagedInstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }

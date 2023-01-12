@@ -2129,7 +2129,8 @@ object PartialPartialCSSProperti {
     __obj.asInstanceOf[PartialPartialCSSProperti]
   }
   
-  extension [Self <: PartialPartialCSSProperti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPartialCSSProperti] (val x: Self) extends AnyVal {
     
     inline def setAccentColor(value: AccentColor): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
     

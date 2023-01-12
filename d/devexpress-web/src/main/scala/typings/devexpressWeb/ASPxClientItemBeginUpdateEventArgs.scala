@@ -23,7 +23,8 @@ object ASPxClientItemBeginUpdateEventArgs {
     __obj.asInstanceOf[ASPxClientItemBeginUpdateEventArgs]
   }
   
-  extension [Self <: ASPxClientItemBeginUpdateEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientItemBeginUpdateEventArgs] (val x: Self) extends AnyVal {
     
     inline def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
   }

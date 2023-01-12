@@ -18,7 +18,8 @@ object GetStorage {
     __obj.asInstanceOf[GetStorage]
   }
   
-  extension [Self <: GetStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStorage] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }

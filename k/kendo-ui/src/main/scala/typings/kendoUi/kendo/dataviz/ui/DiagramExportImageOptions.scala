@@ -19,7 +19,8 @@ object DiagramExportImageOptions {
     __obj.asInstanceOf[DiagramExportImageOptions]
   }
   
-  extension [Self <: DiagramExportImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramExportImageOptions] (val x: Self) extends AnyVal {
     
     inline def setCors(value: String): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
     

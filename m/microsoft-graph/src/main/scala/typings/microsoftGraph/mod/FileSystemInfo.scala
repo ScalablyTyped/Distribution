@@ -22,7 +22,8 @@ object FileSystemInfo {
     __obj.asInstanceOf[FileSystemInfo]
   }
   
-  extension [Self <: FileSystemInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemInfo] (val x: Self) extends AnyVal {
     
     inline def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     

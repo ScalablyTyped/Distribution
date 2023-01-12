@@ -28,7 +28,8 @@ object AuditRefs {
     __obj.asInstanceOf[AuditRefs]
   }
   
-  extension [Self <: AuditRefs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuditRefs] (val x: Self) extends AnyVal {
     
     inline def setAcronym(value: String): Self = StObject.set(x, "acronym", value.asInstanceOf[js.Any])
     

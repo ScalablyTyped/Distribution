@@ -33,7 +33,8 @@ object Notification {
     __obj.asInstanceOf[Notification]
   }
   
-  extension [Self <: Notification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
     
     inline def setExpirations(
       value: /* A complex element that specifies the expiration settings for the envelope. */ Expirations

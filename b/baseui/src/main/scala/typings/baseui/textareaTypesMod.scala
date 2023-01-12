@@ -48,7 +48,8 @@ object textareaTypesMod {
       __obj.asInstanceOf[FullStProps]
     }
     
-    extension [Self <: FullStProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullStProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Any => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -73,7 +74,8 @@ object textareaTypesMod {
       __obj.asInstanceOf[OmitProps]
     }
     
-    extension [Self <: OmitProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Any => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
@@ -115,7 +117,8 @@ object textareaTypesMod {
       __obj.asInstanceOf[SharedStyleProps]
     }
     
-    extension [Self <: SharedStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedStyleProps] (val x: Self) extends AnyVal {
       
       inline def set$adjoined(value: /* keyof baseui.anon.Both */ none | left | right | both): Self = StObject.set(x, "$adjoined", value.asInstanceOf[js.Any])
       
@@ -182,7 +185,8 @@ object textareaTypesMod {
       __obj.asInstanceOf[StatefulContainerProps]
     }
     
-    extension [Self <: StatefulContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulContainerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Any => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -312,7 +316,8 @@ object textareaTypesMod {
       __obj.asInstanceOf[StatefulTextareaProps]
     }
     
-    extension [Self <: StatefulTextareaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulTextareaProps] (val x: Self) extends AnyVal {
       
       inline def setAdjoined(value: Adjoined): Self = StObject.set(x, "adjoined", value.asInstanceOf[js.Any])
       
@@ -514,7 +519,8 @@ object textareaTypesMod {
       __obj.asInstanceOf[TextareaProps]
     }
     
-    extension [Self <: TextareaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextareaProps] (val x: Self) extends AnyVal {
       
       inline def setOverrides(value: TextareaOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       

@@ -37,7 +37,8 @@ object TSTInfoParameters {
     __obj.asInstanceOf[TSTInfoParameters]
   }
   
-  extension [Self <: TSTInfoParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSTInfoParameters] (val x: Self) extends AnyVal {
     
     inline def setAccuracy(value: Accuracy): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     

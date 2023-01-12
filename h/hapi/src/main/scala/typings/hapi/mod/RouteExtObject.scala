@@ -24,7 +24,8 @@ object RouteExtObject {
     __obj.asInstanceOf[RouteExtObject]
   }
   
-  extension [Self <: RouteExtObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteExtObject] (val x: Self) extends AnyVal {
     
     inline def setMethod(
       value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[js.Error]) => ReturnValue

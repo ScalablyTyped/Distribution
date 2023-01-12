@@ -22,7 +22,8 @@ object ProductViewItemIssueIssueSeverityPerDestination {
     __obj.asInstanceOf[ProductViewItemIssueIssueSeverityPerDestination]
   }
   
-  extension [Self <: ProductViewItemIssueIssueSeverityPerDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductViewItemIssueIssueSeverityPerDestination] (val x: Self) extends AnyVal {
     
     inline def setDemotedCountries(value: js.Array[String]): Self = StObject.set(x, "demotedCountries", value.asInstanceOf[js.Any])
     

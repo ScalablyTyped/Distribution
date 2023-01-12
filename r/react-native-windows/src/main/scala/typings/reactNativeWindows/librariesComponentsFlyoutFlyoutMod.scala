@@ -37,7 +37,8 @@ object librariesComponentsFlyoutFlyoutMod {
       __obj.asInstanceOf[IFlyoutTargetState]
     }
     
-    extension [Self <: IFlyoutTargetState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFlyoutTargetState] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       

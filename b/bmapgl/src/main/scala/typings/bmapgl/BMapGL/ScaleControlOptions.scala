@@ -17,7 +17,8 @@ object ScaleControlOptions {
     __obj.asInstanceOf[ScaleControlOptions]
   }
   
-  extension [Self <: ScaleControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleControlOptions] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: ControlAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

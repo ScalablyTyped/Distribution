@@ -18,7 +18,8 @@ object AuditContext {
     __obj.asInstanceOf[AuditContext]
   }
   
-  extension [Self <: AuditContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuditContext] (val x: Self) extends AnyVal {
     
     inline def setAdditionalAuditContext(value: AuditContextString): Self = StObject.set(x, "AdditionalAuditContext", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ClassBody_ {
     __obj.asInstanceOf[ClassBody_]
   }
   
-  extension [Self <: ClassBody_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassBody_] (val x: Self) extends AnyVal {
     
     inline def setBody(value: js.Array[ClassMethod_ | ClassProperty_]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ArchiveGroupSettings {
     __obj.asInstanceOf[ArchiveGroupSettings]
   }
   
-  extension [Self <: ArchiveGroupSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArchiveGroupSettings] (val x: Self) extends AnyVal {
     
     inline def setArchiveCdnSettings(value: ArchiveCdnSettings): Self = StObject.set(x, "ArchiveCdnSettings", value.asInstanceOf[js.Any])
     

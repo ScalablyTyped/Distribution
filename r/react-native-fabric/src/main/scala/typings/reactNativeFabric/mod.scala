@@ -42,7 +42,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Fabric]
     }
     
-    extension [Self <: Fabric](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fabric] (val x: Self) extends AnyVal {
       
       inline def setAnswers(value: LogAddToCart): Self = StObject.set(x, "Answers", value.asInstanceOf[js.Any])
       

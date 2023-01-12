@@ -16,7 +16,8 @@ object PartialPickthisitemText {
     __obj.asInstanceOf[PartialPickthisitemText]
   }
   
-  extension [Self <: PartialPickthisitemText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPickthisitemText] (val x: Self) extends AnyVal {
     
     inline def setItemText(value: Any): Self = StObject.set(x, "itemText", value.asInstanceOf[js.Any])
     

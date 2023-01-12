@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[Listeners]
     }
     
-    extension [Self <: Listeners](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Listeners] (val x: Self) extends AnyVal {
       
       inline def setClose(value: /* hadError */ Boolean => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       

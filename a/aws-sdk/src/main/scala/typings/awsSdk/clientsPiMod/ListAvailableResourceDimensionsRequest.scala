@@ -38,7 +38,8 @@ object ListAvailableResourceDimensionsRequest {
     __obj.asInstanceOf[ListAvailableResourceDimensionsRequest]
   }
   
-  extension [Self <: ListAvailableResourceDimensionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAvailableResourceDimensionsRequest] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: RequestString): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     

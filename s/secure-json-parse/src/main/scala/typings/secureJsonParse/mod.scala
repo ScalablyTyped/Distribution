@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setConstructorAction(value: error | remove | ignore): Self = StObject.set(x, "constructorAction", value.asInstanceOf[js.Any])
       

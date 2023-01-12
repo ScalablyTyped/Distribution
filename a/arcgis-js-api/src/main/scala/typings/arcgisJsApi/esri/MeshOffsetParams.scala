@@ -27,7 +27,8 @@ object MeshOffsetParams {
     __obj.asInstanceOf[MeshOffsetParams]
   }
   
-  extension [Self <: MeshOffsetParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshOffsetParams] (val x: Self) extends AnyVal {
     
     inline def setGeographic(value: Boolean): Self = StObject.set(x, "geographic", value.asInstanceOf[js.Any])
     

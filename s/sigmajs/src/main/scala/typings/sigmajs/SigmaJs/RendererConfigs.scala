@@ -20,7 +20,8 @@ object RendererConfigs {
     __obj.asInstanceOf[RendererConfigs]
   }
   
-  extension [Self <: RendererConfigs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RendererConfigs] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

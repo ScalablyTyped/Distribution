@@ -60,7 +60,8 @@ object GraphicsDisplayData {
     __obj.asInstanceOf[GraphicsDisplayData]
   }
   
-  extension [Self <: GraphicsDisplayData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphicsDisplayData] (val x: Self) extends AnyVal {
     
     inline def setBuiltin(value: Boolean): Self = StObject.set(x, "builtin", value.asInstanceOf[js.Any])
     

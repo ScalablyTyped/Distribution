@@ -18,7 +18,8 @@ object RefreshCompletedEventUIParam {
     __obj.asInstanceOf[RefreshCompletedEventUIParam]
   }
   
-  extension [Self <: RefreshCompletedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshCompletedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setChart(value: Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     

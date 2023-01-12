@@ -35,7 +35,8 @@ object TransformModule {
     __obj.asInstanceOf[TransformModule]
   }
   
-  extension [Self <: TransformModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformModule] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Record[String, Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

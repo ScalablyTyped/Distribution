@@ -18,7 +18,8 @@ object TerminateRecoveryInstancesRequest {
     __obj.asInstanceOf[TerminateRecoveryInstancesRequest]
   }
   
-  extension [Self <: TerminateRecoveryInstancesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminateRecoveryInstancesRequest] (val x: Self) extends AnyVal {
     
     inline def setRecoveryInstanceIDs(value: RecoveryInstancesForTerminationRequest): Self = StObject.set(x, "recoveryInstanceIDs", value.asInstanceOf[js.Any])
     

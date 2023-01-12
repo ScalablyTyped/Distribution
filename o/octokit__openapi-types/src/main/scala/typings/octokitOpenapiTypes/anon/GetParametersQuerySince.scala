@@ -23,7 +23,8 @@ object GetParametersQuerySince {
     __obj.asInstanceOf[GetParametersQuerySince]
   }
   
-  extension [Self <: GetParametersQuerySince](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersQuerySince] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersQuerySince): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     

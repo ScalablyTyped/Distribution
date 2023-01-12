@@ -35,7 +35,8 @@ object FancyThumbsOptions {
     __obj.asInstanceOf[FancyThumbsOptions]
   }
   
-  extension [Self <: FancyThumbsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FancyThumbsOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Compressed]
     }
     
-    extension [Self <: Compressed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compressed] (val x: Self) extends AnyVal {
       
       inline def setCompressed(value: js.Array[CompressedTextureResource]): Self = StObject.set(x, "compressed", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[Format]
     }
     
-    extension [Self <: Format](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: FORMATS): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

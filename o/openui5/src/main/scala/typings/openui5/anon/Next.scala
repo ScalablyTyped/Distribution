@@ -33,7 +33,8 @@ object Next {
     __obj.asInstanceOf[Next]
   }
   
-  extension [Self <: Next](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Next] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: Boolean): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object PhysicsJointData {
     __obj.asInstanceOf[PhysicsJointData]
   }
   
-  extension [Self <: PhysicsJointData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhysicsJointData] (val x: Self) extends AnyVal {
     
     inline def setCollision(value: Boolean): Self = StObject.set(x, "collision", value.asInstanceOf[js.Any])
     

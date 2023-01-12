@@ -99,7 +99,8 @@ object ExternalPropertyFileReferences {
     __obj.asInstanceOf[ExternalPropertyFileReferences]
   }
   
-  extension [Self <: ExternalPropertyFileReferences](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalPropertyFileReferences] (val x: Self) extends AnyVal {
     
     inline def setAddresses(value: js.Array[ExternalPropertyFileReference]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object GetEMDItemParams {
     __obj.asInstanceOf[GetEMDItemParams]
   }
   
-  extension [Self <: GetEMDItemParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEMDItemParams] (val x: Self) extends AnyVal {
     
     inline def setEmdNumber(value: String): Self = StObject.set(x, "emdNumber", value.asInstanceOf[js.Any])
     

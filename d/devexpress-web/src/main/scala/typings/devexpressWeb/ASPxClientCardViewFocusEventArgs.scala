@@ -23,7 +23,8 @@ object ASPxClientCardViewFocusEventArgs {
     __obj.asInstanceOf[ASPxClientCardViewFocusEventArgs]
   }
   
-  extension [Self <: ASPxClientCardViewFocusEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCardViewFocusEventArgs] (val x: Self) extends AnyVal {
     
     inline def setIsChangedOnServer(value: Boolean): Self = StObject.set(x, "isChangedOnServer", value.asInstanceOf[js.Any])
   }

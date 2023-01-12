@@ -36,7 +36,8 @@ object libDropdownMenuMod {
       __obj.asInstanceOf[DropdownMenuProps]
     }
     
-    extension [Self <: DropdownMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownMenuProps] (val x: Self) extends AnyVal {
       
       inline def setLabelledBy(value: String | Double): Self = StObject.set(x, "labelledBy", value.asInstanceOf[js.Any])
       

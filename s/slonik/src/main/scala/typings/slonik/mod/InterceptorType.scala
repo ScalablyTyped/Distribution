@@ -89,7 +89,8 @@ object InterceptorType {
     __obj.asInstanceOf[InterceptorType]
   }
   
-  extension [Self <: InterceptorType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterceptorType] (val x: Self) extends AnyVal {
     
     inline def setAfterPoolConnection(
       value: (/* connectionContext */ ConnectionContextType, /* connection */ DatabasePoolConnectionType) => MaybePromiseType[Null]

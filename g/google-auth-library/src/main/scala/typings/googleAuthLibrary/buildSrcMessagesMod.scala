@@ -52,7 +52,8 @@ object buildSrcMessagesMod {
       __obj.asInstanceOf[Warning]
     }
     
-    extension [Self <: Warning](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Warning] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object BucketOptions {
     __obj.asInstanceOf[BucketOptions]
   }
   
-  extension [Self <: BucketOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketOptions] (val x: Self) extends AnyVal {
     
     inline def setExplicitBuckets(value: Explicit): Self = StObject.set(x, "explicitBuckets", value.asInstanceOf[js.Any])
     

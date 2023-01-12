@@ -18,7 +18,8 @@ object MoveAndHoverMouseOnly {
     __obj.asInstanceOf[MoveAndHoverMouseOnly]
   }
   
-  extension [Self <: MoveAndHoverMouseOnly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveAndHoverMouseOnly] (val x: Self) extends AnyVal {
     
     inline def setMouseOnly(value: Boolean): Self = StObject.set(x, "mouseOnly", value.asInstanceOf[js.Any])
     

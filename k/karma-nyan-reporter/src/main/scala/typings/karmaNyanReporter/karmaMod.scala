@@ -22,7 +22,8 @@ object karmaMod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setNyanReporter(value: NyanCatOptions): Self = StObject.set(x, "nyanReporter", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object karmaMod {
       __obj.asInstanceOf[NyanCatOptions]
     }
     
-    extension [Self <: NyanCatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NyanCatOptions] (val x: Self) extends AnyVal {
       
       inline def setNumberOfRainbowLines(value: Double): Self = StObject.set(x, "numberOfRainbowLines", value.asInstanceOf[js.Any])
       

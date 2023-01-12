@@ -53,7 +53,8 @@ object BodyStylePropsArgthemeThe {
     __obj.asInstanceOf[BodyStylePropsArgthemeThe]
   }
   
-  extension [Self <: BodyStylePropsArgthemeThe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BodyStylePropsArgthemeThe] (val x: Self) extends AnyVal {
     
     inline def set$animationDuration(value: Double): Self = StObject.set(x, "$animationDuration", value.asInstanceOf[js.Any])
     

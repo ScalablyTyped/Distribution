@@ -20,7 +20,8 @@ object InvalidBootstrapFileException {
     __obj.asInstanceOf[InvalidBootstrapFileException]
   }
   
-  extension [Self <: InvalidBootstrapFileException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidBootstrapFileException] (val x: Self) extends AnyVal {
     
     inline def setBootstrapFileURL(value: String): Self = StObject.set(x, "BootstrapFileURL", value.asInstanceOf[js.Any])
   }

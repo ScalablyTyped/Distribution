@@ -63,7 +63,8 @@ object srcQualityLevelListMod {
       __obj.asInstanceOf[QualityLevelList]
     }
     
-    extension [Self <: QualityLevelList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QualityLevelList] (val x: Self) extends AnyVal {
       
       inline def setAddQualityLevel(value: Representation => typings.videojsContribQualityLevels.srcQualityLevelMod.default): Self = StObject.set(x, "addQualityLevel", js.Any.fromFunction1(value))
       

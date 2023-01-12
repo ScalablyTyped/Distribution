@@ -96,7 +96,8 @@ object distSrcYamlASTMod {
       __obj.asInstanceOf[YAMLAnchorReference]
     }
     
-    extension [Self <: YAMLAnchorReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YAMLAnchorReference] (val x: Self) extends AnyVal {
       
       inline def setReferencesAnchor(value: String): Self = StObject.set(x, "referencesAnchor", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object distSrcYamlASTMod {
       __obj.asInstanceOf[YAMLDocument]
     }
     
-    extension [Self <: YAMLDocument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YAMLDocument] (val x: Self) extends AnyVal {
       
       inline def setEndPosition(value: Double): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object distSrcYamlASTMod {
       __obj.asInstanceOf[YAMLMapping]
     }
     
-    extension [Self <: YAMLMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YAMLMapping] (val x: Self) extends AnyVal {
       
       inline def setKey(value: YAMLScalar): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -199,7 +202,8 @@ object distSrcYamlASTMod {
       __obj.asInstanceOf[YAMLNode]
     }
     
-    extension [Self <: YAMLNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YAMLNode] (val x: Self) extends AnyVal {
       
       inline def setAnchorId(value: String): Self = StObject.set(x, "anchorId", value.asInstanceOf[js.Any])
       
@@ -257,7 +261,8 @@ object distSrcYamlASTMod {
       __obj.asInstanceOf[YAMLScalar]
     }
     
-    extension [Self <: YAMLScalar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YAMLScalar] (val x: Self) extends AnyVal {
       
       inline def setDoubleQuoted(value: Boolean): Self = StObject.set(x, "doubleQuoted", value.asInstanceOf[js.Any])
       
@@ -297,7 +302,8 @@ object distSrcYamlASTMod {
       __obj.asInstanceOf[YAMLSequence]
     }
     
-    extension [Self <: YAMLSequence](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YAMLSequence] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[YAMLNode]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -326,7 +332,8 @@ object distSrcYamlASTMod {
       __obj.asInstanceOf[YamlMap]
     }
     
-    extension [Self <: YamlMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YamlMap] (val x: Self) extends AnyVal {
       
       inline def setMappings(value: js.Array[YAMLMapping]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
       

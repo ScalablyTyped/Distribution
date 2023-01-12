@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[PrettyPrintOptions]
     }
     
-    extension [Self <: PrettyPrintOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrettyPrintOptions] (val x: Self) extends AnyVal {
       
       inline def setShowTime(value: Boolean): Self = StObject.set(x, "showTime", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object mod {
       __obj.asInstanceOf[RelativeTimeOptions]
     }
     
-    extension [Self <: RelativeTimeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelativeTimeOptions] (val x: Self) extends AnyVal {
       
       inline def setAllUnits(value: Boolean): Self = StObject.set(x, "allUnits", value.asInstanceOf[js.Any])
       
@@ -121,7 +123,8 @@ object mod {
       __obj.asInstanceOf[RelativeTimeReturns]
     }
     
-    extension [Self <: RelativeTimeReturns](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelativeTimeReturns] (val x: Self) extends AnyVal {
       
       inline def setDays(value: Double): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       

@@ -63,7 +63,8 @@ object SheetLink {
     __obj.asInstanceOf[SheetLink]
   }
   
-  extension [Self <: SheetLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SheetLink] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

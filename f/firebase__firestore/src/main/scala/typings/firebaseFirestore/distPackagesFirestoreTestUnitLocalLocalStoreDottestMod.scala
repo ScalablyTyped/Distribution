@@ -24,7 +24,8 @@ object distPackagesFirestoreTestUnitLocalLocalStoreDottestMod {
       __obj.asInstanceOf[LocalStoreComponents]
     }
     
-    extension [Self <: LocalStoreComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalStoreComponents] (val x: Self) extends AnyVal {
       
       inline def setLocalStore(value: LocalStore): Self = StObject.set(x, "localStore", value.asInstanceOf[js.Any])
       

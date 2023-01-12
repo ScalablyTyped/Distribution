@@ -31,7 +31,8 @@ object HTMLCheckbox {
     __obj.asInstanceOf[HTMLCheckbox]
   }
   
-  extension [Self <: HTMLCheckbox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLCheckbox] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: Boolean): Self = StObject.set(x, "Checked", value.asInstanceOf[js.Any])
     

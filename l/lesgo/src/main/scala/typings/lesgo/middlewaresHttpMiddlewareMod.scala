@@ -60,7 +60,8 @@ object middlewaresHttpMiddlewareMod {
       __obj.asInstanceOf[HttpMiddlewareOptions]
     }
     
-    extension [Self <: HttpMiddlewareOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpMiddlewareOptions] (val x: Self) extends AnyVal {
       
       inline def setDb(value: default | typings.lesgo.servicesAuroraDbRDSProxyServiceMod.default): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       

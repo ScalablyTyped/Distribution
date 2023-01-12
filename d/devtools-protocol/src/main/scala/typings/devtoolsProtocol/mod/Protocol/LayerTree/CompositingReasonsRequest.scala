@@ -18,7 +18,8 @@ object CompositingReasonsRequest {
     __obj.asInstanceOf[CompositingReasonsRequest]
   }
   
-  extension [Self <: CompositingReasonsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositingReasonsRequest] (val x: Self) extends AnyVal {
     
     inline def setLayerId(value: LayerId): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
   }

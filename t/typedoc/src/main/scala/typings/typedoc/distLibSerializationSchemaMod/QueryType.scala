@@ -23,7 +23,8 @@ object QueryType {
     __obj.asInstanceOf[QueryType]
   }
   
-  extension [Self <: QueryType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryType] (val x: Self) extends AnyVal {
     
     inline def setQueryType(value: ToSerialized[typings.typedoc.distLibModelsTypesMod.ReferenceType]): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
     

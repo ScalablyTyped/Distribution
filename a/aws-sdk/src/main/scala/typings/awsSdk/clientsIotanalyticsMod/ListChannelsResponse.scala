@@ -23,7 +23,8 @@ object ListChannelsResponse {
     __obj.asInstanceOf[ListChannelsResponse]
   }
   
-  extension [Self <: ListChannelsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListChannelsResponse] (val x: Self) extends AnyVal {
     
     inline def setChannelSummaries(value: ChannelSummaries): Self = StObject.set(x, "channelSummaries", value.asInstanceOf[js.Any])
     

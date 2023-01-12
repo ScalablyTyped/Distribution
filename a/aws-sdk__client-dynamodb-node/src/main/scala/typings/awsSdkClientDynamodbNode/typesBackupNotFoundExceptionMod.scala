@@ -25,7 +25,8 @@ object typesBackupNotFoundExceptionMod {
       __obj.asInstanceOf[BackupNotFoundException]
     }
     
-    extension [Self <: BackupNotFoundException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackupNotFoundException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.BackupNotFoundException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -45,7 +46,8 @@ object typesBackupNotFoundExceptionMod {
       __obj.asInstanceOf[BackupNotFoundExceptionDetails]
     }
     
-    extension [Self <: BackupNotFoundExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackupNotFoundExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

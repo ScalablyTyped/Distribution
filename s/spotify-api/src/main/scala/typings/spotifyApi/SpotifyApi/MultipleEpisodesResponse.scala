@@ -21,7 +21,8 @@ object MultipleEpisodesResponse {
     __obj.asInstanceOf[MultipleEpisodesResponse]
   }
   
-  extension [Self <: MultipleEpisodesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipleEpisodesResponse] (val x: Self) extends AnyVal {
     
     inline def setEpisodes(value: js.Array[EpisodeObject]): Self = StObject.set(x, "episodes", value.asInstanceOf[js.Any])
     

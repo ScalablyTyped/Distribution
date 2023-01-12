@@ -16,7 +16,8 @@ object LaunchAppAction {
     __obj.asInstanceOf[LaunchAppAction]
   }
   
-  extension [Self <: LaunchAppAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchAppAction] (val x: Self) extends AnyVal {
     
     inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     

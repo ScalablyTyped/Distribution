@@ -35,7 +35,8 @@ object RONTWD {
     __obj.asInstanceOf[RONTWD]
   }
   
-  extension [Self <: RONTWD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RONTWD] (val x: Self) extends AnyVal {
     
     inline def setAUD(value: js.Array[String]): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object StartImportFileTaskRequest {
     __obj.asInstanceOf[StartImportFileTaskRequest]
   }
   
-  extension [Self <: StartImportFileTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartImportFileTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setDataSourceType(value: DataSourceType): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     

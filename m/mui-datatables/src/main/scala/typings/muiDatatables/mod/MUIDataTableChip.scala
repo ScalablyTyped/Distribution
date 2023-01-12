@@ -19,7 +19,8 @@ object MUIDataTableChip {
     __obj.asInstanceOf[MUIDataTableChip]
   }
   
-  extension [Self <: MUIDataTableChip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableChip] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object SqlQueryResponse {
     __obj.asInstanceOf[SqlQueryResponse]
   }
   
-  extension [Self <: SqlQueryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlQueryResponse] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: js.Array[SqlColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

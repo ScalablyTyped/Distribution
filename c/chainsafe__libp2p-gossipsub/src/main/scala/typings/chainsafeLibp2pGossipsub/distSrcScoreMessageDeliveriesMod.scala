@@ -82,7 +82,8 @@ object distSrcScoreMessageDeliveriesMod {
       __obj.asInstanceOf[DeliveryQueueEntry]
     }
     
-    extension [Self <: DeliveryQueueEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeliveryQueueEntry] (val x: Self) extends AnyVal {
       
       inline def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
       
@@ -107,7 +108,8 @@ object distSrcScoreMessageDeliveriesMod {
       __obj.asInstanceOf[DeliveryRecord]
     }
     
-    extension [Self <: DeliveryRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeliveryRecord] (val x: Self) extends AnyVal {
       
       inline def setFirstSeen(value: Double): Self = StObject.set(x, "firstSeen", value.asInstanceOf[js.Any])
       

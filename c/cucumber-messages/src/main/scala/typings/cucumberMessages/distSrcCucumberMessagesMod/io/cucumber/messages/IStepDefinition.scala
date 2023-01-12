@@ -23,7 +23,8 @@ object IStepDefinition {
     __obj.asInstanceOf[IStepDefinition]
   }
   
-  extension [Self <: IStepDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStepDefinition] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

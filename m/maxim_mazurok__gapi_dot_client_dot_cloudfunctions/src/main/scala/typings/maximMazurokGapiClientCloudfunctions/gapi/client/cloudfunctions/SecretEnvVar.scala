@@ -31,7 +31,8 @@ object SecretEnvVar {
     __obj.asInstanceOf[SecretEnvVar]
   }
   
-  extension [Self <: SecretEnvVar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecretEnvVar] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

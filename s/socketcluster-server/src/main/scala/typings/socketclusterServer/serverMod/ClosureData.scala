@@ -18,7 +18,8 @@ object ClosureData {
     __obj.asInstanceOf[ClosureData]
   }
   
-  extension [Self <: ClosureData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClosureData] (val x: Self) extends AnyVal {
     
     inline def setSocket(value: typings.socketclusterServer.serversocketMod.^): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
   }

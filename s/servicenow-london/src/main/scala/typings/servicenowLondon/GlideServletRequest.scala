@@ -38,7 +38,8 @@ object GlideServletRequest {
     __obj.asInstanceOf[GlideServletRequest]
   }
   
-  extension [Self <: GlideServletRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlideServletRequest] (val x: Self) extends AnyVal {
     
     inline def setGetContentType(value: () => String): Self = StObject.set(x, "getContentType", js.Any.fromFunction0(value))
     

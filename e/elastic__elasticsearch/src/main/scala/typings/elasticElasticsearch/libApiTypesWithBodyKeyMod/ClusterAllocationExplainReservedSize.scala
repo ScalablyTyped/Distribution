@@ -21,7 +21,8 @@ object ClusterAllocationExplainReservedSize {
     __obj.asInstanceOf[ClusterAllocationExplainReservedSize]
   }
   
-  extension [Self <: ClusterAllocationExplainReservedSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterAllocationExplainReservedSize] (val x: Self) extends AnyVal {
     
     inline def setNode_id(value: Id): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     

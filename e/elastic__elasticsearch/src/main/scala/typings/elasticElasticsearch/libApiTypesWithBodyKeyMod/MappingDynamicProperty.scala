@@ -64,7 +64,8 @@ object MappingDynamicProperty {
     __obj.asInstanceOf[MappingDynamicProperty]
   }
   
-  extension [Self <: MappingDynamicProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingDynamicProperty] (val x: Self) extends AnyVal {
     
     inline def setAnalyzer(value: String): Self = StObject.set(x, "analyzer", value.asInstanceOf[js.Any])
     

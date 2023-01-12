@@ -52,7 +52,8 @@ object RegisterScalableTargetRequest {
     __obj.asInstanceOf[RegisterScalableTargetRequest]
   }
   
-  extension [Self <: RegisterScalableTargetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterScalableTargetRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxCapacity(value: ResourceCapacity): Self = StObject.set(x, "MaxCapacity", value.asInstanceOf[js.Any])
     

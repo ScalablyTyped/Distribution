@@ -66,7 +66,8 @@ object OptionalInterfaceILifetim {
     __obj.asInstanceOf[OptionalInterfaceILifetim]
   }
   
-  extension [Self <: OptionalInterfaceILifetim](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionalInterfaceILifetim] (val x: Self) extends AnyVal {
     
     inline def setOnAddToFavorites(value: /* options */ IAddToFavoritesOption => IAddToFavoritesContent): Self = StObject.set(x, "onAddToFavorites", js.Any.fromFunction1(value))
     

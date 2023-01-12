@@ -19,7 +19,8 @@ object CLEAR {
     __obj.asInstanceOf[CLEAR]
   }
   
-  extension [Self <: CLEAR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CLEAR] (val x: Self) extends AnyVal {
     
     inline def setCLEAR(value: Double): Self = StObject.set(x, "CLEAR", value.asInstanceOf[js.Any])
     

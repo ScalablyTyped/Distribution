@@ -19,7 +19,8 @@ object AppsDynamiteSharedVideoReference {
     __obj.asInstanceOf[AppsDynamiteSharedVideoReference]
   }
   
-  extension [Self <: AppsDynamiteSharedVideoReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedVideoReference] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: js.Array[Double]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object El {
     __obj.asInstanceOf[El]
   }
   
-  extension [Self <: El](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: El] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

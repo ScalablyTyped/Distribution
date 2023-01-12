@@ -56,7 +56,8 @@ object ContactPoint {
     __obj.asInstanceOf[ContactPoint]
   }
   
-  extension [Self <: ContactPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactPoint] (val x: Self) extends AnyVal {
     
     inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     

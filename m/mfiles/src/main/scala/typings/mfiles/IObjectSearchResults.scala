@@ -41,7 +41,8 @@ object IObjectSearchResults {
     __obj.asInstanceOf[IObjectSearchResults]
   }
   
-  extension [Self <: IObjectSearchResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObjectSearchResults] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IObjectSearchResults): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

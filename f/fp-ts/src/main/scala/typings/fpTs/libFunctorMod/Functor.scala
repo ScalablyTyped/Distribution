@@ -23,7 +23,8 @@ object Functor {
     __obj.asInstanceOf[Functor[F]]
   }
   
-  extension [Self <: Functor[?], F](x: Self & Functor[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Functor[?], F] (val x: Self & Functor[F]) extends AnyVal {
     
     inline def setMap(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any, js.Function1[Any, Any]) => Any

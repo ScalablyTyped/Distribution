@@ -164,7 +164,8 @@ object distCoreMstOperationsMod {
       __obj.asInstanceOf[IModelReflectionData]
     }
     
-    extension [Self <: IModelReflectionData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IModelReflectionData] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -193,7 +194,8 @@ object distCoreMstOperationsMod {
       __obj.asInstanceOf[IModelReflectionPropertiesData]
     }
     
-    extension [Self <: IModelReflectionPropertiesData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IModelReflectionPropertiesData] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

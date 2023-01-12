@@ -34,7 +34,8 @@ object MappingIpProperty {
     __obj.asInstanceOf[MappingIpProperty]
   }
   
-  extension [Self <: MappingIpProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingIpProperty] (val x: Self) extends AnyVal {
     
     inline def setBoost(value: double): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
     

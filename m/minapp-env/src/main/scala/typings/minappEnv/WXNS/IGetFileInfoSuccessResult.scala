@@ -17,7 +17,8 @@ object IGetFileInfoSuccessResult {
     __obj.asInstanceOf[IGetFileInfoSuccessResult]
   }
   
-  extension [Self <: IGetFileInfoSuccessResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGetFileInfoSuccessResult] (val x: Self) extends AnyVal {
     
     inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     

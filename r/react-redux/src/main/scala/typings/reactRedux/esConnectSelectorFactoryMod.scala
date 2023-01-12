@@ -57,7 +57,8 @@ object esConnectSelectorFactoryMod {
       __obj.asInstanceOf[InitOptions[TStateProps, TOwnProps, TMergedProps, State]]
     }
     
-    extension [Self <: InitOptions[?, ?, ?, ?], TStateProps, TOwnProps, TMergedProps, State](x: Self & (InitOptions[TStateProps, TOwnProps, TMergedProps, State])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitOptions[?, ?, ?, ?], TStateProps, TOwnProps, TMergedProps, State] (val x: Self & (InitOptions[TStateProps, TOwnProps, TMergedProps, State])) extends AnyVal {
       
       inline def setAreMergedPropsEqual(value: (TMergedProps, TMergedProps) => Boolean): Self = StObject.set(x, "areMergedPropsEqual", js.Any.fromFunction2(value))
       
@@ -123,7 +124,8 @@ object esConnectSelectorFactoryMod {
       __obj.asInstanceOf[PureSelectorFactoryComparisonOptions[TStateProps, TOwnProps, State]]
     }
     
-    extension [Self <: PureSelectorFactoryComparisonOptions[?, ?, ?], TStateProps, TOwnProps, State](x: Self & (PureSelectorFactoryComparisonOptions[TStateProps, TOwnProps, State])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PureSelectorFactoryComparisonOptions[?, ?, ?], TStateProps, TOwnProps, State] (val x: Self & (PureSelectorFactoryComparisonOptions[TStateProps, TOwnProps, State])) extends AnyVal {
       
       inline def setAreOwnPropsEqual(value: (TOwnProps, TOwnProps) => Boolean): Self = StObject.set(x, "areOwnPropsEqual", js.Any.fromFunction2(value))
       
@@ -177,7 +179,8 @@ object esConnectSelectorFactoryMod {
       __obj.asInstanceOf[SelectorFactoryOptions[TStateProps, TOwnProps, TDispatchProps, TMergedProps, State]]
     }
     
-    extension [Self <: SelectorFactoryOptions[?, ?, ?, ?, ?], TStateProps, TOwnProps, TDispatchProps, TMergedProps, State](x: Self & (SelectorFactoryOptions[TStateProps, TOwnProps, TDispatchProps, TMergedProps, State])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectorFactoryOptions[?, ?, ?, ?, ?], TStateProps, TOwnProps, TDispatchProps, TMergedProps, State] (val x: Self & (SelectorFactoryOptions[TStateProps, TOwnProps, TDispatchProps, TMergedProps, State])) extends AnyVal {
       
       inline def setInitMapDispatchToProps(
         value: (Dispatch[Action[Any]], InitOptions[TStateProps, TOwnProps, TMergedProps, State]) => WrappedMapDispatchToProps[TDispatchProps, TOwnProps]

@@ -58,7 +58,8 @@ object libComponentsCheckCheckDottypesMod {
       __obj.asInstanceOf[ICheckProps]
     }
     
-    extension [Self <: ICheckProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICheckProps] (val x: Self) extends AnyVal {
       
       inline def setAlwaysShowCheck(value: Boolean): Self = StObject.set(x, "alwaysShowCheck", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object libComponentsCheckCheckDottypesMod {
       __obj.asInstanceOf[ICheckStyleProps]
     }
     
-    extension [Self <: ICheckStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICheckStyleProps] (val x: Self) extends AnyVal {
       
       inline def setCheckBoxHeight(value: String): Self = StObject.set(x, "checkBoxHeight", value.asInstanceOf[js.Any])
       
@@ -176,7 +178,8 @@ object libComponentsCheckCheckDottypesMod {
       __obj.asInstanceOf[ICheckStyles]
     }
     
-    extension [Self <: ICheckStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICheckStyles] (val x: Self) extends AnyVal {
       
       inline def setCheck(value: IStyle): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       

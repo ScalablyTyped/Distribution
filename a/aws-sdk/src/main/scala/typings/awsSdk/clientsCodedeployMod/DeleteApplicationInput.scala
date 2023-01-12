@@ -18,7 +18,8 @@ object DeleteApplicationInput {
     __obj.asInstanceOf[DeleteApplicationInput]
   }
   
-  extension [Self <: DeleteApplicationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteApplicationInput] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
   }

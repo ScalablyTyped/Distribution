@@ -56,7 +56,8 @@ object distNodeEsmSrcModelIdTokenMod {
       __obj.asInstanceOf[IdTokenResponse]
     }
     
-    extension [Self <: IdTokenResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdTokenResponse] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -199,7 +200,8 @@ object distNodeEsmSrcModelIdTokenMod {
       __obj.asInstanceOf[ParsedIdToken]
     }
     
-    extension [Self <: ParsedIdToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedIdToken] (val x: Self) extends AnyVal {
       
       inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
       
@@ -252,7 +254,8 @@ object distNodeEsmSrcModelIdTokenMod {
       __obj.asInstanceOf[TaggedWithTokenResponse]
     }
     
-    extension [Self <: TaggedWithTokenResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaggedWithTokenResponse] (val x: Self) extends AnyVal {
       
       inline def set_tokenResponse(value: PhoneOrOauthTokenResponse): Self = StObject.set(x, "_tokenResponse", value.asInstanceOf[js.Any])
       

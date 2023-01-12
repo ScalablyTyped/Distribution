@@ -70,7 +70,8 @@ object anon {
       __obj.asInstanceOf[Animating]
     }
     
-    extension [Self <: Animating](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Animating] (val x: Self) extends AnyVal {
       
       inline def setAnimating(value: Boolean): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object anon {
       __obj.asInstanceOf[MaxValue]
     }
     
-    extension [Self <: MaxValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxValue] (val x: Self) extends AnyVal {
       
       inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
       
@@ -200,7 +202,8 @@ object anon {
       __obj.asInstanceOf[PropsWithChildrencheckInt]
     }
     
-    extension [Self <: PropsWithChildrencheckInt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropsWithChildrencheckInt] (val x: Self) extends AnyVal {
       
       inline def setCheckInterval(value: Double): Self = StObject.set(x, "checkInterval", value.asInstanceOf[js.Any])
       
@@ -291,7 +294,8 @@ object anon {
       __obj.asInstanceOf[ScrollTop]
     }
     
-    extension [Self <: ScrollTop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollTop] (val x: Self) extends AnyVal {
       
       inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     }

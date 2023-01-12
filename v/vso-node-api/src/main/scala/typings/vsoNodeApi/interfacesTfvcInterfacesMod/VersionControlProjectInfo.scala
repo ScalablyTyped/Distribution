@@ -28,7 +28,8 @@ object VersionControlProjectInfo {
     __obj.asInstanceOf[VersionControlProjectInfo]
   }
   
-  extension [Self <: VersionControlProjectInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VersionControlProjectInfo] (val x: Self) extends AnyVal {
     
     inline def setDefaultSourceControlType(value: SourceControlTypes): Self = StObject.set(x, "defaultSourceControlType", value.asInstanceOf[js.Any])
     

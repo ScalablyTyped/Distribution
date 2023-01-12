@@ -23,7 +23,8 @@ object DetectLabelsImageForeground {
     __obj.asInstanceOf[DetectLabelsImageForeground]
   }
   
-  extension [Self <: DetectLabelsImageForeground](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectLabelsImageForeground] (val x: Self) extends AnyVal {
     
     inline def setDominantColors(value: DominantColors): Self = StObject.set(x, "DominantColors", value.asInstanceOf[js.Any])
     

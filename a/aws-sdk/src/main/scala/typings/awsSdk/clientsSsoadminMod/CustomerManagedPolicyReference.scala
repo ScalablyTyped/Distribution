@@ -23,7 +23,8 @@ object CustomerManagedPolicyReference {
     __obj.asInstanceOf[CustomerManagedPolicyReference]
   }
   
-  extension [Self <: CustomerManagedPolicyReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerManagedPolicyReference] (val x: Self) extends AnyVal {
     
     inline def setName(value: ManagedPolicyName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

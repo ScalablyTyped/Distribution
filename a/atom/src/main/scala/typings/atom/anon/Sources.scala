@@ -19,7 +19,8 @@ object Sources {
     __obj.asInstanceOf[Sources]
   }
   
-  extension [Self <: Sources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sources] (val x: Self) extends AnyVal {
     
     inline def setExcludeSources(value: js.Array[String]): Self = StObject.set(x, "excludeSources", value.asInstanceOf[js.Any])
     

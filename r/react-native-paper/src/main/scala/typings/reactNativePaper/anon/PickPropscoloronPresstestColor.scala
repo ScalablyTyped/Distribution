@@ -32,7 +32,8 @@ object PickPropscoloronPresstestColor {
     __obj.asInstanceOf[PickPropscoloronPresstestColor]
   }
   
-  extension [Self <: PickPropscoloronPresstestColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickPropscoloronPresstestColor] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object srcMiddlewareShiftMod {
       __obj.asInstanceOf[LimitShiftOptions]
     }
     
-    extension [Self <: LimitShiftOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LimitShiftOptions] (val x: Self) extends AnyVal {
       
       inline def setCrossAxis(value: Boolean): Self = StObject.set(x, "crossAxis", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object srcMiddlewareShiftMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCrossAxis(value: Boolean): Self = StObject.set(x, "crossAxis", value.asInstanceOf[js.Any])
       

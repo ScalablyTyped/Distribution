@@ -23,7 +23,8 @@ object ContextMenuOpeningEventUIParam {
     __obj.asInstanceOf[ContextMenuOpeningEventUIParam]
   }
   
-  extension [Self <: ContextMenuOpeningEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextMenuOpeningEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setMenuArea(value: String): Self = StObject.set(x, "menuArea", value.asInstanceOf[js.Any])
     

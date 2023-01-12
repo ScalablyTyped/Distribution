@@ -64,7 +64,8 @@ object WebdriverBatchReport {
     __obj.asInstanceOf[WebdriverBatchReport]
   }
   
-  extension [Self <: WebdriverBatchReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebdriverBatchReport] (val x: Self) extends AnyVal {
     
     inline def setAppUnderTestId(value: Id): Self = StObject.set(x, "appUnderTestId", value.asInstanceOf[js.Any])
     

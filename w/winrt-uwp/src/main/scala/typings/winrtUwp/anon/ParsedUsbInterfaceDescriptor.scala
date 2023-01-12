@@ -18,7 +18,8 @@ object ParsedUsbInterfaceDescriptor {
     __obj.asInstanceOf[ParsedUsbInterfaceDescriptor]
   }
   
-  extension [Self <: ParsedUsbInterfaceDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsedUsbInterfaceDescriptor] (val x: Self) extends AnyVal {
     
     inline def setParsed(value: UsbInterfaceDescriptor): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
     

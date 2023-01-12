@@ -16,7 +16,8 @@ object GoogleCloudDialogflowCxV3beta1IntentInput {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1IntentInput]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3beta1IntentInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1IntentInput] (val x: Self) extends AnyVal {
     
     inline def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     

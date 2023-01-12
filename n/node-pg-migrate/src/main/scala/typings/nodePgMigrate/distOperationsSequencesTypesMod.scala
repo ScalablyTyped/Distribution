@@ -74,7 +74,8 @@ object distOperationsSequencesTypesMod {
       __obj.asInstanceOf[SequenceOptions]
     }
     
-    extension [Self <: SequenceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SequenceOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Double): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -129,7 +130,8 @@ object distOperationsSequencesTypesMod {
       __obj.asInstanceOf[SequenceOptionsAlter]
     }
     
-    extension [Self <: SequenceOptionsAlter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SequenceOptionsAlter] (val x: Self) extends AnyVal {
       
       inline def setRestart(value: Double | `true`): Self = StObject.set(x, "restart", value.asInstanceOf[js.Any])
       
@@ -151,7 +153,8 @@ object distOperationsSequencesTypesMod {
       __obj.asInstanceOf[SequenceOptionsCreate]
     }
     
-    extension [Self <: SequenceOptionsCreate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SequenceOptionsCreate] (val x: Self) extends AnyVal {
       
       inline def setTemporary(value: Boolean): Self = StObject.set(x, "temporary", value.asInstanceOf[js.Any])
       

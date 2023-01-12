@@ -65,7 +65,8 @@ object DatePicker {
     __obj.asInstanceOf[DatePicker[DateType]]
   }
   
-  extension [Self <: DatePicker[?], DateType](x: Self & DatePicker[DateType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatePicker[?], DateType] (val x: Self & DatePicker[DateType]) extends AnyVal {
     
     inline def setDatePicker(value: PickerComponentClass[PickerProps[DateType] & PopupClassName, Any]): Self = StObject.set(x, "DatePicker", value.asInstanceOf[js.Any])
     

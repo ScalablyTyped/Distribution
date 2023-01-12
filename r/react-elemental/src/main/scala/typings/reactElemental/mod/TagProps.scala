@@ -28,7 +28,8 @@ object TagProps {
     __obj.asInstanceOf[TagProps]
   }
   
-  extension [Self <: TagProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagProps] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

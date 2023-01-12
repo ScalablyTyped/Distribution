@@ -24,7 +24,8 @@ object distPreviewComponentsStoryListViewMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setStories(value: Any): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
     }
@@ -43,7 +44,8 @@ object distPreviewComponentsStoryListViewMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

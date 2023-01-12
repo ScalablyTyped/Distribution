@@ -15,7 +15,8 @@ object FlexDirectionString {
     __obj.asInstanceOf[FlexDirectionString]
   }
   
-  extension [Self <: FlexDirectionString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexDirectionString] (val x: Self) extends AnyVal {
     
     inline def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
   }

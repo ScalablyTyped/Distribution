@@ -19,7 +19,8 @@ object TfvcVersionDescriptor {
     __obj.asInstanceOf[TfvcVersionDescriptor]
   }
   
-  extension [Self <: TfvcVersionDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TfvcVersionDescriptor] (val x: Self) extends AnyVal {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

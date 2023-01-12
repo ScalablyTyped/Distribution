@@ -33,7 +33,8 @@ object CurrentPerformanceRiskRatings {
     __obj.asInstanceOf[CurrentPerformanceRiskRatings]
   }
   
-  extension [Self <: CurrentPerformanceRiskRatings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentPerformanceRiskRatings] (val x: Self) extends AnyVal {
     
     inline def setHigh(value: High): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     

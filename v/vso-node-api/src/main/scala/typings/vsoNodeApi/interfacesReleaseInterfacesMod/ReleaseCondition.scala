@@ -17,7 +17,8 @@ object ReleaseCondition {
     __obj.asInstanceOf[ReleaseCondition]
   }
   
-  extension [Self <: ReleaseCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseCondition] (val x: Self) extends AnyVal {
     
     inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }

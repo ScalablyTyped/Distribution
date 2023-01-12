@@ -35,7 +35,8 @@ object IndexOffset {
     __obj.asInstanceOf[IndexOffset]
   }
   
-  extension [Self <: IndexOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexOffset] (val x: Self) extends AnyVal {
     
     inline def setDocumentKey(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _DocumentKey */ Any

@@ -15,7 +15,8 @@ object `47` {
     __obj.asInstanceOf[`47`]
   }
   
-  extension [Self <: `47`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `47`] (val x: Self) extends AnyVal {
     
     inline def setMapValue(value: typings.firebaseFirestore.distPackagesFirestoreSrcProtosFirestoreProtoApiMod.MapValue): Self = StObject.set(x, "mapValue", value.asInstanceOf[js.Any])
   }

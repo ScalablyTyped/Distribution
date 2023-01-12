@@ -25,7 +25,8 @@ object LinearGradient3Generic {
     __obj.asInstanceOf[LinearGradient3Generic[TColor, TValue, TStrategy]]
   }
   
-  extension [Self <: LinearGradient3Generic[?, ?, ?], TColor, TValue, TStrategy](x: Self & (LinearGradient3Generic[TColor, TValue, TStrategy])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinearGradient3Generic[?, ?, ?], TColor, TValue, TStrategy] (val x: Self & (LinearGradient3Generic[TColor, TValue, TStrategy])) extends AnyVal {
     
     inline def setMax(value: RuleColorStopGeneric[TColor, TValue]): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

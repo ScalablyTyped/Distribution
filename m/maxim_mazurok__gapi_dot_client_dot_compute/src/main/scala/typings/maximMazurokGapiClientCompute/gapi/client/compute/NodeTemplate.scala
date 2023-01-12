@@ -71,7 +71,8 @@ object NodeTemplate {
     __obj.asInstanceOf[NodeTemplate]
   }
   
-  extension [Self <: NodeTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeTemplate] (val x: Self) extends AnyVal {
     
     inline def setAccelerators(value: js.Array[AcceleratorConfig]): Self = StObject.set(x, "accelerators", value.asInstanceOf[js.Any])
     

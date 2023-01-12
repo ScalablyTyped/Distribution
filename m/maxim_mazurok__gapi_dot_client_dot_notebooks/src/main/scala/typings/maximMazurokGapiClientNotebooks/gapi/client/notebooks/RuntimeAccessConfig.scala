@@ -22,7 +22,8 @@ object RuntimeAccessConfig {
     __obj.asInstanceOf[RuntimeAccessConfig]
   }
   
-  extension [Self <: RuntimeAccessConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeAccessConfig] (val x: Self) extends AnyVal {
     
     inline def setAccessType(value: String): Self = StObject.set(x, "accessType", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object UpgradeElasticsearchDomainResponse {
     __obj.asInstanceOf[UpgradeElasticsearchDomainResponse]
   }
   
-  extension [Self <: UpgradeElasticsearchDomainResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpgradeElasticsearchDomainResponse] (val x: Self) extends AnyVal {
     
     inline def setChangeProgressDetails(value: ChangeProgressDetails): Self = StObject.set(x, "ChangeProgressDetails", value.asInstanceOf[js.Any])
     

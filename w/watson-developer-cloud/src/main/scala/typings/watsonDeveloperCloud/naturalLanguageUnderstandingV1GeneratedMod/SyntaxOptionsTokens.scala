@@ -20,7 +20,8 @@ object SyntaxOptionsTokens {
     __obj.asInstanceOf[SyntaxOptionsTokens]
   }
   
-  extension [Self <: SyntaxOptionsTokens](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyntaxOptionsTokens] (val x: Self) extends AnyVal {
     
     inline def setLemma(value: Boolean): Self = StObject.set(x, "lemma", value.asInstanceOf[js.Any])
     

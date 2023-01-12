@@ -31,7 +31,8 @@ object GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia] (val x: Self) extends AnyVal {
     
     inline def setFileUri(value: String): Self = StObject.set(x, "fileUri", value.asInstanceOf[js.Any])
     

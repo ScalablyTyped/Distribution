@@ -15,7 +15,8 @@ object ContentApplicationjsonMarketplacependingchange {
     __obj.asInstanceOf[ContentApplicationjsonMarketplacependingchange]
   }
   
-  extension [Self <: ContentApplicationjsonMarketplacependingchange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonMarketplacependingchange] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonMarketplacependingchange): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

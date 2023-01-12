@@ -33,7 +33,8 @@ object BucketCountByEncryptionType {
     __obj.asInstanceOf[BucketCountByEncryptionType]
   }
   
-  extension [Self <: BucketCountByEncryptionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketCountByEncryptionType] (val x: Self) extends AnyVal {
     
     inline def setKmsManaged(value: long): Self = StObject.set(x, "kmsManaged", value.asInstanceOf[js.Any])
     

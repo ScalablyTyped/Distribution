@@ -22,7 +22,8 @@ object GapSize {
     __obj.asInstanceOf[GapSize]
   }
   
-  extension [Self <: GapSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GapSize] (val x: Self) extends AnyVal {
     
     inline def setDashNb(value: Double): Self = StObject.set(x, "dashNb", value.asInstanceOf[js.Any])
     

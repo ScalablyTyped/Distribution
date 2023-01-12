@@ -23,7 +23,8 @@ object PlacementType {
     __obj.asInstanceOf[PlacementType]
   }
   
-  extension [Self <: PlacementType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlacementType] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: XmlString): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     

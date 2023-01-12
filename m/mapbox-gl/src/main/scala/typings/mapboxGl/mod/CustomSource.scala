@@ -42,7 +42,8 @@ object CustomSource {
     __obj.asInstanceOf[CustomSource[T]]
   }
   
-  extension [Self <: CustomSource[?], T](x: Self & CustomSource[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomSource[?], T] (val x: Self & CustomSource[T]) extends AnyVal {
     
     inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     

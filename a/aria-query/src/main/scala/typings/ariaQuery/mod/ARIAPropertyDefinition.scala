@@ -29,7 +29,8 @@ object ARIAPropertyDefinition {
     __obj.asInstanceOf[ARIAPropertyDefinition]
   }
   
-  extension [Self <: ARIAPropertyDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ARIAPropertyDefinition] (val x: Self) extends AnyVal {
     
     inline def setAllowundefined(value: Boolean): Self = StObject.set(x, "allowundefined", value.asInstanceOf[js.Any])
     

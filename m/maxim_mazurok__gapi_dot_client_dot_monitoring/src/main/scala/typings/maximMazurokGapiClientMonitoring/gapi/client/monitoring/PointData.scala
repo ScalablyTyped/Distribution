@@ -19,7 +19,8 @@ object PointData {
     __obj.asInstanceOf[PointData]
   }
   
-  extension [Self <: PointData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointData] (val x: Self) extends AnyVal {
     
     inline def setTimeInterval(value: TimeInterval): Self = StObject.set(x, "timeInterval", value.asInstanceOf[js.Any])
     

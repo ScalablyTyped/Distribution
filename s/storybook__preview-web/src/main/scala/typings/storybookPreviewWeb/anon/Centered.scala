@@ -22,7 +22,8 @@ object Centered {
     __obj.asInstanceOf[Centered]
   }
   
-  extension [Self <: Centered](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Centered] (val x: Self) extends AnyVal {
     
     inline def setCentered(value: `sb-main-centered`): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object GooglePrivacyDlpV2StoredInfoTypeStats {
     __obj.asInstanceOf[GooglePrivacyDlpV2StoredInfoTypeStats]
   }
   
-  extension [Self <: GooglePrivacyDlpV2StoredInfoTypeStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2StoredInfoTypeStats] (val x: Self) extends AnyVal {
     
     inline def setLargeCustomDictionary(value: GooglePrivacyDlpV2LargeCustomDictionaryStats): Self = StObject.set(x, "largeCustomDictionary", value.asInstanceOf[js.Any])
     

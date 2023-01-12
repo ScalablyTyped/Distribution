@@ -31,7 +31,8 @@ object RestrictedLaunchActivatedEventArgs {
     __obj.asInstanceOf[RestrictedLaunchActivatedEventArgs]
   }
   
-  extension [Self <: RestrictedLaunchActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestrictedLaunchActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

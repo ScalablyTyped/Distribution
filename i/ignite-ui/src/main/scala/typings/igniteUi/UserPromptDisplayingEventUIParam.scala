@@ -43,7 +43,8 @@ object UserPromptDisplayingEventUIParam {
     __obj.asInstanceOf[UserPromptDisplayingEventUIParam]
   }
   
-  extension [Self <: UserPromptDisplayingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserPromptDisplayingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setCanCancel(value: Boolean): Self = StObject.set(x, "canCancel", value.asInstanceOf[js.Any])
     

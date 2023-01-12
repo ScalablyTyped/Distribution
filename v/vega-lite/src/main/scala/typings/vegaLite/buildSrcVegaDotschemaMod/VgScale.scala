@@ -71,7 +71,8 @@ object VgScale {
     __obj.asInstanceOf[VgScale]
   }
   
-  extension [Self <: VgScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VgScale] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: Double | SignalRef): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

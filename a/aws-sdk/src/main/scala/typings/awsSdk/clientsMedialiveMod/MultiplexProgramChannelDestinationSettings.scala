@@ -24,7 +24,8 @@ object MultiplexProgramChannelDestinationSettings {
     __obj.asInstanceOf[MultiplexProgramChannelDestinationSettings]
   }
   
-  extension [Self <: MultiplexProgramChannelDestinationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiplexProgramChannelDestinationSettings] (val x: Self) extends AnyVal {
     
     inline def setMultiplexId(value: stringMin1): Self = StObject.set(x, "MultiplexId", value.asInstanceOf[js.Any])
     

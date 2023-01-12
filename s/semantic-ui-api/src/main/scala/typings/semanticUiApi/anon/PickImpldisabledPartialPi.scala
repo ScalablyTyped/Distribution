@@ -21,7 +21,8 @@ object PickImpldisabledPartialPi {
     __obj.asInstanceOf[PickImpldisabledPartialPi]
   }
   
-  extension [Self <: PickImpldisabledPartialPi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImpldisabledPartialPi] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

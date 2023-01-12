@@ -17,7 +17,8 @@ object ParsingResults {
     __obj.asInstanceOf[ParsingResults]
   }
   
-  extension [Self <: ParsingResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsingResults] (val x: Self) extends AnyVal {
     
     inline def setFailedFiles(value: js.Array[IacFileParseFailure]): Self = StObject.set(x, "failedFiles", value.asInstanceOf[js.Any])
     

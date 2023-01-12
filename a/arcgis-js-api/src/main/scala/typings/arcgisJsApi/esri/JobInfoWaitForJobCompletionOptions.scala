@@ -36,7 +36,8 @@ object JobInfoWaitForJobCompletionOptions {
     __obj.asInstanceOf[JobInfoWaitForJobCompletionOptions]
   }
   
-  extension [Self <: JobInfoWaitForJobCompletionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobInfoWaitForJobCompletionOptions] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: Any): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     

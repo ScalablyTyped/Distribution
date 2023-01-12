@@ -19,7 +19,8 @@ object ReportRowDimensionValue {
     __obj.asInstanceOf[ReportRowDimensionValue]
   }
   
-  extension [Self <: ReportRowDimensionValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportRowDimensionValue] (val x: Self) extends AnyVal {
     
     inline def setDisplayLabel(value: String): Self = StObject.set(x, "displayLabel", value.asInstanceOf[js.Any])
     

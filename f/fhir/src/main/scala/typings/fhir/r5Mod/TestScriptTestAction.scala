@@ -25,7 +25,8 @@ object TestScriptTestAction {
     __obj.asInstanceOf[TestScriptTestAction]
   }
   
-  extension [Self <: TestScriptTestAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestScriptTestAction] (val x: Self) extends AnyVal {
     
     inline def setAssert(value: TestScriptSetupActionAssert): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     

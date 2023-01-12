@@ -110,7 +110,8 @@ object mod {
       __obj.asInstanceOf[UIDeleteFileOptions]
     }
     
-    extension [Self <: UIDeleteFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UIDeleteFileOptions] (val x: Self) extends AnyVal {
       
       inline def setConfirmMessage(value: String): Self = StObject.set(x, "confirmMessage", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object mod {
       __obj.asInstanceOf[UIDisplayOptions]
     }
     
-    extension [Self <: UIDisplayOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UIDisplayOptions] (val x: Self) extends AnyVal {
       
       inline def setFileSizeOnSubmit(value: Boolean): Self = StObject.set(x, "fileSizeOnSubmit", value.asInstanceOf[js.Any])
       
@@ -188,7 +190,8 @@ object mod {
       __obj.asInstanceOf[UIDragAndDropOptions]
     }
     
-    extension [Self <: UIDragAndDropOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UIDragAndDropOptions] (val x: Self) extends AnyVal {
       
       inline def setExtraDropzones(value: js.Array[Any]): Self = StObject.set(x, "extraDropzones", value.asInstanceOf[js.Any])
       
@@ -234,7 +237,8 @@ object mod {
       __obj.asInstanceOf[UIFailedUploadTextDisplay]
     }
     
-    extension [Self <: UIFailedUploadTextDisplay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UIFailedUploadTextDisplay] (val x: Self) extends AnyVal {
       
       inline def setEnableTooltip(value: Boolean): Self = StObject.set(x, "enableTooltip", value.asInstanceOf[js.Any])
       
@@ -275,7 +279,8 @@ object mod {
       __obj.asInstanceOf[UIMessages]
     }
     
-    extension [Self <: UIMessages](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UIMessages] (val x: Self) extends AnyVal {
       
       inline def setTooManyFilesError(value: String): Self = StObject.set(x, "tooManyFilesError", value.asInstanceOf[js.Any])
       
@@ -403,7 +408,8 @@ object mod {
       __obj.asInstanceOf[UIOptions]
     }
     
-    extension [Self <: UIOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UIOptions] (val x: Self) extends AnyVal {
       
       inline def setDeleteFile(value: UIDeleteFileOptions): Self = StObject.set(x, "deleteFile", value.asInstanceOf[js.Any])
       
@@ -496,7 +502,8 @@ object mod {
       __obj.asInstanceOf[UIPasteOptions]
     }
     
-    extension [Self <: UIPasteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UIPasteOptions] (val x: Self) extends AnyVal {
       
       inline def setNamePromptMessage(value: String): Self = StObject.set(x, "namePromptMessage", value.asInstanceOf[js.Any])
       
@@ -544,7 +551,8 @@ object mod {
       __obj.asInstanceOf[UIRetryOptions]
     }
     
-    extension [Self <: UIRetryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UIRetryOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoRetryNote(value: String): Self = StObject.set(x, "autoRetryNote", value.asInstanceOf[js.Any])
       
@@ -578,7 +586,8 @@ object mod {
       __obj.asInstanceOf[UIScalingOptions]
     }
     
-    extension [Self <: UIScalingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UIScalingOptions] (val x: Self) extends AnyVal {
       
       inline def setHideScaled(value: Boolean): Self = StObject.set(x, "hideScaled", value.asInstanceOf[js.Any])
       
@@ -625,7 +634,8 @@ object mod {
       __obj.asInstanceOf[UITextOptions]
     }
     
-    extension [Self <: UITextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UITextOptions] (val x: Self) extends AnyVal {
       
       inline def setFailUpload(value: String): Self = StObject.set(x, "failUpload", value.asInstanceOf[js.Any])
       
@@ -689,7 +699,8 @@ object mod {
       __obj.asInstanceOf[UIThumbnailsOptions]
     }
     
-    extension [Self <: UIThumbnailsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UIThumbnailsOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomResizer(value: /* resizeInfo */ ResizeInfo => PromiseOptions): Self = StObject.set(x, "customResizer", js.Any.fromFunction1(value))
       
@@ -742,7 +753,8 @@ object mod {
       __obj.asInstanceOf[UIThumbnailsPlaceholderOptions]
     }
     
-    extension [Self <: UIThumbnailsPlaceholderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UIThumbnailsPlaceholderOptions] (val x: Self) extends AnyVal {
       
       inline def setNotAvailablePath(value: String): Self = StObject.set(x, "notAvailablePath", value.asInstanceOf[js.Any])
       

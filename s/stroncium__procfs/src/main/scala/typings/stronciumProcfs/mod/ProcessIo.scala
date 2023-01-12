@@ -35,7 +35,8 @@ object ProcessIo {
     __obj.asInstanceOf[ProcessIo]
   }
   
-  extension [Self <: ProcessIo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessIo] (val x: Self) extends AnyVal {
     
     inline def setRead(value: Double): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     

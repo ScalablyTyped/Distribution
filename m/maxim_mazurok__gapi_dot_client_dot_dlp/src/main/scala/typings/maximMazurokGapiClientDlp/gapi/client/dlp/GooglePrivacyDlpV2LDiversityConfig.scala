@@ -22,7 +22,8 @@ object GooglePrivacyDlpV2LDiversityConfig {
     __obj.asInstanceOf[GooglePrivacyDlpV2LDiversityConfig]
   }
   
-  extension [Self <: GooglePrivacyDlpV2LDiversityConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2LDiversityConfig] (val x: Self) extends AnyVal {
     
     inline def setQuasiIds(value: js.Array[GooglePrivacyDlpV2FieldId]): Self = StObject.set(x, "quasiIds", value.asInstanceOf[js.Any])
     

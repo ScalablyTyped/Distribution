@@ -19,7 +19,8 @@ object OrderMerchantProvidedAnnotation {
     __obj.asInstanceOf[OrderMerchantProvidedAnnotation]
   }
   
-  extension [Self <: OrderMerchantProvidedAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderMerchantProvidedAnnotation] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

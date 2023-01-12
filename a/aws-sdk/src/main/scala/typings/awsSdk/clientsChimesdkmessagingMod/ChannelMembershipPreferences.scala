@@ -18,7 +18,8 @@ object ChannelMembershipPreferences {
     __obj.asInstanceOf[ChannelMembershipPreferences]
   }
   
-  extension [Self <: ChannelMembershipPreferences](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelMembershipPreferences] (val x: Self) extends AnyVal {
     
     inline def setPushNotifications(value: PushNotificationPreferences): Self = StObject.set(x, "PushNotifications", value.asInstanceOf[js.Any])
     

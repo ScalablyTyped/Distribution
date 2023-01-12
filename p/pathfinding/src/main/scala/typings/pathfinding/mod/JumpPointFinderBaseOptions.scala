@@ -17,7 +17,8 @@ object JumpPointFinderBaseOptions {
     __obj.asInstanceOf[JumpPointFinderBaseOptions]
   }
   
-  extension [Self <: JumpPointFinderBaseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JumpPointFinderBaseOptions] (val x: Self) extends AnyVal {
     
     inline def setTrackJumpRecursion(value: Boolean): Self = StObject.set(x, "trackJumpRecursion", value.asInstanceOf[js.Any])
     

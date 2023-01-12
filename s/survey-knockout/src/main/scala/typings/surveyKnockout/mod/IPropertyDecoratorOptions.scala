@@ -23,7 +23,8 @@ object IPropertyDecoratorOptions {
     __obj.asInstanceOf[IPropertyDecoratorOptions[T]]
   }
   
-  extension [Self <: IPropertyDecoratorOptions[?], T](x: Self & IPropertyDecoratorOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPropertyDecoratorOptions[?], T] (val x: Self & IPropertyDecoratorOptions[T]) extends AnyVal {
     
     inline def setDefaultSource(value: String): Self = StObject.set(x, "defaultSource", value.asInstanceOf[js.Any])
     

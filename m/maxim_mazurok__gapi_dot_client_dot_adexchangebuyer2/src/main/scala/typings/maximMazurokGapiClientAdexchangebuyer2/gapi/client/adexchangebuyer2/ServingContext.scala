@@ -31,7 +31,8 @@ object ServingContext {
     __obj.asInstanceOf[ServingContext]
   }
   
-  extension [Self <: ServingContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServingContext] (val x: Self) extends AnyVal {
     
     inline def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object HitTestResultGround {
     __obj.asInstanceOf[HitTestResultGround]
   }
   
-  extension [Self <: HitTestResultGround](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HitTestResultGround] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

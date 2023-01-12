@@ -22,7 +22,8 @@ object GridExcelExporter {
     __obj.asInstanceOf[GridExcelExporter]
   }
   
-  extension [Self <: GridExcelExporter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridExcelExporter] (val x: Self) extends AnyVal {
     
     inline def setExportGrid(value: (js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "exportGrid", js.Any.fromFunction3(value))
   }

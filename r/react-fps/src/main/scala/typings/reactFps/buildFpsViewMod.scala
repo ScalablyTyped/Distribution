@@ -33,7 +33,8 @@ object buildFpsViewMod extends Shortcut {
       __obj.asInstanceOf[ComponentProps]
     }
     
-    extension [Self <: ComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentProps] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double | String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

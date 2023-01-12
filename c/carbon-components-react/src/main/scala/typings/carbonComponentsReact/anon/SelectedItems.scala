@@ -16,7 +16,8 @@ object SelectedItems {
     __obj.asInstanceOf[SelectedItems[T]]
   }
   
-  extension [Self <: SelectedItems[?], T /* <: ListBoxBaseItemType */](x: Self & SelectedItems[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectedItems[?], T /* <: ListBoxBaseItemType */] (val x: Self & SelectedItems[T]) extends AnyVal {
     
     inline def setSelectedItems(value: js.Array[T]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     

@@ -315,7 +315,8 @@ object typesIterMod {
       __obj.asInstanceOf[IIterable[T]]
     }
     
-    extension [Self <: IIterable[?], T](x: Self & IIterable[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIterable[?], T] (val x: Self & IIterable[T]) extends AnyVal {
       
       inline def setIter(value: () => IIterator[T]): Self = StObject.set(x, "iter", js.Any.fromFunction0(value))
     }
@@ -349,7 +350,8 @@ object typesIterMod {
       __obj.asInstanceOf[IIterator[T]]
     }
     
-    extension [Self <: IIterator[?], T](x: Self & IIterator[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIterator[?], T] (val x: Self & IIterator[T]) extends AnyVal {
       
       inline def setNext(value: () => js.UndefOr[T]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     }

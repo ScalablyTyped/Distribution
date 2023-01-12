@@ -42,7 +42,8 @@ object NotebookDocumentCellChange {
     __obj.asInstanceOf[NotebookDocumentCellChange]
   }
   
-  extension [Self <: NotebookDocumentCellChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookDocumentCellChange] (val x: Self) extends AnyVal {
     
     inline def setCell(value: NotebookCell): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     

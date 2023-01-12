@@ -57,7 +57,8 @@ object BuildDefinitionRevision {
     __obj.asInstanceOf[BuildDefinitionRevision]
   }
   
-  extension [Self <: BuildDefinitionRevision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildDefinitionRevision] (val x: Self) extends AnyVal {
     
     inline def setChangeType(value: AuditAction): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     

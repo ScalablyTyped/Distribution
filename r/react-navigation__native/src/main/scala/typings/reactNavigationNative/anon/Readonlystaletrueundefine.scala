@@ -21,7 +21,8 @@ object Readonlystaletrueundefine {
     __obj.asInstanceOf[Readonlystaletrueundefine]
   }
   
-  extension [Self <: Readonlystaletrueundefine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlystaletrueundefine] (val x: Self) extends AnyVal {
     
     inline def setRoutes(value: js.Array[PartialRoute[Route[String, js.UndefOr[js.Object]]]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     

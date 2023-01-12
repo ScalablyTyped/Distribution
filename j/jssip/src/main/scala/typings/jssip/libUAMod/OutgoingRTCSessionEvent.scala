@@ -24,7 +24,8 @@ object OutgoingRTCSessionEvent {
     __obj.asInstanceOf[OutgoingRTCSessionEvent]
   }
   
-  extension [Self <: OutgoingRTCSessionEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutgoingRTCSessionEvent] (val x: Self) extends AnyVal {
     
     inline def setOriginator(value: LOCAL): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
     

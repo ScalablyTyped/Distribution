@@ -43,7 +43,8 @@ object HlsImageBasedTrickPlaySettings {
     __obj.asInstanceOf[HlsImageBasedTrickPlaySettings]
   }
   
-  extension [Self <: HlsImageBasedTrickPlaySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsImageBasedTrickPlaySettings] (val x: Self) extends AnyVal {
     
     inline def setIntervalCadence(value: HlsIntervalCadence): Self = StObject.set(x, "IntervalCadence", value.asInstanceOf[js.Any])
     

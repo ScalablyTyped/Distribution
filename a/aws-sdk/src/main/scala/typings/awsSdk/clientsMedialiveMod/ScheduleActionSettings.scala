@@ -78,7 +78,8 @@ object ScheduleActionSettings {
     __obj.asInstanceOf[ScheduleActionSettings]
   }
   
-  extension [Self <: ScheduleActionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduleActionSettings] (val x: Self) extends AnyVal {
     
     inline def setHlsId3SegmentTaggingSettings(value: HlsId3SegmentTaggingScheduleActionSettings): Self = StObject.set(x, "HlsId3SegmentTaggingSettings", value.asInstanceOf[js.Any])
     

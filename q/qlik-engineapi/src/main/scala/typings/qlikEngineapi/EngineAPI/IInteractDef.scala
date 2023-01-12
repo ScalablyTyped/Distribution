@@ -85,7 +85,8 @@ object IInteractDef {
     __obj.asInstanceOf[IInteractDef]
   }
   
-  extension [Self <: IInteractDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInteractDef] (val x: Self) extends AnyVal {
     
     inline def setQButtons(value: Double): Self = StObject.set(x, "qButtons", value.asInstanceOf[js.Any])
     

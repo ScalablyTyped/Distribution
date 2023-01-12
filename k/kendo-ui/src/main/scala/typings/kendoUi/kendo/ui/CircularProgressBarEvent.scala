@@ -19,7 +19,8 @@ object CircularProgressBarEvent {
     __obj.asInstanceOf[CircularProgressBarEvent]
   }
   
-  extension [Self <: CircularProgressBarEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircularProgressBarEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

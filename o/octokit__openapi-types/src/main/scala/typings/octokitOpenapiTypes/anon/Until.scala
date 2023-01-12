@@ -34,7 +34,8 @@ object Until {
     __obj.asInstanceOf[Until]
   }
   
-  extension [Self <: Until](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Until] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

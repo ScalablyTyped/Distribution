@@ -110,7 +110,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RequestLoggerOptions]
     }
     
-    extension [Self <: RequestLoggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestLoggerOptions] (val x: Self) extends AnyVal {
       
       inline def setElapsed(value: String): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
       
@@ -133,7 +134,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[WritableStream]
     }
     
-    extension [Self <: WritableStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WritableStream] (val x: Self) extends AnyVal {
       
       inline def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }

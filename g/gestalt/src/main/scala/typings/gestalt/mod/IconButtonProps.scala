@@ -93,7 +93,8 @@ object IconButtonProps {
     __obj.asInstanceOf[IconButtonProps]
   }
   
-  extension [Self <: IconButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconButtonProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityControls(value: String): Self = StObject.set(x, "accessibilityControls", value.asInstanceOf[js.Any])
     

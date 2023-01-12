@@ -20,7 +20,8 @@ object IFilterOrderByItem {
     __obj.asInstanceOf[IFilterOrderByItem]
   }
   
-  extension [Self <: IFilterOrderByItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFilterOrderByItem] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Any): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object MetaProperty_ {
     __obj.asInstanceOf[MetaProperty_]
   }
   
-  extension [Self <: MetaProperty_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetaProperty_] (val x: Self) extends AnyVal {
     
     inline def setMeta(value: Identifier_): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     

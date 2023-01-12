@@ -15,7 +15,8 @@ object GetEntropy {
     __obj.asInstanceOf[GetEntropy]
   }
   
-  extension [Self <: GetEntropy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEntropy] (val x: Self) extends AnyVal {
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object ShapeConnectorDefaults {
     __obj.asInstanceOf[ShapeConnectorDefaults]
   }
   
-  extension [Self <: ShapeConnectorDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeConnectorDefaults] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String | ShapeConnectorDefaultsFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

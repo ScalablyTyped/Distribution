@@ -69,7 +69,8 @@ object NetworkElementProperties {
     __obj.asInstanceOf[NetworkElementProperties]
   }
   
-  extension [Self <: NetworkElementProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkElementProperties] (val x: Self) extends AnyVal {
     
     inline def setAssetGroupCode(value: Double): Self = StObject.set(x, "assetGroupCode", value.asInstanceOf[js.Any])
     

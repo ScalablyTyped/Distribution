@@ -38,7 +38,8 @@ object ModalDialogButtonApplyClickEventUIParam {
     __obj.asInstanceOf[ModalDialogButtonApplyClickEventUIParam]
   }
   
-  extension [Self <: ModalDialogButtonApplyClickEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalDialogButtonApplyClickEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setGroupedColumnLayouts(value: js.Array[Any]): Self = StObject.set(x, "groupedColumnLayouts", value.asInstanceOf[js.Any])
     

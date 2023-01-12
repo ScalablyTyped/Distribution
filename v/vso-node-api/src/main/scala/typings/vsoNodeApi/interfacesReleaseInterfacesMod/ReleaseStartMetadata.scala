@@ -53,7 +53,8 @@ object ReleaseStartMetadata {
     __obj.asInstanceOf[ReleaseStartMetadata]
   }
   
-  extension [Self <: ReleaseStartMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseStartMetadata] (val x: Self) extends AnyVal {
     
     inline def setArtifacts(value: js.Array[ArtifactMetadata]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     

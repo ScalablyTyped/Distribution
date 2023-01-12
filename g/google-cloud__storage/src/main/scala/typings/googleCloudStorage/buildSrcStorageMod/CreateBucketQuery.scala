@@ -17,7 +17,8 @@ object CreateBucketQuery {
     __obj.asInstanceOf[CreateBucketQuery]
   }
   
-  extension [Self <: CreateBucketQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBucketQuery] (val x: Self) extends AnyVal {
     
     inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     

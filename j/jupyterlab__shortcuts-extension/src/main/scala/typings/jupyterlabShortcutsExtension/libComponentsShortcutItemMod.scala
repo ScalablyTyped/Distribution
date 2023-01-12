@@ -132,7 +132,8 @@ object libComponentsShortcutItemMod {
       __obj.asInstanceOf[IShortcutItemProps]
     }
     
-    extension [Self <: IShortcutItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShortcutItemProps] (val x: Self) extends AnyVal {
       
       inline def setClearConflicts(value: js.Function): Self = StObject.set(x, "clearConflicts", value.asInstanceOf[js.Any])
       
@@ -180,7 +181,8 @@ object libComponentsShortcutItemMod {
       __obj.asInstanceOf[IShortcutItemState]
     }
     
-    extension [Self <: IShortcutItemState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShortcutItemState] (val x: Self) extends AnyVal {
       
       inline def setDisplayNewInput(value: Boolean): Self = StObject.set(x, "displayNewInput", value.asInstanceOf[js.Any])
       

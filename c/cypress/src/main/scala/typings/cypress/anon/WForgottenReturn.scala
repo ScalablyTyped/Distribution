@@ -16,7 +16,8 @@ object WForgottenReturn {
     __obj.asInstanceOf[WForgottenReturn]
   }
   
-  extension [Self <: WForgottenReturn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WForgottenReturn] (val x: Self) extends AnyVal {
     
     inline def setWForgottenReturn(value: Boolean): Self = StObject.set(x, "wForgottenReturn", value.asInstanceOf[js.Any])
   }

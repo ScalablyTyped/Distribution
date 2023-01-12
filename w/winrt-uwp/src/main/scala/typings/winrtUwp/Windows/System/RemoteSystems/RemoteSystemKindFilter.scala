@@ -19,7 +19,8 @@ object RemoteSystemKindFilter {
     __obj.asInstanceOf[RemoteSystemKindFilter]
   }
   
-  extension [Self <: RemoteSystemKindFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteSystemKindFilter] (val x: Self) extends AnyVal {
     
     inline def setRemoteSystemKinds(value: RemoteSystemKinds): Self = StObject.set(x, "remoteSystemKinds", value.asInstanceOf[js.Any])
   }

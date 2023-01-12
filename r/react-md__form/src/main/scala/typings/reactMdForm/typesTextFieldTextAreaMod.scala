@@ -119,7 +119,8 @@ object typesTextFieldTextAreaMod {
       __obj.asInstanceOf[TextAreaProps]
     }
     
-    extension [Self <: TextAreaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextAreaProps] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       

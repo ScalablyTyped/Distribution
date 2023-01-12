@@ -99,7 +99,8 @@ object mod {
       __obj.asInstanceOf[CaptureOptions]
     }
     
-    extension [Self <: CaptureOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptureOptions] (val x: Self) extends AnyVal {
       
       inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       

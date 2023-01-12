@@ -44,7 +44,8 @@ object ScenePluginFileConfig {
     __obj.asInstanceOf[ScenePluginFileConfig]
   }
   
-  extension [Self <: ScenePluginFileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScenePluginFileConfig] (val x: Self) extends AnyVal {
     
     inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     

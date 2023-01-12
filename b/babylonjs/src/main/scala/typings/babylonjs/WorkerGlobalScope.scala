@@ -15,7 +15,8 @@ object WorkerGlobalScope {
     __obj.asInstanceOf[WorkerGlobalScope]
   }
   
-  extension [Self <: WorkerGlobalScope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerGlobalScope] (val x: Self) extends AnyVal {
     
     inline def setImportScripts(value: /* repeated */ String => Unit): Self = StObject.set(x, "importScripts", js.Any.fromFunction1(value))
   }

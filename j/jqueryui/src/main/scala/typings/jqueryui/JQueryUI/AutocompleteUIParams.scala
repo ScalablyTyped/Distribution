@@ -20,7 +20,8 @@ object AutocompleteUIParams {
     __obj.asInstanceOf[AutocompleteUIParams]
   }
   
-  extension [Self <: AutocompleteUIParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutocompleteUIParams] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

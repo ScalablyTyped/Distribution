@@ -37,7 +37,8 @@ object DomainDnsRecord {
     __obj.asInstanceOf[DomainDnsRecord]
   }
   
-  extension [Self <: DomainDnsRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainDnsRecord] (val x: Self) extends AnyVal {
     
     inline def setIsOptional(value: Boolean): Self = StObject.set(x, "isOptional", value.asInstanceOf[js.Any])
     

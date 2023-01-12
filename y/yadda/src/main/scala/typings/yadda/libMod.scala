@@ -312,7 +312,8 @@ object libMod {
       __obj.asInstanceOf[Feature]
     }
     
-    extension [Self <: Feature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Feature] (val x: Self) extends AnyVal {
       
       inline def setAnnotations(value: Annotations): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
@@ -345,7 +346,8 @@ object libMod {
       __obj.asInstanceOf[Scenario]
     }
     
-    extension [Self <: Scenario](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scenario] (val x: Self) extends AnyVal {
       
       inline def setAnnotations(value: Annotations): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
@@ -376,7 +378,8 @@ object libMod {
       __obj.asInstanceOf[StepFn]
     }
     
-    extension [Self <: StepFn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepFn] (val x: Self) extends AnyVal {
       
       inline def setCtx(value: Properties): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       

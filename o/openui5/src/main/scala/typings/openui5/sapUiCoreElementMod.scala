@@ -484,7 +484,8 @@ object sapUiCoreElementMod {
       __obj.asInstanceOf[ElementSettings]
     }
     
-    extension [Self <: ElementSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementSettings] (val x: Self) extends AnyVal {
       
       inline def setCustomData(
         value: js.Array[typings.openui5.sapUiCoreCustomDataMod.default] | typings.openui5.sapUiCoreCustomDataMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

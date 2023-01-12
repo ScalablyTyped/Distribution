@@ -22,7 +22,8 @@ object BasemapZOrder {
     __obj.asInstanceOf[BasemapZOrder]
   }
   
-  extension [Self <: BasemapZOrder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasemapZOrder] (val x: Self) extends AnyVal {
     
     inline def setZGrade(value: Double): Self = StObject.set(x, "zGrade", value.asInstanceOf[js.Any])
     

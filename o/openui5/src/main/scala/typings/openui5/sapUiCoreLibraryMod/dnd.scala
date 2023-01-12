@@ -199,7 +199,8 @@ object dnd {
       __obj.asInstanceOf[IDragInfo]
     }
     
-    extension [Self <: IDragInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDragInfo] (val x: Self) extends AnyVal {
       
       inline def set__implements__sap_ui_core_dnd_IDragInfo(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_core_dnd_IDragInfo", value.asInstanceOf[js.Any])
     }
@@ -221,7 +222,8 @@ object dnd {
       __obj.asInstanceOf[IDropInfo]
     }
     
-    extension [Self <: IDropInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDropInfo] (val x: Self) extends AnyVal {
       
       inline def set__implements__sap_ui_core_dnd_IDropInfo(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_core_dnd_IDropInfo", value.asInstanceOf[js.Any])
     }

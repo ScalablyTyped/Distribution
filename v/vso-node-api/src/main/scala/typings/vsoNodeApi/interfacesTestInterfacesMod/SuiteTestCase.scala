@@ -17,7 +17,8 @@ object SuiteTestCase {
     __obj.asInstanceOf[SuiteTestCase]
   }
   
-  extension [Self <: SuiteTestCase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuiteTestCase] (val x: Self) extends AnyVal {
     
     inline def setPointAssignments(value: js.Array[PointAssignment]): Self = StObject.set(x, "pointAssignments", value.asInstanceOf[js.Any])
     

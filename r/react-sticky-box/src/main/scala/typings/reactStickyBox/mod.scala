@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[StickyBoxCompProps]
     }
     
-    extension [Self <: StickyBoxCompProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StickyBoxCompProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object mod {
       __obj.asInstanceOf[UseStickyBoxOptions]
     }
     
-    extension [Self <: UseStickyBoxOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseStickyBoxOptions] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Boolean): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

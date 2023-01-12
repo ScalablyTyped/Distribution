@@ -35,7 +35,8 @@ object MakeWritableStreamOptions {
     __obj.asInstanceOf[MakeWritableStreamOptions]
   }
   
-  extension [Self <: MakeWritableStreamOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MakeWritableStreamOptions] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: js.Object): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

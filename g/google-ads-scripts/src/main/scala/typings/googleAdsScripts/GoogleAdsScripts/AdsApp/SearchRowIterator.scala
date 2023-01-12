@@ -46,7 +46,8 @@ object SearchRowIterator {
     __obj.asInstanceOf[SearchRowIterator]
   }
   
-  extension [Self <: SearchRowIterator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchRowIterator] (val x: Self) extends AnyVal {
     
     inline def setHasNext(value: () => Boolean): Self = StObject.set(x, "hasNext", js.Any.fromFunction0(value))
     

@@ -30,7 +30,8 @@ object distTypesKeyGenerateSecretMod {
       __obj.asInstanceOf[GenerateSecretOptions]
     }
     
-    extension [Self <: GenerateSecretOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateSecretOptions] (val x: Self) extends AnyVal {
       
       inline def setExtractable(value: Boolean): Self = StObject.set(x, "extractable", value.asInstanceOf[js.Any])
       

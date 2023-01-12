@@ -23,7 +23,8 @@ object CategoryRestricts {
     __obj.asInstanceOf[CategoryRestricts]
   }
   
-  extension [Self <: CategoryRestricts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CategoryRestricts] (val x: Self) extends AnyVal {
     
     inline def setCategoryRestricts(value: js.Array[String]): Self = StObject.set(x, "categoryRestricts", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object EnumValuesAliasMemberGroupRole {
     __obj.asInstanceOf[EnumValuesAliasMemberGroupRole]
   }
   
-  extension [Self <: EnumValuesAliasMemberGroupRole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesAliasMemberGroupRole] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: AliasMemberGroupRole): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

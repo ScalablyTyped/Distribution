@@ -18,7 +18,8 @@ object CreateAssessmentFrameworkControl {
     __obj.asInstanceOf[CreateAssessmentFrameworkControl]
   }
   
-  extension [Self <: CreateAssessmentFrameworkControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAssessmentFrameworkControl] (val x: Self) extends AnyVal {
     
     inline def setId(value: UUID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

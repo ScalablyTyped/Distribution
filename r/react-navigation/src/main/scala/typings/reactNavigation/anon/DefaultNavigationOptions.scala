@@ -29,7 +29,8 @@ object DefaultNavigationOptions {
     __obj.asInstanceOf[DefaultNavigationOptions[Options, NavigationScreenPropType]]
   }
   
-  extension [Self <: DefaultNavigationOptions[?, ?], Options, NavigationScreenPropType](x: Self & (DefaultNavigationOptions[Options, NavigationScreenPropType])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultNavigationOptions[?, ?], Options, NavigationScreenPropType] (val x: Self & (DefaultNavigationOptions[Options, NavigationScreenPropType])) extends AnyVal {
     
     inline def setDefaultNavigationOptions(value: NavigationScreenConfig[Options, NavigationScreenPropType, Any]): Self = StObject.set(x, "defaultNavigationOptions", value.asInstanceOf[js.Any])
     

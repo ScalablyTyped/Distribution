@@ -15,7 +15,8 @@ object VerifyOTPMessageResponse {
     __obj.asInstanceOf[VerifyOTPMessageResponse]
   }
   
-  extension [Self <: VerifyOTPMessageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyOTPMessageResponse] (val x: Self) extends AnyVal {
     
     inline def setVerificationResponse(value: VerificationResponse): Self = StObject.set(x, "VerificationResponse", value.asInstanceOf[js.Any])
   }

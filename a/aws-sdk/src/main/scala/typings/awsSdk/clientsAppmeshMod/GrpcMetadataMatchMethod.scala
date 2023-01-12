@@ -35,7 +35,8 @@ object GrpcMetadataMatchMethod {
     __obj.asInstanceOf[GrpcMetadataMatchMethod]
   }
   
-  extension [Self <: GrpcMetadataMatchMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrpcMetadataMatchMethod] (val x: Self) extends AnyVal {
     
     inline def setExact(value: HeaderMatch): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     

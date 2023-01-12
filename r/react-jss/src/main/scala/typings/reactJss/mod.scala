@@ -118,7 +118,8 @@ object mod {
       __obj.asInstanceOf[BaseOptions[Theme]]
     }
     
-    extension [Self <: BaseOptions[?], Theme](x: Self & BaseOptions[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOptions[?], Theme] (val x: Self & BaseOptions[Theme]) extends AnyVal {
       
       inline def setTheming(value: Theming[Theme]): Self = StObject.set(x, "theming", value.asInstanceOf[js.Any])
       
@@ -143,7 +144,8 @@ object mod {
       __obj.asInstanceOf[CreateUseStylesOptions[Theme]]
     }
     
-    extension [Self <: CreateUseStylesOptions[?], Theme](x: Self & CreateUseStylesOptions[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateUseStylesOptions[?], Theme] (val x: Self & CreateUseStylesOptions[Theme]) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -185,7 +187,8 @@ object mod {
       __obj.asInstanceOf[WithStylesOptions]
     }
     
-    extension [Self <: WithStylesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithStylesOptions] (val x: Self) extends AnyVal {
       
       inline def setInjectTheme(value: Boolean): Self = StObject.set(x, "injectTheme", value.asInstanceOf[js.Any])
       
@@ -208,7 +211,8 @@ object mod {
       __obj.asInstanceOf[WithStylesProps[S]]
     }
     
-    extension [Self <: WithStylesProps[?], S /* <: (Styles[Any, Any, Any]) | (js.Function1[/* theme */ Any, Styles[Any, Any, Unit]]) */](x: Self & WithStylesProps[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithStylesProps[?], S /* <: (Styles[Any, Any, Any]) | (js.Function1[/* theme */ Any, Styles[Any, Any, Unit]]) */] (val x: Self & WithStylesProps[S]) extends AnyVal {
       
       inline def setClasses(value: ClassesForStyles[S]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     }

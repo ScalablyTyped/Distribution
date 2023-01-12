@@ -17,7 +17,8 @@ object LoadResult {
     __obj.asInstanceOf[LoadResult]
   }
   
-  extension [Self <: LoadResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadResult] (val x: Self) extends AnyVal {
     
     inline def setKeystore(value: Keystore): Self = StObject.set(x, "keystore", value.asInstanceOf[js.Any])
     

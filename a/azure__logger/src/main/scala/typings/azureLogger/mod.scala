@@ -80,7 +80,8 @@ object mod {
     @js.native
     val ^ : AzureClientLogger = js.native
     
-    extension [Self <: AzureLogger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AzureLogger] (val x: Self) extends AnyVal {
       
       inline def setError(value: Debugger): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

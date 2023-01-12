@@ -81,7 +81,8 @@ object esComponentsResultPageResultPageMod {
       __obj.asInstanceOf[ResultPageDetail]
     }
     
-    extension [Self <: ResultPageDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultPageDetail] (val x: Self) extends AnyVal {
       
       inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
@@ -369,7 +370,8 @@ object esComponentsResultPageResultPageMod {
       __obj.asInstanceOf[ResultPageProps]
     }
     
-    extension [Self <: ResultPageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultPageProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       

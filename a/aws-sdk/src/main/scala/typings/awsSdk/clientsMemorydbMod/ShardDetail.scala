@@ -33,7 +33,8 @@ object ShardDetail {
     __obj.asInstanceOf[ShardDetail]
   }
   
-  extension [Self <: ShardDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShardDetail] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: ShardConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     

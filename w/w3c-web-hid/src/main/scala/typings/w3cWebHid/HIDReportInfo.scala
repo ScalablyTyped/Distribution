@@ -18,7 +18,8 @@ object HIDReportInfo {
     __obj.asInstanceOf[HIDReportInfo]
   }
   
-  extension [Self <: HIDReportInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HIDReportInfo] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[HIDReportItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

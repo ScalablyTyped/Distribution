@@ -22,7 +22,8 @@ object ThirdPartyModule {
     __obj.asInstanceOf[ThirdPartyModule]
   }
   
-  extension [Self <: ThirdPartyModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThirdPartyModule] (val x: Self) extends AnyVal {
     
     inline def setInit(value: i18n => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     

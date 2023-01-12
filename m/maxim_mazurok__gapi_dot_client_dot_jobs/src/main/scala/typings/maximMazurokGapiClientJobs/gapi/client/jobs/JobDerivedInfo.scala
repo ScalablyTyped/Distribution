@@ -19,7 +19,8 @@ object JobDerivedInfo {
     __obj.asInstanceOf[JobDerivedInfo]
   }
   
-  extension [Self <: JobDerivedInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobDerivedInfo] (val x: Self) extends AnyVal {
     
     inline def setJobCategories(value: js.Array[String]): Self = StObject.set(x, "jobCategories", value.asInstanceOf[js.Any])
     

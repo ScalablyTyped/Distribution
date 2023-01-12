@@ -74,7 +74,8 @@ object KnowledgeBaseData {
     __obj.asInstanceOf[KnowledgeBaseData]
   }
   
-  extension [Self <: KnowledgeBaseData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnowledgeBaseData] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

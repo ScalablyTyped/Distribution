@@ -28,7 +28,8 @@ object ShareRule {
     __obj.asInstanceOf[ShareRule]
   }
   
-  extension [Self <: ShareRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareRule] (val x: Self) extends AnyVal {
     
     inline def setTargetAccounts(value: ShareTargetAccountList): Self = StObject.set(x, "TargetAccounts", value.asInstanceOf[js.Any])
     

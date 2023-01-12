@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setDelimiter(value: String | Buffer | js.Array[Double]): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Cts]
     }
     
-    extension [Self <: Cts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cts] (val x: Self) extends AnyVal {
       
       inline def setCts(value: Boolean): Self = StObject.set(x, "cts", value.asInstanceOf[js.Any])
       
@@ -71,7 +73,8 @@ object anon {
       __obj.asInstanceOf[Delimiter]
     }
     
-    extension [Self <: Delimiter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delimiter] (val x: Self) extends AnyVal {
       
       inline def setDelimiter(value: String | Buffer | js.Array[Double]): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
@@ -98,7 +101,8 @@ object anon {
       __obj.asInstanceOf[Encoding]
     }
     
-    extension [Self <: Encoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
       
       inline def setDelimiter(value: String | Buffer | js.Array[Double]): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
@@ -125,7 +129,8 @@ object anon {
       __obj.asInstanceOf[Length]
     }
     
-    extension [Self <: Length](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Length] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -142,7 +147,8 @@ object anon {
       __obj.asInstanceOf[Regex]
     }
     
-    extension [Self <: Regex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Regex] (val x: Self) extends AnyVal {
       
       inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     }
@@ -161,7 +167,8 @@ object anon {
       __obj.asInstanceOf[Vmin]
     }
     
-    extension [Self <: Vmin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vmin] (val x: Self) extends AnyVal {
       
       inline def setVmin(value: Double): Self = StObject.set(x, "vmin", value.asInstanceOf[js.Any])
       

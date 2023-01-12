@@ -49,7 +49,8 @@ object QueryOperator {
     __obj.asInstanceOf[QueryOperator]
   }
   
-  extension [Self <: QueryOperator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryOperator] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object distGlobalizeNumberMod extends Shortcut {
         __obj.asInstanceOf[NumberFormatPart]
       }
       
-      extension [Self <: NumberFormatPart](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NumberFormatPart] (val x: Self) extends AnyVal {
         
         inline def setType(value: NumberFormatPartTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
@@ -132,7 +133,8 @@ object distGlobalizeNumberMod extends Shortcut {
         __obj.asInstanceOf[NumberParserOptions]
       }
       
-      extension [Self <: NumberParserOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NumberParserOptions] (val x: Self) extends AnyVal {
         
         inline def setStyle(value: decimal | percent): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
         

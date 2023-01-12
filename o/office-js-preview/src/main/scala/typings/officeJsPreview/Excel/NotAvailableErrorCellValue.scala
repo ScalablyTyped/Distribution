@@ -61,7 +61,8 @@ object NotAvailableErrorCellValue {
     __obj.asInstanceOf[NotAvailableErrorCellValue]
   }
   
-  extension [Self <: NotAvailableErrorCellValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotAvailableErrorCellValue] (val x: Self) extends AnyVal {
     
     inline def setBasicType(value: error | Error): Self = StObject.set(x, "basicType", value.asInstanceOf[js.Any])
     

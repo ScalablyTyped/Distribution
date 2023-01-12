@@ -18,7 +18,8 @@ object Partialmessagestringexcep {
     __obj.asInstanceOf[Partialmessagestringexcep]
   }
   
-  extension [Self <: Partialmessagestringexcep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialmessagestringexcep] (val x: Self) extends AnyVal {
     
     inline def setException(value: Any): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
     

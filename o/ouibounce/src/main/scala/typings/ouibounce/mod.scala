@@ -122,7 +122,8 @@ object mod {
       __obj.asInstanceOf[OuibounceConfig]
     }
     
-    extension [Self <: OuibounceConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OuibounceConfig] (val x: Self) extends AnyVal {
       
       inline def setAggressive(value: Boolean): Self = StObject.set(x, "aggressive", value.asInstanceOf[js.Any])
       

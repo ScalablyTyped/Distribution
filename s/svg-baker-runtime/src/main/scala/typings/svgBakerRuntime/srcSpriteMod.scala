@@ -89,7 +89,8 @@ object srcSpriteMod {
       __obj.asInstanceOf[Sprite]
     }
     
-    extension [Self <: Sprite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sprite] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: typings.svgBakerRuntime.srcSymbolMod.default => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

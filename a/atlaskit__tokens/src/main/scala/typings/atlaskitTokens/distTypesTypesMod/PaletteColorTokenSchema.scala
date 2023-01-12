@@ -19,7 +19,8 @@ object PaletteColorTokenSchema {
     __obj.asInstanceOf[PaletteColorTokenSchema[PaletteValues]]
   }
   
-  extension [Self <: PaletteColorTokenSchema[?], PaletteValues /* <: String */](x: Self & PaletteColorTokenSchema[PaletteValues]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaletteColorTokenSchema[?], PaletteValues /* <: String */] (val x: Self & PaletteColorTokenSchema[PaletteValues]) extends AnyVal {
     
     inline def setColor(value: Palette[PaletteValues]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

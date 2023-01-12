@@ -26,7 +26,8 @@ object ILinkDecorations {
     __obj.asInstanceOf[ILinkDecorations]
   }
   
-  extension [Self <: ILinkDecorations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILinkDecorations] (val x: Self) extends AnyVal {
     
     inline def setPointerCursor(value: Boolean): Self = StObject.set(x, "pointerCursor", value.asInstanceOf[js.Any])
     

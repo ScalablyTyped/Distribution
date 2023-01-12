@@ -54,7 +54,8 @@ object GmeCommon {
       __obj.asInstanceOf[DefAssetObject]
     }
     
-    extension [Self <: DefAssetObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefAssetObject] (val x: Self) extends AnyVal {
       
       inline def setType(value: asset): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -74,7 +75,8 @@ object GmeCommon {
       __obj.asInstanceOf[DefBoolObject]
     }
     
-    extension [Self <: DefBoolObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefBoolObject] (val x: Self) extends AnyVal {
       
       inline def setType(value: boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -100,7 +102,8 @@ object GmeCommon {
       __obj.asInstanceOf[DefFloatObject]
     }
     
-    extension [Self <: DefFloatObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefFloatObject] (val x: Self) extends AnyVal {
       
       inline def setEnum(value: js.Array[Double]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
       
@@ -140,7 +143,8 @@ object GmeCommon {
       __obj.asInstanceOf[DefIntegerObject]
     }
     
-    extension [Self <: DefIntegerObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefIntegerObject] (val x: Self) extends AnyVal {
       
       inline def setEnum(value: js.Array[Double]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
       
@@ -219,7 +223,8 @@ object GmeCommon {
       __obj.asInstanceOf[DefStringObject]
     }
     
-    extension [Self <: DefStringObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefStringObject] (val x: Self) extends AnyVal {
       
       inline def setEnum(value: js.Array[String]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
       
@@ -267,7 +272,8 @@ object GmeCommon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     }
@@ -288,7 +294,8 @@ object GmeCommon {
       __obj.asInstanceOf[MetaCardRule]
     }
     
-    extension [Self <: MetaCardRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetaCardRule] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[Path]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -321,7 +328,8 @@ object GmeCommon {
       __obj.asInstanceOf[MetaInfo]
     }
     
-    extension [Self <: MetaInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetaInfo] (val x: Self) extends AnyVal {
       
       inline def setOwner(value: Node): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
@@ -358,7 +366,8 @@ object GmeCommon {
       __obj.asInstanceOf[MetaRules]
     }
     
-    extension [Self <: MetaRules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetaRules] (val x: Self) extends AnyVal {
       
       inline def setAspects(value: Filter): Self = StObject.set(x, "aspects", value.asInstanceOf[js.Any])
       
@@ -401,7 +410,8 @@ object GmeCommon {
       __obj.asInstanceOf[Pointer]
     }
     
-    extension [Self <: Pointer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pointer] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: NodeId): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -428,7 +438,8 @@ object GmeCommon {
       __obj.asInstanceOf[Promisable]
     }
     
-    extension [Self <: Promisable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Promisable] (val x: Self) extends AnyVal {
       
       inline def setCatch(value: CatchCallback => Promisable): Self = StObject.set(x, "catch", js.Any.fromFunction1(value))
       
@@ -449,7 +460,8 @@ object GmeCommon {
       __obj.asInstanceOf[RegObj]
     }
     
-    extension [Self <: RegObj](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegObj] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

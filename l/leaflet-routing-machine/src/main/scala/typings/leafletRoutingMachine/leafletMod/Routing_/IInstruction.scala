@@ -44,7 +44,8 @@ object IInstruction {
     __obj.asInstanceOf[IInstruction]
   }
   
-  extension [Self <: IInstruction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInstruction] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

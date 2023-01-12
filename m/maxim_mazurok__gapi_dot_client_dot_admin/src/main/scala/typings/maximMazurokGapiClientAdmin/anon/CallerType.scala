@@ -28,7 +28,8 @@ object CallerType {
     __obj.asInstanceOf[CallerType]
   }
   
-  extension [Self <: CallerType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallerType] (val x: Self) extends AnyVal {
     
     inline def setCallerType(value: String): Self = StObject.set(x, "callerType", value.asInstanceOf[js.Any])
     

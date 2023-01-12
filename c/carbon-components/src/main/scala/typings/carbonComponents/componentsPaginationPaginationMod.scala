@@ -50,7 +50,8 @@ object componentsPaginationPaginationMod {
       __obj.asInstanceOf[Pagination]
     }
     
-    extension [Self <: Pagination](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pagination] (val x: Self) extends AnyVal {
       
       inline def set_emitEvent(value: (String, js.Object) => Unit): Self = StObject.set(x, "_emitEvent", js.Any.fromFunction2(value))
     }
@@ -90,7 +91,8 @@ object componentsPaginationPaginationMod {
       __obj.asInstanceOf[PaginationOptions]
     }
     
-    extension [Self <: PaginationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationOptions] (val x: Self) extends AnyVal {
       
       inline def setEventItemsPerPage(value: String): Self = StObject.set(x, "eventItemsPerPage", value.asInstanceOf[js.Any])
       

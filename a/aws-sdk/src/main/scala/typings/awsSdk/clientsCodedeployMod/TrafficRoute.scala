@@ -18,7 +18,8 @@ object TrafficRoute {
     __obj.asInstanceOf[TrafficRoute]
   }
   
-  extension [Self <: TrafficRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrafficRoute] (val x: Self) extends AnyVal {
     
     inline def setListenerArns(value: ListenerArnList): Self = StObject.set(x, "listenerArns", value.asInstanceOf[js.Any])
     

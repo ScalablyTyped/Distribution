@@ -23,7 +23,8 @@ object EndpointAttributes {
     __obj.asInstanceOf[EndpointAttributes]
   }
   
-  extension [Self <: EndpointAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointAttributes] (val x: Self) extends AnyVal {
     
     inline def setDeviceToken(value: NonEmptySensitiveString1600): Self = StObject.set(x, "DeviceToken", value.asInstanceOf[js.Any])
     

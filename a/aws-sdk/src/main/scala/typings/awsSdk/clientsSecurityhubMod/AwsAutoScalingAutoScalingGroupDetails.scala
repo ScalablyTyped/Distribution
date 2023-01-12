@@ -58,7 +58,8 @@ object AwsAutoScalingAutoScalingGroupDetails {
     __obj.asInstanceOf[AwsAutoScalingAutoScalingGroupDetails]
   }
   
-  extension [Self <: AwsAutoScalingAutoScalingGroupDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsAutoScalingAutoScalingGroupDetails] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZones(value: AwsAutoScalingAutoScalingGroupAvailabilityZonesList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[ReactImageFallbackProps]
     }
     
-    extension [Self <: ReactImageFallbackProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactImageFallbackProps] (val x: Self) extends AnyVal {
       
       inline def setFallbackImage(value: String | ReactElement | (js.Array[js.UndefOr[ReactElement | String]])): Self = StObject.set(x, "fallbackImage", value.asInstanceOf[js.Any])
       

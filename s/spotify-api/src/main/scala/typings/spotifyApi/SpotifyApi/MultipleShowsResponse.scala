@@ -21,7 +21,8 @@ object MultipleShowsResponse {
     __obj.asInstanceOf[MultipleShowsResponse]
   }
   
-  extension [Self <: MultipleShowsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipleShowsResponse] (val x: Self) extends AnyVal {
     
     inline def setShows(value: js.Array[ShowObjectSimplified]): Self = StObject.set(x, "shows", value.asInstanceOf[js.Any])
     

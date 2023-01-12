@@ -34,7 +34,8 @@ object ConfigurationRevision {
     __obj.asInstanceOf[ConfigurationRevision]
   }
   
-  extension [Self <: ConfigurationRevision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationRevision] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

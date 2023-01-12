@@ -17,7 +17,8 @@ object BlockedForEntry {
     __obj.asInstanceOf[BlockedForEntry]
   }
   
-  extension [Self <: BlockedForEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockedForEntry] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object NodesInfoNodeInfoBootstrap {
     __obj.asInstanceOf[NodesInfoNodeInfoBootstrap]
   }
   
-  extension [Self <: NodesInfoNodeInfoBootstrap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoBootstrap] (val x: Self) extends AnyVal {
     
     inline def setMemory_lock(value: String): Self = StObject.set(x, "memory_lock", value.asInstanceOf[js.Any])
   }

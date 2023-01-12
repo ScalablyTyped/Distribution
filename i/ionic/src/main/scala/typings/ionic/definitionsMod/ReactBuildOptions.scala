@@ -26,7 +26,8 @@ object ReactBuildOptions {
     __obj.asInstanceOf[ReactBuildOptions]
   }
   
-  extension [Self <: ReactBuildOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactBuildOptions] (val x: Self) extends AnyVal {
     
     inline def setCi(value: Boolean): Self = StObject.set(x, "ci", value.asInstanceOf[js.Any])
     

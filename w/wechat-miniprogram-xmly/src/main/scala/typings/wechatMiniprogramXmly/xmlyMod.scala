@@ -32,7 +32,8 @@ object xmlyMod {
       __obj.asInstanceOf[RequestParams]
     }
     
-    extension [Self <: RequestParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestParams] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: js.Object): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object xmlyMod {
       __obj.asInstanceOf[RequestResponse]
     }
     
-    extension [Self <: RequestResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestResponse] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

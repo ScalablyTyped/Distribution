@@ -17,7 +17,8 @@ object JoinTokens {
     __obj.asInstanceOf[JoinTokens]
   }
   
-  extension [Self <: JoinTokens](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JoinTokens] (val x: Self) extends AnyVal {
     
     inline def setManager(value: String): Self = StObject.set(x, "Manager", value.asInstanceOf[js.Any])
     

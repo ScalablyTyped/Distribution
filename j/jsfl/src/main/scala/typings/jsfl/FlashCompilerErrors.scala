@@ -17,7 +17,8 @@ object FlashCompilerErrors {
     __obj.asInstanceOf[FlashCompilerErrors]
   }
   
-  extension [Self <: FlashCompilerErrors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashCompilerErrors] (val x: Self) extends AnyVal {
     
     inline def setClear(value: () => Any): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

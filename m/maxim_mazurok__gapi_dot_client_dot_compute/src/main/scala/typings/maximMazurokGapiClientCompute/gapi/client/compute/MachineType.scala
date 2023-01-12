@@ -63,7 +63,8 @@ object MachineType {
     __obj.asInstanceOf[MachineType]
   }
   
-  extension [Self <: MachineType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MachineType] (val x: Self) extends AnyVal {
     
     inline def setAccelerators(value: js.Array[GuestAcceleratorCount]): Self = StObject.set(x, "accelerators", value.asInstanceOf[js.Any])
     

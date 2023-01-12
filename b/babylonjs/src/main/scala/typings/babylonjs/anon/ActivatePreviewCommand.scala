@@ -26,7 +26,8 @@ object ActivatePreviewCommand {
     __obj.asInstanceOf[ActivatePreviewCommand]
   }
   
-  extension [Self <: ActivatePreviewCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivatePreviewCommand] (val x: Self) extends AnyVal {
     
     inline def setActivatePreviewCommand(value: Boolean): Self = StObject.set(x, "activatePreviewCommand", value.asInstanceOf[js.Any])
     

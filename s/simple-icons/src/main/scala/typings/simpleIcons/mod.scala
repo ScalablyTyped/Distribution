@@ -42,7 +42,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SimpleIcon]
     }
     
-    extension [Self <: SimpleIcon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleIcon] (val x: Self) extends AnyVal {
       
       inline def setGuidelines(value: String): Self = StObject.set(x, "guidelines", value.asInstanceOf[js.Any])
       

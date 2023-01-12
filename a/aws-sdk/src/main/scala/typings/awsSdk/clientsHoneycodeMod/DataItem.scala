@@ -28,7 +28,8 @@ object DataItem {
     __obj.asInstanceOf[DataItem]
   }
   
-  extension [Self <: DataItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataItem] (val x: Self) extends AnyVal {
     
     inline def setFormattedValue(value: FormattedValue): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
     

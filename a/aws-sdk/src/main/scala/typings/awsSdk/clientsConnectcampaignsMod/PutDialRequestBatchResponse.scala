@@ -17,7 +17,8 @@ object PutDialRequestBatchResponse {
     __obj.asInstanceOf[PutDialRequestBatchResponse]
   }
   
-  extension [Self <: PutDialRequestBatchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutDialRequestBatchResponse] (val x: Self) extends AnyVal {
     
     inline def setFailedRequests(value: FailedRequestList): Self = StObject.set(x, "failedRequests", value.asInstanceOf[js.Any])
     

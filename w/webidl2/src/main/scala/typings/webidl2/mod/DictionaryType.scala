@@ -36,7 +36,8 @@ object DictionaryType {
     __obj.asInstanceOf[DictionaryType]
   }
   
-  extension [Self <: DictionaryType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictionaryType] (val x: Self) extends AnyVal {
     
     inline def setInheritance(value: String): Self = StObject.set(x, "inheritance", value.asInstanceOf[js.Any])
     

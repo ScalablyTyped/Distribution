@@ -20,7 +20,8 @@ object CompleteErrorNext {
     __obj.asInstanceOf[CompleteErrorNext]
   }
   
-  extension [Self <: CompleteErrorNext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompleteErrorNext] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

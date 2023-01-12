@@ -43,7 +43,8 @@ object TestScriptVariable {
     __obj.asInstanceOf[TestScriptVariable]
   }
   
-  extension [Self <: TestScriptVariable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestScriptVariable] (val x: Self) extends AnyVal {
     
     inline def setHeaderField(value: String): Self = StObject.set(x, "headerField", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object IDeleteAllContextsRequest {
     __obj.asInstanceOf[IDeleteAllContextsRequest]
   }
   
-  extension [Self <: IDeleteAllContextsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDeleteAllContextsRequest] (val x: Self) extends AnyVal {
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

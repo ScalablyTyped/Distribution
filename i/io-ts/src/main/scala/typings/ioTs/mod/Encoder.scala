@@ -15,7 +15,8 @@ object Encoder {
     __obj.asInstanceOf[Encoder[A, O]]
   }
   
-  extension [Self <: Encoder[?, ?], A, O](x: Self & (Encoder[A, O])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Encoder[?, ?], A, O] (val x: Self & (Encoder[A, O])) extends AnyVal {
     
     inline def setEncode(value: A => O): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
   }

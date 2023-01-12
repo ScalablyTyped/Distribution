@@ -43,7 +43,8 @@ object ListItemCreationInformation {
     __obj.asInstanceOf[ListItemCreationInformation]
   }
   
-  extension [Self <: ListItemCreationInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListItemCreationInformation] (val x: Self) extends AnyVal {
     
     inline def setGet_folderUrl(value: () => String): Self = StObject.set(x, "get_folderUrl", js.Any.fromFunction0(value))
     

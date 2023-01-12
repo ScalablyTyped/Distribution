@@ -17,7 +17,8 @@ object DependenciesBlockLike {
     __obj.asInstanceOf[DependenciesBlockLike]
   }
   
-  extension [Self <: DependenciesBlockLike](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DependenciesBlockLike] (val x: Self) extends AnyVal {
     
     inline def setBlocks(value: js.Array[AsyncDependenciesBlock]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     

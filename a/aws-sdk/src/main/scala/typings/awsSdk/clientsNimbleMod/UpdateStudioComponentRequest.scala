@@ -78,7 +78,8 @@ object UpdateStudioComponentRequest {
     __obj.asInstanceOf[UpdateStudioComponentRequest]
   }
   
-  extension [Self <: UpdateStudioComponentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateStudioComponentRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

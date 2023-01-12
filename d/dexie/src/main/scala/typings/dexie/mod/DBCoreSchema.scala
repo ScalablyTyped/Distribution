@@ -17,7 +17,8 @@ object DBCoreSchema {
     __obj.asInstanceOf[DBCoreSchema]
   }
   
-  extension [Self <: DBCoreSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBCoreSchema] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

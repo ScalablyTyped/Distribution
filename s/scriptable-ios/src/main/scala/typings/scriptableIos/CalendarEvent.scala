@@ -188,7 +188,8 @@ object CalendarEvent {
       __obj.asInstanceOf[Attendees]
     }
     
-    extension [Self <: Attendees](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attendees] (val x: Self) extends AnyVal {
       
       inline def setIsCurrentUser(value: Boolean): Self = StObject.set(x, "isCurrentUser", value.asInstanceOf[js.Any])
       
@@ -202,7 +203,8 @@ object CalendarEvent {
     }
   }
   
-  extension [Self <: CalendarEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarEvent] (val x: Self) extends AnyVal {
     
     inline def setAddRecurrenceRule(value: RecurrenceRule => Unit): Self = StObject.set(x, "addRecurrenceRule", js.Any.fromFunction1(value))
     

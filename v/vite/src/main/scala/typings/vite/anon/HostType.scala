@@ -19,7 +19,8 @@ object HostType {
     __obj.asInstanceOf[HostType]
   }
   
-  extension [Self <: HostType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostType] (val x: Self) extends AnyVal {
     
     inline def setHostId(value: String): Self = StObject.set(x, "hostId", value.asInstanceOf[js.Any])
     

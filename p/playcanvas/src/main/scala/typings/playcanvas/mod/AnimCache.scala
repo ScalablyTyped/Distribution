@@ -53,7 +53,8 @@ object AnimCache {
     __obj.asInstanceOf[AnimCache]
   }
   
-  extension [Self <: AnimCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimCache] (val x: Self) extends AnyVal {
     
     inline def setEval(value: (Any, Any, Any) => Unit): Self = StObject.set(x, "eval", js.Any.fromFunction3(value))
     

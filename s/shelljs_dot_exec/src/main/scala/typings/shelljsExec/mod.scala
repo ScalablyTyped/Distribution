@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[ShellJsExecEnrich]
     }
     
-    extension [Self <: ShellJsExecEnrich](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellJsExecEnrich] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object mod {
       __obj.asInstanceOf[ShellJsOptions]
     }
     
-    extension [Self <: ShellJsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellJsOptions] (val x: Self) extends AnyVal {
       
       inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       

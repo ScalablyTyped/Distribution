@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_blockui"
-version := "0.0-unknown-dt-20221103Z-409bb6"
+version := "0.0-unknown-dt-20221103Z-a99457"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

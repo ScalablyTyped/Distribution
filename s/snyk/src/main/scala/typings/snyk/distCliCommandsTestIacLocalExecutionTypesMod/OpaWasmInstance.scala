@@ -19,7 +19,8 @@ object OpaWasmInstance {
     __obj.asInstanceOf[OpaWasmInstance]
   }
   
-  extension [Self <: OpaWasmInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpaWasmInstance] (val x: Self) extends AnyVal {
     
     inline def setEvaluate(value: Record[String, Any] => Results): Self = StObject.set(x, "evaluate", js.Any.fromFunction1(value))
     

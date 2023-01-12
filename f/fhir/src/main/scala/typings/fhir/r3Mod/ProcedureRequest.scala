@@ -206,7 +206,8 @@ object ProcedureRequest {
     __obj.asInstanceOf[ProcedureRequest]
   }
   
-  extension [Self <: ProcedureRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcedureRequest] (val x: Self) extends AnyVal {
     
     inline def setAsNeededBoolean(value: Boolean): Self = StObject.set(x, "asNeededBoolean", value.asInstanceOf[js.Any])
     

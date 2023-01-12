@@ -15,7 +15,8 @@ object RoadviewClient {
     __obj.asInstanceOf[RoadviewClient]
   }
   
-  extension [Self <: RoadviewClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoadviewClient] (val x: Self) extends AnyVal {
     
     inline def setGetNearestPanoId(value: (LatLng, Double, js.Function1[/* panoId */ Double, Unit]) => Unit): Self = StObject.set(x, "getNearestPanoId", js.Any.fromFunction3(value))
   }

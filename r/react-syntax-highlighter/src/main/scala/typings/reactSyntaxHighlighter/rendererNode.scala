@@ -29,7 +29,8 @@ object rendererNode {
     __obj.asInstanceOf[rendererNode]
   }
   
-  extension [Self <: rendererNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: rendererNode] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[rendererNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

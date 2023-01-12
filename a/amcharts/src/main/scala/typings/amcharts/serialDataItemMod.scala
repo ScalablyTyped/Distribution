@@ -68,7 +68,8 @@ object serialDataItemMod {
       __obj.asInstanceOf[SerialDataItem]
     }
     
-    extension [Self <: SerialDataItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerialDataItem] (val x: Self) extends AnyVal {
       
       inline def setAxes(value: js.Object): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       

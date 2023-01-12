@@ -24,7 +24,8 @@ object SetWindowBoundsRequest {
     __obj.asInstanceOf[SetWindowBoundsRequest]
   }
   
-  extension [Self <: SetWindowBoundsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetWindowBoundsRequest] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

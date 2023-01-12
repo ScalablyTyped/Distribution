@@ -23,7 +23,8 @@ object SetEffectivePropertyValueForNodeRequest {
     __obj.asInstanceOf[SetEffectivePropertyValueForNodeRequest]
   }
   
-  extension [Self <: SetEffectivePropertyValueForNodeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetEffectivePropertyValueForNodeRequest] (val x: Self) extends AnyVal {
     
     inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     

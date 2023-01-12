@@ -48,7 +48,8 @@ object QueryFilters {
     __obj.asInstanceOf[QueryFilters]
   }
   
-  extension [Self <: QueryFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryFilters] (val x: Self) extends AnyVal {
     
     inline def setCreatedAfter(value: js.Date): Self = StObject.set(x, "CreatedAfter", value.asInstanceOf[js.Any])
     

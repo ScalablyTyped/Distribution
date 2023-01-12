@@ -33,7 +33,8 @@ object MarketoConnectorProfileCredentials {
     __obj.asInstanceOf[MarketoConnectorProfileCredentials]
   }
   
-  extension [Self <: MarketoConnectorProfileCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarketoConnectorProfileCredentials] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: AccessToken): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     

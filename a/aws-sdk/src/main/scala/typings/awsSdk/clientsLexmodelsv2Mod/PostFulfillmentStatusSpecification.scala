@@ -49,7 +49,8 @@ object PostFulfillmentStatusSpecification {
     __obj.asInstanceOf[PostFulfillmentStatusSpecification]
   }
   
-  extension [Self <: PostFulfillmentStatusSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostFulfillmentStatusSpecification] (val x: Self) extends AnyVal {
     
     inline def setFailureConditional(value: ConditionalSpecification): Self = StObject.set(x, "failureConditional", value.asInstanceOf[js.Any])
     

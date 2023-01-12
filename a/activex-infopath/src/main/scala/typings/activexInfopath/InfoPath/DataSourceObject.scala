@@ -32,7 +32,8 @@ object DataSourceObject {
     __obj.asInstanceOf[DataSourceObject]
   }
   
-  extension [Self <: DataSourceObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceObject] (val x: Self) extends AnyVal {
     
     inline def setDOM(value: IXMLDOMDocument): Self = StObject.set(x, "DOM", value.asInstanceOf[js.Any])
     

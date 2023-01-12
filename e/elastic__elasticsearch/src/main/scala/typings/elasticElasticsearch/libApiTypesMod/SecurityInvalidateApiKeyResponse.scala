@@ -25,7 +25,8 @@ object SecurityInvalidateApiKeyResponse {
     __obj.asInstanceOf[SecurityInvalidateApiKeyResponse]
   }
   
-  extension [Self <: SecurityInvalidateApiKeyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityInvalidateApiKeyResponse] (val x: Self) extends AnyVal {
     
     inline def setError_count(value: integer): Self = StObject.set(x, "error_count", value.asInstanceOf[js.Any])
     

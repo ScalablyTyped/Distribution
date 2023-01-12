@@ -32,7 +32,8 @@ object XCreateCatalog {
     __obj.asInstanceOf[XCreateCatalog]
   }
   
-  extension [Self <: XCreateCatalog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCreateCatalog] (val x: Self) extends AnyVal {
     
     inline def setCreateCatalog(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "createCatalog", js.Any.fromFunction1(value))
   }

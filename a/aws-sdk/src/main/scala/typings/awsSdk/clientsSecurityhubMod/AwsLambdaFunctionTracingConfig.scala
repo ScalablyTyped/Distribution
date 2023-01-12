@@ -18,7 +18,8 @@ object AwsLambdaFunctionTracingConfig {
     __obj.asInstanceOf[AwsLambdaFunctionTracingConfig]
   }
   
-  extension [Self <: AwsLambdaFunctionTracingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsLambdaFunctionTracingConfig] (val x: Self) extends AnyVal {
     
     inline def setMode(value: NonEmptyString): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     

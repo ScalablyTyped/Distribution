@@ -18,7 +18,8 @@ object Query {
     __obj.asInstanceOf[Query]
   }
   
-  extension [Self <: Query](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
     
     inline def setSelectors(value: SelectorList): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     

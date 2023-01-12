@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[HCaptchaProps]
     }
     
-    extension [Self <: HCaptchaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HCaptchaProps] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object mod {
       __obj.asInstanceOf[HCaptchaState]
     }
     
-    extension [Self <: HCaptchaState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HCaptchaState] (val x: Self) extends AnyVal {
       
       inline def setCaptchaId(value: String): Self = StObject.set(x, "captchaId", value.asInstanceOf[js.Any])
       

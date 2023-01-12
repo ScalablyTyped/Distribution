@@ -18,7 +18,8 @@ object RandomSplitActivity {
     __obj.asInstanceOf[RandomSplitActivity]
   }
   
-  extension [Self <: RandomSplitActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RandomSplitActivity] (val x: Self) extends AnyVal {
     
     inline def setBranches(value: ListOfRandomSplitEntry): Self = StObject.set(x, "Branches", value.asInstanceOf[js.Any])
     

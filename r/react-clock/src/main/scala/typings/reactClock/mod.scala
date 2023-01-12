@@ -145,7 +145,8 @@ object mod {
       __obj.asInstanceOf[ClockProps[T]]
     }
     
-    extension [Self <: ClockProps[?], T](x: Self & ClockProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClockProps[?], T] (val x: Self & ClockProps[T]) extends AnyVal {
       
       inline def setClassName(value: String | js.Array[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

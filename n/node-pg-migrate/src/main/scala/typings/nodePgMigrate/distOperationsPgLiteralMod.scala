@@ -44,7 +44,8 @@ object distOperationsPgLiteralMod {
       __obj.asInstanceOf[PgLiteral]
     }
     
-    extension [Self <: PgLiteral](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PgLiteral] (val x: Self) extends AnyVal {
       
       inline def setLiteral(value: /* true */ Boolean): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
       

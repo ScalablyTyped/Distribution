@@ -23,7 +23,8 @@ object KikGetOptions {
     __obj.asInstanceOf[KikGetOptions]
   }
   
-  extension [Self <: KikGetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KikGetOptions] (val x: Self) extends AnyVal {
     
     inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     

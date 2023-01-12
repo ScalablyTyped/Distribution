@@ -315,7 +315,8 @@ object buildSrcBatchTransactionMod {
       __obj.asInstanceOf[TransactionIdentifier]
     }
     
-    extension [Self <: TransactionIdentifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionIdentifier] (val x: Self) extends AnyVal {
       
       inline def setSession(value: String | typings.googleCloudSpanner.mod.Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       

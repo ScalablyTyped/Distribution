@@ -17,7 +17,8 @@ object CompilerDiagnostics {
       __obj.asInstanceOf[IDiagnosticWriter]
     }
     
-    extension [Self <: IDiagnosticWriter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDiagnosticWriter] (val x: Self) extends AnyVal {
       
       inline def setAlert(value: String => Unit): Self = StObject.set(x, "Alert", js.Any.fromFunction1(value))
     }

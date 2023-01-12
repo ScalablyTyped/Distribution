@@ -15,7 +15,8 @@ object ISODD {
     __obj.asInstanceOf[ISODD]
   }
   
-  extension [Self <: ISODD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISODD] (val x: Self) extends AnyVal {
     
     inline def setISODD(value: Method): Self = StObject.set(x, "ISODD", value.asInstanceOf[js.Any])
   }

@@ -30,7 +30,8 @@ object TriangulationDataSource {
     __obj.asInstanceOf[TriangulationDataSource]
   }
   
-  extension [Self <: TriangulationDataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TriangulationDataSource] (val x: Self) extends AnyVal {
     
     inline def setConverter(value: () => js.Object): Self = StObject.set(x, "converter", js.Any.fromFunction0(value))
     

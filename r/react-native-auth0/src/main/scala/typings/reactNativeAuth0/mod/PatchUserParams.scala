@@ -17,7 +17,8 @@ object PatchUserParams {
     __obj.asInstanceOf[PatchUserParams[T]]
   }
   
-  extension [Self <: PatchUserParams[?], T](x: Self & PatchUserParams[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchUserParams[?], T] (val x: Self & PatchUserParams[T]) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

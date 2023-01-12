@@ -18,7 +18,8 @@ object AppearanceConfig {
     __obj.asInstanceOf[AppearanceConfig]
   }
   
-  extension [Self <: AppearanceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppearanceConfig] (val x: Self) extends AnyVal {
     
     inline def setPanels(value: Tools): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
     

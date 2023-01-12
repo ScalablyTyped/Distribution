@@ -28,7 +28,8 @@ object TableColumn {
     __obj.asInstanceOf[TableColumn]
   }
   
-  extension [Self <: TableColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableColumn] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

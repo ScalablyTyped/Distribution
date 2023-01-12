@@ -62,7 +62,8 @@ object XMasterPasswordHandling {
     __obj.asInstanceOf[XMasterPasswordHandling]
   }
   
-  extension [Self <: XMasterPasswordHandling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMasterPasswordHandling] (val x: Self) extends AnyVal {
     
     inline def setAllowPersistentStoring(value: Boolean => Boolean): Self = StObject.set(x, "allowPersistentStoring", js.Any.fromFunction1(value))
     

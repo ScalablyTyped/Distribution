@@ -57,7 +57,8 @@ object Sheet {
     __obj.asInstanceOf[Sheet]
   }
   
-  extension [Self <: Sheet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sheet] (val x: Self) extends AnyVal {
     
     inline def setChangeSizeAsync(value: SheetSizeOptions => js.Promise[SheetSizeOptions]): Self = StObject.set(x, "changeSizeAsync", js.Any.fromFunction1(value))
     

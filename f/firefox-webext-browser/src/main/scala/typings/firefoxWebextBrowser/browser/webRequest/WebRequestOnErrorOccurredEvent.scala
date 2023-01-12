@@ -23,7 +23,8 @@ object WebRequestOnErrorOccurredEvent {
     __obj.asInstanceOf[WebRequestOnErrorOccurredEvent[TCallback]]
   }
   
-  extension [Self <: WebRequestOnErrorOccurredEvent[?], TCallback](x: Self & WebRequestOnErrorOccurredEvent[TCallback]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebRequestOnErrorOccurredEvent[?], TCallback] (val x: Self & WebRequestOnErrorOccurredEvent[TCallback]) extends AnyVal {
     
     inline def setAddListener(value: (TCallback, RequestFilter) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
     

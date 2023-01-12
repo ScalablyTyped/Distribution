@@ -57,7 +57,8 @@ object libBodySpecMod {
         __obj.asInstanceOf[BaseBodySpec]
       }
       
-      extension [Self <: BaseBodySpec](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BaseBodySpec] (val x: Self) extends AnyVal {
         
         inline def setType(value: rtf | plain): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
@@ -83,7 +84,8 @@ object libBodySpecMod {
         __obj.asInstanceOf[BodyInFile]
       }
       
-      extension [Self <: BodyInFile](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BodyInFile] (val x: Self) extends AnyVal {
         
         inline def setCharset(value: `UTF-8` | String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
         
@@ -111,7 +113,8 @@ object libBodySpecMod {
         __obj.asInstanceOf[BodyInline]
       }
       
-      extension [Self <: BodyInline](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BodyInline] (val x: Self) extends AnyVal {
         
         inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       }

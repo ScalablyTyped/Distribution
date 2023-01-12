@@ -83,7 +83,8 @@ object UpdatePatchBaselineResult {
     __obj.asInstanceOf[UpdatePatchBaselineResult]
   }
   
-  extension [Self <: UpdatePatchBaselineResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePatchBaselineResult] (val x: Self) extends AnyVal {
     
     inline def setApprovalRules(value: PatchRuleGroup): Self = StObject.set(x, "ApprovalRules", value.asInstanceOf[js.Any])
     

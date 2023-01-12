@@ -88,7 +88,8 @@ object ScheduledInstance {
     __obj.asInstanceOf[ScheduledInstance]
   }
   
-  extension [Self <: ScheduledInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduledInstance] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     

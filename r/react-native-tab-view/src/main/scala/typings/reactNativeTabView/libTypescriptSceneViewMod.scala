@@ -59,7 +59,8 @@ object libTypescriptSceneViewMod {
       __obj.asInstanceOf[Props[T]]
     }
     
-    extension [Self <: Props[?], T /* <: Route */](x: Self & Props[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props[?], T /* <: Route */] (val x: Self & Props[T]) extends AnyVal {
       
       inline def setChildren(value: Loading => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       

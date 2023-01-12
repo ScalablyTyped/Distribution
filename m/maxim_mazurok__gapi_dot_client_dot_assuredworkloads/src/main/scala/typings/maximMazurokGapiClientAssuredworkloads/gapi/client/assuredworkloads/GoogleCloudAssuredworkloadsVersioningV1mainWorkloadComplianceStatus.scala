@@ -19,7 +19,8 @@ object GoogleCloudAssuredworkloadsVersioningV1mainWorkloadComplianceStatus {
     __obj.asInstanceOf[GoogleCloudAssuredworkloadsVersioningV1mainWorkloadComplianceStatus]
   }
   
-  extension [Self <: GoogleCloudAssuredworkloadsVersioningV1mainWorkloadComplianceStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudAssuredworkloadsVersioningV1mainWorkloadComplianceStatus] (val x: Self) extends AnyVal {
     
     inline def setAcknowledgedViolationCount(value: Double): Self = StObject.set(x, "acknowledgedViolationCount", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object CustomPropertyExpression {
     __obj.asInstanceOf[CustomPropertyExpression]
   }
   
-  extension [Self <: CustomPropertyExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomPropertyExpression] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: expression): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

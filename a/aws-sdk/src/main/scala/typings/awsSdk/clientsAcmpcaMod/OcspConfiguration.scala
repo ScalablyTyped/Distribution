@@ -23,7 +23,8 @@ object OcspConfiguration {
     __obj.asInstanceOf[OcspConfiguration]
   }
   
-  extension [Self <: OcspConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OcspConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

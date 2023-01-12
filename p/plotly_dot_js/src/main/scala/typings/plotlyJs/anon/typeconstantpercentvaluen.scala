@@ -38,7 +38,8 @@ object typeconstantpercentvaluen {
     __obj.asInstanceOf[typeconstantpercentvaluen]
   }
   
-  extension [Self <: typeconstantpercentvaluen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typeconstantpercentvaluen] (val x: Self) extends AnyVal {
     
     inline def setColor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object OpaqueType_ {
     __obj.asInstanceOf[OpaqueType_]
   }
   
-  extension [Self <: OpaqueType_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpaqueType_] (val x: Self) extends AnyVal {
     
     inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

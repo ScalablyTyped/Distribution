@@ -29,7 +29,8 @@ object Envelope {
     __obj.asInstanceOf[Envelope]
   }
   
-  extension [Self <: Envelope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Envelope] (val x: Self) extends AnyVal {
     
     inline def setDsn(value: DSNOptions): Self = StObject.set(x, "dsn", value.asInstanceOf[js.Any])
     

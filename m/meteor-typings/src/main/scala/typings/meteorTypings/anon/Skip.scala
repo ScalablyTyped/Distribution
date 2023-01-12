@@ -25,7 +25,8 @@ object Skip {
     __obj.asInstanceOf[Skip]
   }
   
-  extension [Self <: Skip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Skip] (val x: Self) extends AnyVal {
     
     inline def setFields(value: FieldSpecifier): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

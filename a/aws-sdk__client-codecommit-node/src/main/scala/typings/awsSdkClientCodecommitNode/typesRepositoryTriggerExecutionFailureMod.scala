@@ -25,7 +25,8 @@ object typesRepositoryTriggerExecutionFailureMod {
       __obj.asInstanceOf[RepositoryTriggerExecutionFailure]
     }
     
-    extension [Self <: RepositoryTriggerExecutionFailure](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RepositoryTriggerExecutionFailure] (val x: Self) extends AnyVal {
       
       inline def setFailureMessage(value: String): Self = StObject.set(x, "failureMessage", value.asInstanceOf[js.Any])
       

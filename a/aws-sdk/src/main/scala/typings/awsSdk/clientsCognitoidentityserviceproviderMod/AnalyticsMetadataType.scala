@@ -18,7 +18,8 @@ object AnalyticsMetadataType {
     __obj.asInstanceOf[AnalyticsMetadataType]
   }
   
-  extension [Self <: AnalyticsMetadataType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyticsMetadataType] (val x: Self) extends AnyVal {
     
     inline def setAnalyticsEndpointId(value: StringType): Self = StObject.set(x, "AnalyticsEndpointId", value.asInstanceOf[js.Any])
     

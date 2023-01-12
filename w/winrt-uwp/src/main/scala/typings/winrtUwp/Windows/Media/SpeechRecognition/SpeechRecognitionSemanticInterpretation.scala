@@ -19,7 +19,8 @@ object SpeechRecognitionSemanticInterpretation {
     __obj.asInstanceOf[SpeechRecognitionSemanticInterpretation]
   }
   
-  extension [Self <: SpeechRecognitionSemanticInterpretation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeechRecognitionSemanticInterpretation] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: IMapView[String, IVectorView[Any]]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }

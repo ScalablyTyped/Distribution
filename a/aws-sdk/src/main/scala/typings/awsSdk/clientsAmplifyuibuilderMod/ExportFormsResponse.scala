@@ -23,7 +23,8 @@ object ExportFormsResponse {
     __obj.asInstanceOf[ExportFormsResponse]
   }
   
-  extension [Self <: ExportFormsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportFormsResponse] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: FormList): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     

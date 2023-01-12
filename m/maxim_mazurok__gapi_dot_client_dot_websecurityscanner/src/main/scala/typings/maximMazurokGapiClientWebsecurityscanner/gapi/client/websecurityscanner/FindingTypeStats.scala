@@ -19,7 +19,8 @@ object FindingTypeStats {
     __obj.asInstanceOf[FindingTypeStats]
   }
   
-  extension [Self <: FindingTypeStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindingTypeStats] (val x: Self) extends AnyVal {
     
     inline def setFindingCount(value: Double): Self = StObject.set(x, "findingCount", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object AggregationsHdrMethod {
     __obj.asInstanceOf[AggregationsHdrMethod]
   }
   
-  extension [Self <: AggregationsHdrMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsHdrMethod] (val x: Self) extends AnyVal {
     
     inline def setNumber_of_significant_value_digits(value: integer): Self = StObject.set(x, "number_of_significant_value_digits", value.asInstanceOf[js.Any])
     

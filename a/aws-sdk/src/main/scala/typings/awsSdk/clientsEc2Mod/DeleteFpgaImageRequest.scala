@@ -23,7 +23,8 @@ object DeleteFpgaImageRequest {
     __obj.asInstanceOf[DeleteFpgaImageRequest]
   }
   
-  extension [Self <: DeleteFpgaImageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFpgaImageRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

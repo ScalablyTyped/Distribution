@@ -55,7 +55,8 @@ object Actions {
       __obj.asInstanceOf[GridAlignConfig]
     }
     
-    extension [Self <: GridAlignConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridAlignConfig] (val x: Self) extends AnyVal {
       
       inline def setCellHeight(value: Double): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
       

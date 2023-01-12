@@ -19,7 +19,8 @@ object MessagePartHeader {
     __obj.asInstanceOf[MessagePartHeader]
   }
   
-  extension [Self <: MessagePartHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagePartHeader] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

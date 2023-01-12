@@ -66,7 +66,8 @@ object SharedPropsthemeTheme {
     __obj.asInstanceOf[SharedPropsthemeTheme]
   }
   
-  extension [Self <: SharedPropsthemeTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedPropsthemeTheme] (val x: Self) extends AnyVal {
     
     inline def set$adjoined(value: typings.baseui.inputTypesMod.Adjoined): Self = StObject.set(x, "$adjoined", value.asInstanceOf[js.Any])
     

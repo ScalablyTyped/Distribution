@@ -32,7 +32,8 @@ object ErrorOptions {
     __obj.asInstanceOf[ErrorOptions]
   }
   
-  extension [Self <: ErrorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

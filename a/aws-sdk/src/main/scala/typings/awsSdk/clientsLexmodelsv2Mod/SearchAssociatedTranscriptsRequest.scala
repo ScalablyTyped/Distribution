@@ -59,7 +59,8 @@ object SearchAssociatedTranscriptsRequest {
     __obj.asInstanceOf[SearchAssociatedTranscriptsRequest]
   }
   
-  extension [Self <: SearchAssociatedTranscriptsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchAssociatedTranscriptsRequest] (val x: Self) extends AnyVal {
     
     inline def setBotId(value: Id): Self = StObject.set(x, "botId", value.asInstanceOf[js.Any])
     

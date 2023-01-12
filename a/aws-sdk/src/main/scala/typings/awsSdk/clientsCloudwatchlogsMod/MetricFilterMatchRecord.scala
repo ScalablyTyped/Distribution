@@ -28,7 +28,8 @@ object MetricFilterMatchRecord {
     __obj.asInstanceOf[MetricFilterMatchRecord]
   }
   
-  extension [Self <: MetricFilterMatchRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricFilterMatchRecord] (val x: Self) extends AnyVal {
     
     inline def setEventMessage(value: EventMessage): Self = StObject.set(x, "eventMessage", value.asInstanceOf[js.Any])
     

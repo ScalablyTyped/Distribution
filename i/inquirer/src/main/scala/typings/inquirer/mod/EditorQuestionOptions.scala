@@ -22,7 +22,8 @@ object EditorQuestionOptions {
     __obj.asInstanceOf[EditorQuestionOptions[T]]
   }
   
-  extension [Self <: EditorQuestionOptions[?], T /* <: Answers */](x: Self & EditorQuestionOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorQuestionOptions[?], T /* <: Answers */] (val x: Self & EditorQuestionOptions[T]) extends AnyVal {
     
     inline def setPostfix(value: String): Self = StObject.set(x, "postfix", value.asInstanceOf[js.Any])
     

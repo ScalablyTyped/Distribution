@@ -72,7 +72,8 @@ object Math {
     __obj.asInstanceOf[Math]
   }
   
-  extension [Self <: Math](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Math] (val x: Self) extends AnyVal {
     
     inline def setClamp(value: (Double, Double, Double) => Double): Self = StObject.set(x, "clamp", js.Any.fromFunction3(value))
     

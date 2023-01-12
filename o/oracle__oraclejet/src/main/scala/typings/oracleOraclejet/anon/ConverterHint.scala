@@ -30,7 +30,8 @@ object ConverterHint {
     __obj.asInstanceOf[ConverterHint]
   }
   
-  extension [Self <: ConverterHint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConverterHint] (val x: Self) extends AnyVal {
     
     inline def setConverterHint(value: (js.Array[placeholder | notewindow | none]) | placeholder | notewindow | none): Self = StObject.set(x, "converterHint", value.asInstanceOf[js.Any])
     

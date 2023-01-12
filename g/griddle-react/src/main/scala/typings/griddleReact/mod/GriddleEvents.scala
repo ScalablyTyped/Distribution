@@ -20,7 +20,8 @@ object GriddleEvents {
     __obj.asInstanceOf[GriddleEvents]
   }
   
-  extension [Self <: GriddleEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GriddleEvents] (val x: Self) extends AnyVal {
     
     inline def setOnFilter(value: /* filterText */ String => Unit): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
     

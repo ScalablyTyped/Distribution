@@ -49,7 +49,8 @@ object ClassModel {
     __obj.asInstanceOf[ClassModel]
   }
   
-  extension [Self <: ClassModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassModel] (val x: Self) extends AnyVal {
     
     inline def setAnnotationOverridings(value: StringDictionary[js.Array[Annotation]]): Self = StObject.set(x, "annotationOverridings", value.asInstanceOf[js.Any])
     

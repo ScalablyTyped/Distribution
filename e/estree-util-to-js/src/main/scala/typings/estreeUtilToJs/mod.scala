@@ -207,7 +207,8 @@ object mod {
       __obj.asInstanceOf[Handlers]
     }
     
-    extension [Self <: Handlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Handlers] (val x: Self) extends AnyVal {
       
       inline def setArrayExpression(value: typings.estreeUtilToJs.libTypesMod.Handler): Self = StObject.set(x, "ArrayExpression", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object Pctinfo {
     __obj.asInstanceOf[Pctinfo]
   }
   
-  extension [Self <: Pctinfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pctinfo] (val x: Self) extends AnyVal {
     
     inline def setPctinfo(value: Double): Self = StObject.set(x, "pctinfo", value.asInstanceOf[js.Any])
   }

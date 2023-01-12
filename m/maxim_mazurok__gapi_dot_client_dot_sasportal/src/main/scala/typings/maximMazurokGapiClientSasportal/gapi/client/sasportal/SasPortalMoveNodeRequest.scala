@@ -16,7 +16,8 @@ object SasPortalMoveNodeRequest {
     __obj.asInstanceOf[SasPortalMoveNodeRequest]
   }
   
-  extension [Self <: SasPortalMoveNodeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SasPortalMoveNodeRequest] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

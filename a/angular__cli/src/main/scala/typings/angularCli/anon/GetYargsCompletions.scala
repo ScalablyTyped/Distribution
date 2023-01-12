@@ -19,7 +19,8 @@ object GetYargsCompletions {
     __obj.asInstanceOf[GetYargsCompletions]
   }
   
-  extension [Self <: GetYargsCompletions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetYargsCompletions] (val x: Self) extends AnyVal {
     
     inline def setGetYargsCompletions(value: Boolean): Self = StObject.set(x, "getYargsCompletions", value.asInstanceOf[js.Any])
     

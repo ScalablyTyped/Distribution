@@ -50,7 +50,8 @@ object LinterResult {
     __obj.asInstanceOf[LinterResult]
   }
   
-  extension [Self <: LinterResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinterResult] (val x: Self) extends AnyVal {
     
     inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     

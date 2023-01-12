@@ -38,7 +38,8 @@ object GetCostCategoriesResponse {
     __obj.asInstanceOf[GetCostCategoriesResponse]
   }
   
-  extension [Self <: GetCostCategoriesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCostCategoriesResponse] (val x: Self) extends AnyVal {
     
     inline def setCostCategoryNames(value: CostCategoryNamesList): Self = StObject.set(x, "CostCategoryNames", value.asInstanceOf[js.Any])
     

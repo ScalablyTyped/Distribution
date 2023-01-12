@@ -34,7 +34,8 @@ object PickSliderpausestartnextp {
     __obj.asInstanceOf[PickSliderpausestartnextp]
   }
   
-  extension [Self <: PickSliderpausestartnextp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickSliderpausestartnextp] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     

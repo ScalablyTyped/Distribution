@@ -20,7 +20,8 @@ object AcceleratorTypesScopedList {
     __obj.asInstanceOf[AcceleratorTypesScopedList]
   }
   
-  extension [Self <: AcceleratorTypesScopedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceleratorTypesScopedList] (val x: Self) extends AnyVal {
     
     inline def setAcceleratorTypes(value: js.Array[AcceleratorType]): Self = StObject.set(x, "acceleratorTypes", value.asInstanceOf[js.Any])
     

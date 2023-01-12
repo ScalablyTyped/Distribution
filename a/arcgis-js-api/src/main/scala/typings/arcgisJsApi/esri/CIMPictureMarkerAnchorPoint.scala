@@ -27,7 +27,8 @@ object CIMPictureMarkerAnchorPoint {
     __obj.asInstanceOf[CIMPictureMarkerAnchorPoint]
   }
   
-  extension [Self <: CIMPictureMarkerAnchorPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMPictureMarkerAnchorPoint] (val x: Self) extends AnyVal {
     
     inline def setX(value: Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

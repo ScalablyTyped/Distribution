@@ -19,7 +19,8 @@ object UseLinkOptions {
     __obj.asInstanceOf[UseLinkOptions]
   }
   
-  extension [Self <: UseLinkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseLinkOptions] (val x: Self) extends AnyVal {
     
     inline def setReplace(value: Ref_[js.UndefOr[Boolean]] | Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object UnionTypeDescription {
     __obj.asInstanceOf[UnionTypeDescription]
   }
   
-  extension [Self <: UnionTypeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnionTypeDescription] (val x: Self) extends AnyVal {
     
     inline def setGeneric(value: _empty): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DisassociateBudgetFromResourceInput {
     __obj.asInstanceOf[DisassociateBudgetFromResourceInput]
   }
   
-  extension [Self <: DisassociateBudgetFromResourceInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateBudgetFromResourceInput] (val x: Self) extends AnyVal {
     
     inline def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
     

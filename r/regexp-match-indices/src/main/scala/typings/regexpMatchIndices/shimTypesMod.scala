@@ -19,7 +19,8 @@ object shimTypesMod {
         __obj.asInstanceOf[RegExpExecArray]
       }
       
-      extension [Self <: RegExpExecArray](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RegExpExecArray] (val x: Self) extends AnyVal {
         
         inline def setIndices(value: RegExpExecIndicesArray): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
       }
@@ -38,7 +39,8 @@ object shimTypesMod {
         __obj.asInstanceOf[RegExpMatchArray]
       }
       
-      extension [Self <: RegExpMatchArray](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RegExpMatchArray] (val x: Self) extends AnyVal {
         
         inline def setIndices(value: RegExpExecIndicesArray): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
         

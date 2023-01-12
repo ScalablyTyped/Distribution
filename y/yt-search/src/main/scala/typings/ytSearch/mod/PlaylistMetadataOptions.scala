@@ -21,7 +21,8 @@ object PlaylistMetadataOptions {
     __obj.asInstanceOf[PlaylistMetadataOptions]
   }
   
-  extension [Self <: PlaylistMetadataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaylistMetadataOptions] (val x: Self) extends AnyVal {
     
     inline def setGl(value: String): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
     

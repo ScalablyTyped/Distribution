@@ -43,7 +43,8 @@ object libComponentsCircleCircleMod {
       __obj.asInstanceOf[CirclePickerProps]
     }
     
-    extension [Self <: CirclePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CirclePickerProps] (val x: Self) extends AnyVal {
       
       inline def setCircleSize(value: Double): Self = StObject.set(x, "circleSize", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object libComponentsCircleCircleMod {
       __obj.asInstanceOf[CirclePickerStylesProps]
     }
     
-    extension [Self <: CirclePickerStylesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CirclePickerStylesProps] (val x: Self) extends AnyVal {
       
       inline def setCard(value: CSSProperties): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     }

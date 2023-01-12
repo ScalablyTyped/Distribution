@@ -29,7 +29,8 @@ object RegexLiteral1 {
     __obj.asInstanceOf[RegexLiteral1]
   }
   
-  extension [Self <: RegexLiteral1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegexLiteral1] (val x: Self) extends AnyVal {
     
     inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     

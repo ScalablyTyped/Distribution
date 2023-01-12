@@ -71,7 +71,8 @@ object Addin {
     __obj.asInstanceOf[Addin]
   }
   
-  extension [Self <: Addin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Addin] (val x: Self) extends AnyVal {
     
     inline def setGetStartupBehavior(value: () => js.Promise[StartupBehavior]): Self = StObject.set(x, "getStartupBehavior", js.Any.fromFunction0(value))
     

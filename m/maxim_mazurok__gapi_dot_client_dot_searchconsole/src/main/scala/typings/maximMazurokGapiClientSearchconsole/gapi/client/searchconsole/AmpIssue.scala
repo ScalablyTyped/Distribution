@@ -19,7 +19,8 @@ object AmpIssue {
     __obj.asInstanceOf[AmpIssue]
   }
   
-  extension [Self <: AmpIssue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmpIssue] (val x: Self) extends AnyVal {
     
     inline def setIssueMessage(value: String): Self = StObject.set(x, "issueMessage", value.asInstanceOf[js.Any])
     

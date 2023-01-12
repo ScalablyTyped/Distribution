@@ -67,7 +67,8 @@ object QueryContextType {
     __obj.asInstanceOf[QueryContextType]
   }
   
-  extension [Self <: QueryContextType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryContextType] (val x: Self) extends AnyVal {
     
     inline def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     

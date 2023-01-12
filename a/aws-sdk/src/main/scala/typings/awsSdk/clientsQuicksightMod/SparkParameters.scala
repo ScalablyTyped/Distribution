@@ -23,7 +23,8 @@ object SparkParameters {
     __obj.asInstanceOf[SparkParameters]
   }
   
-  extension [Self <: SparkParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparkParameters] (val x: Self) extends AnyVal {
     
     inline def setHost(value: Host): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     

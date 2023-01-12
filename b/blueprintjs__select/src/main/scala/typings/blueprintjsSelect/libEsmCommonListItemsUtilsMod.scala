@@ -32,7 +32,8 @@ object libEsmCommonListItemsUtilsMod {
       __obj.asInstanceOf[CreateNewItem]
     }
     
-    extension [Self <: CreateNewItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateNewItem] (val x: Self) extends AnyVal {
       
       inline def set__blueprintCreateNewItemBrand(value: `blueprint-create-new-item`): Self = StObject.set(x, "__blueprintCreateNewItemBrand", value.asInstanceOf[js.Any])
     }

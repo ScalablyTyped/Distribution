@@ -22,7 +22,8 @@ object TypeExtensionDefinition {
     __obj.asInstanceOf[TypeExtensionDefinition]
   }
   
-  extension [Self <: TypeExtensionDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeExtensionDefinition] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: ObjectTypeDefinition): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object LimitClauseNode {
     __obj.asInstanceOf[LimitClauseNode]
   }
   
-  extension [Self <: LimitClauseNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LimitClauseNode] (val x: Self) extends AnyVal {
     
     inline def setCount(value: js.Array[AstNode]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

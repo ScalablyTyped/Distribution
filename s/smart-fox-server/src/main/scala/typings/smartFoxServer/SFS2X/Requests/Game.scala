@@ -85,7 +85,8 @@ object Game {
       __obj.asInstanceOf[SFSGameSettings]
     }
     
-    extension [Self <: SFSGameSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SFSGameSettings] (val x: Self) extends AnyVal {
       
       inline def setInvitationExpiryTime(value: Double): Self = StObject.set(x, "invitationExpiryTime", value.asInstanceOf[js.Any])
       

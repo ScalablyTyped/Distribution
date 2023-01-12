@@ -20,7 +20,8 @@ object TypeofSCRIPTDEBUG {
     __obj.asInstanceOf[TypeofSCRIPTDEBUG]
   }
   
-  extension [Self <: TypeofSCRIPTDEBUG](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSCRIPTDEBUG] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: YES | SYNC | NO => js.Array[String]): Self = StObject.set(x, "transformArguments", js.Any.fromFunction1(value))
     

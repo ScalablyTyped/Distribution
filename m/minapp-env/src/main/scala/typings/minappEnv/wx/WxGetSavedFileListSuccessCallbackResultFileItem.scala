@@ -23,7 +23,8 @@ object WxGetSavedFileListSuccessCallbackResultFileItem {
     __obj.asInstanceOf[WxGetSavedFileListSuccessCallbackResultFileItem]
   }
   
-  extension [Self <: WxGetSavedFileListSuccessCallbackResultFileItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WxGetSavedFileListSuccessCallbackResultFileItem] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: Double): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

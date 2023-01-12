@@ -19,7 +19,8 @@ object AggregationsHistogramBucketKeys {
     __obj.asInstanceOf[AggregationsHistogramBucketKeys]
   }
   
-  extension [Self <: AggregationsHistogramBucketKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsHistogramBucketKeys] (val x: Self) extends AnyVal {
     
     inline def setKey(value: double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

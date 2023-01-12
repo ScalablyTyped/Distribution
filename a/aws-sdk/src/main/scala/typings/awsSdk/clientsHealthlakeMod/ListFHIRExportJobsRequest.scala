@@ -48,7 +48,8 @@ object ListFHIRExportJobsRequest {
     __obj.asInstanceOf[ListFHIRExportJobsRequest]
   }
   
-  extension [Self <: ListFHIRExportJobsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFHIRExportJobsRequest] (val x: Self) extends AnyVal {
     
     inline def setDatastoreId(value: DatastoreId): Self = StObject.set(x, "DatastoreId", value.asInstanceOf[js.Any])
     

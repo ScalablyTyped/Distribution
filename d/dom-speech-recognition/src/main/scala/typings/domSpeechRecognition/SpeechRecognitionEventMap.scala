@@ -48,7 +48,8 @@ object SpeechRecognitionEventMap {
     __obj.asInstanceOf[SpeechRecognitionEventMap]
   }
   
-  extension [Self <: SpeechRecognitionEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeechRecognitionEventMap] (val x: Self) extends AnyVal {
     
     inline def setAudioend(value: Event): Self = StObject.set(x, "audioend", value.asInstanceOf[js.Any])
     

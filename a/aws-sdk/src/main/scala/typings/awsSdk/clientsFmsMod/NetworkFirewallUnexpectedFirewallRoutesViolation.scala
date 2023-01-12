@@ -38,7 +38,8 @@ object NetworkFirewallUnexpectedFirewallRoutesViolation {
     __obj.asInstanceOf[NetworkFirewallUnexpectedFirewallRoutesViolation]
   }
   
-  extension [Self <: NetworkFirewallUnexpectedFirewallRoutesViolation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkFirewallUnexpectedFirewallRoutesViolation] (val x: Self) extends AnyVal {
     
     inline def setFirewallEndpoint(value: ResourceId): Self = StObject.set(x, "FirewallEndpoint", value.asInstanceOf[js.Any])
     

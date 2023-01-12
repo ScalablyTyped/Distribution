@@ -23,7 +23,8 @@ object SendTestEventNotificationRequest {
     __obj.asInstanceOf[SendTestEventNotificationRequest]
   }
   
-  extension [Self <: SendTestEventNotificationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendTestEventNotificationRequest] (val x: Self) extends AnyVal {
     
     inline def setNotification(value: NotificationSpecification): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
     

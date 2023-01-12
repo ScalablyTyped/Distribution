@@ -38,7 +38,8 @@ object S3BucketTranscriptSource {
     __obj.asInstanceOf[S3BucketTranscriptSource]
   }
   
-  extension [Self <: S3BucketTranscriptSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3BucketTranscriptSource] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyArn(value: KmsKeyArn): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object HTMLPassword {
     __obj.asInstanceOf[HTMLPassword]
   }
   
-  extension [Self <: HTMLPassword](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLPassword] (val x: Self) extends AnyVal {
     
     inline def setHTMLName(value: String): Self = StObject.set(x, "HTMLName", value.asInstanceOf[js.Any])
     

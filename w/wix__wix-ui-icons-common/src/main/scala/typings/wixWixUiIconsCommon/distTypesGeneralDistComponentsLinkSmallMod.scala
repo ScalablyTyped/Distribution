@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsLinkSmallMod extends Shortcut {
       __obj.asInstanceOf[LinkSmallProps]
     }
     
-    extension [Self <: LinkSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -68,7 +68,8 @@ object mod {
       __obj.asInstanceOf[CustomEndpoint]
     }
     
-    extension [Self <: CustomEndpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomEndpoint] (val x: Self) extends AnyVal {
       
       inline def setController(value: (/* req */ js.UndefOr[Any], /* res */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "controller", js.Any.fromFunction2(value))
       
@@ -125,7 +126,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       

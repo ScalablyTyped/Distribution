@@ -18,7 +18,8 @@ object ListStreamingDistributionsResult {
     __obj.asInstanceOf[ListStreamingDistributionsResult]
   }
   
-  extension [Self <: ListStreamingDistributionsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStreamingDistributionsResult] (val x: Self) extends AnyVal {
     
     inline def setStreamingDistributionList(value: StreamingDistributionList): Self = StObject.set(x, "StreamingDistributionList", value.asInstanceOf[js.Any])
     

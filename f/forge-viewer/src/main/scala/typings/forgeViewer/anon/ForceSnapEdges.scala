@@ -25,7 +25,8 @@ object ForceSnapEdges {
     __obj.asInstanceOf[ForceSnapEdges]
   }
   
-  extension [Self <: ForceSnapEdges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForceSnapEdges] (val x: Self) extends AnyVal {
     
     inline def setForceSnapEdges(value: Boolean): Self = StObject.set(x, "forceSnapEdges", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CostEstimationTimeRange {
     __obj.asInstanceOf[CostEstimationTimeRange]
   }
   
-  extension [Self <: CostEstimationTimeRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CostEstimationTimeRange] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     

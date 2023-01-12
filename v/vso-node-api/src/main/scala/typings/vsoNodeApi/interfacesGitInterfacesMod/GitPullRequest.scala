@@ -215,7 +215,8 @@ object GitPullRequest {
     __obj.asInstanceOf[GitPullRequest]
   }
   
-  extension [Self <: GitPullRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitPullRequest] (val x: Self) extends AnyVal {
     
     inline def setArtifactId(value: String): Self = StObject.set(x, "artifactId", value.asInstanceOf[js.Any])
     

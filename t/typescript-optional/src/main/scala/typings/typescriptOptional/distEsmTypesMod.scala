@@ -21,7 +21,8 @@ object distEsmTypesMod {
       __obj.asInstanceOf[Cases[T, U]]
     }
     
-    extension [Self <: Cases[?, ?], T, U](x: Self & (Cases[T, U])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cases[?, ?], T, U] (val x: Self & (Cases[T, U])) extends AnyVal {
       
       inline def setEmpty(value: () => U): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
       
@@ -42,7 +43,8 @@ object distEsmTypesMod {
       __obj.asInstanceOf[Empty[T]]
     }
     
-    extension [Self <: Empty[?], T](x: Self & Empty[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Empty[?], T] (val x: Self & Empty[T]) extends AnyVal {
       
       inline def setKind(value: empty): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     }
@@ -81,7 +83,8 @@ object distEsmTypesMod {
       __obj.asInstanceOf[Present[T]]
     }
     
-    extension [Self <: Present[?], T](x: Self & Present[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Present[?], T] (val x: Self & Present[T]) extends AnyVal {
       
       inline def setKind(value: present): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       

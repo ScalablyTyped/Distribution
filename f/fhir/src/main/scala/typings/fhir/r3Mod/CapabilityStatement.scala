@@ -212,7 +212,8 @@ object CapabilityStatement {
     __obj.asInstanceOf[CapabilityStatement]
   }
   
-  extension [Self <: CapabilityStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapabilityStatement] (val x: Self) extends AnyVal {
     
     inline def setAcceptUnknown(value: no | extensions | elements | both): Self = StObject.set(x, "acceptUnknown", value.asInstanceOf[js.Any])
     

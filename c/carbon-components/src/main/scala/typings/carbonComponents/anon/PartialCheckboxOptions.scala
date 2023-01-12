@@ -28,7 +28,8 @@ object PartialCheckboxOptions {
     __obj.asInstanceOf[PartialCheckboxOptions]
   }
   
-  extension [Self <: PartialCheckboxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCheckboxOptions] (val x: Self) extends AnyVal {
     
     inline def setAttribContainedCheckboxDisabled(value: String): Self = StObject.set(x, "attribContainedCheckboxDisabled", value.asInstanceOf[js.Any])
     

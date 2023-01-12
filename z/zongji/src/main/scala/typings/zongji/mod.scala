@@ -53,7 +53,8 @@ object mod {
         __obj.asInstanceOf[Event]
       }
       
-      extension [Self <: Event](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
         
         inline def setDump(value: () => Unit): Self = StObject.set(x, "dump", js.Any.fromFunction0(value))
         
@@ -152,7 +153,8 @@ object mod {
         __obj.asInstanceOf[StartOptions]
       }
       
-      extension [Self <: StartOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StartOptions] (val x: Self) extends AnyVal {
         
         inline def setExcludeEvents(value: js.Array[EventTypes]): Self = StObject.set(x, "excludeEvents", value.asInstanceOf[js.Any])
         

@@ -19,7 +19,8 @@ object MlDataframeEvaluationRegression {
     __obj.asInstanceOf[MlDataframeEvaluationRegression]
   }
   
-  extension [Self <: MlDataframeEvaluationRegression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataframeEvaluationRegression] (val x: Self) extends AnyVal {
     
     inline def setActual_field(value: Field): Self = StObject.set(x, "actual_field", value.asInstanceOf[js.Any])
     

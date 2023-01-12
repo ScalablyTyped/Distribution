@@ -33,7 +33,8 @@ object SendResponse {
     __obj.asInstanceOf[SendResponse]
   }
   
-  extension [Self <: SendResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendResponse] (val x: Self) extends AnyVal {
     
     inline def setError(value: FirebaseError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

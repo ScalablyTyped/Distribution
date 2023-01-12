@@ -213,7 +213,8 @@ object DescribeTrainingJobResponse {
     __obj.asInstanceOf[DescribeTrainingJobResponse]
   }
   
-  extension [Self <: DescribeTrainingJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTrainingJobResponse] (val x: Self) extends AnyVal {
     
     inline def setAlgorithmSpecification(value: AlgorithmSpecification): Self = StObject.set(x, "AlgorithmSpecification", value.asInstanceOf[js.Any])
     

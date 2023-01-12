@@ -390,7 +390,8 @@ object PartialPlotData {
     __obj.asInstanceOf[PartialPlotData]
   }
   
-  extension [Self <: PartialPlotData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPlotData] (val x: Self) extends AnyVal {
     
     inline def setAutobinx(value: Boolean): Self = StObject.set(x, "autobinx", value.asInstanceOf[js.Any])
     

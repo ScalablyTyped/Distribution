@@ -23,7 +23,8 @@ object DeepPartialPartialHeaders {
     __obj.asInstanceOf[DeepPartialPartialHeaders]
   }
   
-  extension [Self <: DeepPartialPartialHeaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeepPartialPartialHeaders] (val x: Self) extends AnyVal {
     
     inline def setAuthorization(value: DeepPartial[js.UndefOr[String]]): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
     

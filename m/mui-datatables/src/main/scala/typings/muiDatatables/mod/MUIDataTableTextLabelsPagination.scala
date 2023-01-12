@@ -23,7 +23,8 @@ object MUIDataTableTextLabelsPagination {
     __obj.asInstanceOf[MUIDataTableTextLabelsPagination]
   }
   
-  extension [Self <: MUIDataTableTextLabelsPagination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableTextLabelsPagination] (val x: Self) extends AnyVal {
     
     inline def setDisplayRows(value: String): Self = StObject.set(x, "displayRows", value.asInstanceOf[js.Any])
     

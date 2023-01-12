@@ -177,7 +177,8 @@ object XmlProcessingInstruction {
     __obj.asInstanceOf[XmlProcessingInstruction]
   }
   
-  extension [Self <: XmlProcessingInstruction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XmlProcessingInstruction] (val x: Self) extends AnyVal {
     
     inline def setAppendChild(value: IXmlNode => IXmlNode): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     

@@ -37,7 +37,8 @@ object typesCommitDoesNotExistExceptionMod {
       __obj.asInstanceOf[CommitDoesNotExistException]
     }
     
-    extension [Self <: CommitDoesNotExistException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommitDoesNotExistException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommitDoesNotExistException

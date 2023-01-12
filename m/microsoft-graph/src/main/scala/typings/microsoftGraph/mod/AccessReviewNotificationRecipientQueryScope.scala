@@ -30,7 +30,8 @@ object AccessReviewNotificationRecipientQueryScope {
     __obj.asInstanceOf[AccessReviewNotificationRecipientQueryScope]
   }
   
-  extension [Self <: AccessReviewNotificationRecipientQueryScope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessReviewNotificationRecipientQueryScope] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: NullableOption[String]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     

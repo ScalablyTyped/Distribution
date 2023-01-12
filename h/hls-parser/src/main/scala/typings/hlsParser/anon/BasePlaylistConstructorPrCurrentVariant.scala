@@ -35,7 +35,8 @@ object BasePlaylistConstructorPrCurrentVariant {
     __obj.asInstanceOf[BasePlaylistConstructorPrCurrentVariant]
   }
   
-  extension [Self <: BasePlaylistConstructorPrCurrentVariant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasePlaylistConstructorPrCurrentVariant] (val x: Self) extends AnyVal {
     
     inline def setCurrentVariant(value: Double): Self = StObject.set(x, "currentVariant", value.asInstanceOf[js.Any])
     

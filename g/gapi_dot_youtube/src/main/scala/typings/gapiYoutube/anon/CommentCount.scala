@@ -33,7 +33,8 @@ object CommentCount {
     __obj.asInstanceOf[CommentCount]
   }
   
-  extension [Self <: CommentCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentCount] (val x: Self) extends AnyVal {
     
     inline def setCommentCount(value: Double): Self = StObject.set(x, "commentCount", value.asInstanceOf[js.Any])
     

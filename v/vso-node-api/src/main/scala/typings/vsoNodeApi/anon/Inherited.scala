@@ -19,7 +19,8 @@ object Inherited {
     __obj.asInstanceOf[Inherited]
   }
   
-  extension [Self <: Inherited](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Inherited] (val x: Self) extends AnyVal {
     
     inline def setCustom(value: scala.Double): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     

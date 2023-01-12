@@ -17,7 +17,8 @@ object AgentJobCategory {
     __obj.asInstanceOf[AgentJobCategory]
   }
   
-  extension [Self <: AgentJobCategory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentJobCategory] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

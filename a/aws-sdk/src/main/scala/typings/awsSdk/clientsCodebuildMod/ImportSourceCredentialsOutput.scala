@@ -18,7 +18,8 @@ object ImportSourceCredentialsOutput {
     __obj.asInstanceOf[ImportSourceCredentialsOutput]
   }
   
-  extension [Self <: ImportSourceCredentialsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportSourceCredentialsOutput] (val x: Self) extends AnyVal {
     
     inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

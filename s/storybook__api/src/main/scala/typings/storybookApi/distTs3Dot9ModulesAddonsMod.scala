@@ -91,7 +91,8 @@ object distTs3Dot9ModulesAddonsMod {
       __obj.asInstanceOf[Addon]
     }
     
-    extension [Self <: Addon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Addon] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -146,7 +147,8 @@ object distTs3Dot9ModulesAddonsMod {
       __obj.asInstanceOf[MatchOptions]
     }
     
-    extension [Self <: MatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchOptions] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: PartialLocationAncestorOrigins): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
@@ -175,7 +177,8 @@ object distTs3Dot9ModulesAddonsMod {
       __obj.asInstanceOf[RenderOptions]
     }
     
-    extension [Self <: RenderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -200,7 +203,8 @@ object distTs3Dot9ModulesAddonsMod {
       __obj.asInstanceOf[RouteOptions]
     }
     
-    extension [Self <: RouteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteOptions] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: PartialLocationAncestorOrigins): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       

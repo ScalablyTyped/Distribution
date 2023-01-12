@@ -28,7 +28,8 @@ object SignatureHelpParameter {
     __obj.asInstanceOf[SignatureHelpParameter]
   }
   
-  extension [Self <: SignatureHelpParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureHelpParameter] (val x: Self) extends AnyVal {
     
     inline def setDisplayParts(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "displayParts", value.asInstanceOf[js.Any])
     

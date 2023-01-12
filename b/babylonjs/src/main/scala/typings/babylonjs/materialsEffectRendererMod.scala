@@ -184,7 +184,8 @@ object materialsEffectRendererMod {
       __obj.asInstanceOf[EffectWrapperCreationOptions]
     }
     
-    extension [Self <: EffectWrapperCreationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EffectWrapperCreationOptions] (val x: Self) extends AnyVal {
       
       inline def setAttributeNames(value: js.Array[String]): Self = StObject.set(x, "attributeNames", value.asInstanceOf[js.Any])
       
@@ -257,7 +258,8 @@ object materialsEffectRendererMod {
       __obj.asInstanceOf[IEffectRendererOptions]
     }
     
-    extension [Self <: IEffectRendererOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEffectRendererOptions] (val x: Self) extends AnyVal {
       
       inline def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
       

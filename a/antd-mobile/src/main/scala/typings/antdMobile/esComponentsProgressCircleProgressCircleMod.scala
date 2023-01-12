@@ -308,7 +308,8 @@ object esComponentsProgressCircleProgressCircleMod {
       __obj.asInstanceOf[ProgressCircleProps]
     }
     
-    extension [Self <: ProgressCircleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressCircleProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object ASPxClientHtmlEditorBeforePasteEventArgs {
     __obj.asInstanceOf[ASPxClientHtmlEditorBeforePasteEventArgs]
   }
   
-  extension [Self <: ASPxClientHtmlEditorBeforePasteEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorBeforePasteEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
     

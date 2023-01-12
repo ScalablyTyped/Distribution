@@ -44,7 +44,8 @@ object KnownStatsProfile {
     __obj.asInstanceOf[KnownStatsProfile]
   }
   
-  extension [Self <: KnownStatsProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnownStatsProfile] (val x: Self) extends AnyVal {
     
     inline def setAdditionalIntegration(value: Double): Self = StObject.set(x, "additionalIntegration", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object CancelFrame {
     __obj.asInstanceOf[CancelFrame]
   }
   
-  extension [Self <: CancelFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelFrame] (val x: Self) extends AnyVal {
     
     inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     

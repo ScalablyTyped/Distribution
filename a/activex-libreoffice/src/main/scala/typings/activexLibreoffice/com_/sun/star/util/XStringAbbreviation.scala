@@ -42,7 +42,8 @@ object XStringAbbreviation {
     __obj.asInstanceOf[XStringAbbreviation]
   }
   
-  extension [Self <: XStringAbbreviation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStringAbbreviation] (val x: Self) extends AnyVal {
     
     inline def setAbbreviateString(value: (XStringWidth, Double, String) => String): Self = StObject.set(x, "abbreviateString", js.Any.fromFunction3(value))
   }

@@ -17,7 +17,8 @@ object PickOptionsanimation {
     __obj.asInstanceOf[PickOptionsanimation]
   }
   
-  extension [Self <: PickOptionsanimation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickOptionsanimation] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

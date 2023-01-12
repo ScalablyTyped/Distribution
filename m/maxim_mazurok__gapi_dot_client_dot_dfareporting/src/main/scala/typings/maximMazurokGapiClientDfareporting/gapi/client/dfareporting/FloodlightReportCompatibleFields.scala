@@ -25,7 +25,8 @@ object FloodlightReportCompatibleFields {
     __obj.asInstanceOf[FloodlightReportCompatibleFields]
   }
   
-  extension [Self <: FloodlightReportCompatibleFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloodlightReportCompatibleFields] (val x: Self) extends AnyVal {
     
     inline def setDimensionFilters(value: js.Array[Dimension]): Self = StObject.set(x, "dimensionFilters", value.asInstanceOf[js.Any])
     

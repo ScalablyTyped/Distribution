@@ -158,7 +158,8 @@ object JourneysOptions {
     __obj.asInstanceOf[JourneysOptions]
   }
   
-  extension [Self <: JourneysOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JourneysOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: String): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

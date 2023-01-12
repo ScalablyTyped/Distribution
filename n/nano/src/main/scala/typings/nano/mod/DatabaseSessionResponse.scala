@@ -24,7 +24,8 @@ object DatabaseSessionResponse {
     __obj.asInstanceOf[DatabaseSessionResponse]
   }
   
-  extension [Self <: DatabaseSessionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseSessionResponse] (val x: Self) extends AnyVal {
     
     inline def setInfo(value: Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     

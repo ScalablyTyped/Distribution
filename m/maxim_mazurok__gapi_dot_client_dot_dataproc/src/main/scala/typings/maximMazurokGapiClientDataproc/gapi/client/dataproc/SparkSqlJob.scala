@@ -35,7 +35,8 @@ object SparkSqlJob {
     __obj.asInstanceOf[SparkSqlJob]
   }
   
-  extension [Self <: SparkSqlJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparkSqlJob] (val x: Self) extends AnyVal {
     
     inline def setJarFileUris(value: js.Array[String]): Self = StObject.set(x, "jarFileUris", value.asInstanceOf[js.Any])
     

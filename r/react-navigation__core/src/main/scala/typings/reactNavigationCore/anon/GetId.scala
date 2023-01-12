@@ -61,7 +61,8 @@ object GetId {
     __obj.asInstanceOf[GetId[RouteName, ScreenOptions, ParamList, State, EventMap]]
   }
   
-  extension [Self <: GetId[?, ?, ?, ?, ?], RouteName /* <: /* keyof ParamList */ String */, ScreenOptions /* <: js.Object */, ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, EventMap /* <: EventMapBase */](x: Self & (GetId[RouteName, ScreenOptions, ParamList, State, EventMap])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetId[?, ?, ?, ?, ?], RouteName /* <: /* keyof ParamList */ String */, ScreenOptions /* <: js.Object */, ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, EventMap /* <: EventMapBase */] (val x: Self & (GetId[RouteName, ScreenOptions, ParamList, State, EventMap])) extends AnyVal {
     
     inline def setGetId(value: /* param0 */ `2`[ParamList, RouteName] => js.UndefOr[String]): Self = StObject.set(x, "getId", js.Any.fromFunction1(value))
     

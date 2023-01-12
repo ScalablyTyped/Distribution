@@ -28,7 +28,8 @@ object ProductionVariantStatus {
     __obj.asInstanceOf[ProductionVariantStatus]
   }
   
-  extension [Self <: ProductionVariantStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductionVariantStatus] (val x: Self) extends AnyVal {
     
     inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     

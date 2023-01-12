@@ -20,7 +20,8 @@ object MatcherLocationAsRelative {
     __obj.asInstanceOf[MatcherLocationAsRelative]
   }
   
-  extension [Self <: MatcherLocationAsRelative](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatcherLocationAsRelative] (val x: Self) extends AnyVal {
     
     inline def setParams(value: RouteParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     

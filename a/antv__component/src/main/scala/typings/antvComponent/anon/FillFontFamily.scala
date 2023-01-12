@@ -21,7 +21,8 @@ object FillFontFamily {
     __obj.asInstanceOf[FillFontFamily]
   }
   
-  extension [Self <: FillFontFamily](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillFontFamily] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

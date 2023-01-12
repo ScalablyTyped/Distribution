@@ -73,7 +73,8 @@ object BatchSegmentJob {
     __obj.asInstanceOf[BatchSegmentJob]
   }
   
-  extension [Self <: BatchSegmentJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchSegmentJob] (val x: Self) extends AnyVal {
     
     inline def setBatchSegmentJobArn(value: Arn): Self = StObject.set(x, "batchSegmentJobArn", value.asInstanceOf[js.Any])
     

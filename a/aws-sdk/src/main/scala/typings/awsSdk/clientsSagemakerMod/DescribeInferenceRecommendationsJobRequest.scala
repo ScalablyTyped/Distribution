@@ -18,7 +18,8 @@ object DescribeInferenceRecommendationsJobRequest {
     __obj.asInstanceOf[DescribeInferenceRecommendationsJobRequest]
   }
   
-  extension [Self <: DescribeInferenceRecommendationsJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInferenceRecommendationsJobRequest] (val x: Self) extends AnyVal {
     
     inline def setJobName(value: RecommendationJobName): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
   }

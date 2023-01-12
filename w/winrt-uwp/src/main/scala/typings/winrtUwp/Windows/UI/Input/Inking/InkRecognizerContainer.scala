@@ -40,7 +40,8 @@ object InkRecognizerContainer {
     __obj.asInstanceOf[InkRecognizerContainer]
   }
   
-  extension [Self <: InkRecognizerContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InkRecognizerContainer] (val x: Self) extends AnyVal {
     
     inline def setGetRecognizers(value: () => IVectorView[InkRecognizer]): Self = StObject.set(x, "getRecognizers", js.Any.fromFunction0(value))
     

@@ -31,7 +31,8 @@ object Meta {
     __obj.asInstanceOf[Meta]
   }
   
-  extension [Self <: Meta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
     
     inline def setCancelable(value: `false`): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     

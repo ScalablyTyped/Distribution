@@ -19,7 +19,8 @@ object MlDataframeEvaluationOutlierDetection {
     __obj.asInstanceOf[MlDataframeEvaluationOutlierDetection]
   }
   
-  extension [Self <: MlDataframeEvaluationOutlierDetection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataframeEvaluationOutlierDetection] (val x: Self) extends AnyVal {
     
     inline def setActual_field(value: Field): Self = StObject.set(x, "actual_field", value.asInstanceOf[js.Any])
     

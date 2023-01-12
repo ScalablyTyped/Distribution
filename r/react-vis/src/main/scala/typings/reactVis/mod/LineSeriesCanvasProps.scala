@@ -17,7 +17,8 @@ object LineSeriesCanvasProps {
     __obj.asInstanceOf[LineSeriesCanvasProps]
   }
   
-  extension [Self <: LineSeriesCanvasProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineSeriesCanvasProps] (val x: Self) extends AnyVal {
     
     inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     

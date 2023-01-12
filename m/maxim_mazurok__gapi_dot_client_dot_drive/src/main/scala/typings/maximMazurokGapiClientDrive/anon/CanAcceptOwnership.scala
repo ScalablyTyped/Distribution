@@ -151,7 +151,8 @@ object CanAcceptOwnership {
     __obj.asInstanceOf[CanAcceptOwnership]
   }
   
-  extension [Self <: CanAcceptOwnership](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanAcceptOwnership] (val x: Self) extends AnyVal {
     
     inline def setCanAcceptOwnership(value: Boolean): Self = StObject.set(x, "canAcceptOwnership", value.asInstanceOf[js.Any])
     

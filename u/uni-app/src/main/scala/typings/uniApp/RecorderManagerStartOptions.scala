@@ -43,7 +43,8 @@ object RecorderManagerStartOptions {
     __obj.asInstanceOf[RecorderManagerStartOptions]
   }
   
-  extension [Self <: RecorderManagerStartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecorderManagerStartOptions] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

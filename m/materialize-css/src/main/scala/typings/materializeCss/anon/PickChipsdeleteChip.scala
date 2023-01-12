@@ -19,7 +19,8 @@ object PickChipsdeleteChip {
     __obj.asInstanceOf[PickChipsdeleteChip]
   }
   
-  extension [Self <: PickChipsdeleteChip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickChipsdeleteChip] (val x: Self) extends AnyVal {
     
     inline def setDeleteChip(value: /* n */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "deleteChip", js.Any.fromFunction1(value))
   }

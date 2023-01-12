@@ -28,7 +28,8 @@ object LifeCycleLastCutover {
     __obj.asInstanceOf[LifeCycleLastCutover]
   }
   
-  extension [Self <: LifeCycleLastCutover](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LifeCycleLastCutover] (val x: Self) extends AnyVal {
     
     inline def setFinalized(value: LifeCycleLastCutoverFinalized): Self = StObject.set(x, "finalized", value.asInstanceOf[js.Any])
     

@@ -75,7 +75,8 @@ object EffectiveDeployment {
     __obj.asInstanceOf[EffectiveDeployment]
   }
   
-  extension [Self <: EffectiveDeployment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EffectiveDeployment] (val x: Self) extends AnyVal {
     
     inline def setCoreDeviceExecutionStatus(value: EffectiveDeploymentExecutionStatus): Self = StObject.set(x, "coreDeviceExecutionStatus", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object PortalItemRemoveResourceOptions {
     __obj.asInstanceOf[PortalItemRemoveResourceOptions]
   }
   
-  extension [Self <: PortalItemRemoveResourceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortalItemRemoveResourceOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

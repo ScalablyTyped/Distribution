@@ -25,7 +25,8 @@ object Apply {
     __obj.asInstanceOf[Apply[ThisType, ChildType]]
   }
   
-  extension [Self <: Apply[?, ?], ThisType /* <: JSXCandidate */, ChildType /* <: AnyWidget */](x: Self & (Apply[ThisType, ChildType])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Apply[?, ?], ThisType /* <: JSXCandidate */, ChildType /* <: AnyWidget */] (val x: Self & (Apply[ThisType, ChildType])) extends AnyVal {
     
     inline def setApply(value: RuleSet[ThisType]): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
     

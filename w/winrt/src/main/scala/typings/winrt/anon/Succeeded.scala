@@ -18,7 +18,8 @@ object Succeeded {
     __obj.asInstanceOf[Succeeded]
   }
   
-  extension [Self <: Succeeded](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Succeeded] (val x: Self) extends AnyVal {
     
     inline def setResult(value: JsonObject): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

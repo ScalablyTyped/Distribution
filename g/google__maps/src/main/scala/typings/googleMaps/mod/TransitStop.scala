@@ -19,7 +19,8 @@ object TransitStop {
     __obj.asInstanceOf[TransitStop]
   }
   
-  extension [Self <: TransitStop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitStop] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: LatLngLiteral): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

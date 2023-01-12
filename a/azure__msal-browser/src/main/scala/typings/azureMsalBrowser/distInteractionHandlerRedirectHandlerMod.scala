@@ -51,7 +51,8 @@ object distInteractionHandlerRedirectHandlerMod {
       __obj.asInstanceOf[RedirectParams]
     }
     
-    extension [Self <: RedirectParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedirectParams] (val x: Self) extends AnyVal {
       
       inline def setNavigationClient(value: INavigationClient): Self = StObject.set(x, "navigationClient", value.asInstanceOf[js.Any])
       

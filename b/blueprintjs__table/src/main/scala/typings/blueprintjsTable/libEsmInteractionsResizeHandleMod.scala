@@ -106,7 +106,8 @@ object libEsmInteractionsResizeHandleMod {
       __obj.asInstanceOf[IResizeHandleState]
     }
     
-    extension [Self <: IResizeHandleState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResizeHandleState] (val x: Self) extends AnyVal {
       
       inline def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
     }

@@ -25,7 +25,8 @@ object Sound {
       __obj.asInstanceOf[AudioSpriteSound]
     }
     
-    extension [Self <: AudioSpriteSound](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AudioSpriteSound] (val x: Self) extends AnyVal {
       
       inline def setSpritemap(value: js.Object): Self = StObject.set(x, "spritemap", value.asInstanceOf[js.Any])
     }
@@ -56,7 +57,8 @@ object Sound {
       __obj.asInstanceOf[DecodeAudioConfig]
     }
     
-    extension [Self <: DecodeAudioConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodeAudioConfig] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.ArrayBuffer | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -124,7 +126,8 @@ object Sound {
       __obj.asInstanceOf[SoundConfig]
     }
     
-    extension [Self <: SoundConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SoundConfig] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -192,7 +195,8 @@ object Sound {
       __obj.asInstanceOf[SoundMarker]
     }
     
-    extension [Self <: SoundMarker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SoundMarker] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: SoundConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

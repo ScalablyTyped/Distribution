@@ -27,7 +27,8 @@ object distTs3Dot9ComponentsMessageMod extends Shortcut {
       __obj.asInstanceOf[MessageProps]
     }
     
-    extension [Self <: MessageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageProps] (val x: Self) extends AnyVal {
       
       inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     }

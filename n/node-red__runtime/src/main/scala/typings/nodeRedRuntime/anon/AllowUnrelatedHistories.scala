@@ -24,7 +24,8 @@ object AllowUnrelatedHistories {
     __obj.asInstanceOf[AllowUnrelatedHistories]
   }
   
-  extension [Self <: AllowUnrelatedHistories](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowUnrelatedHistories] (val x: Self) extends AnyVal {
     
     inline def setAllowUnrelatedHistories(value: Boolean): Self = StObject.set(x, "allowUnrelatedHistories", value.asInstanceOf[js.Any])
     

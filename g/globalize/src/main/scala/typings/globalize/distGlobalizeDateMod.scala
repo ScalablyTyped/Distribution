@@ -63,7 +63,8 @@ object distGlobalizeDateMod extends Shortcut {
         __obj.asInstanceOf[DateFormatPart]
       }
       
-      extension [Self <: DateFormatPart](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DateFormatPart] (val x: Self) extends AnyVal {
         
         inline def setType(value: DateFormatPartTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
@@ -153,7 +154,8 @@ object distGlobalizeDateMod extends Shortcut {
         __obj.asInstanceOf[DateFormatterOptions]
       }
       
-      extension [Self <: DateFormatterOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DateFormatterOptions] (val x: Self) extends AnyVal {
         
         inline def setDate(value: full | long | medium | short): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
         
@@ -198,7 +200,8 @@ object distGlobalizeDateMod extends Shortcut {
         __obj.asInstanceOf[NumberFormatPart]
       }
       
-      extension [Self <: NumberFormatPart](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NumberFormatPart] (val x: Self) extends AnyVal {
         
         inline def setType(
           value: typings.globalize.distGlobalizeNumberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
@@ -273,7 +276,8 @@ object distGlobalizeDateMod extends Shortcut {
         __obj.asInstanceOf[NumberParserOptions]
       }
       
-      extension [Self <: NumberParserOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NumberParserOptions] (val x: Self) extends AnyVal {
         
         inline def setStyle(value: decimal | percent): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
         
@@ -433,7 +437,8 @@ object distGlobalizeDateMod extends Shortcut {
         __obj.asInstanceOf[typings.globalize.distGlobalizeDateMod.globalizeDistGlobalizeAugmentingMod.Static]
       }
       
-      extension [Self <: typings.globalize.distGlobalizeDateMod.globalizeDistGlobalizeAugmentingMod.Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.globalize.distGlobalizeDateMod.globalizeDistGlobalizeAugmentingMod.Static] (val x: Self) extends AnyVal {
         
         inline def setLoadTimeZone(value: js.Object => Unit): Self = StObject.set(x, "loadTimeZone", js.Any.fromFunction1(value))
       }

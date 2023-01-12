@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[PartialCloudColor]
     }
     
-    extension [Self <: PartialCloudColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialCloudColor] (val x: Self) extends AnyVal {
       
       inline def setDark(value: String): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object anon {
       __obj.asInstanceOf[PartialInkColor]
     }
     
-    extension [Self <: PartialInkColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialInkColor] (val x: Self) extends AnyVal {
       
       inline def setLight(value: String): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object anon {
       __obj.asInstanceOf[PartialProductColor]
     }
     
-    extension [Self <: PartialProductColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialProductColor] (val x: Self) extends AnyVal {
       
       inline def setDark(value: String): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
       
@@ -220,7 +223,8 @@ object anon {
       __obj.asInstanceOf[PartialSocialColor]
     }
     
-    extension [Self <: PartialSocialColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSocialColor] (val x: Self) extends AnyVal {
       
       inline def setFacebook(value: String): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
       
@@ -266,7 +270,8 @@ object anon {
       __obj.asInstanceOf[PartialStatusColor]
     }
     
-    extension [Self <: PartialStatusColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialStatusColor] (val x: Self) extends AnyVal {
       
       inline def setDark(value: String): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
       
@@ -326,7 +331,8 @@ object anon {
       __obj.asInstanceOf[PartialWhiteColor]
     }
     
-    extension [Self <: PartialWhiteColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialWhiteColor] (val x: Self) extends AnyVal {
       
       inline def setNormal(value: String): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
       

@@ -64,7 +64,8 @@ object FilterCompoundKeys {
     __obj.asInstanceOf[FilterCompoundKeys]
   }
   
-  extension [Self <: FilterCompoundKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterCompoundKeys] (val x: Self) extends AnyVal {
     
     inline def setFilterCompoundKeys(value: js.Object): Self = StObject.set(x, "filterCompoundKeys", value.asInstanceOf[js.Any])
     

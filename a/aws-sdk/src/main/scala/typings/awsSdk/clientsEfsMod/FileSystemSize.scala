@@ -33,7 +33,8 @@ object FileSystemSize {
     __obj.asInstanceOf[FileSystemSize]
   }
   
-  extension [Self <: FileSystemSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemSize] (val x: Self) extends AnyVal {
     
     inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     

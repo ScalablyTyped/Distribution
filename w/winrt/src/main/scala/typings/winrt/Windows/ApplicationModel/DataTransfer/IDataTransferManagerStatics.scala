@@ -17,7 +17,8 @@ object IDataTransferManagerStatics {
     __obj.asInstanceOf[IDataTransferManagerStatics]
   }
   
-  extension [Self <: IDataTransferManagerStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDataTransferManagerStatics] (val x: Self) extends AnyVal {
     
     inline def setGetForCurrentView(value: () => DataTransferManager): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
     

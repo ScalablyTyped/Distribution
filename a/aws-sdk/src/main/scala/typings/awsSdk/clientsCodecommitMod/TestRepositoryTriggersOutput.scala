@@ -23,7 +23,8 @@ object TestRepositoryTriggersOutput {
     __obj.asInstanceOf[TestRepositoryTriggersOutput]
   }
   
-  extension [Self <: TestRepositoryTriggersOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestRepositoryTriggersOutput] (val x: Self) extends AnyVal {
     
     inline def setFailedExecutions(value: RepositoryTriggerExecutionFailureList): Self = StObject.set(x, "failedExecutions", value.asInstanceOf[js.Any])
     

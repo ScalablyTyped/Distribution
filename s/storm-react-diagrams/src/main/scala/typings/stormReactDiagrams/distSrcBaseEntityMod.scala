@@ -80,7 +80,8 @@ object distSrcBaseEntityMod {
       __obj.asInstanceOf[BaseEvent[T]]
     }
     
-    extension [Self <: BaseEvent[?], T /* <: BaseEntity[BaseListener[Any]] */](x: Self & BaseEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseEvent[?], T /* <: BaseEntity[BaseListener[Any]] */] (val x: Self & BaseEvent[T]) extends AnyVal {
       
       inline def setEntity(value: BaseEntity[BaseListener[Any]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object distSrcBaseEntityMod {
       __obj.asInstanceOf[BaseListener[T]]
     }
     
-    extension [Self <: BaseListener[?], T /* <: BaseEntity[BaseListener[Any]] */](x: Self & BaseListener[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseListener[?], T /* <: BaseEntity[BaseListener[Any]] */] (val x: Self & BaseListener[T]) extends AnyVal {
       
       inline def setLockChanged(value: /* event */ BaseEvent[T] & Locked => Unit): Self = StObject.set(x, "lockChanged", js.Any.fromFunction1(value))
       

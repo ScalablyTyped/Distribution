@@ -15,7 +15,8 @@ object LodashAnyHack {
     __obj.asInstanceOf[LodashAnyHack]
   }
   
-  extension [Self <: LodashAnyHack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LodashAnyHack] (val x: Self) extends AnyVal {
     
     inline def set__lodashAnyHack(value: Any): Self = StObject.set(x, "__lodashAnyHack", value.asInstanceOf[js.Any])
   }

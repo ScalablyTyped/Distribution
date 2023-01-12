@@ -18,7 +18,8 @@ object StopSamplingResponse {
     __obj.asInstanceOf[StopSamplingResponse]
   }
   
-  extension [Self <: StopSamplingResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopSamplingResponse] (val x: Self) extends AnyVal {
     
     inline def setProfile(value: SamplingHeapProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
   }

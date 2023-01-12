@@ -82,7 +82,8 @@ object distRegularizersMod {
       __obj.asInstanceOf[L1Args]
     }
     
-    extension [Self <: L1Args](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: L1Args] (val x: Self) extends AnyVal {
       
       inline def setL1(value: Double): Self = StObject.set(x, "l1", value.asInstanceOf[js.Any])
     }
@@ -103,7 +104,8 @@ object distRegularizersMod {
       __obj.asInstanceOf[L1L2Args]
     }
     
-    extension [Self <: L1L2Args](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: L1L2Args] (val x: Self) extends AnyVal {
       
       inline def setL1(value: Double): Self = StObject.set(x, "l1", value.asInstanceOf[js.Any])
       
@@ -127,7 +129,8 @@ object distRegularizersMod {
       __obj.asInstanceOf[L2Args]
     }
     
-    extension [Self <: L2Args](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: L2Args] (val x: Self) extends AnyVal {
       
       inline def setL2(value: Double): Self = StObject.set(x, "l2", value.asInstanceOf[js.Any])
     }

@@ -25,7 +25,8 @@ object RibbonUpdaterData {
     __obj.asInstanceOf[RibbonUpdaterData]
   }
   
-  extension [Self <: RibbonUpdaterData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RibbonUpdaterData] (val x: Self) extends AnyVal {
     
     inline def setTabs(value: js.Array[Tab]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     

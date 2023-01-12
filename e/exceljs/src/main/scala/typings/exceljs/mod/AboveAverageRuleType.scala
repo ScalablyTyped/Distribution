@@ -22,7 +22,8 @@ object AboveAverageRuleType {
     __obj.asInstanceOf[AboveAverageRuleType]
   }
   
-  extension [Self <: AboveAverageRuleType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AboveAverageRuleType] (val x: Self) extends AnyVal {
     
     inline def setAboveAverage(value: Boolean): Self = StObject.set(x, "aboveAverage", value.asInstanceOf[js.Any])
     

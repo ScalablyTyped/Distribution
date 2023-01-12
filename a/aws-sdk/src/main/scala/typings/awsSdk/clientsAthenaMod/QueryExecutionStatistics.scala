@@ -53,7 +53,8 @@ object QueryExecutionStatistics {
     __obj.asInstanceOf[QueryExecutionStatistics]
   }
   
-  extension [Self <: QueryExecutionStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryExecutionStatistics] (val x: Self) extends AnyVal {
     
     inline def setDataManifestLocation(value: String): Self = StObject.set(x, "DataManifestLocation", value.asInstanceOf[js.Any])
     

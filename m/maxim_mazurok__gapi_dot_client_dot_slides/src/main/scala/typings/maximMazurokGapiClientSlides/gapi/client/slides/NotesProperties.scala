@@ -20,7 +20,8 @@ object NotesProperties {
     __obj.asInstanceOf[NotesProperties]
   }
   
-  extension [Self <: NotesProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotesProperties] (val x: Self) extends AnyVal {
     
     inline def setSpeakerNotesObjectId(value: String): Self = StObject.set(x, "speakerNotesObjectId", value.asInstanceOf[js.Any])
     

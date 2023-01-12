@@ -19,7 +19,8 @@ object EditMessageReplyMarkupOptions {
     __obj.asInstanceOf[EditMessageReplyMarkupOptions]
   }
   
-  extension [Self <: EditMessageReplyMarkupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditMessageReplyMarkupOptions] (val x: Self) extends AnyVal {
     
     inline def setChat_id(value: Double | String): Self = StObject.set(x, "chat_id", value.asInstanceOf[js.Any])
     

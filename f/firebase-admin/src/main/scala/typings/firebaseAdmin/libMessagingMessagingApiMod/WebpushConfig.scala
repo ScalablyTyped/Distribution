@@ -37,7 +37,8 @@ object WebpushConfig {
     __obj.asInstanceOf[WebpushConfig]
   }
   
-  extension [Self <: WebpushConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebpushConfig] (val x: Self) extends AnyVal {
     
     inline def setData(value: StringDictionary[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

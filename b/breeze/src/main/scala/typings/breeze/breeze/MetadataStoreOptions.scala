@@ -17,7 +17,8 @@ object MetadataStoreOptions {
     __obj.asInstanceOf[MetadataStoreOptions]
   }
   
-  extension [Self <: MetadataStoreOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetadataStoreOptions] (val x: Self) extends AnyVal {
     
     inline def setLocalQueryComparisonOptions(value: LocalQueryComparisonOptions): Self = StObject.set(x, "localQueryComparisonOptions", value.asInstanceOf[js.Any])
     

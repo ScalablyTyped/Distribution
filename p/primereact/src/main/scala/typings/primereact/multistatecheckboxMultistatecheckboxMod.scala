@@ -145,7 +145,8 @@ object multistatecheckboxMultistatecheckboxMod {
       __obj.asInstanceOf[MultiStateCheckboxChangeParams]
     }
     
-    extension [Self <: MultiStateCheckboxChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiStateCheckboxChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -174,7 +175,8 @@ object multistatecheckboxMultistatecheckboxMod {
       __obj.asInstanceOf[MultiStateCheckboxChangeTargetOptions]
     }
     
-    extension [Self <: MultiStateCheckboxChangeTargetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiStateCheckboxChangeTargetOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -205,7 +207,8 @@ object multistatecheckboxMultistatecheckboxMod {
       __obj.asInstanceOf[MultiStateCheckboxIconTemplateParams]
     }
     
-    extension [Self <: MultiStateCheckboxIconTemplateParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiStateCheckboxIconTemplateParams] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -244,7 +247,8 @@ object multistatecheckboxMultistatecheckboxMod {
       __obj.asInstanceOf[MultiStateCheckboxOption]
     }
     
-    extension [Self <: MultiStateCheckboxOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiStateCheckboxOption] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -702,7 +706,8 @@ object multistatecheckboxMultistatecheckboxMod {
       __obj.asInstanceOf[MultiStateCheckboxProps]
     }
     
-    extension [Self <: MultiStateCheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiStateCheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

@@ -40,7 +40,8 @@ object P2pProviderInfo {
     __obj.asInstanceOf[P2pProviderInfo]
   }
   
-  extension [Self <: P2pProviderInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: P2pProviderInfo] (val x: Self) extends AnyVal {
     
     inline def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     

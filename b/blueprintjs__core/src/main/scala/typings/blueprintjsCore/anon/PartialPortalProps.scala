@@ -24,7 +24,8 @@ object PartialPortalProps {
     __obj.asInstanceOf[PartialPortalProps]
   }
   
-  extension [Self <: PartialPortalProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPortalProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

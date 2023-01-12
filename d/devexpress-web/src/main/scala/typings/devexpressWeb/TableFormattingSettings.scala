@@ -77,7 +77,8 @@ object TableFormattingSettings {
     __obj.asInstanceOf[TableFormattingSettings]
   }
   
-  extension [Self <: TableFormattingSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableFormattingSettings] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: TableRowAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

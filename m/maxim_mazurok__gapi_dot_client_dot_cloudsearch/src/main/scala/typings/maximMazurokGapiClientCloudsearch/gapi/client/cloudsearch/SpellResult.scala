@@ -16,7 +16,8 @@ object SpellResult {
     __obj.asInstanceOf[SpellResult]
   }
   
-  extension [Self <: SpellResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpellResult] (val x: Self) extends AnyVal {
     
     inline def setSuggestedQuery(value: String): Self = StObject.set(x, "suggestedQuery", value.asInstanceOf[js.Any])
     

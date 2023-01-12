@@ -27,7 +27,8 @@ object IAdditionalClassInfo {
     __obj.asInstanceOf[IAdditionalClassInfo]
   }
   
-  extension [Self <: IAdditionalClassInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAdditionalClassInfo] (val x: Self) extends AnyVal {
     
     inline def setAssignmentClassInfo(value: IAssignmentClassInfo): Self = StObject.set(x, "AssignmentClassInfo", value.asInstanceOf[js.Any])
     

@@ -107,7 +107,8 @@ object mod {
       __obj.asInstanceOf[DecoderOptions]
     }
     
-    extension [Self <: DecoderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecoderOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckTyp(value: String): Self = StObject.set(x, "checkTyp", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object mod {
       __obj.asInstanceOf[JwtHeader]
     }
     
-    extension [Self <: JwtHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JwtHeader] (val x: Self) extends AnyVal {
       
       inline def setAlg(value: String | Algorithm): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       
@@ -225,7 +227,8 @@ object mod {
       __obj.asInstanceOf[PrivateKey]
     }
     
-    extension [Self <: PrivateKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrivateKey] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String | Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -286,7 +289,8 @@ object mod {
       __obj.asInstanceOf[SignerOptions]
     }
     
-    extension [Self <: SignerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignerOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -330,7 +334,8 @@ object mod {
       __obj.asInstanceOf[TokenError]
     }
     
-    extension [Self <: TokenError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
@@ -390,7 +395,8 @@ object mod {
       __obj.asInstanceOf[VerifierOptions]
     }
     
-    extension [Self <: VerifierOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerifierOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithms(value: js.Array[Algorithm]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
       

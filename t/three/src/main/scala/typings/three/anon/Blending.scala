@@ -54,7 +54,8 @@ object Blending {
     __obj.asInstanceOf[Blending]
   }
   
-  extension [Self <: Blending](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Blending] (val x: Self) extends AnyVal {
     
     inline def setBlending(value: IUniform[Any]): Self = StObject.set(x, "blending", value.asInstanceOf[js.Any])
     

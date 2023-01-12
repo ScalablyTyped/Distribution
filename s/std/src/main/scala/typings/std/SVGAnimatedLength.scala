@@ -20,7 +20,8 @@ object SVGAnimatedLength {
     __obj.asInstanceOf[SVGAnimatedLength]
   }
   
-  extension [Self <: SVGAnimatedLength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGAnimatedLength] (val x: Self) extends AnyVal {
     
     inline def setAnimVal(value: SVGLength): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
     

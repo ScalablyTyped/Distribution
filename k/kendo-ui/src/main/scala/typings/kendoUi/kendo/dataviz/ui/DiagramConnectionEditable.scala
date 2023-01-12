@@ -15,7 +15,8 @@ object DiagramConnectionEditable {
     __obj.asInstanceOf[DiagramConnectionEditable]
   }
   
-  extension [Self <: DiagramConnectionEditable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramConnectionEditable] (val x: Self) extends AnyVal {
     
     inline def setTools(value: js.Array[DiagramConnectionEditableTool]): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
     

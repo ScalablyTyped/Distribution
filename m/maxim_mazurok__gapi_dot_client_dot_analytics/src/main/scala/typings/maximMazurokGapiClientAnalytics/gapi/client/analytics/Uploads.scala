@@ -37,7 +37,8 @@ object Uploads {
     __obj.asInstanceOf[Uploads]
   }
   
-  extension [Self <: Uploads](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Uploads] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[Upload]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

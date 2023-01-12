@@ -89,7 +89,8 @@ object buildSrcDescriptorMod {
       __obj.asInstanceOf[Descriptor]
     }
     
-    extension [Self <: Descriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Descriptor] (val x: Self) extends AnyVal {
       
       inline def setGetApiCaller(value: CallSettings => APICaller): Self = StObject.set(x, "getApiCaller", js.Any.fromFunction1(value))
     }

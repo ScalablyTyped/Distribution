@@ -21,7 +21,8 @@ object ListReplaceOp {
     __obj.asInstanceOf[ListReplaceOp]
   }
   
-  extension [Self <: ListReplaceOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListReplaceOp] (val x: Self) extends AnyVal {
     
     inline def setLd(value: Any): Self = StObject.set(x, "ld", value.asInstanceOf[js.Any])
     

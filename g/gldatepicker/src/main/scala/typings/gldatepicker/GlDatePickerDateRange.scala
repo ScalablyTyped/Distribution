@@ -19,7 +19,8 @@ object GlDatePickerDateRange {
     __obj.asInstanceOf[GlDatePickerDateRange]
   }
   
-  extension [Self <: GlDatePickerDateRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlDatePickerDateRange] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: js.Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

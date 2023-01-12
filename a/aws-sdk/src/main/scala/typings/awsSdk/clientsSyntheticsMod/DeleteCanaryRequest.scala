@@ -23,7 +23,8 @@ object DeleteCanaryRequest {
     __obj.asInstanceOf[DeleteCanaryRequest]
   }
   
-  extension [Self <: DeleteCanaryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCanaryRequest] (val x: Self) extends AnyVal {
     
     inline def setDeleteLambda(value: Boolean): Self = StObject.set(x, "DeleteLambda", value.asInstanceOf[js.Any])
     

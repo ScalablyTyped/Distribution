@@ -25,7 +25,8 @@ object ActionSheetOptions {
     __obj.asInstanceOf[ActionSheetOptions]
   }
   
-  extension [Self <: ActionSheetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionSheetOptions] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

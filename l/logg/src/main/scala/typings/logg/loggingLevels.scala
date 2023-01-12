@@ -36,7 +36,8 @@ object loggingLevels {
     __obj.asInstanceOf[loggingLevels]
   }
   
-  extension [Self <: loggingLevels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: loggingLevels] (val x: Self) extends AnyVal {
     
     inline def setFINE(value: Double): Self = StObject.set(x, "FINE", value.asInstanceOf[js.Any])
     

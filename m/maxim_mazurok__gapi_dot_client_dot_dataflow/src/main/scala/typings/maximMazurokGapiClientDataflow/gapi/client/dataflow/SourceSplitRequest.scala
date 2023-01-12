@@ -19,7 +19,8 @@ object SourceSplitRequest {
     __obj.asInstanceOf[SourceSplitRequest]
   }
   
-  extension [Self <: SourceSplitRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceSplitRequest] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: SourceSplitOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

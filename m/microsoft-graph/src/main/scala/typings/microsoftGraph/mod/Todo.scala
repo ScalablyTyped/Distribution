@@ -18,7 +18,8 @@ object Todo {
     __obj.asInstanceOf[Todo]
   }
   
-  extension [Self <: Todo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Todo] (val x: Self) extends AnyVal {
     
     inline def setLists(value: NullableOption[js.Array[TodoTaskList]]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
     

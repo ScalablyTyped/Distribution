@@ -17,7 +17,8 @@ object SplitterTapsType {
     __obj.asInstanceOf[SplitterTapsType]
   }
   
-  extension [Self <: SplitterTapsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitterTapsType] (val x: Self) extends AnyVal {
     
     inline def setSplitter(value: Double): Self = StObject.set(x, "splitter", value.asInstanceOf[js.Any])
     

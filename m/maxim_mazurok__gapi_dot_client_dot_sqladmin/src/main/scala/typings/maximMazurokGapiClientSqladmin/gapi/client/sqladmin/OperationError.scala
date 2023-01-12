@@ -22,7 +22,8 @@ object OperationError {
     __obj.asInstanceOf[OperationError]
   }
   
-  extension [Self <: OperationError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

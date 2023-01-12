@@ -31,7 +31,8 @@ object libTypescriptNetworksCoinInfoMod {
       __obj.asInstanceOf[BitcoinDefaultFees]
     }
     
-    extension [Self <: BitcoinDefaultFees](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitcoinDefaultFees] (val x: Self) extends AnyVal {
       
       inline def setEconomy(value: Double): Self = StObject.set(x, "Economy", value.asInstanceOf[js.Any])
       
@@ -140,7 +141,8 @@ object libTypescriptNetworksCoinInfoMod {
       __obj.asInstanceOf[BitcoinNetworkInfo]
     }
     
-    extension [Self <: BitcoinNetworkInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitcoinNetworkInfo] (val x: Self) extends AnyVal {
       
       inline def setBlocks(value: Double): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
@@ -208,7 +210,8 @@ object libTypescriptNetworksCoinInfoMod {
       __obj.asInstanceOf[BlockchainLink]
     }
     
-    extension [Self <: BlockchainLink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockchainLink] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -313,7 +316,8 @@ object libTypescriptNetworksCoinInfoMod {
       __obj.asInstanceOf[CoinSupport]
     }
     
-    extension [Self <: CoinSupport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoinSupport] (val x: Self) extends AnyVal {
       
       inline def setConnect(value: Boolean): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
       
@@ -364,7 +368,8 @@ object libTypescriptNetworksCoinInfoMod {
       __obj.asInstanceOf[Common]
     }
     
-    extension [Self <: Common](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Common] (val x: Self) extends AnyVal {
       
       inline def setBlockchainLink(value: BlockchainLink): Self = StObject.set(x, "blockchainLink", value.asInstanceOf[js.Any])
       
@@ -430,7 +435,8 @@ object libTypescriptNetworksCoinInfoMod {
       __obj.asInstanceOf[EthereumNetworkInfo]
     }
     
-    extension [Self <: EthereumNetworkInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EthereumNetworkInfo] (val x: Self) extends AnyVal {
       
       inline def setChain(value: String): Self = StObject.set(x, "chain", value.asInstanceOf[js.Any])
       
@@ -459,7 +465,8 @@ object libTypescriptNetworksCoinInfoMod {
       __obj.asInstanceOf[GetCoinInfo]
     }
     
-    extension [Self <: GetCoinInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetCoinInfo] (val x: Self) extends AnyVal {
       
       inline def setCoin(value: String): Self = StObject.set(x, "coin", value.asInstanceOf[js.Any])
     }
@@ -500,7 +507,8 @@ object libTypescriptNetworksCoinInfoMod {
       __obj.asInstanceOf[MiscNetworkInfo]
     }
     
-    extension [Self <: MiscNetworkInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MiscNetworkInfo] (val x: Self) extends AnyVal {
       
       inline def setCurve(value: String): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
       
@@ -544,7 +552,8 @@ object libTypescriptNetworksCoinInfoMod {
       __obj.asInstanceOf[Network]
     }
     
-    extension [Self <: Network](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Network] (val x: Self) extends AnyVal {
       
       inline def setBech32(value: String): Self = StObject.set(x, "bech32", value.asInstanceOf[js.Any])
       

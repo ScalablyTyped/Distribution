@@ -23,7 +23,8 @@ object ResourceConfiguration {
     __obj.asInstanceOf[ResourceConfiguration]
   }
   
-  extension [Self <: ResourceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setComputeType(value: ComputeType): Self = StObject.set(x, "computeType", value.asInstanceOf[js.Any])
     

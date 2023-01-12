@@ -15,7 +15,8 @@ object ResolvedModuleWithFailedLookupLocations {
     __obj.asInstanceOf[ResolvedModuleWithFailedLookupLocations]
   }
   
-  extension [Self <: ResolvedModuleWithFailedLookupLocations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedModuleWithFailedLookupLocations] (val x: Self) extends AnyVal {
     
     inline def setResolvedModule(value: ResolvedModuleFull): Self = StObject.set(x, "resolvedModule", value.asInstanceOf[js.Any])
     

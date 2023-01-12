@@ -50,7 +50,8 @@ object ImplementationGuideDefinitionPage {
     __obj.asInstanceOf[ImplementationGuideDefinitionPage]
   }
   
-  extension [Self <: ImplementationGuideDefinitionPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImplementationGuideDefinitionPage] (val x: Self) extends AnyVal {
     
     inline def setGeneration(value: html | markdown | xml | generated): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
     

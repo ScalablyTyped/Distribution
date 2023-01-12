@@ -18,7 +18,8 @@ object DescribeEndpointGroupResponse {
     __obj.asInstanceOf[DescribeEndpointGroupResponse]
   }
   
-  extension [Self <: DescribeEndpointGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEndpointGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setEndpointGroup(value: EndpointGroup): Self = StObject.set(x, "EndpointGroup", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object BytesWritten {
     __obj.asInstanceOf[BytesWritten]
   }
   
-  extension [Self <: BytesWritten](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BytesWritten] (val x: Self) extends AnyVal {
     
     inline def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
     

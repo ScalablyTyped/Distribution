@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "otp-generator"
-version := "4.0-dt-20220228Z-d810d9"
+version := "4.0-dt-20220228Z-eb82ba"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

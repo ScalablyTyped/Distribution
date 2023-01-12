@@ -26,7 +26,8 @@ object ITestStepFinished {
     __obj.asInstanceOf[ITestStepFinished]
   }
   
-  extension [Self <: ITestStepFinished](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITestStepFinished] (val x: Self) extends AnyVal {
     
     inline def setTestCaseStartedId(value: String): Self = StObject.set(x, "testCaseStartedId", value.asInstanceOf[js.Any])
     

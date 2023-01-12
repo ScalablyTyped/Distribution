@@ -48,7 +48,8 @@ object XHatchWindowController {
     __obj.asInstanceOf[XHatchWindowController]
   }
   
-  extension [Self <: XHatchWindowController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XHatchWindowController] (val x: Self) extends AnyVal {
     
     inline def setActivated(value: () => Unit): Self = StObject.set(x, "activated", js.Any.fromFunction0(value))
     

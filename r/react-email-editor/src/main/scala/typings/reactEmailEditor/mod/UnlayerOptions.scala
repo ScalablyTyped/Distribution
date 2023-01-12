@@ -51,7 +51,8 @@ object UnlayerOptions {
     __obj.asInstanceOf[UnlayerOptions]
   }
   
-  extension [Self <: UnlayerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnlayerOptions] (val x: Self) extends AnyVal {
     
     inline def setAppearance(value: AppearanceConfig): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
     

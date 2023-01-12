@@ -21,7 +21,8 @@ object DeleteEnvironmentParams {
     __obj.asInstanceOf[DeleteEnvironmentParams]
   }
   
-  extension [Self <: DeleteEnvironmentParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEnvironmentParams] (val x: Self) extends AnyVal {
     
     inline def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
     

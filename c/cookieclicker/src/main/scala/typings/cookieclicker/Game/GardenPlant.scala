@@ -149,7 +149,8 @@ object GardenPlant {
     __obj.asInstanceOf[GardenPlant]
   }
   
-  extension [Self <: GardenPlant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GardenPlant] (val x: Self) extends AnyVal {
     
     inline def setAgeTick(value: Double): Self = StObject.set(x, "ageTick", value.asInstanceOf[js.Any])
     

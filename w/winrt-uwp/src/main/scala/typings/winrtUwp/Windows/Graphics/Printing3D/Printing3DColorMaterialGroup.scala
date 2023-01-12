@@ -21,7 +21,8 @@ object Printing3DColorMaterialGroup {
     __obj.asInstanceOf[Printing3DColorMaterialGroup]
   }
   
-  extension [Self <: Printing3DColorMaterialGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Printing3DColorMaterialGroup] (val x: Self) extends AnyVal {
     
     inline def setColors(value: IVector[Printing3DColorMaterial]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

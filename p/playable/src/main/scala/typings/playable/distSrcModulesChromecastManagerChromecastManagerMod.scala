@@ -172,7 +172,8 @@ object distSrcModulesChromecastManagerChromecastManagerMod {
       __obj.asInstanceOf[ChromecastManager]
     }
     
-    extension [Self <: ChromecastManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChromecastManager] (val x: Self) extends AnyVal {
       
       inline def set_bindToContextEvents(value: Any): Self = StObject.set(x, "_bindToContextEvents", value.asInstanceOf[js.Any])
       

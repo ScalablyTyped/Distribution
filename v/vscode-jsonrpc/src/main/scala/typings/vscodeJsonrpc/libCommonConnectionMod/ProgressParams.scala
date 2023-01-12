@@ -23,7 +23,8 @@ object ProgressParams {
     __obj.asInstanceOf[ProgressParams[T]]
   }
   
-  extension [Self <: ProgressParams[?], T](x: Self & ProgressParams[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressParams[?], T] (val x: Self & ProgressParams[T]) extends AnyVal {
     
     inline def setToken(value: ProgressToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     

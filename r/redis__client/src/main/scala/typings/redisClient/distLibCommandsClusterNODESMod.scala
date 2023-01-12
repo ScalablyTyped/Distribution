@@ -64,7 +64,8 @@ object distLibCommandsClusterNODESMod {
       __obj.asInstanceOf[RedisClusterMasterNode]
     }
     
-    extension [Self <: RedisClusterMasterNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisClusterMasterNode] (val x: Self) extends AnyVal {
       
       inline def setReplicas(value: js.Array[RedisClusterReplicaNode]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object distLibCommandsClusterNODESMod {
       __obj.asInstanceOf[RedisClusterNodeAddress]
     }
     
-    extension [Self <: RedisClusterNodeAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisClusterNodeAddress] (val x: Self) extends AnyVal {
       
       inline def setCport(value: Double): Self = StObject.set(x, "cport", value.asInstanceOf[js.Any])
       
@@ -138,7 +140,8 @@ object distLibCommandsClusterNODESMod {
       __obj.asInstanceOf[RedisClusterReplicaNode]
     }
     
-    extension [Self <: RedisClusterReplicaNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisClusterReplicaNode] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       

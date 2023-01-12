@@ -15,7 +15,8 @@ object RADIANS {
     __obj.asInstanceOf[RADIANS]
   }
   
-  extension [Self <: RADIANS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RADIANS] (val x: Self) extends AnyVal {
     
     inline def setRADIANS(value: Method): Self = StObject.set(x, "RADIANS", value.asInstanceOf[js.Any])
   }

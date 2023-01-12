@@ -55,7 +55,8 @@ object IgColorPickerMethods {
     __obj.asInstanceOf[IgColorPickerMethods]
   }
   
-  extension [Self <: IgColorPickerMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgColorPickerMethods] (val x: Self) extends AnyVal {
     
     inline def setColorFromElement(value: js.Object => String): Self = StObject.set(x, "colorFromElement", js.Any.fromFunction1(value))
     

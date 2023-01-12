@@ -23,7 +23,8 @@ object RegexMatchSetSummary {
     __obj.asInstanceOf[RegexMatchSetSummary]
   }
   
-  extension [Self <: RegexMatchSetSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegexMatchSetSummary] (val x: Self) extends AnyVal {
     
     inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

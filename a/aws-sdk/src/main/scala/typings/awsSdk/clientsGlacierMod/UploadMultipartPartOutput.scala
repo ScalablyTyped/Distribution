@@ -18,7 +18,8 @@ object UploadMultipartPartOutput {
     __obj.asInstanceOf[UploadMultipartPartOutput]
   }
   
-  extension [Self <: UploadMultipartPartOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadMultipartPartOutput] (val x: Self) extends AnyVal {
     
     inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     

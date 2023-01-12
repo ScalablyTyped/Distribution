@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object mod {
       __obj.asInstanceOf[Task[T]]
     }
     
-    extension [Self <: Task[?], T](x: Self & Task[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Task[?], T] (val x: Self & Task[T]) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -133,7 +135,8 @@ object mod {
       __obj.asInstanceOf[TaskQueue[T]]
     }
     
-    extension [Self <: TaskQueue[?], T /* <: TaskDescriptor */](x: Self & TaskQueue[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskQueue[?], T /* <: TaskDescriptor */] (val x: Self & TaskQueue[T]) extends AnyVal {
       
       inline def setAddModule(value: String => js.Promise[Unit]): Self = StObject.set(x, "addModule", js.Any.fromFunction1(value))
       

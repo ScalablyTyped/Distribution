@@ -155,7 +155,8 @@ object PNotifyOptions {
     __obj.asInstanceOf[PNotifyOptions]
   }
   
-  extension [Self <: PNotifyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PNotifyOptions] (val x: Self) extends AnyVal {
     
     inline def setAddclass(value: String): Self = StObject.set(x, "addclass", value.asInstanceOf[js.Any])
     

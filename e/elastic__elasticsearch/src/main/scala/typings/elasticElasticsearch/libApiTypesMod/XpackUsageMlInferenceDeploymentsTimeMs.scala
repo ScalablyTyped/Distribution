@@ -15,7 +15,8 @@ object XpackUsageMlInferenceDeploymentsTimeMs {
     __obj.asInstanceOf[XpackUsageMlInferenceDeploymentsTimeMs]
   }
   
-  extension [Self <: XpackUsageMlInferenceDeploymentsTimeMs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageMlInferenceDeploymentsTimeMs] (val x: Self) extends AnyVal {
     
     inline def setAvg(value: double): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
   }

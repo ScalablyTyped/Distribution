@@ -20,7 +20,8 @@ object SyntaxOptions {
     __obj.asInstanceOf[SyntaxOptions]
   }
   
-  extension [Self <: SyntaxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyntaxOptions] (val x: Self) extends AnyVal {
     
     inline def setSentences(value: Boolean): Self = StObject.set(x, "sentences", value.asInstanceOf[js.Any])
     

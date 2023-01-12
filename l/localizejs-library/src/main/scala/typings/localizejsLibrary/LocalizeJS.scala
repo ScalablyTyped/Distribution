@@ -187,7 +187,8 @@ object LocalizeJS {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setAutoApprove(value: Boolean): Self = StObject.set(x, "autoApprove", value.asInstanceOf[js.Any])
         
@@ -264,7 +265,8 @@ object LocalizeJS {
         __obj.asInstanceOf[RateData]
       }
       
-      extension [Self <: RateData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RateData] (val x: Self) extends AnyVal {
         
         inline def setFromCurrency(value: String): Self = StObject.set(x, "fromCurrency", value.asInstanceOf[js.Any])
         

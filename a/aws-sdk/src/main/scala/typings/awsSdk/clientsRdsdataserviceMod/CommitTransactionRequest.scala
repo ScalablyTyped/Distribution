@@ -28,7 +28,8 @@ object CommitTransactionRequest {
     __obj.asInstanceOf[CommitTransactionRequest]
   }
   
-  extension [Self <: CommitTransactionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommitTransactionRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     

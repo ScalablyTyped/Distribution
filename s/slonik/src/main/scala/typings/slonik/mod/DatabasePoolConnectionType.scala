@@ -39,7 +39,8 @@ object DatabasePoolConnectionType {
     __obj.asInstanceOf[DatabasePoolConnectionType]
   }
   
-  extension [Self <: DatabasePoolConnectionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabasePoolConnectionType] (val x: Self) extends AnyVal {
     
     inline def setStream(
       value: (TaggedTemplateLiteralInvocationType[QueryResultRowType[String]], StreamHandlerType) => js.Promise[Null]

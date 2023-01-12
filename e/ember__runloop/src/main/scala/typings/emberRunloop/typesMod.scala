@@ -17,7 +17,8 @@ object typesMod {
       __obj.asInstanceOf[EmberRunTimer]
     }
     
-    extension [Self <: EmberRunTimer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmberRunTimer] (val x: Self) extends AnyVal {
       
       inline def set__ember_run_timer_brand__(value: Boolean): Self = StObject.set(x, "__ember_run_timer_brand__", value.asInstanceOf[js.Any])
     }

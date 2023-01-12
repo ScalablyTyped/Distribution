@@ -27,7 +27,8 @@ object ITracesAndStats {
     __obj.asInstanceOf[ITracesAndStats]
   }
   
-  extension [Self <: ITracesAndStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITracesAndStats] (val x: Self) extends AnyVal {
     
     inline def setInternalTracesContributingToStats(value: js.Array[ITrace | js.typedarray.Uint8Array]): Self = StObject.set(x, "internalTracesContributingToStats", value.asInstanceOf[js.Any])
     

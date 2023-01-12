@@ -20,7 +20,8 @@ object NameType {
     __obj.asInstanceOf[NameType]
   }
   
-  extension [Self <: NameType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NameType] (val x: Self) extends AnyVal {
     
     inline def setName(value: `background-selected`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

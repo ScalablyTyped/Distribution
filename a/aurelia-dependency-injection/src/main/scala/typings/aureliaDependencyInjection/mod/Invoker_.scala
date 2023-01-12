@@ -33,7 +33,8 @@ object Invoker_ {
     __obj.asInstanceOf[Invoker_[TBase, TImpl, TArgs]]
   }
   
-  extension [Self <: Invoker_[?, ?, ?], TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](x: Self & (Invoker_[TBase, TImpl, TArgs])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Invoker_[?, ?, ?], TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] (val x: Self & (Invoker_[TBase, TImpl, TArgs])) extends AnyVal {
     
     inline def setInvoke(value: (Container, DependencyCtorOrFunctor[TBase, TImpl, TArgs], TArgs) => ImplOrAny[TImpl]): Self = StObject.set(x, "invoke", js.Any.fromFunction3(value))
     

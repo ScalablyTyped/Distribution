@@ -29,7 +29,8 @@ object distWebpackChunkModuleMod {
       __obj.asInstanceOf[WebpackChunkModule]
     }
     
-    extension [Self <: WebpackChunkModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebpackChunkModule] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: js.Array[WebpackChunkModule]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       

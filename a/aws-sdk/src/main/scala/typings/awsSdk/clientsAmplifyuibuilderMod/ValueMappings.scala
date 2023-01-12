@@ -18,7 +18,8 @@ object ValueMappings {
     __obj.asInstanceOf[ValueMappings]
   }
   
-  extension [Self <: ValueMappings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueMappings] (val x: Self) extends AnyVal {
     
     inline def setValues(value: ValueMappingList): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object S3Retention {
     __obj.asInstanceOf[S3Retention]
   }
   
-  extension [Self <: S3Retention](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3Retention] (val x: Self) extends AnyVal {
     
     inline def setMode(value: S3ObjectLockRetentionMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     

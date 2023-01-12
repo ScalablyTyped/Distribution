@@ -123,7 +123,8 @@ object angularMod {
         __obj.asInstanceOf[IEditableOptions]
       }
       
-      extension [Self <: IEditableOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IEditableOptions] (val x: Self) extends AnyVal {
         
         inline def setActivate(value: String): Self = StObject.set(x, "activate", value.asInstanceOf[js.Any])
         

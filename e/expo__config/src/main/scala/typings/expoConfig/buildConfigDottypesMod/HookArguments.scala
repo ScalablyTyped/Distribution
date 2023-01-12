@@ -52,7 +52,8 @@ object HookArguments {
     __obj.asInstanceOf[HookArguments]
   }
   
-  extension [Self <: HookArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HookArguments] (val x: Self) extends AnyVal {
     
     inline def setAndroidBundle(value: String | js.typedarray.Uint8Array): Self = StObject.set(x, "androidBundle", value.asInstanceOf[js.Any])
     

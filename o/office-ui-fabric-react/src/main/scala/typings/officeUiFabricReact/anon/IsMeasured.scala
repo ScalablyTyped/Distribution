@@ -15,7 +15,8 @@ object IsMeasured {
     __obj.asInstanceOf[IsMeasured]
   }
   
-  extension [Self <: IsMeasured](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsMeasured] (val x: Self) extends AnyVal {
     
     inline def setIsMeasured(value: Boolean): Self = StObject.set(x, "isMeasured", value.asInstanceOf[js.Any])
   }

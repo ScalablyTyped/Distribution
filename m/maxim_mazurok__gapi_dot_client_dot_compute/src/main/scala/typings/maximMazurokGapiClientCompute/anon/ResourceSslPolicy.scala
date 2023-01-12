@@ -71,7 +71,8 @@ object ResourceSslPolicy {
     __obj.asInstanceOf[ResourceSslPolicy]
   }
   
-  extension [Self <: ResourceSslPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceSslPolicy] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

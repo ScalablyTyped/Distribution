@@ -19,7 +19,8 @@ object ImportOptions {
     __obj.asInstanceOf[ImportOptions]
   }
   
-  extension [Self <: ImportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportOptions] (val x: Self) extends AnyVal {
     
     inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
     

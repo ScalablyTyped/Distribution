@@ -41,7 +41,8 @@ object CommonSpawnOptions {
     __obj.asInstanceOf[CommonSpawnOptions]
   }
   
-  extension [Self <: CommonSpawnOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonSpawnOptions] (val x: Self) extends AnyVal {
     
     inline def setArgv0(value: String): Self = StObject.set(x, "argv0", value.asInstanceOf[js.Any])
     

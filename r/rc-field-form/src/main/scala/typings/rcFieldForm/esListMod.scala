@@ -34,7 +34,8 @@ object esListMod extends Shortcut {
       __obj.asInstanceOf[ListField]
     }
     
-    extension [Self <: ListField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListField] (val x: Self) extends AnyVal {
       
       inline def setIsListField(value: Boolean): Self = StObject.set(x, "isListField", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object esListMod extends Shortcut {
       __obj.asInstanceOf[ListProps]
     }
     
-    extension [Self <: ListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(
         value: (/* fields */ js.Array[ListField], /* operations */ ListOperations, /* meta */ Meta) => Element | ReactNode

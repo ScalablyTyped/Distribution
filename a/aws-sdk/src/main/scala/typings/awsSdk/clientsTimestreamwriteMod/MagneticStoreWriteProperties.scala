@@ -23,7 +23,8 @@ object MagneticStoreWriteProperties {
     __obj.asInstanceOf[MagneticStoreWriteProperties]
   }
   
-  extension [Self <: MagneticStoreWriteProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MagneticStoreWriteProperties] (val x: Self) extends AnyVal {
     
     inline def setEnableMagneticStoreWrites(value: Boolean): Self = StObject.set(x, "EnableMagneticStoreWrites", value.asInstanceOf[js.Any])
     

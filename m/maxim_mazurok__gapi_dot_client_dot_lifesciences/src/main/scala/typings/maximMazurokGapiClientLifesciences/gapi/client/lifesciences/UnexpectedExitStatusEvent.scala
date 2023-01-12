@@ -19,7 +19,8 @@ object UnexpectedExitStatusEvent {
     __obj.asInstanceOf[UnexpectedExitStatusEvent]
   }
   
-  extension [Self <: UnexpectedExitStatusEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnexpectedExitStatusEvent] (val x: Self) extends AnyVal {
     
     inline def setActionId(value: Double): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     

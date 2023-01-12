@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[AnimationOptions]
     }
     
-    extension [Self <: AnimationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationOptions] (val x: Self) extends AnyVal {
       
       inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object mod {
       __obj.asInstanceOf[BounceOptions[T]]
     }
     
-    extension [Self <: BounceOptions[?], T](x: Self & BounceOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BounceOptions[?], T] (val x: Self & BounceOptions[T]) extends AnyVal {
       
       inline def setBounces(value: Double): Self = StObject.set(x, "bounces", value.asInstanceOf[js.Any])
       
@@ -159,7 +161,8 @@ object mod {
       __obj.asInstanceOf[Point2D]
     }
     
-    extension [Self <: Point2D](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point2D] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -202,7 +205,8 @@ object mod {
       __obj.asInstanceOf[SerailizedComponent[T]]
     }
     
-    extension [Self <: SerailizedComponent[?], T](x: Self & SerailizedComponent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerailizedComponent[?], T] (val x: Self & SerailizedComponent[T]) extends AnyVal {
       
       inline def setBounces(value: Double): Self = StObject.set(x, "bounces", value.asInstanceOf[js.Any])
       

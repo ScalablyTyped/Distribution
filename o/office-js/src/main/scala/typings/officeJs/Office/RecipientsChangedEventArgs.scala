@@ -31,7 +31,8 @@ object RecipientsChangedEventArgs {
     __obj.asInstanceOf[RecipientsChangedEventArgs]
   }
   
-  extension [Self <: RecipientsChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientsChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setChangedRecipientFields(value: RecipientsChangedFields): Self = StObject.set(x, "changedRecipientFields", value.asInstanceOf[js.Any])
     

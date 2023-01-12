@@ -131,7 +131,8 @@ object `@reactNavigationCoreTypesMod` {
       __obj.asInstanceOf[DefaultNavigatorOptions[ScreenOptions, ParamList]]
     }
     
-    extension [Self <: DefaultNavigatorOptions[?, ?], ScreenOptions /* <: js.Object */, ParamList /* <: ParamListBase */](x: Self & (DefaultNavigatorOptions[ScreenOptions, ParamList])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultNavigatorOptions[?, ?], ScreenOptions /* <: js.Object */, ParamList /* <: ParamListBase */] (val x: Self & (DefaultNavigatorOptions[ScreenOptions, ParamList])) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object `@reactNavigationCoreTypesMod` {
       __obj.asInstanceOf[Descriptor[ParamList, RouteName, State, ScreenOptions, EventMap]]
     }
     
-    extension [Self <: Descriptor[?, ?, ?, ?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */](x: Self & (Descriptor[ParamList, RouteName, State, ScreenOptions, EventMap])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Descriptor[?, ?, ?, ?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */] (val x: Self & (Descriptor[ParamList, RouteName, State, ScreenOptions, EventMap])) extends AnyVal {
       
       inline def setNavigation(value: NavigationProp[ParamList, RouteName, State, ScreenOptions, EventMap]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       
@@ -207,7 +209,8 @@ object `@reactNavigationCoreTypesMod` {
       __obj.asInstanceOf[EventConsumer[EventMap]]
     }
     
-    extension [Self <: EventConsumer[?], EventMap /* <: EventMapBase */](x: Self & EventConsumer[EventMap]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventConsumer[?], EventMap /* <: EventMapBase */] (val x: Self & EventConsumer[EventMap]) extends AnyVal {
       
       inline def setAddListener(value: (Any, EventListenerCallback[EventMap, Any]) => js.Function0[Unit]): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
@@ -246,7 +249,8 @@ object `@reactNavigationCoreTypesMod` {
       __obj.asInstanceOf[EventEmitter[EventMap]]
     }
     
-    extension [Self <: EventEmitter[?], EventMap /* <: EventMapBase */](x: Self & EventEmitter[EventMap]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventEmitter[?], EventMap /* <: EventMapBase */] (val x: Self & EventEmitter[EventMap]) extends AnyVal {
       
       inline def setEmit(
         value: (TargetTypeEventName[Any, EventMap]) & (/* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['canPreventDefault'] extends true ? {  canPreventDefault :true} : {} */ js.Any) => EventArg[
@@ -286,7 +290,8 @@ object `@reactNavigationCoreTypesMod` {
       __obj.asInstanceOf[EventMapCore[State]]
     }
     
-    extension [Self <: EventMapCore[?], State /* <: NavigationState[ParamListBase] */](x: Self & EventMapCore[State]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventMapCore[?], State /* <: NavigationState[ParamListBase] */] (val x: Self & EventMapCore[State]) extends AnyVal {
       
       inline def setBeforeRemove(value: CanPreventDefaultData): Self = StObject.set(x, "beforeRemove", value.asInstanceOf[js.Any])
       
@@ -324,7 +329,8 @@ object `@reactNavigationCoreTypesMod` {
       __obj.asInstanceOf[NavigationContainerEventMap]
     }
     
-    extension [Self <: NavigationContainerEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationContainerEventMap] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: DataOptionsObject): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -370,7 +376,8 @@ object `@reactNavigationCoreTypesMod` {
       __obj.asInstanceOf[NavigationContainerProps]
     }
     
-    extension [Self <: NavigationContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationContainerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -881,7 +888,8 @@ object `@reactNavigationCoreTypesMod` {
       __obj.asInstanceOf[PathConfig]
     }
     
-    extension [Self <: PathConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathConfig] (val x: Self) extends AnyVal {
       
       inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
       
@@ -955,7 +963,8 @@ object `@reactNavigationCoreTypesMod` {
       __obj.asInstanceOf[TypedNavigator[ParamList, State, ScreenOptions, EventMap, Navigator]]
     }
     
-    extension [Self <: TypedNavigator[?, ?, ?, ?, ?], ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, Navigator /* <: ComponentType[Any] */](x: Self & (TypedNavigator[ParamList, State, ScreenOptions, EventMap, Navigator])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypedNavigator[?, ?, ?, ?, ?], ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, Navigator /* <: ComponentType[Any] */] (val x: Self & (TypedNavigator[ParamList, State, ScreenOptions, EventMap, Navigator])) extends AnyVal {
       
       inline def setNavigator(
         value: ComponentType[

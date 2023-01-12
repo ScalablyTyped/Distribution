@@ -21,7 +21,8 @@ object DynamicTextTrack {
     __obj.asInstanceOf[DynamicTextTrack]
   }
   
-  extension [Self <: DynamicTextTrack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicTextTrack] (val x: Self) extends AnyVal {
     
     inline def setAugmentPayload(value: (Any, Double, Double) => Unit): Self = StObject.set(x, "augmentPayload", js.Any.fromFunction3(value))
     

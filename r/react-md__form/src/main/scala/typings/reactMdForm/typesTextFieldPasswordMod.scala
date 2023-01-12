@@ -137,7 +137,8 @@ object typesTextFieldPasswordMod {
       __obj.asInstanceOf[ConfigurableVisibilityIcon]
     }
     
-    extension [Self <: ConfigurableVisibilityIcon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigurableVisibilityIcon] (val x: Self) extends AnyVal {
       
       inline def setInvisible(value: ReactNode): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
       
@@ -659,7 +660,8 @@ object typesTextFieldPasswordMod {
       __obj.asInstanceOf[PasswordProps]
     }
     
-    extension [Self <: PasswordProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PasswordProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

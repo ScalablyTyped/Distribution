@@ -23,7 +23,8 @@ object SimulationSoftwareSuite {
     __obj.asInstanceOf[SimulationSoftwareSuite]
   }
   
-  extension [Self <: SimulationSoftwareSuite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimulationSoftwareSuite] (val x: Self) extends AnyVal {
     
     inline def setName(value: SimulationSoftwareSuiteType): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

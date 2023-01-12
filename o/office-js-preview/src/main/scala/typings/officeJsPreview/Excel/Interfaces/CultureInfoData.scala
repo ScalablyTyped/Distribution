@@ -38,7 +38,8 @@ object CultureInfoData {
     __obj.asInstanceOf[CultureInfoData]
   }
   
-  extension [Self <: CultureInfoData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CultureInfoData] (val x: Self) extends AnyVal {
     
     inline def setDatetimeFormat(value: DatetimeFormatInfoData): Self = StObject.set(x, "datetimeFormat", value.asInstanceOf[js.Any])
     

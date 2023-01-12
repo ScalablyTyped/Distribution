@@ -17,7 +17,8 @@ object ContactChangedDeferral {
     __obj.asInstanceOf[ContactChangedDeferral]
   }
   
-  extension [Self <: ContactChangedDeferral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactChangedDeferral] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }

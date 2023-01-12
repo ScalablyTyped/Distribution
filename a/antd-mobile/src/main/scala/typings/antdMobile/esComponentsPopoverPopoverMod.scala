@@ -336,7 +336,8 @@ object esComponentsPopoverPopoverMod {
       __obj.asInstanceOf[PopoverProps]
     }
     
-    extension [Self <: PopoverProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
@@ -609,7 +610,8 @@ object esComponentsPopoverPopoverMod {
       __obj.asInstanceOf[PopoverRef]
     }
     
-    extension [Self <: PopoverRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverRef] (val x: Self) extends AnyVal {
       
       inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       

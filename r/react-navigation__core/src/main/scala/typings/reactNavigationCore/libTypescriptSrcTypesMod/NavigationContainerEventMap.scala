@@ -33,7 +33,8 @@ object NavigationContainerEventMap {
     __obj.asInstanceOf[NavigationContainerEventMap]
   }
   
-  extension [Self <: NavigationContainerEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationContainerEventMap] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: DataOptionsObject): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

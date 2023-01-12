@@ -141,7 +141,8 @@ object Seatsio {
       __obj.asInstanceOf[BestAvailable]
     }
     
-    extension [Self <: BestAvailable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BestAvailable] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: String | js.Array[String]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
@@ -183,7 +184,8 @@ object Seatsio {
       __obj.asInstanceOf[Category]
     }
     
-    extension [Self <: Category](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
       
       inline def setAccessible(value: Boolean): Self = StObject.set(x, "accessible", value.asInstanceOf[js.Any])
       
@@ -214,7 +216,8 @@ object Seatsio {
       __obj.asInstanceOf[CategoryConfig]
     }
     
-    extension [Self <: CategoryConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CategoryConfig] (val x: Self) extends AnyVal {
       
       inline def setAccessible(value: Boolean): Self = StObject.set(x, "accessible", value.asInstanceOf[js.Any])
       
@@ -239,7 +242,8 @@ object Seatsio {
       __obj.asInstanceOf[CategoryList]
     }
     
-    extension [Self <: CategoryList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CategoryList] (val x: Self) extends AnyVal {
       
       inline def setGet(value: String => Category): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     }
@@ -288,7 +292,8 @@ object Seatsio {
       __obj.asInstanceOf[ChangeableSeatingChartConfig]
     }
     
-    extension [Self <: ChangeableSeatingChartConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeableSeatingChartConfig] (val x: Self) extends AnyVal {
       
       inline def setAvailableCategories(value: js.Array[String]): Self = StObject.set(x, "availableCategories", value.asInstanceOf[js.Any])
       
@@ -410,7 +415,8 @@ object Seatsio {
       __obj.asInstanceOf[ChartManagerConfig]
     }
     
-    extension [Self <: ChartManagerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChartManagerConfig] (val x: Self) extends AnyVal {
       
       inline def setChart(value: String): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
@@ -509,7 +515,8 @@ object Seatsio {
       __obj.asInstanceOf[Colors]
     }
     
-    extension [Self <: Colors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Colors] (val x: Self) extends AnyVal {
       
       inline def setColorSelected(value: String): Self = StObject.set(x, "colorSelected", value.asInstanceOf[js.Any])
       
@@ -538,7 +545,8 @@ object Seatsio {
       __obj.asInstanceOf[DataPerEvent]
     }
     
-    extension [Self <: DataPerEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataPerEvent] (val x: Self) extends AnyVal {
       
       inline def setExtraData(value: Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
       
@@ -615,7 +623,8 @@ object Seatsio {
       __obj.asInstanceOf[EventManagerConfig]
     }
     
-    extension [Self <: EventManagerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventManagerConfig] (val x: Self) extends AnyVal {
       
       inline def setColorScheme(value: ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
       
@@ -724,7 +733,8 @@ object Seatsio {
       __obj.asInstanceOf[GeneralAdmissionDataPerEvent]
     }
     
-    extension [Self <: GeneralAdmissionDataPerEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeneralAdmissionDataPerEvent] (val x: Self) extends AnyVal {
       
       inline def setHolds(value: StringDictionary[DictticketType]): Self = StObject.set(x, "holds", value.asInstanceOf[js.Any])
       
@@ -732,7 +742,8 @@ object Seatsio {
     }
   }
   
-  extension [Self <: Seatsio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Seatsio] (val x: Self) extends AnyVal {
     
     inline def setChartManager(value: ChartManager): Self = StObject.set(x, "ChartManager", value.asInstanceOf[js.Any])
     
@@ -758,7 +769,8 @@ object Seatsio {
       __obj.asInstanceOf[Pricing]
     }
     
-    extension [Self <: Pricing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pricing] (val x: Self) extends AnyVal {
       
       inline def setFormattedPrice(value: String): Self = StObject.set(x, "formattedPrice", value.asInstanceOf[js.Any])
       
@@ -803,7 +815,8 @@ object Seatsio {
       __obj.asInstanceOf[PricingConfigMulti]
     }
     
-    extension [Self <: PricingConfigMulti](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PricingConfigMulti] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
@@ -828,7 +841,8 @@ object Seatsio {
       __obj.asInstanceOf[PricingConfigSimple]
     }
     
-    extension [Self <: PricingConfigSimple](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PricingConfigSimple] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
@@ -1146,7 +1160,8 @@ object Seatsio {
       __obj.asInstanceOf[SeatingChartConfig]
     }
     
-    extension [Self <: SeatingChartConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeatingChartConfig] (val x: Self) extends AnyVal {
       
       inline def setAlwaysShowSectionContents(value: Boolean): Self = StObject.set(x, "alwaysShowSectionContents", value.asInstanceOf[js.Any])
       
@@ -1488,7 +1503,8 @@ object Seatsio {
       __obj.asInstanceOf[SeatingChartDesignerConfig]
     }
     
-    extension [Self <: SeatingChartDesignerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeatingChartDesignerConfig] (val x: Self) extends AnyVal {
       
       inline def setChartKey(value: String): Self = StObject.set(x, "chartKey", value.asInstanceOf[js.Any])
       
@@ -1596,7 +1612,8 @@ object Seatsio {
       __obj.asInstanceOf[Style]
     }
     
-    extension [Self <: Style](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: thick | `3d`): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -1660,7 +1677,8 @@ object Seatsio {
       __obj.asInstanceOf[TicketListing]
     }
     
-    extension [Self <: TicketListing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TicketListing] (val x: Self) extends AnyVal {
       
       inline def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
       

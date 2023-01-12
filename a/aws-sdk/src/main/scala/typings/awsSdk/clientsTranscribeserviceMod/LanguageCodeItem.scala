@@ -23,7 +23,8 @@ object LanguageCodeItem {
     __obj.asInstanceOf[LanguageCodeItem]
   }
   
-  extension [Self <: LanguageCodeItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageCodeItem] (val x: Self) extends AnyVal {
     
     inline def setDurationInSeconds(value: DurationInSeconds): Self = StObject.set(x, "DurationInSeconds", value.asInstanceOf[js.Any])
     

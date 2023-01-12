@@ -33,7 +33,8 @@ object ApplyWorkspaceEditResult {
     __obj.asInstanceOf[ApplyWorkspaceEditResult]
   }
   
-  extension [Self <: ApplyWorkspaceEditResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplyWorkspaceEditResult] (val x: Self) extends AnyVal {
     
     inline def setApplied(value: Boolean): Self = StObject.set(x, "applied", value.asInstanceOf[js.Any])
     

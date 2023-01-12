@@ -27,7 +27,8 @@ object GetResponse {
     __obj.asInstanceOf[GetResponse[T]]
   }
   
-  extension [Self <: GetResponse[?], T](x: Self & GetResponse[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResponse[?], T] (val x: Self & GetResponse[T]) extends AnyVal {
     
     inline def setFound(value: Boolean): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
     

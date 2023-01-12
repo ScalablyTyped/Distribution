@@ -22,7 +22,8 @@ object QueryLoginEntry {
     __obj.asInstanceOf[QueryLoginEntry]
   }
   
-  extension [Self <: QueryLoginEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryLoginEntry] (val x: Self) extends AnyVal {
     
     inline def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object Bracketed {
     __obj.asInstanceOf[Bracketed]
   }
   
-  extension [Self <: Bracketed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bracketed] (val x: Self) extends AnyVal {
     
     inline def setBracketed(value: Boolean): Self = StObject.set(x, "bracketed", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object ResearchStudyRecruitment {
     __obj.asInstanceOf[ResearchStudyRecruitment]
   }
   
-  extension [Self <: ResearchStudyRecruitment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResearchStudyRecruitment] (val x: Self) extends AnyVal {
     
     inline def setActualGroup(value: Reference): Self = StObject.set(x, "actualGroup", value.asInstanceOf[js.Any])
     

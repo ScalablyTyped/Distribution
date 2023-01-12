@@ -32,7 +32,8 @@ object DropAnimatingState {
     __obj.asInstanceOf[DropAnimatingState]
   }
   
-  extension [Self <: DropAnimatingState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropAnimatingState] (val x: Self) extends AnyVal {
     
     inline def setCompleted(value: CompletedDrag): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     

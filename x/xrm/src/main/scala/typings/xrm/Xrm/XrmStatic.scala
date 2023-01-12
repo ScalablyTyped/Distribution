@@ -84,7 +84,8 @@ object XrmStatic {
     __obj.asInstanceOf[XrmStatic]
   }
   
-  extension [Self <: XrmStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XrmStatic] (val x: Self) extends AnyVal {
     
     inline def setApp(value: App): Self = StObject.set(x, "App", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object Factory {
     __obj.asInstanceOf[Factory]
   }
   
-  extension [Self <: Factory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Factory] (val x: Self) extends AnyVal {
     
     inline def setGetPopupService(value: () => PopupService): Self = StObject.set(x, "getPopupService", js.Any.fromFunction0(value))
     

@@ -77,7 +77,8 @@ object mod {
       __obj.asInstanceOf[AliasesMap]
     }
     
-    extension [Self <: AliasesMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AliasesMap] (val x: Self) extends AnyVal {
       
       inline def setAll(value: js.Array[String]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -190,7 +191,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: `false` | String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
@@ -261,7 +263,8 @@ object mod {
       __obj.asInstanceOf[PolyfillConfig]
     }
     
-    extension [Self <: PolyfillConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolyfillConfig] (val x: Self) extends AnyVal {
       
       inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
@@ -328,7 +331,8 @@ object mod {
       __obj.asInstanceOf[PolyfillMeta]
     }
     
-    extension [Self <: PolyfillMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolyfillMeta] (val x: Self) extends AnyVal {
       
       inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
       

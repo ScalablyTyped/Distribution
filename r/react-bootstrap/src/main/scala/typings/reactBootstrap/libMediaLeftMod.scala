@@ -28,7 +28,8 @@ object libMediaLeftMod {
       __obj.asInstanceOf[MediaLeftProps]
     }
     
-    extension [Self <: MediaLeftProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaLeftProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

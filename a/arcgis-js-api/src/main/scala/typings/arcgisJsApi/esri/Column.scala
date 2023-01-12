@@ -36,7 +36,8 @@ object Column {
     __obj.asInstanceOf[Column]
   }
   
-  extension [Self <: Column](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
     
     inline def setGetMenuItems(value: () => ButtonMenuItemConfig): Self = StObject.set(x, "getMenuItems", js.Any.fromFunction0(value))
     

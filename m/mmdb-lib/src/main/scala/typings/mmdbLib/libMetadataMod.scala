@@ -61,7 +61,8 @@ object libMetadataMod {
       __obj.asInstanceOf[Metadata]
     }
     
-    extension [Self <: Metadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
       
       inline def setBinaryFormatMajorVersion(value: Double): Self = StObject.set(x, "binaryFormatMajorVersion", value.asInstanceOf[js.Any])
       

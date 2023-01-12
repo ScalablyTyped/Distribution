@@ -68,7 +68,8 @@ object dxGanttFilterRowOperationDescriptions {
     __obj.asInstanceOf[dxGanttFilterRowOperationDescriptions]
   }
   
-  extension [Self <: dxGanttFilterRowOperationDescriptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxGanttFilterRowOperationDescriptions] (val x: Self) extends AnyVal {
     
     inline def setBetween(value: String): Self = StObject.set(x, "between", value.asInstanceOf[js.Any])
     

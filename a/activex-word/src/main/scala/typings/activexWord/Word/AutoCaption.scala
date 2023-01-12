@@ -40,7 +40,8 @@ object AutoCaption {
     __obj.asInstanceOf[AutoCaption]
   }
   
-  extension [Self <: AutoCaption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoCaption] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

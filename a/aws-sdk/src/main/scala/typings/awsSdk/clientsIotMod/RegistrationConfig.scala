@@ -28,7 +28,8 @@ object RegistrationConfig {
     __obj.asInstanceOf[RegistrationConfig]
   }
   
-  extension [Self <: RegistrationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegistrationConfig] (val x: Self) extends AnyVal {
     
     inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     

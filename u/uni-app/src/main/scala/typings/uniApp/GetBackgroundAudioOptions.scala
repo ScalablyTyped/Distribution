@@ -43,7 +43,8 @@ object GetBackgroundAudioOptions {
     __obj.asInstanceOf[GetBackgroundAudioOptions]
   }
   
-  extension [Self <: GetBackgroundAudioOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBackgroundAudioOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

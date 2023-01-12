@@ -74,7 +74,8 @@ object mod {
     def FLAGS: RTLDDEFAUL = js.native
     inline def FLAGS_=(x: RTLDDEFAUL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FLAGS")(x.asInstanceOf[js.Any])
     
-    extension [Self <: DynamicLibrary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamicLibrary] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Double): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       

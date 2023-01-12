@@ -83,7 +83,8 @@ object VectorHelpers {
     __obj.asInstanceOf[VectorHelpers]
   }
   
-  extension [Self <: VectorHelpers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VectorHelpers] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (VectorN, VectorN) => VectorN): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

@@ -43,7 +43,8 @@ object HmacKeyMetadata {
     __obj.asInstanceOf[HmacKeyMetadata]
   }
   
-  extension [Self <: HmacKeyMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HmacKeyMetadata] (val x: Self) extends AnyVal {
     
     inline def setAccessId(value: String): Self = StObject.set(x, "accessId", value.asInstanceOf[js.Any])
     

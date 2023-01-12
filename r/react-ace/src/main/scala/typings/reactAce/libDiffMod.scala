@@ -119,7 +119,8 @@ object libDiffMod {
       __obj.asInstanceOf[IDiffEditorProps]
     }
     
-    extension [Self <: IDiffEditorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDiffEditorProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -262,7 +263,8 @@ object libDiffMod {
       __obj.asInstanceOf[IDiffEditorState]
     }
     
-    extension [Self <: IDiffEditorState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDiffEditorState] (val x: Self) extends AnyVal {
       
       inline def setValue(value: js.Array[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

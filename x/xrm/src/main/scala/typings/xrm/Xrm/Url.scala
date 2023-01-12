@@ -58,7 +58,8 @@ object Url {
       __obj.asInstanceOf[DialogOpenParameters]
     }
     
-    extension [Self <: DialogOpenParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogOpenParameters] (val x: Self) extends AnyVal {
       
       inline def setDialogId(value: String): Self = StObject.set(x, "DialogId", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object Url {
       __obj.asInstanceOf[FormOpenParameters]
     }
     
-    extension [Self <: FormOpenParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormOpenParameters] (val x: Self) extends AnyVal {
       
       inline def setCmdbar(value: CmdBarDisplay): Self = StObject.set(x, "cmdbar", value.asInstanceOf[js.Any])
       
@@ -203,7 +205,8 @@ object Url {
       __obj.asInstanceOf[ReportOpenParameters]
     }
     
-    extension [Self <: ReportOpenParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReportOpenParameters] (val x: Self) extends AnyVal {
       
       inline def setAction(value: ReportAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -268,7 +271,8 @@ object Url {
       __obj.asInstanceOf[ViewOpenParameters]
     }
     
-    extension [Self <: ViewOpenParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewOpenParameters] (val x: Self) extends AnyVal {
       
       inline def setCmdbar(value: CmdBarDisplay): Self = StObject.set(x, "cmdbar", value.asInstanceOf[js.Any])
       

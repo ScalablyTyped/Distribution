@@ -27,7 +27,8 @@ object typesGetBucketCorsOutputMod {
       __obj.asInstanceOf[GetBucketCorsOutput]
     }
     
-    extension [Self <: GetBucketCorsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetBucketCorsOutput] (val x: Self) extends AnyVal {
       
       inline def setCORSRules(value: js.Array[UnmarshalledCORSRule]): Self = StObject.set(x, "CORSRules", value.asInstanceOf[js.Any])
       

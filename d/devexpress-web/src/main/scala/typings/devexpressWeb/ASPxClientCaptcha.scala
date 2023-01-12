@@ -46,7 +46,8 @@ object ASPxClientCaptcha {
     __obj.asInstanceOf[ASPxClientCaptcha]
   }
   
-  extension [Self <: ASPxClientCaptcha](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCaptcha] (val x: Self) extends AnyVal {
     
     inline def setFocus(value: () => Unit): Self = StObject.set(x, "Focus", js.Any.fromFunction0(value))
     

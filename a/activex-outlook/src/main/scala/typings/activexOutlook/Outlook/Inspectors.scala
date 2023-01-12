@@ -40,7 +40,8 @@ object Inspectors {
     __obj.asInstanceOf[Inspectors]
   }
   
-  extension [Self <: Inspectors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Inspectors] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: Any => Inspector): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     

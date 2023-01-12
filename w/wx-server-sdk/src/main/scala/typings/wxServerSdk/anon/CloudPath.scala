@@ -19,7 +19,8 @@ object CloudPath {
     __obj.asInstanceOf[CloudPath]
   }
   
-  extension [Self <: CloudPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudPath] (val x: Self) extends AnyVal {
     
     inline def setCloudPath(value: String): Self = StObject.set(x, "cloudPath", value.asInstanceOf[js.Any])
     

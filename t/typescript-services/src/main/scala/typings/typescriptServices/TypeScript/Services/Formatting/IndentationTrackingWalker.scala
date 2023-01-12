@@ -265,7 +265,8 @@ object IndentationTrackingWalker {
     __obj.asInstanceOf[IndentationTrackingWalker]
   }
   
-  extension [Self <: IndentationTrackingWalker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndentationTrackingWalker] (val x: Self) extends AnyVal {
     
     inline def setForceIndentNextToken(value: Double => Unit): Self = StObject.set(x, "forceIndentNextToken", js.Any.fromFunction1(value))
     

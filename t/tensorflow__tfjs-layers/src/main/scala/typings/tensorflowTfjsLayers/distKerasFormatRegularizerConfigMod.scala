@@ -25,7 +25,8 @@ object distKerasFormatRegularizerConfigMod {
       __obj.asInstanceOf[L1L2Config]
     }
     
-    extension [Self <: L1L2Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: L1L2Config] (val x: Self) extends AnyVal {
       
       inline def setL1(value: Double): Self = StObject.set(x, "l1", value.asInstanceOf[js.Any])
       

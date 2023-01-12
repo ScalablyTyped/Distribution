@@ -20,7 +20,8 @@ object TextEditorEdit {
     __obj.asInstanceOf[TextEditorEdit]
   }
   
-  extension [Self <: TextEditorEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextEditorEdit] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: Range => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     

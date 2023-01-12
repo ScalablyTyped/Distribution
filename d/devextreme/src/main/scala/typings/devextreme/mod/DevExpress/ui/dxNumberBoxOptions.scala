@@ -69,7 +69,8 @@ object dxNumberBoxOptions {
     __obj.asInstanceOf[dxNumberBoxOptions]
   }
   
-  extension [Self <: dxNumberBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxNumberBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: js.Array[NumberBoxPredefinedButton | dxTextEditorButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

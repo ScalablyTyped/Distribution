@@ -17,7 +17,8 @@ object FileManagerDataSourceSchemaModel {
     __obj.asInstanceOf[FileManagerDataSourceSchemaModel]
   }
   
-  extension [Self <: FileManagerDataSourceSchemaModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileManagerDataSourceSchemaModel] (val x: Self) extends AnyVal {
     
     inline def setIsDirectory(value: Any): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
     

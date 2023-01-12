@@ -33,7 +33,8 @@ object PathMatch {
     __obj.asInstanceOf[PathMatch[ParamKey]]
   }
   
-  extension [Self <: PathMatch[?], ParamKey /* <: String */](x: Self & PathMatch[ParamKey]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathMatch[?], ParamKey /* <: String */] (val x: Self & PathMatch[ParamKey]) extends AnyVal {
     
     inline def setParams(value: Params[ParamKey]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     

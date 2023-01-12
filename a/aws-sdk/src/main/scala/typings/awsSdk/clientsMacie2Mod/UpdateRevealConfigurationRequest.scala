@@ -18,7 +18,8 @@ object UpdateRevealConfigurationRequest {
     __obj.asInstanceOf[UpdateRevealConfigurationRequest]
   }
   
-  extension [Self <: UpdateRevealConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRevealConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: RevealConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
   }

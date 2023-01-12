@@ -88,7 +88,8 @@ object audioInterfacesIsoundoptionsMod {
       __obj.asInstanceOf[ISoundOptions]
     }
     
-    extension [Self <: ISoundOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISoundOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       

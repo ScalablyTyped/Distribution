@@ -17,7 +17,8 @@ object DataCountWidgetHTML {
     __obj.asInstanceOf[DataCountWidgetHTML]
   }
   
-  extension [Self <: DataCountWidgetHTML](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataCountWidgetHTML] (val x: Self) extends AnyVal {
     
     inline def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object NotifyCollectionChangedEventArgs {
     __obj.asInstanceOf[NotifyCollectionChangedEventArgs]
   }
   
-  extension [Self <: NotifyCollectionChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotifyCollectionChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGet_changes(value: () => js.Array[CollectionChange]): Self = StObject.set(x, "get_changes", js.Any.fromFunction0(value))
   }

@@ -36,7 +36,8 @@ object NavigationEventsOptions {
     __obj.asInstanceOf[NavigationEventsOptions]
   }
   
-  extension [Self <: NavigationEventsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationEventsOptions] (val x: Self) extends AnyVal {
     
     inline def setClosePopup(value: js.Function): Self = StObject.set(x, "closePopup", value.asInstanceOf[js.Any])
     

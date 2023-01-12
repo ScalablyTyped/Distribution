@@ -25,7 +25,8 @@ object DictkeyCouponCurrency {
     __obj.asInstanceOf[DictkeyCouponCurrency]
   }
   
-  extension [Self <: DictkeyCouponCurrency](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictkeyCouponCurrency] (val x: Self) extends AnyVal {
     
     inline def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
     

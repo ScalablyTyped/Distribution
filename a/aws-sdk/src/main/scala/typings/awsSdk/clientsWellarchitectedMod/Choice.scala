@@ -34,7 +34,8 @@ object Choice {
     __obj.asInstanceOf[Choice]
   }
   
-  extension [Self <: Choice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Choice] (val x: Self) extends AnyVal {
     
     inline def setAdditionalResources(value: AdditionalResourcesList): Self = StObject.set(x, "AdditionalResources", value.asInstanceOf[js.Any])
     

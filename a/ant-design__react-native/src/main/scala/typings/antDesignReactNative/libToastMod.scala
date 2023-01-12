@@ -179,7 +179,8 @@ object libToastMod {
       __obj.asInstanceOf[IToastConfigurable]
     }
     
-    extension [Self <: IToastConfigurable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToastConfigurable] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -212,7 +213,8 @@ object libToastMod {
       __obj.asInstanceOf[IToastProps]
     }
     
-    extension [Self <: IToastProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToastProps] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String | ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

@@ -55,7 +55,8 @@ object IgDialogLocale {
     __obj.asInstanceOf[IgDialogLocale]
   }
   
-  extension [Self <: IgDialogLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgDialogLocale] (val x: Self) extends AnyVal {
     
     inline def setCloseButtonTitle(value: String): Self = StObject.set(x, "closeButtonTitle", value.asInstanceOf[js.Any])
     

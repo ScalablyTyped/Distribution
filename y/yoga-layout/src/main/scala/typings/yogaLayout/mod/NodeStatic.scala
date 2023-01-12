@@ -26,7 +26,8 @@ object NodeStatic {
     __obj.asInstanceOf[NodeStatic]
   }
   
-  extension [Self <: NodeStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeStatic] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: () => YogaNode): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     

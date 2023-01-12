@@ -30,7 +30,8 @@ object distTypesCssPropertyDescriptorsTextShadowMod {
       __obj.asInstanceOf[TextShadowItem]
     }
     
-    extension [Self <: TextShadowItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextShadowItem] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: Length): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       

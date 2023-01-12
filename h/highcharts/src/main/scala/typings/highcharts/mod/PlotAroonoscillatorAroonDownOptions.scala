@@ -18,7 +18,8 @@ object PlotAroonoscillatorAroonDownOptions {
     __obj.asInstanceOf[PlotAroonoscillatorAroonDownOptions]
   }
   
-  extension [Self <: PlotAroonoscillatorAroonDownOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotAroonoscillatorAroonDownOptions] (val x: Self) extends AnyVal {
     
     inline def setStyles(value: PlotAroonoscillatorAroonDownStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     

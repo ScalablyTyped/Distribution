@@ -76,7 +76,8 @@ object karmaMod {
       __obj.asInstanceOf[BrowserStackOptions]
     }
     
-    extension [Self <: BrowserStackOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserStackOptions] (val x: Self) extends AnyVal {
       
       inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       
@@ -162,7 +163,8 @@ object karmaMod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setBrowserStack(value: BrowserStackOptions): Self = StObject.set(x, "browserStack", value.asInstanceOf[js.Any])
       
@@ -215,7 +217,8 @@ object karmaMod {
       __obj.asInstanceOf[CustomLauncher]
     }
     
-    extension [Self <: CustomLauncher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomLauncher] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       

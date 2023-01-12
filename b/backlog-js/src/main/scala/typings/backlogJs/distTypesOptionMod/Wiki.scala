@@ -19,7 +19,8 @@ object Wiki {
       __obj.asInstanceOf[GetWikiParams]
     }
     
-    extension [Self <: GetWikiParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetWikiParams] (val x: Self) extends AnyVal {
       
       inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object Wiki {
       __obj.asInstanceOf[GetWikisHistoryParams]
     }
     
-    extension [Self <: GetWikisHistoryParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetWikisHistoryParams] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -81,7 +83,8 @@ object Wiki {
       __obj.asInstanceOf[PatchWikiParams]
     }
     
-    extension [Self <: PatchWikiParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatchWikiParams] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -114,7 +117,8 @@ object Wiki {
       __obj.asInstanceOf[PostWikiParams]
     }
     
-    extension [Self <: PostWikiParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostWikiParams] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

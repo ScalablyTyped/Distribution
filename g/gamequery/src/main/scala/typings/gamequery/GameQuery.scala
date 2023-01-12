@@ -56,7 +56,8 @@ object GameQuery {
     __obj.asInstanceOf[GameQuery]
   }
   
-  extension [Self <: GameQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GameQuery] (val x: Self) extends AnyVal {
     
     inline def setANIMATION_CALLBACK(value: Double): Self = StObject.set(x, "ANIMATION_CALLBACK", value.asInstanceOf[js.Any])
     

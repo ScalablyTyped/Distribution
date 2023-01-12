@@ -19,7 +19,8 @@ object BuildBazelRemoteExecutionV2ToolDetails {
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2ToolDetails]
   }
   
-  extension [Self <: BuildBazelRemoteExecutionV2ToolDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildBazelRemoteExecutionV2ToolDetails] (val x: Self) extends AnyVal {
     
     inline def setToolName(value: String): Self = StObject.set(x, "toolName", value.asInstanceOf[js.Any])
     

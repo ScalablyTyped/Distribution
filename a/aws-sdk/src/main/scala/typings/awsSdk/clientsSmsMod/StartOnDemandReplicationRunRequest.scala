@@ -23,7 +23,8 @@ object StartOnDemandReplicationRunRequest {
     __obj.asInstanceOf[StartOnDemandReplicationRunRequest]
   }
   
-  extension [Self <: StartOnDemandReplicationRunRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartOnDemandReplicationRunRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object ColorAssistant {
     __obj.asInstanceOf[ColorAssistant]
   }
   
-  extension [Self <: ColorAssistant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorAssistant] (val x: Self) extends AnyVal {
     
     inline def setProvideColorPresentations(value: (Color, TextEditor, ColorPresentationContext) => AssistantArray[ColorPresentation]): Self = StObject.set(x, "provideColorPresentations", js.Any.fromFunction3(value))
     

@@ -47,7 +47,8 @@ object pluginsHwbMod extends Shortcut {
         __obj.asInstanceOf[Colord]
       }
       
-      extension [Self <: Colord](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Colord] (val x: Self) extends AnyVal {
         
         inline def setToHwb(value: () => HwbaColor): Self = StObject.set(x, "toHwb", js.Any.fromFunction0(value))
         

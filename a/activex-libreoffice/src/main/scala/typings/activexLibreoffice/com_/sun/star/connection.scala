@@ -67,7 +67,8 @@ object connection {
       __obj.asInstanceOf[SocketPermission]
     }
     
-    extension [Self <: SocketPermission](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketPermission] (val x: Self) extends AnyVal {
       
       inline def setActions(value: String): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object connection {
       __obj.asInstanceOf[XAcceptor]
     }
     
-    extension [Self <: XAcceptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XAcceptor] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: String => XConnection): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
       
@@ -191,7 +193,8 @@ object connection {
       __obj.asInstanceOf[XConnection]
     }
     
-    extension [Self <: XConnection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XConnection] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -237,7 +240,8 @@ object connection {
       __obj.asInstanceOf[XConnection2]
     }
     
-    extension [Self <: XConnection2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XConnection2] (val x: Self) extends AnyVal {
       
       inline def setAvailable(value: () => Double): Self = StObject.set(x, "available", js.Any.fromFunction0(value))
       
@@ -281,7 +285,8 @@ object connection {
       __obj.asInstanceOf[XConnectionBroadcaster]
     }
     
-    extension [Self <: XConnectionBroadcaster](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XConnectionBroadcaster] (val x: Self) extends AnyVal {
       
       inline def setAddStreamListener(value: XStreamListener => Unit): Self = StObject.set(x, "addStreamListener", js.Any.fromFunction1(value))
       
@@ -317,7 +322,8 @@ object connection {
       __obj.asInstanceOf[XConnector]
     }
     
-    extension [Self <: XConnector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XConnector] (val x: Self) extends AnyVal {
       
       inline def setConnect(value: String => XConnection): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
     }

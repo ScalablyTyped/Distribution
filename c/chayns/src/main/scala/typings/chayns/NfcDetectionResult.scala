@@ -18,7 +18,8 @@ object NfcDetectionResult {
     __obj.asInstanceOf[NfcDetectionResult]
   }
   
-  extension [Self <: NfcDetectionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NfcDetectionResult] (val x: Self) extends AnyVal {
     
     inline def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object tsp {
       __obj.asInstanceOf[AbstractTSAAdapter]
     }
     
-    extension [Self <: AbstractTSAAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractTSAAdapter] (val x: Self) extends AnyVal {
       
       inline def setGetTSTHex(value: (String, String) => Unit): Self = StObject.set(x, "getTSTHex", js.Any.fromFunction2(value))
     }
@@ -102,7 +103,8 @@ object tsp {
       __obj.asInstanceOf[FixedTSAAdapter]
     }
     
-    extension [Self <: FixedTSAAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixedTSAAdapter] (val x: Self) extends AnyVal {
       
       inline def setGetTSTHex(value: (String, String) => String): Self = StObject.set(x, "getTSTHex", js.Any.fromFunction2(value))
     }
@@ -216,7 +218,8 @@ object tsp {
       __obj.asInstanceOf[SimpleTSAAdapter]
     }
     
-    extension [Self <: SimpleTSAAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleTSAAdapter] (val x: Self) extends AnyVal {
       
       inline def setGetTSTHex(value: (String, String) => String): Self = StObject.set(x, "getTSTHex", js.Any.fromFunction2(value))
     }
@@ -309,7 +312,8 @@ object tsp {
       __obj.asInstanceOf[TimeStampReq]
     }
     
-    extension [Self <: TimeStampReq](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeStampReq] (val x: Self) extends AnyVal {
       
       inline def setSetMessageImprint(value: MessageImprint => Unit): Self = StObject.set(x, "setMessageImprint", js.Any.fromFunction1(value))
     }

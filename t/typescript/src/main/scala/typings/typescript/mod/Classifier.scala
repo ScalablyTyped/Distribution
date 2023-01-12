@@ -40,7 +40,8 @@ object Classifier {
     __obj.asInstanceOf[Classifier]
   }
   
-  extension [Self <: Classifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Classifier] (val x: Self) extends AnyVal {
     
     inline def setGetClassificationsForLine(value: (java.lang.String, EndOfLineState, Boolean) => ClassificationResult): Self = StObject.set(x, "getClassificationsForLine", js.Any.fromFunction3(value))
     

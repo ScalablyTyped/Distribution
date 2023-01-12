@@ -26,7 +26,8 @@ object PartialissuerPaypalCARDIS {
     __obj.asInstanceOf[PartialissuerPaypalCARDIS]
   }
   
-  extension [Self <: PartialissuerPaypalCARDIS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialissuerPaypalCARDIS] (val x: Self) extends AnyVal {
     
     inline def setInstallment_details(value: Partialperiodstringinterv): Self = StObject.set(x, "installment_details", value.asInstanceOf[js.Any])
     

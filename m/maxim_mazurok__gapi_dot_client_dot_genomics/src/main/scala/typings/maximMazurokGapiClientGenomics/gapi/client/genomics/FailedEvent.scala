@@ -19,7 +19,8 @@ object FailedEvent {
     __obj.asInstanceOf[FailedEvent]
   }
   
-  extension [Self <: FailedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailedEvent] (val x: Self) extends AnyVal {
     
     inline def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Preliminary {
     __obj.asInstanceOf[Preliminary]
   }
   
-  extension [Self <: Preliminary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Preliminary] (val x: Self) extends AnyVal {
     
     inline def setFull(value: scala.Double): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     

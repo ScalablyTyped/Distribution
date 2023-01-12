@@ -34,7 +34,8 @@ object IDResult {
     __obj.asInstanceOf[IDResult]
   }
   
-  extension [Self <: IDResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDResult] (val x: Self) extends AnyVal {
     
     inline def setAddresses(value: js.Array[Multiaddr_]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     

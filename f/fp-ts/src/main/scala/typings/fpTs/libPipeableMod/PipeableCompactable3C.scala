@@ -31,7 +31,8 @@ object PipeableCompactable3C {
     __obj.asInstanceOf[PipeableCompactable3C[F, E]]
   }
   
-  extension [Self <: PipeableCompactable3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (PipeableCompactable3C[F, E])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeableCompactable3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (PipeableCompactable3C[F, E])) extends AnyVal {
     
     inline def setCompact(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, Option<A>> */ Any => Any

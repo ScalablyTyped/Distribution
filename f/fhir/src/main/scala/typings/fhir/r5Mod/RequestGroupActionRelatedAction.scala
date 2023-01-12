@@ -51,7 +51,8 @@ object RequestGroupActionRelatedAction {
     __obj.asInstanceOf[RequestGroupActionRelatedAction]
   }
   
-  extension [Self <: RequestGroupActionRelatedAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestGroupActionRelatedAction] (val x: Self) extends AnyVal {
     
     inline def setOffsetDuration(value: Duration): Self = StObject.set(x, "offsetDuration", value.asInstanceOf[js.Any])
     

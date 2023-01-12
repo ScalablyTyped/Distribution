@@ -23,7 +23,8 @@ object UpdateRestApiRequest {
     __obj.asInstanceOf[UpdateRestApiRequest]
   }
   
-  extension [Self <: UpdateRestApiRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRestApiRequest] (val x: Self) extends AnyVal {
     
     inline def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
     

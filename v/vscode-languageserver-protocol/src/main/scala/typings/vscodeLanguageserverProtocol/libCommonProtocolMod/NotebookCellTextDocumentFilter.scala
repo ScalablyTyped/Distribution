@@ -37,7 +37,8 @@ object NotebookCellTextDocumentFilter {
   
   inline def is(value: Any): /* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/common/protocol.NotebookCellTextDocumentFilter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/common/protocol.NotebookCellTextDocumentFilter */ Boolean]
   
-  extension [Self <: NotebookCellTextDocumentFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookCellTextDocumentFilter] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

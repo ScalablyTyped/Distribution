@@ -68,7 +68,8 @@ object pkcs12 {
       __obj.asInstanceOf[Bag]
     }
     
-    extension [Self <: Bag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bag] (val x: Self) extends AnyVal {
       
       inline def setAsn1(value: Asn1): Self = StObject.set(x, "asn1", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object pkcs12 {
       __obj.asInstanceOf[BagsFilter]
     }
     
-    extension [Self <: BagsFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BagsFilter] (val x: Self) extends AnyVal {
       
       inline def setBagType(value: String): Self = StObject.set(x, "bagType", value.asInstanceOf[js.Any])
       
@@ -148,7 +150,8 @@ object pkcs12 {
       __obj.asInstanceOf[Pkcs12Pfx]
     }
     
-    extension [Self <: Pkcs12Pfx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pkcs12Pfx] (val x: Self) extends AnyVal {
       
       inline def setGetBags(value: BagsFilter => Dictkey): Self = StObject.set(x, "getBags", js.Any.fromFunction1(value))
       

@@ -18,7 +18,8 @@ object SubscriptionChangeData {
     __obj.asInstanceOf[SubscriptionChangeData]
   }
   
-  extension [Self <: SubscriptionChangeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionChangeData] (val x: Self) extends AnyVal {
     
     inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
     

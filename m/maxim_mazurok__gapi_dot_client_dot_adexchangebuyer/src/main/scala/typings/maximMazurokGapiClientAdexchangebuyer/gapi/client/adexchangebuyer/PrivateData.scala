@@ -17,7 +17,8 @@ object PrivateData {
     __obj.asInstanceOf[PrivateData]
   }
   
-  extension [Self <: PrivateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivateData] (val x: Self) extends AnyVal {
     
     inline def setReferenceId(value: String): Self = StObject.set(x, "referenceId", value.asInstanceOf[js.Any])
     

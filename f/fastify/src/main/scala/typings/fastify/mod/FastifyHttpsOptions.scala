@@ -40,13 +40,14 @@ object FastifyHttpsOptions {
     __obj.asInstanceOf[FastifyHttpsOptions[Server, Logger]]
   }
   
-  extension [Self <: FastifyHttpsOptions[?, ?], Server /* <: typings.node.httpsMod.Server[
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FastifyHttpsOptions[?, ?], Server /* <: typings.node.httpsMod.Server[
     Instantiable1[/* socket */ Socket, IncomingMessage], 
     Instantiable1[
       /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
       ServerResponse[typings.node.httpMod.IncomingMessage]
     ]
-  ] */, Logger /* <: FastifyBaseLogger */](x: Self & (FastifyHttpsOptions[Server, Logger])) {
+  ] */, Logger /* <: FastifyBaseLogger */] (val x: Self & (FastifyHttpsOptions[Server, Logger])) extends AnyVal {
     
     inline def setHttps(
       value: ServerOptions[

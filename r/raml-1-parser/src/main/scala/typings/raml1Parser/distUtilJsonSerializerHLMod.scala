@@ -132,7 +132,8 @@ object distUtilJsonSerializerHLMod {
       __obj.asInstanceOf[SerializeOptions]
     }
     
-    extension [Self <: SerializeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializeOptions] (val x: Self) extends AnyVal {
       
       inline def setAllParameters(value: Boolean): Self = StObject.set(x, "allParameters", value.asInstanceOf[js.Any])
       

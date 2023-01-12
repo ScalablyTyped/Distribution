@@ -28,7 +28,8 @@ object IndicesDataStreamsStatsDataStreamsStatsItem {
     __obj.asInstanceOf[IndicesDataStreamsStatsDataStreamsStatsItem]
   }
   
-  extension [Self <: IndicesDataStreamsStatsDataStreamsStatsItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesDataStreamsStatsDataStreamsStatsItem] (val x: Self) extends AnyVal {
     
     inline def setBacking_indices(value: integer): Self = StObject.set(x, "backing_indices", value.asInstanceOf[js.Any])
     

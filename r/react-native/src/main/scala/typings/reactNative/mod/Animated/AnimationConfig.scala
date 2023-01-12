@@ -17,7 +17,8 @@ object AnimationConfig {
     __obj.asInstanceOf[AnimationConfig]
   }
   
-  extension [Self <: AnimationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationConfig] (val x: Self) extends AnyVal {
     
     inline def setIsInteraction(value: Boolean): Self = StObject.set(x, "isInteraction", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object LabelRenderer {
     __obj.asInstanceOf[LabelRenderer[K, D]]
   }
   
-  extension [Self <: LabelRenderer[?, ?], K, D](x: Self & (LabelRenderer[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelRenderer[?, ?], K, D] (val x: Self & (LabelRenderer[K, D])) extends AnyVal {
     
     inline def setClassName(value: (js.Function1[/* context */ HeaderContext[K, D], String | Unit | Null]) | String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

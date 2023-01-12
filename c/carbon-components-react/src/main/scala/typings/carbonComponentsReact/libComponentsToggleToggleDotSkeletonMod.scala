@@ -33,7 +33,8 @@ object libComponentsToggleToggleDotSkeletonMod {
       __obj.asInstanceOf[ToggleSkeletonProps]
     }
     
-    extension [Self <: ToggleSkeletonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleSkeletonProps] (val x: Self) extends AnyVal {
       
       inline def setLabelText(value: String): Self = StObject.set(x, "labelText", value.asInstanceOf[js.Any])
       

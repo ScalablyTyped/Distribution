@@ -20,7 +20,8 @@ object GotoStatement_ {
     __obj.asInstanceOf[GotoStatement_]
   }
   
-  extension [Self <: GotoStatement_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GotoStatement_] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: Identifier_): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }

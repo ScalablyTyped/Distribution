@@ -19,7 +19,8 @@ object SearchSuggestBase {
     __obj.asInstanceOf[SearchSuggestBase]
   }
   
-  extension [Self <: SearchSuggestBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchSuggestBase] (val x: Self) extends AnyVal {
     
     inline def setLength(value: integer): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

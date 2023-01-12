@@ -90,7 +90,8 @@ object mod {
       __obj.asInstanceOf[IdenticonOptions]
     }
     
-    extension [Self <: IdenticonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdenticonOptions] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object mod {
       __obj.asInstanceOf[PNGlib]
     }
     
-    extension [Self <: PNGlib](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PNGlib] (val x: Self) extends AnyVal {
       
       inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
@@ -213,7 +215,8 @@ object mod {
       __obj.asInstanceOf[Svg]
     }
     
-    extension [Self <: Svg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Svg] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       

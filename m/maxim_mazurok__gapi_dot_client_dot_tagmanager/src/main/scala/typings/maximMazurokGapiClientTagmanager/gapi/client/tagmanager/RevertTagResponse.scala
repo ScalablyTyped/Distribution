@@ -19,7 +19,8 @@ object RevertTagResponse {
     __obj.asInstanceOf[RevertTagResponse]
   }
   
-  extension [Self <: RevertTagResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevertTagResponse] (val x: Self) extends AnyVal {
     
     inline def setTag(value: Tag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     

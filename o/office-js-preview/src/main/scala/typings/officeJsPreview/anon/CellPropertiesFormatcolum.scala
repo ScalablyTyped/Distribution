@@ -150,7 +150,8 @@ object CellPropertiesFormatcolum {
     __obj.asInstanceOf[CellPropertiesFormatcolum]
   }
   
-  extension [Self <: CellPropertiesFormatcolum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellPropertiesFormatcolum] (val x: Self) extends AnyVal {
     
     inline def setAutoIndent(value: Boolean): Self = StObject.set(x, "autoIndent", value.asInstanceOf[js.Any])
     

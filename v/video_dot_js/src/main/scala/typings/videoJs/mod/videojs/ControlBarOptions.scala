@@ -53,7 +53,8 @@ object ControlBarOptions {
     __obj.asInstanceOf[ControlBarOptions]
   }
   
-  extension [Self <: ControlBarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlBarOptions] (val x: Self) extends AnyVal {
     
     inline def setAudioTrackButton(value: Boolean): Self = StObject.set(x, "audioTrackButton", value.asInstanceOf[js.Any])
     

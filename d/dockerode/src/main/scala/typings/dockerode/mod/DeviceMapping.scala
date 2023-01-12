@@ -19,7 +19,8 @@ object DeviceMapping {
     __obj.asInstanceOf[DeviceMapping]
   }
   
-  extension [Self <: DeviceMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceMapping] (val x: Self) extends AnyVal {
     
     inline def setCgroupPermissions(value: String): Self = StObject.set(x, "CgroupPermissions", value.asInstanceOf[js.Any])
     

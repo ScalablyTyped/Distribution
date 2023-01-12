@@ -25,7 +25,8 @@ object PostProcessorModule {
     __obj.asInstanceOf[PostProcessorModule]
   }
   
-  extension [Self <: PostProcessorModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostProcessorModule] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

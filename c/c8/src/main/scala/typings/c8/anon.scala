@@ -44,7 +44,8 @@ object anon {
       __obj.asInstanceOf[All]
     }
     
-    extension [Self <: All](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: All] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -130,7 +131,8 @@ object anon {
       __obj.asInstanceOf[PartialstatementsWatermar]
     }
     
-    extension [Self <: PartialstatementsWatermar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialstatementsWatermar] (val x: Self) extends AnyVal {
       
       inline def setBranches(value: Watermark): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       

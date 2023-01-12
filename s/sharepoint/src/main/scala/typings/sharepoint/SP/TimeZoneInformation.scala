@@ -30,7 +30,8 @@ object TimeZoneInformation {
     __obj.asInstanceOf[TimeZoneInformation]
   }
   
-  extension [Self <: TimeZoneInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeZoneInformation] (val x: Self) extends AnyVal {
     
     inline def setGet_bias(value: () => Double): Self = StObject.set(x, "get_bias", js.Any.fromFunction0(value))
     

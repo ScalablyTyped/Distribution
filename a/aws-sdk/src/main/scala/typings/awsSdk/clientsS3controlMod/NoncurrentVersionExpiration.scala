@@ -23,7 +23,8 @@ object NoncurrentVersionExpiration {
     __obj.asInstanceOf[NoncurrentVersionExpiration]
   }
   
-  extension [Self <: NoncurrentVersionExpiration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoncurrentVersionExpiration] (val x: Self) extends AnyVal {
     
     inline def setNewerNoncurrentVersions(value: NoncurrentVersionCount): Self = StObject.set(x, "NewerNoncurrentVersions", value.asInstanceOf[js.Any])
     

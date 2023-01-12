@@ -228,7 +228,8 @@ object distTypesInternalTestingTestSchedulerMod {
       __obj.asInstanceOf[RunHelpers]
     }
     
-    extension [Self <: RunHelpers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunHelpers] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: String => Unit): Self = StObject.set(x, "animate", js.Any.fromFunction1(value))
       

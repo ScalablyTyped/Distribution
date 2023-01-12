@@ -56,7 +56,8 @@ object Countries {
     __obj.asInstanceOf[Countries]
   }
   
-  extension [Self <: Countries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Countries] (val x: Self) extends AnyVal {
     
     inline def setCountries(value: String): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
     

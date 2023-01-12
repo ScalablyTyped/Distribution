@@ -71,7 +71,8 @@ object srcCommandBuilderSchematicsCommandModuleMod {
       __obj.asInstanceOf[SchematicsCommandArgs]
     }
     
-    extension [Self <: SchematicsCommandArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchematicsCommandArgs] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: Boolean): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object srcCommandBuilderSchematicsCommandModuleMod {
       __obj.asInstanceOf[SchematicsExecutionOptions]
     }
     
-    extension [Self <: SchematicsExecutionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchematicsExecutionOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: Boolean): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       

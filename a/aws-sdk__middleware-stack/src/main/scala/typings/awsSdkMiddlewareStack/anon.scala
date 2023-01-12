@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[After[Input, Output]]
     }
     
-    extension [Self <: After[?, ?], Input /* <: js.Object */, Output /* <: js.Object */](x: Self & (After[Input, Output])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: After[?, ?], Input /* <: js.Object */, Output /* <: js.Object */] (val x: Self & (After[Input, Output])) extends AnyVal {
       
       inline def setAfter(value: js.Array[Normalized[RelativeMiddlewareEntry[Input, Output], Input, Output]]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object GetSchemaAsJsonRequest {
     __obj.asInstanceOf[GetSchemaAsJsonRequest]
   }
   
-  extension [Self <: GetSchemaAsJsonRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSchemaAsJsonRequest] (val x: Self) extends AnyVal {
     
     inline def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
   }

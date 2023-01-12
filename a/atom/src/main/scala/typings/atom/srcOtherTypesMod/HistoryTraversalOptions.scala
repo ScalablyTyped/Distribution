@@ -17,7 +17,8 @@ object HistoryTraversalOptions {
     __obj.asInstanceOf[HistoryTraversalOptions]
   }
   
-  extension [Self <: HistoryTraversalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistoryTraversalOptions] (val x: Self) extends AnyVal {
     
     inline def setSelectionsMarkerLayer(value: MarkerLayer): Self = StObject.set(x, "selectionsMarkerLayer", value.asInstanceOf[js.Any])
     

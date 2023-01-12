@@ -105,7 +105,8 @@ object SyntaxVisitor {
     __obj.asInstanceOf[SyntaxVisitor]
   }
   
-  extension [Self <: SyntaxVisitor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyntaxVisitor] (val x: Self) extends AnyVal {
     
     inline def setDefaultVisit(value: ISyntaxNodeOrToken => Any): Self = StObject.set(x, "defaultVisit", js.Any.fromFunction1(value))
   }

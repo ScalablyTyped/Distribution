@@ -30,7 +30,8 @@ object PackageJson {
     __obj.asInstanceOf[PackageJson]
   }
   
-  extension [Self <: PackageJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageJson] (val x: Self) extends AnyVal {
     
     inline def setBin(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
     

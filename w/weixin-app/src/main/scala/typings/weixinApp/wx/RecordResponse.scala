@@ -17,7 +17,8 @@ object RecordResponse {
     __obj.asInstanceOf[RecordResponse]
   }
   
-  extension [Self <: RecordResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordResponse] (val x: Self) extends AnyVal {
     
     inline def setTempThumbPath(value: String): Self = StObject.set(x, "tempThumbPath", value.asInstanceOf[js.Any])
     

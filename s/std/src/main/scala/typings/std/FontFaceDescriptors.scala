@@ -34,7 +34,8 @@ object FontFaceDescriptors {
     __obj.asInstanceOf[FontFaceDescriptors]
   }
   
-  extension [Self <: FontFaceDescriptors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontFaceDescriptors] (val x: Self) extends AnyVal {
     
     inline def setDisplay(value: java.lang.String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     

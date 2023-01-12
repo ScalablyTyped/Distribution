@@ -25,7 +25,8 @@ object SfAccordion extends Shortcut {
       __obj.asInstanceOf[Constructor]
     }
     
-    extension [Self <: Constructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constructor] (val x: Self) extends AnyVal {
       
       inline def setMethods(value: Methods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object SfAccordion extends Shortcut {
       __obj.asInstanceOf[Methods]
     }
     
-    extension [Self <: Methods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Methods] (val x: Self) extends AnyVal {
       
       inline def setSetAsOpen(value: () => Unit): Self = StObject.set(x, "setAsOpen", js.Any.fromFunction0(value))
       
@@ -79,7 +81,8 @@ object SfAccordion extends Shortcut {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setFirstOpen(value: Boolean): Self = StObject.set(x, "firstOpen", value.asInstanceOf[js.Any])
       

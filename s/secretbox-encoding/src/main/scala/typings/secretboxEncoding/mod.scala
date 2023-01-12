@@ -207,7 +207,8 @@ object mod {
       __obj.asInstanceOf[Codec[TEnc, TDec]]
     }
     
-    extension [Self <: Codec[?, ?], TEnc, TDec](x: Self & (Codec[TEnc, TDec])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Codec[?, ?], TEnc, TDec] (val x: Self & (Codec[TEnc, TDec])) extends AnyVal {
       
       inline def setDecode(value: Bytes[TDec]): Self = StObject.set(x, "decode", value.asInstanceOf[js.Any])
       
@@ -235,7 +236,8 @@ object mod {
       __obj.asInstanceOf[JSONParsedBuffer]
     }
     
-    extension [Self <: JSONParsedBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONParsedBuffer] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -258,7 +260,8 @@ object mod {
       __obj.asInstanceOf[Options[TEnc, TDec]]
     }
     
-    extension [Self <: Options[?, ?], TEnc, TDec](x: Self & (Options[TEnc, TDec])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?, ?], TEnc, TDec] (val x: Self & (Options[TEnc, TDec])) extends AnyVal {
       
       inline def setNonce(value: () => Buffer): Self = StObject.set(x, "nonce", js.Any.fromFunction0(value))
       
@@ -283,7 +286,8 @@ object mod {
       __obj.asInstanceOf[ValueEncoding[TEnc, TDec]]
     }
     
-    extension [Self <: ValueEncoding[?, ?], TEnc, TDec](x: Self & (ValueEncoding[TEnc, TDec])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueEncoding[?, ?], TEnc, TDec] (val x: Self & (ValueEncoding[TEnc, TDec])) extends AnyVal {
       
       inline def setDecode(value: (Buffer, Double) => TDec): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
       

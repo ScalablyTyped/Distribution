@@ -19,7 +19,8 @@ object GoogleDatastoreAdminV1IndexedProperty {
     __obj.asInstanceOf[GoogleDatastoreAdminV1IndexedProperty]
   }
   
-  extension [Self <: GoogleDatastoreAdminV1IndexedProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDatastoreAdminV1IndexedProperty] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

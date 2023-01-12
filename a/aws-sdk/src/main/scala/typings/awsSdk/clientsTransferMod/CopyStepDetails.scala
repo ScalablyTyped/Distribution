@@ -33,7 +33,8 @@ object CopyStepDetails {
     __obj.asInstanceOf[CopyStepDetails]
   }
   
-  extension [Self <: CopyStepDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyStepDetails] (val x: Self) extends AnyVal {
     
     inline def setDestinationFileLocation(value: InputFileLocation): Self = StObject.set(x, "DestinationFileLocation", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object distRequestEndSessionRequestMod {
       __obj.asInstanceOf[EndSessionRequest]
     }
     
-    extension [Self <: EndSessionRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndSessionRequest] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: AccountInfo): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       

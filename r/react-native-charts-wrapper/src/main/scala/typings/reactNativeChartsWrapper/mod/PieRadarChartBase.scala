@@ -21,7 +21,8 @@ object PieRadarChartBase {
     __obj.asInstanceOf[PieRadarChartBase]
   }
   
-  extension [Self <: PieRadarChartBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PieRadarChartBase] (val x: Self) extends AnyVal {
     
     inline def setMinOffset(value: Double): Self = StObject.set(x, "minOffset", value.asInstanceOf[js.Any])
     

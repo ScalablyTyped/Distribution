@@ -240,7 +240,8 @@ object libAppServiceRegistrationMod {
       __obj.asInstanceOf[AppServiceOutput]
     }
     
-    extension [Self <: AppServiceOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppServiceOutput] (val x: Self) extends AnyVal {
       
       inline def setAs_token(value: String): Self = StObject.set(x, "as_token", value.asInstanceOf[js.Any])
       
@@ -289,7 +290,8 @@ object libAppServiceRegistrationMod {
       __obj.asInstanceOf[RegexObj]
     }
     
-    extension [Self <: RegexObj](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegexObj] (val x: Self) extends AnyVal {
       
       inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object AppsDynamiteVideoCallMetadata {
     __obj.asInstanceOf[AppsDynamiteVideoCallMetadata]
   }
   
-  extension [Self <: AppsDynamiteVideoCallMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteVideoCallMetadata] (val x: Self) extends AnyVal {
     
     inline def setMeetingSpace(value: MeetingSpace): Self = StObject.set(x, "meetingSpace", value.asInstanceOf[js.Any])
     

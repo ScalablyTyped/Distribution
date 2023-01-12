@@ -51,7 +51,8 @@ object Toolbar {
       __obj.asInstanceOf[typings.webgme.Toolbar.Toolbar]
     }
     
-    extension [Self <: typings.webgme.Toolbar.Toolbar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.webgme.Toolbar.Toolbar] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: ToolbarItem => ToolbarButton): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -102,7 +103,8 @@ object Toolbar {
       __obj.asInstanceOf[ToolbarDropDownButton]
     }
     
-    extension [Self <: ToolbarDropDownButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarDropDownButton] (val x: Self) extends AnyVal {
       
       inline def setAddButton(value: ToolbarParams => ToolbarButton): Self = StObject.set(x, "addButton", js.Any.fromFunction1(value))
     }
@@ -125,7 +127,8 @@ object Toolbar {
       __obj.asInstanceOf[ToolbarItem]
     }
     
-    extension [Self <: ToolbarItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarItem] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

@@ -17,7 +17,8 @@ object TooLong {
     __obj.asInstanceOf[TooLong]
   }
   
-  extension [Self <: TooLong](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooLong] (val x: Self) extends AnyVal {
     
     inline def setTooLong(value: String): Self = StObject.set(x, "tooLong", value.asInstanceOf[js.Any])
     

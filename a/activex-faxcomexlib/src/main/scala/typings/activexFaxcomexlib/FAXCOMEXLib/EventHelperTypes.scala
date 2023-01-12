@@ -59,7 +59,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[FaxAccountInvokeParameter]
     }
     
-    extension [Self <: FaxAccountInvokeParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaxAccountInvokeParameter] (val x: Self) extends AnyVal {
       
       inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[FaxServerInvokeParameter]
     }
     
-    extension [Self <: FaxServerInvokeParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaxServerInvokeParameter] (val x: Self) extends AnyVal {
       
       inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
@@ -165,7 +167,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[FaxServerOnDeviceStatusChangeParameter]
     }
     
-    extension [Self <: FaxServerOnDeviceStatusChangeParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaxServerOnDeviceStatusChangeParameter] (val x: Self) extends AnyVal {
       
       inline def setBPoweredOff(value: Boolean): Self = StObject.set(x, "bPoweredOff", value.asInstanceOf[js.Any])
       

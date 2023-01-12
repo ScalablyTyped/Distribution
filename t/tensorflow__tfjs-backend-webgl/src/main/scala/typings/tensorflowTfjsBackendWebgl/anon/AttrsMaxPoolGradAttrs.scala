@@ -22,7 +22,8 @@ object AttrsMaxPoolGradAttrs {
     __obj.asInstanceOf[AttrsMaxPoolGradAttrs]
   }
   
-  extension [Self <: AttrsMaxPoolGradAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsMaxPoolGradAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: MaxPoolGradAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

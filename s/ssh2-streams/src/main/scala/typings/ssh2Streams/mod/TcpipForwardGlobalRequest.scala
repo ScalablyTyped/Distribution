@@ -25,7 +25,8 @@ object TcpipForwardGlobalRequest {
     __obj.asInstanceOf[TcpipForwardGlobalRequest]
   }
   
-  extension [Self <: TcpipForwardGlobalRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TcpipForwardGlobalRequest] (val x: Self) extends AnyVal {
     
     inline def setBindAddr(value: String): Self = StObject.set(x, "bindAddr", value.asInstanceOf[js.Any])
     

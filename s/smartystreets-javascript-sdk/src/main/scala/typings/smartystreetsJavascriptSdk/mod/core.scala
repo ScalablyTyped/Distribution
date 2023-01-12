@@ -346,7 +346,8 @@ object core {
       __obj.asInstanceOf[Client[T, R]]
     }
     
-    extension [Self <: Client[?, ?], T, R](x: Self & (Client[T, R])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Client[?, ?], T, R] (val x: Self & (Client[T, R])) extends AnyVal {
       
       inline def setSend(value: T => js.Promise[R]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     }
@@ -363,7 +364,8 @@ object core {
       __obj.asInstanceOf[ClientInstance]
     }
     
-    extension [Self <: ClientInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientInstance] (val x: Self) extends AnyVal {
       
       inline def setSender(value: Any): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     }

@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Contentloc]
     }
     
-    extension [Self <: Contentloc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Contentloc] (val x: Self) extends AnyVal {
       
       inline def setContent_loc(value: String): Self = StObject.set(x, "content_loc", value.asInstanceOf[js.Any])
       

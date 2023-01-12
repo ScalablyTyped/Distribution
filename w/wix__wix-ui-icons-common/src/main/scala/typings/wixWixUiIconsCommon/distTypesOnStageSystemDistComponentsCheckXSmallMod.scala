@@ -27,7 +27,8 @@ object distTypesOnStageSystemDistComponentsCheckXSmallMod extends Shortcut {
       __obj.asInstanceOf[CheckXSmallProps]
     }
     
-    extension [Self <: CheckXSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckXSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

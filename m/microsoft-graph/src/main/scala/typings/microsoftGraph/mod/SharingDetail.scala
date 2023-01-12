@@ -30,7 +30,8 @@ object SharingDetail {
     __obj.asInstanceOf[SharingDetail]
   }
   
-  extension [Self <: SharingDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharingDetail] (val x: Self) extends AnyVal {
     
     inline def setSharedBy(value: NullableOption[InsightIdentity]): Self = StObject.set(x, "sharedBy", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object PolicyMappingParameters {
     __obj.asInstanceOf[PolicyMappingParameters]
   }
   
-  extension [Self <: PolicyMappingParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicyMappingParameters] (val x: Self) extends AnyVal {
     
     inline def setIssuerDomainPolicy(value: String): Self = StObject.set(x, "issuerDomainPolicy", value.asInstanceOf[js.Any])
     

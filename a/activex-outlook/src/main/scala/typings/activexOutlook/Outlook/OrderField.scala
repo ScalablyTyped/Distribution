@@ -37,7 +37,8 @@ object OrderField {
     __obj.asInstanceOf[OrderField]
   }
   
-  extension [Self <: OrderField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderField] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

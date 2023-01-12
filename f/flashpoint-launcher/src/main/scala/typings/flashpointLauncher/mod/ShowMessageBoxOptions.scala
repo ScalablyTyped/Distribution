@@ -22,7 +22,8 @@ object ShowMessageBoxOptions {
     __obj.asInstanceOf[ShowMessageBoxOptions]
   }
   
-  extension [Self <: ShowMessageBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowMessageBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: js.Array[String]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

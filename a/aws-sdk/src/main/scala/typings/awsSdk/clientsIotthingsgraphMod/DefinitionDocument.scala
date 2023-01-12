@@ -23,7 +23,8 @@ object DefinitionDocument {
     __obj.asInstanceOf[DefinitionDocument]
   }
   
-  extension [Self <: DefinitionDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefinitionDocument] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: DefinitionLanguage): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

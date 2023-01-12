@@ -19,7 +19,8 @@ object TileLayer {
     __obj.asInstanceOf[TileLayer]
   }
   
-  extension [Self <: TileLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileLayer] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: TileLayerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }

@@ -107,7 +107,8 @@ object libTypescriptSrcUseDescriptorsMod {
       __obj.asInstanceOf[Options[State, ScreenOptions, EventMap]]
     }
     
-    extension [Self <: Options[?, ?, ?], State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */](x: Self & (Options[State, ScreenOptions, EventMap])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?, ?, ?], State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */] (val x: Self & (Options[State, ScreenOptions, EventMap])) extends AnyVal {
       
       inline def setAddKeyedListener(
         value: (/* keyof @react-navigation/core.@react-navigation/core/lib/typescript/src/NavigationBuilderContext.KeyedListenerMap */ /* type */ getState | beforeRemove, /* key */ String, /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/core.@react-navigation/core/lib/typescript/src/NavigationBuilderContext.KeyedListenerMap[keyof @react-navigation/core.@react-navigation/core/lib/typescript/src/NavigationBuilderContext.KeyedListenerMap] */ /* listener */ js.Any) => Unit
@@ -167,7 +168,8 @@ object libTypescriptSrcUseDescriptorsMod {
       __obj.asInstanceOf[ScreenConfigWithParent[State, ScreenOptions, EventMap]]
     }
     
-    extension [Self <: ScreenConfigWithParent[?, ?, ?], State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */](x: Self & (ScreenConfigWithParent[State, ScreenOptions, EventMap])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScreenConfigWithParent[?, ?, ?], State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */] (val x: Self & (ScreenConfigWithParent[State, ScreenOptions, EventMap])) extends AnyVal {
       
       inline def setKeys(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       

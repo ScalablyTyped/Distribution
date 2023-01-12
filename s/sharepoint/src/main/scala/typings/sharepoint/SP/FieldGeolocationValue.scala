@@ -45,7 +45,8 @@ object FieldGeolocationValue {
     __obj.asInstanceOf[FieldGeolocationValue]
   }
   
-  extension [Self <: FieldGeolocationValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldGeolocationValue] (val x: Self) extends AnyVal {
     
     inline def setGet_altitude(value: () => Double): Self = StObject.set(x, "get_altitude", js.Any.fromFunction0(value))
     

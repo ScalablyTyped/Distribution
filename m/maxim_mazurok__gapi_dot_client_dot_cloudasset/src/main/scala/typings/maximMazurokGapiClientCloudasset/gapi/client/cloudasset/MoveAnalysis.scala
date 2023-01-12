@@ -22,7 +22,8 @@ object MoveAnalysis {
     __obj.asInstanceOf[MoveAnalysis]
   }
   
-  extension [Self <: MoveAnalysis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveAnalysis] (val x: Self) extends AnyVal {
     
     inline def setAnalysis(value: MoveAnalysisResult): Self = StObject.set(x, "analysis", value.asInstanceOf[js.Any])
     

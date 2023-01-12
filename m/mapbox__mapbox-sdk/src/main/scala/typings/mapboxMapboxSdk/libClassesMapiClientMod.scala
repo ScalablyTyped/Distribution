@@ -37,7 +37,8 @@ object libClassesMapiClientMod {
       __obj.asInstanceOf[MapiClient]
     }
     
-    extension [Self <: MapiClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapiClient] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object libClassesMapiClientMod {
       __obj.asInstanceOf[SdkConfig]
     }
     
-    extension [Self <: SdkConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SdkConfig] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       

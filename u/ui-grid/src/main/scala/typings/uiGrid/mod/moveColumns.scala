@@ -21,7 +21,8 @@ object moveColumns {
       __obj.asInstanceOf[typings.uiGrid.mod.moveColumns.IColumnDef]
     }
     
-    extension [Self <: typings.uiGrid.mod.moveColumns.IColumnDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.moveColumns.IColumnDef] (val x: Self) extends AnyVal {
       
       inline def setEnableColumnMoving(value: Boolean): Self = StObject.set(x, "enableColumnMoving", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object moveColumns {
       __obj.asInstanceOf[IGridMoveColumnsApi]
     }
     
-    extension [Self <: IGridMoveColumnsApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGridMoveColumnsApi] (val x: Self) extends AnyVal {
       
       inline def setMoveColumn(value: (Double, Double) => Unit): Self = StObject.set(x, "moveColumn", js.Any.fromFunction2(value))
       
@@ -74,7 +76,8 @@ object moveColumns {
       __obj.asInstanceOf[typings.uiGrid.mod.moveColumns.IGridOptions]
     }
     
-    extension [Self <: typings.uiGrid.mod.moveColumns.IGridOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.moveColumns.IGridOptions] (val x: Self) extends AnyVal {
       
       inline def setEnableColumnMoving(value: Boolean): Self = StObject.set(x, "enableColumnMoving", value.asInstanceOf[js.Any])
       

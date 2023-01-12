@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Datatype]
     }
     
-    extension [Self <: Datatype](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Datatype] (val x: Self) extends AnyVal {
       
       inline def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
       

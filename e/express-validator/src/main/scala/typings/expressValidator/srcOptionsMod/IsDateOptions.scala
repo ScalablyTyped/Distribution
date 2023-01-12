@@ -19,7 +19,8 @@ object IsDateOptions {
     __obj.asInstanceOf[IsDateOptions]
   }
   
-  extension [Self <: IsDateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsDateOptions] (val x: Self) extends AnyVal {
     
     inline def setDelimiters(value: js.Array[String]): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
     

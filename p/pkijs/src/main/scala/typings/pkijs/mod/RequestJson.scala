@@ -17,7 +17,8 @@ object RequestJson {
     __obj.asInstanceOf[RequestJson]
   }
   
-  extension [Self <: RequestJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestJson] (val x: Self) extends AnyVal {
     
     inline def setReqCert(value: CertIDJson): Self = StObject.set(x, "reqCert", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object CloudAppSecuritySessionControl {
     __obj.asInstanceOf[CloudAppSecuritySessionControl]
   }
   
-  extension [Self <: CloudAppSecuritySessionControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudAppSecuritySessionControl] (val x: Self) extends AnyVal {
     
     inline def setCloudAppSecurityType(value: NullableOption[CloudAppSecuritySessionControlType]): Self = StObject.set(x, "cloudAppSecurityType", value.asInstanceOf[js.Any])
     

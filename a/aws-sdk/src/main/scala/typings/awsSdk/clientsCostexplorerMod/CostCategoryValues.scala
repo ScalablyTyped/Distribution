@@ -25,7 +25,8 @@ object CostCategoryValues {
     __obj.asInstanceOf[CostCategoryValues]
   }
   
-  extension [Self <: CostCategoryValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CostCategoryValues] (val x: Self) extends AnyVal {
     
     inline def setKey(value: CostCategoryName): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

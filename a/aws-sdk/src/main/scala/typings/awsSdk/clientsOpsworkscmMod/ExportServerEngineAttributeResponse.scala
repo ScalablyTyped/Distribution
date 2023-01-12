@@ -23,7 +23,8 @@ object ExportServerEngineAttributeResponse {
     __obj.asInstanceOf[ExportServerEngineAttributeResponse]
   }
   
-  extension [Self <: ExportServerEngineAttributeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportServerEngineAttributeResponse] (val x: Self) extends AnyVal {
     
     inline def setEngineAttribute(value: EngineAttribute): Self = StObject.set(x, "EngineAttribute", value.asInstanceOf[js.Any])
     

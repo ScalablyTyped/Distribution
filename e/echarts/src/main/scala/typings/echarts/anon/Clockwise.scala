@@ -75,7 +75,8 @@ object Clockwise {
     __obj.asInstanceOf[Clockwise]
   }
   
-  extension [Self <: Clockwise](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Clockwise] (val x: Self) extends AnyVal {
     
     inline def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object BucketPolicy {
     __obj.asInstanceOf[BucketPolicy]
   }
   
-  extension [Self <: BucketPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketPolicy] (val x: Self) extends AnyVal {
     
     inline def setAllowsPublicReadAccess(value: boolean): Self = StObject.set(x, "allowsPublicReadAccess", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object IProvisioningAgentStaticMethods {
     __obj.asInstanceOf[IProvisioningAgentStaticMethods]
   }
   
-  extension [Self <: IProvisioningAgentStaticMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IProvisioningAgentStaticMethods] (val x: Self) extends AnyVal {
     
     inline def setCreateFromNetworkAccountId(value: String => ProvisioningAgent): Self = StObject.set(x, "createFromNetworkAccountId", js.Any.fromFunction1(value))
   }

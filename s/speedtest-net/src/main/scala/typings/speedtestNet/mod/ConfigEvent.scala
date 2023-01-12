@@ -34,7 +34,8 @@ object ConfigEvent {
     __obj.asInstanceOf[ConfigEvent]
   }
   
-  extension [Self <: ConfigEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigEvent] (val x: Self) extends AnyVal {
     
     inline def setApp(value: AppData): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[ApplicationPubKey]
     }
     
-    extension [Self <: ApplicationPubKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplicationPubKey] (val x: Self) extends AnyVal {
       
       inline def setApplicationPubKey(value: String): Self = StObject.set(x, "applicationPubKey", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[BrowserErrorMessage]
     }
     
-    extension [Self <: BrowserErrorMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserErrorMessage] (val x: Self) extends AnyVal {
       
       inline def setBrowserErrorMessage(value: String): Self = StObject.set(x, "browserErrorMessage", value.asInstanceOf[js.Any])
     }
@@ -65,7 +67,8 @@ object anon {
       __obj.asInstanceOf[ErrorInfo]
     }
     
-    extension [Self <: ErrorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorInfo] (val x: Self) extends AnyVal {
       
       inline def setErrorInfo(value: String): Self = StObject.set(x, "errorInfo", value.asInstanceOf[js.Any])
     }
@@ -82,7 +85,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
@@ -99,7 +103,8 @@ object anon {
       __obj.asInstanceOf[ValueName]
     }
     
-    extension [Self <: ValueName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueName] (val x: Self) extends AnyVal {
       
       inline def setValueName(value: String): Self = StObject.set(x, "valueName", value.asInstanceOf[js.Any])
     }

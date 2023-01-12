@@ -48,7 +48,8 @@ object MappingTextProperty {
     __obj.asInstanceOf[MappingTextProperty]
   }
   
-  extension [Self <: MappingTextProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingTextProperty] (val x: Self) extends AnyVal {
     
     inline def setAnalyzer(value: String): Self = StObject.set(x, "analyzer", value.asInstanceOf[js.Any])
     

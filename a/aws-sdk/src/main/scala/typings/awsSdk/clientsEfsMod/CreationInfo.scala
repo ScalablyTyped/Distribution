@@ -28,7 +28,8 @@ object CreationInfo {
     __obj.asInstanceOf[CreationInfo]
   }
   
-  extension [Self <: CreationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreationInfo] (val x: Self) extends AnyVal {
     
     inline def setOwnerGid(value: OwnerGid): Self = StObject.set(x, "OwnerGid", value.asInstanceOf[js.Any])
     

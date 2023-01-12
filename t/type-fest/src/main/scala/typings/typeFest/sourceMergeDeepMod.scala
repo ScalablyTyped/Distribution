@@ -175,7 +175,8 @@ object sourceMergeDeepMod {
       __obj.asInstanceOf[MergeDeepInternalOptions]
     }
     
-    extension [Self <: MergeDeepInternalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeDeepInternalOptions] (val x: Self) extends AnyVal {
       
       inline def setArrayMergeMode(
         value: /* import warning: importer.ImportType#apply Failed type conversion: 'arrayMergeMode' extends keyof / * Inlined type-fest.type-fest/source/pick-index-signature.PickIndexSignature<{  spreadTopLevelArrays :boolean | undefined}> * /
@@ -233,7 +234,8 @@ object sourceMergeDeepMod {
       __obj.asInstanceOf[MergeDeepOptions]
     }
     
-    extension [Self <: MergeDeepOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeDeepOptions] (val x: Self) extends AnyVal {
       
       inline def setArrayMergeMode(value: ArrayMergeMode): Self = StObject.set(x, "arrayMergeMode", value.asInstanceOf[js.Any])
       

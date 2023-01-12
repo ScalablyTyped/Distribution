@@ -49,7 +49,8 @@ object IDtdNotation {
     __obj.asInstanceOf[IDtdNotation]
   }
   
-  extension [Self <: IDtdNotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDtdNotation] (val x: Self) extends AnyVal {
     
     inline def setPublicId(value: Any): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
     

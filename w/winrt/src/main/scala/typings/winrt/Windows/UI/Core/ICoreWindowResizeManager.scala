@@ -15,7 +15,8 @@ object ICoreWindowResizeManager {
     __obj.asInstanceOf[ICoreWindowResizeManager]
   }
   
-  extension [Self <: ICoreWindowResizeManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICoreWindowResizeManager] (val x: Self) extends AnyVal {
     
     inline def setNotifyLayoutCompleted(value: () => Unit): Self = StObject.set(x, "notifyLayoutCompleted", js.Any.fromFunction0(value))
   }

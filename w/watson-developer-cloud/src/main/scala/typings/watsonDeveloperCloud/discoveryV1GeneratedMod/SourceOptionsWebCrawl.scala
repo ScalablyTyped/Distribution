@@ -35,7 +35,8 @@ object SourceOptionsWebCrawl {
     __obj.asInstanceOf[SourceOptionsWebCrawl]
   }
   
-  extension [Self <: SourceOptionsWebCrawl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceOptionsWebCrawl] (val x: Self) extends AnyVal {
     
     inline def setAllow_untrusted_certificate(value: Boolean): Self = StObject.set(x, "allow_untrusted_certificate", value.asInstanceOf[js.Any])
     

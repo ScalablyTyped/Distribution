@@ -21,7 +21,8 @@ object EnrichPutPolicyRequest {
     __obj.asInstanceOf[EnrichPutPolicyRequest]
   }
   
-  extension [Self <: EnrichPutPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnrichPutPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Geomatch): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

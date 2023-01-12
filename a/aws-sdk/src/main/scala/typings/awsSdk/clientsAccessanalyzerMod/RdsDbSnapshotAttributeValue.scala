@@ -18,7 +18,8 @@ object RdsDbSnapshotAttributeValue {
     __obj.asInstanceOf[RdsDbSnapshotAttributeValue]
   }
   
-  extension [Self <: RdsDbSnapshotAttributeValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RdsDbSnapshotAttributeValue] (val x: Self) extends AnyVal {
     
     inline def setAccountIds(value: RdsDbSnapshotAccountIdsList): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
     

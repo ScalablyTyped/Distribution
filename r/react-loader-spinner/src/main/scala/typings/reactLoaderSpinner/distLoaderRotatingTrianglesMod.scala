@@ -38,7 +38,8 @@ object distLoaderRotatingTrianglesMod {
       __obj.asInstanceOf[RotatingTrianglesProps]
     }
     
-    extension [Self <: RotatingTrianglesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RotatingTrianglesProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       

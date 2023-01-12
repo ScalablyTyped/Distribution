@@ -30,7 +30,8 @@ object XTextArea {
     __obj.asInstanceOf[XTextArea]
   }
   
-  extension [Self <: XTextArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextArea] (val x: Self) extends AnyVal {
     
     inline def setGetTextLines(value: () => String): Self = StObject.set(x, "getTextLines", js.Any.fromFunction0(value))
     

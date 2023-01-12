@@ -34,7 +34,8 @@ object IacShareResultsFormat {
     __obj.asInstanceOf[IacShareResultsFormat]
   }
   
-  extension [Self <: IacShareResultsFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IacShareResultsFormat] (val x: Self) extends AnyVal {
     
     inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     

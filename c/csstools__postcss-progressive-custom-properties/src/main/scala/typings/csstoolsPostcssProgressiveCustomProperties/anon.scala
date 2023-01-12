@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Dimension]
     }
     
-    extension [Self <: Dimension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dimension] (val x: Self) extends AnyVal {
       
       inline def setDimension(value: Unit): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[IsVariable]
     }
     
-    extension [Self <: IsVariable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsVariable] (val x: Self) extends AnyVal {
       
       inline def setIsVariable(value: scala.Unit): Self = StObject.set(x, "isVariable", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object anon {
       __obj.asInstanceOf[Matchers]
     }
     
-    extension [Self <: Matchers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Matchers] (val x: Self) extends AnyVal {
       
       inline def setMatchers(value: js.Array[Nodes]): Self = StObject.set(x, "matchers", value.asInstanceOf[js.Any])
       
@@ -105,7 +108,8 @@ object anon {
       __obj.asInstanceOf[Nodes]
     }
     
-    extension [Self <: Nodes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Nodes] (val x: Self) extends AnyVal {
       
       inline def setNodes(value: js.Array[IsVariable | Type | Value]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
@@ -134,7 +138,8 @@ object anon {
       __obj.asInstanceOf[Property]
     }
     
-    extension [Self <: Property](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Property] (val x: Self) extends AnyVal {
       
       inline def setMatchers(value: js.Array[Dimension]): Self = StObject.set(x, "matchers", value.asInstanceOf[js.Any])
       
@@ -164,7 +169,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setIsVariable(value: scala.Unit): Self = StObject.set(x, "isVariable", value.asInstanceOf[js.Any])
       
@@ -185,7 +191,8 @@ object anon {
       __obj.asInstanceOf[Unit]
     }
     
-    extension [Self <: Unit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unit] (val x: Self) extends AnyVal {
       
       inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     }
@@ -207,7 +214,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setIsVariable(value: Boolean): Self = StObject.set(x, "isVariable", value.asInstanceOf[js.Any])
       

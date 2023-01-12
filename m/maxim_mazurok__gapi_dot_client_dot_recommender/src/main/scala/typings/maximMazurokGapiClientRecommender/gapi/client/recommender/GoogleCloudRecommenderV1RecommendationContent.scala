@@ -21,7 +21,8 @@ object GoogleCloudRecommenderV1RecommendationContent {
     __obj.asInstanceOf[GoogleCloudRecommenderV1RecommendationContent]
   }
   
-  extension [Self <: GoogleCloudRecommenderV1RecommendationContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommenderV1RecommendationContent] (val x: Self) extends AnyVal {
     
     inline def setOperationGroups(value: js.Array[GoogleCloudRecommenderV1OperationGroup]): Self = StObject.set(x, "operationGroups", value.asInstanceOf[js.Any])
     

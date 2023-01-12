@@ -51,7 +51,8 @@ object UpgradeInfo {
     __obj.asInstanceOf[UpgradeInfo]
   }
   
-  extension [Self <: UpgradeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpgradeInfo] (val x: Self) extends AnyVal {
     
     inline def setGet_errorFile(value: () => String): Self = StObject.set(x, "get_errorFile", js.Any.fromFunction0(value))
     

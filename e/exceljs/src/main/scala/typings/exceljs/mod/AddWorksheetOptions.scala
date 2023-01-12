@@ -33,7 +33,8 @@ object AddWorksheetOptions {
     __obj.asInstanceOf[AddWorksheetOptions]
   }
   
-  extension [Self <: AddWorksheetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddWorksheetOptions] (val x: Self) extends AnyVal {
     
     inline def setHeaderFooter(value: PartialHeaderFooter): Self = StObject.set(x, "headerFooter", value.asInstanceOf[js.Any])
     

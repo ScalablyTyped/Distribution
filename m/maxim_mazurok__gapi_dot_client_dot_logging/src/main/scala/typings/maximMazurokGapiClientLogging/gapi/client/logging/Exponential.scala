@@ -22,7 +22,8 @@ object Exponential {
     __obj.asInstanceOf[Exponential]
   }
   
-  extension [Self <: Exponential](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Exponential] (val x: Self) extends AnyVal {
     
     inline def setGrowthFactor(value: Double): Self = StObject.set(x, "growthFactor", value.asInstanceOf[js.Any])
     

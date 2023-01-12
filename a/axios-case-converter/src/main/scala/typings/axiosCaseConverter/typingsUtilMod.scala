@@ -33,7 +33,8 @@ object typingsUtilMod {
       __obj.asInstanceOf[AxiosHeaders]
     }
     
-    extension [Self <: AxiosHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxiosHeaders] (val x: Self) extends AnyVal {
       
       inline def setDelete(value: String => Boolean): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       

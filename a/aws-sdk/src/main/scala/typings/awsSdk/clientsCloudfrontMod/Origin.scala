@@ -63,7 +63,8 @@ object Origin {
     __obj.asInstanceOf[Origin]
   }
   
-  extension [Self <: Origin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Origin] (val x: Self) extends AnyVal {
     
     inline def setConnectionAttempts(value: integer): Self = StObject.set(x, "ConnectionAttempts", value.asInstanceOf[js.Any])
     

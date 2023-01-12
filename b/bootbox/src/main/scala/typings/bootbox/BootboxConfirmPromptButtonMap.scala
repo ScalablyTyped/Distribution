@@ -20,7 +20,8 @@ object BootboxConfirmPromptButtonMap {
     __obj.asInstanceOf[BootboxConfirmPromptButtonMap]
   }
   
-  extension [Self <: BootboxConfirmPromptButtonMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootboxConfirmPromptButtonMap] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: BootboxButton | js.Function): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

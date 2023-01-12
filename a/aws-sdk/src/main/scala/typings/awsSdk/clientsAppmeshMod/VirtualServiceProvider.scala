@@ -23,7 +23,8 @@ object VirtualServiceProvider {
     __obj.asInstanceOf[VirtualServiceProvider]
   }
   
-  extension [Self <: VirtualServiceProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualServiceProvider] (val x: Self) extends AnyVal {
     
     inline def setVirtualNode(value: VirtualNodeServiceProvider): Self = StObject.set(x, "virtualNode", value.asInstanceOf[js.Any])
     

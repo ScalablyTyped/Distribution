@@ -71,7 +71,8 @@ object enginesExtensionsEngineDottextureSelectorMod {
         __obj.asInstanceOf[Engine]
       }
       
-      extension [Self <: Engine](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Engine] (val x: Self) extends AnyVal {
         
         inline def setSetCompressedTextureExclusions(value: js.Array[String] => Unit): Self = StObject.set(x, "setCompressedTextureExclusions", js.Any.fromFunction1(value))
         

@@ -28,7 +28,8 @@ object AddonVersionInfo {
     __obj.asInstanceOf[AddonVersionInfo]
   }
   
-  extension [Self <: AddonVersionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddonVersionInfo] (val x: Self) extends AnyVal {
     
     inline def setAddonVersion(value: String): Self = StObject.set(x, "addonVersion", value.asInstanceOf[js.Any])
     

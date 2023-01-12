@@ -18,7 +18,8 @@ object EnableVpcClassicLinkDnsSupportRequest {
     __obj.asInstanceOf[EnableVpcClassicLinkDnsSupportRequest]
   }
   
-  extension [Self <: EnableVpcClassicLinkDnsSupportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableVpcClassicLinkDnsSupportRequest] (val x: Self) extends AnyVal {
     
     inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     

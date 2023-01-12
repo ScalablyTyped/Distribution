@@ -53,7 +53,8 @@ object mod {
       __obj.asInstanceOf[WebviewApi[StateType]]
     }
     
-    extension [Self <: WebviewApi[?], StateType](x: Self & WebviewApi[StateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebviewApi[?], StateType] (val x: Self & WebviewApi[StateType]) extends AnyVal {
       
       inline def setGetState(value: () => js.UndefOr[StateType]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       

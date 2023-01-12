@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-abort-controller"
-version := "3.0.1-c1dc5c"
+version := "3.0.1-d2c792"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

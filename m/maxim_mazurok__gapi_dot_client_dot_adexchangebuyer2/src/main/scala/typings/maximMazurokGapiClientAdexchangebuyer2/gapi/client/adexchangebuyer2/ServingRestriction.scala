@@ -28,7 +28,8 @@ object ServingRestriction {
     __obj.asInstanceOf[ServingRestriction]
   }
   
-  extension [Self <: ServingRestriction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServingRestriction] (val x: Self) extends AnyVal {
     
     inline def setContexts(value: js.Array[ServingContext]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
     

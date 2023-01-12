@@ -22,7 +22,8 @@ object Latestcommenturl {
     __obj.asInstanceOf[Latestcommenturl]
   }
   
-  extension [Self <: Latestcommenturl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Latestcommenturl] (val x: Self) extends AnyVal {
     
     inline def setLatest_comment_url(value: String): Self = StObject.set(x, "latest_comment_url", value.asInstanceOf[js.Any])
     

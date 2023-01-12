@@ -23,7 +23,8 @@ object ListRoutingProfilesResponse {
     __obj.asInstanceOf[ListRoutingProfilesResponse]
   }
   
-  extension [Self <: ListRoutingProfilesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRoutingProfilesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

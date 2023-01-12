@@ -23,7 +23,8 @@ object DeleteMultiplexProgramRequest {
     __obj.asInstanceOf[DeleteMultiplexProgramRequest]
   }
   
-  extension [Self <: DeleteMultiplexProgramRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteMultiplexProgramRequest] (val x: Self) extends AnyVal {
     
     inline def setMultiplexId(value: string): Self = StObject.set(x, "MultiplexId", value.asInstanceOf[js.Any])
     

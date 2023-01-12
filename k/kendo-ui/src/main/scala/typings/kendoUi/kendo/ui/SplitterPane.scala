@@ -35,7 +35,8 @@ object SplitterPane {
     __obj.asInstanceOf[SplitterPane]
   }
   
-  extension [Self <: SplitterPane](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitterPane] (val x: Self) extends AnyVal {
     
     inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     

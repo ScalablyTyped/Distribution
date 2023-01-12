@@ -151,7 +151,8 @@ object glacierConfigurationMod {
       __obj.asInstanceOf[GlacierConfiguration]
     }
     
-    extension [Self <: GlacierConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlacierConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       
@@ -300,7 +301,8 @@ object glacierConfigurationMod {
       __obj.asInstanceOf[GlacierResolvableConfiguration]
     }
     
-    extension [Self <: GlacierResolvableConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlacierResolvableConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBodyLengthChecker(value: Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
       
@@ -432,7 +434,8 @@ object glacierConfigurationMod {
       __obj.asInstanceOf[GlacierResolvedConfiguration]
     }
     
-    extension [Self <: GlacierResolvedConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlacierResolvedConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       

@@ -34,7 +34,8 @@ object dxDiagramItem {
     __obj.asInstanceOf[dxDiagramItem]
   }
   
-  extension [Self <: dxDiagramItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxDiagramItem] (val x: Self) extends AnyVal {
     
     inline def setDataItem(value: Any): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object AnnotationsVerticalLineControlPointOptions {
     __obj.asInstanceOf[AnnotationsVerticalLineControlPointOptions]
   }
   
-  extension [Self <: AnnotationsVerticalLineControlPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsVerticalLineControlPointOptions] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

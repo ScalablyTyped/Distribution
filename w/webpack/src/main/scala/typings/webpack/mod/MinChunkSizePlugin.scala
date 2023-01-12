@@ -21,7 +21,8 @@ object MinChunkSizePlugin {
     __obj.asInstanceOf[MinChunkSizePlugin]
   }
   
-  extension [Self <: MinChunkSizePlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinChunkSizePlugin] (val x: Self) extends AnyVal {
     
     inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     

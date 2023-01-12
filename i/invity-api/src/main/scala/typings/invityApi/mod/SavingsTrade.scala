@@ -66,7 +66,8 @@ object SavingsTrade {
     __obj.asInstanceOf[SavingsTrade]
   }
   
-  extension [Self <: SavingsTrade](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavingsTrade] (val x: Self) extends AnyVal {
     
     inline def setAmlAnswers(value: js.Array[SavingsTradeAMLAnswer]): Self = StObject.set(x, "amlAnswers", value.asInstanceOf[js.Any])
     

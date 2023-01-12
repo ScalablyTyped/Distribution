@@ -19,7 +19,8 @@ object LabelOptions {
     __obj.asInstanceOf[LabelOptions]
   }
   
-  extension [Self <: LabelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelOptions] (val x: Self) extends AnyVal {
     
     inline def setEnableMassClear(value: Boolean): Self = StObject.set(x, "enableMassClear", value.asInstanceOf[js.Any])
     

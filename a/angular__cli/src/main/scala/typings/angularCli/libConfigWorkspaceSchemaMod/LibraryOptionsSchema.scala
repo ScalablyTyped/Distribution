@@ -44,7 +44,8 @@ object LibraryOptionsSchema {
     __obj.asInstanceOf[LibraryOptionsSchema]
   }
   
-  extension [Self <: LibraryOptionsSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LibraryOptionsSchema] (val x: Self) extends AnyVal {
     
     inline def setEntryFile(value: String): Self = StObject.set(x, "entryFile", value.asInstanceOf[js.Any])
     

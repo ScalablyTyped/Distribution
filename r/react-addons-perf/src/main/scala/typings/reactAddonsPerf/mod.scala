@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[ComponentPerfContext]
     }
     
-    extension [Self <: ComponentPerfContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentPerfContext] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object mod {
       __obj.asInstanceOf[Measurements]
     }
     
-    extension [Self <: Measurements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Measurements] (val x: Self) extends AnyVal {
       
       inline def setCounts(value: NumericPerfContext): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
       

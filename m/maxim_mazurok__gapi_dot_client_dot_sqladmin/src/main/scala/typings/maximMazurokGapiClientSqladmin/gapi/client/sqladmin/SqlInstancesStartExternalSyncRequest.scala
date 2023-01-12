@@ -22,7 +22,8 @@ object SqlInstancesStartExternalSyncRequest {
     __obj.asInstanceOf[SqlInstancesStartExternalSyncRequest]
   }
   
-  extension [Self <: SqlInstancesStartExternalSyncRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlInstancesStartExternalSyncRequest] (val x: Self) extends AnyVal {
     
     inline def setMysqlSyncConfig(value: MySqlSyncConfig): Self = StObject.set(x, "mysqlSyncConfig", value.asInstanceOf[js.Any])
     

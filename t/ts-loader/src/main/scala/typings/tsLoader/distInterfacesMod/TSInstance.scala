@@ -117,7 +117,8 @@ object TSInstance {
     __obj.asInstanceOf[TSInstance]
   }
   
-  extension [Self <: TSInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSInstance] (val x: Self) extends AnyVal {
     
     inline def setAppendTsTsxSuffixesIfRequired(value: String => String): Self = StObject.set(x, "appendTsTsxSuffixesIfRequired", js.Any.fromFunction1(value))
     

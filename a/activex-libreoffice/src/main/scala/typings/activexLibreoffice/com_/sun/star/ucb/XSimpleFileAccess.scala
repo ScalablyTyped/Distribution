@@ -164,7 +164,8 @@ object XSimpleFileAccess {
     __obj.asInstanceOf[XSimpleFileAccess]
   }
   
-  extension [Self <: XSimpleFileAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSimpleFileAccess] (val x: Self) extends AnyVal {
     
     inline def setCopy(value: (String, String) => Unit): Self = StObject.set(x, "copy", js.Any.fromFunction2(value))
     

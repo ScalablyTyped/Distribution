@@ -66,7 +66,8 @@ object XLoadable {
     __obj.asInstanceOf[XLoadable]
   }
   
-  extension [Self <: XLoadable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLoadable] (val x: Self) extends AnyVal {
     
     inline def setAddLoadListener(value: XLoadListener => Unit): Self = StObject.set(x, "addLoadListener", js.Any.fromFunction1(value))
     

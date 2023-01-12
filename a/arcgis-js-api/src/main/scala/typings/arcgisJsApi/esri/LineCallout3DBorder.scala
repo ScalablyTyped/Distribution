@@ -24,7 +24,8 @@ object LineCallout3DBorder {
     __obj.asInstanceOf[LineCallout3DBorder]
   }
   
-  extension [Self <: LineCallout3DBorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineCallout3DBorder] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

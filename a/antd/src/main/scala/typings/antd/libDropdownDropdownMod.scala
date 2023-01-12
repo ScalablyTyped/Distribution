@@ -45,7 +45,8 @@ object libDropdownDropdownMod extends Shortcut {
       __obj.asInstanceOf[Align]
     }
     
-    extension [Self <: Align](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Align] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object libDropdownDropdownMod extends Shortcut {
       __obj.asInstanceOf[DropdownArrowOptions]
     }
     
-    extension [Self <: DropdownArrowOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownArrowOptions] (val x: Self) extends AnyVal {
       
       inline def setPointAtCenter(value: Boolean): Self = StObject.set(x, "pointAtCenter", value.asInstanceOf[js.Any])
       
@@ -166,7 +168,8 @@ object libDropdownDropdownMod extends Shortcut {
       __obj.asInstanceOf[DropdownProps]
     }
     
-    extension [Self <: DropdownProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: Align): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

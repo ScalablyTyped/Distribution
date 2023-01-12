@@ -22,7 +22,8 @@ object ReaderListValueArgument {
     __obj.asInstanceOf[ReaderListValueArgument]
   }
   
-  extension [Self <: ReaderListValueArgument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReaderListValueArgument] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[ReaderArgument | Null]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

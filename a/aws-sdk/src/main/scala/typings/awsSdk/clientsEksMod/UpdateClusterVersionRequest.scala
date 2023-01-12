@@ -28,7 +28,8 @@ object UpdateClusterVersionRequest {
     __obj.asInstanceOf[UpdateClusterVersionRequest]
   }
   
-  extension [Self <: UpdateClusterVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateClusterVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: String): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     

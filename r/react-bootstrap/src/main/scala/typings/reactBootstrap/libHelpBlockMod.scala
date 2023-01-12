@@ -28,7 +28,8 @@ object libHelpBlockMod {
       __obj.asInstanceOf[HelpBlockProps]
     }
     
-    extension [Self <: HelpBlockProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelpBlockProps] (val x: Self) extends AnyVal {
       
       inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object PartialStyleRulesCardMedi {
     __obj.asInstanceOf[PartialStyleRulesCardMedi]
   }
   
-  extension [Self <: PartialStyleRulesCardMedi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesCardMedi] (val x: Self) extends AnyVal {
     
     inline def setMedia(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

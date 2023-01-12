@@ -71,7 +71,8 @@ object CreateInferenceSchedulerRequest {
     __obj.asInstanceOf[CreateInferenceSchedulerRequest]
   }
   
-  extension [Self <: CreateInferenceSchedulerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateInferenceSchedulerRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: IdempotenceToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

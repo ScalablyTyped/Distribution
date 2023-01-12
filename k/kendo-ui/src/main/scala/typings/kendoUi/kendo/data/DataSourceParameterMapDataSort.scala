@@ -17,7 +17,8 @@ object DataSourceParameterMapDataSort {
     __obj.asInstanceOf[DataSourceParameterMapDataSort]
   }
   
-  extension [Self <: DataSourceParameterMapDataSort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceParameterMapDataSort] (val x: Self) extends AnyVal {
     
     inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     

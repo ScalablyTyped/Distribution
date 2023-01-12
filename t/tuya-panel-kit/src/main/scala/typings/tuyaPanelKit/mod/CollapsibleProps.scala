@@ -117,7 +117,8 @@ object CollapsibleProps {
     __obj.asInstanceOf[CollapsibleProps]
   }
   
-  extension [Self <: CollapsibleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollapsibleProps] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: top | center | bottom): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

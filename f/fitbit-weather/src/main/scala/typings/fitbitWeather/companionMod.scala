@@ -29,7 +29,8 @@ object companionMod {
       __obj.asInstanceOf[Configuration]
     }
     
-    extension [Self <: Configuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object companionMod {
       __obj.asInstanceOf[ProvidersCodes]
     }
     
-    extension [Self <: ProvidersCodes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvidersCodes] (val x: Self) extends AnyVal {
       
       inline def setDarksky(value: Double): Self = StObject.set(x, "darksky", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object XAccessibleGroupPosition {
     __obj.asInstanceOf[XAccessibleGroupPosition]
   }
   
-  extension [Self <: XAccessibleGroupPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccessibleGroupPosition] (val x: Self) extends AnyVal {
     
     inline def setGetGroupPosition(value: Any => SafeArray[Double]): Self = StObject.set(x, "getGroupPosition", js.Any.fromFunction1(value))
     

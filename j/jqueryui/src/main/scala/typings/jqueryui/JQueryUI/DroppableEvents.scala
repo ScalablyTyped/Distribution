@@ -26,7 +26,8 @@ object DroppableEvents {
     __obj.asInstanceOf[DroppableEvents]
   }
   
-  extension [Self <: DroppableEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DroppableEvents] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
     

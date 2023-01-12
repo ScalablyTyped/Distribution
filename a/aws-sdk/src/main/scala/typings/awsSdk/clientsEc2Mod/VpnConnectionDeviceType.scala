@@ -33,7 +33,8 @@ object VpnConnectionDeviceType {
     __obj.asInstanceOf[VpnConnectionDeviceType]
   }
   
-  extension [Self <: VpnConnectionDeviceType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpnConnectionDeviceType] (val x: Self) extends AnyVal {
     
     inline def setPlatform(value: String): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
     

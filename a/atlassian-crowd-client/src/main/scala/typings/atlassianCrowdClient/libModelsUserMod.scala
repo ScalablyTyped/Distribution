@@ -148,7 +148,8 @@ object libModelsUserMod {
       __obj.asInstanceOf[User]
     }
     
-    extension [Self <: User](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -205,7 +206,8 @@ object libModelsUserMod {
       __obj.asInstanceOf[UserObj]
     }
     
-    extension [Self <: UserObj](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserObj] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

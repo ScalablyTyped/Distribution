@@ -76,7 +76,8 @@ object geometryServiceToGeoCoordinateStringParams {
     __obj.asInstanceOf[geometryServiceToGeoCoordinateStringParams]
   }
   
-  extension [Self <: geometryServiceToGeoCoordinateStringParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: geometryServiceToGeoCoordinateStringParams] (val x: Self) extends AnyVal {
     
     inline def setAddSpaces(value: Boolean): Self = StObject.set(x, "addSpaces", value.asInstanceOf[js.Any])
     

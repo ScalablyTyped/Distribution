@@ -30,7 +30,8 @@ object ngccSrcPathMappingsMod {
       __obj.asInstanceOf[PathMappings]
     }
     
-    extension [Self <: PathMappings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathMappings] (val x: Self) extends AnyVal {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       

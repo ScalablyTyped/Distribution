@@ -27,7 +27,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setExpandFirst(value: Boolean): Self = StObject.set(x, "expandFirst", value.asInstanceOf[js.Any])
       

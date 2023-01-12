@@ -23,7 +23,8 @@ object ApacheKafkaClusterDescription {
     __obj.asInstanceOf[ApacheKafkaClusterDescription]
   }
   
-  extension [Self <: ApacheKafkaClusterDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApacheKafkaClusterDescription] (val x: Self) extends AnyVal {
     
     inline def setBootstrapServers(value: string): Self = StObject.set(x, "bootstrapServers", value.asInstanceOf[js.Any])
     

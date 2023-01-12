@@ -32,7 +32,8 @@ object distDeclarationsSrcDonutMod {
       __obj.asInstanceOf[DonutProps]
     }
     
-    extension [Self <: DonutProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DonutProps] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       

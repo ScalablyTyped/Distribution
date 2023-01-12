@@ -65,7 +65,8 @@ object libMod {
       __obj.asInstanceOf[VictoryPolarAxisProps]
     }
     
-    extension [Self <: VictoryPolarAxisProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryPolarAxisProps] (val x: Self) extends AnyVal {
       
       inline def setAxisAngle(value: Double): Self = StObject.set(x, "axisAngle", value.asInstanceOf[js.Any])
       

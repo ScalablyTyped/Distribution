@@ -31,7 +31,8 @@ object BillingPlanPreview {
     __obj.asInstanceOf[BillingPlanPreview]
   }
   
-  extension [Self <: BillingPlanPreview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BillingPlanPreview] (val x: Self) extends AnyVal {
     
     inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     

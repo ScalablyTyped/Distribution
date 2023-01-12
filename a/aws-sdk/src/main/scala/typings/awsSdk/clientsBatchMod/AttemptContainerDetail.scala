@@ -43,7 +43,8 @@ object AttemptContainerDetail {
     __obj.asInstanceOf[AttemptContainerDetail]
   }
   
-  extension [Self <: AttemptContainerDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttemptContainerDetail] (val x: Self) extends AnyVal {
     
     inline def setContainerInstanceArn(value: String): Self = StObject.set(x, "containerInstanceArn", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DetectMetricSetConfigResponse {
     __obj.asInstanceOf[DetectMetricSetConfigResponse]
   }
   
-  extension [Self <: DetectMetricSetConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectMetricSetConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setDetectedMetricSetConfig(value: DetectedMetricSetConfig): Self = StObject.set(x, "DetectedMetricSetConfig", value.asInstanceOf[js.Any])
     

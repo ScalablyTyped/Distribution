@@ -17,7 +17,8 @@ object EnterpriseCallbackResponse {
     __obj.asInstanceOf[EnterpriseCallbackResponse]
   }
   
-  extension [Self <: EnterpriseCallbackResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnterpriseCallbackResponse] (val x: Self) extends AnyVal {
     
     inline def setContinueWithOnfidoSubmission(value: Boolean): Self = StObject.set(x, "continueWithOnfidoSubmission", value.asInstanceOf[js.Any])
     

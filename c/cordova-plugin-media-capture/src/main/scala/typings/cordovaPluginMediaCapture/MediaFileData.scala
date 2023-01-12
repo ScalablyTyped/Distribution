@@ -29,7 +29,8 @@ object MediaFileData {
     __obj.asInstanceOf[MediaFileData]
   }
   
-  extension [Self <: MediaFileData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaFileData] (val x: Self) extends AnyVal {
     
     inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     

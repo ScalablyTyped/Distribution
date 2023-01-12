@@ -23,7 +23,8 @@ object reactMod {
       __obj.asInstanceOf[StyleHTMLAttributes[T]]
     }
     
-    extension [Self <: StyleHTMLAttributes[?], T](x: Self & StyleHTMLAttributes[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleHTMLAttributes[?], T] (val x: Self & StyleHTMLAttributes[T]) extends AnyVal {
       
       inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       

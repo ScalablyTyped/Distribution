@@ -33,7 +33,8 @@ object RightsizingRecommendationSummary {
     __obj.asInstanceOf[RightsizingRecommendationSummary]
   }
   
-  extension [Self <: RightsizingRecommendationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RightsizingRecommendationSummary] (val x: Self) extends AnyVal {
     
     inline def setEstimatedTotalMonthlySavingsAmount(value: GenericString): Self = StObject.set(x, "EstimatedTotalMonthlySavingsAmount", value.asInstanceOf[js.Any])
     

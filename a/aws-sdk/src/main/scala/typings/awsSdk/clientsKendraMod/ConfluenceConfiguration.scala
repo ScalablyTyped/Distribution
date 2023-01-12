@@ -73,7 +73,8 @@ object ConfluenceConfiguration {
     __obj.asInstanceOf[ConfluenceConfiguration]
   }
   
-  extension [Self <: ConfluenceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfluenceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAttachmentConfiguration(value: ConfluenceAttachmentConfiguration): Self = StObject.set(x, "AttachmentConfiguration", value.asInstanceOf[js.Any])
     

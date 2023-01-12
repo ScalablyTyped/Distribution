@@ -17,7 +17,8 @@ object ObjectWatchOptionItem {
     __obj.asInstanceOf[ObjectWatchOptionItem]
   }
   
-  extension [Self <: ObjectWatchOptionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectWatchOptionItem] (val x: Self) extends AnyVal {
     
     inline def setHandler(value: (WatchCallback[Any, Any]) | String): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     

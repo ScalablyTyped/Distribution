@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[Decodable]
     }
     
-    extension [Self <: Decodable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Decodable] (val x: Self) extends AnyVal {
       
       inline def setDecode(value: () => js.Promise[DecodedImage]): Self = StObject.set(x, "decode", js.Any.fromFunction0(value))
     }
@@ -53,7 +54,8 @@ object mod {
       __obj.asInstanceOf[DecodedImage]
     }
     
-    extension [Self <: DecodedImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodedImage] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object mod {
       __obj.asInstanceOf[HasBuffer]
     }
     
-    extension [Self <: HasBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HasBuffer] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: ArrayBufferLike): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     }

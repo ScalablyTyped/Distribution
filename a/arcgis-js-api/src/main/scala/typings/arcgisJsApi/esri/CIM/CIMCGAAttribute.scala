@@ -33,7 +33,8 @@ object CIMCGAAttribute {
     __obj.asInstanceOf[CIMCGAAttribute]
   }
   
-  extension [Self <: CIMCGAAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMCGAAttribute] (val x: Self) extends AnyVal {
     
     inline def setCGAAttributeType(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CGAAttributeType * / any */ String

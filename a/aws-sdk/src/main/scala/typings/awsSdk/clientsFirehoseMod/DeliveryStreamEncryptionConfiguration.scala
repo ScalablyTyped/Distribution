@@ -33,7 +33,8 @@ object DeliveryStreamEncryptionConfiguration {
     __obj.asInstanceOf[DeliveryStreamEncryptionConfiguration]
   }
   
-  extension [Self <: DeliveryStreamEncryptionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeliveryStreamEncryptionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setFailureDescription(value: FailureDescription): Self = StObject.set(x, "FailureDescription", value.asInstanceOf[js.Any])
     

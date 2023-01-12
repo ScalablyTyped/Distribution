@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Direct]
     }
     
-    extension [Self <: Direct](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Direct] (val x: Self) extends AnyVal {
       
       inline def setDirect(value: Boolean): Self = StObject.set(x, "direct", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[Rate]
     }
     
-    extension [Self <: Rate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rate] (val x: Self) extends AnyVal {
       
       inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
       

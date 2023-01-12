@@ -49,7 +49,8 @@ object XTickConfiguration {
     __obj.asInstanceOf[XTickConfiguration]
   }
   
-  extension [Self <: XTickConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTickConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCentered(value: Boolean): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
     

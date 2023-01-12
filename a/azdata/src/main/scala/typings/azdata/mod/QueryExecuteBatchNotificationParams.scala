@@ -17,7 +17,8 @@ object QueryExecuteBatchNotificationParams {
     __obj.asInstanceOf[QueryExecuteBatchNotificationParams]
   }
   
-  extension [Self <: QueryExecuteBatchNotificationParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryExecuteBatchNotificationParams] (val x: Self) extends AnyVal {
     
     inline def setBatchSummary(value: BatchSummary): Self = StObject.set(x, "batchSummary", value.asInstanceOf[js.Any])
     

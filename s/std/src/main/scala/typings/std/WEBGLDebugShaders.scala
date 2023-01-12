@@ -16,7 +16,8 @@ object WEBGLDebugShaders {
     __obj.asInstanceOf[WEBGLDebugShaders]
   }
   
-  extension [Self <: WEBGLDebugShaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WEBGLDebugShaders] (val x: Self) extends AnyVal {
     
     inline def setGetTranslatedShaderSource(value: WebGLShader => java.lang.String): Self = StObject.set(x, "getTranslatedShaderSource", js.Any.fromFunction1(value))
   }

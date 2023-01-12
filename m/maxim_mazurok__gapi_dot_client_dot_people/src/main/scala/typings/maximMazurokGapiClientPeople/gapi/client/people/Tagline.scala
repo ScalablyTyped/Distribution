@@ -19,7 +19,8 @@ object Tagline {
     __obj.asInstanceOf[Tagline]
   }
   
-  extension [Self <: Tagline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tagline] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ASTDirective {
     __obj.asInstanceOf[ASTDirective]
   }
   
-  extension [Self <: ASTDirective](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASTDirective] (val x: Self) extends AnyVal {
     
     inline def setArg(value: String): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
     

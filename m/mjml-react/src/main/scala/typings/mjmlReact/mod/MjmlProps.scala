@@ -20,7 +20,8 @@ object MjmlProps {
     __obj.asInstanceOf[MjmlProps]
   }
   
-  extension [Self <: MjmlProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MjmlProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

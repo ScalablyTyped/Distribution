@@ -42,7 +42,8 @@ object libEnsNormalizeDecoderMod {
       __obj.asInstanceOf[Branch]
     }
     
-    extension [Self <: Branch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Branch] (val x: Self) extends AnyVal {
       
       inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object libEnsNormalizeDecoderMod {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setBranches(value: js.Array[Branch]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       

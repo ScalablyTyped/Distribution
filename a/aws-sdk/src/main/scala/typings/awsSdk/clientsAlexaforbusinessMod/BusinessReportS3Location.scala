@@ -23,7 +23,8 @@ object BusinessReportS3Location {
     __obj.asInstanceOf[BusinessReportS3Location]
   }
   
-  extension [Self <: BusinessReportS3Location](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BusinessReportS3Location] (val x: Self) extends AnyVal {
     
     inline def setBucketName(value: CustomerS3BucketName): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
     

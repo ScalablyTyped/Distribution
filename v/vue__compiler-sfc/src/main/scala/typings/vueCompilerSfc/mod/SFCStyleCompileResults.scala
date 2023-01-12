@@ -30,7 +30,8 @@ object SFCStyleCompileResults {
     __obj.asInstanceOf[SFCStyleCompileResults]
   }
   
-  extension [Self <: SFCStyleCompileResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SFCStyleCompileResults] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object XTextSearch2 {
     __obj.asInstanceOf[XTextSearch2]
   }
   
-  extension [Self <: XTextSearch2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextSearch2] (val x: Self) extends AnyVal {
     
     inline def setSetOptions2(value: SearchOptions2 => Unit): Self = StObject.set(x, "setOptions2", js.Any.fromFunction1(value))
   }

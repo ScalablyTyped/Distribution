@@ -131,7 +131,8 @@ object mod {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: Any): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -445,7 +446,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowPanToNext(value: Boolean): Self = StObject.set(x, "allowPanToNext", value.asInstanceOf[js.Any])
       
@@ -864,7 +866,8 @@ object mod {
       __obj.asInstanceOf[UI[T]]
     }
     
-    extension [Self <: UI[?], T /* <: Options */](x: Self & UI[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UI[?], T /* <: Options */] (val x: Self & UI[T]) extends AnyVal {
       
       inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     }

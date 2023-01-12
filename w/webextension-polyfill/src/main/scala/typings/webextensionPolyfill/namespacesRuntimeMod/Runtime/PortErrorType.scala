@@ -19,7 +19,8 @@ object PortErrorType {
     __obj.asInstanceOf[PortErrorType]
   }
   
-  extension [Self <: PortErrorType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortErrorType] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }

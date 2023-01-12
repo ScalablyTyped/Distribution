@@ -123,7 +123,8 @@ object ExchangeTrade {
     __obj.asInstanceOf[ExchangeTrade]
   }
   
-  extension [Self <: ExchangeTrade](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExchangeTrade] (val x: Self) extends AnyVal {
     
     inline def setApprovalGasEstimate(value: Double): Self = StObject.set(x, "approvalGasEstimate", value.asInstanceOf[js.Any])
     

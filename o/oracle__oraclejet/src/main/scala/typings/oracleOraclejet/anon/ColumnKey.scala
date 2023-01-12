@@ -29,7 +29,8 @@ object ColumnKey {
     __obj.asInstanceOf[ColumnKey]
   }
   
-  extension [Self <: ColumnKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnKey] (val x: Self) extends AnyVal {
     
     inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     

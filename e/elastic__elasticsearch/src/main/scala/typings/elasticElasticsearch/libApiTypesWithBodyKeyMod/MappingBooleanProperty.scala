@@ -28,7 +28,8 @@ object MappingBooleanProperty {
     __obj.asInstanceOf[MappingBooleanProperty]
   }
   
-  extension [Self <: MappingBooleanProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingBooleanProperty] (val x: Self) extends AnyVal {
     
     inline def setBoost(value: double): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
     

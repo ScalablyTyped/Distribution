@@ -19,7 +19,8 @@ object GlobalResource {
     __obj.asInstanceOf[GlobalResource]
   }
   
-  extension [Self <: GlobalResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalResource] (val x: Self) extends AnyVal {
     
     inline def setDomains(value: DomainsResource): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
     

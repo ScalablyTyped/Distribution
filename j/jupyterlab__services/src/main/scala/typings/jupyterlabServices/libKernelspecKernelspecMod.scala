@@ -55,7 +55,8 @@ object libKernelspecKernelspecMod {
       __obj.asInstanceOf[IManager]
     }
     
-    extension [Self <: IManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IManager] (val x: Self) extends AnyVal {
       
       inline def setRefreshSpecs(value: () => js.Promise[Unit]): Self = StObject.set(x, "refreshSpecs", js.Any.fromFunction0(value))
       

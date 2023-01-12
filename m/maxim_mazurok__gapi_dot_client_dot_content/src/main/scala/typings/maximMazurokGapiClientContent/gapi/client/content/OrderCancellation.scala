@@ -35,7 +35,8 @@ object OrderCancellation {
     __obj.asInstanceOf[OrderCancellation]
   }
   
-  extension [Self <: OrderCancellation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderCancellation] (val x: Self) extends AnyVal {
     
     inline def setActor(value: String): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

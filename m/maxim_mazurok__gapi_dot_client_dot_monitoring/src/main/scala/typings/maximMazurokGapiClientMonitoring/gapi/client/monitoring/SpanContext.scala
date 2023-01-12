@@ -19,7 +19,8 @@ object SpanContext {
     __obj.asInstanceOf[SpanContext]
   }
   
-  extension [Self <: SpanContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpanContext] (val x: Self) extends AnyVal {
     
     inline def setSpanName(value: String): Self = StObject.set(x, "spanName", value.asInstanceOf[js.Any])
     

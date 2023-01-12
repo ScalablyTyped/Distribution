@@ -26,7 +26,8 @@ object SlotDescriptor {
     __obj.asInstanceOf[SlotDescriptor]
   }
   
-  extension [Self <: SlotDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotDescriptor] (val x: Self) extends AnyVal {
     
     inline def setBindings(value: js.Array[ParamTag]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     

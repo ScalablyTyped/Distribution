@@ -53,7 +53,8 @@ object BundleTask {
     __obj.asInstanceOf[BundleTask]
   }
   
-  extension [Self <: BundleTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BundleTask] (val x: Self) extends AnyVal {
     
     inline def setBundleId(value: String): Self = StObject.set(x, "BundleId", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Button {
     __obj.asInstanceOf[Button]
   }
   
-  extension [Self <: Button](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
     
     inline def setInfoPathDotButton_typekey(value: Button): Self = StObject.set(x, "InfoPath.Button_typekey", value.asInstanceOf[js.Any])
   }

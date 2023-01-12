@@ -24,7 +24,8 @@ object DialogNodeOutput {
     __obj.asInstanceOf[DialogNodeOutput]
   }
   
-  extension [Self <: DialogNodeOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogNodeOutput] (val x: Self) extends AnyVal {
     
     inline def setGeneric(value: js.Array[DialogNodeOutputGeneric]): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
     

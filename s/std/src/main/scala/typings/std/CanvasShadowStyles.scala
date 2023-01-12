@@ -25,7 +25,8 @@ object CanvasShadowStyles {
     __obj.asInstanceOf[CanvasShadowStyles]
   }
   
-  extension [Self <: CanvasShadowStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasShadowStyles] (val x: Self) extends AnyVal {
     
     inline def setShadowBlur(value: Double): Self = StObject.set(x, "shadowBlur", value.asInstanceOf[js.Any])
     

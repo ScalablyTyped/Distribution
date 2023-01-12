@@ -84,7 +84,8 @@ object PopupOpenOptions {
     __obj.asInstanceOf[PopupOpenOptions]
   }
   
-  extension [Self <: PopupOpenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupOpenOptions] (val x: Self) extends AnyVal {
     
     inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     

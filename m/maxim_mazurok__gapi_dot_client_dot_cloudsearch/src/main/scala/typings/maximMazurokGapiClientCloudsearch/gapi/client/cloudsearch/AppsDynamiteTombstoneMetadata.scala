@@ -16,7 +16,8 @@ object AppsDynamiteTombstoneMetadata {
     __obj.asInstanceOf[AppsDynamiteTombstoneMetadata]
   }
   
-  extension [Self <: AppsDynamiteTombstoneMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteTombstoneMetadata] (val x: Self) extends AnyVal {
     
     inline def setTombstoneType(value: String): Self = StObject.set(x, "tombstoneType", value.asInstanceOf[js.Any])
     

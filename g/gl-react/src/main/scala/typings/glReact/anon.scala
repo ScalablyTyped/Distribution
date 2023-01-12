@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Color]
     }
     
-    extension [Self <: Color](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Vec4): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     }
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Dst]
     }
     
-    extension [Self <: Dst](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dst] (val x: Self) extends AnyVal {
       
       inline def setDst(value: () => Unit): Self = StObject.set(x, "dst", js.Any.fromFunction0(value))
       
@@ -58,7 +60,8 @@ object anon {
       __obj.asInstanceOf[GetGLSize]
     }
     
-    extension [Self <: GetGLSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetGLSize] (val x: Self) extends AnyVal {
       
       inline def setGetGLSize(value: () => js.Tuple2[Double, Double]): Self = StObject.set(x, "getGLSize", js.Any.fromFunction0(value))
     }
@@ -77,7 +80,8 @@ object anon {
       __obj.asInstanceOf[GlParent]
     }
     
-    extension [Self <: GlParent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlParent] (val x: Self) extends AnyVal {
       
       inline def setGlParent(value: Surface[Any] | typings.glReact.mod.Node): Self = StObject.set(x, "glParent", value.asInstanceOf[js.Any])
       
@@ -96,7 +100,8 @@ object anon {
       __obj.asInstanceOf[GlParentAny]
     }
     
-    extension [Self <: GlParentAny](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlParentAny] (val x: Self) extends AnyVal {
       
       inline def setGlParent(value: Any): Self = StObject.set(x, "glParent", value.asInstanceOf[js.Any])
     }
@@ -113,7 +118,8 @@ object anon {
       __obj.asInstanceOf[GlParentBus]
     }
     
-    extension [Self <: GlParentBus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlParentBus] (val x: Self) extends AnyVal {
       
       inline def setGlParent(value: Bus): Self = StObject.set(x, "glParent", value.asInstanceOf[js.Any])
     }
@@ -132,7 +138,8 @@ object anon {
       __obj.asInstanceOf[GlSurface]
     }
     
-    extension [Self <: GlSurface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlSurface] (val x: Self) extends AnyVal {
       
       inline def setGlParent(value: Any): Self = StObject.set(x, "glParent", value.asInstanceOf[js.Any])
       
@@ -154,7 +161,8 @@ object anon {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setNode(value: typings.glReact.mod.Node | Bus): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
@@ -176,7 +184,8 @@ object anon {
       __obj.asInstanceOf[Obj]
     }
     
-    extension [Self <: Obj](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Obj] (val x: Self) extends AnyVal {
       
       inline def setObj(value: Any): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
       
@@ -200,7 +209,8 @@ object anon {
       __obj.asInstanceOf[Ratio]
     }
     
-    extension [Self <: Ratio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ratio] (val x: Self) extends AnyVal {
       
       inline def setObj(value: Any): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
       

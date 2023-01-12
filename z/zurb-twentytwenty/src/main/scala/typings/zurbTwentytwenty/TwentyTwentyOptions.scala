@@ -29,7 +29,8 @@ object TwentyTwentyOptions {
     __obj.asInstanceOf[TwentyTwentyOptions]
   }
   
-  extension [Self <: TwentyTwentyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TwentyTwentyOptions] (val x: Self) extends AnyVal {
     
     inline def setAfter_label(value: String): Self = StObject.set(x, "after_label", value.asInstanceOf[js.Any])
     

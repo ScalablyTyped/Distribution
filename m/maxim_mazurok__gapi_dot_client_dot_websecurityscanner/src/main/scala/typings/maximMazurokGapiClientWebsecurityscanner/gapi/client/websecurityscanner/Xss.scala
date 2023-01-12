@@ -25,7 +25,8 @@ object Xss {
     __obj.asInstanceOf[Xss]
   }
   
-  extension [Self <: Xss](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Xss] (val x: Self) extends AnyVal {
     
     inline def setAttackVector(value: String): Self = StObject.set(x, "attackVector", value.asInstanceOf[js.Any])
     

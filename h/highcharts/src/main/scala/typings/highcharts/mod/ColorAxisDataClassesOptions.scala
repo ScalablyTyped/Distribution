@@ -48,7 +48,8 @@ object ColorAxisDataClassesOptions {
     __obj.asInstanceOf[ColorAxisDataClassesOptions]
   }
   
-  extension [Self <: ColorAxisDataClassesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorAxisDataClassesOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

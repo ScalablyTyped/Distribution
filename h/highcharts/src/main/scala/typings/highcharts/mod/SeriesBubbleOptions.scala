@@ -106,7 +106,8 @@ object SeriesBubbleOptions {
     __obj.asInstanceOf[SeriesBubbleOptions]
   }
   
-  extension [Self <: SeriesBubbleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesBubbleOptions] (val x: Self) extends AnyVal {
     
     inline def setData(
       value: js.Array[

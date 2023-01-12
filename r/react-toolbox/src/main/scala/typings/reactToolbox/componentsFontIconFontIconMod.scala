@@ -58,7 +58,8 @@ object componentsFontIconFontIconMod {
       __obj.asInstanceOf[FontIconProps]
     }
     
-    extension [Self <: FontIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontIconProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

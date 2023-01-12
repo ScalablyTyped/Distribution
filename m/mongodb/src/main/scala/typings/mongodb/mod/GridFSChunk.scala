@@ -27,7 +27,8 @@ object GridFSChunk {
     __obj.asInstanceOf[GridFSChunk]
   }
   
-  extension [Self <: GridFSChunk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridFSChunk] (val x: Self) extends AnyVal {
     
     inline def setData(value: Buffer | js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object VoiceSearchHelperParams {
     __obj.asInstanceOf[VoiceSearchHelperParams]
   }
   
-  extension [Self <: VoiceSearchHelperParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceSearchHelperParams] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object CancelPolicyGenerationRequest {
     __obj.asInstanceOf[CancelPolicyGenerationRequest]
   }
   
-  extension [Self <: CancelPolicyGenerationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelPolicyGenerationRequest] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
   }

@@ -16,7 +16,8 @@ object GIOInitOptions {
     __obj.asInstanceOf[GIOInitOptions]
   }
   
-  extension [Self <: GIOInitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GIOInitOptions] (val x: Self) extends AnyVal {
     
     inline def setImp(value: Boolean): Self = StObject.set(x, "imp", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DescribeTextTranslationJobResponse {
     __obj.asInstanceOf[DescribeTextTranslationJobResponse]
   }
   
-  extension [Self <: DescribeTextTranslationJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTextTranslationJobResponse] (val x: Self) extends AnyVal {
     
     inline def setTextTranslationJobProperties(value: TextTranslationJobProperties): Self = StObject.set(x, "TextTranslationJobProperties", value.asInstanceOf[js.Any])
     

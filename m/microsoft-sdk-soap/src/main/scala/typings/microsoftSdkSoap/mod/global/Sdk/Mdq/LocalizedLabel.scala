@@ -23,7 +23,8 @@ object LocalizedLabel {
     __obj.asInstanceOf[LocalizedLabel]
   }
   
-  extension [Self <: LocalizedLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalizedLabel] (val x: Self) extends AnyVal {
     
     inline def setHasChanged(value: Boolean): Self = StObject.set(x, "HasChanged", value.asInstanceOf[js.Any])
     

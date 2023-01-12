@@ -56,7 +56,8 @@ object SetQueueOptions {
     __obj.asInstanceOf[SetQueueOptions]
   }
   
-  extension [Self <: SetQueueOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetQueueOptions] (val x: Self) extends AnyVal {
     
     inline def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
     

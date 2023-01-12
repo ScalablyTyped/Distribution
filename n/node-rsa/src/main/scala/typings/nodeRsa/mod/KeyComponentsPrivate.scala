@@ -41,7 +41,8 @@ object KeyComponentsPrivate {
     __obj.asInstanceOf[KeyComponentsPrivate]
   }
   
-  extension [Self <: KeyComponentsPrivate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyComponentsPrivate] (val x: Self) extends AnyVal {
     
     inline def setCoeff(value: Buffer): Self = StObject.set(x, "coeff", value.asInstanceOf[js.Any])
     

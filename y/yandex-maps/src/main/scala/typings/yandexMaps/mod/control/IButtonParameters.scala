@@ -22,7 +22,8 @@ object IButtonParameters {
     __obj.asInstanceOf[IButtonParameters]
   }
   
-  extension [Self <: IButtonParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IButtonParameters] (val x: Self) extends AnyVal {
     
     inline def setData(value: Content): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

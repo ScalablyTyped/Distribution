@@ -111,7 +111,8 @@ object DatepickerOptions {
     __obj.asInstanceOf[DatepickerOptions]
   }
   
-  extension [Self <: DatepickerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatepickerOptions] (val x: Self) extends AnyVal {
     
     inline def setAssumeNearbyYear(value: Boolean | Double): Self = StObject.set(x, "assumeNearbyYear", value.asInstanceOf[js.Any])
     

@@ -92,7 +92,8 @@ object libContentsMod {
         __obj.asInstanceOf[IChangedArgs]
       }
       
-      extension [Self <: IChangedArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IChangedArgs] (val x: Self) extends AnyVal {
         
         inline def setNewValue(value: PartialIModel): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
         
@@ -128,7 +129,8 @@ object libContentsMod {
         __obj.asInstanceOf[ICheckpointModel]
       }
       
-      extension [Self <: ICheckpointModel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICheckpointModel] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -166,7 +168,8 @@ object libContentsMod {
         __obj.asInstanceOf[ICreateOptions]
       }
       
-      extension [Self <: ICreateOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICreateOptions] (val x: Self) extends AnyVal {
         
         inline def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
         
@@ -365,7 +368,8 @@ object libContentsMod {
         __obj.asInstanceOf[IFetchOptions]
       }
       
-      extension [Self <: IFetchOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IFetchOptions] (val x: Self) extends AnyVal {
         
         inline def setContent(value: Boolean): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
@@ -675,7 +679,8 @@ object libContentsMod {
         __obj.asInstanceOf[IModel]
       }
       
-      extension [Self <: IModel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IModel] (val x: Self) extends AnyVal {
         
         inline def setChunk(value: Double): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
         
@@ -828,7 +833,8 @@ object libContentsMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setDefaultDrive(value: IDrive): Self = StObject.set(x, "defaultDrive", value.asInstanceOf[js.Any])
         
@@ -930,7 +936,8 @@ object libContentsMod {
         __obj.asInstanceOf[typings.jupyterlabServices.libContentsMod.Drive.IOptions]
       }
       
-      extension [Self <: typings.jupyterlabServices.libContentsMod.Drive.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabServices.libContentsMod.Drive.IOptions] (val x: Self) extends AnyVal {
         
         inline def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
         

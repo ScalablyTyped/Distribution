@@ -18,7 +18,8 @@ object GoogleActionsV2TriggerContextTimeContext {
     __obj.asInstanceOf[GoogleActionsV2TriggerContextTimeContext]
   }
   
-  extension [Self <: GoogleActionsV2TriggerContextTimeContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2TriggerContextTimeContext] (val x: Self) extends AnyVal {
     
     inline def setFrequency(value: GoogleActionsV2TriggerContextTimeContextFrequency): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     

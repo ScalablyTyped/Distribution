@@ -43,7 +43,8 @@ object SeveritySummary {
     __obj.asInstanceOf[SeveritySummary]
   }
   
-  extension [Self <: SeveritySummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeveritySummary] (val x: Self) extends AnyVal {
     
     inline def setCriticalCount(value: ComplianceSummaryCount): Self = StObject.set(x, "CriticalCount", value.asInstanceOf[js.Any])
     

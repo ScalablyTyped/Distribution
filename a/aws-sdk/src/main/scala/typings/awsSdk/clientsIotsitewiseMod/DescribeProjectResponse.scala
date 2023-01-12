@@ -55,7 +55,8 @@ object DescribeProjectResponse {
     __obj.asInstanceOf[DescribeProjectResponse]
   }
   
-  extension [Self <: DescribeProjectResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeProjectResponse] (val x: Self) extends AnyVal {
     
     inline def setPortalId(value: ID): Self = StObject.set(x, "portalId", value.asInstanceOf[js.Any])
     

@@ -168,7 +168,8 @@ object IgHtmlEditor {
     __obj.asInstanceOf[IgHtmlEditor]
   }
   
-  extension [Self <: IgHtmlEditor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgHtmlEditor] (val x: Self) extends AnyVal {
     
     inline def setActionExecuted(value: (/* event */ Event, /* ui */ ActionExecutedEventUIParam) => Unit): Self = StObject.set(x, "actionExecuted", js.Any.fromFunction2(value))
     

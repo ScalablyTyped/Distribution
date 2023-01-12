@@ -17,7 +17,8 @@ object KnockoutPagingDefaultOptions {
     __obj.asInstanceOf[KnockoutPagingDefaultOptions]
   }
   
-  extension [Self <: KnockoutPagingDefaultOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutPagingDefaultOptions] (val x: Self) extends AnyVal {
     
     inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
     

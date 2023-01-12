@@ -19,7 +19,8 @@ object StateCfg {
     __obj.asInstanceOf[StateCfg]
   }
   
-  extension [Self <: StateCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateCfg] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: js.Object | StateStyleCallback): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

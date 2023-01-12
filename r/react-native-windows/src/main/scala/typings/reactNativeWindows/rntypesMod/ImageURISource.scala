@@ -87,7 +87,8 @@ object ImageURISource {
     __obj.asInstanceOf[ImageURISource]
   }
   
-  extension [Self <: ImageURISource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageURISource] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

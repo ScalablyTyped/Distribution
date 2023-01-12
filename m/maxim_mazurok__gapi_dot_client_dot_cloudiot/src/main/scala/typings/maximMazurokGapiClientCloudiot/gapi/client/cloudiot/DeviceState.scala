@@ -19,7 +19,8 @@ object DeviceState {
     __obj.asInstanceOf[DeviceState]
   }
   
-  extension [Self <: DeviceState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceState] (val x: Self) extends AnyVal {
     
     inline def setBinaryData(value: String): Self = StObject.set(x, "binaryData", value.asInstanceOf[js.Any])
     

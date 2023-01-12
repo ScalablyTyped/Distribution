@@ -25,7 +25,8 @@ object ReferralRequestRequester {
     __obj.asInstanceOf[ReferralRequestRequester]
   }
   
-  extension [Self <: ReferralRequestRequester](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferralRequestRequester] (val x: Self) extends AnyVal {
     
     inline def setAgent(value: Reference): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     

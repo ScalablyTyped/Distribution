@@ -18,7 +18,8 @@ object HotKeyDebuggingInfo {
     __obj.asInstanceOf[HotKeyDebuggingInfo]
   }
   
-  extension [Self <: HotKeyDebuggingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HotKeyDebuggingInfo] (val x: Self) extends AnyVal {
     
     inline def setDetectedHotKeys(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.dataflow.gapi.client.dataflow.HotKeyInfo} */ js.Any

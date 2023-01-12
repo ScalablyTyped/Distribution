@@ -23,7 +23,8 @@ object HeightfieldOptions {
     __obj.asInstanceOf[HeightfieldOptions]
   }
   
-  extension [Self <: HeightfieldOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeightfieldOptions] (val x: Self) extends AnyVal {
     
     inline def setElementWidth(value: Double): Self = StObject.set(x, "elementWidth", value.asInstanceOf[js.Any])
     

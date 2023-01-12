@@ -27,7 +27,8 @@ object GrantTokenPermissions {
     __obj.asInstanceOf[GrantTokenPermissions]
   }
   
-  extension [Self <: GrantTokenPermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrantTokenPermissions] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: Boolean): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Address]
     }
     
-    extension [Self <: Address](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: Null): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[ClassName]
     }
     
-    extension [Self <: ClassName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -78,7 +80,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: Address6): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -107,7 +110,8 @@ object anon {
       __obj.asInstanceOf[GroupIndividual]
     }
     
-    extension [Self <: GroupIndividual](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupIndividual] (val x: Self) extends AnyVal {
       
       inline def setGroupIndividual(value: Boolean): Self = StObject.set(x, "groupIndividual", value.asInstanceOf[js.Any])
       

@@ -315,7 +315,8 @@ object sapMQuickViewGroupMod {
       __obj.asInstanceOf[QuickViewGroupSettings]
     }
     
-    extension [Self <: QuickViewGroupSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickViewGroupSettings] (val x: Self) extends AnyVal {
       
       inline def setElements(
         value: js.Array[typings.openui5.sapMQuickViewGroupElementMod.default] | typings.openui5.sapMQuickViewGroupElementMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

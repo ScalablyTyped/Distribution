@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Mechanism]
     }
     
-    extension [Self <: Mechanism](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mechanism] (val x: Self) extends AnyVal {
       
       inline def setMechanism(value: String): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setMechanism(value: String): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[ServerProperties]
     }
     
-    extension [Self <: ServerProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerProperties] (val x: Self) extends AnyVal {
       
       inline def setServerProperties(value: typings.amqplib.propertiesMod.ServerProperties): Self = StObject.set(x, "serverProperties", value.asInstanceOf[js.Any])
     }
@@ -90,7 +93,8 @@ object anon {
       __obj.asInstanceOf[_empty]
     }
     
-    extension [Self <: _empty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: _empty] (val x: Self) extends AnyVal {
       
       inline def setExclamationmark(value: timestamp): Self = StObject.set(x, "!", value.asInstanceOf[js.Any])
       

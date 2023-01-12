@@ -49,7 +49,8 @@ object GraphicsStats {
     __obj.asInstanceOf[GraphicsStats]
   }
   
-  extension [Self <: GraphicsStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphicsStats] (val x: Self) extends AnyVal {
     
     inline def setBuckets(value: js.Array[GraphicsStatsBucket]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     

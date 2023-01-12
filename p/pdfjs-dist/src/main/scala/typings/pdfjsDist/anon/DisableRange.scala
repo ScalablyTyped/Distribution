@@ -21,7 +21,8 @@ object DisableRange {
     __obj.asInstanceOf[DisableRange]
   }
   
-  extension [Self <: DisableRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableRange] (val x: Self) extends AnyVal {
     
     inline def setDisableRange(value: Any): Self = StObject.set(x, "disableRange", value.asInstanceOf[js.Any])
     

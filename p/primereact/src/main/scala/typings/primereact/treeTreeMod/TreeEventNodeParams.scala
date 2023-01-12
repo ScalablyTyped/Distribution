@@ -23,7 +23,8 @@ object TreeEventNodeParams {
     __obj.asInstanceOf[TreeEventNodeParams]
   }
   
-  extension [Self <: TreeEventNodeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeEventNodeParams] (val x: Self) extends AnyVal {
     
     inline def setNode(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TreeNode */ Any

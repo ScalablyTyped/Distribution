@@ -21,7 +21,8 @@ object DelCloseToken {
     __obj.asInstanceOf[DelCloseToken]
   }
   
-  extension [Self <: DelCloseToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DelCloseToken] (val x: Self) extends AnyVal {
     
     inline def setType(value: del_open): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

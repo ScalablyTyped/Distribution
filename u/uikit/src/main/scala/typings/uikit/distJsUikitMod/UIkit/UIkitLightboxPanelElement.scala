@@ -21,7 +21,8 @@ object UIkitLightboxPanelElement {
     __obj.asInstanceOf[UIkitLightboxPanelElement]
   }
   
-  extension [Self <: UIkitLightboxPanelElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitLightboxPanelElement] (val x: Self) extends AnyVal {
     
     inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     

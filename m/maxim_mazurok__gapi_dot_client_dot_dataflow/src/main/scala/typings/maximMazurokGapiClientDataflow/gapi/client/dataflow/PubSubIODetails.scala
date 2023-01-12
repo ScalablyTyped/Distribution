@@ -19,7 +19,8 @@ object PubSubIODetails {
     __obj.asInstanceOf[PubSubIODetails]
   }
   
-  extension [Self <: PubSubIODetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PubSubIODetails] (val x: Self) extends AnyVal {
     
     inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     

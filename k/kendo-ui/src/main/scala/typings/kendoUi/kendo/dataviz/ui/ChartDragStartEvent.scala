@@ -19,7 +19,8 @@ object ChartDragStartEvent {
     __obj.asInstanceOf[ChartDragStartEvent]
   }
   
-  extension [Self <: ChartDragStartEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartDragStartEvent] (val x: Self) extends AnyVal {
     
     inline def setAxisRanges(value: Any): Self = StObject.set(x, "axisRanges", value.asInstanceOf[js.Any])
     

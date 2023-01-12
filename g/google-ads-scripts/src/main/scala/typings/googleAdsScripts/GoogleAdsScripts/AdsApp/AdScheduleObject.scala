@@ -32,7 +32,8 @@ object AdScheduleObject {
     __obj.asInstanceOf[AdScheduleObject]
   }
   
-  extension [Self <: AdScheduleObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdScheduleObject] (val x: Self) extends AnyVal {
     
     inline def setBidModifier(value: Double): Self = StObject.set(x, "bidModifier", value.asInstanceOf[js.Any])
     

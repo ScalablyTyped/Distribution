@@ -18,7 +18,8 @@ object DescribeModelPackageInput {
     __obj.asInstanceOf[DescribeModelPackageInput]
   }
   
-  extension [Self <: DescribeModelPackageInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeModelPackageInput] (val x: Self) extends AnyVal {
     
     inline def setModelPackageName(value: VersionedArnOrName): Self = StObject.set(x, "ModelPackageName", value.asInstanceOf[js.Any])
   }

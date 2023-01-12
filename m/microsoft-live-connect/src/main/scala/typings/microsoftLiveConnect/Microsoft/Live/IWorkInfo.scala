@@ -27,7 +27,8 @@ object IWorkInfo {
     __obj.asInstanceOf[IWorkInfo]
   }
   
-  extension [Self <: IWorkInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWorkInfo] (val x: Self) extends AnyVal {
     
     inline def setEmployer(value: Name): Self = StObject.set(x, "employer", value.asInstanceOf[js.Any])
     

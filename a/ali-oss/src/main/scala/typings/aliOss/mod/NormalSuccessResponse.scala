@@ -26,7 +26,8 @@ object NormalSuccessResponse {
     __obj.asInstanceOf[NormalSuccessResponse]
   }
   
-  extension [Self <: NormalSuccessResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalSuccessResponse] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

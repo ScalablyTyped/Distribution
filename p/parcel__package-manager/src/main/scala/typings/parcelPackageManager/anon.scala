@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Range]
     }
     
-    extension [Self <: Range](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
       
       inline def setRange(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SemverRange */ Any

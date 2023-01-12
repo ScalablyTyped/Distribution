@@ -15,7 +15,8 @@ object Composed {
     __obj.asInstanceOf[Composed]
   }
   
-  extension [Self <: Composed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Composed] (val x: Self) extends AnyVal {
     
     inline def setComposed(value: Boolean): Self = StObject.set(x, "composed", value.asInstanceOf[js.Any])
     

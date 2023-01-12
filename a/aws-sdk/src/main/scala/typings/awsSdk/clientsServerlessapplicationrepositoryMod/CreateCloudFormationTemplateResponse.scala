@@ -53,7 +53,8 @@ object CreateCloudFormationTemplateResponse {
     __obj.asInstanceOf[CreateCloudFormationTemplateResponse]
   }
   
-  extension [Self <: CreateCloudFormationTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCloudFormationTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

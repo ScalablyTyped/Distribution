@@ -23,7 +23,8 @@ object NotyCallbackOptions {
     __obj.asInstanceOf[NotyCallbackOptions]
   }
   
-  extension [Self <: NotyCallbackOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotyCallbackOptions] (val x: Self) extends AnyVal {
     
     inline def setAfterClose(value: js.Function): Self = StObject.set(x, "afterClose", value.asInstanceOf[js.Any])
     

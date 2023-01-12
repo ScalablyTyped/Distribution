@@ -25,7 +25,8 @@ object GroupObject {
     __obj.asInstanceOf[GroupObject]
   }
   
-  extension [Self <: GroupObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupObject] (val x: Self) extends AnyVal {
     
     inline def setCommon(value: GroupCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     

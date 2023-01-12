@@ -23,7 +23,8 @@ object DeleteDomainEntryRequest {
     __obj.asInstanceOf[DeleteDomainEntryRequest]
   }
   
-  extension [Self <: DeleteDomainEntryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDomainEntryRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainEntry(value: DomainEntry): Self = StObject.set(x, "domainEntry", value.asInstanceOf[js.Any])
     

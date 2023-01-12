@@ -32,7 +32,8 @@ object SearchClosenessCentralityNormalizedOptions {
     __obj.asInstanceOf[SearchClosenessCentralityNormalizedOptions]
   }
   
-  extension [Self <: SearchClosenessCentralityNormalizedOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchClosenessCentralityNormalizedOptions] (val x: Self) extends AnyVal {
     
     inline def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
     

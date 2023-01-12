@@ -40,7 +40,8 @@ object ASPxClientCloudControl {
     __obj.asInstanceOf[ASPxClientCloudControl]
   }
   
-  extension [Self <: ASPxClientCloudControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCloudControl] (val x: Self) extends AnyVal {
     
     inline def setItemClick(value: ASPxClientEvent[ASPxClientCloudControlItemEventHandler[ASPxClientCloudControl]]): Self = StObject.set(x, "ItemClick", value.asInstanceOf[js.Any])
   }

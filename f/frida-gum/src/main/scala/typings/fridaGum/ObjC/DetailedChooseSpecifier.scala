@@ -26,7 +26,8 @@ object DetailedChooseSpecifier {
     __obj.asInstanceOf[DetailedChooseSpecifier]
   }
   
-  extension [Self <: DetailedChooseSpecifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailedChooseSpecifier] (val x: Self) extends AnyVal {
     
     inline def setClass(value: Object): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     

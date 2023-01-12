@@ -29,7 +29,8 @@ object typesRoutingRuleMod {
       __obj.asInstanceOf[RoutingRule]
     }
     
-    extension [Self <: RoutingRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoutingRule] (val x: Self) extends AnyVal {
       
       inline def setCondition(value: Condition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object typesRoutingRuleMod {
       __obj.asInstanceOf[UnmarshalledRoutingRule]
     }
     
-    extension [Self <: UnmarshalledRoutingRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledRoutingRule] (val x: Self) extends AnyVal {
       
       inline def setCondition(value: UnmarshalledCondition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object DescribeNatGatewaysResult {
     __obj.asInstanceOf[DescribeNatGatewaysResult]
   }
   
-  extension [Self <: DescribeNatGatewaysResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNatGatewaysResult] (val x: Self) extends AnyVal {
     
     inline def setNatGateways(value: NatGatewayList): Self = StObject.set(x, "NatGateways", value.asInstanceOf[js.Any])
     

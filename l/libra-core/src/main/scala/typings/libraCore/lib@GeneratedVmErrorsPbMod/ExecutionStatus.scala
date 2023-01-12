@@ -135,7 +135,8 @@ object ExecutionStatus {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setArithmeticError(value: typings.libraCore.`lib@GeneratedVmErrorsPbMod`.ArithmeticError.AsObject): Self = StObject.set(x, "arithmeticError", value.asInstanceOf[js.Any])
       

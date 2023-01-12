@@ -22,7 +22,8 @@ object MessageMap {
     __obj.asInstanceOf[MessageMap]
   }
   
-  extension [Self <: MessageMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageMap] (val x: Self) extends AnyVal {
     
     inline def setIngestTime(value: Double): Self = StObject.set(x, "ingestTime", value.asInstanceOf[js.Any])
     

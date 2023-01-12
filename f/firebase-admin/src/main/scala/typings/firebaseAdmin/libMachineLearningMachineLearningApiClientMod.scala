@@ -32,7 +32,8 @@ object libMachineLearningMachineLearningApiClientMod {
       __obj.asInstanceOf[AutoMLTfliteModelOptions]
     }
     
-    extension [Self <: AutoMLTfliteModelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoMLTfliteModelOptions] (val x: Self) extends AnyVal {
       
       inline def setTfliteModel(value: AutomlModel): Self = StObject.set(x, "tfliteModel", value.asInstanceOf[js.Any])
     }
@@ -52,7 +53,8 @@ object libMachineLearningMachineLearningApiClientMod {
       __obj.asInstanceOf[GcsTfliteModelOptions]
     }
     
-    extension [Self <: GcsTfliteModelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GcsTfliteModelOptions] (val x: Self) extends AnyVal {
       
       inline def setTfliteModel(value: GcsTfliteUri): Self = StObject.set(x, "tfliteModel", value.asInstanceOf[js.Any])
     }
@@ -89,7 +91,8 @@ object libMachineLearningMachineLearningApiClientMod {
       __obj.asInstanceOf[ListModelsOptions]
     }
     
-    extension [Self <: ListModelsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListModelsOptions] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
@@ -118,7 +121,8 @@ object libMachineLearningMachineLearningApiClientMod {
       __obj.asInstanceOf[ListModelsResponse]
     }
     
-    extension [Self <: ListModelsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListModelsResponse] (val x: Self) extends AnyVal {
       
       inline def setModels(value: js.Array[ModelResponse]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
       
@@ -149,7 +153,8 @@ object libMachineLearningMachineLearningApiClientMod {
       __obj.asInstanceOf[ModelContent]
     }
     
-    extension [Self <: ModelContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelContent] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -210,7 +215,8 @@ object libMachineLearningMachineLearningApiClientMod {
       __obj.asInstanceOf[ModelOptionsBase]
     }
     
-    extension [Self <: ModelOptionsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelOptionsBase] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -247,7 +253,8 @@ object libMachineLearningMachineLearningApiClientMod {
       __obj.asInstanceOf[ModelResponse]
     }
     
-    extension [Self <: ModelResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelResponse] (val x: Self) extends AnyVal {
       
       inline def setActiveOperations(value: js.Array[OperationResponse]): Self = StObject.set(x, "activeOperations", value.asInstanceOf[js.Any])
       
@@ -290,7 +297,8 @@ object libMachineLearningMachineLearningApiClientMod {
       __obj.asInstanceOf[OperationResponse]
     }
     
-    extension [Self <: OperationResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationResponse] (val x: Self) extends AnyVal {
       
       inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
@@ -325,7 +333,8 @@ object libMachineLearningMachineLearningApiClientMod {
       __obj.asInstanceOf[StatusErrorResponse]
     }
     
-    extension [Self <: StatusErrorResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatusErrorResponse] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

@@ -65,7 +65,8 @@ object MobileInfo {
     __obj.asInstanceOf[MobileInfo]
   }
   
-  extension [Self <: MobileInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileInfo] (val x: Self) extends AnyVal {
     
     inline def setAppRnVersion(value: String): Self = StObject.set(x, "appRnVersion", value.asInstanceOf[js.Any])
     

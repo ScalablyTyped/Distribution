@@ -43,7 +43,8 @@ object typesumminmaxcountaverage {
     __obj.asInstanceOf[typesumminmaxcountaverage]
   }
   
-  extension [Self <: typesumminmaxcountaverage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typesumminmaxcountaverage] (val x: Self) extends AnyVal {
     
     inline def setDestinationColumn(value: Double): Self = StObject.set(x, "destinationColumn", value.asInstanceOf[js.Any])
     

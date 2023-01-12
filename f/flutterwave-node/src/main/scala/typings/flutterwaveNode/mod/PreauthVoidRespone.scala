@@ -17,7 +17,8 @@ object PreauthVoidRespone {
     __obj.asInstanceOf[PreauthVoidRespone]
   }
   
-  extension [Self <: PreauthVoidRespone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreauthVoidRespone] (val x: Self) extends AnyVal {
     
     inline def setData(value: typings.flutterwaveNode.anon.Status): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object GetVoiceConnectorLoggingConfigurationResponse {
     __obj.asInstanceOf[GetVoiceConnectorLoggingConfigurationResponse]
   }
   
-  extension [Self <: GetVoiceConnectorLoggingConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVoiceConnectorLoggingConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setLoggingConfiguration(value: LoggingConfiguration): Self = StObject.set(x, "LoggingConfiguration", value.asInstanceOf[js.Any])
     

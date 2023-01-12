@@ -23,7 +23,8 @@ object ApprovalRuleOverriddenEventMetadata {
     __obj.asInstanceOf[ApprovalRuleOverriddenEventMetadata]
   }
   
-  extension [Self <: ApprovalRuleOverriddenEventMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApprovalRuleOverriddenEventMetadata] (val x: Self) extends AnyVal {
     
     inline def setOverrideStatus(value: OverrideStatus): Self = StObject.set(x, "overrideStatus", value.asInstanceOf[js.Any])
     

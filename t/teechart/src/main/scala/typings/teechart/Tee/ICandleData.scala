@@ -31,7 +31,8 @@ object ICandleData {
     __obj.asInstanceOf[ICandleData]
   }
   
-  extension [Self <: ICandleData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICandleData] (val x: Self) extends AnyVal {
     
     inline def setClose(value: js.Array[Double]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     

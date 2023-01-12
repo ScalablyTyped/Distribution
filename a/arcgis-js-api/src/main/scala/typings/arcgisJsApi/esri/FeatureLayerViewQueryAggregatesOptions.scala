@@ -21,7 +21,8 @@ object FeatureLayerViewQueryAggregatesOptions {
     __obj.asInstanceOf[FeatureLayerViewQueryAggregatesOptions]
   }
   
-  extension [Self <: FeatureLayerViewQueryAggregatesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureLayerViewQueryAggregatesOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

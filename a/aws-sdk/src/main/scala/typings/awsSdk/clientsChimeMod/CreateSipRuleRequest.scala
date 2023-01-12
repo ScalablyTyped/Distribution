@@ -43,7 +43,8 @@ object CreateSipRuleRequest {
     __obj.asInstanceOf[CreateSipRuleRequest]
   }
   
-  extension [Self <: CreateSipRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSipRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: NullableBoolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
     

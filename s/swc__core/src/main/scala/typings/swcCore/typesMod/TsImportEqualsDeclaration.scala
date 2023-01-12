@@ -38,7 +38,8 @@ object TsImportEqualsDeclaration {
     __obj.asInstanceOf[TsImportEqualsDeclaration]
   }
   
-  extension [Self <: TsImportEqualsDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TsImportEqualsDeclaration] (val x: Self) extends AnyVal {
     
     inline def setDeclare(value: Boolean): Self = StObject.set(x, "declare", value.asInstanceOf[js.Any])
     

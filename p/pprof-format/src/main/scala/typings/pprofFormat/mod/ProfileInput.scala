@@ -41,7 +41,8 @@ object ProfileInput {
     __obj.asInstanceOf[ProfileInput]
   }
   
-  extension [Self <: ProfileInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfileInput] (val x: Self) extends AnyVal {
     
     inline def setComment(value: js.Array[Numeric]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

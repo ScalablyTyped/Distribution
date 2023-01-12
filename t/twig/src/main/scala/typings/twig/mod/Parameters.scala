@@ -37,7 +37,8 @@ object Parameters {
     __obj.asInstanceOf[Parameters]
   }
   
-  extension [Self <: Parameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Parameters] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: Any): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

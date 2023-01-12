@@ -15,7 +15,8 @@ object StaticFunctions {
     __obj.asInstanceOf[StaticFunctions]
   }
   
-  extension [Self <: StaticFunctions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaticFunctions] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: ButtonStaticFunctions): Self = StObject.set(x, "Buttons", value.asInstanceOf[js.Any])
   }

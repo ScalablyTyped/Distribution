@@ -25,7 +25,8 @@ object CompensationFilter {
     __obj.asInstanceOf[CompensationFilter]
   }
   
-  extension [Self <: CompensationFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompensationFilter] (val x: Self) extends AnyVal {
     
     inline def setIncludeJobsWithUnspecifiedCompensationRange(value: Boolean): Self = StObject.set(x, "includeJobsWithUnspecifiedCompensationRange", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object Organizationurl {
     __obj.asInstanceOf[Organizationurl]
   }
   
-  extension [Self <: Organizationurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Organizationurl] (val x: Self) extends AnyVal {
     
     inline def setOrganization(value: Hooksurl): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     

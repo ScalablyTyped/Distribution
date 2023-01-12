@@ -28,7 +28,8 @@ object LinkProps {
     __obj.asInstanceOf[LinkProps[TState]]
   }
   
-  extension [Self <: LinkProps[?], TState](x: Self & LinkProps[TState]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkProps[?], TState] (val x: Self & LinkProps[TState]) extends AnyVal {
     
     inline def setGetProps(value: /* props */ LinkGetProps => js.Object): Self = StObject.set(x, "getProps", js.Any.fromFunction1(value))
     

@@ -23,7 +23,8 @@ object Tracks {
     __obj.asInstanceOf[Tracks]
   }
   
-  extension [Self <: Tracks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tracks] (val x: Self) extends AnyVal {
     
     inline def setCatalog(value: Relationship[typings.musickitJs.MusicKit.Playlists]): Self = StObject.set(x, "catalog", value.asInstanceOf[js.Any])
     

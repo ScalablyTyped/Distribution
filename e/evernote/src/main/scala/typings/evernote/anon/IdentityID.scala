@@ -24,7 +24,8 @@ object IdentityID {
     __obj.asInstanceOf[IdentityID]
   }
   
-  extension [Self <: IdentityID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityID] (val x: Self) extends AnyVal {
     
     inline def setIdentityID(value: typings.evernote.mod.Types.IdentityID): Self = StObject.set(x, "identityID", value.asInstanceOf[js.Any])
     

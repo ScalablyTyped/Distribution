@@ -17,7 +17,8 @@ object UpdateAgentOperatorResult {
     __obj.asInstanceOf[UpdateAgentOperatorResult]
   }
   
-  extension [Self <: UpdateAgentOperatorResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAgentOperatorResult] (val x: Self) extends AnyVal {
     
     inline def setOperator(value: AgentOperatorInfo): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
   }

@@ -110,7 +110,8 @@ object KmlMouseEvent {
     __obj.asInstanceOf[KmlMouseEvent]
   }
   
-  extension [Self <: KmlMouseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlMouseEvent] (val x: Self) extends AnyVal {
     
     inline def setGetAltKey(value: () => Boolean): Self = StObject.set(x, "getAltKey", js.Any.fromFunction0(value))
     

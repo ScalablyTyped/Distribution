@@ -47,7 +47,8 @@ object typesComponentsMessagesMod {
       __obj.asInstanceOf[PayPalMessagesComponentOptions]
     }
     
-    extension [Self <: PayPalMessagesComponentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayPalMessagesComponentOptions] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double | String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       

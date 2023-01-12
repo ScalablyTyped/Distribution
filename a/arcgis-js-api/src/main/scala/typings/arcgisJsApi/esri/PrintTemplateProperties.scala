@@ -116,7 +116,8 @@ object PrintTemplateProperties {
     __obj.asInstanceOf[PrintTemplateProperties]
   }
   
-  extension [Self <: PrintTemplateProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintTemplateProperties] (val x: Self) extends AnyVal {
     
     inline def setAttributionVisible(value: Boolean): Self = StObject.set(x, "attributionVisible", value.asInstanceOf[js.Any])
     

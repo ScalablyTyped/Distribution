@@ -86,7 +86,8 @@ object RadialLinearScaleOptions {
     __obj.asInstanceOf[RadialLinearScaleOptions]
   }
   
-  extension [Self <: RadialLinearScaleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadialLinearScaleOptions] (val x: Self) extends AnyVal {
     
     inline def setAngleLines(value: BorderDash): Self = StObject.set(x, "angleLines", value.asInstanceOf[js.Any])
     

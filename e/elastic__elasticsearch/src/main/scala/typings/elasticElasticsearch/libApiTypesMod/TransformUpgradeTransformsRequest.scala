@@ -19,7 +19,8 @@ object TransformUpgradeTransformsRequest {
     __obj.asInstanceOf[TransformUpgradeTransformsRequest]
   }
   
-  extension [Self <: TransformUpgradeTransformsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformUpgradeTransformsRequest] (val x: Self) extends AnyVal {
     
     inline def setDry_run(value: Boolean): Self = StObject.set(x, "dry_run", value.asInstanceOf[js.Any])
     

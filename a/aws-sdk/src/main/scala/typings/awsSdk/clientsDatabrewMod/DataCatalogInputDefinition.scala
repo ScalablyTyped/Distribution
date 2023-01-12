@@ -33,7 +33,8 @@ object DataCatalogInputDefinition {
     __obj.asInstanceOf[DataCatalogInputDefinition]
   }
   
-  extension [Self <: DataCatalogInputDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataCatalogInputDefinition] (val x: Self) extends AnyVal {
     
     inline def setCatalogId(value: CatalogId): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     

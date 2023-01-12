@@ -16,7 +16,8 @@ object ArgsTableLoadingProps {
     __obj.asInstanceOf[ArgsTableLoadingProps]
   }
   
-  extension [Self <: ArgsTableLoadingProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArgsTableLoadingProps] (val x: Self) extends AnyVal {
     
     inline def setIsLoading(value: `true`): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
   }

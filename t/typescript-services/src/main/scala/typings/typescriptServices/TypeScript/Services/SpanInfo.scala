@@ -19,7 +19,8 @@ object SpanInfo {
     __obj.asInstanceOf[SpanInfo]
   }
   
-  extension [Self <: SpanInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpanInfo] (val x: Self) extends AnyVal {
     
     inline def setLimChar(value: Double): Self = StObject.set(x, "limChar", value.asInstanceOf[js.Any])
     

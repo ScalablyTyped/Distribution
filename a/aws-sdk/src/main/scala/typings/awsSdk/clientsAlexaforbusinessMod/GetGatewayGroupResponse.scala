@@ -15,7 +15,8 @@ object GetGatewayGroupResponse {
     __obj.asInstanceOf[GetGatewayGroupResponse]
   }
   
-  extension [Self <: GetGatewayGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGatewayGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setGatewayGroup(value: GatewayGroup): Self = StObject.set(x, "GatewayGroup", value.asInstanceOf[js.Any])
     

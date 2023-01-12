@@ -21,7 +21,8 @@ object OnZoomChangeZoomChangeInfoType {
     __obj.asInstanceOf[OnZoomChangeZoomChangeInfoType]
   }
   
-  extension [Self <: OnZoomChangeZoomChangeInfoType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnZoomChangeZoomChangeInfoType] (val x: Self) extends AnyVal {
     
     inline def setNewZoomFactor(value: Double): Self = StObject.set(x, "newZoomFactor", value.asInstanceOf[js.Any])
     

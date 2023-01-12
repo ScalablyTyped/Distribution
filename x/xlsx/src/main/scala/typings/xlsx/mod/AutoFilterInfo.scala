@@ -18,7 +18,8 @@ object AutoFilterInfo {
     __obj.asInstanceOf[AutoFilterInfo]
   }
   
-  extension [Self <: AutoFilterInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoFilterInfo] (val x: Self) extends AnyVal {
     
     inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
   }

@@ -42,7 +42,8 @@ object ResolvedCollatorOptions {
     __obj.asInstanceOf[ResolvedCollatorOptions]
   }
   
-  extension [Self <: ResolvedCollatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedCollatorOptions] (val x: Self) extends AnyVal {
     
     inline def setCaseFirst(value: String): Self = StObject.set(x, "caseFirst", value.asInstanceOf[js.Any])
     

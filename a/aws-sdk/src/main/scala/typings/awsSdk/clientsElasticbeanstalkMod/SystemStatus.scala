@@ -23,7 +23,8 @@ object SystemStatus {
     __obj.asInstanceOf[SystemStatus]
   }
   
-  extension [Self <: SystemStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemStatus] (val x: Self) extends AnyVal {
     
     inline def setCPUUtilization(value: CPUUtilization): Self = StObject.set(x, "CPUUtilization", value.asInstanceOf[js.Any])
     

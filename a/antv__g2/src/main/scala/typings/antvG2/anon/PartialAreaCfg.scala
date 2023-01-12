@@ -69,7 +69,8 @@ object PartialAreaCfg {
     __obj.asInstanceOf[PartialAreaCfg]
   }
   
-  extension [Self <: PartialAreaCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAreaCfg] (val x: Self) extends AnyVal {
     
     inline def setColumnWidthRatio(value: Double): Self = StObject.set(x, "columnWidthRatio", value.asInstanceOf[js.Any])
     

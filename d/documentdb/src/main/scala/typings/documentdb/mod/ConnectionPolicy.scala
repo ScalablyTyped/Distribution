@@ -48,7 +48,8 @@ object ConnectionPolicy {
     __obj.asInstanceOf[ConnectionPolicy]
   }
   
-  extension [Self <: ConnectionPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionPolicy] (val x: Self) extends AnyVal {
     
     inline def setDisableSSLVerification(value: Boolean): Self = StObject.set(x, "DisableSSLVerification", value.asInstanceOf[js.Any])
     

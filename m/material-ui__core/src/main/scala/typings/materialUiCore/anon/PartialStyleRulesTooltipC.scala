@@ -61,7 +61,8 @@ object PartialStyleRulesTooltipC {
     __obj.asInstanceOf[PartialStyleRulesTooltipC]
   }
   
-  extension [Self <: PartialStyleRulesTooltipC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesTooltipC] (val x: Self) extends AnyVal {
     
     inline def setArrow(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

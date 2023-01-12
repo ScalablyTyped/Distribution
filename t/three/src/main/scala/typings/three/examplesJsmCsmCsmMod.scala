@@ -160,7 +160,8 @@ object examplesJsmCsmCsmMod {
       __obj.asInstanceOf[CMSParameters]
     }
     
-    extension [Self <: CMSParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CMSParameters] (val x: Self) extends AnyVal {
       
       inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
       

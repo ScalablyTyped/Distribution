@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Act]
     }
     
-    extension [Self <: Act](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Act] (val x: Self) extends AnyVal {
       
       inline def setAct(value: Boolean): Self = StObject.set(x, "act", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Actcaller]
     }
     
-    extension [Self <: Actcaller](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Actcaller] (val x: Self) extends AnyVal {
       
       inline def setAct_caller(value: Boolean): Self = StObject.set(x, "act_caller", value.asInstanceOf[js.Any])
       
@@ -107,7 +109,8 @@ object anon {
       __obj.asInstanceOf[Active]
     }
     
-    extension [Self <: Active](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -137,7 +140,8 @@ object anon {
       __obj.asInstanceOf[Actrouter]
     }
     
-    extension [Self <: Actrouter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Actrouter] (val x: Self) extends AnyVal {
       
       inline def setActrouter(value: UnknownType): Self = StObject.set(x, "actrouter", value.asInstanceOf[js.Any])
       
@@ -175,7 +179,8 @@ object anon {
       __obj.asInstanceOf[Add]
     }
     
-    extension [Self <: Add](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Add] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
       
@@ -208,7 +213,8 @@ object anon {
       __obj.asInstanceOf[Basic]
     }
     
-    extension [Self <: Basic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Basic] (val x: Self) extends AnyVal {
       
       inline def setBasic(value: Boolean): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
       
@@ -241,7 +247,8 @@ object anon {
       __obj.asInstanceOf[Host]
     }
     
-    extension [Self <: Host](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -268,7 +275,8 @@ object anon {
       __obj.asInstanceOf[Interval]
     }
     
-    extension [Self <: Interval](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Interval] (val x: Self) extends AnyVal {
       
       inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
@@ -297,7 +305,8 @@ object anon {
       __obj.asInstanceOf[Level]
     }
     
-    extension [Self <: Level](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -322,7 +331,8 @@ object anon {
       __obj.asInstanceOf[Local]
     }
     
-    extension [Self <: Local](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Local] (val x: Self) extends AnyVal {
       
       inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
       
@@ -346,7 +356,8 @@ object anon {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Boolean): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -368,7 +379,8 @@ object anon {
       __obj.asInstanceOf[Running]
     }
     
-    extension [Self <: Running](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Running] (val x: Self) extends AnyVal {
       
       inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
@@ -397,7 +409,8 @@ object anon {
       __obj.asInstanceOf[SIGBREAK]
     }
     
-    extension [Self <: SIGBREAK](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SIGBREAK] (val x: Self) extends AnyVal {
       
       inline def setSIGBREAK(value: Boolean): Self = StObject.set(x, "SIGBREAK", value.asInstanceOf[js.Any])
       

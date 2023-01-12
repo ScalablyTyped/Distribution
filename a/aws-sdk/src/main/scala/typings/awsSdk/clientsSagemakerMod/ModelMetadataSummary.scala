@@ -38,7 +38,8 @@ object ModelMetadataSummary {
     __obj.asInstanceOf[ModelMetadataSummary]
   }
   
-  extension [Self <: ModelMetadataSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelMetadataSummary] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     

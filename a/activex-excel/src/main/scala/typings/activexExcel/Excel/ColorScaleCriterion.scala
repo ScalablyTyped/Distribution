@@ -31,7 +31,8 @@ object ColorScaleCriterion {
     __obj.asInstanceOf[ColorScaleCriterion]
   }
   
-  extension [Self <: ColorScaleCriterion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorScaleCriterion] (val x: Self) extends AnyVal {
     
     inline def setExcelDotColorScaleCriterion_typekey(value: ColorScaleCriterion): Self = StObject.set(x, "Excel.ColorScaleCriterion_typekey", value.asInstanceOf[js.Any])
     

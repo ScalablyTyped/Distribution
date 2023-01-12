@@ -18,7 +18,8 @@ object Logging {
     __obj.asInstanceOf[Logging]
   }
   
-  extension [Self <: Logging](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Logging] (val x: Self) extends AnyVal {
     
     inline def setAccessLog(value: AccessLog): Self = StObject.set(x, "accessLog", value.asInstanceOf[js.Any])
     

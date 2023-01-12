@@ -22,7 +22,8 @@ object AccountWarning {
     __obj.asInstanceOf[AccountWarning]
   }
   
-  extension [Self <: AccountWarning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountWarning] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

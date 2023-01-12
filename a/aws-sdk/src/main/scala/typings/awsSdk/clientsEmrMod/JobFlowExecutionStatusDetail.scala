@@ -43,7 +43,8 @@ object JobFlowExecutionStatusDetail {
     __obj.asInstanceOf[JobFlowExecutionStatusDetail]
   }
   
-  extension [Self <: JobFlowExecutionStatusDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobFlowExecutionStatusDetail] (val x: Self) extends AnyVal {
     
     inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     

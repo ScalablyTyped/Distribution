@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[MoneyOptions]
     }
     
-    extension [Self <: MoneyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MoneyOptions] (val x: Self) extends AnyVal {
       
       inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object mod {
       __obj.asInstanceOf[PatternOptions]
     }
     
-    extension [Self <: PatternOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatternOptions] (val x: Self) extends AnyVal {
       
       inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object CreateStudioLifecycleConfigResponse {
     __obj.asInstanceOf[CreateStudioLifecycleConfigResponse]
   }
   
-  extension [Self <: CreateStudioLifecycleConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStudioLifecycleConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setStudioLifecycleConfigArn(value: StudioLifecycleConfigArn): Self = StObject.set(x, "StudioLifecycleConfigArn", value.asInstanceOf[js.Any])
     

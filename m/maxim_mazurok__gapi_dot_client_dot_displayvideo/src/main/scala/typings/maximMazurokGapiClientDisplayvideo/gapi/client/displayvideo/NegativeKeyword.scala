@@ -23,7 +23,8 @@ object NegativeKeyword {
     __obj.asInstanceOf[NegativeKeyword]
   }
   
-  extension [Self <: NegativeKeyword](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NegativeKeyword] (val x: Self) extends AnyVal {
     
     inline def setKeywordValue(value: String): Self = StObject.set(x, "keywordValue", value.asInstanceOf[js.Any])
     

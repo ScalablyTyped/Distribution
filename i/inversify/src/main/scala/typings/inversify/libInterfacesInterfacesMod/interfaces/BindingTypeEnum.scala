@@ -38,7 +38,8 @@ object BindingTypeEnum {
     __obj.asInstanceOf[BindingTypeEnum]
   }
   
-  extension [Self <: BindingTypeEnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindingTypeEnum] (val x: Self) extends AnyVal {
     
     inline def setConstantValue(value: BindingType): Self = StObject.set(x, "ConstantValue", value.asInstanceOf[js.Any])
     

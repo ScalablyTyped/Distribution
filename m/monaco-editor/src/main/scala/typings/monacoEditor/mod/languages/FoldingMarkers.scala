@@ -17,7 +17,8 @@ object FoldingMarkers {
     __obj.asInstanceOf[FoldingMarkers]
   }
   
-  extension [Self <: FoldingMarkers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FoldingMarkers] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: js.RegExp): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object InvocationTypeArgumentInferenceContext {
     __obj.asInstanceOf[InvocationTypeArgumentInferenceContext]
   }
   
-  extension [Self <: InvocationTypeArgumentInferenceContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvocationTypeArgumentInferenceContext] (val x: Self) extends AnyVal {
     
     inline def setArgumentASTs(value: ISeparatedSyntaxList2): Self = StObject.set(x, "argumentASTs", value.asInstanceOf[js.Any])
   }

@@ -20,7 +20,8 @@ object DataQualityJobInput {
     __obj.asInstanceOf[DataQualityJobInput]
   }
   
-  extension [Self <: DataQualityJobInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataQualityJobInput] (val x: Self) extends AnyVal {
     
     inline def setBatchTransformInput(value: BatchTransformInput): Self = StObject.set(x, "BatchTransformInput", value.asInstanceOf[js.Any])
     

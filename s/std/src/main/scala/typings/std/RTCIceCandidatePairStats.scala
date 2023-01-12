@@ -75,7 +75,8 @@ object RTCIceCandidatePairStats {
     __obj.asInstanceOf[RTCIceCandidatePairStats]
   }
   
-  extension [Self <: RTCIceCandidatePairStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCIceCandidatePairStats] (val x: Self) extends AnyVal {
     
     inline def setAvailableIncomingBitrate(value: Double): Self = StObject.set(x, "availableIncomingBitrate", value.asInstanceOf[js.Any])
     

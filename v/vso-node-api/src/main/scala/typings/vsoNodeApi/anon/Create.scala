@@ -32,7 +32,8 @@ object Create {
     __obj.asInstanceOf[Create]
   }
   
-  extension [Self <: Create](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Create] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: scala.Double): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     

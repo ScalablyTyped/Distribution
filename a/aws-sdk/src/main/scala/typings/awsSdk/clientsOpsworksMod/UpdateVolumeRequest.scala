@@ -28,7 +28,8 @@ object UpdateVolumeRequest {
     __obj.asInstanceOf[UpdateVolumeRequest]
   }
   
-  extension [Self <: UpdateVolumeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateVolumeRequest] (val x: Self) extends AnyVal {
     
     inline def setMountPoint(value: String): Self = StObject.set(x, "MountPoint", value.asInstanceOf[js.Any])
     

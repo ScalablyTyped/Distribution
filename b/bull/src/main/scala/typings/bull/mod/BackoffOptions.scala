@@ -29,7 +29,8 @@ object BackoffOptions {
     __obj.asInstanceOf[BackoffOptions]
   }
   
-  extension [Self <: BackoffOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackoffOptions] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

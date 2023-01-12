@@ -63,7 +63,8 @@ object ChangeLogItemQuery {
     __obj.asInstanceOf[ChangeLogItemQuery]
   }
   
-  extension [Self <: ChangeLogItemQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeLogItemQuery] (val x: Self) extends AnyVal {
     
     inline def setGet_changeToken(value: () => String): Self = StObject.set(x, "get_changeToken", js.Any.fromFunction0(value))
     

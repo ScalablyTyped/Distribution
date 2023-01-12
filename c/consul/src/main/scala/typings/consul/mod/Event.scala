@@ -81,7 +81,8 @@ object Event {
       __obj.asInstanceOf[FireOptions]
     }
     
-    extension [Self <: FireOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FireOptions] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object Event {
       __obj.asInstanceOf[ListOptions]
     }
     
-    extension [Self <: ListOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListOptions] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

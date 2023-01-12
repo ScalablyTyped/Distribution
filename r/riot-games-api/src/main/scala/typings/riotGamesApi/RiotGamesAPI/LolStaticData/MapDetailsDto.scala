@@ -21,7 +21,8 @@ object MapDetailsDto {
     __obj.asInstanceOf[MapDetailsDto]
   }
   
-  extension [Self <: MapDetailsDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapDetailsDto] (val x: Self) extends AnyVal {
     
     inline def setImage(value: ImageDto): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

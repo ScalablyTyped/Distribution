@@ -33,7 +33,8 @@ object SensorAPI {
     __obj.asInstanceOf[SensorAPI]
   }
   
-  extension [Self <: SensorAPI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SensorAPI] (val x: Self) extends AnyVal {
     
     inline def setCanGetLock(value: DraggableId => Boolean): Self = StObject.set(x, "canGetLock", js.Any.fromFunction1(value))
     

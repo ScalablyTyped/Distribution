@@ -16,7 +16,8 @@ object ReadLinkOpts {
     __obj.asInstanceOf[ReadLinkOpts]
   }
   
-  extension [Self <: ReadLinkOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadLinkOpts] (val x: Self) extends AnyVal {
     
     inline def setCanonical(value: Boolean): Self = StObject.set(x, "canonical", value.asInstanceOf[js.Any])
     

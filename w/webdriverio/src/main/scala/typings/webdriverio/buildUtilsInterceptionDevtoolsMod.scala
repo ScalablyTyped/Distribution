@@ -38,7 +38,8 @@ object buildUtilsInterceptionDevtoolsMod {
       __obj.asInstanceOf[ClientResponse]
     }
     
-    extension [Self <: ClientResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientResponse] (val x: Self) extends AnyVal {
       
       inline def setBase64Encoded(value: Boolean): Self = StObject.set(x, "base64Encoded", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object buildUtilsInterceptionDevtoolsMod {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: MatchesmockedResponsestri): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
@@ -125,7 +127,8 @@ object buildUtilsInterceptionDevtoolsMod {
       __obj.asInstanceOf[HeaderEntry]
     }
     
-    extension [Self <: HeaderEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderEntry] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

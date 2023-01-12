@@ -16,7 +16,8 @@ object IRealpathOptions {
     __obj.asInstanceOf[IRealpathOptions]
   }
   
-  extension [Self <: IRealpathOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRealpathOptions] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: TEncodingExtended): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

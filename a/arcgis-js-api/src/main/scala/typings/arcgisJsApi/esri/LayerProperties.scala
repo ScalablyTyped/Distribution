@@ -66,7 +66,8 @@ object LayerProperties {
     __obj.asInstanceOf[LayerProperties]
   }
   
-  extension [Self <: LayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerProperties] (val x: Self) extends AnyVal {
     
     inline def setFullExtent(value: ExtentProperties): Self = StObject.set(x, "fullExtent", value.asInstanceOf[js.Any])
     

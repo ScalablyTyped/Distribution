@@ -17,7 +17,8 @@ object LinearInterpolatorProps {
     __obj.asInstanceOf[LinearInterpolatorProps]
   }
   
-  extension [Self <: LinearInterpolatorProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinearInterpolatorProps] (val x: Self) extends AnyVal {
     
     inline def setAround(value: js.Array[Double]): Self = StObject.set(x, "around", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object GooglePrivacyDlpV2HybridInspectJobTriggerRequest {
     __obj.asInstanceOf[GooglePrivacyDlpV2HybridInspectJobTriggerRequest]
   }
   
-  extension [Self <: GooglePrivacyDlpV2HybridInspectJobTriggerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2HybridInspectJobTriggerRequest] (val x: Self) extends AnyVal {
     
     inline def setHybridItem(value: GooglePrivacyDlpV2HybridContentItem): Self = StObject.set(x, "hybridItem", value.asInstanceOf[js.Any])
     

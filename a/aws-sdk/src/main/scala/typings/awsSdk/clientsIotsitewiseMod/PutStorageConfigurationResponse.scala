@@ -32,7 +32,8 @@ object PutStorageConfigurationResponse {
     __obj.asInstanceOf[PutStorageConfigurationResponse]
   }
   
-  extension [Self <: PutStorageConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutStorageConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setConfigurationStatus(value: ConfigurationStatus): Self = StObject.set(x, "configurationStatus", value.asInstanceOf[js.Any])
     

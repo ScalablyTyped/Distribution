@@ -22,7 +22,8 @@ object MigrationJobVerificationError {
     __obj.asInstanceOf[MigrationJobVerificationError]
   }
   
-  extension [Self <: MigrationJobVerificationError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MigrationJobVerificationError] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

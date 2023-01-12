@@ -55,7 +55,8 @@ object libTableHooksUseSorterMod {
       __obj.asInstanceOf[SortState[RecordType]]
     }
     
-    extension [Self <: SortState[?], RecordType](x: Self & SortState[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortState[?], RecordType] (val x: Self & SortState[RecordType]) extends AnyVal {
       
       inline def setColumn(value: ColumnType[RecordType]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       

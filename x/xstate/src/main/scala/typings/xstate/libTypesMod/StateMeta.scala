@@ -21,7 +21,8 @@ object StateMeta {
     __obj.asInstanceOf[StateMeta[TContext, TEvent]]
   }
   
-  extension [Self <: StateMeta[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (StateMeta[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateMeta[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (StateMeta[TContext, TEvent])) extends AnyVal {
     
     inline def setState(value: State[TContext, TEvent, Any, Any, Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

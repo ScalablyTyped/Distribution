@@ -21,7 +21,8 @@ object ISanitizer {
     __obj.asInstanceOf[ISanitizer]
   }
   
-  extension [Self <: ISanitizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISanitizer] (val x: Self) extends AnyVal {
     
     inline def setSanitize(value: String => String): Self = StObject.set(x, "sanitize", js.Any.fromFunction1(value))
   }

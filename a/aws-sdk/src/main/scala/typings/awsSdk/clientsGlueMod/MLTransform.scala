@@ -108,7 +108,8 @@ object MLTransform {
     __obj.asInstanceOf[MLTransform]
   }
   
-  extension [Self <: MLTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MLTransform] (val x: Self) extends AnyVal {
     
     inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "CreatedOn", value.asInstanceOf[js.Any])
     

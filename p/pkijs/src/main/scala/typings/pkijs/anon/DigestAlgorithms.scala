@@ -27,7 +27,8 @@ object DigestAlgorithms {
     __obj.asInstanceOf[DigestAlgorithms]
   }
   
-  extension [Self <: DigestAlgorithms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DigestAlgorithms] (val x: Self) extends AnyVal {
     
     inline def setCertificates(value: String): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
     

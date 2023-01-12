@@ -22,7 +22,8 @@ object GPUValidationError {
     __obj.asInstanceOf[GPUValidationError]
   }
   
-  extension [Self <: GPUValidationError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUValidationError] (val x: Self) extends AnyVal {
     
     inline def set__brand(value: typings.webgpuTypes.webgpuTypesStrings.GPUValidationError): Self = StObject.set(x, "__brand", value.asInstanceOf[js.Any])
   }

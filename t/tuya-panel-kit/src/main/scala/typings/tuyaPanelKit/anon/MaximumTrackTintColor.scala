@@ -29,7 +29,8 @@ object MaximumTrackTintColor {
     __obj.asInstanceOf[MaximumTrackTintColor]
   }
   
-  extension [Self <: MaximumTrackTintColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaximumTrackTintColor] (val x: Self) extends AnyVal {
     
     inline def setMaximumTrackTintColor(value: String): Self = StObject.set(x, "maximumTrackTintColor", value.asInstanceOf[js.Any])
     

@@ -141,7 +141,8 @@ object BootstrapMaxlength {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowOverMax(value: Boolean): Self = StObject.set(x, "allowOverMax", value.asInstanceOf[js.Any])
       
@@ -267,7 +268,8 @@ object BootstrapMaxlength {
       __obj.asInstanceOf[PlacementOptions]
     }
     
-    extension [Self <: PlacementOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlacementOptions] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Number | String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -315,7 +317,8 @@ object BootstrapMaxlength {
       __obj.asInstanceOf[PositionParam]
     }
     
-    extension [Self <: PositionParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PositionParam] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Number): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

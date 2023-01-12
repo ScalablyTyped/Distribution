@@ -84,7 +84,8 @@ object esDrawerPopupMod {
       __obj.asInstanceOf[DrawerPopupProps]
     }
     
-    extension [Self <: DrawerPopupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerPopupProps] (val x: Self) extends AnyVal {
       
       inline def setAfterOpenChange(value: /* open */ Boolean => Unit): Self = StObject.set(x, "afterOpenChange", js.Any.fromFunction1(value))
       
@@ -219,7 +220,8 @@ object esDrawerPopupMod {
       __obj.asInstanceOf[PushConfig]
     }
     
-    extension [Self <: PushConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PushConfig] (val x: Self) extends AnyVal {
       
       inline def setDistance(value: Double | String): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       

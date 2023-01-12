@@ -19,7 +19,8 @@ object TargetRef {
     __obj.asInstanceOf[TargetRef]
   }
   
-  extension [Self <: TargetRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetRef] (val x: Self) extends AnyVal {
     
     inline def setTargetRef(value: HTMLElement): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[DangerouslySetInnerHTML]
     }
     
-    extension [Self <: DangerouslySetInnerHTML](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DangerouslySetInnerHTML] (val x: Self) extends AnyVal {
       
       inline def setDangerouslySetInnerHTML(value: Html): Self = StObject.set(x, "dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
       
@@ -58,7 +60,8 @@ object anon {
       __obj.asInstanceOf[Html]
     }
     
-    extension [Self <: Html](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Html] (val x: Self) extends AnyVal {
       
       inline def set__html(value: String): Self = StObject.set(x, "__html", value.asInstanceOf[js.Any])
     }

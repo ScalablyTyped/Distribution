@@ -48,7 +48,8 @@ object HlsEncryptionSettings {
     __obj.asInstanceOf[HlsEncryptionSettings]
   }
   
-  extension [Self <: HlsEncryptionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsEncryptionSettings] (val x: Self) extends AnyVal {
     
     inline def setConstantInitializationVector(value: stringMin32Max32Pattern09aFAF32): Self = StObject.set(x, "ConstantInitializationVector", value.asInstanceOf[js.Any])
     

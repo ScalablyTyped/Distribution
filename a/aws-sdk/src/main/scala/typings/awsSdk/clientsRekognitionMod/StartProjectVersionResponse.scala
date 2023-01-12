@@ -18,7 +18,8 @@ object StartProjectVersionResponse {
     __obj.asInstanceOf[StartProjectVersionResponse]
   }
   
-  extension [Self <: StartProjectVersionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartProjectVersionResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: ProjectVersionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

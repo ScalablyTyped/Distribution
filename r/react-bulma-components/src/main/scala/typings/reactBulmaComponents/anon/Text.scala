@@ -19,7 +19,8 @@ object Text {
     __obj.asInstanceOf[Text]
   }
   
-  extension [Self <: Text](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
     
     inline def setText(value: /* props */ js.Object & (ElementProps[js.Object, span]) => ReactElement): Self = StObject.set(x, "Text", js.Any.fromFunction1(value))
   }

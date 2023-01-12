@@ -24,7 +24,8 @@ object PostProcessRenderPipelineManagerSceneComponent {
     __obj.asInstanceOf[PostProcessRenderPipelineManagerSceneComponent]
   }
   
-  extension [Self <: PostProcessRenderPipelineManagerSceneComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostProcessRenderPipelineManagerSceneComponent] (val x: Self) extends AnyVal {
     
     inline def set_gatherRenderTargets(value: Any): Self = StObject.set(x, "_gatherRenderTargets", value.asInstanceOf[js.Any])
   }

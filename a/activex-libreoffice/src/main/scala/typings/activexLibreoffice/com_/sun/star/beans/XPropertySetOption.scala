@@ -25,7 +25,8 @@ object XPropertySetOption {
     __obj.asInstanceOf[XPropertySetOption]
   }
   
-  extension [Self <: XPropertySetOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPropertySetOption] (val x: Self) extends AnyVal {
     
     inline def setEnableChangeListenerNotification(value: Boolean => Unit): Self = StObject.set(x, "enableChangeListenerNotification", js.Any.fromFunction1(value))
   }

@@ -18,7 +18,8 @@ object AwsS3BucketBucketLifecycleConfigurationRulesFilterDetails {
     __obj.asInstanceOf[AwsS3BucketBucketLifecycleConfigurationRulesFilterDetails]
   }
   
-  extension [Self <: AwsS3BucketBucketLifecycleConfigurationRulesFilterDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsS3BucketBucketLifecycleConfigurationRulesFilterDetails] (val x: Self) extends AnyVal {
     
     inline def setPredicate(value: AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateDetails): Self = StObject.set(x, "Predicate", value.asInstanceOf[js.Any])
     

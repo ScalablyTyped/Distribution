@@ -33,7 +33,8 @@ object SdkType {
     __obj.asInstanceOf[SdkType]
   }
   
-  extension [Self <: SdkType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SdkType] (val x: Self) extends AnyVal {
     
     inline def setConfigurationProperties(value: ListOfSdkConfigurationProperty): Self = StObject.set(x, "configurationProperties", value.asInstanceOf[js.Any])
     

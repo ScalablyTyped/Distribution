@@ -28,7 +28,8 @@ object NetworkInterface {
     __obj.asInstanceOf[NetworkInterface]
   }
   
-  extension [Self <: NetworkInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkInterface] (val x: Self) extends AnyVal {
     
     inline def setIpv4Address(value: String): Self = StObject.set(x, "Ipv4Address", value.asInstanceOf[js.Any])
     

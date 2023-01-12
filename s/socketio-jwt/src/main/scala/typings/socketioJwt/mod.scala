@@ -80,7 +80,8 @@ object mod {
       __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: IOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
       
       inline def setAdditional_auth(
         value: (/* decoded */ js.Object, /* onSuccess */ js.Function0[Unit], /* onError */ js.Function2[/* err */ String | ISocketIOError, /* code */ String, Unit]) => Unit
@@ -153,7 +154,8 @@ object mod {
       __obj.asInstanceOf[ISocketIOError]
     }
     
-    extension [Self <: ISocketIOError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISocketIOError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -209,7 +211,8 @@ object mod {
       __obj.asInstanceOf[UnauthorizedError]
     }
     
-    extension [Self <: UnauthorizedError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnauthorizedError] (val x: Self) extends AnyVal {
       
       inline def setData(value: Code): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object LetterSpacing {
     __obj.asInstanceOf[LetterSpacing]
   }
   
-  extension [Self <: LetterSpacing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LetterSpacing] (val x: Self) extends AnyVal {
     
     inline def setUnit(value: PIXELS | PERCENT): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     

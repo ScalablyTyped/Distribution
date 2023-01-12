@@ -165,7 +165,8 @@ object libTransportTeamSpeakQueryMod {
         __obj.asInstanceOf[QueueItem]
       }
       
-      extension [Self <: QueueItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: QueueItem] (val x: Self) extends AnyVal {
         
         inline def setCmd(value: Command): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
         

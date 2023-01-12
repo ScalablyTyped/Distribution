@@ -16,7 +16,8 @@ object TypeofClient {
     __obj.asInstanceOf[TypeofClient]
   }
   
-  extension [Self <: TypeofClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofClient] (val x: Self) extends AnyVal {
     
     inline def setFind(value: String => js.Promise[js.UndefOr[typings.oidcProvider.mod.Client]]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
   }

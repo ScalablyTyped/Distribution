@@ -31,7 +31,8 @@ object distUiComponentsJobCardDetailsDetailsContentDetailsContentMod {
       __obj.asInstanceOf[DetailsContentProps]
     }
     
-    extension [Self <: DetailsContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailsContentProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: GetJobLogs): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

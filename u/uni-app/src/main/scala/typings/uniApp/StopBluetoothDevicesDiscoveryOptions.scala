@@ -28,7 +28,8 @@ object StopBluetoothDevicesDiscoveryOptions {
     __obj.asInstanceOf[StopBluetoothDevicesDiscoveryOptions]
   }
   
-  extension [Self <: StopBluetoothDevicesDiscoveryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopBluetoothDevicesDiscoveryOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

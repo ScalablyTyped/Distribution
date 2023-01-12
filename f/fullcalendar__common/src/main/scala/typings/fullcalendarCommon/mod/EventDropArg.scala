@@ -34,7 +34,8 @@ object EventDropArg {
     __obj.asInstanceOf[EventDropArg]
   }
   
-  extension [Self <: EventDropArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventDropArg] (val x: Self) extends AnyVal {
     
     inline def setDelta(value: Duration): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     

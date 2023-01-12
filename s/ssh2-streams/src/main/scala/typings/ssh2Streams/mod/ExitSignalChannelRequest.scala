@@ -26,7 +26,8 @@ object ExitSignalChannelRequest {
     __obj.asInstanceOf[ExitSignalChannelRequest]
   }
   
-  extension [Self <: ExitSignalChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExitSignalChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setCoredump(value: Boolean): Self = StObject.set(x, "coredump", value.asInstanceOf[js.Any])
     

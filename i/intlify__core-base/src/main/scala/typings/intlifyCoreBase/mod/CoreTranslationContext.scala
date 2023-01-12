@@ -40,7 +40,8 @@ object CoreTranslationContext {
     __obj.asInstanceOf[CoreTranslationContext[Messages, Message]]
   }
   
-  extension [Self <: CoreTranslationContext[?, ?], Messages, Message](x: Self & (CoreTranslationContext[Messages, Message])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreTranslationContext[?, ?], Messages, Message] (val x: Self & (CoreTranslationContext[Messages, Message])) extends AnyVal {
     
     inline def setEscapeParameter(value: Boolean): Self = StObject.set(x, "escapeParameter", value.asInstanceOf[js.Any])
     

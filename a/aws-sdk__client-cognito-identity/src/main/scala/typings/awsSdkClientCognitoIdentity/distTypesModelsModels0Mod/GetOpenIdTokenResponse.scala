@@ -24,7 +24,8 @@ object GetOpenIdTokenResponse {
     __obj.asInstanceOf[GetOpenIdTokenResponse]
   }
   
-  extension [Self <: GetOpenIdTokenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOpenIdTokenResponse] (val x: Self) extends AnyVal {
     
     inline def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     

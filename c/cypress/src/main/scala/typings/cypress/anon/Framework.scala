@@ -40,7 +40,8 @@ object Framework {
     __obj.asInstanceOf[Framework]
   }
   
-  extension [Self <: Framework](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Framework] (val x: Self) extends AnyVal {
     
     inline def setBundler(value: vite): Self = StObject.set(x, "bundler", value.asInstanceOf[js.Any])
     

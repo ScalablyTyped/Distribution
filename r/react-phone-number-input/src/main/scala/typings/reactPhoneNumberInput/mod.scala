@@ -86,7 +86,8 @@ object mod {
       __obj.asInstanceOf[EmbeddedFlagProps]
     }
     
-    extension [Self <: EmbeddedFlagProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmbeddedFlagProps] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
@@ -113,7 +114,8 @@ object mod {
       __obj.asInstanceOf[FlagProps]
     }
     
-    extension [Self <: FlagProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlagProps] (val x: Self) extends AnyVal {
       
       inline def setCountry(value: Country): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
@@ -629,7 +631,8 @@ object mod {
       __obj.asInstanceOf[Flags]
     }
     
-    extension [Self <: Flags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Flags] (val x: Self) extends AnyVal {
       
       inline def setAC(value: /* props */ EmbeddedFlagProps => Element): Self = StObject.set(x, "AC", js.Any.fromFunction1(value))
       
@@ -2130,7 +2133,8 @@ object mod {
       __obj.asInstanceOf[Labels]
     }
     
-    extension [Self <: Labels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Labels] (val x: Self) extends AnyVal {
       
       inline def setAC(value: String): Self = StObject.set(x, "AC", value.asInstanceOf[js.Any])
       
@@ -3176,7 +3180,8 @@ object mod {
       __obj.asInstanceOf[State[Props]]
     }
     
-    extension [Self <: State[?], Props](x: Self & State[Props]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State[?], Props] (val x: Self & State[Props]) extends AnyVal {
       
       inline def setCountries(value: js.Array[Country]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
       

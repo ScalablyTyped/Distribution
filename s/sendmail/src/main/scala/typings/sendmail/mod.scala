@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[MailInput]
     }
     
-    extension [Self <: MailInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MailInput] (val x: Self) extends AnyVal {
       
       inline def setAttachments(value: js.Array[Content]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
@@ -162,7 +163,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDevHost(value: String): Self = StObject.set(x, "devHost", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object CustomListDescriptor {
     __obj.asInstanceOf[CustomListDescriptor]
   }
   
-  extension [Self <: CustomListDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomListDescriptor] (val x: Self) extends AnyVal {
     
     inline def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ASPxClientDynamicLookUpValuesLoadedEventArgs {
     __obj.asInstanceOf[ASPxClientDynamicLookUpValuesLoadedEventArgs]
   }
   
-  extension [Self <: ASPxClientDynamicLookUpValuesLoadedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDynamicLookUpValuesLoadedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setParameterName(value: String): Self = StObject.set(x, "ParameterName", value.asInstanceOf[js.Any])
   }

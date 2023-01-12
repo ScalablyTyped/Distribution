@@ -32,7 +32,8 @@ object ASPxClientWebDocumentViewerEditingField {
     __obj.asInstanceOf[ASPxClientWebDocumentViewerEditingField]
   }
   
-  extension [Self <: ASPxClientWebDocumentViewerEditingField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientWebDocumentViewerEditingField] (val x: Self) extends AnyVal {
     
     inline def setEditValue(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ Any

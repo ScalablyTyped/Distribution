@@ -52,7 +52,8 @@ object ArgumentsInColorFunction {
     __obj.asInstanceOf[ArgumentsInColorFunction]
   }
   
-  extension [Self <: ArgumentsInColorFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArgumentsInColorFunction] (val x: Self) extends AnyVal {
     
     inline def setArgumentsInColorFunction(value: ignore | warning | error): Self = StObject.set(x, "argumentsInColorFunction", value.asInstanceOf[js.Any])
     

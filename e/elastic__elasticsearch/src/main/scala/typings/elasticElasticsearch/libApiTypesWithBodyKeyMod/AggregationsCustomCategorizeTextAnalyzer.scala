@@ -19,7 +19,8 @@ object AggregationsCustomCategorizeTextAnalyzer {
     __obj.asInstanceOf[AggregationsCustomCategorizeTextAnalyzer]
   }
   
-  extension [Self <: AggregationsCustomCategorizeTextAnalyzer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsCustomCategorizeTextAnalyzer] (val x: Self) extends AnyVal {
     
     inline def setChar_filter(value: js.Array[String]): Self = StObject.set(x, "char_filter", value.asInstanceOf[js.Any])
     

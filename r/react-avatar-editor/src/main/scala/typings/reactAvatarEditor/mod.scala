@@ -80,7 +80,8 @@ object mod {
       __obj.asInstanceOf[AvatarEditorProps]
     }
     
-    extension [Self <: AvatarEditorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvatarEditorProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -193,7 +194,8 @@ object mod {
       __obj.asInstanceOf[CroppedRect]
     }
     
-    extension [Self <: CroppedRect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CroppedRect] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -214,7 +216,8 @@ object mod {
       __obj.asInstanceOf[ImageState]
     }
     
-    extension [Self <: ImageState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageState] (val x: Self) extends AnyVal {
       
       inline def setResource(value: ImageData): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     }
@@ -233,7 +236,8 @@ object mod {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

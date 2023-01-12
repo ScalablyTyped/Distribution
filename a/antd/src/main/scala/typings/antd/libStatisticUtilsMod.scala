@@ -28,7 +28,8 @@ object libStatisticUtilsMod {
       __obj.asInstanceOf[CountdownFormatConfig]
     }
     
-    extension [Self <: CountdownFormatConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CountdownFormatConfig] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object libStatisticUtilsMod {
       __obj.asInstanceOf[FormatConfig]
     }
     
-    extension [Self <: FormatConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatConfig] (val x: Self) extends AnyVal {
       
       inline def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
       

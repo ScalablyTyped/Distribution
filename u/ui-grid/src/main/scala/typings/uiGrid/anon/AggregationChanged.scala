@@ -33,7 +33,8 @@ object AggregationChanged {
     __obj.asInstanceOf[AggregationChanged[TEntity]]
   }
   
-  extension [Self <: AggregationChanged[?], TEntity](x: Self & AggregationChanged[TEntity]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationChanged[?], TEntity] (val x: Self & AggregationChanged[TEntity]) extends AnyVal {
     
     inline def setAggregationChanged(value: (IScope, aggregationChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "aggregationChanged", js.Any.fromFunction2(value))
     

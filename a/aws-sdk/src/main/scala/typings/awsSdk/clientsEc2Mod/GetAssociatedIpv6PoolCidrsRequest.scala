@@ -33,7 +33,8 @@ object GetAssociatedIpv6PoolCidrsRequest {
     __obj.asInstanceOf[GetAssociatedIpv6PoolCidrsRequest]
   }
   
-  extension [Self <: GetAssociatedIpv6PoolCidrsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAssociatedIpv6PoolCidrsRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

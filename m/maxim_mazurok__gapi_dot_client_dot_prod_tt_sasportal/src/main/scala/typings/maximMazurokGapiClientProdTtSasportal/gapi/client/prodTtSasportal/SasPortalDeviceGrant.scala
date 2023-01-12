@@ -43,7 +43,8 @@ object SasPortalDeviceGrant {
     __obj.asInstanceOf[SasPortalDeviceGrant]
   }
   
-  extension [Self <: SasPortalDeviceGrant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SasPortalDeviceGrant] (val x: Self) extends AnyVal {
     
     inline def setChannelType(value: String): Self = StObject.set(x, "channelType", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object VTTRegion {
     __obj.asInstanceOf[VTTRegion]
   }
   
-  extension [Self <: VTTRegion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VTTRegion] (val x: Self) extends AnyVal {
     
     inline def setId(value: java.lang.String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

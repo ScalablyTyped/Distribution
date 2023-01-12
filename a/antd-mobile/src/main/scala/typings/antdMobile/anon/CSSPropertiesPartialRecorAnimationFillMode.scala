@@ -9975,7 +9975,8 @@ object CSSPropertiesPartialRecorAnimationFillMode {
     __obj.asInstanceOf[CSSPropertiesPartialRecorAnimationFillMode]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorAnimationFillMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorAnimationFillMode] (val x: Self) extends AnyVal {
     
     inline def `set--border-radius`(value: String): Self = StObject.set(x, "--border-radius", value.asInstanceOf[js.Any])
     

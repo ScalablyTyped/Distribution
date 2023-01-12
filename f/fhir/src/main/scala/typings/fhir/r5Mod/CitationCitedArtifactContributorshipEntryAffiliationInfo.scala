@@ -34,7 +34,8 @@ object CitationCitedArtifactContributorshipEntryAffiliationInfo {
     __obj.asInstanceOf[CitationCitedArtifactContributorshipEntryAffiliationInfo]
   }
   
-  extension [Self <: CitationCitedArtifactContributorshipEntryAffiliationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CitationCitedArtifactContributorshipEntryAffiliationInfo] (val x: Self) extends AnyVal {
     
     inline def setAffiliation(value: String): Self = StObject.set(x, "affiliation", value.asInstanceOf[js.Any])
     

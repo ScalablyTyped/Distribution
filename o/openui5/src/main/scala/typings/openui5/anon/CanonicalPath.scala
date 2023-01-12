@@ -79,7 +79,8 @@ object CanonicalPath {
     __obj.asInstanceOf[CanonicalPath]
   }
   
-  extension [Self <: CanonicalPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanonicalPath] (val x: Self) extends AnyVal {
     
     inline def set$expand(value: String | js.Object): Self = StObject.set(x, "$expand", value.asInstanceOf[js.Any])
     

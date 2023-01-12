@@ -19,7 +19,8 @@ object SwitchDefault {
     __obj.asInstanceOf[SwitchDefault]
   }
   
-  extension [Self <: SwitchDefault](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwitchDefault] (val x: Self) extends AnyVal {
     
     inline def setOtherwise(value: SchemaLike): Self = StObject.set(x, "otherwise", value.asInstanceOf[js.Any])
     

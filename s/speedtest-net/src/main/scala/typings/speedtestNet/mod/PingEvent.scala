@@ -29,7 +29,8 @@ object PingEvent {
     __obj.asInstanceOf[PingEvent]
   }
   
-  extension [Self <: PingEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PingEvent] (val x: Self) extends AnyVal {
     
     inline def setPing(value: PingData): Self = StObject.set(x, "ping", value.asInstanceOf[js.Any])
     

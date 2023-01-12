@@ -38,7 +38,8 @@ object JSXElement_ {
     __obj.asInstanceOf[JSXElement_]
   }
   
-  extension [Self <: JSXElement_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSXElement_] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[JSXElement_ | JSXExpressionContainer_ | JSXText_]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

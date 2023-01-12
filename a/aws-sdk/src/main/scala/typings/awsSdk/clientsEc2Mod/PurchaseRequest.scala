@@ -23,7 +23,8 @@ object PurchaseRequest {
     __obj.asInstanceOf[PurchaseRequest]
   }
   
-  extension [Self <: PurchaseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PurchaseRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     

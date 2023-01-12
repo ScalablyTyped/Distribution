@@ -28,7 +28,8 @@ object VpcEndpointError {
     __obj.asInstanceOf[VpcEndpointError]
   }
   
-  extension [Self <: VpcEndpointError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcEndpointError] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: VpcEndpointErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

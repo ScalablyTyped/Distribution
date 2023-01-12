@@ -32,7 +32,8 @@ object AnnotationsCrookedLineTypeOptions {
     __obj.asInstanceOf[AnnotationsCrookedLineTypeOptions]
   }
   
-  extension [Self <: AnnotationsCrookedLineTypeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsCrookedLineTypeOptions] (val x: Self) extends AnyVal {
     
     inline def setLine(value: AnnotationsCrookedLineTypeLineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     

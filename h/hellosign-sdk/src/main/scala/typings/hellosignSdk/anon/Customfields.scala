@@ -30,7 +30,8 @@ object Customfields {
     __obj.asInstanceOf[Customfields]
   }
   
-  extension [Self <: Customfields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Customfields] (val x: Self) extends AnyVal {
     
     inline def setCustom_fields(value: js.Array[CustomFieldTemplate]): Self = StObject.set(x, "custom_fields", value.asInstanceOf[js.Any])
     

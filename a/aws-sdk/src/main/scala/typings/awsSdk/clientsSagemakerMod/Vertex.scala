@@ -28,7 +28,8 @@ object Vertex {
     __obj.asInstanceOf[Vertex]
   }
   
-  extension [Self <: Vertex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Vertex] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AssociationEntityArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

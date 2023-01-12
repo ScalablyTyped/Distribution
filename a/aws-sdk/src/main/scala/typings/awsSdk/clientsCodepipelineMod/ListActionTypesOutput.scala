@@ -23,7 +23,8 @@ object ListActionTypesOutput {
     __obj.asInstanceOf[ListActionTypesOutput]
   }
   
-  extension [Self <: ListActionTypesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListActionTypesOutput] (val x: Self) extends AnyVal {
     
     inline def setActionTypes(value: ActionTypeList): Self = StObject.set(x, "actionTypes", value.asInstanceOf[js.Any])
     

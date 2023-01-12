@@ -117,7 +117,8 @@ object componentsUiShellNavigationMenuMod {
       __obj.asInstanceOf[NavigationMenuOptions]
     }
     
-    extension [Self <: NavigationMenuOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationMenuOptions] (val x: Self) extends AnyVal {
       
       inline def setAttribInitTarget(value: String): Self = StObject.set(x, "attribInitTarget", value.asInstanceOf[js.Any])
       

@@ -50,7 +50,8 @@ object WebUIDialReceiverActivatedEventArgs {
     __obj.asInstanceOf[WebUIDialReceiverActivatedEventArgs]
   }
   
-  extension [Self <: WebUIDialReceiverActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebUIDialReceiverActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
     

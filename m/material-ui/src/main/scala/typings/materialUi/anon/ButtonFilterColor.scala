@@ -29,7 +29,8 @@ object ButtonFilterColor {
     __obj.asInstanceOf[ButtonFilterColor]
   }
   
-  extension [Self <: ButtonFilterColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonFilterColor] (val x: Self) extends AnyVal {
     
     inline def setButtonFilterColor(value: String): Self = StObject.set(x, "buttonFilterColor", value.asInstanceOf[js.Any])
     

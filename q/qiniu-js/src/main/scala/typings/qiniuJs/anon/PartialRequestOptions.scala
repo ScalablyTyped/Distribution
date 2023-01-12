@@ -29,7 +29,8 @@ object PartialRequestOptions {
     __obj.asInstanceOf[PartialRequestOptions]
   }
   
-  extension [Self <: PartialRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setBody(value: BodyInit): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

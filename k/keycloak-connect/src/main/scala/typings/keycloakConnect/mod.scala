@@ -52,7 +52,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AuthZRequest]
     }
     
-    extension [Self <: AuthZRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthZRequest] (val x: Self) extends AnyVal {
       
       inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[EnforcerOptions]
     }
     
-    extension [Self <: EnforcerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnforcerOptions] (val x: Self) extends AnyVal {
       
       inline def setClaims(value: /* repeated */ Any => Any): Self = StObject.set(x, "claims", js.Any.fromFunction1(value))
       
@@ -138,7 +140,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Grant]
     }
     
-    extension [Self <: Grant](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Grant] (val x: Self) extends AnyVal {
       
       inline def setIsExpired(value: () => Boolean): Self = StObject.set(x, "isExpired", js.Any.fromFunction0(value))
       
@@ -315,7 +318,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[GrantProperties]
     }
     
-    extension [Self <: GrantProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GrantProperties] (val x: Self) extends AnyVal {
       
       inline def setAccess_token(value: Token): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
@@ -770,7 +774,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[KeycloakConfig]
     }
     
-    extension [Self <: KeycloakConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeycloakConfig] (val x: Self) extends AnyVal {
       
       inline def `setAuth-server-url`(value: String): Self = StObject.set(x, "auth-server-url", value.asInstanceOf[js.Any])
       
@@ -814,7 +819,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[KeycloakOptions]
     }
     
-    extension [Self <: KeycloakOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeycloakOptions] (val x: Self) extends AnyVal {
       
       inline def setCookies(value: Boolean): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
@@ -852,7 +858,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setHasApplicationRole(value: (String, String) => Boolean): Self = StObject.set(x, "hasApplicationRole", js.Any.fromFunction2(value))
       

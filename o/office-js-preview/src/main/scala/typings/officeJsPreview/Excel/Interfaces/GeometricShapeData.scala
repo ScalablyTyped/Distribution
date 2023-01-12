@@ -22,7 +22,8 @@ object GeometricShapeData {
     __obj.asInstanceOf[GeometricShapeData]
   }
   
-  extension [Self <: GeometricShapeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeometricShapeData] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

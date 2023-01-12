@@ -68,7 +68,8 @@ object platformKeys {
       __obj.asInstanceOf[ClientCertificateRequest]
     }
     
-    extension [Self <: ClientCertificateRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientCertificateRequest] (val x: Self) extends AnyVal {
       
       inline def setCertificateAuthorities(value: js.Array[js.typedarray.ArrayBuffer]): Self = StObject.set(x, "certificateAuthorities", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object platformKeys {
       __obj.asInstanceOf[Match]
     }
     
-    extension [Self <: Match](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Match] (val x: Self) extends AnyVal {
       
       inline def setCertificate(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       
@@ -151,7 +153,8 @@ object platformKeys {
       __obj.asInstanceOf[SelectDetails]
     }
     
-    extension [Self <: SelectDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectDetails] (val x: Self) extends AnyVal {
       
       inline def setClientCerts(value: js.Array[js.typedarray.ArrayBuffer]): Self = StObject.set(x, "clientCerts", value.asInstanceOf[js.Any])
       
@@ -183,7 +186,8 @@ object platformKeys {
       __obj.asInstanceOf[VerificationDetails]
     }
     
-    extension [Self <: VerificationDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerificationDetails] (val x: Self) extends AnyVal {
       
       inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
@@ -219,7 +223,8 @@ object platformKeys {
       __obj.asInstanceOf[VerificationResult]
     }
     
-    extension [Self <: VerificationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerificationResult] (val x: Self) extends AnyVal {
       
       inline def setDebug_errors(value: js.Array[String]): Self = StObject.set(x, "debug_errors", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object RepositoriesRepositoryselection {
     __obj.asInstanceOf[RepositoriesRepositoryselection]
   }
   
-  extension [Self <: RepositoriesRepositoryselection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepositoriesRepositoryselection] (val x: Self) extends AnyVal {
     
     inline def setRepositories(
       value: js.Array[

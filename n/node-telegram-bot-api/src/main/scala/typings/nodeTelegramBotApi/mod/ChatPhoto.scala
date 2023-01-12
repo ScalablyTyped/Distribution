@@ -17,7 +17,8 @@ object ChatPhoto {
     __obj.asInstanceOf[ChatPhoto]
   }
   
-  extension [Self <: ChatPhoto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatPhoto] (val x: Self) extends AnyVal {
     
     inline def setBig_file_id(value: String): Self = StObject.set(x, "big_file_id", value.asInstanceOf[js.Any])
     

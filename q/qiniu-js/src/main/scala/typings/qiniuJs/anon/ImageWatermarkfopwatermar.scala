@@ -40,7 +40,8 @@ object ImageWatermarkfopwatermar {
     __obj.asInstanceOf[ImageWatermarkfopwatermar]
   }
   
-  extension [Self <: ImageWatermarkfopwatermar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageWatermarkfopwatermar] (val x: Self) extends AnyVal {
     
     inline def setDissolve(value: Double): Self = StObject.set(x, "dissolve", value.asInstanceOf[js.Any])
     

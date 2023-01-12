@@ -31,7 +31,8 @@ object UseSelectDispatchAction {
     __obj.asInstanceOf[UseSelectDispatchAction[Item]]
   }
   
-  extension [Self <: UseSelectDispatchAction[?], Item](x: Self & UseSelectDispatchAction[Item]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseSelectDispatchAction[?], Item] (val x: Self & UseSelectDispatchAction[Item]) extends AnyVal {
     
     inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
     

@@ -103,7 +103,8 @@ object XPresenterHelper {
     __obj.asInstanceOf[XPresenterHelper]
   }
   
-  extension [Self <: XPresenterHelper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPresenterHelper] (val x: Self) extends AnyVal {
     
     inline def setCaptureMouse(value: XWindow => Unit): Self = StObject.set(x, "captureMouse", js.Any.fromFunction1(value))
     

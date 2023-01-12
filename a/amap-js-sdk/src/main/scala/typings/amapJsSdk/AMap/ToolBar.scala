@@ -52,7 +52,8 @@ object ToolBar {
     __obj.asInstanceOf[ToolBar]
   }
   
-  extension [Self <: ToolBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolBar] (val x: Self) extends AnyVal {
     
     inline def setDoLocation(value: () => Unit): Self = StObject.set(x, "doLocation", js.Any.fromFunction0(value))
     

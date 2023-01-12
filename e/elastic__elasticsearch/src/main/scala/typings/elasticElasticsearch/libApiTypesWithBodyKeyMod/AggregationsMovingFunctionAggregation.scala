@@ -21,7 +21,8 @@ object AggregationsMovingFunctionAggregation {
     __obj.asInstanceOf[AggregationsMovingFunctionAggregation]
   }
   
-  extension [Self <: AggregationsMovingFunctionAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsMovingFunctionAggregation] (val x: Self) extends AnyVal {
     
     inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     

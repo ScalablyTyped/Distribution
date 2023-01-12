@@ -28,7 +28,8 @@ object ListAppComponentCompliancesRequest {
     __obj.asInstanceOf[ListAppComponentCompliancesRequest]
   }
   
-  extension [Self <: ListAppComponentCompliancesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAppComponentCompliancesRequest] (val x: Self) extends AnyVal {
     
     inline def setAssessmentArn(value: Arn): Self = StObject.set(x, "assessmentArn", value.asInstanceOf[js.Any])
     

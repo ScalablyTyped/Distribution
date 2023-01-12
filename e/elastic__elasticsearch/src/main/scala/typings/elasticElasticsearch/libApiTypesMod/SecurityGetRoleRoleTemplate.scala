@@ -17,7 +17,8 @@ object SecurityGetRoleRoleTemplate {
     __obj.asInstanceOf[SecurityGetRoleRoleTemplate]
   }
   
-  extension [Self <: SecurityGetRoleRoleTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityGetRoleRoleTemplate] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: SecurityGetRoleTemplateFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

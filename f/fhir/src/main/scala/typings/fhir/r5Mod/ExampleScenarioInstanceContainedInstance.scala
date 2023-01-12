@@ -29,7 +29,8 @@ object ExampleScenarioInstanceContainedInstance {
     __obj.asInstanceOf[ExampleScenarioInstanceContainedInstance]
   }
   
-  extension [Self <: ExampleScenarioInstanceContainedInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExampleScenarioInstanceContainedInstance] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     

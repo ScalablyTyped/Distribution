@@ -19,7 +19,8 @@ object EditSubsetParams {
     __obj.asInstanceOf[EditSubsetParams]
   }
   
-  extension [Self <: EditSubsetParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditSubsetParams] (val x: Self) extends AnyVal {
     
     inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AtomFamilyOptionsWithoutDefault {
     __obj.asInstanceOf[AtomFamilyOptionsWithoutDefault[T, P]]
   }
   
-  extension [Self <: AtomFamilyOptionsWithoutDefault[?, ?], T, P /* <: SerializableParam */](x: Self & (AtomFamilyOptionsWithoutDefault[T, P])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AtomFamilyOptionsWithoutDefault[?, ?], T, P /* <: SerializableParam */] (val x: Self & (AtomFamilyOptionsWithoutDefault[T, P])) extends AnyVal {
     
     inline def setDangerouslyAllowMutability(value: Boolean): Self = StObject.set(x, "dangerouslyAllowMutability", value.asInstanceOf[js.Any])
     

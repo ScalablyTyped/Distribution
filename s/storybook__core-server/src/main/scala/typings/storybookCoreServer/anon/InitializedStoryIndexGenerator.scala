@@ -32,7 +32,8 @@ object InitializedStoryIndexGenerator {
     __obj.asInstanceOf[InitializedStoryIndexGenerator]
   }
   
-  extension [Self <: InitializedStoryIndexGenerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitializedStoryIndexGenerator] (val x: Self) extends AnyVal {
     
     inline def setInitializedStoryIndexGenerator(value: js.Promise[StoryIndexGenerator]): Self = StObject.set(x, "initializedStoryIndexGenerator", value.asInstanceOf[js.Any])
     

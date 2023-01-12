@@ -448,7 +448,8 @@ object distNativeIoMod {
         __obj.asInstanceOf[Pkcs11Options]
       }
       
-      extension [Self <: Pkcs11Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Pkcs11Options] (val x: Self) extends AnyVal {
         
         inline def setCert_file_contents(value: String): Self = StObject.set(x, "cert_file_contents", value.asInstanceOf[js.Any])
         

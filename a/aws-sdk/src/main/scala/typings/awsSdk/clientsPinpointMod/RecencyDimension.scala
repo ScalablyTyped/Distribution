@@ -23,7 +23,8 @@ object RecencyDimension {
     __obj.asInstanceOf[RecencyDimension]
   }
   
-  extension [Self <: RecencyDimension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecencyDimension] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Duration): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     

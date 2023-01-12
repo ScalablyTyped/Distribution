@@ -23,7 +23,8 @@ object buildSrcGeneratedChannelzMod {
       __obj.asInstanceOf[ProtoGrpcType]
     }
     
-    extension [Self <: ProtoGrpcType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProtoGrpcType] (val x: Self) extends AnyVal {
       
       inline def setGoogle(value: Protobuf): Self = StObject.set(x, "google", value.asInstanceOf[js.Any])
       

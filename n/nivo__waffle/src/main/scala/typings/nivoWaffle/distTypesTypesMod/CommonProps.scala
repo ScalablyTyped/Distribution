@@ -58,7 +58,8 @@ object CommonProps {
     __obj.asInstanceOf[CommonProps[RawDatum]]
   }
   
-  extension [Self <: CommonProps[?], RawDatum /* <: Datum */](x: Self & CommonProps[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonProps[?], RawDatum /* <: Datum */] (val x: Self & CommonProps[RawDatum]) extends AnyVal {
     
     inline def setBorderColor(value: InheritedColorConfig[Cell[RawDatum]]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

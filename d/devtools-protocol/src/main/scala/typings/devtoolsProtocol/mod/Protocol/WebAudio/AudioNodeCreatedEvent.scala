@@ -15,7 +15,8 @@ object AudioNodeCreatedEvent {
     __obj.asInstanceOf[AudioNodeCreatedEvent]
   }
   
-  extension [Self <: AudioNodeCreatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioNodeCreatedEvent] (val x: Self) extends AnyVal {
     
     inline def setNode(value: AudioNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }

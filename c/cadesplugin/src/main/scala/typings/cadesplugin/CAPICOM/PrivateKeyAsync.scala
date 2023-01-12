@@ -58,7 +58,8 @@ object PrivateKeyAsync {
     __obj.asInstanceOf[PrivateKeyAsync]
   }
   
-  extension [Self <: PrivateKeyAsync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivateKeyAsync] (val x: Self) extends AnyVal {
     
     inline def setCachePin(
       value: /* import warning: importer.ImportType#apply Failed type conversion: boolean extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<boolean> : // tslint:disable-line ban-types

@@ -16,7 +16,8 @@ object PartialClassesAlphaPicker {
     __obj.asInstanceOf[PartialClassesAlphaPicker]
   }
   
-  extension [Self <: PartialClassesAlphaPicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassesAlphaPicker] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: PartialAlphaPickerStylesP): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

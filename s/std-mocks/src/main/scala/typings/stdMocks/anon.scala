@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Optionsprintbooleanundefi]
     }
     
-    extension [Self <: Optionsprintbooleanundefi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsprintbooleanundefi] (val x: Self) extends AnyVal {
       
       inline def setPrint(value: Boolean): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Optionsstderrfalse]
     }
     
-    extension [Self <: Optionsstderrfalse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsstderrfalse] (val x: Self) extends AnyVal {
       
       inline def setStderr(value: Boolean): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
@@ -78,7 +80,8 @@ object anon {
       __obj.asInstanceOf[Optionsstdoutfalse]
     }
     
-    extension [Self <: Optionsstdoutfalse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsstdoutfalse] (val x: Self) extends AnyVal {
       
       inline def setStderr(value: Boolean): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
@@ -104,7 +107,8 @@ object anon {
       __obj.asInstanceOf[Optionsstdoutfalsestderrf]
     }
     
-    extension [Self <: Optionsstdoutfalsestderrf](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsstdoutfalsestderrf] (val x: Self) extends AnyVal {
       
       inline def setStderr(value: Boolean): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
@@ -127,7 +131,8 @@ object anon {
       __obj.asInstanceOf[Stderr]
     }
     
-    extension [Self <: Stderr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stderr] (val x: Self) extends AnyVal {
       
       inline def setStderr(value: js.Array[String]): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
@@ -148,7 +153,8 @@ object anon {
       __obj.asInstanceOf[StderrStdout]
     }
     
-    extension [Self <: StderrStdout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StderrStdout] (val x: Self) extends AnyVal {
       
       inline def setStderr(value: js.Array[String]): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
@@ -171,7 +177,8 @@ object anon {
       __obj.asInstanceOf[Stdout]
     }
     
-    extension [Self <: Stdout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stdout] (val x: Self) extends AnyVal {
       
       inline def setStdout(value: js.Array[String]): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
       

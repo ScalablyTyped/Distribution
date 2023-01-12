@@ -30,7 +30,8 @@ object distTypesUtilGetDeclarationInfoMod {
       __obj.asInstanceOf[DeclarationInfo]
     }
     
-    extension [Self <: DeclarationInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeclarationInfo] (val x: Self) extends AnyVal {
       
       inline def setTypeDeclarations(value: Set[String]): Self = StObject.set(x, "typeDeclarations", value.asInstanceOf[js.Any])
       

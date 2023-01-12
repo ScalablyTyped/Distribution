@@ -71,7 +71,8 @@ object DocumentGetParams {
     __obj.asInstanceOf[DocumentGetParams]
   }
   
-  extension [Self <: DocumentGetParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentGetParams] (val x: Self) extends AnyVal {
     
     inline def setAtt_encoding_info(value: Boolean): Self = StObject.set(x, "att_encoding_info", value.asInstanceOf[js.Any])
     

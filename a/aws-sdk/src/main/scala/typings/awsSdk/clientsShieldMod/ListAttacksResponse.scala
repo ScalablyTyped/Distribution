@@ -23,7 +23,8 @@ object ListAttacksResponse {
     __obj.asInstanceOf[ListAttacksResponse]
   }
   
-  extension [Self <: ListAttacksResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAttacksResponse] (val x: Self) extends AnyVal {
     
     inline def setAttackSummaries(value: AttackSummaries): Self = StObject.set(x, "AttackSummaries", value.asInstanceOf[js.Any])
     

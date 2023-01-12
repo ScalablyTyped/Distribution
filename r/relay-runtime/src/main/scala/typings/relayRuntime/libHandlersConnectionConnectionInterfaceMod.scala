@@ -32,7 +32,8 @@ object libHandlersConnectionConnectionInterfaceMod {
       __obj.asInstanceOf[EdgeRecord]
     }
     
-    extension [Self <: EdgeRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EdgeRecord] (val x: Self) extends AnyVal {
       
       inline def setCursor(value: Any): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object libHandlersConnectionConnectionInterfaceMod {
       __obj.asInstanceOf[PageInfo]
     }
     
-    extension [Self <: PageInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageInfo] (val x: Self) extends AnyVal {
       
       inline def setEndCursor(value: String): Self = StObject.set(x, "endCursor", value.asInstanceOf[js.Any])
       

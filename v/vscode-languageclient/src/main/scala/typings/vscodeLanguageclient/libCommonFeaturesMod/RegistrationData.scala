@@ -17,7 +17,8 @@ object RegistrationData {
     __obj.asInstanceOf[RegistrationData[T]]
   }
   
-  extension [Self <: RegistrationData[?], T](x: Self & RegistrationData[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegistrationData[?], T] (val x: Self & RegistrationData[T]) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

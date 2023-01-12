@@ -52,7 +52,8 @@ object TerminalConfigurationProperties {
     __obj.asInstanceOf[TerminalConfigurationProperties]
   }
   
-  extension [Self <: TerminalConfigurationProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminalConfigurationProperties] (val x: Self) extends AnyVal {
     
     inline def setDefaultConfiguration(value: String): Self = StObject.set(x, "defaultConfiguration", value.asInstanceOf[js.Any])
     

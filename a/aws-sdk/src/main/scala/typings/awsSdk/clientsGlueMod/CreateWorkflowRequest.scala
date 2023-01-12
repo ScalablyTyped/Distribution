@@ -38,7 +38,8 @@ object CreateWorkflowRequest {
     __obj.asInstanceOf[CreateWorkflowRequest]
   }
   
-  extension [Self <: CreateWorkflowRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWorkflowRequest] (val x: Self) extends AnyVal {
     
     inline def setDefaultRunProperties(value: WorkflowRunProperties): Self = StObject.set(x, "DefaultRunProperties", value.asInstanceOf[js.Any])
     

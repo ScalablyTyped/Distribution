@@ -23,7 +23,8 @@ object ChannelTargetInfo {
     __obj.asInstanceOf[ChannelTargetInfo]
   }
   
-  extension [Self <: ChannelTargetInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelTargetInfo] (val x: Self) extends AnyVal {
     
     inline def setContactChannelId(value: SsmContactsArn): Self = StObject.set(x, "ContactChannelId", value.asInstanceOf[js.Any])
     

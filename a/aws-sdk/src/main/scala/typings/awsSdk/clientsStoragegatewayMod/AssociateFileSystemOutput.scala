@@ -18,7 +18,8 @@ object AssociateFileSystemOutput {
     __obj.asInstanceOf[AssociateFileSystemOutput]
   }
   
-  extension [Self <: AssociateFileSystemOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateFileSystemOutput] (val x: Self) extends AnyVal {
     
     inline def setFileSystemAssociationARN(value: FileSystemAssociationARN): Self = StObject.set(x, "FileSystemAssociationARN", value.asInstanceOf[js.Any])
     

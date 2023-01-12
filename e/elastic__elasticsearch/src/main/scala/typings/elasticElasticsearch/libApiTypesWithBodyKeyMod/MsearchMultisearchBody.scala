@@ -80,7 +80,8 @@ object MsearchMultisearchBody {
     __obj.asInstanceOf[MsearchMultisearchBody]
   }
   
-  extension [Self <: MsearchMultisearchBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MsearchMultisearchBody] (val x: Self) extends AnyVal {
     
     inline def setAggregations(value: Record[String, AggregationsAggregationContainer]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
     

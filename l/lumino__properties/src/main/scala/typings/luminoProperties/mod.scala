@@ -175,7 +175,8 @@ object mod {
         __obj.asInstanceOf[IOptions[T, U]]
       }
       
-      extension [Self <: IOptions[?, ?], T, U](x: Self & (IOptions[T, U])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions[?, ?], T, U] (val x: Self & (IOptions[T, U])) extends AnyVal {
         
         inline def setChanged(value: (/* owner */ T, /* oldValue */ U, /* newValue */ U) => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction3(value))
         

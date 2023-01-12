@@ -15,7 +15,8 @@ object MaterialPluginFillRenderTargetTextures {
     __obj.asInstanceOf[MaterialPluginFillRenderTargetTextures]
   }
   
-  extension [Self <: MaterialPluginFillRenderTargetTextures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaterialPluginFillRenderTargetTextures] (val x: Self) extends AnyVal {
     
     inline def setRenderTargets(value: SmartArray[RenderTargetTexture]): Self = StObject.set(x, "renderTargets", value.asInstanceOf[js.Any])
   }

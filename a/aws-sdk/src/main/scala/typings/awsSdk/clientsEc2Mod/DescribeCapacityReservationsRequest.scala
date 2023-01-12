@@ -38,7 +38,8 @@ object DescribeCapacityReservationsRequest {
     __obj.asInstanceOf[DescribeCapacityReservationsRequest]
   }
   
-  extension [Self <: DescribeCapacityReservationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCapacityReservationsRequest] (val x: Self) extends AnyVal {
     
     inline def setCapacityReservationIds(value: CapacityReservationIdSet): Self = StObject.set(x, "CapacityReservationIds", value.asInstanceOf[js.Any])
     

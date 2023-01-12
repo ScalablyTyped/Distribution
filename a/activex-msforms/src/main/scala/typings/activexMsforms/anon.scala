@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Button]
     }
     
-    extension [Self <: Button](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
       
       inline def setButton(value: Double): Self = StObject.set(x, "Button", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Cancel]
     }
     
-    extension [Self <: Cancel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: ReturnBoolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     }
@@ -67,7 +69,8 @@ object anon {
       __obj.asInstanceOf[CancelIndex]
     }
     
-    extension [Self <: CancelIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CancelIndex] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: ReturnBoolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
@@ -86,7 +89,8 @@ object anon {
       __obj.asInstanceOf[Control]
     }
     
-    extension [Self <: Control](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Control] (val x: Self) extends AnyVal {
       
       inline def setControl(value: typings.activexMsforms.MSForms.Control): Self = StObject.set(x, "Control", value.asInstanceOf[js.Any])
     }
@@ -105,7 +109,8 @@ object anon {
       __obj.asInstanceOf[Index]
     }
     
-    extension [Self <: Index](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
       
       inline def setControl(value: typings.activexMsforms.MSForms.Control): Self = StObject.set(x, "Control", value.asInstanceOf[js.Any])
       
@@ -124,7 +129,8 @@ object anon {
       __obj.asInstanceOf[IndexNumber]
     }
     
-    extension [Self <: IndexNumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexNumber] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     }
@@ -143,7 +149,8 @@ object anon {
       __obj.asInstanceOf[IndexPercent]
     }
     
-    extension [Self <: IndexPercent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexPercent] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
       
@@ -162,7 +169,8 @@ object anon {
       __obj.asInstanceOf[KeyAscii]
     }
     
-    extension [Self <: KeyAscii](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyAscii] (val x: Self) extends AnyVal {
       
       inline def setKeyAscii(value: ReturnInteger): Self = StObject.set(x, "KeyAscii", value.asInstanceOf[js.Any])
     }
@@ -181,7 +189,8 @@ object anon {
       __obj.asInstanceOf[KeyCode]
     }
     
-    extension [Self <: KeyCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyCode] (val x: Self) extends AnyVal {
       
       inline def setKeyCode(value: ReturnInteger): Self = StObject.set(x, "KeyCode", value.asInstanceOf[js.Any])
       
@@ -200,7 +209,8 @@ object anon {
       __obj.asInstanceOf[Percent]
     }
     
-    extension [Self <: Percent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Percent] (val x: Self) extends AnyVal {
       
       inline def setPercent(value: Double): Self = StObject.set(x, "Percent", value.asInstanceOf[js.Any])
     }
@@ -225,7 +235,8 @@ object anon {
       __obj.asInstanceOf[Shift]
     }
     
-    extension [Self <: Shift](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Shift] (val x: Self) extends AnyVal {
       
       inline def setButton(value: Double): Self = StObject.set(x, "Button", value.asInstanceOf[js.Any])
       

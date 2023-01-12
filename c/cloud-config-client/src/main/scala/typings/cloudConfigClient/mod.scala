@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[Auth]
     }
     
-    extension [Self <: Auth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Auth] (val x: Self) extends AnyVal {
       
       inline def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object mod {
       __obj.asInstanceOf[ConfigData]
     }
     
-    extension [Self <: ConfigData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigData] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object mod {
       __obj.asInstanceOf[ConfigFile]
     }
     
-    extension [Self <: ConfigFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigFile] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -174,7 +177,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent | typings.node.httpsMod.Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       

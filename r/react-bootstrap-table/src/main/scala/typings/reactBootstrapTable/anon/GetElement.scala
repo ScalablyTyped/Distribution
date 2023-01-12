@@ -26,7 +26,8 @@ object GetElement {
     __obj.asInstanceOf[GetElement]
   }
   
-  extension [Self <: GetElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetElement] (val x: Self) extends AnyVal {
     
     inline def setGetElement(
       value: (InsertModalColumnDescription[Any], EditableAttrs, String, Boolean, Any) => ReactElement | Boolean

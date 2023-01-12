@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Errorpluginstringundefine]
     }
     
-    extension [Self <: Errorpluginstringundefine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Errorpluginstringundefine] (val x: Self) extends AnyVal {
       
       inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -164,7 +167,8 @@ object anon {
       __obj.asInstanceOf[Implementation[T]]
     }
     
-    extension [Self <: Implementation[?], T](x: Self & Implementation[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Implementation[?], T] (val x: Self & Implementation[T]) extends AnyVal {
       
       inline def setImplementation(
         value: (/* input */ Input, /* sourceMap */ js.UndefOr[RawSourceMap], /* minifyOptions */ InferDefaultType[T]) => js.Promise[MinimizedResult]

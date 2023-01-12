@@ -15,7 +15,8 @@ object TargetBinder {
     __obj.asInstanceOf[TargetBinder[D]]
   }
   
-  extension [Self <: TargetBinder[?], D /* <: DirectiveMeta */](x: Self & TargetBinder[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetBinder[?], D /* <: DirectiveMeta */] (val x: Self & TargetBinder[D]) extends AnyVal {
     
     inline def setBind(value: Target => BoundTarget[D]): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
   }

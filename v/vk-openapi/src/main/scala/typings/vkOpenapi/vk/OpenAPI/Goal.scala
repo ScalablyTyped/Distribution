@@ -82,7 +82,8 @@ object Goal {
       __obj.asInstanceOf[GoalParams]
     }
     
-    extension [Self <: GoalParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GoalParams] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

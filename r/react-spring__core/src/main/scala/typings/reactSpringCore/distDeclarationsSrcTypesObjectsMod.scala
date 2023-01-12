@@ -34,7 +34,8 @@ object distDeclarationsSrcTypesObjectsMod {
       __obj.asInstanceOf[AnimationResult[T]]
     }
     
-    extension [Self <: AnimationResult[?], T /* <: Readable[Any] */](x: Self & AnimationResult[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationResult[?], T /* <: Readable[Any] */] (val x: Self & AnimationResult[T]) extends AnyVal {
       
       inline def setCancelled(value: Boolean): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object distDeclarationsSrcTypesObjectsMod {
       __obj.asInstanceOf[SpringConfig]
     }
     
-    extension [Self <: SpringConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpringConfig] (val x: Self) extends AnyVal {
       
       inline def setBounce(value: Double): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
       

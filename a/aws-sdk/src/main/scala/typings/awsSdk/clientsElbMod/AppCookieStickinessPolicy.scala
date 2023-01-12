@@ -23,7 +23,8 @@ object AppCookieStickinessPolicy {
     __obj.asInstanceOf[AppCookieStickinessPolicy]
   }
   
-  extension [Self <: AppCookieStickinessPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppCookieStickinessPolicy] (val x: Self) extends AnyVal {
     
     inline def setCookieName(value: CookieName): Self = StObject.set(x, "CookieName", value.asInstanceOf[js.Any])
     

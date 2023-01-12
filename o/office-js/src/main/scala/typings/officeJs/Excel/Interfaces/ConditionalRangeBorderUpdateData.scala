@@ -39,7 +39,8 @@ object ConditionalRangeBorderUpdateData {
     __obj.asInstanceOf[ConditionalRangeBorderUpdateData]
   }
   
-  extension [Self <: ConditionalRangeBorderUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalRangeBorderUpdateData] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ProjectAttributes {
     __obj.asInstanceOf[ProjectAttributes]
   }
   
-  extension [Self <: ProjectAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectAttributes] (val x: Self) extends AnyVal {
     
     inline def setCriticality(value: js.Array[PROJECT_CRITICALITY]): Self = StObject.set(x, "criticality", value.asInstanceOf[js.Any])
     

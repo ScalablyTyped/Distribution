@@ -21,7 +21,8 @@ object Namehash {
     __obj.asInstanceOf[Namehash]
   }
   
-  extension [Self <: Namehash](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Namehash] (val x: Self) extends AnyVal {
     
     inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
     

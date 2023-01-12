@@ -19,7 +19,8 @@ object CreateServiceAccountKeyRequest {
     __obj.asInstanceOf[CreateServiceAccountKeyRequest]
   }
   
-  extension [Self <: CreateServiceAccountKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateServiceAccountKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setKeyAlgorithm(value: String): Self = StObject.set(x, "keyAlgorithm", value.asInstanceOf[js.Any])
     

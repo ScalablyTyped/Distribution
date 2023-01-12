@@ -83,7 +83,8 @@ object UpdateReplicationConfigurationTemplateRequest {
     __obj.asInstanceOf[UpdateReplicationConfigurationTemplateRequest]
   }
   
-  extension [Self <: UpdateReplicationConfigurationTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateReplicationConfigurationTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ARN): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

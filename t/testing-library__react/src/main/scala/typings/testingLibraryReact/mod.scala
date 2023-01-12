@@ -747,7 +747,8 @@ object mod {
       __obj.asInstanceOf[RenderHookOptions[Props, Q, Container, BaseElement]]
     }
     
-    extension [Self <: RenderHookOptions[?, ?, ?, ?], Props, Q /* <: Queries */, Container /* <: Element | DocumentFragment */, BaseElement /* <: Element | DocumentFragment */](x: Self & (RenderHookOptions[Props, Q, Container, BaseElement])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderHookOptions[?, ?, ?, ?], Props, Q /* <: Queries */, Container /* <: Element | DocumentFragment */, BaseElement /* <: Element | DocumentFragment */] (val x: Self & (RenderHookOptions[Props, Q, Container, BaseElement])) extends AnyVal {
       
       inline def setInitialProps(value: Props): Self = StObject.set(x, "initialProps", value.asInstanceOf[js.Any])
       
@@ -834,7 +835,8 @@ object mod {
       __obj.asInstanceOf[RenderOptions[Q, Container, BaseElement]]
     }
     
-    extension [Self <: RenderOptions[?, ?, ?], Q /* <: Queries */, Container /* <: Element | DocumentFragment */, BaseElement /* <: Element | DocumentFragment */](x: Self & (RenderOptions[Q, Container, BaseElement])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderOptions[?, ?, ?], Q /* <: Queries */, Container /* <: Element | DocumentFragment */, BaseElement /* <: Element | DocumentFragment */] (val x: Self & (RenderOptions[Q, Container, BaseElement])) extends AnyVal {
       
       inline def setBaseElement(value: BaseElement): Self = StObject.set(x, "baseElement", value.asInstanceOf[js.Any])
       

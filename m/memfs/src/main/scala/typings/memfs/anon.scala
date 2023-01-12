@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setThrowIfNoEntry(value: `false`): Self = StObject.set(x, "throwIfNoEntry", value.asInstanceOf[js.Any])
     }
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
       inline def setBigint(value: `false`): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
       
@@ -63,7 +65,8 @@ object anon {
       __obj.asInstanceOf[`2`]
     }
     
-    extension [Self <: `2`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `2`] (val x: Self) extends AnyVal {
       
       inline def setBigint(value: `true`): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
       
@@ -82,7 +85,8 @@ object anon {
       __obj.asInstanceOf[`3`]
     }
     
-    extension [Self <: `3`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `3`] (val x: Self) extends AnyVal {
       
       inline def setBigint(value: `false`): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
     }
@@ -99,7 +103,8 @@ object anon {
       __obj.asInstanceOf[`4`]
     }
     
-    extension [Self <: `4`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `4`] (val x: Self) extends AnyVal {
       
       inline def setBigint(value: `true`): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
     }
@@ -148,7 +153,8 @@ object anon {
       __obj.asInstanceOf[Atime]
     }
     
-    extension [Self <: Atime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Atime] (val x: Self) extends AnyVal {
       
       inline def setAtime(value: Double): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
       
@@ -189,7 +195,8 @@ object anon {
       __obj.asInstanceOf[Bigint]
     }
     
-    extension [Self <: Bigint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bigint] (val x: Self) extends AnyVal {
       
       inline def setBigint(value: `false`): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
       
@@ -212,7 +219,8 @@ object anon {
       __obj.asInstanceOf[BigintThrowIfNoEntry]
     }
     
-    extension [Self <: BigintThrowIfNoEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BigintThrowIfNoEntry] (val x: Self) extends AnyVal {
       
       inline def setBigint(value: `true`): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
       
@@ -370,7 +378,8 @@ object anon {
       __obj.asInstanceOf[COPYFILEEXCL]
     }
     
-    extension [Self <: COPYFILEEXCL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: COPYFILEEXCL] (val x: Self) extends AnyVal {
       
       inline def setCOPYFILE_EXCL(value: Double): Self = StObject.set(x, "COPYFILE_EXCL", value.asInstanceOf[js.Any])
       
@@ -481,7 +490,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -514,7 +524,8 @@ object anon {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setFile(value: Instantiable1[/* args (repeated) */ Any, typings.memfs.libNodeMod.File]): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
       
@@ -535,7 +546,8 @@ object anon {
       __obj.asInstanceOf[ThrowIfNoEntry]
     }
     
-    extension [Self <: ThrowIfNoEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThrowIfNoEntry] (val x: Self) extends AnyVal {
       
       inline def setThrowIfNoEntry(value: `true`): Self = StObject.set(x, "throwIfNoEntry", value.asInstanceOf[js.Any])
       

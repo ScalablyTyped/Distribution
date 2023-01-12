@@ -24,7 +24,8 @@ object PartialInsightsClientPayl {
     __obj.asInstanceOf[PartialInsightsClientPayl]
   }
   
-  extension [Self <: PartialInsightsClientPayl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialInsightsClientPayl] (val x: Self) extends AnyVal {
     
     inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ImportDefaultSpecifier {
     __obj.asInstanceOf[ImportDefaultSpecifier]
   }
   
-  extension [Self <: ImportDefaultSpecifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportDefaultSpecifier] (val x: Self) extends AnyVal {
     
     inline def setLocal(value: Identifier): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     

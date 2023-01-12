@@ -25,7 +25,8 @@ object libComponentsDataTableSkeletonDataTableSkeletonMod extends Shortcut {
       __obj.asInstanceOf[DataTableSkeletonHeader]
     }
     
-    extension [Self <: DataTableSkeletonHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataTableSkeletonHeader] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object libComponentsDataTableSkeletonDataTableSkeletonMod extends Shortcut {
       __obj.asInstanceOf[DataTableSkeletonProps]
     }
     
-    extension [Self <: DataTableSkeletonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataTableSkeletonProps] (val x: Self) extends AnyVal {
       
       inline def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object SlideEnvironment {
     __obj.asInstanceOf[SlideEnvironment]
   }
   
-  extension [Self <: SlideEnvironment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideEnvironment] (val x: Self) extends AnyVal {
     
     inline def setLighting(value: websceneSunLighting | websceneVirtualLighting): Self = StObject.set(x, "lighting", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object BaseControlProps {
     __obj.asInstanceOf[BaseControlProps]
   }
   
-  extension [Self <: BaseControlProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseControlProps] (val x: Self) extends AnyVal {
     
     inline def setCaptureClick(value: Boolean): Self = StObject.set(x, "captureClick", value.asInstanceOf[js.Any])
     

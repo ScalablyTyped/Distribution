@@ -54,7 +54,8 @@ object UnityAtlasFileConfig {
     __obj.asInstanceOf[UnityAtlasFileConfig]
   }
   
-  extension [Self <: UnityAtlasFileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnityAtlasFileConfig] (val x: Self) extends AnyVal {
     
     inline def setAtlasExtension(value: String): Self = StObject.set(x, "atlasExtension", value.asInstanceOf[js.Any])
     

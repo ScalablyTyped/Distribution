@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Counties]
     }
     
-    extension [Self <: Counties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Counties] (val x: Self) extends AnyVal {
       
       inline def setCounties(value: Geometries): Self = StObject.set(x, "counties", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Countries]
     }
     
-    extension [Self <: Countries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Countries] (val x: Self) extends AnyVal {
       
       inline def setCountries(value: Geometries): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[Geometries]
     }
     
-    extension [Self <: Geometries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Geometries] (val x: Self) extends AnyVal {
       
       inline def setGeometries(value: js.Array[Polygon[js.Object] | MultiPolygon[js.Object]]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
       

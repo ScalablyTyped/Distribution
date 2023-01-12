@@ -18,7 +18,8 @@ object BluetoothDataFilter {
     __obj.asInstanceOf[BluetoothDataFilter]
   }
   
-  extension [Self <: BluetoothDataFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BluetoothDataFilter] (val x: Self) extends AnyVal {
     
     inline def setDataPrefix(value: BufferSource): Self = StObject.set(x, "dataPrefix", value.asInstanceOf[js.Any])
     

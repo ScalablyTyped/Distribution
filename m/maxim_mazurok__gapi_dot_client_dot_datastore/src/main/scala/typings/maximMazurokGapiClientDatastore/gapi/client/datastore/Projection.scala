@@ -16,7 +16,8 @@ object Projection {
     __obj.asInstanceOf[Projection]
   }
   
-  extension [Self <: Projection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Projection] (val x: Self) extends AnyVal {
     
     inline def setProperty(value: PropertyReference): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     

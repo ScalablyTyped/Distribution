@@ -16,7 +16,8 @@ object EventEmitterIEventEmitter {
     __obj.asInstanceOf[EventEmitterIEventEmitter]
   }
   
-  extension [Self <: EventEmitterIEventEmitter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventEmitterIEventEmitter] (val x: Self) extends AnyVal {
     
     inline def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
   }

@@ -16,7 +16,8 @@ object AdministratorWebToken {
     __obj.asInstanceOf[AdministratorWebToken]
   }
   
-  extension [Self <: AdministratorWebToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdministratorWebToken] (val x: Self) extends AnyVal {
     
     inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     

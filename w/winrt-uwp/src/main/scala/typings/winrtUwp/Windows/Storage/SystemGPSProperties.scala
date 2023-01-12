@@ -20,7 +20,8 @@ object SystemGPSProperties {
     __obj.asInstanceOf[SystemGPSProperties]
   }
   
-  extension [Self <: SystemGPSProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemGPSProperties] (val x: Self) extends AnyVal {
     
     inline def setLatitudeDecimal(value: String): Self = StObject.set(x, "latitudeDecimal", value.asInstanceOf[js.Any])
     

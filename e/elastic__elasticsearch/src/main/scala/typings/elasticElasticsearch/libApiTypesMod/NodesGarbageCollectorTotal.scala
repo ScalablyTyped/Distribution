@@ -19,7 +19,8 @@ object NodesGarbageCollectorTotal {
     __obj.asInstanceOf[NodesGarbageCollectorTotal]
   }
   
-  extension [Self <: NodesGarbageCollectorTotal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesGarbageCollectorTotal] (val x: Self) extends AnyVal {
     
     inline def setCollection_count(value: long): Self = StObject.set(x, "collection_count", value.asInstanceOf[js.Any])
     

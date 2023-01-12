@@ -64,7 +64,8 @@ object srcTypesMod {
       __obj.asInstanceOf[IntlConfig]
     }
     
-    extension [Self <: IntlConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntlConfig] (val x: Self) extends AnyVal {
       
       inline def setDefaultFormats(value: CustomFormats): Self = StObject.set(x, "defaultFormats", value.asInstanceOf[js.Any])
       
@@ -156,7 +157,8 @@ object srcTypesMod {
       __obj.asInstanceOf[ResolvedIntlConfig]
     }
     
-    extension [Self <: ResolvedIntlConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvedIntlConfig] (val x: Self) extends AnyVal {
       
       inline def setTextComponent(
         value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any

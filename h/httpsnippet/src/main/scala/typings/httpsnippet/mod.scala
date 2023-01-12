@@ -80,7 +80,8 @@ object mod {
       __obj.asInstanceOf[TargetClientInfo]
     }
     
-    extension [Self <: TargetClientInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetClientInfo] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object mod {
       __obj.asInstanceOf[TargetInfo[C]]
     }
     
-    extension [Self <: TargetInfo[?], C /* <: String */](x: Self & TargetInfo[C]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetInfo[?], C /* <: String */] (val x: Self & TargetInfo[C]) extends AnyVal {
       
       inline def setDefault(value: C): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[A]
     }
     
-    extension [Self <: A](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: A] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object anon {
       __obj.asInstanceOf[NumberifyHSL]
     }
     
-    extension [Self <: NumberifyHSL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberifyHSL] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -98,7 +100,8 @@ object anon {
       __obj.asInstanceOf[NumberifyHSLA]
     }
     
-    extension [Self <: NumberifyHSLA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberifyHSLA] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -126,7 +129,8 @@ object anon {
       __obj.asInstanceOf[NumberifyHSV]
     }
     
-    extension [Self <: NumberifyHSV](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberifyHSV] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -154,7 +158,8 @@ object anon {
       __obj.asInstanceOf[NumberifyHSVA]
     }
     
-    extension [Self <: NumberifyHSVA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberifyHSVA] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -182,7 +187,8 @@ object anon {
       __obj.asInstanceOf[NumberifyRGB]
     }
     
-    extension [Self <: NumberifyRGB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberifyRGB] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -210,7 +216,8 @@ object anon {
       __obj.asInstanceOf[NumberifyRGBA]
     }
     
-    extension [Self <: NumberifyRGBA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberifyRGBA] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -236,7 +243,8 @@ object anon {
       __obj.asInstanceOf[PartialTinyColorOptions]
     }
     
-    extension [Self <: PartialTinyColorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTinyColorOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

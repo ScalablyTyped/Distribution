@@ -41,7 +41,8 @@ object Accounts {
       __obj.asInstanceOf[IValidateLoginAttemptCbOpts]
     }
     
-    extension [Self <: IValidateLoginAttemptCbOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IValidateLoginAttemptCbOpts] (val x: Self) extends AnyVal {
       
       inline def setAllowed(value: Boolean): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
       

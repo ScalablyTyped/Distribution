@@ -45,7 +45,8 @@ object CreationDataStorage {
     __obj.asInstanceOf[CreationDataStorage]
   }
   
-  extension [Self <: CreationDataStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreationDataStorage] (val x: Self) extends AnyVal {
     
     inline def setArc(value: Double): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     

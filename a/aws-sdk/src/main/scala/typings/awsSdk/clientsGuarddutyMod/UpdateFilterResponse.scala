@@ -18,7 +18,8 @@ object UpdateFilterResponse {
     __obj.asInstanceOf[UpdateFilterResponse]
   }
   
-  extension [Self <: UpdateFilterResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFilterResponse] (val x: Self) extends AnyVal {
     
     inline def setName(value: FilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

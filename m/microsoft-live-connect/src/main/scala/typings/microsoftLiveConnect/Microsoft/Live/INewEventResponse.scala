@@ -113,7 +113,8 @@ object INewEventResponse {
     __obj.asInstanceOf[INewEventResponse]
   }
   
-  extension [Self <: INewEventResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INewEventResponse] (val x: Self) extends AnyVal {
     
     inline def setAvailability(value: String): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     

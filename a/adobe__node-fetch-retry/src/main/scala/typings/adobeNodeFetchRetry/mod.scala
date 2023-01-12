@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[RequestInitWithRetry]
     }
     
-    extension [Self <: RequestInitWithRetry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestInitWithRetry] (val x: Self) extends AnyVal {
       
       inline def setRetryOptions(value: RetryOptions | `false`): Self = StObject.set(x, "retryOptions", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object mod {
       __obj.asInstanceOf[RetryOptions]
     }
     
-    extension [Self <: RetryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryOptions] (val x: Self) extends AnyVal {
       
       inline def setForceSocketTimeout(value: Boolean): Self = StObject.set(x, "forceSocketTimeout", value.asInstanceOf[js.Any])
       

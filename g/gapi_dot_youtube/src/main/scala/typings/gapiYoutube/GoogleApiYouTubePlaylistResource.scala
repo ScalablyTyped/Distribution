@@ -60,7 +60,8 @@ object GoogleApiYouTubePlaylistResource {
     __obj.asInstanceOf[GoogleApiYouTubePlaylistResource]
   }
   
-  extension [Self <: GoogleApiYouTubePlaylistResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleApiYouTubePlaylistResource] (val x: Self) extends AnyVal {
     
     inline def setContentDetails(value: ItemCount): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
     

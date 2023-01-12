@@ -46,7 +46,8 @@ object IssuancePolicy {
     __obj.asInstanceOf[IssuancePolicy]
   }
   
-  extension [Self <: IssuancePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssuancePolicy] (val x: Self) extends AnyVal {
     
     inline def setAllowedIssuanceModes(value: IssuanceModes): Self = StObject.set(x, "allowedIssuanceModes", value.asInstanceOf[js.Any])
     

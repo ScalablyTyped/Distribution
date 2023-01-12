@@ -68,7 +68,8 @@ object mod {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setAudio(value: String | js.Array[String] | Metadata): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
@@ -155,7 +156,8 @@ object mod {
       __obj.asInstanceOf[ImageVideoMetadata]
     }
     
-    extension [Self <: ImageVideoMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageVideoMetadata] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String | js.Array[String]): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -200,7 +202,8 @@ object mod {
       __obj.asInstanceOf[Metadata]
     }
     
-    extension [Self <: Metadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
       
       inline def setSecure_url(value: String | js.Array[String]): Self = StObject.set(x, "secure_url", value.asInstanceOf[js.Any])
       
@@ -227,7 +230,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       

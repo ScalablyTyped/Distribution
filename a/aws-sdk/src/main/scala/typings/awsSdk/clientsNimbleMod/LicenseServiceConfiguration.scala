@@ -18,7 +18,8 @@ object LicenseServiceConfiguration {
     __obj.asInstanceOf[LicenseServiceConfiguration]
   }
   
-  extension [Self <: LicenseServiceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LicenseServiceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEndpoint(value: SensitiveString): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     

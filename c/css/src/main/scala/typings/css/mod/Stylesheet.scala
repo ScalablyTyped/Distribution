@@ -17,7 +17,8 @@ object Stylesheet {
     __obj.asInstanceOf[Stylesheet]
   }
   
-  extension [Self <: Stylesheet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stylesheet] (val x: Self) extends AnyVal {
     
     inline def setStylesheet(value: StyleRules): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
     

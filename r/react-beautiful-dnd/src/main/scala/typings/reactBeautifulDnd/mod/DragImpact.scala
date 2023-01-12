@@ -19,7 +19,8 @@ object DragImpact {
     __obj.asInstanceOf[DragImpact]
   }
   
-  extension [Self <: DragImpact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragImpact] (val x: Self) extends AnyVal {
     
     inline def setAt(value: ImpactLocation): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     

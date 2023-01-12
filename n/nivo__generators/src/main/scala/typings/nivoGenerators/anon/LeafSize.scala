@@ -27,7 +27,8 @@ object LeafSize {
     __obj.asInstanceOf[LeafSize]
   }
   
-  extension [Self <: LeafSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeafSize] (val x: Self) extends AnyVal {
     
     inline def setLeafSize(value: Double): Self = StObject.set(x, "leafSize", value.asInstanceOf[js.Any])
     

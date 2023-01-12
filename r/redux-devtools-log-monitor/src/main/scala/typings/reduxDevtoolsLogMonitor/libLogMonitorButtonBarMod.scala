@@ -64,7 +64,8 @@ object libLogMonitorButtonBarMod {
       __obj.asInstanceOf[Props[S, A]]
     }
     
-    extension [Self <: Props[?, ?], S, A /* <: Action[Any] */](x: Self & (Props[S, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props[?, ?], S, A /* <: Action[Any] */] (val x: Self & (Props[S, A])) extends AnyVal {
       
       inline def setDispatch(
         value: LogMonitorAction | (LiftedAction[S, A, LogMonitorState]) => LogMonitorAction | (LiftedAction[S, A, LogMonitorState])

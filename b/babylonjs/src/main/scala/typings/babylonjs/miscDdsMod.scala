@@ -252,7 +252,8 @@ object miscDdsMod {
       __obj.asInstanceOf[DDSInfo]
     }
     
-    extension [Self <: DDSInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DDSInfo] (val x: Self) extends AnyVal {
       
       inline def setDxgiFormat(value: Double): Self = StObject.set(x, "dxgiFormat", value.asInstanceOf[js.Any])
       

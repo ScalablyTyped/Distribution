@@ -17,7 +17,8 @@ object OfflineStorageOptions {
     __obj.asInstanceOf[OfflineStorageOptions]
   }
   
-  extension [Self <: OfflineStorageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OfflineStorageOptions] (val x: Self) extends AnyVal {
     
     inline def setCacheLimit(value: Double): Self = StObject.set(x, "cacheLimit", value.asInstanceOf[js.Any])
     

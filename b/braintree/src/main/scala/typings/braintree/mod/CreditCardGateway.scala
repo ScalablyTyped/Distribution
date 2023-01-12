@@ -29,7 +29,8 @@ object CreditCardGateway {
     __obj.asInstanceOf[CreditCardGateway]
   }
   
-  extension [Self <: CreditCardGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreditCardGateway] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: CreditCardCreateRequest => js.Promise[ValidatedResponse[CreditCard]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     

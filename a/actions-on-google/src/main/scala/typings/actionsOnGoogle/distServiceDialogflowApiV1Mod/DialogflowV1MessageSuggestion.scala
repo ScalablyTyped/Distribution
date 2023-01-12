@@ -15,7 +15,8 @@ object DialogflowV1MessageSuggestion {
     __obj.asInstanceOf[DialogflowV1MessageSuggestion]
   }
   
-  extension [Self <: DialogflowV1MessageSuggestion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogflowV1MessageSuggestion] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

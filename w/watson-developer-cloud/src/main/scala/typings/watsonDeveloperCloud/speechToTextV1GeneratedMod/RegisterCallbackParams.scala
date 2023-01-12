@@ -24,7 +24,8 @@ object RegisterCallbackParams {
     __obj.asInstanceOf[RegisterCallbackParams]
   }
   
-  extension [Self <: RegisterCallbackParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterCallbackParams] (val x: Self) extends AnyVal {
     
     inline def setCallback_url(value: String): Self = StObject.set(x, "callback_url", value.asInstanceOf[js.Any])
     

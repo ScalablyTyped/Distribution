@@ -19,7 +19,8 @@ object GoogleCloudVisionV1p2beta1WebDetectionWebImage {
     __obj.asInstanceOf[GoogleCloudVisionV1p2beta1WebDetectionWebImage]
   }
   
-  extension [Self <: GoogleCloudVisionV1p2beta1WebDetectionWebImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p2beta1WebDetectionWebImage] (val x: Self) extends AnyVal {
     
     inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     

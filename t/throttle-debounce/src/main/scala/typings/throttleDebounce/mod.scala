@@ -61,7 +61,8 @@ object mod {
       __obj.asInstanceOf[CancelOptions]
     }
     
-    extension [Self <: CancelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CancelOptions] (val x: Self) extends AnyVal {
       
       inline def setUpcomingOnly(value: Boolean): Self = StObject.set(x, "upcomingOnly", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object mod {
       __obj.asInstanceOf[DebounceOptions]
     }
     
-    extension [Self <: DebounceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebounceOptions] (val x: Self) extends AnyVal {
       
       inline def setAtBegin(value: Boolean): Self = StObject.set(x, "atBegin", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object mod {
       __obj.asInstanceOf[ThrottleOptions]
     }
     
-    extension [Self <: ThrottleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThrottleOptions] (val x: Self) extends AnyVal {
       
       inline def setDebounceMode(value: Boolean): Self = StObject.set(x, "debounceMode", value.asInstanceOf[js.Any])
       

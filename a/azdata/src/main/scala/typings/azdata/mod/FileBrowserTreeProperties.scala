@@ -17,7 +17,8 @@ object FileBrowserTreeProperties {
     __obj.asInstanceOf[FileBrowserTreeProperties]
   }
   
-  extension [Self <: FileBrowserTreeProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileBrowserTreeProperties] (val x: Self) extends AnyVal {
     
     inline def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
   }

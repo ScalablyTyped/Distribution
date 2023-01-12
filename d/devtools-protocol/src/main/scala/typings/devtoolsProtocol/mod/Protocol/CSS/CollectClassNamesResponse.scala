@@ -18,7 +18,8 @@ object CollectClassNamesResponse {
     __obj.asInstanceOf[CollectClassNamesResponse]
   }
   
-  extension [Self <: CollectClassNamesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectClassNamesResponse] (val x: Self) extends AnyVal {
     
     inline def setClassNames(value: js.Array[String]): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
     

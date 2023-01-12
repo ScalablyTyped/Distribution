@@ -15,7 +15,8 @@ object PublicOptions {
     __obj.asInstanceOf[PublicOptions]
   }
   
-  extension [Self <: PublicOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicOptions] (val x: Self) extends AnyVal {
     
     inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     

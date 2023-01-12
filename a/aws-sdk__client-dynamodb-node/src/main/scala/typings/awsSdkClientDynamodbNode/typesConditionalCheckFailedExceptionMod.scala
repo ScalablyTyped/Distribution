@@ -25,7 +25,8 @@ object typesConditionalCheckFailedExceptionMod {
       __obj.asInstanceOf[ConditionalCheckFailedException]
     }
     
-    extension [Self <: ConditionalCheckFailedException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConditionalCheckFailedException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.ConditionalCheckFailedException
@@ -47,7 +48,8 @@ object typesConditionalCheckFailedExceptionMod {
       __obj.asInstanceOf[ConditionalCheckFailedExceptionDetails]
     }
     
-    extension [Self <: ConditionalCheckFailedExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConditionalCheckFailedExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

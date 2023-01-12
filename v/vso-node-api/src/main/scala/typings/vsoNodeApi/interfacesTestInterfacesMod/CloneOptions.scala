@@ -51,7 +51,8 @@ object CloneOptions {
     __obj.asInstanceOf[CloneOptions]
   }
   
-  extension [Self <: CloneOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloneOptions] (val x: Self) extends AnyVal {
     
     inline def setCloneRequirements(value: Boolean): Self = StObject.set(x, "cloneRequirements", value.asInstanceOf[js.Any])
     

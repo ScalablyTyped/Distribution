@@ -668,7 +668,8 @@ object PropsSVGEllipseElementcon {
     __obj.asInstanceOf[PropsSVGEllipseElementcon]
   }
   
-  extension [Self <: PropsSVGEllipseElementcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsSVGEllipseElementcon] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

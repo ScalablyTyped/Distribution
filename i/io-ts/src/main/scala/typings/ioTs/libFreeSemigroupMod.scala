@@ -41,7 +41,8 @@ object libFreeSemigroupMod {
       __obj.asInstanceOf[Concat_[A]]
     }
     
-    extension [Self <: Concat_[?], A](x: Self & Concat_[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Concat_[?], A] (val x: Self & Concat_[A]) extends AnyVal {
       
       inline def setLeft(value: FreeSemigroup[A]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object libFreeSemigroupMod {
       __obj.asInstanceOf[Of_[A]]
     }
     
-    extension [Self <: Of_[?], A](x: Self & Of_[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Of_[?], A] (val x: Self & Of_[A]) extends AnyVal {
       
       inline def setValue(value: A): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

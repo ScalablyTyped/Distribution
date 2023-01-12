@@ -2423,7 +2423,8 @@ object libAdbMod {
       __obj.asInstanceOf[AdbExecutable]
     }
     
-    extension [Self <: AdbExecutable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdbExecutable] (val x: Self) extends AnyVal {
       
       inline def setDefaultArgs(value: js.Array[String]): Self = StObject.set(x, "defaultArgs", value.asInstanceOf[js.Any])
       
@@ -2484,7 +2485,8 @@ object libAdbMod {
       __obj.asInstanceOf[CreateAdbOptions]
     }
     
-    extension [Self <: CreateAdbOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateAdbOptions] (val x: Self) extends AnyVal {
       
       inline def setAdbExecTimeout(value: Double): Self = StObject.set(x, "adbExecTimeout", value.asInstanceOf[js.Any])
       

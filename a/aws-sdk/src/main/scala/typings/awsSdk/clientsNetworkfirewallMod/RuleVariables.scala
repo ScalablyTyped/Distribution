@@ -23,7 +23,8 @@ object RuleVariables {
     __obj.asInstanceOf[RuleVariables]
   }
   
-  extension [Self <: RuleVariables](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleVariables] (val x: Self) extends AnyVal {
     
     inline def setIPSets(value: IPSets): Self = StObject.set(x, "IPSets", value.asInstanceOf[js.Any])
     

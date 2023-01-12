@@ -114,7 +114,8 @@ object esmInfernoBaseComponentMod {
       __obj.asInstanceOf[VDomCustomClassesData]
     }
     
-    extension [Self <: VDomCustomClassesData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VDomCustomClassesData] (val x: Self) extends AnyVal {
       
       inline def setAdded(value: js.Array[String]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
       

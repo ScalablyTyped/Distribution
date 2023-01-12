@@ -53,7 +53,8 @@ object ExportImageTask {
     __obj.asInstanceOf[ExportImageTask]
   }
   
-  extension [Self <: ExportImageTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportImageTask] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

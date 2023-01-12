@@ -30,7 +30,8 @@ object XURI {
     __obj.asInstanceOf[XURI]
   }
   
-  extension [Self <: XURI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XURI] (val x: Self) extends AnyVal {
     
     inline def setLocalName(value: String): Self = StObject.set(x, "LocalName", value.asInstanceOf[js.Any])
     

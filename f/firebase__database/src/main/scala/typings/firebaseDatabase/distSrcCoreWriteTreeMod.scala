@@ -200,7 +200,8 @@ object distSrcCoreWriteTreeMod {
       __obj.asInstanceOf[WriteRecord]
     }
     
-    extension [Self <: WriteRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteRecord] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: StringDictionary[Node]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -246,7 +247,8 @@ object distSrcCoreWriteTreeMod {
       __obj.asInstanceOf[WriteTree]
     }
     
-    extension [Self <: WriteTree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteTree] (val x: Self) extends AnyVal {
       
       inline def setAllWrites(value: js.Array[WriteRecord]): Self = StObject.set(x, "allWrites", value.asInstanceOf[js.Any])
       
@@ -282,7 +284,8 @@ object distSrcCoreWriteTreeMod {
       __obj.asInstanceOf[WriteTreeRef]
     }
     
-    extension [Self <: WriteTreeRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteTreeRef] (val x: Self) extends AnyVal {
       
       inline def setTreePath(value: Path): Self = StObject.set(x, "treePath", value.asInstanceOf[js.Any])
       

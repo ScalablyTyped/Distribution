@@ -23,7 +23,8 @@ object Size {
     __obj.asInstanceOf[Size]
   }
   
-  extension [Self <: Size](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
     
     inline def setFromJS(value: js.Function2[/* width */ Double, /* height */ Double, Any] => Unit): Self = StObject.set(x, "fromJS", js.Any.fromFunction1(value))
     

@@ -31,7 +31,8 @@ object DealTermsGuaranteedFixedPriceTermsBillingInfo {
     __obj.asInstanceOf[DealTermsGuaranteedFixedPriceTermsBillingInfo]
   }
   
-  extension [Self <: DealTermsGuaranteedFixedPriceTermsBillingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DealTermsGuaranteedFixedPriceTermsBillingInfo] (val x: Self) extends AnyVal {
     
     inline def setCurrencyConversionTimeMs(value: String): Self = StObject.set(x, "currencyConversionTimeMs", value.asInstanceOf[js.Any])
     

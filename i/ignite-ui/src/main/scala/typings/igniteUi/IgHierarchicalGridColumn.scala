@@ -190,7 +190,8 @@ object IgHierarchicalGridColumn {
     __obj.asInstanceOf[IgHierarchicalGridColumn]
   }
   
-  extension [Self <: IgHierarchicalGridColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgHierarchicalGridColumn] (val x: Self) extends AnyVal {
     
     inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object CreateStickerSetOptions {
     __obj.asInstanceOf[CreateStickerSetOptions]
   }
   
-  extension [Self <: CreateStickerSetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStickerSetOptions] (val x: Self) extends AnyVal {
     
     inline def setMask_position(value: MaskPosition): Self = StObject.set(x, "mask_position", value.asInstanceOf[js.Any])
     

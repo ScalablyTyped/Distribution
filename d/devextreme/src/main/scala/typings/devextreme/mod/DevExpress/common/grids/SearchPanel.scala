@@ -48,7 +48,8 @@ object SearchPanel {
     __obj.asInstanceOf[SearchPanel]
   }
   
-  extension [Self <: SearchPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchPanel] (val x: Self) extends AnyVal {
     
     inline def setHighlightCaseSensitive(value: Boolean): Self = StObject.set(x, "highlightCaseSensitive", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object SearchParams {
     __obj.asInstanceOf[SearchParams]
   }
   
-  extension [Self <: SearchParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchParams] (val x: Self) extends AnyVal {
     
     inline def setPatient(value: String): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
     

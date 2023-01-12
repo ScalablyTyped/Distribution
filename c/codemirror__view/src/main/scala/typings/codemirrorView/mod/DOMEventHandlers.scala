@@ -455,7 +455,8 @@ object DOMEventHandlers {
     __obj.asInstanceOf[DOMEventHandlers[This]]
   }
   
-  extension [Self <: DOMEventHandlers[?], This](x: Self & DOMEventHandlers[This]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMEventHandlers[?], This] (val x: Self & DOMEventHandlers[This]) extends AnyVal {
     
     inline def setAbort(
       value: js.ThisFunction2[/* this */ This, /* event */ UIEvent, /* view */ EditorView, Boolean | Unit]

@@ -55,7 +55,8 @@ object ParamNamesOptions {
     __obj.asInstanceOf[ParamNamesOptions]
   }
   
-  extension [Self <: ParamNamesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParamNamesOptions] (val x: Self) extends AnyVal {
     
     inline def setChunkSize(value: String): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
     

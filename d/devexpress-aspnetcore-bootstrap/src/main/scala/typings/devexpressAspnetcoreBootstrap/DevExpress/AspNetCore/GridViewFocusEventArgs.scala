@@ -17,7 +17,8 @@ object GridViewFocusEventArgs {
     __obj.asInstanceOf[GridViewFocusEventArgs]
   }
   
-  extension [Self <: GridViewFocusEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridViewFocusEventArgs] (val x: Self) extends AnyVal {
     
     inline def setIsChangedOnServer(value: Boolean): Self = StObject.set(x, "isChangedOnServer", value.asInstanceOf[js.Any])
   }

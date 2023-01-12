@@ -156,7 +156,8 @@ object srcPluginTimelineMod {
       __obj.asInstanceOf[TimelinePluginParams]
     }
     
-    extension [Self <: TimelinePluginParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimelinePluginParams] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

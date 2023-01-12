@@ -15,7 +15,8 @@ object Isauto {
     __obj.asInstanceOf[Isauto]
   }
   
-  extension [Self <: Isauto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Isauto] (val x: Self) extends AnyVal {
     
     inline def setIs_auto(value: Boolean): Self = StObject.set(x, "is_auto", value.asInstanceOf[js.Any])
   }

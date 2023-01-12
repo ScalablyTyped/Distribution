@@ -28,7 +28,8 @@ object SelectResourceConfigRequest {
     __obj.asInstanceOf[SelectResourceConfigRequest]
   }
   
-  extension [Self <: SelectResourceConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectResourceConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
     

@@ -74,7 +74,8 @@ object AvInfoManager {
     __obj.asInstanceOf[AvInfoManager]
   }
   
-  extension [Self <: AvInfoManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvInfoManager] (val x: Self) extends AnyVal {
     
     inline def setAvInfoDigitalCompMode(value: DOLBYDIGITALCOMPMODELINE): Self = StObject.set(x, "AvInfoDigitalCompMode", value.asInstanceOf[js.Any])
     

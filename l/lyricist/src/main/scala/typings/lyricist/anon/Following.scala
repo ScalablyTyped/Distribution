@@ -17,7 +17,8 @@ object Following {
     __obj.asInstanceOf[Following]
   }
   
-  extension [Self <: Following](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Following] (val x: Self) extends AnyVal {
     
     inline def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
     

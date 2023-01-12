@@ -95,7 +95,8 @@ object IgGridAppendRowsOnDemand {
     __obj.asInstanceOf[IgGridAppendRowsOnDemand]
   }
   
-  extension [Self <: IgGridAppendRowsOnDemand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridAppendRowsOnDemand] (val x: Self) extends AnyVal {
     
     inline def setChunkIndexUrlKey(value: String): Self = StObject.set(x, "chunkIndexUrlKey", value.asInstanceOf[js.Any])
     

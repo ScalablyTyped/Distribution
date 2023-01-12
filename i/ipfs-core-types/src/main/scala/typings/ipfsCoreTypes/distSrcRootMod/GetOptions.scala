@@ -35,7 +35,8 @@ object GetOptions {
     __obj.asInstanceOf[GetOptions]
   }
   
-  extension [Self <: GetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOptions] (val x: Self) extends AnyVal {
     
     inline def setArchive(value: Boolean): Self = StObject.set(x, "archive", value.asInstanceOf[js.Any])
     

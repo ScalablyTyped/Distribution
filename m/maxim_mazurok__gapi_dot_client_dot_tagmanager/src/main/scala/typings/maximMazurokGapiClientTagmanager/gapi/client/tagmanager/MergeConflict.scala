@@ -22,7 +22,8 @@ object MergeConflict {
     __obj.asInstanceOf[MergeConflict]
   }
   
-  extension [Self <: MergeConflict](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergeConflict] (val x: Self) extends AnyVal {
     
     inline def setEntityInBaseVersion(value: Entity): Self = StObject.set(x, "entityInBaseVersion", value.asInstanceOf[js.Any])
     

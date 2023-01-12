@@ -21,7 +21,8 @@ object AutoPadding {
     __obj.asInstanceOf[AutoPadding[TType]]
   }
   
-  extension [Self <: AutoPadding[?], TType /* <: ChartType */](x: Self & AutoPadding[TType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoPadding[?], TType /* <: ChartType */] (val x: Self & AutoPadding[TType]) extends AnyVal {
     
     inline def setAutoPadding(value: Boolean): Self = StObject.set(x, "autoPadding", value.asInstanceOf[js.Any])
     

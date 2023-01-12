@@ -43,7 +43,8 @@ object typesLimitExceededExceptionMod {
       __obj.asInstanceOf[LimitExceededException]
     }
     
-    extension [Self <: LimitExceededException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LimitExceededException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.LimitExceededException
@@ -65,7 +66,8 @@ object typesLimitExceededExceptionMod {
       __obj.asInstanceOf[LimitExceededExceptionDetails]
     }
     
-    extension [Self <: LimitExceededExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LimitExceededExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

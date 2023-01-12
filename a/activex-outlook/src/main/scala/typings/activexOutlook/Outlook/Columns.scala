@@ -46,7 +46,8 @@ object Columns {
     __obj.asInstanceOf[Columns]
   }
   
-  extension [Self <: Columns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Columns] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: String => Column): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     

@@ -25,7 +25,8 @@ object FaceAnalysis {
       __obj.asInstanceOf[DetectedFace]
     }
     
-    extension [Self <: DetectedFace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetectedFace] (val x: Self) extends AnyVal {
       
       inline def setFaceBox(value: BitmapBounds): Self = StObject.set(x, "faceBox", value.asInstanceOf[js.Any])
     }
@@ -83,7 +84,8 @@ object FaceAnalysis {
       __obj.asInstanceOf[FaceTracker]
     }
     
-    extension [Self <: FaceTracker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaceTracker] (val x: Self) extends AnyVal {
       
       inline def setMaxDetectableFaceSize(value: BitmapSize): Self = StObject.set(x, "maxDetectableFaceSize", value.asInstanceOf[js.Any])
       

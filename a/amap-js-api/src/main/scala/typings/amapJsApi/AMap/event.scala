@@ -20,7 +20,8 @@ object event {
       __obj.asInstanceOf[EventListener[T]]
     }
     
-    extension [Self <: EventListener[?], T /* <: `0` | `1` */](x: Self & EventListener[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventListener[?], T /* <: `0` | `1` */] (val x: Self & EventListener[T]) extends AnyVal {
       
       inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

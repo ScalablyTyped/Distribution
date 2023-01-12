@@ -18,7 +18,8 @@ object DiagramPanEvent {
     __obj.asInstanceOf[DiagramPanEvent]
   }
   
-  extension [Self <: DiagramPanEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramPanEvent] (val x: Self) extends AnyVal {
     
     inline def setPan(value: Point): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
     

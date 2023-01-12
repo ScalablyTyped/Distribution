@@ -27,7 +27,8 @@ object IPlayerAttackedEntityEventData {
     __obj.asInstanceOf[IPlayerAttackedEntityEventData]
   }
   
-  extension [Self <: IPlayerAttackedEntityEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPlayerAttackedEntityEventData] (val x: Self) extends AnyVal {
     
     inline def setAttacked_entity(value: IEntity): Self = StObject.set(x, "attacked_entity", value.asInstanceOf[js.Any])
     

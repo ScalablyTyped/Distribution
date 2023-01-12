@@ -122,7 +122,8 @@ object distDeclarationsSrcComponentsMod {
       __obj.asInstanceOf[Props[Option, IsMulti, Group]]
     }
     
-    extension [Self <: Props[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](x: Self & (Props[Option, IsMulti, Group])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] (val x: Self & (Props[Option, IsMulti, Group])) extends AnyVal {
       
       inline def setComponents(value: SelectComponentsConfig[Option, IsMulti, Group]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     }
@@ -211,7 +212,8 @@ object distDeclarationsSrcComponentsMod {
       __obj.asInstanceOf[SelectComponents[Option, IsMulti, Group]]
     }
     
-    extension [Self <: SelectComponents[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](x: Self & (SelectComponents[Option, IsMulti, Group])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectComponents[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] (val x: Self & (SelectComponents[Option, IsMulti, Group])) extends AnyVal {
       
       inline def setClearIndicator(value: ComponentType[ClearIndicatorProps[Option, IsMulti, Group]]): Self = StObject.set(x, "ClearIndicator", value.asInstanceOf[js.Any])
       
@@ -329,7 +331,8 @@ object distDeclarationsSrcComponentsMod {
       __obj.asInstanceOf[SelectComponentsConfig[Option, IsMulti, Group]]
     }
     
-    extension [Self <: SelectComponentsConfig[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](x: Self & (SelectComponentsConfig[Option, IsMulti, Group])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectComponentsConfig[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] (val x: Self & (SelectComponentsConfig[Option, IsMulti, Group])) extends AnyVal {
       
       inline def setClearIndicator(value: ComponentType[ClearIndicatorProps[Option, IsMulti, Group]]): Self = StObject.set(x, "ClearIndicator", value.asInstanceOf[js.Any])
       
@@ -519,7 +522,8 @@ object distDeclarationsSrcComponentsMod {
       __obj.asInstanceOf[SelectComponentsGeneric]
     }
     
-    extension [Self <: SelectComponentsGeneric](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectComponentsGeneric] (val x: Self) extends AnyVal {
       
       inline def setClearIndicator(value: ClearIndicatorProps[Any, Any, Any] => Element): Self = StObject.set(x, "ClearIndicator", js.Any.fromFunction1(value))
       

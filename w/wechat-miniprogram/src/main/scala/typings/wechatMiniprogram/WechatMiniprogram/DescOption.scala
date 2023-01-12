@@ -23,7 +23,8 @@ object DescOption {
     __obj.asInstanceOf[DescOption]
   }
   
-  extension [Self <: DescOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescOption] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

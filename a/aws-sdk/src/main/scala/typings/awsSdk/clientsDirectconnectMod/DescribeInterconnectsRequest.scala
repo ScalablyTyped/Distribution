@@ -18,7 +18,8 @@ object DescribeInterconnectsRequest {
     __obj.asInstanceOf[DescribeInterconnectsRequest]
   }
   
-  extension [Self <: DescribeInterconnectsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInterconnectsRequest] (val x: Self) extends AnyVal {
     
     inline def setInterconnectId(value: InterconnectId): Self = StObject.set(x, "interconnectId", value.asInstanceOf[js.Any])
     

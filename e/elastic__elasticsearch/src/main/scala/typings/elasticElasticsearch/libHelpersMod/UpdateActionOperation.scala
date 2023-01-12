@@ -16,7 +16,8 @@ object UpdateActionOperation {
     __obj.asInstanceOf[UpdateActionOperation]
   }
   
-  extension [Self <: UpdateActionOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateActionOperation] (val x: Self) extends AnyVal {
     
     inline def setUpdate(value: BulkUpdateOperation): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
   }

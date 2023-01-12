@@ -47,7 +47,8 @@ object distTypesTransformersTransformerMod {
       __obj.asInstanceOf[Transformer]
     }
     
-    extension [Self <: Transformer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transformer] (val x: Self) extends AnyVal {
       
       inline def setGetHoistedCode(value: () => String): Self = StObject.set(x, "getHoistedCode", js.Any.fromFunction0(value))
       

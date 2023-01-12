@@ -25,7 +25,8 @@ object ButtonTheme {
     __obj.asInstanceOf[ButtonTheme]
   }
   
-  extension [Self <: ButtonTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonTheme] (val x: Self) extends AnyVal {
     
     inline def setBgHeight(value: Double): Self = StObject.set(x, "bgHeight", value.asInstanceOf[js.Any])
     

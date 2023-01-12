@@ -23,7 +23,8 @@ object EffectiveDeploymentStatusDetails {
     __obj.asInstanceOf[EffectiveDeploymentStatusDetails]
   }
   
-  extension [Self <: EffectiveDeploymentStatusDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EffectiveDeploymentStatusDetails] (val x: Self) extends AnyVal {
     
     inline def setErrorStack(value: EffectiveDeploymentErrorStack): Self = StObject.set(x, "errorStack", value.asInstanceOf[js.Any])
     

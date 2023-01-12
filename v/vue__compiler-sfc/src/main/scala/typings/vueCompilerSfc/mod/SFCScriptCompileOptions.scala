@@ -79,7 +79,8 @@ object SFCScriptCompileOptions {
     __obj.asInstanceOf[SFCScriptCompileOptions]
   }
   
-  extension [Self <: SFCScriptCompileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SFCScriptCompileOptions] (val x: Self) extends AnyVal {
     
     inline def setBabelParserPlugins(value: js.Array[ParserPlugin]): Self = StObject.set(x, "babelParserPlugins", value.asInstanceOf[js.Any])
     

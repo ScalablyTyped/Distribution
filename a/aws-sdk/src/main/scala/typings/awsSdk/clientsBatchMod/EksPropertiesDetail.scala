@@ -18,7 +18,8 @@ object EksPropertiesDetail {
     __obj.asInstanceOf[EksPropertiesDetail]
   }
   
-  extension [Self <: EksPropertiesDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EksPropertiesDetail] (val x: Self) extends AnyVal {
     
     inline def setPodProperties(value: EksPodPropertiesDetail): Self = StObject.set(x, "podProperties", value.asInstanceOf[js.Any])
     

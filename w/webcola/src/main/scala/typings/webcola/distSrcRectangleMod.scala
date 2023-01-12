@@ -210,7 +210,8 @@ object distSrcRectangleMod {
       __obj.asInstanceOf[GraphNode]
     }
     
-    extension [Self <: GraphNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphNode] (val x: Self) extends AnyVal {
       
       inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       
@@ -245,7 +246,8 @@ object distSrcRectangleMod {
       __obj.asInstanceOf[Leaf]
     }
     
-    extension [Self <: Leaf](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Leaf] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: Rectangle): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -284,7 +286,8 @@ object distSrcRectangleMod {
       __obj.asInstanceOf[ProjectionGroup]
     }
     
-    extension [Self <: ProjectionGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectionGroup] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: Rectangle): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       

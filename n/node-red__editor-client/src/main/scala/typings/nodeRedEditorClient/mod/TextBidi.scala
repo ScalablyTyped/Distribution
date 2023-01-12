@@ -45,7 +45,8 @@ object TextBidi {
     __obj.asInstanceOf[TextBidi]
   }
   
-  extension [Self <: TextBidi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextBidi] (val x: Self) extends AnyVal {
     
     inline def setEnforceTextDirectionWithUCC(value: String => String): Self = StObject.set(x, "enforceTextDirectionWithUCC", js.Any.fromFunction1(value))
     

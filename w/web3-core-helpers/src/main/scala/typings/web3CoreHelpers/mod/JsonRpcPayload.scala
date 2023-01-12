@@ -21,7 +21,8 @@ object JsonRpcPayload {
     __obj.asInstanceOf[JsonRpcPayload]
   }
   
-  extension [Self <: JsonRpcPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonRpcPayload] (val x: Self) extends AnyVal {
     
     inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

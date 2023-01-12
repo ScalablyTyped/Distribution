@@ -200,7 +200,8 @@ object mod {
       __obj.asInstanceOf[D3ZoomEvent[ZoomRefElement, Datum]]
     }
     
-    extension [Self <: D3ZoomEvent[?, ?], ZoomRefElement /* <: ZoomedElementBaseType */, Datum](x: Self & (D3ZoomEvent[ZoomRefElement, Datum])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: D3ZoomEvent[?, ?], ZoomRefElement /* <: ZoomedElementBaseType */, Datum] (val x: Self & (D3ZoomEvent[ZoomRefElement, Datum])) extends AnyVal {
       
       inline def setSourceEvent(value: Any): Self = StObject.set(x, "sourceEvent", value.asInstanceOf[js.Any])
       

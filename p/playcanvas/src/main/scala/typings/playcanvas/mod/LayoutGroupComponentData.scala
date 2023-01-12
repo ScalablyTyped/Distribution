@@ -15,7 +15,8 @@ object LayoutGroupComponentData {
     __obj.asInstanceOf[LayoutGroupComponentData]
   }
   
-  extension [Self <: LayoutGroupComponentData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutGroupComponentData] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }

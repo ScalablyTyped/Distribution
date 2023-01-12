@@ -28,7 +28,8 @@ object ListInsightsStatusFilter {
     __obj.asInstanceOf[ListInsightsStatusFilter]
   }
   
-  extension [Self <: ListInsightsStatusFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInsightsStatusFilter] (val x: Self) extends AnyVal {
     
     inline def setAny(value: ListInsightsAnyStatusFilter): Self = StObject.set(x, "Any", value.asInstanceOf[js.Any])
     

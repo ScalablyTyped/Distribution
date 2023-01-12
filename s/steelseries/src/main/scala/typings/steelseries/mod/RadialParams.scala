@@ -46,7 +46,8 @@ object RadialParams {
     __obj.asInstanceOf[RadialParams]
   }
   
-  extension [Self <: RadialParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadialParams] (val x: Self) extends AnyVal {
     
     inline def setArea(value: js.Array[Section]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     

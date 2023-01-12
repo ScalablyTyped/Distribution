@@ -27,7 +27,8 @@ object GeocoordinateSatelliteData {
     __obj.asInstanceOf[GeocoordinateSatelliteData]
   }
   
-  extension [Self <: GeocoordinateSatelliteData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeocoordinateSatelliteData] (val x: Self) extends AnyVal {
     
     inline def setHorizontalDilutionOfPrecision(value: Double): Self = StObject.set(x, "horizontalDilutionOfPrecision", value.asInstanceOf[js.Any])
     

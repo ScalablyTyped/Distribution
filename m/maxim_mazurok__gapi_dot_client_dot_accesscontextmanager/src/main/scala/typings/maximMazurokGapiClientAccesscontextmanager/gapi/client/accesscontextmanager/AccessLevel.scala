@@ -31,7 +31,8 @@ object AccessLevel {
     __obj.asInstanceOf[AccessLevel]
   }
   
-  extension [Self <: AccessLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessLevel] (val x: Self) extends AnyVal {
     
     inline def setBasic(value: BasicLevel): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
     

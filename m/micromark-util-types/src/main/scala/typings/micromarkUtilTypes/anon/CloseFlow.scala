@@ -15,7 +15,8 @@ object CloseFlow {
     __obj.asInstanceOf[CloseFlow]
   }
   
-  extension [Self <: CloseFlow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseFlow] (val x: Self) extends AnyVal {
     
     inline def set_closeFlow(value: Boolean): Self = StObject.set(x, "_closeFlow", value.asInstanceOf[js.Any])
     

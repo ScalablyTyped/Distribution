@@ -23,7 +23,8 @@ object PurchaseReservedElasticsearchInstanceOfferingResponse {
     __obj.asInstanceOf[PurchaseReservedElasticsearchInstanceOfferingResponse]
   }
   
-  extension [Self <: PurchaseReservedElasticsearchInstanceOfferingResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PurchaseReservedElasticsearchInstanceOfferingResponse] (val x: Self) extends AnyVal {
     
     inline def setReservationName(value: ReservationToken): Self = StObject.set(x, "ReservationName", value.asInstanceOf[js.Any])
     

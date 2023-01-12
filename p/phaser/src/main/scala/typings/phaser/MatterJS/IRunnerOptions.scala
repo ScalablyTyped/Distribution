@@ -35,7 +35,8 @@ object IRunnerOptions {
     __obj.asInstanceOf[IRunnerOptions]
   }
   
-  extension [Self <: IRunnerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRunnerOptions] (val x: Self) extends AnyVal {
     
     inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     

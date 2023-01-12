@@ -40,7 +40,8 @@ object Goals {
     __obj.asInstanceOf[Goals]
   }
   
-  extension [Self <: Goals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Goals] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[Goal]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

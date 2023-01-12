@@ -28,7 +28,8 @@ object ProfilerSessionTemplate {
     __obj.asInstanceOf[ProfilerSessionTemplate]
   }
   
-  extension [Self <: ProfilerSessionTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfilerSessionTemplate] (val x: Self) extends AnyVal {
     
     inline def setCreateStatement(value: String): Self = StObject.set(x, "createStatement", value.asInstanceOf[js.Any])
     

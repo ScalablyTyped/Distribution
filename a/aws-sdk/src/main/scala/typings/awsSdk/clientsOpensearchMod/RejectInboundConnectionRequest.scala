@@ -18,7 +18,8 @@ object RejectInboundConnectionRequest {
     __obj.asInstanceOf[RejectInboundConnectionRequest]
   }
   
-  extension [Self <: RejectInboundConnectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RejectInboundConnectionRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectionId(value: ConnectionId): Self = StObject.set(x, "ConnectionId", value.asInstanceOf[js.Any])
   }

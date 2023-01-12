@@ -35,7 +35,8 @@ object ChangePageOptions {
     __obj.asInstanceOf[ChangePageOptions]
   }
   
-  extension [Self <: ChangePageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangePageOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowSamePageTransition(value: Boolean): Self = StObject.set(x, "allowSamePageTransition", value.asInstanceOf[js.Any])
     

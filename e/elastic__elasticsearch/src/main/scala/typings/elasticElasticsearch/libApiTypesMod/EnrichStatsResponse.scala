@@ -22,7 +22,8 @@ object EnrichStatsResponse {
     __obj.asInstanceOf[EnrichStatsResponse]
   }
   
-  extension [Self <: EnrichStatsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnrichStatsResponse] (val x: Self) extends AnyVal {
     
     inline def setCache_stats(value: js.Array[EnrichStatsCacheStats]): Self = StObject.set(x, "cache_stats", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object typesUntagResourceOutputMod {
       __obj.asInstanceOf[UntagResourceOutput]
     }
     
-    extension [Self <: UntagResourceOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UntagResourceOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }

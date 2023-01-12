@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[ComponentMetricsTracker]
     }
     
-    extension [Self <: ComponentMetricsTracker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentMetricsTracker] (val x: Self) extends AnyVal {
       
       inline def setGetComponentMetrics(value: () => Map[String, Map[String, Map[String, TrackedMetric]]]): Self = StObject.set(x, "getComponentMetrics", js.Any.fromFunction0(value))
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[ComponentMetricsUpdate]
     }
     
-    extension [Self <: ComponentMetricsUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentMetricsUpdate] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -161,7 +163,8 @@ object mod {
       __obj.asInstanceOf[MetricsInit]
     }
     
-    extension [Self <: MetricsInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetricsInit] (val x: Self) extends AnyVal {
       
       inline def setComputeThrottleMaxQueueSize(value: Double): Self = StObject.set(x, "computeThrottleMaxQueueSize", value.asInstanceOf[js.Any])
       
@@ -202,7 +205,8 @@ object mod {
       __obj.asInstanceOf[MovingAverage]
     }
     
-    extension [Self <: MovingAverage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MovingAverage] (val x: Self) extends AnyVal {
       
       inline def setDeviation(value: Double): Self = StObject.set(x, "deviation", value.asInstanceOf[js.Any])
       
@@ -229,7 +233,8 @@ object mod {
       __obj.asInstanceOf[MovingAverages]
     }
     
-    extension [Self <: MovingAverages](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MovingAverages] (val x: Self) extends AnyVal {
       
       inline def setDataReceived(value: js.Array[MovingAverage]): Self = StObject.set(x, "dataReceived", value.asInstanceOf[js.Any])
       
@@ -270,7 +275,8 @@ object mod {
       __obj.asInstanceOf[Stats]
     }
     
-    extension [Self <: Stats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
       
       inline def setGetMovingAverages(value: () => MovingAverages): Self = StObject.set(x, "getMovingAverages", js.Any.fromFunction0(value))
       
@@ -347,7 +353,8 @@ object mod {
       __obj.asInstanceOf[StreamMetrics]
     }
     
-    extension [Self <: StreamMetrics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamMetrics] (val x: Self) extends AnyVal {
       
       inline def setForPeer(value: PeerId => js.UndefOr[Stats]): Self = StObject.set(x, "forPeer", js.Any.fromFunction1(value))
       
@@ -391,7 +398,8 @@ object mod {
       __obj.asInstanceOf[TrackStreamOptions]
     }
     
-    extension [Self <: TrackStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
@@ -432,7 +440,8 @@ object mod {
       __obj.asInstanceOf[TrackedMetric]
     }
     
-    extension [Self <: TrackedMetric](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackedMetric] (val x: Self) extends AnyVal {
       
       inline def setCalculate(value: () => js.Promise[ComponentMetric] | ComponentMetric): Self = StObject.set(x, "calculate", js.Any.fromFunction0(value))
       
@@ -459,7 +468,8 @@ object mod {
       __obj.asInstanceOf[TransferStats]
     }
     
-    extension [Self <: TransferStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferStats] (val x: Self) extends AnyVal {
       
       inline def setDataReceived(value: js.BigInt): Self = StObject.set(x, "dataReceived", value.asInstanceOf[js.Any])
       

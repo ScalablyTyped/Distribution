@@ -28,7 +28,8 @@ object UpdateShardCountOutput {
     __obj.asInstanceOf[UpdateShardCountOutput]
   }
   
-  extension [Self <: UpdateShardCountOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateShardCountOutput] (val x: Self) extends AnyVal {
     
     inline def setCurrentShardCount(value: PositiveIntegerObject): Self = StObject.set(x, "CurrentShardCount", value.asInstanceOf[js.Any])
     

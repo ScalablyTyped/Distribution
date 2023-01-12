@@ -19,7 +19,8 @@ object Kount {
     __obj.asInstanceOf[Kount]
   }
   
-  extension [Self <: Kount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Kount] (val x: Self) extends AnyVal {
     
     inline def setClient(value: typings.braintreeWeb.modulesClientMod.Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

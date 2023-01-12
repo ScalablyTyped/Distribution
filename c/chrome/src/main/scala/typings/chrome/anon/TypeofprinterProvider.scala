@@ -30,7 +30,8 @@ object TypeofprinterProvider {
     __obj.asInstanceOf[TypeofprinterProvider]
   }
   
-  extension [Self <: TypeofprinterProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofprinterProvider] (val x: Self) extends AnyVal {
     
     inline def setOnGetCapabilityRequested(value: CapabilityRequestedEvent): Self = StObject.set(x, "onGetCapabilityRequested", value.asInstanceOf[js.Any])
     

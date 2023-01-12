@@ -36,7 +36,8 @@ object ResourceRecordSet {
     __obj.asInstanceOf[ResourceRecordSet]
   }
   
-  extension [Self <: ResourceRecordSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceRecordSet] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

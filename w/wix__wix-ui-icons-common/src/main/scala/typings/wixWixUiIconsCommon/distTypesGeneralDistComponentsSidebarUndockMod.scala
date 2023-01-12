@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsSidebarUndockMod extends Shortcut {
       __obj.asInstanceOf[SidebarUndockProps]
     }
     
-    extension [Self <: SidebarUndockProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SidebarUndockProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

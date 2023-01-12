@@ -18,7 +18,8 @@ object UserIdentityConfiguration {
     __obj.asInstanceOf[UserIdentityConfiguration]
   }
   
-  extension [Self <: UserIdentityConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserIdentityConfiguration] (val x: Self) extends AnyVal {
     
     inline def setIdentityAttributeName(value: IdentityAttributeName): Self = StObject.set(x, "IdentityAttributeName", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object PutRuleRequest {
     __obj.asInstanceOf[PutRuleRequest]
   }
   
-  extension [Self <: PutRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: RuleDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

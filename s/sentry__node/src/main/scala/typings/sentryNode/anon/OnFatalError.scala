@@ -22,7 +22,8 @@ object OnFatalError {
     __obj.asInstanceOf[OnFatalError]
   }
   
-  extension [Self <: OnFatalError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnFatalError] (val x: Self) extends AnyVal {
     
     inline def setOnFatalError(value: (/* firstError */ js.Error, /* secondError */ js.UndefOr[js.Error]) => Unit): Self = StObject.set(x, "onFatalError", js.Any.fromFunction2(value))
     

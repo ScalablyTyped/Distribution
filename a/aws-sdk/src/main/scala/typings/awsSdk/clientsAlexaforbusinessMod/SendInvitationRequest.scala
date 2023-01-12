@@ -18,7 +18,8 @@ object SendInvitationRequest {
     __obj.asInstanceOf[SendInvitationRequest]
   }
   
-  extension [Self <: SendInvitationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendInvitationRequest] (val x: Self) extends AnyVal {
     
     inline def setUserArn(value: Arn): Self = StObject.set(x, "UserArn", value.asInstanceOf[js.Any])
     

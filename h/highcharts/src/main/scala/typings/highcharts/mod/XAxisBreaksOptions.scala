@@ -37,7 +37,8 @@ object XAxisBreaksOptions {
     __obj.asInstanceOf[XAxisBreaksOptions]
   }
   
-  extension [Self <: XAxisBreaksOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAxisBreaksOptions] (val x: Self) extends AnyVal {
     
     inline def setBreakSize(value: Double): Self = StObject.set(x, "breakSize", value.asInstanceOf[js.Any])
     

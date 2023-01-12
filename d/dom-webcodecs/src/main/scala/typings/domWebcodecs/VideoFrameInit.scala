@@ -26,7 +26,8 @@ object VideoFrameInit {
     __obj.asInstanceOf[VideoFrameInit]
   }
   
-  extension [Self <: VideoFrameInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoFrameInit] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: AlphaOption): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

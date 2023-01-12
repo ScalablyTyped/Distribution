@@ -234,7 +234,8 @@ object mod {
         __obj.asInstanceOf[EventInit]
       }
       
-      extension [Self <: EventInit](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventInit] (val x: Self) extends AnyVal {
         
         inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
         
@@ -424,7 +425,8 @@ object mod {
         __obj.asInstanceOf[AddOptions]
       }
       
-      extension [Self <: AddOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AddOptions] (val x: Self) extends AnyVal {
         
         inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
         
@@ -462,7 +464,8 @@ object mod {
         __obj.asInstanceOf[CallbackObject[TEvent]]
       }
       
-      extension [Self <: CallbackObject[?], TEvent /* <: Event[String] */](x: Self & CallbackObject[TEvent]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CallbackObject[?], TEvent /* <: Event[String] */] (val x: Self & CallbackObject[TEvent]) extends AnyVal {
         
         inline def setHandleEvent(value: TEvent => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
       }
@@ -558,7 +561,8 @@ object mod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
         
@@ -672,7 +676,8 @@ object mod {
         __obj.asInstanceOf[Warning]
       }
       
-      extension [Self <: Warning](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Warning] (val x: Self) extends AnyVal {
         
         inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         

@@ -266,7 +266,8 @@ object mod {
       __obj.asInstanceOf[BaseHeatmapConfiguration[V]]
     }
     
-    extension [Self <: BaseHeatmapConfiguration[?], V /* <: String */](x: Self & BaseHeatmapConfiguration[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseHeatmapConfiguration[?], V /* <: String */] (val x: Self & BaseHeatmapConfiguration[V]) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -331,7 +332,8 @@ object mod {
       __obj.asInstanceOf[DataCircle]
     }
     
-    extension [Self <: DataCircle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataCircle] (val x: Self) extends AnyVal {
       
       inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
@@ -374,7 +376,8 @@ object mod {
       __obj.asInstanceOf[HeatmapConfiguration[V, X, Y]]
     }
     
-    extension [Self <: HeatmapConfiguration[?, ?, ?], V /* <: String */, X /* <: String */, Y /* <: String */](x: Self & (HeatmapConfiguration[V, X, Y])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeatmapConfiguration[?, ?, ?], V /* <: String */, X /* <: String */, Y /* <: String */] (val x: Self & (HeatmapConfiguration[V, X, Y])) extends AnyVal {
       
       inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -412,7 +415,8 @@ object mod {
       __obj.asInstanceOf[HeatmapData[T]]
     }
     
-    extension [Self <: HeatmapData[?], T](x: Self & HeatmapData[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeatmapData[?], T] (val x: Self & HeatmapData[T]) extends AnyVal {
       
       inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -447,7 +451,8 @@ object mod {
       __obj.asInstanceOf[HeatmapOverlayConfiguration[V, TLat, TLong]]
     }
     
-    extension [Self <: HeatmapOverlayConfiguration[?, ?, ?], V /* <: String */, TLat /* <: String */, TLong /* <: String */](x: Self & (HeatmapOverlayConfiguration[V, TLat, TLong])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeatmapOverlayConfiguration[?, ?, ?], V /* <: String */, TLat /* <: String */, TLong /* <: String */] (val x: Self & (HeatmapOverlayConfiguration[V, TLat, TLong])) extends AnyVal {
       
       inline def setLatField(value: TLat): Self = StObject.set(x, "latField", value.asInstanceOf[js.Any])
       

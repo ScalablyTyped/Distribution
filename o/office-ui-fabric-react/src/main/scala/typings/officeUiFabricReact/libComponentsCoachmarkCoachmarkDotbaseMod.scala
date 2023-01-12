@@ -202,7 +202,8 @@ object libComponentsCoachmarkCoachmarkDotbaseMod {
       __obj.asInstanceOf[ICoachmarkState]
     }
     
-    extension [Self <: ICoachmarkState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICoachmarkState] (val x: Self) extends AnyVal {
       
       inline def setAlertText(value: String): Self = StObject.set(x, "alertText", value.asInstanceOf[js.Any])
       
@@ -263,7 +264,8 @@ object libComponentsCoachmarkCoachmarkDotbaseMod {
       __obj.asInstanceOf[IEntityRect]
     }
     
-    extension [Self <: IEntityRect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEntityRect] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

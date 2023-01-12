@@ -90,7 +90,8 @@ object libTokensMod {
         __obj.asInstanceOf[IItem]
       }
       
-      extension [Self <: IItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IItem] (val x: Self) extends AnyVal {
         
         inline def setActiveStateChanged(value: ISignal[Any, Unit]): Self = StObject.set(x, "activeStateChanged", value.asInstanceOf[js.Any])
         
@@ -112,7 +113,8 @@ object libTokensMod {
       }
     }
     
-    extension [Self <: IStatusBar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStatusBar] (val x: Self) extends AnyVal {
       
       inline def setRegisterStatusItem(value: (String, IItem) => IDisposable): Self = StObject.set(x, "registerStatusItem", js.Any.fromFunction2(value))
     }

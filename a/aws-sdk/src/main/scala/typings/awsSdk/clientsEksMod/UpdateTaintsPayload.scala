@@ -23,7 +23,8 @@ object UpdateTaintsPayload {
     __obj.asInstanceOf[UpdateTaintsPayload]
   }
   
-  extension [Self <: UpdateTaintsPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTaintsPayload] (val x: Self) extends AnyVal {
     
     inline def setAddOrUpdateTaints(value: taintsList): Self = StObject.set(x, "addOrUpdateTaints", value.asInstanceOf[js.Any])
     

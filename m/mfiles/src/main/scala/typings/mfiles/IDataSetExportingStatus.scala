@@ -19,7 +19,8 @@ object IDataSetExportingStatus {
     __obj.asInstanceOf[IDataSetExportingStatus]
   }
   
-  extension [Self <: IDataSetExportingStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDataSetExportingStatus] (val x: Self) extends AnyVal {
     
     inline def setCurrentServerTime(value: ITimestamp): Self = StObject.set(x, "CurrentServerTime", value.asInstanceOf[js.Any])
     

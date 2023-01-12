@@ -37,7 +37,8 @@ object SubscriptionSnippet {
     __obj.asInstanceOf[SubscriptionSnippet]
   }
   
-  extension [Self <: SubscriptionSnippet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionSnippet] (val x: Self) extends AnyVal {
     
     inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     

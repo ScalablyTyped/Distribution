@@ -18,7 +18,8 @@ object DeleteStreamRequest {
     __obj.asInstanceOf[DeleteStreamRequest]
   }
   
-  extension [Self <: DeleteStreamRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteStreamRequest] (val x: Self) extends AnyVal {
     
     inline def setStreamId(value: StreamId): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
   }

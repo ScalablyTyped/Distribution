@@ -23,7 +23,8 @@ object GetSystemTemplateRevisionsResponse {
     __obj.asInstanceOf[GetSystemTemplateRevisionsResponse]
   }
   
-  extension [Self <: GetSystemTemplateRevisionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSystemTemplateRevisionsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object distTypesResizingHeightMod {
       __obj.asInstanceOf[ResizingHeightOpts]
     }
     
-    extension [Self <: ResizingHeightOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizingHeightOpts] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: (/* prevHeight */ Double, /* nextHeight */ Double) => Double): Self = StObject.set(x, "duration", js.Any.fromFunction2(value))
       

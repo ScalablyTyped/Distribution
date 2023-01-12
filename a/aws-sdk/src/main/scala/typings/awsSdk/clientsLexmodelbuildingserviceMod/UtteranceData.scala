@@ -38,7 +38,8 @@ object UtteranceData {
     __obj.asInstanceOf[UtteranceData]
   }
   
-  extension [Self <: UtteranceData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UtteranceData] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Count): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

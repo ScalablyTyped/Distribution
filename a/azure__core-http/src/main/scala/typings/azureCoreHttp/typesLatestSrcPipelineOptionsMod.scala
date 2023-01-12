@@ -45,7 +45,8 @@ object typesLatestSrcPipelineOptionsMod {
       __obj.asInstanceOf[InternalPipelineOptions]
     }
     
-    extension [Self <: InternalPipelineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalPipelineOptions] (val x: Self) extends AnyVal {
       
       inline def setDecompressResponse(value: Boolean): Self = StObject.set(x, "decompressResponse", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object typesLatestSrcPipelineOptionsMod {
       __obj.asInstanceOf[PipelineOptions]
     }
     
-    extension [Self <: PipelineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PipelineOptions] (val x: Self) extends AnyVal {
       
       inline def setHttpClient(value: HttpClient): Self = StObject.set(x, "httpClient", value.asInstanceOf[js.Any])
       

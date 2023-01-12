@@ -470,7 +470,8 @@ object anon {
       __obj.asInstanceOf[Aliceblue]
     }
     
-    extension [Self <: Aliceblue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Aliceblue] (val x: Self) extends AnyVal {
       
       inline def setAliceblue(value: Double): Self = StObject.set(x, "aliceblue", value.asInstanceOf[js.Any])
       
@@ -785,7 +786,8 @@ object anon {
       __obj.asInstanceOf[EventObserved[E]]
     }
     
-    extension [Self <: EventObserved[?], E /* <: FluidEvent[Any] */](x: Self & EventObserved[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventObserved[?], E /* <: FluidEvent[Any] */] (val x: Self & EventObserved[E]) extends AnyVal {
       
       inline def setEventObserved(value: E => Unit): Self = StObject.set(x, "eventObserved", js.Any.fromFunction1(value))
     }

@@ -19,7 +19,8 @@ object IMobileBroadbandAccountUpdatedEventArgs {
     __obj.asInstanceOf[IMobileBroadbandAccountUpdatedEventArgs]
   }
   
-  extension [Self <: IMobileBroadbandAccountUpdatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMobileBroadbandAccountUpdatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHasDeviceInformationChanged(value: Boolean): Self = StObject.set(x, "hasDeviceInformationChanged", value.asInstanceOf[js.Any])
     

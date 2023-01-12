@@ -28,7 +28,8 @@ object ChartExportOptions {
     __obj.asInstanceOf[ChartExportOptions]
   }
   
-  extension [Self <: ChartExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartExportOptions] (val x: Self) extends AnyVal {
     
     inline def setAutomaticPageLayout(value: Boolean): Self = StObject.set(x, "AutomaticPageLayout", value.asInstanceOf[js.Any])
     

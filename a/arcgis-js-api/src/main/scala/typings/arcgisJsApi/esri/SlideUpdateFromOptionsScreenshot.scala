@@ -49,7 +49,8 @@ object SlideUpdateFromOptionsScreenshot {
     __obj.asInstanceOf[SlideUpdateFromOptionsScreenshot]
   }
   
-  extension [Self <: SlideUpdateFromOptionsScreenshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideUpdateFromOptionsScreenshot] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object BuildBazelRemoteExecutionV2ExecutionCapabilities {
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2ExecutionCapabilities]
   }
   
-  extension [Self <: BuildBazelRemoteExecutionV2ExecutionCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildBazelRemoteExecutionV2ExecutionCapabilities] (val x: Self) extends AnyVal {
     
     inline def setDigestFunction(value: String): Self = StObject.set(x, "digestFunction", value.asInstanceOf[js.Any])
     

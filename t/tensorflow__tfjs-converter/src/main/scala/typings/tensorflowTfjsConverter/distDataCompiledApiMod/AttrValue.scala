@@ -40,7 +40,8 @@ object AttrValue {
       __obj.asInstanceOf[IListValue]
     }
     
-    extension [Self <: IListValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IListValue] (val x: Self) extends AnyVal {
       
       inline def setB(value: js.Array[Boolean]): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       

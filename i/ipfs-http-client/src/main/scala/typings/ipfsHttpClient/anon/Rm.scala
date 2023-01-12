@@ -51,7 +51,8 @@ object Rm {
     __obj.asInstanceOf[Rm]
   }
   
-  extension [Self <: Rm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rm] (val x: Self) extends AnyVal {
     
     inline def setAdd(
       value: (CID[Any, Double, Double, Version], (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.AddOptions */ Any) & AbortOptions & HTTPClientExtraOptions) => js.Promise[

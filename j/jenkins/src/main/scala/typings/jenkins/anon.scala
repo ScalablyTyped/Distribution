@@ -52,7 +52,8 @@ object anon {
       __obj.asInstanceOf[BaseUrl]
     }
     
-    extension [Self <: BaseUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseUrl] (val x: Self) extends AnyVal {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object anon {
       __obj.asInstanceOf[Cancel]
     }
     
-    extension [Self <: Cancel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: (Double, js.Function1[/* err */ js.Error, Unit]) => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction2(value))
       
@@ -231,7 +233,8 @@ object anon {
       __obj.asInstanceOf[CrumbIssuer]
     }
     
-    extension [Self <: CrumbIssuer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrumbIssuer] (val x: Self) extends AnyVal {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
@@ -262,7 +265,8 @@ object anon {
       __obj.asInstanceOf[Delay]
     }
     
-    extension [Self <: Delay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delay] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -347,7 +351,8 @@ object anon {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Double => js.Promise[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
       

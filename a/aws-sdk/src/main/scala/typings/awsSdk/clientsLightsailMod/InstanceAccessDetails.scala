@@ -63,7 +63,8 @@ object InstanceAccessDetails {
     __obj.asInstanceOf[InstanceAccessDetails]
   }
   
-  extension [Self <: InstanceAccessDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceAccessDetails] (val x: Self) extends AnyVal {
     
     inline def setCertKey(value: String): Self = StObject.set(x, "certKey", value.asInstanceOf[js.Any])
     

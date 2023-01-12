@@ -31,7 +31,8 @@ object MessageData {
     __obj.asInstanceOf[MessageData]
   }
   
-  extension [Self <: MessageData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageData] (val x: Self) extends AnyVal {
     
     inline def setConn(value: Double): Self = StObject.set(x, "conn", value.asInstanceOf[js.Any])
     

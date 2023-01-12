@@ -22,7 +22,8 @@ object distTypesInternalTestingTestMessageMod {
       __obj.asInstanceOf[TestMessage]
     }
     
-    extension [Self <: TestMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestMessage] (val x: Self) extends AnyVal {
       
       inline def setFrame(value: Double): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       

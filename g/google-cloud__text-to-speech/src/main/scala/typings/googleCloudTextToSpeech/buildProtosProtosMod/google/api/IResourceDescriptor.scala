@@ -39,7 +39,8 @@ object IResourceDescriptor {
     __obj.asInstanceOf[IResourceDescriptor]
   }
   
-  extension [Self <: IResourceDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IResourceDescriptor] (val x: Self) extends AnyVal {
     
     inline def setHistory(
       value: History | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.api.ResourceDescriptor.History * / any */ String)

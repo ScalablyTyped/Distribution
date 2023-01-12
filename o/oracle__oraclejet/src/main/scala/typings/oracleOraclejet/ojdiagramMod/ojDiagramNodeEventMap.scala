@@ -174,7 +174,8 @@ object ojDiagramNodeEventMap {
     __obj.asInstanceOf[ojDiagramNodeEventMap]
   }
   
-  extension [Self <: ojDiagramNodeEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojDiagramNodeEventMap] (val x: Self) extends AnyVal {
     
     inline def setCategoriesChanged(value: JetElementCustomEvent[js.UndefOr[js.Array[String]]]): Self = StObject.set(x, "categoriesChanged", value.asInstanceOf[js.Any])
     

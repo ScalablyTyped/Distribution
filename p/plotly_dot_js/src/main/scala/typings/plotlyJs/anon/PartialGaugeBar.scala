@@ -20,7 +20,8 @@ object PartialGaugeBar {
     __obj.asInstanceOf[PartialGaugeBar]
   }
   
-  extension [Self <: PartialGaugeBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialGaugeBar] (val x: Self) extends AnyVal {
     
     inline def setColor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

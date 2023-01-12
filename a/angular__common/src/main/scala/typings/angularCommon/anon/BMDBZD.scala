@@ -35,7 +35,8 @@ object BMDBZD {
     __obj.asInstanceOf[BMDBZD]
   }
   
-  extension [Self <: BMDBZD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BMDBZD] (val x: Self) extends AnyVal {
     
     inline def setBBD(value: js.Array[String]): Self = StObject.set(x, "BBD", value.asInstanceOf[js.Any])
     

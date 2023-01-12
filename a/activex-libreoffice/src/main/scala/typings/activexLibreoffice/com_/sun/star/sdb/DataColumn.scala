@@ -144,7 +144,8 @@ object DataColumn {
     __obj.asInstanceOf[DataColumn]
   }
   
-  extension [Self <: DataColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataColumn] (val x: Self) extends AnyVal {
     
     inline def setOriginalValue(value: Any): Self = StObject.set(x, "OriginalValue", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object IExtensionComponent {
     __obj.asInstanceOf[IExtensionComponent]
   }
   
-  extension [Self <: IExtensionComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExtensionComponent] (val x: Self) extends AnyVal {
     
     inline def setModel(value: IExtensionModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
   }

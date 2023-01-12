@@ -15,7 +15,8 @@ object MlTrainedModelConfigInput {
     __obj.asInstanceOf[MlTrainedModelConfigInput]
   }
   
-  extension [Self <: MlTrainedModelConfigInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlTrainedModelConfigInput] (val x: Self) extends AnyVal {
     
     inline def setField_names(value: js.Array[Field]): Self = StObject.set(x, "field_names", value.asInstanceOf[js.Any])
     

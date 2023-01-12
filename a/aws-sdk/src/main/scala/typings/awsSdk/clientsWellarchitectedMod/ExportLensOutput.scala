@@ -18,7 +18,8 @@ object ExportLensOutput {
     __obj.asInstanceOf[ExportLensOutput]
   }
   
-  extension [Self <: ExportLensOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportLensOutput] (val x: Self) extends AnyVal {
     
     inline def setLensJSON(value: LensJSON): Self = StObject.set(x, "LensJSON", value.asInstanceOf[js.Any])
     

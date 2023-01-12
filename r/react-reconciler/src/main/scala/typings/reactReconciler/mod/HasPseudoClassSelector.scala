@@ -21,7 +21,8 @@ object HasPseudoClassSelector {
     __obj.asInstanceOf[HasPseudoClassSelector]
   }
   
-  extension [Self <: HasPseudoClassSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasPseudoClassSelector] (val x: Self) extends AnyVal {
     
     inline def setDollarDollartypeof(value: js.Symbol | Double): Self = StObject.set(x, "$$typeof", value.asInstanceOf[js.Any])
     

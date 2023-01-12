@@ -35,7 +35,8 @@ object BMapGLLib {
       __obj.asInstanceOf[DistanceTool]
     }
     
-    extension [Self <: DistanceTool](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DistanceTool] (val x: Self) extends AnyVal {
       
       inline def setAddEventListener(value: (String, Callback) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
@@ -81,7 +82,8 @@ object BMapGLLib {
       __obj.asInstanceOf[DrawingManager]
     }
     
-    extension [Self <: DrawingManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawingManager] (val x: Self) extends AnyVal {
       
       inline def setAddEventListener(value: (String, Callback) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       

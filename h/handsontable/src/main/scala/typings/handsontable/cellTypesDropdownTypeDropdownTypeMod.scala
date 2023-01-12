@@ -83,7 +83,8 @@ object cellTypesDropdownTypeDropdownTypeMod {
       __obj.asInstanceOf[DropdownCellType]
     }
     
-    extension [Self <: DropdownCellType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownCellType] (val x: Self) extends AnyVal {
       
       inline def setEditor(value: Instantiable1[/* instance */ default, DropdownEditor]): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
       

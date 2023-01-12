@@ -45,7 +45,8 @@ object QueryParameters {
     __obj.asInstanceOf[QueryParameters]
   }
   
-  extension [Self <: QueryParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryParameters] (val x: Self) extends AnyVal {
     
     inline def setAnchor_type(value: String): Self = StObject.set(x, "anchor_type", value.asInstanceOf[js.Any])
     

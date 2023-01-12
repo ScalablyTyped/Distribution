@@ -15,7 +15,8 @@ object MdbGroupProto {
     __obj.asInstanceOf[MdbGroupProto]
   }
   
-  extension [Self <: MdbGroupProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MdbGroupProto] (val x: Self) extends AnyVal {
     
     inline def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object Store {
       __obj.asInstanceOf[ICurrentApp]
     }
     
-    extension [Self <: ICurrentApp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICurrentApp] (val x: Self) extends AnyVal {
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object Store {
       __obj.asInstanceOf[ICurrentAppSimulator]
     }
     
-    extension [Self <: ICurrentAppSimulator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICurrentAppSimulator] (val x: Self) extends AnyVal {
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
@@ -153,7 +155,8 @@ object Store {
       __obj.asInstanceOf[ILicenseInformation]
     }
     
-    extension [Self <: ILicenseInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILicenseInformation] (val x: Self) extends AnyVal {
       
       inline def setExpirationDate(value: js.Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
       
@@ -195,7 +198,8 @@ object Store {
       __obj.asInstanceOf[IListingInformation]
     }
     
-    extension [Self <: IListingInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IListingInformation] (val x: Self) extends AnyVal {
       
       inline def setAgeRating(value: Double): Self = StObject.set(x, "ageRating", value.asInstanceOf[js.Any])
       
@@ -226,7 +230,8 @@ object Store {
       __obj.asInstanceOf[IProductLicense]
     }
     
-    extension [Self <: IProductLicense](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProductLicense] (val x: Self) extends AnyVal {
       
       inline def setExpirationDate(value: js.Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
       
@@ -251,7 +256,8 @@ object Store {
       __obj.asInstanceOf[IProductListing]
     }
     
-    extension [Self <: IProductListing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProductListing] (val x: Self) extends AnyVal {
       
       inline def setFormattedPrice(value: String): Self = StObject.set(x, "formattedPrice", value.asInstanceOf[js.Any])
       

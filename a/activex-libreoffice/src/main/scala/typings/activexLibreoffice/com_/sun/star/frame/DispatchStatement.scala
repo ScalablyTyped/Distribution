@@ -59,7 +59,8 @@ object DispatchStatement {
     __obj.asInstanceOf[DispatchStatement]
   }
   
-  extension [Self <: DispatchStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DispatchStatement] (val x: Self) extends AnyVal {
     
     inline def setAArgs(value: SafeArray[PropertyValue]): Self = StObject.set(x, "aArgs", value.asInstanceOf[js.Any])
     

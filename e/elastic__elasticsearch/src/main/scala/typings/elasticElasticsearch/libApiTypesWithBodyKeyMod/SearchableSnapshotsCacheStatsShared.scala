@@ -38,7 +38,8 @@ object SearchableSnapshotsCacheStatsShared {
     __obj.asInstanceOf[SearchableSnapshotsCacheStatsShared]
   }
   
-  extension [Self <: SearchableSnapshotsCacheStatsShared](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchableSnapshotsCacheStatsShared] (val x: Self) extends AnyVal {
     
     inline def setBytes_read_in_bytes(value: ByteSize): Self = StObject.set(x, "bytes_read_in_bytes", value.asInstanceOf[js.Any])
     

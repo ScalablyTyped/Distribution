@@ -20,7 +20,8 @@ object NetworkTypeData {
     __obj.asInstanceOf[NetworkTypeData]
   }
   
-  extension [Self <: NetworkTypeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkTypeData] (val x: Self) extends AnyVal {
     
     inline def setNetworkType(value: `2g` | `3g` | `4g` | wifi): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
   }

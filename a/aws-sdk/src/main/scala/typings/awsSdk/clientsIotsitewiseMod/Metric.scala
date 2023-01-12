@@ -33,7 +33,8 @@ object Metric {
     __obj.asInstanceOf[Metric]
   }
   
-  extension [Self <: Metric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Metric] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

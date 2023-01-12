@@ -29,7 +29,8 @@ object ChartComponent {
     __obj.asInstanceOf[ChartComponent]
   }
   
-  extension [Self <: ChartComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartComponent] (val x: Self) extends AnyVal {
     
     inline def setAfterRegister(value: () => Unit): Self = StObject.set(x, "afterRegister", js.Any.fromFunction0(value))
     

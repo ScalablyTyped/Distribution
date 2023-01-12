@@ -25,7 +25,8 @@ object ListPartsQuery {
     __obj.asInstanceOf[ListPartsQuery]
   }
   
-  extension [Self <: ListPartsQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPartsQuery] (val x: Self) extends AnyVal {
     
     inline def `setEncoding-type`(value: String): Self = StObject.set(x, "encoding-type", value.asInstanceOf[js.Any])
     

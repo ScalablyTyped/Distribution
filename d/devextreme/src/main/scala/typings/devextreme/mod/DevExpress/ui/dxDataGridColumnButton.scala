@@ -56,7 +56,8 @@ object dxDataGridColumnButton {
     __obj.asInstanceOf[dxDataGridColumnButton[TRowData, TKey]]
   }
   
-  extension [Self <: dxDataGridColumnButton[?, ?], TRowData, TKey](x: Self & (dxDataGridColumnButton[TRowData, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxDataGridColumnButton[?, ?], TRowData, TKey] (val x: Self & (dxDataGridColumnButton[TRowData, TKey])) extends AnyVal {
     
     inline def setDisabled(value: Boolean | (js.Function1[/* options */ Column[TRowData, TKey], Boolean])): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

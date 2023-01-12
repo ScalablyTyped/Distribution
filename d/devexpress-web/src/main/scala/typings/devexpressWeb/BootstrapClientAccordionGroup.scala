@@ -64,7 +64,8 @@ object BootstrapClientAccordionGroup {
     __obj.asInstanceOf[BootstrapClientAccordionGroup]
   }
   
-  extension [Self <: BootstrapClientAccordionGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapClientAccordionGroup] (val x: Self) extends AnyVal {
     
     inline def setGetHeaderBadgeIconCssClass(value: () => String): Self = StObject.set(x, "GetHeaderBadgeIconCssClass", js.Any.fromFunction0(value))
     

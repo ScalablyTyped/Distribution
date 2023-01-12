@@ -34,7 +34,8 @@ object SequentialOptions {
     __obj.asInstanceOf[SequentialOptions]
   }
   
-  extension [Self <: SequentialOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SequentialOptions] (val x: Self) extends AnyVal {
     
     inline def setClamp(value: Boolean): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
     

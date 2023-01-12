@@ -26,7 +26,8 @@ object BasicOCSPResponseJson {
     __obj.asInstanceOf[BasicOCSPResponseJson]
   }
   
-  extension [Self <: BasicOCSPResponseJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicOCSPResponseJson] (val x: Self) extends AnyVal {
     
     inline def setCerts(value: js.Array[CertificateJson]): Self = StObject.set(x, "certs", value.asInstanceOf[js.Any])
     

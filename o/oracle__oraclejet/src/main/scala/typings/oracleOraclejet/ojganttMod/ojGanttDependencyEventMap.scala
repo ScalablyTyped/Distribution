@@ -173,7 +173,8 @@ object ojGanttDependencyEventMap {
     __obj.asInstanceOf[ojGanttDependencyEventMap]
   }
   
-  extension [Self <: ojGanttDependencyEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojGanttDependencyEventMap] (val x: Self) extends AnyVal {
     
     inline def setPredecessorTaskIdChanged(
       value: JetElementCustomEvent[

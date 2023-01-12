@@ -57,7 +57,8 @@ object DriveStep {
     __obj.asInstanceOf[DriveStep]
   }
   
-  extension [Self <: DriveStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DriveStep] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

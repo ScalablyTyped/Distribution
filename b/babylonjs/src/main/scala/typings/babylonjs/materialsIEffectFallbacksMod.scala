@@ -34,7 +34,8 @@ object materialsIEffectFallbacksMod {
       __obj.asInstanceOf[IEffectFallbacks]
     }
     
-    extension [Self <: IEffectFallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEffectFallbacks] (val x: Self) extends AnyVal {
       
       inline def setHasMoreFallbacks(value: Boolean): Self = StObject.set(x, "hasMoreFallbacks", value.asInstanceOf[js.Any])
       

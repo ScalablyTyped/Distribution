@@ -109,7 +109,8 @@ object IOwlCarouselOptions {
     __obj.asInstanceOf[IOwlCarouselOptions]
   }
   
-  extension [Self <: IOwlCarouselOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOwlCarouselOptions] (val x: Self) extends AnyVal {
     
     inline def setAddClassActive(value: Boolean): Self = StObject.set(x, "addClassActive", value.asInstanceOf[js.Any])
     

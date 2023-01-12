@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[DepthLimit]
     }
     
-    extension [Self <: DepthLimit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DepthLimit] (val x: Self) extends AnyVal {
       
       inline def setDepthLimit(value: Double): Self = StObject.set(x, "depthLimit", value.asInstanceOf[js.Any])
       

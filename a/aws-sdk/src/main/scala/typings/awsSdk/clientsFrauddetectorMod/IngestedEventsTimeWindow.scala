@@ -23,7 +23,8 @@ object IngestedEventsTimeWindow {
     __obj.asInstanceOf[IngestedEventsTimeWindow]
   }
   
-  extension [Self <: IngestedEventsTimeWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestedEventsTimeWindow] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: time): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

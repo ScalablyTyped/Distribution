@@ -40,7 +40,8 @@ object libRingMod {
       __obj.asInstanceOf[Ring[A]]
     }
     
-    extension [Self <: Ring[?], A](x: Self & Ring[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ring[?], A] (val x: Self & Ring[A]) extends AnyVal {
       
       inline def setSub(value: (A, A) => A): Self = StObject.set(x, "sub", js.Any.fromFunction2(value))
     }

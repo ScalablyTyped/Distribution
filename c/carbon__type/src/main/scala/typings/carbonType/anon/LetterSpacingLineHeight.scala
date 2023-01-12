@@ -49,7 +49,8 @@ object LetterSpacingLineHeight {
     __obj.asInstanceOf[LetterSpacingLineHeight]
   }
   
-  extension [Self <: LetterSpacingLineHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LetterSpacingLineHeight] (val x: Self) extends AnyVal {
     
     inline def `set@media Leftparenthesismin-widthColon 42remRightparenthesis`(value: LineHeight): Self = StObject.set(x, "@media (min-width: 42rem)", value.asInstanceOf[js.Any])
     

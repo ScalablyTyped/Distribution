@@ -105,7 +105,8 @@ object MembersSuccessResponse {
     __obj.asInstanceOf[MembersSuccessResponse]
   }
   
-  extension [Self <: MembersSuccessResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MembersSuccessResponse] (val x: Self) extends AnyVal {
     
     inline def setConsents_to_one_to_one_messaging(value: Boolean): Self = StObject.set(x, "consents_to_one_to_one_messaging", value.asInstanceOf[js.Any])
     

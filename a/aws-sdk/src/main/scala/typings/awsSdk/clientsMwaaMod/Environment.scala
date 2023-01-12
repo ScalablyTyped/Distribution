@@ -143,7 +143,8 @@ object Environment {
     __obj.asInstanceOf[Environment]
   }
   
-  extension [Self <: Environment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
     
     inline def setAirflowConfigurationOptions(value: AirflowConfigurationOptions): Self = StObject.set(x, "AirflowConfigurationOptions", value.asInstanceOf[js.Any])
     

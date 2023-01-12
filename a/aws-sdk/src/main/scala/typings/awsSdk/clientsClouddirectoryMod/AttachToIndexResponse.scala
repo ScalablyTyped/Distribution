@@ -18,7 +18,8 @@ object AttachToIndexResponse {
     __obj.asInstanceOf[AttachToIndexResponse]
   }
   
-  extension [Self <: AttachToIndexResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachToIndexResponse] (val x: Self) extends AnyVal {
     
     inline def setAttachedObjectIdentifier(value: ObjectIdentifier): Self = StObject.set(x, "AttachedObjectIdentifier", value.asInstanceOf[js.Any])
     

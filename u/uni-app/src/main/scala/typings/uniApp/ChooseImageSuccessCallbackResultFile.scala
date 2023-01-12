@@ -23,7 +23,8 @@ object ChooseImageSuccessCallbackResultFile {
     __obj.asInstanceOf[ChooseImageSuccessCallbackResultFile]
   }
   
-  extension [Self <: ChooseImageSuccessCallbackResultFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChooseImageSuccessCallbackResultFile] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

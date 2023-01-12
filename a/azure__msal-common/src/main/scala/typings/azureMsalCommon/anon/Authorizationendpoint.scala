@@ -83,7 +83,8 @@ object Authorizationendpoint {
     __obj.asInstanceOf[Authorizationendpoint]
   }
   
-  extension [Self <: Authorizationendpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Authorizationendpoint] (val x: Self) extends AnyVal {
     
     inline def setAuthorization_endpoint(value: String): Self = StObject.set(x, "authorization_endpoint", value.asInstanceOf[js.Any])
     

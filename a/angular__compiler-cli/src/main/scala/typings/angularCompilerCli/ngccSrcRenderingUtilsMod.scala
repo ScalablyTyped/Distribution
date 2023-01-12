@@ -33,7 +33,8 @@ object ngccSrcRenderingUtilsMod {
       __obj.asInstanceOf[FileToWrite]
     }
     
-    extension [Self <: FileToWrite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileToWrite] (val x: Self) extends AnyVal {
       
       inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       

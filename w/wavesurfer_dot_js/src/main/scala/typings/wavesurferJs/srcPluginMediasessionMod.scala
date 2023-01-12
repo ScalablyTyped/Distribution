@@ -38,7 +38,8 @@ object srcPluginMediasessionMod {
       __obj.asInstanceOf[MediaImage]
     }
     
-    extension [Self <: MediaImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaImage] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: String): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object srcPluginMediasessionMod {
       __obj.asInstanceOf[MediaMetadata]
     }
     
-    extension [Self <: MediaMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaMetadata] (val x: Self) extends AnyVal {
       
       inline def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object srcPluginMediasessionMod {
       __obj.asInstanceOf[MediaSessionPluginParams]
     }
     
-    extension [Self <: MediaSessionPluginParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaSessionPluginParams] (val x: Self) extends AnyVal {
       
       inline def setMetadata(value: MediaMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     }

@@ -48,7 +48,8 @@ object DescribeLocationSmbResponse {
     __obj.asInstanceOf[DescribeLocationSmbResponse]
   }
   
-  extension [Self <: DescribeLocationSmbResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLocationSmbResponse] (val x: Self) extends AnyVal {
     
     inline def setAgentArns(value: AgentArnList): Self = StObject.set(x, "AgentArns", value.asInstanceOf[js.Any])
     

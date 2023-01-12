@@ -41,7 +41,8 @@ object XMeaning {
     __obj.asInstanceOf[XMeaning]
   }
   
-  extension [Self <: XMeaning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMeaning] (val x: Self) extends AnyVal {
     
     inline def setGetMeaning(value: () => String): Self = StObject.set(x, "getMeaning", js.Any.fromFunction0(value))
     

@@ -23,7 +23,8 @@ object TruncateFailCallbackResult {
     __obj.asInstanceOf[TruncateFailCallbackResult]
   }
   
-  extension [Self <: TruncateFailCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TruncateFailCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }

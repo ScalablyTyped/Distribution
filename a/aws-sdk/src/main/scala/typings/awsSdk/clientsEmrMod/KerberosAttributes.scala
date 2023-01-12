@@ -38,7 +38,8 @@ object KerberosAttributes {
     __obj.asInstanceOf[KerberosAttributes]
   }
   
-  extension [Self <: KerberosAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KerberosAttributes] (val x: Self) extends AnyVal {
     
     inline def setADDomainJoinPassword(value: XmlStringMaxLen256): Self = StObject.set(x, "ADDomainJoinPassword", value.asInstanceOf[js.Any])
     

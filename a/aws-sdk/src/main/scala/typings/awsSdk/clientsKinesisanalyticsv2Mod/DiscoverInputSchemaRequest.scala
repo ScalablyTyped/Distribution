@@ -38,7 +38,8 @@ object DiscoverInputSchemaRequest {
     __obj.asInstanceOf[DiscoverInputSchemaRequest]
   }
   
-  extension [Self <: DiscoverInputSchemaRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiscoverInputSchemaRequest] (val x: Self) extends AnyVal {
     
     inline def setInputProcessingConfiguration(value: InputProcessingConfiguration): Self = StObject.set(x, "InputProcessingConfiguration", value.asInstanceOf[js.Any])
     

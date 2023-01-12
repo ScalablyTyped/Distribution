@@ -41,7 +41,8 @@ object EpicEditorOptions {
     __obj.asInstanceOf[EpicEditorOptions]
   }
   
-  extension [Self <: EpicEditorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EpicEditorOptions] (val x: Self) extends AnyVal {
     
     inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
     

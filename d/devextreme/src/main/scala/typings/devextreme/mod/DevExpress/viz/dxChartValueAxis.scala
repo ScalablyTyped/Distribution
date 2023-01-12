@@ -167,7 +167,8 @@ object dxChartValueAxis {
     __obj.asInstanceOf[dxChartValueAxis]
   }
   
-  extension [Self <: dxChartValueAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartValueAxis] (val x: Self) extends AnyVal {
     
     inline def setAutoBreaksEnabled(value: Boolean): Self = StObject.set(x, "autoBreaksEnabled", value.asInstanceOf[js.Any])
     

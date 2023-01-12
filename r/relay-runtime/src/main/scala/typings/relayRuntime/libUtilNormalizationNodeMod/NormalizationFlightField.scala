@@ -27,7 +27,8 @@ object NormalizationFlightField {
     __obj.asInstanceOf[NormalizationFlightField]
   }
   
-  extension [Self <: NormalizationFlightField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizationFlightField] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

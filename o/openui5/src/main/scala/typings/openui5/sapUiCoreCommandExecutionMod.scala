@@ -342,7 +342,8 @@ object sapUiCoreCommandExecutionMod {
       __obj.asInstanceOf[CommandExecutionSettings]
     }
     
-    extension [Self <: CommandExecutionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandExecutionSettings] (val x: Self) extends AnyVal {
       
       inline def setCommand(value: String | PropertyBindingInfo): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       

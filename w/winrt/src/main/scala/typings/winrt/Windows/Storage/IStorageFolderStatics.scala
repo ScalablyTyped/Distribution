@@ -16,7 +16,8 @@ object IStorageFolderStatics {
     __obj.asInstanceOf[IStorageFolderStatics]
   }
   
-  extension [Self <: IStorageFolderStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStorageFolderStatics] (val x: Self) extends AnyVal {
     
     inline def setGetFolderFromPathAsync(value: String => IAsyncOperation[StorageFolder]): Self = StObject.set(x, "getFolderFromPathAsync", js.Any.fromFunction1(value))
   }

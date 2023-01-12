@@ -21,7 +21,8 @@ object Chunk {
     __obj.asInstanceOf[Chunk]
   }
   
-  extension [Self <: Chunk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Chunk] (val x: Self) extends AnyVal {
     
     inline def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

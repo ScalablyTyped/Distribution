@@ -80,7 +80,8 @@ object esComponentsCascaderCascaderMod {
       __obj.asInstanceOf[CascaderActions]
     }
     
-    extension [Self <: CascaderActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CascaderActions] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -396,7 +397,8 @@ object esComponentsCascaderCascaderMod {
       __obj.asInstanceOf[CascaderProps]
     }
     
-    extension [Self <: CascaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CascaderProps] (val x: Self) extends AnyVal {
       
       inline def setActiveIcon(value: ReactNode): Self = StObject.set(x, "activeIcon", value.asInstanceOf[js.Any])
       

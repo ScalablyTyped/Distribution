@@ -91,7 +91,8 @@ object buildRequestBrowserMod {
       __obj.asInstanceOf[RequestOptions]
     }
     
-    extension [Self <: RequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Http): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       

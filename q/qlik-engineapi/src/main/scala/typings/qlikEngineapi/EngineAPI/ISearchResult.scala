@@ -36,7 +36,8 @@ object ISearchResult {
     __obj.asInstanceOf[ISearchResult]
   }
   
-  extension [Self <: ISearchResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchResult] (val x: Self) extends AnyVal {
     
     inline def setQSearchGroupArray(value: ISearchGroup): Self = StObject.set(x, "qSearchGroupArray", value.asInstanceOf[js.Any])
     

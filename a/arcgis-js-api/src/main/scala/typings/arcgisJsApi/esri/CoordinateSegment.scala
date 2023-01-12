@@ -34,7 +34,8 @@ object CoordinateSegment {
     __obj.asInstanceOf[CoordinateSegment]
   }
   
-  extension [Self <: CoordinateSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoordinateSegment] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

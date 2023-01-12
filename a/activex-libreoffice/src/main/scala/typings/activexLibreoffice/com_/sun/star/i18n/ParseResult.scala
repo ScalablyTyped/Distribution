@@ -50,7 +50,8 @@ object ParseResult {
     __obj.asInstanceOf[ParseResult]
   }
   
-  extension [Self <: ParseResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParseResult] (val x: Self) extends AnyVal {
     
     inline def setCharLen(value: Double): Self = StObject.set(x, "CharLen", value.asInstanceOf[js.Any])
     

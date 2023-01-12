@@ -67,7 +67,8 @@ object builtClusterUtilMod {
       __obj.asInstanceOf[RedisOptions]
     }
     
-    extension [Self <: RedisOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisOptions] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object builtClusterUtilMod {
       __obj.asInstanceOf[SrvRecordsGroup]
     }
     
-    extension [Self <: SrvRecordsGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SrvRecordsGroup] (val x: Self) extends AnyVal {
       
       inline def setRecords(value: js.Array[SrvRecord]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object CreateSolutionResponse {
     __obj.asInstanceOf[CreateSolutionResponse]
   }
   
-  extension [Self <: CreateSolutionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSolutionResponse] (val x: Self) extends AnyVal {
     
     inline def setSolutionArn(value: Arn): Self = StObject.set(x, "solutionArn", value.asInstanceOf[js.Any])
     

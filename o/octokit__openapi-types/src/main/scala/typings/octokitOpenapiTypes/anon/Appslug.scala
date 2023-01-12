@@ -17,7 +17,8 @@ object Appslug {
     __obj.asInstanceOf[Appslug]
   }
   
-  extension [Self <: Appslug](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Appslug] (val x: Self) extends AnyVal {
     
     inline def setApp_slug(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['app-slug'] */ js.Any

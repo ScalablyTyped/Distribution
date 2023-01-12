@@ -26,7 +26,8 @@ object PartialitemTextColorstrin {
     __obj.asInstanceOf[PartialitemTextColorstrin]
   }
   
-  extension [Self <: PartialitemTextColorstrin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialitemTextColorstrin] (val x: Self) extends AnyVal {
     
     inline def setItemBackground(value: String): Self = StObject.set(x, "itemBackground", value.asInstanceOf[js.Any])
     

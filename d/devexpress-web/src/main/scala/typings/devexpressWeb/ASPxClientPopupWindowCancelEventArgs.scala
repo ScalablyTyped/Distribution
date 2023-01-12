@@ -28,7 +28,8 @@ object ASPxClientPopupWindowCancelEventArgs {
     __obj.asInstanceOf[ASPxClientPopupWindowCancelEventArgs]
   }
   
-  extension [Self <: ASPxClientPopupWindowCancelEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientPopupWindowCancelEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCloseReason(value: ASPxClientPopupControlCloseReason): Self = StObject.set(x, "closeReason", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object InputFilterCondition {
     __obj.asInstanceOf[InputFilterCondition]
   }
   
-  extension [Self <: InputFilterCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputFilterCondition] (val x: Self) extends AnyVal {
     
     inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     

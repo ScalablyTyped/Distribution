@@ -30,7 +30,8 @@ object ProjectDetailsMultiAppRes {
     __obj.asInstanceOf[ProjectDetailsMultiAppRes]
   }
   
-  extension [Self <: ProjectDetailsMultiAppRes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectDetailsMultiAppRes] (val x: Self) extends AnyVal {
     
     inline def setConfigPath(value: String): Self = StObject.set(x, "configPath", value.asInstanceOf[js.Any])
     

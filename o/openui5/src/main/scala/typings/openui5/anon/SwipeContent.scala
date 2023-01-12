@@ -39,7 +39,8 @@ object SwipeContent {
     __obj.asInstanceOf[SwipeContent]
   }
   
-  extension [Self <: SwipeContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwipeContent] (val x: Self) extends AnyVal {
     
     inline def setListItem(value: default): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
     

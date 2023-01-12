@@ -80,7 +80,8 @@ object HlsPackage {
     __obj.asInstanceOf[HlsPackage]
   }
   
-  extension [Self <: HlsPackage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsPackage] (val x: Self) extends AnyVal {
     
     inline def setAdMarkers(value: AdMarkers): Self = StObject.set(x, "AdMarkers", value.asInstanceOf[js.Any])
     

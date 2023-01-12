@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[PickOptionsminWidthmaxWid]
     }
     
-    extension [Self <: PickOptionsminWidthmaxWid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickOptionsminWidthmaxWid] (val x: Self) extends AnyVal {
       
       inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       

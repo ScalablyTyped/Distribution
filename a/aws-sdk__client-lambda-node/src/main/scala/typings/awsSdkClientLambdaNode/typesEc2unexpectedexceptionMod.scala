@@ -21,7 +21,8 @@ object typesEc2unexpectedexceptionMod {
       __obj.asInstanceOf[EC2UnexpectedException]
     }
     
-    extension [Self <: EC2UnexpectedException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EC2UnexpectedException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.EC2UnexpectedException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -51,7 +52,8 @@ object typesEc2unexpectedexceptionMod {
       __obj.asInstanceOf[EC2UnexpectedExceptionDetails]
     }
     
-    extension [Self <: EC2UnexpectedExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EC2UnexpectedExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setEC2ErrorCode(value: String): Self = StObject.set(x, "EC2ErrorCode", value.asInstanceOf[js.Any])
       

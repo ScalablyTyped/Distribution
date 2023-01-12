@@ -21,7 +21,8 @@ object BorderBottomProps {
     __obj.asInstanceOf[BorderBottomProps[ThemeType, TVal]]
   }
   
-  extension [Self <: BorderBottomProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (BorderBottomProps[ThemeType, TVal])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderBottomProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BorderBottomProps[ThemeType, TVal])) extends AnyVal {
     
     inline def setBorderBottom(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
     

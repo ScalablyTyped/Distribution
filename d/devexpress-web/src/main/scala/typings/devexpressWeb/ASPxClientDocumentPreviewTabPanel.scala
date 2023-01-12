@@ -23,7 +23,8 @@ object ASPxClientDocumentPreviewTabPanel {
     __obj.asInstanceOf[ASPxClientDocumentPreviewTabPanel]
   }
   
-  extension [Self <: ASPxClientDocumentPreviewTabPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDocumentPreviewTabPanel] (val x: Self) extends AnyVal {
     
     inline def setCollapsed(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any

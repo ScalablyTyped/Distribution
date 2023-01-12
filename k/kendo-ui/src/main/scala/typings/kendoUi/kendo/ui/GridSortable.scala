@@ -21,7 +21,8 @@ object GridSortable {
     __obj.asInstanceOf[GridSortable]
   }
   
-  extension [Self <: GridSortable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridSortable] (val x: Self) extends AnyVal {
     
     inline def setAllowUnsort(value: Boolean): Self = StObject.set(x, "allowUnsort", value.asInstanceOf[js.Any])
     

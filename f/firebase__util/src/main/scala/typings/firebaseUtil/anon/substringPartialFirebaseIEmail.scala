@@ -46,7 +46,8 @@ object substringPartialFirebaseIEmail {
     __obj.asInstanceOf[substringPartialFirebaseIEmail]
   }
   
-  extension [Self <: substringPartialFirebaseIEmail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: substringPartialFirebaseIEmail] (val x: Self) extends AnyVal {
     
     inline def setAud(value: String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
     

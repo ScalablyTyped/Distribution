@@ -22,7 +22,8 @@ object PickExpoConfigandroiduser {
     __obj.asInstanceOf[PickExpoConfigandroiduser]
   }
   
-  extension [Self <: PickExpoConfigandroiduser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickExpoConfigandroiduser] (val x: Self) extends AnyVal {
     
     inline def setAndroid(value: Android): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     

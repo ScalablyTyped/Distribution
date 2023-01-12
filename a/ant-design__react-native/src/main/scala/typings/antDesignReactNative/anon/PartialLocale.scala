@@ -32,7 +32,8 @@ object PartialLocale {
     __obj.asInstanceOf[PartialLocale]
   }
   
-  extension [Self <: PartialLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialLocale] (val x: Self) extends AnyVal {
     
     inline def setDatePicker(value: DismissText): Self = StObject.set(x, "DatePicker", value.asInstanceOf[js.Any])
     

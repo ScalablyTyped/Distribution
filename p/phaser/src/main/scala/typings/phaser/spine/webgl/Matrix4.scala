@@ -60,7 +60,8 @@ object Matrix4 {
     __obj.asInstanceOf[Matrix4]
   }
   
-  extension [Self <: Matrix4](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Matrix4] (val x: Self) extends AnyVal {
     
     inline def setCopy(value: () => Matrix4): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     

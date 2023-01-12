@@ -15,7 +15,8 @@ object FirewallResource {
     __obj.asInstanceOf[FirewallResource]
   }
   
-  extension [Self <: FirewallResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirewallResource] (val x: Self) extends AnyVal {
     
     inline def setIngressRules(value: IngressRulesResource): Self = StObject.set(x, "ingressRules", value.asInstanceOf[js.Any])
   }

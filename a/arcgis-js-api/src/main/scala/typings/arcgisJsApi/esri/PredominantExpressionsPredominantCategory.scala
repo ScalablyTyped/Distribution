@@ -20,7 +20,8 @@ object PredominantExpressionsPredominantCategory {
     __obj.asInstanceOf[PredominantExpressionsPredominantCategory]
   }
   
-  extension [Self <: PredominantExpressionsPredominantCategory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredominantExpressionsPredominantCategory] (val x: Self) extends AnyVal {
     
     inline def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
   }

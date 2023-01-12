@@ -50,7 +50,8 @@ object AggregateQuerySnapshot {
     __obj.asInstanceOf[AggregateQuerySnapshot[T]]
   }
   
-  extension [Self <: AggregateQuerySnapshot[?], T /* <: AggregateSpec */](x: Self & AggregateQuerySnapshot[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregateQuerySnapshot[?], T /* <: AggregateSpec */] (val x: Self & AggregateQuerySnapshot[T]) extends AnyVal {
     
     inline def setData(value: () => AggregateSpecData[T]): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
     

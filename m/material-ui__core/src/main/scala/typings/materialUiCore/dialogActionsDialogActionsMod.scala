@@ -495,7 +495,8 @@ object dialogActionsDialogActionsMod {
       __obj.asInstanceOf[DialogActionsProps]
     }
     
-    extension [Self <: DialogActionsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogActionsProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

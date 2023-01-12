@@ -71,7 +71,8 @@ object PlanOptions {
     __obj.asInstanceOf[PlanOptions]
   }
   
-  extension [Self <: PlanOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlanOptions] (val x: Self) extends AnyVal {
     
     inline def setAddButtonClassName(value: String): Self = StObject.set(x, "addButtonClassName", value.asInstanceOf[js.Any])
     

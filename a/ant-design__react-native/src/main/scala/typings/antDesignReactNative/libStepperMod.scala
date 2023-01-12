@@ -42,7 +42,8 @@ object libStepperMod {
       __obj.asInstanceOf[StepProps]
     }
     
-    extension [Self <: StepProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepProps] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

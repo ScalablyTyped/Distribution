@@ -23,7 +23,8 @@ object DeleteStorageVirtualMachineResponse {
     __obj.asInstanceOf[DeleteStorageVirtualMachineResponse]
   }
   
-  extension [Self <: DeleteStorageVirtualMachineResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteStorageVirtualMachineResponse] (val x: Self) extends AnyVal {
     
     inline def setLifecycle(value: StorageVirtualMachineLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
     

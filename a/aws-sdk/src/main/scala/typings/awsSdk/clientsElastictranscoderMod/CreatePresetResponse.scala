@@ -23,7 +23,8 @@ object CreatePresetResponse {
     __obj.asInstanceOf[CreatePresetResponse]
   }
   
-  extension [Self <: CreatePresetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePresetResponse] (val x: Self) extends AnyVal {
     
     inline def setPreset(value: Preset): Self = StObject.set(x, "Preset", value.asInstanceOf[js.Any])
     

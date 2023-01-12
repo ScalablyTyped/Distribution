@@ -29,7 +29,8 @@ object VastTrackingEvents {
     __obj.asInstanceOf[VastTrackingEvents]
   }
   
-  extension [Self <: VastTrackingEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VastTrackingEvents] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: js.Array[String]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     

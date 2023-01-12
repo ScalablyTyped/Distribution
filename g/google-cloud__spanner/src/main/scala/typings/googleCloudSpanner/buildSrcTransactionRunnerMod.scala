@@ -172,7 +172,8 @@ object buildSrcTransactionRunnerMod {
       __obj.asInstanceOf[RunTransactionOptions]
     }
     
-    extension [Self <: RunTransactionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunTransactionOptions] (val x: Self) extends AnyVal {
       
       inline def setRequestOptions(value: PickanytransactionTag): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
       

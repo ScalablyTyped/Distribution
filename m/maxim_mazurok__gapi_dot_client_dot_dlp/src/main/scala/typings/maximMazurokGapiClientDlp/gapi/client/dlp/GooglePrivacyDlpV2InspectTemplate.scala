@@ -34,7 +34,8 @@ object GooglePrivacyDlpV2InspectTemplate {
     __obj.asInstanceOf[GooglePrivacyDlpV2InspectTemplate]
   }
   
-  extension [Self <: GooglePrivacyDlpV2InspectTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2InspectTemplate] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object ClearOnDrop {
     __obj.asInstanceOf[ClearOnDrop]
   }
   
-  extension [Self <: ClearOnDrop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearOnDrop] (val x: Self) extends AnyVal {
     
     inline def setClampToGround(value: Boolean): Self = StObject.set(x, "clampToGround", value.asInstanceOf[js.Any])
     

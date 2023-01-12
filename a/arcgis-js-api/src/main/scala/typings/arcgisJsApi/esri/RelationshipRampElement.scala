@@ -79,7 +79,8 @@ object RelationshipRampElement {
     __obj.asInstanceOf[RelationshipRampElement]
   }
   
-  extension [Self <: RelationshipRampElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationshipRampElement] (val x: Self) extends AnyVal {
     
     inline def setColors(value: js.Array[js.Array[Color_]]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

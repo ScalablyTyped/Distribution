@@ -33,7 +33,8 @@ object OrderableClusterOption {
     __obj.asInstanceOf[OrderableClusterOption]
   }
   
-  extension [Self <: OrderableClusterOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderableClusterOption] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZones(value: AvailabilityZoneList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     

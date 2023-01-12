@@ -28,7 +28,8 @@ object LogEntry {
     __obj.asInstanceOf[LogEntry]
   }
   
-  extension [Self <: LogEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogEntry] (val x: Self) extends AnyVal {
     
     inline def setWithException(value: js.Error => LogEntry): Self = StObject.set(x, "withException", js.Any.fromFunction1(value))
     

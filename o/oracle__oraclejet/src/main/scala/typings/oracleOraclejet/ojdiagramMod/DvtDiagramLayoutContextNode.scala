@@ -86,7 +86,8 @@ object DvtDiagramLayoutContextNode {
     __obj.asInstanceOf[DvtDiagramLayoutContextNode]
   }
   
-  extension [Self <: DvtDiagramLayoutContextNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DvtDiagramLayoutContextNode] (val x: Self) extends AnyVal {
     
     inline def setGetBounds(value: () => H): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
     

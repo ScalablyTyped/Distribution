@@ -21,7 +21,8 @@ object GroupData {
     __obj.asInstanceOf[GroupData]
   }
   
-  extension [Self <: GroupData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupData] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

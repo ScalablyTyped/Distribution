@@ -32,7 +32,8 @@ object libAdaptorGeometriesPolygonMod {
       __obj.asInstanceOf[PolygonGeometryOptions]
     }
     
-    extension [Self <: PolygonGeometryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolygonGeometryOptions] (val x: Self) extends AnyVal {
       
       inline def setPolygon(value: MappingOptions): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
       

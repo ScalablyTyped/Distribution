@@ -28,7 +28,8 @@ object SearchQuantumTasksRequest {
     __obj.asInstanceOf[SearchQuantumTasksRequest]
   }
   
-  extension [Self <: SearchQuantumTasksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchQuantumTasksRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: SearchQuantumTasksRequestFiltersList): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

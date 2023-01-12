@@ -16,7 +16,8 @@ object PerAppResult {
     __obj.asInstanceOf[PerAppResult]
   }
   
-  extension [Self <: PerAppResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerAppResult] (val x: Self) extends AnyVal {
     
     inline def setClearingResult(value: String): Self = StObject.set(x, "clearingResult", value.asInstanceOf[js.Any])
     

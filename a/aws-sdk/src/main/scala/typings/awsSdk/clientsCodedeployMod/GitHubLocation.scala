@@ -23,7 +23,8 @@ object GitHubLocation {
     __obj.asInstanceOf[GitHubLocation]
   }
   
-  extension [Self <: GitHubLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitHubLocation] (val x: Self) extends AnyVal {
     
     inline def setCommitId(value: CommitId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     

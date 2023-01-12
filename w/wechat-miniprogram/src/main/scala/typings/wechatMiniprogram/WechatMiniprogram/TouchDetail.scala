@@ -29,7 +29,8 @@ object TouchDetail {
     __obj.asInstanceOf[TouchDetail]
   }
   
-  extension [Self <: TouchDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchDetail] (val x: Self) extends AnyVal {
     
     inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
     

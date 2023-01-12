@@ -22,7 +22,8 @@ object PartialDynamicWidgetsProv {
     __obj.asInstanceOf[PartialDynamicWidgetsProv]
   }
   
-  extension [Self <: PartialDynamicWidgetsProv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDynamicWidgetsProv] (val x: Self) extends AnyVal {
     
     inline def setAttributesToRender(value: js.Array[String]): Self = StObject.set(x, "attributesToRender", value.asInstanceOf[js.Any])
     

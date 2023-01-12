@@ -45,7 +45,8 @@ object DocumentAcceleratorConfiguration {
     __obj.asInstanceOf[DocumentAcceleratorConfiguration]
   }
   
-  extension [Self <: DocumentAcceleratorConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentAcceleratorConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCreateWithDocumentRoot(value: XStorage => Unit): Self = StObject.set(x, "createWithDocumentRoot", js.Any.fromFunction1(value))
   }

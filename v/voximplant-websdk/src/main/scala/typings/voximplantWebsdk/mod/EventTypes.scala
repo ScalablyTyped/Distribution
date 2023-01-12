@@ -45,7 +45,8 @@ object EventTypes {
       __obj.asInstanceOf[AuthResult]
     }
     
-    extension [Self <: AuthResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthResult] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object EventTypes {
       __obj.asInstanceOf[ConnectionFailed]
     }
     
-    extension [Self <: ConnectionFailed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionFailed] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
@@ -130,7 +132,8 @@ object EventTypes {
       __obj.asInstanceOf[IncomingCall]
     }
     
-    extension [Self <: IncomingCall](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncomingCall] (val x: Self) extends AnyVal {
       
       inline def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
       
@@ -159,7 +162,8 @@ object EventTypes {
       __obj.asInstanceOf[MicAccessResult]
     }
     
-    extension [Self <: MicAccessResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MicAccessResult] (val x: Self) extends AnyVal {
       
       inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
@@ -184,7 +188,8 @@ object EventTypes {
       __obj.asInstanceOf[NetStatsReceived]
     }
     
-    extension [Self <: NetStatsReceived](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetStatsReceived] (val x: Self) extends AnyVal {
       
       inline def setStats(value: NetworkInfo): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     }
@@ -216,7 +221,8 @@ object EventTypes {
       __obj.asInstanceOf[SDKReady]
     }
     
-    extension [Self <: SDKReady](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SDKReady] (val x: Self) extends AnyVal {
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }

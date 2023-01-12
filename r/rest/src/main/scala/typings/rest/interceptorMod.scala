@@ -44,7 +44,8 @@ object interceptorMod {
       __obj.asInstanceOf[Config[T, U]]
     }
     
-    extension [Self <: Config[?, ?], T, U](x: Self & (Config[T, U])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config[?, ?], T, U] (val x: Self & (Config[T, U])) extends AnyVal {
       
       inline def setError(value: (/* response */ Response, /* config */ U, /* meta */ Meta) => Response | Promise[Response]): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
       

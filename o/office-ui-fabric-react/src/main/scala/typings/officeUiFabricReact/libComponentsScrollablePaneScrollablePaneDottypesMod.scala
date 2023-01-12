@@ -60,7 +60,8 @@ object libComponentsScrollablePaneScrollablePaneDottypesMod {
       __obj.asInstanceOf[IScrollablePane]
     }
     
-    extension [Self <: IScrollablePane](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScrollablePane] (val x: Self) extends AnyVal {
       
       inline def setForceLayoutUpdate(value: () => Unit): Self = StObject.set(x, "forceLayoutUpdate", js.Any.fromFunction0(value))
       
@@ -79,7 +80,8 @@ object libComponentsScrollablePaneScrollablePaneDottypesMod {
       __obj.asInstanceOf[IScrollablePaneContext]
     }
     
-    extension [Self <: IScrollablePaneContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScrollablePaneContext] (val x: Self) extends AnyVal {
       
       inline def setScrollablePane(value: AddSticky): Self = StObject.set(x, "scrollablePane", value.asInstanceOf[js.Any])
       
@@ -121,7 +123,8 @@ object libComponentsScrollablePaneScrollablePaneDottypesMod {
       __obj.asInstanceOf[IScrollablePaneProps]
     }
     
-    extension [Self <: IScrollablePaneProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScrollablePaneProps] (val x: Self) extends AnyVal {
       
       inline def setComponentRef(value: IRefObject[IScrollablePane]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
@@ -170,7 +173,8 @@ object libComponentsScrollablePaneScrollablePaneDottypesMod {
       __obj.asInstanceOf[IScrollablePaneStyleProps]
     }
     
-    extension [Self <: IScrollablePaneStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScrollablePaneStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -218,7 +222,8 @@ object libComponentsScrollablePaneScrollablePaneDottypesMod {
       __obj.asInstanceOf[IScrollablePaneStyles]
     }
     
-    extension [Self <: IScrollablePaneStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScrollablePaneStyles] (val x: Self) extends AnyVal {
       
       inline def setContentContainer(value: IStyle): Self = StObject.set(x, "contentContainer", value.asInstanceOf[js.Any])
       

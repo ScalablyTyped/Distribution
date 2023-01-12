@@ -32,7 +32,8 @@ object SecurityPolicyList {
     __obj.asInstanceOf[SecurityPolicyList]
   }
   
-  extension [Self <: SecurityPolicyList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityPolicyList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetClientCertificatesRequest {
     __obj.asInstanceOf[GetClientCertificatesRequest]
   }
   
-  extension [Self <: GetClientCertificatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetClientCertificatesRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

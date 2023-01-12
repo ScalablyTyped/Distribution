@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[OpenIdError]
     }
     
-    extension [Self <: OpenIdError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenIdError] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }

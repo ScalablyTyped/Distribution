@@ -503,7 +503,8 @@ object libContainerMod {
       __obj.asInstanceOf[ContainerProps]
     }
     
-    extension [Self <: ContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerProps] (val x: Self) extends AnyVal {
       
       inline def setNodes(value: js.Array[ChildNode | ChildProps]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
@@ -532,7 +533,8 @@ object libContainerMod {
       __obj.asInstanceOf[ValueOptions]
     }
     
-    extension [Self <: ValueOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueOptions] (val x: Self) extends AnyVal {
       
       inline def setFast(value: String): Self = StObject.set(x, "fast", value.asInstanceOf[js.Any])
       

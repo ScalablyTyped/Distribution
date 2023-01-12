@@ -54,7 +54,8 @@ object domRenderablesMod {
       __obj.asInstanceOf[IDOMElementOptions]
     }
     
-    extension [Self <: IDOMElementOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDOMElementOptions] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

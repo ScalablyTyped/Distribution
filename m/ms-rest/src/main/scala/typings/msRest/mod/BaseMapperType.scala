@@ -15,7 +15,8 @@ object BaseMapperType {
     __obj.asInstanceOf[BaseMapperType]
   }
   
-  extension [Self <: BaseMapperType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseMapperType] (val x: Self) extends AnyVal {
     
     inline def setName(value: MapperType): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

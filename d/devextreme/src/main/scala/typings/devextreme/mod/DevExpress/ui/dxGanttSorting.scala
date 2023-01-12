@@ -39,7 +39,8 @@ object dxGanttSorting {
     __obj.asInstanceOf[dxGanttSorting]
   }
   
-  extension [Self <: dxGanttSorting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxGanttSorting] (val x: Self) extends AnyVal {
     
     inline def setAscendingText(value: String): Self = StObject.set(x, "ascendingText", value.asInstanceOf[js.Any])
     

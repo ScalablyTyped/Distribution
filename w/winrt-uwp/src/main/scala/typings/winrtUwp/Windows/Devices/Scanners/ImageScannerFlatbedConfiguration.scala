@@ -133,7 +133,8 @@ object ImageScannerFlatbedConfiguration {
     __obj.asInstanceOf[ImageScannerFlatbedConfiguration]
   }
   
-  extension [Self <: ImageScannerFlatbedConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageScannerFlatbedConfiguration] (val x: Self) extends AnyVal {
     
     inline def setActualResolution(value: ImageScannerResolution): Self = StObject.set(x, "actualResolution", value.asInstanceOf[js.Any])
     

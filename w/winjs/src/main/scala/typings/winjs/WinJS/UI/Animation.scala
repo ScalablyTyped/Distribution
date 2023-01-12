@@ -23,7 +23,8 @@ object Animation {
       __obj.asInstanceOf[IAnimationMethodResponse]
     }
     
-    extension [Self <: IAnimationMethodResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAnimationMethodResponse] (val x: Self) extends AnyVal {
       
       inline def setExecute(value: () => Promise[Any]): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
     }

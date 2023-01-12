@@ -26,7 +26,8 @@ object SecurityCreateApiKeyRequest {
     __obj.asInstanceOf[SecurityCreateApiKeyRequest]
   }
   
-  extension [Self <: SecurityCreateApiKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityCreateApiKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setExpiration(value: Duration): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     

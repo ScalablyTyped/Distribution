@@ -25,7 +25,8 @@ object AggregationsHoltWintersModelSettings {
     __obj.asInstanceOf[AggregationsHoltWintersModelSettings]
   }
   
-  extension [Self <: AggregationsHoltWintersModelSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsHoltWintersModelSettings] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: float): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

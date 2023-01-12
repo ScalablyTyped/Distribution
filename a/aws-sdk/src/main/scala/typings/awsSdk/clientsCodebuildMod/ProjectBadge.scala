@@ -23,7 +23,8 @@ object ProjectBadge {
     __obj.asInstanceOf[ProjectBadge]
   }
   
-  extension [Self <: ProjectBadge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectBadge] (val x: Self) extends AnyVal {
     
     inline def setBadgeEnabled(value: Boolean): Self = StObject.set(x, "badgeEnabled", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object TabStripOptions {
     __obj.asInstanceOf[TabStripOptions]
   }
   
-  extension [Self <: TabStripOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabStripOptions] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: /* e */ TabStripActivateEvent => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
     

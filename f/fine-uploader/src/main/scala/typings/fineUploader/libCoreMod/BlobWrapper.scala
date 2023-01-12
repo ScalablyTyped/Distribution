@@ -24,7 +24,8 @@ object BlobWrapper {
     __obj.asInstanceOf[BlobWrapper]
   }
   
-  extension [Self <: BlobWrapper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlobWrapper] (val x: Self) extends AnyVal {
     
     inline def setBlob(value: Blob): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object QueryNoticesResponse {
     __obj.asInstanceOf[QueryNoticesResponse]
   }
   
-  extension [Self <: QueryNoticesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryNoticesResponse] (val x: Self) extends AnyVal {
     
     inline def setAggregations(value: js.Array[QueryAggregation]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
     

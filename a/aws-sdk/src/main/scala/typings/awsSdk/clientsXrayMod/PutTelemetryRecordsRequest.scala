@@ -33,7 +33,8 @@ object PutTelemetryRecordsRequest {
     __obj.asInstanceOf[PutTelemetryRecordsRequest]
   }
   
-  extension [Self <: PutTelemetryRecordsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutTelemetryRecordsRequest] (val x: Self) extends AnyVal {
     
     inline def setEC2InstanceId(value: EC2InstanceId): Self = StObject.set(x, "EC2InstanceId", value.asInstanceOf[js.Any])
     

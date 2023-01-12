@@ -21,7 +21,8 @@ object TableProps {
     __obj.asInstanceOf[TableProps]
   }
   
-  extension [Self <: TableProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableProps] (val x: Self) extends AnyVal {
     
     inline def setOnSelectionChanged(value: /* row */ Any => Any): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
     

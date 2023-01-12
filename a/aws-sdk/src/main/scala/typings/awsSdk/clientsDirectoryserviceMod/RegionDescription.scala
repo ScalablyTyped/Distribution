@@ -55,7 +55,8 @@ object RegionDescription {
     __obj.asInstanceOf[RegionDescription]
   }
   
-  extension [Self <: RegionDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionDescription] (val x: Self) extends AnyVal {
     
     inline def setDesiredNumberOfDomainControllers(value: DesiredNumberOfDomainControllers): Self = StObject.set(x, "DesiredNumberOfDomainControllers", value.asInstanceOf[js.Any])
     

@@ -62,7 +62,8 @@ object XXMLEncryptionTemplate {
     __obj.asInstanceOf[XXMLEncryptionTemplate]
   }
   
-  extension [Self <: XXMLEncryptionTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XXMLEncryptionTemplate] (val x: Self) extends AnyVal {
     
     inline def setGetTarget(value: () => XXMLElementWrapper): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
     

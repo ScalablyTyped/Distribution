@@ -22,7 +22,8 @@ object StoreProductQueryResult {
     __obj.asInstanceOf[StoreProductQueryResult]
   }
   
-  extension [Self <: StoreProductQueryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreProductQueryResult] (val x: Self) extends AnyVal {
     
     inline def setExtendedError(value: WinRTError): Self = StObject.set(x, "extendedError", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pg-database-url"
-version := "0.1-dt-20220118Z-fe3129"
+version := "0.1-dt-20220118Z-8aff80"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

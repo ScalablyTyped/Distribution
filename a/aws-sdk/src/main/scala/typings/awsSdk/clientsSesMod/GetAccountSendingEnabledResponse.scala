@@ -18,7 +18,8 @@ object GetAccountSendingEnabledResponse {
     __obj.asInstanceOf[GetAccountSendingEnabledResponse]
   }
   
-  extension [Self <: GetAccountSendingEnabledResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAccountSendingEnabledResponse] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Enabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

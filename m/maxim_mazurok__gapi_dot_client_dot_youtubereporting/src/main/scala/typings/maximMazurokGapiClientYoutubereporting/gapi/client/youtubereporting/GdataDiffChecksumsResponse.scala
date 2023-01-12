@@ -28,7 +28,8 @@ object GdataDiffChecksumsResponse {
     __obj.asInstanceOf[GdataDiffChecksumsResponse]
   }
   
-  extension [Self <: GdataDiffChecksumsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GdataDiffChecksumsResponse] (val x: Self) extends AnyVal {
     
     inline def setChecksumsLocation(value: GdataCompositeMedia): Self = StObject.set(x, "checksumsLocation", value.asInstanceOf[js.Any])
     

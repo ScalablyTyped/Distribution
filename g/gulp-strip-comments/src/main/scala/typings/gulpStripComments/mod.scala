@@ -52,7 +52,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[StripOptions]
       }
       
-      extension [Self <: StripOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StripOptions] (val x: Self) extends AnyVal {
         
         inline def setIgnore(value: js.RegExp | js.Array[js.RegExp]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
         

@@ -51,7 +51,8 @@ object ClonesComponent {
     __obj.asInstanceOf[ClonesComponent]
   }
   
-  extension [Self <: ClonesComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClonesComponent] (val x: Self) extends AnyVal {
     
     inline def setAppend(value: () => Unit): Self = StObject.set(x, "append", js.Any.fromFunction0(value))
     

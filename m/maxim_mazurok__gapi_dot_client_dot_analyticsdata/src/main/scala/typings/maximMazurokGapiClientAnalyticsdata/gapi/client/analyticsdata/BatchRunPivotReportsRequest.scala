@@ -16,7 +16,8 @@ object BatchRunPivotReportsRequest {
     __obj.asInstanceOf[BatchRunPivotReportsRequest]
   }
   
-  extension [Self <: BatchRunPivotReportsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchRunPivotReportsRequest] (val x: Self) extends AnyVal {
     
     inline def setRequests(value: js.Array[RunPivotReportRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object Pattern {
     __obj.asInstanceOf[Pattern]
   }
   
-  extension [Self <: Pattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pattern] (val x: Self) extends AnyVal {
     
     inline def setBoundingBox(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
     

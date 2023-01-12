@@ -59,7 +59,8 @@ object TimeInfoProperties {
     __obj.asInstanceOf[TimeInfoProperties]
   }
   
-  extension [Self <: TimeInfoProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeInfoProperties] (val x: Self) extends AnyVal {
     
     inline def setEndField(value: String): Self = StObject.set(x, "endField", value.asInstanceOf[js.Any])
     

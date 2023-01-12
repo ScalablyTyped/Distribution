@@ -56,7 +56,8 @@ object FieldsFirewall {
     __obj.asInstanceOf[FieldsFirewall]
   }
   
-  extension [Self <: FieldsFirewall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldsFirewall] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

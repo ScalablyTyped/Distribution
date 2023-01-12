@@ -19,7 +19,8 @@ object ModifyAnnouncementAssigneesRequest {
     __obj.asInstanceOf[ModifyAnnouncementAssigneesRequest]
   }
   
-  extension [Self <: ModifyAnnouncementAssigneesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyAnnouncementAssigneesRequest] (val x: Self) extends AnyVal {
     
     inline def setAssigneeMode(value: String): Self = StObject.set(x, "assigneeMode", value.asInstanceOf[js.Any])
     

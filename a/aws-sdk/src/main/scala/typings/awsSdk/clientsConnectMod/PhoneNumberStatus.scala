@@ -23,7 +23,8 @@ object PhoneNumberStatus {
     __obj.asInstanceOf[PhoneNumberStatus]
   }
   
-  extension [Self <: PhoneNumberStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhoneNumberStatus] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: PhoneNumberWorkflowMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

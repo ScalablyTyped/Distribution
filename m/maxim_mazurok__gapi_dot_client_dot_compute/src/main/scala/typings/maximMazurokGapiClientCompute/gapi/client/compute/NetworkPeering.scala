@@ -66,7 +66,8 @@ object NetworkPeering {
     __obj.asInstanceOf[NetworkPeering]
   }
   
-  extension [Self <: NetworkPeering](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkPeering] (val x: Self) extends AnyVal {
     
     inline def setAutoCreateRoutes(value: Boolean): Self = StObject.set(x, "autoCreateRoutes", value.asInstanceOf[js.Any])
     

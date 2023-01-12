@@ -97,7 +97,8 @@ object Cpx1 {
     __obj.asInstanceOf[Cpx1]
   }
   
-  extension [Self <: Cpx1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cpx1] (val x: Self) extends AnyVal {
     
     inline def setCpx1(value: Double): Self = StObject.set(x, "cpx1", value.asInstanceOf[js.Any])
     

@@ -65,7 +65,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyPartialPackage]
     }
     
-    extension [Self <: ReadonlyPartialPackage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyPartialPackage] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: Person): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       

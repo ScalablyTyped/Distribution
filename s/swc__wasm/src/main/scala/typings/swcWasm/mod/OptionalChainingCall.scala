@@ -25,7 +25,8 @@ object OptionalChainingCall {
     __obj.asInstanceOf[OptionalChainingCall]
   }
   
-  extension [Self <: OptionalChainingCall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionalChainingCall] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Array[ExprOrSpread]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

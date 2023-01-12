@@ -58,7 +58,8 @@ object GetNetworkTelemetryRequest {
     __obj.asInstanceOf[GetNetworkTelemetryRequest]
   }
   
-  extension [Self <: GetNetworkTelemetryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNetworkTelemetryRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AWSAccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

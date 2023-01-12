@@ -22,7 +22,8 @@ object BigQueryDataSourceSpec {
     __obj.asInstanceOf[BigQueryDataSourceSpec]
   }
   
-  extension [Self <: BigQueryDataSourceSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BigQueryDataSourceSpec] (val x: Self) extends AnyVal {
     
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     

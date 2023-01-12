@@ -70,7 +70,8 @@ object DisplayFormats {
     __obj.asInstanceOf[DisplayFormats]
   }
   
-  extension [Self <: DisplayFormats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayFormats] (val x: Self) extends AnyVal {
     
     inline def setDisplayFormats(value: StringDictionary[String]): Self = StObject.set(x, "displayFormats", value.asInstanceOf[js.Any])
     

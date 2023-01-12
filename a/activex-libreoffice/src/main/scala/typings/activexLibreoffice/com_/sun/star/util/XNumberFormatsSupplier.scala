@@ -39,7 +39,8 @@ object XNumberFormatsSupplier {
     __obj.asInstanceOf[XNumberFormatsSupplier]
   }
   
-  extension [Self <: XNumberFormatsSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XNumberFormatsSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetNumberFormatSettings(value: () => XPropertySet): Self = StObject.set(x, "getNumberFormatSettings", js.Any.fromFunction0(value))
     

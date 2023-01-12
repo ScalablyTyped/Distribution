@@ -34,7 +34,8 @@ object BuildingFilterProperties {
     __obj.asInstanceOf[BuildingFilterProperties]
   }
   
-  extension [Self <: BuildingFilterProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildingFilterProperties] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

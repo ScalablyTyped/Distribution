@@ -66,7 +66,8 @@ object XOutParameters {
     __obj.asInstanceOf[XOutParameters]
   }
   
-  extension [Self <: XOutParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XOutParameters] (val x: Self) extends AnyVal {
     
     inline def setRegisterNumericOutParameter(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "registerNumericOutParameter", js.Any.fromFunction3(value))
     

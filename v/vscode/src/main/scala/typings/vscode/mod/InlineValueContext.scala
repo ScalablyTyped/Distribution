@@ -24,7 +24,8 @@ object InlineValueContext {
     __obj.asInstanceOf[InlineValueContext]
   }
   
-  extension [Self <: InlineValueContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineValueContext] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

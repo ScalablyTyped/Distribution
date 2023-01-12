@@ -22,7 +22,8 @@ object IntegrationDetails {
     __obj.asInstanceOf[IntegrationDetails]
   }
   
-  extension [Self <: IntegrationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegrationDetails] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

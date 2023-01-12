@@ -16,7 +16,8 @@ object PivotHierarchyCollectionData {
     __obj.asInstanceOf[PivotHierarchyCollectionData]
   }
   
-  extension [Self <: PivotHierarchyCollectionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotHierarchyCollectionData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[PivotHierarchyData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

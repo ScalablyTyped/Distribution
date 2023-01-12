@@ -34,7 +34,8 @@ object Chord {
     __obj.asInstanceOf[Chord]
   }
   
-  extension [Self <: Chord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Chord] (val x: Self) extends AnyVal {
     
     inline def setChord(value: ChordLayout): Self = StObject.set(x, "chord", value.asInstanceOf[js.Any])
     

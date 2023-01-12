@@ -33,7 +33,8 @@ object DescribePhoneNumbersRequest {
     __obj.asInstanceOf[DescribePhoneNumbersRequest]
   }
   
-  extension [Self <: DescribePhoneNumbersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePhoneNumbersRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: PhoneNumberFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

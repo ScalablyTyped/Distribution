@@ -15,7 +15,8 @@ object IncludeNonDatabaseFields {
     __obj.asInstanceOf[IncludeNonDatabaseFields]
   }
   
-  extension [Self <: IncludeNonDatabaseFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeNonDatabaseFields] (val x: Self) extends AnyVal {
     
     inline def setIncludeNonDatabaseFields(value: Boolean): Self = StObject.set(x, "includeNonDatabaseFields", value.asInstanceOf[js.Any])
   }

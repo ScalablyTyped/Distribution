@@ -17,7 +17,8 @@ object WatcherExecutionThreadPool {
     __obj.asInstanceOf[WatcherExecutionThreadPool]
   }
   
-  extension [Self <: WatcherExecutionThreadPool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherExecutionThreadPool] (val x: Self) extends AnyVal {
     
     inline def setMax_size(value: long): Self = StObject.set(x, "max_size", value.asInstanceOf[js.Any])
     

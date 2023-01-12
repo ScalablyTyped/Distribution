@@ -25,7 +25,8 @@ object RetryOptions {
     __obj.asInstanceOf[RetryOptions]
   }
   
-  extension [Self <: RetryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetryOptions] (val x: Self) extends AnyVal {
     
     inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
     

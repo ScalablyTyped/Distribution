@@ -56,7 +56,8 @@ object TileSource {
     __obj.asInstanceOf[TileSource]
   }
   
-  extension [Self <: TileSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileSource] (val x: Self) extends AnyVal {
     
     inline def setGetBounds(value: () => LocationRect): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
     

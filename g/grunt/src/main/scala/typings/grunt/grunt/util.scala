@@ -47,7 +47,8 @@ object util {
       __obj.asInstanceOf[ISpawnOptions]
     }
     
-    extension [Self <: ISpawnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpawnOptions] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object util {
       __obj.asInstanceOf[ISpawnResult]
     }
     
-    extension [Self <: ISpawnResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpawnResult] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -138,7 +140,8 @@ object util {
       __obj.asInstanceOf[ISpawnedChild]
     }
     
-    extension [Self <: ISpawnedChild](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpawnedChild] (val x: Self) extends AnyVal {
       
       inline def setForever(value: () => Unit): Self = StObject.set(x, "forever", js.Any.fromFunction0(value))
       

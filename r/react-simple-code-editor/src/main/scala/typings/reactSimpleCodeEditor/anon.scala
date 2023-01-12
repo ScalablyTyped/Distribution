@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Bottom[T]]
     }
     
-    extension [Self <: Bottom[?], T](x: Self & Bottom[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom[?], T] (val x: Self & Bottom[T]) extends AnyVal {
       
       inline def setBottom(value: T): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[Capture]
     }
     
-    extension [Self <: Capture](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Capture] (val x: Self) extends AnyVal {
       
       inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     }
@@ -71,7 +73,8 @@ object anon {
       __obj.asInstanceOf[History]
     }
     
-    extension [Self <: History](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: History] (val x: Self) extends AnyVal {
       
       inline def setHistory(value: typings.reactSimpleCodeEditor.mod.History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     }
@@ -94,7 +97,8 @@ object anon {
       __obj.asInstanceOf[IgnoreTabKey]
     }
     
-    extension [Self <: IgnoreTabKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IgnoreTabKey] (val x: Self) extends AnyVal {
       
       inline def setIgnoreTabKey(value: Boolean): Self = StObject.set(x, "ignoreTabKey", value.asInstanceOf[js.Any])
       
@@ -124,7 +128,8 @@ object anon {
       __obj.asInstanceOf[Recordtimestampnumber]
     }
     
-    extension [Self <: Recordtimestampnumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Recordtimestampnumber] (val x: Self) extends AnyVal {
       
       inline def setSelectionEnd(value: Double): Self = StObject.set(x, "selectionEnd", value.asInstanceOf[js.Any])
       

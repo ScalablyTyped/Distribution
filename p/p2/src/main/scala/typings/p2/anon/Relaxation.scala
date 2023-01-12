@@ -17,7 +17,8 @@ object Relaxation {
     __obj.asInstanceOf[Relaxation]
   }
   
-  extension [Self <: Relaxation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Relaxation] (val x: Self) extends AnyVal {
     
     inline def setRelaxation(value: Double): Self = StObject.set(x, "relaxation", value.asInstanceOf[js.Any])
     

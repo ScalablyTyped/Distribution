@@ -47,7 +47,8 @@ object Categories {
     __obj.asInstanceOf[Categories]
   }
   
-  extension [Self <: Categories](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Categories] (val x: Self) extends AnyVal {
     
     inline def setPNAccessDeniedCategory(value: String): Self = StObject.set(x, "PNAccessDeniedCategory", value.asInstanceOf[js.Any])
     

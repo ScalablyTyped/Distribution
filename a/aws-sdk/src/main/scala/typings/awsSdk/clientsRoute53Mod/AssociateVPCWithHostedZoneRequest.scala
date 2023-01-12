@@ -28,7 +28,8 @@ object AssociateVPCWithHostedZoneRequest {
     __obj.asInstanceOf[AssociateVPCWithHostedZoneRequest]
   }
   
-  extension [Self <: AssociateVPCWithHostedZoneRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateVPCWithHostedZoneRequest] (val x: Self) extends AnyVal {
     
     inline def setComment(value: AssociateVPCComment): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     

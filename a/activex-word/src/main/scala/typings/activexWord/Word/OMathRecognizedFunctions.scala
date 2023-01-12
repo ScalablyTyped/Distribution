@@ -37,7 +37,8 @@ object OMathRecognizedFunctions {
     __obj.asInstanceOf[OMathRecognizedFunctions]
   }
   
-  extension [Self <: OMathRecognizedFunctions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OMathRecognizedFunctions] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: String => OMathRecognizedFunction): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     

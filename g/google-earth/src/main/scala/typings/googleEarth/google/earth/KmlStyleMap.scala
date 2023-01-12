@@ -91,7 +91,8 @@ object KmlStyleMap {
     __obj.asInstanceOf[KmlStyleMap]
   }
   
-  extension [Self <: KmlStyleMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlStyleMap] (val x: Self) extends AnyVal {
     
     inline def setGetHighlightStyle(value: () => KmlStyle): Self = StObject.set(x, "getHighlightStyle", js.Any.fromFunction0(value))
     

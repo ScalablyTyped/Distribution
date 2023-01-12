@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[ClickMoveLimit]
     }
     
-    extension [Self <: ClickMoveLimit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickMoveLimit] (val x: Self) extends AnyVal {
       
       inline def setClickMoveLimit(value: Double): Self = StObject.set(x, "clickMoveLimit", value.asInstanceOf[js.Any])
       

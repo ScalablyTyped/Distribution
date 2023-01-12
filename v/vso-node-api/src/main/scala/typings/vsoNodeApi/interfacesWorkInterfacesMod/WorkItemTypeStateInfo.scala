@@ -24,7 +24,8 @@ object WorkItemTypeStateInfo {
     __obj.asInstanceOf[WorkItemTypeStateInfo]
   }
   
-  extension [Self <: WorkItemTypeStateInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemTypeStateInfo] (val x: Self) extends AnyVal {
     
     inline def setStates(value: StringDictionary[String]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     

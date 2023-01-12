@@ -64,7 +64,8 @@ object baseHelpersTooltipMod {
       __obj.asInstanceOf[TooltipHelpersProps]
     }
     
-    extension [Self <: TooltipHelpersProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipHelpersProps] (val x: Self) extends AnyVal {
       
       inline def setTooltip(value: Double | String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       

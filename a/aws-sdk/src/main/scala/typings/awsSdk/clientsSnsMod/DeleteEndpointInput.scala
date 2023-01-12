@@ -18,7 +18,8 @@ object DeleteEndpointInput {
     __obj.asInstanceOf[DeleteEndpointInput]
   }
   
-  extension [Self <: DeleteEndpointInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEndpointInput] (val x: Self) extends AnyVal {
     
     inline def setEndpointArn(value: String): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
   }

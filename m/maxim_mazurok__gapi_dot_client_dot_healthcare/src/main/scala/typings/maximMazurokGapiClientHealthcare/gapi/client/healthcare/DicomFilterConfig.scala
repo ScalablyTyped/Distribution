@@ -20,7 +20,8 @@ object DicomFilterConfig {
     __obj.asInstanceOf[DicomFilterConfig]
   }
   
-  extension [Self <: DicomFilterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DicomFilterConfig] (val x: Self) extends AnyVal {
     
     inline def setResourcePathsGcsUri(value: String): Self = StObject.set(x, "resourcePathsGcsUri", value.asInstanceOf[js.Any])
     

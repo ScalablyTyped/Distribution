@@ -96,7 +96,8 @@ object mod {
       __obj.asInstanceOf[CreateTorrentOptions]
     }
     
-    extension [Self <: CreateTorrentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateTorrentOptions] (val x: Self) extends AnyVal {
       
       inline def setAnnounceList(value: js.Array[js.Array[String]]): Self = StObject.set(x, "announceList", value.asInstanceOf[js.Any])
       

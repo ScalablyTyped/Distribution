@@ -18,7 +18,8 @@ object ActivePages {
     __obj.asInstanceOf[ActivePages]
   }
   
-  extension [Self <: ActivePages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivePages] (val x: Self) extends AnyVal {
     
     inline def setActivePages(value: js.Array[Any]): Self = StObject.set(x, "activePages", value.asInstanceOf[js.Any])
     

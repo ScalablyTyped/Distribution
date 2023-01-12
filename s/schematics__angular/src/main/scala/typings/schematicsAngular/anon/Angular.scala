@@ -17,7 +17,8 @@ object Angular {
     __obj.asInstanceOf[Angular]
   }
   
-  extension [Self <: Angular](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Angular] (val x: Self) extends AnyVal {
     
     inline def setAngular(value: String): Self = StObject.set(x, "Angular", value.asInstanceOf[js.Any])
     

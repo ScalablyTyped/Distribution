@@ -17,7 +17,8 @@ object StorePreviewPurchaseResults {
     __obj.asInstanceOf[StorePreviewPurchaseResults]
   }
   
-  extension [Self <: StorePreviewPurchaseResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorePreviewPurchaseResults] (val x: Self) extends AnyVal {
     
     inline def setProductPurchaseStatus(value: StorePreviewProductPurchaseStatus): Self = StObject.set(x, "productPurchaseStatus", value.asInstanceOf[js.Any])
   }

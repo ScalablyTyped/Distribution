@@ -16,7 +16,8 @@ object ComputeHeadCursorRequest {
     __obj.asInstanceOf[ComputeHeadCursorRequest]
   }
   
-  extension [Self <: ComputeHeadCursorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputeHeadCursorRequest] (val x: Self) extends AnyVal {
     
     inline def setPartition(value: String): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
     

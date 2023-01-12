@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Alpha[T]]
     }
     
-    extension [Self <: Alpha[?], T /* <: hex | rgbaString | rgba | float */](x: Self & Alpha[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alpha[?], T /* <: hex | rgbaString | rgba | float */] (val x: Self & Alpha[T]) extends AnyVal {
       
       inline def setAlpha(value: Double | js.Array[Double]): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object anon {
       __obj.asInstanceOf[Index]
     }
     
-    extension [Self <: Index](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

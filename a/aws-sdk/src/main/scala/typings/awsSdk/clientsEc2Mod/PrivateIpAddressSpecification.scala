@@ -23,7 +23,8 @@ object PrivateIpAddressSpecification {
     __obj.asInstanceOf[PrivateIpAddressSpecification]
   }
   
-  extension [Self <: PrivateIpAddressSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivateIpAddressSpecification] (val x: Self) extends AnyVal {
     
     inline def setPrimary(value: Boolean): Self = StObject.set(x, "Primary", value.asInstanceOf[js.Any])
     

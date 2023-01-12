@@ -274,7 +274,8 @@ object mod {
       __obj.asInstanceOf[YouTubeEvent[T]]
     }
     
-    extension [Self <: YouTubeEvent[?], T](x: Self & YouTubeEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YouTubeEvent[?], T] (val x: Self & YouTubeEvent[T]) extends AnyVal {
       
       inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -382,7 +383,8 @@ object mod {
       __obj.asInstanceOf[YouTubeProps]
     }
     
-    extension [Self <: YouTubeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YouTubeProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

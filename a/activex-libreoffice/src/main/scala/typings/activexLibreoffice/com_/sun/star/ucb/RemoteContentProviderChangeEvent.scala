@@ -28,7 +28,8 @@ object RemoteContentProviderChangeEvent {
     __obj.asInstanceOf[RemoteContentProviderChangeEvent]
   }
   
-  extension [Self <: RemoteContentProviderChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteContentProviderChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setAction(value: RemoteContentProviderChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

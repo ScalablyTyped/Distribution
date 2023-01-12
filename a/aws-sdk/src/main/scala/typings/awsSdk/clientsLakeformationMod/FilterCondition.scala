@@ -28,7 +28,8 @@ object FilterCondition {
     __obj.asInstanceOf[FilterCondition]
   }
   
-  extension [Self <: FilterCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterCondition] (val x: Self) extends AnyVal {
     
     inline def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
     

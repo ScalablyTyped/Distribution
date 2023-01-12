@@ -28,7 +28,8 @@ object LoadEventArgumentsAsync {
     __obj.asInstanceOf[LoadEventArgumentsAsync]
   }
   
-  extension [Self <: LoadEventArgumentsAsync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadEventArgumentsAsync] (val x: Self) extends AnyVal {
     
     inline def setDisableAsyncTimeout(value: () => Unit): Self = StObject.set(x, "disableAsyncTimeout", js.Any.fromFunction0(value))
   }

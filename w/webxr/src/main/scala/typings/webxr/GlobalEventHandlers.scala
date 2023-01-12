@@ -21,7 +21,8 @@ object GlobalEventHandlers {
     __obj.asInstanceOf[GlobalEventHandlers]
   }
   
-  extension [Self <: GlobalEventHandlers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalEventHandlers] (val x: Self) extends AnyVal {
     
     inline def setOnbeforexrselect(value: js.ThisFunction1[GlobalEventHandlers, /* ev */ XRSessionEvent, Any]): Self = StObject.set(x, "onbeforexrselect", value.asInstanceOf[js.Any])
     

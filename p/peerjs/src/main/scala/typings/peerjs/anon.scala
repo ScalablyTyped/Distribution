@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Chrome]
     }
     
-    extension [Self <: Chrome](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chrome] (val x: Self) extends AnyVal {
       
       inline def setChrome(value: Double): Self = StObject.set(x, "Chrome", value.asInstanceOf[js.Any])
     }
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[Credential]
     }
     
-    extension [Self <: Credential](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credential] (val x: Self) extends AnyVal {
       
       inline def setCredential(value: Unit): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
       
@@ -68,7 +70,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: Blob): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -93,7 +96,8 @@ object anon {
       __obj.asInstanceOf[IceServers]
     }
     
-    extension [Self <: IceServers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IceServers] (val x: Self) extends AnyVal {
       
       inline def setIceServers(value: js.Array[Credential | Urls]): Self = StObject.set(x, "iceServers", value.asInstanceOf[js.Any])
       
@@ -118,7 +122,8 @@ object anon {
       __obj.asInstanceOf[Urls]
     }
     
-    extension [Self <: Urls](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Urls] (val x: Self) extends AnyVal {
       
       inline def setCredential(value: String): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
       

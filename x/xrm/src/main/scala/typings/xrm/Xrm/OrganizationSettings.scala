@@ -73,7 +73,8 @@ object OrganizationSettings {
     __obj.asInstanceOf[OrganizationSettings]
   }
   
-  extension [Self <: OrganizationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationSettings] (val x: Self) extends AnyVal {
     
     inline def setBaseCurrency(value: LookupValue): Self = StObject.set(x, "baseCurrency", value.asInstanceOf[js.Any])
     

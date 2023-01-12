@@ -18,7 +18,8 @@ object PartnerInitSuccessResponse {
     __obj.asInstanceOf[PartnerInitSuccessResponse]
   }
   
-  extension [Self <: PartnerInitSuccessResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartnerInitSuccessResponse] (val x: Self) extends AnyVal {
     
     inline def setForm(value: FormAction): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     

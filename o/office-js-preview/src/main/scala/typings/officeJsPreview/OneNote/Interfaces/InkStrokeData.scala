@@ -30,7 +30,8 @@ object InkStrokeData {
     __obj.asInstanceOf[InkStrokeData]
   }
   
-  extension [Self <: InkStrokeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InkStrokeData] (val x: Self) extends AnyVal {
     
     inline def setFloatingInk(value: FloatingInkData): Self = StObject.set(x, "floatingInk", value.asInstanceOf[js.Any])
     

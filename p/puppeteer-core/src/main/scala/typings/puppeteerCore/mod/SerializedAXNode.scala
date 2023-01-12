@@ -106,7 +106,8 @@ object SerializedAXNode {
     __obj.asInstanceOf[SerializedAXNode]
   }
   
-  extension [Self <: SerializedAXNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerializedAXNode] (val x: Self) extends AnyVal {
     
     inline def setAutocomplete(value: String): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
     

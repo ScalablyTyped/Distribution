@@ -25,7 +25,8 @@ object SelectionCollectionSettings {
     __obj.asInstanceOf[SelectionCollectionSettings]
   }
   
-  extension [Self <: SelectionCollectionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionCollectionSettings] (val x: Self) extends AnyVal {
     
     inline def setMultipleSelection(value: Boolean): Self = StObject.set(x, "multipleSelection", value.asInstanceOf[js.Any])
     

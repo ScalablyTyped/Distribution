@@ -118,7 +118,8 @@ object EventSourceRefined {
     __obj.asInstanceOf[EventSourceRefined]
   }
   
-  extension [Self <: EventSourceRefined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventSourceRefined] (val x: Self) extends AnyVal {
     
     inline def setAllow(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @fullcalendar/common.@fullcalendar/common.Identity<@fullcalendar/common.@fullcalendar/common.AllowFunc> extends (input : any): infer RefinedType ? RefinedType : never */ js.Any

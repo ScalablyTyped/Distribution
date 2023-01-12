@@ -44,7 +44,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ReplaceEntries]
     }
     
-    extension [Self <: ReplaceEntries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplaceEntries] (val x: Self) extends AnyVal {
       
       inline def setMultiple(value: js.Array[ReplaceEntry]): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ReplaceEntry]
     }
     
-    extension [Self <: ReplaceEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplaceEntry] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       

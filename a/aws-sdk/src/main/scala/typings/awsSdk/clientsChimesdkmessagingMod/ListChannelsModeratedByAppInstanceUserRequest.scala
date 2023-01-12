@@ -33,7 +33,8 @@ object ListChannelsModeratedByAppInstanceUserRequest {
     __obj.asInstanceOf[ListChannelsModeratedByAppInstanceUserRequest]
   }
   
-  extension [Self <: ListChannelsModeratedByAppInstanceUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListChannelsModeratedByAppInstanceUserRequest] (val x: Self) extends AnyVal {
     
     inline def setAppInstanceUserArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceUserArn", value.asInstanceOf[js.Any])
     

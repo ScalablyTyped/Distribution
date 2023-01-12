@@ -18,7 +18,8 @@ object UpdateSAMLProviderResponse {
     __obj.asInstanceOf[UpdateSAMLProviderResponse]
   }
   
-  extension [Self <: UpdateSAMLProviderResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSAMLProviderResponse] (val x: Self) extends AnyVal {
     
     inline def setSAMLProviderArn(value: arnType): Self = StObject.set(x, "SAMLProviderArn", value.asInstanceOf[js.Any])
     

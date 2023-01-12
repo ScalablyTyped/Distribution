@@ -68,7 +68,8 @@ object CLEAN {
     __obj.asInstanceOf[CLEAN]
   }
   
-  extension [Self <: CLEAN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CLEAN] (val x: Self) extends AnyVal {
     
     inline def setCLEAN(value: Method): Self = StObject.set(x, "CLEAN", value.asInstanceOf[js.Any])
     

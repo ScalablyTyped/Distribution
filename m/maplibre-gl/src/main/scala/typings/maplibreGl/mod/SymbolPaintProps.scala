@@ -72,7 +72,8 @@ object SymbolPaintProps {
     __obj.asInstanceOf[SymbolPaintProps]
   }
   
-  extension [Self <: SymbolPaintProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolPaintProps] (val x: Self) extends AnyVal {
     
     inline def `setIcon-color`(value: DataDrivenProperty[Color]): Self = StObject.set(x, "icon-color", value.asInstanceOf[js.Any])
     

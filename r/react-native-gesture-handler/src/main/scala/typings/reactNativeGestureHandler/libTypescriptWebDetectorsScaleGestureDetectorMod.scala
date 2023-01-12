@@ -141,7 +141,8 @@ object libTypescriptWebDetectorsScaleGestureDetectorMod {
       __obj.asInstanceOf[ScaleGestureDetector]
     }
     
-    extension [Self <: ScaleGestureDetector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScaleGestureDetector] (val x: Self) extends AnyVal {
       
       inline def setCurrentSpan(value: Any): Self = StObject.set(x, "currentSpan", value.asInstanceOf[js.Any])
       
@@ -198,7 +199,8 @@ object libTypescriptWebDetectorsScaleGestureDetectorMod {
       __obj.asInstanceOf[ScaleGestureListener]
     }
     
-    extension [Self <: ScaleGestureListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScaleGestureListener] (val x: Self) extends AnyVal {
       
       inline def setOnScale(value: ScaleGestureDetector => Boolean): Self = StObject.set(x, "onScale", js.Any.fromFunction1(value))
       

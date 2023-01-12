@@ -27,7 +27,8 @@ object EnumSymbolBody_ {
     __obj.asInstanceOf[EnumSymbolBody_]
   }
   
-  extension [Self <: EnumSymbolBody_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumSymbolBody_] (val x: Self) extends AnyVal {
     
     inline def setHasUnknownMembers(value: Boolean): Self = StObject.set(x, "hasUnknownMembers", value.asInstanceOf[js.Any])
     

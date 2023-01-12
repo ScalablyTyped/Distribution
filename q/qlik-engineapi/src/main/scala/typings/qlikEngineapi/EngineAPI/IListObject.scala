@@ -57,7 +57,8 @@ object IListObject {
     __obj.asInstanceOf[IListObject]
   }
   
-  extension [Self <: IListObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IListObject] (val x: Self) extends AnyVal {
     
     inline def setQDataPages(value: js.Array[INxDataPage]): Self = StObject.set(x, "qDataPages", value.asInstanceOf[js.Any])
     

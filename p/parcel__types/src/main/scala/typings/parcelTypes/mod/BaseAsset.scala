@@ -126,7 +126,8 @@ object BaseAsset {
     __obj.asInstanceOf[BaseAsset]
   }
   
-  extension [Self <: BaseAsset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseAsset] (val x: Self) extends AnyVal {
     
     inline def setAstGenerator(value: ASTGenerator): Self = StObject.set(x, "astGenerator", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object DataPlanUsage {
     __obj.asInstanceOf[DataPlanUsage]
   }
   
-  extension [Self <: DataPlanUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPlanUsage] (val x: Self) extends AnyVal {
     
     inline def setLastSyncTime(value: js.Date): Self = StObject.set(x, "lastSyncTime", value.asInstanceOf[js.Any])
     

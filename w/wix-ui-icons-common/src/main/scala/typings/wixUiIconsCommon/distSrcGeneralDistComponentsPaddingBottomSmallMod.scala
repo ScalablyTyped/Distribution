@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsPaddingBottomSmallMod extends Shortcut {
       __obj.asInstanceOf[PaddingBottomSmallProps]
     }
     
-    extension [Self <: PaddingBottomSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaddingBottomSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

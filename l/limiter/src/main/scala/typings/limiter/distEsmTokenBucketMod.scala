@@ -78,7 +78,8 @@ object distEsmTokenBucketMod {
       __obj.asInstanceOf[TokenBucketOpts]
     }
     
-    extension [Self <: TokenBucketOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenBucketOpts] (val x: Self) extends AnyVal {
       
       inline def setBucketSize(value: Double): Self = StObject.set(x, "bucketSize", value.asInstanceOf[js.Any])
       

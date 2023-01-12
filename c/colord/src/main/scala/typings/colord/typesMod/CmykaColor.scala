@@ -26,7 +26,8 @@ object CmykaColor {
     __obj.asInstanceOf[CmykaColor]
   }
   
-  extension [Self <: CmykaColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CmykaColor] (val x: Self) extends AnyVal {
     
     inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

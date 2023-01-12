@@ -28,7 +28,8 @@ object SubscribeWithGoogleInfo {
     __obj.asInstanceOf[SubscribeWithGoogleInfo]
   }
   
-  extension [Self <: SubscribeWithGoogleInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscribeWithGoogleInfo] (val x: Self) extends AnyVal {
     
     inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     

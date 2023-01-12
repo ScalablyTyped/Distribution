@@ -23,7 +23,8 @@ object ClusterSecurityGroupMessage {
     __obj.asInstanceOf[ClusterSecurityGroupMessage]
   }
   
-  extension [Self <: ClusterSecurityGroupMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterSecurityGroupMessage] (val x: Self) extends AnyVal {
     
     inline def setClusterSecurityGroups(value: ClusterSecurityGroups): Self = StObject.set(x, "ClusterSecurityGroups", value.asInstanceOf[js.Any])
     

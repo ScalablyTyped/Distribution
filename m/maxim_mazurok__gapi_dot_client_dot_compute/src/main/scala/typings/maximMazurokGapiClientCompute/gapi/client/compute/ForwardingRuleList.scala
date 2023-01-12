@@ -35,7 +35,8 @@ object ForwardingRuleList {
     __obj.asInstanceOf[ForwardingRuleList]
   }
   
-  extension [Self <: ForwardingRuleList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForwardingRuleList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

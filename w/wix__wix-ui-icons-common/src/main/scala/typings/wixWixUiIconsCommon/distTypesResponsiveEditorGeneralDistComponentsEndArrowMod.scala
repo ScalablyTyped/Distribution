@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsEndArrowMod extends Shortcu
       __obj.asInstanceOf[EndArrowProps]
     }
     
-    extension [Self <: EndArrowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndArrowProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

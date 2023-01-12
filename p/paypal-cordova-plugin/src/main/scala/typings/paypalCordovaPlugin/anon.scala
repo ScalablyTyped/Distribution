@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Authorizationid]
     }
     
-    extension [Self <: Authorizationid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Authorizationid] (val x: Self) extends AnyVal {
       
       inline def setAuthorization_id(value: String): Self = StObject.set(x, "authorization_id", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }

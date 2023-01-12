@@ -40,7 +40,8 @@ object typesLookupDeveloperIdentityOutputMod {
       __obj.asInstanceOf[LookupDeveloperIdentityOutput]
     }
     
-    extension [Self <: LookupDeveloperIdentityOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LookupDeveloperIdentityOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

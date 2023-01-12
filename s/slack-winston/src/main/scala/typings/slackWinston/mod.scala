@@ -78,7 +78,8 @@ object mod {
       __obj.asInstanceOf[SlackTransportOptions]
     }
     
-    extension [Self <: SlackTransportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlackTransportOptions] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object mod {
       __obj.asInstanceOf[TransformableInfo]
     }
     
-    extension [Self <: TransformableInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformableInfo] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       

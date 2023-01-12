@@ -23,7 +23,8 @@ object CalculateRouteCarModeOptions {
     __obj.asInstanceOf[CalculateRouteCarModeOptions]
   }
   
-  extension [Self <: CalculateRouteCarModeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalculateRouteCarModeOptions] (val x: Self) extends AnyVal {
     
     inline def setAvoidFerries(value: Boolean): Self = StObject.set(x, "AvoidFerries", value.asInstanceOf[js.Any])
     

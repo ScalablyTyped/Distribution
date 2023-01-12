@@ -158,7 +158,8 @@ object PivotGrid {
       __obj.asInstanceOf[AfterServiceInvokeEventArgs]
     }
     
-    extension [Self <: AfterServiceInvokeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AfterServiceInvokeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -191,7 +192,8 @@ object PivotGrid {
       __obj.asInstanceOf[BeforeExportEventArgs]
     }
     
-    extension [Self <: BeforeExportEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeExportEventArgs] (val x: Self) extends AnyVal {
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
@@ -216,7 +218,8 @@ object PivotGrid {
       __obj.asInstanceOf[BeforePivotEnginePopulateEventArgs]
     }
     
-    extension [Self <: BeforePivotEnginePopulateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforePivotEnginePopulateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setPivotGridObject(value: Any): Self = StObject.set(x, "pivotGridObject", value.asInstanceOf[js.Any])
       
@@ -245,7 +248,8 @@ object PivotGrid {
       __obj.asInstanceOf[BeforeServiceInvokeEventArgs]
     }
     
-    extension [Self <: BeforeServiceInvokeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeServiceInvokeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -282,7 +286,8 @@ object PivotGrid {
       __obj.asInstanceOf[CellClickEventArgs]
     }
     
-    extension [Self <: CellClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
@@ -337,7 +342,8 @@ object PivotGrid {
       __obj.asInstanceOf[CellContextEventArgs]
     }
     
-    extension [Self <: CellContextEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellContextEventArgs] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -390,7 +396,8 @@ object PivotGrid {
       __obj.asInstanceOf[CellDoubleClickEventArgs]
     }
     
-    extension [Self <: CellDoubleClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellDoubleClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
@@ -421,7 +428,8 @@ object PivotGrid {
       __obj.asInstanceOf[CellEditEventArgs]
     }
     
-    extension [Self <: CellEditEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellEditEventArgs] (val x: Self) extends AnyVal {
       
       inline def setEditCellsInfo(value: js.Array[Any]): Self = StObject.set(x, "editCellsInfo", value.asInstanceOf[js.Any])
       
@@ -456,7 +464,8 @@ object PivotGrid {
       __obj.asInstanceOf[CellSelectionEventArgs]
     }
     
-    extension [Self <: CellSelectionEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellSelectionEventArgs] (val x: Self) extends AnyVal {
       
       inline def setColumnheader(value: Any): Self = StObject.set(x, "columnheader", value.asInstanceOf[js.Any])
       
@@ -497,7 +506,8 @@ object PivotGrid {
       __obj.asInstanceOf[ColumnHeaderHyperlinkClickEventArgs]
     }
     
-    extension [Self <: ColumnHeaderHyperlinkClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnHeaderHyperlinkClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -581,7 +591,8 @@ object PivotGrid {
       __obj.asInstanceOf[DataSource]
     }
     
-    extension [Self <: DataSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSource] (val x: Self) extends AnyVal {
       
       inline def setCatalog(value: String): Self = StObject.set(x, "catalog", value.asInstanceOf[js.Any])
       
@@ -704,7 +715,8 @@ object PivotGrid {
       __obj.asInstanceOf[DataSourceColumn]
     }
     
-    extension [Self <: DataSourceColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceColumn] (val x: Self) extends AnyVal {
       
       inline def setAdvancedFilter(value: js.Array[DataSourceColumnsAdvancedFilter]): Self = StObject.set(x, "advancedFilter", value.asInstanceOf[js.Any])
       
@@ -795,7 +807,8 @@ object PivotGrid {
       __obj.asInstanceOf[DataSourceColumnsAdvancedFilter]
     }
     
-    extension [Self <: DataSourceColumnsAdvancedFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceColumnsAdvancedFilter] (val x: Self) extends AnyVal {
       
       inline def setAdvancedFilterType(value: String): Self = StObject.set(x, "advancedFilterType", value.asInstanceOf[js.Any])
       
@@ -844,7 +857,8 @@ object PivotGrid {
       __obj.asInstanceOf[DataSourceColumnsFilterItems]
     }
     
-    extension [Self <: DataSourceColumnsFilterItems](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceColumnsFilterItems] (val x: Self) extends AnyVal {
       
       inline def setFilterType(value: FilterType | String): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
       
@@ -880,7 +894,8 @@ object PivotGrid {
       __obj.asInstanceOf[DataSourceFilter]
     }
     
-    extension [Self <: DataSourceFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceFilter] (val x: Self) extends AnyVal {
       
       inline def setFieldCaption(value: String): Self = StObject.set(x, "fieldCaption", value.asInstanceOf[js.Any])
       
@@ -915,7 +930,8 @@ object PivotGrid {
       __obj.asInstanceOf[DataSourceFiltersFilterItems]
     }
     
-    extension [Self <: DataSourceFiltersFilterItems](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceFiltersFilterItems] (val x: Self) extends AnyVal {
       
       inline def setFilterType(value: FilterType | String): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
       
@@ -958,7 +974,8 @@ object PivotGrid {
       __obj.asInstanceOf[DataSourcePagerOptions]
     }
     
-    extension [Self <: DataSourcePagerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourcePagerOptions] (val x: Self) extends AnyVal {
       
       inline def setCategoricalCurrentPage(value: Double): Self = StObject.set(x, "categoricalCurrentPage", value.asInstanceOf[js.Any])
       
@@ -1041,7 +1058,8 @@ object PivotGrid {
       __obj.asInstanceOf[DataSourceRow]
     }
     
-    extension [Self <: DataSourceRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceRow] (val x: Self) extends AnyVal {
       
       inline def setAdvancedFilter(value: js.Array[DataSourceRowsAdvancedFilter]): Self = StObject.set(x, "advancedFilter", value.asInstanceOf[js.Any])
       
@@ -1132,7 +1150,8 @@ object PivotGrid {
       __obj.asInstanceOf[DataSourceRowsAdvancedFilter]
     }
     
-    extension [Self <: DataSourceRowsAdvancedFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceRowsAdvancedFilter] (val x: Self) extends AnyVal {
       
       inline def setAdvancedFilterType(value: String): Self = StObject.set(x, "advancedFilterType", value.asInstanceOf[js.Any])
       
@@ -1181,7 +1200,8 @@ object PivotGrid {
       __obj.asInstanceOf[DataSourceRowsFilterItems]
     }
     
-    extension [Self <: DataSourceRowsFilterItems](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceRowsFilterItems] (val x: Self) extends AnyVal {
       
       inline def setFilterType(value: FilterType | String): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
       
@@ -1248,7 +1268,8 @@ object PivotGrid {
       __obj.asInstanceOf[DataSourceValue]
     }
     
-    extension [Self <: DataSourceValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceValue] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -1307,7 +1328,8 @@ object PivotGrid {
       __obj.asInstanceOf[DataSourceValuesMeasure]
     }
     
-    extension [Self <: DataSourceValuesMeasure](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceValuesMeasure] (val x: Self) extends AnyVal {
       
       inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
       
@@ -1328,7 +1350,8 @@ object PivotGrid {
       __obj.asInstanceOf[DrillSuccessEventArgs]
     }
     
-    extension [Self <: DrillSuccessEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrillSuccessEventArgs] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -1353,7 +1376,8 @@ object PivotGrid {
       __obj.asInstanceOf[DrillThroughEventArgs]
     }
     
-    extension [Self <: DrillThroughEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrillThroughEventArgs] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -1394,7 +1418,8 @@ object PivotGrid {
       __obj.asInstanceOf[FrozenHeaderSettings]
     }
     
-    extension [Self <: FrozenHeaderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrozenHeaderSettings] (val x: Self) extends AnyVal {
       
       inline def setEnableFrozenColumnHeaders(value: Boolean): Self = StObject.set(x, "enableFrozenColumnHeaders", value.asInstanceOf[js.Any])
       
@@ -1433,7 +1458,8 @@ object PivotGrid {
       __obj.asInstanceOf[HeaderSettings]
     }
     
-    extension [Self <: HeaderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderSettings] (val x: Self) extends AnyVal {
       
       inline def setShowColumnItems(value: Boolean): Self = StObject.set(x, "showColumnItems", value.asInstanceOf[js.Any])
       
@@ -1474,7 +1500,8 @@ object PivotGrid {
       __obj.asInstanceOf[HyperlinkSettings]
     }
     
-    extension [Self <: HyperlinkSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HyperlinkSettings] (val x: Self) extends AnyVal {
       
       inline def setEnableColumnHeaderHyperlink(value: Boolean): Self = StObject.set(x, "enableColumnHeaderHyperlink", value.asInstanceOf[js.Any])
       
@@ -1511,7 +1538,8 @@ object PivotGrid {
       __obj.asInstanceOf[LoadEventArgs]
     }
     
-    extension [Self <: LoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
@@ -1540,7 +1568,8 @@ object PivotGrid {
       __obj.asInstanceOf[LoadReportEventArgs]
     }
     
-    extension [Self <: LoadReportEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadReportEventArgs] (val x: Self) extends AnyVal {
       
       inline def setDataModel(value: String): Self = StObject.set(x, "dataModel", value.asInstanceOf[js.Any])
       
@@ -1884,7 +1913,8 @@ object PivotGrid {
       __obj.asInstanceOf[typings.ejWebAll.ej.PivotGrid.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.PivotGrid.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.PivotGrid.Model] (val x: Self) extends AnyVal {
       
       inline def setAfterServiceInvoke(value: /* e */ AfterServiceInvokeEventArgs => Unit): Self = StObject.set(x, "afterServiceInvoke", js.Any.fromFunction1(value))
       
@@ -2185,7 +2215,8 @@ object PivotGrid {
       __obj.asInstanceOf[RenderCompleteEventArgs]
     }
     
-    extension [Self <: RenderCompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderCompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -2226,7 +2257,8 @@ object PivotGrid {
       __obj.asInstanceOf[RenderFailureEventArgs]
     }
     
-    extension [Self <: RenderFailureEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderFailureEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -2267,7 +2299,8 @@ object PivotGrid {
       __obj.asInstanceOf[RenderSuccessEventArgs]
     }
     
-    extension [Self <: RenderSuccessEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderSuccessEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -2304,7 +2337,8 @@ object PivotGrid {
       __obj.asInstanceOf[RowHeaderHyperlinkClickEventArgs]
     }
     
-    extension [Self <: RowHeaderHyperlinkClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowHeaderHyperlinkClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -2333,7 +2367,8 @@ object PivotGrid {
       __obj.asInstanceOf[SaveReportEventArgs]
     }
     
-    extension [Self <: SaveReportEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SaveReportEventArgs] (val x: Self) extends AnyVal {
       
       inline def setReport(value: Any): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
       
@@ -2450,7 +2485,8 @@ object PivotGrid {
       __obj.asInstanceOf[ServiceMethodSettings]
     }
     
-    extension [Self <: ServiceMethodSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceMethodSettings] (val x: Self) extends AnyVal {
       
       inline def setCalculatedField(value: String): Self = StObject.set(x, "calculatedField", value.asInstanceOf[js.Any])
       
@@ -2555,7 +2591,8 @@ object PivotGrid {
       __obj.asInstanceOf[SummaryCellHyperlinkClickEventArgs]
     }
     
-    extension [Self <: SummaryCellHyperlinkClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SummaryCellHyperlinkClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -2592,7 +2629,8 @@ object PivotGrid {
       __obj.asInstanceOf[ValueCellHyperlinkClickEventArgs]
     }
     
-    extension [Self <: ValueCellHyperlinkClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueCellHyperlinkClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -2630,7 +2668,8 @@ object PivotGrid {
       __obj.asInstanceOf[ValueSortSettings]
     }
     
-    extension [Self <: ValueSortSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueSortSettings] (val x: Self) extends AnyVal {
       
       inline def setHeaderDelimiters(value: String): Self = StObject.set(x, "headerDelimiters", value.asInstanceOf[js.Any])
       

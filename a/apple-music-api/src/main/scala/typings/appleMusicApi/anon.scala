@@ -82,7 +82,8 @@ object anon {
       __obj.asInstanceOf[AlbumName]
     }
     
-    extension [Self <: AlbumName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlbumName] (val x: Self) extends AnyVal {
       
       inline def setAlbumName(value: String): Self = StObject.set(x, "albumName", value.asInstanceOf[js.Any])
       
@@ -208,7 +209,8 @@ object anon {
       __obj.asInstanceOf[ArtistName]
     }
     
-    extension [Self <: ArtistName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArtistName] (val x: Self) extends AnyVal {
       
       inline def setAlbumName(value: String): Self = StObject.set(x, "albumName", value.asInstanceOf[js.Any])
       
@@ -293,7 +295,8 @@ object anon {
       __obj.asInstanceOf[Artwork]
     }
     
-    extension [Self <: Artwork](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Artwork] (val x: Self) extends AnyVal {
       
       inline def setArtwork(value: typings.appleMusicApi.AppleMusicApi.Artwork): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
       
@@ -338,7 +341,8 @@ object anon {
       __obj.asInstanceOf[Curator]
     }
     
-    extension [Self <: Curator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Curator] (val x: Self) extends AnyVal {
       
       inline def setCurator(value: Relationship[typings.appleMusicApi.AppleMusicApi.Curator]): Self = StObject.set(x, "curator", value.asInstanceOf[js.Any])
       
@@ -359,7 +363,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: Station): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -382,7 +387,8 @@ object anon {
       __obj.asInstanceOf[EditorialNotes]
     }
     
-    extension [Self <: EditorialNotes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorialNotes] (val x: Self) extends AnyVal {
       
       inline def setEditorialNotes(value: typings.appleMusicApi.AppleMusicApi.EditorialNotes): Self = StObject.set(x, "editorialNotes", value.asInstanceOf[js.Any])
       
@@ -409,7 +415,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -426,7 +433,8 @@ object anon {
       __obj.asInstanceOf[Playlists]
     }
     
-    extension [Self <: Playlists](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Playlists] (val x: Self) extends AnyVal {
       
       inline def setPlaylists(value: Relationship[Playlist]): Self = StObject.set(x, "playlists", value.asInstanceOf[js.Any])
       
@@ -451,7 +459,8 @@ object anon {
       __obj.asInstanceOf[Url]
     }
     
-    extension [Self <: Url](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
       
       inline def setArtwork(value: typings.appleMusicApi.AppleMusicApi.Artwork): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
       

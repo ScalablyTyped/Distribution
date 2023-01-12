@@ -37,7 +37,8 @@ object TriggerBy {
     __obj.asInstanceOf[TriggerBy]
   }
   
-  extension [Self <: TriggerBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TriggerBy] (val x: Self) extends AnyVal {
     
     inline def setConverterPriority(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PriorityString */ Any) | Double

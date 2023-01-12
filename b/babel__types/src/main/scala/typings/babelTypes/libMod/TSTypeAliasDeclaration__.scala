@@ -32,7 +32,8 @@ object TSTypeAliasDeclaration__ {
     __obj.asInstanceOf[TSTypeAliasDeclaration__]
   }
   
-  extension [Self <: TSTypeAliasDeclaration__](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSTypeAliasDeclaration__] (val x: Self) extends AnyVal {
     
     inline def setDeclare(value: Boolean): Self = StObject.set(x, "declare", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object GitPullRequestIterationChanges {
     __obj.asInstanceOf[GitPullRequestIterationChanges]
   }
   
-  extension [Self <: GitPullRequestIterationChanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitPullRequestIterationChanges] (val x: Self) extends AnyVal {
     
     inline def setChangeEntries(value: js.Array[GitPullRequestChange]): Self = StObject.set(x, "changeEntries", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[BabylonOptions]
     }
     
-    extension [Self <: BabylonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BabylonOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowImportExportEverywhere(value: Boolean): Self = StObject.set(x, "allowImportExportEverywhere", value.asInstanceOf[js.Any])
       

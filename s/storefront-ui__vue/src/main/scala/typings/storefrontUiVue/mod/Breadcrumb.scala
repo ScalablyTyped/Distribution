@@ -17,7 +17,8 @@ object Breadcrumb {
     __obj.asInstanceOf[Breadcrumb]
   }
   
-  extension [Self <: Breadcrumb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Breadcrumb] (val x: Self) extends AnyVal {
     
     inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     

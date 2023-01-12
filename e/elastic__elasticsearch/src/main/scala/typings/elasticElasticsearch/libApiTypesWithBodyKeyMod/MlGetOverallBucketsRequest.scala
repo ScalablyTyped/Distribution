@@ -21,7 +21,8 @@ object MlGetOverallBucketsRequest {
     __obj.asInstanceOf[MlGetOverallBucketsRequest]
   }
   
-  extension [Self <: MlGetOverallBucketsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlGetOverallBucketsRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Bucketspan): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

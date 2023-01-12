@@ -97,7 +97,8 @@ object ContentStyle {
     __obj.asInstanceOf[ContentStyle]
   }
   
-  extension [Self <: ContentStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentStyle] (val x: Self) extends AnyVal {
     
     inline def setActions(
       value: js.Array[

@@ -217,7 +217,8 @@ object anon {
       __obj.asInstanceOf[ToFileOptionsPartialWithU]
     }
     
-    extension [Self <: ToFileOptionsPartialWithU](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToFileOptionsPartialWithU] (val x: Self) extends AnyVal {
       
       inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
       

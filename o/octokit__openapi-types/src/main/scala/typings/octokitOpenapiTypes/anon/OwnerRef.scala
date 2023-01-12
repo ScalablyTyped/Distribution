@@ -25,7 +25,8 @@ object OwnerRef {
     __obj.asInstanceOf[OwnerRef]
   }
   
-  extension [Self <: OwnerRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OwnerRef] (val x: Self) extends AnyVal {
     
     inline def setOwner(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any

@@ -22,7 +22,8 @@ object AttrsBatchToSpaceNDAttrs {
     __obj.asInstanceOf[AttrsBatchToSpaceNDAttrs]
   }
   
-  extension [Self <: AttrsBatchToSpaceNDAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsBatchToSpaceNDAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: BatchToSpaceNDAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

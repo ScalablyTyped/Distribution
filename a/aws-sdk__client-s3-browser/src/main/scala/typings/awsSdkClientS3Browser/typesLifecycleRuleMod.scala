@@ -78,7 +78,8 @@ object typesLifecycleRuleMod {
       __obj.asInstanceOf[LifecycleRule]
     }
     
-    extension [Self <: LifecycleRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LifecycleRule] (val x: Self) extends AnyVal {
       
       inline def setAbortIncompleteMultipartUpload(value: AbortIncompleteMultipartUpload): Self = StObject.set(x, "AbortIncompleteMultipartUpload", value.asInstanceOf[js.Any])
       
@@ -167,7 +168,8 @@ object typesLifecycleRuleMod {
       __obj.asInstanceOf[UnmarshalledLifecycleRule]
     }
     
-    extension [Self <: UnmarshalledLifecycleRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledLifecycleRule] (val x: Self) extends AnyVal {
       
       inline def setAbortIncompleteMultipartUpload(value: UnmarshalledAbortIncompleteMultipartUpload): Self = StObject.set(x, "AbortIncompleteMultipartUpload", value.asInstanceOf[js.Any])
       

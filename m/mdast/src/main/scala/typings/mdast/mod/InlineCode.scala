@@ -20,7 +20,8 @@ object InlineCode {
     __obj.asInstanceOf[InlineCode]
   }
   
-  extension [Self <: InlineCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineCode] (val x: Self) extends AnyVal {
     
     inline def setType(value: inlineCode): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

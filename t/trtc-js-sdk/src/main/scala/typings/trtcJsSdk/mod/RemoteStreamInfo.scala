@@ -15,7 +15,8 @@ object RemoteStreamInfo {
     __obj.asInstanceOf[RemoteStreamInfo]
   }
   
-  extension [Self <: RemoteStreamInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteStreamInfo] (val x: Self) extends AnyVal {
     
     inline def setStream(value: RemoteStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
   }

@@ -15,7 +15,8 @@ object TypeofPriceData {
     __obj.asInstanceOf[TypeofPriceData]
   }
   
-  extension [Self <: TypeofPriceData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPriceData] (val x: Self) extends AnyVal {
     
     inline def setRecurring(value: Any): Self = StObject.set(x, "Recurring", value.asInstanceOf[js.Any])
   }

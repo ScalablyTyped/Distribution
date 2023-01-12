@@ -21,7 +21,8 @@ object MaskPosition {
     __obj.asInstanceOf[MaskPosition]
   }
   
-  extension [Self <: MaskPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaskPosition] (val x: Self) extends AnyVal {
     
     inline def setPoint(value: String): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     

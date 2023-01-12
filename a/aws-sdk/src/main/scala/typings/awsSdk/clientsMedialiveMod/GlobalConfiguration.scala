@@ -45,7 +45,8 @@ object GlobalConfiguration {
     __obj.asInstanceOf[GlobalConfiguration]
   }
   
-  extension [Self <: GlobalConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalConfiguration] (val x: Self) extends AnyVal {
     
     inline def setInitialAudioGain(value: integerMinNegative60Max60): Self = StObject.set(x, "InitialAudioGain", value.asInstanceOf[js.Any])
     

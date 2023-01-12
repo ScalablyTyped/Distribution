@@ -18,7 +18,8 @@ object FpgaDeviceMemoryInfo {
     __obj.asInstanceOf[FpgaDeviceMemoryInfo]
   }
   
-  extension [Self <: FpgaDeviceMemoryInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FpgaDeviceMemoryInfo] (val x: Self) extends AnyVal {
     
     inline def setSizeInMiB(value: FpgaDeviceMemorySize): Self = StObject.set(x, "SizeInMiB", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ModifyPrivateDnsNameOptionsRequest {
     __obj.asInstanceOf[ModifyPrivateDnsNameOptionsRequest]
   }
   
-  extension [Self <: ModifyPrivateDnsNameOptionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyPrivateDnsNameOptionsRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

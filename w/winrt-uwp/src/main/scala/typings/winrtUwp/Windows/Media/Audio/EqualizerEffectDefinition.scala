@@ -25,7 +25,8 @@ object EqualizerEffectDefinition {
     __obj.asInstanceOf[EqualizerEffectDefinition]
   }
   
-  extension [Self <: EqualizerEffectDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EqualizerEffectDefinition] (val x: Self) extends AnyVal {
     
     inline def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
     

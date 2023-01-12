@@ -29,7 +29,8 @@ object HasPopin {
     __obj.asInstanceOf[HasPopin]
   }
   
-  extension [Self <: HasPopin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasPopin] (val x: Self) extends AnyVal {
     
     inline def setHasPopin(value: Boolean): Self = StObject.set(x, "hasPopin", value.asInstanceOf[js.Any])
     

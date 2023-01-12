@@ -65,7 +65,8 @@ object JoinTableDataSource {
     __obj.asInstanceOf[JoinTableDataSource]
   }
   
-  extension [Self <: JoinTableDataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JoinTableDataSource] (val x: Self) extends AnyVal {
     
     inline def setJoinType(value: `left-outer-join` | `left-inner-join`): Self = StObject.set(x, "joinType", value.asInstanceOf[js.Any])
     

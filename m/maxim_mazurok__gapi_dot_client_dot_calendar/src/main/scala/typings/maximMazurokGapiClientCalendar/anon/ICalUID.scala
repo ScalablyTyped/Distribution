@@ -137,7 +137,8 @@ object ICalUID {
     __obj.asInstanceOf[ICalUID]
   }
   
-  extension [Self <: ICalUID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICalUID] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

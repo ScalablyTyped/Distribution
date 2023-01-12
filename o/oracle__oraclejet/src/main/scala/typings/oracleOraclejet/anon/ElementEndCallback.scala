@@ -25,7 +25,8 @@ object ElementEndCallback {
     __obj.asInstanceOf[ElementEndCallback]
   }
   
-  extension [Self <: ElementEndCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementEndCallback] (val x: Self) extends AnyVal {
     
     inline def setAction(value: add | remove | update): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

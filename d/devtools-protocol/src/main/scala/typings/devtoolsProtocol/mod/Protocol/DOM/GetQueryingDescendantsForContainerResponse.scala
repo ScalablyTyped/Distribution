@@ -18,7 +18,8 @@ object GetQueryingDescendantsForContainerResponse {
     __obj.asInstanceOf[GetQueryingDescendantsForContainerResponse]
   }
   
-  extension [Self <: GetQueryingDescendantsForContainerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetQueryingDescendantsForContainerResponse] (val x: Self) extends AnyVal {
     
     inline def setNodeIds(value: js.Array[NodeId]): Self = StObject.set(x, "nodeIds", value.asInstanceOf[js.Any])
     

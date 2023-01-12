@@ -1108,7 +1108,8 @@ object modulesFullScreenMod {
         __obj.asInstanceOf[Chart]
       }
       
-      extension [Self <: Chart](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Chart] (val x: Self) extends AnyVal {
         
         inline def setFullscreen(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Fullscreen */ Any

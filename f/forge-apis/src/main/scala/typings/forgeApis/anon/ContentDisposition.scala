@@ -17,7 +17,8 @@ object ContentDisposition {
     __obj.asInstanceOf[ContentDisposition]
   }
   
-  extension [Self <: ContentDisposition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentDisposition] (val x: Self) extends AnyVal {
     
     inline def setContentDisposition(value: String): Self = StObject.set(x, "contentDisposition", value.asInstanceOf[js.Any])
     

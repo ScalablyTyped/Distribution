@@ -16,7 +16,8 @@ object IapCredential {
     __obj.asInstanceOf[IapCredential]
   }
   
-  extension [Self <: IapCredential](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IapCredential] (val x: Self) extends AnyVal {
     
     inline def setIapTestServiceAccountInfo(value: IapTestServiceAccountInfo): Self = StObject.set(x, "iapTestServiceAccountInfo", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object IGossipConsensusMessage {
     __obj.asInstanceOf[IGossipConsensusMessage]
   }
   
-  extension [Self <: IGossipConsensusMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGossipConsensusMessage] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: js.typedarray.Uint8Array): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

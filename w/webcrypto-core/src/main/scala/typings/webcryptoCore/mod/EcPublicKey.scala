@@ -18,7 +18,8 @@ object EcPublicKey {
     __obj.asInstanceOf[EcPublicKey]
   }
   
-  extension [Self <: EcPublicKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EcPublicKey] (val x: Self) extends AnyVal {
     
     inline def setValue(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

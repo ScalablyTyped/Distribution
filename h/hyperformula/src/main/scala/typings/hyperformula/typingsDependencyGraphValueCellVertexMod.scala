@@ -44,7 +44,8 @@ object typingsDependencyGraphValueCellVertexMod {
       __obj.asInstanceOf[RawAndParsedValue]
     }
     
-    extension [Self <: RawAndParsedValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawAndParsedValue] (val x: Self) extends AnyVal {
       
       inline def setParsedValue(value: ValueCellVertexValue): Self = StObject.set(x, "parsedValue", value.asInstanceOf[js.Any])
       

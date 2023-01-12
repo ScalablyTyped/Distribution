@@ -146,7 +146,8 @@ object libAceMod {
       __obj.asInstanceOf[IAceEditorProps]
     }
     
-    extension [Self <: IAceEditorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAceEditorProps] (val x: Self) extends AnyVal {
       
       inline def setAnnotations(value: js.Array[Annotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       

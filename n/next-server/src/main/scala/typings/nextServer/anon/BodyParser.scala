@@ -20,7 +20,8 @@ object BodyParser {
     __obj.asInstanceOf[BodyParser]
   }
   
-  extension [Self <: BodyParser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BodyParser] (val x: Self) extends AnyVal {
     
     inline def setBodyParser(value: SizeLimit | `false`): Self = StObject.set(x, "bodyParser", value.asInstanceOf[js.Any])
     

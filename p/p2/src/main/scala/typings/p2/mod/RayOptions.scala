@@ -31,7 +31,8 @@ object RayOptions {
     __obj.asInstanceOf[RayOptions]
   }
   
-  extension [Self <: RayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RayOptions] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: /* result */ RaycastResult => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     

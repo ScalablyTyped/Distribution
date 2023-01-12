@@ -15,7 +15,8 @@ object ScatterNdAttrs {
     __obj.asInstanceOf[ScatterNdAttrs]
   }
   
-  extension [Self <: ScatterNdAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScatterNdAttrs] (val x: Self) extends AnyVal {
     
     inline def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     

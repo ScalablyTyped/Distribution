@@ -23,7 +23,8 @@ object PartialMechanism {
     __obj.asInstanceOf[PartialMechanism]
   }
   
-  extension [Self <: PartialMechanism](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMechanism] (val x: Self) extends AnyVal {
     
     inline def setData(value: StringDictionary[String | Boolean]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object FlexItemLayout {
     __obj.asInstanceOf[FlexItemLayout]
   }
   
-  extension [Self <: FlexItemLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexItemLayout] (val x: Self) extends AnyVal {
     
     inline def setCSSStyles(value: CssStyles): Self = StObject.set(x, "CSSStyles", value.asInstanceOf[js.Any])
     

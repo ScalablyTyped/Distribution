@@ -24,7 +24,8 @@ object ConsumeMethodOpts {
     __obj.asInstanceOf[ConsumeMethodOpts]
   }
   
-  extension [Self <: ConsumeMethodOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsumeMethodOpts] (val x: Self) extends AnyVal {
     
     inline def setERR_MSG(value: String): Self = StObject.set(x, "ERR_MSG", value.asInstanceOf[js.Any])
     

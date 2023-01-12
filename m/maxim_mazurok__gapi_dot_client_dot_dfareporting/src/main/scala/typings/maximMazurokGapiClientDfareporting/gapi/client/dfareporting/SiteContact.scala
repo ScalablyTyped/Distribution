@@ -37,7 +37,8 @@ object SiteContact {
     __obj.asInstanceOf[SiteContact]
   }
   
-  extension [Self <: SiteContact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SiteContact] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

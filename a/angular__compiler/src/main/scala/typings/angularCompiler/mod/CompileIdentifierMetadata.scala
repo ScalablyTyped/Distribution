@@ -15,7 +15,8 @@ object CompileIdentifierMetadata {
     __obj.asInstanceOf[CompileIdentifierMetadata]
   }
   
-  extension [Self <: CompileIdentifierMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompileIdentifierMetadata] (val x: Self) extends AnyVal {
     
     inline def setReference(value: Any): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
   }

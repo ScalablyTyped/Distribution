@@ -58,7 +58,8 @@ object autoScrollPluginMod {
       __obj.asInstanceOf[AutoScrollOptions]
     }
     
-    extension [Self <: AutoScrollOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoScrollOptions] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: Window | HTMLElement | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object autoScrollPluginMod {
         __obj.asInstanceOf[Interaction]
       }
       
-      extension [Self <: Interaction](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Interaction] (val x: Self) extends AnyVal {
         
         inline def setAutoScroll(value: Check): Self = StObject.set(x, "autoScroll", value.asInstanceOf[js.Any])
         
@@ -123,7 +125,8 @@ object autoScrollPluginMod {
         __obj.asInstanceOf[PerActionDefaults]
       }
       
-      extension [Self <: PerActionDefaults](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PerActionDefaults] (val x: Self) extends AnyVal {
         
         inline def setAutoScroll(value: AutoScrollOptions): Self = StObject.set(x, "autoScroll", value.asInstanceOf[js.Any])
         
@@ -146,7 +149,8 @@ object autoScrollPluginMod {
         __obj.asInstanceOf[Scope]
       }
       
-      extension [Self <: Scope](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
         
         inline def setAutoScroll(value: Check): Self = StObject.set(x, "autoScroll", value.asInstanceOf[js.Any])
       }

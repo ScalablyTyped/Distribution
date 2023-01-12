@@ -27,7 +27,8 @@ object distSrcOnStageSystemDistComponentsDoubleChevronLeftLargeMod extends Short
       __obj.asInstanceOf[DoubleChevronLeftLargeProps]
     }
     
-    extension [Self <: DoubleChevronLeftLargeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoubleChevronLeftLargeProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

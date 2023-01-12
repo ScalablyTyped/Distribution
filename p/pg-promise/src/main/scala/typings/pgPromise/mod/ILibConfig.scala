@@ -50,7 +50,8 @@ object ILibConfig {
     __obj.asInstanceOf[ILibConfig[Ext, C]]
   }
   
-  extension [Self <: ILibConfig[?, ?], Ext, C /* <: IClient */](x: Self & (ILibConfig[Ext, C])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILibConfig[?, ?], Ext, C /* <: IClient */] (val x: Self & (ILibConfig[Ext, C])) extends AnyVal {
     
     inline def set$npm(value: Any): Self = StObject.set(x, "$npm", value.asInstanceOf[js.Any])
     

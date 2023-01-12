@@ -38,7 +38,8 @@ object SendDataPoint {
     __obj.asInstanceOf[SendDataPoint]
   }
   
-  extension [Self <: SendDataPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendDataPoint] (val x: Self) extends AnyVal {
     
     inline def setBounces(value: Counter): Self = StObject.set(x, "Bounces", value.asInstanceOf[js.Any])
     

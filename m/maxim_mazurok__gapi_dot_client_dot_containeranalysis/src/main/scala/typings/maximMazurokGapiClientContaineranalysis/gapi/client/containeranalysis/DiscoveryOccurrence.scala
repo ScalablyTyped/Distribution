@@ -36,7 +36,8 @@ object DiscoveryOccurrence {
     __obj.asInstanceOf[DiscoveryOccurrence]
   }
   
-  extension [Self <: DiscoveryOccurrence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiscoveryOccurrence] (val x: Self) extends AnyVal {
     
     inline def setAnalysisCompleted(value: AnalysisCompleted): Self = StObject.set(x, "analysisCompleted", value.asInstanceOf[js.Any])
     

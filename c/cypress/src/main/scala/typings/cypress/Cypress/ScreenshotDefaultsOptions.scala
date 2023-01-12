@@ -34,7 +34,8 @@ object ScreenshotDefaultsOptions {
     __obj.asInstanceOf[ScreenshotDefaultsOptions]
   }
   
-  extension [Self <: ScreenshotDefaultsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScreenshotDefaultsOptions] (val x: Self) extends AnyVal {
     
     inline def setScreenshotOnRunFailure(value: Boolean): Self = StObject.set(x, "screenshotOnRunFailure", value.asInstanceOf[js.Any])
   }

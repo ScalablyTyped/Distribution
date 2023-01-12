@@ -20,7 +20,8 @@ object TaskCommandAction {
     __obj.asInstanceOf[TaskCommandAction]
   }
   
-  extension [Self <: TaskCommandAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskCommandAction] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

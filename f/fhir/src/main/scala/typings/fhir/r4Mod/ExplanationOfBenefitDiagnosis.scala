@@ -45,7 +45,8 @@ object ExplanationOfBenefitDiagnosis {
     __obj.asInstanceOf[ExplanationOfBenefitDiagnosis]
   }
   
-  extension [Self <: ExplanationOfBenefitDiagnosis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExplanationOfBenefitDiagnosis] (val x: Self) extends AnyVal {
     
     inline def setDiagnosisCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "diagnosisCodeableConcept", value.asInstanceOf[js.Any])
     

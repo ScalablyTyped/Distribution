@@ -65,7 +65,8 @@ object WebOptions {
     __obj.asInstanceOf[WebOptions]
   }
   
-  extension [Self <: WebOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowPNG(value: MsoTriState): Self = StObject.set(x, "AllowPNG", value.asInstanceOf[js.Any])
     

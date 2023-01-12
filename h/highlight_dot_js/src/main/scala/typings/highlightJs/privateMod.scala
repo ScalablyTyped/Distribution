@@ -29,7 +29,8 @@ object privateMod {
       __obj.asInstanceOf[AnnotatedError]
     }
     
-    extension [Self <: AnnotatedError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotatedError] (val x: Self) extends AnyVal {
       
       inline def setBadRule(value: Mode): Self = StObject.set(x, "badRule", value.asInstanceOf[js.Any])
       

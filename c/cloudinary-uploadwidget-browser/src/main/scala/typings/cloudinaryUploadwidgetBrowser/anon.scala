@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[All]
     }
     
-    extension [Self <: All](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: All] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object anon {
       __obj.asInstanceOf[Cancel]
     }
     
-    extension [Self <: Cancel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     }
@@ -72,7 +74,8 @@ object anon {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setFile(value: Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -93,7 +96,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -112,7 +116,8 @@ object anon {
       __obj.asInstanceOf[Items]
     }
     
-    extension [Self <: Items](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Items] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -133,7 +138,8 @@ object anon {
       __obj.asInstanceOf[Iv]
     }
     
-    extension [Self <: Iv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Iv] (val x: Self) extends AnyVal {
       
       inline def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
       
@@ -269,7 +275,8 @@ object anon {
       __obj.asInstanceOf[PartialOmitCloudinaryUplo]
     }
     
-    extension [Self <: PartialOmitCloudinaryUplo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOmitCloudinaryUplo] (val x: Self) extends AnyVal {
       
       inline def setAutoMinimize(value: Boolean): Self = StObject.set(x, "autoMinimize", value.asInstanceOf[js.Any])
       
@@ -546,7 +553,8 @@ object anon {
       __obj.asInstanceOf[Quiet]
     }
     
-    extension [Self <: Quiet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Quiet] (val x: Self) extends AnyVal {
       
       inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
     }
@@ -563,7 +571,8 @@ object anon {
       __obj.asInstanceOf[Reason]
     }
     
-    extension [Self <: Reason](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reason] (val x: Self) extends AnyVal {
       
       inline def setReason(value: MAX_EXCEEDED | INVALID_PUBLIC_ID): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     }
@@ -580,7 +589,8 @@ object anon {
       __obj.asInstanceOf[RemoveThumbnails]
     }
     
-    extension [Self <: RemoveThumbnails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveThumbnails] (val x: Self) extends AnyVal {
       
       inline def setRemoveThumbnails(value: Boolean): Self = StObject.set(x, "removeThumbnails", value.asInstanceOf[js.Any])
     }
@@ -597,7 +607,8 @@ object anon {
       __obj.asInstanceOf[typings.cloudinaryUploadwidgetBrowser.anon.Source]
     }
     
-    extension [Self <: typings.cloudinaryUploadwidgetBrowser.anon.Source](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.cloudinaryUploadwidgetBrowser.anon.Source] (val x: Self) extends AnyVal {
       
       inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
@@ -614,7 +625,8 @@ object anon {
       __obj.asInstanceOf[Tags]
     }
     
-    extension [Self <: Tags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tags] (val x: Self) extends AnyVal {
       
       inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       

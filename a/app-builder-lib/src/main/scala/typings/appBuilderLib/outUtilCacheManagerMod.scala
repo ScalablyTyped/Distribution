@@ -59,7 +59,8 @@ object outUtilCacheManagerMod {
       __obj.asInstanceOf[BuildCacheInfo]
     }
     
-    extension [Self <: BuildCacheInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuildCacheInfo] (val x: Self) extends AnyVal {
       
       inline def setExecutableDigest(value: String): Self = StObject.set(x, "executableDigest", value.asInstanceOf[js.Any])
     }

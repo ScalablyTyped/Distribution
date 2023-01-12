@@ -19,7 +19,8 @@ object BlueGreenSettings {
     __obj.asInstanceOf[BlueGreenSettings]
   }
   
-  extension [Self <: BlueGreenSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlueGreenSettings] (val x: Self) extends AnyVal {
     
     inline def setNodePoolSoakDuration(value: String): Self = StObject.set(x, "nodePoolSoakDuration", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object ServiceInformation {
     __obj.asInstanceOf[ServiceInformation]
   }
   
-  extension [Self <: ServiceInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceInformation] (val x: Self) extends AnyVal {
     
     inline def setBuildBranch(value: String): Self = StObject.set(x, "buildBranch", value.asInstanceOf[js.Any])
     

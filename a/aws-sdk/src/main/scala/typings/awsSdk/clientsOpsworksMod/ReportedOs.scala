@@ -28,7 +28,8 @@ object ReportedOs {
     __obj.asInstanceOf[ReportedOs]
   }
   
-  extension [Self <: ReportedOs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportedOs] (val x: Self) extends AnyVal {
     
     inline def setFamily(value: String): Self = StObject.set(x, "Family", value.asInstanceOf[js.Any])
     

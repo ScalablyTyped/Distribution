@@ -65,7 +65,8 @@ object DomainAssociation {
     __obj.asInstanceOf[DomainAssociation]
   }
   
-  extension [Self <: DomainAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainAssociation] (val x: Self) extends AnyVal {
     
     inline def setAutoSubDomainCreationPatterns(value: AutoSubDomainCreationPatterns): Self = StObject.set(x, "autoSubDomainCreationPatterns", value.asInstanceOf[js.Any])
     

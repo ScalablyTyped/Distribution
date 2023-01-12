@@ -23,7 +23,8 @@ object Set {
     __obj.asInstanceOf[Set[TElement]]
   }
   
-  extension [Self <: Set[?], TElement](x: Self & Set[TElement]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Set[?], TElement] (val x: Self & Set[TElement]) extends AnyVal {
     
     inline def setSet(value: Tween[TElement] => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
   }

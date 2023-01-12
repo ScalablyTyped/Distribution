@@ -29,7 +29,8 @@ object Reminders {
     __obj.asInstanceOf[Reminders]
   }
   
-  extension [Self <: Reminders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reminders] (val x: Self) extends AnyVal {
     
     inline def setReminderDelay(value: String): Self = StObject.set(x, "reminderDelay", value.asInstanceOf[js.Any])
     

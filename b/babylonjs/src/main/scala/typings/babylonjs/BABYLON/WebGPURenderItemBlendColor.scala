@@ -18,7 +18,8 @@ object WebGPURenderItemBlendColor {
     __obj.asInstanceOf[WebGPURenderItemBlendColor]
   }
   
-  extension [Self <: WebGPURenderItemBlendColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGPURenderItemBlendColor] (val x: Self) extends AnyVal {
     
     inline def setColor(value: js.Array[Nullable[Double]]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

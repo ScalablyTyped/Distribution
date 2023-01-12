@@ -364,7 +364,8 @@ object mod {
           __obj.asInstanceOf[WorkboxOptions]
         }
         
-        extension [Self <: WorkboxOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: WorkboxOptions] (val x: Self) extends AnyVal {
           
           inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
           

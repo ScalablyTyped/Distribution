@@ -18,7 +18,8 @@ object DisassociateEntitiesFromExperienceResponse {
     __obj.asInstanceOf[DisassociateEntitiesFromExperienceResponse]
   }
   
-  extension [Self <: DisassociateEntitiesFromExperienceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateEntitiesFromExperienceResponse] (val x: Self) extends AnyVal {
     
     inline def setFailedEntityList(value: FailedEntityList): Self = StObject.set(x, "FailedEntityList", value.asInstanceOf[js.Any])
     

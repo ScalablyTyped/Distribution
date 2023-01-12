@@ -23,7 +23,8 @@ object CellAddress {
     __obj.asInstanceOf[CellAddress]
   }
   
-  extension [Self <: CellAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellAddress] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Double): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
     

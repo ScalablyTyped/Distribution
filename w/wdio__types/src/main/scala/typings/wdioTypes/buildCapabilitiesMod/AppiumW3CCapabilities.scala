@@ -146,7 +146,8 @@ object AppiumW3CCapabilities {
     __obj.asInstanceOf[AppiumW3CCapabilities]
   }
   
-  extension [Self <: AppiumW3CCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppiumW3CCapabilities] (val x: Self) extends AnyVal {
     
     inline def setAppiumColonapp(value: String): Self = StObject.set(x, "appium:app", value.asInstanceOf[js.Any])
     

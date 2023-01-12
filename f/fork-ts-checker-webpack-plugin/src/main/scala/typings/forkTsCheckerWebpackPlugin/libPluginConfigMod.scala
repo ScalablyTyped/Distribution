@@ -50,7 +50,8 @@ object libPluginConfigMod {
       __obj.asInstanceOf[ForkTsCheckerWebpackPluginConfig]
     }
     
-    extension [Self <: ForkTsCheckerWebpackPluginConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForkTsCheckerWebpackPluginConfig] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       

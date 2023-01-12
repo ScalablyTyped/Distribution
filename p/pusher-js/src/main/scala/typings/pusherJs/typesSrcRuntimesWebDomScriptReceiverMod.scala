@@ -23,7 +23,8 @@ object typesSrcRuntimesWebDomScriptReceiverMod {
       __obj.asInstanceOf[ScriptReceiver]
     }
     
-    extension [Self <: ScriptReceiver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScriptReceiver] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       

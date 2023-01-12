@@ -22,7 +22,8 @@ object UserDefinedFunctionResource {
     __obj.asInstanceOf[UserDefinedFunctionResource]
   }
   
-  extension [Self <: UserDefinedFunctionResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserDefinedFunctionResource] (val x: Self) extends AnyVal {
     
     inline def setInlineCode(value: String): Self = StObject.set(x, "inlineCode", value.asInstanceOf[js.Any])
     

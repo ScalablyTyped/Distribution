@@ -17,7 +17,8 @@ object PBC {
     __obj.asInstanceOf[PBC]
   }
   
-  extension [Self <: PBC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PBC] (val x: Self) extends AnyVal {
     
     inline def setPBC(value: typings.chromeApps.chromeAppsStrings.PBC): Self = StObject.set(x, "PBC", value.asInstanceOf[js.Any])
     

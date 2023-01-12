@@ -62,7 +62,8 @@ object AuthorizeUrlOptions {
     __obj.asInstanceOf[AuthorizeUrlOptions]
   }
   
-  extension [Self <: AuthorizeUrlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizeUrlOptions] (val x: Self) extends AnyVal {
     
     inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     

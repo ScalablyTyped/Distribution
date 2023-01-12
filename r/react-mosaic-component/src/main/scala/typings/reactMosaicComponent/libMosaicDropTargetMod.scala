@@ -27,7 +27,8 @@ object libMosaicDropTargetMod {
       __obj.asInstanceOf[MosaicDropTargetProps]
     }
     
-    extension [Self <: MosaicDropTargetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MosaicDropTargetProps] (val x: Self) extends AnyVal {
       
       inline def setPath(value: MosaicPath): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

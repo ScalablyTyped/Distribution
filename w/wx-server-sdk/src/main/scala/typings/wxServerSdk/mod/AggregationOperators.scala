@@ -50,7 +50,8 @@ object AggregationOperators {
     __obj.asInstanceOf[AggregationOperators]
   }
   
-  extension [Self <: AggregationOperators](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationOperators] (val x: Self) extends AnyVal {
     
     inline def setAbs(value: Double => Double): Self = StObject.set(x, "abs", js.Any.fromFunction1(value))
     

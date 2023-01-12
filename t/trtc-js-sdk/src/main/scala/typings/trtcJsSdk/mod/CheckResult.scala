@@ -19,7 +19,8 @@ object CheckResult {
     __obj.asInstanceOf[CheckResult]
   }
   
-  extension [Self <: CheckResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckResult] (val x: Self) extends AnyVal {
     
     inline def setDetail(value: IsBrowserSupported): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     

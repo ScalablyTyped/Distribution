@@ -20,7 +20,8 @@ object PlotNetworkgraphDataLabelsAnimationOptions {
     __obj.asInstanceOf[PlotNetworkgraphDataLabelsAnimationOptions]
   }
   
-  extension [Self <: PlotNetworkgraphDataLabelsAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotNetworkgraphDataLabelsAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     

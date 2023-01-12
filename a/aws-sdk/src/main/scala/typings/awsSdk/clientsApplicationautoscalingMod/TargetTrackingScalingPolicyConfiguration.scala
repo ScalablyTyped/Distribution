@@ -43,7 +43,8 @@ object TargetTrackingScalingPolicyConfiguration {
     __obj.asInstanceOf[TargetTrackingScalingPolicyConfiguration]
   }
   
-  extension [Self <: TargetTrackingScalingPolicyConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetTrackingScalingPolicyConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCustomizedMetricSpecification(value: CustomizedMetricSpecification): Self = StObject.set(x, "CustomizedMetricSpecification", value.asInstanceOf[js.Any])
     

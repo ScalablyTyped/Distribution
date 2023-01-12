@@ -43,7 +43,8 @@ object PickImplparseErrorPartial {
     __obj.asInstanceOf[PickImplparseErrorPartial]
   }
   
-  extension [Self <: PickImplparseErrorPartial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplparseErrorPartial] (val x: Self) extends AnyVal {
     
     inline def setBeforeSend(value: String): Self = StObject.set(x, "beforeSend", value.asInstanceOf[js.Any])
     

@@ -177,7 +177,8 @@ object libComponentsCoachmarkPositioningContainerPositioningContainerDottypesMod
       __obj.asInstanceOf[IPositioningContainerProps]
     }
     
-    extension [Self <: IPositioningContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPositioningContainerProps] (val x: Self) extends AnyVal {
       
       inline def setAriaDescribedBy(value: String): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
       

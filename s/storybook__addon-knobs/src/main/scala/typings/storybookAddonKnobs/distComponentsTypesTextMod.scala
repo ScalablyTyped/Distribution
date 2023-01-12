@@ -59,7 +59,8 @@ object distComponentsTypesTextMod {
       __obj.asInstanceOf[TextTypeKnob]
     }
     
-    extension [Self <: TextTypeKnob](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextTypeKnob] (val x: Self) extends AnyVal {
       
       inline def setValue(value: TextTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

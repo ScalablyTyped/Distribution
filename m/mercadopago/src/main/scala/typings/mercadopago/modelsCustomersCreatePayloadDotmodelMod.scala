@@ -51,7 +51,8 @@ object modelsCustomersCreatePayloadDotmodelMod {
       __obj.asInstanceOf[CreateCustomerPayload]
     }
     
-    extension [Self <: CreateCustomerPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateCustomerPayload] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: SimpleAddressId): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       

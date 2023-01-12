@@ -319,7 +319,8 @@ object IModel {
     __obj.asInstanceOf[IModel]
   }
   
-  extension [Self <: IModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IModel] (val x: Self) extends AnyVal {
     
     inline def setAssociations(value: Array): Self = StObject.set(x, "associations", value.asInstanceOf[js.Any])
     

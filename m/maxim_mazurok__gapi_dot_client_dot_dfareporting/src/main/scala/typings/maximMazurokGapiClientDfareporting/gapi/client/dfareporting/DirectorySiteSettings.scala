@@ -25,7 +25,8 @@ object DirectorySiteSettings {
     __obj.asInstanceOf[DirectorySiteSettings]
   }
   
-  extension [Self <: DirectorySiteSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectorySiteSettings] (val x: Self) extends AnyVal {
     
     inline def setActiveViewOptOut(value: Boolean): Self = StObject.set(x, "activeViewOptOut", value.asInstanceOf[js.Any])
     

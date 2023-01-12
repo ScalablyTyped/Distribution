@@ -19,7 +19,8 @@ object OnBLEConnectionStateChangedOptions {
     __obj.asInstanceOf[OnBLEConnectionStateChangedOptions]
   }
   
-  extension [Self <: OnBLEConnectionStateChangedOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnBLEConnectionStateChangedOptions] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: /* res */ Connected => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

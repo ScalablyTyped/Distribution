@@ -73,7 +73,8 @@ object RestoreDBClusterFromSnapshotMessage {
     __obj.asInstanceOf[RestoreDBClusterFromSnapshotMessage]
   }
   
-  extension [Self <: RestoreDBClusterFromSnapshotMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreDBClusterFromSnapshotMessage] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZones(value: AvailabilityZones): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     

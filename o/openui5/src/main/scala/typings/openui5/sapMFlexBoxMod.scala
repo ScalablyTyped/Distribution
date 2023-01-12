@@ -700,7 +700,8 @@ object sapMFlexBoxMod {
       __obj.asInstanceOf[FlexBoxSettings]
     }
     
-    extension [Self <: FlexBoxSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlexBoxSettings] (val x: Self) extends AnyVal {
       
       inline def setAlignContent(
         value: FlexAlignContent | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FlexAlignContent * / any */ String) | PropertyBindingInfo

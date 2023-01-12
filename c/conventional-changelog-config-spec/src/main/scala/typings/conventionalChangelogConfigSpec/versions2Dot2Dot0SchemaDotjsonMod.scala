@@ -114,7 +114,8 @@ object versions2Dot2Dot0SchemaDotjsonMod extends Shortcut {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setCommitUrlFormat(value: String): Self = StObject.set(x, "commitUrlFormat", value.asInstanceOf[js.Any])
       
@@ -200,7 +201,8 @@ object versions2Dot2Dot0SchemaDotjsonMod extends Shortcut {
           __obj.asInstanceOf[Base]
         }
         
-        extension [Self <: Base](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
           
           inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
           
@@ -240,7 +242,8 @@ object versions2Dot2Dot0SchemaDotjsonMod extends Shortcut {
           __obj.asInstanceOf[WithHidden]
         }
         
-        extension [Self <: WithHidden](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: WithHidden] (val x: Self) extends AnyVal {
           
           inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
         }
@@ -268,7 +271,8 @@ object versions2Dot2Dot0SchemaDotjsonMod extends Shortcut {
           __obj.asInstanceOf[WithSection]
         }
         
-        extension [Self <: WithSection](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: WithSection] (val x: Self) extends AnyVal {
           
           inline def setSection(value: String): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
         }

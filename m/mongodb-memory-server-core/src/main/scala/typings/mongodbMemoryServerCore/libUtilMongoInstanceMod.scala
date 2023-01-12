@@ -316,7 +316,8 @@ object libUtilMongoInstanceMod {
       __obj.asInstanceOf[MongoMemoryInstanceOpts]
     }
     
-    extension [Self <: MongoMemoryInstanceOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MongoMemoryInstanceOpts] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: Boolean): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -385,7 +386,8 @@ object libUtilMongoInstanceMod {
       __obj.asInstanceOf[MongoMemoryInstanceOptsBase]
     }
     
-    extension [Self <: MongoMemoryInstanceOptsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MongoMemoryInstanceOptsBase] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -429,7 +431,8 @@ object libUtilMongoInstanceMod {
       __obj.asInstanceOf[MongodOpts]
     }
     
-    extension [Self <: MongodOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MongodOpts] (val x: Self) extends AnyVal {
       
       inline def setBinary(value: MongoBinaryOpts): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
@@ -505,7 +508,8 @@ object libUtilMongoInstanceMod {
       __obj.asInstanceOf[ReplicaMemberConfig]
     }
     
-    extension [Self <: ReplicaMemberConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplicaMemberConfig] (val x: Self) extends AnyVal {
       
       inline def setArbiterOnly(value: Boolean): Self = StObject.set(x, "arbiterOnly", value.asInstanceOf[js.Any])
       

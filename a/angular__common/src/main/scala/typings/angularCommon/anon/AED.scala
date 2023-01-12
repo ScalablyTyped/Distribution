@@ -167,7 +167,8 @@ object AED {
     __obj.asInstanceOf[AED]
   }
   
-  extension [Self <: AED](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AED] (val x: Self) extends AnyVal {
     
     inline def setAED(value: js.Array[String]): Self = StObject.set(x, "AED", value.asInstanceOf[js.Any])
     

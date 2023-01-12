@@ -46,7 +46,8 @@ object UpdateAction {
     __obj.asInstanceOf[UpdateAction]
   }
   
-  extension [Self <: UpdateAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAction] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

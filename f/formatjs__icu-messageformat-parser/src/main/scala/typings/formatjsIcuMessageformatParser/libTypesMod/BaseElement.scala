@@ -20,7 +20,8 @@ object BaseElement {
     __obj.asInstanceOf[BaseElement[T]]
   }
   
-  extension [Self <: BaseElement[?], T /* <: TYPE */](x: Self & BaseElement[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseElement[?], T /* <: TYPE */] (val x: Self & BaseElement[T]) extends AnyVal {
     
     inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

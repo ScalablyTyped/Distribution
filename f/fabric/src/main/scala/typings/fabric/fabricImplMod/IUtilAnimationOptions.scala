@@ -51,7 +51,8 @@ object IUtilAnimationOptions {
     __obj.asInstanceOf[IUtilAnimationOptions]
   }
   
-  extension [Self <: IUtilAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUtilAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setByValue(value: Double): Self = StObject.set(x, "byValue", value.asInstanceOf[js.Any])
     

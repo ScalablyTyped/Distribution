@@ -28,7 +28,8 @@ object StreamEvent {
     __obj.asInstanceOf[StreamEvent]
   }
   
-  extension [Self <: StreamEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamEvent] (val x: Self) extends AnyVal {
     
     inline def setEventTime(value: js.Date): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsFullWidthSliderMod extends Short
       __obj.asInstanceOf[FullWidthSliderProps]
     }
     
-    extension [Self <: FullWidthSliderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullWidthSliderProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

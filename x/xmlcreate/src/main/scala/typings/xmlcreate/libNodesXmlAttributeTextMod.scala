@@ -34,7 +34,8 @@ object libNodesXmlAttributeTextMod {
       __obj.asInstanceOf[IXmlAttributeTextOptions]
     }
     
-    extension [Self <: IXmlAttributeTextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IXmlAttributeTextOptions] (val x: Self) extends AnyVal {
       
       inline def setCharData(value: String): Self = StObject.set(x, "charData", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object ASPxClientIndicator {
     __obj.asInstanceOf[ASPxClientIndicator]
   }
   
-  extension [Self <: ASPxClientIndicator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientIndicator] (val x: Self) extends AnyVal {
     
     inline def setSeries(value: ASPxClientSeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
   }

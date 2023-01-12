@@ -23,7 +23,8 @@ object GroupMetadata {
     __obj.asInstanceOf[GroupMetadata]
   }
   
-  extension [Self <: GroupMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupMetadata] (val x: Self) extends AnyVal {
     
     inline def setId(value: IdType): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

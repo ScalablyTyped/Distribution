@@ -54,7 +54,8 @@ object ToastContainerProps {
     __obj.asInstanceOf[ToastContainerProps]
   }
   
-  extension [Self <: ToastContainerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToastContainerProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: ToastClassName): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

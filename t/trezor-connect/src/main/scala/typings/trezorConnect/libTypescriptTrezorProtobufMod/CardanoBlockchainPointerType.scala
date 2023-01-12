@@ -19,7 +19,8 @@ object CardanoBlockchainPointerType {
     __obj.asInstanceOf[CardanoBlockchainPointerType]
   }
   
-  extension [Self <: CardanoBlockchainPointerType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoBlockchainPointerType] (val x: Self) extends AnyVal {
     
     inline def setBlock_index(value: Double): Self = StObject.set(x, "block_index", value.asInstanceOf[js.Any])
     

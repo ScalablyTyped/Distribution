@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[IOpenAPISecurityHandler]
     }
     
-    extension [Self <: IOpenAPISecurityHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOpenAPISecurityHandler] (val x: Self) extends AnyVal {
       
       inline def setHandle(value: Request => js.Promise[Unit]): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
     }
@@ -64,7 +65,8 @@ object mod {
       __obj.asInstanceOf[OpenAPISecurityHandler]
     }
     
-    extension [Self <: OpenAPISecurityHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPISecurityHandler] (val x: Self) extends AnyVal {
       
       inline def setHandle(value: Any => js.Promise[Unit]): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
       
@@ -100,7 +102,8 @@ object mod {
       __obj.asInstanceOf[OpenAPISecurityHandlerArgs]
     }
     
-    extension [Self <: OpenAPISecurityHandlerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPISecurityHandlerArgs] (val x: Self) extends AnyVal {
       
       inline def setLoggingKey(value: String): Self = StObject.set(x, "loggingKey", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object Polyline {
     __obj.asInstanceOf[Polyline]
   }
   
-  extension [Self <: Polyline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Polyline] (val x: Self) extends AnyVal {
     
     inline def setPaths(value: js.Array[js.Array[Position]]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     

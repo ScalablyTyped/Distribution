@@ -25,7 +25,8 @@ object BindingDelta {
     __obj.asInstanceOf[BindingDelta]
   }
   
-  extension [Self <: BindingDelta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindingDelta] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

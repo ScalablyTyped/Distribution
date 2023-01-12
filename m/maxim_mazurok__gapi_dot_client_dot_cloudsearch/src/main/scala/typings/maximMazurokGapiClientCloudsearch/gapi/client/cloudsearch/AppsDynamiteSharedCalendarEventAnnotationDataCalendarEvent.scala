@@ -25,7 +25,8 @@ object AppsDynamiteSharedCalendarEventAnnotationDataCalendarEvent {
     __obj.asInstanceOf[AppsDynamiteSharedCalendarEventAnnotationDataCalendarEvent]
   }
   
-  extension [Self <: AppsDynamiteSharedCalendarEventAnnotationDataCalendarEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedCalendarEventAnnotationDataCalendarEvent] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: AppsDynamiteSharedCalendarEventAnnotationDataCalendarEventTime): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

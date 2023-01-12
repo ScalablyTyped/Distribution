@@ -37,7 +37,8 @@ object Issue {
     __obj.asInstanceOf[Issue]
   }
   
-  extension [Self <: Issue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Issue] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object ActionsCell {
     __obj.asInstanceOf[ActionsCell]
   }
   
-  extension [Self <: ActionsCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionsCell] (val x: Self) extends AnyVal {
     
     inline def setActionsCell(value: String): Self = StObject.set(x, "actionsCell", value.asInstanceOf[js.Any])
     

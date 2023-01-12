@@ -39,7 +39,8 @@ object BaseAttribute {
     __obj.asInstanceOf[BaseAttribute[T]]
   }
   
-  extension [Self <: BaseAttribute[?], T](x: Self & BaseAttribute[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseAttribute[?], T] (val x: Self & BaseAttribute[T]) extends AnyVal {
     
     inline def setAllowNull(value: Boolean): Self = StObject.set(x, "allowNull", value.asInstanceOf[js.Any])
     

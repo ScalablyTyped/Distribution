@@ -23,7 +23,8 @@ object InferenceS3InputConfiguration {
     __obj.asInstanceOf[InferenceS3InputConfiguration]
   }
   
-  extension [Self <: InferenceS3InputConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferenceS3InputConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: S3Bucket): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

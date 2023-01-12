@@ -17,7 +17,8 @@ object PrintUsageByPrinter {
     __obj.asInstanceOf[PrintUsageByPrinter]
   }
   
-  extension [Self <: PrintUsageByPrinter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintUsageByPrinter] (val x: Self) extends AnyVal {
     
     inline def setPrinterId(value: String): Self = StObject.set(x, "printerId", value.asInstanceOf[js.Any])
     

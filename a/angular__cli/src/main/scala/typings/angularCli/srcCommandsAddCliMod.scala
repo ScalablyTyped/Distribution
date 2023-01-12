@@ -55,7 +55,8 @@ object srcCommandsAddCliMod {
       __obj.asInstanceOf[AddCommandArgs]
     }
     
-    extension [Self <: AddCommandArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddCommandArgs] (val x: Self) extends AnyVal {
       
       inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       

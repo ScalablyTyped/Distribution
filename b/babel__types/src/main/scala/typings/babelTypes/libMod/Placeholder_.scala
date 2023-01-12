@@ -33,7 +33,8 @@ object Placeholder_ {
     __obj.asInstanceOf[Placeholder_]
   }
   
-  extension [Self <: Placeholder_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Placeholder_] (val x: Self) extends AnyVal {
     
     inline def setExpectedNode(
       value: Identifier | StringLiteral | typings.babelTypes.babelTypesStrings.Expression | typings.babelTypes.babelTypesStrings.Statement | typings.babelTypes.babelTypesStrings.Declaration | BlockStatement | ClassBody | typings.babelTypes.babelTypesStrings.Pattern

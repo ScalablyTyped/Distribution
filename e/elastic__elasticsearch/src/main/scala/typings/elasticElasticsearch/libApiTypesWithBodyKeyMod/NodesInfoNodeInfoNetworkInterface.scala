@@ -19,7 +19,8 @@ object NodesInfoNodeInfoNetworkInterface {
     __obj.asInstanceOf[NodesInfoNodeInfoNetworkInterface]
   }
   
-  extension [Self <: NodesInfoNodeInfoNetworkInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoNetworkInterface] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object typesLatestSrcPoliciesKeepAlivePolicyMod {
       __obj.asInstanceOf[KeepAliveOptions]
     }
     
-    extension [Self <: KeepAliveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeepAliveOptions] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     }

@@ -42,7 +42,8 @@ object GenerateEmbedUrlForRegisteredUserRequest {
     __obj.asInstanceOf[GenerateEmbedUrlForRegisteredUserRequest]
   }
   
-  extension [Self <: GenerateEmbedUrlForRegisteredUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateEmbedUrlForRegisteredUserRequest] (val x: Self) extends AnyVal {
     
     inline def setAllowedDomains(value: StringList): Self = StObject.set(x, "AllowedDomains", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object PickResolvedIntlConfigonE {
     __obj.asInstanceOf[PickResolvedIntlConfigonE]
   }
   
-  extension [Self <: PickResolvedIntlConfigonE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickResolvedIntlConfigonE] (val x: Self) extends AnyVal {
     
     inline def setDefaultFormats(value: CustomFormats): Self = StObject.set(x, "defaultFormats", value.asInstanceOf[js.Any])
     

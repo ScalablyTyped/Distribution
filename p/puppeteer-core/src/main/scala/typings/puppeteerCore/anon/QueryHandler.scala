@@ -18,7 +18,8 @@ object QueryHandler {
     __obj.asInstanceOf[QueryHandler]
   }
   
-  extension [Self <: QueryHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryHandler] (val x: Self) extends AnyVal {
     
     inline def setQueryHandler(value: PuppeteerQueryHandler): Self = StObject.set(x, "queryHandler", value.asInstanceOf[js.Any])
     

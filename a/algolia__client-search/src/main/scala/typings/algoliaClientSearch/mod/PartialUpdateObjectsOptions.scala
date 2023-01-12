@@ -18,7 +18,8 @@ object PartialUpdateObjectsOptions {
     __obj.asInstanceOf[PartialUpdateObjectsOptions]
   }
   
-  extension [Self <: PartialUpdateObjectsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialUpdateObjectsOptions] (val x: Self) extends AnyVal {
     
     inline def setCreateIfNotExists(value: Boolean): Self = StObject.set(x, "createIfNotExists", value.asInstanceOf[js.Any])
     

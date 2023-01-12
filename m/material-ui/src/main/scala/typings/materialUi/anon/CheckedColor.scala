@@ -29,7 +29,8 @@ object CheckedColor {
     __obj.asInstanceOf[CheckedColor]
   }
   
-  extension [Self <: CheckedColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckedColor] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

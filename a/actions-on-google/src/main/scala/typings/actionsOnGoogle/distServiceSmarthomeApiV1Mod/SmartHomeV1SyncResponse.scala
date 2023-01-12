@@ -19,7 +19,8 @@ object SmartHomeV1SyncResponse {
     __obj.asInstanceOf[SmartHomeV1SyncResponse]
   }
   
-  extension [Self <: SmartHomeV1SyncResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartHomeV1SyncResponse] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: SmartHomeV1SyncPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

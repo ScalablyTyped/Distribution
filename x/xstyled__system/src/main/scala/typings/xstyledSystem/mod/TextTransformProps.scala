@@ -16,7 +16,8 @@ object TextTransformProps {
     __obj.asInstanceOf[TextTransformProps]
   }
   
-  extension [Self <: TextTransformProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextTransformProps] (val x: Self) extends AnyVal {
     
     inline def setTextTransform(value: ResponsiveValue[TextTransform]): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
     

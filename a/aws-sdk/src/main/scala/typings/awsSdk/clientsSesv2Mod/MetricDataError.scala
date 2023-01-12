@@ -28,7 +28,8 @@ object MetricDataError {
     __obj.asInstanceOf[MetricDataError]
   }
   
-  extension [Self <: MetricDataError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricDataError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: QueryErrorCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

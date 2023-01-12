@@ -67,7 +67,8 @@ object Polyline {
     __obj.asInstanceOf[Polyline]
   }
   
-  extension [Self <: Polyline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Polyline] (val x: Self) extends AnyVal {
     
     inline def setGetGeneralizable(value: () => Boolean): Self = StObject.set(x, "getGeneralizable", js.Any.fromFunction0(value))
     

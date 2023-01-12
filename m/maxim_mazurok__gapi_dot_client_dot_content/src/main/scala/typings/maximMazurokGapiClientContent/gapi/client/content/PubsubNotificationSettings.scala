@@ -22,7 +22,8 @@ object PubsubNotificationSettings {
     __obj.asInstanceOf[PubsubNotificationSettings]
   }
   
-  extension [Self <: PubsubNotificationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PubsubNotificationSettings] (val x: Self) extends AnyVal {
     
     inline def setCloudTopicName(value: String): Self = StObject.set(x, "cloudTopicName", value.asInstanceOf[js.Any])
     

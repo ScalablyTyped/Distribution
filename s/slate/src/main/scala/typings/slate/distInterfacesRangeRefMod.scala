@@ -26,7 +26,8 @@ object distInterfacesRangeRefMod {
     @js.native
     val ^ : RangeRefInterface = js.native
     
-    extension [Self <: RangeRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeRef] (val x: Self) extends AnyVal {
       
       inline def setAffinity(value: forward | backward | outward | inward): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object distInterfacesRangeRefMod {
       __obj.asInstanceOf[RangeRefInterface]
     }
     
-    extension [Self <: RangeRefInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeRefInterface] (val x: Self) extends AnyVal {
       
       inline def setTransform(value: (RangeRef, Operation) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
     }

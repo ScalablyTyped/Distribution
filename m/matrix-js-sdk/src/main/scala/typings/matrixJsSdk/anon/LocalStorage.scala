@@ -15,7 +15,8 @@ object LocalStorage {
     __obj.asInstanceOf[LocalStorage]
   }
   
-  extension [Self <: LocalStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalStorage] (val x: Self) extends AnyVal {
     
     inline def setLocalStorage(value: Any): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
     

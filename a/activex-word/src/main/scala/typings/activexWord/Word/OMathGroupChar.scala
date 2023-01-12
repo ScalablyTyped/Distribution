@@ -40,7 +40,8 @@ object OMathGroupChar {
     __obj.asInstanceOf[OMathGroupChar]
   }
   
-  extension [Self <: OMathGroupChar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OMathGroupChar] (val x: Self) extends AnyVal {
     
     inline def setAlignTop(value: Boolean): Self = StObject.set(x, "AlignTop", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object UntrackedThenable {
     __obj.asInstanceOf[UntrackedThenable[T]]
   }
   
-  extension [Self <: UntrackedThenable[?], T](x: Self & UntrackedThenable[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UntrackedThenable[?], T] (val x: Self & UntrackedThenable[T]) extends AnyVal {
     
     inline def setStatus(value: Unit): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

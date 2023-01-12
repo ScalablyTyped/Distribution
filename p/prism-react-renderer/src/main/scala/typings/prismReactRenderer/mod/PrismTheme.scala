@@ -18,7 +18,8 @@ object PrismTheme {
     __obj.asInstanceOf[PrismTheme]
   }
   
-  extension [Self <: PrismTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrismTheme] (val x: Self) extends AnyVal {
     
     inline def setPlain(value: PrismThemeEntry): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
     

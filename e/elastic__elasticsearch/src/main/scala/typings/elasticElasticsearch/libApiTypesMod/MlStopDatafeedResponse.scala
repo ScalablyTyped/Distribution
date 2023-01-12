@@ -15,7 +15,8 @@ object MlStopDatafeedResponse {
     __obj.asInstanceOf[MlStopDatafeedResponse]
   }
   
-  extension [Self <: MlStopDatafeedResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlStopDatafeedResponse] (val x: Self) extends AnyVal {
     
     inline def setStopped(value: Boolean): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
   }

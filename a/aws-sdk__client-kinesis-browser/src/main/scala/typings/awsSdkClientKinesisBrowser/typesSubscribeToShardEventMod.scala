@@ -36,7 +36,8 @@ object typesSubscribeToShardEventMod {
       __obj.asInstanceOf[SubscribeToShardEvent]
     }
     
-    extension [Self <: SubscribeToShardEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscribeToShardEvent] (val x: Self) extends AnyVal {
       
       inline def setContinuationSequenceNumber(value: String): Self = StObject.set(x, "ContinuationSequenceNumber", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object typesSubscribeToShardEventMod {
       __obj.asInstanceOf[UnmarshalledSubscribeToShardEvent]
     }
     
-    extension [Self <: UnmarshalledSubscribeToShardEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSubscribeToShardEvent] (val x: Self) extends AnyVal {
       
       inline def setRecords(value: js.Array[UnmarshalledRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       

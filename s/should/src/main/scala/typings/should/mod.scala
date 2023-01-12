@@ -390,7 +390,8 @@ object mod {
         __obj.asInstanceOf[Object]
       }
       
-      extension [Self <: Object](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Object] (val x: Self) extends AnyVal {
         
         inline def setShould(value: Assertion): Self = StObject.set(x, "should", value.asInstanceOf[js.Any])
       }

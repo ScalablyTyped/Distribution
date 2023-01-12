@@ -48,7 +48,8 @@ object Leg {
     __obj.asInstanceOf[Leg]
   }
   
-  extension [Self <: Leg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Leg] (val x: Self) extends AnyVal {
     
     inline def setAnnotation(value: js.Array[DirectionsAnnotation]): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     

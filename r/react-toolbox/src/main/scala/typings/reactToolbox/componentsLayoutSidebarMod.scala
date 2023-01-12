@@ -67,7 +67,8 @@ object componentsLayoutSidebarMod {
       __obj.asInstanceOf[SidebarProps]
     }
     
-    extension [Self <: SidebarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SidebarProps] (val x: Self) extends AnyVal {
       
       inline def setClipped(value: Boolean): Self = StObject.set(x, "clipped", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object componentsLayoutSidebarMod {
       __obj.asInstanceOf[SidebarTheme]
     }
     
-    extension [Self <: SidebarTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SidebarTheme] (val x: Self) extends AnyVal {
       
       inline def setClipped(value: String): Self = StObject.set(x, "clipped", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object OrderedListElementProperties {
     __obj.asInstanceOf[OrderedListElementProperties]
   }
   
-  extension [Self <: OrderedListElementProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderedListElementProperties] (val x: Self) extends AnyVal {
     
     inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
     

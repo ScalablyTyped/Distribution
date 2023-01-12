@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[styleConfig]
     }
     
-    extension [Self <: styleConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: styleConfig] (val x: Self) extends AnyVal {
       
       inline def setHeadingStyle(value: underline | linebreak | hashify): Self = StObject.set(x, "headingStyle", value.asInstanceOf[js.Any])
       

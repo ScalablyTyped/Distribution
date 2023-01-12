@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[RecordPlatformNameFileOpt]
     }
     
-    extension [Self <: RecordPlatformNameFileOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordPlatformNameFileOpt] (val x: Self) extends AnyVal {
       
       inline def setAndroid(value: FileOptions): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object anon {
       __obj.asInstanceOf[RecordPlatformNameIconOpt]
     }
     
-    extension [Self <: RecordPlatformNameIconOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordPlatformNameIconOpt] (val x: Self) extends AnyVal {
       
       inline def setAndroid(value: IconOptions | Boolean | js.Array[String]): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       

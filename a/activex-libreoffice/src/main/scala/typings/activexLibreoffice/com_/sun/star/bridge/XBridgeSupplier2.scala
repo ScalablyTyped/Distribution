@@ -65,7 +65,8 @@ object XBridgeSupplier2 {
     __obj.asInstanceOf[XBridgeSupplier2]
   }
   
-  extension [Self <: XBridgeSupplier2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XBridgeSupplier2] (val x: Self) extends AnyVal {
     
     inline def setCreateBridge(value: (Any, SeqEquiv[Double], Double, Double) => Any): Self = StObject.set(x, "createBridge", js.Any.fromFunction4(value))
   }

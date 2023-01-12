@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[DynamoDBTransportOptions]
     }
     
-    extension [Self <: DynamoDBTransportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamoDBTransportOptions] (val x: Self) extends AnyVal {
       
       inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
       
@@ -107,7 +108,8 @@ object mod {
         __obj.asInstanceOf[Transports]
       }
       
-      extension [Self <: Transports](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Transports] (val x: Self) extends AnyVal {
         
         inline def setDynamoDB(value: DynamoDB): Self = StObject.set(x, "DynamoDB", value.asInstanceOf[js.Any])
       }

@@ -86,7 +86,8 @@ object PageData {
     __obj.asInstanceOf[PageData]
   }
   
-  extension [Self <: PageData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageData] (val x: Self) extends AnyVal {
     
     inline def setAllShapes(value: js.Array[ShapeData]): Self = StObject.set(x, "allShapes", value.asInstanceOf[js.Any])
     

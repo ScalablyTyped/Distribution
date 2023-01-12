@@ -47,7 +47,8 @@ object ServiceNowConfiguration {
     __obj.asInstanceOf[ServiceNowConfiguration]
   }
   
-  extension [Self <: ServiceNowConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceNowConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationType(value: ServiceNowAuthenticationType): Self = StObject.set(x, "AuthenticationType", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object IdentityResolutionJob {
     __obj.asInstanceOf[IdentityResolutionJob]
   }
   
-  extension [Self <: IdentityResolutionJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityResolutionJob] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: name): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

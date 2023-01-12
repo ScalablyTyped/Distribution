@@ -35,7 +35,8 @@ object ReadSyncError {
     __obj.asInstanceOf[ReadSyncError]
   }
   
-  extension [Self <: ReadSyncError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadSyncError] (val x: Self) extends AnyVal {
     
     inline def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     

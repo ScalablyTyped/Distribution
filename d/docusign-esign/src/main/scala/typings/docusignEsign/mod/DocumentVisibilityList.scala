@@ -22,7 +22,8 @@ object DocumentVisibilityList {
     __obj.asInstanceOf[DocumentVisibilityList]
   }
   
-  extension [Self <: DocumentVisibilityList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentVisibilityList] (val x: Self) extends AnyVal {
     
     inline def setDocumentVisibility(
       value: js.Array[

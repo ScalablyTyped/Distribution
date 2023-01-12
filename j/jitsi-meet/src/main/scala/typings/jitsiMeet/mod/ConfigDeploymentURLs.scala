@@ -17,7 +17,8 @@ object ConfigDeploymentURLs {
     __obj.asInstanceOf[ConfigDeploymentURLs]
   }
   
-  extension [Self <: ConfigDeploymentURLs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigDeploymentURLs] (val x: Self) extends AnyVal {
     
     inline def setDownloadAppsUrl(value: String): Self = StObject.set(x, "downloadAppsUrl", value.asInstanceOf[js.Any])
     

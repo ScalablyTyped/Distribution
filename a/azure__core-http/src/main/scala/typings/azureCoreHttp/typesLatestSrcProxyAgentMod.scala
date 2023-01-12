@@ -34,7 +34,8 @@ object typesLatestSrcProxyAgentMod {
       __obj.asInstanceOf[ProxyAgent]
     }
     
-    extension [Self <: ProxyAgent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxyAgent] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent | typings.node.httpsMod.Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       

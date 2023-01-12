@@ -21,7 +21,8 @@ object IntersectNode {
     __obj.asInstanceOf[IntersectNode]
   }
   
-  extension [Self <: IntersectNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntersectNode] (val x: Self) extends AnyVal {
     
     inline def setEdge1(value: TEdge): Self = StObject.set(x, "edge1", value.asInstanceOf[js.Any])
     

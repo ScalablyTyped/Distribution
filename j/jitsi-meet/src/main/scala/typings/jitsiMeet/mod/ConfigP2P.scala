@@ -29,7 +29,8 @@ object ConfigP2P {
     __obj.asInstanceOf[ConfigP2P]
   }
   
-  extension [Self <: ConfigP2P](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigP2P] (val x: Self) extends AnyVal {
     
     inline def setBackToP2PDelay(value: Double): Self = StObject.set(x, "backToP2PDelay", value.asInstanceOf[js.Any])
     

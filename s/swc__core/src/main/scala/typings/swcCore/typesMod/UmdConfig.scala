@@ -23,7 +23,8 @@ object UmdConfig {
     __obj.asInstanceOf[UmdConfig]
   }
   
-  extension [Self <: UmdConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UmdConfig] (val x: Self) extends AnyVal {
     
     inline def setGlobals(value: StringDictionary[String]): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
     

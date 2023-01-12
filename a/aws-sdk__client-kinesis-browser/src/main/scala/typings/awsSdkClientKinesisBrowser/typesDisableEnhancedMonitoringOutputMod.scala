@@ -56,7 +56,8 @@ object typesDisableEnhancedMonitoringOutputMod {
       __obj.asInstanceOf[DisableEnhancedMonitoringOutput]
     }
     
-    extension [Self <: DisableEnhancedMonitoringOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisableEnhancedMonitoringOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

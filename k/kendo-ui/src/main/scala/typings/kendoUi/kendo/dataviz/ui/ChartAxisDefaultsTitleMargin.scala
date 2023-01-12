@@ -21,7 +21,8 @@ object ChartAxisDefaultsTitleMargin {
     __obj.asInstanceOf[ChartAxisDefaultsTitleMargin]
   }
   
-  extension [Self <: ChartAxisDefaultsTitleMargin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartAxisDefaultsTitleMargin] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[FontColor]
     }
     
-    extension [Self <: FontColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontColor] (val x: Self) extends AnyVal {
       
       inline def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
       
@@ -81,7 +83,8 @@ object anon {
       __obj.asInstanceOf[FontWeight]
     }
     
-    extension [Self <: FontWeight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontWeight] (val x: Self) extends AnyVal {
       
       inline def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
       
@@ -106,7 +109,8 @@ object anon {
       __obj.asInstanceOf[Mask]
     }
     
-    extension [Self <: Mask](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mask] (val x: Self) extends AnyVal {
       
       inline def setMask(value: String): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
@@ -125,7 +129,8 @@ object anon {
       __obj.asInstanceOf[Messages]
     }
     
-    extension [Self <: Messages](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Messages] (val x: Self) extends AnyVal {
       
       inline def setMessages(value: js.Array[SecureFormErrorMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       

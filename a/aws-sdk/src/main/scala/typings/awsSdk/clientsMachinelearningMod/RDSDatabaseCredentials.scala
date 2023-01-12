@@ -17,7 +17,8 @@ object RDSDatabaseCredentials {
     __obj.asInstanceOf[RDSDatabaseCredentials]
   }
   
-  extension [Self <: RDSDatabaseCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RDSDatabaseCredentials] (val x: Self) extends AnyVal {
     
     inline def setPassword(value: RDSDatabasePassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     

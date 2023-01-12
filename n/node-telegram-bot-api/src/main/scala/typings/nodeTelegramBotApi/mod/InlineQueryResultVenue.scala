@@ -24,7 +24,8 @@ object InlineQueryResultVenue {
     __obj.asInstanceOf[InlineQueryResultVenue]
   }
   
-  extension [Self <: InlineQueryResultVenue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineQueryResultVenue] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

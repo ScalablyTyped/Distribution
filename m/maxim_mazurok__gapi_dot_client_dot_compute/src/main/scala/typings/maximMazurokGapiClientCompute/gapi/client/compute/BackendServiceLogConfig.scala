@@ -22,7 +22,8 @@ object BackendServiceLogConfig {
     __obj.asInstanceOf[BackendServiceLogConfig]
   }
   
-  extension [Self <: BackendServiceLogConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackendServiceLogConfig] (val x: Self) extends AnyVal {
     
     inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     

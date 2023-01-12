@@ -98,7 +98,8 @@ object TEX2jaxPreprocessor {
     __obj.asInstanceOf[TEX2jaxPreprocessor]
   }
   
-  extension [Self <: TEX2jaxPreprocessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TEX2jaxPreprocessor] (val x: Self) extends AnyVal {
     
     inline def setBalanceBraces(value: Boolean): Self = StObject.set(x, "balanceBraces", value.asInstanceOf[js.Any])
     

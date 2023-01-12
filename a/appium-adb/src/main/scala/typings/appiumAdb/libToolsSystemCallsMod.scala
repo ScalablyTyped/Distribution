@@ -51,7 +51,8 @@ object libToolsSystemCallsMod {
       __obj.asInstanceOf[AdbExecOptions]
     }
     
-    extension [Self <: AdbExecOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdbExecOptions] (val x: Self) extends AnyVal {
       
       inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object libToolsSystemCallsMod {
       __obj.asInstanceOf[AvdLaunchOptions]
     }
     
-    extension [Self <: AvdLaunchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvdLaunchOptions] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: String | js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -191,7 +193,8 @@ object libToolsSystemCallsMod {
       __obj.asInstanceOf[BinaryVersion]
     }
     
-    extension [Self <: BinaryVersion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BinaryVersion] (val x: Self) extends AnyVal {
       
       inline def setBuild(value: Double): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
       
@@ -213,7 +216,8 @@ object libToolsSystemCallsMod {
       __obj.asInstanceOf[BridgeVersion]
     }
     
-    extension [Self <: BridgeVersion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BridgeVersion] (val x: Self) extends AnyVal {
       
       inline def setVersion(value: SemVer): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
@@ -234,7 +238,8 @@ object libToolsSystemCallsMod {
       __obj.asInstanceOf[ConnectedDevicesOptions]
     }
     
-    extension [Self <: ConnectedDevicesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectedDevicesOptions] (val x: Self) extends AnyVal {
       
       inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
@@ -257,7 +262,8 @@ object libToolsSystemCallsMod {
       __obj.asInstanceOf[Device]
     }
     
-    extension [Self <: Device](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
       
       inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
@@ -278,7 +284,8 @@ object libToolsSystemCallsMod {
       __obj.asInstanceOf[ExecResult]
     }
     
-    extension [Self <: ExecResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecResult] (val x: Self) extends AnyVal {
       
       inline def setStderr(value: String): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
@@ -305,7 +312,8 @@ object libToolsSystemCallsMod {
       __obj.asInstanceOf[RootResult]
     }
     
-    extension [Self <: RootResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RootResult] (val x: Self) extends AnyVal {
       
       inline def setIsSuccessful(value: Boolean): Self = StObject.set(x, "isSuccessful", value.asInstanceOf[js.Any])
       
@@ -330,7 +338,8 @@ object libToolsSystemCallsMod {
       __obj.asInstanceOf[ShellExecOptions]
     }
     
-    extension [Self <: ShellExecOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellExecOptions] (val x: Self) extends AnyVal {
       
       inline def setKeepPrivileged(value: Boolean): Self = StObject.set(x, "keepPrivileged", value.asInstanceOf[js.Any])
       
@@ -733,7 +742,8 @@ object libToolsSystemCallsMod {
       __obj.asInstanceOf[VerboseDevice]
     }
     
-    extension [Self <: VerboseDevice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerboseDevice] (val x: Self) extends AnyVal {
       
       inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
@@ -768,7 +778,8 @@ object libToolsSystemCallsMod {
       __obj.asInstanceOf[Version]
     }
     
-    extension [Self <: Version](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
       
       inline def setBinary(value: BinaryVersion): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object LocalForageDbInstanceOptions {
     __obj.asInstanceOf[LocalForageDbInstanceOptions]
   }
   
-  extension [Self <: LocalForageDbInstanceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalForageDbInstanceOptions] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

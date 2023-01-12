@@ -112,7 +112,8 @@ object libRouterRouteSetDefMod {
       __obj.asInstanceOf[RouteSetDef]
     }
     
-    extension [Self <: RouteSetDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteSetDef] (val x: Self) extends AnyVal {
       
       inline def setAllowedOrigins(value: js.Array[String]): Self = StObject.set(x, "allowedOrigins", value.asInstanceOf[js.Any])
       

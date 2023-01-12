@@ -16,7 +16,8 @@ object SkeletonColorTokenSchema {
     __obj.asInstanceOf[SkeletonColorTokenSchema[BaseToken]]
   }
   
-  extension [Self <: SkeletonColorTokenSchema[?], BaseToken](x: Self & SkeletonColorTokenSchema[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkeletonColorTokenSchema[?], BaseToken] (val x: Self & SkeletonColorTokenSchema[BaseToken]) extends AnyVal {
     
     inline def setColor(value: SkeletonDefaultPaintTokenSubtlePaintToken[BaseToken]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
   }

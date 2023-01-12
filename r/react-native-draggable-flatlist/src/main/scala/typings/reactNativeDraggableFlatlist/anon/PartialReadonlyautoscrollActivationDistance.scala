@@ -30,7 +30,8 @@ object PartialReadonlyautoscrollActivationDistance {
     __obj.asInstanceOf[PartialReadonlyautoscrollActivationDistance]
   }
   
-  extension [Self <: PartialReadonlyautoscrollActivationDistance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialReadonlyautoscrollActivationDistance] (val x: Self) extends AnyVal {
     
     inline def setActivationDistance(value: Double): Self = StObject.set(x, "activationDistance", value.asInstanceOf[js.Any])
     

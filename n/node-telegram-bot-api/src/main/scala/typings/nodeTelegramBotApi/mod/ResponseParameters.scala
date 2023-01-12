@@ -17,7 +17,8 @@ object ResponseParameters {
     __obj.asInstanceOf[ResponseParameters]
   }
   
-  extension [Self <: ResponseParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseParameters] (val x: Self) extends AnyVal {
     
     inline def setMigrate_to_chat_id(value: Double): Self = StObject.set(x, "migrate_to_chat_id", value.asInstanceOf[js.Any])
     

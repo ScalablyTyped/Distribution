@@ -138,7 +138,8 @@ object distSrcModulesAnomalyBloodhoundAnomalyBloodhoundMod {
       __obj.asInstanceOf[AnomalyBloodhound]
     }
     
-    extension [Self <: AnomalyBloodhound](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnomalyBloodhound] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

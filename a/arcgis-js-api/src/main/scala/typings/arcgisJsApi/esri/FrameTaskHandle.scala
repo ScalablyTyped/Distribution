@@ -34,7 +34,8 @@ object FrameTaskHandle {
     __obj.asInstanceOf[FrameTaskHandle]
   }
   
-  extension [Self <: FrameTaskHandle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameTaskHandle] (val x: Self) extends AnyVal {
     
     inline def setPause(value: () => scala.Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     

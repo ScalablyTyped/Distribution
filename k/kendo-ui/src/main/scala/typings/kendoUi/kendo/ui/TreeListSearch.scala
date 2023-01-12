@@ -15,7 +15,8 @@ object TreeListSearch {
     __obj.asInstanceOf[TreeListSearch]
   }
   
-  extension [Self <: TreeListSearch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListSearch] (val x: Self) extends AnyVal {
     
     inline def setFields(value: Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

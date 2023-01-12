@@ -17,7 +17,8 @@ object SpeechRecognizerStateChangedEventArgs {
     __obj.asInstanceOf[SpeechRecognizerStateChangedEventArgs]
   }
   
-  extension [Self <: SpeechRecognizerStateChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeechRecognizerStateChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setState(value: SpeechRecognizerState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }

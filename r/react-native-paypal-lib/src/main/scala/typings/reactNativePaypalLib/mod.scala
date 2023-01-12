@@ -143,7 +143,8 @@ object mod {
       __obj.asInstanceOf[EnvironmentParam]
     }
     
-    extension [Self <: EnvironmentParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnvironmentParam] (val x: Self) extends AnyVal {
       
       inline def setNO_NETWORK(value: NO_NETWORK): Self = StObject.set(x, "NO_NETWORK", value.asInstanceOf[js.Any])
       
@@ -183,7 +184,8 @@ object mod {
       __obj.asInstanceOf[IntentParam]
     }
     
-    extension [Self <: IntentParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntentParam] (val x: Self) extends AnyVal {
       
       inline def setAUTHORIZE(value: AUTHORIZE): Self = StObject.set(x, "AUTHORIZE", value.asInstanceOf[js.Any])
       
@@ -210,7 +212,8 @@ object mod {
       __obj.asInstanceOf[PayPalPayment]
     }
     
-    extension [Self <: PayPalPayment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayPalPayment] (val x: Self) extends AnyVal {
       
       inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
@@ -237,7 +240,8 @@ object mod {
       __obj.asInstanceOf[PaymentConfirmation]
     }
     
-    extension [Self <: PaymentConfirmation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaymentConfirmation] (val x: Self) extends AnyVal {
       
       inline def setClient(value: PayPalPayment): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
@@ -278,7 +282,8 @@ object mod {
       __obj.asInstanceOf[PaymentParams]
     }
     
-    extension [Self <: PaymentParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaymentParams] (val x: Self) extends AnyVal {
       
       inline def setAcceptCreditCards(value: Boolean): Self = StObject.set(x, "acceptCreditCards", value.asInstanceOf[js.Any])
       
@@ -313,7 +318,8 @@ object mod {
       __obj.asInstanceOf[ProofOfPayment]
     }
     
-    extension [Self <: ProofOfPayment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProofOfPayment] (val x: Self) extends AnyVal {
       
       inline def setCreate_time(value: String): Self = StObject.set(x, "create_time", value.asInstanceOf[js.Any])
       

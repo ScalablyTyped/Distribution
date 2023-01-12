@@ -24,7 +24,8 @@ object List {
     __obj.asInstanceOf[typings.maximMazurokGapiClientSlides.gapi.client.slides.List]
   }
   
-  extension [Self <: typings.maximMazurokGapiClientSlides.gapi.client.slides.List](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typings.maximMazurokGapiClientSlides.gapi.client.slides.List] (val x: Self) extends AnyVal {
     
     inline def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
     

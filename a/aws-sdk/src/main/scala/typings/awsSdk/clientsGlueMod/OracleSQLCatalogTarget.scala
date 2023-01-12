@@ -38,7 +38,8 @@ object OracleSQLCatalogTarget {
     __obj.asInstanceOf[OracleSQLCatalogTarget]
   }
   
-  extension [Self <: OracleSQLCatalogTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OracleSQLCatalogTarget] (val x: Self) extends AnyVal {
     
     inline def setDatabase(value: EnclosedInStringProperty): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     

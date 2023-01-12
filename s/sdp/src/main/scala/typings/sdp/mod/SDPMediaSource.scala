@@ -19,7 +19,8 @@ object SDPMediaSource {
     __obj.asInstanceOf[SDPMediaSource]
   }
   
-  extension [Self <: SDPMediaSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SDPMediaSource] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

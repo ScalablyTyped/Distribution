@@ -19,7 +19,8 @@ object ZipProgress {
     __obj.asInstanceOf[ZipProgress]
   }
   
-  extension [Self <: ZipProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZipProgress] (val x: Self) extends AnyVal {
     
     inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Config[T]]
     }
     
-    extension [Self <: Config[?], T /* <: EndpointParameters */](x: Self & Config[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config[?], T /* <: EndpointParameters */] (val x: Self & Config[T]) extends AnyVal {
       
       inline def setConfig(value: EndpointResolvedConfig[T]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[Logger]
     }
     
-    extension [Self <: Logger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
       
       inline def setLogger(value: typings.awsSdkTypes.distTypesLoggerMod.Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       

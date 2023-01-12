@@ -23,7 +23,8 @@ object DeleteLaunchTemplateVersionsResult {
     __obj.asInstanceOf[DeleteLaunchTemplateVersionsResult]
   }
   
-  extension [Self <: DeleteLaunchTemplateVersionsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLaunchTemplateVersionsResult] (val x: Self) extends AnyVal {
     
     inline def setSuccessfullyDeletedLaunchTemplateVersions(value: DeleteLaunchTemplateVersionsResponseSuccessSet): Self = StObject.set(x, "SuccessfullyDeletedLaunchTemplateVersions", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object LeadingSentence {
     __obj.asInstanceOf[LeadingSentence]
   }
   
-  extension [Self <: LeadingSentence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeadingSentence] (val x: Self) extends AnyVal {
     
     inline def setElement_locations(value: js.Array[ElementLocations]): Self = StObject.set(x, "element_locations", value.asInstanceOf[js.Any])
     

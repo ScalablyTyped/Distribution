@@ -35,7 +35,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueDateTimeConstructor]
     }
     
-    extension [Self <: VueDateTimeConstructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueDateTimeConstructor] (val x: Self) extends AnyVal {
       
       inline def setData(value: () => VueDateTimeData): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
       
@@ -56,7 +57,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueDateTimeData]
     }
     
-    extension [Self <: VueDateTimeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueDateTimeData] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -75,7 +77,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueDateTimeProps]
     }
     
-    extension [Self <: VueDateTimeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueDateTimeProps] (val x: Self) extends AnyVal {
       
       inline def setInputClass(value: Any): Self = StObject.set(x, "inputClass", value.asInstanceOf[js.Any])
       

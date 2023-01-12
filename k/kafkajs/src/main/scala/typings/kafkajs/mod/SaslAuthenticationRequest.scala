@@ -16,7 +16,8 @@ object SaslAuthenticationRequest {
     __obj.asInstanceOf[SaslAuthenticationRequest]
   }
   
-  extension [Self <: SaslAuthenticationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaslAuthenticationRequest] (val x: Self) extends AnyVal {
     
     inline def setEncode(value: () => Buffer | js.Promise[Buffer]): Self = StObject.set(x, "encode", js.Any.fromFunction0(value))
   }

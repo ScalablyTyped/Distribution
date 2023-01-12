@@ -65,7 +65,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[ManifestOptions]
       }
       
-      extension [Self <: ManifestOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ManifestOptions] (val x: Self) extends AnyVal {
         
         inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
         
@@ -122,7 +123,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
         

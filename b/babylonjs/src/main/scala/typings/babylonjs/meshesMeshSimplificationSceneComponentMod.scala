@@ -131,7 +131,8 @@ object meshesMeshSimplificationSceneComponentMod {
         __obj.asInstanceOf[typings.babylonjs.meshesMeshSimplificationSceneComponentMod.babylonjsSceneAugmentingMod.Scene]
       }
       
-      extension [Self <: typings.babylonjs.meshesMeshSimplificationSceneComponentMod.babylonjsSceneAugmentingMod.Scene](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.babylonjs.meshesMeshSimplificationSceneComponentMod.babylonjsSceneAugmentingMod.Scene] (val x: Self) extends AnyVal {
         
         inline def setSimplificationQueue(value: SimplificationQueue): Self = StObject.set(x, "simplificationQueue", value.asInstanceOf[js.Any])
         

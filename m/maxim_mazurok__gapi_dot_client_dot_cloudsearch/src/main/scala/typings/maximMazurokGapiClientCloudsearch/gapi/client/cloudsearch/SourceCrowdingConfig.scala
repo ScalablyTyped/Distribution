@@ -22,7 +22,8 @@ object SourceCrowdingConfig {
     __obj.asInstanceOf[SourceCrowdingConfig]
   }
   
-  extension [Self <: SourceCrowdingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceCrowdingConfig] (val x: Self) extends AnyVal {
     
     inline def setNumResults(value: Double): Self = StObject.set(x, "numResults", value.asInstanceOf[js.Any])
     

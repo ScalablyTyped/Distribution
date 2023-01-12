@@ -18,7 +18,8 @@ object ISplashScreen {
     __obj.asInstanceOf[ISplashScreen]
   }
   
-  extension [Self <: ISplashScreen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISplashScreen] (val x: Self) extends AnyVal {
     
     inline def setImageLocation(value: Rect): Self = StObject.set(x, "imageLocation", value.asInstanceOf[js.Any])
     

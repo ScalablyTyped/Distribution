@@ -110,7 +110,8 @@ object DescribeCompilationJobResponse {
     __obj.asInstanceOf[DescribeCompilationJobResponse]
   }
   
-  extension [Self <: DescribeCompilationJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCompilationJobResponse] (val x: Self) extends AnyVal {
     
     inline def setCompilationEndTime(value: js.Date): Self = StObject.set(x, "CompilationEndTime", value.asInstanceOf[js.Any])
     

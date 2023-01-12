@@ -17,7 +17,8 @@ object QueryDirectionFilter {
     __obj.asInstanceOf[QueryDirectionFilter]
   }
   
-  extension [Self <: QueryDirectionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDirectionFilter] (val x: Self) extends AnyVal {
     
     inline def setPath(value: OrgString): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

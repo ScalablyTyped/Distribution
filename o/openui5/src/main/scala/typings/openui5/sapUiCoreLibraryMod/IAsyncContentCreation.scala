@@ -15,7 +15,8 @@ object IAsyncContentCreation {
     __obj.asInstanceOf[IAsyncContentCreation]
   }
   
-  extension [Self <: IAsyncContentCreation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAsyncContentCreation] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_core_IAsyncContentCreation(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_core_IAsyncContentCreation", value.asInstanceOf[js.Any])
   }

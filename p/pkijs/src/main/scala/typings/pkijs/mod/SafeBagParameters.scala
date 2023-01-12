@@ -22,7 +22,8 @@ object SafeBagParameters {
     __obj.asInstanceOf[SafeBagParameters[T]]
   }
   
-  extension [Self <: SafeBagParameters[?], T /* <: BagType */](x: Self & SafeBagParameters[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SafeBagParameters[?], T /* <: BagType */] (val x: Self & SafeBagParameters[T]) extends AnyVal {
     
     inline def setBagAttributes(value: js.Array[Attribute]): Self = StObject.set(x, "bagAttributes", value.asInstanceOf[js.Any])
     

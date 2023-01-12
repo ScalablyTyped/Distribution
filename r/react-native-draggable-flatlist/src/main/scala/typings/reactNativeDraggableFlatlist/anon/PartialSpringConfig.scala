@@ -30,7 +30,8 @@ object PartialSpringConfig {
     __obj.asInstanceOf[PartialSpringConfig]
   }
   
-  extension [Self <: PartialSpringConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSpringConfig] (val x: Self) extends AnyVal {
     
     inline def setDamping(value: Adaptable[Double]): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
     

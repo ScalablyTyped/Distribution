@@ -19,7 +19,8 @@ object ClusterType {
     __obj.asInstanceOf[ClusterType]
   }
   
-  extension [Self <: ClusterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterType] (val x: Self) extends AnyVal {
     
     inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
     

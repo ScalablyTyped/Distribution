@@ -31,7 +31,8 @@ object ClusterStateParams {
     __obj.asInstanceOf[ClusterStateParams]
   }
   
-  extension [Self <: ClusterStateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStateParams] (val x: Self) extends AnyVal {
     
     inline def setAllowNoIndices(value: Boolean): Self = StObject.set(x, "allowNoIndices", value.asInstanceOf[js.Any])
     

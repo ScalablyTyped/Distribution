@@ -58,7 +58,8 @@ object Stepper {
       __obj.asInstanceOf[typings.materialUi.MaterialUI.Stepper.SnackbarProps]
     }
     
-    extension [Self <: typings.materialUi.MaterialUI.Stepper.SnackbarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.materialUi.MaterialUI.Stepper.SnackbarProps] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -143,7 +144,8 @@ object Stepper {
       __obj.asInstanceOf[StepButtonProps]
     }
     
-    extension [Self <: StepButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepButtonProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -198,7 +200,8 @@ object Stepper {
       __obj.asInstanceOf[StepContentProps]
     }
     
-    extension [Self <: StepContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepContentProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -243,7 +246,8 @@ object Stepper {
       __obj.asInstanceOf[StepLabelProps]
     }
     
-    extension [Self <: StepLabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepLabelProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -294,7 +298,8 @@ object Stepper {
       __obj.asInstanceOf[StepProps]
     }
     
-    extension [Self <: StepProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -339,7 +344,8 @@ object Stepper {
       __obj.asInstanceOf[StepperProps]
     }
     
-    extension [Self <: StepperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepperProps] (val x: Self) extends AnyVal {
       
       inline def setActiveStep(value: Double): Self = StObject.set(x, "activeStep", value.asInstanceOf[js.Any])
       

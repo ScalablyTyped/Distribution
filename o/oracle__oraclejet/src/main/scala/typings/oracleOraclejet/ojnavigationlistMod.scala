@@ -572,7 +572,8 @@ object ojnavigationlistMod {
         __obj.asInstanceOf[ItemContext[K, D]]
       }
       
-      extension [Self <: ItemContext[?, ?], K, D](x: Self & (ItemContext[K, D])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ItemContext[?, ?], K, D] (val x: Self & (ItemContext[K, D])) extends AnyVal {
         
         inline def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
         
@@ -610,7 +611,8 @@ object ojnavigationlistMod {
         __obj.asInstanceOf[NodeContext[K]]
       }
       
-      extension [Self <: NodeContext[?], K](x: Self & NodeContext[K]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NodeContext[?], K] (val x: Self & NodeContext[K]) extends AnyVal {
         
         inline def setGroup(value: Boolean): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
         
@@ -817,7 +819,8 @@ object ojnavigationlistMod {
       __obj.asInstanceOf[ojNavigationListEventMap[K, D]]
     }
     
-    extension [Self <: ojNavigationListEventMap[?, ?], K, D](x: Self & (ojNavigationListEventMap[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojNavigationListEventMap[?, ?], K, D] (val x: Self & (ojNavigationListEventMap[K, D])) extends AnyVal {
       
       inline def setAsChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "asChanged", value.asInstanceOf[js.Any])
       
@@ -911,7 +914,8 @@ object ojnavigationlistMod {
       __obj.asInstanceOf[ojNavigationListSettableProperties[K, D]]
     }
     
-    extension [Self <: ojNavigationListSettableProperties[?, ?], K, D](x: Self & (ojNavigationListSettableProperties[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojNavigationListSettableProperties[?, ?], K, D] (val x: Self & (ojNavigationListSettableProperties[K, D])) extends AnyVal {
       
       inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -983,7 +987,8 @@ object ojnavigationlistMod {
       __obj.asInstanceOf[ojNavigationListSettablePropertiesLenient[K, D]]
     }
     
-    extension [Self <: ojNavigationListSettablePropertiesLenient[?, ?], K, D](x: Self & (ojNavigationListSettablePropertiesLenient[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojNavigationListSettablePropertiesLenient[?, ?], K, D] (val x: Self & (ojNavigationListSettablePropertiesLenient[K, D])) extends AnyVal {
       
       inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -1519,7 +1524,8 @@ object ojnavigationlistMod {
         __obj.asInstanceOf[ItemContext[K, D]]
       }
       
-      extension [Self <: ItemContext[?, ?], K, D](x: Self & (ItemContext[K, D])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ItemContext[?, ?], K, D] (val x: Self & (ItemContext[K, D])) extends AnyVal {
         
         inline def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
         
@@ -1553,7 +1559,8 @@ object ojnavigationlistMod {
         __obj.asInstanceOf[typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.NodeContext[K]]
       }
       
-      extension [Self <: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.NodeContext[?], K](x: Self & typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.NodeContext[K]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.NodeContext[?], K] (val x: Self & typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.NodeContext[K]) extends AnyVal {
         
         inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
@@ -1761,7 +1768,8 @@ object ojnavigationlistMod {
       __obj.asInstanceOf[ojTabBarEventMap[K, D]]
     }
     
-    extension [Self <: ojTabBarEventMap[?, ?], K, D](x: Self & (ojTabBarEventMap[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojTabBarEventMap[?, ?], K, D] (val x: Self & (ojTabBarEventMap[K, D])) extends AnyVal {
       
       inline def setAsChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "asChanged", value.asInstanceOf[js.Any])
       
@@ -1856,7 +1864,8 @@ object ojnavigationlistMod {
       __obj.asInstanceOf[ojTabBarSettableProperties[K, D]]
     }
     
-    extension [Self <: ojTabBarSettableProperties[?, ?], K, D](x: Self & (ojTabBarSettableProperties[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojTabBarSettableProperties[?, ?], K, D] (val x: Self & (ojTabBarSettableProperties[K, D])) extends AnyVal {
       
       inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -1918,7 +1927,8 @@ object ojnavigationlistMod {
       __obj.asInstanceOf[ojTabBarSettablePropertiesLenient[K, D]]
     }
     
-    extension [Self <: ojTabBarSettablePropertiesLenient[?, ?], K, D](x: Self & (ojTabBarSettablePropertiesLenient[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojTabBarSettablePropertiesLenient[?, ?], K, D] (val x: Self & (ojTabBarSettablePropertiesLenient[K, D])) extends AnyVal {
       
       inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

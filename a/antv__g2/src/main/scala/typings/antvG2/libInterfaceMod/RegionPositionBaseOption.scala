@@ -32,7 +32,8 @@ object RegionPositionBaseOption {
     __obj.asInstanceOf[RegionPositionBaseOption]
   }
   
-  extension [Self <: RegionPositionBaseOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionPositionBaseOption] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: AnnotationPosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

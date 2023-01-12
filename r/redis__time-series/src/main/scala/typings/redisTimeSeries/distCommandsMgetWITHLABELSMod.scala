@@ -40,7 +40,8 @@ object distCommandsMgetWITHLABELSMod {
       __obj.asInstanceOf[MGetWithLabelsOptions]
     }
     
-    extension [Self <: MGetWithLabelsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MGetWithLabelsOptions] (val x: Self) extends AnyVal {
       
       inline def setSELECTED_LABELS(value: SelectedLabels): Self = StObject.set(x, "SELECTED_LABELS", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object distCommandsMgetWITHLABELSMod {
       __obj.asInstanceOf[MGetWithLabelsReply]
     }
     
-    extension [Self <: MGetWithLabelsReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MGetWithLabelsReply] (val x: Self) extends AnyVal {
       
       inline def setLabels(value: Labels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     }

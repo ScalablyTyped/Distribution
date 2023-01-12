@@ -198,7 +198,8 @@ object mod {
       __obj.asInstanceOf[ErrorData]
     }
     
-    extension [Self <: ErrorData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorData] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -217,7 +218,8 @@ object mod {
       __obj.asInstanceOf[PublishData]
     }
     
-    extension [Self <: PublishData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublishData] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -236,7 +238,8 @@ object mod {
       __obj.asInstanceOf[SubscribeData]
     }
     
-    extension [Self <: SubscribeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscribeData] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     }
@@ -253,7 +256,8 @@ object mod {
       __obj.asInstanceOf[UnsubscribeData]
     }
     
-    extension [Self <: UnsubscribeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnsubscribeData] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     }

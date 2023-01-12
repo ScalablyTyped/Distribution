@@ -23,7 +23,8 @@ object OpenDocumentOptions {
     __obj.asInstanceOf[OpenDocumentOptions]
   }
   
-  extension [Self <: OpenDocumentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenDocumentOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: json): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

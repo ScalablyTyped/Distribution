@@ -63,7 +63,8 @@ object IColorPalette {
     __obj.asInstanceOf[IColorPalette]
   }
   
-  extension [Self <: IColorPalette](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IColorPalette] (val x: Self) extends AnyVal {
     
     inline def setAllowReselect(value: Boolean): Self = StObject.set(x, "allowReselect", value.asInstanceOf[js.Any])
     

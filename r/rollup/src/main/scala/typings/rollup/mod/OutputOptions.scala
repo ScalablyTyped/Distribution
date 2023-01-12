@@ -117,7 +117,8 @@ object OutputOptions {
     __obj.asInstanceOf[OutputOptions]
   }
   
-  extension [Self <: OutputOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputOptions] (val x: Self) extends AnyVal {
     
     inline def setAmd(value: AmdOptions): Self = StObject.set(x, "amd", value.asInstanceOf[js.Any])
     

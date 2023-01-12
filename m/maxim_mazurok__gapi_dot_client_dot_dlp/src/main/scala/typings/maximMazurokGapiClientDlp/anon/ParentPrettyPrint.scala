@@ -59,7 +59,8 @@ object ParentPrettyPrint {
     __obj.asInstanceOf[ParentPrettyPrint]
   }
   
-  extension [Self <: ParentPrettyPrint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParentPrettyPrint] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

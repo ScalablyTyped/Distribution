@@ -252,7 +252,8 @@ object modulesGooglePaymentMod {
       __obj.asInstanceOf[GooglePaymentDetails]
     }
     
-    extension [Self <: GooglePaymentDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GooglePaymentDetails] (val x: Self) extends AnyVal {
       
       inline def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
       
@@ -292,7 +293,8 @@ object modulesGooglePaymentMod {
       __obj.asInstanceOf[GooglePaymentTokenizePayload]
     }
     
-    extension [Self <: GooglePaymentTokenizePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GooglePaymentTokenizePayload] (val x: Self) extends AnyVal {
       
       inline def setBinData(value: CountryOfIssuance): Self = StObject.set(x, "binData", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object PartialRecordEnrichPolicy {
     __obj.asInstanceOf[PartialRecordEnrichPolicy]
   }
   
-  extension [Self <: PartialRecordEnrichPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRecordEnrichPolicy] (val x: Self) extends AnyVal {
     
     inline def setGeo_match(value: EnrichPolicy): Self = StObject.set(x, "geo_match", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object LiveTailOpts {
     __obj.asInstanceOf[LiveTailOpts]
   }
   
-  extension [Self <: LiveTailOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveTailOpts] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: Matcher): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     

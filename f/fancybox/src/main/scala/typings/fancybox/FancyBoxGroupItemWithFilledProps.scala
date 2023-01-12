@@ -24,7 +24,8 @@ object FancyBoxGroupItemWithFilledProps {
     __obj.asInstanceOf[FancyBoxGroupItemWithFilledProps]
   }
   
-  extension [Self <: FancyBoxGroupItemWithFilledProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FancyBoxGroupItemWithFilledProps] (val x: Self) extends AnyVal {
     
     inline def set$thumb(value: JQuery): Self = StObject.set(x, "$thumb", value.asInstanceOf[js.Any])
     

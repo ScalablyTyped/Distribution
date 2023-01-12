@@ -413,7 +413,8 @@ object IgLinearGauge {
     __obj.asInstanceOf[IgLinearGauge]
   }
   
-  extension [Self <: IgLinearGauge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgLinearGauge] (val x: Self) extends AnyVal {
     
     inline def setAlignLabel(value: (/* event */ Event, /* ui */ AlignLabelEventUIParam) => Unit): Self = StObject.set(x, "alignLabel", js.Any.fromFunction2(value))
     

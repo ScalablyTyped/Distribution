@@ -24,7 +24,8 @@ object libComponentsUserActivityMod {
     @js.native
     val DEFAULT: UserActivitySet = js.native
     
-    extension [Self <: UserActivitySet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserActivitySet] (val x: Self) extends AnyVal {
       
       inline def setUsers(value: StringDictionary[UserActivity]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     }
@@ -76,7 +77,8 @@ object libComponentsUserActivityMod {
     @js.native
     val DEFAULT: UserActivityTrackerConfig = js.native
     
-    extension [Self <: UserActivityTrackerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserActivityTrackerConfig] (val x: Self) extends AnyVal {
       
       inline def setInactiveAfterDays(value: Double): Self = StObject.set(x, "inactiveAfterDays", value.asInstanceOf[js.Any])
       
@@ -99,7 +101,8 @@ object libComponentsUserActivityMod {
       __obj.asInstanceOf[UserActivity]
     }
     
-    extension [Self <: UserActivity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserActivity] (val x: Self) extends AnyVal {
       
       inline def setMetadata(value: UserActivityMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
@@ -128,7 +131,8 @@ object libComponentsUserActivityMod {
       __obj.asInstanceOf[UserActivityMetadata]
     }
     
-    extension [Self <: UserActivityMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserActivityMetadata] (val x: Self) extends AnyVal {
       
       inline def setActive(value: `true`): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -155,7 +159,8 @@ object libComponentsUserActivityMod {
       __obj.asInstanceOf[UserActivityState]
     }
     
-    extension [Self <: UserActivityState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserActivityState] (val x: Self) extends AnyVal {
       
       inline def setActiveUsers(value: Double): Self = StObject.set(x, "activeUsers", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object Mids {
     __obj.asInstanceOf[Mids]
   }
   
-  extension [Self <: Mids](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mids] (val x: Self) extends AnyVal {
     
     inline def setMids(value: String): Self = StObject.set(x, "mids", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object RefreshTokenRequest {
     __obj.asInstanceOf[RefreshTokenRequest]
   }
   
-  extension [Self <: RefreshTokenRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshTokenRequest] (val x: Self) extends AnyVal {
     
     inline def setProvider(value: TokenProviders): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     

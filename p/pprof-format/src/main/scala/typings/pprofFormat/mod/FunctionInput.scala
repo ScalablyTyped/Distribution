@@ -23,7 +23,8 @@ object FunctionInput {
     __obj.asInstanceOf[FunctionInput]
   }
   
-  extension [Self <: FunctionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionInput] (val x: Self) extends AnyVal {
     
     inline def setFilename(value: Numeric): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     

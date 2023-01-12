@@ -40,7 +40,8 @@ object DrawPolygon {
     __obj.asInstanceOf[DrawPolygon]
   }
   
-  extension [Self <: DrawPolygon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawPolygon] (val x: Self) extends AnyVal {
     
     inline def setAddCoordinate(value: (String, Double, Double) => Unit): Self = StObject.set(x, "addCoordinate", js.Any.fromFunction3(value))
     

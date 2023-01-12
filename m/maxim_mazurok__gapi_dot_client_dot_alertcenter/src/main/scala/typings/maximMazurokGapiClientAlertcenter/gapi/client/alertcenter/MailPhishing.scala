@@ -28,7 +28,8 @@ object MailPhishing {
     __obj.asInstanceOf[MailPhishing]
   }
   
-  extension [Self <: MailPhishing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MailPhishing] (val x: Self) extends AnyVal {
     
     inline def setDomainId(value: DomainId): Self = StObject.set(x, "domainId", value.asInstanceOf[js.Any])
     

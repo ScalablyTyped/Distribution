@@ -17,7 +17,8 @@ object AccessorFunctionProps {
     __obj.asInstanceOf[AccessorFunctionProps[T]]
   }
   
-  extension [Self <: AccessorFunctionProps[?], T](x: Self & AccessorFunctionProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessorFunctionProps[?], T] (val x: Self & AccessorFunctionProps[T]) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

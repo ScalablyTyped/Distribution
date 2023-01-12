@@ -24,7 +24,8 @@ object NavigationBreadcrumbsEventsOptions {
     __obj.asInstanceOf[NavigationBreadcrumbsEventsOptions]
   }
   
-  extension [Self <: NavigationBreadcrumbsEventsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationBreadcrumbsEventsOptions] (val x: Self) extends AnyVal {
     
     inline def setClick(value: (/* event */ Event, /* options */ BreadcrumbOptions, /* e */ Event) => Unit): Self = StObject.set(x, "click", js.Any.fromFunction3(value))
     

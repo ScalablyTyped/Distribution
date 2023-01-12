@@ -20,7 +20,8 @@ object PolylineOptions {
     __obj.asInstanceOf[PolylineOptions]
   }
   
-  extension [Self <: PolylineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolylineOptions] (val x: Self) extends AnyVal {
     
     inline def setPath(value: MVCArray[LatLng] | (js.Array[LatLng | LatLngLiteral])): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

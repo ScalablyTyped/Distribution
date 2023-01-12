@@ -17,7 +17,8 @@ object IntlViewerContext {
     __obj.asInstanceOf[IntlViewerContext]
   }
   
-  extension [Self <: IntlViewerContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntlViewerContext] (val x: Self) extends AnyVal {
     
     inline def setGENDER(value: IntlVariationsGender): Self = StObject.set(x, "GENDER", value.asInstanceOf[js.Any])
     

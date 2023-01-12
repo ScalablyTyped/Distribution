@@ -44,7 +44,8 @@ object RegisterShapeFactory {
     __obj.asInstanceOf[RegisterShapeFactory]
   }
   
-  extension [Self <: RegisterShapeFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterShapeFactory] (val x: Self) extends AnyVal {
     
     inline def setDefaultShapeType(value: String): Self = StObject.set(x, "defaultShapeType", value.asInstanceOf[js.Any])
     

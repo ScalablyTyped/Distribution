@@ -68,7 +68,8 @@ object AssessmentMetadata {
     __obj.asInstanceOf[AssessmentMetadata]
   }
   
-  extension [Self <: AssessmentMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssessmentMetadata] (val x: Self) extends AnyVal {
     
     inline def setAssessmentReportsDestination(value: AssessmentReportsDestination): Self = StObject.set(x, "assessmentReportsDestination", value.asInstanceOf[js.Any])
     

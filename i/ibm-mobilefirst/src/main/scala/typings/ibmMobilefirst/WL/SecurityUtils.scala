@@ -25,7 +25,8 @@ object SecurityUtils {
       __obj.asInstanceOf[DecryptOptions]
     }
     
-    extension [Self <: DecryptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecryptOptions] (val x: Self) extends AnyVal {
       
       inline def setCt(value: String): Self = StObject.set(x, "ct", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object SecurityUtils {
       __obj.asInstanceOf[EncryptOptions]
     }
     
-    extension [Self <: EncryptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncryptOptions] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object SecurityUtils {
       __obj.asInstanceOf[KeygenOptions]
     }
     
-    extension [Self <: KeygenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeygenOptions] (val x: Self) extends AnyVal {
       
       inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       

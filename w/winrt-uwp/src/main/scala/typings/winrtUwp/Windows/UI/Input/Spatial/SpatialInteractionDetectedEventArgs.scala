@@ -21,7 +21,8 @@ object SpatialInteractionDetectedEventArgs {
     __obj.asInstanceOf[SpatialInteractionDetectedEventArgs]
   }
   
-  extension [Self <: SpatialInteractionDetectedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialInteractionDetectedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setInteraction(value: Any): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
     

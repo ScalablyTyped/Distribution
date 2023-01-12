@@ -42,7 +42,8 @@ object `866` {
     __obj.asInstanceOf[`866`]
   }
   
-  extension [Self <: `866`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `866`] (val x: Self) extends AnyVal {
     
     inline def setParameters(
       value: RequestParameters & (Omit[

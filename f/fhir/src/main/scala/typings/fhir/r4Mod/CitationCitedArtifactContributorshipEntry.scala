@@ -81,7 +81,8 @@ object CitationCitedArtifactContributorshipEntry {
     __obj.asInstanceOf[CitationCitedArtifactContributorshipEntry]
   }
   
-  extension [Self <: CitationCitedArtifactContributorshipEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CitationCitedArtifactContributorshipEntry] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: js.Array[Address]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

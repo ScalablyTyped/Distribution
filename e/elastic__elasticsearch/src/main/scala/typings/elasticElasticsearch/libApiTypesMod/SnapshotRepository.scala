@@ -20,7 +20,8 @@ object SnapshotRepository {
     __obj.asInstanceOf[SnapshotRepository]
   }
   
-  extension [Self <: SnapshotRepository](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotRepository] (val x: Self) extends AnyVal {
     
     inline def setSettings(value: SnapshotRepositorySettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object NetworkEventArgs {
     __obj.asInstanceOf[NetworkEventArgs]
   }
   
-  extension [Self <: NetworkEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkEventArgs] (val x: Self) extends AnyVal {
     
     inline def setPlayer(value: Double): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
   }

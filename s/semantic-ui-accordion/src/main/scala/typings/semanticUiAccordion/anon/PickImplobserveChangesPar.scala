@@ -65,7 +65,8 @@ object PickImplobserveChangesPar {
     __obj.asInstanceOf[PickImplobserveChangesPar]
   }
   
-  extension [Self <: PickImplobserveChangesPar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplobserveChangesPar] (val x: Self) extends AnyVal {
     
     inline def setAnimateChildren(value: Boolean): Self = StObject.set(x, "animateChildren", value.asInstanceOf[js.Any])
     

@@ -83,7 +83,8 @@ object _InitializeParams {
     __obj.asInstanceOf[_InitializeParams]
   }
   
-  extension [Self <: _InitializeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: _InitializeParams] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: ClientCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     

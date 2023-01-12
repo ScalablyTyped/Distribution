@@ -64,7 +64,8 @@ object distSrcJsonSchemaValidationMod {
       __obj.asInstanceOf[IJSONSchemaError]
     }
     
-    extension [Self <: IJSONSchemaError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJSONSchemaError] (val x: Self) extends AnyVal {
       
       inline def setEntry(value: Any): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object distSrcJsonSchemaValidationMod {
       __obj.asInstanceOf[JSONSchemaObjectValidator]
     }
     
-    extension [Self <: JSONSchemaObjectValidator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONSchemaObjectValidator] (val x: Self) extends AnyVal {
       
       inline def setValidate(value: String => js.Array[IJSONSchemaError]): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     }
@@ -128,7 +130,8 @@ object distSrcJsonSchemaValidationMod {
       __obj.asInstanceOf[RecursiveValidator]
     }
     
-    extension [Self <: RecursiveValidator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecursiveValidator] (val x: Self) extends AnyVal {
       
       inline def setCreateError(value: (Any, Any, Any, String, Boolean) => JSONSchemaError): Self = StObject.set(x, "createError", js.Any.fromFunction5(value))
       

@@ -45,7 +45,8 @@ object BlockVariation {
     __obj.asInstanceOf[BlockVariation[Attributes]]
   }
   
-  extension [Self <: BlockVariation[?], Attributes /* <: BlockAttributes */](x: Self & BlockVariation[Attributes]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockVariation[?], Attributes /* <: BlockAttributes */] (val x: Self & BlockVariation[Attributes]) extends AnyVal {
     
     inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

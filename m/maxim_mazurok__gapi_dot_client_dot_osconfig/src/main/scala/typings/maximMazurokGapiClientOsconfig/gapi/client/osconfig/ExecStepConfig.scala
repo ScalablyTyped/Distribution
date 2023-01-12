@@ -28,7 +28,8 @@ object ExecStepConfig {
     __obj.asInstanceOf[ExecStepConfig]
   }
   
-  extension [Self <: ExecStepConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecStepConfig] (val x: Self) extends AnyVal {
     
     inline def setAllowedSuccessCodes(value: js.Array[Double]): Self = StObject.set(x, "allowedSuccessCodes", value.asInstanceOf[js.Any])
     

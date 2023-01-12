@@ -30,7 +30,8 @@ object libComponentsCoachmarkBeakBeakDotstylesMod {
       __obj.asInstanceOf[IBeakStyles]
     }
     
-    extension [Self <: IBeakStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBeakStyles] (val x: Self) extends AnyVal {
       
       inline def setBeak(value: IStyle): Self = StObject.set(x, "beak", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object VariableImpactExplanation {
     __obj.asInstanceOf[VariableImpactExplanation]
   }
   
-  extension [Self <: VariableImpactExplanation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariableImpactExplanation] (val x: Self) extends AnyVal {
     
     inline def setEventVariableName(value: String): Self = StObject.set(x, "eventVariableName", value.asInstanceOf[js.Any])
     

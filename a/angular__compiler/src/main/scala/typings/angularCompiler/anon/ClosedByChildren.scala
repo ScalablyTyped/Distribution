@@ -28,7 +28,8 @@ object ClosedByChildren {
     __obj.asInstanceOf[ClosedByChildren]
   }
   
-  extension [Self <: ClosedByChildren](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClosedByChildren] (val x: Self) extends AnyVal {
     
     inline def setClosedByChildren(value: js.Array[String]): Self = StObject.set(x, "closedByChildren", value.asInstanceOf[js.Any])
     

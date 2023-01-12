@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[InterceptorOptions[T]]
     }
     
-    extension [Self <: InterceptorOptions[?], T](x: Self & InterceptorOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterceptorOptions[?], T] (val x: Self & InterceptorOptions[T]) extends AnyVal {
       
       inline def setGetToken(value: () => String | js.Promise[String]): Self = StObject.set(x, "getToken", js.Any.fromFunction0(value))
       
@@ -67,7 +68,8 @@ object mod {
       __obj.asInstanceOf[TokenCacheOptions[T]]
     }
     
-    extension [Self <: TokenCacheOptions[?], T](x: Self & TokenCacheOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenCacheOptions[?], T] (val x: Self & TokenCacheOptions[T]) extends AnyVal {
       
       inline def setGetMaxAge(value: js.Function0[Double] | (js.Function1[/* el */ T, Double])): Self = StObject.set(x, "getMaxAge", value.asInstanceOf[js.Any])
       

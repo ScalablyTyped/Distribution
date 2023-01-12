@@ -50,7 +50,8 @@ object libSkeletonSkeletonMod extends Shortcut {
       __obj.asInstanceOf[CompoundedComponent]
     }
     
-    extension [Self <: CompoundedComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompoundedComponent] (val x: Self) extends AnyVal {
       
       inline def setAvatar(value: FC[AvatarProps]): Self = StObject.set(x, "Avatar", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object libSkeletonSkeletonMod extends Shortcut {
       __obj.asInstanceOf[SkeletonAvatarProps]
     }
     
-    extension [Self <: SkeletonAvatarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkeletonAvatarProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -137,7 +139,8 @@ object libSkeletonSkeletonMod extends Shortcut {
       __obj.asInstanceOf[SkeletonProps]
     }
     
-    extension [Self <: SkeletonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkeletonProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object typesRepositoryNameExistsExceptionMod {
       __obj.asInstanceOf[RepositoryNameExistsException]
     }
     
-    extension [Self <: RepositoryNameExistsException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RepositoryNameExistsException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryNameExistsException

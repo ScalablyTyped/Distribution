@@ -27,7 +27,8 @@ object CreateExpansionsParams {
     __obj.asInstanceOf[CreateExpansionsParams]
   }
   
-  extension [Self <: CreateExpansionsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateExpansionsParams] (val x: Self) extends AnyVal {
     
     inline def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
     

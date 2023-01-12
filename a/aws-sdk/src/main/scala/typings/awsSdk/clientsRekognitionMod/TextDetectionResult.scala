@@ -23,7 +23,8 @@ object TextDetectionResult {
     __obj.asInstanceOf[TextDetectionResult]
   }
   
-  extension [Self <: TextDetectionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextDetectionResult] (val x: Self) extends AnyVal {
     
     inline def setTextDetection(value: TextDetection): Self = StObject.set(x, "TextDetection", value.asInstanceOf[js.Any])
     

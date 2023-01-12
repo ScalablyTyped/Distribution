@@ -17,7 +17,8 @@ object Jobids {
     __obj.asInstanceOf[Jobids]
   }
   
-  extension [Self <: Jobids](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Jobids] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

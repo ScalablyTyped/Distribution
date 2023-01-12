@@ -50,7 +50,8 @@ object TitleBackgroundLayer {
     __obj.asInstanceOf[TitleBackgroundLayer]
   }
   
-  extension [Self <: TitleBackgroundLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TitleBackgroundLayer] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: BackgroundLayer): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

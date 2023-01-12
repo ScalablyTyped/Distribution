@@ -146,7 +146,8 @@ object libAsyncMod {
       __obj.asInstanceOf[ICancelable[T]]
     }
     
-    extension [Self <: ICancelable[?], T /* <: js.Function1[/* repeated */ Any, Any] */](x: Self & ICancelable[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICancelable[?], T /* <: js.Function1[/* repeated */ Any, Any] */] (val x: Self & ICancelable[T]) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       

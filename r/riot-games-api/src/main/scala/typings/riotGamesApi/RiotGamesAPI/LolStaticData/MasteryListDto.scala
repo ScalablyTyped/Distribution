@@ -28,7 +28,8 @@ object MasteryListDto {
     __obj.asInstanceOf[MasteryListDto]
   }
   
-  extension [Self <: MasteryListDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MasteryListDto] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[StringDictionary[MasteryDto]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

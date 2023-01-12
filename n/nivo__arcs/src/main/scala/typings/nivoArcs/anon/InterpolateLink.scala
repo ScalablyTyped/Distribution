@@ -48,7 +48,8 @@ object InterpolateLink {
     __obj.asInstanceOf[InterpolateLink]
   }
   
-  extension [Self <: InterpolateLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterpolateLink] (val x: Self) extends AnyVal {
     
     inline def setInterpolateLink(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['startAngle']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['endAngle']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['innerRadius']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['outerRadius']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['offset']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['diagonalLength']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['straightLength']> */ Any) => Any

@@ -75,7 +75,8 @@ object ResourceServer {
     __obj.asInstanceOf[ResourceServer]
   }
   
-  extension [Self <: ResourceServer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceServer] (val x: Self) extends AnyVal {
     
     inline def setAllow_offline_access(value: Boolean): Self = StObject.set(x, "allow_offline_access", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Classifications {
     __obj.asInstanceOf[Classifications]
   }
   
-  extension [Self <: Classifications](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Classifications] (val x: Self) extends AnyVal {
     
     inline def setEndOfLineState(value: EndOfLineState): Self = StObject.set(x, "endOfLineState", value.asInstanceOf[js.Any])
     

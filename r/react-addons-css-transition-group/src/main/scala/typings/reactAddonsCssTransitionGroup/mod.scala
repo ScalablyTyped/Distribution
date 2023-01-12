@@ -57,7 +57,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[CSSTransitionGroupProps]
       }
       
-      extension [Self <: CSSTransitionGroupProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CSSTransitionGroupProps] (val x: Self) extends AnyVal {
         
         inline def setTransitionAppear(value: Boolean): Self = StObject.set(x, "transitionAppear", value.asInstanceOf[js.Any])
         
@@ -108,7 +109,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[CSSTransitionGroupTransitionName]
       }
       
-      extension [Self <: CSSTransitionGroupTransitionName](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CSSTransitionGroupTransitionName] (val x: Self) extends AnyVal {
         
         inline def setAppear(value: String): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
         

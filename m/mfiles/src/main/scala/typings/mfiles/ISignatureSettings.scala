@@ -51,7 +51,8 @@ object ISignatureSettings {
     __obj.asInstanceOf[ISignatureSettings]
   }
   
-  extension [Self <: ISignatureSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISignatureSettings] (val x: Self) extends AnyVal {
     
     inline def setAdditionalInfo(value: String): Self = StObject.set(x, "AdditionalInfo", value.asInstanceOf[js.Any])
     

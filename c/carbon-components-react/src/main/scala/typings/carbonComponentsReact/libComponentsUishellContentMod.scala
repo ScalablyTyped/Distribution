@@ -605,7 +605,8 @@ object libComponentsUishellContentMod {
       __obj.asInstanceOf[ContentBaseProps]
     }
     
-    extension [Self <: ContentBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentBaseProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -918,7 +919,8 @@ object libComponentsUishellContentMod {
       __obj.asInstanceOf[ContentDefaultProps]
     }
     
-    extension [Self <: ContentDefaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentDefaultProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

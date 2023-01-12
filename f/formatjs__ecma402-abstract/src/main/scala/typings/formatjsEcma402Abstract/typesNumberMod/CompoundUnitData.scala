@@ -19,7 +19,8 @@ object CompoundUnitData {
     __obj.asInstanceOf[CompoundUnitData]
   }
   
-  extension [Self <: CompoundUnitData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompoundUnitData] (val x: Self) extends AnyVal {
     
     inline def setLong(value: String): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     

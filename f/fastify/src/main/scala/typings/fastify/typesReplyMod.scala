@@ -228,7 +228,8 @@ object typesReplyMod {
       __obj.asInstanceOf[ReplyGenericInterface]
     }
     
-    extension [Self <: ReplyGenericInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplyGenericInterface] (val x: Self) extends AnyVal {
       
       inline def setReply(value: ReplyDefault): Self = StObject.set(x, "Reply", value.asInstanceOf[js.Any])
       

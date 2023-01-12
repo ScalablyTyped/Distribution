@@ -36,7 +36,8 @@ object LinkPathTransform {
     __obj.asInstanceOf[LinkPathTransform]
   }
   
-  extension [Self <: LinkPathTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkPathTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: String | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

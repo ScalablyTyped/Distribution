@@ -126,7 +126,8 @@ object typesTableDescriptionMod {
       __obj.asInstanceOf[TableDescription]
     }
     
-    extension [Self <: TableDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableDescription] (val x: Self) extends AnyVal {
       
       inline def setAttributeDefinitions(value: js.Array[AttributeDefinition] | js.Iterable[AttributeDefinition]): Self = StObject.set(x, "AttributeDefinitions", value.asInstanceOf[js.Any])
       
@@ -271,7 +272,8 @@ object typesTableDescriptionMod {
       __obj.asInstanceOf[UnmarshalledTableDescription]
     }
     
-    extension [Self <: UnmarshalledTableDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledTableDescription] (val x: Self) extends AnyVal {
       
       inline def setAttributeDefinitions(value: js.Array[UnmarshalledAttributeDefinition]): Self = StObject.set(x, "AttributeDefinitions", value.asInstanceOf[js.Any])
       

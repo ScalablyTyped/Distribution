@@ -84,7 +84,8 @@ object mod {
       __obj.asInstanceOf[ProjectConfig]
     }
     
-    extension [Self <: ProjectConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectConfig] (val x: Self) extends AnyVal {
       
       inline def setPackages(value: js.Array[String]): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
       

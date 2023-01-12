@@ -23,7 +23,8 @@ object HyperbandStrategyConfig {
     __obj.asInstanceOf[HyperbandStrategyConfig]
   }
   
-  extension [Self <: HyperbandStrategyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HyperbandStrategyConfig] (val x: Self) extends AnyVal {
     
     inline def setMaxResource(value: HyperbandStrategyMaxResource): Self = StObject.set(x, "MaxResource", value.asInstanceOf[js.Any])
     

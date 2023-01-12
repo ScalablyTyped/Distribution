@@ -16,7 +16,8 @@ object RecordingAppender {
     __obj.asInstanceOf[RecordingAppender]
   }
   
-  extension [Self <: RecordingAppender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordingAppender] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.log4js.log4jsStrings.recording): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

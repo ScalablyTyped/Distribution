@@ -64,7 +64,8 @@ object XCommandEnvironment {
     __obj.asInstanceOf[XCommandEnvironment]
   }
   
-  extension [Self <: XCommandEnvironment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCommandEnvironment] (val x: Self) extends AnyVal {
     
     inline def setGetInteractionHandler(value: () => XInteractionHandler): Self = StObject.set(x, "getInteractionHandler", js.Any.fromFunction0(value))
     

@@ -24,7 +24,8 @@ object HighlightSpan {
     __obj.asInstanceOf[HighlightSpan]
   }
   
-  extension [Self <: HighlightSpan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighlightSpan] (val x: Self) extends AnyVal {
     
     inline def setContextSpan(value: TextSpan): Self = StObject.set(x, "contextSpan", value.asInstanceOf[js.Any])
     

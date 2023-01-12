@@ -23,7 +23,8 @@ object NotebookEditorSelectionChangeEvent {
     __obj.asInstanceOf[NotebookEditorSelectionChangeEvent]
   }
   
-  extension [Self <: NotebookEditorSelectionChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookEditorSelectionChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setNotebookEditor(value: NotebookEditor): Self = StObject.set(x, "notebookEditor", value.asInstanceOf[js.Any])
     

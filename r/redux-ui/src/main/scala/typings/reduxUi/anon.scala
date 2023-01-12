@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Pure]
     }
     
-    extension [Self <: Pure](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pure] (val x: Self) extends AnyVal {
       
       inline def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object TypeofNextActionVerifyWithMicrodeposits {
     __obj.asInstanceOf[TypeofNextActionVerifyWithMicrodeposits]
   }
   
-  extension [Self <: TypeofNextActionVerifyWithMicrodeposits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofNextActionVerifyWithMicrodeposits] (val x: Self) extends AnyVal {
     
     inline def setVerifyWithMicrodeposits(value: Any): Self = StObject.set(x, "VerifyWithMicrodeposits", value.asInstanceOf[js.Any])
   }

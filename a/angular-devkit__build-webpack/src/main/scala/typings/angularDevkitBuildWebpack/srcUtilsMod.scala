@@ -38,7 +38,8 @@ object srcUtilsMod {
       __obj.asInstanceOf[EmittedFiles]
     }
     
-    extension [Self <: EmittedFiles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmittedFiles] (val x: Self) extends AnyVal {
       
       inline def setAsset(value: Boolean): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
       

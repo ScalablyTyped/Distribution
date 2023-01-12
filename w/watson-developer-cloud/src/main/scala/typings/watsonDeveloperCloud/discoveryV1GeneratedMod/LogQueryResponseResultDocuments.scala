@@ -20,7 +20,8 @@ object LogQueryResponseResultDocuments {
     __obj.asInstanceOf[LogQueryResponseResultDocuments]
   }
   
-  extension [Self <: LogQueryResponseResultDocuments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogQueryResponseResultDocuments] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DriveItemsSelectedActionResponse {
     __obj.asInstanceOf[DriveItemsSelectedActionResponse]
   }
   
-  extension [Self <: DriveItemsSelectedActionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DriveItemsSelectedActionResponse] (val x: Self) extends AnyVal {
     
     inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
   }

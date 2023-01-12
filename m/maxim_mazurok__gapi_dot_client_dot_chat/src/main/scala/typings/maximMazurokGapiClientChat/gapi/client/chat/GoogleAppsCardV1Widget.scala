@@ -69,7 +69,8 @@ object GoogleAppsCardV1Widget {
     __obj.asInstanceOf[GoogleAppsCardV1Widget]
   }
   
-  extension [Self <: GoogleAppsCardV1Widget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsCardV1Widget] (val x: Self) extends AnyVal {
     
     inline def setButtonList(value: GoogleAppsCardV1ButtonList): Self = StObject.set(x, "buttonList", value.asInstanceOf[js.Any])
     

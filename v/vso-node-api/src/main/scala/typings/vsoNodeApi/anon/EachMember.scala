@@ -29,7 +29,8 @@ object EachMember {
     __obj.asInstanceOf[EachMember]
   }
   
-  extension [Self <: EachMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EachMember] (val x: Self) extends AnyVal {
     
     inline def setEachMember(value: scala.Double): Self = StObject.set(x, "eachMember", value.asInstanceOf[js.Any])
     

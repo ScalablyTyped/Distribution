@@ -56,7 +56,8 @@ object mcryptMod {
       __obj.asInstanceOf[Cipher]
     }
     
-    extension [Self <: Cipher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cipher] (val x: Self) extends AnyVal {
       
       inline def `setRijndael-128`(value: CipherBody): Self = StObject.set(x, "rijndael-128", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object mcryptMod {
       __obj.asInstanceOf[CipherBody]
     }
     
-    extension [Self <: CipherBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CipherBody] (val x: Self) extends AnyVal {
       
       inline def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
       

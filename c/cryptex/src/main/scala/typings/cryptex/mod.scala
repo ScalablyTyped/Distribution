@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[CryptexConfig]
     }
     
-    extension [Self <: CryptexConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CryptexConfig] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object mod {
       __obj.asInstanceOf[CryptexOpts]
     }
     
-    extension [Self <: CryptexOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CryptexOpts] (val x: Self) extends AnyVal {
       
       inline def setCacheKey(value: Boolean): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
       

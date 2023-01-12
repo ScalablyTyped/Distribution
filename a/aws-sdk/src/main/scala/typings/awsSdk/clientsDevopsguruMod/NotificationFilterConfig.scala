@@ -23,7 +23,8 @@ object NotificationFilterConfig {
     __obj.asInstanceOf[NotificationFilterConfig]
   }
   
-  extension [Self <: NotificationFilterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationFilterConfig] (val x: Self) extends AnyVal {
     
     inline def setMessageTypes(value: NotificationMessageTypes): Self = StObject.set(x, "MessageTypes", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object PartialMandateData {
     __obj.asInstanceOf[PartialMandateData]
   }
   
-  extension [Self <: PartialMandateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMandateData] (val x: Self) extends AnyVal {
     
     inline def setBankAccountId(value: String): Self = StObject.set(x, "BankAccountId", value.asInstanceOf[js.Any])
     

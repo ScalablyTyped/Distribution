@@ -103,7 +103,8 @@ object PaymentReconciliation {
     __obj.asInstanceOf[PaymentReconciliation]
   }
   
-  extension [Self <: PaymentReconciliation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaymentReconciliation] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     

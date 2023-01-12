@@ -20,7 +20,8 @@ object Square {
     __obj.asInstanceOf[Square]
   }
   
-  extension [Self <: Square](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Square] (val x: Self) extends AnyVal {
     
     inline def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
   }

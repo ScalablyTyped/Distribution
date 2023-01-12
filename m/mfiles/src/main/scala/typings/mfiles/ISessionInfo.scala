@@ -117,7 +117,8 @@ object ISessionInfo {
     __obj.asInstanceOf[ISessionInfo]
   }
   
-  extension [Self <: ISessionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISessionInfo] (val x: Self) extends AnyVal {
     
     inline def setACLMode(value: MFACLMode): Self = StObject.set(x, "ACLMode", value.asInstanceOf[js.Any])
     

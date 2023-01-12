@@ -78,7 +78,8 @@ object ReportGenerator {
     __obj.asInstanceOf[ReportGenerator]
   }
   
-  extension [Self <: ReportGenerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportGenerator] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     

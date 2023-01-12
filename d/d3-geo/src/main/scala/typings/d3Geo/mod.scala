@@ -189,7 +189,8 @@ object mod {
       __obj.asInstanceOf[ExtendedFeature[GeometryType, Properties]]
     }
     
-    extension [Self <: ExtendedFeature[?, ?], GeometryType /* <: GeoGeometryObjects | Null */, Properties /* <: GeoJsonProperties */](x: Self & (ExtendedFeature[GeometryType, Properties])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendedFeature[?, ?], GeometryType /* <: GeoGeometryObjects | Null */, Properties /* <: GeoJsonProperties */] (val x: Self & (ExtendedFeature[GeometryType, Properties])) extends AnyVal {
       
       inline def setGeometry(value: GeometryType): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
@@ -215,7 +216,8 @@ object mod {
       __obj.asInstanceOf[ExtendedFeatureCollection[FeatureType]]
     }
     
-    extension [Self <: ExtendedFeatureCollection[?], FeatureType /* <: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties] */](x: Self & ExtendedFeatureCollection[FeatureType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendedFeatureCollection[?], FeatureType /* <: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties] */] (val x: Self & ExtendedFeatureCollection[FeatureType]) extends AnyVal {
       
       inline def setFeatures(value: js.Array[FeatureType]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
@@ -241,7 +243,8 @@ object mod {
       __obj.asInstanceOf[ExtendedGeometryCollection[GeometryType]]
     }
     
-    extension [Self <: ExtendedGeometryCollection[?], GeometryType /* <: GeoGeometryObjects */](x: Self & ExtendedGeometryCollection[GeometryType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendedGeometryCollection[?], GeometryType /* <: GeoGeometryObjects */] (val x: Self & ExtendedGeometryCollection[GeometryType]) extends AnyVal {
       
       inline def setBbox(value: js.Array[Double]): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
@@ -1032,7 +1035,8 @@ object mod {
       __obj.asInstanceOf[GeoSphere]
     }
     
-    extension [Self <: GeoSphere](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoSphere] (val x: Self) extends AnyVal {
       
       inline def setType(value: Sphere): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -1056,7 +1060,8 @@ object mod {
       __obj.asInstanceOf[GeoStreamWrapper]
     }
     
-    extension [Self <: GeoStreamWrapper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoStreamWrapper] (val x: Self) extends AnyVal {
       
       inline def setStream(value: GeoStream_ => GeoStream_): Self = StObject.set(x, "stream", js.Any.fromFunction1(value))
     }
@@ -1160,7 +1165,8 @@ object mod {
       __obj.asInstanceOf[GeoTransformPrototype]
     }
     
-    extension [Self <: GeoTransformPrototype](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoTransformPrototype] (val x: Self) extends AnyVal {
       
       inline def setLineEnd(value: js.ThisFunction0[/* this */ GeoTransformPrototype & Stream, Unit]): Self = StObject.set(x, "lineEnd", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object RefreshControlPropsIOS {
     __obj.asInstanceOf[RefreshControlPropsIOS]
   }
   
-  extension [Self <: RefreshControlPropsIOS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshControlPropsIOS] (val x: Self) extends AnyVal {
     
     inline def setTintColor(value: ColorValue): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
     

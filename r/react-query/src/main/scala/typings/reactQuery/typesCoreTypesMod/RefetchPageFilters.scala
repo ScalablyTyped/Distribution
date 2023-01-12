@@ -22,7 +22,8 @@ object RefetchPageFilters {
     __obj.asInstanceOf[RefetchPageFilters[TPageData]]
   }
   
-  extension [Self <: RefetchPageFilters[?], TPageData](x: Self & RefetchPageFilters[TPageData]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefetchPageFilters[?], TPageData] (val x: Self & RefetchPageFilters[TPageData]) extends AnyVal {
     
     inline def setRefetchPage(
       value: (/* lastPage */ TPageData, /* index */ Double, /* allPages */ js.Array[TPageData]) => Boolean

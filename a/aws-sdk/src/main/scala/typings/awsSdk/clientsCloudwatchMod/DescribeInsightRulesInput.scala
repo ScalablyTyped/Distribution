@@ -23,7 +23,8 @@ object DescribeInsightRulesInput {
     __obj.asInstanceOf[DescribeInsightRulesInput]
   }
   
-  extension [Self <: DescribeInsightRulesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInsightRulesInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: InsightRuleMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

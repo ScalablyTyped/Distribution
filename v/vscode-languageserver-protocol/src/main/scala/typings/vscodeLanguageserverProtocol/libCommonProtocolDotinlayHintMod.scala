@@ -98,7 +98,8 @@ object libCommonProtocolDotinlayHintMod {
       __obj.asInstanceOf[InlayHintClientCapabilities]
     }
     
-    extension [Self <: InlayHintClientCapabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlayHintClientCapabilities] (val x: Self) extends AnyVal {
       
       inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
       
@@ -127,7 +128,8 @@ object libCommonProtocolDotinlayHintMod {
       __obj.asInstanceOf[InlayHintOptions]
     }
     
-    extension [Self <: InlayHintOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlayHintOptions] (val x: Self) extends AnyVal {
       
       inline def setResolveProvider(value: Boolean): Self = StObject.set(x, "resolveProvider", value.asInstanceOf[js.Any])
       
@@ -156,7 +158,8 @@ object libCommonProtocolDotinlayHintMod {
       __obj.asInstanceOf[InlayHintParams]
     }
     
-    extension [Self <: InlayHintParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlayHintParams] (val x: Self) extends AnyVal {
       
       inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
@@ -186,7 +189,8 @@ object libCommonProtocolDotinlayHintMod {
       __obj.asInstanceOf[InlayHintWorkspaceClientCapabilities]
     }
     
-    extension [Self <: InlayHintWorkspaceClientCapabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlayHintWorkspaceClientCapabilities] (val x: Self) extends AnyVal {
       
       inline def setRefreshSupport(value: Boolean): Self = StObject.set(x, "refreshSupport", value.asInstanceOf[js.Any])
       

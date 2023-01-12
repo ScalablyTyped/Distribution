@@ -30,7 +30,8 @@ object HitKeywords {
     __obj.asInstanceOf[HitKeywords]
   }
   
-  extension [Self <: HitKeywords](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HitKeywords] (val x: Self) extends AnyVal {
     
     inline def setHitKeywords(value: js.Array[String]): Self = StObject.set(x, "hitKeywords", value.asInstanceOf[js.Any])
     

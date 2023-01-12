@@ -23,7 +23,8 @@ object GameProperty {
     __obj.asInstanceOf[GameProperty]
   }
   
-  extension [Self <: GameProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GameProperty] (val x: Self) extends AnyVal {
     
     inline def setKey(value: GamePropertyKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

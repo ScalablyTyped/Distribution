@@ -23,7 +23,8 @@ object CurrentCell {
     __obj.asInstanceOf[CurrentCell[K]]
   }
   
-  extension [Self <: CurrentCell[?], K](x: Self & CurrentCell[K]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentCell[?], K] (val x: Self & CurrentCell[K]) extends AnyVal {
     
     inline def setCurrentCell(value: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.CurrentCell[K]): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object OpenFilePickerOptions {
     __obj.asInstanceOf[OpenFilePickerOptions]
   }
   
-  extension [Self <: OpenFilePickerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenFilePickerOptions] (val x: Self) extends AnyVal {
     
     inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     

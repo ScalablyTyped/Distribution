@@ -21,7 +21,8 @@ object BgEventProps {
     __obj.asInstanceOf[BgEventProps]
   }
   
-  extension [Self <: BgEventProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BgEventProps] (val x: Self) extends AnyVal {
     
     inline def setIsFuture(value: Boolean): Self = StObject.set(x, "isFuture", value.asInstanceOf[js.Any])
     

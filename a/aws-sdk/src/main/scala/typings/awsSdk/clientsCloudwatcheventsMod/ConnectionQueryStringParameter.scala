@@ -28,7 +28,8 @@ object ConnectionQueryStringParameter {
     __obj.asInstanceOf[ConnectionQueryStringParameter]
   }
   
-  extension [Self <: ConnectionQueryStringParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionQueryStringParameter] (val x: Self) extends AnyVal {
     
     inline def setIsValueSecret(value: Boolean): Self = StObject.set(x, "IsValueSecret", value.asInstanceOf[js.Any])
     

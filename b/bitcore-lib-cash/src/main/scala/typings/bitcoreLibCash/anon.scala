@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[PrevHash]
     }
     
-    extension [Self <: PrevHash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrevHash] (val x: Self) extends AnyVal {
       
       inline def setPrevHash(value: String): Self = StObject.set(x, "prevHash", value.asInstanceOf[js.Any])
       
@@ -55,7 +57,8 @@ object anon {
       __obj.asInstanceOf[Reverse]
     }
     
-    extension [Self <: Reverse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reverse] (val x: Self) extends AnyVal {
       
       inline def setReverse(value: Any => Any): Self = StObject.set(x, "reverse", js.Any.fromFunction1(value))
     }

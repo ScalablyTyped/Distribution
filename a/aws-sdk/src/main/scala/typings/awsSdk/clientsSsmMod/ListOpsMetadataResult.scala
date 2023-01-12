@@ -23,7 +23,8 @@ object ListOpsMetadataResult {
     __obj.asInstanceOf[ListOpsMetadataResult]
   }
   
-  extension [Self <: ListOpsMetadataResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListOpsMetadataResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

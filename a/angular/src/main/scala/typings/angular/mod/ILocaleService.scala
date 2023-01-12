@@ -32,7 +32,8 @@ object ILocaleService {
     __obj.asInstanceOf[ILocaleService]
   }
   
-  extension [Self <: ILocaleService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILocaleService] (val x: Self) extends AnyVal {
     
     inline def setDATETIME_FORMATS(value: ILocaleDateTimeFormatDescriptor): Self = StObject.set(x, "DATETIME_FORMATS", value.asInstanceOf[js.Any])
     

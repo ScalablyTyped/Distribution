@@ -94,7 +94,8 @@ object Availability {
     __obj.asInstanceOf[Availability]
   }
   
-  extension [Self <: Availability](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Availability] (val x: Self) extends AnyVal {
     
     inline def setAvailability(value: CurrentMonth): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     

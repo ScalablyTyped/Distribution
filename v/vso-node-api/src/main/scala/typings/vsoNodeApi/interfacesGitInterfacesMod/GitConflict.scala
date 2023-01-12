@@ -54,7 +54,8 @@ object GitConflict {
     __obj.asInstanceOf[GitConflict]
   }
   
-  extension [Self <: GitConflict](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitConflict] (val x: Self) extends AnyVal {
     
     inline def setConflictId(value: Double): Self = StObject.set(x, "conflictId", value.asInstanceOf[js.Any])
     

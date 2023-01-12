@@ -73,7 +73,8 @@ object IColorPalette {
     __obj.asInstanceOf[IColorPalette]
   }
   
-  extension [Self <: IColorPalette](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IColorPalette] (val x: Self) extends AnyVal {
     
     inline def setAmber(value: IPalette): Self = StObject.set(x, "amber", value.asInstanceOf[js.Any])
     

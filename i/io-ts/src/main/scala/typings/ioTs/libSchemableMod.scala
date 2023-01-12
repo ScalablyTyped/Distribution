@@ -115,7 +115,8 @@ object libSchemableMod {
       __obj.asInstanceOf[Schemable[S]]
     }
     
-    extension [Self <: Schemable[?], S](x: Self & Schemable[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Schemable[?], S] (val x: Self & Schemable[S]) extends AnyVal {
       
       inline def setArray(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, A> */ Any => Any
@@ -287,7 +288,8 @@ object libSchemableMod {
       __obj.asInstanceOf[Schemable1[S]]
     }
     
-    extension [Self <: Schemable1[?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & Schemable1[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Schemable1[?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & Schemable1[S]) extends AnyVal {
       
       inline def setArray(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, A> */ Any => Any
@@ -459,7 +461,8 @@ object libSchemableMod {
       __obj.asInstanceOf[Schemable2C[S, E]]
     }
     
-    extension [Self <: Schemable2C[?, ?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (Schemable2C[S, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Schemable2C[?, ?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (Schemable2C[S, E])) extends AnyVal {
       
       inline def setArray(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, A> */ Any => Any
@@ -550,7 +553,8 @@ object libSchemableMod {
       __obj.asInstanceOf[WithRefine[S]]
     }
     
-    extension [Self <: WithRefine[?], S](x: Self & WithRefine[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithRefine[?], S] (val x: Self & WithRefine[S]) extends AnyVal {
       
       inline def setRefine(
         value: (Refinement[Any, Any], String) => js.Function1[
@@ -580,7 +584,8 @@ object libSchemableMod {
       __obj.asInstanceOf[WithRefine1[S]]
     }
     
-    extension [Self <: WithRefine1[?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & WithRefine1[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithRefine1[?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & WithRefine1[S]) extends AnyVal {
       
       inline def setRefine(
         value: (Refinement[Any, Any], String) => js.Function1[
@@ -610,7 +615,8 @@ object libSchemableMod {
       __obj.asInstanceOf[WithRefine2C[S, E]]
     }
     
-    extension [Self <: WithRefine2C[?, ?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (WithRefine2C[S, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithRefine2C[?, ?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (WithRefine2C[S, E])) extends AnyVal {
       
       inline def setRefine(
         value: (Refinement[Any, Any], String) => js.Function1[
@@ -636,7 +642,8 @@ object libSchemableMod {
       __obj.asInstanceOf[WithUnion[S]]
     }
     
-    extension [Self <: WithUnion[?], S](x: Self & WithUnion[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithUnion[?], S] (val x: Self & WithUnion[S]) extends AnyVal {
       
       inline def setUnion(
         value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof A ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, A[K]> * / any} */ js.Any => Any
@@ -659,7 +666,8 @@ object libSchemableMod {
       __obj.asInstanceOf[WithUnion1[S]]
     }
     
-    extension [Self <: WithUnion1[?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & WithUnion1[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithUnion1[?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & WithUnion1[S]) extends AnyVal {
       
       inline def setUnion(
         value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof A ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, A[K]> * / any} */ js.Any => Any
@@ -682,7 +690,8 @@ object libSchemableMod {
       __obj.asInstanceOf[WithUnion2C[S, E]]
     }
     
-    extension [Self <: WithUnion2C[?, ?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (WithUnion2C[S, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithUnion2C[?, ?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (WithUnion2C[S, E])) extends AnyVal {
       
       inline def setUnion(
         value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof A ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, A[K]> * / any} */ js.Any => Any
@@ -706,7 +715,8 @@ object libSchemableMod {
       __obj.asInstanceOf[WithUnknownContainers[S]]
     }
     
-    extension [Self <: WithUnknownContainers[?], S](x: Self & WithUnknownContainers[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithUnknownContainers[?], S] (val x: Self & WithUnknownContainers[S]) extends AnyVal {
       
       inline def setUnknownArray(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, Array<unknown>> */ Any
@@ -734,7 +744,8 @@ object libSchemableMod {
       __obj.asInstanceOf[WithUnknownContainers1[S]]
     }
     
-    extension [Self <: WithUnknownContainers1[?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & WithUnknownContainers1[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithUnknownContainers1[?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & WithUnknownContainers1[S]) extends AnyVal {
       
       inline def setUnknownArray(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, Array<unknown>> */ Any
@@ -762,7 +773,8 @@ object libSchemableMod {
       __obj.asInstanceOf[WithUnknownContainers2C[S, E]]
     }
     
-    extension [Self <: WithUnknownContainers2C[?, ?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (WithUnknownContainers2C[S, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithUnknownContainers2C[?, ?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (WithUnknownContainers2C[S, E])) extends AnyVal {
       
       inline def setUnknownArray(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, Array<unknown>> */ Any

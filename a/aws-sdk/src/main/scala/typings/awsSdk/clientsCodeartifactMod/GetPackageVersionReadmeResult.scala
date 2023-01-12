@@ -44,7 +44,8 @@ object GetPackageVersionReadmeResult {
     __obj.asInstanceOf[GetPackageVersionReadmeResult]
   }
   
-  extension [Self <: GetPackageVersionReadmeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPackageVersionReadmeResult] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: PackageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

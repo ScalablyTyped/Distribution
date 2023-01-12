@@ -20,7 +20,8 @@ object ChaptersTrackMenuItemOptions {
     __obj.asInstanceOf[ChaptersTrackMenuItemOptions]
   }
   
-  extension [Self <: ChaptersTrackMenuItemOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChaptersTrackMenuItemOptions] (val x: Self) extends AnyVal {
     
     inline def setCue(value: TextTrackCue): Self = StObject.set(x, "cue", value.asInstanceOf[js.Any])
     

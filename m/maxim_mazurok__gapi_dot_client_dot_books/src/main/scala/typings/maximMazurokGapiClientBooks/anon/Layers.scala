@@ -16,7 +16,8 @@ object Layers {
     __obj.asInstanceOf[Layers]
   }
   
-  extension [Self <: Layers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Layers] (val x: Self) extends AnyVal {
     
     inline def setLayers(value: js.Array[VolumeAnnotationsVersion]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     

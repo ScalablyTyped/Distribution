@@ -76,7 +76,8 @@ object LinearGradientBackground {
     __obj.asInstanceOf[LinearGradientBackground]
   }
   
-  extension [Self <: LinearGradientBackground](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinearGradientBackground] (val x: Self) extends AnyVal {
     
     inline def setStops(value: Record[String, String]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     

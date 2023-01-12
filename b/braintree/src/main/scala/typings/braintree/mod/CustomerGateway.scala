@@ -30,7 +30,8 @@ object CustomerGateway {
     __obj.asInstanceOf[CustomerGateway]
   }
   
-  extension [Self <: CustomerGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerGateway] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: CustomerCreateRequest => js.Promise[ValidatedResponse[Customer]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     

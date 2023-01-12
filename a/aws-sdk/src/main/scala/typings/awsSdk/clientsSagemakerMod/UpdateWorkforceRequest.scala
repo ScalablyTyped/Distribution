@@ -33,7 +33,8 @@ object UpdateWorkforceRequest {
     __obj.asInstanceOf[UpdateWorkforceRequest]
   }
   
-  extension [Self <: UpdateWorkforceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateWorkforceRequest] (val x: Self) extends AnyVal {
     
     inline def setOidcConfig(value: OidcConfig): Self = StObject.set(x, "OidcConfig", value.asInstanceOf[js.Any])
     

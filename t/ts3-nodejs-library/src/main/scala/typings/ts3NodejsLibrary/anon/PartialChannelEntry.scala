@@ -57,7 +57,8 @@ object PartialChannelEntry {
     __obj.asInstanceOf[PartialChannelEntry]
   }
   
-  extension [Self <: PartialChannelEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialChannelEntry] (val x: Self) extends AnyVal {
     
     inline def setChannelBannerGfxUrl(value: String): Self = StObject.set(x, "channelBannerGfxUrl", value.asInstanceOf[js.Any])
     

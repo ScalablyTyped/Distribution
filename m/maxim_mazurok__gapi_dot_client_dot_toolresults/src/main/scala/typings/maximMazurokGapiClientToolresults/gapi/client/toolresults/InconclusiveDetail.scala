@@ -28,7 +28,8 @@ object InconclusiveDetail {
     __obj.asInstanceOf[InconclusiveDetail]
   }
   
-  extension [Self <: InconclusiveDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InconclusiveDetail] (val x: Self) extends AnyVal {
     
     inline def setAbortedByUser(value: Boolean): Self = StObject.set(x, "abortedByUser", value.asInstanceOf[js.Any])
     

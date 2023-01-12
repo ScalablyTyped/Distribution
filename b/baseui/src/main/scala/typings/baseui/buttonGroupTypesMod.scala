@@ -38,7 +38,8 @@ object buttonGroupTypesMod {
       __obj.asInstanceOf[ButtonGroupOverrides]
     }
     
-    extension [Self <: ButtonGroupOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonGroupOverrides] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: Override[Any]): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object buttonGroupTypesMod {
       __obj.asInstanceOf[ButtonGroupProps]
     }
     
-    extension [Self <: ButtonGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonGroupProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object buttonGroupTypesMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setSelected(value: js.Array[Double]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
@@ -204,7 +207,8 @@ object buttonGroupTypesMod {
       __obj.asInstanceOf[StatefulButtonGroupProps]
     }
     
-    extension [Self <: StatefulButtonGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulButtonGroupProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
@@ -290,7 +294,8 @@ object buttonGroupTypesMod {
       __obj.asInstanceOf[StatefulContainerProps]
     }
     
-    extension [Self <: StatefulContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulContainerProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       

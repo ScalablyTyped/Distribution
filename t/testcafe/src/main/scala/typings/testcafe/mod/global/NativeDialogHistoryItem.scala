@@ -35,7 +35,8 @@ object NativeDialogHistoryItem {
     __obj.asInstanceOf[NativeDialogHistoryItem]
   }
   
-  extension [Self <: NativeDialogHistoryItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeDialogHistoryItem] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

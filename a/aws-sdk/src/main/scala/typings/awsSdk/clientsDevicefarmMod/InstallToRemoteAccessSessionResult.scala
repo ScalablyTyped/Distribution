@@ -18,7 +18,8 @@ object InstallToRemoteAccessSessionResult {
     __obj.asInstanceOf[InstallToRemoteAccessSessionResult]
   }
   
-  extension [Self <: InstallToRemoteAccessSessionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstallToRemoteAccessSessionResult] (val x: Self) extends AnyVal {
     
     inline def setAppUpload(value: Upload): Self = StObject.set(x, "appUpload", value.asInstanceOf[js.Any])
     

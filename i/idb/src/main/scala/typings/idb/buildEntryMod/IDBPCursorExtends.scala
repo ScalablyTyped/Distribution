@@ -20,7 +20,8 @@ object IDBPCursorExtends {
     __obj.asInstanceOf[IDBPCursorExtends]
   }
   
-  extension [Self <: IDBPCursorExtends](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDBPCursorExtends] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: IDBCursorDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

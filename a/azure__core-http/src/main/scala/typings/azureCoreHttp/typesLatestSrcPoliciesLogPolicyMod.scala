@@ -104,7 +104,8 @@ object typesLatestSrcPoliciesLogPolicyMod {
       __obj.asInstanceOf[LogPolicyOptions]
     }
     
-    extension [Self <: LogPolicyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogPolicyOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowedHeaderNames(value: js.Array[String]): Self = StObject.set(x, "allowedHeaderNames", value.asInstanceOf[js.Any])
       

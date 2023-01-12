@@ -104,7 +104,8 @@ object SimpleRNNCellLayerArgs {
     __obj.asInstanceOf[SimpleRNNCellLayerArgs]
   }
   
-  extension [Self <: SimpleRNNCellLayerArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleRNNCellLayerArgs] (val x: Self) extends AnyVal {
     
     inline def setActivation(value: ActivationIdentifier): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
     

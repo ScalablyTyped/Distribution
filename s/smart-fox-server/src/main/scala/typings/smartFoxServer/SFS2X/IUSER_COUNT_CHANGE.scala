@@ -20,7 +20,8 @@ object IUSER_COUNT_CHANGE {
     __obj.asInstanceOf[IUSER_COUNT_CHANGE]
   }
   
-  extension [Self <: IUSER_COUNT_CHANGE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUSER_COUNT_CHANGE] (val x: Self) extends AnyVal {
     
     inline def setRoom(value: SFSRoom): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
     

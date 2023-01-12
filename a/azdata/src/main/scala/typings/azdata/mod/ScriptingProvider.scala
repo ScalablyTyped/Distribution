@@ -35,7 +35,8 @@ object ScriptingProvider {
     __obj.asInstanceOf[ScriptingProvider]
   }
   
-  extension [Self <: ScriptingProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptingProvider] (val x: Self) extends AnyVal {
     
     inline def setRegisterOnScriptingComplete(value: js.Function1[/* scriptingCompleteResult */ ScriptingCompleteResult, Any] => Unit): Self = StObject.set(x, "registerOnScriptingComplete", js.Any.fromFunction1(value))
     

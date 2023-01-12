@@ -19,7 +19,8 @@ object ParseLocalConfigBase {
     __obj.asInstanceOf[ParseLocalConfigBase[T, TInput]]
   }
   
-  extension [Self <: ParseLocalConfigBase[?, ?], T, TInput](x: Self & (ParseLocalConfigBase[T, TInput])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParseLocalConfigBase[?, ?], T, TInput] (val x: Self & (ParseLocalConfigBase[T, TInput])) extends AnyVal {
     
     inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

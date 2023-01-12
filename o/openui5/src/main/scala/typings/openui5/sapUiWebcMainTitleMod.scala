@@ -290,7 +290,8 @@ object sapUiWebcMainTitleMod {
       __obj.asInstanceOf[TitleSettings]
     }
     
-    extension [Self <: TitleSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleSettings] (val x: Self) extends AnyVal {
       
       inline def setLevel(
         value: TitleLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TitleLevel * / any */ String) | PropertyBindingInfo

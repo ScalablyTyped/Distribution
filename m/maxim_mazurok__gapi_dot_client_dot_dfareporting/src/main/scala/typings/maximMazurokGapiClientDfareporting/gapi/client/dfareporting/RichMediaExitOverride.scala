@@ -22,7 +22,8 @@ object RichMediaExitOverride {
     __obj.asInstanceOf[RichMediaExitOverride]
   }
   
-  extension [Self <: RichMediaExitOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RichMediaExitOverride] (val x: Self) extends AnyVal {
     
     inline def setClickThroughUrl(value: ClickThroughUrl): Self = StObject.set(x, "clickThroughUrl", value.asInstanceOf[js.Any])
     

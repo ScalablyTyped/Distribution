@@ -37,7 +37,8 @@ object GoalData {
     __obj.asInstanceOf[GoalData]
   }
   
-  extension [Self <: GoalData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoalData] (val x: Self) extends AnyVal {
     
     inline def setGoalCompletionLocation(value: String): Self = StObject.set(x, "goalCompletionLocation", value.asInstanceOf[js.Any])
     

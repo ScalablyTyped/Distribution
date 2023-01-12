@@ -74,7 +74,8 @@ object SkeletonClipping {
     __obj.asInstanceOf[SkeletonClipping]
   }
   
-  extension [Self <: SkeletonClipping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkeletonClipping] (val x: Self) extends AnyVal {
     
     inline def setClip(
       value: (Double, Double, Double, Double, Double, Double, js.Array[Double], js.Array[Double]) => Boolean

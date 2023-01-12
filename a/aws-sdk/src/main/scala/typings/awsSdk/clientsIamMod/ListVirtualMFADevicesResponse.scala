@@ -28,7 +28,8 @@ object ListVirtualMFADevicesResponse {
     __obj.asInstanceOf[ListVirtualMFADevicesResponse]
   }
   
-  extension [Self <: ListVirtualMFADevicesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListVirtualMFADevicesResponse] (val x: Self) extends AnyVal {
     
     inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object ThenRet {
     __obj.asInstanceOf[ThenRet]
   }
   
-  extension [Self <: ThenRet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThenRet] (val x: Self) extends AnyVal {
     
     inline def setElse(value: Any => TernaryOperation): Self = StObject.set(x, "else", js.Any.fromFunction1(value))
     

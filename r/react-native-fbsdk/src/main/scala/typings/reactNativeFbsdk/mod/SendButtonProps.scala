@@ -24,7 +24,8 @@ object SendButtonProps {
     __obj.asInstanceOf[SendButtonProps]
   }
   
-  extension [Self <: SendButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendButtonProps] (val x: Self) extends AnyVal {
     
     inline def setShareContent(value: ShareContent): Self = StObject.set(x, "shareContent", value.asInstanceOf[js.Any])
     

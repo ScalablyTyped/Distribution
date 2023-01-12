@@ -23,7 +23,8 @@ object DeleteCacheClusterMessage {
     __obj.asInstanceOf[DeleteCacheClusterMessage]
   }
   
-  extension [Self <: DeleteCacheClusterMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCacheClusterMessage] (val x: Self) extends AnyVal {
     
     inline def setCacheClusterId(value: String): Self = StObject.set(x, "CacheClusterId", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object FormatPluralOptions {
     __obj.asInstanceOf[FormatPluralOptions]
   }
   
-  extension [Self <: FormatPluralOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatPluralOptions] (val x: Self) extends AnyVal {
     
     inline def setFormat(
       value: /* import warning: importer.ImportType#apply Failed type conversion: string extends keyof @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats ? @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats[string] : string */ js.Any

@@ -31,7 +31,8 @@ object SmartTagProperty {
     __obj.asInstanceOf[SmartTagProperty]
   }
   
-  extension [Self <: SmartTagProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartTagProperty] (val x: Self) extends AnyVal {
     
     inline def setAccessDotSmartTagProperty_typekey(value: SmartTagProperty): Self = StObject.set(x, "Access.SmartTagProperty_typekey", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object CreateDataCatalogInput {
     __obj.asInstanceOf[CreateDataCatalogInput]
   }
   
-  extension [Self <: CreateDataCatalogInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDataCatalogInput] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

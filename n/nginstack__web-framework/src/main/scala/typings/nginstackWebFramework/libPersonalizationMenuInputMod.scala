@@ -78,7 +78,8 @@ object libPersonalizationMenuInputMod {
       __obj.asInstanceOf[MenuInput]
     }
     
-    extension [Self <: MenuInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuInput] (val x: Self) extends AnyVal {
       
       inline def setCssClassName(value: String): Self = StObject.set(x, "cssClassName", value.asInstanceOf[js.Any])
       

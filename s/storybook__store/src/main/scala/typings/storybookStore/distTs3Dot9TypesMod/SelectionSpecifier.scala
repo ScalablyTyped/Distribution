@@ -28,7 +28,8 @@ object SelectionSpecifier {
     __obj.asInstanceOf[SelectionSpecifier]
   }
   
-  extension [Self <: SelectionSpecifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionSpecifier] (val x: Self) extends AnyVal {
     
     inline def setArgs(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Args */ Any

@@ -25,7 +25,8 @@ object StyleOptions {
     __obj.asInstanceOf[StyleOptions]
   }
   
-  extension [Self <: StyleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleOptions] (val x: Self) extends AnyVal {
     
     inline def setBasic(value: FontColor): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
     

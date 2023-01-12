@@ -25,7 +25,8 @@ object SheetProps {
     __obj.asInstanceOf[SheetProps]
   }
   
-  extension [Self <: SheetProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SheetProps] (val x: Self) extends AnyVal {
     
     inline def setCodeName(value: String): Self = StObject.set(x, "CodeName", value.asInstanceOf[js.Any])
     

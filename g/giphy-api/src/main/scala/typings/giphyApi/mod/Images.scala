@@ -80,7 +80,8 @@ object Images {
     __obj.asInstanceOf[Images]
   }
   
-  extension [Self <: Images](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Images] (val x: Self) extends AnyVal {
     
     inline def setDownsized(value: BaseImagesizestring): Self = StObject.set(x, "downsized", value.asInstanceOf[js.Any])
     

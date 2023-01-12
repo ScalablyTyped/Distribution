@@ -66,7 +66,8 @@ object modulesAmericanExpressMod {
       __obj.asInstanceOf[AmericanExpress]
     }
     
-    extension [Self <: AmericanExpress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AmericanExpress] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: (Client, callback[Any]) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
       

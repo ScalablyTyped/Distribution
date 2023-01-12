@@ -23,7 +23,8 @@ object KnockoutSlidingPageGenerator {
     __obj.asInstanceOf[KnockoutSlidingPageGenerator]
   }
   
-  extension [Self <: KnockoutSlidingPageGenerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutSlidingPageGenerator] (val x: Self) extends AnyVal {
     
     inline def setWindowSize(value: KnockoutObservable[Double]): Self = StObject.set(x, "windowSize", value.asInstanceOf[js.Any])
   }

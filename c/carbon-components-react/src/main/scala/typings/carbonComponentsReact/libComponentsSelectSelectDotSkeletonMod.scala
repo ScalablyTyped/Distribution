@@ -27,7 +27,8 @@ object libComponentsSelectSelectDotSkeletonMod extends Shortcut {
       __obj.asInstanceOf[SelectSkeletonProps]
     }
     
-    extension [Self <: SelectSkeletonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectSkeletonProps] (val x: Self) extends AnyVal {
       
       inline def setHideLabel(value: Boolean): Self = StObject.set(x, "hideLabel", value.asInstanceOf[js.Any])
       

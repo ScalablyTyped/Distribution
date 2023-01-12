@@ -25,7 +25,8 @@ object TagElement {
     __obj.asInstanceOf[TagElement]
   }
   
-  extension [Self <: TagElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagElement] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[MessageFormatElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

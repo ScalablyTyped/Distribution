@@ -50,7 +50,8 @@ object srcPluginMicrophoneMod {
       __obj.asInstanceOf[Browser]
     }
     
-    extension [Self <: Browser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: firefox | chrome | edge | safari | (`Not a supported browserDot`)): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -191,7 +192,8 @@ object srcPluginMicrophoneMod {
       __obj.asInstanceOf[MicrophonePluginParams]
     }
     
-    extension [Self <: MicrophonePluginParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MicrophonePluginParams] (val x: Self) extends AnyVal {
       
       inline def setBufferSize(value: BufferSize): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       

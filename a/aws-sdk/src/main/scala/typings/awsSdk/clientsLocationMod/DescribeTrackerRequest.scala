@@ -18,7 +18,8 @@ object DescribeTrackerRequest {
     __obj.asInstanceOf[DescribeTrackerRequest]
   }
   
-  extension [Self <: DescribeTrackerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTrackerRequest] (val x: Self) extends AnyVal {
     
     inline def setTrackerName(value: ResourceName): Self = StObject.set(x, "TrackerName", value.asInstanceOf[js.Any])
   }

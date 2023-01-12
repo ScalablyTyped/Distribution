@@ -20,7 +20,8 @@ object Responses200ContentApplicationjsonPermissionString {
     __obj.asInstanceOf[Responses200ContentApplicationjsonPermissionString]
   }
   
-  extension [Self <: Responses200ContentApplicationjsonPermissionString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responses200ContentApplicationjsonPermissionString] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathProjectidNumberUsernameString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

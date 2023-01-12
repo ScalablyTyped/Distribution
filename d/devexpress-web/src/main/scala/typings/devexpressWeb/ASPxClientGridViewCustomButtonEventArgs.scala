@@ -28,7 +28,8 @@ object ASPxClientGridViewCustomButtonEventArgs {
     __obj.asInstanceOf[ASPxClientGridViewCustomButtonEventArgs]
   }
   
-  extension [Self <: ASPxClientGridViewCustomButtonEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGridViewCustomButtonEventArgs] (val x: Self) extends AnyVal {
     
     inline def setButtonID(value: String): Self = StObject.set(x, "buttonID", value.asInstanceOf[js.Any])
     

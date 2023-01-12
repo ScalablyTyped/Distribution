@@ -17,7 +17,8 @@ object ClientGrantPage {
     __obj.asInstanceOf[ClientGrantPage]
   }
   
-  extension [Self <: ClientGrantPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientGrantPage] (val x: Self) extends AnyVal {
     
     inline def setClient_grants(value: js.Array[ClientGrant]): Self = StObject.set(x, "client_grants", value.asInstanceOf[js.Any])
     

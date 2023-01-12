@@ -50,7 +50,8 @@ object registryMod {
       __obj.asInstanceOf[PackagerAsset]
     }
     
-    extension [Self <: PackagerAsset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackagerAsset] (val x: Self) extends AnyVal {
       
       inline def setFileSystemLocation(value: String): Self = StObject.set(x, "fileSystemLocation", value.asInstanceOf[js.Any])
       

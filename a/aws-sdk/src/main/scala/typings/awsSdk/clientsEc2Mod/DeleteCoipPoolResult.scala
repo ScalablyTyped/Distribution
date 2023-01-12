@@ -15,7 +15,8 @@ object DeleteCoipPoolResult {
     __obj.asInstanceOf[DeleteCoipPoolResult]
   }
   
-  extension [Self <: DeleteCoipPoolResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCoipPoolResult] (val x: Self) extends AnyVal {
     
     inline def setCoipPool(value: CoipPool): Self = StObject.set(x, "CoipPool", value.asInstanceOf[js.Any])
     

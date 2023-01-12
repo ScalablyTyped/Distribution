@@ -30,7 +30,8 @@ object XConfigurationChangeRequest {
     __obj.asInstanceOf[XConfigurationChangeRequest]
   }
   
-  extension [Self <: XConfigurationChangeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XConfigurationChangeRequest] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: XConfiguration => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
   }

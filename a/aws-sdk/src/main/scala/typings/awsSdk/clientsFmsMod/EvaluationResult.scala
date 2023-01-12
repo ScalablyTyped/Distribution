@@ -28,7 +28,8 @@ object EvaluationResult {
     __obj.asInstanceOf[EvaluationResult]
   }
   
-  extension [Self <: EvaluationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluationResult] (val x: Self) extends AnyVal {
     
     inline def setComplianceStatus(value: PolicyComplianceStatusType): Self = StObject.set(x, "ComplianceStatus", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object InitSavingsTradeRequest {
     __obj.asInstanceOf[InitSavingsTradeRequest]
   }
   
-  extension [Self <: InitSavingsTradeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitSavingsTradeRequest] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GdataDiffUploadResponse {
     __obj.asInstanceOf[GdataDiffUploadResponse]
   }
   
-  extension [Self <: GdataDiffUploadResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GdataDiffUploadResponse] (val x: Self) extends AnyVal {
     
     inline def setObjectVersion(value: String): Self = StObject.set(x, "objectVersion", value.asInstanceOf[js.Any])
     

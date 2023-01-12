@@ -63,7 +63,8 @@ object ApplicationVersionDescription {
     __obj.asInstanceOf[ApplicationVersionDescription]
   }
   
-  extension [Self <: ApplicationVersionDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationVersionDescription] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     

@@ -702,7 +702,8 @@ object GherkinDocument {
           __obj.asInstanceOf[IRule]
         }
         
-        extension [Self <: IRule](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IRule] (val x: Self) extends AnyVal {
           
           inline def setChildren(value: js.Array[IRuleChild]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
           
@@ -754,7 +755,8 @@ object GherkinDocument {
           __obj.asInstanceOf[IRuleChild]
         }
         
-        extension [Self <: IRuleChild](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IRuleChild] (val x: Self) extends AnyVal {
           
           inline def setBackground(value: IBackground): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
           
@@ -1059,7 +1061,8 @@ object GherkinDocument {
           __obj.asInstanceOf[IExamples]
         }
         
-        extension [Self <: IExamples](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IExamples] (val x: Self) extends AnyVal {
           
           inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           
@@ -1471,7 +1474,8 @@ object GherkinDocument {
           __obj.asInstanceOf[IDataTable]
         }
         
-        extension [Self <: IDataTable](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IDataTable] (val x: Self) extends AnyVal {
           
           inline def setLocation(value: ILocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
           
@@ -1511,7 +1515,8 @@ object GherkinDocument {
           __obj.asInstanceOf[IDocString]
         }
         
-        extension [Self <: IDocString](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IDocString] (val x: Self) extends AnyVal {
           
           inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
           
@@ -1777,7 +1782,8 @@ object GherkinDocument {
           __obj.asInstanceOf[ITableCell]
         }
         
-        extension [Self <: ITableCell](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ITableCell] (val x: Self) extends AnyVal {
           
           inline def setLocation(value: ILocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
           
@@ -2012,7 +2018,8 @@ object GherkinDocument {
         __obj.asInstanceOf[IBackground]
       }
       
-      extension [Self <: IBackground](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IBackground] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -2067,7 +2074,8 @@ object GherkinDocument {
         __obj.asInstanceOf[IFeatureChild]
       }
       
-      extension [Self <: IFeatureChild](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IFeatureChild] (val x: Self) extends AnyVal {
         
         inline def setBackground(value: IBackground): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
         
@@ -2123,7 +2131,8 @@ object GherkinDocument {
         __obj.asInstanceOf[IScenario]
       }
       
-      extension [Self <: IScenario](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IScenario] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -2209,7 +2218,8 @@ object GherkinDocument {
         __obj.asInstanceOf[IStep]
       }
       
-      extension [Self <: IStep](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IStep] (val x: Self) extends AnyVal {
         
         inline def setDataTable(value: IDataTable): Self = StObject.set(x, "dataTable", value.asInstanceOf[js.Any])
         
@@ -2268,7 +2278,8 @@ object GherkinDocument {
         __obj.asInstanceOf[ITableRow]
       }
       
-      extension [Self <: ITableRow](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ITableRow] (val x: Self) extends AnyVal {
         
         inline def setCells(value: js.Array[ITableCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
         
@@ -2311,7 +2322,8 @@ object GherkinDocument {
         __obj.asInstanceOf[ITag]
       }
       
-      extension [Self <: ITag](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ITag] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -2430,7 +2442,8 @@ object GherkinDocument {
       __obj.asInstanceOf[IComment]
     }
     
-    extension [Self <: IComment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IComment] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: ILocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
@@ -2477,7 +2490,8 @@ object GherkinDocument {
       __obj.asInstanceOf[IFeature]
     }
     
-    extension [Self <: IFeature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFeature] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[IFeatureChild]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

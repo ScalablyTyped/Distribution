@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[OwnerScreenName]
     }
     
-    extension [Self <: OwnerScreenName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OwnerScreenName] (val x: Self) extends AnyVal {
       
       inline def setOwnerScreenName(value: String): Self = StObject.set(x, "ownerScreenName", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object anon {
       __obj.asInstanceOf[ScreenName]
     }
     
-    extension [Self <: ScreenName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScreenName] (val x: Self) extends AnyVal {
       
       inline def setScreenName(value: String): Self = StObject.set(x, "screenName", value.asInstanceOf[js.Any])
       
@@ -97,7 +100,8 @@ object anon {
       __obj.asInstanceOf[ScreenNameSourceType]
     }
     
-    extension [Self <: ScreenNameSourceType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScreenNameSourceType] (val x: Self) extends AnyVal {
       
       inline def setScreenName(value: String): Self = StObject.set(x, "screenName", value.asInstanceOf[js.Any])
       
@@ -120,7 +124,8 @@ object anon {
       __obj.asInstanceOf[SourceType]
     }
     
-    extension [Self <: SourceType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceType] (val x: Self) extends AnyVal {
       
       inline def setSourceType(value: profile): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
       
@@ -143,7 +148,8 @@ object anon {
       __obj.asInstanceOf[UserId]
     }
     
-    extension [Self <: UserId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserId] (val x: Self) extends AnyVal {
       
       inline def setSourceType(value: likes): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
       

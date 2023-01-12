@@ -37,7 +37,8 @@ object GoogleFirestoreAdminV1FieldOperationMetadata {
     __obj.asInstanceOf[GoogleFirestoreAdminV1FieldOperationMetadata]
   }
   
-  extension [Self <: GoogleFirestoreAdminV1FieldOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleFirestoreAdminV1FieldOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

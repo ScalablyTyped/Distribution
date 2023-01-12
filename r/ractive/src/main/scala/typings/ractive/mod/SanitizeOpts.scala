@@ -19,7 +19,8 @@ object SanitizeOpts {
     __obj.asInstanceOf[SanitizeOpts]
   }
   
-  extension [Self <: SanitizeOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SanitizeOpts] (val x: Self) extends AnyVal {
     
     inline def setElements(value: js.Array[String]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     

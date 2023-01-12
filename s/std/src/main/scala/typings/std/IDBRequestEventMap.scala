@@ -19,7 +19,8 @@ object IDBRequestEventMap {
     __obj.asInstanceOf[IDBRequestEventMap]
   }
   
-  extension [Self <: IDBRequestEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDBRequestEventMap] (val x: Self) extends AnyVal {
     
     inline def setError(value: Event): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

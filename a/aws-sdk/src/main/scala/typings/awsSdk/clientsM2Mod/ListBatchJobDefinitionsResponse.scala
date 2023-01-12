@@ -23,7 +23,8 @@ object ListBatchJobDefinitionsResponse {
     __obj.asInstanceOf[ListBatchJobDefinitionsResponse]
   }
   
-  extension [Self <: ListBatchJobDefinitionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBatchJobDefinitionsResponse] (val x: Self) extends AnyVal {
     
     inline def setBatchJobDefinitions(value: BatchJobDefinitions): Self = StObject.set(x, "batchJobDefinitions", value.asInstanceOf[js.Any])
     

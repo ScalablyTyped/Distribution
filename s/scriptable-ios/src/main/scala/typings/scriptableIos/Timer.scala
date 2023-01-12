@@ -57,7 +57,8 @@ object Timer {
     __obj.asInstanceOf[Timer]
   }
   
-  extension [Self <: Timer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Timer] (val x: Self) extends AnyVal {
     
     inline def setInvalidate(value: () => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction0(value))
     

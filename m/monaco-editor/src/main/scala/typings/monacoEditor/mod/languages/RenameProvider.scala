@@ -29,7 +29,8 @@ object RenameProvider {
     __obj.asInstanceOf[RenameProvider]
   }
   
-  extension [Self <: RenameProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenameProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideRenameEdits(
       value: (ITextModel, Position, String, CancellationToken) => ProviderResult[WorkspaceEdit & Rejection]

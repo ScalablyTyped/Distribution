@@ -29,7 +29,8 @@ object ReportRowIterator {
     __obj.asInstanceOf[ReportRowIterator]
   }
   
-  extension [Self <: ReportRowIterator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportRowIterator] (val x: Self) extends AnyVal {
     
     inline def setHasNext(value: () => Boolean): Self = StObject.set(x, "hasNext", js.Any.fromFunction0(value))
     

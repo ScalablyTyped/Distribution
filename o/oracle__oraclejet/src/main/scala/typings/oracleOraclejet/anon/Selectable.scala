@@ -18,7 +18,8 @@ object Selectable {
     __obj.asInstanceOf[Selectable[K, D]]
   }
   
-  extension [Self <: Selectable[?, ?], K, D](x: Self & (Selectable[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Selectable[?, ?], K, D] (val x: Self & (Selectable[K, D])) extends AnyVal {
     
     inline def setRenderer(value: /* context */ ItemContext[K, D] => Unit): Self = StObject.set(x, "renderer", js.Any.fromFunction1(value))
     

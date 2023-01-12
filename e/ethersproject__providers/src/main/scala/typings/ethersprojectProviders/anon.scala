@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[BlockNumber]
     }
     
-    extension [Self <: BlockNumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockNumber] (val x: Self) extends AnyVal {
       
       inline def setBlockNumber(value: Double): Self = StObject.set(x, "blockNumber", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Content]
     }
     
-    extension [Self <: Content](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -81,7 +83,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -135,7 +138,8 @@ object anon {
       __obj.asInstanceOf[DeferrableTransactionRequ]
     }
     
-    extension [Self <: DeferrableTransactionRequ](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeferrableTransactionRequ] (val x: Self) extends AnyVal {
       
       inline def setAccessList(value: AccessListish | js.Promise[js.UndefOr[AccessListish]]): Self = StObject.set(x, "accessList", value.asInstanceOf[js.Any])
       
@@ -214,7 +218,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -241,7 +246,8 @@ object anon {
       __obj.asInstanceOf[Method]
     }
     
-    extension [Self <: Method](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Method] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -268,7 +274,8 @@ object anon {
       __obj.asInstanceOf[Reject]
     }
     
-    extension [Self <: Reject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reject] (val x: Self) extends AnyVal {
       
       inline def setReject(value: js.Error => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
       

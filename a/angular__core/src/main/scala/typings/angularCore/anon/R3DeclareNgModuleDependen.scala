@@ -24,7 +24,8 @@ object R3DeclareNgModuleDependen {
     __obj.asInstanceOf[R3DeclareNgModuleDependen]
   }
   
-  extension [Self <: R3DeclareNgModuleDependen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3DeclareNgModuleDependen] (val x: Self) extends AnyVal {
     
     inline def setKind(value: ngmodule): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

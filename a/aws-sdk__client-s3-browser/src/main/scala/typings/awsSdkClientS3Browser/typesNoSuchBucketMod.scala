@@ -18,7 +18,8 @@ object typesNoSuchBucketMod {
       __obj.asInstanceOf[NoSuchBucket]
     }
     
-    extension [Self <: NoSuchBucket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoSuchBucket] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.NoSuchBucket): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

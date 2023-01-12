@@ -59,7 +59,8 @@ object FetchMessageObject {
     __obj.asInstanceOf[FetchMessageObject]
   }
   
-  extension [Self <: FetchMessageObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchMessageObject] (val x: Self) extends AnyVal {
     
     inline def setBodyParts(value: Map[String, Buffer]): Self = StObject.set(x, "bodyParts", value.asInstanceOf[js.Any])
     

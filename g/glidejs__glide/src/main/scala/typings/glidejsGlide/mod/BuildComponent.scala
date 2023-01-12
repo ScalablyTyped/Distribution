@@ -33,7 +33,8 @@ object BuildComponent {
     __obj.asInstanceOf[BuildComponent]
   }
   
-  extension [Self <: BuildComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildComponent] (val x: Self) extends AnyVal {
     
     inline def setActiveClass(value: () => Unit): Self = StObject.set(x, "activeClass", js.Any.fromFunction0(value))
     

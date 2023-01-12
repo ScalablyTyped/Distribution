@@ -240,7 +240,8 @@ object mod {
       __obj.asInstanceOf[ParsedRTPPacket]
     }
     
-    extension [Self <: ParsedRTPPacket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedRTPPacket] (val x: Self) extends AnyVal {
       
       inline def setCsrc(value: js.Array[Double]): Self = StObject.set(x, "csrc", value.asInstanceOf[js.Any])
       
@@ -287,7 +288,8 @@ object mod {
       __obj.asInstanceOf[ParsedRTPType]
     }
     
-    extension [Self <: ParsedRTPType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedRTPType] (val x: Self) extends AnyVal {
       
       inline def setChannels(value: typings.rtpParser.rtpParserInts.`1` | `2`): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
       
@@ -961,7 +963,8 @@ object mod {
       __obj.asInstanceOf[PayloadTypesHash_]
     }
     
-    extension [Self <: PayloadTypesHash_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayloadTypesHash_] (val x: Self) extends AnyVal {
       
       inline def set0(value: `19`): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       

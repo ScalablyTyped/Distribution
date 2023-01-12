@@ -38,7 +38,8 @@ object IFieldSet {
     __obj.asInstanceOf[IFieldSet]
   }
   
-  extension [Self <: IFieldSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFieldSet] (val x: Self) extends AnyVal {
     
     inline def setDoSetDisabled(value: /* newDisabled */ js.UndefOr[Any] => IFieldSet): Self = StObject.set(x, "doSetDisabled", js.Any.fromFunction1(value))
     

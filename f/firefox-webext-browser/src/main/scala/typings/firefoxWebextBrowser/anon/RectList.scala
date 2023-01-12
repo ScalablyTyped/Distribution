@@ -17,7 +17,8 @@ object RectList {
     __obj.asInstanceOf[RectList]
   }
   
-  extension [Self <: RectList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RectList] (val x: Self) extends AnyVal {
     
     inline def setRectList(value: js.Array[Bottom]): Self = StObject.set(x, "rectList", value.asInstanceOf[js.Any])
     

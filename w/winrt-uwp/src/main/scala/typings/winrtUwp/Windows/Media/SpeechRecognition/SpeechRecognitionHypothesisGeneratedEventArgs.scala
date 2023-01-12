@@ -17,7 +17,8 @@ object SpeechRecognitionHypothesisGeneratedEventArgs {
     __obj.asInstanceOf[SpeechRecognitionHypothesisGeneratedEventArgs]
   }
   
-  extension [Self <: SpeechRecognitionHypothesisGeneratedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeechRecognitionHypothesisGeneratedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHypothesis(value: SpeechRecognitionHypothesis): Self = StObject.set(x, "hypothesis", value.asInstanceOf[js.Any])
   }

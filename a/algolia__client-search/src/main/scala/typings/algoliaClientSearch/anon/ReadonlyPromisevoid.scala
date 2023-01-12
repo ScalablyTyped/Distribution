@@ -27,7 +27,8 @@ object ReadonlyPromisevoid {
     __obj.asInstanceOf[ReadonlyPromisevoid]
   }
   
-  extension [Self <: ReadonlyPromisevoid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyPromisevoid] (val x: Self) extends AnyVal {
     
     inline def setCatch(value: () => js.Promise[Unit | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     

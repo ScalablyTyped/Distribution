@@ -18,7 +18,8 @@ object InputProcessingConfigurationDescription {
     __obj.asInstanceOf[InputProcessingConfigurationDescription]
   }
   
-  extension [Self <: InputProcessingConfigurationDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputProcessingConfigurationDescription] (val x: Self) extends AnyVal {
     
     inline def setInputLambdaProcessorDescription(value: InputLambdaProcessorDescription): Self = StObject.set(x, "InputLambdaProcessorDescription", value.asInstanceOf[js.Any])
     

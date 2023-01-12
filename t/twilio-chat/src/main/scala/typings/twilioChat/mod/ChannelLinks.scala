@@ -21,7 +21,8 @@ object ChannelLinks {
     __obj.asInstanceOf[ChannelLinks]
   }
   
-  extension [Self <: ChannelLinks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelLinks] (val x: Self) extends AnyVal {
     
     inline def setInvites(value: String): Self = StObject.set(x, "invites", value.asInstanceOf[js.Any])
     

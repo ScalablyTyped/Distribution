@@ -35,7 +35,8 @@ object AppointmentStoreChangeReader {
     __obj.asInstanceOf[AppointmentStoreChangeReader]
   }
   
-  extension [Self <: AppointmentStoreChangeReader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppointmentStoreChangeReader] (val x: Self) extends AnyVal {
     
     inline def setAcceptChanges(value: () => Unit): Self = StObject.set(x, "acceptChanges", js.Any.fromFunction0(value))
     

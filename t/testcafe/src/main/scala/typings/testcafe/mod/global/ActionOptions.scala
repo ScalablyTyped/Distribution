@@ -20,7 +20,8 @@ object ActionOptions {
     __obj.asInstanceOf[ActionOptions]
   }
   
-  extension [Self <: ActionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionOptions] (val x: Self) extends AnyVal {
     
     inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     

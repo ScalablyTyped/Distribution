@@ -58,7 +58,8 @@ object Broker {
     __obj.asInstanceOf[Broker]
   }
   
-  extension [Self <: Broker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Broker] (val x: Self) extends AnyVal {
     
     inline def setAlterPartitionReassignments(value: TimeoutTopicsArray => js.Promise[Any]): Self = StObject.set(x, "alterPartitionReassignments", js.Any.fromFunction1(value))
     

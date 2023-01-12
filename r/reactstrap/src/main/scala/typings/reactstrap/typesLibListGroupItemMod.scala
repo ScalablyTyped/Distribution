@@ -43,7 +43,8 @@ object typesLibListGroupItemMod {
       __obj.asInstanceOf[ListGroupItemProps]
     }
     
-    extension [Self <: ListGroupItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListGroupItemProps] (val x: Self) extends AnyVal {
       
       inline def setAction(value: Boolean): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

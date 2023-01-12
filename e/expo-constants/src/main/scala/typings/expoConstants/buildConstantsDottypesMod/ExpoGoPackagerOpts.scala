@@ -30,7 +30,8 @@ object ExpoGoPackagerOpts {
     __obj.asInstanceOf[ExpoGoPackagerOpts]
   }
   
-  extension [Self <: ExpoGoPackagerOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpoGoPackagerOpts] (val x: Self) extends AnyVal {
     
     inline def setDev(value: Boolean): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
     

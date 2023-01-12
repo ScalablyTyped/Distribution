@@ -33,7 +33,8 @@ object SvmEndpoints {
     __obj.asInstanceOf[SvmEndpoints]
   }
   
-  extension [Self <: SvmEndpoints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SvmEndpoints] (val x: Self) extends AnyVal {
     
     inline def setIscsi(value: SvmEndpoint): Self = StObject.set(x, "Iscsi", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object CalendarInternalState {
     __obj.asInstanceOf[CalendarInternalState[T]]
   }
   
-  extension [Self <: CalendarInternalState[?], T](x: Self & CalendarInternalState[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarInternalState[?], T] (val x: Self & CalendarInternalState[T]) extends AnyVal {
     
     inline def setDate(value: T): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object StartContactStreamingResponse {
     __obj.asInstanceOf[StartContactStreamingResponse]
   }
   
-  extension [Self <: StartContactStreamingResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartContactStreamingResponse] (val x: Self) extends AnyVal {
     
     inline def setStreamingId(value: StreamingId): Self = StObject.set(x, "StreamingId", value.asInstanceOf[js.Any])
   }

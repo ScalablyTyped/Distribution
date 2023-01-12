@@ -22,7 +22,8 @@ object ClearValuesResponse {
     __obj.asInstanceOf[ClearValuesResponse]
   }
   
-  extension [Self <: ClearValuesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearValuesResponse] (val x: Self) extends AnyVal {
     
     inline def setClearedRange(value: String): Self = StObject.set(x, "clearedRange", value.asInstanceOf[js.Any])
     

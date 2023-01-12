@@ -51,7 +51,8 @@ object distEsm5SrcApiAccountManagementAccountMod {
       __obj.asInstanceOf[APIUserInfo]
     }
     
-    extension [Self <: APIUserInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIUserInfo] (val x: Self) extends AnyVal {
       
       inline def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object distEsm5SrcApiAccountManagementAccountMod {
       __obj.asInstanceOf[DeleteAccountRequest]
     }
     
-    extension [Self <: DeleteAccountRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteAccountRequest] (val x: Self) extends AnyVal {
       
       inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     }
@@ -137,7 +139,8 @@ object distEsm5SrcApiAccountManagementAccountMod {
       __obj.asInstanceOf[DeleteLinkedAccountsRequest]
     }
     
-    extension [Self <: DeleteLinkedAccountsRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteLinkedAccountsRequest] (val x: Self) extends AnyVal {
       
       inline def setDeleteProvider(value: js.Array[String]): Self = StObject.set(x, "deleteProvider", value.asInstanceOf[js.Any])
       
@@ -158,7 +161,8 @@ object distEsm5SrcApiAccountManagementAccountMod {
       __obj.asInstanceOf[DeleteLinkedAccountsResponse]
     }
     
-    extension [Self <: DeleteLinkedAccountsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteLinkedAccountsResponse] (val x: Self) extends AnyVal {
       
       inline def setProviderUserInfo(value: js.Array[ProviderUserInfo]): Self = StObject.set(x, "providerUserInfo", value.asInstanceOf[js.Any])
       
@@ -177,7 +181,8 @@ object distEsm5SrcApiAccountManagementAccountMod {
       __obj.asInstanceOf[GetAccountInfoRequest]
     }
     
-    extension [Self <: GetAccountInfoRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAccountInfoRequest] (val x: Self) extends AnyVal {
       
       inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     }
@@ -194,7 +199,8 @@ object distEsm5SrcApiAccountManagementAccountMod {
       __obj.asInstanceOf[GetAccountInfoResponse]
     }
     
-    extension [Self <: GetAccountInfoResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAccountInfoResponse] (val x: Self) extends AnyVal {
       
       inline def setUsers(value: js.Array[APIUserInfo]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
@@ -223,7 +229,8 @@ object distEsm5SrcApiAccountManagementAccountMod {
       __obj.asInstanceOf[ProviderUserInfo]
     }
     
-    extension [Self <: ProviderUserInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProviderUserInfo] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       

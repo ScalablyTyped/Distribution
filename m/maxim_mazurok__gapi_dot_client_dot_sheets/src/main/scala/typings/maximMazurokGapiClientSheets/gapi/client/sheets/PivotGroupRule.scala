@@ -22,7 +22,8 @@ object PivotGroupRule {
     __obj.asInstanceOf[PivotGroupRule]
   }
   
-  extension [Self <: PivotGroupRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotGroupRule] (val x: Self) extends AnyVal {
     
     inline def setDateTimeRule(value: DateTimeRule): Self = StObject.set(x, "dateTimeRule", value.asInstanceOf[js.Any])
     

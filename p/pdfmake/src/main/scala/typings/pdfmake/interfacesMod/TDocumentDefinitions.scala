@@ -197,7 +197,8 @@ object TDocumentDefinitions {
     __obj.asInstanceOf[TDocumentDefinitions]
   }
   
-  extension [Self <: TDocumentDefinitions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TDocumentDefinitions] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: DynamicBackground | Content): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

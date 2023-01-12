@@ -29,7 +29,8 @@ object Secret {
     __obj.asInstanceOf[Secret]
   }
   
-  extension [Self <: Secret](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Secret] (val x: Self) extends AnyVal {
     
     inline def setContent_type(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['webhook-config-content-type'] */ js.Any

@@ -17,7 +17,8 @@ object EosGetPublicKey {
     __obj.asInstanceOf[EosGetPublicKey]
   }
   
-  extension [Self <: EosGetPublicKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EosGetPublicKey] (val x: Self) extends AnyVal {
     
     inline def setAddress_n(value: js.Array[Double]): Self = StObject.set(x, "address_n", value.asInstanceOf[js.Any])
     

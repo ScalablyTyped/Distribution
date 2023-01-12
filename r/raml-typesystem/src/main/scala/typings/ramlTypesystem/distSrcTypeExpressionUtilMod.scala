@@ -28,7 +28,8 @@ object distSrcTypeExpressionUtilMod {
       __obj.asInstanceOf[BaseNode]
     }
     
-    extension [Self <: BaseNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseNode] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -52,7 +53,8 @@ object distSrcTypeExpressionUtilMod {
       __obj.asInstanceOf[Literal]
     }
     
-    extension [Self <: Literal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Literal] (val x: Self) extends AnyVal {
       
       inline def setArr(value: Double): Self = StObject.set(x, "arr", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object distSrcTypeExpressionUtilMod {
       __obj.asInstanceOf[Parens]
     }
     
-    extension [Self <: Parens](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parens] (val x: Self) extends AnyVal {
       
       inline def setArr(value: Double): Self = StObject.set(x, "arr", value.asInstanceOf[js.Any])
       
@@ -108,7 +111,8 @@ object distSrcTypeExpressionUtilMod {
       __obj.asInstanceOf[Union]
     }
     
-    extension [Self <: Union](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Union] (val x: Self) extends AnyVal {
       
       inline def setFirst(value: BaseNode): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       

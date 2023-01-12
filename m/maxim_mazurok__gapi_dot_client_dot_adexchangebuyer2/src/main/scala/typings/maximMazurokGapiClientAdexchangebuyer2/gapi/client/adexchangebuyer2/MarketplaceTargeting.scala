@@ -28,7 +28,8 @@ object MarketplaceTargeting {
     __obj.asInstanceOf[MarketplaceTargeting]
   }
   
-  extension [Self <: MarketplaceTargeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarketplaceTargeting] (val x: Self) extends AnyVal {
     
     inline def setGeoTargeting(value: CriteriaTargeting): Self = StObject.set(x, "geoTargeting", value.asInstanceOf[js.Any])
     

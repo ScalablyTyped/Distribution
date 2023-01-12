@@ -50,7 +50,8 @@ object srcMod {
       __obj.asInstanceOf[VictorySharedEventsProps]
     }
     
-    extension [Self <: VictorySharedEventsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictorySharedEventsProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

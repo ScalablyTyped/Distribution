@@ -38,7 +38,8 @@ object ControlInsightsMetadataByAssessmentItem {
     __obj.asInstanceOf[ControlInsightsMetadataByAssessmentItem]
   }
   
-  extension [Self <: ControlInsightsMetadataByAssessmentItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlInsightsMetadataByAssessmentItem] (val x: Self) extends AnyVal {
     
     inline def setControlSetName(value: NonEmptyString): Self = StObject.set(x, "controlSetName", value.asInstanceOf[js.Any])
     

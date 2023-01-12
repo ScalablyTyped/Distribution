@@ -23,7 +23,8 @@ object SellFiatTradeRequest {
     __obj.asInstanceOf[SellFiatTradeRequest]
   }
   
-  extension [Self <: SellFiatTradeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SellFiatTradeRequest] (val x: Self) extends AnyVal {
     
     inline def setReturnUrl(value: String): Self = StObject.set(x, "returnUrl", value.asInstanceOf[js.Any])
     

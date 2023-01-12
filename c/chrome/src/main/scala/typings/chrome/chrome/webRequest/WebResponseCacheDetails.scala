@@ -37,7 +37,8 @@ object WebResponseCacheDetails {
     __obj.asInstanceOf[WebResponseCacheDetails]
   }
   
-  extension [Self <: WebResponseCacheDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebResponseCacheDetails] (val x: Self) extends AnyVal {
     
     inline def setFromCache(value: Boolean): Self = StObject.set(x, "fromCache", value.asInstanceOf[js.Any])
     

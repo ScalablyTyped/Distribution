@@ -25,7 +25,8 @@ object FractalConfig {
     __obj.asInstanceOf[FractalConfig]
   }
   
-  extension [Self <: FractalConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FractalConfig] (val x: Self) extends AnyVal {
     
     inline def setProject(value: Author): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     

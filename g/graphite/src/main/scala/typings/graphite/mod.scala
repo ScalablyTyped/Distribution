@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[GraphiteClientProperties]
     }
     
-    extension [Self <: GraphiteClientProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphiteClientProperties] (val x: Self) extends AnyVal {
       
       inline def setCarbon(value: Any): Self = StObject.set(x, "carbon", value.asInstanceOf[js.Any])
     }

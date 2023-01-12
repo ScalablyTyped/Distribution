@@ -62,7 +62,8 @@ object BootstrapPieChartEventMap {
     __obj.asInstanceOf[BootstrapPieChartEventMap]
   }
   
-  extension [Self <: BootstrapPieChartEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapPieChartEventMap] (val x: Self) extends AnyVal {
     
     inline def setDisposing(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "disposing", value.asInstanceOf[js.Any])
     

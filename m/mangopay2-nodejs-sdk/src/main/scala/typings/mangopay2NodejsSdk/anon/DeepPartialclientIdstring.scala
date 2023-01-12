@@ -21,7 +21,8 @@ object DeepPartialclientIdstring {
     __obj.asInstanceOf[DeepPartialclientIdstring]
   }
   
-  extension [Self <: DeepPartialclientIdstring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeepPartialclientIdstring] (val x: Self) extends AnyVal {
     
     inline def setApiVersion(value: DeepPartial[String]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object QueryResponsePayload {
     __obj.asInstanceOf[QueryResponsePayload]
   }
   
-  extension [Self <: QueryResponsePayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryResponsePayload] (val x: Self) extends AnyVal {
     
     inline def setDevices(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: {[ P in string ]: any}} */ js.Any

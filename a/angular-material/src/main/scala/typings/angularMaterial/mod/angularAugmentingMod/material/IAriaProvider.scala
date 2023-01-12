@@ -15,7 +15,8 @@ object IAriaProvider {
     __obj.asInstanceOf[IAriaProvider]
   }
   
-  extension [Self <: IAriaProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAriaProvider] (val x: Self) extends AnyVal {
     
     inline def setDisableWarnings(value: () => Unit): Self = StObject.set(x, "disableWarnings", js.Any.fromFunction0(value))
   }

@@ -18,7 +18,8 @@ object ResultReuseInformation {
     __obj.asInstanceOf[ResultReuseInformation]
   }
   
-  extension [Self <: ResultReuseInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultReuseInformation] (val x: Self) extends AnyVal {
     
     inline def setReusedPreviousResult(value: Boolean): Self = StObject.set(x, "ReusedPreviousResult", value.asInstanceOf[js.Any])
   }

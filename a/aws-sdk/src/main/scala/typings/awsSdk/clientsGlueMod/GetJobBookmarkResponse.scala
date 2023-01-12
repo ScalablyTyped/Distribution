@@ -18,7 +18,8 @@ object GetJobBookmarkResponse {
     __obj.asInstanceOf[GetJobBookmarkResponse]
   }
   
-  extension [Self <: GetJobBookmarkResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetJobBookmarkResponse] (val x: Self) extends AnyVal {
     
     inline def setJobBookmarkEntry(value: JobBookmarkEntry): Self = StObject.set(x, "JobBookmarkEntry", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[Html2XlsxTemplate]
     }
     
-    extension [Self <: Html2XlsxTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Html2XlsxTemplate] (val x: Self) extends AnyVal {
       
       inline def setHtmlToXlsx(value: HtmlEngine): Self = StObject.set(x, "htmlToXlsx", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     }
@@ -88,7 +90,8 @@ object mod {
         __obj.asInstanceOf[TemplateRegistry]
       }
       
-      extension [Self <: TemplateRegistry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TemplateRegistry] (val x: Self) extends AnyVal {
         
         inline def setHtml2XlsxTemplate(value: Html2XlsxTemplate): Self = StObject.set(x, "Html2XlsxTemplate", value.asInstanceOf[js.Any])
       }

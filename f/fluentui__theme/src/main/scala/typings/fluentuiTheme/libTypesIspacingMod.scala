@@ -25,7 +25,8 @@ object libTypesIspacingMod {
       __obj.asInstanceOf[ISpacing]
     }
     
-    extension [Self <: ISpacing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpacing] (val x: Self) extends AnyVal {
       
       inline def setL1(value: String): Self = StObject.set(x, "l1", value.asInstanceOf[js.Any])
       

@@ -187,7 +187,8 @@ object distCommonjsModulesModalModalMod {
       __obj.asInstanceOf[StrictModalProps]
     }
     
-    extension [Self <: StrictModalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictModalProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: SemanticShorthandItem[ModalActionsProps]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

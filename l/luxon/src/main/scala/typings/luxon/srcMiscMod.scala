@@ -155,7 +155,8 @@ object srcMiscMod {
       __obj.asInstanceOf[ZoneOptions]
     }
     
-    extension [Self <: ZoneOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZoneOptions] (val x: Self) extends AnyVal {
       
       inline def setKeepCalendarTime(value: Boolean): Self = StObject.set(x, "keepCalendarTime", value.asInstanceOf[js.Any])
       

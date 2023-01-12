@@ -16,7 +16,8 @@ object RareBooleanData {
     __obj.asInstanceOf[RareBooleanData]
   }
   
-  extension [Self <: RareBooleanData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RareBooleanData] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: js.Array[integer]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

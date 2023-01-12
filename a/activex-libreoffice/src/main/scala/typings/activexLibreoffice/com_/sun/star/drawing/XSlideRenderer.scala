@@ -51,7 +51,8 @@ object XSlideRenderer {
     __obj.asInstanceOf[XSlideRenderer]
   }
   
-  extension [Self <: XSlideRenderer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSlideRenderer] (val x: Self) extends AnyVal {
     
     inline def setCalculatePreviewSize(value: (Double, Size) => Size): Self = StObject.set(x, "calculatePreviewSize", js.Any.fromFunction2(value))
     

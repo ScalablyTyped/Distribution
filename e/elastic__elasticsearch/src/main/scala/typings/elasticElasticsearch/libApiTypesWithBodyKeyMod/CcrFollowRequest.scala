@@ -23,7 +23,8 @@ object CcrFollowRequest {
     __obj.asInstanceOf[CcrFollowRequest]
   }
   
-  extension [Self <: CcrFollowRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CcrFollowRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Leaderindex): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

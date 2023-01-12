@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setAction(value: EditorAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[PartialKeymap]
     }
     
-    extension [Self <: PartialKeymap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialKeymap] (val x: Self) extends AnyVal {
       
       inline def setEnter(value: String | js.Array[String]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object Datum {
     __obj.asInstanceOf[Datum]
   }
   
-  extension [Self <: Datum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Datum] (val x: Self) extends AnyVal {
     
     inline def setX(value: DatumValue): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

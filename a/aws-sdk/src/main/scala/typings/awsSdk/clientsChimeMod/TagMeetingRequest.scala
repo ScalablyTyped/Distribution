@@ -23,7 +23,8 @@ object TagMeetingRequest {
     __obj.asInstanceOf[TagMeetingRequest]
   }
   
-  extension [Self <: TagMeetingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagMeetingRequest] (val x: Self) extends AnyVal {
     
     inline def setMeetingId(value: GuidString): Self = StObject.set(x, "MeetingId", value.asInstanceOf[js.Any])
     

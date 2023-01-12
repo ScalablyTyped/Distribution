@@ -32,7 +32,8 @@ object XpackUsageEqlFeaturesSequences {
     __obj.asInstanceOf[XpackUsageEqlFeaturesSequences]
   }
   
-  extension [Self <: XpackUsageEqlFeaturesSequences](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageEqlFeaturesSequences] (val x: Self) extends AnyVal {
     
     inline def setSequence_maxspan(value: uint): Self = StObject.set(x, "sequence_maxspan", value.asInstanceOf[js.Any])
     

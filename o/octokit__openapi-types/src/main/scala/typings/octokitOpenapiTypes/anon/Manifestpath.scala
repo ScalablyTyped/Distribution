@@ -23,7 +23,8 @@ object Manifestpath {
     __obj.asInstanceOf[Manifestpath]
   }
   
-  extension [Self <: Manifestpath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Manifestpath] (val x: Self) extends AnyVal {
     
     inline def setManifest_path(value: String): Self = StObject.set(x, "manifest_path", value.asInstanceOf[js.Any])
     

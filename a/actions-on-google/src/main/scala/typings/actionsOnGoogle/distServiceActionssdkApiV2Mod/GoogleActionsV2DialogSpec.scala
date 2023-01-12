@@ -20,7 +20,8 @@ object GoogleActionsV2DialogSpec {
     __obj.asInstanceOf[GoogleActionsV2DialogSpec]
   }
   
-  extension [Self <: GoogleActionsV2DialogSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2DialogSpec] (val x: Self) extends AnyVal {
     
     inline def setExtension(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     

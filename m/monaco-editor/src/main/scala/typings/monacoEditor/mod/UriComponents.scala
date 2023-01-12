@@ -23,7 +23,8 @@ object UriComponents {
     __obj.asInstanceOf[UriComponents]
   }
   
-  extension [Self <: UriComponents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UriComponents] (val x: Self) extends AnyVal {
     
     inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
     

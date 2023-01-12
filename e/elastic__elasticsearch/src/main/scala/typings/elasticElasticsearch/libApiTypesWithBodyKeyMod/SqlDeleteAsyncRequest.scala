@@ -17,7 +17,8 @@ object SqlDeleteAsyncRequest {
     __obj.asInstanceOf[SqlDeleteAsyncRequest]
   }
   
-  extension [Self <: SqlDeleteAsyncRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlDeleteAsyncRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

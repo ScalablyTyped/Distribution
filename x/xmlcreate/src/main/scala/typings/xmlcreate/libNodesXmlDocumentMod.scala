@@ -35,7 +35,8 @@ object libNodesXmlDocumentMod {
       __obj.asInstanceOf[IXmlDocumentOptions]
     }
     
-    extension [Self <: IXmlDocumentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IXmlDocumentOptions] (val x: Self) extends AnyVal {
       
       inline def setValidation(value: Boolean): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object TileLayoutContainerHeader {
     __obj.asInstanceOf[TileLayoutContainerHeader]
   }
   
-  extension [Self <: TileLayoutContainerHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileLayoutContainerHeader] (val x: Self) extends AnyVal {
     
     inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     

@@ -91,7 +91,8 @@ object regexpTreeMod {
       __obj.asInstanceOf[CommonTraversalHandlers[T, TraversalKind]]
     }
     
-    extension [Self <: CommonTraversalHandlers[?, ?], T /* <: AstNode */, TraversalKind /* <: Ast | AstPath */](x: Self & (CommonTraversalHandlers[T, TraversalKind])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonTraversalHandlers[?, ?], T /* <: AstNode */, TraversalKind /* <: Ast | AstPath */] (val x: Self & (CommonTraversalHandlers[T, TraversalKind])) extends AnyVal {
       
       inline def setAsterisk(value: TraversalCallback[AstNode, TraversalKind]): Self = StObject.set(x, "*", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object regexpTreeMod {
       __obj.asInstanceOf[SpecificTraversalHandlers[TraversalKind]]
     }
     
-    extension [Self <: SpecificTraversalHandlers[?], TraversalKind /* <: Ast | AstPath */](x: Self & SpecificTraversalHandlers[TraversalKind]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpecificTraversalHandlers[?], TraversalKind /* <: Ast | AstPath */] (val x: Self & SpecificTraversalHandlers[TraversalKind]) extends AnyVal {
       
       inline def setAlternative(value: Traversal[Alternative, TraversalKind]): Self = StObject.set(x, "Alternative", value.asInstanceOf[js.Any])
       
@@ -226,7 +228,8 @@ object regexpTreeMod {
       __obj.asInstanceOf[TransformHandlers[T]]
     }
     
-    extension [Self <: TransformHandlers[?], T /* <: AstNode */](x: Self & TransformHandlers[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformHandlers[?], T /* <: AstNode */] (val x: Self & TransformHandlers[T]) extends AnyVal {
       
       inline def setAlternative(value: Traversal[Alternative, AstPath]): Self = StObject.set(x, "Alternative", value.asInstanceOf[js.Any])
       
@@ -303,7 +306,8 @@ object regexpTreeMod {
       __obj.asInstanceOf[TraversalCallbacks[T, TraversalKind]]
     }
     
-    extension [Self <: TraversalCallbacks[?, ?], T /* <: AstNode */, TraversalKind /* <: Ast | AstPath */](x: Self & (TraversalCallbacks[T, TraversalKind])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraversalCallbacks[?, ?], T /* <: AstNode */, TraversalKind /* <: Ast | AstPath */] (val x: Self & (TraversalCallbacks[T, TraversalKind])) extends AnyVal {
       
       inline def setPost(value: TraversalCallback[T, TraversalKind]): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
       
@@ -354,7 +358,8 @@ object regexpTreeMod {
       __obj.asInstanceOf[TraversalHandlers[T, TraversalKind]]
     }
     
-    extension [Self <: TraversalHandlers[?, ?], T /* <: AstNode */, TraversalKind /* <: Ast | AstPath */](x: Self & (TraversalHandlers[T, TraversalKind])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraversalHandlers[?, ?], T /* <: AstNode */, TraversalKind /* <: Ast | AstPath */] (val x: Self & (TraversalHandlers[T, TraversalKind])) extends AnyVal {
       
       inline def setAlternative(value: Traversal[Alternative, TraversalKind]): Self = StObject.set(x, "Alternative", value.asInstanceOf[js.Any])
       

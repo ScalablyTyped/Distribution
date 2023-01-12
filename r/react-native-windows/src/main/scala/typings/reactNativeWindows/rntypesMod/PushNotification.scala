@@ -63,7 +63,8 @@ object PushNotification {
     __obj.asInstanceOf[PushNotification]
   }
   
-  extension [Self <: PushNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushNotification] (val x: Self) extends AnyVal {
     
     inline def setFinish(value: String => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction1(value))
     

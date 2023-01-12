@@ -26,7 +26,8 @@ object ObjectEncodingOptionsAbor {
     __obj.asInstanceOf[ObjectEncodingOptionsAbor]
   }
   
-  extension [Self <: ObjectEncodingOptionsAbor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectEncodingOptionsAbor] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

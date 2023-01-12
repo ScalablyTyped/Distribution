@@ -21,7 +21,8 @@ object LangAccessibilityRangeSelectorOptions {
     __obj.asInstanceOf[LangAccessibilityRangeSelectorOptions]
   }
   
-  extension [Self <: LangAccessibilityRangeSelectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LangAccessibilityRangeSelectorOptions] (val x: Self) extends AnyVal {
     
     inline def setClickButtonAnnouncement(value: String): Self = StObject.set(x, "clickButtonAnnouncement", value.asInstanceOf[js.Any])
     

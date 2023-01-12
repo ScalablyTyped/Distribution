@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "r7insight_js"
-version := "1.1-dt-20220924Z-3690fe"
+version := "1.1-dt-20220924Z-5b713f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

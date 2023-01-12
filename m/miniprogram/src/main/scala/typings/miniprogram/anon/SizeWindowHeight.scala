@@ -15,7 +15,8 @@ object SizeWindowHeight {
     __obj.asInstanceOf[SizeWindowHeight]
   }
   
-  extension [Self <: SizeWindowHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeWindowHeight] (val x: Self) extends AnyVal {
     
     inline def setSize(value: WindowHeight): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }

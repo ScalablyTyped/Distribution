@@ -22,7 +22,8 @@ object StreamingComputationTask {
     __obj.asInstanceOf[StreamingComputationTask]
   }
   
-  extension [Self <: StreamingComputationTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamingComputationTask] (val x: Self) extends AnyVal {
     
     inline def setComputationRanges(value: js.Array[StreamingComputationRanges]): Self = StObject.set(x, "computationRanges", value.asInstanceOf[js.Any])
     

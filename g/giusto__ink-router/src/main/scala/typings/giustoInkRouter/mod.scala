@@ -91,7 +91,8 @@ object mod {
       __obj.asInstanceOf[CommandLineRouterProps]
     }
     
-    extension [Self <: CommandLineRouterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandLineRouterProps] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -135,7 +136,8 @@ object mod {
       __obj.asInstanceOf[RouteComponentProps[T]]
     }
     
-    extension [Self <: RouteComponentProps[?], T /* <: Record[String, Any] */](x: Self & RouteComponentProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteComponentProps[?], T /* <: Record[String, Any] */] (val x: Self & RouteComponentProps[T]) extends AnyVal {
       
       inline def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
@@ -162,7 +164,8 @@ object mod {
       __obj.asInstanceOf[RouteProps]
     }
     
-    extension [Self <: RouteProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteProps] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: ComponentType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -197,7 +200,8 @@ object mod {
       __obj.asInstanceOf[RouterProps]
     }
     
-    extension [Self <: RouterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouterProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: NonNullable[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -236,7 +240,8 @@ object mod {
       __obj.asInstanceOf[SwitchProps]
     }
     
-    extension [Self <: SwitchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitchProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

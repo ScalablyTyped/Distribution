@@ -15,7 +15,8 @@ object CaptionsListParam {
     __obj.asInstanceOf[CaptionsListParam]
   }
   
-  extension [Self <: CaptionsListParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptionsListParam] (val x: Self) extends AnyVal {
     
     inline def setTracks(value: js.Array[Any]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     

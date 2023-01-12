@@ -15,7 +15,8 @@ object UpdateSMBSecurityStrategyOutput {
     __obj.asInstanceOf[UpdateSMBSecurityStrategyOutput]
   }
   
-  extension [Self <: UpdateSMBSecurityStrategyOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSMBSecurityStrategyOutput] (val x: Self) extends AnyVal {
     
     inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     

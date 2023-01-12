@@ -35,7 +35,8 @@ object WindowOptions {
     __obj.asInstanceOf[WindowOptions]
   }
   
-  extension [Self <: WindowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoload(value: Boolean): Self = StObject.set(x, "autoload", value.asInstanceOf[js.Any])
     

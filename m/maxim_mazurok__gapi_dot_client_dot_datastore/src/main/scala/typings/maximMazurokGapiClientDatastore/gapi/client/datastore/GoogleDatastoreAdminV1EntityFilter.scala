@@ -22,7 +22,8 @@ object GoogleDatastoreAdminV1EntityFilter {
     __obj.asInstanceOf[GoogleDatastoreAdminV1EntityFilter]
   }
   
-  extension [Self <: GoogleDatastoreAdminV1EntityFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDatastoreAdminV1EntityFilter] (val x: Self) extends AnyVal {
     
     inline def setKinds(value: js.Array[String]): Self = StObject.set(x, "kinds", value.asInstanceOf[js.Any])
     

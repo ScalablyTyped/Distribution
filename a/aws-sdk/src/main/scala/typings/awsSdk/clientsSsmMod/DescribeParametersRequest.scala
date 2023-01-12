@@ -33,7 +33,8 @@ object DescribeParametersRequest {
     __obj.asInstanceOf[DescribeParametersRequest]
   }
   
-  extension [Self <: DescribeParametersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeParametersRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: ParametersFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

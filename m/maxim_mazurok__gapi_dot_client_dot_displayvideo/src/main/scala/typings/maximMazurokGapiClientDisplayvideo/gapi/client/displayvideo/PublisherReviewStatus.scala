@@ -19,7 +19,8 @@ object PublisherReviewStatus {
     __obj.asInstanceOf[PublisherReviewStatus]
   }
   
-  extension [Self <: PublisherReviewStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublisherReviewStatus] (val x: Self) extends AnyVal {
     
     inline def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object ToolController {
     __obj.asInstanceOf[ToolController]
   }
   
-  extension [Self <: ToolController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolController] (val x: Self) extends AnyVal {
     
     inline def setActivateTool(value: String => Boolean): Self = StObject.set(x, "activateTool", js.Any.fromFunction1(value))
     

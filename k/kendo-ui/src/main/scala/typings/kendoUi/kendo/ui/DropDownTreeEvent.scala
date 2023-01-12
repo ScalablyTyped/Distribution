@@ -19,7 +19,8 @@ object DropDownTreeEvent {
     __obj.asInstanceOf[DropDownTreeEvent]
   }
   
-  extension [Self <: DropDownTreeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropDownTreeEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

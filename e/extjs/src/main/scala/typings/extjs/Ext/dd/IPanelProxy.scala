@@ -57,7 +57,8 @@ object IPanelProxy {
     __obj.asInstanceOf[IPanelProxy]
   }
   
-  extension [Self <: IPanelProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPanelProxy] (val x: Self) extends AnyVal {
     
     inline def setGetEl(value: () => IElement): Self = StObject.set(x, "getEl", js.Any.fromFunction0(value))
     

@@ -17,7 +17,8 @@ object RefForwardedRef {
     __obj.asInstanceOf[RefForwardedRef]
   }
   
-  extension [Self <: RefForwardedRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefForwardedRef] (val x: Self) extends AnyVal {
     
     inline def setRef(value: ForwardedRef[HTMLButtonElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     

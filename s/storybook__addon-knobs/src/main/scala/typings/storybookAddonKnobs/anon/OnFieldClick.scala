@@ -25,7 +25,8 @@ object OnFieldClick {
     __obj.asInstanceOf[OnFieldClick]
   }
   
-  extension [Self <: OnFieldClick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnFieldClick] (val x: Self) extends AnyVal {
     
     inline def setKnobs(value: Validator[js.Array[KnobStoreKnob]]): Self = StObject.set(x, "knobs", value.asInstanceOf[js.Any])
     

@@ -67,7 +67,8 @@ object listSubheaderListSubheaderMod extends Shortcut {
       __obj.asInstanceOf[ListSubheaderTypeMap[P, D]]
     }
     
-    extension [Self <: ListSubheaderTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (ListSubheaderTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListSubheaderTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (ListSubheaderTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: ListSubheaderClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object ElevationProfileViewModelStartOptions {
     __obj.asInstanceOf[ElevationProfileViewModelStartOptions]
   }
   
-  extension [Self <: ElevationProfileViewModelStartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElevationProfileViewModelStartOptions] (val x: Self) extends AnyVal {
     
     inline def setMode(value: sketch | select): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DeviceSecretVerifierConfigType {
     __obj.asInstanceOf[DeviceSecretVerifierConfigType]
   }
   
-  extension [Self <: DeviceSecretVerifierConfigType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceSecretVerifierConfigType] (val x: Self) extends AnyVal {
     
     inline def setPasswordVerifier(value: StringType): Self = StObject.set(x, "PasswordVerifier", value.asInstanceOf[js.Any])
     

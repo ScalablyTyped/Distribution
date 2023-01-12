@@ -25,7 +25,8 @@ object BookingReminder {
     __obj.asInstanceOf[BookingReminder]
   }
   
-  extension [Self <: BookingReminder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BookingReminder] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

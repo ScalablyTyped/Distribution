@@ -19,7 +19,8 @@ object Variant {
     __obj.asInstanceOf[Variant]
   }
   
-  extension [Self <: Variant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Variant] (val x: Self) extends AnyVal {
     
     inline def setDeviceSpec(value: DeviceSpec): Self = StObject.set(x, "deviceSpec", value.asInstanceOf[js.Any])
     

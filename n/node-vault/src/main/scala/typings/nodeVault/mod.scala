@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[RequestOption]
     }
     
-    extension [Self <: RequestOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOption] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object mod {
       __obj.asInstanceOf[VaultOptions]
     }
     
-    extension [Self <: VaultOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VaultOptions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -388,7 +390,8 @@ object mod {
       __obj.asInstanceOf[functionConf]
     }
     
-    extension [Self <: functionConf](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: functionConf] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object MlDelayedDataCheckConfig {
     __obj.asInstanceOf[MlDelayedDataCheckConfig]
   }
   
-  extension [Self <: MlDelayedDataCheckConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDelayedDataCheckConfig] (val x: Self) extends AnyVal {
     
     inline def setCheck_window(value: Duration): Self = StObject.set(x, "check_window", value.asInstanceOf[js.Any])
     

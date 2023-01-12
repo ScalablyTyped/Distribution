@@ -33,7 +33,8 @@ object XGoalSeek {
     __obj.asInstanceOf[XGoalSeek]
   }
   
-  extension [Self <: XGoalSeek](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGoalSeek] (val x: Self) extends AnyVal {
     
     inline def setSeekGoal(value: (CellAddress, CellAddress, String) => GoalResult): Self = StObject.set(x, "seekGoal", js.Any.fromFunction3(value))
   }

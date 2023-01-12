@@ -19,7 +19,8 @@ object AdScheduleParam {
     __obj.asInstanceOf[AdScheduleParam]
   }
   
-  extension [Self <: AdScheduleParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdScheduleParam] (val x: Self) extends AnyVal {
     
     inline def setAdbreaks(value: js.Array[js.Object]): Self = StObject.set(x, "adbreaks", value.asInstanceOf[js.Any])
     

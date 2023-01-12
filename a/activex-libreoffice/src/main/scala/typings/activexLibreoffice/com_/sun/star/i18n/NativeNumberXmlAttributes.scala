@@ -27,7 +27,8 @@ object NativeNumberXmlAttributes {
     __obj.asInstanceOf[NativeNumberXmlAttributes]
   }
   
-  extension [Self <: NativeNumberXmlAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeNumberXmlAttributes] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     

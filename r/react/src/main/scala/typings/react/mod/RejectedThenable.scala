@@ -25,7 +25,8 @@ object RejectedThenable {
     __obj.asInstanceOf[RejectedThenable[T]]
   }
   
-  extension [Self <: RejectedThenable[?], T](x: Self & RejectedThenable[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RejectedThenable[?], T] (val x: Self & RejectedThenable[T]) extends AnyVal {
     
     inline def setReason(value: Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object GetPost {
     __obj.asInstanceOf[GetPost]
   }
   
-  extension [Self <: GetPost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPost] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersQueryPerpage): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     

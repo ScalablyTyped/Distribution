@@ -17,7 +17,8 @@ object TokenProvider {
     __obj.asInstanceOf[TokenProvider]
   }
   
-  extension [Self <: TokenProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenProvider] (val x: Self) extends AnyVal {
     
     inline def setCacheTTLInSeconds(value: Double): Self = StObject.set(x, "cacheTTLInSeconds", value.asInstanceOf[js.Any])
     

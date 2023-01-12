@@ -223,7 +223,8 @@ object ojswitchMod {
       __obj.asInstanceOf[ojSwitchEventMap]
     }
     
-    extension [Self <: ojSwitchEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojSwitchEventMap] (val x: Self) extends AnyVal {
       
       inline def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
       
@@ -256,7 +257,8 @@ object ojswitchMod {
       __obj.asInstanceOf[ojSwitchSettableProperties]
     }
     
-    extension [Self <: ojSwitchSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojSwitchSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     }
@@ -298,7 +300,8 @@ object ojswitchMod {
       __obj.asInstanceOf[ojSwitchSettablePropertiesLenient]
     }
     
-    extension [Self <: ojSwitchSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojSwitchSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setDescribedBy(value: String): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
       

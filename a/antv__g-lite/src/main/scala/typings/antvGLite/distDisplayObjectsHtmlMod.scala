@@ -47,7 +47,8 @@ object distDisplayObjectsHtmlMod {
       __obj.asInstanceOf[HTMLStyleProps]
     }
     
-    extension [Self <: HTMLStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTMLStyleProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object distDisplayObjectsHtmlMod {
       __obj.asInstanceOf[ParsedHTMLStyleProps]
     }
     
-    extension [Self <: ParsedHTMLStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedHTMLStyleProps] (val x: Self) extends AnyVal {
       
       inline def set$el(value: HTMLElement): Self = StObject.set(x, "$el", value.asInstanceOf[js.Any])
       

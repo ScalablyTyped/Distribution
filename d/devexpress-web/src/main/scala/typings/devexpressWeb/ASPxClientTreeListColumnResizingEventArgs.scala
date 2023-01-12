@@ -23,7 +23,8 @@ object ASPxClientTreeListColumnResizingEventArgs {
     __obj.asInstanceOf[ASPxClientTreeListColumnResizingEventArgs]
   }
   
-  extension [Self <: ASPxClientTreeListColumnResizingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTreeListColumnResizingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: ASPxClientTreeListColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
   }

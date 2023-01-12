@@ -461,7 +461,8 @@ object IBodyDefinition {
     __obj.asInstanceOf[IBodyDefinition]
   }
   
-  extension [Self <: IBodyDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBodyDefinition] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

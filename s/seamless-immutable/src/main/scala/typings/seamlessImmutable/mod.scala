@@ -76,7 +76,8 @@ object mod {
       __obj.asInstanceOf[AsMutableOptions[TDeep]]
     }
     
-    extension [Self <: AsMutableOptions[?], TDeep /* <: Boolean */](x: Self & AsMutableOptions[TDeep]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsMutableOptions[?], TDeep /* <: Boolean */] (val x: Self & AsMutableOptions[TDeep]) extends AnyVal {
       
       inline def setDeep(value: TDeep): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
     }
@@ -457,13 +458,15 @@ object mod {
         __obj.asInstanceOf[typings.seamlessImmutable.mod.ImmutableDate.Additions]
       }
       
-      extension [Self <: typings.seamlessImmutable.mod.ImmutableDate.Additions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.seamlessImmutable.mod.ImmutableDate.Additions] (val x: Self) extends AnyVal {
         
         inline def setAsMutable(value: () => js.Date): Self = StObject.set(x, "asMutable", js.Any.fromFunction0(value))
       }
     }
     
-    extension [Self <: ImmutableDate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImmutableDate] (val x: Self) extends AnyVal {
       
       inline def setAsMutable(value: () => js.Date): Self = StObject.set(x, "asMutable", js.Any.fromFunction0(value))
       
@@ -734,7 +737,8 @@ object mod {
         __obj.asInstanceOf[typings.seamlessImmutable.mod.ImmutableDate.Remaining]
       }
       
-      extension [Self <: typings.seamlessImmutable.mod.ImmutableDate.Remaining](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.seamlessImmutable.mod.ImmutableDate.Remaining] (val x: Self) extends AnyVal {
         
         inline def setGetDate(value: () => Double): Self = StObject.set(x, "getDate", js.Any.fromFunction0(value))
         
@@ -1006,7 +1010,8 @@ object mod {
       __obj.asInstanceOf[MergeConfig]
     }
     
-    extension [Self <: MergeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeConfig] (val x: Self) extends AnyVal {
       
       inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
@@ -1038,7 +1043,8 @@ object mod {
       __obj.asInstanceOf[ReplaceConfig]
     }
     
-    extension [Self <: ReplaceConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplaceConfig] (val x: Self) extends AnyVal {
       
       inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
     }

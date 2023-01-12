@@ -38,7 +38,8 @@ object ShadowPropTypesIOSStatic {
     __obj.asInstanceOf[ShadowPropTypesIOSStatic]
   }
   
-  extension [Self <: ShadowPropTypesIOSStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShadowPropTypesIOSStatic] (val x: Self) extends AnyVal {
     
     inline def setShadowColor(value: ColorValue): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     

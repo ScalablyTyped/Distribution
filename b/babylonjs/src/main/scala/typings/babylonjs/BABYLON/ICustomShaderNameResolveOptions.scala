@@ -18,7 +18,8 @@ object ICustomShaderNameResolveOptions {
     __obj.asInstanceOf[ICustomShaderNameResolveOptions]
   }
   
-  extension [Self <: ICustomShaderNameResolveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICustomShaderNameResolveOptions] (val x: Self) extends AnyVal {
     
     inline def setProcessFinalCode(value: (/* shaderType */ String, /* code */ String) => String): Self = StObject.set(x, "processFinalCode", js.Any.fromFunction2(value))
     

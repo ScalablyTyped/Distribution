@@ -18,7 +18,8 @@ object ServiceSpecification {
     __obj.asInstanceOf[ServiceSpecification]
   }
   
-  extension [Self <: ServiceSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceSpecification] (val x: Self) extends AnyVal {
     
     inline def setEC2Specification(value: EC2Specification): Self = StObject.set(x, "EC2Specification", value.asInstanceOf[js.Any])
     

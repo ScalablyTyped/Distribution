@@ -378,7 +378,8 @@ object sapUiUx3ThingGroupMod {
       __obj.asInstanceOf[ThingGroupSettings]
     }
     
-    extension [Self <: ThingGroupSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThingGroupSettings] (val x: Self) extends AnyVal {
       
       inline def setActions(
         value: js.Array[ThingGroup] | ThingGroup | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

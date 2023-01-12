@@ -27,7 +27,8 @@ object messages {
       __obj.asInstanceOf[BatchData]
     }
     
-    extension [Self <: BatchData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchData] (val x: Self) extends AnyVal {
       
       inline def `setRecipient-variables`(value: String | BatchSendRecipientVars): Self = StObject.set(x, "recipient-variables", value.asInstanceOf[js.Any])
       
@@ -107,7 +108,8 @@ object messages {
       __obj.asInstanceOf[SendData]
     }
     
-    extension [Self <: SendData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendData] (val x: Self) extends AnyVal {
       
       inline def `setAmp-html`(value: String): Self = StObject.set(x, "amp-html", value.asInstanceOf[js.Any])
       
@@ -226,7 +228,8 @@ object messages {
       __obj.asInstanceOf[SendResponse]
     }
     
-    extension [Self <: SendResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendResponse] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -248,7 +251,8 @@ object messages {
       __obj.asInstanceOf[SendTemplateData]
     }
     
-    extension [Self <: SendTemplateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendTemplateData] (val x: Self) extends AnyVal {
       
       inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     }

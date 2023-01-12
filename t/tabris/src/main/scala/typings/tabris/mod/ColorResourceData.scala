@@ -18,7 +18,8 @@ object ColorResourceData {
     __obj.asInstanceOf[ColorResourceData[Resources]]
   }
   
-  extension [Self <: ColorResourceData[?], Resources /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof Resources ]: tabris.tabris.Color} */ js.Any */](x: Self & ColorResourceData[Resources]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorResourceData[?], Resources /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof Resources ]: tabris.tabris.Color} */ js.Any */] (val x: Self & ColorResourceData[Resources]) extends AnyVal {
     
     inline def setBuild(value: Selectable[ColorValue]): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

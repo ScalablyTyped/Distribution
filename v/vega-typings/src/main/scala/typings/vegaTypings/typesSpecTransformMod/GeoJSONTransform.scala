@@ -27,7 +27,8 @@ object GeoJSONTransform {
     __obj.asInstanceOf[GeoJSONTransform]
   }
   
-  extension [Self <: GeoJSONTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoJSONTransform] (val x: Self) extends AnyVal {
     
     inline def setFields(value: Vector2[FieldRef] | SignalRef): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

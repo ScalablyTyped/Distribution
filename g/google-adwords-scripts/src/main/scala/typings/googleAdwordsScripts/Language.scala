@@ -34,7 +34,8 @@ object Language {
     __obj.asInstanceOf[Language]
   }
   
-  extension [Self <: Language](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Language] (val x: Self) extends AnyVal {
     
     inline def setGetCampaignType(value: () => CampaignType): Self = StObject.set(x, "getCampaignType", js.Any.fromFunction0(value))
     

@@ -22,7 +22,8 @@ object Partialstrokestringstroke {
     __obj.asInstanceOf[Partialstrokestringstroke]
   }
   
-  extension [Self <: Partialstrokestringstroke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialstrokestringstroke] (val x: Self) extends AnyVal {
     
     inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     

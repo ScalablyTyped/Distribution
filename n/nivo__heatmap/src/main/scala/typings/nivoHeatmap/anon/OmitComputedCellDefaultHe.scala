@@ -53,7 +53,8 @@ object OmitComputedCellDefaultHe {
     __obj.asInstanceOf[OmitComputedCellDefaultHe]
   }
   
-  extension [Self <: OmitComputedCellDefaultHe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitComputedCellDefaultHe] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

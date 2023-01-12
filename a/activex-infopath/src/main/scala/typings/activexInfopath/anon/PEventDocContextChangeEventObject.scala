@@ -16,7 +16,8 @@ object PEventDocContextChangeEventObject {
     __obj.asInstanceOf[PEventDocContextChangeEventObject]
   }
   
-  extension [Self <: PEventDocContextChangeEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PEventDocContextChangeEventObject] (val x: Self) extends AnyVal {
     
     inline def setPEvent(value: DocContextChangeEventObject): Self = StObject.set(x, "pEvent", value.asInstanceOf[js.Any])
   }

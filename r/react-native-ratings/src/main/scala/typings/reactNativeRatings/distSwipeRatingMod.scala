@@ -185,7 +185,8 @@ object distSwipeRatingMod {
       __obj.asInstanceOf[SwipeRatingProps]
     }
     
-    extension [Self <: SwipeRatingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeRatingProps] (val x: Self) extends AnyVal {
       
       inline def setFractions(value: Any): Self = StObject.set(x, "fractions", value.asInstanceOf[js.Any])
       
@@ -288,7 +289,8 @@ object distSwipeRatingMod {
       __obj.asInstanceOf[SwipeRatingState]
     }
     
-    extension [Self <: SwipeRatingState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeRatingState] (val x: Self) extends AnyVal {
       
       inline def setCenterX(value: Double): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
       

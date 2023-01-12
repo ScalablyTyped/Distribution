@@ -25,7 +25,8 @@ object CoinExtraField {
     __obj.asInstanceOf[CoinExtraField]
   }
   
-  extension [Self <: CoinExtraField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoinExtraField] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

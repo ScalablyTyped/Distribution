@@ -21,7 +21,8 @@ object PortalQueryUsersOptions {
     __obj.asInstanceOf[PortalQueryUsersOptions]
   }
   
-  extension [Self <: PortalQueryUsersOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortalQueryUsersOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

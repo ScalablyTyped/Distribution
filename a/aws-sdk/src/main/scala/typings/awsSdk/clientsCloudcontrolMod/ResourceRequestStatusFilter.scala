@@ -23,7 +23,8 @@ object ResourceRequestStatusFilter {
     __obj.asInstanceOf[ResourceRequestStatusFilter]
   }
   
-  extension [Self <: ResourceRequestStatusFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceRequestStatusFilter] (val x: Self) extends AnyVal {
     
     inline def setOperationStatuses(value: OperationStatuses): Self = StObject.set(x, "OperationStatuses", value.asInstanceOf[js.Any])
     

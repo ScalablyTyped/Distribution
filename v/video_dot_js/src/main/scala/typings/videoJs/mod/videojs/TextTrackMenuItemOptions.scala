@@ -17,7 +17,8 @@ object TextTrackMenuItemOptions {
     __obj.asInstanceOf[TextTrackMenuItemOptions]
   }
   
-  extension [Self <: TextTrackMenuItemOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextTrackMenuItemOptions] (val x: Self) extends AnyVal {
     
     inline def setTrack(value: TextTrack): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
   }

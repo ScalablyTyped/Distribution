@@ -121,7 +121,8 @@ object libPlotsTinyAreaTypesMod {
       __obj.asInstanceOf[TinyAreaOptions]
     }
     
-    extension [Self <: TinyAreaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TinyAreaOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

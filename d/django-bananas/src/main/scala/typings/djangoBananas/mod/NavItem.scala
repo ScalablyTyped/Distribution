@@ -18,7 +18,8 @@ object NavItem {
     __obj.asInstanceOf[NavItem]
   }
   
-  extension [Self <: NavItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavItem] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

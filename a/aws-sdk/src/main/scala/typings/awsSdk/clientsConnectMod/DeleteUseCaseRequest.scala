@@ -28,7 +28,8 @@ object DeleteUseCaseRequest {
     __obj.asInstanceOf[DeleteUseCaseRequest]
   }
   
-  extension [Self <: DeleteUseCaseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteUseCaseRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

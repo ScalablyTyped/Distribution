@@ -93,7 +93,8 @@ object libRuleMod {
       __obj.asInstanceOf[RuleProps]
     }
     
-    extension [Self <: RuleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuleProps] (val x: Self) extends AnyVal {
       
       inline def setRaws(value: RuleRaws): Self = StObject.set(x, "raws", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object libRuleMod {
       __obj.asInstanceOf[RuleRaws]
     }
     
-    extension [Self <: RuleRaws](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuleRaws] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       

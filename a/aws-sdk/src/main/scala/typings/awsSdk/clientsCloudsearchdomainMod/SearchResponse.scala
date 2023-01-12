@@ -33,7 +33,8 @@ object SearchResponse {
     __obj.asInstanceOf[SearchResponse]
   }
   
-  extension [Self <: SearchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchResponse] (val x: Self) extends AnyVal {
     
     inline def setFacets(value: Facets): Self = StObject.set(x, "facets", value.asInstanceOf[js.Any])
     

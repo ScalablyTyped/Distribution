@@ -23,7 +23,8 @@ object ShapeAnnotationOption {
     __obj.asInstanceOf[ShapeAnnotationOption]
   }
   
-  extension [Self <: ShapeAnnotationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeAnnotationOption] (val x: Self) extends AnyVal {
     
     inline def setRender(value: (IGroup, View, ParsePosition) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
   }

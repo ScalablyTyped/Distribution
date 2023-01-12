@@ -37,7 +37,8 @@ object DescribeServicesRequestwa {
     __obj.asInstanceOf[DescribeServicesRequestwa]
   }
   
-  extension [Self <: DescribeServicesRequestwa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeServicesRequestwa] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

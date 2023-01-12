@@ -28,7 +28,8 @@ object ObjectExpression_ {
     __obj.asInstanceOf[ObjectExpression_]
   }
   
-  extension [Self <: ObjectExpression_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectExpression_] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: js.Array[ObjectProperty_ | ObjectMethod_ | SpreadProperty_]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

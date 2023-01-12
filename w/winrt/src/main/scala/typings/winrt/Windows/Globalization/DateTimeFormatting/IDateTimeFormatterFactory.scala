@@ -68,7 +68,8 @@ object IDateTimeFormatterFactory {
     __obj.asInstanceOf[IDateTimeFormatterFactory]
   }
   
-  extension [Self <: IDateTimeFormatterFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDateTimeFormatterFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateDateTimeFormatter(value: String => DateTimeFormatter): Self = StObject.set(x, "createDateTimeFormatter", js.Any.fromFunction1(value))
     

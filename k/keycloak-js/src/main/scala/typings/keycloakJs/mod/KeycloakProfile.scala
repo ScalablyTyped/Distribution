@@ -31,7 +31,8 @@ object KeycloakProfile {
     __obj.asInstanceOf[KeycloakProfile]
   }
   
-  extension [Self <: KeycloakProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeycloakProfile] (val x: Self) extends AnyVal {
     
     inline def setCreatedTimestamp(value: Double): Self = StObject.set(x, "createdTimestamp", value.asInstanceOf[js.Any])
     

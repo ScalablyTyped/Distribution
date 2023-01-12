@@ -33,7 +33,8 @@ object FlexGridColumnGap {
     __obj.asInstanceOf[FlexGridColumnGap]
   }
   
-  extension [Self <: FlexGridColumnGap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexGridColumnGap] (val x: Self) extends AnyVal {
     
     inline def set$flexGridColumnCount(value: Responsive[Double]): Self = StObject.set(x, "$flexGridColumnCount", value.asInstanceOf[js.Any])
     

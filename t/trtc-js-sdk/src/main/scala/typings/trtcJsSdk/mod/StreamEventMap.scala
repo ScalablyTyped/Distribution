@@ -22,7 +22,8 @@ object StreamEventMap {
     __obj.asInstanceOf[StreamEventMap]
   }
   
-  extension [Self <: StreamEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamEventMap] (val x: Self) extends AnyVal {
     
     inline def `setPlayer-state-changed`(value: Reason): Self = StObject.set(x, "player-state-changed", value.asInstanceOf[js.Any])
     

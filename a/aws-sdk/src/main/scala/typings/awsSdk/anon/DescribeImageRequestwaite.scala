@@ -24,7 +24,8 @@ object DescribeImageRequestwaite {
     __obj.asInstanceOf[DescribeImageRequestwaite]
   }
   
-  extension [Self <: DescribeImageRequestwaite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeImageRequestwaite] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object MultipartColorRampProperties {
     __obj.asInstanceOf[MultipartColorRampProperties]
   }
   
-  extension [Self <: MultipartColorRampProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipartColorRampProperties] (val x: Self) extends AnyVal {
     
     inline def setColorRamps(value: js.Array[AlgorithmicColorRampProperties]): Self = StObject.set(x, "colorRamps", value.asInstanceOf[js.Any])
     

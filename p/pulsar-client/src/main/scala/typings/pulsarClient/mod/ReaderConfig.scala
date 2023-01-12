@@ -27,7 +27,8 @@ object ReaderConfig {
     __obj.asInstanceOf[ReaderConfig]
   }
   
-  extension [Self <: ReaderConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReaderConfig] (val x: Self) extends AnyVal {
     
     inline def setListener(value: (/* message */ Message, /* reader */ Reader) => Unit): Self = StObject.set(x, "listener", js.Any.fromFunction2(value))
     

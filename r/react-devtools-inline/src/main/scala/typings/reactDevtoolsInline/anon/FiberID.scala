@@ -17,7 +17,8 @@ object FiberID {
     __obj.asInstanceOf[FiberID]
   }
   
-  extension [Self <: FiberID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FiberID] (val x: Self) extends AnyVal {
     
     inline def setFiberID(value: Double): Self = StObject.set(x, "fiberID", value.asInstanceOf[js.Any])
     

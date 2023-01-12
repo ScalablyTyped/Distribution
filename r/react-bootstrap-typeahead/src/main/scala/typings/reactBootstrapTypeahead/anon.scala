@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Active]
     }
     
-    extension [Self <: Active](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object anon {
       __obj.asInstanceOf[CustomOption]
     }
     
-    extension [Self <: CustomOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomOption] (val x: Self) extends AnyVal {
       
       inline def setCustomOption(value: Boolean): Self = StObject.set(x, "customOption", value.asInstanceOf[js.Any])
     }
@@ -102,7 +104,8 @@ object anon {
       __obj.asInstanceOf[OnBlur]
     }
     
-    extension [Self <: OnBlur](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnBlur] (val x: Self) extends AnyVal {
       
       inline def setOnBlur(value: /* e */ SyntheticEvent[HTMLElement, Event] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       

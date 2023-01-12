@@ -33,7 +33,8 @@ object ExportUsersJob {
     __obj.asInstanceOf[ExportUsersJob]
   }
   
-  extension [Self <: ExportUsersJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportUsersJob] (val x: Self) extends AnyVal {
     
     inline def setConnection_id(value: String): Self = StObject.set(x, "connection_id", value.asInstanceOf[js.Any])
     

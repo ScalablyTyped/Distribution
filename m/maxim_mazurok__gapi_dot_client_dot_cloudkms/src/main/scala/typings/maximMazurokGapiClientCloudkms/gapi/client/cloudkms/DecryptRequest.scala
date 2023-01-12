@@ -37,7 +37,8 @@ object DecryptRequest {
     __obj.asInstanceOf[DecryptRequest]
   }
   
-  extension [Self <: DecryptRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecryptRequest] (val x: Self) extends AnyVal {
     
     inline def setAdditionalAuthenticatedData(value: String): Self = StObject.set(x, "additionalAuthenticatedData", value.asInstanceOf[js.Any])
     

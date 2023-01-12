@@ -15,7 +15,8 @@ object TokenizerBuilder {
     __obj.asInstanceOf[TokenizerBuilder[T]]
   }
   
-  extension [Self <: TokenizerBuilder[?], T](x: Self & TokenizerBuilder[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenizerBuilder[?], T] (val x: Self & TokenizerBuilder[T]) extends AnyVal {
     
     inline def setBuild(value: js.Function2[/* err */ js.Error, /* tokenizer */ Tokenizer[T], Unit] => Unit): Self = StObject.set(x, "build", js.Any.fromFunction1(value))
   }

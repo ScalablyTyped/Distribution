@@ -23,7 +23,8 @@ object PointerAxisCoordinatesObject {
     __obj.asInstanceOf[PointerAxisCoordinatesObject]
   }
   
-  extension [Self <: PointerAxisCoordinatesObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerAxisCoordinatesObject] (val x: Self) extends AnyVal {
     
     inline def setXAxis(value: js.Array[PointerAxisCoordinateObject]): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     

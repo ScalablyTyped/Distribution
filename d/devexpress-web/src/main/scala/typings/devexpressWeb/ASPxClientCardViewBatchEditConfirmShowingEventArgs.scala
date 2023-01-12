@@ -23,7 +23,8 @@ object ASPxClientCardViewBatchEditConfirmShowingEventArgs {
     __obj.asInstanceOf[ASPxClientCardViewBatchEditConfirmShowingEventArgs]
   }
   
-  extension [Self <: ASPxClientCardViewBatchEditConfirmShowingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCardViewBatchEditConfirmShowingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRequestTriggerID(value: String): Self = StObject.set(x, "requestTriggerID", value.asInstanceOf[js.Any])
   }

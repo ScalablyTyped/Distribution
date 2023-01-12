@@ -51,7 +51,8 @@ object IncrementData {
     __obj.asInstanceOf[IncrementData]
   }
   
-  extension [Self <: IncrementData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncrementData] (val x: Self) extends AnyVal {
     
     inline def setBaseValue(value: Any): Self = StObject.set(x, "BaseValue", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object libEsmIconBaseMod {
       __obj.asInstanceOf[IconBaseProps]
     }
     
-    extension [Self <: IconBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconBaseProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object libEsmIconBaseMod {
       __obj.asInstanceOf[IconTree]
     }
     
-    extension [Self <: IconTree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconTree] (val x: Self) extends AnyVal {
       
       inline def setAttr(value: StringDictionary[String]): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
       

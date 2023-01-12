@@ -685,7 +685,8 @@ object PropsHTMLDialogElementcon {
     __obj.asInstanceOf[PropsHTMLDialogElementcon]
   }
   
-  extension [Self <: PropsHTMLDialogElementcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsHTMLDialogElementcon] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

@@ -103,7 +103,8 @@ object ASPxClientRichEditPopupMenuItem {
     __obj.asInstanceOf[ASPxClientRichEditPopupMenuItem]
   }
   
-  extension [Self <: ASPxClientRichEditPopupMenuItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRichEditPopupMenuItem] (val x: Self) extends AnyVal {
     
     inline def setBeginGroup(value: Boolean): Self = StObject.set(x, "beginGroup", value.asInstanceOf[js.Any])
     

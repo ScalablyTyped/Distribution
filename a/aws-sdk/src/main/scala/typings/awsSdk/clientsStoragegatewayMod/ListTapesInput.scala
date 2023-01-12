@@ -25,7 +25,8 @@ object ListTapesInput {
     __obj.asInstanceOf[ListTapesInput]
   }
   
-  extension [Self <: ListTapesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTapesInput] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: PositiveIntObject): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

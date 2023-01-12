@@ -16,7 +16,8 @@ object BatchCreateBitbucketServerConnectedRepositoriesRequest {
     __obj.asInstanceOf[BatchCreateBitbucketServerConnectedRepositoriesRequest]
   }
   
-  extension [Self <: BatchCreateBitbucketServerConnectedRepositoriesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCreateBitbucketServerConnectedRepositoriesRequest] (val x: Self) extends AnyVal {
     
     inline def setRequests(value: js.Array[CreateBitbucketServerConnectedRepositoryRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     

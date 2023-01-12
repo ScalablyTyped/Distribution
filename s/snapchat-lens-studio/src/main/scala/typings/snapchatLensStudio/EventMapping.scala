@@ -98,7 +98,8 @@ object EventMapping {
     __obj.asInstanceOf[EventMapping]
   }
   
-  extension [Self <: EventMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventMapping] (val x: Self) extends AnyVal {
     
     inline def setBrowsLoweredEvent(value: BrowsLoweredEvent): Self = StObject.set(x, "BrowsLoweredEvent", value.asInstanceOf[js.Any])
     

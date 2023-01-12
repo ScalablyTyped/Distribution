@@ -52,7 +52,8 @@ object XChangesBatch {
     __obj.asInstanceOf[XChangesBatch]
   }
   
-  extension [Self <: XChangesBatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XChangesBatch] (val x: Self) extends AnyVal {
     
     inline def setCommitChanges(value: () => Unit): Self = StObject.set(x, "commitChanges", js.Any.fromFunction0(value))
     

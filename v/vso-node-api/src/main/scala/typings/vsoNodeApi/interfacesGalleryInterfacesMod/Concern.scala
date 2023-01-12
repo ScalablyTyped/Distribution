@@ -28,7 +28,8 @@ object Concern {
     __obj.asInstanceOf[Concern]
   }
   
-  extension [Self <: Concern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Concern] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: ConcernCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
   }

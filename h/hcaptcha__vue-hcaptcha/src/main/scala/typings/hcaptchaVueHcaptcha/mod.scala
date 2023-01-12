@@ -31,7 +31,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HCaptcha]
     }
     
-    extension [Self <: HCaptcha](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HCaptcha] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HCaptchaMethods]
     }
     
-    extension [Self <: HCaptchaMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HCaptchaMethods] (val x: Self) extends AnyVal {
       
       inline def setExecute(value: () => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
       
@@ -102,7 +104,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HCaptchaProps]
     }
     
-    extension [Self <: HCaptchaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HCaptchaProps] (val x: Self) extends AnyVal {
       
       inline def setSitekey(value: String): Self = StObject.set(x, "sitekey", value.asInstanceOf[js.Any])
       

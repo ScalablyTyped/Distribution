@@ -28,7 +28,8 @@ object distSrcModulesUiDebugPanelTypesMod {
       __obj.asInstanceOf[IDebugPanelHighlightStyles]
     }
     
-    extension [Self <: IDebugPanelHighlightStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDebugPanelHighlightStyles] (val x: Self) extends AnyVal {
       
       inline def setBoolean(value: String): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object distSrcModulesUiDebugPanelTypesMod {
       __obj.asInstanceOf[IDebugPanelViewCallbacks]
     }
     
-    extension [Self <: IDebugPanelViewCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDebugPanelViewCallbacks] (val x: Self) extends AnyVal {
       
       inline def setOnCloseButtonClick(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onCloseButtonClick", value.asInstanceOf[js.Any])
       
@@ -72,7 +74,8 @@ object distSrcModulesUiDebugPanelTypesMod {
       __obj.asInstanceOf[IDebugPanelViewConfig]
     }
     
-    extension [Self <: IDebugPanelViewConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDebugPanelViewConfig] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: IDebugPanelViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
     }
@@ -108,7 +111,8 @@ object distSrcModulesUiDebugPanelTypesMod {
       __obj.asInstanceOf[IDebugPanelViewStyles]
     }
     
-    extension [Self <: IDebugPanelViewStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDebugPanelViewStyles] (val x: Self) extends AnyVal {
       
       inline def setCloseButton(value: String): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
       

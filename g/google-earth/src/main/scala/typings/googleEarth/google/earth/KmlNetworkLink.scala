@@ -119,7 +119,8 @@ object KmlNetworkLink {
     __obj.asInstanceOf[KmlNetworkLink]
   }
   
-  extension [Self <: KmlNetworkLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlNetworkLink] (val x: Self) extends AnyVal {
     
     inline def setGetFlyToView(value: () => Boolean): Self = StObject.set(x, "getFlyToView", js.Any.fromFunction0(value))
     

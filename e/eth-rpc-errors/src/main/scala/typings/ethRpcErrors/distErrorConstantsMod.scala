@@ -93,7 +93,8 @@ object distErrorConstantsMod {
       __obj.asInstanceOf[ErrorCodes_]
     }
     
-    extension [Self <: ErrorCodes_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorCodes_] (val x: Self) extends AnyVal {
       
       inline def setProvider(value: ChainDisconnected): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       

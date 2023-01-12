@@ -19,7 +19,8 @@ object StringInsertOp {
     __obj.asInstanceOf[StringInsertOp]
   }
   
-  extension [Self <: StringInsertOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringInsertOp] (val x: Self) extends AnyVal {
     
     inline def setP(value: Path): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     

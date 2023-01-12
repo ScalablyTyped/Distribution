@@ -29,7 +29,8 @@ object SpecificNumberFormatOptions {
     __obj.asInstanceOf[SpecificNumberFormatOptions]
   }
   
-  extension [Self <: SpecificNumberFormatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecificNumberFormatOptions] (val x: Self) extends AnyVal {
     
     inline def setCurrencyDisplay(value: CurrencyDisplay): Self = StObject.set(x, "currencyDisplay", value.asInstanceOf[js.Any])
     

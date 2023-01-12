@@ -35,7 +35,8 @@ object Activities {
     __obj.asInstanceOf[Activities]
   }
   
-  extension [Self <: Activities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Activities] (val x: Self) extends AnyVal {
     
     inline def setActivities(value: typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.Activities): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     

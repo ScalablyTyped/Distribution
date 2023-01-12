@@ -16,7 +16,8 @@ object ContentDurationTargetingOptionDetails {
     __obj.asInstanceOf[ContentDurationTargetingOptionDetails]
   }
   
-  extension [Self <: ContentDurationTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentDurationTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setContentDuration(value: String): Self = StObject.set(x, "contentDuration", value.asInstanceOf[js.Any])
     

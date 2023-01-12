@@ -119,7 +119,8 @@ object ModelBuilder {
     __obj.asInstanceOf[ModelBuilder]
   }
   
-  extension [Self <: ModelBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelBuilder] (val x: Self) extends AnyVal {
     
     inline def setButton(value: () => ComponentBuilder[ButtonComponent, ButtonProperties]): Self = StObject.set(x, "button", js.Any.fromFunction0(value))
     

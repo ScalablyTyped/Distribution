@@ -32,7 +32,8 @@ object BasicConstraints {
     __obj.asInstanceOf[BasicConstraints]
   }
   
-  extension [Self <: BasicConstraints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicConstraints] (val x: Self) extends AnyVal {
     
     inline def setGetExtnValueHex(value: () => String): Self = StObject.set(x, "getExtnValueHex", js.Any.fromFunction0(value))
   }

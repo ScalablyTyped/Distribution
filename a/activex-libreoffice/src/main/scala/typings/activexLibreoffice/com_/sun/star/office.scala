@@ -49,7 +49,8 @@ object office {
       __obj.asInstanceOf[Quickstart]
     }
     
-    extension [Self <: Quickstart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Quickstart] (val x: Self) extends AnyVal {
       
       inline def setCreateAndSetVeto(value: (Boolean, Boolean, Boolean) => Unit): Self = StObject.set(x, "createAndSetVeto", js.Any.fromFunction3(value))
       
@@ -120,7 +121,8 @@ object office {
       __obj.asInstanceOf[XAnnotation]
     }
     
-    extension [Self <: XAnnotation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XAnnotation] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: Any): Self = StObject.set(x, "Anchor", value.asInstanceOf[js.Any])
       
@@ -161,7 +163,8 @@ object office {
       __obj.asInstanceOf[XAnnotationAccess]
     }
     
-    extension [Self <: XAnnotationAccess](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XAnnotationAccess] (val x: Self) extends AnyVal {
       
       inline def setCreateAndInsertAnnotation(value: () => XAnnotation): Self = StObject.set(x, "createAndInsertAnnotation", js.Any.fromFunction0(value))
       
@@ -190,7 +193,8 @@ object office {
       __obj.asInstanceOf[XAnnotationEnumeration]
     }
     
-    extension [Self <: XAnnotationEnumeration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XAnnotationEnumeration] (val x: Self) extends AnyVal {
       
       inline def setHasMoreElements(value: () => Boolean): Self = StObject.set(x, "hasMoreElements", js.Any.fromFunction0(value))
       

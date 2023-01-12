@@ -37,7 +37,8 @@ object ReadonlyStencilMode {
     __obj.asInstanceOf[ReadonlyStencilMode]
   }
   
-  extension [Self <: ReadonlyStencilMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyStencilMode] (val x: Self) extends AnyVal {
     
     inline def setDepthFail(value: StencilOpConstant): Self = StObject.set(x, "depthFail", value.asInstanceOf[js.Any])
     

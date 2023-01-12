@@ -29,7 +29,8 @@ object IValidatorOwner {
     __obj.asInstanceOf[IValidatorOwner]
   }
   
-  extension [Self <: IValidatorOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IValidatorOwner] (val x: Self) extends AnyVal {
     
     inline def setGetDataFilteredProperties(value: () => Any): Self = StObject.set(x, "getDataFilteredProperties", js.Any.fromFunction0(value))
     

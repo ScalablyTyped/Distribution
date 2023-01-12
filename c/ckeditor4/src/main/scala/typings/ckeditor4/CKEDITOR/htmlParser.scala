@@ -47,7 +47,8 @@ object htmlParser {
       __obj.asInstanceOf[basicWriter]
     }
     
-    extension [Self <: basicWriter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: basicWriter] (val x: Self) extends AnyVal {
       
       inline def setAttribute(value: (String, String) => Unit): Self = StObject.set(x, "attribute", js.Any.fromFunction2(value))
       
@@ -212,7 +213,8 @@ object htmlParser {
       __obj.asInstanceOf[filterRulesDefinition]
     }
     
-    extension [Self <: filterRulesDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: filterRulesDefinition] (val x: Self) extends AnyVal {
       
       inline def setAttributeNames(value: Any): Self = StObject.set(x, "attributeNames", value.asInstanceOf[js.Any])
       
@@ -332,7 +334,8 @@ object htmlParser {
       __obj.asInstanceOf[ruleOptions]
     }
     
-    extension [Self <: ruleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ruleOptions] (val x: Self) extends AnyVal {
       
       inline def setApplyToAll(value: Boolean): Self = StObject.set(x, "applyToAll", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object WizardMessages {
     __obj.asInstanceOf[WizardMessages]
   }
   
-  extension [Self <: WizardMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WizardMessages] (val x: Self) extends AnyVal {
     
     inline def setDone(value: String): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     

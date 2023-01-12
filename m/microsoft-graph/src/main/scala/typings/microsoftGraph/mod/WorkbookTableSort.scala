@@ -27,7 +27,8 @@ object WorkbookTableSort {
     __obj.asInstanceOf[WorkbookTableSort]
   }
   
-  extension [Self <: WorkbookTableSort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookTableSort] (val x: Self) extends AnyVal {
     
     inline def setFields(value: NullableOption[js.Array[WorkbookSortField]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

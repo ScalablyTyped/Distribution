@@ -18,7 +18,8 @@ object CreateAnomalySubscriptionResponse {
     __obj.asInstanceOf[CreateAnomalySubscriptionResponse]
   }
   
-  extension [Self <: CreateAnomalySubscriptionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAnomalySubscriptionResponse] (val x: Self) extends AnyVal {
     
     inline def setSubscriptionArn(value: GenericString): Self = StObject.set(x, "SubscriptionArn", value.asInstanceOf[js.Any])
   }

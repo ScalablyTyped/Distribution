@@ -24,7 +24,8 @@ object semactsAndAnnotations {
     __obj.asInstanceOf[semactsAndAnnotations]
   }
   
-  extension [Self <: semactsAndAnnotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: semactsAndAnnotations] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: js.Array[Annotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

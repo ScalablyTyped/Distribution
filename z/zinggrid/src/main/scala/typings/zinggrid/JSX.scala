@@ -313,7 +313,8 @@ object JSX {
       __obj.asInstanceOf[IntrinsicElements]
     }
     
-    extension [Self <: IntrinsicElements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
       
       inline def setZGBody(value: CatchAll): Self = StObject.set(x, "ZGBody", value.asInstanceOf[js.Any])
       

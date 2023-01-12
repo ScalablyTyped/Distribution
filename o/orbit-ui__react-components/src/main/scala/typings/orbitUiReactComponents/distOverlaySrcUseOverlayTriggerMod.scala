@@ -53,7 +53,8 @@ object distOverlaySrcUseOverlayTriggerMod {
       __obj.asInstanceOf[UseOverlayTriggerOptions]
     }
     
-    extension [Self <: UseOverlayTriggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseOverlayTriggerOptions] (val x: Self) extends AnyVal {
       
       inline def setHideOnLeave(value: Boolean): Self = StObject.set(x, "hideOnLeave", value.asInstanceOf[js.Any])
       

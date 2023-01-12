@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Data[B]]
     }
     
-    extension [Self <: Data[?], B /* <: DraftBlockType */](x: Self & Data[B]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data[?], B /* <: DraftBlockType */] (val x: Self & Data[B]) extends AnyVal {
       
       inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Element]
     }
     
-    extension [Self <: Element](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
       
       inline def setElement(value: ReactNode): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object anon {
       __obj.asInstanceOf[Empty]
     }
     
-    extension [Self <: Empty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Empty] (val x: Self) extends AnyVal {
       
       inline def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
@@ -105,7 +108,8 @@ object anon {
       __obj.asInstanceOf[Entity]
     }
     
-    extension [Self <: Entity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entity] (val x: Self) extends AnyVal {
       
       inline def setEntity(value: EntityKey): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       

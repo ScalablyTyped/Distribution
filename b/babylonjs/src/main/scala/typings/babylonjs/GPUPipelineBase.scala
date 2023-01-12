@@ -15,7 +15,8 @@ object GPUPipelineBase {
     __obj.asInstanceOf[GPUPipelineBase]
   }
   
-  extension [Self <: GPUPipelineBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUPipelineBase] (val x: Self) extends AnyVal {
     
     inline def setGetBindGroupLayout(value: Double => GPUBindGroupLayout): Self = StObject.set(x, "getBindGroupLayout", js.Any.fromFunction1(value))
   }

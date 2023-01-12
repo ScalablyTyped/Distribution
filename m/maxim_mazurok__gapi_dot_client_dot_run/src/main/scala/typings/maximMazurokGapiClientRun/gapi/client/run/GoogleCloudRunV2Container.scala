@@ -53,7 +53,8 @@ object GoogleCloudRunV2Container {
     __obj.asInstanceOf[GoogleCloudRunV2Container]
   }
   
-  extension [Self <: GoogleCloudRunV2Container](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRunV2Container] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

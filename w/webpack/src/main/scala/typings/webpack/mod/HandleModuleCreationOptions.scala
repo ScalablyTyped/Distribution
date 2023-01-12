@@ -34,7 +34,8 @@ object HandleModuleCreationOptions {
     __obj.asInstanceOf[HandleModuleCreationOptions]
   }
   
-  extension [Self <: HandleModuleCreationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandleModuleCreationOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectOrigin(value: Boolean): Self = StObject.set(x, "connectOrigin", value.asInstanceOf[js.Any])
     

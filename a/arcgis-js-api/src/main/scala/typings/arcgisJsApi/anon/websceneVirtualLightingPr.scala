@@ -27,7 +27,8 @@ object websceneVirtualLightingPr {
     __obj.asInstanceOf[websceneVirtualLightingPr]
   }
   
-  extension [Self <: websceneVirtualLightingPr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: websceneVirtualLightingPr] (val x: Self) extends AnyVal {
     
     inline def setDirectShadowsEnabled(value: Boolean): Self = StObject.set(x, "directShadowsEnabled", value.asInstanceOf[js.Any])
     

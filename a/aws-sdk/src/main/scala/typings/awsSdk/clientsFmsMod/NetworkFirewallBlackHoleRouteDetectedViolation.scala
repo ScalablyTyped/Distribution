@@ -33,7 +33,8 @@ object NetworkFirewallBlackHoleRouteDetectedViolation {
     __obj.asInstanceOf[NetworkFirewallBlackHoleRouteDetectedViolation]
   }
   
-  extension [Self <: NetworkFirewallBlackHoleRouteDetectedViolation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkFirewallBlackHoleRouteDetectedViolation] (val x: Self) extends AnyVal {
     
     inline def setRouteTableId(value: ResourceId): Self = StObject.set(x, "RouteTableId", value.asInstanceOf[js.Any])
     

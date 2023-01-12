@@ -40,7 +40,8 @@ object UserDescriptor {
     __obj.asInstanceOf[UserDescriptor]
   }
   
-  extension [Self <: UserDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserDescriptor] (val x: Self) extends AnyVal {
     
     inline def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
   }

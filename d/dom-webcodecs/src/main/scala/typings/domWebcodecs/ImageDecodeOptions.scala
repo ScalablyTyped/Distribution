@@ -17,7 +17,8 @@ object ImageDecodeOptions {
     __obj.asInstanceOf[ImageDecodeOptions]
   }
   
-  extension [Self <: ImageDecodeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageDecodeOptions] (val x: Self) extends AnyVal {
     
     inline def setCompleteFramesOnly(value: Boolean): Self = StObject.set(x, "completeFramesOnly", value.asInstanceOf[js.Any])
     

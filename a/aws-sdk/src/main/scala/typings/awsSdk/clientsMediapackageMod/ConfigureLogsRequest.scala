@@ -22,7 +22,8 @@ object ConfigureLogsRequest {
     __obj.asInstanceOf[ConfigureLogsRequest]
   }
   
-  extension [Self <: ConfigureLogsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigureLogsRequest] (val x: Self) extends AnyVal {
     
     inline def setEgressAccessLogs(value: EgressAccessLogs): Self = StObject.set(x, "EgressAccessLogs", value.asInstanceOf[js.Any])
     

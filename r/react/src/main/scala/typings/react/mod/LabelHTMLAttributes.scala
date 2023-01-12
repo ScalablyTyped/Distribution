@@ -19,7 +19,8 @@ object LabelHTMLAttributes {
     __obj.asInstanceOf[LabelHTMLAttributes[T]]
   }
   
-  extension [Self <: LabelHTMLAttributes[?], T](x: Self & LabelHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelHTMLAttributes[?], T] (val x: Self & LabelHTMLAttributes[T]) extends AnyVal {
     
     inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     

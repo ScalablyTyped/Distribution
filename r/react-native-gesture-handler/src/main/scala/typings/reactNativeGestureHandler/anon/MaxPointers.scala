@@ -20,7 +20,8 @@ object MaxPointers {
     __obj.asInstanceOf[MaxPointers]
   }
   
-  extension [Self <: MaxPointers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxPointers] (val x: Self) extends AnyVal {
     
     inline def setMaxPointers(value: Double): Self = StObject.set(x, "maxPointers", value.asInstanceOf[js.Any])
     

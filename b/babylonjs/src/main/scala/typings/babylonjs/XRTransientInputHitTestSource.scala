@@ -15,7 +15,8 @@ object XRTransientInputHitTestSource {
     __obj.asInstanceOf[XRTransientInputHitTestSource]
   }
   
-  extension [Self <: XRTransientInputHitTestSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRTransientInputHitTestSource] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
   }

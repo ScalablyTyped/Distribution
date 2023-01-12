@@ -18,7 +18,8 @@ object SourceIpConfig {
     __obj.asInstanceOf[SourceIpConfig]
   }
   
-  extension [Self <: SourceIpConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceIpConfig] (val x: Self) extends AnyVal {
     
     inline def setCidrs(value: Cidrs): Self = StObject.set(x, "Cidrs", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object ImageCover {
     __obj.asInstanceOf[ImageCover]
   }
   
-  extension [Self <: ImageCover](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageCover] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: ImageAlignment): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object IpMapping {
     __obj.asInstanceOf[IpMapping]
   }
   
-  extension [Self <: IpMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpMapping] (val x: Self) extends AnyVal {
     
     inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     

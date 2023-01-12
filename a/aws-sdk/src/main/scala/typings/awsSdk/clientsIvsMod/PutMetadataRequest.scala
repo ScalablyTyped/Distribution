@@ -23,7 +23,8 @@ object PutMetadataRequest {
     __obj.asInstanceOf[PutMetadataRequest]
   }
   
-  extension [Self <: PutMetadataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutMetadataRequest] (val x: Self) extends AnyVal {
     
     inline def setChannelArn(value: ChannelArn): Self = StObject.set(x, "channelArn", value.asInstanceOf[js.Any])
     

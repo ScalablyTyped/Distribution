@@ -17,7 +17,8 @@ object PlayAttributes {
     __obj.asInstanceOf[PlayAttributes]
   }
   
-  extension [Self <: PlayAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayAttributes] (val x: Self) extends AnyVal {
     
     inline def setDigits(value: String): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
     

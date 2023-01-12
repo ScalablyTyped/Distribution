@@ -67,7 +67,8 @@ object libNetXmlhttprequestMod {
       __obj.asInstanceOf[XHRConfig]
     }
     
-    extension [Self <: XHRConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XHRConfig] (val x: Self) extends AnyVal {
       
       inline def setCertPath(value: String): Self = StObject.set(x, "certPath", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object SSMLMessageType {
     __obj.asInstanceOf[SSMLMessageType]
   }
   
-  extension [Self <: SSMLMessageType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SSMLMessageType] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     

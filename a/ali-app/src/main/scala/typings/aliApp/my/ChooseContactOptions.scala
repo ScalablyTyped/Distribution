@@ -39,7 +39,8 @@ object ChooseContactOptions {
     __obj.asInstanceOf[ChooseContactOptions]
   }
   
-  extension [Self <: ChooseContactOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChooseContactOptions] (val x: Self) extends AnyVal {
     
     inline def setChooseType(value: single | multi | String): Self = StObject.set(x, "chooseType", value.asInstanceOf[js.Any])
     

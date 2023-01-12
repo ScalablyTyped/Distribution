@@ -58,7 +58,8 @@ object RackPhysicalProperties {
     __obj.asInstanceOf[RackPhysicalProperties]
   }
   
-  extension [Self <: RackPhysicalProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RackPhysicalProperties] (val x: Self) extends AnyVal {
     
     inline def setFiberOpticCableType(value: FiberOpticCableType): Self = StObject.set(x, "FiberOpticCableType", value.asInstanceOf[js.Any])
     

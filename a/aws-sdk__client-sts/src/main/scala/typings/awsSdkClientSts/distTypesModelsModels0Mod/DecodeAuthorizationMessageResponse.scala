@@ -18,7 +18,8 @@ object DecodeAuthorizationMessageResponse {
     __obj.asInstanceOf[DecodeAuthorizationMessageResponse]
   }
   
-  extension [Self <: DecodeAuthorizationMessageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecodeAuthorizationMessageResponse] (val x: Self) extends AnyVal {
     
     inline def setDecodedMessage(value: String): Self = StObject.set(x, "DecodedMessage", value.asInstanceOf[js.Any])
     

@@ -789,7 +789,8 @@ object workerThreadsMod {
       __obj.asInstanceOf[ResourceLimits_]
     }
     
-    extension [Self <: ResourceLimits_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceLimits_] (val x: Self) extends AnyVal {
       
       inline def setCodeRangeSizeMb(value: Double): Self = StObject.set(x, "codeRangeSizeMb", value.asInstanceOf[js.Any])
       
@@ -863,7 +864,8 @@ object workerThreadsMod {
       __obj.asInstanceOf[WorkerOptions]
     }
     
-    extension [Self <: WorkerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerOptions] (val x: Self) extends AnyVal {
       
       inline def setArgv(value: js.Array[Any]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
       
@@ -935,7 +937,8 @@ object workerThreadsMod {
       __obj.asInstanceOf[WorkerPerformance]
     }
     
-    extension [Self <: WorkerPerformance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerPerformance] (val x: Self) extends AnyVal {
       
       inline def setEventLoopUtilization(
         value: (/* util1 */ js.UndefOr[EventLoopUtilization], /* util2 */ js.UndefOr[EventLoopUtilization]) => EventLoopUtilization

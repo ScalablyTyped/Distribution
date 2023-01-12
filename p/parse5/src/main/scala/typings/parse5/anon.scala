@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setOnParseError(value: /* error */ ParserError => Unit): Self = StObject.set(x, "onParseError", js.Any.fromFunction1(value))
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[BeforeElement[T]]
     }
     
-    extension [Self <: BeforeElement[?], T /* <: TreeAdapterTypeMap[Any, Any, Any, Any, Any, Any, Any, Any, Any, Any] */](x: Self & BeforeElement[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeElement[?], T /* <: TreeAdapterTypeMap[Any, Any, Any, Any, Any, Any, Any, Any, Any, Any] */] (val x: Self & BeforeElement[T]) extends AnyVal {
       
       inline def setBeforeElement(value: /* import warning: importer.ImportType#apply Failed type conversion: T['element'] */ js.Any): Self = StObject.set(x, "beforeElement", value.asInstanceOf[js.Any])
       
@@ -70,7 +72,8 @@ object anon {
       __obj.asInstanceOf[OnParseError]
     }
     
-    extension [Self <: OnParseError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnParseError] (val x: Self) extends AnyVal {
       
       inline def setOnParseError(value: /* error */ typings.parse5.distCjsCommonErrorCodesMod.ParserError => Unit): Self = StObject.set(x, "onParseError", js.Any.fromFunction1(value))
       
@@ -95,7 +98,8 @@ object anon {
       __obj.asInstanceOf[Parent[T]]
     }
     
-    extension [Self <: Parent[?], T /* <: typings.parse5.distTreeAdaptersInterfaceMod.TreeAdapterTypeMap[Any, Any, Any, Any, Any, Any, Any, Any, Any, Any] */](x: Self & Parent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parent[?], T /* <: typings.parse5.distTreeAdaptersInterfaceMod.TreeAdapterTypeMap[Any, Any, Any, Any, Any, Any, Any, Any, Any, Any] */] (val x: Self & Parent[T]) extends AnyVal {
       
       inline def setBeforeElement(value: /* import warning: importer.ImportType#apply Failed type conversion: T['element'] */ js.Any): Self = StObject.set(x, "beforeElement", value.asInstanceOf[js.Any])
       
@@ -135,7 +139,8 @@ object anon {
       __obj.asInstanceOf[PartialElementLocation]
     }
     
-    extension [Self <: PartialElementLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialElementLocation] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: Record[String, Location]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -203,7 +208,8 @@ object anon {
       __obj.asInstanceOf[PartialElementLocationAttrs]
     }
     
-    extension [Self <: PartialElementLocationAttrs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialElementLocationAttrs] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: Record[String, typings.parse5.distCommonTokenMod.Location]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       

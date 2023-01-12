@@ -18,7 +18,8 @@ object DeletePlatformVersionResult {
     __obj.asInstanceOf[DeletePlatformVersionResult]
   }
   
-  extension [Self <: DeletePlatformVersionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePlatformVersionResult] (val x: Self) extends AnyVal {
     
     inline def setPlatformSummary(value: PlatformSummary): Self = StObject.set(x, "PlatformSummary", value.asInstanceOf[js.Any])
     

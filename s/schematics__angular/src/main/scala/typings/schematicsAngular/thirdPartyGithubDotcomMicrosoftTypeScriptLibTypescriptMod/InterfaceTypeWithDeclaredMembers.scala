@@ -54,7 +54,8 @@ object InterfaceTypeWithDeclaredMembers {
     __obj.asInstanceOf[InterfaceTypeWithDeclaredMembers]
   }
   
-  extension [Self <: InterfaceTypeWithDeclaredMembers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterfaceTypeWithDeclaredMembers] (val x: Self) extends AnyVal {
     
     inline def setDeclaredCallSignatures(value: js.Array[Signature]): Self = StObject.set(x, "declaredCallSignatures", value.asInstanceOf[js.Any])
     

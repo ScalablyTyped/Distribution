@@ -20,7 +20,8 @@ object TypeofDetailButton {
     __obj.asInstanceOf[TypeofDetailButton]
   }
   
-  extension [Self <: TypeofDetailButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofDetailButton] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => DetailButton): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

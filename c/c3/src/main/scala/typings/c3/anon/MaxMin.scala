@@ -20,7 +20,8 @@ object MaxMin {
     __obj.asInstanceOf[MaxMin]
   }
   
-  extension [Self <: MaxMin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxMin] (val x: Self) extends AnyVal {
     
     inline def setMax(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in c3.c3.AxisName ]: number} */ js.Any

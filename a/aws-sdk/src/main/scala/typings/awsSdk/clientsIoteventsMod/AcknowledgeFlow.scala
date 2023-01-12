@@ -18,7 +18,8 @@ object AcknowledgeFlow {
     __obj.asInstanceOf[AcknowledgeFlow]
   }
   
-  extension [Self <: AcknowledgeFlow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcknowledgeFlow] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: AcknowledgeFlowEnabled): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }

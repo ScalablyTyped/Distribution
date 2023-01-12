@@ -78,7 +78,8 @@ object XLibraryContainerPassword {
     __obj.asInstanceOf[XLibraryContainerPassword]
   }
   
-  extension [Self <: XLibraryContainerPassword](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLibraryContainerPassword] (val x: Self) extends AnyVal {
     
     inline def setChangeLibraryPassword(value: (String, String, String) => Unit): Self = StObject.set(x, "changeLibraryPassword", js.Any.fromFunction3(value))
     

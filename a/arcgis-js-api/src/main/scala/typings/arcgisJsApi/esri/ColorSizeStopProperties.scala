@@ -41,7 +41,8 @@ object ColorSizeStopProperties {
     __obj.asInstanceOf[ColorSizeStopProperties]
   }
   
-  extension [Self <: ColorSizeStopProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorSizeStopProperties] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

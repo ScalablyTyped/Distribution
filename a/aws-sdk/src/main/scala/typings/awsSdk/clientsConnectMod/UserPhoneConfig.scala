@@ -33,7 +33,8 @@ object UserPhoneConfig {
     __obj.asInstanceOf[UserPhoneConfig]
   }
   
-  extension [Self <: UserPhoneConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserPhoneConfig] (val x: Self) extends AnyVal {
     
     inline def setAfterContactWorkTimeLimit(value: AfterContactWorkTimeLimit): Self = StObject.set(x, "AfterContactWorkTimeLimit", value.asInstanceOf[js.Any])
     

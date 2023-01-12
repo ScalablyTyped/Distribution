@@ -22,7 +22,8 @@ object Correction {
     __obj.asInstanceOf[Correction]
   }
   
-  extension [Self <: Correction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Correction] (val x: Self) extends AnyVal {
     
     inline def setContexts(value: js.Array[ServingContext]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
     

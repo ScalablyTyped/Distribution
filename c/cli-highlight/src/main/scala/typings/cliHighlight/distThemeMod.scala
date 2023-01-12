@@ -123,7 +123,8 @@ object distThemeMod {
       __obj.asInstanceOf[Theme]
     }
     
-    extension [Self <: Theme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: /* codePart */ String => String): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
       
@@ -345,7 +346,8 @@ object distThemeMod {
       __obj.asInstanceOf[Tokens[T]]
     }
     
-    extension [Self <: Tokens[?], T](x: Self & Tokens[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tokens[?], T] (val x: Self & Tokens[T]) extends AnyVal {
       
       inline def setAddition(value: T): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
       

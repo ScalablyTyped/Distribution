@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Base64]
     }
     
-    extension [Self <: Base64](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Base64] (val x: Self) extends AnyVal {
       
       inline def setBase64(value: String): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[Cache]
     }
     
-    extension [Self <: Cache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object anon {
       __obj.asInstanceOf[FileName]
     }
     
-    extension [Self <: FileName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileName] (val x: Self) extends AnyVal {
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       

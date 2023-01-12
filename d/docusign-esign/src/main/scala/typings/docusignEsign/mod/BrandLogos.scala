@@ -28,7 +28,8 @@ object BrandLogos {
     __obj.asInstanceOf[BrandLogos]
   }
   
-  extension [Self <: BrandLogos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrandLogos] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

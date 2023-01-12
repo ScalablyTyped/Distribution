@@ -15,7 +15,8 @@ object AllowEventOnLookupFail {
     __obj.asInstanceOf[AllowEventOnLookupFail]
   }
   
-  extension [Self <: AllowEventOnLookupFail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowEventOnLookupFail] (val x: Self) extends AnyVal {
     
     inline def setAllowEventOnLookupFail(value: Boolean): Self = StObject.set(x, "allowEventOnLookupFail", value.asInstanceOf[js.Any])
   }

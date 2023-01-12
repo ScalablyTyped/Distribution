@@ -26,7 +26,8 @@ object IProgressInfo {
     __obj.asInstanceOf[IProgressInfo]
   }
   
-  extension [Self <: IProgressInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IProgressInfo] (val x: Self) extends AnyVal {
     
     inline def setAnsweredQuestionCount(value: Double): Self = StObject.set(x, "answeredQuestionCount", value.asInstanceOf[js.Any])
     

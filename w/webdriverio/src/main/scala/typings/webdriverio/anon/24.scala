@@ -72,7 +72,8 @@ object `24` {
     __obj.asInstanceOf[`24`]
   }
   
-  extension [Self <: `24`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `24`] (val x: Self) extends AnyVal {
     
     inline def setDefault(
       value: (js.Function3[`24`, /* capabilities */ RemoteCapability, /* specs */ js.Array[String], Unit]) | (js.Array[

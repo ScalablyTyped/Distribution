@@ -21,7 +21,8 @@ object IRateLimiterRes {
     __obj.asInstanceOf[IRateLimiterRes]
   }
   
-  extension [Self <: IRateLimiterRes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRateLimiterRes] (val x: Self) extends AnyVal {
     
     inline def setConsumedPoints(value: Double): Self = StObject.set(x, "consumedPoints", value.asInstanceOf[js.Any])
     

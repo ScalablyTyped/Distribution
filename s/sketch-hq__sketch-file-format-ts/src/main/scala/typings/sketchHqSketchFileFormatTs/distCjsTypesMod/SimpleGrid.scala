@@ -24,7 +24,8 @@ object SimpleGrid {
     __obj.asInstanceOf[SimpleGrid]
   }
   
-  extension [Self <: SimpleGrid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleGrid] (val x: Self) extends AnyVal {
     
     inline def setGridSize(value: Double): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
     

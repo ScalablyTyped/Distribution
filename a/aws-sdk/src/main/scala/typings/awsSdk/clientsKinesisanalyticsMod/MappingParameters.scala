@@ -23,7 +23,8 @@ object MappingParameters {
     __obj.asInstanceOf[MappingParameters]
   }
   
-  extension [Self <: MappingParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingParameters] (val x: Self) extends AnyVal {
     
     inline def setCSVMappingParameters(value: CSVMappingParameters): Self = StObject.set(x, "CSVMappingParameters", value.asInstanceOf[js.Any])
     

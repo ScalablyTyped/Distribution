@@ -33,7 +33,8 @@ object XRRigidTransform {
     __obj.asInstanceOf[XRRigidTransform]
   }
   
-  extension [Self <: XRRigidTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRRigidTransform] (val x: Self) extends AnyVal {
     
     inline def setInverse(value: XRRigidTransform): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
     

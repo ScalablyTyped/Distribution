@@ -98,7 +98,8 @@ object RequestPhoneNumberResult {
     __obj.asInstanceOf[RequestPhoneNumberResult]
   }
   
-  extension [Self <: RequestPhoneNumberResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestPhoneNumberResult] (val x: Self) extends AnyVal {
     
     inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     

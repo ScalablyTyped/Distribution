@@ -41,7 +41,8 @@ object AccountIdentityVerificationWorkflow {
     __obj.asInstanceOf[AccountIdentityVerificationWorkflow]
   }
   
-  extension [Self <: AccountIdentityVerificationWorkflow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountIdentityVerificationWorkflow] (val x: Self) extends AnyVal {
     
     inline def setDefaultDescription(value: String): Self = StObject.set(x, "defaultDescription", value.asInstanceOf[js.Any])
     

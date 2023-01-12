@@ -22,7 +22,8 @@ object PageHeaderHelperIconButton {
     __obj.asInstanceOf[PageHeaderHelperIconButton]
   }
   
-  extension [Self <: PageHeaderHelperIconButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageHeaderHelperIconButton] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityControls(value: String): Self = StObject.set(x, "accessibilityControls", value.asInstanceOf[js.Any])
     

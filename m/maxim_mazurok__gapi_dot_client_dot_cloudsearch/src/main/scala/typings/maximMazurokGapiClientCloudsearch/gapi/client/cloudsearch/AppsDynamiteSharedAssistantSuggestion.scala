@@ -28,7 +28,8 @@ object AppsDynamiteSharedAssistantSuggestion {
     __obj.asInstanceOf[AppsDynamiteSharedAssistantSuggestion]
   }
   
-  extension [Self <: AppsDynamiteSharedAssistantSuggestion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedAssistantSuggestion] (val x: Self) extends AnyVal {
     
     inline def setDebugContext(value: AppsDynamiteSharedAssistantDebugContext): Self = StObject.set(x, "debugContext", value.asInstanceOf[js.Any])
     

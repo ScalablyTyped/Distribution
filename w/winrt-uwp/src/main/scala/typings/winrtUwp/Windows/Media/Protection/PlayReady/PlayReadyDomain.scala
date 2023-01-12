@@ -30,7 +30,8 @@ object PlayReadyDomain {
     __obj.asInstanceOf[PlayReadyDomain]
   }
   
-  extension [Self <: PlayReadyDomain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayReadyDomain] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

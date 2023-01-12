@@ -15,7 +15,8 @@ object GetSearchApplicationSessionStatsResponse {
     __obj.asInstanceOf[GetSearchApplicationSessionStatsResponse]
   }
   
-  extension [Self <: GetSearchApplicationSessionStatsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSearchApplicationSessionStatsResponse] (val x: Self) extends AnyVal {
     
     inline def setStats(value: js.Array[SearchApplicationSessionStats]): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     

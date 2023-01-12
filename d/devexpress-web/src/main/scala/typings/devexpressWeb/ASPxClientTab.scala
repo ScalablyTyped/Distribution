@@ -113,7 +113,8 @@ object ASPxClientTab {
     __obj.asInstanceOf[ASPxClientTab]
   }
   
-  extension [Self <: ASPxClientTab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTab] (val x: Self) extends AnyVal {
     
     inline def setGetActiveImageUrl(value: () => String): Self = StObject.set(x, "GetActiveImageUrl", js.Any.fromFunction0(value))
     

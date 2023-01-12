@@ -23,7 +23,8 @@ object RetryOptions {
     __obj.asInstanceOf[RetryOptions]
   }
   
-  extension [Self <: RetryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetryOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

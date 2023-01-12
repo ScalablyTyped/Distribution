@@ -44,7 +44,8 @@ object TextStructureFindStructureRequest {
     __obj.asInstanceOf[TextStructureFindStructureRequest[TJsonDocument]]
   }
   
-  extension [Self <: TextStructureFindStructureRequest[?], TJsonDocument](x: Self & TextStructureFindStructureRequest[TJsonDocument]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextStructureFindStructureRequest[?], TJsonDocument] (val x: Self & TextStructureFindStructureRequest[TJsonDocument]) extends AnyVal {
     
     inline def setBody(value: js.Array[TJsonDocument]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

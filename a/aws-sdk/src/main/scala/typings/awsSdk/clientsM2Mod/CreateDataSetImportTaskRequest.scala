@@ -28,7 +28,8 @@ object CreateDataSetImportTaskRequest {
     __obj.asInstanceOf[CreateDataSetImportTaskRequest]
   }
   
-  extension [Self <: CreateDataSetImportTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDataSetImportTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: Identifier): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     

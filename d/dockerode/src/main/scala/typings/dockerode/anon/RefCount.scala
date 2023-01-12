@@ -17,7 +17,8 @@ object RefCount {
     __obj.asInstanceOf[RefCount]
   }
   
-  extension [Self <: RefCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefCount] (val x: Self) extends AnyVal {
     
     inline def setRefCount(value: Double): Self = StObject.set(x, "RefCount", value.asInstanceOf[js.Any])
     

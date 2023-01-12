@@ -30,7 +30,8 @@ object outPackagerApiMod {
       __obj.asInstanceOf[ArtifactBuildStarted]
     }
     
-    extension [Self <: ArtifactBuildStarted](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArtifactBuildStarted] (val x: Self) extends AnyVal {
       
       inline def setArch(value: Arch): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object outPackagerApiMod {
       __obj.asInstanceOf[ArtifactCreated]
     }
     
-    extension [Self <: ArtifactCreated](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArtifactCreated] (val x: Self) extends AnyVal {
       
       inline def setIsWriteUpdateInfo(value: Boolean): Self = StObject.set(x, "isWriteUpdateInfo", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object outPackagerApiMod {
       __obj.asInstanceOf[PackagerOptions]
     }
     
-    extension [Self <: PackagerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackagerOptions] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Configuration | String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

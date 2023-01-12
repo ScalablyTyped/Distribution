@@ -39,7 +39,8 @@ object RulesApplied {
     __obj.asInstanceOf[RulesApplied]
   }
   
-  extension [Self <: RulesApplied](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RulesApplied] (val x: Self) extends AnyVal {
     
     inline def setAppliedRules(value: IHTMLStyleSheetRulesAppliedCollection): Self = StObject.set(x, "appliedRules", value.asInstanceOf[js.Any])
     

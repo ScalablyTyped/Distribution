@@ -20,7 +20,8 @@ object MessageResponse {
     __obj.asInstanceOf[MessageResponse]
   }
   
-  extension [Self <: MessageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageResponse] (val x: Self) extends AnyVal {
     
     inline def setContext(value: MessageContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

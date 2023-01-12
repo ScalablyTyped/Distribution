@@ -21,7 +21,8 @@ object RepeatVectorLayerArgs {
     __obj.asInstanceOf[RepeatVectorLayerArgs]
   }
   
-  extension [Self <: RepeatVectorLayerArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepeatVectorLayerArgs] (val x: Self) extends AnyVal {
     
     inline def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
   }

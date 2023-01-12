@@ -145,7 +145,8 @@ object dxTreeMapOptions {
     __obj.asInstanceOf[dxTreeMapOptions]
   }
   
-  extension [Self <: dxTreeMapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxTreeMapOptions] (val x: Self) extends AnyVal {
     
     inline def setChildrenField(value: String): Self = StObject.set(x, "childrenField", value.asInstanceOf[js.Any])
     

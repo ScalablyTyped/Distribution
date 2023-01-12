@@ -16,7 +16,8 @@ object IBackgroundTaskRegistrationStatics {
     __obj.asInstanceOf[IBackgroundTaskRegistrationStatics]
   }
   
-  extension [Self <: IBackgroundTaskRegistrationStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBackgroundTaskRegistrationStatics] (val x: Self) extends AnyVal {
     
     inline def setAllTasks(value: IMapView[String, IBackgroundTaskRegistration]): Self = StObject.set(x, "allTasks", value.asInstanceOf[js.Any])
   }

@@ -24,7 +24,8 @@ object DescribeClusterRequestwai {
     __obj.asInstanceOf[DescribeClusterRequestwai]
   }
   
-  extension [Self <: DescribeClusterRequestwai](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeClusterRequestwai] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

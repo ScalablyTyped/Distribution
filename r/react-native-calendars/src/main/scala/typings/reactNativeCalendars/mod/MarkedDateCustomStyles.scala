@@ -20,7 +20,8 @@ object MarkedDateCustomStyles {
     __obj.asInstanceOf[MarkedDateCustomStyles]
   }
   
-  extension [Self <: MarkedDateCustomStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkedDateCustomStyles] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: StyleProp[ViewStyle]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

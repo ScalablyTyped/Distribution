@@ -20,7 +20,8 @@ object MappingPercolatorProperty {
     __obj.asInstanceOf[MappingPercolatorProperty]
   }
   
-  extension [Self <: MappingPercolatorProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingPercolatorProperty] (val x: Self) extends AnyVal {
     
     inline def setType(value: percolator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

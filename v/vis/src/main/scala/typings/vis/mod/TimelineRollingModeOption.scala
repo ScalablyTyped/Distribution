@@ -17,7 +17,8 @@ object TimelineRollingModeOption {
     __obj.asInstanceOf[TimelineRollingModeOption]
   }
   
-  extension [Self <: TimelineRollingModeOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineRollingModeOption] (val x: Self) extends AnyVal {
     
     inline def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
     

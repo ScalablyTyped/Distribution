@@ -17,7 +17,8 @@ object MRAIDAppOrientationState {
     __obj.asInstanceOf[MRAIDAppOrientationState]
   }
   
-  extension [Self <: MRAIDAppOrientationState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MRAIDAppOrientationState] (val x: Self) extends AnyVal {
     
     inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     

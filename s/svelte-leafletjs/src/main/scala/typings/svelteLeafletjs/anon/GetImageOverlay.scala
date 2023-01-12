@@ -42,7 +42,8 @@ object GetImageOverlay {
     __obj.asInstanceOf[GetImageOverlay]
   }
   
-  extension [Self <: GetImageOverlay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetImageOverlay] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: LatLngBoundsExpression): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

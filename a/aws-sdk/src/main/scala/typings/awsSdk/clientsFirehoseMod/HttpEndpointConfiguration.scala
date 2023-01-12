@@ -28,7 +28,8 @@ object HttpEndpointConfiguration {
     __obj.asInstanceOf[HttpEndpointConfiguration]
   }
   
-  extension [Self <: HttpEndpointConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpEndpointConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAccessKey(value: HttpEndpointAccessKey): Self = StObject.set(x, "AccessKey", value.asInstanceOf[js.Any])
     

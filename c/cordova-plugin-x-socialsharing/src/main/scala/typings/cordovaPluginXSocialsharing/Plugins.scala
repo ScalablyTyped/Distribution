@@ -15,7 +15,8 @@ object Plugins {
     __obj.asInstanceOf[Plugins]
   }
   
-  extension [Self <: Plugins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
     
     inline def setSocialsharing(value: SocialSharing): Self = StObject.set(x, "socialsharing", value.asInstanceOf[js.Any])
   }

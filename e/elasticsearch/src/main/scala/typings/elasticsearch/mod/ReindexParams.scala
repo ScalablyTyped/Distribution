@@ -30,7 +30,8 @@ object ReindexParams {
     __obj.asInstanceOf[ReindexParams]
   }
   
-  extension [Self <: ReindexParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReindexParams] (val x: Self) extends AnyVal {
     
     inline def setBody(value: typings.elasticsearch.anon.Conflicts): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

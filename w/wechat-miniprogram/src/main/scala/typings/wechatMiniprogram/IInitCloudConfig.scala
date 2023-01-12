@@ -18,7 +18,8 @@ object IInitCloudConfig {
     __obj.asInstanceOf[IInitCloudConfig]
   }
   
-  extension [Self <: IInitCloudConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInitCloudConfig] (val x: Self) extends AnyVal {
     
     inline def setEnv(value: String | Database): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     

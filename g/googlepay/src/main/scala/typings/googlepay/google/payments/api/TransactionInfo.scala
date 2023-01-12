@@ -113,7 +113,8 @@ object TransactionInfo {
     __obj.asInstanceOf[TransactionInfo]
   }
   
-  extension [Self <: TransactionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionInfo] (val x: Self) extends AnyVal {
     
     inline def setCheckoutOption(value: CheckoutOption): Self = StObject.set(x, "checkoutOption", value.asInstanceOf[js.Any])
     

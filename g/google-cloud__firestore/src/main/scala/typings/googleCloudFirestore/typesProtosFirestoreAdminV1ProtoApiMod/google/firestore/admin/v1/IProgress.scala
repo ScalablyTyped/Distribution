@@ -20,7 +20,8 @@ object IProgress {
     __obj.asInstanceOf[IProgress]
   }
   
-  extension [Self <: IProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IProgress] (val x: Self) extends AnyVal {
     
     inline def setCompletedWork(value: Double | String): Self = StObject.set(x, "completedWork", value.asInstanceOf[js.Any])
     

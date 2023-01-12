@@ -28,7 +28,8 @@ object CreateableColumnFamilyBuilder {
     __obj.asInstanceOf[CreateableColumnFamilyBuilder[T]]
   }
   
-  extension [Self <: CreateableColumnFamilyBuilder[?], T](x: Self & CreateableColumnFamilyBuilder[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateableColumnFamilyBuilder[?], T] (val x: Self & CreateableColumnFamilyBuilder[T]) extends AnyVal {
     
     inline def setWithCaching(value: () => CreateableColumnFamilyBuilder[T]): Self = StObject.set(x, "withCaching", js.Any.fromFunction0(value))
     

@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[And]
     }
     
-    extension [Self <: And](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: And] (val x: Self) extends AnyVal {
       
       inline def set$and(value: js.Array[Expression]): Self = StObject.set(x, "$and", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[Idx]
     }
     
-    extension [Self <: Idx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Idx] (val x: Self) extends AnyVal {
       
       inline def set$(value: String): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
       
@@ -70,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Keys]
     }
     
-    extension [Self <: Keys](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Keys] (val x: Self) extends AnyVal {
       
       inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
@@ -96,7 +99,8 @@ object anon {
       __obj.asInstanceOf[Or]
     }
     
-    extension [Self <: Or](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Or] (val x: Self) extends AnyVal {
       
       inline def set$or(value: js.Array[Expression]): Self = StObject.set(x, "$or", value.asInstanceOf[js.Any])
       
@@ -123,7 +127,8 @@ object anon {
       __obj.asInstanceOf[Path]
     }
     
-    extension [Self <: Path](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
       
       inline def set$path(value: js.Array[String]): Self = StObject.set(x, "$path", value.asInstanceOf[js.Any])
       
@@ -150,7 +155,8 @@ object anon {
       __obj.asInstanceOf[RecordEntryObjectinumber]
     }
     
-    extension [Self <: RecordEntryObjectinumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordEntryObjectinumber] (val x: Self) extends AnyVal {
       
       inline def setI(value: Double): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
       
@@ -172,7 +178,8 @@ object anon {
       __obj.asInstanceOf[_empty]
     }
     
-    extension [Self <: _empty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: _empty] (val x: Self) extends AnyVal {
       
       inline def set$(value: String): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
     }

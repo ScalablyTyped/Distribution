@@ -19,7 +19,8 @@ object ReturnTypeBeginFrameResponse {
     __obj.asInstanceOf[ReturnTypeBeginFrameResponse]
   }
   
-  extension [Self <: ReturnTypeBeginFrameResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeBeginFrameResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[js.UndefOr[BeginFrameRequest]]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

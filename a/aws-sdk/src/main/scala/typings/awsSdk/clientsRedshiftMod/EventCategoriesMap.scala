@@ -23,7 +23,8 @@ object EventCategoriesMap {
     __obj.asInstanceOf[EventCategoriesMap]
   }
   
-  extension [Self <: EventCategoriesMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventCategoriesMap] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: EventInfoMapList): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     

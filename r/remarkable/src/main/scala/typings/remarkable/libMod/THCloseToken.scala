@@ -21,7 +21,8 @@ object THCloseToken {
     __obj.asInstanceOf[THCloseToken]
   }
   
-  extension [Self <: THCloseToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: THCloseToken] (val x: Self) extends AnyVal {
     
     inline def setType(value: th_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

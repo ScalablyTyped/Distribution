@@ -64,7 +64,8 @@ object libApiApiMonitoringMod {
       __obj.asInstanceOf[That]
     }
     
-    extension [Self <: That](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: That] (val x: Self) extends AnyVal {
       
       inline def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
     }

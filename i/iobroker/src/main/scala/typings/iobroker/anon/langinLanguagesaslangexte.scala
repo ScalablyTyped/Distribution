@@ -49,7 +49,8 @@ object langinLanguagesaslangexte {
     __obj.asInstanceOf[langinLanguagesaslangexte]
   }
   
-  extension [Self <: langinLanguagesaslangexte](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: langinLanguagesaslangexte] (val x: Self) extends AnyVal {
     
     inline def setDe(value: String): Self = StObject.set(x, "de", value.asInstanceOf[js.Any])
     

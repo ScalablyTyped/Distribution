@@ -116,7 +116,8 @@ object ReceiptPrinterCapabilities {
     __obj.asInstanceOf[ReceiptPrinterCapabilities]
   }
   
-  extension [Self <: ReceiptPrinterCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReceiptPrinterCapabilities] (val x: Self) extends AnyVal {
     
     inline def setCanCutPaper(value: Boolean): Self = StObject.set(x, "canCutPaper", value.asInstanceOf[js.Any])
     

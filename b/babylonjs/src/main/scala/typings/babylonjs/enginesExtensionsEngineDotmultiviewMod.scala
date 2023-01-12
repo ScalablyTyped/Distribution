@@ -54,7 +54,8 @@ object enginesExtensionsEngineDotmultiviewMod {
         __obj.asInstanceOf[Camera]
       }
       
-      extension [Self <: Camera](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Camera] (val x: Self) extends AnyVal {
         
         inline def set_multiviewTexture(value: Nullable[RenderTargetTexture]): Self = StObject.set(x, "_multiviewTexture", value.asInstanceOf[js.Any])
         
@@ -98,7 +99,8 @@ object enginesExtensionsEngineDotmultiviewMod {
         __obj.asInstanceOf[Engine]
       }
       
-      extension [Self <: Engine](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Engine] (val x: Self) extends AnyVal {
         
         inline def setBindMultiviewFramebuffer(value: RenderTargetWrapper => Unit): Self = StObject.set(x, "bindMultiviewFramebuffer", js.Any.fromFunction1(value))
         

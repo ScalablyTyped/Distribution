@@ -35,7 +35,8 @@ object XpackUsageEqlFeatures {
     __obj.asInstanceOf[XpackUsageEqlFeatures]
   }
   
-  extension [Self <: XpackUsageEqlFeatures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageEqlFeatures] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: uint): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

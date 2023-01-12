@@ -50,7 +50,8 @@ object ImagePropsAndroid {
     __obj.asInstanceOf[ImagePropsAndroid]
   }
   
-  extension [Self <: ImagePropsAndroid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagePropsAndroid] (val x: Self) extends AnyVal {
     
     inline def setFadeDuration(value: Double): Self = StObject.set(x, "fadeDuration", value.asInstanceOf[js.Any])
     

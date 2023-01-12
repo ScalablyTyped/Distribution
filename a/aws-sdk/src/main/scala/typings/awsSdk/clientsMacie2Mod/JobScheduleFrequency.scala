@@ -28,7 +28,8 @@ object JobScheduleFrequency {
     __obj.asInstanceOf[JobScheduleFrequency]
   }
   
-  extension [Self <: JobScheduleFrequency](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobScheduleFrequency] (val x: Self) extends AnyVal {
     
     inline def setDailySchedule(value: DailySchedule): Self = StObject.set(x, "dailySchedule", value.asInstanceOf[js.Any])
     

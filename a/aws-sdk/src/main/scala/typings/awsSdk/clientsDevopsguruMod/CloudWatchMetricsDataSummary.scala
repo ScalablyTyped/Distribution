@@ -23,7 +23,8 @@ object CloudWatchMetricsDataSummary {
     __obj.asInstanceOf[CloudWatchMetricsDataSummary]
   }
   
-  extension [Self <: CloudWatchMetricsDataSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudWatchMetricsDataSummary] (val x: Self) extends AnyVal {
     
     inline def setStatusCode(value: CloudWatchMetricDataStatusCode): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
     

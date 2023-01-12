@@ -21,7 +21,8 @@ object PartialStyleRulesCardClas {
     __obj.asInstanceOf[PartialStyleRulesCardClas]
   }
   
-  extension [Self <: PartialStyleRulesCardClas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesCardClas] (val x: Self) extends AnyVal {
     
     inline def setRoot(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

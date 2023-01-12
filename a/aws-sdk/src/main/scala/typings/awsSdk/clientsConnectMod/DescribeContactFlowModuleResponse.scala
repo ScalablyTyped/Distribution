@@ -18,7 +18,8 @@ object DescribeContactFlowModuleResponse {
     __obj.asInstanceOf[DescribeContactFlowModuleResponse]
   }
   
-  extension [Self <: DescribeContactFlowModuleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeContactFlowModuleResponse] (val x: Self) extends AnyVal {
     
     inline def setContactFlowModule(value: ContactFlowModule): Self = StObject.set(x, "ContactFlowModule", value.asInstanceOf[js.Any])
     

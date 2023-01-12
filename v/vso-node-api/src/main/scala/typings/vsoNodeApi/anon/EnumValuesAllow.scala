@@ -15,7 +15,8 @@ object EnumValuesAllow {
     __obj.asInstanceOf[EnumValuesAllow]
   }
   
-  extension [Self <: EnumValuesAllow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesAllow] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: Allow): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

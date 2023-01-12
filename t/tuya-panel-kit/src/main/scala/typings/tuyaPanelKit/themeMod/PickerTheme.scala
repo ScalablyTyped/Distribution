@@ -21,7 +21,8 @@ object PickerTheme {
     __obj.asInstanceOf[PickerTheme]
   }
   
-  extension [Self <: PickerTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickerTheme] (val x: Self) extends AnyVal {
     
     inline def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     

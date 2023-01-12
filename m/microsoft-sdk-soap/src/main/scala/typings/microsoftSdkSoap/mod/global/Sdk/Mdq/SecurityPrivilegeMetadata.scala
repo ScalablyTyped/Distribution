@@ -53,7 +53,8 @@ object SecurityPrivilegeMetadata {
     __obj.asInstanceOf[SecurityPrivilegeMetadata]
   }
   
-  extension [Self <: SecurityPrivilegeMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityPrivilegeMetadata] (val x: Self) extends AnyVal {
     
     inline def setCanBeBasic(value: Boolean): Self = StObject.set(x, "CanBeBasic", value.asInstanceOf[js.Any])
     

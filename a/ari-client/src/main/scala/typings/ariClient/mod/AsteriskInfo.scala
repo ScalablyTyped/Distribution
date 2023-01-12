@@ -33,7 +33,8 @@ object AsteriskInfo {
     __obj.asInstanceOf[AsteriskInfo]
   }
   
-  extension [Self <: AsteriskInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsteriskInfo] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: BuildInfo): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

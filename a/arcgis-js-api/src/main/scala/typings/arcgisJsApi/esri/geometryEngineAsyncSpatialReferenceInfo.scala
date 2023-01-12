@@ -54,7 +54,8 @@ object geometryEngineAsyncSpatialReferenceInfo {
     __obj.asInstanceOf[geometryEngineAsyncSpatialReferenceInfo]
   }
   
-  extension [Self <: geometryEngineAsyncSpatialReferenceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: geometryEngineAsyncSpatialReferenceInfo] (val x: Self) extends AnyVal {
     
     inline def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
     

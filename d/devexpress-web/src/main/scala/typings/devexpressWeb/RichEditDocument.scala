@@ -78,7 +78,8 @@ object RichEditDocument {
     __obj.asInstanceOf[RichEditDocument]
   }
   
-  extension [Self <: RichEditDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RichEditDocument] (val x: Self) extends AnyVal {
     
     inline def setAbstractNumberingListsInfo(value: js.Array[AbstractNumberingList]): Self = StObject.set(x, "abstractNumberingListsInfo", value.asInstanceOf[js.Any])
     

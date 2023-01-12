@@ -33,7 +33,8 @@ object SearchResourcesRequest {
     __obj.asInstanceOf[SearchResourcesRequest]
   }
   
-  extension [Self <: SearchResourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchResourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setBucketCriteria(value: SearchResourcesBucketCriteria): Self = StObject.set(x, "bucketCriteria", value.asInstanceOf[js.Any])
     

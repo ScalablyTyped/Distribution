@@ -59,7 +59,8 @@ object PartialMapboxLayersCircle {
     __obj.asInstanceOf[PartialMapboxLayersCircle]
   }
   
-  extension [Self <: PartialMapboxLayersCircle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMapboxLayersCircle] (val x: Self) extends AnyVal {
     
     inline def setBelow(value: String): Self = StObject.set(x, "below", value.asInstanceOf[js.Any])
     

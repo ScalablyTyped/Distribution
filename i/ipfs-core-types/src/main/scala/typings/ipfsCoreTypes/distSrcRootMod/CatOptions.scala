@@ -28,7 +28,8 @@ object CatOptions {
     __obj.asInstanceOf[CatOptions]
   }
   
-  extension [Self <: CatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatOptions] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

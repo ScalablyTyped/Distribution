@@ -84,7 +84,8 @@ object distPluginMod {
       __obj.asInstanceOf[DocgenPlugin]
     }
     
-    extension [Self <: DocgenPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocgenPlugin] (val x: Self) extends AnyVal {
       
       inline def setApplyWebpack4(value: Compiler => Unit): Self = StObject.set(x, "applyWebpack4", js.Any.fromFunction1(value))
       
@@ -126,7 +127,8 @@ object distPluginMod {
       __obj.asInstanceOf[PluginOptions]
     }
     
-    extension [Self <: PluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object distPluginMod {
       __obj.asInstanceOf[TypescriptOptions]
     }
     
-    extension [Self <: TypescriptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypescriptOptions] (val x: Self) extends AnyVal {
       
       inline def setCompilerOptions(value: typings.typescript.mod.CompilerOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
       

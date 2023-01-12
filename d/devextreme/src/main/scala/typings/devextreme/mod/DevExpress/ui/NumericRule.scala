@@ -32,7 +32,8 @@ object NumericRule {
     __obj.asInstanceOf[NumericRule]
   }
   
-  extension [Self <: NumericRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumericRule] (val x: Self) extends AnyVal {
     
     inline def setIgnoreEmptyValue(value: Boolean): Self = StObject.set(x, "ignoreEmptyValue", value.asInstanceOf[js.Any])
     

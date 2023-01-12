@@ -55,7 +55,8 @@ object XUserInputInterception {
     __obj.asInstanceOf[XUserInputInterception]
   }
   
-  extension [Self <: XUserInputInterception](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUserInputInterception] (val x: Self) extends AnyVal {
     
     inline def setAddKeyHandler(value: XKeyHandler => Unit): Self = StObject.set(x, "addKeyHandler", js.Any.fromFunction1(value))
     

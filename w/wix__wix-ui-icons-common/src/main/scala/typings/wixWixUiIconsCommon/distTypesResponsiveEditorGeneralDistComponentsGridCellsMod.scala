@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsGridCellsMod extends Shortc
       __obj.asInstanceOf[GridCellsProps]
     }
     
-    extension [Self <: GridCellsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridCellsProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

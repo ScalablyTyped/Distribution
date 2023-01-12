@@ -40,7 +40,8 @@ object actionsMod {
       __obj.asInstanceOf[GetSessionErrorAction]
     }
     
-    extension [Self <: GetSessionErrorAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetSessionErrorAction] (val x: Self) extends AnyVal {
       
       inline def setType(value: `@@redux-react-sessionSlashGET_SESSION_ERROR`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -60,7 +61,8 @@ object actionsMod {
       __obj.asInstanceOf[GetSessionSuccessAction]
     }
     
-    extension [Self <: GetSessionSuccessAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetSessionSuccessAction] (val x: Self) extends AnyVal {
       
       inline def setType(value: `@@redux-react-sessionSlashGET_SESSION_SUCCESS`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -80,7 +82,8 @@ object actionsMod {
       __obj.asInstanceOf[GetUserSessionErrorAction]
     }
     
-    extension [Self <: GetUserSessionErrorAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetUserSessionErrorAction] (val x: Self) extends AnyVal {
       
       inline def setType(value: `@@redux-react-sessionSlashGET_USER_SESSION_ERROR`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -102,7 +105,8 @@ object actionsMod {
       __obj.asInstanceOf[GetUserSessionSuccessAction[UserType]]
     }
     
-    extension [Self <: GetUserSessionSuccessAction[?], UserType](x: Self & GetUserSessionSuccessAction[UserType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetUserSessionSuccessAction[?], UserType] (val x: Self & GetUserSessionSuccessAction[UserType]) extends AnyVal {
       
       inline def setType(value: `@@redux-react-sessionSlashGET_USER_SESSION_SUCCESS`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -124,7 +128,8 @@ object actionsMod {
       __obj.asInstanceOf[InvalidSessionAction]
     }
     
-    extension [Self <: InvalidSessionAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidSessionAction] (val x: Self) extends AnyVal {
       
       inline def setType(value: `@@redux-react-sessionSlashINVALID_SESSION`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

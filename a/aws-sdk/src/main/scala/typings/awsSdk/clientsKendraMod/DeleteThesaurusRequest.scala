@@ -23,7 +23,8 @@ object DeleteThesaurusRequest {
     __obj.asInstanceOf[DeleteThesaurusRequest]
   }
   
-  extension [Self <: DeleteThesaurusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteThesaurusRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: ThesaurusId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

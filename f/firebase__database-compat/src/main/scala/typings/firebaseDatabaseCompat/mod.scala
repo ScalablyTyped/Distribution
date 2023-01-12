@@ -176,7 +176,8 @@ object mod {
         __obj.asInstanceOf[typings.firebaseDatabaseCompat.mod.firebaseAppCompatAugmentingMod.FirebaseApp]
       }
       
-      extension [Self <: typings.firebaseDatabaseCompat.mod.firebaseAppCompatAugmentingMod.FirebaseApp](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.firebaseDatabaseCompat.mod.firebaseAppCompatAugmentingMod.FirebaseApp] (val x: Self) extends AnyVal {
         
         inline def setDatabase(value: /* databaseURL */ js.UndefOr[String] => FirebaseDatabase): Self = StObject.set(x, "database", js.Any.fromFunction1(value))
         
@@ -195,7 +196,8 @@ object mod {
         __obj.asInstanceOf[typings.firebaseDatabaseCompat.mod.firebaseAppCompatAugmentingMod.FirebaseNamespace]
       }
       
-      extension [Self <: typings.firebaseDatabaseCompat.mod.firebaseAppCompatAugmentingMod.FirebaseNamespace](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.firebaseDatabaseCompat.mod.firebaseAppCompatAugmentingMod.FirebaseNamespace] (val x: Self) extends AnyVal {
         
         inline def setDatabase(value: Call): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
         

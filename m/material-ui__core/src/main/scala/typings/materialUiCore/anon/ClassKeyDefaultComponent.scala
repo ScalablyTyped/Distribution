@@ -21,7 +21,8 @@ object ClassKeyDefaultComponent {
     __obj.asInstanceOf[ClassKeyDefaultComponent[P, D]]
   }
   
-  extension [Self <: ClassKeyDefaultComponent[?, ?], P, D /* <: ElementType[Any] */](x: Self & (ClassKeyDefaultComponent[P, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassKeyDefaultComponent[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (ClassKeyDefaultComponent[P, D])) extends AnyVal {
     
     inline def setClassKey(value: BottomNavigationActionClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
     

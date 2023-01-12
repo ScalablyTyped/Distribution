@@ -18,7 +18,8 @@ object ComponentUnbind {
     __obj.asInstanceOf[ComponentUnbind]
   }
   
-  extension [Self <: ComponentUnbind](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentUnbind] (val x: Self) extends AnyVal {
     
     inline def setUnbind(value: () => Unit): Self = StObject.set(x, "unbind", js.Any.fromFunction0(value))
   }

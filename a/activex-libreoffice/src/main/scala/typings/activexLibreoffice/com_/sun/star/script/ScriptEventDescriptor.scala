@@ -39,7 +39,8 @@ object ScriptEventDescriptor {
     __obj.asInstanceOf[ScriptEventDescriptor]
   }
   
-  extension [Self <: ScriptEventDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptEventDescriptor] (val x: Self) extends AnyVal {
     
     inline def setAddListenerParam(value: String): Self = StObject.set(x, "AddListenerParam", value.asInstanceOf[js.Any])
     

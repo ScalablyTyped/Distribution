@@ -16,7 +16,8 @@ object SnapToRoadsResponse {
     __obj.asInstanceOf[SnapToRoadsResponse]
   }
   
-  extension [Self <: SnapToRoadsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapToRoadsResponse] (val x: Self) extends AnyVal {
     
     inline def setSnappedPoints(value: js.Array[SnappedPoint]): Self = StObject.set(x, "snappedPoints", value.asInstanceOf[js.Any])
     

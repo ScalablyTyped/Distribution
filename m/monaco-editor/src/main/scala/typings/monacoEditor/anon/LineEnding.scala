@@ -17,7 +17,8 @@ object LineEnding {
     __obj.asInstanceOf[LineEnding]
   }
   
-  extension [Self <: LineEnding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineEnding] (val x: Self) extends AnyVal {
     
     inline def setLineEnding(value: String): Self = StObject.set(x, "lineEnding", value.asInstanceOf[js.Any])
     

@@ -192,7 +192,8 @@ object ListView {
       __obj.asInstanceOf[AjaxBeforeLoadEventArgs]
     }
     
-    extension [Self <: AjaxBeforeLoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxBeforeLoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAjaxData(value: Any): Self = StObject.set(x, "ajaxData", value.asInstanceOf[js.Any])
       
@@ -233,7 +234,8 @@ object ListView {
       __obj.asInstanceOf[AjaxCompleteEventArgs]
     }
     
-    extension [Self <: AjaxCompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxCompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -290,7 +292,8 @@ object ListView {
       __obj.asInstanceOf[AjaxErrorEventArgs]
     }
     
-    extension [Self <: AjaxErrorEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxErrorEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -359,7 +362,8 @@ object ListView {
       __obj.asInstanceOf[typings.ejWebAll.ej.ListView.AjaxSettings]
     }
     
-    extension [Self <: typings.ejWebAll.ej.ListView.AjaxSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.ListView.AjaxSettings] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -428,7 +432,8 @@ object ListView {
       __obj.asInstanceOf[AjaxSuccessEventArgs]
     }
     
-    extension [Self <: AjaxSuccessEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxSuccessEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -525,7 +530,8 @@ object ListView {
       __obj.asInstanceOf[FieldSettings]
     }
     
-    extension [Self <: FieldSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldSettings] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -602,7 +608,8 @@ object ListView {
       __obj.asInstanceOf[LoadCompleteEventArgs]
     }
     
-    extension [Self <: LoadCompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadCompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -639,7 +646,8 @@ object ListView {
       __obj.asInstanceOf[LoadEventArgs]
     }
     
-    extension [Self <: LoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -840,7 +848,8 @@ object ListView {
       __obj.asInstanceOf[typings.ejWebAll.ej.ListView.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.ListView.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.ListView.Model] (val x: Self) extends AnyVal {
       
       inline def setAjaxBeforeLoad(value: /* e */ AjaxBeforeLoadEventArgs => Unit): Self = StObject.set(x, "ajaxBeforeLoad", js.Any.fromFunction1(value))
       
@@ -1047,7 +1056,8 @@ object ListView {
       __obj.asInstanceOf[MouseDownEventArgs]
     }
     
-    extension [Self <: MouseDownEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseDownEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1140,7 +1150,8 @@ object ListView {
       __obj.asInstanceOf[MouseUpEventArgs]
     }
     
-    extension [Self <: MouseUpEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseUpEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

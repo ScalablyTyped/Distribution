@@ -59,7 +59,8 @@ object libPathModelMod {
       __obj.asInstanceOf[PathModel]
     }
     
-    extension [Self <: PathModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathModel] (val x: Self) extends AnyVal {
       
       inline def setHttpMethods(value: js.Array[String]): Self = StObject.set(x, "httpMethods", value.asInstanceOf[js.Any])
       

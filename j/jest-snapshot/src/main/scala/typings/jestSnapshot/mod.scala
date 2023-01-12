@@ -159,7 +159,8 @@ object mod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setSnapshotState(value: SnapshotState): Self = StObject.set(x, "snapshotState", value.asInstanceOf[js.Any])
     }
@@ -180,7 +181,8 @@ object mod {
       __obj.asInstanceOf[SaveStatus]
     }
     
-    extension [Self <: SaveStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SaveStatus] (val x: Self) extends AnyVal {
       
       inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
       
@@ -200,7 +202,8 @@ object mod {
       __obj.asInstanceOf[SnapshotFormat]
     }
     
-    extension [Self <: SnapshotFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnapshotFormat] (val x: Self) extends AnyVal {
       
       inline def setPlugins(value: Plugins_): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
@@ -231,7 +234,8 @@ object mod {
       __obj.asInstanceOf[SnapshotMatchOptions]
     }
     
-    extension [Self <: SnapshotMatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnapshotMatchOptions] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -332,7 +336,8 @@ object mod {
       __obj.asInstanceOf[SnapshotReturnOptions]
     }
     
-    extension [Self <: SnapshotReturnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnapshotReturnOptions] (val x: Self) extends AnyVal {
       
       inline def setActual(value: String): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
@@ -367,7 +372,8 @@ object mod {
       __obj.asInstanceOf[SnapshotStateOptions]
     }
     
-    extension [Self <: SnapshotStateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnapshotStateOptions] (val x: Self) extends AnyVal {
       
       inline def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
       

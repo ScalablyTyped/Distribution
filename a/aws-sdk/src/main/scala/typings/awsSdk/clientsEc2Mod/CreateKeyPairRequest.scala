@@ -38,7 +38,8 @@ object CreateKeyPairRequest {
     __obj.asInstanceOf[CreateKeyPairRequest]
   }
   
-  extension [Self <: CreateKeyPairRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateKeyPairRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

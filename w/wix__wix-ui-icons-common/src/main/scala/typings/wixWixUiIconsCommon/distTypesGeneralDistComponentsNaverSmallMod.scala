@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsNaverSmallMod extends Shortcut {
       __obj.asInstanceOf[NaverSmallProps]
     }
     
-    extension [Self <: NaverSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NaverSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

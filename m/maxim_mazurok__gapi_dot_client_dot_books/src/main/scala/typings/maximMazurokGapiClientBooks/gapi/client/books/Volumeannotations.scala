@@ -31,7 +31,8 @@ object Volumeannotations {
     __obj.asInstanceOf[Volumeannotations]
   }
   
-  extension [Self <: Volumeannotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Volumeannotations] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[Volumeannotation]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

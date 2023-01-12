@@ -22,7 +22,8 @@ object Descendant {
     __obj.asInstanceOf[Descendant]
   }
   
-  extension [Self <: Descendant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Descendant] (val x: Self) extends AnyVal {
     
     inline def setType(value: descendant): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

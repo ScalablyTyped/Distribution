@@ -42,7 +42,8 @@ object typesMessageAttributeValueMod {
       __obj.asInstanceOf[MessageAttributeValue]
     }
     
-    extension [Self <: MessageAttributeValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageAttributeValue] (val x: Self) extends AnyVal {
       
       inline def setBinaryListValues(
         value: (js.Array[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String]) | (js.Iterable[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String])
@@ -99,7 +100,8 @@ object typesMessageAttributeValueMod {
       __obj.asInstanceOf[UnmarshalledMessageAttributeValue]
     }
     
-    extension [Self <: UnmarshalledMessageAttributeValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledMessageAttributeValue] (val x: Self) extends AnyVal {
       
       inline def setBinaryListValues(value: js.Array[js.typedarray.Uint8Array]): Self = StObject.set(x, "BinaryListValues", value.asInstanceOf[js.Any])
       

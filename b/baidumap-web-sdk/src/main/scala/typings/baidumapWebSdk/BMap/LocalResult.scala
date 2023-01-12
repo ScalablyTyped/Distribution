@@ -56,7 +56,8 @@ object LocalResult {
     __obj.asInstanceOf[LocalResult]
   }
   
-  extension [Self <: LocalResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalResult] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

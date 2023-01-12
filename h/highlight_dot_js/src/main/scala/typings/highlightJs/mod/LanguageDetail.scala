@@ -40,7 +40,8 @@ object LanguageDetail {
     __obj.asInstanceOf[LanguageDetail]
   }
   
-  extension [Self <: LanguageDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageDetail] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     

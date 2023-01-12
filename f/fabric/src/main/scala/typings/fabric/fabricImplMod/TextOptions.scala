@@ -122,7 +122,8 @@ object TextOptions {
     __obj.asInstanceOf[TextOptions]
   }
   
-  extension [Self <: TextOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextOptions] (val x: Self) extends AnyVal {
     
     inline def setCharSpacing(value: Double): Self = StObject.set(x, "charSpacing", value.asInstanceOf[js.Any])
     

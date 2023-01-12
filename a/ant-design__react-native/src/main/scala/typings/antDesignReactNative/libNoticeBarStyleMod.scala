@@ -49,7 +49,8 @@ object libNoticeBarStyleMod {
       __obj.asInstanceOf[NoticeBarStyle]
     }
     
-    extension [Self <: NoticeBarStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoticeBarStyle] (val x: Self) extends AnyVal {
       
       inline def setActionWrap(value: ViewStyle): Self = StObject.set(x, "actionWrap", value.asInstanceOf[js.Any])
       

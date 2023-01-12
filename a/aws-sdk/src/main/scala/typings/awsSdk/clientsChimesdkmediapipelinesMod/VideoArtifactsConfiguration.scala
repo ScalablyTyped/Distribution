@@ -23,7 +23,8 @@ object VideoArtifactsConfiguration {
     __obj.asInstanceOf[VideoArtifactsConfiguration]
   }
   
-  extension [Self <: VideoArtifactsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoArtifactsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setMuxType(value: VideoMuxType): Self = StObject.set(x, "MuxType", value.asInstanceOf[js.Any])
     

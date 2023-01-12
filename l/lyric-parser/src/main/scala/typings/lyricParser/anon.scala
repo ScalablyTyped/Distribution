@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Album]
     }
     
-    extension [Self <: Album](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Album] (val x: Self) extends AnyVal {
       
       inline def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[LineNum]
     }
     
-    extension [Self <: LineNum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineNum] (val x: Self) extends AnyVal {
       
       inline def setLineNum(value: Double): Self = StObject.set(x, "lineNum", value.asInstanceOf[js.Any])
       
@@ -73,7 +75,8 @@ object anon {
       __obj.asInstanceOf[Time]
     }
     
-    extension [Self <: Time](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Time] (val x: Self) extends AnyVal {
       
       inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       

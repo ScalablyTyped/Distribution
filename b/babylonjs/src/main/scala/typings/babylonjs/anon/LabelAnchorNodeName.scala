@@ -19,7 +19,8 @@ object LabelAnchorNodeName {
     __obj.asInstanceOf[LabelAnchorNodeName]
   }
   
-  extension [Self <: LabelAnchorNodeName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelAnchorNodeName] (val x: Self) extends AnyVal {
     
     inline def setLabelAnchorNodeName(value: String): Self = StObject.set(x, "labelAnchorNodeName", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object FocusNode {
     __obj.asInstanceOf[FocusNode]
   }
   
-  extension [Self <: FocusNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FocusNode] (val x: Self) extends AnyVal {
     
     inline def setFocusNode(value: typings.testingLibraryUserEvent.distTypesDocumentPrepareDocumentMod.global.Node): Self = StObject.set(x, "focusNode", value.asInstanceOf[js.Any])
     

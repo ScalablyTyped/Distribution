@@ -16,7 +16,8 @@ object ComplianceManagementPartnerAssignment {
     __obj.asInstanceOf[ComplianceManagementPartnerAssignment]
   }
   
-  extension [Self <: ComplianceManagementPartnerAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComplianceManagementPartnerAssignment] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: NullableOption[DeviceAndAppManagementAssignmentTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

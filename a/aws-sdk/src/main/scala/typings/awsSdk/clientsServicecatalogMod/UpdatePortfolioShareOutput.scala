@@ -23,7 +23,8 @@ object UpdatePortfolioShareOutput {
     __obj.asInstanceOf[UpdatePortfolioShareOutput]
   }
   
-  extension [Self <: UpdatePortfolioShareOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePortfolioShareOutput] (val x: Self) extends AnyVal {
     
     inline def setPortfolioShareToken(value: Id): Self = StObject.set(x, "PortfolioShareToken", value.asInstanceOf[js.Any])
     

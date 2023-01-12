@@ -18,7 +18,8 @@ object DeleteExternalModelRequest {
     __obj.asInstanceOf[DeleteExternalModelRequest]
   }
   
-  extension [Self <: DeleteExternalModelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteExternalModelRequest] (val x: Self) extends AnyVal {
     
     inline def setModelEndpoint(value: sageMakerEndpointIdentifier): Self = StObject.set(x, "modelEndpoint", value.asInstanceOf[js.Any])
   }

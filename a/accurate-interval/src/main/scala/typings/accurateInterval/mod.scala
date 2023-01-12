@@ -23,7 +23,8 @@ object mod {
       __obj.asInstanceOf[AccurateInterval]
     }
     
-    extension [Self <: AccurateInterval](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccurateInterval] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     }
@@ -42,7 +43,8 @@ object mod {
       __obj.asInstanceOf[Opts]
     }
     
-    extension [Self <: Opts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
       
       inline def setAligned(value: Boolean): Self = StObject.set(x, "aligned", value.asInstanceOf[js.Any])
       

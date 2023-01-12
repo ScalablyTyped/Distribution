@@ -93,7 +93,8 @@ object typesLatestSrcUtilExponentialBackoffStrategyMod {
       __obj.asInstanceOf[RetryData]
     }
     
-    extension [Self <: RetryData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryData] (val x: Self) extends AnyVal {
       
       inline def setError(value: RetryError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object typesLatestSrcUtilExponentialBackoffStrategyMod {
       __obj.asInstanceOf[RetryError]
     }
     
-    extension [Self <: RetryError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

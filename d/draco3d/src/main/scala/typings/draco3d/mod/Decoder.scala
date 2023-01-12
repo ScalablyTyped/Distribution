@@ -65,7 +65,8 @@ object Decoder {
     __obj.asInstanceOf[Decoder]
   }
   
-  extension [Self <: Decoder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Decoder] (val x: Self) extends AnyVal {
     
     inline def setDecodeBufferToMesh(value: (DecoderBuffer, Mesh) => Status): Self = StObject.set(x, "DecodeBufferToMesh", js.Any.fromFunction2(value))
     

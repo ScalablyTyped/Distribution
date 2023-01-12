@@ -18,7 +18,8 @@ object DescribeOriginEndpointRequest {
     __obj.asInstanceOf[DescribeOriginEndpointRequest]
   }
   
-  extension [Self <: DescribeOriginEndpointRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeOriginEndpointRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }

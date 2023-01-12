@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Border]
     }
     
-    extension [Self <: Border](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Border] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: js.Array[String]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object anon {
       __obj.asInstanceOf[kintoptopmidtoplefttoprig]
     }
     
-    extension [Self <: kintoptopmidtoplefttoprig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: kintoptopmidtoplefttoprig] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

@@ -49,7 +49,8 @@ object distSrcApiReferenceMod {
       __obj.asInstanceOf[ListenOptions]
     }
     
-    extension [Self <: ListenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListenOptions] (val x: Self) extends AnyVal {
       
       inline def setOnlyOnce(value: Boolean): Self = StObject.set(x, "onlyOnce", value.asInstanceOf[js.Any])
       

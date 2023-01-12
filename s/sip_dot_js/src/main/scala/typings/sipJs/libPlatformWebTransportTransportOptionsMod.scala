@@ -44,7 +44,8 @@ object libPlatformWebTransportTransportOptionsMod {
       __obj.asInstanceOf[TransportOptions]
     }
     
-    extension [Self <: TransportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransportOptions] (val x: Self) extends AnyVal {
       
       inline def setConnectionTimeout(value: Double): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
       

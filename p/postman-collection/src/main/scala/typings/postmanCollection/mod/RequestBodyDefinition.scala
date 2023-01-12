@@ -26,7 +26,8 @@ object RequestBodyDefinition {
     __obj.asInstanceOf[RequestBodyDefinition]
   }
   
-  extension [Self <: RequestBodyDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyDefinition] (val x: Self) extends AnyVal {
     
     inline def setFile(value: String | SrcString): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

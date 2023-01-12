@@ -23,7 +23,8 @@ object ListEventTypesResult {
     __obj.asInstanceOf[ListEventTypesResult]
   }
   
-  extension [Self <: ListEventTypesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEventTypesResult] (val x: Self) extends AnyVal {
     
     inline def setEventTypes(value: EventTypeBatch): Self = StObject.set(x, "EventTypes", value.asInstanceOf[js.Any])
     

@@ -368,7 +368,8 @@ object animationsEasingMod {
       __obj.asInstanceOf[IEasingFunction]
     }
     
-    extension [Self <: IEasingFunction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEasingFunction] (val x: Self) extends AnyVal {
       
       inline def setEase(value: Double => Double): Self = StObject.set(x, "ease", js.Any.fromFunction1(value))
     }

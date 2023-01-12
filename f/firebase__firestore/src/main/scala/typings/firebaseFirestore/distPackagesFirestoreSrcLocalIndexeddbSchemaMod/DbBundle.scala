@@ -22,7 +22,8 @@ object DbBundle {
     __obj.asInstanceOf[DbBundle]
   }
   
-  extension [Self <: DbBundle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbBundle] (val x: Self) extends AnyVal {
     
     inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     

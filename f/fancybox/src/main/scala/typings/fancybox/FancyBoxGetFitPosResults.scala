@@ -21,7 +21,8 @@ object FancyBoxGetFitPosResults {
     __obj.asInstanceOf[FancyBoxGetFitPosResults]
   }
   
-  extension [Self <: FancyBoxGetFitPosResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FancyBoxGetFitPosResults] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object CreateAssistantAssociationResponse {
     __obj.asInstanceOf[CreateAssistantAssociationResponse]
   }
   
-  extension [Self <: CreateAssistantAssociationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAssistantAssociationResponse] (val x: Self) extends AnyVal {
     
     inline def setAssistantAssociation(value: AssistantAssociationData): Self = StObject.set(x, "assistantAssociation", value.asInstanceOf[js.Any])
     

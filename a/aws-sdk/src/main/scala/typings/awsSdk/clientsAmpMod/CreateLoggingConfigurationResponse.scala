@@ -18,7 +18,8 @@ object CreateLoggingConfigurationResponse {
     __obj.asInstanceOf[CreateLoggingConfigurationResponse]
   }
   
-  extension [Self <: CreateLoggingConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLoggingConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: LoggingConfigurationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

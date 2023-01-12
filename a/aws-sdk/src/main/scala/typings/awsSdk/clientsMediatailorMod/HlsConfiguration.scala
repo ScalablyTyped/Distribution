@@ -18,7 +18,8 @@ object HlsConfiguration {
     __obj.asInstanceOf[HlsConfiguration]
   }
   
-  extension [Self <: HlsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setManifestEndpointPrefix(value: _String): Self = StObject.set(x, "ManifestEndpointPrefix", value.asInstanceOf[js.Any])
     

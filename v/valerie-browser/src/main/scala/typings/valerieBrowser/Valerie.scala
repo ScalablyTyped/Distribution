@@ -20,7 +20,8 @@ object Valerie {
       __obj.asInstanceOf[ConvertersStatic]
     }
     
-    extension [Self <: ConvertersStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvertersStatic] (val x: Self) extends AnyVal {
       
       inline def setPassThrough(value: IConverter): Self = StObject.set(x, "passThrough", value.asInstanceOf[js.Any])
     }
@@ -50,7 +51,8 @@ object Valerie {
       __obj.asInstanceOf[IRule]
     }
     
-    extension [Self <: IRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRule] (val x: Self) extends AnyVal {
       
       inline def setDefaultOptions(value: ValidationOptions): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
       
@@ -288,7 +290,8 @@ object Valerie {
       __obj.asInstanceOf[ModelValidationStateOptions]
     }
     
-    extension [Self <: ModelValidationStateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelValidationStateOptions] (val x: Self) extends AnyVal {
       
       inline def setApplicable(value: () => Boolean): Self = StObject.set(x, "applicable", js.Any.fromFunction0(value))
       
@@ -354,7 +357,8 @@ object Valerie {
       __obj.asInstanceOf[NumericHelper]
     }
     
-    extension [Self <: NumericHelper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumericHelper] (val x: Self) extends AnyVal {
       
       inline def setAddThousandsSeparator(value: String => String): Self = StObject.set(x, "addThousandsSeparator", js.Any.fromFunction1(value))
       
@@ -678,7 +682,8 @@ object Valerie {
       __obj.asInstanceOf[ValidatableModel[T]]
     }
     
-    extension [Self <: ValidatableModel[?], T](x: Self & ValidatableModel[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidatableModel[?], T] (val x: Self & ValidatableModel[T]) extends AnyVal {
       
       inline def setEnd(value: () => T): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
@@ -724,7 +729,8 @@ object Valerie {
       __obj.asInstanceOf[ValidationOptions]
     }
     
-    extension [Self <: ValidationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationOptions] (val x: Self) extends AnyVal {
       
       inline def setApplicable(value: () => Any): Self = StObject.set(x, "applicable", js.Any.fromFunction0(value))
       
@@ -804,7 +810,8 @@ object Valerie {
       __obj.asInstanceOf[ValidationResultStatic]
     }
     
-    extension [Self <: ValidationResultStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationResultStatic] (val x: Self) extends AnyVal {
       
       inline def setCreateFailedResult(value: String => ValidationResult): Self = StObject.set(x, "createFailedResult", js.Any.fromFunction1(value))
       
@@ -853,7 +860,8 @@ object Valerie {
       __obj.asInstanceOf[summaryItem]
     }
     
-    extension [Self <: summaryItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: summaryItem] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

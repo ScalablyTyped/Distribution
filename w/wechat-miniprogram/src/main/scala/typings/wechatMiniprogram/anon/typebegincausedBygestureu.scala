@@ -59,7 +59,8 @@ object typebegincausedBygestureu {
     __obj.asInstanceOf[typebegincausedBygestureu]
   }
   
-  extension [Self <: typebegincausedBygestureu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typebegincausedBygestureu] (val x: Self) extends AnyVal {
     
     inline def setCausedBy(value: gesture | update): Self = StObject.set(x, "causedBy", value.asInstanceOf[js.Any])
     

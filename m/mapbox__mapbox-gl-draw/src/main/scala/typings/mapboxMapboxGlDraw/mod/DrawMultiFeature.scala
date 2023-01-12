@@ -99,7 +99,8 @@ object DrawMultiFeature {
     __obj.asInstanceOf[DrawMultiFeature[Type]]
   }
   
-  extension [Self <: DrawMultiFeature[?], Type /* <: MultiPoint | MultiLineString | MultiPolygon */](x: Self & DrawMultiFeature[Type]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawMultiFeature[?], Type /* <: MultiPoint | MultiLineString | MultiPolygon */] (val x: Self & DrawMultiFeature[Type]) extends AnyVal {
     
     inline def setChanged(value: () => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction0(value))
     

@@ -46,7 +46,8 @@ object distInputGroupSrcInputGroupContextMod {
       __obj.asInstanceOf[ClearInputGroupContextProps]
     }
     
-    extension [Self <: ClearInputGroupContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClearInputGroupContextProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object distInputGroupSrcInputGroupContextMod {
       __obj.asInstanceOf[InputGroupContextType]
     }
     
-    extension [Self <: InputGroupContextType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputGroupContextType] (val x: Self) extends AnyVal {
       
       inline def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
@@ -95,7 +97,8 @@ object distInputGroupSrcInputGroupContextMod {
       __obj.asInstanceOf[UseInputGroupAddonPropsReturn]
     }
     
-    extension [Self <: UseInputGroupAddonPropsReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseInputGroupAddonPropsReturn] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -124,7 +127,8 @@ object distInputGroupSrcInputGroupContextMod {
       __obj.asInstanceOf[UseInputGroupButtonAddonPropsReturn]
     }
     
-    extension [Self <: UseInputGroupButtonAddonPropsReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseInputGroupButtonAddonPropsReturn] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -159,7 +163,8 @@ object distInputGroupSrcInputGroupContextMod {
       __obj.asInstanceOf[UseInputGroupMenuAddonPropsReturn]
     }
     
-    extension [Self <: UseInputGroupMenuAddonPropsReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseInputGroupMenuAddonPropsReturn] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -191,7 +196,8 @@ object distInputGroupSrcInputGroupContextMod {
       __obj.asInstanceOf[UseInputGroupPropsReturn]
     }
     
-    extension [Self <: UseInputGroupPropsReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseInputGroupPropsReturn] (val x: Self) extends AnyVal {
       
       inline def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
@@ -220,7 +226,8 @@ object distInputGroupSrcInputGroupContextMod {
       __obj.asInstanceOf[UseInputGroupSelectAddonPropsReturn]
     }
     
-    extension [Self <: UseInputGroupSelectAddonPropsReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseInputGroupSelectAddonPropsReturn] (val x: Self) extends AnyVal {
       
       inline def setAllowResponsiveMenuWidth(value: Boolean): Self = StObject.set(x, "allowResponsiveMenuWidth", value.asInstanceOf[js.Any])
       

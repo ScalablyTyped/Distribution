@@ -32,7 +32,8 @@ object PassThroughSecurityScheme10 {
     __obj.asInstanceOf[PassThroughSecurityScheme10]
   }
   
-  extension [Self <: PassThroughSecurityScheme10](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PassThroughSecurityScheme10] (val x: Self) extends AnyVal {
     
     inline def setSettings(value: PassThroughSecuritySettings10): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
   }

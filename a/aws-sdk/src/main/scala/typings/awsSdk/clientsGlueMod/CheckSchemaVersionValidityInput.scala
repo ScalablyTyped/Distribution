@@ -23,7 +23,8 @@ object CheckSchemaVersionValidityInput {
     __obj.asInstanceOf[CheckSchemaVersionValidityInput]
   }
   
-  extension [Self <: CheckSchemaVersionValidityInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckSchemaVersionValidityInput] (val x: Self) extends AnyVal {
     
     inline def setDataFormat(value: DataFormat): Self = StObject.set(x, "DataFormat", value.asInstanceOf[js.Any])
     

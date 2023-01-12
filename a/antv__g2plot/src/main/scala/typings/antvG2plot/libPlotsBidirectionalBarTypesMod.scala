@@ -136,7 +136,8 @@ object libPlotsBidirectionalBarTypesMod {
       __obj.asInstanceOf[BidirectionalBarOptions]
     }
     
-    extension [Self <: BidirectionalBarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BidirectionalBarOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

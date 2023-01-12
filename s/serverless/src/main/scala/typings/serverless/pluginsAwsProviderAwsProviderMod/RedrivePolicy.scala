@@ -19,7 +19,8 @@ object RedrivePolicy {
     __obj.asInstanceOf[RedrivePolicy]
   }
   
-  extension [Self <: RedrivePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedrivePolicy] (val x: Self) extends AnyVal {
     
     inline def setDeadLetterTargetArn(value: String): Self = StObject.set(x, "deadLetterTargetArn", value.asInstanceOf[js.Any])
     

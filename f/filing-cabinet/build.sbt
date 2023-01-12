@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "filing-cabinet"
-version := "2.5-dt-20211202Z-7122ac"
+version := "2.5-dt-20211202Z-fa6126"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

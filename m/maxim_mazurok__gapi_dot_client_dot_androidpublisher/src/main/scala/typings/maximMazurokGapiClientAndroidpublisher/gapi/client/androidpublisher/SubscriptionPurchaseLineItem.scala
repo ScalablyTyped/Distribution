@@ -25,7 +25,8 @@ object SubscriptionPurchaseLineItem {
     __obj.asInstanceOf[SubscriptionPurchaseLineItem]
   }
   
-  extension [Self <: SubscriptionPurchaseLineItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionPurchaseLineItem] (val x: Self) extends AnyVal {
     
     inline def setAutoRenewingPlan(value: AutoRenewingPlan): Self = StObject.set(x, "autoRenewingPlan", value.asInstanceOf[js.Any])
     

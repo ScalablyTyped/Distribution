@@ -74,7 +74,8 @@ object anon {
       __obj.asInstanceOf[AlwaysCompress]
     }
     
-    extension [Self <: AlwaysCompress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlwaysCompress] (val x: Self) extends AnyVal {
       
       inline def setAlwaysCompress(value: Boolean): Self = StObject.set(x, "alwaysCompress", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setFacility(value: String): Self = StObject.set(x, "facility", value.asInstanceOf[js.Any])
       
@@ -148,7 +150,8 @@ object anon {
       __obj.asInstanceOf[Facility]
     }
     
-    extension [Self <: Facility](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Facility] (val x: Self) extends AnyVal {
       
       inline def setFacility(value: String): Self = StObject.set(x, "facility", value.asInstanceOf[js.Any])
       

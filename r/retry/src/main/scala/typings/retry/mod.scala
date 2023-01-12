@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[AttemptTimeoutOptions]
     }
     
-    extension [Self <: AttemptTimeoutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttemptTimeoutOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
@@ -89,7 +90,8 @@ object mod {
       __obj.asInstanceOf[CreateTimeoutOptions]
     }
     
-    extension [Self <: CreateTimeoutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateTimeoutOptions] (val x: Self) extends AnyVal {
       
       inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
       
@@ -182,7 +184,8 @@ object mod {
       __obj.asInstanceOf[TimeoutsOptions]
     }
     
-    extension [Self <: TimeoutsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeoutsOptions] (val x: Self) extends AnyVal {
       
       inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
@@ -219,7 +222,8 @@ object mod {
       __obj.asInstanceOf[WrapOptions]
     }
     
-    extension [Self <: WrapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrapOptions] (val x: Self) extends AnyVal {
       
       inline def setForever(value: Boolean): Self = StObject.set(x, "forever", value.asInstanceOf[js.Any])
       

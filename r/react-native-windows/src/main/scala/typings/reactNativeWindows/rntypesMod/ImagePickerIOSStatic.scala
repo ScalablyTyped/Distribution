@@ -34,7 +34,8 @@ object ImagePickerIOSStatic {
     __obj.asInstanceOf[ImagePickerIOSStatic]
   }
   
-  extension [Self <: ImagePickerIOSStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagePickerIOSStatic] (val x: Self) extends AnyVal {
     
     inline def setCanRecordVideos(value: js.Function1[/* value */ Boolean, Unit] => Unit): Self = StObject.set(x, "canRecordVideos", js.Any.fromFunction1(value))
     

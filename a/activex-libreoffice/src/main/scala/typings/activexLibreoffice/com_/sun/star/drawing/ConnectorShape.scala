@@ -160,7 +160,8 @@ object ConnectorShape {
     __obj.asInstanceOf[ConnectorShape]
   }
   
-  extension [Self <: ConnectorShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorShape] (val x: Self) extends AnyVal {
     
     inline def setEdgeLine1Delta(value: Double): Self = StObject.set(x, "EdgeLine1Delta", value.asInstanceOf[js.Any])
     

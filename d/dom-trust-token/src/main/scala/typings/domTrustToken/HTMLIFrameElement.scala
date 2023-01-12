@@ -15,7 +15,8 @@ object HTMLIFrameElement {
     __obj.asInstanceOf[HTMLIFrameElement]
   }
   
-  extension [Self <: HTMLIFrameElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLIFrameElement] (val x: Self) extends AnyVal {
     
     inline def setTrustToken(value: String): Self = StObject.set(x, "trustToken", value.asInstanceOf[js.Any])
   }

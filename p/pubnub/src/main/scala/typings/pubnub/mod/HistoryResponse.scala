@@ -19,7 +19,8 @@ object HistoryResponse {
     __obj.asInstanceOf[HistoryResponse]
   }
   
-  extension [Self <: HistoryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistoryResponse] (val x: Self) extends AnyVal {
     
     inline def setEndTimeToken(value: String | Double): Self = StObject.set(x, "endTimeToken", value.asInstanceOf[js.Any])
     

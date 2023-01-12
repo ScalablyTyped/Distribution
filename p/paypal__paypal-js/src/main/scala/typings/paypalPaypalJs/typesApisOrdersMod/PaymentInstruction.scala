@@ -19,7 +19,8 @@ object PaymentInstruction {
     __obj.asInstanceOf[PaymentInstruction]
   }
   
-  extension [Self <: PaymentInstruction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaymentInstruction] (val x: Self) extends AnyVal {
     
     inline def setDisbursement_mode(value: INSTANT | DELAYED): Self = StObject.set(x, "disbursement_mode", value.asInstanceOf[js.Any])
     

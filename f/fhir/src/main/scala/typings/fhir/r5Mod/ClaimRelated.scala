@@ -30,7 +30,8 @@ object ClaimRelated {
     __obj.asInstanceOf[ClaimRelated]
   }
   
-  extension [Self <: ClaimRelated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClaimRelated] (val x: Self) extends AnyVal {
     
     inline def setClaim(value: Reference): Self = StObject.set(x, "claim", value.asInstanceOf[js.Any])
     

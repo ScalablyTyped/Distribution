@@ -24,7 +24,8 @@ object ApplicationjsonApplicationvndgithubobject {
     __obj.asInstanceOf[ApplicationjsonApplicationvndgithubobject]
   }
   
-  extension [Self <: ApplicationjsonApplicationvndgithubobject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonApplicationvndgithubobject] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: js.Array[Giturl] | Submodulegiturl | Target | DownloadurlGiturl): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
     

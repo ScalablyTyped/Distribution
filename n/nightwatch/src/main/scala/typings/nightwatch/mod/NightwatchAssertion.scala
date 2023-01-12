@@ -37,7 +37,8 @@ object NightwatchAssertion {
     __obj.asInstanceOf[NightwatchAssertion[T, U]]
   }
   
-  extension [Self <: NightwatchAssertion[?, ?], T, U](x: Self & (NightwatchAssertion[T, U])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NightwatchAssertion[?, ?], T, U] (val x: Self & (NightwatchAssertion[T, U])) extends AnyVal {
     
     inline def setApi(value: NightwatchAPI): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     

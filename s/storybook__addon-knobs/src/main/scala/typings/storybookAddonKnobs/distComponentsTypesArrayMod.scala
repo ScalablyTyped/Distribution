@@ -64,7 +64,8 @@ object distComponentsTypesArrayMod {
       __obj.asInstanceOf[ArrayTypeKnob]
     }
     
-    extension [Self <: ArrayTypeKnob](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrayTypeKnob] (val x: Self) extends AnyVal {
       
       inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     }
@@ -86,7 +87,8 @@ object distComponentsTypesArrayMod {
       __obj.asInstanceOf[ArrayTypeProps]
     }
     
-    extension [Self <: ArrayTypeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrayTypeProps] (val x: Self) extends AnyVal {
       
       inline def setKnob(value: ArrayTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     }

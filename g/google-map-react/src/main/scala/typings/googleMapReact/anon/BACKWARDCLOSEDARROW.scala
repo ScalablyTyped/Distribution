@@ -29,7 +29,8 @@ object BACKWARDCLOSEDARROW {
     __obj.asInstanceOf[BACKWARDCLOSEDARROW]
   }
   
-  extension [Self <: BACKWARDCLOSEDARROW](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BACKWARDCLOSEDARROW] (val x: Self) extends AnyVal {
     
     inline def setBACKWARD_CLOSED_ARROW(value: Double): Self = StObject.set(x, "BACKWARD_CLOSED_ARROW", value.asInstanceOf[js.Any])
     

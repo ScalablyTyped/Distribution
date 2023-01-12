@@ -22,7 +22,8 @@ object GoogleCloudVisionV1p3beta1WebDetectionWebEntity {
     __obj.asInstanceOf[GoogleCloudVisionV1p3beta1WebDetectionWebEntity]
   }
   
-  extension [Self <: GoogleCloudVisionV1p3beta1WebDetectionWebEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p3beta1WebDetectionWebEntity] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

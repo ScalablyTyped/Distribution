@@ -44,7 +44,8 @@ object ScriptTask {
     __obj.asInstanceOf[ScriptTask]
   }
   
-  extension [Self <: ScriptTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptTask] (val x: Self) extends AnyVal {
     
     inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     

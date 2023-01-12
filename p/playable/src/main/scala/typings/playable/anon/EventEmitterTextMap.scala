@@ -30,7 +30,8 @@ object EventEmitterTextMap {
     __obj.asInstanceOf[EventEmitterTextMap]
   }
   
-  extension [Self <: EventEmitterTextMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventEmitterTextMap] (val x: Self) extends AnyVal {
     
     inline def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     

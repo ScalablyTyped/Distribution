@@ -38,7 +38,8 @@ object libImagePickerPropsTypeMod {
       __obj.asInstanceOf[ImagePickerPropTypes]
     }
     
-    extension [Self <: ImagePickerPropTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImagePickerPropTypes] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: js.Array[js.Object]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       

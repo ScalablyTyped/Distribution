@@ -35,7 +35,8 @@ object SystemPhotoProperties {
     __obj.asInstanceOf[SystemPhotoProperties]
   }
   
-  extension [Self <: SystemPhotoProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemPhotoProperties] (val x: Self) extends AnyVal {
     
     inline def setCameraManufacturer(value: String): Self = StObject.set(x, "cameraManufacturer", value.asInstanceOf[js.Any])
     

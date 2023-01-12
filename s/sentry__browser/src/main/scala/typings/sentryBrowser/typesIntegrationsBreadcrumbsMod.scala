@@ -101,7 +101,8 @@ object typesIntegrationsBreadcrumbsMod {
       __obj.asInstanceOf[BreadcrumbsOptions]
     }
     
-    extension [Self <: BreadcrumbsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbsOptions] (val x: Self) extends AnyVal {
       
       inline def setConsole(value: Boolean): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       

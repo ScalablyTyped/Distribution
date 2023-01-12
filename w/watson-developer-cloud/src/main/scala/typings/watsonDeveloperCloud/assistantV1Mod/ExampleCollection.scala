@@ -20,7 +20,8 @@ object ExampleCollection {
     __obj.asInstanceOf[ExampleCollection]
   }
   
-  extension [Self <: ExampleCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExampleCollection] (val x: Self) extends AnyVal {
     
     inline def setExamples(value: js.Array[Example]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
     

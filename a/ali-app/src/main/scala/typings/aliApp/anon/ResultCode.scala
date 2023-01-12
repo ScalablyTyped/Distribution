@@ -24,7 +24,8 @@ object ResultCode {
     __obj.asInstanceOf[ResultCode]
   }
   
-  extension [Self <: ResultCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultCode] (val x: Self) extends AnyVal {
     
     inline def setResultCode(value: String): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
   }

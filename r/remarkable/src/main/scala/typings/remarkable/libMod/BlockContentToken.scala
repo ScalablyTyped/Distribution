@@ -29,7 +29,8 @@ object BlockContentToken {
     __obj.asInstanceOf[BlockContentToken]
   }
   
-  extension [Self <: BlockContentToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockContentToken] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[Token]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

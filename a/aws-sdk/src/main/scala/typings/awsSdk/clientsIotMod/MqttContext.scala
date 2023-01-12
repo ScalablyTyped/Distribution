@@ -28,7 +28,8 @@ object MqttContext {
     __obj.asInstanceOf[MqttContext]
   }
   
-  extension [Self <: MqttContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MqttContext] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: MqttClientId): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     

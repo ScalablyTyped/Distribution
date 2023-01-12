@@ -186,7 +186,8 @@ object RuleSetRule {
     __obj.asInstanceOf[RuleSetRule]
   }
   
-  extension [Self <: RuleSetRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleSetRule] (val x: Self) extends AnyVal {
     
     inline def setAssert(value: StringDictionary[RuleSetConditionOrConditions]): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     

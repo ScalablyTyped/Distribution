@@ -152,7 +152,8 @@ object OGCFeatureLayerProperties {
     __obj.asInstanceOf[OGCFeatureLayerProperties]
   }
   
-  extension [Self <: OGCFeatureLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OGCFeatureLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setCollectionId(value: String): Self = StObject.set(x, "collectionId", value.asInstanceOf[js.Any])
     

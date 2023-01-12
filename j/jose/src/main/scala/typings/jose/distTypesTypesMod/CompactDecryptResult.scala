@@ -19,7 +19,8 @@ object CompactDecryptResult {
     __obj.asInstanceOf[CompactDecryptResult]
   }
   
-  extension [Self <: CompactDecryptResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompactDecryptResult] (val x: Self) extends AnyVal {
     
     inline def setPlaintext(value: js.typedarray.Uint8Array): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
     

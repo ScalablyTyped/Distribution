@@ -25,7 +25,8 @@ object ExtensionAttributeDefinition {
     __obj.asInstanceOf[ExtensionAttributeDefinition]
   }
   
-  extension [Self <: ExtensionAttributeDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionAttributeDefinition] (val x: Self) extends AnyVal {
     
     inline def setIsReference(value: Boolean): Self = StObject.set(x, "isReference", value.asInstanceOf[js.Any])
     

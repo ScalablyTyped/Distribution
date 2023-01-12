@@ -55,7 +55,8 @@ object ClientConfig {
     __obj.asInstanceOf[ClientConfig]
   }
   
-  extension [Self <: ClientConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientConfig] (val x: Self) extends AnyVal {
     
     inline def setAutoSubscribe(value: Boolean): Self = StObject.set(x, "autoSubscribe", value.asInstanceOf[js.Any])
     

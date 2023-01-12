@@ -17,7 +17,8 @@ object TransportSingleOptions {
     __obj.asInstanceOf[TransportSingleOptions[TransportOptions]]
   }
   
-  extension [Self <: TransportSingleOptions[?], TransportOptions](x: Self & TransportSingleOptions[TransportOptions]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransportSingleOptions[?], TransportOptions] (val x: Self & TransportSingleOptions[TransportOptions]) extends AnyVal {
     
     inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }

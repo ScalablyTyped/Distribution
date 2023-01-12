@@ -31,7 +31,8 @@ object LocalVar {
     __obj.asInstanceOf[LocalVar]
   }
   
-  extension [Self <: LocalVar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalVar] (val x: Self) extends AnyVal {
     
     inline def setAccessDotLocalVar_typekey(value: LocalVar): Self = StObject.set(x, "Access.LocalVar_typekey", value.asInstanceOf[js.Any])
     

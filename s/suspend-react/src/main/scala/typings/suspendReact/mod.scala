@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setEqual(value: (/* a */ Any, /* b */ Any) => Boolean): Self = StObject.set(x, "equal", js.Any.fromFunction2(value))
       

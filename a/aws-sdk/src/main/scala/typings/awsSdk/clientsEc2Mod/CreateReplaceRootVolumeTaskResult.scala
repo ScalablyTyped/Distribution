@@ -18,7 +18,8 @@ object CreateReplaceRootVolumeTaskResult {
     __obj.asInstanceOf[CreateReplaceRootVolumeTaskResult]
   }
   
-  extension [Self <: CreateReplaceRootVolumeTaskResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateReplaceRootVolumeTaskResult] (val x: Self) extends AnyVal {
     
     inline def setReplaceRootVolumeTask(value: ReplaceRootVolumeTask): Self = StObject.set(x, "ReplaceRootVolumeTask", value.asInstanceOf[js.Any])
     

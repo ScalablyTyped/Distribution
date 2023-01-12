@@ -57,7 +57,8 @@ object SignOptionsarmorfalsedetaArmor {
     __obj.asInstanceOf[SignOptionsarmorfalsedetaArmor]
   }
   
-  extension [Self <: SignOptionsarmorfalsedetaArmor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignOptionsarmorfalsedetaArmor] (val x: Self) extends AnyVal {
     
     inline def setArmor(value: Boolean): Self = StObject.set(x, "armor", value.asInstanceOf[js.Any])
     

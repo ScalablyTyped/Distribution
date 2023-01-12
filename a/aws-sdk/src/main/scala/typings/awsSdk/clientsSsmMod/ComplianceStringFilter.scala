@@ -28,7 +28,8 @@ object ComplianceStringFilter {
     __obj.asInstanceOf[ComplianceStringFilter]
   }
   
-  extension [Self <: ComplianceStringFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComplianceStringFilter] (val x: Self) extends AnyVal {
     
     inline def setKey(value: ComplianceStringFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

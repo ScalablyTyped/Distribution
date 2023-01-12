@@ -93,7 +93,8 @@ object AxiosRequestConfig {
     __obj.asInstanceOf[AxiosRequestConfig[D]]
   }
   
-  extension [Self <: AxiosRequestConfig[?], D](x: Self & AxiosRequestConfig[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxiosRequestConfig[?], D] (val x: Self & AxiosRequestConfig[D]) extends AnyVal {
     
     inline def setAdapter(value: /* config */ AxiosRequestConfig[Any] => js.Promise[AxiosResponse[Any, Any]]): Self = StObject.set(x, "adapter", js.Any.fromFunction1(value))
     

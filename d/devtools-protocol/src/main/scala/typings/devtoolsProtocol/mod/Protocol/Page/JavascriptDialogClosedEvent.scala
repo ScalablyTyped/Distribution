@@ -23,7 +23,8 @@ object JavascriptDialogClosedEvent {
     __obj.asInstanceOf[JavascriptDialogClosedEvent]
   }
   
-  extension [Self <: JavascriptDialogClosedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JavascriptDialogClosedEvent] (val x: Self) extends AnyVal {
     
     inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

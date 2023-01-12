@@ -35,7 +35,8 @@ object RulesMap {
     __obj.asInstanceOf[RulesMap]
   }
   
-  extension [Self <: RulesMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RulesMap] (val x: Self) extends AnyVal {
     
     inline def setFillRule(value: (Any, Any) => Any): Self = StObject.set(x, "FillRule", js.Any.fromFunction2(value))
     

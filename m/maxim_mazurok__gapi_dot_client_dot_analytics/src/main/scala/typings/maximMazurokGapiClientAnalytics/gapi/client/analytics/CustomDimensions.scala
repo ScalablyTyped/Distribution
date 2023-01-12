@@ -40,7 +40,8 @@ object CustomDimensions {
     __obj.asInstanceOf[CustomDimensions]
   }
   
-  extension [Self <: CustomDimensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomDimensions] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[CustomDimension]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object AssignTapePoolOutput {
     __obj.asInstanceOf[AssignTapePoolOutput]
   }
   
-  extension [Self <: AssignTapePoolOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignTapePoolOutput] (val x: Self) extends AnyVal {
     
     inline def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
     

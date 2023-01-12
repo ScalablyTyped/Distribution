@@ -42,7 +42,8 @@ object CreateRecurringPayInMIT {
     __obj.asInstanceOf[CreateRecurringPayInMIT]
   }
   
-  extension [Self <: CreateRecurringPayInMIT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRecurringPayInMIT] (val x: Self) extends AnyVal {
     
     inline def setDebitedFunds(value: MoneyData): Self = StObject.set(x, "DebitedFunds", value.asInstanceOf[js.Any])
     

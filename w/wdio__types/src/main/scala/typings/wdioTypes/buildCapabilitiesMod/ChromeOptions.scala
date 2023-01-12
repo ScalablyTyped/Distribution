@@ -92,7 +92,8 @@ object ChromeOptions {
     __obj.asInstanceOf[ChromeOptions]
   }
   
-  extension [Self <: ChromeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChromeOptions] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

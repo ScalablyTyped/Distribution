@@ -38,7 +38,8 @@ object VgLayout {
     __obj.asInstanceOf[VgLayout]
   }
   
-  extension [Self <: VgLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VgLayout] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: LayoutAlign | RowCol[LayoutAlign]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

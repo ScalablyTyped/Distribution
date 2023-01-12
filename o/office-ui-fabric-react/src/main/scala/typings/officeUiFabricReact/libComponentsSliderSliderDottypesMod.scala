@@ -33,7 +33,8 @@ object libComponentsSliderSliderDottypesMod {
       __obj.asInstanceOf[ISlider]
     }
     
-    extension [Self <: ISlider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISlider] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       
@@ -197,7 +198,8 @@ object libComponentsSliderSliderDottypesMod {
       __obj.asInstanceOf[ISliderProps]
     }
     
-    extension [Self <: ISliderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISliderProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
@@ -327,7 +329,8 @@ object libComponentsSliderSliderDottypesMod {
       __obj.asInstanceOf[ISliderStyleProps]
     }
     
-    extension [Self <: ISliderStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISliderStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -425,7 +428,8 @@ object libComponentsSliderSliderDottypesMod {
       __obj.asInstanceOf[ISliderStyles]
     }
     
-    extension [Self <: ISliderStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISliderStyles] (val x: Self) extends AnyVal {
       
       inline def setActiveSection(value: IStyle): Self = StObject.set(x, "activeSection", value.asInstanceOf[js.Any])
       

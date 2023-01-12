@@ -62,7 +62,8 @@ object ArrayReplaceAt {
     __obj.asInstanceOf[ArrayReplaceAt]
   }
   
-  extension [Self <: ArrayReplaceAt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayReplaceAt] (val x: Self) extends AnyVal {
     
     inline def setArrayReplaceAt(value: scala.Any): Self = StObject.set(x, "arrayReplaceAt", value.asInstanceOf[js.Any])
     

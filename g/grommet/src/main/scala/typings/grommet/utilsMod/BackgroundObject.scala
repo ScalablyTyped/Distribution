@@ -41,7 +41,8 @@ object BackgroundObject {
     __obj.asInstanceOf[BackgroundObject]
   }
   
-  extension [Self <: BackgroundObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundObject] (val x: Self) extends AnyVal {
     
     inline def setClip(value: text | String): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     

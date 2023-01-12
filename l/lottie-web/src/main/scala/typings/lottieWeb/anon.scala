@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Canvas]
     }
     
-    extension [Self <: Canvas](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Canvas] (val x: Self) extends AnyVal {
       
       inline def setCanvas(value: CanvasRendererConfig): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object anon {
       __obj.asInstanceOf[Play]
     }
     
-    extension [Self <: Play](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Play] (val x: Self) extends AnyVal {
       
       inline def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
       

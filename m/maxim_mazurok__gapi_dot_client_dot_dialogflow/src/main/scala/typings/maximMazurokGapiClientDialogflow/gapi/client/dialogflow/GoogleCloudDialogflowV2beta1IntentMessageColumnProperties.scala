@@ -19,7 +19,8 @@ object GoogleCloudDialogflowV2beta1IntentMessageColumnProperties {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageColumnProperties]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageColumnProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageColumnProperties] (val x: Self) extends AnyVal {
     
     inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     

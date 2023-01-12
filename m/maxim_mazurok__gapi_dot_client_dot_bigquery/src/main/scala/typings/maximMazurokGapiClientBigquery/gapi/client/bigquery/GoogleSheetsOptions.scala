@@ -25,7 +25,8 @@ object GoogleSheetsOptions {
     __obj.asInstanceOf[GoogleSheetsOptions]
   }
   
-  extension [Self <: GoogleSheetsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleSheetsOptions] (val x: Self) extends AnyVal {
     
     inline def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

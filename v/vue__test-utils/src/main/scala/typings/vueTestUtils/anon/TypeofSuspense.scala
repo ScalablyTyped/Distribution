@@ -16,7 +16,8 @@ object TypeofSuspense {
     __obj.asInstanceOf[TypeofSuspense]
   }
   
-  extension [Self <: TypeofSuspense](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSuspense] (val x: Self) extends AnyVal {
     
     inline def set__isSuspense(value: `true`): Self = StObject.set(x, "__isSuspense", value.asInstanceOf[js.Any])
   }

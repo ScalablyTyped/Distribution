@@ -38,7 +38,8 @@ object dxSankeyLink {
     __obj.asInstanceOf[dxSankeyLink]
   }
   
-  extension [Self <: dxSankeyLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxSankeyLink] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: dxSankeyConnectionInfoObject): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

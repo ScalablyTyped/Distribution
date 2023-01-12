@@ -18,7 +18,8 @@ object DeleteBackupVaultInput {
     __obj.asInstanceOf[DeleteBackupVaultInput]
   }
   
-  extension [Self <: DeleteBackupVaultInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteBackupVaultInput] (val x: Self) extends AnyVal {
     
     inline def setBackupVaultName(value: String): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
   }

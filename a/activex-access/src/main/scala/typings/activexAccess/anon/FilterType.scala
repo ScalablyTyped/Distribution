@@ -17,7 +17,8 @@ object FilterType {
     __obj.asInstanceOf[FilterType]
   }
   
-  extension [Self <: FilterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterType] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Double): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     

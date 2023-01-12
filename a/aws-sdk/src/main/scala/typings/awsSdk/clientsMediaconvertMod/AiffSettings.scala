@@ -28,7 +28,8 @@ object AiffSettings {
     __obj.asInstanceOf[AiffSettings]
   }
   
-  extension [Self <: AiffSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AiffSettings] (val x: Self) extends AnyVal {
     
     inline def setBitDepth(value: integerMin16Max24): Self = StObject.set(x, "BitDepth", value.asInstanceOf[js.Any])
     

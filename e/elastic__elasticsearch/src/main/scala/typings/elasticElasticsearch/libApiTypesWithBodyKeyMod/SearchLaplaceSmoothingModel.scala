@@ -15,7 +15,8 @@ object SearchLaplaceSmoothingModel {
     __obj.asInstanceOf[SearchLaplaceSmoothingModel]
   }
   
-  extension [Self <: SearchLaplaceSmoothingModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchLaplaceSmoothingModel] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
   }

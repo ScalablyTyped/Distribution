@@ -19,7 +19,8 @@ object ReturnTypeRequestDatabaseResponse {
     __obj.asInstanceOf[ReturnTypeRequestDatabaseResponse]
   }
   
-  extension [Self <: ReturnTypeRequestDatabaseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeRequestDatabaseResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[RequestDatabaseRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

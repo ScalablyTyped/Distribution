@@ -22,7 +22,8 @@ object DnsSettings {
     __obj.asInstanceOf[DnsSettings]
   }
   
-  extension [Self <: DnsSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DnsSettings] (val x: Self) extends AnyVal {
     
     inline def setCustomDns(value: CustomDns): Self = StObject.set(x, "customDns", value.asInstanceOf[js.Any])
     

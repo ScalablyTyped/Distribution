@@ -115,7 +115,8 @@ object ConnectorMetadata {
     __obj.asInstanceOf[ConnectorMetadata]
   }
   
-  extension [Self <: ConnectorMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorMetadata] (val x: Self) extends AnyVal {
     
     inline def setAmplitude(value: AmplitudeMetadata): Self = StObject.set(x, "Amplitude", value.asInstanceOf[js.Any])
     

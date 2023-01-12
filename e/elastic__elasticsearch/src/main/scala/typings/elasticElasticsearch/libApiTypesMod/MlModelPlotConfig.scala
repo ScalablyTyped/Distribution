@@ -19,7 +19,8 @@ object MlModelPlotConfig {
     __obj.asInstanceOf[MlModelPlotConfig]
   }
   
-  extension [Self <: MlModelPlotConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlModelPlotConfig] (val x: Self) extends AnyVal {
     
     inline def setAnnotations_enabled(value: Boolean): Self = StObject.set(x, "annotations_enabled", value.asInstanceOf[js.Any])
     

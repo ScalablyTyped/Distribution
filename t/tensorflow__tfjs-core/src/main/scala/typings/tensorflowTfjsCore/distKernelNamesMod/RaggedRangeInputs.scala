@@ -20,7 +20,8 @@ object RaggedRangeInputs {
     __obj.asInstanceOf[RaggedRangeInputs]
   }
   
-  extension [Self <: RaggedRangeInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaggedRangeInputs] (val x: Self) extends AnyVal {
     
     inline def setDeltas(value: scala.Any): Self = StObject.set(x, "deltas", value.asInstanceOf[js.Any])
     

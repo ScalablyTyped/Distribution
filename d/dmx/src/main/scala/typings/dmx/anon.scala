@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[Colorpretsets]
     }
     
-    extension [Self <: Colorpretsets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Colorpretsets] (val x: Self) extends AnyVal {
       
       inline def `setColor-pretsets`(value: OptionRange): Self = StObject.set(x, "color-pretsets", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object anon {
       __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

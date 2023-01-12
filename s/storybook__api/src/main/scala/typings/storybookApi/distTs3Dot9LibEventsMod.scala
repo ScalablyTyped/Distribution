@@ -41,7 +41,8 @@ object distTs3Dot9LibEventsMod {
       __obj.asInstanceOf[Meta]
     }
     
-    extension [Self <: Meta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
       
       inline def setRef(value: ComposedRef): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       

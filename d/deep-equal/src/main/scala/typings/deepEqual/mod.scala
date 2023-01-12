@@ -24,7 +24,8 @@ object mod {
       __obj.asInstanceOf[DeepEqualOptions]
     }
     
-    extension [Self <: DeepEqualOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepEqualOptions] (val x: Self) extends AnyVal {
       
       inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     }

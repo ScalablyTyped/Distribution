@@ -26,7 +26,8 @@ object CustomRankingInfo {
     __obj.asInstanceOf[CustomRankingInfo]
   }
   
-  extension [Self <: CustomRankingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomRankingInfo] (val x: Self) extends AnyVal {
     
     inline def setImportanceLevel(value: String): Self = StObject.set(x, "importanceLevel", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object ListLogEntriesRequest {
     __obj.asInstanceOf[ListLogEntriesRequest]
   }
   
-  extension [Self <: ListLogEntriesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLogEntriesRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

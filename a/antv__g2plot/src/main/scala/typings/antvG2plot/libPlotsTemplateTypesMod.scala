@@ -25,7 +25,8 @@ object libPlotsTemplateTypesMod {
       __obj.asInstanceOf[TemplateOptions]
     }
     
-    extension [Self <: TemplateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateOptions] (val x: Self) extends AnyVal {
       
       inline def setXField(value: String): Self = StObject.set(x, "xField", value.asInstanceOf[js.Any])
       

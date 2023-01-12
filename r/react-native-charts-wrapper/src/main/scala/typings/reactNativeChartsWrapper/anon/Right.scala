@@ -18,7 +18,8 @@ object Right {
     __obj.asInstanceOf[Right]
   }
   
-  extension [Self <: Right](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Right] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: yAxis): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

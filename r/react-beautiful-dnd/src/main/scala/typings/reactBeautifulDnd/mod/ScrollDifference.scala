@@ -20,7 +20,8 @@ object ScrollDifference {
     __obj.asInstanceOf[ScrollDifference]
   }
   
-  extension [Self <: ScrollDifference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollDifference] (val x: Self) extends AnyVal {
     
     inline def setDisplacement(value: Position): Self = StObject.set(x, "displacement", value.asInstanceOf[js.Any])
     

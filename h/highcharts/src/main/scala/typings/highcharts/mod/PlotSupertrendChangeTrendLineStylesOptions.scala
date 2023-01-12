@@ -29,7 +29,8 @@ object PlotSupertrendChangeTrendLineStylesOptions {
     __obj.asInstanceOf[PlotSupertrendChangeTrendLineStylesOptions]
   }
   
-  extension [Self <: PlotSupertrendChangeTrendLineStylesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSupertrendChangeTrendLineStylesOptions] (val x: Self) extends AnyVal {
     
     inline def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     

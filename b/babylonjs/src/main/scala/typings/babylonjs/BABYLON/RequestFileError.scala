@@ -17,7 +17,8 @@ object RequestFileError {
     __obj.asInstanceOf[RequestFileError]
   }
   
-  extension [Self <: RequestFileError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestFileError] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: WebRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }

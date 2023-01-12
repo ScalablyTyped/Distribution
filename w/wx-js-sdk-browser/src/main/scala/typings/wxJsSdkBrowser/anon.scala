@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[CardList]
     }
     
-    extension [Self <: CardList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardList] (val x: Self) extends AnyVal {
       
       inline def setCardList(value: js.Array[Card]): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[CheckResult]
     }
     
-    extension [Self <: CheckResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckResult] (val x: Self) extends AnyVal {
       
       inline def setCheckResult(value: StringDictionary[Boolean]): Self = StObject.set(x, "checkResult", value.asInstanceOf[js.Any])
       
@@ -59,7 +61,8 @@ object anon {
       __obj.asInstanceOf[LocalData]
     }
     
-    extension [Self <: LocalData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalData] (val x: Self) extends AnyVal {
       
       inline def setLocalData(value: String): Self = StObject.set(x, "localData", value.asInstanceOf[js.Any])
     }
@@ -76,7 +79,8 @@ object anon {
       __obj.asInstanceOf[LocalId]
     }
     
-    extension [Self <: LocalId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalId] (val x: Self) extends AnyVal {
       
       inline def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
     }
@@ -93,7 +97,8 @@ object anon {
       __obj.asInstanceOf[LocalIds]
     }
     
-    extension [Self <: LocalIds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalIds] (val x: Self) extends AnyVal {
       
       inline def setLocalIds(value: js.Array[String]): Self = StObject.set(x, "localIds", value.asInstanceOf[js.Any])
       
@@ -112,7 +117,8 @@ object anon {
       __obj.asInstanceOf[Msg]
     }
     
-    extension [Self <: Msg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Msg] (val x: Self) extends AnyVal {
       
       inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     }
@@ -129,7 +135,8 @@ object anon {
       __obj.asInstanceOf[NetworkType]
     }
     
-    extension [Self <: NetworkType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkType] (val x: Self) extends AnyVal {
       
       inline def setNetworkType(value: String): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
     }
@@ -146,7 +153,8 @@ object anon {
       __obj.asInstanceOf[ResultStr]
     }
     
-    extension [Self <: ResultStr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultStr] (val x: Self) extends AnyVal {
       
       inline def setResultStr(value: String): Self = StObject.set(x, "resultStr", value.asInstanceOf[js.Any])
     }

@@ -59,7 +59,8 @@ object Vector3 {
     __obj.asInstanceOf[Vector3]
   }
   
-  extension [Self <: Vector3](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Vector3] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: Vector3 => Vector3): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

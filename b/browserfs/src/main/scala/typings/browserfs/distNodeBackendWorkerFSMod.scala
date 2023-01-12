@@ -229,7 +229,8 @@ object distNodeBackendWorkerFSMod {
       __obj.asInstanceOf[WorkerFSOptions]
     }
     
-    extension [Self <: WorkerFSOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerFSOptions] (val x: Self) extends AnyVal {
       
       inline def setWorker(value: Worker): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
     }

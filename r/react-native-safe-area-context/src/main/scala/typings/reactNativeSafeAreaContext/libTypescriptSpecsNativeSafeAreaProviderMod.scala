@@ -32,7 +32,8 @@ object libTypescriptSpecsNativeSafeAreaProviderMod extends Shortcut {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setFrame(value: ReadonlyxDoubleyDoublewid): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object libTypescriptSpecsNativeSafeAreaProviderMod extends Shortcut {
       __obj.asInstanceOf[NativeProps]
     }
     
-    extension [Self <: NativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeProps] (val x: Self) extends AnyVal {
       
       inline def setOnInsetsChange(value: /* event */ NativeSyntheticEvent[Event] => Unit | js.Promise[Unit]): Self = StObject.set(x, "onInsetsChange", js.Any.fromFunction1(value))
       

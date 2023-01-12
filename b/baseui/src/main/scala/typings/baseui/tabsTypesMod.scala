@@ -39,7 +39,8 @@ object tabsTypesMod {
       __obj.asInstanceOf[SharedStylePropsArg]
     }
     
-    extension [Self <: SharedStylePropsArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedStylePropsArg] (val x: Self) extends AnyVal {
       
       inline def set$active(value: Boolean): Self = StObject.set(x, "$active", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object tabsTypesMod {
       __obj.asInstanceOf[StatefulTabsProps]
     }
     
-    extension [Self <: StatefulTabsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulTabsProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ReactElement] | ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -146,7 +148,8 @@ object tabsTypesMod {
       __obj.asInstanceOf[StatefulTabsState]
     }
     
-    extension [Self <: StatefulTabsState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulTabsState] (val x: Self) extends AnyVal {
       
       inline def setActiveKey(value: Key): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
     }
@@ -163,7 +166,8 @@ object tabsTypesMod {
       __obj.asInstanceOf[TabOverrides]
     }
     
-    extension [Self <: TabOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabOverrides] (val x: Self) extends AnyVal {
       
       inline def setTab(value: Override[Any]): Self = StObject.set(x, "Tab", value.asInstanceOf[js.Any])
       
@@ -204,7 +208,8 @@ object tabsTypesMod {
       __obj.asInstanceOf[TabPanelProps]
     }
     
-    extension [Self <: TabPanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabPanelProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -260,7 +265,8 @@ object tabsTypesMod {
       __obj.asInstanceOf[TabProps]
     }
     
-    extension [Self <: TabProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabProps] (val x: Self) extends AnyVal {
       
       inline def set$orientation(value: horizontal | vertical): Self = StObject.set(x, "$orientation", value.asInstanceOf[js.Any])
       
@@ -289,7 +295,8 @@ object tabsTypesMod {
       __obj.asInstanceOf[TabsOverrides]
     }
     
-    extension [Self <: TabsOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsOverrides] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: Override[Any]): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
@@ -338,7 +345,8 @@ object tabsTypesMod {
       __obj.asInstanceOf[TabsProps]
     }
     
-    extension [Self <: TabsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsProps] (val x: Self) extends AnyVal {
       
       inline def setActiveKey(value: Key): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       

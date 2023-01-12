@@ -26,7 +26,8 @@ object Fullhd {
     __obj.asInstanceOf[Fullhd]
   }
   
-  extension [Self <: Fullhd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fullhd] (val x: Self) extends AnyVal {
     
     inline def setDesktop(value: ColumnBreakpointOptions): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
     

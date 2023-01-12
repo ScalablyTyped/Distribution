@@ -23,7 +23,8 @@ object XssMatchSetUpdate {
     __obj.asInstanceOf[XssMatchSetUpdate]
   }
   
-  extension [Self <: XssMatchSetUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XssMatchSetUpdate] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

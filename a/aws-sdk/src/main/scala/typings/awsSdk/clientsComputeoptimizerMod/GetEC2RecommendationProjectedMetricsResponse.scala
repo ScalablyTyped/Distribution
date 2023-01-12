@@ -18,7 +18,8 @@ object GetEC2RecommendationProjectedMetricsResponse {
     __obj.asInstanceOf[GetEC2RecommendationProjectedMetricsResponse]
   }
   
-  extension [Self <: GetEC2RecommendationProjectedMetricsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEC2RecommendationProjectedMetricsResponse] (val x: Self) extends AnyVal {
     
     inline def setRecommendedOptionProjectedMetrics(value: RecommendedOptionProjectedMetrics): Self = StObject.set(x, "recommendedOptionProjectedMetrics", value.asInstanceOf[js.Any])
     

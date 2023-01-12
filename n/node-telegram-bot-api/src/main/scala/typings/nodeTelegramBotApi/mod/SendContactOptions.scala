@@ -19,7 +19,8 @@ object SendContactOptions {
     __obj.asInstanceOf[SendContactOptions]
   }
   
-  extension [Self <: SendContactOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendContactOptions] (val x: Self) extends AnyVal {
     
     inline def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
     

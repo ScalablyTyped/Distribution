@@ -49,7 +49,8 @@ object dxChartSeriesTypesFullStackedSplineAreaSeries {
     __obj.asInstanceOf[dxChartSeriesTypesFullStackedSplineAreaSeries]
   }
   
-  extension [Self <: dxChartSeriesTypesFullStackedSplineAreaSeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartSeriesTypesFullStackedSplineAreaSeries] (val x: Self) extends AnyVal {
     
     inline def setAggregation(value: dxChartSeriesTypesFullStackedSplineAreaSeriesAggregation): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
     

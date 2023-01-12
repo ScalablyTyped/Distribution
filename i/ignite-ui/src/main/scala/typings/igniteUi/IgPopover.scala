@@ -181,7 +181,8 @@ object IgPopover {
     __obj.asInstanceOf[IgPopover]
   }
   
-  extension [Self <: IgPopover](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgPopover] (val x: Self) extends AnyVal {
     
     inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     

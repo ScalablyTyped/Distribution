@@ -103,7 +103,8 @@ object distSrcGherkinLineMod {
       __obj.asInstanceOf[GherkinLine]
     }
     
-    extension [Self <: GherkinLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GherkinLine] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object Map {
     __obj.asInstanceOf[Map[K, V]]
   }
   
-  extension [Self <: Map[?, ?], K, V](x: Self & (Map[K, V])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Map[?, ?], K, V] (val x: Self & (Map[K, V])) extends AnyVal {
     
     inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }

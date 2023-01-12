@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Composite]
     }
     
-    extension [Self <: Composite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Composite] (val x: Self) extends AnyVal {
       
       inline def setComposite(value: PartialJSONValue): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setContext(value: js.Array[IContextMenuItem]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -79,7 +81,8 @@ object anon {
       __obj.asInstanceOf[User]
     }
     
-    extension [Self <: User](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
       
       inline def setComposite(value: ReadonlyPartialJSONValue): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
       
@@ -109,7 +112,8 @@ object anon {
       __obj.asInstanceOf[phaseinPhaseTransform]
     }
     
-    extension [Self <: phaseinPhaseTransform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: phaseinPhaseTransform] (val x: Self) extends AnyVal {
       
       inline def setCompose(value: /* plugin */ IPlugin => IPlugin): Self = StObject.set(x, "compose", js.Any.fromFunction1(value))
       

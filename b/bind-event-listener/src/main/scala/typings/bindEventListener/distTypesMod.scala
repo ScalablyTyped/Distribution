@@ -25,7 +25,8 @@ object distTypesMod {
       __obj.asInstanceOf[Binding[Target, EventName]]
     }
     
-    extension [Self <: Binding[?, ?], Target /* <: EventTarget */, EventName /* <: String */](x: Self & (Binding[Target, EventName])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Binding[?, ?], Target /* <: EventTarget */, EventName /* <: String */] (val x: Self & (Binding[Target, EventName])) extends AnyVal {
       
       inline def setListener(value: Listener[Target, EventName]): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object distTypesMod {
       __obj.asInstanceOf[ListenerObject[TEvent]]
     }
     
-    extension [Self <: ListenerObject[?], TEvent /* <: Event */](x: Self & ListenerObject[TEvent]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListenerObject[?], TEvent /* <: Event */] (val x: Self & ListenerObject[TEvent]) extends AnyVal {
       
       inline def setHandleEvent(value: TEvent => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
     }

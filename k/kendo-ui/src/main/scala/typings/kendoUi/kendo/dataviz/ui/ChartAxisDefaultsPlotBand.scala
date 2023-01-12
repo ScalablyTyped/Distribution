@@ -21,7 +21,8 @@ object ChartAxisDefaultsPlotBand {
     __obj.asInstanceOf[ChartAxisDefaultsPlotBand]
   }
   
-  extension [Self <: ChartAxisDefaultsPlotBand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartAxisDefaultsPlotBand] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -145,7 +145,8 @@ object mod {
       __obj.asInstanceOf[RedisAdapterOptions]
     }
     
-    extension [Self <: RedisAdapterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisAdapterOptions] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

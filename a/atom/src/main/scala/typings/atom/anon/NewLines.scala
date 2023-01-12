@@ -21,7 +21,8 @@ object NewLines {
     __obj.asInstanceOf[NewLines]
   }
   
-  extension [Self <: NewLines](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewLines] (val x: Self) extends AnyVal {
     
     inline def setNewLines(value: Double): Self = StObject.set(x, "newLines", value.asInstanceOf[js.Any])
     

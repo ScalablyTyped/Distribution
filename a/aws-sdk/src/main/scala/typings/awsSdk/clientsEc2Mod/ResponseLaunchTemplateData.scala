@@ -168,7 +168,8 @@ object ResponseLaunchTemplateData {
     __obj.asInstanceOf[ResponseLaunchTemplateData]
   }
   
-  extension [Self <: ResponseLaunchTemplateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseLaunchTemplateData] (val x: Self) extends AnyVal {
     
     inline def setBlockDeviceMappings(value: LaunchTemplateBlockDeviceMappingList): Self = StObject.set(x, "BlockDeviceMappings", value.asInstanceOf[js.Any])
     

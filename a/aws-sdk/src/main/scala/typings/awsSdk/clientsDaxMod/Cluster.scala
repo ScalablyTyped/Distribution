@@ -103,7 +103,8 @@ object Cluster {
     __obj.asInstanceOf[Cluster]
   }
   
-  extension [Self <: Cluster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cluster] (val x: Self) extends AnyVal {
     
     inline def setActiveNodes(value: IntegerOptional): Self = StObject.set(x, "ActiveNodes", value.asInstanceOf[js.Any])
     

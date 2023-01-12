@@ -23,7 +23,8 @@ object AXProperty {
     __obj.asInstanceOf[AXProperty]
   }
   
-  extension [Self <: AXProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AXProperty] (val x: Self) extends AnyVal {
     
     inline def setName(value: AXPropertyName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

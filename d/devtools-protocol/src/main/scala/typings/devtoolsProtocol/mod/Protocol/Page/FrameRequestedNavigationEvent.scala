@@ -38,7 +38,8 @@ object FrameRequestedNavigationEvent {
     __obj.asInstanceOf[FrameRequestedNavigationEvent]
   }
   
-  extension [Self <: FrameRequestedNavigationEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameRequestedNavigationEvent] (val x: Self) extends AnyVal {
     
     inline def setDisposition(value: ClientNavigationDisposition): Self = StObject.set(x, "disposition", value.asInstanceOf[js.Any])
     

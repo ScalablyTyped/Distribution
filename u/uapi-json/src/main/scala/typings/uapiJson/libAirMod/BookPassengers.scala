@@ -46,7 +46,8 @@ object BookPassengers {
     __obj.asInstanceOf[BookPassengers]
   }
   
-  extension [Self <: BookPassengers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BookPassengers] (val x: Self) extends AnyVal {
     
     inline def setAgeCategory(value: String): Self = StObject.set(x, "ageCategory", value.asInstanceOf[js.Any])
     

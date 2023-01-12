@@ -23,7 +23,8 @@ object NotificationEventFieldOperator {
     __obj.asInstanceOf[NotificationEventFieldOperator]
   }
   
-  extension [Self <: NotificationEventFieldOperator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationEventFieldOperator] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

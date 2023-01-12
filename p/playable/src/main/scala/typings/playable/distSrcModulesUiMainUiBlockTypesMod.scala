@@ -38,7 +38,8 @@ object distSrcModulesUiMainUiBlockTypesMod {
       __obj.asInstanceOf[IMainUIBlock]
     }
     
-    extension [Self <: IMainUIBlock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMainUIBlock] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -71,7 +72,8 @@ object distSrcModulesUiMainUiBlockTypesMod {
       __obj.asInstanceOf[IMainUIBlockAPI]
     }
     
-    extension [Self <: IMainUIBlockAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMainUIBlockAPI] (val x: Self) extends AnyVal {
       
       inline def setHideMainUI(value: () => Unit): Self = StObject.set(x, "hideMainUI", js.Any.fromFunction0(value))
       
@@ -98,7 +100,8 @@ object distSrcModulesUiMainUiBlockTypesMod {
       __obj.asInstanceOf[IMainUIBlockViewConfig]
     }
     
-    extension [Self <: IMainUIBlockViewConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMainUIBlockViewConfig] (val x: Self) extends AnyVal {
       
       inline def setElements(value: IMainUIBlockViewElements): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     }
@@ -119,7 +122,8 @@ object distSrcModulesUiMainUiBlockTypesMod {
       __obj.asInstanceOf[IMainUIBlockViewElements]
     }
     
-    extension [Self <: IMainUIBlockViewElements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMainUIBlockViewElements] (val x: Self) extends AnyVal {
       
       inline def setBottomBlock(value: HTMLElement): Self = StObject.set(x, "bottomBlock", value.asInstanceOf[js.Any])
       
@@ -144,7 +148,8 @@ object distSrcModulesUiMainUiBlockTypesMod {
       __obj.asInstanceOf[IMainUIBlockViewStyles]
     }
     
-    extension [Self <: IMainUIBlockViewStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMainUIBlockViewStyles] (val x: Self) extends AnyVal {
       
       inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       

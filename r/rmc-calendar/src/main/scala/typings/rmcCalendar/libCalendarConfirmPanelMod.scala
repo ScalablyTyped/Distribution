@@ -60,7 +60,8 @@ object libCalendarConfirmPanelMod {
       __obj.asInstanceOf[ConfirmPanelPropsType]
     }
     
-    extension [Self <: ConfirmPanelPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfirmPanelPropsType] (val x: Self) extends AnyVal {
       
       inline def setDisableBtn(value: Boolean): Self = StObject.set(x, "disableBtn", value.asInstanceOf[js.Any])
       

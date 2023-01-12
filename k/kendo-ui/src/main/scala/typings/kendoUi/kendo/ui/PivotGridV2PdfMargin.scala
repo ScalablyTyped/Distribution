@@ -21,7 +21,8 @@ object PivotGridV2PdfMargin {
     __obj.asInstanceOf[PivotGridV2PdfMargin]
   }
   
-  extension [Self <: PivotGridV2PdfMargin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotGridV2PdfMargin] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double | String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

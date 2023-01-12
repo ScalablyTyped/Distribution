@@ -43,7 +43,8 @@ object CloudStorageProvider {
     __obj.asInstanceOf[CloudStorageProvider]
   }
   
-  extension [Self <: CloudStorageProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudStorageProvider] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationUrl(value: String): Self = StObject.set(x, "authenticationUrl", value.asInstanceOf[js.Any])
     

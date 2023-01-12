@@ -21,7 +21,8 @@ object PrincipalResourceMembershipsScope {
     __obj.asInstanceOf[PrincipalResourceMembershipsScope]
   }
   
-  extension [Self <: PrincipalResourceMembershipsScope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrincipalResourceMembershipsScope] (val x: Self) extends AnyVal {
     
     inline def setPrincipalScopes(value: NullableOption[js.Array[AccessReviewScope]]): Self = StObject.set(x, "principalScopes", value.asInstanceOf[js.Any])
     

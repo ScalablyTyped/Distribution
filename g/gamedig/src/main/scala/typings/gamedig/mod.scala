@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[Player]
     }
     
-    extension [Self <: Player](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Player] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object mod {
       __obj.asInstanceOf[QueryOptions]
     }
     
-    extension [Self <: QueryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
       
       inline def setAttemptTimeout(value: Double): Self = StObject.set(x, "attemptTimeout", value.asInstanceOf[js.Any])
       
@@ -182,7 +184,8 @@ object mod {
       __obj.asInstanceOf[QueryResult]
     }
     
-    extension [Self <: QueryResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryResult] (val x: Self) extends AnyVal {
       
       inline def setBots(value: js.Array[Player]): Self = StObject.set(x, "bots", value.asInstanceOf[js.Any])
       

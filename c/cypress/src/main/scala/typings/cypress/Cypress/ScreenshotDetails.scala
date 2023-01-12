@@ -50,7 +50,8 @@ object ScreenshotDetails {
     __obj.asInstanceOf[ScreenshotDetails]
   }
   
-  extension [Self <: ScreenshotDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScreenshotDetails] (val x: Self) extends AnyVal {
     
     inline def setBlackout(value: js.Array[String]): Self = StObject.set(x, "blackout", value.asInstanceOf[js.Any])
     

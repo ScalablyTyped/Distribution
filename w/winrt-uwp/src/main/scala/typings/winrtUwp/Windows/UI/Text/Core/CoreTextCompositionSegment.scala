@@ -20,7 +20,8 @@ object CoreTextCompositionSegment {
     __obj.asInstanceOf[CoreTextCompositionSegment]
   }
   
-  extension [Self <: CoreTextCompositionSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreTextCompositionSegment] (val x: Self) extends AnyVal {
     
     inline def setPreconversionString(value: String): Self = StObject.set(x, "preconversionString", value.asInstanceOf[js.Any])
     

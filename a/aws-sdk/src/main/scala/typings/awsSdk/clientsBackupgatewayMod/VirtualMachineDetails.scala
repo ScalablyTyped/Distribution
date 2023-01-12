@@ -43,7 +43,8 @@ object VirtualMachineDetails {
     __obj.asInstanceOf[VirtualMachineDetails]
   }
   
-  extension [Self <: VirtualMachineDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualMachineDetails] (val x: Self) extends AnyVal {
     
     inline def setHostName(value: Name): Self = StObject.set(x, "HostName", value.asInstanceOf[js.Any])
     

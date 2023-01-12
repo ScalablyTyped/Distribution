@@ -38,7 +38,8 @@ object BulkStats {
     __obj.asInstanceOf[BulkStats]
   }
   
-  extension [Self <: BulkStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkStats] (val x: Self) extends AnyVal {
     
     inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
     

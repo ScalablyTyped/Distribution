@@ -28,7 +28,8 @@ object PerformanceInsightsMetricQuery {
     __obj.asInstanceOf[PerformanceInsightsMetricQuery]
   }
   
-  extension [Self <: PerformanceInsightsMetricQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceInsightsMetricQuery] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: PerformanceInsightsMetricFilterMap): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

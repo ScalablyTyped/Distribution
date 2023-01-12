@@ -75,7 +75,8 @@ object ModeDetails {
     __obj.asInstanceOf[ModeDetails]
   }
   
-  extension [Self <: ModeDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModeDetails] (val x: Self) extends AnyVal {
     
     inline def setBegin(value: js.RegExp | String | (js.Array[js.RegExp | String])): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
     

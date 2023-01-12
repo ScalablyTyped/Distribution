@@ -25,7 +25,8 @@ object FhirConfig {
     __obj.asInstanceOf[FhirConfig]
   }
   
-  extension [Self <: FhirConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FhirConfig] (val x: Self) extends AnyVal {
     
     inline def setDefaultKeepExtensions(value: Boolean): Self = StObject.set(x, "defaultKeepExtensions", value.asInstanceOf[js.Any])
     

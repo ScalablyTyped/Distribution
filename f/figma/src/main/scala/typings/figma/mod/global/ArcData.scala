@@ -19,7 +19,8 @@ object ArcData {
     __obj.asInstanceOf[ArcData]
   }
   
-  extension [Self <: ArcData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcData] (val x: Self) extends AnyVal {
     
     inline def setEndingAngle(value: Double): Self = StObject.set(x, "endingAngle", value.asInstanceOf[js.Any])
     

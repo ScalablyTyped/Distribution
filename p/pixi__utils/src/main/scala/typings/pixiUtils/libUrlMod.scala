@@ -92,7 +92,8 @@ object libUrlMod {
       __obj.asInstanceOf[URLFormatOptions]
     }
     
-    extension [Self <: URLFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URLFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: Boolean): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -127,7 +128,8 @@ object libUrlMod {
       __obj.asInstanceOf[UrlObject]
     }
     
-    extension [Self <: UrlObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlObject] (val x: Self) extends AnyVal {
       
       inline def setPort(value: String | Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
@@ -170,7 +172,8 @@ object libUrlMod {
       __obj.asInstanceOf[UrlObjectCommon]
     }
     
-    extension [Self <: UrlObjectCommon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlObjectCommon] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -228,7 +231,8 @@ object libUrlMod {
       __obj.asInstanceOf[UrlWithParsedQuery]
     }
     
-    extension [Self <: UrlWithParsedQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlWithParsedQuery] (val x: Self) extends AnyVal {
       
       inline def setQuery(value: ParsedUrlQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
@@ -248,7 +252,8 @@ object libUrlMod {
       __obj.asInstanceOf[UrlWithStringQuery]
     }
     
-    extension [Self <: UrlWithStringQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlWithStringQuery] (val x: Self) extends AnyVal {
       
       inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
@@ -271,7 +276,8 @@ object libUrlMod {
       __obj.asInstanceOf[Url_]
     }
     
-    extension [Self <: Url_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Url_] (val x: Self) extends AnyVal {
       
       inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       

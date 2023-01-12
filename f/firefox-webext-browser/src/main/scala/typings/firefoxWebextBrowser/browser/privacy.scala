@@ -119,7 +119,8 @@ object privacy {
         __obj.asInstanceOf[tlsVersionRestrictionConfig]
       }
       
-      extension [Self <: tlsVersionRestrictionConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: tlsVersionRestrictionConfig] (val x: Self) extends AnyVal {
         
         inline def setMaximum(value: TlsVersionRestrictionConfigMaximum): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
         
@@ -157,7 +158,8 @@ object privacy {
         __obj.asInstanceOf[CookieConfig]
       }
       
-      extension [Self <: CookieConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CookieConfig] (val x: Self) extends AnyVal {
         
         inline def setBehavior(value: CookieConfigBehavior): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
         

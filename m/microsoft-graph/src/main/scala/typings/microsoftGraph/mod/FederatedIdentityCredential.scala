@@ -51,7 +51,8 @@ object FederatedIdentityCredential {
     __obj.asInstanceOf[FederatedIdentityCredential]
   }
   
-  extension [Self <: FederatedIdentityCredential](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FederatedIdentityCredential] (val x: Self) extends AnyVal {
     
     inline def setAudiences(value: js.Array[String]): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
     

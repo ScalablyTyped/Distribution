@@ -18,7 +18,8 @@ object Listbanks {
     __obj.asInstanceOf[Listbanks]
   }
   
-  extension [Self <: Listbanks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Listbanks] (val x: Self) extends AnyVal {
     
     inline def setList_banks(value: Page => js.Promise[ResponsedataArrayany]): Self = StObject.set(x, "list_banks", js.Any.fromFunction1(value))
     

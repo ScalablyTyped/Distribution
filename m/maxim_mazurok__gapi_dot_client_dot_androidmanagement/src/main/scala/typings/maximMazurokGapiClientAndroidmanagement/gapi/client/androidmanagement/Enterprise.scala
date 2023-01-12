@@ -49,7 +49,8 @@ object Enterprise {
     __obj.asInstanceOf[Enterprise]
   }
   
-  extension [Self <: Enterprise](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Enterprise] (val x: Self) extends AnyVal {
     
     inline def setAppAutoApprovalEnabled(value: Boolean): Self = StObject.set(x, "appAutoApprovalEnabled", value.asInstanceOf[js.Any])
     

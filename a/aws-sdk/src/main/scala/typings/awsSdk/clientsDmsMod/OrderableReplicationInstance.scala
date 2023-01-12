@@ -58,7 +58,8 @@ object OrderableReplicationInstance {
     __obj.asInstanceOf[OrderableReplicationInstance]
   }
   
-  extension [Self <: OrderableReplicationInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderableReplicationInstance] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZones(value: AvailabilityZonesList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     

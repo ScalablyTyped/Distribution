@@ -23,7 +23,8 @@ object ModalDialogButtonResetClickEventUIParam {
     __obj.asInstanceOf[ModalDialogButtonResetClickEventUIParam]
   }
   
-  extension [Self <: ModalDialogButtonResetClickEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalDialogButtonResetClickEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setModalDialogElement(value: String): Self = StObject.set(x, "modalDialogElement", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ReferenceDataSourceUpdate {
     __obj.asInstanceOf[ReferenceDataSourceUpdate]
   }
   
-  extension [Self <: ReferenceDataSourceUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferenceDataSourceUpdate] (val x: Self) extends AnyVal {
     
     inline def setReferenceId(value: Id): Self = StObject.set(x, "ReferenceId", value.asInstanceOf[js.Any])
     

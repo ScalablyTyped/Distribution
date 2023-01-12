@@ -82,7 +82,8 @@ object AngularApplicationOptionsSchema {
     __obj.asInstanceOf[AngularApplicationOptionsSchema]
   }
   
-  extension [Self <: AngularApplicationOptionsSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AngularApplicationOptionsSchema] (val x: Self) extends AnyVal {
     
     inline def setInlineStyle(value: Boolean): Self = StObject.set(x, "inlineStyle", value.asInstanceOf[js.Any])
     

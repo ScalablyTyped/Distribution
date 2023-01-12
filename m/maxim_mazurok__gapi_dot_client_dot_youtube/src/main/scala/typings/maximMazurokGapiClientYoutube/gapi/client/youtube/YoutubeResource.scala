@@ -15,7 +15,8 @@ object YoutubeResource {
     __obj.asInstanceOf[YoutubeResource]
   }
   
-  extension [Self <: YoutubeResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YoutubeResource] (val x: Self) extends AnyVal {
     
     inline def setV3(value: V3Resource): Self = StObject.set(x, "v3", value.asInstanceOf[js.Any])
   }

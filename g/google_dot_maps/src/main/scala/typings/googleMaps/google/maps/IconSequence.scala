@@ -52,7 +52,8 @@ object IconSequence {
     __obj.asInstanceOf[IconSequence]
   }
   
-  extension [Self <: IconSequence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconSequence] (val x: Self) extends AnyVal {
     
     inline def setFixedRotation(value: Boolean): Self = StObject.set(x, "fixedRotation", value.asInstanceOf[js.Any])
     

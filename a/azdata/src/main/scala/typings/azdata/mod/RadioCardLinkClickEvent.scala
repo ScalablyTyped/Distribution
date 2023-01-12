@@ -19,7 +19,8 @@ object RadioCardLinkClickEvent {
     __obj.asInstanceOf[RadioCardLinkClickEvent]
   }
   
-  extension [Self <: RadioCardLinkClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadioCardLinkClickEvent] (val x: Self) extends AnyVal {
     
     inline def setCard(value: RadioCard): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     

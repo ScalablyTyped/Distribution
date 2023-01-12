@@ -41,7 +41,8 @@ object TextLayoutLine {
     __obj.asInstanceOf[TextLayoutLine]
   }
   
-  extension [Self <: TextLayoutLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextLayoutLine] (val x: Self) extends AnyVal {
     
     inline def setAscender(value: Double): Self = StObject.set(x, "ascender", value.asInstanceOf[js.Any])
     

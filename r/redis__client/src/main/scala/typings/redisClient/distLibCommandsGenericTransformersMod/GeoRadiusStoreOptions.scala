@@ -17,7 +17,8 @@ object GeoRadiusStoreOptions {
     __obj.asInstanceOf[GeoRadiusStoreOptions]
   }
   
-  extension [Self <: GeoRadiusStoreOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoRadiusStoreOptions] (val x: Self) extends AnyVal {
     
     inline def setSTOREDIST(value: Boolean): Self = StObject.set(x, "STOREDIST", value.asInstanceOf[js.Any])
     

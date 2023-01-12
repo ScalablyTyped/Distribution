@@ -16,7 +16,8 @@ object GoogleCloudDialogflowV2beta1BatchUpdateEntityTypesResponse {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1BatchUpdateEntityTypesResponse]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1BatchUpdateEntityTypesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1BatchUpdateEntityTypesResponse] (val x: Self) extends AnyVal {
     
     inline def setEntityTypes(value: js.Array[GoogleCloudDialogflowV2beta1EntityType]): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object UnifiedRoleEligibilitySchedule {
     __obj.asInstanceOf[UnifiedRoleEligibilitySchedule]
   }
   
-  extension [Self <: UnifiedRoleEligibilitySchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnifiedRoleEligibilitySchedule] (val x: Self) extends AnyVal {
     
     inline def setMemberType(value: NullableOption[String]): Self = StObject.set(x, "memberType", value.asInstanceOf[js.Any])
     

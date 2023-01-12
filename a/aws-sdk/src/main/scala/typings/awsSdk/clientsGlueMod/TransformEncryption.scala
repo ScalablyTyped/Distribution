@@ -23,7 +23,8 @@ object TransformEncryption {
     __obj.asInstanceOf[TransformEncryption]
   }
   
-  extension [Self <: TransformEncryption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformEncryption] (val x: Self) extends AnyVal {
     
     inline def setMlUserDataEncryption(value: MLUserDataEncryption): Self = StObject.set(x, "MlUserDataEncryption", value.asInstanceOf[js.Any])
     

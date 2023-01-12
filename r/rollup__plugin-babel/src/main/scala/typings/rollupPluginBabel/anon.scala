@@ -394,7 +394,8 @@ object anon {
       __obj.asInstanceOf[CustomOptions]
     }
     
-    extension [Self <: CustomOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomOptions(value: Record[String, Any]): Self = StObject.set(x, "customOptions", value.asInstanceOf[js.Any])
       
@@ -415,7 +416,8 @@ object anon {
       __obj.asInstanceOf[PluginOptions]
     }
     
-    extension [Self <: PluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomOptions(value: Record[String, Any]): Self = StObject.set(x, "customOptions", value.asInstanceOf[js.Any])
       

@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[AutompleteOptions]
     }
     
-    extension [Self <: AutompleteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutompleteOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoselect(value: Boolean): Self = StObject.set(x, "autoselect", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object mod {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
@@ -82,7 +84,8 @@ object mod {
       __obj.asInstanceOf[Places]
     }
     
-    extension [Self <: Places](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Places] (val x: Self) extends AnyVal {
       
       inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
@@ -109,7 +112,8 @@ object mod {
       __obj.asInstanceOf[PlacesOptions]
     }
     
-    extension [Self <: PlacesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlacesOptions] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       

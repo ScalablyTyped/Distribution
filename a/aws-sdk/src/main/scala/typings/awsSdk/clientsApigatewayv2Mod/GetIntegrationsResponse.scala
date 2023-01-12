@@ -23,7 +23,8 @@ object GetIntegrationsResponse {
     __obj.asInstanceOf[GetIntegrationsResponse]
   }
   
-  extension [Self <: GetIntegrationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIntegrationsResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(value: listOfIntegration): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

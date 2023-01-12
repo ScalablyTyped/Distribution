@@ -167,7 +167,8 @@ object WebExtensionManifest {
     __obj.asInstanceOf[WebExtensionManifest]
   }
   
-  extension [Self <: WebExtensionManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionManifest] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ActionManifest): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

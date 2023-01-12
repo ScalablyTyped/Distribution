@@ -36,7 +36,8 @@ object srcBuildersSchemaMod {
       __obj.asInstanceOf[Builder]
     }
     
-    extension [Self <: Builder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Builder] (val x: Self) extends AnyVal {
       
       inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object srcBuildersSchemaMod {
       __obj.asInstanceOf[Schema]
     }
     
-    extension [Self <: Schema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
       
       inline def set$schema(value: String): Self = StObject.set(x, "$schema", value.asInstanceOf[js.Any])
       

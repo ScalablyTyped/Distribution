@@ -98,7 +98,8 @@ object CreateStackInput {
     __obj.asInstanceOf[CreateStackInput]
   }
   
-  extension [Self <: CreateStackInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStackInput] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: Capabilities): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     

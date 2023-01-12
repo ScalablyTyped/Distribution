@@ -16,7 +16,8 @@ object StartRuntimeRequest {
     __obj.asInstanceOf[StartRuntimeRequest]
   }
   
-  extension [Self <: StartRuntimeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartRuntimeRequest] (val x: Self) extends AnyVal {
     
     inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     

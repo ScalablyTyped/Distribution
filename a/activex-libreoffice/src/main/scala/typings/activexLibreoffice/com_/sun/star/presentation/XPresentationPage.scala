@@ -49,7 +49,8 @@ object XPresentationPage {
     __obj.asInstanceOf[XPresentationPage]
   }
   
-  extension [Self <: XPresentationPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPresentationPage] (val x: Self) extends AnyVal {
     
     inline def setGetNotesPage(value: () => XDrawPage): Self = StObject.set(x, "getNotesPage", js.Any.fromFunction0(value))
     

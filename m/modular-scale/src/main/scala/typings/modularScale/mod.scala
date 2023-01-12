@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[ModularScaleOptions]
     }
     
-    extension [Self <: ModularScaleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModularScaleOptions] (val x: Self) extends AnyVal {
       
       inline def setBase(value: Double | String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object mod {
       __obj.asInstanceOf[ModularScaleRatio]
     }
     
-    extension [Self <: ModularScaleRatio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModularScaleRatio] (val x: Self) extends AnyVal {
       
       inline def setAugFourth(value: Double): Self = StObject.set(x, "augFourth", value.asInstanceOf[js.Any])
       

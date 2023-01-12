@@ -23,7 +23,8 @@ object vueReactivityAugmentingMod {
       __obj.asInstanceOf[RefUnwrapBailTypes]
     }
     
-    extension [Self <: RefUnwrapBailTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefUnwrapBailTypes] (val x: Self) extends AnyVal {
       
       inline def setRuntimeCoreBailTypes(
         value: (VNode[RendererNode, RendererElement, StringDictionary[Any]]) | typings.vueRuntimeCore.anon.ComponentInternalInstance

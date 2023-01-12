@@ -26,7 +26,8 @@ object `0GapsOf` {
     __obj.asInstanceOf[`0GapsOf`[L1, L2, LN, I, L2D]]
   }
   
-  extension [Self <: `0GapsOf`[?, ?, ?, ?, ?], L1 /* <: typings.tsToolbelt.outListListMod.List[Any] */, L2 /* <: js.Array[typings.tsToolbelt.outListListMod.List[Any]] */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */, I /* <: Iteration */, L2D /* <: js.Array[typings.tsToolbelt.outListListMod.List[Any]] */](x: Self & (`0GapsOf`[L1, L2, LN, I, L2D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0GapsOf`[?, ?, ?, ?, ?], L1 /* <: typings.tsToolbelt.outListListMod.List[Any] */, L2 /* <: js.Array[typings.tsToolbelt.outListListMod.List[Any]] */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */, I /* <: Iteration */, L2D /* <: js.Array[typings.tsToolbelt.outListListMod.List[Any]] */] (val x: Self & (`0GapsOf`[L1, L2, LN, I, L2D])) extends AnyVal {
     
     inline def set0(value: _GapsOf[L1, L2, GapOf[L1, L2, LN, I], Tail[L2D], Next[I]]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

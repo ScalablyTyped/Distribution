@@ -15,7 +15,8 @@ object ShapeEditable {
     __obj.asInstanceOf[ShapeEditable]
   }
   
-  extension [Self <: ShapeEditable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeEditable] (val x: Self) extends AnyVal {
     
     inline def setConnect(value: Boolean): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
     

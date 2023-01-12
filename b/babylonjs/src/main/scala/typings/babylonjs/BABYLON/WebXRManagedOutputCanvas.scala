@@ -55,7 +55,8 @@ object WebXRManagedOutputCanvas {
     __obj.asInstanceOf[WebXRManagedOutputCanvas]
   }
   
-  extension [Self <: WebXRManagedOutputCanvas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebXRManagedOutputCanvas] (val x: Self) extends AnyVal {
     
     inline def setOnXRLayerInitObservable(value: Observable[XRWebGLLayer]): Self = StObject.set(x, "onXRLayerInitObservable", value.asInstanceOf[js.Any])
     

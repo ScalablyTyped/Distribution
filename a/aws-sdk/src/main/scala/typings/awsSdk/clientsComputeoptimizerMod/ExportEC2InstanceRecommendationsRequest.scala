@@ -48,7 +48,8 @@ object ExportEC2InstanceRecommendationsRequest {
     __obj.asInstanceOf[ExportEC2InstanceRecommendationsRequest]
   }
   
-  extension [Self <: ExportEC2InstanceRecommendationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportEC2InstanceRecommendationsRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountIds(value: AccountIds): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
     

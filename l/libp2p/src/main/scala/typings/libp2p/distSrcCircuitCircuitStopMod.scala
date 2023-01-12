@@ -47,7 +47,8 @@ object distSrcCircuitCircuitStopMod {
       __obj.asInstanceOf[HandleStopOptions]
     }
     
-    extension [Self <: HandleStopOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandleStopOptions] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object distSrcCircuitCircuitStopMod {
       __obj.asInstanceOf[StopOptions]
     }
     
-    extension [Self <: StopOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StopOptions] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object DescribeClusterTracksMessage {
     __obj.asInstanceOf[DescribeClusterTracksMessage]
   }
   
-  extension [Self <: DescribeClusterTracksMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeClusterTracksMessage] (val x: Self) extends AnyVal {
     
     inline def setMaintenanceTrackName(value: String): Self = StObject.set(x, "MaintenanceTrackName", value.asInstanceOf[js.Any])
     

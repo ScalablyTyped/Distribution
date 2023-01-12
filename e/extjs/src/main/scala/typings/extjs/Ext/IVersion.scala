@@ -109,7 +109,8 @@ object IVersion {
     __obj.asInstanceOf[IVersion]
   }
   
-  extension [Self <: IVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVersion] (val x: Self) extends AnyVal {
     
     inline def setEquals_(value: /* target */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     

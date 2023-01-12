@@ -15,7 +15,8 @@ object ArrayValue {
     __obj.asInstanceOf[ArrayValue]
   }
   
-  extension [Self <: ArrayValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayValue] (val x: Self) extends AnyVal {
     
     inline def setArrayValue(value: typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.ArrayValue): Self = StObject.set(x, "arrayValue", value.asInstanceOf[js.Any])
   }

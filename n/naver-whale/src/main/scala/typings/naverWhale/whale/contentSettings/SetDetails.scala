@@ -31,7 +31,8 @@ object SetDetails {
     __obj.asInstanceOf[SetDetails]
   }
   
-  extension [Self <: SetDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetDetails] (val x: Self) extends AnyVal {
     
     inline def setPrimaryPattern(value: String): Self = StObject.set(x, "primaryPattern", value.asInstanceOf[js.Any])
     

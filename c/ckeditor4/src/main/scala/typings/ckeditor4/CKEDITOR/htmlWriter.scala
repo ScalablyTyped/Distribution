@@ -45,7 +45,8 @@ object htmlWriter {
     __obj.asInstanceOf[htmlWriter]
   }
   
-  extension [Self <: htmlWriter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: htmlWriter] (val x: Self) extends AnyVal {
     
     inline def setIndentation(value: () => Unit): Self = StObject.set(x, "indentation", js.Any.fromFunction0(value))
     

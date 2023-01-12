@@ -40,7 +40,8 @@ object BoxProps {
     __obj.asInstanceOf[BoxProps]
   }
   
-  extension [Self <: BoxProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoxProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

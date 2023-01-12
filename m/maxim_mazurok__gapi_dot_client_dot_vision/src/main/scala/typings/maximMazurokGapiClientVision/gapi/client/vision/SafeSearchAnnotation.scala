@@ -31,7 +31,8 @@ object SafeSearchAnnotation {
     __obj.asInstanceOf[SafeSearchAnnotation]
   }
   
-  extension [Self <: SafeSearchAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SafeSearchAnnotation] (val x: Self) extends AnyVal {
     
     inline def setAdult(value: String): Self = StObject.set(x, "adult", value.asInstanceOf[js.Any])
     

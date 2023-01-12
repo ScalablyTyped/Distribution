@@ -21,7 +21,8 @@ object MakeAllFilesPublicPrivateOptions {
     __obj.asInstanceOf[MakeAllFilesPublicPrivateOptions]
   }
   
-  extension [Self <: MakeAllFilesPublicPrivateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MakeAllFilesPublicPrivateOptions] (val x: Self) extends AnyVal {
     
     inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     

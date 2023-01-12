@@ -28,7 +28,8 @@ object AccessReviewHistoryScheduleSettings {
     __obj.asInstanceOf[AccessReviewHistoryScheduleSettings]
   }
   
-  extension [Self <: AccessReviewHistoryScheduleSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessReviewHistoryScheduleSettings] (val x: Self) extends AnyVal {
     
     inline def setRecurrence(value: PatternedRecurrence): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
     

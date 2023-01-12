@@ -23,7 +23,8 @@ object AlexaForBusinessMetadata {
     __obj.asInstanceOf[AlexaForBusinessMetadata]
   }
   
-  extension [Self <: AlexaForBusinessMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlexaForBusinessMetadata] (val x: Self) extends AnyVal {
     
     inline def setAlexaForBusinessRoomArn(value: SensitiveString): Self = StObject.set(x, "AlexaForBusinessRoomArn", value.asInstanceOf[js.Any])
     

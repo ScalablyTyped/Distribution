@@ -18,7 +18,8 @@ object ComputationPreference {
     __obj.asInstanceOf[ComputationPreference]
   }
   
-  extension [Self <: ComputationPreference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputationPreference] (val x: Self) extends AnyVal {
     
     inline def setPricingPlanArn(value: PricingPlanFullArn): Self = StObject.set(x, "PricingPlanArn", value.asInstanceOf[js.Any])
   }

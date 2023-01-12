@@ -63,7 +63,8 @@ object Connector {
     __obj.asInstanceOf[Connector]
   }
   
-  extension [Self <: Connector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Connector] (val x: Self) extends AnyVal {
     
     inline def setAssociatedOn(value: js.Date): Self = StObject.set(x, "associatedOn", value.asInstanceOf[js.Any])
     

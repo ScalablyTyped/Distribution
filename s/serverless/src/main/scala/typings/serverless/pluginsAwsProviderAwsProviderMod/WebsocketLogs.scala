@@ -17,7 +17,8 @@ object WebsocketLogs {
     __obj.asInstanceOf[WebsocketLogs]
   }
   
-  extension [Self <: WebsocketLogs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebsocketLogs] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: INFO | ERROR): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

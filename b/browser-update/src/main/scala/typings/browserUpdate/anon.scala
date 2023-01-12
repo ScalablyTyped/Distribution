@@ -89,7 +89,8 @@ object anon {
       __obj.asInstanceOf[RequiredBrowserseastringn]
     }
     
-    extension [Self <: RequiredBrowserseastringn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredBrowserseastringn] (val x: Self) extends AnyVal {
       
       inline def setA(value: String | Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       

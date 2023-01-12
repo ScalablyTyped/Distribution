@@ -62,7 +62,8 @@ object WriteSet {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setWriteSetList(value: js.Array[typings.libraCore.`lib@GeneratedTransactionPbMod`.WriteOp.AsObject]): Self = StObject.set(x, "writeSetList", value.asInstanceOf[js.Any])
       

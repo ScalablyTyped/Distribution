@@ -20,7 +20,8 @@ object InfinityOption {
     __obj.asInstanceOf[InfinityOption]
   }
   
-  extension [Self <: InfinityOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfinityOption] (val x: Self) extends AnyVal {
     
     inline def setCreateTombstone(value: () => Element): Self = StObject.set(x, "createTombstone", js.Any.fromFunction0(value))
     

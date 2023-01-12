@@ -18,7 +18,8 @@ object StopICD10CMInferenceJobResponse {
     __obj.asInstanceOf[StopICD10CMInferenceJobResponse]
   }
   
-  extension [Self <: StopICD10CMInferenceJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopICD10CMInferenceJobResponse] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object NotificationPromptResult {
     __obj.asInstanceOf[NotificationPromptResult]
   }
   
-  extension [Self <: NotificationPromptResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationPromptResult] (val x: Self) extends AnyVal {
     
     inline def setButtonIndex(value: Double): Self = StObject.set(x, "buttonIndex", value.asInstanceOf[js.Any])
     

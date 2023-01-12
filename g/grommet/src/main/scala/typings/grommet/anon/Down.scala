@@ -18,7 +18,8 @@ object Down {
     __obj.asInstanceOf[Down]
   }
   
-  extension [Self <: Down](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Down] (val x: Self) extends AnyVal {
     
     inline def setDown(value: ReactNode | typings.grommetIcons.iconsMod.Icon): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
     

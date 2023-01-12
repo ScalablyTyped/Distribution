@@ -23,7 +23,8 @@ object RunJobFlowOutput {
     __obj.asInstanceOf[RunJobFlowOutput]
   }
   
-  extension [Self <: RunJobFlowOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunJobFlowOutput] (val x: Self) extends AnyVal {
     
     inline def setClusterArn(value: ArnType): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     

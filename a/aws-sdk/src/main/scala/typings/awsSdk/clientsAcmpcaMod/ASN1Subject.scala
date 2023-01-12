@@ -88,7 +88,8 @@ object ASN1Subject {
     __obj.asInstanceOf[ASN1Subject]
   }
   
-  extension [Self <: ASN1Subject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASN1Subject] (val x: Self) extends AnyVal {
     
     inline def setCommonName(value: String64): Self = StObject.set(x, "CommonName", value.asInstanceOf[js.Any])
     

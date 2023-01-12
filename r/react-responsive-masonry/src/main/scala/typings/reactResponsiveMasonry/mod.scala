@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[MasonryProps]
     }
     
-    extension [Self <: MasonryProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MasonryProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object mod {
       __obj.asInstanceOf[ResponsiveMasonryProps]
     }
     
-    extension [Self <: ResponsiveMasonryProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveMasonryProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

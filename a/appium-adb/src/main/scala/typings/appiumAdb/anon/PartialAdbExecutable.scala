@@ -18,7 +18,8 @@ object PartialAdbExecutable {
     __obj.asInstanceOf[PartialAdbExecutable]
   }
   
-  extension [Self <: PartialAdbExecutable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAdbExecutable] (val x: Self) extends AnyVal {
     
     inline def setDefaultArgs(value: js.Array[String]): Self = StObject.set(x, "defaultArgs", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ProgressMethods {
     __obj.asInstanceOf[ProgressMethods]
   }
   
-  extension [Self <: ProgressMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressMethods] (val x: Self) extends AnyVal {
     
     inline def setGetProgress(value: () => Double): Self = StObject.set(x, "getProgress", js.Any.fromFunction0(value))
     

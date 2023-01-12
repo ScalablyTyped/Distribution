@@ -23,7 +23,8 @@ object ShapeMark {
     __obj.asInstanceOf[ShapeMark]
   }
   
-  extension [Self <: ShapeMark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeMark] (val x: Self) extends AnyVal {
     
     inline def setType(value: shape): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

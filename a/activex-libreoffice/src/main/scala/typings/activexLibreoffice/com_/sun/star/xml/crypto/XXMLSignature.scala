@@ -40,7 +40,8 @@ object XXMLSignature {
     __obj.asInstanceOf[XXMLSignature]
   }
   
-  extension [Self <: XXMLSignature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XXMLSignature] (val x: Self) extends AnyVal {
     
     inline def setGenerate(value: (XXMLSignatureTemplate, XSecurityEnvironment) => XXMLSignatureTemplate): Self = StObject.set(x, "generate", js.Any.fromFunction2(value))
     

@@ -23,7 +23,8 @@ object DeletePermissionGroupRequest {
     __obj.asInstanceOf[DeletePermissionGroupRequest]
   }
   
-  extension [Self <: DeletePermissionGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePermissionGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

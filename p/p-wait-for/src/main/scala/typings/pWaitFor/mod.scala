@@ -108,7 +108,8 @@ object mod {
       __obj.asInstanceOf[Options[ResolveValueType]]
     }
     
-    extension [Self <: Options[?], ResolveValueType](x: Self & Options[ResolveValueType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], ResolveValueType] (val x: Self & Options[ResolveValueType]) extends AnyVal {
       
       inline def setBefore(value: Boolean): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       

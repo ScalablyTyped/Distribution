@@ -28,7 +28,8 @@ object TypeofttsEngine {
     __obj.asInstanceOf[TypeofttsEngine]
   }
   
-  extension [Self <: TypeofttsEngine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofttsEngine] (val x: Self) extends AnyVal {
     
     inline def setOnPause(value: Event[js.Function0[Unit]]): Self = StObject.set(x, "onPause", value.asInstanceOf[js.Any])
     

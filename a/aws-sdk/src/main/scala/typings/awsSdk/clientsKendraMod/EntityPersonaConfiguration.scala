@@ -23,7 +23,8 @@ object EntityPersonaConfiguration {
     __obj.asInstanceOf[EntityPersonaConfiguration]
   }
   
-  extension [Self <: EntityPersonaConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityPersonaConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEntityId(value: EntityId): Self = StObject.set(x, "EntityId", value.asInstanceOf[js.Any])
     

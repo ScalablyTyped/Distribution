@@ -26,7 +26,8 @@ object PHPTHB {
     __obj.asInstanceOf[PHPTHB]
   }
   
-  extension [Self <: PHPTHB](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PHPTHB] (val x: Self) extends AnyVal {
     
     inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     

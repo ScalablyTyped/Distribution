@@ -23,7 +23,8 @@ object CreateExtendedSourceServerRequest {
     __obj.asInstanceOf[CreateExtendedSourceServerRequest]
   }
   
-  extension [Self <: CreateExtendedSourceServerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateExtendedSourceServerRequest] (val x: Self) extends AnyVal {
     
     inline def setSourceServerArn(value: SourceServerARN): Self = StObject.set(x, "sourceServerArn", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object BatchDeleteDocumentRequest {
     __obj.asInstanceOf[BatchDeleteDocumentRequest]
   }
   
-  extension [Self <: BatchDeleteDocumentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteDocumentRequest] (val x: Self) extends AnyVal {
     
     inline def setDataSourceSyncJobMetricTarget(value: DataSourceSyncJobMetricTarget): Self = StObject.set(x, "DataSourceSyncJobMetricTarget", value.asInstanceOf[js.Any])
     

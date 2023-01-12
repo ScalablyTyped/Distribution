@@ -79,7 +79,8 @@ object anon {
       __obj.asInstanceOf[PartialSocketOptions]
     }
     
-    extension [Self <: PartialSocketOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSocketOptions] (val x: Self) extends AnyVal {
       
       inline def setAffinity(value: Double): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
       

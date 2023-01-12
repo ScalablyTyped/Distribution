@@ -17,7 +17,8 @@ object EnterpriseLogoCobranding {
     __obj.asInstanceOf[EnterpriseLogoCobranding]
   }
   
-  extension [Self <: EnterpriseLogoCobranding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnterpriseLogoCobranding] (val x: Self) extends AnyVal {
     
     inline def setDarkLogoSrc(value: String): Self = StObject.set(x, "darkLogoSrc", value.asInstanceOf[js.Any])
     

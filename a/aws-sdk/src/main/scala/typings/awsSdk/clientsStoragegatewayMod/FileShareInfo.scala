@@ -23,7 +23,8 @@ object FileShareInfo {
     __obj.asInstanceOf[FileShareInfo]
   }
   
-  extension [Self <: FileShareInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileShareInfo] (val x: Self) extends AnyVal {
     
     inline def setFileShareARN(value: FileShareARN): Self = StObject.set(x, "FileShareARN", value.asInstanceOf[js.Any])
     

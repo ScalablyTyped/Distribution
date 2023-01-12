@@ -29,7 +29,8 @@ object ITensorInfo {
     __obj.asInstanceOf[ITensorInfo]
   }
   
-  extension [Self <: ITensorInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITensorInfo] (val x: Self) extends AnyVal {
     
     inline def setCooSparse(value: ICooSparse): Self = StObject.set(x, "cooSparse", value.asInstanceOf[js.Any])
     

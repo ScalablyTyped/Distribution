@@ -24,7 +24,8 @@ object SignatureHelpInvokedReason {
     __obj.asInstanceOf[SignatureHelpInvokedReason]
   }
   
-  extension [Self <: SignatureHelpInvokedReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureHelpInvokedReason] (val x: Self) extends AnyVal {
     
     inline def setKind(value: invoked): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

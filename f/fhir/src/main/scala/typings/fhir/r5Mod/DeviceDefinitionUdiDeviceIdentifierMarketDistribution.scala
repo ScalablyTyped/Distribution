@@ -27,7 +27,8 @@ object DeviceDefinitionUdiDeviceIdentifierMarketDistribution {
     __obj.asInstanceOf[DeviceDefinitionUdiDeviceIdentifierMarketDistribution]
   }
   
-  extension [Self <: DeviceDefinitionUdiDeviceIdentifierMarketDistribution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceDefinitionUdiDeviceIdentifierMarketDistribution] (val x: Self) extends AnyVal {
     
     inline def setMarketPeriod(value: Period): Self = StObject.set(x, "marketPeriod", value.asInstanceOf[js.Any])
     

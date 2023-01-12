@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[Arc]
     }
     
-    extension [Self <: Arc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Arc] (val x: Self) extends AnyVal {
       
       inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object mod {
       __obj.asInstanceOf[CubicBezierCurve]
     }
     
-    extension [Self <: CubicBezierCurve](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CubicBezierCurve] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

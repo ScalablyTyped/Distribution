@@ -17,7 +17,8 @@ object StartInstanceOnboardingJobRequest {
     __obj.asInstanceOf[StartInstanceOnboardingJobRequest]
   }
   
-  extension [Self <: StartInstanceOnboardingJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartInstanceOnboardingJobRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectInstanceId(value: InstanceId): Self = StObject.set(x, "connectInstanceId", value.asInstanceOf[js.Any])
     

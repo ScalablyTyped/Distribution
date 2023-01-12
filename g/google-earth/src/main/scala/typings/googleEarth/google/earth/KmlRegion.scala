@@ -65,7 +65,8 @@ object KmlRegion {
     __obj.asInstanceOf[KmlRegion]
   }
   
-  extension [Self <: KmlRegion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlRegion] (val x: Self) extends AnyVal {
     
     inline def setGetLatLonAltBox(value: () => KmlLatLonAltBox): Self = StObject.set(x, "getLatLonAltBox", js.Any.fromFunction0(value))
     

@@ -23,7 +23,8 @@ object ClassificationCollection {
     __obj.asInstanceOf[ClassificationCollection]
   }
   
-  extension [Self <: ClassificationCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassificationCollection] (val x: Self) extends AnyVal {
     
     inline def setClassifier_id(value: String): Self = StObject.set(x, "classifier_id", value.asInstanceOf[js.Any])
     

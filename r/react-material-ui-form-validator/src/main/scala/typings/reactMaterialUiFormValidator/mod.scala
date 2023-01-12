@@ -137,7 +137,8 @@ object mod {
       __obj.asInstanceOf[ValidatorComponentProps]
     }
     
-    extension [Self <: ValidatorComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidatorComponentProps] (val x: Self) extends AnyVal {
       
       inline def setErrorMessages(value: js.Array[Any] | String): Self = StObject.set(x, "errorMessages", value.asInstanceOf[js.Any])
       
@@ -186,7 +187,8 @@ object mod {
       __obj.asInstanceOf[ValidatorFormProps]
     }
     
-    extension [Self <: ValidatorFormProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidatorFormProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

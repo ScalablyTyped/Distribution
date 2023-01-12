@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[GenericArray[T]]
     }
     
-    extension [Self <: GenericArray[?], T](x: Self & GenericArray[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericArray[?], T] (val x: Self & GenericArray[T]) extends AnyVal {
       
       inline def setGet(value: Double => T): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
@@ -133,7 +134,8 @@ object mod {
       __obj.asInstanceOf[NdArray[D]]
     }
     
-    extension [Self <: NdArray[?], D /* <: Data[Any] */](x: Self & NdArray[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NdArray[?], D /* <: Data[Any] */] (val x: Self & NdArray[D]) extends AnyVal {
       
       inline def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

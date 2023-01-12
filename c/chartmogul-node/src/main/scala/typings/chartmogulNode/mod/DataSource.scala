@@ -38,7 +38,8 @@ object DataSource {
       __obj.asInstanceOf[typings.chartmogulNode.mod.DataSource.DataSource]
     }
     
-    extension [Self <: typings.chartmogulNode.mod.DataSource.DataSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.chartmogulNode.mod.DataSource.DataSource] (val x: Self) extends AnyVal {
       
       inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object DataSource {
       __obj.asInstanceOf[DataSources]
     }
     
-    extension [Self <: DataSources](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSources] (val x: Self) extends AnyVal {
       
       inline def setData_sources(value: js.Array[typings.chartmogulNode.mod.DataSource.DataSource]): Self = StObject.set(x, "data_sources", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object DataSource {
       __obj.asInstanceOf[ListDataSourcesParams]
     }
     
-    extension [Self <: ListDataSourcesParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListDataSourcesParams] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

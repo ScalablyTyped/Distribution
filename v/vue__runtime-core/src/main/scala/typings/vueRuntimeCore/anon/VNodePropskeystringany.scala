@@ -48,7 +48,8 @@ object VNodePropskeystringany {
     __obj.asInstanceOf[VNodePropskeystringany]
   }
   
-  extension [Self <: VNodePropskeystringany](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VNodePropskeystringany] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String | Double | js.Symbol): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

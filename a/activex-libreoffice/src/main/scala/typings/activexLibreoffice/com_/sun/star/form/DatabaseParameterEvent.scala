@@ -30,7 +30,8 @@ object DatabaseParameterEvent {
     __obj.asInstanceOf[DatabaseParameterEvent]
   }
   
-  extension [Self <: DatabaseParameterEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseParameterEvent] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: XIndexAccess): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
   }

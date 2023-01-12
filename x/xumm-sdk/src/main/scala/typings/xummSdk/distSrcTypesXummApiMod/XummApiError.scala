@@ -16,7 +16,8 @@ object XummApiError {
     __obj.asInstanceOf[XummApiError]
   }
   
-  extension [Self <: XummApiError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XummApiError] (val x: Self) extends AnyVal {
     
     inline def setError(value: Reference): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }

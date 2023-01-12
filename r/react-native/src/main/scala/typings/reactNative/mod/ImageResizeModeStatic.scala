@@ -51,7 +51,8 @@ object ImageResizeModeStatic {
     __obj.asInstanceOf[ImageResizeModeStatic]
   }
   
-  extension [Self <: ImageResizeModeStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageResizeModeStatic] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: ImageResizeMode): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

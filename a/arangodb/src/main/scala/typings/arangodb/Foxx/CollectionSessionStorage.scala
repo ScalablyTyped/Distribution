@@ -32,7 +32,8 @@ object CollectionSessionStorage {
     __obj.asInstanceOf[CollectionSessionStorage]
   }
   
-  extension [Self <: CollectionSessionStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionSessionStorage] (val x: Self) extends AnyVal {
     
     inline def setClear(value: Session => Boolean): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     

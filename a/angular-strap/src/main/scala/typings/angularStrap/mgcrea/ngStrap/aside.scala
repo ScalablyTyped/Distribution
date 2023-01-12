@@ -31,7 +31,8 @@ object aside {
       __obj.asInstanceOf[IAside]
     }
     
-    extension [Self <: IAside](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAside] (val x: Self) extends AnyVal {
       
       inline def set$promise(value: IPromise[Unit]): Self = StObject.set(x, "$promise", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object aside {
       __obj.asInstanceOf[IAsideOptions]
     }
     
-    extension [Self <: IAsideOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAsideOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -181,7 +183,8 @@ object aside {
       __obj.asInstanceOf[IAsideProvider]
     }
     
-    extension [Self <: IAsideProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAsideProvider] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: IAsideOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }

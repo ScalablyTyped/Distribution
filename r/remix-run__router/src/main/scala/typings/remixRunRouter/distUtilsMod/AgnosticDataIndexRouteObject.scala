@@ -19,7 +19,8 @@ object AgnosticDataIndexRouteObject {
     __obj.asInstanceOf[AgnosticDataIndexRouteObject]
   }
   
-  extension [Self <: AgnosticDataIndexRouteObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgnosticDataIndexRouteObject] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

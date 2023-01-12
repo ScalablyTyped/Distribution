@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[SecuredConnection[Extension]]
     }
     
-    extension [Self <: SecuredConnection[?], Extension](x: Self & SecuredConnection[Extension]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SecuredConnection[?], Extension] (val x: Self & SecuredConnection[Extension]) extends AnyVal {
       
       inline def setConn(value: Duplex[js.typedarray.Uint8Array, js.typedarray.Uint8Array, js.Promise[Unit]]): Self = StObject.set(x, "conn", value.asInstanceOf[js.Any])
       

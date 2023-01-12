@@ -20,7 +20,8 @@ object BuilderTarget {
     __obj.asInstanceOf[BuilderTarget[TBuilder, TOptions]]
   }
   
-  extension [Self <: BuilderTarget[?, ?], TBuilder /* <: Builders */, TOptions](x: Self & (BuilderTarget[TBuilder, TOptions])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuilderTarget[?, ?], TBuilder /* <: Builders */, TOptions] (val x: Self & (BuilderTarget[TBuilder, TOptions])) extends AnyVal {
     
     inline def setBuilder(value: TBuilder): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
     

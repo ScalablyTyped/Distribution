@@ -66,7 +66,8 @@ object mod {
       __obj.asInstanceOf[ConfigureReadmeConfig]
     }
     
-    extension [Self <: ConfigureReadmeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigureReadmeConfig] (val x: Self) extends AnyVal {
       
       inline def setDocPreview(value: /* props */ Children => ReactNode): Self = StObject.set(x, "DocPreview", js.Any.fromFunction1(value))
       
@@ -107,7 +108,8 @@ object mod {
       __obj.asInstanceOf[CustomComponents]
     }
     
-    extension [Self <: CustomComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomComponents] (val x: Self) extends AnyVal {
       
       inline def setFooterComponent(value: /* props */ ChildrenElement => Element): Self = StObject.set(x, "FooterComponent", js.Any.fromFunction1(value))
       

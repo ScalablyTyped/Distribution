@@ -22,7 +22,8 @@ object ILogEntry {
     __obj.asInstanceOf[ILogEntry]
   }
   
-  extension [Self <: ILogEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILogEntry] (val x: Self) extends AnyVal {
     
     inline def setLogLevel(value: Double): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     

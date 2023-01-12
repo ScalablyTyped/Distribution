@@ -53,7 +53,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[ApplicationInvokeParameter]
     }
     
-    extension [Self <: ApplicationInvokeParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplicationInvokeParameter] (val x: Self) extends AnyVal {
       
       inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[ChartInvokeParameter]
     }
     
-    extension [Self <: ChartInvokeParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChartInvokeParameter] (val x: Self) extends AnyVal {
       
       inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
@@ -165,7 +167,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[OLEObjectInvokeParameter]
     }
     
-    extension [Self <: OLEObjectInvokeParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OLEObjectInvokeParameter] (val x: Self) extends AnyVal {
       
       inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
@@ -221,7 +224,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[QueryTableInvokeParameter]
     }
     
-    extension [Self <: QueryTableInvokeParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryTableInvokeParameter] (val x: Self) extends AnyVal {
       
       inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
@@ -277,7 +281,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[WorkbookInvokeParameter]
     }
     
-    extension [Self <: WorkbookInvokeParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkbookInvokeParameter] (val x: Self) extends AnyVal {
       
       inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
@@ -333,7 +338,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[WorksheetInvokeParameter]
     }
     
-    extension [Self <: WorksheetInvokeParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorksheetInvokeParameter] (val x: Self) extends AnyVal {
       
       inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       

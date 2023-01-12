@@ -30,7 +30,8 @@ object distLoaderRingsMod extends Shortcut {
       __obj.asInstanceOf[RingsProps]
     }
     
-    extension [Self <: RingsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RingsProps] (val x: Self) extends AnyVal {
       
       inline def setRadius(value: String | Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       

@@ -65,7 +65,8 @@ object ICollisionData {
     __obj.asInstanceOf[ICollisionData]
   }
   
-  extension [Self <: ICollisionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICollisionData] (val x: Self) extends AnyVal {
     
     inline def setAxisBody(value: Body): Self = StObject.set(x, "axisBody", value.asInstanceOf[js.Any])
     

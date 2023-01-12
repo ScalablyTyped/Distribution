@@ -66,7 +66,8 @@ object mod {
         __obj.asInstanceOf[IResourcePromise]
       }
       
-      extension [Self <: IResourcePromise](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IResourcePromise] (val x: Self) extends AnyVal {
         
         inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         

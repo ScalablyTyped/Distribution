@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[PromiseImplementation[P]]
     }
     
-    extension [Self <: PromiseImplementation[?], P /* <: PromiseLike[Any] */](x: Self & PromiseImplementation[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromiseImplementation[?], P /* <: PromiseLike[Any] */] (val x: Self & PromiseImplementation[P]) extends AnyVal {
       
       inline def setAll(value: js.Array[Any] => P): Self = StObject.set(x, "all", js.Any.fromFunction1(value))
       

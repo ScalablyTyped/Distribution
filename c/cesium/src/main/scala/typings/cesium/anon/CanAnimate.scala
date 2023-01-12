@@ -32,7 +32,8 @@ object CanAnimate {
     __obj.asInstanceOf[CanAnimate]
   }
   
-  extension [Self <: CanAnimate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanAnimate] (val x: Self) extends AnyVal {
     
     inline def setCanAnimate(value: Boolean): Self = StObject.set(x, "canAnimate", value.asInstanceOf[js.Any])
     

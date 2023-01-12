@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[Gte]
     }
     
-    extension [Self <: Gte](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Gte] (val x: Self) extends AnyVal {
       
       inline def setGte(value: String): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
       

@@ -93,7 +93,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AutocompleteProps[T]]
     }
     
-    extension [Self <: AutocompleteProps[?], T](x: Self & AutocompleteProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutocompleteProps[?], T] (val x: Self & AutocompleteProps[T]) extends AnyVal {
       
       inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       

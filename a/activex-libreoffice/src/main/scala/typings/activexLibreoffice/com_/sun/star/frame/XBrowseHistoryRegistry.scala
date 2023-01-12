@@ -32,7 +32,8 @@ object XBrowseHistoryRegistry {
     __obj.asInstanceOf[XBrowseHistoryRegistry]
   }
   
-  extension [Self <: XBrowseHistoryRegistry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XBrowseHistoryRegistry] (val x: Self) extends AnyVal {
     
     inline def setCreateNewEntry(value: (String, SeqEquiv[PropertyValue], String) => Unit): Self = StObject.set(x, "createNewEntry", js.Any.fromFunction3(value))
     

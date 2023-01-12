@@ -18,7 +18,8 @@ object BatchEnableStandardsResponse {
     __obj.asInstanceOf[BatchEnableStandardsResponse]
   }
   
-  extension [Self <: BatchEnableStandardsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchEnableStandardsResponse] (val x: Self) extends AnyVal {
     
     inline def setStandardsSubscriptions(value: StandardsSubscriptions): Self = StObject.set(x, "StandardsSubscriptions", value.asInstanceOf[js.Any])
     

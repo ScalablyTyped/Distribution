@@ -36,7 +36,8 @@ object TextOptions {
     __obj.asInstanceOf[TextOptions]
   }
   
-  extension [Self <: TextOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultResponseError(value: String): Self = StObject.set(x, "defaultResponseError", value.asInstanceOf[js.Any])
     

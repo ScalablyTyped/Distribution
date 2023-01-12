@@ -17,7 +17,8 @@ object distSrcTypesXAppXAppPushResponseMod {
       __obj.asInstanceOf[xAppPushResponse]
     }
     
-    extension [Self <: xAppPushResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: xAppPushResponse] (val x: Self) extends AnyVal {
       
       inline def setPushed(value: Boolean): Self = StObject.set(x, "pushed", value.asInstanceOf[js.Any])
     }

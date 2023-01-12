@@ -18,7 +18,8 @@ object AccessLog {
     __obj.asInstanceOf[AccessLog]
   }
   
-  extension [Self <: AccessLog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessLog] (val x: Self) extends AnyVal {
     
     inline def setFile(value: FileAccessLog): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

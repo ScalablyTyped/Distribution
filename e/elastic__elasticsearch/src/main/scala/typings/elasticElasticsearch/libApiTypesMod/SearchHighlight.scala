@@ -20,7 +20,8 @@ object SearchHighlight {
     __obj.asInstanceOf[SearchHighlight]
   }
   
-  extension [Self <: SearchHighlight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchHighlight] (val x: Self) extends AnyVal {
     
     inline def setEncoder(value: SearchHighlighterEncoder): Self = StObject.set(x, "encoder", value.asInstanceOf[js.Any])
     

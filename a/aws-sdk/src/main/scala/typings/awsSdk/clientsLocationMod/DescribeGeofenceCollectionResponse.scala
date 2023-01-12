@@ -64,7 +64,8 @@ object DescribeGeofenceCollectionResponse {
     __obj.asInstanceOf[DescribeGeofenceCollectionResponse]
   }
   
-  extension [Self <: DescribeGeofenceCollectionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeGeofenceCollectionResponse] (val x: Self) extends AnyVal {
     
     inline def setCollectionArn(value: Arn): Self = StObject.set(x, "CollectionArn", value.asInstanceOf[js.Any])
     

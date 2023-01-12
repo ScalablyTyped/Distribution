@@ -28,7 +28,8 @@ object TemplateCreateMessageBody {
     __obj.asInstanceOf[TemplateCreateMessageBody]
   }
   
-  extension [Self <: TemplateCreateMessageBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateCreateMessageBody] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

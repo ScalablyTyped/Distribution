@@ -19,7 +19,8 @@ object SORTORDERASC {
     __obj.asInstanceOf[SORTORDERASC]
   }
   
-  extension [Self <: SORTORDERASC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SORTORDERASC] (val x: Self) extends AnyVal {
     
     inline def setSORT_ORDER_ASC(value: `0`): Self = StObject.set(x, "SORT_ORDER_ASC", value.asInstanceOf[js.Any])
     

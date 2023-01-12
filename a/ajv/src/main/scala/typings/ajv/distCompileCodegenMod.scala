@@ -390,7 +390,8 @@ object distCompileCodegenMod {
       __obj.asInstanceOf[CodeGenOptions]
     }
     
-    extension [Self <: CodeGenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeGenOptions] (val x: Self) extends AnyVal {
       
       inline def setEs5(value: Boolean): Self = StObject.set(x, "es5", value.asInstanceOf[js.Any])
       

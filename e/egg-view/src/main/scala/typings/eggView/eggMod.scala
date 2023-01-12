@@ -19,7 +19,8 @@ object eggMod {
       __obj.asInstanceOf[Application]
     }
     
-    extension [Self <: Application](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Application] (val x: Self) extends AnyVal {
       
       inline def setView(value: ViewManager): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     }
@@ -47,7 +48,8 @@ object eggMod {
       __obj.asInstanceOf[EggAppConfig]
     }
     
-    extension [Self <: EggAppConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EggAppConfig] (val x: Self) extends AnyVal {
       
       inline def setView(value: Cache): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     }

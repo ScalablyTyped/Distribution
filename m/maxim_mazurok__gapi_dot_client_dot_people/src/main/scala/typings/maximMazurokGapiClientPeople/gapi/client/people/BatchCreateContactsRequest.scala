@@ -27,7 +27,8 @@ object BatchCreateContactsRequest {
     __obj.asInstanceOf[BatchCreateContactsRequest]
   }
   
-  extension [Self <: BatchCreateContactsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCreateContactsRequest] (val x: Self) extends AnyVal {
     
     inline def setContacts(value: js.Array[ContactToCreate]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
     

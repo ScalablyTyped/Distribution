@@ -33,7 +33,8 @@ object SslPolicy {
     __obj.asInstanceOf[SslPolicy]
   }
   
-  extension [Self <: SslPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SslPolicy] (val x: Self) extends AnyVal {
     
     inline def setCiphers(value: Ciphers): Self = StObject.set(x, "Ciphers", value.asInstanceOf[js.Any])
     

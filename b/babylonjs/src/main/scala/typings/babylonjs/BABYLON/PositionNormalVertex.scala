@@ -19,7 +19,8 @@ object PositionNormalVertex {
     __obj.asInstanceOf[PositionNormalVertex]
   }
   
-  extension [Self <: PositionNormalVertex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionNormalVertex] (val x: Self) extends AnyVal {
     
     inline def setNormal(value: Vector3): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     

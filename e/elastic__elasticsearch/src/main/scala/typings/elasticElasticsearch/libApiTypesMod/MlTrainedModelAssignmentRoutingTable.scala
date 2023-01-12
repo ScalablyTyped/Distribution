@@ -26,7 +26,8 @@ object MlTrainedModelAssignmentRoutingTable {
     __obj.asInstanceOf[MlTrainedModelAssignmentRoutingTable]
   }
   
-  extension [Self <: MlTrainedModelAssignmentRoutingTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlTrainedModelAssignmentRoutingTable] (val x: Self) extends AnyVal {
     
     inline def setCurrent_allocations(value: integer): Self = StObject.set(x, "current_allocations", value.asInstanceOf[js.Any])
     

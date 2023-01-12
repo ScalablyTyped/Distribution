@@ -27,7 +27,8 @@ object typesTraceUserMod {
       __obj.asInstanceOf[TraceUser]
     }
     
-    extension [Self <: TraceUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraceUser] (val x: Self) extends AnyVal {
       
       inline def setServiceIds(value: js.Array[ServiceId] | js.Iterable[ServiceId]): Self = StObject.set(x, "ServiceIds", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object typesTraceUserMod {
       __obj.asInstanceOf[UnmarshalledTraceUser]
     }
     
-    extension [Self <: UnmarshalledTraceUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledTraceUser] (val x: Self) extends AnyVal {
       
       inline def setServiceIds(value: js.Array[UnmarshalledServiceId]): Self = StObject.set(x, "ServiceIds", value.asInstanceOf[js.Any])
       

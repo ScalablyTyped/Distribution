@@ -22,7 +22,8 @@ object EnvContext {
     __obj.asInstanceOf[EnvContext]
   }
   
-  extension [Self <: EnvContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvContext] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

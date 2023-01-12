@@ -48,7 +48,8 @@ object esPanelsQuarterPanelQuarterBodyMod {
       __obj.asInstanceOf[QuarterBodyProps[DateType]]
     }
     
-    extension [Self <: QuarterBodyProps[?], DateType](x: Self & QuarterBodyProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuarterBodyProps[?], DateType] (val x: Self & QuarterBodyProps[DateType]) extends AnyVal {
       
       inline def setDisabledDate(value: /* date */ DateType => Boolean): Self = StObject.set(x, "disabledDate", js.Any.fromFunction1(value))
       

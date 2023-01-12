@@ -24,7 +24,8 @@ object SourceOrderConfig {
     __obj.asInstanceOf[SourceOrderConfig]
   }
   
-  extension [Self <: SourceOrderConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceOrderConfig] (val x: Self) extends AnyVal {
     
     inline def setChildOutlineColor(value: RGBA): Self = StObject.set(x, "childOutlineColor", value.asInstanceOf[js.Any])
     

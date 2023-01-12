@@ -23,7 +23,8 @@ object NetworkInterfacePermissionState {
     __obj.asInstanceOf[NetworkInterfacePermissionState]
   }
   
-  extension [Self <: NetworkInterfacePermissionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkInterfacePermissionState] (val x: Self) extends AnyVal {
     
     inline def setState(value: NetworkInterfacePermissionStateCode): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

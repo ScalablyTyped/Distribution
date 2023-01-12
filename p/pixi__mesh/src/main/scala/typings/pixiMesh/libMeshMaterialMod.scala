@@ -100,7 +100,8 @@ object libMeshMaterialMod {
       __obj.asInstanceOf[IMeshMaterialOptions]
     }
     
-    extension [Self <: IMeshMaterialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMeshMaterialOptions] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       

@@ -36,7 +36,8 @@ object PickImplnamespaceStubPart {
     __obj.asInstanceOf[PickImplnamespaceStubPart]
   }
   
-  extension [Self <: PickImplnamespaceStubPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplnamespaceStubPart] (val x: Self) extends AnyVal {
     
     inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object PartialproductcodeProduct {
     __obj.asInstanceOf[PartialproductcodeProduct]
   }
   
-  extension [Self <: PartialproductcodeProduct](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialproductcodeProduct] (val x: Self) extends AnyVal {
     
     inline def setApi(value: API): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     

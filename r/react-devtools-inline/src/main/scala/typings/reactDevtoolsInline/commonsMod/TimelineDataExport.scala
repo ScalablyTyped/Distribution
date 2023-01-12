@@ -64,7 +64,8 @@ object TimelineDataExport {
     __obj.asInstanceOf[TimelineDataExport]
   }
   
-  extension [Self <: TimelineDataExport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineDataExport] (val x: Self) extends AnyVal {
     
     inline def setBatchUIDToMeasuresKeyValueArray(value: js.Array[js.Tuple2[BatchUID, js.Array[ReactMeasure]]]): Self = StObject.set(x, "batchUIDToMeasuresKeyValueArray", value.asInstanceOf[js.Any])
     

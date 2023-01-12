@@ -472,7 +472,8 @@ object PartialLayoutGridProps {
     __obj.asInstanceOf[PartialLayoutGridProps]
   }
   
-  extension [Self <: PartialLayoutGridProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialLayoutGridProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

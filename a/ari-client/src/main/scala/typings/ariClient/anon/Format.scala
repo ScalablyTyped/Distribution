@@ -27,7 +27,8 @@ object Format {
     __obj.asInstanceOf[Format]
   }
   
-  extension [Self <: Format](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
     
     inline def setBeep(value: Boolean): Self = StObject.set(x, "beep", value.asInstanceOf[js.Any])
     

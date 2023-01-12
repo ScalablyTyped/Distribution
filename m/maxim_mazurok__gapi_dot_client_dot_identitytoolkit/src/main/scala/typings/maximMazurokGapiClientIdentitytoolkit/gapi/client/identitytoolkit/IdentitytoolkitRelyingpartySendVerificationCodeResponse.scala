@@ -16,7 +16,8 @@ object IdentitytoolkitRelyingpartySendVerificationCodeResponse {
     __obj.asInstanceOf[IdentitytoolkitRelyingpartySendVerificationCodeResponse]
   }
   
-  extension [Self <: IdentitytoolkitRelyingpartySendVerificationCodeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentitytoolkitRelyingpartySendVerificationCodeResponse] (val x: Self) extends AnyVal {
     
     inline def setSessionInfo(value: String): Self = StObject.set(x, "sessionInfo", value.asInstanceOf[js.Any])
     

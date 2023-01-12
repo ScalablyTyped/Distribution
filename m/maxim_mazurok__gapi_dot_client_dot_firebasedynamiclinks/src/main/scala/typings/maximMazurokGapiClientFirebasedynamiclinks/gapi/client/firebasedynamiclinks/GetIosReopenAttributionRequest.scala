@@ -25,7 +25,8 @@ object GetIosReopenAttributionRequest {
     __obj.asInstanceOf[GetIosReopenAttributionRequest]
   }
   
-  extension [Self <: GetIosReopenAttributionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIosReopenAttributionRequest] (val x: Self) extends AnyVal {
     
     inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     

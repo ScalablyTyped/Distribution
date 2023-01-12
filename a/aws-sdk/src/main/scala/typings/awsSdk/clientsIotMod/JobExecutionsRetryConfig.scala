@@ -18,7 +18,8 @@ object JobExecutionsRetryConfig {
     __obj.asInstanceOf[JobExecutionsRetryConfig]
   }
   
-  extension [Self <: JobExecutionsRetryConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobExecutionsRetryConfig] (val x: Self) extends AnyVal {
     
     inline def setCriteriaList(value: RetryCriteriaList): Self = StObject.set(x, "criteriaList", value.asInstanceOf[js.Any])
     

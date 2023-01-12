@@ -18,7 +18,8 @@ object BatchEvaluateFeatureResponse {
     __obj.asInstanceOf[BatchEvaluateFeatureResponse]
   }
   
-  extension [Self <: BatchEvaluateFeatureResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchEvaluateFeatureResponse] (val x: Self) extends AnyVal {
     
     inline def setResults(value: EvaluationResultsList): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     

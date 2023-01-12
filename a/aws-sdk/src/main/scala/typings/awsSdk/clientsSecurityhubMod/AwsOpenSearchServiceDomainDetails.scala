@@ -88,7 +88,8 @@ object AwsOpenSearchServiceDomainDetails {
     __obj.asInstanceOf[AwsOpenSearchServiceDomainDetails]
   }
   
-  extension [Self <: AwsOpenSearchServiceDomainDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsOpenSearchServiceDomainDetails] (val x: Self) extends AnyVal {
     
     inline def setAccessPolicies(value: NonEmptyString): Self = StObject.set(x, "AccessPolicies", value.asInstanceOf[js.Any])
     

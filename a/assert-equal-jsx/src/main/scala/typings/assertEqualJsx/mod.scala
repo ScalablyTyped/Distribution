@@ -25,7 +25,8 @@ object mod {
       __obj.asInstanceOf[AsssertOptions]
     }
     
-    extension [Self <: AsssertOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsssertOptions] (val x: Self) extends AnyVal {
       
       inline def setSanitize(value: /* str */ String => String): Self = StObject.set(x, "sanitize", js.Any.fromFunction1(value))
       

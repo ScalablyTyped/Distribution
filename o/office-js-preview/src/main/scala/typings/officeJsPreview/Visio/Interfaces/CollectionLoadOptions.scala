@@ -28,7 +28,8 @@ object CollectionLoadOptions {
     __obj.asInstanceOf[CollectionLoadOptions]
   }
   
-  extension [Self <: CollectionLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$skip(value: Double): Self = StObject.set(x, "$skip", value.asInstanceOf[js.Any])
     

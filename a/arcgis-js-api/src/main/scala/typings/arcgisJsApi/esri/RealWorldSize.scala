@@ -63,7 +63,8 @@ object RealWorldSize {
     __obj.asInstanceOf[RealWorldSize]
   }
   
-  extension [Self <: RealWorldSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RealWorldSize] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object InlineStoryProps {
     __obj.asInstanceOf[InlineStoryProps]
   }
   
-  extension [Self <: InlineStoryProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineStoryProps] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: Parameters[js.Function1[/* args */ Any, Any]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

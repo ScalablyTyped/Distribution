@@ -81,7 +81,8 @@ object stateStateMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setAp(value: State => State): Self = StObject.set(x, "ap", js.Any.fromFunction1(value))
       

@@ -15,7 +15,8 @@ object IEditSessionOperationParams {
     __obj.asInstanceOf[IEditSessionOperationParams]
   }
   
-  extension [Self <: IEditSessionOperationParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEditSessionOperationParams] (val x: Self) extends AnyVal {
     
     inline def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
   }

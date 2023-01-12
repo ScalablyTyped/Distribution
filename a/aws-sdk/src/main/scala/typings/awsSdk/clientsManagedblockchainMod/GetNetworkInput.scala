@@ -18,7 +18,8 @@ object GetNetworkInput {
     __obj.asInstanceOf[GetNetworkInput]
   }
   
-  extension [Self <: GetNetworkInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNetworkInput] (val x: Self) extends AnyVal {
     
     inline def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object DeleteApplicationVpcConfigurationResponse {
     __obj.asInstanceOf[DeleteApplicationVpcConfigurationResponse]
   }
   
-  extension [Self <: DeleteApplicationVpcConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteApplicationVpcConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setApplicationARN(value: ResourceARN): Self = StObject.set(x, "ApplicationARN", value.asInstanceOf[js.Any])
     

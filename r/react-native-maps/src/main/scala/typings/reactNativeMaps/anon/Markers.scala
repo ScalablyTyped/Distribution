@@ -16,7 +16,8 @@ object Markers {
     __obj.asInstanceOf[Markers]
   }
   
-  extension [Self <: Markers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Markers] (val x: Self) extends AnyVal {
     
     inline def setMarkers(value: js.Array[KmlMarker]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
     

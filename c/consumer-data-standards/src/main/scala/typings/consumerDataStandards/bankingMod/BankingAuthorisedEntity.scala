@@ -41,7 +41,8 @@ object BankingAuthorisedEntity {
     __obj.asInstanceOf[BankingAuthorisedEntity]
   }
   
-  extension [Self <: BankingAuthorisedEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BankingAuthorisedEntity] (val x: Self) extends AnyVal {
     
     inline def setAbn(value: String): Self = StObject.set(x, "abn", value.asInstanceOf[js.Any])
     

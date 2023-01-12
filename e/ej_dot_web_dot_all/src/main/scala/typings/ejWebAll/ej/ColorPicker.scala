@@ -203,7 +203,8 @@ object ColorPicker {
       __obj.asInstanceOf[ButtonText]
     }
     
-    extension [Self <: ButtonText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonText] (val x: Self) extends AnyVal {
       
       inline def setApply(value: String): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
       
@@ -240,7 +241,8 @@ object ColorPicker {
       __obj.asInstanceOf[ChangeEventArgs]
     }
     
-    extension [Self <: ChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setChangeFrom(value: String): Self = StObject.set(x, "changeFrom", value.asInstanceOf[js.Any])
       
@@ -273,7 +275,8 @@ object ColorPicker {
       __obj.asInstanceOf[CloseEventArgs]
     }
     
-    extension [Self <: CloseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -302,7 +305,8 @@ object ColorPicker {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -335,7 +339,8 @@ object ColorPicker {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -502,7 +507,8 @@ object ColorPicker {
       __obj.asInstanceOf[typings.ejWebAll.ej.ColorPicker.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.ColorPicker.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.ColorPicker.Model] (val x: Self) extends AnyVal {
       
       inline def setButtonMode(value: ButtonMode | String): Self = StObject.set(x, "buttonMode", value.asInstanceOf[js.Any])
       
@@ -641,7 +647,8 @@ object ColorPicker {
       __obj.asInstanceOf[OpenEventArgs]
     }
     
-    extension [Self <: OpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -674,7 +681,8 @@ object ColorPicker {
       __obj.asInstanceOf[SelectEventArgs]
     }
     
-    extension [Self <: SelectEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -763,7 +771,8 @@ object ColorPicker {
       __obj.asInstanceOf[TooltipText]
     }
     
-    extension [Self <: TooltipText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipText] (val x: Self) extends AnyVal {
       
       inline def setAddButton(value: String): Self = StObject.set(x, "addButton", value.asInstanceOf[js.Any])
       

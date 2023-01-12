@@ -16,7 +16,8 @@ object SuccessDetail {
     __obj.asInstanceOf[SuccessDetail]
   }
   
-  extension [Self <: SuccessDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuccessDetail] (val x: Self) extends AnyVal {
     
     inline def setOtherNativeCrash(value: Boolean): Self = StObject.set(x, "otherNativeCrash", value.asInstanceOf[js.Any])
     

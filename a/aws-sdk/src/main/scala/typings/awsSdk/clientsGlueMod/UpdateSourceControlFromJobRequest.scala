@@ -58,7 +58,8 @@ object UpdateSourceControlFromJobRequest {
     __obj.asInstanceOf[UpdateSourceControlFromJobRequest]
   }
   
-  extension [Self <: UpdateSourceControlFromJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSourceControlFromJobRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthStrategy(value: SourceControlAuthStrategy): Self = StObject.set(x, "AuthStrategy", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object NavigationAnnotationsTimeCyclesTypeOptions {
     __obj.asInstanceOf[NavigationAnnotationsTimeCyclesTypeOptions]
   }
   
-  extension [Self <: NavigationAnnotationsTimeCyclesTypeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationAnnotationsTimeCyclesTypeOptions] (val x: Self) extends AnyVal {
     
     inline def setLine(value: NavigationAnnotationsTimeCyclesTypeLineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     

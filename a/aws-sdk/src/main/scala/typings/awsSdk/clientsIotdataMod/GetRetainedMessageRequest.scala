@@ -18,7 +18,8 @@ object GetRetainedMessageRequest {
     __obj.asInstanceOf[GetRetainedMessageRequest]
   }
   
-  extension [Self <: GetRetainedMessageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRetainedMessageRequest] (val x: Self) extends AnyVal {
     
     inline def setTopic(value: Topic): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }

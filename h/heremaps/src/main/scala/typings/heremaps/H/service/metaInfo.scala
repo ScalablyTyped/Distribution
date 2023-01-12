@@ -304,7 +304,8 @@ object metaInfo {
         __obj.asInstanceOf[Info]
       }
       
-      extension [Self <: Info](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
         
         inline def setFormats(value: StringDictionary[Any]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
         
@@ -341,7 +342,8 @@ object metaInfo {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setSubDomain(value: String): Self = StObject.set(x, "subDomain", value.asInstanceOf[js.Any])
         
@@ -390,7 +392,8 @@ object metaInfo {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setCategoryFilter(value: js.Array[String]): Self = StObject.set(x, "categoryFilter", value.asInstanceOf[js.Any])
         

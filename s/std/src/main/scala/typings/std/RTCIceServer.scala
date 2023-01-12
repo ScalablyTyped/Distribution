@@ -22,7 +22,8 @@ object RTCIceServer {
     __obj.asInstanceOf[RTCIceServer]
   }
   
-  extension [Self <: RTCIceServer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCIceServer] (val x: Self) extends AnyVal {
     
     inline def setCredential(value: java.lang.String): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     

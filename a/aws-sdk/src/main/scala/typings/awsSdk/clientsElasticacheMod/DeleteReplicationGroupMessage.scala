@@ -28,7 +28,8 @@ object DeleteReplicationGroupMessage {
     __obj.asInstanceOf[DeleteReplicationGroupMessage]
   }
   
-  extension [Self <: DeleteReplicationGroupMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteReplicationGroupMessage] (val x: Self) extends AnyVal {
     
     inline def setFinalSnapshotIdentifier(value: String): Self = StObject.set(x, "FinalSnapshotIdentifier", value.asInstanceOf[js.Any])
     

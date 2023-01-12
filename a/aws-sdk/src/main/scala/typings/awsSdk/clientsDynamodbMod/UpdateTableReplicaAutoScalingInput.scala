@@ -30,7 +30,8 @@ object UpdateTableReplicaAutoScalingInput {
     __obj.asInstanceOf[UpdateTableReplicaAutoScalingInput]
   }
   
-  extension [Self <: UpdateTableReplicaAutoScalingInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTableReplicaAutoScalingInput] (val x: Self) extends AnyVal {
     
     inline def setGlobalSecondaryIndexUpdates(value: GlobalSecondaryIndexAutoScalingUpdateList): Self = StObject.set(x, "GlobalSecondaryIndexUpdates", value.asInstanceOf[js.Any])
     

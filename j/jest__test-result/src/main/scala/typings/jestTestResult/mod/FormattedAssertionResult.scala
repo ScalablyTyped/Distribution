@@ -34,7 +34,8 @@ object FormattedAssertionResult {
     __obj.asInstanceOf[FormattedAssertionResult]
   }
   
-  extension [Self <: FormattedAssertionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormattedAssertionResult] (val x: Self) extends AnyVal {
     
     inline def setAncestorTitles(value: js.Array[String]): Self = StObject.set(x, "ancestorTitles", value.asInstanceOf[js.Any])
     

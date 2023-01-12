@@ -35,7 +35,8 @@ object UpdateVolumeRequest {
     __obj.asInstanceOf[UpdateVolumeRequest]
   }
   
-  extension [Self <: UpdateVolumeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateVolumeRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

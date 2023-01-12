@@ -35,7 +35,8 @@ object CommonPhysicalAddress {
     __obj.asInstanceOf[CommonPhysicalAddress]
   }
   
-  extension [Self <: CommonPhysicalAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonPhysicalAddress] (val x: Self) extends AnyVal {
     
     inline def setAddressUType(value: paf | simple): Self = StObject.set(x, "addressUType", value.asInstanceOf[js.Any])
     

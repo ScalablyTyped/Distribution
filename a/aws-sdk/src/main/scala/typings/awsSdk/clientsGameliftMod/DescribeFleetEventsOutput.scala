@@ -23,7 +23,8 @@ object DescribeFleetEventsOutput {
     __obj.asInstanceOf[DescribeFleetEventsOutput]
   }
   
-  extension [Self <: DescribeFleetEventsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFleetEventsOutput] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: EventList): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     

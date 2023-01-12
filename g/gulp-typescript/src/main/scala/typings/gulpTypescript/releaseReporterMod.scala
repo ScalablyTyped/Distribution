@@ -69,7 +69,8 @@ object releaseReporterMod {
       __obj.asInstanceOf[CompilationResult]
     }
     
-    extension [Self <: CompilationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompilationResult] (val x: Self) extends AnyVal {
       
       inline def setDeclarationErrors(value: Double): Self = StObject.set(x, "declarationErrors", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object releaseReporterMod {
       __obj.asInstanceOf[Reporter]
     }
     
-    extension [Self <: Reporter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reporter] (val x: Self) extends AnyVal {
       
       inline def setError(value: (/* error */ TypeScriptError, /* typescript */ Typeofts) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
       
@@ -141,7 +143,8 @@ object releaseReporterMod {
       __obj.asInstanceOf[TypeScriptError]
     }
     
-    extension [Self <: TypeScriptError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeScriptError] (val x: Self) extends AnyVal {
       
       inline def setDiagnostic(value: Diagnostic): Self = StObject.set(x, "diagnostic", value.asInstanceOf[js.Any])
       

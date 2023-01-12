@@ -23,7 +23,8 @@ object ocrVehicleLicenseResponse {
     __obj.asInstanceOf[ocrVehicleLicenseResponse]
   }
   
-  extension [Self <: ocrVehicleLicenseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ocrVehicleLicenseResponse] (val x: Self) extends AnyVal {
     
     inline def setLog_id(value: String): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
     

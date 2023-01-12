@@ -46,7 +46,8 @@ object stylesCreateTypographyMod {
       __obj.asInstanceOf[FontStyle]
     }
     
-    extension [Self <: FontStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontStyle] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: FontFamily): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object stylesCreateTypographyMod {
       __obj.asInstanceOf[FontStyleOptions]
     }
     
-    extension [Self <: FontStyleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontStyleOptions] (val x: Self) extends AnyVal {
       
       inline def setAllVariants(value: CSSProperties): Self = StObject.set(x, "allVariants", value.asInstanceOf[js.Any])
       
@@ -197,7 +199,8 @@ object stylesCreateTypographyMod {
       __obj.asInstanceOf[Typography]
     }
     
-    extension [Self <: Typography](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typography] (val x: Self) extends AnyVal {
       
       inline def setBody1(value: TypographyStyle): Self = StObject.set(x, "body1", value.asInstanceOf[js.Any])
       
@@ -293,7 +296,8 @@ object stylesCreateTypographyMod {
       __obj.asInstanceOf[TypographyOptions]
     }
     
-    extension [Self <: TypographyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypographyOptions] (val x: Self) extends AnyVal {
       
       inline def setAllVariants(value: CSSProperties): Self = StObject.set(x, "allVariants", value.asInstanceOf[js.Any])
       
@@ -396,7 +400,8 @@ object stylesCreateTypographyMod {
       __obj.asInstanceOf[TypographyUtils]
     }
     
-    extension [Self <: TypographyUtils](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypographyUtils] (val x: Self) extends AnyVal {
       
       inline def setPxToRem(value: Double => String): Self = StObject.set(x, "pxToRem", js.Any.fromFunction1(value))
     }

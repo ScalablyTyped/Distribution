@@ -21,7 +21,8 @@ object RadialGaugePointerItem {
     __obj.asInstanceOf[RadialGaugePointerItem]
   }
   
-  extension [Self <: RadialGaugePointerItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadialGaugePointerItem] (val x: Self) extends AnyVal {
     
     inline def setCap(value: RadialGaugePointerItemCap): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
     

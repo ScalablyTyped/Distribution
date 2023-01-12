@@ -18,7 +18,8 @@ object SwanIdOptions {
     __obj.asInstanceOf[SwanIdOptions]
   }
   
-  extension [Self <: SwanIdOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwanIdOptions] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: /* res */ SwanIdTask => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

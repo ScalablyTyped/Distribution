@@ -25,7 +25,8 @@ object MakeBucketPrivateOptions {
     __obj.asInstanceOf[MakeBucketPrivateOptions]
   }
   
-  extension [Self <: MakeBucketPrivateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MakeBucketPrivateOptions] (val x: Self) extends AnyVal {
     
     inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     

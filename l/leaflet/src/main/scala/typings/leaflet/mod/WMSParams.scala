@@ -31,7 +31,8 @@ object WMSParams {
     __obj.asInstanceOf[WMSParams]
   }
   
-  extension [Self <: WMSParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WMSParams] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

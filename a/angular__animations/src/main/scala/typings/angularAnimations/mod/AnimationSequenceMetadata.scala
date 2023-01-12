@@ -28,7 +28,8 @@ object AnimationSequenceMetadata {
     __obj.asInstanceOf[AnimationSequenceMetadata]
   }
   
-  extension [Self <: AnimationSequenceMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationSequenceMetadata] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: AnimationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

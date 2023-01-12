@@ -18,7 +18,8 @@ object RecrawlPolicy {
     __obj.asInstanceOf[RecrawlPolicy]
   }
   
-  extension [Self <: RecrawlPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecrawlPolicy] (val x: Self) extends AnyVal {
     
     inline def setRecrawlBehavior(value: RecrawlBehavior): Self = StObject.set(x, "RecrawlBehavior", value.asInstanceOf[js.Any])
     

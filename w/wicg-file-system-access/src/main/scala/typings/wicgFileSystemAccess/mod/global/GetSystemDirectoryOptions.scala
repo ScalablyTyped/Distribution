@@ -17,7 +17,8 @@ object GetSystemDirectoryOptions {
     __obj.asInstanceOf[GetSystemDirectoryOptions]
   }
   
-  extension [Self <: GetSystemDirectoryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSystemDirectoryOptions] (val x: Self) extends AnyVal {
     
     inline def setType(value: sandbox): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

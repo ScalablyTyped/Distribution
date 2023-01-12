@@ -62,7 +62,8 @@ object libMinHeapMod {
       __obj.asInstanceOf[HeapWrapper[T]]
     }
     
-    extension [Self <: HeapWrapper[?], T](x: Self & HeapWrapper[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeapWrapper[?], T] (val x: Self & HeapWrapper[T]) extends AnyVal {
       
       inline def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

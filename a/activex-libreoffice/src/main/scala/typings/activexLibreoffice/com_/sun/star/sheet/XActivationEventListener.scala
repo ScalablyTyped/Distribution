@@ -37,7 +37,8 @@ object XActivationEventListener {
     __obj.asInstanceOf[XActivationEventListener]
   }
   
-  extension [Self <: XActivationEventListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XActivationEventListener] (val x: Self) extends AnyVal {
     
     inline def setActiveSpreadsheetChanged(value: ActivationEvent => Unit): Self = StObject.set(x, "activeSpreadsheetChanged", js.Any.fromFunction1(value))
   }

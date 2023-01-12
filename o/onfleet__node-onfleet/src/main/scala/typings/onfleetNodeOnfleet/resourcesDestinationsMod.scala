@@ -44,7 +44,8 @@ object resourcesDestinationsMod {
       __obj.asInstanceOf[CreateDestinationProps]
     }
     
-    extension [Self <: CreateDestinationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateDestinationProps] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: DestinationAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object resourcesDestinationsMod {
       __obj.asInstanceOf[Destination]
     }
     
-    extension [Self <: Destination](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Destination] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: CreateDestinationProps => js.Promise[OnfleetDestination]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
@@ -130,7 +132,8 @@ object resourcesDestinationsMod {
       __obj.asInstanceOf[DestinationAddress]
     }
     
-    extension [Self <: DestinationAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestinationAddress] (val x: Self) extends AnyVal {
       
       inline def setApartment(value: String): Self = StObject.set(x, "apartment", value.asInstanceOf[js.Any])
       
@@ -199,7 +202,8 @@ object resourcesDestinationsMod {
       __obj.asInstanceOf[OnfleetDestination]
     }
     
-    extension [Self <: OnfleetDestination](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnfleetDestination] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: Apartment): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object Whitelist {
     __obj.asInstanceOf[Whitelist]
   }
   
-  extension [Self <: Whitelist](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Whitelist] (val x: Self) extends AnyVal {
     
     inline def setWhitelist(value: js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
     

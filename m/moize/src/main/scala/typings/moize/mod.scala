@@ -72,7 +72,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Expiration]
     }
     
-    extension [Self <: Expiration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Expiration] (val x: Self) extends AnyVal {
       
       inline def setExpirationMethod(value: () => Unit): Self = StObject.set(x, "expirationMethod", js.Any.fromFunction0(value))
       
@@ -111,7 +112,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[GlobalStatsObject]
     }
     
-    extension [Self <: GlobalStatsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalStatsObject] (val x: Self) extends AnyVal {
       
       inline def setProfiles(value: Record[String, StatsProfile]): Self = StObject.set(x, "profiles", value.asInstanceOf[js.Any])
       
@@ -244,7 +246,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MoizeConfiguration[OriginalFn]]
     }
     
-    extension [Self <: MoizeConfiguration[?], OriginalFn /* <: Moizeable */](x: Self & MoizeConfiguration[OriginalFn]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MoizeConfiguration[?], OriginalFn /* <: Moizeable */] (val x: Self & MoizeConfiguration[OriginalFn]) extends AnyVal {
       
       inline def setExpirations(value: js.Array[Expiration]): Self = StObject.set(x, "expirations", value.asInstanceOf[js.Any])
       
@@ -335,7 +338,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Moized[OriginalFn, CombinedOptions]]
     }
     
-    extension [Self <: Moized[?, ?], OriginalFn /* <: Moizeable */, CombinedOptions /* <: Options */](x: Self & (Moized[OriginalFn, CombinedOptions])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Moized[?, ?], OriginalFn /* <: Moizeable */, CombinedOptions /* <: Options */] (val x: Self & (Moized[OriginalFn, CombinedOptions])) extends AnyVal {
       
       inline def setCache(value: Cache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -463,7 +467,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setIsDeepEqual(value: Boolean): Self = StObject.set(x, "isDeepEqual", value.asInstanceOf[js.Any])
       
@@ -570,7 +575,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[StatsCache]
     }
     
-    extension [Self <: StatsCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatsCache] (val x: Self) extends AnyVal {
       
       inline def setAnonymousProfileNameCounter(value: Double): Self = StObject.set(x, "anonymousProfileNameCounter", value.asInstanceOf[js.Any])
       
@@ -595,7 +601,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[StatsObject]
     }
     
-    extension [Self <: StatsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatsObject] (val x: Self) extends AnyVal {
       
       inline def setCalls(value: Double): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
       
@@ -618,7 +625,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[StatsProfile]
     }
     
-    extension [Self <: StatsProfile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatsProfile] (val x: Self) extends AnyVal {
       
       inline def setCalls(value: Double): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
       

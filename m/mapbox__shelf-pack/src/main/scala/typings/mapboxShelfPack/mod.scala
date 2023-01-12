@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[CreateOption]
     }
     
-    extension [Self <: CreateOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateOption] (val x: Self) extends AnyVal {
       
       inline def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object mod {
       __obj.asInstanceOf[PackOption]
     }
     
-    extension [Self <: PackOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackOption] (val x: Self) extends AnyVal {
       
       inline def setInPlace(value: Boolean): Self = StObject.set(x, "inPlace", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object mod {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -115,7 +118,8 @@ object mod {
       __obj.asInstanceOf[RequestLong]
     }
     
-    extension [Self <: RequestLong](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestLong] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -138,7 +142,8 @@ object mod {
       __obj.asInstanceOf[RequestShort]
     }
     
-    extension [Self <: RequestShort](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestShort] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object GoogleCloudDialogflowV2WebhookResponse {
     __obj.asInstanceOf[GoogleCloudDialogflowV2WebhookResponse]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2WebhookResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2WebhookResponse] (val x: Self) extends AnyVal {
     
     inline def setFollowupEventInput(value: GoogleCloudDialogflowV2EventInput): Self = StObject.set(x, "followupEventInput", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object TagCriterionForJob {
     __obj.asInstanceOf[TagCriterionForJob]
   }
   
-  extension [Self <: TagCriterionForJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagCriterionForJob] (val x: Self) extends AnyVal {
     
     inline def setComparator(value: JobComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     

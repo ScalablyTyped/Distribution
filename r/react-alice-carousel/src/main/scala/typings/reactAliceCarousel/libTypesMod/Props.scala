@@ -112,7 +112,8 @@ object Props {
     __obj.asInstanceOf[Props]
   }
   
-  extension [Self <: Props](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
     
     inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     

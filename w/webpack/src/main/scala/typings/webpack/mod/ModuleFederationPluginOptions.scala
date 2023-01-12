@@ -82,7 +82,8 @@ object ModuleFederationPluginOptions {
     __obj.asInstanceOf[ModuleFederationPluginOptions]
   }
   
-  extension [Self <: ModuleFederationPluginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleFederationPluginOptions] (val x: Self) extends AnyVal {
     
     inline def setExposes(value: (js.Array[String | ExposesObject]) | ExposesObject): Self = StObject.set(x, "exposes", value.asInstanceOf[js.Any])
     

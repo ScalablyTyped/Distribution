@@ -64,7 +64,8 @@ object libTailFileMod {
       __obj.asInstanceOf[EventPayload]
     }
     
-    extension [Self <: EventPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventPayload] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object libTailFileMod {
       __obj.asInstanceOf[FlushEventPayload]
     }
     
-    extension [Self <: FlushEventPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlushEventPayload] (val x: Self) extends AnyVal {
       
       inline def setLastReadPosition(value: Double): Self = StObject.set(x, "lastReadPosition", value.asInstanceOf[js.Any])
     }
@@ -131,7 +133,8 @@ object libTailFileMod {
       __obj.asInstanceOf[ReadableEvents]
     }
     
-    extension [Self <: ReadableEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadableEvents] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -165,7 +168,8 @@ object libTailFileMod {
       __obj.asInstanceOf[RetryEventPayload]
     }
     
-    extension [Self <: RetryEventPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryEventPayload] (val x: Self) extends AnyVal {
       
       inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
     }
@@ -195,7 +199,8 @@ object libTailFileMod {
       __obj.asInstanceOf[TailErrorEventPayload]
     }
     
-    extension [Self <: TailErrorEventPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TailErrorEventPayload] (val x: Self) extends AnyVal {
       
       inline def setCode(value: ETAIL): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -296,7 +301,8 @@ object libTailFileMod {
       __obj.asInstanceOf[TailFileEvents]
     }
     
-    extension [Self <: TailFileEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TailFileEvents] (val x: Self) extends AnyVal {
       
       inline def setFlush(value: FlushEventPayload => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction1(value))
       
@@ -355,7 +361,8 @@ object libTailFileMod {
       __obj.asInstanceOf[TailFileOptions]
     }
     
-    extension [Self <: TailFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TailFileOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxPollFailures(value: Double): Self = StObject.set(x, "maxPollFailures", value.asInstanceOf[js.Any])
       

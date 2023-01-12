@@ -23,7 +23,8 @@ object FindingProviderSeverity {
     __obj.asInstanceOf[FindingProviderSeverity]
   }
   
-  extension [Self <: FindingProviderSeverity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindingProviderSeverity] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: SeverityLabel): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     

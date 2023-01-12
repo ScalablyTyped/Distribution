@@ -38,7 +38,8 @@ object DeleteMarkerEntry {
     __obj.asInstanceOf[DeleteMarkerEntry]
   }
   
-  extension [Self <: DeleteMarkerEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteMarkerEntry] (val x: Self) extends AnyVal {
     
     inline def setIsLatest(value: IsLatest): Self = StObject.set(x, "IsLatest", value.asInstanceOf[js.Any])
     

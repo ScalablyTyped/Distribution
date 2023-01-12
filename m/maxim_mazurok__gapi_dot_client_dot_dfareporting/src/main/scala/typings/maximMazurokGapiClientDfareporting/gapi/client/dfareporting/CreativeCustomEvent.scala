@@ -43,7 +43,8 @@ object CreativeCustomEvent {
     __obj.asInstanceOf[CreativeCustomEvent]
   }
   
-  extension [Self <: CreativeCustomEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreativeCustomEvent] (val x: Self) extends AnyVal {
     
     inline def setAdvertiserCustomEventId(value: String): Self = StObject.set(x, "advertiserCustomEventId", value.asInstanceOf[js.Any])
     

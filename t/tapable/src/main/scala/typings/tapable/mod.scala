@@ -179,7 +179,8 @@ object mod {
       __obj.asInstanceOf[FullTap]
     }
     
-    extension [Self <: FullTap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullTap] (val x: Self) extends AnyVal {
       
       inline def setFn(value: js.Function): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
       
@@ -241,7 +242,8 @@ object mod {
       __obj.asInstanceOf[HookInterceptor[T, R, AdditionalOptions]]
     }
     
-    extension [Self <: HookInterceptor[?, ?, ?], T, R, AdditionalOptions](x: Self & (HookInterceptor[T, R, AdditionalOptions])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HookInterceptor[?, ?, ?], T, R, AdditionalOptions] (val x: Self & (HookInterceptor[T, R, AdditionalOptions])) extends AnyVal {
       
       inline def setCall(value: /* repeated */ Any => Unit): Self = StObject.set(x, "call", js.Any.fromFunction1(value))
       
@@ -288,7 +290,8 @@ object mod {
       __obj.asInstanceOf[HookMapInterceptor[H]]
     }
     
-    extension [Self <: HookMapInterceptor[?], H](x: Self & HookMapInterceptor[H]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HookMapInterceptor[?], H] (val x: Self & HookMapInterceptor[H]) extends AnyVal {
       
       inline def setFactory(value: (/* key */ Any, /* hook */ js.UndefOr[H]) => H): Self = StObject.set(x, "factory", js.Any.fromFunction2(value))
       
@@ -329,7 +332,8 @@ object mod {
       __obj.asInstanceOf[Tap]
     }
     
-    extension [Self <: Tap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tap] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -348,7 +352,8 @@ object mod {
       __obj.asInstanceOf[TapOptions]
     }
     
-    extension [Self <: TapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TapOptions] (val x: Self) extends AnyVal {
       
       inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
@@ -371,7 +376,8 @@ object mod {
       __obj.asInstanceOf[UnsetAdditionalOptions]
     }
     
-    extension [Self <: UnsetAdditionalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnsetAdditionalOptions] (val x: Self) extends AnyVal {
       
       inline def set_UnsetAdditionalOptions(value: `true`): Self = StObject.set(x, "_UnsetAdditionalOptions", value.asInstanceOf[js.Any])
     }

@@ -21,7 +21,8 @@ object SqlQueryRequest {
     __obj.asInstanceOf[SqlQueryRequest]
   }
   
-  extension [Self <: SqlQueryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlQueryRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Catalog): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

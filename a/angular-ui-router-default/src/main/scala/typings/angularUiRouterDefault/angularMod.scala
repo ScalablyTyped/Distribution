@@ -21,7 +21,8 @@ object angularMod {
         __obj.asInstanceOf[IState]
       }
       
-      extension [Self <: IState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IState] (val x: Self) extends AnyVal {
         
         inline def setDefault(value: StateDefaultSpecifier): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
         

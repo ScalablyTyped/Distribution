@@ -16,7 +16,8 @@ object `1` {
     __obj.asInstanceOf[`1`[TitleTypographyComponent]]
   }
   
-  extension [Self <: `1`[?], TitleTypographyComponent /* <: ElementType[Any] */](x: Self & `1`[TitleTypographyComponent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `1`[?], TitleTypographyComponent /* <: ElementType[Any] */] (val x: Self & `1`[TitleTypographyComponent]) extends AnyVal {
     
     inline def setComponent(value: TitleTypographyComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

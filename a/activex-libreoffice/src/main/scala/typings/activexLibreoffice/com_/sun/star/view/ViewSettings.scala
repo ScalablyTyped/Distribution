@@ -53,7 +53,8 @@ object ViewSettings {
     __obj.asInstanceOf[ViewSettings]
   }
   
-  extension [Self <: ViewSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewSettings] (val x: Self) extends AnyVal {
     
     inline def setShowHoriRuler(value: Boolean): Self = StObject.set(x, "ShowHoriRuler", value.asInstanceOf[js.Any])
     

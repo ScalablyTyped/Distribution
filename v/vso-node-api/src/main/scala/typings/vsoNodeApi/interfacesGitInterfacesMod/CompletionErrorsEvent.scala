@@ -20,7 +20,8 @@ object CompletionErrorsEvent {
     __obj.asInstanceOf[CompletionErrorsEvent]
   }
   
-  extension [Self <: CompletionErrorsEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionErrorsEvent] (val x: Self) extends AnyVal {
     
     inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object SqlInjectionMatchTuple {
     __obj.asInstanceOf[SqlInjectionMatchTuple]
   }
   
-  extension [Self <: SqlInjectionMatchTuple](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlInjectionMatchTuple] (val x: Self) extends AnyVal {
     
     inline def setFieldToMatch(value: FieldToMatch): Self = StObject.set(x, "FieldToMatch", value.asInstanceOf[js.Any])
     

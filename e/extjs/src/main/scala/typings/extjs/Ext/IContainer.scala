@@ -28,7 +28,8 @@ object IContainer {
     __obj.asInstanceOf[IContainer]
   }
   
-  extension [Self <: IContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IContainer] (val x: Self) extends AnyVal {
     
     inline def setAnchorSize(value: Any): Self = StObject.set(x, "anchorSize", value.asInstanceOf[js.Any])
     

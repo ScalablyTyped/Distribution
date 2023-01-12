@@ -29,7 +29,8 @@ object Services {
     __obj.asInstanceOf[Services[TContext, TResolvedTypesMeta]]
   }
   
-  extension [Self <: Services[?, ?], TContext, TResolvedTypesMeta](x: Self & (Services[TContext, TResolvedTypesMeta])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Services[?, ?], TContext, TResolvedTypesMeta] (val x: Self & (Services[TContext, TResolvedTypesMeta])) extends AnyVal {
     
     inline def setServices(
       value: MachineOptionsServices[

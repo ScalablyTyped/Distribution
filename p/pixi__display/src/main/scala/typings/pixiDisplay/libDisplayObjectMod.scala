@@ -505,7 +505,8 @@ object libDisplayObjectMod {
       __obj.asInstanceOf[DisplayObjectEvents]
     }
     
-    extension [Self <: DisplayObjectEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayObjectEvents] (val x: Self) extends AnyVal {
       
       inline def setAdded(value: js.Array[/* container */ Container[DisplayObject]]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
       
@@ -552,7 +553,8 @@ object libDisplayObjectMod {
       __obj.asInstanceOf[IDestroyOptions]
     }
     
-    extension [Self <: IDestroyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDestroyOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseTexture(value: Boolean): Self = StObject.set(x, "baseTexture", value.asInstanceOf[js.Any])
       

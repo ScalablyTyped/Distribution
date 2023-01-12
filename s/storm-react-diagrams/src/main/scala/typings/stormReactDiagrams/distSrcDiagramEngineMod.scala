@@ -231,7 +231,8 @@ object distSrcDiagramEngineMod {
       __obj.asInstanceOf[DiagramEngineListener]
     }
     
-    extension [Self <: DiagramEngineListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiagramEngineListener] (val x: Self) extends AnyVal {
       
       inline def setLabelFactoriesUpdated(value: () => Unit): Self = StObject.set(x, "labelFactoriesUpdated", js.Any.fromFunction0(value))
       

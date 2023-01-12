@@ -45,7 +45,8 @@ object ISubscription {
     __obj.asInstanceOf[ISubscription[TArgs, TKWArgs, TName]]
   }
   
-  extension [Self <: ISubscription[?, ?, ?], TArgs, TKWArgs, TName](x: Self & (ISubscription[TArgs, TKWArgs, TName])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISubscription[?, ?, ?], TArgs, TKWArgs, TName] (val x: Self & (ISubscription[TArgs, TKWArgs, TName])) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ExchangeCodeForTokenRequestBody {
     __obj.asInstanceOf[ExchangeCodeForTokenRequestBody]
   }
   
-  extension [Self <: ExchangeCodeForTokenRequestBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExchangeCodeForTokenRequestBody] (val x: Self) extends AnyVal {
     
     inline def setCode(value: SensitiveString): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

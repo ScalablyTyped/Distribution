@@ -41,7 +41,8 @@ object TimelineStyleLoadOptions {
     __obj.asInstanceOf[TimelineStyleLoadOptions]
   }
   
-  extension [Self <: TimelineStyleLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineStyleLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object UpdateTrustRequest {
     __obj.asInstanceOf[UpdateTrustRequest]
   }
   
-  extension [Self <: UpdateTrustRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTrustRequest] (val x: Self) extends AnyVal {
     
     inline def setSelectiveAuth(value: SelectiveAuth): Self = StObject.set(x, "SelectiveAuth", value.asInstanceOf[js.Any])
     

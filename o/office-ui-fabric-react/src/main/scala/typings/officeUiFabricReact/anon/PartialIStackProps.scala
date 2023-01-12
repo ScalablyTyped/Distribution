@@ -506,7 +506,8 @@ object PartialIStackProps {
     __obj.asInstanceOf[PartialIStackProps]
   }
   
-  extension [Self <: PartialIStackProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIStackProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

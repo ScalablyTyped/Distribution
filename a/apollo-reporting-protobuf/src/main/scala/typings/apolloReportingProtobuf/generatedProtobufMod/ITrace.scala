@@ -76,7 +76,8 @@ object ITrace {
     __obj.asInstanceOf[ITrace]
   }
   
-  extension [Self <: ITrace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITrace] (val x: Self) extends AnyVal {
     
     inline def setCachePolicy(value: ICachePolicy): Self = StObject.set(x, "cachePolicy", value.asInstanceOf[js.Any])
     

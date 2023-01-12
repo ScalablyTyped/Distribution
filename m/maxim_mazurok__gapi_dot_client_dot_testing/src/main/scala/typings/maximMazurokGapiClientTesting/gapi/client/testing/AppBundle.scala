@@ -16,7 +16,8 @@ object AppBundle {
     __obj.asInstanceOf[AppBundle]
   }
   
-  extension [Self <: AppBundle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppBundle] (val x: Self) extends AnyVal {
     
     inline def setBundleLocation(value: FileReference): Self = StObject.set(x, "bundleLocation", value.asInstanceOf[js.Any])
     

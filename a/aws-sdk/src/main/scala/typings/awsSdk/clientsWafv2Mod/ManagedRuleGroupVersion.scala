@@ -23,7 +23,8 @@ object ManagedRuleGroupVersion {
     __obj.asInstanceOf[ManagedRuleGroupVersion]
   }
   
-  extension [Self <: ManagedRuleGroupVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedRuleGroupVersion] (val x: Self) extends AnyVal {
     
     inline def setLastUpdateTimestamp(value: js.Date): Self = StObject.set(x, "LastUpdateTimestamp", value.asInstanceOf[js.Any])
     

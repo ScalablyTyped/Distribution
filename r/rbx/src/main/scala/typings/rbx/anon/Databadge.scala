@@ -15,7 +15,8 @@ object Databadge {
     __obj.asInstanceOf[Databadge]
   }
   
-  extension [Self <: Databadge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Databadge] (val x: Self) extends AnyVal {
     
     inline def `setData-badge`(value: String | Double): Self = StObject.set(x, "data-badge", value.asInstanceOf[js.Any])
     

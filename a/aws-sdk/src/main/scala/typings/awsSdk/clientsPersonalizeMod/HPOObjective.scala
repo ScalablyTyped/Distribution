@@ -28,7 +28,8 @@ object HPOObjective {
     __obj.asInstanceOf[HPOObjective]
   }
   
-  extension [Self <: HPOObjective](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HPOObjective] (val x: Self) extends AnyVal {
     
     inline def setMetricName(value: MetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     

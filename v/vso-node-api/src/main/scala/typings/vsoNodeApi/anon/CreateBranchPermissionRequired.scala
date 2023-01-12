@@ -62,7 +62,8 @@ object CreateBranchPermissionRequired {
     __obj.asInstanceOf[CreateBranchPermissionRequired]
   }
   
-  extension [Self <: CreateBranchPermissionRequired](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBranchPermissionRequired] (val x: Self) extends AnyVal {
     
     inline def setCreateBranchPermissionRequired(value: scala.Double): Self = StObject.set(x, "createBranchPermissionRequired", value.asInstanceOf[js.Any])
     

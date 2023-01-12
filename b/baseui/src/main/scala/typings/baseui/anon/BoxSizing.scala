@@ -31,7 +31,8 @@ object BoxSizing {
     __obj.asInstanceOf[BoxSizing]
   }
   
-  extension [Self <: BoxSizing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoxSizing] (val x: Self) extends AnyVal {
     
     inline def setAlignItems(value: center): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     

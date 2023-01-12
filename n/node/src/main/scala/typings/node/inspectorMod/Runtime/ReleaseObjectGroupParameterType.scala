@@ -18,7 +18,8 @@ object ReleaseObjectGroupParameterType {
     __obj.asInstanceOf[ReleaseObjectGroupParameterType]
   }
   
-  extension [Self <: ReleaseObjectGroupParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseObjectGroupParameterType] (val x: Self) extends AnyVal {
     
     inline def setObjectGroup(value: String): Self = StObject.set(x, "objectGroup", value.asInstanceOf[js.Any])
   }

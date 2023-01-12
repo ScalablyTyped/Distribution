@@ -54,7 +54,8 @@ object PutComplianceItemsRequest {
     __obj.asInstanceOf[PutComplianceItemsRequest]
   }
   
-  extension [Self <: PutComplianceItemsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutComplianceItemsRequest] (val x: Self) extends AnyVal {
     
     inline def setComplianceType(value: ComplianceTypeName): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
     

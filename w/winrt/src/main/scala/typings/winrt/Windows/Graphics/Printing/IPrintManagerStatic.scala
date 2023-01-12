@@ -18,7 +18,8 @@ object IPrintManagerStatic {
     __obj.asInstanceOf[IPrintManagerStatic]
   }
   
-  extension [Self <: IPrintManagerStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPrintManagerStatic] (val x: Self) extends AnyVal {
     
     inline def setGetForCurrentView(value: () => PrintManager): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
     

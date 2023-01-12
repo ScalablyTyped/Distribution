@@ -27,7 +27,8 @@ object CredentialProvider {
     __obj.asInstanceOf[CredentialProvider]
   }
   
-  extension [Self <: CredentialProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CredentialProvider] (val x: Self) extends AnyVal {
     
     inline def setDeleteCredential(value: String => Thenable[Boolean]): Self = StObject.set(x, "deleteCredential", js.Any.fromFunction1(value))
     

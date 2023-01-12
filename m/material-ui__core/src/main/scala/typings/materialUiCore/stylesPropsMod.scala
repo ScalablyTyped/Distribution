@@ -407,7 +407,8 @@ object stylesPropsMod {
       __obj.asInstanceOf[ComponentsProps]
     }
     
-    extension [Self <: ComponentsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentsProps] (val x: Self) extends AnyVal {
       
       inline def setMuiAccordion(value: PartialAccordionProps): Self = StObject.set(x, "MuiAccordion", value.asInstanceOf[js.Any])
       
@@ -1198,7 +1199,8 @@ object stylesPropsMod {
       __obj.asInstanceOf[ComponentsPropsList]
     }
     
-    extension [Self <: ComponentsPropsList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentsPropsList] (val x: Self) extends AnyVal {
       
       inline def setMuiAccordion(value: AccordionProps): Self = StObject.set(x, "MuiAccordion", value.asInstanceOf[js.Any])
       

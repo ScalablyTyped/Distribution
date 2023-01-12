@@ -56,7 +56,8 @@ object TypeSchemeForMesh {
     __obj.asInstanceOf[TypeSchemeForMesh]
   }
   
-  extension [Self <: TypeSchemeForMesh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeSchemeForMesh] (val x: Self) extends AnyVal {
     
     inline def setColors(value: js.Array[Color_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object LDAPSSettingInfo {
     __obj.asInstanceOf[LDAPSSettingInfo]
   }
   
-  extension [Self <: LDAPSSettingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LDAPSSettingInfo] (val x: Self) extends AnyVal {
     
     inline def setLDAPSStatus(value: LDAPSStatus): Self = StObject.set(x, "LDAPSStatus", value.asInstanceOf[js.Any])
     

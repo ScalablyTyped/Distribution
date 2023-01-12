@@ -29,7 +29,8 @@ object OnMouseDown {
     __obj.asInstanceOf[OnMouseDown]
   }
   
-  extension [Self <: OnMouseDown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnMouseDown] (val x: Self) extends AnyVal {
     
     inline def setOnMouseDown(value: (Any, Any) => js.Array[`0` | `1` | `2`]): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction2(value))
     

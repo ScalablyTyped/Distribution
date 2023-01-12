@@ -196,7 +196,8 @@ object libStylesheetMod {
       __obj.asInstanceOf[ICSPSettings]
     }
     
-    extension [Self <: ICSPSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICSPSettings] (val x: Self) extends AnyVal {
       
       inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
@@ -229,7 +230,8 @@ object libStylesheetMod {
       __obj.asInstanceOf[ISerializedStylesheet]
     }
     
-    extension [Self <: ISerializedStylesheet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISerializedStylesheet] (val x: Self) extends AnyVal {
       
       inline def setClassNameToArgs(
         value: /* import warning: importer.ImportType#apply Failed type conversion: @fluentui/merge-styles.@fluentui/merge-styles/lib/Stylesheet.Stylesheet['_classNameToArgs'] */ js.Any
@@ -302,7 +304,8 @@ object libStylesheetMod {
       __obj.asInstanceOf[IStyleSheetConfig]
     }
     
-    extension [Self <: IStyleSheetConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStyleSheetConfig] (val x: Self) extends AnyVal {
       
       inline def setClassNameCache(value: StringDictionary[String]): Self = StObject.set(x, "classNameCache", value.asInstanceOf[js.Any])
       

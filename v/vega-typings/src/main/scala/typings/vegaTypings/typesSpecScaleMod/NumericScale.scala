@@ -20,7 +20,8 @@ object NumericScale {
     __obj.asInstanceOf[NumericScale]
   }
   
-  extension [Self <: NumericScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumericScale] (val x: Self) extends AnyVal {
     
     inline def setNice(value: Boolean | Double | SignalRef): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
     

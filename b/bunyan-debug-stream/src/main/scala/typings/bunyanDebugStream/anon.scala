@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Consumed]
     }
     
-    extension [Self <: Consumed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Consumed] (val x: Self) extends AnyVal {
       
       inline def setConsumed(value: js.Array[String]): Self = StObject.set(x, "consumed", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object anon {
       __obj.asInstanceOf[DebugStream]
     }
     
-    extension [Self <: DebugStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebugStream] (val x: Self) extends AnyVal {
       
       inline def setDebugStream(value: BunyanDebugStream): Self = StObject.set(x, "debugStream", value.asInstanceOf[js.Any])
       
@@ -78,7 +80,8 @@ object anon {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       

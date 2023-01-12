@@ -73,7 +73,8 @@ object Hdr10Metadata {
     __obj.asInstanceOf[Hdr10Metadata]
   }
   
-  extension [Self <: Hdr10Metadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hdr10Metadata] (val x: Self) extends AnyVal {
     
     inline def setBluePrimaryX(value: integerMin0Max50000): Self = StObject.set(x, "BluePrimaryX", value.asInstanceOf[js.Any])
     

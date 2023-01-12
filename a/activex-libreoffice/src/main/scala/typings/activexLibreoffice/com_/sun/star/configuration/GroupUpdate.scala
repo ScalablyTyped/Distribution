@@ -103,7 +103,8 @@ object GroupUpdate {
     __obj.asInstanceOf[GroupUpdate]
   }
   
-  extension [Self <: GroupUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupUpdate] (val x: Self) extends AnyVal {
     
     inline def setGetHierarchicalPropertySetInfo(value: () => XHierarchicalPropertySetInfo): Self = StObject.set(x, "getHierarchicalPropertySetInfo", js.Any.fromFunction0(value))
     

@@ -64,7 +64,8 @@ object PointSymbol3DPropertiesty {
     __obj.asInstanceOf[PointSymbol3DPropertiesty]
   }
   
-  extension [Self <: PointSymbol3DPropertiesty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointSymbol3DPropertiesty] (val x: Self) extends AnyVal {
     
     inline def setCallout(value: LineCallout3DProperties): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
     

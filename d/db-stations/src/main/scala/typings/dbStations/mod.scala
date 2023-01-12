@@ -170,7 +170,8 @@ object mod {
       __obj.asInstanceOf[Address]
     }
     
-    extension [Self <: Address](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
       
       inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
@@ -250,7 +251,8 @@ object mod {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
@@ -276,7 +278,8 @@ object mod {
       __obj.asInstanceOf[Operator]
     }
     
-    extension [Self <: Operator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Operator] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -300,7 +303,8 @@ object mod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
@@ -398,7 +402,8 @@ object mod {
       __obj.asInstanceOf[Ril100Identifier]
     }
     
-    extension [Self <: Ril100Identifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ril100Identifier] (val x: Self) extends AnyVal {
       
       inline def setGeographicCoordinates(value: Point): Self = StObject.set(x, "geographicCoordinates", value.asInstanceOf[js.Any])
       
@@ -425,7 +430,8 @@ object mod {
       __obj.asInstanceOf[SZentrale]
     }
     
-    extension [Self <: SZentrale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SZentrale] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -472,7 +478,8 @@ object mod {
       __obj.asInstanceOf[Station]
     }
     
-    extension [Self <: Station](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Station] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: Address): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -587,7 +594,8 @@ object mod {
       __obj.asInstanceOf[StationFull]
     }
     
-    extension [Self <: StationFull](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StationFull] (val x: Self) extends AnyVal {
       
       inline def setAdditionalIds(value: js.Array[String]): Self = StObject.set(x, "additionalIds", value.asInstanceOf[js.Any])
       
@@ -656,7 +664,8 @@ object mod {
       __obj.asInstanceOf[StationManagement]
     }
     
-    extension [Self <: StationManagement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StationManagement] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -677,7 +686,8 @@ object mod {
       __obj.asInstanceOf[TimeTableOffice]
     }
     
-    extension [Self <: TimeTableOffice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeTableOffice] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       

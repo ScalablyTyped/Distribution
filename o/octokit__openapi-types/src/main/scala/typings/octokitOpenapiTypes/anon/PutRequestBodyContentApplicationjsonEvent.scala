@@ -16,7 +16,8 @@ object PutRequestBodyContentApplicationjsonEvent {
     __obj.asInstanceOf[PutRequestBodyContentApplicationjsonEvent]
   }
   
-  extension [Self <: PutRequestBodyContentApplicationjsonEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutRequestBodyContentApplicationjsonEvent] (val x: Self) extends AnyVal {
     
     inline def setPut(value: RequestBodyContentApplicationjsonEvent): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }

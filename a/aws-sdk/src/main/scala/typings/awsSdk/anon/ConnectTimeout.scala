@@ -23,7 +23,8 @@ object ConnectTimeout {
     __obj.asInstanceOf[ConnectTimeout]
   }
   
-  extension [Self <: ConnectTimeout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectTimeout] (val x: Self) extends AnyVal {
     
     inline def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
     

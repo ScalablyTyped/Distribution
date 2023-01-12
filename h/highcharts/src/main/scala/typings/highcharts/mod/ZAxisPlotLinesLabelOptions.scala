@@ -80,7 +80,8 @@ object ZAxisPlotLinesLabelOptions {
     __obj.asInstanceOf[ZAxisPlotLinesLabelOptions]
   }
   
-  extension [Self <: ZAxisPlotLinesLabelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZAxisPlotLinesLabelOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object KenBurns {
     __obj.asInstanceOf[KenBurns]
   }
   
-  extension [Self <: KenBurns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KenBurns] (val x: Self) extends AnyVal {
     
     inline def setZoomAmount(value: Double): Self = StObject.set(x, "zoomAmount", value.asInstanceOf[js.Any])
     

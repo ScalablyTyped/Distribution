@@ -18,7 +18,8 @@ object AssociateResolverRuleResponse {
     __obj.asInstanceOf[AssociateResolverRuleResponse]
   }
   
-  extension [Self <: AssociateResolverRuleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateResolverRuleResponse] (val x: Self) extends AnyVal {
     
     inline def setResolverRuleAssociation(value: ResolverRuleAssociation): Self = StObject.set(x, "ResolverRuleAssociation", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object HeadersSortedEventUIParam {
     __obj.asInstanceOf[HeadersSortedEventUIParam]
   }
   
-  extension [Self <: HeadersSortedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeadersSortedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setAppliedLevelSortDirections(value: js.Array[Any]): Self = StObject.set(x, "appliedLevelSortDirections", value.asInstanceOf[js.Any])
     

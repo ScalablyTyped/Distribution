@@ -25,7 +25,8 @@ object libUtilsFileMod {
       __obj.asInstanceOf[FileUtils_]
     }
     
-    extension [Self <: FileUtils_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUtils_] (val x: Self) extends AnyVal {
       
       inline def setFilenameReservedRegex(value: Any): Self = StObject.set(x, "filenameReservedRegex", value.asInstanceOf[js.Any])
       

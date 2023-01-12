@@ -25,7 +25,8 @@ object RevokeCertificateRequest {
     __obj.asInstanceOf[RevokeCertificateRequest]
   }
   
-  extension [Self <: RevokeCertificateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevokeCertificateRequest] (val x: Self) extends AnyVal {
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

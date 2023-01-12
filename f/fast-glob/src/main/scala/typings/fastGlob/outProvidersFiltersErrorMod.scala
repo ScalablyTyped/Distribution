@@ -39,7 +39,8 @@ object outProvidersFiltersErrorMod {
       __obj.asInstanceOf[ErrorFilter]
     }
     
-    extension [Self <: ErrorFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorFilter] (val x: Self) extends AnyVal {
       
       inline def setGetFilter(value: () => ErrorFilterFunction): Self = StObject.set(x, "getFilter", js.Any.fromFunction0(value))
       

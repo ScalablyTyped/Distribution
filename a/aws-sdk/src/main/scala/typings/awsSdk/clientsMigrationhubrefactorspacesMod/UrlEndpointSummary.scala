@@ -23,7 +23,8 @@ object UrlEndpointSummary {
     __obj.asInstanceOf[UrlEndpointSummary]
   }
   
-  extension [Self <: UrlEndpointSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlEndpointSummary] (val x: Self) extends AnyVal {
     
     inline def setHealthUrl(value: Uri): Self = StObject.set(x, "HealthUrl", value.asInstanceOf[js.Any])
     

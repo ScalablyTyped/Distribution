@@ -20,7 +20,8 @@ object IDashboardEvents {
     __obj.asInstanceOf[IDashboardEvents]
   }
   
-  extension [Self <: IDashboardEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDashboardEvents] (val x: Self) extends AnyVal {
     
     inline def setOnStarted(value: () => Unit): Self = StObject.set(x, "OnStarted", js.Any.fromFunction0(value))
     

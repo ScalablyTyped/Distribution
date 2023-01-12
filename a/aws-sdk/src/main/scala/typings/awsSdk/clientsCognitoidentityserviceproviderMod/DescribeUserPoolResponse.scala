@@ -18,7 +18,8 @@ object DescribeUserPoolResponse {
     __obj.asInstanceOf[DescribeUserPoolResponse]
   }
   
-  extension [Self <: DescribeUserPoolResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeUserPoolResponse] (val x: Self) extends AnyVal {
     
     inline def setUserPool(value: UserPoolType): Self = StObject.set(x, "UserPool", value.asInstanceOf[js.Any])
     

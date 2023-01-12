@@ -28,7 +28,8 @@ object DescribeOrganizationConformancePacksRequest {
     __obj.asInstanceOf[DescribeOrganizationConformancePacksRequest]
   }
   
-  extension [Self <: DescribeOrganizationConformancePacksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeOrganizationConformancePacksRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: CosmosPageLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

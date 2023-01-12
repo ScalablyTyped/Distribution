@@ -19,7 +19,8 @@ object AssignedLicense {
     __obj.asInstanceOf[AssignedLicense]
   }
   
-  extension [Self <: AssignedLicense](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignedLicense] (val x: Self) extends AnyVal {
     
     inline def setDisabledPlans(value: js.Array[String]): Self = StObject.set(x, "disabledPlans", value.asInstanceOf[js.Any])
     

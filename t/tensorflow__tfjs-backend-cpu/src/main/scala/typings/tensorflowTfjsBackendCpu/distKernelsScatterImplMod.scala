@@ -46,7 +46,8 @@ object distKernelsScatterImplMod {
       __obj.asInstanceOf[DefaultValueTypeMap]
     }
     
-    extension [Self <: DefaultValueTypeMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultValueTypeMap] (val x: Self) extends AnyVal {
       
       inline def setBool(value: Boolean): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object DescribeOrderableClusterOptionsMessage {
     __obj.asInstanceOf[DescribeOrderableClusterOptionsMessage]
   }
   
-  extension [Self <: DescribeOrderableClusterOptionsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeOrderableClusterOptionsMessage] (val x: Self) extends AnyVal {
     
     inline def setClusterVersion(value: String): Self = StObject.set(x, "ClusterVersion", value.asInstanceOf[js.Any])
     

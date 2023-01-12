@@ -29,7 +29,8 @@ object distExpirationYearMod {
       __obj.asInstanceOf[ExpirationYearVerification]
     }
     
-    extension [Self <: ExpirationYearVerification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpirationYearVerification] (val x: Self) extends AnyVal {
       
       inline def setIsCurrentYear(value: Boolean): Self = StObject.set(x, "isCurrentYear", value.asInstanceOf[js.Any])
     }

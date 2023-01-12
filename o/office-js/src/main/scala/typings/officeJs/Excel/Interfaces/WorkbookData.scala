@@ -209,7 +209,8 @@ object WorkbookData {
     __obj.asInstanceOf[WorkbookData]
   }
   
-  extension [Self <: WorkbookData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookData] (val x: Self) extends AnyVal {
     
     inline def setAutoSave(value: Boolean): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
     

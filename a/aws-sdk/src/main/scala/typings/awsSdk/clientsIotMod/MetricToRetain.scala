@@ -23,7 +23,8 @@ object MetricToRetain {
     __obj.asInstanceOf[MetricToRetain]
   }
   
-  extension [Self <: MetricToRetain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricToRetain] (val x: Self) extends AnyVal {
     
     inline def setMetric(value: BehaviorMetric): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     

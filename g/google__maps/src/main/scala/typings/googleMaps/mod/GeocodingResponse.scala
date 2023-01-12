@@ -30,7 +30,8 @@ object GeocodingResponse {
     __obj.asInstanceOf[GeocodingResponse[STATUSES]]
   }
   
-  extension [Self <: GeocodingResponse[?], STATUSES](x: Self & GeocodingResponse[STATUSES]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeocodingResponse[?], STATUSES] (val x: Self & GeocodingResponse[STATUSES]) extends AnyVal {
     
     inline def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
     

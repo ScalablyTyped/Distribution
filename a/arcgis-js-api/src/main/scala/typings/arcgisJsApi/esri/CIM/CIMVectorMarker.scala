@@ -55,7 +55,8 @@ object CIMVectorMarker {
     __obj.asInstanceOf[CIMVectorMarker]
   }
   
-  extension [Self <: CIMVectorMarker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMVectorMarker] (val x: Self) extends AnyVal {
     
     inline def setClippingPath(value: CIMClippingPath): Self = StObject.set(x, "clippingPath", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DescribeComponentConfigurationRequest {
     __obj.asInstanceOf[DescribeComponentConfigurationRequest]
   }
   
-  extension [Self <: DescribeComponentConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeComponentConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setComponentName(value: ComponentName): Self = StObject.set(x, "ComponentName", value.asInstanceOf[js.Any])
     

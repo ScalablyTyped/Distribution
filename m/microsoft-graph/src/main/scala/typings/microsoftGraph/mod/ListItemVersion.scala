@@ -18,7 +18,8 @@ object ListItemVersion {
     __obj.asInstanceOf[ListItemVersion]
   }
   
-  extension [Self <: ListItemVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListItemVersion] (val x: Self) extends AnyVal {
     
     inline def setFields(value: NullableOption[FieldValueSet]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

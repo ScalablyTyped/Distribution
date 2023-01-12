@@ -29,7 +29,8 @@ object VRDisplayCapabilities {
     __obj.asInstanceOf[VRDisplayCapabilities]
   }
   
-  extension [Self <: VRDisplayCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VRDisplayCapabilities] (val x: Self) extends AnyVal {
     
     inline def setCanPresent(value: Boolean): Self = StObject.set(x, "canPresent", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object IQuery {
     __obj.asInstanceOf[IQuery]
   }
   
-  extension [Self <: IQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IQuery] (val x: Self) extends AnyVal {
     
     inline def setQuery_id(value: Double): Self = StObject.set(x, "query_id", value.asInstanceOf[js.Any])
     

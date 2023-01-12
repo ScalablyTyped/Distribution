@@ -22,7 +22,8 @@ object ScopedNamedExpressions {
     __obj.asInstanceOf[ScopedNamedExpressions]
   }
   
-  extension [Self <: ScopedNamedExpressions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScopedNamedExpressions] (val x: Self) extends AnyVal {
     
     inline def setScopedNamedExpressions(value: js.Array[js.Tuple2[InternalNamedExpression, ClipboardCell]]): Self = StObject.set(x, "scopedNamedExpressions", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object FunctionList {
     __obj.asInstanceOf[FunctionList]
   }
   
-  extension [Self <: FunctionList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionList] (val x: Self) extends AnyVal {
     
     inline def setItems(value: FunctionSummaryList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

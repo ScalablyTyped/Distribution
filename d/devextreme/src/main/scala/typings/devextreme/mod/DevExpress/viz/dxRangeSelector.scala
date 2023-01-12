@@ -187,7 +187,8 @@ object dxRangeSelector {
       __obj.asInstanceOf[ValueChangedEvent]
     }
     
-    extension [Self <: ValueChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setPreviousValue(value: js.Array[Double | String | js.Date]): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
       

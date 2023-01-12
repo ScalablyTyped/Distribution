@@ -28,7 +28,8 @@ object IPathIntersectionOptions {
     __obj.asInstanceOf[IPathIntersectionOptions]
   }
   
-  extension [Self <: IPathIntersectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPathIntersectionOptions] (val x: Self) extends AnyVal {
     
     inline def setPath1Offset(value: IPoint): Self = StObject.set(x, "path1Offset", value.asInstanceOf[js.Any])
     

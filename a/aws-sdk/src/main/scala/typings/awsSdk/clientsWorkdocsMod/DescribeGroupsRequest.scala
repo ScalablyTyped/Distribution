@@ -38,7 +38,8 @@ object DescribeGroupsRequest {
     __obj.asInstanceOf[DescribeGroupsRequest]
   }
   
-  extension [Self <: DescribeGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     

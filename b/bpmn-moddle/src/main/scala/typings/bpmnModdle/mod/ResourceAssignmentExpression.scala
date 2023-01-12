@@ -17,7 +17,8 @@ object ResourceAssignmentExpression {
     __obj.asInstanceOf[ResourceAssignmentExpression]
   }
   
-  extension [Self <: ResourceAssignmentExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceAssignmentExpression] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
   }

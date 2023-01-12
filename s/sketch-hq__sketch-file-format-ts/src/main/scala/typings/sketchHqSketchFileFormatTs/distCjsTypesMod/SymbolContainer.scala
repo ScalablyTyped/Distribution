@@ -22,7 +22,8 @@ object SymbolContainer {
     __obj.asInstanceOf[SymbolContainer]
   }
   
-  extension [Self <: SymbolContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolContainer] (val x: Self) extends AnyVal {
     
     inline def setDo_objectID(value: Uuid): Self = StObject.set(x, "do_objectID", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object FeatureTableVisibleElements {
     __obj.asInstanceOf[FeatureTableVisibleElements]
   }
   
-  extension [Self <: FeatureTableVisibleElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureTableVisibleElements] (val x: Self) extends AnyVal {
     
     inline def setColumnMenus(value: Boolean): Self = StObject.set(x, "columnMenus", value.asInstanceOf[js.Any])
     

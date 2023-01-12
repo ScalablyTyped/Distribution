@@ -31,7 +31,8 @@ object TypeoftabCapture {
     __obj.asInstanceOf[TypeoftabCapture]
   }
   
-  extension [Self <: TypeoftabCapture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeoftabCapture] (val x: Self) extends AnyVal {
     
     inline def setCapture(value: (CaptureOptions, js.Function1[/* stream */ MediaStream | Null, Unit]) => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction2(value))
     

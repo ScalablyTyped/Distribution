@@ -25,7 +25,8 @@ object EnqueueOptions {
     __obj.asInstanceOf[EnqueueOptions]
   }
   
-  extension [Self <: EnqueueOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnqueueOptions] (val x: Self) extends AnyVal {
     
     inline def setDeliveryMode(value: Double): Self = StObject.set(x, "deliveryMode", value.asInstanceOf[js.Any])
     

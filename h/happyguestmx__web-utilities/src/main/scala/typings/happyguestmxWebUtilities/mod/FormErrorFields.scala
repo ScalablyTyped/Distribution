@@ -19,7 +19,8 @@ object FormErrorFields {
     __obj.asInstanceOf[FormErrorFields]
   }
   
-  extension [Self <: FormErrorFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormErrorFields] (val x: Self) extends AnyVal {
     
     inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

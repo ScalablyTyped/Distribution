@@ -46,7 +46,8 @@ object ResourceVisualization {
     __obj.asInstanceOf[ResourceVisualization]
   }
   
-  extension [Self <: ResourceVisualization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceVisualization] (val x: Self) extends AnyVal {
     
     inline def setContainerDisplayName(value: NullableOption[String]): Self = StObject.set(x, "containerDisplayName", value.asInstanceOf[js.Any])
     

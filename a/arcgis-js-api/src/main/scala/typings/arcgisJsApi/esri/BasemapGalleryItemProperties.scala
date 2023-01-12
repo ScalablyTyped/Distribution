@@ -29,7 +29,8 @@ object BasemapGalleryItemProperties {
     __obj.asInstanceOf[BasemapGalleryItemProperties]
   }
   
-  extension [Self <: BasemapGalleryItemProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasemapGalleryItemProperties] (val x: Self) extends AnyVal {
     
     inline def setBasemap(value: BasemapProperties): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     

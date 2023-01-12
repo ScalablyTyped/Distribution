@@ -49,7 +49,8 @@ object libDelayedRenderMod {
       __obj.asInstanceOf[IDelayedRenderProps]
     }
     
-    extension [Self <: IDelayedRenderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDelayedRenderProps] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object libDelayedRenderMod {
       __obj.asInstanceOf[IDelayedRenderState]
     }
     
-    extension [Self <: IDelayedRenderState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDelayedRenderState] (val x: Self) extends AnyVal {
       
       inline def setIsRendered(value: Boolean): Self = StObject.set(x, "isRendered", value.asInstanceOf[js.Any])
     }

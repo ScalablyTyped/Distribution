@@ -30,7 +30,8 @@ object Cid {
     __obj.asInstanceOf[Cid[T, Code, Alg, V]]
   }
   
-  extension [Self <: Cid[?, ?, ?, ?], T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */](x: Self & (Cid[T, Code, Alg, V])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cid[?, ?, ?, ?], T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */] (val x: Self & (Cid[T, Code, Alg, V])) extends AnyVal {
     
     inline def setBytes(value: ByteView[T]): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     

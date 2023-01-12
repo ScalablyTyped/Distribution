@@ -47,7 +47,8 @@ object MenuItemProps {
     __obj.asInstanceOf[MenuItemProps]
   }
   
-  extension [Self <: MenuItemProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuItemProps] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

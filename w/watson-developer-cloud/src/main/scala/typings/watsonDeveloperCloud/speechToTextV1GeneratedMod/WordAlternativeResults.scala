@@ -23,7 +23,8 @@ object WordAlternativeResults {
     __obj.asInstanceOf[WordAlternativeResults]
   }
   
-  extension [Self <: WordAlternativeResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WordAlternativeResults] (val x: Self) extends AnyVal {
     
     inline def setAlternatives(value: js.Array[WordAlternativeResult]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     

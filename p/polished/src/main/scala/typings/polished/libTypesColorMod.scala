@@ -23,7 +23,8 @@ object libTypesColorMod {
       __obj.asInstanceOf[ContrastScores]
     }
     
-    extension [Self <: ContrastScores](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContrastScores] (val x: Self) extends AnyVal {
       
       inline def setAA(value: Boolean): Self = StObject.set(x, "AA", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object libTypesColorMod {
       __obj.asInstanceOf[HslColor]
     }
     
-    extension [Self <: HslColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HslColor] (val x: Self) extends AnyVal {
       
       inline def setHue(value: Double): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object libTypesColorMod {
       __obj.asInstanceOf[HslaColor]
     }
     
-    extension [Self <: HslaColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HslaColor] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -104,7 +107,8 @@ object libTypesColorMod {
       __obj.asInstanceOf[RgbColor]
     }
     
-    extension [Self <: RgbColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RgbColor] (val x: Self) extends AnyVal {
       
       inline def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
       
@@ -131,7 +135,8 @@ object libTypesColorMod {
       __obj.asInstanceOf[RgbaColor]
     }
     
-    extension [Self <: RgbaColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RgbaColor] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       

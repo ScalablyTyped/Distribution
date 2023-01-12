@@ -35,7 +35,8 @@ object VideoCampaignTargeting {
     __obj.asInstanceOf[VideoCampaignTargeting]
   }
   
-  extension [Self <: VideoCampaignTargeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoCampaignTargeting] (val x: Self) extends AnyVal {
     
     inline def setAdSchedules(value: () => AdWordsSelector[AdSchedule]): Self = StObject.set(x, "adSchedules", js.Any.fromFunction0(value))
     

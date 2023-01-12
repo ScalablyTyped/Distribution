@@ -17,7 +17,8 @@ object IgnoreIfExists {
     __obj.asInstanceOf[IgnoreIfExists]
   }
   
-  extension [Self <: IgnoreIfExists](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnoreIfExists] (val x: Self) extends AnyVal {
     
     inline def setIgnoreIfExists(value: Boolean): Self = StObject.set(x, "ignoreIfExists", value.asInstanceOf[js.Any])
     

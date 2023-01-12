@@ -40,7 +40,8 @@ object RDSMetadata {
     __obj.asInstanceOf[RDSMetadata]
   }
   
-  extension [Self <: RDSMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RDSMetadata] (val x: Self) extends AnyVal {
     
     inline def setDataPipelineId(value: EDPPipelineId): Self = StObject.set(x, "DataPipelineId", value.asInstanceOf[js.Any])
     

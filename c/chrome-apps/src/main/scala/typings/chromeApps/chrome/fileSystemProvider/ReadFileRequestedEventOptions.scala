@@ -27,7 +27,8 @@ object ReadFileRequestedEventOptions {
     __obj.asInstanceOf[ReadFileRequestedEventOptions]
   }
   
-  extension [Self <: ReadFileRequestedEventOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadFileRequestedEventOptions] (val x: Self) extends AnyVal {
     
     inline def setLength(value: double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

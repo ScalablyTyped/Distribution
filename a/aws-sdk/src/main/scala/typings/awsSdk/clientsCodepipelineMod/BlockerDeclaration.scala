@@ -24,7 +24,8 @@ object BlockerDeclaration {
     __obj.asInstanceOf[BlockerDeclaration]
   }
   
-  extension [Self <: BlockerDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockerDeclaration] (val x: Self) extends AnyVal {
     
     inline def setName(value: BlockerName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

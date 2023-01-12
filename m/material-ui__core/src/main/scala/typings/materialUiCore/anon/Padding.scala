@@ -20,7 +20,8 @@ object Padding {
     __obj.asInstanceOf[Padding]
   }
   
-  extension [Self <: Padding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Padding] (val x: Self) extends AnyVal {
     
     inline def setPadding(value: typings.materialUiCore.tableTableMod.Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     

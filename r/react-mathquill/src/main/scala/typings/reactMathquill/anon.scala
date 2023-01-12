@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[DeleteOutOf]
     }
     
-    extension [Self <: DeleteOutOf](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteOutOf] (val x: Self) extends AnyVal {
       
       inline def setDeleteOutOf(value: (/* direction */ Direction, /* mathField */ MathField) => Unit): Self = StObject.set(x, "deleteOutOf", js.Any.fromFunction2(value))
       

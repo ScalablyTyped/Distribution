@@ -21,7 +21,8 @@ object ExternalListItem {
     __obj.asInstanceOf[ExternalListItem]
   }
   
-  extension [Self <: ExternalListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalListItem] (val x: Self) extends AnyVal {
     
     inline def setExternalListItem(value: Boolean): Self = StObject.set(x, "ExternalListItem", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[BaseElementsOptions]
     }
     
-    extension [Self <: BaseElementsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseElementsOptions] (val x: Self) extends AnyVal {
       
       inline def setOrderBy(value: selectors | occurrence): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object mod {
       __obj.asInstanceOf[DecodeOptions]
     }
     
-    extension [Self <: DecodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodeOptions] (val x: Self) extends AnyVal {
       
       inline def setIsAttributeValue(value: Boolean): Self = StObject.set(x, "isAttributeValue", value.asInstanceOf[js.Any])
       
@@ -148,7 +150,8 @@ object mod {
       __obj.asInstanceOf[DomNode]
     }
     
-    extension [Self <: DomNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomNode] (val x: Self) extends AnyVal {
       
       inline def setAttribs(value: Any): Self = StObject.set(x, "attribs", value.asInstanceOf[js.Any])
       
@@ -304,7 +307,8 @@ object mod {
       __obj.asInstanceOf[FormatOptions]
     }
     
-    extension [Self <: FormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
@@ -500,7 +504,8 @@ object mod {
       __obj.asInstanceOf[HtmlToTextOptions]
     }
     
-    extension [Self <: HtmlToTextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlToTextOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseElement(value: String | js.Array[String]): Self = StObject.set(x, "baseElement", value.asInstanceOf[js.Any])
       
@@ -639,7 +644,8 @@ object mod {
       __obj.asInstanceOf[LimitsOptions]
     }
     
-    extension [Self <: LimitsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LimitsOptions] (val x: Self) extends AnyVal {
       
       inline def setEllipsis(value: String): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
       
@@ -678,7 +684,8 @@ object mod {
       __obj.asInstanceOf[LongWordSplitOptions]
     }
     
-    extension [Self <: LongWordSplitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LongWordSplitOptions] (val x: Self) extends AnyVal {
       
       inline def setForceWrapOnLimit(value: Boolean): Self = StObject.set(x, "forceWrapOnLimit", value.asInstanceOf[js.Any])
       
@@ -718,7 +725,8 @@ object mod {
       __obj.asInstanceOf[SelectorDefinition]
     }
     
-    extension [Self <: SelectorDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectorDefinition] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -751,7 +759,8 @@ object mod {
       __obj.asInstanceOf[TagDefinition]
     }
     
-    extension [Self <: TagDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagDefinition] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -825,7 +834,8 @@ object mod {
       __obj.asInstanceOf[TagDefinitions]
     }
     
-    extension [Self <: TagDefinitions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagDefinitions] (val x: Self) extends AnyVal {
       
       inline def setA(value: TagDefinition): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       

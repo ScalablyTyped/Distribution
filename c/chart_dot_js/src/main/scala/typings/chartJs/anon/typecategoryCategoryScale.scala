@@ -152,7 +152,8 @@ object typecategoryCategoryScale {
     __obj.asInstanceOf[typecategoryCategoryScale]
   }
   
-  extension [Self <: typecategoryCategoryScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typecategoryCategoryScale] (val x: Self) extends AnyVal {
     
     inline def setAfterBuildTicks(value: /* axis */ typings.chartJs.mod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "afterBuildTicks", js.Any.fromFunction1(value))
     

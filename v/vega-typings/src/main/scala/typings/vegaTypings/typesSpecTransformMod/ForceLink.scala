@@ -30,7 +30,8 @@ object ForceLink {
     __obj.asInstanceOf[ForceLink]
   }
   
-  extension [Self <: ForceLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForceLink] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double | SignalRef | ExprRef): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object typesKmsthrottlingexceptionMod {
       __obj.asInstanceOf[KMSThrottlingException]
     }
     
-    extension [Self <: KMSThrottlingException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KMSThrottlingException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSThrottlingException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -47,7 +48,8 @@ object typesKmsthrottlingexceptionMod {
       __obj.asInstanceOf[KMSThrottlingExceptionDetails]
     }
     
-    extension [Self <: KMSThrottlingExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KMSThrottlingExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

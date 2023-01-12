@@ -164,7 +164,8 @@ object IUtilAnimEase {
     __obj.asInstanceOf[IUtilAnimEase]
   }
   
-  extension [Self <: IUtilAnimEase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUtilAnimEase] (val x: Self) extends AnyVal {
     
     inline def setEaseInBack(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInBack", js.Any.fromFunction4(value))
     

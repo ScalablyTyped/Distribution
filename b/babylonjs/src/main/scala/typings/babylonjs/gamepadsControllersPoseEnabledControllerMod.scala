@@ -310,7 +310,8 @@ object gamepadsControllersPoseEnabledControllerMod {
       __obj.asInstanceOf[GamePadFactory]
     }
     
-    extension [Self <: GamePadFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GamePadFactory] (val x: Self) extends AnyVal {
       
       inline def setCanCreate(value: Any => Boolean): Self = StObject.set(x, "canCreate", js.Any.fromFunction1(value))
       
@@ -342,7 +343,8 @@ object gamepadsControllersPoseEnabledControllerMod {
       __obj.asInstanceOf[MutableGamepadButton]
     }
     
-    extension [Self <: MutableGamepadButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MutableGamepadButton] (val x: Self) extends AnyVal {
       
       inline def setPressed(value: Boolean): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
       

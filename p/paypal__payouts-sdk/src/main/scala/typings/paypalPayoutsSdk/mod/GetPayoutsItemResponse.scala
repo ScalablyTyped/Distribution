@@ -17,7 +17,8 @@ object GetPayoutsItemResponse {
     __obj.asInstanceOf[GetPayoutsItemResponse]
   }
   
-  extension [Self <: GetPayoutsItemResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPayoutsItemResponse] (val x: Self) extends AnyVal {
     
     inline def setSender_batch_id(value: String): Self = StObject.set(x, "sender_batch_id", value.asInstanceOf[js.Any])
     

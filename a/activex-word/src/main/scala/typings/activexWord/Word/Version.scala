@@ -50,7 +50,8 @@ object Version {
     __obj.asInstanceOf[Version]
   }
   
-  extension [Self <: Version](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

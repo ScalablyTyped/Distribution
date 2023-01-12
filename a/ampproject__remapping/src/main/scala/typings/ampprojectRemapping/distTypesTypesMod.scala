@@ -24,7 +24,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[LoaderContext]
     }
     
-    extension [Self <: LoaderContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoaderContext] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDecodedMappings(value: Boolean): Self = StObject.set(x, "decodedMappings", value.asInstanceOf[js.Any])
       

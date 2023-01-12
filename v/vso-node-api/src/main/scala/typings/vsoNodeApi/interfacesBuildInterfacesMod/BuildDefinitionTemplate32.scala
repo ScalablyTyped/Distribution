@@ -39,7 +39,8 @@ object BuildDefinitionTemplate32 {
     __obj.asInstanceOf[BuildDefinitionTemplate32]
   }
   
-  extension [Self <: BuildDefinitionTemplate32](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildDefinitionTemplate32] (val x: Self) extends AnyVal {
     
     inline def setCanDelete(value: Boolean): Self = StObject.set(x, "canDelete", value.asInstanceOf[js.Any])
     

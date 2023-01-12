@@ -74,7 +74,8 @@ object distCodegenConfigurationMod {
       __obj.asInstanceOf[ConfigurationParameters]
     }
     
-    extension [Self <: ConfigurationParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigurationParameters] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(
         value: String | (js.Function2[/* name */ String, /* scopes */ js.UndefOr[js.Array[String]], String])

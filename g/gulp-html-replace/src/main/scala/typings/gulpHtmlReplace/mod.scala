@@ -26,7 +26,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AdvancedTask]
     }
     
-    extension [Self <: AdvancedTask](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdvancedTask] (val x: Self) extends AnyVal {
       
       inline def setSrc(value: String | js.Array[String]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setKeepBlockTags(value: Boolean): Self = StObject.set(x, "keepBlockTags", value.asInstanceOf[js.Any])
       

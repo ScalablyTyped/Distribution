@@ -38,7 +38,8 @@ object Cpu {
     __obj.asInstanceOf[Cpu]
   }
   
-  extension [Self <: Cpu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cpu] (val x: Self) extends AnyVal {
     
     inline def setBtime(value: String): Self = StObject.set(x, "btime", value.asInstanceOf[js.Any])
     

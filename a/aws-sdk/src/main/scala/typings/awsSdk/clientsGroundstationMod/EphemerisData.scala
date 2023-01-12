@@ -17,7 +17,8 @@ object EphemerisData {
     __obj.asInstanceOf[EphemerisData]
   }
   
-  extension [Self <: EphemerisData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EphemerisData] (val x: Self) extends AnyVal {
     
     inline def setOem(value: OEMEphemeris): Self = StObject.set(x, "oem", value.asInstanceOf[js.Any])
     

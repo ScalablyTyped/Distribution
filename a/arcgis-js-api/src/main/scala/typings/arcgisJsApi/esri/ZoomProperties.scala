@@ -49,7 +49,8 @@ object ZoomProperties {
     __obj.asInstanceOf[ZoomProperties]
   }
   
-  extension [Self <: ZoomProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoomProperties] (val x: Self) extends AnyVal {
     
     inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     

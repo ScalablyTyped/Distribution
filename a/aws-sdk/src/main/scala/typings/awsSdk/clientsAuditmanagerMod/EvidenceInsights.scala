@@ -28,7 +28,8 @@ object EvidenceInsights {
     __obj.asInstanceOf[EvidenceInsights]
   }
   
-  extension [Self <: EvidenceInsights](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvidenceInsights] (val x: Self) extends AnyVal {
     
     inline def setCompliantEvidenceCount(value: NullableInteger): Self = StObject.set(x, "compliantEvidenceCount", value.asInstanceOf[js.Any])
     

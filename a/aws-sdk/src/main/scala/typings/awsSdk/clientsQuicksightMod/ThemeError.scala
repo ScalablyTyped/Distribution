@@ -23,7 +23,8 @@ object ThemeError {
     __obj.asInstanceOf[ThemeError]
   }
   
-  extension [Self <: ThemeError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeError] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: NonEmptyString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

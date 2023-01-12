@@ -226,7 +226,8 @@ object sapUiUx3OverlayContainerMod {
       __obj.asInstanceOf[OverlayContainerSettings]
     }
     
-    extension [Self <: OverlayContainerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlayContainerSettings] (val x: Self) extends AnyVal {
       
       inline def setContent(
         value: js.Array[typings.openui5.sapUiCoreControlMod.default] | typings.openui5.sapUiCoreControlMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

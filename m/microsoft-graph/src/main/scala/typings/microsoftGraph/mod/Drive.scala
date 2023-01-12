@@ -50,7 +50,8 @@ object Drive {
     __obj.asInstanceOf[Drive]
   }
   
-  extension [Self <: Drive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Drive] (val x: Self) extends AnyVal {
     
     inline def setBundles(value: NullableOption[js.Array[DriveItem]]): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
     

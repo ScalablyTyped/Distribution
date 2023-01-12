@@ -63,7 +63,8 @@ object DatasetImportJob {
     __obj.asInstanceOf[DatasetImportJob]
   }
   
-  extension [Self <: DatasetImportJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetImportJob] (val x: Self) extends AnyVal {
     
     inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
     

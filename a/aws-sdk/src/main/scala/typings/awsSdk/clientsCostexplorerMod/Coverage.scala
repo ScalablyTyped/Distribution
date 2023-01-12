@@ -28,7 +28,8 @@ object Coverage {
     __obj.asInstanceOf[Coverage]
   }
   
-  extension [Self <: Coverage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Coverage] (val x: Self) extends AnyVal {
     
     inline def setCoverageCost(value: CoverageCost): Self = StObject.set(x, "CoverageCost", value.asInstanceOf[js.Any])
     

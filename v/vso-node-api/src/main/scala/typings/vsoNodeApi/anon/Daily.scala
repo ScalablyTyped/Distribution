@@ -15,7 +15,8 @@ object Daily {
     __obj.asInstanceOf[Daily]
   }
   
-  extension [Self <: Daily](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Daily] (val x: Self) extends AnyVal {
     
     inline def setDaily(value: scala.Double): Self = StObject.set(x, "daily", value.asInstanceOf[js.Any])
   }

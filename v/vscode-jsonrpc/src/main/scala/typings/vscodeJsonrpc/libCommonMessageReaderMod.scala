@@ -144,7 +144,8 @@ object libCommonMessageReaderMod {
       __obj.asInstanceOf[MessageReaderOptions]
     }
     
-    extension [Self <: MessageReaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageReaderOptions] (val x: Self) extends AnyVal {
       
       inline def setCharset(value: MessageBufferEncoding): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       
@@ -185,7 +186,8 @@ object libCommonMessageReaderMod {
       __obj.asInstanceOf[PartialMessageInfo]
     }
     
-    extension [Self <: PartialMessageInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMessageInfo] (val x: Self) extends AnyVal {
       
       inline def setMessageToken(value: Double): Self = StObject.set(x, "messageToken", value.asInstanceOf[js.Any])
       

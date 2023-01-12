@@ -99,7 +99,8 @@ object PlusWebviewWebviewPullToRefreshStyles {
     __obj.asInstanceOf[PlusWebviewWebviewPullToRefreshStyles]
   }
   
-  extension [Self <: PlusWebviewWebviewPullToRefreshStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusWebviewWebviewPullToRefreshStyles] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

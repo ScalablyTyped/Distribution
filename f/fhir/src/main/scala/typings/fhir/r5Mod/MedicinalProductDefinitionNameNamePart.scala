@@ -28,7 +28,8 @@ object MedicinalProductDefinitionNameNamePart {
     __obj.asInstanceOf[MedicinalProductDefinitionNameNamePart]
   }
   
-  extension [Self <: MedicinalProductDefinitionNameNamePart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicinalProductDefinitionNameNamePart] (val x: Self) extends AnyVal {
     
     inline def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     

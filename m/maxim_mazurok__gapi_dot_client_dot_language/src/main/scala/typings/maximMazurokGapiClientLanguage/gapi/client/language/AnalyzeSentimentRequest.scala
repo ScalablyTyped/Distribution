@@ -19,7 +19,8 @@ object AnalyzeSentimentRequest {
     __obj.asInstanceOf[AnalyzeSentimentRequest]
   }
   
-  extension [Self <: AnalyzeSentimentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyzeSentimentRequest] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

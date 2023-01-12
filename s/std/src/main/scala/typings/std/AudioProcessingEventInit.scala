@@ -24,7 +24,8 @@ object AudioProcessingEventInit {
     __obj.asInstanceOf[AudioProcessingEventInit]
   }
   
-  extension [Self <: AudioProcessingEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioProcessingEventInit] (val x: Self) extends AnyVal {
     
     inline def setInputBuffer(value: AudioBuffer): Self = StObject.set(x, "inputBuffer", value.asInstanceOf[js.Any])
     

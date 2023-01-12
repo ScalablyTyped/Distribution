@@ -22,7 +22,8 @@ object WiFiDirectServiceRemotePortAddedEventArgs {
     __obj.asInstanceOf[WiFiDirectServiceRemotePortAddedEventArgs]
   }
   
-  extension [Self <: WiFiDirectServiceRemotePortAddedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WiFiDirectServiceRemotePortAddedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setEndpointPairs(value: IVectorView[EndpointPair]): Self = StObject.set(x, "endpointPairs", value.asInstanceOf[js.Any])
     

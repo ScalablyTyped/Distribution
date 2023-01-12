@@ -66,7 +66,8 @@ object esmInfernoHooksHooksMod {
       __obj.asInstanceOf[Hook]
     }
     
-    extension [Self <: Hook](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hook] (val x: Self) extends AnyVal {
       
       inline def set$setState(value: Any => Any): Self = StObject.set(x, "$setState", js.Any.fromFunction1(value))
       

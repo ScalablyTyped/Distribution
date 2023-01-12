@@ -49,7 +49,8 @@ object XContentCreator {
     __obj.asInstanceOf[XContentCreator]
   }
   
-  extension [Self <: XContentCreator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XContentCreator] (val x: Self) extends AnyVal {
     
     inline def setCreateNewContent(value: ContentInfo => XContent): Self = StObject.set(x, "createNewContent", js.Any.fromFunction1(value))
     

@@ -32,7 +32,8 @@ object srcUndocommandMod {
         __obj.asInstanceOf[Commands]
       }
       
-      extension [Self <: Commands](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Commands] (val x: Self) extends AnyVal {
         
         inline def setUndoCommand(value: UndoCommand): Self = StObject.set(x, "UndoCommand", value.asInstanceOf[js.Any])
       }

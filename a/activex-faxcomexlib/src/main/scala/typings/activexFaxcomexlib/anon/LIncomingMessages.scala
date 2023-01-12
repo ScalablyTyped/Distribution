@@ -30,7 +30,8 @@ object LIncomingMessages {
     __obj.asInstanceOf[LIncomingMessages]
   }
   
-  extension [Self <: LIncomingMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LIncomingMessages] (val x: Self) extends AnyVal {
     
     inline def setLIncomingMessages(value: Double): Self = StObject.set(x, "lIncomingMessages", value.asInstanceOf[js.Any])
     

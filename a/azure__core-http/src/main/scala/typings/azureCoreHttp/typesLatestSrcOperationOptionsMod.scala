@@ -42,7 +42,8 @@ object typesLatestSrcOperationOptionsMod {
       __obj.asInstanceOf[OperationOptions]
     }
     
-    extension [Self <: OperationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationOptions] (val x: Self) extends AnyVal {
       
       inline def setAbortSignal(value: AbortSignalLike): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object typesLatestSrcOperationOptionsMod {
       __obj.asInstanceOf[OperationRequestOptions]
     }
     
-    extension [Self <: OperationRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomHeaders(value: StringDictionary[String]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       

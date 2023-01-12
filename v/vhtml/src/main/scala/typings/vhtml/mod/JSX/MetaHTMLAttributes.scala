@@ -23,7 +23,8 @@ object MetaHTMLAttributes {
     __obj.asInstanceOf[MetaHTMLAttributes]
   }
   
-  extension [Self <: MetaHTMLAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetaHTMLAttributes] (val x: Self) extends AnyVal {
     
     inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     

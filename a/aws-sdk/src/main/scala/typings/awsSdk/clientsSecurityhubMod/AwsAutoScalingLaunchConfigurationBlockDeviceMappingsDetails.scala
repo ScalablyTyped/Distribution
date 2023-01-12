@@ -33,7 +33,8 @@ object AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetails {
     __obj.asInstanceOf[AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetails]
   }
   
-  extension [Self <: AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetails] (val x: Self) extends AnyVal {
     
     inline def setDeviceName(value: NonEmptyString): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
     

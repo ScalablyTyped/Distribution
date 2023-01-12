@@ -16,7 +16,8 @@ object XRSessionGrant {
     __obj.asInstanceOf[XRSessionGrant]
   }
   
-  extension [Self <: XRSessionGrant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRSessionGrant] (val x: Self) extends AnyVal {
     
     inline def setMode(value: XRSessionMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }

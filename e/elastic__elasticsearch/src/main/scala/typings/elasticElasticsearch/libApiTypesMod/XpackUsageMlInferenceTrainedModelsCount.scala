@@ -27,7 +27,8 @@ object XpackUsageMlInferenceTrainedModelsCount {
     __obj.asInstanceOf[XpackUsageMlInferenceTrainedModelsCount]
   }
   
-  extension [Self <: XpackUsageMlInferenceTrainedModelsCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageMlInferenceTrainedModelsCount] (val x: Self) extends AnyVal {
     
     inline def setClassification(value: long): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     

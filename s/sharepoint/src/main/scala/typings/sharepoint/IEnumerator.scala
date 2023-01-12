@@ -19,7 +19,8 @@ object IEnumerator {
     __obj.asInstanceOf[IEnumerator[T]]
   }
   
-  extension [Self <: IEnumerator[?], T](x: Self & IEnumerator[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEnumerator[?], T] (val x: Self & IEnumerator[T]) extends AnyVal {
     
     inline def setGet_current(value: () => T): Self = StObject.set(x, "get_current", js.Any.fromFunction0(value))
     

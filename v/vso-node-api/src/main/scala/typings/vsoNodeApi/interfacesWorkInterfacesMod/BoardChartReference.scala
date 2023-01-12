@@ -23,7 +23,8 @@ object BoardChartReference {
     __obj.asInstanceOf[BoardChartReference]
   }
   
-  extension [Self <: BoardChartReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoardChartReference] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object FunctionTypeParam {
     __obj.asInstanceOf[FunctionTypeParam]
   }
   
-  extension [Self <: FunctionTypeParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionTypeParam] (val x: Self) extends AnyVal {
     
     inline def setName(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ Any

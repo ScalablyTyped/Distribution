@@ -18,7 +18,8 @@ object ConfirmCustomerAgreementResponse {
     __obj.asInstanceOf[ConfirmCustomerAgreementResponse]
   }
   
-  extension [Self <: ConfirmCustomerAgreementResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmCustomerAgreementResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

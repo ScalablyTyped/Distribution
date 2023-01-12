@@ -26,7 +26,8 @@ object IIndexFieldModeEnum {
     __obj.asInstanceOf[IIndexFieldModeEnum]
   }
   
-  extension [Self <: IIndexFieldModeEnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IIndexFieldModeEnum] (val x: Self) extends AnyVal {
     
     inline def setASCENDING(value: IndexFieldMode): Self = StObject.set(x, "ASCENDING", value.asInstanceOf[js.Any])
     

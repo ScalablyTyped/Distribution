@@ -16,7 +16,8 @@ object Serialize {
     __obj.asInstanceOf[Serialize[RequestType]]
   }
   
-  extension [Self <: Serialize[?], RequestType](x: Self & Serialize[RequestType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Serialize[?], RequestType] (val x: Self & Serialize[RequestType]) extends AnyVal {
     
     inline def setSerialize(value: RequestType => Buffer): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
   }

@@ -19,7 +19,8 @@ object ngWYSIWYG {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setSanitize(value: Boolean): Self = StObject.set(x, "sanitize", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object ngWYSIWYG {
       __obj.asInstanceOf[Toolbar]
     }
     
-    extension [Self <: Toolbar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Toolbar] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[String]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       

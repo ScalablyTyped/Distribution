@@ -31,7 +31,8 @@ object CheckBoxOptions {
     __obj.asInstanceOf[CheckBoxOptions]
   }
   
-  extension [Self <: CheckBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setChange(value: /* e */ CheckBoxChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     

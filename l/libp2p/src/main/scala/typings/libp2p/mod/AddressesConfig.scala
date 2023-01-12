@@ -27,7 +27,8 @@ object AddressesConfig {
     __obj.asInstanceOf[AddressesConfig]
   }
   
-  extension [Self <: AddressesConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddressesConfig] (val x: Self) extends AnyVal {
     
     inline def setAnnounce(value: js.Array[String]): Self = StObject.set(x, "announce", value.asInstanceOf[js.Any])
     

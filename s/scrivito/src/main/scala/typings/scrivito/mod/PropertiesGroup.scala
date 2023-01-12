@@ -20,7 +20,8 @@ object PropertiesGroup {
     __obj.asInstanceOf[PropertiesGroup]
   }
   
-  extension [Self <: PropertiesGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertiesGroup] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

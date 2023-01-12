@@ -25,7 +25,8 @@ object IdAttribute {
     __obj.asInstanceOf[IdAttribute[D]]
   }
   
-  extension [Self <: IdAttribute[?], D](x: Self & IdAttribute[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdAttribute[?], D] (val x: Self & IdAttribute[D]) extends AnyVal {
     
     inline def setIdAttribute(value: String | js.Array[String]): Self = StObject.set(x, "idAttribute", value.asInstanceOf[js.Any])
     

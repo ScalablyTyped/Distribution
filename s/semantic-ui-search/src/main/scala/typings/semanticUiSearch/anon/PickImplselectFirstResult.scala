@@ -97,7 +97,8 @@ object PickImplselectFirstResult {
     __obj.asInstanceOf[PickImplselectFirstResult]
   }
   
-  extension [Self <: PickImplselectFirstResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplselectFirstResult] (val x: Self) extends AnyVal {
     
     inline def setApiSettings(value: ApiSettings): Self = StObject.set(x, "apiSettings", value.asInstanceOf[js.Any])
     

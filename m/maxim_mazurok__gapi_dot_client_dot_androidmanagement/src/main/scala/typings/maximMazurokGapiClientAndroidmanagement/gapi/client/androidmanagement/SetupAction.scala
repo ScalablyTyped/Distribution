@@ -25,7 +25,8 @@ object SetupAction {
     __obj.asInstanceOf[SetupAction]
   }
   
-  extension [Self <: SetupAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetupAction] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: UserFacingMessage): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

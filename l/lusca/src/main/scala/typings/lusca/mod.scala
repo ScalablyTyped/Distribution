@@ -249,7 +249,8 @@ object mod {
       __obj.asInstanceOf[LuscaOptions]
     }
     
-    extension [Self <: LuscaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LuscaOptions] (val x: Self) extends AnyVal {
       
       inline def setCsp(value: cspOptions | `false`): Self = StObject.set(x, "csp", value.asInstanceOf[js.Any])
       
@@ -304,7 +305,8 @@ object mod {
       __obj.asInstanceOf[cspOptions]
     }
     
-    extension [Self <: cspOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: cspOptions] (val x: Self) extends AnyVal {
       
       inline def setPolicy(value: String | js.Object | (js.Array[js.Object | String])): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
@@ -347,7 +349,8 @@ object mod {
       __obj.asInstanceOf[csrfOptionsAllowlist]
     }
     
-    extension [Self <: csrfOptionsAllowlist](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: csrfOptionsAllowlist] (val x: Self) extends AnyVal {
       
       inline def setAllowlist(value: js.Array[String]): Self = StObject.set(x, "allowlist", value.asInstanceOf[js.Any])
       
@@ -372,7 +375,8 @@ object mod {
       __obj.asInstanceOf[csrfOptionsAngular]
     }
     
-    extension [Self <: csrfOptionsAngular](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: csrfOptionsAngular] (val x: Self) extends AnyVal {
       
       inline def setAngular(value: `true`): Self = StObject.set(x, "angular", value.asInstanceOf[js.Any])
       
@@ -431,7 +435,8 @@ object mod {
       __obj.asInstanceOf[csrfOptionsBase]
     }
     
-    extension [Self <: csrfOptionsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: csrfOptionsBase] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -466,7 +471,8 @@ object mod {
       __obj.asInstanceOf[csrfOptionsBlocklist]
     }
     
-    extension [Self <: csrfOptionsBlocklist](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: csrfOptionsBlocklist] (val x: Self) extends AnyVal {
       
       inline def setBlocklist(value: js.Array[String]): Self = StObject.set(x, "blocklist", value.asInstanceOf[js.Any])
       
@@ -509,7 +515,8 @@ object mod {
       __obj.asInstanceOf[csrfOptionsNonAngular]
     }
     
-    extension [Self <: csrfOptionsNonAngular](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: csrfOptionsNonAngular] (val x: Self) extends AnyVal {
       
       inline def setAngular(value: `false`): Self = StObject.set(x, "angular", value.asInstanceOf[js.Any])
       
@@ -536,7 +543,8 @@ object mod {
       __obj.asInstanceOf[hstsOptions]
     }
     
-    extension [Self <: hstsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: hstsOptions] (val x: Self) extends AnyVal {
       
       inline def setIncludeSubDomains(value: Boolean): Self = StObject.set(x, "includeSubDomains", value.asInstanceOf[js.Any])
       
@@ -565,7 +573,8 @@ object mod {
       __obj.asInstanceOf[xssProtectionOptions]
     }
     
-    extension [Self <: xssProtectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: xssProtectionOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       

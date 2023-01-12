@@ -55,7 +55,8 @@ object distLitePackagesFirestoreSrcLiteApiComponentsMod {
       __obj.asInstanceOf[FirestoreService]
     }
     
-    extension [Self <: FirestoreService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirestoreService] (val x: Self) extends AnyVal {
       
       inline def set_appCheckCredentials(value: CredentialsProvider[String]): Self = StObject.set(x, "_appCheckCredentials", value.asInstanceOf[js.Any])
       

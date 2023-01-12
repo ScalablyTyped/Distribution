@@ -21,7 +21,8 @@ object typesFolderDoesNotExistExceptionMod {
       __obj.asInstanceOf[FolderDoesNotExistException]
     }
     
-    extension [Self <: FolderDoesNotExistException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FolderDoesNotExistException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.FolderDoesNotExistException

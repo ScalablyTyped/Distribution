@@ -49,7 +49,8 @@ object AbsX {
     __obj.asInstanceOf[AbsX[RawDatum]]
   }
   
-  extension [Self <: AbsX[?], RawDatum /* <: BarDatum */](x: Self & AbsX[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbsX[?], RawDatum /* <: BarDatum */] (val x: Self & AbsX[RawDatum]) extends AnyVal {
     
     inline def setAbsX(value: Double): Self = StObject.set(x, "absX", value.asInstanceOf[js.Any])
     

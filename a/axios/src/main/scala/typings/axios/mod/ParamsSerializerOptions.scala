@@ -20,7 +20,8 @@ object ParamsSerializerOptions {
     __obj.asInstanceOf[ParamsSerializerOptions]
   }
   
-  extension [Self <: ParamsSerializerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParamsSerializerOptions] (val x: Self) extends AnyVal {
     
     inline def setEncode(value: (/* value */ Any, /* defaultEncoder */ js.Function1[/* value */ Any, Any]) => Any): Self = StObject.set(x, "encode", js.Any.fromFunction2(value))
     

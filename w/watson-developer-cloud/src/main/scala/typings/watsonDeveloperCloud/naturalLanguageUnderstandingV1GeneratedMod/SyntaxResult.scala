@@ -18,7 +18,8 @@ object SyntaxResult {
     __obj.asInstanceOf[SyntaxResult]
   }
   
-  extension [Self <: SyntaxResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyntaxResult] (val x: Self) extends AnyVal {
     
     inline def setSentences(value: js.Array[SentenceResult]): Self = StObject.set(x, "sentences", value.asInstanceOf[js.Any])
     

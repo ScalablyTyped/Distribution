@@ -21,7 +21,8 @@ object MdbUserProto {
     __obj.asInstanceOf[MdbUserProto]
   }
   
-  extension [Self <: MdbUserProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MdbUserProto] (val x: Self) extends AnyVal {
     
     inline def setGaiaId(value: String): Self = StObject.set(x, "gaiaId", value.asInstanceOf[js.Any])
     

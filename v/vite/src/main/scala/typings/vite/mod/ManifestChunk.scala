@@ -29,7 +29,8 @@ object ManifestChunk {
     __obj.asInstanceOf[ManifestChunk]
   }
   
-  extension [Self <: ManifestChunk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestChunk] (val x: Self) extends AnyVal {
     
     inline def setAssets(value: js.Array[String]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     

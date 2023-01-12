@@ -18,7 +18,8 @@ object GetAccessKeyLastUsedRequest {
     __obj.asInstanceOf[GetAccessKeyLastUsedRequest]
   }
   
-  extension [Self <: GetAccessKeyLastUsedRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAccessKeyLastUsedRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessKeyId(value: accessKeyIdType): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
   }

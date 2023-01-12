@@ -34,7 +34,8 @@ object BindingTemplateOptions {
     __obj.asInstanceOf[BindingTemplateOptions]
   }
   
-  extension [Self <: BindingTemplateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindingTemplateOptions] (val x: Self) extends AnyVal {
     
     inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

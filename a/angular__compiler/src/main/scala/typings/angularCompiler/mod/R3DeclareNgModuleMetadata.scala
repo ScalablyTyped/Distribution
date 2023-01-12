@@ -44,7 +44,8 @@ object R3DeclareNgModuleMetadata {
     __obj.asInstanceOf[R3DeclareNgModuleMetadata]
   }
   
-  extension [Self <: R3DeclareNgModuleMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3DeclareNgModuleMetadata] (val x: Self) extends AnyVal {
     
     inline def setBootstrap(value: js.Array[Expression]): Self = StObject.set(x, "bootstrap", value.asInstanceOf[js.Any])
     

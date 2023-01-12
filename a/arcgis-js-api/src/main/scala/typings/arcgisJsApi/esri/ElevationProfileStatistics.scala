@@ -78,7 +78,8 @@ object ElevationProfileStatistics {
     __obj.asInstanceOf[ElevationProfileStatistics]
   }
   
-  extension [Self <: ElevationProfileStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElevationProfileStatistics] (val x: Self) extends AnyVal {
     
     inline def setAvgElevation(value: Double): Self = StObject.set(x, "avgElevation", value.asInstanceOf[js.Any])
     

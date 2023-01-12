@@ -18,7 +18,8 @@ object IPromiseResult {
     __obj.asInstanceOf[IPromiseResult[T]]
   }
   
-  extension [Self <: IPromiseResult[?], T](x: Self & IPromiseResult[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPromiseResult[?], T] (val x: Self & IPromiseResult[T]) extends AnyVal {
     
     inline def setType(value: PromiseResultType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

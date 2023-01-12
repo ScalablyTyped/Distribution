@@ -25,7 +25,8 @@ object RouteOptions {
     __obj.asInstanceOf[RouteOptions[Refs]]
   }
   
-  extension [Self <: RouteOptions[?], Refs /* <: ReqRef */](x: Self & RouteOptions[Refs]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteOptions[?], Refs /* <: ReqRef */] (val x: Self & RouteOptions[Refs]) extends AnyVal {
     
     inline def setAuth(value: `false` | String | RouteOptionsAccess): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

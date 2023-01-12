@@ -18,7 +18,8 @@ object MultiplexSettingsSummary {
     __obj.asInstanceOf[MultiplexSettingsSummary]
   }
   
-  extension [Self <: MultiplexSettingsSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiplexSettingsSummary] (val x: Self) extends AnyVal {
     
     inline def setTransportStreamBitrate(value: integerMin1000000Max100000000): Self = StObject.set(x, "TransportStreamBitrate", value.asInstanceOf[js.Any])
     

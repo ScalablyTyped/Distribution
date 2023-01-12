@@ -226,7 +226,8 @@ object mod {
       __obj.asInstanceOf[InterpolationOptions]
     }
     
-    extension [Self <: InterpolationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterpolationOptions] (val x: Self) extends AnyVal {
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     }
@@ -331,7 +332,8 @@ object mod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreUnknownWords(value: Boolean): Self = StObject.set(x, "ignoreUnknownWords", value.asInstanceOf[js.Any])
       
@@ -405,7 +407,8 @@ object mod {
       __obj.asInstanceOf[Syntax]
     }
     
-    extension [Self <: Syntax](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Syntax] (val x: Self) extends AnyVal {
       
       inline def setStringify(value: (/* node */ Node, /* builder */ Builder) => Unit): Self = StObject.set(x, "stringify", js.Any.fromFunction2(value))
       
@@ -437,7 +440,8 @@ object mod {
       __obj.asInstanceOf[VariablesOptions]
     }
     
-    extension [Self <: VariablesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VariablesOptions] (val x: Self) extends AnyVal {
       
       inline def setPrefixes(value: js.Array[String]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
       

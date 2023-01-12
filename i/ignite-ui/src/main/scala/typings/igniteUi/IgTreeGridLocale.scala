@@ -31,7 +31,8 @@ object IgTreeGridLocale {
     __obj.asInstanceOf[IgTreeGridLocale]
   }
   
-  extension [Self <: IgTreeGridLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgTreeGridLocale] (val x: Self) extends AnyVal {
     
     inline def setCollapseTooltipText(value: String): Self = StObject.set(x, "collapseTooltipText", value.asInstanceOf[js.Any])
     

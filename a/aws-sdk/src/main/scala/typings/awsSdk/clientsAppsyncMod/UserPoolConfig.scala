@@ -33,7 +33,8 @@ object UserPoolConfig {
     __obj.asInstanceOf[UserPoolConfig]
   }
   
-  extension [Self <: UserPoolConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserPoolConfig] (val x: Self) extends AnyVal {
     
     inline def setAppIdClientRegex(value: String): Self = StObject.set(x, "appIdClientRegex", value.asInstanceOf[js.Any])
     

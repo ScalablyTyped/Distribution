@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Base64]
     }
     
-    extension [Self <: Base64](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Base64] (val x: Self) extends AnyVal {
       
       inline def setBase64(value: String): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def set_body(value: Any): Self = StObject.set(x, "_body", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object anon {
       __obj.asInstanceOf[DictkeyBase64]
     }
     
-    extension [Self <: DictkeyBase64](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DictkeyBase64] (val x: Self) extends AnyVal {
       
       inline def setBase64(value: String): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       

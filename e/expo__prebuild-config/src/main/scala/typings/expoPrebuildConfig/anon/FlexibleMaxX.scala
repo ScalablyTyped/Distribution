@@ -20,7 +20,8 @@ object FlexibleMaxX {
     __obj.asInstanceOf[FlexibleMaxX]
   }
   
-  extension [Self <: FlexibleMaxX](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexibleMaxX] (val x: Self) extends AnyVal {
     
     inline def setFlexibleMaxX(value: IBBoolean): Self = StObject.set(x, "flexibleMaxX", value.asInstanceOf[js.Any])
     

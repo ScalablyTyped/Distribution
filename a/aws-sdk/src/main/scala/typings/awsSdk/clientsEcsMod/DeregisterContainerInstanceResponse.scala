@@ -18,7 +18,8 @@ object DeregisterContainerInstanceResponse {
     __obj.asInstanceOf[DeregisterContainerInstanceResponse]
   }
   
-  extension [Self <: DeregisterContainerInstanceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterContainerInstanceResponse] (val x: Self) extends AnyVal {
     
     inline def setContainerInstance(value: ContainerInstance): Self = StObject.set(x, "containerInstance", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ExecutionStageState {
     __obj.asInstanceOf[ExecutionStageState]
   }
   
-  extension [Self <: ExecutionStageState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionStageState] (val x: Self) extends AnyVal {
     
     inline def setCurrentStateTime(value: String): Self = StObject.set(x, "currentStateTime", value.asInstanceOf[js.Any])
     

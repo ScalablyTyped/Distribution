@@ -54,7 +54,8 @@ object XControllerBorder {
     __obj.asInstanceOf[XControllerBorder]
   }
   
-  extension [Self <: XControllerBorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XControllerBorder] (val x: Self) extends AnyVal {
     
     inline def setAddBorderResizeListener(value: XBorderResizeListener => Unit): Self = StObject.set(x, "addBorderResizeListener", js.Any.fromFunction1(value))
     

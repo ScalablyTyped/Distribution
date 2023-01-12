@@ -15,7 +15,8 @@ object ResizeClusterResult {
     __obj.asInstanceOf[ResizeClusterResult]
   }
   
-  extension [Self <: ResizeClusterResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResizeClusterResult] (val x: Self) extends AnyVal {
     
     inline def setCluster(value: Cluster): Self = StObject.set(x, "Cluster", value.asInstanceOf[js.Any])
     

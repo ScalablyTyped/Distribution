@@ -19,7 +19,8 @@ object EChartsMediaOption {
     __obj.asInstanceOf[EChartsMediaOption]
   }
   
-  extension [Self <: EChartsMediaOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EChartsMediaOption] (val x: Self) extends AnyVal {
     
     inline def setOption(value: EChartOption[Series]): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     

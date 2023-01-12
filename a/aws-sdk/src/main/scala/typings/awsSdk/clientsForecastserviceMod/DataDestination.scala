@@ -18,7 +18,8 @@ object DataDestination {
     __obj.asInstanceOf[DataDestination]
   }
   
-  extension [Self <: DataDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataDestination] (val x: Self) extends AnyVal {
     
     inline def setS3Config(value: S3Config): Self = StObject.set(x, "S3Config", value.asInstanceOf[js.Any])
   }

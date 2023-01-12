@@ -15,7 +15,8 @@ object CommentsPublish {
     __obj.asInstanceOf[CommentsPublish]
   }
   
-  extension [Self <: CommentsPublish](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentsPublish] (val x: Self) extends AnyVal {
     
     inline def setCommentsToPublish(value: js.Array[CommentPublish]): Self = StObject.set(x, "commentsToPublish", value.asInstanceOf[js.Any])
     

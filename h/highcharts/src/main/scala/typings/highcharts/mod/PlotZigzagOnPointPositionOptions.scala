@@ -39,7 +39,8 @@ object PlotZigzagOnPointPositionOptions {
     __obj.asInstanceOf[PlotZigzagOnPointPositionOptions]
   }
   
-  extension [Self <: PlotZigzagOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotZigzagOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

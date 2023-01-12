@@ -23,7 +23,8 @@ object AwsDynamoDbTableReplicaGlobalSecondaryIndex {
     __obj.asInstanceOf[AwsDynamoDbTableReplicaGlobalSecondaryIndex]
   }
   
-  extension [Self <: AwsDynamoDbTableReplicaGlobalSecondaryIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsDynamoDbTableReplicaGlobalSecondaryIndex] (val x: Self) extends AnyVal {
     
     inline def setIndexName(value: NonEmptyString): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     

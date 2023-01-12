@@ -23,7 +23,8 @@ object DisconnectPlayerResult {
     __obj.asInstanceOf[DisconnectPlayerResult]
   }
   
-  extension [Self <: DisconnectPlayerResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisconnectPlayerResult] (val x: Self) extends AnyVal {
     
     inline def setDisconnectFailures(value: ConnectionIdList): Self = StObject.set(x, "DisconnectFailures", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object FilterSummary {
     __obj.asInstanceOf[FilterSummary]
   }
   
-  extension [Self <: FilterSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterSummary] (val x: Self) extends AnyVal {
     
     inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
     

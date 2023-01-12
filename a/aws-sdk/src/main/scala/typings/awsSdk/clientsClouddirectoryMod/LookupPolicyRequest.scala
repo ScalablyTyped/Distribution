@@ -33,7 +33,8 @@ object LookupPolicyRequest {
     __obj.asInstanceOf[LookupPolicyRequest]
   }
   
-  extension [Self <: LookupPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LookupPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     

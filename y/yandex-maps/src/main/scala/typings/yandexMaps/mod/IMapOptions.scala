@@ -52,7 +52,8 @@ object IMapOptions {
     __obj.asInstanceOf[IMapOptions]
   }
   
-  extension [Self <: IMapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMapOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoFitToViewport(value: none | ifNull | always): Self = StObject.set(x, "autoFitToViewport", value.asInstanceOf[js.Any])
     

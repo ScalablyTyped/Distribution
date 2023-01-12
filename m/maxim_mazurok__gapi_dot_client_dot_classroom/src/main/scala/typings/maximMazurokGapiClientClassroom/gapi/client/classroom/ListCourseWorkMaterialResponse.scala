@@ -19,7 +19,8 @@ object ListCourseWorkMaterialResponse {
     __obj.asInstanceOf[ListCourseWorkMaterialResponse]
   }
   
-  extension [Self <: ListCourseWorkMaterialResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCourseWorkMaterialResponse] (val x: Self) extends AnyVal {
     
     inline def setCourseWorkMaterial(value: js.Array[CourseWorkMaterial]): Self = StObject.set(x, "courseWorkMaterial", value.asInstanceOf[js.Any])
     

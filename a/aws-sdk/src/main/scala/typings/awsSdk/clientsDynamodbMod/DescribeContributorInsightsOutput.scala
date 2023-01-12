@@ -43,7 +43,8 @@ object DescribeContributorInsightsOutput {
     __obj.asInstanceOf[DescribeContributorInsightsOutput]
   }
   
-  extension [Self <: DescribeContributorInsightsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeContributorInsightsOutput] (val x: Self) extends AnyVal {
     
     inline def setContributorInsightsRuleList(value: ContributorInsightsRuleList): Self = StObject.set(x, "ContributorInsightsRuleList", value.asInstanceOf[js.Any])
     

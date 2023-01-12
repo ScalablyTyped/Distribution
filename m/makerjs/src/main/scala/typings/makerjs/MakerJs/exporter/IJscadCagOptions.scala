@@ -36,7 +36,8 @@ object IJscadCagOptions {
     __obj.asInstanceOf[IJscadCagOptions]
   }
   
-  extension [Self <: IJscadCagOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IJscadCagOptions] (val x: Self) extends AnyVal {
     
     inline def setByLayers(value: Boolean): Self = StObject.set(x, "byLayers", value.asInstanceOf[js.Any])
     

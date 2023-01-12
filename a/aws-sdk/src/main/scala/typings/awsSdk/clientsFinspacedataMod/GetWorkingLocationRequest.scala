@@ -18,7 +18,8 @@ object GetWorkingLocationRequest {
     __obj.asInstanceOf[GetWorkingLocationRequest]
   }
   
-  extension [Self <: GetWorkingLocationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWorkingLocationRequest] (val x: Self) extends AnyVal {
     
     inline def setLocationType(value: locationType): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     

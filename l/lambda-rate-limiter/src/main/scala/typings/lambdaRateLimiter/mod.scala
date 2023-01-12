@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object mod {
       __obj.asInstanceOf[RateLimiter]
     }
     
-    extension [Self <: RateLimiter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RateLimiter] (val x: Self) extends AnyVal {
       
       inline def setCheck(value: (Double, String) => js.Promise[Double]): Self = StObject.set(x, "check", js.Any.fromFunction2(value))
     }

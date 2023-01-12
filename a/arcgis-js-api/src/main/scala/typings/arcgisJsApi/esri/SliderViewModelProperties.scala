@@ -92,7 +92,8 @@ object SliderViewModelProperties {
     __obj.asInstanceOf[SliderViewModelProperties]
   }
   
-  extension [Self <: SliderViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setEffectiveMax(value: Double): Self = StObject.set(x, "effectiveMax", value.asInstanceOf[js.Any])
     

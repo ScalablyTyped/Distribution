@@ -18,7 +18,8 @@ object GetCatalogImportStatusResponse {
     __obj.asInstanceOf[GetCatalogImportStatusResponse]
   }
   
-  extension [Self <: GetCatalogImportStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCatalogImportStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setImportStatus(value: CatalogImportStatus): Self = StObject.set(x, "ImportStatus", value.asInstanceOf[js.Any])
     

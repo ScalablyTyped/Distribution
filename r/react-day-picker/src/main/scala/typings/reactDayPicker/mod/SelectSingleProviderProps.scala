@@ -18,7 +18,8 @@ object SelectSingleProviderProps {
     __obj.asInstanceOf[SelectSingleProviderProps]
   }
   
-  extension [Self <: SelectSingleProviderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectSingleProviderProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

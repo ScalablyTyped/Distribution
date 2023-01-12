@@ -65,7 +65,8 @@ object libTypescriptFileTypesMod {
       __obj.asInstanceOf[PlatformTypes]
     }
     
-    extension [Self <: PlatformTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlatformTypes] (val x: Self) extends AnyVal {
       
       inline def setAndroid(value: ReadonlyreadonlyallFilesr): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       

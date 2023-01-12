@@ -23,7 +23,8 @@ object RollbackConfiguration {
     __obj.asInstanceOf[RollbackConfiguration]
   }
   
-  extension [Self <: RollbackConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollbackConfiguration] (val x: Self) extends AnyVal {
     
     inline def setMonitoringTimeInMinutes(value: MonitoringTimeInMinutes): Self = StObject.set(x, "MonitoringTimeInMinutes", value.asInstanceOf[js.Any])
     

@@ -65,7 +65,8 @@ object RejectsRejectedSender {
     __obj.asInstanceOf[RejectsRejectedSender]
   }
   
-  extension [Self <: RejectsRejectedSender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RejectsRejectedSender] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object AccessibilityState {
     __obj.asInstanceOf[AccessibilityState]
   }
   
-  extension [Self <: AccessibilityState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessibilityState] (val x: Self) extends AnyVal {
     
     inline def setBusy(value: Boolean): Self = StObject.set(x, "busy", value.asInstanceOf[js.Any])
     

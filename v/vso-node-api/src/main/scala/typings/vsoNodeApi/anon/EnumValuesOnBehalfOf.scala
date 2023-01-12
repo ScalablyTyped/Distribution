@@ -15,7 +15,8 @@ object EnumValuesOnBehalfOf {
     __obj.asInstanceOf[EnumValuesOnBehalfOf]
   }
   
-  extension [Self <: EnumValuesOnBehalfOf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesOnBehalfOf] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: OnBehalfOf): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

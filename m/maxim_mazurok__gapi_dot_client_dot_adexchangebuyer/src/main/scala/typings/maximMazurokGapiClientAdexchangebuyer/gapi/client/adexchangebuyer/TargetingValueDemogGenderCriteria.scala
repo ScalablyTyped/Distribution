@@ -15,7 +15,8 @@ object TargetingValueDemogGenderCriteria {
     __obj.asInstanceOf[TargetingValueDemogGenderCriteria]
   }
   
-  extension [Self <: TargetingValueDemogGenderCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetingValueDemogGenderCriteria] (val x: Self) extends AnyVal {
     
     inline def setDemogGenderCriteriaIds(value: js.Array[String]): Self = StObject.set(x, "demogGenderCriteriaIds", value.asInstanceOf[js.Any])
     

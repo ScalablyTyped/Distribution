@@ -21,7 +21,8 @@ object Mute {
     __obj.asInstanceOf[Mute]
   }
   
-  extension [Self <: Mute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mute] (val x: Self) extends AnyVal {
     
     inline def setAbsorbDTMF(value: Boolean): Self = StObject.set(x, "absorbDTMF", value.asInstanceOf[js.Any])
     

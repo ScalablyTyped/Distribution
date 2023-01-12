@@ -19,7 +19,8 @@ object RefreshAccessTokenResponse {
     __obj.asInstanceOf[RefreshAccessTokenResponse]
   }
   
-  extension [Self <: RefreshAccessTokenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshAccessTokenResponse] (val x: Self) extends AnyVal {
     
     inline def setCredentials(value: Credentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     

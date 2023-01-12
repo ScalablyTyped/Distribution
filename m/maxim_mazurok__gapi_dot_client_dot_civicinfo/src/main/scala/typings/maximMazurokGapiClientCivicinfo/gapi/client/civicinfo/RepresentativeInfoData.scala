@@ -24,7 +24,8 @@ object RepresentativeInfoData {
     __obj.asInstanceOf[RepresentativeInfoData]
   }
   
-  extension [Self <: RepresentativeInfoData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepresentativeInfoData] (val x: Self) extends AnyVal {
     
     inline def setDivisions(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.civicinfo.gapi.client.civicinfo.GeographicDivision} */ js.Any

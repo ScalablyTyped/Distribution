@@ -30,7 +30,8 @@ object libTypesEventsMod {
       __obj.asInstanceOf[ChannelCreate]
     }
     
-    extension [Self <: ChannelCreate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelCreate] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: TeamSpeakChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object libTypesEventsMod {
       __obj.asInstanceOf[ChannelDelete]
     }
     
-    extension [Self <: ChannelDelete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelDelete] (val x: Self) extends AnyVal {
       
       inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
@@ -87,7 +89,8 @@ object libTypesEventsMod {
       __obj.asInstanceOf[ChannelEdit]
     }
     
-    extension [Self <: ChannelEdit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelEdit] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: TeamSpeakChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -116,7 +119,8 @@ object libTypesEventsMod {
       __obj.asInstanceOf[ChannelMove]
     }
     
-    extension [Self <: ChannelMove](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelMove] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: TeamSpeakChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -139,7 +143,8 @@ object libTypesEventsMod {
       __obj.asInstanceOf[ClientConnect]
     }
     
-    extension [Self <: ClientConnect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientConnect] (val x: Self) extends AnyVal {
       
       inline def setClient(value: TeamSpeakClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }
@@ -158,7 +163,8 @@ object libTypesEventsMod {
       __obj.asInstanceOf[ClientDisconnect]
     }
     
-    extension [Self <: ClientDisconnect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientDisconnect] (val x: Self) extends AnyVal {
       
       inline def setClient(value: TeamSpeakClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
@@ -183,7 +189,8 @@ object libTypesEventsMod {
       __obj.asInstanceOf[ClientMoved]
     }
     
-    extension [Self <: ClientMoved](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientMoved] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: TeamSpeakChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -207,7 +214,8 @@ object libTypesEventsMod {
       __obj.asInstanceOf[Debug]
     }
     
-    extension [Self <: Debug](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Debug] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -230,7 +238,8 @@ object libTypesEventsMod {
       __obj.asInstanceOf[ServerEdit]
     }
     
-    extension [Self <: ServerEdit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerEdit] (val x: Self) extends AnyVal {
       
       inline def setInvoker(value: TeamSpeakClient): Self = StObject.set(x, "invoker", value.asInstanceOf[js.Any])
       
@@ -255,7 +264,8 @@ object libTypesEventsMod {
       __obj.asInstanceOf[TextMessage]
     }
     
-    extension [Self <: TextMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextMessage] (val x: Self) extends AnyVal {
       
       inline def setInvoker(value: TeamSpeakClient): Self = StObject.set(x, "invoker", value.asInstanceOf[js.Any])
       
@@ -282,7 +292,8 @@ object libTypesEventsMod {
       __obj.asInstanceOf[TokenUsed]
     }
     
-    extension [Self <: TokenUsed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenUsed] (val x: Self) extends AnyVal {
       
       inline def setClient(value: ClientList): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object WhiteSpace {
     __obj.asInstanceOf[WhiteSpace]
   }
   
-  extension [Self <: WhiteSpace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WhiteSpace] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.cssTree.cssTreeStrings.WhiteSpace): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

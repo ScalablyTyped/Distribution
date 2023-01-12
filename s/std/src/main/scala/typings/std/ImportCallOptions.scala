@@ -22,7 +22,8 @@ object ImportCallOptions {
     __obj.asInstanceOf[ImportCallOptions]
   }
   
-  extension [Self <: ImportCallOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportCallOptions] (val x: Self) extends AnyVal {
     
     inline def setAssert(value: ImportAssertions): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     

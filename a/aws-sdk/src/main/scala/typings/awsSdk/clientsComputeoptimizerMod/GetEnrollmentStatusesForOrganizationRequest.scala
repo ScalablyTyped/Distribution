@@ -28,7 +28,8 @@ object GetEnrollmentStatusesForOrganizationRequest {
     __obj.asInstanceOf[GetEnrollmentStatusesForOrganizationRequest]
   }
   
-  extension [Self <: GetEnrollmentStatusesForOrganizationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEnrollmentStatusesForOrganizationRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: EnrollmentFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

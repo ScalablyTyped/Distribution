@@ -184,7 +184,8 @@ object distCommonjsHtmlTagMod {
       __obj.asInstanceOf[HtmlTagCfg]
     }
     
-    extension [Self <: HtmlTagCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlTagCfg] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: StringDictionary[String]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       

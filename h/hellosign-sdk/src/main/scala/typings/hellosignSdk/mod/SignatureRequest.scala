@@ -82,7 +82,8 @@ object SignatureRequest {
     __obj.asInstanceOf[SignatureRequest[Metadata]]
   }
   
-  extension [Self <: SignatureRequest[?], Metadata](x: Self & SignatureRequest[Metadata]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureRequest[?], Metadata] (val x: Self & SignatureRequest[Metadata]) extends AnyVal {
     
     inline def setCc_email_addresses(value: String | js.Array[String]): Self = StObject.set(x, "cc_email_addresses", value.asInstanceOf[js.Any])
     

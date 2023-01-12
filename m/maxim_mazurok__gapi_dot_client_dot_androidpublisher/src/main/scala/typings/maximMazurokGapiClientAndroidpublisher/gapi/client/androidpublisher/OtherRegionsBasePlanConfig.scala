@@ -22,7 +22,8 @@ object OtherRegionsBasePlanConfig {
     __obj.asInstanceOf[OtherRegionsBasePlanConfig]
   }
   
-  extension [Self <: OtherRegionsBasePlanConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OtherRegionsBasePlanConfig] (val x: Self) extends AnyVal {
     
     inline def setEurPrice(value: Money): Self = StObject.set(x, "eurPrice", value.asInstanceOf[js.Any])
     

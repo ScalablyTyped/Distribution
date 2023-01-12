@@ -94,7 +94,8 @@ object HTMLDOMRange {
     __obj.asInstanceOf[HTMLDOMRange]
   }
   
-  extension [Self <: HTMLDOMRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLDOMRange] (val x: Self) extends AnyVal {
     
     inline def setCloneContents(value: () => Any): Self = StObject.set(x, "cloneContents", js.Any.fromFunction0(value))
     

@@ -20,7 +20,8 @@ object DoStatement_ {
     __obj.asInstanceOf[DoStatement_]
   }
   
-  extension [Self <: DoStatement_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoStatement_] (val x: Self) extends AnyVal {
     
     inline def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object DragDropHandleOptionsObject {
     __obj.asInstanceOf[DragDropHandleOptionsObject]
   }
   
-  extension [Self <: DragDropHandleOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragDropHandleOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

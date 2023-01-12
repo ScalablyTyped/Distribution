@@ -65,7 +65,8 @@ object ASPxClientDashboardItemClickEventArgs {
     __obj.asInstanceOf[ASPxClientDashboardItemClickEventArgs]
   }
   
-  extension [Self <: ASPxClientDashboardItemClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDashboardItemClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGetAxisPoint(value: String => ASPxClientDashboardItemDataAxisPoint): Self = StObject.set(x, "GetAxisPoint", js.Any.fromFunction1(value))
     

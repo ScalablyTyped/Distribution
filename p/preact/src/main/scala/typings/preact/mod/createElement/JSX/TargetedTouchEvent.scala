@@ -128,7 +128,8 @@ object TargetedTouchEvent {
     __obj.asInstanceOf[TargetedTouchEvent[Target]]
   }
   
-  extension [Self <: TargetedTouchEvent[?], Target /* <: EventTarget */](x: Self & TargetedTouchEvent[Target]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetedTouchEvent[?], Target /* <: EventTarget */] (val x: Self & TargetedTouchEvent[Target]) extends AnyVal {
     
     inline def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
     

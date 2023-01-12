@@ -24,7 +24,8 @@ object DeleteDialogNodeParams {
     __obj.asInstanceOf[DeleteDialogNodeParams]
   }
   
-  extension [Self <: DeleteDialogNodeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDialogNodeParams] (val x: Self) extends AnyVal {
     
     inline def setDialog_node(value: String): Self = StObject.set(x, "dialog_node", value.asInstanceOf[js.Any])
     

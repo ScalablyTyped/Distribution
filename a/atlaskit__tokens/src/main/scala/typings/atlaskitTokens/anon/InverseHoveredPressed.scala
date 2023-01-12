@@ -15,7 +15,8 @@ object InverseHoveredPressed {
     __obj.asInstanceOf[InverseHoveredPressed]
   }
   
-  extension [Self <: InverseHoveredPressed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InverseHoveredPressed] (val x: Self) extends AnyVal {
     
     inline def setInverse(value: HoveredPressed): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
   }

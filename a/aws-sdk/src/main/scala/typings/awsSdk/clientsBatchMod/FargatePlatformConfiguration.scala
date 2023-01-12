@@ -18,7 +18,8 @@ object FargatePlatformConfiguration {
     __obj.asInstanceOf[FargatePlatformConfiguration]
   }
   
-  extension [Self <: FargatePlatformConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FargatePlatformConfiguration] (val x: Self) extends AnyVal {
     
     inline def setPlatformVersion(value: String): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
     

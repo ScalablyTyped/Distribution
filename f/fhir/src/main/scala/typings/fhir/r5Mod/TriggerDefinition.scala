@@ -74,7 +74,8 @@ object TriggerDefinition {
     __obj.asInstanceOf[TriggerDefinition]
   }
   
-  extension [Self <: TriggerDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TriggerDefinition] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: Expression): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

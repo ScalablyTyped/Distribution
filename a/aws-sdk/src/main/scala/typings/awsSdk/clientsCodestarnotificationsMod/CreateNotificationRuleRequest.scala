@@ -59,7 +59,8 @@ object CreateNotificationRuleRequest {
     __obj.asInstanceOf[CreateNotificationRuleRequest]
   }
   
-  extension [Self <: CreateNotificationRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateNotificationRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

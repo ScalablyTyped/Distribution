@@ -24,7 +24,8 @@ object PartialInitOptions {
     __obj.asInstanceOf[PartialInitOptions]
   }
   
-  extension [Self <: PartialInitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialInitOptions] (val x: Self) extends AnyVal {
     
     inline def setFs(value: TypeofFS): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
     

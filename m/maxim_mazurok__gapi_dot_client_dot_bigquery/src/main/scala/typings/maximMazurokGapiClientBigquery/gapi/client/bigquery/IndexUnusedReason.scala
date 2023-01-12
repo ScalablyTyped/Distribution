@@ -25,7 +25,8 @@ object IndexUnusedReason {
     __obj.asInstanceOf[IndexUnusedReason]
   }
   
-  extension [Self <: IndexUnusedReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexUnusedReason] (val x: Self) extends AnyVal {
     
     inline def setBase_table(value: TableReference): Self = StObject.set(x, "base_table", value.asInstanceOf[js.Any])
     

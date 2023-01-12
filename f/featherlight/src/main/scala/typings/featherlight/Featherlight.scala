@@ -86,7 +86,8 @@ object Featherlight {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: /* event */ JQueryEventObject => Any): Self = StObject.set(x, "afterClose", js.Any.fromFunction1(value))
       
@@ -233,7 +234,8 @@ object Featherlight {
       __obj.asInstanceOf[ContentFilter]
     }
     
-    extension [Self <: ContentFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentFilter] (val x: Self) extends AnyVal {
       
       inline def setProcess(value: /* data */ JQuery | String => JQuery | JQueryPromise[JQuery]): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
       

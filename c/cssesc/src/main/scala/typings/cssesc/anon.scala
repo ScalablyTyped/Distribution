@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyPartialOptions]
     }
     
-    extension [Self <: ReadonlyPartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyPartialOptions] (val x: Self) extends AnyVal {
       
       inline def setEscapeEverything(value: Boolean): Self = StObject.set(x, "escapeEverything", value.asInstanceOf[js.Any])
       

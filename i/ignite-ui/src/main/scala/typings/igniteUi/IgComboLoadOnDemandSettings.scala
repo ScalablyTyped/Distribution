@@ -31,7 +31,8 @@ object IgComboLoadOnDemandSettings {
     __obj.asInstanceOf[IgComboLoadOnDemandSettings]
   }
   
-  extension [Self <: IgComboLoadOnDemandSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgComboLoadOnDemandSettings] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object TransitionCallbackProps {
     __obj.asInstanceOf[TransitionCallbackProps]
   }
   
-  extension [Self <: TransitionCallbackProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionCallbackProps] (val x: Self) extends AnyVal {
     
     inline def setClosing(value: Boolean): Self = StObject.set(x, "closing", value.asInstanceOf[js.Any])
   }

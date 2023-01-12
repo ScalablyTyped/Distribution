@@ -64,7 +64,8 @@ object anon {
       __obj.asInstanceOf[Content]
     }
     
-    extension [Self <: Content](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object anon {
       __obj.asInstanceOf[Ele]
     }
     
-    extension [Self <: Ele](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ele] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: DynamicChild): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -226,7 +228,8 @@ object anon {
       __obj.asInstanceOf[EleNoChidlrenOmitContentI]
     }
     
-    extension [Self <: EleNoChidlrenOmitContentI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EleNoChidlrenOmitContentI] (val x: Self) extends AnyVal {
       
       inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
       
@@ -528,7 +531,8 @@ object anon {
       __obj.asInstanceOf[EleNoChidlrenOmitContentQ]
     }
     
-    extension [Self <: EleNoChidlrenOmitContentQ](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EleNoChidlrenOmitContentQ] (val x: Self) extends AnyVal {
       
       inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
       
@@ -814,7 +818,8 @@ object anon {
       __obj.asInstanceOf[EleOmitContentColumnscolu]
     }
     
-    extension [Self <: EleOmitContentColumnscolu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EleOmitContentColumnscolu] (val x: Self) extends AnyVal {
       
       inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
       
@@ -1088,7 +1093,8 @@ object anon {
       __obj.asInstanceOf[EleOmitContentOrderedList]
     }
     
-    extension [Self <: EleOmitContentOrderedList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EleOmitContentOrderedList] (val x: Self) extends AnyVal {
       
       inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
       
@@ -1370,7 +1376,8 @@ object anon {
       __obj.asInstanceOf[EleOmitContentStackstack]
     }
     
-    extension [Self <: EleOmitContentStackstack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EleOmitContentStackstack] (val x: Self) extends AnyVal {
       
       inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
       
@@ -1648,7 +1655,8 @@ object anon {
       __obj.asInstanceOf[EleOmitContentTabletableO]
     }
     
-    extension [Self <: EleOmitContentTabletableO](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EleOmitContentTabletableO] (val x: Self) extends AnyVal {
       
       inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
       
@@ -1950,7 +1958,8 @@ object anon {
       __obj.asInstanceOf[EleOmitContentTexttext]
     }
     
-    extension [Self <: EleOmitContentTexttext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EleOmitContentTexttext] (val x: Self) extends AnyVal {
       
       inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
       
@@ -2230,7 +2239,8 @@ object anon {
       __obj.asInstanceOf[EleOmitContentUnorderedLi]
     }
     
-    extension [Self <: EleOmitContentUnorderedLi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EleOmitContentUnorderedLi] (val x: Self) extends AnyVal {
       
       inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
       
@@ -2444,7 +2454,8 @@ object anon {
       __obj.asInstanceOf[EleOmitTDocumentDefinitio]
     }
     
-    extension [Self <: EleOmitTDocumentDefinitio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EleOmitTDocumentDefinitio] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: DynamicBackground | typings.pdfmake.interfacesMod.Content): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -2536,7 +2547,8 @@ object anon {
       __obj.asInstanceOf[Elewidthnumberstring]
     }
     
-    extension [Self <: Elewidthnumberstring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Elewidthnumberstring] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: DynamicChild): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -77,7 +77,8 @@ object JsonParseOptionItem {
     __obj.asInstanceOf[JsonParseOptionItem]
   }
   
-  extension [Self <: JsonParseOptionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonParseOptionItem] (val x: Self) extends AnyVal {
     
     inline def setInflate(value: Boolean): Self = StObject.set(x, "inflate", value.asInstanceOf[js.Any])
     

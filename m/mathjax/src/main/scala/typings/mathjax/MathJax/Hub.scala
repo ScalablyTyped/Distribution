@@ -184,7 +184,8 @@ object Hub {
     __obj.asInstanceOf[Hub]
   }
   
-  extension [Self <: Hub](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hub] (val x: Self) extends AnyVal {
     
     inline def setBrowser(value: BrowserInfo): Self = StObject.set(x, "Browser", value.asInstanceOf[js.Any])
     

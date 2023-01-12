@@ -21,7 +21,8 @@ object dxResponsiveBoxItem {
     __obj.asInstanceOf[dxResponsiveBoxItem]
   }
   
-  extension [Self <: dxResponsiveBoxItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxResponsiveBoxItem] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: Col | js.Array[Col]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

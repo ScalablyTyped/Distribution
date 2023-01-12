@@ -113,7 +113,8 @@ object PropertyBrowserController {
     __obj.asInstanceOf[PropertyBrowserController]
   }
   
-  extension [Self <: PropertyBrowserController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyBrowserController] (val x: Self) extends AnyVal {
     
     inline def setCurrentPage(value: String): Self = StObject.set(x, "CurrentPage", value.asInstanceOf[js.Any])
     

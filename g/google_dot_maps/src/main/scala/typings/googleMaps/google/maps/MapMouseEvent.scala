@@ -45,7 +45,8 @@ object MapMouseEvent {
     __obj.asInstanceOf[MapMouseEvent]
   }
   
-  extension [Self <: MapMouseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapMouseEvent] (val x: Self) extends AnyVal {
     
     inline def setDomEvent(value: MouseEvent | TouchEvent | PointerEvent | KeyboardEvent | Event): Self = StObject.set(x, "domEvent", value.asInstanceOf[js.Any])
     

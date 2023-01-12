@@ -38,7 +38,8 @@ object PropertySetInfoChangeEvent {
     __obj.asInstanceOf[PropertySetInfoChangeEvent]
   }
   
-  extension [Self <: PropertySetInfoChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertySetInfoChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setHandle(value: Double): Self = StObject.set(x, "Handle", value.asInstanceOf[js.Any])
     

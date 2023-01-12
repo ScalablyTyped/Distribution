@@ -330,7 +330,8 @@ object mod {
       __obj.asInstanceOf[Alias]
     }
     
-    extension [Self <: Alias](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alias] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     }
@@ -356,7 +357,8 @@ object mod {
       __obj.asInstanceOf[NotificationId]
     }
     
-    extension [Self <: NotificationId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationId] (val x: Self) extends AnyVal {
       
       inline def setNotificationId(value: String): Self = StObject.set(x, "notificationId", value.asInstanceOf[js.Any])
     }
@@ -376,7 +378,8 @@ object mod {
       __obj.asInstanceOf[Sequence]
     }
     
-    extension [Self <: Sequence](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sequence] (val x: Self) extends AnyVal {
       
       inline def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     }
@@ -398,7 +401,8 @@ object mod {
       __obj.asInstanceOf[Tag]
     }
     
-    extension [Self <: Tag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
       
       inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     }
@@ -420,7 +424,8 @@ object mod {
       __obj.asInstanceOf[Tags]
     }
     
-    extension [Self <: Tags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tags] (val x: Self) extends AnyVal {
       
       inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       

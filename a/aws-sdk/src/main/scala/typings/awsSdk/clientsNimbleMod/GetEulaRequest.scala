@@ -18,7 +18,8 @@ object GetEulaRequest {
     __obj.asInstanceOf[GetEulaRequest]
   }
   
-  extension [Self <: GetEulaRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEulaRequest] (val x: Self) extends AnyVal {
     
     inline def setEulaId(value: String): Self = StObject.set(x, "eulaId", value.asInstanceOf[js.Any])
   }

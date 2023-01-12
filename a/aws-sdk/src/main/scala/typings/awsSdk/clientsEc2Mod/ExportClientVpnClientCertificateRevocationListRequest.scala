@@ -23,7 +23,8 @@ object ExportClientVpnClientCertificateRevocationListRequest {
     __obj.asInstanceOf[ExportClientVpnClientCertificateRevocationListRequest]
   }
   
-  extension [Self <: ExportClientVpnClientCertificateRevocationListRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportClientVpnClientCertificateRevocationListRequest] (val x: Self) extends AnyVal {
     
     inline def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
     

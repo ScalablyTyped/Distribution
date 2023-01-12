@@ -38,7 +38,8 @@ object Computetype {
     __obj.asInstanceOf[Computetype]
   }
   
-  extension [Self <: Computetype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Computetype] (val x: Self) extends AnyVal {
     
     inline def `setCompute-type`(value: CodeBuildEnvironmentComputeType): Self = StObject.set(x, "compute-type", value.asInstanceOf[js.Any])
     

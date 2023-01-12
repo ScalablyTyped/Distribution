@@ -19,7 +19,8 @@ object ResolveWithTtlOptions {
     __obj.asInstanceOf[ResolveWithTtlOptions]
   }
   
-  extension [Self <: ResolveWithTtlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveWithTtlOptions] (val x: Self) extends AnyVal {
     
     inline def setTtl(value: `true`): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
   }

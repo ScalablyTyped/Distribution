@@ -18,7 +18,8 @@ object DescribeDeviceEc2Output {
     __obj.asInstanceOf[DescribeDeviceEc2Output]
   }
   
-  extension [Self <: DescribeDeviceEc2Output](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDeviceEc2Output] (val x: Self) extends AnyVal {
     
     inline def setInstances(value: InstanceSummaryList): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     

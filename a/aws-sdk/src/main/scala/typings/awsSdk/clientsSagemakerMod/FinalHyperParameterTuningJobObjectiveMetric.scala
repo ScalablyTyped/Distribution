@@ -28,7 +28,8 @@ object FinalHyperParameterTuningJobObjectiveMetric {
     __obj.asInstanceOf[FinalHyperParameterTuningJobObjectiveMetric]
   }
   
-  extension [Self <: FinalHyperParameterTuningJobObjectiveMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinalHyperParameterTuningJobObjectiveMetric] (val x: Self) extends AnyVal {
     
     inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     

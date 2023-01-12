@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[PartialAuthOptions]
     }
     
-    extension [Self <: PartialAuthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialAuthOptions] (val x: Self) extends AnyVal {
       
       inline def `setAlways-auth`(value: Boolean): Self = StObject.set(x, "always-auth", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object anon {
       __obj.asInstanceOf[PartialFetchRetryOptions]
     }
     
-    extension [Self <: PartialFetchRetryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFetchRetryOptions] (val x: Self) extends AnyVal {
       
       inline def setFetchRetries(value: Double): Self = StObject.set(x, "fetchRetries", value.asInstanceOf[js.Any])
       

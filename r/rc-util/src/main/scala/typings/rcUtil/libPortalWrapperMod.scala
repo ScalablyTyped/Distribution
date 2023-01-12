@@ -95,7 +95,8 @@ object libPortalWrapperMod {
       __obj.asInstanceOf[PortalWrapperProps]
     }
     
-    extension [Self <: PortalWrapperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortalWrapperProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: typings.rcUtil.anon.GetContainer => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       

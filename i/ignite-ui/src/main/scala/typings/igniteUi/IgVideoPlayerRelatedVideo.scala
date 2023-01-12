@@ -61,7 +61,8 @@ object IgVideoPlayerRelatedVideo {
     __obj.asInstanceOf[IgVideoPlayerRelatedVideo]
   }
   
-  extension [Self <: IgVideoPlayerRelatedVideo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgVideoPlayerRelatedVideo] (val x: Self) extends AnyVal {
     
     inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     

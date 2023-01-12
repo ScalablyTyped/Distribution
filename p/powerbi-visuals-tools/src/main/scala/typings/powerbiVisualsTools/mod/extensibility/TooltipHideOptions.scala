@@ -17,7 +17,8 @@ object TooltipHideOptions {
     __obj.asInstanceOf[TooltipHideOptions]
   }
   
-  extension [Self <: TooltipHideOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipHideOptions] (val x: Self) extends AnyVal {
     
     inline def setImmediately(value: Boolean): Self = StObject.set(x, "immediately", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Column]
     }
     
-    extension [Self <: Column](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object anon {
       __obj.asInstanceOf[On]
     }
     
-    extension [Self <: On](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: On] (val x: Self) extends AnyVal {
       
       inline def setOn(value: (data, js.Function1[/* file */ LessHintFile, Unit]) => Transform): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     }
@@ -91,7 +93,8 @@ object anon {
       __obj.asInstanceOf[ResultCount]
     }
     
-    extension [Self <: ResultCount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultCount] (val x: Self) extends AnyVal {
       
       inline def setResultCount(value: Double): Self = StObject.set(x, "resultCount", value.asInstanceOf[js.Any])
       

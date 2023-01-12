@@ -29,7 +29,8 @@ object LangAccessibilityScreenReaderSectionOptions {
     __obj.asInstanceOf[LangAccessibilityScreenReaderSectionOptions]
   }
   
-  extension [Self <: LangAccessibilityScreenReaderSectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LangAccessibilityScreenReaderSectionOptions] (val x: Self) extends AnyVal {
     
     inline def setAfterRegionLabel(value: String): Self = StObject.set(x, "afterRegionLabel", value.asInstanceOf[js.Any])
     

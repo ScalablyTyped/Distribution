@@ -28,7 +28,8 @@ object AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetail
     __obj.asInstanceOf[AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetails]
   }
   
-  extension [Self <: AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetails] (val x: Self) extends AnyVal {
     
     inline def setPrefix(value: NonEmptyString): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     

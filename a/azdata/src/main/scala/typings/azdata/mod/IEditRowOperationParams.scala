@@ -17,7 +17,8 @@ object IEditRowOperationParams {
     __obj.asInstanceOf[IEditRowOperationParams]
   }
   
-  extension [Self <: IEditRowOperationParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEditRowOperationParams] (val x: Self) extends AnyVal {
     
     inline def setRowId(value: Double): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
   }

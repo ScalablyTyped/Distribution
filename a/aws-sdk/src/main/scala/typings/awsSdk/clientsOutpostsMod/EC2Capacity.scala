@@ -28,7 +28,8 @@ object EC2Capacity {
     __obj.asInstanceOf[EC2Capacity]
   }
   
-  extension [Self <: EC2Capacity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EC2Capacity] (val x: Self) extends AnyVal {
     
     inline def setFamily(value: Family): Self = StObject.set(x, "Family", value.asInstanceOf[js.Any])
     

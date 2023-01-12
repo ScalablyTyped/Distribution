@@ -43,7 +43,8 @@ object XIndexContainer {
     __obj.asInstanceOf[XIndexContainer]
   }
   
-  extension [Self <: XIndexContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIndexContainer] (val x: Self) extends AnyVal {
     
     inline def setInsertByIndex(value: (Double, Any) => Unit): Self = StObject.set(x, "insertByIndex", js.Any.fromFunction2(value))
     

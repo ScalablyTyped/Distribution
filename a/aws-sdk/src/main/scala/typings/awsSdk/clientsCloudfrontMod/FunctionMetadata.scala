@@ -33,7 +33,8 @@ object FunctionMetadata {
     __obj.asInstanceOf[FunctionMetadata]
   }
   
-  extension [Self <: FunctionMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionMetadata] (val x: Self) extends AnyVal {
     
     inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     

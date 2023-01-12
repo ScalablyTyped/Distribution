@@ -23,7 +23,8 @@ object ResponseError {
     __obj.asInstanceOf[ResponseError]
   }
   
-  extension [Self <: ResponseError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: LaunchTemplateErrorCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

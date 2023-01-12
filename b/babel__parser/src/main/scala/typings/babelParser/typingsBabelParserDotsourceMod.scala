@@ -35,7 +35,8 @@ object typingsBabelParserDotsourceMod {
       __obj.asInstanceOf[ParseError]
     }
     
-    extension [Self <: ParseError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -156,7 +157,8 @@ object typingsBabelParserDotsourceMod {
       __obj.asInstanceOf[ParserOptions]
     }
     
-    extension [Self <: ParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowAwaitOutsideFunction(value: Boolean): Self = StObject.set(x, "allowAwaitOutsideFunction", value.asInstanceOf[js.Any])
       

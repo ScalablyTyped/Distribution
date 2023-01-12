@@ -22,7 +22,8 @@ object UIElementTooDeep {
     __obj.asInstanceOf[UIElementTooDeep]
   }
   
-  extension [Self <: UIElementTooDeep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIElementTooDeep] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

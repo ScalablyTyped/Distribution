@@ -28,7 +28,8 @@ object RepositorySyncAttempt {
     __obj.asInstanceOf[RepositorySyncAttempt]
   }
   
-  extension [Self <: RepositorySyncAttempt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepositorySyncAttempt] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: RepositorySyncEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

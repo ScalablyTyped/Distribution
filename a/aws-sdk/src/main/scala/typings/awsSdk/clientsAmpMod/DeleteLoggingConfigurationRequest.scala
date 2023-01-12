@@ -23,7 +23,8 @@ object DeleteLoggingConfigurationRequest {
     __obj.asInstanceOf[DeleteLoggingConfigurationRequest]
   }
   
-  extension [Self <: DeleteLoggingConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLoggingConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: IdempotencyToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object EventBridgeDestinationProperties {
     __obj.asInstanceOf[EventBridgeDestinationProperties]
   }
   
-  extension [Self <: EventBridgeDestinationProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventBridgeDestinationProperties] (val x: Self) extends AnyVal {
     
     inline def setErrorHandlingConfig(value: ErrorHandlingConfig): Self = StObject.set(x, "errorHandlingConfig", value.asInstanceOf[js.Any])
     

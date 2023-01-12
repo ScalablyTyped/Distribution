@@ -109,7 +109,8 @@ object PretargetingConfig {
     __obj.asInstanceOf[PretargetingConfig]
   }
   
-  extension [Self <: PretargetingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PretargetingConfig] (val x: Self) extends AnyVal {
     
     inline def setBillingId(value: String): Self = StObject.set(x, "billingId", value.asInstanceOf[js.Any])
     

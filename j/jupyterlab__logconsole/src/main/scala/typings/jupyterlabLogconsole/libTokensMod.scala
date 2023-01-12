@@ -50,7 +50,8 @@ object libTokensMod {
     @js.native
     val ^ : Token[ILoggerRegistry] = js.native
     
-    extension [Self <: ILoggerRegistry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILoggerRegistry] (val x: Self) extends AnyVal {
       
       inline def setGetLogger(value: String => ILogger): Self = StObject.set(x, "getLogger", js.Any.fromFunction1(value))
       
@@ -97,7 +98,8 @@ object libTokensMod {
       __obj.asInstanceOf[IHtmlLog]
     }
     
-    extension [Self <: IHtmlLog](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHtmlLog] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -157,7 +159,8 @@ object libTokensMod {
       __obj.asInstanceOf[ILogPayloadBase]
     }
     
-    extension [Self <: ILogPayloadBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILogPayloadBase] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -254,7 +257,8 @@ object libTokensMod {
       __obj.asInstanceOf[ILogger]
     }
     
-    extension [Self <: ILogger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILogger] (val x: Self) extends AnyVal {
       
       inline def setCheckpoint(value: () => Unit): Self = StObject.set(x, "checkpoint", js.Any.fromFunction0(value))
       
@@ -322,7 +326,8 @@ object libTokensMod {
       __obj.asInstanceOf[IOutputLog]
     }
     
-    extension [Self <: IOutputLog](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOutputLog] (val x: Self) extends AnyVal {
       
       inline def setData(value: IOutput): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -361,7 +366,8 @@ object libTokensMod {
       __obj.asInstanceOf[ITextLog]
     }
     
-    extension [Self <: ITextLog](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITextLog] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

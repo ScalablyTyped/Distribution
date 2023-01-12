@@ -87,7 +87,8 @@ object Spatial {
       __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -142,7 +143,8 @@ object Spatial {
       __obj.asInstanceOf[typings.heremaps.H.map.Spatial.Options]
     }
     
-    extension [Self <: typings.heremaps.H.map.Spatial.Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.heremaps.H.map.Spatial.Options] (val x: Self) extends AnyVal {
       
       inline def setArrows(value: ArrowStyle | typings.heremaps.H.map.ArrowStyle.Options): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
       

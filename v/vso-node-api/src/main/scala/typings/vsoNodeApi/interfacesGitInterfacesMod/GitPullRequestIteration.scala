@@ -99,7 +99,8 @@ object GitPullRequestIteration {
     __obj.asInstanceOf[GitPullRequestIteration]
   }
   
-  extension [Self <: GitPullRequestIteration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitPullRequestIteration] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: IdentityRef): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

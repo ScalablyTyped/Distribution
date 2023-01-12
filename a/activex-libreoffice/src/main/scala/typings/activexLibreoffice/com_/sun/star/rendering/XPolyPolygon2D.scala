@@ -75,7 +75,8 @@ object XPolyPolygon2D {
     __obj.asInstanceOf[XPolyPolygon2D]
   }
   
-  extension [Self <: XPolyPolygon2D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPolyPolygon2D] (val x: Self) extends AnyVal {
     
     inline def setAddPolyPolygon(value: (RealPoint2D, XPolyPolygon2D) => Unit): Self = StObject.set(x, "addPolyPolygon", js.Any.fromFunction2(value))
     

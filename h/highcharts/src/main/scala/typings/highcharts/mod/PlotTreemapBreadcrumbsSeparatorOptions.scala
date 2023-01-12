@@ -23,7 +23,8 @@ object PlotTreemapBreadcrumbsSeparatorOptions {
     __obj.asInstanceOf[PlotTreemapBreadcrumbsSeparatorOptions]
   }
   
-  extension [Self <: PlotTreemapBreadcrumbsSeparatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTreemapBreadcrumbsSeparatorOptions] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: CSSObject | PlotTreemapBreadcrumbsSeparatorStyleOptions): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

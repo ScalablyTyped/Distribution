@@ -17,7 +17,8 @@ object CardanoPoolOwner {
     __obj.asInstanceOf[CardanoPoolOwner]
   }
   
-  extension [Self <: CardanoPoolOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoPoolOwner] (val x: Self) extends AnyVal {
     
     inline def setStakingKeyHash(value: String): Self = StObject.set(x, "stakingKeyHash", value.asInstanceOf[js.Any])
     

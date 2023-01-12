@@ -27,7 +27,8 @@ object AddressConfig {
     __obj.asInstanceOf[AddressConfig]
   }
   
-  extension [Self <: AddressConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddressConfig] (val x: Self) extends AnyVal {
     
     inline def setAPI(value: String): Self = StObject.set(x, "API", value.asInstanceOf[js.Any])
     

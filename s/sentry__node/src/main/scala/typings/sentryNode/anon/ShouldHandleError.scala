@@ -20,7 +20,8 @@ object ShouldHandleError {
     __obj.asInstanceOf[ShouldHandleError]
   }
   
-  extension [Self <: ShouldHandleError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShouldHandleError] (val x: Self) extends AnyVal {
     
     inline def setShouldHandleError(value: /* error */ MiddlewareError => Boolean): Self = StObject.set(x, "shouldHandleError", js.Any.fromFunction1(value))
     

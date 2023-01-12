@@ -29,7 +29,8 @@ object TouchEvent {
     __obj.asInstanceOf[TouchEvent[T]]
   }
   
-  extension [Self <: TouchEvent[?], T /* <: TouchEventType */](x: Self & TouchEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchEvent[?], T /* <: TouchEventType */] (val x: Self & TouchEvent[T]) extends AnyVal {
     
     inline def setChangedTouches(value: js.Array[Touch]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
     

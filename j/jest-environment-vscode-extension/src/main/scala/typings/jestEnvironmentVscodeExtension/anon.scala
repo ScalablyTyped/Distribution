@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Mocks[Files]]
     }
     
-    extension [Self <: Mocks[?], Files /* <: StringDictionary[String] */](x: Self & Mocks[Files]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mocks[?], Files /* <: StringDictionary[String] */] (val x: Self & Mocks[Files]) extends AnyVal {
       
       inline def setFiles(value: Files): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       

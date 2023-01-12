@@ -23,7 +23,8 @@ object typesSrcCoreTimelineTimelineTransportMod {
       __obj.asInstanceOf[TimelineTransport]
     }
     
-    extension [Self <: TimelineTransport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimelineTransport] (val x: Self) extends AnyVal {
       
       inline def setGetAgent(value: (default, Boolean) => js.Function2[/* data */ Any, /* callback */ js.Function, Unit]): Self = StObject.set(x, "getAgent", js.Any.fromFunction2(value))
       

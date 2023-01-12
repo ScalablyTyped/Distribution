@@ -33,7 +33,8 @@ object LambdaContainerParams {
     __obj.asInstanceOf[LambdaContainerParams]
   }
   
-  extension [Self <: LambdaContainerParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaContainerParams] (val x: Self) extends AnyVal {
     
     inline def setDevices(value: LambdaDeviceList): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     

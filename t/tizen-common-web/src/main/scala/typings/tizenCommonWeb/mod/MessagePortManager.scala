@@ -80,7 +80,8 @@ object MessagePortManager {
     __obj.asInstanceOf[MessagePortManager]
   }
   
-  extension [Self <: MessagePortManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagePortManager] (val x: Self) extends AnyVal {
     
     inline def setRequestLocalMessagePort(value: String => LocalMessagePort): Self = StObject.set(x, "requestLocalMessagePort", js.Any.fromFunction1(value))
     

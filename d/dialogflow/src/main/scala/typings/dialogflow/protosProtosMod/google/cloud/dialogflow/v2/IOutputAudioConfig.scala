@@ -25,7 +25,8 @@ object IOutputAudioConfig {
     __obj.asInstanceOf[IOutputAudioConfig]
   }
   
-  extension [Self <: IOutputAudioConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOutputAudioConfig] (val x: Self) extends AnyVal {
     
     inline def setAudioEncoding(
       value: OutputAudioEncoding | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.OutputAudioEncoding * / any */ String)

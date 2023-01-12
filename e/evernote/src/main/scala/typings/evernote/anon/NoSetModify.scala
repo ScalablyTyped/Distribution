@@ -21,7 +21,8 @@ object NoSetModify {
     __obj.asInstanceOf[NoSetModify]
   }
   
-  extension [Self <: NoSetModify](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoSetModify] (val x: Self) extends AnyVal {
     
     inline def setNoSetFullAccess(value: Boolean): Self = StObject.set(x, "noSetFullAccess", value.asInstanceOf[js.Any])
     

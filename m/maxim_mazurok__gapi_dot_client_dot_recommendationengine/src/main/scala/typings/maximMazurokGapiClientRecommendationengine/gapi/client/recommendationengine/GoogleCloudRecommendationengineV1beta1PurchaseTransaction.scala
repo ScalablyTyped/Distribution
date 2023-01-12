@@ -39,7 +39,8 @@ object GoogleCloudRecommendationengineV1beta1PurchaseTransaction {
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1PurchaseTransaction]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1beta1PurchaseTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1PurchaseTransaction] (val x: Self) extends AnyVal {
     
     inline def setCosts(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: number} */ js.Any

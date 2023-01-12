@@ -20,7 +20,8 @@ object ExposeDevToolsProtocolRequest {
     __obj.asInstanceOf[ExposeDevToolsProtocolRequest]
   }
   
-  extension [Self <: ExposeDevToolsProtocolRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExposeDevToolsProtocolRequest] (val x: Self) extends AnyVal {
     
     inline def setBindingName(value: String): Self = StObject.set(x, "bindingName", value.asInstanceOf[js.Any])
     

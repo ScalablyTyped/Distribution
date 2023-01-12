@@ -33,7 +33,8 @@ object CreateClusterSubnetGroupMessage {
     __obj.asInstanceOf[CreateClusterSubnetGroupMessage]
   }
   
-  extension [Self <: CreateClusterSubnetGroupMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateClusterSubnetGroupMessage] (val x: Self) extends AnyVal {
     
     inline def setClusterSubnetGroupName(value: String): Self = StObject.set(x, "ClusterSubnetGroupName", value.asInstanceOf[js.Any])
     

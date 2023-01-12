@@ -25,7 +25,8 @@ object NotificationEventMap {
     __obj.asInstanceOf[NotificationEventMap]
   }
   
-  extension [Self <: NotificationEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationEventMap] (val x: Self) extends AnyVal {
     
     inline def setClick(value: Event): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     

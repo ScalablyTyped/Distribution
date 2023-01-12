@@ -23,7 +23,8 @@ object SizeConstraintSetUpdate {
     __obj.asInstanceOf[SizeConstraintSetUpdate]
   }
   
-  extension [Self <: SizeConstraintSetUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeConstraintSetUpdate] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

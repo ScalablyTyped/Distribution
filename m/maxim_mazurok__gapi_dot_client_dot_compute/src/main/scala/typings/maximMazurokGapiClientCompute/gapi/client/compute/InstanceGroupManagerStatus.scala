@@ -29,7 +29,8 @@ object InstanceGroupManagerStatus {
     __obj.asInstanceOf[InstanceGroupManagerStatus]
   }
   
-  extension [Self <: InstanceGroupManagerStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceGroupManagerStatus] (val x: Self) extends AnyVal {
     
     inline def setAutoscaler(value: String): Self = StObject.set(x, "autoscaler", value.asInstanceOf[js.Any])
     

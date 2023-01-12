@@ -58,7 +58,8 @@ object SharedDirectory {
     __obj.asInstanceOf[SharedDirectory]
   }
   
-  extension [Self <: SharedDirectory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedDirectory] (val x: Self) extends AnyVal {
     
     inline def setCreatedDateTime(value: js.Date): Self = StObject.set(x, "CreatedDateTime", value.asInstanceOf[js.Any])
     

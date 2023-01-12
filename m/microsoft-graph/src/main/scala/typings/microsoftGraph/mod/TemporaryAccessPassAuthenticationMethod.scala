@@ -48,7 +48,8 @@ object TemporaryAccessPassAuthenticationMethod {
     __obj.asInstanceOf[TemporaryAccessPassAuthenticationMethod]
   }
   
-  extension [Self <: TemporaryAccessPassAuthenticationMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemporaryAccessPassAuthenticationMethod] (val x: Self) extends AnyVal {
     
     inline def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     

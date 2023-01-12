@@ -18,7 +18,8 @@ object UpdateVirtualGatewayOutput {
     __obj.asInstanceOf[UpdateVirtualGatewayOutput]
   }
   
-  extension [Self <: UpdateVirtualGatewayOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateVirtualGatewayOutput] (val x: Self) extends AnyVal {
     
     inline def setVirtualGateway(value: VirtualGatewayData): Self = StObject.set(x, "virtualGateway", value.asInstanceOf[js.Any])
   }

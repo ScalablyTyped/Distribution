@@ -19,7 +19,8 @@ object RUBUSD {
     __obj.asInstanceOf[RUBUSD]
   }
   
-  extension [Self <: RUBUSD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RUBUSD] (val x: Self) extends AnyVal {
     
     inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     

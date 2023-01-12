@@ -21,7 +21,8 @@ object IHashtableOptions {
     __obj.asInstanceOf[IHashtableOptions[TKey]]
   }
   
-  extension [Self <: IHashtableOptions[?], TKey](x: Self & IHashtableOptions[TKey]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHashtableOptions[?], TKey] (val x: Self & IHashtableOptions[TKey]) extends AnyVal {
     
     inline def setEquals_(value: (/* key1 */ TKey, /* key2 */ TKey) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
     

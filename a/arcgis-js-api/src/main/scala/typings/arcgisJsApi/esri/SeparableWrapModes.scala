@@ -30,7 +30,8 @@ object SeparableWrapModes {
     __obj.asInstanceOf[SeparableWrapModes]
   }
   
-  extension [Self <: SeparableWrapModes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeparableWrapModes] (val x: Self) extends AnyVal {
     
     inline def setHorizontal(value: clamp | repeat | mirror): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     

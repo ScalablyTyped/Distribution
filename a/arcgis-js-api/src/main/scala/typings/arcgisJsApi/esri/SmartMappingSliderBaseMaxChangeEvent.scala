@@ -21,7 +21,8 @@ object SmartMappingSliderBaseMaxChangeEvent {
     __obj.asInstanceOf[SmartMappingSliderBaseMaxChangeEvent]
   }
   
-  extension [Self <: SmartMappingSliderBaseMaxChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartMappingSliderBaseMaxChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     

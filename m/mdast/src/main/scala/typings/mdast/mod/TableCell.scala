@@ -23,7 +23,8 @@ object TableCell {
     __obj.asInstanceOf[TableCell]
   }
   
-  extension [Self <: TableCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableCell] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[PhrasingContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

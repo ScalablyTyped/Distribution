@@ -45,7 +45,8 @@ object ResponsiveRulesConditionOptions {
     __obj.asInstanceOf[ResponsiveRulesConditionOptions]
   }
   
-  extension [Self <: ResponsiveRulesConditionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponsiveRulesConditionOptions] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: ResponsiveCallbackFunction): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     

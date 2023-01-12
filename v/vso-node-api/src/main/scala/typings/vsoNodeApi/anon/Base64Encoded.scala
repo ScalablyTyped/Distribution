@@ -17,7 +17,8 @@ object Base64Encoded {
     __obj.asInstanceOf[Base64Encoded]
   }
   
-  extension [Self <: Base64Encoded](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Base64Encoded] (val x: Self) extends AnyVal {
     
     inline def setBase64Encoded(value: scala.Double): Self = StObject.set(x, "base64Encoded", value.asInstanceOf[js.Any])
     

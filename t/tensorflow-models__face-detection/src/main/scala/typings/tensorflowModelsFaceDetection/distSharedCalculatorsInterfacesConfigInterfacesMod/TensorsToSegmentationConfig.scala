@@ -18,7 +18,8 @@ object TensorsToSegmentationConfig {
     __obj.asInstanceOf[TensorsToSegmentationConfig]
   }
   
-  extension [Self <: TensorsToSegmentationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TensorsToSegmentationConfig] (val x: Self) extends AnyVal {
     
     inline def setActivation(value: none | sigmoid | softmax): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
   }

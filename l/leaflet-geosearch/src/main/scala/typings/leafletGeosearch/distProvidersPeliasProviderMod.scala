@@ -36,7 +36,8 @@ object distProvidersPeliasProviderMod {
       __obj.asInstanceOf[PeliasProviderOptions]
     }
     
-    extension [Self <: PeliasProviderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeliasProviderOptions] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object distProvidersPeliasProviderMod {
       __obj.asInstanceOf[RawResult]
     }
     
-    extension [Self <: RawResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawResult] (val x: Self) extends AnyVal {
       
       inline def setBbox(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
@@ -89,7 +91,8 @@ object distProvidersPeliasProviderMod {
       __obj.asInstanceOf[RequestResult]
     }
     
-    extension [Self <: RequestResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestResult] (val x: Self) extends AnyVal {
       
       inline def setFeatures(value: js.Array[RawResult]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       

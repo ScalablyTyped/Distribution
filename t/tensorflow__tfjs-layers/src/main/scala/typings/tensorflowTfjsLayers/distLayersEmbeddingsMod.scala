@@ -113,7 +113,8 @@ object distLayersEmbeddingsMod {
       __obj.asInstanceOf[EmbeddingLayerArgs]
     }
     
-    extension [Self <: EmbeddingLayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmbeddingLayerArgs] (val x: Self) extends AnyVal {
       
       inline def setActivityRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "activityRegularizer", value.asInstanceOf[js.Any])
       

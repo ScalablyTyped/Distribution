@@ -130,7 +130,8 @@ object XModel2 {
     __obj.asInstanceOf[XModel2]
   }
   
-  extension [Self <: XModel2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XModel2] (val x: Self) extends AnyVal {
     
     inline def setAvailableViewControllerNames(value: SafeArray[String]): Self = StObject.set(x, "AvailableViewControllerNames", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object RTCPeerConnectionIceErrorEventInit {
     __obj.asInstanceOf[RTCPeerConnectionIceErrorEventInit]
   }
   
-  extension [Self <: RTCPeerConnectionIceErrorEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCPeerConnectionIceErrorEventInit] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: java.lang.String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

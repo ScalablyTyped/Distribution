@@ -54,7 +54,8 @@ object distTypesErrorMod {
       __obj.asInstanceOf[ServerResponseData[T]]
     }
     
-    extension [Self <: ServerResponseData[?], T](x: Self & ServerResponseData[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerResponseData[?], T] (val x: Self & ServerResponseData[T]) extends AnyVal {
       
       inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

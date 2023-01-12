@@ -17,7 +17,8 @@ object IWebSocketClosedEventArgs {
     __obj.asInstanceOf[IWebSocketClosedEventArgs]
   }
   
-  extension [Self <: IWebSocketClosedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebSocketClosedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

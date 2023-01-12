@@ -51,7 +51,8 @@ object typesDeleteEndpointInputMod {
       __obj.asInstanceOf[DeleteEndpointInput]
     }
     
-    extension [Self <: DeleteEndpointInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteEndpointInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

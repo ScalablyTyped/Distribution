@@ -38,7 +38,8 @@ object ListChangedBlocksRequest {
     __obj.asInstanceOf[ListChangedBlocksRequest]
   }
   
-  extension [Self <: ListChangedBlocksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListChangedBlocksRequest] (val x: Self) extends AnyVal {
     
     inline def setFirstSnapshotId(value: SnapshotId): Self = StObject.set(x, "FirstSnapshotId", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GenericAnswer {
     __obj.asInstanceOf[GenericAnswer[T]]
   }
   
-  extension [Self <: GenericAnswer[?], T](x: Self & GenericAnswer[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenericAnswer[?], T] (val x: Self & GenericAnswer[T]) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

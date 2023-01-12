@@ -19,7 +19,8 @@ object ColumnFilterMetaData {
     __obj.asInstanceOf[ColumnFilterMetaData]
   }
   
-  extension [Self <: ColumnFilterMetaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnFilterMetaData] (val x: Self) extends AnyVal {
     
     inline def setMatchMode(value: ColumnFilterMatchModeType): Self = StObject.set(x, "matchMode", value.asInstanceOf[js.Any])
     

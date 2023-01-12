@@ -15,7 +15,8 @@ object AsyncSubscription {
     __obj.asInstanceOf[AsyncSubscription]
   }
   
-  extension [Self <: AsyncSubscription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncSubscription] (val x: Self) extends AnyVal {
     
     inline def setUnsubscribe(value: () => js.Promise[Any]): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
   }

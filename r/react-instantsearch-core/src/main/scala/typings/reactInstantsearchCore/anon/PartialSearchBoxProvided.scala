@@ -20,7 +20,8 @@ object PartialSearchBoxProvided {
     __obj.asInstanceOf[PartialSearchBoxProvided]
   }
   
-  extension [Self <: PartialSearchBoxProvided](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSearchBoxProvided] (val x: Self) extends AnyVal {
     
     inline def setCurrentRefinement(value: String): Self = StObject.set(x, "currentRefinement", value.asInstanceOf[js.Any])
     

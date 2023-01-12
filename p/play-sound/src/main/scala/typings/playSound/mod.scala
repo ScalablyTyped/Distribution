@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[PlayMethodOptions]
     }
     
-    extension [Self <: PlayMethodOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayMethodOptions] (val x: Self) extends AnyVal {
       
       inline def setAfplay(value: js.Array[String | Double]): Self = StObject.set(x, "afplay", value.asInstanceOf[js.Any])
       
@@ -132,7 +133,8 @@ object mod {
       __obj.asInstanceOf[PlayOpts]
     }
     
-    extension [Self <: PlayOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayOpts] (val x: Self) extends AnyVal {
       
       inline def setPlayer(value: Players): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object MlPutTrainedModelDefinition {
     __obj.asInstanceOf[MlPutTrainedModelDefinition]
   }
   
-  extension [Self <: MlPutTrainedModelDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlPutTrainedModelDefinition] (val x: Self) extends AnyVal {
     
     inline def setPreprocessors(value: js.Array[MlPutTrainedModelPreprocessor]): Self = StObject.set(x, "preprocessors", value.asInstanceOf[js.Any])
     

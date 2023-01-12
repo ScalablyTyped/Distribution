@@ -38,7 +38,8 @@ object SortCriteria {
     __obj.asInstanceOf[SortCriteria]
   }
   
-  extension [Self <: SortCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortCriteria] (val x: Self) extends AnyVal {
     
     inline def setQExpression(value: ValueExpr): Self = StObject.set(x, "qExpression", value.asInstanceOf[js.Any])
     

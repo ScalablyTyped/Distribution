@@ -17,7 +17,8 @@ object DataSegment {
     __obj.asInstanceOf[DataSegment]
   }
   
-  extension [Self <: DataSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSegment] (val x: Self) extends AnyVal {
     
     inline def setGetBitsLength(value: () => Double): Self = StObject.set(x, "getBitsLength", js.Any.fromFunction0(value))
     

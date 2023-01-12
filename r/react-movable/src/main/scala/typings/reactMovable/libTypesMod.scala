@@ -30,7 +30,8 @@ object libTypesMod {
       __obj.asInstanceOf[BeforeDragParams]
     }
     
-    extension [Self <: BeforeDragParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeDragParams] (val x: Self) extends AnyVal {
       
       inline def setElements(value: js.Array[Element]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object libTypesMod {
       __obj.asInstanceOf[IItemProps]
     }
     
-    extension [Self <: IItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IItemProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-roledescription`(value: String): Self = StObject.set(x, "aria-roledescription", value.asInstanceOf[js.Any])
       
@@ -133,7 +135,8 @@ object libTypesMod {
       __obj.asInstanceOf[IProps[Value]]
     }
     
-    extension [Self <: IProps[?], Value](x: Self & IProps[Value]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProps[?], Value] (val x: Self & IProps[Value]) extends AnyVal {
       
       inline def setBeforeDrag(value: /* params */ BeforeDragParams => Unit): Self = StObject.set(x, "beforeDrag", js.Any.fromFunction1(value))
       
@@ -190,7 +193,8 @@ object libTypesMod {
       __obj.asInstanceOf[IVoiceover]
     }
     
-    extension [Self <: IVoiceover](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IVoiceover] (val x: Self) extends AnyVal {
       
       inline def setCanceled(value: Double => String): Self = StObject.set(x, "canceled", js.Any.fromFunction1(value))
       
@@ -219,7 +223,8 @@ object libTypesMod {
       __obj.asInstanceOf[OnChangeMeta]
     }
     
-    extension [Self <: OnChangeMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnChangeMeta] (val x: Self) extends AnyVal {
       
       inline def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
       
@@ -250,7 +255,8 @@ object libTypesMod {
       __obj.asInstanceOf[RenderItemParams[Value]]
     }
     
-    extension [Self <: RenderItemParams[?], Value](x: Self & RenderItemParams[Value]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderItemParams[?], Value] (val x: Self & RenderItemParams[Value]) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -283,7 +289,8 @@ object libTypesMod {
       __obj.asInstanceOf[RenderListParams]
     }
     
-    extension [Self <: RenderListParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderListParams] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

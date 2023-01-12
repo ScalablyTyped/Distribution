@@ -17,7 +17,8 @@ object CollectionUser {
     __obj.asInstanceOf[CollectionUser]
   }
   
-  extension [Self <: CollectionUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionUser] (val x: Self) extends AnyVal {
     
     inline def setCollection_User(value: scala.Double): Self = StObject.set(x, "collection_User", value.asInstanceOf[js.Any])
     

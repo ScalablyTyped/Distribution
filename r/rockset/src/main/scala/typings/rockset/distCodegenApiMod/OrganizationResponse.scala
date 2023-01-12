@@ -20,7 +20,8 @@ object OrganizationResponse {
     __obj.asInstanceOf[OrganizationResponse]
   }
   
-  extension [Self <: OrganizationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: Organization): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

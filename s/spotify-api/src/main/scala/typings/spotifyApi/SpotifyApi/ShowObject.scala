@@ -38,7 +38,8 @@ object ShowObject {
     __obj.asInstanceOf[ShowObject]
   }
   
-  extension [Self <: ShowObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowObject] (val x: Self) extends AnyVal {
     
     inline def setEpisodes(value: PagingObject[EpisodeObjectSimplified]): Self = StObject.set(x, "episodes", value.asInstanceOf[js.Any])
   }

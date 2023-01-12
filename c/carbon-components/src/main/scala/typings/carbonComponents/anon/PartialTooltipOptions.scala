@@ -28,7 +28,8 @@ object PartialTooltipOptions {
     __obj.asInstanceOf[PartialTooltipOptions]
   }
   
-  extension [Self <: PartialTooltipOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTooltipOptions] (val x: Self) extends AnyVal {
     
     inline def setAttribTooltipTarget(value: String): Self = StObject.set(x, "attribTooltipTarget", value.asInstanceOf[js.Any])
     

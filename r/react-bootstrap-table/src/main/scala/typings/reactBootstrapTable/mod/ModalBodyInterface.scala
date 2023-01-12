@@ -19,7 +19,8 @@ object ModalBodyInterface {
     __obj.asInstanceOf[ModalBodyInterface[TRow]]
   }
   
-  extension [Self <: ModalBodyInterface[?], TRow /* <: js.Object */](x: Self & ModalBodyInterface[TRow]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalBodyInterface[?], TRow /* <: js.Object */] (val x: Self & ModalBodyInterface[TRow]) extends AnyVal {
     
     inline def setGetFieldValue(value: () => TRow): Self = StObject.set(x, "getFieldValue", js.Any.fromFunction0(value))
   }

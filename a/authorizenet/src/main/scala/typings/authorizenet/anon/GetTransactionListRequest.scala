@@ -15,7 +15,8 @@ object GetTransactionListRequest {
     __obj.asInstanceOf[GetTransactionListRequest]
   }
   
-  extension [Self <: GetTransactionListRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTransactionListRequest] (val x: Self) extends AnyVal {
     
     inline def setGetTransactionListRequest(value: typings.authorizenet.mod.APIContracts.GetTransactionListRequest): Self = StObject.set(x, "getTransactionListRequest", value.asInstanceOf[js.Any])
   }

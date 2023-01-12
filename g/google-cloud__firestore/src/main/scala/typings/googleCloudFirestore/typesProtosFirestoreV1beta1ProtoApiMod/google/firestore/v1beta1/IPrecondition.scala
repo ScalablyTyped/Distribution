@@ -21,7 +21,8 @@ object IPrecondition {
     __obj.asInstanceOf[IPrecondition]
   }
   
-  extension [Self <: IPrecondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPrecondition] (val x: Self) extends AnyVal {
     
     inline def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
     

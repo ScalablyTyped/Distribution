@@ -475,7 +475,8 @@ object ojdialogMod {
         __obj.asInstanceOf[Position]
       }
       
-      extension [Self <: Position](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
         
         inline def setAt(value: PositionAlign): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
         
@@ -513,7 +514,8 @@ object ojdialogMod {
         __obj.asInstanceOf[PositionAlign]
       }
       
-      extension [Self <: PositionAlign](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PositionAlign] (val x: Self) extends AnyVal {
         
         inline def setHorizontal(value: start | end | left | center | bottom): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
         
@@ -539,7 +541,8 @@ object ojdialogMod {
         __obj.asInstanceOf[PositionPoint]
       }
       
-      extension [Self <: PositionPoint](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PositionPoint] (val x: Self) extends AnyVal {
         
         inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         
@@ -740,7 +743,8 @@ object ojdialogMod {
       __obj.asInstanceOf[ojDialogEventMap]
     }
     
-    extension [Self <: ojDialogEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojDialogEventMap] (val x: Self) extends AnyVal {
       
       inline def setCancelBehaviorChanged(value: JetElementCustomEvent[icon | escape | none]): Self = StObject.set(x, "cancelBehaviorChanged", value.asInstanceOf[js.Any])
       
@@ -819,7 +823,8 @@ object ojdialogMod {
       __obj.asInstanceOf[ojDialogSettableProperties]
     }
     
-    extension [Self <: ojDialogSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojDialogSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setCancelBehavior(value: icon | escape | none): Self = StObject.set(x, "cancelBehavior", value.asInstanceOf[js.Any])
       
@@ -873,7 +878,8 @@ object ojdialogMod {
       __obj.asInstanceOf[ojDialogSettablePropertiesLenient]
     }
     
-    extension [Self <: ojDialogSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojDialogSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setCancelBehavior(value: icon | escape | none): Self = StObject.set(x, "cancelBehavior", value.asInstanceOf[js.Any])
       

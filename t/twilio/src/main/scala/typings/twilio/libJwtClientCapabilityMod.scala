@@ -121,7 +121,8 @@ object libJwtClientCapabilityMod {
       __obj.asInstanceOf[ClientCapability]
     }
     
-    extension [Self <: ClientCapability](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientCapability] (val x: Self) extends AnyVal {
       
       inline def setAccountSid(value: String): Self = StObject.set(x, "accountSid", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object libJwtClientCapabilityMod {
       __obj.asInstanceOf[ClientCapabilityOptions]
     }
     
-    extension [Self <: ClientCapabilityOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientCapabilityOptions] (val x: Self) extends AnyVal {
       
       inline def setAccountSid(value: String): Self = StObject.set(x, "accountSid", value.asInstanceOf[js.Any])
       
@@ -181,7 +183,8 @@ object libJwtClientCapabilityMod {
       __obj.asInstanceOf[OutgoingClientScopeOptions]
     }
     
-    extension [Self <: OutgoingClientScopeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutgoingClientScopeOptions] (val x: Self) extends AnyVal {
       
       inline def setApplicationSid(value: String): Self = StObject.set(x, "applicationSid", value.asInstanceOf[js.Any])
       
@@ -208,7 +211,8 @@ object libJwtClientCapabilityMod {
       __obj.asInstanceOf[Scope]
     }
     
-    extension [Self <: Scope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: () => String): Self = StObject.set(x, "payload", js.Any.fromFunction0(value))
       

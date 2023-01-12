@@ -22,7 +22,8 @@ object typesRequestPaymentConfigurationMod {
       __obj.asInstanceOf[RequestPaymentConfiguration]
     }
     
-    extension [Self <: RequestPaymentConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestPaymentConfiguration] (val x: Self) extends AnyVal {
       
       inline def setPayer(value: Requester | BucketOwner | String): Self = StObject.set(x, "Payer", value.asInstanceOf[js.Any])
     }

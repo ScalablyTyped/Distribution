@@ -30,7 +30,8 @@ object Track {
     __obj.asInstanceOf[Track]
   }
   
-  extension [Self <: Track](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Track] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: SourceBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

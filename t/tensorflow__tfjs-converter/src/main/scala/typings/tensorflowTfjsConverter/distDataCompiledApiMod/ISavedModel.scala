@@ -19,7 +19,8 @@ object ISavedModel {
     __obj.asInstanceOf[ISavedModel]
   }
   
-  extension [Self <: ISavedModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISavedModel] (val x: Self) extends AnyVal {
     
     inline def setMetaGraphs(value: js.Array[IMetaGraphDef]): Self = StObject.set(x, "metaGraphs", value.asInstanceOf[js.Any])
     

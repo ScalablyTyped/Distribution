@@ -27,7 +27,8 @@ object PartialIWebXRInputOptionsControllerOptions {
     __obj.asInstanceOf[PartialIWebXRInputOptionsControllerOptions]
   }
   
-  extension [Self <: PartialIWebXRInputOptionsControllerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIWebXRInputOptionsControllerOptions] (val x: Self) extends AnyVal {
     
     inline def setControllerOptions(value: IWebXRControllerOptions): Self = StObject.set(x, "controllerOptions", value.asInstanceOf[js.Any])
     

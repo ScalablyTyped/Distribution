@@ -111,7 +111,8 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
           
@@ -160,7 +161,8 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
           
@@ -224,7 +226,8 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
           
@@ -310,7 +313,8 @@ object SemanticUI {
           __obj.asInstanceOf[typings.semanticUiEmbed.SemanticUI.Embed.SelectorSettings.Impl]
         }
         
-        extension [Self <: typings.semanticUiEmbed.SemanticUI.Embed.SelectorSettings.Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.semanticUiEmbed.SemanticUI.Embed.SelectorSettings.Impl] (val x: Self) extends AnyVal {
           
           inline def setEmbed(value: String): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
           
@@ -367,7 +371,8 @@ object SemanticUI {
           __obj.asInstanceOf[typings.semanticUiEmbed.SemanticUI.Embed.TemplatesSettings.Impl]
         }
         
-        extension [Self <: typings.semanticUiEmbed.SemanticUI.Embed.TemplatesSettings.Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.semanticUiEmbed.SemanticUI.Embed.TemplatesSettings.Impl] (val x: Self) extends AnyVal {
           
           inline def setIframe(value: (String, String) => String): Self = StObject.set(x, "iframe", js.Any.fromFunction2(value))
           
@@ -578,7 +583,8 @@ object SemanticUI {
         __obj.asInstanceOf[typings.semanticUiEmbed.SemanticUI.EmbedSettings.Impl]
       }
       
-      extension [Self <: typings.semanticUiEmbed.SemanticUI.EmbedSettings.Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.semanticUiEmbed.SemanticUI.EmbedSettings.Impl] (val x: Self) extends AnyVal {
         
         inline def setAutoplay(value: auto | Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
         

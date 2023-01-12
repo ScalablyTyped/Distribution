@@ -71,7 +71,8 @@ object libEsmComponentsHotkeysHotkeysEventsMod {
       __obj.asInstanceOf[IHotkeyAction]
     }
     
-    extension [Self <: IHotkeyAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHotkeyAction] (val x: Self) extends AnyVal {
       
       inline def setCombo(value: IKeyCombo): Self = StObject.set(x, "combo", value.asInstanceOf[js.Any])
       

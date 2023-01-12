@@ -16,7 +16,8 @@ object EditCustomerMatchMembersResponse {
     __obj.asInstanceOf[EditCustomerMatchMembersResponse]
   }
   
-  extension [Self <: EditCustomerMatchMembersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditCustomerMatchMembersResponse] (val x: Self) extends AnyVal {
     
     inline def setFirstAndThirdPartyAudienceId(value: String): Self = StObject.set(x, "firstAndThirdPartyAudienceId", value.asInstanceOf[js.Any])
     

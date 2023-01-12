@@ -39,7 +39,8 @@ object distChartsTypesMod {
       __obj.asInstanceOf[BaseChartEventsTypes[TCreateEvent, TDrawEvents]]
     }
     
-    extension [Self <: BaseChartEventsTypes[?, ?], TCreateEvent, TDrawEvents](x: Self & (BaseChartEventsTypes[TCreateEvent, TDrawEvents])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseChartEventsTypes[?, ?], TCreateEvent, TDrawEvents] (val x: Self & (BaseChartEventsTypes[TCreateEvent, TDrawEvents])) extends AnyVal {
       
       inline def setAnimationBegin(value: AnimationEvent): Self = StObject.set(x, "animationBegin", value.asInstanceOf[js.Any])
       

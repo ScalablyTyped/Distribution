@@ -137,7 +137,8 @@ object PartialStyleRulesChipClas {
     __obj.asInstanceOf[PartialStyleRulesChipClas]
   }
   
-  extension [Self <: PartialStyleRulesChipClas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesChipClas] (val x: Self) extends AnyVal {
     
     inline def setAvatar(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

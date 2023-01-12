@@ -15,7 +15,8 @@ object DescribeScalingParametersRequest {
     __obj.asInstanceOf[DescribeScalingParametersRequest]
   }
   
-  extension [Self <: DescribeScalingParametersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeScalingParametersRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
   }

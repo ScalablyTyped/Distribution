@@ -33,7 +33,8 @@ object WriteTree {
     __obj.asInstanceOf[WriteTree]
   }
   
-  extension [Self <: WriteTree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteTree] (val x: Self) extends AnyVal {
     
     inline def setAllWrites(value: js.Array[WriteRecord]): Self = StObject.set(x, "allWrites", value.asInstanceOf[js.Any])
     

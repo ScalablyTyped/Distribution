@@ -25,7 +25,8 @@ object AtlasAttachmentLoader {
     __obj.asInstanceOf[AtlasAttachmentLoader]
   }
   
-  extension [Self <: AtlasAttachmentLoader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AtlasAttachmentLoader] (val x: Self) extends AnyVal {
     
     inline def setAtlas(value: TextureAtlas): Self = StObject.set(x, "atlas", value.asInstanceOf[js.Any])
   }

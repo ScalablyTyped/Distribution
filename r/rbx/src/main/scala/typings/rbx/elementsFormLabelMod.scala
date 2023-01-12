@@ -80,7 +80,8 @@ object elementsFormLabelMod {
       __obj.asInstanceOf[LabelModifierProps]
     }
     
-    extension [Self <: LabelModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelModifierProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -180,7 +181,8 @@ object elementsFormLabelMod {
       __obj.asInstanceOf[LabelProps]
     }
     
-    extension [Self <: LabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
@@ -340,7 +342,8 @@ object elementsFormLabelMod {
       __obj.asInstanceOf[LabelVariables]
     }
     
-    extension [Self <: LabelVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelVariables] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: small | medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     }
@@ -357,7 +360,8 @@ object elementsFormLabelMod {
       __obj.asInstanceOf[LabelVariablesDefaults]
     }
     
-    extension [Self <: LabelVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: small | medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     }

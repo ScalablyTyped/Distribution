@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[DhtResult]
     }
     
-    extension [Self <: DhtResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DhtResult] (val x: Self) extends AnyVal {
       
       inline def setHumidity(value: Double): Self = StObject.set(x, "humidity", value.asInstanceOf[js.Any])
       

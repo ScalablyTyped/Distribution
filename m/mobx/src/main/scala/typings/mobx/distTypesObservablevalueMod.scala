@@ -125,7 +125,8 @@ object distTypesObservablevalueMod {
       __obj.asInstanceOf[IValueDidChange[T]]
     }
     
-    extension [Self <: IValueDidChange[?], T](x: Self & IValueDidChange[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IValueDidChange[?], T] (val x: Self & IValueDidChange[T]) extends AnyVal {
       
       inline def setDebugObjectName(value: String): Self = StObject.set(x, "debugObjectName", value.asInstanceOf[js.Any])
       
@@ -158,7 +159,8 @@ object distTypesObservablevalueMod {
       __obj.asInstanceOf[IValueWillChange[T]]
     }
     
-    extension [Self <: IValueWillChange[?], T](x: Self & IValueWillChange[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IValueWillChange[?], T] (val x: Self & IValueWillChange[T]) extends AnyVal {
       
       inline def setNewValue(value: T): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       

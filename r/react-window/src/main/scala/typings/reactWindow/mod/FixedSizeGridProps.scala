@@ -34,7 +34,8 @@ object FixedSizeGridProps {
     __obj.asInstanceOf[FixedSizeGridProps[T]]
   }
   
-  extension [Self <: FixedSizeGridProps[?], T](x: Self & FixedSizeGridProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FixedSizeGridProps[?], T] (val x: Self & FixedSizeGridProps[T]) extends AnyVal {
     
     inline def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     

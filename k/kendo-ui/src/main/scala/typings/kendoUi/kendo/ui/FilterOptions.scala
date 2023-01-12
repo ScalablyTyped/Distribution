@@ -34,7 +34,8 @@ object FilterOptions {
     __obj.asInstanceOf[FilterOptions]
   }
   
-  extension [Self <: FilterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterOptions] (val x: Self) extends AnyVal {
     
     inline def setApplyButton(value: Boolean): Self = StObject.set(x, "applyButton", value.asInstanceOf[js.Any])
     

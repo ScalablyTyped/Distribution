@@ -33,7 +33,8 @@ object GetWorkflowStepsRequest {
     __obj.asInstanceOf[GetWorkflowStepsRequest]
   }
   
-  extension [Self <: GetWorkflowStepsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWorkflowStepsRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: name): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

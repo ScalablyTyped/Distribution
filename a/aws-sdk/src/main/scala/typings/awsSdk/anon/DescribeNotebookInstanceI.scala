@@ -24,7 +24,8 @@ object DescribeNotebookInstanceI {
     __obj.asInstanceOf[DescribeNotebookInstanceI]
   }
   
-  extension [Self <: DescribeNotebookInstanceI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNotebookInstanceI] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

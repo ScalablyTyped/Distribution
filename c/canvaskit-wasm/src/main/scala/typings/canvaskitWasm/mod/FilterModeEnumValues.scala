@@ -19,7 +19,8 @@ object FilterModeEnumValues {
     __obj.asInstanceOf[FilterModeEnumValues]
   }
   
-  extension [Self <: FilterModeEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterModeEnumValues] (val x: Self) extends AnyVal {
     
     inline def setLinear(value: FilterMode): Self = StObject.set(x, "Linear", value.asInstanceOf[js.Any])
     

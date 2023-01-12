@@ -25,7 +25,8 @@ object NavigateToArgs {
     __obj.asInstanceOf[NavigateToArgs]
   }
   
-  extension [Self <: NavigateToArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigateToArgs] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

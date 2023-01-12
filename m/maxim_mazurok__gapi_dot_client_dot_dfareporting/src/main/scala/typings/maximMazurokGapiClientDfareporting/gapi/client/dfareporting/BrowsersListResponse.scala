@@ -19,7 +19,8 @@ object BrowsersListResponse {
     __obj.asInstanceOf[BrowsersListResponse]
   }
   
-  extension [Self <: BrowsersListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowsersListResponse] (val x: Self) extends AnyVal {
     
     inline def setBrowsers(value: js.Array[Browser]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
     

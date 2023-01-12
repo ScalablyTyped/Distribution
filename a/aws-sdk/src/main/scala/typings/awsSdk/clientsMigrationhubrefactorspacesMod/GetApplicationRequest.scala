@@ -23,7 +23,8 @@ object GetApplicationRequest {
     __obj.asInstanceOf[GetApplicationRequest]
   }
   
-  extension [Self <: GetApplicationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetApplicationRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationIdentifier(value: ApplicationId): Self = StObject.set(x, "ApplicationIdentifier", value.asInstanceOf[js.Any])
     

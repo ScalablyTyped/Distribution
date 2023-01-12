@@ -40,7 +40,8 @@ object GBData {
     __obj.asInstanceOf[GBData]
   }
   
-  extension [Self <: GBData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GBData] (val x: Self) extends AnyVal {
     
     inline def setAccountNumber(value: String): Self = StObject.set(x, "AccountNumber", value.asInstanceOf[js.Any])
     

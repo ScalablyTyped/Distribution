@@ -87,7 +87,8 @@ object ProvisionedRequest {
     __obj.asInstanceOf[ProvisionedRequest]
   }
   
-  extension [Self <: ProvisionedRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisionedRequest] (val x: Self) extends AnyVal {
     
     inline def setBrokerNodeGroupInfo(value: BrokerNodeGroupInfo): Self = StObject.set(x, "BrokerNodeGroupInfo", value.asInstanceOf[js.Any])
     

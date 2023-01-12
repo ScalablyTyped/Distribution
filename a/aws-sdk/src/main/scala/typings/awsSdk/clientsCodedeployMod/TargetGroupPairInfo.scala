@@ -28,7 +28,8 @@ object TargetGroupPairInfo {
     __obj.asInstanceOf[TargetGroupPairInfo]
   }
   
-  extension [Self <: TargetGroupPairInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetGroupPairInfo] (val x: Self) extends AnyVal {
     
     inline def setProdTrafficRoute(value: TrafficRoute): Self = StObject.set(x, "prodTrafficRoute", value.asInstanceOf[js.Any])
     

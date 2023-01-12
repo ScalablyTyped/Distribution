@@ -18,7 +18,8 @@ object MaxTime {
     __obj.asInstanceOf[MaxTime]
   }
   
-  extension [Self <: MaxTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxTime] (val x: Self) extends AnyVal {
     
     inline def setMaxTime(value: Double): Self = StObject.set(x, "maxTime", value.asInstanceOf[js.Any])
     

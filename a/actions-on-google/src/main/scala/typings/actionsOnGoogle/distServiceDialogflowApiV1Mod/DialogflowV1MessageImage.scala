@@ -21,7 +21,8 @@ object DialogflowV1MessageImage {
     __obj.asInstanceOf[DialogflowV1MessageImage]
   }
   
-  extension [Self <: DialogflowV1MessageImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogflowV1MessageImage] (val x: Self) extends AnyVal {
     
     inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     

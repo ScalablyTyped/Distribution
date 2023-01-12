@@ -19,7 +19,8 @@ object GraphQLEnumValueConfig {
     __obj.asInstanceOf[GraphQLEnumValueConfig]
   }
   
-  extension [Self <: GraphQLEnumValueConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphQLEnumValueConfig] (val x: Self) extends AnyVal {
     
     inline def setDeprecationReason(value: String): Self = StObject.set(x, "deprecationReason", value.asInstanceOf[js.Any])
     

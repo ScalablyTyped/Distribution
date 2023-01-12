@@ -24,7 +24,8 @@ object RecursivePartialiosPlatfo {
     __obj.asInstanceOf[RecursivePartialiosPlatfo]
   }
   
-  extension [Self <: RecursivePartialiosPlatfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecursivePartialiosPlatfo] (val x: Self) extends AnyVal {
     
     inline def setAndroid(value: RecursivePartial[PlatformColors]): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     

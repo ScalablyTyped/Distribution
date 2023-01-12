@@ -23,7 +23,8 @@ object ImscDestinationSettings {
     __obj.asInstanceOf[ImscDestinationSettings]
   }
   
-  extension [Self <: ImscDestinationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImscDestinationSettings] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: ImscAccessibilitySubs): Self = StObject.set(x, "Accessibility", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PartialemailaddressstringClientid {
     __obj.asInstanceOf[PartialemailaddressstringClientid]
   }
   
-  extension [Self <: PartialemailaddressstringClientid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialemailaddressstringClientid] (val x: Self) extends AnyVal {
     
     inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     

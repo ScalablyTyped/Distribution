@@ -59,7 +59,8 @@ object distServicesTextServiceMod {
       __obj.asInstanceOf[IFontMetrics]
     }
     
-    extension [Self <: IFontMetrics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFontMetrics] (val x: Self) extends AnyVal {
       
       inline def setAscent(value: Double): Self = StObject.set(x, "ascent", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object distServicesTextServiceMod {
       __obj.asInstanceOf[TextMetrics]
     }
     
-    extension [Self <: TextMetrics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextMetrics] (val x: Self) extends AnyVal {
       
       inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       

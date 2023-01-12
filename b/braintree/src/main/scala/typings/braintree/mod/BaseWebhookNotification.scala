@@ -17,7 +17,8 @@ object BaseWebhookNotification {
     __obj.asInstanceOf[BaseWebhookNotification]
   }
   
-  extension [Self <: BaseWebhookNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseWebhookNotification] (val x: Self) extends AnyVal {
     
     inline def setKind(value: WebhookNotificationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

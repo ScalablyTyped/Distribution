@@ -19,7 +19,8 @@ object ListEditItemSelectedChangedEventArgs {
     __obj.asInstanceOf[ListEditItemSelectedChangedEventArgs]
   }
   
-  extension [Self <: ListEditItemSelectedChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEditItemSelectedChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

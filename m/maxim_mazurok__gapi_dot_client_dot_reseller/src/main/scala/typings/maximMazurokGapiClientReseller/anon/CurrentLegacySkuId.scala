@@ -28,7 +28,8 @@ object CurrentLegacySkuId {
     __obj.asInstanceOf[CurrentLegacySkuId]
   }
   
-  extension [Self <: CurrentLegacySkuId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentLegacySkuId] (val x: Self) extends AnyVal {
     
     inline def setCurrentLegacySkuId(value: String): Self = StObject.set(x, "currentLegacySkuId", value.asInstanceOf[js.Any])
     

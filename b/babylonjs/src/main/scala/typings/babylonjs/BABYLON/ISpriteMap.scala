@@ -41,7 +41,8 @@ object ISpriteMap {
     __obj.asInstanceOf[ISpriteMap]
   }
   
-  extension [Self <: ISpriteMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISpriteMap] (val x: Self) extends AnyVal {
     
     inline def setAtlasJSON(value: ISpriteJSONAtlas): Self = StObject.set(x, "atlasJSON", value.asInstanceOf[js.Any])
     

@@ -83,7 +83,8 @@ object mod {
       __obj.asInstanceOf[CameraConfig]
     }
     
-    extension [Self <: CameraConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CameraConfig] (val x: Self) extends AnyVal {
       
       inline def setAnnotate(value: String | Double): Self = StObject.set(x, "annotate", value.asInstanceOf[js.Any])
       

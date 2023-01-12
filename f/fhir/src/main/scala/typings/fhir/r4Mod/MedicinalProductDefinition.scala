@@ -168,7 +168,8 @@ object MedicinalProductDefinition {
     __obj.asInstanceOf[MedicinalProductDefinition]
   }
   
-  extension [Self <: MedicinalProductDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicinalProductDefinition] (val x: Self) extends AnyVal {
     
     inline def setAdditionalMonitoringIndicator(value: CodeableConcept): Self = StObject.set(x, "additionalMonitoringIndicator", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object TreeListColumnFilterableCell {
     __obj.asInstanceOf[TreeListColumnFilterableCell]
   }
   
-  extension [Self <: TreeListColumnFilterableCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListColumnFilterableCell] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

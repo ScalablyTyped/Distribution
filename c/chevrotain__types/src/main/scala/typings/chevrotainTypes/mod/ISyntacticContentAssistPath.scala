@@ -24,7 +24,8 @@ object ISyntacticContentAssistPath {
     __obj.asInstanceOf[ISyntacticContentAssistPath]
   }
   
-  extension [Self <: ISyntacticContentAssistPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISyntacticContentAssistPath] (val x: Self) extends AnyVal {
     
     inline def setNextTokenOccurrence(value: Double): Self = StObject.set(x, "nextTokenOccurrence", value.asInstanceOf[js.Any])
     

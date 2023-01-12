@@ -28,7 +28,8 @@ object ASPxClientCardViewBatchEditCardValidatingEventArgs {
     __obj.asInstanceOf[ASPxClientCardViewBatchEditCardValidatingEventArgs]
   }
   
-  extension [Self <: ASPxClientCardViewBatchEditCardValidatingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCardViewBatchEditCardValidatingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setValidationInfo(value: Any): Self = StObject.set(x, "validationInfo", value.asInstanceOf[js.Any])
     

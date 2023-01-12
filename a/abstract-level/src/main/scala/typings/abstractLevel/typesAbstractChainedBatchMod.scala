@@ -92,7 +92,8 @@ object typesAbstractChainedBatchMod {
       __obj.asInstanceOf[AbstractChainedBatchDelOptions[TDatabase, K]]
     }
     
-    extension [Self <: AbstractChainedBatchDelOptions[?, ?], TDatabase, K](x: Self & (AbstractChainedBatchDelOptions[TDatabase, K])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractChainedBatchDelOptions[?, ?], TDatabase, K] (val x: Self & (AbstractChainedBatchDelOptions[TDatabase, K])) extends AnyVal {
       
       inline def setKeyEncoding(value: String | PartialEncoder[K]): Self = StObject.set(x, "keyEncoding", value.asInstanceOf[js.Any])
       
@@ -138,7 +139,8 @@ object typesAbstractChainedBatchMod {
       __obj.asInstanceOf[AbstractChainedBatchPutOptions[TDatabase, K, V]]
     }
     
-    extension [Self <: AbstractChainedBatchPutOptions[?, ?, ?], TDatabase, K, V](x: Self & (AbstractChainedBatchPutOptions[TDatabase, K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractChainedBatchPutOptions[?, ?, ?], TDatabase, K, V] (val x: Self & (AbstractChainedBatchPutOptions[TDatabase, K, V])) extends AnyVal {
       
       inline def setKeyEncoding(value: String | PartialEncoder[K]): Self = StObject.set(x, "keyEncoding", value.asInstanceOf[js.Any])
       

@@ -75,7 +75,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setAttribute(value: name): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     }
@@ -98,7 +99,8 @@ object anon {
       __obj.asInstanceOf[ActivateEvents]
     }
     
-    extension [Self <: ActivateEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActivateEvents] (val x: Self) extends AnyVal {
       
       inline def setActivateEvents(value: activate): Self = StObject.set(x, "activateEvents", value.asInstanceOf[js.Any])
       
@@ -125,7 +127,8 @@ object anon {
       __obj.asInstanceOf[AriaCurrentWhenActive]
     }
     
-    extension [Self <: AriaCurrentWhenActive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AriaCurrentWhenActive] (val x: Self) extends AnyVal {
       
       inline def setAriaCurrentWhenActive(value: ariaCurrentWhenActive): Self = StObject.set(x, "ariaCurrentWhenActive", value.asInstanceOf[js.Any])
       
@@ -146,7 +149,8 @@ object anon {
       __obj.asInstanceOf[Attribute]
     }
     
-    extension [Self <: Attribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
       
       inline def setAttribute(value: tabindex): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     }
@@ -165,7 +169,8 @@ object anon {
       __obj.asInstanceOf[Dictk]
     }
     
-    extension [Self <: Dictk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictk] (val x: Self) extends AnyVal {
       
       inline def setNavigationId(value: Double): Self = StObject.set(x, "navigationId", value.asInstanceOf[js.Any])
     }
@@ -182,7 +187,8 @@ object anon {
       __obj.asInstanceOf[Exact]
     }
     
-    extension [Self <: Exact](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exact] (val x: Self) extends AnyVal {
       
       inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     }
@@ -215,7 +221,8 @@ object anon {
       __obj.asInstanceOf[Fragment]
     }
     
-    extension [Self <: Fragment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fragment] (val x: Self) extends AnyVal {
       
       inline def setFragment(value: fragment): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
       
@@ -248,7 +255,8 @@ object anon {
       __obj.asInstanceOf[IsActiveChange]
     }
     
-    extension [Self <: IsActiveChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsActiveChange] (val x: Self) extends AnyVal {
       
       inline def setIsActiveChange(value: isActiveChange): Self = StObject.set(x, "isActiveChange", value.asInstanceOf[js.Any])
     }
@@ -265,7 +273,8 @@ object anon {
       __obj.asInstanceOf[Optional]
     }
     
-    extension [Self <: Optional](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optional] (val x: Self) extends AnyVal {
       
       inline def setOptional(value: `true`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     }
@@ -300,7 +309,8 @@ object anon {
       __obj.asInstanceOf[PreserveFragment]
     }
     
-    extension [Self <: PreserveFragment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreserveFragment] (val x: Self) extends AnyVal {
       
       inline def setFragment(value: fragment): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
       

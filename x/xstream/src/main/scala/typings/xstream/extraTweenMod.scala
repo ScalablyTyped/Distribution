@@ -40,7 +40,8 @@ object extraTweenMod extends Shortcut {
       __obj.asInstanceOf[Easings]
     }
     
-    extension [Self <: Easings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Easings] (val x: Self) extends AnyVal {
       
       inline def setEaseIn(value: (/* x */ Double, /* from */ Double, /* to */ Double) => Double): Self = StObject.set(x, "easeIn", js.Any.fromFunction3(value))
       
@@ -71,7 +72,8 @@ object extraTweenMod extends Shortcut {
       __obj.asInstanceOf[TweenConfig]
     }
     
-    extension [Self <: TweenConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TweenConfig] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       

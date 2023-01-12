@@ -37,7 +37,8 @@ object CopyDBParameterGroupMessage {
     __obj.asInstanceOf[CopyDBParameterGroupMessage]
   }
   
-  extension [Self <: CopyDBParameterGroupMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyDBParameterGroupMessage] (val x: Self) extends AnyVal {
     
     inline def setSourceDBParameterGroupIdentifier(value: String): Self = StObject.set(x, "SourceDBParameterGroupIdentifier", value.asInstanceOf[js.Any])
     

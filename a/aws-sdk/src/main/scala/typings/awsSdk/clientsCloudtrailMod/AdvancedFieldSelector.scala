@@ -48,7 +48,8 @@ object AdvancedFieldSelector {
     __obj.asInstanceOf[AdvancedFieldSelector]
   }
   
-  extension [Self <: AdvancedFieldSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvancedFieldSelector] (val x: Self) extends AnyVal {
     
     inline def setEndsWith(value: Operator): Self = StObject.set(x, "EndsWith", value.asInstanceOf[js.Any])
     

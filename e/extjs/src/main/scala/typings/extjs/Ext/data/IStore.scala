@@ -510,7 +510,8 @@ object IStore {
     __obj.asInstanceOf[IStore]
   }
   
-  extension [Self <: IStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStore] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: /* model */ js.UndefOr[Any] => Array): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

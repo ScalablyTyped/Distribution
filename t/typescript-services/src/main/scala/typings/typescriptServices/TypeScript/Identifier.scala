@@ -46,7 +46,8 @@ object Identifier {
     __obj.asInstanceOf[Identifier]
   }
   
-  extension [Self <: Identifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Identifier] (val x: Self) extends AnyVal {
     
     inline def setStructuralEquals(value: (Identifier, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     

@@ -38,7 +38,8 @@ object RowSelectionChangingEventUIParam {
     __obj.asInstanceOf[RowSelectionChangingEventUIParam]
   }
   
-  extension [Self <: RowSelectionChangingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowSelectionChangingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     

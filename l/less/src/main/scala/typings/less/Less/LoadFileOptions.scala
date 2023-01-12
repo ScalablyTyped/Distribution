@@ -23,7 +23,8 @@ object LoadFileOptions {
     __obj.asInstanceOf[LoadFileOptions]
   }
   
-  extension [Self <: LoadFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadFileOptions] (val x: Self) extends AnyVal {
     
     inline def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     

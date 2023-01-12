@@ -274,7 +274,8 @@ object mod {
         __obj.asInstanceOf[ArrayOptions]
       }
       
-      extension [Self <: ArrayOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ArrayOptions] (val x: Self) extends AnyVal {
         
         inline def setLength(value: Double | String | (js.ThisFunction0[/* this */ Parser[Any], Double])): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
         
@@ -312,7 +313,8 @@ object mod {
         __obj.asInstanceOf[BufferOptions]
       }
       
-      extension [Self <: BufferOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BufferOptions] (val x: Self) extends AnyVal {
         
         inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
         
@@ -350,7 +352,8 @@ object mod {
         __obj.asInstanceOf[ChoiceOptions]
       }
       
-      extension [Self <: ChoiceOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChoiceOptions] (val x: Self) extends AnyVal {
         
         inline def setChoices(value: NumberDictionary[Parser[Any] | String]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
         
@@ -390,7 +393,8 @@ object mod {
         __obj.asInstanceOf[NestOptions]
       }
       
-      extension [Self <: NestOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NestOptions] (val x: Self) extends AnyVal {
         
         inline def setType(value: Parser[Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
@@ -416,7 +420,8 @@ object mod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setAssert(value: String | Double | (js.Function1[/* value */ Data, Boolean])): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
         
@@ -460,7 +465,8 @@ object mod {
         __obj.asInstanceOf[StringOptions]
       }
       
-      extension [Self <: StringOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StringOptions] (val x: Self) extends AnyVal {
         
         inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
         

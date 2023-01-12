@@ -23,7 +23,8 @@ object ListBuildBatchesForProjectOutput {
     __obj.asInstanceOf[ListBuildBatchesForProjectOutput]
   }
   
-  extension [Self <: ListBuildBatchesForProjectOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBuildBatchesForProjectOutput] (val x: Self) extends AnyVal {
     
     inline def setIds(value: BuildBatchIds): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     

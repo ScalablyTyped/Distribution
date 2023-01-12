@@ -19,7 +19,8 @@ object CompletionInfo {
     __obj.asInstanceOf[CompletionInfo]
   }
   
-  extension [Self <: CompletionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionInfo] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: js.Array[CompletionEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

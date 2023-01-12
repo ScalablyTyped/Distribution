@@ -43,7 +43,8 @@ object LineCallout3DProperties {
     __obj.asInstanceOf[LineCallout3DProperties]
   }
   
-  extension [Self <: LineCallout3DProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineCallout3DProperties] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: LineCallout3DBorderProperties): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

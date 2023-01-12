@@ -38,7 +38,8 @@ object maxMaxMod {
       __obj.asInstanceOf[Max]
     }
     
-    extension [Self <: Max](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
       
       inline def setConcat(value: Max => Max): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
     }

@@ -79,7 +79,8 @@ object CIMMarkerPlacementAlongLineSameSize {
     __obj.asInstanceOf[CIMMarkerPlacementAlongLineSameSize]
   }
   
-  extension [Self <: CIMMarkerPlacementAlongLineSameSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMMarkerPlacementAlongLineSameSize] (val x: Self) extends AnyVal {
     
     inline def setAngleToLine(value: Boolean): Self = StObject.set(x, "angleToLine", value.asInstanceOf[js.Any])
     

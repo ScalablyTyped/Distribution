@@ -18,7 +18,8 @@ object RemoveOverlayEvent {
     __obj.asInstanceOf[RemoveOverlayEvent]
   }
   
-  extension [Self <: RemoveOverlayEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveOverlayEvent] (val x: Self) extends AnyVal {
     
     inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object PointInTimeRecoveryDescription {
     __obj.asInstanceOf[PointInTimeRecoveryDescription]
   }
   
-  extension [Self <: PointInTimeRecoveryDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointInTimeRecoveryDescription] (val x: Self) extends AnyVal {
     
     inline def setEarliestRestorableDateTime(value: js.Date): Self = StObject.set(x, "EarliestRestorableDateTime", value.asInstanceOf[js.Any])
     

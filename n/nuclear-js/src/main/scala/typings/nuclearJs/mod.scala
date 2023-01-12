@@ -2106,7 +2106,8 @@ object mod {
       __obj.asInstanceOf[ReactMixin]
     }
     
-    extension [Self <: ReactMixin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactMixin] (val x: Self) extends AnyVal {
       
       inline def setComponentDidMount(value: () => Unit): Self = StObject.set(x, "componentDidMount", js.Any.fromFunction0(value))
       
@@ -2131,7 +2132,8 @@ object mod {
       __obj.asInstanceOf[ReactorConfig]
     }
     
-    extension [Self <: ReactorConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactorConfig] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -2193,7 +2195,8 @@ object mod {
       __obj.asInstanceOf[StoreLike[T]]
     }
     
-    extension [Self <: StoreLike[?], T](x: Self & StoreLike[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoreLike[?], T] (val x: Self & StoreLike[T]) extends AnyVal {
       
       inline def setDeserialize(value: js.ThisFunction1[/* this */ Store[T], /* state */ Any, T]): Self = StObject.set(x, "deserialize", value.asInstanceOf[js.Any])
       

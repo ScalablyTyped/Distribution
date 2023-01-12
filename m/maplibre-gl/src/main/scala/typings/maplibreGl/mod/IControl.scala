@@ -59,7 +59,8 @@ object IControl {
     __obj.asInstanceOf[IControl]
   }
   
-  extension [Self <: IControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IControl] (val x: Self) extends AnyVal {
     
     inline def setGetDefaultPosition(value: () => ControlPosition): Self = StObject.set(x, "getDefaultPosition", js.Any.fromFunction0(value))
     

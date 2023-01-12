@@ -58,7 +58,8 @@ object WeakValidationMapVictoryD {
     __obj.asInstanceOf[WeakValidationMapVictoryD]
   }
   
-  extension [Self <: WeakValidationMapVictoryD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapVictoryD] (val x: Self) extends AnyVal {
     
     inline def setCategories(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends victory-core.victory-core/lib/types/prop-types.CategoryPropType | undefined ? react.react.Validator<victory-core.victory-core/lib/types/prop-types.CategoryPropType | undefined | null | undefined> : undefined extends victory-core.victory-core/lib/types/prop-types.CategoryPropType | undefined ? react.react.Validator<victory-core.victory-core/lib/types/prop-types.CategoryPropType | undefined | null | undefined> : react.react.Validator<victory-core.victory-core/lib/types/prop-types.CategoryPropType | undefined> */ js.Any

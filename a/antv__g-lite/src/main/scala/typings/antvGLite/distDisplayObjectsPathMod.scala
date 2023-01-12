@@ -3847,7 +3847,8 @@ object distDisplayObjectsPathMod {
       __obj.asInstanceOf[ParsedPathStyleProps]
     }
     
-    extension [Self <: ParsedPathStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedPathStyleProps] (val x: Self) extends AnyVal {
       
       inline def setD(value: AbsolutePath): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       
@@ -3904,7 +3905,8 @@ object distDisplayObjectsPathMod {
       __obj.asInstanceOf[PathSegment]
     }
     
-    extension [Self <: PathSegment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathSegment] (val x: Self) extends AnyVal {
       
       inline def setCommand(
         value: /* import warning: importer.ImportType#apply Failed type conversion: @antv/util.@antv/util/lib/path/types.PathArray[0] */ js.Any
@@ -3971,7 +3973,8 @@ object distDisplayObjectsPathMod {
       __obj.asInstanceOf[PathStyleProps]
     }
     
-    extension [Self <: PathStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathStyleProps] (val x: Self) extends AnyVal {
       
       inline def setD(value: String | PathArray): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       

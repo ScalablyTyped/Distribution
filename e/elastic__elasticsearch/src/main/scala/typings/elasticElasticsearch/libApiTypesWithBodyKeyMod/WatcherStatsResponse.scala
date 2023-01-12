@@ -26,7 +26,8 @@ object WatcherStatsResponse {
     __obj.asInstanceOf[WatcherStatsResponse]
   }
   
-  extension [Self <: WatcherStatsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherStatsResponse] (val x: Self) extends AnyVal {
     
     inline def setCluster_name(value: Name): Self = StObject.set(x, "cluster_name", value.asInstanceOf[js.Any])
     

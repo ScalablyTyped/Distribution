@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[PartialV6SetupOpts]
     }
     
-    extension [Self <: PartialV6SetupOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialV6SetupOpts] (val x: Self) extends AnyVal {
       
       inline def setDisableRandom(value: Boolean): Self = StObject.set(x, "disableRandom", value.asInstanceOf[js.Any])
       

@@ -37,7 +37,8 @@ object GetShippingLabelInput {
     __obj.asInstanceOf[GetShippingLabelInput]
   }
   
-  extension [Self <: GetShippingLabelInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetShippingLabelInput] (val x: Self) extends AnyVal {
     
     inline def setAPIVersion(value: APIVersion_): Self = StObject.set(x, "APIVersion", value.asInstanceOf[js.Any])
     

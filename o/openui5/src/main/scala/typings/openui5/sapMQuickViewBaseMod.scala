@@ -471,7 +471,8 @@ object sapMQuickViewBaseMod {
       __obj.asInstanceOf[QuickViewBaseSettings]
     }
     
-    extension [Self <: QuickViewBaseSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickViewBaseSettings] (val x: Self) extends AnyVal {
       
       inline def setAfterNavigate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterNavigate", js.Any.fromFunction1(value))
       

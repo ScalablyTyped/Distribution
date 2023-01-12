@@ -23,7 +23,8 @@ object GetBlobInput {
     __obj.asInstanceOf[GetBlobInput]
   }
   
-  extension [Self <: GetBlobInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBlobInput] (val x: Self) extends AnyVal {
     
     inline def setBlobId(value: ObjectId): Self = StObject.set(x, "blobId", value.asInstanceOf[js.Any])
     

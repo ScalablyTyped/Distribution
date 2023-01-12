@@ -34,7 +34,8 @@ object HTMLTextArea {
     __obj.asInstanceOf[HTMLTextArea]
   }
   
-  extension [Self <: HTMLTextArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLTextArea] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: Double): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     

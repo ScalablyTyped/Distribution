@@ -206,7 +206,8 @@ object libImageMod extends Shortcut {
       __obj.asInstanceOf[ImagePreviewType]
     }
     
-    extension [Self <: ImagePreviewType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImagePreviewType] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -757,7 +758,8 @@ object libImageMod extends Shortcut {
       __obj.asInstanceOf[ImageProps]
     }
     
-    extension [Self <: ImageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

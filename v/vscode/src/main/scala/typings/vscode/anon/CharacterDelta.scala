@@ -17,7 +17,8 @@ object CharacterDelta {
     __obj.asInstanceOf[CharacterDelta]
   }
   
-  extension [Self <: CharacterDelta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CharacterDelta] (val x: Self) extends AnyVal {
     
     inline def setCharacterDelta(value: Double): Self = StObject.set(x, "characterDelta", value.asInstanceOf[js.Any])
     

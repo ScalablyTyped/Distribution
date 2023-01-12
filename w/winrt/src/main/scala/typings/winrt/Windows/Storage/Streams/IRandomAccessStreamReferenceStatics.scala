@@ -25,7 +25,8 @@ object IRandomAccessStreamReferenceStatics {
     __obj.asInstanceOf[IRandomAccessStreamReferenceStatics]
   }
   
-  extension [Self <: IRandomAccessStreamReferenceStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRandomAccessStreamReferenceStatics] (val x: Self) extends AnyVal {
     
     inline def setCreateFromFile(value: IStorageFile => RandomAccessStreamReference): Self = StObject.set(x, "createFromFile", js.Any.fromFunction1(value))
     

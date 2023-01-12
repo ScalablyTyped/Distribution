@@ -18,7 +18,8 @@ object DeleteDatastoreRequest {
     __obj.asInstanceOf[DeleteDatastoreRequest]
   }
   
-  extension [Self <: DeleteDatastoreRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDatastoreRequest] (val x: Self) extends AnyVal {
     
     inline def setDatastoreName(value: DatastoreName): Self = StObject.set(x, "datastoreName", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object MessageAttachmentIconUrlDescriptor {
     __obj.asInstanceOf[MessageAttachmentIconUrlDescriptor]
   }
   
-  extension [Self <: MessageAttachmentIconUrlDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageAttachmentIconUrlDescriptor] (val x: Self) extends AnyVal {
     
     inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
   }

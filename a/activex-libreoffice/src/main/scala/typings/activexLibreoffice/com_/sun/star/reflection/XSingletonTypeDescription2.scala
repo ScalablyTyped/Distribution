@@ -54,7 +54,8 @@ object XSingletonTypeDescription2 {
     __obj.asInstanceOf[XSingletonTypeDescription2]
   }
   
-  extension [Self <: XSingletonTypeDescription2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSingletonTypeDescription2] (val x: Self) extends AnyVal {
     
     inline def setGetInterface(value: () => XTypeDescription): Self = StObject.set(x, "getInterface", js.Any.fromFunction0(value))
     

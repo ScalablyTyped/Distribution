@@ -115,7 +115,8 @@ object ReferralRequest {
     __obj.asInstanceOf[ReferralRequest]
   }
   
-  extension [Self <: ReferralRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferralRequest] (val x: Self) extends AnyVal {
     
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

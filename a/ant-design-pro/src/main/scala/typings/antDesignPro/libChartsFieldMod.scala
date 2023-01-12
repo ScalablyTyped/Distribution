@@ -30,7 +30,8 @@ object libChartsFieldMod {
       __obj.asInstanceOf[IFieldProps]
     }
     
-    extension [Self <: IFieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFieldProps] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

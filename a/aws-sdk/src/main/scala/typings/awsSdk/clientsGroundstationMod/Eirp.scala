@@ -23,7 +23,8 @@ object Eirp {
     __obj.asInstanceOf[Eirp]
   }
   
-  extension [Self <: Eirp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Eirp] (val x: Self) extends AnyVal {
     
     inline def setUnits(value: EirpUnits): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     

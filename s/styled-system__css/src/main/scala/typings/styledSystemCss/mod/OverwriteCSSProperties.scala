@@ -58,7 +58,8 @@ object OverwriteCSSProperties {
     __obj.asInstanceOf[OverwriteCSSProperties]
   }
   
-  extension [Self <: OverwriteCSSProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverwriteCSSProperties] (val x: Self) extends AnyVal {
     
     inline def setBoxShadow(value: BoxShadow | Double): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
     

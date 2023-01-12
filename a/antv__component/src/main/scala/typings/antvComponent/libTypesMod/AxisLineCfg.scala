@@ -20,7 +20,8 @@ object AxisLineCfg {
     __obj.asInstanceOf[AxisLineCfg]
   }
   
-  extension [Self <: AxisLineCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisLineCfg] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

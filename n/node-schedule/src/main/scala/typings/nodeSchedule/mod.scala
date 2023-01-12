@@ -235,7 +235,8 @@ object mod {
       __obj.asInstanceOf[RecurrenceSpecDateRange]
     }
     
-    extension [Self <: RecurrenceSpecDateRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecurrenceSpecDateRange] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: js.Date | String | Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -284,7 +285,8 @@ object mod {
       __obj.asInstanceOf[RecurrenceSpecObjLit]
     }
     
-    extension [Self <: RecurrenceSpecObjLit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecurrenceSpecObjLit] (val x: Self) extends AnyVal {
       
       inline def setDate(value: RecurrenceSegment): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       

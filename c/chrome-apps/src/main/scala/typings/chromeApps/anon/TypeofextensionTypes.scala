@@ -20,7 +20,8 @@ object TypeofextensionTypes {
     __obj.asInstanceOf[TypeofextensionTypes]
   }
   
-  extension [Self <: TypeofextensionTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofextensionTypes] (val x: Self) extends AnyVal {
     
     inline def set_internal_(value: Any): Self = StObject.set(x, "_internal_", value.asInstanceOf[js.Any])
   }

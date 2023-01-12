@@ -23,7 +23,8 @@ object BeaconService {
     __obj.asInstanceOf[BeaconService]
   }
   
-  extension [Self <: BeaconService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeaconService] (val x: Self) extends AnyVal {
     
     inline def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     

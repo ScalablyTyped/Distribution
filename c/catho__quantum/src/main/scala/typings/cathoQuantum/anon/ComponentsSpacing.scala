@@ -21,7 +21,8 @@ object ComponentsSpacing {
     __obj.asInstanceOf[ComponentsSpacing]
   }
   
-  extension [Self <: ComponentsSpacing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentsSpacing] (val x: Self) extends AnyVal {
     
     inline def setBaseFontSize(value: Double): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
     

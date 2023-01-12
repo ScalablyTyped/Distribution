@@ -49,7 +49,8 @@ object IgPivotViewDataSourceOptionsXmlaOptionsMdxSettings {
     __obj.asInstanceOf[IgPivotViewDataSourceOptionsXmlaOptionsMdxSettings]
   }
   
-  extension [Self <: IgPivotViewDataSourceOptionsXmlaOptionsMdxSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgPivotViewDataSourceOptionsXmlaOptionsMdxSettings] (val x: Self) extends AnyVal {
     
     inline def setAddCalculatedMembersOnColumns(value: Boolean): Self = StObject.set(x, "addCalculatedMembersOnColumns", value.asInstanceOf[js.Any])
     

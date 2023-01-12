@@ -18,7 +18,8 @@ object StartReplicationRequest {
     __obj.asInstanceOf[StartReplicationRequest]
   }
   
-  extension [Self <: StartReplicationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartReplicationRequest] (val x: Self) extends AnyVal {
     
     inline def setSourceServerID(value: SourceServerID): Self = StObject.set(x, "sourceServerID", value.asInstanceOf[js.Any])
   }

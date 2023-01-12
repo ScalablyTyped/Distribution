@@ -37,7 +37,8 @@ object SelectionRange {
   
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.SelectionRange */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.SelectionRange */ Boolean]
   
-  extension [Self <: SelectionRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionRange] (val x: Self) extends AnyVal {
     
     inline def setParent(value: SelectionRange): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object MeshCertificates {
     __obj.asInstanceOf[MeshCertificates]
   }
   
-  extension [Self <: MeshCertificates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshCertificates] (val x: Self) extends AnyVal {
     
     inline def setEnableCertificates(value: Boolean): Self = StObject.set(x, "enableCertificates", value.asInstanceOf[js.Any])
     

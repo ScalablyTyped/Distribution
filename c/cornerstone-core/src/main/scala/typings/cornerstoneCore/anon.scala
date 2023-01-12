@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Opacity]
     }
     
-    extension [Self <: Opacity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opacity] (val x: Self) extends AnyVal {
       
       inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Renderer]
     }
     
-    extension [Self <: Renderer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Renderer] (val x: Self) extends AnyVal {
       
       inline def setRenderer(value: webgl): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
       
@@ -129,7 +132,8 @@ object anon {
       __obj.asInstanceOf[RequiredViewport]
     }
     
-    extension [Self <: RequiredViewport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredViewport] (val x: Self) extends AnyVal {
       
       inline def setColormap(value: Any): Self = StObject.set(x, "colormap", value.asInstanceOf[js.Any])
       
@@ -170,7 +174,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

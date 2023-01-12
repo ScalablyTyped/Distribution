@@ -71,7 +71,8 @@ object distTypesHocsWithAnalyticsEventsMod {
       __obj.asInstanceOf[WithAnalyticsEventsProps]
     }
     
-    extension [Self <: WithAnalyticsEventsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithAnalyticsEventsProps] (val x: Self) extends AnyVal {
       
       inline def setCreateAnalyticsEvent(value: /* payload */ AnalyticsEventPayload => default): Self = StObject.set(x, "createAnalyticsEvent", js.Any.fromFunction1(value))
       

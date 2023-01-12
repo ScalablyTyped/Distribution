@@ -38,7 +38,8 @@ object CreateObjectRequest {
     __obj.asInstanceOf[CreateObjectRequest]
   }
   
-  extension [Self <: CreateObjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateObjectRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     

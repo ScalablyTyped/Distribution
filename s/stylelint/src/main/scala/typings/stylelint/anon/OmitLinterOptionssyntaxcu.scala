@@ -69,7 +69,8 @@ object OmitLinterOptionssyntaxcu {
     __obj.asInstanceOf[OmitLinterOptionssyntaxcu]
   }
   
-  extension [Self <: OmitLinterOptionssyntaxcu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitLinterOptionssyntaxcu] (val x: Self) extends AnyVal {
     
     inline def setAllowEmptyInput(value: Boolean): Self = StObject.set(x, "allowEmptyInput", value.asInstanceOf[js.Any])
     

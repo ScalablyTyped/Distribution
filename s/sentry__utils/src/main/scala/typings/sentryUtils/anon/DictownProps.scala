@@ -25,7 +25,8 @@ object DictownProps {
     __obj.asInstanceOf[DictownProps]
   }
   
-  extension [Self <: DictownProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictownProps] (val x: Self) extends AnyVal {
     
     inline def setCurrentTarget(value: String): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     

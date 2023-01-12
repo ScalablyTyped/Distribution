@@ -29,7 +29,8 @@ object PreviousStreakBonus {
     __obj.asInstanceOf[PreviousStreakBonus]
   }
   
-  extension [Self <: PreviousStreakBonus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreviousStreakBonus] (val x: Self) extends AnyVal {
     
     inline def setPreviousStreakBonus(value: Double): Self = StObject.set(x, "previousStreakBonus", value.asInstanceOf[js.Any])
     

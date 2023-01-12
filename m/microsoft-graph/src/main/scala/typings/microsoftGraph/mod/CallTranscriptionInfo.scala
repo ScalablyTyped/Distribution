@@ -19,7 +19,8 @@ object CallTranscriptionInfo {
     __obj.asInstanceOf[CallTranscriptionInfo]
   }
   
-  extension [Self <: CallTranscriptionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallTranscriptionInfo] (val x: Self) extends AnyVal {
     
     inline def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     

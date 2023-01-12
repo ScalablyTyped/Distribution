@@ -17,7 +17,8 @@ object UseColumns {
     __obj.asInstanceOf[UseColumns]
   }
   
-  extension [Self <: UseColumns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseColumns] (val x: Self) extends AnyVal {
     
     inline def setUseColumns(value: Boolean): Self = StObject.set(x, "useColumns", value.asInstanceOf[js.Any])
     

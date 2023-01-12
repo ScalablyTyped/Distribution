@@ -28,7 +28,8 @@ object PrefetchRetrieval {
     __obj.asInstanceOf[PrefetchRetrieval]
   }
   
-  extension [Self <: PrefetchRetrieval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrefetchRetrieval] (val x: Self) extends AnyVal {
     
     inline def setDynamicVariables(value: mapOfString): Self = StObject.set(x, "DynamicVariables", value.asInstanceOf[js.Any])
     

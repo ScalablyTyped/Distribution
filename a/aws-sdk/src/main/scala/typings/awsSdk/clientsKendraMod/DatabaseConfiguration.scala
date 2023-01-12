@@ -44,7 +44,8 @@ object DatabaseConfiguration {
     __obj.asInstanceOf[DatabaseConfiguration]
   }
   
-  extension [Self <: DatabaseConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAclConfiguration(value: AclConfiguration): Self = StObject.set(x, "AclConfiguration", value.asInstanceOf[js.Any])
     

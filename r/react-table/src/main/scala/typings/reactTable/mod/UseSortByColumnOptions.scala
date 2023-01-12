@@ -24,7 +24,8 @@ object UseSortByColumnOptions {
     __obj.asInstanceOf[UseSortByColumnOptions[D]]
   }
   
-  extension [Self <: UseSortByColumnOptions[?], D /* <: js.Object */](x: Self & UseSortByColumnOptions[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseSortByColumnOptions[?], D /* <: js.Object */] (val x: Self & UseSortByColumnOptions[D]) extends AnyVal {
     
     inline def setDefaultCanSort(value: Boolean): Self = StObject.set(x, "defaultCanSort", value.asInstanceOf[js.Any])
     

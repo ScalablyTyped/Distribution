@@ -18,7 +18,8 @@ object AwsJobPresignedUrlConfig {
     __obj.asInstanceOf[AwsJobPresignedUrlConfig]
   }
   
-  extension [Self <: AwsJobPresignedUrlConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsJobPresignedUrlConfig] (val x: Self) extends AnyVal {
     
     inline def setExpiresInSec(value: ExpiresInSeconds): Self = StObject.set(x, "expiresInSec", value.asInstanceOf[js.Any])
     

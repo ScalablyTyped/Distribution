@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setImplSuffix(value: String): Self = StObject.set(x, "implSuffix", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object mod {
       __obj.asInstanceOf[Transformer]
     }
     
-    extension [Self <: Transformer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transformer] (val x: Self) extends AnyVal {
       
       inline def setAddSource(value: (String, String) => Transformer): Self = StObject.set(x, "addSource", js.Any.fromFunction2(value))
       

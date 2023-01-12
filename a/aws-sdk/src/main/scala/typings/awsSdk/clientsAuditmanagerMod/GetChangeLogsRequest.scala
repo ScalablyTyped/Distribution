@@ -38,7 +38,8 @@ object GetChangeLogsRequest {
     __obj.asInstanceOf[GetChangeLogsRequest]
   }
   
-  extension [Self <: GetChangeLogsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetChangeLogsRequest] (val x: Self) extends AnyVal {
     
     inline def setAssessmentId(value: UUID): Self = StObject.set(x, "assessmentId", value.asInstanceOf[js.Any])
     

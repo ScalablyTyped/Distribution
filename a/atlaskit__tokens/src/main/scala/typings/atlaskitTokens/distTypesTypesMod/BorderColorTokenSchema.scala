@@ -16,7 +16,8 @@ object BorderColorTokenSchema {
     __obj.asInstanceOf[BorderColorTokenSchema[BaseToken]]
   }
   
-  extension [Self <: BorderColorTokenSchema[?], BaseToken](x: Self & BorderColorTokenSchema[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderColorTokenSchema[?], BaseToken] (val x: Self & BorderColorTokenSchema[BaseToken]) extends AnyVal {
     
     inline def setColor(value: BorderDefaultDisabled[BaseToken]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
   }

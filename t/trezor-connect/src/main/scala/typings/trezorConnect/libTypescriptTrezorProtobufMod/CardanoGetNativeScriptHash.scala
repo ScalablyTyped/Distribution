@@ -23,7 +23,8 @@ object CardanoGetNativeScriptHash {
     __obj.asInstanceOf[CardanoGetNativeScriptHash]
   }
   
-  extension [Self <: CardanoGetNativeScriptHash](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoGetNativeScriptHash] (val x: Self) extends AnyVal {
     
     inline def setDerivation_type(value: CardanoDerivationType): Self = StObject.set(x, "derivation_type", value.asInstanceOf[js.Any])
     

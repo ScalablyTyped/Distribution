@@ -30,7 +30,8 @@ object IWebXRBackgroundRemoverOptions {
     __obj.asInstanceOf[IWebXRBackgroundRemoverOptions]
   }
   
-  extension [Self <: IWebXRBackgroundRemoverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebXRBackgroundRemoverOptions] (val x: Self) extends AnyVal {
     
     inline def setBackgroundMeshes(value: js.Array[AbstractMesh]): Self = StObject.set(x, "backgroundMeshes", value.asInstanceOf[js.Any])
     

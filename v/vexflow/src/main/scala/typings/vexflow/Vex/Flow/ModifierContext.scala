@@ -43,7 +43,8 @@ object ModifierContext {
     __obj.asInstanceOf[ModifierContext]
   }
   
-  extension [Self <: ModifierContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifierContext] (val x: Self) extends AnyVal {
     
     inline def setAddModifier(value: Modifier => ModifierContext): Self = StObject.set(x, "addModifier", js.Any.fromFunction1(value))
     

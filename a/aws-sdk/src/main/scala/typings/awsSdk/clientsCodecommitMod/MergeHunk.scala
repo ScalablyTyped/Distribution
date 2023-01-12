@@ -33,7 +33,8 @@ object MergeHunk {
     __obj.asInstanceOf[MergeHunk]
   }
   
-  extension [Self <: MergeHunk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergeHunk] (val x: Self) extends AnyVal {
     
     inline def setBase(value: MergeHunkDetail): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

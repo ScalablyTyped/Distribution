@@ -18,7 +18,8 @@ object GetSuiteRunReportResponse {
     __obj.asInstanceOf[GetSuiteRunReportResponse]
   }
   
-  extension [Self <: GetSuiteRunReportResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSuiteRunReportResponse] (val x: Self) extends AnyVal {
     
     inline def setQualificationReportDownloadUrl(value: QualificationReportDownloadUrl): Self = StObject.set(x, "qualificationReportDownloadUrl", value.asInstanceOf[js.Any])
     

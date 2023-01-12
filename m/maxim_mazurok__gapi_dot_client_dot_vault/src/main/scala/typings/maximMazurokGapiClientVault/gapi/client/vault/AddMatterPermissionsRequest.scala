@@ -22,7 +22,8 @@ object AddMatterPermissionsRequest {
     __obj.asInstanceOf[AddMatterPermissionsRequest]
   }
   
-  extension [Self <: AddMatterPermissionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddMatterPermissionsRequest] (val x: Self) extends AnyVal {
     
     inline def setCcMe(value: Boolean): Self = StObject.set(x, "ccMe", value.asInstanceOf[js.Any])
     

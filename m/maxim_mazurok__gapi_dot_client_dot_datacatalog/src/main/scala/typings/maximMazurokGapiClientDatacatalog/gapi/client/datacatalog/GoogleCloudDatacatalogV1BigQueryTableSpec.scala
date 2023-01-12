@@ -22,7 +22,8 @@ object GoogleCloudDatacatalogV1BigQueryTableSpec {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1BigQueryTableSpec]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1BigQueryTableSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1BigQueryTableSpec] (val x: Self) extends AnyVal {
     
     inline def setTableSourceType(value: String): Self = StObject.set(x, "tableSourceType", value.asInstanceOf[js.Any])
     

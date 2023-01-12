@@ -24,7 +24,8 @@ object StackableDiagram {
     __obj.asInstanceOf[StackableDiagram]
   }
   
-  extension [Self <: StackableDiagram](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackableDiagram] (val x: Self) extends AnyVal {
     
     inline def setPercent(value: Boolean): Self = StObject.set(x, "Percent", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object CreateCustomClassRequest {
     __obj.asInstanceOf[CreateCustomClassRequest]
   }
   
-  extension [Self <: CreateCustomClassRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCustomClassRequest] (val x: Self) extends AnyVal {
     
     inline def setCustomClass(value: CustomClass): Self = StObject.set(x, "customClass", value.asInstanceOf[js.Any])
     

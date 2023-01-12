@@ -36,7 +36,8 @@ object typesBatchGetRepositoriesOutputMod {
       __obj.asInstanceOf[BatchGetRepositoriesOutput]
     }
     
-    extension [Self <: BatchGetRepositoriesOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchGetRepositoriesOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

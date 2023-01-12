@@ -15,7 +15,8 @@ object DescableQuery {
     __obj.asInstanceOf[DescableQuery[T]]
   }
   
-  extension [Self <: DescableQuery[?], T](x: Self & DescableQuery[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescableQuery[?], T] (val x: Self & DescableQuery[T]) extends AnyVal {
     
     inline def setDesc(value: () => DescQuery[T]): Self = StObject.set(x, "desc", js.Any.fromFunction0(value))
   }

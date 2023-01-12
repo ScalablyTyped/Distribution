@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[ScaledImageProps]
     }
     
-    extension [Self <: ScaledImageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScaledImageProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

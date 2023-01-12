@@ -15,7 +15,8 @@ object ISearchPaneStatics {
     __obj.asInstanceOf[ISearchPaneStatics]
   }
   
-  extension [Self <: ISearchPaneStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchPaneStatics] (val x: Self) extends AnyVal {
     
     inline def setGetForCurrentView(value: () => SearchPane): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
   }

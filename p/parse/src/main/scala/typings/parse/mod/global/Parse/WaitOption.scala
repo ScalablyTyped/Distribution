@@ -20,7 +20,8 @@ object WaitOption {
     __obj.asInstanceOf[WaitOption]
   }
   
-  extension [Self <: WaitOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WaitOption] (val x: Self) extends AnyVal {
     
     inline def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
     

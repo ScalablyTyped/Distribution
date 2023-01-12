@@ -19,7 +19,8 @@ object ListHeight {
     __obj.asInstanceOf[ListHeight]
   }
   
-  extension [Self <: ListHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListHeight] (val x: Self) extends AnyVal {
     
     inline def setListHeight(value: Double): Self = StObject.set(x, "listHeight", value.asInstanceOf[js.Any])
     

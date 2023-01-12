@@ -17,7 +17,8 @@ object ProtocolOptions {
     __obj.asInstanceOf[ProtocolOptions]
   }
   
-  extension [Self <: ProtocolOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtocolOptions] (val x: Self) extends AnyVal {
     
     inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     

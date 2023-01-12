@@ -39,7 +39,8 @@ object WorkArounds {
     __obj.asInstanceOf[WorkArounds]
   }
   
-  extension [Self <: WorkArounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkArounds] (val x: Self) extends AnyVal {
     
     inline def setIos8BrowserCrash(value: Boolean): Self = StObject.set(x, "ios8BrowserCrash", value.asInstanceOf[js.Any])
     

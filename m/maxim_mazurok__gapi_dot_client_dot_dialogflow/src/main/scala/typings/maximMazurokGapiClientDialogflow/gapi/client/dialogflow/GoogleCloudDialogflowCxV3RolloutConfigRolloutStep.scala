@@ -22,7 +22,8 @@ object GoogleCloudDialogflowCxV3RolloutConfigRolloutStep {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3RolloutConfigRolloutStep]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3RolloutConfigRolloutStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3RolloutConfigRolloutStep] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object GetSnapshotBlockResponse {
     __obj.asInstanceOf[GetSnapshotBlockResponse]
   }
   
-  extension [Self <: GetSnapshotBlockResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSnapshotBlockResponse] (val x: Self) extends AnyVal {
     
     inline def setBlockData(value: BlockData): Self = StObject.set(x, "BlockData", value.asInstanceOf[js.Any])
     

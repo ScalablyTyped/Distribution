@@ -35,7 +35,8 @@ object outFrameworkMod {
       __obj.asInstanceOf[BeforeCopyExtraFilesOptions]
     }
     
-    extension [Self <: BeforeCopyExtraFilesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeCopyExtraFilesOptions] (val x: Self) extends AnyVal {
       
       inline def setAppOutDir(value: String): Self = StObject.set(x, "appOutDir", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object outFrameworkMod {
       __obj.asInstanceOf[Framework]
     }
     
-    extension [Self <: Framework](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Framework] (val x: Self) extends AnyVal {
       
       inline def setAfterPack(value: /* context */ AfterPackContext => js.Promise[Any]): Self = StObject.set(x, "afterPack", js.Any.fromFunction1(value))
       
@@ -169,7 +171,8 @@ object outFrameworkMod {
       __obj.asInstanceOf[PrepareApplicationStageDirectoryOptions]
     }
     
-    extension [Self <: PrepareApplicationStageDirectoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrepareApplicationStageDirectoryOptions] (val x: Self) extends AnyVal {
       
       inline def setAppOutDir(value: String): Self = StObject.set(x, "appOutDir", value.asInstanceOf[js.Any])
       

@@ -73,7 +73,8 @@ object distEs5UriDotallDotminMod {
       __obj.asInstanceOf[URIComponents]
     }
     
-    extension [Self <: URIComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URIComponents] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object distEs5UriDotallDotminMod {
       __obj.asInstanceOf[URIOptions]
     }
     
-    extension [Self <: URIOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URIOptions] (val x: Self) extends AnyVal {
       
       inline def setAbsolutePath(value: Boolean): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
       
@@ -217,7 +219,8 @@ object distEs5UriDotallDotminMod {
       __obj.asInstanceOf[URIRegExps]
     }
     
-    extension [Self <: URIRegExps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URIRegExps] (val x: Self) extends AnyVal {
       
       inline def setESCAPE(value: js.RegExp): Self = StObject.set(x, "ESCAPE", value.asInstanceOf[js.Any])
       
@@ -272,7 +275,8 @@ object distEs5UriDotallDotminMod {
       __obj.asInstanceOf[URISchemeHandler[Components, Options, ParentComponents]]
     }
     
-    extension [Self <: URISchemeHandler[?, ?, ?], Components /* <: URIComponents */, Options /* <: URIOptions */, ParentComponents /* <: URIComponents */](x: Self & (URISchemeHandler[Components, Options, ParentComponents])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URISchemeHandler[?, ?, ?], Components /* <: URIComponents */, Options /* <: URIOptions */, ParentComponents /* <: URIComponents */] (val x: Self & (URISchemeHandler[Components, Options, ParentComponents])) extends AnyVal {
       
       inline def setAbsolutePath(value: Boolean): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
       

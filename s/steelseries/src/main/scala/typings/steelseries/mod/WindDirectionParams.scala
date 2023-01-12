@@ -75,7 +75,8 @@ object WindDirectionParams {
     __obj.asInstanceOf[WindDirectionParams]
   }
   
-  extension [Self <: WindDirectionParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindDirectionParams] (val x: Self) extends AnyVal {
     
     inline def setArea(value: js.Array[Section]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     

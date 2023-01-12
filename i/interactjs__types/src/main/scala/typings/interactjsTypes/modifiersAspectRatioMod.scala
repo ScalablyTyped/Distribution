@@ -80,7 +80,8 @@ object modifiersAspectRatioMod {
       __obj.asInstanceOf[AspectRatioOptions]
     }
     
-    extension [Self <: AspectRatioOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AspectRatioOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -146,7 +147,8 @@ object modifiersAspectRatioMod {
       __obj.asInstanceOf[AspectRatioState]
     }
     
-    extension [Self <: AspectRatioState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AspectRatioState] (val x: Self) extends AnyVal {
       
       inline def setEdgeSign(value: X): Self = StObject.set(x, "edgeSign", value.asInstanceOf[js.Any])
       

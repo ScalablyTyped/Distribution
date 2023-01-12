@@ -82,7 +82,8 @@ object rsa {
       __obj.asInstanceOf[GenerateKeyPairOptions]
     }
     
-    extension [Self <: GenerateKeyPairOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateKeyPairOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -130,7 +131,8 @@ object rsa {
       __obj.asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
     }
     
-    extension [Self <: typings.nodeForge.mod.pki.rsa.KeyPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.nodeForge.mod.pki.rsa.KeyPair] (val x: Self) extends AnyVal {
       
       inline def setPrivateKey(value: typings.nodeForge.mod.pki.rsa.PrivateKey): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       

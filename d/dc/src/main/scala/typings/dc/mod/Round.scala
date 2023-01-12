@@ -19,7 +19,8 @@ object Round {
     __obj.asInstanceOf[Round]
   }
   
-  extension [Self <: Round](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Round] (val x: Self) extends AnyVal {
     
     inline def setCeil(value: Double => Double): Self = StObject.set(x, "ceil", js.Any.fromFunction1(value))
     

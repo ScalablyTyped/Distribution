@@ -108,7 +108,8 @@ object ApplicationComponentDetail {
     __obj.asInstanceOf[ApplicationComponentDetail]
   }
   
-  extension [Self <: ApplicationComponentDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationComponentDetail] (val x: Self) extends AnyVal {
     
     inline def setAnalysisStatus(value: SrcCodeOrDbAnalysisStatus): Self = StObject.set(x, "analysisStatus", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[Autosave]
     }
     
-    extension [Self <: Autosave](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Autosave] (val x: Self) extends AnyVal {
       
       inline def setPreview_link(value: String): Self = StObject.set(x, "preview_link", value.asInstanceOf[js.Any])
     }
@@ -58,7 +59,8 @@ object mod {
       __obj.asInstanceOf[Entity]
     }
     
-    extension [Self <: Entity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entity] (val x: Self) extends AnyVal {
       
       inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
       

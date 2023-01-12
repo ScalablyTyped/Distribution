@@ -15,7 +15,8 @@ object WatcherDataEmailAttachment {
     __obj.asInstanceOf[WatcherDataEmailAttachment]
   }
   
-  extension [Self <: WatcherDataEmailAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherDataEmailAttachment] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: WatcherDataAttachmentFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

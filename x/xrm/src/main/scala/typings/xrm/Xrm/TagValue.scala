@@ -23,7 +23,8 @@ object TagValue {
     __obj.asInstanceOf[TagValue]
   }
   
-  extension [Self <: TagValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagValue] (val x: Self) extends AnyVal {
     
     inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
   }

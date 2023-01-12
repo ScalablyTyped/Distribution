@@ -27,7 +27,8 @@ object ComposeParams {
     __obj.asInstanceOf[ComposeParams]
   }
   
-  extension [Self <: ComposeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComposeParams] (val x: Self) extends AnyVal {
     
     inline def setBaseFee(value: Double): Self = StObject.set(x, "baseFee", value.asInstanceOf[js.Any])
     

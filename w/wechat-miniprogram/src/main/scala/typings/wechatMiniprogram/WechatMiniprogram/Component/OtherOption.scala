@@ -59,7 +59,8 @@ object OtherOption {
     __obj.asInstanceOf[OtherOption]
   }
   
-  extension [Self <: OtherOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OtherOption] (val x: Self) extends AnyVal {
     
     inline def setBehaviors(value: js.Array[BehaviorIdentifier]): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object libChartsChartCardMod {
       __obj.asInstanceOf[IChartCardProps]
     }
     
-    extension [Self <: IChartCardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IChartCardProps] (val x: Self) extends AnyVal {
       
       inline def setAction(value: ReactNode): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

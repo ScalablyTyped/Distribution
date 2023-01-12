@@ -25,7 +25,8 @@ object UserPasswordRules {
     __obj.asInstanceOf[UserPasswordRules]
   }
   
-  extension [Self <: UserPasswordRules](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserPasswordRules] (val x: Self) extends AnyVal {
     
     inline def setPasswordRules(value: AccountPasswordRules): Self = StObject.set(x, "passwordRules", value.asInstanceOf[js.Any])
     

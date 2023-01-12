@@ -19,7 +19,8 @@ object MouselockSetDetails {
     __obj.asInstanceOf[MouselockSetDetails]
   }
   
-  extension [Self <: MouselockSetDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouselockSetDetails] (val x: Self) extends AnyVal {
     
     inline def setSetting(value: allow): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }

@@ -125,7 +125,8 @@ object libTypescriptComponentsDataTableDataTablePaginationMod extends Shortcut {
       __obj.asInstanceOf[PaginationControlsProps]
     }
     
-    extension [Self <: PaginationControlsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationControlsProps] (val x: Self) extends AnyVal {
       
       inline def setNumberOfPages(value: Double): Self = StObject.set(x, "numberOfPages", value.asInstanceOf[js.Any])
       
@@ -163,7 +164,8 @@ object libTypescriptComponentsDataTableDataTablePaginationMod extends Shortcut {
       __obj.asInstanceOf[PaginationDropdownProps]
     }
     
-    extension [Self <: PaginationDropdownProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationDropdownProps] (val x: Self) extends AnyVal {
       
       inline def setNumberOfItemsPerPage(value: Double): Self = StObject.set(x, "numberOfItemsPerPage", value.asInstanceOf[js.Any])
       

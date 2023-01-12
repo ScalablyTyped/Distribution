@@ -18,7 +18,8 @@ object SelectListSubComponents {
     __obj.asInstanceOf[SelectListSubComponents]
   }
   
-  extension [Self <: SelectListSubComponents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectListSubComponents] (val x: Self) extends AnyVal {
     
     inline def setGroup(value: FC[SelectListGroupProps]): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     

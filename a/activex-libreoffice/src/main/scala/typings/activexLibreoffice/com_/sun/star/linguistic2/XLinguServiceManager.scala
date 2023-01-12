@@ -111,7 +111,8 @@ object XLinguServiceManager {
     __obj.asInstanceOf[XLinguServiceManager]
   }
   
-  extension [Self <: XLinguServiceManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLinguServiceManager] (val x: Self) extends AnyVal {
     
     inline def setAddLinguServiceManagerListener(value: XEventListener => Boolean): Self = StObject.set(x, "addLinguServiceManagerListener", js.Any.fromFunction1(value))
     

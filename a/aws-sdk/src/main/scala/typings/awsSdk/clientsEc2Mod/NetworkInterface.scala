@@ -143,7 +143,8 @@ object NetworkInterface {
     __obj.asInstanceOf[NetworkInterface]
   }
   
-  extension [Self <: NetworkInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkInterface] (val x: Self) extends AnyVal {
     
     inline def setAssociation(value: NetworkInterfaceAssociation): Self = StObject.set(x, "Association", value.asInstanceOf[js.Any])
     

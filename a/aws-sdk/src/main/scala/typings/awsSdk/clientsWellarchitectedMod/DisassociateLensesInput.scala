@@ -17,7 +17,8 @@ object DisassociateLensesInput {
     __obj.asInstanceOf[DisassociateLensesInput]
   }
   
-  extension [Self <: DisassociateLensesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateLensesInput] (val x: Self) extends AnyVal {
     
     inline def setLensAliases(value: LensAliases): Self = StObject.set(x, "LensAliases", value.asInstanceOf[js.Any])
     

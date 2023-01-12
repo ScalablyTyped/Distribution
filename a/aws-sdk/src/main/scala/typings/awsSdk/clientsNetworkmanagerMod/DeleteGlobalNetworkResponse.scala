@@ -18,7 +18,8 @@ object DeleteGlobalNetworkResponse {
     __obj.asInstanceOf[DeleteGlobalNetworkResponse]
   }
   
-  extension [Self <: DeleteGlobalNetworkResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteGlobalNetworkResponse] (val x: Self) extends AnyVal {
     
     inline def setGlobalNetwork(value: GlobalNetwork): Self = StObject.set(x, "GlobalNetwork", value.asInstanceOf[js.Any])
     

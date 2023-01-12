@@ -34,7 +34,8 @@ object IPointerDevice {
     __obj.asInstanceOf[IPointerDevice]
   }
   
-  extension [Self <: IPointerDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPointerDevice] (val x: Self) extends AnyVal {
     
     inline def setIsIntegrated(value: Boolean): Self = StObject.set(x, "isIntegrated", value.asInstanceOf[js.Any])
     

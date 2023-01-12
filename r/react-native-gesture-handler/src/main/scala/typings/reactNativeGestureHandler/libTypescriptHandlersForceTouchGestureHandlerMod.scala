@@ -66,7 +66,8 @@ object libTypescriptHandlersForceTouchGestureHandlerMod {
       __obj.asInstanceOf[ForceTouchGestureConfig]
     }
     
-    extension [Self <: ForceTouchGestureConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForceTouchGestureConfig] (val x: Self) extends AnyVal {
       
       inline def setFeedbackOnActivation(value: Boolean): Self = StObject.set(x, "feedbackOnActivation", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object libTypescriptHandlersForceTouchGestureHandlerMod {
       __obj.asInstanceOf[ForceTouchGestureHandlerEventPayload]
     }
     
-    extension [Self <: ForceTouchGestureHandlerEventPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForceTouchGestureHandlerEventPayload] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteX(value: Double): Self = StObject.set(x, "absoluteX", value.asInstanceOf[js.Any])
       

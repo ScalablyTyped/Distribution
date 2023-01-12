@@ -35,7 +35,8 @@ object TaskBoardChangeEvent {
     __obj.asInstanceOf[TaskBoardChangeEvent]
   }
   
-  extension [Self <: TaskBoardChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskBoardChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

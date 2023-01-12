@@ -33,7 +33,8 @@ object Origin {
     __obj.asInstanceOf[Origin]
   }
   
-  extension [Self <: Origin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Origin] (val x: Self) extends AnyVal {
     
     inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

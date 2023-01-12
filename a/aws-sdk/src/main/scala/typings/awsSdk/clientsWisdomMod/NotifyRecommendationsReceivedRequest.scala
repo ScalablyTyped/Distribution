@@ -28,7 +28,8 @@ object NotifyRecommendationsReceivedRequest {
     __obj.asInstanceOf[NotifyRecommendationsReceivedRequest]
   }
   
-  extension [Self <: NotifyRecommendationsReceivedRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotifyRecommendationsReceivedRequest] (val x: Self) extends AnyVal {
     
     inline def setAssistantId(value: UuidOrArn): Self = StObject.set(x, "assistantId", value.asInstanceOf[js.Any])
     

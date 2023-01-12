@@ -39,7 +39,8 @@ object CircleLayerSpecification {
     __obj.asInstanceOf[CircleLayerSpecification]
   }
   
-  extension [Self <: CircleLayerSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircleLayerSpecification] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: FilterSpecification): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

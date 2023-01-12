@@ -20,7 +20,8 @@ object distWatchApiMod {
       __obj.asInstanceOf[IWatchEvent]
     }
     
-    extension [Self <: IWatchEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWatchEvent] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

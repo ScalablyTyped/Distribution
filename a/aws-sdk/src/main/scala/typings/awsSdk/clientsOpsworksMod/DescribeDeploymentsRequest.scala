@@ -28,7 +28,8 @@ object DescribeDeploymentsRequest {
     __obj.asInstanceOf[DescribeDeploymentsRequest]
   }
   
-  extension [Self <: DescribeDeploymentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDeploymentsRequest] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: String): Self = StObject.set(x, "AppId", value.asInstanceOf[js.Any])
     

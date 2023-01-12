@@ -18,7 +18,8 @@ object PutRepositoryPermissionsPolicyResult {
     __obj.asInstanceOf[PutRepositoryPermissionsPolicyResult]
   }
   
-  extension [Self <: PutRepositoryPermissionsPolicyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutRepositoryPermissionsPolicyResult] (val x: Self) extends AnyVal {
     
     inline def setPolicy(value: ResourcePolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     

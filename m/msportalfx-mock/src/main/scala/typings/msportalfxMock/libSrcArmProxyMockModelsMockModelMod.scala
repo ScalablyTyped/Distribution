@@ -25,7 +25,8 @@ object libSrcArmProxyMockModelsMockModelMod {
       __obj.asInstanceOf[Lock]
     }
     
-    extension [Self <: Lock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lock] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -42,7 +43,8 @@ object libSrcArmProxyMockModelsMockModelMod {
       __obj.asInstanceOf[MappedArmData[T]]
     }
     
-    extension [Self <: MappedArmData[?], T](x: Self & MappedArmData[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MappedArmData[?], T] (val x: Self & MappedArmData[T]) extends AnyVal {
       
       inline def setMappedData(value: T): Self = StObject.set(x, "mappedData", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object libSrcArmProxyMockModelsMockModelMod {
       __obj.asInstanceOf[NestedResource]
     }
     
-    extension [Self <: NestedResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NestedResource] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -134,7 +137,8 @@ object libSrcArmProxyMockModelsMockModelMod {
       __obj.asInstanceOf[Resource]
     }
     
-    extension [Self <: Resource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
       
       inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -201,7 +205,8 @@ object libSrcArmProxyMockModelsMockModelMod {
       __obj.asInstanceOf[ResourceGroup]
     }
     
-    extension [Self <: ResourceGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceGroup] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
@@ -244,7 +249,8 @@ object libSrcArmProxyMockModelsMockModelMod {
       __obj.asInstanceOf[ResourceGroupProperties]
     }
     
-    extension [Self <: ResourceGroupProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceGroupProperties] (val x: Self) extends AnyVal {
       
       inline def setLockState(value: String): Self = StObject.set(x, "lockState", value.asInstanceOf[js.Any])
       
@@ -293,7 +299,8 @@ object libSrcArmProxyMockModelsMockModelMod {
       __obj.asInstanceOf[Subscription]
     }
     
-    extension [Self <: Subscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -338,7 +345,8 @@ object libSrcArmProxyMockModelsMockModelMod {
       __obj.asInstanceOf[SubscriptionPolicies]
     }
     
-    extension [Self <: SubscriptionPolicies](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriptionPolicies] (val x: Self) extends AnyVal {
       
       inline def setLocationPlacementId(value: String): Self = StObject.set(x, "locationPlacementId", value.asInstanceOf[js.Any])
       

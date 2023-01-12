@@ -41,7 +41,8 @@ object distDocumentMod {
       __obj.asInstanceOf[LoadingProcessData]
     }
     
-    extension [Self <: LoadingProcessData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadingProcessData] (val x: Self) extends AnyVal {
       
       inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
       
@@ -181,7 +182,8 @@ object distDocumentMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

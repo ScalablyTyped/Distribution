@@ -15,7 +15,8 @@ object AnimatedComponentOptions {
     __obj.asInstanceOf[AnimatedComponentOptions]
   }
   
-  extension [Self <: AnimatedComponentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimatedComponentOptions] (val x: Self) extends AnyVal {
     
     inline def setCollapsable(value: Boolean): Self = StObject.set(x, "collapsable", value.asInstanceOf[js.Any])
     

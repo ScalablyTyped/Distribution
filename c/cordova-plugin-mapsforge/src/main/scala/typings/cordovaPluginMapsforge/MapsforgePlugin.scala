@@ -17,7 +17,8 @@ object MapsforgePlugin {
     __obj.asInstanceOf[MapsforgePlugin]
   }
   
-  extension [Self <: MapsforgePlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapsforgePlugin] (val x: Self) extends AnyVal {
     
     inline def setCache(value: MapsforgeCachePlugin): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

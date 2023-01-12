@@ -16,7 +16,8 @@ object IsInAParentText {
     __obj.asInstanceOf[IsInAParentText]
   }
   
-  extension [Self <: IsInAParentText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsInAParentText] (val x: Self) extends AnyVal {
     
     inline def setIsInAParentText(value: Requireable[Boolean]): Self = StObject.set(x, "isInAParentText", value.asInstanceOf[js.Any])
   }

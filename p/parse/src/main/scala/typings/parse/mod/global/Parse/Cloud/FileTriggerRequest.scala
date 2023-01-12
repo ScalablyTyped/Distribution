@@ -32,7 +32,8 @@ object FileTriggerRequest {
     __obj.asInstanceOf[FileTriggerRequest]
   }
   
-  extension [Self <: FileTriggerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileTriggerRequest] (val x: Self) extends AnyVal {
     
     inline def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object IExecuteReplyMsg {
     __obj.asInstanceOf[IExecuteReplyMsg]
   }
   
-  extension [Self <: IExecuteReplyMsg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExecuteReplyMsg] (val x: Self) extends AnyVal {
     
     inline def setContent(value: IExecuteReply): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

@@ -491,7 +491,8 @@ object Testrunner {
     __obj.asInstanceOf[Testrunner]
   }
   
-  extension [Self <: Testrunner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Testrunner] (val x: Self) extends AnyVal {
     
     inline def setAfter(
       value: (js.Function3[

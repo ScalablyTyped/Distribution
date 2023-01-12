@@ -54,7 +54,8 @@ object SendersInfoStats {
     __obj.asInstanceOf[SendersInfoStats]
   }
   
-  extension [Self <: SendersInfoStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendersInfoStats] (val x: Self) extends AnyVal {
     
     inline def setClicks(value: Double): Self = StObject.set(x, "clicks", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object SerialModes {
     __obj.asInstanceOf[SerialModes]
   }
   
-  extension [Self <: SerialModes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerialModes] (val x: Self) extends AnyVal {
     
     inline def setCONTINUOUS_READ(value: SERIAL_MODE): Self = StObject.set(x, "CONTINUOUS_READ", value.asInstanceOf[js.Any])
     

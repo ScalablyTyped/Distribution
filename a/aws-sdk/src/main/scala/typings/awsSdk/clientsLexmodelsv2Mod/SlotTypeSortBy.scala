@@ -23,7 +23,8 @@ object SlotTypeSortBy {
     __obj.asInstanceOf[SlotTypeSortBy]
   }
   
-  extension [Self <: SlotTypeSortBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotTypeSortBy] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: SlotTypeSortAttribute): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

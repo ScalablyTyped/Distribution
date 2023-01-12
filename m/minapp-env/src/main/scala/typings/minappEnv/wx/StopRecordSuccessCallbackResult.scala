@@ -19,7 +19,8 @@ object StopRecordSuccessCallbackResult {
     __obj.asInstanceOf[StopRecordSuccessCallbackResult]
   }
   
-  extension [Self <: StopRecordSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopRecordSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setTempThumbPath(value: String): Self = StObject.set(x, "tempThumbPath", value.asInstanceOf[js.Any])
     

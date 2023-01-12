@@ -44,7 +44,8 @@ object BundleCache {
     __obj.asInstanceOf[BundleCache]
   }
   
-  extension [Self <: BundleCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BundleCache] (val x: Self) extends AnyVal {
     
     inline def setGetBundleMetadata(value: (PersistenceTransaction, String) => PersistencePromise[js.UndefOr[BundleMetadata]]): Self = StObject.set(x, "getBundleMetadata", js.Any.fromFunction2(value))
     

@@ -18,7 +18,8 @@ object RequestEnum {
     __obj.asInstanceOf[RequestEnum]
   }
   
-  extension [Self <: RequestEnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestEnum] (val x: Self) extends AnyVal {
     
     inline def setRequestEnum(value: String): Self = StObject.set(x, "requestEnum", value.asInstanceOf[js.Any])
     

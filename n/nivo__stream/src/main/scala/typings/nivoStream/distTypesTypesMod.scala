@@ -48,7 +48,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[StackTooltipProps]
     }
     
-    extension [Self <: StackTooltipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackTooltipProps] (val x: Self) extends AnyVal {
       
       inline def setSlice(value: StreamSliceData): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
     }
@@ -171,7 +172,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[StreamCommonProps[RawDatum]]
     }
     
-    extension [Self <: StreamCommonProps[?], RawDatum /* <: StreamDatum */](x: Self & StreamCommonProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamCommonProps[?], RawDatum /* <: StreamDatum */] (val x: Self & StreamCommonProps[RawDatum]) extends AnyVal {
       
       inline def setAriaDescribedBy(value: String): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
       
@@ -307,7 +309,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[StreamCustomLayerProps]
     }
     
-    extension [Self <: StreamCustomLayerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamCustomLayerProps] (val x: Self) extends AnyVal {
       
       inline def setLayers(value: js.Array[StreamLayerData]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
@@ -336,7 +339,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[StreamDataProps[RawDatum]]
     }
     
-    extension [Self <: StreamDataProps[?], RawDatum /* <: StreamDatum */](x: Self & StreamDataProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamDataProps[?], RawDatum /* <: StreamDatum */] (val x: Self & StreamDataProps[RawDatum]) extends AnyVal {
       
       inline def setData(value: js.Array[RawDatum]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -379,7 +383,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[StreamLayerData]
     }
     
-    extension [Self <: StreamLayerData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamLayerData] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -436,7 +441,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[StreamLayerDatum]
     }
     
-    extension [Self <: StreamLayerDatum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamLayerDatum] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -497,7 +503,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[StreamSliceData]
     }
     
-    extension [Self <: StreamSliceData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamSliceData] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -618,7 +625,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[StreamSvgProps[RawDatum]]
     }
     
-    extension [Self <: StreamSvgProps[?], RawDatum /* <: StreamDatum */](x: Self & StreamSvgProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamSvgProps[?], RawDatum /* <: StreamDatum */] (val x: Self & StreamSvgProps[RawDatum]) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -847,7 +855,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[TooltipProps]
     }
     
-    extension [Self <: TooltipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipProps] (val x: Self) extends AnyVal {
       
       inline def setLayer(value: StreamLayerData): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     }

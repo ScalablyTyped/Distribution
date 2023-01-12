@@ -46,7 +46,8 @@ object typesDeleteFunctionConcurrencyInputMod {
       __obj.asInstanceOf[DeleteFunctionConcurrencyInput]
     }
     
-    extension [Self <: DeleteFunctionConcurrencyInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteFunctionConcurrencyInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

@@ -66,7 +66,8 @@ object XPackageRegistry {
     __obj.asInstanceOf[XPackageRegistry]
   }
   
-  extension [Self <: XPackageRegistry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPackageRegistry] (val x: Self) extends AnyVal {
     
     inline def setBindPackage(value: (String, String, Boolean, String, XCommandEnvironment) => XPackage): Self = StObject.set(x, "bindPackage", js.Any.fromFunction5(value))
     

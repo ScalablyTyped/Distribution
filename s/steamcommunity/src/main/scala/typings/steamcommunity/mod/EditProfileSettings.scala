@@ -54,7 +54,8 @@ object EditProfileSettings {
     __obj.asInstanceOf[EditProfileSettings]
   }
   
-  extension [Self <: EditProfileSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditProfileSettings] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: Any): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GridFSBucketReadStreamOptions {
     __obj.asInstanceOf[GridFSBucketReadStreamOptions]
   }
   
-  extension [Self <: GridFSBucketReadStreamOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridFSBucketReadStreamOptions] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: scala.Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

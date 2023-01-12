@@ -58,7 +58,8 @@ object FleetLaunchTemplateOverridesRequest {
     __obj.asInstanceOf[FleetLaunchTemplateOverridesRequest]
   }
   
-  extension [Self <: FleetLaunchTemplateOverridesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FleetLaunchTemplateOverridesRequest] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     

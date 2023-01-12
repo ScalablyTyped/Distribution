@@ -18,7 +18,8 @@ object GenerateOutput {
     __obj.asInstanceOf[GenerateOutput]
   }
   
-  extension [Self <: GenerateOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateOutput] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Blob): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

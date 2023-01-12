@@ -15,7 +15,8 @@ object EnterpriseCobranding {
     __obj.asInstanceOf[EnterpriseCobranding]
   }
   
-  extension [Self <: EnterpriseCobranding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnterpriseCobranding] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }

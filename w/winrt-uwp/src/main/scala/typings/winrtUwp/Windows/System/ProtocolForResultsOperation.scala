@@ -21,7 +21,8 @@ object ProtocolForResultsOperation {
     __obj.asInstanceOf[ProtocolForResultsOperation]
   }
   
-  extension [Self <: ProtocolForResultsOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtocolForResultsOperation] (val x: Self) extends AnyVal {
     
     inline def setReportCompleted(value: ValueSet => Unit): Self = StObject.set(x, "reportCompleted", js.Any.fromFunction1(value))
   }

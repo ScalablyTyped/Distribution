@@ -35,7 +35,8 @@ object libTypescriptFabricNativeSvgRenderableModuleMod extends Shortcut {
       __obj.asInstanceOf[Matrix]
     }
     
-    extension [Self <: Matrix](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Matrix] (val x: Self) extends AnyVal {
       
       inline def setA(value: Float): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object libTypescriptFabricNativeSvgRenderableModuleMod extends Shortcut {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setX(value: Float): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -89,7 +91,8 @@ object libTypescriptFabricNativeSvgRenderableModuleMod extends Shortcut {
       __obj.asInstanceOf[Rect]
     }
     
-    extension [Self <: Rect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Float): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

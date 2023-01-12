@@ -19,7 +19,8 @@ object Touch {
     __obj.asInstanceOf[Touch]
   }
   
-  extension [Self <: Touch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Touch] (val x: Self) extends AnyVal {
     
     inline def setInit(value: js.Object => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     

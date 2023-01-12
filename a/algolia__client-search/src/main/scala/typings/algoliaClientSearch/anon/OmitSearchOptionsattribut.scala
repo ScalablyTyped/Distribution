@@ -153,7 +153,8 @@ object OmitSearchOptionsattribut {
     __obj.asInstanceOf[OmitSearchOptionsattribut]
   }
   
-  extension [Self <: OmitSearchOptionsattribut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitSearchOptionsattribut] (val x: Self) extends AnyVal {
     
     inline def setAdvancedSyntax(value: Boolean): Self = StObject.set(x, "advancedSyntax", value.asInstanceOf[js.Any])
     

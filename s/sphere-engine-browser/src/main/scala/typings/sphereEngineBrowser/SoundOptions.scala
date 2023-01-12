@@ -32,7 +32,8 @@ object SoundOptions {
     __obj.asInstanceOf[SoundOptions]
   }
   
-  extension [Self <: SoundOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoundOptions] (val x: Self) extends AnyVal {
     
     inline def setPan(value: Double): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
     

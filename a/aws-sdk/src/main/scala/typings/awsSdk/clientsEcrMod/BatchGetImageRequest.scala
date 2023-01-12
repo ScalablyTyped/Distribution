@@ -33,7 +33,8 @@ object BatchGetImageRequest {
     __obj.asInstanceOf[BatchGetImageRequest]
   }
   
-  extension [Self <: BatchGetImageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetImageRequest] (val x: Self) extends AnyVal {
     
     inline def setAcceptedMediaTypes(value: MediaTypeList): Self = StObject.set(x, "acceptedMediaTypes", value.asInstanceOf[js.Any])
     

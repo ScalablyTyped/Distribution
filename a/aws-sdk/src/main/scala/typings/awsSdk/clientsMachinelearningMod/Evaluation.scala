@@ -74,7 +74,8 @@ object Evaluation {
     __obj.asInstanceOf[Evaluation]
   }
   
-  extension [Self <: Evaluation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Evaluation] (val x: Self) extends AnyVal {
     
     inline def setComputeTime(value: LongType): Self = StObject.set(x, "ComputeTime", value.asInstanceOf[js.Any])
     

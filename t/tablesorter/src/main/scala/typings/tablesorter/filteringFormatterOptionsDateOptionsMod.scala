@@ -20,7 +20,8 @@ object filteringFormatterOptionsDateOptionsMod {
       __obj.asInstanceOf[DateOptions]
     }
     
-    extension [Self <: DateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateOptions] (val x: Self) extends AnyVal {
       
       inline def setEndOfDay(value: Boolean): Self = StObject.set(x, "endOfDay", value.asInstanceOf[js.Any])
       

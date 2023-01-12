@@ -17,7 +17,8 @@ object HtmlOptions {
     __obj.asInstanceOf[HtmlOptions]
   }
   
-  extension [Self <: HtmlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HtmlOptions] (val x: Self) extends AnyVal {
     
     inline def setCleanup(value: Boolean): Self = StObject.set(x, "cleanup", value.asInstanceOf[js.Any])
     

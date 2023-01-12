@@ -15,7 +15,8 @@ object PasswordChangeTicketResponse {
     __obj.asInstanceOf[PasswordChangeTicketResponse]
   }
   
-  extension [Self <: PasswordChangeTicketResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordChangeTicketResponse] (val x: Self) extends AnyVal {
     
     inline def setTicket(value: String): Self = StObject.set(x, "ticket", value.asInstanceOf[js.Any])
   }

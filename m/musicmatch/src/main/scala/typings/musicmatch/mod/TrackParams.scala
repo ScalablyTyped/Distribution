@@ -17,7 +17,8 @@ object TrackParams {
     __obj.asInstanceOf[TrackParams]
   }
   
-  extension [Self <: TrackParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackParams] (val x: Self) extends AnyVal {
     
     inline def setTrack_id(value: Double): Self = StObject.set(x, "track_id", value.asInstanceOf[js.Any])
     

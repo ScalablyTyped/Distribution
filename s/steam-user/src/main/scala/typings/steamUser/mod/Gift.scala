@@ -46,7 +46,8 @@ object Gift {
     __obj.asInstanceOf[Gift]
   }
   
-  extension [Self <: Gift](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gift] (val x: Self) extends AnyVal {
     
     inline def setGid(value: String): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
     

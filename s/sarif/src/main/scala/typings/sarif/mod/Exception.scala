@@ -39,7 +39,8 @@ object Exception {
     __obj.asInstanceOf[Exception]
   }
   
-  extension [Self <: Exception](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Exception] (val x: Self) extends AnyVal {
     
     inline def setInnerExceptions(value: js.Array[Exception]): Self = StObject.set(x, "innerExceptions", value.asInstanceOf[js.Any])
     

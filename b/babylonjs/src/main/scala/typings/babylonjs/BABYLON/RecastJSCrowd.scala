@@ -97,7 +97,8 @@ object RecastJSCrowd {
     __obj.asInstanceOf[RecastJSCrowd]
   }
   
-  extension [Self <: RecastJSCrowd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecastJSCrowd] (val x: Self) extends AnyVal {
     
     inline def setAgents(value: js.Array[Double]): Self = StObject.set(x, "agents", value.asInstanceOf[js.Any])
     

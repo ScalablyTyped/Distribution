@@ -23,7 +23,8 @@ object UnshareApplicationRequest {
     __obj.asInstanceOf[UnshareApplicationRequest]
   }
   
-  extension [Self <: UnshareApplicationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnshareApplicationRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

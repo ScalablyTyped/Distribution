@@ -23,7 +23,8 @@ object ResourceSpecification {
     __obj.asInstanceOf[ResourceSpecification]
   }
   
-  extension [Self <: ResourceSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceSpecification] (val x: Self) extends AnyVal {
     
     inline def setReservedBitrate(value: integer): Self = StObject.set(x, "ReservedBitrate", value.asInstanceOf[js.Any])
     

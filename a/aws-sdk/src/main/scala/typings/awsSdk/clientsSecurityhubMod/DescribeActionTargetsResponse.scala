@@ -23,7 +23,8 @@ object DescribeActionTargetsResponse {
     __obj.asInstanceOf[DescribeActionTargetsResponse]
   }
   
-  extension [Self <: DescribeActionTargetsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeActionTargetsResponse] (val x: Self) extends AnyVal {
     
     inline def setActionTargets(value: ActionTargetList): Self = StObject.set(x, "ActionTargets", value.asInstanceOf[js.Any])
     

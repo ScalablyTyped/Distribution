@@ -45,7 +45,8 @@ object RecommendationTrigger {
     __obj.asInstanceOf[RecommendationTrigger]
   }
   
-  extension [Self <: RecommendationTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendationTrigger] (val x: Self) extends AnyVal {
     
     inline def setData(value: RecommendationTriggerData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

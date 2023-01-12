@@ -38,7 +38,8 @@ object Occurrences {
     __obj.asInstanceOf[Occurrences]
   }
   
-  extension [Self <: Occurrences](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Occurrences] (val x: Self) extends AnyVal {
     
     inline def setCells(value: Cells): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     

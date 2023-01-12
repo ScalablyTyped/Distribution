@@ -32,7 +32,8 @@ object IsAvailable {
     __obj.asInstanceOf[IsAvailable]
   }
   
-  extension [Self <: IsAvailable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsAvailable] (val x: Self) extends AnyVal {
     
     inline def setIsAvailable(value: Boolean): Self = StObject.set(x, "isAvailable", value.asInstanceOf[js.Any])
     

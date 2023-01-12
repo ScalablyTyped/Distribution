@@ -25,7 +25,8 @@ object EntityErrors {
     __obj.asInstanceOf[EntityErrors]
   }
   
-  extension [Self <: EntityErrors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityErrors] (val x: Self) extends AnyVal {
     
     inline def setEntityErrors(value: js.Array[EntityError]): Self = StObject.set(x, "entityErrors", value.asInstanceOf[js.Any])
     

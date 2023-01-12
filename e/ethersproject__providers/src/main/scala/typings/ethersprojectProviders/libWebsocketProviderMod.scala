@@ -61,7 +61,8 @@ object libWebsocketProviderMod {
       __obj.asInstanceOf[InflightRequest]
     }
     
-    extension [Self <: InflightRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InflightRequest] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: (js.Error, Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
@@ -82,7 +83,8 @@ object libWebsocketProviderMod {
       __obj.asInstanceOf[Subscription]
     }
     
-    extension [Self <: Subscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
       
       inline def setProcessFunc(value: Any => Unit): Self = StObject.set(x, "processFunc", js.Any.fromFunction1(value))
       

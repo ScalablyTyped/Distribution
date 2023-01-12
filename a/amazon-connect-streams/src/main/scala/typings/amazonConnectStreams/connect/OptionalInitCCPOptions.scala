@@ -51,7 +51,8 @@ object OptionalInitCCPOptions {
     __obj.asInstanceOf[OptionalInitCCPOptions]
   }
   
-  extension [Self <: OptionalInitCCPOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionalInitCCPOptions] (val x: Self) extends AnyVal {
     
     inline def setChat(value: ChatOptions): Self = StObject.set(x, "chat", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object InvitationsToUnshare {
     __obj.asInstanceOf[InvitationsToUnshare]
   }
   
-  extension [Self <: InvitationsToUnshare](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvitationsToUnshare] (val x: Self) extends AnyVal {
     
     inline def setInvitationsToUnshare(value: js.Array[typings.evernote.mod.Types.IdentityID]): Self = StObject.set(x, "invitationsToUnshare", value.asInstanceOf[js.Any])
     

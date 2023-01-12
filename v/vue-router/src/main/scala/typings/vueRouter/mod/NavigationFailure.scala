@@ -41,7 +41,8 @@ object NavigationFailure {
     __obj.asInstanceOf[NavigationFailure]
   }
   
-  extension [Self <: NavigationFailure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationFailure] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: RouteLocationNormalized): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

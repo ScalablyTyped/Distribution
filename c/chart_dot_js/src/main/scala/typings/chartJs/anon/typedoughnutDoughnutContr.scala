@@ -160,7 +160,8 @@ object typedoughnutDoughnutContr {
     __obj.asInstanceOf[typedoughnutDoughnutContr]
   }
   
-  extension [Self <: typedoughnutDoughnutContr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typedoughnutDoughnutContr] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: `false` | AnimationSpecdoughnutonPr): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

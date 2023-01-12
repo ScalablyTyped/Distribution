@@ -15,7 +15,8 @@ object interaction {
     __obj.asInstanceOf[interaction]
   }
   
-  extension [Self <: interaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: interaction] (val x: Self) extends AnyVal {
     
     inline def setRedrawOverlayInterval(value: Double): Self = StObject.set(x, "redrawOverlayInterval", value.asInstanceOf[js.Any])
     

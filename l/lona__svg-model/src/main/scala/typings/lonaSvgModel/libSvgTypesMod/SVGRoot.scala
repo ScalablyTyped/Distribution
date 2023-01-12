@@ -26,7 +26,8 @@ object SVGRoot {
     __obj.asInstanceOf[SVGRoot]
   }
   
-  extension [Self <: SVGRoot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGRoot] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: SVGRootAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

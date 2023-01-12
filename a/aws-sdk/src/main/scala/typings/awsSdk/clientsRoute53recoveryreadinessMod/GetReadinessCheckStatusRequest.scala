@@ -28,7 +28,8 @@ object GetReadinessCheckStatusRequest {
     __obj.asInstanceOf[GetReadinessCheckStatusRequest]
   }
   
-  extension [Self <: GetReadinessCheckStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetReadinessCheckStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

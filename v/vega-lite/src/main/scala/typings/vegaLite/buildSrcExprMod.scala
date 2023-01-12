@@ -30,7 +30,8 @@ object buildSrcExprMod {
       __obj.asInstanceOf[ExprRef]
     }
     
-    extension [Self <: ExprRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExprRef] (val x: Self) extends AnyVal {
       
       inline def setExpr(value: String): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     }

@@ -28,7 +28,8 @@ object StopTaskRequest {
     __obj.asInstanceOf[StopTaskRequest]
   }
   
-  extension [Self <: StopTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     

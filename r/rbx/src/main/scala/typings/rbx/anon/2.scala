@@ -18,7 +18,8 @@ object `2` {
     __obj.asInstanceOf[`2`]
   }
   
-  extension [Self <: `2`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `2`] (val x: Self) extends AnyVal {
     
     inline def setValue(
       value: typings.rbx.rbxInts.`1` | typings.rbx.rbxInts.`2` | typings.rbx.rbxInts.`3` | typings.rbx.rbxInts.`4` | typings.rbx.rbxInts.`5` | typings.rbx.rbxInts.`6` | `7`

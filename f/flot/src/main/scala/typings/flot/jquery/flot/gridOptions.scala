@@ -56,7 +56,8 @@ object gridOptions {
     __obj.asInstanceOf[gridOptions]
   }
   
-  extension [Self <: gridOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: gridOptions] (val x: Self) extends AnyVal {
     
     inline def setAboveData(value: Boolean): Self = StObject.set(x, "aboveData", value.asInstanceOf[js.Any])
     

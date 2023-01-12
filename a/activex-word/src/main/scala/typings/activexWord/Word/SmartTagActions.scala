@@ -37,7 +37,8 @@ object SmartTagActions {
     __obj.asInstanceOf[SmartTagActions]
   }
   
-  extension [Self <: SmartTagActions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartTagActions] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

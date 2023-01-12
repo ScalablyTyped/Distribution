@@ -17,7 +17,8 @@ object DefaultDirectoryLoginOptions {
     __obj.asInstanceOf[DefaultDirectoryLoginOptions]
   }
   
-  extension [Self <: DefaultDirectoryLoginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultDirectoryLoginOptions] (val x: Self) extends AnyVal {
     
     inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     

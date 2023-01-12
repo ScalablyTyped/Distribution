@@ -20,7 +20,8 @@ object PressHookProps {
     __obj.asInstanceOf[PressHookProps]
   }
   
-  extension [Self <: PressHookProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PressHookProps] (val x: Self) extends AnyVal {
     
     inline def setRef(value: RefObject[Element]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     

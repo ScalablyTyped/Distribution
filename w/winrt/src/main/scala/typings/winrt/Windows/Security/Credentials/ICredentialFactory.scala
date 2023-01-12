@@ -15,7 +15,8 @@ object ICredentialFactory {
     __obj.asInstanceOf[ICredentialFactory]
   }
   
-  extension [Self <: ICredentialFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICredentialFactory] (val x: Self) extends AnyVal {
     
     inline def setCreatePasswordCredential(value: (String, String, String) => PasswordCredential): Self = StObject.set(x, "createPasswordCredential", js.Any.fromFunction3(value))
   }

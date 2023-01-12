@@ -28,7 +28,8 @@ object GooglePrivacyDlpV2PubSubNotification {
     __obj.asInstanceOf[GooglePrivacyDlpV2PubSubNotification]
   }
   
-  extension [Self <: GooglePrivacyDlpV2PubSubNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2PubSubNotification] (val x: Self) extends AnyVal {
     
     inline def setDetailOfMessage(value: String): Self = StObject.set(x, "detailOfMessage", value.asInstanceOf[js.Any])
     

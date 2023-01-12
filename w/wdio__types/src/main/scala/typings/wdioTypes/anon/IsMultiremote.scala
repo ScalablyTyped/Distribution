@@ -17,7 +17,8 @@ object IsMultiremote {
     __obj.asInstanceOf[IsMultiremote]
   }
   
-  extension [Self <: IsMultiremote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsMultiremote] (val x: Self) extends AnyVal {
     
     inline def setIsMultiremote(value: Boolean): Self = StObject.set(x, "isMultiremote", value.asInstanceOf[js.Any])
     

@@ -103,7 +103,8 @@ object mod {
       __obj.asInstanceOf[FileReader]
     }
     
-    extension [Self <: FileReader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileReader] (val x: Self) extends AnyVal {
       
       inline def setOpenFile(value: (Any, Double) => js.Promise[FileSource]): Self = StObject.set(x, "openFile", js.Any.fromFunction2(value))
     }
@@ -124,7 +125,8 @@ object mod {
       __obj.asInstanceOf[FileSource]
     }
     
-    extension [Self <: FileSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSource] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -169,7 +171,8 @@ object mod {
       __obj.asInstanceOf[HttpRequest]
     }
     
-    extension [Self <: HttpRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpRequest] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: () => js.Promise[Unit]): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
@@ -212,7 +215,8 @@ object mod {
       __obj.asInstanceOf[HttpResponse]
     }
     
-    extension [Self <: HttpResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpResponse] (val x: Self) extends AnyVal {
       
       inline def setGetBody(value: () => String): Self = StObject.set(x, "getBody", js.Any.fromFunction0(value))
       
@@ -237,7 +241,8 @@ object mod {
       __obj.asInstanceOf[HttpStack]
     }
     
-    extension [Self <: HttpStack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpStack] (val x: Self) extends AnyVal {
       
       inline def setCreateRequest(value: (String, String) => HttpRequest): Self = StObject.set(x, "createRequest", js.Any.fromFunction2(value))
       
@@ -260,7 +265,8 @@ object mod {
       __obj.asInstanceOf[PreviousUpload]
     }
     
-    extension [Self <: PreviousUpload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviousUpload] (val x: Self) extends AnyVal {
       
       inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
       
@@ -286,7 +292,8 @@ object mod {
       __obj.asInstanceOf[SliceResult]
     }
     
-    extension [Self <: SliceResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliceResult] (val x: Self) extends AnyVal {
       
       inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
@@ -366,7 +373,8 @@ object mod {
       __obj.asInstanceOf[UploadOptions]
     }
     
-    extension [Self <: UploadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadOptions] (val x: Self) extends AnyVal {
       
       inline def setAddRequestId(value: Boolean): Self = StObject.set(x, "addRequestId", value.asInstanceOf[js.Any])
       
@@ -519,7 +527,8 @@ object mod {
       __obj.asInstanceOf[UrlStorage]
     }
     
-    extension [Self <: UrlStorage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlStorage] (val x: Self) extends AnyVal {
       
       inline def setAddUpload(value: (String, PreviousUpload) => js.Promise[String]): Self = StObject.set(x, "addUpload", js.Any.fromFunction2(value))
       

@@ -28,7 +28,8 @@ object UpdateMapResponse {
     __obj.asInstanceOf[UpdateMapResponse]
   }
   
-  extension [Self <: UpdateMapResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateMapResponse] (val x: Self) extends AnyVal {
     
     inline def setMapArn(value: GeoArn): Self = StObject.set(x, "MapArn", value.asInstanceOf[js.Any])
     

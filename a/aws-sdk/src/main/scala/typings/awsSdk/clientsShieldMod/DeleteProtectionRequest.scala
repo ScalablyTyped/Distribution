@@ -18,7 +18,8 @@ object DeleteProtectionRequest {
     __obj.asInstanceOf[DeleteProtectionRequest]
   }
   
-  extension [Self <: DeleteProtectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteProtectionRequest] (val x: Self) extends AnyVal {
     
     inline def setProtectionId(value: ProtectionId): Self = StObject.set(x, "ProtectionId", value.asInstanceOf[js.Any])
   }

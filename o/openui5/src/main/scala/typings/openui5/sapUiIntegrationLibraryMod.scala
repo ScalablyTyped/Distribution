@@ -258,7 +258,8 @@ object sapUiIntegrationLibraryMod {
       __obj.asInstanceOf[CardMenuAction]
     }
     
-    extension [Self <: CardMenuAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardMenuAction] (val x: Self) extends AnyVal {
       
       inline def setAction(value: js.Function): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

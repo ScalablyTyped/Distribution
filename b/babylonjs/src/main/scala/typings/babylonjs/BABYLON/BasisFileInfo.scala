@@ -27,7 +27,8 @@ object BasisFileInfo {
     __obj.asInstanceOf[BasisFileInfo]
   }
   
-  extension [Self <: BasisFileInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasisFileInfo] (val x: Self) extends AnyVal {
     
     inline def setHasAlpha(value: Boolean): Self = StObject.set(x, "hasAlpha", value.asInstanceOf[js.Any])
     

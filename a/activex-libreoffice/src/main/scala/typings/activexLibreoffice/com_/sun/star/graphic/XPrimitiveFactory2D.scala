@@ -49,7 +49,8 @@ object XPrimitiveFactory2D {
     __obj.asInstanceOf[XPrimitiveFactory2D]
   }
   
-  extension [Self <: XPrimitiveFactory2D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPrimitiveFactory2D] (val x: Self) extends AnyVal {
     
     inline def setCreatePrimitivesFromXDrawPage(value: (XDrawPage, SeqEquiv[PropertyValue]) => SafeArray[XPrimitive2D]): Self = StObject.set(x, "createPrimitivesFromXDrawPage", js.Any.fromFunction2(value))
     

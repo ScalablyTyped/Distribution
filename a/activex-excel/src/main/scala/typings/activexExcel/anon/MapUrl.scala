@@ -22,7 +22,8 @@ object MapUrl {
     __obj.asInstanceOf[MapUrl]
   }
   
-  extension [Self <: MapUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapUrl] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     

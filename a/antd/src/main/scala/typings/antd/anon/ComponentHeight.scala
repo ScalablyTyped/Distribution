@@ -17,7 +17,8 @@ object ComponentHeight {
     __obj.asInstanceOf[ComponentHeight]
   }
   
-  extension [Self <: ComponentHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentHeight] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: Height): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

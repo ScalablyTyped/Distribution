@@ -17,7 +17,8 @@ object WktGeoBounds {
     __obj.asInstanceOf[WktGeoBounds]
   }
   
-  extension [Self <: WktGeoBounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WktGeoBounds] (val x: Self) extends AnyVal {
     
     inline def setWkt(value: String): Self = StObject.set(x, "wkt", value.asInstanceOf[js.Any])
   }

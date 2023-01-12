@@ -30,7 +30,8 @@ object IAsyncInfo {
     __obj.asInstanceOf[IAsyncInfo]
   }
   
-  extension [Self <: IAsyncInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAsyncInfo] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     

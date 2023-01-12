@@ -20,7 +20,8 @@ object TypeofTreeView {
     __obj.asInstanceOf[TypeofTreeView]
   }
   
-  extension [Self <: TypeofTreeView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTreeView] (val x: Self) extends AnyVal {
     
     inline def setFn(value: TreeView): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object KeyFrame {
     __obj.asInstanceOf[KeyFrame]
   }
   
-  extension [Self <: KeyFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyFrame] (val x: Self) extends AnyVal {
     
     inline def setDeclarations(value: js.Array[Declaration | Comment]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
     

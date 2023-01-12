@@ -20,7 +20,8 @@ object SESReceiptStatus {
     __obj.asInstanceOf[SESReceiptStatus]
   }
   
-  extension [Self <: SESReceiptStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SESReceiptStatus] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: PASS | FAIL | GRAY | PROCESSING_FAILED | DISABLED): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

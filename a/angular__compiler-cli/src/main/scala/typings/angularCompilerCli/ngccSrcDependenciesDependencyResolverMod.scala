@@ -77,7 +77,8 @@ object ngccSrcDependenciesDependencyResolverMod {
       __obj.asInstanceOf[DependencyDiagnostics]
     }
     
-    extension [Self <: DependencyDiagnostics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependencyDiagnostics] (val x: Self) extends AnyVal {
       
       inline def setIgnoredDependencies(value: js.Array[IgnoredDependency]): Self = StObject.set(x, "ignoredDependencies", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object ngccSrcDependenciesDependencyResolverMod {
       __obj.asInstanceOf[IgnoredDependency]
     }
     
-    extension [Self <: IgnoredDependency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IgnoredDependency] (val x: Self) extends AnyVal {
       
       inline def setDependencyPath(value: String): Self = StObject.set(x, "dependencyPath", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object ngccSrcDependenciesDependencyResolverMod {
       __obj.asInstanceOf[InvalidEntryPoint]
     }
     
-    extension [Self <: InvalidEntryPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidEntryPoint] (val x: Self) extends AnyVal {
       
       inline def setEntryPoint(value: EntryPoint): Self = StObject.set(x, "entryPoint", value.asInstanceOf[js.Any])
       
@@ -155,7 +158,8 @@ object ngccSrcDependenciesDependencyResolverMod {
       __obj.asInstanceOf[SortedEntryPointsInfo]
     }
     
-    extension [Self <: SortedEntryPointsInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortedEntryPointsInfo] (val x: Self) extends AnyVal {
       
       inline def setEntryPoints(value: PartiallyOrderedEntryPoints): Self = StObject.set(x, "entryPoints", value.asInstanceOf[js.Any])
       

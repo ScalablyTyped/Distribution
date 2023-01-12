@@ -29,7 +29,8 @@ object AuthenticationRequiredErrorOptions {
     __obj.asInstanceOf[AuthenticationRequiredErrorOptions]
   }
   
-  extension [Self <: AuthenticationRequiredErrorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticationRequiredErrorOptions] (val x: Self) extends AnyVal {
     
     inline def setGetTokenOptions(value: GetTokenOptions): Self = StObject.set(x, "getTokenOptions", value.asInstanceOf[js.Any])
     

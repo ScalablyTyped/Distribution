@@ -23,7 +23,8 @@ object DataSourceParameterMapDataFilter {
     __obj.asInstanceOf[DataSourceParameterMapDataFilter]
   }
   
-  extension [Self <: DataSourceParameterMapDataFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceParameterMapDataFilter] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

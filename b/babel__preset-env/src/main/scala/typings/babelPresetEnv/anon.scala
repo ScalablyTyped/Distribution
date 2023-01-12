@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Browsers]
     }
     
-    extension [Self <: Browsers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Browsers] (val x: Self) extends AnyVal {
       
       inline def setBrowsers(value: String | js.Array[String]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Esmodules]
     }
     
-    extension [Self <: Esmodules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Esmodules] (val x: Self) extends AnyVal {
       
       inline def setEsmodules(value: `true`): Self = StObject.set(x, "esmodules", value.asInstanceOf[js.Any])
     }
@@ -65,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setNode(value: String | current | `true`): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
@@ -86,7 +89,8 @@ object anon {
       __obj.asInstanceOf[Proposals]
     }
     
-    extension [Self <: Proposals](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Proposals] (val x: Self) extends AnyVal {
       
       inline def setProposals(value: Boolean): Self = StObject.set(x, "proposals", value.asInstanceOf[js.Any])
       
@@ -107,7 +111,8 @@ object anon {
       __obj.asInstanceOf[Safari]
     }
     
-    extension [Self <: Safari](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Safari] (val x: Self) extends AnyVal {
       
       inline def setSafari(value: String | tp): Self = StObject.set(x, "safari", value.asInstanceOf[js.Any])
     }
@@ -189,7 +194,8 @@ object anon {
       __obj.asInstanceOf[keyinTargetstring]
     }
     
-    extension [Self <: keyinTargetstring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: keyinTargetstring] (val x: Self) extends AnyVal {
       
       inline def setAnd_chr(value: String): Self = StObject.set(x, "and_chr", value.asInstanceOf[js.Any])
       

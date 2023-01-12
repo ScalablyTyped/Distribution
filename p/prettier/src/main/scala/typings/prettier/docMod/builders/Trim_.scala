@@ -18,7 +18,8 @@ object Trim_ {
     __obj.asInstanceOf[Trim_]
   }
   
-  extension [Self <: Trim_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Trim_] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.prettier.prettierStrings.trim): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

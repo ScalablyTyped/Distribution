@@ -29,7 +29,8 @@ object DefaultLanguageTag {
     __obj.asInstanceOf[DefaultLanguageTag]
   }
   
-  extension [Self <: DefaultLanguageTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultLanguageTag] (val x: Self) extends AnyVal {
     
     inline def setDefaultLanguageTag(value: String): Self = StObject.set(x, "defaultLanguageTag", value.asInstanceOf[js.Any])
     

@@ -75,7 +75,8 @@ object mod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setMatch(value: Test): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     }
@@ -94,7 +95,8 @@ object mod {
       __obj.asInstanceOf[InitialContext]
     }
     
-    extension [Self <: InitialContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitialContext] (val x: Self) extends AnyVal {
       
       inline def setWebpack(value: Any): Self = StObject.set(x, "webpack", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object mod {
       __obj.asInstanceOf[MatchOptions]
     }
     
-    extension [Self <: MatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchOptions] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: js.RegExp): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
@@ -146,7 +149,8 @@ object mod {
       __obj.asInstanceOf[Util]
     }
     
-    extension [Self <: Util](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Util] (val x: Self) extends AnyVal {
       
       inline def setAddLoader(value: RuleSetRule => js.Function0[Configuration]): Self = StObject.set(x, "addLoader", js.Any.fromFunction1(value))
       

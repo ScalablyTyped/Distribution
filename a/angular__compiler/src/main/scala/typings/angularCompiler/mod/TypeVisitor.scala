@@ -26,7 +26,8 @@ object TypeVisitor {
     __obj.asInstanceOf[TypeVisitor]
   }
   
-  extension [Self <: TypeVisitor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeVisitor] (val x: Self) extends AnyVal {
     
     inline def setVisitArrayType(value: (ArrayType, Any) => Any): Self = StObject.set(x, "visitArrayType", js.Any.fromFunction2(value))
     

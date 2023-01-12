@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Anchor]
     }
     
-    extension [Self <: Anchor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Anchor] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: Double): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }

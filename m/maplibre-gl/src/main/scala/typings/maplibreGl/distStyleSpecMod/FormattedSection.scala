@@ -23,7 +23,8 @@ object FormattedSection {
     __obj.asInstanceOf[FormattedSection]
   }
   
-  extension [Self <: FormattedSection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormattedSection] (val x: Self) extends AnyVal {
     
     inline def setFontStack(value: String): Self = StObject.set(x, "fontStack", value.asInstanceOf[js.Any])
     

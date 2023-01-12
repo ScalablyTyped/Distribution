@@ -20,7 +20,8 @@ object SectionTitle {
     __obj.asInstanceOf[SectionTitle]
   }
   
-  extension [Self <: SectionTitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SectionTitle] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

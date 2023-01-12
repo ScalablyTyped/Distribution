@@ -48,7 +48,8 @@ object PutAnomalyDetectorInput {
     __obj.asInstanceOf[PutAnomalyDetectorInput]
   }
   
-  extension [Self <: PutAnomalyDetectorInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutAnomalyDetectorInput] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: AnomalyDetectorConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     

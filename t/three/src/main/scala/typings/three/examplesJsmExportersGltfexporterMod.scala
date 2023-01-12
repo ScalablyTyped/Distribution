@@ -161,7 +161,8 @@ object examplesJsmExportersGltfexporterMod {
       __obj.asInstanceOf[GLTFExporterOptions]
     }
     
-    extension [Self <: GLTFExporterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GLTFExporterOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimations(value: js.Array[AnimationClip]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
       
@@ -237,7 +238,8 @@ object examplesJsmExportersGltfexporterMod {
       __obj.asInstanceOf[GLTFExporterPlugin]
     }
     
-    extension [Self <: GLTFExporterPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GLTFExporterPlugin] (val x: Self) extends AnyVal {
       
       inline def setAfterParse(value: /* input */ Object3D[Event] | js.Array[Object3D[Event]] => Unit): Self = StObject.set(x, "afterParse", js.Any.fromFunction1(value))
       

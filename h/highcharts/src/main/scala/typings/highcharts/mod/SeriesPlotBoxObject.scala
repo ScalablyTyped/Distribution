@@ -21,7 +21,8 @@ object SeriesPlotBoxObject {
     __obj.asInstanceOf[SeriesPlotBoxObject]
   }
   
-  extension [Self <: SeriesPlotBoxObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesPlotBoxObject] (val x: Self) extends AnyVal {
     
     inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     

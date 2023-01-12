@@ -113,7 +113,8 @@ object Eac3Settings {
     __obj.asInstanceOf[Eac3Settings]
   }
   
-  extension [Self <: Eac3Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Eac3Settings] (val x: Self) extends AnyVal {
     
     inline def setAttenuationControl(value: Eac3AttenuationControl): Self = StObject.set(x, "AttenuationControl", value.asInstanceOf[js.Any])
     

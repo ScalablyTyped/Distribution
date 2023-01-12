@@ -18,7 +18,8 @@ object DeleteBillingGroupOutput {
     __obj.asInstanceOf[DeleteBillingGroupOutput]
   }
   
-  extension [Self <: DeleteBillingGroupOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteBillingGroupOutput] (val x: Self) extends AnyVal {
     
     inline def setArn(value: BillingGroupArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

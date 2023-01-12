@@ -205,7 +205,8 @@ object CodeSystem {
     __obj.asInstanceOf[CodeSystem]
   }
   
-  extension [Self <: CodeSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeSystem] (val x: Self) extends AnyVal {
     
     inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     

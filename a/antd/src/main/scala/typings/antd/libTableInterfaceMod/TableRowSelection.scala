@@ -90,7 +90,8 @@ object TableRowSelection {
     __obj.asInstanceOf[TableRowSelection[T]]
   }
   
-  extension [Self <: TableRowSelection[?], T](x: Self & TableRowSelection[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableRowSelection[?], T] (val x: Self & TableRowSelection[T]) extends AnyVal {
     
     inline def setCheckStrictly(value: Boolean): Self = StObject.set(x, "checkStrictly", value.asInstanceOf[js.Any])
     

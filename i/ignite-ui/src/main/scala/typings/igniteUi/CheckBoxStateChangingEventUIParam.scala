@@ -58,7 +58,8 @@ object CheckBoxStateChangingEventUIParam {
     __obj.asInstanceOf[CheckBoxStateChangingEventUIParam]
   }
   
-  extension [Self <: CheckBoxStateChangingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckBoxStateChangingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setCurrentState(value: String): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
     

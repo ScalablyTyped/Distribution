@@ -15,7 +15,8 @@ object SnapDistance {
     __obj.asInstanceOf[SnapDistance]
   }
   
-  extension [Self <: SnapDistance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapDistance] (val x: Self) extends AnyVal {
     
     inline def setSnapDistance(value: Double): Self = StObject.set(x, "snapDistance", value.asInstanceOf[js.Any])
   }

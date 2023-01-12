@@ -22,7 +22,8 @@ object AlternativeSecurityId {
     __obj.asInstanceOf[AlternativeSecurityId]
   }
   
-  extension [Self <: AlternativeSecurityId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlternativeSecurityId] (val x: Self) extends AnyVal {
     
     inline def setIdentityProvider(value: NullableOption[String]): Self = StObject.set(x, "identityProvider", value.asInstanceOf[js.Any])
     

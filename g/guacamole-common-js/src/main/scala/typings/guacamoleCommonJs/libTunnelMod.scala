@@ -133,7 +133,8 @@ object libTunnelMod {
         __obj.asInstanceOf[TunnelState]
       }
       
-      extension [Self <: TunnelState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TunnelState] (val x: Self) extends AnyVal {
         
         inline def setCLOSED(value: `2`): Self = StObject.set(x, "CLOSED", value.asInstanceOf[js.Any])
         

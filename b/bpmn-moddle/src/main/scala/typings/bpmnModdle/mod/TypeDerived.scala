@@ -19,7 +19,8 @@ object TypeDerived {
     __obj.asInstanceOf[TypeDerived]
   }
   
-  extension [Self <: TypeDerived](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeDerived] (val x: Self) extends AnyVal {
     
     inline def set$parent(value: TypeDerived): Self = StObject.set(x, "$parent", value.asInstanceOf[js.Any])
     

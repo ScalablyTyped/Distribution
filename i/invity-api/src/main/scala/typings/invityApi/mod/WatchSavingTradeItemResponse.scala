@@ -17,7 +17,8 @@ object WatchSavingTradeItemResponse {
     __obj.asInstanceOf[WatchSavingTradeItemResponse]
   }
   
-  extension [Self <: WatchSavingTradeItemResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchSavingTradeItemResponse] (val x: Self) extends AnyVal {
     
     inline def setSavingsTradeItem(value: SavingsTradeItem): Self = StObject.set(x, "savingsTradeItem", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object NgExtensionDatafileShimNg {
     __obj.asInstanceOf[NgExtensionDatafileShimNg]
   }
   
-  extension [Self <: NgExtensionDatafileShimNg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NgExtensionDatafileShimNg] (val x: Self) extends AnyVal {
     
     inline def setFileShim(value: NgFileShimData): Self = StObject.set(x, "fileShim", value.asInstanceOf[js.Any])
     

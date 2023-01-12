@@ -18,7 +18,8 @@ object postProxy {
     __obj.asInstanceOf[postProxy]
   }
   
-  extension [Self <: postProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: postProxy] (val x: Self) extends AnyVal {
     
     inline def set$proxy(value: Boolean): Self = StObject.set(x, "$proxy", value.asInstanceOf[js.Any])
     

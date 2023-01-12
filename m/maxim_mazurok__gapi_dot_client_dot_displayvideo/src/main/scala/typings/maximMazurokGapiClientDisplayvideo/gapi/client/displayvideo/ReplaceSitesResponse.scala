@@ -16,7 +16,8 @@ object ReplaceSitesResponse {
     __obj.asInstanceOf[ReplaceSitesResponse]
   }
   
-  extension [Self <: ReplaceSitesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceSitesResponse] (val x: Self) extends AnyVal {
     
     inline def setSites(value: js.Array[Site]): Self = StObject.set(x, "sites", value.asInstanceOf[js.Any])
     

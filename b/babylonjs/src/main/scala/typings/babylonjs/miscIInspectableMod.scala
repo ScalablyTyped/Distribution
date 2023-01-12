@@ -177,7 +177,8 @@ object miscIInspectableMod {
       __obj.asInstanceOf[IInspectable]
     }
     
-    extension [Self <: IInspectable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInspectable] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
@@ -241,7 +242,8 @@ object miscIInspectableMod {
       __obj.asInstanceOf[IInspectableOptions]
     }
     
-    extension [Self <: IInspectableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInspectableOptions] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

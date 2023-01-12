@@ -31,7 +31,8 @@ object Path {
     __obj.asInstanceOf[Path]
   }
   
-  extension [Self <: Path](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
     
     inline def setHandler(value: (Request[ReqRefDefaults], ResponseToolkit[ReqRefDefaults]) => js.Promise[ResponseObject]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
     

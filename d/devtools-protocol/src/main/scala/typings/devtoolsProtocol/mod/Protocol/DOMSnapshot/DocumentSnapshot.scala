@@ -100,7 +100,8 @@ object DocumentSnapshot {
     __obj.asInstanceOf[DocumentSnapshot]
   }
   
-  extension [Self <: DocumentSnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentSnapshot] (val x: Self) extends AnyVal {
     
     inline def setBaseURL(value: StringIndex): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
     

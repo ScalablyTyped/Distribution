@@ -18,7 +18,8 @@ object CreateExperienceResponse {
     __obj.asInstanceOf[CreateExperienceResponse]
   }
   
-  extension [Self <: CreateExperienceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateExperienceResponse] (val x: Self) extends AnyVal {
     
     inline def setId(value: ExperienceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }

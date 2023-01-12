@@ -17,7 +17,8 @@ object ImageEditorImageLoadedEvent {
     __obj.asInstanceOf[ImageEditorImageLoadedEvent]
   }
   
-  extension [Self <: ImageEditorImageLoadedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageEditorImageLoadedEvent] (val x: Self) extends AnyVal {
     
     inline def setImage(value: Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

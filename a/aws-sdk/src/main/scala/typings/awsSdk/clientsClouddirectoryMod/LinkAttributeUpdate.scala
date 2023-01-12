@@ -23,7 +23,8 @@ object LinkAttributeUpdate {
     __obj.asInstanceOf[LinkAttributeUpdate]
   }
   
-  extension [Self <: LinkAttributeUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkAttributeUpdate] (val x: Self) extends AnyVal {
     
     inline def setAttributeAction(value: LinkAttributeAction): Self = StObject.set(x, "AttributeAction", value.asInstanceOf[js.Any])
     

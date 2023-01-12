@@ -43,7 +43,8 @@ object LegacyConfig {
     __obj.asInstanceOf[LegacyConfig]
   }
   
-  extension [Self <: LegacyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegacyConfig] (val x: Self) extends AnyVal {
     
     inline def setDevtools(value: Boolean): Self = StObject.set(x, "devtools", value.asInstanceOf[js.Any])
     

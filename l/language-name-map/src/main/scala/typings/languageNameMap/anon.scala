@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Dir]
     }
     
-    extension [Self <: Dir](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dir] (val x: Self) extends AnyVal {
       
       inline def setDir(value: ltr | rtl): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setDir(value: `0` | `1`): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       

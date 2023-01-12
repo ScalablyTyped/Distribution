@@ -23,7 +23,8 @@ object SankeyState {
     __obj.asInstanceOf[SankeyState]
   }
   
-  extension [Self <: SankeyState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SankeyState] (val x: Self) extends AnyVal {
     
     inline def setActiveElement(value: Any): Self = StObject.set(x, "activeElement", value.asInstanceOf[js.Any])
     

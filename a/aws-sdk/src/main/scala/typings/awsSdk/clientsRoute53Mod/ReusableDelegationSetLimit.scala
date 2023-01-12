@@ -23,7 +23,8 @@ object ReusableDelegationSetLimit {
     __obj.asInstanceOf[ReusableDelegationSetLimit]
   }
   
-  extension [Self <: ReusableDelegationSetLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReusableDelegationSetLimit] (val x: Self) extends AnyVal {
     
     inline def setType(value: ReusableDelegationSetLimitType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

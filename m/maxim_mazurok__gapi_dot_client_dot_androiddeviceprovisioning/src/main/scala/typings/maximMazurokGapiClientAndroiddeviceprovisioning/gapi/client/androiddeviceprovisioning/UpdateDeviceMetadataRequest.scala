@@ -16,7 +16,8 @@ object UpdateDeviceMetadataRequest {
     __obj.asInstanceOf[UpdateDeviceMetadataRequest]
   }
   
-  extension [Self <: UpdateDeviceMetadataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDeviceMetadataRequest] (val x: Self) extends AnyVal {
     
     inline def setDeviceMetadata(value: DeviceMetadata): Self = StObject.set(x, "deviceMetadata", value.asInstanceOf[js.Any])
     

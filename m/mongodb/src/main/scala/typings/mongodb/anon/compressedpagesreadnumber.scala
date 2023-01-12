@@ -48,7 +48,8 @@ object compressedpagesreadnumber {
     __obj.asInstanceOf[compressedpagesreadnumber]
   }
   
-  extension [Self <: compressedpagesreadnumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: compressedpagesreadnumber] (val x: Self) extends AnyVal {
     
     inline def `setCompressed pages read`(value: Double): Self = StObject.set(x, "compressed pages read", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object outProvidersAsyncMod {
       __obj.asInstanceOf[AsyncProvider]
     }
     
-    extension [Self <: AsyncProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncProvider] (val x: Self) extends AnyVal {
       
       inline def setRead(value: AsyncCallback => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       

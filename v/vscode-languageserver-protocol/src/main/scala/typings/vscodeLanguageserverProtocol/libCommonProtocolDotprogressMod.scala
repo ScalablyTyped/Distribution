@@ -111,7 +111,8 @@ object libCommonProtocolDotprogressMod {
       __obj.asInstanceOf[WorkDoneProgressBegin]
     }
     
-    extension [Self <: WorkDoneProgressBegin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkDoneProgressBegin] (val x: Self) extends AnyVal {
       
       inline def setCancellable(value: Boolean): Self = StObject.set(x, "cancellable", value.asInstanceOf[js.Any])
       
@@ -145,7 +146,8 @@ object libCommonProtocolDotprogressMod {
       __obj.asInstanceOf[WorkDoneProgressCancelParams]
     }
     
-    extension [Self <: WorkDoneProgressCancelParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkDoneProgressCancelParams] (val x: Self) extends AnyVal {
       
       inline def setToken(value: ProgressToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
@@ -165,7 +167,8 @@ object libCommonProtocolDotprogressMod {
       __obj.asInstanceOf[WorkDoneProgressCreateParams]
     }
     
-    extension [Self <: WorkDoneProgressCreateParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkDoneProgressCreateParams] (val x: Self) extends AnyVal {
       
       inline def setToken(value: ProgressToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
@@ -188,7 +191,8 @@ object libCommonProtocolDotprogressMod {
       __obj.asInstanceOf[WorkDoneProgressEnd]
     }
     
-    extension [Self <: WorkDoneProgressEnd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkDoneProgressEnd] (val x: Self) extends AnyVal {
       
       inline def setKind(value: end): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -236,7 +240,8 @@ object libCommonProtocolDotprogressMod {
       __obj.asInstanceOf[WorkDoneProgressReport]
     }
     
-    extension [Self <: WorkDoneProgressReport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkDoneProgressReport] (val x: Self) extends AnyVal {
       
       inline def setCancellable(value: Boolean): Self = StObject.set(x, "cancellable", value.asInstanceOf[js.Any])
       

@@ -36,7 +36,8 @@ object XMailMergeListener {
     __obj.asInstanceOf[XMailMergeListener]
   }
   
-  extension [Self <: XMailMergeListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMailMergeListener] (val x: Self) extends AnyVal {
     
     inline def setNotifyMailMergeEvent(value: MailMergeEvent => Unit): Self = StObject.set(x, "notifyMailMergeEvent", js.Any.fromFunction1(value))
   }

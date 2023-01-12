@@ -28,7 +28,8 @@ object SearchDijkstraResult {
     __obj.asInstanceOf[SearchDijkstraResult]
   }
   
-  extension [Self <: SearchDijkstraResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchDijkstraResult] (val x: Self) extends AnyVal {
     
     inline def setDistanceTo(value: NodeSingular => Double): Self = StObject.set(x, "distanceTo", js.Any.fromFunction1(value))
     

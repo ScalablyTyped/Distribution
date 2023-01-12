@@ -22,7 +22,8 @@ object IAttackComponent {
     __obj.asInstanceOf[IAttackComponent]
   }
   
-  extension [Self <: IAttackComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAttackComponent] (val x: Self) extends AnyVal {
     
     inline def setDamage(value: Rangemax): Self = StObject.set(x, "damage", value.asInstanceOf[js.Any])
   }

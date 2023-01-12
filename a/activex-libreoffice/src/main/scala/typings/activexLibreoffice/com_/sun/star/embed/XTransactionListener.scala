@@ -40,7 +40,8 @@ object XTransactionListener {
     __obj.asInstanceOf[XTransactionListener]
   }
   
-  extension [Self <: XTransactionListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTransactionListener] (val x: Self) extends AnyVal {
     
     inline def setCommited(value: EventObject => Unit): Self = StObject.set(x, "commited", js.Any.fromFunction1(value))
     

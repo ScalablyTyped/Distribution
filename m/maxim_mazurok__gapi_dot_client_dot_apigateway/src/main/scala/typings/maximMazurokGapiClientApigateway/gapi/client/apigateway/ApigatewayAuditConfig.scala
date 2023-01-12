@@ -22,7 +22,8 @@ object ApigatewayAuditConfig {
     __obj.asInstanceOf[ApigatewayAuditConfig]
   }
   
-  extension [Self <: ApigatewayAuditConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApigatewayAuditConfig] (val x: Self) extends AnyVal {
     
     inline def setAuditLogConfigs(value: js.Array[ApigatewayAuditLogConfig]): Self = StObject.set(x, "auditLogConfigs", value.asInstanceOf[js.Any])
     

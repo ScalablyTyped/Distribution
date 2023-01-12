@@ -130,7 +130,8 @@ object XChartDocument {
     __obj.asInstanceOf[XChartDocument]
   }
   
-  extension [Self <: XChartDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XChartDocument] (val x: Self) extends AnyVal {
     
     inline def setChartTypeManager(value: XChartTypeManager): Self = StObject.set(x, "ChartTypeManager", value.asInstanceOf[js.Any])
     

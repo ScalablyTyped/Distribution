@@ -51,7 +51,8 @@ object SmsMessageReceivedTriggerDetails {
     __obj.asInstanceOf[SmsMessageReceivedTriggerDetails]
   }
   
-  extension [Self <: SmsMessageReceivedTriggerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmsMessageReceivedTriggerDetails] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: () => Unit): Self = StObject.set(x, "accept", js.Any.fromFunction0(value))
     

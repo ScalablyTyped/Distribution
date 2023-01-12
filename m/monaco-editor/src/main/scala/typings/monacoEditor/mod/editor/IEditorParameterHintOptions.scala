@@ -25,7 +25,8 @@ object IEditorParameterHintOptions {
     __obj.asInstanceOf[IEditorParameterHintOptions]
   }
   
-  extension [Self <: IEditorParameterHintOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEditorParameterHintOptions] (val x: Self) extends AnyVal {
     
     inline def setCycle(value: Boolean): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
     

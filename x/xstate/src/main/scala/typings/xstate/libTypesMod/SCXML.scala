@@ -88,7 +88,8 @@ object SCXML {
       __obj.asInstanceOf[typings.xstate.libTypesMod.SCXML.Event[TEvent]]
     }
     
-    extension [Self <: typings.xstate.libTypesMod.SCXML.Event[?], TEvent /* <: EventObject */](x: Self & typings.xstate.libTypesMod.SCXML.Event[TEvent]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.xstate.libTypesMod.SCXML.Event[?], TEvent /* <: EventObject */] (val x: Self & typings.xstate.libTypesMod.SCXML.Event[TEvent]) extends AnyVal {
       
       inline def setData(value: TEvent): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

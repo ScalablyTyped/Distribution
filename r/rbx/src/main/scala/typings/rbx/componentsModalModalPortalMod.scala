@@ -79,7 +79,8 @@ object componentsModalModalPortalMod {
       __obj.asInstanceOf[ModalPortalModifierProps]
     }
     
-    extension [Self <: ModalPortalModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalPortalModifierProps] (val x: Self) extends AnyVal {
       
       inline def setAs(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any

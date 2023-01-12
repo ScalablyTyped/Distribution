@@ -22,7 +22,8 @@ object SystemInfoCpu {
     __obj.asInstanceOf[SystemInfoCpu]
   }
   
-  extension [Self <: SystemInfoCpu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoCpu] (val x: Self) extends AnyVal {
     
     inline def setLoad(value: Double): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
   }

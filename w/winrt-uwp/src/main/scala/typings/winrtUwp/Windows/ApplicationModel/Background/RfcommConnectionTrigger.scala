@@ -39,7 +39,8 @@ object RfcommConnectionTrigger {
     __obj.asInstanceOf[RfcommConnectionTrigger]
   }
   
-  extension [Self <: RfcommConnectionTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RfcommConnectionTrigger] (val x: Self) extends AnyVal {
     
     inline def setAllowMultipleConnections(value: Boolean): Self = StObject.set(x, "allowMultipleConnections", value.asInstanceOf[js.Any])
     

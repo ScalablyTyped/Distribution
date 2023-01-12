@@ -18,7 +18,8 @@ object StopProductSubscriptionResponse {
     __obj.asInstanceOf[StopProductSubscriptionResponse]
   }
   
-  extension [Self <: StopProductSubscriptionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopProductSubscriptionResponse] (val x: Self) extends AnyVal {
     
     inline def setProductUserSummary(value: ProductUserSummary): Self = StObject.set(x, "ProductUserSummary", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object FsxProtocol {
     __obj.asInstanceOf[FsxProtocol]
   }
   
-  extension [Self <: FsxProtocol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FsxProtocol] (val x: Self) extends AnyVal {
     
     inline def setNFS(value: FsxProtocolNfs): Self = StObject.set(x, "NFS", value.asInstanceOf[js.Any])
     

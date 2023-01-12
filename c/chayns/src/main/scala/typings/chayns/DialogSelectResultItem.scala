@@ -17,7 +17,8 @@ object DialogSelectResultItem {
     __obj.asInstanceOf[DialogSelectResultItem]
   }
   
-  extension [Self <: DialogSelectResultItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogSelectResultItem] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

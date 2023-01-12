@@ -19,7 +19,8 @@ object UpdateJobOutput {
     __obj.asInstanceOf[UpdateJobOutput]
   }
   
-  extension [Self <: UpdateJobOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateJobOutput] (val x: Self) extends AnyVal {
     
     inline def setArtifactList(value: ArtifactList): Self = StObject.set(x, "ArtifactList", value.asInstanceOf[js.Any])
     

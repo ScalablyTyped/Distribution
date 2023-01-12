@@ -30,7 +30,8 @@ object CountrySelectContainer {
     __obj.asInstanceOf[CountrySelectContainer]
   }
   
-  extension [Self <: CountrySelectContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountrySelectContainer] (val x: Self) extends AnyVal {
     
     inline def setCountrySelectContainer(value: Override[Any]): Self = StObject.set(x, "CountrySelectContainer", value.asInstanceOf[js.Any])
     

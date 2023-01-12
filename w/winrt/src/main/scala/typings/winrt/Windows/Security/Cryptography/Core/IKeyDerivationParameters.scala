@@ -18,7 +18,8 @@ object IKeyDerivationParameters {
     __obj.asInstanceOf[IKeyDerivationParameters]
   }
   
-  extension [Self <: IKeyDerivationParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKeyDerivationParameters] (val x: Self) extends AnyVal {
     
     inline def setIterationCount(value: Double): Self = StObject.set(x, "iterationCount", value.asInstanceOf[js.Any])
     

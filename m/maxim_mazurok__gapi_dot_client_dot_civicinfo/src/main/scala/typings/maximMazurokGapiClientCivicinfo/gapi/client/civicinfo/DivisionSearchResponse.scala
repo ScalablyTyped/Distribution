@@ -18,7 +18,8 @@ object DivisionSearchResponse {
     __obj.asInstanceOf[DivisionSearchResponse]
   }
   
-  extension [Self <: DivisionSearchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DivisionSearchResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

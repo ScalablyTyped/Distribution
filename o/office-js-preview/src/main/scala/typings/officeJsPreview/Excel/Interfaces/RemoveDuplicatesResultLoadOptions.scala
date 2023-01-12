@@ -41,7 +41,8 @@ object RemoveDuplicatesResultLoadOptions {
     __obj.asInstanceOf[RemoveDuplicatesResultLoadOptions]
   }
   
-  extension [Self <: RemoveDuplicatesResultLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveDuplicatesResultLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

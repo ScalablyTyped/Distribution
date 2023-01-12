@@ -83,7 +83,8 @@ object ReferenceSymbol {
     __obj.asInstanceOf[ReferenceSymbol]
   }
   
-  extension [Self <: ReferenceSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferenceSymbol] (val x: Self) extends AnyVal {
     
     inline def setDeclaration(value: TmplAstReference): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
     

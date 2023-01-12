@@ -23,7 +23,8 @@ object ElicitSubSlot {
     __obj.asInstanceOf[ElicitSubSlot]
   }
   
-  extension [Self <: ElicitSubSlot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElicitSubSlot] (val x: Self) extends AnyVal {
     
     inline def setName(value: NonEmptyString): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

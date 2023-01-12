@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Oncomplete]
     }
     
-    extension [Self <: Oncomplete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Oncomplete] (val x: Self) extends AnyVal {
       
       inline def setOncomplete(value: (/* id */ String, /* localPath */ String) => Unit): Self = StObject.set(x, "oncomplete", js.Any.fromFunction2(value))
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[Onconnect]
     }
     
-    extension [Self <: Onconnect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Onconnect] (val x: Self) extends AnyVal {
       
       inline def setOnconnect(value: /* socket */ SASocket => Unit): Self = StObject.set(x, "onconnect", js.Any.fromFunction1(value))
       
@@ -87,7 +89,8 @@ object anon {
       __obj.asInstanceOf[Onerror]
     }
     
-    extension [Self <: Onerror](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Onerror] (val x: Self) extends AnyVal {
       
       inline def setOnerror(value: /* errorCode */ String => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
       
@@ -118,7 +121,8 @@ object anon {
       __obj.asInstanceOf[Onprogress]
     }
     
-    extension [Self <: Onprogress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Onprogress] (val x: Self) extends AnyVal {
       
       inline def setOncomplete(value: (/* id */ String, /* localPath */ String) => Unit): Self = StObject.set(x, "oncomplete", js.Any.fromFunction2(value))
       
@@ -153,7 +157,8 @@ object anon {
       __obj.asInstanceOf[Onsent]
     }
     
-    extension [Self <: Onsent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Onsent] (val x: Self) extends AnyVal {
       
       inline def setOnerror(value: (/* errorCode */ String, /* peerAgent */ SAPeerAgent, /* id */ String) => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction3(value))
       

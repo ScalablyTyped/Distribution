@@ -26,7 +26,8 @@ object MetaPaginated {
     __obj.asInstanceOf[MetaPaginated]
   }
   
-  extension [Self <: MetaPaginated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetaPaginated] (val x: Self) extends AnyVal {
     
     inline def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
     

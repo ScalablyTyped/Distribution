@@ -16,7 +16,8 @@ object WorkerNavigator {
     __obj.asInstanceOf[WorkerNavigator]
   }
   
-  extension [Self <: WorkerNavigator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerNavigator] (val x: Self) extends AnyVal {
     
     inline def setSerial(value: Serial): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
   }

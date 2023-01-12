@@ -677,7 +677,8 @@ object PropsHTMLParagraphElement {
     __obj.asInstanceOf[PropsHTMLParagraphElement]
   }
   
-  extension [Self <: PropsHTMLParagraphElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsHTMLParagraphElement] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

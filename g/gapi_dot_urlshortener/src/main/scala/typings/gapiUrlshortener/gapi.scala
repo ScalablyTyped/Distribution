@@ -42,7 +42,8 @@ object gapi {
           __obj.asInstanceOf[url]
         }
         
-        extension [Self <: url](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: url] (val x: Self) extends AnyVal {
           
           inline def setGet(value: Fields => HttpRequest[GoogleApiUrlShortenerUrlResource]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
           

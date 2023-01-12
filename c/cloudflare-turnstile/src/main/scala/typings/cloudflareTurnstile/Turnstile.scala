@@ -64,7 +64,8 @@ object Turnstile {
       __obj.asInstanceOf[RenderParameters]
     }
     
-    extension [Self <: RenderParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderParameters] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

@@ -159,7 +159,8 @@ object mod {
       __obj.asInstanceOf[DelugeStats]
     }
     
-    extension [Self <: DelugeStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DelugeStats] (val x: Self) extends AnyVal {
       
       inline def setDht_nodes(value: Double): Self = StObject.set(x, "dht_nodes", value.asInstanceOf[js.Any])
       
@@ -222,7 +223,8 @@ object mod {
       __obj.asInstanceOf[DownloadOptions]
     }
     
-    extension [Self <: DownloadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadOptions] (val x: Self) extends AnyVal {
       
       inline def setAdd_paused(value: Boolean): Self = StObject.set(x, "add_paused", value.asInstanceOf[js.Any])
       
@@ -263,7 +265,8 @@ object mod {
       __obj.asInstanceOf[Host]
     }
     
-    extension [Self <: Host](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -354,7 +357,8 @@ object mod {
       __obj.asInstanceOf[Torrent]
     }
     
-    extension [Self <: Torrent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Torrent] (val x: Self) extends AnyVal {
       
       inline def setDistributed_copies(value: Double): Self = StObject.set(x, "distributed_copies", value.asInstanceOf[js.Any])
       
@@ -421,7 +425,8 @@ object mod {
       __obj.asInstanceOf[TorrentRecord]
     }
     
-    extension [Self <: TorrentRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TorrentRecord] (val x: Self) extends AnyVal {
       
       inline def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
       

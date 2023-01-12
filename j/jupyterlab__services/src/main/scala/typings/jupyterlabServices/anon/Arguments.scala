@@ -23,7 +23,8 @@ object Arguments {
     __obj.asInstanceOf[Arguments]
   }
   
-  extension [Self <: Arguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Arguments] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: Any): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

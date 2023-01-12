@@ -86,7 +86,8 @@ object InspectedElement {
     __obj.asInstanceOf[InspectedElement]
   }
   
-  extension [Self <: InspectedElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InspectedElement] (val x: Self) extends AnyVal {
     
     inline def setCanEditFunctionProps(value: Boolean): Self = StObject.set(x, "canEditFunctionProps", value.asInstanceOf[js.Any])
     

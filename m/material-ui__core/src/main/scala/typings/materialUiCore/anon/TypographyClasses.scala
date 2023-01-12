@@ -22,7 +22,8 @@ object TypographyClasses {
     __obj.asInstanceOf[TypographyClasses]
   }
   
-  extension [Self <: TypographyClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypographyClasses] (val x: Self) extends AnyVal {
     
     inline def setTypographyClasses(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.@material-ui/core/Typography/Typography.TypographyProps<'span', {}>['classes'] */ js.Any

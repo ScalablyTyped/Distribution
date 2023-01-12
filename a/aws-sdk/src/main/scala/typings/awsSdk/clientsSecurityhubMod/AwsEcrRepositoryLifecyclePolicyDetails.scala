@@ -23,7 +23,8 @@ object AwsEcrRepositoryLifecyclePolicyDetails {
     __obj.asInstanceOf[AwsEcrRepositoryLifecyclePolicyDetails]
   }
   
-  extension [Self <: AwsEcrRepositoryLifecyclePolicyDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcrRepositoryLifecyclePolicyDetails] (val x: Self) extends AnyVal {
     
     inline def setLifecyclePolicyText(value: NonEmptyString): Self = StObject.set(x, "LifecyclePolicyText", value.asInstanceOf[js.Any])
     

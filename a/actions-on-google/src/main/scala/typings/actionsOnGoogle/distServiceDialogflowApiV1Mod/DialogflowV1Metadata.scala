@@ -23,7 +23,8 @@ object DialogflowV1Metadata {
     __obj.asInstanceOf[DialogflowV1Metadata]
   }
   
-  extension [Self <: DialogflowV1Metadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogflowV1Metadata] (val x: Self) extends AnyVal {
     
     inline def setIntentId(value: String): Self = StObject.set(x, "intentId", value.asInstanceOf[js.Any])
     

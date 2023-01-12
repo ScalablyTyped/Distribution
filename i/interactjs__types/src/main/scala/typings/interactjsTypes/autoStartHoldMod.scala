@@ -31,7 +31,8 @@ object autoStartHoldMod extends Shortcut {
         __obj.asInstanceOf[Interaction]
       }
       
-      extension [Self <: Interaction](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Interaction] (val x: Self) extends AnyVal {
         
         inline def setAutoStartHoldTimer(value: Any): Self = StObject.set(x, "autoStartHoldTimer", value.asInstanceOf[js.Any])
         
@@ -56,7 +57,8 @@ object autoStartHoldMod extends Shortcut {
         __obj.asInstanceOf[PerActionDefaults]
       }
       
-      extension [Self <: PerActionDefaults](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PerActionDefaults] (val x: Self) extends AnyVal {
         
         inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
         

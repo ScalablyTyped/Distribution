@@ -533,7 +533,8 @@ object NativeElements {
     __obj.asInstanceOf[NativeElements]
   }
   
-  extension [Self <: NativeElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeElements] (val x: Self) extends AnyVal {
     
     inline def setA(value: ElementAttrs[AnchorHTMLAttributes]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

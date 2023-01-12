@@ -54,7 +54,8 @@ object StaveHairpin {
          with `type`
   }
   
-  extension [Self <: StaveHairpin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaveHairpin] (val x: Self) extends AnyVal {
     
     inline def setDraw(value: () => Boolean): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
     

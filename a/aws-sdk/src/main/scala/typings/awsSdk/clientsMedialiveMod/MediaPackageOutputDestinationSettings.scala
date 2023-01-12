@@ -18,7 +18,8 @@ object MediaPackageOutputDestinationSettings {
     __obj.asInstanceOf[MediaPackageOutputDestinationSettings]
   }
   
-  extension [Self <: MediaPackageOutputDestinationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaPackageOutputDestinationSettings] (val x: Self) extends AnyVal {
     
     inline def setChannelId(value: stringMin1): Self = StObject.set(x, "ChannelId", value.asInstanceOf[js.Any])
     

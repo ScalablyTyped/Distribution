@@ -28,7 +28,8 @@ object SegmentOverride {
     __obj.asInstanceOf[SegmentOverride]
   }
   
-  extension [Self <: SegmentOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentOverride] (val x: Self) extends AnyVal {
     
     inline def setEvaluationOrder(value: Long): Self = StObject.set(x, "evaluationOrder", value.asInstanceOf[js.Any])
     

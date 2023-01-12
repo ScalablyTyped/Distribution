@@ -18,7 +18,8 @@ object AuditsListPayload {
     __obj.asInstanceOf[AuditsListPayload]
   }
   
-  extension [Self <: AuditsListPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuditsListPayload] (val x: Self) extends AnyVal {
     
     inline def setAudits(value: js.Array[Audit]): Self = StObject.set(x, "audits", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object Options_ {
     __obj.asInstanceOf[Options_[T]]
   }
   
-  extension [Self <: Options_[?], T /* <: TelnetOption */](x: Self & Options_[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Options_[?], T /* <: TelnetOption */] (val x: Self & Options_[T]) extends AnyVal {
     
     inline def setLocalOptions(value: js.Array[T]): Self = StObject.set(x, "localOptions", value.asInstanceOf[js.Any])
     

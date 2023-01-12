@@ -19,7 +19,8 @@ object Props {
     __obj.asInstanceOf[Props]
   }
   
-  extension [Self <: Props](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ReactElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

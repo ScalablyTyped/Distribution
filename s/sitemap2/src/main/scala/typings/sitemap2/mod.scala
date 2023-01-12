@@ -70,7 +70,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SitemapConfig]
     }
     
-    extension [Self <: SitemapConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SitemapConfig] (val x: Self) extends AnyVal {
       
       inline def setCacheTime(value: Double): Self = StObject.set(x, "cacheTime", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SitemapXml]
     }
     
-    extension [Self <: SitemapXml](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SitemapXml] (val x: Self) extends AnyVal {
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
@@ -150,7 +152,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[UrlData]
     }
     
-    extension [Self <: UrlData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlData] (val x: Self) extends AnyVal {
       
       inline def setChengefreq(value: String): Self = StObject.set(x, "chengefreq", value.asInstanceOf[js.Any])
       

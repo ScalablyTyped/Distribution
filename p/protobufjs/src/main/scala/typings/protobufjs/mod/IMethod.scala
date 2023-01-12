@@ -38,7 +38,8 @@ object IMethod {
     __obj.asInstanceOf[IMethod]
   }
   
-  extension [Self <: IMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMethod] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

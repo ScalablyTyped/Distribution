@@ -27,7 +27,8 @@ object libComponentsInteractionMod {
       __obj.asInstanceOf[IInteractionProps]
     }
     
-    extension [Self <: IInteractionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInteractionProps] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: js.Object): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

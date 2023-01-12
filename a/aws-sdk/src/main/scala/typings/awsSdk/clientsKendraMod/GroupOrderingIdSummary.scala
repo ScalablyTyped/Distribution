@@ -38,7 +38,8 @@ object GroupOrderingIdSummary {
     __obj.asInstanceOf[GroupOrderingIdSummary]
   }
   
-  extension [Self <: GroupOrderingIdSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupOrderingIdSummary] (val x: Self) extends AnyVal {
     
     inline def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     

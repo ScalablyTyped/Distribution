@@ -23,7 +23,8 @@ object Responses200ContentApplicationjsonFingerprint422Content397 {
     __obj.asInstanceOf[Responses200ContentApplicationjsonFingerprint422Content397]
   }
   
-  extension [Self <: Responses200ContentApplicationjsonFingerprint422Content397](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responses200ContentApplicationjsonFingerprint422Content397] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathClientidString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

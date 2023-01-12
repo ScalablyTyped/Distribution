@@ -27,7 +27,8 @@ object distTypesOnStageGeneralDistComponentsAttachmentMod extends Shortcut {
       __obj.asInstanceOf[AttachmentProps]
     }
     
-    extension [Self <: AttachmentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttachmentProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object ICordovaPluginBackgroundModeNotificationItem {
     __obj.asInstanceOf[ICordovaPluginBackgroundModeNotificationItem]
   }
   
-  extension [Self <: ICordovaPluginBackgroundModeNotificationItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICordovaPluginBackgroundModeNotificationItem] (val x: Self) extends AnyVal {
     
     inline def setResume(value: Boolean): Self = StObject.set(x, "resume", value.asInstanceOf[js.Any])
     

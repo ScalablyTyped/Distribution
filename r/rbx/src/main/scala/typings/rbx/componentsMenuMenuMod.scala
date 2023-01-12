@@ -232,7 +232,8 @@ object componentsMenuMenuMod {
       __obj.asInstanceOf[MenuProps]
     }
     
-    extension [Self <: MenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`

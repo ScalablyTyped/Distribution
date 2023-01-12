@@ -29,7 +29,8 @@ object Base64EncodedByteArray {
     __obj.asInstanceOf[Base64EncodedByteArray]
   }
   
-  extension [Self <: Base64EncodedByteArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Base64EncodedByteArray] (val x: Self) extends AnyVal {
     
     inline def setAppend(value: Any => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     

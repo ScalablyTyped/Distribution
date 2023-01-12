@@ -26,7 +26,8 @@ object libUtilsServiceMod {
       __obj.asInstanceOf[CurrencyConvertParams]
     }
     
-    extension [Self <: CurrencyConvertParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrencyConvertParams] (val x: Self) extends AnyVal {
       
       inline def setCurrencies(value: js.Array[From]): Self = StObject.set(x, "currencies", value.asInstanceOf[js.Any])
       
@@ -176,7 +177,8 @@ object libUtilsServiceMod {
       __obj.asInstanceOf[ReferenceDataParams]
     }
     
-    extension [Self <: ReferenceDataParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferenceDataParams] (val x: Self) extends AnyVal {
       
       inline def setDataType(value: DataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
       

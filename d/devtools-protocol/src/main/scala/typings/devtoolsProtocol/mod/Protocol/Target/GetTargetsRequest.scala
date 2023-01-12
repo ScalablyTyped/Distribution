@@ -20,7 +20,8 @@ object GetTargetsRequest {
     __obj.asInstanceOf[GetTargetsRequest]
   }
   
-  extension [Self <: GetTargetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTargetsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: TargetFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

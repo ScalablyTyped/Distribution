@@ -31,7 +31,8 @@ object libTokenMod {
     @js.native
     val ^ : Token[IPropertyInspectorProvider] = js.native
     
-    extension [Self <: IPropertyInspectorProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPropertyInspectorProvider] (val x: Self) extends AnyVal {
       
       inline def setRegister(value: Widget => IPropertyInspector): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
     }

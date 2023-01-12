@@ -45,7 +45,8 @@ object XGridPeer {
     __obj.asInstanceOf[XGridPeer]
   }
   
-  extension [Self <: XGridPeer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGridPeer] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: XIndexContainer): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     

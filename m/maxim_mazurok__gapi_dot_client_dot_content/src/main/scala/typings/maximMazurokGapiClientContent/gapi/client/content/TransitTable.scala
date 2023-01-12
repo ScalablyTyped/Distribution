@@ -24,7 +24,8 @@ object TransitTable {
     __obj.asInstanceOf[TransitTable]
   }
   
-  extension [Self <: TransitTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitTable] (val x: Self) extends AnyVal {
     
     inline def setPostalCodeGroupNames(value: js.Array[String]): Self = StObject.set(x, "postalCodeGroupNames", value.asInstanceOf[js.Any])
     

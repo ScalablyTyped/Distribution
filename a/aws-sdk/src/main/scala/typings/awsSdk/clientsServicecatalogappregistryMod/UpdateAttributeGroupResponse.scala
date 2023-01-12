@@ -18,7 +18,8 @@ object UpdateAttributeGroupResponse {
     __obj.asInstanceOf[UpdateAttributeGroupResponse]
   }
   
-  extension [Self <: UpdateAttributeGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAttributeGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setAttributeGroup(value: AttributeGroup): Self = StObject.set(x, "attributeGroup", value.asInstanceOf[js.Any])
     

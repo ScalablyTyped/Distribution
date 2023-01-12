@@ -80,7 +80,8 @@ object MatterConstraintConfig {
     __obj.asInstanceOf[MatterConstraintConfig]
   }
   
-  extension [Self <: MatterConstraintConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatterConstraintConfig] (val x: Self) extends AnyVal {
     
     inline def setAngleA(value: Double): Self = StObject.set(x, "angleA", value.asInstanceOf[js.Any])
     

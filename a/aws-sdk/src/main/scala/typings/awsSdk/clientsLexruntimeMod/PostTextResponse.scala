@@ -83,7 +83,8 @@ object PostTextResponse {
     __obj.asInstanceOf[PostTextResponse]
   }
   
-  extension [Self <: PostTextResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostTextResponse] (val x: Self) extends AnyVal {
     
     inline def setActiveContexts(value: ActiveContextsList): Self = StObject.set(x, "activeContexts", value.asInstanceOf[js.Any])
     

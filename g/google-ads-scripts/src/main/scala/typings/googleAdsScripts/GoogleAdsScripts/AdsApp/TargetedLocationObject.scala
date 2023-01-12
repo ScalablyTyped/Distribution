@@ -18,7 +18,8 @@ object TargetedLocationObject {
     __obj.asInstanceOf[TargetedLocationObject]
   }
   
-  extension [Self <: TargetedLocationObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetedLocationObject] (val x: Self) extends AnyVal {
     
     inline def setBidModifier(value: Double): Self = StObject.set(x, "bidModifier", value.asInstanceOf[js.Any])
     

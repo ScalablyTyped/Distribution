@@ -33,7 +33,8 @@ object MetricDataPoint {
     __obj.asInstanceOf[MetricDataPoint]
   }
   
-  extension [Self <: MetricDataPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricDataPoint] (val x: Self) extends AnyVal {
     
     inline def setFpr(value: float): Self = StObject.set(x, "fpr", value.asInstanceOf[js.Any])
     

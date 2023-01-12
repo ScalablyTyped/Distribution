@@ -18,7 +18,8 @@ object SetTextMessageSpendLimitOverrideResult {
     __obj.asInstanceOf[SetTextMessageSpendLimitOverrideResult]
   }
   
-  extension [Self <: SetTextMessageSpendLimitOverrideResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetTextMessageSpendLimitOverrideResult] (val x: Self) extends AnyVal {
     
     inline def setMonthlyLimit(value: MonthlyLimit): Self = StObject.set(x, "MonthlyLimit", value.asInstanceOf[js.Any])
     

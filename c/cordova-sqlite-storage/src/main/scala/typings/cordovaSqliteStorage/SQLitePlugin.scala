@@ -66,7 +66,8 @@ object SQLitePlugin {
       __obj.asInstanceOf[DeleteArgs]
     }
     
-    extension [Self <: DeleteArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteArgs] (val x: Self) extends AnyVal {
       
       inline def setIosDatabaseLocation(value: String): Self = StObject.set(x, "iosDatabaseLocation", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object SQLitePlugin {
       __obj.asInstanceOf[OpenArgs]
     }
     
-    extension [Self <: OpenArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenArgs] (val x: Self) extends AnyVal {
       
       inline def setAndroidDatabaseImplementation(value: Double): Self = StObject.set(x, "androidDatabaseImplementation", value.asInstanceOf[js.Any])
       
@@ -146,7 +148,8 @@ object SQLitePlugin {
       __obj.asInstanceOf[Results]
     }
     
-    extension [Self <: Results](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
       
       inline def setInsertId(value: Double): Self = StObject.set(x, "insertId", value.asInstanceOf[js.Any])
       

@@ -29,7 +29,8 @@ object DataSourceSchema {
     __obj.asInstanceOf[DataSourceSchema]
   }
   
-  extension [Self <: DataSourceSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceSchema] (val x: Self) extends AnyVal {
     
     inline def setAggregates(value: Any): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
     

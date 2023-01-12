@@ -132,7 +132,8 @@ object AllClientMetadata {
     __obj.asInstanceOf[AllClientMetadata]
   }
   
-  extension [Self <: AllClientMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllClientMetadata] (val x: Self) extends AnyVal {
     
     inline def setApplication_type(value: web | native): Self = StObject.set(x, "application_type", value.asInstanceOf[js.Any])
     

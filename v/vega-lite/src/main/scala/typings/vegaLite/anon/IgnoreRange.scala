@@ -15,7 +15,8 @@ object IgnoreRange {
     __obj.asInstanceOf[IgnoreRange]
   }
   
-  extension [Self <: IgnoreRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnoreRange] (val x: Self) extends AnyVal {
     
     inline def setIgnoreRange(value: Boolean): Self = StObject.set(x, "ignoreRange", value.asInstanceOf[js.Any])
     

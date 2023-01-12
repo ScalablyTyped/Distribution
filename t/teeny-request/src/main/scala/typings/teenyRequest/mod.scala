@@ -105,7 +105,8 @@ object mod {
       __obj.asInstanceOf[CoreOptions]
     }
     
-    extension [Self <: CoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoreOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -193,7 +194,8 @@ object mod {
       __obj.asInstanceOf[OptionsWithUri]
     }
     
-    extension [Self <: OptionsWithUri](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsWithUri] (val x: Self) extends AnyVal {
       
       inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
@@ -213,7 +215,8 @@ object mod {
       __obj.asInstanceOf[OptionsWithUrl]
     }
     
-    extension [Self <: OptionsWithUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsWithUrl] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
@@ -247,7 +250,8 @@ object mod {
       __obj.asInstanceOf[RequestPart]
     }
     
-    extension [Self <: RequestPart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestPart] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String | Readable): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     }
@@ -272,7 +276,8 @@ object mod {
       __obj.asInstanceOf[Response[T]]
     }
     
-    extension [Self <: Response[?], T](x: Self & Response[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response[?], T] (val x: Self & Response[T]) extends AnyVal {
       
       inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

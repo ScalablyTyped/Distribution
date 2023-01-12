@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[HTMLPropsWithRefCallback[T]]
     }
     
-    extension [Self <: HTMLPropsWithRefCallback[?], T](x: Self & HTMLPropsWithRefCallback[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTMLPropsWithRefCallback[?], T] (val x: Self & HTMLPropsWithRefCallback[T]) extends AnyVal {
       
       inline def setRef(value: /* instance */ T | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     }
@@ -337,7 +338,8 @@ object mod {
       __obj.asInstanceOf[ReactSliderProps[T]]
     }
     
-    extension [Self <: ReactSliderProps[?], T /* <: Double | js.Array[Double] */](x: Self & ReactSliderProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactSliderProps[?], T /* <: Double | js.Array[Double] */] (val x: Self & ReactSliderProps[T]) extends AnyVal {
       
       inline def setAriaLabel(
         value: /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? string : std.ReadonlyArray<string> | undefined */ js.Any

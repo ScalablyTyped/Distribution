@@ -69,7 +69,8 @@ object ReactDataGrid {
       __obj.asInstanceOf[typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellCopyPasteEvent]
     }
     
-    extension [Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellCopyPasteEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellCopyPasteEvent] (val x: Self) extends AnyVal {
       
       inline def setCellKey(value: String): Self = StObject.set(x, "cellKey", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object ReactDataGrid {
       __obj.asInstanceOf[typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellDragEvent]
     }
     
-    extension [Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellDragEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellDragEvent] (val x: Self) extends AnyVal {
       
       inline def setCellKey(value: String): Self = StObject.set(x, "cellKey", value.asInstanceOf[js.Any])
       
@@ -159,7 +161,8 @@ object ReactDataGrid {
       __obj.asInstanceOf[typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellExpandEvent[T]]
     }
     
-    extension [Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellExpandEvent[?], T](x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellExpandEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellExpandEvent[?], T] (val x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellExpandEvent[T]) extends AnyVal {
       
       inline def setExpandArgs(value: Any): Self = StObject.set(x, "expandArgs", value.asInstanceOf[js.Any])
       
@@ -283,7 +286,8 @@ object ReactDataGrid {
       __obj.asInstanceOf[typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.Column[T]]
     }
     
-    extension [Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.Column[?], T](x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.Column[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.Column[?], T] (val x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.Column[T]) extends AnyVal {
       
       inline def setCellClass(value: String): Self = StObject.set(x, "cellClass", value.asInstanceOf[js.Any])
       
@@ -384,7 +388,8 @@ object ReactDataGrid {
       __obj.asInstanceOf[typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.DragHandleDoubleClickEvent[T]]
     }
     
-    extension [Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.DragHandleDoubleClickEvent[?], T](x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.DragHandleDoubleClickEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.DragHandleDoubleClickEvent[?], T] (val x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.DragHandleDoubleClickEvent[T]) extends AnyVal {
       
       inline def setE(value: SyntheticEvent[Any, Event]): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
@@ -418,7 +423,8 @@ object ReactDataGrid {
       __obj.asInstanceOf[typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.Filter]
     }
     
-    extension [Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.Filter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.Filter] (val x: Self) extends AnyVal {
       
       inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
       
@@ -471,7 +477,8 @@ object ReactDataGrid {
       __obj.asInstanceOf[typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.GridRowsUpdatedEvent[T]]
     }
     
-    extension [Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.GridRowsUpdatedEvent[?], T](x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.GridRowsUpdatedEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.GridRowsUpdatedEvent[?], T] (val x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.GridRowsUpdatedEvent[T]) extends AnyVal {
       
       inline def setAction(value: cellUpdate | cellDrag | columnFill | copyPaste): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -512,7 +519,8 @@ object ReactDataGrid {
       __obj.asInstanceOf[typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.OnRowExpandToggle]
     }
     
-    extension [Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.OnRowExpandToggle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.OnRowExpandToggle] (val x: Self) extends AnyVal {
       
       inline def setColumnGroupName(value: String): Self = StObject.set(x, "columnGroupName", value.asInstanceOf[js.Any])
       
@@ -557,7 +565,8 @@ object ReactDataGrid {
       __obj.asInstanceOf[typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.RowUpdateEvent[T]]
     }
     
-    extension [Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.RowUpdateEvent[?], T](x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.RowUpdateEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.RowUpdateEvent[?], T] (val x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.RowUpdateEvent[T]) extends AnyVal {
       
       inline def setCellKey(value: String): Self = StObject.set(x, "cellKey", value.asInstanceOf[js.Any])
       
@@ -582,7 +591,8 @@ object ReactDataGrid {
       __obj.asInstanceOf[typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.SelectionParams[T]]
     }
     
-    extension [Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.SelectionParams[?], T](x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.SelectionParams[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.SelectionParams[?], T] (val x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.SelectionParams[T]) extends AnyVal {
       
       inline def setRow(value: T): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       

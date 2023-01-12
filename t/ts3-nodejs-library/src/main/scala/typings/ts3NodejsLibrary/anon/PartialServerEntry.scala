@@ -36,7 +36,8 @@ object PartialServerEntry {
     __obj.asInstanceOf[PartialServerEntry]
   }
   
-  extension [Self <: PartialServerEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialServerEntry] (val x: Self) extends AnyVal {
     
     inline def setVirtualserverAutostart(value: Double): Self = StObject.set(x, "virtualserverAutostart", value.asInstanceOf[js.Any])
     

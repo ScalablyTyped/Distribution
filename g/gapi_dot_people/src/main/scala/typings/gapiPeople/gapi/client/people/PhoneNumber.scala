@@ -30,7 +30,8 @@ object PhoneNumber {
     __obj.asInstanceOf[PhoneNumber]
   }
   
-  extension [Self <: PhoneNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhoneNumber] (val x: Self) extends AnyVal {
     
     inline def setCanonicalForm(value: String): Self = StObject.set(x, "canonicalForm", value.asInstanceOf[js.Any])
     

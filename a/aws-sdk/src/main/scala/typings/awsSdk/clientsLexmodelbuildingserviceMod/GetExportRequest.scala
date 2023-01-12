@@ -33,7 +33,8 @@ object GetExportRequest {
     __obj.asInstanceOf[GetExportRequest]
   }
   
-  extension [Self <: GetExportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetExportRequest] (val x: Self) extends AnyVal {
     
     inline def setExportType(value: ExportType): Self = StObject.set(x, "exportType", value.asInstanceOf[js.Any])
     

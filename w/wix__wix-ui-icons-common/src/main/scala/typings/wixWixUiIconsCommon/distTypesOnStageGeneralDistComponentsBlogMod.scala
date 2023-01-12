@@ -27,7 +27,8 @@ object distTypesOnStageGeneralDistComponentsBlogMod extends Shortcut {
       __obj.asInstanceOf[BlogProps]
     }
     
-    extension [Self <: BlogProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlogProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

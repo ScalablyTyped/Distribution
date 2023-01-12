@@ -31,7 +31,8 @@ object ButtonOptions {
     __obj.asInstanceOf[ButtonOptions]
   }
   
-  extension [Self <: ButtonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonOptions] (val x: Self) extends AnyVal {
     
     inline def setCorners(value: Boolean): Self = StObject.set(x, "corners", value.asInstanceOf[js.Any])
     

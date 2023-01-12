@@ -25,7 +25,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[DecodedSourceMap]
     }
     
-    extension [Self <: DecodedSourceMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodedSourceMap] (val x: Self) extends AnyVal {
       
       inline def setMappings(value: js.Array[js.Array[SourceMapSegment]]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[EncodedSourceMap]
     }
     
-    extension [Self <: EncodedSourceMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodedSourceMap] (val x: Self) extends AnyVal {
       
       inline def setMappings(value: String): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
     }
@@ -89,7 +91,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[Pos]
     }
     
-    extension [Self <: Pos](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pos] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -118,7 +121,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[SourceMapV3]
     }
     
-    extension [Self <: SourceMapV3](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceMapV3] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       

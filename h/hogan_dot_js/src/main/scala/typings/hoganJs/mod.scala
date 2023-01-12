@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[HoganOptions]
     }
     
-    extension [Self <: HoganOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HoganOptions] (val x: Self) extends AnyVal {
       
       inline def setAsString(value: Boolean): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object mod {
       __obj.asInstanceOf[Leaf]
     }
     
-    extension [Self <: Leaf](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Leaf] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -138,7 +140,8 @@ object mod {
       __obj.asInstanceOf[SectionTags]
     }
     
-    extension [Self <: SectionTags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SectionTags] (val x: Self) extends AnyVal {
       
       inline def setC(value: String): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
       
@@ -167,7 +170,8 @@ object mod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setCtag(value: String): Self = StObject.set(x, "ctag", value.asInstanceOf[js.Any])
       

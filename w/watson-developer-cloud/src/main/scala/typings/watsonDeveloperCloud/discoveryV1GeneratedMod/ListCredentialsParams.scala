@@ -21,7 +21,8 @@ object ListCredentialsParams {
     __obj.asInstanceOf[ListCredentialsParams]
   }
   
-  extension [Self <: ListCredentialsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCredentialsParams] (val x: Self) extends AnyVal {
     
     inline def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
     

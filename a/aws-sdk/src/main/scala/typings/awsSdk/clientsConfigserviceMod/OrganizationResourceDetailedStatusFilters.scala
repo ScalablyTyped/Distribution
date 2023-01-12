@@ -23,7 +23,8 @@ object OrganizationResourceDetailedStatusFilters {
     __obj.asInstanceOf[OrganizationResourceDetailedStatusFilters]
   }
   
-  extension [Self <: OrganizationResourceDetailedStatusFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationResourceDetailedStatusFilters] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

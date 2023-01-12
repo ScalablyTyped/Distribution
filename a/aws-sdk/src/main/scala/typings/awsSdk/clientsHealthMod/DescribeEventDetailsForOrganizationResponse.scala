@@ -23,7 +23,8 @@ object DescribeEventDetailsForOrganizationResponse {
     __obj.asInstanceOf[DescribeEventDetailsForOrganizationResponse]
   }
   
-  extension [Self <: DescribeEventDetailsForOrganizationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEventDetailsForOrganizationResponse] (val x: Self) extends AnyVal {
     
     inline def setFailedSet(value: DescribeEventDetailsForOrganizationFailedSet): Self = StObject.set(x, "failedSet", value.asInstanceOf[js.Any])
     

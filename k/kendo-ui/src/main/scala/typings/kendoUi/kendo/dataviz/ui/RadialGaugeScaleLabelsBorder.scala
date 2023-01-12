@@ -21,7 +21,8 @@ object RadialGaugeScaleLabelsBorder {
     __obj.asInstanceOf[RadialGaugeScaleLabelsBorder]
   }
   
-  extension [Self <: RadialGaugeScaleLabelsBorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadialGaugeScaleLabelsBorder] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

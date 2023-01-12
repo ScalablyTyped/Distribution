@@ -23,7 +23,8 @@ object Rollback {
     __obj.asInstanceOf[Rollback]
   }
   
-  extension [Self <: Rollback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rollback] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Unit): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

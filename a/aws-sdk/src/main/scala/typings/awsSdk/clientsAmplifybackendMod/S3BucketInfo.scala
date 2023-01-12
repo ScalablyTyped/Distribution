@@ -23,7 +23,8 @@ object S3BucketInfo {
     __obj.asInstanceOf[S3BucketInfo]
   }
   
-  extension [Self <: S3BucketInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3BucketInfo] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: string): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     

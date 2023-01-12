@@ -305,7 +305,8 @@ object libRestPreviewWirelessCommandMod {
       __obj.asInstanceOf[CommandListInstanceCreateOptions]
     }
     
-    extension [Self <: CommandListInstanceCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandListInstanceCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setCallbackMethod(value: String): Self = StObject.set(x, "callbackMethod", value.asInstanceOf[js.Any])
       
@@ -388,7 +389,8 @@ object libRestPreviewWirelessCommandMod {
       __obj.asInstanceOf[CommandListInstanceEachOptions]
     }
     
-    extension [Self <: CommandListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ CommandInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -465,7 +467,8 @@ object libRestPreviewWirelessCommandMod {
       __obj.asInstanceOf[CommandListInstanceOptions]
     }
     
-    extension [Self <: CommandListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
@@ -527,7 +530,8 @@ object libRestPreviewWirelessCommandMod {
       __obj.asInstanceOf[CommandListInstancePageOptions]
     }
     
-    extension [Self <: CommandListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
@@ -632,7 +636,8 @@ object libRestPreviewWirelessCommandMod {
       __obj.asInstanceOf[CommandResource]
     }
     
-    extension [Self <: CommandResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       

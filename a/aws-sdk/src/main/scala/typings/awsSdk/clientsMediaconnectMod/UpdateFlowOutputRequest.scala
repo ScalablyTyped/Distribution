@@ -98,7 +98,8 @@ object UpdateFlowOutputRequest {
     __obj.asInstanceOf[UpdateFlowOutputRequest]
   }
   
-  extension [Self <: UpdateFlowOutputRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFlowOutputRequest] (val x: Self) extends AnyVal {
     
     inline def setCidrAllowList(value: listOfString): Self = StObject.set(x, "CidrAllowList", value.asInstanceOf[js.Any])
     

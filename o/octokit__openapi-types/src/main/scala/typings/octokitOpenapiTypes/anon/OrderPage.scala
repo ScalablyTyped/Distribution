@@ -47,7 +47,8 @@ object OrderPage {
     __obj.asInstanceOf[OrderPage]
   }
   
-  extension [Self <: OrderPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderPage] (val x: Self) extends AnyVal {
     
     inline def setOrder(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['order'] */ js.Any

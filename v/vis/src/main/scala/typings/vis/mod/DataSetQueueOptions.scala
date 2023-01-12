@@ -26,7 +26,8 @@ object DataSetQueueOptions {
     __obj.asInstanceOf[DataSetQueueOptions]
   }
   
-  extension [Self <: DataSetQueueOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSetQueueOptions] (val x: Self) extends AnyVal {
     
     inline def setQueue(value: Any | Boolean): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     

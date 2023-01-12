@@ -39,7 +39,8 @@ object typesLayoutGridListCellMod {
       __obj.asInstanceOf[GridListCellProps]
     }
     
-    extension [Self <: GridListCellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridListCellProps] (val x: Self) extends AnyVal {
       
       inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
       

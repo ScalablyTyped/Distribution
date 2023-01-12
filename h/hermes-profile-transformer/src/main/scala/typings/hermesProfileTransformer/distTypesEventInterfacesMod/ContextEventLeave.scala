@@ -20,7 +20,8 @@ object ContextEventLeave {
     __obj.asInstanceOf[ContextEventLeave]
   }
   
-  extension [Self <: ContextEventLeave](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextEventLeave] (val x: Self) extends AnyVal {
     
     inline def setPh(value: CONTEXT_EVENTS_LEAVE): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
   }

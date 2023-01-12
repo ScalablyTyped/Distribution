@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[KeyObject]
     }
     
-    extension [Self <: KeyObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyObject] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: Boolean): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       

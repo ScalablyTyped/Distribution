@@ -46,7 +46,8 @@ object PartialClassNameMapRating {
     __obj.asInstanceOf[PartialClassNameMapRating]
   }
   
-  extension [Self <: PartialClassNameMapRating](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapRating] (val x: Self) extends AnyVal {
     
     inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
     

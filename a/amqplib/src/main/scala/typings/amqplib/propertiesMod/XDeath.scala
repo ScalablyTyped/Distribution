@@ -39,7 +39,8 @@ object XDeath {
     __obj.asInstanceOf[XDeath]
   }
   
-  extension [Self <: XDeath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDeath] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

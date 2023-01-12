@@ -18,7 +18,8 @@ object Changed {
     __obj.asInstanceOf[Changed]
   }
   
-  extension [Self <: Changed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Changed] (val x: Self) extends AnyVal {
     
     inline def setChanged(value: js.Array[ViewToken]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
     

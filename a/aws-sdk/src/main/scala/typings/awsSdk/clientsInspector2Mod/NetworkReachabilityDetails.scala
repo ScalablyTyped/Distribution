@@ -28,7 +28,8 @@ object NetworkReachabilityDetails {
     __obj.asInstanceOf[NetworkReachabilityDetails]
   }
   
-  extension [Self <: NetworkReachabilityDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkReachabilityDetails] (val x: Self) extends AnyVal {
     
     inline def setNetworkPath(value: NetworkPath): Self = StObject.set(x, "networkPath", value.asInstanceOf[js.Any])
     

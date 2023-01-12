@@ -18,7 +18,8 @@ object RefinedParams {
     __obj.asInstanceOf[RefinedParams[RT]]
   }
   
-  extension [Self <: RefinedParams[?], RT /* <: js.UndefOr[ResponseType] */](x: Self & RefinedParams[RT]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefinedParams[?], RT /* <: js.UndefOr[ResponseType] */] (val x: Self & RefinedParams[RT]) extends AnyVal {
     
     inline def setResponseType(value: RT): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     

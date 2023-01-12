@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsEsignatureboldMod extends Shor
       __obj.asInstanceOf[ESignatureBoldProps]
     }
     
-    extension [Self <: ESignatureBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ESignatureBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

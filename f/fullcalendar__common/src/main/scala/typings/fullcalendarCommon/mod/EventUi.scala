@@ -40,7 +40,8 @@ object EventUi {
     __obj.asInstanceOf[EventUi]
   }
   
-  extension [Self <: EventUi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventUi] (val x: Self) extends AnyVal {
     
     inline def setAllows(value: js.Array[AllowFunc]): Self = StObject.set(x, "allows", value.asInstanceOf[js.Any])
     

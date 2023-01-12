@@ -39,7 +39,8 @@ object BinOp {
     __obj.asInstanceOf[BinOp]
   }
   
-  extension [Self <: BinOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinOp] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: Expression): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

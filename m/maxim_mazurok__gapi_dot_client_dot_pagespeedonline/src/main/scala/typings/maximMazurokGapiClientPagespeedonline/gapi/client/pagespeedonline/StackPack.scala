@@ -27,7 +27,8 @@ object StackPack {
     __obj.asInstanceOf[StackPack]
   }
   
-  extension [Self <: StackPack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackPack] (val x: Self) extends AnyVal {
     
     inline def setDescriptions(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

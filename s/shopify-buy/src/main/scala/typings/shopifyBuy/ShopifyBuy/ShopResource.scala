@@ -17,7 +17,8 @@ object ShopResource {
     __obj.asInstanceOf[ShopResource]
   }
   
-  extension [Self <: ShopResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShopResource] (val x: Self) extends AnyVal {
     
     inline def setFetchInfo(value: () => js.Promise[Shop]): Self = StObject.set(x, "fetchInfo", js.Any.fromFunction0(value))
     

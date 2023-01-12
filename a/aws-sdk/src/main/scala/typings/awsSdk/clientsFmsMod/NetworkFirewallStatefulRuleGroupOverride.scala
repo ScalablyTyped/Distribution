@@ -18,7 +18,8 @@ object NetworkFirewallStatefulRuleGroupOverride {
     __obj.asInstanceOf[NetworkFirewallStatefulRuleGroupOverride]
   }
   
-  extension [Self <: NetworkFirewallStatefulRuleGroupOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkFirewallStatefulRuleGroupOverride] (val x: Self) extends AnyVal {
     
     inline def setAction(value: NetworkFirewallOverrideAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object IndicatorSrc {
     __obj.asInstanceOf[IndicatorSrc]
   }
   
-  extension [Self <: IndicatorSrc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicatorSrc] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

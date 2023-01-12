@@ -103,7 +103,8 @@ object TreeProps {
     __obj.asInstanceOf[TreeProps]
   }
   
-  extension [Self <: TreeProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

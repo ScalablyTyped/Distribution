@@ -19,7 +19,8 @@ object DisjunctiveMatchStatement {
     __obj.asInstanceOf[DisjunctiveMatchStatement]
   }
   
-  extension [Self <: DisjunctiveMatchStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisjunctiveMatchStatement] (val x: Self) extends AnyVal {
     
     inline def setEventFilters(value: js.Array[EventFilter]): Self = StObject.set(x, "eventFilters", value.asInstanceOf[js.Any])
     

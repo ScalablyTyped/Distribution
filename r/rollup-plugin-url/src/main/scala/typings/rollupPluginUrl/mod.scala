@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[PluginURLOptions]
     }
     
-    extension [Self <: PluginURLOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginURLOptions] (val x: Self) extends AnyVal {
       
       inline def setDestDist(value: String): Self = StObject.set(x, "destDist", value.asInstanceOf[js.Any])
       

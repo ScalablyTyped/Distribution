@@ -25,7 +25,8 @@ object GoogleCloudDialogflowV2beta1SetSuggestionFeatureConfigOperationMetadata {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1SetSuggestionFeatureConfigOperationMetadata]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1SetSuggestionFeatureConfigOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1SetSuggestionFeatureConfigOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setConversationProfile(value: String): Self = StObject.set(x, "conversationProfile", value.asInstanceOf[js.Any])
     

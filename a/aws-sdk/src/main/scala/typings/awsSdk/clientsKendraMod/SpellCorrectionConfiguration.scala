@@ -18,7 +18,8 @@ object SpellCorrectionConfiguration {
     __obj.asInstanceOf[SpellCorrectionConfiguration]
   }
   
-  extension [Self <: SpellCorrectionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpellCorrectionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setIncludeQuerySpellCheckSuggestions(value: Boolean): Self = StObject.set(x, "IncludeQuerySpellCheckSuggestions", value.asInstanceOf[js.Any])
   }

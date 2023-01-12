@@ -23,7 +23,8 @@ object GetInAppMessagesRequest {
     __obj.asInstanceOf[GetInAppMessagesRequest]
   }
   
-  extension [Self <: GetInAppMessagesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInAppMessagesRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

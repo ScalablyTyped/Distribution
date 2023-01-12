@@ -90,7 +90,8 @@ object ODataContext {
       __obj.asInstanceOf[ODataRequestOptions]
     }
     
-    extension [Self <: ODataRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ODataRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setAccepts(value: Any): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
       

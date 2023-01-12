@@ -30,7 +30,8 @@ object SinonMock {
     __obj.asInstanceOf[SinonMock]
   }
   
-  extension [Self <: SinonMock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SinonMock] (val x: Self) extends AnyVal {
     
     inline def setExpects(value: String => SinonExpectation): Self = StObject.set(x, "expects", js.Any.fromFunction1(value))
     

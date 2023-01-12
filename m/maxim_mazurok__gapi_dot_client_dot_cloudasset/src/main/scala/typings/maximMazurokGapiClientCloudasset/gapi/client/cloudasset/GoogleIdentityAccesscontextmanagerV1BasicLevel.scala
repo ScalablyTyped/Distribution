@@ -22,7 +22,8 @@ object GoogleIdentityAccesscontextmanagerV1BasicLevel {
     __obj.asInstanceOf[GoogleIdentityAccesscontextmanagerV1BasicLevel]
   }
   
-  extension [Self <: GoogleIdentityAccesscontextmanagerV1BasicLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleIdentityAccesscontextmanagerV1BasicLevel] (val x: Self) extends AnyVal {
     
     inline def setCombiningFunction(value: String): Self = StObject.set(x, "combiningFunction", value.asInstanceOf[js.Any])
     

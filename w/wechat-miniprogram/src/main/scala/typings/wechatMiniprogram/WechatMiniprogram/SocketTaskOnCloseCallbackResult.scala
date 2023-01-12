@@ -19,7 +19,8 @@ object SocketTaskOnCloseCallbackResult {
     __obj.asInstanceOf[SocketTaskOnCloseCallbackResult]
   }
   
-  extension [Self <: SocketTaskOnCloseCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocketTaskOnCloseCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

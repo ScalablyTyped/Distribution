@@ -23,7 +23,8 @@ object TimedTextSize {
     __obj.asInstanceOf[TimedTextSize]
   }
   
-  extension [Self <: TimedTextSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimedTextSize] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

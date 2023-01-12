@@ -17,7 +17,8 @@ object ComponentControlWidth {
     __obj.asInstanceOf[ComponentControlWidth]
   }
   
-  extension [Self <: ComponentControlWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentControlWidth] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: ControlWidth): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

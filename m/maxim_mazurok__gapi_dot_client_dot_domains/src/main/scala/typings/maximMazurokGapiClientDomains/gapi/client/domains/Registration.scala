@@ -70,7 +70,8 @@ object Registration {
     __obj.asInstanceOf[Registration]
   }
   
-  extension [Self <: Registration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Registration] (val x: Self) extends AnyVal {
     
     inline def setContactSettings(value: ContactSettings): Self = StObject.set(x, "contactSettings", value.asInstanceOf[js.Any])
     

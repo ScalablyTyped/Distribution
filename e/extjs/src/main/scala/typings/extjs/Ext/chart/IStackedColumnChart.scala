@@ -20,7 +20,8 @@ object IStackedColumnChart {
     __obj.asInstanceOf[IStackedColumnChart]
   }
   
-  extension [Self <: IStackedColumnChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStackedColumnChart] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

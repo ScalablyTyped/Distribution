@@ -23,7 +23,8 @@ object ListMobileSdkReleasesResponse {
     __obj.asInstanceOf[ListMobileSdkReleasesResponse]
   }
   
-  extension [Self <: ListMobileSdkReleasesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMobileSdkReleasesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

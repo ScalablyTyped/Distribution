@@ -26,7 +26,8 @@ object SemanticRolesResult {
     __obj.asInstanceOf[SemanticRolesResult]
   }
   
-  extension [Self <: SemanticRolesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SemanticRolesResult] (val x: Self) extends AnyVal {
     
     inline def setAction(value: SemanticRolesResultAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

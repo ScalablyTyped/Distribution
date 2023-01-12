@@ -42,7 +42,8 @@ object CaptureSnapshotRequest {
     __obj.asInstanceOf[CaptureSnapshotRequest]
   }
   
-  extension [Self <: CaptureSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptureSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setComputedStyles(value: js.Array[String]): Self = StObject.set(x, "computedStyles", value.asInstanceOf[js.Any])
     

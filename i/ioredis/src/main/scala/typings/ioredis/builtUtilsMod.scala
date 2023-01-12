@@ -69,7 +69,8 @@ object builtUtilsMod {
       __obj.asInstanceOf[TLSOptions]
     }
     
-    extension [Self <: TLSOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TLSOptions] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

@@ -39,7 +39,8 @@ object CanvasLine {
     __obj.asInstanceOf[CanvasLine]
   }
   
-  extension [Self <: CanvasLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasLine] (val x: Self) extends AnyVal {
     
     inline def setLineCap(value: CanvasLineCap): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
     

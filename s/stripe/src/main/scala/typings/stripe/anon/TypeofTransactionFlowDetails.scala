@@ -15,7 +15,8 @@ object TypeofTransactionFlowDetails {
     __obj.asInstanceOf[TypeofTransactionFlowDetails]
   }
   
-  extension [Self <: TypeofTransactionFlowDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTransactionFlowDetails] (val x: Self) extends AnyVal {
     
     inline def setFlowDetails(value: Any): Self = StObject.set(x, "FlowDetails", value.asInstanceOf[js.Any])
   }

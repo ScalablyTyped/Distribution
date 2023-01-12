@@ -18,7 +18,8 @@ object AssociateWebsiteAuthorizationProviderResponse {
     __obj.asInstanceOf[AssociateWebsiteAuthorizationProviderResponse]
   }
   
-  extension [Self <: AssociateWebsiteAuthorizationProviderResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateWebsiteAuthorizationProviderResponse] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationProviderId(value: Id): Self = StObject.set(x, "AuthorizationProviderId", value.asInstanceOf[js.Any])
     

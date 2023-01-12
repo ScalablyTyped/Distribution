@@ -30,7 +30,8 @@ object FormatProtectionUpdateData {
     __obj.asInstanceOf[FormatProtectionUpdateData]
   }
   
-  extension [Self <: FormatProtectionUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatProtectionUpdateData] (val x: Self) extends AnyVal {
     
     inline def setFormulaHidden(value: Boolean): Self = StObject.set(x, "formulaHidden", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetSnowballUsageResult {
     __obj.asInstanceOf[GetSnowballUsageResult]
   }
   
-  extension [Self <: GetSnowballUsageResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSnowballUsageResult] (val x: Self) extends AnyVal {
     
     inline def setSnowballLimit(value: Integer): Self = StObject.set(x, "SnowballLimit", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object Mergeablepulls {
     __obj.asInstanceOf[Mergeablepulls]
   }
   
-  extension [Self <: Mergeablepulls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mergeablepulls] (val x: Self) extends AnyVal {
     
     inline def setMergeable_pulls(value: Double): Self = StObject.set(x, "mergeable_pulls", value.asInstanceOf[js.Any])
     

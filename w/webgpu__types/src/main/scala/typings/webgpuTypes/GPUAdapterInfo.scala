@@ -49,7 +49,8 @@ object GPUAdapterInfo {
     __obj.asInstanceOf[GPUAdapterInfo]
   }
   
-  extension [Self <: GPUAdapterInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUAdapterInfo] (val x: Self) extends AnyVal {
     
     inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     

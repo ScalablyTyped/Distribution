@@ -49,7 +49,8 @@ object XDDELinkResults {
     __obj.asInstanceOf[XDDELinkResults]
   }
   
-  extension [Self <: XDDELinkResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDDELinkResults] (val x: Self) extends AnyVal {
     
     inline def setGetResults(value: () => SafeArray[SafeArray[Any]]): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
     

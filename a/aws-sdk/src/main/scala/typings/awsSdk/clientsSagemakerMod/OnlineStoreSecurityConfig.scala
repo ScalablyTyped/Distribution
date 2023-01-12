@@ -18,7 +18,8 @@ object OnlineStoreSecurityConfig {
     __obj.asInstanceOf[OnlineStoreSecurityConfig]
   }
   
-  extension [Self <: OnlineStoreSecurityConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnlineStoreSecurityConfig] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     

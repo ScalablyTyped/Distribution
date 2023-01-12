@@ -108,7 +108,8 @@ object DescribeChangeSetOutput {
     __obj.asInstanceOf[DescribeChangeSetOutput]
   }
   
-  extension [Self <: DescribeChangeSetOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeChangeSetOutput] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: Capabilities): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     

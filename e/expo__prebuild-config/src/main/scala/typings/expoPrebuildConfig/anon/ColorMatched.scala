@@ -53,7 +53,8 @@ object ColorMatched {
     __obj.asInstanceOf[ColorMatched]
   }
   
-  extension [Self <: ColorMatched](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorMatched] (val x: Self) extends AnyVal {
     
     inline def setColorMatched(value: IBBoolean): Self = StObject.set(x, "colorMatched", value.asInstanceOf[js.Any])
     

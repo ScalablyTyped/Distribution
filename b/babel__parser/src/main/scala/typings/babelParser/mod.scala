@@ -66,7 +66,8 @@ object mod {
       __obj.asInstanceOf[DecoratorsPluginOptions]
     }
     
-    extension [Self <: DecoratorsPluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecoratorsPluginOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowCallParenthesized(value: Boolean): Self = StObject.set(x, "allowCallParenthesized", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[FlowPluginOptions]
     }
     
-    extension [Self <: FlowPluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlowPluginOptions] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object mod {
       __obj.asInstanceOf[ParseError]
     }
     
-    extension [Self <: ParseError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -237,7 +240,8 @@ object mod {
       __obj.asInstanceOf[ParserOptions]
     }
     
-    extension [Self <: ParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowAwaitOutsideFunction(value: Boolean): Self = StObject.set(x, "allowAwaitOutsideFunction", value.asInstanceOf[js.Any])
       
@@ -329,7 +333,8 @@ object mod {
       __obj.asInstanceOf[PipelineOperatorPluginOptions]
     }
     
-    extension [Self <: PipelineOperatorPluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PipelineOperatorPluginOptions] (val x: Self) extends AnyVal {
       
       inline def setProposal(value: minimal | fsharp | hack | smart): Self = StObject.set(x, "proposal", value.asInstanceOf[js.Any])
       
@@ -396,7 +401,8 @@ object mod {
       __obj.asInstanceOf[RecordAndTuplePluginOptions]
     }
     
-    extension [Self <: RecordAndTuplePluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordAndTuplePluginOptions] (val x: Self) extends AnyVal {
       
       inline def setSyntaxType(value: bar | hash): Self = StObject.set(x, "syntaxType", value.asInstanceOf[js.Any])
     }
@@ -415,7 +421,8 @@ object mod {
       __obj.asInstanceOf[TypeScriptPluginOptions]
     }
     
-    extension [Self <: TypeScriptPluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeScriptPluginOptions] (val x: Self) extends AnyVal {
       
       inline def setDisallowAmbiguousJSXLike(value: Boolean): Self = StObject.set(x, "disallowAmbiguousJSXLike", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object RunTaskRequest {
     __obj.asInstanceOf[RunTaskRequest]
   }
   
-  extension [Self <: RunTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setResponseView(value: View): Self = StObject.set(x, "responseView", value.asInstanceOf[js.Any])
     

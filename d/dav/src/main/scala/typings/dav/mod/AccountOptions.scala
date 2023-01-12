@@ -30,7 +30,8 @@ object AccountOptions {
     __obj.asInstanceOf[AccountOptions]
   }
   
-  extension [Self <: AccountOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountOptions] (val x: Self) extends AnyVal {
     
     inline def setAddressBooks(value: js.Array[AddressBook]): Self = StObject.set(x, "addressBooks", value.asInstanceOf[js.Any])
     

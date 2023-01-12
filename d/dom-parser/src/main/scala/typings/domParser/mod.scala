@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[DOMSearchable]
     }
     
-    extension [Self <: DOMSearchable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DOMSearchable] (val x: Self) extends AnyVal {
       
       inline def setGetElementById(value: String => Node | Null): Self = StObject.set(x, "getElementById", js.Any.fromFunction1(value))
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[Dom]
     }
     
-    extension [Self <: Dom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dom] (val x: Self) extends AnyVal {
       
       inline def setGetElementsByAttribute(value: (String, String) => js.Array[Node] | Null): Self = StObject.set(x, "getElementsByAttribute", js.Any.fromFunction2(value))
     }
@@ -108,7 +110,8 @@ object mod {
       __obj.asInstanceOf[DomParser]
     }
     
-    extension [Self <: DomParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomParser] (val x: Self) extends AnyVal {
       
       inline def setParseFromString(value: String => Dom): Self = StObject.set(x, "parseFromString", js.Any.fromFunction1(value))
     }
@@ -160,7 +163,8 @@ object mod {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object opensshForwardedStreamLocalChannelInfo {
     __obj.asInstanceOf[opensshForwardedStreamLocalChannelInfo]
   }
   
-  extension [Self <: opensshForwardedStreamLocalChannelInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: opensshForwardedStreamLocalChannelInfo] (val x: Self) extends AnyVal {
     
     inline def setData(value: SocketChannelData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

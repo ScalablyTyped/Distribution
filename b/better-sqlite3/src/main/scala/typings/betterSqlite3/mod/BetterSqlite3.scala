@@ -32,7 +32,8 @@ object BetterSqlite3 {
       __obj.asInstanceOf[typings.betterSqlite3.mod.BetterSqlite3.ColumnDefinition]
     }
     
-    extension [Self <: typings.betterSqlite3.mod.BetterSqlite3.ColumnDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.betterSqlite3.mod.BetterSqlite3.ColumnDefinition] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -208,7 +209,8 @@ object BetterSqlite3 {
       __obj.asInstanceOf[VirtualTableOptions]
     }
     
-    extension [Self <: VirtualTableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirtualTableOptions] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       

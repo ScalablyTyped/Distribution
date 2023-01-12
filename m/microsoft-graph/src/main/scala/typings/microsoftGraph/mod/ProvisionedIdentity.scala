@@ -21,7 +21,8 @@ object ProvisionedIdentity {
     __obj.asInstanceOf[ProvisionedIdentity]
   }
   
-  extension [Self <: ProvisionedIdentity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisionedIdentity] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: NullableOption[DetailsInfo]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

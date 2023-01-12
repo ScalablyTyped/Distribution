@@ -18,7 +18,8 @@ object IFinalizable {
     __obj.asInstanceOf[IFinalizable]
   }
   
-  extension [Self <: IFinalizable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFinalizable] (val x: Self) extends AnyVal {
     
     inline def setToCamlQuery(value: () => Any): Self = StObject.set(x, "ToCamlQuery", js.Any.fromFunction0(value))
   }

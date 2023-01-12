@@ -23,7 +23,8 @@ object CriteriaForJob {
     __obj.asInstanceOf[CriteriaForJob]
   }
   
-  extension [Self <: CriteriaForJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CriteriaForJob] (val x: Self) extends AnyVal {
     
     inline def setSimpleCriterion(value: SimpleCriterionForJob): Self = StObject.set(x, "simpleCriterion", value.asInstanceOf[js.Any])
     

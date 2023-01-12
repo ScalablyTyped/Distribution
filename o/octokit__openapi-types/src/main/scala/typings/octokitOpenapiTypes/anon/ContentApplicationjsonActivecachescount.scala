@@ -15,7 +15,8 @@ object ContentApplicationjsonActivecachescount {
     __obj.asInstanceOf[ContentApplicationjsonActivecachescount]
   }
   
-  extension [Self <: ContentApplicationjsonActivecachescount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonActivecachescount] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonActivecachescount): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

@@ -27,7 +27,8 @@ object libTypescriptExtensionVueTypeScriptVueExtensionConfigMod {
       __obj.asInstanceOf[TypeScriptVueExtensionConfig]
     }
     
-    extension [Self <: TypeScriptVueExtensionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeScriptVueExtensionConfig] (val x: Self) extends AnyVal {
       
       inline def setCompiler(value: String): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       

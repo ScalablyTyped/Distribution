@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[MulticastDNSComponents]
     }
     
-    extension [Self <: MulticastDNSComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MulticastDNSComponents] (val x: Self) extends AnyVal {
       
       inline def setAddressManager(value: AddressManager): Self = StObject.set(x, "addressManager", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object mod {
       __obj.asInstanceOf[MulticastDNSInit]
     }
     
-    extension [Self <: MulticastDNSInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MulticastDNSInit] (val x: Self) extends AnyVal {
       
       inline def setBroadcast(value: Boolean): Self = StObject.set(x, "broadcast", value.asInstanceOf[js.Any])
       

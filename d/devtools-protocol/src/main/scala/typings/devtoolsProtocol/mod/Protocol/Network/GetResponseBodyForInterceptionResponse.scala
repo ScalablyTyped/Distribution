@@ -23,7 +23,8 @@ object GetResponseBodyForInterceptionResponse {
     __obj.asInstanceOf[GetResponseBodyForInterceptionResponse]
   }
   
-  extension [Self <: GetResponseBodyForInterceptionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResponseBodyForInterceptionResponse] (val x: Self) extends AnyVal {
     
     inline def setBase64Encoded(value: Boolean): Self = StObject.set(x, "base64Encoded", value.asInstanceOf[js.Any])
     

@@ -198,7 +198,8 @@ object IMapElements {
     __obj.asInstanceOf[IMapElements]
   }
   
-  extension [Self <: IMapElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMapElements] (val x: Self) extends AnyVal {
     
     inline def setAdminDistrict(value: IBorderedMapElementStyle): Self = StObject.set(x, "adminDistrict", value.asInstanceOf[js.Any])
     

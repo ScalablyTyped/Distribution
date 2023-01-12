@@ -32,7 +32,8 @@ object CssProps {
     __obj.asInstanceOf[CssProps]
   }
   
-  extension [Self <: CssProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CssProps] (val x: Self) extends AnyVal {
     
     inline def setContentZooming(value: String): Self = StObject.set(x, "contentZooming", value.asInstanceOf[js.Any])
     

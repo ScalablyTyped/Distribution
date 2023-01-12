@@ -21,7 +21,8 @@ object EducationSubmissionResource {
     __obj.asInstanceOf[EducationSubmissionResource]
   }
   
-  extension [Self <: EducationSubmissionResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EducationSubmissionResource] (val x: Self) extends AnyVal {
     
     inline def setAssignmentResourceUrl(value: NullableOption[String]): Self = StObject.set(x, "assignmentResourceUrl", value.asInstanceOf[js.Any])
     

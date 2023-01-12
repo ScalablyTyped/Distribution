@@ -15,7 +15,8 @@ object SnapshotCleanupRepositoryResponse {
     __obj.asInstanceOf[SnapshotCleanupRepositoryResponse]
   }
   
-  extension [Self <: SnapshotCleanupRepositoryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotCleanupRepositoryResponse] (val x: Self) extends AnyVal {
     
     inline def setResults(value: SnapshotCleanupRepositoryCleanupRepositoryResults): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
   }

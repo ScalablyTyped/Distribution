@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[FeedUrl_]
     }
     
-    extension [Self <: FeedUrl_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedUrl_] (val x: Self) extends AnyVal {
       
       inline def setFeedUrl(value: String): Self = StObject.set(x, "feedUrl", value.asInstanceOf[js.Any])
     }
@@ -34,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Feedurl]
     }
     
-    extension [Self <: Feedurl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Feedurl] (val x: Self) extends AnyVal {
       
       inline def setFeed_url(value: String): Self = StObject.set(x, "feed_url", value.asInstanceOf[js.Any])
     }
@@ -51,7 +53,8 @@ object anon {
       __obj.asInstanceOf[ImageUrl_]
     }
     
-    extension [Self <: ImageUrl_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageUrl_] (val x: Self) extends AnyVal {
       
       inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
       
@@ -70,7 +73,8 @@ object anon {
       __obj.asInstanceOf[Imageurl]
     }
     
-    extension [Self <: Imageurl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Imageurl] (val x: Self) extends AnyVal {
       
       inline def setImage_url(value: String): Self = StObject.set(x, "image_url", value.asInstanceOf[js.Any])
       
@@ -89,7 +93,8 @@ object anon {
       __obj.asInstanceOf[SiteUrl_]
     }
     
-    extension [Self <: SiteUrl_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SiteUrl_] (val x: Self) extends AnyVal {
       
       inline def setSiteUrl(value: String): Self = StObject.set(x, "siteUrl", value.asInstanceOf[js.Any])
     }
@@ -106,7 +111,8 @@ object anon {
       __obj.asInstanceOf[Siteurl]
     }
     
-    extension [Self <: Siteurl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Siteurl] (val x: Self) extends AnyVal {
       
       inline def setSite_url(value: String): Self = StObject.set(x, "site_url", value.asInstanceOf[js.Any])
     }

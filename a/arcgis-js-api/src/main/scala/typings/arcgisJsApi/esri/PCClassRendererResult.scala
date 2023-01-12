@@ -20,7 +20,8 @@ object PCClassRendererResult {
     __obj.asInstanceOf[PCClassRendererResult]
   }
   
-  extension [Self <: PCClassRendererResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PCClassRendererResult] (val x: Self) extends AnyVal {
     
     inline def setRenderer(value: PointCloudUniqueValueRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
   }

@@ -20,7 +20,8 @@ object ExperimentalFeatures {
     __obj.asInstanceOf[ExperimentalFeatures]
   }
   
-  extension [Self <: ExperimentalFeatures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExperimentalFeatures] (val x: Self) extends AnyVal {
     
     inline def setEnable_image_quality_service(value: Boolean): Self = StObject.set(x, "enable_image_quality_service", value.asInstanceOf[js.Any])
     

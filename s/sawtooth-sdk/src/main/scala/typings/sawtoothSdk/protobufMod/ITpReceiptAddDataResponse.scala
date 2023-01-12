@@ -17,7 +17,8 @@ object ITpReceiptAddDataResponse {
     __obj.asInstanceOf[ITpReceiptAddDataResponse]
   }
   
-  extension [Self <: ITpReceiptAddDataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITpReceiptAddDataResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

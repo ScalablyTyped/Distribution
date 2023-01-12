@@ -23,7 +23,8 @@ object XErrorQuery {
     __obj.asInstanceOf[XErrorQuery]
   }
   
-  extension [Self <: XErrorQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XErrorQuery] (val x: Self) extends AnyVal {
     
     inline def setHasError(value: () => Boolean): Self = StObject.set(x, "hasError", js.Any.fromFunction0(value))
   }

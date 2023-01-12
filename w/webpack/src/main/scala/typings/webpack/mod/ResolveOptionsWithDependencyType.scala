@@ -19,7 +19,8 @@ object ResolveOptionsWithDependencyType {
     __obj.asInstanceOf[ResolveOptionsWithDependencyType]
   }
   
-  extension [Self <: ResolveOptionsWithDependencyType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveOptionsWithDependencyType] (val x: Self) extends AnyVal {
     
     inline def setDependencyType(value: String): Self = StObject.set(x, "dependencyType", value.asInstanceOf[js.Any])
     

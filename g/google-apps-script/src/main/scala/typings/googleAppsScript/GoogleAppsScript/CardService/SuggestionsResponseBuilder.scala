@@ -20,7 +20,8 @@ object SuggestionsResponseBuilder {
     __obj.asInstanceOf[SuggestionsResponseBuilder]
   }
   
-  extension [Self <: SuggestionsResponseBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestionsResponseBuilder] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: () => SuggestionsResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     

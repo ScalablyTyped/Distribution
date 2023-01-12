@@ -23,7 +23,8 @@ object IGenericDimensionsListProperties {
     __obj.asInstanceOf[IGenericDimensionsListProperties]
   }
   
-  extension [Self <: IGenericDimensionsListProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericDimensionsListProperties] (val x: Self) extends AnyVal {
     
     inline def setQDimensionListDef(value: IDimensionListDef): Self = StObject.set(x, "qDimensionListDef", value.asInstanceOf[js.Any])
     

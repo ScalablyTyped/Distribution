@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[CommonOptions]
     }
     
-    extension [Self <: CommonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonOptions] (val x: Self) extends AnyVal {
       
       inline def setIncrement(value: Boolean): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object mod {
       __obj.asInstanceOf[Result[T]]
     }
     
-    extension [Self <: Result[?], T /* <: Data */](x: Self & Result[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result[?], T /* <: Data */] (val x: Self & Result[T]) extends AnyVal {
       
       inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

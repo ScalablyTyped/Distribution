@@ -48,7 +48,8 @@ object TaskOverride {
     __obj.asInstanceOf[TaskOverride]
   }
   
-  extension [Self <: TaskOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskOverride] (val x: Self) extends AnyVal {
     
     inline def setContainerOverrides(value: ContainerOverrides): Self = StObject.set(x, "containerOverrides", value.asInstanceOf[js.Any])
     

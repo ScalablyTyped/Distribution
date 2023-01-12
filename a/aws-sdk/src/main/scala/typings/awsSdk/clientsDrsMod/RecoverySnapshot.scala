@@ -42,7 +42,8 @@ object RecoverySnapshot {
     __obj.asInstanceOf[RecoverySnapshot]
   }
   
-  extension [Self <: RecoverySnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecoverySnapshot] (val x: Self) extends AnyVal {
     
     inline def setEbsSnapshots(value: EbsSnapshotsList): Self = StObject.set(x, "ebsSnapshots", value.asInstanceOf[js.Any])
     

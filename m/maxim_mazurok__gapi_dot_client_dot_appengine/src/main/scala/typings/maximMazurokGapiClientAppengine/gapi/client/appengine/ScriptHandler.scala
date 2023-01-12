@@ -16,7 +16,8 @@ object ScriptHandler {
     __obj.asInstanceOf[ScriptHandler]
   }
   
-  extension [Self <: ScriptHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptHandler] (val x: Self) extends AnyVal {
     
     inline def setScriptPath(value: String): Self = StObject.set(x, "scriptPath", value.asInstanceOf[js.Any])
     

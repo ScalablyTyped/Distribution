@@ -227,7 +227,8 @@ object sapUiCommonsDatePickerMod {
       __obj.asInstanceOf[DatePickerSettings]
     }
     
-    extension [Self <: DatePickerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePickerSettings] (val x: Self) extends AnyVal {
       
       inline def setLocale(value: String | PropertyBindingInfo): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       

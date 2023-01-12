@@ -37,7 +37,8 @@ object ContentIndexMark {
     __obj.asInstanceOf[ContentIndexMark]
   }
   
-  extension [Self <: ContentIndexMark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentIndexMark] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: Double): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
   }

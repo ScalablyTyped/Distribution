@@ -34,7 +34,8 @@ object GoogleActionsTransactionsV3TransactionDecisionValue {
     __obj.asInstanceOf[GoogleActionsTransactionsV3TransactionDecisionValue]
   }
   
-  extension [Self <: GoogleActionsTransactionsV3TransactionDecisionValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsTransactionsV3TransactionDecisionValue] (val x: Self) extends AnyVal {
     
     inline def setDeliveryAddress(value: GoogleActionsV2Location): Self = StObject.set(x, "deliveryAddress", value.asInstanceOf[js.Any])
     

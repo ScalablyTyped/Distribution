@@ -133,7 +133,8 @@ object ARIAMixin {
     __obj.asInstanceOf[ARIAMixin]
   }
   
-  extension [Self <: ARIAMixin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ARIAMixin] (val x: Self) extends AnyVal {
     
     inline def setAriaAtomic(value: java.lang.String): Self = StObject.set(x, "ariaAtomic", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object Trust {
     __obj.asInstanceOf[Trust]
   }
   
-  extension [Self <: Trust](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Trust] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object CreatePermissionRequest {
     __obj.asInstanceOf[CreatePermissionRequest]
   }
   
-  extension [Self <: CreatePermissionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePermissionRequest] (val x: Self) extends AnyVal {
     
     inline def setActions(value: ActionList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     

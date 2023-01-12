@@ -286,7 +286,8 @@ object TouchableWithoutFeedbackP {
     __obj.asInstanceOf[TouchableWithoutFeedbackP]
   }
   
-  extension [Self <: TouchableWithoutFeedbackP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchableWithoutFeedbackP] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,8 @@ object libClassdefPermissionFieldScopeMod {
       __obj.asInstanceOf[PermissionFieldScope]
     }
     
-    extension [Self <: PermissionFieldScope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PermissionFieldScope] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: Double => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

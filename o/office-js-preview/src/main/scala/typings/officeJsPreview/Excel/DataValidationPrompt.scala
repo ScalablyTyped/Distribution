@@ -43,7 +43,8 @@ object DataValidationPrompt {
     __obj.asInstanceOf[DataValidationPrompt]
   }
   
-  extension [Self <: DataValidationPrompt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataValidationPrompt] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

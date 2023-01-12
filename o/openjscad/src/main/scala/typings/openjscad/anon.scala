@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Back]
     }
     
-    extension [Self <: Back](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Back] (val x: Self) extends AnyVal {
       
       inline def setBack(value: Any): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[BoundLen]
     }
     
-    extension [Self <: BoundLen](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoundLen] (val x: Self) extends AnyVal {
       
       inline def setBoundLen(value: Double): Self = StObject.set(x, "boundLen", value.asInstanceOf[js.Any])
       
@@ -103,7 +105,8 @@ object anon {
       __obj.asInstanceOf[Class]
     }
     
-    extension [Self <: Class](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Class] (val x: Self) extends AnyVal {
       
       inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
@@ -147,7 +150,8 @@ object anon {
       __obj.asInstanceOf[SideVertexIndices]
     }
     
-    extension [Self <: SideVertexIndices](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideVertexIndices] (val x: Self) extends AnyVal {
       
       inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       

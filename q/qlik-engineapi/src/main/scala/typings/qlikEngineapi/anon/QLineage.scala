@@ -15,7 +15,8 @@ object QLineage {
     __obj.asInstanceOf[QLineage]
   }
   
-  extension [Self <: QLineage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QLineage] (val x: Self) extends AnyVal {
     
     inline def setQLineage(value: js.Array[QDiscriminator]): Self = StObject.set(x, "qLineage", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object libEsmContextPortalPortalProviderMod {
       __obj.asInstanceOf[PortalContextOptions]
     }
     
-    extension [Self <: PortalContextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortalContextOptions] (val x: Self) extends AnyVal {
       
       inline def setPortalClassName(value: String): Self = StObject.set(x, "portalClassName", value.asInstanceOf[js.Any])
       

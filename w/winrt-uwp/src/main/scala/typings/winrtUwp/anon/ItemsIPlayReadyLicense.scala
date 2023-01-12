@@ -18,7 +18,8 @@ object ItemsIPlayReadyLicense {
     __obj.asInstanceOf[ItemsIPlayReadyLicense]
   }
   
-  extension [Self <: ItemsIPlayReadyLicense](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemsIPlayReadyLicense] (val x: Self) extends AnyVal {
     
     inline def setItems(value: IPlayReadyLicense): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

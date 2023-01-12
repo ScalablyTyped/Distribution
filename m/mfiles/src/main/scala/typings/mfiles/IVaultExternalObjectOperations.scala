@@ -23,7 +23,8 @@ object IVaultExternalObjectOperations {
     __obj.asInstanceOf[IVaultExternalObjectOperations]
   }
   
-  extension [Self <: IVaultExternalObjectOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultExternalObjectOperations] (val x: Self) extends AnyVal {
     
     inline def setPromoteObject(
       value: (IObjVer, IPropertyValues, MFACLEnforcingMode, IAccessControlList) => IObjectVersionAndProperties

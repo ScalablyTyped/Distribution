@@ -60,7 +60,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Auth]
     }
     
-    extension [Self <: Auth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Auth] (val x: Self) extends AnyVal {
       
       inline def setNeedsPermission(
         value: String => js.Function3[
@@ -142,7 +143,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[EditorAPIModule]
     }
     
-    extension [Self <: EditorAPIModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorAPIModule] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       

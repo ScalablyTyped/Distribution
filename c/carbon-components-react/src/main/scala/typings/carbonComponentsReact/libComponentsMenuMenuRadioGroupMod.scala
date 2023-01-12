@@ -27,7 +27,8 @@ object libComponentsMenuMenuRadioGroupMod extends Shortcut {
       __obj.asInstanceOf[MenuRadioGroupProps]
     }
     
-    extension [Self <: MenuRadioGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuRadioGroupProps] (val x: Self) extends AnyVal {
       
       inline def setInitialSelectedItem(value: String): Self = StObject.set(x, "initialSelectedItem", value.asInstanceOf[js.Any])
       

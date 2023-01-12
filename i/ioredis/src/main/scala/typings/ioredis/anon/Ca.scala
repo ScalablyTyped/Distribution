@@ -151,7 +151,8 @@ object Ca {
     __obj.asInstanceOf[Ca]
   }
   
-  extension [Self <: Ca](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ca] (val x: Self) extends AnyVal {
     
     inline def setCa(
       value: /* -----BEGIN CERTIFICATE-----

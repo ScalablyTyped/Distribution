@@ -51,7 +51,8 @@ object InstanceGroupManagerUpdatePolicy {
     __obj.asInstanceOf[InstanceGroupManagerUpdatePolicy]
   }
   
-  extension [Self <: InstanceGroupManagerUpdatePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceGroupManagerUpdatePolicy] (val x: Self) extends AnyVal {
     
     inline def setInstanceRedistributionType(value: String): Self = StObject.set(x, "instanceRedistributionType", value.asInstanceOf[js.Any])
     

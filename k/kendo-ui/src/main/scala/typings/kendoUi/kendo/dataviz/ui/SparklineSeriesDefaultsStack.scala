@@ -15,7 +15,8 @@ object SparklineSeriesDefaultsStack {
     __obj.asInstanceOf[SparklineSeriesDefaultsStack]
   }
   
-  extension [Self <: SparklineSeriesDefaultsStack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparklineSeriesDefaultsStack] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

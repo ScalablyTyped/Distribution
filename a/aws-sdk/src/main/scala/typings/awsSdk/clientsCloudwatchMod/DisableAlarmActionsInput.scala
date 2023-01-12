@@ -18,7 +18,8 @@ object DisableAlarmActionsInput {
     __obj.asInstanceOf[DisableAlarmActionsInput]
   }
   
-  extension [Self <: DisableAlarmActionsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableAlarmActionsInput] (val x: Self) extends AnyVal {
     
     inline def setAlarmNames(value: AlarmNames): Self = StObject.set(x, "AlarmNames", value.asInstanceOf[js.Any])
     

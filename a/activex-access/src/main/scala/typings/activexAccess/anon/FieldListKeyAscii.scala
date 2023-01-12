@@ -17,7 +17,8 @@ object FieldListKeyAscii {
     __obj.asInstanceOf[FieldListKeyAscii]
   }
   
-  extension [Self <: FieldListKeyAscii](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldListKeyAscii] (val x: Self) extends AnyVal {
     
     inline def setFieldList(value: Double): Self = StObject.set(x, "FieldList", value.asInstanceOf[js.Any])
     

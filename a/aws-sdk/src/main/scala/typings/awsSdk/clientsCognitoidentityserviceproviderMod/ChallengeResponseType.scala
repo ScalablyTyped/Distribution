@@ -23,7 +23,8 @@ object ChallengeResponseType {
     __obj.asInstanceOf[ChallengeResponseType]
   }
   
-  extension [Self <: ChallengeResponseType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChallengeResponseType] (val x: Self) extends AnyVal {
     
     inline def setChallengeName(value: ChallengeName): Self = StObject.set(x, "ChallengeName", value.asInstanceOf[js.Any])
     

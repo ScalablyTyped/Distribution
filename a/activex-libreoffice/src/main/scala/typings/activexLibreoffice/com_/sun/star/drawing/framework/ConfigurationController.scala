@@ -48,7 +48,8 @@ object ConfigurationController {
     __obj.asInstanceOf[ConfigurationController]
   }
   
-  extension [Self <: ConfigurationController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationController] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: XController => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }

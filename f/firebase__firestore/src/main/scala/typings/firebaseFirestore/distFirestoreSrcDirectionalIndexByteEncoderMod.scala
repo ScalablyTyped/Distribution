@@ -29,7 +29,8 @@ object distFirestoreSrcDirectionalIndexByteEncoderMod {
       __obj.asInstanceOf[DirectionalIndexByteEncoder]
     }
     
-    extension [Self <: DirectionalIndexByteEncoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectionalIndexByteEncoder] (val x: Self) extends AnyVal {
       
       inline def setWriteBytes(value: ByteString => Unit): Self = StObject.set(x, "writeBytes", js.Any.fromFunction1(value))
       

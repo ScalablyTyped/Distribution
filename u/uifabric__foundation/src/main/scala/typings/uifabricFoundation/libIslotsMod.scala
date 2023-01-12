@@ -45,7 +45,8 @@ object libIslotsMod {
       __obj.asInstanceOf[IDefaultSlotProps[TSlots]]
     }
     
-    extension [Self <: IDefaultSlotProps[?], TSlots](x: Self & IDefaultSlotProps[TSlots]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDefaultSlotProps[?], TSlots] (val x: Self & IDefaultSlotProps[TSlots]) extends AnyVal {
       
       inline def set_defaultStyles(value: IComponentStyles[TSlots]): Self = StObject.set(x, "_defaultStyles", value.asInstanceOf[js.Any])
     }
@@ -62,7 +63,8 @@ object libIslotsMod {
       __obj.asInstanceOf[IProcessedSlotProps]
     }
     
-    extension [Self <: IProcessedSlotProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProcessedSlotProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object libIslotsMod {
       __obj.asInstanceOf[ISlotCreator[TProps, TShorthandProp]]
     }
     
-    extension [Self <: ISlotCreator[?, ?], TProps /* <: ValidProps */, TShorthandProp /* <: ValidShorthand */](x: Self & (ISlotCreator[TProps, TShorthandProp])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISlotCreator[?, ?], TProps /* <: ValidProps */, TShorthandProp /* <: ValidShorthand */] (val x: Self & (ISlotCreator[TProps, TShorthandProp])) extends AnyVal {
       
       inline def setCreate(
         value: (/* componentProps */ TProps & IProcessedSlotProps, /* userProps */ ISlotProp[TProps, TShorthandProp], /* slotOptions */ js.UndefOr[ISlotOptions[TProps]], /* defaultStyles */ IStyle, /* theme */ js.UndefOr[ITheme]) => ReturnType[FunctionComponent[TProps]]
@@ -132,7 +135,8 @@ object libIslotsMod {
       __obj.asInstanceOf[ISlotOptions[TProps]]
     }
     
-    extension [Self <: ISlotOptions[?], TProps](x: Self & ISlotOptions[TProps]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISlotOptions[?], TProps] (val x: Self & ISlotOptions[TProps]) extends AnyVal {
       
       inline def setComponent(value: ElementType[TProps]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

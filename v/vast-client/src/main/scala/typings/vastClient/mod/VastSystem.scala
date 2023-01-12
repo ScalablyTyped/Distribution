@@ -17,7 +17,8 @@ object VastSystem {
     __obj.asInstanceOf[VastSystem]
   }
   
-  extension [Self <: VastSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VastSystem] (val x: Self) extends AnyVal {
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object TypeHierarchyProvider {
     __obj.asInstanceOf[TypeHierarchyProvider]
   }
   
-  extension [Self <: TypeHierarchyProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeHierarchyProvider] (val x: Self) extends AnyVal {
     
     inline def setPrepareTypeHierarchy(
       value: (TextDocument, Position, CancellationToken) => ProviderResult[TypeHierarchyItem | js.Array[TypeHierarchyItem]]

@@ -53,7 +53,8 @@ object Fingerprint {
     __obj.asInstanceOf[Fingerprint]
   }
   
-  extension [Self <: Fingerprint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fingerprint] (val x: Self) extends AnyVal {
     
     inline def setApp(value: ClientidName): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     

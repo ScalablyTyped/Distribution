@@ -46,7 +46,8 @@ object ReadonlyRequiredIEditorMi {
     __obj.asInstanceOf[ReadonlyRequiredIEditorMi]
   }
   
-  extension [Self <: ReadonlyRequiredIEditorMi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyRequiredIEditorMi] (val x: Self) extends AnyVal {
     
     inline def setAutohide(value: Boolean): Self = StObject.set(x, "autohide", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ListPermissionsRequest {
     __obj.asInstanceOf[ListPermissionsRequest]
   }
   
-  extension [Self <: ListPermissionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPermissionsRequest] (val x: Self) extends AnyVal {
     
     inline def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
     

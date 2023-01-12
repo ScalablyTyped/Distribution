@@ -27,7 +27,8 @@ object libCoreMessagesMethodsSubscribeMod {
       __obj.asInstanceOf[IncomingRequestWithSubscription]
     }
     
-    extension [Self <: IncomingRequestWithSubscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncomingRequestWithSubscription] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: IncomingNotifyRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object libCoreMessagesMethodsSubscribeMod {
       __obj.asInstanceOf[OutgoingSubscribeRequestDelegate]
     }
     
-    extension [Self <: OutgoingSubscribeRequestDelegate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutgoingSubscribeRequestDelegate] (val x: Self) extends AnyVal {
       
       inline def setOnNotify(value: /* request */ IncomingRequestWithSubscription => Unit): Self = StObject.set(x, "onNotify", js.Any.fromFunction1(value))
       

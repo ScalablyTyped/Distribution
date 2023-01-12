@@ -49,7 +49,8 @@ object MySqlReplicaConfiguration {
     __obj.asInstanceOf[MySqlReplicaConfiguration]
   }
   
-  extension [Self <: MySqlReplicaConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MySqlReplicaConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCaCertificate(value: String): Self = StObject.set(x, "caCertificate", value.asInstanceOf[js.Any])
     

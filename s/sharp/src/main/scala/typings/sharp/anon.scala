@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setResolveWithObject(value: `true`): Self = StObject.set(x, "resolveWithObject", value.asInstanceOf[js.Any])
     }
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Alias]
     }
     
-    extension [Self <: Alias](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alias] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object anon {
       __obj.asInstanceOf[B]
     }
     
-    extension [Self <: B](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: B] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -102,7 +105,8 @@ object anon {
       __obj.asInstanceOf[Brightness]
     }
     
-    extension [Self <: Brightness](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Brightness] (val x: Self) extends AnyVal {
       
       inline def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
       
@@ -139,7 +143,8 @@ object anon {
       __obj.asInstanceOf[Buffer]
     }
     
-    extension [Self <: Buffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Buffer] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -166,7 +171,8 @@ object anon {
       __obj.asInstanceOf[Create]
     }
     
-    extension [Self <: Create](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Create] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: typings.sharp.mod.Create): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     }
@@ -187,7 +193,8 @@ object anon {
       __obj.asInstanceOf[Current]
     }
     
-    extension [Self <: Current](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Current] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -210,7 +217,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: typings.node.bufferMod.global.Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -231,7 +239,8 @@ object anon {
       __obj.asInstanceOf[Max]
     }
     
-    extension [Self <: Max](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -250,7 +259,8 @@ object anon {
       __obj.asInstanceOf[Raw]
     }
     
-    extension [Self <: Raw](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Raw] (val x: Self) extends AnyVal {
       
       inline def setRaw(value: typings.sharp.mod.Raw): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     }
@@ -267,7 +277,8 @@ object anon {
       __obj.asInstanceOf[ResolveWithObject]
     }
     
-    extension [Self <: ResolveWithObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveWithObject] (val x: Self) extends AnyVal {
       
       inline def setResolveWithObject(value: `false`): Self = StObject.set(x, "resolveWithObject", value.asInstanceOf[js.Any])
     }
@@ -284,7 +295,8 @@ object anon {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setText(value: CreateText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }

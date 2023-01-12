@@ -77,7 +77,8 @@ object ScaleConfig {
     __obj.asInstanceOf[ScaleConfig]
   }
   
-  extension [Self <: ScaleConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleConfig] (val x: Self) extends AnyVal {
     
     inline def setAutoCenter(value: CenterType): Self = StObject.set(x, "autoCenter", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[AdditionalTsTypings]
     }
     
-    extension [Self <: AdditionalTsTypings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdditionalTsTypings] (val x: Self) extends AnyVal {
       
       inline def setAdditionalTsTypings(value: js.Array[String]): Self = StObject.set(x, "additionalTsTypings", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: AdditionalTsTypings): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

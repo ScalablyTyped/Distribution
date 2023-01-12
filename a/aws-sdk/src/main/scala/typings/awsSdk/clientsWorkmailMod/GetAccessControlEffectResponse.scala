@@ -23,7 +23,8 @@ object GetAccessControlEffectResponse {
     __obj.asInstanceOf[GetAccessControlEffectResponse]
   }
   
-  extension [Self <: GetAccessControlEffectResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAccessControlEffectResponse] (val x: Self) extends AnyVal {
     
     inline def setEffect(value: AccessControlRuleEffect): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
     

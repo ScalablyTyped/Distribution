@@ -24,7 +24,8 @@ object Case {
     __obj.asInstanceOf[Case]
   }
   
-  extension [Self <: Case](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Case] (val x: Self) extends AnyVal {
     
     inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

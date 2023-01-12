@@ -23,7 +23,8 @@ object ReadonlyactionTHROWfieldF {
     __obj.asInstanceOf[ReadonlyactionTHROWfieldF]
   }
   
-  extension [Self <: ReadonlyactionTHROWfieldF](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyactionTHROWfieldF] (val x: Self) extends AnyVal {
     
     inline def setAction(value: THROW): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

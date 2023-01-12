@@ -71,7 +71,8 @@ object Http_ {
     __obj.asInstanceOf[Http_]
   }
   
-  extension [Self <: Http_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Http_] (val x: Self) extends AnyVal {
     
     inline def setAllowlist(
       value: String | js.RegExp | (js.Function1[/* url */ String, Boolean]) | (js.Array[String | js.RegExp | (js.Function1[/* url */ String, Boolean])])

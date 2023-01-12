@@ -15,7 +15,8 @@ object SystemapksResource {
     __obj.asInstanceOf[SystemapksResource]
   }
   
-  extension [Self <: SystemapksResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemapksResource] (val x: Self) extends AnyVal {
     
     inline def setVariants(value: VariantsResource): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
   }

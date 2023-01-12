@@ -113,7 +113,8 @@ object DocumentPropertiesLoadOptions {
     __obj.asInstanceOf[DocumentPropertiesLoadOptions]
   }
   
-  extension [Self <: DocumentPropertiesLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentPropertiesLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

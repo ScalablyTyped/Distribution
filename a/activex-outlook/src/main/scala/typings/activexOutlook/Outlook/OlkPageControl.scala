@@ -19,7 +19,8 @@ object OlkPageControl {
     __obj.asInstanceOf[OlkPageControl]
   }
   
-  extension [Self <: OlkPageControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlkPageControl] (val x: Self) extends AnyVal {
     
     inline def setOutlookDotOlkPageControl_typekey(value: OlkPageControl): Self = StObject.set(x, "Outlook.OlkPageControl_typekey", value.asInstanceOf[js.Any])
     

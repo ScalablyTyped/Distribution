@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[ConsoleFormattedStream]
     }
     
-    extension [Self <: ConsoleFormattedStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsoleFormattedStream] (val x: Self) extends AnyVal {
       
       inline def setConsoleFormattedStream(value: typings.browserBunyan.mod.BrowserBunyan.ConsoleFormattedStream): Self = StObject.set(x, "ConsoleFormattedStream", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[PartialConsoleFormattedSt]
     }
     
-    extension [Self <: PartialConsoleFormattedSt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialConsoleFormattedSt] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: String): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object anon {
       __obj.asInstanceOf[PartialConsoleFormattedStDef]
     }
     
-    extension [Self <: PartialConsoleFormattedStDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialConsoleFormattedStDef] (val x: Self) extends AnyVal {
       
       inline def setDef(value: String): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
       
@@ -181,7 +184,8 @@ object anon {
       __obj.asInstanceOf[Typeofbunyan]
     }
     
-    extension [Self <: Typeofbunyan](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofbunyan] (val x: Self) extends AnyVal {
       
       inline def setCreateLogger(value: LoggerOptions => Logger): Self = StObject.set(x, "createLogger", js.Any.fromFunction1(value))
       
@@ -234,7 +238,8 @@ object anon {
       __obj.asInstanceOf[TypeoflevelFromName]
     }
     
-    extension [Self <: TypeoflevelFromName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeoflevelFromName] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Double): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       

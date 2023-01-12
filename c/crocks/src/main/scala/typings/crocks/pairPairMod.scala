@@ -109,7 +109,8 @@ object pairPairMod {
       __obj.asInstanceOf[Pair]
     }
     
-    extension [Self <: Pair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pair] (val x: Self) extends AnyVal {
       
       inline def setAp(value: Pair => Pair): Self = StObject.set(x, "ap", js.Any.fromFunction1(value))
       

@@ -29,7 +29,8 @@ object PagePerpageRole {
     __obj.asInstanceOf[PagePerpageRole]
   }
   
-  extension [Self <: PagePerpageRole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PagePerpageRole] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: `2fa_disabled` | all): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

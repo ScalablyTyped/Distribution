@@ -439,7 +439,8 @@ object distTreeMod {
       __obj.asInstanceOf[BufferContext]
     }
     
-    extension [Self <: BufferContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferContext] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: TreeBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -482,7 +483,8 @@ object distTreeMod {
       __obj.asInstanceOf[BufferCursor]
     }
     
-    extension [Self <: BufferCursor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferCursor] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -573,7 +575,8 @@ object distTreeMod {
       __obj.asInstanceOf[BuildData]
     }
     
-    extension [Self <: BuildData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuildData] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: BufferCursor | js.Array[Double]): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -750,7 +753,8 @@ object distTreeMod {
       __obj.asInstanceOf[SyntaxNodeRef]
     }
     
-    extension [Self <: SyntaxNodeRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyntaxNodeRef] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

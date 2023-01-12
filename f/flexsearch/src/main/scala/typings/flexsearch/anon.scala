@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Field]
     }
     
-    extension [Self <: Field](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
       
       inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     }
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[PartialDocumentSearchOpti]
     }
     
-    extension [Self <: PartialDocumentSearchOpti](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDocumentSearchOpti] (val x: Self) extends AnyVal {
       
       inline def setBool(value: and | or): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object ShippingsettingsGetSupportedCarriersResponse {
     __obj.asInstanceOf[ShippingsettingsGetSupportedCarriersResponse]
   }
   
-  extension [Self <: ShippingsettingsGetSupportedCarriersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShippingsettingsGetSupportedCarriersResponse] (val x: Self) extends AnyVal {
     
     inline def setCarriers(value: js.Array[CarriersCarrier]): Self = StObject.set(x, "carriers", value.asInstanceOf[js.Any])
     

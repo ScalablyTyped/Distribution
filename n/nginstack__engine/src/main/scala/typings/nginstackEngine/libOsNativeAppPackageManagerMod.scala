@@ -137,7 +137,8 @@ object libOsNativeAppPackageManagerMod {
       __obj.asInstanceOf[NativeAppPackageManager]
     }
     
-    extension [Self <: NativeAppPackageManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeAppPackageManager] (val x: Self) extends AnyVal {
       
       inline def setDownloadBundle_(value: Any): Self = StObject.set(x, "downloadBundle_", value.asInstanceOf[js.Any])
       

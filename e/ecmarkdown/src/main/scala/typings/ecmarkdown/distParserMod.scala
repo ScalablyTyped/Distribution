@@ -92,7 +92,8 @@ object distParserMod {
       __obj.asInstanceOf[ParseFragmentOpts]
     }
     
-    extension [Self <: ParseFragmentOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseFragmentOpts] (val x: Self) extends AnyVal {
       
       inline def setInList(value: Boolean): Self = StObject.set(x, "inList", value.asInstanceOf[js.Any])
       

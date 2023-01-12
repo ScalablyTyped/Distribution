@@ -17,7 +17,8 @@ object VerticalBarSeriesCanvasProps {
     __obj.asInstanceOf[VerticalBarSeriesCanvasProps]
   }
   
-  extension [Self <: VerticalBarSeriesCanvasProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerticalBarSeriesCanvasProps] (val x: Self) extends AnyVal {
     
     inline def setBarWidth(value: Double): Self = StObject.set(x, "barWidth", value.asInstanceOf[js.Any])
   }

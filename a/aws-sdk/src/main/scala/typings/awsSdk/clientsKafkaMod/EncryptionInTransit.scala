@@ -35,7 +35,8 @@ object EncryptionInTransit {
     __obj.asInstanceOf[EncryptionInTransit]
   }
   
-  extension [Self <: EncryptionInTransit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncryptionInTransit] (val x: Self) extends AnyVal {
     
     inline def setClientBroker(value: ClientBroker): Self = StObject.set(x, "ClientBroker", value.asInstanceOf[js.Any])
     

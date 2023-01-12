@@ -28,7 +28,8 @@ object DimensionProperties {
     __obj.asInstanceOf[DimensionProperties]
   }
   
-  extension [Self <: DimensionProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionProperties] (val x: Self) extends AnyVal {
     
     inline def setDataSourceColumnReference(value: DataSourceColumnReference): Self = StObject.set(x, "dataSourceColumnReference", value.asInstanceOf[js.Any])
     

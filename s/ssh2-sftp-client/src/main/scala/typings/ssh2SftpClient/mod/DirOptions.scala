@@ -15,7 +15,8 @@ object DirOptions {
     __obj.asInstanceOf[DirOptions]
   }
   
-  extension [Self <: DirOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirOptions] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: (/* filePath */ String, /* isDirectory */ Boolean) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
     

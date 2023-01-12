@@ -78,7 +78,8 @@ object buildSrcTraceSamplerParentBasedSamplerMod {
       __obj.asInstanceOf[ParentBasedSamplerConfig]
     }
     
-    extension [Self <: ParentBasedSamplerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParentBasedSamplerConfig] (val x: Self) extends AnyVal {
       
       inline def setLocalParentNotSampled(value: Sampler): Self = StObject.set(x, "localParentNotSampled", value.asInstanceOf[js.Any])
       

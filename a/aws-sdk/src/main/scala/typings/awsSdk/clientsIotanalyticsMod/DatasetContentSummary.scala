@@ -38,7 +38,8 @@ object DatasetContentSummary {
     __obj.asInstanceOf[DatasetContentSummary]
   }
   
-  extension [Self <: DatasetContentSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetContentSummary] (val x: Self) extends AnyVal {
     
     inline def setCompletionTime(value: js.Date): Self = StObject.set(x, "completionTime", value.asInstanceOf[js.Any])
     

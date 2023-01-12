@@ -18,7 +18,8 @@ object WiFiDirectServiceSessionDeferredEventArgs {
     __obj.asInstanceOf[WiFiDirectServiceSessionDeferredEventArgs]
   }
   
-  extension [Self <: WiFiDirectServiceSessionDeferredEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WiFiDirectServiceSessionDeferredEventArgs] (val x: Self) extends AnyVal {
     
     inline def setDeferredSessionInfo(value: IBuffer): Self = StObject.set(x, "deferredSessionInfo", value.asInstanceOf[js.Any])
   }

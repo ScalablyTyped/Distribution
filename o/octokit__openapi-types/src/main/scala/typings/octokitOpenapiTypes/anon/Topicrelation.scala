@@ -15,7 +15,8 @@ object Topicrelation {
     __obj.asInstanceOf[Topicrelation]
   }
   
-  extension [Self <: Topicrelation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Topicrelation] (val x: Self) extends AnyVal {
     
     inline def setTopic_relation(value: Relationtype): Self = StObject.set(x, "topic_relation", value.asInstanceOf[js.Any])
     

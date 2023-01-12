@@ -23,7 +23,8 @@ object ITextModelUpdateOptions {
     __obj.asInstanceOf[ITextModelUpdateOptions]
   }
   
-  extension [Self <: ITextModelUpdateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITextModelUpdateOptions] (val x: Self) extends AnyVal {
     
     inline def setBracketColorizationOptions(value: BracketPairColorizationOptions): Self = StObject.set(x, "bracketColorizationOptions", value.asInstanceOf[js.Any])
     

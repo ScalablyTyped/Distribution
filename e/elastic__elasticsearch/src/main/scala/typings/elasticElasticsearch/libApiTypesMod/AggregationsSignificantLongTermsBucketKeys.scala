@@ -19,7 +19,8 @@ object AggregationsSignificantLongTermsBucketKeys {
     __obj.asInstanceOf[AggregationsSignificantLongTermsBucketKeys]
   }
   
-  extension [Self <: AggregationsSignificantLongTermsBucketKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsSignificantLongTermsBucketKeys] (val x: Self) extends AnyVal {
     
     inline def setKey(value: long): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object StartDetectMitigationActionsTaskResponse {
     __obj.asInstanceOf[StartDetectMitigationActionsTaskResponse]
   }
   
-  extension [Self <: StartDetectMitigationActionsTaskResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartDetectMitigationActionsTaskResponse] (val x: Self) extends AnyVal {
     
     inline def setTaskId(value: MitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     

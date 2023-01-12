@@ -96,7 +96,8 @@ object MeasureReport {
     __obj.asInstanceOf[MeasureReport]
   }
   
-  extension [Self <: MeasureReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeasureReport] (val x: Self) extends AnyVal {
     
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

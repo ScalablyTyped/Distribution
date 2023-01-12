@@ -23,7 +23,8 @@ object GoToThumbnail {
     __obj.asInstanceOf[GoToThumbnail]
   }
   
-  extension [Self <: GoToThumbnail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoToThumbnail] (val x: Self) extends AnyVal {
     
     inline def setGoToThumbnail(value: Boolean): Self = StObject.set(x, "goToThumbnail", value.asInstanceOf[js.Any])
     

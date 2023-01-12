@@ -28,7 +28,8 @@ object ASPxClientToolbarItemValueChangedEventArgs {
     __obj.asInstanceOf[ASPxClientToolbarItemValueChangedEventArgs]
   }
   
-  extension [Self <: ASPxClientToolbarItemValueChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientToolbarItemValueChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setEditor(value: ASPxClientControl): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     

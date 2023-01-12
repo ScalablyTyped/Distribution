@@ -18,7 +18,8 @@ object MlPutTrainedModelOneHotEncodingPreprocessor {
     __obj.asInstanceOf[MlPutTrainedModelOneHotEncodingPreprocessor]
   }
   
-  extension [Self <: MlPutTrainedModelOneHotEncodingPreprocessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlPutTrainedModelOneHotEncodingPreprocessor] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

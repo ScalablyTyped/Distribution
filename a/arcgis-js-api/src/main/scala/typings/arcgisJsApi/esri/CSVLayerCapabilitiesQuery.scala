@@ -158,7 +158,8 @@ object CSVLayerCapabilitiesQuery {
     __obj.asInstanceOf[CSVLayerCapabilitiesQuery]
   }
   
-  extension [Self <: CSVLayerCapabilitiesQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSVLayerCapabilitiesQuery] (val x: Self) extends AnyVal {
     
     inline def setSupportsCentroid(value: Boolean): Self = StObject.set(x, "supportsCentroid", value.asInstanceOf[js.Any])
     

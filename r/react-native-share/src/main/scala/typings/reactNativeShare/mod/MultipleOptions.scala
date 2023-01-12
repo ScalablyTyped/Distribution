@@ -31,7 +31,8 @@ object MultipleOptions {
     __obj.asInstanceOf[MultipleOptions]
   }
   
-  extension [Self <: MultipleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipleOptions] (val x: Self) extends AnyVal {
     
     inline def setExcludedActivityTypes(value: String): Self = StObject.set(x, "excludedActivityTypes", value.asInstanceOf[js.Any])
     

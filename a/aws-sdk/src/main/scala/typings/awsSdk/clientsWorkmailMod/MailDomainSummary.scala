@@ -23,7 +23,8 @@ object MailDomainSummary {
     __obj.asInstanceOf[MailDomainSummary]
   }
   
-  extension [Self <: MailDomainSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MailDomainSummary] (val x: Self) extends AnyVal {
     
     inline def setDefaultDomain(value: Boolean): Self = StObject.set(x, "DefaultDomain", value.asInstanceOf[js.Any])
     

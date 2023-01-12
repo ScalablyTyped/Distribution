@@ -174,7 +174,8 @@ object PartialBadgeProps {
     __obj.asInstanceOf[PartialBadgeProps]
   }
   
-  extension [Self <: PartialBadgeProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialBadgeProps] (val x: Self) extends AnyVal {
     
     inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
     

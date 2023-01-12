@@ -45,7 +45,8 @@ object Curve3 {
     __obj.asInstanceOf[Curve3]
   }
   
-  extension [Self <: Curve3](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Curve3] (val x: Self) extends AnyVal {
     
     inline def setContinue(value: DeepImmutable[Curve3] => Curve3): Self = StObject.set(x, "continue", js.Any.fromFunction1(value))
     

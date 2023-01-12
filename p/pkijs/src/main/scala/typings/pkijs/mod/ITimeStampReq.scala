@@ -56,7 +56,8 @@ object ITimeStampReq {
     __obj.asInstanceOf[ITimeStampReq]
   }
   
-  extension [Self <: ITimeStampReq](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITimeStampReq] (val x: Self) extends AnyVal {
     
     inline def setCertReq(value: Boolean): Self = StObject.set(x, "certReq", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object LiasettingsSetPosDataProviderResponse {
     __obj.asInstanceOf[LiasettingsSetPosDataProviderResponse]
   }
   
-  extension [Self <: LiasettingsSetPosDataProviderResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiasettingsSetPosDataProviderResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

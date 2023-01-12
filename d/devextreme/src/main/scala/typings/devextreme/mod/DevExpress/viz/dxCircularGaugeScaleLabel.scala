@@ -26,7 +26,8 @@ object dxCircularGaugeScaleLabel {
     __obj.asInstanceOf[dxCircularGaugeScaleLabel]
   }
   
-  extension [Self <: dxCircularGaugeScaleLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxCircularGaugeScaleLabel] (val x: Self) extends AnyVal {
     
     inline def setHideFirstOrLast(value: CircularGaugeLabelOverlap): Self = StObject.set(x, "hideFirstOrLast", value.asInstanceOf[js.Any])
     

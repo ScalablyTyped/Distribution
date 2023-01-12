@@ -533,7 +533,8 @@ object sapMMultiComboBoxMod {
       __obj.asInstanceOf[MultiComboBoxSettings]
     }
     
-    extension [Self <: MultiComboBoxSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiComboBoxSettings] (val x: Self) extends AnyVal {
       
       inline def setSelectedItems(value: js.Array[typings.openui5.sapUiCoreItemMod.default | String]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       

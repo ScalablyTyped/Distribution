@@ -26,7 +26,8 @@ object CreateChannelRequest {
     __obj.asInstanceOf[CreateChannelRequest]
   }
   
-  extension [Self <: CreateChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object DiscoverTypings {
     __obj.asInstanceOf[DiscoverTypings]
   }
   
-  extension [Self <: DiscoverTypings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiscoverTypings] (val x: Self) extends AnyVal {
     
     inline def setCachePath(value: String): Self = StObject.set(x, "cachePath", value.asInstanceOf[js.Any])
     

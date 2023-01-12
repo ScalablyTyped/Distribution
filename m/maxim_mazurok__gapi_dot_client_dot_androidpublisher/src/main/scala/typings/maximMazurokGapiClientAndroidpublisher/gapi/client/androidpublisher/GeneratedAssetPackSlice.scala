@@ -25,7 +25,8 @@ object GeneratedAssetPackSlice {
     __obj.asInstanceOf[GeneratedAssetPackSlice]
   }
   
-  extension [Self <: GeneratedAssetPackSlice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneratedAssetPackSlice] (val x: Self) extends AnyVal {
     
     inline def setDownloadId(value: String): Self = StObject.set(x, "downloadId", value.asInstanceOf[js.Any])
     

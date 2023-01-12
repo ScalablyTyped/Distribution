@@ -175,7 +175,8 @@ object DeviceDefinition {
     __obj.asInstanceOf[DeviceDefinition]
   }
   
-  extension [Self <: DeviceDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceDefinition] (val x: Self) extends AnyVal {
     
     inline def setChargeItem(value: js.Array[DeviceDefinitionChargeItem]): Self = StObject.set(x, "chargeItem", value.asInstanceOf[js.Any])
     

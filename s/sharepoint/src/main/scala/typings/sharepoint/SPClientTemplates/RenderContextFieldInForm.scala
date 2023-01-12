@@ -38,7 +38,8 @@ object RenderContextFieldInForm {
     __obj.asInstanceOf[RenderContextFieldInForm]
   }
   
-  extension [Self <: RenderContextFieldInForm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderContextFieldInForm] (val x: Self) extends AnyVal {
     
     inline def setCurrentFieldSchema(value: FieldSchemaInForm): Self = StObject.set(x, "CurrentFieldSchema", value.asInstanceOf[js.Any])
     

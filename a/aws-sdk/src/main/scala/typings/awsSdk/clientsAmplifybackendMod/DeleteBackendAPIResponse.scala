@@ -43,7 +43,8 @@ object DeleteBackendAPIResponse {
     __obj.asInstanceOf[DeleteBackendAPIResponse]
   }
   
-  extension [Self <: DeleteBackendAPIResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteBackendAPIResponse] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: string): Self = StObject.set(x, "AppId", value.asInstanceOf[js.Any])
     

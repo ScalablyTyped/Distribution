@@ -56,7 +56,8 @@ object AlbumObjectFull {
     __obj.asInstanceOf[AlbumObjectFull]
   }
   
-  extension [Self <: AlbumObjectFull](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlbumObjectFull] (val x: Self) extends AnyVal {
     
     inline def setArtists(value: js.Array[ArtistObjectSimplified]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object JoinOptions {
     __obj.asInstanceOf[JoinOptions]
   }
   
-  extension [Self <: JoinOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JoinOptions] (val x: Self) extends AnyVal {
     
     inline def setPrivateMapKey(value: String): Self = StObject.set(x, "privateMapKey", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object DeepNullableDeep {
     __obj.asInstanceOf[DeepNullableDeep[O]]
   }
   
-  extension [Self <: DeepNullableDeep[?], O /* <: js.Object */](x: Self & DeepNullableDeep[O]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeepNullableDeep[?], O /* <: js.Object */] (val x: Self & DeepNullableDeep[O]) extends AnyVal {
     
     inline def setDeep(value: NullableDeep[O]): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
     

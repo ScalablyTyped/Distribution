@@ -35,7 +35,8 @@ object interactionSnapMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setEdge(value: Boolean): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object interactionSnapMod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setSnapped(value: Boolean): Self = StObject.set(x, "snapped", value.asInstanceOf[js.Any])
       
@@ -110,7 +112,8 @@ object interactionSnapMod {
       __obj.asInstanceOf[SegmentData]
     }
     
-    extension [Self <: SegmentData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentData] (val x: Self) extends AnyVal {
       
       inline def setFeature(value: typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
       

@@ -54,7 +54,8 @@ object typesLibInputMod {
       __obj.asInstanceOf[InputProps]
     }
     
-    extension [Self <: InputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputProps] (val x: Self) extends AnyVal {
       
       inline def setAddon(value: Boolean): Self = StObject.set(x, "addon", value.asInstanceOf[js.Any])
       

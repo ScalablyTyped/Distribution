@@ -15,7 +15,8 @@ object PathOrgRunnergroupid {
     __obj.asInstanceOf[PathOrgRunnergroupid]
   }
   
-  extension [Self <: PathOrgRunnergroupid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathOrgRunnergroupid] (val x: Self) extends AnyVal {
     
     inline def setPath(value: OrgRunnergroupid): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

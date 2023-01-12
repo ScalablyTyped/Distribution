@@ -131,7 +131,8 @@ object mod {
       __obj.asInstanceOf[ScreenshotDimensions]
     }
     
-    extension [Self <: ScreenshotDimensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScreenshotDimensions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -781,7 +782,8 @@ object mod {
       __obj.asInstanceOf[WebcamState]
     }
     
-    extension [Self <: WebcamState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebcamState] (val x: Self) extends AnyVal {
       
       inline def setHasUserMedia(value: Boolean): Self = StObject.set(x, "hasUserMedia", value.asInstanceOf[js.Any])
       

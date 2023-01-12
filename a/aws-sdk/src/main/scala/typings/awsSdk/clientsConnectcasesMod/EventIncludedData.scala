@@ -23,7 +23,8 @@ object EventIncludedData {
     __obj.asInstanceOf[EventIncludedData]
   }
   
-  extension [Self <: EventIncludedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventIncludedData] (val x: Self) extends AnyVal {
     
     inline def setCaseData(value: CaseEventIncludedData): Self = StObject.set(x, "caseData", value.asInstanceOf[js.Any])
     

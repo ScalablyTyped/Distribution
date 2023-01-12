@@ -15,7 +15,8 @@ object GetEstimatedTime {
     __obj.asInstanceOf[GetEstimatedTime]
   }
   
-  extension [Self <: GetEstimatedTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEstimatedTime] (val x: Self) extends AnyVal {
     
     inline def setGetEstimatedTime(value: () => Double): Self = StObject.set(x, "getEstimatedTime", js.Any.fromFunction0(value))
   }

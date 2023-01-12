@@ -33,7 +33,8 @@ object DomainStats {
     __obj.asInstanceOf[DomainStats]
   }
   
-  extension [Self <: DomainStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainStats] (val x: Self) extends AnyVal {
     
     inline def setMeteringProfileCount(value: long): Self = StObject.set(x, "MeteringProfileCount", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object EnvironmentPropertyDescriptions {
     __obj.asInstanceOf[EnvironmentPropertyDescriptions]
   }
   
-  extension [Self <: EnvironmentPropertyDescriptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentPropertyDescriptions] (val x: Self) extends AnyVal {
     
     inline def setPropertyGroupDescriptions(value: PropertyGroups): Self = StObject.set(x, "PropertyGroupDescriptions", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object components {
       __obj.asInstanceOf[Component]
     }
     
-    extension [Self <: Component](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
       
       inline def setCreateViewModel(value: (/* params */ ViewModelParams, /* componentInfo */ ComponentInfo) => ViewModel): Self = StObject.set(x, "createViewModel", js.Any.fromFunction2(value))
       
@@ -81,7 +82,8 @@ object components {
       __obj.asInstanceOf[ComponentInfo]
     }
     
-    extension [Self <: ComponentInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentInfo] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Node): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object components {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setRequire(value: String): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
       
@@ -168,7 +171,8 @@ object components {
       __obj.asInstanceOf[DefaultLoader_]
     }
     
-    extension [Self <: DefaultLoader_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultLoader_] (val x: Self) extends AnyVal {
       
       inline def setGetConfig(value: (String, js.Function1[/* config */ Config | js.Object, Unit]) => Unit): Self = StObject.set(x, "getConfig", js.Any.fromFunction2(value))
       
@@ -226,7 +230,8 @@ object components {
       __obj.asInstanceOf[Loader]
     }
     
-    extension [Self <: Loader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Loader] (val x: Self) extends AnyVal {
       
       inline def setGetConfig(
         value: (/* componentName */ String, /* callback */ js.Function1[/* config */ Config | js.Object, Unit]) => Unit
@@ -265,7 +270,8 @@ object components {
       __obj.asInstanceOf[RequireConfig]
     }
     
-    extension [Self <: RequireConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequireConfig] (val x: Self) extends AnyVal {
       
       inline def setRequire(value: String): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
     }
@@ -284,7 +290,8 @@ object components {
       __obj.asInstanceOf[TemplateElement]
     }
     
-    extension [Self <: TemplateElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateElement] (val x: Self) extends AnyVal {
       
       inline def setElement(value: String | Node): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     }
@@ -303,7 +310,8 @@ object components {
       __obj.asInstanceOf[ViewModel]
     }
     
-    extension [Self <: ViewModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewModel] (val x: Self) extends AnyVal {
       
       inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
@@ -344,7 +352,8 @@ object components {
       __obj.asInstanceOf[ViewModelFactory]
     }
     
-    extension [Self <: ViewModelFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewModelFactory] (val x: Self) extends AnyVal {
       
       inline def setCreateViewModel(value: (/* params */ ViewModelParams, /* componentInfo */ ComponentInfo) => ViewModel): Self = StObject.set(x, "createViewModel", js.Any.fromFunction2(value))
     }
@@ -365,7 +374,8 @@ object components {
       __obj.asInstanceOf[ViewModelStatic]
     }
     
-    extension [Self <: ViewModelStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewModelStatic] (val x: Self) extends AnyVal {
       
       inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     }

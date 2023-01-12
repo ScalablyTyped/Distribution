@@ -15,7 +15,8 @@ object DescribeProjectResult {
     __obj.asInstanceOf[DescribeProjectResult]
   }
   
-  extension [Self <: DescribeProjectResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeProjectResult] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: ProjectDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

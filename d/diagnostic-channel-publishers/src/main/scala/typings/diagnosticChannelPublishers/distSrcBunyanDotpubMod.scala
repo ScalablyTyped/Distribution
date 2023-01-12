@@ -30,7 +30,8 @@ object distSrcBunyanDotpubMod {
       __obj.asInstanceOf[IBunyanData]
     }
     
-    extension [Self <: IBunyanData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBunyanData] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       

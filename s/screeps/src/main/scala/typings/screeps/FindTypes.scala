@@ -158,7 +158,8 @@ object FindTypes {
     __obj.asInstanceOf[FindTypes]
   }
   
-  extension [Self <: FindTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindTypes] (val x: Self) extends AnyVal {
     
     inline def set1(value: RoomPosition): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     

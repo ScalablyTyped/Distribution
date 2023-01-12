@@ -19,7 +19,8 @@ object CandlestickChartSpec {
     __obj.asInstanceOf[CandlestickChartSpec]
   }
   
-  extension [Self <: CandlestickChartSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CandlestickChartSpec] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[CandlestickData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object CertIDJson {
     __obj.asInstanceOf[CertIDJson]
   }
   
-  extension [Self <: CertIDJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertIDJson] (val x: Self) extends AnyVal {
     
     inline def setHashAlgorithm(value: AlgorithmIdentifierJson): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
     

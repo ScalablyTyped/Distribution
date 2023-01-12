@@ -20,7 +20,8 @@ object PartialUrlOptions {
     __obj.asInstanceOf[PartialUrlOptions]
   }
   
-  extension [Self <: PartialUrlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialUrlOptions] (val x: Self) extends AnyVal {
     
     inline def setDecode(value: Boolean): Self = StObject.set(x, "decode", value.asInstanceOf[js.Any])
     

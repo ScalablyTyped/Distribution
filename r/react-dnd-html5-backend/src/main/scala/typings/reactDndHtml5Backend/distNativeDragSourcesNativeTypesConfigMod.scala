@@ -21,7 +21,8 @@ object distNativeDragSourcesNativeTypesConfigMod {
       __obj.asInstanceOf[NativeItemConfig]
     }
     
-    extension [Self <: NativeItemConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeItemConfig] (val x: Self) extends AnyVal {
       
       inline def setExposeProperties(value: NativeItemConfigExposePropreties): Self = StObject.set(x, "exposeProperties", value.asInstanceOf[js.Any])
       

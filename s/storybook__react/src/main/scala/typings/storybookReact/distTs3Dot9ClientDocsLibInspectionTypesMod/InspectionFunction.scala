@@ -27,7 +27,8 @@ object InspectionFunction {
     __obj.asInstanceOf[InspectionFunction]
   }
   
-  extension [Self <: InspectionFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InspectionFunction] (val x: Self) extends AnyVal {
     
     inline def setHasParams(value: Boolean): Self = StObject.set(x, "hasParams", value.asInstanceOf[js.Any])
     

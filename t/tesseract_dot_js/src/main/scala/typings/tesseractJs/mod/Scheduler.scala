@@ -29,7 +29,8 @@ object Scheduler {
     __obj.asInstanceOf[Scheduler]
   }
   
-  extension [Self <: Scheduler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scheduler] (val x: Self) extends AnyVal {
     
     inline def setAddJob(value: (String, /* repeated */ Any) => js.Promise[ConfigResult | RecognizeResult | DetectResult]): Self = StObject.set(x, "addJob", js.Any.fromFunction2(value))
     

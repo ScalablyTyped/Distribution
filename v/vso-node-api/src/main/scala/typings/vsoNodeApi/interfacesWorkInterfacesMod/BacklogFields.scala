@@ -19,7 +19,8 @@ object BacklogFields {
     __obj.asInstanceOf[BacklogFields]
   }
   
-  extension [Self <: BacklogFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BacklogFields] (val x: Self) extends AnyVal {
     
     inline def setTypeFields(value: StringDictionary[String]): Self = StObject.set(x, "typeFields", value.asInstanceOf[js.Any])
   }

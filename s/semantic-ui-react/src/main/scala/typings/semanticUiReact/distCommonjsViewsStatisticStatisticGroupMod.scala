@@ -72,7 +72,8 @@ object distCommonjsViewsStatisticStatisticGroupMod extends Shortcut {
       __obj.asInstanceOf[StrictStatisticGroupProps]
     }
     
-    extension [Self <: StrictStatisticGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictStatisticGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

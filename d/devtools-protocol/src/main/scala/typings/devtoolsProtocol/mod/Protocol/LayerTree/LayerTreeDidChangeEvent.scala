@@ -18,7 +18,8 @@ object LayerTreeDidChangeEvent {
     __obj.asInstanceOf[LayerTreeDidChangeEvent]
   }
   
-  extension [Self <: LayerTreeDidChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerTreeDidChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setLayers(value: js.Array[Layer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     

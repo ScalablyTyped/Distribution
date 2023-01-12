@@ -17,7 +17,8 @@ object VirtualCardsFreezeUnfreezeRequest {
     __obj.asInstanceOf[VirtualCardsFreezeUnfreezeRequest]
   }
   
-  extension [Self <: VirtualCardsFreezeUnfreezeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualCardsFreezeUnfreezeRequest] (val x: Self) extends AnyVal {
     
     inline def setCard_id(value: String): Self = StObject.set(x, "card_id", value.asInstanceOf[js.Any])
     

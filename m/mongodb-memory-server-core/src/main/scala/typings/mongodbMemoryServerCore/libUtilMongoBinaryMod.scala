@@ -75,7 +75,8 @@ object libUtilMongoBinaryMod {
       __obj.asInstanceOf[MongoBinaryOpts]
     }
     
-    extension [Self <: MongoBinaryOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MongoBinaryOpts] (val x: Self) extends AnyVal {
       
       inline def setCheckMD5(value: Boolean): Self = StObject.set(x, "checkMD5", value.asInstanceOf[js.Any])
       

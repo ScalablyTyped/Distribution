@@ -33,7 +33,8 @@ object interceptorDefaultRequestMod extends Shortcut {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setEntity(value: Any): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       

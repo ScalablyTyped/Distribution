@@ -34,7 +34,8 @@ object esmNegotiateLanguagesMod {
       __obj.asInstanceOf[NegotiateLanguagesOptions]
     }
     
-    extension [Self <: NegotiateLanguagesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NegotiateLanguagesOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
       

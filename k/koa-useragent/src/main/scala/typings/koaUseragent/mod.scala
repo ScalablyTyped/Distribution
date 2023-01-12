@@ -29,7 +29,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[UserAgentContext]
     }
     
-    extension [Self <: UserAgentContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserAgentContext] (val x: Self) extends AnyVal {
       
       inline def setUserAgent(value: typings.koaUseragent.distLibUseragentMod.default): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     }

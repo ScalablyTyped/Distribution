@@ -57,7 +57,8 @@ object DeveloperMetadata {
     __obj.asInstanceOf[DeveloperMetadata]
   }
   
-  extension [Self <: DeveloperMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeveloperMetadata] (val x: Self) extends AnyVal {
     
     inline def setGetId(value: () => Integer): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     

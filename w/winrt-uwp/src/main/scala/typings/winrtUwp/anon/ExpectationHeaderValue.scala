@@ -18,7 +18,8 @@ object ExpectationHeaderValue {
     __obj.asInstanceOf[ExpectationHeaderValue]
   }
   
-  extension [Self <: ExpectationHeaderValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpectationHeaderValue] (val x: Self) extends AnyVal {
     
     inline def setExpectationHeaderValue(value: HttpExpectationHeaderValue): Self = StObject.set(x, "expectationHeaderValue", value.asInstanceOf[js.Any])
     

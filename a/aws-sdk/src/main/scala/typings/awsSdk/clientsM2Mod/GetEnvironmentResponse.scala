@@ -130,7 +130,8 @@ object GetEnvironmentResponse {
     __obj.asInstanceOf[GetEnvironmentResponse]
   }
   
-  extension [Self <: GetEnvironmentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEnvironmentResponse] (val x: Self) extends AnyVal {
     
     inline def setActualCapacity(value: CapacityValue): Self = StObject.set(x, "actualCapacity", value.asInstanceOf[js.Any])
     

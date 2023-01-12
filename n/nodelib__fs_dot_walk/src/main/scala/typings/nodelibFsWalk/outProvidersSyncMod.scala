@@ -49,7 +49,8 @@ object outProvidersSyncMod {
       __obj.asInstanceOf[SyncProvider]
     }
     
-    extension [Self <: SyncProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncProvider] (val x: Self) extends AnyVal {
       
       inline def setRead(value: () => js.Array[Entry]): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
       

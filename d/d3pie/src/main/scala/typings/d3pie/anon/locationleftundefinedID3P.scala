@@ -25,7 +25,8 @@ object locationleftundefinedID3P {
     __obj.asInstanceOf[locationleftundefinedID3P]
   }
   
-  extension [Self <: locationleftundefinedID3P](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: locationleftundefinedID3P] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

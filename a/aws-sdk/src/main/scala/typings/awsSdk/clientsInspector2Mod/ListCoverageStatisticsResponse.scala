@@ -28,7 +28,8 @@ object ListCoverageStatisticsResponse {
     __obj.asInstanceOf[ListCoverageStatisticsResponse]
   }
   
-  extension [Self <: ListCoverageStatisticsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCoverageStatisticsResponse] (val x: Self) extends AnyVal {
     
     inline def setCountsByGroup(value: CountsList): Self = StObject.set(x, "countsByGroup", value.asInstanceOf[js.Any])
     

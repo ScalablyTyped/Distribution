@@ -41,7 +41,8 @@ object DomMixin {
     __obj.asInstanceOf[DomMixin]
   }
   
-  extension [Self <: DomMixin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomMixin] (val x: Self) extends AnyVal {
     
     inline def setAppendChildren(value: Any): Self = StObject.set(x, "appendChildren", value.asInstanceOf[js.Any])
     

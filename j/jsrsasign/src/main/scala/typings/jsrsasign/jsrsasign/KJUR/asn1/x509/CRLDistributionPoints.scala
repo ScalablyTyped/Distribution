@@ -65,7 +65,8 @@ object CRLDistributionPoints {
     __obj.asInstanceOf[CRLDistributionPoints]
   }
   
-  extension [Self <: CRLDistributionPoints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CRLDistributionPoints] (val x: Self) extends AnyVal {
     
     inline def setGetExtnValueHex(value: () => String): Self = StObject.set(x, "getExtnValueHex", js.Any.fromFunction0(value))
     

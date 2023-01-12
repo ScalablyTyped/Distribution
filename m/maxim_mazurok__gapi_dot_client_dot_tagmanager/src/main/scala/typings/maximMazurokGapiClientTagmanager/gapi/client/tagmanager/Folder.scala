@@ -43,7 +43,8 @@ object Folder {
     __obj.asInstanceOf[Folder]
   }
   
-  extension [Self <: Folder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Folder] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

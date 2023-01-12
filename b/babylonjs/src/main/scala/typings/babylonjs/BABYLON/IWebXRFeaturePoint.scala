@@ -23,7 +23,8 @@ object IWebXRFeaturePoint {
     __obj.asInstanceOf[IWebXRFeaturePoint]
   }
   
-  extension [Self <: IWebXRFeaturePoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebXRFeaturePoint] (val x: Self) extends AnyVal {
     
     inline def setConfidenceValue(value: Double): Self = StObject.set(x, "confidenceValue", value.asInstanceOf[js.Any])
     

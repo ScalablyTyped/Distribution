@@ -96,7 +96,8 @@ object BulkRecipient {
     __obj.asInstanceOf[BulkRecipient]
   }
   
-  extension [Self <: BulkRecipient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkRecipient] (val x: Self) extends AnyVal {
     
     inline def setAccessCode(value: String): Self = StObject.set(x, "accessCode", value.asInstanceOf[js.Any])
     

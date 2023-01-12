@@ -31,7 +31,8 @@ object ProductstatusesCustomBatchRequestEntry {
     __obj.asInstanceOf[ProductstatusesCustomBatchRequestEntry]
   }
   
-  extension [Self <: ProductstatusesCustomBatchRequestEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductstatusesCustomBatchRequestEntry] (val x: Self) extends AnyVal {
     
     inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     

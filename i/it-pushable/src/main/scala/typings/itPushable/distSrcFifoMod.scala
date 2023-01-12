@@ -42,7 +42,8 @@ object distSrcFifoMod {
       __obj.asInstanceOf[FIFOOptions]
     }
     
-    extension [Self <: FIFOOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FIFOOptions] (val x: Self) extends AnyVal {
       
       inline def setSplitLimit(value: Double): Self = StObject.set(x, "splitLimit", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object distSrcFifoMod {
       __obj.asInstanceOf[Next[T]]
     }
     
-    extension [Self <: Next[?], T](x: Self & Next[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Next[?], T] (val x: Self & Next[T]) extends AnyVal {
       
       inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       

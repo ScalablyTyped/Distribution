@@ -17,7 +17,8 @@ object ApplicationViewConsolidatedEventArgs {
     __obj.asInstanceOf[ApplicationViewConsolidatedEventArgs]
   }
   
-  extension [Self <: ApplicationViewConsolidatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationViewConsolidatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setIsUserInitiated(value: Boolean): Self = StObject.set(x, "isUserInitiated", value.asInstanceOf[js.Any])
   }

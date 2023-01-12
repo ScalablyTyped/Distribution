@@ -18,7 +18,8 @@ object OmaSettingInteger {
     __obj.asInstanceOf[OmaSettingInteger]
   }
   
-  extension [Self <: OmaSettingInteger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmaSettingInteger] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

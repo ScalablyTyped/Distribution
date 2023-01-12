@@ -713,7 +713,8 @@ object OmitStackset {
     __obj.asInstanceOf[OmitStackset]
   }
   
-  extension [Self <: OmitStackset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitStackset] (val x: Self) extends AnyVal {
     
     inline def set$children(value: js.Array[Widget[Any]]): Self = StObject.set(x, "$children", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object IClockIdentifiersStatics {
     __obj.asInstanceOf[IClockIdentifiersStatics]
   }
   
-  extension [Self <: IClockIdentifiersStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClockIdentifiersStatics] (val x: Self) extends AnyVal {
     
     inline def setTwelveHour(value: String): Self = StObject.set(x, "twelveHour", value.asInstanceOf[js.Any])
     

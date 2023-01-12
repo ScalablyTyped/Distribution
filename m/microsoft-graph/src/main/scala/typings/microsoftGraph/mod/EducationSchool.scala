@@ -56,7 +56,8 @@ object EducationSchool {
     __obj.asInstanceOf[EducationSchool]
   }
   
-  extension [Self <: EducationSchool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EducationSchool] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: NullableOption[PhysicalAddress]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

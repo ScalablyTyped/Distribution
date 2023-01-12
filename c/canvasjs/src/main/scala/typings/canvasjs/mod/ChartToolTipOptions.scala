@@ -119,7 +119,8 @@ object ChartToolTipOptions {
     __obj.asInstanceOf[ChartToolTipOptions]
   }
   
-  extension [Self <: ChartToolTipOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartToolTipOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimationEnabled(value: Boolean): Self = StObject.set(x, "animationEnabled", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object GoogleCloudVisionV1p1beta1InputConfig {
     __obj.asInstanceOf[GoogleCloudVisionV1p1beta1InputConfig]
   }
   
-  extension [Self <: GoogleCloudVisionV1p1beta1InputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p1beta1InputConfig] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

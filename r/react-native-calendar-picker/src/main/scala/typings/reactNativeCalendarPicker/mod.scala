@@ -153,7 +153,8 @@ object mod {
       __obj.asInstanceOf[CalendarPickerProps]
     }
     
-    extension [Self <: CalendarPickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarPickerProps] (val x: Self) extends AnyVal {
       
       inline def setAllowBackwardRangeSelect(value: Boolean): Self = StObject.set(x, "allowBackwardRangeSelect", value.asInstanceOf[js.Any])
       
@@ -442,7 +443,8 @@ object mod {
       __obj.asInstanceOf[CustomDateStyle]
     }
     
-    extension [Self <: CustomDateStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomDateStyle] (val x: Self) extends AnyVal {
       
       inline def setContainerStyle(value: ViewStyle): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       
@@ -481,7 +483,8 @@ object mod {
       __obj.asInstanceOf[CustomDayHeaderStylesFuncDateArg]
     }
     
-    extension [Self <: CustomDayHeaderStylesFuncDateArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomDayHeaderStylesFuncDateArg] (val x: Self) extends AnyVal {
       
       inline def setDayOfWeek(value: Double): Self = StObject.set(x, "dayOfWeek", value.asInstanceOf[js.Any])
       
@@ -517,7 +520,8 @@ object mod {
       __obj.asInstanceOf[DayOfWeekStyle]
     }
     
-    extension [Self <: DayOfWeekStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DayOfWeekStyle] (val x: Self) extends AnyVal {
       
       inline def set0(value: TextStyle): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       
@@ -566,7 +570,8 @@ object mod {
       __obj.asInstanceOf[HandleOnPressDayArg]
     }
     
-    extension [Self <: HandleOnPressDayArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandleOnPressDayArg] (val x: Self) extends AnyVal {
       
       inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
@@ -589,7 +594,8 @@ object mod {
       __obj.asInstanceOf[MaxDurationArrayItem]
     }
     
-    extension [Self <: MaxDurationArrayItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxDurationArrayItem] (val x: Self) extends AnyVal {
       
       inline def setDate(value: MomentParsable): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -612,7 +618,8 @@ object mod {
       __obj.asInstanceOf[MinDurationArrayItem]
     }
     
-    extension [Self <: MinDurationArrayItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinDurationArrayItem] (val x: Self) extends AnyVal {
       
       inline def setDate(value: MomentParsable): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       

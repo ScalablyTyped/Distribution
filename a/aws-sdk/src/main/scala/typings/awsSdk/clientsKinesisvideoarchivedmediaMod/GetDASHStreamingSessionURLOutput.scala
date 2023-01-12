@@ -18,7 +18,8 @@ object GetDASHStreamingSessionURLOutput {
     __obj.asInstanceOf[GetDASHStreamingSessionURLOutput]
   }
   
-  extension [Self <: GetDASHStreamingSessionURLOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDASHStreamingSessionURLOutput] (val x: Self) extends AnyVal {
     
     inline def setDASHStreamingSessionURL(value: DASHStreamingSessionURL): Self = StObject.set(x, "DASHStreamingSessionURL", value.asInstanceOf[js.Any])
     

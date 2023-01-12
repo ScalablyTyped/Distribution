@@ -20,7 +20,8 @@ object PCTrueColorRendererResult {
     __obj.asInstanceOf[PCTrueColorRendererResult]
   }
   
-  extension [Self <: PCTrueColorRendererResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PCTrueColorRendererResult] (val x: Self) extends AnyVal {
     
     inline def setRenderer(value: PointCloudRGBRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
   }

@@ -33,7 +33,8 @@ object DescribeAggregateComplianceByConfigRulesRequest {
     __obj.asInstanceOf[DescribeAggregateComplianceByConfigRulesRequest]
   }
   
-  extension [Self <: DescribeAggregateComplianceByConfigRulesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAggregateComplianceByConfigRulesRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationAggregatorName(value: ConfigurationAggregatorName): Self = StObject.set(x, "ConfigurationAggregatorName", value.asInstanceOf[js.Any])
     

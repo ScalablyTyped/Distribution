@@ -32,7 +32,8 @@ object libComponentsUishellSwitcherMod extends Shortcut {
       __obj.asInstanceOf[SwitcherProps]
     }
     
-    extension [Self <: SwitcherProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitcherProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       

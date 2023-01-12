@@ -27,7 +27,8 @@ object DeviceOrientationApi {
     __obj.asInstanceOf[DeviceOrientationApi]
   }
   
-  extension [Self <: DeviceOrientationApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceOrientationApi] (val x: Self) extends AnyVal {
     
     inline def setClearDeviceOrientationOverride(value: () => js.Promise[Unit]): Self = StObject.set(x, "clearDeviceOrientationOverride", js.Any.fromFunction0(value))
     

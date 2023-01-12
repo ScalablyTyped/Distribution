@@ -30,7 +30,8 @@ object WebExtensionManifestCommandsSuggestedKey {
     __obj.asInstanceOf[WebExtensionManifestCommandsSuggestedKey]
   }
   
-  extension [Self <: WebExtensionManifestCommandsSuggestedKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionManifestCommandsSuggestedKey] (val x: Self) extends AnyVal {
     
     inline def setAdditionalProperties(value: String): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
     

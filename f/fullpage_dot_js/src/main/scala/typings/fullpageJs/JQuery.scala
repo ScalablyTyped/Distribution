@@ -18,7 +18,8 @@ object JQuery {
     __obj.asInstanceOf[JQuery]
   }
   
-  extension [Self <: JQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
     
     inline def setFullpage(value: FullPageJs): Self = StObject.set(x, "fullpage", value.asInstanceOf[js.Any])
   }

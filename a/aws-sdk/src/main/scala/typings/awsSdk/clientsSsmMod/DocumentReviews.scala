@@ -23,7 +23,8 @@ object DocumentReviews {
     __obj.asInstanceOf[DocumentReviews]
   }
   
-  extension [Self <: DocumentReviews](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentReviews] (val x: Self) extends AnyVal {
     
     inline def setAction(value: DocumentReviewAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object distCjsLibCommonMod {
       __obj.asInstanceOf[ReverseFormOptions]
     }
     
-    extension [Self <: ReverseFormOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReverseFormOptions] (val x: Self) extends AnyVal {
       
       inline def setOmitSuffix(value: Boolean): Self = StObject.set(x, "omitSuffix", value.asInstanceOf[js.Any])
       

@@ -250,7 +250,8 @@ object M2tsSettings {
     __obj.asInstanceOf[M2tsSettings]
   }
   
-  extension [Self <: M2tsSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: M2tsSettings] (val x: Self) extends AnyVal {
     
     inline def setAbsentInputAudioBehavior(value: M2tsAbsentInputAudioBehavior): Self = StObject.set(x, "AbsentInputAudioBehavior", value.asInstanceOf[js.Any])
     

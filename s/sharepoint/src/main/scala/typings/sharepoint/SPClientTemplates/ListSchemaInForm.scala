@@ -18,7 +18,8 @@ object ListSchemaInForm {
     __obj.asInstanceOf[ListSchemaInForm]
   }
   
-  extension [Self <: ListSchemaInForm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSchemaInForm] (val x: Self) extends AnyVal {
     
     inline def setField(value: js.Array[FieldSchemaInForm]): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
     

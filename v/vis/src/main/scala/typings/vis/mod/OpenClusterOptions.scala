@@ -28,7 +28,8 @@ object OpenClusterOptions {
     __obj.asInstanceOf[OpenClusterOptions]
   }
   
-  extension [Self <: OpenClusterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenClusterOptions] (val x: Self) extends AnyVal {
     
     inline def setReleaseFunction(value: (Position, StringDictionary[Position]) => StringDictionary[Position]): Self = StObject.set(x, "releaseFunction", js.Any.fromFunction2(value))
   }

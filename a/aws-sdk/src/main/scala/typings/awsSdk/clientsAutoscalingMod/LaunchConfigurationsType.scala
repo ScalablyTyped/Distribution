@@ -23,7 +23,8 @@ object LaunchConfigurationsType {
     __obj.asInstanceOf[LaunchConfigurationsType]
   }
   
-  extension [Self <: LaunchConfigurationsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchConfigurationsType] (val x: Self) extends AnyVal {
     
     inline def setLaunchConfigurations(value: LaunchConfigurations): Self = StObject.set(x, "LaunchConfigurations", value.asInstanceOf[js.Any])
     

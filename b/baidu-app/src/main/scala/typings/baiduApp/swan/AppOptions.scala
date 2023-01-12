@@ -56,7 +56,8 @@ object AppOptions {
     __obj.asInstanceOf[AppOptions]
   }
   
-  extension [Self <: AppOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppOptions] (val x: Self) extends AnyVal {
     
     inline def setGlobalData(value: js.Object): Self = StObject.set(x, "globalData", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object GanttCancelEvent {
     __obj.asInstanceOf[GanttCancelEvent]
   }
   
-  extension [Self <: GanttCancelEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttCancelEvent] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

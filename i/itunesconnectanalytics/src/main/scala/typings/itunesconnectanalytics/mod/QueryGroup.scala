@@ -21,7 +21,8 @@ object QueryGroup {
     __obj.asInstanceOf[QueryGroup]
   }
   
-  extension [Self <: QueryGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryGroup] (val x: Self) extends AnyVal {
     
     inline def setDimension(value: dimension): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     

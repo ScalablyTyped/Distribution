@@ -28,7 +28,8 @@ object IWebRequest {
     __obj.asInstanceOf[IWebRequest]
   }
   
-  extension [Self <: IWebRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebRequest] (val x: Self) extends AnyVal {
     
     inline def setResponseURL(value: String): Self = StObject.set(x, "responseURL", value.asInstanceOf[js.Any])
     

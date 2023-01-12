@@ -20,7 +20,8 @@ object CustomLayout {
     __obj.asInstanceOf[CustomLayout]
   }
   
-  extension [Self <: CustomLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomLayout] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

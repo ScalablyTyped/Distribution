@@ -128,7 +128,8 @@ object mod {
       __obj.asInstanceOf[GraphConfiguration[N, L]]
     }
     
-    extension [Self <: GraphConfiguration[?, ?], N /* <: GraphNode */, L /* <: GraphLink */](x: Self & (GraphConfiguration[N, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphConfiguration[?, ?], N /* <: GraphNode */, L /* <: GraphLink */] (val x: Self & (GraphConfiguration[N, L])) extends AnyVal {
       
       inline def setAutomaticRearrangeAfterDropNode(value: Boolean): Self = StObject.set(x, "automaticRearrangeAfterDropNode", value.asInstanceOf[js.Any])
       
@@ -187,7 +188,8 @@ object mod {
       __obj.asInstanceOf[GraphData[N, L]]
     }
     
-    extension [Self <: GraphData[?, ?], N /* <: GraphNode */, L /* <: GraphLink */](x: Self & (GraphData[N, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphData[?, ?], N /* <: GraphNode */, L /* <: GraphLink */] (val x: Self & (GraphData[N, L])) extends AnyVal {
       
       inline def setFocusedNodeId(value: String): Self = StObject.set(x, "focusedNodeId", value.asInstanceOf[js.Any])
       
@@ -249,7 +251,8 @@ object mod {
       __obj.asInstanceOf[GraphEventCallbacks]
     }
     
-    extension [Self <: GraphEventCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphEventCallbacks] (val x: Self) extends AnyVal {
       
       inline def setOnClickGraph(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClickGraph", js.Any.fromFunction1(value))
       
@@ -328,7 +331,8 @@ object mod {
       __obj.asInstanceOf[GraphLevelLinkConfiguration[L]]
     }
     
-    extension [Self <: GraphLevelLinkConfiguration[?], L /* <: GraphLink */](x: Self & GraphLevelLinkConfiguration[L]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphLevelLinkConfiguration[?], L /* <: GraphLink */] (val x: Self & GraphLevelLinkConfiguration[L]) extends AnyVal {
       
       inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
@@ -426,7 +430,8 @@ object mod {
       __obj.asInstanceOf[GraphLevelNodeConfiguration[N]]
     }
     
-    extension [Self <: GraphLevelNodeConfiguration[?], N /* <: GraphNode */](x: Self & GraphLevelNodeConfiguration[N]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphLevelNodeConfiguration[?], N /* <: GraphNode */] (val x: Self & GraphLevelNodeConfiguration[N]) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -496,7 +501,8 @@ object mod {
       __obj.asInstanceOf[GraphLink]
     }
     
-    extension [Self <: GraphLink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphLink] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -558,7 +564,8 @@ object mod {
       __obj.asInstanceOf[GraphNode]
     }
     
-    extension [Self <: GraphNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphNode] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -659,7 +666,8 @@ object mod {
       __obj.asInstanceOf[GraphProps[N, L]]
     }
     
-    extension [Self <: GraphProps[?, ?], N /* <: GraphNode */, L /* <: GraphLink */](x: Self & (GraphProps[N, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphProps[?, ?], N /* <: GraphNode */, L /* <: GraphLink */] (val x: Self & (GraphProps[N, L])) extends AnyVal {
       
       inline def setConfig(value: Partial[GraphConfiguration[N, L]]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -744,7 +752,8 @@ object mod {
       __obj.asInstanceOf[LinkLevelLinkConfiguration]
     }
     
-    extension [Self <: LinkLevelLinkConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkLevelLinkConfiguration] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -803,7 +812,8 @@ object mod {
       __obj.asInstanceOf[NodeLevelNodeConfiguration]
     }
     
-    extension [Self <: NodeLevelNodeConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeLevelNodeConfiguration] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

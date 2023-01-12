@@ -76,7 +76,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LevelDownBatchOptions]
     }
     
-    extension [Self <: LevelDownBatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LevelDownBatchOptions] (val x: Self) extends AnyVal {
       
       inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LevelDownClearOptions]
     }
     
-    extension [Self <: LevelDownClearOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LevelDownClearOptions] (val x: Self) extends AnyVal {
       
       inline def setGt(value: Bytes): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
       
@@ -158,7 +160,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LevelDownDelOptions]
     }
     
-    extension [Self <: LevelDownDelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LevelDownDelOptions] (val x: Self) extends AnyVal {
       
       inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
@@ -179,7 +182,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LevelDownGetOptions]
     }
     
-    extension [Self <: LevelDownGetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LevelDownGetOptions] (val x: Self) extends AnyVal {
       
       inline def setFillCache(value: Boolean): Self = StObject.set(x, "fillCache", value.asInstanceOf[js.Any])
       
@@ -217,7 +221,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LevelDownIterator]
     }
     
-    extension [Self <: LevelDownIterator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LevelDownIterator] (val x: Self) extends AnyVal {
       
       inline def setBinding(value: Any): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
       
@@ -244,7 +249,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LevelDownIteratorOptions]
     }
     
-    extension [Self <: LevelDownIteratorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LevelDownIteratorOptions] (val x: Self) extends AnyVal {
       
       inline def setFillCache(value: Boolean): Self = StObject.set(x, "fillCache", value.asInstanceOf[js.Any])
       
@@ -277,7 +283,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LevelDownOpenOptions]
     }
     
-    extension [Self <: LevelDownOpenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LevelDownOpenOptions] (val x: Self) extends AnyVal {
       
       inline def setBlockRestartInterval(value: Double): Self = StObject.set(x, "blockRestartInterval", value.asInstanceOf[js.Any])
       
@@ -322,7 +329,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LevelDownPutOptions]
     }
     
-    extension [Self <: LevelDownPutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LevelDownPutOptions] (val x: Self) extends AnyVal {
       
       inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       

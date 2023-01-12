@@ -19,7 +19,8 @@ object Invoices {
     __obj.asInstanceOf[Invoices]
   }
   
-  extension [Self <: Invoices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Invoices] (val x: Self) extends AnyVal {
     
     inline def setInvoices(value: js.Array[EnergyInvoice]): Self = StObject.set(x, "invoices", value.asInstanceOf[js.Any])
     

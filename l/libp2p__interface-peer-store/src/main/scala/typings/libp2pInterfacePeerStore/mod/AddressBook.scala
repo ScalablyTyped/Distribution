@@ -64,7 +64,8 @@ object AddressBook {
     __obj.asInstanceOf[AddressBook]
   }
   
-  extension [Self <: AddressBook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddressBook] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (PeerId, js.Array[Multiaddr_]) => js.Promise[Unit]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

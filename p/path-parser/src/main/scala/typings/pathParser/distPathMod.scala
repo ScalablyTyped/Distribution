@@ -100,7 +100,8 @@ object distPathMod {
       __obj.asInstanceOf[InternalPathOptions]
     }
     
-    extension [Self <: InternalPathOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalPathOptions] (val x: Self) extends AnyVal {
       
       inline def setQueryParams(value: IOptions): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object distPathMod {
       __obj.asInstanceOf[PathBuildOptions]
     }
     
-    extension [Self <: PathBuildOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathBuildOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreConstraints(value: Boolean): Self = StObject.set(x, "ignoreConstraints", value.asInstanceOf[js.Any])
       
@@ -167,7 +169,8 @@ object distPathMod {
       __obj.asInstanceOf[PathOptions]
     }
     
-    extension [Self <: PathOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathOptions] (val x: Self) extends AnyVal {
       
       inline def setQueryParams(value: IOptions): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
@@ -194,7 +197,8 @@ object distPathMod {
       __obj.asInstanceOf[PathPartialTestOptions]
     }
     
-    extension [Self <: PathPartialTestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathPartialTestOptions] (val x: Self) extends AnyVal {
       
       inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
@@ -221,7 +225,8 @@ object distPathMod {
       __obj.asInstanceOf[PathTestOptions]
     }
     
-    extension [Self <: PathTestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathTestOptions] (val x: Self) extends AnyVal {
       
       inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       

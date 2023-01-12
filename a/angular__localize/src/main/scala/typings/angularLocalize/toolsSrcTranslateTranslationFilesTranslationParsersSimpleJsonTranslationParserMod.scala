@@ -27,7 +27,8 @@ object toolsSrcTranslateTranslationFilesTranslationParsersSimpleJsonTranslationP
       __obj.asInstanceOf[SimpleJsonFile]
     }
     
-    extension [Self <: SimpleJsonFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleJsonFile] (val x: Self) extends AnyVal {
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       

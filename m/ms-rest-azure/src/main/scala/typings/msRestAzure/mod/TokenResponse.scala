@@ -27,7 +27,8 @@ object TokenResponse {
     __obj.asInstanceOf[TokenResponse]
   }
   
-  extension [Self <: TokenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenResponse] (val x: Self) extends AnyVal {
     
     inline def setNotBefore(value: Double): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
     

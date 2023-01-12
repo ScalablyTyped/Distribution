@@ -24,7 +24,8 @@ object ServiceLevel {
     __obj.asInstanceOf[ServiceLevel]
   }
   
-  extension [Self <: ServiceLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceLevel] (val x: Self) extends AnyVal {
     
     inline def setExtended_token(value: String): Self = StObject.set(x, "extended_token", value.asInstanceOf[js.Any])
     

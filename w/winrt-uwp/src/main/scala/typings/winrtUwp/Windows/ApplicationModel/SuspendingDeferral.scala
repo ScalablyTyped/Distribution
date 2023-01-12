@@ -17,7 +17,8 @@ object SuspendingDeferral {
     __obj.asInstanceOf[SuspendingDeferral]
   }
   
-  extension [Self <: SuspendingDeferral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuspendingDeferral] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }

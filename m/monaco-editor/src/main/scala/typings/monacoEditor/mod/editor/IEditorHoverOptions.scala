@@ -37,7 +37,8 @@ object IEditorHoverOptions {
     __obj.asInstanceOf[IEditorHoverOptions]
   }
   
-  extension [Self <: IEditorHoverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEditorHoverOptions] (val x: Self) extends AnyVal {
     
     inline def setAbove(value: Boolean): Self = StObject.set(x, "above", value.asInstanceOf[js.Any])
     

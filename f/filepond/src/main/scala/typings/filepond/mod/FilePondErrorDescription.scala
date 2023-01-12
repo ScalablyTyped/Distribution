@@ -20,7 +20,8 @@ object FilePondErrorDescription {
     __obj.asInstanceOf[FilePondErrorDescription]
   }
   
-  extension [Self <: FilePondErrorDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilePondErrorDescription] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

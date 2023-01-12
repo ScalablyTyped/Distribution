@@ -19,7 +19,8 @@ object BucketAccessControls {
     __obj.asInstanceOf[BucketAccessControls]
   }
   
-  extension [Self <: BucketAccessControls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketAccessControls] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[BucketAccessControl]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

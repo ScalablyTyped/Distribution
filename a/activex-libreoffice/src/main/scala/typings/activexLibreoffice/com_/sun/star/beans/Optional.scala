@@ -30,7 +30,8 @@ object Optional {
     __obj.asInstanceOf[Optional[T]]
   }
   
-  extension [Self <: Optional[?], T](x: Self & Optional[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Optional[?], T] (val x: Self & Optional[T]) extends AnyVal {
     
     inline def setIsPresent(value: Boolean): Self = StObject.set(x, "IsPresent", value.asInstanceOf[js.Any])
     

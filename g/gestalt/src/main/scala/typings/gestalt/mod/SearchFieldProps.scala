@@ -48,7 +48,8 @@ object SearchFieldProps {
     __obj.asInstanceOf[SearchFieldProps]
   }
   
-  extension [Self <: SearchFieldProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchFieldProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityClearButtonLabel(value: String): Self = StObject.set(x, "accessibilityClearButtonLabel", value.asInstanceOf[js.Any])
     

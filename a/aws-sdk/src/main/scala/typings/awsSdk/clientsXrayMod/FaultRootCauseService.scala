@@ -43,7 +43,8 @@ object FaultRootCauseService {
     __obj.asInstanceOf[FaultRootCauseService]
   }
   
-  extension [Self <: FaultRootCauseService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaultRootCauseService] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

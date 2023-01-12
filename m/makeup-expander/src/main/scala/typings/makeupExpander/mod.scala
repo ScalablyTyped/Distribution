@@ -86,7 +86,8 @@ object mod {
       __obj.asInstanceOf[Expander]
     }
     
-    extension [Self <: Expander](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Expander] (val x: Self) extends AnyVal {
       
       inline def setCollapse(value: () => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction0(value))
       
@@ -143,7 +144,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAutoCollapse(value: Boolean): Self = StObject.set(x, "autoCollapse", value.asInstanceOf[js.Any])
       

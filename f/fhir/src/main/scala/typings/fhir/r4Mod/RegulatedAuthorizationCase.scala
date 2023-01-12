@@ -47,7 +47,8 @@ object RegulatedAuthorizationCase {
     __obj.asInstanceOf[RegulatedAuthorizationCase]
   }
   
-  extension [Self <: RegulatedAuthorizationCase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegulatedAuthorizationCase] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: js.Array[RegulatedAuthorizationCase]): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     

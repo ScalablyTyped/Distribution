@@ -16,7 +16,8 @@ object BlockSubscriptionChannel {
     __obj.asInstanceOf[BlockSubscriptionChannel]
   }
   
-  extension [Self <: BlockSubscriptionChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockSubscriptionChannel] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

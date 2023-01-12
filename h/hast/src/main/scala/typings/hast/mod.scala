@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[Comment]
     }
     
-    extension [Self <: Comment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
       
       inline def setType(value: comment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -84,7 +85,8 @@ object mod {
       __obj.asInstanceOf[DocType]
     }
     
-    extension [Self <: DocType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocType] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -131,7 +133,8 @@ object mod {
       __obj.asInstanceOf[Element]
     }
     
-    extension [Self <: Element](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ElementContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -188,7 +191,8 @@ object mod {
       __obj.asInstanceOf[ElementContentMap]
     }
     
-    extension [Self <: ElementContentMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementContentMap] (val x: Self) extends AnyVal {
       
       inline def setComment(value: Comment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -248,7 +252,8 @@ object mod {
       __obj.asInstanceOf[Root]
     }
     
-    extension [Self <: Root](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Root] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[RootContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -300,7 +305,8 @@ object mod {
       __obj.asInstanceOf[RootContentMap]
     }
     
-    extension [Self <: RootContentMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RootContentMap] (val x: Self) extends AnyVal {
       
       inline def setComment(value: Comment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -330,7 +336,8 @@ object mod {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setType(value: text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

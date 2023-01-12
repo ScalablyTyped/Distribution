@@ -61,7 +61,8 @@ object MiddlewareCustomizationDefinition {
     __obj.asInstanceOf[MiddlewareCustomizationDefinition]
   }
   
-  extension [Self <: MiddlewareCustomizationDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MiddlewareCustomizationDefinition] (val x: Self) extends AnyVal {
     
     inline def setConditionExpression(value: String): Self = StObject.set(x, "conditionExpression", value.asInstanceOf[js.Any])
     

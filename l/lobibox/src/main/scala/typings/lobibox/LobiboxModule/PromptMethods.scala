@@ -17,7 +17,8 @@ object PromptMethods {
     __obj.asInstanceOf[PromptMethods]
   }
   
-  extension [Self <: PromptMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromptMethods] (val x: Self) extends AnyVal {
     
     inline def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     

@@ -18,7 +18,8 @@ object BacklogColumn {
     __obj.asInstanceOf[BacklogColumn]
   }
   
-  extension [Self <: BacklogColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BacklogColumn] (val x: Self) extends AnyVal {
     
     inline def setColumnFieldReference(value: WorkItemFieldReference): Self = StObject.set(x, "columnFieldReference", value.asInstanceOf[js.Any])
     

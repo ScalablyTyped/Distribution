@@ -28,7 +28,8 @@ object ImageSource {
     __obj.asInstanceOf[ImageSource]
   }
   
-  extension [Self <: ImageSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageSource] (val x: Self) extends AnyVal {
     
     inline def setGcsImageUri(value: String): Self = StObject.set(x, "gcsImageUri", value.asInstanceOf[js.Any])
     

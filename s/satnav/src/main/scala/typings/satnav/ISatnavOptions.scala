@@ -21,7 +21,8 @@ object ISatnavOptions {
     __obj.asInstanceOf[ISatnavOptions]
   }
   
-  extension [Self <: ISatnavOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISatnavOptions] (val x: Self) extends AnyVal {
     
     inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     

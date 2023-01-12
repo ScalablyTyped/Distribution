@@ -61,7 +61,8 @@ object UnclaimedDraftRequestOptions {
     __obj.asInstanceOf[UnclaimedDraftRequestOptions[Metadata]]
   }
   
-  extension [Self <: UnclaimedDraftRequestOptions[?], Metadata](x: Self & UnclaimedDraftRequestOptions[Metadata]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnclaimedDraftRequestOptions[?], Metadata] (val x: Self & UnclaimedDraftRequestOptions[Metadata]) extends AnyVal {
     
     inline def setAllow_decline(value: Double): Self = StObject.set(x, "allow_decline", value.asInstanceOf[js.Any])
     

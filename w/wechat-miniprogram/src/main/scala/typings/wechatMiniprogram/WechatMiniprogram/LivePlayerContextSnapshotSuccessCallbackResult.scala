@@ -24,7 +24,8 @@ object LivePlayerContextSnapshotSuccessCallbackResult {
     __obj.asInstanceOf[LivePlayerContextSnapshotSuccessCallbackResult]
   }
   
-  extension [Self <: LivePlayerContextSnapshotSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LivePlayerContextSnapshotSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

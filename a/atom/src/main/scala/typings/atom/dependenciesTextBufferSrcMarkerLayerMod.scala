@@ -48,7 +48,8 @@ object dependenciesTextBufferSrcMarkerLayerMod {
       __obj.asInstanceOf[FindMarkerOptions]
     }
     
-    extension [Self <: FindMarkerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindMarkerOptions] (val x: Self) extends AnyVal {
       
       inline def setContainsPoint(value: PointCompatible): Self = StObject.set(x, "containsPoint", value.asInstanceOf[js.Any])
       

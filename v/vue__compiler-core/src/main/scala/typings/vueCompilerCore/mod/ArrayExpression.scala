@@ -23,7 +23,8 @@ object ArrayExpression {
     __obj.asInstanceOf[ArrayExpression]
   }
   
-  extension [Self <: ArrayExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayExpression] (val x: Self) extends AnyVal {
     
     inline def setElements(value: js.Array[String | Node2]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     

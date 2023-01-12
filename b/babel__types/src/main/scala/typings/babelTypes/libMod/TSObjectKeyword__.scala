@@ -24,7 +24,8 @@ object TSObjectKeyword__ {
     __obj.asInstanceOf[TSObjectKeyword__]
   }
   
-  extension [Self <: TSObjectKeyword__](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSObjectKeyword__] (val x: Self) extends AnyVal {
     
     inline def setType(value: TSObjectKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

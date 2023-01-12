@@ -49,7 +49,8 @@ object IBufferNamespace {
     __obj.asInstanceOf[IBufferNamespace]
   }
   
-  extension [Self <: IBufferNamespace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBufferNamespace] (val x: Self) extends AnyVal {
     
     inline def setActive(value: IBuffer): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

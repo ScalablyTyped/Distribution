@@ -93,7 +93,8 @@ object dxChartSeriesTypesCommonSeriesLabel {
     __obj.asInstanceOf[dxChartSeriesTypesCommonSeriesLabel]
   }
   
-  extension [Self <: dxChartSeriesTypesCommonSeriesLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartSeriesTypesCommonSeriesLabel] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: HorizontalAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

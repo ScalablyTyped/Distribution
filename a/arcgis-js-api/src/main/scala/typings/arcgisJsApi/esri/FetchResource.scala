@@ -34,7 +34,8 @@ object FetchResource {
     __obj.asInstanceOf[FetchResource]
   }
   
-  extension [Self <: FetchResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchResource] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object UpdateFlowMediaStreamResponse {
     __obj.asInstanceOf[UpdateFlowMediaStreamResponse]
   }
   
-  extension [Self <: UpdateFlowMediaStreamResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFlowMediaStreamResponse] (val x: Self) extends AnyVal {
     
     inline def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
     

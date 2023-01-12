@@ -349,7 +349,8 @@ object mod {
       __obj.asInstanceOf[Descriptor]
     }
     
-    extension [Self <: Descriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Descriptor] (val x: Self) extends AnyVal {
       
       inline def setAllTypes(value: js.Array[TypeDefinition]): Self = StObject.set(x, "allTypes", value.asInstanceOf[js.Any])
       
@@ -392,7 +393,8 @@ object mod {
       __obj.asInstanceOf[GenericDescriptor]
     }
     
-    extension [Self <: GenericDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericDescriptor] (val x: Self) extends AnyVal {
       
       inline def setIsGeneric(value: `true`): Self = StObject.set(x, "isGeneric", value.asInstanceOf[js.Any])
       
@@ -419,7 +421,8 @@ object mod {
       __obj.asInstanceOf[ModdleTypesMap]
     }
     
-    extension [Self <: ModdleTypesMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModdleTypesMap] (val x: Self) extends AnyVal {
       
       inline def setBoolean(value: Boolean): Self = StObject.set(x, "Boolean", value.asInstanceOf[js.Any])
       
@@ -448,7 +451,8 @@ object mod {
       __obj.asInstanceOf[Ns]
     }
     
-    extension [Self <: Ns](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ns] (val x: Self) extends AnyVal {
       
       inline def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
       
@@ -497,7 +501,8 @@ object mod {
       __obj.asInstanceOf[PackageDefinition]
     }
     
-    extension [Self <: PackageDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageDefinition] (val x: Self) extends AnyVal {
       
       inline def setAssociations(value: Any): Self = StObject.set(x, "associations", value.asInstanceOf[js.Any])
       
@@ -565,7 +570,8 @@ object mod {
       __obj.asInstanceOf[PropertyDefinition]
     }
     
-    extension [Self <: PropertyDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropertyDefinition] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: String | Double | js.Symbol | Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -613,7 +619,8 @@ object mod {
       __obj.asInstanceOf[PropertyDescriptor]
     }
     
-    extension [Self <: PropertyDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropertyDescriptor] (val x: Self) extends AnyVal {
       
       inline def setInherited(value: Boolean): Self = StObject.set(x, "inherited", value.asInstanceOf[js.Any])
       
@@ -651,7 +658,8 @@ object mod {
       __obj.asInstanceOf[TypeDefinition]
     }
     
-    extension [Self <: TypeDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeDefinition] (val x: Self) extends AnyVal {
       
       inline def setExtends(value: js.Array[String]): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
       

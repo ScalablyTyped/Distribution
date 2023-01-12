@@ -30,7 +30,8 @@ object ASPxClientChaikinsVolatility {
     __obj.asInstanceOf[ASPxClientChaikinsVolatility]
   }
   
-  extension [Self <: ASPxClientChaikinsVolatility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientChaikinsVolatility] (val x: Self) extends AnyVal {
     
     inline def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
   }

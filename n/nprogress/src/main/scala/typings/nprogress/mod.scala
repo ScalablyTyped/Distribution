@@ -95,7 +95,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[NProgressOptions]
     }
     
-    extension [Self <: NProgressOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NProgressOptions] (val x: Self) extends AnyVal {
       
       inline def setBarSelector(value: String): Self = StObject.set(x, "barSelector", value.asInstanceOf[js.Any])
       

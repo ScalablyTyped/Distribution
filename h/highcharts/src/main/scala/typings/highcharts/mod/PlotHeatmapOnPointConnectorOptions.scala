@@ -30,7 +30,8 @@ object PlotHeatmapOnPointConnectorOptions {
     __obj.asInstanceOf[PlotHeatmapOnPointConnectorOptions]
   }
   
-  extension [Self <: PlotHeatmapOnPointConnectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotHeatmapOnPointConnectorOptions] (val x: Self) extends AnyVal {
     
     inline def setDashstyle(value: String): Self = StObject.set(x, "dashstyle", value.asInstanceOf[js.Any])
     

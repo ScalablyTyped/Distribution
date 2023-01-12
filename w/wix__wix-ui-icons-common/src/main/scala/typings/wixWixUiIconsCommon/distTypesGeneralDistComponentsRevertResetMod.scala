@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsRevertResetMod extends Shortcut {
       __obj.asInstanceOf[RevertResetProps]
     }
     
-    extension [Self <: RevertResetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RevertResetProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

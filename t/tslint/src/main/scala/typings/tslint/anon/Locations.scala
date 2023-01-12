@@ -19,7 +19,8 @@ object Locations {
     __obj.asInstanceOf[Locations]
   }
   
-  extension [Self <: Locations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Locations] (val x: Self) extends AnyVal {
     
     inline def setLocations(value: Enum): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object DeviceCompliancePolicySettingState {
     __obj.asInstanceOf[DeviceCompliancePolicySettingState]
   }
   
-  extension [Self <: DeviceCompliancePolicySettingState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceCompliancePolicySettingState] (val x: Self) extends AnyVal {
     
     inline def setCurrentValue(value: NullableOption[String]): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Active]
     }
     
-    extension [Self <: Active](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
       
       inline def setActive(value: `true`): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object anon {
       __obj.asInstanceOf[ContentType_]
     }
     
-    extension [Self <: ContentType_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentType_] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
@@ -163,7 +165,8 @@ object anon {
       __obj.asInstanceOf[Contenttype]
     }
     
-    extension [Self <: Contenttype](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Contenttype] (val x: Self) extends AnyVal {
       
       inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
       
@@ -204,7 +207,8 @@ object anon {
       __obj.asInstanceOf[Count]
     }
     
-    extension [Self <: Count](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -233,7 +237,8 @@ object anon {
       __obj.asInstanceOf[Description]
     }
     
-    extension [Self <: Description](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: Null): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -260,7 +265,8 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    extension [Self <: End](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -281,7 +287,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -314,7 +321,8 @@ object anon {
       __obj.asInstanceOf[Inputtype]
     }
     
-    extension [Self <: Inputtype](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Inputtype] (val x: Self) extends AnyVal {
       
       inline def setActive(value: `true`): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -355,7 +363,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: Null): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -382,7 +391,8 @@ object anon {
       __obj.asInstanceOf[Planid]
     }
     
-    extension [Self <: Planid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Planid] (val x: Self) extends AnyVal {
       
       inline def setPlan_id(value: String): Self = StObject.set(x, "plan_id", value.asInstanceOf[js.Any])
       
@@ -407,7 +417,8 @@ object anon {
       __obj.asInstanceOf[Productid]
     }
     
-    extension [Self <: Productid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Productid] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -428,7 +439,8 @@ object anon {
       __obj.asInstanceOf[Results]
     }
     
-    extension [Self <: Results](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

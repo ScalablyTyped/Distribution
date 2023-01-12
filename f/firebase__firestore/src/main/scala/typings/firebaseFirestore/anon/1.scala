@@ -15,7 +15,8 @@ object `1` {
     __obj.asInstanceOf[`1`[R, S]]
   }
   
-  extension [Self <: `1`[?, ?], R, S](x: Self & (`1`[R, S])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `1`[?, ?], R, S] (val x: Self & (`1`[R, S])) extends AnyVal {
     
     inline def setForEach(value: js.Function2[/* r */ R, /* s */ S, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
   }

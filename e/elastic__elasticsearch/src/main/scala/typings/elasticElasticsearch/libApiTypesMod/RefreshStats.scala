@@ -31,7 +31,8 @@ object RefreshStats {
     __obj.asInstanceOf[RefreshStats]
   }
   
-  extension [Self <: RefreshStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshStats] (val x: Self) extends AnyVal {
     
     inline def setExternal_total(value: long): Self = StObject.set(x, "external_total", value.asInstanceOf[js.Any])
     

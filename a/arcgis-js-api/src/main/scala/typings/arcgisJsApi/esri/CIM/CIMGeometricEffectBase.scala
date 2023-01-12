@@ -21,7 +21,8 @@ object CIMGeometricEffectBase {
     __obj.asInstanceOf[CIMGeometricEffectBase]
   }
   
-  extension [Self <: CIMGeometricEffectBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMGeometricEffectBase] (val x: Self) extends AnyVal {
     
     inline def setPrimitiveName(value: String): Self = StObject.set(x, "primitiveName", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Hash]
     }
     
-    extension [Self <: Hash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hash] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -86,7 +88,8 @@ object anon {
       __obj.asInstanceOf[Params[T]]
     }
     
-    extension [Self <: Params[?], T /* <: Record[String, Any] */](x: Self & Params[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params[?], T /* <: Record[String, Any] */] (val x: Self & Params[T]) extends AnyVal {
       
       inline def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       

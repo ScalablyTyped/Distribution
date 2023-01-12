@@ -19,7 +19,8 @@ object Subscribed {
     __obj.asInstanceOf[Subscribed]
   }
   
-  extension [Self <: Subscribed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Subscribed] (val x: Self) extends AnyVal {
     
     inline def setIgnored(value: Boolean): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
     

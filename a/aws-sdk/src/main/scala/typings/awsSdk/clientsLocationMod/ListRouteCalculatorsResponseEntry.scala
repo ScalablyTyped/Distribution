@@ -49,7 +49,8 @@ object ListRouteCalculatorsResponseEntry {
     __obj.asInstanceOf[ListRouteCalculatorsResponseEntry]
   }
   
-  extension [Self <: ListRouteCalculatorsResponseEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRouteCalculatorsResponseEntry] (val x: Self) extends AnyVal {
     
     inline def setCalculatorName(value: ResourceName): Self = StObject.set(x, "CalculatorName", value.asInstanceOf[js.Any])
     

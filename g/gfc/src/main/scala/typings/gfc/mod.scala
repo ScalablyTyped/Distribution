@@ -61,7 +61,8 @@ object mod {
       __obj.asInstanceOf[ExecOptionsWithEncoding]
     }
     
-    extension [Self <: ExecOptionsWithEncoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecOptionsWithEncoding] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: BufferEncoding | buffer): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object mod {
       __obj.asInstanceOf[Options[TExecOptions]]
     }
     
-    extension [Self <: Options[?], TExecOptions](x: Self & Options[TExecOptions]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], TExecOptions] (val x: Self & Options[TExecOptions]) extends AnyVal {
       
       inline def setCommit(value: Boolean): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
       

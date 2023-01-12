@@ -28,7 +28,8 @@ object PackageAggregation {
     __obj.asInstanceOf[PackageAggregation]
   }
   
-  extension [Self <: PackageAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageAggregation] (val x: Self) extends AnyVal {
     
     inline def setPackageNames(value: StringFilterList): Self = StObject.set(x, "packageNames", value.asInstanceOf[js.Any])
     

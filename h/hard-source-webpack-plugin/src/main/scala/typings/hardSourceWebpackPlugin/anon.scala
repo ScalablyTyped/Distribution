@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Directories]
     }
     
-    extension [Self <: Directories](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Directories] (val x: Self) extends AnyVal {
       
       inline def setDirectories(value: js.Array[String]): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Level]
     }
     
-    extension [Self <: Level](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: debug | log | info | warn | error): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object anon {
       __obj.asInstanceOf[MaxAge]
     }
     
-    extension [Self <: MaxAge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxAge] (val x: Self) extends AnyVal {
       
       inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       

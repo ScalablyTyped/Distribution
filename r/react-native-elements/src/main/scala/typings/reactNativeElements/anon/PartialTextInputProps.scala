@@ -396,7 +396,8 @@ object PartialTextInputProps {
     __obj.asInstanceOf[PartialTextInputProps]
   }
   
-  extension [Self <: PartialTextInputProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTextInputProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

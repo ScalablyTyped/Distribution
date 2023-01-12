@@ -16,7 +16,8 @@ object GoogleCloudDialogflowCxV3beta1PageInfoFormInfo {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1PageInfoFormInfo]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3beta1PageInfoFormInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1PageInfoFormInfo] (val x: Self) extends AnyVal {
     
     inline def setParameterInfo(value: js.Array[GoogleCloudDialogflowCxV3beta1PageInfoFormInfoParameterInfo]): Self = StObject.set(x, "parameterInfo", value.asInstanceOf[js.Any])
     

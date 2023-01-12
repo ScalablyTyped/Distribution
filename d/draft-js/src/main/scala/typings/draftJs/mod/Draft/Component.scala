@@ -281,7 +281,8 @@ object Component {
         __obj.asInstanceOf[DraftEditorProps]
       }
       
-      extension [Self <: DraftEditorProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DraftEditorProps] (val x: Self) extends AnyVal {
         
         inline def setAriaActiveDescendantID(value: String): Self = StObject.set(x, "ariaActiveDescendantID", value.asInstanceOf[js.Any])
         
@@ -552,7 +553,8 @@ object Component {
         __obj.asInstanceOf[FakeClientRect]
       }
       
-      extension [Self <: FakeClientRect](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FakeClientRect] (val x: Self) extends AnyVal {
         
         inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
         

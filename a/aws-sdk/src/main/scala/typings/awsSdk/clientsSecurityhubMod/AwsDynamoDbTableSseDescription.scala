@@ -33,7 +33,8 @@ object AwsDynamoDbTableSseDescription {
     __obj.asInstanceOf[AwsDynamoDbTableSseDescription]
   }
   
-  extension [Self <: AwsDynamoDbTableSseDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsDynamoDbTableSseDescription] (val x: Self) extends AnyVal {
     
     inline def setInaccessibleEncryptionDateTime(value: NonEmptyString): Self = StObject.set(x, "InaccessibleEncryptionDateTime", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ContextHelper {
   @js.native
   val ^ : ContextHelper = js.native
   
-  extension [Self <: ContextHelper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextHelper] (val x: Self) extends AnyVal {
     
     inline def setAttachTo(value: obj => Unit): Self = StObject.set(x, "attachTo", js.Any.fromFunction1(value))
     

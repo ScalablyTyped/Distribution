@@ -49,7 +49,8 @@ object srcUtilsIsMod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setElement(value: Any): Self = StObject.set(x, "Element", value.asInstanceOf[js.Any])
         

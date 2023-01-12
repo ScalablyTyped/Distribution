@@ -18,7 +18,8 @@ object ListOriginAccessControlsResult {
     __obj.asInstanceOf[ListOriginAccessControlsResult]
   }
   
-  extension [Self <: ListOriginAccessControlsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListOriginAccessControlsResult] (val x: Self) extends AnyVal {
     
     inline def setOriginAccessControlList(value: OriginAccessControlList): Self = StObject.set(x, "OriginAccessControlList", value.asInstanceOf[js.Any])
     

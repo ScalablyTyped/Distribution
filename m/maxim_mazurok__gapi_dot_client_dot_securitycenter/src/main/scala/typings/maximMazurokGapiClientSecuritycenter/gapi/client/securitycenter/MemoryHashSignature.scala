@@ -19,7 +19,8 @@ object MemoryHashSignature {
     __obj.asInstanceOf[MemoryHashSignature]
   }
   
-  extension [Self <: MemoryHashSignature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemoryHashSignature] (val x: Self) extends AnyVal {
     
     inline def setBinaryFamily(value: String): Self = StObject.set(x, "binaryFamily", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object GetFrameOwnerRequest {
     __obj.asInstanceOf[GetFrameOwnerRequest]
   }
   
-  extension [Self <: GetFrameOwnerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFrameOwnerRequest] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
   }

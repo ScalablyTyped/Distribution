@@ -20,7 +20,8 @@ object UacGroup {
     __obj.asInstanceOf[UacGroup]
   }
   
-  extension [Self <: UacGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UacGroup] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

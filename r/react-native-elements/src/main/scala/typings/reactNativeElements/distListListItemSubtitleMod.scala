@@ -29,7 +29,8 @@ object distListListItemSubtitleMod extends Shortcut {
       __obj.asInstanceOf[SubtitleProps]
     }
     
-    extension [Self <: SubtitleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubtitleProps] (val x: Self) extends AnyVal {
       
       inline def setRight(value: Boolean): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       

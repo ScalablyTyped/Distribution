@@ -22,7 +22,8 @@ object BasicLevel {
     __obj.asInstanceOf[BasicLevel]
   }
   
-  extension [Self <: BasicLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicLevel] (val x: Self) extends AnyVal {
     
     inline def setCombiningFunction(value: String): Self = StObject.set(x, "combiningFunction", value.asInstanceOf[js.Any])
     

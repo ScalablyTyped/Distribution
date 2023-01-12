@@ -39,7 +39,8 @@ object ICursorPositionChangedEvent {
     __obj.asInstanceOf[ICursorPositionChangedEvent]
   }
   
-  extension [Self <: ICursorPositionChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICursorPositionChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

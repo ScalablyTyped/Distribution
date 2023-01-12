@@ -442,7 +442,8 @@ object InstallControl {
       __obj.asInstanceOf[AppInstallManagerItemEventArgs]
     }
     
-    extension [Self <: AppInstallManagerItemEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppInstallManagerItemEventArgs] (val x: Self) extends AnyVal {
       
       inline def setItem(value: AppInstallItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     }
@@ -479,7 +480,8 @@ object InstallControl {
       __obj.asInstanceOf[AppInstallStatus]
     }
     
-    extension [Self <: AppInstallStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppInstallStatus] (val x: Self) extends AnyVal {
       
       inline def setBytesDownloaded(value: Double): Self = StObject.set(x, "bytesDownloaded", value.asInstanceOf[js.Any])
       

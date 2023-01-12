@@ -53,7 +53,8 @@ object JDBCConnectorOptions {
     __obj.asInstanceOf[JDBCConnectorOptions]
   }
   
-  extension [Self <: JDBCConnectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JDBCConnectorOptions] (val x: Self) extends AnyVal {
     
     inline def setDataTypeMapping(value: JDBCDataTypeMapping): Self = StObject.set(x, "DataTypeMapping", value.asInstanceOf[js.Any])
     

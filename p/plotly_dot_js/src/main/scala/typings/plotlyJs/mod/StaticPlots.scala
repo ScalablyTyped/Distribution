@@ -15,7 +15,8 @@ object StaticPlots {
     __obj.asInstanceOf[StaticPlots]
   }
   
-  extension [Self <: StaticPlots](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaticPlots] (val x: Self) extends AnyVal {
     
     inline def setResize(value: Root => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
   }

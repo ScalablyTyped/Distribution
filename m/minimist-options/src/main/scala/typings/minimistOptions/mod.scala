@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[BaseOption[TypeOptionType, DefaultOptionType]]
     }
     
-    extension [Self <: BaseOption[?, ?], TypeOptionType /* <: OptionType */, DefaultOptionType](x: Self & (BaseOption[TypeOptionType, DefaultOptionType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOption[?, ?], TypeOptionType /* <: OptionType */, DefaultOptionType] (val x: Self & (BaseOption[TypeOptionType, DefaultOptionType])) extends AnyVal {
       
       inline def setAlias(value: String | js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       

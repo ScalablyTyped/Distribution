@@ -18,7 +18,8 @@ object BatchImportFindingsRequest {
     __obj.asInstanceOf[BatchImportFindingsRequest]
   }
   
-  extension [Self <: BatchImportFindingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchImportFindingsRequest] (val x: Self) extends AnyVal {
     
     inline def setFindings(value: BatchImportFindingsRequestFindingList): Self = StObject.set(x, "Findings", value.asInstanceOf[js.Any])
     

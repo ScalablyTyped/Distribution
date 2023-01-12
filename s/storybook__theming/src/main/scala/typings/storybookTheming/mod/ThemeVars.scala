@@ -63,7 +63,8 @@ object ThemeVars {
     __obj.asInstanceOf[ThemeVars]
   }
   
-  extension [Self <: ThemeVars](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeVars] (val x: Self) extends AnyVal {
     
     inline def setAppBg(value: String): Self = StObject.set(x, "appBg", value.asInstanceOf[js.Any])
     

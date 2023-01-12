@@ -42,7 +42,8 @@ object CanvasFilledElement {
     __obj.asInstanceOf[CanvasFilledElement]
   }
   
-  extension [Self <: CanvasFilledElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasFilledElement] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String | PatternFill): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

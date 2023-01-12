@@ -27,7 +27,8 @@ object OldValue {
     __obj.asInstanceOf[OldValue[N, O]]
   }
   
-  extension [Self <: OldValue[?, ?], N /* <: js.UndefOr[String | Double | Boolean] */, O /* <: js.UndefOr[String | Double | Boolean] */](x: Self & (OldValue[N, O])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OldValue[?, ?], N /* <: js.UndefOr[String | Double | Boolean] */, O /* <: js.UndefOr[String | Double | Boolean] */] (val x: Self & (OldValue[N, O])) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

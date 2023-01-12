@@ -15,7 +15,8 @@ object SegmentationSmoothingConfig {
     __obj.asInstanceOf[SegmentationSmoothingConfig]
   }
   
-  extension [Self <: SegmentationSmoothingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentationSmoothingConfig] (val x: Self) extends AnyVal {
     
     inline def setCombineWithPreviousRatio(value: Double): Self = StObject.set(x, "combineWithPreviousRatio", value.asInstanceOf[js.Any])
   }

@@ -88,7 +88,8 @@ object mod {
       __obj.asInstanceOf[ConfigstoreOptions]
     }
     
-    extension [Self <: ConfigstoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigstoreOptions] (val x: Self) extends AnyVal {
       
       inline def setConfigPath(value: String): Self = StObject.set(x, "configPath", value.asInstanceOf[js.Any])
       

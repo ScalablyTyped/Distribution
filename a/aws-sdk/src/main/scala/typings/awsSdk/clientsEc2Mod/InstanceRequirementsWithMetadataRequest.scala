@@ -28,7 +28,8 @@ object InstanceRequirementsWithMetadataRequest {
     __obj.asInstanceOf[InstanceRequirementsWithMetadataRequest]
   }
   
-  extension [Self <: InstanceRequirementsWithMetadataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceRequirementsWithMetadataRequest] (val x: Self) extends AnyVal {
     
     inline def setArchitectureTypes(value: ArchitectureTypeSet): Self = StObject.set(x, "ArchitectureTypes", value.asInstanceOf[js.Any])
     

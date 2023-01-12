@@ -137,7 +137,8 @@ object Libp2pOptions {
     __obj.asInstanceOf[Libp2pOptions]
   }
   
-  extension [Self <: Libp2pOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Libp2pOptions] (val x: Self) extends AnyVal {
     
     inline def setAddresses(
       value: /* import warning: importer.ImportType#apply Failed type conversion: libp2p.libp2p.AddressesConfig extends std.Array<infer I> ? std.Array<@libp2p/interfaces.@libp2p/interfaces.RecursivePartial<I>> : libp2p.libp2p.AddressesConfig extends (args : ...any): any ? libp2p.libp2p.AddressesConfig : / * Inlined @libp2p/interfaces.@libp2p/interfaces.RecursivePartial<libp2p.libp2p.AddressesConfig> * /

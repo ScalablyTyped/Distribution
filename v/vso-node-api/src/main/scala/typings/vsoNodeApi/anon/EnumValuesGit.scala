@@ -15,7 +15,8 @@ object EnumValuesGit {
     __obj.asInstanceOf[EnumValuesGit]
   }
   
-  extension [Self <: EnumValuesGit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesGit] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: Git): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

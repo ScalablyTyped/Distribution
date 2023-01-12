@@ -15,7 +15,8 @@ object v2ObjectParam {
     __obj.asInstanceOf[v2ObjectParam[Custom]]
   }
   
-  extension [Self <: v2ObjectParam[?], Custom /* <: ObjectCustom */](x: Self & v2ObjectParam[Custom]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: v2ObjectParam[?], Custom /* <: ObjectCustom */] (val x: Self & v2ObjectParam[Custom]) extends AnyVal {
     
     inline def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     

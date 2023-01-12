@@ -21,7 +21,8 @@ object StdinOptions {
     __obj.asInstanceOf[StdinOptions]
   }
   
-  extension [Self <: StdinOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StdinOptions] (val x: Self) extends AnyVal {
     
     inline def setContents(value: String | js.typedarray.Uint8Array): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

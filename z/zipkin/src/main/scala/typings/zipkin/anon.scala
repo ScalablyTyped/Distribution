@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object anon {
       __obj.asInstanceOf[CtxImpl]
     }
     
-    extension [Self <: CtxImpl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CtxImpl] (val x: Self) extends AnyVal {
       
       inline def setCtxImpl(value: Context[TraceId]): Self = StObject.set(x, "ctxImpl", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,8 @@ object anon {
       __obj.asInstanceOf[Debug]
     }
     
-    extension [Self <: Debug](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Debug] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -159,7 +162,8 @@ object anon {
       __obj.asInstanceOf[Headers[H]]
     }
     
-    extension [Self <: Headers[?], H](x: Self & Headers[H]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Headers[?], H] (val x: Self & Headers[H]) extends AnyVal {
       
       inline def setHeaders(value: H & XB3Flags): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     }
@@ -180,7 +184,8 @@ object anon {
       __obj.asInstanceOf[Host]
     }
     
-    extension [Self <: Host](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
       
       inline def setHost(value: InetAddress): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -207,7 +212,8 @@ object anon {
       __obj.asInstanceOf[HostPort]
     }
     
-    extension [Self <: HostPort](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HostPort] (val x: Self) extends AnyVal {
       
       inline def setHost(value: InetAddress): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -234,7 +240,8 @@ object anon {
       __obj.asInstanceOf[Ipv4]
     }
     
-    extension [Self <: Ipv4](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ipv4] (val x: Self) extends AnyVal {
       
       inline def setIpv4(value: String): Self = StObject.set(x, "ipv4", value.asInstanceOf[js.Any])
       
@@ -263,7 +270,8 @@ object anon {
       __obj.asInstanceOf[Logger]
     }
     
-    extension [Self <: Logger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
       
       inline def setLogger(value: typings.zipkin.mod.Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
@@ -286,7 +294,8 @@ object anon {
       __obj.asInstanceOf[Port]
     }
     
-    extension [Self <: Port](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Port] (val x: Self) extends AnyVal {
       
       inline def setHost(value: InetAddress): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -309,7 +318,8 @@ object anon {
       __obj.asInstanceOf[RemoteServiceName]
     }
     
-    extension [Self <: RemoteServiceName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteServiceName] (val x: Self) extends AnyVal {
       
       inline def setRemoteServiceName(value: String): Self = StObject.set(x, "remoteServiceName", value.asInstanceOf[js.Any])
       
@@ -342,7 +352,8 @@ object anon {
       __obj.asInstanceOf[ServerTags]
     }
     
-    extension [Self <: ServerTags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerTags] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -383,7 +394,8 @@ object anon {
       __obj.asInstanceOf[XB3Flags]
     }
     
-    extension [Self <: XB3Flags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XB3Flags] (val x: Self) extends AnyVal {
       
       inline def `setX-B3-Flags`(value: `1` | typings.zipkin.zipkinStrings.`0`): Self = StObject.set(x, "X-B3-Flags", value.asInstanceOf[js.Any])
       

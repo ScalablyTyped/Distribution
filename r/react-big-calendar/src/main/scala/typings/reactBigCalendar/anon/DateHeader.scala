@@ -23,7 +23,8 @@ object DateHeader {
     __obj.asInstanceOf[DateHeader[TEvent]]
   }
   
-  extension [Self <: DateHeader[?], TEvent /* <: js.Object */](x: Self & DateHeader[TEvent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateHeader[?], TEvent /* <: js.Object */] (val x: Self & DateHeader[TEvent]) extends AnyVal {
     
     inline def setDateHeader(value: ComponentType[DateHeaderProps]): Self = StObject.set(x, "dateHeader", value.asInstanceOf[js.Any])
     

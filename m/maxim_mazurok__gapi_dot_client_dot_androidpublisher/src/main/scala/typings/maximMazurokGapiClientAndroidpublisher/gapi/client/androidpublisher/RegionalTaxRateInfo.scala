@@ -22,7 +22,8 @@ object RegionalTaxRateInfo {
     __obj.asInstanceOf[RegionalTaxRateInfo]
   }
   
-  extension [Self <: RegionalTaxRateInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionalTaxRateInfo] (val x: Self) extends AnyVal {
     
     inline def setEligibleForStreamingServiceTaxRate(value: Boolean): Self = StObject.set(x, "eligibleForStreamingServiceTaxRate", value.asInstanceOf[js.Any])
     

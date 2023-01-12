@@ -23,7 +23,8 @@ object FormStyleConfig {
     __obj.asInstanceOf[FormStyleConfig]
   }
   
-  extension [Self <: FormStyleConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormStyleConfig] (val x: Self) extends AnyVal {
     
     inline def setTokenReference(value: String): Self = StObject.set(x, "tokenReference", value.asInstanceOf[js.Any])
     

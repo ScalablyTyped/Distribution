@@ -18,7 +18,8 @@ object Weight {
     __obj.asInstanceOf[Weight]
   }
   
-  extension [Self <: Weight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Weight] (val x: Self) extends AnyVal {
     
     inline def setBlurred(value: PostProcess): Self = StObject.set(x, "blurred", value.asInstanceOf[js.Any])
     

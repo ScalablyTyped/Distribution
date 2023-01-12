@@ -116,7 +116,8 @@ object anon {
       __obj.asInstanceOf[Href]
     }
     
-    extension [Self <: Href](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Href] (val x: Self) extends AnyVal {
       
       inline def setTo(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
@@ -502,7 +503,8 @@ object anon {
       __obj.asInstanceOf[OmitAnchorHTMLAttributesH]
     }
     
-    extension [Self <: OmitAnchorHTMLAttributesH](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitAnchorHTMLAttributesH] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1266,7 +1268,8 @@ object anon {
       __obj.asInstanceOf[PartialRouterPropschildre]
     }
     
-    extension [Self <: PartialRouterPropschildre](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRouterPropschildre] (val x: Self) extends AnyVal {
       
       inline def setBase(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
@@ -1309,7 +1312,8 @@ object anon {
       __obj.asInstanceOf[To]
     }
     
-    extension [Self <: To](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: To] (val x: Self) extends AnyVal {
       
       inline def setHref(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any

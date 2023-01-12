@@ -18,7 +18,8 @@ object CreateKeysAndCertificateRequest {
     __obj.asInstanceOf[CreateKeysAndCertificateRequest]
   }
   
-  extension [Self <: CreateKeysAndCertificateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateKeysAndCertificateRequest] (val x: Self) extends AnyVal {
     
     inline def setSetAsActive(value: SetAsActive): Self = StObject.set(x, "setAsActive", value.asInstanceOf[js.Any])
     

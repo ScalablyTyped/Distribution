@@ -23,7 +23,8 @@ object SequenceNumber {
     __obj.asInstanceOf[SequenceNumber]
   }
   
-  extension [Self <: SequenceNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SequenceNumber] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[js.Tuple2[/* field */ String, /* kind */ IndexKind]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

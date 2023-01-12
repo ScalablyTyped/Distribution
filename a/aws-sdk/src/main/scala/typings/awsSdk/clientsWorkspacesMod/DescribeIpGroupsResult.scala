@@ -23,7 +23,8 @@ object DescribeIpGroupsResult {
     __obj.asInstanceOf[DescribeIpGroupsResult]
   }
   
-  extension [Self <: DescribeIpGroupsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeIpGroupsResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

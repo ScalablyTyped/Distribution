@@ -42,7 +42,8 @@ object IHTMLOptionElement {
     __obj.asInstanceOf[IHTMLOptionElement]
   }
   
-  extension [Self <: IHTMLOptionElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHTMLOptionElement] (val x: Self) extends AnyVal {
     
     inline def setDefaultSelected(value: Boolean): Self = StObject.set(x, "defaultSelected", value.asInstanceOf[js.Any])
     

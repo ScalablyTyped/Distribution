@@ -33,7 +33,8 @@ object NotSupported {
     __obj.asInstanceOf[NotSupported]
   }
   
-  extension [Self <: NotSupported](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotSupported] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: AnyOf): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object VideoContextRequestFullScreenOption {
     __obj.asInstanceOf[VideoContextRequestFullScreenOption]
   }
   
-  extension [Self <: VideoContextRequestFullScreenOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoContextRequestFullScreenOption] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: `0` | `90` | `-90`): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

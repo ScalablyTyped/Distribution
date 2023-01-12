@@ -20,7 +20,8 @@ object TextInputTextInputEventData {
     __obj.asInstanceOf[TextInputTextInputEventData]
   }
   
-  extension [Self <: TextInputTextInputEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextInputTextInputEventData] (val x: Self) extends AnyVal {
     
     inline def setPreviousText(value: String): Self = StObject.set(x, "previousText", value.asInstanceOf[js.Any])
     

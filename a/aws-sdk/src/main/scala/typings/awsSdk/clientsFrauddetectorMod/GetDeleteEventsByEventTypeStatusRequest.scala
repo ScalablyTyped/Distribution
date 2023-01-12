@@ -18,7 +18,8 @@ object GetDeleteEventsByEventTypeStatusRequest {
     __obj.asInstanceOf[GetDeleteEventsByEventTypeStatusRequest]
   }
   
-  extension [Self <: GetDeleteEventsByEventTypeStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDeleteEventsByEventTypeStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setEventTypeName(value: identifier): Self = StObject.set(x, "eventTypeName", value.asInstanceOf[js.Any])
   }

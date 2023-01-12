@@ -346,7 +346,8 @@ object sapUiTestActionsPressMod {
       __obj.asInstanceOf[PressSettings]
     }
     
-    extension [Self <: PressSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PressSettings] (val x: Self) extends AnyVal {
       
       inline def setAltKey(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       

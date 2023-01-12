@@ -23,7 +23,8 @@ object UpdateConfigurationSetSendingEnabledRequest {
     __obj.asInstanceOf[UpdateConfigurationSetSendingEnabledRequest]
   }
   
-  extension [Self <: UpdateConfigurationSetSendingEnabledRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateConfigurationSetSendingEnabledRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     

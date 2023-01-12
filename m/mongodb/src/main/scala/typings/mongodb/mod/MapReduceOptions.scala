@@ -52,7 +52,8 @@ object MapReduceOptions {
     __obj.asInstanceOf[MapReduceOptions[TKey, TValue]]
   }
   
-  extension [Self <: MapReduceOptions[?, ?], TKey, TValue](x: Self & (MapReduceOptions[TKey, TValue])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapReduceOptions[?, ?], TKey, TValue] (val x: Self & (MapReduceOptions[TKey, TValue])) extends AnyVal {
     
     inline def setBypassDocumentValidation(value: Boolean): Self = StObject.set(x, "bypassDocumentValidation", value.asInstanceOf[js.Any])
     

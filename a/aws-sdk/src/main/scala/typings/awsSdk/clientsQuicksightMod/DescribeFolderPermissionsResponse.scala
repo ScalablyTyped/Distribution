@@ -38,7 +38,8 @@ object DescribeFolderPermissionsResponse {
     __obj.asInstanceOf[DescribeFolderPermissionsResponse]
   }
   
-  extension [Self <: DescribeFolderPermissionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFolderPermissionsResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

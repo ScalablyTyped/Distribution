@@ -28,7 +28,8 @@ object SearchFlowTemplatesRequest {
     __obj.asInstanceOf[SearchFlowTemplatesRequest]
   }
   
-  extension [Self <: SearchFlowTemplatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchFlowTemplatesRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: FlowTemplateFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

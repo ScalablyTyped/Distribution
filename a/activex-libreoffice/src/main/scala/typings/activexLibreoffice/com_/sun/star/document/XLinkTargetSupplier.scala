@@ -35,7 +35,8 @@ object XLinkTargetSupplier {
     __obj.asInstanceOf[XLinkTargetSupplier]
   }
   
-  extension [Self <: XLinkTargetSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLinkTargetSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetLinks(value: () => XNameAccess): Self = StObject.set(x, "getLinks", js.Any.fromFunction0(value))
     

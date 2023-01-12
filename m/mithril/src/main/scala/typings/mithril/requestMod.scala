@@ -27,7 +27,8 @@ object requestMod extends Shortcut {
       __obj.asInstanceOf[Static]
     }
     
-    extension [Self <: Static](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
       
       inline def setJsonp(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof jsonp */ Any): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
       

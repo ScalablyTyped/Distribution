@@ -25,7 +25,8 @@ object AppsDynamiteSharedImageComponent {
     __obj.asInstanceOf[AppsDynamiteSharedImageComponent]
   }
   
-  extension [Self <: AppsDynamiteSharedImageComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedImageComponent] (val x: Self) extends AnyVal {
     
     inline def setAltText(value: String): Self = StObject.set(x, "altText", value.asInstanceOf[js.Any])
     

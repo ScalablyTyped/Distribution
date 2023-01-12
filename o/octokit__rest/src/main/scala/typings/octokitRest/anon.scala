@@ -304,7 +304,8 @@ object anon {
       __obj.asInstanceOf[paginatePaginateInterface]
     }
     
-    extension [Self <: paginatePaginateInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: paginatePaginateInterface] (val x: Self) extends AnyVal {
       
       inline def setActions(value: AddCustomLabelsToSelfHostedRunnerForOrg): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

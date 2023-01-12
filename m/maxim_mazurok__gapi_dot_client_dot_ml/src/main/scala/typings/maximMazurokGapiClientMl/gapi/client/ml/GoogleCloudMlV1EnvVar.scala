@@ -28,7 +28,8 @@ object GoogleCloudMlV1EnvVar {
     __obj.asInstanceOf[GoogleCloudMlV1EnvVar]
   }
   
-  extension [Self <: GoogleCloudMlV1EnvVar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1EnvVar] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

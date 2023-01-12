@@ -19,7 +19,8 @@ object TransferInfo2 {
     __obj.asInstanceOf[TransferInfo2]
   }
   
-  extension [Self <: TransferInfo2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferInfo2] (val x: Self) extends AnyVal {
     
     inline def setMimeType(value: String): Self = StObject.set(x, "MimeType", value.asInstanceOf[js.Any])
   }

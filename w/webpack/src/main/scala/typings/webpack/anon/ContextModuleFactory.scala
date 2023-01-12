@@ -21,7 +21,8 @@ object ContextModuleFactory {
     __obj.asInstanceOf[ContextModuleFactory]
   }
   
-  extension [Self <: ContextModuleFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextModuleFactory] (val x: Self) extends AnyVal {
     
     inline def setContextModuleFactory(value: typings.webpack.mod.ContextModuleFactory): Self = StObject.set(x, "contextModuleFactory", value.asInstanceOf[js.Any])
     

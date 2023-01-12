@@ -25,7 +25,8 @@ object ClusterRerouteRerouteParameters {
     __obj.asInstanceOf[ClusterRerouteRerouteParameters]
   }
   
-  extension [Self <: ClusterRerouteRerouteParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterRerouteRerouteParameters] (val x: Self) extends AnyVal {
     
     inline def setAllow_primary(value: Boolean): Self = StObject.set(x, "allow_primary", value.asInstanceOf[js.Any])
     

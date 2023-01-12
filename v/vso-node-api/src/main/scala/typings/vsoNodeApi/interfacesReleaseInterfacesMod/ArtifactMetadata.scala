@@ -23,7 +23,8 @@ object ArtifactMetadata {
     __obj.asInstanceOf[ArtifactMetadata]
   }
   
-  extension [Self <: ArtifactMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactMetadata] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

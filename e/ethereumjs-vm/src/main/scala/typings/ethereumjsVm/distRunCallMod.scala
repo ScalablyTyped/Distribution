@@ -57,7 +57,8 @@ object distRunCallMod {
       __obj.asInstanceOf[RunCallOpts]
     }
     
-    extension [Self <: RunCallOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunCallOpts] (val x: Self) extends AnyVal {
       
       inline def setBlock(value: Any): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       

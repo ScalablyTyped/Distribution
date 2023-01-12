@@ -21,7 +21,8 @@ object ForceApprovalPrompt {
     __obj.asInstanceOf[ForceApprovalPrompt]
   }
   
-  extension [Self <: ForceApprovalPrompt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForceApprovalPrompt] (val x: Self) extends AnyVal {
     
     inline def setForceApprovalPrompt(value: js.Object): Self = StObject.set(x, "forceApprovalPrompt", value.asInstanceOf[js.Any])
     

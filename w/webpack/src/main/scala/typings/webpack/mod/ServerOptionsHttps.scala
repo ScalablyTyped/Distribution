@@ -46,7 +46,8 @@ object ServerOptionsHttps {
     __obj.asInstanceOf[ServerOptionsHttps]
   }
   
-  extension [Self <: ServerOptionsHttps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerOptionsHttps] (val x: Self) extends AnyVal {
     
     inline def setIncomingMessage(value: Instantiable1[/* socket */ Socket, IncomingMessage]): Self = StObject.set(x, "IncomingMessage", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ComplianceExecutionSummary {
     __obj.asInstanceOf[ComplianceExecutionSummary]
   }
   
-  extension [Self <: ComplianceExecutionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComplianceExecutionSummary] (val x: Self) extends AnyVal {
     
     inline def setExecutionId(value: ComplianceExecutionId): Self = StObject.set(x, "ExecutionId", value.asInstanceOf[js.Any])
     

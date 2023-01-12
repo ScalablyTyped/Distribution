@@ -52,7 +52,8 @@ object XSubTotalField {
     __obj.asInstanceOf[XSubTotalField]
   }
   
-  extension [Self <: XSubTotalField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSubTotalField] (val x: Self) extends AnyVal {
     
     inline def setGetGroupColumn(value: () => Double): Self = StObject.set(x, "getGroupColumn", js.Any.fromFunction0(value))
     

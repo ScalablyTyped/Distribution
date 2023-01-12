@@ -274,7 +274,8 @@ object sapUiUx3FacetFilterMod {
       __obj.asInstanceOf[FacetFilterSettings]
     }
     
-    extension [Self <: FacetFilterSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FacetFilterSettings] (val x: Self) extends AnyVal {
       
       inline def setLists(
         value: js.Array[typings.openui5.sapUiUx3FacetFilterListMod.default] | typings.openui5.sapUiUx3FacetFilterListMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

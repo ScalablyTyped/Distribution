@@ -160,7 +160,8 @@ object Network {
       __obj.asInstanceOf[Optimized]
     }
     
-    extension [Self <: Optimized](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optimized] (val x: Self) extends AnyVal {
       
       inline def setMemory(value: js.typedarray.Float64Array): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
       
@@ -183,7 +184,8 @@ object Network {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setHidden(value: js.Array[Layer]): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       

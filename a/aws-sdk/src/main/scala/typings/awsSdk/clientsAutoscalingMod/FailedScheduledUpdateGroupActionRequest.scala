@@ -28,7 +28,8 @@ object FailedScheduledUpdateGroupActionRequest {
     __obj.asInstanceOf[FailedScheduledUpdateGroupActionRequest]
   }
   
-  extension [Self <: FailedScheduledUpdateGroupActionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailedScheduledUpdateGroupActionRequest] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: XmlStringMaxLen64): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

@@ -182,7 +182,8 @@ object XAccessibleComponent {
     __obj.asInstanceOf[XAccessibleComponent]
   }
   
-  extension [Self <: XAccessibleComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccessibleComponent] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: Color): Self = StObject.set(x, "Background", value.asInstanceOf[js.Any])
     

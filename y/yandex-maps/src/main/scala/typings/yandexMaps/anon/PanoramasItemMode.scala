@@ -18,7 +18,8 @@ object PanoramasItemMode {
     __obj.asInstanceOf[PanoramasItemMode]
   }
   
-  extension [Self <: PanoramasItemMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PanoramasItemMode] (val x: Self) extends AnyVal {
     
     inline def setPanoramasItemMode(value: on | off | ifMercator): Self = StObject.set(x, "panoramasItemMode", value.asInstanceOf[js.Any])
   }

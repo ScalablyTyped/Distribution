@@ -55,7 +55,8 @@ object typesTransactionMod {
       __obj.asInstanceOf[SamplingContext]
     }
     
-    extension [Self <: SamplingContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SamplingContext] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: WorkerLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object typesTransactionMod {
       __obj.asInstanceOf[TraceparentData]
     }
     
-    extension [Self <: TraceparentData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraceparentData] (val x: Self) extends AnyVal {
       
       inline def setParentSampled(value: Boolean): Self = StObject.set(x, "parentSampled", value.asInstanceOf[js.Any])
       
@@ -292,7 +294,8 @@ object typesTransactionMod {
       __obj.asInstanceOf[TransactionContext]
     }
     
-    extension [Self <: TransactionContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionContext] (val x: Self) extends AnyVal {
       
       inline def setMetadata(value: PartialTransactionMetadat): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
@@ -358,7 +361,8 @@ object typesTransactionMod {
       __obj.asInstanceOf[TransactionMetadata]
     }
     
-    extension [Self <: TransactionMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionMetadata] (val x: Self) extends AnyVal {
       
       inline def setChanges(value: js.Array[TransactionNameChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
       
@@ -413,7 +417,8 @@ object typesTransactionMod {
       __obj.asInstanceOf[TransactionNameChange]
     }
     
-    extension [Self <: TransactionNameChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionNameChange] (val x: Self) extends AnyVal {
       
       inline def setPropagations(value: Double): Self = StObject.set(x, "propagations", value.asInstanceOf[js.Any])
       

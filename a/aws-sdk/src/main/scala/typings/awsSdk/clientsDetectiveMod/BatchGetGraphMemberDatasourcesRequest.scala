@@ -23,7 +23,8 @@ object BatchGetGraphMemberDatasourcesRequest {
     __obj.asInstanceOf[BatchGetGraphMemberDatasourcesRequest]
   }
   
-  extension [Self <: BatchGetGraphMemberDatasourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetGraphMemberDatasourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountIds(value: AccountIdExtendedList): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     

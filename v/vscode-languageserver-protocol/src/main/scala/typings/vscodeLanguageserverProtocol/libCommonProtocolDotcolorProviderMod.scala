@@ -94,7 +94,8 @@ object libCommonProtocolDotcolorProviderMod {
       __obj.asInstanceOf[ColorPresentationParams]
     }
     
-    extension [Self <: ColorPresentationParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorPresentationParams] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object libCommonProtocolDotcolorProviderMod {
       __obj.asInstanceOf[DocumentColorClientCapabilities]
     }
     
-    extension [Self <: DocumentColorClientCapabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentColorClientCapabilities] (val x: Self) extends AnyVal {
       
       inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object libCommonProtocolDotcolorProviderMod {
       __obj.asInstanceOf[DocumentColorParams]
     }
     
-    extension [Self <: DocumentColorParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentColorParams] (val x: Self) extends AnyVal {
       
       inline def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
     }

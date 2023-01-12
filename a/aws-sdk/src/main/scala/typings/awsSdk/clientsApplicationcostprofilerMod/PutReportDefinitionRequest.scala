@@ -44,7 +44,8 @@ object PutReportDefinitionRequest {
     __obj.asInstanceOf[PutReportDefinitionRequest]
   }
   
-  extension [Self <: PutReportDefinitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutReportDefinitionRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationS3Location(value: S3Location): Self = StObject.set(x, "destinationS3Location", value.asInstanceOf[js.Any])
     

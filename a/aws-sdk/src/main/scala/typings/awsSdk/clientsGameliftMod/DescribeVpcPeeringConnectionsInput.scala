@@ -18,7 +18,8 @@ object DescribeVpcPeeringConnectionsInput {
     __obj.asInstanceOf[DescribeVpcPeeringConnectionsInput]
   }
   
-  extension [Self <: DescribeVpcPeeringConnectionsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeVpcPeeringConnectionsInput] (val x: Self) extends AnyVal {
     
     inline def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     

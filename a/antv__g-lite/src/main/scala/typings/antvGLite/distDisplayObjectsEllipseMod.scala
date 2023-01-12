@@ -36,7 +36,8 @@ object distDisplayObjectsEllipseMod {
       __obj.asInstanceOf[EllipseStyleProps]
     }
     
-    extension [Self <: EllipseStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EllipseStyleProps] (val x: Self) extends AnyVal {
       
       inline def setCx(value: Double | String): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object distDisplayObjectsEllipseMod {
       __obj.asInstanceOf[ParsedEllipseStyleProps]
     }
     
-    extension [Self <: ParsedEllipseStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedEllipseStyleProps] (val x: Self) extends AnyVal {
       
       inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
       

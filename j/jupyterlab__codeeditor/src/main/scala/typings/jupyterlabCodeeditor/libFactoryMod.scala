@@ -27,7 +27,8 @@ object libFactoryMod {
       __obj.asInstanceOf[IEditorFactoryService]
     }
     
-    extension [Self <: IEditorFactoryService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEditorFactoryService] (val x: Self) extends AnyVal {
       
       inline def setNewDocumentEditor(value: IOptions => IEditor): Self = StObject.set(x, "newDocumentEditor", js.Any.fromFunction1(value))
       

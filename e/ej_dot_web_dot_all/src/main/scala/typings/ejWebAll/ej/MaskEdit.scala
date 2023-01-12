@@ -70,7 +70,8 @@ object MaskEdit {
       __obj.asInstanceOf[ChangeEventArgs]
     }
     
-    extension [Self <: ChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object MaskEdit {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -152,7 +154,8 @@ object MaskEdit {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -197,7 +200,8 @@ object MaskEdit {
       __obj.asInstanceOf[FocusInEventArgs]
     }
     
-    extension [Self <: FocusInEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusInEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -250,7 +254,8 @@ object MaskEdit {
       __obj.asInstanceOf[FocusOutEventArgs]
     }
     
-    extension [Self <: FocusOutEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusOutEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -303,7 +308,8 @@ object MaskEdit {
       __obj.asInstanceOf[KeyPressEventArgs]
     }
     
-    extension [Self <: KeyPressEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyPressEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -356,7 +362,8 @@ object MaskEdit {
       __obj.asInstanceOf[KeyUpEventArgs]
     }
     
-    extension [Self <: KeyUpEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyUpEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -533,7 +540,8 @@ object MaskEdit {
       __obj.asInstanceOf[typings.ejWebAll.ej.MaskEdit.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.MaskEdit.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.MaskEdit.Model] (val x: Self) extends AnyVal {
       
       inline def setChange(value: /* e */ ChangeEventArgs => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
@@ -690,7 +698,8 @@ object MaskEdit {
       __obj.asInstanceOf[MouseOutEventArgs]
     }
     
-    extension [Self <: MouseOutEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseOutEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -743,7 +752,8 @@ object MaskEdit {
       __obj.asInstanceOf[MouseOverEventArgs]
     }
     
-    extension [Self <: MouseOverEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseOverEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -796,7 +806,8 @@ object MaskEdit {
       __obj.asInstanceOf[OnKeyDownEventArgs]
     }
     
-    extension [Self <: OnKeyDownEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnKeyDownEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

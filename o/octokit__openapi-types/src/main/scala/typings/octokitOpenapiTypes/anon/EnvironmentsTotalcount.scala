@@ -21,7 +21,8 @@ object EnvironmentsTotalcount {
     __obj.asInstanceOf[EnvironmentsTotalcount]
   }
   
-  extension [Self <: EnvironmentsTotalcount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentsTotalcount] (val x: Self) extends AnyVal {
     
     inline def setEnvironments(value: js.Array[CreatedatDeploymentbranchpolicy]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsStartArrowMod extends Short
       __obj.asInstanceOf[StartArrowProps]
     }
     
-    extension [Self <: StartArrowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartArrowProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

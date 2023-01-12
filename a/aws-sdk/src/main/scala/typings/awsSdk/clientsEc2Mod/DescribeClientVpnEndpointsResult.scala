@@ -23,7 +23,8 @@ object DescribeClientVpnEndpointsResult {
     __obj.asInstanceOf[DescribeClientVpnEndpointsResult]
   }
   
-  extension [Self <: DescribeClientVpnEndpointsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeClientVpnEndpointsResult] (val x: Self) extends AnyVal {
     
     inline def setClientVpnEndpoints(value: EndpointSet): Self = StObject.set(x, "ClientVpnEndpoints", value.asInstanceOf[js.Any])
     

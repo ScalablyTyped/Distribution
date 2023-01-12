@@ -20,7 +20,8 @@ object LayoutShowEvent {
     __obj.asInstanceOf[LayoutShowEvent]
   }
   
-  extension [Self <: LayoutShowEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutShowEvent] (val x: Self) extends AnyVal {
     
     inline def setLayout(value: JQuery): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     

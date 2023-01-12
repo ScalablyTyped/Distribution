@@ -29,7 +29,8 @@ object WebGL2ShaderProcessor {
     __obj.asInstanceOf[WebGL2ShaderProcessor]
   }
   
-  extension [Self <: WebGL2ShaderProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGL2ShaderProcessor] (val x: Self) extends AnyVal {
     
     inline def setAttributeProcessor(value: String => String): Self = StObject.set(x, "attributeProcessor", js.Any.fromFunction1(value))
     

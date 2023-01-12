@@ -61,7 +61,8 @@ object RefreshControlProps {
     __obj.asInstanceOf[RefreshControlProps]
   }
   
-  extension [Self <: RefreshControlProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshControlProps] (val x: Self) extends AnyVal {
     
     inline def setColors(value: js.Array[ColorValue]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

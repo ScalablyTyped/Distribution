@@ -70,7 +70,8 @@ object TableOptions {
     __obj.asInstanceOf[TableOptions]
   }
   
-  extension [Self <: TableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableOptions] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: js.Array[duration | distance]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

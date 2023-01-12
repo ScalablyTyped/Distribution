@@ -29,7 +29,8 @@ object IHTMLPerformanceNavigation {
     __obj.asInstanceOf[IHTMLPerformanceNavigation]
   }
   
-  extension [Self <: IHTMLPerformanceNavigation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHTMLPerformanceNavigation] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotIHTMLPerformanceNavigation_typekey(value: IHTMLPerformanceNavigation): Self = StObject.set(x, "MSHTML.IHTMLPerformanceNavigation_typekey", value.asInstanceOf[js.Any])
     

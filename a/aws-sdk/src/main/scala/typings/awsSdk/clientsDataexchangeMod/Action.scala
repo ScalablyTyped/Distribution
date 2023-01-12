@@ -18,7 +18,8 @@ object Action {
     __obj.asInstanceOf[Action]
   }
   
-  extension [Self <: Action](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
     
     inline def setExportRevisionToS3(value: AutoExportRevisionToS3RequestDetails): Self = StObject.set(x, "ExportRevisionToS3", value.asInstanceOf[js.Any])
     

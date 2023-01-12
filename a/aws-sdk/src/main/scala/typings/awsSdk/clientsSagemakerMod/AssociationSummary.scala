@@ -55,7 +55,8 @@ object AssociationSummary {
     __obj.asInstanceOf[AssociationSummary]
   }
   
-  extension [Self <: AssociationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociationSummary] (val x: Self) extends AnyVal {
     
     inline def setAssociationType(value: AssociationEdgeType): Self = StObject.set(x, "AssociationType", value.asInstanceOf[js.Any])
     

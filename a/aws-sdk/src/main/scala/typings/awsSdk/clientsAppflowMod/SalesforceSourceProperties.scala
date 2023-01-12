@@ -34,7 +34,8 @@ object SalesforceSourceProperties {
     __obj.asInstanceOf[SalesforceSourceProperties]
   }
   
-  extension [Self <: SalesforceSourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SalesforceSourceProperties] (val x: Self) extends AnyVal {
     
     inline def setDataTransferApi(value: SalesforceDataTransferApi): Self = StObject.set(x, "dataTransferApi", value.asInstanceOf[js.Any])
     

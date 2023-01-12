@@ -705,7 +705,8 @@ object StandardShorthandProperties {
     __obj.asInstanceOf[StandardShorthandProperties[TLength, TTime]]
   }
   
-  extension [Self <: StandardShorthandProperties[?, ?], TLength, TTime](x: Self & (StandardShorthandProperties[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardShorthandProperties[?, ?], TLength, TTime] (val x: Self & (StandardShorthandProperties[TLength, TTime])) extends AnyVal {
     
     inline def setAll(value: All): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

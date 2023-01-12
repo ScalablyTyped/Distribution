@@ -101,7 +101,8 @@ object distCommonjsViewsCommentCommentMod {
       __obj.asInstanceOf[StrictCommentProps]
     }
     
-    extension [Self <: StrictCommentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictCommentProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,8 @@ object CoreTextCompositionCompletedEventArgs {
     __obj.asInstanceOf[CoreTextCompositionCompletedEventArgs]
   }
   
-  extension [Self <: CoreTextCompositionCompletedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreTextCompositionCompletedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCompositionSegments(value: IVectorView[CoreTextCompositionSegment]): Self = StObject.set(x, "compositionSegments", value.asInstanceOf[js.Any])
     

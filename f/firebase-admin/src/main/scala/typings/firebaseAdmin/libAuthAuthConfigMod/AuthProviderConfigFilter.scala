@@ -35,7 +35,8 @@ object AuthProviderConfigFilter {
     __obj.asInstanceOf[AuthProviderConfigFilter]
   }
   
-  extension [Self <: AuthProviderConfigFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthProviderConfigFilter] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

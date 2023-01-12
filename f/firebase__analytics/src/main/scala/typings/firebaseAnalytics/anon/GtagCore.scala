@@ -68,7 +68,8 @@ object GtagCore {
     __obj.asInstanceOf[GtagCore]
   }
   
-  extension [Self <: GtagCore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GtagCore] (val x: Self) extends AnyVal {
     
     inline def setGtagCore(value: Gtag): Self = StObject.set(x, "gtagCore", value.asInstanceOf[js.Any])
     

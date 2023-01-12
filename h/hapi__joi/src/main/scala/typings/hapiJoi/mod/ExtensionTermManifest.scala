@@ -16,7 +16,8 @@ object ExtensionTermManifest {
     __obj.asInstanceOf[ExtensionTermManifest]
   }
   
-  extension [Self <: ExtensionTermManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionTermManifest] (val x: Self) extends AnyVal {
     
     inline def setMapped(value: From): Self = StObject.set(x, "mapped", value.asInstanceOf[js.Any])
   }

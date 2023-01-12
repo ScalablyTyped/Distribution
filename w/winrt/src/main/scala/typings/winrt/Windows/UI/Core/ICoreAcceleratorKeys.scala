@@ -15,7 +15,8 @@ object ICoreAcceleratorKeys {
     __obj.asInstanceOf[ICoreAcceleratorKeys]
   }
   
-  extension [Self <: ICoreAcceleratorKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICoreAcceleratorKeys] (val x: Self) extends AnyVal {
     
     inline def setOnacceleratorkeyactivated(value: Any): Self = StObject.set(x, "onacceleratorkeyactivated", value.asInstanceOf[js.Any])
   }

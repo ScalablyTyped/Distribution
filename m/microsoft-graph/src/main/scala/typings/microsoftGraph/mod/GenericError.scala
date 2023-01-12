@@ -19,7 +19,8 @@ object GenericError {
     __obj.asInstanceOf[GenericError]
   }
   
-  extension [Self <: GenericError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenericError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: NullableOption[String]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

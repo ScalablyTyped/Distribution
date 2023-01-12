@@ -37,7 +37,8 @@ object IPopupOptionsBase {
     __obj.asInstanceOf[IPopupOptionsBase]
   }
   
-  extension [Self <: IPopupOptionsBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPopupOptionsBase] (val x: Self) extends AnyVal {
     
     inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     

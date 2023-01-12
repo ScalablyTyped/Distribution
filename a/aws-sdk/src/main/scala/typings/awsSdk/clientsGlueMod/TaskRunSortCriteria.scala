@@ -23,7 +23,8 @@ object TaskRunSortCriteria {
     __obj.asInstanceOf[TaskRunSortCriteria]
   }
   
-  extension [Self <: TaskRunSortCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskRunSortCriteria] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: TaskRunSortColumnType): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
     

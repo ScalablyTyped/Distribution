@@ -22,7 +22,8 @@ object PersonOrGroupColumn {
     __obj.asInstanceOf[PersonOrGroupColumn]
   }
   
-  extension [Self <: PersonOrGroupColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersonOrGroupColumn] (val x: Self) extends AnyVal {
     
     inline def setAllowMultipleSelection(value: NullableOption[Boolean]): Self = StObject.set(x, "allowMultipleSelection", value.asInstanceOf[js.Any])
     

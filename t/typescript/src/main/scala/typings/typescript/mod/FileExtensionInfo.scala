@@ -20,7 +20,8 @@ object FileExtensionInfo {
     __obj.asInstanceOf[FileExtensionInfo]
   }
   
-  extension [Self <: FileExtensionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileExtensionInfo] (val x: Self) extends AnyVal {
     
     inline def setExtension(value: java.lang.String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     

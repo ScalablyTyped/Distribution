@@ -16,7 +16,8 @@ object ImagesUploadResponse {
     __obj.asInstanceOf[ImagesUploadResponse]
   }
   
-  extension [Self <: ImagesUploadResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagesUploadResponse] (val x: Self) extends AnyVal {
     
     inline def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

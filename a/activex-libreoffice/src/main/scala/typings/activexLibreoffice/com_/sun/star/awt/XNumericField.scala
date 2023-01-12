@@ -114,7 +114,8 @@ object XNumericField {
     __obj.asInstanceOf[XNumericField]
   }
   
-  extension [Self <: XNumericField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XNumericField] (val x: Self) extends AnyVal {
     
     inline def setDecimalDigits(value: Double): Self = StObject.set(x, "DecimalDigits", value.asInstanceOf[js.Any])
     

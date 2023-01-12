@@ -28,7 +28,8 @@ object SimpleRule {
     __obj.asInstanceOf[SimpleRule]
   }
   
-  extension [Self <: SimpleRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleRule] (val x: Self) extends AnyVal {
     
     inline def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "comparisonOperator", value.asInstanceOf[js.Any])
     

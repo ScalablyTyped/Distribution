@@ -18,7 +18,8 @@ object DistributeDatasetEntriesRequest {
     __obj.asInstanceOf[DistributeDatasetEntriesRequest]
   }
   
-  extension [Self <: DistributeDatasetEntriesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistributeDatasetEntriesRequest] (val x: Self) extends AnyVal {
     
     inline def setDatasets(value: DistributeDatasetMetadataList): Self = StObject.set(x, "Datasets", value.asInstanceOf[js.Any])
     

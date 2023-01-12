@@ -15,7 +15,8 @@ object LogoutRequest {
     __obj.asInstanceOf[LogoutRequest]
   }
   
-  extension [Self <: LogoutRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogoutRequest] (val x: Self) extends AnyVal {
     
     inline def setLogoutRequest(value: typings.authorizenet.mod.APIContracts.LogoutRequest): Self = StObject.set(x, "logoutRequest", value.asInstanceOf[js.Any])
   }

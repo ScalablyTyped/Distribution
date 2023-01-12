@@ -36,7 +36,8 @@ object beginDigitizeOptions {
     __obj.asInstanceOf[beginDigitizeOptions]
   }
   
-  extension [Self <: beginDigitizeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: beginDigitizeOptions] (val x: Self) extends AnyVal {
     
     inline def setCircleEndAction(value: /* circle */ polygon => Unit): Self = StObject.set(x, "circleEndAction", js.Any.fromFunction1(value))
     

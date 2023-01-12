@@ -25,7 +25,8 @@ object UpdateRelayWebhook {
     __obj.asInstanceOf[UpdateRelayWebhook]
   }
   
-  extension [Self <: UpdateRelayWebhook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRelayWebhook] (val x: Self) extends AnyVal {
     
     inline def setAuth_token(value: String): Self = StObject.set(x, "auth_token", value.asInstanceOf[js.Any])
     

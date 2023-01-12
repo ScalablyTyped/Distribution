@@ -23,7 +23,8 @@ object IControlChannelTriggerResetEventDetails {
     __obj.asInstanceOf[IControlChannelTriggerResetEventDetails]
   }
   
-  extension [Self <: IControlChannelTriggerResetEventDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IControlChannelTriggerResetEventDetails] (val x: Self) extends AnyVal {
     
     inline def setHardwareSlotReset(value: Boolean): Self = StObject.set(x, "hardwareSlotReset", value.asInstanceOf[js.Any])
     

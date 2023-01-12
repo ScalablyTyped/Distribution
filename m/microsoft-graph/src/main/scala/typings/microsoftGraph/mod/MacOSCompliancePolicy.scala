@@ -69,7 +69,8 @@ object MacOSCompliancePolicy {
     __obj.asInstanceOf[MacOSCompliancePolicy]
   }
   
-  extension [Self <: MacOSCompliancePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MacOSCompliancePolicy] (val x: Self) extends AnyVal {
     
     inline def setDeviceThreatProtectionEnabled(value: Boolean): Self = StObject.set(x, "deviceThreatProtectionEnabled", value.asInstanceOf[js.Any])
     

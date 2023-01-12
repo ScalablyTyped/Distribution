@@ -63,7 +63,8 @@ object AwsEcsClusterDetails {
     __obj.asInstanceOf[AwsEcsClusterDetails]
   }
   
-  extension [Self <: AwsEcsClusterDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsClusterDetails] (val x: Self) extends AnyVal {
     
     inline def setActiveServicesCount(value: Integer): Self = StObject.set(x, "ActiveServicesCount", value.asInstanceOf[js.Any])
     

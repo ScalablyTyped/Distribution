@@ -454,7 +454,8 @@ object mod {
       __obj.asInstanceOf[HandbrakeOptions]
     }
     
-    extension [Self <: HandbrakeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandbrakeOptions] (val x: Self) extends AnyVal {
       
       inline def setA(value: String): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
       
@@ -1045,7 +1046,8 @@ object mod {
       __obj.asInstanceOf[HandbrakeProgress]
     }
     
-    extension [Self <: HandbrakeProgress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandbrakeProgress] (val x: Self) extends AnyVal {
       
       inline def setAvgFps(value: Double): Self = StObject.set(x, "avgFps", value.asInstanceOf[js.Any])
       

@@ -55,7 +55,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Request]
       }
       
-      extension [Self <: Request](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
         
         inline def setAbsoluteUrl(value: () => String): Self = StObject.set(x, "absoluteUrl", js.Any.fromFunction0(value))
       }

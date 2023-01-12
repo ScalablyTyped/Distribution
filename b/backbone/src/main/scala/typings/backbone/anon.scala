@@ -54,7 +54,8 @@ object anon {
       __obj.asInstanceOf[TypeofHistory]
     }
     
-    extension [Self <: TypeofHistory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofHistory] (val x: Self) extends AnyVal {
       
       inline def setStarted(value: Boolean): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
     }

@@ -40,7 +40,8 @@ object Dataset {
     __obj.asInstanceOf[Dataset]
   }
   
-  extension [Self <: Dataset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dataset] (val x: Self) extends AnyVal {
     
     inline def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     

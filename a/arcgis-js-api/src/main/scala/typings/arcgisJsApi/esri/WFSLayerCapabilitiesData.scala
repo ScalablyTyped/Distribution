@@ -34,7 +34,8 @@ object WFSLayerCapabilitiesData {
     __obj.asInstanceOf[WFSLayerCapabilitiesData]
   }
   
-  extension [Self <: WFSLayerCapabilitiesData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WFSLayerCapabilitiesData] (val x: Self) extends AnyVal {
     
     inline def setSupportsAttachment(value: Boolean): Self = StObject.set(x, "supportsAttachment", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ElasticsearchBufferingHints {
     __obj.asInstanceOf[ElasticsearchBufferingHints]
   }
   
-  extension [Self <: ElasticsearchBufferingHints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElasticsearchBufferingHints] (val x: Self) extends AnyVal {
     
     inline def setIntervalInSeconds(value: ElasticsearchBufferingIntervalInSeconds): Self = StObject.set(x, "IntervalInSeconds", value.asInstanceOf[js.Any])
     

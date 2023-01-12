@@ -28,7 +28,8 @@ object MultiformatMessageString {
     __obj.asInstanceOf[MultiformatMessageString]
   }
   
-  extension [Self <: MultiformatMessageString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiformatMessageString] (val x: Self) extends AnyVal {
     
     inline def setMarkdown(value: String): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
     

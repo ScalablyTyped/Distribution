@@ -59,7 +59,8 @@ object AttributeFilterOperator {
     inline def $sw: typings.oracleOraclejet.oracleOraclejetStrings.$sw = "$sw".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.$sw]
   }
   
-  extension [Self <: AttributeFilterOperator[?], D](x: Self & AttributeFilterOperator[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeFilterOperator[?], D] (val x: Self & AttributeFilterOperator[D]) extends AnyVal {
     
     inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

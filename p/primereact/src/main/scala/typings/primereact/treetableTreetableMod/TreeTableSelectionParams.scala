@@ -20,7 +20,8 @@ object TreeTableSelectionParams {
     __obj.asInstanceOf[TreeTableSelectionParams]
   }
   
-  extension [Self <: TreeTableSelectionParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeTableSelectionParams] (val x: Self) extends AnyVal {
     
     inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     

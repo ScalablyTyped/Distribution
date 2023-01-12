@@ -60,7 +60,8 @@ object libStrategiesDefaultMod {
       __obj.asInstanceOf[DefaultStrategy]
     }
     
-    extension [Self <: DefaultStrategy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultStrategy] (val x: Self) extends AnyVal {
       
       inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
       

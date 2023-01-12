@@ -35,7 +35,8 @@ object JQueryCLEditorOptions {
     __obj.asInstanceOf[JQueryCLEditorOptions]
   }
   
-  extension [Self <: JQueryCLEditorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryCLEditorOptions] (val x: Self) extends AnyVal {
     
     inline def setBodyStyle(value: String): Self = StObject.set(x, "bodyStyle", value.asInstanceOf[js.Any])
     

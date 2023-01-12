@@ -35,7 +35,8 @@ object libHttpRequestMod {
       __obj.asInstanceOf[Request[TData]]
     }
     
-    extension [Self <: Request[?], TData](x: Self & Request[TData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request[?], TData] (val x: Self & Request[TData]) extends AnyVal {
       
       inline def setAttributeEqual(value: (Any, Any) => Boolean): Self = StObject.set(x, "attributeEqual", js.Any.fromFunction2(value))
       
@@ -66,7 +67,8 @@ object libHttpRequestMod {
       __obj.asInstanceOf[RequestOptions[TData]]
     }
     
-    extension [Self <: RequestOptions[?], TData](x: Self & RequestOptions[TData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions[?], TData] (val x: Self & RequestOptions[TData]) extends AnyVal {
       
       inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       

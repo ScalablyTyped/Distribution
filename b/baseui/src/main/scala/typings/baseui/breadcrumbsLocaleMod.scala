@@ -29,7 +29,8 @@ object breadcrumbsLocaleMod {
       __obj.asInstanceOf[BreadcrumbLocale]
     }
     
-    extension [Self <: BreadcrumbLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbLocale] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
     }

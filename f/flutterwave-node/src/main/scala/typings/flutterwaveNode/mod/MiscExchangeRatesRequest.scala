@@ -32,7 +32,8 @@ object MiscExchangeRatesRequest {
     __obj.asInstanceOf[MiscExchangeRatesRequest]
   }
   
-  extension [Self <: MiscExchangeRatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MiscExchangeRatesRequest] (val x: Self) extends AnyVal {
     
     inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     

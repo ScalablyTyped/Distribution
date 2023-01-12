@@ -23,7 +23,8 @@ object ExcludeDates {
     __obj.asInstanceOf[ExcludeDates[T]]
   }
   
-  extension [Self <: ExcludeDates[?], T](x: Self & ExcludeDates[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExcludeDates[?], T] (val x: Self & ExcludeDates[T]) extends AnyVal {
     
     inline def setExcludeDates(value: js.Array[T]): Self = StObject.set(x, "excludeDates", value.asInstanceOf[js.Any])
     

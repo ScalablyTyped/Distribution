@@ -16,7 +16,8 @@ object OmitIOptionsmodelusername {
     __obj.asInstanceOf[OmitIOptionsmodelusername]
   }
   
-  extension [Self <: OmitIOptionsmodelusername](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitIOptionsmodelusername] (val x: Self) extends AnyVal {
     
     inline def setHandleComms(value: Boolean): Self = StObject.set(x, "handleComms", value.asInstanceOf[js.Any])
     

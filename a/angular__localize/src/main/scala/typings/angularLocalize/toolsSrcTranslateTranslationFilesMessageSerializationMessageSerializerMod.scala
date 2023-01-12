@@ -59,7 +59,8 @@ object toolsSrcTranslateTranslationFilesMessageSerializationMessageSerializerMod
       __obj.asInstanceOf[MessageSerializerConfig]
     }
     
-    extension [Self <: MessageSerializerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageSerializerConfig] (val x: Self) extends AnyVal {
       
       inline def setInlineElements(value: js.Array[String]): Self = StObject.set(x, "inlineElements", value.asInstanceOf[js.Any])
       

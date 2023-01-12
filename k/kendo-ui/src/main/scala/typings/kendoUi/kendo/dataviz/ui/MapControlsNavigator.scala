@@ -15,7 +15,8 @@ object MapControlsNavigator {
     __obj.asInstanceOf[MapControlsNavigator]
   }
   
-  extension [Self <: MapControlsNavigator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapControlsNavigator] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

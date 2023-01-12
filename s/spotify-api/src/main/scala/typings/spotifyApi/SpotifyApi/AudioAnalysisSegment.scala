@@ -41,7 +41,8 @@ object AudioAnalysisSegment {
     __obj.asInstanceOf[AudioAnalysisSegment]
   }
   
-  extension [Self <: AudioAnalysisSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioAnalysisSegment] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     

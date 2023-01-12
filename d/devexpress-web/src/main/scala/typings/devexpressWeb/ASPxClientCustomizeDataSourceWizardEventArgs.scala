@@ -28,7 +28,8 @@ object ASPxClientCustomizeDataSourceWizardEventArgs {
     __obj.asInstanceOf[ASPxClientCustomizeDataSourceWizardEventArgs]
   }
   
-  extension [Self <: ASPxClientCustomizeDataSourceWizardEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCustomizeDataSourceWizardEventArgs] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

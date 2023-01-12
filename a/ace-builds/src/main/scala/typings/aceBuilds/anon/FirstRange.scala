@@ -18,7 +18,8 @@ object FirstRange {
     __obj.asInstanceOf[FirstRange]
   }
   
-  extension [Self <: FirstRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirstRange] (val x: Self) extends AnyVal {
     
     inline def setFirstRange(value: Range): Self = StObject.set(x, "firstRange", value.asInstanceOf[js.Any])
     

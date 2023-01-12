@@ -52,7 +52,8 @@ object distTypesResolveEndpointConfigMod {
       __obj.asInstanceOf[EndpointInputConfig[T]]
     }
     
-    extension [Self <: EndpointInputConfig[?], T /* <: EndpointParameters */](x: Self & EndpointInputConfig[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointInputConfig[?], T /* <: EndpointParameters */] (val x: Self & EndpointInputConfig[T]) extends AnyVal {
       
       inline def setEndpoint(value: String | Endpoint | (Provider[Endpoint | EndpointV2]) | EndpointV2): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       

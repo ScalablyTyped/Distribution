@@ -19,7 +19,8 @@ object AuditLogConfig {
     __obj.asInstanceOf[AuditLogConfig]
   }
   
-  extension [Self <: AuditLogConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuditLogConfig] (val x: Self) extends AnyVal {
     
     inline def setExemptedMembers(value: js.Array[String]): Self = StObject.set(x, "exemptedMembers", value.asInstanceOf[js.Any])
     

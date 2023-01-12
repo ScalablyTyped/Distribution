@@ -29,7 +29,8 @@ object LegendConfig {
     __obj.asInstanceOf[LegendConfig]
   }
   
-  extension [Self <: LegendConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendConfig] (val x: Self) extends AnyVal {
     
     inline def setLegend(value: typings.vegaLite.buildSrcLegendMod.Legend[SignalRef]): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     

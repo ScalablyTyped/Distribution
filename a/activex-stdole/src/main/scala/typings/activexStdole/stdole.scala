@@ -28,7 +28,8 @@ object stdole {
       __obj.asInstanceOf[DISPPARAMS]
     }
     
-    extension [Self <: DISPPARAMS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DISPPARAMS] (val x: Self) extends AnyVal {
       
       inline def setCArgs(value: Double): Self = StObject.set(x, "cArgs", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object stdole {
       __obj.asInstanceOf[EXCEPINFO]
     }
     
-    extension [Self <: EXCEPINFO](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EXCEPINFO] (val x: Self) extends AnyVal {
       
       inline def setBstrDescription(value: String): Self = StObject.set(x, "bstrDescription", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object stdole {
       __obj.asInstanceOf[GUID]
     }
     
-    extension [Self <: GUID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GUID] (val x: Self) extends AnyVal {
       
       inline def setData1(value: Double): Self = StObject.set(x, "Data1", value.asInstanceOf[js.Any])
       
@@ -214,7 +217,8 @@ object stdole {
       __obj.asInstanceOf[StdFont]
     }
     
-    extension [Self <: StdFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StdFont] (val x: Self) extends AnyVal {
       
       inline def setBold(value: Boolean): Self = StObject.set(x, "Bold", value.asInstanceOf[js.Any])
       
@@ -280,7 +284,8 @@ object stdole {
       __obj.asInstanceOf[StdPicture]
     }
     
-    extension [Self <: StdPicture](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StdPicture] (val x: Self) extends AnyVal {
       
       inline def setHPal(value: Double): Self = StObject.set(x, "hPal", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object ExperimentStopCondition {
     __obj.asInstanceOf[ExperimentStopCondition]
   }
   
-  extension [Self <: ExperimentStopCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExperimentStopCondition] (val x: Self) extends AnyVal {
     
     inline def setSource(value: StopConditionSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

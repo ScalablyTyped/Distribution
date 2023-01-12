@@ -36,7 +36,8 @@ object InputStream {
     __obj.asInstanceOf[InputStream]
   }
   
-  extension [Self <: InputStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputStream] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     

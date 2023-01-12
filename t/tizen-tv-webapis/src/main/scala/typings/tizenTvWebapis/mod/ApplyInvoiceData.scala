@@ -15,7 +15,8 @@ object ApplyInvoiceData {
     __obj.asInstanceOf[ApplyInvoiceData]
   }
   
-  extension [Self <: ApplyInvoiceData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplyInvoiceData] (val x: Self) extends AnyVal {
     
     inline def setApiResult(value: String): Self = StObject.set(x, "apiResult", value.asInstanceOf[js.Any])
   }

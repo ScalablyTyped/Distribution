@@ -176,7 +176,8 @@ object anon {
       __obj.asInstanceOf[Msg]
     }
     
-    extension [Self <: Msg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Msg] (val x: Self) extends AnyVal {
       
       inline def setMsg(value: Any): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       
@@ -195,7 +196,8 @@ object anon {
       __obj.asInstanceOf[TypeofFragment]
     }
     
-    extension [Self <: TypeofFragment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofFragment] (val x: Self) extends AnyVal {
       
       inline def set__isFragment(value: `true`): Self = StObject.set(x, "__isFragment", value.asInstanceOf[js.Any])
     }
@@ -212,7 +214,8 @@ object anon {
       __obj.asInstanceOf[TypeofKeepAlive]
     }
     
-    extension [Self <: TypeofKeepAlive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofKeepAlive] (val x: Self) extends AnyVal {
       
       inline def set__isKeepAlive(value: `true`): Self = StObject.set(x, "__isKeepAlive", value.asInstanceOf[js.Any])
     }
@@ -229,7 +232,8 @@ object anon {
       __obj.asInstanceOf[TypeofSuspense]
     }
     
-    extension [Self <: TypeofSuspense](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofSuspense] (val x: Self) extends AnyVal {
       
       inline def set__isSuspense(value: `true`): Self = StObject.set(x, "__isSuspense", value.asInstanceOf[js.Any])
     }
@@ -246,7 +250,8 @@ object anon {
       __obj.asInstanceOf[TypeofTeleport]
     }
     
-    extension [Self <: TypeofTeleport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofTeleport] (val x: Self) extends AnyVal {
       
       inline def set__isTeleport(value: `true`): Self = StObject.set(x, "__isTeleport", value.asInstanceOf[js.Any])
     }

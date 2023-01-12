@@ -107,7 +107,8 @@ object MolecularSequence {
     __obj.asInstanceOf[MolecularSequence]
   }
   
-  extension [Self <: MolecularSequence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MolecularSequence] (val x: Self) extends AnyVal {
     
     inline def setCoordinateSystem(value: Double): Self = StObject.set(x, "coordinateSystem", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object PeeredDnsDomain {
     __obj.asInstanceOf[PeeredDnsDomain]
   }
   
-  extension [Self <: PeeredDnsDomain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeeredDnsDomain] (val x: Self) extends AnyVal {
     
     inline def setDnsSuffix(value: String): Self = StObject.set(x, "dnsSuffix", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object AddPublicKeyResponse {
     __obj.asInstanceOf[AddPublicKeyResponse]
   }
   
-  extension [Self <: AddPublicKeyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddPublicKeyResponse] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

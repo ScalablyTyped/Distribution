@@ -95,7 +95,8 @@ object IInteractComponent {
     __obj.asInstanceOf[IInteractComponent]
   }
   
-  extension [Self <: IInteractComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInteractComponent] (val x: Self) extends AnyVal {
     
     inline def setAdd_items(value: Table): Self = StObject.set(x, "add_items", value.asInstanceOf[js.Any])
     

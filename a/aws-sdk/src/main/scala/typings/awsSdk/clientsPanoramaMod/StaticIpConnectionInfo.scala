@@ -33,7 +33,8 @@ object StaticIpConnectionInfo {
     __obj.asInstanceOf[StaticIpConnectionInfo]
   }
   
-  extension [Self <: StaticIpConnectionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaticIpConnectionInfo] (val x: Self) extends AnyVal {
     
     inline def setDefaultGateway(value: DefaultGateway): Self = StObject.set(x, "DefaultGateway", value.asInstanceOf[js.Any])
     

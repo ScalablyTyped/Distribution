@@ -20,7 +20,8 @@ object RangePartitioning {
     __obj.asInstanceOf[RangePartitioning]
   }
   
-  extension [Self <: RangePartitioning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangePartitioning] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

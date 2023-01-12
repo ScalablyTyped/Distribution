@@ -21,7 +21,8 @@ object ObjectExplorerExpandInfo {
     __obj.asInstanceOf[ObjectExplorerExpandInfo]
   }
   
-  extension [Self <: ObjectExplorerExpandInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectExplorerExpandInfo] (val x: Self) extends AnyVal {
     
     inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     

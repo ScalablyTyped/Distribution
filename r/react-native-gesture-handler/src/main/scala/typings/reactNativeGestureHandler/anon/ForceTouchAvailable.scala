@@ -15,7 +15,8 @@ object ForceTouchAvailable {
     __obj.asInstanceOf[ForceTouchAvailable]
   }
   
-  extension [Self <: ForceTouchAvailable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForceTouchAvailable] (val x: Self) extends AnyVal {
     
     inline def setForceTouchAvailable(value: Boolean): Self = StObject.set(x, "forceTouchAvailable", value.asInstanceOf[js.Any])
   }

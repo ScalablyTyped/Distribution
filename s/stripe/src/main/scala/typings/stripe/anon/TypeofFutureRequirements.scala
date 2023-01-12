@@ -15,7 +15,8 @@ object TypeofFutureRequirements {
     __obj.asInstanceOf[TypeofFutureRequirements]
   }
   
-  extension [Self <: TypeofFutureRequirements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofFutureRequirements] (val x: Self) extends AnyVal {
     
     inline def setError(value: Any): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
   }

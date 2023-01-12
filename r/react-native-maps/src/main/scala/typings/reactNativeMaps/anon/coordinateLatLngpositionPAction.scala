@@ -24,7 +24,8 @@ object coordinateLatLngpositionPAction {
     __obj.asInstanceOf[coordinateLatLngpositionPAction]
   }
   
-  extension [Self <: coordinateLatLngpositionPAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: coordinateLatLngpositionPAction] (val x: Self) extends AnyVal {
     
     inline def setAction(value: `marker-select`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

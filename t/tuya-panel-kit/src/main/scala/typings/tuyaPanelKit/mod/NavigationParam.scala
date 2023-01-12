@@ -18,7 +18,8 @@ object NavigationParam {
     __obj.asInstanceOf[NavigationParam]
   }
   
-  extension [Self <: NavigationParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationParam] (val x: Self) extends AnyVal {
     
     inline def setRouter(value: js.Array[NavigationRoute]): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
     

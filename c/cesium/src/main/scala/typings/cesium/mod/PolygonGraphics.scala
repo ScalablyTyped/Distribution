@@ -222,7 +222,8 @@ object PolygonGraphics {
       __obj.asInstanceOf[ConstructorOptions]
     }
     
-    extension [Self <: ConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setArcType(value: Property | ArcType): Self = StObject.set(x, "arcType", value.asInstanceOf[js.Any])
       

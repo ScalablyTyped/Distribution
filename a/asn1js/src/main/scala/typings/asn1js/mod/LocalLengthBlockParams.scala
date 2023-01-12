@@ -16,7 +16,8 @@ object LocalLengthBlockParams {
     __obj.asInstanceOf[LocalLengthBlockParams]
   }
   
-  extension [Self <: LocalLengthBlockParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalLengthBlockParams] (val x: Self) extends AnyVal {
     
     inline def setLenBlock(value: PartialILocalLengthBlock): Self = StObject.set(x, "lenBlock", value.asInstanceOf[js.Any])
     

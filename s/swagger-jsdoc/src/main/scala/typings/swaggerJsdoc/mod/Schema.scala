@@ -20,7 +20,8 @@ object Schema {
     __obj.asInstanceOf[Schema]
   }
   
-  extension [Self <: Schema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

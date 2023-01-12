@@ -15,7 +15,8 @@ object KeyPurposes {
     __obj.asInstanceOf[KeyPurposes]
   }
   
-  extension [Self <: KeyPurposes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyPurposes] (val x: Self) extends AnyVal {
     
     inline def setKeyPurposes(value: String): Self = StObject.set(x, "keyPurposes", value.asInstanceOf[js.Any])
     

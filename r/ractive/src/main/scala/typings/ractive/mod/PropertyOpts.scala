@@ -132,7 +132,8 @@ object PropertyOpts {
     __obj.asInstanceOf[PropertyOpts[T]]
   }
   
-  extension [Self <: PropertyOpts[?], T /* <: Ractive[T] */](x: Self & PropertyOpts[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyOpts[?], T /* <: Ractive[T] */] (val x: Self & PropertyOpts[T]) extends AnyVal {
     
     inline def setAdapt(value: js.Array[Adaptor | String]): Self = StObject.set(x, "adapt", value.asInstanceOf[js.Any])
     

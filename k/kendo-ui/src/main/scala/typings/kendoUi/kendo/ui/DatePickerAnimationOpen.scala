@@ -17,7 +17,8 @@ object DatePickerAnimationOpen {
     __obj.asInstanceOf[DatePickerAnimationOpen]
   }
   
-  extension [Self <: DatePickerAnimationOpen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatePickerAnimationOpen] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

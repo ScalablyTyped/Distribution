@@ -22,7 +22,8 @@ object Colspan {
     __obj.asInstanceOf[Colspan]
   }
   
-  extension [Self <: Colspan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Colspan] (val x: Self) extends AnyVal {
     
     inline def setColspan(value: Double): Self = StObject.set(x, "colspan", value.asInstanceOf[js.Any])
     

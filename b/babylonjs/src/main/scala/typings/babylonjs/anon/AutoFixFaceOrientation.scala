@@ -35,7 +35,8 @@ object AutoFixFaceOrientation {
     __obj.asInstanceOf[AutoFixFaceOrientation]
   }
   
-  extension [Self <: AutoFixFaceOrientation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoFixFaceOrientation] (val x: Self) extends AnyVal {
     
     inline def setAutoFixFaceOrientation(value: Boolean): Self = StObject.set(x, "autoFixFaceOrientation", value.asInstanceOf[js.Any])
     

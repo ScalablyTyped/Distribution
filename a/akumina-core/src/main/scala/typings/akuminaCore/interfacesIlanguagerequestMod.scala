@@ -19,7 +19,8 @@ object interfacesIlanguagerequestMod {
       __obj.asInstanceOf[ILanguageRequest]
     }
     
-    extension [Self <: ILanguageRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILanguageRequest] (val x: Self) extends AnyVal {
       
       inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
       

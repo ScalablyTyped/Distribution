@@ -17,7 +17,8 @@ object SmartClientDeployment {
     __obj.asInstanceOf[SmartClientDeployment]
   }
   
-  extension [Self <: SmartClientDeployment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartClientDeployment] (val x: Self) extends AnyVal {
     
     inline def setSimple(value: String): Self = StObject.set(x, "simple", value.asInstanceOf[js.Any])
     

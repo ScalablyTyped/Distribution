@@ -18,7 +18,8 @@ object ConfluenceBlogConfiguration {
     __obj.asInstanceOf[ConfluenceBlogConfiguration]
   }
   
-  extension [Self <: ConfluenceBlogConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfluenceBlogConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBlogFieldMappings(value: ConfluenceBlogFieldMappingsList): Self = StObject.set(x, "BlogFieldMappings", value.asInstanceOf[js.Any])
     

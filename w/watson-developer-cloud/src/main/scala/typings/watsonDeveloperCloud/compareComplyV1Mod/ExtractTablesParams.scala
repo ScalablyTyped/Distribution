@@ -32,7 +32,8 @@ object ExtractTablesParams {
     __obj.asInstanceOf[ExtractTablesParams]
   }
   
-  extension [Self <: ExtractTablesParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtractTablesParams] (val x: Self) extends AnyVal {
     
     inline def setFile(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

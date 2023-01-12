@@ -20,7 +20,8 @@ object Shown {
     __obj.asInstanceOf[Shown]
   }
   
-  extension [Self <: Shown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Shown] (val x: Self) extends AnyVal {
     
     inline def setShown(value: Boolean): Self = StObject.set(x, "shown", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object VersionedResource {
     __obj.asInstanceOf[VersionedResource]
   }
   
-  extension [Self <: VersionedResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VersionedResource] (val x: Self) extends AnyVal {
     
     inline def setResource(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

@@ -28,7 +28,8 @@ object ListTagOptionsInput {
     __obj.asInstanceOf[ListTagOptionsInput]
   }
   
-  extension [Self <: ListTagOptionsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTagOptionsInput] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: ListTagOptionsFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

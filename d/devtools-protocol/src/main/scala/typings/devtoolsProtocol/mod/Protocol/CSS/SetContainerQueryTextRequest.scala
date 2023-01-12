@@ -19,7 +19,8 @@ object SetContainerQueryTextRequest {
     __obj.asInstanceOf[SetContainerQueryTextRequest]
   }
   
-  extension [Self <: SetContainerQueryTextRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetContainerQueryTextRequest] (val x: Self) extends AnyVal {
     
     inline def setRange(value: SourceRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

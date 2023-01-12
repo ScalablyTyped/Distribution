@@ -95,7 +95,8 @@ object CloneOperationInformation {
     __obj.asInstanceOf[CloneOperationInformation]
   }
   
-  extension [Self <: CloneOperationInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloneOperationInformation] (val x: Self) extends AnyVal {
     
     inline def setCloneStatistics(value: CloneStatistics): Self = StObject.set(x, "cloneStatistics", value.asInstanceOf[js.Any])
     

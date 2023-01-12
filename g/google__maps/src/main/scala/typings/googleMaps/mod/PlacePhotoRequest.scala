@@ -35,7 +35,8 @@ object PlacePhotoRequest {
     __obj.asInstanceOf[PlacePhotoRequest]
   }
   
-  extension [Self <: PlacePhotoRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlacePhotoRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxheight(value: Double): Self = StObject.set(x, "maxheight", value.asInstanceOf[js.Any])
     

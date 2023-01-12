@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsStairsMod extends Shortcut {
       __obj.asInstanceOf[StairsProps]
     }
     
-    extension [Self <: StairsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StairsProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

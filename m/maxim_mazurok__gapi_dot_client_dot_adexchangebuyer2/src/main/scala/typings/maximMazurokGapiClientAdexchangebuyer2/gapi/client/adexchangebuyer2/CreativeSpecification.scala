@@ -19,7 +19,8 @@ object CreativeSpecification {
     __obj.asInstanceOf[CreativeSpecification]
   }
   
-  extension [Self <: CreativeSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreativeSpecification] (val x: Self) extends AnyVal {
     
     inline def setCreativeCompanionSizes(value: js.Array[AdSize]): Self = StObject.set(x, "creativeCompanionSizes", value.asInstanceOf[js.Any])
     

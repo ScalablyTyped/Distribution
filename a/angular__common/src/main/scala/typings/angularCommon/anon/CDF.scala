@@ -155,7 +155,8 @@ object CDF {
     __obj.asInstanceOf[CDF]
   }
   
-  extension [Self <: CDF](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CDF] (val x: Self) extends AnyVal {
     
     inline def setARS(value: js.Array[String]): Self = StObject.set(x, "ARS", value.asInstanceOf[js.Any])
     

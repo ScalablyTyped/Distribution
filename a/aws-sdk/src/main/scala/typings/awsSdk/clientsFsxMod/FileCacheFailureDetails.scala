@@ -18,7 +18,8 @@ object FileCacheFailureDetails {
     __obj.asInstanceOf[FileCacheFailureDetails]
   }
   
-  extension [Self <: FileCacheFailureDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileCacheFailureDetails] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: ErrorMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

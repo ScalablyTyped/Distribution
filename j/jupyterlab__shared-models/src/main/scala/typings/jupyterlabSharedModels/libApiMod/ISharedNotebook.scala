@@ -153,13 +153,15 @@ object ISharedNotebook {
       __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: IOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
       
       inline def setDisableDocumentWideUndoRedo(value: Boolean): Self = StObject.set(x, "disableDocumentWideUndoRedo", value.asInstanceOf[js.Any])
     }
   }
   
-  extension [Self <: ISharedNotebook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISharedNotebook] (val x: Self) extends AnyVal {
     
     inline def setCells(value: js.Array[ISharedCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     

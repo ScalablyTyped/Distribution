@@ -21,7 +21,8 @@ object OnItemDragObjectMove {
     __obj.asInstanceOf[OnItemDragObjectMove]
   }
   
-  extension [Self <: OnItemDragObjectMove](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnItemDragObjectMove] (val x: Self) extends AnyVal {
     
     inline def setEventType(value: move): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     

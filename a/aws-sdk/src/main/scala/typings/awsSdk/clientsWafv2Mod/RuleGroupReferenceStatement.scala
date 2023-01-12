@@ -28,7 +28,8 @@ object RuleGroupReferenceStatement {
     __obj.asInstanceOf[RuleGroupReferenceStatement]
   }
   
-  extension [Self <: RuleGroupReferenceStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleGroupReferenceStatement] (val x: Self) extends AnyVal {
     
     inline def setARN(value: ResourceArn): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

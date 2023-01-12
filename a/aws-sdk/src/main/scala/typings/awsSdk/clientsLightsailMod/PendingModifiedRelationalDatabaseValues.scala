@@ -28,7 +28,8 @@ object PendingModifiedRelationalDatabaseValues {
     __obj.asInstanceOf[PendingModifiedRelationalDatabaseValues]
   }
   
-  extension [Self <: PendingModifiedRelationalDatabaseValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PendingModifiedRelationalDatabaseValues] (val x: Self) extends AnyVal {
     
     inline def setBackupRetentionEnabled(value: Boolean): Self = StObject.set(x, "backupRetentionEnabled", value.asInstanceOf[js.Any])
     

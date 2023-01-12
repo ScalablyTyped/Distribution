@@ -18,7 +18,8 @@ object GetStreamKeyResponse {
     __obj.asInstanceOf[GetStreamKeyResponse]
   }
   
-  extension [Self <: GetStreamKeyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStreamKeyResponse] (val x: Self) extends AnyVal {
     
     inline def setStreamKey(value: StreamKey): Self = StObject.set(x, "streamKey", value.asInstanceOf[js.Any])
     

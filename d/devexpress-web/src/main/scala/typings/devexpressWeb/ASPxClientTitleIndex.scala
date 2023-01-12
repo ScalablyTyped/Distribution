@@ -58,7 +58,8 @@ object ASPxClientTitleIndex {
     __obj.asInstanceOf[ASPxClientTitleIndex]
   }
   
-  extension [Self <: ASPxClientTitleIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTitleIndex] (val x: Self) extends AnyVal {
     
     inline def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientTitleIndex]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
     

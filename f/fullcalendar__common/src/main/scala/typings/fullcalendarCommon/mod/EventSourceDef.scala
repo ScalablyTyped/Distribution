@@ -31,7 +31,8 @@ object EventSourceDef {
     __obj.asInstanceOf[EventSourceDef[Meta]]
   }
   
-  extension [Self <: EventSourceDef[?], Meta](x: Self & EventSourceDef[Meta]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventSourceDef[?], Meta] (val x: Self & EventSourceDef[Meta]) extends AnyVal {
     
     inline def setFetch(
       value: (/* arg */ Context[Meta], /* success */ js.Function1[/* res */ RawEvents, Unit], /* failure */ js.Function1[/* error */ EventSourceError, Unit]) => Unit | PromiseLike[js.Array[EventInput]]

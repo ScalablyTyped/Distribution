@@ -18,7 +18,8 @@ object SplitterCollapseEvent {
     __obj.asInstanceOf[SplitterCollapseEvent]
   }
   
-  extension [Self <: SplitterCollapseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitterCollapseEvent] (val x: Self) extends AnyVal {
     
     inline def setPane(value: Element): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     

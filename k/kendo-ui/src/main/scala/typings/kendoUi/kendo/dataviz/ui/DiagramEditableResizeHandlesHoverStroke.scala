@@ -19,7 +19,8 @@ object DiagramEditableResizeHandlesHoverStroke {
     __obj.asInstanceOf[DiagramEditableResizeHandlesHoverStroke]
   }
   
-  extension [Self <: DiagramEditableResizeHandlesHoverStroke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramEditableResizeHandlesHoverStroke] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

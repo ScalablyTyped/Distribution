@@ -305,7 +305,8 @@ object KnowledgeAnswers {
       __obj.asInstanceOf[IAnswer]
     }
     
-    extension [Self <: IAnswer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAnswer] (val x: Self) extends AnyVal {
       
       inline def setAnswer(value: String): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
       

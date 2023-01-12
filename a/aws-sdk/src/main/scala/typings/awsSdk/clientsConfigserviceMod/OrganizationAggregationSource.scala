@@ -28,7 +28,8 @@ object OrganizationAggregationSource {
     __obj.asInstanceOf[OrganizationAggregationSource]
   }
   
-  extension [Self <: OrganizationAggregationSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationAggregationSource] (val x: Self) extends AnyVal {
     
     inline def setAllAwsRegions(value: Boolean): Self = StObject.set(x, "AllAwsRegions", value.asInstanceOf[js.Any])
     

@@ -300,7 +300,8 @@ object httpClientMod {
       __obj.asInstanceOf[RequestInfo]
     }
     
-    extension [Self <: RequestInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestInfo] (val x: Self) extends AnyVal {
       
       inline def setHttpModule(value: Any): Self = StObject.set(x, "httpModule", value.asInstanceOf[js.Any])
       

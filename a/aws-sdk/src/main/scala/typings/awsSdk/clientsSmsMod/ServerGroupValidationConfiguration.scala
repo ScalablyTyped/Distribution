@@ -23,7 +23,8 @@ object ServerGroupValidationConfiguration {
     __obj.asInstanceOf[ServerGroupValidationConfiguration]
   }
   
-  extension [Self <: ServerGroupValidationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerGroupValidationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setServerGroupId(value: ServerGroupId): Self = StObject.set(x, "serverGroupId", value.asInstanceOf[js.Any])
     

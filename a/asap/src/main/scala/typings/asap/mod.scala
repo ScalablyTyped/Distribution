@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[Task]
     }
     
-    extension [Self <: Task](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
       
       inline def setCall(value: /* repeated */ Any => Any): Self = StObject.set(x, "call", js.Any.fromFunction1(value))
     }

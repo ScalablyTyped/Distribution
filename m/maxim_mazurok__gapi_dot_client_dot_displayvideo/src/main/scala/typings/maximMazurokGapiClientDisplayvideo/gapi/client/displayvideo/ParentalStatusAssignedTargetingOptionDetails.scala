@@ -19,7 +19,8 @@ object ParentalStatusAssignedTargetingOptionDetails {
     __obj.asInstanceOf[ParentalStatusAssignedTargetingOptionDetails]
   }
   
-  extension [Self <: ParentalStatusAssignedTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParentalStatusAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setParentalStatus(value: String): Self = StObject.set(x, "parentalStatus", value.asInstanceOf[js.Any])
     

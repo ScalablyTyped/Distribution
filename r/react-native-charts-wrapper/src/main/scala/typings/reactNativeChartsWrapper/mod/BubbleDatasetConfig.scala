@@ -18,7 +18,8 @@ object BubbleDatasetConfig {
     __obj.asInstanceOf[BubbleDatasetConfig]
   }
   
-  extension [Self <: BubbleDatasetConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BubbleDatasetConfig] (val x: Self) extends AnyVal {
     
     inline def setHighlightCircleWidth(value: Double): Self = StObject.set(x, "highlightCircleWidth", value.asInstanceOf[js.Any])
     

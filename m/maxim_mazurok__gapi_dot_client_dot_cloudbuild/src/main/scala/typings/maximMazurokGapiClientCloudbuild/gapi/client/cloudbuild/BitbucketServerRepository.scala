@@ -28,7 +28,8 @@ object BitbucketServerRepository {
     __obj.asInstanceOf[BitbucketServerRepository]
   }
   
-  extension [Self <: BitbucketServerRepository](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BitbucketServerRepository] (val x: Self) extends AnyVal {
     
     inline def setBrowseUri(value: String): Self = StObject.set(x, "browseUri", value.asInstanceOf[js.Any])
     

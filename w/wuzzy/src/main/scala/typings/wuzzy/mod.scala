@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[LevenshteinOptions]
     }
     
-    extension [Self <: LevenshteinOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LevenshteinOptions] (val x: Self) extends AnyVal {
       
       inline def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       

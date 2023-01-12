@@ -21,7 +21,8 @@ object ShortHeaderValue {
     __obj.asInstanceOf[ShortHeaderValue]
   }
   
-  extension [Self <: ShortHeaderValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShortHeaderValue] (val x: Self) extends AnyVal {
     
     inline def setType(value: short): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

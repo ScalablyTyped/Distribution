@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Admin]
     }
     
-    extension [Self <: Admin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Admin] (val x: Self) extends AnyVal {
       
       inline def setAdmin(value: String): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

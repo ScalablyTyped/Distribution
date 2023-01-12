@@ -22,7 +22,8 @@ object GoogleIdentityAccesscontextmanagerV1VpcAccessibleServices {
     __obj.asInstanceOf[GoogleIdentityAccesscontextmanagerV1VpcAccessibleServices]
   }
   
-  extension [Self <: GoogleIdentityAccesscontextmanagerV1VpcAccessibleServices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleIdentityAccesscontextmanagerV1VpcAccessibleServices] (val x: Self) extends AnyVal {
     
     inline def setAllowedServices(value: js.Array[String]): Self = StObject.set(x, "allowedServices", value.asInstanceOf[js.Any])
     

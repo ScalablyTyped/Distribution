@@ -20,7 +20,8 @@ object PlotDisparityindexDataLabelsAnimationOptions {
     __obj.asInstanceOf[PlotDisparityindexDataLabelsAnimationOptions]
   }
   
-  extension [Self <: PlotDisparityindexDataLabelsAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotDisparityindexDataLabelsAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     

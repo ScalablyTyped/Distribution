@@ -19,7 +19,8 @@ object TargetWindow {
     __obj.asInstanceOf[TargetWindow]
   }
   
-  extension [Self <: TargetWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetWindow] (val x: Self) extends AnyVal {
     
     inline def setCustomHtml(value: String): Self = StObject.set(x, "customHtml", value.asInstanceOf[js.Any])
     

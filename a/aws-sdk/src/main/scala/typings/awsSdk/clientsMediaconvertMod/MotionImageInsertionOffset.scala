@@ -23,7 +23,8 @@ object MotionImageInsertionOffset {
     __obj.asInstanceOf[MotionImageInsertionOffset]
   }
   
-  extension [Self <: MotionImageInsertionOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MotionImageInsertionOffset] (val x: Self) extends AnyVal {
     
     inline def setImageX(value: integerMin0Max2147483647): Self = StObject.set(x, "ImageX", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object RefreshTokenResponse {
     __obj.asInstanceOf[RefreshTokenResponse]
   }
   
-  extension [Self <: RefreshTokenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshTokenResponse] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: SensitiveString): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     

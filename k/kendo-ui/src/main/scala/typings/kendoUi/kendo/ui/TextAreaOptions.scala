@@ -45,7 +45,8 @@ object TextAreaOptions {
     __obj.asInstanceOf[TextAreaOptions]
   }
   
-  extension [Self <: TextAreaOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextAreaOptions] (val x: Self) extends AnyVal {
     
     inline def setChange(value: /* e */ TextAreaChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     

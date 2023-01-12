@@ -19,7 +19,8 @@ object ConnectionProperty {
     __obj.asInstanceOf[ConnectionProperty]
   }
   
-  extension [Self <: ConnectionProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionProperty] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object MapMessages {
     __obj.asInstanceOf[MapMessages]
   }
   
-  extension [Self <: MapMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapMessages] (val x: Self) extends AnyVal {
     
     inline def setTileTitle(value: String): Self = StObject.set(x, "tileTitle", value.asInstanceOf[js.Any])
     

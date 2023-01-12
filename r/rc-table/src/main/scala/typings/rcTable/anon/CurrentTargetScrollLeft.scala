@@ -18,7 +18,8 @@ object CurrentTargetScrollLeft {
     __obj.asInstanceOf[CurrentTargetScrollLeft]
   }
   
-  extension [Self <: CurrentTargetScrollLeft](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentTargetScrollLeft] (val x: Self) extends AnyVal {
     
     inline def setCurrentTarget(value: HTMLElement): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object typesSmsmessageMod {
       __obj.asInstanceOf[SMSMessage]
     }
     
-    extension [Self <: SMSMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SMSMessage] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object typesSmsmessageMod {
       __obj.asInstanceOf[UnmarshalledSMSMessage]
     }
     
-    extension [Self <: UnmarshalledSMSMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSMSMessage] (val x: Self) extends AnyVal {
       
       inline def setSubstitutions(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
       

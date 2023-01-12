@@ -19,7 +19,8 @@ object ETBJPY {
     __obj.asInstanceOf[ETBJPY]
   }
   
-  extension [Self <: ETBJPY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ETBJPY] (val x: Self) extends AnyVal {
     
     inline def setETB(value: js.Array[String]): Self = StObject.set(x, "ETB", value.asInstanceOf[js.Any])
     

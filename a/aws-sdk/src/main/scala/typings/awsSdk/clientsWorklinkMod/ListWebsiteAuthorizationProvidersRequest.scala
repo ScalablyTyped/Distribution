@@ -28,7 +28,8 @@ object ListWebsiteAuthorizationProvidersRequest {
     __obj.asInstanceOf[ListWebsiteAuthorizationProvidersRequest]
   }
   
-  extension [Self <: ListWebsiteAuthorizationProvidersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListWebsiteAuthorizationProvidersRequest] (val x: Self) extends AnyVal {
     
     inline def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object CreateTransformJobResponse {
     __obj.asInstanceOf[CreateTransformJobResponse]
   }
   
-  extension [Self <: CreateTransformJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTransformJobResponse] (val x: Self) extends AnyVal {
     
     inline def setTransformJobArn(value: TransformJobArn): Self = StObject.set(x, "TransformJobArn", value.asInstanceOf[js.Any])
   }

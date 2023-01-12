@@ -22,7 +22,8 @@ object OnEndRenameColumn {
     __obj.asInstanceOf[OnEndRenameColumn]
   }
   
-  extension [Self <: OnEndRenameColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnEndRenameColumn] (val x: Self) extends AnyVal {
     
     inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     

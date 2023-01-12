@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCBannerAdapter]
     }
     
-    extension [Self <: PartialMDCBannerAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCBannerAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

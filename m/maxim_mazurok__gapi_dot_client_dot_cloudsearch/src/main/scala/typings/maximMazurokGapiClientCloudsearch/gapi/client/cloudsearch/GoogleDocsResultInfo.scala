@@ -37,7 +37,8 @@ object GoogleDocsResultInfo {
     __obj.asInstanceOf[GoogleDocsResultInfo]
   }
   
-  extension [Self <: GoogleDocsResultInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDocsResultInfo] (val x: Self) extends AnyVal {
     
     inline def setAttachmentSha1(value: String): Self = StObject.set(x, "attachmentSha1", value.asInstanceOf[js.Any])
     

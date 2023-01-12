@@ -45,7 +45,8 @@ object libTypescriptSafeAreaDottypesMod {
       __obj.asInstanceOf[EdgeInsets]
     }
     
-    extension [Self <: EdgeInsets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EdgeInsets] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object libTypescriptSafeAreaDottypesMod {
       __obj.asInstanceOf[Metrics]
     }
     
-    extension [Self <: Metrics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metrics] (val x: Self) extends AnyVal {
       
       inline def setFrame(value: Rect): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
@@ -95,7 +97,8 @@ object libTypescriptSafeAreaDottypesMod {
       __obj.asInstanceOf[NativeSafeAreaProviderProps]
     }
     
-    extension [Self <: NativeSafeAreaProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeSafeAreaProviderProps] (val x: Self) extends AnyVal {
       
       inline def setOnInsetsChange(value: /* event */ InsetChangedEvent => Unit): Self = StObject.set(x, "onInsetsChange", js.Any.fromFunction1(value))
     }
@@ -116,7 +119,8 @@ object libTypescriptSafeAreaDottypesMod {
       __obj.asInstanceOf[NativeSafeAreaViewProps]
     }
     
-    extension [Self <: NativeSafeAreaViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeSafeAreaViewProps] (val x: Self) extends AnyVal {
       
       inline def setEdges(value: js.Array[Edge]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
       
@@ -147,7 +151,8 @@ object libTypescriptSafeAreaDottypesMod {
       __obj.asInstanceOf[Rect]
     }
     
-    extension [Self <: Rect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

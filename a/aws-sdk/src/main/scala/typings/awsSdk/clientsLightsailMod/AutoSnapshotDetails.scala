@@ -33,7 +33,8 @@ object AutoSnapshotDetails {
     __obj.asInstanceOf[AutoSnapshotDetails]
   }
   
-  extension [Self <: AutoSnapshotDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoSnapshotDetails] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

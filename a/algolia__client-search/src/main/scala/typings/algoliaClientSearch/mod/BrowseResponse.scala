@@ -23,7 +23,8 @@ object BrowseResponse {
     __obj.asInstanceOf[BrowseResponse[TObject]]
   }
   
-  extension [Self <: BrowseResponse[?], TObject](x: Self & BrowseResponse[TObject]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowseResponse[?], TObject] (val x: Self & BrowseResponse[TObject]) extends AnyVal {
     
     inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object libTrendTrendMod {
       __obj.asInstanceOf[TrendCfg]
     }
     
-    extension [Self <: TrendCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrendCfg] (val x: Self) extends AnyVal {
       
       inline def setAreaStyle(value: js.Object): Self = StObject.set(x, "areaStyle", value.asInstanceOf[js.Any])
       

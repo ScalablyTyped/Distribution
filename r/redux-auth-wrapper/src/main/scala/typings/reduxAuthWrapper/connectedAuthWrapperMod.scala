@@ -33,7 +33,8 @@ object connectedAuthWrapperMod {
       __obj.asInstanceOf[ConnectedAuthWrapperConfig[OwnProps, State]]
     }
     
-    extension [Self <: ConnectedAuthWrapperConfig[?, ?], OwnProps, State](x: Self & (ConnectedAuthWrapperConfig[OwnProps, State])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectedAuthWrapperConfig[?, ?], OwnProps, State] (val x: Self & (ConnectedAuthWrapperConfig[OwnProps, State])) extends AnyVal {
       
       inline def setAuthenticatedSelector(value: (State, OwnProps) => Boolean): Self = StObject.set(x, "authenticatedSelector", js.Any.fromFunction2(value))
       

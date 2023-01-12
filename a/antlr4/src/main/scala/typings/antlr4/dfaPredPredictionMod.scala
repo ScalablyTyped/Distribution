@@ -33,7 +33,8 @@ object dfaPredPredictionMod {
       __obj.asInstanceOf[PredPrediction]
     }
     
-    extension [Self <: PredPrediction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PredPrediction] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: Double): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       

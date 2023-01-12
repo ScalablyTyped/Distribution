@@ -28,7 +28,8 @@ object MultiConditionalSplitActivity {
     __obj.asInstanceOf[MultiConditionalSplitActivity]
   }
   
-  extension [Self <: MultiConditionalSplitActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiConditionalSplitActivity] (val x: Self) extends AnyVal {
     
     inline def setBranches(value: ListOfMultiConditionalBranch): Self = StObject.set(x, "Branches", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetAppInstanceStreamingConfigurationsResponse {
     __obj.asInstanceOf[GetAppInstanceStreamingConfigurationsResponse]
   }
   
-  extension [Self <: GetAppInstanceStreamingConfigurationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAppInstanceStreamingConfigurationsResponse] (val x: Self) extends AnyVal {
     
     inline def setAppInstanceStreamingConfigurations(value: AppInstanceStreamingConfigurationList): Self = StObject.set(x, "AppInstanceStreamingConfigurations", value.asInstanceOf[js.Any])
     

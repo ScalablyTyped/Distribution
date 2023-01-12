@@ -106,7 +106,8 @@ object libAffixMod extends Shortcut {
       __obj.asInstanceOf[AffixProps]
     }
     
-    extension [Self <: AffixProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AffixProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -161,7 +162,8 @@ object libAffixMod extends Shortcut {
       __obj.asInstanceOf[AffixState]
     }
     
-    extension [Self <: AffixState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AffixState] (val x: Self) extends AnyVal {
       
       inline def setAffixStyle(value: CSSProperties): Self = StObject.set(x, "affixStyle", value.asInstanceOf[js.Any])
       
@@ -196,7 +198,8 @@ object libAffixMod extends Shortcut {
       __obj.asInstanceOf[InternalAffixProps]
     }
     
-    extension [Self <: InternalAffixProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalAffixProps] (val x: Self) extends AnyVal {
       
       inline def setAffixPrefixCls(value: String): Self = StObject.set(x, "affixPrefixCls", value.asInstanceOf[js.Any])
     }

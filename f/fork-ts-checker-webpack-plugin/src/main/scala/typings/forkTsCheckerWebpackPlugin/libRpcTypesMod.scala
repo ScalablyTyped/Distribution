@@ -27,7 +27,8 @@ object libRpcTypesMod {
       __obj.asInstanceOf[RpcCallMessage]
     }
     
-    extension [Self <: RpcCallMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RpcCallMessage] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object libRpcTypesMod {
       __obj.asInstanceOf[RpcRejectMessage]
     }
     
-    extension [Self <: RpcRejectMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RpcRejectMessage] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -127,7 +129,8 @@ object libRpcTypesMod {
       __obj.asInstanceOf[RpcResolveMessage]
     }
     
-    extension [Self <: RpcResolveMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RpcResolveMessage] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

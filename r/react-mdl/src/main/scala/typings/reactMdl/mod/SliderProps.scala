@@ -25,7 +25,8 @@ object SliderProps {
     __obj.asInstanceOf[SliderProps]
   }
   
-  extension [Self <: SliderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderProps] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

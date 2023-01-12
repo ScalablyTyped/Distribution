@@ -27,7 +27,8 @@ object IField {
     __obj.asInstanceOf[IField]
   }
   
-  extension [Self <: IField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IField] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

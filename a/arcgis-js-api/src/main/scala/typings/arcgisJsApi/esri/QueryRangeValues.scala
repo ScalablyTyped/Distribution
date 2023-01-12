@@ -27,7 +27,8 @@ object QueryRangeValues {
     __obj.asInstanceOf[QueryRangeValues]
   }
   
-  extension [Self <: QueryRangeValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryRangeValues] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

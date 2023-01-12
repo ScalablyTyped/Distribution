@@ -43,7 +43,8 @@ object OutputDescription {
     __obj.asInstanceOf[OutputDescription]
   }
   
-  extension [Self <: OutputDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputDescription] (val x: Self) extends AnyVal {
     
     inline def setDestinationSchema(value: DestinationSchema): Self = StObject.set(x, "DestinationSchema", value.asInstanceOf[js.Any])
     

@@ -646,7 +646,8 @@ object PropsSVGFEComponentTransf {
     __obj.asInstanceOf[PropsSVGFEComponentTransf]
   }
   
-  extension [Self <: PropsSVGFEComponentTransf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsSVGFEComponentTransf] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

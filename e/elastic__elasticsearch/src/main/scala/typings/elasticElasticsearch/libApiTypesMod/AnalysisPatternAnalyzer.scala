@@ -29,7 +29,8 @@ object AnalysisPatternAnalyzer {
     __obj.asInstanceOf[AnalysisPatternAnalyzer]
   }
   
-  extension [Self <: AnalysisPatternAnalyzer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisPatternAnalyzer] (val x: Self) extends AnyVal {
     
     inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     

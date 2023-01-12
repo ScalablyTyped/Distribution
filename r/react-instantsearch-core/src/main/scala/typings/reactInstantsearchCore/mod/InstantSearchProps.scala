@@ -36,7 +36,8 @@ object InstantSearchProps {
     __obj.asInstanceOf[InstantSearchProps]
   }
   
-  extension [Self <: InstantSearchProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstantSearchProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

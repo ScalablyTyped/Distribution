@@ -21,7 +21,8 @@ object Emax {
     __obj.asInstanceOf[Emax]
   }
   
-  extension [Self <: Emax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Emax] (val x: Self) extends AnyVal {
     
     inline def setEmax(value: Double): Self = StObject.set(x, "emax", value.asInstanceOf[js.Any])
     

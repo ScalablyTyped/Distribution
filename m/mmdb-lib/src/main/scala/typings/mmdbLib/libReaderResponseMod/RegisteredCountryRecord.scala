@@ -21,7 +21,8 @@ object RegisteredCountryRecord {
     __obj.asInstanceOf[RegisteredCountryRecord]
   }
   
-  extension [Self <: RegisteredCountryRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisteredCountryRecord] (val x: Self) extends AnyVal {
     
     inline def setGeoname_id(value: Double): Self = StObject.set(x, "geoname_id", value.asInstanceOf[js.Any])
     

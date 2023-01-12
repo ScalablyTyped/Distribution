@@ -31,7 +31,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Opt]
     }
     
-    extension [Self <: Opt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opt] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String | js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       

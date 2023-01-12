@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Enable]
     }
     
-    extension [Self <: Enable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enable] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double | js.Function0[Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

@@ -53,7 +53,8 @@ object ClarifyCheckStepMetadata {
     __obj.asInstanceOf[ClarifyCheckStepMetadata]
   }
   
-  extension [Self <: ClarifyCheckStepMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClarifyCheckStepMetadata] (val x: Self) extends AnyVal {
     
     inline def setBaselineUsedForDriftCheckConstraints(value: String1024): Self = StObject.set(x, "BaselineUsedForDriftCheckConstraints", value.asInstanceOf[js.Any])
     

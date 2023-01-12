@@ -30,7 +30,8 @@ object ParseMeta {
     __obj.asInstanceOf[ParseMeta]
   }
   
-  extension [Self <: ParseMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParseMeta] (val x: Self) extends AnyVal {
     
     inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object FullscreenParam {
     __obj.asInstanceOf[FullscreenParam]
   }
   
-  extension [Self <: FullscreenParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullscreenParam] (val x: Self) extends AnyVal {
     
     inline def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
   }

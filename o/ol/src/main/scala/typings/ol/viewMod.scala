@@ -75,7 +75,8 @@ object viewMod {
       __obj.asInstanceOf[Animation]
     }
     
-    extension [Self <: Animation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: Coordinate): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -146,7 +147,8 @@ object viewMod {
       __obj.asInstanceOf[AnimationOptions]
     }
     
-    extension [Self <: AnimationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationOptions] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: Coordinate): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -220,7 +222,8 @@ object viewMod {
       __obj.asInstanceOf[Constraints]
     }
     
-    extension [Self <: Constraints](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constraints] (val x: Self) extends AnyVal {
       
       inline def setCenter(
         value: (/* p0 */ js.UndefOr[Coordinate], /* p1 */ Double, /* p2 */ Size, /* p3 */ js.UndefOr[Boolean], /* p4 */ js.UndefOr[js.Array[Double]]) => js.UndefOr[Coordinate]
@@ -259,7 +262,8 @@ object viewMod {
       __obj.asInstanceOf[FitOptions]
     }
     
-    extension [Self <: FitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FitOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: /* p0 */ Boolean => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
@@ -322,7 +326,8 @@ object viewMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: Coordinate): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
@@ -792,7 +797,8 @@ object viewMod {
       __obj.asInstanceOf[ViewOptions]
     }
     
-    extension [Self <: ViewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewOptions] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: Coordinate): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object RenameOptions {
     __obj.asInstanceOf[RenameOptions]
   }
   
-  extension [Self <: RenameOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenameOptions] (val x: Self) extends AnyVal {
     
     inline def setNewPath(value: String): Self = StObject.set(x, "newPath", value.asInstanceOf[js.Any])
     

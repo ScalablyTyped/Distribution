@@ -39,7 +39,8 @@ object buildSrcUtilMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setIncludeDirs(value: js.Array[String]): Self = StObject.set(x, "includeDirs", value.asInstanceOf[js.Any])
       

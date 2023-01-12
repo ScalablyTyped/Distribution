@@ -23,7 +23,8 @@ object StartSigningJobResponse {
     __obj.asInstanceOf[StartSigningJobResponse]
   }
   
-  extension [Self <: StartSigningJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartSigningJobResponse] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     

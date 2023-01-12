@@ -15,7 +15,8 @@ object RetryBuildOutput {
     __obj.asInstanceOf[RetryBuildOutput]
   }
   
-  extension [Self <: RetryBuildOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetryBuildOutput] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: Build): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

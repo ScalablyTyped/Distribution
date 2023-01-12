@@ -28,7 +28,8 @@ object NamespaceFilter {
     __obj.asInstanceOf[NamespaceFilter]
   }
   
-  extension [Self <: NamespaceFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamespaceFilter] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: FilterCondition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     

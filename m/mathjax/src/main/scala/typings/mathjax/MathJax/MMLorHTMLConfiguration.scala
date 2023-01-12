@@ -25,7 +25,8 @@ object MMLorHTMLConfiguration {
     __obj.asInstanceOf[MMLorHTMLConfiguration]
   }
   
-  extension [Self <: MMLorHTMLConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MMLorHTMLConfiguration] (val x: Self) extends AnyVal {
     
     inline def setPrefer(value: BrowserPreference): Self = StObject.set(x, "prefer", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object libModelsEventsRoomAvatarEventMod {
       __obj.asInstanceOf[RoomAvatarEventContent]
     }
     
-    extension [Self <: RoomAvatarEventContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoomAvatarEventContent] (val x: Self) extends AnyVal {
       
       inline def setInfo(value: DimensionalFileInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object ImportedWindowsAutopilotDeviceIdentityUpload {
     __obj.asInstanceOf[ImportedWindowsAutopilotDeviceIdentityUpload]
   }
   
-  extension [Self <: ImportedWindowsAutopilotDeviceIdentityUpload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportedWindowsAutopilotDeviceIdentityUpload] (val x: Self) extends AnyVal {
     
     inline def setCreatedDateTimeUtc(value: String): Self = StObject.set(x, "createdDateTimeUtc", value.asInstanceOf[js.Any])
     

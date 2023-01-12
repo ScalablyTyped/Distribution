@@ -59,7 +59,8 @@ object ValidationContext {
     __obj.asInstanceOf[ValidationContext]
   }
   
-  extension [Self <: ValidationContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationContext] (val x: Self) extends AnyVal {
     
     inline def setGetArgument(value: () => GraphQLArgument): Self = StObject.set(x, "getArgument", js.Any.fromFunction0(value))
     

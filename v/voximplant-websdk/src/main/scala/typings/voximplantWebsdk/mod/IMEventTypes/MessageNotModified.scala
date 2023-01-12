@@ -34,7 +34,8 @@ object MessageNotModified {
     __obj.asInstanceOf[MessageNotModified]
   }
   
-  extension [Self <: MessageNotModified](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageNotModified] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

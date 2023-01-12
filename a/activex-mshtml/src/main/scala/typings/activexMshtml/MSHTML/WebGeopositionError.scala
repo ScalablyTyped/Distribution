@@ -21,7 +21,8 @@ object WebGeopositionError {
     __obj.asInstanceOf[WebGeopositionError]
   }
   
-  extension [Self <: WebGeopositionError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGeopositionError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

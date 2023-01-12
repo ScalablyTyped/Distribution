@@ -314,7 +314,8 @@ object coreScopeMod {
       __obj.asInstanceOf[DocSignalArg]
     }
     
-    extension [Self <: DocSignalArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocSignalArg] (val x: Self) extends AnyVal {
       
       inline def setDoc(value: Document): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
       
@@ -769,7 +770,8 @@ object coreScopeMod {
       __obj.asInstanceOf[ListenerMap]
     }
     
-    extension [Self <: ListenerMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListenerMap] (val x: Self) extends AnyVal {
       
       inline def setActionsSlashdropColonend(value: (/* arg */ DropSignalArg, /* scope */ Scope, actionsSlashdropColonend) => Unit | Boolean): Self = StObject.set(x, "actions/drop:end", js.Any.fromFunction3(value))
       
@@ -1074,7 +1076,8 @@ object coreScopeMod {
       __obj.asInstanceOf[Plugin]
     }
     
-    extension [Self <: Plugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
       
       inline def setBefore(value: js.Array[String]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
@@ -1327,7 +1330,8 @@ object coreScopeMod {
       __obj.asInstanceOf[SignalArgs]
     }
     
-    extension [Self <: SignalArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignalArgs] (val x: Self) extends AnyVal {
       
       inline def setActionsSlashdropColonend(value: DropSignalArg): Self = StObject.set(x, "actions/drop:end", value.asInstanceOf[js.Any])
       

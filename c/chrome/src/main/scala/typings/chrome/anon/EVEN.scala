@@ -22,7 +22,8 @@ object EVEN {
     __obj.asInstanceOf[EVEN]
   }
   
-  extension [Self <: EVEN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EVEN] (val x: Self) extends AnyVal {
     
     inline def setEVEN(value: even): Self = StObject.set(x, "EVEN", value.asInstanceOf[js.Any])
     

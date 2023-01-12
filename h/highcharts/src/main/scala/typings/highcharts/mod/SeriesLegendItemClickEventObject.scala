@@ -36,7 +36,8 @@ object SeriesLegendItemClickEventObject {
     __obj.asInstanceOf[SeriesLegendItemClickEventObject]
   }
   
-  extension [Self <: SeriesLegendItemClickEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesLegendItemClickEventObject] (val x: Self) extends AnyVal {
     
     inline def setBrowserEvent(value: PointerEvent): Self = StObject.set(x, "browserEvent", value.asInstanceOf[js.Any])
     

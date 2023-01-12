@@ -36,7 +36,8 @@ object XSvgParser {
     __obj.asInstanceOf[XSvgParser]
   }
   
-  extension [Self <: XSvgParser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSvgParser] (val x: Self) extends AnyVal {
     
     inline def setGetDecomposition(value: (XInputStream, String) => SafeArray[XPrimitive2D]): Self = StObject.set(x, "getDecomposition", js.Any.fromFunction2(value))
   }

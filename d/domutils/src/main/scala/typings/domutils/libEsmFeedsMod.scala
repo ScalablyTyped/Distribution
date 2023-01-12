@@ -39,7 +39,8 @@ object libEsmFeedsMod {
       __obj.asInstanceOf[Feed]
     }
     
-    extension [Self <: Feed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Feed] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object libEsmFeedsMod {
       __obj.asInstanceOf[FeedItem]
     }
     
-    extension [Self <: FeedItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedItem] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -159,7 +161,8 @@ object libEsmFeedsMod {
       __obj.asInstanceOf[FeedItemMedia]
     }
     
-    extension [Self <: FeedItemMedia](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedItemMedia] (val x: Self) extends AnyVal {
       
       inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
       

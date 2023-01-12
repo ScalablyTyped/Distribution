@@ -25,7 +25,8 @@ object RelationshipStatus {
     __obj.asInstanceOf[RelationshipStatus]
   }
   
-  extension [Self <: RelationshipStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationshipStatus] (val x: Self) extends AnyVal {
     
     inline def setFormattedValue(value: String): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
     

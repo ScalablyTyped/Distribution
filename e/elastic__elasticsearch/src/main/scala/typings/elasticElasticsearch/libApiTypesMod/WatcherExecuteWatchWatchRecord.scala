@@ -45,7 +45,8 @@ object WatcherExecuteWatchWatchRecord {
     __obj.asInstanceOf[WatcherExecuteWatchWatchRecord]
   }
   
-  extension [Self <: WatcherExecuteWatchWatchRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherExecuteWatchWatchRecord] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: WatcherConditionContainer): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

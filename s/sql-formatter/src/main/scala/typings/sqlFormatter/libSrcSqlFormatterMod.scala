@@ -66,7 +66,8 @@ object libSrcSqlFormatterMod {
       __obj.asInstanceOf[FormatOptionsWithDialect]
     }
     
-    extension [Self <: FormatOptionsWithDialect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatOptionsWithDialect] (val x: Self) extends AnyVal {
       
       inline def setCommaPosition(value: CommaPosition): Self = StObject.set(x, "commaPosition", value.asInstanceOf[js.Any])
       
@@ -164,7 +165,8 @@ object libSrcSqlFormatterMod {
       __obj.asInstanceOf[FormatOptionsWithLanguage]
     }
     
-    extension [Self <: FormatOptionsWithLanguage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatOptionsWithLanguage] (val x: Self) extends AnyVal {
       
       inline def setCommaPosition(value: CommaPosition): Self = StObject.set(x, "commaPosition", value.asInstanceOf[js.Any])
       

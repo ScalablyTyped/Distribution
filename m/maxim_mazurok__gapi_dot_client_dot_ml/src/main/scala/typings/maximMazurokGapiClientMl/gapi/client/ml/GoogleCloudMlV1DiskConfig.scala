@@ -19,7 +19,8 @@ object GoogleCloudMlV1DiskConfig {
     __obj.asInstanceOf[GoogleCloudMlV1DiskConfig]
   }
   
-  extension [Self <: GoogleCloudMlV1DiskConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1DiskConfig] (val x: Self) extends AnyVal {
     
     inline def setBootDiskSizeGb(value: Double): Self = StObject.set(x, "bootDiskSizeGb", value.asInstanceOf[js.Any])
     

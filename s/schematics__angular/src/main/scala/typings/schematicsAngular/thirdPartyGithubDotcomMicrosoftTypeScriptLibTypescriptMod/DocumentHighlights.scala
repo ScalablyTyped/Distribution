@@ -17,7 +17,8 @@ object DocumentHighlights {
     __obj.asInstanceOf[DocumentHighlights]
   }
   
-  extension [Self <: DocumentHighlights](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentHighlights] (val x: Self) extends AnyVal {
     
     inline def setFileName(value: java.lang.String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     

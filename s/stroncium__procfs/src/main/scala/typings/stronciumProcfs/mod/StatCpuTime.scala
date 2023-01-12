@@ -44,7 +44,8 @@ object StatCpuTime {
     __obj.asInstanceOf[StatCpuTime]
   }
   
-  extension [Self <: StatCpuTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatCpuTime] (val x: Self) extends AnyVal {
     
     inline def setGuest(value: Double): Self = StObject.set(x, "guest", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object MappingRankFeaturesProperty {
     __obj.asInstanceOf[MappingRankFeaturesProperty]
   }
   
-  extension [Self <: MappingRankFeaturesProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingRankFeaturesProperty] (val x: Self) extends AnyVal {
     
     inline def setType(value: rank_features): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

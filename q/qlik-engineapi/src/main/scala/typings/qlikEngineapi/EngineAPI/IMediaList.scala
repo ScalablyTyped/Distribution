@@ -30,7 +30,8 @@ object IMediaList {
     __obj.asInstanceOf[IMediaList]
   }
   
-  extension [Self <: IMediaList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMediaList] (val x: Self) extends AnyVal {
     
     inline def setQItems(value: js.Array[IMediaListItem]): Self = StObject.set(x, "qItems", value.asInstanceOf[js.Any])
     

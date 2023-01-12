@@ -23,7 +23,8 @@ object MessageImage {
     __obj.asInstanceOf[MessageImage]
   }
   
-  extension [Self <: MessageImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageImage] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

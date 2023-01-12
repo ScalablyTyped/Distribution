@@ -1251,7 +1251,8 @@ object mod {
       __obj.asInstanceOf[AgentOptions]
     }
     
-    extension [Self <: AgentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AgentOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxCachedTlsSessions(value: Double): Self = StObject.set(x, "maxCachedTlsSessions", value.asInstanceOf[js.Any])
       
@@ -1379,7 +1380,8 @@ object mod {
       __obj.asInstanceOf[AutoRequestOptions]
     }
     
-    extension [Self <: AutoRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setALPNProtocols(value: js.Array[String]): Self = StObject.set(x, "ALPNProtocols", value.asInstanceOf[js.Any])
       
@@ -1622,7 +1624,8 @@ object mod {
       __obj.asInstanceOf[PromiseListeners]
     }
     
-    extension [Self <: PromiseListeners](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromiseListeners] (val x: Self) extends AnyVal {
       
       inline def setReject(value: js.Error => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
       
@@ -1645,7 +1648,8 @@ object mod {
       __obj.asInstanceOf[ProxyOptions]
     }
     
-    extension [Self <: ProxyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxyOptions] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -1783,7 +1787,8 @@ object mod {
       __obj.asInstanceOf[RequestOptions]
     }
     
-    extension [Self <: RequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
       
       inline def setALPNProtocols(value: js.Array[String]): Self = StObject.set(x, "ALPNProtocols", value.asInstanceOf[js.Any])
       
@@ -2022,7 +2027,8 @@ object mod {
       __obj.asInstanceOf[ResolveProtocolResult]
     }
     
-    extension [Self <: ResolveProtocolResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveProtocolResult] (val x: Self) extends AnyVal {
       
       inline def setAlpnProtocol(value: String): Self = StObject.set(x, "alpnProtocol", value.asInstanceOf[js.Any])
       

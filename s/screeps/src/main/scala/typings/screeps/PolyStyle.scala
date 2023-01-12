@@ -41,7 +41,8 @@ object PolyStyle {
     __obj.asInstanceOf[PolyStyle]
   }
   
-  extension [Self <: PolyStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolyStyle] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

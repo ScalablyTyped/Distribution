@@ -38,7 +38,8 @@ object OmittedExpression {
     __obj.asInstanceOf[OmittedExpression]
   }
   
-  extension [Self <: OmittedExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmittedExpression] (val x: Self) extends AnyVal {
     
     inline def setStructuralEquals(value: (CatchClause, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }

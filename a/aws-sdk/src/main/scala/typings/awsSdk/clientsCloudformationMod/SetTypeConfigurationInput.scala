@@ -38,7 +38,8 @@ object SetTypeConfigurationInput {
     __obj.asInstanceOf[SetTypeConfigurationInput]
   }
   
-  extension [Self <: SetTypeConfigurationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetTypeConfigurationInput] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: TypeConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     

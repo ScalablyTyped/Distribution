@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[AsyncOptions]
     }
     
-    extension [Self <: AsyncOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncOptions] (val x: Self) extends AnyVal {
       
       inline def setOnProgress(value: /* progress */ ProgressData => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
       
@@ -77,7 +78,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -127,7 +129,8 @@ object mod {
       __obj.asInstanceOf[ProgressData]
     }
     
-    extension [Self <: ProgressData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressData] (val x: Self) extends AnyVal {
       
       inline def setDestinationPath(value: String): Self = StObject.set(x, "destinationPath", value.asInstanceOf[js.Any])
       

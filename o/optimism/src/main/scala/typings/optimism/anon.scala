@@ -61,7 +61,8 @@ object anon {
       __obj.asInstanceOf[DirtyKey[TKeyArgs, TCacheKey, TResult, TArgs]]
     }
     
-    extension [Self <: DirtyKey[?, ?, ?, ?], TKeyArgs /* <: js.Array[Any] */, TCacheKey, TResult, TArgs /* <: js.Array[Any] */](x: Self & (DirtyKey[TKeyArgs, TCacheKey, TResult, TArgs])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirtyKey[?, ?, ?, ?], TKeyArgs /* <: js.Array[Any] */, TCacheKey, TResult, TArgs /* <: js.Array[Any] */] (val x: Self & (DirtyKey[TKeyArgs, TCacheKey, TResult, TArgs])) extends AnyVal {
       
       inline def setDirty(value: TKeyArgs => Unit): Self = StObject.set(x, "dirty", js.Any.fromFunction1(value))
       
@@ -98,7 +99,8 @@ object anon {
       __obj.asInstanceOf[Dispose]
     }
     
-    extension [Self <: Dispose](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dispose] (val x: Self) extends AnyVal {
       
       inline def setDispose(value: Boolean): Self = StObject.set(x, "dispose", value.asInstanceOf[js.Any])
       
@@ -121,7 +123,8 @@ object anon {
       __obj.asInstanceOf[Subscribe[TKey]]
     }
     
-    extension [Self <: Subscribe[?], TKey](x: Self & Subscribe[TKey]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscribe[?], TKey] (val x: Self & Subscribe[TKey]) extends AnyVal {
       
       inline def setSubscribe(
         value: /* import warning: importer.ImportType#apply Failed type conversion: optimism.optimism.OptimisticWrapOptions<[TKey], [TKey], any>['subscribe'] */ js.Any

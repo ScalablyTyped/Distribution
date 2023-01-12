@@ -19,7 +19,8 @@ object PagespeedVersion {
     __obj.asInstanceOf[PagespeedVersion]
   }
   
-  extension [Self <: PagespeedVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PagespeedVersion] (val x: Self) extends AnyVal {
     
     inline def setMajor(value: String): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     

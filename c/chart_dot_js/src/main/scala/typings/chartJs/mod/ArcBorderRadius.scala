@@ -21,7 +21,8 @@ object ArcBorderRadius {
     __obj.asInstanceOf[ArcBorderRadius]
   }
   
-  extension [Self <: ArcBorderRadius](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcBorderRadius] (val x: Self) extends AnyVal {
     
     inline def setInnerEnd(value: Double): Self = StObject.set(x, "innerEnd", value.asInstanceOf[js.Any])
     

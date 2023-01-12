@@ -22,7 +22,8 @@ object TypeofCLIENTSETNAME {
     __obj.asInstanceOf[TypeofCLIENTSETNAME]
   }
   
-  extension [Self <: TypeofCLIENTSETNAME](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCLIENTSETNAME] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: RedisCommandArgument => RedisCommandArguments): Self = StObject.set(x, "transformArguments", js.Any.fromFunction1(value))
     

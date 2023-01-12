@@ -36,7 +36,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Loader]
     }
     
-    extension [Self <: Loader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Loader] (val x: Self) extends AnyVal {
       
       inline def setFetch(value: (String, String, String) => js.Promise[StringDictionary[String]]): Self = StObject.set(x, "fetch", js.Any.fromFunction3(value))
       
@@ -91,7 +92,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setExportGlobals(value: Boolean): Self = StObject.set(x, "exportGlobals", value.asInstanceOf[js.Any])
       

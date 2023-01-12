@@ -18,7 +18,8 @@ object SetBypassCSPRequest {
     __obj.asInstanceOf[SetBypassCSPRequest]
   }
   
-  extension [Self <: SetBypassCSPRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetBypassCSPRequest] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }

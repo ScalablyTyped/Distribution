@@ -48,7 +48,8 @@ object CreateFargateProfileRequest {
     __obj.asInstanceOf[CreateFargateProfileRequest]
   }
   
-  extension [Self <: CreateFargateProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFargateProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: String): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     

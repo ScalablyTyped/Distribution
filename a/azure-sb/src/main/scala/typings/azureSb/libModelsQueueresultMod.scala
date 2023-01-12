@@ -58,7 +58,8 @@ object libModelsQueueresultMod {
             __obj.asInstanceOf[QueueProperties]
           }
           
-          extension [Self <: QueueProperties](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: QueueProperties] (val x: Self) extends AnyVal {
             
             inline def setDeadLetteringOnMessageExpiration(value: String): Self = StObject.set(x, "DeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
             
@@ -99,7 +100,8 @@ object libModelsQueueresultMod {
             __obj.asInstanceOf[QueueResult]
           }
           
-          extension [Self <: QueueResult](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: QueueResult] (val x: Self) extends AnyVal {
             
             inline def setParse(value: js.Object => js.Object | js.Array[js.Object]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
             

@@ -3664,7 +3664,8 @@ object distDisplayObjectsLineMod {
       __obj.asInstanceOf[LineStyleProps]
     }
     
-    extension [Self <: LineStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineStyleProps] (val x: Self) extends AnyVal {
       
       inline def setIsBillboard(value: Boolean): Self = StObject.set(x, "isBillboard", value.asInstanceOf[js.Any])
       
@@ -3751,7 +3752,8 @@ object distDisplayObjectsLineMod {
       __obj.asInstanceOf[ParsedLineStyleProps]
     }
     
-    extension [Self <: ParsedLineStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedLineStyleProps] (val x: Self) extends AnyVal {
       
       inline def setDefX(value: Double): Self = StObject.set(x, "defX", value.asInstanceOf[js.Any])
       

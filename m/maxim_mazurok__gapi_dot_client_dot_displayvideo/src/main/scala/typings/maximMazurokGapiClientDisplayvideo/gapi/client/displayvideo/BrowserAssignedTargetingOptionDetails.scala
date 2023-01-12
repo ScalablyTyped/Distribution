@@ -22,7 +22,8 @@ object BrowserAssignedTargetingOptionDetails {
     __obj.asInstanceOf[BrowserAssignedTargetingOptionDetails]
   }
   
-  extension [Self <: BrowserAssignedTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

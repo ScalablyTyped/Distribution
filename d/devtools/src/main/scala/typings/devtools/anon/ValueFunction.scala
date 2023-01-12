@@ -15,7 +15,8 @@ object ValueFunction {
     __obj.asInstanceOf[ValueFunction]
   }
   
-  extension [Self <: ValueFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueFunction] (val x: Self) extends AnyVal {
     
     inline def setValue(value: js.Function): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

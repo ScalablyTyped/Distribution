@@ -79,7 +79,8 @@ object mod {
       __obj.asInstanceOf[typings.zipkinJavascriptOpentracing.mod.zipkinJavascriptOpentracing]
     }
     
-    extension [Self <: typings.zipkinJavascriptOpentracing.mod.zipkinJavascriptOpentracing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.zipkinJavascriptOpentracing.mod.zipkinJavascriptOpentracing] (val x: Self) extends AnyVal {
       
       inline def setExtract(value: (Any, Any) => Any): Self = StObject.set(x, "extract", js.Any.fromFunction2(value))
       

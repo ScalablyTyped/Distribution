@@ -15,7 +15,8 @@ object NameStyle {
     __obj.asInstanceOf[NameStyle]
   }
   
-  extension [Self <: NameStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NameStyle] (val x: Self) extends AnyVal {
     
     inline def setNameStyle(value: OpacityNumber): Self = StObject.set(x, "nameStyle", value.asInstanceOf[js.Any])
   }

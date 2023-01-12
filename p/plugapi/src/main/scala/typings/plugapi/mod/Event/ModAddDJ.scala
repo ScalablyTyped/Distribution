@@ -17,7 +17,8 @@ object ModAddDJ {
     __obj.asInstanceOf[ModAddDJ]
   }
   
-  extension [Self <: ModAddDJ](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModAddDJ] (val x: Self) extends AnyVal {
     
     inline def setModerator(value: String): Self = StObject.set(x, "moderator", value.asInstanceOf[js.Any])
     

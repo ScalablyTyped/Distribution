@@ -32,7 +32,8 @@ object ActiveXObjectNameMap {
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  extension [Self <: ActiveXObjectNameMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
     
     inline def setInfoPathDotApplication(value: Application): Self = StObject.set(x, "InfoPath.Application", value.asInstanceOf[js.Any])
     

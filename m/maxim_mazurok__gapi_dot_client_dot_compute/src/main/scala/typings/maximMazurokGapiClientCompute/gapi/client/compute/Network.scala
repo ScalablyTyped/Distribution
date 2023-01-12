@@ -63,7 +63,8 @@ object Network {
     __obj.asInstanceOf[Network]
   }
   
-  extension [Self <: Network](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Network] (val x: Self) extends AnyVal {
     
     inline def setAutoCreateSubnetworks(value: Boolean): Self = StObject.set(x, "autoCreateSubnetworks", value.asInstanceOf[js.Any])
     

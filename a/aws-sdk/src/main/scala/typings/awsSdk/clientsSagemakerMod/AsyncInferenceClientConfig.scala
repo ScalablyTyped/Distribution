@@ -18,7 +18,8 @@ object AsyncInferenceClientConfig {
     __obj.asInstanceOf[AsyncInferenceClientConfig]
   }
   
-  extension [Self <: AsyncInferenceClientConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncInferenceClientConfig] (val x: Self) extends AnyVal {
     
     inline def setMaxConcurrentInvocationsPerInstance(value: MaxConcurrentInvocationsPerInstance): Self = StObject.set(x, "MaxConcurrentInvocationsPerInstance", value.asInstanceOf[js.Any])
     

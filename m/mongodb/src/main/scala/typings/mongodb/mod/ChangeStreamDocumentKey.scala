@@ -21,7 +21,8 @@ object ChangeStreamDocumentKey {
     __obj.asInstanceOf[ChangeStreamDocumentKey[TSchema]]
   }
   
-  extension [Self <: ChangeStreamDocumentKey[?], TSchema /* <: Document */](x: Self & ChangeStreamDocumentKey[TSchema]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeStreamDocumentKey[?], TSchema /* <: Document */] (val x: Self & ChangeStreamDocumentKey[TSchema]) extends AnyVal {
     
     inline def setDocumentKey(value: DictshardKey[TSchema]): Self = StObject.set(x, "documentKey", value.asInstanceOf[js.Any])
   }

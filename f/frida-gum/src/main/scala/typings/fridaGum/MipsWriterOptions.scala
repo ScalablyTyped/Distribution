@@ -22,7 +22,8 @@ object MipsWriterOptions {
     __obj.asInstanceOf[MipsWriterOptions]
   }
   
-  extension [Self <: MipsWriterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MipsWriterOptions] (val x: Self) extends AnyVal {
     
     inline def setPc(value: NativePointer): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
     

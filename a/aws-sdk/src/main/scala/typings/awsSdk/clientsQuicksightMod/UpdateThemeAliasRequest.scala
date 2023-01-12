@@ -38,7 +38,8 @@ object UpdateThemeAliasRequest {
     __obj.asInstanceOf[UpdateThemeAliasRequest]
   }
   
-  extension [Self <: UpdateThemeAliasRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateThemeAliasRequest] (val x: Self) extends AnyVal {
     
     inline def setAliasName(value: AliasName): Self = StObject.set(x, "AliasName", value.asInstanceOf[js.Any])
     

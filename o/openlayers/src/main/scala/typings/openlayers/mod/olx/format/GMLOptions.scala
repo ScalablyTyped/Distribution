@@ -30,7 +30,8 @@ object GMLOptions {
     __obj.asInstanceOf[GMLOptions]
   }
   
-  extension [Self <: GMLOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GMLOptions] (val x: Self) extends AnyVal {
     
     inline def setCurve(value: Boolean): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     

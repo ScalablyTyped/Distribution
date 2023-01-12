@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[AddressObject]
     }
     
-    extension [Self <: AddressObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddressObject] (val x: Self) extends AnyVal {
       
       inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object mod {
       __obj.asInstanceOf[Attachment]
     }
     
-    extension [Self <: Attachment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Buffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -208,7 +210,8 @@ object mod {
       __obj.asInstanceOf[AttachmentCommon]
     }
     
-    extension [Self <: AttachmentCommon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttachmentCommon] (val x: Self) extends AnyVal {
       
       inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
       
@@ -278,7 +281,8 @@ object mod {
       __obj.asInstanceOf[AttachmentStream]
     }
     
-    extension [Self <: AttachmentStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttachmentStream] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Stream): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -310,7 +314,8 @@ object mod {
       __obj.asInstanceOf[EmailAddress]
     }
     
-    extension [Self <: EmailAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmailAddress] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -366,7 +371,8 @@ object mod {
       __obj.asInstanceOf[MailParserOptions]
     }
     
-    extension [Self <: MailParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MailParserOptions] (val x: Self) extends AnyVal {
       
       inline def setFormatDateString(value: /* d */ js.Date => String): Self = StObject.set(x, "formatDateString", js.Any.fromFunction1(value))
       
@@ -438,7 +444,8 @@ object mod {
       __obj.asInstanceOf[MessageText]
     }
     
-    extension [Self <: MessageText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageText] (val x: Self) extends AnyVal {
       
       inline def setHtml(value: String | Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
@@ -568,7 +575,8 @@ object mod {
       __obj.asInstanceOf[ParsedMail]
     }
     
-    extension [Self <: ParsedMail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedMail] (val x: Self) extends AnyVal {
       
       inline def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
@@ -669,7 +677,8 @@ object mod {
       __obj.asInstanceOf[StructuredHeader]
     }
     
-    extension [Self <: StructuredHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StructuredHeader] (val x: Self) extends AnyVal {
       
       inline def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       

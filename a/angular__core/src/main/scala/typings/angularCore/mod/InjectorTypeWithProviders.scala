@@ -29,7 +29,8 @@ object InjectorTypeWithProviders {
     __obj.asInstanceOf[InjectorTypeWithProviders[T]]
   }
   
-  extension [Self <: InjectorTypeWithProviders[?], T](x: Self & InjectorTypeWithProviders[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InjectorTypeWithProviders[?], T] (val x: Self & InjectorTypeWithProviders[T]) extends AnyVal {
     
     inline def setNgModule(value: InjectorType[T]): Self = StObject.set(x, "ngModule", value.asInstanceOf[js.Any])
     

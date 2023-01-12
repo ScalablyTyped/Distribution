@@ -17,7 +17,8 @@ object buildFragmentsIfragmentMod {
       __obj.asInstanceOf[IFragment]
     }
     
-    extension [Self <: IFragment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFragment] (val x: Self) extends AnyVal {
       
       inline def setBuild(value: () => String): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     }

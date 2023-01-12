@@ -23,7 +23,8 @@ object AutoScalingPolicyStateChangeReason {
     __obj.asInstanceOf[AutoScalingPolicyStateChangeReason]
   }
   
-  extension [Self <: AutoScalingPolicyStateChangeReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoScalingPolicyStateChangeReason] (val x: Self) extends AnyVal {
     
     inline def setCode(value: AutoScalingPolicyStateChangeReasonCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

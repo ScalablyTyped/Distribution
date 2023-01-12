@@ -92,7 +92,8 @@ object QueryObj {
     __obj.asInstanceOf[QueryObj]
   }
   
-  extension [Self <: QueryObj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryObj] (val x: Self) extends AnyVal {
     
     inline def setAddFilterToQuery(value: (QueryObj, QueryConditions, String, QueryValue) => Unit): Self = StObject.set(x, "addFilterToQuery", js.Any.fromFunction4(value))
     

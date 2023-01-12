@@ -21,7 +21,8 @@ object ByteHeaderValue {
     __obj.asInstanceOf[ByteHeaderValue]
   }
   
-  extension [Self <: ByteHeaderValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ByteHeaderValue] (val x: Self) extends AnyVal {
     
     inline def setType(value: byte): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

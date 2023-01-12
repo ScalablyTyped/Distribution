@@ -17,7 +17,8 @@ object Paymentplans {
     __obj.asInstanceOf[Paymentplans]
   }
   
-  extension [Self <: Paymentplans](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Paymentplans] (val x: Self) extends AnyVal {
     
     inline def setPage_info(value: Currentpage): Self = StObject.set(x, "page_info", value.asInstanceOf[js.Any])
     

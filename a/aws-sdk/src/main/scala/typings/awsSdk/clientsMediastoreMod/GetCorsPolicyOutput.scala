@@ -18,7 +18,8 @@ object GetCorsPolicyOutput {
     __obj.asInstanceOf[GetCorsPolicyOutput]
   }
   
-  extension [Self <: GetCorsPolicyOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCorsPolicyOutput] (val x: Self) extends AnyVal {
     
     inline def setCorsPolicy(value: CorsPolicy): Self = StObject.set(x, "CorsPolicy", value.asInstanceOf[js.Any])
     

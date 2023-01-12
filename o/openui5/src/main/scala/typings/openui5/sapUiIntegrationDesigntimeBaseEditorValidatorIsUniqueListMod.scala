@@ -36,7 +36,8 @@ object sapUiIntegrationDesigntimeBaseEditorValidatorIsUniqueListMod extends Shor
       __obj.asInstanceOf[IsUniqueList]
     }
     
-    extension [Self <: IsUniqueList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsUniqueList] (val x: Self) extends AnyVal {
       
       inline def setValidate(value: String => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     }

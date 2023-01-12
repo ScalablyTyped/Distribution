@@ -167,7 +167,8 @@ object DropDownList {
       __obj.asInstanceOf[ActionBeginEventArgs]
     }
     
-    extension [Self <: ActionBeginEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionBeginEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -224,7 +225,8 @@ object DropDownList {
       __obj.asInstanceOf[ActionCompleteEventArgs]
     }
     
-    extension [Self <: ActionCompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionCompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -291,7 +293,8 @@ object DropDownList {
       __obj.asInstanceOf[ActionFailureEventArgs]
     }
     
-    extension [Self <: ActionFailureEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionFailureEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -356,7 +359,8 @@ object DropDownList {
       __obj.asInstanceOf[ActionSuccessEventArgs]
     }
     
-    extension [Self <: ActionSuccessEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionSuccessEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -423,7 +427,8 @@ object DropDownList {
       __obj.asInstanceOf[BeforePopupHideEventArgs]
     }
     
-    extension [Self <: BeforePopupHideEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforePopupHideEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -476,7 +481,8 @@ object DropDownList {
       __obj.asInstanceOf[BeforePopupShownEventArgs]
     }
     
-    extension [Self <: BeforePopupShownEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforePopupShownEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -533,7 +539,8 @@ object DropDownList {
       __obj.asInstanceOf[CascadeEventArgs]
     }
     
-    extension [Self <: CascadeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CascadeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -602,7 +609,8 @@ object DropDownList {
       __obj.asInstanceOf[ChangeEventArgs]
     }
     
-    extension [Self <: ChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -679,7 +687,8 @@ object DropDownList {
       __obj.asInstanceOf[CheckChangeEventArgs]
     }
     
-    extension [Self <: CheckChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -736,7 +745,8 @@ object DropDownList {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -777,7 +787,8 @@ object DropDownList {
       __obj.asInstanceOf[DataBoundEventArgs]
     }
     
-    extension [Self <: DataBoundEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataBoundEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -818,7 +829,8 @@ object DropDownList {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -883,7 +895,8 @@ object DropDownList {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setGroupBy(value: String): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
       
@@ -948,7 +961,8 @@ object DropDownList {
       __obj.asInstanceOf[FocusInEventArgs]
     }
     
-    extension [Self <: FocusInEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusInEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -985,7 +999,8 @@ object DropDownList {
       __obj.asInstanceOf[FocusOutEventArgs]
     }
     
-    extension [Self <: FocusOutEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusOutEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1343,7 +1358,8 @@ object DropDownList {
       __obj.asInstanceOf[typings.ejWebAll.ej.DropDownList.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.DropDownList.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.DropDownList.Model] (val x: Self) extends AnyVal {
       
       inline def setActionBegin(value: /* e */ ActionBeginEventArgs => Unit): Self = StObject.set(x, "actionBegin", js.Any.fromFunction1(value))
       
@@ -1650,7 +1666,8 @@ object DropDownList {
       __obj.asInstanceOf[PopupHideEventArgs]
     }
     
-    extension [Self <: PopupHideEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupHideEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1699,7 +1716,8 @@ object DropDownList {
       __obj.asInstanceOf[PopupResizeEventArgs]
     }
     
-    extension [Self <: PopupResizeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupResizeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1744,7 +1762,8 @@ object DropDownList {
       __obj.asInstanceOf[PopupResizeStartEventArgs]
     }
     
-    extension [Self <: PopupResizeStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupResizeStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1789,7 +1808,8 @@ object DropDownList {
       __obj.asInstanceOf[PopupResizeStopEventArgs]
     }
     
-    extension [Self <: PopupResizeStopEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupResizeStopEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1838,7 +1858,8 @@ object DropDownList {
       __obj.asInstanceOf[PopupShownEventArgs]
     }
     
-    extension [Self <: PopupShownEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupShownEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1895,7 +1916,8 @@ object DropDownList {
       __obj.asInstanceOf[SearchEventArgs]
     }
     
-    extension [Self <: SearchEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1964,7 +1986,8 @@ object DropDownList {
       __obj.asInstanceOf[SelectEventArgs]
     }
     
-    extension [Self <: SelectEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

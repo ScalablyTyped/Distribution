@@ -97,7 +97,8 @@ object NFSFileShareInfo {
     __obj.asInstanceOf[NFSFileShareInfo]
   }
   
-  extension [Self <: NFSFileShareInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NFSFileShareInfo] (val x: Self) extends AnyVal {
     
     inline def setAuditDestinationARN(value: AuditDestinationARN): Self = StObject.set(x, "AuditDestinationARN", value.asInstanceOf[js.Any])
     

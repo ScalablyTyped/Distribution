@@ -51,7 +51,8 @@ object typesGetCommitInputMod {
       __obj.asInstanceOf[GetCommitInput]
     }
     
-    extension [Self <: GetCommitInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetCommitInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

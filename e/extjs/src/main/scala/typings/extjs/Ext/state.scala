@@ -43,7 +43,8 @@ object state {
       __obj.asInstanceOf[ICookieProvider]
     }
     
-    extension [Self <: ICookieProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICookieProvider] (val x: Self) extends AnyVal {
       
       inline def setClear(value: /* name */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
       
@@ -95,7 +96,8 @@ object state {
       __obj.asInstanceOf[ILocalStorageProvider]
     }
     
-    extension [Self <: ILocalStorageProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILocalStorageProvider] (val x: Self) extends AnyVal {
       
       inline def setClear(value: /* name */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
       
@@ -157,7 +159,8 @@ object state {
       __obj.asInstanceOf[IProvider]
     }
     
-    extension [Self <: IProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProvider] (val x: Self) extends AnyVal {
       
       inline def setClear(value: /* name */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
       
@@ -251,7 +254,8 @@ object state {
       __obj.asInstanceOf[IStateful]
     }
     
-    extension [Self <: IStateful](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStateful] (val x: Self) extends AnyVal {
       
       inline def setAddStateEvents(value: /* events */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addStateEvents", js.Any.fromFunction1(value))
       

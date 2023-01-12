@@ -23,7 +23,8 @@ object TextValue {
     __obj.asInstanceOf[TextValue]
   }
   
-  extension [Self <: TextValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextValue] (val x: Self) extends AnyVal {
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

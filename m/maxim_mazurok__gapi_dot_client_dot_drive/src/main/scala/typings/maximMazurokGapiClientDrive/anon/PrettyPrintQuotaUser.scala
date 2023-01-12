@@ -43,7 +43,8 @@ object PrettyPrintQuotaUser {
     __obj.asInstanceOf[PrettyPrintQuotaUser]
   }
   
-  extension [Self <: PrettyPrintQuotaUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrettyPrintQuotaUser] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

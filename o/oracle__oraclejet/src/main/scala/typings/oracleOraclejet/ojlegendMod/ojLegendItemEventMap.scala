@@ -240,7 +240,8 @@ object ojLegendItemEventMap {
     __obj.asInstanceOf[ojLegendItemEventMap]
   }
   
-  extension [Self <: ojLegendItemEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojLegendItemEventMap] (val x: Self) extends AnyVal {
     
     inline def setBorderColorChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "borderColorChanged", value.asInstanceOf[js.Any])
     

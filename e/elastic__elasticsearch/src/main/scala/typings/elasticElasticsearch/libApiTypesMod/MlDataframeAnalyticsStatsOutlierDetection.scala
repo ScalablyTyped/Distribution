@@ -23,7 +23,8 @@ object MlDataframeAnalyticsStatsOutlierDetection {
     __obj.asInstanceOf[MlDataframeAnalyticsStatsOutlierDetection]
   }
   
-  extension [Self <: MlDataframeAnalyticsStatsOutlierDetection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataframeAnalyticsStatsOutlierDetection] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: MlOutlierDetectionParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

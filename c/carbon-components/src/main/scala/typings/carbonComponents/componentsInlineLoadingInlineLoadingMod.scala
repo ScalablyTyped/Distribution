@@ -73,7 +73,8 @@ object componentsInlineLoadingInlineLoadingMod {
       __obj.asInstanceOf[InlineLoading]
     }
     
-    extension [Self <: InlineLoading](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlineLoading] (val x: Self) extends AnyVal {
       
       inline def setSetState(value: String => InlineLoading): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
     }
@@ -113,7 +114,8 @@ object componentsInlineLoadingInlineLoadingMod {
       __obj.asInstanceOf[InlineLoadingOptions]
     }
     
-    extension [Self <: InlineLoadingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlineLoadingOptions] (val x: Self) extends AnyVal {
       
       inline def setClassLoadingStop(value: String): Self = StObject.set(x, "classLoadingStop", value.asInstanceOf[js.Any])
       

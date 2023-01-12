@@ -494,7 +494,8 @@ object mod {
       __obj.asInstanceOf[AsymmetricMatcher]
     }
     
-    extension [Self <: AsymmetricMatcher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsymmetricMatcher] (val x: Self) extends AnyVal {
       
       inline def setAsymmetricMatch(value: js.Function): Self = StObject.set(x, "asymmetricMatch", value.asInstanceOf[js.Any])
     }
@@ -792,7 +793,8 @@ object mod {
       __obj.asInstanceOf[MockAdapter]
     }
     
-    extension [Self <: MockAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockAdapter] (val x: Self) extends AnyVal {
       
       inline def setAdapter(value: () => AxiosAdapter): Self = StObject.set(x, "adapter", js.Any.fromFunction0(value))
       
@@ -865,7 +867,8 @@ object mod {
       __obj.asInstanceOf[MockAdapterOptions]
     }
     
-    extension [Self <: MockAdapterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockAdapterOptions] (val x: Self) extends AnyVal {
       
       inline def setDelayResponse(value: Double): Self = StObject.set(x, "delayResponse", value.asInstanceOf[js.Any])
       
@@ -891,7 +894,8 @@ object mod {
       __obj.asInstanceOf[RequestDataMatcher]
     }
     
-    extension [Self <: RequestDataMatcher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestDataMatcher] (val x: Self) extends AnyVal {
       
       inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
@@ -955,7 +959,8 @@ object mod {
       __obj.asInstanceOf[RequestHandler]
     }
     
-    extension [Self <: RequestHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestHandler] (val x: Self) extends AnyVal {
       
       inline def setAbortRequest(value: () => MockAdapter): Self = StObject.set(x, "abortRequest", js.Any.fromFunction0(value))
       

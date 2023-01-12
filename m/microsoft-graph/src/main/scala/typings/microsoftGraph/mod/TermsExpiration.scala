@@ -25,7 +25,8 @@ object TermsExpiration {
     __obj.asInstanceOf[TermsExpiration]
   }
   
-  extension [Self <: TermsExpiration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TermsExpiration] (val x: Self) extends AnyVal {
     
     inline def setFrequency(value: NullableOption[String]): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     

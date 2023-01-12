@@ -23,7 +23,8 @@ object ObjectLockRetention {
     __obj.asInstanceOf[ObjectLockRetention]
   }
   
-  extension [Self <: ObjectLockRetention](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectLockRetention] (val x: Self) extends AnyVal {
     
     inline def setMode(value: ObjectLockRetentionMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     

@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[DrawerProps]
     }
     
-    extension [Self <: DrawerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode | js.Array[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

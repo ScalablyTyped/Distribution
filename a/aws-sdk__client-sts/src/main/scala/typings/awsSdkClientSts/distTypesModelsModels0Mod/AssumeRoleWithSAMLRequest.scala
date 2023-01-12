@@ -111,7 +111,8 @@ object AssumeRoleWithSAMLRequest {
     __obj.asInstanceOf[AssumeRoleWithSAMLRequest]
   }
   
-  extension [Self <: AssumeRoleWithSAMLRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssumeRoleWithSAMLRequest] (val x: Self) extends AnyVal {
     
     inline def setDurationSeconds(value: Double): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
     

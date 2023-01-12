@@ -17,7 +17,8 @@ object TimelineTimeAxisOption {
     __obj.asInstanceOf[TimelineTimeAxisOption]
   }
   
-  extension [Self <: TimelineTimeAxisOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineTimeAxisOption] (val x: Self) extends AnyVal {
     
     inline def setScale(value: TimelineTimeAxisScaleType): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     

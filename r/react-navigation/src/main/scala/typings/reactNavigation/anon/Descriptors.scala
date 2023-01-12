@@ -39,7 +39,8 @@ object Descriptors {
     __obj.asInstanceOf[Descriptors[Options, ScreenProps]]
   }
   
-  extension [Self <: Descriptors[?, ?], Options, ScreenProps](x: Self & (Descriptors[Options, ScreenProps])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Descriptors[?, ?], Options, ScreenProps] (val x: Self & (Descriptors[Options, ScreenProps])) extends AnyVal {
     
     inline def setDescriptors(
       value: StringDictionary[

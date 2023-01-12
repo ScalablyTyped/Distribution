@@ -16,7 +16,8 @@ object IConsensusCommitBlockRequest {
     __obj.asInstanceOf[IConsensusCommitBlockRequest]
   }
   
-  extension [Self <: IConsensusCommitBlockRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConsensusCommitBlockRequest] (val x: Self) extends AnyVal {
     
     inline def setBlockId(value: js.typedarray.Uint8Array): Self = StObject.set(x, "blockId", value.asInstanceOf[js.Any])
     

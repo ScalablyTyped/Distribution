@@ -51,7 +51,8 @@ object ATVPlayerItem {
     __obj.asInstanceOf[ATVPlayerItem]
   }
   
-  extension [Self <: ATVPlayerItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATVPlayerItem] (val x: Self) extends AnyVal {
     
     inline def setAdvisoryInfo(value: js.Array[ATVPlayerAdvisoryInfo]): Self = StObject.set(x, "advisoryInfo", value.asInstanceOf[js.Any])
     

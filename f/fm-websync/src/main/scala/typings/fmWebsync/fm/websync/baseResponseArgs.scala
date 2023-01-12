@@ -35,7 +35,8 @@ object baseResponseArgs {
     __obj.asInstanceOf[baseResponseArgs]
   }
   
-  extension [Self <: baseResponseArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: baseResponseArgs] (val x: Self) extends AnyVal {
     
     inline def setClient(value: client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

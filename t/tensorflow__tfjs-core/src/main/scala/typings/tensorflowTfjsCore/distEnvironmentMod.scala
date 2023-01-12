@@ -92,7 +92,8 @@ object distEnvironmentMod {
       __obj.asInstanceOf[FlagRegistryEntry]
     }
     
-    extension [Self <: FlagRegistryEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlagRegistryEntry] (val x: Self) extends AnyVal {
       
       inline def setEvaluationFn(value: () => FlagValue | js.Promise[FlagValue]): Self = StObject.set(x, "evaluationFn", js.Any.fromFunction0(value))
       

@@ -15,7 +15,8 @@ object PersistenceUpdateDocOptions {
     __obj.asInstanceOf[PersistenceUpdateDocOptions]
   }
   
-  extension [Self <: PersistenceUpdateDocOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersistenceUpdateDocOptions] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

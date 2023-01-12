@@ -23,7 +23,8 @@ object PutResolverRulePolicyRequest {
     __obj.asInstanceOf[PutResolverRulePolicyRequest]
   }
   
-  extension [Self <: PutResolverRulePolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutResolverRulePolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

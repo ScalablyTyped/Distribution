@@ -22,7 +22,8 @@ object HintedInputContext {
     __obj.asInstanceOf[HintedInputContext[T]]
   }
   
-  extension [Self <: HintedInputContext[?], T /* <: TypeaheadModel */](x: Self & HintedInputContext[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HintedInputContext[?], T /* <: TypeaheadModel */] (val x: Self & HintedInputContext[T]) extends AnyVal {
     
     inline def setHintText(value: String): Self = StObject.set(x, "hintText", value.asInstanceOf[js.Any])
     

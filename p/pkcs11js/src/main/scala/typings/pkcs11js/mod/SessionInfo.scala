@@ -37,7 +37,8 @@ object SessionInfo {
     __obj.asInstanceOf[SessionInfo]
   }
   
-  extension [Self <: SessionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionInfo] (val x: Self) extends AnyVal {
     
     inline def setDeviceError(value: Double): Self = StObject.set(x, "deviceError", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object distLibSideEffectMod {
       __obj.asInstanceOf[SideEffectProps]
     }
     
-    extension [Self <: SideEffectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideEffectProps] (val x: Self) extends AnyVal {
       
       inline def setHandleStateChange(value: /* state */ State => Unit): Self = StObject.set(x, "handleStateChange", js.Any.fromFunction1(value))
       

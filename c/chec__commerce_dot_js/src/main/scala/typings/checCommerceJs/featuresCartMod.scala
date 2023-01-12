@@ -95,7 +95,8 @@ object featuresCartMod {
       __obj.asInstanceOf[AddUpdateResponse]
     }
     
-    extension [Self <: AddUpdateResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddUpdateResponse] (val x: Self) extends AnyVal {
       
       inline def setCart(value: typings.checCommerceJs.typesCartMod.Cart): Self = StObject.set(x, "cart", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object featuresCartMod {
       __obj.asInstanceOf[DeleteResponse]
     }
     
-    extension [Self <: DeleteResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteResponse] (val x: Self) extends AnyVal {
       
       inline def setCart_id(value: String): Self = StObject.set(x, "cart_id", value.asInstanceOf[js.Any])
       
@@ -159,7 +161,8 @@ object featuresCartMod {
       __obj.asInstanceOf[EmptyResponse]
     }
     
-    extension [Self <: EmptyResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmptyResponse] (val x: Self) extends AnyVal {
       
       inline def setCart(value: typings.checCommerceJs.typesCartMod.Cart): Self = StObject.set(x, "cart", value.asInstanceOf[js.Any])
       
@@ -191,7 +194,8 @@ object featuresCartMod {
       __obj.asInstanceOf[RemoveResponse]
     }
     
-    extension [Self <: RemoveResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveResponse] (val x: Self) extends AnyVal {
       
       inline def setCart(value: typings.checCommerceJs.typesCartMod.Cart): Self = StObject.set(x, "cart", value.asInstanceOf[js.Any])
       

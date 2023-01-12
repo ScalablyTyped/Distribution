@@ -29,7 +29,8 @@ object SketchMSLayerExportOptions {
     __obj.asInstanceOf[SketchMSLayerExportOptions]
   }
   
-  extension [Self <: SketchMSLayerExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSLayerExportOptions] (val x: Self) extends AnyVal {
     
     inline def setExportFormats(value: js.Array[Any]): Self = StObject.set(x, "exportFormats", value.asInstanceOf[js.Any])
     

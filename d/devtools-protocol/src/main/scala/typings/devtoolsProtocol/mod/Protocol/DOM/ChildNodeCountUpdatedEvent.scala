@@ -24,7 +24,8 @@ object ChildNodeCountUpdatedEvent {
     __obj.asInstanceOf[ChildNodeCountUpdatedEvent]
   }
   
-  extension [Self <: ChildNodeCountUpdatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildNodeCountUpdatedEvent] (val x: Self) extends AnyVal {
     
     inline def setChildNodeCount(value: integer): Self = StObject.set(x, "childNodeCount", value.asInstanceOf[js.Any])
     

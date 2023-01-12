@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[ApplicationConfig]
     }
     
-    extension [Self <: ApplicationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplicationConfig] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object mod {
       __obj.asInstanceOf[GetAppEnvOptions]
     }
     
-    extension [Self <: GetAppEnvOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAppEnvOptions] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -135,7 +137,8 @@ object mod {
       __obj.asInstanceOf[Service]
     }
     
-    extension [Self <: Service](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
       
       inline def setCredentials(value: Record[String, Any]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       

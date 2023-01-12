@@ -47,7 +47,8 @@ object distLibFormattersIacOutputTextUtilsMod {
       __obj.asInstanceOf[IacOutputColors]
     }
     
-    extension [Self <: IacOutputColors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IacOutputColors] (val x: Self) extends AnyVal {
       
       inline def setFailure(value: Chalk): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
       

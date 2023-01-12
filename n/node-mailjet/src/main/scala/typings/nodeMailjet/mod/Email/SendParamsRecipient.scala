@@ -18,7 +18,8 @@ object SendParamsRecipient {
     __obj.asInstanceOf[SendParamsRecipient]
   }
   
-  extension [Self <: SendParamsRecipient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendParamsRecipient] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     

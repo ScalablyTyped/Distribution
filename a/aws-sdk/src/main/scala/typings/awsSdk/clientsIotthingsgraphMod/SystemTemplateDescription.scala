@@ -28,7 +28,8 @@ object SystemTemplateDescription {
     __obj.asInstanceOf[SystemTemplateDescription]
   }
   
-  extension [Self <: SystemTemplateDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemTemplateDescription] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: DefinitionDocument): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     

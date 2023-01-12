@@ -45,7 +45,8 @@ object libCommonWorkspaceFolderMod {
       __obj.asInstanceOf[WorkspaceFolders]
     }
     
-    extension [Self <: WorkspaceFolders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkspaceFolders] (val x: Self) extends AnyVal {
       
       inline def setGetWorkspaceFolders(value: () => js.Promise[js.Array[WorkspaceFolder] | Null]): Self = StObject.set(x, "getWorkspaceFolders", js.Any.fromFunction0(value))
       

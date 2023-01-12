@@ -47,7 +47,8 @@ object SVGTransform {
     __obj.asInstanceOf[SVGTransform]
   }
   
-  extension [Self <: SVGTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGTransform] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

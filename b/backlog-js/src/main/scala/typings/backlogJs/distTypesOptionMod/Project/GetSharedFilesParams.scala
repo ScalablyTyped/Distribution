@@ -20,7 +20,8 @@ object GetSharedFilesParams {
     __obj.asInstanceOf[GetSharedFilesParams]
   }
   
-  extension [Self <: GetSharedFilesParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSharedFilesParams] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

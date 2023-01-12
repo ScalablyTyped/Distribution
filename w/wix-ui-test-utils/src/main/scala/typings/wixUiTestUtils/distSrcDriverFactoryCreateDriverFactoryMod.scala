@@ -26,7 +26,8 @@ object distSrcDriverFactoryCreateDriverFactoryMod {
       __obj.asInstanceOf[BaseDriver]
     }
     
-    extension [Self <: BaseDriver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseDriver] (val x: Self) extends AnyVal {
       
       inline def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
     }
@@ -49,7 +50,8 @@ object distSrcDriverFactoryCreateDriverFactoryMod {
       __obj.asInstanceOf[ComponentFactory]
     }
     
-    extension [Self <: ComponentFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentFactory] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: ReactElement): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

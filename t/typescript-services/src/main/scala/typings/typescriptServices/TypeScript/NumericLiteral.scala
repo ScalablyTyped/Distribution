@@ -52,7 +52,8 @@ object NumericLiteral {
     __obj.asInstanceOf[NumericLiteral]
   }
   
-  extension [Self <: NumericLiteral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumericLiteral] (val x: Self) extends AnyVal {
     
     inline def setStructuralEquals(value: (NumericLiteral, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     

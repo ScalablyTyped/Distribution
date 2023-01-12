@@ -16,7 +16,8 @@ object IScheduledTileNotificationFactory {
     __obj.asInstanceOf[IScheduledTileNotificationFactory]
   }
   
-  extension [Self <: IScheduledTileNotificationFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IScheduledTileNotificationFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateScheduledTileNotification(value: (XmlDocument, js.Date) => ScheduledTileNotification): Self = StObject.set(x, "createScheduledTileNotification", js.Any.fromFunction2(value))
   }

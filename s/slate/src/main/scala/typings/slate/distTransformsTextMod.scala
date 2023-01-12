@@ -47,7 +47,8 @@ object distTransformsTextMod {
       __obj.asInstanceOf[TextDeleteOptions]
     }
     
-    extension [Self <: TextDeleteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextDeleteOptions] (val x: Self) extends AnyVal {
       
       inline def setAt(value: Location): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object distTransformsTextMod {
       __obj.asInstanceOf[TextInsertFragmentOptions]
     }
     
-    extension [Self <: TextInsertFragmentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextInsertFragmentOptions] (val x: Self) extends AnyVal {
       
       inline def setAt(value: Location): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object distTransformsTextMod {
       __obj.asInstanceOf[TextInsertTextOptions]
     }
     
-    extension [Self <: TextInsertTextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextInsertTextOptions] (val x: Self) extends AnyVal {
       
       inline def setAt(value: Location): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
       

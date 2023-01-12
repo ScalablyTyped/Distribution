@@ -79,7 +79,8 @@ object XWordCursor {
     __obj.asInstanceOf[XWordCursor]
   }
   
-  extension [Self <: XWordCursor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XWordCursor] (val x: Self) extends AnyVal {
     
     inline def setGotoEndOfWord(value: Boolean => Boolean): Self = StObject.set(x, "gotoEndOfWord", js.Any.fromFunction1(value))
     

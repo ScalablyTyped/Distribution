@@ -17,7 +17,8 @@ object ExpectUserCallback {
     __obj.asInstanceOf[ExpectUserCallback]
   }
   
-  extension [Self <: ExpectUserCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpectUserCallback] (val x: Self) extends AnyVal {
     
     inline def setExpectUserCallback(value: Boolean): Self = StObject.set(x, "expectUserCallback", value.asInstanceOf[js.Any])
     

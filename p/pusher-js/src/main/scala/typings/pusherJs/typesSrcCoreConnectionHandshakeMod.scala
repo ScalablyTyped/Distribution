@@ -75,7 +75,8 @@ object typesSrcCoreConnectionHandshakeMod {
       __obj.asInstanceOf[Handshake]
     }
     
-    extension [Self <: Handshake](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Handshake] (val x: Self) extends AnyVal {
       
       inline def setBindListeners(value: Any): Self = StObject.set(x, "bindListeners", value.asInstanceOf[js.Any])
       

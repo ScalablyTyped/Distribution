@@ -23,7 +23,8 @@ object BatchAssociateClientDeviceWithCoreDeviceRequest {
     __obj.asInstanceOf[BatchAssociateClientDeviceWithCoreDeviceRequest]
   }
   
-  extension [Self <: BatchAssociateClientDeviceWithCoreDeviceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchAssociateClientDeviceWithCoreDeviceRequest] (val x: Self) extends AnyVal {
     
     inline def setCoreDeviceThingName(value: IoTThingName): Self = StObject.set(x, "coreDeviceThingName", value.asInstanceOf[js.Any])
     

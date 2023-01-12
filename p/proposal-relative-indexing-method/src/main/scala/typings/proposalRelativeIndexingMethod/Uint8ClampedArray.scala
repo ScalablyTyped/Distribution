@@ -20,7 +20,8 @@ object Uint8ClampedArray {
     __obj.asInstanceOf[Uint8ClampedArray]
   }
   
-  extension [Self <: Uint8ClampedArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Uint8ClampedArray] (val x: Self) extends AnyVal {
     
     inline def setAt(value: Double => js.UndefOr[Double]): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
   }

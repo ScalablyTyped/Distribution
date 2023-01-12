@@ -19,7 +19,8 @@ object VariableSet {
     __obj.asInstanceOf[VariableSet]
   }
   
-  extension [Self <: VariableSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariableSet] (val x: Self) extends AnyVal {
     
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object TextParams {
     __obj.asInstanceOf[TextParams]
   }
   
-  extension [Self <: TextParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextParams] (val x: Self) extends AnyVal {
     
     inline def setTxt(value: ImgixParamType): Self = StObject.set(x, "txt", value.asInstanceOf[js.Any])
     

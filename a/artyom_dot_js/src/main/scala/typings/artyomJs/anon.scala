@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[FatalityPromiseCallback]
     }
     
-    extension [Self <: FatalityPromiseCallback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FatalityPromiseCallback] (val x: Self) extends AnyVal {
       
       inline def setFatalityPromiseCallback(value: Any): Self = StObject.set(x, "fatalityPromiseCallback", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object CreateConnectorDefinitionVersionRequest {
     __obj.asInstanceOf[CreateConnectorDefinitionVersionRequest]
   }
   
-  extension [Self <: CreateConnectorDefinitionVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateConnectorDefinitionVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
     

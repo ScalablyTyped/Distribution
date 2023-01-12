@@ -126,7 +126,8 @@ object ITextOptions {
     __obj.asInstanceOf[ITextOptions]
   }
   
-  extension [Self <: ITextOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITextOptions] (val x: Self) extends AnyVal {
     
     inline def setCaching(value: Boolean): Self = StObject.set(x, "caching", value.asInstanceOf[js.Any])
     

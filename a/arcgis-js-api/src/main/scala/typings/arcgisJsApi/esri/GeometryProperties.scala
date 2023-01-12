@@ -36,7 +36,8 @@ object GeometryProperties {
     __obj.asInstanceOf[GeometryProperties]
   }
   
-  extension [Self <: GeometryProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeometryProperties] (val x: Self) extends AnyVal {
     
     inline def setHasM(value: Boolean): Self = StObject.set(x, "hasM", value.asInstanceOf[js.Any])
     

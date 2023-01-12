@@ -33,7 +33,8 @@ object ListFoldersResponse {
     __obj.asInstanceOf[ListFoldersResponse]
   }
   
-  extension [Self <: ListFoldersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFoldersResponse] (val x: Self) extends AnyVal {
     
     inline def setFolderSummaryList(value: FolderSummaryList): Self = StObject.set(x, "FolderSummaryList", value.asInstanceOf[js.Any])
     

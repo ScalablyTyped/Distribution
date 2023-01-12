@@ -22,7 +22,8 @@ object IBinaryMessage {
     __obj.asInstanceOf[IBinaryMessage]
   }
   
-  extension [Self <: IBinaryMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBinaryMessage] (val x: Self) extends AnyVal {
     
     inline def setBinaryData(value: Buffer): Self = StObject.set(x, "binaryData", value.asInstanceOf[js.Any])
     

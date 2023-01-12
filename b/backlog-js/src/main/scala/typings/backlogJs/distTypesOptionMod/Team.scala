@@ -21,7 +21,8 @@ object Team {
       __obj.asInstanceOf[GetTeamsParams]
     }
     
-    extension [Self <: GetTeamsParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetTeamsParams] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object Team {
       __obj.asInstanceOf[PatchTeamParams]
     }
     
-    extension [Self <: PatchTeamParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatchTeamParams] (val x: Self) extends AnyVal {
       
       inline def setMembers(value: js.Array[Double]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       

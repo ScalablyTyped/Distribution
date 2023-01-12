@@ -38,7 +38,8 @@ object DataTableCellClickEventParams {
     __obj.asInstanceOf[DataTableCellClickEventParams]
   }
   
-  extension [Self <: DataTableCellClickEventParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableCellClickEventParams] (val x: Self) extends AnyVal {
     
     inline def setCellIndex(value: Double): Self = StObject.set(x, "cellIndex", value.asInstanceOf[js.Any])
     

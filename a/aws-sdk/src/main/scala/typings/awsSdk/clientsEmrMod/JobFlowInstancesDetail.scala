@@ -78,7 +78,8 @@ object JobFlowInstancesDetail {
     __obj.asInstanceOf[JobFlowInstancesDetail]
   }
   
-  extension [Self <: JobFlowInstancesDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobFlowInstancesDetail] (val x: Self) extends AnyVal {
     
     inline def setEc2KeyName(value: XmlStringMaxLen256): Self = StObject.set(x, "Ec2KeyName", value.asInstanceOf[js.Any])
     

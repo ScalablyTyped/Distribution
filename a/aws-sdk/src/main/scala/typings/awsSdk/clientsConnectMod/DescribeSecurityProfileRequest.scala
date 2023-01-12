@@ -23,7 +23,8 @@ object DescribeSecurityProfileRequest {
     __obj.asInstanceOf[DescribeSecurityProfileRequest]
   }
   
-  extension [Self <: DescribeSecurityProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSecurityProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

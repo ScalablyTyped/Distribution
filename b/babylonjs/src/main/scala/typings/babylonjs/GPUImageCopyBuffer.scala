@@ -17,7 +17,8 @@ object GPUImageCopyBuffer {
     __obj.asInstanceOf[GPUImageCopyBuffer]
   }
   
-  extension [Self <: GPUImageCopyBuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUImageCopyBuffer] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: GPUBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
   }

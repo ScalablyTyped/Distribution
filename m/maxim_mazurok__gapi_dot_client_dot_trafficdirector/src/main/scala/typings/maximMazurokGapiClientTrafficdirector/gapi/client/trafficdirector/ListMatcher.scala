@@ -16,7 +16,8 @@ object ListMatcher {
     __obj.asInstanceOf[ListMatcher]
   }
   
-  extension [Self <: ListMatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMatcher] (val x: Self) extends AnyVal {
     
     inline def setOneOf(value: ValueMatcher): Self = StObject.set(x, "oneOf", value.asInstanceOf[js.Any])
     

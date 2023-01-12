@@ -18,7 +18,8 @@ object EndpointSelector {
     __obj.asInstanceOf[EndpointSelector]
   }
   
-  extension [Self <: EndpointSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointSelector] (val x: Self) extends AnyVal {
     
     inline def setUrlFor(value: String => String): Self = StObject.set(x, "urlFor", js.Any.fromFunction1(value))
   }

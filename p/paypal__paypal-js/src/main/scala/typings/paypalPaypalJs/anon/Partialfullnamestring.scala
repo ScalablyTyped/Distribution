@@ -16,7 +16,8 @@ object Partialfullnamestring {
     __obj.asInstanceOf[Partialfullnamestring]
   }
   
-  extension [Self <: Partialfullnamestring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialfullnamestring] (val x: Self) extends AnyVal {
     
     inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
     

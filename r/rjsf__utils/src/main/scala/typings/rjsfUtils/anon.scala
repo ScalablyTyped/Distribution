@@ -41,7 +41,8 @@ object anon {
       __obj.asInstanceOf[AddButton[T, F]]
     }
     
-    extension [Self <: AddButton[?, ?], T, F](x: Self & (AddButton[T, F])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddButton[?, ?], T, F] (val x: Self & (AddButton[T, F])) extends AnyVal {
       
       inline def setAddButton(value: ComponentType[IconButtonProps[T, F]]): Self = StObject.set(x, "AddButton", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object anon {
       __obj.asInstanceOf[Blob]
     }
     
-    extension [Self <: Blob](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blob] (val x: Self) extends AnyVal {
       
       inline def setBlob(value: typings.std.Blob): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object anon {
       __obj.asInstanceOf[EnumOptions]
     }
     
-    extension [Self <: EnumOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnumOptions] (val x: Self) extends AnyVal {
       
       inline def setEnumOptions(value: js.Array[EnumOptionsType]): Self = StObject.set(x, "enumOptions", value.asInstanceOf[js.Any])
       
@@ -116,7 +119,8 @@ object anon {
       __obj.asInstanceOf[GenericObjectTypedisabled]
     }
     
-    extension [Self <: GenericObjectTypedisabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericObjectTypedisabled] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

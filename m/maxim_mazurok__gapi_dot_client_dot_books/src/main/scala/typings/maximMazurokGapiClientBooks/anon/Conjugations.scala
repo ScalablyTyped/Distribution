@@ -29,7 +29,8 @@ object Conjugations {
     __obj.asInstanceOf[Conjugations]
   }
   
-  extension [Self <: Conjugations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Conjugations] (val x: Self) extends AnyVal {
     
     inline def setConjugations(value: js.Array[Type]): Self = StObject.set(x, "conjugations", value.asInstanceOf[js.Any])
     

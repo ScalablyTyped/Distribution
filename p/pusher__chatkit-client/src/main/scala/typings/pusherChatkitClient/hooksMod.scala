@@ -25,7 +25,8 @@ object hooksMod {
       __obj.asInstanceOf[RoomParams]
     }
     
-    extension [Self <: RoomParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoomParams] (val x: Self) extends AnyVal {
       
       inline def setRoomId(value: String): Self = StObject.set(x, "roomId", value.asInstanceOf[js.Any])
     }
@@ -46,7 +47,8 @@ object hooksMod {
       __obj.asInstanceOf[UserAndRoomParams]
     }
     
-    extension [Self <: UserAndRoomParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserAndRoomParams] (val x: Self) extends AnyVal {
       
       inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
@@ -65,7 +67,8 @@ object hooksMod {
       __obj.asInstanceOf[UserParams]
     }
     
-    extension [Self <: UserParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserParams] (val x: Self) extends AnyVal {
       
       inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
@@ -86,7 +89,8 @@ object hooksMod {
       __obj.asInstanceOf[UserPresenceState]
     }
     
-    extension [Self <: UserPresenceState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserPresenceState] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: PusherUserPresence): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       

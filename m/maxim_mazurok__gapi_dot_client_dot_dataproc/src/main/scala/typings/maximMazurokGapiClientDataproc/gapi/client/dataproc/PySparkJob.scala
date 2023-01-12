@@ -45,7 +45,8 @@ object PySparkJob {
     __obj.asInstanceOf[PySparkJob]
   }
   
-  extension [Self <: PySparkJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PySparkJob] (val x: Self) extends AnyVal {
     
     inline def setArchiveUris(value: js.Array[String]): Self = StObject.set(x, "archiveUris", value.asInstanceOf[js.Any])
     

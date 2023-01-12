@@ -29,7 +29,8 @@ object jQRangeSliderScale {
     __obj.asInstanceOf[jQRangeSliderScale]
   }
   
-  extension [Self <: jQRangeSliderScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: jQRangeSliderScale] (val x: Self) extends AnyVal {
     
     inline def setFirst(value: (/* min */ Double, /* max */ Double) => Double): Self = StObject.set(x, "first", js.Any.fromFunction2(value))
     

@@ -49,7 +49,8 @@ object foxxGraphqlMod {
       __obj.asInstanceOf[GraphQLModule]
     }
     
-    extension [Self <: GraphQLModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphQLModule] (val x: Self) extends AnyVal {
       
       inline def setExecute(value: Any): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object foxxGraphqlMod {
       __obj.asInstanceOf[GraphQLOptions]
     }
     
-    extension [Self <: GraphQLOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphQLOptions] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

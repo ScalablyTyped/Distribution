@@ -49,7 +49,8 @@ object Paginator {
     __obj.asInstanceOf[Paginator[T]]
   }
   
-  extension [Self <: Paginator[?], T](x: Self & Paginator[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Paginator[?], T] (val x: Self & Paginator[T]) extends AnyVal {
     
     inline def setHasNextPage(value: Boolean): Self = StObject.set(x, "hasNextPage", value.asInstanceOf[js.Any])
     

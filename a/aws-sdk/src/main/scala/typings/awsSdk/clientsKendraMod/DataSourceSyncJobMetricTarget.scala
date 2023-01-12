@@ -23,7 +23,8 @@ object DataSourceSyncJobMetricTarget {
     __obj.asInstanceOf[DataSourceSyncJobMetricTarget]
   }
   
-  extension [Self <: DataSourceSyncJobMetricTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceSyncJobMetricTarget] (val x: Self) extends AnyVal {
     
     inline def setDataSourceId(value: DataSourceId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
     

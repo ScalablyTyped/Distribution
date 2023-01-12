@@ -53,7 +53,8 @@ object PlusWebviewWebviewExtraOptions {
     __obj.asInstanceOf[PlusWebviewWebviewExtraOptions]
   }
   
-  extension [Self <: PlusWebviewWebviewExtraOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusWebviewWebviewExtraOptions] (val x: Self) extends AnyVal {
     
     inline def setAcceleration(value: auto): Self = StObject.set(x, "acceleration", value.asInstanceOf[js.Any])
     

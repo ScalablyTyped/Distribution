@@ -109,7 +109,8 @@ object mod {
       __obj.asInstanceOf[BranchObject]
     }
     
-    extension [Self <: BranchObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BranchObject] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String | `false`): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -200,7 +201,8 @@ object mod {
       __obj.asInstanceOf[Commit]
     }
     
-    extension [Self <: Commit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Commit] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: Email): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -273,7 +275,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -337,7 +340,8 @@ object mod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setBranch(value: BranchObject): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       
@@ -464,7 +468,8 @@ object mod {
       __obj.asInstanceOf[GlobalConfig]
     }
     
-    extension [Self <: GlobalConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalConfig] (val x: Self) extends AnyVal {
       
       inline def setBranches(value: js.Array[BranchSpec] | BranchSpec): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       
@@ -504,7 +509,8 @@ object mod {
       __obj.asInstanceOf[LastRelease]
     }
     
-    extension [Self <: LastRelease](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LastRelease] (val x: Self) extends AnyVal {
       
       inline def setGitHead(value: String): Self = StObject.set(x, "gitHead", value.asInstanceOf[js.Any])
       
@@ -552,7 +558,8 @@ object mod {
       __obj.asInstanceOf[NextRelease]
     }
     
-    extension [Self <: NextRelease](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NextRelease] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -689,7 +696,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBranches(value: js.Array[BranchSpec] | BranchSpec): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       
@@ -797,7 +805,8 @@ object mod {
       __obj.asInstanceOf[Release]
     }
     
-    extension [Self <: Release](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Release] (val x: Self) extends AnyVal {
       
       inline def setGitHead(value: String): Self = StObject.set(x, "gitHead", value.asInstanceOf[js.Any])
       

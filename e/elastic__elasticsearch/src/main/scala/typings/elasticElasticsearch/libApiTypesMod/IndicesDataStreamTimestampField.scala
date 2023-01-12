@@ -15,7 +15,8 @@ object IndicesDataStreamTimestampField {
     __obj.asInstanceOf[IndicesDataStreamTimestampField]
   }
   
-  extension [Self <: IndicesDataStreamTimestampField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesDataStreamTimestampField] (val x: Self) extends AnyVal {
     
     inline def setName(value: Field): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

@@ -40,7 +40,8 @@ object libUsePopoverMod {
       __obj.asInstanceOf[UsePopoverHook]
     }
     
-    extension [Self <: UsePopoverHook](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UsePopoverHook] (val x: Self) extends AnyVal {
       
       inline def setClosePopover(value: () => Unit): Self = StObject.set(x, "closePopover", js.Any.fromFunction0(value))
       

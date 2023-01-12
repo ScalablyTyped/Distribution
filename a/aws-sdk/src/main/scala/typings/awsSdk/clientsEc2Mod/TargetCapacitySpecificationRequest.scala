@@ -38,7 +38,8 @@ object TargetCapacitySpecificationRequest {
     __obj.asInstanceOf[TargetCapacitySpecificationRequest]
   }
   
-  extension [Self <: TargetCapacitySpecificationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetCapacitySpecificationRequest] (val x: Self) extends AnyVal {
     
     inline def setDefaultTargetCapacityType(value: DefaultTargetCapacityType): Self = StObject.set(x, "DefaultTargetCapacityType", value.asInstanceOf[js.Any])
     

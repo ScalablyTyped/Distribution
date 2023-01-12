@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setLoaders(value: Loaders): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object mod {
       __obj.asInstanceOf[OptionsBase]
     }
     
-    extension [Self <: OptionsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsBase] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,8 @@ object mod {
       __obj.asInstanceOf[OptionsSync]
     }
     
-    extension [Self <: OptionsSync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsSync] (val x: Self) extends AnyVal {
       
       inline def setLoaders(value: LoadersSync): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
       

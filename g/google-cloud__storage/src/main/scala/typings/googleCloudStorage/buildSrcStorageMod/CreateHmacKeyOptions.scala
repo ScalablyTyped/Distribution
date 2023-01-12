@@ -17,7 +17,8 @@ object CreateHmacKeyOptions {
     __obj.asInstanceOf[CreateHmacKeyOptions]
   }
   
-  extension [Self <: CreateHmacKeyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateHmacKeyOptions] (val x: Self) extends AnyVal {
     
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     

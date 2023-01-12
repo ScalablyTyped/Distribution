@@ -18,7 +18,8 @@ object ValidationSummary {
     __obj.asInstanceOf[ValidationSummary]
   }
   
-  extension [Self <: ValidationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationSummary] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: String | JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

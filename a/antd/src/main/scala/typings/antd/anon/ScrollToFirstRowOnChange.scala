@@ -15,7 +15,8 @@ object ScrollToFirstRowOnChange {
     __obj.asInstanceOf[ScrollToFirstRowOnChange]
   }
   
-  extension [Self <: ScrollToFirstRowOnChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollToFirstRowOnChange] (val x: Self) extends AnyVal {
     
     inline def setScrollToFirstRowOnChange(value: Boolean): Self = StObject.set(x, "scrollToFirstRowOnChange", value.asInstanceOf[js.Any])
     

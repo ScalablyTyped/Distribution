@@ -28,7 +28,8 @@ object LoRaWANGatewayVersion {
     __obj.asInstanceOf[LoRaWANGatewayVersion]
   }
   
-  extension [Self <: LoRaWANGatewayVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoRaWANGatewayVersion] (val x: Self) extends AnyVal {
     
     inline def setModel(value: Model): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object distEsmSrcInterfacesTokenDetailsMod {
       __obj.asInstanceOf[SubscriptionOptions]
     }
     
-    extension [Self <: SubscriptionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriptionOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object distEsmSrcInterfacesTokenDetailsMod {
       __obj.asInstanceOf[TokenDetails]
     }
     
-    extension [Self <: TokenDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenDetails] (val x: Self) extends AnyVal {
       
       inline def setCreateTime(value: Double): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
       

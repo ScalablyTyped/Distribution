@@ -44,7 +44,8 @@ object CoreServicesShim {
     __obj.asInstanceOf[CoreServicesShim]
   }
   
-  extension [Self <: CoreServicesShim](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreServicesShim] (val x: Self) extends AnyVal {
     
     inline def setDumpMemory(value: Any => String): Self = StObject.set(x, "dumpMemory", js.Any.fromFunction1(value))
     

@@ -18,7 +18,8 @@ object GetCenterLocationSuccCbOptions {
     __obj.asInstanceOf[GetCenterLocationSuccCbOptions]
   }
   
-  extension [Self <: GetCenterLocationSuccCbOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCenterLocationSuccCbOptions] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: LocationBaseOptions => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }

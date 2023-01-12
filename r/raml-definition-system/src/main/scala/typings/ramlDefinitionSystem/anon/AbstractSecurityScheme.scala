@@ -185,7 +185,8 @@ object AbstractSecurityScheme {
     __obj.asInstanceOf[AbstractSecurityScheme]
   }
   
-  extension [Self <: AbstractSecurityScheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractSecurityScheme] (val x: Self) extends AnyVal {
     
     inline def setAbstractSecurityScheme(value: PropertiesDescribedBy): Self = StObject.set(x, "AbstractSecurityScheme", value.asInstanceOf[js.Any])
     

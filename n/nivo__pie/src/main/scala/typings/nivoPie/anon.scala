@@ -56,7 +56,8 @@ object anon {
       __obj.asInstanceOf[ActiveId[RawDatum]]
     }
     
-    extension [Self <: ActiveId[?], RawDatum](x: Self & ActiveId[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveId[?], RawDatum] (val x: Self & ActiveId[RawDatum]) extends AnyVal {
       
       inline def setActiveId(value: DatumId): Self = StObject.set(x, "activeId", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object anon {
       __obj.asInstanceOf[ArcGenerator[RawDatum]]
     }
     
-    extension [Self <: ArcGenerator[?], RawDatum](x: Self & ArcGenerator[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcGenerator[?], RawDatum] (val x: Self & ArcGenerator[RawDatum]) extends AnyVal {
       
       inline def setArcGenerator(value: typings.nivoArcs.distTypesTypesMod.ArcGenerator): Self = StObject.set(x, "arcGenerator", value.asInstanceOf[js.Any])
       
@@ -146,7 +148,8 @@ object anon {
       __obj.asInstanceOf[Box]
     }
     
-    extension [Self <: Box](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Box] (val x: Self) extends AnyVal {
       
       inline def setBox(value: Height): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
       
@@ -197,7 +200,8 @@ object anon {
       __obj.asInstanceOf[CenterX[RawDatum]]
     }
     
-    extension [Self <: CenterX[?], RawDatum](x: Self & CenterX[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CenterX[?], RawDatum] (val x: Self & CenterX[RawDatum]) extends AnyVal {
       
       inline def setArcGenerator(value: typings.nivoArcs.distTypesTypesMod.ArcGenerator): Self = StObject.set(x, "arcGenerator", value.asInstanceOf[js.Any])
       
@@ -238,7 +242,8 @@ object anon {
       __obj.asInstanceOf[Data[RawDatum]]
     }
     
-    extension [Self <: Data[?], RawDatum /* <: MayHaveLabel */](x: Self & Data[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data[?], RawDatum /* <: MayHaveLabel */] (val x: Self & Data[RawDatum]) extends AnyVal {
       
       inline def setData(value: js.Array[RawDatum]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -257,7 +262,8 @@ object anon {
       __obj.asInstanceOf[DataArray[RawDatum]]
     }
     
-    extension [Self <: DataArray[?], RawDatum](x: Self & DataArray[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataArray[?], RawDatum] (val x: Self & DataArray[RawDatum]) extends AnyVal {
       
       inline def setData(value: js.Array[Omit[ComputedDatum[RawDatum], arc]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -281,7 +287,8 @@ object anon {
       __obj.asInstanceOf[DataWithArc[RawDatum]]
     }
     
-    extension [Self <: DataWithArc[?], RawDatum](x: Self & DataWithArc[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataWithArc[?], RawDatum] (val x: Self & DataWithArc[RawDatum]) extends AnyVal {
       
       inline def setDataWithArc(value: js.Array[Omit[ComputedDatum[RawDatum], fill]]): Self = StObject.set(x, "dataWithArc", value.asInstanceOf[js.Any])
       
@@ -304,7 +311,8 @@ object anon {
       __obj.asInstanceOf[Datum[RawDatum]]
     }
     
-    extension [Self <: Datum[?], RawDatum](x: Self & Datum[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Datum[?], RawDatum] (val x: Self & Datum[RawDatum]) extends AnyVal {
       
       inline def setDatum(value: ComputedDatum[RawDatum]): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
     }
@@ -323,7 +331,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -350,7 +359,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -377,7 +387,8 @@ object anon {
       __obj.asInstanceOf[InnerRadius[RawDatum]]
     }
     
-    extension [Self <: InnerRadius[?], RawDatum](x: Self & InnerRadius[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerRadius[?], RawDatum] (val x: Self & InnerRadius[RawDatum]) extends AnyVal {
       
       inline def setData(value: js.Array[Omit[ComputedDatum[RawDatum], arc]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -400,7 +411,8 @@ object anon {
       __obj.asInstanceOf[Theme]
     }
     
-    extension [Self <: Theme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }

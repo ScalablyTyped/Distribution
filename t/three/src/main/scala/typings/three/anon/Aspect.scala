@@ -18,7 +18,8 @@ object Aspect {
     __obj.asInstanceOf[Aspect]
   }
   
-  extension [Self <: Aspect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Aspect] (val x: Self) extends AnyVal {
     
     inline def setAspect(value: IUniform[Any]): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
     

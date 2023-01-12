@@ -23,7 +23,8 @@ object Triage {
     __obj.asInstanceOf[Triage]
   }
   
-  extension [Self <: Triage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Triage] (val x: Self) extends AnyVal {
     
     inline def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object Calculation {
     __obj.asInstanceOf[Calculation]
   }
   
-  extension [Self <: Calculation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Calculation] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[ClientCount]
     }
     
-    extension [Self <: ClientCount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientCount] (val x: Self) extends AnyVal {
       
       inline def setClientCount(value: Any): Self = StObject.set(x, "clientCount", value.asInstanceOf[js.Any])
       

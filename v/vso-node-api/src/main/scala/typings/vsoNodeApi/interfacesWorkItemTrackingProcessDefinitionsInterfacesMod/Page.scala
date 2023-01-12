@@ -80,7 +80,8 @@ object Page {
     __obj.asInstanceOf[Page]
   }
   
-  extension [Self <: Page](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
     
     inline def setContribution(value: WitContribution): Self = StObject.set(x, "contribution", value.asInstanceOf[js.Any])
     

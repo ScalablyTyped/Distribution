@@ -26,7 +26,8 @@ object distSrcIgherkinoptionsMod {
       __obj.asInstanceOf[IGherkinOptions]
     }
     
-    extension [Self <: IGherkinOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGherkinOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultDialect(value: String): Self = StObject.set(x, "defaultDialect", value.asInstanceOf[js.Any])
       

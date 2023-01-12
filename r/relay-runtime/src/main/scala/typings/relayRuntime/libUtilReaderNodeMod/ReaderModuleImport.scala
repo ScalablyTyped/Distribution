@@ -26,7 +26,8 @@ object ReaderModuleImport {
     __obj.asInstanceOf[ReaderModuleImport]
   }
   
-  extension [Self <: ReaderModuleImport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReaderModuleImport] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[ReaderArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

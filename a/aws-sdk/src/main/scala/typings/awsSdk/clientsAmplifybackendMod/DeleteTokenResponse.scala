@@ -18,7 +18,8 @@ object DeleteTokenResponse {
     __obj.asInstanceOf[DeleteTokenResponse]
   }
   
-  extension [Self <: DeleteTokenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTokenResponse] (val x: Self) extends AnyVal {
     
     inline def setIsSuccess(value: boolean): Self = StObject.set(x, "IsSuccess", value.asInstanceOf[js.Any])
     

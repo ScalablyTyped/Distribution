@@ -47,7 +47,8 @@ object MidiSynthesizer {
     __obj.asInstanceOf[MidiSynthesizer]
   }
   
-  extension [Self <: MidiSynthesizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MidiSynthesizer] (val x: Self) extends AnyVal {
     
     inline def setAudioDevice(value: DeviceInformation): Self = StObject.set(x, "audioDevice", value.asInstanceOf[js.Any])
     

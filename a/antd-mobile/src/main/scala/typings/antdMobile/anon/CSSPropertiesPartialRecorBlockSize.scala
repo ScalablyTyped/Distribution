@@ -9977,7 +9977,8 @@ object CSSPropertiesPartialRecorBlockSize {
     __obj.asInstanceOf[CSSPropertiesPartialRecorBlockSize]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorBlockSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorBlockSize] (val x: Self) extends AnyVal {
     
     inline def `set--border-width`(value: String): Self = StObject.set(x, "--border-width", value.asInstanceOf[js.Any])
     

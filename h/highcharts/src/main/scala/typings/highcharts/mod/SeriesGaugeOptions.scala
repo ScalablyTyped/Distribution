@@ -100,7 +100,8 @@ object SeriesGaugeOptions {
     __obj.asInstanceOf[SeriesGaugeOptions]
   }
   
-  extension [Self <: SeriesGaugeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesGaugeOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Double | Null | PointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

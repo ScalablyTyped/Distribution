@@ -42,7 +42,8 @@ object DescribeDBInstancesMessagDBInstanceIdentifier {
     __obj.asInstanceOf[DescribeDBInstancesMessagDBInstanceIdentifier]
   }
   
-  extension [Self <: DescribeDBInstancesMessagDBInstanceIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDBInstancesMessagDBInstanceIdentifier] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

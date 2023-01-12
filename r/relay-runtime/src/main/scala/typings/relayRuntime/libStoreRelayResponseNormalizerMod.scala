@@ -45,7 +45,8 @@ object libStoreRelayResponseNormalizerMod {
       __obj.asInstanceOf[NormalizationOptions]
     }
     
-    extension [Self <: NormalizationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizationOptions] (val x: Self) extends AnyVal {
       
       inline def setGetDataID(value: (/* fieldValue */ StringDictionary[Any], /* typeName */ String) => Any): Self = StObject.set(x, "getDataID", js.Any.fromFunction2(value))
       

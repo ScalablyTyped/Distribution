@@ -44,7 +44,8 @@ object Validation {
       __obj.asInstanceOf[RegisteredConverter]
     }
     
-    extension [Self <: RegisteredConverter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisteredConverter] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object Validation {
       __obj.asInstanceOf[RegisteredValidator]
     }
     
-    extension [Self <: RegisteredValidator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisteredValidator] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

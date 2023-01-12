@@ -43,7 +43,8 @@ object IRawCell {
     __obj.asInstanceOf[IRawCell]
   }
   
-  extension [Self <: IRawCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRawCell] (val x: Self) extends AnyVal {
     
     inline def setAttachments(value: IAttachments): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     

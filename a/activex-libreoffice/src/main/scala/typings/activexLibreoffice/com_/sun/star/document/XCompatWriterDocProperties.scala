@@ -19,7 +19,8 @@ object XCompatWriterDocProperties {
     __obj.asInstanceOf[XCompatWriterDocProperties]
   }
   
-  extension [Self <: XCompatWriterDocProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCompatWriterDocProperties] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: String): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     

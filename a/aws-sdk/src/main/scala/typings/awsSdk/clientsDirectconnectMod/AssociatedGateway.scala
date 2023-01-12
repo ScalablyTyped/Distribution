@@ -33,7 +33,8 @@ object AssociatedGateway {
     __obj.asInstanceOf[AssociatedGateway]
   }
   
-  extension [Self <: AssociatedGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociatedGateway] (val x: Self) extends AnyVal {
     
     inline def setId(value: GatewayIdentifier): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

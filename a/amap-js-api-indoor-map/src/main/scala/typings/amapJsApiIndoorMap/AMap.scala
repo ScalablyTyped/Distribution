@@ -209,7 +209,8 @@ object AMap {
         __obj.asInstanceOf[Building]
       }
       
-      extension [Self <: Building](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Building] (val x: Self) extends AnyVal {
         
         inline def setFloor(value: Double): Self = StObject.set(x, "floor", value.asInstanceOf[js.Any])
         
@@ -248,7 +249,8 @@ object AMap {
         __obj.asInstanceOf[EventMap]
       }
       
-      extension [Self <: EventMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
         
         inline def setClick(value: MouseEvent[click]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
         
@@ -286,7 +288,8 @@ object AMap {
         __obj.asInstanceOf[FloorDetails]
       }
       
-      extension [Self <: FloorDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FloorDetails] (val x: Self) extends AnyVal {
         
         inline def setFloor_indexs(value: js.Array[Double]): Self = StObject.set(x, "floor_indexs", value.asInstanceOf[js.Any])
         
@@ -355,7 +358,8 @@ object AMap {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setAlaysShow(value: Boolean): Self = StObject.set(x, "alaysShow", value.asInstanceOf[js.Any])
         
@@ -427,7 +431,8 @@ object AMap {
         __obj.asInstanceOf[SearchErrorResult]
       }
       
-      extension [Self <: SearchErrorResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchErrorResult] (val x: Self) extends AnyVal {
         
         inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
@@ -478,7 +483,8 @@ object AMap {
         __obj.asInstanceOf[SearchSuccessResult]
       }
       
-      extension [Self <: SearchSuccessResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchSuccessResult] (val x: Self) extends AnyVal {
         
         inline def setBuilding(value: Building): Self = StObject.set(x, "building", value.asInstanceOf[js.Any])
         
@@ -534,7 +540,8 @@ object AMap {
         __obj.asInstanceOf[Shop]
       }
       
-      extension [Self <: Shop](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Shop] (val x: Self) extends AnyVal {
         
         inline def setBuilding_id(value: String): Self = StObject.set(x, "building_id", value.asInstanceOf[js.Any])
         

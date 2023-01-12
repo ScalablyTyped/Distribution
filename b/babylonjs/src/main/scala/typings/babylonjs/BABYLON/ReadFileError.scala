@@ -18,7 +18,8 @@ object ReadFileError {
     __obj.asInstanceOf[ReadFileError]
   }
   
-  extension [Self <: ReadFileError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadFileError] (val x: Self) extends AnyVal {
     
     inline def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
   }

@@ -24,7 +24,8 @@ object IntrospectionInputObjectType {
     __obj.asInstanceOf[IntrospectionInputObjectType]
   }
   
-  extension [Self <: IntrospectionInputObjectType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntrospectionInputObjectType] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

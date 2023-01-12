@@ -86,7 +86,8 @@ object distCommonjsMatchHashtagMatchMod {
       __obj.asInstanceOf[HashtagMatchConfig]
     }
     
-    extension [Self <: HashtagMatchConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashtagMatchConfig] (val x: Self) extends AnyVal {
       
       inline def setHashtag(value: String): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
       

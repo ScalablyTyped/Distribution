@@ -38,7 +38,8 @@ object VideoListResponse {
     __obj.asInstanceOf[VideoListResponse]
   }
   
-  extension [Self <: VideoListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoListResponse] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object SentenceResult {
     __obj.asInstanceOf[SentenceResult]
   }
   
-  extension [Self <: SentenceResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SentenceResult] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

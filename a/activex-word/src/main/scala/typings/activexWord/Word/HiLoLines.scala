@@ -43,7 +43,8 @@ object HiLoLines {
     __obj.asInstanceOf[HiLoLines]
   }
   
-  extension [Self <: HiLoLines](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HiLoLines] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

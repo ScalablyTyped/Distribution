@@ -70,7 +70,8 @@ object PullFunctionExpressionDecl {
     __obj.asInstanceOf[PullFunctionExpressionDecl]
   }
   
-  extension [Self <: PullFunctionExpressionDecl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullFunctionExpressionDecl] (val x: Self) extends AnyVal {
     
     inline def setFunctionExpressionName(value: Any): Self = StObject.set(x, "functionExpressionName", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DeleteSafetyRuleRequest {
     __obj.asInstanceOf[DeleteSafetyRuleRequest]
   }
   
-  extension [Self <: DeleteSafetyRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSafetyRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setSafetyRuleArn(value: string): Self = StObject.set(x, "SafetyRuleArn", value.asInstanceOf[js.Any])
   }

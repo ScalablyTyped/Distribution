@@ -448,7 +448,8 @@ object sapUiWebcFioriIllustratedMessageMod {
       __obj.asInstanceOf[IllustratedMessageSettings]
     }
     
-    extension [Self <: IllustratedMessageSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IllustratedMessageSettings] (val x: Self) extends AnyVal {
       
       inline def setActions(
         value: js.Array[IButton] | IButton | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

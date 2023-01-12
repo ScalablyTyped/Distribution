@@ -168,7 +168,8 @@ object BufferController {
     __obj.asInstanceOf[BufferController]
   }
   
-  extension [Self <: BufferController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BufferController] (val x: Self) extends AnyVal {
     
     inline def setAddBufferListener(value: Any): Self = StObject.set(x, "addBufferListener", value.asInstanceOf[js.Any])
     

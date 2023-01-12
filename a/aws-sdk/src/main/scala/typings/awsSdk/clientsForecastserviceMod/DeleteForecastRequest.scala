@@ -18,7 +18,8 @@ object DeleteForecastRequest {
     __obj.asInstanceOf[DeleteForecastRequest]
   }
   
-  extension [Self <: DeleteForecastRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteForecastRequest] (val x: Self) extends AnyVal {
     
     inline def setForecastArn(value: Arn): Self = StObject.set(x, "ForecastArn", value.asInstanceOf[js.Any])
   }

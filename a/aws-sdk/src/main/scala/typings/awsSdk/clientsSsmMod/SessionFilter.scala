@@ -23,7 +23,8 @@ object SessionFilter {
     __obj.asInstanceOf[SessionFilter]
   }
   
-  extension [Self <: SessionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionFilter] (val x: Self) extends AnyVal {
     
     inline def setKey(value: SessionFilterKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object DescribeRemediationExceptionsRequest {
     __obj.asInstanceOf[DescribeRemediationExceptionsRequest]
   }
   
-  extension [Self <: DescribeRemediationExceptionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRemediationExceptionsRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
     

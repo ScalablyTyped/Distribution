@@ -25,7 +25,8 @@ object RowProps {
     __obj.asInstanceOf[RowProps]
   }
   
-  extension [Self <: RowProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowProps] (val x: Self) extends AnyVal {
     
     inline def setDates(value: js.Array[js.Date]): Self = StObject.set(x, "dates", value.asInstanceOf[js.Any])
     

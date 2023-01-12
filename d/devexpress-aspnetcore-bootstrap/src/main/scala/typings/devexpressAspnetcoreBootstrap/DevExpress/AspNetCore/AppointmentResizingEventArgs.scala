@@ -32,7 +32,8 @@ object AppointmentResizingEventArgs {
     __obj.asInstanceOf[AppointmentResizingEventArgs]
   }
   
-  extension [Self <: AppointmentResizingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppointmentResizingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAllow(value: Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object EnumValuesAdminResponseForReview {
     __obj.asInstanceOf[EnumValuesAdminResponseForReview]
   }
   
-  extension [Self <: EnumValuesAdminResponseForReview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesAdminResponseForReview] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: AdminResponseForReview): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

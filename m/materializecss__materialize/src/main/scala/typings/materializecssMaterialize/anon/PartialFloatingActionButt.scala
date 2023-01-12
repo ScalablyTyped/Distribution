@@ -24,7 +24,8 @@ object PartialFloatingActionButt {
     __obj.asInstanceOf[PartialFloatingActionButt]
   }
   
-  extension [Self <: PartialFloatingActionButt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFloatingActionButt] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: top | right | buttom | left): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

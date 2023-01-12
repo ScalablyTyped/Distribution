@@ -41,7 +41,8 @@ object Bag {
     __obj.asInstanceOf[Bag]
   }
   
-  extension [Self <: Bag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bag] (val x: Self) extends AnyVal {
     
     inline def setChunkInfos(value: js.Array[ChunkInfo]): Self = StObject.set(x, "chunkInfos", value.asInstanceOf[js.Any])
     

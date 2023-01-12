@@ -430,7 +430,8 @@ object BigQuery {
     }
   }
   
-  extension [Self <: BigQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BigQuery] (val x: Self) extends AnyVal {
     
     inline def setDatasets(value: DatasetsCollection): Self = StObject.set(x, "Datasets", value.asInstanceOf[js.Any])
     
@@ -580,7 +581,8 @@ object BigQuery {
         __obj.asInstanceOf[BigQueryModelTraining]
       }
       
-      extension [Self <: BigQueryModelTraining](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BigQueryModelTraining] (val x: Self) extends AnyVal {
         
         inline def setCurrentIteration(value: Double): Self = StObject.set(x, "currentIteration", value.asInstanceOf[js.Any])
         
@@ -613,7 +615,8 @@ object BigQuery {
         __obj.asInstanceOf[BigtableColumn]
       }
       
-      extension [Self <: BigtableColumn](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BigtableColumn] (val x: Self) extends AnyVal {
         
         inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
         
@@ -660,7 +663,8 @@ object BigQuery {
         __obj.asInstanceOf[BigtableColumnFamily]
       }
       
-      extension [Self <: BigtableColumnFamily](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BigtableColumnFamily] (val x: Self) extends AnyVal {
         
         inline def setColumns(value: js.Array[BigtableColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
         
@@ -701,7 +705,8 @@ object BigQuery {
         __obj.asInstanceOf[BigtableOptions]
       }
       
-      extension [Self <: BigtableOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BigtableOptions] (val x: Self) extends AnyVal {
         
         inline def setColumnFamilies(value: js.Array[BigtableColumnFamily]): Self = StObject.set(x, "columnFamilies", value.asInstanceOf[js.Any])
         
@@ -738,7 +743,8 @@ object BigQuery {
         __obj.asInstanceOf[BqmlIterationResult]
       }
       
-      extension [Self <: BqmlIterationResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BqmlIterationResult] (val x: Self) extends AnyVal {
         
         inline def setDurationMs(value: String): Self = StObject.set(x, "durationMs", value.asInstanceOf[js.Any])
         
@@ -779,7 +785,8 @@ object BigQuery {
         __obj.asInstanceOf[BqmlTrainingRun]
       }
       
-      extension [Self <: BqmlTrainingRun](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BqmlTrainingRun] (val x: Self) extends AnyVal {
         
         inline def setIterationResults(value: js.Array[BqmlIterationResult]): Self = StObject.set(x, "iterationResults", value.asInstanceOf[js.Any])
         
@@ -828,7 +835,8 @@ object BigQuery {
         __obj.asInstanceOf[BqmlTrainingRunTrainingOptions]
       }
       
-      extension [Self <: BqmlTrainingRunTrainingOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BqmlTrainingRunTrainingOptions] (val x: Self) extends AnyVal {
         
         inline def setEarlyStop(value: Boolean): Self = StObject.set(x, "earlyStop", value.asInstanceOf[js.Any])
         
@@ -879,7 +887,8 @@ object BigQuery {
         __obj.asInstanceOf[Clustering]
       }
       
-      extension [Self <: Clustering](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Clustering] (val x: Self) extends AnyVal {
         
         inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -910,7 +919,8 @@ object BigQuery {
         __obj.asInstanceOf[CsvOptions]
       }
       
-      extension [Self <: CsvOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CsvOptions] (val x: Self) extends AnyVal {
         
         inline def setAllowJaggedRows(value: Boolean): Self = StObject.set(x, "allowJaggedRows", value.asInstanceOf[js.Any])
         
@@ -975,7 +985,8 @@ object BigQuery {
         __obj.asInstanceOf[Dataset]
       }
       
-      extension [Self <: Dataset](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Dataset] (val x: Self) extends AnyVal {
         
         inline def setAccess(value: js.Array[DatasetAccess]): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
         
@@ -1060,7 +1071,8 @@ object BigQuery {
         __obj.asInstanceOf[DatasetAccess]
       }
       
-      extension [Self <: DatasetAccess](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DatasetAccess] (val x: Self) extends AnyVal {
         
         inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
         
@@ -1109,7 +1121,8 @@ object BigQuery {
         __obj.asInstanceOf[DatasetList]
       }
       
-      extension [Self <: DatasetList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DatasetList] (val x: Self) extends AnyVal {
         
         inline def setDatasets(value: js.Array[DatasetListDatasets]): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
         
@@ -1152,7 +1165,8 @@ object BigQuery {
         __obj.asInstanceOf[DatasetListDatasets]
       }
       
-      extension [Self <: DatasetListDatasets](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DatasetListDatasets] (val x: Self) extends AnyVal {
         
         inline def setDatasetReference(value: DatasetReference): Self = StObject.set(x, "datasetReference", value.asInstanceOf[js.Any])
         
@@ -1193,7 +1207,8 @@ object BigQuery {
         __obj.asInstanceOf[DatasetReference]
       }
       
-      extension [Self <: DatasetReference](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DatasetReference] (val x: Self) extends AnyVal {
         
         inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
         
@@ -1220,7 +1235,8 @@ object BigQuery {
         __obj.asInstanceOf[DestinationTableProperties]
       }
       
-      extension [Self <: DestinationTableProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DestinationTableProperties] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -1247,7 +1263,8 @@ object BigQuery {
         __obj.asInstanceOf[EncryptionConfiguration]
       }
       
-      extension [Self <: EncryptionConfiguration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EncryptionConfiguration] (val x: Self) extends AnyVal {
         
         inline def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
         
@@ -1272,7 +1289,8 @@ object BigQuery {
         __obj.asInstanceOf[ErrorProto]
       }
       
-      extension [Self <: ErrorProto](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ErrorProto] (val x: Self) extends AnyVal {
         
         inline def setDebugInfo(value: String): Self = StObject.set(x, "debugInfo", value.asInstanceOf[js.Any])
         
@@ -1359,7 +1377,8 @@ object BigQuery {
         __obj.asInstanceOf[ExplainQueryStage]
       }
       
-      extension [Self <: ExplainQueryStage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExplainQueryStage] (val x: Self) extends AnyVal {
         
         inline def setCompletedParallelInputs(value: String): Self = StObject.set(x, "completedParallelInputs", value.asInstanceOf[js.Any])
         
@@ -1496,7 +1515,8 @@ object BigQuery {
         __obj.asInstanceOf[ExplainQueryStep]
       }
       
-      extension [Self <: ExplainQueryStep](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExplainQueryStep] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1541,7 +1561,8 @@ object BigQuery {
         __obj.asInstanceOf[ExternalDataConfiguration]
       }
       
-      extension [Self <: ExternalDataConfiguration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExternalDataConfiguration] (val x: Self) extends AnyVal {
         
         inline def setAutodetect(value: Boolean): Self = StObject.set(x, "autodetect", value.asInstanceOf[js.Any])
         
@@ -1624,7 +1645,8 @@ object BigQuery {
         __obj.asInstanceOf[GetQueryResultsResponse]
       }
       
-      extension [Self <: GetQueryResultsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GetQueryResultsResponse] (val x: Self) extends AnyVal {
         
         inline def setCacheHit(value: Boolean): Self = StObject.set(x, "cacheHit", value.asInstanceOf[js.Any])
         
@@ -1693,7 +1715,8 @@ object BigQuery {
         __obj.asInstanceOf[GetServiceAccountResponse]
       }
       
-      extension [Self <: GetServiceAccountResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GetServiceAccountResponse] (val x: Self) extends AnyVal {
         
         inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
         
@@ -1718,7 +1741,8 @@ object BigQuery {
         __obj.asInstanceOf[GoogleSheetsOptions]
       }
       
-      extension [Self <: GoogleSheetsOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GoogleSheetsOptions] (val x: Self) extends AnyVal {
         
         inline def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
         
@@ -1757,7 +1781,8 @@ object BigQuery {
         __obj.asInstanceOf[Job]
       }
       
-      extension [Self <: Job](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Job] (val x: Self) extends AnyVal {
         
         inline def setConfiguration(value: JobConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
         
@@ -1810,7 +1835,8 @@ object BigQuery {
         __obj.asInstanceOf[JobCancelResponse]
       }
       
-      extension [Self <: JobCancelResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JobCancelResponse] (val x: Self) extends AnyVal {
         
         inline def setJob(value: Job): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
         
@@ -1847,7 +1873,8 @@ object BigQuery {
         __obj.asInstanceOf[JobConfiguration]
       }
       
-      extension [Self <: JobConfiguration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JobConfiguration] (val x: Self) extends AnyVal {
         
         inline def setCopy(value: JobConfigurationTableCopy): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
         
@@ -1906,7 +1933,8 @@ object BigQuery {
         __obj.asInstanceOf[JobConfigurationExtract]
       }
       
-      extension [Self <: JobConfigurationExtract](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JobConfigurationExtract] (val x: Self) extends AnyVal {
         
         inline def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
         
@@ -2003,7 +2031,8 @@ object BigQuery {
         __obj.asInstanceOf[JobConfigurationLoad]
       }
       
-      extension [Self <: JobConfigurationLoad](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JobConfigurationLoad] (val x: Self) extends AnyVal {
         
         inline def setAllowJaggedRows(value: Boolean): Self = StObject.set(x, "allowJaggedRows", value.asInstanceOf[js.Any])
         
@@ -2174,7 +2203,8 @@ object BigQuery {
         __obj.asInstanceOf[JobConfigurationQuery]
       }
       
-      extension [Self <: JobConfigurationQuery](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JobConfigurationQuery] (val x: Self) extends AnyVal {
         
         inline def setAllowLargeResults(value: Boolean): Self = StObject.set(x, "allowLargeResults", value.asInstanceOf[js.Any])
         
@@ -2293,7 +2323,8 @@ object BigQuery {
         __obj.asInstanceOf[JobConfigurationTableCopy]
       }
       
-      extension [Self <: JobConfigurationTableCopy](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JobConfigurationTableCopy] (val x: Self) extends AnyVal {
         
         inline def setCreateDisposition(value: String): Self = StObject.set(x, "createDisposition", value.asInstanceOf[js.Any])
         
@@ -2340,7 +2371,8 @@ object BigQuery {
         __obj.asInstanceOf[JobList]
       }
       
-      extension [Self <: JobList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JobList] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -2389,7 +2421,8 @@ object BigQuery {
         __obj.asInstanceOf[JobListJobs]
       }
       
-      extension [Self <: JobListJobs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JobListJobs] (val x: Self) extends AnyVal {
         
         inline def setConfiguration(value: JobConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
         
@@ -2444,7 +2477,8 @@ object BigQuery {
         __obj.asInstanceOf[JobReference]
       }
       
-      extension [Self <: JobReference](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JobReference] (val x: Self) extends AnyVal {
         
         inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
         
@@ -2495,7 +2529,8 @@ object BigQuery {
         __obj.asInstanceOf[JobStatistics]
       }
       
-      extension [Self <: JobStatistics](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JobStatistics] (val x: Self) extends AnyVal {
         
         inline def setCompletionRatio(value: Double): Self = StObject.set(x, "completionRatio", value.asInstanceOf[js.Any])
         
@@ -2608,7 +2643,8 @@ object BigQuery {
         __obj.asInstanceOf[JobStatistics2]
       }
       
-      extension [Self <: JobStatistics2](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JobStatistics2] (val x: Self) extends AnyVal {
         
         inline def setBillingTier(value: Double): Self = StObject.set(x, "billingTier", value.asInstanceOf[js.Any])
         
@@ -2723,7 +2759,8 @@ object BigQuery {
         __obj.asInstanceOf[JobStatistics2ReservationUsage]
       }
       
-      extension [Self <: JobStatistics2ReservationUsage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JobStatistics2ReservationUsage] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -2754,7 +2791,8 @@ object BigQuery {
         __obj.asInstanceOf[JobStatistics3]
       }
       
-      extension [Self <: JobStatistics3](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JobStatistics3] (val x: Self) extends AnyVal {
         
         inline def setBadRecords(value: String): Self = StObject.set(x, "badRecords", value.asInstanceOf[js.Any])
         
@@ -2791,7 +2829,8 @@ object BigQuery {
         __obj.asInstanceOf[JobStatistics4]
       }
       
-      extension [Self <: JobStatistics4](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JobStatistics4] (val x: Self) extends AnyVal {
         
         inline def setDestinationUriFileCounts(value: js.Array[String]): Self = StObject.set(x, "destinationUriFileCounts", value.asInstanceOf[js.Any])
         
@@ -2818,7 +2857,8 @@ object BigQuery {
         __obj.asInstanceOf[JobStatisticsReservationUsage]
       }
       
-      extension [Self <: JobStatisticsReservationUsage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JobStatisticsReservationUsage] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -2845,7 +2885,8 @@ object BigQuery {
         __obj.asInstanceOf[JobStatus]
       }
       
-      extension [Self <: JobStatus](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JobStatus] (val x: Self) extends AnyVal {
         
         inline def setErrorResult(value: ErrorProto): Self = StObject.set(x, "errorResult", value.asInstanceOf[js.Any])
         
@@ -2876,7 +2917,8 @@ object BigQuery {
         __obj.asInstanceOf[MaterializedViewDefinition]
       }
       
-      extension [Self <: MaterializedViewDefinition](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MaterializedViewDefinition] (val x: Self) extends AnyVal {
         
         inline def setLastRefreshTime(value: String): Self = StObject.set(x, "lastRefreshTime", value.asInstanceOf[js.Any])
         
@@ -2901,7 +2943,8 @@ object BigQuery {
         __obj.asInstanceOf[ModelDefinition]
       }
       
-      extension [Self <: ModelDefinition](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ModelDefinition] (val x: Self) extends AnyVal {
         
         inline def setModelOptions(value: ModelDefinitionModelOptions): Self = StObject.set(x, "modelOptions", value.asInstanceOf[js.Any])
         
@@ -2930,7 +2973,8 @@ object BigQuery {
         __obj.asInstanceOf[ModelDefinitionModelOptions]
       }
       
-      extension [Self <: ModelDefinitionModelOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ModelDefinitionModelOptions] (val x: Self) extends AnyVal {
         
         inline def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
         
@@ -2967,7 +3011,8 @@ object BigQuery {
         __obj.asInstanceOf[ProjectList]
       }
       
-      extension [Self <: ProjectList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProjectList] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -3012,7 +3057,8 @@ object BigQuery {
         __obj.asInstanceOf[ProjectListProjects]
       }
       
-      extension [Self <: ProjectListProjects](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProjectListProjects] (val x: Self) extends AnyVal {
         
         inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
         
@@ -3047,7 +3093,8 @@ object BigQuery {
         __obj.asInstanceOf[ProjectReference]
       }
       
-      extension [Self <: ProjectReference](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProjectReference] (val x: Self) extends AnyVal {
         
         inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
         
@@ -3070,7 +3117,8 @@ object BigQuery {
         __obj.asInstanceOf[QueryParameter]
       }
       
-      extension [Self <: QueryParameter](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: QueryParameter] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -3101,7 +3149,8 @@ object BigQuery {
         __obj.asInstanceOf[QueryParameterType]
       }
       
-      extension [Self <: QueryParameterType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: QueryParameterType] (val x: Self) extends AnyVal {
         
         inline def setArrayType(value: QueryParameterType): Self = StObject.set(x, "arrayType", value.asInstanceOf[js.Any])
         
@@ -3134,7 +3183,8 @@ object BigQuery {
         __obj.asInstanceOf[QueryParameterTypeStructTypes]
       }
       
-      extension [Self <: QueryParameterTypeStructTypes](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: QueryParameterTypeStructTypes] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -3165,7 +3215,8 @@ object BigQuery {
         __obj.asInstanceOf[QueryParameterValue]
       }
       
-      extension [Self <: QueryParameterValue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: QueryParameterValue] (val x: Self) extends AnyVal {
         
         inline def setArrayValues(value: js.Array[QueryParameterValue]): Self = StObject.set(x, "arrayValues", value.asInstanceOf[js.Any])
         
@@ -3216,7 +3267,8 @@ object BigQuery {
         __obj.asInstanceOf[QueryRequest]
       }
       
-      extension [Self <: QueryRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: QueryRequest] (val x: Self) extends AnyVal {
         
         inline def setDefaultDataset(value: DatasetReference): Self = StObject.set(x, "defaultDataset", value.asInstanceOf[js.Any])
         
@@ -3301,7 +3353,8 @@ object BigQuery {
         __obj.asInstanceOf[QueryResponse]
       }
       
-      extension [Self <: QueryResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: QueryResponse] (val x: Self) extends AnyVal {
         
         inline def setCacheHit(value: Boolean): Self = StObject.set(x, "cacheHit", value.asInstanceOf[js.Any])
         
@@ -3372,7 +3425,8 @@ object BigQuery {
         __obj.asInstanceOf[QueryTimelineSample]
       }
       
-      extension [Self <: QueryTimelineSample](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: QueryTimelineSample] (val x: Self) extends AnyVal {
         
         inline def setActiveUnits(value: String): Self = StObject.set(x, "activeUnits", value.asInstanceOf[js.Any])
         
@@ -3409,7 +3463,8 @@ object BigQuery {
         __obj.asInstanceOf[RangePartitioning]
       }
       
-      extension [Self <: RangePartitioning](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RangePartitioning] (val x: Self) extends AnyVal {
         
         inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
         
@@ -3436,7 +3491,8 @@ object BigQuery {
         __obj.asInstanceOf[RangePartitioningRange]
       }
       
-      extension [Self <: RangePartitioningRange](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RangePartitioningRange] (val x: Self) extends AnyVal {
         
         inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
@@ -3467,7 +3523,8 @@ object BigQuery {
         __obj.asInstanceOf[RoutineReference]
       }
       
-      extension [Self <: RoutineReference](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RoutineReference] (val x: Self) extends AnyVal {
         
         inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
         
@@ -3498,7 +3555,8 @@ object BigQuery {
         __obj.asInstanceOf[Streamingbuffer]
       }
       
-      extension [Self <: Streamingbuffer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Streamingbuffer] (val x: Self) extends AnyVal {
         
         inline def setEstimatedBytes(value: String): Self = StObject.set(x, "estimatedBytes", value.asInstanceOf[js.Any])
         
@@ -3579,7 +3637,8 @@ object BigQuery {
         __obj.asInstanceOf[Table]
       }
       
-      extension [Self <: Table](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
         
         inline def setClustering(value: Clustering): Self = StObject.set(x, "clustering", value.asInstanceOf[js.Any])
         
@@ -3706,7 +3765,8 @@ object BigQuery {
         __obj.asInstanceOf[TableCell]
       }
       
-      extension [Self <: TableCell](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableCell] (val x: Self) extends AnyVal {
         
         inline def setV(value: js.Object): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
         
@@ -3733,7 +3793,8 @@ object BigQuery {
         __obj.asInstanceOf[TableDataInsertAllRequest]
       }
       
-      extension [Self <: TableDataInsertAllRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableDataInsertAllRequest] (val x: Self) extends AnyVal {
         
         inline def setIgnoreUnknownValues(value: Boolean): Self = StObject.set(x, "ignoreUnknownValues", value.asInstanceOf[js.Any])
         
@@ -3772,7 +3833,8 @@ object BigQuery {
         __obj.asInstanceOf[TableDataInsertAllRequestRows]
       }
       
-      extension [Self <: TableDataInsertAllRequestRows](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableDataInsertAllRequestRows] (val x: Self) extends AnyVal {
         
         inline def setInsertId(value: String): Self = StObject.set(x, "insertId", value.asInstanceOf[js.Any])
         
@@ -3797,7 +3859,8 @@ object BigQuery {
         __obj.asInstanceOf[TableDataInsertAllResponse]
       }
       
-      extension [Self <: TableDataInsertAllResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableDataInsertAllResponse] (val x: Self) extends AnyVal {
         
         inline def setInsertErrors(value: js.Array[TableDataInsertAllResponseInsertErrors]): Self = StObject.set(x, "insertErrors", value.asInstanceOf[js.Any])
         
@@ -3824,7 +3887,8 @@ object BigQuery {
         __obj.asInstanceOf[TableDataInsertAllResponseInsertErrors]
       }
       
-      extension [Self <: TableDataInsertAllResponseInsertErrors](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableDataInsertAllResponseInsertErrors] (val x: Self) extends AnyVal {
         
         inline def setErrors(value: js.Array[ErrorProto]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
         
@@ -3857,7 +3921,8 @@ object BigQuery {
         __obj.asInstanceOf[TableDataList]
       }
       
-      extension [Self <: TableDataList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableDataList] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -3904,7 +3969,8 @@ object BigQuery {
         __obj.asInstanceOf[TableFieldSchema]
       }
       
-      extension [Self <: TableFieldSchema](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableFieldSchema] (val x: Self) extends AnyVal {
         
         inline def setCategories(value: TableFieldSchemaCategories): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
         
@@ -3945,7 +4011,8 @@ object BigQuery {
         __obj.asInstanceOf[TableFieldSchemaCategories]
       }
       
-      extension [Self <: TableFieldSchemaCategories](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableFieldSchemaCategories] (val x: Self) extends AnyVal {
         
         inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
         
@@ -3974,7 +4041,8 @@ object BigQuery {
         __obj.asInstanceOf[TableList]
       }
       
-      extension [Self <: TableList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableList] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -4031,7 +4099,8 @@ object BigQuery {
         __obj.asInstanceOf[TableListTables]
       }
       
-      extension [Self <: TableListTables](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableListTables] (val x: Self) extends AnyVal {
         
         inline def setClustering(value: Clustering): Self = StObject.set(x, "clustering", value.asInstanceOf[js.Any])
         
@@ -4090,7 +4159,8 @@ object BigQuery {
         __obj.asInstanceOf[TableListTablesView]
       }
       
-      extension [Self <: TableListTablesView](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableListTablesView] (val x: Self) extends AnyVal {
         
         inline def setUseLegacySql(value: Boolean): Self = StObject.set(x, "useLegacySql", value.asInstanceOf[js.Any])
         
@@ -4113,7 +4183,8 @@ object BigQuery {
         __obj.asInstanceOf[TableReference]
       }
       
-      extension [Self <: TableReference](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableReference] (val x: Self) extends AnyVal {
         
         inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
         
@@ -4140,7 +4211,8 @@ object BigQuery {
         __obj.asInstanceOf[TableRow]
       }
       
-      extension [Self <: TableRow](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableRow] (val x: Self) extends AnyVal {
         
         inline def setF(value: js.Array[TableCell]): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
         
@@ -4161,7 +4233,8 @@ object BigQuery {
         __obj.asInstanceOf[TableSchema]
       }
       
-      extension [Self <: TableSchema](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableSchema] (val x: Self) extends AnyVal {
         
         inline def setFields(value: js.Array[TableFieldSchema]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -4188,7 +4261,8 @@ object BigQuery {
         __obj.asInstanceOf[TimePartitioning]
       }
       
-      extension [Self <: TimePartitioning](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TimePartitioning] (val x: Self) extends AnyVal {
         
         inline def setExpirationMs(value: String): Self = StObject.set(x, "expirationMs", value.asInstanceOf[js.Any])
         
@@ -4221,7 +4295,8 @@ object BigQuery {
         __obj.asInstanceOf[UserDefinedFunctionResource]
       }
       
-      extension [Self <: UserDefinedFunctionResource](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserDefinedFunctionResource] (val x: Self) extends AnyVal {
         
         inline def setInlineCode(value: String): Self = StObject.set(x, "inlineCode", value.asInstanceOf[js.Any])
         
@@ -4248,7 +4323,8 @@ object BigQuery {
         __obj.asInstanceOf[ViewDefinition]
       }
       
-      extension [Self <: ViewDefinition](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ViewDefinition] (val x: Self) extends AnyVal {
         
         inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
         

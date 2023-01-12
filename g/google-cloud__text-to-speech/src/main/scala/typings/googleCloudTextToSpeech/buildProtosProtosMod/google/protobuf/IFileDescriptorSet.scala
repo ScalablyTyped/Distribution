@@ -17,7 +17,8 @@ object IFileDescriptorSet {
     __obj.asInstanceOf[IFileDescriptorSet]
   }
   
-  extension [Self <: IFileDescriptorSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFileDescriptorSet] (val x: Self) extends AnyVal {
     
     inline def setFile(value: js.Array[IFileDescriptorProto]): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object StoreImageTaskResult {
     __obj.asInstanceOf[StoreImageTaskResult]
   }
   
-  extension [Self <: StoreImageTaskResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreImageTaskResult] (val x: Self) extends AnyVal {
     
     inline def setAmiId(value: String): Self = StObject.set(x, "AmiId", value.asInstanceOf[js.Any])
     

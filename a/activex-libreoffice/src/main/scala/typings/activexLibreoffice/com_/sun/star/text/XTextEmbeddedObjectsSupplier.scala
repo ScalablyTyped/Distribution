@@ -31,7 +31,8 @@ object XTextEmbeddedObjectsSupplier {
     __obj.asInstanceOf[XTextEmbeddedObjectsSupplier]
   }
   
-  extension [Self <: XTextEmbeddedObjectsSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextEmbeddedObjectsSupplier] (val x: Self) extends AnyVal {
     
     inline def setEmbeddedObjects(value: XNameAccess): Self = StObject.set(x, "EmbeddedObjects", value.asInstanceOf[js.Any])
     

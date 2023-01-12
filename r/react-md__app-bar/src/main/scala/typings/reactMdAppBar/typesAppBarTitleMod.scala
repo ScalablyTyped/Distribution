@@ -39,7 +39,8 @@ object typesAppBarTitleMod {
       __obj.asInstanceOf[AppBarTitleProps]
     }
     
-    extension [Self <: AppBarTitleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppBarTitleProps] (val x: Self) extends AnyVal {
       
       inline def setKeyline(value: Boolean): Self = StObject.set(x, "keyline", value.asInstanceOf[js.Any])
       

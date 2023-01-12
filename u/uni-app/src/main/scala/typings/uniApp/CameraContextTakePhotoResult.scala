@@ -18,7 +18,8 @@ object CameraContextTakePhotoResult {
     __obj.asInstanceOf[CameraContextTakePhotoResult]
   }
   
-  extension [Self <: CameraContextTakePhotoResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraContextTakePhotoResult] (val x: Self) extends AnyVal {
     
     inline def setTempImagePath(value: String): Self = StObject.set(x, "tempImagePath", value.asInstanceOf[js.Any])
     

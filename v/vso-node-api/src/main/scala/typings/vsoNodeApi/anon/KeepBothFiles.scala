@@ -26,7 +26,8 @@ object KeepBothFiles {
     __obj.asInstanceOf[KeepBothFiles]
   }
   
-  extension [Self <: KeepBothFiles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeepBothFiles] (val x: Self) extends AnyVal {
     
     inline def setKeepBothFiles(value: scala.Double): Self = StObject.set(x, "keepBothFiles", value.asInstanceOf[js.Any])
     

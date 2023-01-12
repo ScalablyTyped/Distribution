@@ -56,7 +56,8 @@ object MXHTMLWriter60 {
     __obj.asInstanceOf[MXHTMLWriter60]
   }
   
-  extension [Self <: MXHTMLWriter60](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MXHTMLWriter60] (val x: Self) extends AnyVal {
     
     inline def setByteOrderMark(value: Boolean): Self = StObject.set(x, "byteOrderMark", value.asInstanceOf[js.Any])
     

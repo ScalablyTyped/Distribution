@@ -53,7 +53,8 @@ object ListActionsRequest {
     __obj.asInstanceOf[ListActionsRequest]
   }
   
-  extension [Self <: ListActionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListActionsRequest] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: String256): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     

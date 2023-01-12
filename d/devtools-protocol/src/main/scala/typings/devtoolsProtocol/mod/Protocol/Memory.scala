@@ -17,7 +17,8 @@ object Memory {
       __obj.asInstanceOf[GetAllTimeSamplingProfileResponse]
     }
     
-    extension [Self <: GetAllTimeSamplingProfileResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAllTimeSamplingProfileResponse] (val x: Self) extends AnyVal {
       
       inline def setProfile(value: SamplingProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     }
@@ -34,7 +35,8 @@ object Memory {
       __obj.asInstanceOf[GetBrowserSamplingProfileResponse]
     }
     
-    extension [Self <: GetBrowserSamplingProfileResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetBrowserSamplingProfileResponse] (val x: Self) extends AnyVal {
       
       inline def setProfile(value: SamplingProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     }
@@ -55,7 +57,8 @@ object Memory {
       __obj.asInstanceOf[GetDOMCountersResponse]
     }
     
-    extension [Self <: GetDOMCountersResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetDOMCountersResponse] (val x: Self) extends AnyVal {
       
       inline def setDocuments(value: integer): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
       
@@ -76,7 +79,8 @@ object Memory {
       __obj.asInstanceOf[GetSamplingProfileResponse]
     }
     
-    extension [Self <: GetSamplingProfileResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetSamplingProfileResponse] (val x: Self) extends AnyVal {
       
       inline def setProfile(value: SamplingProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     }
@@ -112,7 +116,8 @@ object Memory {
       __obj.asInstanceOf[Module]
     }
     
-    extension [Self <: Module](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
       
       inline def setBaseAddress(value: String): Self = StObject.set(x, "baseAddress", value.asInstanceOf[js.Any])
       
@@ -149,7 +154,8 @@ object Memory {
       __obj.asInstanceOf[SamplingProfile]
     }
     
-    extension [Self <: SamplingProfile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SamplingProfile] (val x: Self) extends AnyVal {
       
       inline def setModules(value: js.Array[Module]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       
@@ -185,7 +191,8 @@ object Memory {
       __obj.asInstanceOf[SamplingProfileNode]
     }
     
-    extension [Self <: SamplingProfileNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SamplingProfileNode] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -211,7 +218,8 @@ object Memory {
       __obj.asInstanceOf[SetPressureNotificationsSuppressedRequest]
     }
     
-    extension [Self <: SetPressureNotificationsSuppressedRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetPressureNotificationsSuppressedRequest] (val x: Self) extends AnyVal {
       
       inline def setSuppressed(value: Boolean): Self = StObject.set(x, "suppressed", value.asInstanceOf[js.Any])
     }
@@ -231,7 +239,8 @@ object Memory {
       __obj.asInstanceOf[SimulatePressureNotificationRequest]
     }
     
-    extension [Self <: SimulatePressureNotificationRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimulatePressureNotificationRequest] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: PressureLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     }
@@ -256,7 +265,8 @@ object Memory {
       __obj.asInstanceOf[StartSamplingRequest]
     }
     
-    extension [Self <: StartSamplingRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartSamplingRequest] (val x: Self) extends AnyVal {
       
       inline def setSamplingInterval(value: integer): Self = StObject.set(x, "samplingInterval", value.asInstanceOf[js.Any])
       

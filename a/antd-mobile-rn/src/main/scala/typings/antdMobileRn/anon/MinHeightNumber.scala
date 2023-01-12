@@ -15,7 +15,8 @@ object MinHeightNumber {
     __obj.asInstanceOf[MinHeightNumber]
   }
   
-  extension [Self <: MinHeightNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinHeightNumber] (val x: Self) extends AnyVal {
     
     inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
   }

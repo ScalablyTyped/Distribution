@@ -44,7 +44,8 @@ object Protocols {
     __obj.asInstanceOf[Protocols]
   }
   
-  extension [Self <: Protocols](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Protocols] (val x: Self) extends AnyVal {
     
     inline def setBaseUriParameters(value: Domain): Self = StObject.set(x, "baseUriParameters", value.asInstanceOf[js.Any])
     

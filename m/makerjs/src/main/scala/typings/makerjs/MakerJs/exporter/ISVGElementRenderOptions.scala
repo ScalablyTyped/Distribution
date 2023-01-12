@@ -36,7 +36,8 @@ object ISVGElementRenderOptions {
     __obj.asInstanceOf[ISVGElementRenderOptions]
   }
   
-  extension [Self <: ISVGElementRenderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISVGElementRenderOptions] (val x: Self) extends AnyVal {
     
     inline def setCssStyle(value: String): Self = StObject.set(x, "cssStyle", value.asInstanceOf[js.Any])
     

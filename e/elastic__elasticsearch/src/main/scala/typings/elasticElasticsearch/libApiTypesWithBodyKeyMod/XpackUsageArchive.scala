@@ -17,7 +17,8 @@ object XpackUsageArchive {
     __obj.asInstanceOf[XpackUsageArchive]
   }
   
-  extension [Self <: XpackUsageArchive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageArchive] (val x: Self) extends AnyVal {
     
     inline def setIndices_count(value: long): Self = StObject.set(x, "indices_count", value.asInstanceOf[js.Any])
   }

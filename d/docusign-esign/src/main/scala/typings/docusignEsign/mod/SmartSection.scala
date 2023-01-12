@@ -534,7 +534,8 @@ object SmartSection {
     __obj.asInstanceOf[SmartSection]
   }
   
-  extension [Self <: SmartSection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartSection] (val x: Self) extends AnyVal {
     
     inline def setAnchorAllowWhiteSpaceInCharacters(value: String): Self = StObject.set(x, "anchorAllowWhiteSpaceInCharacters", value.asInstanceOf[js.Any])
     

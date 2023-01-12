@@ -24,7 +24,8 @@ object ScriptableTooltipContext {
     __obj.asInstanceOf[ScriptableTooltipContext[TType]]
   }
   
-  extension [Self <: ScriptableTooltipContext[?], TType /* <: ChartType */](x: Self & ScriptableTooltipContext[TType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptableTooltipContext[?], TType /* <: ChartType */] (val x: Self & ScriptableTooltipContext[TType]) extends AnyVal {
     
     inline def setChart(value: UnionToIntersection[Chart[TType, DefaultDataPoint[TType], Any]]): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     

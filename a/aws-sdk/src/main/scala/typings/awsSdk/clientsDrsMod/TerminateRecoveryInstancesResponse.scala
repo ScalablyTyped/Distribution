@@ -18,7 +18,8 @@ object TerminateRecoveryInstancesResponse {
     __obj.asInstanceOf[TerminateRecoveryInstancesResponse]
   }
   
-  extension [Self <: TerminateRecoveryInstancesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminateRecoveryInstancesResponse] (val x: Self) extends AnyVal {
     
     inline def setJob(value: Job): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     

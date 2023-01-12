@@ -20,7 +20,8 @@ object RcsEndUserMessageAvailableEventArgs {
     __obj.asInstanceOf[RcsEndUserMessageAvailableEventArgs]
   }
   
-  extension [Self <: RcsEndUserMessageAvailableEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RcsEndUserMessageAvailableEventArgs] (val x: Self) extends AnyVal {
     
     inline def setIsMessageAvailable(value: Boolean): Self = StObject.set(x, "isMessageAvailable", value.asInstanceOf[js.Any])
     

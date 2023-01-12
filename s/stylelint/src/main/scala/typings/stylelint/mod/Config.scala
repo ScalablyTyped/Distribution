@@ -53,7 +53,8 @@ object Config {
     __obj.asInstanceOf[Config]
   }
   
-  extension [Self <: Config](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
     
     inline def setCodeProcessors(value: js.Array[CodeProcessor]): Self = StObject.set(x, "codeProcessors", value.asInstanceOf[js.Any])
     

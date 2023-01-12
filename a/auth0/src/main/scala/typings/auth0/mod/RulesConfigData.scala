@@ -18,7 +18,8 @@ object RulesConfigData {
     __obj.asInstanceOf[RulesConfigData]
   }
   
-  extension [Self <: RulesConfigData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RulesConfigData] (val x: Self) extends AnyVal {
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

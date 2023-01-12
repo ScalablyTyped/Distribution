@@ -40,7 +40,8 @@ object FormFields {
     __obj.asInstanceOf[FormFields]
   }
   
-  extension [Self <: FormFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormFields] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Range, WdFieldType) => FormField): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

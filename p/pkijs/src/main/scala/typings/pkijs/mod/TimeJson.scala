@@ -18,7 +18,8 @@ object TimeJson {
     __obj.asInstanceOf[TimeJson]
   }
   
-  extension [Self <: TimeJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeJson] (val x: Self) extends AnyVal {
     
     inline def setType(value: TimeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

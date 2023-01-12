@@ -43,7 +43,8 @@ object DescribeScheduledActionsType {
     __obj.asInstanceOf[DescribeScheduledActionsType]
   }
   
-  extension [Self <: DescribeScheduledActionsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeScheduledActionsType] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     

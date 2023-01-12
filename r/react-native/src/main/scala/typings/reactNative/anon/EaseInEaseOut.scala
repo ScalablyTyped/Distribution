@@ -20,7 +20,8 @@ object EaseInEaseOut {
     __obj.asInstanceOf[EaseInEaseOut]
   }
   
-  extension [Self <: EaseInEaseOut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EaseInEaseOut] (val x: Self) extends AnyVal {
     
     inline def setEaseInEaseOut(value: LayoutAnimationConfig): Self = StObject.set(x, "easeInEaseOut", value.asInstanceOf[js.Any])
     

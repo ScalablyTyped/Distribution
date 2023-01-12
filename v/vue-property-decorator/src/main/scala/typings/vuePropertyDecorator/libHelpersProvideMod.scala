@@ -30,7 +30,8 @@ object libHelpersProvideMod {
       __obj.asInstanceOf[ProvideObj]
     }
     
-    extension [Self <: ProvideObj](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvideObj] (val x: Self) extends AnyVal {
       
       inline def setManaged(value: StringDictionary[Any]): Self = StObject.set(x, "managed", value.asInstanceOf[js.Any])
       

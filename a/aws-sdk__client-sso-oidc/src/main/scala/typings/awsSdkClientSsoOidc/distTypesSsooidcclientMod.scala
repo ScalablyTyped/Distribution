@@ -161,7 +161,8 @@ object distTypesSsooidcclientMod {
       __obj.asInstanceOf[ClientDefaults]
     }
     
-    extension [Self <: ClientDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientDefaults] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -421,7 +422,8 @@ object distTypesSsooidcclientMod {
       __obj.asInstanceOf[SSOOIDCClientConfigType]
     }
     
-    extension [Self <: SSOOIDCClientConfigType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SSOOIDCClientConfigType] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       

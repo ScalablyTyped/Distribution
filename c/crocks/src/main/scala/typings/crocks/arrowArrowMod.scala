@@ -84,7 +84,8 @@ object arrowArrowMod {
       __obj.asInstanceOf[Arrow]
     }
     
-    extension [Self <: Arrow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Arrow] (val x: Self) extends AnyVal {
       
       inline def setBoth(value: () => Arrow): Self = StObject.set(x, "both", js.Any.fromFunction0(value))
       

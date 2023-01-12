@@ -56,7 +56,8 @@ object NetworkInspectInfo {
     __obj.asInstanceOf[NetworkInspectInfo]
   }
   
-  extension [Self <: NetworkInspectInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkInspectInfo] (val x: Self) extends AnyVal {
     
     inline def setAttachable(value: Boolean): Self = StObject.set(x, "Attachable", value.asInstanceOf[js.Any])
     

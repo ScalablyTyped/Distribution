@@ -147,7 +147,8 @@ object mod {
       __obj.asInstanceOf[AllConditions]
     }
     
-    extension [Self <: AllConditions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllConditions] (val x: Self) extends AnyVal {
       
       inline def setAll(value: js.Array[NestedCondition]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -168,7 +169,8 @@ object mod {
       __obj.asInstanceOf[AnyConditions]
     }
     
-    extension [Self <: AnyConditions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnyConditions] (val x: Self) extends AnyVal {
       
       inline def setAny(value: js.Array[NestedCondition]): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
       
@@ -199,7 +201,8 @@ object mod {
       __obj.asInstanceOf[ConditionProperties]
     }
     
-    extension [Self <: ConditionProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConditionProperties] (val x: Self) extends AnyVal {
       
       inline def setFact(value: String): Self = StObject.set(x, "fact", value.asInstanceOf[js.Any])
       
@@ -236,7 +239,8 @@ object mod {
       __obj.asInstanceOf[EngineOptions]
     }
     
-    extension [Self <: EngineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EngineOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowUndefinedFacts(value: Boolean): Self = StObject.set(x, "allowUndefinedFacts", value.asInstanceOf[js.Any])
       
@@ -273,7 +277,8 @@ object mod {
       __obj.asInstanceOf[EngineResult]
     }
     
-    extension [Self <: EngineResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EngineResult] (val x: Self) extends AnyVal {
       
       inline def setAlmanac(value: Almanac): Self = StObject.set(x, "almanac", value.asInstanceOf[js.Any])
       
@@ -309,7 +314,8 @@ object mod {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setParams(value: Record[String, Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
@@ -334,7 +340,8 @@ object mod {
       __obj.asInstanceOf[FactOptions]
     }
     
-    extension [Self <: FactOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FactOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -394,7 +401,8 @@ object mod {
       __obj.asInstanceOf[RuleProperties]
     }
     
-    extension [Self <: RuleProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuleProperties] (val x: Self) extends AnyVal {
       
       inline def setConditions(value: TopLevelCondition): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
       
@@ -437,7 +445,8 @@ object mod {
       __obj.asInstanceOf[RuleResult]
     }
     
-    extension [Self <: RuleResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuleResult] (val x: Self) extends AnyVal {
       
       inline def setConditions(value: TopLevelCondition): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
       
@@ -473,7 +482,8 @@ object mod {
       __obj.asInstanceOf[RuleSerializable]
     }
     
-    extension [Self <: RuleSerializable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuleSerializable] (val x: Self) extends AnyVal {
       
       inline def setConditions(value: TopLevelCondition): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
       

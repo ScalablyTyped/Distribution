@@ -53,7 +53,8 @@ object DeleteContacts {
     __obj.asInstanceOf[DeleteContacts]
   }
   
-  extension [Self <: DeleteContacts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteContacts] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

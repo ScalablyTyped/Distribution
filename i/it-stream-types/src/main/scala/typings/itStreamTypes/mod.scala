@@ -22,7 +22,8 @@ object mod {
       __obj.asInstanceOf[Duplex[TSource, TSink, RSink]]
     }
     
-    extension [Self <: Duplex[?, ?, ?], TSource, TSink, RSink](x: Self & (Duplex[TSource, TSink, RSink])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Duplex[?, ?, ?], TSource, TSink, RSink] (val x: Self & (Duplex[TSource, TSink, RSink])) extends AnyVal {
       
       inline def setSink(value: /* source */ Source[TSink] => RSink): Self = StObject.set(x, "sink", js.Any.fromFunction1(value))
       

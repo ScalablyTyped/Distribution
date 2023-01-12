@@ -23,7 +23,8 @@ object CreateCidrCollectionRequest {
     __obj.asInstanceOf[CreateCidrCollectionRequest]
   }
   
-  extension [Self <: CreateCidrCollectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCidrCollectionRequest] (val x: Self) extends AnyVal {
     
     inline def setCallerReference(value: CidrNonce): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
     

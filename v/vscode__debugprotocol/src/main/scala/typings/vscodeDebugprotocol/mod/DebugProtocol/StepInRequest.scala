@@ -37,7 +37,8 @@ object StepInRequest {
     __obj.asInstanceOf[StepInRequest]
   }
   
-  extension [Self <: StepInRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepInRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: StepInArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }

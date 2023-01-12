@@ -49,7 +49,8 @@ object leafletMod {
         __obj.asInstanceOf[FullscreenOptions]
       }
       
-      extension [Self <: FullscreenOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FullscreenOptions] (val x: Self) extends AnyVal {
         
         inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
@@ -110,7 +111,8 @@ object leafletMod {
       __obj.asInstanceOf[Map]
     }
     
-    extension [Self <: Map](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
       
       inline def setToggleFullScreen(value: () => Unit): Self = StObject.set(x, "toggleFullScreen", js.Any.fromFunction0(value))
     }
@@ -129,7 +131,8 @@ object leafletMod {
       __obj.asInstanceOf[MapOptions]
     }
     
-    extension [Self <: MapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
       
       inline def setFullscreenControl(value: Boolean): Self = StObject.set(x, "fullscreenControl", value.asInstanceOf[js.Any])
       

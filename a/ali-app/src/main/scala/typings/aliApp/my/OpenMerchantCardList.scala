@@ -17,7 +17,8 @@ object OpenMerchantCardList {
     __obj.asInstanceOf[OpenMerchantCardList]
   }
   
-  extension [Self <: OpenMerchantCardList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenMerchantCardList] (val x: Self) extends AnyVal {
     
     inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
   }

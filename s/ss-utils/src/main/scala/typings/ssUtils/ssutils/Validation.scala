@@ -24,7 +24,8 @@ object Validation {
     __obj.asInstanceOf[Validation]
   }
   
-  extension [Self <: Validation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Validation] (val x: Self) extends AnyVal {
     
     inline def setErrorFilter(value: (String, String, String) => Unit): Self = StObject.set(x, "errorFilter", js.Any.fromFunction3(value))
     

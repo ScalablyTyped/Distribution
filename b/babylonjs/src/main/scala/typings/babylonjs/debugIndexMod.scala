@@ -363,7 +363,8 @@ object debugIndexMod {
         __obj.asInstanceOf[typings.babylonjs.debugIndexMod.babylonjsSceneAugmentingMod.Scene]
       }
       
-      extension [Self <: typings.babylonjs.debugIndexMod.babylonjsSceneAugmentingMod.Scene](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.babylonjs.debugIndexMod.babylonjsSceneAugmentingMod.Scene] (val x: Self) extends AnyVal {
         
         inline def setDebugLayer(value: typings.babylonjs.debugDebugLayerMod.DebugLayer): Self = StObject.set(x, "debugLayer", value.asInstanceOf[js.Any])
         

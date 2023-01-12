@@ -71,7 +71,8 @@ object CSSRule {
     __obj.asInstanceOf[CSSRule]
   }
   
-  extension [Self <: CSSRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSRule] (val x: Self) extends AnyVal {
     
     inline def setCHARSET_RULE(value: Double): Self = StObject.set(x, "CHARSET_RULE", value.asInstanceOf[js.Any])
     

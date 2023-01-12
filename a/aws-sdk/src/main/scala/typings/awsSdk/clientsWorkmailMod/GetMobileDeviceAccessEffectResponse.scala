@@ -23,7 +23,8 @@ object GetMobileDeviceAccessEffectResponse {
     __obj.asInstanceOf[GetMobileDeviceAccessEffectResponse]
   }
   
-  extension [Self <: GetMobileDeviceAccessEffectResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMobileDeviceAccessEffectResponse] (val x: Self) extends AnyVal {
     
     inline def setEffect(value: MobileDeviceAccessRuleEffect): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
     

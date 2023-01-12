@@ -578,7 +578,8 @@ object libArrayMod {
       __obj.asInstanceOf[Spanned[I, R]]
     }
     
-    extension [Self <: Spanned[?, ?], I, R](x: Self & (Spanned[I, R])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Spanned[?, ?], I, R] (val x: Self & (Spanned[I, R])) extends AnyVal {
       
       inline def setInit(value: js.Array[I]): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
       

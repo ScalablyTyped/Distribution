@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Attrs]
     }
     
-    extension [Self <: Attrs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attrs] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: PackAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object anon {
       __obj.asInstanceOf[DateSaved]
     }
     
-    extension [Self <: DateSaved](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateSaved] (val x: Self) extends AnyVal {
       
       inline def setDateSaved(value: js.Date): Self = StObject.set(x, "dateSaved", value.asInstanceOf[js.Any])
       
@@ -285,7 +287,8 @@ object anon {
       __obj.asInstanceOf[Unreliable]
     }
     
-    extension [Self <: Unreliable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unreliable] (val x: Self) extends AnyVal {
       
       inline def setUnreliable(value: Boolean): Self = StObject.set(x, "unreliable", value.asInstanceOf[js.Any])
     }

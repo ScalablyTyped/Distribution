@@ -28,7 +28,8 @@ object KebabKeysZGPager {
     __obj.asInstanceOf[KebabKeysZGPager]
   }
   
-  extension [Self <: KebabKeysZGPager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KebabKeysZGPager] (val x: Self) extends AnyVal {
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

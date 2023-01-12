@@ -19,7 +19,8 @@ object DatePointApi {
     __obj.asInstanceOf[DatePointApi]
   }
   
-  extension [Self <: DatePointApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatePointApi] (val x: Self) extends AnyVal {
     
     inline def setAllDay(value: Boolean): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
     

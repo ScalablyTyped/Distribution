@@ -31,7 +31,8 @@ object BootstrapChartExportEventArgs {
     __obj.asInstanceOf[BootstrapChartExportEventArgs]
   }
   
-  extension [Self <: BootstrapChartExportEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapChartExportEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

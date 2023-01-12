@@ -74,7 +74,8 @@ object ConsentProvision {
     __obj.asInstanceOf[ConsentProvision]
   }
   
-  extension [Self <: ConsentProvision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsentProvision] (val x: Self) extends AnyVal {
     
     inline def setAction(value: js.Array[CodeableConcept]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

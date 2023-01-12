@@ -37,7 +37,8 @@ object distLibSerializationComponentsMod {
       __obj.asInstanceOf[SerializerComponent[T]]
     }
     
-    extension [Self <: SerializerComponent[?], T](x: Self & SerializerComponent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializerComponent[?], T] (val x: Self & SerializerComponent[T]) extends AnyVal {
       
       inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       

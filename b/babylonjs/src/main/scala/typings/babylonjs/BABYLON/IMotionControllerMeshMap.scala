@@ -28,7 +28,8 @@ object IMotionControllerMeshMap {
     __obj.asInstanceOf[IMotionControllerMeshMap]
   }
   
-  extension [Self <: IMotionControllerMeshMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMotionControllerMeshMap] (val x: Self) extends AnyVal {
     
     inline def setMaxMesh(value: AbstractMesh): Self = StObject.set(x, "maxMesh", value.asInstanceOf[js.Any])
     

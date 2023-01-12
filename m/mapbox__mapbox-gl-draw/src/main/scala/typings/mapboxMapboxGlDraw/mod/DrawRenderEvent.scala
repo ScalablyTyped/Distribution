@@ -21,7 +21,8 @@ object DrawRenderEvent {
     __obj.asInstanceOf[DrawRenderEvent]
   }
   
-  extension [Self <: DrawRenderEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawRenderEvent] (val x: Self) extends AnyVal {
     
     inline def setType(value: drawDotrender): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

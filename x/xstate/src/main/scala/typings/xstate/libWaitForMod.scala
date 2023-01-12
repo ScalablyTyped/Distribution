@@ -37,7 +37,8 @@ object libWaitForMod {
       __obj.asInstanceOf[WaitForOptions]
     }
     
-    extension [Self <: WaitForOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaitForOptions] (val x: Self) extends AnyVal {
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     }

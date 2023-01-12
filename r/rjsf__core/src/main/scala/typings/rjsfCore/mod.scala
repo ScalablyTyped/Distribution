@@ -374,7 +374,8 @@ object mod {
       __obj.asInstanceOf[FormProps[T, F]]
     }
     
-    extension [Self <: FormProps[?, ?], T, F](x: Self & (FormProps[T, F])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormProps[?, ?], T, F] (val x: Self & (FormProps[T, F])) extends AnyVal {
       
       inline def setAcceptcharset(value: String): Self = StObject.set(x, "acceptcharset", value.asInstanceOf[js.Any])
       
@@ -583,7 +584,8 @@ object mod {
       __obj.asInstanceOf[FormState[T, F]]
     }
     
-    extension [Self <: FormState[?, ?], T, F](x: Self & (FormState[T, F])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormState[?, ?], T, F] (val x: Self & (FormState[T, F])) extends AnyVal {
       
       inline def setEdit(value: Boolean): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
       
@@ -652,7 +654,8 @@ object mod {
       __obj.asInstanceOf[IChangeEvent[T, F]]
     }
     
-    extension [Self <: IChangeEvent[?, ?], T, F](x: Self & (IChangeEvent[T, F])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IChangeEvent[?, ?], T, F] (val x: Self & (IChangeEvent[T, F])) extends AnyVal {
       
       inline def setEdit(value: Boolean): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
       
@@ -701,7 +704,8 @@ object mod {
       __obj.asInstanceOf[ThemeProps[T, F]]
     }
     
-    extension [Self <: ThemeProps[?, ?], T, F](x: Self & (ThemeProps[T, F])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeProps[?, ?], T, F] (val x: Self & (ThemeProps[T, F])) extends AnyVal {
       
       inline def setFields(value: RegistryFieldsType[T, F]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       

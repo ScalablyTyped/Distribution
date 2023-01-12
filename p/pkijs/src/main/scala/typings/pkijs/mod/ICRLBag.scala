@@ -21,7 +21,8 @@ object ICRLBag {
     __obj.asInstanceOf[ICRLBag]
   }
   
-  extension [Self <: ICRLBag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICRLBag] (val x: Self) extends AnyVal {
     
     inline def setCertValue(value: Any): Self = StObject.set(x, "certValue", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object XResultSetMetaDataSupplier {
     __obj.asInstanceOf[XResultSetMetaDataSupplier]
   }
   
-  extension [Self <: XResultSetMetaDataSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XResultSetMetaDataSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetMetaData(value: () => XResultSetMetaData): Self = StObject.set(x, "getMetaData", js.Any.fromFunction0(value))
     

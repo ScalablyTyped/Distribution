@@ -43,7 +43,8 @@ object BrokerInstanceOption {
     __obj.asInstanceOf[BrokerInstanceOption]
   }
   
-  extension [Self <: BrokerInstanceOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrokerInstanceOption] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZones(value: listOfAvailabilityZone): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     

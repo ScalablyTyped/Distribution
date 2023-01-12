@@ -122,7 +122,8 @@ object libStatedbMod {
         __obj.asInstanceOf[Change]
       }
       
-      extension [Self <: Change](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Change] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -157,7 +158,8 @@ object libStatedbMod {
         __obj.asInstanceOf[DataTransform[T]]
       }
       
-      extension [Self <: DataTransform[?], T /* <: ReadonlyPartialJSONValue */](x: Self & DataTransform[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DataTransform[?], T /* <: ReadonlyPartialJSONValue */] (val x: Self & DataTransform[T]) extends AnyVal {
         
         inline def setContents(value: Content[T]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
         
@@ -191,7 +193,8 @@ object libStatedbMod {
         __obj.asInstanceOf[IOptions[T]]
       }
       
-      extension [Self <: IOptions[?], T /* <: ReadonlyPartialJSONValue */](x: Self & IOptions[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions[?], T /* <: ReadonlyPartialJSONValue */] (val x: Self & IOptions[T]) extends AnyVal {
         
         inline def setConnector(value: IDataConnector[String, String, String, String]): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
         

@@ -52,7 +52,8 @@ object srcHmsPushProfileTypesMod {
       __obj.asInstanceOf[ProfileType]
     }
     
-    extension [Self <: ProfileType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProfileType] (val x: Self) extends AnyVal {
       
       inline def setCUSTOM_PROFILE(value: `2`): Self = StObject.set(x, "CUSTOM_PROFILE", value.asInstanceOf[js.Any])
       

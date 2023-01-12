@@ -34,7 +34,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[GoogleAnalyticsOptions]
     }
     
-    extension [Self <: GoogleAnalyticsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GoogleAnalyticsOptions] (val x: Self) extends AnyVal {
       
       inline def setPageViewOnLoad(value: Boolean): Self = StObject.set(x, "pageViewOnLoad", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAppMountId(value: String): Self = StObject.set(x, "appMountId", value.asInstanceOf[js.Any])
       

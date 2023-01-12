@@ -17,7 +17,8 @@ object IMUGeneralOption {
     __obj.asInstanceOf[IMUGeneralOption]
   }
   
-  extension [Self <: IMUGeneralOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMUGeneralOption] (val x: Self) extends AnyVal {
     
     inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     

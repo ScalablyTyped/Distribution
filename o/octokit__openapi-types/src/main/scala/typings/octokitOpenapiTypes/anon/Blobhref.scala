@@ -42,7 +42,8 @@ object Blobhref {
     __obj.asInstanceOf[Blobhref]
   }
   
-  extension [Self <: Blobhref](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Blobhref] (val x: Self) extends AnyVal {
     
     inline def setAnnotation_level(value: String): Self = StObject.set(x, "annotation_level", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object XpackUsageMlDataFrameAnalyticsJobsMemory {
     __obj.asInstanceOf[XpackUsageMlDataFrameAnalyticsJobsMemory]
   }
   
-  extension [Self <: XpackUsageMlDataFrameAnalyticsJobsMemory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageMlDataFrameAnalyticsJobsMemory] (val x: Self) extends AnyVal {
     
     inline def setPeak_usage_bytes(value: MlJobStatistics): Self = StObject.set(x, "peak_usage_bytes", value.asInstanceOf[js.Any])
   }

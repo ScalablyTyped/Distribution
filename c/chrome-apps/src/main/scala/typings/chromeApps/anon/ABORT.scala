@@ -62,7 +62,8 @@ object ABORT {
     __obj.asInstanceOf[ABORT]
   }
   
-  extension [Self <: ABORT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ABORT] (val x: Self) extends AnyVal {
     
     inline def setABORT(value: typings.chromeApps.chromeAppsStrings.ABORT): Self = StObject.set(x, "ABORT", value.asInstanceOf[js.Any])
     

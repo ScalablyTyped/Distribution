@@ -54,7 +54,8 @@ object buildPluginsCreateBaseModMod {
       __obj.asInstanceOf[BaseModProviderMethods[ModType, Props]]
     }
     
-    extension [Self <: BaseModProviderMethods[?, ?], ModType, Props /* <: ForwardedBaseModOptions */](x: Self & (BaseModProviderMethods[ModType, Props])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseModProviderMethods[?, ?], ModType, Props /* <: ForwardedBaseModOptions */] (val x: Self & (BaseModProviderMethods[ModType, Props])) extends AnyVal {
       
       inline def setGetFilePath(value: (ExportedConfigWithProps[ModType], Props) => js.Promise[String] | String): Self = StObject.set(x, "getFilePath", js.Any.fromFunction2(value))
       
@@ -92,7 +93,8 @@ object buildPluginsCreateBaseModMod {
       __obj.asInstanceOf[CreateBaseModProps[ModType, Props]]
     }
     
-    extension [Self <: CreateBaseModProps[?, ?], ModType, Props /* <: ForwardedBaseModOptions */](x: Self & (CreateBaseModProps[ModType, Props])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateBaseModProps[?, ?], ModType, Props /* <: ForwardedBaseModOptions */] (val x: Self & (CreateBaseModProps[ModType, Props])) extends AnyVal {
       
       inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object buildPluginsCreateBaseModMod {
       __obj.asInstanceOf[ForwardedBaseModOptions]
     }
     
-    extension [Self <: ForwardedBaseModOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForwardedBaseModOptions] (val x: Self) extends AnyVal {
       
       inline def setSaveToInternal(value: Boolean): Self = StObject.set(x, "saveToInternal", value.asInstanceOf[js.Any])
       

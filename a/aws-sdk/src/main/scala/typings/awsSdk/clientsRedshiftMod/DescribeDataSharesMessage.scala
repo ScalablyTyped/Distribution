@@ -28,7 +28,8 @@ object DescribeDataSharesMessage {
     __obj.asInstanceOf[DescribeDataSharesMessage]
   }
   
-  extension [Self <: DescribeDataSharesMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDataSharesMessage] (val x: Self) extends AnyVal {
     
     inline def setDataShareArn(value: String): Self = StObject.set(x, "DataShareArn", value.asInstanceOf[js.Any])
     

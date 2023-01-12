@@ -28,7 +28,8 @@ object H265QvbrSettings {
     __obj.asInstanceOf[H265QvbrSettings]
   }
   
-  extension [Self <: H265QvbrSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: H265QvbrSettings] (val x: Self) extends AnyVal {
     
     inline def setMaxAverageBitrate(value: integerMin1000Max1466400000): Self = StObject.set(x, "MaxAverageBitrate", value.asInstanceOf[js.Any])
     

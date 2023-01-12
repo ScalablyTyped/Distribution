@@ -33,7 +33,8 @@ object SecurityGroupRemediationAction {
     __obj.asInstanceOf[SecurityGroupRemediationAction]
   }
   
-  extension [Self <: SecurityGroupRemediationAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityGroupRemediationAction] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: RemediationActionDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

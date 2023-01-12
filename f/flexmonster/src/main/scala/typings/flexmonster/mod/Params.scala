@@ -119,7 +119,8 @@ object Params {
     __obj.asInstanceOf[Params]
   }
   
-  extension [Self <: Params](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
     
     inline def setAfterchartdraw(value: () => Unit): Self = StObject.set(x, "afterchartdraw", js.Any.fromFunction0(value))
     

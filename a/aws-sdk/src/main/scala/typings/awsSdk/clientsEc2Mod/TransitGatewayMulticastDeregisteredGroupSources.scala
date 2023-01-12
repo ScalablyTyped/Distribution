@@ -28,7 +28,8 @@ object TransitGatewayMulticastDeregisteredGroupSources {
     __obj.asInstanceOf[TransitGatewayMulticastDeregisteredGroupSources]
   }
   
-  extension [Self <: TransitGatewayMulticastDeregisteredGroupSources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitGatewayMulticastDeregisteredGroupSources] (val x: Self) extends AnyVal {
     
     inline def setDeregisteredNetworkInterfaceIds(value: ValueStringList): Self = StObject.set(x, "DeregisteredNetworkInterfaceIds", value.asInstanceOf[js.Any])
     

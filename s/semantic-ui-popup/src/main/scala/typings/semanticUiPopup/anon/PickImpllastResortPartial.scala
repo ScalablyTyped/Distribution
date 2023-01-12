@@ -125,7 +125,8 @@ object PickImpllastResortPartial {
     __obj.asInstanceOf[PickImpllastResortPartial]
   }
   
-  extension [Self <: PickImpllastResortPartial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImpllastResortPartial] (val x: Self) extends AnyVal {
     
     inline def setAddTouchEvents(value: Boolean): Self = StObject.set(x, "addTouchEvents", value.asInstanceOf[js.Any])
     

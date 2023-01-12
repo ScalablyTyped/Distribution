@@ -121,7 +121,8 @@ object Dialog {
       __obj.asInstanceOf[ActionButtonClickEventArgs]
     }
     
-    extension [Self <: ActionButtonClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionButtonClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setButtonID(value: String): Self = StObject.set(x, "buttonID", value.asInstanceOf[js.Any])
       
@@ -186,7 +187,8 @@ object Dialog {
       __obj.asInstanceOf[AjaxErrorEventArgs]
     }
     
-    extension [Self <: AjaxErrorEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxErrorEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -251,7 +253,8 @@ object Dialog {
       __obj.asInstanceOf[typings.ejWebAll.ej.Dialog.AjaxSettings]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Dialog.AjaxSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Dialog.AjaxSettings] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -308,7 +311,8 @@ object Dialog {
       __obj.asInstanceOf[AjaxSuccessEventArgs]
     }
     
-    extension [Self <: AjaxSuccessEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxSuccessEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -361,7 +365,8 @@ object Dialog {
       __obj.asInstanceOf[BeforeCloseEventArgs]
     }
     
-    extension [Self <: BeforeCloseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeCloseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -406,7 +411,8 @@ object Dialog {
       __obj.asInstanceOf[BeforeOpenEventArgs]
     }
     
-    extension [Self <: BeforeOpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeOpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -451,7 +457,8 @@ object Dialog {
       __obj.asInstanceOf[CloseEventArgs]
     }
     
-    extension [Self <: CloseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -500,7 +507,8 @@ object Dialog {
       __obj.asInstanceOf[CollapseEventArgs]
     }
     
-    extension [Self <: CollapseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -549,7 +557,8 @@ object Dialog {
       __obj.asInstanceOf[ContentLoadEventArgs]
     }
     
-    extension [Self <: ContentLoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentLoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -594,7 +603,8 @@ object Dialog {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -631,7 +641,8 @@ object Dialog {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -672,7 +683,8 @@ object Dialog {
       __obj.asInstanceOf[DragEventArgs]
     }
     
-    extension [Self <: DragEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -717,7 +729,8 @@ object Dialog {
       __obj.asInstanceOf[DragStartEventArgs]
     }
     
-    extension [Self <: DragStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -762,7 +775,8 @@ object Dialog {
       __obj.asInstanceOf[DragStopEventArgs]
     }
     
-    extension [Self <: DragStopEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragStopEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -807,7 +821,8 @@ object Dialog {
       __obj.asInstanceOf[ExpandEventArgs]
     }
     
-    extension [Self <: ExpandEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpandEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1065,7 +1080,8 @@ object Dialog {
       __obj.asInstanceOf[typings.ejWebAll.ej.Dialog.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Dialog.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Dialog.Model] (val x: Self) extends AnyVal {
       
       inline def setActionButtonClick(value: /* e */ ActionButtonClickEventArgs => Unit): Self = StObject.set(x, "actionButtonClick", js.Any.fromFunction1(value))
       
@@ -1312,7 +1328,8 @@ object Dialog {
       __obj.asInstanceOf[OpenEventArgs]
     }
     
-    extension [Self <: OpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1353,7 +1370,8 @@ object Dialog {
       __obj.asInstanceOf[ResizeEventArgs]
     }
     
-    extension [Self <: ResizeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1398,7 +1416,8 @@ object Dialog {
       __obj.asInstanceOf[ResizeStartEventArgs]
     }
     
-    extension [Self <: ResizeStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1443,7 +1462,8 @@ object Dialog {
       __obj.asInstanceOf[ResizeStopEventArgs]
     }
     
-    extension [Self <: ResizeStopEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeStopEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

@@ -31,7 +31,8 @@ object CanvasKeyEvent {
     __obj.asInstanceOf[CanvasKeyEvent]
   }
   
-  extension [Self <: CanvasKeyEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasKeyEvent] (val x: Self) extends AnyVal {
     
     inline def setPreventDefaultAction(value: Boolean): Self = StObject.set(x, "preventDefaultAction", value.asInstanceOf[js.Any])
     

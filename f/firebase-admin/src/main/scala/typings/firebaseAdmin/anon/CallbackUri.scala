@@ -17,7 +17,8 @@ object CallbackUri {
     __obj.asInstanceOf[CallbackUri]
   }
   
-  extension [Self <: CallbackUri](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackUri] (val x: Self) extends AnyVal {
     
     inline def setCallbackUri(value: String): Self = StObject.set(x, "callbackUri", value.asInstanceOf[js.Any])
     

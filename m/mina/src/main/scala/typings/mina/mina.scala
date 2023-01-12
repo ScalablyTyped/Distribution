@@ -75,7 +75,8 @@ object mina {
       __obj.asInstanceOf[MinaAnimation]
     }
     
-    extension [Self <: MinaAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinaAnimation] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: () => Double): Self = StObject.set(x, "duration", js.Any.fromFunction0(value))
       

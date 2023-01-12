@@ -35,7 +35,8 @@ object OSRMOptions {
     __obj.asInstanceOf[OSRMOptions]
   }
   
-  extension [Self <: OSRMOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSRMOptions] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

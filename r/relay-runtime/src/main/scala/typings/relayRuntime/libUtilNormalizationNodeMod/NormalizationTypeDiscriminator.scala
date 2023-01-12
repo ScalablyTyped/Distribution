@@ -20,7 +20,8 @@ object NormalizationTypeDiscriminator {
     __obj.asInstanceOf[NormalizationTypeDiscriminator]
   }
   
-  extension [Self <: NormalizationTypeDiscriminator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizationTypeDiscriminator] (val x: Self) extends AnyVal {
     
     inline def setAbstractKey(value: String): Self = StObject.set(x, "abstractKey", value.asInstanceOf[js.Any])
     

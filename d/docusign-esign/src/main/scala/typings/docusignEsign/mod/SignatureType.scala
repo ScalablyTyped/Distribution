@@ -30,7 +30,8 @@ object SignatureType {
     __obj.asInstanceOf[SignatureType]
   }
   
-  extension [Self <: SignatureType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureType] (val x: Self) extends AnyVal {
     
     inline def setIsDefault(value: String): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     

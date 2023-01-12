@@ -85,7 +85,8 @@ object UserProfiles {
     __obj.asInstanceOf[UserProfiles]
   }
   
-  extension [Self <: UserProfiles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserProfiles] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: /* Contains address information. */ AddressInformation): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

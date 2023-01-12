@@ -41,7 +41,8 @@ object RON {
     __obj.asInstanceOf[RON]
   }
   
-  extension [Self <: RON](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RON] (val x: Self) extends AnyVal {
     
     inline def setAZN(value: js.Array[String]): Self = StObject.set(x, "AZN", value.asInstanceOf[js.Any])
     

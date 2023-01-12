@@ -47,7 +47,8 @@ object NetworkStatsData {
     __obj.asInstanceOf[NetworkStatsData]
   }
   
-  extension [Self <: NetworkStatsData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkStatsData] (val x: Self) extends AnyVal {
     
     inline def setIface(value: String): Self = StObject.set(x, "iface", value.asInstanceOf[js.Any])
     

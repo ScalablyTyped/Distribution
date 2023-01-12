@@ -41,7 +41,8 @@ object LookupProperty {
     __obj.asInstanceOf[LookupProperty]
   }
   
-  extension [Self <: LookupProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LookupProperty] (val x: Self) extends AnyVal {
     
     inline def setGetTargetEntityType(value: () => String): Self = StObject.set(x, "getTargetEntityType", js.Any.fromFunction0(value))
     

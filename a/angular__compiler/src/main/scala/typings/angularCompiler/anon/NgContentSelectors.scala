@@ -25,7 +25,8 @@ object NgContentSelectors {
     __obj.asInstanceOf[NgContentSelectors]
   }
   
-  extension [Self <: NgContentSelectors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NgContentSelectors] (val x: Self) extends AnyVal {
     
     inline def setNgContentSelectors(value: js.Array[String]): Self = StObject.set(x, "ngContentSelectors", value.asInstanceOf[js.Any])
     

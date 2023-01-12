@@ -41,7 +41,8 @@ object BulkHelperOptions {
     __obj.asInstanceOf[BulkHelperOptions[TDocument]]
   }
   
-  extension [Self <: BulkHelperOptions[?], TDocument](x: Self & BulkHelperOptions[TDocument]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkHelperOptions[?], TDocument] (val x: Self & BulkHelperOptions[TDocument]) extends AnyVal {
     
     inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
     

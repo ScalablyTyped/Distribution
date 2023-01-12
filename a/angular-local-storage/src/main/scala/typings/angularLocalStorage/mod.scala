@@ -217,7 +217,8 @@ object mod {
             __obj.asInstanceOf[typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider]
           }
           
-          extension [Self <: typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider] (val x: Self) extends AnyVal {
             
             inline def setSetDefaultToCookie(
               value: Boolean => typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider

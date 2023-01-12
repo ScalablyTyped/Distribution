@@ -28,7 +28,8 @@ object ServiceAccountKey {
     __obj.asInstanceOf[ServiceAccountKey]
   }
   
-  extension [Self <: ServiceAccountKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceAccountKey] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

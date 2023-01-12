@@ -43,7 +43,8 @@ object ActivityContentDetailsPromotedItem {
     __obj.asInstanceOf[ActivityContentDetailsPromotedItem]
   }
   
-  extension [Self <: ActivityContentDetailsPromotedItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityContentDetailsPromotedItem] (val x: Self) extends AnyVal {
     
     inline def setAdTag(value: String): Self = StObject.set(x, "adTag", value.asInstanceOf[js.Any])
     

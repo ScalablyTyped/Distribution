@@ -50,7 +50,8 @@ object sharedMod {
       __obj.asInstanceOf[DatePickerProps]
     }
     
-    extension [Self <: DatePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePickerProps] (val x: Self) extends AnyVal {
       
       inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object sharedMod {
       __obj.asInstanceOf[DateRangePickerProps]
     }
     
-    extension [Self <: DateRangePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateRangePickerProps] (val x: Self) extends AnyVal {
       
       inline def setEnableGridSwitch(value: Boolean): Self = StObject.set(x, "enableGridSwitch", value.asInstanceOf[js.Any])
       

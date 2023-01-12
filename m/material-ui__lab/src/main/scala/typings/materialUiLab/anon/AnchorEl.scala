@@ -69,7 +69,8 @@ object AnchorEl {
     __obj.asInstanceOf[AnchorEl[T, Multiple, DisableClearable, FreeSolo]]
   }
   
-  extension [Self <: AnchorEl[?, ?, ?, ?], T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */](x: Self & (AnchorEl[T, Multiple, DisableClearable, FreeSolo])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnchorEl[?, ?, ?, ?], T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */] (val x: Self & (AnchorEl[T, Multiple, DisableClearable, FreeSolo])) extends AnyVal {
     
     inline def setAnchorEl(value: HTMLElement): Self = StObject.set(x, "anchorEl", value.asInstanceOf[js.Any])
     

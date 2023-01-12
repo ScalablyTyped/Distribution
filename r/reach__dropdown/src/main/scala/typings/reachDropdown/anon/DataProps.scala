@@ -17,7 +17,8 @@ object DataProps {
     __obj.asInstanceOf[DataProps]
   }
   
-  extension [Self <: DataProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataProps] (val x: Self) extends AnyVal {
     
     inline def setData(value: IsExpanded): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

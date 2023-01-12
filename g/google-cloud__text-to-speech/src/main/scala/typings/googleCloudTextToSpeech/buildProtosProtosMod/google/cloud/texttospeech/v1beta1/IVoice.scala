@@ -28,7 +28,8 @@ object IVoice {
     __obj.asInstanceOf[IVoice]
   }
   
-  extension [Self <: IVoice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVoice] (val x: Self) extends AnyVal {
     
     inline def setLanguageCodes(value: js.Array[String]): Self = StObject.set(x, "languageCodes", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object IAudioConfig {
     __obj.asInstanceOf[IAudioConfig]
   }
   
-  extension [Self <: IAudioConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAudioConfig] (val x: Self) extends AnyVal {
     
     inline def setAudioEncoding(
       value: AudioEncoding | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.texttospeech.v1.AudioEncoding * / any */ String)

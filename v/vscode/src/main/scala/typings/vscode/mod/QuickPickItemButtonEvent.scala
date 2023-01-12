@@ -23,7 +23,8 @@ object QuickPickItemButtonEvent {
     __obj.asInstanceOf[QuickPickItemButtonEvent[T]]
   }
   
-  extension [Self <: QuickPickItemButtonEvent[?], T /* <: QuickPickItem */](x: Self & QuickPickItemButtonEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuickPickItemButtonEvent[?], T /* <: QuickPickItem */] (val x: Self & QuickPickItemButtonEvent[T]) extends AnyVal {
     
     inline def setButton(value: QuickInputButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

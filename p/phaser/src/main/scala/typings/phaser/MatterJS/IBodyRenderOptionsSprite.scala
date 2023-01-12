@@ -31,7 +31,8 @@ object IBodyRenderOptionsSprite {
     __obj.asInstanceOf[IBodyRenderOptionsSprite]
   }
   
-  extension [Self <: IBodyRenderOptionsSprite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBodyRenderOptionsSprite] (val x: Self) extends AnyVal {
     
     inline def setXOffset(value: Double): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
     

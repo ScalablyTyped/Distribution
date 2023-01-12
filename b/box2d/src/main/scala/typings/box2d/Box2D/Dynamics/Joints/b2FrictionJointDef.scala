@@ -57,7 +57,8 @@ object b2FrictionJointDef {
     __obj.asInstanceOf[b2FrictionJointDef]
   }
   
-  extension [Self <: b2FrictionJointDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2FrictionJointDef] (val x: Self) extends AnyVal {
     
     inline def setInitialize(value: (b2Body, b2Body, b2Vec2) => Unit): Self = StObject.set(x, "Initialize", js.Any.fromFunction3(value))
     

@@ -18,7 +18,8 @@ object InviteAction {
     __obj.asInstanceOf[InviteAction]
   }
   
-  extension [Self <: InviteAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InviteAction] (val x: Self) extends AnyVal {
     
     inline def setPrincipal(value: PrincipalString): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object ContainerText {
     __obj.asInstanceOf[ContainerText]
   }
   
-  extension [Self <: ContainerText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerText] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: BoxProps): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

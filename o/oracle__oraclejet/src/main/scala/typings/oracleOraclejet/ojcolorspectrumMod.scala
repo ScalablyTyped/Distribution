@@ -255,7 +255,8 @@ object ojcolorspectrumMod {
       __obj.asInstanceOf[ojColorSpectrumEventMap]
     }
     
-    extension [Self <: ojColorSpectrumEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojColorSpectrumEventMap] (val x: Self) extends AnyVal {
       
       inline def setLabelledByChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "labelledByChanged", value.asInstanceOf[js.Any])
       
@@ -296,7 +297,8 @@ object ojcolorspectrumMod {
       __obj.asInstanceOf[ojColorSpectrumSettableProperties]
     }
     
-    extension [Self <: ojColorSpectrumSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojColorSpectrumSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setLabelledBy(value: String): Self = StObject.set(x, "labelledBy", value.asInstanceOf[js.Any])
       
@@ -346,7 +348,8 @@ object ojcolorspectrumMod {
       __obj.asInstanceOf[ojColorSpectrumSettablePropertiesLenient]
     }
     
-    extension [Self <: ojColorSpectrumSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojColorSpectrumSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setDescribedBy(value: String): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
       

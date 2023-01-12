@@ -111,7 +111,8 @@ object ChartTrendlineUpdateData {
     __obj.asInstanceOf[ChartTrendlineUpdateData]
   }
   
-  extension [Self <: ChartTrendlineUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartTrendlineUpdateData] (val x: Self) extends AnyVal {
     
     inline def setBackwardPeriod(value: Double): Self = StObject.set(x, "backwardPeriod", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object Loadavg {
     __obj.asInstanceOf[Loadavg]
   }
   
-  extension [Self <: Loadavg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Loadavg] (val x: Self) extends AnyVal {
     
     inline def setExistingEntities(value: Double): Self = StObject.set(x, "existingEntities", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object OutboundCallerConfig {
     __obj.asInstanceOf[OutboundCallerConfig]
   }
   
-  extension [Self <: OutboundCallerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutboundCallerConfig] (val x: Self) extends AnyVal {
     
     inline def setOutboundCallerIdName(value: OutboundCallerIdName): Self = StObject.set(x, "OutboundCallerIdName", value.asInstanceOf[js.Any])
     

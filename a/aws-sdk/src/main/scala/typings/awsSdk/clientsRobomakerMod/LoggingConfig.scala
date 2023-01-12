@@ -18,7 +18,8 @@ object LoggingConfig {
     __obj.asInstanceOf[LoggingConfig]
   }
   
-  extension [Self <: LoggingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoggingConfig] (val x: Self) extends AnyVal {
     
     inline def setRecordAllRosTopics(value: BoxedBoolean): Self = StObject.set(x, "recordAllRosTopics", value.asInstanceOf[js.Any])
     

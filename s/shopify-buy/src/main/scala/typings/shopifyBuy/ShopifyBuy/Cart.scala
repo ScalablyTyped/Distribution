@@ -59,7 +59,8 @@ object Cart {
     __obj.asInstanceOf[Cart]
   }
   
-  extension [Self <: Cart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cart] (val x: Self) extends AnyVal {
     
     inline def setCheckoutUrl(value: String): Self = StObject.set(x, "checkoutUrl", value.asInstanceOf[js.Any])
     

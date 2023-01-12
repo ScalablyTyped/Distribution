@@ -647,7 +647,8 @@ object anon {
       __obj.asInstanceOf[Choice]
     }
     
-    extension [Self <: Choice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Choice] (val x: Self) extends AnyVal {
       
       inline def setChoice(value: Any): Self = StObject.set(x, "choice", value.asInstanceOf[js.Any])
       
@@ -666,7 +667,8 @@ object anon {
       __obj.asInstanceOf[Default]
     }
     
-    extension [Self <: Default](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: String | Setting[Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -690,7 +692,8 @@ object anon {
       __obj.asInstanceOf[PartialSettingOptions]
     }
     
-    extension [Self <: PartialSettingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSettingOptions] (val x: Self) extends AnyVal {
       
       inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       

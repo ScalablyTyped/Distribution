@@ -23,7 +23,8 @@ object CodeHook {
     __obj.asInstanceOf[CodeHook]
   }
   
-  extension [Self <: CodeHook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeHook] (val x: Self) extends AnyVal {
     
     inline def setMessageVersion(value: MessageVersion): Self = StObject.set(x, "messageVersion", value.asInstanceOf[js.Any])
     

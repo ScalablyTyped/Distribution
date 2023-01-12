@@ -23,7 +23,8 @@ object DASHFragmentSelector {
     __obj.asInstanceOf[DASHFragmentSelector]
   }
   
-  extension [Self <: DASHFragmentSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DASHFragmentSelector] (val x: Self) extends AnyVal {
     
     inline def setFragmentSelectorType(value: DASHFragmentSelectorType): Self = StObject.set(x, "FragmentSelectorType", value.asInstanceOf[js.Any])
     

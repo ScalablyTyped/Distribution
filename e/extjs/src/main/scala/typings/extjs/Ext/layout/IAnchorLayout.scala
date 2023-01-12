@@ -29,7 +29,8 @@ object IAnchorLayout {
     __obj.asInstanceOf[IAnchorLayout]
   }
   
-  extension [Self <: IAnchorLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAnchorLayout] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

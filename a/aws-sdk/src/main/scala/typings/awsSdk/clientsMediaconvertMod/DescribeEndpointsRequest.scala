@@ -28,7 +28,8 @@ object DescribeEndpointsRequest {
     __obj.asInstanceOf[DescribeEndpointsRequest]
   }
   
-  extension [Self <: DescribeEndpointsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEndpointsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

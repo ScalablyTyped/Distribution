@@ -19,7 +19,8 @@ object SerializeHandlerOptions {
     __obj.asInstanceOf[SerializeHandlerOptions]
   }
   
-  extension [Self <: SerializeHandlerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerializeHandlerOptions] (val x: Self) extends AnyVal {
     
     inline def setStep(value: serialize): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }

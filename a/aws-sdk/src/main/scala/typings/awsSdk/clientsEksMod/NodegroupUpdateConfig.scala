@@ -23,7 +23,8 @@ object NodegroupUpdateConfig {
     __obj.asInstanceOf[NodegroupUpdateConfig]
   }
   
-  extension [Self <: NodegroupUpdateConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodegroupUpdateConfig] (val x: Self) extends AnyVal {
     
     inline def setMaxUnavailable(value: NonZeroInteger): Self = StObject.set(x, "maxUnavailable", value.asInstanceOf[js.Any])
     

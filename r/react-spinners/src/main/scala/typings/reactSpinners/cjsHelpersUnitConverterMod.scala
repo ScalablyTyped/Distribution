@@ -29,7 +29,8 @@ object cjsHelpersUnitConverterMod {
       __obj.asInstanceOf[LengthObject]
     }
     
-    extension [Self <: LengthObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LengthObject] (val x: Self) extends AnyVal {
       
       inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       

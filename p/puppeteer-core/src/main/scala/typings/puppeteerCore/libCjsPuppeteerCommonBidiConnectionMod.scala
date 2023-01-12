@@ -43,7 +43,8 @@ object libCjsPuppeteerCommonBidiConnectionMod {
       __obj.asInstanceOf[CommandResponse]
     }
     
-    extension [Self <: CommandResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandResponse] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

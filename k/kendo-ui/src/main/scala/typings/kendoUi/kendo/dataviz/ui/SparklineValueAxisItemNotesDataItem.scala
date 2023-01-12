@@ -23,7 +23,8 @@ object SparklineValueAxisItemNotesDataItem {
     __obj.asInstanceOf[SparklineValueAxisItemNotesDataItem]
   }
   
-  extension [Self <: SparklineValueAxisItemNotesDataItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparklineValueAxisItemNotesDataItem] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: SparklineValueAxisItemNotesDataItemIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

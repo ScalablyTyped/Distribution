@@ -20,7 +20,8 @@ object IPKCS8ShroudedKeyBag {
     __obj.asInstanceOf[IPKCS8ShroudedKeyBag]
   }
   
-  extension [Self <: IPKCS8ShroudedKeyBag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPKCS8ShroudedKeyBag] (val x: Self) extends AnyVal {
     
     inline def setEncryptedData(value: OctetString): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
     

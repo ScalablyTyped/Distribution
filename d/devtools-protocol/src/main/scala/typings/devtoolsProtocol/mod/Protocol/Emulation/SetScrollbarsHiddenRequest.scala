@@ -18,7 +18,8 @@ object SetScrollbarsHiddenRequest {
     __obj.asInstanceOf[SetScrollbarsHiddenRequest]
   }
   
-  extension [Self <: SetScrollbarsHiddenRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetScrollbarsHiddenRequest] (val x: Self) extends AnyVal {
     
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
   }

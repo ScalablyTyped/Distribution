@@ -127,7 +127,8 @@ object inputLabelInputLabelMod {
       __obj.asInstanceOf[InputLabelProps]
     }
     
-    extension [Self <: InputLabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputLabelProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

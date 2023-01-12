@@ -26,7 +26,8 @@ object RemotesConfig {
     __obj.asInstanceOf[RemotesConfig]
   }
   
-  extension [Self <: RemotesConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemotesConfig] (val x: Self) extends AnyVal {
     
     inline def setExternal(value: String | js.Array[String]): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ListSecretsRequest {
     __obj.asInstanceOf[ListSecretsRequest]
   }
   
-  extension [Self <: ListSecretsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSecretsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: FiltersListType): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

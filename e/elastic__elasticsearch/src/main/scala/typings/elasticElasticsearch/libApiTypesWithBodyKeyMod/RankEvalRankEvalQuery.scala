@@ -17,7 +17,8 @@ object RankEvalRankEvalQuery {
     __obj.asInstanceOf[RankEvalRankEvalQuery]
   }
   
-  extension [Self <: RankEvalRankEvalQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RankEvalRankEvalQuery] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: QueryDslQueryContainer): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     

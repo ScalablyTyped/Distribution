@@ -23,7 +23,8 @@ object AwsIamConfig {
     __obj.asInstanceOf[AwsIamConfig]
   }
   
-  extension [Self <: AwsIamConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsIamConfig] (val x: Self) extends AnyVal {
     
     inline def setSigningRegion(value: String): Self = StObject.set(x, "signingRegion", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object FaultRootCause {
     __obj.asInstanceOf[FaultRootCause]
   }
   
-  extension [Self <: FaultRootCause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaultRootCause] (val x: Self) extends AnyVal {
     
     inline def setClientImpacting(value: NullableBoolean): Self = StObject.set(x, "ClientImpacting", value.asInstanceOf[js.Any])
     

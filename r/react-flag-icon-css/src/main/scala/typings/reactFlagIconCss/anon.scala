@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyFlagIconOptions]
     }
     
-    extension [Self <: ReadonlyFlagIconOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyFlagIconOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomCodes(value: StringDictionary[String]): Self = StObject.set(x, "customCodes", value.asInstanceOf[js.Any])
       

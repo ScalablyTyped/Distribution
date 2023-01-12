@@ -23,7 +23,8 @@ object DeleteDomainAssociationRequest {
     __obj.asInstanceOf[DeleteDomainAssociationRequest]
   }
   
-  extension [Self <: DeleteDomainAssociationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDomainAssociationRequest] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

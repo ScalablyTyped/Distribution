@@ -88,7 +88,8 @@ object Plan {
     __obj.asInstanceOf[Plan]
   }
   
-  extension [Self <: Plan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Plan] (val x: Self) extends AnyVal {
     
     inline def setCreatedByIdentity(value: IdentityRef): Self = StObject.set(x, "createdByIdentity", value.asInstanceOf[js.Any])
     

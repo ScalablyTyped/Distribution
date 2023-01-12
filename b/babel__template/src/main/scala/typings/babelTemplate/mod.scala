@@ -215,7 +215,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TemplateBuilderOptions]
     }
     
-    extension [Self <: TemplateBuilderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateBuilderOptions] (val x: Self) extends AnyVal {
       
       inline def setPlaceholderPattern(value: js.RegExp | `false`): Self = StObject.set(x, "placeholderPattern", value.asInstanceOf[js.Any])
       

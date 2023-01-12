@@ -23,7 +23,8 @@ object CoordsGeoBounds {
     __obj.asInstanceOf[CoordsGeoBounds]
   }
   
-  extension [Self <: CoordsGeoBounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoordsGeoBounds] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

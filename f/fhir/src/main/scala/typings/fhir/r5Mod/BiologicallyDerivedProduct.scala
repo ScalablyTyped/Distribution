@@ -100,7 +100,8 @@ object BiologicallyDerivedProduct {
     __obj.asInstanceOf[BiologicallyDerivedProduct]
   }
   
-  extension [Self <: BiologicallyDerivedProduct](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BiologicallyDerivedProduct] (val x: Self) extends AnyVal {
     
     inline def setBiologicalSource(value: Identifier): Self = StObject.set(x, "biologicalSource", value.asInstanceOf[js.Any])
     

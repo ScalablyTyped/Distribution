@@ -23,7 +23,8 @@ object ListSchedulingPoliciesRequest {
     __obj.asInstanceOf[ListSchedulingPoliciesRequest]
   }
   
-  extension [Self <: ListSchedulingPoliciesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSchedulingPoliciesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: Integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

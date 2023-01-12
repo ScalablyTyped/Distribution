@@ -53,7 +53,8 @@ object anon {
       __obj.asInstanceOf[AcceptsUndefined[IT]]
     }
     
-    extension [Self <: AcceptsUndefined[?], IT /* <: IAnyComplexType */](x: Self & AcceptsUndefined[IT]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AcceptsUndefined[?], IT /* <: IAnyComplexType */] (val x: Self & AcceptsUndefined[IT]) extends AnyVal {
       
       inline def setAcceptsUndefined(value: Boolean): Self = StObject.set(x, "acceptsUndefined", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object anon {
       __obj.asInstanceOf[Actions[A, V, VS]]
     }
     
-    extension [Self <: Actions[?, ?, ?], A /* <: ModelActions */, V /* <: js.Object */, VS /* <: js.Object */](x: Self & (Actions[A, V, VS])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Actions[?, ?, ?], A /* <: ModelActions */, V /* <: js.Object */, VS /* <: js.Object */] (val x: Self & (Actions[A, V, VS])) extends AnyVal {
       
       inline def setActions(value: A): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -923,7 +925,8 @@ object anon {
       __obj.asInstanceOf[OnInvalidated[IT]]
     }
     
-    extension [Self <: OnInvalidated[?], IT /* <: IAnyComplexType */](x: Self & OnInvalidated[IT]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnInvalidated[?], IT /* <: IAnyComplexType */] (val x: Self & OnInvalidated[IT]) extends AnyVal {
       
       inline def setAcceptsUndefined(value: `false`): Self = StObject.set(x, "acceptsUndefined", value.asInstanceOf[js.Any])
       

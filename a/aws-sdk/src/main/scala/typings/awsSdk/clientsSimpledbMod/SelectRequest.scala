@@ -28,7 +28,8 @@ object SelectRequest {
     __obj.asInstanceOf[SelectRequest]
   }
   
-  extension [Self <: SelectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectRequest] (val x: Self) extends AnyVal {
     
     inline def setConsistentRead(value: Boolean): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
     

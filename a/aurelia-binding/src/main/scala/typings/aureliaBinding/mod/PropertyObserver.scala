@@ -18,7 +18,8 @@ object PropertyObserver {
     __obj.asInstanceOf[PropertyObserver]
   }
   
-  extension [Self <: PropertyObserver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyObserver] (val x: Self) extends AnyVal {
     
     inline def setSubscribe(value: js.Function2[/* newValue */ Any, /* oldValue */ Any, Unit] => Disposable): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
   }

@@ -35,7 +35,8 @@ object libComponentsAlphaAlphaMod {
       __obj.asInstanceOf[AlphaPickerProps]
     }
     
-    extension [Self <: AlphaPickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlphaPickerProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object libComponentsAlphaAlphaMod {
       __obj.asInstanceOf[AlphaPickerStylesProps]
     }
     
-    extension [Self <: AlphaPickerStylesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlphaPickerStylesProps] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: CSSProperties): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object CancelStatementResponse {
     __obj.asInstanceOf[CancelStatementResponse]
   }
   
-  extension [Self <: CancelStatementResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelStatementResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: Boolean): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

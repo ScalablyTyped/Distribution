@@ -23,7 +23,8 @@ object GetBucketCorsRequest {
     __obj.asInstanceOf[GetBucketCorsRequest]
   }
   
-  extension [Self <: GetBucketCorsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBucketCorsRequest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

@@ -181,7 +181,8 @@ object libUtilsCryptoSignerMod {
       __obj.asInstanceOf[CryptoSigner]
     }
     
-    extension [Self <: CryptoSigner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CryptoSigner] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -204,7 +205,8 @@ object libUtilsCryptoSignerMod {
       __obj.asInstanceOf[ExtendedErrorInfo]
     }
     
-    extension [Self <: ExtendedErrorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendedErrorInfo] (val x: Self) extends AnyVal {
       
       inline def setCause(value: js.Error): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       

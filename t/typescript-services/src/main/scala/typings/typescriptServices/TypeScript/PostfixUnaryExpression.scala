@@ -44,7 +44,8 @@ object PostfixUnaryExpression {
     __obj.asInstanceOf[PostfixUnaryExpression]
   }
   
-  extension [Self <: PostfixUnaryExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostfixUnaryExpression] (val x: Self) extends AnyVal {
     
     inline def setOperand(value: AST): Self = StObject.set(x, "operand", value.asInstanceOf[js.Any])
     

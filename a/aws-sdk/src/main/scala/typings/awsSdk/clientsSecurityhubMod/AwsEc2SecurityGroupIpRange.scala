@@ -18,7 +18,8 @@ object AwsEc2SecurityGroupIpRange {
     __obj.asInstanceOf[AwsEc2SecurityGroupIpRange]
   }
   
-  extension [Self <: AwsEc2SecurityGroupIpRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2SecurityGroupIpRange] (val x: Self) extends AnyVal {
     
     inline def setCidrIp(value: NonEmptyString): Self = StObject.set(x, "CidrIp", value.asInstanceOf[js.Any])
     

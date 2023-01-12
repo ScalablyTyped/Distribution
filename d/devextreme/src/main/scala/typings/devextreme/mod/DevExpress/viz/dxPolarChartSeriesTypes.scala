@@ -43,7 +43,8 @@ object dxPolarChartSeriesTypes {
     __obj.asInstanceOf[dxPolarChartSeriesTypes]
   }
   
-  extension [Self <: dxPolarChartSeriesTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxPolarChartSeriesTypes] (val x: Self) extends AnyVal {
     
     inline def setAreapolarseries(value: dxPolarChartSeriesTypesAreapolarseries): Self = StObject.set(x, "areapolarseries", value.asInstanceOf[js.Any])
     

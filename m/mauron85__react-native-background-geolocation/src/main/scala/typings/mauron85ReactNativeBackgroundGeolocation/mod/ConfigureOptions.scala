@@ -290,7 +290,8 @@ object ConfigureOptions {
     __obj.asInstanceOf[ConfigureOptions]
   }
   
-  extension [Self <: ConfigureOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigureOptions] (val x: Self) extends AnyVal {
     
     inline def setActivitiesInterval(value: Double): Self = StObject.set(x, "activitiesInterval", value.asInstanceOf[js.Any])
     

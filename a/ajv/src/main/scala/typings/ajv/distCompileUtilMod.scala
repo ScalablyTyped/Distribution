@@ -189,7 +189,8 @@ object distCompileUtilMod {
       __obj.asInstanceOf[MergeEvaluated_]
     }
     
-    extension [Self <: MergeEvaluated_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeEvaluated_] (val x: Self) extends AnyVal {
       
       inline def setItems(
         value: (/* gen */ CodeGen, /* from */ Name | EvaluatedItems, /* to */ js.UndefOr[Name | (Exclude[EvaluatedItems, `true`])], /* toName */ js.UndefOr[Instantiable1[/* s */ String, Name]]) => Name | EvaluatedItems

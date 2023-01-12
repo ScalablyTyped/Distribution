@@ -18,7 +18,8 @@ object DisassociateRepositoryRequest {
     __obj.asInstanceOf[DisassociateRepositoryRequest]
   }
   
-  extension [Self <: DisassociateRepositoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateRepositoryRequest] (val x: Self) extends AnyVal {
     
     inline def setAssociationArn(value: AssociationArn): Self = StObject.set(x, "AssociationArn", value.asInstanceOf[js.Any])
   }

@@ -64,7 +64,8 @@ object libComponentsModalModalDottypesMod {
       __obj.asInstanceOf[IDragOptions]
     }
     
-    extension [Self <: IDragOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDragOptions] (val x: Self) extends AnyVal {
       
       inline def setCloseMenuItemText(value: String): Self = StObject.set(x, "closeMenuItemText", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object libComponentsModalModalDottypesMod {
       __obj.asInstanceOf[IModal]
     }
     
-    extension [Self <: IModal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IModal] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
@@ -251,7 +253,8 @@ object libComponentsModalModalDottypesMod {
       __obj.asInstanceOf[IModalProps]
     }
     
-    extension [Self <: IModalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IModalProps] (val x: Self) extends AnyVal {
       
       inline def setAllowTouchBodyScroll(value: Boolean): Self = StObject.set(x, "allowTouchBodyScroll", value.asInstanceOf[js.Any])
       
@@ -391,7 +394,8 @@ object libComponentsModalModalDottypesMod {
       __obj.asInstanceOf[IModalStyleProps]
     }
     
-    extension [Self <: IModalStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IModalStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -462,7 +466,8 @@ object libComponentsModalModalDottypesMod {
       __obj.asInstanceOf[IModalStyles]
     }
     
-    extension [Self <: IModalStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IModalStyles] (val x: Self) extends AnyVal {
       
       inline def setKeyboardMoveIcon(value: IStyle): Self = StObject.set(x, "keyboardMoveIcon", value.asInstanceOf[js.Any])
       

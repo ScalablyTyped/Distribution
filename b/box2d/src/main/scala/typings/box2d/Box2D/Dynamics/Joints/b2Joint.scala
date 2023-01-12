@@ -95,7 +95,8 @@ object b2Joint {
     __obj.asInstanceOf[b2Joint]
   }
   
-  extension [Self <: b2Joint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2Joint] (val x: Self) extends AnyVal {
     
     inline def setGetAnchorA(value: () => b2Vec2): Self = StObject.set(x, "GetAnchorA", js.Any.fromFunction0(value))
     

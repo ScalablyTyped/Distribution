@@ -50,7 +50,8 @@ object AsepriteFile {
     __obj.asInstanceOf[AsepriteFile]
   }
   
-  extension [Self <: AsepriteFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsepriteFile] (val x: Self) extends AnyVal {
     
     inline def setAddToCache(value: () => Unit): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
   }

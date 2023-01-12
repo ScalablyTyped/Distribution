@@ -15,7 +15,8 @@ object ContentApplicationjsonAllowforking {
     __obj.asInstanceOf[ContentApplicationjsonAllowforking]
   }
   
-  extension [Self <: ContentApplicationjsonAllowforking](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonAllowforking] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonAllowforking): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

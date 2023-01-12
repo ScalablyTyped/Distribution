@@ -24,7 +24,8 @@ object TupleTypeAnnotation_ {
     __obj.asInstanceOf[TupleTypeAnnotation_]
   }
   
-  extension [Self <: TupleTypeAnnotation_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TupleTypeAnnotation_] (val x: Self) extends AnyVal {
     
     inline def setType(value: TupleTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

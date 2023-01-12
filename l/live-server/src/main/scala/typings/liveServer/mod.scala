@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[LiveServerParams]
     }
     
-    extension [Self <: LiveServerParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LiveServerParams] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       

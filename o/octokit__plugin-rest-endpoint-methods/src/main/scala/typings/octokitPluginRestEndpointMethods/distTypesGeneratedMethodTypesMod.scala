@@ -144,7 +144,8 @@ object distTypesGeneratedMethodTypesMod {
       __obj.asInstanceOf[RestEndpointMethods]
     }
     
-    extension [Self <: RestEndpointMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestEndpointMethods] (val x: Self) extends AnyVal {
       
       inline def setActions(value: AddCustomLabelsToSelfHostedRunnerForOrg): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

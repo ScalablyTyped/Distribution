@@ -38,7 +38,8 @@ object DashboardGroup {
     __obj.asInstanceOf[DashboardGroup]
   }
   
-  extension [Self <: DashboardGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashboardGroup] (val x: Self) extends AnyVal {
     
     inline def setDashboardEntries(value: js.Array[DashboardGroupEntry]): Self = StObject.set(x, "dashboardEntries", value.asInstanceOf[js.Any])
     

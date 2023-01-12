@@ -22,7 +22,8 @@ object ExtCertificatePolicies {
     __obj.asInstanceOf[ExtCertificatePolicies]
   }
   
-  extension [Self <: ExtCertificatePolicies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtCertificatePolicies] (val x: Self) extends AnyVal {
     
     inline def setArray(value: js.Array[PolicyInformation]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     

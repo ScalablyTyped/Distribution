@@ -26,7 +26,8 @@ object TokenResult {
     __obj.asInstanceOf[TokenResult]
   }
   
-  extension [Self <: TokenResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenResult] (val x: Self) extends AnyVal {
     
     inline def setLemma(value: String): Self = StObject.set(x, "lemma", value.asInstanceOf[js.Any])
     

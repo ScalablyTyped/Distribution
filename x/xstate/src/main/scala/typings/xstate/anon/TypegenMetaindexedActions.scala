@@ -98,7 +98,8 @@ object TypegenMetaindexedActions {
     __obj.asInstanceOf[TypegenMetaindexedActions]
   }
   
-  extension [Self <: TypegenMetaindexedActions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypegenMetaindexedActions] (val x: Self) extends AnyVal {
     
     inline def `set@@xstateSlashtypegen`(value: `true`): Self = StObject.set(x, "@@xstate/typegen", value.asInstanceOf[js.Any])
     

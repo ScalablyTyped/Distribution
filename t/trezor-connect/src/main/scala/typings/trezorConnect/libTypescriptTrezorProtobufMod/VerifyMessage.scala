@@ -21,7 +21,8 @@ object VerifyMessage {
     __obj.asInstanceOf[VerifyMessage]
   }
   
-  extension [Self <: VerifyMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyMessage] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

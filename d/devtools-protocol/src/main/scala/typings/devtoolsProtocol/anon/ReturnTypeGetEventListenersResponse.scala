@@ -19,7 +19,8 @@ object ReturnTypeGetEventListenersResponse {
     __obj.asInstanceOf[ReturnTypeGetEventListenersResponse]
   }
   
-  extension [Self <: ReturnTypeGetEventListenersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetEventListenersResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetEventListenersRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

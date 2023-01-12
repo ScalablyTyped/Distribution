@@ -38,7 +38,8 @@ object PlaceFeature {
     __obj.asInstanceOf[PlaceFeature]
   }
   
-  extension [Self <: PlaceFeature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceFeature] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

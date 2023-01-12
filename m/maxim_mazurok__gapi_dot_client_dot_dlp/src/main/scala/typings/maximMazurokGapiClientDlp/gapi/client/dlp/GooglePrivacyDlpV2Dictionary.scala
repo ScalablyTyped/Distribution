@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2Dictionary {
     __obj.asInstanceOf[GooglePrivacyDlpV2Dictionary]
   }
   
-  extension [Self <: GooglePrivacyDlpV2Dictionary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2Dictionary] (val x: Self) extends AnyVal {
     
     inline def setCloudStoragePath(value: GooglePrivacyDlpV2CloudStoragePath): Self = StObject.set(x, "cloudStoragePath", value.asInstanceOf[js.Any])
     

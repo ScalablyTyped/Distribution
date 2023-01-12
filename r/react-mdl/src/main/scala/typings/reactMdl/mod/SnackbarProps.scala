@@ -27,7 +27,8 @@ object SnackbarProps {
     __obj.asInstanceOf[SnackbarProps]
   }
   
-  extension [Self <: SnackbarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnackbarProps] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

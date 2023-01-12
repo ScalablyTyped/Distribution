@@ -16,7 +16,8 @@ object LinkStyle {
     __obj.asInstanceOf[LinkStyle]
   }
   
-  extension [Self <: LinkStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkStyle] (val x: Self) extends AnyVal {
     
     inline def setSheet(value: CSSStyleSheet): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
     

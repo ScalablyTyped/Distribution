@@ -33,7 +33,8 @@ object TextStreamBase {
     __obj.asInstanceOf[TextStreamBase]
   }
   
-  extension [Self <: TextStreamBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextStreamBase] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
     

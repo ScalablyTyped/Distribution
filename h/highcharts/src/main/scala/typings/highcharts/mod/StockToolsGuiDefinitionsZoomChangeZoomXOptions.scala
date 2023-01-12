@@ -18,7 +18,8 @@ object StockToolsGuiDefinitionsZoomChangeZoomXOptions {
     __obj.asInstanceOf[StockToolsGuiDefinitionsZoomChangeZoomXOptions]
   }
   
-  extension [Self <: StockToolsGuiDefinitionsZoomChangeZoomXOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockToolsGuiDefinitionsZoomChangeZoomXOptions] (val x: Self) extends AnyVal {
     
     inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DescribeProfileResponse {
     __obj.asInstanceOf[DescribeProfileResponse]
   }
   
-  extension [Self <: DescribeProfileResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeProfileResponse] (val x: Self) extends AnyVal {
     
     inline def setProfile(value: DescribedProfile): Self = StObject.set(x, "Profile", value.asInstanceOf[js.Any])
   }

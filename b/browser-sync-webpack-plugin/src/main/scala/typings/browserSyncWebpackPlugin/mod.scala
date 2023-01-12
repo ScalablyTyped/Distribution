@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: (/* error */ js.Error, /* bs */ BrowserSyncInstance) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       

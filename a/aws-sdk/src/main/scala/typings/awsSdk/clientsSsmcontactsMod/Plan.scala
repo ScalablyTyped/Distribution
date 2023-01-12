@@ -18,7 +18,8 @@ object Plan {
     __obj.asInstanceOf[Plan]
   }
   
-  extension [Self <: Plan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Plan] (val x: Self) extends AnyVal {
     
     inline def setStages(value: StagesList): Self = StObject.set(x, "Stages", value.asInstanceOf[js.Any])
     

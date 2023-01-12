@@ -18,7 +18,8 @@ object StartMailboxExportJobResponse {
     __obj.asInstanceOf[StartMailboxExportJobResponse]
   }
   
-  extension [Self <: StartMailboxExportJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartMailboxExportJobResponse] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: MailboxExportJobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object MoveFolderMetadata {
     __obj.asInstanceOf[MoveFolderMetadata]
   }
   
-  extension [Self <: MoveFolderMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveFolderMetadata] (val x: Self) extends AnyVal {
     
     inline def setDestinationParent(value: String): Self = StObject.set(x, "destinationParent", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object StoreOptions {
     __obj.asInstanceOf[StoreOptions]
   }
   
-  extension [Self <: StoreOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreOptions] (val x: Self) extends AnyVal {
     
     inline def setFactory(
       value: typings.rdfjsTypes.dataModelMod.DataFactory[typings.rdfjsTypes.dataModelMod.Quad, typings.rdfjsTypes.dataModelMod.Quad]

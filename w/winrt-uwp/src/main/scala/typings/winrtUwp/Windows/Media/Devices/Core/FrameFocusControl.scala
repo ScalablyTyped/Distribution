@@ -17,7 +17,8 @@ object FrameFocusControl {
     __obj.asInstanceOf[FrameFocusControl]
   }
   
-  extension [Self <: FrameFocusControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameFocusControl] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

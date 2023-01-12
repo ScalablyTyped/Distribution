@@ -22,7 +22,8 @@ object GridFilterableOperatorsEnums {
     __obj.asInstanceOf[GridFilterableOperatorsEnums]
   }
   
-  extension [Self <: GridFilterableOperatorsEnums](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridFilterableOperatorsEnums] (val x: Self) extends AnyVal {
     
     inline def setEq_(value: String): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
     

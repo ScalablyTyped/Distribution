@@ -71,7 +71,8 @@ object Preprocessors {
     __obj.asInstanceOf[Preprocessors]
   }
   
-  extension [Self <: Preprocessors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Preprocessors] (val x: Self) extends AnyVal {
     
     inline def setController(value: default): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     

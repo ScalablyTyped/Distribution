@@ -38,7 +38,8 @@ object srcRedemptionMod {
       __obj.asInstanceOf[AutoSubmitState]
     }
     
-    extension [Self <: AutoSubmitState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoSubmitState] (val x: Self) extends AnyVal {
       
       inline def setBroadcastTransactionID(value: js.Promise[String]): Self = StObject.set(x, "broadcastTransactionID", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object srcRedemptionMod {
       __obj.asInstanceOf[UnsignedTransactionDetails]
     }
     
-    extension [Self <: UnsignedTransactionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnsignedTransactionDetails] (val x: Self) extends AnyVal {
       
       inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
       

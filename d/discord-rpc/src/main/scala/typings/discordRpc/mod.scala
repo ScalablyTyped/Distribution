@@ -300,7 +300,8 @@ object mod {
       __obj.asInstanceOf[CertifiedDevice]
     }
     
-    extension [Self <: CertifiedDevice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertifiedDevice] (val x: Self) extends AnyVal {
       
       inline def setAutomaticGainControl(value: Boolean): Self = StObject.set(x, "automaticGainControl", value.asInstanceOf[js.Any])
       
@@ -375,7 +376,8 @@ object mod {
       __obj.asInstanceOf[Channel]
     }
     
-    extension [Self <: Channel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
       
       inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
       
@@ -436,7 +438,8 @@ object mod {
       __obj.asInstanceOf[ClientApplication]
     }
     
-    extension [Self <: ClientApplication](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApplication] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -471,7 +474,8 @@ object mod {
       __obj.asInstanceOf[Guild]
     }
     
-    extension [Self <: Guild](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Guild] (val x: Self) extends AnyVal {
       
       inline def setIcon_url(value: String): Self = StObject.set(x, "icon_url", value.asInstanceOf[js.Any])
       
@@ -536,7 +540,8 @@ object mod {
       __obj.asInstanceOf[Presence]
     }
     
-    extension [Self <: Presence](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Presence] (val x: Self) extends AnyVal {
       
       inline def setButtons(value: js.Array[Label]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
@@ -622,7 +627,8 @@ object mod {
       __obj.asInstanceOf[RPCClientOptions]
     }
     
-    extension [Self <: RPCClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RPCClientOptions] (val x: Self) extends AnyVal {
       
       inline def setTransport(value: ipc | websocket): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
     }
@@ -789,7 +795,8 @@ object mod {
       __obj.asInstanceOf[RPCLoginOptions]
     }
     
-    extension [Self <: RPCLoginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RPCLoginOptions] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -834,7 +841,8 @@ object mod {
       __obj.asInstanceOf[Subscription]
     }
     
-    extension [Self <: Subscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
       
       inline def setUnsubscribe(value: () => js.Promise[Boolean]): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }
@@ -857,7 +865,8 @@ object mod {
       __obj.asInstanceOf[User]
     }
     
-    extension [Self <: User](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
       
       inline def setAvatar(value: String): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       
@@ -905,7 +914,8 @@ object mod {
       __obj.asInstanceOf[UserVoiceSettings]
     }
     
-    extension [Self <: UserVoiceSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserVoiceSettings] (val x: Self) extends AnyVal {
       
       inline def setId(value: Snowflake): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -960,7 +970,8 @@ object mod {
       __obj.asInstanceOf[VoiceSettings]
     }
     
-    extension [Self <: VoiceSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VoiceSettings] (val x: Self) extends AnyVal {
       
       inline def setAutomaticGainControl(value: Boolean): Self = StObject.set(x, "automaticGainControl", value.asInstanceOf[js.Any])
       

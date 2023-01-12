@@ -23,7 +23,8 @@ object CustomLayer {
     __obj.asInstanceOf[CustomLayer]
   }
   
-  extension [Self <: CustomLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomLayer] (val x: Self) extends AnyVal {
     
     inline def setOnhotspotclick(value: Content => Unit): Self = StObject.set(x, "onhotspotclick", js.Any.fromFunction1(value))
   }

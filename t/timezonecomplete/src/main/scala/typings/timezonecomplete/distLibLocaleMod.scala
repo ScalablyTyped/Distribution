@@ -184,7 +184,8 @@ object distLibLocaleMod {
       __obj.asInstanceOf[DayPeriod]
     }
     
-    extension [Self <: DayPeriod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DayPeriod] (val x: Self) extends AnyVal {
       
       inline def setAm(value: String): Self = StObject.set(x, "am", value.asInstanceOf[js.Any])
       
@@ -305,7 +306,8 @@ object distLibLocaleMod {
       __obj.asInstanceOf[Locale]
     }
     
-    extension [Self <: Locale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
       
       inline def setDayPeriodAbbreviated(value: DayPeriod): Self = StObject.set(x, "dayPeriodAbbreviated", value.asInstanceOf[js.Any])
       
@@ -463,7 +465,8 @@ object distLibLocaleMod {
       __obj.asInstanceOf[PartialLocale]
     }
     
-    extension [Self <: PartialLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLocale] (val x: Self) extends AnyVal {
       
       inline def setDayPeriodAbbreviated(value: DayPeriod): Self = StObject.set(x, "dayPeriodAbbreviated", value.asInstanceOf[js.Any])
       

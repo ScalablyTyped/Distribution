@@ -72,7 +72,8 @@ object SingularPosition {
     __obj.asInstanceOf[SingularPosition]
   }
   
-  extension [Self <: SingularPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingularPosition] (val x: Self) extends AnyVal {
     
     inline def setActive(value: () => Boolean): Self = StObject.set(x, "active", js.Any.fromFunction0(value))
     

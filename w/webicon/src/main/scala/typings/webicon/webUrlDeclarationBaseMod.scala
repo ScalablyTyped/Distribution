@@ -25,7 +25,8 @@ object webUrlDeclarationBaseMod {
       __obj.asInstanceOf[UrlDeclarationBase]
     }
     
-    extension [Self <: UrlDeclarationBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlDeclarationBase] (val x: Self) extends AnyVal {
       
       inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object ObjectTrackingTextureProvider {
     __obj.asInstanceOf[ObjectTrackingTextureProvider]
   }
   
-  extension [Self <: ObjectTrackingTextureProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectTrackingTextureProvider] (val x: Self) extends AnyVal {
     
     inline def setObjectIndex(value: Double): Self = StObject.set(x, "objectIndex", value.asInstanceOf[js.Any])
   }

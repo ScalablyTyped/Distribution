@@ -19,7 +19,8 @@ object ResolvedModule {
     __obj.asInstanceOf[ResolvedModule]
   }
   
-  extension [Self <: ResolvedModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedModule] (val x: Self) extends AnyVal {
     
     inline def setIsExternalLibraryImport(value: Boolean): Self = StObject.set(x, "isExternalLibraryImport", value.asInstanceOf[js.Any])
     

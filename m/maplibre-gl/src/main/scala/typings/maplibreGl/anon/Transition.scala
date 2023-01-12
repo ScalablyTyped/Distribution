@@ -31,7 +31,8 @@ object Transition {
     __obj.asInstanceOf[Transition]
   }
   
-  extension [Self <: Transition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transition] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

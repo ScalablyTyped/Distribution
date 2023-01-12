@@ -17,7 +17,8 @@ object CollectionDiskUsage {
     __obj.asInstanceOf[CollectionDiskUsage]
   }
   
-  extension [Self <: CollectionDiskUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionDiskUsage] (val x: Self) extends AnyVal {
     
     inline def setUsed_bytes(value: Double): Self = StObject.set(x, "used_bytes", value.asInstanceOf[js.Any])
     

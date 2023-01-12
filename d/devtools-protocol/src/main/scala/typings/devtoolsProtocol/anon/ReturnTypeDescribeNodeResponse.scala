@@ -19,7 +19,8 @@ object ReturnTypeDescribeNodeResponse {
     __obj.asInstanceOf[ReturnTypeDescribeNodeResponse]
   }
   
-  extension [Self <: ReturnTypeDescribeNodeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeDescribeNodeResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[js.UndefOr[DescribeNodeRequest]]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

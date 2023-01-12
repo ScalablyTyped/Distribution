@@ -32,7 +32,8 @@ object CreateEndOfMeetingReminder {
     __obj.asInstanceOf[CreateEndOfMeetingReminder]
   }
   
-  extension [Self <: CreateEndOfMeetingReminder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEndOfMeetingReminder] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

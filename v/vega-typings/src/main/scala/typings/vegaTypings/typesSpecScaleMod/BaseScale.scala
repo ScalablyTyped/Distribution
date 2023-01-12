@@ -32,7 +32,8 @@ object BaseScale {
     __obj.asInstanceOf[BaseScale]
   }
   
-  extension [Self <: BaseScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseScale] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: (js.Array[Null | String | Double | Boolean | SignalRef]) | ScaleData | SignalRef): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

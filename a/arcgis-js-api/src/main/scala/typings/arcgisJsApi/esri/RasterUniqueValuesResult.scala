@@ -27,7 +27,8 @@ object RasterUniqueValuesResult {
     __obj.asInstanceOf[RasterUniqueValuesResult]
   }
   
-  extension [Self <: RasterUniqueValuesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RasterUniqueValuesResult] (val x: Self) extends AnyVal {
     
     inline def setClassFieldName(value: String): Self = StObject.set(x, "classFieldName", value.asInstanceOf[js.Any])
     

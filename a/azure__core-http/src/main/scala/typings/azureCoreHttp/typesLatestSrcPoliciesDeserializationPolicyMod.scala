@@ -95,7 +95,8 @@ object typesLatestSrcPoliciesDeserializationPolicyMod {
       __obj.asInstanceOf[DeserializationContentTypes]
     }
     
-    extension [Self <: DeserializationContentTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeserializationContentTypes] (val x: Self) extends AnyVal {
       
       inline def setJson(value: js.Array[String]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object typesLatestSrcPoliciesDeserializationPolicyMod {
       __obj.asInstanceOf[DeserializationOptions]
     }
     
-    extension [Self <: DeserializationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeserializationOptions] (val x: Self) extends AnyVal {
       
       inline def setExpectedContentTypes(value: DeserializationContentTypes): Self = StObject.set(x, "expectedContentTypes", value.asInstanceOf[js.Any])
     }

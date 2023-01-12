@@ -53,7 +53,8 @@ object EnvironmentResourceDescription {
     __obj.asInstanceOf[EnvironmentResourceDescription]
   }
   
-  extension [Self <: EnvironmentResourceDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentResourceDescription] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingGroups(value: AutoScalingGroupList): Self = StObject.set(x, "AutoScalingGroups", value.asInstanceOf[js.Any])
     

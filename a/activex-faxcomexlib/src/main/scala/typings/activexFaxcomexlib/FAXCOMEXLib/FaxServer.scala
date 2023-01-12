@@ -65,7 +65,8 @@ object FaxServer {
     __obj.asInstanceOf[FaxServer]
   }
   
-  extension [Self <: FaxServer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaxServer] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: FaxConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     

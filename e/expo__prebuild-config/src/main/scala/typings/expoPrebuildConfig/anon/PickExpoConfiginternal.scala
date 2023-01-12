@@ -17,7 +17,8 @@ object PickExpoConfiginternal {
     __obj.asInstanceOf[PickExpoConfiginternal]
   }
   
-  extension [Self <: PickExpoConfiginternal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickExpoConfiginternal] (val x: Self) extends AnyVal {
     
     inline def set_internal(value: Dictk): Self = StObject.set(x, "_internal", value.asInstanceOf[js.Any])
     

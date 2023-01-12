@@ -43,7 +43,8 @@ object NotifyConfigurationType {
     __obj.asInstanceOf[NotifyConfigurationType]
   }
   
-  extension [Self <: NotifyConfigurationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotifyConfigurationType] (val x: Self) extends AnyVal {
     
     inline def setBlockEmail(value: NotifyEmailType): Self = StObject.set(x, "BlockEmail", value.asInstanceOf[js.Any])
     

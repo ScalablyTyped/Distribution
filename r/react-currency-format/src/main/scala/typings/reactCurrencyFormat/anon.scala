@@ -744,7 +744,8 @@ object anon {
       __obj.asInstanceOf[DisplayTypeInputPartialth]
     }
     
-    extension [Self <: DisplayTypeInputPartialth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayTypeInputPartialth] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -2219,7 +2220,8 @@ object anon {
       __obj.asInstanceOf[DisplayTypeTextPartialtho]
     }
     
-    extension [Self <: DisplayTypeTextPartialtho](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayTypeTextPartialtho] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

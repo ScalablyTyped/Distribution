@@ -163,7 +163,8 @@ object XPopupMenu {
     __obj.asInstanceOf[XPopupMenu]
   }
   
-  extension [Self <: XPopupMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPopupMenu] (val x: Self) extends AnyVal {
     
     inline def setCheckItem(value: (Double, Boolean) => Unit): Self = StObject.set(x, "checkItem", js.Any.fromFunction2(value))
     

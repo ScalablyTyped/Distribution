@@ -23,7 +23,8 @@ object ASPxClientCustomDataCallbackEventArgs {
     __obj.asInstanceOf[ASPxClientCustomDataCallbackEventArgs]
   }
   
-  extension [Self <: ASPxClientCustomDataCallbackEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCustomDataCallbackEventArgs] (val x: Self) extends AnyVal {
     
     inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }

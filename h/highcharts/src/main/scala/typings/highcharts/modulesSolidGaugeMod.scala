@@ -1109,7 +1109,8 @@ object modulesSolidGaugeMod {
         __obj.asInstanceOf[SymbolOptionsObject]
       }
       
-      extension [Self <: SymbolOptionsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SymbolOptionsObject] (val x: Self) extends AnyVal {
         
         inline def setRounded(value: Boolean): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
         

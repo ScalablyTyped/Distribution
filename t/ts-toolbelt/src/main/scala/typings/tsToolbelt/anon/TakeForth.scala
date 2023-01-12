@@ -27,7 +27,8 @@ object TakeForth {
     __obj.asInstanceOf[TakeForth[L, N]]
   }
   
-  extension [Self <: TakeForth[?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, N /* <: Iteration */](x: Self & (TakeForth[L, N])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TakeForth[?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, N /* <: Iteration */] (val x: Self & (TakeForth[L, N])) extends AnyVal {
     
     inline def `set-Greaterthansign`(value: typings.tsToolbelt.outListTakeMod.TakeForth[L, N, Prev[N], js.Array[Any]]): Self = StObject.set(x, "->", value.asInstanceOf[js.Any])
     

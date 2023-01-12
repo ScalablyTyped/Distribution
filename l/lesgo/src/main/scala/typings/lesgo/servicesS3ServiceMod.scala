@@ -37,7 +37,8 @@ object servicesS3ServiceMod {
       __obj.asInstanceOf[S3Service]
     }
     
-    extension [Self <: S3Service](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3Service] (val x: Self) extends AnyVal {
       
       inline def setGetObject(value: (ObjectKey, BucketName) => js.Promise[GetObjectOutput]): Self = StObject.set(x, "getObject", js.Any.fromFunction2(value))
       
@@ -60,7 +61,8 @@ object servicesS3ServiceMod {
       __obj.asInstanceOf[S3ServiceParams]
     }
     
-    extension [Self <: S3ServiceParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3ServiceParams] (val x: Self) extends AnyVal {
       
       inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
       

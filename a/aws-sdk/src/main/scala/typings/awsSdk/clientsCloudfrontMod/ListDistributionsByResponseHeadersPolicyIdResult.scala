@@ -15,7 +15,8 @@ object ListDistributionsByResponseHeadersPolicyIdResult {
     __obj.asInstanceOf[ListDistributionsByResponseHeadersPolicyIdResult]
   }
   
-  extension [Self <: ListDistributionsByResponseHeadersPolicyIdResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDistributionsByResponseHeadersPolicyIdResult] (val x: Self) extends AnyVal {
     
     inline def setDistributionIdList(value: DistributionIdList): Self = StObject.set(x, "DistributionIdList", value.asInstanceOf[js.Any])
     

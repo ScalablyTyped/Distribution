@@ -23,7 +23,8 @@ object DialogNodeNextStep {
     __obj.asInstanceOf[DialogNodeNextStep]
   }
   
-  extension [Self <: DialogNodeNextStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogNodeNextStep] (val x: Self) extends AnyVal {
     
     inline def setBehavior(value: String): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     

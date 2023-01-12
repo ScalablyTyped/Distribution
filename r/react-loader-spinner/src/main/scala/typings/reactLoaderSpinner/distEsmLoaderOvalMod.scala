@@ -30,7 +30,8 @@ object distEsmLoaderOvalMod extends Shortcut {
       __obj.asInstanceOf[OvalProps]
     }
     
-    extension [Self <: OvalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OvalProps] (val x: Self) extends AnyVal {
       
       inline def setSecondaryColor(value: String): Self = StObject.set(x, "secondaryColor", value.asInstanceOf[js.Any])
       

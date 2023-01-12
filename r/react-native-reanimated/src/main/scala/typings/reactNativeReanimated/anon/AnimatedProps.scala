@@ -47,7 +47,8 @@ object AnimatedProps {
     __obj.asInstanceOf[AnimatedProps]
   }
   
-  extension [Self <: AnimatedProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimatedProps] (val x: Self) extends AnyVal {
     
     inline def setAnimatedProps(
       value: Partial[

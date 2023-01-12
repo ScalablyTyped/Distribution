@@ -26,7 +26,8 @@ object FoldingRules {
     __obj.asInstanceOf[FoldingRules]
   }
   
-  extension [Self <: FoldingRules](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FoldingRules] (val x: Self) extends AnyVal {
     
     inline def setMarkers(value: FoldingMarkers): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
     

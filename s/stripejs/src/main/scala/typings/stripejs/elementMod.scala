@@ -80,7 +80,8 @@ object elementMod {
       __obj.asInstanceOf[BaseOptions]
     }
     
-    extension [Self <: BaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
       
       inline def setClasses(value: Empty): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
@@ -138,7 +139,8 @@ object elementMod {
       __obj.asInstanceOf[CardElementOptions]
     }
     
-    extension [Self <: CardElementOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardElementOptions] (val x: Self) extends AnyVal {
       
       inline def setHidePostalCode(value: Boolean): Self = StObject.set(x, "hidePostalCode", value.asInstanceOf[js.Any])
       
@@ -181,7 +183,8 @@ object elementMod {
       __obj.asInstanceOf[ElementCreatorOptions]
     }
     
-    extension [Self <: ElementCreatorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementCreatorOptions] (val x: Self) extends AnyVal {
       
       inline def setFonts(value: js.Array[FontCSSElement | FontConfigElement]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
       
@@ -272,7 +275,8 @@ object elementMod {
       __obj.asInstanceOf[FontCSSElement]
     }
     
-    extension [Self <: FontCSSElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontCSSElement] (val x: Self) extends AnyVal {
       
       inline def setCssSrc(value: String): Self = StObject.set(x, "cssSrc", value.asInstanceOf[js.Any])
     }
@@ -319,7 +323,8 @@ object elementMod {
       __obj.asInstanceOf[FontConfigElement]
     }
     
-    extension [Self <: FontConfigElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontConfigElement] (val x: Self) extends AnyVal {
       
       inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
@@ -370,7 +375,8 @@ object elementMod {
       __obj.asInstanceOf[IBANElementOptions]
     }
     
-    extension [Self <: IBANElementOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBANElementOptions] (val x: Self) extends AnyVal {
       
       inline def setIconStyle(value: solid | default): Self = StObject.set(x, "iconStyle", value.asInstanceOf[js.Any])
       
@@ -407,7 +413,8 @@ object elementMod {
       __obj.asInstanceOf[IdealBankOptions]
     }
     
-    extension [Self <: IdealBankOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdealBankOptions] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -428,7 +435,8 @@ object elementMod {
       __obj.asInstanceOf[MSClearAttributes]
     }
     
-    extension [Self <: MSClearAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MSClearAttributes] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
@@ -497,7 +505,8 @@ object elementMod {
       __obj.asInstanceOf[OnChange]
     }
     
-    extension [Self <: OnChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnChange] (val x: Self) extends AnyVal {
       
       inline def setBankName(value: String): Self = StObject.set(x, "bankName", value.asInstanceOf[js.Any])
       
@@ -542,7 +551,8 @@ object elementMod {
       __obj.asInstanceOf[PaymentButtonOptions]
     }
     
-    extension [Self <: PaymentButtonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaymentButtonOptions] (val x: Self) extends AnyVal {
       
       inline def setClasses(value: Base): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
@@ -583,7 +593,8 @@ object elementMod {
       __obj.asInstanceOf[PaymentRequestButtonStyle]
     }
     
-    extension [Self <: PaymentRequestButtonStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaymentRequestButtonStyle] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -737,7 +748,8 @@ object elementMod {
       __obj.asInstanceOf[StyleAttributes]
     }
     
-    extension [Self <: StyleAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleAttributes] (val x: Self) extends AnyVal {
       
       inline def `setColon-webkit-autofill`(value: StyleAttributes): Self = StObject.set(x, ":-webkit-autofill", value.asInstanceOf[js.Any])
       

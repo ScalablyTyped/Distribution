@@ -17,7 +17,8 @@ object DetailsHTMLAttributes {
     __obj.asInstanceOf[DetailsHTMLAttributes[T]]
   }
   
-  extension [Self <: DetailsHTMLAttributes[?], T](x: Self & DetailsHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailsHTMLAttributes[?], T] (val x: Self & DetailsHTMLAttributes[T]) extends AnyVal {
     
     inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     

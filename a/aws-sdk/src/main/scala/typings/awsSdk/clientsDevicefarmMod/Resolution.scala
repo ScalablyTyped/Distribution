@@ -23,7 +23,8 @@ object Resolution {
     __obj.asInstanceOf[Resolution]
   }
   
-  extension [Self <: Resolution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resolution] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

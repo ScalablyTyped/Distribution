@@ -23,7 +23,8 @@ object OnOrderByChange {
     __obj.asInstanceOf[OnOrderByChange]
   }
   
-  extension [Self <: OnOrderByChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnOrderByChange] (val x: Self) extends AnyVal {
     
     inline def setOnOrderByChange(value: OrderBy => Unit): Self = StObject.set(x, "onOrderByChange", js.Any.fromFunction1(value))
     

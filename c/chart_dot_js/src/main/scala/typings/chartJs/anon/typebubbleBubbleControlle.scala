@@ -113,7 +113,8 @@ object typebubbleBubbleControlle {
     __obj.asInstanceOf[typebubbleBubbleControlle]
   }
   
-  extension [Self <: typebubbleBubbleControlle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typebubbleBubbleControlle] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

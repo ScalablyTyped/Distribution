@@ -21,7 +21,8 @@ object ORawExpression {
     __obj.asInstanceOf[ORawExpression]
   }
   
-  extension [Self <: ORawExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ORawExpression] (val x: Self) extends AnyVal {
     
     inline def setAs(value: String => ORawExpression): Self = StObject.set(x, "as", js.Any.fromFunction1(value))
     

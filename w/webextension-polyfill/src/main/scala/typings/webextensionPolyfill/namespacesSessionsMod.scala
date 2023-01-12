@@ -33,7 +33,8 @@ object namespacesSessionsMod {
         __obj.asInstanceOf[Device]
       }
       
-      extension [Self <: Device](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
         
         inline def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
         
@@ -61,7 +62,8 @@ object namespacesSessionsMod {
         __obj.asInstanceOf[Filter]
       }
       
-      extension [Self <: Filter](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
         
         inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
         
@@ -95,7 +97,8 @@ object namespacesSessionsMod {
         __obj.asInstanceOf[Session]
       }
       
-      extension [Self <: Session](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
         
         inline def setLastModified(value: Double): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
         

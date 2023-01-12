@@ -23,7 +23,8 @@ object DescribeEnvironmentResourcesMessage {
     __obj.asInstanceOf[DescribeEnvironmentResourcesMessage]
   }
   
-  extension [Self <: DescribeEnvironmentResourcesMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEnvironmentResourcesMessage] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
     

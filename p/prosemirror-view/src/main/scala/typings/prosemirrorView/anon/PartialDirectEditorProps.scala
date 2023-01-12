@@ -210,7 +210,8 @@ object PartialDirectEditorProps {
     __obj.asInstanceOf[PartialDirectEditorProps]
   }
   
-  extension [Self <: PartialDirectEditorProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDirectEditorProps] (val x: Self) extends AnyVal {
     
     inline def setAttributes(
       value: StringDictionary[String] | (js.Function1[/* state */ EditorState, StringDictionary[String]])

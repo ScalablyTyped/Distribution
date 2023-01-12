@@ -48,7 +48,8 @@ object User {
       __obj.asInstanceOf[Audience]
     }
     
-    extension [Self <: Audience](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Audience] (val x: Self) extends AnyVal {
       
       inline def setIgnores(value: js.Array[Any]): Self = StObject.set(x, "ignores", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object User {
       __obj.asInstanceOf[DJ]
     }
     
-    extension [Self <: DJ](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DJ] (val x: Self) extends AnyVal {
       
       inline def setBlurp(value: Any): Self = StObject.set(x, "blurp", value.asInstanceOf[js.Any])
       
@@ -128,7 +130,8 @@ object User {
       __obj.asInstanceOf[Default]
     }
     
-    extension [Self <: Default](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
       
       inline def setAvatarID(value: String): Self = StObject.set(x, "avatarID", value.asInstanceOf[js.Any])
       
@@ -171,7 +174,8 @@ object User {
       __obj.asInstanceOf[Extended]
     }
     
-    extension [Self <: Extended](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extended] (val x: Self) extends AnyVal {
       
       inline def setCuratorPoints(value: Double): Self = StObject.set(x, "curatorPoints", value.asInstanceOf[js.Any])
       
@@ -226,7 +230,8 @@ object User {
       __obj.asInstanceOf[Room]
     }
     
-    extension [Self <: Room](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Room] (val x: Self) extends AnyVal {
       
       inline def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
@@ -270,7 +275,8 @@ object User {
       __obj.asInstanceOf[Update]
     }
     
-    extension [Self <: Update](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Update] (val x: Self) extends AnyVal {
       
       inline def setDateJoined(value: String): Self = StObject.set(x, "dateJoined", value.asInstanceOf[js.Any])
     }
@@ -305,7 +311,8 @@ object User {
       __obj.asInstanceOf[typings.plugapi.mod.User.User]
     }
     
-    extension [Self <: typings.plugapi.mod.User.User](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.plugapi.mod.User.User] (val x: Self) extends AnyVal {
       
       inline def setGuest(value: Boolean): Self = StObject.set(x, "guest", value.asInstanceOf[js.Any])
       

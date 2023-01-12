@@ -17,7 +17,8 @@ object KeypadPressedEventArgs {
     __obj.asInstanceOf[KeypadPressedEventArgs]
   }
   
-  extension [Self <: KeypadPressedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeypadPressedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setTelephonyKey(value: TelephonyKey): Self = StObject.set(x, "telephonyKey", value.asInstanceOf[js.Any])
   }

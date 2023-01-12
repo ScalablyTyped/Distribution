@@ -342,7 +342,8 @@ object mod {
       __obj.asInstanceOf[BaseProFieldFC]
     }
     
-    extension [Self <: BaseProFieldFC](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseProFieldFC] (val x: Self) extends AnyVal {
       
       inline def setFieldProps(value: Any): Self = StObject.set(x, "fieldProps", value.asInstanceOf[js.Any])
       
@@ -397,7 +398,8 @@ object mod {
       __obj.asInstanceOf[ConfigContextPropsType]
     }
     
-    extension [Self <: ConfigContextPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigContextPropsType] (val x: Self) extends AnyVal {
       
       inline def setHashId(value: String): Self = StObject.set(x, "hashId", value.asInstanceOf[js.Any])
       
@@ -438,7 +440,8 @@ object mod {
       __obj.asInstanceOf[IntlType]
     }
     
-    extension [Self <: IntlType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntlType] (val x: Self) extends AnyVal {
       
       inline def setGetMessage(value: (String, String) => String): Self = StObject.set(x, "getMessage", js.Any.fromFunction2(value))
       
@@ -485,7 +488,8 @@ object mod {
       __obj.asInstanceOf[ProFieldFCRenderProps]
     }
     
-    extension [Self <: ProFieldFCRenderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProFieldFCRenderProps] (val x: Self) extends AnyVal {
       
       inline def setMode(value: ProFieldFCMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -541,7 +545,8 @@ object mod {
       __obj.asInstanceOf[ProRenderFieldPropsType]
     }
     
-    extension [Self <: ProRenderFieldPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProRenderFieldPropsType] (val x: Self) extends AnyVal {
       
       inline def setRender(value: (/* text */ Any, /* props */ OmitProFieldFCRenderProps, /* dom */ Element) => Element): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
       
@@ -583,7 +588,8 @@ object mod {
       __obj.asInstanceOf[ProSchemaValueEnumType]
     }
     
-    extension [Self <: ProSchemaValueEnumType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProSchemaValueEnumType] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

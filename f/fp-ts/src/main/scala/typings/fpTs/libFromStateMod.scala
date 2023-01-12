@@ -282,7 +282,8 @@ object libFromStateMod {
       __obj.asInstanceOf[FromState[F]]
     }
     
-    extension [Self <: FromState[?], F](x: Self & FromState[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromState[?], F] (val x: Self & FromState[F]) extends AnyVal {
       
       inline def setFromState(value: State_[Any, Any] => Any): Self = StObject.set(x, "fromState", js.Any.fromFunction1(value))
       
@@ -303,7 +304,8 @@ object libFromStateMod {
       __obj.asInstanceOf[FromState2[F]]
     }
     
-    extension [Self <: FromState2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & FromState2[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromState2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & FromState2[F]) extends AnyVal {
       
       inline def setFromState(value: State_[Any, Any] => Any): Self = StObject.set(x, "fromState", js.Any.fromFunction1(value))
       
@@ -324,7 +326,8 @@ object libFromStateMod {
       __obj.asInstanceOf[FromState3[F]]
     }
     
-    extension [Self <: FromState3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & FromState3[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromState3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & FromState3[F]) extends AnyVal {
       
       inline def setFromState(value: State_[Any, Any] => Any): Self = StObject.set(x, "fromState", js.Any.fromFunction1(value))
       
@@ -347,7 +350,8 @@ object libFromStateMod {
       __obj.asInstanceOf[FromState3C[F, E]]
     }
     
-    extension [Self <: FromState3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (FromState3C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromState3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (FromState3C[F, E])) extends AnyVal {
       
       inline def setFromState(value: State_[Any, Any] => Any): Self = StObject.set(x, "fromState", js.Any.fromFunction1(value))
       
@@ -370,7 +374,8 @@ object libFromStateMod {
       __obj.asInstanceOf[FromState4[F]]
     }
     
-    extension [Self <: FromState4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & FromState4[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromState4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & FromState4[F]) extends AnyVal {
       
       inline def setFromState(value: State_[Any, Any] => Any): Self = StObject.set(x, "fromState", js.Any.fromFunction1(value))
       

@@ -28,7 +28,8 @@ object UpdateByteMatchSetRequest {
     __obj.asInstanceOf[UpdateByteMatchSetRequest]
   }
   
-  extension [Self <: UpdateByteMatchSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateByteMatchSetRequest] (val x: Self) extends AnyVal {
     
     inline def setByteMatchSetId(value: ResourceId): Self = StObject.set(x, "ByteMatchSetId", value.asInstanceOf[js.Any])
     

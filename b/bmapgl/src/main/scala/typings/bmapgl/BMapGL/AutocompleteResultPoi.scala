@@ -33,7 +33,8 @@ object AutocompleteResultPoi {
     __obj.asInstanceOf[AutocompleteResultPoi]
   }
   
-  extension [Self <: AutocompleteResultPoi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutocompleteResultPoi] (val x: Self) extends AnyVal {
     
     inline def setBusiness(value: String): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
     

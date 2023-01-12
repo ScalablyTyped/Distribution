@@ -38,7 +38,8 @@ object CloneContext {
     __obj.asInstanceOf[CloneContext]
   }
   
-  extension [Self <: CloneContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloneContext] (val x: Self) extends AnyVal {
     
     inline def setAllocatedIpRange(value: String): Self = StObject.set(x, "allocatedIpRange", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object StopOpacity {
     __obj.asInstanceOf[StopOpacity]
   }
   
-  extension [Self <: StopOpacity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopOpacity] (val x: Self) extends AnyVal {
     
     inline def setStopColor(value: String): Self = StObject.set(x, "stopColor", value.asInstanceOf[js.Any])
     

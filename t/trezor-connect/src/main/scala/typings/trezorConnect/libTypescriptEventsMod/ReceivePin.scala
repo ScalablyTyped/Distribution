@@ -20,7 +20,8 @@ object ReceivePin {
     __obj.asInstanceOf[ReceivePin]
   }
   
-  extension [Self <: ReceivePin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReceivePin] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

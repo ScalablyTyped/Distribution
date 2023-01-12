@@ -23,7 +23,8 @@ object RecordLength {
     __obj.asInstanceOf[RecordLength]
   }
   
-  extension [Self <: RecordLength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordLength] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Integer): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

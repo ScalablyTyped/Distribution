@@ -259,7 +259,8 @@ object mod {
       __obj.asInstanceOf[Details]
     }
     
-    extension [Self <: Details](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
       
       inline def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       

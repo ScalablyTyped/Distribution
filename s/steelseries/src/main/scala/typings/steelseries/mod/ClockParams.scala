@@ -65,7 +65,8 @@ object ClockParams {
     __obj.asInstanceOf[ClockParams]
   }
   
-  extension [Self <: ClockParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClockParams] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: BackgroundColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

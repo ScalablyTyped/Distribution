@@ -35,7 +35,8 @@ object TextView {
     __obj.asInstanceOf[TextView]
   }
   
-  extension [Self <: TextView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextView] (val x: Self) extends AnyVal {
     
     inline def setAttributedString(value: AttributedString): Self = StObject.set(x, "attributedString", value.asInstanceOf[js.Any])
   }

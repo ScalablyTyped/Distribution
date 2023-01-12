@@ -22,7 +22,8 @@ object KeyErrorEvent {
     __obj.asInstanceOf[KeyErrorEvent]
   }
   
-  extension [Self <: KeyErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setData(value: KeyError): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

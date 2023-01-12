@@ -187,7 +187,8 @@ object XIntrospectionAccess {
     __obj.asInstanceOf[XIntrospectionAccess]
   }
   
-  extension [Self <: XIntrospectionAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIntrospectionAccess] (val x: Self) extends AnyVal {
     
     inline def setGetMethod(value: (String, Double) => XIdlMethod): Self = StObject.set(x, "getMethod", js.Any.fromFunction2(value))
     

@@ -26,7 +26,8 @@ object SharePluginOptions {
     __obj.asInstanceOf[SharePluginOptions]
   }
   
-  extension [Self <: SharePluginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharePluginOptions] (val x: Self) extends AnyVal {
     
     inline def setShareScope(value: String): Self = StObject.set(x, "shareScope", value.asInstanceOf[js.Any])
     

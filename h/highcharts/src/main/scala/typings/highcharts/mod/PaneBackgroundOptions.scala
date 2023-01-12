@@ -52,7 +52,8 @@ object PaneBackgroundOptions {
     __obj.asInstanceOf[PaneBackgroundOptions]
   }
   
-  extension [Self <: PaneBackgroundOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaneBackgroundOptions] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

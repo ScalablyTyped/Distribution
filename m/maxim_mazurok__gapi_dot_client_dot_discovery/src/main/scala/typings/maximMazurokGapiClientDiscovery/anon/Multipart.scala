@@ -19,7 +19,8 @@ object Multipart {
     __obj.asInstanceOf[Multipart]
   }
   
-  extension [Self <: Multipart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Multipart] (val x: Self) extends AnyVal {
     
     inline def setMultipart(value: Boolean): Self = StObject.set(x, "multipart", value.asInstanceOf[js.Any])
     

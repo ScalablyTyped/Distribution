@@ -81,7 +81,8 @@ object CustomerLocation {
     __obj.asInstanceOf[CustomerLocation]
   }
   
-  extension [Self <: CustomerLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerLocation] (val x: Self) extends AnyVal {
     
     inline def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
     

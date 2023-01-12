@@ -29,7 +29,8 @@ object DocumentationRule {
     __obj.asInstanceOf[DocumentationRule]
   }
   
-  extension [Self <: DocumentationRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentationRule] (val x: Self) extends AnyVal {
     
     inline def setDeprecationDescription(value: String): Self = StObject.set(x, "deprecationDescription", value.asInstanceOf[js.Any])
     

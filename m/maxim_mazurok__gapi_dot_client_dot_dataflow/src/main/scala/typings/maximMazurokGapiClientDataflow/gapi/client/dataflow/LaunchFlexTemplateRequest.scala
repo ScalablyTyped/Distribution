@@ -19,7 +19,8 @@ object LaunchFlexTemplateRequest {
     __obj.asInstanceOf[LaunchFlexTemplateRequest]
   }
   
-  extension [Self <: LaunchFlexTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchFlexTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setLaunchParameter(value: LaunchFlexTemplateParameter): Self = StObject.set(x, "launchParameter", value.asInstanceOf[js.Any])
     

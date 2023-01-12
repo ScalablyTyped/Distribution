@@ -46,7 +46,8 @@ object AssetModelPropertySummary {
     __obj.asInstanceOf[AssetModelPropertySummary]
   }
   
-  extension [Self <: AssetModelPropertySummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetModelPropertySummary] (val x: Self) extends AnyVal {
     
     inline def setAssetModelCompositeModelId(value: ID): Self = StObject.set(x, "assetModelCompositeModelId", value.asInstanceOf[js.Any])
     

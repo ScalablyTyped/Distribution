@@ -24,7 +24,8 @@ object PanoProviderOptions {
     __obj.asInstanceOf[PanoProviderOptions]
   }
   
-  extension [Self <: PanoProviderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PanoProviderOptions] (val x: Self) extends AnyVal {
     
     inline def setCors(value: Boolean): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
     

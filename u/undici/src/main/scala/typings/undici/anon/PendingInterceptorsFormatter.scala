@@ -15,7 +15,8 @@ object PendingInterceptorsFormatter {
     __obj.asInstanceOf[PendingInterceptorsFormatter]
   }
   
-  extension [Self <: PendingInterceptorsFormatter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PendingInterceptorsFormatter] (val x: Self) extends AnyVal {
     
     inline def setPendingInterceptorsFormatter(value: typings.undici.typesMockAgentMod.PendingInterceptorsFormatter): Self = StObject.set(x, "pendingInterceptorsFormatter", value.asInstanceOf[js.Any])
     

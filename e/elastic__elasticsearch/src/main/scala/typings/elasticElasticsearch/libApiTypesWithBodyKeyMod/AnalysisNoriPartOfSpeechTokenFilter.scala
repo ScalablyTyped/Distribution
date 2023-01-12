@@ -22,7 +22,8 @@ object AnalysisNoriPartOfSpeechTokenFilter {
     __obj.asInstanceOf[AnalysisNoriPartOfSpeechTokenFilter]
   }
   
-  extension [Self <: AnalysisNoriPartOfSpeechTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisNoriPartOfSpeechTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setStoptags(value: js.Array[String]): Self = StObject.set(x, "stoptags", value.asInstanceOf[js.Any])
     

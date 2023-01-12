@@ -44,7 +44,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object anon {
       __obj.asInstanceOf[NodeTestHelper]
     }
     
-    extension [Self <: NodeTestHelper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeTestHelper] (val x: Self) extends AnyVal {
       
       inline def setNodeTestHelper(value: Instantiable0[typings.nodeRedNodeTestHelper.mod.NodeTestHelper]): Self = StObject.set(x, "NodeTestHelper", value.asInstanceOf[js.Any])
     }
@@ -197,7 +199,8 @@ object anon {
       __obj.asInstanceOf[PartialLocalSettings]
     }
     
-    extension [Self <: PartialLocalSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLocalSettings] (val x: Self) extends AnyVal {
       
       inline def setAdminAuth(value: Default | Authenticate | Strategy): Self = StObject.set(x, "adminAuth", value.asInstanceOf[js.Any])
       
@@ -421,7 +424,8 @@ object anon {
       __obj.asInstanceOf[TestFlowsItemNodeDef]
     }
     
-    extension [Self <: TestFlowsItemNodeDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestFlowsItemNodeDef] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object SparklineDragStartEvent {
     __obj.asInstanceOf[SparklineDragStartEvent]
   }
   
-  extension [Self <: SparklineDragStartEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparklineDragStartEvent] (val x: Self) extends AnyVal {
     
     inline def setAxisRanges(value: Any): Self = StObject.set(x, "axisRanges", value.asInstanceOf[js.Any])
     

@@ -66,7 +66,8 @@ object FPSMeterOptions {
     __obj.asInstanceOf[FPSMeterOptions]
   }
   
-  extension [Self <: FPSMeterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FPSMeterOptions] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

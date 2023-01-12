@@ -18,7 +18,8 @@ object PinchAround {
     __obj.asInstanceOf[PinchAround]
   }
   
-  extension [Self <: PinchAround](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PinchAround] (val x: Self) extends AnyVal {
     
     inline def setPinchAround(value: ^): Self = StObject.set(x, "pinchAround", value.asInstanceOf[js.Any])
     

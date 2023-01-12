@@ -20,7 +20,8 @@ object buildSrcGeneratedGoogleProtobufDurationMod {
       __obj.asInstanceOf[Duration]
     }
     
-    extension [Self <: Duration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
       
       inline def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object buildSrcGeneratedGoogleProtobufDurationMod {
       __obj.asInstanceOf[DurationOutput]
     }
     
-    extension [Self <: DurationOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DurationOutput] (val x: Self) extends AnyVal {
       
       inline def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
       

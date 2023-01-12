@@ -35,7 +35,8 @@ object OfficeThemeChangedEventArgs {
     __obj.asInstanceOf[OfficeThemeChangedEventArgs]
   }
   
-  extension [Self <: OfficeThemeChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OfficeThemeChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setOfficeTheme(value: OfficeTheme): Self = StObject.set(x, "officeTheme", value.asInstanceOf[js.Any])
     

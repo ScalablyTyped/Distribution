@@ -15,7 +15,8 @@ object MaxError {
     __obj.asInstanceOf[MaxError]
   }
   
-  extension [Self <: MaxError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxError] (val x: Self) extends AnyVal {
     
     inline def setMaxError(value: Any): Self = StObject.set(x, "maxError", value.asInstanceOf[js.Any])
   }

@@ -20,7 +20,8 @@ object ListFilesParameters {
     __obj.asInstanceOf[ListFilesParameters]
   }
   
-  extension [Self <: ListFilesParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFilesParameters] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

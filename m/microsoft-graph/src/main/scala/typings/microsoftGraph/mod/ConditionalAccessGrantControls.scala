@@ -28,7 +28,8 @@ object ConditionalAccessGrantControls {
     __obj.asInstanceOf[ConditionalAccessGrantControls]
   }
   
-  extension [Self <: ConditionalAccessGrantControls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalAccessGrantControls] (val x: Self) extends AnyVal {
     
     inline def setBuiltInControls(value: js.Array[ConditionalAccessGrantControl]): Self = StObject.set(x, "builtInControls", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object UpdateUserHierarchyGroupNameRequest {
     __obj.asInstanceOf[UpdateUserHierarchyGroupNameRequest]
   }
   
-  extension [Self <: UpdateUserHierarchyGroupNameRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateUserHierarchyGroupNameRequest] (val x: Self) extends AnyVal {
     
     inline def setHierarchyGroupId(value: HierarchyGroupId): Self = StObject.set(x, "HierarchyGroupId", value.asInstanceOf[js.Any])
     

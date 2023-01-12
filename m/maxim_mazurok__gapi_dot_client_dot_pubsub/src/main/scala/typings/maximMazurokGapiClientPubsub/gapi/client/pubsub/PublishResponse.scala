@@ -16,7 +16,8 @@ object PublishResponse {
     __obj.asInstanceOf[PublishResponse]
   }
   
-  extension [Self <: PublishResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublishResponse] (val x: Self) extends AnyVal {
     
     inline def setMessageIds(value: js.Array[String]): Self = StObject.set(x, "messageIds", value.asInstanceOf[js.Any])
     

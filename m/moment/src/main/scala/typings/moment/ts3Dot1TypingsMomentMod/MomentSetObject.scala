@@ -63,7 +63,8 @@ object MomentSetObject {
     __obj.asInstanceOf[MomentSetObject]
   }
   
-  extension [Self <: MomentSetObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MomentSetObject] (val x: Self) extends AnyVal {
     
     inline def setDDD(value: Double): Self = StObject.set(x, "DDD", value.asInstanceOf[js.Any])
     

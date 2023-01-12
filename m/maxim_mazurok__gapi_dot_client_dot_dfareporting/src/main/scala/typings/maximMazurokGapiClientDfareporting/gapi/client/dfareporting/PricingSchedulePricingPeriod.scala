@@ -26,7 +26,8 @@ object PricingSchedulePricingPeriod {
     __obj.asInstanceOf[PricingSchedulePricingPeriod]
   }
   
-  extension [Self <: PricingSchedulePricingPeriod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PricingSchedulePricingPeriod] (val x: Self) extends AnyVal {
     
     inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     

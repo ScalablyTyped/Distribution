@@ -19,7 +19,8 @@ object TreeFilterValueChangeParams {
     __obj.asInstanceOf[TreeFilterValueChangeParams]
   }
   
-  extension [Self <: TreeFilterValueChangeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeFilterValueChangeParams] (val x: Self) extends AnyVal {
     
     inline def setOriginalEvent(value: FormEvent[HTMLInputElement]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     

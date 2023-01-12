@@ -54,7 +54,8 @@ object anon {
       __obj.asInstanceOf[RecordTemplateTypestring]
     }
     
-    extension [Self <: RecordTemplateTypestring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordTemplateTypestring] (val x: Self) extends AnyVal {
       
       inline def setAE(value: String): Self = StObject.set(x, "AE", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object anon {
       __obj.asInstanceOf[RequiredOptions]
     }
     
-    extension [Self <: RequiredOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredOptions] (val x: Self) extends AnyVal {
       
       inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
       

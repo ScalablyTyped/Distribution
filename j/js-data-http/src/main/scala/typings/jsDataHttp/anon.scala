@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[Alpha]
     }
     
-    extension [Self <: Alpha](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alpha] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: String | Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       

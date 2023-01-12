@@ -36,7 +36,8 @@ object XScenariosSupplier {
     __obj.asInstanceOf[XScenariosSupplier]
   }
   
-  extension [Self <: XScenariosSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XScenariosSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetScenarios(value: () => XScenarios): Self = StObject.set(x, "getScenarios", js.Any.fromFunction0(value))
     

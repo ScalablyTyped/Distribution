@@ -24,7 +24,8 @@ object AccessType {
     __obj.asInstanceOf[AccessType]
   }
   
-  extension [Self <: AccessType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessType] (val x: Self) extends AnyVal {
     
     inline def setAccessType(value: String): Self = StObject.set(x, "accessType", value.asInstanceOf[js.Any])
     

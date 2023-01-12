@@ -33,7 +33,8 @@ object MethodSpec {
     __obj.asInstanceOf[MethodSpec]
   }
   
-  extension [Self <: MethodSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MethodSpec] (val x: Self) extends AnyVal {
     
     inline def setArgumentTypes(value: js.Array[String]): Self = StObject.set(x, "argumentTypes", value.asInstanceOf[js.Any])
     

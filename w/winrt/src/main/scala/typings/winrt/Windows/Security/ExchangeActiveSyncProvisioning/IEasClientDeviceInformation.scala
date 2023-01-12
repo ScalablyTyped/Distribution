@@ -32,7 +32,8 @@ object IEasClientDeviceInformation {
     __obj.asInstanceOf[IEasClientDeviceInformation]
   }
   
-  extension [Self <: IEasClientDeviceInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEasClientDeviceInformation] (val x: Self) extends AnyVal {
     
     inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     

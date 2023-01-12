@@ -69,7 +69,8 @@ object PermissionGrantConditionSet {
     __obj.asInstanceOf[PermissionGrantConditionSet]
   }
   
-  extension [Self <: PermissionGrantConditionSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionGrantConditionSet] (val x: Self) extends AnyVal {
     
     inline def setClientApplicationIds(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "clientApplicationIds", value.asInstanceOf[js.Any])
     

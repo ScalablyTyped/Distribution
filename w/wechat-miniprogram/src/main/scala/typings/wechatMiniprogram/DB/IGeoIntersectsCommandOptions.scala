@@ -17,7 +17,8 @@ object IGeoIntersectsCommandOptions {
     __obj.asInstanceOf[IGeoIntersectsCommandOptions]
   }
   
-  extension [Self <: IGeoIntersectsCommandOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeoIntersectsCommandOptions] (val x: Self) extends AnyVal {
     
     inline def setGeometry(
       value: GeoPoint | GeoMultiPoint | GeoLineString | GeoMultiLineString | GeoPolygon | GeoMultiPolygon

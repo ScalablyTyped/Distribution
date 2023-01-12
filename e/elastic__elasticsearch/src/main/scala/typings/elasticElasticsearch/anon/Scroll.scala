@@ -18,7 +18,8 @@ object Scroll {
     __obj.asInstanceOf[Scroll]
   }
   
-  extension [Self <: Scroll](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scroll] (val x: Self) extends AnyVal {
     
     inline def setScroll(value: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Duration): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     

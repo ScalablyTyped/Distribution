@@ -77,7 +77,8 @@ object mod {
       __obj.asInstanceOf[JsftpOpts]
     }
     
-    extension [Self <: JsftpOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsftpOpts] (val x: Self) extends AnyVal {
       
       inline def setCreateSocket(value: (/* param0 */ Host, /* firstAction */ js.Function0[js.Object]) => Socket): Self = StObject.set(x, "createSocket", js.Any.fromFunction2(value))
       

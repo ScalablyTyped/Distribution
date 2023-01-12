@@ -23,7 +23,8 @@ object Fragment {
     __obj.asInstanceOf[Fragment]
   }
   
-  extension [Self <: Fragment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fragment] (val x: Self) extends AnyVal {
     
     inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
     

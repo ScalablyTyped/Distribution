@@ -654,7 +654,8 @@ object sapMAppMod {
       __obj.asInstanceOf[AppSettings]
     }
     
-    extension [Self <: AppSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppSettings] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String | PropertyBindingInfo): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       

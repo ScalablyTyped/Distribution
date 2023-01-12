@@ -130,7 +130,8 @@ object typesFormMessageMod {
       __obj.asInstanceOf[FormMessageInputLengthCounterProps]
     }
     
-    extension [Self <: FormMessageInputLengthCounterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormMessageInputLengthCounterProps] (val x: Self) extends AnyVal {
       
       inline def setCounterClassName(value: String): Self = StObject.set(x, "counterClassName", value.asInstanceOf[js.Any])
       
@@ -558,7 +559,8 @@ object typesFormMessageMod {
       __obj.asInstanceOf[FormMessageProps]
     }
     
-    extension [Self <: FormMessageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormMessageProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

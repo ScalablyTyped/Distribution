@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[DefaultRadioFormProps]
     }
     
-    extension [Self <: DefaultRadioFormProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultRadioFormProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object mod {
       __obj.asInstanceOf[RadioButtonInputProps]
     }
     
-    extension [Self <: RadioButtonInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioButtonInputProps] (val x: Self) extends AnyVal {
       
       inline def setButtonInnerColor(value: String): Self = StObject.set(x, "buttonInnerColor", value.asInstanceOf[js.Any])
       
@@ -180,7 +182,8 @@ object mod {
       __obj.asInstanceOf[RadioButtonLabelProps]
     }
     
-    extension [Self <: RadioButtonLabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioButtonLabelProps] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -231,7 +234,8 @@ object mod {
       __obj.asInstanceOf[RadioButtonProps]
     }
     
-    extension [Self <: RadioButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioButtonProps] (val x: Self) extends AnyVal {
       
       inline def setButtonColor(value: String): Self = StObject.set(x, "buttonColor", value.asInstanceOf[js.Any])
       
@@ -304,7 +308,8 @@ object mod {
       __obj.asInstanceOf[ReactNativeRadioFormProps]
     }
     
-    extension [Self <: ReactNativeRadioFormProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactNativeRadioFormProps] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

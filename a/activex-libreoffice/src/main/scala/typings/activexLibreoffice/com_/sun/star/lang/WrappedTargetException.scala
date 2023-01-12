@@ -28,7 +28,8 @@ object WrappedTargetException {
     __obj.asInstanceOf[WrappedTargetException]
   }
   
-  extension [Self <: WrappedTargetException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WrappedTargetException] (val x: Self) extends AnyVal {
     
     inline def setTargetException(value: Any): Self = StObject.set(x, "TargetException", value.asInstanceOf[js.Any])
   }

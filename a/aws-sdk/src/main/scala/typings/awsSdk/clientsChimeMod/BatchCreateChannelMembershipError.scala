@@ -28,7 +28,8 @@ object BatchCreateChannelMembershipError {
     __obj.asInstanceOf[BatchCreateChannelMembershipError]
   }
   
-  extension [Self <: BatchCreateChannelMembershipError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCreateChannelMembershipError] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: ErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

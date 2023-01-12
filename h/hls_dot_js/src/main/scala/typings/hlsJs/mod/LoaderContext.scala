@@ -26,7 +26,8 @@ object LoaderContext {
     __obj.asInstanceOf[LoaderContext]
   }
   
-  extension [Self <: LoaderContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoaderContext] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

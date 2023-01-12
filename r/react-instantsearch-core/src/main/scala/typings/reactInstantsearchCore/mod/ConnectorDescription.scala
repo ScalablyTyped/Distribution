@@ -126,7 +126,8 @@ object ConnectorDescription {
     __obj.asInstanceOf[ConnectorDescription[TProvided, TExposed]]
   }
   
-  extension [Self <: ConnectorDescription[?, ?], TProvided, TExposed](x: Self & (ConnectorDescription[TProvided, TExposed])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorDescription[?, ?], TProvided, TExposed] (val x: Self & (ConnectorDescription[TProvided, TExposed])) extends AnyVal {
     
     inline def setCleanUp(
       value: js.ThisFunction2[

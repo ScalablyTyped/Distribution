@@ -53,7 +53,8 @@ object libOrgOsflashSignalsIoncesignalMod {
     @js.native
     val ^ : js.Symbol = js.native
     
-    extension [Self <: IOnceSignal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOnceSignal] (val x: Self) extends AnyVal {
       
       inline def setAddOnce(value: js.Function => ISlot): Self = StObject.set(x, "addOnce", js.Any.fromFunction1(value))
       

@@ -22,7 +22,8 @@ object ISchedule {
     __obj.asInstanceOf[ISchedule]
   }
   
-  extension [Self <: ISchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISchedule] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: Address): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

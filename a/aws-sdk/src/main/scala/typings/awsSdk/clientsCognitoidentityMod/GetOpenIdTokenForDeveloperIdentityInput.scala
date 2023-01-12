@@ -38,7 +38,8 @@ object GetOpenIdTokenForDeveloperIdentityInput {
     __obj.asInstanceOf[GetOpenIdTokenForDeveloperIdentityInput]
   }
   
-  extension [Self <: GetOpenIdTokenForDeveloperIdentityInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOpenIdTokenForDeveloperIdentityInput] (val x: Self) extends AnyVal {
     
     inline def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     

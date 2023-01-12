@@ -15,7 +15,8 @@ object FaceMeshConfig {
     __obj.asInstanceOf[FaceMeshConfig]
   }
   
-  extension [Self <: FaceMeshConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaceMeshConfig] (val x: Self) extends AnyVal {
     
     inline def setLocateFile(value: (/* path */ String, /* prefix */ js.UndefOr[String]) => String): Self = StObject.set(x, "locateFile", js.Any.fromFunction2(value))
     

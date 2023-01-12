@@ -20,7 +20,8 @@ object Oval {
     __obj.asInstanceOf[Oval]
   }
   
-  extension [Self <: Oval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Oval] (val x: Self) extends AnyVal {
     
     inline def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
   }

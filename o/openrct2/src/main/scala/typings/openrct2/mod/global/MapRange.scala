@@ -20,7 +20,8 @@ object MapRange {
     __obj.asInstanceOf[MapRange]
   }
   
-  extension [Self <: MapRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapRange] (val x: Self) extends AnyVal {
     
     inline def setLeftTop(value: CoordsXY): Self = StObject.set(x, "leftTop", value.asInstanceOf[js.Any])
     

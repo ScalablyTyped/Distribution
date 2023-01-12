@@ -39,7 +39,8 @@ object CallFrame {
     __obj.asInstanceOf[CallFrame]
   }
   
-  extension [Self <: CallFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallFrame] (val x: Self) extends AnyVal {
     
     inline def setColumnNumber(value: integer): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     

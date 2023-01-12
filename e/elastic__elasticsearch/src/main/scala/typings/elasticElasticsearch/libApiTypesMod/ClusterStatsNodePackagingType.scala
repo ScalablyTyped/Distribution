@@ -20,7 +20,8 @@ object ClusterStatsNodePackagingType {
     __obj.asInstanceOf[ClusterStatsNodePackagingType]
   }
   
-  extension [Self <: ClusterStatsNodePackagingType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatsNodePackagingType] (val x: Self) extends AnyVal {
     
     inline def setCount(value: integer): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

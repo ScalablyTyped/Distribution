@@ -64,7 +64,8 @@ object typesLibTypesMod {
       __obj.asInstanceOf[ErrorOverlayOptions]
     }
     
-    extension [Self <: ErrorOverlayOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorOverlayOptions] (val x: Self) extends AnyVal {
       
       inline def setEntry(value: String | `false`): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object typesLibTypesMod {
       __obj.asInstanceOf[NormalizedErrorOverlayOptions]
     }
     
-    extension [Self <: NormalizedErrorOverlayOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizedErrorOverlayOptions] (val x: Self) extends AnyVal {
       
       inline def setEntry(value: String | `false`): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       
@@ -189,7 +191,8 @@ object typesLibTypesMod {
       __obj.asInstanceOf[NormalizedPluginOptions]
     }
     
-    extension [Self <: NormalizedPluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizedPluginOptions] (val x: Self) extends AnyVal {
       
       inline def setEsModule(
         value: Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_types.ESModuleOptions */ Any)
@@ -237,7 +240,8 @@ object typesLibTypesMod {
       __obj.asInstanceOf[OverlayOverrides]
     }
     
-    extension [Self <: OverlayOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlayOverrides] (val x: Self) extends AnyVal {
       
       inline def setOverlay(value: `false` | NormalizedErrorOverlayOptions): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     }
@@ -284,7 +288,8 @@ object typesLibTypesMod {
       __obj.asInstanceOf[ReactRefreshPluginOptions]
     }
     
-    extension [Self <: ReactRefreshPluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactRefreshPluginOptions] (val x: Self) extends AnyVal {
       
       inline def setEsModule(
         value: Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_types.ESModuleOptions */ Any)

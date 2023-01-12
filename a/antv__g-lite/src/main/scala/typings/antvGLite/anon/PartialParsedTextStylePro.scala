@@ -195,7 +195,8 @@ object PartialParsedTextStylePro {
     __obj.asInstanceOf[PartialParsedTextStylePro]
   }
   
-  extension [Self <: PartialParsedTextStylePro](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialParsedTextStylePro] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

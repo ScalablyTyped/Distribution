@@ -23,7 +23,8 @@ object ArtifactSourceType {
     __obj.asInstanceOf[ArtifactSourceType]
   }
   
-  extension [Self <: ArtifactSourceType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactSourceType] (val x: Self) extends AnyVal {
     
     inline def setSourceIdType(value: ArtifactSourceIdType): Self = StObject.set(x, "SourceIdType", value.asInstanceOf[js.Any])
     

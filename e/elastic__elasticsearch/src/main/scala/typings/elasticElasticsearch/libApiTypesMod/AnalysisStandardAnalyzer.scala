@@ -23,7 +23,8 @@ object AnalysisStandardAnalyzer {
     __obj.asInstanceOf[AnalysisStandardAnalyzer]
   }
   
-  extension [Self <: AnalysisStandardAnalyzer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisStandardAnalyzer] (val x: Self) extends AnyVal {
     
     inline def setMax_token_length(value: integer): Self = StObject.set(x, "max_token_length", value.asInstanceOf[js.Any])
     

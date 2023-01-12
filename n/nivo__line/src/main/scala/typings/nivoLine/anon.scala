@@ -43,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyPointSymbolProps]
     }
     
-    extension [Self <: ReadonlyPointSymbolProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyPointSymbolProps] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -112,7 +114,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -139,7 +142,8 @@ object anon {
       __obj.asInstanceOf[XFormatted]
     }
     
-    extension [Self <: XFormatted](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XFormatted] (val x: Self) extends AnyVal {
       
       inline def setX(value: DatumValue): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

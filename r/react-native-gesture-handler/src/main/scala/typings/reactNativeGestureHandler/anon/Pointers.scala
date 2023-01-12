@@ -15,7 +15,8 @@ object Pointers {
     __obj.asInstanceOf[Pointers]
   }
   
-  extension [Self <: Pointers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pointers] (val x: Self) extends AnyVal {
     
     inline def setPointers(value: Double): Self = StObject.set(x, "pointers", value.asInstanceOf[js.Any])
     

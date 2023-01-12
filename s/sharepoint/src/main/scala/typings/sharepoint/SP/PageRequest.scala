@@ -48,7 +48,8 @@ object PageRequest {
     __obj.asInstanceOf[PageRequest]
   }
   
-  extension [Self <: PageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageRequest] (val x: Self) extends AnyVal {
     
     inline def setAdd_failed(value: js.Function2[/* sender */ Any, /* args */ PageRequestFailedEventArgs, Unit] => Unit): Self = StObject.set(x, "add_failed", js.Any.fromFunction1(value))
     

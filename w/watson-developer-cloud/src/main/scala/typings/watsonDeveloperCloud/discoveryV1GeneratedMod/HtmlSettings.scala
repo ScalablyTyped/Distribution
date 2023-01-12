@@ -30,7 +30,8 @@ object HtmlSettings {
     __obj.asInstanceOf[HtmlSettings]
   }
   
-  extension [Self <: HtmlSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HtmlSettings] (val x: Self) extends AnyVal {
     
     inline def setExclude_content(value: XPathPatterns): Self = StObject.set(x, "exclude_content", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object PlusBluetoothBluetoothDeviceInfo {
     __obj.asInstanceOf[PlusBluetoothBluetoothDeviceInfo]
   }
   
-  extension [Self <: PlusBluetoothBluetoothDeviceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusBluetoothBluetoothDeviceInfo] (val x: Self) extends AnyVal {
     
     inline def setAdvertisData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "advertisData", value.asInstanceOf[js.Any])
     

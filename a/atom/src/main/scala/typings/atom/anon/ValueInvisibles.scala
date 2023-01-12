@@ -18,7 +18,8 @@ object ValueInvisibles {
     __obj.asInstanceOf[ValueInvisibles]
   }
   
-  extension [Self <: ValueInvisibles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueInvisibles] (val x: Self) extends AnyVal {
     
     inline def setScopeDescriptor(value: typings.atom.srcScopeDescriptorMod.ScopeDescriptor): Self = StObject.set(x, "scopeDescriptor", value.asInstanceOf[js.Any])
     

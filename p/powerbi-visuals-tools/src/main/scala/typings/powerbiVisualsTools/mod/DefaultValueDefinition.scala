@@ -20,7 +20,8 @@ object DefaultValueDefinition {
     __obj.asInstanceOf[DefaultValueDefinition]
   }
   
-  extension [Self <: DefaultValueDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultValueDefinition] (val x: Self) extends AnyVal {
     
     inline def setIdentityFieldsValues(value: js.Array[ISQConstantExpr]): Self = StObject.set(x, "identityFieldsValues", value.asInstanceOf[js.Any])
     

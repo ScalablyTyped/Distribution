@@ -29,7 +29,8 @@ object TypeOperatorType {
     __obj.asInstanceOf[TypeOperatorType]
   }
   
-  extension [Self <: TypeOperatorType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeOperatorType] (val x: Self) extends AnyVal {
     
     inline def setOperator(value: ToSerialized[keyof | unique | readonly]): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     

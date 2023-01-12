@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[PathInfo]
     }
     
-    extension [Self <: PathInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathInfo] (val x: Self) extends AnyVal {
       
       inline def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
       

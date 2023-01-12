@@ -68,7 +68,8 @@ object PhotoImportDeleteImportedItemsFromSourceResult {
     __obj.asInstanceOf[PhotoImportDeleteImportedItemsFromSourceResult]
   }
   
-  extension [Self <: PhotoImportDeleteImportedItemsFromSourceResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhotoImportDeleteImportedItemsFromSourceResult] (val x: Self) extends AnyVal {
     
     inline def setDeletedItems(value: IVectorView[PhotoImportItem]): Self = StObject.set(x, "deletedItems", value.asInstanceOf[js.Any])
     

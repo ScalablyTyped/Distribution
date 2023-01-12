@@ -29,7 +29,8 @@ object SymbolOptions {
     __obj.asInstanceOf[SymbolOptions]
   }
   
-  extension [Self <: SymbolOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolOptions] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: Size): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

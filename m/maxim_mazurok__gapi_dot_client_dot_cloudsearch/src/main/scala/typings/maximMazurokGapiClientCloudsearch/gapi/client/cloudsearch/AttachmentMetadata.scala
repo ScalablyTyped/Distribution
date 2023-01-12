@@ -15,7 +15,8 @@ object AttachmentMetadata {
     __obj.asInstanceOf[AttachmentMetadata]
   }
   
-  extension [Self <: AttachmentMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachmentMetadata] (val x: Self) extends AnyVal {
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     

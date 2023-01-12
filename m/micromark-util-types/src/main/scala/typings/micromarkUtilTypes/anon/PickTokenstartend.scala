@@ -19,7 +19,8 @@ object PickTokenstartend {
     __obj.asInstanceOf[PickTokenstartend]
   }
   
-  extension [Self <: PickTokenstartend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickTokenstartend] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object LocationTaskServiceOptions {
     __obj.asInstanceOf[LocationTaskServiceOptions]
   }
   
-  extension [Self <: LocationTaskServiceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationTaskServiceOptions] (val x: Self) extends AnyVal {
     
     inline def setKillServiceOnDestroy(value: Boolean): Self = StObject.set(x, "killServiceOnDestroy", value.asInstanceOf[js.Any])
     

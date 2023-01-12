@@ -20,7 +20,8 @@ object SandBoxMode {
     __obj.asInstanceOf[SandBoxMode]
   }
   
-  extension [Self <: SandBoxMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SandBoxMode] (val x: Self) extends AnyVal {
     
     inline def setGetEnable(value: () => Boolean): Self = StObject.set(x, "getEnable", js.Any.fromFunction0(value))
     

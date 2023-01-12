@@ -173,7 +173,8 @@ object distServiceDialogflowContextMod {
       __obj.asInstanceOf[Context[TParameters]]
     }
     
-    extension [Self <: Context[?], TParameters /* <: Parameters */](x: Self & Context[TParameters]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context[?], TParameters /* <: Parameters */] (val x: Self & Context[TParameters]) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -199,7 +200,8 @@ object distServiceDialogflowContextMod {
       __obj.asInstanceOf[OutputContext[TParameters]]
     }
     
-    extension [Self <: OutputContext[?], TParameters /* <: Parameters */](x: Self & OutputContext[TParameters]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputContext[?], TParameters /* <: Parameters */] (val x: Self & OutputContext[TParameters]) extends AnyVal {
       
       inline def setLifespan(value: Double): Self = StObject.set(x, "lifespan", value.asInstanceOf[js.Any])
       

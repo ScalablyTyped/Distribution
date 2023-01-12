@@ -15,7 +15,8 @@ object IFileUpdateRequestedEventArgs {
     __obj.asInstanceOf[IFileUpdateRequestedEventArgs]
   }
   
-  extension [Self <: IFileUpdateRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFileUpdateRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: FileUpdateRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }

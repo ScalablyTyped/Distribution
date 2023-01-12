@@ -17,7 +17,8 @@ object SinonExposeOptions {
     __obj.asInstanceOf[SinonExposeOptions]
   }
   
-  extension [Self <: SinonExposeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SinonExposeOptions] (val x: Self) extends AnyVal {
     
     inline def setIncludeFail(value: Boolean): Self = StObject.set(x, "includeFail", value.asInstanceOf[js.Any])
     

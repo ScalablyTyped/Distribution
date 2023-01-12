@@ -18,7 +18,8 @@ object MultiplyInputs {
     __obj.asInstanceOf[MultiplyInputs]
   }
   
-  extension [Self <: MultiplyInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiplyInputs] (val x: Self) extends AnyVal {
     
     inline def setA(value: scala.Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object pageAction {
       __obj.asInstanceOf[GetDetails]
     }
     
-    extension [Self <: GetDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetDetails] (val x: Self) extends AnyVal {
       
       inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     }
@@ -67,7 +68,8 @@ object pageAction {
       __obj.asInstanceOf[IconDetails]
     }
     
-    extension [Self <: IconDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconDetails] (val x: Self) extends AnyVal {
       
       inline def setIconIndex(value: Double): Self = StObject.set(x, "iconIndex", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object pageAction {
       __obj.asInstanceOf[PopupDetails]
     }
     
-    extension [Self <: PopupDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupDetails] (val x: Self) extends AnyVal {
       
       inline def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
       
@@ -125,7 +128,8 @@ object pageAction {
       __obj.asInstanceOf[TitleDetails]
     }
     
-    extension [Self <: TitleDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleDetails] (val x: Self) extends AnyVal {
       
       inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       

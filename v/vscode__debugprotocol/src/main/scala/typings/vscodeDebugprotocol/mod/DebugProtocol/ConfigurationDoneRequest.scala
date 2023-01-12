@@ -28,7 +28,8 @@ object ConfigurationDoneRequest {
     __obj.asInstanceOf[ConfigurationDoneRequest]
   }
   
-  extension [Self <: ConfigurationDoneRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationDoneRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: ConfigurationDoneArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

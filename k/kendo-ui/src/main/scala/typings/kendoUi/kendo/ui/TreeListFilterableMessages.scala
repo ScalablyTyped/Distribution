@@ -29,7 +29,8 @@ object TreeListFilterableMessages {
     __obj.asInstanceOf[TreeListFilterableMessages]
   }
   
-  extension [Self <: TreeListFilterableMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListFilterableMessages] (val x: Self) extends AnyVal {
     
     inline def setAnd(value: String): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
     

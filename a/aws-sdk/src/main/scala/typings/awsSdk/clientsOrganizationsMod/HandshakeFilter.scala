@@ -23,7 +23,8 @@ object HandshakeFilter {
     __obj.asInstanceOf[HandshakeFilter]
   }
   
-  extension [Self <: HandshakeFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandshakeFilter] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: ActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     

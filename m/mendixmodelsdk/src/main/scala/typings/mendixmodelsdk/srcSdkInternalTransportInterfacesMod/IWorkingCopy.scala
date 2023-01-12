@@ -47,7 +47,8 @@ object IWorkingCopy {
     __obj.asInstanceOf[IWorkingCopy]
   }
   
-  extension [Self <: IWorkingCopy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWorkingCopy] (val x: Self) extends AnyVal {
     
     inline def setChanged(value: Boolean): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
     

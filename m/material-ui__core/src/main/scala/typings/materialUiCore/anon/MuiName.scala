@@ -15,7 +15,8 @@ object MuiName {
     __obj.asInstanceOf[MuiName]
   }
   
-  extension [Self <: MuiName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MuiName] (val x: Self) extends AnyVal {
     
     inline def setMuiName(value: String): Self = StObject.set(x, "muiName", value.asInstanceOf[js.Any])
   }

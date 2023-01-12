@@ -85,7 +85,8 @@ object ViewModel {
       __obj.asInstanceOf[ILookAtData]
     }
     
-    extension [Self <: ILookAtData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILookAtData] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: AbstractGeometry): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       

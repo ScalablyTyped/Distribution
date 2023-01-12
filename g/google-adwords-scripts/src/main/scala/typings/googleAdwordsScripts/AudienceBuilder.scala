@@ -29,7 +29,8 @@ object AudienceBuilder {
     __obj.asInstanceOf[AudienceBuilder[Audience]]
   }
   
-  extension [Self <: AudienceBuilder[?], Audience](x: Self & AudienceBuilder[Audience]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudienceBuilder[?], Audience] (val x: Self & AudienceBuilder[Audience]) extends AnyVal {
     
     inline def setWithAudience(value: UserList => AudienceBuilder[Audience]): Self = StObject.set(x, "withAudience", js.Any.fromFunction1(value))
     

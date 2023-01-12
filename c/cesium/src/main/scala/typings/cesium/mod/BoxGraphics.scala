@@ -122,7 +122,8 @@ object BoxGraphics {
       __obj.asInstanceOf[ConstructorOptions]
     }
     
-    extension [Self <: ConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setDimensions(value: Property | Cartesian3): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       

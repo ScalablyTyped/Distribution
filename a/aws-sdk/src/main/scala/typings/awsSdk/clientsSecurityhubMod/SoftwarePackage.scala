@@ -58,7 +58,8 @@ object SoftwarePackage {
     __obj.asInstanceOf[SoftwarePackage]
   }
   
-  extension [Self <: SoftwarePackage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoftwarePackage] (val x: Self) extends AnyVal {
     
     inline def setArchitecture(value: NonEmptyString): Self = StObject.set(x, "Architecture", value.asInstanceOf[js.Any])
     

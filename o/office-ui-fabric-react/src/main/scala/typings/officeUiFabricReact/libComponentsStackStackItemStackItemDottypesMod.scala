@@ -201,7 +201,8 @@ object libComponentsStackStackItemStackItemDottypesMod {
       __obj.asInstanceOf[IStackItemProps]
     }
     
-    extension [Self <: IStackItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStackItemProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -424,7 +425,8 @@ object libComponentsStackStackItemStackItemDottypesMod {
       __obj.asInstanceOf[IStackItemSlots]
     }
     
-    extension [Self <: IStackItemSlots](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStackItemSlots] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: IHTMLSlot): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
@@ -444,7 +446,8 @@ object libComponentsStackStackItemStackItemDottypesMod {
       __obj.asInstanceOf[IStackItemStyles]
     }
     
-    extension [Self <: IStackItemStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStackItemStyles] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
@@ -482,7 +485,8 @@ object libComponentsStackStackItemStackItemDottypesMod {
       __obj.asInstanceOf[IStackItemTokens]
     }
     
-    extension [Self <: IStackItemTokens](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStackItemTokens] (val x: Self) extends AnyVal {
       
       inline def setMargin(value: Double | String): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       

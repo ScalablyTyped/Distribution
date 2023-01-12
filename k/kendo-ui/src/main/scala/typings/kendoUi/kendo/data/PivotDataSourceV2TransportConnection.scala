@@ -17,7 +17,8 @@ object PivotDataSourceV2TransportConnection {
     __obj.asInstanceOf[PivotDataSourceV2TransportConnection]
   }
   
-  extension [Self <: PivotDataSourceV2TransportConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotDataSourceV2TransportConnection] (val x: Self) extends AnyVal {
     
     inline def setCatalog(value: String): Self = StObject.set(x, "catalog", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object ProcedureFocalDevice {
     __obj.asInstanceOf[ProcedureFocalDevice]
   }
   
-  extension [Self <: ProcedureFocalDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcedureFocalDevice] (val x: Self) extends AnyVal {
     
     inline def setAction(value: CodeableConcept): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

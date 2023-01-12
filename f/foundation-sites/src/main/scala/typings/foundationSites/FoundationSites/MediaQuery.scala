@@ -38,7 +38,8 @@ object MediaQuery {
     __obj.asInstanceOf[MediaQuery]
   }
   
-  extension [Self <: MediaQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaQuery] (val x: Self) extends AnyVal {
     
     inline def setAtLeast(value: String => Boolean): Self = StObject.set(x, "atLeast", js.Any.fromFunction1(value))
     

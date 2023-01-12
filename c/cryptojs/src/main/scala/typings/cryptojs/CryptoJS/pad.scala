@@ -22,7 +22,8 @@ object pad {
       __obj.asInstanceOf[IPaddingImpl]
     }
     
-    extension [Self <: IPaddingImpl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPaddingImpl] (val x: Self) extends AnyVal {
       
       inline def setPad(value: (WordArray, Double) => Unit): Self = StObject.set(x, "pad", js.Any.fromFunction2(value))
       
@@ -64,7 +65,8 @@ object pad {
       __obj.asInstanceOf[PadStatic]
     }
     
-    extension [Self <: PadStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PadStatic] (val x: Self) extends AnyVal {
       
       inline def setAnsiX923(value: AnsiX923): Self = StObject.set(x, "AnsiX923", value.asInstanceOf[js.Any])
       

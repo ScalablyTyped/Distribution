@@ -17,7 +17,8 @@ object MultiSelectAnimationClose {
     __obj.asInstanceOf[MultiSelectAnimationClose]
   }
   
-  extension [Self <: MultiSelectAnimationClose](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiSelectAnimationClose] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

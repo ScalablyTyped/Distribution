@@ -53,7 +53,8 @@ object meteorDdpMod {
         __obj.asInstanceOf[DDPStatic]
       }
       
-      extension [Self <: DDPStatic](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DDPStatic] (val x: Self) extends AnyVal {
         
         inline def setApply(value: (String, /* repeated */ Any) => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
         
@@ -92,7 +93,8 @@ object meteorDdpMod {
         __obj.asInstanceOf[DDPStatus]
       }
       
-      extension [Self <: DDPStatus](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DDPStatus] (val x: Self) extends AnyVal {
         
         inline def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
         

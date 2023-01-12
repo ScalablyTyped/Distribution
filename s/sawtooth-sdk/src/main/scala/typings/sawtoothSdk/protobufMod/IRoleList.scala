@@ -16,7 +16,8 @@ object IRoleList {
     __obj.asInstanceOf[IRoleList]
   }
   
-  extension [Self <: IRoleList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRoleList] (val x: Self) extends AnyVal {
     
     inline def setRoles(value: js.Array[IRole]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     

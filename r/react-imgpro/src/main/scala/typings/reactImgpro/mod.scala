@@ -117,7 +117,8 @@ object mod {
         __obj.asInstanceOf[ProcessImageProps]
       }
       
-      extension [Self <: ProcessImageProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProcessImageProps] (val x: Self) extends AnyVal {
         
         inline def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
         
@@ -240,7 +241,8 @@ object mod {
         __obj.asInstanceOf[Shape]
       }
       
-      extension [Self <: Shape](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Shape] (val x: Self) extends AnyVal {
         
         inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
@@ -275,7 +277,8 @@ object mod {
         __obj.asInstanceOf[Size]
       }
       
-      extension [Self <: Size](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
         
         inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         

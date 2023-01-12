@@ -19,7 +19,8 @@ object DiagramConnectionDefaultsEditable {
     __obj.asInstanceOf[DiagramConnectionDefaultsEditable]
   }
   
-  extension [Self <: DiagramConnectionDefaultsEditable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramConnectionDefaultsEditable] (val x: Self) extends AnyVal {
     
     inline def setDrag(value: Boolean): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
     

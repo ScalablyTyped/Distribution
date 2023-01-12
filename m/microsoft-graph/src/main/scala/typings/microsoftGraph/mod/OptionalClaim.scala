@@ -35,7 +35,8 @@ object OptionalClaim {
     __obj.asInstanceOf[OptionalClaim]
   }
   
-  extension [Self <: OptionalClaim](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionalClaim] (val x: Self) extends AnyVal {
     
     inline def setAdditionalProperties(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
     

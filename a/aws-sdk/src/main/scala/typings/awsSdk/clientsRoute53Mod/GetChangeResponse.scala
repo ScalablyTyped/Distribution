@@ -18,7 +18,8 @@ object GetChangeResponse {
     __obj.asInstanceOf[GetChangeResponse]
   }
   
-  extension [Self <: GetChangeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetChangeResponse] (val x: Self) extends AnyVal {
     
     inline def setChangeInfo(value: ChangeInfo): Self = StObject.set(x, "ChangeInfo", value.asInstanceOf[js.Any])
   }

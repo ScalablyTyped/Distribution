@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[DataKey]
     }
     
-    extension [Self <: DataKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataKey] (val x: Self) extends AnyVal {
       
       inline def setDataKey(value: String): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
       

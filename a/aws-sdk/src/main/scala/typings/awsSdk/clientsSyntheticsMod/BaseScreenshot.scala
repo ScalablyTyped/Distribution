@@ -23,7 +23,8 @@ object BaseScreenshot {
     __obj.asInstanceOf[BaseScreenshot]
   }
   
-  extension [Self <: BaseScreenshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseScreenshot] (val x: Self) extends AnyVal {
     
     inline def setIgnoreCoordinates(value: BaseScreenshotIgnoreCoordinates): Self = StObject.set(x, "IgnoreCoordinates", value.asInstanceOf[js.Any])
     

@@ -99,7 +99,8 @@ object libVictoryUtilCommonPropsMod {
       __obj.asInstanceOf[VictoryCommonPrimitiveProps]
     }
     
-    extension [Self <: VictoryCommonPrimitiveProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryCommonPrimitiveProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -192,7 +193,8 @@ object libVictoryUtilCommonPropsMod {
       __obj.asInstanceOf[VictoryCommonProps]
     }
     
-    extension [Self <: VictoryCommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryCommonProps] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: VictoryThemeDefinition): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
@@ -251,7 +253,8 @@ object libVictoryUtilCommonPropsMod {
       __obj.asInstanceOf[VictoryCommonThemeProps]
     }
     
-    extension [Self <: VictoryCommonThemeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryCommonThemeProps] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean | AnimatePropTypeInterface): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -372,7 +375,8 @@ object libVictoryUtilCommonPropsMod {
       __obj.asInstanceOf[VictoryDatableProps]
     }
     
-    extension [Self <: VictoryDatableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryDatableProps] (val x: Self) extends AnyVal {
       
       inline def setCategories(value: CategoryPropType): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       

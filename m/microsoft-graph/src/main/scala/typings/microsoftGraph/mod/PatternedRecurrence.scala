@@ -22,7 +22,8 @@ object PatternedRecurrence {
     __obj.asInstanceOf[PatternedRecurrence]
   }
   
-  extension [Self <: PatternedRecurrence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatternedRecurrence] (val x: Self) extends AnyVal {
     
     inline def setPattern(value: NullableOption[RecurrencePattern]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     

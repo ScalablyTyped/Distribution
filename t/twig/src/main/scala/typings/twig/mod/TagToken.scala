@@ -22,7 +22,8 @@ object TagToken {
     __obj.asInstanceOf[TagToken]
   }
   
-  extension [Self <: TagToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagToken] (val x: Self) extends AnyVal {
     
     inline def setMatch(value: RegExpExecArray): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     

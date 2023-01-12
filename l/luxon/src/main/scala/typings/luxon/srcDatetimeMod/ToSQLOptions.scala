@@ -31,7 +31,8 @@ object ToSQLOptions {
     __obj.asInstanceOf[ToSQLOptions]
   }
   
-  extension [Self <: ToSQLOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToSQLOptions] (val x: Self) extends AnyVal {
     
     inline def setIncludeOffset(value: Boolean): Self = StObject.set(x, "includeOffset", value.asInstanceOf[js.Any])
     

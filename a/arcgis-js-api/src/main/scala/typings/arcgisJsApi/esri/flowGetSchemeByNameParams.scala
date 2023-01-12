@@ -47,7 +47,8 @@ object flowGetSchemeByNameParams {
     __obj.asInstanceOf[flowGetSchemeByNameParams]
   }
   
-  extension [Self <: flowGetSchemeByNameParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: flowGetSchemeByNameParams] (val x: Self) extends AnyVal {
     
     inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     

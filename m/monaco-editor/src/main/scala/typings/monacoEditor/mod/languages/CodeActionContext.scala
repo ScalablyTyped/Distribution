@@ -29,7 +29,8 @@ object CodeActionContext {
     __obj.asInstanceOf[CodeActionContext]
   }
   
-  extension [Self <: CodeActionContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeActionContext] (val x: Self) extends AnyVal {
     
     inline def setMarkers(value: js.Array[IMarkerData]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
     

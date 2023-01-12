@@ -76,7 +76,8 @@ object ProdCharacteristic {
     __obj.asInstanceOf[ProdCharacteristic]
   }
   
-  extension [Self <: ProdCharacteristic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProdCharacteristic] (val x: Self) extends AnyVal {
     
     inline def setColor(value: js.Array[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

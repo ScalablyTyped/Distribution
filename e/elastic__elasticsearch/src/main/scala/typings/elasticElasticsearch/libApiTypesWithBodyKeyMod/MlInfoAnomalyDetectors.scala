@@ -29,7 +29,8 @@ object MlInfoAnomalyDetectors {
     __obj.asInstanceOf[MlInfoAnomalyDetectors]
   }
   
-  extension [Self <: MlInfoAnomalyDetectors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlInfoAnomalyDetectors] (val x: Self) extends AnyVal {
     
     inline def setCategorization_analyzer(value: MlCategorizationAnalyzer): Self = StObject.set(x, "categorization_analyzer", value.asInstanceOf[js.Any])
     

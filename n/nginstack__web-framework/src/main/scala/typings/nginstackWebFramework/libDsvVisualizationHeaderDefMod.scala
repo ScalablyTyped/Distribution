@@ -64,7 +64,8 @@ object libDsvVisualizationHeaderDefMod {
       __obj.asInstanceOf[VisualizationHeaderDef]
     }
     
-    extension [Self <: VisualizationHeaderDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisualizationHeaderDef] (val x: Self) extends AnyVal {
       
       inline def setComplement(value: String): Self = StObject.set(x, "complement", value.asInstanceOf[js.Any])
       

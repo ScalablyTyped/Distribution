@@ -16,7 +16,8 @@ object PickBaseResultclientip {
     __obj.asInstanceOf[PickBaseResultclientip]
   }
   
-  extension [Self <: PickBaseResultclientip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickBaseResultclientip] (val x: Self) extends AnyVal {
     
     inline def setClient_ip(value: String): Self = StObject.set(x, "client_ip", value.asInstanceOf[js.Any])
   }

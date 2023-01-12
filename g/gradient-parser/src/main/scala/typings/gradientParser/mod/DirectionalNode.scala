@@ -33,7 +33,8 @@ object DirectionalNode {
     __obj.asInstanceOf[DirectionalNode]
   }
   
-  extension [Self <: DirectionalNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionalNode] (val x: Self) extends AnyVal {
     
     inline def setType(value: directional): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

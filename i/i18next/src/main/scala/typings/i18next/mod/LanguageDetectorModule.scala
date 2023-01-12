@@ -31,7 +31,8 @@ object LanguageDetectorModule {
     __obj.asInstanceOf[LanguageDetectorModule]
   }
   
-  extension [Self <: LanguageDetectorModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageDetectorModule] (val x: Self) extends AnyVal {
     
     inline def setCacheUserLanguage(value: String => Unit): Self = StObject.set(x, "cacheUserLanguage", js.Any.fromFunction1(value))
     

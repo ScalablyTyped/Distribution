@@ -24,7 +24,8 @@ object ILinterOptions {
     __obj.asInstanceOf[ILinterOptions]
   }
   
-  extension [Self <: ILinterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILinterOptions] (val x: Self) extends AnyVal {
     
     inline def setFix(value: Boolean): Self = StObject.set(x, "fix", value.asInstanceOf[js.Any])
     

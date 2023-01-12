@@ -28,7 +28,8 @@ object GlobalControlLevel {
     __obj.asInstanceOf[GlobalControlLevel]
   }
   
-  extension [Self <: GlobalControlLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalControlLevel] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

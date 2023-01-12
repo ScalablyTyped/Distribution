@@ -33,7 +33,8 @@ object MapAnnotationOverlayEvents {
     __obj.asInstanceOf[MapAnnotationOverlayEvents[T]]
   }
   
-  extension [Self <: MapAnnotationOverlayEvents[?], T](x: Self & MapAnnotationOverlayEvents[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapAnnotationOverlayEvents[?], T] (val x: Self & MapAnnotationOverlayEvents[T]) extends AnyVal {
     
     inline def setDeselect(value: EventBase[T] & typings.appleMapkitJsBrowser.anon.Annotation): Self = StObject.set(x, "deselect", value.asInstanceOf[js.Any])
     

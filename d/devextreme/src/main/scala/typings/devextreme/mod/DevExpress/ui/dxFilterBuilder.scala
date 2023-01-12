@@ -44,7 +44,8 @@ object dxFilterBuilder {
       __obj.asInstanceOf[CustomOperationEditorTemplate]
     }
     
-    extension [Self <: CustomOperationEditorTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomOperationEditorTemplate] (val x: Self) extends AnyVal {
       
       inline def setField(value: Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object dxFilterBuilder {
       __obj.asInstanceOf[EditorPreparedEvent]
     }
     
-    extension [Self <: EditorPreparedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorPreparedEvent] (val x: Self) extends AnyVal {
       
       inline def setDataField(value: String): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
       
@@ -180,7 +182,8 @@ object dxFilterBuilder {
       __obj.asInstanceOf[EditorPreparingEvent]
     }
     
-    extension [Self <: EditorPreparingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorPreparingEvent] (val x: Self) extends AnyVal {
       
       inline def setDataField(value: String): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
       
@@ -241,7 +244,8 @@ object dxFilterBuilder {
       __obj.asInstanceOf[FieldEditorTemplate]
     }
     
-    extension [Self <: FieldEditorTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldEditorTemplate] (val x: Self) extends AnyVal {
       
       inline def setField(value: Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -353,7 +357,8 @@ object dxFilterBuilder {
       __obj.asInstanceOf[ValueChangedEvent]
     }
     
-    extension [Self <: ValueChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setPreviousValue(value: Any): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
       

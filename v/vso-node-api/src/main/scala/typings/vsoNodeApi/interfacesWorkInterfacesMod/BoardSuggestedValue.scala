@@ -15,7 +15,8 @@ object BoardSuggestedValue {
     __obj.asInstanceOf[BoardSuggestedValue]
   }
   
-  extension [Self <: BoardSuggestedValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoardSuggestedValue] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

@@ -21,7 +21,8 @@ object BarButtonProps {
     __obj.asInstanceOf[BarButtonProps]
   }
   
-  extension [Self <: BarButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarButtonProps] (val x: Self) extends AnyVal {
     
     inline def setHref(value: Unit): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     

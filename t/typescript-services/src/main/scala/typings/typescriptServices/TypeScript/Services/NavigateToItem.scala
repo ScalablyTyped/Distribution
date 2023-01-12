@@ -44,7 +44,8 @@ object NavigateToItem {
     __obj.asInstanceOf[NavigateToItem]
   }
   
-  extension [Self <: NavigateToItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigateToItem] (val x: Self) extends AnyVal {
     
     inline def setAdditionalSpans(value: js.Array[SpanInfo]): Self = StObject.set(x, "additionalSpans", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object SnapshotGetResponse {
     __obj.asInstanceOf[SnapshotGetResponse]
   }
   
-  extension [Self <: SnapshotGetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotGetResponse] (val x: Self) extends AnyVal {
     
     inline def setRemaining(value: integer): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
     

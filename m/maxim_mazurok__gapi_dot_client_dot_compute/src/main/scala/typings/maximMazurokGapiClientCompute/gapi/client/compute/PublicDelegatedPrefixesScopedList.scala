@@ -20,7 +20,8 @@ object PublicDelegatedPrefixesScopedList {
     __obj.asInstanceOf[PublicDelegatedPrefixesScopedList]
   }
   
-  extension [Self <: PublicDelegatedPrefixesScopedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicDelegatedPrefixesScopedList] (val x: Self) extends AnyVal {
     
     inline def setPublicDelegatedPrefixes(value: js.Array[PublicDelegatedPrefix]): Self = StObject.set(x, "publicDelegatedPrefixes", value.asInstanceOf[js.Any])
     

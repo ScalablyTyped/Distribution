@@ -19,7 +19,8 @@ object Icon {
     __obj.asInstanceOf[Icon]
   }
   
-  extension [Self <: Icon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Icon] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String => Unit | js.Promise[Unit]): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     

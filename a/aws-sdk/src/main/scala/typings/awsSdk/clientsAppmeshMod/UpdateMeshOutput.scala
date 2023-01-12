@@ -15,7 +15,8 @@ object UpdateMeshOutput {
     __obj.asInstanceOf[UpdateMeshOutput]
   }
   
-  extension [Self <: UpdateMeshOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateMeshOutput] (val x: Self) extends AnyVal {
     
     inline def setMesh(value: MeshData): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
   }

@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Diff]
     }
     
-    extension [Self <: Diff](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Diff] (val x: Self) extends AnyVal {
       
       inline def setDiff(value: /* str */ String => String): Self = StObject.set(x, "diff", js.Any.fromFunction1(value))
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[Info]
     }
     
-    extension [Self <: Info](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
       
       inline def setInfo(value: /* str */ String => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
       

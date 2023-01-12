@@ -37,7 +37,8 @@ object ffmpegWorkerMp4Mod {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object ffmpegWorkerMp4Mod {
       __obj.asInstanceOf[OnMessageOptions]
     }
     
-    extension [Self <: OnMessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnMessageOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -76,7 +78,8 @@ object ffmpegWorkerMp4Mod {
       __obj.asInstanceOf[PostMessageOptions]
     }
     
-    extension [Self <: PostMessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostMessageOptions] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
@@ -105,7 +108,8 @@ object ffmpegWorkerMp4Mod {
       __obj.asInstanceOf[Worker]
     }
     
-    extension [Self <: Worker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Worker] (val x: Self) extends AnyVal {
       
       inline def setOnmessage(value: OnMessageOptions => Unit): Self = StObject.set(x, "onmessage", js.Any.fromFunction1(value))
       

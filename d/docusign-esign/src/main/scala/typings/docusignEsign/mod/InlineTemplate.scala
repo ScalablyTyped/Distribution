@@ -43,7 +43,8 @@ object InlineTemplate {
     __obj.asInstanceOf[InlineTemplate]
   }
   
-  extension [Self <: InlineTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineTemplate] (val x: Self) extends AnyVal {
     
     inline def setCustomFields(
       value: /* An `accountCustomField` is an envelope custom field that you set at the account level. Applying custom fields enables account administators to

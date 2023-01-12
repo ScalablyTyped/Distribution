@@ -45,7 +45,8 @@ object KmlTimeStamp {
     __obj.asInstanceOf[KmlTimeStamp]
   }
   
-  extension [Self <: KmlTimeStamp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlTimeStamp] (val x: Self) extends AnyVal {
     
     inline def setGetWhen(value: () => KmlDateTime): Self = StObject.set(x, "getWhen", js.Any.fromFunction0(value))
   }

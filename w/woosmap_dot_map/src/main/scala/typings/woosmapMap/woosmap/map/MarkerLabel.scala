@@ -30,7 +30,8 @@ object MarkerLabel {
     __obj.asInstanceOf[MarkerLabel]
   }
   
-  extension [Self <: MarkerLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerLabel] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

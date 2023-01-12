@@ -15,7 +15,8 @@ object BoundTargetFunction {
     __obj.asInstanceOf[BoundTargetFunction]
   }
   
-  extension [Self <: BoundTargetFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoundTargetFunction] (val x: Self) extends AnyVal {
     
     inline def setBoundTargetFunction(value: Any): Self = StObject.set(x, "boundTargetFunction", value.asInstanceOf[js.Any])
   }

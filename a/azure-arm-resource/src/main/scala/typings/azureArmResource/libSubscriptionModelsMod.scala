@@ -60,7 +60,8 @@ object libSubscriptionModelsMod {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object libSubscriptionModelsMod {
       __obj.asInstanceOf[Operation]
     }
     
-    extension [Self <: Operation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: OperationDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
@@ -150,7 +152,8 @@ object libSubscriptionModelsMod {
       __obj.asInstanceOf[OperationDisplay]
     }
     
-    extension [Self <: OperationDisplay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationDisplay] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -223,7 +226,8 @@ object libSubscriptionModelsMod {
       __obj.asInstanceOf[Subscription]
     }
     
-    extension [Self <: Subscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
       
       inline def setAuthorizationSource(value: String): Self = StObject.set(x, "authorizationSource", value.asInstanceOf[js.Any])
       
@@ -288,7 +292,8 @@ object libSubscriptionModelsMod {
       __obj.asInstanceOf[SubscriptionPolicies]
     }
     
-    extension [Self <: SubscriptionPolicies](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriptionPolicies] (val x: Self) extends AnyVal {
       
       inline def setLocationPlacementId(value: String): Self = StObject.set(x, "locationPlacementId", value.asInstanceOf[js.Any])
       
@@ -324,7 +329,8 @@ object libSubscriptionModelsMod {
       __obj.asInstanceOf[TenantIdDescription]
     }
     
-    extension [Self <: TenantIdDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TenantIdDescription] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

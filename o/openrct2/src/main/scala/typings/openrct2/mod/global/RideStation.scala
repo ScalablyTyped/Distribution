@@ -21,7 +21,8 @@ object RideStation {
     __obj.asInstanceOf[RideStation]
   }
   
-  extension [Self <: RideStation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RideStation] (val x: Self) extends AnyVal {
     
     inline def setEntrance(value: CoordsXYZD): Self = StObject.set(x, "entrance", value.asInstanceOf[js.Any])
     

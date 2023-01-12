@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[EphemPrivateKey]
     }
     
-    extension [Self <: EphemPrivateKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EphemPrivateKey] (val x: Self) extends AnyVal {
       
       inline def setEphemPrivateKey(value: Buffer): Self = StObject.set(x, "ephemPrivateKey", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object GoogleCloudVideointelligenceV1p2beta1FaceDetectionAnnotation {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1p2beta1FaceDetectionAnnotation]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1p2beta1FaceDetectionAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1p2beta1FaceDetectionAnnotation] (val x: Self) extends AnyVal {
     
     inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     

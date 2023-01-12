@@ -16,7 +16,8 @@ object HasEverOpened {
     __obj.asInstanceOf[HasEverOpened]
   }
   
-  extension [Self <: HasEverOpened](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasEverOpened] (val x: Self) extends AnyVal {
     
     inline def setHasEverOpened(value: `true`): Self = StObject.set(x, "hasEverOpened", value.asInstanceOf[js.Any])
   }

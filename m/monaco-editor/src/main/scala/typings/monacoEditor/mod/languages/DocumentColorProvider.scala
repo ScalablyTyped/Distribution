@@ -28,7 +28,8 @@ object DocumentColorProvider {
     __obj.asInstanceOf[DocumentColorProvider]
   }
   
-  extension [Self <: DocumentColorProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentColorProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideColorPresentations(
       value: (ITextModel, IColorInformation, CancellationToken) => ProviderResult[js.Array[IColorPresentation]]

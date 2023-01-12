@@ -22,7 +22,8 @@ object HasReducedPerformanceType {
     __obj.asInstanceOf[HasReducedPerformanceType]
   }
   
-  extension [Self <: HasReducedPerformanceType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasReducedPerformanceType] (val x: Self) extends AnyVal {
     
     inline def setHasReducedPerformance(value: Boolean): Self = StObject.set(x, "hasReducedPerformance", value.asInstanceOf[js.Any])
     

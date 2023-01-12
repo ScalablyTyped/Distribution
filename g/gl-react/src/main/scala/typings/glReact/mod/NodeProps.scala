@@ -40,7 +40,8 @@ object NodeProps {
     __obj.asInstanceOf[NodeProps]
   }
   
-  extension [Self <: NodeProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeProps] (val x: Self) extends AnyVal {
     
     inline def setBackbuffering(value: Boolean): Self = StObject.set(x, "backbuffering", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object Crawl {
     __obj.asInstanceOf[Crawl]
   }
   
-  extension [Self <: Crawl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Crawl] (val x: Self) extends AnyVal {
     
     inline def setCompletedOn(value: js.Date): Self = StObject.set(x, "CompletedOn", value.asInstanceOf[js.Any])
     

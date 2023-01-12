@@ -15,7 +15,8 @@ object PreserveComments {
     __obj.asInstanceOf[PreserveComments]
   }
   
-  extension [Self <: PreserveComments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreserveComments] (val x: Self) extends AnyVal {
     
     inline def setPreserveComments(value: Boolean): Self = StObject.set(x, "preserveComments", value.asInstanceOf[js.Any])
   }

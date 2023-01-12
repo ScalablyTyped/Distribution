@@ -53,7 +53,8 @@ object RedshiftSourceConfig {
     __obj.asInstanceOf[RedshiftSourceConfig]
   }
   
-  extension [Self <: RedshiftSourceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedshiftSourceConfig] (val x: Self) extends AnyVal {
     
     inline def setClusterIdentifier(value: RedshiftClusterIdentifier): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     

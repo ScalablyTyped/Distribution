@@ -19,7 +19,8 @@ object Compressed {
     __obj.asInstanceOf[Compressed]
   }
   
-  extension [Self <: Compressed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Compressed] (val x: Self) extends AnyVal {
     
     inline def setCompressed(value: Boolean): Self = StObject.set(x, "compressed", value.asInstanceOf[js.Any])
     

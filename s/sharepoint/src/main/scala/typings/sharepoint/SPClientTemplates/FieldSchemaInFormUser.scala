@@ -60,7 +60,8 @@ object FieldSchemaInFormUser {
     __obj.asInstanceOf[FieldSchemaInFormUser]
   }
   
-  extension [Self <: FieldSchemaInFormUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldSchemaInFormUser] (val x: Self) extends AnyVal {
     
     inline def setDefaultRender(value: Boolean): Self = StObject.set(x, "DefaultRender", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object confirmdialogConfirmdialogMod {
       __obj.asInstanceOf[ConfirmDialogOptions]
     }
     
-    extension [Self <: ConfirmDialogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfirmDialogOptions] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: () => Unit): Self = StObject.set(x, "accept", js.Any.fromFunction0(value))
       
@@ -140,7 +141,8 @@ object confirmdialogConfirmdialogMod {
       __obj.asInstanceOf[ConfirmDialogProps]
     }
     
-    extension [Self <: ConfirmDialogProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfirmDialogProps] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: () => Unit): Self = StObject.set(x, "accept", js.Any.fromFunction0(value))
       
@@ -237,7 +239,8 @@ object confirmdialogConfirmdialogMod {
       __obj.asInstanceOf[ConfirmDialogReturn]
     }
     
-    extension [Self <: ConfirmDialogReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfirmDialogReturn] (val x: Self) extends AnyVal {
       
       inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       

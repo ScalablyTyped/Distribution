@@ -145,7 +145,8 @@ object eventsDeviceInputEventsMod {
       __obj.asInstanceOf[IKeyboardEvent]
     }
     
-    extension [Self <: IKeyboardEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKeyboardEvent] (val x: Self) extends AnyVal {
       
       inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
@@ -327,7 +328,8 @@ object eventsDeviceInputEventsMod {
       __obj.asInstanceOf[IMouseEvent]
     }
     
-    extension [Self <: IMouseEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMouseEvent] (val x: Self) extends AnyVal {
       
       inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
@@ -444,7 +446,8 @@ object eventsDeviceInputEventsMod {
       __obj.asInstanceOf[IPointerEvent]
     }
     
-    extension [Self <: IPointerEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPointerEvent] (val x: Self) extends AnyVal {
       
       inline def setInputIndex(value: Exclude[PointerInput, Horizontal | Vertical | MouseWheelX | MouseWheelY | MouseWheelZ]): Self = StObject.set(x, "inputIndex", value.asInstanceOf[js.Any])
       
@@ -495,7 +498,8 @@ object eventsDeviceInputEventsMod {
       __obj.asInstanceOf[IUIEvent]
     }
     
-    extension [Self <: IUIEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUIEvent] (val x: Self) extends AnyVal {
       
       inline def setCurrentTarget(value: Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
@@ -584,7 +588,8 @@ object eventsDeviceInputEventsMod {
       __obj.asInstanceOf[IWheelEvent]
     }
     
-    extension [Self <: IWheelEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWheelEvent] (val x: Self) extends AnyVal {
       
       inline def setDeltaMode(value: Double): Self = StObject.set(x, "deltaMode", value.asInstanceOf[js.Any])
       

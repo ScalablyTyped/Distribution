@@ -17,7 +17,8 @@ object RequiredTelemetryOptions {
     __obj.asInstanceOf[RequiredTelemetryOptions]
   }
   
-  extension [Self <: RequiredTelemetryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredTelemetryOptions] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: ApplicationTelemetry): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
   }

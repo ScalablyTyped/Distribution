@@ -226,7 +226,8 @@ object mod {
       __obj.asInstanceOf[ClownfaceInit[D]]
     }
     
-    extension [Self <: ClownfaceInit[?], D /* <: DatasetCore[Quad, Quad] */](x: Self & ClownfaceInit[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClownfaceInit[?], D /* <: DatasetCore[Quad, Quad] */] (val x: Self & ClownfaceInit[D]) extends AnyVal {
       
       inline def setDataset(value: D): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
       
@@ -262,7 +263,8 @@ object mod {
       __obj.asInstanceOf[ClownfaceInitWithTerms[T, D]]
     }
     
-    extension [Self <: ClownfaceInitWithTerms[?, ?], T /* <: Term | js.Array[Term] */, D /* <: DatasetCore[Quad, Quad] */](x: Self & (ClownfaceInitWithTerms[T, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClownfaceInitWithTerms[?, ?], T /* <: Term | js.Array[Term] */, D /* <: DatasetCore[Quad, Quad] */] (val x: Self & (ClownfaceInitWithTerms[T, D])) extends AnyVal {
       
       inline def setDataset(value: D): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
       
@@ -300,7 +302,8 @@ object mod {
       __obj.asInstanceOf[ClownfaceInitWithValue[D]]
     }
     
-    extension [Self <: ClownfaceInitWithValue[?], D /* <: DatasetCore[Quad, Quad] */](x: Self & ClownfaceInitWithValue[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClownfaceInitWithValue[?], D /* <: DatasetCore[Quad, Quad] */] (val x: Self & ClownfaceInitWithValue[D]) extends AnyVal {
       
       inline def setDataset(value: D): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
       
@@ -338,7 +341,8 @@ object mod {
       __obj.asInstanceOf[ClownfaceInitWithValues[D]]
     }
     
-    extension [Self <: ClownfaceInitWithValues[?], D /* <: DatasetCore[Quad, Quad] */](x: Self & ClownfaceInitWithValues[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClownfaceInitWithValues[?], D /* <: DatasetCore[Quad, Quad] */] (val x: Self & ClownfaceInitWithValues[D]) extends AnyVal {
       
       inline def setDataset(value: D): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
       
@@ -414,7 +418,8 @@ object mod {
       __obj.asInstanceOf[NodeOptions]
     }
     
-    extension [Self <: NodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeOptions] (val x: Self) extends AnyVal {
       
       inline def setDatatype(value: Term | ToString): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
       
@@ -443,7 +448,8 @@ object mod {
       __obj.asInstanceOf[OutOptions]
     }
     
-    extension [Self <: OutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutOptions] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String | js.Array[String]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object JQRangeSliderRangeLength {
     __obj.asInstanceOf[JQRangeSliderRangeLength]
   }
   
-  extension [Self <: JQRangeSliderRangeLength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQRangeSliderRangeLength] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Any): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

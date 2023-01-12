@@ -63,7 +63,8 @@ object LangAccessibilitySeriesOptions {
     __obj.asInstanceOf[LangAccessibilitySeriesOptions]
   }
   
-  extension [Self <: LangAccessibilitySeriesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LangAccessibilitySeriesOptions] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

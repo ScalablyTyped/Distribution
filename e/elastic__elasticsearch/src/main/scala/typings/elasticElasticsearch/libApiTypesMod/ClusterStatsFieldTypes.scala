@@ -21,7 +21,8 @@ object ClusterStatsFieldTypes {
     __obj.asInstanceOf[ClusterStatsFieldTypes]
   }
   
-  extension [Self <: ClusterStatsFieldTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatsFieldTypes] (val x: Self) extends AnyVal {
     
     inline def setCount(value: integer): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

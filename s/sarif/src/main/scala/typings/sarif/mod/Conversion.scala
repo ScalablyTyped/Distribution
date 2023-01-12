@@ -33,7 +33,8 @@ object Conversion {
     __obj.asInstanceOf[Conversion]
   }
   
-  extension [Self <: Conversion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Conversion] (val x: Self) extends AnyVal {
     
     inline def setAnalysisToolLogFiles(value: js.Array[ArtifactLocation]): Self = StObject.set(x, "analysisToolLogFiles", value.asInstanceOf[js.Any])
     

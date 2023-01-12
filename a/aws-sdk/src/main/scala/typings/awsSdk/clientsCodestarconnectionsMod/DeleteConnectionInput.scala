@@ -18,7 +18,8 @@ object DeleteConnectionInput {
     __obj.asInstanceOf[DeleteConnectionInput]
   }
   
-  extension [Self <: DeleteConnectionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteConnectionInput] (val x: Self) extends AnyVal {
     
     inline def setConnectionArn(value: ConnectionArn): Self = StObject.set(x, "ConnectionArn", value.asInstanceOf[js.Any])
   }

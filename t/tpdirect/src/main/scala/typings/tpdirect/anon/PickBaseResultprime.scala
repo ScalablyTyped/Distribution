@@ -16,7 +16,8 @@ object PickBaseResultprime {
     __obj.asInstanceOf[PickBaseResultprime]
   }
   
-  extension [Self <: PickBaseResultprime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickBaseResultprime] (val x: Self) extends AnyVal {
     
     inline def setPrime(value: String): Self = StObject.set(x, "prime", value.asInstanceOf[js.Any])
   }

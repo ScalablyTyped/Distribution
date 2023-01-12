@@ -61,7 +61,8 @@ object SyntheticParameterCustomizationDefinition {
     __obj.asInstanceOf[SyntheticParameterCustomizationDefinition]
   }
   
-  extension [Self <: SyntheticParameterCustomizationDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyntheticParameterCustomizationDefinition] (val x: Self) extends AnyVal {
     
     inline def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     

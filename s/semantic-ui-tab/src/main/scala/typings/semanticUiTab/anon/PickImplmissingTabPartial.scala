@@ -31,7 +31,8 @@ object PickImplmissingTabPartial {
     __obj.asInstanceOf[PickImplmissingTabPartial]
   }
   
-  extension [Self <: PickImplmissingTabPartial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplmissingTabPartial] (val x: Self) extends AnyVal {
     
     inline def setApi(value: String): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     

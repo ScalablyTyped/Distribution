@@ -294,7 +294,8 @@ object mod {
       __obj.asInstanceOf[Constants]
     }
     
-    extension [Self <: Constants](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constants] (val x: Self) extends AnyVal {
       
       inline def setACCESS_TOKEN(value: access_token): Self = StObject.set(x, "ACCESS_TOKEN", value.asInstanceOf[js.Any])
       
@@ -343,7 +344,8 @@ object mod {
       __obj.asInstanceOf[LoggingConfig]
     }
     
-    extension [Self <: LoggingConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggingConfig] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: LoggingLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -478,7 +480,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAnonymousEndpoints(value: js.Array[String]): Self = StObject.set(x, "anonymousEndpoints", value.asInstanceOf[js.Any])
       
@@ -598,7 +601,8 @@ object mod {
       __obj.asInstanceOf[RequestInfo]
     }
     
-    extension [Self <: RequestInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestInfo] (val x: Self) extends AnyVal {
       
       inline def setParameters(value: Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
@@ -662,7 +666,8 @@ object mod {
       __obj.asInstanceOf[UserInfo]
     }
     
-    extension [Self <: UserInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserInfo] (val x: Self) extends AnyVal {
       
       inline def setProfile(value: Any): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
@@ -683,7 +688,8 @@ object mod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setLogging(value: LoggingConfig): Self = StObject.set(x, "Logging", value.asInstanceOf[js.Any])
       }

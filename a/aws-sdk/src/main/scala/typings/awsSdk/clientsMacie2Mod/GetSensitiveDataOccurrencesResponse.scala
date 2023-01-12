@@ -28,7 +28,8 @@ object GetSensitiveDataOccurrencesResponse {
     __obj.asInstanceOf[GetSensitiveDataOccurrencesResponse]
   }
   
-  extension [Self <: GetSensitiveDataOccurrencesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSensitiveDataOccurrencesResponse] (val x: Self) extends AnyVal {
     
     inline def setError(value: string): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

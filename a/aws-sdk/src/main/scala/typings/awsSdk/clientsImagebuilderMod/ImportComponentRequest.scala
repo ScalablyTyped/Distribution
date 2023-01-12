@@ -81,7 +81,8 @@ object ImportComponentRequest {
     __obj.asInstanceOf[ImportComponentRequest]
   }
   
-  extension [Self <: ImportComponentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportComponentRequest] (val x: Self) extends AnyVal {
     
     inline def setChangeDescription(value: NonEmptyString): Self = StObject.set(x, "changeDescription", value.asInstanceOf[js.Any])
     

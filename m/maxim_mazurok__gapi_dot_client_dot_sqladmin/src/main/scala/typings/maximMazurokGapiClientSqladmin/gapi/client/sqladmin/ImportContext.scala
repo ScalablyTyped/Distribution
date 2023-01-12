@@ -42,7 +42,8 @@ object ImportContext {
     __obj.asInstanceOf[ImportContext]
   }
   
-  extension [Self <: ImportContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportContext] (val x: Self) extends AnyVal {
     
     inline def setBakImportOptions(value: EncryptionOptions): Self = StObject.set(x, "bakImportOptions", value.asInstanceOf[js.Any])
     

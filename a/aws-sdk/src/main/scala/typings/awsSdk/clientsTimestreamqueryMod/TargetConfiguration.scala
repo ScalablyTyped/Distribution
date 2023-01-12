@@ -18,7 +18,8 @@ object TargetConfiguration {
     __obj.asInstanceOf[TargetConfiguration]
   }
   
-  extension [Self <: TargetConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetConfiguration] (val x: Self) extends AnyVal {
     
     inline def setTimestreamConfiguration(value: TimestreamConfiguration): Self = StObject.set(x, "TimestreamConfiguration", value.asInstanceOf[js.Any])
   }

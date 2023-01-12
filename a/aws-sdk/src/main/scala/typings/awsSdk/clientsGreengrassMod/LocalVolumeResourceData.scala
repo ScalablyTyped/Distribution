@@ -28,7 +28,8 @@ object LocalVolumeResourceData {
     __obj.asInstanceOf[LocalVolumeResourceData]
   }
   
-  extension [Self <: LocalVolumeResourceData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalVolumeResourceData] (val x: Self) extends AnyVal {
     
     inline def setDestinationPath(value: string): Self = StObject.set(x, "DestinationPath", value.asInstanceOf[js.Any])
     

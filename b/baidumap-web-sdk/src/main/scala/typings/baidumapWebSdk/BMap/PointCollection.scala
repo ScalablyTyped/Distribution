@@ -34,7 +34,8 @@ object PointCollection {
     __obj.asInstanceOf[PointCollection]
   }
   
-  extension [Self <: PointCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointCollection] (val x: Self) extends AnyVal {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

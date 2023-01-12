@@ -25,7 +25,8 @@ object PricePerBuyer {
     __obj.asInstanceOf[PricePerBuyer]
   }
   
-  extension [Self <: PricePerBuyer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PricePerBuyer] (val x: Self) extends AnyVal {
     
     inline def setAuctionTier(value: String): Self = StObject.set(x, "auctionTier", value.asInstanceOf[js.Any])
     

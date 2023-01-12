@@ -20,7 +20,8 @@ object P2pListResponse {
     __obj.asInstanceOf[P2pListResponse]
   }
   
-  extension [Self <: P2pListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: P2pListResponse] (val x: Self) extends AnyVal {
     
     inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     

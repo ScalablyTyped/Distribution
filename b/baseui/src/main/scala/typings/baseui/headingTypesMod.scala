@@ -27,7 +27,8 @@ object headingTypesMod {
       __obj.asInstanceOf[HeadingLevelProps]
     }
     
-    extension [Self <: HeadingLevelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeadingLevelProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object headingTypesMod {
       __obj.asInstanceOf[HeadingProps]
     }
     
-    extension [Self <: HeadingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeadingProps] (val x: Self) extends AnyVal {
       
       inline def setStyleLevel(value: `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "styleLevel", value.asInstanceOf[js.Any])
       

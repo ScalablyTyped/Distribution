@@ -22,7 +22,8 @@ object GPUOutOfMemoryError {
     __obj.asInstanceOf[GPUOutOfMemoryError]
   }
   
-  extension [Self <: GPUOutOfMemoryError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUOutOfMemoryError] (val x: Self) extends AnyVal {
     
     inline def set__brand(value: typings.webgpuTypes.webgpuTypesStrings.GPUOutOfMemoryError): Self = StObject.set(x, "__brand", value.asInstanceOf[js.Any])
   }

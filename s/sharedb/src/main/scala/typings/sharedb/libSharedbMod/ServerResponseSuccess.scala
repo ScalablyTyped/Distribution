@@ -33,7 +33,8 @@ object ServerResponseSuccess {
     __obj.asInstanceOf[ServerResponseSuccess]
   }
   
-  extension [Self <: ServerResponseSuccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerResponseSuccess] (val x: Self) extends AnyVal {
     
     inline def setA(value: RequestAction): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

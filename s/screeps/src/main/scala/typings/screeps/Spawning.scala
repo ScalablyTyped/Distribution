@@ -60,7 +60,8 @@ object Spawning {
     __obj.asInstanceOf[Spawning]
   }
   
-  extension [Self <: Spawning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Spawning] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: () => (OK & ScreepsReturnCode) | (ERR_NOT_OWNER & ScreepsReturnCode)): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     

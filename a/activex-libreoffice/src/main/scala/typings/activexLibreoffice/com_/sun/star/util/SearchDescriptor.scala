@@ -106,7 +106,8 @@ object SearchDescriptor {
     __obj.asInstanceOf[SearchDescriptor]
   }
   
-  extension [Self <: SearchDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchDescriptor] (val x: Self) extends AnyVal {
     
     inline def setSearchBackwards(value: Boolean): Self = StObject.set(x, "SearchBackwards", value.asInstanceOf[js.Any])
     

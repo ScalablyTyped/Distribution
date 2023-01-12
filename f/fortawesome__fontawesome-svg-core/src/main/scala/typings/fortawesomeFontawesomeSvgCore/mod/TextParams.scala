@@ -17,7 +17,8 @@ object TextParams {
     __obj.asInstanceOf[TextParams]
   }
   
-  extension [Self <: TextParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextParams] (val x: Self) extends AnyVal {
     
     inline def setTransform(value: Transform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     

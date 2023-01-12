@@ -18,7 +18,8 @@ object BatchDeleteWorldsResponse {
     __obj.asInstanceOf[BatchDeleteWorldsResponse]
   }
   
-  extension [Self <: BatchDeleteWorldsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteWorldsResponse] (val x: Self) extends AnyVal {
     
     inline def setUnprocessedWorlds(value: Arns): Self = StObject.set(x, "unprocessedWorlds", value.asInstanceOf[js.Any])
     

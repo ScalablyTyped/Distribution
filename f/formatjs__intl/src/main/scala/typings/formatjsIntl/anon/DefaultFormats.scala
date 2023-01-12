@@ -56,7 +56,8 @@ object DefaultFormats {
     __obj.asInstanceOf[DefaultFormats[T]]
   }
   
-  extension [Self <: DefaultFormats[?], T](x: Self & DefaultFormats[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultFormats[?], T] (val x: Self & DefaultFormats[T]) extends AnyVal {
     
     inline def setDefaultFormats(value: CustomFormats): Self = StObject.set(x, "defaultFormats", value.asInstanceOf[js.Any])
     

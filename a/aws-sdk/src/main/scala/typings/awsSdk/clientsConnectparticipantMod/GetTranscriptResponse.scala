@@ -28,7 +28,8 @@ object GetTranscriptResponse {
     __obj.asInstanceOf[GetTranscriptResponse]
   }
   
-  extension [Self <: GetTranscriptResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTranscriptResponse] (val x: Self) extends AnyVal {
     
     inline def setInitialContactId(value: ContactId): Self = StObject.set(x, "InitialContactId", value.asInstanceOf[js.Any])
     

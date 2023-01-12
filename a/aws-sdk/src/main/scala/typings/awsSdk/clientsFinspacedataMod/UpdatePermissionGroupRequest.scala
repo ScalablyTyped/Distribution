@@ -38,7 +38,8 @@ object UpdatePermissionGroupRequest {
     __obj.asInstanceOf[UpdatePermissionGroupRequest]
   }
   
-  extension [Self <: UpdatePermissionGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePermissionGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationPermissions(value: ApplicationPermissionList): Self = StObject.set(x, "applicationPermissions", value.asInstanceOf[js.Any])
     

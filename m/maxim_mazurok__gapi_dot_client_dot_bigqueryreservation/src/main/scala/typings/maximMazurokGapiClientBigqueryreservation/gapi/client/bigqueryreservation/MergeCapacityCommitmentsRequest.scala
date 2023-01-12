@@ -19,7 +19,8 @@ object MergeCapacityCommitmentsRequest {
     __obj.asInstanceOf[MergeCapacityCommitmentsRequest]
   }
   
-  extension [Self <: MergeCapacityCommitmentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergeCapacityCommitmentsRequest] (val x: Self) extends AnyVal {
     
     inline def setCapacityCommitmentIds(value: js.Array[String]): Self = StObject.set(x, "capacityCommitmentIds", value.asInstanceOf[js.Any])
     

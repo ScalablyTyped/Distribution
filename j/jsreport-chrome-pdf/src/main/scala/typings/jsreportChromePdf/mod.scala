@@ -124,7 +124,8 @@ object mod {
       __obj.asInstanceOf[Chrome]
     }
     
-    extension [Self <: Chrome](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chrome] (val x: Self) extends AnyVal {
       
       inline def setDisplayHeaderFooter(value: Boolean): Self = StObject.set(x, "displayHeaderFooter", value.asInstanceOf[js.Any])
       
@@ -211,7 +212,8 @@ object mod {
       __obj.asInstanceOf[ChromeImage]
     }
     
-    extension [Self <: ChromeImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChromeImage] (val x: Self) extends AnyVal {
       
       inline def setClip(value: Height): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
       
@@ -250,7 +252,8 @@ object mod {
       __obj.asInstanceOf[ChromeTemplate]
     }
     
-    extension [Self <: ChromeTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChromeTemplate] (val x: Self) extends AnyVal {
       
       inline def setChrome(value: PartialChrome): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
       
@@ -331,7 +334,8 @@ object mod {
       __obj.asInstanceOf[LaunchOptions]
     }
     
-    extension [Self <: LaunchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LaunchOptions] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -413,7 +417,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowLocalFilesAccess(value: Boolean): Self = StObject.set(x, "allowLocalFilesAccess", value.asInstanceOf[js.Any])
       
@@ -451,7 +456,8 @@ object mod {
         __obj.asInstanceOf[TemplateRegistry]
       }
       
-      extension [Self <: TemplateRegistry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TemplateRegistry] (val x: Self) extends AnyVal {
         
         inline def setChromeTemplate(value: ChromeTemplate): Self = StObject.set(x, "ChromeTemplate", value.asInstanceOf[js.Any])
       }

@@ -49,7 +49,8 @@ object ASPxClientDashboardItemDataAxis {
     __obj.asInstanceOf[ASPxClientDashboardItemDataAxis]
   }
   
-  extension [Self <: ASPxClientDashboardItemDataAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDashboardItemDataAxis] (val x: Self) extends AnyVal {
     
     inline def setGetDimensions(value: () => js.Array[ASPxClientDashboardItemDataDimension]): Self = StObject.set(x, "GetDimensions", js.Any.fromFunction0(value))
     

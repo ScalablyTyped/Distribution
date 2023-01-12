@@ -18,7 +18,8 @@ object CreateBackendEnvironmentResult {
     __obj.asInstanceOf[CreateBackendEnvironmentResult]
   }
   
-  extension [Self <: CreateBackendEnvironmentResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBackendEnvironmentResult] (val x: Self) extends AnyVal {
     
     inline def setBackendEnvironment(value: BackendEnvironment): Self = StObject.set(x, "backendEnvironment", value.asInstanceOf[js.Any])
   }

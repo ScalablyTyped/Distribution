@@ -71,7 +71,8 @@ object libEsmContextHotkeysHotkeysProviderMod {
       __obj.asInstanceOf[HotkeysContextState]
     }
     
-    extension [Self <: HotkeysContextState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HotkeysContextState] (val x: Self) extends AnyVal {
       
       inline def setHasProvider(value: Boolean): Self = StObject.set(x, "hasProvider", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object libEsmContextHotkeysHotkeysProviderMod {
       __obj.asInstanceOf[HotkeysProviderProps]
     }
     
-    extension [Self <: HotkeysProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HotkeysProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactChild): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

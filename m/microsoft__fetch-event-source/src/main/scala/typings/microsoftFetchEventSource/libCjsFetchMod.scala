@@ -48,7 +48,8 @@ object libCjsFetchMod {
       __obj.asInstanceOf[FetchEventSourceInit]
     }
     
-    extension [Self <: FetchEventSourceInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchEventSourceInit] (val x: Self) extends AnyVal {
       
       inline def setFetch(value: FnCall): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       

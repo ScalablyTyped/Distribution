@@ -25,7 +25,8 @@ object SystemInfoVideoSource {
     __obj.asInstanceOf[SystemInfoVideoSource]
   }
   
-  extension [Self <: SystemInfoVideoSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoVideoSource] (val x: Self) extends AnyVal {
     
     inline def setConnected(value: js.Array[SystemInfoVideoSourceInfo]): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object BackgroundBlanket {
     __obj.asInstanceOf[BackgroundBlanket]
   }
   
-  extension [Self <: BackgroundBlanket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundBlanket] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: Input): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

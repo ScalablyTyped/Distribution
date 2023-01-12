@@ -28,7 +28,8 @@ object AwsEcsTaskDefinitionProxyConfigurationDetails {
     __obj.asInstanceOf[AwsEcsTaskDefinitionProxyConfigurationDetails]
   }
   
-  extension [Self <: AwsEcsTaskDefinitionProxyConfigurationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsTaskDefinitionProxyConfigurationDetails] (val x: Self) extends AnyVal {
     
     inline def setContainerName(value: NonEmptyString): Self = StObject.set(x, "ContainerName", value.asInstanceOf[js.Any])
     

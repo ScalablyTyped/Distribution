@@ -31,7 +31,8 @@ object RaphaelGlowSettings {
     __obj.asInstanceOf[RaphaelGlowSettings]
   }
   
-  extension [Self <: RaphaelGlowSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaphaelGlowSettings] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

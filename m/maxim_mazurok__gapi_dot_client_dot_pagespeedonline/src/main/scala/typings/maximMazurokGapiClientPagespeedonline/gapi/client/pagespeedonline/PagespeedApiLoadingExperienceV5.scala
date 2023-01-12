@@ -30,7 +30,8 @@ object PagespeedApiLoadingExperienceV5 {
     __obj.asInstanceOf[PagespeedApiLoadingExperienceV5]
   }
   
-  extension [Self <: PagespeedApiLoadingExperienceV5](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PagespeedApiLoadingExperienceV5] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

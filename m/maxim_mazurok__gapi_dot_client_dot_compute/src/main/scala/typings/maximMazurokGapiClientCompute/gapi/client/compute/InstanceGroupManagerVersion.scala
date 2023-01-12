@@ -31,7 +31,8 @@ object InstanceGroupManagerVersion {
     __obj.asInstanceOf[InstanceGroupManagerVersion]
   }
   
-  extension [Self <: InstanceGroupManagerVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceGroupManagerVersion] (val x: Self) extends AnyVal {
     
     inline def setInstanceTemplate(value: String): Self = StObject.set(x, "instanceTemplate", value.asInstanceOf[js.Any])
     

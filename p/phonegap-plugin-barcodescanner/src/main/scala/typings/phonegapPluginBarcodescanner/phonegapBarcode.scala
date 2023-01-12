@@ -39,7 +39,8 @@ object phonegapBarcode {
       __obj.asInstanceOf[BarcodeScanOptions]
     }
     
-    extension [Self <: BarcodeScanOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BarcodeScanOptions] (val x: Self) extends AnyVal {
       
       inline def setDisableAnimations(value: Boolean): Self = StObject.set(x, "disableAnimations", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object phonegapBarcode {
       __obj.asInstanceOf[BarcodeScanResult]
     }
     
-    extension [Self <: BarcodeScanResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BarcodeScanResult] (val x: Self) extends AnyVal {
       
       inline def setCancelled(value: Boolean): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
       
@@ -157,7 +159,8 @@ object phonegapBarcode {
       __obj.asInstanceOf[EncodingType]
     }
     
-    extension [Self <: EncodingType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodingType] (val x: Self) extends AnyVal {
       
       inline def setEMAIL_TYPE(value: Any): Self = StObject.set(x, "EMAIL_TYPE", value.asInstanceOf[js.Any])
       

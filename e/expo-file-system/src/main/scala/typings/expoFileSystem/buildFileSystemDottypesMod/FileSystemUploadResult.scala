@@ -18,7 +18,8 @@ object FileSystemUploadResult {
     __obj.asInstanceOf[FileSystemUploadResult]
   }
   
-  extension [Self <: FileSystemUploadResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemUploadResult] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

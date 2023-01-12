@@ -22,7 +22,8 @@ object WeekNumberProps {
     __obj.asInstanceOf[WeekNumberProps]
   }
   
-  extension [Self <: WeekNumberProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeekNumberProps] (val x: Self) extends AnyVal {
     
     inline def setDates(value: js.Array[js.Date]): Self = StObject.set(x, "dates", value.asInstanceOf[js.Any])
     

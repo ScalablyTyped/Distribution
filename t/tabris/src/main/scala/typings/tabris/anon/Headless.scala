@@ -15,7 +15,8 @@ object Headless {
     __obj.asInstanceOf[Headless]
   }
   
-  extension [Self <: Headless](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Headless] (val x: Self) extends AnyVal {
     
     inline def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
     

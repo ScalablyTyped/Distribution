@@ -47,7 +47,8 @@ object AEC {
     __obj.asInstanceOf[AEC]
   }
   
-  extension [Self <: AEC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AEC] (val x: Self) extends AnyVal {
     
     inline def setAEC(value: Boolean): Self = StObject.set(x, "AEC", value.asInstanceOf[js.Any])
     

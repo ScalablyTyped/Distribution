@@ -23,7 +23,8 @@ object ShowPanel {
     __obj.asInstanceOf[ShowPanel]
   }
   
-  extension [Self <: ShowPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowPanel] (val x: Self) extends AnyVal {
     
     inline def setShowPanel(value: Boolean): Self = StObject.set(x, "showPanel", value.asInstanceOf[js.Any])
     

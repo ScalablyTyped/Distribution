@@ -19,7 +19,8 @@ object ApproximateSizeResult {
     __obj.asInstanceOf[ApproximateSizeResult]
   }
   
-  extension [Self <: ApproximateSizeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApproximateSizeResult] (val x: Self) extends AnyVal {
     
     inline def setApproximateSize(value: Double): Self = StObject.set(x, "approximateSize", value.asInstanceOf[js.Any])
     

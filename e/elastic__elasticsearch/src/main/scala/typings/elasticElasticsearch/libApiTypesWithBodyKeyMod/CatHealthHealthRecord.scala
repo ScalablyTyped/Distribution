@@ -112,7 +112,8 @@ object CatHealthHealthRecord {
     __obj.asInstanceOf[CatHealthHealthRecord]
   }
   
-  extension [Self <: CatHealthHealthRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatHealthHealthRecord] (val x: Self) extends AnyVal {
     
     inline def setActiveShardsPercent(value: String): Self = StObject.set(x, "activeShardsPercent", value.asInstanceOf[js.Any])
     

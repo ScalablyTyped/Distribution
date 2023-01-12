@@ -15,7 +15,8 @@ object DataViewReductionMetadata {
     __obj.asInstanceOf[DataViewReductionMetadata]
   }
   
-  extension [Self <: DataViewReductionMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewReductionMetadata] (val x: Self) extends AnyVal {
     
     inline def setCategorical(value: DataViewCategoricalReductionMetadata): Self = StObject.set(x, "categorical", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object dateTimeMod {
         __obj.asInstanceOf[typings.wordpressComponents.dateTimeMod.DateTimePicker.Props]
       }
       
-      extension [Self <: typings.wordpressComponents.dateTimeMod.DateTimePicker.Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.wordpressComponents.dateTimeMod.DateTimePicker.Props] (val x: Self) extends AnyVal {
         
         inline def setCurrentDate(value: String): Self = StObject.set(x, "currentDate", value.asInstanceOf[js.Any])
         

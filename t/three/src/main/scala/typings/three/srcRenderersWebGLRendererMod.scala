@@ -525,7 +525,8 @@ object srcRenderersWebGLRendererMod {
       __obj.asInstanceOf[WebGLDebug]
     }
     
-    extension [Self <: WebGLDebug](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebGLDebug] (val x: Self) extends AnyVal {
       
       inline def setCheckShaderErrors(value: Boolean): Self = StObject.set(x, "checkShaderErrors", value.asInstanceOf[js.Any])
     }
@@ -602,7 +603,8 @@ object srcRenderersWebGLRendererMod {
       __obj.asInstanceOf[WebGLRendererParameters]
     }
     
-    extension [Self <: WebGLRendererParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebGLRendererParameters] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       

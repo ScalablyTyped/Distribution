@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsExposureMod extends Shortcut {
       __obj.asInstanceOf[ExposureProps]
     }
     
-    extension [Self <: ExposureProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExposureProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

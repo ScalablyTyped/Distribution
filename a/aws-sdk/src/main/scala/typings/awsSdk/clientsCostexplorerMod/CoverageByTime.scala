@@ -28,7 +28,8 @@ object CoverageByTime {
     __obj.asInstanceOf[CoverageByTime]
   }
   
-  extension [Self <: CoverageByTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoverageByTime] (val x: Self) extends AnyVal {
     
     inline def setGroups(value: ReservationCoverageGroups): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     

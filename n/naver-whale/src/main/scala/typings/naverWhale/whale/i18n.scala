@@ -30,7 +30,8 @@ object i18n {
       __obj.asInstanceOf[DetectedLanguage]
     }
     
-    extension [Self <: DetectedLanguage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetectedLanguage] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object i18n {
       __obj.asInstanceOf[LanguageDetectionResult]
     }
     
-    extension [Self <: LanguageDetectionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LanguageDetectionResult] (val x: Self) extends AnyVal {
       
       inline def setIsReliable(value: Boolean): Self = StObject.set(x, "isReliable", value.asInstanceOf[js.Any])
       

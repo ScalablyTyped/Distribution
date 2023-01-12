@@ -28,7 +28,8 @@ object ThingGroupIndexingConfiguration {
     __obj.asInstanceOf[ThingGroupIndexingConfiguration]
   }
   
-  extension [Self <: ThingGroupIndexingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThingGroupIndexingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCustomFields(value: Fields): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     

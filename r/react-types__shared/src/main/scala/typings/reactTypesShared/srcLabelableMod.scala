@@ -43,7 +43,8 @@ object srcLabelableMod {
       __obj.asInstanceOf[LabelableProps]
     }
     
-    extension [Self <: LabelableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelableProps] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object srcLabelableMod {
       __obj.asInstanceOf[SpectrumLabelableProps]
     }
     
-    extension [Self <: SpectrumLabelableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpectrumLabelableProps] (val x: Self) extends AnyVal {
       
       inline def setContextualHelp(value: ReactNode): Self = StObject.set(x, "contextualHelp", value.asInstanceOf[js.Any])
       

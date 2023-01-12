@@ -20,7 +20,8 @@ object Points {
     __obj.asInstanceOf[Points]
   }
   
-  extension [Self <: Points](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Points] (val x: Self) extends AnyVal {
     
     inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     

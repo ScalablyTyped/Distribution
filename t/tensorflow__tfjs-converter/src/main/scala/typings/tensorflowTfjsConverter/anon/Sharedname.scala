@@ -50,7 +50,8 @@ object Sharedname {
     __obj.asInstanceOf[Sharedname]
   }
   
-  extension [Self <: Sharedname](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sharedname] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: Unit): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

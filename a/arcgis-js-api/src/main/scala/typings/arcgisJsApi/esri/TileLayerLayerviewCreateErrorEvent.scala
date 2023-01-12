@@ -17,7 +17,8 @@ object TileLayerLayerviewCreateErrorEvent {
     __obj.asInstanceOf[TileLayerLayerviewCreateErrorEvent]
   }
   
-  extension [Self <: TileLayerLayerviewCreateErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileLayerLayerviewCreateErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

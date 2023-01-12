@@ -57,7 +57,8 @@ object LoggingEvent {
     __obj.asInstanceOf[LoggingEvent]
   }
   
-  extension [Self <: LoggingEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoggingEvent] (val x: Self) extends AnyVal {
     
     inline def setCallStack(value: String): Self = StObject.set(x, "callStack", value.asInstanceOf[js.Any])
     

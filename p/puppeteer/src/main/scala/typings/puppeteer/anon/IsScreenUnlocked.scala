@@ -17,7 +17,8 @@ object IsScreenUnlocked {
     __obj.asInstanceOf[IsScreenUnlocked]
   }
   
-  extension [Self <: IsScreenUnlocked](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsScreenUnlocked] (val x: Self) extends AnyVal {
     
     inline def setIsScreenUnlocked(value: Boolean): Self = StObject.set(x, "isScreenUnlocked", value.asInstanceOf[js.Any])
     

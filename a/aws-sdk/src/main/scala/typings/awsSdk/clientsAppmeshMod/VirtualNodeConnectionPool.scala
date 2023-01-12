@@ -33,7 +33,8 @@ object VirtualNodeConnectionPool {
     __obj.asInstanceOf[VirtualNodeConnectionPool]
   }
   
-  extension [Self <: VirtualNodeConnectionPool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualNodeConnectionPool] (val x: Self) extends AnyVal {
     
     inline def setGrpc(value: VirtualNodeGrpcConnectionPool): Self = StObject.set(x, "grpc", value.asInstanceOf[js.Any])
     

@@ -60,7 +60,8 @@ object IgnoreWarnings {
     __obj.asInstanceOf[IgnoreWarnings]
   }
   
-  extension [Self <: IgnoreWarnings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnoreWarnings] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object RouteLocationMatched {
     __obj.asInstanceOf[RouteLocationMatched]
   }
   
-  extension [Self <: RouteLocationMatched](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteLocationMatched] (val x: Self) extends AnyVal {
     
     inline def setComponents(value: Record[String, RouteComponent]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object LocalizedPropertyInfo {
     __obj.asInstanceOf[LocalizedPropertyInfo]
   }
   
-  extension [Self <: LocalizedPropertyInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalizedPropertyInfo] (val x: Self) extends AnyVal {
     
     inline def setPropertyDisplayName(value: String): Self = StObject.set(x, "propertyDisplayName", value.asInstanceOf[js.Any])
     

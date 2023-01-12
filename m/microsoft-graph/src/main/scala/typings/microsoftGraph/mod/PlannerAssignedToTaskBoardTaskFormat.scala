@@ -28,7 +28,8 @@ object PlannerAssignedToTaskBoardTaskFormat {
     __obj.asInstanceOf[PlannerAssignedToTaskBoardTaskFormat]
   }
   
-  extension [Self <: PlannerAssignedToTaskBoardTaskFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlannerAssignedToTaskBoardTaskFormat] (val x: Self) extends AnyVal {
     
     inline def setOrderHintsByAssignee(value: NullableOption[PlannerOrderHintsByAssignee]): Self = StObject.set(x, "orderHintsByAssignee", value.asInstanceOf[js.Any])
     

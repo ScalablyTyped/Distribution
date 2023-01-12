@@ -328,7 +328,8 @@ object esComponentsDatePickerViewDatePickerViewMod {
       __obj.asInstanceOf[DatePickerViewProps]
     }
     
-    extension [Self <: DatePickerViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePickerViewProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       

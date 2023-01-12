@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[ExtractOptions]
     }
     
-    extension [Self <: ExtractOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtractOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowUnknownFormat(value: Boolean): Self = StObject.set(x, "allowUnknownFormat", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object mod {
       __obj.asInstanceOf[Headers]
     }
     
-    extension [Self <: Headers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
       
       inline def setDevmajor(value: Double): Self = StObject.set(x, "devmajor", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object RemoveNotificationChannelRequest {
     __obj.asInstanceOf[RemoveNotificationChannelRequest]
   }
   
-  extension [Self <: RemoveNotificationChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveNotificationChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setChannelId(value: ChannelId): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     

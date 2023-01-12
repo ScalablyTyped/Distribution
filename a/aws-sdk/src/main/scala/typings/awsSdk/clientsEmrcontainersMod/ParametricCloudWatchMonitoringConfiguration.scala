@@ -23,7 +23,8 @@ object ParametricCloudWatchMonitoringConfiguration {
     __obj.asInstanceOf[ParametricCloudWatchMonitoringConfiguration]
   }
   
-  extension [Self <: ParametricCloudWatchMonitoringConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametricCloudWatchMonitoringConfiguration] (val x: Self) extends AnyVal {
     
     inline def setLogGroupName(value: TemplateParameter): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     

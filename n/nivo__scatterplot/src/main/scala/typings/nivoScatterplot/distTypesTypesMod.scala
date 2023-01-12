@@ -136,7 +136,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ScatterPlotCanvasProps[RawDatum]]
     }
     
-    extension [Self <: ScatterPlotCanvasProps[?], RawDatum /* <: ScatterPlotDatum */](x: Self & ScatterPlotCanvasProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScatterPlotCanvasProps[?], RawDatum /* <: ScatterPlotDatum */] (val x: Self & ScatterPlotCanvasProps[RawDatum]) extends AnyVal {
       
       inline def setAnnotations(value: js.Array[AnnotationMatcher[ScatterPlotNodeData[RawDatum]]]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
@@ -460,7 +461,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ScatterPlotCommonProps[RawDatum]]
     }
     
-    extension [Self <: ScatterPlotCommonProps[?], RawDatum /* <: ScatterPlotDatum */](x: Self & ScatterPlotCommonProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScatterPlotCommonProps[?], RawDatum /* <: ScatterPlotDatum */] (val x: Self & ScatterPlotCommonProps[RawDatum]) extends AnyVal {
       
       inline def setAnnotations(value: js.Array[AnnotationMatcher[ScatterPlotNodeData[RawDatum]]]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
@@ -607,7 +609,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ScatterPlotDataProps[RawDatum]]
     }
     
-    extension [Self <: ScatterPlotDataProps[?], RawDatum /* <: ScatterPlotDatum */](x: Self & ScatterPlotDataProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScatterPlotDataProps[?], RawDatum /* <: ScatterPlotDatum */] (val x: Self & ScatterPlotDataProps[RawDatum]) extends AnyVal {
       
       inline def setData(value: js.Array[ScatterPlotRawSerie[RawDatum]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -628,7 +631,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ScatterPlotDatum]
     }
     
-    extension [Self <: ScatterPlotDatum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScatterPlotDatum] (val x: Self) extends AnyVal {
       
       inline def setX(value: ScatterPlotValue): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -694,7 +698,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ScatterPlotLayerProps[RawDatum]]
     }
     
-    extension [Self <: ScatterPlotLayerProps[?], RawDatum /* <: ScatterPlotDatum */](x: Self & ScatterPlotLayerProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScatterPlotLayerProps[?], RawDatum /* <: ScatterPlotDatum */] (val x: Self & ScatterPlotLayerProps[RawDatum]) extends AnyVal {
       
       inline def setInnerHeight(value: Double): Self = StObject.set(x, "innerHeight", value.asInstanceOf[js.Any])
       
@@ -771,7 +776,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ScatterPlotNodeData[RawDatum]]
     }
     
-    extension [Self <: ScatterPlotNodeData[?], RawDatum /* <: ScatterPlotDatum */](x: Self & ScatterPlotNodeData[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScatterPlotNodeData[?], RawDatum /* <: ScatterPlotDatum */] (val x: Self & ScatterPlotNodeData[RawDatum]) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -820,7 +826,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ScatterPlotNodeDynamicSizeSpec]
     }
     
-    extension [Self <: ScatterPlotNodeDynamicSizeSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScatterPlotNodeDynamicSizeSpec] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -860,7 +867,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ScatterPlotNodeProps[RawDatum]]
     }
     
-    extension [Self <: ScatterPlotNodeProps[?], RawDatum /* <: ScatterPlotDatum */](x: Self & ScatterPlotNodeProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScatterPlotNodeProps[?], RawDatum /* <: ScatterPlotDatum */] (val x: Self & ScatterPlotNodeProps[RawDatum]) extends AnyVal {
       
       inline def setBlendMode(value: CssMixBlendMode): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
       
@@ -911,7 +919,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ScatterPlotRawSerie[RawDatum]]
     }
     
-    extension [Self <: ScatterPlotRawSerie[?], RawDatum /* <: ScatterPlotDatum */](x: Self & ScatterPlotRawSerie[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScatterPlotRawSerie[?], RawDatum /* <: ScatterPlotDatum */] (val x: Self & ScatterPlotRawSerie[RawDatum]) extends AnyVal {
       
       inline def setData(value: js.Array[RawDatum]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -1041,7 +1050,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ScatterPlotSvgProps[RawDatum]]
     }
     
-    extension [Self <: ScatterPlotSvgProps[?], RawDatum /* <: ScatterPlotDatum */](x: Self & ScatterPlotSvgProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScatterPlotSvgProps[?], RawDatum /* <: ScatterPlotDatum */] (val x: Self & ScatterPlotSvgProps[RawDatum]) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -1286,7 +1296,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ScatterPlotTooltipProps[RawDatum]]
     }
     
-    extension [Self <: ScatterPlotTooltipProps[?], RawDatum /* <: ScatterPlotDatum */](x: Self & ScatterPlotTooltipProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScatterPlotTooltipProps[?], RawDatum /* <: ScatterPlotDatum */] (val x: Self & ScatterPlotTooltipProps[RawDatum]) extends AnyVal {
       
       inline def setNode(value: ScatterPlotNodeData[RawDatum]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }

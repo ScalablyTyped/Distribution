@@ -18,7 +18,8 @@ object distOperationsGeneralTypesMod {
       __obj.asInstanceOf[CascadeOption]
     }
     
-    extension [Self <: CascadeOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CascadeOption] (val x: Self) extends AnyVal {
       
       inline def setCascade(value: Boolean): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object distOperationsGeneralTypesMod {
       __obj.asInstanceOf[IfExistsOption]
     }
     
-    extension [Self <: IfExistsOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IfExistsOption] (val x: Self) extends AnyVal {
       
       inline def setIfExists(value: Boolean): Self = StObject.set(x, "ifExists", value.asInstanceOf[js.Any])
       
@@ -68,7 +70,8 @@ object distOperationsGeneralTypesMod {
       __obj.asInstanceOf[IfNotExistsOption]
     }
     
-    extension [Self <: IfNotExistsOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IfNotExistsOption] (val x: Self) extends AnyVal {
       
       inline def setIfNotExists(value: Boolean): Self = StObject.set(x, "ifNotExists", value.asInstanceOf[js.Any])
       
@@ -120,7 +123,8 @@ object distOperationsGeneralTypesMod {
       __obj.asInstanceOf[PgLiteralValue]
     }
     
-    extension [Self <: PgLiteralValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PgLiteralValue] (val x: Self) extends AnyVal {
       
       inline def setConstructor(value: /* value */ String => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
       

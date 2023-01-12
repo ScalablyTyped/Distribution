@@ -20,7 +20,8 @@ object ObserverArrayOpts {
     __obj.asInstanceOf[ObserverArrayOpts]
   }
   
-  extension [Self <: ObserverArrayOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObserverArrayOpts] (val x: Self) extends AnyVal {
     
     inline def setArray(value: Boolean): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
   }

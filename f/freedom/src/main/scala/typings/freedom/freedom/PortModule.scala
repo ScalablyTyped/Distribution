@@ -21,7 +21,8 @@ object PortModule {
     __obj.asInstanceOf[PortModule[T, T2]]
   }
   
-  extension [Self <: PortModule[?, ?], T, T2](x: Self & (PortModule[T, T2])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortModule[?, ?], T, T2] (val x: Self & (PortModule[T, T2])) extends AnyVal {
     
     inline def setControlChannel(value: String): Self = StObject.set(x, "controlChannel", value.asInstanceOf[js.Any])
   }

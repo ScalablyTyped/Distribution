@@ -21,7 +21,8 @@ object PluginStore {
     __obj.asInstanceOf[PluginStore]
   }
   
-  extension [Self <: PluginStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginStore] (val x: Self) extends AnyVal {
     
     inline def setDispatch(value: Any => Any): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
     

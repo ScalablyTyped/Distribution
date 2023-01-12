@@ -39,7 +39,8 @@ object VideoLiveStreamingDetails {
     __obj.asInstanceOf[VideoLiveStreamingDetails]
   }
   
-  extension [Self <: VideoLiveStreamingDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoLiveStreamingDetails] (val x: Self) extends AnyVal {
     
     inline def setActiveLiveChatId(value: String): Self = StObject.set(x, "activeLiveChatId", value.asInstanceOf[js.Any])
     

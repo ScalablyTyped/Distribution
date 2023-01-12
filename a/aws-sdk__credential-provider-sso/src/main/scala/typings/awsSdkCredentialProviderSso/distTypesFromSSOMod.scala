@@ -30,7 +30,8 @@ object distTypesFromSSOMod {
       __obj.asInstanceOf[FromSSOInit]
     }
     
-    extension [Self <: FromSSOInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromSSOInit] (val x: Self) extends AnyVal {
       
       inline def setSsoClient(value: SSOClient): Self = StObject.set(x, "ssoClient", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object distTypesFromSSOMod {
       __obj.asInstanceOf[SsoCredentialsParameters]
     }
     
-    extension [Self <: SsoCredentialsParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SsoCredentialsParameters] (val x: Self) extends AnyVal {
       
       inline def setSsoAccountId(value: String): Self = StObject.set(x, "ssoAccountId", value.asInstanceOf[js.Any])
       

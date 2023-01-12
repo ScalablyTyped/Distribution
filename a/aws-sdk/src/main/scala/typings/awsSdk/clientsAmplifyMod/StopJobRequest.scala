@@ -28,7 +28,8 @@ object StopJobRequest {
     __obj.asInstanceOf[StopJobRequest]
   }
   
-  extension [Self <: StopJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopJobRequest] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

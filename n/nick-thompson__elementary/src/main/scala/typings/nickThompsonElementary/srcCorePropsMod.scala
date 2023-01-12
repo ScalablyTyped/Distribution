@@ -41,7 +41,8 @@ object srcCorePropsMod {
       __obj.asInstanceOf[ConstProps]
     }
     
-    extension [Self <: ConstProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstProps] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -66,7 +67,8 @@ object srcCorePropsMod {
       __obj.asInstanceOf[ConvolveProps]
     }
     
-    extension [Self <: ConvolveProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvolveProps] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object srcCorePropsMod {
       __obj.asInstanceOf[DelayProps]
     }
     
-    extension [Self <: DelayProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DelayProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -120,7 +123,8 @@ object srcCorePropsMod {
       __obj.asInstanceOf[InProps]
     }
     
-    extension [Self <: InProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InProps] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -142,7 +146,8 @@ object srcCorePropsMod {
       __obj.asInstanceOf[KeyProps]
     }
     
-    extension [Self <: KeyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyProps] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -220,7 +225,8 @@ object srcCorePropsMod {
       __obj.asInstanceOf[SampleProps]
     }
     
-    extension [Self <: SampleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SampleProps] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -279,7 +285,8 @@ object srcCorePropsMod {
       __obj.asInstanceOf[SeqProps]
     }
     
-    extension [Self <: SeqProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeqProps] (val x: Self) extends AnyVal {
       
       inline def setHold(value: Boolean): Self = StObject.set(x, "hold", value.asInstanceOf[js.Any])
       

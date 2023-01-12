@@ -33,7 +33,8 @@ object CreateLocalGatewayRouteTableVpcAssociationRequest {
     __obj.asInstanceOf[CreateLocalGatewayRouteTableVpcAssociationRequest]
   }
   
-  extension [Self <: CreateLocalGatewayRouteTableVpcAssociationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLocalGatewayRouteTableVpcAssociationRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

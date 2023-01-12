@@ -95,7 +95,8 @@ object INumber {
     __obj.asInstanceOf[INumber]
   }
   
-  extension [Self <: INumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INumber] (val x: Self) extends AnyVal {
     
     inline def setAllowDecimals(value: Boolean): Self = StObject.set(x, "allowDecimals", value.asInstanceOf[js.Any])
     

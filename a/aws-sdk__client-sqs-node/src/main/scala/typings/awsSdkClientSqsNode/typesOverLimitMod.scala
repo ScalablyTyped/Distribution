@@ -18,7 +18,8 @@ object typesOverLimitMod {
       __obj.asInstanceOf[OverLimit]
     }
     
-    extension [Self <: OverLimit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverLimit] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.OverLimit): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

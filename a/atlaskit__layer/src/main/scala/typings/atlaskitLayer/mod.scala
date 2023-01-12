@@ -163,7 +163,8 @@ object mod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setAutoFlip(value: Boolean | FlipPositionType | js.Array[FlipPositionType]): Self = StObject.set(x, "autoFlip", value.asInstanceOf[js.Any])
       

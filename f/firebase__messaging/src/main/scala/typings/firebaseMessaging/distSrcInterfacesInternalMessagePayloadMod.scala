@@ -45,7 +45,8 @@ object distSrcInterfacesInternalMessagePayloadMod {
       __obj.asInstanceOf[FcmOptionsInternal]
     }
     
-    extension [Self <: FcmOptionsInternal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FcmOptionsInternal] (val x: Self) extends AnyVal {
       
       inline def setAnalytics_label(value: String): Self = StObject.set(x, "analytics_label", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object distSrcInterfacesInternalMessagePayloadMod {
       __obj.asInstanceOf[MessagePayloadInternal]
     }
     
-    extension [Self <: MessagePayloadInternal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessagePayloadInternal] (val x: Self) extends AnyVal {
       
       inline def setCollapse_key(value: String): Self = StObject.set(x, "collapse_key", value.asInstanceOf[js.Any])
       
@@ -127,7 +129,8 @@ object distSrcInterfacesInternalMessagePayloadMod {
       __obj.asInstanceOf[NotificationPayloadInternal]
     }
     
-    extension [Self <: NotificationPayloadInternal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationPayloadInternal] (val x: Self) extends AnyVal {
       
       inline def setClick_action(value: String): Self = StObject.set(x, "click_action", value.asInstanceOf[js.Any])
       

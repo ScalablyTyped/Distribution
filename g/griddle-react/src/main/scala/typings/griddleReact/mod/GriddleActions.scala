@@ -26,7 +26,8 @@ object GriddleActions {
     __obj.asInstanceOf[GriddleActions]
   }
   
-  extension [Self <: GriddleActions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GriddleActions] (val x: Self) extends AnyVal {
     
     inline def setOnGetPage(value: /* pageNumber */ Double => Unit): Self = StObject.set(x, "onGetPage", js.Any.fromFunction1(value))
     

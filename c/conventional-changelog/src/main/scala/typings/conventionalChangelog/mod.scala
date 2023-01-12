@@ -213,7 +213,8 @@ object mod {
       __obj.asInstanceOf[Options[TCommit, TContext]]
     }
     
-    extension [Self <: Options[?, ?], TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](x: Self & (Options[TCommit, TContext])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?, ?], TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */] (val x: Self & (Options[TCommit, TContext])) extends AnyVal {
       
       inline def setPreset(value: String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
       

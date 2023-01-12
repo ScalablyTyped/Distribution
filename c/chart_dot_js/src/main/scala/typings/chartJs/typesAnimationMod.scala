@@ -82,7 +82,8 @@ object typesAnimationMod {
       __obj.asInstanceOf[AnimationEvent]
     }
     
-    extension [Self <: AnimationEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationEvent] (val x: Self) extends AnyVal {
       
       inline def setChart(value: Chart[ChartType, DefaultDataPoint[ChartType], Any]): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       

@@ -51,7 +51,8 @@ object gapi {
       __obj.asInstanceOf[LoadConfig]
     }
     
-    extension [Self <: LoadConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadConfig] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: LoadCallback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object gapi {
         __obj.asInstanceOf[HttpRequestFulfilled[T]]
       }
       
-      extension [Self <: HttpRequestFulfilled[?], T](x: Self & HttpRequestFulfilled[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HttpRequestFulfilled[?], T] (val x: Self & HttpRequestFulfilled[T]) extends AnyVal {
         
         inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
@@ -216,7 +218,8 @@ object gapi {
         __obj.asInstanceOf[HttpRequestRejected]
       }
       
-      extension [Self <: HttpRequestRejected](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HttpRequestRejected] (val x: Self) extends AnyVal {
         
         inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
@@ -277,7 +280,8 @@ object gapi {
         __obj.asInstanceOf[RequestOptions]
       }
       
-      extension [Self <: RequestOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
         
         inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
@@ -318,7 +322,8 @@ object gapi {
         __obj.asInstanceOf[RpcRequest]
       }
       
-      extension [Self <: RpcRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RpcRequest] (val x: Self) extends AnyVal {
         
         inline def setCallback(value: js.Function2[/* jsonResp */ Any, /* rawResp */ String, Unit] => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       }
@@ -338,7 +343,8 @@ object gapi {
         __obj.asInstanceOf[TokenObject]
       }
       
-      extension [Self <: TokenObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TokenObject] (val x: Self) extends AnyVal {
         
         inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       }

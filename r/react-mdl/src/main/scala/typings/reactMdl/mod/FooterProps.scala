@@ -21,7 +21,8 @@ object FooterProps {
     __obj.asInstanceOf[FooterProps]
   }
   
-  extension [Self <: FooterProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FooterProps] (val x: Self) extends AnyVal {
     
     inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

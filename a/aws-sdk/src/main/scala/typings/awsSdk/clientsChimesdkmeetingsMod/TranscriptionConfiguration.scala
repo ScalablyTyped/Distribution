@@ -23,7 +23,8 @@ object TranscriptionConfiguration {
     __obj.asInstanceOf[TranscriptionConfiguration]
   }
   
-  extension [Self <: TranscriptionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranscriptionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEngineTranscribeMedicalSettings(value: EngineTranscribeMedicalSettings): Self = StObject.set(x, "EngineTranscribeMedicalSettings", value.asInstanceOf[js.Any])
     

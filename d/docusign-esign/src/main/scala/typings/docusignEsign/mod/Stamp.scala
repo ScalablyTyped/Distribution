@@ -103,7 +103,8 @@ object Stamp {
     __obj.asInstanceOf[Stamp]
   }
   
-  extension [Self <: Stamp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stamp] (val x: Self) extends AnyVal {
     
     inline def setAdoptedDateTime(value: String): Self = StObject.set(x, "adoptedDateTime", value.asInstanceOf[js.Any])
     

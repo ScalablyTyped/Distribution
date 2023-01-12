@@ -55,7 +55,8 @@ object esComponentsPageHeaderStyleMod {
       __obj.asInstanceOf[PageHeaderToken]
     }
     
-    extension [Self <: PageHeaderToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageHeaderToken] (val x: Self) extends AnyVal {
       
       inline def setComponentCls(value: String): Self = StObject.set(x, "componentCls", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object CallbackParameterName {
     __obj.asInstanceOf[CallbackParameterName]
   }
   
-  extension [Self <: CallbackParameterName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackParameterName] (val x: Self) extends AnyVal {
     
     inline def setCallbackParameterName(value: String): Self = StObject.set(x, "callbackParameterName", value.asInstanceOf[js.Any])
     

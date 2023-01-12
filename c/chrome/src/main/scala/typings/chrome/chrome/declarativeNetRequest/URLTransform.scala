@@ -50,7 +50,8 @@ object URLTransform {
     __obj.asInstanceOf[URLTransform]
   }
   
-  extension [Self <: URLTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: URLTransform] (val x: Self) extends AnyVal {
     
     inline def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
     

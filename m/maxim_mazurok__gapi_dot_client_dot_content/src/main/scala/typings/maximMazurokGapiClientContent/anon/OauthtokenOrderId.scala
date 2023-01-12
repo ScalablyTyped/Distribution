@@ -53,7 +53,8 @@ object OauthtokenOrderId {
     __obj.asInstanceOf[OauthtokenOrderId]
   }
   
-  extension [Self <: OauthtokenOrderId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OauthtokenOrderId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

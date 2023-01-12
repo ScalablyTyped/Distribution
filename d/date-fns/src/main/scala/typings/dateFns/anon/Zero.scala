@@ -21,7 +21,8 @@ object Zero {
     __obj.asInstanceOf[Zero]
   }
   
-  extension [Self <: Zero](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Zero] (val x: Self) extends AnyVal {
     
     inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     

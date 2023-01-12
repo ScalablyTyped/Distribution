@@ -48,7 +48,8 @@ object CPHashedDataAsync {
     __obj.asInstanceOf[CPHashedDataAsync]
   }
   
-  extension [Self <: CPHashedDataAsync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CPHashedDataAsync] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(
       value: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CADES_Common.ValuesOf<cadesplugin.CAdESCOM.CADESCOM_HASH_ALGORITHM & cadesplugin.CAPICOM.CAPICOM_HASH_ALGORITHM> extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CADES_Common.ValuesOf<cadesplugin.CAdESCOM.CADESCOM_HASH_ALGORITHM & cadesplugin.CAPICOM.CAPICOM_HASH_ALGORITHM>> : // tslint:disable-line ban-types

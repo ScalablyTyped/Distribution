@@ -38,7 +38,8 @@ object ActivePaneChangedEventUIParam {
     __obj.asInstanceOf[ActivePaneChangedEventUIParam]
   }
   
-  extension [Self <: ActivePaneChangedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivePaneChangedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setActiveCell(value: String): Self = StObject.set(x, "activeCell", value.asInstanceOf[js.Any])
     

@@ -73,7 +73,8 @@ object MergedParserOptions {
     __obj.asInstanceOf[MergedParserOptions]
   }
   
-  extension [Self <: MergedParserOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergedParserOptions] (val x: Self) extends AnyVal {
     
     inline def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     

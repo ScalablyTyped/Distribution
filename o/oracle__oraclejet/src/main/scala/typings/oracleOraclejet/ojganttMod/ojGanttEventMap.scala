@@ -237,7 +237,8 @@ object ojGanttEventMap {
     __obj.asInstanceOf[ojGanttEventMap[K1, K2, D1, D2]]
   }
   
-  extension [Self <: ojGanttEventMap[?, ?, ?, ?], K1, K2, D1, D2](x: Self & (ojGanttEventMap[K1, K2, D1, D2])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojGanttEventMap[?, ?, ?, ?], K1, K2, D1, D2] (val x: Self & (ojGanttEventMap[K1, K2, D1, D2])) extends AnyVal {
     
     inline def setAnimationOnDataChangeChanged(value: JetElementCustomEvent[auto | none]): Self = StObject.set(x, "animationOnDataChangeChanged", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object typesProvisionedThroughputExceededExceptionMod {
       __obj.asInstanceOf[ProvisionedThroughputExceededException]
     }
     
-    extension [Self <: ProvisionedThroughputExceededException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvisionedThroughputExceededException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.ProvisionedThroughputExceededException
@@ -49,7 +50,8 @@ object typesProvisionedThroughputExceededExceptionMod {
       __obj.asInstanceOf[ProvisionedThroughputExceededExceptionDetails]
     }
     
-    extension [Self <: ProvisionedThroughputExceededExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvisionedThroughputExceededExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

@@ -57,7 +57,8 @@ object libCommonProtocolDotlinkedEditingRangeMod {
       __obj.asInstanceOf[LinkedEditingRangeClientCapabilities]
     }
     
-    extension [Self <: LinkedEditingRangeClientCapabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkedEditingRangeClientCapabilities] (val x: Self) extends AnyVal {
       
       inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object libCommonProtocolDotlinkedEditingRangeMod {
       __obj.asInstanceOf[LinkedEditingRanges]
     }
     
-    extension [Self <: LinkedEditingRanges](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkedEditingRanges] (val x: Self) extends AnyVal {
       
       inline def setRanges(value: js.Array[Range]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
       

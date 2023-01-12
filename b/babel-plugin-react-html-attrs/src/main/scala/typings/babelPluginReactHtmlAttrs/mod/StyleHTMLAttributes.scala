@@ -23,7 +23,8 @@ object StyleHTMLAttributes {
     __obj.asInstanceOf[StyleHTMLAttributes[T]]
   }
   
-  extension [Self <: StyleHTMLAttributes[?], T](x: Self & StyleHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleHTMLAttributes[?], T] (val x: Self & StyleHTMLAttributes[T]) extends AnyVal {
     
     inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     

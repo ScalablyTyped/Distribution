@@ -17,7 +17,8 @@ object IAutomaticMetadataResult {
     __obj.asInstanceOf[IAutomaticMetadataResult]
   }
   
-  extension [Self <: IAutomaticMetadataResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAutomaticMetadataResult] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IAutomaticMetadataResult): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

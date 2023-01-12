@@ -23,7 +23,8 @@ object PanoramaOptions {
     __obj.asInstanceOf[PanoramaOptions]
   }
   
-  extension [Self <: PanoramaOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PanoramaOptions] (val x: Self) extends AnyVal {
     
     inline def setAlbumsControl(value: Boolean): Self = StObject.set(x, "albumsControl", value.asInstanceOf[js.Any])
     

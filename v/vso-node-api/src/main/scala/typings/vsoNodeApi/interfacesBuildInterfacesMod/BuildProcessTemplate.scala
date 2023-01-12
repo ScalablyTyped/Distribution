@@ -44,7 +44,8 @@ object BuildProcessTemplate {
     __obj.asInstanceOf[BuildProcessTemplate]
   }
   
-  extension [Self <: BuildProcessTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildProcessTemplate] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

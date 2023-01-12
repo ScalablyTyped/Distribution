@@ -28,7 +28,8 @@ object LocationList {
     __obj.asInstanceOf[LocationList]
   }
   
-  extension [Self <: LocationList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationList] (val x: Self) extends AnyVal {
     
     inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     

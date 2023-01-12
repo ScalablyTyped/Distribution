@@ -42,7 +42,8 @@ object dxTabsBaseOptions {
     __obj.asInstanceOf[dxTabsBaseOptions[TComponent, TItem, TKey]]
   }
   
-  extension [Self <: dxTabsBaseOptions[?, ?, ?], TComponent /* <: dxTabs[Any, TItem, TKey] */, TItem /* <: ItemLike */, TKey](x: Self & (dxTabsBaseOptions[TComponent, TItem, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxTabsBaseOptions[?, ?, ?], TComponent /* <: dxTabs[Any, TItem, TKey] */, TItem /* <: ItemLike */, TKey] (val x: Self & (dxTabsBaseOptions[TComponent, TItem, TKey])) extends AnyVal {
     
     inline def setRepaintChangesOnly(value: Boolean): Self = StObject.set(x, "repaintChangesOnly", value.asInstanceOf[js.Any])
     

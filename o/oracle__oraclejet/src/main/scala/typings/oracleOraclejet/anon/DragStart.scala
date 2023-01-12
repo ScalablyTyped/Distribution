@@ -21,7 +21,8 @@ object DragStart {
     __obj.asInstanceOf[DragStart]
   }
   
-  extension [Self <: DragStart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragStart] (val x: Self) extends AnyVal {
     
     inline def setDataTypes(value: String | js.Array[String]): Self = StObject.set(x, "dataTypes", value.asInstanceOf[js.Any])
     

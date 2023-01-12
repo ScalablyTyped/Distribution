@@ -17,7 +17,8 @@ object Contentsecuritypolicy {
     __obj.asInstanceOf[Contentsecuritypolicy]
   }
   
-  extension [Self <: Contentsecuritypolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Contentsecuritypolicy] (val x: Self) extends AnyVal {
     
     inline def setContent_security_policy(value: String): Self = StObject.set(x, "content_security_policy", value.asInstanceOf[js.Any])
     

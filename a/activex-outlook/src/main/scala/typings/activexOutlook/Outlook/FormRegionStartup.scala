@@ -37,7 +37,8 @@ object FormRegionStartup {
     __obj.asInstanceOf[FormRegionStartup]
   }
   
-  extension [Self <: FormRegionStartup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormRegionStartup] (val x: Self) extends AnyVal {
     
     inline def setBeforeFormRegionShow(value: FormRegion => Unit): Self = StObject.set(x, "BeforeFormRegionShow", js.Any.fromFunction1(value))
     

@@ -21,7 +21,8 @@ object IModelOptionsChangedEvent {
     __obj.asInstanceOf[IModelOptionsChangedEvent]
   }
   
-  extension [Self <: IModelOptionsChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IModelOptionsChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setIndentSize(value: Boolean): Self = StObject.set(x, "indentSize", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object IOCounters {
     __obj.asInstanceOf[IOCounters]
   }
   
-  extension [Self <: IOCounters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOCounters] (val x: Self) extends AnyVal {
     
     inline def setOtherOperationCount(value: Double): Self = StObject.set(x, "otherOperationCount", value.asInstanceOf[js.Any])
     

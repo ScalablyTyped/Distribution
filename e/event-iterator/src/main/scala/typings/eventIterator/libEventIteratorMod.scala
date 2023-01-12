@@ -37,7 +37,8 @@ object libEventIteratorMod {
       __obj.asInstanceOf[EventHandlers]
     }
     
-    extension [Self <: EventHandlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventHandlers] (val x: Self) extends AnyVal {
       
       inline def setHighWater(value: () => Unit): Self = StObject.set(x, "highWater", js.Any.fromFunction0(value))
       
@@ -58,7 +59,8 @@ object libEventIteratorMod {
       __obj.asInstanceOf[EventIteratorOptions]
     }
     
-    extension [Self <: EventIteratorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventIteratorOptions] (val x: Self) extends AnyVal {
       
       inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object libEventIteratorMod {
       __obj.asInstanceOf[Queue[T]]
     }
     
-    extension [Self <: Queue[?], T](x: Self & Queue[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Queue[?], T] (val x: Self & Queue[T]) extends AnyVal {
       
       inline def setFail(value: js.Error => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
       

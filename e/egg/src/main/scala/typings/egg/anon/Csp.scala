@@ -47,7 +47,8 @@ object Csp {
     __obj.asInstanceOf[Csp]
   }
   
-  extension [Self <: Csp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Csp] (val x: Self) extends AnyVal {
     
     inline def setCsp(value: Any): Self = StObject.set(x, "csp", value.asInstanceOf[js.Any])
     

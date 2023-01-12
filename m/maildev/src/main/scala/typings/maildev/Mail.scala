@@ -26,7 +26,8 @@ object Mail {
     __obj.asInstanceOf[Mail]
   }
   
-  extension [Self <: Mail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mail] (val x: Self) extends AnyVal {
     
     inline def setEnvelope(value: js.Object): Self = StObject.set(x, "envelope", value.asInstanceOf[js.Any])
     

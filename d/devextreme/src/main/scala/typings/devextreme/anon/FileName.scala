@@ -39,7 +39,8 @@ object FileName {
     __obj.asInstanceOf[FileName]
   }
   
-  extension [Self <: FileName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileName] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object libCoreIndentationMod {
       __obj.asInstanceOf[Indentation]
     }
     
-    extension [Self <: Indentation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Indentation] (val x: Self) extends AnyVal {
       
       inline def setDecreaseBlockLevel(value: () => Unit): Self = StObject.set(x, "decreaseBlockLevel", js.Any.fromFunction0(value))
       

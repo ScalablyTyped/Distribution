@@ -22,7 +22,8 @@ object GooglePrivacyDlpV2ContentItem {
     __obj.asInstanceOf[GooglePrivacyDlpV2ContentItem]
   }
   
-  extension [Self <: GooglePrivacyDlpV2ContentItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2ContentItem] (val x: Self) extends AnyVal {
     
     inline def setByteItem(value: GooglePrivacyDlpV2ByteContentItem): Self = StObject.set(x, "byteItem", value.asInstanceOf[js.Any])
     

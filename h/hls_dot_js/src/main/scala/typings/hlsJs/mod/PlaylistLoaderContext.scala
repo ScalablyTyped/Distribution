@@ -32,7 +32,8 @@ object PlaylistLoaderContext {
     __obj.asInstanceOf[PlaylistLoaderContext]
   }
   
-  extension [Self <: PlaylistLoaderContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaylistLoaderContext] (val x: Self) extends AnyVal {
     
     inline def setDeliveryDirectives(value: HlsUrlParameters): Self = StObject.set(x, "deliveryDirectives", value.asInstanceOf[js.Any])
     

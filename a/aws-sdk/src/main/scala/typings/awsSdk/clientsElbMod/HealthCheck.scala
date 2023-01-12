@@ -44,7 +44,8 @@ object HealthCheck {
     __obj.asInstanceOf[HealthCheck]
   }
   
-  extension [Self <: HealthCheck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HealthCheck] (val x: Self) extends AnyVal {
     
     inline def setHealthyThreshold(value: HealthyThreshold): Self = StObject.set(x, "HealthyThreshold", value.asInstanceOf[js.Any])
     

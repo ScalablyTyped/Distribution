@@ -22,7 +22,8 @@ object ThirdPartyVerifierAssignedTargetingOptionDetails {
     __obj.asInstanceOf[ThirdPartyVerifierAssignedTargetingOptionDetails]
   }
   
-  extension [Self <: ThirdPartyVerifierAssignedTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThirdPartyVerifierAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setAdloox(value: Adloox): Self = StObject.set(x, "adloox", value.asInstanceOf[js.Any])
     

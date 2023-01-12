@@ -34,7 +34,8 @@ object ExternalRenderer {
     __obj.asInstanceOf[ExternalRenderer]
   }
   
-  extension [Self <: ExternalRenderer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalRenderer] (val x: Self) extends AnyVal {
     
     inline def setDispose(value: /* context */ js.UndefOr[RenderContext] => scala.Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction1(value))
     

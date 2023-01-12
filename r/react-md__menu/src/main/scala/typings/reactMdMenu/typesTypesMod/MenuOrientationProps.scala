@@ -21,7 +21,8 @@ object MenuOrientationProps {
     __obj.asInstanceOf[MenuOrientationProps]
   }
   
-  extension [Self <: MenuOrientationProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuOrientationProps] (val x: Self) extends AnyVal {
     
     inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     

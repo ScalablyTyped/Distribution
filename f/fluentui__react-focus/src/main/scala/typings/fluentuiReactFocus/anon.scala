@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[ComponentPath]
     }
     
-    extension [Self <: ComponentPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentPath] (val x: Self) extends AnyVal {
       
       inline def setComponentPath(value: String): Self = StObject.set(x, "componentPath", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object PartialCommentMargins {
     __obj.asInstanceOf[PartialCommentMargins]
   }
   
-  extension [Self <: PartialCommentMargins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCommentMargins] (val x: Self) extends AnyVal {
     
     inline def setInset(value: js.Array[Number]): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     

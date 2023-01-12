@@ -33,7 +33,8 @@ object FpgaDeviceInfo {
     __obj.asInstanceOf[FpgaDeviceInfo]
   }
   
-  extension [Self <: FpgaDeviceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FpgaDeviceInfo] (val x: Self) extends AnyVal {
     
     inline def setCount(value: FpgaDeviceCount): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

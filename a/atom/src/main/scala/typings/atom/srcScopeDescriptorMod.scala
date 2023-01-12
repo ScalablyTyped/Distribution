@@ -18,7 +18,8 @@ object srcScopeDescriptorMod {
       __obj.asInstanceOf[ScopeDescriptor]
     }
     
-    extension [Self <: ScopeDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScopeDescriptor] (val x: Self) extends AnyVal {
       
       inline def setGetScopesArray(value: () => js.Array[String]): Self = StObject.set(x, "getScopesArray", js.Any.fromFunction0(value))
     }

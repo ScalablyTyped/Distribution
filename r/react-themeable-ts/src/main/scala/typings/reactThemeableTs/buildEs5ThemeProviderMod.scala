@@ -51,7 +51,8 @@ object buildEs5ThemeProviderMod {
       __obj.asInstanceOf[IThemeProviderContext]
     }
     
-    extension [Self <: IThemeProviderContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IThemeProviderContext] (val x: Self) extends AnyVal {
       
       inline def setReactThemeable(value: Any): Self = StObject.set(x, "reactThemeable", value.asInstanceOf[js.Any])
     }
@@ -70,7 +71,8 @@ object buildEs5ThemeProviderMod {
       __obj.asInstanceOf[IThemeProviderProps]
     }
     
-    extension [Self <: IThemeProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IThemeProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

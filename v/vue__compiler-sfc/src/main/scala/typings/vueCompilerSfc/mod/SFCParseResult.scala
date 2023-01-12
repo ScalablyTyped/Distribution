@@ -18,7 +18,8 @@ object SFCParseResult {
     __obj.asInstanceOf[SFCParseResult]
   }
   
-  extension [Self <: SFCParseResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SFCParseResult] (val x: Self) extends AnyVal {
     
     inline def setDescriptor(value: SFCDescriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
     

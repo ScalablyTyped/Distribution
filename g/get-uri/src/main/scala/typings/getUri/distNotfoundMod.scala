@@ -39,7 +39,8 @@ object distNotfoundMod {
       __obj.asInstanceOf[NotFoundError]
     }
     
-    extension [Self <: NotFoundError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotFoundError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }

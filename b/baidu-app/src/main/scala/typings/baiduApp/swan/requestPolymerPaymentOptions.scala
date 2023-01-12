@@ -34,7 +34,8 @@ object requestPolymerPaymentOptions {
     __obj.asInstanceOf[requestPolymerPaymentOptions]
   }
   
-  extension [Self <: requestPolymerPaymentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: requestPolymerPaymentOptions] (val x: Self) extends AnyVal {
     
     inline def setBannedChannels(value: js.Array[String]): Self = StObject.set(x, "bannedChannels", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object CreateGameSessionQueueInput {
     __obj.asInstanceOf[CreateGameSessionQueueInput]
   }
   
-  extension [Self <: CreateGameSessionQueueInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateGameSessionQueueInput] (val x: Self) extends AnyVal {
     
     inline def setCustomEventData(value: QueueCustomEventData): Self = StObject.set(x, "CustomEventData", value.asInstanceOf[js.Any])
     

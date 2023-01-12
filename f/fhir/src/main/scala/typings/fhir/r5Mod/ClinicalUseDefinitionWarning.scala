@@ -27,7 +27,8 @@ object ClinicalUseDefinitionWarning {
     __obj.asInstanceOf[ClinicalUseDefinitionWarning]
   }
   
-  extension [Self <: ClinicalUseDefinitionWarning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClinicalUseDefinitionWarning] (val x: Self) extends AnyVal {
     
     inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

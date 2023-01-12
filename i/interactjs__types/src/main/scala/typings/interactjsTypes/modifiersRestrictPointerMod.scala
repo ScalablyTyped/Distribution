@@ -101,7 +101,8 @@ object modifiersRestrictPointerMod {
       __obj.asInstanceOf[RestrictOptions]
     }
     
-    extension [Self <: RestrictOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestrictOptions] (val x: Self) extends AnyVal {
       
       inline def setElementRect(value: Rect): Self = StObject.set(x, "elementRect", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object modifiersRestrictPointerMod {
       __obj.asInstanceOf[RestrictState]
     }
     
-    extension [Self <: RestrictState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestrictState] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

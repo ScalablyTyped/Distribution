@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyInputMomentProps]
     }
     
-    extension [Self <: ReadonlyInputMomentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyInputMomentProps] (val x: Self) extends AnyVal {
       
       inline def setHourStep(value: Double): Self = StObject.set(x, "hourStep", value.asInstanceOf[js.Any])
       

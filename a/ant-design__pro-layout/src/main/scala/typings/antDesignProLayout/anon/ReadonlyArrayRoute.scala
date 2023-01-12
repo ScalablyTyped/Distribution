@@ -219,7 +219,8 @@ object ReadonlyArrayRoute {
     __obj.asInstanceOf[ReadonlyArrayRoute]
   }
   
-  extension [Self <: ReadonlyArrayRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyArrayRoute] (val x: Self) extends AnyVal {
     
     inline def setAt(value: /* index */ Double => js.UndefOr[Route]): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
     

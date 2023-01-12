@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[Fullscreen]
     }
     
-    extension [Self <: Fullscreen](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fullscreen] (val x: Self) extends AnyVal {
       
       inline def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object anon {
       __obj.asInstanceOf[Marks]
     }
     
-    extension [Self <: Marks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Marks] (val x: Self) extends AnyVal {
       
       inline def setMarks(value: typings.cliBox.mod.Marks): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
     }
@@ -107,7 +110,8 @@ object anon {
       __obj.asInstanceOf[Offset]
     }
     
-    extension [Self <: Offset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: Y): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -144,7 +148,8 @@ object anon {
       __obj.asInstanceOf[PartialMarks]
     }
     
-    extension [Self <: PartialMarks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMarks] (val x: Self) extends AnyVal {
       
       inline def setB(value: String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -195,7 +200,8 @@ object anon {
       __obj.asInstanceOf[Stringify]
     }
     
-    extension [Self <: Stringify](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stringify] (val x: Self) extends AnyVal {
       
       inline def setStringify(value: `true`): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
     }
@@ -212,7 +218,8 @@ object anon {
       __obj.asInstanceOf[Y]
     }
     
-    extension [Self <: Y](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Y] (val x: Self) extends AnyVal {
       
       inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }

@@ -41,7 +41,8 @@ object SceneServiceProperties {
     __obj.asInstanceOf[SceneServiceProperties]
   }
   
-  extension [Self <: SceneServiceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneServiceProperties] (val x: Self) extends AnyVal {
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     

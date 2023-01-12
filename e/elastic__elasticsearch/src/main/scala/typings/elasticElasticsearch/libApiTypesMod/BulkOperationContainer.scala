@@ -21,7 +21,8 @@ object BulkOperationContainer {
     __obj.asInstanceOf[BulkOperationContainer]
   }
   
-  extension [Self <: BulkOperationContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkOperationContainer] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: BulkCreateOperation): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     

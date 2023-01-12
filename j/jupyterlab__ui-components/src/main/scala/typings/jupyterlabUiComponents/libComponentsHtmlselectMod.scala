@@ -48,7 +48,8 @@ object libComponentsHtmlselectMod {
       __obj.asInstanceOf[IHTMLSelectProps]
     }
     
-    extension [Self <: IHTMLSelectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHTMLSelectProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultStyle(value: Boolean): Self = StObject.set(x, "defaultStyle", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object libComponentsHtmlselectMod {
       __obj.asInstanceOf[IOptionProps]
     }
     
-    extension [Self <: IOptionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptionProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

@@ -31,7 +31,8 @@ object AnimationStyleMetadata {
     __obj.asInstanceOf[AnimationStyleMetadata]
   }
   
-  extension [Self <: AnimationStyleMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationStyleMetadata] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object SheetSizeOptions {
     __obj.asInstanceOf[SheetSizeOptions]
   }
   
-  extension [Self <: SheetSizeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SheetSizeOptions] (val x: Self) extends AnyVal {
     
     inline def setBehavior(value: SheetSizeBehaviour): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     

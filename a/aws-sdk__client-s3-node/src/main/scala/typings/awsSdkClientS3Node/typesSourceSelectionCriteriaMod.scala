@@ -22,7 +22,8 @@ object typesSourceSelectionCriteriaMod {
       __obj.asInstanceOf[SourceSelectionCriteria]
     }
     
-    extension [Self <: SourceSelectionCriteria](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceSelectionCriteria] (val x: Self) extends AnyVal {
       
       inline def setSseKmsEncryptedObjects(value: SseKmsEncryptedObjects): Self = StObject.set(x, "SseKmsEncryptedObjects", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object typesSourceSelectionCriteriaMod {
       __obj.asInstanceOf[UnmarshalledSourceSelectionCriteria]
     }
     
-    extension [Self <: UnmarshalledSourceSelectionCriteria](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSourceSelectionCriteria] (val x: Self) extends AnyVal {
       
       inline def setSseKmsEncryptedObjects(value: UnmarshalledSseKmsEncryptedObjects): Self = StObject.set(x, "SseKmsEncryptedObjects", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object EdiscoveryCustodian {
     __obj.asInstanceOf[EdiscoveryCustodian]
   }
   
-  extension [Self <: EdiscoveryCustodian](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdiscoveryCustodian] (val x: Self) extends AnyVal {
     
     inline def setAcknowledgedDateTime(value: NullableOption[String]): Self = StObject.set(x, "acknowledgedDateTime", value.asInstanceOf[js.Any])
     

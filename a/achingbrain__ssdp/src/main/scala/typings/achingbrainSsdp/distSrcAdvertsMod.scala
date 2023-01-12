@@ -39,7 +39,8 @@ object distSrcAdvertsMod {
       __obj.asInstanceOf[Adverts_]
     }
     
-    extension [Self <: Adverts_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Adverts_] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: CachedAdvert => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -68,7 +69,8 @@ object distSrcAdvertsMod {
       __obj.asInstanceOf[CachedAdvert]
     }
     
-    extension [Self <: CachedAdvert](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CachedAdvert] (val x: Self) extends AnyVal {
       
       inline def setService(value: Advert): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       

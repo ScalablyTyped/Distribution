@@ -39,7 +39,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ConfigurationOptions]
     }
     
-    extension [Self <: ConfigurationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigurationOptions] (val x: Self) extends AnyVal {
       
       inline def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Example]
     }
     
-    extension [Self <: Example](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Example] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -121,7 +123,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MinimistOptions]
     }
     
-    extension [Self <: MinimistOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinimistOptions] (val x: Self) extends AnyVal {
       
       inline def `set--`(value: Boolean): Self = StObject.set(x, "--", value.asInstanceOf[js.Any])
       
@@ -178,7 +181,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MriOptions]
     }
     
-    extension [Self <: MriOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MriOptions] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: StringDictionary[String | js.Array[String]]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -229,7 +233,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Option]
     }
     
-    extension [Self <: Option](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       

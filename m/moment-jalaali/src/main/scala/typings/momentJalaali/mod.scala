@@ -234,7 +234,8 @@ object mod {
         __obj.asInstanceOf[LoadPersianOptions]
       }
       
-      extension [Self <: LoadPersianOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LoadPersianOptions] (val x: Self) extends AnyVal {
         
         inline def setDialect(value: persian | `persian-modern`): Self = StObject.set(x, "dialect", value.asInstanceOf[js.Any])
         

@@ -18,7 +18,8 @@ object AwsEcsServiceNetworkConfigurationDetails {
     __obj.asInstanceOf[AwsEcsServiceNetworkConfigurationDetails]
   }
   
-  extension [Self <: AwsEcsServiceNetworkConfigurationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsServiceNetworkConfigurationDetails] (val x: Self) extends AnyVal {
     
     inline def setAwsVpcConfiguration(value: AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetails): Self = StObject.set(x, "AwsVpcConfiguration", value.asInstanceOf[js.Any])
     

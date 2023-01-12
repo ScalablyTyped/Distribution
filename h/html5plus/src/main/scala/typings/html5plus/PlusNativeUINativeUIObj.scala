@@ -28,7 +28,8 @@ object PlusNativeUINativeUIObj {
     __obj.asInstanceOf[PlusNativeUINativeUIObj]
   }
   
-  extension [Self <: PlusNativeUINativeUIObj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusNativeUINativeUIObj] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
   }

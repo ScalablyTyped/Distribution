@@ -15,7 +15,8 @@ object MenuSeparator {
     __obj.asInstanceOf[MenuSeparator]
   }
   
-  extension [Self <: MenuSeparator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuSeparator] (val x: Self) extends AnyVal {
     
     inline def setSeparator(value: Boolean): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     

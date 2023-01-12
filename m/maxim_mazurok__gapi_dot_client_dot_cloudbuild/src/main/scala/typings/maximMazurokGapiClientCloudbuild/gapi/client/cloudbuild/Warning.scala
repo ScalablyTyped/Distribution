@@ -19,7 +19,8 @@ object Warning {
     __obj.asInstanceOf[Warning]
   }
   
-  extension [Self <: Warning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Warning] (val x: Self) extends AnyVal {
     
     inline def setPriority(value: String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     

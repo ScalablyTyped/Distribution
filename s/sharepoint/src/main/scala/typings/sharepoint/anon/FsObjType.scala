@@ -18,7 +18,8 @@ object FsObjType {
     __obj.asInstanceOf[FsObjType]
   }
   
-  extension [Self <: FsObjType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FsObjType] (val x: Self) extends AnyVal {
     
     inline def setFsObjType(value: FileSystemObjectType): Self = StObject.set(x, "fsObjType", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ModelEndpointDataBlob {
     __obj.asInstanceOf[ModelEndpointDataBlob]
   }
   
-  extension [Self <: ModelEndpointDataBlob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelEndpointDataBlob] (val x: Self) extends AnyVal {
     
     inline def setByteBuffer(value: blob): Self = StObject.set(x, "byteBuffer", value.asInstanceOf[js.Any])
     

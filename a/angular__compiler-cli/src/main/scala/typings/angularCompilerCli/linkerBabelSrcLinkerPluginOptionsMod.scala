@@ -37,7 +37,8 @@ object linkerBabelSrcLinkerPluginOptionsMod {
       __obj.asInstanceOf[LinkerPluginOptions]
     }
     
-    extension [Self <: LinkerPluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkerPluginOptions] (val x: Self) extends AnyVal {
       
       inline def setFileSystem(value: ReadonlyFileSystem): Self = StObject.set(x, "fileSystem", value.asInstanceOf[js.Any])
       

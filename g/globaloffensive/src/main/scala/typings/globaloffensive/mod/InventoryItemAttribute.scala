@@ -20,7 +20,8 @@ object InventoryItemAttribute {
     __obj.asInstanceOf[InventoryItemAttribute]
   }
   
-  extension [Self <: InventoryItemAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventoryItemAttribute] (val x: Self) extends AnyVal {
     
     inline def setDef_index(value: Double): Self = StObject.set(x, "def_index", value.asInstanceOf[js.Any])
     

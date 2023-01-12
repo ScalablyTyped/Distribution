@@ -82,7 +82,8 @@ object srcDecorationMod {
       __obj.asInstanceOf[DecorationLayerOptions]
     }
     
-    extension [Self <: DecorationLayerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecorationLayerOptions] (val x: Self) extends AnyVal {
       
       inline def setType(value: line | `line-number` | text | highlight | block | cursor_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -107,7 +108,8 @@ object srcDecorationMod {
       __obj.asInstanceOf[DecorationOptions]
     }
     
-    extension [Self <: DecorationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecorationOptions] (val x: Self) extends AnyVal {
       
       inline def setGutterName(value: String): Self = StObject.set(x, "gutterName", value.asInstanceOf[js.Any])
       
@@ -193,7 +195,8 @@ object srcDecorationMod {
       __obj.asInstanceOf[SharedDecorationOptions]
     }
     
-    extension [Self <: SharedDecorationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedDecorationOptions] (val x: Self) extends AnyVal {
       
       inline def setAvoidOverflow(value: Boolean): Self = StObject.set(x, "avoidOverflow", value.asInstanceOf[js.Any])
       

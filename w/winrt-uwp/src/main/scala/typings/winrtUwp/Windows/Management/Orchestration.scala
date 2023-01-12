@@ -18,7 +18,8 @@ object Orchestration {
       __obj.asInstanceOf[CurrentAppOrchestration]
     }
     
-    extension [Self <: CurrentAppOrchestration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentAppOrchestration] (val x: Self) extends AnyVal {
       
       inline def setStartSingleAppMode(value: Any): Self = StObject.set(x, "startSingleAppMode", value.asInstanceOf[js.Any])
     }
@@ -35,7 +36,8 @@ object Orchestration {
       __obj.asInstanceOf[SingleAppModeContext]
     }
     
-    extension [Self <: SingleAppModeContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingleAppModeContext] (val x: Self) extends AnyVal {
       
       inline def setClose(value: Any): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     }

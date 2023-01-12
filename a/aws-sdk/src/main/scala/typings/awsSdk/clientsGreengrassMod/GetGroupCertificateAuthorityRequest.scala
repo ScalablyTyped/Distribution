@@ -23,7 +23,8 @@ object GetGroupCertificateAuthorityRequest {
     __obj.asInstanceOf[GetGroupCertificateAuthorityRequest]
   }
   
-  extension [Self <: GetGroupCertificateAuthorityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGroupCertificateAuthorityRequest] (val x: Self) extends AnyVal {
     
     inline def setCertificateAuthorityId(value: string): Self = StObject.set(x, "CertificateAuthorityId", value.asInstanceOf[js.Any])
     

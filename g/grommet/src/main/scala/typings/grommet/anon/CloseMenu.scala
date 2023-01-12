@@ -17,7 +17,8 @@ object CloseMenu {
     __obj.asInstanceOf[CloseMenu]
   }
   
-  extension [Self <: CloseMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseMenu] (val x: Self) extends AnyVal {
     
     inline def setCloseMenu(value: String): Self = StObject.set(x, "closeMenu", value.asInstanceOf[js.Any])
     

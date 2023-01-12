@@ -36,7 +36,8 @@ object libUseScriptMod {
       __obj.asInstanceOf[ScriptProps]
     }
     
-    extension [Self <: ScriptProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScriptProps] (val x: Self) extends AnyVal {
       
       inline def setCheckForExisting(value: Boolean): Self = StObject.set(x, "checkForExisting", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object libUseScriptMod {
       __obj.asInstanceOf[ScriptStatus]
     }
     
-    extension [Self <: ScriptStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScriptStatus] (val x: Self) extends AnyVal {
       
       inline def setError(value: ErrorState): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

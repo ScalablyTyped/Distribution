@@ -26,7 +26,8 @@ object libInvariantMod {
       __obj.asInstanceOf[Invariant[F]]
     }
     
-    extension [Self <: Invariant[?], F](x: Self & Invariant[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Invariant[?], F] (val x: Self & Invariant[F]) extends AnyVal {
       
       inline def setImap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any, js.Function1[Any, Any], js.Function1[Any, Any]) => Any
@@ -56,7 +57,8 @@ object libInvariantMod {
       __obj.asInstanceOf[Invariant1[F]]
     }
     
-    extension [Self <: Invariant1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & Invariant1[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Invariant1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & Invariant1[F]) extends AnyVal {
       
       inline def setImap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any, js.Function1[Any, Any], js.Function1[Any, Any]) => Any
@@ -86,7 +88,8 @@ object libInvariantMod {
       __obj.asInstanceOf[Invariant2[F]]
     }
     
-    extension [Self <: Invariant2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & Invariant2[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Invariant2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & Invariant2[F]) extends AnyVal {
       
       inline def setImap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, js.Function1[Any, Any], js.Function1[Any, Any]) => Any
@@ -119,7 +122,8 @@ object libInvariantMod {
       __obj.asInstanceOf[Invariant2C[F, E]]
     }
     
-    extension [Self <: Invariant2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (Invariant2C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Invariant2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (Invariant2C[F, E])) extends AnyVal {
       
       inline def setImap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, js.Function1[Any, Any], js.Function1[Any, Any]) => Any
@@ -151,7 +155,8 @@ object libInvariantMod {
       __obj.asInstanceOf[Invariant3[F]]
     }
     
-    extension [Self <: Invariant3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & Invariant3[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Invariant3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & Invariant3[F]) extends AnyVal {
       
       inline def setImap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, js.Function1[Any, Any], js.Function1[Any, Any]) => Any
@@ -184,7 +189,8 @@ object libInvariantMod {
       __obj.asInstanceOf[Invariant3C[F, E]]
     }
     
-    extension [Self <: Invariant3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (Invariant3C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Invariant3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (Invariant3C[F, E])) extends AnyVal {
       
       inline def setImap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, js.Function1[Any, Any], js.Function1[Any, Any]) => Any
@@ -216,7 +222,8 @@ object libInvariantMod {
       __obj.asInstanceOf[Invariant4[F]]
     }
     
-    extension [Self <: Invariant4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & Invariant4[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Invariant4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & Invariant4[F]) extends AnyVal {
       
       inline def setImap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any, js.Function1[Any, Any], js.Function1[Any, Any]) => Any

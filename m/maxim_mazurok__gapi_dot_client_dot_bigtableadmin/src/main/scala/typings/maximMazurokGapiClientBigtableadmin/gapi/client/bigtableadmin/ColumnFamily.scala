@@ -19,7 +19,8 @@ object ColumnFamily {
     __obj.asInstanceOf[ColumnFamily]
   }
   
-  extension [Self <: ColumnFamily](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnFamily] (val x: Self) extends AnyVal {
     
     inline def setGcRule(value: GcRule): Self = StObject.set(x, "gcRule", value.asInstanceOf[js.Any])
     

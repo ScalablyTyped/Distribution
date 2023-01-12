@@ -22,7 +22,8 @@ object UndeleteCertificateAuthorityRequest {
     __obj.asInstanceOf[UndeleteCertificateAuthorityRequest]
   }
   
-  extension [Self <: UndeleteCertificateAuthorityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UndeleteCertificateAuthorityRequest] (val x: Self) extends AnyVal {
     
     inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     

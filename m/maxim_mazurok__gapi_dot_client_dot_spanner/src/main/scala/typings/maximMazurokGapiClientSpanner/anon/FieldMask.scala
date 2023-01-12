@@ -53,7 +53,8 @@ object FieldMask {
     __obj.asInstanceOf[FieldMask]
   }
   
-  extension [Self <: FieldMask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldMask] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

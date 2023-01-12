@@ -19,7 +19,8 @@ object MouseTrackerEvent {
     __obj.asInstanceOf[MouseTrackerEvent[T]]
   }
   
-  extension [Self <: MouseTrackerEvent[?], T /* <: Event */](x: Self & MouseTrackerEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouseTrackerEvent[?], T /* <: Event */] (val x: Self & MouseTrackerEvent[T]) extends AnyVal {
     
     inline def setOriginalEvent(value: T): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
   }

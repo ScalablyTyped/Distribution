@@ -140,7 +140,8 @@ object WidgetMetadata {
     __obj.asInstanceOf[WidgetMetadata]
   }
   
-  extension [Self <: WidgetMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WidgetMetadata] (val x: Self) extends AnyVal {
     
     inline def setAllowedSizes(value: js.Array[WidgetSize]): Self = StObject.set(x, "allowedSizes", value.asInstanceOf[js.Any])
     

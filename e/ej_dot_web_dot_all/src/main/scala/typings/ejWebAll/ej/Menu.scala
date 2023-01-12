@@ -136,7 +136,8 @@ object Menu {
       __obj.asInstanceOf[BeforeOpenEventArgs]
     }
     
-    extension [Self <: BeforeOpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeOpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -189,7 +190,8 @@ object Menu {
       __obj.asInstanceOf[ClickEventArgs]
     }
     
-    extension [Self <: ClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -238,7 +240,8 @@ object Menu {
       __obj.asInstanceOf[CloseEventArgs]
     }
     
-    extension [Self <: CloseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -271,7 +274,8 @@ object Menu {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -300,7 +304,8 @@ object Menu {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -373,7 +378,8 @@ object Menu {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setChild(value: Any): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
       
@@ -458,7 +464,8 @@ object Menu {
       __obj.asInstanceOf[KeydownEventArgs]
     }
     
-    extension [Self <: KeydownEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeydownEventArgs] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -654,7 +661,8 @@ object Menu {
       __obj.asInstanceOf[typings.ejWebAll.ej.Menu.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Menu.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Menu.Model] (val x: Self) extends AnyVal {
       
       inline def setAnimationType(value: AnimationType | String): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
       
@@ -827,7 +835,8 @@ object Menu {
       __obj.asInstanceOf[MouseoutEventArgs]
     }
     
-    extension [Self <: MouseoutEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseoutEventArgs] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -880,7 +889,8 @@ object Menu {
       __obj.asInstanceOf[MouseoverEventArgs]
     }
     
-    extension [Self <: MouseoverEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseoverEventArgs] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -925,7 +935,8 @@ object Menu {
       __obj.asInstanceOf[OpenEventArgs]
     }
     
-    extension [Self <: OpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -966,7 +977,8 @@ object Menu {
       __obj.asInstanceOf[OverflowCloseEventArgs]
     }
     
-    extension [Self <: OverflowCloseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverflowCloseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1011,7 +1023,8 @@ object Menu {
       __obj.asInstanceOf[OverflowOpenEventArgs]
     }
     
-    extension [Self <: OverflowOpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverflowOpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

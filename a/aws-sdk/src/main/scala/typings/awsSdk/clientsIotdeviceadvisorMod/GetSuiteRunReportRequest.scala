@@ -23,7 +23,8 @@ object GetSuiteRunReportRequest {
     __obj.asInstanceOf[GetSuiteRunReportRequest]
   }
   
-  extension [Self <: GetSuiteRunReportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSuiteRunReportRequest] (val x: Self) extends AnyVal {
     
     inline def setSuiteDefinitionId(value: UUID): Self = StObject.set(x, "suiteDefinitionId", value.asInstanceOf[js.Any])
     

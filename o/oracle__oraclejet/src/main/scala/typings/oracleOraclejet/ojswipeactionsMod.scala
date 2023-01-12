@@ -193,7 +193,8 @@ object ojswipeactionsMod {
       __obj.asInstanceOf[ojSwipeActionsEventMap]
     }
     
-    extension [Self <: ojSwipeActionsEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojSwipeActionsEventMap] (val x: Self) extends AnyVal {
       
       inline def setOjAction(value: typings.oracleOraclejet.ojswipeactionsMod.ojSwipeActions.ojAction): Self = StObject.set(x, "ojAction", value.asInstanceOf[js.Any])
     }
@@ -213,7 +214,8 @@ object ojswipeactionsMod {
       __obj.asInstanceOf[ojSwipeActionsSettableProperties]
     }
     
-    extension [Self <: ojSwipeActionsSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojSwipeActionsSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setTranslations(value: AriaHideActionsDescription): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     }
@@ -233,7 +235,8 @@ object ojswipeactionsMod {
       __obj.asInstanceOf[ojSwipeActionsSettablePropertiesLenient]
     }
     
-    extension [Self <: ojSwipeActionsSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojSwipeActionsSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setTranslations(value: AriaHideActionsDescription): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       

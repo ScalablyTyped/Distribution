@@ -20,7 +20,8 @@ object DebugInstanceRequest {
     __obj.asInstanceOf[DebugInstanceRequest]
   }
   
-  extension [Self <: DebugInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setSshKey(value: String): Self = StObject.set(x, "sshKey", value.asInstanceOf[js.Any])
     

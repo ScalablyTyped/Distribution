@@ -21,7 +21,8 @@ object BarChartProps {
     __obj.asInstanceOf[BarChartProps[T]]
   }
   
-  extension [Self <: BarChartProps[?], T](x: Self & BarChartProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarChartProps[?], T] (val x: Self & BarChartProps[T]) extends AnyVal {
     
     inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     

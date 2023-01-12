@@ -23,7 +23,8 @@ object PronounOptions {
     __obj.asInstanceOf[PronounOptions]
   }
   
-  extension [Self <: PronounOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PronounOptions] (val x: Self) extends AnyVal {
     
     inline def setCapitalize(value: Boolean): Self = StObject.set(x, "capitalize", value.asInstanceOf[js.Any])
     

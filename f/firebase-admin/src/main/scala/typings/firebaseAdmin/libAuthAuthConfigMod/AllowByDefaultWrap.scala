@@ -23,7 +23,8 @@ object AllowByDefaultWrap {
     __obj.asInstanceOf[AllowByDefaultWrap]
   }
   
-  extension [Self <: AllowByDefaultWrap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowByDefaultWrap] (val x: Self) extends AnyVal {
     
     inline def setAllowByDefault(value: AllowByDefault): Self = StObject.set(x, "allowByDefault", value.asInstanceOf[js.Any])
   }

@@ -33,7 +33,8 @@ object RelativeTimeRange {
     __obj.asInstanceOf[RelativeTimeRange]
   }
   
-  extension [Self <: RelativeTimeRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelativeTimeRange] (val x: Self) extends AnyVal {
     
     inline def setEndPercentage(value: Percentage): Self = StObject.set(x, "EndPercentage", value.asInstanceOf[js.Any])
     

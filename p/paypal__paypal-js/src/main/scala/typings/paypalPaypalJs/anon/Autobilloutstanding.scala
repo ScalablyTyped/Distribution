@@ -43,7 +43,8 @@ object Autobilloutstanding {
     __obj.asInstanceOf[Autobilloutstanding]
   }
   
-  extension [Self <: Autobilloutstanding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Autobilloutstanding] (val x: Self) extends AnyVal {
     
     inline def setAuto_bill_outstanding(value: Boolean): Self = StObject.set(x, "auto_bill_outstanding", value.asInstanceOf[js.Any])
     

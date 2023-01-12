@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nivo-slider"
-version := "3.2-dt-20211202Z-eef155"
+version := "3.2-dt-20211202Z-0e7df7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

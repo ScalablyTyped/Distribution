@@ -19,7 +19,8 @@ object RequestBodyContentApplicationjsonTeamsArray {
     __obj.asInstanceOf[RequestBodyContentApplicationjsonTeamsArray]
   }
   
-  extension [Self <: RequestBodyContentApplicationjsonTeamsArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonTeamsArray] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathBranch): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object StopSNOMEDCTInferenceJobRequest {
     __obj.asInstanceOf[StopSNOMEDCTInferenceJobRequest]
   }
   
-  extension [Self <: StopSNOMEDCTInferenceJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopSNOMEDCTInferenceJobRequest] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
   }

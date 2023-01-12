@@ -25,7 +25,8 @@ object NavigationAnnotationsFibonacciTimeZonesTypeLineOptions {
     __obj.asInstanceOf[NavigationAnnotationsFibonacciTimeZonesTypeLineOptions]
   }
   
-  extension [Self <: NavigationAnnotationsFibonacciTimeZonesTypeLineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationAnnotationsFibonacciTimeZonesTypeLineOptions] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

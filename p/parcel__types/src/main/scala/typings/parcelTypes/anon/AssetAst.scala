@@ -24,7 +24,8 @@ object AssetAst {
     __obj.asInstanceOf[AssetAst]
   }
   
-  extension [Self <: AssetAst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetAst] (val x: Self) extends AnyVal {
     
     inline def setAsset(value: typings.parcelTypes.mod.Asset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     

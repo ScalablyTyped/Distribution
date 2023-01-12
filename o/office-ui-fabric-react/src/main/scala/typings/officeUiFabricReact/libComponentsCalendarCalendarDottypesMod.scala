@@ -80,7 +80,8 @@ object libComponentsCalendarCalendarDottypesMod {
       __obj.asInstanceOf[ICalendar]
     }
     
-    extension [Self <: ICalendar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalendar] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
@@ -139,7 +140,8 @@ object libComponentsCalendarCalendarDottypesMod {
       __obj.asInstanceOf[ICalendarIconStrings]
     }
     
-    extension [Self <: ICalendarIconStrings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalendarIconStrings] (val x: Self) extends AnyVal {
       
       inline def setCloseIcon(value: String): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
       
@@ -335,7 +337,8 @@ object libComponentsCalendarCalendarDottypesMod {
       __obj.asInstanceOf[ICalendarProps]
     }
     
-    extension [Self <: ICalendarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalendarProps] (val x: Self) extends AnyVal {
       
       inline def setAllFocusable(value: Boolean): Self = StObject.set(x, "allFocusable", value.asInstanceOf[js.Any])
       
@@ -552,7 +555,8 @@ object libComponentsCalendarCalendarDottypesMod {
       __obj.asInstanceOf[ICalendarStrings]
     }
     
-    extension [Self <: ICalendarStrings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalendarStrings] (val x: Self) extends AnyVal {
       
       inline def setCloseButtonAriaLabel(value: String): Self = StObject.set(x, "closeButtonAriaLabel", value.asInstanceOf[js.Any])
       

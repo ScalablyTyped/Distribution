@@ -23,7 +23,8 @@ object typesInvalidEmailExceptionMod {
       __obj.asInstanceOf[InvalidEmailException]
     }
     
-    extension [Self <: InvalidEmailException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidEmailException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidEmailException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

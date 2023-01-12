@@ -63,7 +63,8 @@ object StaticImageActivateScheduleActionSettings {
     __obj.asInstanceOf[StaticImageActivateScheduleActionSettings]
   }
   
-  extension [Self <: StaticImageActivateScheduleActionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaticImageActivateScheduleActionSettings] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: integerMin0): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     

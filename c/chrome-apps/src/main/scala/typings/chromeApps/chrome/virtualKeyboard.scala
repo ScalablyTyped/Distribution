@@ -52,7 +52,8 @@ object virtualKeyboard {
       __obj.asInstanceOf[FeatureRestrictions]
     }
     
-    extension [Self <: FeatureRestrictions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeatureRestrictions] (val x: Self) extends AnyVal {
       
       inline def setAutoCompleteEnabled(value: Boolean): Self = StObject.set(x, "autoCompleteEnabled", value.asInstanceOf[js.Any])
       

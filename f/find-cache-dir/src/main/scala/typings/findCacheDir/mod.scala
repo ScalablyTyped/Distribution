@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object mod {
       __obj.asInstanceOf[OptionsWithThunk]
     }
     
-    extension [Self <: OptionsWithThunk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsWithThunk] (val x: Self) extends AnyVal {
       
       inline def setThunk(value: `true`): Self = StObject.set(x, "thunk", value.asInstanceOf[js.Any])
     }

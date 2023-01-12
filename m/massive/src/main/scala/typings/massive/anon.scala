@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[PickSearchDefinitionfield]
     }
     
-    extension [Self <: PickSearchDefinitionfield](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickSearchDefinitionfield] (val x: Self) extends AnyVal {
       
       inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       

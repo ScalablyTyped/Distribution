@@ -56,7 +56,8 @@ object libMod {
       __obj.asInstanceOf[SharedOptions]
     }
     
-    extension [Self <: SharedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedOptions] (val x: Self) extends AnyVal {
       
       inline def setCreateElement(value: CreateElementLike): Self = StObject.set(x, "createElement", value.asInstanceOf[js.Any])
       

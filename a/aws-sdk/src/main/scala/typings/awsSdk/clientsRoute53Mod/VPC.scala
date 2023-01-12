@@ -20,7 +20,8 @@ object VPC {
     __obj.asInstanceOf[VPC]
   }
   
-  extension [Self <: VPC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VPC] (val x: Self) extends AnyVal {
     
     inline def setVPCId(value: VPCId): Self = StObject.set(x, "VPCId", value.asInstanceOf[js.Any])
     

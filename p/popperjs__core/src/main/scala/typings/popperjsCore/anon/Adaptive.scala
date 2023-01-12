@@ -50,7 +50,8 @@ object Adaptive {
     __obj.asInstanceOf[Adaptive]
   }
   
-  extension [Self <: Adaptive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Adaptive] (val x: Self) extends AnyVal {
     
     inline def setAdaptive(value: Boolean): Self = StObject.set(x, "adaptive", value.asInstanceOf[js.Any])
     

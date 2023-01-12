@@ -92,7 +92,8 @@ object buildSrcAuthPluggableAuthClientMod {
       __obj.asInstanceOf[PluggableAuthClientOptions]
     }
     
-    extension [Self <: PluggableAuthClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluggableAuthClientOptions] (val x: Self) extends AnyVal {
       
       inline def setCredential_source(value: Executable): Self = StObject.set(x, "credential_source", value.asInstanceOf[js.Any])
     }

@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[CommandEntry]
     }
     
-    extension [Self <: CommandEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandEntry] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: String | js.Array[String] | StringDictionary[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object mod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setIncludeComments(value: Boolean): Self = StObject.set(x, "includeComments", value.asInstanceOf[js.Any])
     }

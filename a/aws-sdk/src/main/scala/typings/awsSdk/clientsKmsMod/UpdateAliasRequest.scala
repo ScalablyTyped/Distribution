@@ -23,7 +23,8 @@ object UpdateAliasRequest {
     __obj.asInstanceOf[UpdateAliasRequest]
   }
   
-  extension [Self <: UpdateAliasRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAliasRequest] (val x: Self) extends AnyVal {
     
     inline def setAliasName(value: AliasNameType): Self = StObject.set(x, "AliasName", value.asInstanceOf[js.Any])
     

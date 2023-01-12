@@ -18,7 +18,8 @@ object MFar {
     __obj.asInstanceOf[MFar]
   }
   
-  extension [Self <: MFar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MFar] (val x: Self) extends AnyVal {
     
     inline def setMFar(value: IUniform[Any]): Self = StObject.set(x, "mFar", value.asInstanceOf[js.Any])
     

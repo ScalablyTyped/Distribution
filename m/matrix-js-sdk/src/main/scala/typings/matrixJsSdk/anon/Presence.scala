@@ -18,7 +18,8 @@ object Presence {
     __obj.asInstanceOf[Presence]
   }
   
-  extension [Self <: Presence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Presence] (val x: Self) extends AnyVal {
     
     inline def setPresence(value: MatrixEvent[EventContentTypeMessage, EventType]): Self = StObject.set(x, "presence", value.asInstanceOf[js.Any])
   }

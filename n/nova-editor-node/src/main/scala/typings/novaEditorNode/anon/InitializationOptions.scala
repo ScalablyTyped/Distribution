@@ -17,7 +17,8 @@ object InitializationOptions {
     __obj.asInstanceOf[InitializationOptions]
   }
   
-  extension [Self <: InitializationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitializationOptions] (val x: Self) extends AnyVal {
     
     inline def setInitializationOptions(value: Any): Self = StObject.set(x, "initializationOptions", value.asInstanceOf[js.Any])
     

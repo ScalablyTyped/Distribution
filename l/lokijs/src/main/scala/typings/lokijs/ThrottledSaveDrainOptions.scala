@@ -26,7 +26,8 @@ object ThrottledSaveDrainOptions {
     __obj.asInstanceOf[ThrottledSaveDrainOptions]
   }
   
-  extension [Self <: ThrottledSaveDrainOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThrottledSaveDrainOptions] (val x: Self) extends AnyVal {
     
     inline def setRecursiveWait(value: Boolean): Self = StObject.set(x, "recursiveWait", value.asInstanceOf[js.Any])
     

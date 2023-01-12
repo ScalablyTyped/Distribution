@@ -22,7 +22,8 @@ object salesforceObjectOptionsMod {
       __obj.asInstanceOf[SObjectOptions]
     }
     
-    extension [Self <: SObjectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SObjectOptions] (val x: Self) extends AnyVal {
       
       inline def setExtId__c(value: String): Self = StObject.set(x, "ExtId__c", value.asInstanceOf[js.Any])
       

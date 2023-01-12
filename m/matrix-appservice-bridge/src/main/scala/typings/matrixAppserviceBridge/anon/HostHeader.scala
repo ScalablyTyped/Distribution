@@ -18,7 +18,8 @@ object HostHeader {
     __obj.asInstanceOf[HostHeader]
   }
   
-  extension [Self <: HostHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostHeader] (val x: Self) extends AnyVal {
     
     inline def setHostHeader(value: String): Self = StObject.set(x, "hostHeader", value.asInstanceOf[js.Any])
     

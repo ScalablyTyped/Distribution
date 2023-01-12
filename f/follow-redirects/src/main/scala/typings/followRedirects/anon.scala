@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Http]
     }
     
-    extension [Self <: Http](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Http] (val x: Self) extends AnyVal {
       
       inline def setHttp(value: Agent): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       

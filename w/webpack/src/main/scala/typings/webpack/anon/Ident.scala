@@ -34,7 +34,8 @@ object Ident {
     __obj.asInstanceOf[Ident]
   }
   
-  extension [Self <: Ident](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ident] (val x: Self) extends AnyVal {
     
     inline def setIdent(value: String): Self = StObject.set(x, "ident", value.asInstanceOf[js.Any])
     

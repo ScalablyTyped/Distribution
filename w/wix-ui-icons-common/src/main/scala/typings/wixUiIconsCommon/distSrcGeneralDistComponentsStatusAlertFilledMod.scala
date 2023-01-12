@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsStatusAlertFilledMod extends Shortcut {
       __obj.asInstanceOf[StatusAlertFilledProps]
     }
     
-    extension [Self <: StatusAlertFilledProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatusAlertFilledProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

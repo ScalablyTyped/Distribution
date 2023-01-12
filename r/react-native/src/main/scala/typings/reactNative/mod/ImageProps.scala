@@ -21,7 +21,8 @@ object ImageProps {
     __obj.asInstanceOf[ImageProps]
   }
   
-  extension [Self <: ImageProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageProps] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: StyleProp[ImageStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

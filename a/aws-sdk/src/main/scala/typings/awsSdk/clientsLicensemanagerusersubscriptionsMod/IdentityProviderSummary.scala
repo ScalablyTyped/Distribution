@@ -33,7 +33,8 @@ object IdentityProviderSummary {
     __obj.asInstanceOf[IdentityProviderSummary]
   }
   
-  extension [Self <: IdentityProviderSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityProviderSummary] (val x: Self) extends AnyVal {
     
     inline def setFailureMessage(value: String): Self = StObject.set(x, "FailureMessage", value.asInstanceOf[js.Any])
     

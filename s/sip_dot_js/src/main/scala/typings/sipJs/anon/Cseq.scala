@@ -19,7 +19,8 @@ object Cseq {
     __obj.asInstanceOf[Cseq]
   }
   
-  extension [Self <: Cseq](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cseq] (val x: Self) extends AnyVal {
     
     inline def setBody(value: typings.sipJs.libCoreMessagesBodyMod.Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

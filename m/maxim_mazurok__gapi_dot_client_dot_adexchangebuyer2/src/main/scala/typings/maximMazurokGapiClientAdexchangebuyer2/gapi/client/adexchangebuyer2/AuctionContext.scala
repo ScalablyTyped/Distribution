@@ -16,7 +16,8 @@ object AuctionContext {
     __obj.asInstanceOf[AuctionContext]
   }
   
-  extension [Self <: AuctionContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuctionContext] (val x: Self) extends AnyVal {
     
     inline def setAuctionTypes(value: js.Array[String]): Self = StObject.set(x, "auctionTypes", value.asInstanceOf[js.Any])
     

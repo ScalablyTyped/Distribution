@@ -420,7 +420,8 @@ object systemTablesorterConfigurationMod {
       __obj.asInstanceOf[TablesorterConfiguration[TElement]]
     }
     
-    extension [Self <: TablesorterConfiguration[?], TElement](x: Self & TablesorterConfiguration[TElement]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TablesorterConfiguration[?], TElement] (val x: Self & TablesorterConfiguration[TElement]) extends AnyVal {
       
       inline def setCancelSelection(value: Boolean): Self = StObject.set(x, "cancelSelection", value.asInstanceOf[js.Any])
       

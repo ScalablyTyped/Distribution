@@ -63,7 +63,8 @@ object distMethodsUsersTypesMod {
       __obj.asInstanceOf[Basic]
     }
     
-    extension [Self <: Basic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Basic] (val x: Self) extends AnyVal {
       
       inline def setBio(value: Nullable[String]): Self = StObject.set(x, "bio", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object distMethodsUsersTypesMod {
       __obj.asInstanceOf[Full]
     }
     
-    extension [Self <: Full](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Full] (val x: Self) extends AnyVal {
       
       inline def setDownloads(value: Double): Self = StObject.set(x, "downloads", value.asInstanceOf[js.Any])
       
@@ -176,7 +178,8 @@ object distMethodsUsersTypesMod {
       __obj.asInstanceOf[Medium]
     }
     
-    extension [Self <: Medium](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Medium] (val x: Self) extends AnyVal {
       
       inline def setPhotos(value: js.Array[VeryBasic]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
       

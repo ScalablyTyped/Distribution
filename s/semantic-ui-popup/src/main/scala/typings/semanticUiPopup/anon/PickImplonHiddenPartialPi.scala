@@ -127,7 +127,8 @@ object PickImplonHiddenPartialPi {
     __obj.asInstanceOf[PickImplonHiddenPartialPi]
   }
   
-  extension [Self <: PickImplonHiddenPartialPi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplonHiddenPartialPi] (val x: Self) extends AnyVal {
     
     inline def setAddTouchEvents(value: Boolean): Self = StObject.set(x, "addTouchEvents", value.asInstanceOf[js.Any])
     

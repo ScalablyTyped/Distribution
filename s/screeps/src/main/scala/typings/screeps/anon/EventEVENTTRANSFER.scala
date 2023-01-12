@@ -27,7 +27,8 @@ object EventEVENTTRANSFER {
     __obj.asInstanceOf[EventEVENTTRANSFER]
   }
   
-  extension [Self <: EventEVENTTRANSFER](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventEVENTTRANSFER] (val x: Self) extends AnyVal {
     
     inline def setData(
       value: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_TRANSFER] */ js.Any

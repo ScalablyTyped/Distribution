@@ -23,7 +23,8 @@ object InspectTreeOptions {
     __obj.asInstanceOf[InspectTreeOptions]
   }
   
-  extension [Self <: InspectTreeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InspectTreeOptions] (val x: Self) extends AnyVal {
     
     inline def setChecksum(value: Checksum): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     

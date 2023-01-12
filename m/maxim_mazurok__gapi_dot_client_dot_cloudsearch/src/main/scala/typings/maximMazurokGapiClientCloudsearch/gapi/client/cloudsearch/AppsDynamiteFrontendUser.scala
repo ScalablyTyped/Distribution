@@ -58,7 +58,8 @@ object AppsDynamiteFrontendUser {
     __obj.asInstanceOf[AppsDynamiteFrontendUser]
   }
   
-  extension [Self <: AppsDynamiteFrontendUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteFrontendUser] (val x: Self) extends AnyVal {
     
     inline def setAvatarUrl(value: String): Self = StObject.set(x, "avatarUrl", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object BuildSummary {
     __obj.asInstanceOf[BuildSummary]
   }
   
-  extension [Self <: BuildSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildSummary] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: XamlBuildReference): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

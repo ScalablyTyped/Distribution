@@ -17,7 +17,8 @@ object DownloadDirOptions {
     __obj.asInstanceOf[DownloadDirOptions]
   }
   
-  extension [Self <: DownloadDirOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadDirOptions] (val x: Self) extends AnyVal {
     
     inline def setUseFastget(value: Boolean): Self = StObject.set(x, "useFastget", value.asInstanceOf[js.Any])
     

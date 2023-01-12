@@ -21,7 +21,8 @@ object PartialCategory {
     __obj.asInstanceOf[PartialCategory]
   }
   
-  extension [Self <: PartialCategory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCategory] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: Element | typings.wordpressComponents.dashiconMod.Dashicon.Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

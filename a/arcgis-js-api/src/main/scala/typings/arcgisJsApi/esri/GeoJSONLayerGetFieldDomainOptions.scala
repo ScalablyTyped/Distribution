@@ -20,7 +20,8 @@ object GeoJSONLayerGetFieldDomainOptions {
     __obj.asInstanceOf[GeoJSONLayerGetFieldDomainOptions]
   }
   
-  extension [Self <: GeoJSONLayerGetFieldDomainOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoJSONLayerGetFieldDomainOptions] (val x: Self) extends AnyVal {
     
     inline def setFeature(value: Graphic): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
   }

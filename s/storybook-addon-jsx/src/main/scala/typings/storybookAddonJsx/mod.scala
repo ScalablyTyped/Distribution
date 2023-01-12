@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[AddonParameters]
     }
     
-    extension [Self <: AddonParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddonParameters] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String | displayNameFunc): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object mod {
         __obj.asInstanceOf[ClientStoryApi[StoryFnReturnType]]
       }
       
-      extension [Self <: ClientStoryApi[?], StoryFnReturnType](x: Self & ClientStoryApi[StoryFnReturnType]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClientStoryApi[?], StoryFnReturnType] (val x: Self & ClientStoryApi[StoryFnReturnType]) extends AnyVal {
         
         inline def setAddDecorator(value: DecoratorFunction[StoryFnReturnType] => StoryApi[StoryFnReturnType]): Self = StObject.set(x, "addDecorator", js.Any.fromFunction1(value))
         

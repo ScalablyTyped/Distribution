@@ -174,7 +174,8 @@ object PickImplglyphWidthPartial {
     __obj.asInstanceOf[PickImplglyphWidthPartial]
   }
   
-  extension [Self <: PickImplglyphWidthPartial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplglyphWidthPartial] (val x: Self) extends AnyVal {
     
     inline def setAction(
       value: activate | select | combo | nothing | hide | (js.ThisFunction3[

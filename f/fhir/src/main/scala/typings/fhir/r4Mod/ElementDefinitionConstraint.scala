@@ -66,7 +66,8 @@ object ElementDefinitionConstraint {
     __obj.asInstanceOf[ElementDefinitionConstraint]
   }
   
-  extension [Self <: ElementDefinitionConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementDefinitionConstraint] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

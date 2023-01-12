@@ -16,7 +16,8 @@ object ReplaceAllTextResponse {
     __obj.asInstanceOf[ReplaceAllTextResponse]
   }
   
-  extension [Self <: ReplaceAllTextResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceAllTextResponse] (val x: Self) extends AnyVal {
     
     inline def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
     

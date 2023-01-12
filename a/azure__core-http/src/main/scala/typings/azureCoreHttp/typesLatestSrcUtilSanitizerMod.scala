@@ -50,7 +50,8 @@ object typesLatestSrcUtilSanitizerMod {
       __obj.asInstanceOf[SanitizerOptions]
     }
     
-    extension [Self <: SanitizerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SanitizerOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowedHeaderNames(value: js.Array[String]): Self = StObject.set(x, "allowedHeaderNames", value.asInstanceOf[js.Any])
       

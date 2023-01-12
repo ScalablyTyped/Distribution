@@ -51,7 +51,8 @@ object IFieldListDef {
     __obj.asInstanceOf[IFieldListDef]
   }
   
-  extension [Self <: IFieldListDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFieldListDef] (val x: Self) extends AnyVal {
     
     inline def setQShowDefinitionOnly(value: Boolean): Self = StObject.set(x, "qShowDefinitionOnly", value.asInstanceOf[js.Any])
     

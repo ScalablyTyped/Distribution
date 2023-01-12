@@ -28,7 +28,8 @@ object ScalingScheduleStatus {
     __obj.asInstanceOf[ScalingScheduleStatus]
   }
   
-  extension [Self <: ScalingScheduleStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScalingScheduleStatus] (val x: Self) extends AnyVal {
     
     inline def setLastStartTime(value: String): Self = StObject.set(x, "lastStartTime", value.asInstanceOf[js.Any])
     

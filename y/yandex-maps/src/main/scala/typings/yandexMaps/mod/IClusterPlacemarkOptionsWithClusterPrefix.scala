@@ -52,7 +52,8 @@ object IClusterPlacemarkOptionsWithClusterPrefix {
     __obj.asInstanceOf[IClusterPlacemarkOptionsWithClusterPrefix]
   }
   
-  extension [Self <: IClusterPlacemarkOptionsWithClusterPrefix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClusterPlacemarkOptionsWithClusterPrefix] (val x: Self) extends AnyVal {
     
     inline def setClusterBalloonContentLayout(value: IClassConstructor[ILayout] | ClusterLayoutKey): Self = StObject.set(x, "clusterBalloonContentLayout", value.asInstanceOf[js.Any])
     

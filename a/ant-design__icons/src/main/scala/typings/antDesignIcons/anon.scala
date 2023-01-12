@@ -115,7 +115,8 @@ object anon {
       __obj.asInstanceOf[Nonce]
     }
     
-    extension [Self <: Nonce](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Nonce] (val x: Self) extends AnyVal {
       
       inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
@@ -863,7 +864,8 @@ object anon {
       __obj.asInstanceOf[PickAntdIconPropsformlist]
     }
     
-    extension [Self <: PickAntdIconPropsformlist](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickAntdIconPropsformlist] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -3075,7 +3077,8 @@ object anon {
       __obj.asInstanceOf[PickAntdIconPropsmaxrequi]
     }
     
-    extension [Self <: PickAntdIconPropsmaxrequi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickAntdIconPropsmaxrequi] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -5293,7 +5296,8 @@ object anon {
       __obj.asInstanceOf[PickIconComponentPropsmax]
     }
     
-    extension [Self <: PickIconComponentPropsmax](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickIconComponentPropsmax] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -7523,7 +7527,8 @@ object anon {
       __obj.asInstanceOf[PickIconComponentPropsspi]
     }
     
-    extension [Self <: PickIconComponentPropsspi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickIconComponentPropsspi] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

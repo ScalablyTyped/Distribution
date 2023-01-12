@@ -21,7 +21,8 @@ object EdgeSearchEngine {
     __obj.asInstanceOf[EdgeSearchEngine]
   }
   
-  extension [Self <: EdgeSearchEngine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeSearchEngine] (val x: Self) extends AnyVal {
     
     inline def setEdgeSearchEngineType(value: EdgeSearchEngineType): Self = StObject.set(x, "edgeSearchEngineType", value.asInstanceOf[js.Any])
     

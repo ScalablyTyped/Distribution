@@ -30,7 +30,8 @@ object Bucketspan {
     __obj.asInstanceOf[Bucketspan]
   }
   
-  extension [Self <: Bucketspan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bucketspan] (val x: Self) extends AnyVal {
     
     inline def setAllow_no_match(value: Boolean): Self = StObject.set(x, "allow_no_match", value.asInstanceOf[js.Any])
     

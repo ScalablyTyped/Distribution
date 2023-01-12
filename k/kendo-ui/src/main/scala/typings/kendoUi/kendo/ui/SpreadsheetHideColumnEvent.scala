@@ -20,7 +20,8 @@ object SpreadsheetHideColumnEvent {
     __obj.asInstanceOf[SpreadsheetHideColumnEvent]
   }
   
-  extension [Self <: SpreadsheetHideColumnEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetHideColumnEvent] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

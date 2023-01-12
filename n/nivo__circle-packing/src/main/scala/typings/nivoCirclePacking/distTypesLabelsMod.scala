@@ -46,7 +46,8 @@ object distTypesLabelsMod {
       __obj.asInstanceOf[CirclesProps[RawDatum]]
     }
     
-    extension [Self <: CirclesProps[?], RawDatum](x: Self & CirclesProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CirclesProps[?], RawDatum] (val x: Self & CirclesProps[RawDatum]) extends AnyVal {
       
       inline def setComponent(value: /* props */ LabelProps[RawDatum] => Element): Self = StObject.set(x, "component", js.Any.fromFunction1(value))
       

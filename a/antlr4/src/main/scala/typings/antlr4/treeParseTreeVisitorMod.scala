@@ -47,7 +47,8 @@ object treeParseTreeVisitorMod {
       __obj.asInstanceOf[ParseTreeVisitor]
     }
     
-    extension [Self <: ParseTreeVisitor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseTreeVisitor] (val x: Self) extends AnyVal {
       
       inline def setVisit(value: typings.antlr4.treeParseTreeMod.default => Any): Self = StObject.set(x, "visit", js.Any.fromFunction1(value))
       

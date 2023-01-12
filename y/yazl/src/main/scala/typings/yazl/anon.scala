@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[PartialDirectoryOptions]
     }
     
-    extension [Self <: PartialDirectoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDirectoryOptions] (val x: Self) extends AnyVal {
       
       inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object anon {
       __obj.asInstanceOf[PartialReadStreamOptions]
     }
     
-    extension [Self <: PartialReadStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialReadStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       

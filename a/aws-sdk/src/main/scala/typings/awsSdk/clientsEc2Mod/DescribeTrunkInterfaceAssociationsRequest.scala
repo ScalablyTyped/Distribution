@@ -38,7 +38,8 @@ object DescribeTrunkInterfaceAssociationsRequest {
     __obj.asInstanceOf[DescribeTrunkInterfaceAssociationsRequest]
   }
   
-  extension [Self <: DescribeTrunkInterfaceAssociationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTrunkInterfaceAssociationsRequest] (val x: Self) extends AnyVal {
     
     inline def setAssociationIds(value: TrunkInterfaceAssociationIdList): Self = StObject.set(x, "AssociationIds", value.asInstanceOf[js.Any])
     

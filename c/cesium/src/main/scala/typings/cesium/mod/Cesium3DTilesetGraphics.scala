@@ -62,7 +62,8 @@ object Cesium3DTilesetGraphics {
       __obj.asInstanceOf[ConstructorOptions]
     }
     
-    extension [Self <: ConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setMaximumScreenSpaceError(value: Property | Double): Self = StObject.set(x, "maximumScreenSpaceError", value.asInstanceOf[js.Any])
       

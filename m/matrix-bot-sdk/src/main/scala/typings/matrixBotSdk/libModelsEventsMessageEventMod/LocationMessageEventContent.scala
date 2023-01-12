@@ -25,7 +25,8 @@ object LocationMessageEventContent {
     __obj.asInstanceOf[LocationMessageEventContent]
   }
   
-  extension [Self <: LocationMessageEventContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationMessageEventContent] (val x: Self) extends AnyVal {
     
     inline def setGeo_uri(value: String): Self = StObject.set(x, "geo_uri", value.asInstanceOf[js.Any])
     

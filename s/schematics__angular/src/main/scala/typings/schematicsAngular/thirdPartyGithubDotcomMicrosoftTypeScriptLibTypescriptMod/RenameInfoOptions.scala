@@ -18,7 +18,8 @@ object RenameInfoOptions {
     __obj.asInstanceOf[RenameInfoOptions]
   }
   
-  extension [Self <: RenameInfoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenameInfoOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowRenameOfImportPath(value: Boolean): Self = StObject.set(x, "allowRenameOfImportPath", value.asInstanceOf[js.Any])
     

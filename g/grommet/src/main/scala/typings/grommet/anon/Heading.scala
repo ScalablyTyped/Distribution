@@ -22,7 +22,8 @@ object Heading {
     __obj.asInstanceOf[Heading]
   }
   
-  extension [Self <: Heading](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Heading] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: BackgroundType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

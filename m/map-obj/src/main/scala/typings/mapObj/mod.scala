@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[DeepOptions]
     }
     
-    extension [Self <: DeepOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepOptions] (val x: Self) extends AnyVal {
       
       inline def setDeep(value: `true`): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
     }
@@ -89,7 +90,8 @@ object mod {
       __obj.asInstanceOf[MapperOptions]
     }
     
-    extension [Self <: MapperOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapperOptions] (val x: Self) extends AnyVal {
       
       inline def setShouldRecurse(value: Boolean): Self = StObject.set(x, "shouldRecurse", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
@@ -144,7 +147,8 @@ object mod {
       __obj.asInstanceOf[TargetOptions[TargetObjectType]]
     }
     
-    extension [Self <: TargetOptions[?], TargetObjectType /* <: Record[String, Any] */](x: Self & TargetOptions[TargetObjectType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetOptions[?], TargetObjectType /* <: Record[String, Any] */] (val x: Self & TargetOptions[TargetObjectType]) extends AnyVal {
       
       inline def setTarget(value: TargetObjectType): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }

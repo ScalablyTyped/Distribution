@@ -20,7 +20,8 @@ object CustomCanvasFunctionArgs {
     __obj.asInstanceOf[CustomCanvasFunctionArgs]
   }
   
-  extension [Self <: CustomCanvasFunctionArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomCanvasFunctionArgs] (val x: Self) extends AnyVal {
     
     inline def setCanvas(value: Canvas): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     

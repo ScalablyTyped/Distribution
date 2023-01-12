@@ -41,7 +41,8 @@ object ObjectLiteralExpression {
     __obj.asInstanceOf[ObjectLiteralExpression]
   }
   
-  extension [Self <: ObjectLiteralExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectLiteralExpression] (val x: Self) extends AnyVal {
     
     inline def setPropertyAssignments(value: ISeparatedSyntaxList2): Self = StObject.set(x, "propertyAssignments", value.asInstanceOf[js.Any])
     

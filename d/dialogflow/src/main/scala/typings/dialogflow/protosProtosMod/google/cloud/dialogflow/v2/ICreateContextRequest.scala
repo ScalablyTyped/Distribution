@@ -20,7 +20,8 @@ object ICreateContextRequest {
     __obj.asInstanceOf[ICreateContextRequest]
   }
   
-  extension [Self <: ICreateContextRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICreateContextRequest] (val x: Self) extends AnyVal {
     
     inline def setContext(value: IContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

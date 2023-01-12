@@ -20,7 +20,8 @@ object PartialPickthiscellHeight {
     __obj.asInstanceOf[PartialPickthiscellHeight]
   }
   
-  extension [Self <: PartialPickthiscellHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPickthiscellHeight] (val x: Self) extends AnyVal {
     
     inline def setCellHeight(value: Any): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
     

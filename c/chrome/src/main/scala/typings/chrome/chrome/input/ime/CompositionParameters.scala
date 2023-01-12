@@ -31,7 +31,8 @@ object CompositionParameters {
     __obj.asInstanceOf[CompositionParameters]
   }
   
-  extension [Self <: CompositionParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositionParameters] (val x: Self) extends AnyVal {
     
     inline def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
     

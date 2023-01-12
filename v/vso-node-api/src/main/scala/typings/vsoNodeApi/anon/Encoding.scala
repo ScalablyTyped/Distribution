@@ -59,7 +59,8 @@ object Encoding {
     __obj.asInstanceOf[Encoding]
   }
   
-  extension [Self <: Encoding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: scala.Double): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     

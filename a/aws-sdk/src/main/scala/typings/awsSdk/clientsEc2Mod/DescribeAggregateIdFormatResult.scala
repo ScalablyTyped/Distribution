@@ -23,7 +23,8 @@ object DescribeAggregateIdFormatResult {
     __obj.asInstanceOf[DescribeAggregateIdFormatResult]
   }
   
-  extension [Self <: DescribeAggregateIdFormatResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAggregateIdFormatResult] (val x: Self) extends AnyVal {
     
     inline def setStatuses(value: IdFormatList): Self = StObject.set(x, "Statuses", value.asInstanceOf[js.Any])
     

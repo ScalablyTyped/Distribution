@@ -37,7 +37,8 @@ object UserObjectPrivate {
     __obj.asInstanceOf[UserObjectPrivate]
   }
   
-  extension [Self <: UserObjectPrivate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserObjectPrivate] (val x: Self) extends AnyVal {
     
     inline def setBirthdate(value: String): Self = StObject.set(x, "birthdate", value.asInstanceOf[js.Any])
     

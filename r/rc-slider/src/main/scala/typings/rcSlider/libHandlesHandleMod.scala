@@ -63,7 +63,8 @@ object libHandlesHandleMod extends Shortcut {
       __obj.asInstanceOf[RenderProps]
     }
     
-    extension [Self <: RenderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderProps] (val x: Self) extends AnyVal {
       
       inline def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
       

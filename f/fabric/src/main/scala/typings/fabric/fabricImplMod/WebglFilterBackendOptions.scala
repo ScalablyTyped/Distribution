@@ -15,7 +15,8 @@ object WebglFilterBackendOptions {
     __obj.asInstanceOf[WebglFilterBackendOptions]
   }
   
-  extension [Self <: WebglFilterBackendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebglFilterBackendOptions] (val x: Self) extends AnyVal {
     
     inline def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
   }

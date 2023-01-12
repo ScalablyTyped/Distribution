@@ -23,7 +23,8 @@ object DescribeCodeCoveragesOutput {
     __obj.asInstanceOf[DescribeCodeCoveragesOutput]
   }
   
-  extension [Self <: DescribeCodeCoveragesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCodeCoveragesOutput] (val x: Self) extends AnyVal {
     
     inline def setCodeCoverages(value: CodeCoverages): Self = StObject.set(x, "codeCoverages", value.asInstanceOf[js.Any])
     

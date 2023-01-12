@@ -15,7 +15,8 @@ object ISimpleOrientationSensorStatics {
     __obj.asInstanceOf[ISimpleOrientationSensorStatics]
   }
   
-  extension [Self <: ISimpleOrientationSensorStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISimpleOrientationSensorStatics] (val x: Self) extends AnyVal {
     
     inline def setGetDefault(value: () => SimpleOrientationSensor): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
   }

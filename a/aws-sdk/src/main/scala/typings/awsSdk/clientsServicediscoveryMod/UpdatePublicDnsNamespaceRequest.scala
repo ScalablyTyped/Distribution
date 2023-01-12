@@ -28,7 +28,8 @@ object UpdatePublicDnsNamespaceRequest {
     __obj.asInstanceOf[UpdatePublicDnsNamespaceRequest]
   }
   
-  extension [Self <: UpdatePublicDnsNamespaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePublicDnsNamespaceRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

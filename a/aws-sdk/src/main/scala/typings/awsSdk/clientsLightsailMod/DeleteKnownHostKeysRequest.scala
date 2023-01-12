@@ -18,7 +18,8 @@ object DeleteKnownHostKeysRequest {
     __obj.asInstanceOf[DeleteKnownHostKeysRequest]
   }
   
-  extension [Self <: DeleteKnownHostKeysRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteKnownHostKeysRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
   }

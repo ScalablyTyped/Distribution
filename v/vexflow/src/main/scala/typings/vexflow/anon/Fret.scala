@@ -17,7 +17,8 @@ object Fret {
     __obj.asInstanceOf[Fret]
   }
   
-  extension [Self <: Fret](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fret] (val x: Self) extends AnyVal {
     
     inline def setFret(value: Double): Self = StObject.set(x, "fret", value.asInstanceOf[js.Any])
     

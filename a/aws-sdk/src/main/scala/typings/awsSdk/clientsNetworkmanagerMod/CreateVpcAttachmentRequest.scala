@@ -43,7 +43,8 @@ object CreateVpcAttachmentRequest {
     __obj.asInstanceOf[CreateVpcAttachmentRequest]
   }
   
-  extension [Self <: CreateVpcAttachmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVpcAttachmentRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

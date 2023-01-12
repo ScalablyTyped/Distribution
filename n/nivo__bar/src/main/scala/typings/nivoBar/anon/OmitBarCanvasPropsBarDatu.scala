@@ -169,7 +169,8 @@ object OmitBarCanvasPropsBarDatu {
     __obj.asInstanceOf[OmitBarCanvasPropsBarDatu]
   }
   
-  extension [Self <: OmitBarCanvasPropsBarDatu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitBarCanvasPropsBarDatu] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: js.Array[AnnotationMatcher[ComputedBarDatum[BarDatum]]]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

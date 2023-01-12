@@ -55,7 +55,8 @@ object mod {
       __obj.asInstanceOf[ServerContext]
     }
     
-    extension [Self <: ServerContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerContext] (val x: Self) extends AnyVal {
       
       inline def setClient(value: String): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       

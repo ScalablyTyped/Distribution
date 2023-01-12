@@ -24,7 +24,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[StrategyOverrides]
     }
     
-    extension [Self <: StrategyOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrategyOverrides] (val x: Self) extends AnyVal {
       
       inline def setShouldRejectClick(value: (/* lastTouchEventTimestamp */ js.Date, /* clickEventTimestamp */ js.Date) => Boolean): Self = StObject.set(x, "shouldRejectClick", js.Any.fromFunction2(value))
       

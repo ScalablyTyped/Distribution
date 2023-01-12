@@ -28,7 +28,8 @@ object StartBackupJobOutput {
     __obj.asInstanceOf[StartBackupJobOutput]
   }
   
-  extension [Self <: StartBackupJobOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartBackupJobOutput] (val x: Self) extends AnyVal {
     
     inline def setBackupJobId(value: String): Self = StObject.set(x, "BackupJobId", value.asInstanceOf[js.Any])
     

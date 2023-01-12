@@ -33,7 +33,8 @@ object IsSuccess {
     __obj.asInstanceOf[IsSuccess]
   }
   
-  extension [Self <: IsSuccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsSuccess] (val x: Self) extends AnyVal {
     
     inline def setCardExt(value: String): Self = StObject.set(x, "cardExt", value.asInstanceOf[js.Any])
     

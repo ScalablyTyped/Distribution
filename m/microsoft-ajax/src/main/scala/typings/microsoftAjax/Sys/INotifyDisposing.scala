@@ -32,7 +32,8 @@ object INotifyDisposing {
     __obj.asInstanceOf[INotifyDisposing]
   }
   
-  extension [Self <: INotifyDisposing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INotifyDisposing] (val x: Self) extends AnyVal {
     
     inline def setAdd_disposing(value: js.Function => Unit): Self = StObject.set(x, "add_disposing", js.Any.fromFunction1(value))
     

@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[CHANGEEVENT]
     }
     
-    extension [Self <: CHANGEEVENT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CHANGEEVENT] (val x: Self) extends AnyVal {
       
       inline def setCHANGE_EVENT(value: String): Self = StObject.set(x, "CHANGE_EVENT", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object anon {
       __obj.asInstanceOf[FIXED]
     }
     
-    extension [Self <: FIXED](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FIXED] (val x: Self) extends AnyVal {
       
       inline def setFIXED(value: String): Self = StObject.set(x, "FIXED", value.asInstanceOf[js.Any])
       
@@ -114,7 +116,8 @@ object anon {
       __obj.asInstanceOf[MAXTITLESIZE]
     }
     
-    extension [Self <: MAXTITLESIZE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MAXTITLESIZE] (val x: Self) extends AnyVal {
       
       inline def setMAX_TITLE_SIZE(value: Double): Self = StObject.set(x, "MAX_TITLE_SIZE", value.asInstanceOf[js.Any])
       
@@ -170,7 +173,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCToolbarAdapter]
     }
     
-    extension [Self <: PartialMDCToolbarAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCToolbarAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

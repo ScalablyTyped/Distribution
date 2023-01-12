@@ -27,7 +27,8 @@ object distSrcOnStageGeneralDistComponentsWhiteTextColorSmallMod extends Shortcu
       __obj.asInstanceOf[WhiteTextColorSmallProps]
     }
     
-    extension [Self <: WhiteTextColorSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WhiteTextColorSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

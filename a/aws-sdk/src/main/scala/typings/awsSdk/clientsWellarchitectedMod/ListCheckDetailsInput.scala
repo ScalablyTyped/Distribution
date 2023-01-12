@@ -36,7 +36,8 @@ object ListCheckDetailsInput {
     __obj.asInstanceOf[ListCheckDetailsInput]
   }
   
-  extension [Self <: ListCheckDetailsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCheckDetailsInput] (val x: Self) extends AnyVal {
     
     inline def setChoiceId(value: ChoiceId): Self = StObject.set(x, "ChoiceId", value.asInstanceOf[js.Any])
     

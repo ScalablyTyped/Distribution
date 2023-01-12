@@ -16,7 +16,8 @@ object SecretnameString {
     __obj.asInstanceOf[SecretnameString]
   }
   
-  extension [Self <: SecretnameString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecretnameString] (val x: Self) extends AnyVal {
     
     inline def setSecret_name(value: String): Self = StObject.set(x, "secret_name", value.asInstanceOf[js.Any])
   }

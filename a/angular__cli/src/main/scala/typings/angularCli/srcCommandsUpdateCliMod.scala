@@ -91,7 +91,8 @@ object srcCommandsUpdateCliMod {
       __obj.asInstanceOf[UpdateCommandArgs]
     }
     
-    extension [Self <: UpdateCommandArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateCommandArgs] (val x: Self) extends AnyVal {
       
       inline def `setAllow-dirty`(value: Boolean): Self = StObject.set(x, "allow-dirty", value.asInstanceOf[js.Any])
       

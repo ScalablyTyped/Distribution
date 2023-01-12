@@ -37,7 +37,8 @@ object meta {
     __obj.asInstanceOf[meta]
   }
   
-  extension [Self <: meta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: meta] (val x: Self) extends AnyVal {
     
     inline def setCoordinatesOrder(value: latlong | longlat): Self = StObject.set(x, "coordinatesOrder", value.asInstanceOf[js.Any])
     

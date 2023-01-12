@@ -24,7 +24,8 @@ object Result {
     __obj.asInstanceOf[Result]
   }
   
-  extension [Self <: Result](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
     
     inline def setConsentDetails(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.healthcare.gapi.client.healthcare.ConsentEvaluation} */ js.Any

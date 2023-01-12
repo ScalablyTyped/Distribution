@@ -28,7 +28,8 @@ object CreateExportRequest {
     __obj.asInstanceOf[CreateExportRequest]
   }
   
-  extension [Self <: CreateExportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateExportRequest] (val x: Self) extends AnyVal {
     
     inline def setFileFormat(value: ImportExportFileFormat): Self = StObject.set(x, "fileFormat", value.asInstanceOf[js.Any])
     

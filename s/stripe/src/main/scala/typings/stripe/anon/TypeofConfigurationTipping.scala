@@ -15,7 +15,8 @@ object TypeofConfigurationTipping {
     __obj.asInstanceOf[TypeofConfigurationTipping]
   }
   
-  extension [Self <: TypeofConfigurationTipping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofConfigurationTipping] (val x: Self) extends AnyVal {
     
     inline def setTipping(value: Any): Self = StObject.set(x, "Tipping", value.asInstanceOf[js.Any])
   }

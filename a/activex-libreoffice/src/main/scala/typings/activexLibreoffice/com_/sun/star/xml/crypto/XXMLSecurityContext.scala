@@ -62,7 +62,8 @@ object XXMLSecurityContext {
     __obj.asInstanceOf[XXMLSecurityContext]
   }
   
-  extension [Self <: XXMLSecurityContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XXMLSecurityContext] (val x: Self) extends AnyVal {
     
     inline def setAddSecurityEnvironment(value: XSecurityEnvironment => Double): Self = StObject.set(x, "addSecurityEnvironment", js.Any.fromFunction1(value))
     

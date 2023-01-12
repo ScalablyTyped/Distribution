@@ -16,7 +16,8 @@ object UsedRoboDirective {
     __obj.asInstanceOf[UsedRoboDirective]
   }
   
-  extension [Self <: UsedRoboDirective](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsedRoboDirective] (val x: Self) extends AnyVal {
     
     inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     

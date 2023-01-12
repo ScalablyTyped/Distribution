@@ -27,7 +27,8 @@ object OperationDefinitionContact {
     __obj.asInstanceOf[OperationDefinitionContact]
   }
   
-  extension [Self <: OperationDefinitionContact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationDefinitionContact] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

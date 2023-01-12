@@ -47,7 +47,8 @@ object ServerUrl {
     __obj.asInstanceOf[ServerUrl]
   }
   
-  extension [Self <: ServerUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerUrl] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: StringDictionary[String | Boolean | Double]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

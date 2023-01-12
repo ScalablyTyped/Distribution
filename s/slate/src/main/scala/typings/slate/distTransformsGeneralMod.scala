@@ -18,7 +18,8 @@ object distTransformsGeneralMod {
     @js.native
     val ^ : GeneralTransforms = js.native
     
-    extension [Self <: GeneralTransforms](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeneralTransforms] (val x: Self) extends AnyVal {
       
       inline def setTransform(value: (Editor, Operation) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
     }

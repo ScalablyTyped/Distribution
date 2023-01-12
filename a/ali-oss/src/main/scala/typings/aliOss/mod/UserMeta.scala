@@ -22,7 +22,8 @@ object UserMeta {
     __obj.asInstanceOf[UserMeta]
   }
   
-  extension [Self <: UserMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserMeta] (val x: Self) extends AnyVal {
     
     inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     

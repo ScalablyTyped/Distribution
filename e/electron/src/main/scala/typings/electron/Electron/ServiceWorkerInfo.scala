@@ -31,7 +31,8 @@ object ServiceWorkerInfo {
     __obj.asInstanceOf[ServiceWorkerInfo]
   }
   
-  extension [Self <: ServiceWorkerInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceWorkerInfo] (val x: Self) extends AnyVal {
     
     inline def setRenderProcessId(value: Double): Self = StObject.set(x, "renderProcessId", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object ImmunizationRecommendationRecommendationDateCriterion {
     __obj.asInstanceOf[ImmunizationRecommendationRecommendationDateCriterion]
   }
   
-  extension [Self <: ImmunizationRecommendationRecommendationDateCriterion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImmunizationRecommendationRecommendationDateCriterion] (val x: Self) extends AnyVal {
     
     inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

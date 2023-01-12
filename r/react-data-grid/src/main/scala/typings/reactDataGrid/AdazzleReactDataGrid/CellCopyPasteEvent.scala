@@ -41,7 +41,8 @@ object CellCopyPasteEvent {
     __obj.asInstanceOf[CellCopyPasteEvent]
   }
   
-  extension [Self <: CellCopyPasteEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellCopyPasteEvent] (val x: Self) extends AnyVal {
     
     inline def setCellKey(value: String): Self = StObject.set(x, "cellKey", value.asInstanceOf[js.Any])
     

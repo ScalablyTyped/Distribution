@@ -30,7 +30,8 @@ object MapKitInitOptions {
     __obj.asInstanceOf[MapKitInitOptions]
   }
   
-  extension [Self <: MapKitInitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapKitInitOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationCallback(value: js.Function1[/* token */ String, Unit] => Unit): Self = StObject.set(x, "authorizationCallback", js.Any.fromFunction1(value))
     

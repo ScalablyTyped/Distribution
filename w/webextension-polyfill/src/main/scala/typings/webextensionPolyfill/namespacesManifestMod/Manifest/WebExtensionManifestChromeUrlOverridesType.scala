@@ -18,7 +18,8 @@ object WebExtensionManifestChromeUrlOverridesType {
     __obj.asInstanceOf[WebExtensionManifestChromeUrlOverridesType]
   }
   
-  extension [Self <: WebExtensionManifestChromeUrlOverridesType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionManifestChromeUrlOverridesType] (val x: Self) extends AnyVal {
     
     inline def setNewtab(value: ExtensionURL): Self = StObject.set(x, "newtab", value.asInstanceOf[js.Any])
     

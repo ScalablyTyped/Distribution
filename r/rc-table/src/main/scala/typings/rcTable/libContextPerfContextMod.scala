@@ -23,7 +23,8 @@ object libContextPerfContextMod extends Shortcut {
       __obj.asInstanceOf[PerfRecord]
     }
     
-    extension [Self <: PerfRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PerfRecord] (val x: Self) extends AnyVal {
       
       inline def setRenderWithProps(value: Boolean): Self = StObject.set(x, "renderWithProps", value.asInstanceOf[js.Any])
     }

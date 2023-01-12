@@ -33,7 +33,8 @@ object LaunchTemplateBlockDeviceMapping {
     __obj.asInstanceOf[LaunchTemplateBlockDeviceMapping]
   }
   
-  extension [Self <: LaunchTemplateBlockDeviceMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchTemplateBlockDeviceMapping] (val x: Self) extends AnyVal {
     
     inline def setDeviceName(value: String): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
     

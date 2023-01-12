@@ -41,7 +41,8 @@ object VhostConfig {
     __obj.asInstanceOf[VhostConfig]
   }
   
-  extension [Self <: VhostConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VhostConfig] (val x: Self) extends AnyVal {
     
     inline def setAssert(value: Boolean): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     

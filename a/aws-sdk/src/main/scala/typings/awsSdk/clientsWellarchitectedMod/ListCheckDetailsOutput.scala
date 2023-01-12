@@ -20,7 +20,8 @@ object ListCheckDetailsOutput {
     __obj.asInstanceOf[ListCheckDetailsOutput]
   }
   
-  extension [Self <: ListCheckDetailsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCheckDetailsOutput] (val x: Self) extends AnyVal {
     
     inline def setCheckDetails(value: CheckDetails): Self = StObject.set(x, "CheckDetails", value.asInstanceOf[js.Any])
     

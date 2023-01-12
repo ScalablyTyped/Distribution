@@ -23,7 +23,8 @@ object DescribeAccountPreferencesRequest {
     __obj.asInstanceOf[DescribeAccountPreferencesRequest]
   }
   
-  extension [Self <: DescribeAccountPreferencesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAccountPreferencesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

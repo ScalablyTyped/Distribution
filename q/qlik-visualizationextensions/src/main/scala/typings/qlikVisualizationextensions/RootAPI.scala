@@ -50,7 +50,8 @@ object RootAPI {
       __obj.asInstanceOf[IAppConfig]
     }
     
-    extension [Self <: IAppConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAppConfig] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object RootAPI {
       __obj.asInstanceOf[IGlobalConfig]
     }
     
-    extension [Self <: IGlobalConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGlobalConfig] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -341,7 +343,8 @@ object RootAPI {
       __obj.asInstanceOf[ISessionAppConfig]
     }
     
-    extension [Self <: ISessionAppConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISessionAppConfig] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

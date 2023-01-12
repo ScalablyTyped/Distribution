@@ -18,7 +18,8 @@ object BusinessHours {
     __obj.asInstanceOf[BusinessHours]
   }
   
-  extension [Self <: BusinessHours](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BusinessHours] (val x: Self) extends AnyVal {
     
     inline def setBusinessHours(value: typings.fullcalendarCommon.mod.EventStore): Self = StObject.set(x, "businessHours", value.asInstanceOf[js.Any])
     

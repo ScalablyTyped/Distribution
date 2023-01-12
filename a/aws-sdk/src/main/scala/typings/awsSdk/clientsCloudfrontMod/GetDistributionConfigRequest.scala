@@ -18,7 +18,8 @@ object GetDistributionConfigRequest {
     __obj.asInstanceOf[GetDistributionConfigRequest]
   }
   
-  extension [Self <: GetDistributionConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDistributionConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }

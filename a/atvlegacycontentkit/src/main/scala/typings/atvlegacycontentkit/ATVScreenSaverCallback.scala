@@ -29,7 +29,8 @@ object ATVScreenSaverCallback {
     __obj.asInstanceOf[ATVScreenSaverCallback]
   }
   
-  extension [Self <: ATVScreenSaverCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATVScreenSaverCallback] (val x: Self) extends AnyVal {
     
     inline def setFailure(value: Any => Unit): Self = StObject.set(x, "failure", js.Any.fromFunction1(value))
     

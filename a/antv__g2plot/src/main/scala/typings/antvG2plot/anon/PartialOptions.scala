@@ -78,7 +78,8 @@ object PartialOptions {
     __obj.asInstanceOf[PartialOptions]
   }
   
-  extension [Self <: PartialOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
     
     inline def setFont(
       value: String | (js.Function3[

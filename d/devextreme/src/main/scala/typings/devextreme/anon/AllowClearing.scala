@@ -34,7 +34,8 @@ object AllowClearing {
     __obj.asInstanceOf[AllowClearing]
   }
   
-  extension [Self <: AllowClearing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowClearing] (val x: Self) extends AnyVal {
     
     inline def setAllowClearing(value: Boolean): Self = StObject.set(x, "allowClearing", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object DataProps {
     __obj.asInstanceOf[DataProps[RawDatum]]
   }
   
-  extension [Self <: DataProps[?], RawDatum /* <: Datum */](x: Self & DataProps[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataProps[?], RawDatum /* <: Datum */] (val x: Self & DataProps[RawDatum]) extends AnyVal {
     
     inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

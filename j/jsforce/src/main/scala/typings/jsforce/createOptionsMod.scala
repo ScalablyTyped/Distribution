@@ -91,7 +91,8 @@ object createOptionsMod {
       __obj.asInstanceOf[SObjectCreateOptions]
     }
     
-    extension [Self <: SObjectCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SObjectCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setAccountSource(value: String): Self = StObject.set(x, "AccountSource", value.asInstanceOf[js.Any])
       

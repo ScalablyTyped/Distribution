@@ -84,7 +84,8 @@ object MVCxClientCalendar {
     __obj.asInstanceOf[MVCxClientCalendar]
   }
   
-  extension [Self <: MVCxClientCalendar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MVCxClientCalendar] (val x: Self) extends AnyVal {
     
     inline def setBeginCallback(value: ASPxClientEvent[MVCxClientBeginCallbackEventHandler[MVCxClientCalendar]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
   }

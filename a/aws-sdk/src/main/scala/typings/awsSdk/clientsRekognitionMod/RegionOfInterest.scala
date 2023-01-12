@@ -23,7 +23,8 @@ object RegionOfInterest {
     __obj.asInstanceOf[RegionOfInterest]
   }
   
-  extension [Self <: RegionOfInterest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionOfInterest] (val x: Self) extends AnyVal {
     
     inline def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
     

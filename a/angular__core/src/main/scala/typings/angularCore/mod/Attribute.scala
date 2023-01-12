@@ -17,7 +17,8 @@ object Attribute {
   @js.native
   val ^ : AttributeDecorator = js.native
   
-  extension [Self <: Attribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
     
     inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
   }

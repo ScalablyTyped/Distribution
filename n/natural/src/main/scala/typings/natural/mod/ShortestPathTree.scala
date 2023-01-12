@@ -19,7 +19,8 @@ object ShortestPathTree {
     __obj.asInstanceOf[ShortestPathTree]
   }
   
-  extension [Self <: ShortestPathTree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShortestPathTree] (val x: Self) extends AnyVal {
     
     inline def setGetDistTo(value: Double => Double): Self = StObject.set(x, "getDistTo", js.Any.fromFunction1(value))
     

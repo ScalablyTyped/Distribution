@@ -20,7 +20,8 @@ object iconOptionsAliasOptionsMod {
       __obj.asInstanceOf[AliasOptions]
     }
     
-    extension [Self <: AliasOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AliasOptions] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     }

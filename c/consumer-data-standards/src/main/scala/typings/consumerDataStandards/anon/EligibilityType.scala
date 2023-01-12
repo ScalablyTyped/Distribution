@@ -50,7 +50,8 @@ object EligibilityType {
     __obj.asInstanceOf[EligibilityType]
   }
   
-  extension [Self <: EligibilityType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EligibilityType] (val x: Self) extends AnyVal {
     
     inline def setAdditionalInfo(value: String): Self = StObject.set(x, "additionalInfo", value.asInstanceOf[js.Any])
     

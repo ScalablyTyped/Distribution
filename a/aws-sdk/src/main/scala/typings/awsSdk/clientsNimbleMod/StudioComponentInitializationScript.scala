@@ -33,7 +33,8 @@ object StudioComponentInitializationScript {
     __obj.asInstanceOf[StudioComponentInitializationScript]
   }
   
-  extension [Self <: StudioComponentInitializationScript](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StudioComponentInitializationScript] (val x: Self) extends AnyVal {
     
     inline def setLaunchProfileProtocolVersion(value: LaunchProfileProtocolVersion): Self = StObject.set(x, "launchProfileProtocolVersion", value.asInstanceOf[js.Any])
     

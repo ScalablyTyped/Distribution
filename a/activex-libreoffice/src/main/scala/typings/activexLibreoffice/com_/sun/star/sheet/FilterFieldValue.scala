@@ -23,7 +23,8 @@ object FilterFieldValue {
     __obj.asInstanceOf[FilterFieldValue]
   }
   
-  extension [Self <: FilterFieldValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterFieldValue] (val x: Self) extends AnyVal {
     
     inline def setIsNumeric(value: Boolean): Self = StObject.set(x, "IsNumeric", value.asInstanceOf[js.Any])
     

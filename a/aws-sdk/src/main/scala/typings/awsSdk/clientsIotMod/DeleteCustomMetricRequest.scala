@@ -18,7 +18,8 @@ object DeleteCustomMetricRequest {
     __obj.asInstanceOf[DeleteCustomMetricRequest]
   }
   
-  extension [Self <: DeleteCustomMetricRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCustomMetricRequest] (val x: Self) extends AnyVal {
     
     inline def setMetricName(value: MetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
   }

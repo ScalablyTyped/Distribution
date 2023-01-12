@@ -70,7 +70,8 @@ object quickActionMod {
       __obj.asInstanceOf[QuickActionDescribeInfo]
     }
     
-    extension [Self <: QuickActionDescribeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickActionDescribeInfo] (val x: Self) extends AnyVal {
       
       inline def setContextSobjectType(value: String): Self = StObject.set(x, "contextSobjectType", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object quickActionMod {
       __obj.asInstanceOf[QuickActionInfo]
     }
     
-    extension [Self <: QuickActionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickActionInfo] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

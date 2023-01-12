@@ -22,7 +22,8 @@ object KebabKeysZGCard {
     __obj.asInstanceOf[KebabKeysZGCard]
   }
   
-  extension [Self <: KebabKeysZGCard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KebabKeysZGCard] (val x: Self) extends AnyVal {
     
     inline def setEditor(value: String): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object MetadataParam {
     __obj.asInstanceOf[MetadataParam]
   }
   
-  extension [Self <: MetadataParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetadataParam] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
   }

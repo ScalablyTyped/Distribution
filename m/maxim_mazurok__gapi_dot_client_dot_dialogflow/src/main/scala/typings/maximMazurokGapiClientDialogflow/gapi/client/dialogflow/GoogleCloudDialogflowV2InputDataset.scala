@@ -16,7 +16,8 @@ object GoogleCloudDialogflowV2InputDataset {
     __obj.asInstanceOf[GoogleCloudDialogflowV2InputDataset]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2InputDataset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2InputDataset] (val x: Self) extends AnyVal {
     
     inline def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object GridBackgroundDrawEvent {
     __obj.asInstanceOf[GridBackgroundDrawEvent]
   }
   
-  extension [Self <: GridBackgroundDrawEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridBackgroundDrawEvent] (val x: Self) extends AnyVal {
     
     inline def setElement(value: Svg): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

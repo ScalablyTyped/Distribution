@@ -41,7 +41,8 @@ object distSrcModulesUiTitleTypesMod {
       __obj.asInstanceOf[ITitleAPI]
     }
     
-    extension [Self <: ITitleAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITitleAPI] (val x: Self) extends AnyVal {
       
       inline def setSetTitle(value: /* title */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
       
@@ -64,7 +65,8 @@ object distSrcModulesUiTitleTypesMod {
       __obj.asInstanceOf[ITitleViewCallbacks]
     }
     
-    extension [Self <: ITitleViewCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITitleViewCallbacks] (val x: Self) extends AnyVal {
       
       inline def setOnClick(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object distSrcModulesUiTitleTypesMod {
       __obj.asInstanceOf[ITitleViewConfig]
     }
     
-    extension [Self <: ITitleViewConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITitleViewConfig] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: ITitleViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
@@ -108,7 +111,8 @@ object distSrcModulesUiTitleTypesMod {
       __obj.asInstanceOf[ITitleViewStyles]
     }
     
-    extension [Self <: ITitleViewStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITitleViewStyles] (val x: Self) extends AnyVal {
       
       inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       

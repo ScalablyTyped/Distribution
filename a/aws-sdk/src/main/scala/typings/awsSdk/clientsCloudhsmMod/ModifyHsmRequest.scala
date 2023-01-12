@@ -43,7 +43,8 @@ object ModifyHsmRequest {
     __obj.asInstanceOf[ModifyHsmRequest]
   }
   
-  extension [Self <: ModifyHsmRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyHsmRequest] (val x: Self) extends AnyVal {
     
     inline def setEniIp(value: IpAddress): Self = StObject.set(x, "EniIp", value.asInstanceOf[js.Any])
     

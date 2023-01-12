@@ -81,7 +81,8 @@ object b2AABB {
     __obj.asInstanceOf[b2AABB]
   }
   
-  extension [Self <: b2AABB](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2AABB] (val x: Self) extends AnyVal {
     
     inline def setCombine(value: (b2AABB, b2AABB) => Unit): Self = StObject.set(x, "Combine", js.Any.fromFunction2(value))
     

@@ -15,7 +15,8 @@ object PlotPcBottomLineOptions {
     __obj.asInstanceOf[PlotPcBottomLineOptions]
   }
   
-  extension [Self <: PlotPcBottomLineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPcBottomLineOptions] (val x: Self) extends AnyVal {
     
     inline def setStyles(value: PlotPcBottomLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     

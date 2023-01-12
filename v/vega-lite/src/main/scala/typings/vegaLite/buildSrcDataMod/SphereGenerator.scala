@@ -22,7 +22,8 @@ object SphereGenerator {
     __obj.asInstanceOf[SphereGenerator]
   }
   
-  extension [Self <: SphereGenerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SphereGenerator] (val x: Self) extends AnyVal {
     
     inline def setSphere(value: `true` | js.Object): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
   }

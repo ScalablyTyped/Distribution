@@ -28,7 +28,8 @@ object libModelsRegistrationresultMod {
             __obj.asInstanceOf[RegistrationResult]
           }
           
-          extension [Self <: RegistrationResult](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: RegistrationResult] (val x: Self) extends AnyVal {
             
             inline def setParse(value: js.Object => js.Object | js.Array[js.Object]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
             

@@ -32,7 +32,8 @@ object XPropertySetInfoChangeListener {
     __obj.asInstanceOf[XPropertySetInfoChangeListener]
   }
   
-  extension [Self <: XPropertySetInfoChangeListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPropertySetInfoChangeListener] (val x: Self) extends AnyVal {
     
     inline def setPropertySetInfoChange(value: PropertySetInfoChangeEvent => Unit): Self = StObject.set(x, "propertySetInfoChange", js.Any.fromFunction1(value))
   }

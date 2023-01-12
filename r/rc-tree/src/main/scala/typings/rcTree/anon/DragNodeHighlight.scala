@@ -15,7 +15,8 @@ object DragNodeHighlight {
     __obj.asInstanceOf[DragNodeHighlight]
   }
   
-  extension [Self <: DragNodeHighlight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragNodeHighlight] (val x: Self) extends AnyVal {
     
     inline def setDragNodeHighlight(value: Boolean): Self = StObject.set(x, "dragNodeHighlight", value.asInstanceOf[js.Any])
   }

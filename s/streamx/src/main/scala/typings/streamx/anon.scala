@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[`0`[TStream, TType, TMapType, TByteType]]
     }
     
-    extension [Self <: `0`[?, ?, ?, ?], TStream /* <: Writable[TType, TMapType, TByteType, Any, Any, WritableEvents[TType]] */, TType, TMapType, TByteType](x: Self & (`0`[TStream, TType, TMapType, TByteType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`[?, ?, ?, ?], TStream /* <: Writable[TType, TMapType, TByteType, Any, Any, WritableEvents[TType]] */, TType, TMapType, TByteType] (val x: Self & (`0`[TStream, TType, TMapType, TByteType])) extends AnyVal {
       
       inline def setMap(value: MapFunction[TStream, TType, TMapType]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[Map[TMapFallback, TStream, TType, TMapType, TByteType]]
     }
     
-    extension [Self <: Map[?, ?, ?, ?, ?], TMapFallback, TStream /* <: Readable[TType, TMapType, TByteType, Any, Any, ReadableEvents[TMapType]] */, TType, TMapType, TByteType](x: Self & (Map[TMapFallback, TStream, TType, TMapType, TByteType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Map[?, ?, ?, ?, ?], TMapFallback, TStream /* <: Readable[TType, TMapType, TByteType, Any, Any, ReadableEvents[TMapType]] */, TType, TMapType, TByteType] (val x: Self & (Map[TMapFallback, TStream, TType, TMapType, TByteType])) extends AnyVal {
       
       inline def setMap(value: TMapFallback): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
@@ -70,7 +72,8 @@ object anon {
       __obj.asInstanceOf[MapMapFunction[TStream, TType, TMapType, TByteType]]
     }
     
-    extension [Self <: MapMapFunction[?, ?, ?, ?], TStream /* <: Readable[TType, TMapType, TByteType, Any, Any, ReadableEvents[TMapType]] */, TType, TMapType, TByteType](x: Self & (MapMapFunction[TStream, TType, TMapType, TByteType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapMapFunction[?, ?, ?, ?], TStream /* <: Readable[TType, TMapType, TByteType, Any, Any, ReadableEvents[TMapType]] */, TType, TMapType, TByteType] (val x: Self & (MapMapFunction[TStream, TType, TMapType, TByteType])) extends AnyVal {
       
       inline def setMap(value: MapFunction[TStream, TType, TMapType]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
@@ -93,7 +96,8 @@ object anon {
       __obj.asInstanceOf[MapWritable[TMapFallback, TStream, TType, TMapType, TByteType]]
     }
     
-    extension [Self <: MapWritable[?, ?, ?, ?, ?], TMapFallback, TStream /* <: Writable[TType, TMapType, TByteType, Any, Any, WritableEvents[TType]] */, TType, TMapType, TByteType](x: Self & (MapWritable[TMapFallback, TStream, TType, TMapType, TByteType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapWritable[?, ?, ?, ?, ?], TMapFallback, TStream /* <: Writable[TType, TMapType, TByteType, Any, Any, WritableEvents[TType]] */, TType, TMapType, TByteType] (val x: Self & (MapWritable[TMapFallback, TStream, TType, TMapType, TByteType])) extends AnyVal {
       
       inline def setMap(value: TMapFallback): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       

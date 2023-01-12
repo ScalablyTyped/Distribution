@@ -19,7 +19,8 @@ object ITransportStateListener {
     __obj.asInstanceOf[ITransportStateListener]
   }
   
-  extension [Self <: ITransportStateListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITransportStateListener] (val x: Self) extends AnyVal {
     
     inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
     

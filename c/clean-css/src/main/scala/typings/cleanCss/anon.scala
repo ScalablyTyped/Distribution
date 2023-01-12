@@ -51,7 +51,8 @@ object anon {
       __obj.asInstanceOf[AdjacentSpace]
     }
     
-    extension [Self <: AdjacentSpace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdjacentSpace] (val x: Self) extends AnyVal {
       
       inline def setAdjacentSpace(value: Boolean): Self = StObject.set(x, "adjacentSpace", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object anon {
       __obj.asInstanceOf[AfterAtRule]
     }
     
-    extension [Self <: AfterAtRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AfterAtRule] (val x: Self) extends AnyVal {
       
       inline def setAfterAtRule(value: Boolean): Self = StObject.set(x, "afterAtRule", value.asInstanceOf[js.Any])
       
@@ -303,7 +305,8 @@ object anon {
       __obj.asInstanceOf[All]
     }
     
-    extension [Self <: All](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: All] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -425,7 +428,8 @@ object anon {
       __obj.asInstanceOf[AroundSelectorRelation]
     }
     
-    extension [Self <: AroundSelectorRelation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AroundSelectorRelation] (val x: Self) extends AnyVal {
       
       inline def setAroundSelectorRelation(value: Boolean): Self = StObject.set(x, "aroundSelectorRelation", value.asInstanceOf[js.Any])
       
@@ -515,7 +519,8 @@ object anon {
       __obj.asInstanceOf[BackgroundClipMerging]
     }
     
-    extension [Self <: BackgroundClipMerging](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackgroundClipMerging] (val x: Self) extends AnyVal {
       
       inline def setBackgroundClipMerging(value: Boolean): Self = StObject.set(x, "backgroundClipMerging", value.asInstanceOf[js.Any])
       
@@ -625,7 +630,8 @@ object anon {
       __obj.asInstanceOf[Ch]
     }
     
-    extension [Self <: Ch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ch] (val x: Self) extends AnyVal {
       
       inline def setCh(value: Boolean): Self = StObject.set(x, "ch", value.asInstanceOf[js.Any])
       
@@ -694,7 +700,8 @@ object anon {
       __obj.asInstanceOf[Efficiency]
     }
     
-    extension [Self <: Efficiency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Efficiency] (val x: Self) extends AnyVal {
       
       inline def setEfficiency(value: Double): Self = StObject.set(x, "efficiency", value.asInstanceOf[js.Any])
       
@@ -790,7 +797,8 @@ object anon {
       __obj.asInstanceOf[MergeAdjacentRules]
     }
     
-    extension [Self <: MergeAdjacentRules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeAdjacentRules] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -870,7 +878,8 @@ object anon {
       __obj.asInstanceOf[Opacity]
     }
     
-    extension [Self <: Opacity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opacity] (val x: Self) extends AnyVal {
       
       inline def setOpacity(value: Boolean): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
@@ -897,7 +906,8 @@ object anon {
       __obj.asInstanceOf[SourceMap]
     }
     
-    extension [Self <: SourceMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceMap] (val x: Self) extends AnyVal {
       
       inline def setSourceMap(value: RawSourceMap | String): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object CoreNetworkChangeEventValues {
     __obj.asInstanceOf[CoreNetworkChangeEventValues]
   }
   
-  extension [Self <: CoreNetworkChangeEventValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreNetworkChangeEventValues] (val x: Self) extends AnyVal {
     
     inline def setAttachmentId(value: AttachmentId): Self = StObject.set(x, "AttachmentId", value.asInstanceOf[js.Any])
     

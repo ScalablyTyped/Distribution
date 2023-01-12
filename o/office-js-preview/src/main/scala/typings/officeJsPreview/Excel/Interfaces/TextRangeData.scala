@@ -30,7 +30,8 @@ object TextRangeData {
     __obj.asInstanceOf[TextRangeData]
   }
   
-  extension [Self <: TextRangeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextRangeData] (val x: Self) extends AnyVal {
     
     inline def setFont(value: ShapeFontData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     

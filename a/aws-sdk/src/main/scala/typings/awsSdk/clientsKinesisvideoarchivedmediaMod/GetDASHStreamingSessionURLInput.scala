@@ -53,7 +53,8 @@ object GetDASHStreamingSessionURLInput {
     __obj.asInstanceOf[GetDASHStreamingSessionURLInput]
   }
   
-  extension [Self <: GetDASHStreamingSessionURLInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDASHStreamingSessionURLInput] (val x: Self) extends AnyVal {
     
     inline def setDASHFragmentSelector(value: DASHFragmentSelector): Self = StObject.set(x, "DASHFragmentSelector", value.asInstanceOf[js.Any])
     

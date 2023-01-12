@@ -13794,7 +13794,8 @@ object JQuery {
         __obj.asInstanceOf[AjaxSettingsBase[TContext]]
       }
       
-      extension [Self <: AjaxSettingsBase[?], TContext](x: Self & AjaxSettingsBase[TContext]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AjaxSettingsBase[?], TContext] (val x: Self & AjaxSettingsBase[TContext]) extends AnyVal {
         
         inline def setAccepts(value: PlainObject[String]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
         
@@ -14792,7 +14793,8 @@ object JQuery {
         __obj.asInstanceOf[StatusCodeCallbacks[TContext]]
       }
       
-      extension [Self <: StatusCodeCallbacks[?], TContext](x: Self & StatusCodeCallbacks[TContext]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StatusCodeCallbacks[?], TContext] (val x: Self & StatusCodeCallbacks[TContext]) extends AnyVal {
         
         inline def set200(value: SuccessCallback[TContext]): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
         
@@ -16468,7 +16470,8 @@ object JQuery {
         __obj.asInstanceOf[XHRFields]
       }
       
-      extension [Self <: XHRFields](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: XHRFields] (val x: Self) extends AnyVal {
         
         inline def setMsCaching(value: String): Self = StObject.set(x, "msCaching", value.asInstanceOf[js.Any])
         
@@ -16513,7 +16516,8 @@ object JQuery {
       __obj.asInstanceOf[AjaxSettings[TContext]]
     }
     
-    extension [Self <: AjaxSettings[?], TContext](x: Self & AjaxSettings[TContext]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxSettings[?], TContext] (val x: Self & AjaxSettings[TContext]) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
@@ -16757,7 +16761,8 @@ object JQuery {
       __obj.asInstanceOf[BlurEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: BlurEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (BlurEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlurEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (BlurEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: blur): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -17255,7 +17260,8 @@ object JQuery {
       __obj.asInstanceOf[ChangeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: ChangeEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (ChangeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (ChangeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: change): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -17332,7 +17338,8 @@ object JQuery {
       __obj.asInstanceOf[ClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: ClickEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (ClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (ClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: click): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -17409,7 +17416,8 @@ object JQuery {
       __obj.asInstanceOf[ContextMenuEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: ContextMenuEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (ContextMenuEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (ContextMenuEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: contextmenu): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -17430,7 +17438,8 @@ object JQuery {
       __obj.asInstanceOf[Coordinates]
     }
     
-    extension [Self <: Coordinates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Coordinates] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -18694,7 +18703,8 @@ object JQuery {
       __obj.asInstanceOf[DoubleClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: DoubleClickEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DoubleClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoubleClickEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DoubleClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: dblclick): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -18732,7 +18742,8 @@ object JQuery {
       __obj.asInstanceOf[DragEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: DragEndEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DragEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragEndEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DragEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: dragend): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -18770,7 +18781,8 @@ object JQuery {
       __obj.asInstanceOf[DragEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: DragEnterEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DragEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragEnterEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DragEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: dragenter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -18808,7 +18820,8 @@ object JQuery {
       __obj.asInstanceOf[typings.cypress.JQuery.DragEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: typings.cypress.JQuery.DragEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (typings.cypress.JQuery.DragEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.cypress.JQuery.DragEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (typings.cypress.JQuery.DragEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: drag): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -18849,7 +18862,8 @@ object JQuery {
       __obj.asInstanceOf[DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: DragEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setOriginalEvent(value: typings.cypress.DragEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -18889,7 +18903,8 @@ object JQuery {
       __obj.asInstanceOf[DragExitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: DragExitEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DragExitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragExitEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DragExitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: dragexit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -18927,7 +18942,8 @@ object JQuery {
       __obj.asInstanceOf[DragLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: DragLeaveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DragLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragLeaveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DragLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: dragleave): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -18965,7 +18981,8 @@ object JQuery {
       __obj.asInstanceOf[DragOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: DragOverEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DragOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragOverEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DragOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: dragover): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -19003,7 +19020,8 @@ object JQuery {
       __obj.asInstanceOf[DragStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: DragStartEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DragStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragStartEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DragStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: dragstart): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -19041,7 +19059,8 @@ object JQuery {
       __obj.asInstanceOf[DropEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: DropEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DropEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DropEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: drop): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -19203,7 +19222,8 @@ object JQuery {
       __obj.asInstanceOf[Effects]
     }
     
-    extension [Self <: Effects](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Effects] (val x: Self) extends AnyVal {
       
       inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
@@ -19319,7 +19339,8 @@ object JQuery {
       __obj.asInstanceOf[EffectsOptions[TElement]]
     }
     
-    extension [Self <: EffectsOptions[?], TElement](x: Self & EffectsOptions[TElement]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EffectsOptions[?], TElement] (val x: Self & EffectsOptions[TElement]) extends AnyVal {
       
       inline def setAlways(
         value: js.ThisFunction2[
@@ -19911,7 +19932,8 @@ object JQuery {
       __obj.asInstanceOf[typings.cypress.JQuery.Event]
     }
     
-    extension [Self <: typings.cypress.JQuery.Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.cypress.JQuery.Event] (val x: Self) extends AnyVal {
       
       inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
@@ -20382,7 +20404,8 @@ object JQuery {
       __obj.asInstanceOf[EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: EventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setAltKey(value: Unit): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
@@ -20467,7 +20490,8 @@ object JQuery {
       __obj.asInstanceOf[EventExtensions]
     }
     
-    extension [Self <: EventExtensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventExtensions] (val x: Self) extends AnyVal {
       
       inline def setSpecial(value: SpecialEventHooks): Self = StObject.set(x, "special", value.asInstanceOf[js.Any])
     }
@@ -20621,7 +20645,8 @@ object JQuery {
       __obj.asInstanceOf[typings.cypress.JQuery.FocusEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: typings.cypress.JQuery.FocusEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (typings.cypress.JQuery.FocusEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.cypress.JQuery.FocusEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (typings.cypress.JQuery.FocusEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: focus): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -20944,7 +20969,8 @@ object JQuery {
       __obj.asInstanceOf[FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: FocusEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setAltKey(value: Unit): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
@@ -21065,7 +21091,8 @@ object JQuery {
       __obj.asInstanceOf[FocusInEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: FocusInEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (FocusInEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusInEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (FocusInEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: focusin): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -21128,7 +21155,8 @@ object JQuery {
       __obj.asInstanceOf[FocusOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: FocusOutEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (FocusOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusOutEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (FocusOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: focusout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -21184,7 +21212,8 @@ object JQuery {
       __obj.asInstanceOf[HandleObject[TTarget, TData]]
     }
     
-    extension [Self <: HandleObject[?, ?], TTarget, TData](x: Self & (HandleObject[TTarget, TData])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandleObject[?, ?], TTarget, TData] (val x: Self & (HandleObject[TTarget, TData])) extends AnyVal {
       
       inline def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -21261,7 +21290,8 @@ object JQuery {
       __obj.asInstanceOf[KeyDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: KeyDownEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (KeyDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyDownEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (KeyDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: keydown): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -21324,7 +21354,8 @@ object JQuery {
       __obj.asInstanceOf[KeyPressEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: KeyPressEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (KeyPressEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyPressEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (KeyPressEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: keypress): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -21387,7 +21418,8 @@ object JQuery {
       __obj.asInstanceOf[KeyUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: KeyUpEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (KeyUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyUpEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (KeyUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: keyup): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -21706,7 +21738,8 @@ object JQuery {
       __obj.asInstanceOf[KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: KeyboardEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
@@ -21835,7 +21868,8 @@ object JQuery {
       __obj.asInstanceOf[MouseDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: MouseDownEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (MouseDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseDownEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MouseDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: mousedown): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -21899,7 +21933,8 @@ object JQuery {
       __obj.asInstanceOf[MouseEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: MouseEnterEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (MouseEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseEnterEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MouseEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: mouseover): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -22221,7 +22256,8 @@ object JQuery {
       __obj.asInstanceOf[MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: MouseEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
@@ -22343,7 +22379,8 @@ object JQuery {
       __obj.asInstanceOf[MouseLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: MouseLeaveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (MouseLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseLeaveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MouseLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: mouseout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -22420,7 +22457,8 @@ object JQuery {
       __obj.asInstanceOf[MouseMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: MouseMoveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (MouseMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseMoveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MouseMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: mousemove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -22483,7 +22521,8 @@ object JQuery {
       __obj.asInstanceOf[MouseOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: MouseOutEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (MouseOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseOutEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MouseOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: mouseout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -22546,7 +22585,8 @@ object JQuery {
       __obj.asInstanceOf[MouseOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: MouseOverEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (MouseOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseOverEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MouseOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: mouseover): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -22623,7 +22663,8 @@ object JQuery {
       __obj.asInstanceOf[MouseUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: MouseUpEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (MouseUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseUpEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MouseUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: mouseup): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -22645,7 +22686,8 @@ object JQuery {
       __obj.asInstanceOf[NameValuePair]
     }
     
-    extension [Self <: NameValuePair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameValuePair] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -23941,7 +23983,8 @@ object JQuery {
       __obj.asInstanceOf[ResizeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: ResizeEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (ResizeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (ResizeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: resize): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -24005,7 +24048,8 @@ object JQuery {
       __obj.asInstanceOf[ScrollEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: ScrollEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (ScrollEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (ScrollEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: scroll): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -24069,7 +24113,8 @@ object JQuery {
       __obj.asInstanceOf[SelectEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: SelectEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (SelectEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (SelectEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: select): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -24114,7 +24159,8 @@ object JQuery {
       __obj.asInstanceOf[Selectors]
     }
     
-    extension [Self <: Selectors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Selectors] (val x: Self) extends AnyVal {
       
       inline def setColon(value: PseudoFunctions): Self = StObject.set(x, ":", value.asInstanceOf[js.Any])
     }
@@ -24218,7 +24264,8 @@ object JQuery {
       __obj.asInstanceOf[SubmitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: SubmitEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (SubmitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubmitEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (SubmitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: submit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -24302,7 +24349,8 @@ object JQuery {
       __obj.asInstanceOf[TouchCancelEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: TouchCancelEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (TouchCancelEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TouchCancelEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TouchCancelEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: touchcancel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -24366,7 +24414,8 @@ object JQuery {
       __obj.asInstanceOf[TouchEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: TouchEndEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (TouchEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TouchEndEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TouchEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: touchend): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -24690,7 +24739,8 @@ object JQuery {
       __obj.asInstanceOf[TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: TouchEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TouchEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
@@ -24808,7 +24858,8 @@ object JQuery {
       __obj.asInstanceOf[TouchMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: TouchMoveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (TouchMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TouchMoveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TouchMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: touchmove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -24872,7 +24923,8 @@ object JQuery {
       __obj.asInstanceOf[TouchStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: TouchStartEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (TouchStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TouchStartEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TouchStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: touchstart): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -24891,7 +24943,8 @@ object JQuery {
       __obj.asInstanceOf[Transport]
     }
     
-    extension [Self <: Transport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transport] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
@@ -25154,7 +25207,8 @@ object JQuery {
       __obj.asInstanceOf[TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: TriggeredEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TriggeredEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setCurrentTarget(value: TCurrentTarget): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
@@ -25277,7 +25331,8 @@ object JQuery {
       __obj.asInstanceOf[Tween[TElement]]
     }
     
-    extension [Self <: Tween[?], TElement](x: Self & Tween[TElement]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tween[?], TElement] (val x: Self & Tween[TElement]) extends AnyVal {
       
       inline def setCur(value: () => Any): Self = StObject.set(x, "cur", js.Any.fromFunction0(value))
       
@@ -25514,7 +25569,8 @@ object JQuery {
       __obj.asInstanceOf[TypeToTriggeredEventMap[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: TypeToTriggeredEventMap[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (TypeToTriggeredEventMap[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeToTriggeredEventMap[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TypeToTriggeredEventMap[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setBlur(value: BlurEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       
@@ -25639,7 +25695,8 @@ object JQuery {
       __obj.asInstanceOf[UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: UIEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UIEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
       
@@ -25673,7 +25730,8 @@ object JQuery {
       __obj.asInstanceOf[UrlAjaxSettings[TContext]]
     }
     
-    extension [Self <: UrlAjaxSettings[?], TContext](x: Self & UrlAjaxSettings[TContext]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlAjaxSettings[?], TContext] (val x: Self & UrlAjaxSettings[TContext]) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
@@ -25706,7 +25764,8 @@ object JQuery {
       __obj.asInstanceOf[_CSSHook[TElement]]
     }
     
-    extension [Self <: _CSSHook[?], TElement](x: Self & _CSSHook[TElement]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: _CSSHook[?], TElement] (val x: Self & _CSSHook[TElement]) extends AnyVal {
       
       inline def setGet(value: (TElement, Any, Any) => Any): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
       
@@ -26084,7 +26143,8 @@ object JQuery {
       __obj.asInstanceOf[_TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: _TypeEventHandlers[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (_TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: _TypeEventHandlers[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (_TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setBlur(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, blur]) | `false` | js.Object

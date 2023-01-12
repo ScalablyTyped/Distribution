@@ -21,7 +21,8 @@ object ArtistSearchResponse {
     __obj.asInstanceOf[ArtistSearchResponse]
   }
   
-  extension [Self <: ArtistSearchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtistSearchResponse] (val x: Self) extends AnyVal {
     
     inline def setArtists(value: PagingObject[ArtistObjectFull]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
   }

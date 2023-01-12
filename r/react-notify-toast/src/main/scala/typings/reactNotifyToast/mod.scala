@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[NotificationProps]
     }
     
-    extension [Self <: NotificationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationProps] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       
@@ -145,7 +147,8 @@ object mod {
       __obj.asInstanceOf[reactNotifyToastColor]
     }
     
-    extension [Self <: reactNotifyToastColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: reactNotifyToastColor] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       

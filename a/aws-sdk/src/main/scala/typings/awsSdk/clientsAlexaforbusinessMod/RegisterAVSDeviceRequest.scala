@@ -48,7 +48,8 @@ object RegisterAVSDeviceRequest {
     __obj.asInstanceOf[RegisterAVSDeviceRequest]
   }
   
-  extension [Self <: RegisterAVSDeviceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterAVSDeviceRequest] (val x: Self) extends AnyVal {
     
     inline def setAmazonId(value: AmazonId): Self = StObject.set(x, "AmazonId", value.asInstanceOf[js.Any])
     

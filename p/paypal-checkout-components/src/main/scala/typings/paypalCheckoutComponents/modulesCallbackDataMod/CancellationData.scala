@@ -32,7 +32,8 @@ object CancellationData {
     __obj.asInstanceOf[CancellationData]
   }
   
-  extension [Self <: CancellationData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancellationData] (val x: Self) extends AnyVal {
     
     inline def setBillingID(value: String): Self = StObject.set(x, "billingID", value.asInstanceOf[js.Any])
     

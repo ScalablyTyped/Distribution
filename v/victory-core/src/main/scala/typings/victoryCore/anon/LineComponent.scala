@@ -20,7 +20,8 @@ object LineComponent {
     __obj.asInstanceOf[LineComponent]
   }
   
-  extension [Self <: LineComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineComponent] (val x: Self) extends AnyVal {
     
     inline def setLineComponent(value: Element): Self = StObject.set(x, "lineComponent", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object SourceMapSource {
     __obj.asInstanceOf[SourceMapSource]
   }
   
-  extension [Self <: SourceMapSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceMapSource] (val x: Self) extends AnyVal {
     
     inline def setFileName(value: java.lang.String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     

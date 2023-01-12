@@ -28,7 +28,8 @@ object SFTPStreamConfig {
     __obj.asInstanceOf[SFTPStreamConfig]
   }
   
-  extension [Self <: SFTPStreamConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SFTPStreamConfig] (val x: Self) extends AnyVal {
     
     inline def setDebug(value: /* information */ String => Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     

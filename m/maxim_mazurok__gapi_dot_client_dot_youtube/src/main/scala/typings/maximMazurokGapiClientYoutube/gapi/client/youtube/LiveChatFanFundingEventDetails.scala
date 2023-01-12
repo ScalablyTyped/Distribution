@@ -25,7 +25,8 @@ object LiveChatFanFundingEventDetails {
     __obj.asInstanceOf[LiveChatFanFundingEventDetails]
   }
   
-  extension [Self <: LiveChatFanFundingEventDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveChatFanFundingEventDetails] (val x: Self) extends AnyVal {
     
     inline def setAmountDisplayString(value: String): Self = StObject.set(x, "amountDisplayString", value.asInstanceOf[js.Any])
     

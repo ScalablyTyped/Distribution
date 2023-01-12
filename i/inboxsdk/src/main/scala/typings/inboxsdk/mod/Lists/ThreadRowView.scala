@@ -75,7 +75,8 @@ object ThreadRowView {
     __obj.asInstanceOf[ThreadRowView]
   }
   
-  extension [Self <: ThreadRowView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreadRowView] (val x: Self) extends AnyVal {
     
     inline def setAddActionButton(value: ThreadRowActionButtonDescriptor => Unit): Self = StObject.set(x, "addActionButton", js.Any.fromFunction1(value))
     

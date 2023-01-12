@@ -36,7 +36,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[CMD]
       }
       
-      extension [Self <: CMD](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CMD] (val x: Self) extends AnyVal {
         
         inline def setSHUTDOWN(value: CLUSTER_CONTROL_shutdown): Self = StObject.set(x, "SHUTDOWN", value.asInstanceOf[js.Any])
       }
@@ -57,7 +58,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[ClusterMaster]
       }
       
-      extension [Self <: ClusterMaster](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClusterMaster] (val x: Self) extends AnyVal {
         
         inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
         
@@ -82,7 +84,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[ClusterStatus]
       }
       
-      extension [Self <: ClusterStatus](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClusterStatus] (val x: Self) extends AnyVal {
         
         inline def setMaster(value: ClusterMaster): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
         
@@ -105,7 +108,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[ClusterWorker]
       }
       
-      extension [Self <: ClusterWorker](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClusterWorker] (val x: Self) extends AnyVal {
         
         inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       }
@@ -206,7 +210,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[StartOptions]
       }
       
-      extension [Self <: StartOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StartOptions] (val x: Self) extends AnyVal {
         
         inline def setEnv(value: js.Object): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
         

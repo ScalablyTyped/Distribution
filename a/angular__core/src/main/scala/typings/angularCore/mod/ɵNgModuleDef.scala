@@ -51,7 +51,8 @@ object ɵNgModuleDef {
     __obj.asInstanceOf[ɵNgModuleDef[T]]
   }
   
-  extension [Self <: ɵNgModuleDef[?], T](x: Self & ɵNgModuleDef[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ɵNgModuleDef[?], T] (val x: Self & ɵNgModuleDef[T]) extends AnyVal {
     
     inline def setBootstrap(value: js.Array[Type[Any]] | js.Function0[js.Array[Type[Any]]]): Self = StObject.set(x, "bootstrap", value.asInstanceOf[js.Any])
     

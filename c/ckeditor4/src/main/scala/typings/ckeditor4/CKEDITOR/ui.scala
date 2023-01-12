@@ -134,7 +134,8 @@ object ui {
         __obj.asInstanceOf[definition]
       }
       
-      extension [Self <: definition](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: definition] (val x: Self) extends AnyVal {
         
         inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
@@ -169,7 +170,8 @@ object ui {
         __obj.asInstanceOf[parts]
       }
       
-      extension [Self <: parts](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: parts] (val x: Self) extends AnyVal {
         
         inline def setClose(value: element): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
         
@@ -220,7 +222,8 @@ object ui {
         __obj.asInstanceOf[rect]
       }
       
-      extension [Self <: rect](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: rect] (val x: Self) extends AnyVal {
         
         inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
@@ -267,7 +270,8 @@ object ui {
         __obj.asInstanceOf[templateDefinitions]
       }
       
-      extension [Self <: templateDefinitions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: templateDefinitions] (val x: Self) extends AnyVal {
         
         inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
         
@@ -322,7 +326,8 @@ object ui {
         __obj.asInstanceOf[templates]
       }
       
-      extension [Self <: templates](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: templates] (val x: Self) extends AnyVal {
         
         inline def setClose(value: template): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
         
@@ -398,7 +403,8 @@ object ui {
       __obj.asInstanceOf[button]
     }
     
-    extension [Self <: button](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: button] (val x: Self) extends AnyVal {
       
       inline def setGetState(value: () => Double): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       
@@ -448,7 +454,8 @@ object ui {
         __obj.asInstanceOf[typings.ckeditor4.CKEDITOR.ui.dialog.button]
       }
       
-      extension [Self <: typings.ckeditor4.CKEDITOR.ui.dialog.button](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.ckeditor4.CKEDITOR.ui.dialog.button] (val x: Self) extends AnyVal {
         
         inline def setAccessKeyDown(value: () => Unit): Self = StObject.set(x, "accessKeyDown", js.Any.fromFunction0(value))
         
@@ -491,7 +498,8 @@ object ui {
         __obj.asInstanceOf[checkbox]
       }
       
-      extension [Self <: checkbox](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: checkbox] (val x: Self) extends AnyVal {
         
         inline def setAccessKeyUp(value: () => Unit): Self = StObject.set(x, "accessKeyUp", js.Any.fromFunction0(value))
         
@@ -514,7 +522,8 @@ object ui {
           __obj.asInstanceOf[typings.ckeditor4.CKEDITOR.ui.dialog.definitions.button]
         }
         
-        extension [Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.button](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.button] (val x: Self) extends AnyVal {
           
           inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
           
@@ -539,7 +548,8 @@ object ui {
           __obj.asInstanceOf[typings.ckeditor4.CKEDITOR.ui.dialog.definitions.checkbox]
         }
         
-        extension [Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.checkbox](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.checkbox] (val x: Self) extends AnyVal {
           
           inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
           
@@ -568,7 +578,8 @@ object ui {
           __obj.asInstanceOf[fieldSet]
         }
         
-        extension [Self <: fieldSet](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: fieldSet] (val x: Self) extends AnyVal {
           
           inline def setChildren(value: js.Array[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
           
@@ -591,7 +602,8 @@ object ui {
           __obj.asInstanceOf[typings.ckeditor4.CKEDITOR.ui.dialog.definitions.file]
         }
         
-        extension [Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.file](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.file] (val x: Self) extends AnyVal {
           
           inline def setValidate(value: () => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
           
@@ -613,7 +625,8 @@ object ui {
           __obj.asInstanceOf[typings.ckeditor4.CKEDITOR.ui.dialog.definitions.fileButton]
         }
         
-        extension [Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.fileButton](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.fileButton] (val x: Self) extends AnyVal {
           
           inline def setFor(value: String): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
           
@@ -640,7 +653,8 @@ object ui {
           __obj.asInstanceOf[typings.ckeditor4.CKEDITOR.ui.dialog.definitions.hbox]
         }
         
-        extension [Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.hbox](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.hbox] (val x: Self) extends AnyVal {
           
           inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
           
@@ -673,7 +687,8 @@ object ui {
           __obj.asInstanceOf[typings.ckeditor4.CKEDITOR.ui.dialog.definitions.html]
         }
         
-        extension [Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.html](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.html] (val x: Self) extends AnyVal {
           
           inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
         }
@@ -696,7 +711,8 @@ object ui {
           __obj.asInstanceOf[typings.ckeditor4.CKEDITOR.ui.dialog.definitions.iframeElement]
         }
         
-        extension [Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.iframeElement](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.iframeElement] (val x: Self) extends AnyVal {
           
           inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
           
@@ -729,7 +745,8 @@ object ui {
           __obj.asInstanceOf[typings.ckeditor4.CKEDITOR.ui.dialog.definitions.labeledElement]
         }
         
-        extension [Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.labeledElement](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.labeledElement] (val x: Self) extends AnyVal {
           
           inline def setIncludeLabel(value: Boolean): Self = StObject.set(x, "includeLabel", value.asInstanceOf[js.Any])
           
@@ -766,7 +783,8 @@ object ui {
           __obj.asInstanceOf[typings.ckeditor4.CKEDITOR.ui.dialog.definitions.radio]
         }
         
-        extension [Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.radio](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.radio] (val x: Self) extends AnyVal {
           
           inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
           
@@ -799,7 +817,8 @@ object ui {
           __obj.asInstanceOf[typings.ckeditor4.CKEDITOR.ui.dialog.definitions.select]
         }
         
-        extension [Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.select](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.select] (val x: Self) extends AnyVal {
           
           inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
           
@@ -838,7 +857,8 @@ object ui {
           __obj.asInstanceOf[typings.ckeditor4.CKEDITOR.ui.dialog.definitions.textInput]
         }
         
-        extension [Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.textInput](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.textInput] (val x: Self) extends AnyVal {
           
           inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
           
@@ -875,7 +895,8 @@ object ui {
           __obj.asInstanceOf[typings.ckeditor4.CKEDITOR.ui.dialog.definitions.textarea]
         }
         
-        extension [Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.textarea](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.textarea] (val x: Self) extends AnyVal {
           
           inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
           
@@ -919,7 +940,8 @@ object ui {
           __obj.asInstanceOf[typings.ckeditor4.CKEDITOR.ui.dialog.definitions.uiElement]
         }
         
-        extension [Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.uiElement](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.uiElement] (val x: Self) extends AnyVal {
           
           inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
           
@@ -966,7 +988,8 @@ object ui {
           __obj.asInstanceOf[typings.ckeditor4.CKEDITOR.ui.dialog.definitions.vbox]
         }
         
-        extension [Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.vbox](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.ckeditor4.CKEDITOR.ui.dialog.definitions.vbox] (val x: Self) extends AnyVal {
           
           inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
           
@@ -1040,7 +1063,8 @@ object ui {
         __obj.asInstanceOf[file]
       }
       
-      extension [Self <: file](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: file] (val x: Self) extends AnyVal {
         
         inline def setGetAction(value: () => String): Self = StObject.set(x, "getAction", js.Any.fromFunction0(value))
         
@@ -1104,7 +1128,8 @@ object ui {
         __obj.asInstanceOf[labeledElement]
       }
       
-      extension [Self <: labeledElement](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: labeledElement] (val x: Self) extends AnyVal {
         
         inline def setGetLabel(value: () => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
         
@@ -1147,7 +1172,8 @@ object ui {
         __obj.asInstanceOf[radio]
       }
       
-      extension [Self <: radio](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: radio] (val x: Self) extends AnyVal {
         
         inline def setAccessKeyUp(value: () => Unit): Self = StObject.set(x, "accessKeyUp", js.Any.fromFunction0(value))
         
@@ -1214,7 +1240,8 @@ object ui {
         __obj.asInstanceOf[textInput]
       }
       
-      extension [Self <: textInput](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: textInput] (val x: Self) extends AnyVal {
         
         inline def setAccessKeyUp(value: () => Unit): Self = StObject.set(x, "accessKeyUp", js.Any.fromFunction0(value))
         
@@ -1292,7 +1319,8 @@ object ui {
         __obj.asInstanceOf[uiElement]
       }
       
-      extension [Self <: uiElement](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: uiElement] (val x: Self) extends AnyVal {
         
         inline def setAccessKeyDown(value: (typings.ckeditor4.CKEDITOR.dialog, String) => Unit): Self = StObject.set(x, "accessKeyDown", js.Any.fromFunction2(value))
         
@@ -1424,7 +1452,8 @@ object ui {
       __obj.asInstanceOf[handlerDefinition[T]]
     }
     
-    extension [Self <: handlerDefinition[?], T](x: Self & handlerDefinition[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: handlerDefinition[?], T] (val x: Self & handlerDefinition[T]) extends AnyVal {
       
       inline def setContentsElement(value: element): Self = StObject.set(x, "contentsElement", value.asInstanceOf[js.Any])
       
@@ -1461,7 +1490,8 @@ object ui {
         __obj.asInstanceOf[block]
       }
       
-      extension [Self <: block](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: block] (val x: Self) extends AnyVal {
         
         inline def setGetItems(value: () => nodeList): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
         
@@ -1483,7 +1513,8 @@ object ui {
       __obj.asInstanceOf[richCombo]
     }
     
-    extension [Self <: richCombo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: richCombo] (val x: Self) extends AnyVal {
       
       inline def setRender(value: (editor, js.Array[String]) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
     }

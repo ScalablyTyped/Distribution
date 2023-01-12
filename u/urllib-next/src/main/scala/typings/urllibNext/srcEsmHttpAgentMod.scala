@@ -36,7 +36,8 @@ object srcEsmHttpAgentMod {
       __obj.asInstanceOf[HttpAgentOptions]
     }
     
-    extension [Self <: HttpAgentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpAgentOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckAddress(value: (/* ip */ String, /* family */ Double | String) => Boolean): Self = StObject.set(x, "checkAddress", js.Any.fromFunction2(value))
       

@@ -46,7 +46,8 @@ object distLibCommandsXpendingRANGEMod {
       __obj.asInstanceOf[XPendingRangeOptions]
     }
     
-    extension [Self <: XPendingRangeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XPendingRangeOptions] (val x: Self) extends AnyVal {
       
       inline def setConsumer(value: RedisCommandArgument): Self = StObject.set(x, "consumer", value.asInstanceOf[js.Any])
       

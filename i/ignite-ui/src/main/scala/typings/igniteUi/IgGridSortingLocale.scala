@@ -109,7 +109,8 @@ object IgGridSortingLocale {
     __obj.asInstanceOf[IgGridSortingLocale]
   }
   
-  extension [Self <: IgGridSortingLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridSortingLocale] (val x: Self) extends AnyVal {
     
     inline def setAscending(value: String): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     

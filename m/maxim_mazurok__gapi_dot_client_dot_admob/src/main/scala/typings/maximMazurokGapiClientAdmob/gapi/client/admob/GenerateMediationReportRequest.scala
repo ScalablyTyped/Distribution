@@ -16,7 +16,8 @@ object GenerateMediationReportRequest {
     __obj.asInstanceOf[GenerateMediationReportRequest]
   }
   
-  extension [Self <: GenerateMediationReportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateMediationReportRequest] (val x: Self) extends AnyVal {
     
     inline def setReportSpec(value: MediationReportSpec): Self = StObject.set(x, "reportSpec", value.asInstanceOf[js.Any])
     

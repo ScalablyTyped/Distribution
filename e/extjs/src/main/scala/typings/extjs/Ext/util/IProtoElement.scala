@@ -64,7 +64,8 @@ object IProtoElement {
     __obj.asInstanceOf[IProtoElement]
   }
   
-  extension [Self <: IProtoElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IProtoElement] (val x: Self) extends AnyVal {
     
     inline def setAddCls(value: /* cls */ js.UndefOr[String] => IProtoElement): Self = StObject.set(x, "addCls", js.Any.fromFunction1(value))
     

@@ -88,7 +88,8 @@ object srcNgtscScopeSrcTypecheckMod {
       __obj.asInstanceOf[TypeCheckScope]
     }
     
-    extension [Self <: TypeCheckScope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeCheckScope] (val x: Self) extends AnyVal {
       
       inline def setDirectives(value: js.Array[DirectiveMeta]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
       

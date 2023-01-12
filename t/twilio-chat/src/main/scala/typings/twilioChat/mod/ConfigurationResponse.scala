@@ -32,7 +32,8 @@ object ConfigurationResponse {
     __obj.asInstanceOf[ConfigurationResponse]
   }
   
-  extension [Self <: ConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     

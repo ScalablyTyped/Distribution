@@ -21,7 +21,8 @@ object `16` {
     __obj.asInstanceOf[`16`]
   }
   
-  extension [Self <: `16`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `16`] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: EncodingType): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

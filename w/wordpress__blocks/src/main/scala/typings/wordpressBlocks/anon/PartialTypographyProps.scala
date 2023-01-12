@@ -18,7 +18,8 @@ object PartialTypographyProps {
     __obj.asInstanceOf[PartialTypographyProps]
   }
   
-  extension [Self <: PartialTypographyProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTypographyProps] (val x: Self) extends AnyVal {
     
     inline def setFontSize(value: Boolean): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     

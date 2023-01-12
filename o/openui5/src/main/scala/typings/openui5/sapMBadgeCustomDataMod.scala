@@ -205,7 +205,8 @@ object sapMBadgeCustomDataMod {
       __obj.asInstanceOf[BadgeCustomDataSettings]
     }
     
-    extension [Self <: BadgeCustomDataSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadgeCustomDataSettings] (val x: Self) extends AnyVal {
       
       inline def setAnimation(
         value: BadgeAnimationType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BadgeAnimationType * / any */ String) | PropertyBindingInfo

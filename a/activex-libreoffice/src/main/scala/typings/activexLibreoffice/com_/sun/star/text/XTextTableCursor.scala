@@ -114,7 +114,8 @@ object XTextTableCursor {
     __obj.asInstanceOf[XTextTableCursor]
   }
   
-  extension [Self <: XTextTableCursor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextTableCursor] (val x: Self) extends AnyVal {
     
     inline def setGetRangeName(value: () => String): Self = StObject.set(x, "getRangeName", js.Any.fromFunction0(value))
     

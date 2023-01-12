@@ -21,7 +21,8 @@ object DefaultReducer {
     __obj.asInstanceOf[DefaultReducer]
   }
   
-  extension [Self <: DefaultReducer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultReducer] (val x: Self) extends AnyVal {
     
     inline def setFields(value: Reducer[js.Object]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

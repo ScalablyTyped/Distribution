@@ -28,7 +28,8 @@ object DKIM {
     __obj.asInstanceOf[DKIM]
   }
   
-  extension [Self <: DKIM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DKIM] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: String): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

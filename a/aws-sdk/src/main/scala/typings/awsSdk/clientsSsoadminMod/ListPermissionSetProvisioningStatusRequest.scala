@@ -33,7 +33,8 @@ object ListPermissionSetProvisioningStatusRequest {
     __obj.asInstanceOf[ListPermissionSetProvisioningStatusRequest]
   }
   
-  extension [Self <: ListPermissionSetProvisioningStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPermissionSetProvisioningStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: OperationStatusFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

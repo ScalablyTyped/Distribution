@@ -63,7 +63,8 @@ object TaskRun {
     __obj.asInstanceOf[TaskRun]
   }
   
-  extension [Self <: TaskRun](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskRun] (val x: Self) extends AnyVal {
     
     inline def setCompletedOn(value: js.Date): Self = StObject.set(x, "CompletedOn", value.asInstanceOf[js.Any])
     

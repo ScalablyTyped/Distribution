@@ -20,7 +20,8 @@ object StringPair {
     __obj.asInstanceOf[StringPair]
   }
   
-  extension [Self <: StringPair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringPair] (val x: Self) extends AnyVal {
     
     inline def setFirst(value: String): Self = StObject.set(x, "First", value.asInstanceOf[js.Any])
     

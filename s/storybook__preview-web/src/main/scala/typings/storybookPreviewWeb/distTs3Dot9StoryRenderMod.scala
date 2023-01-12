@@ -132,7 +132,8 @@ object distTs3Dot9StoryRenderMod {
       __obj.asInstanceOf[RenderContextCallbacks[TFramework]]
     }
     
-    extension [Self <: RenderContextCallbacks[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](x: Self & RenderContextCallbacks[TFramework]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderContextCallbacks[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] (val x: Self & RenderContextCallbacks[TFramework]) extends AnyVal {
       
       inline def setShowError(value: /* error */ Description => Unit): Self = StObject.set(x, "showError", js.Any.fromFunction1(value))
       

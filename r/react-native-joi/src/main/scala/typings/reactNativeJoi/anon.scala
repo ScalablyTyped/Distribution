@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Arrays]
     }
     
-    extension [Self <: Arrays](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Arrays] (val x: Self) extends AnyVal {
       
       inline def setArrays(value: Boolean): Self = StObject.set(x, "arrays", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[CreateError]
     }
     
-    extension [Self <: CreateError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateError] (val x: Self) extends AnyVal {
       
       inline def setCreateError(value: (String, Context, State, ValidationOptions) => Err): Self = StObject.set(x, "createError", js.Any.fromFunction4(value))
     }
@@ -71,7 +73,8 @@ object anon {
       __obj.asInstanceOf[WrapArrays]
     }
     
-    extension [Self <: WrapArrays](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrapArrays] (val x: Self) extends AnyVal {
       
       inline def setWrapArrays(value: Boolean): Self = StObject.set(x, "wrapArrays", value.asInstanceOf[js.Any])
       

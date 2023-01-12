@@ -1118,7 +1118,8 @@ object sapUiCoreControlMod {
       __obj.asInstanceOf[ControlSettings]
     }
     
-    extension [Self <: ControlSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlSettings] (val x: Self) extends AnyVal {
       
       inline def setBlocked(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
       

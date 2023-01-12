@@ -18,7 +18,8 @@ object TransformOperation {
     __obj.asInstanceOf[TransformOperation]
   }
   
-  extension [Self <: TransformOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformOperation] (val x: Self) extends AnyVal {
     
     inline def set_underscore(value: Any): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
   }

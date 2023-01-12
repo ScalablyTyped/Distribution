@@ -57,7 +57,8 @@ object SubstanceNucleicAcidSubunit {
     __obj.asInstanceOf[SubstanceNucleicAcidSubunit]
   }
   
-  extension [Self <: SubstanceNucleicAcidSubunit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstanceNucleicAcidSubunit] (val x: Self) extends AnyVal {
     
     inline def setFivePrime(value: CodeableConcept): Self = StObject.set(x, "fivePrime", value.asInstanceOf[js.Any])
     

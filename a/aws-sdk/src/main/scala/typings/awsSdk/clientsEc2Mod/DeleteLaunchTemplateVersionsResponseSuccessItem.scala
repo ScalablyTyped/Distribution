@@ -28,7 +28,8 @@ object DeleteLaunchTemplateVersionsResponseSuccessItem {
     __obj.asInstanceOf[DeleteLaunchTemplateVersionsResponseSuccessItem]
   }
   
-  extension [Self <: DeleteLaunchTemplateVersionsResponseSuccessItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLaunchTemplateVersionsResponseSuccessItem] (val x: Self) extends AnyVal {
     
     inline def setLaunchTemplateId(value: String): Self = StObject.set(x, "LaunchTemplateId", value.asInstanceOf[js.Any])
     

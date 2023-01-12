@@ -304,7 +304,8 @@ object ReadonlyPartialTypeDocOpt {
     __obj.asInstanceOf[ReadonlyPartialTypeDocOpt]
   }
   
-  extension [Self <: ReadonlyPartialTypeDocOpt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyPartialTypeDocOpt] (val x: Self) extends AnyVal {
     
     inline def setBasePath(
       value: /* import warning: importer.ImportType#apply Failed type conversion: unknown extends string ? unknown : string extends typedoc.typedoc/dist/lib/utils/options/declaration.ManuallyValidatedOption<infer ManuallyValidated> ? ManuallyValidated : string extends string | std.Array<string> | number | boolean ? string : string extends std.Record<string, boolean> ? std.Partial<string> | boolean : any | undefined | string[any | undefined] */ js.Any

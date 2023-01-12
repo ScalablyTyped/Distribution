@@ -17,7 +17,8 @@ object MetricsTitle {
     __obj.asInstanceOf[MetricsTitle]
   }
   
-  extension [Self <: MetricsTitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricsTitle] (val x: Self) extends AnyVal {
     
     inline def setMetrics(value: typings.puppeteerCore.mod.Metrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     

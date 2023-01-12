@@ -23,7 +23,8 @@ object SearchTransitGatewayMulticastGroupsResult {
     __obj.asInstanceOf[SearchTransitGatewayMulticastGroupsResult]
   }
   
-  extension [Self <: SearchTransitGatewayMulticastGroupsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchTransitGatewayMulticastGroupsResult] (val x: Self) extends AnyVal {
     
     inline def setMulticastGroups(value: TransitGatewayMulticastGroupList): Self = StObject.set(x, "MulticastGroups", value.asInstanceOf[js.Any])
     

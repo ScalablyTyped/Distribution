@@ -71,7 +71,8 @@ object libTypesPluralRulesMod {
       __obj.asInstanceOf[PluralRulesInternal]
     }
     
-    extension [Self <: PluralRulesInternal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluralRulesInternal] (val x: Self) extends AnyVal {
       
       inline def setInitializedPluralRules(value: Boolean): Self = StObject.set(x, "initializedPluralRules", value.asInstanceOf[js.Any])
       

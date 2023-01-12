@@ -23,7 +23,8 @@ object RecipeReference {
     __obj.asInstanceOf[RecipeReference]
   }
   
-  extension [Self <: RecipeReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipeReference] (val x: Self) extends AnyVal {
     
     inline def setName(value: RecipeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

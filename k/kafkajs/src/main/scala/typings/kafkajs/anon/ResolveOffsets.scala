@@ -19,7 +19,8 @@ object ResolveOffsets {
     __obj.asInstanceOf[ResolveOffsets]
   }
   
-  extension [Self <: ResolveOffsets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveOffsets] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     

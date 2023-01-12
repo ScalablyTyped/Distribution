@@ -60,7 +60,8 @@ object libEsmShortcutsMod {
       __obj.asInstanceOf[IDatePickerShortcut]
     }
     
-    extension [Self <: IDatePickerShortcut](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDatePickerShortcut] (val x: Self) extends AnyVal {
       
       inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     }
@@ -83,7 +84,8 @@ object libEsmShortcutsMod {
       __obj.asInstanceOf[IDateRangeShortcut]
     }
     
-    extension [Self <: IDateRangeShortcut](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDateRangeShortcut] (val x: Self) extends AnyVal {
       
       inline def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     }
@@ -111,7 +113,8 @@ object libEsmShortcutsMod {
       __obj.asInstanceOf[IDateShortcutBase]
     }
     
-    extension [Self <: IDateShortcutBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDateShortcutBase] (val x: Self) extends AnyVal {
       
       inline def setIncludeTime(value: Boolean): Self = StObject.set(x, "includeTime", value.asInstanceOf[js.Any])
       
@@ -159,7 +162,8 @@ object libEsmShortcutsMod {
       __obj.asInstanceOf[IShortcutsProps]
     }
     
-    extension [Self <: IShortcutsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShortcutsProps] (val x: Self) extends AnyVal {
       
       inline def setAllowSingleDayRange(value: Boolean): Self = StObject.set(x, "allowSingleDayRange", value.asInstanceOf[js.Any])
       

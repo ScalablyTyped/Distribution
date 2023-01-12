@@ -699,7 +699,8 @@ object PropsSVGTextPathElementco {
     __obj.asInstanceOf[PropsSVGTextPathElementco]
   }
   
-  extension [Self <: PropsSVGTextPathElementco](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsSVGTextPathElementco] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

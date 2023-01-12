@@ -23,7 +23,8 @@ object DescribeEgressOnlyInternetGatewaysResult {
     __obj.asInstanceOf[DescribeEgressOnlyInternetGatewaysResult]
   }
   
-  extension [Self <: DescribeEgressOnlyInternetGatewaysResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEgressOnlyInternetGatewaysResult] (val x: Self) extends AnyVal {
     
     inline def setEgressOnlyInternetGateways(value: EgressOnlyInternetGatewayList): Self = StObject.set(x, "EgressOnlyInternetGateways", value.asInstanceOf[js.Any])
     

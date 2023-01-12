@@ -16,7 +16,8 @@ object Workers {
     __obj.asInstanceOf[Workers]
   }
   
-  extension [Self <: Workers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Workers] (val x: Self) extends AnyVal {
     
     inline def setWorkers(value: js.Array[OnfleetWorker]): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
     

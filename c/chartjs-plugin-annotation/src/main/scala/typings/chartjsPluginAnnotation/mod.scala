@@ -70,7 +70,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[ChartOptions]
       }
       
-      extension [Self <: ChartOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChartOptions] (val x: Self) extends AnyVal {
         
         inline def setAnnotation(value: AnnotationConfig): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
         
@@ -98,7 +99,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AnnotationConfig]
     }
     
-    extension [Self <: AnnotationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotationConfig] (val x: Self) extends AnyVal {
       
       inline def setAnnotations(value: js.Array[AnnotationOptions]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
@@ -174,7 +176,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AnnotationElement]
     }
     
-    extension [Self <: AnnotationElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotationElement] (val x: Self) extends AnyVal {
       
       inline def setConfigure(value: () => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction0(value))
       
@@ -223,7 +226,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AnnotationElementOptions[T]]
     }
     
-    extension [Self <: AnnotationElementOptions[?], T /* <: AnnotationOptions */](x: Self & AnnotationElementOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotationElementOptions[?], T /* <: AnnotationOptions */] (val x: Self & AnnotationElementOptions[T]) extends AnyVal {
       
       inline def setChartInstance(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart */ Any
@@ -280,7 +284,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AnnotationStatic]
     }
     
-    extension [Self <: AnnotationStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotationStatic] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: AnnotationConfig): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
@@ -336,7 +341,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BoxAnnotationOptions]
     }
     
-    extension [Self <: BoxAnnotationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxAnnotationOptions] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ Any
@@ -416,7 +422,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CommonAnnotationOptions]
     }
     
-    extension [Self <: CommonAnnotationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonAnnotationOptions] (val x: Self) extends AnyVal {
       
       inline def setDrawTime(
         value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DrawTimeOptions * / any */ String
@@ -517,7 +524,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LineAnnotationLabel]
     }
     
-    extension [Self <: LineAnnotationLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineAnnotationLabel] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ Any
@@ -613,7 +621,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LineAnnotationOptions]
     }
     
-    extension [Self <: LineAnnotationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineAnnotationOptions] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart.ChartColor */ Any

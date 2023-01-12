@@ -19,7 +19,8 @@ object DataSourceFormula {
     __obj.asInstanceOf[DataSourceFormula]
   }
   
-  extension [Self <: DataSourceFormula](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceFormula] (val x: Self) extends AnyVal {
     
     inline def setDataExecutionStatus(value: DataExecutionStatus): Self = StObject.set(x, "dataExecutionStatus", value.asInstanceOf[js.Any])
     

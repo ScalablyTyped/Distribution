@@ -59,7 +59,8 @@ object AdWordsStats {
     __obj.asInstanceOf[AdWordsStats]
   }
   
-  extension [Self <: AdWordsStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdWordsStats] (val x: Self) extends AnyVal {
     
     inline def setGetAverageCpc(value: () => Double): Self = StObject.set(x, "getAverageCpc", js.Any.fromFunction0(value))
     

@@ -18,7 +18,8 @@ object AcceptReservedInstancesExchangeQuoteResult {
     __obj.asInstanceOf[AcceptReservedInstancesExchangeQuoteResult]
   }
   
-  extension [Self <: AcceptReservedInstancesExchangeQuoteResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceptReservedInstancesExchangeQuoteResult] (val x: Self) extends AnyVal {
     
     inline def setExchangeId(value: String): Self = StObject.set(x, "ExchangeId", value.asInstanceOf[js.Any])
     

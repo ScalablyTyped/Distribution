@@ -17,7 +17,8 @@ object TypeofPersonUpdateParams {
     __obj.asInstanceOf[TypeofPersonUpdateParams]
   }
   
-  extension [Self <: TypeofPersonUpdateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPersonUpdateParams] (val x: Self) extends AnyVal {
     
     inline def setDocuments(value: Any): Self = StObject.set(x, "Documents", value.asInstanceOf[js.Any])
     

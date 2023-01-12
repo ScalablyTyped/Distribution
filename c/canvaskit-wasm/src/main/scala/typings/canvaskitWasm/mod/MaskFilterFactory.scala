@@ -21,7 +21,8 @@ object MaskFilterFactory {
     __obj.asInstanceOf[MaskFilterFactory]
   }
   
-  extension [Self <: MaskFilterFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaskFilterFactory] (val x: Self) extends AnyVal {
     
     inline def setMakeBlur(value: (BlurStyle, Double, Boolean) => MaskFilter): Self = StObject.set(x, "MakeBlur", js.Any.fromFunction3(value))
   }

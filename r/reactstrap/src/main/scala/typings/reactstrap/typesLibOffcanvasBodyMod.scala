@@ -35,7 +35,8 @@ object typesLibOffcanvasBodyMod {
       __obj.asInstanceOf[OffcanvasBodyProps]
     }
     
-    extension [Self <: OffcanvasBodyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OffcanvasBodyProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       

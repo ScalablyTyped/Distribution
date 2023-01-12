@@ -21,7 +21,8 @@ object typesInvalidSourceCommitSpecifierExceptionMod {
       __obj.asInstanceOf[InvalidSourceCommitSpecifierException]
     }
     
-    extension [Self <: InvalidSourceCommitSpecifierException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidSourceCommitSpecifierException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidSourceCommitSpecifierException

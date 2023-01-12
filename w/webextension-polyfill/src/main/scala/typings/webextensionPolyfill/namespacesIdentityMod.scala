@@ -26,7 +26,8 @@ object namespacesIdentityMod {
         __obj.asInstanceOf[AccountInfo]
       }
       
-      extension [Self <: AccountInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountInfo] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       }
@@ -48,7 +49,8 @@ object namespacesIdentityMod {
         __obj.asInstanceOf[LaunchWebAuthFlowDetailsType]
       }
       
-      extension [Self <: LaunchWebAuthFlowDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LaunchWebAuthFlowDetailsType] (val x: Self) extends AnyVal {
         
         inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
         

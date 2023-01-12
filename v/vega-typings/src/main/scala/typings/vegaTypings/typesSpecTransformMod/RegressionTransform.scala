@@ -37,7 +37,8 @@ object RegressionTransform {
     __obj.asInstanceOf[RegressionTransform]
   }
   
-  extension [Self <: RegressionTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegressionTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: (Vector2[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

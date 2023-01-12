@@ -20,7 +20,8 @@ object ISymmetricKeyAlgorithmProvider {
     __obj.asInstanceOf[ISymmetricKeyAlgorithmProvider]
   }
   
-  extension [Self <: ISymmetricKeyAlgorithmProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISymmetricKeyAlgorithmProvider] (val x: Self) extends AnyVal {
     
     inline def setAlgorithmName(value: String): Self = StObject.set(x, "algorithmName", value.asInstanceOf[js.Any])
     

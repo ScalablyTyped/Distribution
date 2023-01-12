@@ -43,7 +43,8 @@ object people {
       __obj.asInstanceOf[PeoplePickerInputs]
     }
     
-    extension [Self <: PeoplePickerInputs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeoplePickerInputs] (val x: Self) extends AnyVal {
       
       inline def setOpenOrgWideSearchInChatOrChannel(value: Boolean): Self = StObject.set(x, "openOrgWideSearchInChatOrChannel", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object people {
       __obj.asInstanceOf[PeoplePickerResult]
     }
     
-    extension [Self <: PeoplePickerResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeoplePickerResult] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       

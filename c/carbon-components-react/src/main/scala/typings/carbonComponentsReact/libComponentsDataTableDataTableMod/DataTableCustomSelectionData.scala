@@ -20,7 +20,8 @@ object DataTableCustomSelectionData {
     __obj.asInstanceOf[DataTableCustomSelectionData[R]]
   }
   
-  extension [Self <: DataTableCustomSelectionData[?], R /* <: DataTableRow[String] */](x: Self & DataTableCustomSelectionData[R]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableCustomSelectionData[?], R /* <: DataTableRow[String] */] (val x: Self & DataTableCustomSelectionData[R]) extends AnyVal {
     
     inline def setOnClick(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     

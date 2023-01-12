@@ -88,7 +88,8 @@ object IStylesheetResource {
     __obj.asInstanceOf[IStylesheetResource]
   }
   
-  extension [Self <: IStylesheetResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStylesheetResource] (val x: Self) extends AnyVal {
     
     inline def setGetAll(value: () => IPromise[IResourcePromise]): Self = StObject.set(x, "getAll", js.Any.fromFunction0(value))
     

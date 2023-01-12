@@ -33,7 +33,8 @@ object BreadcrumbsAlignOptions {
     __obj.asInstanceOf[BreadcrumbsAlignOptions]
   }
   
-  extension [Self <: BreadcrumbsAlignOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BreadcrumbsAlignOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

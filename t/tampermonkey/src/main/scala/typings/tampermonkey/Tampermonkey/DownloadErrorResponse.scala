@@ -35,7 +35,8 @@ object DownloadErrorResponse {
     __obj.asInstanceOf[DownloadErrorResponse]
   }
   
-  extension [Self <: DownloadErrorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadErrorResponse] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object TCPAppender {
     __obj.asInstanceOf[TCPAppender]
   }
   
-  extension [Self <: TCPAppender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TCPAppender] (val x: Self) extends AnyVal {
     
     inline def setEndMsg(value: String): Self = StObject.set(x, "endMsg", value.asInstanceOf[js.Any])
     

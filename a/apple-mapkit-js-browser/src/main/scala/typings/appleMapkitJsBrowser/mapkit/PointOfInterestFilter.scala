@@ -29,7 +29,8 @@ object PointOfInterestFilter {
     __obj.asInstanceOf[PointOfInterestFilter]
   }
   
-  extension [Self <: PointOfInterestFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointOfInterestFilter] (val x: Self) extends AnyVal {
     
     inline def setExcludesCategory(value: PointOfInterestCategory => Boolean): Self = StObject.set(x, "excludesCategory", js.Any.fromFunction1(value))
     

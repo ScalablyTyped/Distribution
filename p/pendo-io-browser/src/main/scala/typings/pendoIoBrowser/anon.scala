@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[ArrowSize]
     }
     
-    extension [Self <: ArrowSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrowSize] (val x: Self) extends AnyVal {
       
       inline def setArrowSize(value: Double): Self = StObject.set(x, "arrowSize", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[Auto]
     }
     
-    extension [Self <: Auto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Auto] (val x: Self) extends AnyVal {
       
       inline def setAuto(value: js.Array[Guide]): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object anon {
       __obj.asInstanceOf[AutoHeight]
     }
     
-    extension [Self <: AutoHeight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoHeight] (val x: Self) extends AnyVal {
       
       inline def setAutoHeight(value: Boolean): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
       
@@ -113,7 +116,8 @@ object anon {
       __obj.asInstanceOf[Badge]
     }
     
-    extension [Self <: Badge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Badge] (val x: Self) extends AnyVal {
       
       inline def setBadge(value: Any): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
@@ -144,7 +148,8 @@ object anon {
       __obj.asInstanceOf[Delay]
     }
     
-    extension [Self <: Delay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delay] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Boolean): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -180,7 +185,8 @@ object anon {
       __obj.asInstanceOf[Desktop]
     }
     
-    extension [Self <: Desktop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Desktop] (val x: Self) extends AnyVal {
       
       inline def setDesktop(value: Boolean): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
       
@@ -201,7 +207,8 @@ object anon {
       __obj.asInstanceOf[Filters]
     }
     
-    extension [Self <: Filters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filters] (val x: Self) extends AnyVal {
       
       inline def setFilters(value: js.Array[Any]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
@@ -220,7 +227,8 @@ object anon {
       __obj.asInstanceOf[Keywords]
     }
     
-    extension [Self <: Keywords](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Keywords] (val x: Self) extends AnyVal {
       
       inline def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
       
@@ -239,7 +247,8 @@ object anon {
       __obj.asInstanceOf[Steps]
     }
     
-    extension [Self <: Steps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Steps] (val x: Self) extends AnyVal {
       
       inline def setSteps(value: Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     }
@@ -256,7 +265,8 @@ object anon {
       __obj.asInstanceOf[Until]
     }
     
-    extension [Self <: Until](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Until] (val x: Self) extends AnyVal {
       
       inline def setUntil(value: reload): Self = StObject.set(x, "until", value.asInstanceOf[js.Any])
     }

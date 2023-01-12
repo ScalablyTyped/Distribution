@@ -38,7 +38,8 @@ object PackagingConfiguration {
     __obj.asInstanceOf[PackagingConfiguration]
   }
   
-  extension [Self <: PackagingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackagingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

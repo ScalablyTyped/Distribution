@@ -26,7 +26,8 @@ object AttributeCertificateV2Json {
     __obj.asInstanceOf[AttributeCertificateV2Json]
   }
   
-  extension [Self <: AttributeCertificateV2Json](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeCertificateV2Json] (val x: Self) extends AnyVal {
     
     inline def setAcinfo(value: AttributeCertificateInfoV2Json): Self = StObject.set(x, "acinfo", value.asInstanceOf[js.Any])
     

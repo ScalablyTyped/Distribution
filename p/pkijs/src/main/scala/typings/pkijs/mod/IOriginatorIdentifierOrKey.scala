@@ -17,7 +17,8 @@ object IOriginatorIdentifierOrKey {
     __obj.asInstanceOf[IOriginatorIdentifierOrKey]
   }
   
-  extension [Self <: IOriginatorIdentifierOrKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOriginatorIdentifierOrKey] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

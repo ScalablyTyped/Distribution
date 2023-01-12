@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Algorithm]
     }
     
-    extension [Self <: Algorithm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Algorithm] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Algorithms]
     }
     
-    extension [Self <: Algorithms](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Algorithms] (val x: Self) extends AnyVal {
       
       inline def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[Binary]
     }
     
-    extension [Self <: Binary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Binary] (val x: Self) extends AnyVal {
       
       inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
@@ -105,7 +108,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -126,7 +130,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -143,7 +148,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: Data): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
@@ -160,7 +166,8 @@ object anon {
       __obj.asInstanceOf[RejectOnFailedDelivery]
     }
     
-    extension [Self <: RejectOnFailedDelivery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RejectOnFailedDelivery] (val x: Self) extends AnyVal {
       
       inline def setRejectOnFailedDelivery(value: Boolean): Self = StObject.set(x, "rejectOnFailedDelivery", value.asInstanceOf[js.Any])
     }
@@ -177,7 +184,8 @@ object anon {
       __obj.asInstanceOf[Server]
     }
     
-    extension [Self <: Server](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Server] (val x: Self) extends AnyVal {
       
       inline def setServer(value: typings.ws.mod.Server[WebSocket]): Self = StObject.set(x, "Server", value.asInstanceOf[js.Any])
     }
@@ -194,7 +202,8 @@ object anon {
       __obj.asInstanceOf[SignedAuthToken]
     }
     
-    extension [Self <: SignedAuthToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignedAuthToken] (val x: Self) extends AnyVal {
       
       inline def setSignedAuthToken(value: String): Self = StObject.set(x, "signedAuthToken", value.asInstanceOf[js.Any])
     }
@@ -211,7 +220,8 @@ object anon {
       __obj.asInstanceOf[Socket]
     }
     
-    extension [Self <: Socket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Socket] (val x: Self) extends AnyVal {
       
       inline def setSocket(value: ^): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     }
@@ -228,7 +238,8 @@ object anon {
       __obj.asInstanceOf[Warning]
     }
     
-    extension [Self <: Warning](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Warning] (val x: Self) extends AnyVal {
       
       inline def setWarning(value: js.Error): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     }

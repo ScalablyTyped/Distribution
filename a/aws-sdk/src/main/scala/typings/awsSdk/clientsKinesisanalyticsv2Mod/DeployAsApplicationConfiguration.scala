@@ -18,7 +18,8 @@ object DeployAsApplicationConfiguration {
     __obj.asInstanceOf[DeployAsApplicationConfiguration]
   }
   
-  extension [Self <: DeployAsApplicationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeployAsApplicationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setS3ContentLocation(value: S3ContentBaseLocation): Self = StObject.set(x, "S3ContentLocation", value.asInstanceOf[js.Any])
   }

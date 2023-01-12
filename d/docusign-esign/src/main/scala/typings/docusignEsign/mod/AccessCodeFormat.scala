@@ -63,7 +63,8 @@ object AccessCodeFormat {
     __obj.asInstanceOf[AccessCodeFormat]
   }
   
-  extension [Self <: AccessCodeFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessCodeFormat] (val x: Self) extends AnyVal {
     
     inline def setFormatRequired(value: String): Self = StObject.set(x, "formatRequired", value.asInstanceOf[js.Any])
     

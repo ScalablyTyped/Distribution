@@ -28,7 +28,8 @@ object XboxLiveQualityOfServicePrivatePayloadResult {
     __obj.asInstanceOf[XboxLiveQualityOfServicePrivatePayloadResult]
   }
   
-  extension [Self <: XboxLiveQualityOfServicePrivatePayloadResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XboxLiveQualityOfServicePrivatePayloadResult] (val x: Self) extends AnyVal {
     
     inline def setDeviceAddress(value: XboxLiveDeviceAddress): Self = StObject.set(x, "deviceAddress", value.asInstanceOf[js.Any])
     

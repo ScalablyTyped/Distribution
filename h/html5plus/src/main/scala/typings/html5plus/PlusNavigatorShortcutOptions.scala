@@ -67,7 +67,8 @@ object PlusNavigatorShortcutOptions {
     __obj.asInstanceOf[PlusNavigatorShortcutOptions]
   }
   
-  extension [Self <: PlusNavigatorShortcutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusNavigatorShortcutOptions] (val x: Self) extends AnyVal {
     
     inline def setClassname(value: String): Self = StObject.set(x, "classname", value.asInstanceOf[js.Any])
     

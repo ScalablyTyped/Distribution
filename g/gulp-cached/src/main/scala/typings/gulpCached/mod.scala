@@ -45,7 +45,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: IOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
       
       inline def setOptimizeMemory(value: Boolean): Self = StObject.set(x, "optimizeMemory", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object IBatchHeader {
     __obj.asInstanceOf[IBatchHeader]
   }
   
-  extension [Self <: IBatchHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBatchHeader] (val x: Self) extends AnyVal {
     
     inline def setSignerPublicKey(value: String): Self = StObject.set(x, "signerPublicKey", value.asInstanceOf[js.Any])
     

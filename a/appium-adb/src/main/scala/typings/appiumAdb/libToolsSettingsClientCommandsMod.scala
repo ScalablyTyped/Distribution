@@ -29,7 +29,8 @@ object libToolsSettingsClientCommandsMod extends Shortcut {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setAltitude(value: Double | String): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object libToolsSettingsClientCommandsMod extends Shortcut {
       __obj.asInstanceOf[SettingsAppStartupOptions]
     }
     
-    extension [Self <: SettingsAppStartupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SettingsAppStartupOptions] (val x: Self) extends AnyVal {
       
       inline def setShouldRestoreCurrentApp(value: Boolean): Self = StObject.set(x, "shouldRestoreCurrentApp", value.asInstanceOf[js.Any])
       
@@ -352,7 +354,8 @@ object libToolsSettingsClientCommandsMod extends Shortcut {
       __obj.asInstanceOf[SmsItem]
     }
     
-    extension [Self <: SmsItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SmsItem] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -397,7 +400,8 @@ object libToolsSettingsClientCommandsMod extends Shortcut {
       __obj.asInstanceOf[SmsListOptions]
     }
     
-    extension [Self <: SmsListOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SmsListOptions] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -452,7 +456,8 @@ object libToolsSettingsClientCommandsMod extends Shortcut {
       __obj.asInstanceOf[StatusBarNotification]
     }
     
-    extension [Self <: StatusBarNotification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatusBarNotification] (val x: Self) extends AnyVal {
       
       inline def setGroupKey(value: String): Self = StObject.set(x, "groupKey", value.asInstanceOf[js.Any])
       

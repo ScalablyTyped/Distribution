@@ -110,7 +110,8 @@ object typesHandlersMod {
       __obj.asInstanceOf[MiddlewareError]
     }
     
-    extension [Self <: MiddlewareError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MiddlewareError] (val x: Self) extends AnyVal {
       
       inline def setOutput(value: StatusCode): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       

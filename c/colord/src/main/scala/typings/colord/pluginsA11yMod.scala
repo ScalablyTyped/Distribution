@@ -35,7 +35,8 @@ object pluginsA11yMod extends Shortcut {
       __obj.asInstanceOf[ReadabilityOptions]
     }
     
-    extension [Self <: ReadabilityOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadabilityOptions] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: AA | AAA): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       

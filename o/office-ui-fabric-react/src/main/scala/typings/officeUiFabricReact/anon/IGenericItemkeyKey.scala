@@ -28,7 +28,8 @@ object IGenericItemkeyKey {
     __obj.asInstanceOf[IGenericItemkeyKey]
   }
   
-  extension [Self <: IGenericItemkeyKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericItemkeyKey] (val x: Self) extends AnyVal {
     
     inline def setImageInitials(value: String): Self = StObject.set(x, "imageInitials", value.asInstanceOf[js.Any])
     

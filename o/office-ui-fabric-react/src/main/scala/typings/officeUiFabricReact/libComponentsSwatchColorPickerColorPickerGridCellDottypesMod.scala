@@ -43,7 +43,8 @@ object libComponentsSwatchColorPickerColorPickerGridCellDottypesMod {
       __obj.asInstanceOf[IColorCellProps]
     }
     
-    extension [Self <: IColorCellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColorCellProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object libComponentsSwatchColorPickerColorPickerGridCellDottypesMod {
       __obj.asInstanceOf[IColorPickerGridCellProps]
     }
     
-    extension [Self <: IColorPickerGridCellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColorPickerGridCellProps] (val x: Self) extends AnyVal {
       
       inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
       
@@ -312,7 +314,8 @@ object libComponentsSwatchColorPickerColorPickerGridCellDottypesMod {
       __obj.asInstanceOf[IColorPickerGridCellStyleProps]
     }
     
-    extension [Self <: IColorPickerGridCellStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColorPickerGridCellStyleProps] (val x: Self) extends AnyVal {
       
       inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
       
@@ -365,7 +368,8 @@ object libComponentsSwatchColorPickerColorPickerGridCellDottypesMod {
       __obj.asInstanceOf[IColorPickerGridCellStyles]
     }
     
-    extension [Self <: IColorPickerGridCellStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColorPickerGridCellStyles] (val x: Self) extends AnyVal {
       
       inline def setColorCell(value: IStyle): Self = StObject.set(x, "colorCell", value.asInstanceOf[js.Any])
       

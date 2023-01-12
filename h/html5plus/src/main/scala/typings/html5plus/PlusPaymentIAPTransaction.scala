@@ -56,7 +56,8 @@ object PlusPaymentIAPTransaction {
     __obj.asInstanceOf[PlusPaymentIAPTransaction]
   }
   
-  extension [Self <: PlusPaymentIAPTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusPaymentIAPTransaction] (val x: Self) extends AnyVal {
     
     inline def setPayment(value: String): Self = StObject.set(x, "payment", value.asInstanceOf[js.Any])
     

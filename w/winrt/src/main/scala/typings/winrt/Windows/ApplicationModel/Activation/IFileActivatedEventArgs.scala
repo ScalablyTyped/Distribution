@@ -27,7 +27,8 @@ object IFileActivatedEventArgs {
     __obj.asInstanceOf[IFileActivatedEventArgs]
   }
   
-  extension [Self <: IFileActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFileActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setFiles(value: IVectorView[IStorageItem]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     

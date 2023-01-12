@@ -23,7 +23,8 @@ object UpdateLedgerPermissionsModeRequest {
     __obj.asInstanceOf[UpdateLedgerPermissionsModeRequest]
   }
   
-  extension [Self <: UpdateLedgerPermissionsModeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateLedgerPermissionsModeRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: LedgerName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object GetRecommendationError {
     __obj.asInstanceOf[GetRecommendationError]
   }
   
-  extension [Self <: GetRecommendationError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRecommendationError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

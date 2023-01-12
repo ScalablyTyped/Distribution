@@ -26,7 +26,8 @@ object LocationConstraint {
     __obj.asInstanceOf[LocationConstraint]
   }
   
-  extension [Self <: LocationConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationConstraint] (val x: Self) extends AnyVal {
     
     inline def setIsRequired(value: NullableOption[Boolean]): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
     

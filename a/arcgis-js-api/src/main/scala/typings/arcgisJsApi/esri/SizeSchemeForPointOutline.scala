@@ -27,7 +27,8 @@ object SizeSchemeForPointOutline {
     __obj.asInstanceOf[SizeSchemeForPointOutline]
   }
   
-  extension [Self <: SizeSchemeForPointOutline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeSchemeForPointOutline] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

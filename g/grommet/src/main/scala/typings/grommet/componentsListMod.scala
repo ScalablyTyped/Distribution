@@ -388,7 +388,8 @@ object componentsListMod {
       __obj.asInstanceOf[ListExtendedProps[ListItemType]]
     }
     
-    extension [Self <: ListExtendedProps[?], ListItemType](x: Self & ListExtendedProps[ListItemType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListExtendedProps[?], ListItemType] (val x: Self & ListExtendedProps[ListItemType]) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -962,7 +963,8 @@ object componentsListMod {
       __obj.asInstanceOf[ListProps[ListItemType]]
     }
     
-    extension [Self <: ListProps[?], ListItemType](x: Self & ListProps[ListItemType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListProps[?], ListItemType] (val x: Self & ListProps[ListItemType]) extends AnyVal {
       
       inline def setA11yTitle(value: A11yTitleType): Self = StObject.set(x, "a11yTitle", value.asInstanceOf[js.Any])
       

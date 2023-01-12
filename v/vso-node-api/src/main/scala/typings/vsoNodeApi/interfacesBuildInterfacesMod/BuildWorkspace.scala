@@ -15,7 +15,8 @@ object BuildWorkspace {
     __obj.asInstanceOf[BuildWorkspace]
   }
   
-  extension [Self <: BuildWorkspace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildWorkspace] (val x: Self) extends AnyVal {
     
     inline def setMappings(value: js.Array[MappingDetails]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
     

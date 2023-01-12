@@ -19,7 +19,8 @@ object WorkerReleasedEvent {
     __obj.asInstanceOf[WorkerReleasedEvent]
   }
   
-  extension [Self <: WorkerReleasedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerReleasedEvent] (val x: Self) extends AnyVal {
     
     inline def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     

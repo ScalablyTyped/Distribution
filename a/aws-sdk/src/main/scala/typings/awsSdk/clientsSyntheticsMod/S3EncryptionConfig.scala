@@ -23,7 +23,8 @@ object S3EncryptionConfig {
     __obj.asInstanceOf[S3EncryptionConfig]
   }
   
-  extension [Self <: S3EncryptionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3EncryptionConfig] (val x: Self) extends AnyVal {
     
     inline def setEncryptionMode(value: EncryptionMode): Self = StObject.set(x, "EncryptionMode", value.asInstanceOf[js.Any])
     

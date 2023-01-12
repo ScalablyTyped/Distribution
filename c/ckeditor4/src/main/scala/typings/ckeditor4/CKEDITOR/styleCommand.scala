@@ -15,7 +15,8 @@ object styleCommand {
     __obj.asInstanceOf[styleCommand]
   }
   
-  extension [Self <: styleCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: styleCommand] (val x: Self) extends AnyVal {
     
     inline def setExec(value: editor => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
   }

@@ -37,7 +37,8 @@ object Draft {
     __obj.asInstanceOf[Draft]
   }
   
-  extension [Self <: Draft](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Draft] (val x: Self) extends AnyVal {
     
     inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

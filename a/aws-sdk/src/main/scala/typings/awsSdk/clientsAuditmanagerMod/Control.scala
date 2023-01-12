@@ -88,7 +88,8 @@ object Control {
     __obj.asInstanceOf[Control]
   }
   
-  extension [Self <: Control](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Control] (val x: Self) extends AnyVal {
     
     inline def setActionPlanInstructions(value: ActionPlanInstructions): Self = StObject.set(x, "actionPlanInstructions", value.asInstanceOf[js.Any])
     

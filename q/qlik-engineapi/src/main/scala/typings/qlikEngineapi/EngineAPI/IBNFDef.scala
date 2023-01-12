@@ -132,7 +132,8 @@ object IBNFDef {
     __obj.asInstanceOf[IBNFDef]
   }
   
-  extension [Self <: IBNFDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBNFDef] (val x: Self) extends AnyVal {
     
     inline def setQAggrFunc(value: Boolean): Self = StObject.set(x, "qAggrFunc", value.asInstanceOf[js.Any])
     

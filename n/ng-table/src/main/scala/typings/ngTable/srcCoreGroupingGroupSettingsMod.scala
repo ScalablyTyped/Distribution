@@ -27,7 +27,8 @@ object srcCoreGroupingGroupSettingsMod {
       __obj.asInstanceOf[IGroupSettings]
     }
     
-    extension [Self <: IGroupSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroupSettings] (val x: Self) extends AnyVal {
       
       inline def setDefaultSort(value: SortDirection): Self = StObject.set(x, "defaultSort", value.asInstanceOf[js.Any])
       

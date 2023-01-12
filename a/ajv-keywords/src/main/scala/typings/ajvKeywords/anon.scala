@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[CONSTRUCTORS]
     }
     
-    extension [Self <: CONSTRUCTORS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CONSTRUCTORS] (val x: Self) extends AnyVal {
       
       inline def setCONSTRUCTORS(value: Record[String, js.UndefOr[Constructor]]): Self = StObject.set(x, "CONSTRUCTORS", value.asInstanceOf[js.Any])
     }
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[DEFAULTS]
     }
     
-    extension [Self <: DEFAULTS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DEFAULTS] (val x: Self) extends AnyVal {
       
       inline def setDEFAULTS(value: Record[String, js.UndefOr[DynamicDefaultFunc]]): Self = StObject.set(x, "DEFAULTS", value.asInstanceOf[js.Any])
     }
@@ -58,7 +60,8 @@ object anon {
       __obj.asInstanceOf[FailingCase]
     }
     
-    extension [Self <: FailingCase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FailingCase] (val x: Self) extends AnyVal {
       
       inline def setFailingCase(value: String): Self = StObject.set(x, "failingCase", value.asInstanceOf[js.Any])
       
@@ -81,7 +84,8 @@ object anon {
       __obj.asInstanceOf[MissingPattern]
     }
     
-    extension [Self <: MissingPattern](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MissingPattern] (val x: Self) extends AnyVal {
       
       inline def setMissingPattern(value: String): Self = StObject.set(x, "missingPattern", value.asInstanceOf[js.Any])
     }
@@ -98,7 +102,8 @@ object anon {
       __obj.asInstanceOf[Transform]
     }
     
-    extension [Self <: Transform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transform] (val x: Self) extends AnyVal {
       
       inline def setTransform(value: keyinTransformNameTransfo): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     }
@@ -164,7 +169,8 @@ object anon {
       __obj.asInstanceOf[keyinTransformNameTransfo]
     }
     
-    extension [Self <: keyinTransformNameTransfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: keyinTransformNameTransfo] (val x: Self) extends AnyVal {
       
       inline def setToEnumCase(value: (/* s */ String, /* cfg */ js.UndefOr[TransformConfig]) => String): Self = StObject.set(x, "toEnumCase", js.Any.fromFunction2(value))
       

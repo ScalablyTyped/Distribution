@@ -19,7 +19,8 @@ object ParseKeepsEmptyString {
     __obj.asInstanceOf[ParseKeepsEmptyString]
   }
   
-  extension [Self <: ParseKeepsEmptyString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParseKeepsEmptyString] (val x: Self) extends AnyVal {
     
     inline def setParseKeepsEmptyString(value: Boolean): Self = StObject.set(x, "parseKeepsEmptyString", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object PrincipalComponentInfo {
     __obj.asInstanceOf[PrincipalComponentInfo]
   }
   
-  extension [Self <: PrincipalComponentInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrincipalComponentInfo] (val x: Self) extends AnyVal {
     
     inline def setCumulativeExplainedVarianceRatio(value: Double): Self = StObject.set(x, "cumulativeExplainedVarianceRatio", value.asInstanceOf[js.Any])
     

@@ -133,7 +133,8 @@ object TokenInfo {
     __obj.asInstanceOf[TokenInfo]
   }
   
-  extension [Self <: TokenInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenInfo] (val x: Self) extends AnyVal {
     
     inline def setFirmwareVersion(value: Version): Self = StObject.set(x, "firmwareVersion", value.asInstanceOf[js.Any])
     

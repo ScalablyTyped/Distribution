@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[CreateWriteStreamOptions[I, O]]
     }
     
-    extension [Self <: CreateWriteStreamOptions[?, ?], I, O](x: Self & (CreateWriteStreamOptions[I, O])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateWriteStreamOptions[?, ?], I, O] (val x: Self & (CreateWriteStreamOptions[I, O])) extends AnyVal {
       
       inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object mod {
       __obj.asInstanceOf[Version_]
     }
     
-    extension [Self <: Version_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Version_] (val x: Self) extends AnyVal {
       
       inline def setDot(value: Double): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
       

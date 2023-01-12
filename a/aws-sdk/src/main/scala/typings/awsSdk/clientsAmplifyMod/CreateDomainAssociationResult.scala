@@ -18,7 +18,8 @@ object CreateDomainAssociationResult {
     __obj.asInstanceOf[CreateDomainAssociationResult]
   }
   
-  extension [Self <: CreateDomainAssociationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDomainAssociationResult] (val x: Self) extends AnyVal {
     
     inline def setDomainAssociation(value: DomainAssociation): Self = StObject.set(x, "domainAssociation", value.asInstanceOf[js.Any])
   }

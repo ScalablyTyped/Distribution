@@ -29,7 +29,8 @@ object GetHmacKeysOptions {
     __obj.asInstanceOf[GetHmacKeysOptions]
   }
   
-  extension [Self <: GetHmacKeysOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetHmacKeysOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoPaginate(value: Boolean): Self = StObject.set(x, "autoPaginate", value.asInstanceOf[js.Any])
     

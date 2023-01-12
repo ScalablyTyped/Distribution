@@ -23,7 +23,8 @@ object AutoMLConfig {
     __obj.asInstanceOf[AutoMLConfig]
   }
   
-  extension [Self <: AutoMLConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoMLConfig] (val x: Self) extends AnyVal {
     
     inline def setMetricName(value: MetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     

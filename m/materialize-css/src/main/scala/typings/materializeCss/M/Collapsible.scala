@@ -34,7 +34,8 @@ object Collapsible {
     __obj.asInstanceOf[Collapsible]
   }
   
-  extension [Self <: Collapsible](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Collapsible] (val x: Self) extends AnyVal {
     
     inline def setClose(value: Double => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     

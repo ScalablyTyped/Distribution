@@ -168,7 +168,8 @@ object distCoreSnippetHandlerMod {
       __obj.asInstanceOf[SnippetHandlerEventMap]
     }
     
-    extension [Self <: SnippetHandlerEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnippetHandlerEventMap] (val x: Self) extends AnyVal {
       
       inline def setAfterUpdate(value: AfterUpdateEvent): Self = StObject.set(x, "afterUpdate", value.asInstanceOf[js.Any])
       
@@ -192,7 +193,8 @@ object distCoreSnippetHandlerMod {
         __obj.asInstanceOf[Payload]
       }
       
-      extension [Self <: Payload](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
         
         inline def setSnippets(value: Record[String, String]): Self = StObject.set(x, "snippets", value.asInstanceOf[js.Any])
         

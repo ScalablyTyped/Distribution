@@ -516,7 +516,8 @@ object libComponentsDataTableTableToolbarMenuMod extends Shortcut {
       __obj.asInstanceOf[TableToolbarMenuProps]
     }
     
-    extension [Self <: TableToolbarMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableToolbarMenuProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

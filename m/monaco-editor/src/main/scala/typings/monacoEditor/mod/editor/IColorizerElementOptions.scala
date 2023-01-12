@@ -19,7 +19,8 @@ object IColorizerElementOptions {
     __obj.asInstanceOf[IColorizerElementOptions]
   }
   
-  extension [Self <: IColorizerElementOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IColorizerElementOptions] (val x: Self) extends AnyVal {
     
     inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     

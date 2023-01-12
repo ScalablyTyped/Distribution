@@ -19,7 +19,8 @@ object EventLinkRemoved {
     __obj.asInstanceOf[EventLinkRemoved]
   }
   
-  extension [Self <: EventLinkRemoved](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventLinkRemoved] (val x: Self) extends AnyVal {
     
     inline def setData(value: LinkData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

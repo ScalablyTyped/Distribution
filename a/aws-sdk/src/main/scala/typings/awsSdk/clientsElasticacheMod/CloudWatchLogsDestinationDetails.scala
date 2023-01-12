@@ -18,7 +18,8 @@ object CloudWatchLogsDestinationDetails {
     __obj.asInstanceOf[CloudWatchLogsDestinationDetails]
   }
   
-  extension [Self <: CloudWatchLogsDestinationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudWatchLogsDestinationDetails] (val x: Self) extends AnyVal {
     
     inline def setLogGroup(value: String): Self = StObject.set(x, "LogGroup", value.asInstanceOf[js.Any])
     

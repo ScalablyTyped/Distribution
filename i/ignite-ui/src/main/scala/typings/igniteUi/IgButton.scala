@@ -37,7 +37,8 @@ object IgButton {
     __obj.asInstanceOf[IgButton]
   }
   
-  extension [Self <: IgButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgButton] (val x: Self) extends AnyVal {
     
     inline def setCenterLabel(value: Boolean): Self = StObject.set(x, "centerLabel", value.asInstanceOf[js.Any])
     

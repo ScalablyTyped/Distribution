@@ -2136,7 +2136,8 @@ object strokestringstrokeWidthnu {
     __obj.asInstanceOf[strokestringstrokeWidthnu]
   }
   
-  extension [Self <: strokestringstrokeWidthnu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: strokestringstrokeWidthnu] (val x: Self) extends AnyVal {
     
     inline def setAccentColor(value: AccentColor): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
     

@@ -462,7 +462,8 @@ object PartialListItemSecondaryA {
     __obj.asInstanceOf[PartialListItemSecondaryA]
   }
   
-  extension [Self <: PartialListItemSecondaryA](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialListItemSecondaryA] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

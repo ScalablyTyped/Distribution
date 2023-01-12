@@ -71,7 +71,8 @@ object mod {
       __obj.asInstanceOf[ServerlessJestPlugin]
     }
     
-    extension [Self <: ServerlessJestPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerlessJestPlugin] (val x: Self) extends AnyVal {
       
       inline def setCommands(value: Commands): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     }

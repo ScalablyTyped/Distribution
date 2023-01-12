@@ -91,7 +91,8 @@ object Geom {
         __obj.asInstanceOf[GenerateGridConfig]
       }
       
-      extension [Self <: GenerateGridConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GenerateGridConfig] (val x: Self) extends AnyVal {
         
         inline def setAlphas(value: Double | js.Array[Double]): Self = StObject.set(x, "alphas", value.asInstanceOf[js.Any])
         
@@ -187,7 +188,8 @@ object Geom {
         __obj.asInstanceOf[GenerateGridVertsResult]
       }
       
-      extension [Self <: GenerateGridVertsResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GenerateGridVertsResult] (val x: Self) extends AnyVal {
         
         inline def setAlphas(value: Double | js.Array[Double]): Self = StObject.set(x, "alphas", value.asInstanceOf[js.Any])
         
@@ -234,7 +236,8 @@ object Geom {
         __obj.asInstanceOf[GenerateVertsResult]
       }
       
-      extension [Self <: GenerateVertsResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GenerateVertsResult] (val x: Self) extends AnyVal {
         
         inline def setFaces(value: js.Array[Face]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
         
@@ -270,7 +273,8 @@ object Geom {
         __obj.asInstanceOf[OBJData]
       }
       
-      extension [Self <: OBJData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OBJData] (val x: Self) extends AnyVal {
         
         inline def setMaterialLibraries(value: js.Array[String]): Self = StObject.set(x, "materialLibraries", value.asInstanceOf[js.Any])
         
@@ -308,7 +312,8 @@ object Geom {
         __obj.asInstanceOf[OBJFace]
       }
       
-      extension [Self <: OBJFace](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OBJFace] (val x: Self) extends AnyVal {
         
         inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
         
@@ -344,7 +349,8 @@ object Geom {
         __obj.asInstanceOf[OBJFaceVertice]
       }
       
-      extension [Self <: OBJFaceVertice](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OBJFaceVertice] (val x: Self) extends AnyVal {
         
         inline def setTextureCoordsIndex(value: Double): Self = StObject.set(x, "textureCoordsIndex", value.asInstanceOf[js.Any])
         
@@ -394,7 +400,8 @@ object Geom {
         __obj.asInstanceOf[OBJModel]
       }
       
-      extension [Self <: OBJModel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OBJModel] (val x: Self) extends AnyVal {
         
         inline def setFaces(value: js.Array[OBJFace]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
         
@@ -440,7 +447,8 @@ object Geom {
         __obj.asInstanceOf[UV]
       }
       
-      extension [Self <: UV](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UV] (val x: Self) extends AnyVal {
         
         inline def setU(value: Double): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
         

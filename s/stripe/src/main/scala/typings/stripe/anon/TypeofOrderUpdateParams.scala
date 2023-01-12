@@ -26,7 +26,8 @@ object TypeofOrderUpdateParams {
     __obj.asInstanceOf[TypeofOrderUpdateParams]
   }
   
-  extension [Self <: TypeofOrderUpdateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofOrderUpdateParams] (val x: Self) extends AnyVal {
     
     inline def setLineItem(value: TypeofLineItemPriceData): Self = StObject.set(x, "LineItem", value.asInstanceOf[js.Any])
     

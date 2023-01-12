@@ -113,7 +113,8 @@ object mod {
       __obj.asInstanceOf[Action[Payload]]
     }
     
-    extension [Self <: Action[?], Payload](x: Self & Action[Payload]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action[?], Payload] (val x: Self & Action[Payload]) extends AnyVal {
       
       inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -178,7 +179,8 @@ object mod {
       __obj.asInstanceOf[ActionMeta[Payload, Meta]]
     }
     
-    extension [Self <: ActionMeta[?, ?], Payload, Meta](x: Self & (ActionMeta[Payload, Meta])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionMeta[?, ?], Payload, Meta] (val x: Self & (ActionMeta[Payload, Meta])) extends AnyVal {
       
       inline def setMeta(value: Meta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
@@ -198,7 +200,8 @@ object mod {
       __obj.asInstanceOf[BaseAction]
     }
     
-    extension [Self <: BaseAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseAction] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -217,7 +220,8 @@ object mod {
       __obj.asInstanceOf[CombinedActionType]
     }
     
-    extension [Self <: CombinedActionType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CombinedActionType] (val x: Self) extends AnyVal {
       
       inline def set_dummy(value: Unit): Self = StObject.set(x, "_dummy", value.asInstanceOf[js.Any])
     }
@@ -236,7 +240,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
@@ -316,7 +321,8 @@ object mod {
       __obj.asInstanceOf[ReducerNextThrow[State, Payload]]
     }
     
-    extension [Self <: ReducerNextThrow[?, ?], State, Payload](x: Self & (ReducerNextThrow[State, Payload])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReducerNextThrow[?, ?], State, Payload] (val x: Self & (ReducerNextThrow[State, Payload])) extends AnyVal {
       
       inline def setNext(value: (/* state */ State, /* action */ Action[Payload]) => State): Self = StObject.set(x, "next", js.Any.fromFunction2(value))
       
@@ -341,7 +347,8 @@ object mod {
       __obj.asInstanceOf[ReducerNextThrowMeta[State, Payload, Meta]]
     }
     
-    extension [Self <: ReducerNextThrowMeta[?, ?, ?], State, Payload, Meta](x: Self & (ReducerNextThrowMeta[State, Payload, Meta])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReducerNextThrowMeta[?, ?, ?], State, Payload, Meta] (val x: Self & (ReducerNextThrowMeta[State, Payload, Meta])) extends AnyVal {
       
       inline def setNext(value: (/* state */ State, /* action */ ActionMeta[Payload, Meta]) => State): Self = StObject.set(x, "next", js.Any.fromFunction2(value))
       

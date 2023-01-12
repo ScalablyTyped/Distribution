@@ -71,7 +71,8 @@ object GPUSamplerDescriptor {
     __obj.asInstanceOf[GPUSamplerDescriptor]
   }
   
-  extension [Self <: GPUSamplerDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUSamplerDescriptor] (val x: Self) extends AnyVal {
     
     inline def setAddressModeU(value: GPUAddressMode): Self = StObject.set(x, "addressModeU", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object QualityReportBatchReport {
     __obj.asInstanceOf[QualityReportBatchReport]
   }
   
-  extension [Self <: QualityReportBatchReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QualityReportBatchReport] (val x: Self) extends AnyVal {
     
     inline def setBatchId(value: Id): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     

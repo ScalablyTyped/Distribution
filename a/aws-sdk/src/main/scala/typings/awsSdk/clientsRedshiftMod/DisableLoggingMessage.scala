@@ -18,7 +18,8 @@ object DisableLoggingMessage {
     __obj.asInstanceOf[DisableLoggingMessage]
   }
   
-  extension [Self <: DisableLoggingMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableLoggingMessage] (val x: Self) extends AnyVal {
     
     inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
   }

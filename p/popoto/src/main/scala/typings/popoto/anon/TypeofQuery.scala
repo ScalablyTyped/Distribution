@@ -154,7 +154,8 @@ object TypeofQuery {
     __obj.asInstanceOf[TypeofQuery]
   }
   
-  extension [Self <: TypeofQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofQuery] (val x: Self) extends AnyVal {
     
     inline def setApplyPrefilters(
       value: QueryStructure => /* import warning: importer.ImportType#apply Failed type conversion: typeof queryStructure */ js.Any

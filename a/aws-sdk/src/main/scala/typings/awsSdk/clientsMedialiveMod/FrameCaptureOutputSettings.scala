@@ -18,7 +18,8 @@ object FrameCaptureOutputSettings {
     __obj.asInstanceOf[FrameCaptureOutputSettings]
   }
   
-  extension [Self <: FrameCaptureOutputSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameCaptureOutputSettings] (val x: Self) extends AnyVal {
     
     inline def setNameModifier(value: string): Self = StObject.set(x, "NameModifier", value.asInstanceOf[js.Any])
     

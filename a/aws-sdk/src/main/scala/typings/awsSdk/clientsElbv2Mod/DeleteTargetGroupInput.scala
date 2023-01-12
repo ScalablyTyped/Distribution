@@ -18,7 +18,8 @@ object DeleteTargetGroupInput {
     __obj.asInstanceOf[DeleteTargetGroupInput]
   }
   
-  extension [Self <: DeleteTargetGroupInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTargetGroupInput] (val x: Self) extends AnyVal {
     
     inline def setTargetGroupArn(value: TargetGroupArn): Self = StObject.set(x, "TargetGroupArn", value.asInstanceOf[js.Any])
   }

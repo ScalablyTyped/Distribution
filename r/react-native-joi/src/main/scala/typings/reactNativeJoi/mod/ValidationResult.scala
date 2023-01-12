@@ -33,7 +33,8 @@ object ValidationResult {
     __obj.asInstanceOf[ValidationResult[T]]
   }
   
-  extension [Self <: ValidationResult[?], T](x: Self & ValidationResult[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationResult[?], T] (val x: Self & ValidationResult[T]) extends AnyVal {
     
     inline def setCatch(value: () => js.Promise[T | scala.Nothing]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     

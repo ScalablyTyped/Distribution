@@ -33,7 +33,8 @@ object IncidentRecordSource {
     __obj.asInstanceOf[IncidentRecordSource]
   }
   
-  extension [Self <: IncidentRecordSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncidentRecordSource] (val x: Self) extends AnyVal {
     
     inline def setCreatedBy(value: Arn): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     

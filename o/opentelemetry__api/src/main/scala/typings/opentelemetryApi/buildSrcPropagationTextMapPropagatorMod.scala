@@ -39,7 +39,8 @@ object buildSrcPropagationTextMapPropagatorMod {
       __obj.asInstanceOf[TextMapGetter[Carrier]]
     }
     
-    extension [Self <: TextMapGetter[?], Carrier](x: Self & TextMapGetter[Carrier]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextMapGetter[?], Carrier] (val x: Self & TextMapGetter[Carrier]) extends AnyVal {
       
       inline def setGet(value: (Carrier, String) => js.UndefOr[String | js.Array[String]]): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
       
@@ -94,7 +95,8 @@ object buildSrcPropagationTextMapPropagatorMod {
       __obj.asInstanceOf[TextMapPropagator[Carrier]]
     }
     
-    extension [Self <: TextMapPropagator[?], Carrier](x: Self & TextMapPropagator[Carrier]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextMapPropagator[?], Carrier] (val x: Self & TextMapPropagator[Carrier]) extends AnyVal {
       
       inline def setExtract(value: (Context, Carrier, TextMapGetter[Carrier]) => Context): Self = StObject.set(x, "extract", js.Any.fromFunction3(value))
       
@@ -125,7 +127,8 @@ object buildSrcPropagationTextMapPropagatorMod {
       __obj.asInstanceOf[TextMapSetter[Carrier]]
     }
     
-    extension [Self <: TextMapSetter[?], Carrier](x: Self & TextMapSetter[Carrier]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextMapSetter[?], Carrier] (val x: Self & TextMapSetter[Carrier]) extends AnyVal {
       
       inline def setSet(value: (Carrier, String, String) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
     }

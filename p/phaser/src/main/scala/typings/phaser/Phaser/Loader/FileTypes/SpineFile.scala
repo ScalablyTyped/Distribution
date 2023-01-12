@@ -38,7 +38,8 @@ object SpineFile {
     __obj.asInstanceOf[SpineFile]
   }
   
-  extension [Self <: SpineFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpineFile] (val x: Self) extends AnyVal {
     
     inline def setAddToCache(value: () => Any): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
   }

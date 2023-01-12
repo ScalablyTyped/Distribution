@@ -33,7 +33,8 @@ object DescribeInstancePatchesRequest {
     __obj.asInstanceOf[DescribeInstancePatchesRequest]
   }
   
-  extension [Self <: DescribeInstancePatchesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInstancePatchesRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: PatchOrchestratorFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

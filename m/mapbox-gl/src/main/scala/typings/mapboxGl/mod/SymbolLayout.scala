@@ -117,7 +117,8 @@ object SymbolLayout {
     __obj.asInstanceOf[SymbolLayout]
   }
   
-  extension [Self <: SymbolLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolLayout] (val x: Self) extends AnyVal {
     
     inline def `setIcon-allow-overlap`(value: Boolean | StyleFunction | Expression): Self = StObject.set(x, "icon-allow-overlap", value.asInstanceOf[js.Any])
     

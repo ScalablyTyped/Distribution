@@ -27,7 +27,8 @@ object libModelsPowerLevelBoundsMod {
       __obj.asInstanceOf[PowerLevelBounds]
     }
     
-    extension [Self <: PowerLevelBounds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PowerLevelBounds] (val x: Self) extends AnyVal {
       
       inline def setCanModify(value: Boolean): Self = StObject.set(x, "canModify", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object CreateSecurityConfigurationInput {
     __obj.asInstanceOf[CreateSecurityConfigurationInput]
   }
   
-  extension [Self <: CreateSecurityConfigurationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSecurityConfigurationInput] (val x: Self) extends AnyVal {
     
     inline def setName(value: XmlString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

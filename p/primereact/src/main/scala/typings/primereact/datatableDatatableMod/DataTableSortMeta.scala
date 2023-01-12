@@ -17,7 +17,8 @@ object DataTableSortMeta {
     __obj.asInstanceOf[DataTableSortMeta]
   }
   
-  extension [Self <: DataTableSortMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableSortMeta] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object GooglePrivacyDlpV2CryptoReplaceFfxFpeConfig {
     __obj.asInstanceOf[GooglePrivacyDlpV2CryptoReplaceFfxFpeConfig]
   }
   
-  extension [Self <: GooglePrivacyDlpV2CryptoReplaceFfxFpeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2CryptoReplaceFfxFpeConfig] (val x: Self) extends AnyVal {
     
     inline def setCommonAlphabet(value: String): Self = StObject.set(x, "commonAlphabet", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    extension [Self <: End](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object anon {
       __obj.asInstanceOf[IsBlockDevice]
     }
     
-    extension [Self <: IsBlockDevice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsBlockDevice] (val x: Self) extends AnyVal {
       
       inline def setIsBlockDevice(value: () => Boolean): Self = StObject.set(x, "isBlockDevice", js.Any.fromFunction0(value))
       

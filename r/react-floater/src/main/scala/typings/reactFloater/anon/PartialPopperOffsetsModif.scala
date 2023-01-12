@@ -37,7 +37,8 @@ object PartialPopperOffsetsModif {
     __obj.asInstanceOf[PartialPopperOffsetsModif]
   }
   
-  extension [Self <: PartialPopperOffsetsModif](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPopperOffsetsModif] (val x: Self) extends AnyVal {
     
     inline def setData(value: Obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

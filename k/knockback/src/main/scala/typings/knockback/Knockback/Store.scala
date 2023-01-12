@@ -32,7 +32,8 @@ object Store {
     __obj.asInstanceOf[Store]
   }
   
-  extension [Self <: Store](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Store] (val x: Self) extends AnyVal {
     
     inline def setClear(value: () => Any): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

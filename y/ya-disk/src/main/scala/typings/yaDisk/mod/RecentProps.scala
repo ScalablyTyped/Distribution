@@ -21,7 +21,8 @@ object RecentProps {
     __obj.asInstanceOf[RecentProps]
   }
   
-  extension [Self <: RecentProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecentProps] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

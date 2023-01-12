@@ -153,7 +153,8 @@ object servicesPaginationPaginatorMod {
       __obj.asInstanceOf[Paginator]
     }
     
-    extension [Self <: Paginator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Paginator] (val x: Self) extends AnyVal {
       
       inline def setCalculateTotalNumberOfPages(value: js.Promise[Double]): Self = StObject.set(x, "calculateTotalNumberOfPages", value.asInstanceOf[js.Any])
       
@@ -223,7 +224,8 @@ object servicesPaginationPaginatorMod {
       __obj.asInstanceOf[PaginatorObject[DataT]]
     }
     
-    extension [Self <: PaginatorObject[?], DataT](x: Self & PaginatorObject[DataT]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginatorObject[?], DataT] (val x: Self & PaginatorObject[DataT]) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -256,7 +258,8 @@ object servicesPaginationPaginatorMod {
       __obj.asInstanceOf[PaginatorOptions]
     }
     
-    extension [Self <: PaginatorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginatorOptions] (val x: Self) extends AnyVal {
       
       inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }

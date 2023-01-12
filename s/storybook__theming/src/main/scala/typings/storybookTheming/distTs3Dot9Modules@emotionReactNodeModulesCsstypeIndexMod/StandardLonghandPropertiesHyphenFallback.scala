@@ -1246,7 +1246,8 @@ object StandardLonghandPropertiesHyphenFallback {
     __obj.asInstanceOf[StandardLonghandPropertiesHyphenFallback[TLength, TTime]]
   }
   
-  extension [Self <: StandardLonghandPropertiesHyphenFallback[?, ?], TLength, TTime](x: Self & (StandardLonghandPropertiesHyphenFallback[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardLonghandPropertiesHyphenFallback[?, ?], TLength, TTime] (val x: Self & (StandardLonghandPropertiesHyphenFallback[TLength, TTime])) extends AnyVal {
     
     inline def `setAccent-color`(value: AccentColor | js.Array[NonNullable[js.UndefOr[AccentColor]]]): Self = StObject.set(x, "accent-color", value.asInstanceOf[js.Any])
     

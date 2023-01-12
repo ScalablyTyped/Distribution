@@ -31,7 +31,8 @@ object buildSrcUriParserMod {
       __obj.asInstanceOf[GrpcUri]
     }
     
-    extension [Self <: GrpcUri](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GrpcUri] (val x: Self) extends AnyVal {
       
       inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object buildSrcUriParserMod {
       __obj.asInstanceOf[HostPort]
     }
     
-    extension [Self <: HostPort](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HostPort] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

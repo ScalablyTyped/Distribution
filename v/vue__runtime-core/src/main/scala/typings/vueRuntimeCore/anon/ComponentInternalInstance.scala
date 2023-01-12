@@ -18,7 +18,8 @@ object ComponentInternalInstance {
     __obj.asInstanceOf[ComponentInternalInstance]
   }
   
-  extension [Self <: ComponentInternalInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentInternalInstance] (val x: Self) extends AnyVal {
     
     inline def set$(value: typings.vueRuntimeCore.mod.ComponentInternalInstance): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
   }

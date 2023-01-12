@@ -75,7 +75,8 @@ object SmsTextMessage2 {
     __obj.asInstanceOf[SmsTextMessage2]
   }
   
-  extension [Self <: SmsTextMessage2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmsTextMessage2] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

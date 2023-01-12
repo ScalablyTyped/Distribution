@@ -23,7 +23,8 @@ object SourceOptionsFolder {
     __obj.asInstanceOf[SourceOptionsFolder]
   }
   
-  extension [Self <: SourceOptionsFolder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceOptionsFolder] (val x: Self) extends AnyVal {
     
     inline def setFolder_id(value: String): Self = StObject.set(x, "folder_id", value.asInstanceOf[js.Any])
     

@@ -66,7 +66,8 @@ object ExtensionContext {
     __obj.asInstanceOf[ExtensionContext]
   }
   
-  extension [Self <: ExtensionContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionContext] (val x: Self) extends AnyVal {
     
     inline def set$element(value: JQuery[HTMLElement]): Self = StObject.set(x, "$element", value.asInstanceOf[js.Any])
     

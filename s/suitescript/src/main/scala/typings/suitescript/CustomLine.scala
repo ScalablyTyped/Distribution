@@ -41,7 +41,8 @@ object CustomLine {
     __obj.asInstanceOf[CustomLine]
   }
   
-  extension [Self <: CustomLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomLine] (val x: Self) extends AnyVal {
     
     inline def setIsBookSpecific(value: () => Boolean): Self = StObject.set(x, "isBookSpecific", js.Any.fromFunction0(value))
     

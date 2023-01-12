@@ -18,7 +18,8 @@ object DescribeApplicationSnapshotResponse {
     __obj.asInstanceOf[DescribeApplicationSnapshotResponse]
   }
   
-  extension [Self <: DescribeApplicationSnapshotResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeApplicationSnapshotResponse] (val x: Self) extends AnyVal {
     
     inline def setSnapshotDetails(value: SnapshotDetails): Self = StObject.set(x, "SnapshotDetails", value.asInstanceOf[js.Any])
   }

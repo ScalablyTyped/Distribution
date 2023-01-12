@@ -29,7 +29,8 @@ object libPickerMultiPickerPropsMod {
       __obj.asInstanceOf[MultiPickerProps]
     }
     
-    extension [Self <: MultiPickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiPickerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object libPickerMultiPickerPropsMod {
       __obj.asInstanceOf[PickerCol]
     }
     
-    extension [Self <: PickerCol](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerCol] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

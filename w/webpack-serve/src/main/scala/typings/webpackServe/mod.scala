@@ -66,7 +66,8 @@ object mod {
       __obj.asInstanceOf[EventMap]
     }
     
-    extension [Self <: EventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
       
       inline def `setBuild-finished`(value: Stats): Self = StObject.set(x, "build-finished", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object mod {
       __obj.asInstanceOf[InitializedOptions]
     }
     
-    extension [Self <: InitializedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitializedOptions] (val x: Self) extends AnyVal {
       
       inline def setProtocol(value: http | https): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     }
@@ -123,7 +125,8 @@ object mod {
       __obj.asInstanceOf[Middleware]
     }
     
-    extension [Self <: Middleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Middleware] (val x: Self) extends AnyVal {
       
       inline def setContent(value: () => Unit): Self = StObject.set(x, "content", js.Any.fromFunction0(value))
       
@@ -151,7 +154,8 @@ object mod {
       __obj.asInstanceOf[OnOptions]
     }
     
-    extension [Self <: OnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnOptions] (val x: Self) extends AnyVal {
       
       inline def `setBuild-finished`(value: /* args */ Stats => Unit): Self = StObject.set(x, "build-finished", js.Any.fromFunction1(value))
       
@@ -190,7 +194,8 @@ object mod {
       __obj.asInstanceOf[OpenOptions]
     }
     
-    extension [Self <: OpenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenOptions] (val x: Self) extends AnyVal {
       
       inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -266,7 +271,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: (/* app */ InitializedKoa, /* middleware */ Middleware, Options) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
       
@@ -376,7 +382,8 @@ object mod {
         __obj.asInstanceOf[typings.webpackServe.mod.webpackAugmentingMod.Configuration]
       }
       
-      extension [Self <: typings.webpackServe.mod.webpackAugmentingMod.Configuration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.webpackServe.mod.webpackAugmentingMod.Configuration] (val x: Self) extends AnyVal {
         
         inline def setServe(value: Options): Self = StObject.set(x, "serve", value.asInstanceOf[js.Any])
         

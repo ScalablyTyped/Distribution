@@ -47,7 +47,8 @@ object ApplicationDefault {
     __obj.asInstanceOf[ApplicationDefault]
   }
   
-  extension [Self <: ApplicationDefault](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationDefault] (val x: Self) extends AnyVal {
     
     inline def setApplicationDefault(value: /* httpAgent */ js.UndefOr[Agent] => Credential): Self = StObject.set(x, "applicationDefault", js.Any.fromFunction1(value))
     

@@ -23,7 +23,8 @@ object ItemEffect {
     __obj.asInstanceOf[ItemEffect]
   }
   
-  extension [Self <: ItemEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemEffect] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

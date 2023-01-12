@@ -23,7 +23,8 @@ object DimensionContribution {
     __obj.asInstanceOf[DimensionContribution]
   }
   
-  extension [Self <: DimensionContribution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionContribution] (val x: Self) extends AnyVal {
     
     inline def setDimensionName(value: ColumnName): Self = StObject.set(x, "DimensionName", value.asInstanceOf[js.Any])
     

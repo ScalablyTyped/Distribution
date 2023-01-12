@@ -93,7 +93,8 @@ object XpackInfoFeatures {
     __obj.asInstanceOf[XpackInfoFeatures]
   }
   
-  extension [Self <: XpackInfoFeatures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackInfoFeatures] (val x: Self) extends AnyVal {
     
     inline def setAggregate_metric(value: XpackInfoFeature): Self = StObject.set(x, "aggregate_metric", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[RelativePaths]
     }
     
-    extension [Self <: RelativePaths](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelativePaths] (val x: Self) extends AnyVal {
       
       inline def setRelativePaths(value: Boolean): Self = StObject.set(x, "relativePaths", value.asInstanceOf[js.Any])
     }
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[RootDirectory]
     }
     
-    extension [Self <: RootDirectory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RootDirectory] (val x: Self) extends AnyVal {
       
       inline def setRootDirectory(value: String): Self = StObject.set(x, "rootDirectory", value.asInstanceOf[js.Any])
       

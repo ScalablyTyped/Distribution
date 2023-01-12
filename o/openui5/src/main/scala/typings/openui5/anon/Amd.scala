@@ -19,7 +19,8 @@ object Amd {
     __obj.asInstanceOf[Amd]
   }
   
-  extension [Self <: Amd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Amd] (val x: Self) extends AnyVal {
     
     inline def setAmd(value: Boolean): Self = StObject.set(x, "amd", value.asInstanceOf[js.Any])
     

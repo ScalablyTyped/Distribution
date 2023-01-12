@@ -494,7 +494,8 @@ object mod {
       __obj.asInstanceOf[DivaState]
     }
     
-    extension [Self <: DivaState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DivaState] (val x: Self) extends AnyVal {
       
       inline def setToolbar(value: Null): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
       

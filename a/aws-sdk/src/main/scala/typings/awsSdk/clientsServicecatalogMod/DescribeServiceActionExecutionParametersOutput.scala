@@ -18,7 +18,8 @@ object DescribeServiceActionExecutionParametersOutput {
     __obj.asInstanceOf[DescribeServiceActionExecutionParametersOutput]
   }
   
-  extension [Self <: DescribeServiceActionExecutionParametersOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeServiceActionExecutionParametersOutput] (val x: Self) extends AnyVal {
     
     inline def setServiceActionParameters(value: ExecutionParameters): Self = StObject.set(x, "ServiceActionParameters", value.asInstanceOf[js.Any])
     

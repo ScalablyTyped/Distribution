@@ -17,7 +17,8 @@ object XpackUsageBase {
     __obj.asInstanceOf[XpackUsageBase]
   }
   
-  extension [Self <: XpackUsageBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageBase] (val x: Self) extends AnyVal {
     
     inline def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     

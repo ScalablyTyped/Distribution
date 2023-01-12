@@ -23,7 +23,8 @@ object DescribeEffectivePatchesForPatchBaselineResult {
     __obj.asInstanceOf[DescribeEffectivePatchesForPatchBaselineResult]
   }
   
-  extension [Self <: DescribeEffectivePatchesForPatchBaselineResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEffectivePatchesForPatchBaselineResult] (val x: Self) extends AnyVal {
     
     inline def setEffectivePatches(value: EffectivePatchList): Self = StObject.set(x, "EffectivePatches", value.asInstanceOf[js.Any])
     

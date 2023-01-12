@@ -18,7 +18,8 @@ object KeyboardResult {
     __obj.asInstanceOf[KeyboardResult]
   }
   
-  extension [Self <: KeyboardResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyboardResult] (val x: Self) extends AnyVal {
     
     inline def setKeyboardProps(value: DOMAttributes[FocusableElement]): Self = StObject.set(x, "keyboardProps", value.asInstanceOf[js.Any])
   }

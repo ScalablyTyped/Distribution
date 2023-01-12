@@ -92,7 +92,8 @@ object syncFileSystem {
       __obj.asInstanceOf[FileStatusChangedDetail]
     }
     
-    extension [Self <: FileStatusChangedDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileStatusChangedDetail] (val x: Self) extends AnyVal {
       
       inline def setAction(
         value: ToStringLiteral[
@@ -158,7 +159,8 @@ object syncFileSystem {
       __obj.asInstanceOf[FileStatusInfo]
     }
     
-    extension [Self <: FileStatusInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileStatusInfo] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

@@ -40,7 +40,8 @@ object middlewaresSuccessHttpResponseMiddlewareMod {
       __obj.asInstanceOf[SuccessHttpMiddleware]
     }
     
-    extension [Self <: SuccessHttpMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuccessHttpMiddleware] (val x: Self) extends AnyVal {
       
       inline def setAfter(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify middy.MiddlewareFunction<HttpGatewayEvent, any> */ Any

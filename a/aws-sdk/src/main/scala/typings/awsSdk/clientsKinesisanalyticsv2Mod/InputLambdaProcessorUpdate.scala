@@ -18,7 +18,8 @@ object InputLambdaProcessorUpdate {
     __obj.asInstanceOf[InputLambdaProcessorUpdate]
   }
   
-  extension [Self <: InputLambdaProcessorUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputLambdaProcessorUpdate] (val x: Self) extends AnyVal {
     
     inline def setResourceARNUpdate(value: ResourceARN): Self = StObject.set(x, "ResourceARNUpdate", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object AutoMLPartialFailureReason {
     __obj.asInstanceOf[AutoMLPartialFailureReason]
   }
   
-  extension [Self <: AutoMLPartialFailureReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoMLPartialFailureReason] (val x: Self) extends AnyVal {
     
     inline def setPartialFailureMessage(value: AutoMLFailureReason): Self = StObject.set(x, "PartialFailureMessage", value.asInstanceOf[js.Any])
     

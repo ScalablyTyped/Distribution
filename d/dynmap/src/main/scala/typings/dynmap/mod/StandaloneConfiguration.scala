@@ -15,7 +15,8 @@ object StandaloneConfiguration {
     __obj.asInstanceOf[StandaloneConfiguration]
   }
   
-  extension [Self <: StandaloneConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandaloneConfiguration] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: typings.dynmap.anon.Configuration): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

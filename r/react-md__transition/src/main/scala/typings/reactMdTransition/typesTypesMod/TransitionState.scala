@@ -31,7 +31,8 @@ object TransitionState {
     __obj.asInstanceOf[TransitionState]
   }
   
-  extension [Self <: TransitionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionState] (val x: Self) extends AnyVal {
     
     inline def setAppearing(value: Boolean): Self = StObject.set(x, "appearing", value.asInstanceOf[js.Any])
     

@@ -198,7 +198,8 @@ object distSrcApiMod {
       __obj.asInstanceOf[Block]
     }
     
-    extension [Self <: Block](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
       
       inline def setBytes(value: js.typedarray.Uint8Array): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
@@ -225,7 +226,8 @@ object distSrcApiMod {
       __obj.asInstanceOf[BlockHeader]
     }
     
-    extension [Self <: BlockHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockHeader] (val x: Self) extends AnyVal {
       
       inline def setBlockLength(value: Double): Self = StObject.set(x, "blockLength", value.asInstanceOf[js.Any])
       
@@ -256,7 +258,8 @@ object distSrcApiMod {
       __obj.asInstanceOf[BlockIndex]
     }
     
-    extension [Self <: BlockIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockIndex] (val x: Self) extends AnyVal {
       
       inline def setBlockOffset(value: Double): Self = StObject.set(x, "blockOffset", value.asInstanceOf[js.Any])
       
@@ -288,7 +291,8 @@ object distSrcApiMod {
       __obj.asInstanceOf[BlockReader]
     }
     
-    extension [Self <: BlockReader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockReader] (val x: Self) extends AnyVal {
       
       inline def setBlocks(value: () => BlockIterator): Self = StObject.set(x, "blocks", js.Any.fromFunction0(value))
       
@@ -315,7 +319,8 @@ object distSrcApiMod {
       __obj.asInstanceOf[BlockWriter]
     }
     
-    extension [Self <: BlockWriter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockWriter] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -354,7 +359,8 @@ object distSrcApiMod {
       __obj.asInstanceOf[CarBufferWriterOptions]
     }
     
-    extension [Self <: CarBufferWriterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarBufferWriterOptions] (val x: Self) extends AnyVal {
       
       inline def setByteLength(value: Double): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
       
@@ -411,7 +417,8 @@ object distSrcApiMod {
       __obj.asInstanceOf[RootsReader]
     }
     
-    extension [Self <: RootsReader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RootsReader] (val x: Self) extends AnyVal {
       
       inline def setGetRoots(value: () => js.Promise[js.Array[typings.multiformats.cidMod.CID[Any, Double, Double, Version]]]): Self = StObject.set(x, "getRoots", js.Any.fromFunction0(value))
       
@@ -432,7 +439,8 @@ object distSrcApiMod {
       __obj.asInstanceOf[WriterChannel]
     }
     
-    extension [Self <: WriterChannel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriterChannel] (val x: Self) extends AnyVal {
       
       inline def setOut(value: AsyncIterable[js.typedarray.Uint8Array]): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
       

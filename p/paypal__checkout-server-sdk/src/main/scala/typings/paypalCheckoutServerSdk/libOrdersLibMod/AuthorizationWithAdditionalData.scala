@@ -16,7 +16,8 @@ object AuthorizationWithAdditionalData {
     __obj.asInstanceOf[AuthorizationWithAdditionalData]
   }
   
-  extension [Self <: AuthorizationWithAdditionalData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizationWithAdditionalData] (val x: Self) extends AnyVal {
     
     inline def setProcessor_response(value: ProcessorResponse): Self = StObject.set(x, "processor_response", value.asInstanceOf[js.Any])
   }

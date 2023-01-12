@@ -206,7 +206,8 @@ object VendorShorthandProperties {
     __obj.asInstanceOf[VendorShorthandProperties[TLength, TTime]]
   }
   
-  extension [Self <: VendorShorthandProperties[?, ?], TLength, TTime](x: Self & (VendorShorthandProperties[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VendorShorthandProperties[?, ?], TLength, TTime] (val x: Self & (VendorShorthandProperties[TLength, TTime])) extends AnyVal {
     
     inline def setMozAnimation(value: Animation[TTime]): Self = StObject.set(x, "MozAnimation", value.asInstanceOf[js.Any])
     

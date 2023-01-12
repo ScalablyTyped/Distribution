@@ -52,7 +52,8 @@ object libIcomponentMod {
       __obj.asInstanceOf[IComponent[TComponentProps, TTokens, TStyleSet, TViewProps, TStatics]]
     }
     
-    extension [Self <: IComponent[?, ?, ?, ?, ?], TComponentProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TStatics](x: Self & (IComponent[TComponentProps, TTokens, TStyleSet, TViewProps, TStatics])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IComponent[?, ?, ?, ?, ?], TComponentProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TStatics] (val x: Self & (IComponent[TComponentProps, TTokens, TStyleSet, TViewProps, TStatics])) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object libIcomponentMod {
       __obj.asInstanceOf[IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TStatics]]
     }
     
-    extension [Self <: IComponentOptions[?, ?, ?, ?, ?], TComponentProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TStatics](x: Self & (IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TStatics])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IComponentOptions[?, ?, ?, ?, ?], TComponentProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TStatics] (val x: Self & (IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TStatics])) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -185,7 +187,8 @@ object libIcomponentMod {
       __obj.asInstanceOf[ICustomizationProps[TViewProps, TTokens, TStyleSet]]
     }
     
-    extension [Self <: ICustomizationProps[?, ?, ?], TViewProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */](x: Self & (ICustomizationProps[TViewProps, TTokens, TStyleSet])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICustomizationProps[?, ?, ?], TViewProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */] (val x: Self & (ICustomizationProps[TViewProps, TTokens, TStyleSet])) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -221,7 +224,8 @@ object libIcomponentMod {
       __obj.asInstanceOf[IFactoryOptions[TProps]]
     }
     
-    extension [Self <: IFactoryOptions[?], TProps](x: Self & IFactoryOptions[TProps]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFactoryOptions[?], TProps] (val x: Self & IFactoryOptions[TProps]) extends AnyVal {
       
       inline def setDefaultProp(value: (/* keyof TProps */ String) | children): Self = StObject.set(x, "defaultProp", value.asInstanceOf[js.Any])
       
@@ -250,7 +254,8 @@ object libIcomponentMod {
       __obj.asInstanceOf[IStyleableComponentProps[TViewProps, TTokens, TStyleSet]]
     }
     
-    extension [Self <: IStyleableComponentProps[?, ?, ?], TViewProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */](x: Self & (IStyleableComponentProps[TViewProps, TTokens, TStyleSet])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStyleableComponentProps[?, ?, ?], TViewProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */] (val x: Self & (IStyleableComponentProps[TViewProps, TTokens, TStyleSet])) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

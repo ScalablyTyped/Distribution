@@ -55,7 +55,8 @@ object InputHTMLAttributesminmax {
     __obj.asInstanceOf[InputHTMLAttributesminmax]
   }
   
-  extension [Self <: InputHTMLAttributesminmax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputHTMLAttributesminmax] (val x: Self) extends AnyVal {
     
     inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     

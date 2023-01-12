@@ -20,7 +20,8 @@ object JsonLogicSubstr {
     __obj.asInstanceOf[JsonLogicSubstr[AddOps]]
   }
   
-  extension [Self <: JsonLogicSubstr[?], AddOps /* <: AdditionalOperation */](x: Self & JsonLogicSubstr[AddOps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicSubstr[?], AddOps /* <: AdditionalOperation */] (val x: Self & JsonLogicSubstr[AddOps]) extends AnyVal {
     
     inline def setSubstr(
       value: (js.Tuple2[RulesLogic[AddOps], RulesLogic[AddOps]]) | (js.Tuple3[RulesLogic[AddOps], RulesLogic[AddOps], RulesLogic[AddOps]])

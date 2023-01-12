@@ -23,7 +23,8 @@ object ResourceDataSyncAwsOrganizationsSource {
     __obj.asInstanceOf[ResourceDataSyncAwsOrganizationsSource]
   }
   
-  extension [Self <: ResourceDataSyncAwsOrganizationsSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceDataSyncAwsOrganizationsSource] (val x: Self) extends AnyVal {
     
     inline def setOrganizationSourceType(value: ResourceDataSyncOrganizationSourceType): Self = StObject.set(x, "OrganizationSourceType", value.asInstanceOf[js.Any])
     

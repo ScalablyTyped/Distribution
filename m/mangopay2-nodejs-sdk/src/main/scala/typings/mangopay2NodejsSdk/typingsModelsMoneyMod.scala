@@ -43,7 +43,8 @@ object typingsModelsMoneyMod {
         __obj.asInstanceOf[EMoneyData]
       }
       
-      extension [Self <: EMoneyData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EMoneyData] (val x: Self) extends AnyVal {
         
         inline def setCreditedEMoney(value: MoneyData): Self = StObject.set(x, "CreditedEMoney", value.asInstanceOf[js.Any])
         
@@ -72,7 +73,8 @@ object typingsModelsMoneyMod {
         __obj.asInstanceOf[MoneyData]
       }
       
-      extension [Self <: MoneyData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MoneyData] (val x: Self) extends AnyVal {
         
         inline def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
         

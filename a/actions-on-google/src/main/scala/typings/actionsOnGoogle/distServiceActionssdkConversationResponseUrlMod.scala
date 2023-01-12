@@ -28,7 +28,8 @@ object distServiceActionssdkConversationResponseUrlMod {
       __obj.asInstanceOf[OpenUrlActionOptions]
     }
     
-    extension [Self <: OpenUrlActionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenUrlActionOptions] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }

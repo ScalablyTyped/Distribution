@@ -15,7 +15,8 @@ object VertexFormat {
     __obj.asInstanceOf[VertexFormat]
   }
   
-  extension [Self <: VertexFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VertexFormat] (val x: Self) extends AnyVal {
     
     inline def setVertexFormat(value: typings.cesium.mod.VertexFormat): Self = StObject.set(x, "vertexFormat", value.asInstanceOf[js.Any])
     

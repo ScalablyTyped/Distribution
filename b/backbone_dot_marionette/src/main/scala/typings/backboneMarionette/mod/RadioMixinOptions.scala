@@ -31,7 +31,8 @@ object RadioMixinOptions {
     __obj.asInstanceOf[RadioMixinOptions]
   }
   
-  extension [Self <: RadioMixinOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadioMixinOptions] (val x: Self) extends AnyVal {
     
     inline def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
     

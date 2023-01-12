@@ -43,7 +43,8 @@ object CellOutput {
     __obj.asInstanceOf[CellOutput]
   }
   
-  extension [Self <: CellOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellOutput] (val x: Self) extends AnyVal {
     
     inline def setCellArn(value: stringMax256): Self = StObject.set(x, "CellArn", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object TRUSTEDANDUNTRUSTEDCONTEXTS {
     __obj.asInstanceOf[TRUSTEDANDUNTRUSTEDCONTEXTS]
   }
   
-  extension [Self <: TRUSTEDANDUNTRUSTEDCONTEXTS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TRUSTEDANDUNTRUSTEDCONTEXTS] (val x: Self) extends AnyVal {
     
     inline def setTRUSTED_AND_UNTRUSTED_CONTEXTS(value: TRUSTED_AND_UNTRUSTED_CONTEXTS): Self = StObject.set(x, "TRUSTED_AND_UNTRUSTED_CONTEXTS", value.asInstanceOf[js.Any])
     

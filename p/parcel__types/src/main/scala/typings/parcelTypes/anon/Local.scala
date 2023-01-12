@@ -24,7 +24,8 @@ object Local {
     __obj.asInstanceOf[Local]
   }
   
-  extension [Self <: Local](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Local] (val x: Self) extends AnyVal {
     
     inline def setIsWeak(value: Boolean): Self = StObject.set(x, "isWeak", value.asInstanceOf[js.Any])
     

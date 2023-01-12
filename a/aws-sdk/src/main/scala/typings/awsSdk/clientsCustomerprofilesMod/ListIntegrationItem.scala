@@ -58,7 +58,8 @@ object ListIntegrationItem {
     __obj.asInstanceOf[ListIntegrationItem]
   }
   
-  extension [Self <: ListIntegrationItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListIntegrationItem] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object AnalysisKuromojiPartOfSpeechTokenFilter {
     __obj.asInstanceOf[AnalysisKuromojiPartOfSpeechTokenFilter]
   }
   
-  extension [Self <: AnalysisKuromojiPartOfSpeechTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisKuromojiPartOfSpeechTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setStoptags(value: js.Array[String]): Self = StObject.set(x, "stoptags", value.asInstanceOf[js.Any])
     

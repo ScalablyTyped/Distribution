@@ -37,7 +37,8 @@ object ApplyPatchOptions {
     __obj.asInstanceOf[ApplyPatchOptions]
   }
   
-  extension [Self <: ApplyPatchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplyPatchOptions] (val x: Self) extends AnyVal {
     
     inline def setCompareLine(
       value: (/* lineNumber */ Double, /* line */ String, /* operation */ `-_` | Space, /* patchContent */ String) => Boolean

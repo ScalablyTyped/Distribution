@@ -116,7 +116,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -135,7 +136,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -154,7 +156,8 @@ object anon {
       __obj.asInstanceOf[Locale]
     }
     
-    extension [Self <: Locale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
       
       inline def setLocale(value: typings.dateFns.mod.Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
@@ -184,7 +187,8 @@ object anon {
       __obj.asInstanceOf[PartialFormatters]
     }
     
-    extension [Self <: PartialFormatters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFormatters] (val x: Self) extends AnyVal {
       
       inline def setFormatCaption(value: (/* date */ js.Date, /* options */ js.UndefOr[Locale]) => ReactNode): Self = StObject.set(x, "formatCaption", js.Any.fromFunction2(value))
       
@@ -234,7 +238,8 @@ object anon {
       __obj.asInstanceOf[PartialFormattersFormatCaption]
     }
     
-    extension [Self <: PartialFormattersFormatCaption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFormattersFormatCaption] (val x: Self) extends AnyVal {
       
       inline def setFormatCaption(value: (/* date */ js.Date, /* options */ js.UndefOr[Locale]) => ReactNode): Self = StObject.set(x, "formatCaption", js.Any.fromFunction2(value))
       
@@ -286,7 +291,8 @@ object anon {
       __obj.asInstanceOf[PartialLabels]
     }
     
-    extension [Self <: PartialLabels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLabels] (val x: Self) extends AnyVal {
       
       inline def setLabelDay(
         value: (/* day */ js.Date, /* activeModifiers */ ActiveModifiers, /* options */ js.UndefOr[Locale]) => String
@@ -344,7 +350,8 @@ object anon {
       __obj.asInstanceOf[PartialLabelsLabelDay]
     }
     
-    extension [Self <: PartialLabelsLabelDay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLabelsLabelDay] (val x: Self) extends AnyVal {
       
       inline def setLabelDay(
         value: (/* day */ js.Date, /* activeModifiers */ typings.reactDayPicker.distIndexDotesmMod.ActiveModifiers, /* options */ js.UndefOr[Locale]) => String
@@ -1112,7 +1119,8 @@ object anon {
       __obj.asInstanceOf[PickButtonPropsmultiplede]
     }
     
-    extension [Self <: PickButtonPropsmultiplede](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickButtonPropsmultiplede] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -2706,7 +2714,8 @@ object anon {
       __obj.asInstanceOf[RequiredClassNames]
     }
     
-    extension [Self <: RequiredClassNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredClassNames] (val x: Self) extends AnyVal {
       
       inline def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
@@ -2836,7 +2845,8 @@ object anon {
       __obj.asInstanceOf[StyledComponentPickButton]
     }
     
-    extension [Self <: StyledComponentPickButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledComponentPickButton] (val x: Self) extends AnyVal {
       
       inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       

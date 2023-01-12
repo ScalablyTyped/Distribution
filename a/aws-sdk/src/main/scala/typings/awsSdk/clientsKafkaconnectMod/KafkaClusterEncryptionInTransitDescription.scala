@@ -18,7 +18,8 @@ object KafkaClusterEncryptionInTransitDescription {
     __obj.asInstanceOf[KafkaClusterEncryptionInTransitDescription]
   }
   
-  extension [Self <: KafkaClusterEncryptionInTransitDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KafkaClusterEncryptionInTransitDescription] (val x: Self) extends AnyVal {
     
     inline def setEncryptionType(value: KafkaClusterEncryptionInTransitType): Self = StObject.set(x, "encryptionType", value.asInstanceOf[js.Any])
     

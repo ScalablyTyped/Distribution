@@ -41,7 +41,8 @@ object ASPxClientSummaryItemType {
     __obj.asInstanceOf[ASPxClientSummaryItemType]
   }
   
-  extension [Self <: ASPxClientSummaryItemType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientSummaryItemType] (val x: Self) extends AnyVal {
     
     inline def setAverage(value: Double): Self = StObject.set(x, "Average", value.asInstanceOf[js.Any])
     

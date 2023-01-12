@@ -23,7 +23,8 @@ object GoogleAdsDate {
     __obj.asInstanceOf[GoogleAdsDate]
   }
   
-  extension [Self <: GoogleAdsDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAdsDate] (val x: Self) extends AnyVal {
     
     inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     

@@ -108,7 +108,8 @@ object SVGOutputProcessor {
     __obj.asInstanceOf[SVGOutputProcessor]
   }
   
-  extension [Self <: SVGOutputProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGOutputProcessor] (val x: Self) extends AnyVal {
     
     inline def setAddMMLclasses(value: Boolean): Self = StObject.set(x, "addMMLclasses", value.asInstanceOf[js.Any])
     

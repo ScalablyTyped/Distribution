@@ -23,7 +23,8 @@ object EventAggregate {
     __obj.asInstanceOf[EventAggregate]
   }
   
-  extension [Self <: EventAggregate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventAggregate] (val x: Self) extends AnyVal {
     
     inline def setAggregateValue(value: aggregateValue): Self = StObject.set(x, "aggregateValue", value.asInstanceOf[js.Any])
     

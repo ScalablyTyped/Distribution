@@ -19,7 +19,8 @@ object DeepPatchDeep {
     __obj.asInstanceOf[DeepPatchDeep[O, O1, ignore, fill]]
   }
   
-  extension [Self <: DeepPatchDeep[?, ?, ?, ?], O /* <: js.Object */, O1 /* <: js.Object */, ignore /* <: js.Object */, fill /* <: Any */](x: Self & (DeepPatchDeep[O, O1, ignore, fill])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeepPatchDeep[?, ?, ?, ?], O /* <: js.Object */, O1 /* <: js.Object */, ignore /* <: js.Object */, fill /* <: Any */] (val x: Self & (DeepPatchDeep[O, O1, ignore, fill])) extends AnyVal {
     
     inline def setDeep(value: PatchDeep[O, O1, ignore, fill]): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
     

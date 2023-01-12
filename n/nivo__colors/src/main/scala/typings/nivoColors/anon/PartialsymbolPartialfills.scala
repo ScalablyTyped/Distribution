@@ -20,7 +20,8 @@ object PartialsymbolPartialfills {
     __obj.asInstanceOf[PartialsymbolPartialfills]
   }
   
-  extension [Self <: PartialsymbolPartialfills](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialsymbolPartialfills] (val x: Self) extends AnyVal {
     
     inline def setSymbol(value: Partial[Fill]): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     

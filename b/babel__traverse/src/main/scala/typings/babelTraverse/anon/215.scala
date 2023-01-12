@@ -17,7 +17,8 @@ object `215` {
     __obj.asInstanceOf[`215`]
   }
   
-  extension [Self <: `215`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `215`] (val x: Self) extends AnyVal {
     
     inline def setType(value: IntersectionTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

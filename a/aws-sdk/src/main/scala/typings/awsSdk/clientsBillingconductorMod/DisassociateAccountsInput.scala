@@ -23,7 +23,8 @@ object DisassociateAccountsInput {
     __obj.asInstanceOf[DisassociateAccountsInput]
   }
   
-  extension [Self <: DisassociateAccountsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateAccountsInput] (val x: Self) extends AnyVal {
     
     inline def setAccountIds(value: AccountIdList): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     

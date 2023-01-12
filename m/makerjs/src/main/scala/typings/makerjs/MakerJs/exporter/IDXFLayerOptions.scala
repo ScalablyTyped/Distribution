@@ -26,7 +26,8 @@ object IDXFLayerOptions {
     __obj.asInstanceOf[IDXFLayerOptions]
   }
   
-  extension [Self <: IDXFLayerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDXFLayerOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

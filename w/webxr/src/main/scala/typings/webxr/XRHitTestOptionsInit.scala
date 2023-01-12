@@ -19,7 +19,8 @@ object XRHitTestOptionsInit {
     __obj.asInstanceOf[XRHitTestOptionsInit]
   }
   
-  extension [Self <: XRHitTestOptionsInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRHitTestOptionsInit] (val x: Self) extends AnyVal {
     
     inline def setEntityTypes(value: js.Array[XRHitTestTrackableType]): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
     

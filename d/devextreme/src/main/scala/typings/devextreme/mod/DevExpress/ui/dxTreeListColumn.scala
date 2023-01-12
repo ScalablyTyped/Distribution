@@ -74,7 +74,8 @@ object dxTreeListColumn {
     __obj.asInstanceOf[dxTreeListColumn[TRowData, TKey]]
   }
   
-  extension [Self <: dxTreeListColumn[?, ?], TRowData, TKey](x: Self & (dxTreeListColumn[TRowData, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxTreeListColumn[?, ?], TRowData, TKey] (val x: Self & (dxTreeListColumn[TRowData, TKey])) extends AnyVal {
     
     inline def setButtons(value: js.Array[TreeListPredefinedColumnButton | (ColumnButton[TRowData, TKey])]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

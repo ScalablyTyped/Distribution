@@ -159,7 +159,8 @@ object IStaticCanvasOptions {
     __obj.asInstanceOf[IStaticCanvasOptions]
   }
   
-  extension [Self <: IStaticCanvasOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStaticCanvasOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowTouchScrolling(value: Boolean): Self = StObject.set(x, "allowTouchScrolling", value.asInstanceOf[js.Any])
     

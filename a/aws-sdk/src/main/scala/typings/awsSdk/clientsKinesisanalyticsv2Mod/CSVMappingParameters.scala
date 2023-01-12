@@ -23,7 +23,8 @@ object CSVMappingParameters {
     __obj.asInstanceOf[CSVMappingParameters]
   }
   
-  extension [Self <: CSVMappingParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSVMappingParameters] (val x: Self) extends AnyVal {
     
     inline def setRecordColumnDelimiter(value: RecordColumnDelimiter): Self = StObject.set(x, "RecordColumnDelimiter", value.asInstanceOf[js.Any])
     

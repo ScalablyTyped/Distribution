@@ -319,7 +319,8 @@ object ComposerOptions {
   ]]
   }
   
-  extension [Self <: ComposerOptions[?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?], Schema /* <: Datetime */, Locales /* <: DatetimeFormats | String */, MessagesLocales, DateTimeFormatsLocales, NumberFormatsLocales, MessageSchema, DateTimeSchema, NumberSchema, _Messages /* <: LocaleMessages[MessageSchema, MessagesLocales, VueMessageType] */, _DateTimeFormats /* <: DateTimeFormats[DateTimeSchema, DateTimeFormatsLocales] */, _NumberFormats /* <: NumberFormats[NumberSchema, NumberFormatsLocales] */](x: Self & (ComposerOptions[
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComposerOptions[?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?], Schema /* <: Datetime */, Locales /* <: DatetimeFormats | String */, MessagesLocales, DateTimeFormatsLocales, NumberFormatsLocales, MessageSchema, DateTimeSchema, NumberSchema, _Messages /* <: LocaleMessages[MessageSchema, MessagesLocales, VueMessageType] */, _DateTimeFormats /* <: DateTimeFormats[DateTimeSchema, DateTimeFormatsLocales] */, _NumberFormats /* <: NumberFormats[NumberSchema, NumberFormatsLocales] */] (val x: Self & (ComposerOptions[
         Schema, 
         Locales, 
         MessagesLocales, 
@@ -331,7 +332,7 @@ object ComposerOptions {
         _Messages, 
         _DateTimeFormats, 
         _NumberFormats
-      ])) {
+      ])) extends AnyVal {
     
     inline def setDatetimeFormats(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof _DateTimeFormats ]: DateTimeSchema} */ js.Any

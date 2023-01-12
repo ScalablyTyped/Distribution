@@ -33,7 +33,8 @@ object FlexItemProps {
     __obj.asInstanceOf[FlexItemProps]
   }
   
-  extension [Self <: FlexItemProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexItemProps] (val x: Self) extends AnyVal {
     
     inline def setAlignSelf(value: auto | start | end | center | baseline | stretch): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
     

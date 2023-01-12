@@ -19,7 +19,8 @@ object NodesClearRepositoriesMeteringArchiveRequest {
     __obj.asInstanceOf[NodesClearRepositoriesMeteringArchiveRequest]
   }
   
-  extension [Self <: NodesClearRepositoriesMeteringArchiveRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesClearRepositoriesMeteringArchiveRequest] (val x: Self) extends AnyVal {
     
     inline def setMax_archive_version(value: long): Self = StObject.set(x, "max_archive_version", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object Algorithm {
     __obj.asInstanceOf[Algorithm]
   }
   
-  extension [Self <: Algorithm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Algorithm] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: FindClosestByPathAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

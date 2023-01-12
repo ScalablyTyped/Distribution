@@ -23,7 +23,8 @@ object ActivityTaskCancelRequestedEventAttributes {
     __obj.asInstanceOf[ActivityTaskCancelRequestedEventAttributes]
   }
   
-  extension [Self <: ActivityTaskCancelRequestedEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityTaskCancelRequestedEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setActivityId(value: ActivityId): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
     

@@ -79,7 +79,8 @@ object libConfigurationMod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object libConfigurationMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setConfigTransform(value: (/* config */ Any, /* filePath */ String) => Preset): Self = StObject.set(x, "configTransform", js.Any.fromFunction2(value))
       
@@ -193,7 +195,8 @@ object libConfigurationMod {
       __obj.asInstanceOf[Preset]
     }
     
-    extension [Self <: Preset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Preset] (val x: Self) extends AnyVal {
       
       inline def setPlugins(value: typings.unified.mod.PluggableList | PluginIdObject | PluginIdList): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       

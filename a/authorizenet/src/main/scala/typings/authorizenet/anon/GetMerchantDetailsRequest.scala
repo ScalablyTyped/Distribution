@@ -15,7 +15,8 @@ object GetMerchantDetailsRequest {
     __obj.asInstanceOf[GetMerchantDetailsRequest]
   }
   
-  extension [Self <: GetMerchantDetailsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMerchantDetailsRequest] (val x: Self) extends AnyVal {
     
     inline def setGetMerchantDetailsRequest(value: typings.authorizenet.mod.APIContracts.GetMerchantDetailsRequest): Self = StObject.set(x, "getMerchantDetailsRequest", value.asInstanceOf[js.Any])
   }

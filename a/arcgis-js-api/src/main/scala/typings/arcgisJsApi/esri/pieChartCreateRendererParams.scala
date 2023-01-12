@@ -99,7 +99,8 @@ object pieChartCreateRendererParams {
     __obj.asInstanceOf[pieChartCreateRendererParams]
   }
   
-  extension [Self <: pieChartCreateRendererParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: pieChartCreateRendererParams] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: js.Array[pieChartCreateRendererParamsAttributes]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

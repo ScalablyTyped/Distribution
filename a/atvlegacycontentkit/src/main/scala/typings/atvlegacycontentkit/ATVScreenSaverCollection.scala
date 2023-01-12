@@ -34,7 +34,8 @@ object ATVScreenSaverCollection {
     __obj.asInstanceOf[ATVScreenSaverCollection]
   }
   
-  extension [Self <: ATVScreenSaverCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATVScreenSaverCollection] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

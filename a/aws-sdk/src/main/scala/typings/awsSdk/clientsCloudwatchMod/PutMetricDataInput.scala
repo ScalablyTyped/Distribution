@@ -23,7 +23,8 @@ object PutMetricDataInput {
     __obj.asInstanceOf[PutMetricDataInput]
   }
   
-  extension [Self <: PutMetricDataInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutMetricDataInput] (val x: Self) extends AnyVal {
     
     inline def setMetricData(value: MetricData): Self = StObject.set(x, "MetricData", value.asInstanceOf[js.Any])
     

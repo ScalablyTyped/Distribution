@@ -33,7 +33,8 @@ object DialogflowV1Result {
     __obj.asInstanceOf[DialogflowV1Result]
   }
   
-  extension [Self <: DialogflowV1Result](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogflowV1Result] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

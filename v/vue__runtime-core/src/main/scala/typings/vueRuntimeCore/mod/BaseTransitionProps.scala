@@ -46,7 +46,8 @@ object BaseTransitionProps {
     __obj.asInstanceOf[BaseTransitionProps[HostElement]]
   }
   
-  extension [Self <: BaseTransitionProps[?], HostElement](x: Self & BaseTransitionProps[HostElement]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseTransitionProps[?], HostElement] (val x: Self & BaseTransitionProps[HostElement]) extends AnyVal {
     
     inline def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
     

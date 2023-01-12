@@ -18,7 +18,8 @@ object InstanceAndStyle {
     __obj.asInstanceOf[InstanceAndStyle]
   }
   
-  extension [Self <: InstanceAndStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceAndStyle] (val x: Self) extends AnyVal {
     
     inline def setInstance(value: Record[String, Any]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     

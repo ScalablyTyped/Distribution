@@ -34,7 +34,8 @@ object ContinuousColorLegendProps {
     __obj.asInstanceOf[ContinuousColorLegendProps]
   }
   
-  extension [Self <: ContinuousColorLegendProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinuousColorLegendProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

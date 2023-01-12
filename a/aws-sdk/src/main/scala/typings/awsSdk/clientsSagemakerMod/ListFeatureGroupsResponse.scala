@@ -23,7 +23,8 @@ object ListFeatureGroupsResponse {
     __obj.asInstanceOf[ListFeatureGroupsResponse]
   }
   
-  extension [Self <: ListFeatureGroupsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFeatureGroupsResponse] (val x: Self) extends AnyVal {
     
     inline def setFeatureGroupSummaries(value: FeatureGroupSummaries): Self = StObject.set(x, "FeatureGroupSummaries", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object MeshCreateBoxParamsSize {
     __obj.asInstanceOf[MeshCreateBoxParamsSize]
   }
   
-  extension [Self <: MeshCreateBoxParamsSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshCreateBoxParamsSize] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

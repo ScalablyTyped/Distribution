@@ -22,7 +22,8 @@ object IpsWarmup {
     __obj.asInstanceOf[IpsWarmup]
   }
   
-  extension [Self <: IpsWarmup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpsWarmup] (val x: Self) extends AnyVal {
     
     inline def setEnd_at(value: String): Self = StObject.set(x, "end_at", value.asInstanceOf[js.Any])
     

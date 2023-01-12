@@ -44,7 +44,8 @@ object CompressVertices {
     __obj.asInstanceOf[CompressVertices]
   }
   
-  extension [Self <: CompressVertices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompressVertices] (val x: Self) extends AnyVal {
     
     inline def setAllowPicking(value: Boolean): Self = StObject.set(x, "allowPicking", value.asInstanceOf[js.Any])
     

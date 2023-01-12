@@ -253,7 +253,8 @@ object libStyleMod {
       __obj.asInstanceOf[PartialTheme]
     }
     
-    extension [Self <: PartialTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTheme] (val x: Self) extends AnyVal {
       
       inline def setAction_sheet_zindex(value: Double): Self = StObject.set(x, "action_sheet_zindex", value.asInstanceOf[js.Any])
       
@@ -1025,7 +1026,8 @@ object libStyleMod {
       __obj.asInstanceOf[Theme]
     }
     
-    extension [Self <: Theme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
       
       inline def setAction_sheet_zindex(value: Double): Self = StObject.set(x, "action_sheet_zindex", value.asInstanceOf[js.Any])
       
@@ -1258,7 +1260,8 @@ object libStyleMod {
       __obj.asInstanceOf[ThemeProviderProps]
     }
     
-    extension [Self <: ThemeProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -1281,7 +1284,8 @@ object libStyleMod {
       __obj.asInstanceOf[UseThemeContextProps]
     }
     
-    extension [Self <: UseThemeContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseThemeContextProps] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: PartialTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
@@ -1304,7 +1308,8 @@ object libStyleMod {
       __obj.asInstanceOf[WithThemeProps[T, S]]
     }
     
-    extension [Self <: WithThemeProps[?, ?], T, S](x: Self & (WithThemeProps[T, S])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithThemeProps[?, ?], T, S] (val x: Self & (WithThemeProps[T, S])) extends AnyVal {
       
       inline def setChildren(value: (T & StringDictionary[Any], Theme) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       
@@ -1329,7 +1334,8 @@ object libStyleMod {
       __obj.asInstanceOf[WithThemeStyles[T]]
     }
     
-    extension [Self <: WithThemeStyles[?], T](x: Self & WithThemeStyles[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithThemeStyles[?], T] (val x: Self & WithThemeStyles[T]) extends AnyVal {
       
       inline def setStyles(value: Partial[T]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       

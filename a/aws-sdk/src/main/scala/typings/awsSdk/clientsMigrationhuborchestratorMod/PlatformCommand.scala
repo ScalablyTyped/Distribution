@@ -23,7 +23,8 @@ object PlatformCommand {
     __obj.asInstanceOf[PlatformCommand]
   }
   
-  extension [Self <: PlatformCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlatformCommand] (val x: Self) extends AnyVal {
     
     inline def setLinux(value: String): Self = StObject.set(x, "linux", value.asInstanceOf[js.Any])
     

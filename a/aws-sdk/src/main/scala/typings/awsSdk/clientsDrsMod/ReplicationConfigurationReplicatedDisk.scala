@@ -43,7 +43,8 @@ object ReplicationConfigurationReplicatedDisk {
     __obj.asInstanceOf[ReplicationConfigurationReplicatedDisk]
   }
   
-  extension [Self <: ReplicationConfigurationReplicatedDisk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationConfigurationReplicatedDisk] (val x: Self) extends AnyVal {
     
     inline def setDeviceName(value: BoundedString): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     

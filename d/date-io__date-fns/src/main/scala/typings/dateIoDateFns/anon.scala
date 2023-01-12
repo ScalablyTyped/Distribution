@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Formats]
     }
     
-    extension [Self <: Formats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Formats] (val x: Self) extends AnyVal {
       
       inline def setFormats(value: PartialDateIOFormatsstrin): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object anon {
       __obj.asInstanceOf[PartialDateIOFormatsstrin]
     }
     
-    extension [Self <: PartialDateIOFormatsstrin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDateIOFormatsstrin] (val x: Self) extends AnyVal {
       
       inline def setDayOfMonth(value: String): Self = StObject.set(x, "dayOfMonth", value.asInstanceOf[js.Any])
       

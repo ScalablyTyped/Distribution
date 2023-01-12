@@ -22,7 +22,8 @@ object UseGroupByColumnOptions {
     __obj.asInstanceOf[UseGroupByColumnOptions[D]]
   }
   
-  extension [Self <: UseGroupByColumnOptions[?], D /* <: js.Object */](x: Self & UseGroupByColumnOptions[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseGroupByColumnOptions[?], D /* <: js.Object */] (val x: Self & UseGroupByColumnOptions[D]) extends AnyVal {
     
     inline def setAggregate(value: Aggregator[D]): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     

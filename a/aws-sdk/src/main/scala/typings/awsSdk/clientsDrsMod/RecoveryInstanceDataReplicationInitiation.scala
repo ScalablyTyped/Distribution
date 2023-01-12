@@ -23,7 +23,8 @@ object RecoveryInstanceDataReplicationInitiation {
     __obj.asInstanceOf[RecoveryInstanceDataReplicationInitiation]
   }
   
-  extension [Self <: RecoveryInstanceDataReplicationInitiation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecoveryInstanceDataReplicationInitiation] (val x: Self) extends AnyVal {
     
     inline def setStartDateTime(value: ISO8601DatetimeString): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
     

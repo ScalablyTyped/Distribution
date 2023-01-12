@@ -20,7 +20,8 @@ object PerModuleNameCache {
     __obj.asInstanceOf[PerModuleNameCache]
   }
   
-  extension [Self <: PerModuleNameCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerModuleNameCache] (val x: Self) extends AnyVal {
     
     inline def setGet(value: java.lang.String => js.UndefOr[ResolvedModuleWithFailedLookupLocations]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     

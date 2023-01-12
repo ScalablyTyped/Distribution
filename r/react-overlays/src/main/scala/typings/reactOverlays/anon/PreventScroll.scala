@@ -15,7 +15,8 @@ object PreventScroll {
     __obj.asInstanceOf[PreventScroll]
   }
   
-  extension [Self <: PreventScroll](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreventScroll] (val x: Self) extends AnyVal {
     
     inline def setPreventScroll(value: Boolean): Self = StObject.set(x, "preventScroll", value.asInstanceOf[js.Any])
   }

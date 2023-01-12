@@ -18,7 +18,8 @@ object CustomDomainConfigType {
     __obj.asInstanceOf[CustomDomainConfigType]
   }
   
-  extension [Self <: CustomDomainConfigType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomDomainConfigType] (val x: Self) extends AnyVal {
     
     inline def setCertificateArn(value: ArnType): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
   }

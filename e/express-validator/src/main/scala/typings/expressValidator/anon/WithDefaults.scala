@@ -21,7 +21,8 @@ object WithDefaults {
     __obj.asInstanceOf[WithDefaults]
   }
   
-  extension [Self <: WithDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WithDefaults] (val x: Self) extends AnyVal {
     
     inline def setWithDefaults(value: FnCall): Self = StObject.set(x, "withDefaults", value.asInstanceOf[js.Any])
   }

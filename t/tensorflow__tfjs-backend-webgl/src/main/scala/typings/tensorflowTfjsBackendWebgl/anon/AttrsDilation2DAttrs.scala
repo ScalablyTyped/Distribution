@@ -22,7 +22,8 @@ object AttrsDilation2DAttrs {
     __obj.asInstanceOf[AttrsDilation2DAttrs]
   }
   
-  extension [Self <: AttrsDilation2DAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsDilation2DAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: Dilation2DAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

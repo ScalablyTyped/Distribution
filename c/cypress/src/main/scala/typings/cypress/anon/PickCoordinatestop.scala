@@ -19,7 +19,8 @@ object PickCoordinatestop {
     __obj.asInstanceOf[PickCoordinatestop]
   }
   
-  extension [Self <: PickCoordinatestop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickCoordinatestop] (val x: Self) extends AnyVal {
     
     inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
   }

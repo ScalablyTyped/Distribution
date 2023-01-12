@@ -65,7 +65,8 @@ object Annotation {
     __obj.asInstanceOf[Annotation]
   }
   
-  extension [Self <: Annotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Annotation] (val x: Self) extends AnyVal {
     
     inline def setAfterSelectedText(value: String): Self = StObject.set(x, "afterSelectedText", value.asInstanceOf[js.Any])
     

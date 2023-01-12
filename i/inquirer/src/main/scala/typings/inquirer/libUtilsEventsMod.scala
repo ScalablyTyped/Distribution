@@ -76,7 +76,8 @@ object libUtilsEventsMod {
       __obj.asInstanceOf[Events]
     }
     
-    extension [Self <: Events](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
       
       inline def setAKey(value: Observable_[KeyDescriptor]): Self = StObject.set(x, "aKey", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object libUtilsEventsMod {
       __obj.asInstanceOf[KeyDescriptor]
     }
     
-    extension [Self <: KeyDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyDescriptor] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

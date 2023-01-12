@@ -30,7 +30,8 @@ object AddFileToProject {
     __obj.asInstanceOf[AddFileToProject]
   }
   
-  extension [Self <: AddFileToProject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddFileToProject] (val x: Self) extends AnyVal {
     
     inline def setAddFileToProject(value: File => Unit): Self = StObject.set(x, "addFileToProject", js.Any.fromFunction1(value))
     

@@ -16,7 +16,8 @@ object AllowEditRangeCollectionUpdateData {
     __obj.asInstanceOf[AllowEditRangeCollectionUpdateData]
   }
   
-  extension [Self <: AllowEditRangeCollectionUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowEditRangeCollectionUpdateData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[AllowEditRangeData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

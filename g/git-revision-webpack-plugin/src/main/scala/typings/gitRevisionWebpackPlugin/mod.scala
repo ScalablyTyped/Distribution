@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[GitRevisionPlugin]
     }
     
-    extension [Self <: GitRevisionPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GitRevisionPlugin] (val x: Self) extends AnyVal {
       
       inline def setBranch(value: () => String): Self = StObject.set(x, "branch", js.Any.fromFunction0(value))
       
@@ -80,7 +81,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBranch(value: Boolean): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       

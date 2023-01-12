@@ -33,7 +33,8 @@ object GiturlHtmlurl {
     __obj.asInstanceOf[GiturlHtmlurl]
   }
   
-  extension [Self <: GiturlHtmlurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GiturlHtmlurl] (val x: Self) extends AnyVal {
     
     inline def setDownload_url(value: String): Self = StObject.set(x, "download_url", value.asInstanceOf[js.Any])
     

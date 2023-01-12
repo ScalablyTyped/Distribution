@@ -48,7 +48,8 @@ object IssuerMetadata {
     __obj.asInstanceOf[IssuerMetadata]
   }
   
-  extension [Self <: IssuerMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssuerMetadata] (val x: Self) extends AnyVal {
     
     inline def setAuthorization_endpoint(value: String): Self = StObject.set(x, "authorization_endpoint", value.asInstanceOf[js.Any])
     

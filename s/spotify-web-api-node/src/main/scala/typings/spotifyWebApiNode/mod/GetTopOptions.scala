@@ -20,7 +20,8 @@ object GetTopOptions {
     __obj.asInstanceOf[GetTopOptions]
   }
   
-  extension [Self <: GetTopOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTopOptions] (val x: Self) extends AnyVal {
     
     inline def setTime_range(value: long_term | medium_term | short_term): Self = StObject.set(x, "time_range", value.asInstanceOf[js.Any])
     

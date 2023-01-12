@@ -43,7 +43,8 @@ object ImmutableData {
       __obj.asInstanceOf[CharacterMetadata]
     }
     
-    extension [Self <: CharacterMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CharacterMetadata] (val x: Self) extends AnyVal {
       
       inline def setGetEntity(value: () => String): Self = StObject.set(x, "getEntity", js.Any.fromFunction0(value))
       
@@ -66,7 +67,8 @@ object ImmutableData {
       __obj.asInstanceOf[CharacterMetadataConfig]
     }
     
-    extension [Self <: CharacterMetadataConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CharacterMetadataConfig] (val x: Self) extends AnyVal {
       
       inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
@@ -134,7 +136,8 @@ object ImmutableData {
       __obj.asInstanceOf[ContentBlock]
     }
     
-    extension [Self <: ContentBlock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentBlock] (val x: Self) extends AnyVal {
       
       inline def setFindEntityRanges(
         value: (js.Function1[/* value */ CharacterMetadata, Boolean], js.Function2[/* start */ Double, /* end */ Double, Unit]) => Unit
@@ -226,7 +229,8 @@ object ImmutableData {
       __obj.asInstanceOf[DraftBlockRenderConfig]
     }
     
-    extension [Self <: DraftBlockRenderConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DraftBlockRenderConfig] (val x: Self) extends AnyVal {
       
       inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -364,7 +368,8 @@ object ImmutableData {
       __obj.asInstanceOf[EditorState]
     }
     
-    extension [Self <: EditorState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorState] (val x: Self) extends AnyVal {
       
       inline def setGetAllowUndo(value: () => Boolean): Self = StObject.set(x, "getAllowUndo", js.Any.fromFunction0(value))
       
@@ -469,7 +474,8 @@ object ImmutableData {
       __obj.asInstanceOf[SelectionStateProperties]
     }
     
-    extension [Self <: SelectionStateProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionStateProperties] (val x: Self) extends AnyVal {
       
       inline def setAnchorKey(value: String): Self = StObject.set(x, "anchorKey", value.asInstanceOf[js.Any])
       

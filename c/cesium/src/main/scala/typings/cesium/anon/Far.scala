@@ -25,7 +25,8 @@ object Far {
     __obj.asInstanceOf[Far]
   }
   
-  extension [Self <: Far](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Far] (val x: Self) extends AnyVal {
     
     inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     

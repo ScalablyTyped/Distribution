@@ -15,7 +15,8 @@ object Displayid {
     __obj.asInstanceOf[Displayid]
   }
   
-  extension [Self <: Displayid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Displayid] (val x: Self) extends AnyVal {
     
     inline def setDisplay_id(value: String): Self = StObject.set(x, "display_id", value.asInstanceOf[js.Any])
     

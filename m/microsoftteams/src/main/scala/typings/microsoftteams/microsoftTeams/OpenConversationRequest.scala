@@ -52,7 +52,8 @@ object OpenConversationRequest {
     __obj.asInstanceOf[OpenConversationRequest]
   }
   
-  extension [Self <: OpenConversationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenConversationRequest] (val x: Self) extends AnyVal {
     
     inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     

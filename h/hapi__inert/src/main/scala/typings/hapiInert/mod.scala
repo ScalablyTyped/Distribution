@@ -83,7 +83,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DirectoryHandlerRouteObject]
     }
     
-    extension [Self <: DirectoryHandlerRouteObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectoryHandlerRouteObject] (val x: Self) extends AnyVal {
       
       inline def setDefaultExtension(value: String): Self = StObject.set(x, "defaultExtension", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FileHandlerRouteObject]
     }
     
-    extension [Self <: FileHandlerRouteObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileHandlerRouteObject] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String | RequestHandler[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -165,7 +167,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[OptionalRegistrationOptions]
     }
     
-    extension [Self <: OptionalRegistrationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionalRegistrationOptions] (val x: Self) extends AnyVal {
       
       inline def setEtagsCacheMaxSize(value: Double): Self = StObject.set(x, "etagsCacheMaxSize", value.asInstanceOf[js.Any])
       
@@ -229,7 +232,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ReplyFileHandlerOptions]
     }
     
-    extension [Self <: ReplyFileHandlerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplyFileHandlerOptions] (val x: Self) extends AnyVal {
       
       inline def setConfine(value: Boolean | String): Self = StObject.set(x, "confine", value.asInstanceOf[js.Any])
       
@@ -311,7 +315,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[HandlerDecorations]
       }
       
-      extension [Self <: HandlerDecorations](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HandlerDecorations] (val x: Self) extends AnyVal {
         
         inline def setDirectory(value: DirectoryHandlerRouteObject): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
         

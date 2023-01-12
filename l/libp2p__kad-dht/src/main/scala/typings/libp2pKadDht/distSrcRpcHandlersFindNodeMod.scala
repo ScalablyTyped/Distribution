@@ -41,7 +41,8 @@ object distSrcRpcHandlersFindNodeMod {
       __obj.asInstanceOf[FindNodeHandlerComponents]
     }
     
-    extension [Self <: FindNodeHandlerComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindNodeHandlerComponents] (val x: Self) extends AnyVal {
       
       inline def setAddressManager(value: AddressManager): Self = StObject.set(x, "addressManager", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object distSrcRpcHandlersFindNodeMod {
       __obj.asInstanceOf[FindNodeHandlerInit]
     }
     
-    extension [Self <: FindNodeHandlerInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindNodeHandlerInit] (val x: Self) extends AnyVal {
       
       inline def setLan(value: Boolean): Self = StObject.set(x, "lan", value.asInstanceOf[js.Any])
       

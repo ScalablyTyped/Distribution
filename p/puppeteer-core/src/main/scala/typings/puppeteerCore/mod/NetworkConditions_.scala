@@ -19,7 +19,8 @@ object NetworkConditions_ {
     __obj.asInstanceOf[NetworkConditions_]
   }
   
-  extension [Self <: NetworkConditions_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkConditions_] (val x: Self) extends AnyVal {
     
     inline def setDownload(value: Double): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     

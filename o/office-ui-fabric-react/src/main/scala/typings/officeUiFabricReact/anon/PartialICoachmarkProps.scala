@@ -95,7 +95,8 @@ object PartialICoachmarkProps {
     __obj.asInstanceOf[PartialICoachmarkProps]
   }
   
-  extension [Self <: PartialICoachmarkProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialICoachmarkProps] (val x: Self) extends AnyVal {
     
     inline def setAriaAlertText(value: String): Self = StObject.set(x, "ariaAlertText", value.asInstanceOf[js.Any])
     

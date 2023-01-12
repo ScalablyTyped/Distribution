@@ -29,7 +29,8 @@ object EEK {
     __obj.asInstanceOf[EEK]
   }
   
-  extension [Self <: EEK](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EEK] (val x: Self) extends AnyVal {
     
     inline def setAUD(value: js.Array[String]): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
     

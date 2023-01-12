@@ -70,7 +70,8 @@ object NavigatorYAxisPlotBandsLabelOptions {
     __obj.asInstanceOf[NavigatorYAxisPlotBandsLabelOptions]
   }
   
-  extension [Self <: NavigatorYAxisPlotBandsLabelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorYAxisPlotBandsLabelOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

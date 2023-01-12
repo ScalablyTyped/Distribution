@@ -22,7 +22,8 @@ object RecipientKeyIdentifierJson {
     __obj.asInstanceOf[RecipientKeyIdentifierJson]
   }
   
-  extension [Self <: RecipientKeyIdentifierJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientKeyIdentifierJson] (val x: Self) extends AnyVal {
     
     inline def setDate(value: BaseBlockJson[LocalBaseBlockJson]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

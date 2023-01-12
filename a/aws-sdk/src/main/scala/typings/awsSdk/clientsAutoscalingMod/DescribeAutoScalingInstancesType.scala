@@ -28,7 +28,8 @@ object DescribeAutoScalingInstancesType {
     __obj.asInstanceOf[DescribeAutoScalingInstancesType]
   }
   
-  extension [Self <: DescribeAutoScalingInstancesType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAutoScalingInstancesType] (val x: Self) extends AnyVal {
     
     inline def setInstanceIds(value: InstanceIds): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
     

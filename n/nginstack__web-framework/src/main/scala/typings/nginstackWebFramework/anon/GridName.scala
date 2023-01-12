@@ -19,7 +19,8 @@ object GridName {
     __obj.asInstanceOf[GridName]
   }
   
-  extension [Self <: GridName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridName] (val x: Self) extends AnyVal {
     
     inline def setGridName(value: String): Self = StObject.set(x, "gridName", value.asInstanceOf[js.Any])
     

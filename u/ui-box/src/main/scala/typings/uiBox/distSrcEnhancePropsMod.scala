@@ -32,7 +32,8 @@ object distSrcEnhancePropsMod {
       __obj.asInstanceOf[EnhancePropsResult]
     }
     
-    extension [Self <: EnhancePropsResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnhancePropsResult] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

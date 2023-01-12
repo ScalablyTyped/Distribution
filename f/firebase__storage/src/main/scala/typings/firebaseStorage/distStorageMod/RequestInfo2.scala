@@ -71,7 +71,8 @@ object RequestInfo2 {
     __obj.asInstanceOf[RequestInfo2[I, O]]
   }
   
-  extension [Self <: RequestInfo2[?, ?], I /* <: ConnectionType */, O](x: Self & (RequestInfo2[I, O])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestInfo2[?, ?], I /* <: ConnectionType */, O] (val x: Self & (RequestInfo2[I, O])) extends AnyVal {
     
     inline def setAdditionalRetryCodes(value: js.Array[Double]): Self = StObject.set(x, "additionalRetryCodes", value.asInstanceOf[js.Any])
     

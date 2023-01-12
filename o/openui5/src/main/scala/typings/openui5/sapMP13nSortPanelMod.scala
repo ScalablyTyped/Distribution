@@ -180,7 +180,8 @@ object sapMP13nSortPanelMod {
       __obj.asInstanceOf[SortItem]
     }
     
-    extension [Self <: SortItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortItem] (val x: Self) extends AnyVal {
       
       inline def setDescending(value: Boolean): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
       
@@ -249,7 +250,8 @@ object sapMP13nSortPanelMod {
       __obj.asInstanceOf[SortPanelSettings]
     }
     
-    extension [Self <: SortPanelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortPanelSettings] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String | PropertyBindingInfo): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

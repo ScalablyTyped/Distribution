@@ -44,7 +44,8 @@ object libWidgetMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
         
@@ -141,7 +142,8 @@ object libWidgetMod {
         __obj.asInstanceOf[typings.jupyterlabCsvviewer.libWidgetMod.CSVViewer.IOptions]
       }
       
-      extension [Self <: typings.jupyterlabCsvviewer.libWidgetMod.CSVViewer.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabCsvviewer.libWidgetMod.CSVViewer.IOptions] (val x: Self) extends AnyVal {
         
         inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       }

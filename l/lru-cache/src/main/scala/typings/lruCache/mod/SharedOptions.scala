@@ -75,7 +75,8 @@ object SharedOptions {
     __obj.asInstanceOf[SharedOptions[K, V]]
   }
   
-  extension [Self <: SharedOptions[?, ?], K, V](x: Self & (SharedOptions[K, V])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedOptions[?, ?], K, V] (val x: Self & (SharedOptions[K, V])) extends AnyVal {
     
     inline def setDispose(value: (V, K, /* reason */ DisposeReason) => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction3(value))
     

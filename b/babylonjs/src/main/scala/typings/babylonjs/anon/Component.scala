@@ -20,7 +20,8 @@ object Component {
     __obj.asInstanceOf[Component[T]]
   }
   
-  extension [Self <: Component[?], T /* <: js.Function */](x: Self & Component[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Component[?], T /* <: js.Function */] (val x: Self & Component[T]) extends AnyVal {
     
     inline def setAction(value: T): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

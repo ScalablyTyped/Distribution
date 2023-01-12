@@ -23,7 +23,8 @@ object GetGatewayResponseRequest {
     __obj.asInstanceOf[GetGatewayResponseRequest]
   }
   
-  extension [Self <: GetGatewayResponseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGatewayResponseRequest] (val x: Self) extends AnyVal {
     
     inline def setResponseType(value: GatewayResponseType): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     

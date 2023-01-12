@@ -23,7 +23,8 @@ object ExecutorConfiguration {
     __obj.asInstanceOf[ExecutorConfiguration]
   }
   
-  extension [Self <: ExecutorConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutorConfiguration] (val x: Self) extends AnyVal {
     
     inline def setJobWorkerExecutorConfiguration(value: JobWorkerExecutorConfiguration): Self = StObject.set(x, "jobWorkerExecutorConfiguration", value.asInstanceOf[js.Any])
     

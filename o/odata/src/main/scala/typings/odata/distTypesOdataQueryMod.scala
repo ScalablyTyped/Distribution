@@ -51,7 +51,8 @@ object distTypesOdataQueryMod {
       __obj.asInstanceOf[OdataQuery]
     }
     
-    extension [Self <: OdataQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OdataQuery] (val x: Self) extends AnyVal {
       
       inline def set$compute(value: String): Self = StObject.set(x, "$compute", value.asInstanceOf[js.Any])
       

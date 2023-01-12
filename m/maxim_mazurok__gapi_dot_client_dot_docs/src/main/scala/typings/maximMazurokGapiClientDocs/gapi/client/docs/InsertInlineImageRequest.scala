@@ -36,7 +36,8 @@ object InsertInlineImageRequest {
     __obj.asInstanceOf[InsertInlineImageRequest]
   }
   
-  extension [Self <: InsertInlineImageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertInlineImageRequest] (val x: Self) extends AnyVal {
     
     inline def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object DisplaySingleParams {
     __obj.asInstanceOf[DisplaySingleParams]
   }
   
-  extension [Self <: DisplaySingleParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplaySingleParams] (val x: Self) extends AnyVal {
     
     inline def setAlwaysScroll(value: Boolean): Self = StObject.set(x, "alwaysScroll", value.asInstanceOf[js.Any])
     

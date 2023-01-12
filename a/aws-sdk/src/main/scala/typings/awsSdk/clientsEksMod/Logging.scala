@@ -18,7 +18,8 @@ object Logging {
     __obj.asInstanceOf[Logging]
   }
   
-  extension [Self <: Logging](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Logging] (val x: Self) extends AnyVal {
     
     inline def setClusterLogging(value: LogSetups): Self = StObject.set(x, "clusterLogging", value.asInstanceOf[js.Any])
     

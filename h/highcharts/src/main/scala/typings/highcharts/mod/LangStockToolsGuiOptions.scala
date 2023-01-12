@@ -123,7 +123,8 @@ object LangStockToolsGuiOptions {
     __obj.asInstanceOf[LangStockToolsGuiOptions]
   }
   
-  extension [Self <: LangStockToolsGuiOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LangStockToolsGuiOptions] (val x: Self) extends AnyVal {
     
     inline def setAdvanced(value: String): Self = StObject.set(x, "advanced", value.asInstanceOf[js.Any])
     

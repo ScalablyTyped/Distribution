@@ -18,7 +18,8 @@ object Accountid {
     __obj.asInstanceOf[Accountid]
   }
   
-  extension [Self <: Accountid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Accountid] (val x: Self) extends AnyVal {
     
     inline def setAccount_id(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['account-id'] */ js.Any

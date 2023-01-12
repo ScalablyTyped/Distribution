@@ -69,7 +69,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[PageScrollStateChangedEvent]
     }
     
-    extension [Self <: PageScrollStateChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageScrollStateChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setPageScrollState(value: PageScrollState): Self = StObject.set(x, "pageScrollState", value.asInstanceOf[js.Any])
     }
@@ -92,7 +93,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[PagerViewOnPageScrollEventData]
     }
     
-    extension [Self <: PagerViewOnPageScrollEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PagerViewOnPageScrollEventData] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -113,7 +115,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[PagerViewOnPageSelectedEventData]
     }
     
-    extension [Self <: PagerViewOnPageSelectedEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PagerViewOnPageSelectedEventData] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
@@ -242,7 +245,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[PagerViewProps]
     }
     
-    extension [Self <: PagerViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PagerViewProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

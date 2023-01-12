@@ -82,7 +82,8 @@ object libEsmPuppeteerCommonNetworkManagerMod {
       __obj.asInstanceOf[Credentials]
     }
     
-    extension [Self <: Credentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object libEsmPuppeteerCommonNetworkManagerMod {
       __obj.asInstanceOf[FrameManager]
     }
     
-    extension [Self <: FrameManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrameManager] (val x: Self) extends AnyVal {
       
       inline def setFrame(value: String => Frame | Null): Self = StObject.set(x, "frame", js.Any.fromFunction1(value))
     }
@@ -120,7 +122,8 @@ object libEsmPuppeteerCommonNetworkManagerMod {
       __obj.asInstanceOf[InternalNetworkConditions]
     }
     
-    extension [Self <: InternalNetworkConditions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalNetworkConditions] (val x: Self) extends AnyVal {
       
       inline def setOffline(value: Boolean): Self = StObject.set(x, "offline", value.asInstanceOf[js.Any])
     }
@@ -141,7 +144,8 @@ object libEsmPuppeteerCommonNetworkManagerMod {
       __obj.asInstanceOf[NetworkConditions]
     }
     
-    extension [Self <: NetworkConditions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkConditions] (val x: Self) extends AnyVal {
       
       inline def setDownload(value: Double): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       

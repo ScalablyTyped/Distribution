@@ -23,7 +23,8 @@ object TouchBarConstructorOptions {
     __obj.asInstanceOf[TouchBarConstructorOptions]
   }
   
-  extension [Self <: TouchBarConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchBarConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setEscapeItem(
       value: TouchBarButton | TouchBarColorPicker | TouchBarGroup | TouchBarLabel | TouchBarPopover | TouchBarScrubber | TouchBarSegmentedControl | TouchBarSlider | TouchBarSpacer

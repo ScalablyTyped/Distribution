@@ -23,7 +23,8 @@ object DefaultMessage {
     __obj.asInstanceOf[DefaultMessage]
   }
   
-  extension [Self <: DefaultMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultMessage] (val x: Self) extends AnyVal {
     
     inline def setBody(value: string): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     

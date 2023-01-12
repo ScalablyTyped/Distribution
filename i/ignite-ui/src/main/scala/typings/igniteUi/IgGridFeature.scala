@@ -24,7 +24,8 @@ object IgGridFeature {
     __obj.asInstanceOf[IgGridFeature]
   }
   
-  extension [Self <: IgGridFeature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridFeature] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

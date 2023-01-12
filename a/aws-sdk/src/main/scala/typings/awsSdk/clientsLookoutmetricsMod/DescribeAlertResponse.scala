@@ -18,7 +18,8 @@ object DescribeAlertResponse {
     __obj.asInstanceOf[DescribeAlertResponse]
   }
   
-  extension [Self <: DescribeAlertResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAlertResponse] (val x: Self) extends AnyVal {
     
     inline def setAlert(value: Alert): Self = StObject.set(x, "Alert", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object HAdjustmentFactor {
     __obj.asInstanceOf[HAdjustmentFactor]
   }
   
-  extension [Self <: HAdjustmentFactor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HAdjustmentFactor] (val x: Self) extends AnyVal {
     
     inline def setHAdjustmentFactor(value: Double): Self = StObject.set(x, "hAdjustmentFactor", value.asInstanceOf[js.Any])
     

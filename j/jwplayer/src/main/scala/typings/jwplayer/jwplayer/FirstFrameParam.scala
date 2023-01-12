@@ -19,7 +19,8 @@ object FirstFrameParam {
     __obj.asInstanceOf[FirstFrameParam]
   }
   
-  extension [Self <: FirstFrameParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirstFrameParam] (val x: Self) extends AnyVal {
     
     inline def setLoadTime(value: Double): Self = StObject.set(x, "loadTime", value.asInstanceOf[js.Any])
     

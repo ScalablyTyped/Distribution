@@ -304,7 +304,8 @@ object esmDropdownListMod extends Shortcut {
       __obj.asInstanceOf[DropdownProps[TDataItem]]
     }
     
-    extension [Self <: DropdownProps[?], TDataItem](x: Self & DropdownProps[TDataItem]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownProps[?], TDataItem] (val x: Self & DropdownProps[TDataItem]) extends AnyVal {
       
       inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object PluginCache {
     __obj.asInstanceOf[PluginCache]
   }
   
-  extension [Self <: PluginCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginCache] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: String => Boolean): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     

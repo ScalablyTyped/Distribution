@@ -28,7 +28,8 @@ object EnableMetricsCollectionQuery {
     __obj.asInstanceOf[EnableMetricsCollectionQuery]
   }
   
-  extension [Self <: EnableMetricsCollectionQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableMetricsCollectionQuery] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     

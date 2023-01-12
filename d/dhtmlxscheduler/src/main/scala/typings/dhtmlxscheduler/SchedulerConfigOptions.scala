@@ -656,7 +656,8 @@ object SchedulerConfigOptions {
     __obj.asInstanceOf[SchedulerConfigOptions]
   }
   
-  extension [Self <: SchedulerConfigOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerConfigOptions] (val x: Self) extends AnyVal {
     
     inline def setActive_link_view(value: String): Self = StObject.set(x, "active_link_view", value.asInstanceOf[js.Any])
     

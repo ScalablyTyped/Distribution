@@ -15,7 +15,8 @@ object IThemes {
     __obj.asInstanceOf[IThemes]
   }
   
-  extension [Self <: IThemes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IThemes] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: ITheme): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
   }

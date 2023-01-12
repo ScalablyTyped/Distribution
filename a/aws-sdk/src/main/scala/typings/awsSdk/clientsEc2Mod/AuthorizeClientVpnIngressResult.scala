@@ -18,7 +18,8 @@ object AuthorizeClientVpnIngressResult {
     __obj.asInstanceOf[AuthorizeClientVpnIngressResult]
   }
   
-  extension [Self <: AuthorizeClientVpnIngressResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizeClientVpnIngressResult] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: ClientVpnAuthorizationRuleStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

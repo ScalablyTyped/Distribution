@@ -54,7 +54,8 @@ object libS3PresignedPostMod {
         __obj.asInstanceOf[Fields]
       }
       
-      extension [Self <: Fields](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
         
         inline def setPolicy(value: String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
         
@@ -95,7 +96,8 @@ object libS3PresignedPostMod {
         __obj.asInstanceOf[Params]
       }
       
-      extension [Self <: Params](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
         
         inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
         

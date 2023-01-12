@@ -63,7 +63,8 @@ object UpdateStageRequest {
     __obj.asInstanceOf[UpdateStageRequest]
   }
   
-  extension [Self <: UpdateStageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateStageRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessLogSettings(value: AccessLogSettings): Self = StObject.set(x, "AccessLogSettings", value.asInstanceOf[js.Any])
     

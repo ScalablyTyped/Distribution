@@ -18,7 +18,8 @@ object ReturnTypeTakeCoverageDeltaResponse {
     __obj.asInstanceOf[ReturnTypeTakeCoverageDeltaResponse]
   }
   
-  extension [Self <: ReturnTypeTakeCoverageDeltaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeTakeCoverageDeltaResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[Any]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

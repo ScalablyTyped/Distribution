@@ -35,7 +35,8 @@ object typesStartingPositionMod {
       __obj.asInstanceOf[StartingPosition]
     }
     
-    extension [Self <: StartingPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartingPosition] (val x: Self) extends AnyVal {
       
       inline def setSequenceNumber(value: String): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object typesStartingPositionMod {
       __obj.asInstanceOf[UnmarshalledStartingPosition]
     }
     
-    extension [Self <: UnmarshalledStartingPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledStartingPosition] (val x: Self) extends AnyVal {
       
       inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
       

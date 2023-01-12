@@ -24,7 +24,8 @@ object GamepadSystemSceneComponent {
     __obj.asInstanceOf[GamepadSystemSceneComponent]
   }
   
-  extension [Self <: GamepadSystemSceneComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GamepadSystemSceneComponent] (val x: Self) extends AnyVal {
     
     inline def set_beforeCameraUpdate(value: Any): Self = StObject.set(x, "_beforeCameraUpdate", value.asInstanceOf[js.Any])
   }

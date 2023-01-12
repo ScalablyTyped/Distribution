@@ -17,7 +17,8 @@ object RollupDeleteJobResponse {
     __obj.asInstanceOf[RollupDeleteJobResponse]
   }
   
-  extension [Self <: RollupDeleteJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollupDeleteJobResponse] (val x: Self) extends AnyVal {
     
     inline def setAcknowledged(value: Boolean): Self = StObject.set(x, "acknowledged", value.asInstanceOf[js.Any])
     

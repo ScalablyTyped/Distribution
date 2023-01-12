@@ -20,7 +20,8 @@ object pastefromword {
       __obj.asInstanceOf[lists]
     }
     
-    extension [Self <: lists](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: lists] (val x: Self) extends AnyVal {
       
       inline def setNumbering(value: numbering): Self = StObject.set(x, "numbering", value.asInstanceOf[js.Any])
     }
@@ -38,7 +39,8 @@ object pastefromword {
         __obj.asInstanceOf[numbering]
       }
       
-      extension [Self <: numbering](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: numbering] (val x: Self) extends AnyVal {
         
         inline def setGetStyle(value: String => String): Self = StObject.set(x, "getStyle", js.Any.fromFunction1(value))
         

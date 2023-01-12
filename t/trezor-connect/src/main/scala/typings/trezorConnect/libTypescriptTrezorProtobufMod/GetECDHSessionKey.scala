@@ -19,7 +19,8 @@ object GetECDHSessionKey {
     __obj.asInstanceOf[GetECDHSessionKey]
   }
   
-  extension [Self <: GetECDHSessionKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetECDHSessionKey] (val x: Self) extends AnyVal {
     
     inline def setEcdsa_curve_name(value: String): Self = StObject.set(x, "ecdsa_curve_name", value.asInstanceOf[js.Any])
     

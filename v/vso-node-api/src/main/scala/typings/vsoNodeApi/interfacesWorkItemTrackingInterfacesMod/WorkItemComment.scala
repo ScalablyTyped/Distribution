@@ -30,7 +30,8 @@ object WorkItemComment {
     __obj.asInstanceOf[WorkItemComment]
   }
   
-  extension [Self <: WorkItemComment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemComment] (val x: Self) extends AnyVal {
     
     inline def setRevisedBy(value: IdentityReference): Self = StObject.set(x, "revisedBy", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object CustomPluginSummary {
     __obj.asInstanceOf[CustomPluginSummary]
   }
   
-  extension [Self <: CustomPluginSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomPluginSummary] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     

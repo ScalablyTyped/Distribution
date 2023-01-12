@@ -33,7 +33,8 @@ object proxy {
       __obj.asInstanceOf[ErrorDetails]
     }
     
-    extension [Self <: ErrorDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorDetails] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object proxy {
       __obj.asInstanceOf[PacScript]
     }
     
-    extension [Self <: PacScript](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PacScript] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object proxy {
       __obj.asInstanceOf[ProxyConfig]
     }
     
-    extension [Self <: ProxyConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxyConfig] (val x: Self) extends AnyVal {
       
       inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -144,7 +147,8 @@ object proxy {
       __obj.asInstanceOf[ProxyRules]
     }
     
-    extension [Self <: ProxyRules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxyRules] (val x: Self) extends AnyVal {
       
       inline def setBypassList(value: js.Array[String]): Self = StObject.set(x, "bypassList", value.asInstanceOf[js.Any])
       
@@ -192,7 +196,8 @@ object proxy {
       __obj.asInstanceOf[ProxyServer]
     }
     
-    extension [Self <: ProxyServer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxyServer] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

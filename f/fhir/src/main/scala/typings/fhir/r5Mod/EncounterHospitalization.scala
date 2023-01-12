@@ -60,7 +60,8 @@ object EncounterHospitalization {
     __obj.asInstanceOf[EncounterHospitalization]
   }
   
-  extension [Self <: EncounterHospitalization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncounterHospitalization] (val x: Self) extends AnyVal {
     
     inline def setAdmitSource(value: CodeableConcept): Self = StObject.set(x, "admitSource", value.asInstanceOf[js.Any])
     

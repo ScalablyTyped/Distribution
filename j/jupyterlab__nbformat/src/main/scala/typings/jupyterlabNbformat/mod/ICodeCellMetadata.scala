@@ -41,7 +41,8 @@ object ICodeCellMetadata {
     __obj.asInstanceOf[ICodeCellMetadata]
   }
   
-  extension [Self <: ICodeCellMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICodeCellMetadata] (val x: Self) extends AnyVal {
     
     inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object AnalyzeParams {
     __obj.asInstanceOf[AnalyzeParams]
   }
   
-  extension [Self <: AnalyzeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyzeParams] (val x: Self) extends AnyVal {
     
     inline def setClean(value: Boolean): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
     

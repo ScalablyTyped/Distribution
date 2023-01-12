@@ -31,7 +31,8 @@ object BrandDanger {
     __obj.asInstanceOf[BrandDanger]
   }
   
-  extension [Self <: BrandDanger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrandDanger] (val x: Self) extends AnyVal {
     
     inline def setBrand(value: PaintToken[BaseToken]): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     

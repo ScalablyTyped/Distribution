@@ -26,7 +26,8 @@ object Interactions {
     __obj.asInstanceOf[Interactions]
   }
   
-  extension [Self <: Interactions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Interactions] (val x: Self) extends AnyVal {
     
     inline def setExcluded_permissions(value: js.Array[String]): Self = StObject.set(x, "excluded_permissions", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object IRevealOptions {
     __obj.asInstanceOf[IRevealOptions]
   }
   
-  extension [Self <: IRevealOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRevealOptions] (val x: Self) extends AnyVal {
     
     inline def setAdditionalOverlayClasses(value: String): Self = StObject.set(x, "additionalOverlayClasses", value.asInstanceOf[js.Any])
     

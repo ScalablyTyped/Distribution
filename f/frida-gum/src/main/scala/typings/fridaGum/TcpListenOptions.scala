@@ -33,7 +33,8 @@ object TcpListenOptions {
     __obj.asInstanceOf[TcpListenOptions]
   }
   
-  extension [Self <: TcpListenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TcpListenOptions] (val x: Self) extends AnyVal {
     
     inline def setFamily(value: ipv4 | ipv6): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     

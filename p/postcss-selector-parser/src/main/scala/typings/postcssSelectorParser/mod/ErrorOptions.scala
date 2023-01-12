@@ -20,7 +20,8 @@ object ErrorOptions {
     __obj.asInstanceOf[ErrorOptions]
   }
   
-  extension [Self <: ErrorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorOptions] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

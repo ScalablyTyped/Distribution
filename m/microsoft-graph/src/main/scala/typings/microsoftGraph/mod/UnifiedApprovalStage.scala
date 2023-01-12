@@ -34,7 +34,8 @@ object UnifiedApprovalStage {
     __obj.asInstanceOf[UnifiedApprovalStage]
   }
   
-  extension [Self <: UnifiedApprovalStage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnifiedApprovalStage] (val x: Self) extends AnyVal {
     
     inline def setApprovalStageTimeOutInDays(value: NullableOption[Double]): Self = StObject.set(x, "approvalStageTimeOutInDays", value.asInstanceOf[js.Any])
     

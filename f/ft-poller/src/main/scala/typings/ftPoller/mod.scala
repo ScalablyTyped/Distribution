@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[Config[PollerData, ExternalData]]
     }
     
-    extension [Self <: Config[?, ?], PollerData, ExternalData](x: Self & (Config[PollerData, ExternalData])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config[?, ?], PollerData, ExternalData] (val x: Self & (Config[PollerData, ExternalData])) extends AnyVal {
       
       inline def setAutostart(value: Boolean): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
       

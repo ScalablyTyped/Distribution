@@ -15,7 +15,8 @@ object CloseSource {
     __obj.asInstanceOf[CloseSource]
   }
   
-  extension [Self <: CloseSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseSource] (val x: Self) extends AnyVal {
     
     inline def setCloseSource(value: typings.baseui.drawerTypesMod.CloseSource): Self = StObject.set(x, "closeSource", value.asInstanceOf[js.Any])
     

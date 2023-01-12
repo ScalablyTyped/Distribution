@@ -89,7 +89,8 @@ object toolbarConfig {
     __obj.asInstanceOf[toolbarConfig]
   }
   
-  extension [Self <: toolbarConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: toolbarConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

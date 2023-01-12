@@ -191,7 +191,8 @@ object LayoutAxis {
     __obj.asInstanceOf[LayoutAxis]
   }
   
-  extension [Self <: LayoutAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutAxis] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: free | AxisName): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

@@ -151,7 +151,8 @@ object classesCconfirmationMod {
       __obj.asInstanceOf[CConfirmation]
     }
     
-    extension [Self <: CConfirmation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CConfirmation] (val x: Self) extends AnyVal {
       
       inline def setCreator(value: String): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
       

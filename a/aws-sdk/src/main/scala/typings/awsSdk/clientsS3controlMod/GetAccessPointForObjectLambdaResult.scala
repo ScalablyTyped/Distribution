@@ -28,7 +28,8 @@ object GetAccessPointForObjectLambdaResult {
     __obj.asInstanceOf[GetAccessPointForObjectLambdaResult]
   }
   
-  extension [Self <: GetAccessPointForObjectLambdaResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAccessPointForObjectLambdaResult] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     

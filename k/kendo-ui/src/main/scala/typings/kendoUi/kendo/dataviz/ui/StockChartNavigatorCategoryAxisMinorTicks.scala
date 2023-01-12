@@ -25,7 +25,8 @@ object StockChartNavigatorCategoryAxisMinorTicks {
     __obj.asInstanceOf[StockChartNavigatorCategoryAxisMinorTicks]
   }
   
-  extension [Self <: StockChartNavigatorCategoryAxisMinorTicks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockChartNavigatorCategoryAxisMinorTicks] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

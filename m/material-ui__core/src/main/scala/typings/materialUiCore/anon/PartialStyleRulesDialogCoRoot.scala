@@ -21,7 +21,8 @@ object PartialStyleRulesDialogCoRoot {
     __obj.asInstanceOf[PartialStyleRulesDialogCoRoot]
   }
   
-  extension [Self <: PartialStyleRulesDialogCoRoot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesDialogCoRoot] (val x: Self) extends AnyVal {
     
     inline def setRoot(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

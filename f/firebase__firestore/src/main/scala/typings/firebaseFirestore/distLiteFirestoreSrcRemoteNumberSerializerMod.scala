@@ -28,7 +28,8 @@ object distLiteFirestoreSrcRemoteNumberSerializerMod {
       __obj.asInstanceOf[Serializer]
     }
     
-    extension [Self <: Serializer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Serializer] (val x: Self) extends AnyVal {
       
       inline def setUseProto3Json(value: Boolean): Self = StObject.set(x, "useProto3Json", value.asInstanceOf[js.Any])
     }

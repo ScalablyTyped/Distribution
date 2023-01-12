@@ -18,7 +18,8 @@ object ChannelStatistics {
     __obj.asInstanceOf[ChannelStatistics]
   }
   
-  extension [Self <: ChannelStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelStatistics] (val x: Self) extends AnyVal {
     
     inline def setSize(value: EstimatedResourceSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

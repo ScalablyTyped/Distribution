@@ -57,7 +57,8 @@ object DrawOptions {
     __obj.asInstanceOf[DrawOptions]
   }
   
-  extension [Self <: DrawOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawOptions] (val x: Self) extends AnyVal {
     
     inline def setClickTolerance(value: Double): Self = StObject.set(x, "clickTolerance", value.asInstanceOf[js.Any])
     

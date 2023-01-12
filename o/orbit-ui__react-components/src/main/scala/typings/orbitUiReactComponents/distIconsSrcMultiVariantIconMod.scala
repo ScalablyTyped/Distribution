@@ -66,7 +66,8 @@ object distIconsSrcMultiVariantIconMod {
       __obj.asInstanceOf[InnerMultiVariantIconProps]
     }
     
-    extension [Self <: InnerMultiVariantIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerMultiVariantIconProps] (val x: Self) extends AnyVal {
       
       inline def setForwardedRef(value: ForwardedRef[Any]): Self = StObject.set(x, "forwardedRef", value.asInstanceOf[js.Any])
       

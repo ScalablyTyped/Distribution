@@ -21,7 +21,8 @@ object Cinema {
     __obj.asInstanceOf[Cinema]
   }
   
-  extension [Self <: Cinema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cinema] (val x: Self) extends AnyVal {
     
     inline def setCinema(value: typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Cinema): Self = StObject.set(x, "cinema", value.asInstanceOf[js.Any])
     

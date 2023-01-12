@@ -30,7 +30,8 @@ object NumberType {
     __obj.asInstanceOf[NumberType]
   }
   
-  extension [Self <: NumberType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberType] (val x: Self) extends AnyVal {
     
     inline def setMaximim(value: Double): Self = StObject.set(x, "maximim", value.asInstanceOf[js.Any])
     

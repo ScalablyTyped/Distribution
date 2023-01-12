@@ -18,7 +18,8 @@ object BrowserSpecificSettings {
     __obj.asInstanceOf[BrowserSpecificSettings]
   }
   
-  extension [Self <: BrowserSpecificSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserSpecificSettings] (val x: Self) extends AnyVal {
     
     inline def setGecko(value: FirefoxSpecificProperties): Self = StObject.set(x, "gecko", value.asInstanceOf[js.Any])
     

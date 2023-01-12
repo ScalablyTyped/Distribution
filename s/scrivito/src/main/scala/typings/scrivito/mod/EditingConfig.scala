@@ -40,7 +40,8 @@ object EditingConfig {
     __obj.asInstanceOf[EditingConfig]
   }
   
-  extension [Self <: EditingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditingConfig] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: EditingConfigAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object GapsComponent {
     __obj.asInstanceOf[GapsComponent]
   }
   
-  extension [Self <: GapsComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GapsComponent] (val x: Self) extends AnyVal {
     
     inline def setApply(value: HTMLCollection => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     

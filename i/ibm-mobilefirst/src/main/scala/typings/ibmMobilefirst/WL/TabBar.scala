@@ -22,7 +22,8 @@ object TabBar {
       __obj.asInstanceOf[ItemOptions]
     }
     
-    extension [Self <: ItemOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemOptions] (val x: Self) extends AnyVal {
       
       inline def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       

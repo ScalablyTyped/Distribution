@@ -18,7 +18,8 @@ object SectionListRenderItemInfo {
     __obj.asInstanceOf[SectionListRenderItemInfo[ItemT, SectionT]]
   }
   
-  extension [Self <: SectionListRenderItemInfo[?, ?], ItemT, SectionT](x: Self & (SectionListRenderItemInfo[ItemT, SectionT])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SectionListRenderItemInfo[?, ?], ItemT, SectionT] (val x: Self & (SectionListRenderItemInfo[ItemT, SectionT])) extends AnyVal {
     
     inline def setSection(value: SectionListData[ItemT, SectionT]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
   }

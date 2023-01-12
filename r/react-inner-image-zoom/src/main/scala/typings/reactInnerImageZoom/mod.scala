@@ -84,7 +84,8 @@ object mod {
       __obj.asInstanceOf[InnerImageZoomProps]
     }
     
-    extension [Self <: InnerImageZoomProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerImageZoomProps] (val x: Self) extends AnyVal {
       
       inline def setAfterZoomIn(value: () => Unit): Self = StObject.set(x, "afterZoomIn", js.Any.fromFunction0(value))
       

@@ -23,7 +23,8 @@ object BatchDeleteClusterSnapshotsResult {
     __obj.asInstanceOf[BatchDeleteClusterSnapshotsResult]
   }
   
-  extension [Self <: BatchDeleteClusterSnapshotsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteClusterSnapshotsResult] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: BatchSnapshotOperationErrorList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     

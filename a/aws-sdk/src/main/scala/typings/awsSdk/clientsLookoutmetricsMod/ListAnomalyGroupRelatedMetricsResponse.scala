@@ -23,7 +23,8 @@ object ListAnomalyGroupRelatedMetricsResponse {
     __obj.asInstanceOf[ListAnomalyGroupRelatedMetricsResponse]
   }
   
-  extension [Self <: ListAnomalyGroupRelatedMetricsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAnomalyGroupRelatedMetricsResponse] (val x: Self) extends AnyVal {
     
     inline def setInterMetricImpactList(value: InterMetricImpactList): Self = StObject.set(x, "InterMetricImpactList", value.asInstanceOf[js.Any])
     

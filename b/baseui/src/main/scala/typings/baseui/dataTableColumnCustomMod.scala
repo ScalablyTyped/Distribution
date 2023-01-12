@@ -37,7 +37,8 @@ object dataTableColumnCustomMod {
       __obj.asInstanceOf[Options[Value, FilterParams]]
     }
     
-    extension [Self <: Options[?, ?], Value, FilterParams](x: Self & (Options[Value, FilterParams])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?, ?], Value, FilterParams] (val x: Self & (Options[Value, FilterParams])) extends AnyVal {
       
       inline def setBuildFilter(value: /* a */ FilterParams => js.Function1[/* a */ Value, Boolean]): Self = StObject.set(x, "buildFilter", js.Any.fromFunction1(value))
       

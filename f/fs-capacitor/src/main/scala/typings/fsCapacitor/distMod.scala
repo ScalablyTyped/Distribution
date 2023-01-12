@@ -170,7 +170,8 @@ object distMod {
       __obj.asInstanceOf[ReadStreamOptions]
     }
     
-    extension [Self <: ReadStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -197,7 +198,8 @@ object distMod {
       __obj.asInstanceOf[WriteStreamOptions]
     }
     
-    extension [Self <: WriteStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultEncoding(value: BufferEncoding): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object Election {
     __obj.asInstanceOf[Election]
   }
   
-  extension [Self <: Election](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Election] (val x: Self) extends AnyVal {
     
     inline def setElectionDay(value: String): Self = StObject.set(x, "electionDay", value.asInstanceOf[js.Any])
     

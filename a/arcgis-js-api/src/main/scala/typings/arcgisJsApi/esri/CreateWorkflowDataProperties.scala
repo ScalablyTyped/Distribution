@@ -36,7 +36,8 @@ object CreateWorkflowDataProperties {
     __obj.asInstanceOf[CreateWorkflowDataProperties]
   }
   
-  extension [Self <: CreateWorkflowDataProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWorkflowDataProperties] (val x: Self) extends AnyVal {
     
     inline def setCreationInfo(value: CreationInfo): Self = StObject.set(x, "creationInfo", value.asInstanceOf[js.Any])
     

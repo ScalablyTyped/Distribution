@@ -53,7 +53,8 @@ object StartSpeakerEnrollmentJobRequest {
     __obj.asInstanceOf[StartSpeakerEnrollmentJobRequest]
   }
   
-  extension [Self <: StartSpeakerEnrollmentJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartSpeakerEnrollmentJobRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientTokenString): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

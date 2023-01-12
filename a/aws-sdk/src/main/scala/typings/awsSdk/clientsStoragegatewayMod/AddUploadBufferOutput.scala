@@ -15,7 +15,8 @@ object AddUploadBufferOutput {
     __obj.asInstanceOf[AddUploadBufferOutput]
   }
   
-  extension [Self <: AddUploadBufferOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddUploadBufferOutput] (val x: Self) extends AnyVal {
     
     inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     

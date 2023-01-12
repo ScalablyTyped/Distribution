@@ -16,7 +16,8 @@ object IdentityInputs {
     __obj.asInstanceOf[IdentityInputs]
   }
   
-  extension [Self <: IdentityInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityInputs] (val x: Self) extends AnyVal {
     
     inline def setX(value: scala.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

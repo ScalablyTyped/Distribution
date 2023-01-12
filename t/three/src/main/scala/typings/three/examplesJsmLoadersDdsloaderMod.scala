@@ -46,7 +46,8 @@ object examplesJsmLoadersDdsloaderMod {
       __obj.asInstanceOf[DDS]
     }
     
-    extension [Self <: DDS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DDS] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: PixelFormat | CompressedPixelFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

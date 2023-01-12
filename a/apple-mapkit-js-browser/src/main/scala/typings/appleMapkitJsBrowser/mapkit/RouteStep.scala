@@ -37,7 +37,8 @@ object RouteStep {
     __obj.asInstanceOf[RouteStep]
   }
   
-  extension [Self <: RouteStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteStep] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

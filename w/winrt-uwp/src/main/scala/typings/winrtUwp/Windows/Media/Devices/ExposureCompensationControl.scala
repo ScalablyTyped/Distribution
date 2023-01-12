@@ -44,7 +44,8 @@ object ExposureCompensationControl {
     __obj.asInstanceOf[ExposureCompensationControl]
   }
   
-  extension [Self <: ExposureCompensationControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExposureCompensationControl] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

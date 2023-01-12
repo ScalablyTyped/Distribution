@@ -24,7 +24,8 @@ object mod {
       __obj.asInstanceOf[LevenshteinOptions]
     }
     
-    extension [Self <: LevenshteinOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LevenshteinOptions] (val x: Self) extends AnyVal {
       
       inline def setUseCollator(value: Boolean): Self = StObject.set(x, "useCollator", value.asInstanceOf[js.Any])
       

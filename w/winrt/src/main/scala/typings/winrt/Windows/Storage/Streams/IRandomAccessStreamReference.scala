@@ -16,7 +16,8 @@ object IRandomAccessStreamReference {
     __obj.asInstanceOf[IRandomAccessStreamReference]
   }
   
-  extension [Self <: IRandomAccessStreamReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRandomAccessStreamReference] (val x: Self) extends AnyVal {
     
     inline def setOpenReadAsync(value: () => IAsyncOperation[IRandomAccessStreamWithContentType]): Self = StObject.set(x, "openReadAsync", js.Any.fromFunction0(value))
   }

@@ -68,7 +68,8 @@ object typesSizingUseAppSizeMediaMod {
       __obj.asInstanceOf[AppSize]
     }
     
-    extension [Self <: AppSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppSize] (val x: Self) extends AnyVal {
       
       inline def setIsDesktop(value: Boolean): Self = StObject.set(x, "isDesktop", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object typesSizingUseAppSizeMediaMod {
       __obj.asInstanceOf[AppSizeOptions]
     }
     
-    extension [Self <: AppSizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppSizeOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultSize(value: AppSize): Self = StObject.set(x, "defaultSize", value.asInstanceOf[js.Any])
       

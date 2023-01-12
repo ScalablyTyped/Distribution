@@ -34,7 +34,8 @@ object ContaineranalysisGoogleDevtoolsCloudbuildV1Results {
     __obj.asInstanceOf[ContaineranalysisGoogleDevtoolsCloudbuildV1Results]
   }
   
-  extension [Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1Results](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1Results] (val x: Self) extends AnyVal {
     
     inline def setArtifactManifest(value: String): Self = StObject.set(x, "artifactManifest", value.asInstanceOf[js.Any])
     

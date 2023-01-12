@@ -99,7 +99,8 @@ object distTypesInterfaceMod {
       __obj.asInstanceOf[InternalRuleItem]
     }
     
-    extension [Self <: InternalRuleItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalRuleItem] (val x: Self) extends AnyVal {
       
       inline def setAsyncValidator(
         value: (InternalRuleItem, /* value */ Value, /* callback */ js.Function1[/* error */ js.UndefOr[String | js.Error], Unit], /* source */ Values, /* options */ ValidateOption) => Unit | js.Promise[Unit]
@@ -261,7 +262,8 @@ object distTypesInterfaceMod {
       __obj.asInstanceOf[RuleItem]
     }
     
-    extension [Self <: RuleItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuleItem] (val x: Self) extends AnyVal {
       
       inline def setAsyncValidator(
         value: (/* rule */ InternalRuleItem, /* value */ Value, /* callback */ js.Function1[/* error */ js.UndefOr[String | js.Error], Unit], /* source */ Values, /* options */ ValidateOption) => Unit | js.Promise[Unit]
@@ -406,7 +408,8 @@ object distTypesInterfaceMod {
       __obj.asInstanceOf[RuleValuePackage]
     }
     
-    extension [Self <: RuleValuePackage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuleValuePackage] (val x: Self) extends AnyVal {
       
       inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -447,7 +450,8 @@ object distTypesInterfaceMod {
       __obj.asInstanceOf[ValidateError]
     }
     
-    extension [Self <: ValidateError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidateError] (val x: Self) extends AnyVal {
       
       inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -496,7 +500,8 @@ object distTypesInterfaceMod {
       __obj.asInstanceOf[ValidateMessages]
     }
     
-    extension [Self <: ValidateMessages](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidateMessages] (val x: Self) extends AnyVal {
       
       inline def setArray(value: Len): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
@@ -572,7 +577,8 @@ object distTypesInterfaceMod {
       __obj.asInstanceOf[ValidateOption]
     }
     
-    extension [Self <: ValidateOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidateOption] (val x: Self) extends AnyVal {
       
       inline def setError(value: (/* rule */ InternalRuleItem, /* message */ String) => ValidateError): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
       

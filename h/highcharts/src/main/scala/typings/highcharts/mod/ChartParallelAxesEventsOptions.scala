@@ -61,7 +61,8 @@ object ChartParallelAxesEventsOptions {
     __obj.asInstanceOf[ChartParallelAxesEventsOptions]
   }
   
-  extension [Self <: ChartParallelAxesEventsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartParallelAxesEventsOptions] (val x: Self) extends AnyVal {
     
     inline def setAfterBreaks(value: AxisEventCallbackFunction): Self = StObject.set(x, "afterBreaks", value.asInstanceOf[js.Any])
     

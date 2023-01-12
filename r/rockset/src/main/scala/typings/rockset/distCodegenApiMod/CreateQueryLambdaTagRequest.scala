@@ -27,7 +27,8 @@ object CreateQueryLambdaTagRequest {
     __obj.asInstanceOf[CreateQueryLambdaTagRequest]
   }
   
-  extension [Self <: CreateQueryLambdaTagRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateQueryLambdaTagRequest] (val x: Self) extends AnyVal {
     
     inline def setTag_name(value: String): Self = StObject.set(x, "tag_name", value.asInstanceOf[js.Any])
     

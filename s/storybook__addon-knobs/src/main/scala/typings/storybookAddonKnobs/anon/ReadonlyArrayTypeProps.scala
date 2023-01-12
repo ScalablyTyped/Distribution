@@ -20,7 +20,8 @@ object ReadonlyArrayTypeProps {
     __obj.asInstanceOf[ReadonlyArrayTypeProps]
   }
   
-  extension [Self <: ReadonlyArrayTypeProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyArrayTypeProps] (val x: Self) extends AnyVal {
     
     inline def setKnob(value: ArrayTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     

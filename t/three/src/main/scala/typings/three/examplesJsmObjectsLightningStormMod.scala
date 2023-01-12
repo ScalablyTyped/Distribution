@@ -57,7 +57,8 @@ object examplesJsmObjectsLightningStormMod {
       __obj.asInstanceOf[StormParams]
     }
     
-    extension [Self <: StormParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StormParams] (val x: Self) extends AnyVal {
       
       inline def setIsEternal(value: Boolean): Self = StObject.set(x, "isEternal", value.asInstanceOf[js.Any])
       

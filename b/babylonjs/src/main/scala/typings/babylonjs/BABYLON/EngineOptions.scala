@@ -102,7 +102,8 @@ object EngineOptions {
     __obj.asInstanceOf[EngineOptions]
   }
   
-  extension [Self <: EngineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EngineOptions] (val x: Self) extends AnyVal {
     
     inline def setAdaptToDeviceRatio(value: Boolean): Self = StObject.set(x, "adaptToDeviceRatio", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ConfluencePageConfiguration {
     __obj.asInstanceOf[ConfluencePageConfiguration]
   }
   
-  extension [Self <: ConfluencePageConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfluencePageConfiguration] (val x: Self) extends AnyVal {
     
     inline def setPageFieldMappings(value: ConfluencePageFieldMappingsList): Self = StObject.set(x, "PageFieldMappings", value.asInstanceOf[js.Any])
     

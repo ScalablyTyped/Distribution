@@ -66,7 +66,8 @@ object mod {
       __obj.asInstanceOf[Opts]
     }
     
-    extension [Self <: Opts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
       
       inline def setBrackets(value: String | js.Array[String]): Self = StObject.set(x, "brackets", value.asInstanceOf[js.Any])
       

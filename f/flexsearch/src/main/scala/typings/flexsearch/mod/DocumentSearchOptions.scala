@@ -25,7 +25,8 @@ object DocumentSearchOptions {
     __obj.asInstanceOf[DocumentSearchOptions[T]]
   }
   
-  extension [Self <: DocumentSearchOptions[?], T /* <: Boolean */](x: Self & DocumentSearchOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentSearchOptions[?], T /* <: Boolean */] (val x: Self & DocumentSearchOptions[T]) extends AnyVal {
     
     inline def setBool(value: and | or): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
     

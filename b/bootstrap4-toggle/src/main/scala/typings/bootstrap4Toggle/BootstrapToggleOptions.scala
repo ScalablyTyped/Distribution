@@ -29,7 +29,8 @@ object BootstrapToggleOptions {
     __obj.asInstanceOf[BootstrapToggleOptions]
   }
   
-  extension [Self <: BootstrapToggleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapToggleOptions] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object distNodeEsmSrcImplementationObserverMod {
       __obj.asInstanceOf[StorageObserver[T]]
     }
     
-    extension [Self <: StorageObserver[?], T](x: Self & StorageObserver[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageObserver[?], T] (val x: Self & StorageObserver[T]) extends AnyVal {
       
       inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       

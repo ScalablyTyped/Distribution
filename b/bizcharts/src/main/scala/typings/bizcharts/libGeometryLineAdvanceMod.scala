@@ -31,7 +31,8 @@ object libGeometryLineAdvanceMod {
       __obj.asInstanceOf[ILineAdvanceGemoProps]
     }
     
-    extension [Self <: ILineAdvanceGemoProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILineAdvanceGemoProps] (val x: Self) extends AnyVal {
       
       inline def setArea(value: Boolean | IAreaGemoProps): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       

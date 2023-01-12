@@ -18,7 +18,8 @@ object MemoizedFunction {
     __obj.asInstanceOf[MemoizedFunction]
   }
   
-  extension [Self <: MemoizedFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemoizedFunction] (val x: Self) extends AnyVal {
     
     inline def setCache(value: MapCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
   }

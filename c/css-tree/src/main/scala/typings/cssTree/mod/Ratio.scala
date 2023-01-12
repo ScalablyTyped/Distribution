@@ -25,7 +25,8 @@ object Ratio {
     __obj.asInstanceOf[Ratio]
   }
   
-  extension [Self <: Ratio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ratio] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

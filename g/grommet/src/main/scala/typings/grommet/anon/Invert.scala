@@ -15,7 +15,8 @@ object Invert {
     __obj.asInstanceOf[Invert]
   }
   
-  extension [Self <: Invert](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Invert] (val x: Self) extends AnyVal {
     
     inline def setInvert(value: `5`): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
     

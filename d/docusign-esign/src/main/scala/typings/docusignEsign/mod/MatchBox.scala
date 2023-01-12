@@ -43,7 +43,8 @@ object MatchBox {
     __obj.asInstanceOf[MatchBox]
   }
   
-  extension [Self <: MatchBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchBox] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

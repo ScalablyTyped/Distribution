@@ -25,7 +25,8 @@ object Mode_ {
     __obj.asInstanceOf[Mode_]
   }
   
-  extension [Self <: Mode_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mode_] (val x: Self) extends AnyVal {
     
     inline def setProcessBlock(value: (js.Array[Double], Double) => Unit): Self = StObject.set(x, "processBlock", js.Any.fromFunction2(value))
   }

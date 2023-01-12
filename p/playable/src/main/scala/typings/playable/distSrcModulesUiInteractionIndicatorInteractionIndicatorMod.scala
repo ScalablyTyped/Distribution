@@ -148,7 +148,8 @@ object distSrcModulesUiInteractionIndicatorInteractionIndicatorMod {
       __obj.asInstanceOf[InteractionIndicator]
     }
     
-    extension [Self <: InteractionIndicator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InteractionIndicator] (val x: Self) extends AnyVal {
       
       inline def setView(value: typings.playable.distSrcModulesUiInteractionIndicatorInteractionIndicatorDotviewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsLayoutAlignJustifyMod exten
       __obj.asInstanceOf[LayoutAlignJustifyProps]
     }
     
-    extension [Self <: LayoutAlignJustifyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutAlignJustifyProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

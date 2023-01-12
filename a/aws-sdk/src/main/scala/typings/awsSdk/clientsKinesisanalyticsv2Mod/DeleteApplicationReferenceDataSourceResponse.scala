@@ -23,7 +23,8 @@ object DeleteApplicationReferenceDataSourceResponse {
     __obj.asInstanceOf[DeleteApplicationReferenceDataSourceResponse]
   }
   
-  extension [Self <: DeleteApplicationReferenceDataSourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteApplicationReferenceDataSourceResponse] (val x: Self) extends AnyVal {
     
     inline def setApplicationARN(value: ResourceARN): Self = StObject.set(x, "ApplicationARN", value.asInstanceOf[js.Any])
     

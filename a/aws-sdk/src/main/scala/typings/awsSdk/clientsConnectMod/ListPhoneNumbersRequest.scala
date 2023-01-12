@@ -38,7 +38,8 @@ object ListPhoneNumbersRequest {
     __obj.asInstanceOf[ListPhoneNumbersRequest]
   }
   
-  extension [Self <: ListPhoneNumbersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPhoneNumbersRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

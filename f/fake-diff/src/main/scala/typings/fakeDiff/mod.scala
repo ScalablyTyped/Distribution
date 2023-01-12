@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[FakeDiffOptions]
     }
     
-    extension [Self <: FakeDiffOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FakeDiffOptions] (val x: Self) extends AnyVal {
       
       inline def setHideLines(value: Boolean): Self = StObject.set(x, "hideLines", value.asInstanceOf[js.Any])
       

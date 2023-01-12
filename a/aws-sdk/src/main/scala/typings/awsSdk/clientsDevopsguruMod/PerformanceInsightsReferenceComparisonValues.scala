@@ -23,7 +23,8 @@ object PerformanceInsightsReferenceComparisonValues {
     __obj.asInstanceOf[PerformanceInsightsReferenceComparisonValues]
   }
   
-  extension [Self <: PerformanceInsightsReferenceComparisonValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceInsightsReferenceComparisonValues] (val x: Self) extends AnyVal {
     
     inline def setReferenceMetric(value: PerformanceInsightsReferenceMetric): Self = StObject.set(x, "ReferenceMetric", value.asInstanceOf[js.Any])
     

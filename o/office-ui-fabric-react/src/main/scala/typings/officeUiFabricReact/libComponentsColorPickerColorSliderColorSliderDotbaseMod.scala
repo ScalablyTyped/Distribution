@@ -71,7 +71,8 @@ object libComponentsColorPickerColorSliderColorSliderDotbaseMod {
       __obj.asInstanceOf[IColorSliderState]
     }
     
-    extension [Self <: IColorSliderState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColorSliderState] (val x: Self) extends AnyVal {
       
       inline def setCurrentValue(value: Double): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
     }

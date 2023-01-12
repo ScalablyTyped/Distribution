@@ -1309,7 +1309,8 @@ object mod {
       __obj.asInstanceOf[CreateInstanceRequest]
     }
     
-    extension [Self <: CreateInstanceRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateInstanceRequest] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -1356,7 +1357,8 @@ object mod {
       __obj.asInstanceOf[GetInstanceConfigOptions]
     }
     
-    extension [Self <: GetInstanceConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetInstanceConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setGaxOptions(value: CallOptions): Self = StObject.set(x, "gaxOptions", value.asInstanceOf[js.Any])
       
@@ -1413,7 +1415,8 @@ object mod {
       __obj.asInstanceOf[RequestConfig]
     }
     
-    extension [Self <: RequestConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestConfig] (val x: Self) extends AnyVal {
       
       inline def setClient(value: String): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
@@ -1448,7 +1451,8 @@ object mod {
       __obj.asInstanceOf[SpannerOptions]
     }
     
-    extension [Self <: SpannerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpannerOptions] (val x: Self) extends AnyVal {
       
       inline def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
       

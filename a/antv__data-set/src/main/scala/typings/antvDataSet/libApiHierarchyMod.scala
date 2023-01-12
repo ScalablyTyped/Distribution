@@ -27,7 +27,8 @@ object libApiHierarchyMod {
       __obj.asInstanceOf[HierarchyApi]
     }
     
-    extension [Self <: HierarchyApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HierarchyApi] (val x: Self) extends AnyVal {
       
       inline def setGetAllEdges(value: () => js.Array[Any]): Self = StObject.set(x, "getAllEdges", js.Any.fromFunction0(value))
       

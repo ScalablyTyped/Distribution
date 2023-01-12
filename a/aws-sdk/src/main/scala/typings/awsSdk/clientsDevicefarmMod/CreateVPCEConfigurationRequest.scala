@@ -37,7 +37,8 @@ object CreateVPCEConfigurationRequest {
     __obj.asInstanceOf[CreateVPCEConfigurationRequest]
   }
   
-  extension [Self <: CreateVPCEConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVPCEConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setServiceDnsName(value: ServiceDnsName): Self = StObject.set(x, "serviceDnsName", value.asInstanceOf[js.Any])
     

@@ -187,7 +187,8 @@ object UnoControlPatternFieldModel {
     __obj.asInstanceOf[UnoControlPatternFieldModel]
   }
   
-  extension [Self <: UnoControlPatternFieldModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnoControlPatternFieldModel] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: Color): Self = StObject.set(x, "BackgroundColor", value.asInstanceOf[js.Any])
     

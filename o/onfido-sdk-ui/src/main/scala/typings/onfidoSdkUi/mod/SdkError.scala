@@ -21,7 +21,8 @@ object SdkError {
     __obj.asInstanceOf[SdkError]
   }
   
-  extension [Self <: SdkError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SdkError] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

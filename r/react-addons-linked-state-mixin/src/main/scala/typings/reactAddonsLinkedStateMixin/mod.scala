@@ -25,7 +25,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LinkedStateMixin]
     }
     
-    extension [Self <: LinkedStateMixin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkedStateMixin] (val x: Self) extends AnyVal {
       
       inline def setLinkState(value: String => ReactLink[Any]): Self = StObject.set(x, "linkState", js.Any.fromFunction1(value))
     }
@@ -44,7 +45,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ReactLink[T]]
     }
     
-    extension [Self <: ReactLink[?], T](x: Self & ReactLink[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactLink[?], T] (val x: Self & ReactLink[T]) extends AnyVal {
       
       inline def setRequestChange(value: T => Unit): Self = StObject.set(x, "requestChange", js.Any.fromFunction1(value))
       
@@ -73,7 +75,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[HTMLAttributes[T]]
       }
       
-      extension [Self <: HTMLAttributes[?], T](x: Self & HTMLAttributes[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HTMLAttributes[?], T] (val x: Self & HTMLAttributes[T]) extends AnyVal {
         
         inline def setCheckedLink(value: ReactLink[Boolean]): Self = StObject.set(x, "checkedLink", value.asInstanceOf[js.Any])
         

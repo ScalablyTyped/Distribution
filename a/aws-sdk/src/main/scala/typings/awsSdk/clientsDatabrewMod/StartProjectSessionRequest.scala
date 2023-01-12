@@ -23,7 +23,8 @@ object StartProjectSessionRequest {
     __obj.asInstanceOf[StartProjectSessionRequest]
   }
   
-  extension [Self <: StartProjectSessionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartProjectSessionRequest] (val x: Self) extends AnyVal {
     
     inline def setAssumeControl(value: AssumeControl): Self = StObject.set(x, "AssumeControl", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object typesRepositoriesEventsMod {
       __obj.asInstanceOf[BroadcastConfig_]
     }
     
-    extension [Self <: BroadcastConfig_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BroadcastConfig_] (val x: Self) extends AnyVal {
       
       inline def setBroadcastIf(value: Boolean | (js.Function1[/* payload */ Any, Boolean])): Self = StObject.set(x, "broadcastIf", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object typesRepositoriesEventsMod {
       __obj.asInstanceOf[EventConfig]
     }
     
-    extension [Self <: EventConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventConfig] (val x: Self) extends AnyVal {
       
       inline def setBroadcastIf(value: Boolean | (js.Function1[/* payload */ Any, Boolean])): Self = StObject.set(x, "broadcastIf", value.asInstanceOf[js.Any])
       

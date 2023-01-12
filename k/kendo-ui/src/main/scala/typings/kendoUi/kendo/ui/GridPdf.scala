@@ -49,7 +49,8 @@ object GridPdf {
     __obj.asInstanceOf[GridPdf]
   }
   
-  extension [Self <: GridPdf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridPdf] (val x: Self) extends AnyVal {
     
     inline def setAllPages(value: Boolean): Self = StObject.set(x, "allPages", value.asInstanceOf[js.Any])
     

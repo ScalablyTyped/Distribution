@@ -15,7 +15,8 @@ object IListItem {
     __obj.asInstanceOf[IListItem]
   }
   
-  extension [Self <: IListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IListItem] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_webc_main_IListItem(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_webc_main_IListItem", value.asInstanceOf[js.Any])
   }

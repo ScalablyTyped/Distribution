@@ -145,7 +145,8 @@ object distCommonjsModulesSidebarSidebarMod extends Shortcut {
       __obj.asInstanceOf[StrictSidebarProps]
     }
     
-    extension [Self <: StrictSidebarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictSidebarProps] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: overlay | push | (`scale down`) | uncover | (`slide out`) | (`slide along`)): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object DisableLDAPSRequest {
     __obj.asInstanceOf[DisableLDAPSRequest]
   }
   
-  extension [Self <: DisableLDAPSRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableLDAPSRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     

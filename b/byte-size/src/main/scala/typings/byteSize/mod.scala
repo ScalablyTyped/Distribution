@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[ByteSizeOptions]
     }
     
-    extension [Self <: ByteSizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ByteSizeOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomUnits(value: js.Object): Self = StObject.set(x, "customUnits", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object mod {
       __obj.asInstanceOf[ByteSizeResult]
     }
     
-    extension [Self <: ByteSizeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ByteSizeResult] (val x: Self) extends AnyVal {
       
       inline def setLong(value: String): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
       

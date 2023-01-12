@@ -45,7 +45,8 @@ object distNpmPackageMod {
       __obj.asInstanceOf[INpmPackage]
     }
     
-    extension [Self <: INpmPackage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INpmPackage] (val x: Self) extends AnyVal {
       
       inline def setDirectoryPath(value: String): Self = StObject.set(x, "directoryPath", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object distNpmPackageMod {
       __obj.asInstanceOf[ResolveLinkedPackagesHost]
     }
     
-    extension [Self <: ResolveLinkedPackagesHost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveLinkedPackagesHost] (val x: Self) extends AnyVal {
       
       inline def setJoin(value: /* repeated */ String => String): Self = StObject.set(x, "join", js.Any.fromFunction1(value))
       

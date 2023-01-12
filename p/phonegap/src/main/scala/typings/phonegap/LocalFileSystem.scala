@@ -22,7 +22,8 @@ object LocalFileSystem {
     __obj.asInstanceOf[LocalFileSystem]
   }
   
-  extension [Self <: LocalFileSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalFileSystem] (val x: Self) extends AnyVal {
     
     inline def setPERSISTENT(value: Double): Self = StObject.set(x, "PERSISTENT", value.asInstanceOf[js.Any])
     

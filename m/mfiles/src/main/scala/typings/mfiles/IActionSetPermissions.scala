@@ -23,7 +23,8 @@ object IActionSetPermissions {
     __obj.asInstanceOf[IActionSetPermissions]
   }
   
-  extension [Self <: IActionSetPermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IActionSetPermissions] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IActionSetPermissions): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

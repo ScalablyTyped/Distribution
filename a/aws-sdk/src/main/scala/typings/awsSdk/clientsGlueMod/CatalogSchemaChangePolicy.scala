@@ -23,7 +23,8 @@ object CatalogSchemaChangePolicy {
     __obj.asInstanceOf[CatalogSchemaChangePolicy]
   }
   
-  extension [Self <: CatalogSchemaChangePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatalogSchemaChangePolicy] (val x: Self) extends AnyVal {
     
     inline def setEnableUpdateCatalog(value: BoxedBoolean): Self = StObject.set(x, "EnableUpdateCatalog", value.asInstanceOf[js.Any])
     

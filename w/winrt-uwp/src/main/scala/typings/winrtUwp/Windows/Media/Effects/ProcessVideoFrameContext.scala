@@ -21,7 +21,8 @@ object ProcessVideoFrameContext {
     __obj.asInstanceOf[ProcessVideoFrameContext]
   }
   
-  extension [Self <: ProcessVideoFrameContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessVideoFrameContext] (val x: Self) extends AnyVal {
     
     inline def setInputFrame(value: VideoFrame): Self = StObject.set(x, "inputFrame", value.asInstanceOf[js.Any])
     

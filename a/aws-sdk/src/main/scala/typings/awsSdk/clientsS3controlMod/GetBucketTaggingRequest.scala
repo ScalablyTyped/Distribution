@@ -23,7 +23,8 @@ object GetBucketTaggingRequest {
     __obj.asInstanceOf[GetBucketTaggingRequest]
   }
   
-  extension [Self <: GetBucketTaggingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBucketTaggingRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

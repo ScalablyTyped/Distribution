@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "ethersproject__json-wallets"
-version := "5.7.0-90dba1"
+version := "5.7.0-524ec2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ethersproject__abstract-provider" % "5.7.0-4e89d4",
-  "org.scalablytyped" %%% "ethersproject__abstract-signer" % "5.7.0-3cbc86",
-  "org.scalablytyped" %%% "ethersproject__bignumber" % "5.7.0-f36c73",
-  "org.scalablytyped" %%% "ethersproject__bytes" % "5.7.0-625618",
-  "org.scalablytyped" %%% "ethersproject__hdnode" % "5.7.0-120007",
-  "org.scalablytyped" %%% "ethersproject__logger" % "5.7.0-35052c",
-  "org.scalablytyped" %%% "ethersproject__networks" % "5.7.1-c0bd5b",
-  "org.scalablytyped" %%% "ethersproject__properties" % "5.7.0-092f54",
-  "org.scalablytyped" %%% "ethersproject__transactions" % "5.7.0-1f476e",
-  "org.scalablytyped" %%% "ethersproject__web" % "5.7.1-6b190f",
-  "org.scalablytyped" %%% "ethersproject__wordlists" % "5.7.0-0925cb",
-  "org.scalablytyped" %%% "std" % "4.9-5f989f")
+  "org.scalablytyped" %%% "ethersproject__abstract-provider" % "5.7.0-86b17a",
+  "org.scalablytyped" %%% "ethersproject__abstract-signer" % "5.7.0-c50a44",
+  "org.scalablytyped" %%% "ethersproject__bignumber" % "5.7.0-026b38",
+  "org.scalablytyped" %%% "ethersproject__bytes" % "5.7.0-4f8d20",
+  "org.scalablytyped" %%% "ethersproject__hdnode" % "5.7.0-8bd654",
+  "org.scalablytyped" %%% "ethersproject__logger" % "5.7.0-b2312e",
+  "org.scalablytyped" %%% "ethersproject__networks" % "5.7.1-02c7be",
+  "org.scalablytyped" %%% "ethersproject__properties" % "5.7.0-9d066d",
+  "org.scalablytyped" %%% "ethersproject__transactions" % "5.7.0-3ee4ac",
+  "org.scalablytyped" %%% "ethersproject__web" % "5.7.1-f277c0",
+  "org.scalablytyped" %%% "ethersproject__wordlists" % "5.7.0-2db8a8",
+  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

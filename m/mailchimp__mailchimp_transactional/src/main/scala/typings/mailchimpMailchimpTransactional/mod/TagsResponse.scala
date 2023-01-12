@@ -37,7 +37,8 @@ object TagsResponse {
     __obj.asInstanceOf[TagsResponse]
   }
   
-  extension [Self <: TagsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagsResponse] (val x: Self) extends AnyVal {
     
     inline def setReputation(value: Double): Self = StObject.set(x, "reputation", value.asInstanceOf[js.Any])
     

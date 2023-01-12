@@ -15,7 +15,8 @@ object Defaults {
     __obj.asInstanceOf[Defaults]
   }
   
-  extension [Self <: Defaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Defaults] (val x: Self) extends AnyVal {
     
     inline def setDefaults(value: PartialKeyboardDefaultsOp => Unit): Self = StObject.set(x, "defaults", js.Any.fromFunction1(value))
   }

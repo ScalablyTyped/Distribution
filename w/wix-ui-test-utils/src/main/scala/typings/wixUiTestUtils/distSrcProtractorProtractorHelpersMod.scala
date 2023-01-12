@@ -53,7 +53,8 @@ object distSrcProtractorProtractorHelpersMod {
       __obj.asInstanceOf[ILocation]
     }
     
-    extension [Self <: ILocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILocation] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object distSrcProtractorProtractorHelpersMod {
       __obj.asInstanceOf[StoryUrlParams]
     }
     
-    extension [Self <: StoryUrlParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoryUrlParams] (val x: Self) extends AnyVal {
       
       inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       

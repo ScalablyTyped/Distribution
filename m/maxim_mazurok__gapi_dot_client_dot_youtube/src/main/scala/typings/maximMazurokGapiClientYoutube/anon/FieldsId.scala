@@ -68,7 +68,8 @@ object FieldsId {
     __obj.asInstanceOf[FieldsId]
   }
   
-  extension [Self <: FieldsId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldsId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

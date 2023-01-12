@@ -38,7 +38,8 @@ object ListStatementsRequest {
     __obj.asInstanceOf[ListStatementsRequest]
   }
   
-  extension [Self <: ListStatementsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStatementsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ListStatementsLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

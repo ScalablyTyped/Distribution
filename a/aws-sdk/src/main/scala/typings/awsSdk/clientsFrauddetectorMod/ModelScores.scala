@@ -23,7 +23,8 @@ object ModelScores {
     __obj.asInstanceOf[ModelScores]
   }
   
-  extension [Self <: ModelScores](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelScores] (val x: Self) extends AnyVal {
     
     inline def setModelVersion(value: ModelVersion): Self = StObject.set(x, "modelVersion", value.asInstanceOf[js.Any])
     

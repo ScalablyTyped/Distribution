@@ -60,7 +60,8 @@ object DynamoDBAction {
     __obj.asInstanceOf[DynamoDBAction]
   }
   
-  extension [Self <: DynamoDBAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamoDBAction] (val x: Self) extends AnyVal {
     
     inline def setHashKeyField(value: DynamoKeyField): Self = StObject.set(x, "hashKeyField", value.asInstanceOf[js.Any])
     

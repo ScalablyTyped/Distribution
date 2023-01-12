@@ -52,7 +52,8 @@ object DiscoveryInformation {
     __obj.asInstanceOf[DiscoveryInformation[BaseToken]]
   }
   
-  extension [Self <: DiscoveryInformation[?], BaseToken](x: Self & DiscoveryInformation[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiscoveryInformation[?], BaseToken] (val x: Self & DiscoveryInformation[BaseToken]) extends AnyVal {
     
     inline def setBrand(value: PaintToken[BaseToken]): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     

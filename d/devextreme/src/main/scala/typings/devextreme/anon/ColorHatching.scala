@@ -33,7 +33,8 @@ object ColorHatching {
     __obj.asInstanceOf[ColorHatching]
   }
   
-  extension [Self <: ColorHatching](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorHatching] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: ColorVisible): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

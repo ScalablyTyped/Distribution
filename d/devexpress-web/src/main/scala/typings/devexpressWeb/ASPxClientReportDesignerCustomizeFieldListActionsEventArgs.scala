@@ -28,7 +28,8 @@ object ASPxClientReportDesignerCustomizeFieldListActionsEventArgs {
     __obj.asInstanceOf[ASPxClientReportDesignerCustomizeFieldListActionsEventArgs]
   }
   
-  extension [Self <: ASPxClientReportDesignerCustomizeFieldListActionsEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientReportDesignerCustomizeFieldListActionsEventArgs] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[Any]): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     

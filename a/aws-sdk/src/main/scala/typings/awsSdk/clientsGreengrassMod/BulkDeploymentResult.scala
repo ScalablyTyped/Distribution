@@ -53,7 +53,8 @@ object BulkDeploymentResult {
     __obj.asInstanceOf[BulkDeploymentResult]
   }
   
-  extension [Self <: BulkDeploymentResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkDeploymentResult] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: string): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     

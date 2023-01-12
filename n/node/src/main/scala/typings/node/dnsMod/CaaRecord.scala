@@ -25,7 +25,8 @@ object CaaRecord {
     __obj.asInstanceOf[CaaRecord]
   }
   
-  extension [Self <: CaaRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaaRecord] (val x: Self) extends AnyVal {
     
     inline def setContactemail(value: String): Self = StObject.set(x, "contactemail", value.asInstanceOf[js.Any])
     

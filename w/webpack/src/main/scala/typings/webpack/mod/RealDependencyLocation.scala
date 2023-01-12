@@ -21,7 +21,8 @@ object RealDependencyLocation {
     __obj.asInstanceOf[RealDependencyLocation]
   }
   
-  extension [Self <: RealDependencyLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RealDependencyLocation] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: SourcePosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

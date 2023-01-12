@@ -15,7 +15,8 @@ object IAMFStringOptions {
     __obj.asInstanceOf[IAMFStringOptions]
   }
   
-  extension [Self <: IAMFStringOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAMFStringOptions] (val x: Self) extends AnyVal {
     
     inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
   }

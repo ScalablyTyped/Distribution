@@ -98,7 +98,8 @@ object ViewProperties {
     __obj.asInstanceOf[ViewProperties]
   }
   
-  extension [Self <: ViewProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewProperties] (val x: Self) extends AnyVal {
     
     inline def setAllLayerViews(value: CollectionProperties[LayerViewProperties]): Self = StObject.set(x, "allLayerViews", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object InvalidPath {
     __obj.asInstanceOf[InvalidPath]
   }
   
-  extension [Self <: InvalidPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidPath] (val x: Self) extends AnyVal {
     
     inline def setInvalidPath(value: scala.Double): Self = StObject.set(x, "invalidPath", value.asInstanceOf[js.Any])
     

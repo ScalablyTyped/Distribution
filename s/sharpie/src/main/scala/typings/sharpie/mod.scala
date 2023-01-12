@@ -66,7 +66,8 @@ object mod {
       __obj.asInstanceOf[SharpieFormats]
     }
     
-    extension [Self <: SharpieFormats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharpieFormats] (val x: Self) extends AnyVal {
       
       inline def setDst(value: StringDictionary[`true`]): Self = StObject.set(x, "dst", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object mod {
       __obj.asInstanceOf[SharpieOptions]
     }
     
-    extension [Self <: SharpieOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharpieOptions] (val x: Self) extends AnyVal {
       
       inline def setBg(value: String | Boolean): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       

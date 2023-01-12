@@ -103,7 +103,8 @@ object TypeofMetro {
     __obj.asInstanceOf[TypeofMetro]
   }
   
-  extension [Self <: TypeofMetro](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofMetro] (val x: Self) extends AnyVal {
     
     inline def setHttpServer(
       value: Instantiable0[

@@ -28,7 +28,8 @@ object ComponentDeploymentSpecification {
     __obj.asInstanceOf[ComponentDeploymentSpecification]
   }
   
-  extension [Self <: ComponentDeploymentSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentDeploymentSpecification] (val x: Self) extends AnyVal {
     
     inline def setComponentVersion(value: ComponentVersionString): Self = StObject.set(x, "componentVersion", value.asInstanceOf[js.Any])
     

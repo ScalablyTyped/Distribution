@@ -18,7 +18,8 @@ object CheckContrastRequest {
     __obj.asInstanceOf[CheckContrastRequest]
   }
   
-  extension [Self <: CheckContrastRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckContrastRequest] (val x: Self) extends AnyVal {
     
     inline def setReportAAA(value: Boolean): Self = StObject.set(x, "reportAAA", value.asInstanceOf[js.Any])
     

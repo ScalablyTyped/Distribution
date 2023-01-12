@@ -19,7 +19,8 @@ object CanvasMapData {
     __obj.asInstanceOf[CanvasMapData]
   }
   
-  extension [Self <: CanvasMapData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasMapData] (val x: Self) extends AnyVal {
     
     inline def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     

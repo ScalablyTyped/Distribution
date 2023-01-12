@@ -39,7 +39,8 @@ object ExternalModuleReference {
     __obj.asInstanceOf[ExternalModuleReference]
   }
   
-  extension [Self <: ExternalModuleReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalModuleReference] (val x: Self) extends AnyVal {
     
     inline def setStringLiteral(value: StringLiteral): Self = StObject.set(x, "stringLiteral", value.asInstanceOf[js.Any])
   }

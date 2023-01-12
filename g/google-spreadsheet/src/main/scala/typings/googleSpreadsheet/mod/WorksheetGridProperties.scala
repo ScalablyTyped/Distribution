@@ -27,7 +27,8 @@ object WorksheetGridProperties {
     __obj.asInstanceOf[WorksheetGridProperties]
   }
   
-  extension [Self <: WorksheetGridProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetGridProperties] (val x: Self) extends AnyVal {
     
     inline def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     

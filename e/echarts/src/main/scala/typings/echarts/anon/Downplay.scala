@@ -103,7 +103,8 @@ object Downplay {
     __obj.asInstanceOf[Downplay]
   }
   
-  extension [Self <: Downplay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Downplay] (val x: Self) extends AnyVal {
     
     inline def setDownplay(value: `23`): Self = StObject.set(x, "downplay", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object HexLiteral {
     __obj.asInstanceOf[HexLiteral]
   }
   
-  extension [Self <: HexLiteral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HexLiteral] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.HexLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

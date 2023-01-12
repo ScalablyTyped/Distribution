@@ -106,7 +106,8 @@ object WaitMe {
       __obj.asInstanceOf[WaitMeOptions]
     }
     
-    extension [Self <: WaitMeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaitMeOptions] (val x: Self) extends AnyVal {
       
       inline def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       

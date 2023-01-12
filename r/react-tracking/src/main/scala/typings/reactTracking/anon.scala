@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[PropsWithChildren]
     }
     
-    extension [Self <: PropsWithChildren](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropsWithChildren] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -58,7 +60,8 @@ object anon {
       __obj.asInstanceOf[Tracking[T]]
     }
     
-    extension [Self <: Tracking[?], T](x: Self & Tracking[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tracking[?], T] (val x: Self & Tracking[T]) extends AnyVal {
       
       inline def setTracking(value: Options[T] & Data): Self = StObject.set(x, "tracking", value.asInstanceOf[js.Any])
     }

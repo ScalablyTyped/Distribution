@@ -18,7 +18,8 @@ object SketchMSStringAttribute {
     __obj.asInstanceOf[SketchMSStringAttribute]
   }
   
-  extension [Self <: SketchMSStringAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSStringAttribute] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: SketchMSAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

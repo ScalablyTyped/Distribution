@@ -23,7 +23,8 @@ object MobileBroadbandDeviceServiceInformation {
     __obj.asInstanceOf[MobileBroadbandDeviceServiceInformation]
   }
   
-  extension [Self <: MobileBroadbandDeviceServiceInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileBroadbandDeviceServiceInformation] (val x: Self) extends AnyVal {
     
     inline def setDeviceServiceId(value: String): Self = StObject.set(x, "deviceServiceId", value.asInstanceOf[js.Any])
     

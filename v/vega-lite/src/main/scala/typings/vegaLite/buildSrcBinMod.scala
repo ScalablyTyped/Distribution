@@ -105,7 +105,8 @@ object buildSrcBinMod {
       __obj.asInstanceOf[BaseBin]
     }
     
-    extension [Self <: BaseBin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseBin] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: Double): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -175,7 +176,8 @@ object buildSrcBinMod {
       __obj.asInstanceOf[BinParams]
     }
     
-    extension [Self <: BinParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BinParams] (val x: Self) extends AnyVal {
       
       inline def setBinned(value: Boolean): Self = StObject.set(x, "binned", value.asInstanceOf[js.Any])
       

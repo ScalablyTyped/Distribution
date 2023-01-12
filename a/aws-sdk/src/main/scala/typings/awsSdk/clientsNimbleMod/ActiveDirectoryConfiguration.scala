@@ -28,7 +28,8 @@ object ActiveDirectoryConfiguration {
     __obj.asInstanceOf[ActiveDirectoryConfiguration]
   }
   
-  extension [Self <: ActiveDirectoryConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveDirectoryConfiguration] (val x: Self) extends AnyVal {
     
     inline def setComputerAttributes(value: ActiveDirectoryComputerAttributeList): Self = StObject.set(x, "computerAttributes", value.asInstanceOf[js.Any])
     

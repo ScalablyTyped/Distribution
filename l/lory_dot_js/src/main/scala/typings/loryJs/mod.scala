@@ -131,7 +131,8 @@ object mod {
       __obj.asInstanceOf[LoryOptions]
     }
     
-    extension [Self <: LoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoryOptions] (val x: Self) extends AnyVal {
       
       inline def setAfterInit(value: () => Any): Self = StObject.set(x, "afterInit", js.Any.fromFunction0(value))
       

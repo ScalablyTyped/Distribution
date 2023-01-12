@@ -17,7 +17,8 @@ object Responses200ContentApplicationjsonBillable {
     __obj.asInstanceOf[Responses200ContentApplicationjsonBillable]
   }
   
-  extension [Self <: Responses200ContentApplicationjsonBillable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responses200ContentApplicationjsonBillable] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: `475`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

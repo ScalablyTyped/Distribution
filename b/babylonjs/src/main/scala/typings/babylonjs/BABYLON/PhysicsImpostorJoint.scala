@@ -22,7 +22,8 @@ object PhysicsImpostorJoint {
     __obj.asInstanceOf[PhysicsImpostorJoint]
   }
   
-  extension [Self <: PhysicsImpostorJoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhysicsImpostorJoint] (val x: Self) extends AnyVal {
     
     inline def setConnectedImpostor(value: PhysicsImpostor): Self = StObject.set(x, "connectedImpostor", value.asInstanceOf[js.Any])
     

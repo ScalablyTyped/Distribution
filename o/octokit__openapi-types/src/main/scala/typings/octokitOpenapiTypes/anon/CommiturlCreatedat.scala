@@ -34,7 +34,8 @@ object CommiturlCreatedat {
     __obj.asInstanceOf[CommiturlCreatedat]
   }
   
-  extension [Self <: CommiturlCreatedat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommiturlCreatedat] (val x: Self) extends AnyVal {
     
     inline def setActor(value: Avatarurl): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

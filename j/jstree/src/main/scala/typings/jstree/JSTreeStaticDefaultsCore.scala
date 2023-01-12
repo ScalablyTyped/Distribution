@@ -183,7 +183,8 @@ object JSTreeStaticDefaultsCore {
     __obj.asInstanceOf[JSTreeStaticDefaultsCore]
   }
   
-  extension [Self <: JSTreeStaticDefaultsCore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSTreeStaticDefaultsCore] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

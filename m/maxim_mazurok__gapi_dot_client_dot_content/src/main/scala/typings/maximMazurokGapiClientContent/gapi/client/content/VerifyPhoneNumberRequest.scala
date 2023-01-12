@@ -22,7 +22,8 @@ object VerifyPhoneNumberRequest {
     __obj.asInstanceOf[VerifyPhoneNumberRequest]
   }
   
-  extension [Self <: VerifyPhoneNumberRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyPhoneNumberRequest] (val x: Self) extends AnyVal {
     
     inline def setPhoneVerificationMethod(value: String): Self = StObject.set(x, "phoneVerificationMethod", value.asInstanceOf[js.Any])
     

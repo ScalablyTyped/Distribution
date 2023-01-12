@@ -83,7 +83,8 @@ object typesDependencyTimeoutExceptionMod {
       __obj.asInstanceOf[DependencyTimeoutException]
     }
     
-    extension [Self <: DependencyTimeoutException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependencyTimeoutException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.DependencyTimeoutException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -103,7 +104,8 @@ object typesDependencyTimeoutExceptionMod {
       __obj.asInstanceOf[DependencyTimeoutExceptionDetails]
     }
     
-    extension [Self <: DependencyTimeoutExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependencyTimeoutExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

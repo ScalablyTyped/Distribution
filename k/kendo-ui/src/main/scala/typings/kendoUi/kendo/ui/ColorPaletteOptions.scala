@@ -25,7 +25,8 @@ object ColorPaletteOptions {
     __obj.asInstanceOf[ColorPaletteOptions]
   }
   
-  extension [Self <: ColorPaletteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorPaletteOptions] (val x: Self) extends AnyVal {
     
     inline def setChange(value: /* e */ ColorPaletteEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     

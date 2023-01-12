@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[UserData]
     }
     
-    extension [Self <: UserData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserData] (val x: Self) extends AnyVal {
       
       inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
       

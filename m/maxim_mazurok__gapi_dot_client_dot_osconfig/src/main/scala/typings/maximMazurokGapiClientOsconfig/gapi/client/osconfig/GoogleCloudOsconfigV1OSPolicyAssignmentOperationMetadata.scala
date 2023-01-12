@@ -28,7 +28,8 @@ object GoogleCloudOsconfigV1OSPolicyAssignmentOperationMetadata {
     __obj.asInstanceOf[GoogleCloudOsconfigV1OSPolicyAssignmentOperationMetadata]
   }
   
-  extension [Self <: GoogleCloudOsconfigV1OSPolicyAssignmentOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudOsconfigV1OSPolicyAssignmentOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setApiMethod(value: String): Self = StObject.set(x, "apiMethod", value.asInstanceOf[js.Any])
     

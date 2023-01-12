@@ -23,7 +23,8 @@ object ResiliencyScore {
     __obj.asInstanceOf[ResiliencyScore]
   }
   
-  extension [Self <: ResiliencyScore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResiliencyScore] (val x: Self) extends AnyVal {
     
     inline def setDisruptionScore(value: DisruptionResiliencyScore): Self = StObject.set(x, "disruptionScore", value.asInstanceOf[js.Any])
     

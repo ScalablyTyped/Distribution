@@ -79,7 +79,8 @@ object googleMapConfig {
     __obj.asInstanceOf[googleMapConfig]
   }
   
-  extension [Self <: googleMapConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: googleMapConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

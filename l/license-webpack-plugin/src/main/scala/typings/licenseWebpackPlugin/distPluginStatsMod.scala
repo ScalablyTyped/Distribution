@@ -19,7 +19,8 @@ object distPluginStatsMod {
       __obj.asInstanceOf[PluginStats]
     }
     
-    extension [Self <: PluginStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginStats] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: Boolean): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       

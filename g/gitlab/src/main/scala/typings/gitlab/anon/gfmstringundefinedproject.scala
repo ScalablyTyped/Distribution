@@ -20,7 +20,8 @@ object gfmstringundefinedproject {
     __obj.asInstanceOf[gfmstringundefinedproject]
   }
   
-  extension [Self <: gfmstringundefinedproject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: gfmstringundefinedproject] (val x: Self) extends AnyVal {
     
     inline def setGfm(value: String): Self = StObject.set(x, "gfm", value.asInstanceOf[js.Any])
     

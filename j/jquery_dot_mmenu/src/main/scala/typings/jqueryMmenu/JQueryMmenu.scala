@@ -131,7 +131,8 @@ object JQueryMmenu {
       __obj.asInstanceOf[ClassnamesConfigurations]
     }
     
-    extension [Self <: ClassnamesConfigurations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassnamesConfigurations] (val x: Self) extends AnyVal {
       
       inline def setDivider(value: String): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
       
@@ -195,7 +196,8 @@ object JQueryMmenu {
       __obj.asInstanceOf[Configurations]
     }
     
-    extension [Self <: Configurations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configurations] (val x: Self) extends AnyVal {
       
       inline def setClassNames(value: ClassnamesConfigurations): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       
@@ -247,7 +249,8 @@ object JQueryMmenu {
       __obj.asInstanceOf[NavbarOptions]
     }
     
-    extension [Self <: NavbarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarOptions] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
       
@@ -294,7 +297,8 @@ object JQueryMmenu {
       __obj.asInstanceOf[OnclickOptions]
     }
     
-    extension [Self <: OnclickOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnclickOptions] (val x: Self) extends AnyVal {
       
       inline def setClose(value: Boolean | Any): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
@@ -344,7 +348,8 @@ object JQueryMmenu {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setExtensions(value: js.Array[js.Object]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       

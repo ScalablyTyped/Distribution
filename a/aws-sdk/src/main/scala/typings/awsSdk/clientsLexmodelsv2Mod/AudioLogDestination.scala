@@ -18,7 +18,8 @@ object AudioLogDestination {
     __obj.asInstanceOf[AudioLogDestination]
   }
   
-  extension [Self <: AudioLogDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioLogDestination] (val x: Self) extends AnyVal {
     
     inline def setS3Bucket(value: S3BucketLogDestination): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
   }

@@ -1127,7 +1127,8 @@ object typesDatagridMod {
         __obj.asInstanceOf[CopyConfig]
       }
       
-      extension [Self <: CopyConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CopyConfig] (val x: Self) extends AnyVal {
         
         inline def setFormat(value: CopyFormatArgs => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
         
@@ -1176,7 +1177,8 @@ object typesDatagridMod {
         __obj.asInstanceOf[CopyFormatArgs]
       }
       
-      extension [Self <: CopyFormatArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CopyFormatArgs] (val x: Self) extends AnyVal {
         
         inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
@@ -1227,7 +1229,8 @@ object typesDatagridMod {
         __obj.asInstanceOf[DefaultSizes_]
       }
       
-      extension [Self <: DefaultSizes_](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DefaultSizes_] (val x: Self) extends AnyVal {
         
         inline def setColumnHeaderHeight(value: Double): Self = StObject.set(x, "columnHeaderHeight", value.asInstanceOf[js.Any])
         
@@ -1327,7 +1330,8 @@ object typesDatagridMod {
         __obj.asInstanceOf[HitTestResult]
       }
       
-      extension [Self <: HitTestResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HitTestResult] (val x: Self) extends AnyVal {
         
         inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
@@ -1371,7 +1375,8 @@ object typesDatagridMod {
         __obj.asInstanceOf[IKeyHandler]
       }
       
-      extension [Self <: IKeyHandler](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IKeyHandler] (val x: Self) extends AnyVal {
         
         inline def setOnKeyDown(value: (DataGrid, KeyboardEvent) => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction2(value))
       }
@@ -1484,7 +1489,8 @@ object typesDatagridMod {
         __obj.asInstanceOf[IMouseHandler]
       }
       
-      extension [Self <: IMouseHandler](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IMouseHandler] (val x: Self) extends AnyVal {
         
         inline def setOnContextMenu(value: (DataGrid, MouseEvent) => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction2(value))
         
@@ -1581,7 +1587,8 @@ object typesDatagridMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setCellRenderers(value: RendererMap): Self = StObject.set(x, "cellRenderers", value.asInstanceOf[js.Any])
         
@@ -1653,7 +1660,8 @@ object typesDatagridMod {
         __obj.asInstanceOf[MinimumSizes_]
       }
       
-      extension [Self <: MinimumSizes_](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MinimumSizes_] (val x: Self) extends AnyVal {
         
         inline def setColumnHeaderHeight(value: Double): Self = StObject.set(x, "columnHeaderHeight", value.asInstanceOf[js.Any])
         
@@ -1794,7 +1802,8 @@ object typesDatagridMod {
         __obj.asInstanceOf[Style]
       }
       
-      extension [Self <: Style](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
         
         inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
         

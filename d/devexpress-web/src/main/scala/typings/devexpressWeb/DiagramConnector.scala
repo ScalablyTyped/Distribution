@@ -69,7 +69,8 @@ object DiagramConnector {
     __obj.asInstanceOf[DiagramConnector]
   }
   
-  extension [Self <: DiagramConnector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramConnector] (val x: Self) extends AnyVal {
     
     inline def setFromId(value: String): Self = StObject.set(x, "fromId", value.asInstanceOf[js.Any])
     

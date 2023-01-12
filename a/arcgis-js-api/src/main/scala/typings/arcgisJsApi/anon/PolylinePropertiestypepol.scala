@@ -49,7 +49,8 @@ object PolylinePropertiestypepol {
     __obj.asInstanceOf[PolylinePropertiestypepol]
   }
   
-  extension [Self <: PolylinePropertiestypepol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolylinePropertiestypepol] (val x: Self) extends AnyVal {
     
     inline def setHasM(value: Boolean): Self = StObject.set(x, "hasM", value.asInstanceOf[js.Any])
     

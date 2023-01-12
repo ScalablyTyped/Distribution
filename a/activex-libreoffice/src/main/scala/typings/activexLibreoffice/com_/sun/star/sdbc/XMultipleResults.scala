@@ -89,7 +89,8 @@ object XMultipleResults {
     __obj.asInstanceOf[XMultipleResults]
   }
   
-  extension [Self <: XMultipleResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMultipleResults] (val x: Self) extends AnyVal {
     
     inline def setGetMoreResults(value: () => Boolean): Self = StObject.set(x, "getMoreResults", js.Any.fromFunction0(value))
     

@@ -94,7 +94,8 @@ object distBackendsBackendMod {
       __obj.asInstanceOf[BackendTimer]
     }
     
-    extension [Self <: BackendTimer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackendTimer] (val x: Self) extends AnyVal {
       
       inline def setTime(value: js.Function0[Unit] => js.Promise[BackendTimingInfo]): Self = StObject.set(x, "time", js.Any.fromFunction1(value))
       
@@ -115,7 +116,8 @@ object distBackendsBackendMod {
       __obj.asInstanceOf[BackendTimingInfo]
     }
     
-    extension [Self <: BackendTimingInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackendTimingInfo] (val x: Self) extends AnyVal {
       
       inline def setGetExtraProfileInfo(value: () => String): Self = StObject.set(x, "getExtraProfileInfo", js.Any.fromFunction0(value))
       
@@ -141,7 +143,8 @@ object distBackendsBackendMod {
       __obj.asInstanceOf[DataMover]
     }
     
-    extension [Self <: DataMover](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataMover] (val x: Self) extends AnyVal {
       
       inline def setMoveData(value: (KernelBackend, DataId) => Unit): Self = StObject.set(x, "moveData", js.Any.fromFunction2(value))
     }

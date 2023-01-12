@@ -17,7 +17,8 @@ object InfiniteData {
     __obj.asInstanceOf[InfiniteData[TData]]
   }
   
-  extension [Self <: InfiniteData[?], TData](x: Self & InfiniteData[TData]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfiniteData[?], TData] (val x: Self & InfiniteData[TData]) extends AnyVal {
     
     inline def setPageParams(value: js.Array[Any]): Self = StObject.set(x, "pageParams", value.asInstanceOf[js.Any])
     

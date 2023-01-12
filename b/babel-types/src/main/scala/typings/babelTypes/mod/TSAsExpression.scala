@@ -22,7 +22,8 @@ object TSAsExpression {
   @js.native
   def apply(expression: Expression, typeAnnotation: TSType): TSAsExpression = js.native
   
-  extension [Self <: TSAsExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSAsExpression] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

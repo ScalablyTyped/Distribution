@@ -43,7 +43,8 @@ object DeviceInstance {
     __obj.asInstanceOf[DeviceInstance]
   }
   
-  extension [Self <: DeviceInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceInstance] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

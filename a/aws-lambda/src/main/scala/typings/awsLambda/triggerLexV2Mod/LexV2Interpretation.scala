@@ -19,7 +19,8 @@ object LexV2Interpretation {
     __obj.asInstanceOf[LexV2Interpretation]
   }
   
-  extension [Self <: LexV2Interpretation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LexV2Interpretation] (val x: Self) extends AnyVal {
     
     inline def setIntent(value: LexV2Intent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     

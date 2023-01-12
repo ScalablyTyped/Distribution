@@ -19,7 +19,8 @@ object VulnerableHeaders {
     __obj.asInstanceOf[VulnerableHeaders]
   }
   
-  extension [Self <: VulnerableHeaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VulnerableHeaders] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: js.Array[Header]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object SDPCodec {
     __obj.asInstanceOf[SDPCodec]
   }
   
-  extension [Self <: SDPCodec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SDPCodec] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: SDPCodecAdditionalParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

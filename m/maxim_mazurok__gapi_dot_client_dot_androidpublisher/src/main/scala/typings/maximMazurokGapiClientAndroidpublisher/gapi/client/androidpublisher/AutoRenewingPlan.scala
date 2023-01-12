@@ -16,7 +16,8 @@ object AutoRenewingPlan {
     __obj.asInstanceOf[AutoRenewingPlan]
   }
   
-  extension [Self <: AutoRenewingPlan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoRenewingPlan] (val x: Self) extends AnyVal {
     
     inline def setAutoRenewEnabled(value: Boolean): Self = StObject.set(x, "autoRenewEnabled", value.asInstanceOf[js.Any])
     

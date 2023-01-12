@@ -29,7 +29,8 @@ object NodeChildProcessExecOptions {
     __obj.asInstanceOf[NodeChildProcessExecOptions]
   }
   
-  extension [Self <: NodeChildProcessExecOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeChildProcessExecOptions] (val x: Self) extends AnyVal {
     
     inline def setCustomFds(value: Any): Self = StObject.set(x, "customFds", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object InterpolateHSV {
     __obj.asInstanceOf[InterpolateHSV]
   }
   
-  extension [Self <: InterpolateHSV](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterpolateHSV] (val x: Self) extends AnyVal {
     
     inline def setH(value: js.Array[Double]): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     

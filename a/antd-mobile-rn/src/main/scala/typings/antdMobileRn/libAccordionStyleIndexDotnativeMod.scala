@@ -39,7 +39,8 @@ object libAccordionStyleIndexDotnativeMod {
       __obj.asInstanceOf[AccordionStyle]
     }
     
-    extension [Self <: AccordionStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionStyle] (val x: Self) extends AnyVal {
       
       inline def setArrow(value: ViewStyle): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
       

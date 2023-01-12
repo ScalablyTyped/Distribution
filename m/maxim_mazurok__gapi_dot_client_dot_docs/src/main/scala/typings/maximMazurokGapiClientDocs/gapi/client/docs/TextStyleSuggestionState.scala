@@ -46,7 +46,8 @@ object TextStyleSuggestionState {
     __obj.asInstanceOf[TextStyleSuggestionState]
   }
   
-  extension [Self <: TextStyleSuggestionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextStyleSuggestionState] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColorSuggested(value: Boolean): Self = StObject.set(x, "backgroundColorSuggested", value.asInstanceOf[js.Any])
     

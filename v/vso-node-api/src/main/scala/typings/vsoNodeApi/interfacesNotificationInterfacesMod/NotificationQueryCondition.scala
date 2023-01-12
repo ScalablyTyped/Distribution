@@ -21,7 +21,8 @@ object NotificationQueryCondition {
     __obj.asInstanceOf[NotificationQueryCondition]
   }
   
-  extension [Self <: NotificationQueryCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationQueryCondition] (val x: Self) extends AnyVal {
     
     inline def setEventInitiator(value: String): Self = StObject.set(x, "eventInitiator", value.asInstanceOf[js.Any])
     

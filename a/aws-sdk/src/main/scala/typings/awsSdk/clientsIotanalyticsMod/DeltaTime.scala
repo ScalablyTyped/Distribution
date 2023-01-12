@@ -23,7 +23,8 @@ object DeltaTime {
     __obj.asInstanceOf[DeltaTime]
   }
   
-  extension [Self <: DeltaTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeltaTime] (val x: Self) extends AnyVal {
     
     inline def setOffsetSeconds(value: OffsetSeconds): Self = StObject.set(x, "offsetSeconds", value.asInstanceOf[js.Any])
     

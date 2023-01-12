@@ -63,7 +63,8 @@ object TestCaseRun {
     __obj.asInstanceOf[TestCaseRun]
   }
   
-  extension [Self <: TestCaseRun](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestCaseRun] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

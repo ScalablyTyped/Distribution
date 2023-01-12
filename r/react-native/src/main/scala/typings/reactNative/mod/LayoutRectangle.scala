@@ -21,7 +21,8 @@ object LayoutRectangle {
     __obj.asInstanceOf[LayoutRectangle]
   }
   
-  extension [Self <: LayoutRectangle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutRectangle] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

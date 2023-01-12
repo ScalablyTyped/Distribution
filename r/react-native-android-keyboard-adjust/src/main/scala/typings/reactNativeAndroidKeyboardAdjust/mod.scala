@@ -51,7 +51,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AndroidKeyboardAdjust]
     }
     
-    extension [Self <: AndroidKeyboardAdjust](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AndroidKeyboardAdjust] (val x: Self) extends AnyVal {
       
       inline def setSetAdjustNothing(value: () => Unit): Self = StObject.set(x, "setAdjustNothing", js.Any.fromFunction0(value))
       

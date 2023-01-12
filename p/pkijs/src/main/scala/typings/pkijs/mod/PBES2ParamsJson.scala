@@ -17,7 +17,8 @@ object PBES2ParamsJson {
     __obj.asInstanceOf[PBES2ParamsJson]
   }
   
-  extension [Self <: PBES2ParamsJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PBES2ParamsJson] (val x: Self) extends AnyVal {
     
     inline def setEncryptionScheme(value: AlgorithmIdentifierJson): Self = StObject.set(x, "encryptionScheme", value.asInstanceOf[js.Any])
     

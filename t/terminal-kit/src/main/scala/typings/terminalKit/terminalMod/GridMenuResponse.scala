@@ -23,7 +23,8 @@ object GridMenuResponse {
     __obj.asInstanceOf[GridMenuResponse]
   }
   
-  extension [Self <: GridMenuResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridMenuResponse] (val x: Self) extends AnyVal {
     
     inline def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
     

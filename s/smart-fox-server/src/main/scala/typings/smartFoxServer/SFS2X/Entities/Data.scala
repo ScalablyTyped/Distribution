@@ -32,7 +32,8 @@ object Data {
       __obj.asInstanceOf[Vec3D]
     }
     
-    extension [Self <: Vec3D](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vec3D] (val x: Self) extends AnyVal {
       
       inline def setIsFloat(value: () => Boolean): Self = StObject.set(x, "isFloat", js.Any.fromFunction0(value))
       

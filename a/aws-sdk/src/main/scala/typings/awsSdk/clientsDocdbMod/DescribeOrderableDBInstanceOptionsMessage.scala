@@ -53,7 +53,8 @@ object DescribeOrderableDBInstanceOptionsMessage {
     __obj.asInstanceOf[DescribeOrderableDBInstanceOptionsMessage]
   }
   
-  extension [Self <: DescribeOrderableDBInstanceOptionsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeOrderableDBInstanceOptionsMessage] (val x: Self) extends AnyVal {
     
     inline def setDBInstanceClass(value: String): Self = StObject.set(x, "DBInstanceClass", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DeleteDatasetRequest {
     __obj.asInstanceOf[DeleteDatasetRequest]
   }
   
-  extension [Self <: DeleteDatasetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDatasetRequest] (val x: Self) extends AnyVal {
     
     inline def setDatasetName(value: DatasetName): Self = StObject.set(x, "datasetName", value.asInstanceOf[js.Any])
   }

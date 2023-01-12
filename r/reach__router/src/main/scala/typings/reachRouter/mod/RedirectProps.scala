@@ -23,7 +23,8 @@ object RedirectProps {
     __obj.asInstanceOf[RedirectProps[TState]]
   }
   
-  extension [Self <: RedirectProps[?], TState](x: Self & RedirectProps[TState]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedirectProps[?], TState] (val x: Self & RedirectProps[TState]) extends AnyVal {
     
     inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

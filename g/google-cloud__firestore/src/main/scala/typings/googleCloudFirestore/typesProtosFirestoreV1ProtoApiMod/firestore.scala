@@ -313,7 +313,8 @@ object firestore {
       __obj.asInstanceOf[IBundleElement]
     }
     
-    extension [Self <: IBundleElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBundleElement] (val x: Self) extends AnyVal {
       
       inline def setDocument(value: IDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
       
@@ -366,7 +367,8 @@ object firestore {
       __obj.asInstanceOf[IBundleMetadata]
     }
     
-    extension [Self <: IBundleMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBundleMetadata] (val x: Self) extends AnyVal {
       
       inline def setCreateTime(value: ITimestamp): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
       
@@ -422,7 +424,8 @@ object firestore {
       __obj.asInstanceOf[IBundledDocumentMetadata]
     }
     
-    extension [Self <: IBundledDocumentMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBundledDocumentMetadata] (val x: Self) extends AnyVal {
       
       inline def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
       
@@ -471,7 +474,8 @@ object firestore {
       __obj.asInstanceOf[IBundledQuery]
     }
     
-    extension [Self <: IBundledQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBundledQuery] (val x: Self) extends AnyVal {
       
       inline def setLimitType(value: LimitType): Self = StObject.set(x, "limitType", value.asInstanceOf[js.Any])
       
@@ -512,7 +516,8 @@ object firestore {
       __obj.asInstanceOf[INamedQuery]
     }
     
-    extension [Self <: INamedQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INamedQuery] (val x: Self) extends AnyVal {
       
       inline def setBundledQuery(value: IBundledQuery): Self = StObject.set(x, "bundledQuery", value.asInstanceOf[js.Any])
       

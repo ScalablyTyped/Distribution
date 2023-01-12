@@ -173,7 +173,8 @@ object PartialTreeSelectProps {
     __obj.asInstanceOf[PartialTreeSelectProps]
   }
   
-  extension [Self <: PartialTreeSelectProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTreeSelectProps] (val x: Self) extends AnyVal {
     
     inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
     

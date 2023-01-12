@@ -52,7 +52,8 @@ object distDeclarationsSrcGetSizingDataMod {
       __obj.asInstanceOf[SizingData]
     }
     
-    extension [Self <: SizingData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizingData] (val x: Self) extends AnyVal {
       
       inline def setBorderSize(value: Double): Self = StObject.set(x, "borderSize", value.asInstanceOf[js.Any])
       

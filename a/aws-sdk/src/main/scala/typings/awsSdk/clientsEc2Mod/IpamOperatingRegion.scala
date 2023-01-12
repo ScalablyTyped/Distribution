@@ -18,7 +18,8 @@ object IpamOperatingRegion {
     __obj.asInstanceOf[IpamOperatingRegion]
   }
   
-  extension [Self <: IpamOperatingRegion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpamOperatingRegion] (val x: Self) extends AnyVal {
     
     inline def setRegionName(value: String): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object IndicesPromoteDataStreamRequest {
     __obj.asInstanceOf[IndicesPromoteDataStreamRequest]
   }
   
-  extension [Self <: IndicesPromoteDataStreamRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesPromoteDataStreamRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: IndexName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

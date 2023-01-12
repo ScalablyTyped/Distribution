@@ -24,7 +24,8 @@ object internal {
       __obj.asInstanceOf[EntryPathRequestedEventOptions]
     }
     
-    extension [Self <: EntryPathRequestedEventOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntryPathRequestedEventOptions] (val x: Self) extends AnyVal {
       
       inline def setEntryPath(value: String): Self = StObject.set(x, "entryPath", value.asInstanceOf[js.Any])
     }
@@ -44,7 +45,8 @@ object internal {
       __obj.asInstanceOf[FilePathRequestedEventOptions]
     }
     
-    extension [Self <: FilePathRequestedEventOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilePathRequestedEventOptions] (val x: Self) extends AnyVal {
       
       inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     }
@@ -65,7 +67,8 @@ object internal {
       __obj.asInstanceOf[RequestedEventOptions]
     }
     
-    extension [Self <: RequestedEventOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestedEventOptions] (val x: Self) extends AnyVal {
       
       inline def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object NameAccept {
     __obj.asInstanceOf[NameAccept]
   }
   
-  extension [Self <: NameAccept](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NameAccept] (val x: Self) extends AnyVal {
     
     inline def setActiveTheme(value: IsRTL): Self = StObject.set(x, "activeTheme", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object StartModelPackagingJobResponse {
     __obj.asInstanceOf[StartModelPackagingJobResponse]
   }
   
-  extension [Self <: StartModelPackagingJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartModelPackagingJobResponse] (val x: Self) extends AnyVal {
     
     inline def setJobName(value: ModelPackagingJobName): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     

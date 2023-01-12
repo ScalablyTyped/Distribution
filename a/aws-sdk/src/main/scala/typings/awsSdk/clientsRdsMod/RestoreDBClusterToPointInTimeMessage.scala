@@ -142,7 +142,8 @@ object RestoreDBClusterToPointInTimeMessage {
     __obj.asInstanceOf[RestoreDBClusterToPointInTimeMessage]
   }
   
-  extension [Self <: RestoreDBClusterToPointInTimeMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreDBClusterToPointInTimeMessage] (val x: Self) extends AnyVal {
     
     inline def setBacktrackWindow(value: LongOptional): Self = StObject.set(x, "BacktrackWindow", value.asInstanceOf[js.Any])
     

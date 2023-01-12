@@ -18,7 +18,8 @@ object GenerateTemplateResponse {
     __obj.asInstanceOf[GenerateTemplateResponse]
   }
   
-  extension [Self <: GenerateTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setS3Location(value: S3Location): Self = StObject.set(x, "s3Location", value.asInstanceOf[js.Any])
     

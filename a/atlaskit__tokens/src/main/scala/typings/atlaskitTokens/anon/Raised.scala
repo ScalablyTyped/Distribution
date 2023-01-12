@@ -21,7 +21,8 @@ object Raised {
     __obj.asInstanceOf[Raised]
   }
   
-  extension [Self <: Raised](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Raised] (val x: Self) extends AnyVal {
     
     inline def setOverflow(value: ShadowToken[BaseToken]): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     

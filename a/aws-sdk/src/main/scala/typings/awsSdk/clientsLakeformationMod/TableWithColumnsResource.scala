@@ -38,7 +38,8 @@ object TableWithColumnsResource {
     __obj.asInstanceOf[TableWithColumnsResource]
   }
   
-  extension [Self <: TableWithColumnsResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableWithColumnsResource] (val x: Self) extends AnyVal {
     
     inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     

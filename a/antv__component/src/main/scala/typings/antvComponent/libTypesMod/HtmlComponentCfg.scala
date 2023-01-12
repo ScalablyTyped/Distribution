@@ -32,7 +32,8 @@ object HtmlComponentCfg {
     __obj.asInstanceOf[HtmlComponentCfg]
   }
   
-  extension [Self <: HtmlComponentCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HtmlComponentCfg] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: HTMLElement | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

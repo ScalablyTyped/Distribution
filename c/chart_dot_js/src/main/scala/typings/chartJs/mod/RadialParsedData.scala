@@ -15,7 +15,8 @@ object RadialParsedData {
     __obj.asInstanceOf[RadialParsedData]
   }
   
-  extension [Self <: RadialParsedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadialParsedData] (val x: Self) extends AnyVal {
     
     inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
   }

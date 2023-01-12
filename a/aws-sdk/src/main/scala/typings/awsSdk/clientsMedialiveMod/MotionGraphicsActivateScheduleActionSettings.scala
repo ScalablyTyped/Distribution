@@ -33,7 +33,8 @@ object MotionGraphicsActivateScheduleActionSettings {
     __obj.asInstanceOf[MotionGraphicsActivateScheduleActionSettings]
   }
   
-  extension [Self <: MotionGraphicsActivateScheduleActionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MotionGraphicsActivateScheduleActionSettings] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: longMin0Max86400000): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[PickAuthorizationCodeauth]
     }
     
-    extension [Self <: PickAuthorizationCodeauth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickAuthorizationCodeauth] (val x: Self) extends AnyVal {
       
       inline def setAuthorizationCode(value: String): Self = StObject.set(x, "authorizationCode", value.asInstanceOf[js.Any])
       

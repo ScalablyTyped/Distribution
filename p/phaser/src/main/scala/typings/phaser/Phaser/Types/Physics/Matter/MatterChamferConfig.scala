@@ -33,7 +33,8 @@ object MatterChamferConfig {
     __obj.asInstanceOf[MatterChamferConfig]
   }
   
-  extension [Self <: MatterChamferConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatterChamferConfig] (val x: Self) extends AnyVal {
     
     inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     

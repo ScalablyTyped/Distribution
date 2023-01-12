@@ -44,7 +44,8 @@ object typesBadgeMod {
       __obj.asInstanceOf[BadgeProps]
     }
     
-    extension [Self <: BadgeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadgeProps] (val x: Self) extends AnyVal {
       
       inline def setDisableNullOnZero(value: Boolean): Self = StObject.set(x, "disableNullOnZero", value.asInstanceOf[js.Any])
       

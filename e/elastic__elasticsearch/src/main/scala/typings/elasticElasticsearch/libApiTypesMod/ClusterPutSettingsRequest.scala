@@ -26,7 +26,8 @@ object ClusterPutSettingsRequest {
     __obj.asInstanceOf[ClusterPutSettingsRequest]
   }
   
-  extension [Self <: ClusterPutSettingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterPutSettingsRequest] (val x: Self) extends AnyVal {
     
     inline def setFlat_settings(value: Boolean): Self = StObject.set(x, "flat_settings", value.asInstanceOf[js.Any])
     

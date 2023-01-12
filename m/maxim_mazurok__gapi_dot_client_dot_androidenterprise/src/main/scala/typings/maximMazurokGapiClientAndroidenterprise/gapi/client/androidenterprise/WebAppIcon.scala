@@ -19,7 +19,8 @@ object WebAppIcon {
     __obj.asInstanceOf[WebAppIcon]
   }
   
-  extension [Self <: WebAppIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebAppIcon] (val x: Self) extends AnyVal {
     
     inline def setImageData(value: String): Self = StObject.set(x, "imageData", value.asInstanceOf[js.Any])
     

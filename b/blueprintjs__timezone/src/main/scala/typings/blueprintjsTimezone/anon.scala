@@ -78,7 +78,8 @@ object anon {
       __obj.asInstanceOf[PartialButtonPropsHTMLBut]
     }
     
-    extension [Self <: PartialButtonPropsHTMLBut](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialButtonPropsHTMLBut] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -266,7 +267,8 @@ object anon {
       __obj.asInstanceOf[PartialIPopoverProps]
     }
     
-    extension [Self <: PartialIPopoverProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIPopoverProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -482,7 +484,8 @@ object anon {
       __obj.asInstanceOf[PartialTimezonePickerProp]
     }
     
-    extension [Self <: PartialTimezonePickerProp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTimezonePickerProp] (val x: Self) extends AnyVal {
       
       inline def setButtonProps(value: PartialButtonPropsHTMLBut): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
       
@@ -617,7 +620,8 @@ object anon {
       __obj.asInstanceOf[TimezonePickerPropschildr]
     }
     
-    extension [Self <: TimezonePickerPropschildr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimezonePickerPropschildr] (val x: Self) extends AnyVal {
       
       inline def setButtonProps(value: PartialButtonPropsHTMLBut): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
       

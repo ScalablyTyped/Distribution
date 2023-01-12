@@ -18,7 +18,8 @@ object AppsDynamiteRoomUpdatedMetadataRoomRenameMetadata {
     __obj.asInstanceOf[AppsDynamiteRoomUpdatedMetadataRoomRenameMetadata]
   }
   
-  extension [Self <: AppsDynamiteRoomUpdatedMetadataRoomRenameMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteRoomUpdatedMetadataRoomRenameMetadata] (val x: Self) extends AnyVal {
     
     inline def setNewName(value: String): Self = StObject.set(x, "newName", value.asInstanceOf[js.Any])
     

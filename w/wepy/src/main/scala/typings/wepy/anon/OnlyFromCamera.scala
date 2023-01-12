@@ -17,7 +17,8 @@ object OnlyFromCamera {
     __obj.asInstanceOf[OnlyFromCamera]
   }
   
-  extension [Self <: OnlyFromCamera](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnlyFromCamera] (val x: Self) extends AnyVal {
     
     inline def setOnlyFromCamera(value: Boolean): Self = StObject.set(x, "onlyFromCamera", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object FromfacetFacet {
     __obj.asInstanceOf[FromfacetFacet]
   }
   
-  extension [Self <: FromfacetFacet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FromfacetFacet] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

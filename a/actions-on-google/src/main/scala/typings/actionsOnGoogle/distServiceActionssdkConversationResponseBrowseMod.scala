@@ -94,7 +94,8 @@ object distServiceActionssdkConversationResponseBrowseMod {
       __obj.asInstanceOf[BrowseCarouselItemOptions]
     }
     
-    extension [Self <: BrowseCarouselItemOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowseCarouselItemOptions] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object distServiceActionssdkConversationResponseBrowseMod {
       __obj.asInstanceOf[BrowseCarouselOptions]
     }
     
-    extension [Self <: BrowseCarouselOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowseCarouselOptions] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: GoogleActionsV2UiElementsCarouselBrowseImageDisplayOptions): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       

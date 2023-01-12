@@ -53,7 +53,8 @@ object ListDate {
     __obj.asInstanceOf[ListDate]
   }
   
-  extension [Self <: ListDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDate] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: ElementType[Any]): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
     

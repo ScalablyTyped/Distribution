@@ -42,7 +42,8 @@ object pathMod {
       __obj.asInstanceOf[Path[SElement]]
     }
     
-    extension [Self <: Path[?], SElement /* <: Element */](x: Self & Path[SElement]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path[?], SElement /* <: Element */] (val x: Self & Path[SElement]) extends AnyVal {
       
       inline def setPath(value: SElement): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

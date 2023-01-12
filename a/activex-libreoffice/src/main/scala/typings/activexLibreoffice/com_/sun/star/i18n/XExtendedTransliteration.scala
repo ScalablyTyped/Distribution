@@ -74,7 +74,8 @@ object XExtendedTransliteration {
     __obj.asInstanceOf[XExtendedTransliteration]
   }
   
-  extension [Self <: XExtendedTransliteration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XExtendedTransliteration] (val x: Self) extends AnyVal {
     
     inline def setTransliterateChar2Char(value: String => String): Self = StObject.set(x, "transliterateChar2Char", js.Any.fromFunction1(value))
     

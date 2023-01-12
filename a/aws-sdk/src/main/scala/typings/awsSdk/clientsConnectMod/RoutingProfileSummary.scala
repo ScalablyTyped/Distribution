@@ -28,7 +28,8 @@ object RoutingProfileSummary {
     __obj.asInstanceOf[RoutingProfileSummary]
   }
   
-  extension [Self <: RoutingProfileSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoutingProfileSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ARN): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object declarationActualComponentEventMod {
       __obj.asInstanceOf[ComponentEvent[PROPS, TYPE, THIS]]
     }
     
-    extension [Self <: ComponentEvent[?, ?, ?], PROPS /* <: Record[String, Any] */, TYPE /* <: String */, THIS](x: Self & (ComponentEvent[PROPS, TYPE, THIS])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentEvent[?, ?, ?], PROPS /* <: Record[String, Any] */, TYPE /* <: String */, THIS] (val x: Self & (ComponentEvent[PROPS, TYPE, THIS])) extends AnyVal {
       
       inline def set_canceled(value: Any): Self = StObject.set(x, "_canceled", value.asInstanceOf[js.Any])
     }

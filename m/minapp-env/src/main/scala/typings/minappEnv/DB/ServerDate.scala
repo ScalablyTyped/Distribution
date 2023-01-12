@@ -15,7 +15,8 @@ object ServerDate {
     __obj.asInstanceOf[ServerDate]
   }
   
-  extension [Self <: ServerDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerDate] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: IServerDateOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }

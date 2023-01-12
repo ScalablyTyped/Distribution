@@ -24,7 +24,8 @@ object `478` {
     __obj.asInstanceOf[`478`]
   }
   
-  extension [Self <: `478`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `478`] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: latest | all): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

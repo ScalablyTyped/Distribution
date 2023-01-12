@@ -668,7 +668,8 @@ object MenuHeaderProps {
     __obj.asInstanceOf[MenuHeaderProps]
   }
   
-  extension [Self <: MenuHeaderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuHeaderProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

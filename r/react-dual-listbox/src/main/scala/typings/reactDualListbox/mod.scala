@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[CategoryOption[T]]
     }
     
-    extension [Self <: CategoryOption[?], T](x: Self & CategoryOption[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CategoryOption[?], T] (val x: Self & CategoryOption[T]) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -197,7 +198,8 @@ object mod {
       __obj.asInstanceOf[CommonProperties[T]]
     }
     
-    extension [Self <: CommonProperties[?], T](x: Self & CommonProperties[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonProperties[?], T] (val x: Self & CommonProperties[T]) extends AnyVal {
       
       inline def setAlignActions(value: top | middle): Self = StObject.set(x, "alignActions", value.asInstanceOf[js.Any])
       
@@ -323,7 +325,8 @@ object mod {
       __obj.asInstanceOf[Filter[T]]
     }
     
-    extension [Self <: Filter[?], T](x: Self & Filter[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filter[?], T] (val x: Self & Filter[T]) extends AnyVal {
       
       inline def setAvailable(value: js.Array[T]): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
       
@@ -377,7 +380,8 @@ object mod {
       __obj.asInstanceOf[FilterProperties[T, F]]
     }
     
-    extension [Self <: FilterProperties[?, ?], T, F /* <: Boolean */](x: Self & (FilterProperties[T, F])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterProperties[?, ?], T, F /* <: Boolean */] (val x: Self & (FilterProperties[T, F])) extends AnyVal {
       
       inline def setCanFilter(value: F): Self = StObject.set(x, "canFilter", value.asInstanceOf[js.Any])
       
@@ -458,7 +462,8 @@ object mod {
       __obj.asInstanceOf[ValueOption[T]]
     }
     
-    extension [Self <: ValueOption[?], T](x: Self & ValueOption[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueOption[?], T] (val x: Self & ValueOption[T]) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -502,7 +507,8 @@ object mod {
       __obj.asInstanceOf[ValueProperties[T, V]]
     }
     
-    extension [Self <: ValueProperties[?, ?], T, V /* <: Boolean */](x: Self & (ValueProperties[T, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueProperties[?, ?], T, V /* <: Boolean */] (val x: Self & (ValueProperties[T, V])) extends AnyVal {
       
       inline def setOnChange(
         value: /* import warning: importer.ImportType#apply Failed type conversion: V extends true ? std.Array<T> : std.Array<react-dual-listbox.react-dual-listbox.Option<T>> */ /* selected */ js.Any => Unit

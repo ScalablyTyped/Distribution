@@ -28,7 +28,8 @@ object ExecutionDetails {
     __obj.asInstanceOf[ExecutionDetails]
   }
   
-  extension [Self <: ExecutionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionDetails] (val x: Self) extends AnyVal {
     
     inline def setMostRecentExecutionMessage(value: MostRecentExecutionMessage): Self = StObject.set(x, "mostRecentExecutionMessage", value.asInstanceOf[js.Any])
     

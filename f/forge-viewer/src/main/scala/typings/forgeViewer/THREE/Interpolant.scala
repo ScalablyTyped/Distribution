@@ -29,7 +29,8 @@ object Interpolant {
     __obj.asInstanceOf[Interpolant]
   }
   
-  extension [Self <: Interpolant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Interpolant] (val x: Self) extends AnyVal {
     
     inline def setEvaluate(value: Double => Any): Self = StObject.set(x, "evaluate", js.Any.fromFunction1(value))
     

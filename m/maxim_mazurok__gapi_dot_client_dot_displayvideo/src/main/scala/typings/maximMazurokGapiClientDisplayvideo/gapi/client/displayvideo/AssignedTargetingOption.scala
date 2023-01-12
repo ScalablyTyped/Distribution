@@ -178,7 +178,8 @@ object AssignedTargetingOption {
     __obj.asInstanceOf[AssignedTargetingOption]
   }
   
-  extension [Self <: AssignedTargetingOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignedTargetingOption] (val x: Self) extends AnyVal {
     
     inline def setAgeRangeDetails(value: AgeRangeAssignedTargetingOptionDetails): Self = StObject.set(x, "ageRangeDetails", value.asInstanceOf[js.Any])
     

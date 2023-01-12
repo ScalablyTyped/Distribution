@@ -21,7 +21,8 @@ object QueryConfig {
     __obj.asInstanceOf[QueryConfig[I]]
   }
   
-  extension [Self <: QueryConfig[?], I /* <: js.Array[Any] */](x: Self & QueryConfig[I]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryConfig[?], I /* <: js.Array[Any] */] (val x: Self & QueryConfig[I]) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

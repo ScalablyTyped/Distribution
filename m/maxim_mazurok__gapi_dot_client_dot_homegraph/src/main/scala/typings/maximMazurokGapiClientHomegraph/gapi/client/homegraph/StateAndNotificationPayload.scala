@@ -16,7 +16,8 @@ object StateAndNotificationPayload {
     __obj.asInstanceOf[StateAndNotificationPayload]
   }
   
-  extension [Self <: StateAndNotificationPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateAndNotificationPayload] (val x: Self) extends AnyVal {
     
     inline def setDevices(value: ReportStateAndNotificationDevice): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     

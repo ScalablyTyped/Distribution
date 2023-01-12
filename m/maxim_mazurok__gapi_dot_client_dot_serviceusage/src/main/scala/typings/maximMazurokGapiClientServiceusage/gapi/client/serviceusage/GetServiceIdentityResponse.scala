@@ -22,7 +22,8 @@ object GetServiceIdentityResponse {
     __obj.asInstanceOf[GetServiceIdentityResponse]
   }
   
-  extension [Self <: GetServiceIdentityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetServiceIdentityResponse] (val x: Self) extends AnyVal {
     
     inline def setIdentity(value: ServiceIdentity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     

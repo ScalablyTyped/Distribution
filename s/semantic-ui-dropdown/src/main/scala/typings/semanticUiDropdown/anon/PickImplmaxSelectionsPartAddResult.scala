@@ -25,7 +25,8 @@ object PickImplmaxSelectionsPartAddResult {
     __obj.asInstanceOf[PickImplmaxSelectionsPartAddResult]
   }
   
-  extension [Self <: PickImplmaxSelectionsPartAddResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplmaxSelectionsPartAddResult] (val x: Self) extends AnyVal {
     
     inline def setAddResult(value: String): Self = StObject.set(x, "addResult", value.asInstanceOf[js.Any])
     

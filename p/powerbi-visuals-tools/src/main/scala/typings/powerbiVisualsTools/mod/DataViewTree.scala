@@ -15,7 +15,8 @@ object DataViewTree {
     __obj.asInstanceOf[DataViewTree]
   }
   
-  extension [Self <: DataViewTree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewTree] (val x: Self) extends AnyVal {
     
     inline def setRoot(value: DataViewTreeNode): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }

@@ -87,7 +87,8 @@ object libUtilsMod {
       __obj.asInstanceOf[CustomRequest]
     }
     
-    extension [Self <: CustomRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomRequest] (val x: Self) extends AnyVal {
       
       inline def setAuthorization(value: String): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object libUtilsMod {
       __obj.asInstanceOf[Host]
     }
     
-    extension [Self <: Host](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -141,7 +143,8 @@ object libUtilsMod {
       __obj.asInstanceOf[ParseRequestOptions]
     }
     
-    extension [Self <: ParseRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

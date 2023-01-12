@@ -15,7 +15,8 @@ object TagName {
     __obj.asInstanceOf[TagName[K]]
   }
   
-  extension [Self <: TagName[?], K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.carbonComponentsReact.carbonComponentsReactStrings.a, typings.carbonComponentsReact.carbonComponentsReactStrings.abbr, typings.carbonComponentsReact.carbonComponentsReactStrings.address */ Any */](x: Self & TagName[K]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagName[?], K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.carbonComponentsReact.carbonComponentsReactStrings.a, typings.carbonComponentsReact.carbonComponentsReactStrings.abbr, typings.carbonComponentsReact.carbonComponentsReactStrings.address */ Any */] (val x: Self & TagName[K]) extends AnyVal {
     
     inline def setTagName(value: K): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
   }

@@ -21,7 +21,8 @@ object GoogleCloudMemcacheV1LocationMetadata {
     __obj.asInstanceOf[GoogleCloudMemcacheV1LocationMetadata]
   }
   
-  extension [Self <: GoogleCloudMemcacheV1LocationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMemcacheV1LocationMetadata] (val x: Self) extends AnyVal {
     
     inline def setAvailableZones(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

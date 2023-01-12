@@ -32,7 +32,8 @@ object CodeBuildEnv {
     __obj.asInstanceOf[CodeBuildEnv]
   }
   
-  extension [Self <: CodeBuildEnv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeBuildEnv] (val x: Self) extends AnyVal {
     
     inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     

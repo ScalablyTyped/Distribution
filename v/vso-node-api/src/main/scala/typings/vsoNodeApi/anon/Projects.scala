@@ -17,7 +17,8 @@ object Projects {
     __obj.asInstanceOf[Projects]
   }
   
-  extension [Self <: Projects](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Projects] (val x: Self) extends AnyVal {
     
     inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     

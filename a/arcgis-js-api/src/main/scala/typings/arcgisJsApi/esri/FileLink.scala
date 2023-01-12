@@ -56,7 +56,8 @@ object FileLink {
     __obj.asInstanceOf[FileLink]
   }
   
-  extension [Self <: FileLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileLink] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

@@ -215,7 +215,8 @@ object UnoControlComboBoxModel {
     __obj.asInstanceOf[UnoControlComboBoxModel]
   }
   
-  extension [Self <: UnoControlComboBoxModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnoControlComboBoxModel] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: Double): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
     

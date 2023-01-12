@@ -53,7 +53,8 @@ object mod {
       __obj.asInstanceOf[ToIcoOptions]
     }
     
-    extension [Self <: ToIcoOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToIcoOptions] (val x: Self) extends AnyVal {
       
       inline def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
       

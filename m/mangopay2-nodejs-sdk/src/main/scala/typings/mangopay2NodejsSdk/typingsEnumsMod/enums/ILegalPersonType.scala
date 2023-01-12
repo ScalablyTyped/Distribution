@@ -25,7 +25,8 @@ object ILegalPersonType {
     __obj.asInstanceOf[ILegalPersonType]
   }
   
-  extension [Self <: ILegalPersonType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILegalPersonType] (val x: Self) extends AnyVal {
     
     inline def setBusiness(value: BUSINESS): Self = StObject.set(x, "Business", value.asInstanceOf[js.Any])
     

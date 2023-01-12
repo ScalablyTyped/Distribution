@@ -16,7 +16,8 @@ object EncryptedAppTicket {
     __obj.asInstanceOf[EncryptedAppTicket]
   }
   
-  extension [Self <: EncryptedAppTicket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncryptedAppTicket] (val x: Self) extends AnyVal {
     
     inline def setEncryptedAppTicket(value: Buffer): Self = StObject.set(x, "encryptedAppTicket", value.asInstanceOf[js.Any])
   }

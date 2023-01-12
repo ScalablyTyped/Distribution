@@ -33,7 +33,8 @@ object AwsS3BucketWebsiteConfiguration {
     __obj.asInstanceOf[AwsS3BucketWebsiteConfiguration]
   }
   
-  extension [Self <: AwsS3BucketWebsiteConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsS3BucketWebsiteConfiguration] (val x: Self) extends AnyVal {
     
     inline def setErrorDocument(value: NonEmptyString): Self = StObject.set(x, "ErrorDocument", value.asInstanceOf[js.Any])
     

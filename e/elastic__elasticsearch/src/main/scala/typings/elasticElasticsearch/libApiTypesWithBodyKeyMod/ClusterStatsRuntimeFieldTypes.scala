@@ -56,7 +56,8 @@ object ClusterStatsRuntimeFieldTypes {
     __obj.asInstanceOf[ClusterStatsRuntimeFieldTypes]
   }
   
-  extension [Self <: ClusterStatsRuntimeFieldTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatsRuntimeFieldTypes] (val x: Self) extends AnyVal {
     
     inline def setChars_max(value: integer): Self = StObject.set(x, "chars_max", value.asInstanceOf[js.Any])
     

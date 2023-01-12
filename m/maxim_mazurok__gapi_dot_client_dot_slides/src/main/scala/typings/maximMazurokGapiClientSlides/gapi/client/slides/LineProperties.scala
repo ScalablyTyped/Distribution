@@ -37,7 +37,8 @@ object LineProperties {
     __obj.asInstanceOf[LineProperties]
   }
   
-  extension [Self <: LineProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineProperties] (val x: Self) extends AnyVal {
     
     inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     

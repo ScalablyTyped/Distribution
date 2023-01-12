@@ -28,7 +28,8 @@ object PartialBlockInstancekstri {
     __obj.asInstanceOf[PartialBlockInstancekstri]
   }
   
-  extension [Self <: PartialBlockInstancekstri](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialBlockInstancekstri] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: StringDictionary[Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

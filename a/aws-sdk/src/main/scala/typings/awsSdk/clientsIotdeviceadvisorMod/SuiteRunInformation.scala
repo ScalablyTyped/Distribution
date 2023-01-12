@@ -63,7 +63,8 @@ object SuiteRunInformation {
     __obj.asInstanceOf[SuiteRunInformation]
   }
   
-  extension [Self <: SuiteRunInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuiteRunInformation] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

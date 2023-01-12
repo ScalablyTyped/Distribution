@@ -48,7 +48,8 @@ object UpdatePoolRequest {
     __obj.asInstanceOf[UpdatePoolRequest]
   }
   
-  extension [Self <: UpdatePoolRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePoolRequest] (val x: Self) extends AnyVal {
     
     inline def setDeletionProtectionEnabled(value: Boolean): Self = StObject.set(x, "DeletionProtectionEnabled", value.asInstanceOf[js.Any])
     

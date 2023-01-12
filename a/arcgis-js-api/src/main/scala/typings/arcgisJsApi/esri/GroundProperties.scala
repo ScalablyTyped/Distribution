@@ -47,7 +47,8 @@ object GroundProperties {
     __obj.asInstanceOf[GroundProperties]
   }
   
-  extension [Self <: GroundProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroundProperties] (val x: Self) extends AnyVal {
     
     inline def setLayers(value: CollectionProperties[ElevationLayerProperties]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     

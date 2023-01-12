@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[IsCuid]
     }
     
-    extension [Self <: IsCuid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsCuid] (val x: Self) extends AnyVal {
       
       inline def setIsCuid(value: String => Boolean): Self = StObject.set(x, "isCuid", js.Any.fromFunction1(value))
       

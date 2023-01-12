@@ -23,7 +23,8 @@ object DeleteUserPoolClientRequest {
     __obj.asInstanceOf[DeleteUserPoolClientRequest]
   }
   
-  extension [Self <: DeleteUserPoolClientRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteUserPoolClientRequest] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     

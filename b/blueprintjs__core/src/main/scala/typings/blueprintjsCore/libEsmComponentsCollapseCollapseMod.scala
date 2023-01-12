@@ -172,7 +172,8 @@ object libEsmComponentsCollapseCollapseMod {
       __obj.asInstanceOf[ICollapseProps]
     }
     
-    extension [Self <: ICollapseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICollapseProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -216,7 +217,8 @@ object libEsmComponentsCollapseCollapseMod {
       __obj.asInstanceOf[ICollapseState]
     }
     
-    extension [Self <: ICollapseState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICollapseState] (val x: Self) extends AnyVal {
       
       inline def setAnimationState(value: AnimationStates): Self = StObject.set(x, "animationState", value.asInstanceOf[js.Any])
       

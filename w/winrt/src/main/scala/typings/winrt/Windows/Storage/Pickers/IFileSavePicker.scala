@@ -49,7 +49,8 @@ object IFileSavePicker {
     __obj.asInstanceOf[IFileSavePicker]
   }
   
-  extension [Self <: IFileSavePicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFileSavePicker] (val x: Self) extends AnyVal {
     
     inline def setCommitButtonText(value: String): Self = StObject.set(x, "commitButtonText", value.asInstanceOf[js.Any])
     

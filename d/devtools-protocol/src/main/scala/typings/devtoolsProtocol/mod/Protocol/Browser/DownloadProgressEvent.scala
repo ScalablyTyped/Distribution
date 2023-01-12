@@ -36,7 +36,8 @@ object DownloadProgressEvent {
     __obj.asInstanceOf[DownloadProgressEvent]
   }
   
-  extension [Self <: DownloadProgressEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadProgressEvent] (val x: Self) extends AnyVal {
     
     inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     

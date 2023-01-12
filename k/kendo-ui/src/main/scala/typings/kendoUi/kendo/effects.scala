@@ -33,7 +33,8 @@ object effects {
       __obj.asInstanceOf[Effect]
     }
     
-    extension [Self <: Effect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Effect] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: Effect => Effect): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -135,7 +136,8 @@ object effects {
       __obj.asInstanceOf[Element]
     }
     
-    extension [Self <: Element](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
       
       inline def setExpand(value: String => Expand): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
       
@@ -211,7 +213,8 @@ object effects {
       __obj.asInstanceOf[Expand]
     }
     
-    extension [Self <: Expand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Expand] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: String => Expand): Self = StObject.set(x, "direction", js.Any.fromFunction1(value))
     }
@@ -243,7 +246,8 @@ object effects {
       __obj.asInstanceOf[Fade]
     }
     
-    extension [Self <: Fade](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fade] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: String => Fade): Self = StObject.set(x, "direction", js.Any.fromFunction1(value))
       
@@ -273,7 +277,8 @@ object effects {
       __obj.asInstanceOf[Flip]
     }
     
-    extension [Self <: Flip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Flip] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: String => Flip): Self = StObject.set(x, "direction", js.Any.fromFunction1(value))
     }
@@ -299,7 +304,8 @@ object effects {
       __obj.asInstanceOf[PageTurn]
     }
     
-    extension [Self <: PageTurn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageTurn] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: String => PageTurn): Self = StObject.set(x, "direction", js.Any.fromFunction1(value))
     }
@@ -325,7 +331,8 @@ object effects {
       __obj.asInstanceOf[SlideIn]
     }
     
-    extension [Self <: SlideIn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlideIn] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: String => SlideIn): Self = StObject.set(x, "direction", js.Any.fromFunction1(value))
     }
@@ -351,7 +358,8 @@ object effects {
       __obj.asInstanceOf[Tile]
     }
     
-    extension [Self <: Tile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tile] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: String => Tile): Self = StObject.set(x, "direction", js.Any.fromFunction1(value))
     }
@@ -400,7 +408,8 @@ object effects {
       __obj.asInstanceOf[Zoom]
     }
     
-    extension [Self <: Zoom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Zoom] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: String => Zoom): Self = StObject.set(x, "direction", js.Any.fromFunction1(value))
       

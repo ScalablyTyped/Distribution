@@ -20,7 +20,8 @@ object CreateJourneyRequest {
     __obj.asInstanceOf[CreateJourneyRequest]
   }
   
-  extension [Self <: CreateJourneyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateJourneyRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

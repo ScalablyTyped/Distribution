@@ -29,7 +29,8 @@ object timezonepickerTypesMod {
       __obj.asInstanceOf[Timezone]
     }
     
-    extension [Self <: Timezone](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Timezone] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object timezonepickerTypesMod {
       __obj.asInstanceOf[TimezonePickerOverrides]
     }
     
-    extension [Self <: TimezonePickerOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimezonePickerOverrides] (val x: Self) extends AnyVal {
       
       inline def setSelect(value: Override[Any]): Self = StObject.set(x, "Select", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object timezonepickerTypesMod {
       __obj.asInstanceOf[TimezonePickerProps]
     }
     
-    extension [Self <: TimezonePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimezonePickerProps] (val x: Self) extends AnyVal {
       
       inline def setAdditionalTimezones(value: js.Array[Timezone]): Self = StObject.set(x, "additionalTimezones", value.asInstanceOf[js.Any])
       
@@ -172,7 +175,8 @@ object timezonepickerTypesMod {
       __obj.asInstanceOf[TimezonePickerState]
     }
     
-    extension [Self <: TimezonePickerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimezonePickerState] (val x: Self) extends AnyVal {
       
       inline def setTimezones(value: js.Array[Timezone]): Self = StObject.set(x, "timezones", value.asInstanceOf[js.Any])
       

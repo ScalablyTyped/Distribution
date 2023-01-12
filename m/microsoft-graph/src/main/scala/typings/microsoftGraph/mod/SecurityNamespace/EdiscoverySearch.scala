@@ -37,7 +37,8 @@ object EdiscoverySearch {
     __obj.asInstanceOf[EdiscoverySearch]
   }
   
-  extension [Self <: EdiscoverySearch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdiscoverySearch] (val x: Self) extends AnyVal {
     
     inline def setAddToReviewSetOperation(value: NullableOption[EdiscoveryAddToReviewSetOperation]): Self = StObject.set(x, "addToReviewSetOperation", value.asInstanceOf[js.Any])
     

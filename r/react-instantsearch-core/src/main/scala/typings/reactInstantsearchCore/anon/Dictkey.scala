@@ -18,7 +18,8 @@ object Dictkey {
     __obj.asInstanceOf[Dictkey]
   }
   
-  extension [Self <: Dictkey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
     
     inline def setAroundLatLng(value: Boolean): Self = StObject.set(x, "aroundLatLng", value.asInstanceOf[js.Any])
   }

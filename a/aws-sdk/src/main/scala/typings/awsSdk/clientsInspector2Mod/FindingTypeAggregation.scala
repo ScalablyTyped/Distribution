@@ -33,7 +33,8 @@ object FindingTypeAggregation {
     __obj.asInstanceOf[FindingTypeAggregation]
   }
   
-  extension [Self <: FindingTypeAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindingTypeAggregation] (val x: Self) extends AnyVal {
     
     inline def setFindingType(value: AggregationFindingType): Self = StObject.set(x, "findingType", value.asInstanceOf[js.Any])
     

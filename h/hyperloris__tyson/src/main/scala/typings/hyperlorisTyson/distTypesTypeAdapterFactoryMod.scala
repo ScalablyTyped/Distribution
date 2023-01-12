@@ -20,7 +20,8 @@ object distTypesTypeAdapterFactoryMod {
       __obj.asInstanceOf[TypeAdapterFactory]
     }
     
-    extension [Self <: TypeAdapterFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeAdapterFactory] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: (Tyson, TypeToken[Any]) => js.UndefOr[TypeAdapter[Any]]): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     }

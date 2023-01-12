@@ -75,7 +75,8 @@ object PartialOmitTagInputPropsi {
     __obj.asInstanceOf[PartialOmitTagInputPropsi]
   }
   
-  extension [Self <: PartialOmitTagInputPropsi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOmitTagInputPropsi] (val x: Self) extends AnyVal {
     
     inline def setAddOnBlur(value: Boolean): Self = StObject.set(x, "addOnBlur", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object distTs3Dot9ArgTypesConvertFlowTypesMod {
       __obj.asInstanceOf[FlowArrayType]
     }
     
-    extension [Self <: FlowArrayType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlowArrayType] (val x: Self) extends AnyVal {
       
       inline def setElements(value: js.Array[FlowType]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object distTs3Dot9ArgTypesConvertFlowTypesMod {
       __obj.asInstanceOf[FlowBaseType]
     }
     
-    extension [Self <: FlowBaseType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlowBaseType] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object distTs3Dot9ArgTypesConvertFlowTypesMod {
       __obj.asInstanceOf[FlowCombinationType]
     }
     
-    extension [Self <: FlowCombinationType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlowCombinationType] (val x: Self) extends AnyVal {
       
       inline def setElements(value: js.Array[FlowType]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
@@ -133,7 +136,8 @@ object distTs3Dot9ArgTypesConvertFlowTypesMod {
       __obj.asInstanceOf[FlowFuncSigType]
     }
     
-    extension [Self <: FlowFuncSigType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlowFuncSigType] (val x: Self) extends AnyVal {
       
       inline def setName(value: signature): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -160,7 +164,8 @@ object distTs3Dot9ArgTypesConvertFlowTypesMod {
       __obj.asInstanceOf[FlowLiteralType]
     }
     
-    extension [Self <: FlowLiteralType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlowLiteralType] (val x: Self) extends AnyVal {
       
       inline def setName(value: literal): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -189,7 +194,8 @@ object distTs3Dot9ArgTypesConvertFlowTypesMod {
       __obj.asInstanceOf[FlowObjectSigType]
     }
     
-    extension [Self <: FlowObjectSigType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlowObjectSigType] (val x: Self) extends AnyVal {
       
       inline def setName(value: signature): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -214,7 +220,8 @@ object distTs3Dot9ArgTypesConvertFlowTypesMod {
       __obj.asInstanceOf[FlowScalarType]
     }
     
-    extension [Self <: FlowScalarType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlowScalarType] (val x: Self) extends AnyVal {
       
       inline def setName(value: any | boolean | number | void | string | symbol): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

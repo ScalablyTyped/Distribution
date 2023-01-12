@@ -46,7 +46,8 @@ object opacityVisualVariableResult {
     __obj.asInstanceOf[opacityVisualVariableResult]
   }
   
-  extension [Self <: opacityVisualVariableResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: opacityVisualVariableResult] (val x: Self) extends AnyVal {
     
     inline def setAuthoringInfo(value: AuthoringInfo): Self = StObject.set(x, "authoringInfo", value.asInstanceOf[js.Any])
     

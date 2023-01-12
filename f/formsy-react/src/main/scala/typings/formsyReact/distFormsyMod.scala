@@ -573,7 +573,8 @@ object distFormsyMod {
       __obj.asInstanceOf[FormHTMLAttributesCleaned]
     }
     
-    extension [Self <: FormHTMLAttributesCleaned](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormHTMLAttributesCleaned] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1354,7 +1355,8 @@ object distFormsyMod {
       __obj.asInstanceOf[FormsyProps]
     }
     
-    extension [Self <: FormsyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormsyProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -1429,7 +1431,8 @@ object distFormsyMod {
       __obj.asInstanceOf[FormsyState]
     }
     
-    extension [Self <: FormsyState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormsyState] (val x: Self) extends AnyVal {
       
       inline def setCanChange(value: Boolean): Self = StObject.set(x, "canChange", value.asInstanceOf[js.Any])
       

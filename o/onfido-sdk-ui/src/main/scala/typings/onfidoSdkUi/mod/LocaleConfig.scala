@@ -20,7 +20,8 @@ object LocaleConfig {
     __obj.asInstanceOf[LocaleConfig]
   }
   
-  extension [Self <: LocaleConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocaleConfig] (val x: Self) extends AnyVal {
     
     inline def setLocale(value: SupportedLanguages): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

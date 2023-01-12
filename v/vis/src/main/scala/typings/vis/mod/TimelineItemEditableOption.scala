@@ -19,7 +19,8 @@ object TimelineItemEditableOption {
     __obj.asInstanceOf[TimelineItemEditableOption]
   }
   
-  extension [Self <: TimelineItemEditableOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineItemEditableOption] (val x: Self) extends AnyVal {
     
     inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object distTypesMod {
       __obj.asInstanceOf[Cache[Data]]
     }
     
-    extension [Self <: Cache[?], Data](x: Self & Cache[Data]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cache[?], Data] (val x: Self & Cache[Data]) extends AnyVal {
       
       inline def setDelete(value: Key => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       
@@ -87,7 +88,8 @@ object distTypesMod {
       __obj.asInstanceOf[InternalConfiguration]
     }
     
-    extension [Self <: InternalConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalConfiguration] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Cache[Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object distTypesMod {
       __obj.asInstanceOf[MutatorOptions[Data]]
     }
     
-    extension [Self <: MutatorOptions[?], Data](x: Self & MutatorOptions[Data]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MutatorOptions[?], Data] (val x: Self & MutatorOptions[Data]) extends AnyVal {
       
       inline def setOptimisticData(value: Data | (js.Function1[/* currentData */ js.UndefOr[Data], Data])): Self = StObject.set(x, "optimisticData", value.asInstanceOf[js.Any])
       
@@ -198,7 +201,8 @@ object distTypesMod {
       __obj.asInstanceOf[ProviderConfiguration]
     }
     
-    extension [Self <: ProviderConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProviderConfiguration] (val x: Self) extends AnyVal {
       
       inline def setInitFocus(value: js.Function0[Unit] => js.Function0[Unit] | Unit): Self = StObject.set(x, "initFocus", js.Any.fromFunction1(value))
       
@@ -298,7 +302,8 @@ object distTypesMod {
       __obj.asInstanceOf[RevalidatorOptions]
     }
     
-    extension [Self <: RevalidatorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RevalidatorOptions] (val x: Self) extends AnyVal {
       
       inline def setDedupe(value: Boolean): Self = StObject.set(x, "dedupe", value.asInstanceOf[js.Any])
       
@@ -399,7 +404,8 @@ object distTypesMod {
       __obj.asInstanceOf[SWRConfiguration[Data, Error, Fn]]
     }
     
-    extension [Self <: SWRConfiguration[?, ?, ?], Data, Error, Fn /* <: BareFetcher[Any] */](x: Self & (SWRConfiguration[Data, Error, Fn])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SWRConfiguration[?, ?, ?], Data, Error, Fn /* <: BareFetcher[Any] */] (val x: Self & (SWRConfiguration[Data, Error, Fn])) extends AnyVal {
       
       inline def setCompare(value: (/* a */ js.UndefOr[Data], /* b */ js.UndefOr[Data]) => Boolean): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
       
@@ -559,7 +565,8 @@ object distTypesMod {
       __obj.asInstanceOf[SWRResponse[Data, Error]]
     }
     
-    extension [Self <: SWRResponse[?, ?], Data, Error](x: Self & (SWRResponse[Data, Error])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SWRResponse[?, ?], Data, Error] (val x: Self & (SWRResponse[Data, Error])) extends AnyVal {
       
       inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -610,7 +617,8 @@ object distTypesMod {
       __obj.asInstanceOf[State[Data, Error]]
     }
     
-    extension [Self <: State[?, ?], Data, Error](x: Self & (State[Data, Error])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State[?, ?], Data, Error] (val x: Self & (State[Data, Error])) extends AnyVal {
       
       inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

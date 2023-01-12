@@ -42,7 +42,8 @@ object EventIceComponentStateCha {
     __obj.asInstanceOf[EventIceComponentStateCha]
   }
   
-  extension [Self <: EventIceComponentStateCha](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventIceComponentStateCha] (val x: Self) extends AnyVal {
     
     inline def setComponentId(value: Double): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
     

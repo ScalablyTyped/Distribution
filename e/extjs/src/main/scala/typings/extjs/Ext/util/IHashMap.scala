@@ -103,7 +103,8 @@ object IHashMap {
     __obj.asInstanceOf[IHashMap]
   }
   
-  extension [Self <: IHashMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHashMap] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (/* key */ js.UndefOr[Any], /* o */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

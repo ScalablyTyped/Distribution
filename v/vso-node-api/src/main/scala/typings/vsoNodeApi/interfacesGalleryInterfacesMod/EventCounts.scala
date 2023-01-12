@@ -68,7 +68,8 @@ object EventCounts {
     __obj.asInstanceOf[EventCounts]
   }
   
-  extension [Self <: EventCounts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventCounts] (val x: Self) extends AnyVal {
     
     inline def setAverageRating(value: Double): Self = StObject.set(x, "averageRating", value.asInstanceOf[js.Any])
     

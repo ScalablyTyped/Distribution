@@ -33,7 +33,8 @@ object ListRecipesRequest {
     __obj.asInstanceOf[ListRecipesRequest]
   }
   
-  extension [Self <: ListRecipesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRecipesRequest] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: Domain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

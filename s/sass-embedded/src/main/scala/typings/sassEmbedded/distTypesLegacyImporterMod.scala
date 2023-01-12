@@ -109,7 +109,8 @@ object distTypesLegacyImporterMod {
       __obj.asInstanceOf[LegacyImporterThis]
     }
     
-    extension [Self <: LegacyImporterThis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacyImporterThis] (val x: Self) extends AnyVal {
       
       inline def setFromImport(value: Boolean): Self = StObject.set(x, "fromImport", value.asInstanceOf[js.Any])
     }

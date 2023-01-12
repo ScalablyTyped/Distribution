@@ -75,7 +75,8 @@ object TapeArchive {
     __obj.asInstanceOf[TapeArchive]
   }
   
-  extension [Self <: TapeArchive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TapeArchive] (val x: Self) extends AnyVal {
     
     inline def setCompletionTime(value: js.Date): Self = StObject.set(x, "CompletionTime", value.asInstanceOf[js.Any])
     

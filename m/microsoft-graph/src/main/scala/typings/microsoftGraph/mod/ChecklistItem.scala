@@ -27,7 +27,8 @@ object ChecklistItem {
     __obj.asInstanceOf[ChecklistItem]
   }
   
-  extension [Self <: ChecklistItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChecklistItem] (val x: Self) extends AnyVal {
     
     inline def setCheckedDateTime(value: NullableOption[String]): Self = StObject.set(x, "checkedDateTime", value.asInstanceOf[js.Any])
     

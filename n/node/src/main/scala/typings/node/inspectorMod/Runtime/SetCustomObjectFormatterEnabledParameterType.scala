@@ -15,7 +15,8 @@ object SetCustomObjectFormatterEnabledParameterType {
     __obj.asInstanceOf[SetCustomObjectFormatterEnabledParameterType]
   }
   
-  extension [Self <: SetCustomObjectFormatterEnabledParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetCustomObjectFormatterEnabledParameterType] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }

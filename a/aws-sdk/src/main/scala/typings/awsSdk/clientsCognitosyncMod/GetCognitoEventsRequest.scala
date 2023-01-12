@@ -18,7 +18,8 @@ object GetCognitoEventsRequest {
     __obj.asInstanceOf[GetCognitoEventsRequest]
   }
   
-  extension [Self <: GetCognitoEventsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCognitoEventsRequest] (val x: Self) extends AnyVal {
     
     inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
   }

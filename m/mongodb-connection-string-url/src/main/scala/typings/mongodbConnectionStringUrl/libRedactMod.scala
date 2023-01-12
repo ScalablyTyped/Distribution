@@ -31,7 +31,8 @@ object libRedactMod {
       __obj.asInstanceOf[ConnectionStringRedactionOptions]
     }
     
-    extension [Self <: ConnectionStringRedactionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionStringRedactionOptions] (val x: Self) extends AnyVal {
       
       inline def setRedactUsernames(value: Boolean): Self = StObject.set(x, "redactUsernames", value.asInstanceOf[js.Any])
       

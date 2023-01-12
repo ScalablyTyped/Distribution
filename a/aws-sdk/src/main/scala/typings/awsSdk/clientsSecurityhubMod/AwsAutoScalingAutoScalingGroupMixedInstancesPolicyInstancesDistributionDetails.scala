@@ -43,7 +43,8 @@ object AwsAutoScalingAutoScalingGroupMixedInstancesPolicyInstancesDistributionDe
     __obj.asInstanceOf[AwsAutoScalingAutoScalingGroupMixedInstancesPolicyInstancesDistributionDetails]
   }
   
-  extension [Self <: AwsAutoScalingAutoScalingGroupMixedInstancesPolicyInstancesDistributionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsAutoScalingAutoScalingGroupMixedInstancesPolicyInstancesDistributionDetails] (val x: Self) extends AnyVal {
     
     inline def setOnDemandAllocationStrategy(value: NonEmptyString): Self = StObject.set(x, "OnDemandAllocationStrategy", value.asInstanceOf[js.Any])
     

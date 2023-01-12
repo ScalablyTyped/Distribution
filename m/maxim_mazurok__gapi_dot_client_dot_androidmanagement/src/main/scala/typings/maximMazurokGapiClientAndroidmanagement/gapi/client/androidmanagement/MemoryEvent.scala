@@ -22,7 +22,8 @@ object MemoryEvent {
     __obj.asInstanceOf[MemoryEvent]
   }
   
-  extension [Self <: MemoryEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemoryEvent] (val x: Self) extends AnyVal {
     
     inline def setByteCount(value: String): Self = StObject.set(x, "byteCount", value.asInstanceOf[js.Any])
     

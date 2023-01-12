@@ -28,7 +28,8 @@ object DescribeVirtualGatewayInput {
     __obj.asInstanceOf[DescribeVirtualGatewayInput]
   }
   
-  extension [Self <: DescribeVirtualGatewayInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeVirtualGatewayInput] (val x: Self) extends AnyVal {
     
     inline def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
     

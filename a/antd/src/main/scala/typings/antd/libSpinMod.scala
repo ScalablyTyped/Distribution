@@ -28,7 +28,8 @@ object libSpinMod extends Shortcut {
       __obj.asInstanceOf[SpinClassProps]
     }
     
-    extension [Self <: SpinClassProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpinClassProps] (val x: Self) extends AnyVal {
       
       inline def setSpinPrefixCls(value: String): Self = StObject.set(x, "spinPrefixCls", value.asInstanceOf[js.Any])
     }
@@ -73,7 +74,8 @@ object libSpinMod extends Shortcut {
       __obj.asInstanceOf[SpinProps]
     }
     
-    extension [Self <: SpinProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpinProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

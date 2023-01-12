@@ -28,7 +28,8 @@ object ListVocabularyFiltersRequest {
     __obj.asInstanceOf[ListVocabularyFiltersRequest]
   }
   
-  extension [Self <: ListVocabularyFiltersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListVocabularyFiltersRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

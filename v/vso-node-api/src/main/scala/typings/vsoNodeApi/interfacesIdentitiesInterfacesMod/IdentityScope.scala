@@ -44,7 +44,8 @@ object IdentityScope {
     __obj.asInstanceOf[IdentityScope]
   }
   
-  extension [Self <: IdentityScope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityScope] (val x: Self) extends AnyVal {
     
     inline def setAdministrators(value: IdentityDescriptor): Self = StObject.set(x, "administrators", value.asInstanceOf[js.Any])
     

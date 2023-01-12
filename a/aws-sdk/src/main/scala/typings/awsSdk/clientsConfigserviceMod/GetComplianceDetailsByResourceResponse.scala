@@ -23,7 +23,8 @@ object GetComplianceDetailsByResourceResponse {
     __obj.asInstanceOf[GetComplianceDetailsByResourceResponse]
   }
   
-  extension [Self <: GetComplianceDetailsByResourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetComplianceDetailsByResourceResponse] (val x: Self) extends AnyVal {
     
     inline def setEvaluationResults(value: EvaluationResults): Self = StObject.set(x, "EvaluationResults", value.asInstanceOf[js.Any])
     

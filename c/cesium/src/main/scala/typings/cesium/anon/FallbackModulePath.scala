@@ -19,7 +19,8 @@ object FallbackModulePath {
     __obj.asInstanceOf[FallbackModulePath]
   }
   
-  extension [Self <: FallbackModulePath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FallbackModulePath] (val x: Self) extends AnyVal {
     
     inline def setFallbackModulePath(value: String): Self = StObject.set(x, "fallbackModulePath", value.asInstanceOf[js.Any])
     

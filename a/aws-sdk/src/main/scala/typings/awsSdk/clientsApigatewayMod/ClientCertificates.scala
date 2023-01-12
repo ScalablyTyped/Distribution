@@ -20,7 +20,8 @@ object ClientCertificates {
     __obj.asInstanceOf[ClientCertificates]
   }
   
-  extension [Self <: ClientCertificates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientCertificates] (val x: Self) extends AnyVal {
     
     inline def setItems(value: ListOfClientCertificate): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

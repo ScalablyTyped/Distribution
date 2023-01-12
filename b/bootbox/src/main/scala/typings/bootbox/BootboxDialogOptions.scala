@@ -29,7 +29,8 @@ object BootboxDialogOptions {
     __obj.asInstanceOf[BootboxDialogOptions[T]]
   }
   
-  extension [Self <: BootboxDialogOptions[?], T](x: Self & BootboxDialogOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootboxDialogOptions[?], T] (val x: Self & BootboxDialogOptions[T]) extends AnyVal {
     
     inline def setCenterVertical(value: Boolean): Self = StObject.set(x, "centerVertical", value.asInstanceOf[js.Any])
     

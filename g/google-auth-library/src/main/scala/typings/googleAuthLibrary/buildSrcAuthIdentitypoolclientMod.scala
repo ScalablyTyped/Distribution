@@ -88,7 +88,8 @@ object buildSrcAuthIdentitypoolclientMod {
       __obj.asInstanceOf[IdentityPoolClientOptions]
     }
     
-    extension [Self <: IdentityPoolClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdentityPoolClientOptions] (val x: Self) extends AnyVal {
       
       inline def setCredential_source(value: File): Self = StObject.set(x, "credential_source", value.asInstanceOf[js.Any])
     }

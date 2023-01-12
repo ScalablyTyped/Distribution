@@ -23,7 +23,8 @@ object Publishing {
     __obj.asInstanceOf[Publishing]
   }
   
-  extension [Self <: Publishing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Publishing] (val x: Self) extends AnyVal {
     
     inline def setPublishing(value: js.Array[java.lang.String]): Self = StObject.set(x, "publishing", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object StackAnimationOptions {
     __obj.asInstanceOf[StackAnimationOptions]
   }
   
-  extension [Self <: StackAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setBottomTabs(value: ViewAnimationOptions | Enter): Self = StObject.set(x, "bottomTabs", value.asInstanceOf[js.Any])
     

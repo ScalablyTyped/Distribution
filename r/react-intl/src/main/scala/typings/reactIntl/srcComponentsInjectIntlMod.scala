@@ -54,7 +54,8 @@ object srcComponentsInjectIntlMod {
       __obj.asInstanceOf[Opts[IntlPropName, ForwardRef]]
     }
     
-    extension [Self <: Opts[?, ?], IntlPropName /* <: String */, ForwardRef /* <: Boolean */](x: Self & (Opts[IntlPropName, ForwardRef])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opts[?, ?], IntlPropName /* <: String */, ForwardRef /* <: Boolean */] (val x: Self & (Opts[IntlPropName, ForwardRef])) extends AnyVal {
       
       inline def setEnforceContext(value: Boolean): Self = StObject.set(x, "enforceContext", value.asInstanceOf[js.Any])
       

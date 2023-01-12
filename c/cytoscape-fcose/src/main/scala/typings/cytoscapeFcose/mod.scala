@@ -36,7 +36,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FcoseAlignmentConstraint]
     }
     
-    extension [Self <: FcoseAlignmentConstraint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FcoseAlignmentConstraint] (val x: Self) extends AnyVal {
       
       inline def setHorizontal(value: js.Array[js.Tuple2[String, String]]): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FcoseFixedNodeConstraint]
     }
     
-    extension [Self <: FcoseFixedNodeConstraint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FcoseFixedNodeConstraint] (val x: Self) extends AnyVal {
       
       inline def setNodeId(value: String): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
       
@@ -186,7 +188,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FcoseLayoutOptions]
     }
     
-    extension [Self <: FcoseLayoutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FcoseLayoutOptions] (val x: Self) extends AnyVal {
       
       inline def setAlignmentConstraint(value: FcoseAlignmentConstraint): Self = StObject.set(x, "alignmentConstraint", value.asInstanceOf[js.Any])
       
@@ -337,7 +340,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FcoseRelativeHorizontalPlacementConstraint]
     }
     
-    extension [Self <: FcoseRelativeHorizontalPlacementConstraint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FcoseRelativeHorizontalPlacementConstraint] (val x: Self) extends AnyVal {
       
       inline def setGap(value: Double): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
       
@@ -382,7 +386,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FcoseRelativeVerticalPlacementConstraint]
     }
     
-    extension [Self <: FcoseRelativeVerticalPlacementConstraint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FcoseRelativeVerticalPlacementConstraint] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

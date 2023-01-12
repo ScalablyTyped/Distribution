@@ -18,7 +18,8 @@ object DidChangeWatchedFilesRegistrationOptions {
     __obj.asInstanceOf[DidChangeWatchedFilesRegistrationOptions]
   }
   
-  extension [Self <: DidChangeWatchedFilesRegistrationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DidChangeWatchedFilesRegistrationOptions] (val x: Self) extends AnyVal {
     
     inline def setWatchers(value: js.Array[FileSystemWatcher]): Self = StObject.set(x, "watchers", value.asInstanceOf[js.Any])
     

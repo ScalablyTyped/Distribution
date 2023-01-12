@@ -66,7 +66,8 @@ object mod {
         __obj.asInstanceOf[Recommendation]
       }
       
-      extension [Self <: Recommendation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Recommendation] (val x: Self) extends AnyVal {
         
         inline def setReleaseType(value: ReleaseType): Self = StObject.set(x, "releaseType", value.asInstanceOf[js.Any])
         
@@ -194,7 +195,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setConfig(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CoreOptions.Config<Commit, WriterContext> */ Any
@@ -246,7 +248,8 @@ object mod {
           __obj.asInstanceOf[Result]
         }
         
-        extension [Self <: Result](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
           
           inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
           

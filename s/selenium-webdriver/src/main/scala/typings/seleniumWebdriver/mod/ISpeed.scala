@@ -17,7 +17,8 @@ object ISpeed {
     __obj.asInstanceOf[ISpeed]
   }
   
-  extension [Self <: ISpeed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISpeed] (val x: Self) extends AnyVal {
     
     inline def setXspeed(value: Double): Self = StObject.set(x, "xspeed", value.asInstanceOf[js.Any])
     

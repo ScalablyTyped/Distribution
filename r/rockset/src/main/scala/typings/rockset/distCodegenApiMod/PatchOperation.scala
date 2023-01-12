@@ -92,7 +92,8 @@ object PatchOperation {
     /* 5 */ val TEST: typings.rockset.distCodegenApiMod.PatchOperation.OpEnum.TEST & Double = js.native
   }
   
-  extension [Self <: PatchOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchOperation] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

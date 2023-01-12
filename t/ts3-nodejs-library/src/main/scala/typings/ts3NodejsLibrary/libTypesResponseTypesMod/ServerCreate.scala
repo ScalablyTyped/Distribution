@@ -18,7 +18,8 @@ object ServerCreate {
     __obj.asInstanceOf[ServerCreate]
   }
   
-  extension [Self <: ServerCreate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerCreate] (val x: Self) extends AnyVal {
     
     inline def setServer(value: TeamSpeakServer): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     

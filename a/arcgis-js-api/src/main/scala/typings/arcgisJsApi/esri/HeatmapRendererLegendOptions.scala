@@ -34,7 +34,8 @@ object HeatmapRendererLegendOptions {
     __obj.asInstanceOf[HeatmapRendererLegendOptions]
   }
   
-  extension [Self <: HeatmapRendererLegendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeatmapRendererLegendOptions] (val x: Self) extends AnyVal {
     
     inline def setMaxLabel(value: String): Self = StObject.set(x, "maxLabel", value.asInstanceOf[js.Any])
     

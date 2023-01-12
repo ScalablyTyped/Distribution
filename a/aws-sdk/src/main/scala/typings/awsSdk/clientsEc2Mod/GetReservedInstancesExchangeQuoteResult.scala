@@ -58,7 +58,8 @@ object GetReservedInstancesExchangeQuoteResult {
     __obj.asInstanceOf[GetReservedInstancesExchangeQuoteResult]
   }
   
-  extension [Self <: GetReservedInstancesExchangeQuoteResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetReservedInstancesExchangeQuoteResult] (val x: Self) extends AnyVal {
     
     inline def setCurrencyCode(value: String): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     

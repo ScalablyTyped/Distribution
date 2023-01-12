@@ -33,7 +33,8 @@ object GetAggregateDiscoveredResourceCountsResponse {
     __obj.asInstanceOf[GetAggregateDiscoveredResourceCountsResponse]
   }
   
-  extension [Self <: GetAggregateDiscoveredResourceCountsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAggregateDiscoveredResourceCountsResponse] (val x: Self) extends AnyVal {
     
     inline def setGroupByKey(value: StringWithCharLimit256): Self = StObject.set(x, "GroupByKey", value.asInstanceOf[js.Any])
     

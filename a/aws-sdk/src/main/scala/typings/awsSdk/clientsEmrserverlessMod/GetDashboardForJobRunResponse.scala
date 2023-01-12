@@ -18,7 +18,8 @@ object GetDashboardForJobRunResponse {
     __obj.asInstanceOf[GetDashboardForJobRunResponse]
   }
   
-  extension [Self <: GetDashboardForJobRunResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDashboardForJobRunResponse] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: Url): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

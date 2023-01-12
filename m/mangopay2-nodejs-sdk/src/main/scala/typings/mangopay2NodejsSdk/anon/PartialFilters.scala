@@ -49,7 +49,8 @@ object PartialFilters {
     __obj.asInstanceOf[PartialFilters]
   }
   
-  extension [Self <: PartialFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFilters] (val x: Self) extends AnyVal {
     
     inline def setAfterDate(value: Timestamp): Self = StObject.set(x, "AfterDate", value.asInstanceOf[js.Any])
     

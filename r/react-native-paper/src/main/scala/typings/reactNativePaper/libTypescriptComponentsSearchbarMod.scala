@@ -44,7 +44,8 @@ object libTypescriptComponentsSearchbarMod extends Shortcut {
       __obj.asInstanceOf[TextInputHandles]
     }
     
-    extension [Self <: TextInputHandles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextInputHandles] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: Any): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       

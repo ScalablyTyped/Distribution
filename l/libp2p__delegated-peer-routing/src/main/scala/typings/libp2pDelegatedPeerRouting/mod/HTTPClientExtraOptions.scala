@@ -19,7 +19,8 @@ object HTTPClientExtraOptions {
     __obj.asInstanceOf[HTTPClientExtraOptions]
   }
   
-  extension [Self <: HTTPClientExtraOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTTPClientExtraOptions] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object Partialtokenstring {
     __obj.asInstanceOf[Partialtokenstring]
   }
   
-  extension [Self <: Partialtokenstring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialtokenstring] (val x: Self) extends AnyVal {
     
     inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     

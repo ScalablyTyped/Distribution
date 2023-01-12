@@ -15,7 +15,8 @@ object SlmGetStatusResponse {
     __obj.asInstanceOf[SlmGetStatusResponse]
   }
   
-  extension [Self <: SlmGetStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlmGetStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setOperation_mode(value: LifecycleOperationMode): Self = StObject.set(x, "operation_mode", value.asInstanceOf[js.Any])
   }

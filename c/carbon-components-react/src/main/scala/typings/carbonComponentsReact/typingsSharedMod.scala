@@ -84,7 +84,8 @@ object typingsSharedMod {
       __obj.asInstanceOf[DownshiftTypedProps[ItemType]]
     }
     
-    extension [Self <: DownshiftTypedProps[?], ItemType](x: Self & DownshiftTypedProps[ItemType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownshiftTypedProps[?], ItemType] (val x: Self & DownshiftTypedProps[ItemType]) extends AnyVal {
       
       inline def setItemToString(value: /* item */ ItemType => String): Self = StObject.set(x, "itemToString", js.Any.fromFunction1(value))
       
@@ -123,7 +124,8 @@ object typingsSharedMod {
       __obj.asInstanceOf[InternationalProps[MID, ARGS]]
     }
     
-    extension [Self <: InternationalProps[?, ?], MID, ARGS](x: Self & (InternationalProps[MID, ARGS])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternationalProps[?, ?], MID, ARGS] (val x: Self & (InternationalProps[MID, ARGS])) extends AnyVal {
       
       inline def setTranslateWithId(value: (/* messageId */ MID, /* args */ js.UndefOr[ARGS]) => String): Self = StObject.set(x, "translateWithId", js.Any.fromFunction2(value))
       
@@ -158,7 +160,8 @@ object typingsSharedMod {
       __obj.asInstanceOf[MenuOffsetData]
     }
     
-    extension [Self <: MenuOffsetData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuOffsetData] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -206,7 +209,8 @@ object typingsSharedMod {
       __obj.asInstanceOf[RenderIconProps[P]]
     }
     
-    extension [Self <: RenderIconProps[?], P](x: Self & RenderIconProps[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderIconProps[?], P] (val x: Self & RenderIconProps[P]) extends AnyVal {
       
       inline def setRenderIcon(value: ComponentType[P]): Self = StObject.set(x, "renderIcon", value.asInstanceOf[js.Any])
       
@@ -225,7 +229,8 @@ object typingsSharedMod {
       __obj.asInstanceOf[RequiresChildrenProps[T]]
     }
     
-    extension [Self <: RequiresChildrenProps[?], T](x: Self & RequiresChildrenProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiresChildrenProps[?], T] (val x: Self & RequiresChildrenProps[T]) extends AnyVal {
       
       inline def setChildren(value: NonNullable[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     }
@@ -242,7 +247,8 @@ object typingsSharedMod {
       __obj.asInstanceOf[RequiresIdProps[T]]
     }
     
-    extension [Self <: RequiresIdProps[?], T](x: Self & RequiresIdProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiresIdProps[?], T] (val x: Self & RequiresIdProps[T]) extends AnyVal {
       
       inline def setId(value: NonNullable[T]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -261,7 +267,8 @@ object typingsSharedMod {
       __obj.asInstanceOf[SideNavSharedProps]
     }
     
-    extension [Self <: SideNavSharedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideNavSharedProps] (val x: Self) extends AnyVal {
       
       inline def setIsSideNavExpanded(value: Boolean): Self = StObject.set(x, "isSideNavExpanded", value.asInstanceOf[js.Any])
       
@@ -280,7 +287,8 @@ object typingsSharedMod {
       __obj.asInstanceOf[SideNavSizingProps]
     }
     
-    extension [Self <: SideNavSizingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideNavSizingProps] (val x: Self) extends AnyVal {
       
       inline def setLarge(value: Boolean): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
       
@@ -299,7 +307,8 @@ object typingsSharedMod {
       __obj.asInstanceOf[SizingProps]
     }
     
-    extension [Self <: SizingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizingProps] (val x: Self) extends AnyVal {
       
       inline def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
       

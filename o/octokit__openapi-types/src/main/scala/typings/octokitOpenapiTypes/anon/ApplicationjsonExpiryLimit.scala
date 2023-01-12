@@ -17,7 +17,8 @@ object ApplicationjsonExpiryLimit {
     __obj.asInstanceOf[ApplicationjsonExpiryLimit]
   }
   
-  extension [Self <: ApplicationjsonExpiryLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonExpiryLimit] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: ExpiryLimit): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

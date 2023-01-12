@@ -16,7 +16,8 @@ object Jwt {
     __obj.asInstanceOf[Jwt]
   }
   
-  extension [Self <: Jwt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Jwt] (val x: Self) extends AnyVal {
     
     inline def setCompactJwt(value: String): Self = StObject.set(x, "compactJwt", value.asInstanceOf[js.Any])
     

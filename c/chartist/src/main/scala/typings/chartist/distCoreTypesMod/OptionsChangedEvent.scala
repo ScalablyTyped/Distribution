@@ -17,7 +17,8 @@ object OptionsChangedEvent {
     __obj.asInstanceOf[OptionsChangedEvent[T]]
   }
   
-  extension [Self <: OptionsChangedEvent[?], T](x: Self & OptionsChangedEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsChangedEvent[?], T] (val x: Self & OptionsChangedEvent[T]) extends AnyVal {
     
     inline def setCurrentOptions(value: T): Self = StObject.set(x, "currentOptions", value.asInstanceOf[js.Any])
     

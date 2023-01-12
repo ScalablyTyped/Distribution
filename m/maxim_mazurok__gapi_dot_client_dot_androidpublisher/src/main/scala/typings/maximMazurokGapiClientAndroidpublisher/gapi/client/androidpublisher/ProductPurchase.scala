@@ -64,7 +64,8 @@ object ProductPurchase {
     __obj.asInstanceOf[ProductPurchase]
   }
   
-  extension [Self <: ProductPurchase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductPurchase] (val x: Self) extends AnyVal {
     
     inline def setAcknowledgementState(value: Double): Self = StObject.set(x, "acknowledgementState", value.asInstanceOf[js.Any])
     

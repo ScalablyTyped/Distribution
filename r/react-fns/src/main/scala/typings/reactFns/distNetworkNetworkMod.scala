@@ -42,7 +42,8 @@ object distNetworkNetworkMod {
       __obj.asInstanceOf[NetworkProps]
     }
     
-    extension [Self <: NetworkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkProps] (val x: Self) extends AnyVal {
       
       inline def setOfflineAt(value: js.Date): Self = StObject.set(x, "offlineAt", value.asInstanceOf[js.Any])
       

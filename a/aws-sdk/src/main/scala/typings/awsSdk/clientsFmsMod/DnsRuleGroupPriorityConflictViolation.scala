@@ -38,7 +38,8 @@ object DnsRuleGroupPriorityConflictViolation {
     __obj.asInstanceOf[DnsRuleGroupPriorityConflictViolation]
   }
   
-  extension [Self <: DnsRuleGroupPriorityConflictViolation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DnsRuleGroupPriorityConflictViolation] (val x: Self) extends AnyVal {
     
     inline def setConflictingPolicyId(value: PolicyId): Self = StObject.set(x, "ConflictingPolicyId", value.asInstanceOf[js.Any])
     

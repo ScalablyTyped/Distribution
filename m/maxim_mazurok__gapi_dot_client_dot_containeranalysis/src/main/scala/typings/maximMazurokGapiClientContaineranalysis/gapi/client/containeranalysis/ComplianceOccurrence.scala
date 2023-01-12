@@ -17,7 +17,8 @@ object ComplianceOccurrence {
     __obj.asInstanceOf[ComplianceOccurrence]
   }
   
-  extension [Self <: ComplianceOccurrence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComplianceOccurrence] (val x: Self) extends AnyVal {
     
     inline def setNonComplianceReason(value: String): Self = StObject.set(x, "nonComplianceReason", value.asInstanceOf[js.Any])
     

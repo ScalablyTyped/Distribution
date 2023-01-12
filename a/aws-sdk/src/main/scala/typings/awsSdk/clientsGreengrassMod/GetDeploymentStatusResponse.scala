@@ -38,7 +38,8 @@ object GetDeploymentStatusResponse {
     __obj.asInstanceOf[GetDeploymentStatusResponse]
   }
   
-  extension [Self <: GetDeploymentStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDeploymentStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setDeploymentStatus(value: string): Self = StObject.set(x, "DeploymentStatus", value.asInstanceOf[js.Any])
     

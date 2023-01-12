@@ -44,7 +44,8 @@ object APNSAlert {
     __obj.asInstanceOf[APNSAlert]
   }
   
-  extension [Self <: APNSAlert](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: APNSAlert] (val x: Self) extends AnyVal {
     
     inline def `setAction-loc-key`(value: String): Self = StObject.set(x, "action-loc-key", value.asInstanceOf[js.Any])
     

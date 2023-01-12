@@ -19,7 +19,8 @@ object Nextpage {
     __obj.asInstanceOf[Nextpage[T]]
   }
   
-  extension [Self <: Nextpage[?], T /* <: AnonymousResource */](x: Self & Nextpage[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Nextpage[?], T /* <: AnonymousResource */] (val x: Self & Nextpage[T]) extends AnyVal {
     
     inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

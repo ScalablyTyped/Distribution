@@ -128,7 +128,8 @@ object libMosaicMod {
       __obj.asInstanceOf[MosaicBaseProps[T]]
     }
     
-    extension [Self <: MosaicBaseProps[?], T /* <: MosaicKey */](x: Self & MosaicBaseProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MosaicBaseProps[?], T /* <: MosaicKey */] (val x: Self & MosaicBaseProps[T]) extends AnyVal {
       
       inline def setBlueprintNamespace(value: String): Self = StObject.set(x, "blueprintNamespace", value.asInstanceOf[js.Any])
       
@@ -204,7 +205,8 @@ object libMosaicMod {
       __obj.asInstanceOf[MosaicState[T]]
     }
     
-    extension [Self <: MosaicState[?], T /* <: MosaicKey */](x: Self & MosaicState[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MosaicState[?], T /* <: MosaicKey */] (val x: Self & MosaicState[T]) extends AnyVal {
       
       inline def setCurrentNode(value: MosaicNode[T]): Self = StObject.set(x, "currentNode", value.asInstanceOf[js.Any])
       
@@ -235,7 +237,8 @@ object libMosaicMod {
       __obj.asInstanceOf[MosaicUncontrolledProps[T]]
     }
     
-    extension [Self <: MosaicUncontrolledProps[?], T /* <: MosaicKey */](x: Self & MosaicUncontrolledProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MosaicUncontrolledProps[?], T /* <: MosaicKey */] (val x: Self & MosaicUncontrolledProps[T]) extends AnyVal {
       
       inline def setInitialValue(value: MosaicNode[T]): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
       

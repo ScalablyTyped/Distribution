@@ -84,7 +84,8 @@ object SourceMapDevToolPluginOptions {
     __obj.asInstanceOf[SourceMapDevToolPluginOptions]
   }
   
-  extension [Self <: SourceMapDevToolPluginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceMapDevToolPluginOptions] (val x: Self) extends AnyVal {
     
     inline def setAppend(value: String | `false`): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     

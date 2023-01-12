@@ -25,7 +25,8 @@ object RippleBackgroundPropType {
     __obj.asInstanceOf[RippleBackgroundPropType]
   }
   
-  extension [Self <: RippleBackgroundPropType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RippleBackgroundPropType] (val x: Self) extends AnyVal {
     
     inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
     

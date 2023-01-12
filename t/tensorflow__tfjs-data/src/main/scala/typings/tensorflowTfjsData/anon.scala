@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Spectrogram]
     }
     
-    extension [Self <: Spectrogram](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Spectrogram] (val x: Self) extends AnyVal {
       
       inline def setSpectrogram(value: Tensor3D): Self = StObject.set(x, "spectrogram", value.asInstanceOf[js.Any])
       

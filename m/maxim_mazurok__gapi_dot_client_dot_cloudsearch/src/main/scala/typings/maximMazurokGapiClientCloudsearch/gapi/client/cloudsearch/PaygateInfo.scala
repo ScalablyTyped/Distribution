@@ -22,7 +22,8 @@ object PaygateInfo {
     __obj.asInstanceOf[PaygateInfo]
   }
   
-  extension [Self <: PaygateInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaygateInfo] (val x: Self) extends AnyVal {
     
     inline def setCallEndingSoonWarningTime(value: String): Self = StObject.set(x, "callEndingSoonWarningTime", value.asInstanceOf[js.Any])
     

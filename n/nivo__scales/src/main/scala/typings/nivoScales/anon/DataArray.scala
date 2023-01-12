@@ -16,7 +16,8 @@ object DataArray {
     __obj.asInstanceOf[DataArray[D]]
   }
   
-  extension [Self <: DataArray[?], D /* <: SerieDatum */](x: Self & DataArray[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataArray[?], D /* <: SerieDatum */] (val x: Self & DataArray[D]) extends AnyVal {
     
     inline def setData(value: js.Array[DataD[D]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

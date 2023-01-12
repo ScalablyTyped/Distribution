@@ -17,7 +17,8 @@ object MapStyle {
     __obj.asInstanceOf[MapStyle]
   }
   
-  extension [Self <: MapStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapStyle] (val x: Self) extends AnyVal {
     
     inline def setFeatures(value: js.Array[Any]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     

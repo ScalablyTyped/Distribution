@@ -36,7 +36,8 @@ object ASPxClientMassIndex {
     __obj.asInstanceOf[ASPxClientMassIndex]
   }
   
-  extension [Self <: ASPxClientMassIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientMassIndex] (val x: Self) extends AnyVal {
     
     inline def setMovingAveragePointsCount(value: Double): Self = StObject.set(x, "movingAveragePointsCount", value.asInstanceOf[js.Any])
     

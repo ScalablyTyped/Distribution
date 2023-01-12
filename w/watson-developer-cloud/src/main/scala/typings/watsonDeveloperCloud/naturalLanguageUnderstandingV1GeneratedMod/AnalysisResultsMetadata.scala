@@ -29,7 +29,8 @@ object AnalysisResultsMetadata {
     __obj.asInstanceOf[AnalysisResultsMetadata]
   }
   
-  extension [Self <: AnalysisResultsMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisResultsMetadata] (val x: Self) extends AnyVal {
     
     inline def setAuthors(value: js.Array[Author]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
     

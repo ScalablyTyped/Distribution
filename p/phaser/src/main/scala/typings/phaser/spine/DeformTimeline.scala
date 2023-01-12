@@ -40,7 +40,8 @@ object DeformTimeline {
     __obj.asInstanceOf[DeformTimeline]
   }
   
-  extension [Self <: DeformTimeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeformTimeline] (val x: Self) extends AnyVal {
     
     inline def setAttachment(value: VertexAttachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     

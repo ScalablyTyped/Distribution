@@ -49,7 +49,8 @@ object ParagraphElement {
     __obj.asInstanceOf[ParagraphElement]
   }
   
-  extension [Self <: ParagraphElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParagraphElement] (val x: Self) extends AnyVal {
     
     inline def setAutoText(value: AutoText): Self = StObject.set(x, "autoText", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object libActionsMod {
       __obj.asInstanceOf[StartConsecutiveToggleAction]
     }
     
-    extension [Self <: StartConsecutiveToggleAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartConsecutiveToggleAction] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object libActionsMod {
       __obj.asInstanceOf[UpdateScrollTopAction]
     }
     
-    extension [Self <: UpdateScrollTopAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateScrollTopAction] (val x: Self) extends AnyVal {
       
       inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
       

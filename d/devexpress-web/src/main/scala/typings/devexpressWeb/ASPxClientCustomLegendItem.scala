@@ -23,7 +23,8 @@ object ASPxClientCustomLegendItem {
     __obj.asInstanceOf[ASPxClientCustomLegendItem]
   }
   
-  extension [Self <: ASPxClientCustomLegendItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCustomLegendItem] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }

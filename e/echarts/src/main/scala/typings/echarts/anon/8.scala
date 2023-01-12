@@ -23,7 +23,8 @@ object `8` {
     __obj.asInstanceOf[`8`]
   }
   
-  extension [Self <: `8`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `8`] (val x: Self) extends AnyVal {
     
     inline def setItemStyle(value: BorderType): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     

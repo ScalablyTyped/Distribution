@@ -1036,7 +1036,8 @@ object mod {
       __obj.asInstanceOf[Victor]
     }
     
-    extension [Self <: Victor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Victor] (val x: Self) extends AnyVal {
       
       inline def setAbsDistanceX(value: Victor => Double): Self = StObject.set(x, "absDistanceX", js.Any.fromFunction1(value))
       
@@ -1197,7 +1198,8 @@ object mod {
       __obj.asInstanceOf[VictorCoordinates]
     }
     
-    extension [Self <: VictorCoordinates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictorCoordinates] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

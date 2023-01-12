@@ -69,7 +69,8 @@ object mod {
         __obj.asInstanceOf[GoogleMaps]
       }
       
-      extension [Self <: GoogleMaps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GoogleMaps] (val x: Self) extends AnyVal {
         
         inline def setData(value: Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
         
@@ -112,7 +113,8 @@ object mod {
         __obj.asInstanceOf[Params]
       }
       
-      extension [Self <: Params](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
         
         inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         

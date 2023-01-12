@@ -18,7 +18,8 @@ object UserGroupResolutionConfiguration {
     __obj.asInstanceOf[UserGroupResolutionConfiguration]
   }
   
-  extension [Self <: UserGroupResolutionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserGroupResolutionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setUserGroupResolutionMode(value: UserGroupResolutionMode): Self = StObject.set(x, "UserGroupResolutionMode", value.asInstanceOf[js.Any])
   }

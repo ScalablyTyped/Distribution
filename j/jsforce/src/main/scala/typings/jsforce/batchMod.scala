@@ -84,7 +84,8 @@ object batchMod {
       __obj.asInstanceOf[BatchInfo]
     }
     
-    extension [Self <: BatchInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchInfo] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object batchMod {
       __obj.asInstanceOf[BatchResultInfo]
     }
     
-    extension [Self <: BatchResultInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchResultInfo] (val x: Self) extends AnyVal {
       
       inline def setBatchId(value: String): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
       

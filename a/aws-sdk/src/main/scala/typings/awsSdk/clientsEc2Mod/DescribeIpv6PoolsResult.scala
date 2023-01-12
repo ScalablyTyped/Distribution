@@ -23,7 +23,8 @@ object DescribeIpv6PoolsResult {
     __obj.asInstanceOf[DescribeIpv6PoolsResult]
   }
   
-  extension [Self <: DescribeIpv6PoolsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeIpv6PoolsResult] (val x: Self) extends AnyVal {
     
     inline def setIpv6Pools(value: Ipv6PoolSet): Self = StObject.set(x, "Ipv6Pools", value.asInstanceOf[js.Any])
     

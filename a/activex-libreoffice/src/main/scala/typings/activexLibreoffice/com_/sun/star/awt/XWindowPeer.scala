@@ -58,7 +58,8 @@ object XWindowPeer {
     __obj.asInstanceOf[XWindowPeer]
   }
   
-  extension [Self <: XWindowPeer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XWindowPeer] (val x: Self) extends AnyVal {
     
     inline def setGetToolkit(value: () => XToolkit): Self = StObject.set(x, "getToolkit", js.Any.fromFunction0(value))
     

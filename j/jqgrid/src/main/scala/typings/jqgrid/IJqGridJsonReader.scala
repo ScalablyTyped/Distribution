@@ -54,7 +54,8 @@ object IJqGridJsonReader {
     __obj.asInstanceOf[IJqGridJsonReader]
   }
   
-  extension [Self <: IJqGridJsonReader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IJqGridJsonReader] (val x: Self) extends AnyVal {
     
     inline def setPage(value: String | (js.Function1[/* obj */ Any, Double])): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     

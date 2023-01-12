@@ -17,7 +17,8 @@ object RootElement {
     __obj.asInstanceOf[RootElement]
   }
   
-  extension [Self <: RootElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RootElement] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

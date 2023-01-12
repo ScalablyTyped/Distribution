@@ -37,7 +37,8 @@ object XUnoTunnel {
     __obj.asInstanceOf[XUnoTunnel]
   }
   
-  extension [Self <: XUnoTunnel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUnoTunnel] (val x: Self) extends AnyVal {
     
     inline def setGetSomething(value: SeqEquiv[Double] => Double): Self = StObject.set(x, "getSomething", js.Any.fromFunction1(value))
   }

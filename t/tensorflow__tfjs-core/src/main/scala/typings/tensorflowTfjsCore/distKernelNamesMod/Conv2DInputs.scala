@@ -18,7 +18,8 @@ object Conv2DInputs {
     __obj.asInstanceOf[Conv2DInputs]
   }
   
-  extension [Self <: Conv2DInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Conv2DInputs] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: scala.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

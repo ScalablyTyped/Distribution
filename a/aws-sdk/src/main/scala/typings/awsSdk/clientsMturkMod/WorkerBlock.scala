@@ -23,7 +23,8 @@ object WorkerBlock {
     __obj.asInstanceOf[WorkerBlock]
   }
   
-  extension [Self <: WorkerBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerBlock] (val x: Self) extends AnyVal {
     
     inline def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
     

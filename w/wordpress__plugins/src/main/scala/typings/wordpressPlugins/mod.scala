@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[Plugin]
     }
     
-    extension [Self <: Plugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -63,7 +64,8 @@ object mod {
       __obj.asInstanceOf[PluginContext]
     }
     
-    extension [Self <: PluginContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginContext] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: Icon | ComponentType[js.Object]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object mod {
       __obj.asInstanceOf[PluginSettings]
     }
     
-    extension [Self <: PluginSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginSettings] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: Icon | ComponentType[js.Object]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       

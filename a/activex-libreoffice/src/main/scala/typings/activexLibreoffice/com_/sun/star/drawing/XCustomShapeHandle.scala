@@ -41,7 +41,8 @@ object XCustomShapeHandle {
     __obj.asInstanceOf[XCustomShapeHandle]
   }
   
-  extension [Self <: XCustomShapeHandle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCustomShapeHandle] (val x: Self) extends AnyVal {
     
     inline def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     

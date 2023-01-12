@@ -60,7 +60,8 @@ object kineticMod {
       __obj.asInstanceOf[Kinetic]
     }
     
-    extension [Self <: Kinetic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Kinetic] (val x: Self) extends AnyVal {
       
       inline def setBegin(value: () => Unit): Self = StObject.set(x, "begin", js.Any.fromFunction0(value))
       

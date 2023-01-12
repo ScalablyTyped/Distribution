@@ -395,7 +395,8 @@ object libEsmComponentsSuggestSuggest2Mod {
       __obj.asInstanceOf[Suggest2State[T]]
     }
     
-    extension [Self <: Suggest2State[?], T](x: Self & Suggest2State[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Suggest2State[?], T] (val x: Self & Suggest2State[T]) extends AnyVal {
       
       inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       

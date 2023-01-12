@@ -20,7 +20,8 @@ object PartialClassNameMapSnackb {
     __obj.asInstanceOf[PartialClassNameMapSnackb]
   }
   
-  extension [Self <: PartialClassNameMapSnackb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapSnackb] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

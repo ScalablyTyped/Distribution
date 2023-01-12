@@ -18,7 +18,8 @@ object StartNetworkInsightsAnalysisResult {
     __obj.asInstanceOf[StartNetworkInsightsAnalysisResult]
   }
   
-  extension [Self <: StartNetworkInsightsAnalysisResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartNetworkInsightsAnalysisResult] (val x: Self) extends AnyVal {
     
     inline def setNetworkInsightsAnalysis(value: NetworkInsightsAnalysis): Self = StObject.set(x, "NetworkInsightsAnalysis", value.asInstanceOf[js.Any])
     

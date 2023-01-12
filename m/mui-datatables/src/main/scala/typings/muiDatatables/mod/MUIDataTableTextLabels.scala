@@ -38,7 +38,8 @@ object MUIDataTableTextLabels {
     __obj.asInstanceOf[MUIDataTableTextLabels]
   }
   
-  extension [Self <: MUIDataTableTextLabels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableTextLabels] (val x: Self) extends AnyVal {
     
     inline def setBody(value: PartialMUIDataTableTextLa): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

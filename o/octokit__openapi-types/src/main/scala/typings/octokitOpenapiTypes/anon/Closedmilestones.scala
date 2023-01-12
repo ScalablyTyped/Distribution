@@ -19,7 +19,8 @@ object Closedmilestones {
     __obj.asInstanceOf[Closedmilestones]
   }
   
-  extension [Self <: Closedmilestones](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Closedmilestones] (val x: Self) extends AnyVal {
     
     inline def setClosed_milestones(value: Double): Self = StObject.set(x, "closed_milestones", value.asInstanceOf[js.Any])
     

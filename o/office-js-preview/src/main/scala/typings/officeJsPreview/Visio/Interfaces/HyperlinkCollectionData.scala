@@ -16,7 +16,8 @@ object HyperlinkCollectionData {
     __obj.asInstanceOf[HyperlinkCollectionData]
   }
   
-  extension [Self <: HyperlinkCollectionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HyperlinkCollectionData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[HyperlinkData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

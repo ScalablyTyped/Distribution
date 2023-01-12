@@ -35,7 +35,8 @@ object BinTransform {
     __obj.asInstanceOf[BinTransform]
   }
   
-  extension [Self <: BinTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: FieldName | js.Array[FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

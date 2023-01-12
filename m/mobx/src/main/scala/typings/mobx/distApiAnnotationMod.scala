@@ -53,7 +53,8 @@ object distApiAnnotationMod {
       __obj.asInstanceOf[Annotation]
     }
     
-    extension [Self <: Annotation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Annotation] (val x: Self) extends AnyVal {
       
       inline def setAnnotationType_(value: String): Self = StObject.set(x, "annotationType_", value.asInstanceOf[js.Any])
       

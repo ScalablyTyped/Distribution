@@ -23,7 +23,8 @@ object VirtualGatewayFileAccessLog {
     __obj.asInstanceOf[VirtualGatewayFileAccessLog]
   }
   
-  extension [Self <: VirtualGatewayFileAccessLog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualGatewayFileAccessLog] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: LoggingFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object SchedulerEditable {
     __obj.asInstanceOf[SchedulerEditable]
   }
   
-  extension [Self <: SchedulerEditable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerEditable] (val x: Self) extends AnyVal {
     
     inline def setConfirmation(value: Boolean | String): Self = StObject.set(x, "confirmation", value.asInstanceOf[js.Any])
     

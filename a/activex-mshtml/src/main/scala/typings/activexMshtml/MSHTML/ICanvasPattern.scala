@@ -17,7 +17,8 @@ object ICanvasPattern {
     __obj.asInstanceOf[ICanvasPattern]
   }
   
-  extension [Self <: ICanvasPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICanvasPattern] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotICanvasPattern_typekey(value: ICanvasPattern): Self = StObject.set(x, "MSHTML.ICanvasPattern_typekey", value.asInstanceOf[js.Any])
   }

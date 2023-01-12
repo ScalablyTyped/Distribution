@@ -21,7 +21,8 @@ object OrderIndex {
     __obj.asInstanceOf[OrderIndex]
   }
   
-  extension [Self <: OrderIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderIndex] (val x: Self) extends AnyVal {
     
     inline def setMetricNames(value: js.Array[String]): Self = StObject.set(x, "metricNames", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object AttachmentCreationInformation {
     __obj.asInstanceOf[AttachmentCreationInformation]
   }
   
-  extension [Self <: AttachmentCreationInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachmentCreationInformation] (val x: Self) extends AnyVal {
     
     inline def setGet_contentStream(value: () => Base64EncodedByteArray): Self = StObject.set(x, "get_contentStream", js.Any.fromFunction0(value))
     

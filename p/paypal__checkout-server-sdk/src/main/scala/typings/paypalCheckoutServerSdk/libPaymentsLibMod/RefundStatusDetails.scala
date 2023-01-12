@@ -15,7 +15,8 @@ object RefundStatusDetails {
     __obj.asInstanceOf[RefundStatusDetails]
   }
   
-  extension [Self <: RefundStatusDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefundStatusDetails] (val x: Self) extends AnyVal {
     
     inline def setReason(value: Reason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }

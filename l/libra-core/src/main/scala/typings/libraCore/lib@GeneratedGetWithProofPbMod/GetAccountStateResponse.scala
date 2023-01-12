@@ -63,7 +63,8 @@ object GetAccountStateResponse {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setAccountStateWithProof(value: typings.libraCore.`lib@GeneratedAccountStateBlobPbMod`.AccountStateWithProof.AsObject): Self = StObject.set(x, "accountStateWithProof", value.asInstanceOf[js.Any])
       

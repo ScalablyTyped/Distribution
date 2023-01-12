@@ -108,7 +108,8 @@ object AssociationVersionInfo {
     __obj.asInstanceOf[AssociationVersionInfo]
   }
   
-  extension [Self <: AssociationVersionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociationVersionInfo] (val x: Self) extends AnyVal {
     
     inline def setApplyOnlyAtCronInterval(value: ApplyOnlyAtCronInterval): Self = StObject.set(x, "ApplyOnlyAtCronInterval", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object VirtualGatewayListenerTlsValidationContextTrust {
     __obj.asInstanceOf[VirtualGatewayListenerTlsValidationContextTrust]
   }
   
-  extension [Self <: VirtualGatewayListenerTlsValidationContextTrust](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualGatewayListenerTlsValidationContextTrust] (val x: Self) extends AnyVal {
     
     inline def setFile(value: VirtualGatewayTlsValidationContextFileTrust): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

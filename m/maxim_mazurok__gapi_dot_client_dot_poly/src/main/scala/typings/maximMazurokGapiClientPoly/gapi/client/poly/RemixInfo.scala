@@ -16,7 +16,8 @@ object RemixInfo {
     __obj.asInstanceOf[RemixInfo]
   }
   
-  extension [Self <: RemixInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemixInfo] (val x: Self) extends AnyVal {
     
     inline def setSourceAsset(value: js.Array[String]): Self = StObject.set(x, "sourceAsset", value.asInstanceOf[js.Any])
     

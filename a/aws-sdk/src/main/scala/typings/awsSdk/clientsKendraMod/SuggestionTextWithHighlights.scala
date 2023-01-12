@@ -23,7 +23,8 @@ object SuggestionTextWithHighlights {
     __obj.asInstanceOf[SuggestionTextWithHighlights]
   }
   
-  extension [Self <: SuggestionTextWithHighlights](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestionTextWithHighlights] (val x: Self) extends AnyVal {
     
     inline def setHighlights(value: SuggestionHighlightList): Self = StObject.set(x, "Highlights", value.asInstanceOf[js.Any])
     

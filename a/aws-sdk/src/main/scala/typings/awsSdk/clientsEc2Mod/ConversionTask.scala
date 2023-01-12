@@ -48,7 +48,8 @@ object ConversionTask {
     __obj.asInstanceOf[ConversionTask]
   }
   
-  extension [Self <: ConversionTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConversionTask] (val x: Self) extends AnyVal {
     
     inline def setConversionTaskId(value: String): Self = StObject.set(x, "ConversionTaskId", value.asInstanceOf[js.Any])
     

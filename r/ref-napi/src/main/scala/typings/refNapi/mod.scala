@@ -679,7 +679,8 @@ object mod {
       __obj.asInstanceOf[AlignofRegistry]
     }
     
-    extension [Self <: AlignofRegistry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlignofRegistry] (val x: Self) extends AnyVal {
       
       inline def setBool(value: Double): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
       
@@ -880,7 +881,8 @@ object mod {
       __obj.asInstanceOf[SizeofRegistry]
     }
     
-    extension [Self <: SizeofRegistry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizeofRegistry] (val x: Self) extends AnyVal {
       
       inline def setBool(value: Double): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
       
@@ -973,7 +975,8 @@ object mod {
       __obj.asInstanceOf[Type[T]]
     }
     
-    extension [Self <: Type[?], T](x: Self & Type[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type[?], T] (val x: Self & Type[T]) extends AnyVal {
       
       inline def setAlignment(value: Double): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -1083,7 +1086,8 @@ object mod {
       __obj.asInstanceOf[TypesDefaultRegistry]
     }
     
-    extension [Self <: TypesDefaultRegistry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypesDefaultRegistry] (val x: Self) extends AnyVal {
       
       inline def setBool(value: Type[Boolean]): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
       
@@ -1231,7 +1235,8 @@ object mod {
       __obj.asInstanceOf[TypesRegistry]
     }
     
-    extension [Self <: TypesRegistry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypesRegistry] (val x: Self) extends AnyVal {
       
       inline def setBool(value: Type[Boolean]): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
       
@@ -1427,7 +1432,8 @@ object mod {
       __obj.asInstanceOf[UnderlyingTypeDefaultRegistry]
     }
     
-    extension [Self <: UnderlyingTypeDefaultRegistry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnderlyingTypeDefaultRegistry] (val x: Self) extends AnyVal {
       
       inline def setBool(value: Boolean): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
       
@@ -1629,7 +1635,8 @@ object mod {
       __obj.asInstanceOf[UnderlyingTypeRegistry]
     }
     
-    extension [Self <: UnderlyingTypeRegistry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnderlyingTypeRegistry] (val x: Self) extends AnyVal {
       
       inline def setBool(value: Boolean): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
       

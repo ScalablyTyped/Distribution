@@ -34,7 +34,8 @@ object DivOverlayProps {
     __obj.asInstanceOf[DivOverlayProps]
   }
   
-  extension [Self <: DivOverlayProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DivOverlayProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: Children): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object CustomLabel {
     __obj.asInstanceOf[CustomLabel]
   }
   
-  extension [Self <: CustomLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomLabel] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     

@@ -105,7 +105,8 @@ object IWindow {
     __obj.asInstanceOf[IWindow]
   }
   
-  extension [Self <: IWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWindow] (val x: Self) extends AnyVal {
     
     inline def setAfterCollapse(value: () => Unit): Self = StObject.set(x, "afterCollapse", js.Any.fromFunction0(value))
     

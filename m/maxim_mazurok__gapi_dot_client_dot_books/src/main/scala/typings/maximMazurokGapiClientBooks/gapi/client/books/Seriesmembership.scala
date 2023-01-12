@@ -20,7 +20,8 @@ object Seriesmembership {
     __obj.asInstanceOf[Seriesmembership]
   }
   
-  extension [Self <: Seriesmembership](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Seriesmembership] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object libLoaderParsersLoadWebFontMod {
       __obj.asInstanceOf[LoadFontData]
     }
     
-    extension [Self <: LoadFontData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadFontData] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       

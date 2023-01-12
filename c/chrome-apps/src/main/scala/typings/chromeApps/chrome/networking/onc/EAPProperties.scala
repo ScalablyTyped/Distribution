@@ -46,7 +46,8 @@ object EAPProperties {
     __obj.asInstanceOf[EAPProperties]
   }
   
-  extension [Self <: EAPProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EAPProperties] (val x: Self) extends AnyVal {
     
     inline def setAnonymousIdentity(value: String): Self = StObject.set(x, "AnonymousIdentity", value.asInstanceOf[js.Any])
     

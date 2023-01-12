@@ -23,7 +23,8 @@ object ForceCenter {
     __obj.asInstanceOf[ForceCenter]
   }
   
-  extension [Self <: ForceCenter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForceCenter] (val x: Self) extends AnyVal {
     
     inline def setForce(value: center): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     

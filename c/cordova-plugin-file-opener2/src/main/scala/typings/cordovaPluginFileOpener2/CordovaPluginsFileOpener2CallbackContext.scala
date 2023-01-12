@@ -17,7 +17,8 @@ object CordovaPluginsFileOpener2CallbackContext {
     __obj.asInstanceOf[CordovaPluginsFileOpener2CallbackContext]
   }
   
-  extension [Self <: CordovaPluginsFileOpener2CallbackContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CordovaPluginsFileOpener2CallbackContext] (val x: Self) extends AnyVal {
     
     inline def setError(value: /* error */ CordovaPluginsFileOpener2Result => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     

@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[SteamAuthOptions]
     }
     
-    extension [Self <: SteamAuthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SteamAuthOptions] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object mod {
       __obj.asInstanceOf[UserObject]
     }
     
-    extension [Self <: UserObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserObject] (val x: Self) extends AnyVal {
       
       inline def setAvatar(value: Large): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       

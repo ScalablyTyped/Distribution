@@ -207,7 +207,8 @@ object List {
     __obj.asInstanceOf[typings.tsToolbelt.anon.List]
   }
   
-  extension [Self <: typings.tsToolbelt.anon.List](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typings.tsToolbelt.anon.List] (val x: Self) extends AnyVal {
     
     inline def setList(value: ComposeListSync): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     

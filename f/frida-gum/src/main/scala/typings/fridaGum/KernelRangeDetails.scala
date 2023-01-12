@@ -28,7 +28,8 @@ object KernelRangeDetails {
     __obj.asInstanceOf[KernelRangeDetails]
   }
   
-  extension [Self <: KernelRangeDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KernelRangeDetails] (val x: Self) extends AnyVal {
     
     inline def setBase(value: UInt64): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

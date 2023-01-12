@@ -138,7 +138,8 @@ object mod {
       __obj.asInstanceOf[FeathersAuthenticationOAuth1Options]
     }
     
-    extension [Self <: FeathersAuthenticationOAuth1Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeathersAuthenticationOAuth1Options] (val x: Self) extends AnyVal {
       
       inline def setCallbackPath(value: String): Self = StObject.set(x, "callbackPath", value.asInstanceOf[js.Any])
       

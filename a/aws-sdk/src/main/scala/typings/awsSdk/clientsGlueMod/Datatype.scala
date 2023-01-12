@@ -23,7 +23,8 @@ object Datatype {
     __obj.asInstanceOf[Datatype]
   }
   
-  extension [Self <: Datatype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Datatype] (val x: Self) extends AnyVal {
     
     inline def setId(value: GenericLimitedString): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

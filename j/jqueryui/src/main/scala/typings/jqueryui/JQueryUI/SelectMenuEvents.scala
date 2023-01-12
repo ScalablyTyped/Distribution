@@ -26,7 +26,8 @@ object SelectMenuEvents {
     __obj.asInstanceOf[SelectMenuEvents]
   }
   
-  extension [Self <: SelectMenuEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectMenuEvents] (val x: Self) extends AnyVal {
     
     inline def setChange(value: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
     

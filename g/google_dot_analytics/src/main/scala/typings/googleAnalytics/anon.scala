@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[EventAction]
     }
     
-    extension [Self <: EventAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventAction] (val x: Self) extends AnyVal {
       
       inline def setEventAction(value: String): Self = StObject.set(x, "eventAction", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object anon {
       __obj.asInstanceOf[EventCategory]
     }
     
-    extension [Self <: EventCategory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventCategory] (val x: Self) extends AnyVal {
       
       inline def setEventAction(value: String): Self = StObject.set(x, "eventAction", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object anon {
       __obj.asInstanceOf[SocialAction]
     }
     
-    extension [Self <: SocialAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocialAction] (val x: Self) extends AnyVal {
       
       inline def setSocialAction(value: String): Self = StObject.set(x, "socialAction", value.asInstanceOf[js.Any])
       
@@ -130,7 +133,8 @@ object anon {
       __obj.asInstanceOf[TimingCategory]
     }
     
-    extension [Self <: TimingCategory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimingCategory] (val x: Self) extends AnyVal {
       
       inline def setTimingCategory(value: String): Self = StObject.set(x, "timingCategory", value.asInstanceOf[js.Any])
       

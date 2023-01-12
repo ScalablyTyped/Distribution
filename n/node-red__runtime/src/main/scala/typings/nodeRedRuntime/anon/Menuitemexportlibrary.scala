@@ -21,7 +21,8 @@ object Menuitemexportlibrary {
     __obj.asInstanceOf[Menuitemexportlibrary]
   }
   
-  extension [Self <: Menuitemexportlibrary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Menuitemexportlibrary] (val x: Self) extends AnyVal {
     
     inline def `setMenu-item-export-library`(value: Boolean): Self = StObject.set(x, "menu-item-export-library", value.asInstanceOf[js.Any])
     

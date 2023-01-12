@@ -18,7 +18,8 @@ object RTCDtlsTransportEventMap {
     __obj.asInstanceOf[RTCDtlsTransportEventMap]
   }
   
-  extension [Self <: RTCDtlsTransportEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCDtlsTransportEventMap] (val x: Self) extends AnyVal {
     
     inline def setError(value: Event): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

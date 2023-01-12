@@ -34,7 +34,8 @@ object mod {
         __obj.asInstanceOf[Animation]
       }
       
-      extension [Self <: Animation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
         
         inline def setFrom(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
         
@@ -299,7 +300,8 @@ object mod {
         __obj.asInstanceOf[FlipMoveProps]
       }
       
-      extension [Self <: FlipMoveProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FlipMoveProps] (val x: Self) extends AnyVal {
         
         inline def setAppearAnimation(value: AnimationProp): Self = StObject.set(x, "appearAnimation", value.asInstanceOf[js.Any])
         

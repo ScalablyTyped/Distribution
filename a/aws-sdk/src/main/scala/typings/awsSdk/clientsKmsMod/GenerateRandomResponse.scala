@@ -18,7 +18,8 @@ object GenerateRandomResponse {
     __obj.asInstanceOf[GenerateRandomResponse]
   }
   
-  extension [Self <: GenerateRandomResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateRandomResponse] (val x: Self) extends AnyVal {
     
     inline def setPlaintext(value: PlaintextType): Self = StObject.set(x, "Plaintext", value.asInstanceOf[js.Any])
     

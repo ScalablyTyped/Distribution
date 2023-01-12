@@ -40,7 +40,8 @@ object TargetLocation {
     __obj.asInstanceOf[TargetLocation]
   }
   
-  extension [Self <: TargetLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetLocation] (val x: Self) extends AnyVal {
     
     inline def setAccounts(value: Accounts): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
     

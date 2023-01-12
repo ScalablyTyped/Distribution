@@ -24,7 +24,8 @@ object WebCLDevice {
     __obj.asInstanceOf[WebCLDevice]
   }
   
-  extension [Self <: WebCLDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebCLDevice] (val x: Self) extends AnyVal {
     
     inline def setEnableExtension(value: String => Boolean): Self = StObject.set(x, "enableExtension", js.Any.fromFunction1(value))
     

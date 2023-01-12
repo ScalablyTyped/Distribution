@@ -35,7 +35,8 @@ object AccountNotAuthorizedContactUs {
     __obj.asInstanceOf[AccountNotAuthorizedContactUs]
   }
   
-  extension [Self <: AccountNotAuthorizedContactUs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountNotAuthorizedContactUs] (val x: Self) extends AnyVal {
     
     inline def setAccountNotAuthorizedContactUs(value: String): Self = StObject.set(x, "AccountNotAuthorizedContactUs", value.asInstanceOf[js.Any])
     

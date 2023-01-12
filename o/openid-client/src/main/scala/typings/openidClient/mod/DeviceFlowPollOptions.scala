@@ -17,7 +17,8 @@ object DeviceFlowPollOptions {
     __obj.asInstanceOf[DeviceFlowPollOptions]
   }
   
-  extension [Self <: DeviceFlowPollOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceFlowPollOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

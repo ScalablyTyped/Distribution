@@ -18,7 +18,8 @@ object DeleteObjectTaggingOutput {
     __obj.asInstanceOf[DeleteObjectTaggingOutput]
   }
   
-  extension [Self <: DeleteObjectTaggingOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteObjectTaggingOutput] (val x: Self) extends AnyVal {
     
     inline def setVersionId(value: ObjectVersionId): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object MenuScrollable {
     __obj.asInstanceOf[MenuScrollable]
   }
   
-  extension [Self <: MenuScrollable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuScrollable] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

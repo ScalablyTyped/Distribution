@@ -166,7 +166,8 @@ object CalendarProps {
     __obj.asInstanceOf[CalendarProps[TEvent, TResource]]
   }
   
-  extension [Self <: CalendarProps[?, ?], TEvent /* <: js.Object */, TResource /* <: js.Object */](x: Self & (CalendarProps[TEvent, TResource])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarProps[?, ?], TEvent /* <: js.Object */, TResource /* <: js.Object */] (val x: Self & (CalendarProps[TEvent, TResource])) extends AnyVal {
     
     inline def setAllDayAccessor(value: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Boolean])): Self = StObject.set(x, "allDayAccessor", value.asInstanceOf[js.Any])
     

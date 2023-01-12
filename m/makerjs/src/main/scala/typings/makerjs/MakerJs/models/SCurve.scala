@@ -20,7 +20,8 @@ object SCurve {
     __obj.asInstanceOf[SCurve]
   }
   
-  extension [Self <: SCurve](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SCurve] (val x: Self) extends AnyVal {
     
     inline def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
   }

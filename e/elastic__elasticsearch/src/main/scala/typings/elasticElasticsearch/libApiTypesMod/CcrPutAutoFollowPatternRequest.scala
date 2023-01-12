@@ -48,7 +48,8 @@ object CcrPutAutoFollowPatternRequest {
     __obj.asInstanceOf[CcrPutAutoFollowPatternRequest]
   }
   
-  extension [Self <: CcrPutAutoFollowPatternRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CcrPutAutoFollowPatternRequest] (val x: Self) extends AnyVal {
     
     inline def setFollow_index_pattern(value: IndexPattern): Self = StObject.set(x, "follow_index_pattern", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object systemHeaderResizeOptionsMod {
       __obj.asInstanceOf[HeaderResizeOptions]
     }
     
-    extension [Self <: HeaderResizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderResizeOptions] (val x: Self) extends AnyVal {
       
       inline def setTimer(value: Double): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
     }

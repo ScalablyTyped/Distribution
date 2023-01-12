@@ -26,7 +26,8 @@ object DeploymentMachineGroup {
     __obj.asInstanceOf[DeploymentMachineGroup]
   }
   
-  extension [Self <: DeploymentMachineGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentMachineGroup] (val x: Self) extends AnyVal {
     
     inline def setMachines(value: js.Array[DeploymentMachine]): Self = StObject.set(x, "machines", value.asInstanceOf[js.Any])
     

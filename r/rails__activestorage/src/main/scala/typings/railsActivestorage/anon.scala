@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[DirectUploadData]
     }
     
-    extension [Self <: DirectUploadData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectUploadData] (val x: Self) extends AnyVal {
       
       inline def setDirectUploadData(value: Headers): Self = StObject.set(x, "directUploadData", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Headers]
     }
     
-    extension [Self <: Headers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

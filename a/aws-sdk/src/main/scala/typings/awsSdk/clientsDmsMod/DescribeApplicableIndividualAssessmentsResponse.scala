@@ -23,7 +23,8 @@ object DescribeApplicableIndividualAssessmentsResponse {
     __obj.asInstanceOf[DescribeApplicableIndividualAssessmentsResponse]
   }
   
-  extension [Self <: DescribeApplicableIndividualAssessmentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeApplicableIndividualAssessmentsResponse] (val x: Self) extends AnyVal {
     
     inline def setIndividualAssessmentNames(value: IndividualAssessmentNameList): Self = StObject.set(x, "IndividualAssessmentNames", value.asInstanceOf[js.Any])
     

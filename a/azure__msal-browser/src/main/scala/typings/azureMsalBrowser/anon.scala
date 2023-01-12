@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[CodeString]
     }
     
-    extension [Self <: CodeString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeString] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
@@ -88,7 +90,8 @@ object anon {
       __obj.asInstanceOf[PartialBaseAuthRequest]
     }
     
-    extension [Self <: PartialBaseAuthRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialBaseAuthRequest] (val x: Self) extends AnyVal {
       
       inline def setAuthenticationScheme(value: AuthenticationScheme): Self = StObject.set(x, "authenticationScheme", value.asInstanceOf[js.Any])
       
@@ -170,7 +173,8 @@ object anon {
       __obj.asInstanceOf[PartialOmitAccountInfoidT]
     }
     
-    extension [Self <: PartialOmitAccountInfoidT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOmitAccountInfoidT] (val x: Self) extends AnyVal {
       
       inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
@@ -249,7 +253,8 @@ object anon {
       __obj.asInstanceOf[RequiredBrowserAuthOption]
     }
     
-    extension [Self <: RequiredBrowserAuthOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredBrowserAuthOption] (val x: Self) extends AnyVal {
       
       inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
       
@@ -337,7 +342,8 @@ object anon {
       __obj.asInstanceOf[RequiredBrowserSystemOpti]
     }
     
-    extension [Self <: RequiredBrowserSystemOpti](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredBrowserSystemOpti] (val x: Self) extends AnyVal {
       
       inline def setAllowNativeBroker(value: Boolean): Self = StObject.set(x, "allowNativeBroker", value.asInstanceOf[js.Any])
       
@@ -383,7 +389,8 @@ object anon {
       __obj.asInstanceOf[RequiredBrowserTelemetryO]
     }
     
-    extension [Self <: RequiredBrowserTelemetryO](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredBrowserTelemetryO] (val x: Self) extends AnyVal {
       
       inline def setApplication(value: ApplicationTelemetry): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     }
@@ -409,7 +416,8 @@ object anon {
       __obj.asInstanceOf[RequiredCacheOptions]
     }
     
-    extension [Self <: RequiredCacheOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredCacheOptions] (val x: Self) extends AnyVal {
       
       inline def setCacheLocation(value: BrowserCacheLocation | String): Self = StObject.set(x, "cacheLocation", value.asInstanceOf[js.Any])
       

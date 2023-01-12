@@ -17,7 +17,8 @@ object SDPFingerprint {
     __obj.asInstanceOf[SDPFingerprint]
   }
   
-  extension [Self <: SDPFingerprint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SDPFingerprint] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

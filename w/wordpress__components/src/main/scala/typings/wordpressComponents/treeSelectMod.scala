@@ -46,7 +46,8 @@ object treeSelectMod {
         __obj.asInstanceOf[Props]
       }
       
-      extension [Self <: Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
         
         inline def setNoOptionLabel(value: String): Self = StObject.set(x, "noOptionLabel", value.asInstanceOf[js.Any])
         
@@ -87,7 +88,8 @@ object treeSelectMod {
         __obj.asInstanceOf[TreeNode]
       }
       
-      extension [Self <: TreeNode](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TreeNode] (val x: Self) extends AnyVal {
         
         inline def setChildren(value: js.Array[TreeNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         

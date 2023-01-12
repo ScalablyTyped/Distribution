@@ -19,7 +19,8 @@ object IndentIfBreak_ {
     __obj.asInstanceOf[IndentIfBreak_]
   }
   
-  extension [Self <: IndentIfBreak_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndentIfBreak_] (val x: Self) extends AnyVal {
     
     inline def setType(value: `indent-if-break`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

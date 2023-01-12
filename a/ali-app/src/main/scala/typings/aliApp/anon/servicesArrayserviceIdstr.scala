@@ -20,7 +20,8 @@ object servicesArrayserviceIdstr {
     __obj.asInstanceOf[servicesArrayserviceIdstr]
   }
   
-  extension [Self <: servicesArrayserviceIdstr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: servicesArrayserviceIdstr] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: ok | String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

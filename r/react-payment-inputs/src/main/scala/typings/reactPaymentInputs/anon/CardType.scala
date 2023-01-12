@@ -23,7 +23,8 @@ object CardType {
     __obj.asInstanceOf[CardType]
   }
   
-  extension [Self <: CardType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardType] (val x: Self) extends AnyVal {
     
     inline def setCardType(value: typings.reactPaymentInputs.mod.CardType): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
     

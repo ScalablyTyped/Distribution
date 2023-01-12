@@ -18,7 +18,8 @@ object TreeFilterOptions {
     __obj.asInstanceOf[TreeFilterOptions]
   }
   
-  extension [Self <: TreeFilterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeFilterOptions] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: /* event */ js.UndefOr[KeyboardEvent] => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     

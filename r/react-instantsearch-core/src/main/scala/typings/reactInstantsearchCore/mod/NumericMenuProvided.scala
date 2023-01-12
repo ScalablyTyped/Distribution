@@ -35,7 +35,8 @@ object NumericMenuProvided {
     __obj.asInstanceOf[NumericMenuProvided]
   }
   
-  extension [Self <: NumericMenuProvided](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumericMenuProvided] (val x: Self) extends AnyVal {
     
     inline def setCreateURL(value: /* repeated */ Any => Any): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
     

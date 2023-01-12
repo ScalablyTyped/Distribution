@@ -140,7 +140,8 @@ object urlSearchParamsMod {
       __obj.asInstanceOf[URLSearchParams]
     }
     
-    extension [Self <: URLSearchParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URLSearchParams] (val x: Self) extends AnyVal {
       
       inline def setAppend(value: (String, String) => Unit): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
       

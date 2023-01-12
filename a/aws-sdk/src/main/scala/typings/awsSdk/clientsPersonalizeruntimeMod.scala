@@ -43,7 +43,8 @@ object clientsPersonalizeruntimeMod {
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    extension [Self <: ClientApiVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object clientsPersonalizeruntimeMod {
       __obj.asInstanceOf[GetPersonalizedRankingRequest]
     }
     
-    extension [Self <: GetPersonalizedRankingRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetPersonalizedRankingRequest] (val x: Self) extends AnyVal {
       
       inline def setCampaignArn(value: Arn): Self = StObject.set(x, "campaignArn", value.asInstanceOf[js.Any])
       
@@ -146,7 +148,8 @@ object clientsPersonalizeruntimeMod {
       __obj.asInstanceOf[GetPersonalizedRankingResponse]
     }
     
-    extension [Self <: GetPersonalizedRankingResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetPersonalizedRankingResponse] (val x: Self) extends AnyVal {
       
       inline def setPersonalizedRanking(value: ItemList): Self = StObject.set(x, "personalizedRanking", value.asInstanceOf[js.Any])
       
@@ -214,7 +217,8 @@ object clientsPersonalizeruntimeMod {
       __obj.asInstanceOf[GetRecommendationsRequest]
     }
     
-    extension [Self <: GetRecommendationsRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetRecommendationsRequest] (val x: Self) extends AnyVal {
       
       inline def setCampaignArn(value: Arn): Self = StObject.set(x, "campaignArn", value.asInstanceOf[js.Any])
       
@@ -275,7 +279,8 @@ object clientsPersonalizeruntimeMod {
       __obj.asInstanceOf[GetRecommendationsResponse]
     }
     
-    extension [Self <: GetRecommendationsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetRecommendationsResponse] (val x: Self) extends AnyVal {
       
       inline def setItemList(value: ItemList): Self = StObject.set(x, "itemList", value.asInstanceOf[js.Any])
       
@@ -360,7 +365,8 @@ object clientsPersonalizeruntimeMod {
       __obj.asInstanceOf[PredictedItem]
     }
     
-    extension [Self <: PredictedItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PredictedItem] (val x: Self) extends AnyVal {
       
       inline def setItemId(value: ItemID): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
       
@@ -405,7 +411,8 @@ object clientsPersonalizeruntimeMod {
       __obj.asInstanceOf[Promotion]
     }
     
-    extension [Self <: Promotion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Promotion] (val x: Self) extends AnyVal {
       
       inline def setFilterArn(value: Arn): Self = StObject.set(x, "filterArn", value.asInstanceOf[js.Any])
       

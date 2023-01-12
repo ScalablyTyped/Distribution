@@ -17,7 +17,8 @@ object Toasts {
     __obj.asInstanceOf[Toasts]
   }
   
-  extension [Self <: Toasts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Toasts] (val x: Self) extends AnyVal {
     
     inline def setIsMounted(value: Boolean): Self = StObject.set(x, "isMounted", value.asInstanceOf[js.Any])
     

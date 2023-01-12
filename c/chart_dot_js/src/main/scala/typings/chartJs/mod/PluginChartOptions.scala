@@ -15,7 +15,8 @@ object PluginChartOptions {
     __obj.asInstanceOf[PluginChartOptions[TType]]
   }
   
-  extension [Self <: PluginChartOptions[?], TType /* <: ChartType */](x: Self & PluginChartOptions[TType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginChartOptions[?], TType /* <: ChartType */] (val x: Self & PluginChartOptions[TType]) extends AnyVal {
     
     inline def setPlugins(value: PluginOptionsByType[TType]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
   }

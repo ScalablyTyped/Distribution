@@ -29,7 +29,8 @@ object EBMLNumericTagSchema {
     __obj.asInstanceOf[EBMLNumericTagSchema]
   }
   
-  extension [Self <: EBMLNumericTagSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EBMLNumericTagSchema] (val x: Self) extends AnyVal {
     
     inline def setBr(
       value: String | (js.Tuple2[String, String]) | (js.Tuple3[String, String, String]) | (js.Tuple4[String, String, String, String])

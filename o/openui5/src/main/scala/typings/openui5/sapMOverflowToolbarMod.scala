@@ -193,7 +193,8 @@ object sapMOverflowToolbarMod {
       __obj.asInstanceOf[OverflowToolbarSettings]
     }
     
-    extension [Self <: OverflowToolbarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverflowToolbarSettings] (val x: Self) extends AnyVal {
       
       inline def setAsyncMode(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "asyncMode", value.asInstanceOf[js.Any])
       

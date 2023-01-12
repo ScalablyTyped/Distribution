@@ -463,7 +463,8 @@ object mod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setComment(value: Boolean): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -505,7 +506,8 @@ object mod {
       __obj.asInstanceOf[Program]
     }
     
-    extension [Self <: Program](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Program] (val x: Self) extends AnyVal {
       
       inline def setTokens(value: js.Array[Token]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
@@ -529,7 +531,8 @@ object mod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -554,7 +557,8 @@ object mod {
       __obj.asInstanceOf[TokenizeOptions]
     }
     
-    extension [Self <: TokenizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenizeOptions] (val x: Self) extends AnyVal {
       
       inline def setComment(value: Boolean): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       

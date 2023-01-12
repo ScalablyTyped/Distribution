@@ -22,7 +22,8 @@ object Negation {
     __obj.asInstanceOf[Negation]
   }
   
-  extension [Self <: Negation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Negation] (val x: Self) extends AnyVal {
     
     inline def setType(value: not): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

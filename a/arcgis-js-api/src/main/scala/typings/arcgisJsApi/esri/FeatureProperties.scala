@@ -83,7 +83,8 @@ object FeatureProperties {
     __obj.asInstanceOf[FeatureProperties]
   }
   
-  extension [Self <: FeatureProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureProperties] (val x: Self) extends AnyVal {
     
     inline def setDefaultPopupTemplateEnabled(value: Boolean): Self = StObject.set(x, "defaultPopupTemplateEnabled", value.asInstanceOf[js.Any])
     

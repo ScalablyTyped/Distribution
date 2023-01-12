@@ -25,7 +25,8 @@ object mod {
       __obj.asInstanceOf[MultiaddrFromUriOpts]
     }
     
-    extension [Self <: MultiaddrFromUriOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiaddrFromUriOpts] (val x: Self) extends AnyVal {
       
       inline def setDefaultDnsType(value: String): Self = StObject.set(x, "defaultDnsType", value.asInstanceOf[js.Any])
       

@@ -101,7 +101,8 @@ object consoleMod {
       __obj.asInstanceOf[ConsoleOptions]
     }
     
-    extension [Self <: ConsoleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsoleOptions] (val x: Self) extends AnyVal {
       
       inline def setHotKey(value: Key): Self = StObject.set(x, "hotKey", value.asInstanceOf[js.Any])
       

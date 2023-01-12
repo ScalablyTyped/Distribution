@@ -16,7 +16,8 @@ object RegionInstanceGroupManagersSetTemplateRequest {
     __obj.asInstanceOf[RegionInstanceGroupManagersSetTemplateRequest]
   }
   
-  extension [Self <: RegionInstanceGroupManagersSetTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionInstanceGroupManagersSetTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceTemplate(value: String): Self = StObject.set(x, "instanceTemplate", value.asInstanceOf[js.Any])
     

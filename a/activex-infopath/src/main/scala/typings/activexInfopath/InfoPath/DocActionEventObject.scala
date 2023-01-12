@@ -29,7 +29,8 @@ object DocActionEventObject {
     __obj.asInstanceOf[DocActionEventObject]
   }
   
-  extension [Self <: DocActionEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocActionEventObject] (val x: Self) extends AnyVal {
     
     inline def setInfoPathDotDocActionEventObject_typekey(value: DocActionEventObject): Self = StObject.set(x, "InfoPath.DocActionEventObject_typekey", value.asInstanceOf[js.Any])
     

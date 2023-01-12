@@ -31,7 +31,8 @@ object babylonjsMaterialsTexturesBaseTextureAugmentingMod {
       __obj.asInstanceOf[typings.babylonjs.materialsTexturesIndexMod.babylonjsMaterialsTexturesBaseTextureAugmentingMod.BaseTexture]
     }
     
-    extension [Self <: typings.babylonjs.materialsTexturesIndexMod.babylonjsMaterialsTexturesBaseTextureAugmentingMod.BaseTexture](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.babylonjs.materialsTexturesIndexMod.babylonjsMaterialsTexturesBaseTextureAugmentingMod.BaseTexture] (val x: Self) extends AnyVal {
       
       inline def setForceSphericalPolynomialsRecompute(value: () => Unit): Self = StObject.set(x, "forceSphericalPolynomialsRecompute", js.Any.fromFunction0(value))
       

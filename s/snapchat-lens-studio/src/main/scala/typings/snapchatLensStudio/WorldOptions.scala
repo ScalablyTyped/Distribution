@@ -27,7 +27,8 @@ object WorldOptions {
     __obj.asInstanceOf[WorldOptions]
   }
   
-  extension [Self <: WorldOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorldOptions] (val x: Self) extends AnyVal {
     
     inline def setEnableWorldMeshesClassificationTracking(value: Boolean): Self = StObject.set(x, "enableWorldMeshesClassificationTracking", value.asInstanceOf[js.Any])
     

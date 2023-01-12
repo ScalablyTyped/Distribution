@@ -41,7 +41,8 @@ object ChangeStreamDeleteDocument {
     __obj.asInstanceOf[ChangeStreamDeleteDocument[TSchema]]
   }
   
-  extension [Self <: ChangeStreamDeleteDocument[?], TSchema /* <: Document */](x: Self & ChangeStreamDeleteDocument[TSchema]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeStreamDeleteDocument[?], TSchema /* <: Document */] (val x: Self & ChangeStreamDeleteDocument[TSchema]) extends AnyVal {
     
     inline def setFullDocumentBeforeChange(value: TSchema): Self = StObject.set(x, "fullDocumentBeforeChange", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distSrcSystemDistComponentsFormFieldSpinnerDownMod extends Shortcut {
       __obj.asInstanceOf[FormFieldSpinnerDownProps]
     }
     
-    extension [Self <: FormFieldSpinnerDownProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormFieldSpinnerDownProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

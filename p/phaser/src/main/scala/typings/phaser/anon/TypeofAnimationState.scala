@@ -39,7 +39,8 @@ object TypeofAnimationState {
     __obj.asInstanceOf[TypeofAnimationState]
   }
   
-  extension [Self <: TypeofAnimationState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofAnimationState] (val x: Self) extends AnyVal {
     
     inline def setEmptyAnimation(value: Animation): Self = StObject.set(x, "emptyAnimation", value.asInstanceOf[js.Any])
     

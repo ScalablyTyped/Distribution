@@ -28,7 +28,8 @@ object WebixFilter {
     __obj.asInstanceOf[WebixFilter]
   }
   
-  extension [Self <: WebixFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebixFilter] (val x: Self) extends AnyVal {
     
     inline def setGetValue(value: HTMLElement => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
     

@@ -55,7 +55,8 @@ object Core {
       __obj.asInstanceOf[Constraint]
     }
     
-    extension [Self <: Constraint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constraint] (val x: Self) extends AnyVal {
       
       inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object Core {
       __obj.asInstanceOf[GmePersisted]
     }
     
-    extension [Self <: GmePersisted](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GmePersisted] (val x: Self) extends AnyVal {
       
       inline def setObjects(value: StringDictionary[DataObject]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
       
@@ -128,7 +130,8 @@ object Core {
       __obj.asInstanceOf[MixinViolation]
     }
     
-    extension [Self <: MixinViolation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MixinViolation] (val x: Self) extends AnyVal {
       
       inline def setCollisionNodes(value: js.Array[Node]): Self = StObject.set(x, "collisionNodes", value.asInstanceOf[js.Any])
       
@@ -409,7 +412,8 @@ object Core {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setCanSetAsMixin(value: Path => Boolean): Self = StObject.set(x, "canSetAsMixin", js.Any.fromFunction1(value))
       
@@ -596,7 +600,8 @@ object Core {
       __obj.asInstanceOf[RelationRuleDetail]
     }
     
-    extension [Self <: RelationRuleDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelationRuleDetail] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       

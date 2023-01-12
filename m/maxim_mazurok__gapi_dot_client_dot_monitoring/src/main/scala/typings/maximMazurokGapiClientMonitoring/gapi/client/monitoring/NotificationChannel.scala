@@ -73,7 +73,8 @@ object NotificationChannel {
     __obj.asInstanceOf[NotificationChannel]
   }
   
-  extension [Self <: NotificationChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationChannel] (val x: Self) extends AnyVal {
     
     inline def setCreationRecord(value: MutationRecord): Self = StObject.set(x, "creationRecord", value.asInstanceOf[js.Any])
     

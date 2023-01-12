@@ -19,7 +19,8 @@ object DimensionCompatibility {
     __obj.asInstanceOf[DimensionCompatibility]
   }
   
-  extension [Self <: DimensionCompatibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionCompatibility] (val x: Self) extends AnyVal {
     
     inline def setCompatibility(value: String): Self = StObject.set(x, "compatibility", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object GitTargetVersionDescriptor {
     __obj.asInstanceOf[GitTargetVersionDescriptor]
   }
   
-  extension [Self <: GitTargetVersionDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitTargetVersionDescriptor] (val x: Self) extends AnyVal {
     
     inline def setTargetVersion(value: String): Self = StObject.set(x, "targetVersion", value.asInstanceOf[js.Any])
     

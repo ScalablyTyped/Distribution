@@ -33,7 +33,8 @@ object SaveOptions {
     __obj.asInstanceOf[SaveOptions]
   }
   
-  extension [Self <: SaveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveOptions] (val x: Self) extends AnyVal {
     
     inline def setSaveMode(value: SaveMode): Self = StObject.set(x, "saveMode", value.asInstanceOf[js.Any])
     

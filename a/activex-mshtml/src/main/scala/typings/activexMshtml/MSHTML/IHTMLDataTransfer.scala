@@ -34,7 +34,8 @@ object IHTMLDataTransfer {
     __obj.asInstanceOf[IHTMLDataTransfer]
   }
   
-  extension [Self <: IHTMLDataTransfer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHTMLDataTransfer] (val x: Self) extends AnyVal {
     
     inline def setClearData(value: String => Boolean): Self = StObject.set(x, "clearData", js.Any.fromFunction1(value))
     

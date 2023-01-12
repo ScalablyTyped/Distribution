@@ -16,7 +16,8 @@ object InstancesCloneRequest {
     __obj.asInstanceOf[InstancesCloneRequest]
   }
   
-  extension [Self <: InstancesCloneRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstancesCloneRequest] (val x: Self) extends AnyVal {
     
     inline def setCloneContext(value: CloneContext): Self = StObject.set(x, "cloneContext", value.asInstanceOf[js.Any])
     

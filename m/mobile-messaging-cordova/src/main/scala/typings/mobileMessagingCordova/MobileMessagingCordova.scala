@@ -250,7 +250,8 @@ object MobileMessagingCordova {
       __obj.asInstanceOf[ChatConfig]
     }
     
-    extension [Self <: ChatConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChatConfig] (val x: Self) extends AnyVal {
       
       inline def setIos(value: ShowModally): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
       
@@ -291,7 +292,8 @@ object MobileMessagingCordova {
       __obj.asInstanceOf[Configuration]
     }
     
-    extension [Self <: Configuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
       
       inline def setAndroid(value: MultipleNotifications): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
@@ -353,7 +355,8 @@ object MobileMessagingCordova {
       __obj.asInstanceOf[DefaultMessageStorage]
     }
     
-    extension [Self <: DefaultMessageStorage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultMessageStorage] (val x: Self) extends AnyVal {
       
       inline def setDelete(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
       
@@ -457,7 +460,8 @@ object MobileMessagingCordova {
       __obj.asInstanceOf[Installation]
     }
     
-    extension [Self <: Installation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Installation] (val x: Self) extends AnyVal {
       
       inline def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
       
@@ -578,7 +582,8 @@ object MobileMessagingCordova {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -677,7 +682,8 @@ object MobileMessagingCordova {
       __obj.asInstanceOf[MobileMessagingError]
     }
     
-    extension [Self <: MobileMessagingError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MobileMessagingError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -712,7 +718,8 @@ object MobileMessagingCordova {
       __obj.asInstanceOf[PersonalizeContext]
     }
     
-    extension [Self <: PersonalizeContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersonalizeContext] (val x: Self) extends AnyVal {
       
       inline def setForceDepersonalize(value: Boolean): Self = StObject.set(x, "forceDepersonalize", value.asInstanceOf[js.Any])
       
@@ -755,7 +762,8 @@ object MobileMessagingCordova {
       __obj.asInstanceOf[UserData]
     }
     
-    extension [Self <: UserData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserData] (val x: Self) extends AnyVal {
       
       inline def setBirthday(value: String): Self = StObject.set(x, "birthday", value.asInstanceOf[js.Any])
       
@@ -818,7 +826,8 @@ object MobileMessagingCordova {
       __obj.asInstanceOf[UserIdentity]
     }
     
-    extension [Self <: UserIdentity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserIdentity] (val x: Self) extends AnyVal {
       
       inline def setEmails(value: js.Array[String]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
       

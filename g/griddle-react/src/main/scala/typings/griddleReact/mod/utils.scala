@@ -59,7 +59,8 @@ object utils {
       __obj.asInstanceOf[SortProperties]
     }
     
-    extension [Self <: SortProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortProperties] (val x: Self) extends AnyVal {
       
       inline def setColumnId(value: String): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
       

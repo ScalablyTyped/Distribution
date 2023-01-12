@@ -22,7 +22,8 @@ object WirelessDeviceLogOption {
     __obj.asInstanceOf[WirelessDeviceLogOption]
   }
   
-  extension [Self <: WirelessDeviceLogOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WirelessDeviceLogOption] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: WirelessDeviceEventLogOptionList): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     

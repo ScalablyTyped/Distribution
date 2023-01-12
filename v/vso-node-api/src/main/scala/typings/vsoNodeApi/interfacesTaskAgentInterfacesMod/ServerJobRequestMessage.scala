@@ -28,7 +28,8 @@ object ServerJobRequestMessage {
     __obj.asInstanceOf[ServerJobRequestMessage]
   }
   
-  extension [Self <: ServerJobRequestMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerJobRequestMessage] (val x: Self) extends AnyVal {
     
     inline def setTaskDefinition(value: TaskDefinition): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
     

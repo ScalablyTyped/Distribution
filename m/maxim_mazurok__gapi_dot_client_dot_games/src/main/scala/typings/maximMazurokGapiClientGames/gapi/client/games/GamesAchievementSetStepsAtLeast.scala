@@ -19,7 +19,8 @@ object GamesAchievementSetStepsAtLeast {
     __obj.asInstanceOf[GamesAchievementSetStepsAtLeast]
   }
   
-  extension [Self <: GamesAchievementSetStepsAtLeast](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GamesAchievementSetStepsAtLeast] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

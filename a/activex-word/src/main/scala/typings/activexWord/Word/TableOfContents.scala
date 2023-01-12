@@ -73,7 +73,8 @@ object TableOfContents {
     __obj.asInstanceOf[TableOfContents]
   }
   
-  extension [Self <: TableOfContents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableOfContents] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

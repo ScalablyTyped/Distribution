@@ -40,7 +40,8 @@ object InventoryWindowsUpdatePackage {
     __obj.asInstanceOf[InventoryWindowsUpdatePackage]
   }
   
-  extension [Self <: InventoryWindowsUpdatePackage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventoryWindowsUpdatePackage] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: js.Array[InventoryWindowsUpdatePackageWindowsUpdateCategory]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

@@ -96,7 +96,8 @@ object UpdateOptions {
     __obj.asInstanceOf[UpdateOptions[T]]
   }
   
-  extension [Self <: UpdateOptions[?], T](x: Self & UpdateOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateOptions[?], T] (val x: Self & UpdateOptions[T]) extends AnyVal {
     
     inline def setAutoClose(value: Double | `false`): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
     

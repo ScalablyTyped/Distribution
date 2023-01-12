@@ -28,7 +28,8 @@ object InputFileConfig {
     __obj.asInstanceOf[InputFileConfig]
   }
   
-  extension [Self <: InputFileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputFileConfig] (val x: Self) extends AnyVal {
     
     inline def setChannelName(value: InputFileConfigChannelNameString): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
     

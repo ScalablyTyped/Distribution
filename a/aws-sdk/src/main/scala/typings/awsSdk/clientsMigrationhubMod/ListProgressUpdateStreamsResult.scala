@@ -23,7 +23,8 @@ object ListProgressUpdateStreamsResult {
     __obj.asInstanceOf[ListProgressUpdateStreamsResult]
   }
   
-  extension [Self <: ListProgressUpdateStreamsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListProgressUpdateStreamsResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

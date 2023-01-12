@@ -17,7 +17,8 @@ object Altdomain {
     __obj.asInstanceOf[Altdomain]
   }
   
-  extension [Self <: Altdomain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Altdomain] (val x: Self) extends AnyVal {
     
     inline def setAlt_domain(value: Caaerror): Self = StObject.set(x, "alt_domain", value.asInstanceOf[js.Any])
     

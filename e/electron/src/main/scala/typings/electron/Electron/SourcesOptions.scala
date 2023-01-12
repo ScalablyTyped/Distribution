@@ -34,7 +34,8 @@ object SourcesOptions {
     __obj.asInstanceOf[SourcesOptions]
   }
   
-  extension [Self <: SourcesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourcesOptions] (val x: Self) extends AnyVal {
     
     inline def setFetchWindowIcons(value: Boolean): Self = StObject.set(x, "fetchWindowIcons", value.asInstanceOf[js.Any])
     

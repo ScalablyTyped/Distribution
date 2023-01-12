@@ -23,7 +23,8 @@ object WebProjectAnnotations {
     __obj.asInstanceOf[WebProjectAnnotations[TFramework]]
   }
   
-  extension [Self <: WebProjectAnnotations[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](x: Self & WebProjectAnnotations[TFramework]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebProjectAnnotations[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] (val x: Self & WebProjectAnnotations[TFramework]) extends AnyVal {
     
     inline def setRenderToDOM(value: (/* context */ RenderContext[TFramework], /* element */ Element) => js.Promise[Unit] | Unit): Self = StObject.set(x, "renderToDOM", js.Any.fromFunction2(value))
     

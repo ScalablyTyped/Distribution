@@ -18,7 +18,8 @@ object `18` {
     __obj.asInstanceOf[`18`[BaseToken]]
   }
   
-  extension [Self <: `18`[?], BaseToken](x: Self & `18`[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `18`[?], BaseToken] (val x: Self & `18`[BaseToken]) extends AnyVal {
     
     inline def setHover(value: PaintToken[BaseToken]): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     

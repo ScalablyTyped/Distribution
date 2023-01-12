@@ -88,7 +88,8 @@ object Statement {
     __obj.asInstanceOf[Statement]
   }
   
-  extension [Self <: Statement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Statement] (val x: Self) extends AnyVal {
     
     inline def setAndStatement(value: AndStatement): Self = StObject.set(x, "AndStatement", value.asInstanceOf[js.Any])
     

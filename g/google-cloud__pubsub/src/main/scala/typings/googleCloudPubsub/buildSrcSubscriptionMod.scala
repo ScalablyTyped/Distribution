@@ -691,7 +691,8 @@ object buildSrcSubscriptionMod {
       __obj.asInstanceOf[GetSubscriptionOptions]
     }
     
-    extension [Self <: GetSubscriptionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetSubscriptionOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoCreate(value: Boolean): Self = StObject.set(x, "autoCreate", value.asInstanceOf[js.Any])
       
@@ -743,7 +744,8 @@ object buildSrcSubscriptionMod {
       __obj.asInstanceOf[SubscriptionOptions]
     }
     
-    extension [Self <: SubscriptionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriptionOptions] (val x: Self) extends AnyVal {
       
       inline def setTopic(value: Topic): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
       

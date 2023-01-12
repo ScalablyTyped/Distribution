@@ -43,7 +43,8 @@ object BehaviorModelTrainingSummary {
     __obj.asInstanceOf[BehaviorModelTrainingSummary]
   }
   
-  extension [Self <: BehaviorModelTrainingSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BehaviorModelTrainingSummary] (val x: Self) extends AnyVal {
     
     inline def setBehaviorName(value: BehaviorName): Self = StObject.set(x, "behaviorName", value.asInstanceOf[js.Any])
     

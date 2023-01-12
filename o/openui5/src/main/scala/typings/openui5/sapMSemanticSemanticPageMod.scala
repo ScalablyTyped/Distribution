@@ -938,7 +938,8 @@ object sapMSemanticSemanticPageMod {
       __obj.asInstanceOf[SemanticPageSettings]
     }
     
-    extension [Self <: SemanticPageSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemanticPageSettings] (val x: Self) extends AnyVal {
       
       inline def setBackgroundDesign(
         value: PageBackgroundDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageBackgroundDesign * / any */ String) | PropertyBindingInfo

@@ -18,7 +18,8 @@ object StartConfigRulesEvaluationRequest {
     __obj.asInstanceOf[StartConfigRulesEvaluationRequest]
   }
   
-  extension [Self <: StartConfigRulesEvaluationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartConfigRulesEvaluationRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigRuleNames(value: ReevaluateConfigRuleNames): Self = StObject.set(x, "ConfigRuleNames", value.asInstanceOf[js.Any])
     

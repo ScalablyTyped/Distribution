@@ -23,7 +23,8 @@ object ListParallelDataRequest {
     __obj.asInstanceOf[ListParallelDataRequest]
   }
   
-  extension [Self <: ListParallelDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListParallelDataRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResultsInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

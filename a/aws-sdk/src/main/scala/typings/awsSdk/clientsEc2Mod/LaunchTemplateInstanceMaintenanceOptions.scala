@@ -18,7 +18,8 @@ object LaunchTemplateInstanceMaintenanceOptions {
     __obj.asInstanceOf[LaunchTemplateInstanceMaintenanceOptions]
   }
   
-  extension [Self <: LaunchTemplateInstanceMaintenanceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchTemplateInstanceMaintenanceOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoRecovery(value: LaunchTemplateAutoRecoveryState): Self = StObject.set(x, "AutoRecovery", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[ChangeValue]
     }
     
-    extension [Self <: ChangeValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeValue] (val x: Self) extends AnyVal {
       
       inline def setNewValue(value: Double): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object mod {
       __obj.asInstanceOf[RangeHighlight]
     }
     
-    extension [Self <: RangeHighlight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeHighlight] (val x: Self) extends AnyVal {
       
       inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object mod {
       __obj.asInstanceOf[RefreshOptions]
     }
     
-    extension [Self <: RefreshOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefreshOptions] (val x: Self) extends AnyVal {
       
       inline def setUseCurrentValue(value: Boolean): Self = StObject.set(x, "useCurrentValue", value.asInstanceOf[js.Any])
       
@@ -213,7 +216,8 @@ object mod {
       __obj.asInstanceOf[SliderEvent]
     }
     
-    extension [Self <: SliderEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderEvent] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Double | ChangeValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -428,7 +432,8 @@ object mod {
       __obj.asInstanceOf[SliderOptions]
     }
     
-    extension [Self <: SliderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -602,7 +607,8 @@ object mod {
         __obj.asInstanceOf[JQuery]
       }
       
-      extension [Self <: JQuery](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
         
         inline def setBootstrapSlider(value: SliderPlugin[JQuery]): Self = StObject.set(x, "bootstrapSlider", value.asInstanceOf[js.Any])
         

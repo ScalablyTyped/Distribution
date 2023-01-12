@@ -18,7 +18,8 @@ object DeleteSAMLProviderRequest {
     __obj.asInstanceOf[DeleteSAMLProviderRequest]
   }
   
-  extension [Self <: DeleteSAMLProviderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSAMLProviderRequest] (val x: Self) extends AnyVal {
     
     inline def setSAMLProviderArn(value: arnType): Self = StObject.set(x, "SAMLProviderArn", value.asInstanceOf[js.Any])
   }

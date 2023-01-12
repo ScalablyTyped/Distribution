@@ -28,7 +28,8 @@ object ResourceInfo {
     __obj.asInstanceOf[ResourceInfo]
   }
   
-  extension [Self <: ResourceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceInfo] (val x: Self) extends AnyVal {
     
     inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     

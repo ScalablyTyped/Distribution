@@ -23,7 +23,8 @@ object PathToObjectIdentifiers {
     __obj.asInstanceOf[PathToObjectIdentifiers]
   }
   
-  extension [Self <: PathToObjectIdentifiers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathToObjectIdentifiers] (val x: Self) extends AnyVal {
     
     inline def setObjectIdentifiers(value: ObjectIdentifierList): Self = StObject.set(x, "ObjectIdentifiers", value.asInstanceOf[js.Any])
     

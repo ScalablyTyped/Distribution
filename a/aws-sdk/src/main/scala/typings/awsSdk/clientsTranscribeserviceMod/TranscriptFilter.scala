@@ -43,7 +43,8 @@ object TranscriptFilter {
     __obj.asInstanceOf[TranscriptFilter]
   }
   
-  extension [Self <: TranscriptFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranscriptFilter] (val x: Self) extends AnyVal {
     
     inline def setAbsoluteTimeRange(value: AbsoluteTimeRange): Self = StObject.set(x, "AbsoluteTimeRange", value.asInstanceOf[js.Any])
     

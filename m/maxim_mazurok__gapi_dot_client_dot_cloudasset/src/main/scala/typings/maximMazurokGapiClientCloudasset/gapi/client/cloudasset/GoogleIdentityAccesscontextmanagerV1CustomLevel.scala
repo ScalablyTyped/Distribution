@@ -16,7 +16,8 @@ object GoogleIdentityAccesscontextmanagerV1CustomLevel {
     __obj.asInstanceOf[GoogleIdentityAccesscontextmanagerV1CustomLevel]
   }
   
-  extension [Self <: GoogleIdentityAccesscontextmanagerV1CustomLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleIdentityAccesscontextmanagerV1CustomLevel] (val x: Self) extends AnyVal {
     
     inline def setExpr(value: Expr): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     

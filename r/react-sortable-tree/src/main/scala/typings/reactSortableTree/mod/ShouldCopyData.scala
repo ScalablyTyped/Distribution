@@ -19,7 +19,8 @@ object ShouldCopyData {
     __obj.asInstanceOf[ShouldCopyData[T]]
   }
   
-  extension [Self <: ShouldCopyData[?], T](x: Self & ShouldCopyData[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShouldCopyData[?], T] (val x: Self & ShouldCopyData[T]) extends AnyVal {
     
     inline def setNode(value: TreeNode[T]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     

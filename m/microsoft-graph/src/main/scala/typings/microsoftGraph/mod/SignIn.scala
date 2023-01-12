@@ -133,7 +133,8 @@ object SignIn {
     __obj.asInstanceOf[SignIn]
   }
   
-  extension [Self <: SignIn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignIn] (val x: Self) extends AnyVal {
     
     inline def setAppDisplayName(value: NullableOption[String]): Self = StObject.set(x, "appDisplayName", value.asInstanceOf[js.Any])
     

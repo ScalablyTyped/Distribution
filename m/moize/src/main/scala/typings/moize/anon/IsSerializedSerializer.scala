@@ -19,7 +19,8 @@ object IsSerializedSerializer {
     __obj.asInstanceOf[IsSerializedSerializer[Serializer]]
   }
   
-  extension [Self <: IsSerializedSerializer[?], Serializer /* <: Serialize */](x: Self & IsSerializedSerializer[Serializer]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsSerializedSerializer[?], Serializer /* <: Serialize */] (val x: Self & IsSerializedSerializer[Serializer]) extends AnyVal {
     
     inline def setIsSerialized(value: `true`): Self = StObject.set(x, "isSerialized", value.asInstanceOf[js.Any])
     

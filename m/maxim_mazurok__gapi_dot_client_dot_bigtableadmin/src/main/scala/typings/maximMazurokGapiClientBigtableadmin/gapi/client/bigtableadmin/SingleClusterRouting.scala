@@ -22,7 +22,8 @@ object SingleClusterRouting {
     __obj.asInstanceOf[SingleClusterRouting]
   }
   
-  extension [Self <: SingleClusterRouting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleClusterRouting] (val x: Self) extends AnyVal {
     
     inline def setAllowTransactionalWrites(value: Boolean): Self = StObject.set(x, "allowTransactionalWrites", value.asInstanceOf[js.Any])
     

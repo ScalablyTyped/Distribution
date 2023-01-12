@@ -52,7 +52,8 @@ object libTimeTimeMod {
       __obj.asInstanceOf[TimeBaseProps]
     }
     
-    extension [Self <: TimeBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeBaseProps] (val x: Self) extends AnyVal {
       
       inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object libTimeTimeMod {
       __obj.asInstanceOf[TimeProps]
     }
     
-    extension [Self <: TimeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

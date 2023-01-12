@@ -61,7 +61,8 @@ object breadcrumbsBreadcrumbsMod extends Shortcut {
       __obj.asInstanceOf[BreadcrumbsTypeMap[P, D]]
     }
     
-    extension [Self <: BreadcrumbsTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (BreadcrumbsTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbsTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (BreadcrumbsTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: BreadcrumbsClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

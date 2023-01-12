@@ -173,7 +173,8 @@ object XChartDocument {
     __obj.asInstanceOf[XChartDocument]
   }
   
-  extension [Self <: XChartDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XChartDocument] (val x: Self) extends AnyVal {
     
     inline def setArea(value: XPropertySet): Self = StObject.set(x, "Area", value.asInstanceOf[js.Any])
     

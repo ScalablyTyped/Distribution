@@ -70,7 +70,8 @@ object ClientMetadata {
     __obj.asInstanceOf[ClientMetadata]
   }
   
-  extension [Self <: ClientMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientMetadata] (val x: Self) extends AnyVal {
     
     inline def setAuthorization_encrypted_response_alg(value: String): Self = StObject.set(x, "authorization_encrypted_response_alg", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object TSFunctionType {
   @js.native
   def apply(typeParameters: TypeParameterDeclaration_, typeAnnotation: TSTypeAnnotation): TSFunctionType = js.native
   
-  extension [Self <: TSFunctionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSFunctionType] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: js.Array[Identifier_ | RestElement_]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

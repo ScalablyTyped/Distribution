@@ -18,7 +18,8 @@ object ProcessingResources {
     __obj.asInstanceOf[ProcessingResources]
   }
   
-  extension [Self <: ProcessingResources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessingResources] (val x: Self) extends AnyVal {
     
     inline def setClusterConfig(value: ProcessingClusterConfig): Self = StObject.set(x, "ClusterConfig", value.asInstanceOf[js.Any])
   }

@@ -40,7 +40,8 @@ object XColumnLocate {
     __obj.asInstanceOf[XColumnLocate]
   }
   
-  extension [Self <: XColumnLocate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XColumnLocate] (val x: Self) extends AnyVal {
     
     inline def setFindColumn(value: String => Double): Self = StObject.set(x, "findColumn", js.Any.fromFunction1(value))
   }

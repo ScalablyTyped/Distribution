@@ -33,7 +33,8 @@ object File_ {
     __obj.asInstanceOf[File_]
   }
   
-  extension [Self <: File_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: File_] (val x: Self) extends AnyVal {
     
     inline def setComments(value: js.Array[Comment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     

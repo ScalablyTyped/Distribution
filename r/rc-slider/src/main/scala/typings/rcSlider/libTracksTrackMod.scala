@@ -39,7 +39,8 @@ object libTracksTrackMod {
       __obj.asInstanceOf[TrackProps]
     }
     
-    extension [Self <: TrackProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackProps] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

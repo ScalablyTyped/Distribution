@@ -27,7 +27,8 @@ object ILoginStatus {
     __obj.asInstanceOf[ILoginStatus]
   }
   
-  extension [Self <: ILoginStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILoginStatus] (val x: Self) extends AnyVal {
     
     inline def setSession(value: ISession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     

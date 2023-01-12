@@ -15,7 +15,8 @@ object MotionGraphicsSettings {
     __obj.asInstanceOf[MotionGraphicsSettings]
   }
   
-  extension [Self <: MotionGraphicsSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MotionGraphicsSettings] (val x: Self) extends AnyVal {
     
     inline def setHtmlMotionGraphicsSettings(value: HtmlMotionGraphicsSettings): Self = StObject.set(x, "HtmlMotionGraphicsSettings", value.asInstanceOf[js.Any])
     

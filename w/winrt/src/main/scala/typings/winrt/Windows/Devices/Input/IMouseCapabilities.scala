@@ -29,7 +29,8 @@ object IMouseCapabilities {
     __obj.asInstanceOf[IMouseCapabilities]
   }
   
-  extension [Self <: IMouseCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMouseCapabilities] (val x: Self) extends AnyVal {
     
     inline def setHorizontalWheelPresent(value: Double): Self = StObject.set(x, "horizontalWheelPresent", value.asInstanceOf[js.Any])
     

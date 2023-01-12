@@ -44,7 +44,8 @@ object anon {
       __obj.asInstanceOf[OptionssocialSocial]
     }
     
-    extension [Self <: OptionssocialSocial](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionssocialSocial] (val x: Self) extends AnyVal {
       
       inline def setActivityItemSources(value: js.Array[ActivityItemSource]): Self = StObject.set(x, "activityItemSources", value.asInstanceOf[js.Any])
       

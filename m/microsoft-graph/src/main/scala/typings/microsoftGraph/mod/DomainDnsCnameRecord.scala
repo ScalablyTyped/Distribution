@@ -18,7 +18,8 @@ object DomainDnsCnameRecord {
     __obj.asInstanceOf[DomainDnsCnameRecord]
   }
   
-  extension [Self <: DomainDnsCnameRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainDnsCnameRecord] (val x: Self) extends AnyVal {
     
     inline def setCanonicalName(value: NullableOption[String]): Self = StObject.set(x, "canonicalName", value.asInstanceOf[js.Any])
     

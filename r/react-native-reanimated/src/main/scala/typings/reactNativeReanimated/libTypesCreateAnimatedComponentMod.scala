@@ -39,7 +39,8 @@ object libTypesCreateAnimatedComponentMod {
       __obj.asInstanceOf[AnimatedProps]
     }
     
-    extension [Self <: AnimatedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimatedProps] (val x: Self) extends AnyVal {
       
       inline def setInitial(value: SharedValue[StyleProps]): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object libTypesCreateAnimatedComponentMod {
       __obj.asInstanceOf[InitialComponentProps]
     }
     
-    extension [Self <: InitialComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitialComponentProps] (val x: Self) extends AnyVal {
       
       inline def setCollapsable(value: Boolean): Self = StObject.set(x, "collapsable", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object libTypesCreateAnimatedComponentMod {
       __obj.asInstanceOf[Options[P]]
     }
     
-    extension [Self <: Options[?], P](x: Self & Options[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], P] (val x: Self & Options[P]) extends AnyVal {
       
       inline def setSetNativeProps(value: (ComponentRef, P) => Unit): Self = StObject.set(x, "setNativeProps", js.Any.fromFunction2(value))
     }

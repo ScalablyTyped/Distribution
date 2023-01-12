@@ -15,7 +15,8 @@ object DeleteEmailTemplateResponse {
     __obj.asInstanceOf[DeleteEmailTemplateResponse]
   }
   
-  extension [Self <: DeleteEmailTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEmailTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setMessageBody(value: MessageBody): Self = StObject.set(x, "MessageBody", value.asInstanceOf[js.Any])
   }

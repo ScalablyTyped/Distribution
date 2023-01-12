@@ -23,7 +23,8 @@ object ArcGaugeGaugeArea {
     __obj.asInstanceOf[ArcGaugeGaugeArea]
   }
   
-  extension [Self <: ArcGaugeGaugeArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcGaugeGaugeArea] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

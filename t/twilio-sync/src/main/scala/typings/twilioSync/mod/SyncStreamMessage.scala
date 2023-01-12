@@ -26,7 +26,8 @@ object SyncStreamMessage {
     __obj.asInstanceOf[SyncStreamMessage]
   }
   
-  extension [Self <: SyncStreamMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncStreamMessage] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object AltimeterReading {
     __obj.asInstanceOf[AltimeterReading]
   }
   
-  extension [Self <: AltimeterReading](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AltimeterReading] (val x: Self) extends AnyVal {
     
     inline def setAltitudeChangeInMeters(value: Double): Self = StObject.set(x, "altitudeChangeInMeters", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object INative {
     __obj.asInstanceOf[INative]
   }
   
-  extension [Self <: INative](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INative] (val x: Self) extends AnyVal {
     
     inline def setCamera(value: INativeCameraConstructor): Self = StObject.set(x, "Camera", value.asInstanceOf[js.Any])
     

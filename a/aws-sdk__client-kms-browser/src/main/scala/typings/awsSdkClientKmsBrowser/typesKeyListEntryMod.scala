@@ -25,7 +25,8 @@ object typesKeyListEntryMod {
       __obj.asInstanceOf[KeyListEntry]
     }
     
-    extension [Self <: KeyListEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyListEntry] (val x: Self) extends AnyVal {
       
       inline def setKeyArn(value: String): Self = StObject.set(x, "KeyArn", value.asInstanceOf[js.Any])
       

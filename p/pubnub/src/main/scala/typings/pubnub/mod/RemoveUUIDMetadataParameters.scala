@@ -15,7 +15,8 @@ object RemoveUUIDMetadataParameters {
     __obj.asInstanceOf[RemoveUUIDMetadataParameters]
   }
   
-  extension [Self <: RemoveUUIDMetadataParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveUUIDMetadataParameters] (val x: Self) extends AnyVal {
     
     inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     

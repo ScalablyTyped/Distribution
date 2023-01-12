@@ -22,7 +22,8 @@ object BuildBazelRemoteExecutionV2LogFile {
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2LogFile]
   }
   
-  extension [Self <: BuildBazelRemoteExecutionV2LogFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildBazelRemoteExecutionV2LogFile] (val x: Self) extends AnyVal {
     
     inline def setDigest(value: BuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     

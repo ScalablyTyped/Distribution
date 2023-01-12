@@ -89,7 +89,8 @@ object elementsIconIconMod {
       __obj.asInstanceOf[IconModifierProps]
     }
     
-    extension [Self <: IconModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconModifierProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -197,7 +198,8 @@ object elementsIconIconMod {
       __obj.asInstanceOf[IconProps]
     }
     
-    extension [Self <: IconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -363,7 +365,8 @@ object elementsIconIconMod {
       __obj.asInstanceOf[IconVariables]
     }
     
-    extension [Self <: IconVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconVariables] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: left | right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
       
@@ -384,7 +387,8 @@ object elementsIconIconMod {
       __obj.asInstanceOf[IconVariablesDefaults]
     }
     
-    extension [Self <: IconVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: left | right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
       

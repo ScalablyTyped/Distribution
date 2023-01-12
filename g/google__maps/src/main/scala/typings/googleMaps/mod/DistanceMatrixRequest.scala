@@ -140,7 +140,8 @@ object DistanceMatrixRequest {
     __obj.asInstanceOf[DistanceMatrixRequest]
   }
   
-  extension [Self <: DistanceMatrixRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistanceMatrixRequest] (val x: Self) extends AnyVal {
     
     inline def setArrival_time(value: js.Date | Double): Self = StObject.set(x, "arrival_time", value.asInstanceOf[js.Any])
     

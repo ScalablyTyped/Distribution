@@ -18,7 +18,8 @@ object SearchItemsByViewUrlResponse {
     __obj.asInstanceOf[SearchItemsByViewUrlResponse]
   }
   
-  extension [Self <: SearchItemsByViewUrlResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchItemsByViewUrlResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ArtifactFilter {
     __obj.asInstanceOf[ArtifactFilter]
   }
   
-  extension [Self <: ArtifactFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactFilter] (val x: Self) extends AnyVal {
     
     inline def setArtifactId(value: String): Self = StObject.set(x, "artifactId", value.asInstanceOf[js.Any])
     

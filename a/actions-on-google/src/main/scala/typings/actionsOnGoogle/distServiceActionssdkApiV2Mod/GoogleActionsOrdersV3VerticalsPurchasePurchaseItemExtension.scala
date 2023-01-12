@@ -74,7 +74,8 @@ object GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtension {
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtension]
   }
   
-  extension [Self <: GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtension] (val x: Self) extends AnyVal {
     
     inline def setExtension(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     

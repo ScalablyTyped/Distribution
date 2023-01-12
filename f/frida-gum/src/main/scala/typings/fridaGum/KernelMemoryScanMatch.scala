@@ -23,7 +23,8 @@ object KernelMemoryScanMatch {
     __obj.asInstanceOf[KernelMemoryScanMatch]
   }
   
-  extension [Self <: KernelMemoryScanMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KernelMemoryScanMatch] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: UInt64): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

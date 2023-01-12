@@ -21,7 +21,8 @@ object FileManagerDialogs {
     __obj.asInstanceOf[FileManagerDialogs]
   }
   
-  extension [Self <: FileManagerDialogs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileManagerDialogs] (val x: Self) extends AnyVal {
     
     inline def setDeleteConfirm(value: Any): Self = StObject.set(x, "deleteConfirm", value.asInstanceOf[js.Any])
     

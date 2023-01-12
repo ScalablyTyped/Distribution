@@ -62,7 +62,8 @@ object LighthouseResultV5 {
     __obj.asInstanceOf[LighthouseResultV5]
   }
   
-  extension [Self <: LighthouseResultV5](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LighthouseResultV5] (val x: Self) extends AnyVal {
     
     inline def setAudits(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.pagespeedonline.gapi.client.pagespeedonline.LighthouseAuditResultV5} */ js.Any

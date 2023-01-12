@@ -23,7 +23,8 @@ object MultipointDrawActionDrawCompleteEvent {
     __obj.asInstanceOf[MultipointDrawActionDrawCompleteEvent]
   }
   
-  extension [Self <: MultipointDrawActionDrawCompleteEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipointDrawActionDrawCompleteEvent] (val x: Self) extends AnyVal {
     
     inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
     

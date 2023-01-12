@@ -27,7 +27,8 @@ object breadcrumbsTypesMod {
       __obj.asInstanceOf[BreadcrumbsOverrides]
     }
     
-    extension [Self <: BreadcrumbsOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbsOverrides] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: Override[Any]): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object breadcrumbsTypesMod {
       __obj.asInstanceOf[BreadcrumbsProps]
     }
     
-    extension [Self <: BreadcrumbsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbsProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       

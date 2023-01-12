@@ -91,7 +91,8 @@ object Aria {
     __obj.asInstanceOf[Aria]
   }
   
-  extension [Self <: Aria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Aria] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String | SignalRef | FieldField | Scale | Band | Range | ValueAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ElasticsearchVersionStatus {
     __obj.asInstanceOf[ElasticsearchVersionStatus]
   }
   
-  extension [Self <: ElasticsearchVersionStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElasticsearchVersionStatus] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: ElasticsearchVersionString): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     

@@ -79,7 +79,8 @@ object BaseFormatProps {
     __obj.asInstanceOf[BaseFormatProps]
   }
   
-  extension [Self <: BaseFormatProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseFormatProps] (val x: Self) extends AnyVal {
     
     inline def setI18n(
       value: Composer[

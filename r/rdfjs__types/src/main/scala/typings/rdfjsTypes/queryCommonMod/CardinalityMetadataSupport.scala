@@ -16,7 +16,8 @@ object CardinalityMetadataSupport {
     __obj.asInstanceOf[CardinalityMetadataSupport]
   }
   
-  extension [Self <: CardinalityMetadataSupport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardinalityMetadataSupport] (val x: Self) extends AnyVal {
     
     inline def setCardinality(value: `true`): Self = StObject.set(x, "cardinality", value.asInstanceOf[js.Any])
   }

@@ -65,7 +65,8 @@ object XPersistentPropertySet {
     __obj.asInstanceOf[XPersistentPropertySet]
   }
   
-  extension [Self <: XPersistentPropertySet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPersistentPropertySet] (val x: Self) extends AnyVal {
     
     inline def setGetKey(value: () => String): Self = StObject.set(x, "getKey", js.Any.fromFunction0(value))
     

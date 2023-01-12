@@ -22,7 +22,8 @@ object AppsDynamiteSharedActivityFeedAnnotationDataUserInfo {
     __obj.asInstanceOf[AppsDynamiteSharedActivityFeedAnnotationDataUserInfo]
   }
   
-  extension [Self <: AppsDynamiteSharedActivityFeedAnnotationDataUserInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedActivityFeedAnnotationDataUserInfo] (val x: Self) extends AnyVal {
     
     inline def setUpdaterCountDisplayType(value: String): Self = StObject.set(x, "updaterCountDisplayType", value.asInstanceOf[js.Any])
     

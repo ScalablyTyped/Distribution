@@ -41,7 +41,8 @@ object ElasticsearchVersionInfo {
     __obj.asInstanceOf[ElasticsearchVersionInfo]
   }
   
-  extension [Self <: ElasticsearchVersionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElasticsearchVersionInfo] (val x: Self) extends AnyVal {
     
     inline def setBuild_date(value: DateTime): Self = StObject.set(x, "build_date", value.asInstanceOf[js.Any])
     

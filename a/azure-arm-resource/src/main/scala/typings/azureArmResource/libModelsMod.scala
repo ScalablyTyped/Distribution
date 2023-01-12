@@ -91,7 +91,8 @@ object libModelsMod {
       __obj.asInstanceOf[ApplianceArtifact]
     }
     
-    extension [Self <: ApplianceArtifact](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplianceArtifact] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -232,7 +233,8 @@ object libModelsMod {
       __obj.asInstanceOf[ApplianceProviderAuthorization]
     }
     
-    extension [Self <: ApplianceProviderAuthorization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplianceProviderAuthorization] (val x: Self) extends AnyVal {
       
       inline def setPrincipalId(value: String): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
       
@@ -264,7 +266,8 @@ object libModelsMod {
       __obj.asInstanceOf[ErrorResponse]
     }
     
-    extension [Self <: ErrorResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorResponse] (val x: Self) extends AnyVal {
       
       inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
@@ -323,7 +326,8 @@ object libModelsMod {
       __obj.asInstanceOf[Identity]
     }
     
-    extension [Self <: Identity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Identity] (val x: Self) extends AnyVal {
       
       inline def setPrincipalId(value: String): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
       
@@ -358,7 +362,8 @@ object libModelsMod {
       __obj.asInstanceOf[Operation]
     }
     
-    extension [Self <: Operation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: OperationDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
@@ -394,7 +399,8 @@ object libModelsMod {
       __obj.asInstanceOf[OperationDisplay]
     }
     
-    extension [Self <: OperationDisplay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationDisplay] (val x: Self) extends AnyVal {
       
       inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
       
@@ -455,7 +461,8 @@ object libModelsMod {
       __obj.asInstanceOf[Plan]
     }
     
-    extension [Self <: Plan](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plan] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -505,7 +512,8 @@ object libModelsMod {
       __obj.asInstanceOf[PlanPatchable]
     }
     
-    extension [Self <: PlanPatchable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlanPatchable] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -598,7 +606,8 @@ object libModelsMod {
       __obj.asInstanceOf[Sku]
     }
     
-    extension [Self <: Sku](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sku] (val x: Self) extends AnyVal {
       
       inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
       

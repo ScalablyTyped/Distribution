@@ -15,7 +15,8 @@ object ShapeDimUndefined {
     __obj.asInstanceOf[ShapeDimUndefined]
   }
   
-  extension [Self <: ShapeDimUndefined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeDimUndefined] (val x: Self) extends AnyVal {
     
     inline def setShape(value: DimUndefined): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
   }

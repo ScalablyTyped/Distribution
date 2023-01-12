@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[UserOpts]
     }
     
-    extension [Self <: UserOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserOpts] (val x: Self) extends AnyVal {
       
       inline def setAllAtOnce(value: Boolean): Self = StObject.set(x, "allAtOnce", value.asInstanceOf[js.Any])
       

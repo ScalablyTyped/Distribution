@@ -17,7 +17,8 @@ object TypeofIssuingCardsResource {
     __obj.asInstanceOf[TypeofIssuingCardsResource]
   }
   
-  extension [Self <: TypeofIssuingCardsResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofIssuingCardsResource] (val x: Self) extends AnyVal {
     
     inline def setCardsResource(value: Instantiable0[CardsResource]): Self = StObject.set(x, "CardsResource", value.asInstanceOf[js.Any])
   }

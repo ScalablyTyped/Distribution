@@ -23,7 +23,8 @@ object RemoveEndpointsRequest {
     __obj.asInstanceOf[RemoveEndpointsRequest]
   }
   
-  extension [Self <: RemoveEndpointsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveEndpointsRequest] (val x: Self) extends AnyVal {
     
     inline def setEndpointGroupArn(value: GenericString): Self = StObject.set(x, "EndpointGroupArn", value.asInstanceOf[js.Any])
     

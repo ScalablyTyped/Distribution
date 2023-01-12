@@ -37,7 +37,8 @@ object OrderApplicationContext {
     __obj.asInstanceOf[OrderApplicationContext]
   }
   
-  extension [Self <: OrderApplicationContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderApplicationContext] (val x: Self) extends AnyVal {
     
     inline def setBrand_name(value: String): Self = StObject.set(x, "brand_name", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[CustomBehaviorOptions[T]]
     }
     
-    extension [Self <: CustomBehaviorOptions[?], T](x: Self & CustomBehaviorOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomBehaviorOptions[?], T] (val x: Self & CustomBehaviorOptions[T]) extends AnyVal {
       
       inline def setBehavior(value: /* actions */ js.Array[CustomScrollAction] => T): Self = StObject.set(x, "behavior", js.Any.fromFunction1(value))
     }
@@ -53,7 +54,8 @@ object mod {
       __obj.asInstanceOf[Options[T]]
     }
     
-    extension [Self <: Options[?], T](x: Self & Options[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
       
       inline def setBehavior(value: ScrollBehavior | CustomScrollBehaviorCallback[T]): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object mod {
       __obj.asInstanceOf[StandardBehaviorOptions]
     }
     
-    extension [Self <: StandardBehaviorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StandardBehaviorOptions] (val x: Self) extends AnyVal {
       
       inline def setBehavior(value: ScrollBehavior): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       

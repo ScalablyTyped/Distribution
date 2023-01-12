@@ -26,7 +26,8 @@ object PersistentDisk {
     __obj.asInstanceOf[PersistentDisk]
   }
   
-  extension [Self <: PersistentDisk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersistentDisk] (val x: Self) extends AnyVal {
     
     inline def setSizeGb(value: Double): Self = StObject.set(x, "sizeGb", value.asInstanceOf[js.Any])
     

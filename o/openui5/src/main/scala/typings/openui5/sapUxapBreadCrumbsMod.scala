@@ -287,7 +287,8 @@ object sapUxapBreadCrumbsMod {
       __obj.asInstanceOf[BreadCrumbsSettings]
     }
     
-    extension [Self <: BreadCrumbsSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadCrumbsSettings] (val x: Self) extends AnyVal {
       
       inline def setCurrentLocation(value: typings.openui5.sapMTextMod.default): Self = StObject.set(x, "currentLocation", value.asInstanceOf[js.Any])
       

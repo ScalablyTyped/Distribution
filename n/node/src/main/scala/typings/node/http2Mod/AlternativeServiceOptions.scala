@@ -16,7 +16,8 @@ object AlternativeServiceOptions {
     __obj.asInstanceOf[AlternativeServiceOptions]
   }
   
-  extension [Self <: AlternativeServiceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlternativeServiceOptions] (val x: Self) extends AnyVal {
     
     inline def setOrigin(value: Double | String | URL): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
   }

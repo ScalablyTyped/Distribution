@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Clazz]
     }
     
-    extension [Self <: Clazz](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Clazz] (val x: Self) extends AnyVal {
       
       inline def setClazz(value: universal | application | (`context specific`) | `private`): Self = StObject.set(x, "clazz", value.asInstanceOf[js.Any])
       

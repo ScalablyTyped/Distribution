@@ -29,7 +29,8 @@ object GridMessagesCommands {
     __obj.asInstanceOf[GridMessagesCommands]
   }
   
-  extension [Self <: GridMessagesCommands](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridMessagesCommands] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object TypeofColorGradient {
     __obj.asInstanceOf[TypeofColorGradient]
   }
   
-  extension [Self <: TypeofColorGradient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofColorGradient] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => ColorGradient): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

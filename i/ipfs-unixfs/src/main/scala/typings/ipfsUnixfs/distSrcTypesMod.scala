@@ -21,7 +21,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[Mtime]
     }
     
-    extension [Self <: Mtime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mtime] (val x: Self) extends AnyVal {
       
       inline def setNsecs(value: Double): Self = StObject.set(x, "nsecs", value.asInstanceOf[js.Any])
       

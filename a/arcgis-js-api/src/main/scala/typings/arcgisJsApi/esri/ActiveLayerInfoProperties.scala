@@ -119,7 +119,8 @@ object ActiveLayerInfoProperties {
     __obj.asInstanceOf[ActiveLayerInfoProperties]
   }
   
-  extension [Self <: ActiveLayerInfoProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveLayerInfoProperties] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: CollectionProperties[ActiveLayerInfoProperties]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

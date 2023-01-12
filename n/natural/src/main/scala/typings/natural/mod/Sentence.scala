@@ -17,7 +17,8 @@ object Sentence {
     __obj.asInstanceOf[Sentence]
   }
   
-  extension [Self <: Sentence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sentence] (val x: Self) extends AnyVal {
     
     inline def setAddTaggedWord(value: (String, String) => Unit): Self = StObject.set(x, "addTaggedWord", js.Any.fromFunction2(value))
     

@@ -35,7 +35,8 @@ object FontFaceHyphen {
     __obj.asInstanceOf[FontFaceHyphen]
   }
   
-  extension [Self <: FontFaceHyphen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontFaceHyphen] (val x: Self) extends AnyVal {
     
     inline def `set-moz-font-feature-settings`(value: FontFaceFontFeatureSettingsProperty): Self = StObject.set(x, "-moz-font-feature-settings", value.asInstanceOf[js.Any])
     

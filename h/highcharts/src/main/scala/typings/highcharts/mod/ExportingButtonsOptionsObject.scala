@@ -161,7 +161,8 @@ object ExportingButtonsOptionsObject {
     __obj.asInstanceOf[ExportingButtonsOptionsObject]
   }
   
-  extension [Self <: ExportingButtonsOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportingButtonsOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

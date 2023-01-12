@@ -19,7 +19,8 @@ object ApigatewayListLocationsResponse {
     __obj.asInstanceOf[ApigatewayListLocationsResponse]
   }
   
-  extension [Self <: ApigatewayListLocationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApigatewayListLocationsResponse] (val x: Self) extends AnyVal {
     
     inline def setLocations(value: js.Array[ApigatewayLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     

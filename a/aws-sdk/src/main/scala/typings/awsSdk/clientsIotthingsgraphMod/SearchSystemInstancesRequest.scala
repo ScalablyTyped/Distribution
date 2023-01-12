@@ -28,7 +28,8 @@ object SearchSystemInstancesRequest {
     __obj.asInstanceOf[SearchSystemInstancesRequest]
   }
   
-  extension [Self <: SearchSystemInstancesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchSystemInstancesRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: SystemInstanceFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object IJoin {
     __obj.asInstanceOf[IJoin]
   }
   
-  extension [Self <: IJoin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IJoin] (val x: Self) extends AnyVal {
     
     inline def setCachedModel(value: Model): Self = StObject.set(x, "cachedModel", value.asInstanceOf[js.Any])
     

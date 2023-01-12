@@ -133,7 +133,8 @@ object libSecuritySecurityPolicyMod {
       __obj.asInstanceOf[SecurityPolicy]
     }
     
-    extension [Self <: SecurityPolicy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SecurityPolicy] (val x: Self) extends AnyVal {
       
       inline def setCheckComputer(value: () => Boolean): Self = StObject.set(x, "checkComputer", js.Any.fromFunction0(value))
       
@@ -190,7 +191,8 @@ object libSecuritySecurityPolicyMod {
       __obj.asInstanceOf[SecurityPolicyApplication]
     }
     
-    extension [Self <: SecurityPolicyApplication](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SecurityPolicyApplication] (val x: Self) extends AnyVal {
       
       inline def setFrameworkHTML(value: String): Self = StObject.set(x, "FrameworkHTML", value.asInstanceOf[js.Any])
       

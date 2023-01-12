@@ -32,7 +32,8 @@ object distTypesMod {
       __obj.asInstanceOf[Animations]
     }
     
-    extension [Self <: Animations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Animations] (val x: Self) extends AnyVal {
       
       inline def setAnimationIn(value: String): Self = StObject.set(x, "animationIn", value.asInstanceOf[js.Any])
       

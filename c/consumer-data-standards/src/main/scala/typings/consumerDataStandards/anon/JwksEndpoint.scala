@@ -27,7 +27,8 @@ object JwksEndpoint {
     __obj.asInstanceOf[JwksEndpoint]
   }
   
-  extension [Self <: JwksEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JwksEndpoint] (val x: Self) extends AnyVal {
     
     inline def setJwksEndpoint(value: String): Self = StObject.set(x, "jwksEndpoint", value.asInstanceOf[js.Any])
     

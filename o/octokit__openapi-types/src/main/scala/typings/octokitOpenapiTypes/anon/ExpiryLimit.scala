@@ -21,7 +21,8 @@ object ExpiryLimit {
     __obj.asInstanceOf[ExpiryLimit]
   }
   
-  extension [Self <: ExpiryLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpiryLimit] (val x: Self) extends AnyVal {
     
     inline def setExpiry(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['interaction-expiry'] */ js.Any

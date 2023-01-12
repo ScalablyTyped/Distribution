@@ -26,7 +26,8 @@ object R3DeclarePipeDependencyFa {
     __obj.asInstanceOf[R3DeclarePipeDependencyFa]
   }
   
-  extension [Self <: R3DeclarePipeDependencyFa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3DeclarePipeDependencyFa] (val x: Self) extends AnyVal {
     
     inline def setKind(value: pipe): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

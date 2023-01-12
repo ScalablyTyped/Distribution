@@ -73,7 +73,8 @@ object typesGetStylelintMod {
       __obj.asInstanceOf[Linter]
     }
     
-    extension [Self <: Linter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Linter] (val x: Self) extends AnyVal {
       
       inline def setApi(value: InternalApi): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
@@ -171,7 +172,8 @@ object typesGetStylelintMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowEmptyInput(value: Boolean): Self = StObject.set(x, "allowEmptyInput", value.asInstanceOf[js.Any])
       

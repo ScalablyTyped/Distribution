@@ -18,7 +18,8 @@ object BlurSteps {
     __obj.asInstanceOf[BlurSteps]
   }
   
-  extension [Self <: BlurSteps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlurSteps] (val x: Self) extends AnyVal {
     
     inline def setBlurSteps(value: js.Array[PostProcess]): Self = StObject.set(x, "blurSteps", value.asInstanceOf[js.Any])
     

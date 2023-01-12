@@ -25,7 +25,8 @@ object PromptSettings {
     __obj.asInstanceOf[PromptSettings]
   }
   
-  extension [Self <: PromptSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromptSettings] (val x: Self) extends AnyVal {
     
     inline def setCancelCallback(value: /* settings */ js.UndefOr[PromptSettings] => String | js.Error | PromptError | Unit): Self = StObject.set(x, "cancelCallback", js.Any.fromFunction1(value))
     

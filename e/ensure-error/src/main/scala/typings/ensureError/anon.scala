@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[ErrorWithStackError]
     }
     
-    extension [Self <: ErrorWithStackError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorWithStackError] (val x: Self) extends AnyVal {
       
       inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Stack]
     }
     
-    extension [Self <: Stack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stack] (val x: Self) extends AnyVal {
       
       inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     }

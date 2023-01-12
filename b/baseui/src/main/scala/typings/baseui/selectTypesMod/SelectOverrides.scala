@@ -60,7 +60,8 @@ object SelectOverrides {
     __obj.asInstanceOf[SelectOverrides]
   }
   
-  extension [Self <: SelectOverrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectOverrides] (val x: Self) extends AnyVal {
     
     inline def setClearIcon(value: Override[Any]): Self = StObject.set(x, "ClearIcon", value.asInstanceOf[js.Any])
     

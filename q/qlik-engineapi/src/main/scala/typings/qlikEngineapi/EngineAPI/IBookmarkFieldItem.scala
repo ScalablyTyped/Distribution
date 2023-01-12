@@ -71,7 +71,8 @@ object IBookmarkFieldItem {
     __obj.asInstanceOf[IBookmarkFieldItem]
   }
   
-  extension [Self <: IBookmarkFieldItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBookmarkFieldItem] (val x: Self) extends AnyVal {
     
     inline def setQAndMode(value: Boolean): Self = StObject.set(x, "qAndMode", value.asInstanceOf[js.Any])
     

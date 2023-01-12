@@ -23,7 +23,8 @@ object UpdateEnrollmentStatusRequest {
     __obj.asInstanceOf[UpdateEnrollmentStatusRequest]
   }
   
-  extension [Self <: UpdateEnrollmentStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateEnrollmentStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setIncludeMemberAccounts(value: IncludeMemberAccounts): Self = StObject.set(x, "includeMemberAccounts", value.asInstanceOf[js.Any])
     

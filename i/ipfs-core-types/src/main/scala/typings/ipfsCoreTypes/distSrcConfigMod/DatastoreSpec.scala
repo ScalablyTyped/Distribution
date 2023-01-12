@@ -17,7 +17,8 @@ object DatastoreSpec {
     __obj.asInstanceOf[DatastoreSpec]
   }
   
-  extension [Self <: DatastoreSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatastoreSpec] (val x: Self) extends AnyVal {
     
     inline def setMounts(value: js.Array[DatastoreMountPoint]): Self = StObject.set(x, "mounts", value.asInstanceOf[js.Any])
     

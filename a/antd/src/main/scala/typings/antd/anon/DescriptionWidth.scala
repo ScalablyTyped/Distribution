@@ -15,7 +15,8 @@ object DescriptionWidth {
     __obj.asInstanceOf[DescriptionWidth]
   }
   
-  extension [Self <: DescriptionWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescriptionWidth] (val x: Self) extends AnyVal {
     
     inline def setDescriptionWidth(value: Double): Self = StObject.set(x, "descriptionWidth", value.asInstanceOf[js.Any])
   }

@@ -26,7 +26,8 @@ object InstanceGroupManagersSetTargetPoolsRequest {
     __obj.asInstanceOf[InstanceGroupManagersSetTargetPoolsRequest]
   }
   
-  extension [Self <: InstanceGroupManagersSetTargetPoolsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceGroupManagersSetTargetPoolsRequest] (val x: Self) extends AnyVal {
     
     inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     

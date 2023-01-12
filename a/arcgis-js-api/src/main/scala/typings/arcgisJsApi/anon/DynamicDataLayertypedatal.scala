@@ -45,7 +45,8 @@ object DynamicDataLayertypedatal {
     __obj.asInstanceOf[DynamicDataLayertypedatal]
   }
   
-  extension [Self <: DynamicDataLayertypedatal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicDataLayertypedatal] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: TableDataSource | QueryTableDataSource | RasterDataSource | JoinTableDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

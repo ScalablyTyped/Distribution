@@ -20,7 +20,8 @@ object DescribeStorageVirtualMachinesResponse {
     __obj.asInstanceOf[DescribeStorageVirtualMachinesResponse]
   }
   
-  extension [Self <: DescribeStorageVirtualMachinesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeStorageVirtualMachinesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

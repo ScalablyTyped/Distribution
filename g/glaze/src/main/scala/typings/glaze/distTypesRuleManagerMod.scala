@@ -83,7 +83,8 @@ object distTypesRuleManagerMod {
       __obj.asInstanceOf[RuleManager]
     }
     
-    extension [Self <: RuleManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuleManager] (val x: Self) extends AnyVal {
       
       inline def setDecreaseUsage(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClassRef */ Any, Double) => Unit

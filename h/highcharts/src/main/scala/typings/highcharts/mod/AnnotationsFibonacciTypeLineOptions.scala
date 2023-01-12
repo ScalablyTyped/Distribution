@@ -15,7 +15,8 @@ object AnnotationsFibonacciTypeLineOptions {
     __obj.asInstanceOf[AnnotationsFibonacciTypeLineOptions]
   }
   
-  extension [Self <: AnnotationsFibonacciTypeLineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsFibonacciTypeLineOptions] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

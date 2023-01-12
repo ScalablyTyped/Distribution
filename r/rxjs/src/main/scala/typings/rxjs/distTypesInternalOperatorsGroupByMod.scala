@@ -79,7 +79,8 @@ object distTypesInternalOperatorsGroupByMod {
       __obj.asInstanceOf[BasicGroupByOptions[K, T]]
     }
     
-    extension [Self <: BasicGroupByOptions[?, ?], K, T](x: Self & (BasicGroupByOptions[K, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicGroupByOptions[?, ?], K, T] (val x: Self & (BasicGroupByOptions[K, T])) extends AnyVal {
       
       inline def setConnector(value: () => SubjectLike[T]): Self = StObject.set(x, "connector", js.Any.fromFunction0(value))
       
@@ -108,7 +109,8 @@ object distTypesInternalOperatorsGroupByMod {
       __obj.asInstanceOf[GroupByOptionsWithElement[K, E, T]]
     }
     
-    extension [Self <: GroupByOptionsWithElement[?, ?, ?], K, E, T](x: Self & (GroupByOptionsWithElement[K, E, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupByOptionsWithElement[?, ?, ?], K, E, T] (val x: Self & (GroupByOptionsWithElement[K, E, T])) extends AnyVal {
       
       inline def setConnector(value: () => SubjectLike[E]): Self = StObject.set(x, "connector", js.Any.fromFunction0(value))
       

@@ -18,7 +18,8 @@ object DescribeRefreshSchemasStatusResponse {
     __obj.asInstanceOf[DescribeRefreshSchemasStatusResponse]
   }
   
-  extension [Self <: DescribeRefreshSchemasStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRefreshSchemasStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setRefreshSchemasStatus(value: RefreshSchemasStatus): Self = StObject.set(x, "RefreshSchemasStatus", value.asInstanceOf[js.Any])
     

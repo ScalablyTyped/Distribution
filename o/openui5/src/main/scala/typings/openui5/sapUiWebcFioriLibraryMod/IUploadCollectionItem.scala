@@ -15,7 +15,8 @@ object IUploadCollectionItem {
     __obj.asInstanceOf[IUploadCollectionItem]
   }
   
-  extension [Self <: IUploadCollectionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUploadCollectionItem] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_webc_fiori_IUploadCollectionItem(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_webc_fiori_IUploadCollectionItem", value.asInstanceOf[js.Any])
   }

@@ -40,7 +40,8 @@ object BackendServiceAggregatedList {
     __obj.asInstanceOf[BackendServiceAggregatedList]
   }
   
-  extension [Self <: BackendServiceAggregatedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackendServiceAggregatedList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

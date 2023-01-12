@@ -74,7 +74,8 @@ object GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfo {
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfo]
   }
   
-  extension [Self <: GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfo] (val x: Self) extends AnyVal {
     
     inline def setExpectedFulfillmentTime(value: GoogleActionsOrdersV3Time): Self = StObject.set(x, "expectedFulfillmentTime", value.asInstanceOf[js.Any])
     

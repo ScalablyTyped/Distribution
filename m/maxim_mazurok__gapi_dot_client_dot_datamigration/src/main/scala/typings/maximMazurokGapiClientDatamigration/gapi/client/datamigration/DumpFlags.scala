@@ -16,7 +16,8 @@ object DumpFlags {
     __obj.asInstanceOf[DumpFlags]
   }
   
-  extension [Self <: DumpFlags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DumpFlags] (val x: Self) extends AnyVal {
     
     inline def setDumpFlags(value: js.Array[DumpFlag]): Self = StObject.set(x, "dumpFlags", value.asInstanceOf[js.Any])
     

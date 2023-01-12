@@ -56,7 +56,8 @@ object TransitDetails {
     __obj.asInstanceOf[TransitDetails]
   }
   
-  extension [Self <: TransitDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitDetails] (val x: Self) extends AnyVal {
     
     inline def setArrival_stop(value: TransitStop): Self = StObject.set(x, "arrival_stop", value.asInstanceOf[js.Any])
     

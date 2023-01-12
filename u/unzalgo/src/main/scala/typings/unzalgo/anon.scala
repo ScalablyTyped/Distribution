@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[DetectionThreshold]
     }
     
-    extension [Self <: DetectionThreshold](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetectionThreshold] (val x: Self) extends AnyVal {
       
       inline def setDetectionThreshold(value: Double): Self = StObject.set(x, "detectionThreshold", value.asInstanceOf[js.Any])
       

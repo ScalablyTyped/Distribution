@@ -15,7 +15,8 @@ object StrictHtmlIframeProps {
     __obj.asInstanceOf[StrictHtmlIframeProps]
   }
   
-  extension [Self <: StrictHtmlIframeProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StrictHtmlIframeProps] (val x: Self) extends AnyVal {
     
     inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     

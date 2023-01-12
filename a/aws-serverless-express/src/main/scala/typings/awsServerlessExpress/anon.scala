@@ -54,7 +54,8 @@ object anon {
       __obj.asInstanceOf[OmitAPIGatewayProxyEventb]
     }
     
-    extension [Self <: OmitAPIGatewayProxyEventb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitAPIGatewayProxyEventb] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: APIGatewayProxyEventHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

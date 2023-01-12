@@ -35,7 +35,8 @@ object ServerExtOptions {
     __obj.asInstanceOf[ServerExtOptions]
   }
   
-  extension [Self <: ServerExtOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerExtOptions] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: String | js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object OpenSectionColumnsDialogCommand {
     __obj.asInstanceOf[OpenSectionColumnsDialogCommand]
   }
   
-  extension [Self <: OpenSectionColumnsDialogCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenSectionColumnsDialogCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

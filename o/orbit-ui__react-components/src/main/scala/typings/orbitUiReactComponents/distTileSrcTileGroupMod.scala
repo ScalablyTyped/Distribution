@@ -103,7 +103,8 @@ object distTileSrcTileGroupMod {
       __obj.asInstanceOf[InnerTileGroupProps]
     }
     
-    extension [Self <: InnerTileGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerTileGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -175,7 +176,8 @@ object distTileSrcTileGroupMod {
       __obj.asInstanceOf[UnselectableGroupProps]
     }
     
-    extension [Self <: UnselectableGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnselectableGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean | Double): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       

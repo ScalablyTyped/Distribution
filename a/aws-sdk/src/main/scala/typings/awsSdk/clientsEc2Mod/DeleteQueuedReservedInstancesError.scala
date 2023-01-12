@@ -23,7 +23,8 @@ object DeleteQueuedReservedInstancesError {
     __obj.asInstanceOf[DeleteQueuedReservedInstancesError]
   }
   
-  extension [Self <: DeleteQueuedReservedInstancesError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteQueuedReservedInstancesError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: DeleteQueuedReservedInstancesErrorCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

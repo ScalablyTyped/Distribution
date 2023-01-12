@@ -95,7 +95,8 @@ object XRFrame {
     __obj.asInstanceOf[XRFrame]
   }
   
-  extension [Self <: XRFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRFrame] (val x: Self) extends AnyVal {
     
     inline def setCreateAnchor(value: (/* pose */ XRRigidTransform, /* space */ XRSpace) => js.Promise[XRAnchor]): Self = StObject.set(x, "createAnchor", js.Any.fromFunction2(value))
     

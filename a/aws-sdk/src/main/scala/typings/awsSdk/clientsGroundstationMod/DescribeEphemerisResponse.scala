@@ -63,7 +63,8 @@ object DescribeEphemerisResponse {
     __obj.asInstanceOf[DescribeEphemerisResponse]
   }
   
-  extension [Self <: DescribeEphemerisResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEphemerisResponse] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     

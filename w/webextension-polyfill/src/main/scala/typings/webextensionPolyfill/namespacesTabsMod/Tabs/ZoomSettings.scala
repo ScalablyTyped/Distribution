@@ -36,7 +36,8 @@ object ZoomSettings {
     __obj.asInstanceOf[ZoomSettings]
   }
   
-  extension [Self <: ZoomSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoomSettings] (val x: Self) extends AnyVal {
     
     inline def setDefaultZoomFactor(value: Double): Self = StObject.set(x, "defaultZoomFactor", value.asInstanceOf[js.Any])
     

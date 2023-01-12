@@ -23,7 +23,8 @@ object TableToReload {
     __obj.asInstanceOf[TableToReload]
   }
   
-  extension [Self <: TableToReload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableToReload] (val x: Self) extends AnyVal {
     
     inline def setSchemaName(value: String): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     

@@ -71,7 +71,8 @@ object componentsLoadingLoadingMod {
       __obj.asInstanceOf[Loading]
     }
     
-    extension [Self <: Loading](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Loading] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
@@ -113,7 +114,8 @@ object componentsLoadingLoadingMod {
       __obj.asInstanceOf[LoadingOptions]
     }
     
-    extension [Self <: LoadingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadingOptions] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

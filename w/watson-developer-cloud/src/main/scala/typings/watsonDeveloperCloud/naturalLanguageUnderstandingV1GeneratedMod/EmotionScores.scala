@@ -29,7 +29,8 @@ object EmotionScores {
     __obj.asInstanceOf[EmotionScores]
   }
   
-  extension [Self <: EmotionScores](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmotionScores] (val x: Self) extends AnyVal {
     
     inline def setAnger(value: Double): Self = StObject.set(x, "anger", value.asInstanceOf[js.Any])
     

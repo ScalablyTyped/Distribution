@@ -17,7 +17,8 @@ object AggregationsInferenceConfigContainer {
     __obj.asInstanceOf[AggregationsInferenceConfigContainer]
   }
   
-  extension [Self <: AggregationsInferenceConfigContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsInferenceConfigContainer] (val x: Self) extends AnyVal {
     
     inline def setClassification(value: MlClassificationInferenceOptions): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     

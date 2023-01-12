@@ -90,7 +90,8 @@ object IsCurrencyOptions {
     __obj.asInstanceOf[IsCurrencyOptions]
   }
   
-  extension [Self <: IsCurrencyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsCurrencyOptions] (val x: Self) extends AnyVal {
     
     inline def setAllow_decimal(value: Boolean): Self = StObject.set(x, "allow_decimal", value.asInstanceOf[js.Any])
     

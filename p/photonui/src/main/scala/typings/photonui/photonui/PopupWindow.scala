@@ -62,7 +62,8 @@ object PopupWindow {
     __obj.asInstanceOf[PopupWindow]
   }
   
-  extension [Self <: PopupWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupWindow] (val x: Self) extends AnyVal {
     
     inline def setPopupWidget(value: Widget => Unit): Self = StObject.set(x, "popupWidget", js.Any.fromFunction1(value))
     

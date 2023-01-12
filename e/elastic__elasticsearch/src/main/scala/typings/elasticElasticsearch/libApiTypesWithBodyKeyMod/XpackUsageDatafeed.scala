@@ -15,7 +15,8 @@ object XpackUsageDatafeed {
     __obj.asInstanceOf[XpackUsageDatafeed]
   }
   
-  extension [Self <: XpackUsageDatafeed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageDatafeed] (val x: Self) extends AnyVal {
     
     inline def setCount(value: long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
   }

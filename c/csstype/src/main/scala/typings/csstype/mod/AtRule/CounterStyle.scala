@@ -33,7 +33,8 @@ object CounterStyle {
     __obj.asInstanceOf[CounterStyle[TLength, TTime]]
   }
   
-  extension [Self <: CounterStyle[?, ?], TLength, TTime](x: Self & (CounterStyle[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CounterStyle[?, ?], TLength, TTime] (val x: Self & (CounterStyle[TLength, TTime])) extends AnyVal {
     
     inline def setAdditiveSymbols(value: String): Self = StObject.set(x, "additiveSymbols", value.asInstanceOf[js.Any])
     

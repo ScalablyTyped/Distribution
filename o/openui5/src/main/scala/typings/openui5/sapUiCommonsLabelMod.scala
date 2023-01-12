@@ -528,7 +528,8 @@ object sapUiCommonsLabelMod {
       __obj.asInstanceOf[LabelSettings]
     }
     
-    extension [Self <: LabelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelSettings] (val x: Self) extends AnyVal {
       
       inline def setDesign(
         value: LabelDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LabelDesign * / any */ String) | PropertyBindingInfo

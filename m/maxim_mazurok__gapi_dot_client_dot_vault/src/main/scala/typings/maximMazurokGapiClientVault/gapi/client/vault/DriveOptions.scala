@@ -28,7 +28,8 @@ object DriveOptions {
     __obj.asInstanceOf[DriveOptions]
   }
   
-  extension [Self <: DriveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DriveOptions] (val x: Self) extends AnyVal {
     
     inline def setClientSideEncryptedOption(value: String): Self = StObject.set(x, "clientSideEncryptedOption", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object MxfXavcProfileSettings {
     __obj.asInstanceOf[MxfXavcProfileSettings]
   }
   
-  extension [Self <: MxfXavcProfileSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MxfXavcProfileSettings] (val x: Self) extends AnyVal {
     
     inline def setDurationMode(value: MxfXavcDurationMode): Self = StObject.set(x, "DurationMode", value.asInstanceOf[js.Any])
     

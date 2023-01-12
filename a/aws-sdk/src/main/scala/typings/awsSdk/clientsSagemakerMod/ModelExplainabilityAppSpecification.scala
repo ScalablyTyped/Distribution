@@ -28,7 +28,8 @@ object ModelExplainabilityAppSpecification {
     __obj.asInstanceOf[ModelExplainabilityAppSpecification]
   }
   
-  extension [Self <: ModelExplainabilityAppSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelExplainabilityAppSpecification] (val x: Self) extends AnyVal {
     
     inline def setConfigUri(value: S3Uri): Self = StObject.set(x, "ConfigUri", value.asInstanceOf[js.Any])
     

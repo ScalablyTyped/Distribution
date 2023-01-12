@@ -63,7 +63,8 @@ object ReleaseDefinitionRevision {
     __obj.asInstanceOf[ReleaseDefinitionRevision]
   }
   
-  extension [Self <: ReleaseDefinitionRevision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseDefinitionRevision] (val x: Self) extends AnyVal {
     
     inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     

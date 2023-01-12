@@ -15,7 +15,8 @@ object BootstrapMode {
     __obj.asInstanceOf[BootstrapMode]
   }
   
-  extension [Self <: BootstrapMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapMode] (val x: Self) extends AnyVal {
     
     inline def setIsActive(value: () => Unit): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
   }

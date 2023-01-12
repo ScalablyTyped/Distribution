@@ -67,7 +67,8 @@ object ImageBuildOptions {
     __obj.asInstanceOf[ImageBuildOptions]
   }
   
-  extension [Self <: ImageBuildOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageBuildOptions] (val x: Self) extends AnyVal {
     
     inline def setAbortSignal(value: AbortSignal): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
     

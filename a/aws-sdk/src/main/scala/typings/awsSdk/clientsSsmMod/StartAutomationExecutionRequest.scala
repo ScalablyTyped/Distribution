@@ -78,7 +78,8 @@ object StartAutomationExecutionRequest {
     __obj.asInstanceOf[StartAutomationExecutionRequest]
   }
   
-  extension [Self <: StartAutomationExecutionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartAutomationExecutionRequest] (val x: Self) extends AnyVal {
     
     inline def setAlarmConfiguration(value: AlarmConfiguration): Self = StObject.set(x, "AlarmConfiguration", value.asInstanceOf[js.Any])
     

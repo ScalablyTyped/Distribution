@@ -61,7 +61,8 @@ object distSrcD3v4adaptorMod {
       __obj.asInstanceOf[D3Context]
     }
     
-    extension [Self <: D3Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: D3Context] (val x: Self) extends AnyVal {
       
       inline def setDispatch(value: FnCallTypes): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
       

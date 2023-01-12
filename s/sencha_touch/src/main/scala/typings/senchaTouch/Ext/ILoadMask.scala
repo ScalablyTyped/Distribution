@@ -85,7 +85,8 @@ object ILoadMask {
     __obj.asInstanceOf[ILoadMask]
   }
   
-  extension [Self <: ILoadMask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILoadMask] (val x: Self) extends AnyVal {
     
     inline def setBindStore(value: /* store */ js.UndefOr[IStore] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
     

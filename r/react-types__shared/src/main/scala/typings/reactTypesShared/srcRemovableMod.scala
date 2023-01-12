@@ -24,7 +24,8 @@ object srcRemovableMod {
       __obj.asInstanceOf[Removable[T, R]]
     }
     
-    extension [Self <: Removable[?, ?], T, R](x: Self & (Removable[T, R])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Removable[?, ?], T, R] (val x: Self & (Removable[T, R])) extends AnyVal {
       
       inline def setIsRemovable(value: Boolean): Self = StObject.set(x, "isRemovable", value.asInstanceOf[js.Any])
       

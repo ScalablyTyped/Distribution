@@ -23,7 +23,8 @@ object LoaderOptions {
     __obj.asInstanceOf[LoaderOptions]
   }
   
-  extension [Self <: LoaderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoaderOptions] (val x: Self) extends AnyVal {
     
     inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     

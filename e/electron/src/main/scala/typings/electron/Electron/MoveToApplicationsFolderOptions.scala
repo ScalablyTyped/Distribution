@@ -20,7 +20,8 @@ object MoveToApplicationsFolderOptions {
     __obj.asInstanceOf[MoveToApplicationsFolderOptions]
   }
   
-  extension [Self <: MoveToApplicationsFolderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveToApplicationsFolderOptions] (val x: Self) extends AnyVal {
     
     inline def setConflictHandler(value: /* conflictType */ exists | existsAndRunning => Boolean): Self = StObject.set(x, "conflictHandler", js.Any.fromFunction1(value))
     

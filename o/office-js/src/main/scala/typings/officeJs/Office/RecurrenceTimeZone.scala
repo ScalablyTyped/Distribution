@@ -33,7 +33,8 @@ object RecurrenceTimeZone {
     __obj.asInstanceOf[RecurrenceTimeZone]
   }
   
-  extension [Self <: RecurrenceTimeZone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecurrenceTimeZone] (val x: Self) extends AnyVal {
     
     inline def setName(value: typings.officeJs.Office.MailboxEnums.RecurrenceTimeZone | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

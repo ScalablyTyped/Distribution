@@ -28,7 +28,8 @@ object BatchDeleteImportDataError {
     __obj.asInstanceOf[BatchDeleteImportDataError]
   }
   
-  extension [Self <: BatchDeleteImportDataError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteImportDataError] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: BatchDeleteImportDataErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

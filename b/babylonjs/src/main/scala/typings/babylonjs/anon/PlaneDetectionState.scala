@@ -15,7 +15,8 @@ object PlaneDetectionState {
     __obj.asInstanceOf[PlaneDetectionState]
   }
   
-  extension [Self <: PlaneDetectionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaneDetectionState] (val x: Self) extends AnyVal {
     
     inline def setPlaneDetectionState(value: Enabled): Self = StObject.set(x, "planeDetectionState", value.asInstanceOf[js.Any])
     

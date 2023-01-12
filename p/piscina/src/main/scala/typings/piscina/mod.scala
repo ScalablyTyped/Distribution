@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[AbortSignalEventEmitter]
     }
     
-    extension [Self <: AbortSignalEventEmitter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbortSignalEventEmitter] (val x: Self) extends AnyVal {
       
       inline def setOff(value: (abort, js.Function0[Unit]) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       
@@ -86,7 +87,8 @@ object mod {
       __obj.asInstanceOf[AbortSignalEventTargetAddOptions]
     }
     
-    extension [Self <: AbortSignalEventTargetAddOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbortSignalEventTargetAddOptions] (val x: Self) extends AnyVal {
       
       inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     }
@@ -153,7 +155,8 @@ object mod {
       __obj.asInstanceOf[FilledOptions]
     }
     
-    extension [Self <: FilledOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilledOptions] (val x: Self) extends AnyVal {
       
       inline def setConcurrentTasksPerWorker(value: Double): Self = StObject.set(x, "concurrentTasksPerWorker", value.asInstanceOf[js.Any])
       
@@ -220,7 +223,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
       
@@ -364,7 +368,8 @@ object mod {
       __obj.asInstanceOf[RunOptions]
     }
     
-    extension [Self <: RunOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunOptions] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       

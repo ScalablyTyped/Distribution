@@ -29,7 +29,8 @@ object EosActionDelegate {
     __obj.asInstanceOf[EosActionDelegate]
   }
   
-  extension [Self <: EosActionDelegate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EosActionDelegate] (val x: Self) extends AnyVal {
     
     inline def setCpu_quantity(value: EosAsset): Self = StObject.set(x, "cpu_quantity", value.asInstanceOf[js.Any])
     

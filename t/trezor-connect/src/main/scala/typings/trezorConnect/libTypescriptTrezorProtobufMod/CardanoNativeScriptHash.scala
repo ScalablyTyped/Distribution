@@ -15,7 +15,8 @@ object CardanoNativeScriptHash {
     __obj.asInstanceOf[CardanoNativeScriptHash]
   }
   
-  extension [Self <: CardanoNativeScriptHash](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoNativeScriptHash] (val x: Self) extends AnyVal {
     
     inline def setScript_hash(value: String): Self = StObject.set(x, "script_hash", value.asInstanceOf[js.Any])
   }

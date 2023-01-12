@@ -123,7 +123,8 @@ object GitHubConfiguration {
     __obj.asInstanceOf[GitHubConfiguration]
   }
   
-  extension [Self <: GitHubConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitHubConfiguration] (val x: Self) extends AnyVal {
     
     inline def setExclusionFileNamePatterns(value: StringList): Self = StObject.set(x, "ExclusionFileNamePatterns", value.asInstanceOf[js.Any])
     

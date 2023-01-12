@@ -19,7 +19,8 @@ object CompletionList {
     __obj.asInstanceOf[CompletionList]
   }
   
-  extension [Self <: CompletionList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionList] (val x: Self) extends AnyVal {
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     

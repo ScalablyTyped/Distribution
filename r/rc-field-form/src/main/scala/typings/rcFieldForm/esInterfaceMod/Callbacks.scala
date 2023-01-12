@@ -23,7 +23,8 @@ object Callbacks {
     __obj.asInstanceOf[Callbacks[Values]]
   }
   
-  extension [Self <: Callbacks[?], Values](x: Self & Callbacks[Values]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Callbacks[?], Values] (val x: Self & Callbacks[Values]) extends AnyVal {
     
     inline def setOnFieldsChange(value: (/* changedFields */ js.Array[FieldData], /* allFields */ js.Array[FieldData]) => Unit): Self = StObject.set(x, "onFieldsChange", js.Any.fromFunction2(value))
     

@@ -50,7 +50,8 @@ object distEsUtilsEmojiIndexNimbleEmojiIndexMod {
       __obj.asInstanceOf[BaseEmoji]
     }
     
-    extension [Self <: BaseEmoji](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseEmoji] (val x: Self) extends AnyVal {
       
       inline def setColons(value: String): Self = StObject.set(x, "colons", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object distEsUtilsEmojiIndexNimbleEmojiIndexMod {
       __obj.asInstanceOf[CustomEmoji]
     }
     
-    extension [Self <: CustomEmoji](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomEmoji] (val x: Self) extends AnyVal {
       
       inline def setColons(value: String): Self = StObject.set(x, "colons", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object ThinInstanceDataStorage {
     __obj.asInstanceOf[ThinInstanceDataStorage]
   }
   
-  extension [Self <: ThinInstanceDataStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThinInstanceDataStorage] (val x: Self) extends AnyVal {
     
     inline def setBoundingVectors(value: js.Array[Vector3]): Self = StObject.set(x, "boundingVectors", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object RoleUsageType {
     __obj.asInstanceOf[RoleUsageType]
   }
   
-  extension [Self <: RoleUsageType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoleUsageType] (val x: Self) extends AnyVal {
     
     inline def setRegion(value: RegionNameType): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     

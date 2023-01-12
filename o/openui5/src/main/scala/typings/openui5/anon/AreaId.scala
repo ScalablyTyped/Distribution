@@ -18,7 +18,8 @@ object AreaId {
     __obj.asInstanceOf[AreaId]
   }
   
-  extension [Self <: AreaId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreaId] (val x: Self) extends AnyVal {
     
     inline def setAreaId(value: String): Self = StObject.set(x, "areaId", value.asInstanceOf[js.Any])
     

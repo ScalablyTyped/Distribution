@@ -25,7 +25,8 @@ object CIMGeometricEffectBuffer {
     __obj.asInstanceOf[CIMGeometricEffectBuffer]
   }
   
-  extension [Self <: CIMGeometricEffectBuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMGeometricEffectBuffer] (val x: Self) extends AnyVal {
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

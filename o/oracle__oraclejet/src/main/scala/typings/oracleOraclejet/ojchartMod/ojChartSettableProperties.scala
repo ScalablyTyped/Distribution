@@ -227,7 +227,8 @@ object ojChartSettableProperties {
     __obj.asInstanceOf[ojChartSettableProperties[K, D]]
   }
   
-  extension [Self <: ojChartSettableProperties[?, ?], K, D](x: Self & (ojChartSettableProperties[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojChartSettableProperties[?, ?], K, D] (val x: Self & (ojChartSettableProperties[K, D])) extends AnyVal {
     
     inline def setAnimationOnDataChange(value: auto | slideToLeft | slideToRight | none): Self = StObject.set(x, "animationOnDataChange", value.asInstanceOf[js.Any])
     

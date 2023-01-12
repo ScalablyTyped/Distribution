@@ -62,7 +62,8 @@ object XTimeContainer {
     __obj.asInstanceOf[XTimeContainer]
   }
   
-  extension [Self <: XTimeContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTimeContainer] (val x: Self) extends AnyVal {
     
     inline def setAppendChild(value: XAnimationNode => XAnimationNode): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     

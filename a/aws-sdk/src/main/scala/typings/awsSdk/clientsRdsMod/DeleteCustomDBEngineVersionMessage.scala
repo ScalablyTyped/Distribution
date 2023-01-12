@@ -23,7 +23,8 @@ object DeleteCustomDBEngineVersionMessage {
     __obj.asInstanceOf[DeleteCustomDBEngineVersionMessage]
   }
   
-  extension [Self <: DeleteCustomDBEngineVersionMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCustomDBEngineVersionMessage] (val x: Self) extends AnyVal {
     
     inline def setEngine(value: CustomEngineName): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     

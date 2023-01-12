@@ -151,7 +151,8 @@ object PartialControl {
     __obj.asInstanceOf[PartialControl]
   }
   
-  extension [Self <: PartialControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialControl] (val x: Self) extends AnyVal {
     
     inline def setActionHandler(
       value: (/* eventData */ MouseEvent, /* transformData */ Transform, /* x */ Double, /* y */ Double) => Boolean

@@ -16,7 +16,8 @@ object ProjectsDisableXpnResourceRequest {
     __obj.asInstanceOf[ProjectsDisableXpnResourceRequest]
   }
   
-  extension [Self <: ProjectsDisableXpnResourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectsDisableXpnResourceRequest] (val x: Self) extends AnyVal {
     
     inline def setXpnResource(value: XpnResourceId): Self = StObject.set(x, "xpnResource", value.asInstanceOf[js.Any])
     

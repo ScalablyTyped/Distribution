@@ -21,7 +21,8 @@ object NormalizationClientExtension {
     __obj.asInstanceOf[NormalizationClientExtension]
   }
   
-  extension [Self <: NormalizationClientExtension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizationClientExtension] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

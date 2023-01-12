@@ -29,7 +29,8 @@ object UpdateTableRowPropertiesRequest {
     __obj.asInstanceOf[UpdateTableRowPropertiesRequest]
   }
   
-  extension [Self <: UpdateTableRowPropertiesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTableRowPropertiesRequest] (val x: Self) extends AnyVal {
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

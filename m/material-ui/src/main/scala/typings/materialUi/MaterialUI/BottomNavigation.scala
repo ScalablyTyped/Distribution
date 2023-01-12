@@ -30,7 +30,8 @@ object BottomNavigation {
       __obj.asInstanceOf[BottomNavigationItemProps]
     }
     
-    extension [Self <: BottomNavigationItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BottomNavigationItemProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object BottomNavigation {
       __obj.asInstanceOf[BottomNavigationProps]
     }
     
-    extension [Self <: BottomNavigationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BottomNavigationProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

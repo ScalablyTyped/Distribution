@@ -2265,7 +2265,8 @@ object RecordTimezoneNameTimezon {
     __obj.asInstanceOf[RecordTimezoneNameTimezon]
   }
   
-  extension [Self <: RecordTimezoneNameTimezon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordTimezoneNameTimezon] (val x: Self) extends AnyVal {
     
     inline def setAfricaSlashAbidjan(value: Timezone): Self = StObject.set(x, "Africa/Abidjan", value.asInstanceOf[js.Any])
     

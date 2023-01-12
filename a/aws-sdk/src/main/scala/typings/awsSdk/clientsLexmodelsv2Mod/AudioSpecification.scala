@@ -23,7 +23,8 @@ object AudioSpecification {
     __obj.asInstanceOf[AudioSpecification]
   }
   
-  extension [Self <: AudioSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioSpecification] (val x: Self) extends AnyVal {
     
     inline def setEndTimeoutMs(value: TimeInMilliSeconds): Self = StObject.set(x, "endTimeoutMs", value.asInstanceOf[js.Any])
     

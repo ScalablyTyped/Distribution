@@ -22,7 +22,8 @@ object ActivationLayerArgs {
     __obj.asInstanceOf[ActivationLayerArgs]
   }
   
-  extension [Self <: ActivationLayerArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivationLayerArgs] (val x: Self) extends AnyVal {
     
     inline def setActivation(value: ActivationIdentifier): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
   }

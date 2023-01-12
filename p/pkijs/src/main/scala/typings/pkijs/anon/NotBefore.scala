@@ -42,7 +42,8 @@ object NotBefore {
     __obj.asInstanceOf[NotBefore]
   }
   
-  extension [Self <: NotBefore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotBefore] (val x: Self) extends AnyVal {
     
     inline def setExtensions(value: ExtensionsSchema): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     

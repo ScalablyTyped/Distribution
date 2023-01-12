@@ -132,7 +132,8 @@ object mod {
       __obj.asInstanceOf[ChoroplethBoundFeature]
     }
     
-    extension [Self <: ChoroplethBoundFeature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChoroplethBoundFeature] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -159,7 +160,8 @@ object mod {
       __obj.asInstanceOf[ChoroplethCanvasProps]
     }
     
-    extension [Self <: ChoroplethCanvasProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChoroplethCanvasProps] (val x: Self) extends AnyVal {
       
       inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       
@@ -212,7 +214,8 @@ object mod {
       __obj.asInstanceOf[ChoroplethCommonProps]
     }
     
-    extension [Self <: ChoroplethCommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChoroplethCommonProps] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String | (FeatureAccessor[ChoroplethBoundFeature, Double])): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -329,7 +332,8 @@ object mod {
       __obj.asInstanceOf[ChoroplethProps]
     }
     
-    extension [Self <: ChoroplethProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChoroplethProps] (val x: Self) extends AnyVal {
       
       inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -370,7 +374,8 @@ object mod {
       __obj.asInstanceOf[CommonProps]
     }
     
-    extension [Self <: CommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonProps] (val x: Self) extends AnyVal {
       
       inline def setEnableGraticule(value: Boolean): Self = StObject.set(x, "enableGraticule", value.asInstanceOf[js.Any])
       
@@ -439,7 +444,8 @@ object mod {
       __obj.asInstanceOf[GeoMapCanvasProps]
     }
     
-    extension [Self <: GeoMapCanvasProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoMapCanvasProps] (val x: Self) extends AnyVal {
       
       inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       
@@ -474,7 +480,8 @@ object mod {
       __obj.asInstanceOf[GeoMapCommonProps]
     }
     
-    extension [Self <: GeoMapCommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoMapCommonProps] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String | (FeatureAccessor[Any, Double])): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -531,7 +538,8 @@ object mod {
       __obj.asInstanceOf[GeoMapProps]
     }
     
-    extension [Self <: GeoMapProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoMapProps] (val x: Self) extends AnyVal {
       
       inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       

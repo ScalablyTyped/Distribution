@@ -34,7 +34,8 @@ object NEMSupplyChangeTransaction {
     __obj.asInstanceOf[NEMSupplyChangeTransaction]
   }
   
-  extension [Self <: NEMSupplyChangeTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NEMSupplyChangeTransaction] (val x: Self) extends AnyVal {
     
     inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     

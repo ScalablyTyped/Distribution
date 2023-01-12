@@ -25,7 +25,8 @@ object MedicationRequestRequester {
     __obj.asInstanceOf[MedicationRequestRequester]
   }
   
-  extension [Self <: MedicationRequestRequester](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicationRequestRequester] (val x: Self) extends AnyVal {
     
     inline def setAgent(value: Reference): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     

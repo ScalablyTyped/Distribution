@@ -16,7 +16,8 @@ object GetRootNodeOptions {
     __obj.asInstanceOf[GetRootNodeOptions]
   }
   
-  extension [Self <: GetRootNodeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRootNodeOptions] (val x: Self) extends AnyVal {
     
     inline def setComposed(value: scala.Boolean): Self = StObject.set(x, "composed", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object TsArrayType {
     __obj.asInstanceOf[TsArrayType]
   }
   
-  extension [Self <: TsArrayType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TsArrayType] (val x: Self) extends AnyVal {
     
     inline def setElemType(value: TsType): Self = StObject.set(x, "elemType", value.asInstanceOf[js.Any])
     

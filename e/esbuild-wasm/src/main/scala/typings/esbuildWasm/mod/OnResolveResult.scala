@@ -35,7 +35,8 @@ object OnResolveResult {
     __obj.asInstanceOf[OnResolveResult]
   }
   
-  extension [Self <: OnResolveResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnResolveResult] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: js.Array[PartialMessage]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

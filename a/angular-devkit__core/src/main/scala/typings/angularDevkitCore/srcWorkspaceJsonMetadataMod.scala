@@ -107,7 +107,8 @@ object srcWorkspaceJsonMetadataMod {
       __obj.asInstanceOf[ChangeValues]
     }
     
-    extension [Self <: ChangeValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeValues] (val x: Self) extends AnyVal {
       
       inline def setJson(value: JsonValue): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
@@ -138,7 +139,8 @@ object srcWorkspaceJsonMetadataMod {
       __obj.asInstanceOf[JsonChange]
     }
     
-    extension [Self <: JsonChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonChange] (val x: Self) extends AnyVal {
       
       inline def setJsonPath(value: js.Array[String]): Self = StObject.set(x, "jsonPath", value.asInstanceOf[js.Any])
       

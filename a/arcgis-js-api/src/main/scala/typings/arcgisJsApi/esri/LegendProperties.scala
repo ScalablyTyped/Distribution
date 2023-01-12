@@ -97,7 +97,8 @@ object LegendProperties {
     __obj.asInstanceOf[LegendProperties]
   }
   
-  extension [Self <: LegendProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendProperties] (val x: Self) extends AnyVal {
     
     inline def setActiveLayerInfos(value: CollectionProperties[ActiveLayerInfoProperties]): Self = StObject.set(x, "activeLayerInfos", value.asInstanceOf[js.Any])
     

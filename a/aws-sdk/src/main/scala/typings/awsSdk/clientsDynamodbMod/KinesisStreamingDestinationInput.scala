@@ -23,7 +23,8 @@ object KinesisStreamingDestinationInput {
     __obj.asInstanceOf[KinesisStreamingDestinationInput]
   }
   
-  extension [Self <: KinesisStreamingDestinationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KinesisStreamingDestinationInput] (val x: Self) extends AnyVal {
     
     inline def setStreamArn(value: StreamArn): Self = StObject.set(x, "StreamArn", value.asInstanceOf[js.Any])
     

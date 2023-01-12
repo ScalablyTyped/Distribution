@@ -55,7 +55,8 @@ object DescribeInstanceStatusReq {
     __obj.asInstanceOf[DescribeInstanceStatusReq]
   }
   
-  extension [Self <: DescribeInstanceStatusReq](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInstanceStatusReq] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

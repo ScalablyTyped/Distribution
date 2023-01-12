@@ -16,7 +16,8 @@ object UseResizeColumnsState {
     __obj.asInstanceOf[UseResizeColumnsState[D]]
   }
   
-  extension [Self <: UseResizeColumnsState[?], D /* <: js.Object */](x: Self & UseResizeColumnsState[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseResizeColumnsState[?], D /* <: js.Object */] (val x: Self & UseResizeColumnsState[D]) extends AnyVal {
     
     inline def setColumnResizing(value: ColumnWidth): Self = StObject.set(x, "columnResizing", value.asInstanceOf[js.Any])
   }

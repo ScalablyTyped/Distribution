@@ -33,7 +33,8 @@ object UpdateUserRequestItem {
     __obj.asInstanceOf[UpdateUserRequestItem]
   }
   
-  extension [Self <: UpdateUserRequestItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateUserRequestItem] (val x: Self) extends AnyVal {
     
     inline def setAlexaForBusinessMetadata(value: AlexaForBusinessMetadata): Self = StObject.set(x, "AlexaForBusinessMetadata", value.asInstanceOf[js.Any])
     

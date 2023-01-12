@@ -134,7 +134,8 @@ object BoundingBoxRenderer {
     __obj.asInstanceOf[BoundingBoxRenderer]
   }
   
-  extension [Self <: BoundingBoxRenderer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoundingBoxRenderer] (val x: Self) extends AnyVal {
     
     inline def setBackColor(value: Color3): Self = StObject.set(x, "backColor", value.asInstanceOf[js.Any])
     

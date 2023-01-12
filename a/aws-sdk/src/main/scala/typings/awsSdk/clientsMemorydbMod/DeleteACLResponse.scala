@@ -18,7 +18,8 @@ object DeleteACLResponse {
     __obj.asInstanceOf[DeleteACLResponse]
   }
   
-  extension [Self <: DeleteACLResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteACLResponse] (val x: Self) extends AnyVal {
     
     inline def setACL(value: ACL): Self = StObject.set(x, "ACL", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object WebExtensionManifestTelemetry {
     __obj.asInstanceOf[WebExtensionManifestTelemetry]
   }
   
-  extension [Self <: WebExtensionManifestTelemetry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionManifestTelemetry] (val x: Self) extends AnyVal {
     
     inline def setPing_type(value: String): Self = StObject.set(x, "ping_type", value.asInstanceOf[js.Any])
     

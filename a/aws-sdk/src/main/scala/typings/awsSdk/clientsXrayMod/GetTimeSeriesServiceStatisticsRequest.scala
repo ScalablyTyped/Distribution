@@ -53,7 +53,8 @@ object GetTimeSeriesServiceStatisticsRequest {
     __obj.asInstanceOf[GetTimeSeriesServiceStatisticsRequest]
   }
   
-  extension [Self <: GetTimeSeriesServiceStatisticsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTimeSeriesServiceStatisticsRequest] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     

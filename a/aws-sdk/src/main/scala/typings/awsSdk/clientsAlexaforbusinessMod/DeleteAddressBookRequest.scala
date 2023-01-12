@@ -18,7 +18,8 @@ object DeleteAddressBookRequest {
     __obj.asInstanceOf[DeleteAddressBookRequest]
   }
   
-  extension [Self <: DeleteAddressBookRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAddressBookRequest] (val x: Self) extends AnyVal {
     
     inline def setAddressBookArn(value: Arn): Self = StObject.set(x, "AddressBookArn", value.asInstanceOf[js.Any])
   }

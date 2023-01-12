@@ -33,7 +33,8 @@ object MainContentVisible {
     __obj.asInstanceOf[MainContentVisible]
   }
   
-  extension [Self <: MainContentVisible](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MainContentVisible] (val x: Self) extends AnyVal {
     
     inline def setCurrentBreakpoint(value: String): Self = StObject.set(x, "currentBreakpoint", value.asInstanceOf[js.Any])
     

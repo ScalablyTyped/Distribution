@@ -77,7 +77,8 @@ object IConnectionParameters {
     __obj.asInstanceOf[IConnectionParameters[C]]
   }
   
-  extension [Self <: IConnectionParameters[?], C /* <: IClient */](x: Self & IConnectionParameters[C]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConnectionParameters[?], C /* <: IClient */] (val x: Self & IConnectionParameters[C]) extends AnyVal {
     
     inline def setAllowExitOnIdle(value: Boolean): Self = StObject.set(x, "allowExitOnIdle", value.asInstanceOf[js.Any])
     

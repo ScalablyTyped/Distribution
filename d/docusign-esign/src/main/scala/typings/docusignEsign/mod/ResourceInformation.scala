@@ -19,7 +19,8 @@ object ResourceInformation {
     __obj.asInstanceOf[ResourceInformation]
   }
   
-  extension [Self <: ResourceInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceInformation] (val x: Self) extends AnyVal {
     
     inline def setResources(
       value: js.Array[

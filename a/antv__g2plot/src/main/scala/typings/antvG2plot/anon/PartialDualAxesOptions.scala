@@ -99,7 +99,8 @@ object PartialDualAxesOptions {
     __obj.asInstanceOf[PartialDualAxesOptions]
   }
   
-  extension [Self <: PartialDualAxesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDualAxesOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object KernelCapabilities {
     __obj.asInstanceOf[KernelCapabilities]
   }
   
-  extension [Self <: KernelCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KernelCapabilities] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: StringList): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     

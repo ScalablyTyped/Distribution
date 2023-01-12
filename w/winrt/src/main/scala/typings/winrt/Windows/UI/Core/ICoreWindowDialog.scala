@@ -51,7 +51,8 @@ object ICoreWindowDialog {
     __obj.asInstanceOf[ICoreWindowDialog]
   }
   
-  extension [Self <: ICoreWindowDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICoreWindowDialog] (val x: Self) extends AnyVal {
     
     inline def setBackButtonCommand(value: /* command */ IUICommand => Unit): Self = StObject.set(x, "backButtonCommand", js.Any.fromFunction1(value))
     

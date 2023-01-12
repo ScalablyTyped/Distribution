@@ -28,7 +28,8 @@ object ProducerEvents {
     __obj.asInstanceOf[ProducerEvents]
   }
   
-  extension [Self <: ProducerEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProducerEvents] (val x: Self) extends AnyVal {
     
     inline def setCONNECT(value: producerDotconnect): Self = StObject.set(x, "CONNECT", value.asInstanceOf[js.Any])
     

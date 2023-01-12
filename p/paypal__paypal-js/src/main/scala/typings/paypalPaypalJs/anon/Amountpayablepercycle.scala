@@ -44,7 +44,8 @@ object Amountpayablepercycle {
     __obj.asInstanceOf[Amountpayablepercycle]
   }
   
-  extension [Self <: Amountpayablepercycle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Amountpayablepercycle] (val x: Self) extends AnyVal {
     
     inline def setAmount_payable_per_cycle(value: AmountWithCurrencyCode): Self = StObject.set(x, "amount_payable_per_cycle", value.asInstanceOf[js.Any])
     

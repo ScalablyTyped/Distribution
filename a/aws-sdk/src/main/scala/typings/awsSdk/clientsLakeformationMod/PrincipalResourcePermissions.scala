@@ -38,7 +38,8 @@ object PrincipalResourcePermissions {
     __obj.asInstanceOf[PrincipalResourcePermissions]
   }
   
-  extension [Self <: PrincipalResourcePermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrincipalResourcePermissions] (val x: Self) extends AnyVal {
     
     inline def setAdditionalDetails(value: DetailsMap): Self = StObject.set(x, "AdditionalDetails", value.asInstanceOf[js.Any])
     

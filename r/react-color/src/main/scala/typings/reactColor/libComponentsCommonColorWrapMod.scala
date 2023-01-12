@@ -40,7 +40,8 @@ object libComponentsCommonColorWrapMod {
       __obj.asInstanceOf[ExportedColorProps]
     }
     
-    extension [Self <: ExportedColorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportedColorProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object libComponentsCommonColorWrapMod {
       __obj.asInstanceOf[InjectedColorProps]
     }
     
-    extension [Self <: InjectedColorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InjectedColorProps] (val x: Self) extends AnyVal {
       
       inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
       

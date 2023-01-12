@@ -187,7 +187,8 @@ object srcGrammarRegistryMod {
       __obj.asInstanceOf[GrammarRegistry]
     }
     
-    extension [Self <: GrammarRegistry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GrammarRegistry] (val x: Self) extends AnyVal {
       
       inline def setAddGrammar(value: Grammar => Disposable): Self = StObject.set(x, "addGrammar", js.Any.fromFunction1(value))
       

@@ -28,7 +28,8 @@ object AwsCodeBuildProjectVpcConfig {
     __obj.asInstanceOf[AwsCodeBuildProjectVpcConfig]
   }
   
-  extension [Self <: AwsCodeBuildProjectVpcConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCodeBuildProjectVpcConfig] (val x: Self) extends AnyVal {
     
     inline def setSecurityGroupIds(value: NonEmptyStringList): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     

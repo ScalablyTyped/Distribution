@@ -28,7 +28,8 @@ object StateExitedEventDetails {
     __obj.asInstanceOf[StateExitedEventDetails]
   }
   
-  extension [Self <: StateExitedEventDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateExitedEventDetails] (val x: Self) extends AnyVal {
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

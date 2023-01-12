@@ -21,7 +21,8 @@ object PBKDF2ParamsJson {
     __obj.asInstanceOf[PBKDF2ParamsJson]
   }
   
-  extension [Self <: PBKDF2ParamsJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PBKDF2ParamsJson] (val x: Self) extends AnyVal {
     
     inline def setIterationCount(value: Double): Self = StObject.set(x, "iterationCount", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object ResponseMessage {
     __obj.asInstanceOf[ResponseMessage]
   }
   
-  extension [Self <: ResponseMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseMessage] (val x: Self) extends AnyVal {
     
     inline def setError(value: ResponseErrorLiteral[Any]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

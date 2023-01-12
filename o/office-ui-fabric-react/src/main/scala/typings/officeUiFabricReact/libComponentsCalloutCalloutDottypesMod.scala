@@ -80,7 +80,8 @@ object libComponentsCalloutCalloutDottypesMod {
       __obj.asInstanceOf[ICalloutContentStyleProps]
     }
     
-    extension [Self <: ICalloutContentStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalloutContentStyleProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object libComponentsCalloutCalloutDottypesMod {
       __obj.asInstanceOf[ICalloutContentStyles]
     }
     
-    extension [Self <: ICalloutContentStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalloutContentStyles] (val x: Self) extends AnyVal {
       
       inline def setBeak(value: IStyle): Self = StObject.set(x, "beak", value.asInstanceOf[js.Any])
       
@@ -461,7 +463,8 @@ object libComponentsCalloutCalloutDottypesMod {
       __obj.asInstanceOf[ICalloutProps]
     }
     
-    extension [Self <: ICalloutProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalloutProps] (val x: Self) extends AnyVal {
       
       inline def setAlignTargetEdge(value: Boolean): Self = StObject.set(x, "alignTargetEdge", value.asInstanceOf[js.Any])
       

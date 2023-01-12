@@ -24,7 +24,8 @@ object QRCodeToFileOptionsOther {
     __obj.asInstanceOf[QRCodeToFileOptionsOther]
   }
   
-  extension [Self <: QRCodeToFileOptionsOther](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QRCodeToFileOptionsOther] (val x: Self) extends AnyVal {
     
     inline def setType(value: Exclude[QRCodeFileType, png]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

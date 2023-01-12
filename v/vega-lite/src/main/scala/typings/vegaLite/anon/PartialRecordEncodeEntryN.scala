@@ -29,7 +29,8 @@ object PartialRecordEncodeEntryN {
     __obj.asInstanceOf[PartialRecordEncodeEntryN]
   }
   
-  extension [Self <: PartialRecordEncodeEntryN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRecordEncodeEntryN] (val x: Self) extends AnyVal {
     
     inline def setEnter(value: TextEncodeEntry): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     

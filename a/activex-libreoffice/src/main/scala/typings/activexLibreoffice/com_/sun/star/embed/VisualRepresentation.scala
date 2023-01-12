@@ -21,7 +21,8 @@ object VisualRepresentation {
     __obj.asInstanceOf[VisualRepresentation]
   }
   
-  extension [Self <: VisualRepresentation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisualRepresentation] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     

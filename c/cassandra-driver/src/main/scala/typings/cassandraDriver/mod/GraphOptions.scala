@@ -26,7 +26,8 @@ object GraphOptions {
     __obj.asInstanceOf[GraphOptions]
   }
   
-  extension [Self <: GraphOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphOptions] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

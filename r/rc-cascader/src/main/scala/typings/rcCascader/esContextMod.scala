@@ -62,7 +62,8 @@ object esContextMod extends Shortcut {
       __obj.asInstanceOf[CascaderContextProps]
     }
     
-    extension [Self <: CascaderContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CascaderContextProps] (val x: Self) extends AnyVal {
       
       inline def setChangeOnSelect(value: Boolean): Self = StObject.set(x, "changeOnSelect", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object RsaPublicKey {
     __obj.asInstanceOf[RsaPublicKey]
   }
   
-  extension [Self <: RsaPublicKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RsaPublicKey] (val x: Self) extends AnyVal {
     
     inline def setModulus(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "modulus", value.asInstanceOf[js.Any])
     

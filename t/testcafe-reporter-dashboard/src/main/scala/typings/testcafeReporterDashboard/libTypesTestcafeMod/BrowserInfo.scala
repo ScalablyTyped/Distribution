@@ -42,7 +42,8 @@ object BrowserInfo {
     __obj.asInstanceOf[BrowserInfo]
   }
   
-  extension [Self <: BrowserInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserInfo] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

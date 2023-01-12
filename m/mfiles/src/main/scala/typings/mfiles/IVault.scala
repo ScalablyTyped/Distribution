@@ -171,7 +171,8 @@ object IVault {
     __obj.asInstanceOf[IVault]
   }
   
-  extension [Self <: IVault](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVault] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: IVaultAsync): Self = StObject.set(x, "Async", value.asInstanceOf[js.Any])
     

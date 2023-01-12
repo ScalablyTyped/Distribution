@@ -16,7 +16,8 @@ object CheckConsistencyRequest {
     __obj.asInstanceOf[CheckConsistencyRequest]
   }
   
-  extension [Self <: CheckConsistencyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckConsistencyRequest] (val x: Self) extends AnyVal {
     
     inline def setConsistencyToken(value: String): Self = StObject.set(x, "consistencyToken", value.asInstanceOf[js.Any])
     

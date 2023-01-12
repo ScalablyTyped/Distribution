@@ -189,7 +189,8 @@ object mod {
       __obj.asInstanceOf[AdditionalMethods[Request_1, Response_1]]
     }
     
-    extension [Self <: AdditionalMethods[?, ?], Request_1 /* <: typings.node.httpMod.IncomingMessage */, Response_1 /* <: ServerResponse */](x: Self & (AdditionalMethods[Request_1, Response_1])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdditionalMethods[?, ?], Request_1 /* <: typings.node.httpMod.IncomingMessage */, Response_1 /* <: ServerResponse */] (val x: Self & (AdditionalMethods[Request_1, Response_1])) extends AnyVal {
       
       inline def setClose(value: /* callback */ js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit] => Any): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       
@@ -247,7 +248,8 @@ object mod {
       __obj.asInstanceOf[Context[Request_1, Response_1]]
     }
     
-    extension [Self <: Context[?, ?], Request_1 /* <: typings.node.httpMod.IncomingMessage */, Response_1 /* <: ServerResponse */](x: Self & (Context[Request_1, Response_1])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context[?, ?], Request_1 /* <: typings.node.httpMod.IncomingMessage */, Response_1 /* <: ServerResponse */] (val x: Self & (Context[Request_1, Response_1])) extends AnyVal {
       
       inline def setCallbacks(value: js.Array[Callback]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
@@ -282,7 +284,8 @@ object mod {
       __obj.asInstanceOf[ExtendedServerResponse]
     }
     
-    extension [Self <: ExtendedServerResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendedServerResponse] (val x: Self) extends AnyVal {
       
       inline def setLocals(value: Webpack): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
       
@@ -354,7 +357,8 @@ object mod {
       __obj.asInstanceOf[Options[Request_1, Response_1]]
     }
     
-    extension [Self <: Options[?, ?], Request_1 /* <: typings.node.httpMod.IncomingMessage */, Response_1 /* <: ServerResponse */](x: Self & (Options[Request_1, Response_1])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?, ?], Request_1 /* <: typings.node.httpMod.IncomingMessage */, Response_1 /* <: ServerResponse */] (val x: Self & (Options[Request_1, Response_1])) extends AnyVal {
       
       inline def setHeaders(value: typings.std.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

@@ -51,7 +51,8 @@ object distCacheIasyncmemorystorageMod {
       __obj.asInstanceOf[IAsyncStorage[T]]
     }
     
-    extension [Self <: IAsyncStorage[?], T](x: Self & IAsyncStorage[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAsyncStorage[?], T] (val x: Self & IAsyncStorage[T]) extends AnyVal {
       
       inline def setContainsKey(value: String => js.Promise[Boolean]): Self = StObject.set(x, "containsKey", js.Any.fromFunction1(value))
       

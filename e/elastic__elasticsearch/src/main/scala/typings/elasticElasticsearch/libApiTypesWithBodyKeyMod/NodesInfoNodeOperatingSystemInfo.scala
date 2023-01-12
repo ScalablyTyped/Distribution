@@ -40,7 +40,8 @@ object NodesInfoNodeOperatingSystemInfo {
     __obj.asInstanceOf[NodesInfoNodeOperatingSystemInfo]
   }
   
-  extension [Self <: NodesInfoNodeOperatingSystemInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeOperatingSystemInfo] (val x: Self) extends AnyVal {
     
     inline def setAllocated_processors(value: integer): Self = StObject.set(x, "allocated_processors", value.asInstanceOf[js.Any])
     

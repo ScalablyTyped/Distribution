@@ -16,7 +16,8 @@ object DataExpressionMixin {
     __obj.asInstanceOf[DataExpressionMixin]
   }
   
-  extension [Self <: DataExpressionMixin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataExpressionMixin] (val x: Self) extends AnyVal {
     
     inline def setGetDataSource(value: () => DataSource[Any, Any]): Self = StObject.set(x, "getDataSource", js.Any.fromFunction0(value))
   }

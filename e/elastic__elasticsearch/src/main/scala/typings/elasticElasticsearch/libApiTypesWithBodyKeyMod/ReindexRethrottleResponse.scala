@@ -16,7 +16,8 @@ object ReindexRethrottleResponse {
     __obj.asInstanceOf[ReindexRethrottleResponse]
   }
   
-  extension [Self <: ReindexRethrottleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReindexRethrottleResponse] (val x: Self) extends AnyVal {
     
     inline def setNodes(value: Record[String, ReindexRethrottleReindexNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
   }

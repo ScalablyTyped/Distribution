@@ -18,7 +18,8 @@ object TypeofCLIENTGETREDIR {
     __obj.asInstanceOf[TypeofCLIENTGETREDIR]
   }
   
-  extension [Self <: TypeofCLIENTGETREDIR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCLIENTGETREDIR] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: () => RedisCommandArguments): Self = StObject.set(x, "transformArguments", js.Any.fromFunction0(value))
     

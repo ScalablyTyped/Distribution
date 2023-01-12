@@ -20,7 +20,8 @@ object Rfc822 {
     __obj.asInstanceOf[Rfc822]
   }
   
-  extension [Self <: Rfc822](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rfc822] (val x: Self) extends AnyVal {
     
     inline def setRfc822(value: String): Self = StObject.set(x, "rfc822", value.asInstanceOf[js.Any])
   }

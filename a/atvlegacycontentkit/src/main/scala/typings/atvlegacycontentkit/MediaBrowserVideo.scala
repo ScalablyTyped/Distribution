@@ -24,7 +24,8 @@ object MediaBrowserVideo {
     __obj.asInstanceOf[MediaBrowserVideo]
   }
   
-  extension [Self <: MediaBrowserVideo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaBrowserVideo] (val x: Self) extends AnyVal {
     
     inline def setPreviewImages(value: js.Array[MediaBrowserAsset]): Self = StObject.set(x, "previewImages", value.asInstanceOf[js.Any])
     

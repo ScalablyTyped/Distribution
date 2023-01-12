@@ -34,7 +34,8 @@ object buildSrcFileCompareHandlerLinesCompareCompareLineBatchesMod {
       __obj.asInstanceOf[CompareLineBatchResult]
     }
     
-    extension [Self <: CompareLineBatchResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompareLineBatchResult] (val x: Self) extends AnyVal {
       
       inline def setBatchIsEqual(value: Boolean): Self = StObject.set(x, "batchIsEqual", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object buildSrcFileCompareHandlerLinesCompareCompareLineBatchesMod {
       __obj.asInstanceOf[RestLines]
     }
     
-    extension [Self <: RestLines](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestLines] (val x: Self) extends AnyVal {
       
       inline def setRestLines1(value: js.Array[String]): Self = StObject.set(x, "restLines1", value.asInstanceOf[js.Any])
       

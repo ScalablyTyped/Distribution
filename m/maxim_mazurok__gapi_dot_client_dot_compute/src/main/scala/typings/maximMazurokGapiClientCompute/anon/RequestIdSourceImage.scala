@@ -67,7 +67,8 @@ object RequestIdSourceImage {
     __obj.asInstanceOf[RequestIdSourceImage]
   }
   
-  extension [Self <: RequestIdSourceImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestIdSourceImage] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

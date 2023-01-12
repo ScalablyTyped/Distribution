@@ -61,7 +61,8 @@ object componentsToolbarToolbarMod {
       __obj.asInstanceOf[Toolbar]
     }
     
-    extension [Self <: Toolbar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Toolbar] (val x: Self) extends AnyVal {
       
       inline def set_handleDocumentClick(value: MouseEvent => Unit): Self = StObject.set(x, "_handleDocumentClick", js.Any.fromFunction1(value))
       
@@ -96,7 +97,8 @@ object componentsToolbarToolbarMod {
       __obj.asInstanceOf[ToolbarOptions]
     }
     
-    extension [Self <: ToolbarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarOptions] (val x: Self) extends AnyVal {
       
       inline def setClassSearchActive(value: String): Self = StObject.set(x, "classSearchActive", value.asInstanceOf[js.Any])
       

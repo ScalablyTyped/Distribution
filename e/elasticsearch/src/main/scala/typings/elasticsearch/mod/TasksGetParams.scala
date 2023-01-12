@@ -19,7 +19,8 @@ object TasksGetParams {
     __obj.asInstanceOf[TasksGetParams]
   }
   
-  extension [Self <: TasksGetParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TasksGetParams] (val x: Self) extends AnyVal {
     
     inline def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     

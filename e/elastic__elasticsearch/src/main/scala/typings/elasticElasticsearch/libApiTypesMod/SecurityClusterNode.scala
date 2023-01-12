@@ -15,7 +15,8 @@ object SecurityClusterNode {
     __obj.asInstanceOf[SecurityClusterNode]
   }
   
-  extension [Self <: SecurityClusterNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityClusterNode] (val x: Self) extends AnyVal {
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

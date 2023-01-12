@@ -275,7 +275,8 @@ object TabAccountSettings {
     __obj.asInstanceOf[TabAccountSettings]
   }
   
-  extension [Self <: TabAccountSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabAccountSettings] (val x: Self) extends AnyVal {
     
     inline def setAllowTabOrder(value: String): Self = StObject.set(x, "allowTabOrder", value.asInstanceOf[js.Any])
     

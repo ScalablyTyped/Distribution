@@ -25,7 +25,8 @@ object DirectionRequest {
     __obj.asInstanceOf[DirectionRequest]
   }
   
-  extension [Self <: DirectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionRequest] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: LatLng | LatLngLiteral): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

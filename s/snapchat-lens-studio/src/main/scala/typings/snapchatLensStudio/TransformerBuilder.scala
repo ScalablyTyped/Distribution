@@ -51,7 +51,8 @@ object TransformerBuilder {
     __obj.asInstanceOf[TransformerBuilder]
   }
   
-  extension [Self <: TransformerBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformerBuilder] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: () => Transformer): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     

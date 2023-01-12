@@ -89,7 +89,8 @@ object distSharedSrcSizeMod {
       __obj.asInstanceOf[SizeAdapter[T]]
     }
     
-    extension [Self <: SizeAdapter[?], T /* <: Size */](x: Self & SizeAdapter[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizeAdapter[?], T /* <: Size */] (val x: Self & SizeAdapter[T]) extends AnyVal {
       
       inline def set2xl(value: T): Self = StObject.set(x, "2xl", value.asInstanceOf[js.Any])
       

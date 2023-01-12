@@ -43,7 +43,8 @@ object VoiceTemplateRequest {
     __obj.asInstanceOf[VoiceTemplateRequest]
   }
   
-  extension [Self <: VoiceTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: string): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     

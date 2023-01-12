@@ -16,7 +16,8 @@ object PartialuseInstancesboolea {
     __obj.asInstanceOf[PartialuseInstancesboolea]
   }
   
-  extension [Self <: PartialuseInstancesboolea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialuseInstancesboolea] (val x: Self) extends AnyVal {
     
     inline def setUseInstances(value: Boolean): Self = StObject.set(x, "useInstances", value.asInstanceOf[js.Any])
     

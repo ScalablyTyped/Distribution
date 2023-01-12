@@ -20,7 +20,8 @@ object LexBotConfig {
     __obj.asInstanceOf[LexBotConfig]
   }
   
-  extension [Self <: LexBotConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LexBotConfig] (val x: Self) extends AnyVal {
     
     inline def setLexBot(value: LexBot): Self = StObject.set(x, "LexBot", value.asInstanceOf[js.Any])
     

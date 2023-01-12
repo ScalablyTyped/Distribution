@@ -81,7 +81,8 @@ object CurvenessShadowBlur {
     __obj.asInstanceOf[CurvenessShadowBlur]
   }
   
-  extension [Self <: CurvenessShadowBlur](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurvenessShadowBlur] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

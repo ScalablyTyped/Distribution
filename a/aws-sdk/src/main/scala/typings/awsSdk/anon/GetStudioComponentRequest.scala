@@ -29,7 +29,8 @@ object GetStudioComponentRequest {
     __obj.asInstanceOf[GetStudioComponentRequest]
   }
   
-  extension [Self <: GetStudioComponentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStudioComponentRequest] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

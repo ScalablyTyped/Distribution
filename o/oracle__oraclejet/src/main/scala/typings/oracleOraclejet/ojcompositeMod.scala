@@ -41,7 +41,8 @@ object ojcompositeMod {
       __obj.asInstanceOf[Metadata]
     }
     
-    extension [Self <: Metadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: js.Object): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object ojcompositeMod {
       __obj.asInstanceOf[PropertyChangedContext]
     }
     
-    extension [Self <: PropertyChangedContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropertyChangedContext] (val x: Self) extends AnyVal {
       
       inline def setPreviousValue(value: Any): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
       
@@ -127,7 +129,8 @@ object ojcompositeMod {
       __obj.asInstanceOf[ViewModel]
     }
     
-    extension [Self <: ViewModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewModel] (val x: Self) extends AnyVal {
       
       inline def setActivated(value: ViewModelContext => js.Promise[Any] | Unit): Self = StObject.set(x, "activated", js.Any.fromFunction1(value))
       
@@ -160,7 +163,8 @@ object ojcompositeMod {
       __obj.asInstanceOf[ViewModelContext]
     }
     
-    extension [Self <: ViewModelContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewModelContext] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       

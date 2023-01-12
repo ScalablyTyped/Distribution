@@ -35,7 +35,8 @@ object typesCoreLoggerMod {
       __obj.asInstanceOf[Logger]
     }
     
-    extension [Self <: Logger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
       
       inline def setError(value: LogFunction): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

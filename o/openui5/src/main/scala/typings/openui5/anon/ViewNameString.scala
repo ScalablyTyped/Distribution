@@ -20,7 +20,8 @@ object ViewNameString {
     __obj.asInstanceOf[ViewNameString]
   }
   
-  extension [Self <: ViewNameString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewNameString] (val x: Self) extends AnyVal {
     
     inline def setViewName(value: String): Self = StObject.set(x, "viewName", value.asInstanceOf[js.Any])
   }

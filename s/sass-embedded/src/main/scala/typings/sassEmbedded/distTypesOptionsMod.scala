@@ -280,7 +280,8 @@ object distTypesOptionsMod {
       __obj.asInstanceOf[Options[sync]]
     }
     
-    extension [Self <: Options[?], sync /* <: typings.sassEmbedded.sassEmbeddedStrings.sync | async */](x: Self & Options[sync]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], sync /* <: typings.sassEmbedded.sassEmbeddedStrings.sync | async */] (val x: Self & Options[sync]) extends AnyVal {
       
       inline def setAlertAscii(value: Boolean): Self = StObject.set(x, "alertAscii", value.asInstanceOf[js.Any])
       
@@ -400,7 +401,8 @@ object distTypesOptionsMod {
       __obj.asInstanceOf[StringOptionsWithImporter[sync]]
     }
     
-    extension [Self <: StringOptionsWithImporter[?], sync /* <: typings.sassEmbedded.sassEmbeddedStrings.sync | async */](x: Self & StringOptionsWithImporter[sync]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringOptionsWithImporter[?], sync /* <: typings.sassEmbedded.sassEmbeddedStrings.sync | async */] (val x: Self & StringOptionsWithImporter[sync]) extends AnyVal {
       
       inline def setImporter(value: Importer[sync] | FileImporter[sync]): Self = StObject.set(x, "importer", value.asInstanceOf[js.Any])
       
@@ -440,7 +442,8 @@ object distTypesOptionsMod {
       __obj.asInstanceOf[StringOptionsWithoutImporter[sync]]
     }
     
-    extension [Self <: StringOptionsWithoutImporter[?], sync /* <: typings.sassEmbedded.sassEmbeddedStrings.sync | async */](x: Self & StringOptionsWithoutImporter[sync]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringOptionsWithoutImporter[?], sync /* <: typings.sassEmbedded.sassEmbeddedStrings.sync | async */] (val x: Self & StringOptionsWithoutImporter[sync]) extends AnyVal {
       
       inline def setSyntax(value: Syntax): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object LabelsArray {
     __obj.asInstanceOf[LabelsArray]
   }
   
-  extension [Self <: LabelsArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelsArray] (val x: Self) extends AnyVal {
     
     inline def setLabels(
       value: js.Array[

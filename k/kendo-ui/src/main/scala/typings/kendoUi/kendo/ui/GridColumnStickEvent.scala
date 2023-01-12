@@ -17,7 +17,8 @@ object GridColumnStickEvent {
     __obj.asInstanceOf[GridColumnStickEvent]
   }
   
-  extension [Self <: GridColumnStickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridColumnStickEvent] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

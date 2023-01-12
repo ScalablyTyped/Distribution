@@ -36,7 +36,8 @@ object UnsupportedNameClashException {
     __obj.asInstanceOf[UnsupportedNameClashException]
   }
   
-  extension [Self <: UnsupportedNameClashException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnsupportedNameClashException] (val x: Self) extends AnyVal {
     
     inline def setNameClash(value: Double): Self = StObject.set(x, "NameClash", value.asInstanceOf[js.Any])
   }

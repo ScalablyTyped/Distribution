@@ -21,7 +21,8 @@ object CommandMetadata {
     __obj.asInstanceOf[CommandMetadata]
   }
   
-  extension [Self <: CommandMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandMetadata] (val x: Self) extends AnyVal {
     
     inline def setType(value: global | project): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

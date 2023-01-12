@@ -30,7 +30,8 @@ object VideoAdUrls {
     __obj.asInstanceOf[VideoAdUrls]
   }
   
-  extension [Self <: VideoAdUrls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoAdUrls] (val x: Self) extends AnyVal {
     
     inline def setGetCustomParameters(value: () => Record[String, String]): Self = StObject.set(x, "getCustomParameters", js.Any.fromFunction0(value))
     

@@ -38,7 +38,8 @@ object distTypesFromSharedConfigFilesMod {
       __obj.asInstanceOf[SharedConfigInit]
     }
     
-    extension [Self <: SharedConfigInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedConfigInit] (val x: Self) extends AnyVal {
       
       inline def setPreferredFile(value: config | credentials): Self = StObject.set(x, "preferredFile", value.asInstanceOf[js.Any])
       

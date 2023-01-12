@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[ConcatFromOptionsBuilder]
     }
     
-    extension [Self <: ConcatFromOptionsBuilder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConcatFromOptionsBuilder] (val x: Self) extends AnyVal {
       
       inline def setPaths(value: (js.Array[String], Any) => ToOptionsBuilder): Self = StObject.set(x, "paths", js.Any.fromFunction2(value))
       
@@ -50,7 +51,8 @@ object mod {
       __obj.asInstanceOf[ConcatOptionsBuilder]
     }
     
-    extension [Self <: ConcatOptionsBuilder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConcatOptionsBuilder] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: ConcatFromOptionsBuilder): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     }
@@ -118,7 +120,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCssPath(value: String): Self = StObject.set(x, "cssPath", value.asInstanceOf[js.Any])
       
@@ -195,7 +198,8 @@ object mod {
       __obj.asInstanceOf[OptionsBuilder]
     }
     
-    extension [Self <: OptionsBuilder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsBuilder] (val x: Self) extends AnyVal {
       
       inline def setConcat(value: ConcatOptionsBuilder): Self = StObject.set(x, "concat", value.asInstanceOf[js.Any])
       
@@ -290,7 +294,8 @@ object mod {
       __obj.asInstanceOf[ToOptionsBuilder]
     }
     
-    extension [Self <: ToOptionsBuilder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToOptionsBuilder] (val x: Self) extends AnyVal {
       
       inline def setTo(value: ToBuilder & ToFunction): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }

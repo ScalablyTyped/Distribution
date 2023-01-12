@@ -97,7 +97,8 @@ object examplesJsmModifiersCurveModifierMod {
       __obj.asInstanceOf[SplineUniform]
     }
     
-    extension [Self <: SplineUniform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplineUniform] (val x: Self) extends AnyVal {
       
       inline def setFlow(value: IUniform[Any]): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
       

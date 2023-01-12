@@ -23,7 +23,8 @@ object DeletePermissionsBoundaryFromPermissionSetRequest {
     __obj.asInstanceOf[DeletePermissionsBoundaryFromPermissionSetRequest]
   }
   
-  extension [Self <: DeletePermissionsBoundaryFromPermissionSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePermissionsBoundaryFromPermissionSetRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
     

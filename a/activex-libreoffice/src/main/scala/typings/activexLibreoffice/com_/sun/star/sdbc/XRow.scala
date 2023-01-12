@@ -220,7 +220,8 @@ object XRow {
     __obj.asInstanceOf[XRow]
   }
   
-  extension [Self <: XRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRow] (val x: Self) extends AnyVal {
     
     inline def setGetArray(value: Double => XArray): Self = StObject.set(x, "getArray", js.Any.fromFunction1(value))
     

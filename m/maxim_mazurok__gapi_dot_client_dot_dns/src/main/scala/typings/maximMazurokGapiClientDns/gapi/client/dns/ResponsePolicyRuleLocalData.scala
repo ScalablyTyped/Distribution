@@ -16,7 +16,8 @@ object ResponsePolicyRuleLocalData {
     __obj.asInstanceOf[ResponsePolicyRuleLocalData]
   }
   
-  extension [Self <: ResponsePolicyRuleLocalData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponsePolicyRuleLocalData] (val x: Self) extends AnyVal {
     
     inline def setLocalDatas(value: js.Array[ResourceRecordSet]): Self = StObject.set(x, "localDatas", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object CoreProviderParentApp {
     __obj.asInstanceOf[CoreProviderParentApp]
   }
   
-  extension [Self <: CoreProviderParentApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreProviderParentApp] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: Views): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

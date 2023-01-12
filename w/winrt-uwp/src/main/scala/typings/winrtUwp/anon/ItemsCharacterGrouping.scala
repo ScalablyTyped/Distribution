@@ -18,7 +18,8 @@ object ItemsCharacterGrouping {
     __obj.asInstanceOf[ItemsCharacterGrouping]
   }
   
-  extension [Self <: ItemsCharacterGrouping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemsCharacterGrouping] (val x: Self) extends AnyVal {
     
     inline def setItems(value: CharacterGrouping): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

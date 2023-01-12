@@ -19,7 +19,8 @@ object TextSpan {
     __obj.asInstanceOf[TextSpan]
   }
   
-  extension [Self <: TextSpan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextSpan] (val x: Self) extends AnyVal {
     
     inline def setBeginOffset(value: Double): Self = StObject.set(x, "beginOffset", value.asInstanceOf[js.Any])
     

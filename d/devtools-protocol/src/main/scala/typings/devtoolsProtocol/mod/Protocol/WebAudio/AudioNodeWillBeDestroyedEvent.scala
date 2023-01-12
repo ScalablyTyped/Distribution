@@ -17,7 +17,8 @@ object AudioNodeWillBeDestroyedEvent {
     __obj.asInstanceOf[AudioNodeWillBeDestroyedEvent]
   }
   
-  extension [Self <: AudioNodeWillBeDestroyedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioNodeWillBeDestroyedEvent] (val x: Self) extends AnyVal {
     
     inline def setContextId(value: GraphObjectId): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
     

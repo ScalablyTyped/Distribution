@@ -48,7 +48,8 @@ object CreateStateMachineInput {
     __obj.asInstanceOf[CreateStateMachineInput]
   }
   
-  extension [Self <: CreateStateMachineInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStateMachineInput] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: Definition): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     

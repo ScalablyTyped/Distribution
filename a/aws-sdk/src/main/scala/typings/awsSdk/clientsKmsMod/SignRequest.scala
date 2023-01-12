@@ -38,7 +38,8 @@ object SignRequest {
     __obj.asInstanceOf[SignRequest]
   }
   
-  extension [Self <: SignRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignRequest] (val x: Self) extends AnyVal {
     
     inline def setGrantTokens(value: GrantTokenList): Self = StObject.set(x, "GrantTokens", value.asInstanceOf[js.Any])
     
